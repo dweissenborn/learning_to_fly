@@ -1,0 +1,6 @@
+{
+  "name": "@wayfinder/schema",
+  "private": true,
+  "type": "module",
+  "main": "types.ts"
+}

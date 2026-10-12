@@ -1,0 +1,542 @@
+{
+  "skill": "F5",
+  "passages": [
+    {
+      "id": "f5-p01",
+      "title": "A Text from Mom",
+      "kind": "message",
+      "sentences": ["Sam gets a text near the end of school."],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Mom",
+        "to": "Sam",
+        "time": "2:50 PM",
+        "rows": [
+          "Hi Sam! I will pick you up today.",
+          "Meet me at the gym door at 4:00 PM.",
+          "Bring your coat. It is cold."
+        ]
+      },
+      "picture": "📱🏫",
+      "topics": ["school", "home"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "A Text from Mom", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f5-p02",
+      "title": "A Text from Priya",
+      "kind": "message",
+      "sentences": ["Maya gets a text from Priya at lunch."],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Priya",
+        "to": "Maya",
+        "time": "12:10 PM",
+        "rows": [
+          "Robot club is in Room 12 today.",
+          "It starts at 3:15 PM.",
+          "Please bring your markers for our poster!"
+        ]
+      },
+      "picture": "🤖🖍️",
+      "topics": ["robots", "school", "friends"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "A Text from Priya", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f5-p03",
+      "title": "The Library Notice",
+      "kind": "notice",
+      "sentences": ["Sam has a library book to return."],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Town Library",
+        "icon": "📚",
+        "rows": [
+          "The library is closed on Monday, May 5.",
+          "Put books in the book drop by the front door.",
+          "We open again on Tuesday at 9:00 AM."
+        ]
+      },
+      "picture": "📚📅",
+      "topics": ["school"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "The Library Notice", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f5-p04",
+      "title": "The Skate Park Chat",
+      "kind": "message",
+      "sentences": ["Leo starts a group chat with his friends."],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "Skate Crew",
+        "time": "6:30 PM",
+        "rows": [
+          "Leo: Skate park on Saturday at 2:00 PM?",
+          "Ana: Yes! Ben and I have soccer first.",
+          "Ana: We can be there at 2:30 PM.",
+          "Sam: Can I bring Pixel?",
+          "Leo: Yes. Dogs wait on the grass by the gate.",
+          "Leo: Meet at the big ramp!"
+        ]
+      },
+      "picture": "🛹💬🐶",
+      "topics": ["sports", "friends", "animals"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": { "title": "The Skate Park Chat", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f5-p05",
+      "title": "The Field Trip Notice",
+      "kind": "notice",
+      "sentences": ["Ms. Ortiz gives each student a notice about the class trip."],
+      "visual": {
+        "type": "notice",
+        "title": "Field Trip: Gull Point Tide Pools",
+        "icon": "🚌",
+        "rows": [
+          "Date: Thursday, May 15",
+          "The bus leaves school at 9:00 AM.",
+          "Bring a packed lunch, a water bottle and a coat.",
+          "Wear shoes that can get wet.",
+          "Return the signed form by Monday, May 12.",
+          "We will be back at school by 2:30 PM."
+        ]
+      },
+      "picture": "🚌🦀🌊",
+      "topics": ["school", "ocean", "nature"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "The Field Trip Notice", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f5-p06",
+      "title": "The Robotics Club Form",
+      "kind": "form",
+      "sentences": ["Priya fills in a form to join the robotics club."],
+      "visual": {
+        "type": "form",
+        "title": "Harbor Middle School Robotics Club Sign-Up",
+        "rows": [
+          { "k": "Student name", "v": "Priya Shah" },
+          { "k": "Grade", "v": "6" },
+          { "k": "Today's date" },
+          { "k": "Club day (circle one): Tuesday or Thursday" },
+          { "k": "Parent or guardian signature" }
+        ]
+      },
+      "picture": "🤖📝",
+      "topics": ["robots", "school"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "The Robotics Club Form", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f5-p07",
+      "title": "An Email from Ms. Ortiz",
+      "kind": "message",
+      "sentences": ["Ms. Ortiz sends an email to her science class.", "Priya is bringing her rover to the science fair."],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Ms. Ortiz",
+        "to": "Science class",
+        "subject": "Science fair: new day",
+        "rows": [
+          "Hello class,",
+          "The science fair is moving from Friday to Thursday, March 6.",
+          "Set up your project in the gym from 8:00 AM to 8:45 AM.",
+          "Families can visit from 1:00 PM to 3:00 PM.",
+          "If your project needs a plug, email me by Tuesday.",
+          "I will save you a table near the wall plugs.",
+          "Thank you, Ms. Ortiz"
+        ]
+      },
+      "picture": "📧🔬🤖",
+      "topics": ["school", "robots"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "An Email from Ms. Ortiz", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f5-p08",
+      "title": "The Party Plan Changes",
+      "kind": "message",
+      "sentences": ["Ana and Ben are planning their birthday party.", "They send messages to their friends."],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "Diaz Twins Party",
+        "rows": [
+          "Ana: Our birthday party is on Sunday at 3:00 PM.",
+          "Ana: It will be at the Lighthouse Café.",
+          "Maya: Fun! What should I bring?",
+          "Ben: Just come. You do not need to bring a gift.",
+          "Ben: Update! Mom says the café is full on Sunday.",
+          "Ben: The party is now at our house, 22 Pier Road.",
+          "Ana: It starts at 4:00 PM now. Same day!"
+        ]
+      },
+      "picture": "🎂💬🏠",
+      "topics": ["friends", "food"],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": { "title": "The Party Plan Changes", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f5-p09",
+      "title": "The Library Card Form",
+      "kind": "form",
+      "sentences": ["Sam wants his own library card.", "He fills in the form with his dad."],
+      "visual": {
+        "type": "form",
+        "title": "Harbor Town Library Card Form",
+        "rows": [
+          { "k": "Name of child" },
+          { "k": "Age of child" },
+          { "k": "School" },
+          { "k": "Name of parent or guardian" },
+          { "k": "Parent or guardian signature" },
+          { "k": "Phone number of parent or guardian" },
+          { "k": "Favorite kind of book (for fun)" }
+        ]
+      },
+      "picture": "📚📝",
+      "topics": ["school", "home"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "The Library Card Form", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    }
+  ],
+  "items": [
+    {
+      "id": "f5-i00",
+      "skill": "F5",
+      "passage": "f5-p01",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Where should Sam meet Mom after school?",
+      "options": ["At the library", "At the gym door", "At the bus stop"],
+      "pictures": ["📚", "🏀", "🚏"],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Find the message that tells Sam where to meet.",
+      "explain": "Sam should meet Mom at the gym door. It is in the second message.",
+      "inference": 0,
+      "tags": ["place"]
+    },
+    {
+      "id": "f5-i01",
+      "skill": "F5",
+      "passage": "f5-p01",
+      "format": "scene",
+      "level": 1,
+      "prompt": "It is 4:00 PM. Tap the door where Sam waits for Mom.",
+      "scene": "school",
+      "objects": [
+        { "label": "Gym door", "emoji": "🚪", "sign": { "shape": "rect", "color": "blue", "text": "GYM" } },
+        { "label": "Front door", "emoji": "🚪", "sign": { "shape": "rect", "color": "blue", "text": "FRONT DOOR" } },
+        { "label": "Office door", "emoji": "🚪", "sign": { "shape": "rect", "color": "blue", "text": "OFFICE" } }
+      ],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Read the message about where to meet. Then read the sign on each door.",
+      "explain": "Sam waits at the gym door. The second message says to meet at the gym door at 4:00 PM.",
+      "inference": 0,
+      "tags": ["place", "signs"]
+    },
+    {
+      "id": "f5-i02",
+      "skill": "F5",
+      "passage": "f5-p02",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Which room should Maya go to for robot club?",
+      "options": ["Room 3", "Room 12", "Room 15"],
+      "answer": 1,
+      "evidence": [0],
+      "hint": "Find the word Room in the messages. Read the number after it.",
+      "explain": "Maya should go to Room 12. It is in the first message.",
+      "inference": 0,
+      "tags": ["place", "number-trap"],
+      "placement": true
+    },
+    {
+      "id": "f5-i03",
+      "skill": "F5",
+      "passage": "f5-p02",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What should Maya bring to robot club?",
+      "options": ["Her soccer ball", "Her lunch", "Her markers"],
+      "pictures": ["⚽", "🥪", "🖍️"],
+      "answer": 2,
+      "evidence": [2],
+      "hint": "Find the message with the word bring.",
+      "explain": "Maya should bring her markers. The last message asks her to bring them for the poster.",
+      "inference": 0,
+      "tags": ["what-to-bring"]
+    },
+    {
+      "id": "f5-i04",
+      "skill": "F5",
+      "passage": "f5-p03",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Sam goes to the library on Monday. Tap the line that tells him where to put his book.",
+      "unit": "row",
+      "answer": [1],
+      "evidence": [1],
+      "hint": "Look for a line about books and a place.",
+      "explain": "Tap the second line. It says to put books in the book drop by the front door.",
+      "inference": 0,
+      "tags": ["place", "closed-day"]
+    },
+    {
+      "id": "f5-i05",
+      "skill": "F5",
+      "passage": "f5-p03",
+      "format": "scene",
+      "level": 1,
+      "prompt": "It is Monday. Tap where Sam should put his book.",
+      "scene": "street",
+      "objects": [
+        { "label": "Mailbox", "emoji": "📮" },
+        { "label": "Bench", "emoji": "🪑" },
+        { "label": "Book drop", "emoji": "📥", "sign": { "shape": "rect", "color": "blue", "text": "BOOK DROP" } }
+      ],
+      "answer": 2,
+      "evidence": [1],
+      "hint": "Read the notice again. Find the place it names for books.",
+      "explain": "Sam puts his book in the book drop. The notice says to use the book drop by the front door.",
+      "inference": 0,
+      "tags": ["place"]
+    },
+    {
+      "id": "f5-i06",
+      "skill": "F5",
+      "passage": "f5-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Leo wants to know when the twins will come. What time will Ana and Ben get to the skate park?",
+      "options": ["2:30 PM", "2:00 PM", "6:30 PM"],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Find the messages from Ana. Read the time she gives.",
+      "explain": "Ana and Ben will get there at 2:30 PM. Ana says it in her second message. The 2:00 PM time is Leo's plan for the group.",
+      "inference": 1,
+      "tags": ["two-times", "two-characters", "time-pm"]
+    },
+    {
+      "id": "f5-i07",
+      "skill": "F5",
+      "passage": "f5-p04",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Sam brings Pixel to the skate park. Tap where Pixel should wait.",
+      "scene": "park",
+      "objects": [
+        { "label": "Big ramp", "emoji": "🛹" },
+        { "label": "Snack stand", "emoji": "🌭" },
+        { "label": "Grass by the gate", "emoji": "🌳" }
+      ],
+      "answer": 2,
+      "evidence": [4],
+      "hint": "Find the message that answers Sam's question about Pixel.",
+      "explain": "Pixel waits on the grass by the gate. Leo says dogs wait there in his answer to Sam.",
+      "inference": 1,
+      "tags": ["place", "dogs"]
+    },
+    {
+      "id": "f5-i08",
+      "skill": "F5",
+      "passage": "f5-p05",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Sam packs his bag for the trip. Sort each thing.",
+      "bins": ["Bring it", "Leave it at home"],
+      "cards": [
+        { "text": "Packed lunch", "bin": 0, "emoji": "🥪" },
+        { "text": "Video game", "bin": 1, "emoji": "🎮" },
+        { "text": "Water bottle", "bin": 0, "emoji": "💧" },
+        { "text": "Skateboard", "bin": 1, "emoji": "🛹" },
+        { "text": "Coat", "bin": 0, "emoji": "🧥" }
+      ],
+      "evidence": [2],
+      "hint": "Read the line that starts with Bring. Check each thing against that list.",
+      "explain": "Bring the packed lunch, the water bottle and the coat. They are on the Bring line. The video game and the skateboard are missing from that list, so they stay home.",
+      "inference": 1,
+      "tags": ["what-to-bring", "list-check"],
+      "transfer": true
+    },
+    {
+      "id": "f5-i09",
+      "skill": "F5",
+      "passage": "f5-p05",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Sam's form is signed. What is the last day he can give it to Ms. Ortiz?",
+      "options": ["Monday, May 12", "Thursday, May 15", "Friday, May 16"],
+      "answer": 0,
+      "evidence": [4],
+      "hint": "Two lines have dates. Find the line about the form.",
+      "explain": "Sam must return the form by Monday, May 12. It is in the line about the signed form. Thursday, May 15 is the trip day.",
+      "inference": 0,
+      "tags": ["two-dates", "deadline"]
+    },
+    {
+      "id": "f5-i10",
+      "skill": "F5",
+      "passage": "f5-p06",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Today is September 9. Tap the box where Priya writes that date.",
+      "unit": "row",
+      "answer": [2],
+      "evidence": [2],
+      "hint": "Read the words in each box. Find the box that asks for a date.",
+      "explain": "Priya writes September 9 in the Today's date box. It is the third box.",
+      "inference": 0,
+      "tags": ["form-box", "date"]
+    },
+    {
+      "id": "f5-i11",
+      "skill": "F5",
+      "passage": "f5-p06",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Priya gets to the last box. Who should sign it?",
+      "options": ["Ms. Ortiz", "Priya", "Priya's mom or dad"],
+      "pictures": ["👩‍🏫", "👧", "👪"],
+      "answer": 2,
+      "evidence": [4],
+      "hint": "Read the words in the last box. Who do they name?",
+      "explain": "Priya's mom or dad should sign it. The last box says Parent or guardian signature.",
+      "inference": 1,
+      "tags": ["form-box", "signature"]
+    },
+    {
+      "id": "f5-i12",
+      "skill": "F5",
+      "passage": "f5-p07",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya will show her rover at the science fair. Which day should she bring it to school?",
+      "options": ["Thursday, March 6", "Friday", "Tuesday"],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Read the line about the fair. Look for the words moving from and to.",
+      "explain": "Priya should bring it on Thursday, March 6. The second line says the fair is moving from Friday to Thursday.",
+      "inference": 1,
+      "tags": ["changed-plan", "two-days"]
+    },
+    {
+      "id": "f5-i13",
+      "skill": "F5",
+      "passage": "f5-p07",
+      "format": "order",
+      "level": 3,
+      "prompt": "Priya's rover needs a plug to charge. Put her steps in order.",
+      "steps": [
+        "Email Ms. Ortiz by Tuesday about a plug.",
+        "Bring the rover to school on Thursday.",
+        "Set up in the gym by 8:45 AM.",
+        "Show the rover to families at 1:00 PM."
+      ],
+      "evidence": [4, 1, 2, 3],
+      "hint": "Find the day or time in each step. Put the earliest one first.",
+      "explain": "First Priya emails Ms. Ortiz by Tuesday. Then she brings the rover on Thursday, sets up by 8:45 AM and shows it to families at 1:00 PM. Each day and time is in the email.",
+      "inference": 1,
+      "tags": ["sequence", "changed-plan", "time-am-pm"],
+      "transfer": true
+    },
+    {
+      "id": "f5-i14",
+      "skill": "F5",
+      "passage": "f5-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya reads all the messages. Where and when should she go for the party?",
+      "options": ["Lighthouse Café at 3:00 PM", "Lighthouse Café at 4:00 PM", "22 Pier Road at 3:00 PM", "22 Pier Road at 4:00 PM"],
+      "pictures": ["☕", "☕", "🏠", "🏠"],
+      "answer": 3,
+      "evidence": [5, 6],
+      "hint": "Plans can change in a chat. Read to the end and use the newest place and the newest time.",
+      "explain": "Maya should go to 22 Pier Road at 4:00 PM. Ben gives the new place, and Ana gives the new time in the last message.",
+      "inference": 1,
+      "tags": ["changed-plan", "latest-message", "two-characters"]
+    },
+    {
+      "id": "f5-i15",
+      "skill": "F5",
+      "passage": "f5-p08",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Maya wants to tell her dad where to drive her. Tap the message with the new place.",
+      "unit": "row",
+      "answer": [5],
+      "evidence": [5],
+      "hint": "The first place changed. Look for a message after the update that names a different place.",
+      "explain": "Tap Ben's message that says the party is now at 22 Pier Road. That is the new place.",
+      "inference": 0,
+      "tags": ["changed-plan", "place"]
+    },
+    {
+      "id": "f5-i16",
+      "skill": "F5",
+      "passage": "f5-p09",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Who fills in each box on the form? Sort the boxes.",
+      "bins": ["Sam fills it in", "His dad fills it in"],
+      "cards": [
+        { "text": "Name of child", "bin": 0, "emoji": "🧒" },
+        { "text": "Parent or guardian signature", "bin": 1, "emoji": "✍️" },
+        { "text": "Age of child", "bin": 0, "emoji": "🎂" },
+        { "text": "Phone number of parent or guardian", "bin": 1, "emoji": "📞" },
+        { "text": "Favorite kind of book", "bin": 0, "emoji": "📖" },
+        { "text": "Name of parent or guardian", "bin": 1, "emoji": "👨" }
+      ],
+      "evidence": [3, 4, 5],
+      "hint": "Read each box. Does it ask about the child or about the parent?",
+      "explain": "Sam fills in the boxes about the child and his favorite kind of book. His dad fills in the three parent or guardian boxes: the name, the signature and the phone number.",
+      "inference": 1,
+      "tags": ["form-box", "who-fills"],
+      "transfer": true
+    },
+    {
+      "id": "f5-i17",
+      "skill": "F5",
+      "passage": "f5-p09",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam likes train books and space books. Which box should he write that in?",
+      "options": ["Favorite kind of book (for fun)", "School", "Parent or guardian signature"],
+      "pictures": ["📖", "🏫", "✍️"],
+      "answer": 0,
+      "evidence": [6],
+      "hint": "Train books and space books are kinds of books. Find the box that asks about books.",
+      "explain": "Sam writes them in the Favorite kind of book box. It is the last box on the form.",
+      "inference": 1,
+      "tags": ["form-box"]
+    }
+  ],
+  "model": {
+    "item": "f5-i00",
+    "steps": [
+      { "say": "The question asks where. So I look for a place in the text." },
+      { "say": "I read each message. The second one says Meet me.", "show": [1] },
+      { "say": "After the words Meet me at comes the place: the gym door." },
+      { "say": "The message also says 4:00 PM. That is a time, and the question asks where, so I use the place." },
+      { "say": "Sam should meet Mom at the gym door.", "reveal": true }
+    ]
+  }
+}

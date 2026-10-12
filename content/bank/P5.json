@@ -1,0 +1,358 @@
+{
+  "skill": "P5",
+  "passages": [
+    {
+      "id": "p5-p01",
+      "title": "Pixel Learns to Shake",
+      "kind": "story",
+      "sentences": [
+        "Sam wanted Pixel to learn to shake.",
+        "He held out his hand.",
+        "\"Shake,\" he said.",
+        "Pixel just sat and looked at him.",
+        "Sam tried every day for a week.",
+        "On Sunday, Pixel lifted his paw.",
+        "He put it in Sam's hand.",
+        "Sam laughed and gave him a treat.",
+        "\"Good boy!\" he said. \"We did it!\""
+      ],
+      "picture": "🐕🐾",
+      "topics": ["animals", "home"],
+      "level": 1,
+      "socialLoad": 1,
+      "credit": { "title": "Pixel Learns to Shake", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "p5-p02",
+      "title": "The Long Climb",
+      "kind": "story",
+      "sentences": [
+        "Maya and her dad hiked the trail to the lookout on Lantern Peaks.",
+        "The trail was steep and rocky.",
+        "After an hour, Maya's legs felt heavy, and she wanted to stop.",
+        "\"Let's rest for five minutes,\" said her dad.",
+        "They sat on a log and drank some water.",
+        "Then Maya stood up and kept going, one step at a time.",
+        "At last, they reached the top.",
+        "Maya could see the whole island below.",
+        "She saw the harbor, the ferry and the roof of her school.",
+        "The sea was blue all the way to the sky.",
+        "Maya took a deep breath and grinned.",
+        "\"I climbed all of it,\" she said."
+      ],
+      "picture": "⛰️",
+      "topics": ["nature", "maps"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": { "title": "The Long Climb", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "p5-p03",
+      "title": "Leo Helps Jai",
+      "kind": "story",
+      "sentences": [
+        "A new boy named Jai came to the skate park with a brand new board.",
+        "He stepped on it, and the board rolled away without him.",
+        "Jai sat on the ground and looked at the board.",
+        "Leo rolled over and stopped next to him.",
+        "\"That happened to me a lot when I started,\" Leo said.",
+        "\"Put your front foot here, over the bolts.\"",
+        "\"Bend your knees a little, like this.\"",
+        "Jai tried again, and this time he rolled a few feet.",
+        "Leo clapped.",
+        "\"You'll get it,\" he said. \"I'll be here on Saturday too.\""
+      ],
+      "picture": "🛹",
+      "topics": ["sports", "friends"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": { "title": "Leo Helps Jai", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "p5-p04",
+      "title": "Ben's First Club Day",
+      "kind": "story",
+      "sentences": [
+        "Ben stood outside Room 12 at Harbor Middle School.",
+        "It was the first day of robot club, and every face inside was new to him.",
+        "His hands were sweaty, and he thought about going home.",
+        "Then the door opened, and Priya waved him in.",
+        "\"We need someone to build the arm,\" she said. \"Want to try?\"",
+        "She showed him the box of parts and the plan.",
+        "At first, Ben's fingers felt clumsy with the tiny screws.",
+        "Priya showed him how to use the small screwdriver.",
+        "By the end of the hour, the arm could lift a pencil.",
+        "Ben and Priya cheered when it worked.",
+        "On the way out, Ben asked, \"Same time next week?\"",
+        "Priya nodded. \"Same time next week.\""
+      ],
+      "picture": "🦾",
+      "topics": ["robots", "school"],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": { "title": "Ben's First Club Day", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "p5-p05",
+      "title": "Sam's Best Saturday",
+      "kind": "story",
+      "sentences": [
+        "Sam's favorite kind of Saturday starts early.",
+        "He and Grandma Rose take the 8:15 AM train along the coast.",
+        "Sam sits by the window with his map and marks each station they pass.",
+        "Pixel rides on the floor by his feet.",
+        "At the last stop, they walk to the harbor to watch the big boats come in.",
+        "Grandma Rose brings two warm rolls from the bakery in a paper bag.",
+        "They eat them on a bench by the water.",
+        "Sam tells her facts about the trains, and she listens to every one.",
+        "On the ride home, Sam counts the bridges.",
+        "There are seven of them.",
+        "When they get back, Sam feels tired and happy at the same time.",
+        "\"Same trip next month?\" Grandma Rose asks.",
+        "Sam nods fast."
+      ],
+      "picture": "🚆",
+      "topics": ["transport", "maps"],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": { "title": "Sam's Best Saturday", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    }
+  ],
+  "items": [
+    {
+      "id": "p5-i00",
+      "skill": "P5",
+      "passage": "p5-p01",
+      "format": "build",
+      "level": 1,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam felt proud when Pixel learned a trick. When did you feel like Sam? Build your answer.",
+      "frame": "Like Sam, I felt {0} when {1}. {2}",
+      "slots": [
+        { "kind": "feeling", "label": "Feeling", "options": ["proud", "happy", "excited"], "rubric": 1 },
+        { "kind": "me", "label": "When", "options": ["I learned something new", "I taught someone a skill", "I finished something hard", "I helped a pet or a friend"], "rubric": 4 },
+        { "kind": "why", "label": "Why (you can skip this)", "options": ["It took a long time.", "I tried many times.", "Someone helped me."], "rubric": 2, "optional": true }
+      ],
+      "evidence": [4, 7, 8],
+      "hint": "First find how Sam felt. Then think of a time you tried many times and then did it.",
+      "explain": "One good answer is: Like Sam, I felt proud when I learned something new. I tried many times. Any honest answer is fine.",
+      "inference": 2,
+      "tags": ["own-experience", "pride"]
+    },
+    {
+      "id": "p5-i01",
+      "skill": "P5",
+      "passage": "p5-p01",
+      "format": "tap",
+      "level": 1,
+      "tier": "understand",
+      "prompt": "How did Sam feel when Pixel shook his hand?",
+      "options": ["proud", "sad", "scared"],
+      "pictures": ["😊", "😢", "😨"],
+      "answer": 0,
+      "evidence": [7, 8],
+      "hint": "Read the last two sentences. Look at what Sam does and says.",
+      "explain": "Sam felt proud. He laughed, gave Pixel a treat and said, \"We did it!\" in the last two sentences.",
+      "inference": 1,
+      "tags": ["action-shows-feeling", "pride"]
+    },
+    {
+      "id": "p5-i02",
+      "skill": "P5",
+      "passage": "p5-p01",
+      "format": "build",
+      "level": 1,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam tried for a week before Pixel learned. What have you learned that took a lot of tries? Build your answer.",
+      "frame": "I learned to {0}. At first it felt {1}. At the end I felt {2}.",
+      "slots": [
+        { "kind": "me", "label": "What I learned", "options": ["ride a bike", "swim", "beat a hard game level", "do something else"], "rubric": 4 },
+        { "kind": "feeling", "label": "At first", "options": ["hard", "slow", "tricky", "fun"], "rubric": 1 },
+        { "kind": "feeling", "label": "At the end", "options": ["proud", "happy", "calm", "tired"], "rubric": 1 }
+      ],
+      "evidence": [4, 5],
+      "hint": "Think of something you can do now that was hard for you before. How did it feel at the start, and at the end?",
+      "explain": "One good answer is: I learned to swim. At first it felt hard. At the end I felt proud. Any honest answer is fine.",
+      "inference": 2,
+      "tags": ["own-experience", "feeling-change"]
+    },
+    {
+      "id": "p5-i03",
+      "skill": "P5",
+      "passage": "p5-p02",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "Why did Maya feel proud at the top?",
+      "options": ["She climbed the whole steep trail.", "She rode the bus to the top.", "She won a race with her dad."],
+      "answer": 0,
+      "evidence": [1, 5, 11],
+      "hint": "Read what Maya says at the very end. Then look back at what the trail was like.",
+      "explain": "Maya felt proud because she climbed the whole steep trail. At the end she says, \"I climbed all of it.\"",
+      "inference": 1,
+      "tags": ["cause-of-feeling", "pride"]
+    },
+    {
+      "id": "p5-i04",
+      "skill": "P5",
+      "passage": "p5-p02",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Maya did something hard and felt proud. When did you feel like that? Build your answer.",
+      "frame": "Like Maya, I felt proud when I {0}. It was hard because {1}. {2}",
+      "slots": [
+        { "kind": "me", "label": "What I did", "options": ["finished a long walk or hike", "finished a hard level in a game", "built something by myself", "did something else that was hard"], "rubric": 4 },
+        { "kind": "why", "label": "Why it was hard", "options": ["it took a long time", "I had to try many times", "I felt tired", "it was new to me"], "rubric": 2 },
+        { "kind": "evidence", "label": "Link to Maya (you can skip this)", "options": ["Maya's legs felt heavy too.", "Maya also kept going one step at a time.", "Maya also took a rest and then kept going."], "rubric": 3, "optional": true }
+      ],
+      "evidence": [2, 5, 11],
+      "hint": "Think of a time something was hard, and you kept going. Then look for a part of Maya's climb that is like it.",
+      "explain": "One good answer is: Like Maya, I felt proud when I finished a hard level in a game. It was hard because I had to try many times. Maya also kept going one step at a time. Any honest answer is fine.",
+      "inference": 2,
+      "transfer": true,
+      "tags": ["own-experience", "pride", "text-to-self"]
+    },
+    {
+      "id": "p5-i05",
+      "skill": "P5",
+      "passage": "p5-p03",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Leo helped Jai learn to skate. Has someone helped you learn something? Build your answer.",
+      "frame": "{0} helped me learn to {1}. I felt {2}.",
+      "slots": [
+        { "kind": "who", "label": "Who helped", "options": ["A friend", "A teacher", "Someone in my family", "A coach"], "rubric": 4 },
+        { "kind": "me", "label": "What I learned", "options": ["ride or skate", "read", "play a game", "do something else"], "rubric": 4 },
+        { "kind": "feeling", "label": "Feeling", "options": ["thankful", "happy", "proud", "calm"], "rubric": 1 }
+      ],
+      "evidence": [4, 5, 6, 7],
+      "hint": "Think of a person who showed you how to do something. How did you feel when they helped?",
+      "explain": "One good answer is: Someone in my family helped me learn to read. I felt thankful. Any honest answer is fine.",
+      "inference": 2,
+      "tags": ["own-experience", "kindness"]
+    },
+    {
+      "id": "p5-i06",
+      "skill": "P5",
+      "passage": "p5-p03",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Have you helped someone the way Leo helped Jai? Build your answer.",
+      "frame": "I helped {0} with {1}. I think they felt {2}. {3}",
+      "slots": [
+        { "kind": "who", "label": "Who I helped", "options": ["a friend", "someone in my family", "a classmate", "a younger kid"], "rubric": 4 },
+        { "kind": "me", "label": "What I helped with", "options": ["a game", "homework", "a hard job", "something else"], "rubric": 4 },
+        { "kind": "feeling", "label": "Their feeling", "options": ["happy", "thankful", "proud", "calm"], "rubric": 1 },
+        { "kind": "evidence", "label": "Link to Leo (you can skip this)", "options": ["Leo helped Jai in the same way.", "Like Leo, I showed them how.", "Like Leo, I said they would get it."], "rubric": 3, "optional": true }
+      ],
+      "evidence": [3, 4, 5, 6, 9],
+      "hint": "Think of a time you showed someone how to do something. Then think about how they felt.",
+      "explain": "One good answer is: I helped a classmate with homework. I think they felt thankful. Like Leo, I showed them how. Any honest answer is fine.",
+      "inference": 2,
+      "tags": ["own-experience", "kindness", "other-view"]
+    },
+    {
+      "id": "p5-i07",
+      "skill": "P5",
+      "passage": "p5-p04",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Ben tried something new. Tell about a time you tried something new. Build your answer.",
+      "frame": "The first time I {0}, I felt {1}. After a while, I felt {2}. {3}",
+      "slots": [
+        { "kind": "me", "label": "Something new", "options": ["went to a new school", "joined a club or a team", "took a trip", "tried a new food"], "rubric": 4 },
+        { "kind": "feeling", "label": "At first", "options": ["nervous", "excited", "shy", "curious"], "rubric": 1 },
+        { "kind": "feeling", "label": "After a while", "options": ["happy", "calm", "proud", "the same"], "rubric": 1 },
+        { "kind": "evidence", "label": "Link to Ben (you can skip this)", "options": ["Ben felt nervous at first too.", "Like Ben, I felt better with a friend nearby.", "Like Ben, I felt better once I got busy."], "rubric": 3, "optional": true }
+      ],
+      "evidence": [1, 2, 3, 9],
+      "hint": "Ben felt one way at the door and another way at the end. Think of a new thing you did. How did you feel at the start and later?",
+      "explain": "One good answer is: The first time I joined a club, I felt nervous. After a while, I felt happy. Ben felt nervous at first too. Any honest answer is fine.",
+      "inference": 2,
+      "tags": ["own-experience", "feeling-change", "text-to-self"]
+    },
+    {
+      "id": "p5-i08",
+      "skill": "P5",
+      "passage": "p5-p04",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "What helps you when you feel nervous? Build your answer.",
+      "frame": "When I feel nervous, it helps to {0}. {1}",
+      "slots": [
+        { "kind": "plan", "label": "What helps", "options": ["take slow breaths", "talk to someone I trust", "have a friend nearby", "know the plan first"], "rubric": 1 },
+        { "kind": "evidence", "label": "Link to Ben (you can skip this)", "options": ["Ben felt better when Priya showed him the plan.", "Ben felt better once he started to build.", "Ben felt better with a friend nearby."], "rubric": 3, "optional": true }
+      ],
+      "evidence": [3, 5, 7],
+      "hint": "Look at what helped Ben feel better. Then think about what helps you.",
+      "explain": "One good answer is: When I feel nervous, it helps to know the plan first. Ben felt better when Priya showed him the plan. Any honest answer is fine.",
+      "inference": 2,
+      "tags": ["own-experience", "coping"]
+    },
+    {
+      "id": "p5-i09",
+      "skill": "P5",
+      "passage": "p5-p05",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam's best Saturday has trains and Grandma Rose. What would your best day have? Build your answer.",
+      "frame": "My best day would have {0}. I would spend it with {1}. It would make me feel {2}.",
+      "slots": [
+        { "kind": "me", "label": "What it has", "options": ["trains or buses", "games", "the beach", "building something"], "rubric": 4 },
+        { "kind": "who", "label": "Who", "options": ["my family", "a friend", "my pet", "just me"], "rubric": 4 },
+        { "kind": "feeling", "label": "Feeling", "options": ["happy", "calm", "excited", "joyful"], "rubric": 1 }
+      ],
+      "evidence": [1, 2, 7, 10],
+      "hint": "Sam picks the things he loves most. Think about the things you love most.",
+      "explain": "One good answer is: My best day would have games. I would spend it with a friend. It would make me feel happy. Any honest answer is fine.",
+      "inference": 2,
+      "tags": ["own-experience", "joy"]
+    },
+    {
+      "id": "p5-i10",
+      "skill": "P5",
+      "passage": "p5-p05",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam loves to learn about trains. What do you love to learn about? Build your answer.",
+      "frame": "Like Sam with trains, I love to learn about {0}. I like it because {1}. {2}",
+      "slots": [
+        { "kind": "me", "label": "My topic", "options": ["space", "animals", "games", "something else"], "rubric": 4 },
+        { "kind": "why", "label": "Reason", "options": ["there is always more to learn", "it is fun to share facts", "it makes me feel calm", "I like how things work"], "rubric": 2 },
+        { "kind": "evidence", "label": "Link to Sam (you can skip this)", "options": ["Sam marks each station on his map.", "Sam counts the bridges on the way home.", "Sam tells Grandma Rose facts about trains."], "rubric": 3, "optional": true }
+      ],
+      "evidence": [2, 7, 8],
+      "hint": "Look at the things Sam does with trains. Think of a topic you love in the same way.",
+      "explain": "One good answer is: Like Sam with trains, I love to learn about space. I like it because there is always more to learn. Sam tells Grandma Rose facts about trains. Any honest answer is fine.",
+      "inference": 2,
+      "transfer": true,
+      "tags": ["own-experience", "interests", "text-to-self"]
+    }
+  ],
+  "model": {
+    "item": "p5-i00",
+    "steps": [
+      { "say": "First I find how Sam felt. He laughed and said, \"We did it!\" He felt proud.", "show": [7, 8] },
+      { "say": "Sam felt proud because he tried every day for a week, and then it worked.", "show": [4] },
+      { "say": "Now I think about my own life. When did I try many times, and then it worked?" },
+      { "say": "I remember when I learned something new. It took a lot of tries." },
+      { "say": "So I build: Like Sam, I felt proud when I learned something new. I tried many times. Your answer can be different. Any true answer is fine.", "reveal": true }
+    ]
+  }
+}

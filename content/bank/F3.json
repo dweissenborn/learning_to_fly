@@ -1,0 +1,442 @@
+{
+  "skill": "F3",
+  "passages": [
+    {
+      "id": "f3-p01",
+      "title": "Grandma Rose's Shopping List",
+      "kind": "list",
+      "sentences": ["Grandma Rose needs a few things for the bakery.", "She gives Sam this list."],
+      "visual": {
+        "type": "list",
+        "title": "Shopping List",
+        "ordered": false,
+        "rows": ["Eggs", "Milk", "Butter"]
+      },
+      "picture": "🛒📝",
+      "topics": ["food"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "Grandma Rose's Shopping List", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p02",
+      "title": "Library Hours",
+      "kind": "schedule",
+      "sentences": ["This sign is on the library door."],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Town Library Hours",
+        "columns": ["Day", "Hours"],
+        "rows": [
+          ["Monday to Friday", "10 AM to 6 PM"],
+          ["Saturday", "9 AM to 1 PM"],
+          ["Sunday", "Closed"]
+        ]
+      },
+      "picture": "📚🕘",
+      "topics": ["school"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "Library Hours", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p03",
+      "title": "Skate Park Hours",
+      "kind": "schedule",
+      "sentences": ["Leo checks the sign at the skate park gate."],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Skate Park",
+        "columns": ["Days", "Open"],
+        "rows": [
+          ["Monday to Friday", "3 PM to 7 PM"],
+          ["Saturday and Sunday", "9 AM to 5 PM"]
+        ]
+      },
+      "picture": "🛹⏰",
+      "topics": ["sports"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "Skate Park Hours", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p04",
+      "title": "Lighthouse Café Menu",
+      "kind": "menu",
+      "sentences": ["Ana and Ben stop at the Lighthouse Café after soccer."],
+      "visual": {
+        "type": "table",
+        "title": "Lighthouse Café",
+        "columns": ["Food and drink", "Price"],
+        "rows": [
+          ["Hot chocolate", "$2"],
+          ["Lemonade", "$2.50"],
+          ["Fruit cup", "$3"],
+          ["Grilled cheese", "$4"],
+          ["Pancakes", "$5"]
+        ]
+      },
+      "picture": "☕🥞",
+      "topics": ["food", "money"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "Lighthouse Café Menu", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p05",
+      "title": "Bus Station Board",
+      "kind": "timetable",
+      "sentences": ["This board hangs in the Harbor Town bus station."],
+      "visual": {
+        "type": "table",
+        "title": "Morning Buses",
+        "columns": ["Bus", "Goes to", "Leaves at"],
+        "rows": [
+          ["Bus 3", "Harbor", "8:15 AM"],
+          ["Bus 5", "Lantern Peaks", "8:20 AM"],
+          ["Bus 7", "Story Woods", "8:40 AM"]
+        ]
+      },
+      "picture": "🚌🕗",
+      "topics": ["transport"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "Bus Station Board", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p06",
+      "title": "Ana's School Day",
+      "kind": "schedule",
+      "sentences": ["This is Ana's schedule for Tuesday at Harbor Middle School."],
+      "visual": {
+        "type": "table",
+        "title": "Tuesday",
+        "columns": ["Time", "Class", "Room"],
+        "rows": [
+          ["8:30 AM", "Homeroom", "Room 4"],
+          ["9:00 AM", "Math", "Room 9"],
+          ["10:00 AM", "Science", "Room 12"],
+          ["11:00 AM", "P.E.", "Gym"],
+          ["12:00 PM", "Lunch", "Cafeteria"]
+        ]
+      },
+      "picture": "🏫📅",
+      "topics": ["school"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "Ana's School Day", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p07",
+      "title": "Ferry Times",
+      "kind": "timetable",
+      "sentences": ["The ferry goes from Harbor Town to Gull Island.", "The ride takes 40 minutes."],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Town Ferry",
+        "note": "The 5:15 PM ferry runs on Saturday and Sunday only.",
+        "columns": ["Leaves Harbor Town", "Gets to Gull Island"],
+        "rows": [
+          ["9:00 AM", "9:40 AM"],
+          ["11:30 AM", "12:10 PM"],
+          ["2:00 PM", "2:40 PM"],
+          ["5:15 PM", "5:55 PM"]
+        ]
+      },
+      "picture": "⛴️🏝️",
+      "topics": ["ocean", "transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Ferry Times", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p08",
+      "title": "Bus 9 to Lantern Peaks",
+      "kind": "timetable",
+      "sentences": ["Bus 9 runs on Saturday and Sunday.", "It goes from the bus station up to Lantern Peaks."],
+      "visual": {
+        "type": "table",
+        "title": "Bus 9 to Lantern Peaks",
+        "note": "Saturday and Sunday only",
+        "columns": ["Stop", "First bus", "Second bus"],
+        "rows": [
+          ["Bus station", "9:00 AM", "10:30 AM"],
+          ["Library", "9:10 AM", "10:40 AM"],
+          ["Skate park", "9:25 AM", "10:55 AM"],
+          ["Lantern Peaks Lookout", "9:45 AM", "11:15 AM"]
+        ]
+      },
+      "picture": "🚌⛰️",
+      "topics": ["transport", "maps"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Bus 9 to Lantern Peaks", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p09",
+      "title": "Library Events",
+      "kind": "schedule",
+      "sentences": ["It is summer break.", "The Harbor Town Library has fun events this week."],
+      "visual": {
+        "type": "table",
+        "title": "Library Events This Week",
+        "columns": ["Day", "Time", "Event"],
+        "rows": [
+          ["Monday", "10:00 AM", "Robot building club"],
+          ["Tuesday", "3:30 PM", "Comic drawing class"],
+          ["Wednesday", "11:00 AM", "Video game day"],
+          ["Thursday", "4:00 PM", "Rock and mineral show"],
+          ["Friday", "9:30 AM", "Chess club"],
+          ["Saturday", "2:00 PM", "Movie time"]
+        ]
+      },
+      "picture": "📅📚",
+      "topics": ["robots", "games"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Library Events", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    }
+  ],
+  "items": [
+    {
+      "id": "f3-i00", "skill": "F3", "passage": "f3-p03", "format": "tap", "level": 1,
+      "prompt": "Leo wants to skate on Saturday. What time does the skate park open?",
+      "options": ["3 PM", "9 AM", "5 PM"],
+      "pictures": ["🕒", "🕘", "🕔"],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Find the row with Saturday. Then look across to the Open column.",
+      "explain": "The park opens at 9 AM on Saturday. The Saturday and Sunday row says 9 AM to 5 PM.",
+      "inference": 0,
+      "tags": ["find-row", "time-am"]
+    },
+    {
+      "id": "f3-i01", "skill": "F3", "passage": "f3-p01", "format": "scene", "level": 1,
+      "prompt": "Sam is at the shop. Tap the thing on Grandma Rose's list.",
+      "scene": "shop",
+      "objects": [
+        { "label": "Juice", "emoji": "🧃" },
+        { "label": "Apples", "emoji": "🍎" },
+        { "label": "Milk", "emoji": "🥛" }
+      ],
+      "answer": 2,
+      "evidence": [1],
+      "hint": "Read each word on the list. Then look for the same thing on the shelf.",
+      "explain": "Sam taps the milk. Milk is on the list.",
+      "inference": 0,
+      "tags": ["list-match"]
+    },
+    {
+      "id": "f3-i02", "skill": "F3", "passage": "f3-p01", "format": "tap", "level": 1,
+      "prompt": "How many things should Sam buy?",
+      "options": ["Two", "Three", "Five"],
+      "pictures": ["2️⃣", "3️⃣", "5️⃣"],
+      "answer": 1,
+      "evidence": [0, 1, 2],
+      "hint": "Point to each thing on the list and count.",
+      "explain": "Sam buys three things: eggs, milk and butter. The list has three lines.",
+      "inference": 0,
+      "tags": ["count"]
+    },
+    {
+      "id": "f3-i03", "skill": "F3", "passage": "f3-p02", "format": "tap", "level": 1,
+      "prompt": "Maya wants to be at the library when it opens on Saturday. What time should she get there?",
+      "options": ["9 AM", "10 AM", "1 PM"],
+      "pictures": ["🕘", "🕙", "🕐"],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Find the row for Saturday. Then look across to the hours.",
+      "explain": "She should get there at 9 AM. The Saturday row says 9 AM to 1 PM.",
+      "inference": 0,
+      "tags": ["find-row", "time-am"],
+      "placement": true
+    },
+    {
+      "id": "f3-i04", "skill": "F3", "passage": "f3-p02", "format": "tap", "level": 1,
+      "prompt": "Can Maya go to the library on Sunday?",
+      "options": ["Yes, it is open", "No, it is closed"],
+      "pictures": ["✅", "❌"],
+      "answer": 1,
+      "evidence": [2],
+      "hint": "Find the row for Sunday. Read what it says.",
+      "explain": "No, the library is closed on Sunday. The Sunday row says Closed.",
+      "inference": 0,
+      "tags": ["closed"]
+    },
+    {
+      "id": "f3-i05", "skill": "F3", "passage": "f3-p03", "format": "highlight", "level": 1,
+      "prompt": "Leo wants to skate after school on Tuesday. Tap the row that shows the hours for Tuesday.",
+      "unit": "row",
+      "answer": [0],
+      "evidence": [0],
+      "hint": "Say the days of the week, starting with Monday. Find the row that includes Tuesday.",
+      "explain": "The first row is for Tuesday. Monday to Friday includes Tuesday, and the hours are 3 PM to 7 PM.",
+      "inference": 1,
+      "tags": ["day-range"],
+      "transfer": true
+    },
+    {
+      "id": "f3-i06", "skill": "F3", "passage": "f3-p04", "format": "tap", "level": 2,
+      "prompt": "Ben has $3. He wants something to eat. Which food can he buy?",
+      "options": ["Grilled cheese", "Pancakes", "Fruit cup"],
+      "pictures": ["🧀", "🥞", "🍓"],
+      "answer": 2,
+      "evidence": [2, 3, 4],
+      "hint": "Find the price of each food in the answers. Check which one costs $3 or less.",
+      "explain": "Ben can buy the fruit cup. It costs $3. Grilled cheese costs $4 and pancakes cost $5.",
+      "inference": 1,
+      "tags": ["price-compare", "money"]
+    },
+    {
+      "id": "f3-i07", "skill": "F3", "passage": "f3-p04", "format": "highlight", "level": 2,
+      "prompt": "Ana wants pancakes. Tap the row that shows how much they cost.",
+      "unit": "row",
+      "answer": [4],
+      "evidence": [4],
+      "hint": "Look down the first column for the word pancakes. The price is in the same row.",
+      "explain": "The last row says Pancakes, $5. Ana needs $5.",
+      "inference": 0,
+      "tags": ["price", "find-row"],
+      "transfer": true
+    },
+    {
+      "id": "f3-i08", "skill": "F3", "passage": "f3-p05", "format": "tap", "level": 2,
+      "prompt": "Sam is taking Pixel for a walk in Story Woods. What time does his bus leave?",
+      "options": ["8:15 AM", "8:40 AM", "8:20 AM"],
+      "answer": 1,
+      "evidence": [2],
+      "hint": "Find the row that says Story Woods. Then look across to the Leaves at column.",
+      "explain": "His bus leaves at 8:40 AM. It is Bus 7, in the Story Woods row.",
+      "inference": 0,
+      "tags": ["find-row", "time-am"]
+    },
+    {
+      "id": "f3-i09", "skill": "F3", "passage": "f3-p05", "format": "scene", "level": 2,
+      "prompt": "Priya is going to the harbor. Tap the bus she should get on.",
+      "scene": "station",
+      "objects": [
+        { "label": "Bus 5", "emoji": "🚌", "sign": { "shape": "rect", "color": "white", "text": "BUS 5" } },
+        { "label": "Bus 7", "emoji": "🚌", "sign": { "shape": "rect", "color": "white", "text": "BUS 7" } },
+        { "label": "Bus 3", "emoji": "🚌", "sign": { "shape": "rect", "color": "white", "text": "BUS 3" } }
+      ],
+      "answer": 2,
+      "evidence": [0],
+      "hint": "Find the row that says Harbor. Read which bus is in that row.",
+      "explain": "Priya gets on Bus 3. The Harbor row says Bus 3.",
+      "inference": 1,
+      "tags": ["find-row", "two-columns"]
+    },
+    {
+      "id": "f3-i10", "skill": "F3", "passage": "f3-p06", "format": "scene", "level": 2,
+      "prompt": "It is 10:00 AM. Tap the door Ana should go to.",
+      "scene": "school",
+      "objects": [
+        { "label": "Room 9", "emoji": "🚪", "sign": { "shape": "rect", "color": "white", "text": "ROOM 9" } },
+        { "label": "Gym", "emoji": "🚪", "sign": { "shape": "rect", "color": "white", "text": "GYM" } },
+        { "label": "Room 12", "emoji": "🚪", "sign": { "shape": "rect", "color": "white", "text": "ROOM 12" } }
+      ],
+      "answer": 2,
+      "evidence": [2],
+      "hint": "Find 10:00 AM in the Time column. Then read across to the Room column.",
+      "explain": "Ana goes to Room 12. The 10:00 AM row says Science in Room 12.",
+      "inference": 0,
+      "tags": ["find-row", "time-am"]
+    },
+    {
+      "id": "f3-i11", "skill": "F3", "passage": "f3-p06", "format": "order", "level": 2,
+      "prompt": "Put Ana's morning classes in order, from first to last.",
+      "steps": ["Homeroom", "Math", "Science", "P.E."],
+      "evidence": [0, 1, 2, 3],
+      "hint": "Read the Time column from the earliest time to the latest.",
+      "explain": "Homeroom is at 8:30 AM, Math is at 9:00 AM, Science is at 10:00 AM and P.E. is at 11:00 AM.",
+      "inference": 0,
+      "tags": ["time-order"],
+      "transfer": true
+    },
+    {
+      "id": "f3-i12", "skill": "F3", "passage": "f3-p07", "format": "tap", "level": 3,
+      "prompt": "Sam and Grandma Rose finish lunch in Harbor Town at 1:00 PM. Which ferry is the next one they can catch?",
+      "options": ["9:00 AM", "11:30 AM", "2:00 PM", "5:15 PM"],
+      "answer": 2,
+      "evidence": [2],
+      "hint": "Look down the Leaves Harbor Town column. Find the first time that comes after 1:00 PM.",
+      "explain": "The next ferry leaves at 2:00 PM. It is the first time after 1:00 PM in the Leaves Harbor Town column.",
+      "inference": 1,
+      "tags": ["time-pm", "next-time"]
+    },
+    {
+      "id": "f3-i13", "skill": "F3", "passage": "f3-p07", "format": "highlight", "level": 3,
+      "prompt": "It is Wednesday. Maya wants the last ferry of the day. Tap the row for the last ferry she can take.",
+      "unit": "row",
+      "answer": [2],
+      "evidence": [2, 3],
+      "hint": "Read the note under the table. Check which ferries run on a Wednesday.",
+      "explain": "On Wednesday the last ferry leaves at 2:00 PM. The note says the 5:15 PM ferry runs on Saturday and Sunday only.",
+      "inference": 1,
+      "tags": ["note", "weekday", "time-pm"],
+      "transfer": true
+    },
+    {
+      "id": "f3-i14", "skill": "F3", "passage": "f3-p08", "format": "tap", "level": 3,
+      "prompt": "Leo gets to the library stop at 10:00 AM on Saturday. What time is the next bus there?",
+      "options": ["9:10 AM", "10:55 AM", "11:15 AM", "10:40 AM"],
+      "answer": 3,
+      "evidence": [1],
+      "hint": "Find the Library row. Look across it for the first time after 10:00 AM.",
+      "explain": "The next bus at the library comes at 10:40 AM. In the Library row, 9:10 AM is before 10:00 AM and 10:40 AM is after it.",
+      "inference": 1,
+      "tags": ["two-columns", "wrong-row", "next-time"]
+    },
+    {
+      "id": "f3-i15", "skill": "F3", "passage": "f3-p08", "format": "tap", "level": 3,
+      "prompt": "Ms. Ortiz is going to the observatory. She takes the second bus from the bus station. What time will she get to the Lantern Peaks Lookout?",
+      "options": ["11:15 AM", "9:45 AM", "10:55 AM"],
+      "answer": 0,
+      "evidence": [3],
+      "hint": "Find the Second bus column. Then follow it down to the Lantern Peaks Lookout row.",
+      "explain": "She gets there at 11:15 AM. That time is where the Second bus column meets the Lantern Peaks Lookout row.",
+      "inference": 0,
+      "tags": ["two-columns", "wrong-column"]
+    },
+    {
+      "id": "f3-i16", "skill": "F3", "passage": "f3-p09", "format": "sort", "level": 3,
+      "prompt": "Ana and Ben have soccer camp every afternoon. Put each event in the right box.",
+      "bins": ["Morning: they can go", "Afternoon: they are at soccer camp"],
+      "cards": [
+        { "text": "Robot building club", "bin": 0, "emoji": "🤖" },
+        { "text": "Comic drawing class", "bin": 1, "emoji": "✏️" },
+        { "text": "Video game day", "bin": 0, "emoji": "🎮" },
+        { "text": "Rock and mineral show", "bin": 1, "emoji": "💎" },
+        { "text": "Chess club", "bin": 0, "emoji": "♟️" },
+        { "text": "Movie time", "bin": 1, "emoji": "🎬" }
+      ],
+      "evidence": [0, 1, 2, 3, 4, 5],
+      "hint": "Look at the Time column. AM times are in the morning. PM times are in the afternoon.",
+      "explain": "Robot building club, video game day and chess club are AM, so they can go. Comic drawing, the rock and mineral show and movie time are PM, when they are at soccer camp.",
+      "inference": 1,
+      "tags": ["am-pm", "time-pm", "sort"],
+      "transfer": true
+    },
+    {
+      "id": "f3-i17", "skill": "F3", "passage": "f3-p09", "format": "tap", "level": 3,
+      "prompt": "Maya likes rocks and drawing comics. Which two days should she go to the library?",
+      "options": ["Tuesday and Thursday", "Monday and Friday", "Wednesday and Saturday", "Tuesday and Saturday"],
+      "answer": 0,
+      "evidence": [1, 3],
+      "hint": "Find the event about rocks and the event about drawing. Read the Day column for each one.",
+      "explain": "She goes on Tuesday and Thursday. The comic drawing class is on Tuesday, and the rock and mineral show is on Thursday.",
+      "inference": 1,
+      "tags": ["two-rows"]
+    }
+  ],
+  "model": {
+    "item": "f3-i00",
+    "steps": [
+      { "say": "I need the time the park opens on Saturday." },
+      { "say": "I look down the Days column for Saturday. It is in the second row.", "show": [1] },
+      { "say": "I look across that row to the Open column. It says 9 AM to 5 PM.", "show": [1] },
+      { "say": "The first time is when the park opens. The second time is when it closes." },
+      { "say": "So the park opens at 9 AM on Saturday.", "reveal": true }
+    ]
+  }
+}

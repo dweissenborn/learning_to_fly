@@ -1,0 +1,512 @@
+{
+  "skill": "F4",
+  "passages": [
+    {
+      "id": "f4-p01",
+      "title": "The Oat Bar Label",
+      "kind": "label",
+      "sentences": ["Ana and Ben pack snacks for soccer."],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Crunch Oat Bar",
+        "warning": "Contains peanuts",
+        "rows": [
+          { "k": "Contains", "v": "oats, honey, peanuts" },
+          { "k": "Serving size", "v": "1 bar" },
+          { "k": "Best before", "v": "October 30" }
+        ]
+      },
+      "picture": "🥜⚽",
+      "topics": ["food", "health"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "The Oat Bar Label", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p02",
+      "title": "Price Tags at Rose's Bakery",
+      "kind": "sign",
+      "sentences": ["Maya stops at Rose's Bakery after school.", "She has $3 to spend."],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          { "shape": "rect", "color": "yellow", "text": "Cookie $1", "icon": "🍪" },
+          { "shape": "rect", "color": "yellow", "text": "Muffin $2", "icon": "🧁" },
+          { "shape": "rect", "color": "yellow", "text": "Pie $6", "icon": "🥧" },
+          { "shape": "rect", "color": "yellow", "text": "Cake $8", "icon": "🎂" }
+        ]
+      },
+      "picture": "🥐💵",
+      "topics": ["food", "money"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "Price Tags at Rose's Bakery", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p03",
+      "title": "Sam's Train Ticket",
+      "kind": "ticket",
+      "sentences": ["Sam is going on a train trip with Grandma Rose."],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Line Train Ticket",
+        "rows": [
+          { "k": "Date", "v": "Saturday, May 10" },
+          { "k": "Train leaves", "v": "9:30 AM" },
+          { "k": "Train arrives", "v": "10:15 AM" },
+          { "k": "To", "v": "Lantern Peaks" },
+          { "k": "Car", "v": "3" },
+          { "k": "Seat", "v": "14A" }
+        ]
+      },
+      "picture": "🚆🎟️",
+      "topics": ["transport"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "Sam's Train Ticket", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p04",
+      "title": "The Allergy Medicine Label",
+      "kind": "label",
+      "sentences": ["Sam has itchy eyes in the spring.", "Grandma Rose finds a box of allergy tablets."],
+      "visual": {
+        "type": "label",
+        "title": "SneezeStop Allergy Tablets",
+        "warning": "Ask an adult before you take any medicine.",
+        "rows": [
+          { "k": "Use for", "v": "sneezing and itchy eyes" },
+          { "k": "Ages 6 to 11", "v": "1 tablet" },
+          { "k": "Ages 12 and up", "v": "2 tablets" },
+          { "k": "How often", "v": "once a day" },
+          { "k": "Under age 6", "v": "ask a doctor" }
+        ]
+      },
+      "picture": "💊🤧",
+      "topics": ["health", "safety"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "The Allergy Medicine Label", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p05",
+      "title": "The Bike Shop Sale",
+      "kind": "label",
+      "sentences": ["Leo and Priya go to Okafor's Bike Shop.", "Mr. Okafor has a sale this week."],
+      "visual": {
+        "type": "label",
+        "title": "Okafor's Bike Shop SALE",
+        "rows": [
+          { "k": "Bike light", "v": "$6 each, or 2 for $10" },
+          { "k": "Bell", "v": "$4" },
+          { "k": "Water bottle", "v": "$3" },
+          { "k": "Helmet", "v": "$20" },
+          { "k": "Sale ends", "v": "Sunday, June 8" }
+        ]
+      },
+      "picture": "🚲🏷️",
+      "topics": ["money", "transport"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "The Bike Shop Sale", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p06",
+      "title": "The Team Snack Table",
+      "kind": "list",
+      "sentences": ["The soccer team has a snack table after the game.", "Each snack has a card that says what is in it."],
+      "visual": {
+        "type": "table",
+        "title": "Team snack table",
+        "columns": ["Snack", "Contains"],
+        "rows": [
+          ["Pretzels", "wheat"],
+          ["Trail mix", "peanuts, raisins"],
+          ["Cheese crackers", "wheat, milk"],
+          ["Peanut butter cookies", "peanuts, wheat, eggs"],
+          ["Apple slices", "apples"],
+          ["Granola bites", "oats, nuts, honey"]
+        ]
+      },
+      "picture": "⚽🍎",
+      "topics": ["food", "sports", "health"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "The Team Snack Table", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p07",
+      "title": "Dates in the Fridge",
+      "kind": "list",
+      "sentences": ["Today is October 14.", "Sam helps Grandma Rose clean out the fridge.", "They check the best-before date on each food."],
+      "visual": {
+        "type": "table",
+        "title": "Best-before dates in the fridge",
+        "note": "Today is October 14.",
+        "columns": ["Food", "Best before"],
+        "rows": [
+          ["Milk", "October 12"],
+          ["Yogurt", "October 20"],
+          ["Cheese", "October 30"],
+          ["Orange juice", "October 13"],
+          ["Eggs", "October 18"]
+        ]
+      },
+      "picture": "🥛🧀📅",
+      "topics": ["food", "home"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Dates in the Fridge", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p08",
+      "title": "The Star Night Ticket",
+      "kind": "ticket",
+      "sentences": ["Priya has a ticket for Star Night at the observatory.", "Her dad will drive her there."],
+      "visual": {
+        "type": "label",
+        "title": "Lantern Peaks Observatory: Star Night",
+        "rows": [
+          { "k": "Date", "v": "Friday, November 7" },
+          { "k": "Doors open", "v": "7:00 PM" },
+          { "k": "Show starts", "v": "7:30 PM" },
+          { "k": "Seat", "v": "Row C, Seat 8" },
+          { "k": "Price", "v": "$6 (paid)" },
+          { "k": "Late?", "v": "Wait at the back until the break at 8:15 PM." }
+        ]
+      },
+      "picture": "🔭🌌🎟️",
+      "topics": ["space"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "The Star Night Ticket", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p09",
+      "title": "The Banana Bread Label",
+      "kind": "label",
+      "sentences": ["Grandma Rose sells banana bread at her bakery.", "Ana and Maya read the label."],
+      "visual": {
+        "type": "label",
+        "title": "Rose's Bakery Banana Bread",
+        "warning": "May contain nuts",
+        "rows": [
+          { "k": "Serving size", "v": "1 slice" },
+          { "k": "Slices in a loaf", "v": "8" },
+          { "k": "Contains", "v": "wheat, eggs, milk" },
+          { "k": "May contain", "v": "nuts" },
+          { "k": "Best before", "v": "October 18" },
+          { "k": "Price", "v": "$7 a loaf" }
+        ]
+      },
+      "picture": "🍌🍞",
+      "topics": ["food", "health"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "The Banana Bread Label", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    }
+  ],
+  "items": [
+    {
+      "id": "f4-i00",
+      "skill": "F4",
+      "passage": "f4-p01",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Ana cannot eat nuts. What should she do with this oat bar?",
+      "options": ["Eat it.", "Skip it. It has peanuts."],
+      "pictures": ["😋", "🥜"],
+      "answer": 1,
+      "evidence": [0],
+      "hint": "Find the row that says what is in the bar. Look for nuts.",
+      "explain": "Ana should skip it. The Contains row says peanuts, and peanuts are nuts.",
+      "inference": 1,
+      "tags": ["allergy", "contains"]
+    },
+    {
+      "id": "f4-i01",
+      "skill": "F4",
+      "passage": "f4-p01",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Ben wants to eat the bar before its date. Tap the row that tells him the last day.",
+      "unit": "row",
+      "answer": [2],
+      "evidence": [2],
+      "hint": "Look for a row that has a date in it.",
+      "explain": "Tap the Best before row. It says October 30, so Ben should eat the bar by October 30.",
+      "inference": 0,
+      "tags": ["best-before", "date"]
+    },
+    {
+      "id": "f4-i02",
+      "skill": "F4",
+      "passage": "f4-p02",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Maya has $3. Tap the treat she can buy.",
+      "scene": "shop",
+      "objects": [
+        { "label": "Pie", "emoji": "🥧", "sign": { "shape": "rect", "color": "yellow", "text": "$6" } },
+        { "label": "Muffin", "emoji": "🧁", "sign": { "shape": "rect", "color": "yellow", "text": "$2" } },
+        { "label": "Cake", "emoji": "🎂", "sign": { "shape": "rect", "color": "yellow", "text": "$8" } }
+      ],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Read the price on each tag. Find one that is $3 or less.",
+      "explain": "Maya can buy the muffin. The muffin tag says $2, and $2 is less than $3.",
+      "inference": 1,
+      "tags": ["price-compare", "money"],
+      "transfer": true
+    },
+    {
+      "id": "f4-i03",
+      "skill": "F4",
+      "passage": "f4-p02",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Maya wants one cookie. How much money will she pay?",
+      "options": ["$2", "$1", "$3"],
+      "answer": 1,
+      "evidence": [0],
+      "hint": "Find the tag with the cookie. Read the number after the $ sign.",
+      "explain": "Maya will pay $1. The cookie tag says $1.",
+      "inference": 0,
+      "tags": ["price", "money"]
+    },
+    {
+      "id": "f4-i04",
+      "skill": "F4",
+      "passage": "f4-p03",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Sam must get on the train before it leaves. What time does the train leave?",
+      "options": ["10:15 AM", "9:30 AM"],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Two rows have times. Read the words before each time.",
+      "explain": "The train leaves at 9:30 AM. It is in the Train leaves row.",
+      "inference": 0,
+      "tags": ["two-times", "time-am"],
+      "placement": true
+    },
+    {
+      "id": "f4-i05",
+      "skill": "F4",
+      "passage": "f4-p03",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Sam gets on car 3. Tap the seat on his ticket.",
+      "scene": "station",
+      "objects": [
+        { "label": "Seat 14B", "emoji": "💺", "sign": { "shape": "rect", "color": "white", "text": "14B" } },
+        { "label": "Seat 4A", "emoji": "💺", "sign": { "shape": "rect", "color": "white", "text": "4A" } },
+        { "label": "Seat 14A", "emoji": "💺", "sign": { "shape": "rect", "color": "white", "text": "14A" } }
+      ],
+      "answer": 2,
+      "evidence": [5],
+      "hint": "Find the Seat row on the ticket. Match the number and the letter.",
+      "explain": "Sam sits in seat 14A. It is in the Seat row of his ticket.",
+      "inference": 0,
+      "tags": ["seat", "similar-numbers"]
+    },
+    {
+      "id": "f4-i06",
+      "skill": "F4",
+      "passage": "f4-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Grandma Rose reads the label with Sam. Sam is 12. How many tablets does the label say for his age? Ask an adult before you take any medicine.",
+      "options": ["12 tablets", "1 tablet", "2 tablets"],
+      "answer": 2,
+      "evidence": [2],
+      "hint": "Find the row with Sam's age in it. Then read across to the number of tablets.",
+      "explain": "The label says 2 tablets for ages 12 and up. It is in the Ages 12 and up row. Ask an adult before you take any medicine.",
+      "inference": 1,
+      "tags": ["medicine", "age-row", "number-trap"]
+    },
+    {
+      "id": "f4-i07",
+      "skill": "F4",
+      "passage": "f4-p04",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Grandma Rose wants to know how often this medicine can be taken. Tap the row that tells her. Ask an adult before you take any medicine.",
+      "unit": "row",
+      "answer": [3],
+      "evidence": [3],
+      "hint": "Look for a row about time, like a day or an hour.",
+      "explain": "Tap the How often row. It says once a day. Ask an adult before you take any medicine.",
+      "inference": 0,
+      "tags": ["medicine", "how-often"]
+    },
+    {
+      "id": "f4-i08",
+      "skill": "F4",
+      "passage": "f4-p05",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Leo needs 2 bike lights, one for the front and one for the back. How much will he pay for both?",
+      "options": ["$10", "$6", "$12"],
+      "answer": 0,
+      "evidence": [0],
+      "hint": "Read the whole bike light row. It has two prices.",
+      "explain": "Leo will pay $10. The bike light row says 2 for $10.",
+      "inference": 1,
+      "tags": ["price-math", "two-for", "sale"]
+    },
+    {
+      "id": "f4-i09",
+      "skill": "F4",
+      "passage": "f4-p05",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Priya wants to buy a bell while the sale is on. Tap the row that tells her the last day to come.",
+      "unit": "row",
+      "answer": [4],
+      "evidence": [4],
+      "hint": "Look for a row with a day and a date.",
+      "explain": "Tap the Sale ends row. It says Sunday, June 8, so Priya should come by then.",
+      "inference": 0,
+      "tags": ["date", "sale-end"]
+    },
+    {
+      "id": "f4-i10",
+      "skill": "F4",
+      "passage": "f4-p06",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Ana cannot eat nuts. Sort the snacks so she knows which ones to take.",
+      "bins": ["Safe for Ana", "Not safe for Ana"],
+      "cards": [
+        { "text": "Pretzels", "bin": 0, "emoji": "🥨" },
+        { "text": "Trail mix", "bin": 1, "emoji": "🥜" },
+        { "text": "Cheese crackers", "bin": 0, "emoji": "🧀" },
+        { "text": "Peanut butter cookies", "bin": 1, "emoji": "🍪" },
+        { "text": "Apple slices", "bin": 0, "emoji": "🍎" },
+        { "text": "Granola bites", "bin": 1, "emoji": "🥣" }
+      ],
+      "evidence": [1, 3, 5],
+      "hint": "Read the Contains column for each snack. Look for the word nuts or peanuts.",
+      "explain": "Trail mix, peanut butter cookies and granola bites have peanuts or nuts, so they are not safe for Ana. Pretzels, cheese crackers and apple slices are safe. Look in the Contains column.",
+      "inference": 1,
+      "tags": ["allergy", "contains", "table"],
+      "transfer": true
+    },
+    {
+      "id": "f4-i11",
+      "skill": "F4",
+      "passage": "f4-p07",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Today is October 14. Sort each food so Sam knows what to do with it.",
+      "bins": ["Date is still to come: use it", "Date has passed: ask an adult"],
+      "cards": [
+        { "text": "Milk", "bin": 1, "emoji": "🥛" },
+        { "text": "Yogurt", "bin": 0, "emoji": "🥄" },
+        { "text": "Cheese", "bin": 0, "emoji": "🧀" },
+        { "text": "Orange juice", "bin": 1, "emoji": "🧃" },
+        { "text": "Eggs", "bin": 0, "emoji": "🥚" }
+      ],
+      "evidence": [0, 3],
+      "hint": "Compare each date with October 14. Is the date before October 14 or after it?",
+      "explain": "Milk (October 12) and orange juice (October 13) are past their dates, so Sam asks an adult. Yogurt, cheese and eggs have dates after October 14, so he can use them.",
+      "inference": 1,
+      "tags": ["best-before", "date-compare"],
+      "transfer": true
+    },
+    {
+      "id": "f4-i12",
+      "skill": "F4",
+      "passage": "f4-p07",
+      "format": "order",
+      "level": 3,
+      "prompt": "Sam wants to use the foods that are still good. Put them in order. Use the soonest date first.",
+      "steps": ["Eggs (October 18)", "Yogurt (October 20)", "Cheese (October 30)"],
+      "evidence": [4, 1, 2],
+      "hint": "Leave out the foods whose dates have passed. Then find the date closest to October 14.",
+      "explain": "Eggs come first (October 18), then yogurt (October 20), then cheese (October 30). The dates are in the Best before column.",
+      "inference": 1,
+      "tags": ["best-before", "date-order"],
+      "transfer": true
+    },
+    {
+      "id": "f4-i13",
+      "skill": "F4",
+      "passage": "f4-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya's dad gets a flat tire on the way. They get to the observatory at 7:45 PM. What should Priya do?",
+      "options": ["Sit in Row C, Seat 8 right away.", "Wait at the back until 8:15 PM.", "Go home. The show is over."],
+      "pictures": ["💺", "⏳", "🏠"],
+      "answer": 1,
+      "evidence": [2, 5],
+      "hint": "Is 7:45 PM before or after the show starts? Then read the last row.",
+      "explain": "Priya should wait at the back until 8:15 PM. The show starts at 7:30 PM, so 7:45 PM is late, and the Late? row says to wait until the break.",
+      "inference": 1,
+      "tags": ["late", "time-pm", "condition"]
+    },
+    {
+      "id": "f4-i14",
+      "skill": "F4",
+      "passage": "f4-p08",
+      "format": "scene",
+      "level": 3,
+      "prompt": "Priya finds the seats. Tap her seat.",
+      "scene": "hall",
+      "objects": [
+        { "label": "Row B, Seat 8", "emoji": "💺", "sign": { "shape": "square", "color": "white", "text": "B8" } },
+        { "label": "Row C, Seat 9", "emoji": "💺", "sign": { "shape": "square", "color": "white", "text": "C9" } },
+        { "label": "Row C, Seat 8", "emoji": "💺", "sign": { "shape": "square", "color": "white", "text": "C8" } },
+        { "label": "Row D, Seat 8", "emoji": "💺", "sign": { "shape": "square", "color": "white", "text": "D8" } }
+      ],
+      "answer": 2,
+      "evidence": [3],
+      "hint": "Find the Seat row on the ticket. Check the row letter first, then the seat number.",
+      "explain": "Priya sits in Row C, Seat 8. It is in the Seat row of her ticket.",
+      "inference": 0,
+      "tags": ["seat", "letter-number", "similar-numbers"]
+    },
+    {
+      "id": "f4-i15",
+      "skill": "F4",
+      "passage": "f4-p09",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ana cannot eat nuts. What should she do with the banana bread?",
+      "options": ["Skip it. The label says it may contain nuts.", "Eat a slice. Nuts are missing from the Contains row.", "Eat it before October 18."],
+      "pictures": ["✋", "🍞", "📅"],
+      "answer": 0,
+      "evidence": [3],
+      "hint": "Read every row about what is in the bread. There are two of them.",
+      "explain": "Ana should skip it. The May contain row says nuts, so the bread might have nuts in it.",
+      "inference": 1,
+      "tags": ["allergy", "may-contain"]
+    },
+    {
+      "id": "f4-i16",
+      "skill": "F4",
+      "passage": "f4-p09",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Grandma Rose gives each soccer player one serving. Tap the row that tells how many players one loaf can feed.",
+      "unit": "row",
+      "answer": [1],
+      "evidence": [0, 1],
+      "hint": "First find how big one serving is. Then find how many of those are in a loaf.",
+      "explain": "Tap the Slices in a loaf row. It says 8. One serving is 1 slice, so one loaf feeds 8 players.",
+      "inference": 1,
+      "tags": ["serving-size", "two-rows"]
+    }
+  ],
+  "model": {
+    "item": "f4-i00",
+    "steps": [
+      { "say": "I read the question first. Ana cannot eat nuts. So I need to check the label for nuts." },
+      { "say": "I look for the row that says what is in the bar. It is the Contains row.", "show": [0] },
+      { "say": "The Contains row says oats, honey and peanuts. Peanuts are nuts." },
+      { "say": "The warning at the top says it too: Contains peanuts." },
+      { "say": "So Ana should skip this oat bar.", "reveal": true }
+    ]
+  }
+}

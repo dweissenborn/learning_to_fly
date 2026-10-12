@@ -1,0 +1,435 @@
+{
+  "skill": "F2",
+  "passages": [
+    {
+      "id": "f2-p01",
+      "title": "Note on the Fridge",
+      "kind": "message",
+      "sentences": ["Sam finds a note on the fridge."],
+      "visual": {
+        "type": "message",
+        "app": "note",
+        "from": "Dad",
+        "to": "Sam",
+        "rows": ["Sam, please feed Pixel at 5 PM.", "Give him one scoop of dog food.", "Thanks! Dad"]
+      },
+      "picture": "🐕🥣",
+      "topics": ["animals", "home"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "Note on the Fridge", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p02",
+      "title": "Battery Low",
+      "kind": "prompt",
+      "sentences": ["Priya is playing a robot game on her tablet.", "A message pops up."],
+      "visual": {
+        "type": "prompt",
+        "title": "Battery Low",
+        "icon": "🔋",
+        "rows": ["Your battery is at 5%.", "Plug in your charger now."],
+        "buttons": ["OK"]
+      },
+      "picture": "📱🔋",
+      "topics": ["games"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "Battery Low", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p03",
+      "title": "Sunflower Seeds",
+      "kind": "label",
+      "sentences": ["Maya has a packet of sunflower seeds."],
+      "visual": {
+        "type": "label",
+        "title": "Sunflower Seeds",
+        "rows": [
+          { "k": "How to plant", "v": "Push one seed into each pot of soil." },
+          { "k": "Water", "v": "A little every day" },
+          { "k": "Flowers in", "v": "About 10 weeks" }
+        ]
+      },
+      "picture": "🌻🪴",
+      "topics": ["nature"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "Sunflower Seeds", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p04",
+      "title": "Berry Smoothie",
+      "kind": "recipe",
+      "sentences": ["Ana and Ben make a smoothie after soccer."],
+      "visual": {
+        "type": "list",
+        "title": "Berry Smoothie",
+        "ordered": true,
+        "note": "Ask an adult before you use the blender.",
+        "rows": [
+          "First, put one banana and one cup of berries in the blender.",
+          "Then pour in one cup of milk.",
+          "Last, put the lid on and press START."
+        ]
+      },
+      "picture": "🥤🍌🫐",
+      "topics": ["food"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "Berry Smoothie", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p05",
+      "title": "StarBox Setup",
+      "kind": "directions",
+      "sentences": ["Ana and Ben have a new StarBox game console.", "The setup card has three steps."],
+      "visual": {
+        "type": "list",
+        "title": "StarBox Setup",
+        "ordered": true,
+        "rows": [
+          "Plug the power cord into the wall.",
+          "Plug the TV cable into the TV.",
+          "Press the round button on the front of the StarBox."
+        ]
+      },
+      "picture": "🎮📺",
+      "topics": ["games"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "StarBox Setup", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p06",
+      "title": "Text from Grandma Rose",
+      "kind": "message",
+      "sentences": [],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Grandma Rose",
+        "to": "Sam",
+        "time": "3:05 PM",
+        "rows": [
+          "Hi Sam! Can you help at the bakery after school?",
+          "First, wash your hands.",
+          "Then put on a blue apron.",
+          "Last, put the muffins on the tray in the window."
+        ]
+      },
+      "picture": "🧁📱",
+      "topics": ["food"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "Text from Grandma Rose", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p07",
+      "title": "Fire Drill Steps",
+      "kind": "notice",
+      "sentences": ["This notice hangs by the door in Ms. Ortiz's science room."],
+      "visual": {
+        "type": "notice",
+        "title": "Fire Drill Steps",
+        "icon": "🔔",
+        "rows": [
+          "When the alarm rings, stop what you are doing.",
+          "Leave your bag at your desk.",
+          "Line up at the door.",
+          "Walk down the stairs with your class.",
+          "Go outside and meet your teacher by the flagpole.",
+          "Wait there until your teacher calls your name."
+        ]
+      },
+      "picture": "🔔🚪",
+      "topics": ["school", "safety"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Fire Drill Steps", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p08",
+      "title": "SkyDart Rocket Kit",
+      "kind": "directions",
+      "sentences": ["Priya builds a model rocket at home."],
+      "visual": {
+        "type": "list",
+        "title": "SkyDart Rocket Kit",
+        "ordered": true,
+        "note": "Ask an adult to help you launch your rocket.",
+        "rows": [
+          "Glue the three fins onto the tube.",
+          "Wait one hour for the glue to dry.",
+          "Push the nose cone onto the top of the tube.",
+          "Put the star stickers on the tube.",
+          "Launch your rocket at the park with an adult."
+        ]
+      },
+      "picture": "🚀🧰",
+      "topics": ["space"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "SkyDart Rocket Kit", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p09",
+      "title": "Pumping Up a Bike Tire",
+      "kind": "story",
+      "sentences": [
+        "Sam's back bike tire feels soft, so he takes his bike to Okafor's Bike Shop.",
+        "Mr. Okafor shows him how to pump up the tire by himself.",
+        "\"First, take the small cap off the valve,\" says Mr. Okafor.",
+        "\"Put the cap in your pocket so you can keep it safe.\"",
+        "Next, Sam carefully pushes the end of the pump onto the valve.",
+        "He flips the little lever up to lock the pump in place.",
+        "Then he pumps until the needle on the pressure gauge points to 50.",
+        "\"Now flip the lever down and pull the pump off,\" says Mr. Okafor.",
+        "Last, Sam screws the cap back onto the valve.",
+        "He squeezes the tire with his hand, and now it feels firm and full.",
+        "\"Now you can do this at home with your own pump,\" says Mr. Okafor with a smile."
+      ],
+      "picture": "🚲🔧",
+      "topics": ["transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Pumping Up a Bike Tire", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    }
+  ],
+  "items": [
+    {
+      "id": "f2-i00", "skill": "F2", "passage": "f2-p04", "format": "order", "level": 2,
+      "prompt": "Put the smoothie steps in order.",
+      "steps": ["Put the banana and berries in the blender", "Pour in one cup of milk", "Put the lid on and press START"],
+      "evidence": [0, 1, 2],
+      "hint": "Look for the order words first, then and last.",
+      "explain": "First the fruit goes in. Then the milk goes in. Last, the lid goes on and they press START.",
+      "inference": 0,
+      "tags": ["order-words", "three-steps"]
+    },
+    {
+      "id": "f2-i01", "skill": "F2", "passage": "f2-p01", "format": "tap", "level": 1,
+      "prompt": "How much food should Sam put in Pixel's bowl?",
+      "options": ["Two scoops", "One scoop", "Three scoops"],
+      "pictures": ["2️⃣", "1️⃣", "3️⃣"],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Find the line in the note that says how much food to give.",
+      "explain": "Sam puts in one scoop. The note says, \"Give him one scoop of dog food.\"",
+      "inference": 0,
+      "tags": ["amount", "one-step"],
+      "placement": true
+    },
+    {
+      "id": "f2-i02", "skill": "F2", "passage": "f2-p01", "format": "scene", "level": 1,
+      "prompt": "Tap the food Sam should give Pixel.",
+      "scene": "kitchen",
+      "objects": [
+        { "label": "Cat food", "emoji": "🐱" },
+        { "label": "Bird seed", "emoji": "🐦" },
+        { "label": "Dog food", "emoji": "🐶" }
+      ],
+      "answer": 2,
+      "evidence": [1],
+      "hint": "Read the note. Find the words that say what kind of food.",
+      "explain": "Sam gives Pixel dog food. The note says to give him one scoop of dog food.",
+      "inference": 0,
+      "tags": ["one-step"]
+    },
+    {
+      "id": "f2-i03", "skill": "F2", "passage": "f2-p02", "format": "scene", "level": 1,
+      "prompt": "Tap what Priya should plug in.",
+      "scene": "home",
+      "objects": [
+        { "label": "Headphones", "emoji": "🎧" },
+        { "label": "Charger", "emoji": "🔌" },
+        { "label": "Game controller", "emoji": "🎮" }
+      ],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Read the message on the screen. Find the line that tells Priya what to do.",
+      "explain": "Priya plugs in her charger. The message says, \"Plug in your charger now.\"",
+      "inference": 0,
+      "tags": ["screen-prompt", "one-step"],
+      "transfer": true
+    },
+    {
+      "id": "f2-i04", "skill": "F2", "passage": "f2-p03", "format": "tap", "level": 1,
+      "prompt": "How many seeds should Maya push into each pot?",
+      "options": ["One seed", "Five seeds", "All the seeds"],
+      "pictures": ["1️⃣", "5️⃣", "🌻"],
+      "answer": 0,
+      "evidence": [0],
+      "hint": "Find the How to plant row. Look for a number word.",
+      "explain": "She pushes one seed into each pot. The How to plant row says, \"Push one seed into each pot of soil.\"",
+      "inference": 0,
+      "tags": ["amount", "label"]
+    },
+    {
+      "id": "f2-i05", "skill": "F2", "passage": "f2-p03", "format": "scene", "level": 1,
+      "prompt": "Tap where Maya should push the seed.",
+      "scene": "home",
+      "objects": [
+        { "label": "Pot of soil", "emoji": "🪴" },
+        { "label": "Cup of water", "emoji": "🥤" },
+        { "label": "Seed packet", "emoji": "📦" }
+      ],
+      "answer": 0,
+      "evidence": [0],
+      "hint": "Read the How to plant row. Find the place it names.",
+      "explain": "She pushes the seed into the pot of soil. The label says to push one seed into each pot of soil.",
+      "inference": 0,
+      "tags": ["one-step", "label"]
+    },
+    {
+      "id": "f2-i06", "skill": "F2", "passage": "f2-p04", "format": "tap", "level": 2,
+      "prompt": "Ben is pouring in the milk. How much milk should he pour?",
+      "options": ["One cup", "Two cups", "Half a cup"],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Find the step about milk. Look for the amount.",
+      "explain": "He pours one cup of milk. Step 2 says, \"Then pour in one cup of milk.\"",
+      "inference": 0,
+      "tags": ["amount"]
+    },
+    {
+      "id": "f2-i07", "skill": "F2", "passage": "f2-p05", "format": "order", "level": 2,
+      "prompt": "Put the steps in order to set up the StarBox.",
+      "steps": ["Plug the power cord into the wall", "Plug the TV cable into the TV", "Press the round button on the StarBox"],
+      "evidence": [0, 1, 2],
+      "hint": "Look at the number next to each step on the card.",
+      "explain": "First the power cord goes into the wall. Then the TV cable goes into the TV. Last, they press the round button.",
+      "inference": 0,
+      "tags": ["three-steps"]
+    },
+    {
+      "id": "f2-i08", "skill": "F2", "passage": "f2-p05", "format": "scene", "level": 2,
+      "prompt": "Ben plugged the power cord into the wall. Tap what he uses next.",
+      "scene": "home",
+      "objects": [
+        { "label": "TV cable", "emoji": "📺" },
+        { "label": "Game controller", "emoji": "🎮" },
+        { "label": "Round button", "emoji": "🔘" }
+      ],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Find the step about the power cord. Then read the step right after it.",
+      "explain": "Next, Ben plugs the TV cable into the TV. That is step 2, right after the power cord.",
+      "inference": 0,
+      "tags": ["next-step"]
+    },
+    {
+      "id": "f2-i09", "skill": "F2", "passage": "f2-p06", "format": "tap", "level": 2,
+      "prompt": "Sam just washed his hands. What should he do next?",
+      "options": ["Put the muffins on the tray", "Put on a blue apron", "Wash his hands again"],
+      "pictures": ["🧁", "👕", "🧼"],
+      "answer": 1,
+      "evidence": [2],
+      "hint": "Find the line about washing hands. Then read the line after it.",
+      "explain": "Next, Sam puts on a blue apron. The text says, \"Then put on a blue apron.\"",
+      "inference": 0,
+      "tags": ["next-step", "message"],
+      "transfer": true
+    },
+    {
+      "id": "f2-i10", "skill": "F2", "passage": "f2-p06", "format": "highlight", "level": 2,
+      "prompt": "Tap the line that tells Sam his last job.",
+      "unit": "row",
+      "answer": [3],
+      "evidence": [3],
+      "hint": "Look for the order word that means the end.",
+      "explain": "The last line says, \"Last, put the muffins on the tray in the window.\" That is his last job.",
+      "inference": 0,
+      "tags": ["order-words", "message"],
+      "transfer": true
+    },
+    {
+      "id": "f2-i11", "skill": "F2", "passage": "f2-p07", "format": "order", "level": 3,
+      "prompt": "The alarm rings. Put the fire drill steps in order.",
+      "steps": ["Stop what you are doing", "Leave your bag at your desk", "Line up at the door", "Walk down the stairs with your class", "Meet your teacher by the flagpole"],
+      "evidence": [0, 1, 2, 3, 4],
+      "hint": "Read the notice from the top. Each line is the next step.",
+      "explain": "Stop, leave your bag, line up, walk down the stairs, then meet your teacher by the flagpole. The notice lists the steps in this order.",
+      "inference": 0,
+      "tags": ["five-steps", "fire-drill"]
+    },
+    {
+      "id": "f2-i12", "skill": "F2", "passage": "f2-p07", "format": "sort", "level": 3,
+      "prompt": "Where do you do each step? Put each step in the right box.",
+      "bins": ["Inside the school", "Outside the school"],
+      "cards": [
+        { "text": "Leave your bag at your desk", "bin": 0, "emoji": "🎒" },
+        { "text": "Meet your teacher by the flagpole", "bin": 1, "emoji": "🚩" },
+        { "text": "Line up at the door", "bin": 0, "emoji": "🚪" },
+        { "text": "Wait until your teacher calls your name", "bin": 1, "emoji": "🙋" },
+        { "text": "Walk down the stairs", "bin": 0, "emoji": "🪜" }
+      ],
+      "evidence": [1, 2, 3, 4, 5],
+      "hint": "Find the step where the class goes outside. The steps before it happen inside.",
+      "explain": "Leaving your bag, lining up and walking down the stairs happen inside. The notice says to go outside to the flagpole, and you wait there for your name.",
+      "inference": 1,
+      "tags": ["inside-outside", "sort", "fire-drill"],
+      "transfer": true
+    },
+    {
+      "id": "f2-i13", "skill": "F2", "passage": "f2-p08", "format": "scene", "level": 3,
+      "prompt": "Tap the rocket parts Priya uses, in order.",
+      "scene": "home",
+      "objects": [
+        { "label": "Nose cone", "emoji": "🔺" },
+        { "label": "Star stickers", "emoji": "⭐" },
+        { "label": "Fins", "emoji": "🪽" },
+        { "label": "Paint brush", "emoji": "🖌️" }
+      ],
+      "answer": [2, 0, 1],
+      "evidence": [0, 2, 3],
+      "hint": "Read the steps from the top. Each time a step names a part, tap that part.",
+      "explain": "Priya uses the fins first, then the nose cone, then the star stickers. Steps 1, 3 and 4 name them in that order.",
+      "inference": 0,
+      "tags": ["multi-step", "answer-order"]
+    },
+    {
+      "id": "f2-i14", "skill": "F2", "passage": "f2-p08", "format": "tap", "level": 3,
+      "prompt": "Priya glues on the fins at 3:00 PM. What time can she push on the nose cone?",
+      "options": ["3:00 PM", "3:10 PM", "4:00 PM", "5:00 PM"],
+      "answer": 2,
+      "evidence": [1, 2],
+      "hint": "Find the step after the glue. It says how long to wait. Add that time to 3:00 PM.",
+      "explain": "She can push on the nose cone at 4:00 PM. Step 2 says to wait one hour for the glue to dry, and one hour after 3:00 PM is 4:00 PM.",
+      "inference": 1,
+      "tags": ["time-math", "wait-step", "time-pm"]
+    },
+    {
+      "id": "f2-i15", "skill": "F2", "passage": "f2-p09", "format": "order", "level": 3,
+      "prompt": "Put Sam's steps in order to pump up the tire.",
+      "steps": ["Take the cap off the valve", "Push the pump onto the valve", "Flip the lever up", "Pump until the gauge shows 50", "Flip the lever down and pull the pump off", "Screw the cap back on"],
+      "evidence": [2, 4, 5, 6, 7, 8],
+      "hint": "Look for the order words: first, next, then, now and last.",
+      "explain": "Cap off, pump on, lever up, pump to 50, lever down and pump off, then cap back on. The story gives the steps with the words first, next, then, now and last.",
+      "inference": 0,
+      "tags": ["six-steps", "story-directions", "order-words"],
+      "transfer": true
+    },
+    {
+      "id": "f2-i16", "skill": "F2", "passage": "f2-p09", "format": "tap", "level": 3,
+      "prompt": "The needle on the gauge points to 50. What should Sam do now?",
+      "options": ["Take the cap off the valve", "Pump in more air", "Flip the lever down and pull the pump off", "Squeeze the tire"],
+      "answer": 2,
+      "evidence": [6, 7],
+      "hint": "Find the sentence about the gauge. Then read the sentence right after it.",
+      "explain": "He flips the lever down and pulls the pump off. Mr. Okafor says this right after the needle points to 50.",
+      "inference": 0,
+      "tags": ["next-step", "story-directions"]
+    }
+  ],
+  "model": {
+    "item": "f2-i00",
+    "steps": [
+      { "say": "I need to put the steps in order. I look for order words like first, then and last." },
+      { "say": "This step starts with First. The banana and berries go in first.", "show": [0] },
+      { "say": "This step starts with Then. The milk goes in next.", "show": [1] },
+      { "say": "This step starts with Last. The lid goes on and they press START at the end.", "show": [2] },
+      { "say": "So the order is fruit, then milk, then the lid and START.", "reveal": true }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "@wayfinder/engine",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "dependencies": { "@wayfinder/schema": "*" }
+}

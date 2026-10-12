@@ -1,0 +1,57 @@
+{
+  "words": [
+    { "word": "bus", "options": ["🚌", "🚲", "🚗"], "answer": 0 },
+    { "word": "key", "options": ["🔒", "🔑", "🚪"], "answer": 1 },
+    { "word": "rain", "options": ["☀️", "❄️", "🌧️"], "answer": 2 },
+    { "word": "rocket", "options": ["🚀", "✈️", "🚁"], "answer": 0 },
+    { "word": "ticket", "options": ["💵", "🎫", "✉️"], "answer": 1 },
+    { "word": "bridge", "options": ["🏠", "⛰️", "🌉"], "answer": 2 },
+    { "word": "magnet", "options": ["🧲", "🔋", "🔦"], "answer": 0 },
+    { "word": "medicine", "options": ["🍬", "💊", "🧃"], "answer": 1 },
+    { "word": "volcano", "options": ["⛰️", "🏝️", "🌋"], "answer": 2 },
+    { "word": "microscope", "options": ["🔬", "🔭", "📷"], "answer": 0 }
+  ],
+  "reading": {
+    "passage": {
+      "id": "pl-read", "title": "Sam's Train Ride", "kind": "story", "level": 2, "socialLoad": 0, "topics": ["transport"], "picture": "🚆",
+      "sentences": [
+        "On Saturday, Sam and Grandma Rose took the train to Bay City.",
+        "The train left at nine o'clock.",
+        "Sam sat by the window and looked at the boats.",
+        "Grandma Rose read a book.",
+        "In Bay City, they went to the train museum.",
+        "Sam's favorite engine was a big green one from 1920.",
+        "He took a photo of it for his map wall.",
+        "They got home at four o'clock."
+      ],
+      "credit": { "title": "Sam's Train Ride", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    "items": [
+      { "id": "pl-r1", "skill": "N1", "passage": "pl-read", "format": "tap", "level": 2, "prompt": "Where did Sam and Grandma Rose go?", "options": ["To the beach", "To the train museum", "To the bakery"], "answer": 1, "evidence": [4], "explain": "They went to the train museum in Bay City." },
+      { "id": "pl-r2", "skill": "N1", "passage": "pl-read", "format": "tap", "level": 2, "prompt": "What time did the train leave?", "options": ["Nine o'clock", "Four o'clock", "Twelve o'clock"], "answer": 0, "evidence": [1], "explain": "The train left at nine o'clock." },
+      { "id": "pl-r3", "skill": "N5", "passage": "pl-read", "format": "tap", "level": 2, "inference": 1, "prompt": "Why did Sam take a photo of the green engine?", "options": ["Grandma Rose asked him to", "It was for a school test", "It was his favorite"], "answer": 2, "evidence": [5, 6], "explain": "The green engine was his favorite, so he took a photo of it." }
+    ]
+  },
+  "listening": {
+    "passage": {
+      "id": "pl-listen", "title": "Priya's Rover Test", "kind": "story", "level": 2, "socialLoad": 0, "topics": ["robots"], "picture": "🤖",
+      "sentences": [
+        "After school on Tuesday, Priya tested her rover in the gym.",
+        "The rover had four wheels and a small camera.",
+        "Priya pressed the green button.",
+        "The rover rolled forward, then it stopped.",
+        "The battery light was red.",
+        "Priya plugged the battery in to charge.",
+        "Ten minutes later, she tried again.",
+        "This time the rover rolled across the whole gym.",
+        "Priya smiled and wrote the result in her notebook."
+      ],
+      "credit": { "title": "Priya's Rover Test", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    "items": [
+      { "id": "pl-l1", "skill": "N1", "passage": "pl-listen", "format": "tap", "level": 2, "prompt": "Where did Priya test her rover?", "options": ["In the park", "In the gym", "At home"], "answer": 1, "evidence": [0], "explain": "She tested it in the gym." },
+      { "id": "pl-l2", "skill": "N3", "passage": "pl-listen", "format": "tap", "level": 2, "inference": 1, "prompt": "Why did the rover stop?", "options": ["The battery was low", "A wheel fell off", "Priya pressed stop"], "answer": 0, "evidence": [4, 5], "explain": "The battery light was red, so the battery was low." },
+      { "id": "pl-l3", "skill": "N5", "passage": "pl-listen", "format": "tap", "level": 2, "inference": 1, "prompt": "How did Priya feel at the end?", "options": ["Angry", "Scared", "Pleased"], "pictures": ["😠", "😨", "🙂"], "answer": 2, "evidence": [8], "explain": "She smiled, so she was pleased." }
+    ]
+  }
+}

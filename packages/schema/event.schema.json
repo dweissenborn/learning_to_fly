@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "event.schema.json",
+  "title": "LogEvent",
+  "description": "One entry in the append-only progress log. Every view of progress is derived from these.",
+  "oneOf": [
+    { "$ref": "#/definitions/AnswerEvent" },
+    { "$ref": "#/definitions/SessionEvent" },
+    { "$ref": "#/definitions/PlacementEvent" },
+    { "$ref": "#/definitions/WorldEvent" },
+    { "$ref": "#/definitions/RecountEvent" },
+    { "$ref": "#/definitions/RealWorldEvent" }
+  ],
+  "definitions": {
+    "Phase": { "type": "string", "enum": ["warmup", "together", "yourturn", "placement", "gatecheck"] },
+    "Strand": { "type": "string", "enum": ["functional", "narrative", "philosophical"] },
+    "AnswerEvent": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "ts", "type", "session", "item", "skill", "phase", "correct", "hint", "tries", "ms", "format"],
+      "properties": {
+        "id": { "type": "string" },
+        "ts": { "type": "number", "description": "Epoch milliseconds" },
+        "type": { "const": "answer" },
+        "session": { "type": "string" },
+        "item": { "type": "string" },
+        "skill": { "type": "string" },
+        "phase": { "$ref": "#/definitions/Phase" },
+        "correct": { "type": "boolean", "description": "Right on the first try with no hint" },
+        "hint": { "type": "integer", "minimum": 0, "maximum": 3, "description": "Highest hint level shown" },
+        "tries": { "type": "integer", "minimum": 1 },
+        "ms": { "type": "number" },
+        "format": { "type": "string" },
+        "transfer": { "type": "boolean" },
+        "interest": { "type": "boolean", "description": "The passage matched one of the learner's interests" },
+        "readAloud": { "type": "boolean" },
+        "rubric": { "type": "integer", "minimum": 0, "maximum": 4, "description": "Express-tier items: rubric points shown" }
+      }
+    },
+    "SessionEvent": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "ts", "type", "session", "action"],
+      "properties": {
+        "id": { "type": "string" }, "ts": { "type": "number" }, "type": { "const": "session" },
+        "session": { "type": "string" },
+        "action": { "type": "string", "enum": ["start", "finish", "stop"] },
+        "strand": { "$ref": "#/definitions/Strand" },
+        "skill": { "type": "string" },
+        "gatecheck": { "type": "boolean" }
+      }
+    },
+    "PlacementEvent": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "ts", "type", "functional", "narrative", "word", "reading", "listening"],
+      "properties": {
+        "id": { "type": "string" }, "ts": { "type": "number" }, "type": { "const": "placement" },
+        "functional": { "type": "integer", "minimum": 1, "maximum": 7, "description": "Starting step; steps below it start as mastered and enter review" },
+        "narrative": { "type": "integer", "minimum": 1, "maximum": 7 },
+        "word": { "type": "number", "description": "Share correct, 0 to 1" },
+        "reading": { "type": "number" },
+        "listening": { "type": "number" },
+        "manual": { "type": "boolean", "description": "Set by an adult rather than by the checks" }
+      }
+    },
+    "WorldEvent": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "ts", "type", "piece", "x", "y"],
+      "properties": {
+        "id": { "type": "string" }, "ts": { "type": "number" }, "type": { "const": "world" },
+        "piece": { "type": "string" }, "x": { "type": "integer" }, "y": { "type": "integer" }
+      }
+    },
+    "RecountEvent": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "ts", "type", "stage", "parts"],
+      "properties": {
+        "id": { "type": "string" }, "ts": { "type": "number" }, "type": { "const": "recount" },
+        "stage": { "type": "integer", "minimum": 1, "maximum": 4 },
+        "parts": { "type": "integer", "minimum": 1, "description": "How many parts of the day were told. The words live in the notes store, which has a retention limit." },
+        "typed": { "type": "boolean" }
+      }
+    },
+    "RealWorldEvent": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "ts", "type", "skill"],
+      "properties": {
+        "id": { "type": "string" }, "ts": { "type": "number" }, "type": { "const": "realworld" },
+        "skill": { "type": "string" }, "note": { "type": "string" }
+      }
+    }
+  }
+}

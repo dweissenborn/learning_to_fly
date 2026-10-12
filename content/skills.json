@@ -1,0 +1,168 @@
+{
+  "strands": {
+    "functional": {
+      "region": "Harbor Town",
+      "short": "Reading to do",
+      "intro": "Reading to do. Words that help you do things: signs, steps, labels, lists.",
+      "icon": "🪧"
+    },
+    "narrative": {
+      "region": "Story Woods",
+      "short": "Reading to follow a story",
+      "intro": "Reading to follow a story. Stories have people, places, problems and endings.",
+      "icon": "📖"
+    },
+    "philosophical": {
+      "region": "Lantern Peaks",
+      "short": "Reading to think about life",
+      "intro": "Reading to think about life. Stories about joy, fairness, courage and what matters.",
+      "icon": "🏮"
+    }
+  },
+  "skills": {
+    "F1": {
+      "name": "Signs and symbols",
+      "ican": "I can read signs like EXIT, STOP and PUSH, and do what they say.",
+      "praise": ["You read the sign and knew what to do.", "You used the sign to choose the right action."],
+      "talk": "Next time you are out, ask: find one sign and tell me what it means.",
+      "offline": "On a walk or at a store, take turns spotting signs (EXIT, PUSH, RESTROOMS). He reads each one and does what it says.",
+      "realworld": "Read a real sign and did what it said, for example found the exit at a store."
+    },
+    "F2": {
+      "name": "Following steps",
+      "ican": "I can follow written steps in the right order.",
+      "praise": ["You followed the steps in order.", "You found the right step."],
+      "talk": "Ask him to read you the steps on a real package, like microwave popcorn, then do them together.",
+      "offline": "Write three steps on sticky notes for a real task (make a snack, set up a game). He reads them and follows them.",
+      "realworld": "Followed written steps to make or set up something."
+    },
+    "F3": {
+      "name": "Menus and timetables",
+      "ican": "I can find times and prices in menus and timetables.",
+      "praise": ["You found the right row and read across.", "You used the timetable to find the time."],
+      "talk": "Look at a real bus timetable or menu together. Ask: when is the next bus? What could you buy for $5?",
+      "offline": "Use a takeout menu: he picks a meal under a set budget and reads you the prices.",
+      "realworld": "Used a real menu, schedule or timetable to find something."
+    },
+    "F4": {
+      "name": "Labels, prices and dates",
+      "ican": "I can read labels to find prices, dates and what is inside.",
+      "praise": ["You checked the label for the detail that mattered.", "You found the date and price on the label."],
+      "talk": "In the kitchen, pick one package. Ask him to find the best-before date and one thing it contains.",
+      "offline": "Grocery hunt: find the price and the best-before date on three items.",
+      "realworld": "Found a price, date or ingredient on a real label."
+    },
+    "F5": {
+      "name": "Messages and notices",
+      "ican": "I can read a message or notice and know what to do, when and where.",
+      "praise": ["You found what to do and when.", "You read the message and found the key detail."],
+      "talk": "Send him a short text with a plan (where and when). Ask him to tell you the plan back.",
+      "offline": "Leave a note with one job and a time. He reads it and does it.",
+      "realworld": "Read a real message or school notice and acted on it."
+    },
+    "F6": {
+      "name": "Warnings and screen prompts",
+      "ican": "I can read warnings and pop-ups and choose the safe button.",
+      "praise": ["You read the warning and chose the safe thing.", "You checked what the button would do before you tapped."],
+      "talk": "When a pop-up appears on a device, pause and ask: what does it want? Which button is safe?",
+      "offline": "Look at real warning labels at home (cleaning spray, the microwave). He reads each one and says the rule.",
+      "realworld": "Read a real warning or pop-up and made a safe choice."
+    },
+    "N1": {
+      "name": "Who, where and when",
+      "ican": "I can say who is in a story, where it happens and when.",
+      "praise": ["You found who, where and when.", "You found the place and the time in the story."],
+      "talk": "Ask about a show he watched: who was in it, where was it, and when did it happen?",
+      "offline": "Read a short story together. At each page, he points to who is there and where they are.",
+      "realworld": "Told who, where and when about something real (a show, a trip, today)."
+    },
+    "N2": {
+      "name": "Order of events",
+      "ican": "I can put what happened in order and retell it.",
+      "praise": ["You put the events in the right order.", "You retold it: first, then, last."],
+      "talk": "Ask him to tell you about a game he played in three parts: first, then, last.",
+      "offline": "Cut a comic strip into panels. He puts them back in order and retells it.",
+      "realworld": "Retold something real in order: first, then, last."
+    },
+    "N3": {
+      "name": "Problems and causes",
+      "ican": "I can find the problem in a story and say what caused it.",
+      "praise": ["You found the problem and what caused it.", "You linked the cause to what happened."],
+      "talk": "When something goes wrong at home, ask: what was the problem, and what made it happen?",
+      "offline": "During a show, pause and ask: what is the problem? What made it happen?",
+      "realworld": "Said what caused a real problem."
+    },
+    "N4": {
+      "name": "Who he, she and they mean",
+      "ican": "I can tell who 'he', 'she', 'it' and 'they' mean in a story.",
+      "praise": ["You found who '{focus}' meant.", "You looked back and found the right person."],
+      "talk": "When reading together, stop at 'he' or 'she' and ask: who is that?",
+      "offline": "On any page of a book, find each he, she and they. He points to the name each one means.",
+      "realworld": "Worked out who 'he' or 'she' meant in a real book or message."
+    },
+    "N5": {
+      "name": "Feelings and wants",
+      "ican": "I can work out how a character feels and what they want.",
+      "praise": ["You used clues to work out the feeling.", "You found what the character wanted."],
+      "talk": "While watching a show, pause and ask: how does she feel? What did she do that shows it?",
+      "offline": "Play feelings detective with a show or photos: name the feeling, then name the clue.",
+      "realworld": "Named how a real person or character felt, and why."
+    },
+    "N6": {
+      "name": "Main idea and hidden meanings",
+      "ican": "I can say what a story is mostly about and what a saying really means.",
+      "praise": ["You found the main idea.", "You worked out what the saying really means."],
+      "talk": "Use a saying on purpose this week, like 'piece of cake', and ask what it really means.",
+      "offline": "Collect sayings on a sheet: the words, a funny drawing of what the words say, and what they really mean.",
+      "realworld": "Understood a saying or the main point of something real."
+    },
+    "P1": {
+      "name": "Naming feelings",
+      "ican": "I can name the feeling in a story: joy, pride, fear or loneliness.",
+      "praise": ["You named the feeling in the story."],
+      "talk": "Share one feeling word about your own day, and what made you feel it.",
+      "offline": "Make a feelings word wall, with one example from a story for each word.",
+      "realworld": "Named a feeling about something real."
+    },
+    "P2": {
+      "name": "Why people feel things",
+      "ican": "I can link what happened to how someone felt.",
+      "praise": ["You linked what happened to the feeling."],
+      "talk": "Ask: why do you think he felt proud? Then share one of your own 'because' reasons.",
+      "offline": "For a story or show, draw what happened next to the feeling it caused.",
+      "realworld": "Explained why someone felt the way they did."
+    },
+    "P3": {
+      "name": "Fair, kind and honest",
+      "ican": "I can say if something was fair, kind or honest, and why.",
+      "praise": ["You gave a reason for fair or not fair."],
+      "talk": "Talk about one rule at home or school. Is it fair? Why?",
+      "offline": "Take turns describing a small situation. The other person says fair or not fair, and why.",
+      "realworld": "Said whether something real was fair, and why."
+    },
+    "P4": {
+      "name": "Two people, two views",
+      "ican": "I can see how two people can feel differently about the same thing.",
+      "praise": ["You saw it from two sides."],
+      "talk": "After a disagreement, ask: how did you feel? How do you think the other person felt?",
+      "offline": "Pick a moment in a show and say how each person in it felt.",
+      "realworld": "Described two views of one real event."
+    },
+    "P5": {
+      "name": "Like my own life",
+      "ican": "I can connect a story to my own life.",
+      "praise": ["You connected the story to your own life."],
+      "talk": "Read his 'my own life' answer together, and share a time something similar happened to you.",
+      "offline": "Keep a small notebook: one story, and one time something like it happened to him.",
+      "realworld": "Connected a story to something that happened to him."
+    },
+    "P6": {
+      "name": "Big ideas",
+      "ican": "I can say what a story teaches about friendship, courage or kindness.",
+      "praise": ["You found the big idea and said what you think."],
+      "talk": "Ask: what does this story say about being a good friend? Do you agree?",
+      "offline": "After a film, each person says its big idea in one sentence.",
+      "realworld": "Said the big idea of a real story or event."
+    }
+  }
+}

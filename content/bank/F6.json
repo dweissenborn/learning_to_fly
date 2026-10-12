@@ -1,0 +1,517 @@
+{
+  "skill": "F6",
+  "passages": [
+    {
+      "id": "f6-p01",
+      "title": "Low Battery",
+      "kind": "prompt",
+      "sentences": ["Sam is playing a train game on his tablet."],
+      "visual": {
+        "type": "prompt",
+        "title": "Low Battery",
+        "icon": "🔋",
+        "rows": [
+          "10% battery left.",
+          "Plug in your tablet soon."
+        ],
+        "buttons": ["OK"]
+      },
+      "picture": "📱🔋🚆",
+      "topics": ["games", "home"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "Low Battery", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p02",
+      "title": "Delete This File?",
+      "kind": "prompt",
+      "sentences": ["Maya is drawing a comic on the computer.", "She taps the trash can by mistake."],
+      "visual": {
+        "type": "prompt",
+        "title": "Delete this file?",
+        "icon": "🗑️",
+        "rows": [
+          "Delete 'Comic Page 3'?",
+          "You cannot get it back."
+        ],
+        "buttons": ["Cancel", "Delete"]
+      },
+      "picture": "🎨💻",
+      "topics": ["safety", "home"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "Delete This File?", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p03",
+      "title": "The Microwave Label",
+      "kind": "notice",
+      "sentences": ["Ben wants to heat his soup in the microwave.", "He reads the label on the door."],
+      "visual": {
+        "type": "notice",
+        "title": "Microwave Safety",
+        "icon": "⚠️",
+        "rows": [
+          "No metal in the microwave.",
+          "Use a bowl that says microwave safe.",
+          "Ask an adult if you are not sure."
+        ]
+      },
+      "picture": "🍲⚠️",
+      "topics": ["safety", "food", "home"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": { "title": "The Microwave Label", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p04",
+      "title": "The Location Box",
+      "kind": "prompt",
+      "sentences": ["Sam gets a new map app called Trail Tracker.", "When he opens it, a box pops up."],
+      "visual": {
+        "type": "prompt",
+        "title": "Allow Trail Tracker to use your location?",
+        "icon": "📍",
+        "rows": [
+          "Trail Tracker wants to know where you are.",
+          "It will show your place on the trail map."
+        ],
+        "buttons": ["Allow", "Don't Allow"]
+      },
+      "picture": "🗺️📍📱",
+      "topics": ["maps", "safety"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "The Location Box", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p05",
+      "title": "Unsaved Changes",
+      "kind": "prompt",
+      "sentences": ["Priya is writing a plan for her rover.", "She clicks the X to close the file."],
+      "visual": {
+        "type": "prompt",
+        "title": "Unsaved changes",
+        "icon": "💾",
+        "rows": [
+          "You changed 'Rover Plan'.",
+          "Save your changes before closing?"
+        ],
+        "buttons": ["Save", "Don't Save", "Cancel"]
+      },
+      "picture": "🤖💾",
+      "topics": ["robots", "school"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "Unsaved Changes", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p06",
+      "title": "Update Ready",
+      "kind": "prompt",
+      "sentences": ["Ben turns on his tablet to play Block Builder.", "A box pops up."],
+      "visual": {
+        "type": "prompt",
+        "title": "Update ready",
+        "icon": "🔄",
+        "rows": [
+          "A new update for Block Builder is ready.",
+          "It takes about 10 minutes.",
+          "Plug in your tablet before you update."
+        ],
+        "buttons": ["Update Now", "Later"]
+      },
+      "picture": "🎮🔄🔌",
+      "topics": ["games"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": { "title": "Update Ready", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p07",
+      "title": "The Prize Pop-Up",
+      "kind": "prompt",
+      "sentences": ["Leo is watching a skateboard video on his tablet.", "A bright box pops up over the video.", "It flashes and plays a loud sound."],
+      "visual": {
+        "type": "prompt",
+        "title": "YOU WON!",
+        "icon": "🎁",
+        "rows": [
+          "Congratulations! You won a free game console!",
+          "Tap Claim Prize in the next 60 seconds.",
+          "Type your name and home address to get your prize."
+        ],
+        "buttons": ["Claim Prize", "Close"]
+      },
+      "picture": "🛹📱🎁",
+      "topics": ["safety", "games"],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": { "title": "The Prize Pop-Up", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p08",
+      "title": "A Chat About Gems",
+      "kind": "message",
+      "sentences": ["Ben is playing Block Builder online.", "A player Ben has never met sends him a chat."],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "GemKing77",
+        "to": "Ben",
+        "rows": [
+          "Hi Ben! I am on your Block Builder team.",
+          "I can give you 500 free gems.",
+          "Just send me your password.",
+          "Hurry! This offer ends today."
+        ]
+      },
+      "picture": "🎮💬🔒",
+      "topics": ["games", "safety"],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": { "title": "A Chat About Gems", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p09",
+      "title": "Our Tablet Rules",
+      "kind": "notice",
+      "sentences": ["The Rivera family has tablet rules on the fridge.", "Sam reads them before he plays."],
+      "visual": {
+        "type": "notice",
+        "title": "Our Tablet Rules",
+        "icon": "📋",
+        "rows": [
+          "You can tap OK on a low battery box.",
+          "You can tap Save to keep your work.",
+          "Ask an adult before you tap Allow on any app.",
+          "Ask an adult before you buy anything.",
+          "Never share a password. Tell an adult if someone asks for it.",
+          "Close any box that says you won a prize. Then tell an adult."
+        ]
+      },
+      "picture": "📋📱👪",
+      "topics": ["safety", "home"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Our Tablet Rules", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    }
+  ],
+  "items": [
+    {
+      "id": "f6-i00",
+      "skill": "F6",
+      "passage": "f6-p02",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Maya wants to keep her comic. Which button should she tap?",
+      "options": ["Delete", "Cancel"],
+      "pictures": ["🗑️", "✋"],
+      "answer": 1,
+      "evidence": [1, 2],
+      "hint": "Read the line that tells what happens after Delete.",
+      "explain": "Maya should tap Cancel. The box says you cannot get the file back after Delete, and Cancel stops it.",
+      "inference": 1,
+      "tags": ["delete", "keep-file", "button"]
+    },
+    {
+      "id": "f6-i01",
+      "skill": "F6",
+      "passage": "f6-p01",
+      "format": "tap",
+      "level": 1,
+      "prompt": "This box pops up on Sam's tablet. What should Sam do?",
+      "options": ["Plug in his tablet", "Turn up the sound", "Start a new game"],
+      "pictures": ["🔌", "🔊", "🎮"],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Find the line in the box that tells you what to do.",
+      "explain": "Sam should plug in his tablet. The box says to plug in your tablet soon.",
+      "inference": 0,
+      "tags": ["low-battery"],
+      "placement": true
+    },
+    {
+      "id": "f6-i02",
+      "skill": "F6",
+      "passage": "f6-p01",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Tap the thing Sam needs for his tablet.",
+      "scene": "home",
+      "objects": [
+        { "label": "Headphones", "emoji": "🎧" },
+        { "label": "TV remote", "emoji": "📺" },
+        { "label": "Charger", "emoji": "🔌" }
+      ],
+      "answer": 2,
+      "evidence": [1],
+      "hint": "Read what the box says to do. Which thing helps you do that?",
+      "explain": "Sam needs the charger. The box says to plug in the tablet, and the charger plugs it in.",
+      "inference": 1,
+      "tags": ["low-battery", "object-match"]
+    },
+    {
+      "id": "f6-i03",
+      "skill": "F6",
+      "passage": "f6-p02",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Maya is not sure she wants to delete her comic. Tap the button that keeps it safe.",
+      "unit": "row",
+      "answer": [2],
+      "evidence": [2],
+      "hint": "Read both buttons. Which one stops the delete?",
+      "explain": "Tap Cancel. Cancel stops the delete, so the comic stays. When you are not sure, keep the file.",
+      "inference": 1,
+      "tags": ["delete", "keep-file", "button"]
+    },
+    {
+      "id": "f6-i04",
+      "skill": "F6",
+      "passage": "f6-p03",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Tap the bowl Ben should use for his soup.",
+      "scene": "kitchen",
+      "objects": [
+        { "label": "Microwave-safe bowl", "emoji": "🥣" },
+        { "label": "Metal pot", "emoji": "🍲" },
+        { "label": "Metal tin", "emoji": "🥫" }
+      ],
+      "answer": 0,
+      "evidence": [0, 1],
+      "hint": "Read the label again. Which kind of bowl does it say to use?",
+      "explain": "Ben should use the microwave-safe bowl. The label says to use a bowl that says microwave safe, and no metal.",
+      "inference": 0,
+      "tags": ["microwave", "metal"],
+      "transfer": true
+    },
+    {
+      "id": "f6-i05",
+      "skill": "F6",
+      "passage": "f6-p03",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Ben is not sure if his bowl is safe. What should he do?",
+      "options": ["Ask an adult", "Use it anyway"],
+      "pictures": ["🙋", "🤷"],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Find the line that tells you what to do when you are not sure.",
+      "explain": "Ben should ask an adult. The last line says to ask an adult if you are not sure.",
+      "inference": 0,
+      "tags": ["ask-adult", "microwave"]
+    },
+    {
+      "id": "f6-i06",
+      "skill": "F6",
+      "passage": "f6-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "This box asks to know where Sam is. What should Sam do?",
+      "options": ["Tap Allow right away", "Tap the map behind the box", "Ask an adult first"],
+      "pictures": ["✅", "🗺️", "🙋"],
+      "answer": 2,
+      "evidence": [0],
+      "hint": "Read what the app wants. Is it asking for private information about you?",
+      "explain": "Sam should ask an adult first. The box asks to know where he is, and you ask an adult before you allow that.",
+      "inference": 2,
+      "tags": ["permission", "location", "ask-adult"]
+    },
+    {
+      "id": "f6-i07",
+      "skill": "F6",
+      "passage": "f6-p04",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Sam shows the box to his mom. Tap the line that tells her what the app wants.",
+      "unit": "row",
+      "answer": [0],
+      "evidence": [0],
+      "hint": "Read the lines above the buttons. Find the one that says what the app is asking for.",
+      "explain": "Tap the first line. It says Trail Tracker wants to know where Sam is.",
+      "inference": 0,
+      "tags": ["permission", "location"]
+    },
+    {
+      "id": "f6-i08",
+      "skill": "F6",
+      "passage": "f6-p05",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Priya wants to keep her new changes. Which button should she tap?",
+      "options": ["Don't Save", "Cancel", "Save"],
+      "pictures": ["🚫", "↩️", "💾"],
+      "answer": 2,
+      "evidence": [1, 2],
+      "hint": "Read the question in the box. Which button answers yes to it?",
+      "explain": "Priya should tap Save. The box asks to save your changes before closing, and Save keeps them.",
+      "inference": 1,
+      "tags": ["save", "button"]
+    },
+    {
+      "id": "f6-i09",
+      "skill": "F6",
+      "passage": "f6-p05",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Priya wants to stay in the file and keep working. Tap the button that takes her back.",
+      "unit": "row",
+      "answer": [4],
+      "evidence": [4],
+      "hint": "One button stops the closing. Read all three buttons.",
+      "explain": "Tap Cancel. Cancel stops the file from closing, so Priya can keep working.",
+      "inference": 1,
+      "tags": ["cancel", "button"]
+    },
+    {
+      "id": "f6-i10",
+      "skill": "F6",
+      "passage": "f6-p06",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben wants to update now. What must he do first?",
+      "options": ["Plug in his tablet", "Turn off the sound", "Tap Later"],
+      "pictures": ["🔌", "🔇", "⏰"],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Find the line with the word before.",
+      "explain": "Ben must plug in his tablet first. The last line says to plug in your tablet before you update.",
+      "inference": 0,
+      "tags": ["update", "before-after"]
+    },
+    {
+      "id": "f6-i11",
+      "skill": "F6",
+      "passage": "f6-p06",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put Ben's steps in order.",
+      "steps": ["Plug in the tablet.", "Tap Update Now.", "Wait about 10 minutes.", "Play Block Builder."],
+      "evidence": [2, 3, 1],
+      "hint": "Find the word before in the box. Then think about what comes after the update.",
+      "explain": "First Ben plugs in the tablet. Then he taps Update Now and waits about 10 minutes. Last, he plays. The box says to plug in before you update.",
+      "inference": 1,
+      "tags": ["sequence", "update"],
+      "transfer": true
+    },
+    {
+      "id": "f6-i12",
+      "skill": "F6",
+      "passage": "f6-p07",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What should Leo do about this box?",
+      "options": ["Tap Claim Prize fast", "Close the box and tell an adult", "Type his home address"],
+      "pictures": ["🎁", "🙋", "🏠"],
+      "answer": 1,
+      "evidence": [1, 2],
+      "hint": "Look for clues. Does the box rush you? Does it ask for private things?",
+      "explain": "Leo should close the box and tell an adult. The box rushes him and asks for his home address. A pop-up that promises a prize is a trick.",
+      "inference": 2,
+      "tags": ["prize-popup", "hurry", "private-info"]
+    },
+    {
+      "id": "f6-i13",
+      "skill": "F6",
+      "passage": "f6-p07",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Leo keeps his home address private. Tap the line in the box that asks for it.",
+      "unit": "row",
+      "answer": [2],
+      "evidence": [2],
+      "hint": "Read each line. Look for words about where you live.",
+      "explain": "Tap the last line. It asks Leo to type his name and home address. That is private, so he closes the box.",
+      "inference": 0,
+      "tags": ["private-info", "prize-popup"]
+    },
+    {
+      "id": "f6-i14",
+      "skill": "F6",
+      "passage": "f6-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What should Ben do about this chat?",
+      "options": ["Send his password to get the gems", "Send only half of his password", "Keep his password secret and tell an adult"],
+      "pictures": ["📤", "✂️", "🙋"],
+      "answer": 2,
+      "evidence": [2],
+      "hint": "Find what the player asks Ben to send. Is that something you share?",
+      "explain": "Ben should keep his password secret and tell an adult. The third message asks for his password. Never share a password, even for free gems.",
+      "inference": 2,
+      "tags": ["password", "stranger", "hurry"],
+      "transfer": true
+    },
+    {
+      "id": "f6-i15",
+      "skill": "F6",
+      "passage": "f6-p08",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Ben shows the chat to his mom. Tap the message that asks for something private.",
+      "unit": "row",
+      "answer": [2],
+      "evidence": [2],
+      "hint": "Read each message. Find the one that asks Ben to send something.",
+      "explain": "Tap the third message. It asks for Ben's password, and a password is private.",
+      "inference": 1,
+      "tags": ["password", "private-info"]
+    },
+    {
+      "id": "f6-i16",
+      "skill": "F6",
+      "passage": "f6-p09",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sam wants to tap each of these on his tablet. Sort them using the rules.",
+      "bins": ["OK to tap", "Ask an adult first"],
+      "cards": [
+        { "text": "Tap OK on a low battery box", "bin": 0, "emoji": "🔋" },
+        { "text": "Tap Allow so an app can use the camera", "bin": 1, "emoji": "📷" },
+        { "text": "Tap Save on your comic", "bin": 0, "emoji": "💾" },
+        { "text": "Tap Buy for 100 gems ($5)", "bin": 1, "emoji": "💎" },
+        { "text": "Tap Allow so an app can see your location", "bin": 1, "emoji": "📍" }
+      ],
+      "evidence": [0, 1, 2, 3],
+      "hint": "Match each card to a rule. Does the rule start with You can, or with Ask an adult?",
+      "explain": "Tapping OK on low battery and tapping Save are OK by the first two rules. Tapping Allow and buying gems need an adult first, by the rules about Allow and buying.",
+      "inference": 1,
+      "tags": ["permission", "purchase", "rules"],
+      "transfer": true
+    },
+    {
+      "id": "f6-i17",
+      "skill": "F6",
+      "passage": "f6-p09",
+      "format": "scene",
+      "level": 3,
+      "prompt": "A prize box covers Sam's game. Mom is at work. Tap the two things Sam should do, in order.",
+      "scene": "phone",
+      "objects": [
+        { "label": "Claim Prize button", "emoji": "🎁" },
+        { "label": "Close the box", "emoji": "✖️" },
+        { "label": "Type your address", "emoji": "🏠" },
+        { "label": "Text Mom", "emoji": "💬" }
+      ],
+      "answer": [1, 3],
+      "evidence": [5],
+      "hint": "Find the rule about prizes. It has two steps. Look for the word Then.",
+      "explain": "First Sam closes the box. Then he texts Mom to tell an adult. The last rule says to close a prize box and then tell an adult.",
+      "inference": 1,
+      "tags": ["prize-popup", "multi-step", "rules"]
+    }
+  ],
+  "model": {
+    "item": "f6-i00",
+    "steps": [
+      { "say": "Maya wants to keep her comic. So I need the button that keeps it." },
+      { "say": "I read the box. It asks if she wants to delete Comic Page 3.", "show": [0] },
+      { "say": "The next line says you cannot get it back. Delete means it is gone for good.", "show": [1] },
+      { "say": "Cancel means stop. Nothing gets deleted.", "show": [2] },
+      { "say": "So Maya taps Cancel. When I am not sure, I keep the file.", "reveal": true }
+    ]
+  }
+}

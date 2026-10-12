@@ -1,0 +1,25 @@
+{
+  "name": "wayfinder",
+  "private": true,
+  "type": "module",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev -w apps/web",
+    "build": "npm run build -w apps/web",
+    "preview": "npm run preview -w apps/web",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "check": "node packages/schema/validate.mjs",
+    "gen:types": "node packages/schema/gen.mjs",
+    "e2e": "playwright test",
+    "ci": "npm run check && npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "^1.56.0",
+    "ajv": "^8.17.1",
+    "json-schema-to-typescript": "^15.0.4",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  }
+}

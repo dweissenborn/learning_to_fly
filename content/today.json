@@ -1,0 +1,42 @@
+{
+  "lessons": [
+    { "id": "homeroom", "name": "Homeroom", "emoji": "🏫", "what": ["listened to the news", "got a notice", "talked with a friend"], "ask": ["What did your teacher tell the class this morning?"] },
+    { "id": "math", "name": "Math", "emoji": "➗", "what": ["did fractions", "did a quiz", "worked in a group", "worked on the board"], "ask": ["What kind of problems did you do in math?", "Was one problem hard? Which one?"] },
+    { "id": "english", "name": "English", "emoji": "📚", "what": ["read a book", "wrote a story", "did spelling", "talked about a poem"], "ask": ["What book are you reading in English?", "What did you write about?"] },
+    { "id": "science", "name": "Science", "emoji": "🔬", "what": ["did an experiment", "made something", "watched a video", "used a microscope"], "ask": ["What did you make or test in science?", "What happened in the experiment?"] },
+    { "id": "social", "name": "Social Studies", "emoji": "🌍", "what": ["looked at maps", "learned some history", "worked on a project"], "ask": ["What place or time did you learn about?"] },
+    { "id": "pe", "name": "PE", "emoji": "⚽", "what": ["played a game", "ran laps", "played soccer", "played basketball"], "ask": ["What game did you play in PE?", "Who was on your team?"] },
+    { "id": "art", "name": "Art", "emoji": "🎨", "what": ["drew a picture", "painted", "made something with clay"], "ask": ["What did you make in art? Can you show me?"] },
+    { "id": "music", "name": "Music", "emoji": "🎵", "what": ["sang", "played an instrument", "listened to music"], "ask": ["What did you play or sing in music?"] },
+    { "id": "tech", "name": "Computers", "emoji": "💻", "what": ["did some coding", "practised typing", "made a slideshow"], "ask": ["What did you make on the computer?"] },
+    { "id": "speech", "name": "Speech", "emoji": "🗣️", "what": ["played a word game", "practised talking", "read a story"], "ask": ["What did you do in speech today?"] },
+    { "id": "library", "name": "Library", "emoji": "📖", "what": ["chose a book", "read quietly", "used a computer"], "ask": ["What book did you choose?"] },
+    { "id": "lunch", "name": "Lunch", "emoji": "🍱", "what": ["ate lunch", "talked with friends", "sat quietly", "went outside"], "ask": ["Who did you sit with at lunch?", "What did you eat?"] },
+    { "id": "recess", "name": "Recess", "emoji": "🛝", "what": ["played outside", "talked with a friend", "walked around", "played a game"], "ask": ["What did you do at recess?"] },
+    { "id": "bus", "name": "Bus ride", "emoji": "🚌", "what": ["looked out the window", "listened to music", "talked with someone"], "ask": ["What did you see on the bus?"] }
+  ],
+  "weekend": [
+    { "id": "home", "name": "At home", "emoji": "🏠", "what": ["played a game", "watched a show", "built something", "helped at home"], "ask": ["What did you build or play at home?"] },
+    { "id": "outside", "name": "Outside", "emoji": "🌳", "what": ["went to the park", "rode my bike", "went for a walk"], "ask": ["Where did you go outside?"] },
+    { "id": "shop", "name": "Shopping", "emoji": "🛒", "what": ["went to a store", "chose something", "helped carry bags"], "ask": ["What did you see at the store?"] },
+    { "id": "visit", "name": "A visit", "emoji": "👪", "what": ["visited family", "had a visitor", "went to a friend's house"], "ask": ["Who did you see today?"] },
+    { "id": "games", "name": "Games", "emoji": "🎮", "what": ["played a video game", "played a board game", "played with a friend"], "ask": ["What game did you play? What happened?"] }
+  ],
+  "defaultTimetable": ["homeroom", "math", "english", "lunch", "science", "pe"],
+  "who": ["my teacher", "a friend", "my class", "a group", "by myself"],
+  "feelings": [
+    { "word": "good", "emoji": "🙂" },
+    { "word": "happy", "emoji": "😄" },
+    { "word": "proud", "emoji": "😊" },
+    { "word": "calm", "emoji": "😌" },
+    { "word": "excited", "emoji": "🤩" },
+    { "word": "bored", "emoji": "😐" },
+    { "word": "tired", "emoji": "😴" },
+    { "word": "confused", "emoji": "😕" },
+    { "word": "worried", "emoji": "😟" },
+    { "word": "frustrated", "emoji": "😤" },
+    { "word": "sad", "emoji": "😢" }
+  ],
+  "why": ["it was fun", "it was easy", "it was hard", "I did well", "it was loud", "it was long", "I liked it", "a friend helped me", "something went wrong"],
+  "hard": ["nothing was hard", "the work was hard", "it was too loud", "I got stuck", "I lost something", "someone was unkind", "plans changed"]
+}
