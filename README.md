@@ -56,7 +56,15 @@ That checks the reading level of every prose passage. Create the venv once with 
 
 ## Hosting
 
-`npm run build` writes a static site to `apps/web/dist`. `apps/web/public/staticwebapp.config.json` is ready for Azure Static Web Apps. Creating the Static Web App from a GitHub repository generates the deploy workflow.
+The app is live at https://victorious-hill-0c4aff11e.3.azurestaticapps.net, an Azure Static Web App on the Free plan. `apps/web/public/staticwebapp.config.json` sets the security headers and the fallback route.
+
+`.github/workflows/deploy.yml` runs every check on each push and pull request. On `main`, it deploys `apps/web/dist` once all checks pass, using the repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN` (the Static Web App's deployment token). The deploy step is skipped while that secret is missing.
+
+To run the end-to-end tests against the live site:
+
+```bash
+E2E_URL=https://victorious-hill-0c4aff11e.3.azurestaticapps.net npx playwright test
+```
 
 ## Licence
 
