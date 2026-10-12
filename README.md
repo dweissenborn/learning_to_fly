@@ -58,7 +58,7 @@ That checks the reading level of every prose passage. Create the venv once with 
 
 The app is live at https://victorious-hill-0c4aff11e.3.azurestaticapps.net, an Azure Static Web App on the Free plan. `apps/web/public/staticwebapp.config.json` sets the security headers and the fallback route.
 
-`.github/workflows/deploy.yml` runs every check on each push and pull request. On `main`, it deploys `apps/web/dist` once all checks pass, using the repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN` (the Static Web App's deployment token). The deploy step is skipped while that secret is missing.
+`.github/workflows/deploy.yml` runs every check on each push and pull request. On `main`, a second job deploys the checked build once all checks pass. It runs in the GitHub environment `production` and uses that environment's secret `AZURE_STATIC_WEB_APPS_API_TOKEN` (the Static Web App's deployment token). The deploy step is skipped while that secret is missing.
 
 To run the end-to-end tests against the live site:
 
