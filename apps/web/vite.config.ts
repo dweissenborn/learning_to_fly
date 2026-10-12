@@ -24,7 +24,12 @@ export default defineConfig({
           { src: 'icon.svg', sizes: 'any', type: 'image/svg+xml' },
         ],
       },
-      workbox: { globPatterns: ['**/*.{js,css,html,svg,png,woff2}'], maximumFileSizeToCacheInBytes: 4 * 1024 * 1024 },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+        // Sign-in pages always go to the server, never the offline copy.
+        navigateFallbackDenylist: [/^\/\.auth\//, /^\/not-invited\.html/],
+      },
     }),
   ],
   // The whole content bank is bundled on purpose (offline, no fetches), so the main chunk is large.

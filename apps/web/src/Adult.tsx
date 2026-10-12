@@ -299,6 +299,7 @@ function DataTab({ onReport }: { onReport: () => void }) {
     URL.revokeObjectURL(a.href);
   };
   return <div className="grid2">
+    <SignInCard />
     <section className="card stack">
       <h2>Report for his therapist or teacher</h2>
       <p className="tagline">Per skill: status, dates, starting point, trend and example items. Print it or save it as a PDF.</p>
@@ -327,6 +328,28 @@ function DataTab({ onReport }: { onReport: () => void }) {
       <p className="tagline">Passages were written for this program or retold from public-domain fables (The Aesop for Children, 1919, Library of Congress). The content bank is shared under CC BY-SA 4.0. Credits show under every passage.</p>
     </section>
   </div>;
+}
+
+/** Who is signed in on this device. Hidden where there is no sign-in, such as a local dev server. */
+function SignInCard() {
+  const [me, setMe] = useState<undefined | null | { userDetails: string; userRoles: string[] }>(undefined);
+  useEffect(() => {
+    fetch('/.auth/me')
+      .then((r) => (r.ok && r.headers.get('content-type')?.includes('json') ? r.json() : Promise.reject()))
+      .then((j) => setMe(j.clientPrincipal ?? null))
+      .catch(() => setMe(undefined));
+  }, []);
+  if (me === undefined) return null;
+  return <section className="card stack">
+    <h2>Sign-in</h2>
+    {me ? <p style={{ margin: 0 }}>Signed in as <b>{me.userDetails}</b>.</p>
+      : <p style={{ margin: 0 }}>This device is not signed in right now. The app keeps working, but it only gets new versions after a grown-up signs in again.</p>}
+    <div className="row">
+      {me ? <a className="btn small quiet" href="/.auth/logout?post_logout_redirect_uri=/">Sign out</a>
+        : <a className="btn primary" href={`/.auth/login/aad?post_login_redirect_uri=${encodeURIComponent(location.origin + '/')}`}>Sign in with Microsoft</a>}
+    </div>
+    <p className="tagline">Only Microsoft accounts invited to the family role can open the app. Invite people in the Azure portal: the Static Web App, then Role management.</p>
+  </section>;
 }
 
 function Report({ settings, events, progress, onBack }: { settings: Settings; events: LogEvent[]; progress: Progress; onBack: () => void }) {

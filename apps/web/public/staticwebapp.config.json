@@ -1,5 +1,69 @@
 {
-  "navigationFallback": { "rewrite": "/index.html", "exclude": ["/assets/*", "/*.{png,svg,json,webmanifest,js}"] },
+  "routes": [
+    {
+      "route": "/.auth/login/github",
+      "statusCode": 404
+    },
+    {
+      "route": "/.auth/*",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    },
+    {
+      "route": "/not-invited.html",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    },
+    {
+      "route": "/manifest.webmanifest",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    },
+    {
+      "route": "/icon.svg",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    },
+    {
+      "route": "/icon-192.png",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    },
+    {
+      "route": "/icon-512.png",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    },
+    {
+      "route": "/*",
+      "allowedRoles": [
+        "family"
+      ]
+    }
+  ],
+  "responseOverrides": {
+    "401": {
+      "statusCode": 302,
+      "redirect": "/.auth/login/aad?post_login_redirect_uri=.referrer"
+    },
+    "403": {
+      "rewrite": "/not-invited.html"
+    }
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/assets/*",
+      "/*.{png,svg,json,webmanifest,js}",
+      "/.auth/*"
+    ]
+  },
   "globalHeaders": {
     "Content-Security-Policy": "default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
     "Referrer-Policy": "no-referrer",

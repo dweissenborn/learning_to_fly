@@ -60,11 +60,15 @@ The app is live at https://victorious-hill-0c4aff11e.3.azurestaticapps.net, an A
 
 `.github/workflows/deploy.yml` runs every check on each push and pull request. On `main`, a second job deploys the checked build once all checks pass. It runs in the GitHub environment `production` and uses that environment's secret `AZURE_STATIC_WEB_APPS_API_TOKEN` (the Static Web App's deployment token). The deploy step is skipped while that secret is missing.
 
-To run the end-to-end tests against the live site:
+### Who can open it
 
-```bash
-E2E_URL=https://victorious-hill-0c4aff11e.3.azurestaticapps.net npx playwright test
-```
+The live site is open only to Microsoft accounts invited to the `family` role (`apps/web/public/staticwebapp.config.json`). Visitors who aren't signed in go to Microsoft sign-in. A signed-in account without the role sees `not-invited.html`. The install manifest and icons stay public so the app can be installed to a home screen. GitHub sign-in is blocked.
+
+To invite someone, open the Static Web App in the Azure portal, then Role management, then Invite. Choose Microsoft Entra ID as the provider, enter their email and the role `family`, and send them the link. The link is valid for up to seven days. The Free plan allows up to 25 invited users. The same can be done with `az staticwebapp users invite --roles family`.
+
+After a grown-up signs in once on a device, the app's offline copy keeps opening without asking again. New versions arrive after the next sign-in, from the grown-ups' area under Data.
+
+Local development (`npm run dev`) has no sign-in.
 
 ## Licence
 
