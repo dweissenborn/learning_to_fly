@@ -10,9 +10,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg', 'icon-192.png', 'icon-512.png'],
       manifest: {
-        name: 'Wayfinder',
-        short_name: 'Wayfinder',
-        description: 'A calm reading program for one learner.',
+        name: 'Learning to Fly',
+        short_name: 'Learning to Fly',
+        description: 'A calm reading game: read your way from Home Island to the koalas of Australia.',
         theme_color: '#2f7fb0',
         background_color: '#f6f1e7',
         display: 'standalone',

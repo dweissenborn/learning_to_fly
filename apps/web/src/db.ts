@@ -3,7 +3,7 @@ import Dexie, { type EntityTable } from 'dexie';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useMemo } from 'react';
 import type { LogEvent, Topic } from '@wayfinder/schema';
-import { derive, type GateOverride } from '@wayfinder/engine';
+import { derive, JOURNEY_START, type GateOverride, type JourneyAnchor } from '@wayfinder/engine';
 
 export type GuideId = 'bolt' | 'rook' | 'moss';
 export interface Settings {
@@ -31,6 +31,14 @@ export interface Settings {
   timetable: Record<string, string[]>;
   people: string[];
   todayStage: 0 | 1 | 2 | 3 | 4;
+  /** Finished sessions per leg of the journey (3, 5 or 7). */
+  legLength: 3 | 5 | 7;
+  /** Story setbacks on the journey: storms, blocked paths, broken parts. */
+  setbacks: boolean;
+  /** The plan he picked at each obstacle, by stop id. */
+  journeyChoices: Record<string, number>;
+  /** Where he was when the pace last changed. */
+  journeyAnchor: JourneyAnchor;
   /** Results of the first half of placement, kept so the scouting trip can be finished later. */
   scout?: { word: number; reading: number; listening: number };
 }
@@ -41,6 +49,7 @@ export const DEFAULTS: Settings = {
   readAloud: false, pictures: true, voice: '', rate: 0.9,
   rewardPace: 'item', yourTurn: 4, hintDelay: 8, gate: 'auto', hardThemes: false, hidden: [],
   timetable: {}, people: [], todayStage: 0,
+  legLength: 5, setbacks: true, journeyChoices: {}, journeyAnchor: JOURNEY_START,
 };
 
 export interface Note {
@@ -61,7 +70,7 @@ class DB extends Dexie {
   notes!: EntityTable<Note, 'id'>;
   kv!: EntityTable<{ key: string; value: unknown }, 'key'>;
   constructor() {
-    super('wayfinder');
+    super('wayfinder'); // internal name from before the app was called Learning to Fly; renaming it would orphan saved progress
     this.version(1).stores({ events: 'id, ts, type', notes: 'id, ts', kv: 'key' });
   }
 }
@@ -95,7 +104,7 @@ export async function exportAll() {
   return { app: 'wayfinder', version: 1, exported: new Date().toISOString(), events: await db.events.toArray(), notes: await db.notes.toArray(), settings: (await db.kv.get('settings'))?.value ?? {} };
 }
 export async function importAll(data: { app?: string; events?: LogEvent[]; notes?: Note[]; settings?: Partial<Settings> }) {
-  if (data.app !== 'wayfinder' || !Array.isArray(data.events)) throw new Error('This file is not a Wayfinder export.');
+  if (data.app !== 'wayfinder' || !Array.isArray(data.events)) throw new Error('This file is not a Learning to Fly export.');
   await db.transaction('rw', db.events, db.notes, db.kv, async () => {
     await db.events.bulkPut(data.events!);
     if (Array.isArray(data.notes)) await db.notes.bulkPut(data.notes);

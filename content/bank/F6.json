@@ -20,7 +20,7 @@
       "topics": ["games", "home"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Low Battery", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Low Battery", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f6-p02",
@@ -41,7 +41,7 @@
       "topics": ["safety", "home"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Delete This File?", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Delete This File?", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f6-p03",
@@ -62,7 +62,7 @@
       "topics": ["safety", "food", "home"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "The Microwave Label", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Microwave Label", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f6-p04",
@@ -83,7 +83,7 @@
       "topics": ["maps", "safety"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "The Location Box", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Location Box", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f6-p05",
@@ -104,7 +104,7 @@
       "topics": ["robots", "school"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Unsaved Changes", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Unsaved Changes", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f6-p06",
@@ -126,7 +126,7 @@
       "topics": ["games"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Update Ready", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Update Ready", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f6-p07",
@@ -148,7 +148,7 @@
       "topics": ["safety", "games"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "The Prize Pop-Up", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Prize Pop-Up", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f6-p08",
@@ -171,7 +171,7 @@
       "topics": ["games", "safety"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "A Chat About Gems", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "A Chat About Gems", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f6-p09",
@@ -195,7 +195,7 @@
       "topics": ["safety", "home"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Our Tablet Rules", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Our Tablet Rules", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

@@ -24,7 +24,7 @@
         "He took a photo of it for his map wall.",
         "They got home at four o'clock."
       ],
-      "credit": { "title": "Sam's Train Ride", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Sam's Train Ride", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     "items": [
       { "id": "pl-r1", "skill": "N1", "passage": "pl-read", "format": "tap", "level": 2, "prompt": "Where did Sam and Grandma Rose go?", "options": ["To the beach", "To the train museum", "To the bakery"], "answer": 1, "evidence": [4], "explain": "They went to the train museum in Bay City." },
@@ -46,7 +46,7 @@
         "This time the rover rolled across the whole gym.",
         "Priya smiled and wrote the result in her notebook."
       ],
-      "credit": { "title": "Priya's Rover Test", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Priya's Rover Test", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     "items": [
       { "id": "pl-l1", "skill": "N1", "passage": "pl-listen", "format": "tap", "level": 2, "prompt": "Where did Priya test her rover?", "options": ["In the park", "In the gym", "At home"], "answer": 1, "evidence": [0], "explain": "She tested it in the gym." },

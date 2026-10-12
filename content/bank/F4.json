@@ -20,7 +20,7 @@
       "topics": ["food", "health"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "The Oat Bar Label", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Oat Bar Label", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f4-p02",
@@ -40,7 +40,7 @@
       "topics": ["food", "money"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Price Tags at Rose's Bakery", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Price Tags at Rose's Bakery", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f4-p03",
@@ -63,7 +63,7 @@
       "topics": ["transport"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Sam's Train Ticket", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Sam's Train Ticket", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f4-p04",
@@ -86,7 +86,7 @@
       "topics": ["health", "safety"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "The Allergy Medicine Label", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Allergy Medicine Label", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f4-p05",
@@ -108,7 +108,7 @@
       "topics": ["money", "transport"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "The Bike Shop Sale", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Bike Shop Sale", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f4-p06",
@@ -132,7 +132,7 @@
       "topics": ["food", "sports", "health"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "The Team Snack Table", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Team Snack Table", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f4-p07",
@@ -156,7 +156,7 @@
       "topics": ["food", "home"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Dates in the Fridge", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Dates in the Fridge", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f4-p08",
@@ -179,7 +179,7 @@
       "topics": ["space"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "The Star Night Ticket", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Star Night Ticket", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f4-p09",
@@ -203,7 +203,7 @@
       "topics": ["food", "health"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "The Banana Bread Label", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Banana Bread Label", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

@@ -8,6 +8,7 @@ import { pool, passageText, SKILL, STRAND } from './content';
 import { ItemView, NextSlot, type HintMode, type Result } from './ItemView';
 import { Guide, GUIDES, Island, PiecePreview, PIECES, pieceById, freeTiles, type Placed } from './art';
 import { Btn, Lanterns, SpeakBtn } from './ui';
+import { BeatCard, finishedCount, journeyNow, KoalaCard, PostcardCard, reachedStops } from './journey';
 import { sfx, speak, stopSpeaking } from './media';
 
 type Step = 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish';
@@ -40,7 +41,7 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
   const [askStop, setAskStop] = useState(false);
   const sid = useMemo(() => crypto.randomUUID(), []);
   const started = useRef(false);
-  const before = useMemo(() => ({ mastered: new Set(ALL_SKILLS.filter((s) => progress.skills[s].everMastered)), opened: progress.gateOpened }), []); // eslint-disable-line react-hooks/exhaustive-deps
+  const before = useMemo(() => ({ mastered: new Set(ALL_SKILLS.filter((s) => progress.skills[s].everMastered)), opened: progress.gateOpened, finished: finishedCount(progress) }), []); // eslint-disable-line react-hooks/exhaustive-deps
   const g = gate(progress, settings.gate);
   const options = useMemo(() => choices(progress, g, Date.now()), []); // eslint-disable-line react-hooks/exhaustive-deps
   const guide = settings.guide;
@@ -206,7 +207,7 @@ function ChooseStep({ options, onChoose, guide }: { options: Choice[]; onChoose:
 // ---------------------------------------------------------------- finish: name the skill, grow the world, hand over to the adult (R7, R9)
 function Finish({ sid, plan, done, settings, events, progress, before, onExit }: {
   sid: string; plan: SessionPlan | null; done: { item: Item; phase: Step; r: Result }[]; settings: Settings; events: LogEvent[]; progress: Progress;
-  before: { mastered: Set<SkillId>; opened: boolean }; onExit: () => void;
+  before: { mastered: Set<SkillId>; opened: boolean; finished: number }; onExit: () => void;
 }) {
   const logged = useRef(false);
   useEffect(() => {
@@ -222,11 +223,17 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
   // The log updates a moment after the last answer, so a passed peak check is also read from this session's own answers.
   const checkPassed = !plan && done.length >= 5 && done.filter((d) => d.r.correct).length / done.length >= 0.8;
   const peaksOpen = progress.gateOpened || settings.gate === 'open' || checkPassed;
+  // The journey: this session counts as finished, so it may bring an arrival or a new koala.
+  const prev = journeyNow(before.finished, settings);
+  const now = journeyNow(before.finished + 1, settings);
+  const arrivedStop = now.stop > prev.stop ? now.here : null;
+  const koalaMet = prev.arrived && now.koala ? now.koala : null;
   const offers = useMemo(() => {
     const rng = mulberry32([...sid].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) | 0, 7));
     const owned = new Set(placed.map((p) => p.piece));
-    const avail = PIECES.filter((p) => p.region !== 'philosophical' || peaksOpen);
-    const out: string[] = [];
+    const reached = reachedStops(now.stop);
+    const avail = PIECES.filter((p) => (p.region !== 'philosophical' || peaksOpen) && (!p.stop || reached.has(p.stop)));
+    const out: string[] = arrivedStop?.souvenir ? [arrivedStop.souvenir] : [];
     const add = (list: typeof PIECES) => {
       const c = list.filter((p) => !out.includes(p.id)).map((p) => ({ p, k: (owned.has(p.id) ? 1 : 0) + rng() * 0.9 })).sort((a, b) => a.k - b.k)[0];
       if (c) out.push(c.p.id);
@@ -269,7 +276,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
 
   if (stage === 'place') return <div className="stack">
     <div className="guide-row"><Guide id={settings.guide} size={64} /><div className="bubble">Tap a dotted spot to put your {pieceById.get(piece!)?.name.toLowerCase()} there. Or I can choose a spot.</div></div>
-    <Island placed={placed} lit={litFrom(progress)} here={{}} peaksOpen={peaksOpen} placing={{ piece: piece!, onPlace: place }} />
+    <Island placed={placed} lit={litFrom(progress)} here={{}} peaksOpen={peaksOpen} placing={{ piece: piece!, onPlace: place }} stage={now.stop} />
     <div className="row"><Btn onPress={() => setStage('pick')}>← Pick a different one</Btn><span className="spacer" /><Btn className="primary big" onPress={autoPlace}>Choose a spot for me</Btn></div>
   </div>;
 
@@ -279,10 +286,12 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
       <h1>All done for today.</h1>
       {piece && <p>Your {pieceById.get(piece)?.name.toLowerCase()} is on the island now.</p>}
     </div>
-    <Island placed={placedFrom(events)} lit={litFrom(progress)} here={{}} peaksOpen={peaksOpen} fresh={fresh} />
+    <Island placed={placedFrom(events)} lit={litFrom(progress)} here={{}} peaksOpen={peaksOpen} fresh={fresh} stage={now.stop} />
+    <BeatCard now={now} settings={settings} />
     <div className="card talk">
       <h3>For your grown-up</h3>
       <p style={{ margin: 0 }}>{talk}</p>
+      {now.beat?.talk && <p style={{ margin: '0.5rem 0 0' }}>{now.beat.talk}</p>}
     </div>
     <Btn className="primary big" autoFocus onPress={onExit}>Back to my island</Btn>
   </div>;
@@ -296,6 +305,8 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
     </div>
     {newly.map((s) => <div key={s} className="ican-new appear">⭐ New on your shelf: {SKILL[s].ican}</div>)}
     {opened && <div className="ican-new appear strand-philosophical" style={{ background: 'var(--phi-soft)', color: 'var(--phi-deep)' }}>🏮 Lantern Peaks are open. A new part of your island is waiting.</div>}
+    {arrivedStop && <PostcardCard stop={arrivedStop} arrived />}
+    {koalaMet && <KoalaCard koala={koalaMet} />}
     <h2>Pick one new thing for your island</h2>
     <div className="pieces">
       {offers.map((id) => <Button key={id} className={`piece ${piece === id ? 'on' : ''}`} onPress={() => { setPiece(id); setStage(freeTiles(placed, peaksOpen, pieceById.get(id)?.beach).length ? 'place' : 'done'); }}>

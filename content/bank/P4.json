@@ -19,7 +19,7 @@
       "topics": ["weather", "home"],
       "level": 1,
       "socialLoad": 1,
-      "credit": { "title": "Snow Day", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Snow Day", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p4-p02",
@@ -43,7 +43,7 @@
       "topics": ["sports", "weather"],
       "level": 2,
       "socialLoad": 2,
-      "credit": { "title": "Rain on Match Day", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Rain on Match Day", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p4-p03",
@@ -66,7 +66,7 @@
       "topics": ["animals", "home"],
       "level": 2,
       "socialLoad": 2,
-      "credit": { "title": "The Town Mouse and the Country Mouse", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Town Mouse and the Country Mouse", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "p4-p04",
@@ -91,7 +91,7 @@
       "topics": ["transport", "maps"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "The Ferry Ride", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Ferry Ride", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p4-p05",
@@ -118,7 +118,7 @@
       "level": 3,
       "socialLoad": 2,
       "themes": ["loss"],
-      "credit": { "title": "Kai's News", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Kai's News", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

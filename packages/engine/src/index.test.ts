@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Item, LogEvent, Passage, SkillBank, SkillId } from '@wayfinder/schema';
 import {
-  buildPool, choices, derive, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, planGateCheck, planSession,
+  buildPool, choices, derive, journeyPosition, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, planGateCheck, planSession,
 } from './index';
 
 const DAY = 86_400_000;
@@ -234,5 +234,30 @@ describe('item choice', () => {
     const plan = planSession(p, ctx(), 'functional', p.skills.N1.nextReview! + 1, 4);
     expect(plan.review).toEqual(['N1']);
     expect(plan.warmup.every((i) => i.skill === 'N1')).toBe(true);
+  });
+});
+
+describe('the journey', () => {
+  it('moves one stop every leg of finished sessions and never moves back', () => {
+    expect(journeyPosition(0, 6, 5)).toEqual({ stop: 0, step: 0, beat: 0, arrived: false, after: 0 });
+    expect(journeyPosition(4, 6, 5)).toMatchObject({ stop: 0, step: 4, beat: 4 });
+    expect(journeyPosition(5, 6, 5)).toMatchObject({ stop: 1, step: 0, beat: 0 });
+    expect(journeyPosition(25, 6, 5)).toMatchObject({ stop: 5, arrived: true, after: 0 });
+    expect(journeyPosition(31, 6, 5)).toMatchObject({ stop: 5, arrived: true, after: 6 });
+  });
+
+  it('shows the obstacle and how it was overcome on short and long legs', () => {
+    expect([0, 1, 2].map((n) => journeyPosition(n, 6, 3).beat)).toEqual([0, 2, 3]);
+    expect([0, 1, 2, 3, 4, 5, 6].map((n) => journeyPosition(n, 6, 7).beat)).toEqual([0, 1, 1, 2, 3, 4, 4]);
+  });
+
+  it('never moves back when an adult changes the pace mid-journey', () => {
+    const now = journeyPosition(12, 6, 5); // stop 2, two sessions into the leg
+    expect(now).toMatchObject({ stop: 2, step: 2 });
+    const anchor = { at: 12, stop: now.stop, step: now.step, after: now.after };
+    expect(journeyPosition(12, 6, 7, anchor)).toMatchObject({ stop: 2, step: 2 });
+    expect(journeyPosition(17, 6, 7, anchor)).toMatchObject({ stop: 3, step: 0 });
+    expect(journeyPosition(13, 6, 3, anchor)).toMatchObject({ stop: 3, step: 0 }); // shorter legs: the step is capped, so it arrives next
+    expect(journeyPosition(40, 6, 3, { at: 30, stop: 5, step: 0, after: 4 })).toMatchObject({ arrived: true, after: 14 });
   });
 });

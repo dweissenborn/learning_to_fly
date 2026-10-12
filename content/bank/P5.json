@@ -20,7 +20,7 @@
       "topics": ["animals", "home"],
       "level": 1,
       "socialLoad": 1,
-      "credit": { "title": "Pixel Learns to Shake", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Pixel Learns to Shake", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p5-p02",
@@ -44,7 +44,7 @@
       "topics": ["nature", "maps"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Long Climb", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Long Climb", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p5-p03",
@@ -66,7 +66,7 @@
       "topics": ["sports", "friends"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "Leo Helps Jai", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Leo Helps Jai", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p5-p04",
@@ -90,7 +90,7 @@
       "topics": ["robots", "school"],
       "level": 3,
       "socialLoad": 2,
-      "credit": { "title": "Ben's First Club Day", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Ben's First Club Day", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p5-p05",
@@ -115,7 +115,7 @@
       "topics": ["transport", "maps"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "Sam's Best Saturday", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Sam's Best Saturday", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

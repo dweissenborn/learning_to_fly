@@ -18,7 +18,7 @@
       "topics": ["sports"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Leo at the Skate Park", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Leo at the Skate Park", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n1-p02",
@@ -37,7 +37,7 @@
       "topics": ["animals", "ocean"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Sam and Pixel at the Harbor", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Sam and Pixel at the Harbor", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n1-p03",
@@ -56,7 +56,7 @@
       "topics": ["games", "home"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Game Night", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Game Night", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n1-p04",
@@ -76,7 +76,7 @@
       "topics": ["robots", "school"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Priya Tests Her Rover", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Priya Tests Her Rover", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n1-p05",
@@ -98,7 +98,7 @@
       "topics": ["animals", "nature"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Ant and the Grasshopper", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Ant and the Grasshopper", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "n1-p06",
@@ -120,7 +120,7 @@
       "topics": ["sports", "home"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Match Day", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Match Day", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n1-p07",
@@ -142,7 +142,7 @@
       "topics": ["space", "transport"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "Stars at Lantern Peaks", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Stars at Lantern Peaks", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

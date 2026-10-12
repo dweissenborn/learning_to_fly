@@ -18,7 +18,7 @@
       "topics": ["animals", "home"],
       "level": 1,
       "socialLoad": 1,
-      "credit": { "title": "Pixel at the Door", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Pixel at the Door", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n5-p02",
@@ -38,7 +38,7 @@
       "topics": ["school", "friends"],
       "level": 1,
       "socialLoad": 1,
-      "credit": { "title": "Maya Reads Her Comic", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Maya Reads Her Comic", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n5-p03",
@@ -61,7 +61,7 @@
       "topics": ["sports", "weather"],
       "level": 2,
       "socialLoad": 2,
-      "credit": { "title": "Rain on Match Day", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Rain on Match Day", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n5-p04",
@@ -83,7 +83,7 @@
       "topics": ["home", "sports"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "Leo's House Key", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Leo's House Key", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n5-p05",
@@ -104,7 +104,7 @@
       "topics": ["robots", "school"],
       "level": 3,
       "socialLoad": 2,
-      "credit": { "title": "The Blue Box", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Blue Box", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n5-p06",
@@ -128,7 +128,7 @@
       "topics": ["friends", "mining", "school"],
       "level": 3,
       "socialLoad": 2,
-      "credit": { "title": "The Purple Crystal", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Purple Crystal", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n5-p07",
@@ -147,7 +147,7 @@
       "topics": ["games", "home"],
       "level": 1,
       "socialLoad": 1,
-      "credit": { "title": "The Card Tower", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Card Tower", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n5-p08",
@@ -167,7 +167,7 @@
       "topics": ["weather", "school"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "Ana Gets Ready", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Ana Gets Ready", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n5-p09",
@@ -188,7 +188,7 @@
       "topics": ["money", "sports"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "The Green Helmet", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Green Helmet", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

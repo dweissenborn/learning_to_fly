@@ -18,7 +18,7 @@
       "topics": ["safety"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Doors at the Library", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Doors at the Library", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f1-p02",
@@ -37,7 +37,7 @@
       "topics": ["transport"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "At the Bike Shop", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "At the Bike Shop", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f1-p03",
@@ -55,7 +55,7 @@
       "topics": ["ocean", "safety"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "At the Harbor", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "At the Harbor", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f1-p04",
@@ -74,7 +74,7 @@
       "topics": ["food"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Lighthouse Café Doors", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Lighthouse Café Doors", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f1-p05",
@@ -94,7 +94,7 @@
       "topics": ["transport"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "At the Bus Station", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "At the Bus Station", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f1-p06",
@@ -116,7 +116,7 @@
       "topics": ["safety", "maps"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Signs Around Harbor Town", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Signs Around Harbor Town", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f1-p07",
@@ -136,7 +136,7 @@
       "topics": ["school", "safety"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Fire Drill at School", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Fire Drill at School", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f1-p08",
@@ -160,7 +160,7 @@
       "topics": ["maps", "nature"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Story Woods Trail Sign", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Story Woods Trail Sign", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f1-p09",
@@ -182,7 +182,7 @@
       "topics": ["sports", "safety"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Skate Park Gate", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Skate Park Gate", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

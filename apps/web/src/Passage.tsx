@@ -73,7 +73,7 @@ function tokens(s: string) {
 
 export function creditLine(p: P) {
   const c = p.credit;
-  const lic = { original: 'Written for Wayfinder, shared under CC BY-SA 4.0', 'public-domain': 'Public domain', CC0: 'CC0', 'CC-BY-4.0': 'CC BY 4.0', 'CC-BY-SA-4.0': 'CC BY-SA 4.0' }[c.licence];
+  const lic = { original: 'Written for Learning to Fly, shared under CC BY-SA 4.0', 'public-domain': 'Public domain', CC0: 'CC0', 'CC-BY-4.0': 'CC BY 4.0', 'CC-BY-SA-4.0': 'CC BY-SA 4.0' }[c.licence];
   return `“${c.title}”. ${c.author}. ${c.licence === 'original' ? '' : c.source + '. '}${lic}${c.adapted ? '. Adapted' : ''}.`;
 }
 

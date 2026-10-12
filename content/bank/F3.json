@@ -16,7 +16,7 @@
       "topics": ["food"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Grandma Rose's Shopping List", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Grandma Rose's Shopping List", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f3-p02",
@@ -37,7 +37,7 @@
       "topics": ["school"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Library Hours", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Library Hours", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f3-p03",
@@ -57,7 +57,7 @@
       "topics": ["sports"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Skate Park Hours", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Skate Park Hours", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f3-p04",
@@ -80,7 +80,7 @@
       "topics": ["food", "money"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Lighthouse Café Menu", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Lighthouse Café Menu", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f3-p05",
@@ -101,7 +101,7 @@
       "topics": ["transport"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Bus Station Board", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Bus Station Board", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f3-p06",
@@ -124,7 +124,7 @@
       "topics": ["school"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Ana's School Day", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Ana's School Day", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f3-p07",
@@ -147,7 +147,7 @@
       "topics": ["ocean", "transport"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Ferry Times", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Ferry Times", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f3-p08",
@@ -170,7 +170,7 @@
       "topics": ["transport", "maps"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Bus 9 to Lantern Peaks", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Bus 9 to Lantern Peaks", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f3-p09",
@@ -194,7 +194,7 @@
       "topics": ["robots", "games"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Library Events", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Library Events", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

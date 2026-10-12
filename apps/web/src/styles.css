@@ -1,4 +1,4 @@
-/* Wayfinder design tokens. A sensory theme is a token swap (ADR-0001). No red means "wrong" anywhere. */
+/* Learning to Fly design tokens. A sensory theme is a token swap (ADR-0001). No red means "wrong" anywhere. */
 :root {
   --bg: oklch(96.5% 0.014 85);
   --bg-2: oklch(93.5% 0.02 80);
@@ -353,6 +353,11 @@ main { padding-bottom: 1rem; min-width: 0; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .mist { animation: mist 14s ease-in-out infinite; }
 @keyframes mist { 50% { opacity: 0.75; transform: translateX(10px); } }
+.sway { animation: sway 6s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom left; }
+@keyframes sway { 50% { transform: rotate(3deg); } }
+.flyby { animation: flyby 45s linear infinite; }
+@keyframes flyby { from { transform: translateX(-160px); } to { transform: translateX(620px); } }
+:root[data-motion='reduced'] .flyby, :root[data-motion='off'] .flyby { transform: translateX(240px); }
 .newpiece { animation: rise 900ms cubic-bezier(.2, 1.4, .4, 1) both; transform-box: fill-box; transform-origin: bottom; }
 @keyframes rise { from { opacity: 0; transform: translateY(-30px) scale(0.6); } }
 .side { display: grid; gap: 1rem; }
@@ -437,6 +442,17 @@ details > summary { cursor: pointer; font-weight: 700; padding: 0.4rem 0; }
   .v-form .frow { grid-template-columns: 1fr; }
 }
 .bottombar.static { position: static; background: none; }
+.btn.journey { background: var(--accent-soft); color: var(--accent-deep); border-color: oklch(from var(--accent) l c h / 0.35); }
+.journey-card.setback { border: 2px solid oklch(from var(--fun) l c h / 0.6); }
+.leg-dots { display: inline-flex; gap: 6px; }
+.leg-dot { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--accent); background: transparent; }
+.leg-dot.on { background: var(--accent); }
+.stop-art { width: 100%; height: auto; border-radius: 14px; display: block; }
+.journey-map { border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-lg); }
+.journey-map svg { width: 100%; height: auto; display: block; }
+.map-stop { cursor: pointer; outline: none; }
+.map-stop:focus-visible circle { stroke: var(--focus); stroke-width: 7; }
+.postcard { background: var(--surface); border: 1px solid var(--line); }
 @media (max-width: 640px) { .island-label { font-size: 0.68rem; padding: 0.1rem 0.45rem; } }
 /* React Aria's modal wrapper takes the overlay's full width so dialogs can size themselves. */
 .overlay .react-aria-Modal { width: 100%; display: grid; justify-items: center; max-height: 100%; }

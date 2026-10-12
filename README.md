@@ -1,12 +1,14 @@
-# Learning to fly
+# Learning to Fly
 
-Learning to fly is a reading game for autistic children. The app itself is called Wayfinder. It is a local-first web app: it works offline, installs to a home screen, and keeps every answer on the device.
+Learning to Fly is a reading game for autistic children. It is a local-first web app: it works offline, installs to a home screen, and keeps every answer on the device.
 
-The learner builds an island. Each finished session adds one thing to it, and three paths across the island light up as skills are mastered:
+The learner starts on Home Island and builds it up: each finished session adds one thing to it, and three paths across the island light up as skills are mastered.
 
 - **Harbor Town** is reading to do: signs, steps, timetables, labels, messages, on-screen prompts.
 - **Story Woods** is reading to follow a story: who, where and when, order, causes, pronouns, feelings, main idea.
 - **Lantern Peaks** is reading to think about life. It stays "coming up" until the gate in the plan opens.
+
+Every finished session also moves the learner along a journey: the ferry to Gull Island, Windy Cape, Cloud Hill Airfield, take-off in a small red plane called the Kookaburra, and finally Australia to visit the koalas. Small clues appear on the island and after each session. Along the way there are setbacks: a storm, a blocked path, a broken propeller, strong winds. Each is explained, comes with a calm coping line and a choice of plan, and never costs anything. The journey moves with finished sessions, never with scores; a grown-up can set its pace or turn setbacks off.
 
 ## Run it
 

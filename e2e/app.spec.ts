@@ -31,6 +31,15 @@ test('first run, a session item, and stopping without penalty', async ({ page })
   await onboard(page);
   await axe(page, 'home');
 
+  // The journey map: where he is, the next stop, and postcards from places reached.
+  await page.getByRole('button', { name: /My journey/ }).click();
+  await expect(page.getByText('On the way to Gull Island')).toBeVisible();
+  await axe(page, 'journey');
+  await page.getByRole('button', { name: /Home Island/ }).last().click();
+  await expect(page.getByRole('dialog').getByText('This is Home Island.', { exact: false })).toBeVisible();
+  await page.getByRole('dialog').getByRole('button', { name: 'Done' }).click();
+  await page.getByRole('button', { name: /Back to island/ }).click();
+
   await page.getByRole('button', { name: /Start reading/ }).click();
   await expect(page.getByText("Here is today's plan.")).toBeVisible();
   await axe(page, 'plan');

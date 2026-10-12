@@ -1,0 +1,184 @@
+{
+  "about": "The Learning to Fly journey. Each stop has five beats, shown one per finished session on the way to it: 0 the start of the leg, 1 progress, 2 an obstacle or more progress, 3 the obstacle overcome, 4 almost there. An obstacle shows a real-world notice, a coping line and a choice of plan; beat 3 then tells how the chosen plan worked. 'smooth' text replaces a setback when an adult turns setbacks off. {guide} is replaced with the learner's guide. The postcard is shown on arrival.",
+  "stops": [
+    {
+      "id": "home",
+      "name": "Home Island",
+      "emoji": "🏝️",
+      "beats": [],
+      "postcard": [
+        "This is Home Island.",
+        "It has a town, a forest and the peaks.",
+        "Far out at sea, there are other islands.",
+        "Far, far away is Australia, where koalas live.",
+        "One day, you will fly there."
+      ]
+    },
+    {
+      "id": "gull",
+      "name": "Gull Island",
+      "emoji": "🦭",
+      "souvenir": "seal",
+      "beats": [
+        { "text": "Far past the lighthouse, there is another island. It is called Gull Island. A ferry goes there." },
+        { "text": "You bought a ferry ticket at the harbor. The ferry sails on Saturday. The weather report says a storm might come.", "smooth": "You bought a ferry ticket at the harbor. The ferry sails on Saturday." },
+        {
+          "obstacle": "weather",
+          "text": "The storm came. A ferry cannot sail in a storm, so the trip is off for now.",
+          "notice": { "type": "notice", "title": "Harbor Ferry", "icon": "⛈️", "rows": ["STORM WARNING", "No ferries today.", "Ferries will sail again when the storm has passed."] },
+          "cope": "Plans can change. The storm will pass, and the ferry will sail again.",
+          "choice": {
+            "ask": "What will you do while you wait?",
+            "options": [
+              { "label": "Read the weather report", "reply": "Good plan. The report says the storm ends on Friday.", "after": "The weather report was right. The storm ended on Friday, and the sea is calm again." },
+              { "label": "Help at Okafor's Bike Shop", "reply": "Good plan. Mr. Okafor has three bikes to fix.", "after": "You helped Mr. Okafor fix three bikes while the storm passed. Now the sea is calm again." }
+            ]
+          },
+          "talk": "Ask: the ferry trip was called off because of a storm. What can we do when plans change?",
+          "smooth": "You packed your bag: water, a hat and a jacket."
+        },
+        { "text": "The storm has passed and the sea is calm. The ferry will sail on Saturday.", "smooth": "The weather report says Saturday will be sunny. That is good weather for a boat trip." },
+        { "text": "The ferry leaves at 9 AM. One more session, and you catch it." }
+      ],
+      "postcard": [
+        "You took the ferry to Gull Island.",
+        "Seals sleep on the warm rocks.",
+        "Gulls fly over the water and call to each other.",
+        "From the top of the hill, you can see kites far away.",
+        "The kites are over Windy Cape."
+      ]
+    },
+    {
+      "id": "cape",
+      "name": "Windy Cape",
+      "emoji": "🪁",
+      "souvenir": "kite",
+      "beats": [
+        { "text": "From Gull Island, you can see kites over Windy Cape." },
+        { "text": "A letter came for you. It says: Come to Windy Cape. Bring a kite. From Captain Ada. Captain Ada is a pilot." },
+        {
+          "obstacle": "blocked",
+          "text": "You walked to the cliff path, but the path is blocked. Rocks fell onto it in the storm.",
+          "notice": { "type": "signs", "signs": [{ "shape": "rect", "color": "orange", "text": "PATH CLOSED", "icon": "🪨" }, { "shape": "rect", "color": "green", "text": "BEACH PATH", "icon": "➡️" }] },
+          "cope": "When the way is blocked, we can look for another way.",
+          "choice": {
+            "ask": "Which way will you go?",
+            "options": [
+              { "label": "Take the beach path at low tide", "reply": "Smart. The tide table says low tide is at 2 PM.", "after": "You waited for low tide at 2 PM. Then you walked along the beach path, past the fallen rocks." },
+              { "label": "Ask Captain Ada for a boat ride", "reply": "Smart. Captain Ada says she can pick you up tomorrow.", "after": "Captain Ada picked you up in her boat and sailed around the fallen rocks." }
+            ]
+          },
+          "talk": "Ask: the path was blocked, so he found another way. When did you last have to find another way?",
+          "smooth": "You found the cliff path to Windy Cape on your map."
+        },
+        { "text": "You are past the fallen rocks. Windy Cape is close now.", "smooth": "The cliff path is steep, so you walk slowly and carefully." },
+        { "text": "You can feel the wind already. One more session, and you reach Windy Cape." }
+      ],
+      "postcard": [
+        "The wind is strong at Windy Cape.",
+        "Kites fly high above the cliffs.",
+        "Captain Ada shakes your hand.",
+        "She says, \"I have a plane that can fly a long way. It needs a runway and some work.\"",
+        "\"Come with me to Cloud Hill.\""
+      ]
+    },
+    {
+      "id": "airfield",
+      "name": "Cloud Hill Airfield",
+      "emoji": "🛩️",
+      "souvenir": "plane",
+      "beats": [
+        { "text": "Captain Ada showed you a map. Cloud Hill has a long, flat runway." },
+        { "text": "Bus 9 goes from Windy Cape to Cloud Hill. It leaves at 10 AM." },
+        { "text": "There is an old hangar on Cloud Hill. A hangar is a big shed for planes." },
+        { "text": "Captain Ada says there is something red inside the hangar." },
+        { "text": "One more session, and you reach Cloud Hill." }
+      ],
+      "postcard": [
+        "Captain Ada opens the hangar doors.",
+        "Inside is a small red plane.",
+        "Its name is the Kookaburra.",
+        "A kookaburra is a bird that lives in Australia.",
+        "\"Let's fix it together,\" says Captain Ada. \"Then we can fly it there.\""
+      ]
+    },
+    {
+      "id": "takeoff",
+      "name": "Take-off",
+      "emoji": "☁️",
+      "beats": [
+        { "text": "The Kookaburra needs new tires and a check of the engine." },
+        { "text": "The new tires are on. The engine starts with a steady hum." },
+        {
+          "obstacle": "broken",
+          "text": "Captain Ada found a crack in the propeller. A plane cannot fly with a cracked propeller.",
+          "notice": { "type": "message", "app": "text", "from": "Captain Ada", "rows": ["Bad news. The propeller has a crack.", "I ordered a new one.", "It will come by mail in two days."] },
+          "cope": "When something breaks, we can fix it. It just takes time.",
+          "choice": {
+            "ask": "What will you do while you wait for the new propeller?",
+            "options": [
+              { "label": "Paint a stripe on the plane", "reply": "Nice. You can pick the color.", "after": "The new propeller came in the mail. Captain Ada fitted it, and your new stripe looks great." },
+              { "label": "Learn the parts of the plane", "reply": "Nice. Wings, engine, propeller, tail and wheels.", "after": "The new propeller came in the mail. When Captain Ada fitted it, you knew its name and where it goes." }
+            ]
+          },
+          "talk": "Ask: something broke on the plane, and they had to wait for a new part. How does waiting feel? What helps?",
+          "smooth": "Captain Ada checks every part of the plane. Everything looks good."
+        },
+        { "text": "The new propeller is on. Captain Ada checks it twice.", "smooth": "Captain Ada checks the map to Australia. It is a long way over the ocean." },
+        { "text": "The fuel tank is full. One more session, and the Kookaburra takes off." }
+      ],
+      "postcard": [
+        "You put on your seat belt.",
+        "The engine hums and the propeller spins.",
+        "The Kookaburra rolls down the runway and lifts into the sky.",
+        "Home Island gets smaller and smaller below you.",
+        "Next stop: Australia."
+      ]
+    },
+    {
+      "id": "australia",
+      "name": "Australia",
+      "emoji": "🐨",
+      "souvenir": "koala",
+      "beats": [
+        { "text": "You are flying over the ocean. The clouds look like cotton." },
+        { "text": "Far below, you can see dolphins in the water." },
+        {
+          "obstacle": "weather",
+          "text": "Strong winds are blowing over the ocean. Captain Ada lands on a small island to wait.",
+          "notice": { "type": "notice", "title": "Weather Report", "icon": "🌬️", "rows": ["Strong winds over the ocean today.", "Small planes should stay on the ground.", "Tomorrow: calm and sunny."] },
+          "cope": "Waiting can be hard. The wind will stop, and then we can fly again.",
+          "choice": {
+            "ask": "How will you spend the windy day?",
+            "options": [
+              { "label": "Play cards with Captain Ada", "reply": "Captain Ada is good at cards. You win two games.", "after": "The wind stopped in the night. In the morning, the sky was calm and blue." },
+              { "label": "Read a book about koalas", "reply": "You learn that koalas eat eucalyptus leaves.", "after": "The wind stopped in the night. You finished your koala book, and the sky was calm and blue." }
+            ]
+          },
+          "talk": "Ask: the plane had to wait for the wind to stop. What do you like to do while you wait?",
+          "smooth": "Captain Ada lands on a small island to get more fuel."
+        },
+        { "text": "The wind has stopped. The Kookaburra flies on.", "smooth": "Captain Ada says Australia is close now." },
+        { "text": "Captain Ada says, \"Look for a long coast with sandy beaches. That is Australia.\" One more session, and you land." }
+      ],
+      "postcard": [
+        "The Kookaburra lands in Australia.",
+        "The air smells like eucalyptus leaves.",
+        "At Bluegum Koala Sanctuary, Ranger Tess shows you a koala in a tree.",
+        "The koala's name is Gumnut.",
+        "Gumnut is fast asleep."
+      ]
+    }
+  ],
+  "koalas": [
+    { "name": "Gumnut", "facts": ["Koalas eat the leaves of eucalyptus trees.", "The leaves have a lot of water in them, so koalas do not drink much."] },
+    { "name": "Wattle", "facts": ["A baby koala is called a joey.", "A new joey is about as small as a jelly bean.", "It stays in its mother's pouch for about six months."] },
+    { "name": "Banjo", "facts": ["Koalas sleep for 18 to 22 hours a day.", "Their leaves give them very little energy.", "So they rest a lot."] },
+    { "name": "Pip", "facts": ["Koalas are not bears.", "A koala is a marsupial, like a kangaroo.", "A marsupial mom carries her baby in a pouch."] },
+    { "name": "Jarrah", "facts": ["Koalas have two thumbs on each front paw.", "The thumbs help them hold on to branches."] },
+    { "name": "Matilda", "facts": ["Koalas have fingerprints, like people do.", "They look a lot like your fingerprints."] },
+    { "name": "Kip", "facts": ["Koalas live in forests in eastern Australia.", "They need the right kinds of eucalyptus trees to eat."] },
+    { "name": "Sunny", "facts": ["Some koalas make a loud, deep sound called a bellow.", "It helps other koalas know where they are."] }
+  ],
+  "allMet": "You have met all the koalas at Bluegum Koala Sanctuary. Ranger Tess says you can visit them any time."
+}

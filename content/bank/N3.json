@@ -19,7 +19,7 @@
       "topics": ["games", "animals"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "The Tall Tower", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Tall Tower", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n3-p02",
@@ -38,7 +38,7 @@
       "topics": ["sports", "weather"],
       "level": 1,
       "socialLoad": 1,
-      "credit": { "title": "Rain on Match Day", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Rain on Match Day", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n3-p03",
@@ -60,7 +60,7 @@
       "topics": ["animals", "nature"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Crow and the Pitcher", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Crow and the Pitcher", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "n3-p04",
@@ -80,7 +80,7 @@
       "topics": ["robots"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Priya's Rover Stops", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Priya's Rover Stops", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n3-p05",
@@ -104,7 +104,7 @@
       "topics": ["animals", "sports"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "The Tortoise and the Hare", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Tortoise and the Hare", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "n3-p06",
@@ -127,7 +127,7 @@
       "topics": ["games", "school"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "The Domino Run", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Domino Run", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n3-p07",
@@ -145,7 +145,7 @@
       "topics": ["weather", "sports"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Leo's Wet Socks", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Leo's Wet Socks", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n3-p08",
@@ -165,7 +165,7 @@
       "topics": ["animals", "food", "home"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Empty Plate", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Empty Plate", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n3-p09",
@@ -184,7 +184,7 @@
       "topics": ["weather", "animals"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "The Bird Bowl", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Bird Bowl", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

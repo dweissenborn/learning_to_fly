@@ -374,6 +374,36 @@ export function interestEffect(p: Progress) {
   return r;
 }
 
+// ---------------------------------------------------------------- the journey (Learning to Fly)
+
+/**
+ * Which story beat shows after each finished session of a leg. Beats are: 0 the start of the
+ * leg, 1 progress, 2 an obstacle, 3 the obstacle overcome, 4 almost there. A short leg still
+ * shows the obstacle and how it was overcome; a long leg repeats the calm beats.
+ */
+export const BEATS_FOR_LEG: Record<number, number[]> = { 3: [0, 2, 3], 5: [0, 1, 2, 3, 4], 7: [0, 1, 1, 2, 3, 4, 4] };
+
+/** Where the learner was when the pace last changed, so a new pace never moves him back. */
+export interface JourneyAnchor { at: number; stop: number; step: number; after: number }
+export const JOURNEY_START: JourneyAnchor = { at: 0, stop: 0, step: 0, after: 0 };
+
+/**
+ * Where the learner is on the journey from Home Island to Australia. It moves with finished
+ * sessions only, never with scores, and it never moves back (R9). With five sessions a leg and
+ * six stops, Australia comes at session 25, the dose the research judged by (R7).
+ */
+export function journeyPosition(finished: number, stops: number, legLength: number, from: JourneyAnchor = JOURNEY_START) {
+  const legs = stops - 1;
+  const n = Math.max(0, finished - from.at);
+  if (from.stop >= legs) return { stop: legs, step: 0, beat: -1, arrived: true, after: from.after + n };
+  const eff = Math.min(from.step, legLength - 1) + n;
+  const stop = Math.min(legs, from.stop + Math.floor(eff / legLength));
+  if (stop === legs) return { stop, step: 0, beat: -1, arrived: true, after: eff - (legs - from.stop) * legLength };
+  const step = eff - (stop - from.stop) * legLength;
+  const table = BEATS_FOR_LEG[legLength] ?? BEATS_FOR_LEG[5];
+  return { stop, step, beat: table[Math.min(step, table.length - 1)], arrived: false, after: 0 };
+}
+
 /** Small seeded generator so item choice is reproducible in tests. */
 export function mulberry32(seed: number) {
   return () => {

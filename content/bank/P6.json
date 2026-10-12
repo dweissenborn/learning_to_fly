@@ -20,7 +20,7 @@
       "topics": ["animals", "friends"],
       "level": 1,
       "socialLoad": 1,
-      "credit": { "title": "The New Dog", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The New Dog", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p6-p02",
@@ -45,7 +45,7 @@
       "topics": ["animals", "friends"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Lion and the Mouse", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Lion and the Mouse", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "p6-p03",
@@ -67,7 +67,7 @@
       "topics": ["home", "friends"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Bundle of Sticks", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Bundle of Sticks", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "p6-p04",
@@ -92,7 +92,7 @@
       "topics": ["school", "friends"],
       "level": 3,
       "socialLoad": 2,
-      "credit": { "title": "Maya Reads Out Loud", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Maya Reads Out Loud", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p6-p05",
@@ -118,7 +118,7 @@
       "topics": ["weather"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "The North Wind and the Sun", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The North Wind and the Sun", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     }
   ],
   "items": [

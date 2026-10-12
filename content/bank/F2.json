@@ -17,7 +17,7 @@
       "topics": ["animals", "home"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Note on the Fridge", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Note on the Fridge", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f2-p02",
@@ -35,7 +35,7 @@
       "topics": ["games"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Battery Low", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Battery Low", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f2-p03",
@@ -55,7 +55,7 @@
       "topics": ["nature"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Sunflower Seeds", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Sunflower Seeds", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f2-p04",
@@ -77,7 +77,7 @@
       "topics": ["food"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Berry Smoothie", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Berry Smoothie", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f2-p05",
@@ -98,7 +98,7 @@
       "topics": ["games"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "StarBox Setup", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "StarBox Setup", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f2-p06",
@@ -122,7 +122,7 @@
       "topics": ["food"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "Text from Grandma Rose", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Text from Grandma Rose", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f2-p07",
@@ -146,7 +146,7 @@
       "topics": ["school", "safety"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Fire Drill Steps", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Fire Drill Steps", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f2-p08",
@@ -170,7 +170,7 @@
       "topics": ["space"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "SkyDart Rocket Kit", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "SkyDart Rocket Kit", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f2-p09",
@@ -193,7 +193,7 @@
       "topics": ["transport"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Pumping Up a Bike Tire", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Pumping Up a Bike Tire", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

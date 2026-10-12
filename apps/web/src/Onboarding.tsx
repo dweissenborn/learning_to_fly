@@ -18,7 +18,7 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
   const [pin, setPin] = useState(settings.pin);
   const [scores, setScores] = useState(settings.scout ?? { word: 0, reading: 0, listening: 0 });
   const g = settings.guide;
-  const header = <header className="topbar"><span className="brand"><BrandMark />Wayfinder</span><span className="spacer" />
+  const header = <header className="topbar"><span className="brand"><BrandMark />Learning to Fly</span><span className="spacer" />
     {['words', 'reading', 'listening', 'functional', 'narrative'].includes(step) && <Btn className="quiet small" onPress={() => finishScout(scores, {})}>Stop scouting for now</Btn>}
   </header>;
 
@@ -35,7 +35,7 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
 
   return <>{header}<main className="stack" style={{ maxWidth: 900, margin: '0 auto', width: '100%' }}>
     {step === 'hello' && <div className="card stack">
-      <h1>Welcome to Wayfinder</h1>
+      <h1>Welcome to Learning to Fly</h1>
       <p>A reading program built for one learner. Set it up together, then hand over the device.</p>
       <div className="field"><label htmlFor="nick">The learner's nickname</label><input id="nick" className="input" value={name} onChange={(e) => setName(e.target.value)} autoComplete="off" /></div>
       <div className="field"><label htmlFor="pin">A 4-digit code for the grown-ups' area (optional)</label><input id="pin" className="input" inputMode="numeric" maxLength={4} value={pin} onChange={(e) => setPin(e.target.value.replace(/\D/g, ''))} autoComplete="off" /></div>
@@ -93,6 +93,7 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
       <Guide id={g} size={110} mood="happy" />
       <h1>Your island is ready.</h1>
       <p>Each time you finish a session, you add something new to it.</p>
+      <p>Far away is Australia, where koalas live. Each session takes you a little closer.</p>
       <Btn className="primary big" autoFocus onPress={async () => { await saveSettings({ onboarded: true }); onDone(); }}>Go to my island →</Btn>
     </div>}
   </main></>;

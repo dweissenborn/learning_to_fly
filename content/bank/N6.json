@@ -17,7 +17,7 @@
       "topics": ["transport"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Sunday Trip", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Sunday Trip", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n6-p02",
@@ -35,7 +35,7 @@
       "topics": ["school", "friends"],
       "level": 1,
       "socialLoad": 1,
-      "credit": { "title": "Leo's Spelling Test", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Leo's Spelling Test", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n6-p03",
@@ -57,7 +57,7 @@
       "topics": ["animals", "nature", "food"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Ant and the Grasshopper", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Ant and the Grasshopper", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "n6-p04",
@@ -78,7 +78,7 @@
       "topics": ["school", "friends"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Art Show", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Art Show", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n6-p05",
@@ -99,7 +99,7 @@
       "topics": ["animals", "food", "nature"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "The Fox and the Grapes", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Fox and the Grapes", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "n6-p06",
@@ -122,7 +122,7 @@
       "topics": ["robots", "school"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "Priya's Big Day", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Priya's Big Day", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n6-p07",
@@ -145,7 +145,7 @@
       "topics": ["animals", "nature"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Lion and the Mouse", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Lion and the Mouse", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "n6-p08",
@@ -167,7 +167,7 @@
       "topics": ["animals"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Shepherd Boy and the Wolf", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Shepherd Boy and the Wolf", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "n6-p09",
@@ -190,7 +190,7 @@
       "topics": ["weather", "nature"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "The North Wind and the Sun", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The North Wind and the Sun", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     }
   ],
   "items": [

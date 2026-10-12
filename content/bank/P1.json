@@ -20,7 +20,7 @@
       "topics": ["sports"],
       "level": 1,
       "socialLoad": 1,
-      "credit": { "title": "Leo's New Trick", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Leo's New Trick", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p1-p02",
@@ -43,7 +43,7 @@
       "topics": ["friends", "mining"],
       "level": 2,
       "socialLoad": 2,
-      "credit": { "title": "The Rock Club", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Rock Club", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p1-p03",
@@ -65,7 +65,7 @@
       "topics": ["space"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "Earth from Space", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Earth from Space", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p1-p04",
@@ -95,7 +95,7 @@
       "level": 3,
       "socialLoad": 1,
       "themes": ["fear"],
-      "credit": { "title": "Storm Night", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Storm Night", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p1-p05",
@@ -118,7 +118,7 @@
       "topics": ["sports"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "The Last Match", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Last Match", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

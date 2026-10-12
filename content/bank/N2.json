@@ -18,7 +18,7 @@
       "topics": ["animals", "home"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Washing Pixel", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Washing Pixel", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n2-p02",
@@ -37,7 +37,7 @@
       "topics": ["mining", "nature"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Maya's Rock Hunt", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Maya's Rock Hunt", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n2-p03",
@@ -55,7 +55,7 @@
       "topics": ["transport", "sports"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Leo Takes the Bus", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Leo Takes the Bus", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n2-p04",
@@ -76,7 +76,7 @@
       "topics": ["robots", "school"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "The Rover Race", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Rover Race", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n2-p05",
@@ -98,7 +98,7 @@
       "topics": ["animals", "nature"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Dog and His Reflection", "author": "Aesop, retold for Wayfinder", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Dog and His Reflection", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "n2-p06",
@@ -120,7 +120,7 @@
       "topics": ["transport", "ocean"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "The Ferry to Shell Island", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Ferry to Shell Island", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n2-p07",
@@ -140,7 +140,7 @@
       "topics": ["transport"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "Fixing the Chain", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Fixing the Chain", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [

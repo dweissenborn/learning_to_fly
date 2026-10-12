@@ -6,7 +6,7 @@ import type { GuideId } from './db';
 export type Mood = 'idle' | 'think' | 'happy';
 export const GUIDES: Record<GuideId, { name: string; blurb: string; color: string }> = {
   bolt: { name: 'Bolt', blurb: 'A robot who likes facts, maps and machines.', color: '#5f9fb6' },
-  rook: { name: 'Rook', blurb: 'A raven who collects interesting words.', color: '#3b4152' },
+  rook: { name: 'Rook', blurb: 'A raven who collects words and loves to fly.', color: '#3b4152' },
   moss: { name: 'Moss', blurb: 'A stone giant who likes building things.', color: '#7f8a7a' },
 };
 
@@ -65,11 +65,41 @@ export function Guide({ id, mood = 'idle', size = 84, label }: { id: GuideId; mo
 export function BrandMark() {
   return <svg viewBox="0 0 64 64" aria-hidden="true">
     <circle cx="32" cy="32" r="30" fill="#2f7fb0" />
-    <path d="M10 40 Q32 30 54 40 L54 50 Q32 62 10 50 Z" fill="#f2dfae" />
-    <path d="M18 42 L26 22 L34 42 Z" fill="#9f97c4" /><path d="M28 42 L38 16 L48 42 Z" fill="#b9b3db" />
-    <path d="M38 16 L41 24 L35 24 Z" fill="#fff" />
-    <circle cx="20" cy="44" r="5" fill="#6fae5a" /><rect x="40" y="38" width="8" height="8" fill="#f4a259" />
+    <path d="M8 44 Q32 36 56 44 L56 52 Q32 62 8 52 Z" fill="#f2dfae" />
+    <path d="M12 46 L21 28 L30 46 Z" fill="#b9b3db" /><path d="M21 28 L24 34 L18 34 Z" fill="#fff" />
+    <circle cx="40" cy="44" r="5" fill="#6fae5a" />
+    <Plane x={40} y={20} s={0.24} rot={-14} />
   </svg>;
+}
+
+/** The Kookaburra: Captain Ada's small red plane, side view, facing right. */
+export function Plane({ x = 0, y = 0, s = 1, rot = 0 }: { x?: number; y?: number; s?: number; rot?: number }) {
+  return <g transform={`translate(${x} ${y}) rotate(${rot}) scale(${s})`}>
+    <path d="M-46 -4 L-52 -28 L-40 -28 L-30 -4 Z" fill="#b8322f" />
+    <path d="M-48 -6 Q-40 -12 10 -12 Q40 -12 48 0 Q40 10 10 10 L-40 6 Q-50 2 -48 -6 Z" fill="#d64545" />
+    <path d="M-44 1 L42 1" stroke="#fff" strokeWidth="2.5" />
+    <rect x="6" y="-9" width="13" height="7" rx="2" fill="#bfe3f5" /><rect x="22" y="-8" width="10" height="6" rx="2" fill="#bfe3f5" />
+    <rect x="-12" y="-17" width="42" height="5" rx="2.5" fill="#a52a2a" />
+    <rect x="-52" y="-6" width="18" height="4" rx="2" fill="#a52a2a" />
+    <ellipse cx="49" cy="0" rx="2" ry="15" fill="#555" opacity="0.7" />
+    <line x1="8" y1="10" x2="8" y2="17" stroke="#444" strokeWidth="2.5" /><circle cx="8" cy="19" r="4.5" fill="#333" />
+  </g>;
+}
+
+/** A koala sitting up: gray fur, round fluffy ears, a big dark nose. */
+export function Koala({ x = 0, y = 0, s = 1, sleepy = false }: { x?: number; y?: number; s?: number; sleepy?: boolean }) {
+  return <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <ellipse cx="0" cy="16" rx="20" ry="22" fill="#9aa1aa" />
+    <ellipse cx="0" cy="20" rx="11" ry="14" fill="#e9e5df" />
+    <path d="M-17 6 q-8 8 -5 18 M17 6 q8 8 5 18" stroke="#8d949d" strokeWidth="7" strokeLinecap="round" fill="none" />
+    <circle cx="-17" cy="-20" r="11" fill="#9aa1aa" /><circle cx="17" cy="-20" r="11" fill="#9aa1aa" />
+    <circle cx="-17" cy="-20" r="6.5" fill="#efe9e2" /><circle cx="17" cy="-20" r="6.5" fill="#efe9e2" />
+    <circle cx="0" cy="-8" r="18" fill="#a7adb5" />
+    {sleepy
+      ? <path d="M-11 -12 q3 3 6 0 M5 -12 q3 3 6 0" stroke="#222" strokeWidth="2" fill="none" strokeLinecap="round" />
+      : <g fill="#222"><circle cx="-8" cy="-12" r="2.6" /><circle cx="8" cy="-12" r="2.6" /></g>}
+    <ellipse cx="0" cy="-3" rx="5.5" ry="7.5" fill="#33363d" />
+  </g>;
 }
 
 // ---------------------------------------------------------------- isometric drawing kit
@@ -134,7 +164,12 @@ const Defs = () => <defs>
 </defs>;
 
 // ---------------------------------------------------------------- pieces the learner can add
-export interface Piece { id: string; name: string; region: 'functional' | 'narrative' | 'philosophical'; topic?: string; beach?: boolean; draw: (night: boolean) => ReactNode }
+export interface Piece {
+  id: string; name: string; region: 'functional' | 'narrative' | 'philosophical'; topic?: string; beach?: boolean;
+  /** A souvenir: offered once the journey reaches this stop. */
+  stop?: string;
+  draw: (night: boolean) => ReactNode;
+}
 const win = (night: boolean) => (night ? '#ffd56b' : '#a9d6ec');
 export const PIECES: Piece[] = [
   { id: 'house', name: 'Cottage', region: 'functional', draw: (n) => <>{box(0.2, 0.25, 0.6, 0.5, 0, 0.9, '#f2e6d0')}<Poly p={[[0.42, 0.75, 0], [0.56, 0.75, 0], [0.56, 0.75, 0.55], [0.42, 0.75, 0.55]]} fill="#7a4a2a" /><Poly p={[[0.8, 0.35, 0.4], [0.8, 0.55, 0.4], [0.8, 0.55, 0.68], [0.8, 0.35, 0.68]]} fill={win(n)} />{gable(0.14, 0.2, 0.72, 0.6, 0.9, 0.75, '#d9634c', '#f2e6d0')}</> },
@@ -168,6 +203,11 @@ export const PIECES: Piece[] = [
   { id: 'bench', name: 'Thinking bench', region: 'philosophical', draw: () => <>{box(0.2, 0.4, 0.6, 0.2, 0.3, 0.06, '#a87a4f')}{box(0.2, 0.38, 0.6, 0.05, 0.36, 0.3, '#a87a4f')}{box(0.25, 0.45, 0.05, 0.1, 0, 0.3, '#5a4a3a')}{box(0.7, 0.45, 0.05, 0.1, 0, 0.3, '#5a4a3a')}</> },
   { id: 'telescope', name: 'Telescope', region: 'philosophical', topic: 'space', draw: () => { const [x, y] = at(0.5, 0.5, 0.9); const [fx, fy] = at(0.5, 0.5, 0); return <><g stroke="#4a4a5a" strokeWidth="2.5"><line x1={x} y1={y} x2={fx - 12} y2={fy + 4} /><line x1={x} y1={y} x2={fx + 12} y2={fy + 4} /><line x1={x} y1={y} x2={fx} y2={fy + 10} /></g><rect x={x - 22} y={y - 8} width="40" height="10" rx="4" fill="#c9a24a" transform={`rotate(-28 ${x} ${y})`} /></>; } },
   { id: 'flag', name: 'Summit flag', region: 'philosophical', draw: () => { const [x, y] = at(0.5, 0.5, 1.6); return <>{box(0.42, 0.42, 0.16, 0.16, 0, 0.15, '#9a9fa8')}{cyl(0.5, 0.5, 0.025, 0.15, 1.5, '#4a4a5a')}<path className="flame moves" d={`M${x} ${y} l22 6 l-22 6 z`} fill="#9b7fd4" /></>; } },
+  // Souvenirs from the journey.
+  { id: 'seal', name: 'Seal rock', region: 'functional', topic: 'animals', stop: 'gull', draw: () => { const [x, y] = at(0.5, 0.5, 0.75); return <>{ball(0.45, 0.55, 0, 0.42, '#8d8a85')}{ball(0.66, 0.4, 0, 0.26, '#9a968f')}<ellipse cx={x - 2} cy={y} rx="17" ry="6" fill="#5e646d" /><circle cx={x + 14} cy={y - 5} r="5.5" fill="#6b717a" /><circle cx={x + 16} cy={y - 6} r="1.2" fill="#111" /><path d={`M${x - 18} ${y} l-6 -4 l1 7 z`} fill="#4f545c" /></>; } },
+  { id: 'kite', name: 'Windsock and kite', region: 'functional', topic: 'weather', stop: 'cape', draw: () => { const [x, y] = at(0.5, 0.5, 1.5); return <>{cyl(0.5, 0.5, 0.025, 0, 1.5, '#6b6458')}<path d={`M${x} ${y - 4} L${x + 24} ${y - 1} L${x + 24} ${y + 5} L${x} ${y + 8} Z`} fill="#f28c28" /><path d={`M${x + 8} ${y - 3} L${x + 8} ${y + 7} M${x + 16} ${y - 2} L${x + 16} ${y + 6}`} stroke="#fff" strokeWidth="3" /><path d={`M${x} ${y - 4} Q${x + 10} ${y - 30} ${x + 22} ${y - 44}`} stroke="#555" strokeWidth="0.8" fill="none" /><path d={`M${x + 22} ${y - 56} l9 10 l-9 12 l-9 -12 z`} fill="#4fa3d1" stroke="#2f6f99" /><path d={`M${x + 22} ${y - 34} q-6 6 0 10 q6 4 0 10`} stroke="#e4572e" strokeWidth="1.5" fill="none" /></>; } },
+  { id: 'plane', name: 'The Kookaburra', region: 'functional', topic: 'transport', stop: 'airfield', draw: () => { const [x, y] = at(0.5, 0.5, 0.42); return <><Poly p={[[0.05, 0.3, 0.02], [0.95, 0.3, 0.02], [0.95, 0.7, 0.02], [0.05, 0.7, 0.02]]} fill="#6a6f78" />{[0.15, 0.4, 0.65].map((u) => <Poly key={u} p={[[u, 0.48, 0.03], [u + 0.15, 0.48, 0.03], [u + 0.15, 0.52, 0.03], [u, 0.52, 0.03]]} fill="#f5f5f0" />)}<Plane x={x} y={y} s={0.36} /></>; } },
+  { id: 'koala', name: 'Koala tree', region: 'narrative', topic: 'animals', stop: 'australia', draw: () => { const [x, y] = at(0.5, 0.5, 0.75); return <>{cyl(0.5, 0.5, 0.09, 0, 1.4, '#e3dccf')}{ball(0.36, 0.56, 1.25, 0.36, '#86b5a2')}{ball(0.64, 0.42, 1.35, 0.32, '#9cc5b4')}{ball(0.5, 0.5, 1.7, 0.3, '#7aa996')}<Koala x={x + 6} y={y} s={0.34} /></>; } },
 ];
 export const pieceById = new Map(PIECES.map((p) => [p.id, p]));
 
@@ -236,9 +276,11 @@ export interface IslandProps {
   placing?: { piece: string; onPlace: (x: number, y: number) => void };
   fresh?: string;
   hour?: number;
+  /** How far along the journey: 0 Home Island to 5 Australia. Shows small clues on the horizon. */
+  stage?: number;
 }
 
-export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = new Date().getHours() }: IslandProps) {
+export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = new Date().getHours(), stage = 0 }: IslandProps) {
   const t = skyFor(hour);
   const spots = placing ? new Set(freeTiles(placed, peaksOpen, pieceById.get(placing.piece)?.beach).map((x) => `${x.r},${x.c}`)) : null;
   const byTile = new Map(placed.map((p) => [`${p.y},${p.x}`, p]));
@@ -280,11 +322,12 @@ export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = ne
   };
 
   return <div className="island-wrap" style={{ ['--sky' as string]: `linear-gradient(${t.sky}, ${t.sea2} 28%, ${t.sea})` }}>
-    <svg viewBox={`${VB.x} ${VB.y} ${VB.w} ${VB.h}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label="Your island. Harbor Town, Story Woods and Lantern Peaks.">
+    <svg viewBox={`${VB.x} ${VB.y} ${VB.w} ${VB.h}`} preserveAspectRatio="xMidYMid meet" role={placing ? 'group' : 'img'} aria-label="Your island. Harbor Town, Story Woods and Lantern Peaks.">
       <Defs />
       {t.night && Array.from({ length: 40 }, (_, i) => <circle key={i} cx={VB.x + noise(i, 3) * VB.w} cy={VB.y + noise(i, 7) * 90} r={noise(i, 11) * 1.4 + 0.4} fill="#fff" opacity={0.4 + noise(i, 5) * 0.5} />)}
       {Array.from({ length: 14 }, (_, i) => <path key={i} className="wave moves" style={{ animationDelay: `${-i * 0.7}s` }} d={`M${VB.x + noise(i, 1) * VB.w} ${VB.y + 40 + noise(i, 2) * (VB.h - 40)} q10 -4 20 0 t20 0`} stroke="#ffffff" strokeOpacity="0.45" strokeWidth="2" fill="none" />)}
       <ellipse cx="0" cy="175" rx="290" ry="135" fill="#ffffff" opacity="0.14" />
+      <Horizon stage={stage} night={t.night} />
       {sorted.map(tile)}
       {!peaksOpen && <g className="mist moves" opacity="0.55" pointerEvents="none">
         <ellipse cx="-20" cy="20" rx="150" ry="40" fill="#fff" /><ellipse cx="40" cy="-10" rx="110" ry="30" fill="#fff" /><ellipse cx="-70" cy="-15" rx="80" ry="24" fill="#fff" />
@@ -305,6 +348,28 @@ function PathStone({ strand, lit, here, color, n, night }: { strand: string; lit
     {lit && cyl(0.78, 0.25, 0.025, 0, 1, '#5a5a66')}
     {lit && (() => { const [lx, ly] = pr([0.78, 0.25, 1.1]); return <><circle cx={lx} cy={ly} r={night ? 20 : 12} fill="url(#glow)" /><rect x={lx - 5} y={ly - 7} width="10" height="12" rx="3" fill="#ffe08a" stroke="#4a4a52" /></>; })()}
     {here && (() => { const [fx, fy] = pr([0.3, 0.6, 0]); return <g><line x1={fx} y1={fy} x2={fx} y2={fy - 40} stroke="#3a3a44" strokeWidth="2.5" /><path className="flame moves" d={`M${fx} ${fy - 40} l20 6 l-20 7 z`} fill={color} stroke={shade(color, -0.3)} /></g>; })()}
+  </g>;
+}
+
+/** Clues about the journey, out at sea and in the sky. */
+function Horizon({ stage, night }: { stage: number; night: boolean }) {
+  return <g aria-hidden="true">
+    <g opacity={night ? 0.6 : 0.85}>
+      <ellipse cx="215" cy="-58" rx="34" ry="8" fill="#8fb3a0" />
+      <path d="M196 -60 Q206 -76 218 -66 Q226 -74 234 -60 Z" fill="#9a968f" />
+      <path d="M204 -76 l4 -2 l4 2 M222 -80 l3 -2 l3 2" stroke="#fff" strokeWidth="1.2" fill="none" />
+      {stage >= 1 && <><line x1="226" y1="-70" x2="226" y2="-86" stroke="#4a4a52" strokeWidth="1.5" /><path d="M226 -86 l10 3 l-10 3 z" fill="#f2b04a" /></>}
+    </g>
+    {stage >= 1 && <g transform="translate(222 282)"><g className="bob moves">
+      <path d="M-20 0 L20 0 L14 9 L-14 9 Z" fill="#f5f5f0" /><path d="M-18 3 L18 3" stroke="#3f88c5" strokeWidth="2" />
+      <rect x="-8" y="-9" width="14" height="9" rx="2" fill="#f5f5f0" /><rect x="-5" y="-7" width="4" height="3" fill="#3f88c5" />
+    </g></g>}
+    {stage >= 2 && <g className="sway moves">
+      <path d="M130 70 Q140 10 158 -38" stroke="#555" strokeWidth="0.8" fill="none" />
+      <path d="M158 -52 l10 12 l-10 14 l-10 -14 z" fill="#4fa3d1" stroke="#2f6f99" />
+      <path d="M158 -26 q-6 6 0 10 q6 5 0 10" stroke="#e4572e" strokeWidth="1.5" fill="none" />
+    </g>}
+    {stage >= 4 && <g className="flyby moves"><Plane x={-150} y={-78} s={0.42} rot={-4} /></g>}
   </g>;
 }
 

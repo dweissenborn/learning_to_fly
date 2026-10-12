@@ -2,7 +2,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId, Strand } from '@wayfinder/schema';
-import { ALL_SKILLS, dayKey, errorPatterns, focusSkill, gate, hintNeed, interestEffect, skillsOf, statusOf, strandOf, trend, type Progress } from '@wayfinder/engine';
+import { ALL_SKILLS, dayKey, errorPatterns, focusSkill, gate, hintNeed, interestEffect, journeyPosition, skillsOf, statusOf, strandOf, trend, type Progress } from '@wayfinder/engine';
+import { finishedCount, JOURNEY, journeyNow } from './journey';
 import { db, exportAll, importAll, log, saveSettings, useNotes, wipeAll, type GuideId, type Settings } from './db';
 import { pool, SKILL, STRAND, today, TOPICS } from './content';
 import { creditLine } from './Passage';
@@ -42,7 +43,7 @@ export function Adult({ settings, events, progress, onExit, onRescout }: { setti
       {tab === 'skills' && <Skills progress={progress} events={events} />}
       {tab === 'today' && <TodayAdmin settings={settings} />}
       {tab === 'content' && <Library settings={settings} />}
-      {tab === 'settings' && <SettingsTab settings={settings} onRescout={onRescout} />}
+      {tab === 'settings' && <SettingsTab settings={settings} progress={progress} onRescout={onRescout} />}
       {tab === 'data' && <DataTab onReport={() => setReport(true)} />}
     </main>
   </>;
@@ -69,6 +70,7 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
         <span>Days used</span><b>{days}</b>
         <span>Time reading</span><b>{minutes} min</b>
         <span>Today recounts</span><b>{recounts}</b>
+        <span>Journey</span><b>{(() => { const j = journeyNow(finishedCount(progress), settings); return j.next ? `${j.here.name}, ${j.legLength - j.step} more to ${j.next.name}` : `In Australia, ${Math.min(j.after + 1, JOURNEY.koalas.length)} koalas met`; })()}</b>
       </div>
       <p className="tagline">The research behind this plan judged gains after at least 25 sessions (R7). Mastery needs two good days on a skill, so steady short sessions work best.</p>
     </section>
@@ -236,7 +238,7 @@ function Library({ settings }: { settings: Settings }) {
   </section>;
 }
 
-function SettingsTab({ settings, onRescout }: { settings: Settings; onRescout: () => void }) {
+function SettingsTab({ settings, progress, onRescout }: { settings: Settings; progress: Progress; onRescout: () => void }) {
   const [pin, setPin] = useState(settings.pin);
   const [vs, setVs] = useState(voices());
   useEffect(() => {
@@ -252,6 +254,15 @@ function SettingsTab({ settings, onRescout }: { settings: Settings; onRescout: (
       <h2>Learning</h2>
       <Seg label="Small rewards" value={settings.rewardPace} onChange={(rewardPace) => saveSettings({ rewardPace })} options={[['item', 'After every item'], ['step', 'After every step'], ['session', 'At the end only']]} />
       <p className="tagline">Start with frequent rewards if he needs them, then thin them out (R6). Rewards build his island; they never depend on scores (R9).</p>
+      <Seg label="Sessions between places on the journey" value={settings.legLength} options={[[3, '3'], [5, '5'], [7, '7']]} onChange={(legLength) => {
+        // Re-anchor at today's place, so a new pace never moves him back.
+        const finished = finishedCount(progress);
+        const pos = journeyPosition(finished, JOURNEY.stops.length, settings.legLength, settings.journeyAnchor);
+        saveSettings({ legLength, journeyAnchor: { at: finished, stop: pos.stop, step: pos.step, after: pos.after } });
+      }} />
+      <p className="tagline">The journey to the koalas moves with finished sessions, never with scores (R9). Five a leg reaches Australia at about session 25, the dose the research judged by (R7).</p>
+      <Toggle on={settings.setbacks} onChange={(setbacks) => saveSettings({ setbacks })}>Story setbacks (a storm, a blocked path, a broken part)</Toggle>
+      <p className="tagline">Setbacks model coping with change: each one is explained, he hears a calm coping line, and he picks a plan. Nothing is lost. Turn them off for a smoother story.</p>
       <Seg label="Your-turn items per session" value={settings.yourTurn} onChange={(yourTurn) => saveSettings({ yourTurn })} options={[[3, '3'], [4, '4'], [5, '5']]} />
       <Seg label="Wait before a hint in “together”" value={settings.hintDelay} onChange={(hintDelay) => saveSettings({ hintDelay })} options={[[5, '5 s'], [8, '8 s'], [12, '12 s'], [20, '20 s']]} />
       <div className="field"><span className="label">Guide</span><div className="row">{(Object.keys(GUIDES) as GuideId[]).map((g) => <Btn key={g} className={`small ${settings.guide === g ? 'on' : 'quiet'}`} onPress={() => saveSettings({ guide: g })}><Guide id={g} size={30} /> {GUIDES[g].name}</Btn>)}</div></div>
@@ -283,7 +294,7 @@ function DataTab({ onReport }: { onReport: () => void }) {
   const [confirm, setConfirm] = useState('');
   const download = async () => {
     const blob = new Blob([JSON.stringify(await exportAll(), null, 2)], { type: 'application/json' });
-    const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `wayfinder-${new Date().toISOString().slice(0, 10)}.json` });
+    const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `learning-to-fly-${new Date().toISOString().slice(0, 10)}.json` });
     a.click();
     URL.revokeObjectURL(a.href);
   };
@@ -297,7 +308,7 @@ function DataTab({ onReport }: { onReport: () => void }) {
       <h2>Export and import</h2>
       <p className="tagline">Everything lives in this browser. Export a file to keep a backup or to move to another device.</p>
       <Btn onPress={download}>Export everything (JSON)</Btn>
-      <label className="field"><span className="label">Import a Wayfinder file</span>
+      <label className="field"><span className="label">Import a Learning to Fly file</span>
         <input type="file" accept="application/json" onChange={async (e) => {
           const file = e.target.files?.[0];
           if (!file) return;

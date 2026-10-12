@@ -12,9 +12,10 @@ import { Today } from './Today';
 import { Onboarding, ComfortPanel } from './Onboarding';
 import { Adult } from './Adult';
 import { Btn } from './ui';
+import { finishedCount, journeyNow, JourneyMap, LegDots } from './journey';
 import { setSound, setVoice } from './media';
 
-type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout';
+type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'map';
 
 function useApplySettings(s: Settings | undefined) {
   useEffect(() => {
@@ -66,6 +67,7 @@ export function App() {
     return <div className="shell"><Onboarding settings={settings} startAt={screen === 'rescout' ? 'scout' : 'hello'} onDone={() => go('home')} /></div>;
   if (screen === 'session') return <div className="shell"><Session settings={settings} events={events} progress={progress} onExit={() => go('home')} /></div>;
   if (screen === 'today') return <div className="shell"><Today settings={settings} progress={progress} recounts={events.filter((e) => e.type === 'recount').length} onExit={() => go('home')} /></div>;
+  if (screen === 'map') return <div className="shell"><JourneyMap settings={settings} progress={progress} onExit={() => go('home')} /></div>;
   if (screen === 'adult') return <div className="shell"><Adult settings={settings} events={events} progress={progress} onExit={() => go('home')} onRescout={() => go('rescout')} /></div>;
 
   const g = gate(progress, settings.gate);
@@ -82,17 +84,21 @@ export function App() {
   const hour = new Date().getHours();
   const hello = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
   const lastPiece = placed.at(-1);
-  const say = `${hello}, ${settings.name}. ${todayDone ? 'You already read today. You can read again, or tell me about your day.' : 'Ready when you are.'}`;
+  const jn = journeyNow(finishedCount(progress), settings);
+  const story = jn.beat
+    ? `${jn.beat.text}${jn.beat.cope ? ' ' + jn.beat.cope : ''}${jn.beat.choice && jn.beat.chosen === undefined ? ' Open My journey to choose a plan.' : ''}`
+    : 'You made it to Australia. The koalas are waiting for you.';
+  const say = `${hello}, ${settings.name}. ${todayDone ? 'You already read today. ' : ''}${story}`;
 
   return <div className="shell">
     <header className="topbar">
-      <span className="brand"><BrandMark />Wayfinder</span>
+      <span className="brand"><BrandMark />Learning to Fly</span>
       <span className="spacer" />
       <Btn className="quiet iconbtn" aria-label="Comfort settings" onPress={() => setDialog('comfort')}>⚙️</Btn>
     </header>
     <main className="home">
       <div className="stack">
-        <Island placed={placed} lit={lit} here={here} peaksOpen={g.available || g.opened} />
+        <Island placed={placed} lit={lit} here={here} peaksOpen={g.available || g.opened} stage={jn.stop} />
         <p className="muted" style={{ textAlign: 'center', margin: 0 }}>
           {placed.length ? `Your island has ${placed.length} ${placed.length === 1 ? 'thing' : 'things'} you added. The newest is the ${pieceById.get(lastPiece!.piece)?.name.toLowerCase()}.` : 'Finish a session to add your first thing to the island.'}
         </p>
@@ -101,6 +107,8 @@ export function App() {
         <div className="guide-row"><Guide id={settings.guide} size={76} mood="happy" /><div className="bubble">{say}</div></div>
         <div className="hero-actions">
           <Btn className="primary big" autoFocus onPress={() => go('session')}><span className="ico" aria-hidden>📖</span>Start reading</Btn>
+          <Btn className="big journey" onPress={() => go('map')}><span className="ico" aria-hidden>🗺️</span>My journey</Btn>
+          {jn.next && <LegDots now={jn} />}
           <Btn className="big nar" onPress={() => go('today')}><span className="ico" aria-hidden>📅</span>Tell about today</Btn>
           <Btn className="big" onPress={() => setDialog('shelf')}><span className="ico" aria-hidden>⭐</span>Things I can do · {shelf.length}</Btn>
         </div>

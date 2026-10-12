@@ -22,7 +22,7 @@
       "topics": ["school", "home"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "A Text from Mom", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "A Text from Mom", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f5-p02",
@@ -45,7 +45,7 @@
       "topics": ["robots", "school", "friends"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "A Text from Priya", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "A Text from Priya", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f5-p03",
@@ -66,7 +66,7 @@
       "topics": ["school"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "The Library Notice", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Library Notice", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f5-p04",
@@ -91,7 +91,7 @@
       "topics": ["sports", "friends", "animals"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Skate Park Chat", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Skate Park Chat", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f5-p05",
@@ -115,7 +115,7 @@
       "topics": ["school", "ocean", "nature"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "The Field Trip Notice", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Field Trip Notice", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f5-p06",
@@ -137,7 +137,7 @@
       "topics": ["robots", "school"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "The Robotics Club Form", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Robotics Club Form", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f5-p07",
@@ -164,7 +164,7 @@
       "topics": ["school", "robots"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "An Email from Ms. Ortiz", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "An Email from Ms. Ortiz", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f5-p08",
@@ -189,7 +189,7 @@
       "topics": ["friends", "food"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "The Party Plan Changes", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Party Plan Changes", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "f5-p09",
@@ -213,7 +213,7 @@
       "topics": ["school", "home"],
       "level": 3,
       "socialLoad": 0,
-      "credit": { "title": "The Library Card Form", "author": "Wayfinder (AI-drafted)", "source": "Written for Wayfinder", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Library Card Form", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     }
   ],
   "items": [
