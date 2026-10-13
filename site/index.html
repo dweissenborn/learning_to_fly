@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Research Behind Learning to Fly</title>
+<meta name="description" content="What the studies say about teaching reading comprehension to autistic children, how each finding shapes Learning to Fly, and where the evidence runs out.">
+<meta name="color-scheme" content="light dark">
+<link rel="preload" href="fonts/atkinson-hyperlegible-next-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/lexend-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: 'Atkinson Hyperlegible Next'; font-weight: 400; font-display: swap; src: url(fonts/atkinson-hyperlegible-next-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Atkinson Hyperlegible Next'; font-weight: 700; font-display: swap; src: url(fonts/atkinson-hyperlegible-next-latin-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Atkinson Hyperlegible Next'; font-weight: 800; font-display: swap; src: url(fonts/atkinson-hyperlegible-next-latin-800-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Lexend'; font-weight: 400; font-display: swap; src: url(fonts/lexend-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Lexend'; font-weight: 700; font-display: swap; src: url(fonts/lexend-latin-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Lexend'; font-weight: 800; font-display: swap; src: url(fonts/lexend-latin-800-normal.woff2) format('woff2'); }
+
+/* Layout: a long-form field guide. A sticky contents rail on wide screens, then sections that move from the
+   big picture (what the evidence says overall) to the detail (thirty findings, each tied to what the app does).
+   Colours and type are the app's own tokens (apps/web/src/styles.css): Atkinson Hyperlegible Next and Lexend,
+   the warm paper ground, the blue accent and the three strand colours. */
+:root {
+  --bg: oklch(96.5% 0.014 85);
+  --bg-2: oklch(93.5% 0.02 80);
+  --surface: oklch(99.4% 0.005 85);
+  --surface-2: oklch(97.2% 0.01 85);
+  --ink: oklch(26% 0.025 255);
+  --muted: oklch(45% 0.025 255);
+  --line: oklch(86% 0.018 80);
+  --shadow: 0 1px 2px oklch(30% 0.03 60 / 0.08), 0 6px 18px oklch(30% 0.03 60 / 0.08);
+  --accent: oklch(50% 0.12 237);
+  --accent-deep: oklch(40% 0.11 240);
+  --accent-soft: oklch(93% 0.035 230);
+  --fun: oklch(70% 0.14 62);
+  --fun-deep: oklch(48% 0.12 55);
+  --fun-soft: oklch(94.5% 0.045 75);
+  --nar: oklch(64% 0.11 165);
+  --nar-deep: oklch(42% 0.085 170);
+  --nar-soft: oklch(94% 0.035 165);
+  --phi: oklch(63% 0.12 295);
+  --phi-deep: oklch(44% 0.13 295);
+  --phi-soft: oklch(94.5% 0.03 295);
+  --good-deep: oklch(40% 0.1 152);
+  --good-soft: oklch(94% 0.05 150);
+  --mark: oklch(92% 0.11 95);
+  --plane: oklch(55% 0.17 28);
+  --f-body: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
+  --f-display: 'Lexend', 'Atkinson Hyperlegible Next', 'Segoe UI', system-ui, sans-serif;
+  --radius: 18px;
+  --measure: 66ch;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: oklch(23% 0.025 255); --bg-2: oklch(20% 0.025 255); --surface: oklch(28.5% 0.025 255); --surface-2: oklch(32% 0.025 255);
+    --ink: oklch(94% 0.012 85); --muted: oklch(76% 0.02 255); --line: oklch(40% 0.025 255);
+    --shadow: 0 1px 2px oklch(0% 0 0 / 0.3), 0 6px 18px oklch(0% 0 0 / 0.25);
+    --accent: oklch(72% 0.11 230); --accent-deep: oklch(82% 0.08 230); --accent-soft: oklch(36% 0.06 235);
+    --fun-soft: oklch(36% 0.05 65); --nar-soft: oklch(34% 0.04 165); --phi-soft: oklch(35% 0.05 295);
+    --fun-deep: oklch(84% 0.1 70); --nar-deep: oklch(84% 0.08 165); --phi-deep: oklch(84% 0.08 295);
+    --good-soft: oklch(34% 0.06 150); --good-deep: oklch(85% 0.1 150);
+    --mark: oklch(45% 0.08 95); --plane: oklch(70% 0.15 30);
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { font-size: 18px; scroll-padding-top: 24px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); line-height: 1.6; }
+a { color: var(--accent-deep); text-underline-offset: 3px; }
+a:hover { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+h1, h2, h3, h4 { font-family: var(--f-display); text-wrap: balance; line-height: 1.2; margin: 0; }
+p { margin: 0; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--surface); padding: 8px 12px; border-radius: 8px; }
+.skip:focus { left: 16px; z-index: 10; }
+
+.page { max-width: 1240px; margin: 0 auto; padding-inline: 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 48px; }
+@media (min-width: 1100px) { .page { grid-template-columns: 210px minmax(0, 1fr); } }
+
+/* contents rail */
+.toc { padding-block: 28px 0; font-size: 0.86rem; }
+.toc h2 { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-family: var(--f-body); margin-bottom: 10px; }
+.toc ol { list-style: none; margin: 0; padding: 0 0 6px; display: flex; flex-wrap: nowrap; gap: 6px; overflow-x: auto; scrollbar-width: thin; }
+.toc a { display: block; white-space: nowrap; text-decoration: none; color: var(--ink); padding: 5px 11px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); }
+.toc a:hover { border-color: var(--accent); }
+@media (min-width: 1100px) {
+  .toc { position: sticky; top: 0; align-self: start; padding-block: 56px 24px; max-height: 100vh; overflow-y: auto; }
+  .toc ol { display: grid; gap: 2px; overflow: visible; padding: 0; }
+  .toc a { white-space: normal; background: none; border: 0; border-radius: 8px; padding: 5px 10px; color: var(--muted); }
+  .toc a:hover { color: var(--ink); background: var(--surface); }
+}
+main { min-width: 0; padding-block: 24px 80px; display: grid; gap: 88px; }
+
+/* hero */
+.hero { display: grid; gap: 22px; padding-top: 24px; }
+.eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-deep); }
+.hero h1 { font-size: clamp(2.2rem, 5.4vw, 3.9rem); font-weight: 800; letter-spacing: -0.02em; max-width: 16ch; }
+.hero .lede { font-size: 1.22rem; max-width: 58ch; color: var(--ink); }
+.hero .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; color: var(--muted); font-size: 0.92rem; }
+.hero .meta span { font-variant-numeric: tabular-nums; }
+.route { width: 100%; max-width: 820px; height: auto; display: block; margin-top: 6px; }
+.route .sea { fill: none; stroke: var(--line); stroke-width: 1; }
+.route .path { fill: none; stroke: var(--accent); stroke-width: 2.4; stroke-dasharray: 2 9; stroke-linecap: round; }
+.route .land { fill: var(--nar-soft); stroke: var(--nar); stroke-width: 1.5; }
+.route .land2 { fill: var(--fun-soft); stroke: var(--fun); stroke-width: 1.5; }
+.route .stop { fill: var(--surface); stroke: var(--accent); stroke-width: 2; }
+.route .plane { fill: var(--plane); }
+.route text { font-family: var(--f-body); font-size: 12.5px; fill: var(--muted); }
+.route text.big { font-family: var(--f-display); font-size: 14px; font-weight: 700; fill: var(--ink); }
+
+/* sections */
+section > .sh { display: grid; gap: 12px; margin-bottom: 28px; max-width: var(--measure); }
+.sh .kicker { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.sh h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; letter-spacing: -0.01em; }
+.sh p { font-size: 1.05rem; }
+.prose { display: grid; gap: 16px; max-width: var(--measure); }
+
+.principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 26px; }
+.principle { background: var(--surface); border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow); display: grid; gap: 8px; align-content: start; }
+.principle h3 { font-size: 1.08rem; }
+.principle p { color: var(--ink); font-size: 0.96rem; }
+
+/* numbers */
+.numbers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+@media (max-width: 900px) { .numbers { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .numbers { grid-template-columns: minmax(0, 1fr); } }
+.num { padding: 22px 20px 24px 0; border-bottom: 1px solid var(--line); display: grid; gap: 8px; align-content: start; }
+.num b { font-family: var(--f-display); font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; letter-spacing: -0.02em; color: var(--accent-deep); font-variant-numeric: tabular-nums; line-height: 1; }
+.num p { font-size: 0.96rem; max-width: 34ch; }
+.num .so { color: var(--muted); font-size: 0.88rem; }
+
+/* session strip */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; counter-reset: step; }
+@media (max-width: 1000px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .steps { grid-template-columns: minmax(0, 1fr); } }
+.steps li { background: var(--surface); border-radius: 14px; padding: 14px 14px 16px; box-shadow: var(--shadow); display: grid; gap: 6px; align-content: start; counter-increment: step; position: relative; }
+.steps li::before { content: counter(step); font-family: var(--f-display); font-weight: 800; font-size: 0.82rem; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent-deep); }
+.steps h3 { font-size: 1rem; }
+.steps p { font-size: 0.88rem; }
+.steps .rs { font-size: 0.78rem; color: var(--muted); }
+.steps .rs a { color: var(--muted); }
+
+/* strands */
+.strands { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 900px) { .strands { grid-template-columns: minmax(0, 1fr); } }
+.strand { border-radius: var(--radius); overflow: hidden; background: var(--surface); box-shadow: var(--shadow); display: grid; align-content: start; }
+.strand header { padding: 16px 20px 14px; display: grid; gap: 2px; }
+.strand.f header { background: var(--fun-soft); color: var(--fun-deep); }
+.strand.n header { background: var(--nar-soft); color: var(--nar-deep); }
+.strand.p header { background: var(--phi-soft); color: var(--phi-deep); }
+.strand header small { font-weight: 700; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.strand header h3 { font-size: 1.3rem; }
+.strand .body { padding: 16px 20px 20px; display: grid; gap: 10px; }
+.strand .body p { font-size: 0.96rem; }
+.strength { display: inline-flex; gap: 8px; align-items: center; font-weight: 700; font-size: 0.9rem; }
+.dots { display: inline-flex; gap: 4px; }
+.dots i { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--muted); display: block; }
+.dots i.on { background: var(--ink); border-color: var(--ink); }
+
+/* findings */
+.legend { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; font-size: 0.9rem; color: var(--muted); margin-bottom: 8px; }
+.filter { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+.filter button { font: inherit; font-size: 0.88rem; font-weight: 700; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.filter button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.theme { display: grid; gap: 16px; padding-top: 34px; }
+.theme > header { display: grid; gap: 6px; max-width: var(--measure); }
+.theme > header h3 { font-size: 1.35rem; }
+.theme > header p { color: var(--muted); }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 14px; }
+.finding { background: var(--surface); border-radius: 16px; padding: 18px 20px 18px; box-shadow: var(--shadow); display: grid; gap: 10px; align-content: start; scroll-margin-top: 24px; }
+.finding .top { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.code { font-family: var(--f-display); font-weight: 800; font-size: 0.84rem; color: var(--accent-deep); background: var(--accent-soft); border-radius: 8px; padding: 2px 8px; font-variant-numeric: tabular-nums; }
+.status { font-size: 0.78rem; font-weight: 700; padding: 2px 9px; border-radius: 999px; }
+.status.built { background: var(--good-soft); color: var(--good-deep); }
+.status.planned { background: var(--fun-soft); color: var(--fun-deep); }
+.finding h4 { font-size: 1.06rem; }
+.finding .claim { font-size: 0.95rem; }
+.finding .does { font-size: 0.93rem; background: var(--surface-2); border-radius: 10px; padding: 10px 12px; }
+.finding .does b { display: block; font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.finding .src { font-size: 0.84rem; color: var(--muted); }
+.finding .src a { color: var(--muted); }
+.finding .src a:hover { color: var(--accent); }
+
+/* choices and measuring */
+.twocol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 820px) { .twocol { grid-template-columns: minmax(0, 1fr); } }
+.plainlist { margin: 0; padding: 0; list-style: none; display: grid; gap: 0; border-top: 1px solid var(--line); }
+.plainlist li { padding: 12px 0; border-bottom: 1px solid var(--line); display: grid; gap: 2px; }
+.plainlist li b { font-weight: 700; }
+.plainlist li span { font-size: 0.95rem; }
+.phases { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.phases li { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: 12px; align-items: start; background: var(--surface); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); }
+.phases .n { font-family: var(--f-display); font-weight: 800; font-size: 1.1rem; color: var(--accent-deep); }
+.phases b { display: block; }
+.phases span { font-size: 0.93rem; }
+.phases em { font-style: normal; color: var(--muted); font-size: 0.88rem; display: block; margin-top: 3px; }
+
+.callout { background: var(--accent-soft); color: var(--ink); border-radius: var(--radius); padding: 20px 22px; display: grid; gap: 8px; max-width: var(--measure); }
+.callout h3 { font-size: 1.05rem; color: var(--accent-deep); }
+
+/* sources */
+.biblio { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 40px; }
+@media (max-width: 900px) { .biblio { grid-template-columns: minmax(0, 1fr); } }
+.biblio section { display: grid; gap: 8px; align-content: start; padding-top: 18px; }
+.biblio h3 { font-size: 1rem; }
+.biblio ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 7px; font-size: 0.88rem; }
+.biblio li { overflow-wrap: anywhere; }
+
+footer { border-top: 1px solid var(--line); padding-top: 24px; color: var(--muted); font-size: 0.9rem; display: grid; gap: 8px; max-width: var(--measure); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .route .plane { animation: drift 9s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+  @keyframes drift { from { transform: translate(0, 0) rotate(-8deg); } to { transform: translate(0, -4px) rotate(-4deg); } }
+}
+@media print { .toc, .filter { display: none; } .finding, .strand, .principle, .steps li, .phases li { box-shadow: none; border: 1px solid #999; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#start">Skip to the page</a>
+<div class="page">
+  <nav class="toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#start">The short version</a></li>
+      <li><a href="#numbers">Six numbers</a></li>
+      <li><a href="#session">How a session runs</a></li>
+      <li><a href="#strands">Three kinds of reading</a></li>
+      <li><a href="#findings">The thirty findings</a></li>
+      <li><a href="#choices">Our own choices</a></li>
+      <li><a href="#measure">How we will know</a></li>
+      <li><a href="#content">Content and privacy</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ol>
+  </nav>
+
+  <main id="main">
+    <header class="hero">
+      <p class="eyebrow">Learning to Fly · research notes</p>
+      <h1>The research behind Learning to Fly</h1>
+      <p class="lede">Learning to Fly is a free reading game for autistic children. This page sets out what the studies say about teaching reading comprehension to autistic learners, how each finding shapes the app, and where the evidence runs out.</p>
+      <div class="meta"><span>Reviewed 12 October 2026</span><span>30 findings</span><span>65 sources</span><span>Checked weekly for new studies</span></div>
+      <svg class="route" viewBox="0 0 820 150" role="img" aria-labelledby="route-t">
+        <title id="route-t">The journey in the app: from Home Island to Australia, one finished session at a time</title>
+        <path class="sea" d="M0 128 H820"/>
+        <path class="land" d="M18 120 C 30 92, 92 84, 128 104 C 150 116, 142 128, 120 128 L 26 128 C 14 128, 12 124, 18 120 Z"/>
+        <path class="land2" d="M676 118 C 690 86, 772 80, 804 106 C 816 116, 812 128, 796 128 L 690 128 C 676 128, 672 124, 676 118 Z"/>
+        <path class="path" d="M96 98 C 220 18, 330 22, 410 54 S 610 20, 724 92"/>
+        <circle class="stop" cx="96" cy="98" r="6"/><circle class="stop" cx="252" cy="36" r="5"/><circle class="stop" cx="406" cy="53" r="5"/><circle class="stop" cx="574" cy="57" r="5"/><circle class="stop" cx="724" cy="92" r="6"/>
+        <g transform="translate(490 62) rotate(-3)"><path class="plane" d="M16 0 L-10 -7 L-6 -1 L-16 -4 L-13 1 L-6 2 L-10 9 Z"/></g>
+        <text class="big" x="30" y="146">Home Island</text>
+        <text x="220" y="22">Gull Island</text>
+        <text x="376" y="80">Windy Cape</text>
+        <text x="524" y="40">Cloud Hill Airfield</text>
+        <text class="big" x="712" y="146">Australia</text>
+      </svg>
+    </header>
+
+    <section id="start" aria-labelledby="start-h">
+      <div class="sh"><p class="kicker">The short version</p><h2 id="start-h">Comprehension can be taught. Software alone rarely teaches it.</h2></div>
+      <div class="prose">
+        <p>Autistic children can learn to understand what they read when teaching is explicit, visual and well prompted. The studies that show this are mostly small: many follow fewer than ten children, and very few meet the What Works Clearinghouse standards for strong evidence. No study has tested a program like this one as a whole.</p>
+        <p>So the app does three things. It builds each part on a technique that has been tested. It keeps a grown-up in the loop, because the software trials that worked were the ones with an adult beside the child. And it measures its own effect for each learner before anyone claims it works.</p>
+      </div>
+      <div class="principles">
+        <article class="principle"><h3>Teach it out loud, then fade the help</h3><p>Every skill is shown, practised with help, then done alone. Hints wait, then step from a light clue to the full answer. <a href="#r3">R3</a>, <a href="#r6">R6</a></p></article>
+        <article class="principle"><h3>Place by profile, not by age</h3><p>Autistic readers vary from floor to ceiling, so the app checks word reading, reading and listening separately before it starts. <a href="#r1">R1</a></p></article>
+        <article class="principle"><h3>Reward effort, never scores</h3><p>The journey moves with finished sessions, and points come from every answer, right or not. There are no leaderboards, timers or lives. <a href="#r9">R9</a></p></article>
+      </div>
+    </section>
+
+    <section id="numbers" aria-labelledby="numbers-h">
+      <div class="sh"><p class="kicker">Six numbers</p><h2 id="numbers-h">The figures that shaped the design</h2></div>
+      <div class="numbers">
+        <div class="num"><b>0.7 SD</b><p>How far autistic readers averaged below their peers in comprehension across 36 studies. Individual scores ran from the floor to the ceiling.</p><p class="so">So the app places each reader by profile. <a href="#r1">R1</a></p></div>
+        <div class="num"><b>26 sessions</b><p>The one-to-one dose at which a web program raised comprehension. A 16-hour online version of the same program found no gain.</p><p class="so">So it is judged after 25 sessions, with an adult involved. <a href="#r7">R7</a></p></div>
+        <div class="num"><b>.95 vs .80</b><p>Effect sizes (Tau-U) in technology-aided reading studies with a wait before the prompt, and without one. The wait was the only feature that mattered.</p><p class="so">So the hint wait becomes a fixed, logged rule. <a href="#r17">R17</a></p></div>
+        <div class="num"><b>1 in 2</b><p>Roughly how many autistic participants had marked difficulty naming their own feelings, against about 1 in 20 others.</p><p class="so">So understanding a feeling never waits on putting it into words. <a href="#r15">R15</a></p></div>
+        <div class="num"><b>86%</b><p>The share of feelings that autistic teenagers recounting their day mentioned only when asked directly.</p><p class="so">So the daily recount always asks how it felt. <a href="#r20">R20</a></p></div>
+        <div class="num"><b>5%</b><p>The share of AI-drafted stories that matched human writers on sentence-to-sentence coherence, though most passed readability checks.</p><p class="so">So every drafted text is checked and reviewed. <a href="#r19">R19</a></p></div>
+      </div>
+    </section>
+
+    <section id="session" aria-labelledby="session-h">
+      <div class="sh"><p class="kicker">How a session runs</p><h2 id="session-h">Seven steps, the same every time</h2><p>A session takes about ten minutes and can be stopped at any point without losing anything. A wrong answer never ends an item or shows a red cross: it opens the next hint.</p></div>
+      <ol class="steps">
+        <li><h3>Plan</h3><p>A picture schedule shows today's steps and how many are left.</p><p class="rs"><a href="#r4">R4</a> · <a href="#r13">R13</a></p></li>
+        <li><h3>Choose</h3><p>The learner picks where to go from two or three places.</p><p class="rs"><a href="#r8">R8</a></p></li>
+        <li><h3>Warm up</h3><p>A few quick questions on earlier skills, so they keep coming back.</p><p class="rs"><a href="#r15">R15</a> · <a href="#choices">our choice</a></p></li>
+        <li><h3>Watch</h3><p>The guide works one example while thinking aloud. It drops out once the skill is shown.</p><p class="rs"><a href="#r3">R3</a> · <a href="#r24">R24</a></p></li>
+        <li><h3>Together</h3><p>Two or three items where hints wait, then step up.</p><p class="rs"><a href="#r6">R6</a> · <a href="#r17">R17</a></p></li>
+        <li><h3>Your turn</h3><p>New items done alone. Only these count toward mastery.</p><p class="rs"><a href="#r3">R3</a> · <a href="#r12">R12</a></p></li>
+        <li><h3>Finish</h3><p>Praise that names the skill, something new for the island, and a talk prompt for the grown-up.</p><p class="rs"><a href="#r9">R9</a> · <a href="#r7">R7</a></p></li>
+      </ol>
+    </section>
+
+    <section id="strands" aria-labelledby="strands-h">
+      <div class="sh"><p class="kicker">Three kinds of reading</p><h2 id="strands-h">Some strands stand on firmer ground than others</h2><p>The app teaches three kinds of reading, each a region of the learner's island. The evidence behind them is uneven, and the design says so.</p></div>
+      <div class="strands">
+        <article class="strand f"><header><small>Harbor Town</small><h3>Reading to do</h3></header><div class="body">
+          <p>Signs, steps, timetables, labels, messages and on-screen prompts. Each item ends in an action, like choosing the right door.</p>
+          <span class="strength"><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>Solid for words, thin on carry-over</span>
+          <p>Teaching sight words and warning labels is well established, but few studies checked whether the skill carried into daily life. So every skill is checked in a new setting. <a href="#r6">R6</a>, <a href="#r26">R26</a></p>
+        </div></article>
+        <article class="strand n"><header><small>Story Woods</small><h3>Reading to follow a story</h3></header><div class="body">
+          <p>Who, where and when, order, causes, pronouns, feelings and the main idea, plus a daily recount of the learner's own day.</p>
+          <span class="strength"><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>The most autism-specific research</span>
+          <p>Explicit teaching, story maps and pronoun cueing all have autism studies behind them, though most are small. <a href="#r3">R3</a>, <a href="#r4">R4</a>, <a href="#r5">R5</a></p>
+        </div></article>
+        <article class="strand p"><header><small>Lantern Peaks</small><h3>Reading to think about life</h3></header><div class="body">
+          <p>Stories and true accounts about joy, loss, fairness, courage and what matters. It opens behind a gate.</p>
+          <span class="strength"><span class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></span>The least proven, so it is an experiment</span>
+          <p>Texts about inner lives are harder for autistic readers, inference is the weak point at this age, and classroom philosophy trials are mixed. <a href="#r10">R10</a>, <a href="#r14">R14</a>, <a href="#r15">R15</a></p>
+        </div></article>
+      </div>
+    </section>
+
+    <section id="findings" aria-labelledby="findings-h">
+      <div class="sh"><p class="kicker">The thirty findings</p><h2 id="findings-h">Each study, and what the app does with it</h2><p>Each finding sets a design rule, numbered R1 to R30. R1 to R16 came from the first evidence review. R17 to R30 came from the October 2026 research scan and are approved features on the way.</p></div>
+      <div class="legend">
+        <span><span class="status built">In the app</span> built and running</span>
+        <span><span class="status planned">Planned</span> approved in the backlog, with its feature number</span>
+        <div class="filter" role="group" aria-label="Show findings">
+          <button type="button" data-f="all" aria-pressed="true">All</button>
+          <button type="button" data-f="built" aria-pressed="false">In the app</button>
+          <button type="button" data-f="planned" aria-pressed="false">Planned</button>
+        </div>
+      </div>
+
+      <div class="theme" id="t-placing"><header><h3>Placing each reader</h3><p>Autistic readers differ more from one another than from anyone else. Where a learner starts depends on what they can already do.</p></header><div class="cards">
+        <article class="finding" id="r1" data-s="built"><div class="top"><span class="code">R1</span><span class="status built">In the app</span></div><h4>Reading profile, not diagnosis, predicts comprehension</h4>
+          <p class="claim">Across 36 studies, autistic readers averaged 0.7 standard deviations below their peers, with word-meaning knowledge and decoding the strongest predictors. Individual scores ran from floor to ceiling.</p>
+          <p class="does"><b>In Learning to Fly</b>A scouting trip checks word reading, reading comprehension and listening comprehension separately, sets a starting step for each strand, and turns on read-aloud when listening beats reading.</p>
+          <p class="src"><a href="https://link.springer.com/article/10.1007/s10803-012-1638-1">Brown et al., 2013</a> · <a href="https://eric.ed.gov/?id=EJ748110">Nation et al., 2006</a></p></article>
+        <article class="finding" id="r2" data-s="built"><div class="top"><span class="code">R2</span><span class="status built">In the app</span></div><h4>Texts about people's minds are harder</h4>
+          <p class="claim">Texts that depend on social knowledge are harder for autistic readers than less social texts.</p>
+          <p class="does"><b>In Learning to Fly</b>Every passage is tagged for social load, from none to "depends on reading people", and feelings and intentions are taught on purpose rather than assumed.</p>
+          <p class="src"><a href="https://link.springer.com/article/10.1007/s10803-012-1638-1">Brown et al., 2013</a></p></article>
+        <article class="finding" id="r22" data-s="planned"><div class="top"><span class="code">R22</span><span class="status planned">Planned · LTF-03, 09, 13</span></div><h4>The language underneath comprehension</h4>
+          <p class="claim">Grammar, listening comprehension and vocabulary predict autistic children's reading comprehension. Readers with weaker working memory or oral language understood more when pronouns were replaced by repeated names, and digital pronoun cues gave higher accuracy than paper ones. Autistic children found "know" against "think" harder than their peers did.</p>
+          <p class="does"><b>Planned</b>A short grammar stop in scouting, tap-to-see help for "he" and "she" with an option to repeat names instead, and new items that set "knows" against "only thinks".</p>
+          <p class="src"><a href="https://ifp.nyu.edu/2026/journal-article-abstracts/1471-3802-70094/">O'Leary et al., 2026</a> · <a href="https://link.springer.com/article/10.1007/s11145-026-10864-8">Herrero-Roig et al., 2026</a> · <a href="https://journals.sagepub.com/doi/full/10.1177/23969415251371544">Kritsotakis &amp; Morfidi, 2025</a> · <a href="https://link.springer.com/article/10.1007/s11145-026-10824-2">Courteau et al., 2026</a> · <a href="https://eric.ed.gov/?id=EJ1512266">Jozwik &amp; O'Quin, 2026</a> · <a href="https://link.springer.com/article/10.1007/s10803-025-06895-9">Eilon &amp; Novogrodsky, 2025</a></p></article>
+      </div></div>
+
+      <div class="theme" id="t-teaching"><header><h3>Teaching each skill</h3><p>The strongest single message across the reviews: show the skill, practise it with help, then let the learner do it alone, with pictures doing much of the work.</p></header><div class="cards">
+        <article class="finding" id="r3" data-s="built"><div class="top"><span class="code">R3</span><span class="status built">In the app</span></div><h4>Explicit teaching works best</h4>
+          <p class="claim">Direct, explicit instruction is the most-used method in the intervention studies and is rated highly effective.</p>
+          <p class="does"><b>In Learning to Fly</b>Every skill is shown in Watch, practised with help in Together, then done alone in Your turn. The demo drops out once the learner has shown the skill.</p>
+          <p class="src"><a href="https://www.mdpi.com/2076-328X/11/1/3">Tárraga-Mínguez et al., 2021</a> · <a href="https://apps.asha.org/EvidenceMaps/Articles/ArticleSummary/798031f1-cac6-4ad5-97c5-d6d1c53b12e5">Finnegan &amp; Mazin, 2016</a> · <a href="https://ncaep.fpg.unc.edu/wp-content/uploads/EBP-Report-2020.pdf">Steinbrenner et al., 2020</a></p></article>
+        <article class="finding" id="r4" data-s="built"><div class="top"><span class="code">R4</span><span class="status built">In the app</span></div><h4>Visual supports carry the most weight</h4>
+          <p class="claim">Graphic organizers and visually cued instruction scored highest in two reviews. Story maps and story-grammar icons improved quiz scores and retells in small studies.</p>
+          <p class="does"><b>In Learning to Fly</b>Answers are given through story maps, sequence strips and sorting, as the main way to answer rather than an add-on.</p>
+          <p class="src"><a href="https://apps.asha.org/EvidenceMaps/Articles/ArticleSummary/798031f1-cac6-4ad5-97c5-d6d1c53b12e5">Finnegan &amp; Mazin, 2016</a> · <a href="https://apps.asha.org/EvidenceMaps/Articles/ArticleSummary/37f47507-2143-410d-8e6c-13070edfb664">Singh et al., 2021</a> · <a href="https://eric.ed.gov/?id=EJ947195">Stringfield et al., 2011</a> · <a href="https://www.mdpi.com/2076-328X/15/8/1020">Spencer &amp; Kirby, 2025</a></p></article>
+        <article class="finding" id="r6" data-s="built"><div class="top"><span class="code">R6</span><span class="status built">In the app</span></div><h4>Prompting and waiting are established practice</h4>
+          <p class="claim">Prompting, time delay, modelling and reinforcement reliably teach sight words, and taught warning-label words along with their meaning. But word-reading studies rarely measured wider literacy, and transfer to new settings was incomplete.</p>
+          <p class="does"><b>In Learning to Fly</b>Hints wait, then step from a light clue to the full answer. Functional words come with their meaning and use, and every skill is checked in a new format or setting before it counts as mastered.</p>
+          <p class="src"><a href="https://ncaep.fpg.unc.edu/wp-content/uploads/EBP-Report-2020.pdf">Steinbrenner et al., 2020</a> · <a href="https://journals.sagepub.com/doi/10.1177/001440290607200401">Browder et al., 2006</a> · <a href="https://eric.ed.gov/?id=EJ939843">Spector, 2011</a> · <a href="https://eric.ed.gov/?id=EJ942469">Dogoe et al., 2011</a></p></article>
+        <article class="finding" id="r17" data-s="planned"><div class="top"><span class="code">R17</span><span class="status planned">Planned · LTF-01</span></div><h4>The wait is the active ingredient</h4>
+          <p class="claim">In 13 quality-screened single-case studies of technology-aided reading, time delay was the only feature that significantly raised effects (Tau-U .95 with it, .80 without). Device, age and outcome type made no difference.</p>
+          <p class="does"><b>Planned</b>The wait before each hint becomes a fixed rule, logged with every answer so the learner's own record shows whether it helps. The first item on a brand-new skill shows the clue at once.</p>
+          <p class="src"><a href="https://journals.sagepub.com/doi/10.1177/10883576241267963">Kim et al., 2025</a></p></article>
+        <article class="finding" id="r24" data-s="planned"><div class="top"><span class="code">R24</span><span class="status planned">Planned · LTF-02</span></div><h4>Thinking aloud about why people act</h4>
+          <p class="claim">Four autistic 10-to-11-year-olds gained 40 to 56 percentage points on questions about why characters say or do things, when teaching combined think-alouds, error-correction prompts and a graphic organizer.</p>
+          <p class="does"><b>Planned</b>The reasoning shown in the worked example carries into the hints as a three-box card: the clue, what I know about people, and so what they probably feel.</p>
+          <p class="src"><a href="https://link.springer.com/article/10.1007/s10803-025-07148-5">Wang &amp; Poon, 2026</a></p></article>
+        <article class="finding" id="r27" data-s="planned"><div class="top"><span class="code">R27</span><span class="status planned">Planned · LTF-15</span></div><h4>On screen is not the same as on paper</h4>
+          <p class="claim">Pictures and story maps raised comprehension across 5 single-case studies (Tau-U 0.85), but on-screen versions gave more variable results.</p>
+          <p class="does"><b>Planned</b>A report shows which question types work for each learner, at the same skill and level, and a printable paper story map stays an option.</p>
+          <p class="src"><a href="https://link.springer.com/article/10.1007/s10803-025-07014-4">Lee, Quinn &amp; Jiang, 2025</a></p></article>
+      </div></div>
+
+      <div class="theme" id="t-words"><header><h3>Words, pronouns and figures of speech</h3><p>Some of the most practical gains come from small targets: who a pronoun means, what a word means, and what one small word like "some" does to a sentence.</p></header><div class="cards">
+        <article class="finding" id="r5" data-s="built"><div class="top"><span class="code">R5</span><span class="status built">In the app</span></div><h4>Cue the pronoun, ask your own questions</h4>
+          <p class="claim">Cueing what a pronoun refers to, and having the child generate questions, both helped. With 20 adolescents, pronoun cueing was the only one of three aids with a significant effect.</p>
+          <p class="does"><b>In Learning to Fly</b>A whole step practises who "he", "she", "it" and "they" mean, with the pronoun marked in the text, and items ask the learner to work with questions about the text.</p>
+          <p class="src"><a href="https://link.springer.com/article/10.1023/B:JADD.0000022603.44077.6b">O'Connor &amp; Klein, 2004</a> · <a href="https://eric.ed.gov/?id=EJ804651">Whalon &amp; Hanline, 2008</a></p></article>
+        <article class="finding" id="r23" data-s="planned"><div class="top"><span class="code">R23</span><span class="status planned">Planned · LTF-04</span></div><h4>Vocabulary teaching works on a screen</h4>
+          <p class="claim">Across 31 studies with 440 autistic students aged 3 to 14, vocabulary teaching worked whether an adult, a computer or a peer gave it, and comprehension improved when it was targeted.</p>
+          <p class="does"><b>Planned</b>Tap a hard word in a harder text for a picture and a plain meaning, read aloud. The words the learner taps come back in later warm-ups.</p>
+          <p class="src"><a href="https://eric.ed.gov/?id=EJ1475591">Intepe et al., 2025</a></p></article>
+        <article class="finding" id="r25" data-s="planned"><div class="top"><span class="code">R25</span><span class="status planned">Planned · LTF-10, 11</span></div><h4>"Some" can be harder than a metaphor</h4>
+          <p class="claim">On tablet tasks, autistic children matched their peers on metaphor but did worse when "some" meant "not all". Metaphor teaching carried over to new metaphors when it marked what the two things share; idiom teaching stayed item by item.</p>
+          <p class="does"><b>Planned</b>Items built around "some", "only" and "all" in real signs and steps, a three-box map for metaphors (what it is like, what they share, so what it means), and idioms taught as words.</p>
+          <p class="src"><a href="https://eric.ed.gov/?id=EJ1517530">Petit et al., 2026</a> · <a href="https://www.mdpi.com/2076-328X/15/11/1556">Skogli-Christensen et al., 2025</a> · <a href="https://link.springer.com/article/10.1007/s10803-025-07142-x">Wei et al., 2025</a> · <a href="https://eric.ed.gov/?id=EJ1479439">Hu et al., 2025</a></p></article>
+      </div></div>
+
+      <div class="theme" id="t-feelings"><header><h3>Feelings and inference</h3><p>Reading about what people feel and want is the hard part for older autistic readers, and it is the doorway to the thinking strand.</p></header><div class="cards">
+        <article class="finding" id="r14" data-s="built"><div class="top"><span class="code">R14</span><span class="status built">In the app</span></div><h4>Inference lags behind retelling</h4>
+          <p class="claim">In 81 autistic 8-to-16-year-olds, retelling was a relative strength while inference fell far below average, and both predicted later reading comprehension. In another study, autistic readers made emotion inferences while reading but struggled to answer direct questions about them.</p>
+          <p class="does"><b>In Learning to Fly</b>Understanding is checked by choosing and pointing before any explaining. The thinking strand opens only after an inference check on stories the learner has never seen.</p>
+          <p class="src"><a href="https://doi.org/10.1177/2396941520968028">McIntyre et al., 2020</a> · <a href="https://doi.org/10.1007/s10803-015-2648-6">Tirado &amp; Saldaña, 2016</a></p></article>
+        <article class="finding" id="r15" data-s="built"><div class="top"><span class="code">R15</span><span class="status built">In the app</span></div><h4>Putting feelings into words is hard for many</h4>
+          <p class="claim">About half of autistic participants, against about 5% of others, scored as having marked difficulty identifying and describing their own feelings. Across 22 trials, taught emotion and perspective skills often did not last or carry over, and the evidence was low quality.</p>
+          <p class="does"><b>In Learning to Fly</b>Understanding and expressing are separate tiers. Expressing is supported and tracked but never required to move on, and every mastered skill comes back for review.</p>
+          <p class="src"><a href="https://www.psy.ox.ac.uk/publications/publication_modal/2344580">Kinnaird et al., 2019</a> · <a href="https://www.cochrane.org/evidence/CD008785_review-evidence-use-interventions-people-autism-spectrum-disorder-based-psychological-model-theory">Fletcher-Watson et al., 2014</a></p></article>
+      </div></div>
+
+      <div class="theme" id="t-today"><header><h3>Telling about today</h3><p>Saying what happened at school is a skill of its own. The story map that organizes a story can organize a day, so every narrative step is practised twice: once on a text, once on the learner's own day.</p></header><div class="cards">
+        <article class="finding" id="r16" data-s="built"><div class="top"><span class="code">R16</span><span class="status built">In the app</span></div><h4>Telling about one's day can be taught</h4>
+          <p class="claim">Autistic 8-to-17-year-olds recalled fewer specific personal memories than matched peers and needed more prompts, though memory for recent events was intact. Children who retold model stories and then their own, with visual support faded out, improved their personal narratives, though the gains held unevenly.</p>
+          <p class="does"><b>In Learning to Fly</b>A daily "Today" recount: the school timetable as cards, specific questions answered with tiles, sentences built from the answers, a prompt card for the grown-up, and supports faded slowly.</p>
+          <p class="src"><a href="https://doi.org/10.1017/S0954579413000904">Goddard et al., 2014</a> · <a href="https://pubs.asha.org/doi/10.1044/2013_LSHSS-12-0099">Petersen et al., 2014</a> · <a href="https://digital.lib.washington.edu/researchworks/handle/1773/33741">Gauvreau, 2015</a></p></article>
+        <article class="finding" id="r20" data-s="planned"><div class="top"><span class="code">R20</span><span class="status planned">Planned · LTF-05, 06</span></div><h4>Ask what happened next, and how it felt</h4>
+          <p class="claim">Autistic 11-to-17-year-olds journaling their day gave the setting and the main event unprompted, but about 60% of what happened next and 86% of feelings came only when asked. A four-panel strip helped them remember.</p>
+          <p class="does"><b>Planned</b>Today always asks "What happened after that?" and "How did you feel?", and shows the day as four panels: before, what happened, after, and how it felt.</p>
+          <p class="src"><a href="https://arxiv.org/abs/2509.17466">Yang et al., 2026</a></p></article>
+        <article class="finding" id="r28" data-s="planned"><div class="top"><span class="code">R28</span><span class="status planned">Planned · LTF-07, 08</span></div><h4>Count how much is said, and fade the cues</h4>
+          <p class="claim">Autistic adolescents' retells looked less structured, but the gap mostly disappeared once length was taken into account. Printed cues helped a child report past events, but they were never removed, so no one knows whether the skill held without them.</p>
+          <p class="does"><b>Planned</b>The grown-up sees how much the learner says next to which parts are told. Later stages put the tiles behind a "Show me ideas" button and check answers given without them.</p>
+          <p class="src"><a href="https://journals.sagepub.com/doi/10.1177/01427237251315253">Harvey et al., 2025</a> · <a href="https://link.springer.com/article/10.1007/s40616-025-00218-w">McWilliams &amp; Hanson, 2025</a></p></article>
+        <article class="finding" id="r21" data-s="planned"><div class="top"><span class="code">R21</span><span class="status planned">Planned · LTF-14</span></div><h4>A good retell is not good reading</h4>
+          <p class="claim">In a randomized trial with 21 autistic students, oral narrative training improved spoken storytelling and perspective-taking, but not reading comprehension.</p>
+          <p class="does"><b>Planned</b>Story skills are practised on written text, and an optional check-up flight measures reading on new texts, kept apart from retell and from practice.</p>
+          <p class="src"><a href="https://doi.org/10.47176/mjiri.38.118">Masoumi et al., 2024</a></p></article>
+      </div></div>
+
+      <div class="theme" id="t-doing"><header><h3>Reading to do</h3><p>Functional reading matters most when it changes what the learner does next.</p></header><div class="cards">
+        <article class="finding" id="r26" data-s="planned"><div class="top"><span class="code">R26</span><span class="status planned">Planned · LTF-12</span></div><h4>Understanding a message is not acting on it</h4>
+          <p class="claim">In a randomized pilot, young adults with intellectual or developmental disabilities taught to read texts and emails improved in comprehension, but not in replying to them.</p>
+          <p class="does"><b>Planned</b>Message items end with acting on the message, such as picking the reply that matches the plan, and the report shows understanding and acting as separate lines.</p>
+          <p class="src"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12452825">Prahl et al., 2025</a></p></article>
+      </div></div>
+
+      <div class="theme" id="t-software"><header><h3>Software, motivation and the game</h3><p>The software trials that helped were the ones that carried good teaching with an adult beside the child. The game around it is there to bring the learner back, not to teach.</p></header><div class="cards">
+        <article class="finding" id="r7" data-s="built"><div class="top"><span class="code">R7</span><span class="status built">In the app</span></div><h4>Software carries teaching; it does not replace it</h4>
+          <p class="claim">One web program raised comprehension over 26 one-to-one sessions, but not in school groups or in a 16-hour online version. Pooled effects of group studies are small. A parent-led shared-reading program improved story comprehension in 31 preschoolers.</p>
+          <p class="does"><b>In Learning to Fly</b>A grown-up stays in the loop: a talk prompt after every session, a dashboard and a printable report, and at least 25 sessions before anyone judges whether it works.</p>
+          <p class="src"><a href="https://researchnow.flinders.edu.au/en/publications/effects-of-abracadabra-literacy-instruction-on-children-with-auti/">Bailey et al., 2017</a> · <a href="https://researchnow.flinders.edu.au/en/publications/efficacy-of-abracadabra-literacy-instruction-in-a-school-setting-/">Arciuli &amp; Bailey, 2019</a> · <a href="https://researchnow.flinders.edu.au/en/publications/a-trial-of-online-abracadabra-literacy-instruction-with-supplemen/">Bailey et al., 2022</a> · <a href="https://eric.ed.gov/?id=EJ1361852">Zhang et al., 2023</a> · <a href="https://research.birmingham.ac.uk/en/publications/teaching-children-with-autism-reading-comprehension-skills-using-/">Grindle et al., 2020</a> · <a href="https://hub.hku.hk/handle/10722/287137">Lo &amp; Shum, 2021</a></p></article>
+        <article class="finding" id="r8" data-s="built"><div class="top"><span class="code">R8</span><span class="status built">In the app</span></div><h4>Interests: test them, don't assume them</h4>
+          <p class="claim">Putting one child's special interest into the text improved that child's answers and retell. A later pair of studies with interest-based text gave mixed results.</p>
+          <p class="does"><b>In Learning to Fly</b>Texts lean toward the learner's interests, but one pick in five ignores them on purpose, and the grown-ups' area compares the two.</p>
+          <p class="src"><a href="https://meadowscenter.org/library/embedding-perseverative-interest-of-a-child-with-autism-in-text-may-result-in-improved-reading-comprehension-a-pilot-study/">El Zein et al., 2016</a> · <a href="https://eric.ed.gov/?id=ED634621">Solis et al., 2022</a></p></article>
+        <article class="finding" id="r9" data-s="built"><div class="top"><span class="code">R9</span><span class="status built">In the app</span></div><h4>Reward effort, not performance</h4>
+          <p class="claim">Expected tangible rewards for performance reduce later free-choice interest, while positive feedback raises it. Gamification has small positive effects on learning, and a game story helps behaviour.</p>
+          <p class="does"><b>In Learning to Fly</b>Praise names the skill. The journey moves with finished sessions, flight points come from every answer whether right or not, and there are no leaderboards, timers, lives or breakable streaks.</p>
+          <p class="src"><a href="https://pure.ewha.ac.kr/en/publications/a-meta-analytic-review-of-experiments-examining-the-effects-of-ex/">Deci et al., 1999</a> · <a href="https://eric.ed.gov/?id=EJ1245270">Sailer &amp; Homner, 2020</a></p></article>
+        <article class="finding" id="r30" data-s="planned"><div class="top"><span class="code">R30</span><span class="status planned">Planned · LTF-20</span></div><h4>The game is the wrapper, not the lesson</h4>
+          <p class="claim">Across 24 randomized trials, game-based interventions for autistic children improved social skills and thinking skills but not language, and the social gains were not significant for adolescents.</p>
+          <p class="does"><b>Planned</b>New island routes themed on the learner's interests stay a wrapper. Reading gains are expected from the lessons, and the game never stands in for them.</p>
+          <p class="src"><a href="https://frontiersin.org/journals/pediatrics/articles/10.3389/fped.2025.1498563/abstract">Gao et al., 2025</a></p></article>
+        <article class="finding" id="r13" data-s="built"><div class="top"><span class="code">R13</span><span class="status built">In the app</span></div><h4>Predictable, adjustable, and designed with children</h4>
+          <p class="claim">Design guidance for autistic children's software centres on adapting to the individual, controlling sensory stimulation and keeping the interface predictable. Autistic children can take part in design critique when given the right tools.</p>
+          <p class="does"><b>In Learning to Fly</b>The layout never moves. Sound, motion, colour theme, text size and read-aloud speed are adjustable, and everything can be done by tapping alone.</p>
+          <p class="src"><a href="https://researchprofiles.herts.ac.uk/en/publications/guidelines-for-researchers-and-practitioners-designing-software-a/">Davis et al., 2010</a> · <a href="https://doi.org/10.5753/rbie.2026.7245">Sanmartin et al., 2026</a> · <a href="https://sussex.figshare.com/articles/journal_contribution/Conversing_through_and_about_technologies_design_critique_as_an_opportunity_to_engage_children_with_autism_and_broaden_research_er_perspectives/23394875">Frauenberger et al., 2013</a></p></article>
+        <article class="finding" id="r29" data-s="planned"><div class="top"><span class="code">R29</span><span class="status planned">Planned · LTF-18</span></div><h4>Ask the learner, with pictures</h4>
+          <p class="claim">A review of 24 studies found autistic children took part in research best through sorting, pictures and making things, and were rarely asked to review changes.</p>
+          <p class="does"><b>Planned</b>The first time a feature appears, a one-time card asks "What do you think?" with picture tiles, and the grown-up sees the answers next to each feature.</p>
+          <p class="src"><a href="https://journals.sagepub.com/doi/10.1177/13623613261460932">Johnson et al., 2026</a></p></article>
+      </div></div>
+
+      <div class="theme" id="t-thinking"><header><h3>The thinking strand</h3><p>Reading about joy, loss and fairness is the stretch goal. It is treated as an experiment and earns its place in each learner's own record.</p></header><div class="cards">
+        <article class="finding" id="r10" data-s="built"><div class="top"><span class="code">R10</span><span class="status built">In the app</span></div><h4>Philosophy with children has mixed evidence</h4>
+          <p class="claim">A 48-school trial estimated about two months' extra progress in reading; a 198-school trial found no effect on attainment. One small Scottish project reported autistic pupils taking full part in structured inquiry.</p>
+          <p class="does"><b>In Learning to Fly</b>Lantern Peaks opens only after the core skills are mastered and have lasted, takes at most one session in four, and scores reasoning on a four-step rubric. Hard themes such as loss stay off until a grown-up turns them on.</p>
+          <p class="src"><a href="https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/philosophy-for-children">EEF, 2015</a> · <a href="https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/philosophy-for-children-effectiveness-trial">EEF, 2021</a> · <a href="https://pureportal.strath.ac.uk/en/publications/i-find-it-easier-to-get-on-with-people-when-i-use-philosophy-phil/">Cassidy et al., 2013</a></p></article>
+      </div></div>
+
+      <div class="theme" id="t-ai"><header><h3>AI behind the scenes</h3><p>A language model helps draft content ahead of time. It never talks to the learner and never decides mastery.</p></header><div class="cards">
+        <article class="finding" id="r11" data-s="built"><div class="top"><span class="code">R11</span><span class="status built">In the app</span></div><h4>AI drafts; people and rules decide</h4>
+          <p class="claim">A large model scored children's short reading answers near expert agreement in one study, but a 2026 meta-analysis found such scoring weak overall, and models asked to simplify text struggled to reach a 4th-grade level.</p>
+          <p class="does"><b>In Learning to Fly</b>AI-drafted passages pass a reading-level check and a person's review. Mastery comes only from structured items scored by fixed rules.</p>
+          <p class="src"><a href="https://arxiv.org/abs/2310.18373">Henkel et al., 2023</a> · <a href="https://arxiv.org/abs/2603.04820">Hardy, 2026</a> · <a href="https://arxiv.org/abs/2501.09158">Day et al., 2025</a></p></article>
+        <article class="finding" id="r18" data-s="planned"><div class="top"><span class="code">R18</span><span class="status planned">Planned · LTF-17</span></div><h4>Scoring slips on partly right answers</h4>
+          <p class="claim">AI scorers agree with people on clearly right or wrong answers but slip on partly right ones and on answers people score differently. A 3-level retell rubric reached 0.78 agreement with large hosted models.</p>
+          <p class="does"><b>Planned</b>Before any typed answer is scored, a test set checks agreement separately for clearly right, partly right and clearly wrong answers, with a pass mark in each.</p>
+          <p class="src"><a href="https://aclanthology.org/2025.aimecon-sessions.8/">Henkel et al., 2025</a> · <a href="https://aclanthology.org/2026.bea-1.29/">Gurin Schleifer et al., 2026</a></p></article>
+        <article class="finding" id="r19" data-s="planned"><div class="top"><span class="code">R19</span><span class="status planned">Planned · LTF-16</span></div><h4>Readable is not the same as coherent</h4>
+          <p class="claim">Generated text passes surface checks but misses elsewhere: only 5% of AI-drafted stories matched human writers on sentence-to-sentence coherence, and only 42.6% of generated questions were the inference type asked for. Small fine-tuned models reached early-grade readability better than large models given no examples.</p>
+          <p class="does"><b>Planned</b>New content gets coherence and skill-fit checks as well as the reading-level check, and near-duplicate passages are flagged.</p>
+          <p class="src"><a href="https://aclanthology.org/2026.readi-1.10/">Maheshwary et al., 2026</a> · <a href="https://aclanthology.org/2025.bea-1.31/">Ma et al., 2025</a> · <a href="https://aclanthology.org/2026.bea-1.51/">Shen et al., 2026</a></p></article>
+      </div></div>
+
+      <div class="theme" id="t-measure"><header><h3>Measuring itself</h3><p>Because the evidence is thin, the app has to show its own effect.</p></header><div class="cards">
+        <article class="finding" id="r12" data-s="built"><div class="top"><span class="code">R12</span><span class="status built">In the app</span></div><h4>The evidence base is thin</h4>
+          <p class="claim">Most reading-comprehension studies with autistic learners are small single-case studies, and very few meet What Works Clearinghouse standards.</p>
+          <p class="does"><b>In Learning to Fly</b>A starting point, a record per skill, reviews at about 3, 7 and 21 days, and reports in the grown-ups' area, before anyone claims the app works.</p>
+          <p class="src"><a href="https://link.springer.com/article/10.1007/s40489-020-00200-3">Singh et al., 2021</a> · <a href="https://eric.ed.gov/?id=EJ1361852">Zhang et al., 2023</a></p></article>
+      </div></div>
+    </section>
+
+    <section id="choices" aria-labelledby="choices-h">
+      <div class="sh"><p class="kicker">Our own choices</p><h2 id="choices-h">Decisions no study made for us</h2><p>Some parts of the design are judgement calls, not tested rules. They are listed here so they can be checked against each learner's results and changed if they are wrong.</p></div>
+      <div class="twocol">
+        <ul class="plainlist">
+          <li><b>Mastery</b><span>80% right on the learner's own across two sessions on different days, including one item in a new format or setting.</span></li>
+          <li><b>Reviews</b><span>At about 3, 7 and 21 days. A missed review sends the skill back to practice, and nothing already earned is taken away.</span></li>
+          <li><b>Text levels</b><span>Five per skill. Two first-try answers in a row move up a level, two misses move down, and the hardest levels open only by climbing.</span></li>
+          <li><b>Fast track</b><span>One flawless session with a new format and a harder text can master a skill. Reviews still check that it lasts.</span></li>
+        </ul>
+        <ul class="plainlist">
+          <li><b>The gate to Lantern Peaks</b><span>Five narrative steps and three functional steps mastered and lasting, plus 80% on an inference check with unseen stories.</span></li>
+          <li><b>Demos that drop out</b><span>Once the learner has shown a skill, the worked example is skipped, and every demo has a "Got it, skip" button.</span></li>
+          <li><b>Setbacks on the journey</b><span>A storm or a broken propeller, each with a calm coping line and a choice of plan, to practise staying steady when plans change.</span></li>
+          <li><b>Points and nudges</b><span>Flight points for every answer, right or not. After a long pause the guide offers to read aloud or give a hint.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="measure" aria-labelledby="measure-h">
+      <div class="sh"><p class="kicker">How we will know</p><h2 id="measure-h">One learner first, then a pilot, then a public release</h2><p>The app is built first with one learner at home. It runs as a single-case study: a starting point first, then skills introduced one at a time, so the record shows which skills moved and when. The app also tracks which questions each learner has already seen, so new features are measured only on questions the learner has not seen before.</p></div>
+      <ol class="phases">
+        <li><span class="n">1</span><div><b>Foundations</b><span>Evidence review, family co-design, the skill map and the open content sources.</span><em>Gate: a specialist signs off the skill map.</em></div></li>
+        <li><span class="n">2</span><div><b>Evals first</b><span>Gold test items, AI evaluation sets, failure modes and a privacy review.</span><em>Gate: the AI meets its pass marks and the consent flow is reviewed.</em></div></li>
+        <li><span class="n">3</span><div><b>First slice</b><span>Functional and narrative skills, the lesson loop, the island and a basic dashboard.</span><em>Gate: children finish sessions and ask to come back.</em></div></li>
+        <li><span class="n">4</span><div><b>Full build</b><span>All 18 skills, the content bank, the adaptive engine and interest topics.</span><em>Gate: every skill and level has checked content.</em></div></li>
+        <li><span class="n">5</span><div><b>Pilot</b><span>Proposed: 8 to 12 children for 8 to 12 weeks, each with a starting point, weekly probes per skill, and a standard comprehension test before and after.</span><em>Gate: gains on an outside reading measure, then public release.</em></div></li>
+      </ol>
+    </section>
+
+    <section id="content" aria-labelledby="content-h">
+      <div class="sh"><p class="kicker">Content and privacy</p><h2 id="content-h">Free to read is not the same as free to reuse</h2></div>
+      <div class="twocol">
+        <div class="prose">
+          <p>Every passage comes from public-domain or openly licensed sources, or is written fresh from facts, and each one carries its own credit line. The content bank is published under CC BY-SA 4.0, so anyone can reuse it, and the code is under the MIT License.</p>
+          <p>Several popular free resources are free to read but not free to adapt, and some now bar AI processing in their terms, so they are left out. Examples are Khan Academy, CK-12, OpenStax (CC BY-NC-SA since April 2026), ReadWorks and CommonLit.</p>
+        </div>
+        <div class="callout">
+          <h3>What the app keeps, and where</h3>
+          <p>Every answer is kept on the learner's device; a signed-in family can also keep a private cloud copy. A child profile is a nickname and a guide, with no real name, photo, location or diagnosis. There are no analytics, ads or third-party scripts, and no AI talks to the child.</p>
+          <p>This page follows the same rule: it loads no outside scripts, and its fonts are served from this site.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sources" aria-labelledby="sources-h">
+      <div class="sh"><p class="kicker">Sources</p><h2 id="sources-h">Every study cited above</h2><p>Each paper was checked against its abstract or a published evidence summary. Preprints and workshop papers are named as such.</p></div>
+      <div class="biblio">
+        <section><h3>Reading comprehension and autism</h3><ul>
+          <li>Brown, Oram-Cardy &amp; Johnson (2013). <a href="https://link.springer.com/article/10.1007/s10803-012-1638-1">A meta-analysis of the reading comprehension skills of individuals on the autism spectrum</a>. Journal of Autism and Developmental Disorders, 43(4).</li>
+          <li>Nation, Clarke, Wright &amp; Williams (2006). <a href="https://eric.ed.gov/?id=EJ748110">Patterns of reading ability in children with autism spectrum disorder</a>. Journal of Autism and Developmental Disorders, 36(7).</li>
+          <li>Tárraga-Mínguez, Gómez-Marí &amp; Sanz-Cervera (2021). <a href="https://www.mdpi.com/2076-328X/11/1/3">Interventions for improving reading comprehension in children with ASD: a systematic review</a>. Behavioral Sciences, 11(1).</li>
+          <li>Finnegan &amp; Mazin (2016). <a href="https://apps.asha.org/EvidenceMaps/Articles/ArticleSummary/798031f1-cac6-4ad5-97c5-d6d1c53b12e5">Strategies for increasing reading comprehension skills in students with autism spectrum disorder</a>. Education and Treatment of Children, 39(2).</li>
+          <li>Singh, Moore, Furlonger, Anderson, Fall &amp; Howorth (2021). <a href="https://link.springer.com/article/10.1007/s40489-020-00200-3">Reading comprehension and autism spectrum disorder: a systematic review of interventions involving single-case experimental designs</a>. Review Journal of Autism and Developmental Disorders, 8.</li>
+          <li>Zhang, Prykanowski &amp; Koppenhaver (2023). <a href="https://eric.ed.gov/?id=EJ1361852">Using construction-integration theory to interpret reading comprehension instruction for students with autism spectrum disorder</a>. Reading Research Quarterly, 58(1).</li>
+          <li>Steinbrenner and colleagues (2020). <a href="https://ncaep.fpg.unc.edu/wp-content/uploads/EBP-Report-2020.pdf">Evidence-based practices for children, youth, and young adults with autism</a>. National Clearinghouse on Autism Evidence and Practice.</li>
+          <li>O'Connor &amp; Klein (2004). <a href="https://link.springer.com/article/10.1023/B:JADD.0000022603.44077.6b">Exploration of strategies for facilitating the reading comprehension of high-functioning students with autism spectrum disorders</a>. Journal of Autism and Developmental Disorders, 34(2).</li>
+          <li>Whalon &amp; Hanline (2008). <a href="https://eric.ed.gov/?id=EJ804651">Effects of a reciprocal questioning intervention on the question generation and responding of children with autism spectrum disorder</a>. Education and Training in Developmental Disabilities, 43(3).</li>
+          <li>Stringfield, Luscre &amp; Gast (2011). <a href="https://eric.ed.gov/?id=EJ947195">Effects of a story map on Accelerated Reader postreading test scores in students with high-functioning autism</a>. Focus on Autism and Other Developmental Disabilities, 26(4).</li>
+          <li>Spencer &amp; Kirby (2025). <a href="https://www.mdpi.com/2076-328X/15/8/1020">Effect of narrative intervention with strategy instruction on the listening and reading comprehension of children with autism</a>. Behavioral Sciences, 15(8).</li>
+          <li>Lo &amp; Shum (2021). <a href="https://hub.hku.hk/handle/10722/287137">A randomized controlled trial of the effects of RECALL for preschoolers with autism spectrum disorder</a>. Journal of Autism and Developmental Disorders, 51.</li>
+          <li>Herrero-Roig, Serrano-Mendizábal &amp; Berenguer (2026). <a href="https://link.springer.com/article/10.1007/s11145-026-10864-8">Predictors of reading comprehension in children and adolescents with autism spectrum disorder: a systematic review</a>. Reading and Writing.</li>
+          <li>O'Leary, Paynter &amp; Westerveld (2026). <a href="https://ifp.nyu.edu/2026/journal-article-abstracts/1471-3802-70094/">Predictors of reading comprehension in autistic primary school students: evaluating the direct and indirect effects model of reading</a>. Journal of Research in Special Educational Needs.</li>
+          <li>Kritsotakis &amp; Morfidi (2025). <a href="https://journals.sagepub.com/doi/full/10.1177/23969415251371544">Reading comprehension challenges in autism spectrum disorder: linguistic factors and figurative language proficiency</a>. Autism &amp; Developmental Language Impairments, 10.</li>
+          <li>Courteau, Loignon &amp; Deacon (2026). <a href="https://link.springer.com/article/10.1007/s11145-026-10824-2">Pronouns as facilitators and obstacles of children's reading comprehension: insights from individual differences</a>. Reading and Writing.</li>
+          <li>Jozwik &amp; O'Quin (2026). <a href="https://eric.ed.gov/?id=EJ1512266">Metacognitive monitoring and multimodal cueing to support reading comprehension for multilingual students with developmental disabilities</a>. Journal of Special Education, 60(2).</li>
+          <li>Intepe, Whalon, Kang &amp; Chow (2025). <a href="https://eric.ed.gov/?id=EJ1475591">Systematic literature review of vocabulary interventions for students with autism spectrum disorder</a>. Education and Training in Autism and Developmental Disabilities, 60(2).</li>
+          <li>Masoumi, Soleymani, Modarresi, Maroufizadeh &amp; Mohseni (2024). <a href="https://doi.org/10.47176/mjiri.38.118">The effect of narrative intervention on spoken narrative and reading comprehension abilities in Farsi-speaking children with autism spectrum disorders: a randomized clinical trial</a>. Medical Journal of the Islamic Republic of Iran, 38.</li>
+          <li>Lee, Quinn &amp; Jiang (2025). <a href="https://link.springer.com/article/10.1007/s10803-025-07014-4">The use of pictorial or graphic representation in reading comprehension interventions for students with autism spectrum disorders: a meta-analysis</a>. Journal of Autism and Developmental Disorders.</li>
+        </ul></section>
+        <section><h3>Inference and feelings</h3><ul>
+          <li>McIntyre, Grimm, Solari, Zajic &amp; Mundy (2020). <a href="https://doi.org/10.1177/2396941520968028">Growth in narrative retelling and inference abilities and relations with reading comprehension in children and adolescents with autism spectrum disorder</a>. Autism &amp; Developmental Language Impairments, 5.</li>
+          <li>Tirado &amp; Saldaña (2016). <a href="https://doi.org/10.1007/s10803-015-2648-6">Readers with autism can produce inferences, but they cannot answer inferential questions</a>. Journal of Autism and Developmental Disorders, 46.</li>
+          <li>Kinnaird, Stewart &amp; Tchanturia (2019). <a href="https://www.psy.ox.ac.uk/publications/publication_modal/2344580">Investigating alexithymia in autism: a systematic review and meta-analysis</a>. European Psychiatry, 55.</li>
+          <li>Fletcher-Watson, McConnell, Manola &amp; McConachie (2014). <a href="https://www.cochrane.org/evidence/CD008785_review-evidence-use-interventions-people-autism-spectrum-disorder-based-psychological-model-theory">Interventions based on the Theory of Mind cognitive model for autism spectrum disorder</a>. Cochrane Database of Systematic Reviews.</li>
+          <li>Wang &amp; Poon (2026). <a href="https://link.springer.com/article/10.1007/s10803-025-07148-5">The evaluation of a multiple strategies approach to teach social inferential reading comprehension to elementary students with autism</a>. Journal of Autism and Developmental Disorders.</li>
+          <li>Eilon &amp; Novogrodsky (2025). <a href="https://link.springer.com/article/10.1007/s10803-025-06895-9">The comprehension of cognitive verbs among autistic children</a>. Journal of Autism and Developmental Disorders.</li>
+        </ul>
+        <h3>Non-literal language</h3><ul>
+          <li>Petit, Geoffray Cassar &amp; Baltazar (2026). <a href="https://eric.ed.gov/?id=EJ1517530">Some (but not all) pragmatic inferences are difficult for autistic children</a>. Journal of Autism and Developmental Disorders, 56(9).</li>
+          <li>Skogli-Christensen, Lefstad, Moufack &amp; Chahboun (2025). <a href="https://www.mdpi.com/2076-328X/15/11/1556">Opening new worlds of meaning: a scoping review of figurative language in autism spectrum disorder</a>. Behavioral Sciences, 15(11).</li>
+          <li>Wei, Sun, Liu and colleagues (2025). <a href="https://link.springer.com/article/10.1007/s10803-025-07142-x">Using story-based thinking maps to enhance metaphor comprehension skills in children with autism spectrum disorder</a>. Journal of Autism and Developmental Disorders.</li>
+          <li>Hu, Qu, Lee, Luke &amp; Wang (2025). <a href="https://eric.ed.gov/?id=EJ1479439">Using equivalence-based instruction to improve expression and comprehension of emotional metaphors for children on the autism spectrum</a>. Focus on Autism and Other Developmental Disabilities, 40(3).</li>
+        </ul>
+        <h3>Telling about one's own day</h3><ul>
+          <li>Goddard, Dritschel, Robinson &amp; Howlin (2014). <a href="https://doi.org/10.1017/S0954579413000904">Development of autobiographical memory in children with autism spectrum disorders: deficits, gains, and predictors of performance</a>. Development and Psychopathology.</li>
+          <li>Petersen and colleagues (2014). <a href="https://pubs.asha.org/doi/10.1044/2013_LSHSS-12-0099">Systematic individualized narrative language intervention on the personal narratives of children with autism</a>. Language, Speech, and Hearing Services in Schools, 45(1).</li>
+          <li>Gauvreau (2015). <a href="https://digital.lib.washington.edu/researchworks/handle/1773/33741">How was your day in preschool? Teaching accurate recall to young children with autism using mobile technologies and visual supports</a>. Doctoral thesis, University of Washington.</li>
+          <li>Yang, Lee, Han, Park &amp; Kim (2026). <a href="https://arxiv.org/abs/2509.17466">AUTIVERSE: eliciting autistic adolescents' daily narratives through AI-guided multimodal journaling</a>. CHI '26, ACM.</li>
+          <li>Harvey, Spicer-Cain, Botting &amp; Henry (2025). <a href="https://journals.sagepub.com/doi/10.1177/01427237251315253">Everyday narrative skills in autistic adolescents</a>. First Language, 45(2).</li>
+          <li>McWilliams &amp; Hanson (2025). <a href="https://link.springer.com/article/10.1007/s40616-025-00218-w">The use of partial textual stimuli within an interactive task for increasing reports of past behavior with a child with autism</a>. The Analysis of Verbal Behavior, 41(1).</li>
+        </ul></section>
+        <section><h3>Functional reading</h3><ul>
+          <li>Browder, Wakeman, Spooner, Ahlgrim-Delzell &amp; Algozzine (2006). <a href="https://journals.sagepub.com/doi/10.1177/001440290607200401">Research on reading instruction for individuals with significant cognitive disabilities</a>. Exceptional Children, 72(4).</li>
+          <li>Spector (2011). <a href="https://eric.ed.gov/?id=EJ939843">Sight word instruction for students with autism: an evaluation of the evidence base</a>. Journal of Autism and Developmental Disorders, 41(10).</li>
+          <li>Dogoe, Banda, Lock &amp; Feinstein (2011). <a href="https://eric.ed.gov/?id=EJ942469">Teaching generalized reading of product warning labels to young adults with autism using the constant time delay procedure</a>. Education and Training in Autism and Developmental Disabilities, 46(2).</li>
+          <li>Prahl, Fraze, Kannan, Grauzer &amp; Sturdivant (2025). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12452825">Functional reading activities to motivate and empower for young adults with intellectual or developmental disabilities: a randomized pilot trial</a>. American Journal of Speech-Language Pathology, 34(5).</li>
+        </ul>
+        <h3>Philosophical inquiry</h3><ul>
+          <li>Gorard, Siddiqui &amp; See (2015). <a href="https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/philosophy-for-children">Philosophy for Children: evaluation report</a>. Education Endowment Foundation.</li>
+          <li>Lord, Dirie, Kettlewell &amp; Styles (2021). <a href="https://educationendowmentfoundation.org.uk/projects-and-evaluation/projects/philosophy-for-children-effectiveness-trial">Philosophy for Children: effectiveness trial</a>. Education Endowment Foundation.</li>
+          <li>Cassidy, Marwick, Deeney, McLean &amp; Rogers (2013). <a href="https://pureportal.strath.ac.uk/en/publications/i-find-it-easier-to-get-on-with-people-when-i-use-philosophy-phil/">Philosophy with children, self-regulation and engaged participation for children with emotional-behavioural and social communication difficulties</a>. Conference paper, Scottish Educational Research Association.</li>
+        </ul></section>
+        <section><h3>Technology, interests and motivation</h3><ul>
+          <li>Bailey, Arciuli &amp; Stancliffe (2017). <a href="https://researchnow.flinders.edu.au/en/publications/effects-of-abracadabra-literacy-instruction-on-children-with-auti/">Effects of ABRACADABRA literacy instruction on children with autism spectrum disorder</a>. Journal of Educational Psychology, 109(2).</li>
+          <li>Arciuli &amp; Bailey (2019). <a href="https://researchnow.flinders.edu.au/en/publications/efficacy-of-abracadabra-literacy-instruction-in-a-school-setting-/">Efficacy of ABRACADABRA literacy instruction in a school setting for children with autism spectrum disorders</a>. Research in Developmental Disabilities, 85.</li>
+          <li>Bailey, Sellwood, Rillotta, Raghavendra &amp; Arciuli (2022). <a href="https://researchnow.flinders.edu.au/en/publications/a-trial-of-online-abracadabra-literacy-instruction-with-supplemen/">A trial of online ABRACADABRA literacy instruction with supplementary parent-led shared book reading for children with autism</a>. Research in Developmental Disabilities, 124.</li>
+          <li>Grindle and colleagues (2020). <a href="https://research.birmingham.ac.uk/en/publications/teaching-children-with-autism-reading-comprehension-skills-using-/">Teaching children with autism reading comprehension skills using online reading instruction</a>. Journal of International Special Needs Education, 23(1).</li>
+          <li>Kim, Mason, Rispoli, Davis, Lory, Gregori, Roberts, Whitford &amp; Wang (2025). <a href="https://journals.sagepub.com/doi/10.1177/10883576241267963">A meta-analysis of single-case research on technology-aided reading interventions for students with autism spectrum disorder</a>. Focus on Autism and Other Developmental Disabilities, 40(1).</li>
+          <li>El Zein, Solis, Lang &amp; Kim (2016). <a href="https://meadowscenter.org/library/embedding-perseverative-interest-of-a-child-with-autism-in-text-may-result-in-improved-reading-comprehension-a-pilot-study/">Embedding perseverative interest of a child with autism in text may result in improved reading comprehension: a pilot study</a>. Developmental Neurorehabilitation, 19(3).</li>
+          <li>Solis, Reutebuch, Falcomata, Jimenez &amp; Cravalho (2022). <a href="https://eric.ed.gov/?id=ED634621">Reading intervention for students with ASD in the middle grades</a>. Developmental Neurorehabilitation, 25(1).</li>
+          <li>Deci, Koestner &amp; Ryan (1999). <a href="https://pure.ewha.ac.kr/en/publications/a-meta-analytic-review-of-experiments-examining-the-effects-of-ex/">A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation</a>. Psychological Bulletin, 125(6).</li>
+          <li>Sailer &amp; Homner (2020). <a href="https://eric.ed.gov/?id=EJ1245270">The gamification of learning: a meta-analysis</a>. Educational Psychology Review, 32(1).</li>
+          <li>Gao, Song, Huang, Zhang &amp; Ke (2025). <a href="https://frontiersin.org/journals/pediatrics/articles/10.3389/fped.2025.1498563/abstract">The effect of game-based interventions on children and adolescents with autism spectrum disorder: a systematic review and meta-analysis</a>. Frontiers in Pediatrics, 13.</li>
+          <li>Davis, Dautenhahn, Powell &amp; Nehaniv (2010). <a href="https://researchprofiles.herts.ac.uk/en/publications/guidelines-for-researchers-and-practitioners-designing-software-a/">Guidelines for researchers and practitioners designing software and software trials for children with autism</a>. Journal of Assistive Technologies, 4(1).</li>
+          <li>Sanmartin, Matos &amp; Borges (2026). <a href="https://doi.org/10.5753/rbie.2026.7245">A systematic mapping of the literature on the development of accessible digital interfaces for children with autism spectrum disorder</a>. Revista Brasileira de Informática na Educação, 34.</li>
+          <li>Frauenberger, Good, Alcorn &amp; Pain (2013). <a href="https://sussex.figshare.com/articles/journal_contribution/Conversing_through_and_about_technologies_design_critique_as_an_opportunity_to_engage_children_with_autism_and_broaden_research_er_perspectives/23394875">Conversing through and about technologies</a>. International Journal of Child-Computer Interaction, 1(2).</li>
+          <li>Johnson, Wood, Daley &amp; Iao (2026). <a href="https://journals.sagepub.com/doi/10.1177/13623613261460932">School-based participatory research with autistic children and young people: a systematic review of approaches, methods, and outcomes</a>. Autism.</li>
+        </ul>
+        <h3>AI in scoring and text generation</h3><ul>
+          <li>Henkel, Hills, Roberts &amp; McGrane (2023). <a href="https://arxiv.org/abs/2310.18373">Can LLMs grade short-answer reading comprehension questions?</a> Preprint, arXiv.</li>
+          <li>Hardy (2026). <a href="https://arxiv.org/abs/2603.04820">Autoscoring anticlimax: a meta-analytic understanding of AI's short-answer shortcomings and wording weaknesses</a>. Preprint, arXiv.</li>
+          <li>Day and colleagues (2025). <a href="https://arxiv.org/abs/2501.09158">Evaluating GenAI for simplifying texts for education</a>. Preprint, arXiv.</li>
+          <li>Henkel, Vanacore &amp; Roberts (2025). <a href="https://aclanthology.org/2025.aimecon-sessions.8/">When humans can't agree, neither can machines: the promise and pitfalls of LLMs for formative literacy assessment</a>. AIME-Con 2025, National Council on Measurement in Education.</li>
+          <li>Gurin Schleifer, Ariely, Beigman Klebanov, Salman &amp; Alexandron (2026). <a href="https://aclanthology.org/2026.bea-1.29/">Quality-conditioned agreement in automated short answer scoring: mid-range degradation and the impact of task-specific adaptation</a>. Workshop paper, BEA 2026.</li>
+          <li>Maheshwary, Ganesh &amp; Karumbaiah (2026). <a href="https://aclanthology.org/2026.readi-1.10/">LLM-generated stories for students with significant cognitive disabilities: promise, gaps, and evaluation framework</a>. Workshop paper, READI×TSAR at LREC 2026.</li>
+          <li>Ma, Flor &amp; Wang (2025). <a href="https://aclanthology.org/2025.bea-1.31/">Automatic generation of inference making questions for reading comprehension assessments</a>. Workshop paper, BEA 2025.</li>
+          <li>Shen, Cao, Yao, Gilda, Dorr &amp; Leite (2026). <a href="https://aclanthology.org/2026.bea-1.51/">Children's English reading story generation via supervised fine-tuning of compact LLMs with controllable difficulty and safety</a>. Workshop paper, BEA 2026.</li>
+        </ul></section>
+      </div>
+    </section>
+
+    <footer>
+      <p>Learning to Fly is open source: the code is under the MIT License and the content under CC BY-SA 4.0. <a href="https://github.com/dweissenborn/learning_to_fly">The project on GitHub</a> holds the code, the design plan and <a href="https://github.com/dweissenborn/learning_to_fly/blob/main/docs/why-it-works.md">a shorter version of this page</a>.</p>
+      <p>This page describes research for parents, teachers and builders. It is not medical or clinical advice, and the app does not diagnose anything.</p>
+    </footer>
+  </main>
+</div>
+<script>
+// Progressive enhancement: the page is complete without this. It only filters the findings by status.
+(function () {
+  var buttons = document.querySelectorAll('.filter button');
+  var cards = document.querySelectorAll('.finding');
+  var themes = document.querySelectorAll('.theme');
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var f = b.getAttribute('data-f');
+      buttons.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      cards.forEach(function (c) { c.hidden = f !== 'all' && c.getAttribute('data-s') !== f; });
+      themes.forEach(function (t) { t.hidden = !t.querySelector('.finding:not([hidden])'); });
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -2,6 +2,8 @@
 
 Learning to Fly is a reading game for autistic children. It is a local-first web app: it works offline, installs to a home screen, and keeps every answer on the device. On the live site, a signed-in family also gets a private cloud copy, so a learner carries on from any device.
 
+**[The research behind Learning to Fly](https://dweissenborn.github.io/learning_to_fly/)** sets out every study the design rests on, what the app does with each one, and where the evidence is thin.
+
 The learner starts on Home Island and builds it up: each finished session adds one thing to it, and three paths across the island light up as skills are mastered.
 
 - **Harbor Town** is reading to do: signs, steps, timetables, labels, messages, on-screen prompts.
@@ -57,7 +59,7 @@ pipeline/.venv/Scripts/python pipeline/check.py
 
 That checks the reading level of every prose passage. Create the venv once with `python -m venv pipeline/.venv` and `pipeline/.venv/Scripts/pip install -r pipeline/requirements.txt`.
 
-[Why it works](docs/why-it-works.md) links each feature to the research behind it, and says which choices are ours rather than a study's.
+[Why it works](docs/why-it-works.md) links each feature to the research behind it, and says which choices are ours rather than a study's. The [research page](https://dweissenborn.github.io/learning_to_fly/) goes into each study in depth.
 
 ## Layout
 
@@ -71,8 +73,11 @@ That checks the reading level of every prose passage. Create the venv once with 
 | `api/` | The cloud copy's API: managed Azure Functions over Cosmos DB, with tests |
 | `pipeline/` | The reading-level check |
 | `e2e/` | End-to-end and accessibility tests |
+| `site/` | The public research page, published to GitHub Pages by `.github/workflows/pages.yml` |
 
 ## Hosting
+
+The research page in `site/` is a plain static page with its own fonts and no outside scripts. `.github/workflows/pages.yml` publishes it to https://dweissenborn.github.io/learning_to_fly/ whenever `site/` changes on `main`. Turn it on once under Settings, Pages, Source: GitHub Actions. Only `site/` is published; the plan, the backlog and the app stay where they are.
 
 The app is live at https://victorious-hill-0c4aff11e.3.azurestaticapps.net, an Azure Static Web App on the Free plan. `apps/web/public/staticwebapp.config.json` sets the security headers and the fallback route.
 
