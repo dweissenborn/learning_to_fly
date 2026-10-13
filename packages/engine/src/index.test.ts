@@ -314,6 +314,11 @@ describe('pacing for a learner who locks skills in quickly', () => {
     expect(derive(run(T0, [[3, true], [3, true], [3, false], [3, true, true]])).skills.N1.status).toBe('learning');
   });
 
+  it('knows when a skill is new to him, for the clue at once on its first guided item (LTF-01)', () => {
+    expect(planSession(derive([]), ctx(), 'narrative', T0, 4).newSkill).toBe(true);
+    expect(planSession(derive(run(T0, [[1, false]])), ctx(), 'narrative', T0 + DAY, 4).newSkill).toBe(false);
+  });
+
   it('skips the worked example once he has solved one, and guided practice once he is independent', () => {
     const fresh = planSession(derive([]), ctx(), 'narrative', T0, 4);
     expect(fresh.skipWatch).toBe(false);

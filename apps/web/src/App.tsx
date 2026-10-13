@@ -11,7 +11,8 @@ import { Session, litFrom, placedFrom } from './Session';
 import { Today } from './Today';
 import { Onboarding, ComfortPanel } from './Onboarding';
 import { Adult } from './Adult';
-import { Btn } from './ui';
+import { Btn, NewThing } from './ui';
+import { FEATURES, nextFeature, opinions } from './features';
 import { finishedCount, journeyNow, JourneyMap, LegDots } from './journey';
 import { setSound, setVoice } from './media';
 import { autoSave, isFamily, useCloudSync } from './cloud';
@@ -56,6 +57,7 @@ export function App() {
   const [dialog, setDialog] = useState<null | 'comfort' | 'shelf' | 'kit'>(null);
   const cloud = useCloudSync();
   const [newHere, setNewHere] = useState(false);
+  const [asked, setAsked] = useState<string>(); // the one "What do you think?" card for this visit
   useApplySettings(settings);
   useEffect(() => { applyRetention(); }, []);
   useEffect(() => {
@@ -100,6 +102,7 @@ export function App() {
   const story = jn.beat
     ? `${jn.beat.text}${jn.beat.cope ? ' ' + jn.beat.cope : ''}${jn.beat.choice && jn.beat.chosen === undefined ? ' Open My journey to choose a plan.' : ''}`
     : 'You made it to Australia. The koalas are waiting for you.';
+  const newThing = asked ? FEATURES.find((f) => f.id === asked) : nextFeature(events);
   const say = `${hello}, ${settings.name}. ${todayDone ? 'You already read today. ' : ''}${story}`;
 
   return <div className="shell">
@@ -125,6 +128,7 @@ export function App() {
           <Btn className="big" onPress={() => setDialog('shelf')}><span className="ico" aria-hidden>⭐</span>Things I can do · {shelf.length}</Btn>
           <Btn className="big kit" onPress={() => setDialog('kit')}><span className="ico" aria-hidden>🎒</span>Flight kit · {gearState(flightPoints(events)).owned.length} of {GEAR.length}</Btn>
         </div>
+        {newThing && <NewThing key={newThing.id} feature={newThing} answered={opinions(events).has(newThing.id)} onShown={setAsked} />}
         <section className="paths" aria-label="Your three paths">
           {strands.map((s) => {
             const f = focusSkill(progress, s);

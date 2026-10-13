@@ -9,7 +9,7 @@ Added 2026-10-13. All 18 proposals from the research review (LTF-01 to LTF-18) w
 Each step lands its test before its code.
 
 1. **Foundations.** "Check whether content repeats across sessions" (below, built 2026-10-13), now needed by the notes on LTF-01, LTF-02, LTF-05 and LTF-16. Then LTF-16, so every new item after it passes the content checks. LTF-17 can run alongside.
-2. **Small, strongest evidence.** LTF-01, LTF-05, LTF-08, LTF-18.
+2. **Small, strongest evidence.** LTF-01, LTF-05, LTF-08, LTF-18 (all built 2026-10-13).
 3. **Today and hints.** LTF-06 (after LTF-05), LTF-07, LTF-02, LTF-15.
 4. **New questions.** LTF-09, LTF-10, LTF-12, LTF-13.
 5. **Large content work.** LTF-20 (island routes, before LTF-14 so check-up flights can come from the island he chose), LTF-04, LTF-11 (idioms use LTF-04), LTF-03, LTF-14.
@@ -47,7 +47,9 @@ Added 2026-10-13. Requested by DW: "a way for me as an operator/parent to send l
 
 ## LTF-01 Show the clue straight away on a new skill's first item
 
-Added 2026-10-13. Approved. Research: [Kim et al. 2025](https://journals.sagepub.com/doi/10.1177/10883576241267963), where time delay was the only significant moderator in technology-aided reading. Plan rule R17.
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [Kim et al. 2025](https://journals.sagepub.com/doi/10.1177/10883576241267963), where time delay was the only significant moderator in technology-aided reading. Plan rule R17.
+
+- **What was built.** As below. A skill counts as new when he has no answers on it yet. The setting is on by default. The Hint wait card counts first-time guided answers only. Tests: `delayEffect` in `activity.test.ts`, and an e2e test with a mocked clock.
 
 - **He sees.** On the first Together item of a skill he has never practised, the clue lights up at once. From the second item on, it waits the usual 8 seconds. Your turn does not change.
 - **Grown-ups see.** A switch in Learning settings, and a Hint wait card in Activity once there are 20 answers.
@@ -88,8 +90,9 @@ Added 2026-10-13. Approved. Research: [Intepe et al. 2025](https://eric.ed.gov/?
 
 ## LTF-05 Today asks "What happened after?"
 
-Added 2026-10-13. Approved. Research: [Yang et al. 2026 (AUTIVERSE)](https://arxiv.org/abs/2509.17466), where consequences and feelings mostly came only when asked. Plan rule R20.
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [Yang et al. 2026 (AUTIVERSE)](https://arxiv.org/abs/2509.17466), where consequences and feelings mostly came only when asked. Plan rule R20.
 
+- **What was built.** New tiles, not reused ones: 11 for after something hard and 10 for after what he did, in `content/today.json` under `after`. The question order and the sentence builder moved to `apps/web/src/recount.ts`, with unit tests in `recount.test.ts`. RecountEvent records `after`. The journey stops are still open, and LTF-20 covers them.
 - **He sees.** After something hard, "What happened after that?" with tiles. From stage 2 it is also asked after "What did you do?". His story gains a sentence like "After that, I tried again."
 - **Grown-ups see.** The prompt card uses his answer.
 - **Build.** An `after` tile list in `content/today.json`, a question and sentence in `Today.tsx`, and RecountEvent records whether "after" was answered.
@@ -117,7 +120,9 @@ Added 2026-10-13. Approved. Research: [McWilliams & Hanson 2025](https://link.sp
 
 ## LTF-08 How his telling is growing
 
-Added 2026-10-13. Approved. Research: [Harvey et al. 2025](https://journals.sagepub.com/doi/10.1177/01427237251315253), where length explained most of the gap in narrative structure. Plan rule R28.
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [Harvey et al. 2025](https://journals.sagepub.com/doi/10.1177/01427237251315253), where length explained most of the gap in narrative structure. Plan rule R28.
+
+- **What was built.** The card leads the Today recounts tab. RecountEvent also gains `after`. Recounts saved before this have no sentence count, so the card leaves them out. The card compares his first five recounts with his last five, or fewer each while he has fewer than ten.
 
 - **Grown-ups see.** A Today card: sentences per recount over time, parts of the day told, the questions he skips most, and how often he adds his own words.
 - **Build.** RecountEvent gains `sentences` and `skipped`. `recountTrend(events)` goes in `activity.ts`, and the card in `Adult.tsx`.
@@ -218,7 +223,9 @@ Added 2026-10-13. Approved. Research: [Henkel et al. 2025](https://aclanthology.
 
 ## LTF-18 "What do you think?" cards
 
-Added 2026-10-13. Approved. Research: [Johnson et al. 2026](https://journals.sagepub.com/doi/10.1177/13623613261460932). Plan rule R29, putting R13 into practice.
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [Johnson et al. 2026](https://journals.sagepub.com/doi/10.1177/13623613261460932). Plan rule R29, putting R13 into practice.
+
+- **What was built.** Five features so far: telling about a show, skipping a demo, the flight kit, the clue at once and "What happened after that?". Each is asked about after he first uses it, not on the day it ships, so he has something to judge. The card sits on his island under the flight kit, with Read to me. Each new feature needs a line in `features.ts`. Grown-ups see the votes in the Overview tab. The e2e test also checks the card stays gone after a reload and on a second device.
 
 - **He sees.** A one-time card on the island the first time a feature appears: I like it, not sure, I don't like it, then too much, just right, too little.
 - **Grown-ups see.** His votes next to each feature.

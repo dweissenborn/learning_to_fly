@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { LogEvent } from '@wayfinder/schema';
-import { GEAR, flightPoints, gearState, insights, sessionActivity, usualStop } from './activity';
+import { GEAR, delayEffect, flightPoints, recountTrend, gearState, insights, sessionActivity, usualStop } from './activity';
+import { derive } from './index';
 
 let n = 0;
 const id = () => `e${++n}`;
@@ -71,5 +72,35 @@ describe('how sessions go', () => {
     const tips = insights(ev, (s) => (s === 'F3' ? 'Menus and timetables' : s));
     expect(tips.find((t) => t.title === 'Menus and timetables takes him longer')).toMatchObject({ tone: 'act' });
     expect(tips.some((t) => t.title === 'He finishes most sessions')).toBe(true);
+  });
+});
+
+describe('hint wait (LTF-01)', () => {
+  const together = (item: string, correct: boolean, delay?: number): LogEvent =>
+    ({ id: id(), ts: T0 + n * 1000, type: 'answer', session: 's', item, skill: 'F1', phase: 'together', correct, hint: correct ? 0 : 1, tries: 1, ms: 9000, format: 'tap', ...(delay === undefined ? {} : { delay }) });
+  it('compares right-first-time with the clue at once against after the wait, on first-time answers only', () => {
+    const ev = [together('a', true, 0), together('b', false, 0), together('c', true, 8), together('d', true, 8), together('e', false, 8), together('a', true, 0), together('f', true)];
+    const e = delayEffect(ev, derive(ev));
+    expect(e.atOnce).toEqual({ correct: 1, total: 2 }); // the repeat of 'a' is left out
+    expect(e.afterWait).toEqual({ correct: 2, total: 3 }); // 'f' has no recorded wait
+    expect(e.total).toBe(5);
+  });
+});
+
+describe('how his telling is growing (LTF-08)', () => {
+  const recount = (day: number, sentences: number, parts: number, o: { skipped?: string[]; typed?: boolean; after?: boolean } = {}): LogEvent =>
+    ({ id: id(), ts: T0 + day * 86_400_000, type: 'recount', stage: 1, parts, sentences, skipped: o.skipped ?? [], typed: !!o.typed, after: !!o.after, topic: 'day' });
+  it('tracks sentences next to parts told, the questions he skips most, and how often he adds his own words', () => {
+    const ev = [recount(0, 3, 1, { skipped: ['why', 'hard'] }), recount(1, 4, 1, { skipped: ['why'] }), recount(2, 6, 2, { typed: true, after: true }), recount(3, 8, 3, { typed: true })];
+    const t = recountTrend(ev);
+    expect(t.recounts.map((r) => [r.sentences, r.parts])).toEqual([[3, 1], [4, 1], [6, 2], [8, 3]]);
+    expect(t.skippedMost).toEqual([['why', 2], ['hard', 1]]);
+    expect(t.ownWords).toEqual({ count: 2, of: 4 });
+    expect(t.after).toEqual({ count: 1, of: 4 });
+    expect(t.early).toMatchObject({ sentences: 3.5, parts: 1 });
+    expect(t.recent).toMatchObject({ sentences: 7, parts: 2.5 });
+  });
+  it('leaves out recounts saved before sentences were counted', () => {
+    expect(recountTrend([{ id: 'old', ts: T0, type: 'recount', stage: 1, parts: 1 } as LogEvent]).recounts).toEqual([]);
   });
 });

@@ -26,6 +26,8 @@ export interface Settings {
   rewardPace: 'item' | 'step' | 'session';
   yourTurn: 3 | 4 | 5;
   hintDelay: number;
+  /** Show the clue at once on a new skill's first guided item (LTF-01). */
+  clueFirst: boolean;
   gate: GateOverride;
   hardThemes: boolean;
   hidden: string[];
@@ -54,7 +56,7 @@ export const DEFAULTS: Settings = {
   onboarded: false, name: '', guide: 'bolt', interests: [], pin: '',
   theme: 'auto', size: 2, font: 'atkinson', spacing: 'normal', motion: 'auto', sound: true,
   readAloud: false, pictures: true, voice: '', rate: 0.9,
-  rewardPace: 'item', yourTurn: 4, hintDelay: 8, gate: 'auto', hardThemes: false, hidden: [],
+  rewardPace: 'item', yourTurn: 4, hintDelay: 8, clueFirst: true, gate: 'auto', hardThemes: false, hidden: [],
   timetable: {}, people: [], todayStage: 0,
   legLength: 5, setbacks: true, journeyChoices: {}, journeyAnchor: JOURNEY_START, fastTrack: true, resetWords: '',
 };

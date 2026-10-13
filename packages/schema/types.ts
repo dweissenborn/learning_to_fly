@@ -394,6 +394,10 @@ export interface AnswerEvent {
    * The item's text level, so the level staircase has a record
    */
   level?: number;
+  /**
+   * Guided practice: seconds the clue waited before showing (0 = shown at once on a new skill's first item, LTF-01).
+   */
+  delay?: number;
 }
 export interface SessionEvent {
   id: string;
@@ -447,6 +451,18 @@ export interface RecountEvent {
    * Telling about his day, or about a show or video he watched
    */
   topic?: 'day' | 'show';
+  /**
+   * How many sentences the built recount had (LTF-08).
+   */
+  sentences?: number;
+  /**
+   * The questions he skipped (LTF-08).
+   */
+  skipped?: string[];
+  /**
+   * He answered a "What happened after that?" question (LTF-05).
+   */
+  after?: boolean;
 }
 export interface RealWorldEvent {
   id: string;
@@ -456,7 +472,7 @@ export interface RealWorldEvent {
   note?: string;
 }
 /**
- * How a session went, moment to moment: steps entered, idle spells, leaving the app, demo skips, and the bonus for getting past his usual stopping point. Holds no text he wrote.
+ * How a session went, moment to moment: steps entered, idle spells, leaving the app, demo skips, his votes on new things, and the bonus for getting past his usual stopping point. Holds no text he wrote.
  */
 export interface ActivityEvent {
   id: string;
@@ -464,9 +480,9 @@ export interface ActivityEvent {
   type: 'activity';
   session: string;
   /**
-   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point.
+   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point. opinion: his answer on a 'What do you think?' card.
    */
-  kind: 'step' | 'idle' | 'away' | 'back' | 'skip-demo' | 'boost';
+  kind: 'step' | 'idle' | 'away' | 'back' | 'skip-demo' | 'boost' | 'opinion';
   step?: 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish';
   item?: string;
   /**
@@ -481,4 +497,16 @@ export interface ActivityEvent {
    * For boost: flight points earned.
    */
   points?: number;
+  /**
+   * For opinion: which new thing he was asked about.
+   */
+  feature?: string;
+  /**
+   * For opinion: I like it, not sure, or I don't like it.
+   */
+  like?: 'like' | 'unsure' | 'dislike';
+  /**
+   * For opinion: too much, just right, or too little.
+   */
+  amount?: 'too-much' | 'just-right' | 'too-little';
 }

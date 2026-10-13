@@ -1,7 +1,9 @@
 // Small shared pieces.
 import { Button, Switch, type ButtonProps } from 'react-aria-components';
-import type { ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { speak, stopSpeaking, useReading, canSpeak } from './media';
+import { log } from './db';
+import { AMOUNT, LIKE, type Feature, type Like } from './features';
 
 export function Btn({ className = '', ...p }: ButtonProps & { className?: string }) {
   return <Button {...p} className={`btn ${className}`} />;
@@ -51,4 +53,23 @@ export function shuffled<T>(arr: readonly T[], seed: string): number[] {
     [idx[i], idx[j]] = [idx[j], idx[i]];
   }
   return idx;
+}
+
+/** LTF-18: a one-time "What do you think?" card on his island. The app shows at most one a visit, never mid-lesson. */
+export function NewThing({ feature, answered, onShown }: { feature: Feature; answered: boolean; onShown: (id: string) => void }) {
+  const [step, setStep] = useState<'like' | 'amount' | 'done' | 'gone'>(answered ? 'gone' : 'like');
+  const [like, setLike] = useState<Like>('like');
+  useEffect(() => onShown(feature.id), []); // eslint-disable-line react-hooks/exhaustive-deps
+  if (step === 'gone') return null;
+  const ask = step === 'like' ? 'Do you like it?' : step === 'amount' ? 'Is there too much of it, just the right amount, or too little?' : 'Thank you. I will tell the grown-ups.';
+  return <section className="card stack" aria-labelledby="newthing">
+    <h2 id="newthing" style={{ margin: 0 }}>What do you think?</h2>
+    <p style={{ margin: 0 }}><b>{feature.name}.</b> {feature.say}</p>
+    <p style={{ margin: 0 }}>{ask}</p>
+    {step === 'like' && <div className="row">{LIKE.map(([v, emoji, text]) =>
+      <Btn key={v} onPress={() => { setLike(v); setStep('amount'); }}><span className="ico" aria-hidden>{emoji}</span>{text}</Btn>)}</div>}
+    {step === 'amount' && <div className="row">{AMOUNT.map(([v, text]) =>
+      <Btn key={v} onPress={() => { void log({ type: 'activity', session: 'home', kind: 'opinion', feature: feature.id, like, amount: v }); setStep('done'); }}>{text}</Btn>)}</div>}
+    <SpeakBtn lines={[`${feature.name}. ${feature.say}`, ask]} k={`newthing-${feature.id}-${step}`} />
+  </section>;
 }

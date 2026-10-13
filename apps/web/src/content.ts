@@ -25,6 +25,8 @@ export const today = todayData as {
   lessons: Lesson[]; weekend: Lesson[]; defaultTimetable: string[]; who: string[];
   feelings: { word: string; emoji: string }[]; why: string[]; hard: string[];
   show: { kinds: { text: string; emoji: string }[]; mostlyAbout: string[]; problem: string[]; events: string[]; ending: string[]; ask: string[] };
+  /** "What happened after that?" (LTF-05): after something hard, and after what he did. */
+  after: { hard: string[]; done: string[] };
 };
 
 export const TOPICS: { id: SkillBank['passages'][number]['topics'][number]; label: string; emoji: string }[] = [

@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId, Strand } from '@wayfinder/schema';
-import { ALL_SKILLS, dayKey, errorPatterns, flightPoints, freshness, FRESH_LOW, focusSkill, gate, GEAR, gearState, hintNeed, insights, interestEffect, journeyPosition, levelFor, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName } from '@wayfinder/engine';
+import { ALL_SKILLS, dayKey, delayEffect, errorPatterns, recountTrend, flightPoints, freshness, FRESH_LOW, focusSkill, gate, GEAR, gearState, hintNeed, insights, interestEffect, journeyPosition, levelFor, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName } from '@wayfinder/engine';
 import { finishedCount, JOURNEY, journeyNow } from './journey';
 import { deleteNote, exportAll, importAll, log, saveSettings, updateNote, useNotes, wipeAll, type GuideId, type Settings } from './db';
 import { deleteEverywhere, useLink } from './cloud';
@@ -13,6 +13,7 @@ import { ItemView } from './ItemView';
 import { ComfortPanel } from './Onboarding';
 import { Guide, GUIDES } from './art';
 import { Btn, Seg, Toggle } from './ui';
+import { AMOUNT, FEATURES, LIKE, opinions } from './features';
 import { canSpeak, speak, voices } from './media';
 
 type Tab = 'overview' | 'skills' | 'activity' | 'today' | 'content' | 'settings' | 'data';
@@ -44,7 +45,7 @@ export function Adult({ settings, events, progress, onExit, onRescout }: { setti
       {tab === 'overview' && <Overview settings={settings} events={events} progress={progress} />}
       {tab === 'skills' && <Skills progress={progress} events={events} />}
       {tab === 'activity' && <Activity events={events} settings={settings} progress={progress} />}
-      {tab === 'today' && <TodayAdmin settings={settings} />}
+      {tab === 'today' && <TodayAdmin settings={settings} events={events} />}
       {tab === 'content' && <Library settings={settings} />}
       {tab === 'settings' && <SettingsTab settings={settings} progress={progress} onRescout={onRescout} />}
       {tab === 'data' && <DataTab name={settings.name} onReport={() => setReport(true)} />}
@@ -114,11 +115,29 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
     </section>}
     <FreshWarning settings={settings} progress={progress} />
     <SchoolGoals progress={progress} />
+    <Votes events={events} />
     <section className="card stack"><h2>Due for review</h2>
       {ALL_SKILLS.filter((s) => statusOf(progress.skills[s], now) === 'review due').map((s) => <div key={s}>{SKILL[s].name} <span className="chip due">review due</span></div>)}
       {!ALL_SKILLS.some((s) => statusOf(progress.skills[s], now) === 'review due') && <p className="muted">Nothing due. Reviews come back at about 3, 7 and 21 days after mastery, inside the warm-up.</p>}
     </section>
   </div>;
+}
+
+/** LTF-18: his votes on new things, next to each feature. */
+function Votes({ events }: { events: LogEvent[] }) {
+  const votes = opinions(events);
+  const said = (f: (typeof FEATURES)[number]) => {
+    const v = votes.get(f.id);
+    if (v) return [LIKE.find(([k]) => k === v.like)![2], v.amount && AMOUNT.find(([k]) => k === v.amount)![1]].filter(Boolean).join(' · ');
+    return f.met(events) ? 'Not answered yet' : 'Not used yet';
+  };
+  return <section className="card stack">
+    <h2>What he thinks of new things</h2>
+    <div className="kv">{FEATURES.map((f) => <span key={f.id} style={{ display: 'contents' }}>
+      <span>{f.name} <span className="muted">(arrived {fmtDate(Date.parse(f.arrived + 'T12:00'))})</span></span><b>{said(f)}</b>
+    </span>)}</div>
+    <p className="tagline">He is asked once, on his island, after he first uses something new: does he like it, and is there too much of it or too little. At most one question a visit, never during a lesson.</p>
+  </section>;
 }
 
 /** The school's current goals, measured on first-time answers (warm-up and your turn). */
@@ -181,6 +200,18 @@ function FreshContent({ settings, progress }: { settings: Settings; progress: Pr
   </section>;
 }
 
+/** LTF-01: right first time with the clue at once against after the wait, once there are 20 guided answers. */
+function HintWait({ events, progress }: { events: LogEvent[]; progress: Progress }) {
+  const e = useMemo(() => delayEffect(events, progress), [events, progress]);
+  if (e.total < 20) return null;
+  const line = (b: { correct: number; total: number }) => (b.total ? `${b.correct} of ${b.total} right first time (${Math.round((100 * b.correct) / b.total)}%)` : 'none yet');
+  return <section className="card stack">
+    <h2>Hint wait</h2>
+    <div className="kv"><span>Clue at once</span><b>{line(e.atOnce)}</b><span>After the usual wait</span><b>{line(e.afterWait)}</b></div>
+    <p className="tagline">Guided questions only, and only ones he had not seen before. The clue shows at once on a new skill's first guided question. These are different questions, so read this as a pattern over time, not a test.</p>
+  </section>;
+}
+
 function Activity({ events, settings, progress }: { events: LogEvent[]; settings: Settings; progress: Progress }) {
   const sessions = useMemo(() => sessionActivity(events), [events]);
   const recent = sessions.slice(-10).reverse();
@@ -197,6 +228,7 @@ function Activity({ events, settings, progress }: { events: LogEvent[]; settings
       <Insights events={events} />
     </section>
     <FreshContent settings={settings} progress={progress} />
+    <HintWait events={events} progress={progress} />
     <section className="card stack">
       <h2>Recent sessions</h2>
       {!recent.length ? <p className="muted">No sessions yet.</p> : <div className="table-wrap"><table className="skills-table">
@@ -283,7 +315,37 @@ function Skills({ progress, events }: { progress: Progress; events: LogEvent[] }
   </section>;
 }
 
-function TodayAdmin({ settings }: { settings: Settings }) {
+/** LTF-08: how his telling is growing. Length always sits next to the parts of the day he told. */
+const QUESTION_NAME: Record<string, string> = {
+  who: 'who he was with', what: 'what he did', afterDone: 'what happened after what he did', feeling: 'how he felt',
+  why: 'why he felt that way', hard: 'whether anything was hard', afterHard: 'what happened after something hard',
+};
+function Telling({ events }: { events: LogEvent[] }) {
+  const t = useMemo(() => recountTrend(events), [events]);
+  const num = (x: number) => (Number.isInteger(x) ? String(x) : x.toFixed(1));
+  return <section className="card stack">
+    <h2>How his telling is growing</h2>
+    {!t.recounts.length ? <p className="muted">Shows after his next recount.</p> : <>
+      {t.early && t.recent && <div className="kv">
+        <span>His first {t.early.n} recounts</span><b>{num(t.early.sentences)} sentences, about {num(t.early.parts)} {t.early.parts === 1 ? 'part' : 'parts'} of the day</b>
+        <span>His last {t.recent.n} recounts</span><b>{num(t.recent.sentences)} sentences, about {num(t.recent.parts)} {t.recent.parts === 1 ? 'part' : 'parts'} of the day</b>
+      </div>}
+      <div className="table-wrap"><table className="skills-table">
+        <thead><tr><th>Date</th><th>Sentences</th><th>Parts told</th><th>Said what happened after</th><th>Own words</th></tr></thead>
+        <tbody>{t.recounts.slice(-8).reverse().map((r) => <tr key={r.ts}>
+          <td>{fmtDate(r.ts)}</td><td>{r.sentences}</td><td>{r.parts}</td><td>{r.after ? 'Yes' : '–'}</td><td>{r.typed ? 'Yes' : '–'}</td>
+        </tr>)}</tbody>
+      </table></div>
+      <div className="kv">
+        <span>Adds his own words</span><b>{t.ownWords.count} of {t.ownWords.of} recounts</b>
+        <span>Questions he skips most</span><b>{t.skippedMost.length ? t.skippedMost.slice(0, 3).map(([k, n]) => `${QUESTION_NAME[k] ?? k} (${n})`).join(', ') : 'none so far'}</b>
+      </div>
+    </>}
+    <p className="tagline">Longer recounts explained most of the difference in how well children's stories were put together, so length is worth watching, but always next to how much of the day he told.</p>
+  </section>;
+}
+
+function TodayAdmin({ settings, events }: { settings: Settings; events: LogEvent[] }) {
   const notes = useNotes();
   const [people, setPeople] = useState(settings.people.join(', '));
   const days = [['1', 'Monday'], ['2', 'Tuesday'], ['3', 'Wednesday'], ['4', 'Thursday'], ['5', 'Friday']];
@@ -294,9 +356,10 @@ function TodayAdmin({ settings }: { settings: Settings }) {
     saveSettings({ timetable: { ...settings.timetable, [d]: next } });
   };
   return <div className="stack">
+    <Telling events={events} />
     <section className="card stack">
       <h2>What he told you</h2>
-      <p className="tagline">Personal answers stay on this device, are never sent to any model, and are deleted after 30 days unless you keep them. Other typed answers are deleted after 90 days.</p>
+      <p className="tagline">Personal answers are never sent to any model. They are deleted after 30 days unless you keep them, and other typed answers after 90 days. With the family cloud copy they are kept there too, and deleted there at the same time.</p>
       {!notes.length && <p className="muted">Nothing yet.</p>}
       {notes.map((n) => <div key={n.id} className="lib-item">
         <div className="row"><b>{n.kind === 'recount' ? `Today: ${n.title}` : n.title}</b>{n.personal && <span className="chip">personal</span>}<span className="spacer" /><span className="muted">{fmtDate(n.ts)}</span></div>
@@ -392,6 +455,8 @@ function SettingsTab({ settings, progress, onRescout }: { settings: Settings; pr
       <p className="tagline">Shown with the journey's setbacks, so home and school use the same words.</p>
       <Seg label="Your-turn items per session" value={settings.yourTurn} onChange={(yourTurn) => saveSettings({ yourTurn })} options={[[3, '3'], [4, '4'], [5, '5']]} />
       <Seg label="Wait before a hint in “together”" value={settings.hintDelay} onChange={(hintDelay) => saveSettings({ hintDelay })} options={[[5, '5 s'], [8, '8 s'], [12, '12 s'], [20, '20 s']]} />
+      <Toggle on={settings.clueFirst} onChange={(clueFirst) => saveSettings({ clueFirst })}>Show the clue at once on a new skill's first guided question</Toggle>
+      <p className="tagline">In a 2025 review of reading apps, how long the app waited before a prompt was the one setting that made a measurable difference. So a skill he has never practised starts with its clue showing; after that, the usual wait. The Activity tab compares the two once there are 20 guided answers.</p>
       <div className="field"><span className="label">Guide</span><div className="row">{(Object.keys(GUIDES) as GuideId[]).map((g) => <Btn key={g} className={`small ${settings.guide === g ? 'on' : 'quiet'}`} onPress={() => saveSettings({ guide: g })}><Guide id={g} size={30} /> {GUIDES[g].name}</Btn>)}</div></div>
       <div className="field"><span className="label">Interests</span><div className="tiles">{TOPICS.map((t) => {
         const on = settings.interests.includes(t.id);

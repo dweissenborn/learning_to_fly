@@ -1,5 +1,5 @@
 // How sessions go, and the flight kit. Pure functions over the event log, like the rest of the engine.
-import type { AnswerEvent, LogEvent } from '@wayfinder/schema';
+import type { AnswerEvent, LogEvent, RecountEvent } from '@wayfinder/schema';
 
 /** No touch or key for this long during a task counts as an idle spell. */
 export const IDLE_MS = 45_000;
@@ -114,6 +114,49 @@ export function usualStop(events: readonly LogEvent[]): StepName | undefined {
   for (const s of ended) count.set(s.lastStep!, (count.get(s.lastStep!) ?? 0) + 1);
   const [step, n] = [...count].sort((a, b) => b[1] - a[1])[0] ?? [];
   return n !== undefined && n >= 2 ? step : undefined;
+}
+
+// ---------------------------------------------------------------- hint wait (LTF-01)
+/**
+ * Guided-practice answers with the clue shown at once (a new skill's first item) against after the usual wait,
+ * right first time, on questions he had not answered before. Answers from before the wait was recorded are left out.
+ */
+export function delayEffect(events: readonly LogEvent[], p: { repeats: ReadonlySet<string> }) {
+  const r = { atOnce: { correct: 0, total: 0 }, afterWait: { correct: 0, total: 0 }, total: 0 };
+  for (const e of events) {
+    if (e.type !== 'answer' || e.phase !== 'together' || e.delay === undefined || p.repeats.has(e.id)) continue;
+    const b = e.delay === 0 ? r.atOnce : r.afterWait;
+    b.total += 1;
+    if (e.correct && e.tries <= 1) b.correct += 1;
+    r.total += 1;
+  }
+  return r;
+}
+
+// ---------------------------------------------------------------- how his telling is growing (LTF-08)
+export interface RecountRow { ts: number; sentences: number; parts: number; typed: boolean; after: boolean; skipped: string[] }
+
+/**
+ * Recounts over time. Length always travels with the parts of the day he told, because a longer recount of the
+ * same part is not the same growth as telling more of the day. Recounts saved before sentences were counted are left out.
+ */
+export function recountTrend(events: readonly LogEvent[]) {
+  const recounts: RecountRow[] = events
+    .filter((e): e is RecountEvent => e.type === 'recount' && typeof e.sentences === 'number')
+    .sort((a, b) => a.ts - b.ts)
+    .map((e) => ({ ts: e.ts, sentences: e.sentences!, parts: e.parts, typed: !!e.typed, after: !!e.after, skipped: e.skipped ?? [] }));
+  const skips = new Map<string, number>();
+  for (const r of recounts) for (const k of r.skipped) skips.set(k, (skips.get(k) ?? 0) + 1);
+  const k = Math.min(5, Math.floor(recounts.length / 2));
+  const mean = (rs: RecountRow[]) => (rs.length ? { n: rs.length, sentences: rs.reduce((t, r) => t + r.sentences, 0) / rs.length, parts: rs.reduce((t, r) => t + r.parts, 0) / rs.length } : null);
+  return {
+    recounts,
+    skippedMost: [...skips].sort((a, b) => b[1] - a[1]),
+    ownWords: { count: recounts.filter((r) => r.typed).length, of: recounts.length },
+    after: { count: recounts.filter((r) => r.after).length, of: recounts.length },
+    early: k ? mean(recounts.slice(0, k)) : null,
+    recent: k ? mean(recounts.slice(-k)) : null,
+  };
 }
 
 // ---------------------------------------------------------------- what the grown-ups can take from it

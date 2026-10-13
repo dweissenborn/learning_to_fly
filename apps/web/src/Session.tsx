@@ -92,11 +92,13 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
   };
   const nextPhase = (s: Step) => go(({ warmup: 'watch', watch: 'together', together: 'yourturn', yourturn: 'finish', gatecheck: 'finish' } as Record<string, Step>)[s] ?? 'finish');
 
+  // A new skill's first guided item shows its clue at once; after that, the usual wait (LTF-01).
+  const clueAtOnce = step === 'together' && idx === 0 && !!plan?.newSkill && settings.clueFirst;
   const onDone = (item: Item, r: Result) => {
     const phase = step as 'warmup' | 'together' | 'yourturn' | 'gatecheck';
     log({
       type: 'answer', session: sid, item: item.id, skill: item.skill, phase, correct: r.correct, hint: r.hint, tries: r.tries, ms: r.ms, format: item.format,
-      transfer: !!item.transfer, interest: isInterest(pool, item, settings.interests), readAloud: settings.readAloud, level: item.level, ...(r.rubric !== undefined ? { rubric: r.rubric } : {}),
+      transfer: !!item.transfer, interest: isInterest(pool, item, settings.interests), readAloud: settings.readAloud, level: item.level, ...(phase === 'together' ? { delay: clueAtOnce ? 0 : settings.hintDelay } : {}), ...(r.rubric !== undefined ? { rubric: r.rubric } : {}),
     });
     if (r.note) addNote({ kind: 'answer', personal: !!item.personal, item: item.id, title: item.prompt, text: r.note });
     setDone((d) => [...d, { item, phase, r }]);
@@ -182,7 +184,7 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
           <span>{STEP_META[step].label} · {idx + 1} of {phaseItems}</span>
           {step === 'gatecheck' && <span>· no hints this time</span>}
         </div>
-        <ItemView key={current.id} item={current} mode={hintMode} guide={guide} hintDelay={settings.hintDelay} pictures={settings.pictures} helpTick={helpTick}
+        <ItemView key={current.id} item={current} mode={hintMode} guide={guide} hintDelay={settings.hintDelay} clueAtOnce={clueAtOnce} pictures={settings.pictures} helpTick={helpTick}
           autoRead={settings.readAloud} praiseIndex={done.length} onDone={(r) => onDone(current, r)} />
       </div>}
       {step === 'finish' && <Finish sid={sid} plan={plan} done={done} settings={settings} events={events} progress={progress} before={before} onExit={onExit} />}

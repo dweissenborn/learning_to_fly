@@ -406,5 +406,32 @@
       "In one sentence, what was it mostly about?",
       "Which part was the most important? Why?"
     ]
+  },
+  "after": {
+    "hard": [
+      "I asked for help",
+      "I tried again",
+      "a friend helped me",
+      "I took a break",
+      "I used my calm-down words",
+      "we made a new plan",
+      "the teacher helped me",
+      "I fixed it",
+      "it got better",
+      "I felt better later",
+      "it was still hard"
+    ],
+    "done": [
+      "we cleaned up",
+      "we shared our work",
+      "I showed my teacher",
+      "we went to the next class",
+      "we had a break",
+      "we talked about it",
+      "I finished it",
+      "we packed up",
+      "we played a game",
+      "we went outside"
+    ]
   }
 }

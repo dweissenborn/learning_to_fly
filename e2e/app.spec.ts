@@ -233,3 +233,89 @@ test('a gentle nudge when he goes quiet, and a bonus for getting past his usual 
   for (let i = 0; i < 4 && (await page.getByText(/Warm up · \d of/).isVisible()); i++) await answer(page);
   await expect(page.getByText('You kept going past Warm up. +3 flight points!')).toBeVisible();
 });
+
+test('the clue shows at once on the first guided question of a new skill, then waits as usual (LTF-01)', async ({ page }) => {
+  await page.clock.install({ time: new Date('2026-10-14T16:00:00') });
+  await onboard(page);
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.getByRole('button', { name: /Harbor Town/ }).click();
+  for (let i = 0; i < 4 && (await page.getByText(/Warm up · \d of/).isVisible()); i++) await answer(page);
+  await page.getByRole('button', { name: /Keep going/ }).click({ timeout: 2000 }).catch(() => {}); // the first flight gear, if it arrived
+  await page.getByRole('button', { name: 'Got it, skip' }).click();
+  await expect(page.getByText(/Together · 1 of/)).toBeVisible();
+  await expect(page.locator('.feedback.hint')).toBeVisible(); // no wait on a new skill's first guided item
+  await answer(page);
+  await expect(page.getByText(/Together · 2 of/)).toBeVisible();
+  await expect(page.locator('.feedback.hint')).toHaveCount(0);
+  await page.clock.fastForward(8_100);
+  await expect(page.locator('.feedback.hint')).toBeVisible(); // the usual wait from the second item on
+});
+
+test('telling about something hard asks what happened after, and the grown-up gets it (LTF-05)', async ({ page }) => {
+  await onboard(page);
+  await page.getByRole('button', { name: /Tell about today/ }).click();
+  await page.getByRole('button', { name: 'My day' }).click();
+  await page.locator('.tcard').first().click();
+  await page.getByRole('button', { name: 'Next' }).click();
+  for (let i = 0; i < 3; i++) await page.locator('.tiles .tile').first().click(); // who, what, how he felt
+  await page.getByRole('button', { name: 'I got stuck' }).click();
+  await expect(page.locator('.bubble', { hasText: 'What happened after that?' })).toBeVisible();
+  await axe(page, 'what happened after');
+  await page.getByRole('button', { name: 'I asked for help' }).click();
+  await expect(page.getByText('After that, I asked for help.')).toBeVisible();
+  await page.getByRole('button', { name: /Save and show/ }).click();
+  await expect(page.getByText('You said: I got stuck. After that, I asked for help. How did that go?')).toBeVisible();
+  // LTF-08: the grown-ups see how his telling is growing.
+  await page.getByRole('button', { name: /Back to my island/ }).click();
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Today recounts' }).click();
+  const card = page.locator('section', { has: page.getByRole('heading', { name: 'How his telling is growing' }) });
+  await expect(card.getByRole('row').nth(1)).toContainText('Yes');
+  await axe(page, 'telling card');
+});
+
+test('"What do you think?" asks once per new thing, on any device (LTF-18)', async ({ browser }) => {
+  const repo = memoryRepo();
+  const first = await (await browser.newContext()).newPage();
+  await familyDevice(first, repo);
+  await onboard(first);
+  // He tells about a show, so he has met that new thing.
+  await first.getByRole('button', { name: /Tell about today/ }).click();
+  await first.getByRole('button', { name: 'A show or video' }).click();
+  await first.getByRole('button', { name: 'a movie' }).click();
+  await first.getByRole('button', { name: 'an adventure' }).click();
+  await first.locator('.tiles .tile').first().click();
+  await first.getByRole('button', { name: 'someone helped' }).click();
+  await first.getByRole('button', { name: 'Next' }).click();
+  await first.getByRole('button', { name: 'they fixed it' }).click();
+  await first.getByRole('button', { name: /Save and show/ }).click();
+  await first.getByRole('button', { name: /Back to my island/ }).click();
+
+  const card = first.getByRole('region', { name: 'What do you think?' });
+  await expect(card).toContainText('Telling about a show');
+  await axe(first, 'what do you think');
+  await card.getByRole('button', { name: /I like it/ }).click();
+  await card.getByRole('button', { name: /Just right/ }).click();
+  await expect(card).toContainText('Thank you');
+  await first.reload();
+  await expect(first.getByRole('button', { name: /Start reading/ })).toBeVisible();
+  await expect(first.getByRole('region', { name: 'What do you think?' })).toHaveCount(0); // asked once
+  const [saved] = await learners(repo);
+  await expect.poll(async () => (await sync(repo, { learner: saved.id, since: 0 })).events.some((e: { kind?: string }) => e.kind === 'opinion'), { timeout: 15_000 }).toBe(true);
+
+  // Another device for the same learner is not asked again.
+  const second = await (await browser.newContext()).newPage();
+  await familyDevice(second, repo);
+  await second.goto('/');
+  await second.getByRole('button', { name: 'Tester' }).click();
+  // The grown-ups see his vote next to the feature, which also shows this device has his events.
+  await second.getByRole('button', { name: 'Grown-ups' }).click();
+  const votes = second.locator('section', { has: second.getByRole('heading', { name: 'What he thinks of new things' }) });
+  await expect(votes).toContainText('Telling about a show');
+  await expect(votes).toContainText('I like it · Just right'); // his only vote
+  await axe(second, 'votes');
+  await second.getByRole('button', { name: 'Back to the island' }).click();
+  await expect(second.getByRole('button', { name: /Start reading/ })).toBeVisible();
+  await expect(second.getByRole('region', { name: 'What do you think?' })).toHaveCount(0);
+});

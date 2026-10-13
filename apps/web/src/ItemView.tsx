@@ -26,6 +26,8 @@ export interface ItemViewProps {
   listenOnly?: boolean;
   praiseIndex?: number;
   onDone?: (r: Result) => void;
+  /** Show the clue straight away instead of after the usual wait (LTF-01). */
+  clueAtOnce?: boolean;
 }
 
 const SLOT: Record<string, [string, string]> = {
@@ -35,7 +37,7 @@ const SLOT: Record<string, [string, string]> = {
 };
 const RUBRIC = ['', 'You named the feeling or idea.', 'You gave a reason.', 'You tied it to the story.', 'You added your own life or another view.'];
 
-export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, helpTick = 0, demo, autoRead, listenOnly, praiseIndex = 0, onDone }: ItemViewProps) {
+export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, helpTick = 0, demo, autoRead, listenOnly, praiseIndex = 0, onDone, clueAtOnce }: ItemViewProps) {
   const passage = pool.passages.get(item.passage)!;
   const [hint, setHint] = useState(0);
   const [tries, setTries] = useState(0);
@@ -67,9 +69,9 @@ export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, he
   // Timed hints in "together": wait, then step from light to strategy (R6). The full answer only comes after a miss or a request.
   useEffect(() => {
     if (mode !== 'auto' || solved || hint >= 2 || express) return;
-    const t = setTimeout(() => setHint((h) => Math.min(2, h + 1)), hintDelay * 1000);
+    const t = setTimeout(() => setHint((h) => Math.min(2, h + 1)), (clueAtOnce && hint === 0 ? 0 : hintDelay) * 1000);
     return () => clearTimeout(t);
-  }, [mode, solved, hint, poke, hintDelay, express]);
+  }, [mode, solved, hint, poke, hintDelay, express, clueAtOnce]);
 
   const submit = (right: boolean) => {
     const t = tries + 1;

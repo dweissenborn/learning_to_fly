@@ -328,6 +328,8 @@ export interface SessionPlan {
   skipWatch: boolean;
   /** He has shown he works this skill independently, so guided practice is skipped for more of his own. */
   skipTogether: boolean;
+  /** He has never practised this skill: its first guided item shows the clue at once (LTF-01). */
+  newSkill: boolean;
   /** Skills whose review happens in this warm-up. */
   review: SkillId[];
   warmup: Item[];
@@ -370,7 +372,7 @@ export function planSession(p: Progress, ctx: PickContext, strand: Strand, now: 
   const yourturn = take(pickItems(ctx, skill, yourTurnCount + (skipTogether ? 2 : 0), { exclude: used, tier: 'understand', transfer: true, level }));
   const express = strand === 'philosophical' ? take(pickItems(ctx, skill, 1, { exclude: used, tier: 'express' })) : [];
   return {
-    strand, skill, level, skipWatch, skipTogether, review, warmup,
+    strand, skill, level, skipWatch, skipTogether, newSkill: st.answers.length === 0, review, warmup,
     model: !skipWatch && modelItem && m ? { item: modelItem, steps: m.steps } : undefined,
     together, yourturn, express,
   };

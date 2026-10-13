@@ -9,8 +9,7 @@ import { today, type Lesson } from './content';
 import { Guide } from './art';
 import { Btn, SpeakBtn } from './ui';
 import { sfx } from './media';
-
-interface Part { lesson: Lesson; who?: string; what?: string; feeling?: string; why?: string; hard?: string }
+import { buildAsks, buildDaySentences, nextKey, type Part, type QKey } from './recount';
 interface Show { kind?: string; name: string; about?: string; problem?: string; events: string[]; ending?: string }
 
 /** Supports fade slowly: one part with tiles, then starters and typing, then three parts, then the whole day in order. */
@@ -35,7 +34,8 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
   const [topic, setTopic] = useState<'day' | 'show' | null>(null);
   const [picked, setPicked] = useState<string[]>([]);
   const [parts, setParts] = useState<Part[]>([]);
-  const [at, setAt] = useState<{ part: number; q: number } | null>(null);
+  const [at, setAt] = useState<{ part: number; key: QKey } | null>(null);
+  const [skipped, setSkipped] = useState<QKey[]>([]);
   const [order, setOrder] = useState<string[]>([]);
   const [main, setMain] = useState<string>();
   const [typed, setTyped] = useState('');
@@ -44,24 +44,33 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
   const [phase, setPhase] = useState<'pick' | 'ask' | 'order' | 'main' | 'built' | 'card'>('pick');
 
   // Who and what first. "Was anything hard?" is always asked: noticing when plans change is a school goal.
-  const questions = useMemo(() => {
-    const q: { key: keyof Part; ask: (p: Part) => string; tiles: (p: Part) => { text: string; emoji?: string }[] }[] = [
-      { key: 'who', ask: (p) => `In ${p.lesson.name}, who were you with?`, tiles: () => [...today.who, ...settings.people].map((t) => ({ text: t })) },
-      { key: 'what', ask: (p) => `What did you do in ${p.lesson.name}?`, tiles: (p) => p.lesson.what.map((t) => ({ text: t })) },
-      { key: 'feeling', ask: () => 'How did you feel?', tiles: () => today.feelings.map((f) => ({ text: f.word, emoji: f.emoji })) },
-    ];
-    if (stepReached(5) || stage >= 2) q.push({ key: 'why', ask: (p) => `Why did you feel ${p.feeling ?? 'that way'}?`, tiles: () => today.why.map((t) => ({ text: t })) });
-    q.push({ key: 'hard', ask: () => 'Was anything hard, or did something go wrong?', tiles: () => today.hard.map((t) => ({ text: t })) });
-    return q;
-  }, [stage]); // eslint-disable-line react-hooks/exhaustive-deps
+  // "What happened after that?" follows anything hard, and from stage 2 what he did (LTF-05).
+  const asked = { stage, why: stepReached(5) };
+  const questions: Record<QKey, { ask: (p: Part) => string; tiles: (p: Part) => { text: string; emoji?: string }[] }> = {
+    who: { ask: (p) => `In ${p.lesson.name}, who were you with?`, tiles: () => [...today.who, ...settings.people].map((t) => ({ text: t })) },
+    what: { ask: (p) => `What did you do in ${p.lesson.name}?`, tiles: (p) => p.lesson.what.map((t) => ({ text: t })) },
+    afterDone: { ask: () => 'What happened after that?', tiles: () => today.after.done.map((t) => ({ text: t })) },
+    feeling: { ask: () => 'How did you feel?', tiles: () => today.feelings.map((f) => ({ text: f.word, emoji: f.emoji })) },
+    why: { ask: (p) => `Why did you feel ${p.feeling ?? 'that way'}?`, tiles: () => today.why.map((t) => ({ text: t })) },
+    hard: { ask: () => 'Was anything hard, or did something go wrong?', tiles: () => today.hard.map((t) => ({ text: t })) },
+    afterHard: { ask: () => 'What happened after that?', tiles: () => today.after.hard.map((t) => ({ text: t })) },
+  };
 
-  const startAsking = () => { setParts(picked.map((id) => ({ lesson: cards.find((c) => c.id === id)! }))); setAt({ part: 0, q: 0 }); setPhase('ask'); };
+  const startAsking = () => {
+    const ps = picked.map((id) => ({ lesson: cards.find((c) => c.id === id)! }));
+    setParts(ps);
+    setAt({ part: 0, key: nextKey(ps[0], null, asked)! });
+    setPhase('ask');
+  };
   const answer = (value: string) => {
     if (!at) return;
-    const key = questions[at.q].key;
-    setParts((ps) => ps.map((p, i) => (i === at.part ? { ...p, [key]: value } : p)));
-    if (at.q + 1 < questions.length) setAt({ ...at, q: at.q + 1 });
-    else if (at.part + 1 < parts.length) setAt({ part: at.part + 1, q: 0 });
+    const part = { ...parts[at.part], [at.key]: value || undefined };
+    if (!value) setSkipped((s) => [...s, at.key]);
+    const ps = parts.map((p, i) => (i === at.part ? part : p));
+    setParts(ps);
+    const next = nextKey(part, at.key, asked);
+    if (next) setAt({ ...at, key: next });
+    else if (at.part + 1 < ps.length) setAt({ part: at.part + 1, key: nextKey(ps[at.part + 1], null, asked)! });
     else afterAsking();
   };
   const afterAsking = () => {
@@ -78,20 +87,7 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
       if (show.problem) out.push(show.problem === 'there was no big problem' ? 'There was no big problem.' : `The problem: ${show.problem}.`);
       if (show.events.length) out.push(`Important things that happened: ${list(show.events)}.`);
       if (show.ending) out.push(`At the end, ${show.ending}.`);
-    } else {
-      const ordered = order.length === parts.length ? order.map((id) => parts.find((p) => p.lesson.id === id)!) : parts;
-      if (order.length === parts.length && parts.length > 1) {
-        const words = ['First', 'Then', 'Next', 'After that', 'Then'];
-        ordered.forEach((p, i) => out.push(`${i === ordered.length - 1 ? 'Last' : words[i]}, I had ${p.lesson.name}.`));
-      }
-      for (const p of ordered) {
-        if (p.what) out.push(weekend ? `Today, I ${p.what}.` : `In ${p.lesson.name}, I ${p.what}.`);
-        if (p.who) out.push(p.who === 'by myself' ? 'I worked by myself.' : `I was with ${p.who}.`);
-        if (p.feeling) out.push(`I felt ${p.feeling}${p.why ? ` because ${p.why}` : ''}.`);
-        if (p.hard && p.hard !== 'nothing was hard') out.push(`Something hard: ${p.hard}.`);
-      }
-      if (main) out.push(`The main thing about today was ${main}.`);
-    }
+    } else out.push(...buildDaySentences(parts, { order, weekend, main }));
     if (typed.trim()) out.push(typed.trim());
     return out;
   }, [topic, show, parts, order, main, typed, weekend]);
@@ -102,18 +98,18 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
       a.push(...today.show.ask);
       if (show.about) a.push(`You said it was mostly about ${show.about}. What makes you say that?`);
       if (show.events[0]) a.push(`You said ${show.events[0]}. What happened then?`);
-    } else for (const p of parts) {
-      a.push(...p.lesson.ask.slice(0, 2));
-      if (p.feeling) a.push(`You said you felt ${p.feeling}. What made you feel ${p.feeling}?`);
-      if (p.hard && p.hard !== 'nothing was hard') a.push(`You said: ${p.hard}. What happened then, and what did you do?`);
+      return [...new Set(a)].slice(0, 4);
     }
-    return [...new Set(a)].slice(0, 4);
+    return buildAsks(parts);
   }, [topic, show, parts]);
 
   const save = async () => {
     const date = new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' });
     await addNote({ kind: 'recount', personal: true, title: topic === 'show' ? `${date}: ${show.name.trim() || show.kind || 'a show'}` : date, text: sentences.join(' '), ask: asks });
-    await log({ type: 'recount', stage, parts: topic === 'show' ? 1 : parts.length, typed: !!typed.trim(), topic: topic ?? 'day' });
+    await log({
+      type: 'recount', stage, parts: topic === 'show' ? 1 : parts.length, typed: !!typed.trim(), topic: topic ?? 'day',
+      sentences: sentences.length, skipped, after: parts.some((p) => !!(p.afterHard || p.afterDone)),
+    });
     sfx.finish();
     setPhase('card');
   };
@@ -180,8 +176,8 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
 
       {phase === 'ask' && topic === 'day' && at && <>
         <div className="chip" style={{ width: 'fit-content' }}>{parts[at.part].lesson.emoji} {parts[at.part].lesson.name}</div>
-        {guideSay(questions[at.q].ask(parts[at.part]))}
-        {tiles(questions[at.q].tiles(parts[at.part]), answer)}
+        {guideSay(questions[at.key].ask(parts[at.part]))}
+        {tiles(questions[at.key].tiles(parts[at.part]), answer)}
         <Btn className="quiet small" onPress={() => answer('')}>Skip this one</Btn>
       </>}
 

@@ -14,6 +14,7 @@ One finding shapes everything else: the evidence on teaching reading comprehensi
 - **Watch, Together, Your turn.** Direct, explicit instruction is the most-used method in the intervention studies and is rated highly effective. Every skill is shown, then practised with help, then done alone. [Tárraga-Mínguez et al., 2021](https://www.mdpi.com/2076-328X/11/1/3); [Finnegan & Mazin, 2016](https://apps.asha.org/EvidenceMaps/Articles/ArticleSummary/798031f1-cac6-4ad5-97c5-d6d1c53b12e5); [Steinbrenner et al., 2020](https://ncaep.fpg.unc.edu/wp-content/uploads/EBP-Report-2020.pdf)
 - **Demos drop out once he has shown a skill.** Our choice. It follows the same model (show, then fade the help), applied to a learner who keeps a skill once he has seen how. A right scouting answer or a solved item counts as shown, and every demo has a "Got it, skip" button.
 - **Hints wait, then step up.** Prompting, time delay, modelling and reinforcement are established practices, so hints wait a few seconds and step from light to full. [Steinbrenner et al., 2020](https://ncaep.fpg.unc.edu/wp-content/uploads/EBP-Report-2020.pdf); [Browder et al., 2006](https://journals.sagepub.com/doi/10.1177/001440290607200401)
+- **A new skill's first guided question shows the clue at once.** In 13 single-case studies of technology-aided reading, the wait before a prompt was the only feature that raised effects. So every guided answer logs its wait, and the grown-ups' area compares first-time answers with the clue at once and after the usual wait. [Kim et al., 2025](https://journals.sagepub.com/doi/10.1177/10883576241267963)
 - **Functional words come with their meaning and a new setting.** Word-reading studies taught warning-label words with their meaning, but transfer to new settings was incomplete, so every skill has items in a new format or setting, and mastery needs one. [Spector, 2011](https://eric.ed.gov/?id=EJ939843); [Dogoe et al., 2011](https://eric.ed.gov/?id=EJ942469)
 - **Answers are story maps, sequence strips and sorting.** Visual supports work best: graphic organizers and visually cued instruction scored highest in reviews, and story maps improved quiz scores and retells in small studies. [Finnegan & Mazin, 2016](https://apps.asha.org/EvidenceMaps/Articles/ArticleSummary/798031f1-cac6-4ad5-97c5-d6d1c53b12e5); [Singh et al., 2021](https://apps.asha.org/EvidenceMaps/Articles/ArticleSummary/37f47507-2143-410d-8e6c-13070edfb664); [Stringfield et al., 2011](https://eric.ed.gov/?id=EJ947195); [Spencer & Kirby, 2025](https://www.mdpi.com/2076-328X/15/8/1020)
 - **Who "she" means, and asking your own questions.** Cueing what a pronoun refers to was the only one of three aids with a significant effect for 20 autistic adolescents, so a whole step practises it. [O'Connor & Klein, 2004](https://link.springer.com/article/10.1023/B:JADD.0000022603.44077.6b); [Whalon & Hanline, 2008](https://eric.ed.gov/?id=EJ804651)
@@ -27,6 +28,8 @@ One finding shapes everything else: the evidence on teaching reading comprehensi
 ## Telling about today
 
 - **"Tell about today" with tiles, the school timetable and specific questions, faded slowly.** Autistic young people recalled fewer specific personal memories and needed more prompts; retelling model stories and then their own, with visuals faded out, improved personal narratives, though gains held unevenly. [Goddard et al., 2014](https://doi.org/10.1017/S0954579413000904); [Petersen et al., 2014](https://pubs.asha.org/doi/10.1044/2013_LSHSS-12-0099); [Gauvreau, 2015](https://digital.lib.washington.edu/researchworks/handle/1773/33741)
+- **"What happened after that?" follows anything hard.** Autistic young people journaling their day gave the setting and main event unprompted, but most of what happened next and of how they felt came only when asked. From stage 2 it is also asked after what he did. [Yang et al., 2026](https://arxiv.org/abs/2509.17466)
+- **The grown-ups see how long his recounts are, next to how much of the day he told.** Autistic adolescents' retells looked less structured, but the gap mostly disappeared once length was taken into account. So length is never shown on its own. [Harvey et al., 2025](https://journals.sagepub.com/doi/10.1177/01427237251315253)
 
 ## Interests
 
@@ -45,6 +48,7 @@ One finding shapes everything else: the evidence on teaching reading comprehensi
 
 ## Calm, predictable design
 
+- **A "What do you think?" card after he first uses something new.** A review of 24 studies found autistic children took part best through pictures and sorting, and were rarely asked to review changes. He picks like it, not sure or don't like it, then too much, just right or too little, and the grown-ups see his votes. [Johnson et al., 2026](https://journals.sagepub.com/doi/10.1177/13623613261460932)
 - **Fixed layout, comfort settings, and asking him what he thinks.** Design guidance for autistic children's software centres on adapting to the individual, controlling sensory stimulation and keeping the interface predictable, and autistic children can take part in design critique. [Davis et al., 2010](https://researchprofiles.herts.ac.uk/en/publications/guidelines-for-researchers-and-practitioners-designing-software-a/); [Sanmartin et al., 2026](https://doi.org/10.5753/rbie.2026.7245); [Frauenberger et al., 2013](https://sussex.figshare.com/articles/journal_contribution/Conversing_through_and_about_technologies_design_critique_as_an_opportunity_to_engage_children_with_autism_and_broaden_research_er_perspectives/23394875)
 
 ## AI-drafted content
@@ -68,13 +72,11 @@ The backlog (`docs/backlog.md`) lists features approved from a 2026 research rev
 
 | Feature | Research named in the backlog |
 | --- | --- |
-| Show the clue straight away on a new skill's first item | Kim et al. 2025 |
 | A reasoning card for feelings questions | Wang & Poon 2026 |
 | Tap "she" to see who it means | Courteau et al. 2026; O'Connor & Klein 2004; Jozwik & O'Quin 2026 |
 | Word help | Intepe et al. 2025; Kritsotakis & Morfidi 2025 |
-| "What happened after?" in Today, and the four-panel strip | Yang et al. 2026; Lee, Quinn & Jiang 2025 |
+| His day as a four-panel strip | Yang et al. 2026; Lee, Quinn & Jiang 2025 |
 | Ideas behind a button as the tiles fade | McWilliams & Hanson 2025; Petersen et al. 2014 |
-| How his telling is growing | Harvey et al. 2025 |
 | "Knows" or "only thinks" | Eilon & Novogrodsky 2025 |
 | "Some", "only" and "all" in signs and steps | Petit et al. 2026 |
 | Metaphor map | Skogli-Christensen et al. 2025; Wei et al. 2025; Hu et al. 2025 |
@@ -84,4 +86,3 @@ The backlog (`docs/backlog.md`) lists features approved from a 2026 research rev
 | Which question types work for him | Lee, Quinn & Jiang 2025 |
 | Coherence and skill checks for new content | Maheshwary et al. 2026; Ma, Flor & Wang 2025 |
 | A scoring test set for typed answers | Henkel et al. 2025; Gurin Schleifer et al. 2026 |
-| "What do you think?" cards | Johnson et al. 2026 |

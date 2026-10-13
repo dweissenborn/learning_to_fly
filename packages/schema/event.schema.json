@@ -126,6 +126,11 @@
           "minimum": 1,
           "maximum": 5,
           "description": "The item's text level, so the level staircase has a record"
+        },
+        "delay": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Guided practice: seconds the clue waited before showing (0 = shown at once on a new skill's first item, LTF-01)."
         }
       }
     },
@@ -293,6 +298,22 @@
             "show"
           ],
           "description": "Telling about his day, or about a show or video he watched"
+        },
+        "sentences": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "How many sentences the built recount had (LTF-08)."
+        },
+        "skipped": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The questions he skipped (LTF-08)."
+        },
+        "after": {
+          "type": "boolean",
+          "description": "He answered a \"What happened after that?\" question (LTF-05)."
         }
       }
     },
@@ -333,7 +354,7 @@
         "session",
         "kind"
       ],
-      "description": "How a session went, moment to moment: steps entered, idle spells, leaving the app, demo skips, and the bonus for getting past his usual stopping point. Holds no text he wrote.",
+      "description": "How a session went, moment to moment: steps entered, idle spells, leaving the app, demo skips, his votes on new things, and the bonus for getting past his usual stopping point. Holds no text he wrote.",
       "properties": {
         "id": {
           "type": "string"
@@ -355,9 +376,10 @@
             "away",
             "back",
             "skip-demo",
-            "boost"
+            "boost",
+            "opinion"
           ],
-          "description": "step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point."
+          "description": "step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point. opinion: his answer on a 'What do you think?' card."
         },
         "step": {
           "type": "string",
@@ -392,6 +414,28 @@
           "type": "integer",
           "minimum": 0,
           "description": "For boost: flight points earned."
+        },
+        "feature": {
+          "type": "string",
+          "description": "For opinion: which new thing he was asked about."
+        },
+        "like": {
+          "type": "string",
+          "enum": [
+            "like",
+            "unsure",
+            "dislike"
+          ],
+          "description": "For opinion: I like it, not sure, or I don't like it."
+        },
+        "amount": {
+          "type": "string",
+          "enum": [
+            "too-much",
+            "just-right",
+            "too-little"
+          ],
+          "description": "For opinion: too much, just right, or too little."
         }
       }
     }
