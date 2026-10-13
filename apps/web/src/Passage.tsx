@@ -33,8 +33,9 @@ export function Passage({ passage: p, marks = {}, wordMarks = {}, tap, focus, pi
       <h3>{listenOnly ? 'Listen' : p.title}</h3>
       <SpeakBtn lines={passageText(p)} k={speakKey ?? p.id} label={listenOnly ? 'Hear it again' : 'Read to me'} className="small" />
     </div>
-    {p.sentences.length > 0 && <p className="prose" aria-hidden={listenOnly || undefined}>
-      {p.sentences.map((s, i) => {
+    {p.sentences.length > 0 && <div aria-hidden={listenOnly || undefined}>{paragraphs(p).map(([from, to]) => <p key={from} className="prose">
+      {p.sentences.slice(from, to).map((s, k) => {
+        const i = from + k;
         const m = visual ? undefined : marks[i];
         const live = readingHere && reading.line === i;
         const words = tokens(s);
@@ -51,11 +52,17 @@ export function Passage({ passage: p, marks = {}, wordMarks = {}, tap, focus, pi
         const c = `sentence ${cls(m)} ${live ? 'reading' : ''}`;
         return <span key={i}><span className={c} {...(tap?.unit === 'sentence' ? pressable(() => tap.onTap(i)) : {})}>{body}</span>{' '}</span>;
       })}
-    </p>}
+    </p>)}</div>}
     {p.visual && <div style={{ marginTop: p.sentences.length ? '1rem' : 0 }}><Visual p={p} marks={marks} onRow={tap?.unit === 'row' ? (i) => tap.onTap(i) : undefined} /></div>}
     {credit && <div className="credit">{creditLine(p)}</div>}
   </article>;
 }
+
+/** Sentence ranges for each paragraph; `breaks` lists the sentences that start a new one. */
+const paragraphs = (p: P): [number, number][] => {
+  const starts = [0, ...(p.breaks ?? []).filter((b) => b > 0 && b < p.sentences.length)];
+  return starts.map((s, k) => [s, starts[k + 1] ?? p.sentences.length]);
+};
 
 /** Inline text that acts as a button but still wraps like text, so the layout does not jump between modes. */
 const pressable = (on: () => void) => ({

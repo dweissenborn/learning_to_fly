@@ -204,6 +204,728 @@
       "level": 3,
       "socialLoad": 0,
       "credit": { "title": "The Banana Bread Label", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p10",
+      "title": "The Market Sale Sign",
+      "kind": "label",
+      "sentences": ["Ben is buying snacks for the soccer team at Harbor Market.", "He reads the sale sign."],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Market Weekend Sale",
+        "rows": [
+          { "k": "Juice boxes", "v": "$1 each, or 8 for $6" },
+          { "k": "Orange slices", "v": "$3 a bag" },
+          { "k": "Pretzel packs", "v": "$2 each. Buy 2, get 1 more free." },
+          { "k": "Granola bars", "v": "$5 for a box of 10" },
+          { "k": "Sale ends", "v": "Sunday at 6 PM" }
+        ]
+      },
+      "picture": "🧃🏷️",
+      "topics": ["food", "money"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "The Market Sale Sign", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p11",
+      "title": "Rocket Oats Nutrition Facts",
+      "kind": "label",
+      "sentences": ["Priya wants a breakfast cereal that keeps her full during robotics club.", "She reads the Nutrition Facts on the box."],
+      "visual": {
+        "type": "table",
+        "title": "Rocket Oats: Nutrition Facts",
+        "note": "Serving size: 1 cup (40 g). About 10 servings in each box. % Daily Value tells how much of one day's amount a serving gives. 5% or less is low. 20% or more is high.",
+        "columns": ["Nutrient", "Amount in 1 serving", "% Daily Value"],
+        "rows": [
+          ["Calories", "150", "—"],
+          ["Total fat", "2 g", "3%"],
+          ["Sodium", "190 mg", "8%"],
+          ["Added sugars", "10 g", "20%"],
+          ["Fiber", "5 g", "18%"],
+          ["Protein", "4 g", "—"],
+          ["Iron", "3.6 mg", "20%"]
+        ]
+      },
+      "picture": "🥣📊",
+      "topics": ["food", "health"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "Rocket Oats Nutrition Facts", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p12",
+      "title": "The Fever Medicine Label",
+      "kind": "label",
+      "sentences": ["Ben has a fever on Sunday morning.", "His mom reads the medicine label with him."],
+      "visual": {
+        "type": "label",
+        "title": "HarborCare Fever and Pain Liquid",
+        "warning": "Ask an adult before you take any medicine.",
+        "rows": [
+          { "k": "Uses", "v": "fever, headache, sore throat" },
+          { "k": "Ages 2 to 5", "v": "5 mL" },
+          { "k": "Ages 6 to 11", "v": "10 mL" },
+          { "k": "Ages 12 and up", "v": "15 mL" },
+          { "k": "Under age 2", "v": "ask a doctor" },
+          { "k": "How often", "v": "every 6 hours if needed" },
+          { "k": "Most in one day", "v": "4 doses in 24 hours" },
+          { "k": "Measure with", "v": "the cup in this box only" },
+          { "k": "Call a doctor if", "v": "the fever lasts more than 3 days" },
+          { "k": "Store", "v": "at room temperature, away from young children" }
+        ]
+      },
+      "picture": "🌡️💊",
+      "topics": ["health", "safety"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "The Fever Medicine Label", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p13",
+      "title": "The Game Fair Ticket",
+      "kind": "ticket",
+      "sentences": ["Leo and Sam have tickets for the Harbor Town Game Fair.", "Leo reads his ticket the night before."],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Town Game Fair: Day Ticket",
+        "warning": "Keep this ticket with you all day.",
+        "rows": [
+          { "k": "Date", "v": "Saturday, November 14" },
+          { "k": "Gates open", "v": "9:30 AM" },
+          { "k": "Fair hours", "v": "10:00 AM to 5:00 PM" },
+          { "k": "Ticket type", "v": "Youth (ages 10 to 15)" },
+          { "k": "Entrance", "v": "Gate B, next to the harbor" },
+          { "k": "Re-entry", "v": "Allowed one time. Get a hand stamp at the gate when you leave." },
+          { "k": "Bags", "v": "Small bags only. Every bag is checked at the gate." },
+          { "k": "Under age 10", "v": "Must stay with an adult who has a ticket." },
+          { "k": "Price", "v": "$8 (paid). No refunds." },
+          { "k": "Game tournament", "v": "Sign up at the Info Desk by 11:00 AM." }
+        ]
+      },
+      "picture": "🎮🎟️",
+      "topics": ["games"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "The Game Fair Ticket", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p14",
+      "title": "Maya's Pharmacy Label",
+      "kind": "label",
+      "sentences": ["Maya has an ear infection.", "Her dad picks up her medicine from Harbor Pharmacy.", "Maya reads the label with him."],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Pharmacy",
+        "warning": "Ask an adult before you take any medicine.",
+        "rows": [
+          { "k": "Patient", "v": "Maya Brooks" },
+          { "k": "Medicine", "v": "Clearwell Liquid, for ear infections" },
+          { "k": "Directions", "v": "Take 5 mL 2 times a day, in the morning and at night, with food." },
+          { "k": "How long", "v": "10 days. Take all of it, even if you feel better." },
+          { "k": "Amount in bottle", "v": "100 mL" },
+          { "k": "Measure with", "v": "the dosing syringe in the bag" },
+          { "k": "Missed a dose?", "v": "Take it when you remember. If your next dose is less than 4 hours away, skip the missed dose. Never take 2 doses at once." },
+          { "k": "Store", "v": "in the fridge. Shake well before each dose." },
+          { "k": "Filled on", "v": "March 3" },
+          { "k": "Throw away after", "v": "March 17" },
+          { "k": "Refills", "v": "0" }
+        ]
+      },
+      "picture": "🧴👂",
+      "topics": ["health", "safety"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": { "title": "Maya's Pharmacy Label", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p15",
+      "title": "Three Snack Bars",
+      "kind": "label",
+      "sentences": ["The soccer coach asks Ana and Ben to pick a snack bar for the team.", "Ana cannot eat peanuts or tree nuts."],
+      "visual": {
+        "type": "table",
+        "title": "Three Snack Bars Compared",
+        "note": "Amounts are for one bar. Numbers in ( ) are % Daily Value: 5% or less is low, and 20% or more is high.",
+        "columns": ["Label line", "Trail Blaze", "Summit Crunch", "Rocket Rice"],
+        "rows": [
+          ["Calories", "190", "160", "120"],
+          ["Protein", "10 g", "4 g", "2 g"],
+          ["Added sugars", "8 g (16%)", "12 g (24%)", "9 g (18%)"],
+          ["Fiber", "3 g (11%)", "5 g (18%)", "1 g (4%)"],
+          ["Contains", "peanuts, milk, soy", "oats, wheat, honey", "rice, milk"],
+          ["May contain", "tree nuts", "peanuts", "no warning"],
+          ["Box price", "$6 for 6 bars", "$6 for 4 bars", "$4 for 8 bars"],
+          ["Best before", "December 2", "November 20", "January 15"]
+        ]
+      },
+      "picture": "🍫⚽",
+      "topics": ["food", "health", "money"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": { "title": "Three Snack Bars", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f4-p16",
+      "title": "Pixel's Dog Food",
+      "kind": "label",
+      "sentences": [
+        "Pixel weighs 25 pounds.",
+        "Sam reads the dog food bag before he feeds Pixel."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Happy Trails Dog Food",
+        "rows": [
+          {
+            "k": "Dogs 10 to 20 pounds",
+            "v": "1 cup a day"
+          },
+          {
+            "k": "Dogs 21 to 40 pounds",
+            "v": "2 cups a day"
+          },
+          {
+            "k": "Dogs 41 to 60 pounds",
+            "v": "3 cups a day"
+          },
+          {
+            "k": "Meals",
+            "v": "Split the food into 2 meals."
+          },
+          {
+            "k": "Water",
+            "v": "Keep fresh water out all day."
+          },
+          {
+            "k": "Best before",
+            "v": "March 30"
+          }
+        ]
+      },
+      "picture": "🐕🥣",
+      "topics": [
+        "animals"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Pixel's Dog Food",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p17",
+      "title": "The Sunflower Seed Packet",
+      "kind": "label",
+      "sentences": [
+        "Maya and Grandma Rose plant sunflowers behind the bakery.",
+        "Maya reads the back of the seed packet."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Seed Co. Giant Sunflower Seeds",
+        "rows": [
+          {
+            "k": "When to plant",
+            "v": "In spring, after the last frost"
+          },
+          {
+            "k": "Planting depth",
+            "v": "1 inch"
+          },
+          {
+            "k": "Space between seeds",
+            "v": "12 inches"
+          },
+          {
+            "k": "Sun",
+            "v": "Full sun, 6 hours a day or more"
+          },
+          {
+            "k": "Days to sprout",
+            "v": "7 to 10 days"
+          },
+          {
+            "k": "Days to flower",
+            "v": "80 to 90 days"
+          },
+          {
+            "k": "Height",
+            "v": "Up to 10 feet"
+          },
+          {
+            "k": "Seeds in packet",
+            "v": "25"
+          }
+        ]
+      },
+      "picture": "🌻🌱",
+      "topics": [
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Sunflower Seed Packet",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p18",
+      "title": "The Rain Jacket Tag",
+      "kind": "label",
+      "sentences": [
+        "The forecast for Ben's school trip says cold, heavy rain.",
+        "Ben checks the tag on his new rain jacket."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Gear StormShell Rain Jacket",
+        "rows": [
+          {
+            "k": "Rain",
+            "v": "Waterproof. Keeps you dry in heavy rain."
+          },
+          {
+            "k": "Wind",
+            "v": "Blocks wind."
+          },
+          {
+            "k": "Warmth",
+            "v": "Thin. On cold days, wear a sweater under it."
+          },
+          {
+            "k": "Hood",
+            "v": "Folds into the collar."
+          },
+          {
+            "k": "Wash",
+            "v": "By hand or in a machine, in cold water. Close the zips first."
+          },
+          {
+            "k": "Dry",
+            "v": "Hang it up to dry. Keep it out of the dryer."
+          },
+          {
+            "k": "Size",
+            "v": "Youth large, ages 12 to 14"
+          }
+        ]
+      },
+      "picture": "🧥🌧️",
+      "topics": [
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Rain Jacket Tag",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p19",
+      "title": "The Gem Sluice Price Board",
+      "kind": "label",
+      "sentences": [
+        "Leo and Maya try gem mining at the Copper Hill Mine.",
+        "They wash dirt in a water trough, called a sluice, to find stones."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Copper Hill Gem Sluice",
+        "rows": [
+          {
+            "k": "Small bucket",
+            "v": "$6. About 5 stones."
+          },
+          {
+            "k": "Large bucket",
+            "v": "$10. About 12 stones."
+          },
+          {
+            "k": "Deal",
+            "v": "Buy 2 small buckets, get 1 geode free."
+          },
+          {
+            "k": "Geode",
+            "v": "$5. We crack it open for you."
+          },
+          {
+            "k": "Stones you may find",
+            "v": "quartz, amethyst, garnet, pyrite"
+          },
+          {
+            "k": "Buckets sold",
+            "v": "10 AM to 3:30 PM"
+          },
+          {
+            "k": "Geodes sold",
+            "v": "At the gift shop until 5 PM"
+          }
+        ]
+      },
+      "picture": "💎⛏️",
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Gem Sluice Price Board",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p20",
+      "title": "The Concert Ticket",
+      "kind": "ticket",
+      "sentences": [
+        "Priya and her mom have tickets to see The Fog Horns.",
+        "Priya reads her ticket at home."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Park Summer Concert: The Fog Horns",
+        "rows": [
+          {
+            "k": "Date",
+            "v": "Friday, July 17"
+          },
+          {
+            "k": "Gates open",
+            "v": "6:00 PM"
+          },
+          {
+            "k": "Opening band",
+            "v": "Northbound Train, 7:00 PM"
+          },
+          {
+            "k": "The Fog Horns",
+            "v": "8:00 PM to 9:30 PM"
+          },
+          {
+            "k": "Your seat",
+            "v": "Section 3, Row K, Seat 15"
+          },
+          {
+            "k": "Which gate",
+            "v": "Sections 1 to 4: North Gate. Sections 5 to 8: South Gate."
+          },
+          {
+            "k": "Ages",
+            "v": "Under 16 must sit with an adult who has a ticket."
+          },
+          {
+            "k": "Bags",
+            "v": "Clear bags only, 12 by 12 inches or smaller."
+          },
+          {
+            "k": "Rain",
+            "v": "The show goes on in light rain. No umbrellas in the seats. Rain ponchos are fine."
+          },
+          {
+            "k": "Price",
+            "v": "$30 (paid)"
+          }
+        ]
+      },
+      "picture": "🎟️🎵",
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Concert Ticket",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p21",
+      "title": "The Fossil Dig Kit",
+      "kind": "label",
+      "sentences": [
+        "Sam's cousin is turning 6 next week.",
+        "Sam reads this box at the toy store."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Dino Dig Lab: Raptor Skeleton Kit",
+        "warning": "Small parts. Not for children under 3.",
+        "rows": [
+          {
+            "k": "Ages",
+            "v": "8 and up. Children under 8 need an adult to help."
+          },
+          {
+            "k": "In the box",
+            "v": "1 plaster dig block, 1 wooden pick, 1 brush, safety goggles, guide book"
+          },
+          {
+            "k": "Inside the block",
+            "v": "12 pieces of a model Velociraptor skeleton"
+          },
+          {
+            "k": "You also need",
+            "v": "a spray bottle of water and old newspaper"
+          },
+          {
+            "k": "Dig time",
+            "v": "About 2 to 3 hours. You can stop and start again."
+          },
+          {
+            "k": "Tip",
+            "v": "Spray the block with water to make the plaster softer."
+          },
+          {
+            "k": "Dino fact",
+            "v": "Velociraptor lived about 75 million years ago. It was about the size of a large turkey, and it had feathers."
+          },
+          {
+            "k": "Price",
+            "v": "$18"
+          }
+        ]
+      },
+      "picture": "🦴🖌️",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Fossil Dig Kit",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p22",
+      "title": "The Whale Watch Boarding Pass",
+      "kind": "ticket",
+      "sentences": [
+        "Grandma Rose buys whale watch tickets for Sam's birthday.",
+        "Sam reads his boarding pass the night before."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Town Whale Watch: Boarding Pass",
+        "warning": "Check in at the dock 30 minutes before the boat leaves.",
+        "rows": [
+          {
+            "k": "Date",
+            "v": "Sunday, August 9"
+          },
+          {
+            "k": "Boat",
+            "v": "Sea Lark"
+          },
+          {
+            "k": "Dock",
+            "v": "Dock 4"
+          },
+          {
+            "k": "Boat leaves",
+            "v": "10:00 AM"
+          },
+          {
+            "k": "Boat returns",
+            "v": "1:30 PM"
+          },
+          {
+            "k": "You may see",
+            "v": "humpback whales, harbor seals and puffins"
+          },
+          {
+            "k": "Bring",
+            "v": "A warm jacket. It is cold on the water, even in summer."
+          },
+          {
+            "k": "Wind or fog",
+            "v": "If the trip is canceled, we call you by 8:00 AM. You can pick a new date or get your money back."
+          },
+          {
+            "k": "Whale promise",
+            "v": "If we see no whales, you get a free ticket for another trip."
+          },
+          {
+            "k": "Ticket",
+            "v": "Youth, ages 6 to 17: $25"
+          }
+        ]
+      },
+      "picture": "🐋🎟️",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Whale Watch Boarding Pass",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p23",
+      "title": "The Robot Kit Box",
+      "kind": "label",
+      "sentences": [
+        "Priya has saved $40 for a new robot kit.",
+        "She has 6 AA batteries at home."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "RoverBot Explorer Kit",
+        "warning": "Small parts. Not for children under 3.",
+        "rows": [
+          {
+            "k": "Ages",
+            "v": "10 and up"
+          },
+          {
+            "k": "Pieces",
+            "v": "160"
+          },
+          {
+            "k": "Build time",
+            "v": "About 3 hours"
+          },
+          {
+            "k": "Robot batteries",
+            "v": "4 AA batteries (not included)"
+          },
+          {
+            "k": "Remote batteries",
+            "v": "2 AAA batteries (included)"
+          },
+          {
+            "k": "Run time",
+            "v": "About 90 minutes on new AA batteries"
+          },
+          {
+            "k": "Battery pack",
+            "v": "Sold separately, $15. Runs the robot for 3 hours. Charges in 2 hours."
+          },
+          {
+            "k": "Sensors",
+            "v": "1 distance sensor, 1 light sensor"
+          },
+          {
+            "k": "Price",
+            "v": "$48"
+          },
+          {
+            "k": "Sale",
+            "v": "$12 off until May 31"
+          }
+        ]
+      },
+      "picture": "🤖🔋",
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Robot Kit Box",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p24",
+      "title": "Maps and Passes Card",
+      "kind": "label",
+      "sentences": [
+        "Sam, Ana and Ben plan weekend trips to Story Woods.",
+        "They read this card at the ranger station."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Story Woods Ranger Station: Maps and Passes",
+        "rows": [
+          {
+            "k": "Paper trail map",
+            "v": "$3"
+          },
+          {
+            "k": "Waterproof trail map",
+            "v": "$7"
+          },
+          {
+            "k": "Map scale",
+            "v": "1 inch on the map = half a mile on the trail"
+          },
+          {
+            "k": "Day pass",
+            "v": "$5 for each car. People who walk or bike in: free."
+          },
+          {
+            "k": "Camping permit",
+            "v": "$12 a night for each tent. Up to 4 people in a tent."
+          },
+          {
+            "k": "Permit hours",
+            "v": "Buy your permit by 6:00 PM on the day you arrive."
+          },
+          {
+            "k": "Car with a camping permit",
+            "v": "No day pass needed. Put the permit on the dashboard."
+          },
+          {
+            "k": "Dogs",
+            "v": "Free. Keep them on a leash at all times."
+          }
+        ]
+      },
+      "picture": "🗺️⛺",
+      "topics": [
+        "maps",
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Maps and Passes Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -497,6 +1219,917 @@
       "explain": "Tap the Slices in a loaf row. It says 8. One serving is 1 slice, so one loaf feeds 8 players.",
       "inference": 1,
       "tags": ["serving-size", "two-rows"]
+    },
+    {
+      "id": "f4-i17",
+      "skill": "F4",
+      "passage": "f4-p10",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben needs 8 juice boxes for the team. How much will he pay?",
+      "options": ["$8", "$6", "$7", "$1"],
+      "answer": 1,
+      "evidence": [0],
+      "hint": "Read the whole juice box row. It has two prices. Pick the one that matches 8 boxes.",
+      "explain": "Ben pays $6. The juice box row says 8 for $6. That costs less than 8 boxes at $1 each, which would be $8.",
+      "inference": 1,
+      "tags": ["price-math", "deal", "money"]
+    },
+    {
+      "id": "f4-i18",
+      "skill": "F4",
+      "passage": "f4-p10",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben takes 3 pretzel packs. How much will he pay?",
+      "options": ["$6", "$4", "$2", "$3"],
+      "answer": 1,
+      "evidence": [2],
+      "hint": "Read the deal in the pretzel row. Work out how many packs he pays for.",
+      "explain": "Ben pays $4. Pretzel packs are $2 each, and when you buy 2 you get 1 more free. He pays for 2 packs, and $2 + $2 = $4.",
+      "inference": 1,
+      "tags": ["price-math", "free-item", "money"]
+    },
+    {
+      "id": "f4-i19",
+      "skill": "F4",
+      "passage": "f4-p11",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya eats 2 cups of Rocket Oats. How many grams of added sugars does she eat?",
+      "options": ["10 g", "20 g", "40 g", "20%"],
+      "answer": 1,
+      "evidence": [3],
+      "hint": "Read the note to find how big one serving is. Then find the Added sugars amount and count how many servings she eats.",
+      "explain": "She eats 20 g. The note says 1 serving is 1 cup, and the Added sugars row says 10 g in 1 serving. 2 cups is 2 servings, so 10 g + 10 g = 20 g.",
+      "inference": 1,
+      "tags": ["serving-size", "multiply", "wrong-column"]
+    },
+    {
+      "id": "f4-i20",
+      "skill": "F4",
+      "passage": "f4-p11",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Use the note under the label. Sort each nutrient by its % Daily Value.",
+      "bins": ["Low: 5% or less", "In between", "High: 20% or more"],
+      "cards": [
+        { "text": "Total fat", "bin": 0 },
+        { "text": "Sodium", "bin": 1 },
+        { "text": "Added sugars", "bin": 2 },
+        { "text": "Fiber", "bin": 1 },
+        { "text": "Iron", "bin": 2 }
+      ],
+      "evidence": [1, 2, 3, 4, 6],
+      "hint": "Find each nutrient's row and read its % Daily Value. Compare it with 5% and with 20%.",
+      "explain": "Total fat (3%) is low. Sodium (8%) and fiber (18%) are in between. Added sugars (20%) and iron (20%) are high, because the note says 20% or more is high.",
+      "inference": 1,
+      "tags": ["daily-value", "percent", "compare", "boundary"],
+      "transfer": true
+    },
+    {
+      "id": "f4-i21",
+      "skill": "F4",
+      "passage": "f4-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben's mom reads the label with him. Ben is 12. He has a dose at 8:00 AM. What is the earliest time the label allows his next dose? Ask an adult before you take any medicine.",
+      "options": ["12:00 PM", "2:00 PM", "8:00 PM", "11:00 AM"],
+      "answer": 1,
+      "evidence": [5],
+      "hint": "Find the row that says how often. Add that many hours to 8:00 AM.",
+      "explain": "The earliest next dose is at 2:00 PM. The How often row says every 6 hours, and 6 hours after 8:00 AM is 2:00 PM. Ask an adult before you take any medicine.",
+      "inference": 1,
+      "tags": ["medicine", "how-often", "time-math", "number-trap"]
+    },
+    {
+      "id": "f4-i22",
+      "skill": "F4",
+      "passage": "f4-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben's mom reads the label with him. Ben is 12. How much is one dose for him, and what should it be measured with? Ask an adult before you take any medicine.",
+      "options": ["10 mL, with a kitchen spoon", "15 mL, with the cup in the box", "15 mL, with a kitchen spoon", "10 mL, with the cup in the box"],
+      "answer": 1,
+      "evidence": [3, 7],
+      "hint": "Find the row with Ben's age. Then find the row that says how to measure.",
+      "explain": "One dose is 15 mL, measured with the cup in the box. The Ages 12 and up row says 15 mL, and the Measure with row says to use the cup in this box only. Ask an adult before you take any medicine.",
+      "inference": 1,
+      "tags": ["medicine", "age-row", "two-rows", "measure"]
+    },
+    {
+      "id": "f4-i23",
+      "skill": "F4",
+      "passage": "f4-p13",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort each plan. Does Leo's ticket allow it?",
+      "bins": ["Allowed by the ticket", "Not allowed by the ticket"],
+      "cards": [
+        { "text": "Bring a small backpack", "bin": 0, "emoji": "🎒" },
+        { "text": "Bring a large sports bag", "bin": 1, "emoji": "🧳" },
+        { "text": "Leave for lunch and come back in once", "bin": 0, "emoji": "🍔" },
+        { "text": "Leave and come back in a second time", "bin": 1, "emoji": "🔁" },
+        { "text": "Sign up for the tournament at 10:30 AM", "bin": 0, "emoji": "🕥" },
+        { "text": "Sign up for the tournament at 11:30 AM", "bin": 1, "emoji": "🕦" }
+      ],
+      "evidence": [5, 6, 9],
+      "hint": "Read the Bags, Re-entry and Game tournament rows. Check each plan against the rule in its row.",
+      "explain": "A small backpack, leaving once and signing up at 10:30 AM are allowed. A large bag, coming back in a second time and signing up at 11:30 AM are not. The rules are in the Bags, Re-entry and Game tournament rows.",
+      "inference": 1,
+      "tags": ["entry-rules", "re-entry", "time-am", "sort"],
+      "transfer": true
+    },
+    {
+      "id": "f4-i24",
+      "skill": "F4",
+      "passage": "f4-p13",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo's little brother is 8. He wants to come to the fair too. Which plan follows the ticket rules?",
+      "options": [
+        "He goes in on his own.",
+        "He goes in with Leo, who is 13.",
+        "He goes in with Leo's dad, and they both have tickets.",
+        "He goes in with Leo's dad, who waits outside the gate."
+      ],
+      "answer": 2,
+      "evidence": [7],
+      "hint": "Find the row about children under 10. Check who he must stay with, and what that person needs.",
+      "explain": "He goes in with Leo's dad, and they both have tickets. The Under age 10 row says he must stay with an adult who has a ticket. Leo is 13, so he is not an adult.",
+      "inference": 1,
+      "tags": ["entry-rules", "age-row", "adult"]
+    },
+    {
+      "id": "f4-i25",
+      "skill": "F4",
+      "passage": "f4-p14",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya's dad reads the label with her. Maya takes her first dose on the morning of March 3. On what day does she take her last dose? Ask an adult before you take any medicine.",
+      "options": ["March 12", "March 13", "March 17", "March 10"],
+      "answer": 0,
+      "evidence": [3],
+      "hint": "Find how many days she takes it. Count the days, with March 3 as day 1.",
+      "explain": "Her last dose is on March 12. The How long row says 10 days. If March 3 is day 1, then day 10 is March 12. Ask an adult before you take any medicine.",
+      "inference": 1,
+      "tags": ["medicine", "date-math", "count-days", "off-by-one"]
+    },
+    {
+      "id": "f4-i26",
+      "skill": "F4",
+      "passage": "f4-p14",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya's dad reads the label with her. Maya forgot her morning dose. She remembers at 6:00 PM. Her night dose is at 8:00 PM. What does the label say to do? Ask an adult before you take any medicine.",
+      "options": [
+        "Take the missed dose now. Then take the night dose at 8:00 PM.",
+        "Take 2 doses together at 8:00 PM.",
+        "Skip the missed dose. Take the night dose at 8:00 PM as usual.",
+        "Skip both doses today. Start again tomorrow morning."
+      ],
+      "answer": 2,
+      "evidence": [6],
+      "hint": "Find the row about a missed dose. Work out how many hours it is until her next dose.",
+      "explain": "She skips the missed dose and takes the night dose at 8:00 PM. The Missed a dose? row says to skip it if the next dose is less than 4 hours away, and 8:00 PM is only 2 hours after 6:00 PM. Ask an adult before you take any medicine.",
+      "inference": 1,
+      "tags": ["medicine", "missed-dose", "time-math", "condition", "problem-solving"]
+    },
+    {
+      "id": "f4-i27",
+      "skill": "F4",
+      "passage": "f4-p15",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana cannot eat peanuts or tree nuts. Which bar is safe for her, and how much does one of those bars cost?",
+      "options": ["Summit Crunch, $1.50 a bar", "Rocket Rice, 50 cents a bar", "Rocket Rice, $4 a bar", "Trail Blaze, $1 a bar"],
+      "answer": 1,
+      "evidence": [4, 5, 6],
+      "hint": "Check both the Contains row and the May contain row for every bar. Then share the box price over the bars in the box.",
+      "explain": "Rocket Rice is safe, and one bar costs 50 cents. Trail Blaze contains peanuts, and Summit Crunch may contain peanuts. Rocket Rice is $4 for 8 bars, so each bar is 50 cents.",
+      "inference": 1,
+      "tags": ["allergy", "may-contain", "unit-price", "compare"]
+    },
+    {
+      "id": "f4-i28",
+      "skill": "F4",
+      "passage": "f4-p15",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The coach buys the bar that is safe for Ana. There are 16 players, and each player gets one bar. Bars come only in full boxes. How much does the coach pay?",
+      "options": ["$4", "$8", "$18", "$24"],
+      "answer": 1,
+      "evidence": [4, 5, 6],
+      "hint": "First find the bar that is safe for Ana. Then work out how many of its boxes make 16 bars.",
+      "explain": "The coach pays $8. Rocket Rice is the only bar with no peanuts or tree nuts. A box of Rocket Rice has 8 bars for $4, so 16 bars is 2 boxes, and 2 boxes cost $8.",
+      "inference": 1,
+      "tags": ["allergy", "price-math", "box-price", "multiply"]
+    },
+    {
+      "id": "f4-i29",
+      "skill": "F4",
+      "passage": "f4-p16",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How much food does Pixel need each day?",
+      "options": [
+        "1 cup",
+        "2 cups",
+        "3 cups"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find Pixel's weight first. Then find the row whose weights include it.",
+      "explain": "Pixel needs 2 cups a day. He weighs 25 pounds, and the Dogs 21 to 40 pounds row says 2 cups a day.",
+      "inference": 1,
+      "tags": [
+        "weight-row",
+        "number-range"
+      ]
+    },
+    {
+      "id": "f4-i30",
+      "skill": "F4",
+      "passage": "f4-p16",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Sam splits Pixel's food into meals, like the bag says. How much food goes in each meal?",
+      "options": [
+        "1 cup",
+        "2 cups",
+        "Half a cup"
+      ],
+      "pictures": [
+        "🥣",
+        "🥣🥣",
+        "🥄"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Find how much food Pixel gets in a day. Then read the Meals row and share the food out.",
+      "explain": "Each meal is 1 cup. Pixel gets 2 cups a day, and the Meals row says to split it into 2 meals.",
+      "inference": 1,
+      "tags": [
+        "two-rows",
+        "divide"
+      ]
+    },
+    {
+      "id": "f4-i31",
+      "skill": "F4",
+      "passage": "f4-p17",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya plants the seeds on May 3. What is the earliest day she might see sprouts?",
+      "options": [
+        "May 4",
+        "May 10",
+        "May 13",
+        "July 22"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the row that says how long sprouts take. Use the smaller number, and count that many days on from May 3.",
+      "explain": "The earliest day is May 10. The Days to sprout row says 7 to 10 days, and 7 days after May 3 is May 10.",
+      "inference": 1,
+      "tags": [
+        "date-math",
+        "range",
+        "wrong-row"
+      ]
+    },
+    {
+      "id": "f4-i32",
+      "skill": "F4",
+      "passage": "f4-p17",
+      "format": "scene",
+      "level": 3,
+      "prompt": "Maya digs a hole for one seed. Tap the hole that matches the packet.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Hole 6 inches deep",
+          "emoji": "🕳️",
+          "sign": {
+            "shape": "rect",
+            "color": "brown",
+            "text": "6 IN"
+          }
+        },
+        {
+          "label": "Hole 1 inch deep",
+          "emoji": "🕳️",
+          "sign": {
+            "shape": "rect",
+            "color": "brown",
+            "text": "1 IN"
+          }
+        },
+        {
+          "label": "Hole 12 inches deep",
+          "emoji": "🕳️",
+          "sign": {
+            "shape": "rect",
+            "color": "brown",
+            "text": "12 IN"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Two rows have inches in them. Find the one about how deep to plant.",
+      "explain": "Maya digs the hole 1 inch deep. The Planting depth row says 1 inch. The 12 inches row is the space between seeds.",
+      "inference": 0,
+      "tags": [
+        "close-rows",
+        "number-trap"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i33",
+      "skill": "F4",
+      "passage": "f4-p18",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What should Ben wear on the trip?",
+      "options": [
+        "The jacket on its own",
+        "A sweater on its own",
+        "The jacket with a sweater under it"
+      ],
+      "pictures": [
+        "🧥",
+        "🧶",
+        "🧥🧶"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "The forecast has two parts. Find the row about rain and the row about cold days.",
+      "explain": "Ben should wear the jacket with a sweater under it. The Rain row says it keeps him dry in heavy rain, and the Warmth row says to wear a sweater under it on cold days.",
+      "inference": 1,
+      "tags": [
+        "two-rows",
+        "forecast"
+      ]
+    },
+    {
+      "id": "f4-i34",
+      "skill": "F4",
+      "passage": "f4-p18",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Ben's jacket is muddy after the trip. Sort what he should do when he washes it.",
+      "bins": [
+        "Do this",
+        "Skip this"
+      ],
+      "cards": [
+        {
+          "text": "Wash it in cold water",
+          "bin": 0,
+          "emoji": "💧"
+        },
+        {
+          "text": "Wash it in hot water",
+          "bin": 1,
+          "emoji": "♨️"
+        },
+        {
+          "text": "Close the zips first",
+          "bin": 0,
+          "emoji": "🤐"
+        },
+        {
+          "text": "Hang it up to dry",
+          "bin": 0,
+          "emoji": "👕"
+        },
+        {
+          "text": "Put it in the dryer",
+          "bin": 1,
+          "emoji": "🌀"
+        }
+      ],
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Read the Wash row and the Dry row. Check each card against them.",
+      "explain": "Ben washes it in cold water, closes the zips first and hangs it up to dry. He skips hot water and the dryer. The rules are in the Wash and Dry rows.",
+      "inference": 1,
+      "tags": [
+        "care-tag",
+        "two-rows",
+        "sort"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i35",
+      "skill": "F4",
+      "passage": "f4-p19",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Leo and Maya each buy a small bucket. How much do they pay, and what do they get for free?",
+      "options": [
+        "$12 and a free geode",
+        "$12 and a free large bucket",
+        "$6 and a free geode",
+        "$10 and a free geode"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Find the small bucket price and count two buckets. Then read the Deal row.",
+      "explain": "They pay $12 and get a free geode. A small bucket is $6, so two cost $6 + $6 = $12. The Deal row says 2 small buckets get 1 geode free.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "deal",
+        "money"
+      ]
+    },
+    {
+      "id": "f4-i36",
+      "skill": "F4",
+      "passage": "f4-p19",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam gets to the mine at 3:45 PM. What can he still buy?",
+      "options": [
+        "A small bucket",
+        "A large bucket",
+        "A geode"
+      ],
+      "pictures": [
+        "🪣",
+        "🪣",
+        "🪨"
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the two rows that say when things are sold. Compare each time with 3:45 PM.",
+      "explain": "Sam can still buy a geode. The Buckets sold row says buckets stop at 3:30 PM, but the Geodes sold row says geodes are sold until 5 PM.",
+      "inference": 1,
+      "tags": [
+        "time-rule",
+        "two-rows",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f4-i37",
+      "skill": "F4",
+      "passage": "f4-p20",
+      "format": "scene",
+      "level": 4,
+      "prompt": "Priya and her mom get to Harbor Park. Tap the gate Priya should use.",
+      "scene": "street",
+      "objects": [
+        {
+          "label": "South Gate",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "SOUTH GATE"
+          }
+        },
+        {
+          "label": "North Gate",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "NORTH GATE"
+          }
+        },
+        {
+          "label": "Box Office",
+          "emoji": "🎫",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "BOX OFFICE"
+          }
+        },
+        {
+          "label": "Staff Gate",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "red",
+            "text": "STAFF ONLY"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find Priya's section number. Then find the row that says which gate goes with that section.",
+      "explain": "Priya uses the North Gate. Her seat is in Section 3, and the Which gate row says Sections 1 to 4 use the North Gate.",
+      "inference": 1,
+      "tags": [
+        "two-rows",
+        "number-range",
+        "gate"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i38",
+      "skill": "F4",
+      "passage": "f4-p20",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya's mom wants to bring her big backpack and an umbrella. The forecast says light rain. What should she bring instead?",
+      "options": [
+        "A clear bag 12 by 12 inches or smaller, and an umbrella",
+        "Her big backpack and a rain poncho",
+        "A clear bag 12 by 12 inches or smaller, and a rain poncho",
+        "A small dark bag and a rain poncho"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Read the Bags row and the Rain row. The right answer follows both rules.",
+      "explain": "She should bring a clear bag 12 by 12 inches or smaller, and a rain poncho. The Bags row says clear bags only, and the Rain row says no umbrellas in the seats but rain ponchos are fine.",
+      "inference": 1,
+      "tags": [
+        "entry-rules",
+        "two-rows",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f4-i39",
+      "skill": "F4",
+      "passage": "f4-p20",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya and her mom want to be at the gate when it opens. The drive to Harbor Park takes 25 minutes. What is the latest time they can leave home?",
+      "options": [
+        "6:35 PM",
+        "5:35 PM",
+        "7:35 PM",
+        "6:25 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the row for when the gates open. Count back 25 minutes from that time.",
+      "explain": "They must leave by 5:35 PM. The Gates open row says 6:00 PM, and 25 minutes before 6:00 PM is 5:35 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "subtract",
+        "two-times"
+      ]
+    },
+    {
+      "id": "f4-i40",
+      "skill": "F4",
+      "passage": "f4-p21",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam's cousin will be 6. What does the box say about a child his age?",
+      "options": [
+        "He can dig, but an adult needs to help him.",
+        "He is too young. The kit is for ages 8 and up.",
+        "He can dig on his own. The warning is only for children under 3.",
+        "He can dig on his own if he wears the safety goggles."
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the whole Ages row, not just the first part. Then think about what the warning at the top is about.",
+      "explain": "He can dig, but an adult needs to help him. The Ages row says children under 8 need an adult to help. The warning about children under 3 is about small parts.",
+      "inference": 1,
+      "tags": [
+        "age-rule",
+        "warning",
+        "read-whole-row"
+      ]
+    },
+    {
+      "id": "f4-i41",
+      "skill": "F4",
+      "passage": "f4-p21",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sam wants everything ready before his cousin opens the kit. Sort each thing.",
+      "bins": [
+        "Comes in the box",
+        "Sam gets it at home"
+      ],
+      "cards": [
+        {
+          "text": "Wooden pick",
+          "bin": 0,
+          "emoji": "⛏️"
+        },
+        {
+          "text": "Spray bottle of water",
+          "bin": 1,
+          "emoji": "💦"
+        },
+        {
+          "text": "Brush",
+          "bin": 0,
+          "emoji": "🖌️"
+        },
+        {
+          "text": "Old newspaper",
+          "bin": 1,
+          "emoji": "📰"
+        },
+        {
+          "text": "Safety goggles",
+          "bin": 0,
+          "emoji": "🥽"
+        },
+        {
+          "text": "Guide book",
+          "bin": 0,
+          "emoji": "📘"
+        }
+      ],
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Read the In the box row. Then read the You also need row. Check each card against both.",
+      "explain": "The pick, brush, goggles and guide book come in the box. Sam gets the spray bottle of water and old newspaper at home. They are in the You also need row.",
+      "inference": 1,
+      "tags": [
+        "what-is-inside",
+        "two-rows",
+        "sort"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i42",
+      "skill": "F4",
+      "passage": "f4-p22",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What time must Sam check in at Dock 4?",
+      "options": [
+        "8:00 AM",
+        "9:30 AM",
+        "10:00 AM",
+        "10:30 AM"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Read the warning at the top. Then find when the boat leaves and count back.",
+      "explain": "Sam must check in by 9:30 AM. The Boat leaves row says 10:00 AM, and the warning says to check in 30 minutes before the boat leaves.",
+      "inference": 1,
+      "tags": [
+        "warning",
+        "time-math",
+        "subtract"
+      ]
+    },
+    {
+      "id": "f4-i43",
+      "skill": "F4",
+      "passage": "f4-p22",
+      "format": "tap",
+      "level": 4,
+      "prompt": "On the trip, Sam sees seals and puffins. The boat finds zero whales. What does Sam get?",
+      "options": [
+        "His money back",
+        "A new date for the same trip",
+        "A warm jacket",
+        "A free ticket for another trip"
+      ],
+      "answer": 3,
+      "evidence": [
+        8
+      ],
+      "hint": "Two rows talk about getting something back. Read both. Pick the one that matches what happened on this trip.",
+      "explain": "Sam gets a free ticket for another trip. The Whale promise row says this happens if the boat sees no whales. The Wind or fog row is for trips that are canceled.",
+      "inference": 1,
+      "tags": [
+        "condition",
+        "close-rows"
+      ]
+    },
+    {
+      "id": "f4-i44",
+      "skill": "F4",
+      "passage": "f4-p22",
+      "format": "tap",
+      "level": 4,
+      "prompt": "It is 8:15 AM on Sunday. Nobody has called Grandma Rose about the trip. What should they do?",
+      "options": [
+        "Stay home. The trip is canceled.",
+        "Wait at home until the company calls.",
+        "Pick a new date for the trip.",
+        "Go to Dock 4 for the trip. It is going ahead."
+      ],
+      "answer": 3,
+      "evidence": [
+        7
+      ],
+      "hint": "Read the Wind or fog row. Think about what it means when the call has not come by that time.",
+      "explain": "They should go to Dock 4, because the trip is going ahead. The Wind or fog row says the company calls by 8:00 AM if the trip is canceled. No call came by 8:15 AM.",
+      "inference": 1,
+      "tags": [
+        "condition",
+        "plan",
+        "no-call"
+      ]
+    },
+    {
+      "id": "f4-i45",
+      "skill": "F4",
+      "passage": "f4-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya goes to the shop on May 20. Can she buy the kit and the battery pack with her $40?",
+      "options": [
+        "Yes. The kit costs $36, so she has enough.",
+        "No. The kit costs $48, so she cannot buy even the kit.",
+        "No. The kit and the pack cost $63 together.",
+        "No. The kit costs $36 and the pack costs $15. That is $51."
+      ],
+      "answer": 3,
+      "evidence": [
+        6,
+        8,
+        9
+      ],
+      "hint": "Work out the sale price of the kit first. Then add the battery pack and compare the total with $40.",
+      "explain": "No. On May 20 the sale is on, so the kit costs $48 - $12 = $36. The battery pack costs $15 more, and $36 + $15 = $51. That is more than $40.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "sale",
+        "budget",
+        "two-rows"
+      ]
+    },
+    {
+      "id": "f4-i46",
+      "skill": "F4",
+      "passage": "f4-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya puts batteries in the robot and the remote. How many of her AA batteries from home are left?",
+      "options": [
+        "0 batteries",
+        "2 batteries",
+        "4 batteries",
+        "6 batteries"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Check which kind of battery each part uses, and which batteries come in the box.",
+      "explain": "She has 2 AA batteries left. The robot uses 4 AA batteries, and 6 - 4 = 2. The remote uses AAA batteries, and those come in the box.",
+      "inference": 1,
+      "tags": [
+        "two-rows",
+        "battery-type",
+        "close-rows"
+      ]
+    },
+    {
+      "id": "f4-i47",
+      "skill": "F4",
+      "passage": "f4-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "At the robot show, Priya's robot must run for 3 hours without stopping. Which plan works?",
+      "options": [
+        "Use one set of 4 new AA batteries.",
+        "Use her 6 AA batteries from home.",
+        "Use the battery pack, fully charged.",
+        "Use the 2 AAA batteries from the box."
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find how long the robot runs on AA batteries and how long it runs on the battery pack. Compare each with 3 hours.",
+      "explain": "Use the battery pack, fully charged. The Battery pack row says it runs the robot for 3 hours. AA batteries last about 90 minutes, and the robot holds only 4 at a time. The AAA batteries are for the remote.",
+      "inference": 1,
+      "tags": [
+        "run-time",
+        "compare",
+        "two-rows",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f4-i48",
+      "skill": "F4",
+      "passage": "f4-p24",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On the map, the trail from the campsite to the old mill is 3 inches long. How far is the walk on the trail?",
+      "options": [
+        "1 mile",
+        "1 and a half miles",
+        "3 miles",
+        "6 miles"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the map scale. Work out the trail distance for each inch on the map, then count up to 3 inches.",
+      "explain": "The walk is 1 and a half miles. The Map scale row says 1 inch on the map is half a mile on the trail. Three half miles make 1 and a half miles.",
+      "inference": 1,
+      "tags": [
+        "map-scale",
+        "multiply"
+      ]
+    },
+    {
+      "id": "f4-i49",
+      "skill": "F4",
+      "passage": "f4-p24",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The Diaz family has 5 people. They drive to Story Woods and camp for 2 nights. They use as few tents as they can. How much do they pay to camp and park?",
+      "options": [
+        "$48",
+        "$24",
+        "$53",
+        "$58"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4,
+        6
+      ],
+      "hint": "Work out how many tents 5 people need. Then find the cost for each tent each night. Last, check the row about cars.",
+      "explain": "They pay $48. Up to 4 people fit in a tent, so 5 people need 2 tents. 2 tents for 2 nights is 4 tent-nights, and 4 x $12 = $48. The car needs no day pass, because they have a camping permit.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "multiply",
+        "two-conditions",
+        "money"
+      ]
+    },
+    {
+      "id": "f4-i50",
+      "skill": "F4",
+      "passage": "f4-p24",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Ms. Ortiz gets to the ranger station at 6:30 PM on Friday. She wants to camp that night. Tap the row that shows the problem with her plan.",
+      "unit": "row",
+      "answer": [
+        5
+      ],
+      "evidence": [
+        5
+      ],
+      "hint": "Her plan has a time in it. Look for a row with a time rule, and compare.",
+      "explain": "Tap the Permit hours row. It says to buy a permit by 6:00 PM on the day you arrive, and Ms. Ortiz gets there at 6:30 PM.",
+      "inference": 1,
+      "tags": [
+        "time-rule",
+        "find-row",
+        "late"
+      ],
+      "transfer": true
     }
   ],
   "model": {

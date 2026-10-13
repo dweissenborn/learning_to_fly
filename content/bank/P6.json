@@ -119,6 +119,219 @@
       "level": 3,
       "socialLoad": 1,
       "credit": { "title": "The North Wind and the Sun", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+    },
+    {
+      "id": "p6-p06",
+      "title": "The Oak and the Reeds",
+      "kind": "fable",
+      "sentences": [
+        "A tall oak tree grew on the bank of a wide river.",
+        "Near its roots grew a patch of thin green reeds that moved in every breeze.",
+        "\"You bend every time the wind blows,\" the oak said proudly to the reeds.",
+        "\"I am much stronger than you, and I never bend at all.\"",
+        "\"We are not as strong as you,\" the reeds answered. \"So we bend, and that keeps us safe.\"",
+        "One night, a powerful storm rushed down the valley toward the river.",
+        "The wind pushed hard against the oak, but the oak stood stiff and straight and refused to move.",
+        "The reeds bent low until their tips almost touched the water.",
+        "The wind blew harder and harder.",
+        "At last, with a loud crack, the oak fell over into the river.",
+        "In the morning, the sun came out, and the air was calm again.",
+        "One by one, the reeds stood up again, as green as before.",
+        "\"I was strong,\" said the oak, \"but I could not bend.\""
+      ],
+      "picture": "🌳🌾",
+      "topics": [
+        "nature",
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Oak and the Reeds",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p6-p07",
+      "title": "The Spring Concert",
+      "kind": "story",
+      "sentences": [
+        "The Harbor Middle School band had practiced for the spring concert since January.",
+        "Ana played the trumpet, and in the last song she had a short solo, eight bars of music that she played all by herself.",
+        "Her friend Leo sat behind her at the drums.",
+        "At every practice, he kept the beat steady so that the whole band could follow it.",
+        "On the night of the concert, the school gym was full of families.",
+        "When Ana stood up for her solo, her hands felt cold on the trumpet.",
+        "The first note came out wrong and squeaky, and several people in the audience looked up in surprise.",
+        "Ana lowered her trumpet and stared at the music on her stand.",
+        "For a moment, the only sound in the gym was Leo's drum, still keeping the beat.",
+        "Leo looked at her and nodded on each beat: one, two, three, four.",
+        "On the next count of one, Ana lifted her trumpet and began to play again.",
+        "The rest of the solo was clear and strong.",
+        "After the concert, Ana packed her trumpet into its case slowly and quietly.",
+        "\"I ruined the solo,\" she told Leo.",
+        "\"You stopped, but then you started again,\" Leo said. \"That's the hard part.\"",
+        "The band teacher walked over and agreed with him.",
+        "\"A band is a team,\" she said. \"When one player stops, the others keep playing until she is ready to join again.\""
+      ],
+      "breaks": [
+        4,
+        12
+      ],
+      "picture": "🎺🥁",
+      "topics": [
+        "music",
+        "friends"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Spring Concert",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p08",
+      "title": "The Borrowed Wheel",
+      "kind": "story",
+      "sentences": [
+        "Priya's robotics club had built a small rover named Scout for the island's yearly robot challenge.",
+        "Each rover had to drive through a maze, pick up a block and carry it back to the starting line.",
+        "Teams from three different schools gathered in the library hall to compete.",
+        "Every team got two runs, and only the faster run counted.",
+        "On Priya's first run, Scout took a corner too quickly and crashed into the wall of the maze.",
+        "One of its plastic back wheels cracked completely in half.",
+        "Priya searched through the toolbox, but the club had forgotten to pack a spare wheel.",
+        "Her second run was scheduled to start in only ten minutes.",
+        "Then a girl from the Gull Island team walked over with a small bag of parts.",
+        "\"Our rover uses the same wheels,\" she said. \"You can have one of our spares.\"",
+        "Priya was surprised. \"But we are trying to beat you,\" she said.",
+        "The girl shrugged. \"It is more fun when every team gets to run.\"",
+        "With the borrowed wheel, Scout completed its second run, and Priya's team finished in second place.",
+        "The Gull Island team won the competition, and Priya's club applauded louder than anyone else.",
+        "On the bus ride home, Priya opened her notebook and started a careful list for the next challenge.",
+        "At the top, she wrote, \"Pack extra spare parts, for us and for anyone who needs one.\""
+      ],
+      "breaks": [
+        4,
+        12
+      ],
+      "picture": "🤖",
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Borrowed Wheel",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p09",
+      "title": "Finding the Way Without a Map",
+      "kind": "article",
+      "sentences": [
+        "Long ago, Polynesian sailors crossed the Pacific Ocean in large canoes and found islands that were thousands of miles apart.",
+        "They had no compass, no paper maps and no machines to show them where they were.",
+        "Instead, their navigators studied the sky, the sea and the birds, and they kept everything they knew in their memories.",
+        "The stars were their most important guide.",
+        "A navigator learned the exact places where many stars rose and set along the horizon, the line where the sea meets the sky.",
+        "Each of those places marked a different direction.",
+        "During the day, navigators studied the ocean swells, which are long, steady waves that can travel across the sea for hundreds of miles.",
+        "By feeling how the canoe rocked on the swells, a navigator could tell whether the canoe was still heading the right way, even when clouds hid the sky.",
+        "Near the end of a voyage, the crew watched for clues that land was close.",
+        "Some seabirds fly out to sea to catch fish in the morning and return to land in the evening, so a canoe that followed them at sunset could find an island.",
+        "Clouds also tend to gather and stay above an island, even when the island itself is still too far away to see.",
+        "Learning all of this took many years.",
+        "Young navigators studied with older ones, first on land and then at sea, until they could picture the whole voyage in their minds.",
+        "A long voyage could last for weeks, so the crew had to trust the navigator, and the navigator had to trust years of careful practice.",
+        "Over time, fewer people learned these skills, and some of the knowledge was almost forgotten.",
+        "Then, in the 1970s, a crew built a double canoe, which is two canoes joined side by side, using an old design.",
+        "They sailed it from Hawaii to Tahiti, a trip of more than 2,000 miles, and the navigator used no compass or charts.",
+        "The voyage took about a month, and the canoe arrived safely.",
+        "Since then, many new navigators have learned the old ways, and they now teach them to younger students."
+      ],
+      "breaks": [
+        3,
+        11,
+        14
+      ],
+      "picture": "⭐🛶🌊",
+      "topics": [
+        "ocean",
+        "maps"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Finding the Way Without a Map",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p10",
+      "title": "The Two Halves",
+      "kind": "story",
+      "sentences": [
+        "Every spring, heavy rain carries new stones down the creek in Story Woods.",
+        "Maya spent a whole Saturday morning searching its banks for geodes, which are round rocks that can be hollow inside and lined with crystals.",
+        "From the outside, a geode looks like a plain, bumpy gray ball, so the only way to know what is inside is to open it.",
+        "By noon, after hours of careful searching, Maya had found just one, about the size of an orange.",
+        "It felt light for its size, which is often a sign that a geode is hollow.",
+        "Near the old mill, she noticed a boy of about eight sitting on a rock beside an empty bucket.",
+        "His grandpa was sitting on a wooden bench nearby, reading a newspaper.",
+        "The boy told Maya that he had been searching since breakfast and had not found a single geode.",
+        "He said it quietly, and he kept his eyes on his empty bucket the entire time.",
+        "Maya looked down at the bumpy gray geode resting in her hand.",
+        "She had wanted a geode for her rock collection for a very long time.",
+        "But she also remembered her very first rock hunt, when she had walked home with nothing.",
+        "\"Do you want to see what is inside this one?\" she asked.",
+        "The boy's grandpa smiled and took out a geode cracker, a chain that wraps around a rock and squeezes it until it splits.",
+        "Maya and the boy wrapped the chain around the middle of the geode, and the grandpa slowly pressed the handles together.",
+        "With a sharp snap, the geode broke into two even halves.",
+        "Inside, both halves sparkled with small, clear quartz crystals.",
+        "Maya carefully held out one sparkling half to the boy.",
+        "\"Now we both have one,\" she said.",
+        "The boy held his half up to the sunlight and turned it slowly, watching the crystals flash.",
+        "Maya's half was only half of a geode, but on the walk home, she felt just as happy as if she had kept the whole thing."
+      ],
+      "breaks": [
+        5,
+        12,
+        17
+      ],
+      "picture": "💎🪨",
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Two Halves",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -318,6 +531,632 @@
       "explain": "One good answer is: I agree with the story. I think being gentle helps people listen. Another person might disagree, and that is fine too. Any honest answer is fine.",
       "inference": 2,
       "tags": ["opinion", "big-idea", "kindness", "fable"]
+    },
+    {
+      "id": "p6-i11",
+      "skill": "P6",
+      "passage": "p6-p06",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "What big idea does this fable teach?",
+      "options": [
+        "Being able to bend when things change can be a kind of strength.",
+        "Standing stiff and never moving is the best way to be strong.",
+        "Small things are always stronger than big things.",
+        "It is best to stay away from rivers in a storm."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4,
+        9,
+        11
+      ],
+      "hint": "Compare what the oak did in the storm with what the reeds did. Which one was still standing in the morning?",
+      "explain": "Being able to bend when things change can be a kind of strength. The oak would not bend, and it fell. The reeds bent low, and in the morning they stood up again.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "flexibility",
+        "fable",
+        "compare"
+      ]
+    },
+    {
+      "id": "p6-i12",
+      "skill": "P6",
+      "passage": "p6-p06",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows the reeds' way worked.",
+      "answer": [
+        11
+      ],
+      "evidence": [
+        11
+      ],
+      "hint": "Read what happened after the storm. Find what the reeds did in the morning.",
+      "explain": "\"One by one, the reeds stood up again, as green as before.\" They bent in the storm, and they were safe.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "flexibility",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i13",
+      "skill": "P6",
+      "passage": "p6-p06",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Is it better to bend like the reeds or to stand firm like the oak? What do you think? Build your answer.",
+      "frame": "I think it is better to {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "bend like the reeds",
+            "stand firm like the oak",
+            "bend sometimes and stand firm sometimes"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the reeds were still standing in the morning",
+            "some things are worth standing firm for",
+            "when plans change, bending helps me keep going",
+            "it depends on the problem"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "Once my plan changed, and I made a new one.",
+            "Someone else might choose the oak's way.",
+            "I want to try bending more often."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        9,
+        11
+      ],
+      "hint": "Think about what happened to the oak and to the reeds. Then think about a time you had to change your plan.",
+      "explain": "One good answer is: I think it is better to bend sometimes and stand firm sometimes. I think so because it depends on the problem. Someone else might choose the oak's way. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "flexibility",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i14",
+      "skill": "P6",
+      "passage": "p6-p07",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What does this story say about friendship?",
+      "options": [
+        "A good friend can help you keep going after a mistake.",
+        "A good friend plays louder so that no one hears your mistake.",
+        "A good friend tells you that you did not make a mistake.",
+        "A good friend takes over your part when you stop."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9,
+        10,
+        14
+      ],
+      "hint": "Find what Leo did when Ana stopped playing. Then read what he said to her after the concert.",
+      "explain": "A good friend can help you keep going after a mistake. When Ana stopped, Leo kept the beat and nodded on each count, and she began to play again. After the concert, he told her that starting again was the hard part.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "friendship"
+      ]
+    },
+    {
+      "id": "p6-i15",
+      "skill": "P6",
+      "passage": "p6-p07",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence where Ana chose to keep going after her mistake.",
+      "answer": [
+        10
+      ],
+      "evidence": [
+        10
+      ],
+      "hint": "Find the moment after Ana stopped playing. What did she choose to do next?",
+      "explain": "\"On the next count of one, Ana lifted her trumpet and began to play again.\" She had made a mistake in front of a full gym, and she kept going. That took courage.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "courage",
+        "turning-point"
+      ]
+    },
+    {
+      "id": "p6-i16",
+      "skill": "P6",
+      "passage": "p6-p07",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Leo said that starting again is the hard part. What do you think? Build your answer.",
+      "frame": "I think the hardest part is {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Hardest part",
+          "options": [
+            "making the mistake",
+            "starting again after a mistake",
+            "playing in front of people",
+            "waiting to find out what others think"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "you have to be brave to keep going",
+            "everyone is watching",
+            "it is hard to stop thinking about the mistake",
+            "a friend can make it easier"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "Once I started again after a mistake.",
+            "A friend once helped me keep going.",
+            "I want to be brave like Ana."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        10,
+        14
+      ],
+      "hint": "Look at what happened just after Ana's first note, and what Leo said later. Then decide which part you think is hardest.",
+      "explain": "One good answer is: I think the hardest part is starting again after a mistake. I think so because you have to be brave to keep going. Once I started again after a mistake. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "courage",
+        "friendship"
+      ]
+    },
+    {
+      "id": "p6-i17",
+      "skill": "P6",
+      "passage": "p6-p08",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What does this story say about kindness?",
+      "options": [
+        "You can be kind to someone even when you are competing against them.",
+        "You should let the other team win so that they feel happy.",
+        "You should only help the people on your own team.",
+        "Kindness means bringing the most spare parts to a contest."
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "Find what the Gull Island girl did, and what Priya said back. Ask: why was her kind act a surprise?",
+      "explain": "You can be kind to someone even when you are competing against them. The Gull Island girl gave Priya a spare wheel, even though Priya's team was trying to beat hers.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "kindness"
+      ]
+    },
+    {
+      "id": "p6-i18",
+      "skill": "P6",
+      "passage": "p6-p08",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows Priya plans to pass the kindness on to others.",
+      "answer": [
+        15
+      ],
+      "evidence": [
+        15
+      ],
+      "hint": "Read the end of the story. Find what Priya writes for the next challenge.",
+      "explain": "\"Pack extra spare parts, for us and for anyone who needs one.\" Priya plans to help other teams the way the Gull Island girl helped her.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "kindness"
+      ]
+    },
+    {
+      "id": "p6-i19",
+      "skill": "P6",
+      "passage": "p6-p08",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Which ones are kind to someone you are competing against? Which ones are only about winning?",
+      "bins": [
+        "Kind while competing 🤝",
+        "Only about winning 🏆"
+      ],
+      "cards": [
+        {
+          "text": "Ana lends her spare shin guards to a player on the other team.",
+          "bin": 0
+        },
+        {
+          "text": "Leo cheers when a skater in the contest lands a hard trick.",
+          "bin": 0
+        },
+        {
+          "text": "Ben helps a runner from the other school stand up after a slip.",
+          "bin": 0
+        },
+        {
+          "text": "A team hides its spare wheels so that no other team can use them.",
+          "bin": 1
+        },
+        {
+          "text": "A player keeps the ball every time so that only he can score.",
+          "bin": 1
+        },
+        {
+          "text": "A team plays loud music to make the other team lose focus.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        9,
+        11
+      ],
+      "hint": "Ask: does this help someone who is trying to beat you? Or does it only help you win?",
+      "explain": "Kind while competing: lending shin guards, cheering for another skater, and helping a runner stand up. Only about winning: hiding spare wheels, keeping the ball, and playing loud music. The Gull Island girl helped Priya even though their teams were competing.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "big-idea",
+        "kindness",
+        "apply-idea"
+      ]
+    },
+    {
+      "id": "p6-i20",
+      "skill": "P6",
+      "passage": "p6-p08",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Would you give your spare wheel to the team you were trying to beat? Build your answer.",
+      "frame": "I {0} give the wheel. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "would",
+            "might",
+            "would not"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "it is more fun when every team gets to run",
+            "I would want help if it were me",
+            "I want to win in a fair way",
+            "we might need it ourselves"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "Someone helped me in a game once.",
+            "I helped another team once.",
+            "I would pack extra parts, like Priya."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        11,
+        15
+      ],
+      "hint": "Think about how Priya felt when her wheel broke. Then think about what you would do if you were the Gull Island girl.",
+      "explain": "One good answer is: I would give the wheel. I think so because I would want help if it were me. Another person might choose differently. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "kindness"
+      ]
+    },
+    {
+      "id": "p6-i21",
+      "skill": "P6",
+      "passage": "p6-p09",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What does this article show about courage?",
+      "options": [
+        "Courage can come from years of careful learning and trust in your team.",
+        "Courage means sailing without any plan and hoping to find land.",
+        "Courage means never needing to learn from older people.",
+        "Courage is only for people who sail across an ocean."
+      ],
+      "answer": 0,
+      "evidence": [
+        11,
+        12,
+        13
+      ],
+      "hint": "Find the paragraph about how navigators learned. Ask: what made the crew able to sail for weeks with no land in sight?",
+      "explain": "Courage can come from years of careful learning and trust in your team. Navigators studied for many years with older navigators, and on voyages that lasted weeks, the crew had to trust the navigator.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "courage"
+      ]
+    },
+    {
+      "id": "p6-i22",
+      "skill": "P6",
+      "passage": "p6-p09",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Which detail best supports the idea that navigators needed many years of learning?",
+      "options": [
+        "Young navigators studied with older ones, first on land and then at sea.",
+        "Some seabirds return to land in the evening.",
+        "The trip from Hawaii to Tahiti took about a month.",
+        "Clouds tend to gather and stay above an island."
+      ],
+      "answer": 0,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Find the sentence that says learning took many years. Then read the sentence right after it.",
+      "explain": "Young navigators studied with older ones, first on land and then at sea. This sentence comes right after \"Learning all of this took many years\" and shows how that learning happened.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "p6-i23",
+      "skill": "P6",
+      "passage": "p6-p09",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Which part of the navigators' work do you think took the most courage? Build your answer.",
+      "frame": "I think the bravest part was {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Bravest part",
+          "options": [
+            "sailing for weeks with no compass",
+            "learning for many years",
+            "trusting the navigator",
+            "bringing back the old ways"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "it takes a lot of patience",
+            "you have to trust what you know",
+            "they were far from any land",
+            "the knowledge was almost forgotten"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I would like to learn the stars.",
+            "I would feel safer with a map.",
+            "An older person once taught me something hard."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        7,
+        12,
+        13,
+        14,
+        16
+      ],
+      "hint": "Reread the paragraph about learning and the paragraph about the voyage to Tahiti. Pick the part that seems bravest to you.",
+      "explain": "One good answer is: I think the bravest part was sailing for weeks with no compass. I think so because you have to trust what you know. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "courage"
+      ]
+    },
+    {
+      "id": "p6-i24",
+      "skill": "P6",
+      "passage": "p6-p10",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What does this story say about kindness?",
+      "options": [
+        "Sharing something you care about can make two people happy.",
+        "Being kind means giving away everything that you find.",
+        "It is kind to help someone search until they find their own.",
+        "You should only share the things that you do not want."
+      ],
+      "answer": 0,
+      "evidence": [
+        10,
+        17,
+        18,
+        19,
+        20
+      ],
+      "hint": "Find what Maya wanted, and what she did with the geode. Then read how she felt on the walk home.",
+      "explain": "Sharing something you care about can make two people happy. Maya had wanted a geode for a long time, but she gave the boy half. He watched his crystals flash, and she felt just as happy as if she had kept it all.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "kindness"
+      ]
+    },
+    {
+      "id": "p6-i25",
+      "skill": "P6",
+      "passage": "p6-p10",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why did Maya decide to share her geode with the boy?",
+      "options": [
+        "She remembered walking home with nothing from her own first rock hunt.",
+        "She did not want a geode for her collection.",
+        "The boy's grandpa asked her to give the boy half.",
+        "She wanted to use the grandpa's geode cracker."
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "Read the end of the second paragraph. Look for the word \"But\" and what comes after it.",
+      "explain": "She remembered walking home with nothing from her own first rock hunt. The second paragraph says she wanted the geode, but she also remembered that day. The grandpa's tool comes later, after she makes her offer.",
+      "inference": 2,
+      "tags": [
+        "hidden-reason",
+        "key-detail",
+        "kindness"
+      ]
+    },
+    {
+      "id": "p6-i26",
+      "skill": "P6",
+      "passage": "p6-p10",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Maya gave away half of something she wanted. What do you think about her choice? Build your answer.",
+      "frame": "I think Maya's choice was {0}. I think so because {1}. If I found the geode, I would {2}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "kind",
+            "kind and hard",
+            "surprising"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Reason from the story",
+          "options": [
+            "she wanted it, but she shared anyway",
+            "the boy had found nothing all morning",
+            "now two people have crystals",
+            "she remembered her own first rock hunt"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "What I would do",
+          "options": [
+            "share it like Maya",
+            "keep it for my collection",
+            "help the boy look for his own",
+            "not be sure what to do"
+          ],
+          "rubric": 4
+        }
+      ],
+      "evidence": [
+        10,
+        11,
+        17,
+        18,
+        20
+      ],
+      "hint": "Think about what Maya gave up and what she got back. Then imagine that you found the geode.",
+      "explain": "One good answer is: I think Maya's choice was kind and hard. I think so because she wanted it, but she shared anyway. If I found the geode, I would share it like Maya. Any honest answer is fine, and keeping it is an honest answer too.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "kindness"
+      ]
     }
   ],
   "model": {

@@ -185,6 +185,410 @@
       "level": 2,
       "socialLoad": 0,
       "credit": { "title": "The Bird Bowl", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "n3-p10",
+      "title": "The Snapped Chain",
+      "kind": "story",
+      "picture": "🚲🔧",
+      "sentences": [
+        "On Saturday morning, Leo and Ben rode their bikes to the trails in Story Woods.",
+        "They planned to ride up to the old mill and eat lunch by the creek.",
+        "Halfway up the first hill, Ben's chain snapped with a loud click.",
+        "His pedals spun around, but the back wheel did not move.",
+        "Ben got off and looked at the broken chain lying in the dirt.",
+        "\"Okay, let's think about what we can do,\" Leo said in a calm voice.",
+        "They could push both bikes up to the mill, but that was two more miles.",
+        "They could call Ben's dad, but he was at work until three o'clock.",
+        "Or they could walk back down to Okafor's Bike Shop, which was only ten minutes away.",
+        "They chose the bike shop.",
+        "Mr. Okafor fixed the chain with a new link while the boys waited.",
+        "Then they rode back up the hill and ate a late lunch by the creek."
+      ],
+      "topics": ["transport", "nature"],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": { "title": "The Snapped Chain", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "n3-p11",
+      "title": "No Ferry Today",
+      "kind": "story",
+      "picture": "⛴️🌬️",
+      "sentences": [
+        "For three weeks, Ms. Ortiz's science class had been getting ready for a trip to Seal Point.",
+        "Seal Point is a rocky island across the bay, where dozens of seals rest in the sun.",
+        "The plan was to take the nine o'clock ferry, count the seals and record what each one was doing.",
+        "Sam had even drawn a map of the island that showed the best places to stand.",
+        "But on Tuesday morning, a strong wind was pushing tall, gray waves into the harbor.",
+        "When the class reached the dock, a sign on the ferry office said, \"All ferries cancelled today because of high wind.\"",
+        "A few students groaned, and Sam slowly folded his map in half.",
+        "Ms. Ortiz read the sign twice, and then she turned to face the class.",
+        "\"Our plan has changed, so let's look at our choices,\" she said in a calm voice.",
+        "She wrote three choices in her notebook and read them aloud.",
+        "The class could go back to school and watch a video about seals.",
+        "They could wait on the dock in case the wind dropped.",
+        "Or they could visit the Sea Center next to the ferry office, which has a touch tank full of crabs and sea stars.",
+        "Priya pointed to the word \"today\" on the sign and asked Ms. Ortiz to cross out waiting.",
+        "Ben said a video would be fine, but at the Sea Center they could study real animals.",
+        "The class voted, and most students chose the Sea Center.",
+        "Inside, they counted eleven crabs and seven sea stars, and Sam drew a new map that showed where each animal was hiding.",
+        "Before they walked back to school, Ms. Ortiz phoned the ferry company and moved the Seal Point trip to the next Tuesday."
+      ],
+      "breaks": [6, 13],
+      "topics": ["ocean", "animals", "school"],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": { "title": "No Ferry Today", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "n3-p12",
+      "title": "The Dough That Did Not Rise",
+      "kind": "story",
+      "picture": "🍞🌡️",
+      "sentences": [
+        "Every Saturday, Rose's Bakery sells forty loaves of seed bread, and Sam helps Grandma Rose bake them.",
+        "On Friday evening, she mixes the dough and leaves it in big bowls so it can rise slowly overnight.",
+        "Dough rises because yeast, a tiny living thing in the dough, makes bubbles of gas when it is warm.",
+        "But this Saturday, when Sam lifted the towels off the bowls, the dough was just as flat as it had been the night before.",
+        "Grandma Rose did not panic.",
+        "\"Let's check one thing at a time,\" she said.",
+        "First, Sam read the recipe card while Grandma Rose checked her notes from the night before, and every amount matched.",
+        "Next, they looked at the yeast packet, and its date showed that it was still fresh.",
+        "Then Sam noticed that his fingers felt cold, so he looked at the thermometer on the wall.",
+        "It showed only 48 degrees, which was much colder than the bakery usually was.",
+        "Grandma Rose checked the heater and found that it had switched off.",
+        "A storm had made the power go out for a short time in the night, and the heater had not turned back on.",
+        "Grandma Rose nodded, because now she knew why the dough was still flat.",
+        "She pressed the heater's reset button, and warm air began to blow.",
+        "Then she and Sam moved the bowls beside the warm oven and covered them with clean towels.",
+        "Sam made a sign for the door that said, \"Fresh bread at 11 AM today. Thank you for waiting!\"",
+        "By ten o'clock, the dough had doubled in size, and at eleven the first warm loaves were on the shelves."
+      ],
+      "breaks": [4, 13],
+      "topics": ["food", "weather"],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": { "title": "The Dough That Did Not Rise", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "n3-p13",
+      "title": "The Rained-Out Final",
+      "kind": "story",
+      "picture": "⚽🌧️",
+      "sentences": [
+        "Ana and Ben's soccer team had won every game that autumn, and the league final was set for Saturday morning at the Harbor Middle School field.",
+        "Grandma Rose had promised to bring orange slices, and Sam had painted a banner for the fence.",
+        "But on Friday night, heavy rain began to fall, and it was still falling the next morning.",
+        "When the twins reached the field in their raincoats, wide puddles covered the center circle, and the grass squelched under their shoes.",
+        "Their coach was already there, talking with the groundskeeper, who looks after the school's grass.",
+        "A few minutes later, she told the team that the league did not allow games on a flooded field, so the final could not be played that day.",
+        "Ben stared at the puddles and let out a long breath, but he did not argue.",
+        "\"We have a problem to solve,\" the coach said, \"so let's look at every choice before we pick one.\"",
+        "Grandma Rose offered the back room of her bakery, just across the street, as a dry place to think.",
+        "There, the coach wrote four choices on a large sheet of paper.",
+        "The team could play in the school gym that afternoon, play on the field on Sunday, play on the following Saturday, or share the trophy with the other team without playing.",
+        "Next, they checked each choice carefully.",
+        "Ana phoned the school office and learned that a basketball tournament had booked the gym for the entire weekend.",
+        "Ben opened the weather map on his tablet, which showed rain until late Saturday night and then sunshine all day on Sunday.",
+        "However, the groundskeeper had explained that soaked grass needs two full dry days before it is firm enough for a game.",
+        "Sharing the trophy was still possible, but nobody on the team wanted to finish the season without playing the final.",
+        "Only one choice was left: the following Saturday.",
+        "Before anyone cheered, the coach phoned the other team's coach to make sure the new date worked for both teams, and he agreed.",
+        "The team spent the rest of the morning in the bakery, planning new plays and eating Grandma Rose's orange slices.",
+        "One week later, the final was played under a clear sky on a dry, firm field."
+      ],
+      "breaks": [6, 11, 16],
+      "topics": ["sports", "weather"],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": { "title": "The Rained-Out Final", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "n3-p14",
+      "title": "The Upside-Down Map",
+      "kind": "story",
+      "picture": "🗺️🌲",
+      "sentences": [
+        "Sam and Ben wanted to hike to the old mill in Story Woods.",
+        "Sam carried the trail map, and Pixel walked next to him.",
+        "At a fork in the trail, Sam looked at the map and turned left.",
+        "Twenty minutes later, the boys came to the creek, not the mill.",
+        "Sam looked at the map again.",
+        "The arrow for north was pointing down at his shoes.",
+        "He had held the map upside down, so he had turned the wrong way.",
+        "Sam turned the map the right way up.",
+        "Then the boys walked back to the fork and turned right.",
+        "Soon they saw the old mill in front of them."
+      ],
+      "topics": [
+        "maps",
+        "nature"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Upside-Down Map",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p15",
+      "title": "Clouds over Lantern Peaks",
+      "kind": "story",
+      "picture": "☁️🌠🔭",
+      "sentences": [
+        "On Friday night, Sam, Maya and Grandma Rose drove up to the lookout on Lantern Peaks.",
+        "They wanted to watch a meteor shower.",
+        "Meteors are tiny bits of space dust and rock that burn up high in the sky and make bright streaks of light.",
+        "But when they got out of the car, thick clouds covered the whole sky.",
+        "They could not see a single star.",
+        "Maya sighed, and Sam stared up at the gray sky.",
+        "Then Grandma Rose said, \"Our plan has changed, so let's think about what we can do.\"",
+        "They could wait in the car and hope the clouds would move.",
+        "They could drive home right away.",
+        "Or they could visit the observatory next to the lookout, which was open late.",
+        "They chose the observatory.",
+        "Inside, a guide showed them photos of meteors and said the shower would go on for three more nights.",
+        "Sam checked the weather report, and it said the sky would be clear on Saturday.",
+        "So on Saturday night, they drove back up and counted twenty-two meteors."
+      ],
+      "topics": [
+        "space",
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Clouds over Lantern Peaks",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p16",
+      "title": "The Silent Keyboard",
+      "kind": "story",
+      "picture": "🎹🎧",
+      "sentences": [
+        "Ben plays the keyboard in the Harbor Middle School band.",
+        "On Monday night, he practiced a new song at home.",
+        "He wore headphones, so the music would not bother Ana while she did her homework.",
+        "When he finished, he packed the keyboard into its case.",
+        "He did not unplug the headphones, so they went into the case too.",
+        "The next day, the band met in the music room to practice.",
+        "Ben switched on his keyboard, and the green power light came on.",
+        "But when he pressed the keys, the speakers made no sound at all.",
+        "Leo, who plays the drums, came over to help.",
+        "Leo saw a thin black cord going from the back of the keyboard into the case.",
+        "It led to Ben's headphones.",
+        "On his keyboard, when headphones are plugged in, the sound goes only to them and not to the speakers.",
+        "Ben unplugged the headphones and pressed a key, and a clear note rang out.",
+        "The band started the new song on time."
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Silent Keyboard",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p17",
+      "title": "The Dull Agates",
+      "kind": "story",
+      "picture": "🪨✨",
+      "sentences": [
+        "For a month, Maya had been polishing beach agates in a rock tumbler in Ms. Ortiz's classroom.",
+        "A rock tumbler is a small barrel that turns slowly, day and night, with stones, water and grit inside.",
+        "Grit is a sandy powder that grinds the stones smooth.",
+        "Every week, Maya washed the stones and the barrel, and then she added a finer grit.",
+        "In the last week, she used a polish that should make the agates bright and shiny.",
+        "But when Maya opened the barrel on Friday, the agates were dull and cloudy.",
+        "Under a magnifying glass, she could see tiny scratches all over them.",
+        "Ms. Ortiz explained that scratches like these usually come from coarse grit, the roughest kind, which Maya had used in the first week.",
+        "Together they searched the barrel and found a few coarse grains stuck in a narrow groove inside the lid.",
+        "Maya had scrubbed the barrel every week, but the groove was too thin to see into.",
+        "During polish week, the hidden grit had fallen out and scratched the stones as they turned.",
+        "The school rock show was fifteen days away, so Maya and Ms. Ortiz compared two fixes.",
+        "Maya could start over with coarse grit, which would take four more weeks.",
+        "Or she could scrub the lid groove with an old toothbrush and repeat only the fine grit and polish weeks.",
+        "Ms. Ortiz said the scratches were shallow enough for fine grit to remove them.",
+        "Maya chose the second fix, because it would take two weeks and be ready in time.",
+        "Two weeks later, the agates came out bright and smooth, and the next day Maya set twelve of them on a black cloth at the rock show."
+      ],
+      "breaks": [
+        5,
+        11
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Dull Agates",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p18",
+      "title": "The Concert Moves Inside",
+      "kind": "story",
+      "picture": "🎺🌬️",
+      "sentences": [
+        "The Harbor Middle School band had practiced for six weeks for its spring concert.",
+        "The concert was planned for two o'clock on Saturday, at the bandstand in the harbor park.",
+        "Maya would play the flute, and Leo would play the drums.",
+        "On Saturday morning, a strong wind began to blow in from the sea.",
+        "Flags on the harbor flapped hard, and paper cups rolled across the park.",
+        "At the bandstand, the wind kept lifting the sheet music off the music stands.",
+        "Ms. Gray, the music teacher, gathered the band under the roof of the bandstand.",
+        "\"The wind has changed our plan, so let's list what we could do,\" she said calmly.",
+        "The band could play outside and hold the music down with clothespins.",
+        "They could move the concert to the school gym, which was free all afternoon.",
+        "Or they could wait and play on the next Saturday.",
+        "Maya tried two clothespins on her stand, but the wind still bent the pages and turned them over.",
+        "Leo said that many families had already planned to come today.",
+        "So the band chose the gym.",
+        "Moving the concert caused a new problem, because the families would go to the harbor, not the school.",
+        "Sam drew a simple map from the bandstand to the gym, and Ms. Gray taped copies to the bandstand posts.",
+        "The school also sent a message to every family about the new place.",
+        "At two o'clock, almost every chair in the gym was full.",
+        "The band played all six songs, and not one page blew away."
+      ],
+      "breaks": [
+        6,
+        14
+      ],
+      "topics": [
+        "music",
+        "weather"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Concert Moves Inside",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p19",
+      "title": "The Cracked Wheel",
+      "kind": "story",
+      "picture": "🤖🔴🛞",
+      "sentences": [
+        "Every spring, the observatory on Lantern Peaks holds Mars Day, and the biggest event is the rover challenge.",
+        "Behind the observatory is the Mars yard, a field of red sand, gravel and rocks that looks like the surface of Mars.",
+        "Each rover must drive from the starting line to a flag and back, and the fastest rover that finishes wins.",
+        "Priya wanted her rover to be faster this year.",
+        "So she replaced its heavy rubber wheels with light plastic wheels that she had printed on the school's 3D printer.",
+        "An hour before the challenge, Priya and Sam took the rover for a practice run.",
+        "Halfway across the yard, it rolled over a strip of sharp gravel, and one plastic wheel cracked.",
+        "After that, the cracked wheel could not grip the ground, so the rover kept pulling to the left.",
+        "It drove in a slow circle and never reached the flag.",
+        "Priya carried the rover back to her table and took a long, slow breath.",
+        "\"My plan has to change, but we still have an hour,\" she said.",
+        "Sam remembered reading that a real rover on Mars once got holes in its wheels from sharp rocks.",
+        "Its team on Earth kept driving it, but they planned routes that went around the sharpest rocks.",
+        "Priya could do the same thing: put on her one spare plastic wheel and steer around the gravel.",
+        "That plan was fast, but if a second wheel cracked, she would have no spare left.",
+        "Her other choice was to put the old rubber wheels back on.",
+        "They were heavy and would make the rover slower, but they had crossed sharp gravel many times without any damage.",
+        "Priya read the rules again, and they said that a rover that stops before the flag gets no score.",
+        "She decided that finishing was more important than being fast, so she chose the rubber wheels.",
+        "In the challenge, her rover rolled straight over the gravel, touched the flag and came back.",
+        "It finished in third place, and Priya wrote a new goal in her notebook: design a light wheel that is also strong."
+      ],
+      "breaks": [
+        5,
+        11,
+        17
+      ],
+      "topics": [
+        "robots",
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Cracked Wheel",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p20",
+      "title": "The Rained-Out Dig",
+      "kind": "story",
+      "picture": "🦕🌧️⛏️",
+      "sentences": [
+        "Last summer, paleontologists from the Harbor Town Museum discovered the bones of a duck-billed dinosaur in Red Rock Quarry.",
+        "Paleontologists are scientists who study fossils, which are the remains or traces of living things from long ago, preserved in rock.",
+        "This kind of dinosaur ate plants and lived more than 66 million years ago.",
+        "The museum invited Ms. Ortiz's science club to help with the excavation, or careful digging, on the first Saturday in October.",
+        "Maya packed her own soft brush and a notebook for sketching every bone the club uncovered.",
+        "But heavy rain fell all Friday night and continued into Saturday morning.",
+        "When the club arrived, the lead paleontologist, Dr. Bell, was waiting for them at the museum instead of the quarry.",
+        "She explained that the rain had turned the clay in the quarry into deep, slippery mud.",
+        "In mud, diggers cannot tell where a bone ends and the surrounding rock begins, so they could easily damage a fossil by accident.",
+        "For that reason, her team never excavates in the quarry while the ground is wet.",
+        "Maya looked down at her brush and was quiet for a moment.",
+        "Then she asked Dr. Bell what the club could do instead.",
+        "Dr. Bell described two possible choices.",
+        "The club could go home and wait for a dry Saturday to dig.",
+        "Or they could spend the morning in the museum's preparation lab, where workers carefully clean bones that were collected last summer.",
+        "Ben worried that the lab would be boring, but Dr. Bell promised that the club would use real tools on real fossils.",
+        "After a short discussion, the club voted for the lab.",
+        "In the lab, each student used a small metal pick and a soft brush to remove rock from around a bone.",
+        "The work was slow, because one careless scrape could chip the fossil underneath.",
+        "Maya uncovered part of a tooth, and she sketched it in her notebook.",
+        "Two weeks later, on a dry, sunny Saturday, the club finally excavated in the quarry and found a rib bone."
+      ],
+      "breaks": [
+        5,
+        12,
+        17
+      ],
+      "topics": [
+        "dinosaurs",
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Rained-Out Dig",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -539,6 +943,1113 @@
       "inference": 2,
       "gatecheck": true,
       "tags": ["cause-unstated", "world-knowledge"]
+    },
+    {
+      "id": "n3-i21",
+      "skill": "N3",
+      "passage": "n3-p10",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Leo and Ben fix the problem?",
+      "options": ["They walked to Okafor's Bike Shop, and Mr. Okafor fixed the chain.", "They called Ben's dad at work, and he came to drive them home.", "They pushed both bikes two more miles up to the old mill.", "Leo tied the broken chain back together with a piece of string."],
+      "pictures": ["🔧", "🚗", "🚲", "🧵"],
+      "answer": 0,
+      "evidence": [8, 9, 10],
+      "hint": "Find the three choices the boys thought about. Then find the one they chose and what happened next.",
+      "explain": "They walked to Okafor's Bike Shop, and Mr. Okafor fixed the chain with a new link. The story says they chose the bike shop, near the end.",
+      "inference": 1,
+      "tags": ["problem-solving", "plan-change", "part-breaks"]
+    },
+    {
+      "id": "n3-i22",
+      "skill": "N3",
+      "passage": "n3-p10",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "Fill in the story map: the problem, the plan and the ending.",
+      "slots": [
+        { "kind": "problem", "label": "What was the problem?", "options": ["Ben's bike chain snapped on the hill.", "Leo got lost in Story Woods.", "The boys forgot their lunch."], "answer": [0] },
+        { "kind": "plan", "label": "What was their plan?", "options": ["Push both bikes up to the old mill.", "Walk to the bike shop to get the chain fixed.", "Wait for Ben's dad to finish work."], "answer": [1] },
+        { "kind": "ending", "label": "How did it end?", "options": ["They went home without lunch.", "They ate lunch at the bike shop.", "They ate a late lunch by the creek."], "answer": [2] }
+      ],
+      "evidence": [2, 9, 11],
+      "hint": "Find what went wrong on the hill. Then find the choice the boys picked. Then read the last sentence.",
+      "explain": "The problem was that Ben's chain snapped. The plan was to walk to the bike shop to get it fixed. At the end, they ate a late lunch by the creek. Look at the third sentence, the tenth sentence and the last sentence.",
+      "inference": 0,
+      "tags": ["problem-solving", "problem", "plan", "ending", "plan-change"]
+    },
+    {
+      "id": "n3-i23",
+      "skill": "N3",
+      "passage": "n3-p11",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did Priya ask Ms. Ortiz to cross out waiting on the dock?",
+      "options": ["Every ferry was cancelled for the whole day, so waiting would not help.", "The dock was too crowded for the whole class to wait there.", "She wanted to go back to school and watch the video about seals.", "The wind had already stopped, so the ferry would come soon."],
+      "answer": 0,
+      "evidence": [5, 13],
+      "hint": "Read the sign at the end of the first paragraph again. Think about what the word Priya pointed to tells you about the ferries.",
+      "explain": "The sign said all ferries were cancelled today, so no ferry would come even if the wind dropped. Priya pointed to the word \"today\" at the start of the third paragraph.",
+      "inference": 1,
+      "tags": ["problem-solving", "options", "cause-unstated"]
+    },
+    {
+      "id": "n3-i24",
+      "skill": "N3",
+      "passage": "n3-p11",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What else could the class have done instead of going to the Sea Center?",
+      "options": ["Taken an afternoon ferry to Seal Point", "Gone back to school to watch a video about seals", "Watched the seals in the Sea Center's touch tank", "Asked the ferry to sail in the high wind"],
+      "answer": 1,
+      "evidence": [9, 10, 14],
+      "hint": "Find the choices Ms. Ortiz read aloud. Check which ones could really work, then find the one the class did not pick.",
+      "explain": "They could have gone back to school to watch a video about seals. It was one of Ms. Ortiz's three choices in the second paragraph, and Ben said it would be fine.",
+      "inference": 1,
+      "tags": ["problem-solving", "what-else", "options"]
+    },
+    {
+      "id": "n3-i25",
+      "skill": "N3",
+      "passage": "n3-p11",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build two sentences about the problem and how the class solved it.",
+      "frame": "The problem was {0}. They solved it by {1}.",
+      "slots": [
+        { "kind": "problem", "label": "The problem", "options": ["the wind cancelled the ferry to Seal Point", "Sam lost his map of the island", "the Sea Center was closed", "the class missed the nine o'clock ferry"], "answer": [0] },
+        { "kind": "plan", "label": "How they solved it", "options": ["waiting on the dock until the wind dropped", "visiting the Sea Center next to the ferry office", "taking a bus to Seal Point", "watching a video about seals at school"], "answer": [1] }
+      ],
+      "evidence": [5, 15, 16],
+      "hint": "First find what went wrong at the dock. Then find the choice the class voted for.",
+      "explain": "The problem was the wind cancelled the ferry to Seal Point. They solved it by visiting the Sea Center. Look at the sign at the end of the first paragraph and the vote in the third paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["problem-solving", "plan-change", "trip-cancelled"]
+    },
+    {
+      "id": "n3-i26",
+      "skill": "N3",
+      "passage": "n3-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did the dough stay flat?",
+      "options": ["The yeast in the packet was too old to make bubbles.", "Grandma Rose used the wrong amounts of flour and water.", "The bowls were left open without towels over them.", "The kitchen was too cold for the yeast to make bubbles."],
+      "answer": 3,
+      "evidence": [2, 8, 9],
+      "hint": "Read the first paragraph to learn what yeast needs. Then find the clue Sam noticed in the second paragraph.",
+      "explain": "The kitchen was too cold for the yeast to make bubbles. The first paragraph says yeast makes bubbles when it is warm, and the second paragraph says the kitchen was only 48 degrees.",
+      "inference": 1,
+      "tags": ["cause-unstated", "rule-out"]
+    },
+    {
+      "id": "n3-i27",
+      "skill": "N3",
+      "passage": "n3-p12",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the causes in order, from the first thing that happened to the flat dough.",
+      "steps": [
+        "A storm made the power go out in the night.",
+        "The heater switched off and did not turn back on.",
+        "The bakery kitchen got cold.",
+        "The yeast could not make bubbles of gas.",
+        "The dough stayed flat."
+      ],
+      "evidence": [2, 9, 10, 11],
+      "hint": "The story tells these causes out of order. Find the earliest thing that happened in the night, then ask what each thing made happen next.",
+      "explain": "The storm made the power go out, the heater switched off, the kitchen got cold, the yeast could not make bubbles, and the dough stayed flat. The causes are in the second paragraph, and what yeast needs is in the first.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["cause-chain"]
+    },
+    {
+      "id": "n3-i28",
+      "skill": "N3",
+      "passage": "n3-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Grandma Rose and Sam fix the problem?",
+      "options": ["They bought a new packet of yeast and mixed a fresh batch of dough.", "They turned the heater back on and moved the dough beside the warm oven.", "They baked the flat dough in the hot oven for a longer time.", "They closed the bakery for the day and baked again on Sunday."],
+      "answer": 1,
+      "evidence": [13, 14, 16],
+      "hint": "Read the last paragraph. Look for what they did to make the kitchen and the dough warm again.",
+      "explain": "They turned the heater back on and moved the dough beside the warm oven. It is at the start of the last paragraph.",
+      "inference": 1,
+      "tags": ["problem-solving", "fix"]
+    },
+    {
+      "id": "n3-i29",
+      "skill": "N3",
+      "passage": "n3-p13",
+      "format": "storymap",
+      "level": 5,
+      "prompt": "Fill in the story map: the problem, the plan and the ending.",
+      "slots": [
+        { "kind": "problem", "label": "What was the team's main problem?", "options": ["Rain flooded the field, so the final could not be played that day.", "A basketball tournament had booked the gym.", "The other team did not want to play.", "Grandma Rose forgot the orange slices."], "answer": [0] },
+        { "kind": "plan", "label": "Which plan did they choose?", "options": ["Play in the school gym that afternoon", "Play on the field on Sunday", "Play the final on the following Saturday", "Share the trophy with the other team"], "answer": [2] },
+        { "kind": "ending", "label": "How did it end?", "options": ["The two teams shared the trophy.", "The final was played in the gym.", "The final was played on Sunday afternoon.", "The final was played one week later on a dry field."], "answer": [3] }
+      ],
+      "evidence": [5, 16, 19],
+      "hint": "Find why the final could not be played. Then cross out each choice that would not work or that the team did not want. Then read the last sentence.",
+      "explain": "The problem was that rain flooded the field. The plan was to play on the following Saturday, the choice left at the start of the last paragraph. The final was played one week later on a dry field, in the last sentence.",
+      "inference": 1,
+      "tags": ["problem-solving", "problem", "plan", "ending", "plan-change", "rained-out"]
+    },
+    {
+      "id": "n3-i30",
+      "skill": "N3",
+      "passage": "n3-p13",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What was the problem with playing the final on Sunday?",
+      "options": ["The weather map showed more rain on Sunday.", "The basketball tournament was using the field on Sunday.", "Sunday would be only the first dry day, and soaked grass needs two.", "The other team's coach could not come on Sunday."],
+      "answer": 2,
+      "evidence": [13, 14],
+      "hint": "Read what the weather map showed. Then read what the groundskeeper said about soaked grass. Count the dry days.",
+      "explain": "Rain would fall until late Saturday night, so Sunday would be only the first dry day. The groundskeeper said soaked grass needs two full dry days. Both facts are in the third paragraph.",
+      "inference": 1,
+      "tags": ["problem-solving", "options", "cause-unstated", "two-facts"]
+    },
+    {
+      "id": "n3-i31",
+      "skill": "N3",
+      "passage": "n3-p13",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The team chose the following Saturday. What else could they have done?",
+      "options": ["Played in the school gym that afternoon", "Played on the field on Sunday", "Played on the flooded field that morning", "Shared the trophy with the other team"],
+      "answer": 3,
+      "evidence": [10, 15],
+      "hint": "Go through the coach's four choices one at a time. Cross out each choice the story says would not work.",
+      "explain": "They could have shared the trophy. The third paragraph says sharing was still possible, but the team wanted to play the final. The gym was booked, and the field would not be dry on Sunday.",
+      "inference": 1,
+      "tags": ["problem-solving", "what-else", "options"]
+    },
+    {
+      "id": "n3-i32",
+      "skill": "N3",
+      "passage": "n3-p13",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that shows how the coach made sure the new plan would work.",
+      "unit": "sentence",
+      "answer": [17],
+      "evidence": [17],
+      "hint": "A new date needs both teams to say yes. Look for the person the coach talked to before the team cheered.",
+      "explain": "The coach phoned the other team's coach to make sure the new date worked for both teams, and he agreed. It is the second sentence of the last paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["problem-solving", "check-the-plan"]
+    },
+    {
+      "id": "n3-i33",
+      "skill": "N3",
+      "passage": "n3-p14",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did the boys come to the creek instead of the old mill?",
+      "options": [
+        "Sam held the map upside down, so he turned the wrong way.",
+        "Pixel ran to the creek, and the boys followed him.",
+        "The trail to the old mill was closed."
+      ],
+      "pictures": [
+        "🗺️",
+        "🐕",
+        "🚧"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        5,
+        6
+      ],
+      "hint": "Find the sentence where the boys reach the creek. Then read on to find what Sam saw on the map.",
+      "explain": "Sam held the map upside down, so he turned the wrong way at the fork. The seventh sentence tells this.",
+      "inference": 1,
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i34",
+      "skill": "N3",
+      "passage": "n3-p14",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "Fill in the story map: the problem and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "Sam lost the trail map in the woods.",
+            "The boys took the wrong trail and came to the creek.",
+            "Ben got tired and wanted to go home."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "The boys ate lunch by the creek.",
+            "The boys went home without seeing the mill.",
+            "The boys went back to the fork and found the old mill."
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        8,
+        9
+      ],
+      "hint": "Find where the boys end up by mistake. Then read the last two sentences.",
+      "explain": "The problem was that the boys took the wrong trail and came to the creek. At the end, they went back to the fork and found the old mill. Look at the fourth sentence and the last two sentences.",
+      "inference": 0,
+      "tags": [
+        "problem",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i35",
+      "skill": "N3",
+      "passage": "n3-p14",
+      "format": "build",
+      "level": 2,
+      "prompt": "Build a sentence that tells what caused what.",
+      "frame": "{0} because {1}.",
+      "slots": [
+        {
+          "kind": "then",
+          "label": "What happened",
+          "options": [
+            "Ben turned right at the fork",
+            "Sam turned left at the fork",
+            "Pixel ran to the mill"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "why",
+          "label": "Why",
+          "options": [
+            "the creek was on the map",
+            "Ben told him to go left",
+            "he held the map upside down"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        6
+      ],
+      "hint": "Find what Sam did at the fork. Then find the sentence that tells why that was the wrong way.",
+      "explain": "Sam turned left at the fork because he held the map upside down. The third sentence says he turned left. The seventh sentence says the map was upside down.",
+      "inference": 1,
+      "tags": [
+        "because",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i36",
+      "skill": "N3",
+      "passage": "n3-p15",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Sam, Maya and Grandma Rose do after the clouds changed their plan?",
+      "options": [
+        "They waited in the car until the clouds moved away.",
+        "They visited the observatory, then came back on a clear night.",
+        "They drove to a higher hill where the sky was clear.",
+        "They watched the meteors through a telescope that night."
+      ],
+      "pictures": [
+        "🚗",
+        "🔭",
+        "⛰️",
+        "🌠"
+      ],
+      "answer": 1,
+      "evidence": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "hint": "Find the choice they picked. Then read to the end to see what they did next.",
+      "explain": "They visited the observatory, and then they came back on Saturday, when the sky was clear. Look at the eleventh sentence and the last sentence.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i37",
+      "skill": "N3",
+      "passage": "n3-p15",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "Fill in the story map: the problem, the plan and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "The car broke down on the way to the lookout.",
+            "The observatory was closed for the night.",
+            "Clouds covered the sky, so they could not see any meteors."
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "What did they choose to do?",
+          "options": [
+            "Visit the observatory next to the lookout.",
+            "Wait in the car for the clouds to move.",
+            "Drive home right away."
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "They never saw a meteor.",
+            "They counted twenty-two meteors on Saturday night.",
+            "They saw meteors through the clouds on Friday."
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        10,
+        13
+      ],
+      "hint": "Find what went wrong at the lookout. Then find the choice they picked. Then read the last sentence.",
+      "explain": "The problem was that clouds covered the sky. They chose to visit the observatory. At the end, they counted twenty-two meteors on Saturday night. Look at the fourth sentence, the eleventh sentence and the last sentence.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "problem",
+        "plan",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i38",
+      "skill": "N3",
+      "passage": "n3-p15",
+      "format": "tap",
+      "level": 3,
+      "prompt": "They chose the observatory. What else could they have done?",
+      "options": [
+        "Watched the meteors from the lookout that night",
+        "Waited in the car and hoped the clouds would move",
+        "Looked at the meteors above the clouds with a telescope"
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Find the three choices that come after Grandma Rose speaks. Pick one that was not chosen.",
+      "explain": "They could have waited in the car and hoped the clouds would move. It is one of the three choices, in the eighth sentence. The clouds hid every star, so nobody could see meteors that night.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "what-else",
+        "options"
+      ]
+    },
+    {
+      "id": "n3-i39",
+      "skill": "N3",
+      "passage": "n3-p16",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why did the keyboard make no sound at band practice?",
+      "options": [
+        "Ben forgot to switch the keyboard on.",
+        "The speakers broke when Ben packed the keyboard.",
+        "The headphones were still plugged in, so the sound went only to them.",
+        "Leo unplugged the keyboard's power cord."
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        9,
+        10,
+        11
+      ],
+      "hint": "Find what Leo saw at the back of the keyboard. Then read the sentence that explains where the sound goes.",
+      "explain": "The headphones were still plugged in, so the sound went only to them. Leo found the cord, and the twelfth sentence explains where the sound goes.",
+      "inference": 1,
+      "tags": [
+        "cause-unstated",
+        "rule-out"
+      ]
+    },
+    {
+      "id": "n3-i40",
+      "skill": "N3",
+      "passage": "n3-p16",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the events in order, from the first cause to the silent keyboard.",
+      "steps": [
+        "Ben wore headphones to practice at home.",
+        "He packed the keyboard without unplugging the headphones.",
+        "At band practice, the headphones were still plugged in.",
+        "The sound went to the headphones, not the speakers.",
+        "The speakers made no sound."
+      ],
+      "evidence": [
+        2,
+        4,
+        7,
+        11
+      ],
+      "hint": "Start with what Ben did on Monday night. Then ask what each thing made happen next.",
+      "explain": "Ben wore headphones, then packed the keyboard without unplugging them, so they were still plugged in at practice. The sound went to the headphones, so the speakers made no sound. Look at the third, fifth, eighth and twelfth sentences.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i41",
+      "skill": "N3",
+      "passage": "n3-p16",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What could Ben do next time to stop this problem before it starts?",
+      "options": [
+        "Practice at home without headphones",
+        "Leave the keyboard switched on all night",
+        "Ask Leo to carry the keyboard to school",
+        "Unplug the headphones before he packs the keyboard"
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        11
+      ],
+      "hint": "Find the step Ben skipped before he packed the keyboard. Think about how doing that step would stop the problem.",
+      "explain": "Ben could unplug the headphones before he packs the keyboard. The fifth sentence says he did not unplug them, and the twelfth sentence explains why that matters. Practicing without headphones would bother Ana.",
+      "inference": 2,
+      "tags": [
+        "problem-solving",
+        "prevent"
+      ]
+    },
+    {
+      "id": "n3-i42",
+      "skill": "N3",
+      "passage": "n3-p16",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that shows how the problem was fixed.",
+      "unit": "sentence",
+      "answer": [
+        12
+      ],
+      "evidence": [
+        12
+      ],
+      "hint": "Look near the end for what Ben did with the headphones.",
+      "explain": "Ben unplugged the headphones and pressed a key, and a clear note rang out. It is the thirteenth sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "fix"
+      ]
+    },
+    {
+      "id": "n3-i43",
+      "skill": "N3",
+      "passage": "n3-p17",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What caused the scratches on the agates?",
+      "options": [
+        "The polish was too rough for soft stones like agates.",
+        "Coarse grit hidden in the lid fell out during polish week.",
+        "Maya added coarse grit instead of polish in the last week.",
+        "The barrel turned too fast, and the stones cracked each other."
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8,
+        10
+      ],
+      "hint": "Read what Ms. Ortiz said usually makes scratches like these. Then find where that thing was hiding.",
+      "explain": "Coarse grit was hiding in a groove in the lid, and it fell out during polish week. The second paragraph tells this.",
+      "inference": 1,
+      "tags": [
+        "cause-chain",
+        "rule-out"
+      ]
+    },
+    {
+      "id": "n3-i44",
+      "skill": "N3",
+      "passage": "n3-p17",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the causes in order, from the first one to the dull agates.",
+      "steps": [
+        "Coarse grit got stuck in a narrow groove inside the lid.",
+        "Maya's weekly washing could not reach the grit in the groove.",
+        "The hidden grit fell out during polish week.",
+        "The grit scratched the agates as the barrel turned.",
+        "The agates came out dull and cloudy."
+      ],
+      "evidence": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "hint": "The story tells the result first and the causes after it. Start with how the grit got into the lid. Then ask what each step made happen next.",
+      "explain": "Coarse grit got stuck in the lid groove, washing could not reach it, it fell out in polish week, it scratched the agates, and they came out dull. The causes are in the second paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i45",
+      "skill": "N3",
+      "passage": "n3-p17",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did Maya choose to repeat only the fine grit and polish weeks?",
+      "options": [
+        "Starting over with coarse grit would wear the agates down too small for the show.",
+        "Ms. Ortiz had no coarse grit left in the classroom.",
+        "Scrubbing with a toothbrush would polish the scratches away by itself.",
+        "It would be ready before the rock show, and fine grit could remove the shallow scratches."
+      ],
+      "answer": 3,
+      "evidence": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hint": "Compare how long each fix takes with the date of the rock show. Then read what Ms. Ortiz said about the scratches.",
+      "explain": "The second fix took two weeks, so it would be ready for the show fifteen days away, and Ms. Ortiz said fine grit could remove shallow scratches. Both facts are in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "compare-fixes",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i46",
+      "skill": "N3",
+      "passage": "n3-p17",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build two sentences about the problem and how Maya solved it.",
+      "frame": "The problem was {0}. Maya solved it by {1}.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "The problem",
+          "options": [
+            "the rock show was moved to another day",
+            "the agates came out dull and scratched",
+            "the tumbler stopped turning in the night",
+            "Maya lost the agates on the beach"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "How she solved it",
+          "options": [
+            "starting over with coarse grit for four weeks",
+            "finding new agates on the beach",
+            "scrubbing the lid groove and repeating the fine grit and polish weeks",
+            "rubbing each agate with a soft cloth"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        5,
+        13,
+        15
+      ],
+      "hint": "First find what was wrong when Maya opened the barrel. Then find the fix she chose.",
+      "explain": "The problem was the agates came out dull and scratched. Maya solved it by scrubbing the lid groove and repeating the fine grit and polish weeks. Look at the start of the second paragraph and the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "fix"
+      ]
+    },
+    {
+      "id": "n3-i47",
+      "skill": "N3",
+      "passage": "n3-p18",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did the band decide against playing outside with clothespins?",
+      "options": [
+        "Ms. Gray said clothespins were not allowed at the bandstand.",
+        "The families had planned to go to the gym, not the harbor.",
+        "Leo's drums were too heavy to carry outside.",
+        "Maya tried two clothespins, and the wind still bent the pages and turned them over."
+      ],
+      "answer": 3,
+      "evidence": [
+        11
+      ],
+      "hint": "Find the sentence where someone tests the clothespin idea. Read what happened.",
+      "explain": "Maya tried two clothespins, but the wind still bent the pages and turned them over. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "options",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i48",
+      "skill": "N3",
+      "passage": "n3-p18",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The band chose the gym. What else could they have done?",
+      "options": [
+        "Played under the bandstand roof, where the wind could not reach the music",
+        "Waited and played the concert on the next Saturday",
+        "Held the music down with clothespins, which kept the pages still",
+        "Moved the concert into Rose's Bakery"
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "hint": "Find the three choices the band listed. Cross out the one they picked and any one the story shows did not work.",
+      "explain": "They could have waited and played on the next Saturday. It is the third choice in the second paragraph. The clothespins did not keep the pages still, and the wind reached the music at the bandstand.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "what-else",
+        "options"
+      ]
+    },
+    {
+      "id": "n3-i49",
+      "skill": "N3",
+      "passage": "n3-p18",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Moving the concert caused a new problem. How did they solve it?",
+      "options": [
+        "Sam drew a map to the gym, Ms. Gray taped copies at the bandstand, and the school sent a message.",
+        "Leo played his drums at the harbor so families would hear the band and follow.",
+        "Ms. Gray waited at the bandstand and walked each family to the gym.",
+        "The band moved the concert to three o'clock so families had more time."
+      ],
+      "answer": 0,
+      "evidence": [
+        14,
+        15,
+        16
+      ],
+      "hint": "Read the first sentence of the last paragraph to find the new problem. Then read the two sentences after it.",
+      "explain": "Sam drew a map to the gym, Ms. Gray taped copies to the bandstand posts, and the school sent a message to every family. It is in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "cause-chain",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i50",
+      "skill": "N3",
+      "passage": "n3-p18",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort each sentence. Is it a reason the plan changed, or something the band did after the plan changed?",
+      "bins": [
+        "Why the plan changed",
+        "What they did after the plan changed"
+      ],
+      "cards": [
+        {
+          "text": "A strong wind began to blow in from the sea.",
+          "bin": 0
+        },
+        {
+          "text": "Ms. Gray and the band listed three choices.",
+          "bin": 1
+        },
+        {
+          "text": "The wind kept lifting the sheet music off the stands.",
+          "bin": 0
+        },
+        {
+          "text": "Sam drew a map from the bandstand to the gym.",
+          "bin": 1
+        },
+        {
+          "text": "Flags flapped hard, and paper cups rolled across the park.",
+          "bin": 0
+        },
+        {
+          "text": "The school sent a message to every family.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        15,
+        16
+      ],
+      "hint": "Ask whether each thing happened before Ms. Gray gathered the band, or after.",
+      "explain": "The wind, the flapping flags and the lifted sheet music are why the plan changed. They are in the first paragraph. Listing choices, drawing the map and sending the message are what the band did after. They are in the second and third paragraphs.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "plan-change",
+        "cause-effect",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "n3-i51",
+      "skill": "N3",
+      "passage": "n3-p19",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build sentences that show the chain of causes on the practice run.",
+      "frame": "The plastic wheel cracked because {0}. The cracked wheel {1}, so the rover {2}.",
+      "slots": [
+        {
+          "kind": "why",
+          "label": "Why it cracked",
+          "options": [
+            "Priya dropped the rover on her table",
+            "it rolled over sharp gravel",
+            "the rubber wheels were too heavy",
+            "it hit the flag too hard"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "What the wheel did",
+          "options": [
+            "fell off the rover",
+            "made the rover go faster",
+            "stopped the motor",
+            "could not grip the ground"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "What the rover did",
+          "options": [
+            "kept pulling to the left and drove in a circle",
+            "drove straight to the flag and back",
+            "stopped at the edge of the gravel",
+            "rolled back to the starting line"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Read the second paragraph one sentence at a time. For each sentence, ask what it made happen next.",
+      "explain": "The wheel cracked because it rolled over sharp gravel. The cracked wheel could not grip the ground, so the rover kept pulling to the left and drove in a circle. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "cause-chain",
+        "because"
+      ]
+    },
+    {
+      "id": "n3-i52",
+      "skill": "N3",
+      "passage": "n3-p19",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did Priya choose the rubber wheels instead of the spare plastic wheel?",
+      "options": [
+        "The rubber wheels were lighter, so the rover would be faster than before.",
+        "A rover that stops gets no score, and the rubber wheels had crossed sharp gravel without damage.",
+        "The spare plastic wheel was cracked too, so she could not use it.",
+        "Sam said a route around the gravel was too long to finish in an hour."
+      ],
+      "answer": 1,
+      "evidence": [
+        14,
+        16,
+        17,
+        18
+      ],
+      "hint": "Compare what could go wrong with each choice. Then read the rule Priya checked in the last paragraph.",
+      "explain": "The rules said a rover that stops gets no score, and the rubber wheels had crossed sharp gravel many times without damage. So finishing safely mattered more than speed. Look at the third and last paragraphs.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "compare-fixes",
+        "plan-change",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i53",
+      "skill": "N3",
+      "passage": "n3-p19",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya chose the rubber wheels. What else could she have done?",
+      "options": [
+        "Put on the spare plastic wheel and driven straight across the gravel",
+        "Kept the cracked wheel and steered a little to the right",
+        "Put on the spare plastic wheel and steered around the gravel",
+        "Asked the judges to sweep the gravel out of the Mars yard"
+      ],
+      "answer": 2,
+      "evidence": [
+        11,
+        12,
+        13
+      ],
+      "hint": "Find the idea Sam got from the real rover on Mars. Read exactly what Priya could do with it.",
+      "explain": "She could have put on her spare plastic wheel and steered around the gravel. It is in the third paragraph, after Sam remembers the real rover on Mars.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "what-else",
+        "options",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i54",
+      "skill": "N3",
+      "passage": "n3-p19",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells the rule that helped Priya decide.",
+      "unit": "sentence",
+      "answer": [
+        17
+      ],
+      "evidence": [
+        17
+      ],
+      "hint": "Look for the place where Priya reads something before she makes her choice.",
+      "explain": "Priya read the rules, and they said a rover that stops before the flag gets no score. It is the first sentence of the last paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "check-the-rules"
+      ]
+    },
+    {
+      "id": "n3-i55",
+      "skill": "N3",
+      "passage": "n3-p20",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did the dig team stay out of the quarry on Saturday?",
+      "options": [
+        "The museum's lab needed every worker that morning.",
+        "The rain had washed the dinosaur bones out of the quarry.",
+        "The rain turned the clay to mud, and in mud a digger could damage a fossil by accident.",
+        "Dr. Bell had already dug up all the bones last summer."
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Find what the rain did to the quarry. Then read what that would mean for the fossils.",
+      "explain": "The rain turned the clay into deep mud. In mud, diggers cannot tell bone from rock, so they could damage a fossil. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i56",
+      "skill": "N3",
+      "passage": "n3-p20",
+      "format": "storymap",
+      "level": 5,
+      "prompt": "Fill in the story map: the problem, the plan and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the club's problem?",
+          "options": [
+            "Dr. Bell could not find the dinosaur bones.",
+            "Rain made the quarry too muddy to dig without harming fossils.",
+            "Maya forgot her brush and notebook.",
+            "The museum's lab was closed on Saturday."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "Which choice did the club pick?",
+          "options": [
+            "Go home and wait for a dry Saturday",
+            "Dig in the quarry after the rain stopped",
+            "Spend the morning in the museum's preparation lab",
+            "Clean the mud off the quarry rocks"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "The club dug in the quarry two weeks later and found a rib bone.",
+            "The club never went back to the quarry.",
+            "Maya found a whole dinosaur skull in the lab.",
+            "The club dug in the mud on Sunday."
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        7,
+        16,
+        20
+      ],
+      "hint": "Find what the rain did to the quarry. Then find what the club voted for. Then read the last sentence.",
+      "explain": "The problem was that rain made the quarry too muddy to dig. The club picked the preparation lab. Two weeks later, the club dug in the quarry and found a rib bone. Look at the second paragraph, the end of the third paragraph and the last sentence.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "problem",
+        "plan",
+        "ending",
+        "rained-out"
+      ]
+    },
+    {
+      "id": "n3-i57",
+      "skill": "N3",
+      "passage": "n3-p20",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The club voted for the lab. What else could they have done?",
+      "options": [
+        "Dug carefully in the quarry after the rain stopped",
+        "Cleaned the mud off the bones in the quarry",
+        "Gone home and waited for a dry Saturday to dig",
+        "Asked the museum to dig up the bones for them"
+      ],
+      "answer": 2,
+      "evidence": [
+        12,
+        13,
+        14
+      ],
+      "hint": "Find the two choices Dr. Bell described. Find the one the club did not vote for.",
+      "explain": "They could have gone home and waited for a dry Saturday to dig. It is the first of Dr. Bell's two choices, in the third paragraph. Dr. Bell's team never digs in the quarry while the ground is wet.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "what-else",
+        "options",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i58",
+      "skill": "N3",
+      "passage": "n3-p20",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that shows Maya starting to look for a new plan.",
+      "unit": "sentence",
+      "answer": [
+        11
+      ],
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Find where Maya is quiet. Then read what she does next.",
+      "explain": "Maya asked Dr. Bell what the club could do instead. It is the last sentence of the second paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "flexible",
+        "plan-change"
+      ]
     }
   ],
   "model": {

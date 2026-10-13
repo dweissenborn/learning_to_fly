@@ -90,7 +90,7 @@ export function BeatCard({ now, settings }: { now: JourneyNow; settings: Setting
     </div>
     <p style={{ margin: 0, fontSize: '1.08rem' }}>{b.text}</p>
     {b.notice && <Passage passage={noticePassage(b)} credit={false} />}
-    {b.cope && <div className="guide-row"><Guide id={settings.guide} mood="think" size={48} /><div className="bubble"><b>{b.cope}</b></div></div>}
+    {b.cope && <div className="guide-row"><Guide id={settings.guide} mood="think" size={48} /><div className="bubble"><b>{b.cope}</b>{settings.resetWords.trim() && <> Remember your reset words: <b>{settings.resetWords.trim()}</b>.</>}</div></div>}
     {b.choice && <div className="stack" style={{ gap: '0.6rem' }}>
       <div className="label">{b.choice.ask}</div>
       <div className="tiles" role="group" aria-label={b.choice.ask}>

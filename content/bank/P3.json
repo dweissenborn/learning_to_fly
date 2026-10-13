@@ -118,6 +118,251 @@
       "level": 3,
       "socialLoad": 2,
       "credit": { "title": "The Broken Mug", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "p3-p06",
+      "title": "The Rematch",
+      "kind": "story",
+      "sentences": [
+        "On Friday night, the library held a game night with a racing tournament on the big screen.",
+        "Leo and Sam both reached the final race.",
+        "The winner would get to choose the first game at the next game night.",
+        "Halfway around the track, Sam's car was in the lead.",
+        "Then a boy hurried past and caught his foot on Sam's controller cord.",
+        "The cord pulled out of the console, and Sam's car rolled to a stop.",
+        "Leo's car raced past and crossed the finish line first.",
+        "\"Leo wins!\" announced the librarian.",
+        "Leo did not cheer.",
+        "\"That win does not count,\" he said. \"Sam's controller came unplugged in the middle of the race.\"",
+        "\"Can we race again?\"",
+        "The librarian plugged the cord back in and started a new race.",
+        "This time, Leo won by exactly one second.",
+        "Sam shook his hand and smiled.",
+        "\"Now that is a real win,\" Sam said."
+      ],
+      "picture": "🎮🏁",
+      "topics": [
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Rematch",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p07",
+      "title": "The Oxen and the Wheels",
+      "kind": "fable",
+      "sentences": [
+        "Two strong oxen were pulling a heavy wagon along a muddy country road.",
+        "The wagon was loaded with sacks of grain for the market in town.",
+        "The mud was deep, so the oxen had to pull with all their strength.",
+        "Step by step, they dragged the heavy wagon forward.",
+        "They did not make a sound.",
+        "The wagon's wheels had a much easier job, because all they had to do was turn.",
+        "But with every turn, they creaked and groaned loudly.",
+        "\"Oh, this terrible road!\" the wheels cried. \"We are working so hard!\"",
+        "At last, the oxen stopped and looked back at the noisy wheels.",
+        "\"Why are you making so much noise?\" asked one ox.",
+        "\"We are the ones doing the heavy work, and we are not complaining at all.\""
+      ],
+      "picture": "🐂🛞",
+      "topics": [
+        "transport",
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Oxen and the Wheels",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p3-p08",
+      "title": "The Tooth in the Sand",
+      "kind": "story",
+      "sentences": [
+        "Ms. Ortiz's class spent a Friday morning at a fossil dig in the hills above Story Woods.",
+        "A guide from the town museum gave each pair of students a small square of ground, a soft brush and a trowel.",
+        "\"Scientists have found dinosaur bones on this hill before,\" she said.",
+        "\"Everything you find today belongs to the museum, so please call me before you lift anything out.\"",
+        "Maya and Sam brushed the sandy soil away slowly, one thin layer at a time.",
+        "After an hour, Sam went to refill their water bottles, and Maya kept working alone.",
+        "Then her brush uncovered something dark and pointed, about as long as her thumb.",
+        "Along one edge was a row of tiny bumps.",
+        "Maya had a box of rocks and crystals at home, but she had never found a fossil.",
+        "Nobody was looking, and the dark thing would fit easily in her pocket.",
+        "Maya looked at it for a long time.",
+        "Then she stood up and waved to the guide.",
+        "The guide knelt beside the square and let out a gasp.",
+        "\"This is a tooth from a meat-eating dinosaur,\" she said. \"The tiny bumps helped it cut its food.\"",
+        "She wrote down exactly where the tooth lay and which layer of rock it came from, because that helps scientists learn how old a fossil is.",
+        "A month later, the class visited the museum.",
+        "The tooth sat in a glass case, and the card beside it said, \"Found by Maya Brooks, Harbor Middle School.\"",
+        "Maya still wished she could hold it in her hand.",
+        "But she stood by the case for a long time and read the card three times."
+      ],
+      "breaks": [
+        4,
+        10,
+        15
+      ],
+      "picture": "🦖🦷",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Tooth in the Sand",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p09",
+      "title": "Three Names on the Card",
+      "kind": "story",
+      "sentences": [
+        "For six weeks, Priya, Ben and Leo designed and built a robot for the Harbor Middle School robot fair.",
+        "The robot had to follow a black line across the gym floor and stop exactly on a red square.",
+        "Priya built the body, connected the motors and wrote almost all of the computer code.",
+        "Leo painted the robot bright blue and named it Comet.",
+        "Ben missed many meetings because of soccer practice, but he tested Comet twice on the practice track.",
+        "On the day of the fair, Comet followed the line without a single mistake and stopped right on the red square.",
+        "The judges awarded the team a blue ribbon.",
+        "The robot club had a rule that the whole team shares every prize, so the ribbon card listed all three names.",
+        "When a judge asked who had written the code, Ben and Leo both turned to look at Priya.",
+        "Later, Priya spoke quietly to Ms. Ortiz, who runs the robot club.",
+        "\"I am glad we won,\" she said. \"But I did most of the work, and the card makes it look like we all did the same amount.\"",
+        "Ben was packing up the table nearby, and he heard every word.",
+        "He thought about it all through lunch, and afterward he made a new sign for the team's table.",
+        "It said, \"Body, motors and code: Priya. Paint and name: Leo. Testing: Ben.\"",
+        "\"The ribbon belongs to the whole team,\" Ben explained to Priya. \"But visitors should know who actually built Comet.\"",
+        "Priya read the sign carefully, and then she smiled."
+      ],
+      "breaks": [
+        5,
+        11
+      ],
+      "picture": "🤖🎀",
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Three Names on the Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p10",
+      "title": "Behind the Screen",
+      "kind": "article",
+      "sentences": [
+        "When an orchestra needs a new player, it holds an audition, a short test in which each musician plays alone for a group of judges.",
+        "For many years, the judges sat in the same room and watched each player walk in, sit down and play.",
+        "They could see each person's face, clothes and age, and they often knew who the player's teacher was.",
+        "Some musicians began to wonder whether the judges were choosing the best playing or the people they already liked.",
+        "To make the test fairer, many orchestras began to hold blind auditions.",
+        "In a blind audition, the musician plays behind a tall screen, so the judges can hear the music but cannot see who is playing.",
+        "Each player is called by a number instead of a name.",
+        "Some orchestras even lay a carpet on the floor, because the sound of a player's footsteps could give the judges a clue about who was walking in.",
+        "In the years after screens came into use, orchestras hired many more women than they had before.",
+        "Not everyone agrees that the screen should stay up for the whole audition.",
+        "Some judges say that an orchestra player must work closely with other people, and a screen cannot show how well someone listens and follows.",
+        "For this reason, many orchestras use the screen in the early rounds and take it away for the final round.",
+        "Other people say the screen should stay up until the very end, so that nothing except the music can count.",
+        "Both groups want the same thing: a fair test that chooses the best player.",
+        "They disagree about how to make the test fair in the last round.",
+        "Some school bands now use a screen for solo tryouts too, so every student knows that only the sound will be judged."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "picture": "🎻🎺",
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Behind the Screen",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p11",
+      "title": "No Photo, No Score",
+      "kind": "story",
+      "sentences": [
+        "Every June, young people fish from the Harbor Town pier in a catch-and-release contest.",
+        "When someone catches a fish, they lay it on a measuring board, take a photograph and then gently return it to the sea.",
+        "The most important rule is printed on every entry card: \"No photo, no score.\"",
+        "The prize for the longest fish is a brand-new fishing rod, donated by the Lighthouse Café.",
+        "Near the end of the morning, Leo felt a powerful tug on his line.",
+        "He reeled in a silver fish that was longer than his arm, far larger than any other fish caught that day.",
+        "Leo wet his hands first, because dry hands can damage the slippery coating that protects a fish's skin, and then he lifted it toward the board.",
+        "At that moment, the fish gave a strong flip, slid out of his hands and splashed back into the water.",
+        "Ana had been fishing beside him, and she had witnessed the whole thing.",
+        "Leo and Ana walked to the judges' table, where Mr. Okafor was recording the scores.",
+        "Leo explained exactly what had happened, and Ana added that she had seen the fish too.",
+        "Mr. Okafor listened carefully, and then he slowly shook his head.",
+        "\"I believe you both,\" he said. \"But if I give a score for a fish that was never measured, I would have to do the same for every person here.\"",
+        "\"Then the measuring board and the photographs would not mean anything.\"",
+        "Ana frowned. \"That does not seem fair to Leo,\" she said.",
+        "Leo was quiet for a moment, and then he answered, \"It is the same rule for everyone.\"",
+        "The prize went to Ben, whose fish was about half as long as Leo's.",
+        "Ben held up his new rod, and then he walked over and invited Leo to share it with him for the rest of the summer.",
+        "On the walk home, Leo admitted that he still wished he had taken that photograph.",
+        "However, he also said he was glad the contest had been fair to everyone."
+      ],
+      "breaks": [
+        4,
+        9,
+        16
+      ],
+      "picture": "🎣🐟",
+      "topics": [
+        "ocean",
+        "sports"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "No Photo, No Score",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -322,6 +567,733 @@
       "explain": "One good answer is: I think Leo was honest because he told the truth. Mrs. Lin said, \"That was honest.\" Any honest answer is fine.",
       "inference": 1,
       "tags": ["opinion", "honest"]
+    },
+    {
+      "id": "p3-i11",
+      "skill": "P3",
+      "passage": "p3-p06",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why did Leo say his first win did not count?",
+      "options": [
+        "Sam's controller came unplugged, so Sam could not finish the race.",
+        "Leo's car crashed into a wall near the end.",
+        "The librarian forgot to start the race on time.",
+        "Sam stopped his car on purpose to let Leo win."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        9
+      ],
+      "hint": "Find what Leo says after the librarian calls out the winner. Then look back at what happened to Sam's cord.",
+      "explain": "Leo said the win did not count because Sam's controller came unplugged in the middle of the race. A boy caught his foot on the cord, and Sam's car rolled to a stop.",
+      "inference": 1,
+      "tags": [
+        "fair-play"
+      ]
+    },
+    {
+      "id": "p3-i12",
+      "skill": "P3",
+      "passage": "p3-p06",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap a sentence that shows Leo wanted the race to be fair.",
+      "answer": [
+        9,
+        10
+      ],
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Look at what Leo says right after the librarian calls him the winner.",
+      "explain": "Leo said, \"That win does not count,\" and he asked, \"Can we race again?\" Both sentences show he wanted a fair race. They come right after he did not cheer.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "fair-play",
+        "dialogue"
+      ]
+    },
+    {
+      "id": "p3-i13",
+      "skill": "P3",
+      "passage": "p3-p06",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Leo could have kept the first win. What do you think of his choice? Build your answer.",
+      "frame": "I think Leo's choice was {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "fair",
+            "honest",
+            "kind",
+            "not needed"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "Sam's car stopped by accident",
+            "a win should come from a fair race",
+            "Leo won the next race anyway",
+            "Sam got a second chance"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "It can be hard to give up a win.",
+            "Sam might have won the second race.",
+            "I would want a fair race too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        10,
+        14
+      ],
+      "hint": "Think about why Sam's car stopped. Then think about what Sam said at the end.",
+      "explain": "One good answer is: I think Leo's choice was fair because a win should come from a fair race. Sam said, \"Now that is a real win.\" Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-play"
+      ]
+    },
+    {
+      "id": "p3-i14",
+      "skill": "P3",
+      "passage": "p3-p07",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why did the ox think the wheels' complaining was not fair?",
+      "options": [
+        "The wheels had the easy job, but they made the most noise.",
+        "The wheels were going too fast for the oxen.",
+        "The wheels had to pull the whole heavy wagon.",
+        "The wheels wanted to stop at the market."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        5,
+        6,
+        10
+      ],
+      "hint": "Compare the job the oxen had with the job the wheels had. Then read what the ox says at the end.",
+      "explain": "The wheels had the easy job, because all they had to do was turn, but they creaked and groaned. The ox says, \"We are the ones doing the heavy work, and we are not complaining at all.\"",
+      "inference": 1,
+      "tags": [
+        "fair-work",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i15",
+      "skill": "P3",
+      "passage": "p3-p07",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "The wheels had the easiest job, but they complained the most. Was that fair to the oxen? Build your answer.",
+      "frame": "I think the wheels' complaining was {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "fair",
+            "not fair",
+            "a little unfair"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the oxen did the heavy work",
+            "everyone gets tired sometimes",
+            "complaining does not help the wagon move",
+            "the wheels had to turn in the mud too"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "The wheels might see it a different way.",
+            "It is kind to thank the ones who work hard.",
+            "I have heard someone complain who did little work."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "hint": "Think about who did the hard work. Then think about who made the noise.",
+      "explain": "One good answer is: I think the wheels' complaining was not fair because the oxen did the heavy work. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-work",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i16",
+      "skill": "P3",
+      "passage": "p3-p08",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why was waving to the guide the honest choice for Maya?",
+      "options": [
+        "The rule said every find belongs to the museum, and nobody would have known if she kept it.",
+        "She wanted the guide to tell her what kind of dinosaur tooth it was.",
+        "Sam had asked her to call the guide if she found something.",
+        "She did not want a fossil for her rock collection at home."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        9,
+        11
+      ],
+      "hint": "Read the rule the guide gave at the start. Then read what Maya noticed just before she stood up.",
+      "explain": "The guide said everything found belongs to the museum. Nobody was looking, and the tooth would fit in Maya's pocket, but she waved to the guide anyway. The rule is in the first paragraph, and her choice is at the start of the third.",
+      "inference": 1,
+      "tags": [
+        "honest",
+        "honest-cost"
+      ]
+    },
+    {
+      "id": "p3-i17",
+      "skill": "P3",
+      "passage": "p3-p08",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sort these actions at a fossil dig. Is each one fair and honest, or not?",
+      "bins": [
+        "Fair and honest 👍",
+        "Not fair or not honest 👎"
+      ],
+      "cards": [
+        {
+          "text": "Calling the guide before lifting out a fossil",
+          "bin": 0
+        },
+        {
+          "text": "Putting the finder's name on the museum card",
+          "bin": 0
+        },
+        {
+          "text": "Hiding a fossil in a pocket to take home",
+          "bin": 1
+        },
+        {
+          "text": "Saying you found a fossil that your partner found",
+          "bin": 1
+        },
+        {
+          "text": "Letting everyone come to the museum to see the find",
+          "bin": 0
+        },
+        {
+          "text": "Digging in another pair's square without asking",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        11,
+        16
+      ],
+      "hint": "For each card, ask two questions. Does it follow the dig's rule and tell the truth? Is it fair to the other people there?",
+      "explain": "Fair and honest: calling the guide, putting the finder's name on the card, and letting everyone see the find. Not fair or not honest: hiding a fossil, taking credit for your partner's find, and digging in someone else's square. In the story, Maya called the guide, and her name went on the card.",
+      "inference": 1,
+      "tags": [
+        "sort-fair",
+        "honest"
+      ]
+    },
+    {
+      "id": "p3-i18",
+      "skill": "P3",
+      "passage": "p3-p08",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Maya told the truth, and she could not keep the tooth. Was the museum rule fair to her? Build your answer.",
+      "frame": "I think the museum rule was {0} for Maya because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "fair",
+            "not fair",
+            "fair, but hard"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "everyone can see the tooth now",
+            "she found it, so it could be hers",
+            "her name is on the card",
+            "scientists can learn from it"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Maya might still feel a little sad.",
+            "The guide would see it a different way.",
+            "I would want to keep a fossil I found."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        14,
+        16,
+        17,
+        18
+      ],
+      "hint": "Think about what Maya lost and what she got. Read the last paragraph again.",
+      "explain": "One good answer is: I think the museum rule was fair, but hard, for Maya because everyone can see the tooth now. She still wished she could hold it. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "honest-cost",
+        "fair-rule"
+      ]
+    },
+    {
+      "id": "p3-i19",
+      "skill": "P3",
+      "passage": "p3-p09",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why did Priya feel the ribbon card was not fair?",
+      "options": [
+        "She did most of the work, but the card made it look like everyone did the same amount.",
+        "The judges gave the blue ribbon to a different team.",
+        "Leo painted Comet a color that she did not like.",
+        "Ben was at soccer practice on the day of the fair."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        7,
+        10
+      ],
+      "hint": "Read what Priya says to Ms. Ortiz. Then look back at who did each job.",
+      "explain": "Priya did most of the work, but the card listed all three names in the same way. She tells Ms. Ortiz this at the end of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "fair-credit"
+      ]
+    },
+    {
+      "id": "p3-i20",
+      "skill": "P3",
+      "passage": "p3-p09",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "How did Ben make things fairer for Priya?",
+      "options": [
+        "He made a sign that showed who did each job.",
+        "He gave Priya the blue ribbon to keep.",
+        "He asked the judges to take his name off the card.",
+        "He asked Ms. Ortiz to change the club's rule about prizes."
+      ],
+      "answer": 0,
+      "evidence": [
+        12,
+        13,
+        14
+      ],
+      "hint": "Find what Ben does after lunch. Read what his sign says.",
+      "explain": "Ben made a new sign that listed each job and who did it. The ribbon stayed with the team, but visitors could see that Priya built Comet. This is in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "fair-credit",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "p3-i21",
+      "skill": "P3",
+      "passage": "p3-p09",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "The club's rule says the whole team shares every prize. Is that rule fair? Build your answer.",
+      "frame": "I think the club's rule is {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "fair",
+            "not fair",
+            "fair, with a sign like Ben's"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "a team wins together",
+            "Priya did most of the work",
+            "Ben and Leo helped in smaller ways",
+            "it is hard to measure who did more"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Priya and Leo might see it differently.",
+            "Ben's sign was a good fix.",
+            "In my groups, the work is not always shared equally."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        7,
+        10,
+        14
+      ],
+      "hint": "Think about the rule from Priya's side. Then think about it from Ben's and Leo's side.",
+      "explain": "One good answer is: I think the club's rule is fair, with a sign like Ben's, because a team wins together. Ben's sign lets people see who did each job. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-credit",
+        "fair-rule"
+      ]
+    },
+    {
+      "id": "p3-i22",
+      "skill": "P3",
+      "passage": "p3-p10",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why do many orchestras put the player behind a screen?",
+      "options": [
+        "So the judges choose only by the sound of the music.",
+        "So the player feels less nervous in front of the judges.",
+        "So the sound of footsteps does not bother the judges.",
+        "So the judges can see how well the player follows others."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Find the problem in the first paragraph. Then read what a blind audition lets the judges do, and what it stops them from doing.",
+      "explain": "The screen lets the judges hear the music but not see who is playing, so they choose only by the sound. This is in the second paragraph. The carpet is there so footsteps do not give a clue about who is walking in.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "fair-test",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i23",
+      "skill": "P3",
+      "passage": "p3-p10",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort each reason. Is it a reason to keep the screen up until the end, or a reason to take it away for the final round?",
+      "bins": [
+        "Keep it up to the end",
+        "Take it away at the end"
+      ],
+      "cards": [
+        {
+          "text": "Nothing except the music should count.",
+          "bin": 0
+        },
+        {
+          "text": "Judges should not pick someone because they know the teacher.",
+          "bin": 0
+        },
+        {
+          "text": "A player's face, clothes and age should not matter.",
+          "bin": 0
+        },
+        {
+          "text": "Orchestra players must work closely with other people.",
+          "bin": 1
+        },
+        {
+          "text": "A screen cannot show how well someone listens and follows.",
+          "bin": 1
+        },
+        {
+          "text": "Judges want to see how a player works with the group.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        10,
+        12
+      ],
+      "hint": "Read the third paragraph. One group talks about working with other people. The other group talks about only the music.",
+      "explain": "Keep it up: only the music should count, and judges should not choose by a teacher's name or by a player's face, clothes and age. Take it away at the end: orchestra players work closely with others, and a screen cannot show how well someone listens and follows. These views are in the first and third paragraphs.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "two-views",
+        "sort-reasons",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i24",
+      "skill": "P3",
+      "passage": "p3-p10",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Should the screen stay up until the very end of an audition? Build your answer.",
+      "frame": "I think the screen should {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "stay up to the end",
+            "come down for the final round",
+            "not be used at all"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "only the music should count",
+            "judges need to see how a player works with others",
+            "a fair test treats every player the same way",
+            "players might feel calmer behind a screen"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Both groups want a fair test.",
+            "Someone could see it the other way.",
+            "I would like a screen at my own tryout."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "hint": "Read both views in the third paragraph. Then decide which reason matters more to you.",
+      "explain": "One good answer is: I think the screen should stay up to the end because only the music should count. Both groups want a fair test. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "fair-test"
+      ]
+    },
+    {
+      "id": "p3-i25",
+      "skill": "P3",
+      "passage": "p3-p11",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why did Mr. Okafor say he could not give Leo a score?",
+      "options": [
+        "If he scored a fish that was never measured, he would have to do that for everyone.",
+        "He did not believe that Leo had caught such a big fish.",
+        "Ana was Leo's friend, so her word did not count.",
+        "Leo had forgotten to wet his hands before he lifted the fish."
+      ],
+      "answer": 0,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Read what Mr. Okafor says after he shakes his head. Look for the part that starts with \"But\".",
+      "explain": "Mr. Okafor believed Leo and Ana, but if he gave a score for a fish that was never measured, he would have to do the same for every person. Then the board and the photographs would not mean anything. This is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "fair-rule"
+      ]
+    },
+    {
+      "id": "p3-i26",
+      "skill": "P3",
+      "passage": "p3-p11",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort these contest rules. Is each one fair to everyone, or not fair to everyone?",
+      "bins": [
+        "Fair to everyone 👍",
+        "Not fair to everyone 👎"
+      ],
+      "cards": [
+        {
+          "text": "Every fish needs a photo to get a score.",
+          "bin": 0
+        },
+        {
+          "text": "Every fish is measured on the same board.",
+          "bin": 0
+        },
+        {
+          "text": "The judge uses the same rule for each person.",
+          "bin": 0
+        },
+        {
+          "text": "A fish gets a score if a friend says they saw it.",
+          "bin": 1
+        },
+        {
+          "text": "The judge gives extra points to people he knows.",
+          "bin": 1
+        },
+        {
+          "text": "Very big fish get a score without a photo.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        12
+      ],
+      "hint": "For each rule, ask: would it work the same way for every person on the pier, even someone fishing alone?",
+      "explain": "Fair to everyone: a photo for every fish, the same board, and the same rule for each person. Not fair to everyone: a score because a friend saw it, since someone fishing alone has no friend to say so; extra points for people the judge knows; and big fish with no photo. Mr. Okafor said he must treat every person the same.",
+      "inference": 1,
+      "tags": [
+        "sort-fair",
+        "fair-rule"
+      ]
+    },
+    {
+      "id": "p3-i27",
+      "skill": "P3",
+      "passage": "p3-p11",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Ana thought the rule was not fair to Leo. Mr. Okafor said it had to be the same for everyone. What do you think? Build your answer.",
+      "frame": "I agree more with {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "Ana",
+            "Mr. Okafor",
+            "both of them"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the fish really was the biggest",
+            "the rule has to be the same for everyone",
+            "Ana saw the fish herself",
+            "anyone could say they caught a big fish"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "Leo was honest even though he lost the prize.",
+            "Ben was kind to share his new rod.",
+            "I once lost a game because of a rule like this."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "hint": "Read what Ana says and what Mr. Okafor says. Ana is thinking about Leo. Mr. Okafor is thinking about every person in the contest.",
+      "explain": "One good answer is: I agree more with Mr. Okafor because the rule has to be the same for everyone. Another person might agree with Ana because the fish really was the biggest. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-rule",
+        "two-views"
+      ]
     }
   ],
   "model": {

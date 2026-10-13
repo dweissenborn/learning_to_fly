@@ -195,6 +195,735 @@
       "level": 3,
       "socialLoad": 0,
       "credit": { "title": "Library Events", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p10",
+      "title": "Bike Shop Repairs",
+      "kind": "list",
+      "sentences": ["Priya's bike has a flat tire, and the chain squeaks.", "She reads the price list at Okafor's Bike Shop."],
+      "visual": {
+        "type": "table",
+        "title": "Okafor's Bike Shop Repairs",
+        "note": "The shop closes at 6 PM. A bike that is not ready by 6 PM stays at the shop overnight.",
+        "columns": ["Repair", "Price", "Ready in"],
+        "rows": [
+          ["Fix a flat tire", "$8", "30 minutes"],
+          ["New brake pads", "$12", "1 hour"],
+          ["Oil the chain", "$3", "10 minutes"],
+          ["Full tune-up", "$25", "1 day"],
+          ["Put on a bell", "$4", "10 minutes"]
+        ]
+      },
+      "picture": "🚲🔧",
+      "topics": ["transport", "money"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Bike Shop Repairs", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p11",
+      "title": "Two Buses to Story Woods",
+      "kind": "timetable",
+      "sentences": ["Sam wants to take Pixel for a hike at the Story Woods campsite.", "He needs two buses to get there from the bus station."],
+      "visual": {
+        "type": "table",
+        "title": "Saturday Buses to Story Woods",
+        "note": "Transfer: ride Route 2 to the Ferry dock, then change to Route 6. You need at least 10 minutes to walk between the two bus stops at the Ferry dock. Dogs on a leash ride free.",
+        "columns": ["Route", "From", "Leaves", "To", "Arrives"],
+        "rows": [
+          ["Route 2", "Bus station", "8:00 AM", "Ferry dock", "8:25 AM"],
+          ["Route 2", "Bus station", "9:30 AM", "Ferry dock", "9:55 AM"],
+          ["Route 2", "Bus station", "11:00 AM", "Ferry dock", "11:25 AM"],
+          ["Route 6", "Ferry dock", "8:35 AM", "Story Woods campsite", "9:05 AM"],
+          ["Route 6", "Ferry dock", "10:00 AM", "Story Woods campsite", "10:30 AM"],
+          ["Route 6", "Ferry dock", "11:35 AM", "Story Woods campsite", "12:05 PM"]
+        ]
+      },
+      "picture": "🚌🔁🌲",
+      "topics": ["transport", "maps"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "Two Buses to Story Woods", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p12",
+      "title": "Lighthouse Café Lunch Menu",
+      "kind": "menu",
+      "sentences": ["The Lighthouse Café has a new lunch menu.", "Leo and Maya each bring $10 to spend."],
+      "visual": {
+        "type": "table",
+        "title": "Lighthouse Café Lunch Menu",
+        "note": "A combo is one main dish with one side and one drink. Combos are served from 11 AM to 3 PM only.",
+        "columns": ["Item", "On its own", "In a combo"],
+        "rows": [
+          ["Grilled cheese", "$5", "$8"],
+          ["Veggie burger", "$6", "$9"],
+          ["Fish tacos", "$7", "$10"],
+          ["Chicken wrap", "$6.50", "$9.50"],
+          ["Side: fries or fruit cup", "$2.50", "Included"],
+          ["Drink: lemonade or milk", "$2", "Included"],
+          ["Add cheese or avocado", "$1", "$1"]
+        ]
+      },
+      "picture": "🍔🥤",
+      "topics": ["food", "money"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "Lighthouse Café Lunch Menu", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p13",
+      "title": "Early Release Wednesday",
+      "kind": "schedule",
+      "sentences": ["Harbor Middle School has an early release day on the first Wednesday of each month.", "School ends early, so every class is shorter."],
+      "visual": {
+        "type": "table",
+        "title": "Grade 6 Bell Schedule",
+        "note": "The next early release day is Wednesday, March 4. Robotics club and art club do not meet on early release days.",
+        "columns": ["Period", "Regular day", "Early release day"],
+        "rows": [
+          ["Homeroom", "8:30 to 8:45 AM", "8:30 to 8:40 AM"],
+          ["Math", "8:50 to 9:45 AM", "8:45 to 9:20 AM"],
+          ["Science", "9:50 to 10:45 AM", "9:25 to 10:00 AM"],
+          ["Art", "10:50 to 11:45 AM", "10:05 to 10:40 AM"],
+          ["Lunch", "11:50 AM to 12:25 PM", "10:45 to 11:15 AM"],
+          ["History", "12:30 to 1:25 PM", "11:20 to 11:55 AM"],
+          ["P.E.", "1:30 to 2:25 PM", "12:00 to 12:35 PM"],
+          ["School ends", "2:35 PM", "12:45 PM"]
+        ]
+      },
+      "picture": "🏫🔔",
+      "topics": ["school"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "Early Release Wednesday", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p14",
+      "title": "Summer Ferry to Gull Island",
+      "kind": "timetable",
+      "sentences": ["Sam and Grandma Rose plan a day trip to Gull Island in July.", "Sam reads the summer ferry timetable."],
+      "visual": {
+        "type": "table",
+        "title": "Gull Island Ferry: Summer Times (June 15 to September 1)",
+        "note": "Each trip takes 40 minutes. Round-trip tickets: adults $12, ages 6 to 17 $6, under 6 free. Bikes cost $3 extra each way.",
+        "columns": ["Ferry", "Leaves Harbor Town", "Leaves Gull Island", "Runs on"],
+        "rows": [
+          ["A", "8:00 AM", "9:00 AM", "Every day"],
+          ["B", "10:30 AM", "11:30 AM", "Every day"],
+          ["C", "1:00 PM", "2:00 PM", "Weekdays only"],
+          ["D", "3:15 PM", "4:15 PM", "Every day"],
+          ["E", "6:00 PM", "7:00 PM", "Saturday and Sunday only"]
+        ]
+      },
+      "picture": "⛴️🏝️🦀",
+      "topics": ["ocean", "transport"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": { "title": "Summer Ferry to Gull Island", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p15",
+      "title": "Space Day Program",
+      "kind": "schedule",
+      "sentences": ["The Lantern Peaks Observatory holds Space Day every October.", "Visitors use the program to plan their day."],
+      "visual": {
+        "type": "table",
+        "title": "Space Day Program: Saturday, October 24",
+        "note": "Dome Theater shows need a free ticket from the front desk. Other rooms need no ticket. The desk stops giving out tickets for a show 15 minutes before it starts. The Lab Room is for ages 10 and up. The observatory closes at 3 PM.",
+        "columns": ["Time", "Dome Theater", "Telescope Deck", "Lab Room"],
+        "rows": [
+          ["10:00 to 10:45 AM", "Planets show", "Sun viewing with safe filters", "Build a paper rocket"],
+          ["11:00 to 11:45 AM", "Moon show", "Sun viewing with safe filters", "Robot rover race"],
+          ["12:00 to 1:00 PM", "Closed for lunch", "Closed for lunch", "Closed for lunch"],
+          ["1:00 to 1:45 PM", "Planets show", "Meteorite touch table", "Robot rover race"],
+          ["2:00 to 2:45 PM", "Star map show", "Meteorite touch table", "Build a paper rocket"]
+        ]
+      },
+      "picture": "🔭🚀",
+      "topics": ["space", "robots"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": { "title": "Space Day Program", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f3-p16",
+      "title": "Zoo Feeding Times",
+      "kind": "schedule",
+      "sentences": [
+        "Sam and Ben visit the Harbor Town Zoo on Saturday.",
+        "They read the feeding times board by the gate."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Feeding Times Today",
+        "columns": [
+          "Animal",
+          "Time",
+          "Place"
+        ],
+        "rows": [
+          [
+            "Penguins",
+            "10:30 AM",
+            "Cold Coast Pool"
+          ],
+          [
+            "Giraffes",
+            "11:00 AM",
+            "Tall Tree Yard"
+          ],
+          [
+            "Sea otters",
+            "1:30 PM",
+            "Kelp Pool"
+          ],
+          [
+            "Red pandas",
+            "3:00 PM",
+            "Bamboo Hill"
+          ]
+        ]
+      },
+      "picture": "🦒🐧🕚",
+      "topics": [
+        "animals"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Zoo Feeding Times",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p17",
+      "title": "Story Woods Trails",
+      "kind": "list",
+      "sentences": [
+        "Maya and her dad want to hike in Story Woods.",
+        "This board stands where the trails start."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Story Woods Trails",
+        "note": "All trails start and end at the old mill. The Ridge Trail is closed after heavy rain. Dogs must stay on a leash on every trail.",
+        "columns": [
+          "Trail",
+          "Distance (there and back)",
+          "Time",
+          "Level",
+          "You will see"
+        ],
+        "rows": [
+          [
+            "Old Mill Walk",
+            "Half a mile",
+            "20 minutes",
+            "Easy",
+            "The old mill and its water wheel"
+          ],
+          [
+            "Creek Loop",
+            "1 mile",
+            "30 minutes",
+            "Easy",
+            "The creek and a small waterfall"
+          ],
+          [
+            "Fern Path",
+            "2 miles",
+            "1 hour",
+            "Easy",
+            "Ferns, mushrooms and woodpeckers"
+          ],
+          [
+            "Mill Pond Trail",
+            "3 miles",
+            "1 hour 30 minutes",
+            "Medium",
+            "The pond, ducks and turtles"
+          ],
+          [
+            "Ridge Trail",
+            "5 miles",
+            "3 hours",
+            "Hard",
+            "A view of Lantern Peaks"
+          ]
+        ]
+      },
+      "picture": "🥾🌲",
+      "topics": [
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Story Woods Trails",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p18",
+      "title": "Spring Concert Program",
+      "kind": "schedule",
+      "sentences": [
+        "Harbor Middle School has a spring concert in the gym.",
+        "It starts at 6:00 PM."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Spring Concert Program",
+        "note": "The groups play in this order. Each group starts right after the one before it ends.",
+        "columns": [
+          "Group",
+          "Song",
+          "Length"
+        ],
+        "rows": [
+          [
+            "Grade 6 Choir",
+            "Harbor Morning",
+            "5 minutes"
+          ],
+          [
+            "Drum Club",
+            "Drums on the Dock",
+            "10 minutes"
+          ],
+          [
+            "Grade 7 Band",
+            "Lantern Peaks March",
+            "10 minutes"
+          ],
+          [
+            "Break",
+            "—",
+            "15 minutes"
+          ],
+          [
+            "Jazz Band",
+            "Gull Island Blues",
+            "5 minutes"
+          ],
+          [
+            "Grade 8 Band",
+            "Starlight Rover",
+            "10 minutes"
+          ]
+        ]
+      },
+      "picture": "🎵🥁",
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Spring Concert Program",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p19",
+      "title": "Windy Sunday Ferry",
+      "kind": "timetable",
+      "sentences": [
+        "A strong wind is coming to Harbor Town on Sunday.",
+        "The ferry company posts its Sunday timetable with the wind forecast."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Gull Island Ferry: Sunday, April 12",
+        "note": "The small boat, the Puffin, stays in the harbor when the wind forecast is 25 miles per hour (mph) or more. The large boat, the Osprey, sails in winds up to 40 mph. If your trip is canceled, your ticket works on any other trip that day. Each trip takes 40 minutes.",
+        "columns": [
+          "Leaves Harbor Town",
+          "Boat",
+          "Wind forecast"
+        ],
+        "rows": [
+          [
+            "8:00 AM",
+            "Osprey",
+            "10 mph"
+          ],
+          [
+            "9:30 AM",
+            "Puffin",
+            "15 mph"
+          ],
+          [
+            "11:00 AM",
+            "Puffin",
+            "25 mph"
+          ],
+          [
+            "12:30 PM",
+            "Osprey",
+            "35 mph"
+          ],
+          [
+            "2:00 PM",
+            "Puffin",
+            "30 mph"
+          ],
+          [
+            "3:30 PM",
+            "Osprey",
+            "20 mph"
+          ]
+        ]
+      },
+      "picture": "⛴️💨",
+      "topics": [
+        "weather",
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Windy Sunday Ferry",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p20",
+      "title": "Copper Hill Mine Tours",
+      "kind": "schedule",
+      "sentences": [
+        "The old Copper Hill Mine in Lantern Peaks is now a museum.",
+        "Leo reads the tour booking table."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Copper Hill Mine: Saturday Tours",
+        "note": "Prices for each tour: adults $10, ages 6 to 17 $6, under 6 free. Every visitor wears a hard hat. We lend them for free. It is cool inside the mine all year, so bring a jacket.",
+        "columns": [
+          "Tour",
+          "Starts",
+          "Length",
+          "Ages",
+          "Spots left"
+        ],
+        "rows": [
+          [
+            "Surface Walk",
+            "9:30 AM",
+            "45 minutes",
+            "All ages",
+            "12"
+          ],
+          [
+            "Mine Train Ride",
+            "10:00 AM",
+            "1 hour",
+            "All ages",
+            "0"
+          ],
+          [
+            "Deep Level Tour",
+            "11:00 AM",
+            "2 hours",
+            "10 and up",
+            "3"
+          ],
+          [
+            "Mine Train Ride",
+            "1:00 PM",
+            "1 hour",
+            "All ages",
+            "5"
+          ],
+          [
+            "Deep Level Tour",
+            "1:30 PM",
+            "2 hours",
+            "10 and up",
+            "8"
+          ],
+          [
+            "Surface Walk",
+            "3:00 PM",
+            "45 minutes",
+            "All ages",
+            "20"
+          ]
+        ]
+      },
+      "picture": "⛏️🚂",
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Copper Hill Mine Tours",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p21",
+      "title": "Nature Center Saturday",
+      "kind": "schedule",
+      "sentences": [
+        "The Story Woods Nature Center runs free programs every Saturday.",
+        "Some programs need a sign-up at the front desk."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Saturday Programs at the Nature Center",
+        "note": "Programs marked Yes need a sign-up at the front desk. Sign-up opens at 9:00 AM, and places fill up fast. Children under 10 need an adult with them.",
+        "columns": [
+          "Program",
+          "Time",
+          "Ages",
+          "Sign-up?",
+          "Meet at"
+        ],
+        "rows": [
+          [
+            "Bird Walk",
+            "8:00 to 9:00 AM",
+            "All ages",
+            "No",
+            "Front porch"
+          ],
+          [
+            "Pond Critters",
+            "10:00 to 11:00 AM",
+            "6 and up",
+            "Yes",
+            "Mill pond dock"
+          ],
+          [
+            "Owl Talk",
+            "1:00 to 1:30 PM",
+            "All ages",
+            "No",
+            "Big room"
+          ],
+          [
+            "Tree Detectives",
+            "2:00 to 3:30 PM",
+            "8 and up",
+            "Yes",
+            "Front porch"
+          ],
+          [
+            "Night Sounds Walk",
+            "7:30 to 8:30 PM",
+            "12 and up",
+            "Yes",
+            "Campsite gate"
+          ]
+        ]
+      },
+      "picture": "🦉🌿",
+      "topics": [
+        "nature",
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Nature Center Saturday",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p22",
+      "title": "Music Festival Line-up",
+      "kind": "schedule",
+      "sentences": [
+        "The Harbor Town Music Festival is on Saturday at Harbor Park.",
+        "Leo and Priya plan their day with the line-up."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Town Music Festival: Saturday Line-up",
+        "note": "Gates open at 11:30 AM. Every set lasts 45 minutes. It takes 10 minutes to walk between the Main Stage and the Harbor Tent. Each workshop has 20 seats.",
+        "columns": [
+          "Starts",
+          "Stage",
+          "Act",
+          "About the act"
+        ],
+        "rows": [
+          [
+            "12:00 PM",
+            "Main Stage",
+            "Gull Street Band",
+            "Brass band"
+          ],
+          [
+            "12:30 PM",
+            "Harbor Tent",
+            "Drum Circle",
+            "Everyone plays. Bring your own drum."
+          ],
+          [
+            "1:00 PM",
+            "Main Stage",
+            "The Lanterns",
+            "Rock"
+          ],
+          [
+            "1:30 PM",
+            "Harbor Tent",
+            "Steel Drum Workshop",
+            "Ages 12 and up. Drums lent."
+          ],
+          [
+            "2:00 PM",
+            "Main Stage",
+            "Static Comets",
+            "Electronic"
+          ],
+          [
+            "2:30 PM",
+            "Harbor Tent",
+            "The Fog Horns",
+            "Rock"
+          ],
+          [
+            "3:00 PM",
+            "Main Stage",
+            "Northbound Train",
+            "Folk"
+          ],
+          [
+            "3:30 PM",
+            "Harbor Tent",
+            "Ukulele for Beginners",
+            "Ages 8 and up. Ukuleles lent."
+          ]
+        ]
+      },
+      "picture": "🎸🎺🥁",
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Music Festival Line-up",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p23",
+      "title": "Dinosaur Weekend at the Museum",
+      "kind": "schedule",
+      "sentences": [
+        "The Harbor Town Museum has a Dinosaur Weekend.",
+        "Sam, Maya and Ms. Ortiz read the Sunday schedule at the front desk."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Dinosaur Weekend: Sunday Schedule",
+        "note": "Museum entry: adults $12, ages 4 to 17 $7, under 4 free. Members get in free. Get tickets for events at the front desk. The Fossil Lab has 10 places each time. The museum closes at 4:00 PM.",
+        "columns": [
+          "Time",
+          "Event",
+          "Place",
+          "Ages",
+          "Price"
+        ],
+        "rows": [
+          [
+            "10:00 to 10:45 AM",
+            "Dinosaur Hall Tour",
+            "Dinosaur Hall",
+            "All ages",
+            "Free with entry"
+          ],
+          [
+            "10:30 to 11:30 AM",
+            "Fossil Lab: clean a fossil shell with a brush",
+            "Fossil Lab",
+            "9 and up",
+            "$4"
+          ],
+          [
+            "11:00 to 11:30 AM",
+            "Film: How Fossils Form",
+            "Theater",
+            "All ages",
+            "$2"
+          ],
+          [
+            "1:00 to 1:45 PM",
+            "Dig Pit: find model bones in the sand",
+            "Courtyard",
+            "5 to 12",
+            "$3"
+          ],
+          [
+            "1:00 to 1:45 PM",
+            "Dinosaur Hall Tour",
+            "Dinosaur Hall",
+            "All ages",
+            "Free with entry"
+          ],
+          [
+            "2:00 to 3:00 PM",
+            "Fossil Lab: clean a fossil shell with a brush",
+            "Fossil Lab",
+            "9 and up",
+            "$4"
+          ],
+          [
+            "3:00 to 3:30 PM",
+            "Talk: Dinosaur Eggs and Nests",
+            "Theater",
+            "All ages",
+            "Free with entry"
+          ]
+        ]
+      },
+      "picture": "🦖🦴",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dinosaur Weekend at the Museum",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -427,6 +1156,843 @@
       "explain": "She goes on Tuesday and Thursday. The comic drawing class is on Tuesday, and the rock and mineral show is on Thursday.",
       "inference": 1,
       "tags": ["two-rows"]
+    },
+    {
+      "id": "f3-i18", "skill": "F3", "passage": "f3-p10", "format": "tap", "level": 3,
+      "prompt": "Priya wants the flat tire fixed and the chain oiled. How much will she pay?",
+      "options": ["$8", "$11", "$12", "$3"],
+      "answer": 1,
+      "evidence": [0, 2],
+      "hint": "Find the row for each repair she needs. Add the two prices.",
+      "explain": "She pays $11. Fixing a flat tire is $8 and oiling the chain is $3, and $8 + $3 = $11.",
+      "inference": 1,
+      "tags": ["price-math", "two-rows", "money"]
+    },
+    {
+      "id": "f3-i19", "skill": "F3", "passage": "f3-p10", "format": "tap", "level": 3,
+      "prompt": "Sam brings his bike to the shop at 5:30 PM for new brake pads. When can he ride it home?",
+      "options": ["At 5:40 PM", "At 6:00 PM", "At 6:30 PM", "The next day. It stays at the shop overnight."],
+      "answer": 3,
+      "evidence": [1],
+      "hint": "Add the Ready in time to 5:30 PM. Then read the note about when the shop closes.",
+      "explain": "The bike stays at the shop overnight. New brake pads take 1 hour, so they are ready at 6:30 PM, but the note says the shop closes at 6 PM.",
+      "inference": 1,
+      "tags": ["note", "time-math", "time-pm"]
+    },
+    {
+      "id": "f3-i20", "skill": "F3", "passage": "f3-p11", "format": "tap", "level": 4,
+      "prompt": "Sam and Pixel get on the 8:00 AM Route 2 bus. What time will they get to the Story Woods campsite?",
+      "options": ["8:25 AM", "9:05 AM", "8:35 AM", "10:30 AM"],
+      "answer": 1,
+      "evidence": [0, 3],
+      "hint": "Find when the 8:00 AM Route 2 bus gets to the Ferry dock. Then find the next Route 6 bus and read across to Arrives.",
+      "explain": "They get to the campsite at 9:05 AM. Route 2 gets to the Ferry dock at 8:25 AM. The 8:35 AM Route 6 bus leaves 10 minutes later and arrives at 9:05 AM.",
+      "inference": 1,
+      "tags": ["transfer", "two-routes", "stop-too-soon"]
+    },
+    {
+      "id": "f3-i21", "skill": "F3", "passage": "f3-p11", "format": "highlight", "level": 4,
+      "prompt": "Ana and Ben get on the 9:30 AM Route 2 bus. Tap the row for the Route 6 bus they can catch at the Ferry dock.",
+      "unit": "row",
+      "answer": [5],
+      "evidence": [1, 5],
+      "hint": "Find when their Route 2 bus gets to the Ferry dock. Read the note to see how long the walk takes. Then check each Route 6 time.",
+      "explain": "Tap the 11:35 AM Route 6 row. Their bus gets to the Ferry dock at 9:55 AM. The 10:00 AM bus leaves only 5 minutes later, and the note says they need at least 10 minutes. So they catch the 11:35 AM bus.",
+      "inference": 1,
+      "tags": ["transfer", "note", "time-math", "close-time"],
+      "transfer": true
+    },
+    {
+      "id": "f3-i22", "skill": "F3", "passage": "f3-p12", "format": "tap", "level": 4,
+      "prompt": "It is 12:30 PM. Leo wants a veggie burger with fries and a lemonade. He also wants to add avocado. How much will he pay?",
+      "options": ["$9", "$10", "$10.50", "$11.50"],
+      "answer": 1,
+      "evidence": [1, 6],
+      "hint": "A main dish with a side and a drink is a combo. Check the note for combo times. Then find the combo price and add the extra.",
+      "explain": "Leo pays $10. At 12:30 PM combos are served, and the veggie burger combo is $9. Adding avocado is $1 more, so $9 + $1 = $10.",
+      "inference": 1,
+      "tags": ["price-math", "combo", "add-on", "money"]
+    },
+    {
+      "id": "f3-i23", "skill": "F3", "passage": "f3-p12", "format": "tap", "level": 4,
+      "prompt": "Maya gets to the café at 4 PM. She wants fish tacos, a fruit cup and a milk. She has $10. What should she do?",
+      "options": [
+        "Order the fish tacos combo for $10.",
+        "Order all three on their own. She has enough money.",
+        "Order the fish tacos and the fruit cup on their own for $9.50.",
+        "Order the veggie burger combo for $9 instead."
+      ],
+      "answer": 2,
+      "evidence": [2, 4, 5],
+      "hint": "Read the note to check if combos are served at 4 PM. Then add up the prices on their own and compare with $10.",
+      "explain": "She should order the fish tacos and the fruit cup for $9.50. The note says combos end at 3 PM. All three on their own cost $7 + $2.50 + $2 = $11.50, which is more than $10.",
+      "inference": 1,
+      "tags": ["combo", "note", "budget", "price-math", "problem-solving"]
+    },
+    {
+      "id": "f3-i24", "skill": "F3", "passage": "f3-p13", "format": "tap", "level": 4,
+      "prompt": "Wednesday, March 4 is an early release day. Priya's mom plans to pick her up after robotics club at 4:00 PM, like on other Wednesdays. What should Priya tell her?",
+      "options": [
+        "Pick me up at 4:00 PM, after robotics club.",
+        "Pick me up at 12:45 PM. Robotics club does not meet today.",
+        "Pick me up at 2:35 PM, when school ends.",
+        "Pick me up at 1:25 PM, after History."
+      ],
+      "answer": 1,
+      "evidence": [7],
+      "hint": "Read the note under the table first. Then find when school ends on an early release day.",
+      "explain": "She should say 12:45 PM. The note says robotics club does not meet on early release days, and the School ends row says 12:45 PM in the Early release day column.",
+      "inference": 1,
+      "tags": ["note", "plan-change", "wrong-column", "problem-solving"]
+    },
+    {
+      "id": "f3-i25", "skill": "F3", "passage": "f3-p13", "format": "tap", "level": 4,
+      "prompt": "Ms. Ortiz teaches Science. On an early release day, how much shorter is her class than on a regular day?",
+      "options": ["20 minutes", "25 minutes", "35 minutes", "55 minutes"],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Work out how many minutes Science lasts in each column. Then take the smaller number away from the bigger one.",
+      "explain": "It is 20 minutes shorter. In the Science row, the regular class runs 9:50 to 10:45 AM, which is 55 minutes. The early release class runs 9:25 to 10:00 AM, which is 35 minutes. 55 - 35 = 20.",
+      "inference": 1,
+      "tags": ["time-math", "duration", "two-columns", "compare"]
+    },
+    {
+      "id": "f3-i26", "skill": "F3", "passage": "f3-p14", "format": "tap", "level": 5,
+      "prompt": "It is a Tuesday. Sam and Grandma Rose take ferry B to Gull Island. They want at least 2 hours at the tide pools. What time does the earliest ferry they can take home leave Gull Island?",
+      "options": ["11:30 AM", "1:00 PM", "2:00 PM", "4:15 PM"],
+      "answer": 2,
+      "evidence": [1, 2],
+      "hint": "Add 40 minutes to find when ferry B gets to Gull Island. Add 2 more hours. Then look down the Leaves Gull Island column for the next time, and check the Runs on column.",
+      "explain": "The earliest ferry home leaves Gull Island at 2:00 PM. Ferry B leaves at 10:30 AM and the trip takes 40 minutes, so it arrives at 11:10 AM. Two hours later is 1:10 PM. The next time in the Leaves Gull Island column is 2:00 PM, and ferry C runs on weekdays.",
+      "inference": 1,
+      "tags": ["time-math", "wrong-column", "runs-on", "plan-trip"]
+    },
+    {
+      "id": "f3-i27", "skill": "F3", "passage": "f3-p14", "format": "tap", "level": 5,
+      "prompt": "It is a Saturday. Leo and Maya are on Gull Island. They miss the 4:15 PM ferry home. What can they do?",
+      "options": [
+        "Take the 6:00 PM ferry from Gull Island.",
+        "Take the 7:00 PM ferry from Gull Island.",
+        "Take the 9:00 AM ferry tomorrow. No more ferries leave today.",
+        "Take the 6:40 PM ferry from Gull Island."
+      ],
+      "answer": 1,
+      "evidence": [4],
+      "hint": "Look down the Leaves Gull Island column for a time after 4:15 PM. Then check the Runs on column for that ferry.",
+      "explain": "They can take the 7:00 PM ferry from Gull Island. It is ferry E, and the Runs on column says Saturday and Sunday only, so it runs today. 6:00 PM is when ferry E leaves Harbor Town.",
+      "inference": 1,
+      "tags": ["problem-solving", "runs-on", "wrong-column", "time-pm"]
+    },
+    {
+      "id": "f3-i28", "skill": "F3", "passage": "f3-p15", "format": "tap", "level": 5,
+      "prompt": "Maya gets to the front desk at 1:50 PM. She wants a ticket for the Star map show. What can she do at 2:00 PM?",
+      "options": [
+        "See the Star map show. She is in time for a ticket.",
+        "See the Moon show in the Dome Theater.",
+        "Go to the meteorite touch table. It needs no ticket.",
+        "Wait for the next Star map show at 3:00 PM."
+      ],
+      "answer": 2,
+      "evidence": [4],
+      "hint": "Read the note about tickets. Work out the last time to get a Star map ticket. Then look across the 2:00 PM row for something else to do.",
+      "explain": "She can go to the meteorite touch table. The desk stops giving tickets 15 minutes before a show, so the last time for a 2:00 PM ticket is 1:45 PM. The 2:00 PM row shows the meteorite touch table, and the note says other rooms need no ticket.",
+      "inference": 1,
+      "tags": ["note", "ticket-rule", "time-math", "problem-solving"]
+    },
+    {
+      "id": "f3-i29", "skill": "F3", "passage": "f3-p15", "format": "order", "level": 5,
+      "prompt": "Sam wants to build a paper rocket, see the Star map show and visit the meteorite touch table. He will also eat lunch. Put his day in order so nothing happens at the same time.",
+      "steps": ["Build a paper rocket", "Eat lunch", "Visit the meteorite touch table", "See the Star map show"],
+      "evidence": [0, 2, 3, 4],
+      "hint": "Start with the event that happens at only one time. Then fit the other events into the times that are left.",
+      "explain": "Paper rocket at 10:00 AM, lunch at 12:00 PM, the meteorite table at 1:00 PM, then the Star map show at 2:00 PM. The Star map show is only at 2:00 PM, so the rocket and the meteorite table must go at other times.",
+      "inference": 1,
+      "tags": ["plan", "no-overlap", "time-order", "two-columns"],
+      "transfer": true
+    },
+    {
+      "id": "f3-i30",
+      "skill": "F3",
+      "passage": "f3-p16",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben wants to watch the giraffes eat. What time should he be at Tall Tree Yard?",
+      "options": [
+        "10:30 AM",
+        "11:00 AM",
+        "1:30 PM"
+      ],
+      "pictures": [
+        "🕥",
+        "🕚",
+        "🕜"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the row that says Giraffes. Then look across to the Time column.",
+      "explain": "He should be there at 11:00 AM. It is in the Giraffes row.",
+      "inference": 0,
+      "tags": [
+        "find-row",
+        "time-am"
+      ]
+    },
+    {
+      "id": "f3-i31",
+      "skill": "F3",
+      "passage": "f3-p16",
+      "format": "scene",
+      "level": 2,
+      "prompt": "It is 1:30 PM. Sam wants to see an animal eat. Tap the place he should go.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Cold Coast Pool",
+          "emoji": "📍",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "COLD COAST POOL"
+          }
+        },
+        {
+          "label": "Kelp Pool",
+          "emoji": "📍",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "KELP POOL"
+          }
+        },
+        {
+          "label": "Bamboo Hill",
+          "emoji": "📍",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "BAMBOO HILL"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find 1:30 PM in the Time column. Then read across to the Place column.",
+      "explain": "Sam goes to the Kelp Pool. The 1:30 PM row says Sea otters at the Kelp Pool.",
+      "inference": 0,
+      "tags": [
+        "find-row",
+        "time-pm",
+        "two-columns"
+      ]
+    },
+    {
+      "id": "f3-i32",
+      "skill": "F3",
+      "passage": "f3-p17",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya's dad wants an easy trail that takes 1 hour. Which trail should they pick?",
+      "options": [
+        "Old Mill Walk",
+        "Creek Loop",
+        "Mill Pond Trail",
+        "Fern Path"
+      ],
+      "answer": 3,
+      "evidence": [
+        2
+      ],
+      "hint": "Look down the Level column for the easy trails. Then check the Time column for each of them.",
+      "explain": "They should pick the Fern Path. It is Easy and takes 1 hour. The Creek Loop and the Old Mill Walk are easy too, but they are shorter.",
+      "inference": 1,
+      "tags": [
+        "two-columns",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f3-i33",
+      "skill": "F3",
+      "passage": "f3-p17",
+      "format": "tap",
+      "level": 3,
+      "prompt": "It rained hard last night. Sam wants to see the view of Lantern Peaks. What should he do?",
+      "options": [
+        "Hike the Ridge Trail this morning.",
+        "Hike the Creek Loop to see the view.",
+        "Hike a different trail today, and save the Ridge Trail for a dry day.",
+        "Hike the Ridge Trail with Pixel on a leash."
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the trail with the view. Then read the note under the table for a rule about rain.",
+      "explain": "He should hike a different trail today and save the Ridge Trail for a dry day. The Ridge Trail has the view of Lantern Peaks, but the note says it is closed after heavy rain.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "plan-change",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f3-i34",
+      "skill": "F3",
+      "passage": "f3-p17",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Maya's dad has 1 hour for a hike. Sort the trails by how long they take.",
+      "bins": [
+        "1 hour or less",
+        "More than 1 hour"
+      ],
+      "cards": [
+        {
+          "text": "Old Mill Walk",
+          "bin": 0,
+          "emoji": "🏚️"
+        },
+        {
+          "text": "Creek Loop",
+          "bin": 0,
+          "emoji": "💧"
+        },
+        {
+          "text": "Fern Path",
+          "bin": 0,
+          "emoji": "🌿"
+        },
+        {
+          "text": "Mill Pond Trail",
+          "bin": 1,
+          "emoji": "🦆"
+        },
+        {
+          "text": "Ridge Trail",
+          "bin": 1,
+          "emoji": "⛰️"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "Read the Time column for each trail. Compare each time with 1 hour.",
+      "explain": "The Old Mill Walk (20 minutes), Creek Loop (30 minutes) and Fern Path (1 hour) take 1 hour or less. The Mill Pond Trail (1 hour 30 minutes) and Ridge Trail (3 hours) take more. Look in the Time column.",
+      "inference": 1,
+      "tags": [
+        "sort",
+        "duration",
+        "boundary"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i35",
+      "skill": "F3",
+      "passage": "f3-p18",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Leo plays in the Drum Club. What time does his group start to play?",
+      "options": [
+        "6:00 PM",
+        "6:05 PM",
+        "6:10 PM",
+        "6:15 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Find the group that plays before the Drum Club. Add its length to the start time.",
+      "explain": "The Drum Club starts at 6:05 PM. The concert starts at 6:00 PM, and the Grade 6 Choir plays first for 5 minutes.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "duration",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f3-i36",
+      "skill": "F3",
+      "passage": "f3-p18",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Sam's family gets to the concert at 6:20 PM. Tap the row for the group that is playing when they arrive.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Start at 6:00 PM. Add each length in order until you pass 6:20 PM.",
+      "explain": "Tap the Grade 7 Band row. The choir plays from 6:00 to 6:05 PM, the Drum Club from 6:05 to 6:15 PM, and the Grade 7 Band from 6:15 to 6:25 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "running-total",
+        "time-pm"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i37",
+      "skill": "F3",
+      "passage": "f3-p18",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben's mom will pick him up when the concert ends. What time does it end?",
+      "options": [
+        "6:40 PM",
+        "6:45 PM",
+        "6:55 PM",
+        "7:00 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "Add up every number in the Length column, the break too. Then add the total to the start time.",
+      "explain": "The concert ends at 6:55 PM. The lengths add up to 5 + 10 + 10 + 15 + 5 + 10 = 55 minutes, and 55 minutes after 6:00 PM is 6:55 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "running-total",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f3-i38",
+      "skill": "F3",
+      "passage": "f3-p19",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Grandma Rose has a ticket for the 11:00 AM ferry on Sunday. What will happen to her trip?",
+      "options": [
+        "It is canceled. She can use her ticket on the 12:30 PM Osprey.",
+        "It sails at 11:00 AM, because the wind is under 30 mph.",
+        "It is canceled. She can use her ticket on the 2:00 PM Puffin.",
+        "It is canceled. She must buy a new ticket for a later trip."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find which boat her trip uses and its wind forecast. Check the note for that boat's limit. Then look for the next trip that can sail.",
+      "explain": "Her trip is canceled, and she can use her ticket on the 12:30 PM Osprey. The 11:00 AM trip is on the Puffin, and the note says the Puffin stays in the harbor at 25 mph or more. The next trip, the 12:30 PM Osprey, sails because 35 mph is under its 40 mph limit.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "boundary",
+        "plan-change",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f3-i39",
+      "skill": "F3",
+      "passage": "f3-p19",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana must be on Gull Island by 1:00 PM on Sunday. What is the latest ferry she can take from Harbor Town?",
+      "options": [
+        "8:00 AM",
+        "9:30 AM",
+        "11:00 AM",
+        "12:30 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Add 40 minutes to each time to see when it gets to Gull Island. Then use the note to check if the boat can sail in that wind.",
+      "explain": "She should take the 9:30 AM ferry. The 12:30 PM ferry gets in at 1:10 PM, which is too late. The 11:00 AM Puffin is canceled because the wind is 25 mph. The 9:30 AM Puffin sails in 15 mph wind and gets in at 10:10 AM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "note",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f3-i40",
+      "skill": "F3",
+      "passage": "f3-p19",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort each Sunday trip. Will it sail?",
+      "bins": [
+        "Sails",
+        "Canceled"
+      ],
+      "cards": [
+        {
+          "text": "8:00 AM Osprey",
+          "bin": 0
+        },
+        {
+          "text": "9:30 AM Puffin",
+          "bin": 0
+        },
+        {
+          "text": "11:00 AM Puffin",
+          "bin": 1
+        },
+        {
+          "text": "12:30 PM Osprey",
+          "bin": 0
+        },
+        {
+          "text": "2:00 PM Puffin",
+          "bin": 1
+        },
+        {
+          "text": "3:30 PM Osprey",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "Check which boat each trip uses. Then compare its wind forecast with that boat's limit in the note.",
+      "explain": "The 11:00 AM and 2:00 PM Puffin trips are canceled, because their wind is 25 mph or more. All the other trips sail. The Osprey sails in winds up to 40 mph, so even the 12:30 PM trip in 35 mph wind sails.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "boundary",
+        "two-columns",
+        "sort"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i41",
+      "skill": "F3",
+      "passage": "f3-p20",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Grandma Rose books the Deep Level Tour for herself, Sam and Leo. Sam is 12 and Leo is 13. How much will she pay?",
+      "options": [
+        "$26",
+        "$30",
+        "$18",
+        "$22"
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        4
+      ],
+      "hint": "Use the note to find the price for each person's age. Then add the three prices.",
+      "explain": "She pays $22. Sam and Leo are ages 6 to 17, so each pays $6. Grandma Rose is an adult and pays $10. $6 + $6 + $10 = $22.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "age-rule",
+        "note",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i42",
+      "skill": "F3",
+      "passage": "f3-p20",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana, Ben and their cousin, who is 7, get to the mine at 9:45 AM. They want to take a tour together. Which is the first tour all three can go on?",
+      "options": [
+        "Surface Walk at 9:30 AM",
+        "Mine Train Ride at 10:00 AM",
+        "Mine Train Ride at 1:00 PM",
+        "Deep Level Tour at 11:00 AM"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Check the Starts time against 9:45 AM. Then check the Ages column for a 7-year-old, and the Spots left column for 3 people.",
+      "explain": "The first tour they can all go on is the Mine Train Ride at 1:00 PM. The 9:30 AM walk has already started, the 10:00 AM train has 0 spots left, and the Deep Level Tour is for ages 10 and up, so their cousin is too young.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "age-rule",
+        "spots-left",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f3-i43",
+      "skill": "F3",
+      "passage": "f3-p20",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Maya and her mom get to the mine at 12:00 PM. They must leave by 2:15 PM. Tap the row for the tour they can take from start to end.",
+      "unit": "row",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Look only at tours that start after 12:00 PM. Add each tour's length to its start time, and compare the end time with 2:15 PM.",
+      "explain": "Tap the 1:00 PM Mine Train Ride row. It runs from 1:00 to 2:00 PM and has 5 spots left. The 1:30 PM Deep Level Tour ends at 3:30 PM, and the 3:00 PM walk starts after they leave.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "duration",
+        "two-columns"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i44",
+      "skill": "F3",
+      "passage": "f3-p21",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya is 11 and Leo is 13. They get to the Nature Center at 1:45 PM on Saturday. Which program can they both join from the start?",
+      "options": [
+        "Owl Talk",
+        "Night Sounds Walk",
+        "Pond Critters",
+        "Tree Detectives"
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "Find the programs that start after 1:45 PM. Then check the Ages column for both of them.",
+      "explain": "They can both join Tree Detectives at 2:00 PM. It is for ages 8 and up. The Owl Talk ends at 1:30 PM, and the Night Sounds Walk is for ages 12 and up, so Maya is too young.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "age-rule",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f3-i45",
+      "skill": "F3",
+      "passage": "f3-p21",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam is 12. He is at the Bird Walk at 8:00 AM. He also wants a place on the Night Sounds Walk. What should he do?",
+      "options": [
+        "Go to the campsite gate at 7:30 PM. That walk has no sign-up.",
+        "Sign up at the campsite gate at 7:30 PM.",
+        "Bring an adult, because he is under 12.",
+        "Sign up at the front desk at 9:00 AM, after the Bird Walk."
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        4
+      ],
+      "hint": "Find the Sign-up? column for the Night Sounds Walk. Then read the note to see where and when sign-up happens.",
+      "explain": "He should sign up at the front desk at 9:00 AM. The Night Sounds Walk row says Yes for sign-up, and the note says sign-up opens at 9:00 AM at the front desk and places fill up fast. The Bird Walk ends at 9:00 AM, so he can go straight there.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "sign-up",
+        "two-columns",
+        "plan"
+      ]
+    },
+    {
+      "id": "f3-i46",
+      "skill": "F3",
+      "passage": "f3-p22",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo watches all of the Static Comets set. Then he walks to the Harbor Tent to see The Fog Horns. How many minutes of The Fog Horns' set will he hear?",
+      "options": [
+        "15 minutes",
+        "20 minutes",
+        "30 minutes",
+        "45 minutes"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Work out when the Static Comets set ends, and add the walk. Then work out when The Fog Horns' set ends.",
+      "explain": "He hears 20 minutes. Static Comets play from 2:00 to 2:45 PM. After the 10-minute walk, Leo gets to the tent at 2:55 PM. The Fog Horns play from 2:30 to 3:15 PM, and 2:55 to 3:15 PM is 20 minutes.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "note",
+        "duration",
+        "two-rows"
+      ]
+    },
+    {
+      "id": "f3-i47",
+      "skill": "F3",
+      "passage": "f3-p22",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo brings his own drum. He wants to play in the whole Drum Circle and then see all of The Lanterns. Can he do both?",
+      "options": [
+        "Yes. The Drum Circle ends at 12:45 PM, so he has time to walk.",
+        "Yes. The Drum Circle ends at 1:15 PM, and The Lanterns start at 1:30 PM.",
+        "No. The Drum Circle ends at 1:15 PM, but The Lanterns start at 1:00 PM.",
+        "No. The Drum Circle is for ages 12 and up."
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Use the note to work out when the Drum Circle ends. Then compare that with the time The Lanterns start.",
+      "explain": "No, he cannot do both. Every set lasts 45 minutes, so the Drum Circle runs from 12:30 to 1:15 PM. The Lanterns start at 1:00 PM on the Main Stage, before the Drum Circle ends.",
+      "inference": 1,
+      "tags": [
+        "no-overlap",
+        "time-math",
+        "note",
+        "wrong-row"
+      ]
+    },
+    {
+      "id": "f3-i48",
+      "skill": "F3",
+      "passage": "f3-p22",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Maya is 11. She has no instrument with her. She wants to learn to play one at the festival. Tap the row for the workshop she can join.",
+      "unit": "row",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        1,
+        3,
+        7
+      ],
+      "hint": "Find every act where people play. Check the About the act column for the age rule and for who brings the instrument.",
+      "explain": "Tap the Ukulele for Beginners row. It is for ages 8 and up, and ukuleles are lent. The Steel Drum Workshop is for ages 12 and up, and at the Drum Circle you bring your own drum.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "age-rule",
+        "find-row"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i49",
+      "skill": "F3",
+      "passage": "f3-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ms. Ortiz is a museum member. Sam is 12 and Maya is 11, and they pay for entry. Both of them also do the 2:00 PM Fossil Lab. How much do the three of them pay in all?",
+      "options": [
+        "$14",
+        "$18",
+        "$22",
+        "$34"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Use the note to find the entry price for each person. Then add the Fossil Lab price for each person who does it.",
+      "explain": "They pay $22. Ms. Ortiz is a member, so she gets in free. Sam and Maya pay $7 each for entry, and $4 each for the Fossil Lab. $7 + $7 + $4 + $4 = $22.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "note",
+        "age-rule",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i50",
+      "skill": "F3",
+      "passage": "f3-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "It is 10:20 AM. The front desk says the 10:30 AM Fossil Lab is full. Maya still wants to clean a fossil and see the film. What is her best plan?",
+      "options": [
+        "See the film at 11:00 AM, then do the Fossil Lab at 2:00 PM.",
+        "Do the Fossil Lab at 10:30 AM, then see the film.",
+        "See the film at 11:00 AM, then clean a fossil at the Dig Pit.",
+        "Do the Fossil Lab at 2:00 PM, then see the film at 3:00 PM."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        5
+      ],
+      "hint": "Find every row for the Fossil Lab and every row for the film. Cross out the full lab. Then check that the times you pick are in the table.",
+      "explain": "Her best plan is the film at 11:00 AM and the Fossil Lab at 2:00 PM. The 10:30 AM lab is full, and the film is shown only at 11:00 AM. The Dig Pit is for model bones, and 3:00 PM is a talk, not the film.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "problem-solving",
+        "two-rows"
+      ]
+    },
+    {
+      "id": "f3-i51",
+      "skill": "F3",
+      "passage": "f3-p23",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Sam is at the Dig Pit. He must leave the museum at 3:15 PM to catch his bus. Tap the row for the one event he can do from start to end after the Dig Pit.",
+      "unit": "row",
+      "answer": [
+        5
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "hint": "Find when the Dig Pit ends. Look for an event that starts after that and ends before 3:15 PM.",
+      "explain": "Tap the 2:00 PM Fossil Lab row. The Dig Pit ends at 1:45 PM, and the lab runs from 2:00 to 3:00 PM. The 1:00 PM tour starts during the Dig Pit, and the 3:00 PM talk ends at 3:30 PM, after Sam leaves.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "no-overlap",
+        "two-conditions"
+      ],
+      "transfer": true
     }
   ],
   "model": {

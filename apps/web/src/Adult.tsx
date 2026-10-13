@@ -2,9 +2,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId, Strand } from '@wayfinder/schema';
-import { ALL_SKILLS, dayKey, errorPatterns, focusSkill, gate, hintNeed, interestEffect, journeyPosition, skillsOf, statusOf, strandOf, trend, type Progress } from '@wayfinder/engine';
+import { ALL_SKILLS, dayKey, errorPatterns, focusSkill, gate, hintNeed, interestEffect, journeyPosition, levelFor, skillsOf, statusOf, strandOf, tagAccuracy, trend, type Progress } from '@wayfinder/engine';
 import { finishedCount, JOURNEY, journeyNow } from './journey';
-import { db, exportAll, importAll, log, saveSettings, useNotes, wipeAll, type GuideId, type Settings } from './db';
+import { deleteNote, exportAll, importAll, log, saveSettings, updateNote, useNotes, wipeAll, type GuideId, type Settings } from './db';
+import { deleteEverywhere, useLink } from './cloud';
+import { CloudCard } from './CloudScreens';
 import { pool, SKILL, STRAND, today, TOPICS } from './content';
 import { creditLine } from './Passage';
 import { ItemView } from './ItemView';
@@ -44,7 +46,7 @@ export function Adult({ settings, events, progress, onExit, onRescout }: { setti
       {tab === 'today' && <TodayAdmin settings={settings} />}
       {tab === 'content' && <Library settings={settings} />}
       {tab === 'settings' && <SettingsTab settings={settings} progress={progress} onRescout={onRescout} />}
-      {tab === 'data' && <DataTab onReport={() => setReport(true)} />}
+      {tab === 'data' && <DataTab name={settings.name} onReport={() => setReport(true)} />}
     </main>
   </>;
 }
@@ -109,11 +111,24 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
       <p>{lastRecount.text}</p>
       {lastRecount.ask && <ul>{lastRecount.ask.map((a) => <li key={a}>{a}</li>)}</ul>}
     </section>}
+    <SchoolGoals progress={progress} />
     <section className="card stack"><h2>Due for review</h2>
       {ALL_SKILLS.filter((s) => statusOf(progress.skills[s], now) === 'review due').map((s) => <div key={s}>{SKILL[s].name} <span className="chip due">review due</span></div>)}
       {!ALL_SKILLS.some((s) => statusOf(progress.skills[s], now) === 'review due') && <p className="muted">Nothing due. Reviews come back at about 3, 7 and 21 days after mastery, inside the warm-up.</p>}
     </section>
   </div>;
+}
+
+/** The school's current goals, measured on first-time answers (warm-up and your turn). */
+const GOALS: [string, string][] = [['main-idea', 'Main idea'], ['key-detail', 'Key details'], ['problem-solving', 'Problem-solving'], ['plan-change', 'Reading about changed plans']];
+const goalText = (r: { correct: number; total: number }) => (r.total < 5 ? `${r.correct} of ${r.total} right first time (too few to judge yet)` : `${Math.round((100 * r.correct) / r.total)}% right first time (${r.total} answers)`);
+
+function SchoolGoals({ progress }: { progress: Progress }) {
+  return <section className="card stack">
+    <h2>School goals</h2>
+    <p className="tagline">What his school is working on, measured on answers given without help.</p>
+    <div className="kv">{GOALS.map(([tag, label]) => <span key={tag} style={{ display: 'contents' }}><span>{label}</span><b>{goalText(tagAccuracy(progress, pool, tag))}</b></span>)}</div>
+  </section>;
 }
 
 function Spark({ points }: { points: { acc: number }[] }) {
@@ -133,7 +148,7 @@ function Skills({ progress, events }: { progress: Progress; events: LogEvent[] }
   return <section className="card stack">
     <p className="tagline">Only “your turn” answers count toward mastery: 80% or better across two sessions on different days, with one item in a new format. The dashed line on each trend is 80%.</p>
     <div className="table-wrap"><table className="skills-table">
-      <thead><tr><th>Skill</th><th>Status</th><th>Hints needed</th><th>Trend</th><th>Pattern in misses</th><th>Real world</th><th>Next review</th></tr></thead>
+      <thead><tr><th>Skill</th><th>Status</th><th>Level</th><th>Hints needed</th><th>Trend</th><th>Pattern in misses</th><th>Real world</th><th>Next review</th></tr></thead>
       <tbody>{ALL_SKILLS.map((s) => {
         const st = progress.skills[s];
         const status = statusOf(st, now);
@@ -142,6 +157,7 @@ function Skills({ progress, events }: { progress: Progress; events: LogEvent[] }
         return <tr key={s}>
           <td><b>{s}</b> {SKILL[s].name}{st.placed && <div className="tagline">placed by scouting, confirming by review</div>}{st.relearning && <div className="tagline">back in practice after a review</div>}</td>
           <td><span className={`chip ${STATUS_CLASS[status]}`}>{status}</span></td>
+          <td>{st.answers.length ? levelFor(st, pool) : '–'}</td>
           <td>{h === undefined ? '–' : h < 0.5 ? 'little' : h < 1.5 ? 'light' : h < 2.5 ? 'strategy' : 'full'}</td>
           <td><Spark points={trend(st)} /></td>
           <td>{pats.length ? pats.map((p) => <div key={p.tag}>{p.tag.replace(/-/g, ' ')} <span className="muted">({p.missed} of {p.total})</span></div>) : <span className="muted">none yet</span>}</td>
@@ -180,7 +196,7 @@ function TodayAdmin({ settings }: { settings: Settings }) {
         <div className="row"><b>{n.kind === 'recount' ? `Today: ${n.title}` : n.title}</b>{n.personal && <span className="chip">personal</span>}<span className="spacer" /><span className="muted">{fmtDate(n.ts)}</span></div>
         <p style={{ margin: 0 }}>{n.text}</p>
         {n.ask && <ul style={{ margin: 0 }}>{n.ask.map((a) => <li key={a}>{a}</li>)}</ul>}
-        <div className="row"><Toggle on={!!n.saved} onChange={(saved) => db.notes.update(n.id, { saved })}>Keep</Toggle><Btn className="small quiet" onPress={() => db.notes.delete(n.id)}>Delete</Btn></div>
+        <div className="row"><Toggle on={!!n.saved} onChange={(saved) => updateNote(n.id, { saved })}>Keep</Toggle><Btn className="small quiet" onPress={() => deleteNote(n.id)}>Delete</Btn></div>
       </div>)}
     </section>
     <section className="card stack">
@@ -263,6 +279,11 @@ function SettingsTab({ settings, progress, onRescout }: { settings: Settings; pr
       <p className="tagline">The journey to the koalas moves with finished sessions, never with scores (R9). Five a leg reaches Australia at about session 25, the dose the research judged by (R7).</p>
       <Toggle on={settings.setbacks} onChange={(setbacks) => saveSettings({ setbacks })}>Story setbacks (a storm, a blocked path, a broken part)</Toggle>
       <p className="tagline">Setbacks model coping with change: each one is explained, he hears a calm coping line, and he picks a plan. Nothing is lost. Turn them off for a smoother story.</p>
+      <Toggle on={settings.fastTrack} onChange={(fastTrack) => saveSettings({ fastTrack })}>Fast track: one flawless session can master a skill</Toggle>
+      <p className="tagline">For a learner who locks a skill in once he sees how. It needs every answer right first time, a new format, and a level 3 or harder text. Reviews at 3, 7 and 21 days still check that it lasts. Harder levels (4 and 5) open by themselves after two right answers in a row.</p>
+      <div className="field"><label htmlFor="reset">Calm-down words his school uses</label>
+        <input id="reset" className="input" placeholder="For example: reset, breathe, try a new plan" defaultValue={settings.resetWords} onBlur={(e) => saveSettings({ resetWords: e.target.value })} /></div>
+      <p className="tagline">Shown with the journey's setbacks, so home and school use the same words.</p>
       <Seg label="Your-turn items per session" value={settings.yourTurn} onChange={(yourTurn) => saveSettings({ yourTurn })} options={[[3, '3'], [4, '4'], [5, '5']]} />
       <Seg label="Wait before a hint in “together”" value={settings.hintDelay} onChange={(hintDelay) => saveSettings({ hintDelay })} options={[[5, '5 s'], [8, '8 s'], [12, '12 s'], [20, '20 s']]} />
       <div className="field"><span className="label">Guide</span><div className="row">{(Object.keys(GUIDES) as GuideId[]).map((g) => <Btn key={g} className={`small ${settings.guide === g ? 'on' : 'quiet'}`} onPress={() => saveSettings({ guide: g })}><Guide id={g} size={30} /> {GUIDES[g].name}</Btn>)}</div></div>
@@ -289,9 +310,10 @@ function SettingsTab({ settings, progress, onRescout }: { settings: Settings; pr
   </div>;
 }
 
-function DataTab({ onReport }: { onReport: () => void }) {
+function DataTab({ name, onReport }: { name: string; onReport: () => void }) {
   const [msg, setMsg] = useState('');
   const [confirm, setConfirm] = useState('');
+  const linked = useLink();
   const download = async () => {
     const blob = new Blob([JSON.stringify(await exportAll(), null, 2)], { type: 'application/json' });
     const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `learning-to-fly-${new Date().toISOString().slice(0, 10)}.json` });
@@ -299,7 +321,7 @@ function DataTab({ onReport }: { onReport: () => void }) {
     URL.revokeObjectURL(a.href);
   };
   return <div className="grid2">
-    <SignInCard />
+    <CloudCard name={name} />
     <section className="card stack">
       <h2>Report for his therapist or teacher</h2>
       <p className="tagline">Per skill: status, dates, starting point, trend and example items. Print it or save it as a PDF.</p>
@@ -307,7 +329,7 @@ function DataTab({ onReport }: { onReport: () => void }) {
     </section>
     <section className="card stack">
       <h2>Export and import</h2>
-      <p className="tagline">Everything lives in this browser. Export a file to keep a backup or to move to another device.</p>
+      <p className="tagline">{linked ? 'Progress is also in the family cloud copy. Export a file to keep your own backup.' : 'Everything lives in this browser. Export a file to keep a backup or to move to another device.'}</p>
       <Btn onPress={download}>Export everything (JSON)</Btn>
       <label className="field"><span className="label">Import a Learning to Fly file</span>
         <input type="file" accept="application/json" onChange={async (e) => {
@@ -319,37 +341,21 @@ function DataTab({ onReport }: { onReport: () => void }) {
     </section>
     <section className="card stack">
       <h2>Delete everything</h2>
-      <p className="tagline">Removes all progress, notes and settings from this device. Export first if you want a copy. Type DELETE to confirm.</p>
+      <p className="tagline">Removes all progress, notes and settings from this device. {linked ? `The cloud copy stays unless you also delete ${name} everywhere. ` : ''}Export first if you want a copy. Type DELETE to confirm.</p>
       <input className="input" aria-label="Type DELETE to confirm" value={confirm} onChange={(e) => setConfirm(e.target.value)} />
-      <Btn isDisabled={confirm !== 'DELETE'} onPress={async () => { await wipeAll(); location.reload(); }}>Delete everything</Btn>
+      <div className="row">
+        <Btn isDisabled={confirm !== 'DELETE'} onPress={async () => { await wipeAll(); location.reload(); }}>Delete from this device</Btn>
+        {linked && <Btn isDisabled={confirm !== 'DELETE'} onPress={async () => {
+          try { await deleteEverywhere(linked.learner); } catch { setMsg('The cloud copy could not be reached, so nothing was deleted. Try again when online.'); return; }
+          await wipeAll(); location.reload();
+        }}>Delete {name} everywhere</Btn>}
+      </div>
     </section>
     <section className="card stack">
       <h2>About the content</h2>
       <p className="tagline">Passages were written for this program or retold from public-domain fables (The Aesop for Children, 1919, Library of Congress). The content bank is shared under CC BY-SA 4.0. Credits show under every passage.</p>
     </section>
   </div>;
-}
-
-/** Who is signed in on this device. Hidden where there is no sign-in, such as a local dev server. */
-function SignInCard() {
-  const [me, setMe] = useState<undefined | null | { userDetails: string; userRoles: string[] }>(undefined);
-  useEffect(() => {
-    fetch('/.auth/me')
-      .then((r) => (r.ok && r.headers.get('content-type')?.includes('json') ? r.json() : Promise.reject()))
-      .then((j) => setMe(j.clientPrincipal ?? null))
-      .catch(() => setMe(undefined));
-  }, []);
-  if (me === undefined) return null;
-  return <section className="card stack">
-    <h2>Sign-in</h2>
-    {me ? <p style={{ margin: 0 }}>Signed in as <b>{me.userDetails}</b>.</p>
-      : <p style={{ margin: 0 }}>This device is not signed in right now. The app keeps working, but it only gets new versions after a grown-up signs in again.</p>}
-    <div className="row">
-      {me ? <a className="btn small quiet" href="/.auth/logout?post_logout_redirect_uri=/">Sign out</a>
-        : <a className="btn primary" href={`/.auth/login/aad?post_login_redirect_uri=${encodeURIComponent(location.origin + '/')}`}>Sign in with Microsoft</a>}
-    </div>
-    <p className="tagline">Only Microsoft accounts invited to the family role can open the app. Invite people in the Azure portal: the Static Web App, then Role management.</p>
-  </section>;
 }
 
 function Report({ settings, events, progress, onBack }: { settings: Settings; events: LogEvent[]; progress: Progress; onBack: () => void }) {
@@ -360,6 +366,10 @@ function Report({ settings, events, progress, onBack }: { settings: Settings; ev
     <h1>Reading progress: {settings.name}</h1>
     <p>Report made {new Date().toLocaleDateString()} from {events.filter((e) => e.type === 'answer').length} recorded answers across {progress.sessions.length} sessions. Mastery rule: 80% or better on independent items across two sessions on different days, including one item in a new format or setting; reviews at about 3, 7 and 21 days.</p>
     {placement?.type === 'placement' && <p><b>Baseline ({fmtDate(placement.ts)}):</b> word reading {Math.round(placement.word * 100)}%, reading comprehension {Math.round(placement.reading * 100)}%, listening comprehension {Math.round(placement.listening * 100)}%. Started at functional step {placement.functional} and narrative step {placement.narrative}.</p>}
+    <section className="card" style={{ breakInside: 'avoid' }}>
+      <h3>School goals</h3>
+      <div className="kv">{GOALS.map(([tag, label]) => <span key={tag} style={{ display: 'contents' }}><span>{label}</span><b>{goalText(tagAccuracy(progress, pool, tag))}</b></span>)}</div>
+    </section>
     {ALL_SKILLS.filter((s) => strandOf(s) !== 'philosophical' || progress.skills[s].answers.length).map((s) => {
       const st = progress.skills[s];
       const t = trend(st);
@@ -369,6 +379,7 @@ function Report({ settings, events, progress, onBack }: { settings: Settings; ev
         <div className="kv">
           <span>Mastered</span><b>{st.masteredAt ? fmtDate(st.masteredAt) + (st.placed ? ' (placed, awaiting review)' : '') : '–'}</b>
           <span>Reviews passed</span><b>{st.reviewStage}</b>
+          <span>Text level now</span><b>{st.answers.length ? `${levelFor(st, pool)} of 5` : '–'}</b>
           <span>Your-turn trend</span><b>{t.length ? t.map((x) => `${fmtDate(x.ts)} ${Math.round(x.acc * 100)}% (${x.n})`).join(' · ') : '–'}</b>
           <span>Real-world checks</span><b>{events.filter((e) => e.type === 'realworld' && e.skill === s).length}</b>
         </div>

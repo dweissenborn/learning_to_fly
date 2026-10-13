@@ -1,6 +1,6 @@
 # Learning to Fly
 
-Learning to Fly is a reading game for autistic children. It is a local-first web app: it works offline, installs to a home screen, and keeps every answer on the device.
+Learning to Fly is a reading game for autistic children. It is a local-first web app: it works offline, installs to a home screen, and keeps every answer on the device. On the live site, a signed-in family also gets a private cloud copy, so a learner carries on from any device.
 
 The learner starts on Home Island and builds it up: each finished session adds one thing to it, and three paths across the island light up as skills are mastered.
 
@@ -9,6 +9,14 @@ The learner starts on Home Island and builds it up: each finished session adds o
 - **Lantern Peaks** is reading to think about life. It stays "coming up" until the gate in the plan opens.
 
 Every finished session also moves the learner along a journey: the ferry to Gull Island, Windy Cape, Cloud Hill Airfield, take-off in a small red plane called the Kookaburra, and finally Australia to visit the koalas. Small clues appear on the island and after each session. Along the way there are setbacks: a storm, a blocked path, a broken propeller, strong winds. Each is explained, comes with a calm coping line and a choice of plan, and never costs anything. The journey moves with finished sessions, never with scores; a grown-up can set its pace or turn setbacks off.
+
+Pacing follows the learner, who is quick once he sees what a task asks:
+
+- **Harder texts are earned.** Each skill has five text levels. Two first-try answers in a row move him up a level; two misses step him down. Levels 4 and 5 (longer, multi-paragraph, up to about grade 8) appear only once he climbs to them.
+- **No re-teaching.** The worked example shows only until he has solved an item on that skill himself. Guided practice drops out once he works the skill independently, and he gets more of his own items instead.
+- **Fast track.** One flawless session (with a new format and a level 3 or harder text) can master a skill. Reviews at 3, 7 and 21 days still check that it lasts. An adult can turn this off.
+
+The grown-ups' area reports the school's current goals (main idea, key details, problem-solving) on their own, so they can be shared with his teacher.
 
 ## Run it
 
@@ -49,8 +57,9 @@ That checks the reading level of every prose passage. Create the venv once with 
 | `apps/web/` | The React PWA |
 | `packages/engine/` | The rules: mastery, review dates, the gate, item choice, placement. Pure TypeScript with tests. |
 | `packages/schema/` | JSON Schema for the content bank and the event log, the generated types, and the content validator |
-| `content/bank/` | 18 skill files: 133 passages, 260 practice items, 9 inference-check items, 18 worked examples |
+| `content/bank/` | 18 skill files: 327 passages, 786 practice items, 9 inference-check items, 18 worked examples |
 | `content/` | Skill wording, the scouting check, and the vocabulary for the daily recount |
+| `api/` | The cloud copy's API: managed Azure Functions over Cosmos DB, with tests |
 | `pipeline/` | The reading-level check |
 | `e2e/` | End-to-end and accessibility tests |
 
@@ -69,6 +78,16 @@ To invite someone, open the Static Web App in the Azure portal, then Role manage
 After a grown-up signs in once on a device, the app's offline copy keeps opening without asking again. New versions arrive after the next sign-in, from the grown-ups' area under Data.
 
 Local development (`npm run dev`) has no sign-in.
+
+### Where progress is kept
+
+Each device keeps its learner's progress in the browser (IndexedDB), so the app works offline. On the live site, a signed-in family member also gets a cloud copy in Azure Cosmos DB, through a small API in `api/`.
+
+- **Learners belong to the family, not to a login.** Any invited account can open any learner. A new device asks who is learning, then downloads that learner's progress. Someone new can be set up instead.
+- **Every change goes up, and other devices' changes come down.** Changes are sent soon after they happen, every 30 seconds while the app is open, and when the connection comes back. Answers and sessions are append-only, so two devices never conflict. Settings use the last change made.
+- **The grown-ups' Data tab controls it.** It shows the sync status, switches learners, saves a device-only learner to the cloud, and deletes a learner from this device or everywhere.
+
+The cloud copy needs a Cosmos DB for NoSQL account (serverless is enough) with database `learning-to-fly` and container `data`, partitioned on `/learner`. The Static Web App reads the connection string from the app setting `COSMOS_CONNECTION`. `api/test/live-check.mjs` checks a real account end to end.
 
 ## Licence
 

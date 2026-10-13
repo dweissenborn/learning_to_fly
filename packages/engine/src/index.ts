@@ -12,6 +12,11 @@ export const RULES = {
   gateCheckItems: 5,
   philosophicalOneIn: 4, // at most one session in four
   neutralTopicShare: 0.2, // share of picks that ignore interests, so the interest effect can be measured (R8)
+  maxLevel: 5, // levels 4 and 5 are harder texts, reached only by climbing the staircase
+  levelUpStreak: 2, // first-try answers in a row at his level that move him up a level
+  levelDownMisses: 2, // misses in a row at his level that move him down a level
+  fastTrackMin: 4, // fast track: this many your-turn answers in one session, all right first time,
+  fastTrackLevel: 3, // including a new-format item and one at this level or harder
 } as const;
 
 const DAY = 86_400_000;
@@ -31,7 +36,7 @@ export const dayKey = (ts: number) => {
 // ---------------------------------------------------------------- progress
 
 export type Status = 'new' | 'learning' | 'mastered';
-export interface Tally { session: string; day: string; ts: number; correct: number; total: number; transferCorrect: boolean }
+export interface Tally { session: string; day: string; ts: number; correct: number; total: number; transferCorrect: boolean; topLevel: number }
 export interface SkillState {
   skill: SkillId;
   status: Status;
@@ -68,18 +73,25 @@ function master(s: SkillState, ts: number, placed = false) {
   Object.assign(s, { status: 'mastered', everMastered: true, placed, masteredAt: ts, reviewStage: 0, nextReview: ts + RULES.reviewGapsDays[0] * DAY, relearning: false });
 }
 
-/** Two sessions on different days, 80% or better together, including a correct transfer item. */
-function meetsMastery(s: SkillState): boolean {
+/**
+ * Two sessions on different days, 80% or better together, including a correct transfer item.
+ * Fast track (on by default, for a learner who locks a skill in once he sees how): one session with
+ * every your-turn answer right first time, including a new-format item and a level 3+ item.
+ * Reviews at 3, 7 and 21 days still check that it lasts.
+ */
+function meetsMastery(s: SkillState, fastTrack: boolean): boolean {
   const last = s.tallies.at(-1);
   if (!last) return false;
   if (s.relearning) return last.total >= RULES.relearnMin && last.correct / last.total >= RULES.mastery;
+  if (fastTrack && last.total >= RULES.fastTrackMin && last.correct === last.total && last.transferCorrect && last.topLevel >= RULES.fastTrackLevel) return true;
   const prev = s.tallies.findLast((t) => t.day !== last.day);
   if (!prev || last.total < RULES.minPerSession || prev.total < RULES.minPerSession) return false;
   const acc = (last.correct + prev.correct) / (last.total + prev.total);
   return acc >= RULES.mastery && (last.transferCorrect || prev.transferCorrect);
 }
 
-export function derive(events: readonly LogEvent[]): Progress {
+export function derive(events: readonly LogEvent[], opts: { fastTrack?: boolean } = {}): Progress {
+  const fastTrack = opts.fastTrack ?? true;
   const skills = Object.fromEntries(ALL_SKILLS.map((s) => [s, fresh(s)])) as Record<SkillId, SkillState>;
   const p: Progress = { skills, inferencePassed: false, gateOpened: false, sessions: [], seen: new Map() };
   type Open = { rec: SessionRecord; due: Set<SkillId>; review: Map<SkillId, { c: number; n: number }>; practised: Set<SkillId>; gate: { c: number; n: number } };
@@ -95,7 +107,7 @@ export function derive(events: readonly LogEvent[]): Progress {
         s.nextReview = ts + RULES.reviewGapsDays[Math.min(s.reviewStage, 2)] * DAY;
       } else Object.assign(s, { status: 'learning', relearning: true, reviewStage: 0, nextReview: undefined });
     }
-    for (const id of open.practised) if (skills[id].status !== 'mastered' && meetsMastery(skills[id])) master(skills[id], ts);
+    for (const id of open.practised) if (skills[id].status !== 'mastered' && meetsMastery(skills[id], fastTrack)) master(skills[id], ts);
     if (open.gate.n >= RULES.gateCheckItems && open.gate.c / open.gate.n >= RULES.gateInference) p.inferencePassed = true;
     const g = gate(p);
     if (Object.values(g.conditions).every(Boolean)) p.gateOpened = true;
@@ -127,10 +139,11 @@ export function derive(events: readonly LogEvent[]): Progress {
       if (open?.rec.id !== e.session) continue;
       if (e.phase === 'yourturn' && e.rubric === undefined) {
         let t = s.tallies.find((x) => x.session === e.session);
-        if (!t) s.tallies.push((t = { session: e.session, day: dayKey(e.ts), ts: e.ts, correct: 0, total: 0, transferCorrect: false }));
+        if (!t) s.tallies.push((t = { session: e.session, day: dayKey(e.ts), ts: e.ts, correct: 0, total: 0, transferCorrect: false, topLevel: 0 }));
         t.total += 1;
         if (e.correct) t.correct += 1;
         if (e.correct && e.transfer) t.transferCorrect = true;
+        if (e.correct && e.level) t.topLevel = Math.max(t.topLevel, e.level);
         open.practised.add(s.skill);
       } else if (e.phase === 'warmup' && open.due.has(s.skill)) {
         const r = open.review.get(s.skill) ?? { c: 0, n: 0 };
@@ -223,7 +236,37 @@ export interface PickContext {
   hidden?: ReadonlySet<string>;
   rng: () => number;
 }
-export interface PickOptions { exclude?: ReadonlySet<string>; maxLevel?: number; transfer?: boolean; tier?: 'understand' | 'express'; gatecheck?: boolean }
+export interface PickOptions {
+  exclude?: ReadonlySet<string>;
+  maxLevel?: number;
+  /** His level on this skill: nothing harder is served, and items at this level come first. */
+  level?: number;
+  transfer?: boolean;
+  tier?: 'understand' | 'express';
+  gatecheck?: boolean;
+}
+
+/**
+ * The text level he is ready for on a skill. Two first-try answers in a row at his level move him up;
+ * two misses in a row move him down. Levels 4 and 5 are reached only this way, so harder texts are
+ * gated on his own performance.
+ */
+export function levelFor(s: SkillState, pool: Pool): number {
+  let level = 1, streak = 0, misses = 0;
+  for (const a of s.answers) {
+    if (a.rubric !== undefined) continue;
+    const lv = a.level ?? pool.items.get(a.item)?.level ?? 1;
+    if (lv < level) continue; // easier items do not move him
+    if (a.correct) {
+      misses = 0;
+      if (++streak >= RULES.levelUpStreak) { level = Math.min(RULES.maxLevel, level + 1); streak = 0; }
+    } else {
+      streak = 0;
+      if (++misses >= RULES.levelDownMisses) { level = Math.max(1, level - 1); misses = 0; }
+    }
+  }
+  return level;
+}
 
 export const isInterest = (pool: Pool, item: Item, interests: readonly Topic[]) =>
   !!pool.passages.get(item.passage)?.topics.some((t) => interests.includes(t));
@@ -239,14 +282,14 @@ export function pickItems(ctx: PickContext, skill: SkillId, count: number, o: Pi
   const cands = (pool.bySkill.get(skill) ?? []).filter((i) =>
     i.id !== modelItem && !!i.gatecheck === !!o.gatecheck && !o.exclude?.has(i.id) && !hidden?.has(i.id) &&
     (allowThemes || !pool.passages.get(i.passage)?.themes?.length) &&
-    (!o.tier || (i.tier ?? 'understand') === o.tier) && (!o.maxLevel || i.level <= o.maxLevel));
+    (!o.tier || (i.tier ?? 'understand') === o.tier) && (!o.maxLevel || i.level <= o.maxLevel) && (!o.level || i.level <= o.level));
   const neutral = rng() < RULES.neutralTopicShare;
   const key = new Map(cands.map((i) => [i.id, rng()]));
   const rank = (i: Item) => [
     seen.has(i.id) ? 1 : 0,
     seen.get(i.id) ?? 0,
     neutral ? 0 : isInterest(pool, i, interests) ? 0 : 1,
-    i.level,
+    o.level ? o.level - i.level : i.level, // with a level: his level first, then just below; without: easiest first
     key.get(i.id)!,
   ];
   const cmp = (a: Item, b: Item) => {
@@ -257,7 +300,7 @@ export function pickItems(ctx: PickContext, skill: SkillId, count: number, o: Pi
   const rest = cands.sort(cmp);
   const out: Item[] = [];
   while (out.length < count && rest.length) {
-    const sameText = rest.findIndex((i) => !seen.has(i.id) && out.some((x) => x.passage === i.passage) && i.level <= out[0].level + 1);
+    const sameText = rest.findIndex((i) => !seen.has(i.id) && out.some((x) => x.passage === i.passage) && Math.abs(i.level - out[0].level) <= 1);
     out.push(rest.splice(sameText >= 0 ? sameText : 0, 1)[0]);
   }
   if (o.transfer && out.length && !out.some((i) => i.transfer)) {
@@ -270,6 +313,12 @@ export function pickItems(ctx: PickContext, skill: SkillId, count: number, o: Pi
 export interface SessionPlan {
   strand: Strand;
   skill: SkillId;
+  /** His level on the focus skill when the session was planned. */
+  level: number;
+  /** He has already solved this kind of item on his own, so the worked example is skipped. */
+  skipWatch: boolean;
+  /** He has shown he works this skill independently, so guided practice is skipped for more of his own. */
+  skipTogether: boolean;
   /** Skills whose review happens in this warm-up. */
   review: SkillId[];
   warmup: Item[];
@@ -289,7 +338,7 @@ export function planSession(p: Progress, ctx: PickContext, strand: Strand, now: 
   const due = ALL_SKILLS.filter((id) => s[id].status === 'mastered' && (s[id].nextReview ?? Infinity) <= now)
     .sort((a, b) => s[a].nextReview! - s[b].nextReview!).slice(0, 3);
   const warmup: Item[] = [];
-  for (const id of due) warmup.push(...take(pickItems(ctx, id, due.length === 1 ? 2 : 1, { exclude: used, tier: 'understand' })));
+  for (const id of due) warmup.push(...take(pickItems(ctx, id, due.length === 1 ? 2 : 1, { exclude: used, tier: 'understand', level: levelFor(s[id], ctx.pool) })));
   const review = due.filter((id) => warmup.some((i) => i.skill === id));
   const earlier = ALL_SKILLS.filter((id) => id !== skill && !due.includes(id) && (s[id].everMastered || s[id].answers.length > 0))
     .sort((a, b) => (s[a].answers.at(-1)?.ts ?? 0) - (s[b].answers.at(-1)?.ts ?? 0));
@@ -299,12 +348,23 @@ export function planSession(p: Progress, ctx: PickContext, strand: Strand, now: 
   }
   if (warmup.length < 2) warmup.push(...take(pickItems(ctx, skill, 2 - warmup.length, { exclude: used, maxLevel: 1, tier: 'understand' })));
 
+  // Once he has solved this kind of item on his own, he does not need it shown again.
+  const level = levelFor(s[skill], ctx.pool);
+  const st = s[skill];
+  const skipWatch = st.answers.some((a) => a.correct);
+  const last = st.tallies.at(-1);
+  const skipTogether = (!!last && last.total >= RULES.minPerSession && last.correct / last.total >= RULES.mastery) ||
+    (st.answers.length >= 3 && st.answers.slice(-3).every((a) => a.correct));
   const m = ctx.pool.models.get(skill);
   const modelItem = m && ctx.pool.items.get(m.item);
-  const together = take(pickItems(ctx, skill, warmup.length >= 3 ? 2 : 3, { exclude: used, tier: 'understand' }));
-  const yourturn = take(pickItems(ctx, skill, yourTurnCount, { exclude: used, tier: 'understand', transfer: s[skill].tallies.length > 0 }));
+  const together = skipTogether ? [] : take(pickItems(ctx, skill, warmup.length >= 3 ? 2 : 3, { exclude: used, tier: 'understand', level }));
+  const yourturn = take(pickItems(ctx, skill, yourTurnCount + (skipTogether ? 2 : 0), { exclude: used, tier: 'understand', transfer: true, level }));
   const express = strand === 'philosophical' ? take(pickItems(ctx, skill, 1, { exclude: used, tier: 'express' })) : [];
-  return { strand, skill, review, warmup, model: modelItem && m ? { item: modelItem, steps: m.steps } : undefined, together, yourturn, express };
+  return {
+    strand, skill, level, skipWatch, skipTogether, review, warmup,
+    model: !skipWatch && modelItem && m ? { item: modelItem, steps: m.steps } : undefined,
+    together, yourturn, express,
+  };
 }
 
 /** Five unseen inference items about passages the learner has not practised on (gate condition 4). */
@@ -402,6 +462,17 @@ export function journeyPosition(finished: number, stops: number, legLength: numb
   const step = eff - (stop - from.stop) * legLength;
   const table = BEATS_FOR_LEG[legLength] ?? BEATS_FOR_LEG[5];
   return { stop, step, beat: table[Math.min(step, table.length - 1)], arrived: false, after: 0 };
+}
+
+/** First-time accuracy on items with a given tag (warm-up and your-turn answers only), for the school's goals. */
+export function tagAccuracy(p: Progress, pool: Pool, tag: string) {
+  const r = { correct: 0, total: 0 };
+  for (const s of Object.values(p.skills)) for (const a of s.answers)
+    if ((a.phase === 'yourturn' || a.phase === 'warmup') && a.rubric === undefined && pool.items.get(a.item)?.tags?.includes(tag)) {
+      r.total += 1;
+      if (a.correct) r.correct += 1;
+    }
+  return r;
 }
 
 /** Small seeded generator so item choice is reproducible in tests. */

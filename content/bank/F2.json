@@ -194,6 +194,496 @@
       "level": 3,
       "socialLoad": 0,
       "credit": { "title": "Pumping Up a Bike Tire", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p10",
+      "title": "Book Return Machine",
+      "kind": "directions",
+      "sentences": ["Maya has three library books to return.", "She reads the sign on the book return machine at the Harbor Town Library."],
+      "visual": {
+        "type": "notice",
+        "title": "Book Return: How to Use",
+        "icon": "📚",
+        "rows": [
+          "Tap the screen to start.",
+          "Scan your library card under the red light.",
+          "Put one book on the tray with the barcode facing up.",
+          "Wait for the green check mark before you add the next book.",
+          "When all your books are in, tap Done.",
+          "Take your receipt from the slot."
+        ]
+      },
+      "picture": "📚🧾",
+      "topics": ["school"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Book Return Machine", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p11",
+      "title": "Grandma Rose's Blueberry Muffins",
+      "kind": "recipe",
+      "sentences": ["Sam and Ben bake muffins in the kitchen at Rose's Bakery.", "Grandma Rose gives them her recipe card."],
+      "visual": {
+        "type": "list",
+        "title": "Grandma Rose's Blueberry Muffins",
+        "ordered": true,
+        "note": "Ask an adult to help you use the oven.",
+        "rows": [
+          "Heat the oven to 375°F. Put paper cups in a 12-cup muffin pan.",
+          "In a large bowl, stir together 2 cups of flour, 1/2 cup of sugar and 2 teaspoons of baking powder.",
+          "In a small bowl, whisk 1 egg, 1 cup of milk and 1/3 cup of melted butter.",
+          "Pour the wet mix into the dry mix. Stir only until no dry flour shows. A few lumps are fine.",
+          "Gently fold in 1 cup of blueberries. If your berries are frozen, add them straight from the freezer.",
+          "Fill each paper cup about two-thirds full.",
+          "Bake for 20 minutes. Then poke a toothpick into the middle muffin.",
+          "If the toothpick comes out clean, the muffins are done. If it has wet batter on it, bake 4 more minutes and test again.",
+          "Let the muffins cool in the pan for 5 minutes before you lift them out."
+        ]
+      },
+      "picture": "🧁🫐",
+      "topics": ["food"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "Grandma Rose's Blueberry Muffins", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p12",
+      "title": "Rover Rescue Quick Start",
+      "kind": "directions",
+      "sentences": ["Ana and Ben got a new StarBox game called Rover Rescue.", "This quick start card came in the box."],
+      "visual": {
+        "type": "list",
+        "title": "Rover Rescue: Quick Start for StarBox",
+        "ordered": true,
+        "rows": [
+          "Put the game disc in the StarBox, label side up. The game installs by itself in about 15 minutes.",
+          "While you wait, plug in your controller to charge it. A full charge takes 30 minutes.",
+          "When the install bar reaches 100%, choose Start Game.",
+          "If you already have a StarBox player profile, choose it and skip to step 6.",
+          "If you are new, choose Make a Profile. Ask an adult to type in their email to finish this step.",
+          "Pick your rover and a nickname. Do not use your real name.",
+          "Choose Mission 1: Harbor Rescue to start the training level."
+        ]
+      },
+      "picture": "🎮🤖",
+      "topics": ["games", "robots"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "Rover Rescue Quick Start", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p13",
+      "title": "Planting Bean Seeds",
+      "kind": "directions",
+      "sentences": [
+        "Ms. Ortiz gave each pair in her class a sheet of directions for planting bean seeds in the school garden.",
+        "Before you plant, check how wet the soil is in your garden bed.",
+        "Push one finger into the soil, all the way down to your second knuckle.",
+        "If the soil feels dry at that depth, pour one full watering can over the bed and wait ten minutes.",
+        "If it already feels damp, you can begin planting right away.",
+        "Next, use the inch marks on your trowel handle to make a straight row of holes.",
+        "Each hole should be about one inch deep, and the holes should be four inches apart.",
+        "Drop one bean seed into each hole, and then gently cover it with loose soil.",
+        "Do not press the soil down hard, because the young roots need air to grow.",
+        "Finally, push a craft-stick label into the end of your row.",
+        "Write both of your names and today's date on the label in pencil, since marker ink can wash off in the rain.",
+        "Water the row lightly, just until the top of the soil looks dark.",
+        "The first green shoots should appear in about seven to ten days."
+      ],
+      "breaks": [5, 9],
+      "picture": "🌱🪴",
+      "topics": ["nature", "school"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "Planting Bean Seeds", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p14",
+      "title": "Getting to the Observatory",
+      "kind": "message",
+      "sentences": [],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Ms. Ortiz",
+        "to": "Room 12 families",
+        "subject": "Friday night: getting to the observatory",
+        "time": "Monday 8:15 AM",
+        "rows": [
+          "Hello Room 12 families,",
+          "On Friday, October 23, our class will meet at the Lantern Peaks Observatory at 6:30 PM. Each student must travel with a family member or another adult on the trip list.",
+          "Step 1: Take the Number 4 bus from Gate 3 at Harbor Town Station. It leaves at 5:10 PM and again at 5:40 PM.",
+          "Step 2: Ride for 25 minutes and get off at Mill Road, the sixth stop.",
+          "Step 3: Cross Mill Road at the crosswalk and wait by the green shuttle sign.",
+          "Step 4: The Peaks Shuttle leaves Mill Road at 5:20, 5:40, 6:00, 6:20 and 6:40 PM. The ride up the hill takes 15 minutes.",
+          "If you will be late, text me at 555-0142. Please do not walk up the hill road, because it has no sidewalk.",
+          "Bring a warm jacket and a red flashlight. White flashlights are not allowed after dark.",
+          "See you Friday! Ms. Ortiz"
+        ]
+      },
+      "picture": "🚌🔭",
+      "topics": ["transport", "space"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": { "title": "Getting to the Observatory", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p15",
+      "title": "Calibrating the Rover's Distance Sensor",
+      "kind": "directions",
+      "sentences": [
+        "Priya's rover uses a distance sensor to stop before it bumps into a wall.",
+        "The sensor sends out a sound too high for people to hear, and then it measures how long the echo takes to bounce back.",
+        "Before each competition, the robotics club calibrates the sensor, which means checking that its readings match real, measured distances.",
+        "To begin, place the rover on a flat table with its sensor facing a cardboard box.",
+        "Use a ruler to measure exactly 20 centimeters from the front of the sensor to the box.",
+        "Next, connect the rover to the club laptop with the USB cable and open the program called SensorCheck.",
+        "Press the Read button three times, and write down each number that appears on the screen.",
+        "Now compare your three readings with the real distance of 20 centimeters.",
+        "If all three readings are between 19 and 21 centimeters, the sensor is accurate, and you can unplug the cable.",
+        "If the readings are all too high or all too low, type the difference into the Offset box and press Save.",
+        "For example, if the sensor reads 23 centimeters each time, the difference is 3, so you type minus 3.",
+        "Then press Read three more times to make sure your fix worked.",
+        "Sometimes the three numbers jump around instead, such as 15, 28 and 20.",
+        "Jumping numbers usually mean that the sensor is dusty or that the box is too small to send back a clear echo.",
+        "In that case, wipe the sensor gently with a dry cloth, move to a larger box, and start the whole test again from the beginning."
+      ],
+      "breaks": [3, 7, 12],
+      "picture": "🤖📏",
+      "topics": ["robots"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": { "title": "Calibrating the Rover's Distance Sensor", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f2-p16",
+      "title": "Soccer Drill Card",
+      "kind": "directions",
+      "sentences": [
+        "Coach Novak gives Ana and Ben a card at soccer practice."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Drill 3: Cone Dribble",
+        "ordered": true,
+        "note": "Pass with the inside of your foot.",
+        "rows": [
+          "Set up five cones in a line, two big steps apart.",
+          "Dribble the ball in and out of the cones, all the way to the end.",
+          "At the last cone, turn and pass the ball back to your partner."
+        ]
+      },
+      "picture": "⚽🔶",
+      "topics": [
+        "sports"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Soccer Drill Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p17",
+      "title": "Triceratops Model Kit",
+      "kind": "directions",
+      "sentences": [
+        "Sam got a wooden Triceratops model kit for his birthday.",
+        "This card came in the box."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Bone Builders: Triceratops",
+        "ordered": true,
+        "note": "Fun fact: the name Triceratops means \"three-horned face.\"",
+        "rows": [
+          "Press all the pieces out of the wooden sheets. Each piece has a number that matches the picture card.",
+          "Snap the four leg bones into the hip bone.",
+          "Slide the ribs onto the backbone, from the biggest rib to the smallest.",
+          "Join the backbone to the hip bone.",
+          "Push the three horns into the skull. Then click the skull onto the front of the backbone.",
+          "Stand your Triceratops on its display base."
+        ]
+      },
+      "picture": "🦕🦴",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Triceratops Model Kit",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p18",
+      "title": "Keyboard Setup",
+      "kind": "directions",
+      "sentences": [
+        "Ben borrows an electric keyboard from the school music room.",
+        "The setup card is taped to the back."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "KeyTone 61: Setup",
+        "ordered": true,
+        "rows": [
+          "Unfold the stand and set the keyboard on top.",
+          "Plug the power cord into the keyboard, then into the wall.",
+          "To play quietly, plug headphones into the PHONES hole. Skip this step if you want sound from the speakers.",
+          "Press POWER. The screen lights up.",
+          "Turn the VOLUME knob to the middle.",
+          "Press VOICE, then choose a sound, such as 01 Piano."
+        ]
+      },
+      "picture": "🎹🎧",
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Keyboard Setup",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p19",
+      "title": "Setting Up a Weather Station",
+      "kind": "directions",
+      "sentences": [
+        "Priya's family bought a SkyCheck weather station for their backyard.",
+        "It has two parts: an outdoor sensor and an indoor display.",
+        "The sensor measures the temperature and the humidity outside, and it sends the numbers to the display by radio.",
+        "Humidity means how much water vapor is in the air.",
+        "First, put two AA batteries into the outdoor sensor.",
+        "Within one minute, put three AAA batteries into the display, so the display can connect to the sensor.",
+        "Keep both parts on the same table while they connect.",
+        "After about three minutes, the outdoor temperature should appear on the screen.",
+        "If you still see two dashes instead of a number, take the batteries out of the display, wait ten seconds, and put them back in.",
+        "Next, choose a home for the sensor.",
+        "Hang it on a post about five feet above the ground, in a spot that is shady all day, such as under a tree.",
+        "Sunlight shining on the sensor makes it read warmer than the air really is.",
+        "Keep it away from walls, roofs and driveways too, because they soak up the sun's heat and give it off later.",
+        "Last, set the display indoors, no more than 100 feet from the sensor."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "picture": "🌡️🌳📟",
+      "topics": [
+        "weather"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Setting Up a Weather Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p20",
+      "title": "Rock Tumbler Guide",
+      "kind": "directions",
+      "sentences": [
+        "Maya bought rough agates at the Lantern Peaks Copper Mine gift shop.",
+        "She wants to polish them in her new rock tumbler."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "TumbleMax Rock Tumbler: Polishing Guide",
+        "columns": [
+          "Stage",
+          "Add",
+          "Time",
+          "Check before the next stage"
+        ],
+        "rows": [
+          [
+            "1. Shape",
+            "2 spoons of coarse grit",
+            "7 days",
+            "Rocks have no sharp edges. If some still do, repeat Stage 1 for 7 more days."
+          ],
+          [
+            "2. Smooth",
+            "2 spoons of medium grit",
+            "7 days",
+            "Rocks feel smooth all over."
+          ],
+          [
+            "3. Fine",
+            "2 spoons of fine grit",
+            "7 days",
+            "Rocks look dull but feel very smooth."
+          ],
+          [
+            "4. Polish",
+            "2 spoons of polish powder",
+            "7 days",
+            "Rocks shine when they are dry. If they look cloudy, repeat Stage 4."
+          ]
+        ],
+        "note": "Every stage: fill the barrel two-thirds full of rocks, add the grit, then add water until it almost covers the rocks. Between stages, wash the rocks and the barrel well, because even a few grains of old grit can scratch the rocks. Put the old mud in the trash, not the sink, because it can block the pipes. Ask an adult to help you check the tumbler each day."
+      },
+      "picture": "🪨💎",
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rock Tumbler Guide",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p21",
+      "title": "Orienteering Course",
+      "kind": "directions",
+      "sentences": [
+        "Leo's class runs an orienteering course in Story Woods.",
+        "In this sport, you use a map and a compass to find checkpoints."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Story Woods Orienteering: Course B",
+        "ordered": true,
+        "note": "Each checkpoint is an orange-and-white flag with a stamp. Stamp the matching box on your card at every checkpoint. Count your steps as you walk.",
+        "rows": [
+          "Start at the trail sign. Hold your compass flat and turn until you face north. Walk north 200 steps to the creek.",
+          "Checkpoint 1 is on the big flat rock by the creek.",
+          "Turn east and walk along the creek until you reach the wooden bridge. Checkpoint 2 is on the bridge rail.",
+          "Cross the bridge. Then walk south 150 steps to the old mill. Checkpoint 3 is by the mill door.",
+          "If you reach the campsite instead of the mill, you have gone too far. Go back to the bridge and count your steps again.",
+          "From the mill, follow the yellow trail markers back to the start. Give your card to your teacher."
+        ]
+      },
+      "picture": "🧭🗺️🌲",
+      "topics": [
+        "maps",
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Orienteering Course",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p22",
+      "title": "Tide Pool Checklist",
+      "kind": "directions",
+      "sentences": [
+        "Ms. Ortiz is taking the science club to the tide pools at Harbor Point on Saturday.",
+        "A tide pool is a shallow pocket of seawater that remains trapped among the rocks after the tide goes out.",
+        "Sea stars, hermit crabs, periwinkle snails and sea anemones all live in these pools.",
+        "Before the trip, Ms. Ortiz sent every club member this checklist.",
+        "First, check the tide table, because you can reach the pools only when the tide is low.",
+        "On Saturday, low tide at Harbor Point is at 10:40 AM.",
+        "Plan to reach the rocks about one hour before low tide.",
+        "Start walking back to the sand no later than one hour after low tide, because the water keeps rising and covers the low rocks.",
+        "If you lose track of the time, listen for Ms. Ortiz, who will blow her whistle three times when it is time to go back.",
+        "Next, pack your bag the night before.",
+        "Wear old sneakers or water shoes with sturdy rubber soles, because wet seaweed makes the rocks extremely slippery.",
+        "Bring a hat, a water bottle, and a notebook and pencil for your field notes.",
+        "Leave buckets and nets at home, because every creature must remain in its own pool.",
+        "At the pools, observe carefully before you touch anything.",
+        "If you want to touch an animal, wet your hand in the pool first and use only one finger, very gently.",
+        "Never pull an animal off a rock, because many of them attach themselves firmly to the rock, and pulling can injure them.",
+        "If you lift a small rock to look underneath, put it back exactly the way it was, because animals live on its underside."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "picture": "🌊🦀⭐",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Tide Pool Checklist",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p23",
+      "title": "Tuning a Guitar",
+      "kind": "directions",
+      "sentences": [
+        "Sam is learning to play the guitar in the Harbor Middle School music club.",
+        "Before every practice, he tunes his guitar, which means making each string play exactly the right note.",
+        "A guitar has six strings, and in standard tuning they are E, A, D, G, B and E, from the thickest string to the thinnest.",
+        "The club leader gave Sam these steps for using a clip-on tuner.",
+        "First, clip the tuner onto the head of the guitar, where the tuning pegs are, and switch it on.",
+        "Next, pluck the thickest string once and let it ring.",
+        "The tuner shows the letter of the note it hears, along with a needle.",
+        "If the needle points left of the center, the note is flat, or too low, so slowly turn that string's peg to tighten the string.",
+        "If the needle points right of the center, the note is sharp, or too high, so loosen the string a little.",
+        "When the needle stays in the center and the screen turns green, that string is in tune.",
+        "Strings stay in tune longer when you finish by tightening, so if you go past the note, loosen the string below it and then tighten it back up.",
+        "Repeat these steps for each of the other five strings, from thickest to thinnest.",
+        "Sometimes the tuner shows the wrong letter, such as G when you are tuning the A string.",
+        "In music, G is the note just below A, so that string is much too low, and you should keep tightening it slowly until the letter changes to A.",
+        "Always turn the pegs slowly, because a string that is pulled much too tight can snap.",
+        "When all six strings are in tune, check each one again, because tuning one string pulls a little on the others."
+      ],
+      "breaks": [
+        4,
+        9,
+        12
+      ],
+      "picture": "🎸🎵",
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Tuning a Guitar",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -420,6 +910,802 @@
       "explain": "He flips the lever down and pulls the pump off. Mr. Okafor says this right after the needle points to 50.",
       "inference": 0,
       "tags": ["next-step", "story-directions"]
+    },
+    {
+      "id": "f2-i17", "skill": "F2", "passage": "f2-p10", "format": "tap", "level": 3,
+      "prompt": "Maya puts her first book on the tray. What should she do before she adds her second book?",
+      "options": ["Tap Done", "Wait for the green check mark", "Scan her library card again", "Take her receipt from the slot"],
+      "answer": 1,
+      "evidence": [3],
+      "hint": "Find the step that talks about the next book. Read what it says to do first.",
+      "explain": "She waits for the green check mark. Step 4 says to wait for the green check mark before you add the next book.",
+      "inference": 0,
+      "tags": ["next-step", "repeat-step"]
+    },
+    {
+      "id": "f2-i18", "skill": "F2", "passage": "f2-p10", "format": "scene", "level": 3,
+      "prompt": "Tap the things Maya uses, in order.",
+      "scene": "hall",
+      "objects": [
+        { "label": "Receipt", "emoji": "🧾" },
+        { "label": "Library card", "emoji": "💳" },
+        { "label": "Book", "emoji": "📕" },
+        { "label": "Done button", "emoji": "✅" }
+      ],
+      "answer": [1, 2, 3, 0],
+      "evidence": [1, 2, 4, 5],
+      "hint": "Read the sign from the top. Each time a step names a thing, tap that thing.",
+      "explain": "Maya uses her library card, then a book, then the Done button, then the receipt. Steps 2, 3, 5 and 6 name them in that order.",
+      "inference": 0,
+      "tags": ["multi-step", "answer-order"]
+    },
+    {
+      "id": "f2-i19", "skill": "F2", "passage": "f2-p11", "format": "tap", "level": 4,
+      "prompt": "The muffins have baked for 20 minutes. Sam's toothpick comes out with wet batter on it. What should he do?",
+      "options": ["Take the muffins out, because the recipe says 20 minutes", "Bake them 20 more minutes", "Bake them 4 more minutes, then test again with a toothpick", "Let them cool for 5 minutes, then bake them again"],
+      "answer": 2,
+      "evidence": [6, 7],
+      "hint": "Find the step that starts with If. Match what Sam sees to one of its two choices.",
+      "explain": "He bakes them 4 more minutes and tests again. Step 8 says that if the toothpick has wet batter on it, bake 4 more minutes and test again.",
+      "inference": 1,
+      "tags": ["if-step", "conditional"]
+    },
+    {
+      "id": "f2-i20", "skill": "F2", "passage": "f2-p11", "format": "tap", "level": 4,
+      "prompt": "Ben pours the wet mix into the dry mix and stirs. He sees a few small lumps, but no dry flour. What should he do next?",
+      "options": ["Keep stirring until every lump is gone", "Add more milk to make it smooth", "Fill the paper cups right away", "Gently fold in the blueberries"],
+      "answer": 3,
+      "evidence": [3, 4],
+      "hint": "Read every sentence in the step about mixing, all the way to the end. Then read the step after it.",
+      "explain": "He folds in the blueberries. Step 4 says to stir only until no dry flour shows and that a few lumps are fine. Step 5 is to fold in the blueberries.",
+      "inference": 1,
+      "tags": ["if-step", "next-step", "key-detail"]
+    },
+    {
+      "id": "f2-i21", "skill": "F2", "passage": "f2-p12", "format": "tap", "level": 4,
+      "prompt": "Ben already has a StarBox player profile. He chooses it in step 4. What should he do next?",
+      "options": ["Ask an adult to type in an email", "Choose Mission 1: Harbor Rescue", "Pick his rover and a nickname", "Choose Start Game again"],
+      "answer": 2,
+      "evidence": [3, 5],
+      "hint": "Step 4 tells you which step to go to. Count down the list to find that step.",
+      "explain": "He picks his rover and a nickname. Step 4 says to skip to step 6, and step 6 says to pick your rover and a nickname. Step 5 is only for new players.",
+      "inference": 1,
+      "tags": ["skip-step", "if-step"]
+    },
+    {
+      "id": "f2-i22", "skill": "F2", "passage": "f2-p12", "format": "tap", "level": 4,
+      "prompt": "Ana puts the disc in at 4:00 PM and plugs in her controller at the same time. What is ready at 4:20 PM?",
+      "options": ["The controller is charged, but the game is still installing", "The game is installed, but the controller is still charging", "Both the game and the controller are ready", "The game is still installing, and the controller is still charging"],
+      "answer": 1,
+      "evidence": [0, 1],
+      "hint": "Find the two amounts of time in steps 1 and 2. Add each one to 4:00 PM, then compare both to 4:20 PM.",
+      "explain": "The game is installed, but the controller is still charging. Step 1 says the install takes about 15 minutes, so it is done at 4:15 PM. Step 2 says charging takes 30 minutes, so it is done at 4:30 PM.",
+      "inference": 1,
+      "tags": ["time-math", "two-timers", "time-pm"]
+    },
+    {
+      "id": "f2-i23", "skill": "F2", "passage": "f2-p13", "format": "tap", "level": 4,
+      "prompt": "Priya pushes her finger into the soil up to her second knuckle. It feels dry. What should her pair do before they make any holes?",
+      "options": ["Begin planting right away", "Water the row lightly until the top of the soil looks dark", "Press the soil down hard", "Pour one full watering can over the bed and wait ten minutes"],
+      "answer": 3,
+      "evidence": [2, 3],
+      "hint": "Find the two sentences that start with If. Pick the one that matches dry soil.",
+      "explain": "They pour one full watering can over the bed and wait ten minutes. The first paragraph says to do this if the soil feels dry. Watering the row lightly comes at the very end.",
+      "inference": 0,
+      "tags": ["if-step", "close-step"]
+    },
+    {
+      "id": "f2-i24", "skill": "F2", "passage": "f2-p13", "format": "order", "level": 4,
+      "prompt": "Put the planting steps in order.",
+      "steps": ["Check the soil with one finger", "Make a row of holes one inch deep", "Drop one seed in each hole and cover it", "Push in a label with your names and the date", "Water the row lightly"],
+      "evidence": [2, 5, 7, 9, 11],
+      "hint": "Look for the order words Before, Next and Finally. Then take the steps inside each paragraph from top to bottom.",
+      "explain": "Check the soil, make the holes, plant and cover the seeds, push in the label, then water the row. The words Before, Next and Finally show the order.",
+      "inference": 0,
+      "tags": ["five-steps", "order-words", "prose-directions"]
+    },
+    {
+      "id": "f2-i25", "skill": "F2", "passage": "f2-p14", "format": "tap", "level": 5,
+      "prompt": "Sam and his dad take the 5:10 PM bus. Which shuttle can they catch, and when will they reach the observatory?",
+      "options": ["The 5:20 PM shuttle, arriving at 5:35 PM", "The 5:40 PM shuttle, arriving at 5:55 PM", "The 6:00 PM shuttle, arriving at 6:15 PM", "The 5:40 PM shuttle, arriving at 6:05 PM"],
+      "answer": 1,
+      "evidence": [2, 3, 5],
+      "hint": "Add the bus ride time to 5:10 PM. Find the first shuttle after that time. Then add the shuttle ride time.",
+      "explain": "They catch the 5:40 PM shuttle and arrive at 5:55 PM. Step 2 says the bus ride is 25 minutes, so they reach Mill Road at 5:35 PM. Step 4 lists a 5:40 PM shuttle and a 15-minute ride.",
+      "inference": 1,
+      "tags": ["time-math", "transfer-route", "time-pm"],
+      "transfer": true
+    },
+    {
+      "id": "f2-i26", "skill": "F2", "passage": "f2-p14", "format": "tap", "level": 5,
+      "prompt": "Leo and his mom miss the 5:10 PM bus, so they take the 5:40 PM bus. What should they do?",
+      "options": ["Text Ms. Ortiz, because they will reach the observatory at about 6:35 PM", "Walk up the hill road, so they get there by 6:30 PM", "Nothing, because the 6:20 PM shuttle gets them there by 6:30 PM", "Take the 6:00 PM shuttle, because it is the next one"],
+      "answer": 0,
+      "evidence": [1, 3, 5, 6],
+      "hint": "Work out the time they reach Mill Road. Find the next shuttle after that, add the ride, and compare the time to the meeting time.",
+      "explain": "They text Ms. Ortiz. The bus gets to Mill Road at 6:05 PM, after the 6:00 PM shuttle has left. The 6:20 PM shuttle arrives at 6:35 PM, which is after 6:30 PM, and the email says to text if you will be late.",
+      "inference": 1,
+      "tags": ["time-math", "problem-solving", "if-step"]
+    },
+    {
+      "id": "f2-i27", "skill": "F2", "passage": "f2-p15", "format": "tap", "level": 5,
+      "prompt": "Priya's box is 20 centimeters away. Her three readings are 24, 24 and 24 centimeters. What should she type in the Offset box?",
+      "options": ["Minus 3", "Plus 4", "Minus 4", "24"],
+      "answer": 2,
+      "evidence": [9, 10],
+      "hint": "Find the example in the third paragraph. Do the same thing with Priya's numbers.",
+      "explain": "She types minus 4. The readings are 4 too high, and the example says a reading of 23, which is 3 too high, means you type minus 3.",
+      "inference": 1,
+      "tags": ["calculate", "use-example", "if-step"]
+    },
+    {
+      "id": "f2-i28", "skill": "F2", "passage": "f2-p15", "format": "tap", "level": 5,
+      "prompt": "Leo's three readings are 12, 30 and 21 centimeters. What should he do?",
+      "options": ["Type minus 1 in the Offset box, because 21 is close to 20", "Unplug the cable, because one reading is between 19 and 21", "Press Read three more times and keep the middle number", "Wipe the sensor, move to a larger box, and start the test again"],
+      "answer": 3,
+      "evidence": [12, 13, 14],
+      "hint": "Decide which kind of problem Leo has. Then find the paragraph that tells you what to do for that problem.",
+      "explain": "He wipes the sensor, moves to a larger box, and starts again. His numbers jump around, and the last paragraph says jumping numbers mean a dusty sensor or a box that is too small.",
+      "inference": 1,
+      "tags": ["problem-solving", "if-step"]
+    },
+    {
+      "id": "f2-i29", "skill": "F2", "passage": "f2-p15", "format": "sort", "level": 5,
+      "prompt": "When do you do each step? Put each step in the right box.",
+      "bins": ["Every test", "Only if the readings are all too high or all too low", "Only if the readings jump around"],
+      "cards": [
+        { "text": "Measure 20 centimeters to the box", "bin": 0, "emoji": "📏" },
+        { "text": "Wipe the sensor with a dry cloth", "bin": 2, "emoji": "🧽" },
+        { "text": "Type the difference in the Offset box", "bin": 1, "emoji": "⌨️" },
+        { "text": "Press Read three times", "bin": 0, "emoji": "🔘" },
+        { "text": "Move to a larger box", "bin": 2, "emoji": "📦" },
+        { "text": "Press Read three more times to check the fix", "bin": 1, "emoji": "🔁" }
+      ],
+      "evidence": [4, 6, 9, 11, 14],
+      "hint": "Find each step in the text. If it comes after If or In that case, read which problem it is for.",
+      "explain": "Measuring and pressing Read three times happen every test. The Offset box and the extra check are for readings that are all too high or too low. Wiping the sensor and moving to a larger box are for jumping numbers.",
+      "inference": 1,
+      "tags": ["if-step", "sort", "conditional"],
+      "transfer": true
+    },
+    {
+      "id": "f2-i30",
+      "skill": "F2",
+      "passage": "f2-p16",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben dribbles to the last cone. What should he do next?",
+      "options": [
+        "Pass the ball back to Ana",
+        "Set up five more cones",
+        "Kick the ball as far as he can"
+      ],
+      "pictures": [
+        "⚽",
+        "🔶",
+        "🦶"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the step that starts at the last cone. Then think about who Ben's partner is.",
+      "explain": "Ben passes the ball back to Ana. Step 3 says to turn at the last cone and pass the ball back to your partner, and Ana is his partner.",
+      "inference": 1,
+      "tags": [
+        "next-step",
+        "partner"
+      ]
+    },
+    {
+      "id": "f2-i31",
+      "skill": "F2",
+      "passage": "f2-p16",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Tap the things Ana uses for the drill, in the order she uses them.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Ball",
+          "emoji": "⚽"
+        },
+        {
+          "label": "Cones",
+          "emoji": "🔶"
+        },
+        {
+          "label": "Water bottle",
+          "emoji": "💧"
+        }
+      ],
+      "answer": [
+        1,
+        0
+      ],
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read step 1 and step 2. Tap the thing each step names.",
+      "explain": "Ana uses the cones first, then the ball. Step 1 sets up the cones, and step 2 dribbles the ball.",
+      "inference": 0,
+      "tags": [
+        "multi-step",
+        "answer-order"
+      ]
+    },
+    {
+      "id": "f2-i32",
+      "skill": "F2",
+      "passage": "f2-p17",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the building steps in order.",
+      "steps": [
+        "Press the pieces out of the sheets",
+        "Snap the legs into the hip bone",
+        "Slide the ribs onto the backbone",
+        "Join the backbone to the hip bone",
+        "Click the skull onto the backbone"
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "Read the card from the top. Each step comes after the one above it.",
+      "explain": "Press out the pieces, snap on the legs, slide on the ribs, join the backbone to the hip bone, then click on the skull. The card lists the steps in this order.",
+      "inference": 0,
+      "tags": [
+        "five-steps"
+      ]
+    },
+    {
+      "id": "f2-i33",
+      "skill": "F2",
+      "passage": "f2-p17",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam is ready to put on the ribs. Which rib should go on first?",
+      "options": [
+        "The smallest rib",
+        "The biggest rib",
+        "A middle-sized rib",
+        "Any rib, in any order"
+      ],
+      "pictures": [
+        "🤏",
+        "🦴",
+        "📏",
+        "🔀"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the step about ribs. Read it to the very end.",
+      "explain": "The biggest rib goes on first. Step 3 says to slide the ribs on from the biggest rib to the smallest.",
+      "inference": 0,
+      "tags": [
+        "detail-in-step",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f2-i34",
+      "skill": "F2",
+      "passage": "f2-p17",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam finds a small piece with the number 14 on it. He does not know where it goes. What should he do?",
+      "options": [
+        "Find number 14 on the picture card",
+        "Put it on the display base",
+        "Leave it out of the model",
+        "Push it into the skull"
+      ],
+      "pictures": [
+        "🖼️",
+        "🪵",
+        "🗑️",
+        "💀"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the step that talks about the numbers on the pieces.",
+      "explain": "He finds number 14 on the picture card. Step 1 says each piece has a number that matches the picture card.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "detail-in-step"
+      ]
+    },
+    {
+      "id": "f2-i35",
+      "skill": "F2",
+      "passage": "f2-p18",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben's dad is on a phone call in the next room. Ben wants to practice without sound coming from the speakers. What should he do before he presses POWER?",
+      "options": [
+        "Plug his headphones into the PHONES hole",
+        "Turn the VOLUME knob to the middle",
+        "Press VOICE and choose 01 Piano",
+        "Fold up the stand"
+      ],
+      "pictures": [
+        "🎧",
+        "🎚️",
+        "🎹",
+        "📐"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Look for a step about playing quietly. Check that it comes before the POWER step.",
+      "explain": "He plugs his headphones into the PHONES hole. Step 3 says to do this to play quietly, and it comes before pressing POWER.",
+      "inference": 1,
+      "tags": [
+        "if-step",
+        "optional-step"
+      ]
+    },
+    {
+      "id": "f2-i36",
+      "skill": "F2",
+      "passage": "f2-p18",
+      "format": "scene",
+      "level": 3,
+      "prompt": "The keyboard is plugged in. Tap the buttons and the knob Ben uses, in order.",
+      "scene": "home",
+      "objects": [
+        {
+          "label": "VOICE button",
+          "emoji": "🎹"
+        },
+        {
+          "label": "POWER button",
+          "emoji": "🔘"
+        },
+        {
+          "label": "VOLUME knob",
+          "emoji": "🎚️"
+        },
+        {
+          "label": "TEMPO button",
+          "emoji": "⏱️"
+        }
+      ],
+      "answer": [
+        1,
+        2,
+        0
+      ],
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Read the last three steps on the card. Tap each thing as its step names it.",
+      "explain": "Ben presses POWER, turns the VOLUME knob, then presses VOICE. Steps 4, 5 and 6 name them in that order. The card does not use the TEMPO button.",
+      "inference": 0,
+      "tags": [
+        "multi-step",
+        "answer-order"
+      ]
+    },
+    {
+      "id": "f2-i37",
+      "skill": "F2",
+      "passage": "f2-p19",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya put batteries in both parts. Three minutes later, the display still shows two dashes. What should she do?",
+      "options": [
+        "Move the sensor into the sun so it warms up",
+        "Take the display batteries out, wait ten seconds, and put them back in",
+        "Take the sensor batteries out and buy new ones",
+        "Hang the sensor on the post, then check the display again"
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the sentence that starts with If. Check that what it describes matches what Priya sees.",
+      "explain": "She takes the display batteries out, waits ten seconds, and puts them back in. The second paragraph says to do this if you still see two dashes.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "f2-i38",
+      "skill": "F2",
+      "passage": "f2-p19",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Where should Priya hang the sensor?",
+      "options": [
+        "Five feet up on a post in the sunny middle of the yard",
+        "Five feet up on a post under a shady tree",
+        "Five feet up on the shady side of the house wall",
+        "On the ground under a shady tree"
+      ],
+      "answer": 1,
+      "evidence": [
+        10,
+        11,
+        12
+      ],
+      "hint": "The third paragraph gives three rules for the sensor's spot. Check each choice against all three rules.",
+      "explain": "She hangs it five feet up on a post under a shady tree. The third paragraph says to hang it about five feet up, in a spot that is shady all day, and away from walls.",
+      "inference": 1,
+      "tags": [
+        "combine-sentences",
+        "close-distractor",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "f2-i39",
+      "skill": "F2",
+      "passage": "f2-p19",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that tells why the sensor must be in the shade.",
+      "unit": "sentence",
+      "answer": [
+        11
+      ],
+      "evidence": [
+        11
+      ],
+      "hint": "Look for a sentence that gives a reason, not an instruction.",
+      "explain": "The sentence is \"Sunlight shining on the sensor makes it read warmer than the air really is.\" It is in the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "find-reason",
+        "why"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i40",
+      "skill": "F2",
+      "passage": "f2-p20",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya opens the barrel after Stage 1. Most rocks are round now, but two still have sharp edges. What should she do?",
+      "options": [
+        "Go on to Stage 2, because the 7 days are done",
+        "Repeat Stage 1 for 7 more days",
+        "Wash the rocks and add the polish powder",
+        "Add 2 spoons of medium grit to the same muddy water"
+      ],
+      "answer": 1,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the Check column for Stage 1. Read what to do if the check fails.",
+      "explain": "She repeats Stage 1 for 7 more days. The Stage 1 row says that if some rocks still have sharp edges, repeat Stage 1.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "repeat-step"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i41",
+      "skill": "F2",
+      "passage": "f2-p20",
+      "format": "order",
+      "level": 4,
+      "prompt": "Stage 1 is done. Maya is starting Stage 2. Put her steps in order.",
+      "steps": [
+        "Wash the rocks and the barrel well",
+        "Fill the barrel two-thirds full of rocks",
+        "Add 2 spoons of medium grit",
+        "Add water until it almost covers the rocks",
+        "Run the tumbler for 7 days"
+      ],
+      "evidence": [
+        1
+      ],
+      "hint": "The note under the table tells you what to do between stages and at the start of every stage. Use it with the Stage 2 row.",
+      "explain": "She washes everything, fills the barrel with rocks, adds the medium grit, adds water, then runs it for 7 days. The note gives the order, and the Stage 2 row gives the grit and the time.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "five-steps",
+        "note"
+      ]
+    },
+    {
+      "id": "f2-i42",
+      "skill": "F2",
+      "passage": "f2-p20",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya has to repeat Stage 1 once. The other stages work the first time. How many days of tumbling will it take in all?",
+      "options": [
+        "28 days",
+        "35 days",
+        "42 days",
+        "14 days"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Count how many times Maya runs a stage, including the repeat. Then multiply by the days in each stage.",
+      "explain": "It takes 35 days. She runs five stages of 7 days each: Stage 1 twice, then Stages 2, 3 and 4.",
+      "inference": 1,
+      "tags": [
+        "calculate",
+        "repeat-step"
+      ]
+    },
+    {
+      "id": "f2-i43",
+      "skill": "F2",
+      "passage": "f2-p21",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo walks south from the bridge and comes to the campsite, not the mill. What should he do?",
+      "options": [
+        "Stamp his card at the campsite",
+        "Go back to the bridge and count his steps again",
+        "Follow the yellow trail markers back to the start",
+        "Keep walking south until he finds the mill"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the step that names the campsite. Read what it tells you to do.",
+      "explain": "He goes back to the bridge and counts his steps again. Step 5 says that reaching the campsite means you have gone too far.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "troubleshooting",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f2-i44",
+      "skill": "F2",
+      "passage": "f2-p21",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo has just stamped box 2 at the bridge. What should he do next?",
+      "options": [
+        "Walk north 200 steps",
+        "Cross the bridge, then walk south 150 steps",
+        "Walk east along the creek to the bridge",
+        "Follow the yellow trail markers to the start"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the step with Checkpoint 2. Then read the step right after it.",
+      "explain": "He crosses the bridge and walks south 150 steps. Step 4 comes right after Checkpoint 2 at the bridge.",
+      "inference": 0,
+      "tags": [
+        "next-step",
+        "direction"
+      ]
+    },
+    {
+      "id": "f2-i45",
+      "skill": "F2",
+      "passage": "f2-p22",
+      "format": "tap",
+      "level": 5,
+      "prompt": "When should Sam plan to reach the rocks, and what is the latest time he should start walking back?",
+      "options": [
+        "Reach them at 9:40 AM, and start back by 11:40 AM",
+        "Reach them at 10:40 AM, and start back by 11:40 AM",
+        "Reach them at 9:40 AM, and start back by 10:40 AM",
+        "Reach them at 9:40 AM, and start back by 12:40 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "Find the low tide time first. Then use the two sentences after it to count one hour back and one hour forward.",
+      "explain": "He should reach the rocks at about 9:40 AM and start back by 11:40 AM. Low tide is at 10:40 AM, and the checklist says to arrive one hour before and start back no later than one hour after.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "combine-sentences"
+      ]
+    },
+    {
+      "id": "f2-i46",
+      "skill": "F2",
+      "passage": "f2-p22",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya lifts a small rock and finds snails stuck to the bottom. She has finished looking. What should she do?",
+      "options": [
+        "Put the rock back exactly the way it was",
+        "Put the rock back upside down so the snails get some sun",
+        "Gently pull the snails off and drop them in the pool",
+        "Carry the rock to the sand so others can see it"
+      ],
+      "answer": 0,
+      "evidence": [
+        15,
+        16
+      ],
+      "hint": "Find the sentence about lifting a rock. Then check each choice against the sentence before it too.",
+      "explain": "She puts the rock back exactly the way it was. The last sentence says animals live on a rock's underside, and the sentence before it says never to pull an animal off a rock.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "key-detail",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i47",
+      "skill": "F2",
+      "passage": "f2-p22",
+      "format": "sort",
+      "level": 5,
+      "prompt": "When does each step happen? Put each step in the right box.",
+      "bins": [
+        "The night before",
+        "At the pools",
+        "When it is time to go"
+      ],
+      "cards": [
+        {
+          "text": "Pack a hat and a water bottle",
+          "bin": 0,
+          "emoji": "🧢"
+        },
+        {
+          "text": "Wet your hand before you touch an animal",
+          "bin": 1,
+          "emoji": "💧"
+        },
+        {
+          "text": "Walk back when the whistle blows three times",
+          "bin": 2,
+          "emoji": "📯"
+        },
+        {
+          "text": "Pack a notebook and a pencil",
+          "bin": 0,
+          "emoji": "📓"
+        },
+        {
+          "text": "Put a lifted rock back the way it was",
+          "bin": 1,
+          "emoji": "🪨"
+        },
+        {
+          "text": "Start back to the sand by 11:40 AM",
+          "bin": 2,
+          "emoji": "🕚"
+        }
+      ],
+      "evidence": [
+        7,
+        8,
+        11,
+        14,
+        16
+      ],
+      "hint": "Find each step in the checklist. Read which paragraph it is in and what that paragraph is about.",
+      "explain": "Packing the hat, water, notebook and pencil happens the night before. Wetting your hand and putting rocks back happen at the pools. Walking back by 11:40 AM or at three whistle blasts happens when it is time to go.",
+      "inference": 1,
+      "tags": [
+        "sort",
+        "when-step"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i48",
+      "skill": "F2",
+      "passage": "f2-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam plucks the D string. The tuner shows D, but the needle points to the right of the center. What should he do?",
+      "options": [
+        "Tighten the string, because the note is too low",
+        "Loosen the string a little below the note, then tighten it back up to D",
+        "Leave it, because the tuner already shows D",
+        "Keep tightening the string until the tuner shows E"
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        10
+      ],
+      "hint": "Decide if the note is flat or sharp. Then read the sentence about finishing by tightening.",
+      "explain": "He loosens the string a little, then tightens it back up to D. The needle on the right means the note is sharp, or too high, and the text says to finish by tightening up to the note.",
+      "inference": 1,
+      "tags": [
+        "if-step",
+        "combine-sentences",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i49",
+      "skill": "F2",
+      "passage": "f2-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam is tuning the B string, but the tuner shows A. What should he do?",
+      "options": [
+        "Loosen the string slowly until the tuner shows B",
+        "Tighten the string slowly until the tuner shows B",
+        "Tune the A string instead, because the tuner shows A",
+        "Unclip the tuner and pluck the thinnest string"
+      ],
+      "answer": 1,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Find the example about the wrong letter. Think about which letter comes just before B, and use the example the same way.",
+      "explain": "He tightens the string slowly until the tuner shows B. In the example, G is just below A, so the string is too low. A is just below B, so this string is too low too.",
+      "inference": 1,
+      "tags": [
+        "use-example",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "f2-i50",
+      "skill": "F2",
+      "passage": "f2-p23",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put Sam's tuning steps in order.",
+      "steps": [
+        "Clip on the tuner and switch it on",
+        "Pluck the thickest string",
+        "Turn its peg until the needle stays in the center",
+        "Tune the other five strings the same way",
+        "Check all six strings again"
+      ],
+      "evidence": [
+        4,
+        5,
+        9,
+        11,
+        15
+      ],
+      "hint": "Use the order words First and Next. Remember that the final check happens after every string is done.",
+      "explain": "Clip on the tuner, pluck the thickest string, tune it until the needle stays centered, tune the other five strings, then check all six again. The last sentence says to check each string again when all six are in tune.",
+      "inference": 0,
+      "tags": [
+        "five-steps",
+        "prose-directions",
+        "order-words"
+      ]
     }
   ],
   "model": {

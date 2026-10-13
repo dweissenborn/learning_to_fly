@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Item, LogEvent, Passage, SkillBank, SkillId } from '@wayfinder/schema';
 import {
-  buildPool, choices, derive, journeyPosition, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, planGateCheck, planSession,
+  buildPool, choices, derive, journeyPosition, levelFor, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, planGateCheck, planSession,
 } from './index';
 
 const DAY = 86_400_000;
@@ -259,5 +259,77 @@ describe('the journey', () => {
     expect(journeyPosition(17, 6, 7, anchor)).toMatchObject({ stop: 3, step: 0 });
     expect(journeyPosition(13, 6, 3, anchor)).toMatchObject({ stop: 3, step: 0 }); // shorter legs: the step is capped, so it arrives next
     expect(journeyPosition(40, 6, 3, { at: 30, stop: 5, step: 0, after: 4 })).toMatchObject({ arrived: true, after: 14 });
+  });
+});
+
+describe('pacing for a learner who locks skills in quickly', () => {
+  const passage = (pid: string, level: number): Passage => ({
+    id: pid, title: pid, kind: 'story', sentences: ['A.'], topics: ['school'], level, socialLoad: 0,
+    credit: { title: pid, author: 'x', source: 'x', licence: 'original', retrieved: '2026-10-12', adapted: false },
+  });
+  const levels = [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5];
+  const bank: SkillBank = {
+    skill: 'N1',
+    passages: [1, 2, 3, 4, 5].map((l) => passage('p' + l, l)),
+    items: [
+      { id: 'm', skill: 'N1', passage: 'p1', format: 'tap', level: 1, prompt: '?', explain: '.', options: ['a', 'b'], answer: 0 },
+      ...levels.map((l, k) => ({ id: `i${k}`, skill: 'N1' as SkillId, passage: 'p' + l, format: 'tap' as const, level: l, prompt: '?', explain: '.', options: ['a', 'b'], answer: 0, transfer: k % 3 === 0 })),
+    ],
+    model: { item: 'm', steps: [{ say: '1' }, { say: '2' }, { say: '3', reveal: true }] },
+  };
+  const pool = buildPool([bank]);
+  const ctx = () => ({ pool, seen: new Map<string, number>(), interests: [], allowThemes: false, rng: mulberry32(3) });
+  /** One session of your-turn answers, each [level, right first time, transfer]. */
+  function run(ts: number, answers: [number, boolean, boolean?][]): LogEvent[] {
+    const sid = id();
+    let t = ts;
+    return [
+      { id: id(), ts, type: 'session', session: sid, action: 'start', strand: 'narrative', skill: 'N1' },
+      ...answers.map(([level, correct, transfer]): LogEvent => ({ id: id(), ts: (t += 1000), type: 'answer', session: sid, item: `x${id()}`, skill: 'N1', phase: 'yourturn', correct, hint: correct ? 0 : 1, tries: 1, ms: 1, format: 'tap', level, transfer: !!transfer })),
+      { id: id(), ts: t + 1000, type: 'session', session: sid, action: 'finish' },
+    ];
+  }
+
+  it('climbs a level after two right in a row, and steps down after two misses', () => {
+    const at = (ev: LogEvent[]) => levelFor(derive(ev).skills.N1, pool);
+    expect(at([])).toBe(1);
+    expect(at(run(T0, [[1, true], [1, true]]))).toBe(2);
+    expect(at(run(T0, [[1, true], [1, true], [2, true], [2, true], [3, true], [3, true], [4, true], [4, true]]))).toBe(5);
+    expect(at(run(T0, [[1, true], [1, true], [2, false], [2, false]]))).toBe(1);
+    expect(at(run(T0, [[1, true], [1, true], [1, false], [1, false]]))).toBe(2); // misses on easier texts do not count
+  });
+
+  it('never serves a harder level than he has reached, and serves his own level first', () => {
+    const picked = pickItems(ctx(), 'N1', 4, { level: 3 });
+    expect(Math.max(...picked.map((i) => i.level))).toBe(3);
+    expect(picked[0].level).toBe(3);
+    expect(pickItems(ctx(), 'N1', 20, { level: 2 }).every((i) => i.level <= 2)).toBe(true);
+  });
+
+  it('fast-tracks mastery after one flawless session that reaches level 3 with a new format', () => {
+    const strong = run(T0, [[3, true], [3, true], [3, true], [3, true, true]]);
+    expect(derive(strong).skills.N1.status).toBe('mastered');
+    expect(derive(strong, { fastTrack: false }).skills.N1.status).toBe('learning');
+    expect(derive(run(T0, [[2, true], [2, true], [2, true], [2, true, true]])).skills.N1.status).toBe('learning');
+    expect(derive(run(T0, [[3, true], [3, true], [3, false], [3, true, true]])).skills.N1.status).toBe('learning');
+  });
+
+  it('skips the worked example once he has solved one, and guided practice once he is independent', () => {
+    const fresh = planSession(derive([]), ctx(), 'narrative', T0, 4);
+    expect(fresh.skipWatch).toBe(false);
+    expect(fresh.model).toBeDefined();
+    expect(fresh.together.length).toBeGreaterThan(0);
+
+    const solvedOne = derive(run(T0, [[1, false], [1, true]]));
+    const p1 = planSession(solvedOne, ctx(), 'narrative', T0 + DAY, 4);
+    expect(p1.skipWatch).toBe(true);
+    expect(p1.model).toBeUndefined();
+
+    const independent = derive(run(T0, [[1, true], [1, true], [2, true], [2, false], [3, true]]));
+    const p2 = planSession(independent, ctx(), 'narrative', T0 + DAY, 4);
+    expect(p2.skipTogether).toBe(true);
+    expect(p2.together).toHaveLength(0);
+    expect(p2.yourturn).toHaveLength(6); // two more of his own instead
+    expect(p2.yourturn.every((i) => i.level <= p2.level)).toBe(true);
   });
 });

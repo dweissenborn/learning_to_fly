@@ -13,7 +13,7 @@ import textstat
 
 BANK = pathlib.Path(__file__).resolve().parent.parent / "content" / "bank"
 # level: (min words, max words, max average sentence length, min grade, max grade)
-BANDS = {1: (25, 70, 10, 0.5, 2.5), 2: (50, 120, 13, 1.5, 3.5), 3: (80, 180, 16, 2.5, 5.0)}
+BANDS = {1: (25, 70, 10, 0.5, 2.5), 2: (50, 120, 13, 1.5, 3.5), 3: (80, 180, 16, 2.5, 5.0), 4: (120, 300, 18, 4.0, 6.5), 5: (180, 420, 20, 5.5, 8.0)}
 MIN_WORDS = 25  # shorter passages are signs, labels and tables
 
 

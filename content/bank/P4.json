@@ -119,6 +119,211 @@
       "socialLoad": 2,
       "themes": ["loss"],
       "credit": { "title": "Kai's News", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "p4-p06",
+      "title": "The Fisherman and the Little Fish",
+      "kind": "fable",
+      "sentences": [
+        "A fisherman sat on the rocks by the sea from morning until evening.",
+        "All day long, he caught only one fish, and it was very small.",
+        "As he reached for his basket, the little fish spoke.",
+        "\"Please put me back in the sea,\" it said. \"I am too small to make a good supper.\"",
+        "\"If you let me go, I will grow big and fat.\"",
+        "\"Then you can come back next year and catch me again.\"",
+        "The fisherman thought about this for a while.",
+        "\"You may be right that you will grow,\" he said. \"But I am hungry tonight.\"",
+        "\"The sea is very big, and I may never find you again.\"",
+        "\"A small supper tonight is better than a big supper that I might never get.\"",
+        "So he put the little fish in his basket and walked home."
+      ],
+      "picture": "🎣🐟",
+      "topics": [
+        "ocean",
+        "food"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Fisherman and the Little Fish",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p4-p07",
+      "title": "The Solo",
+      "kind": "story",
+      "sentences": [
+        "Every spring, the Harbor Middle School band performs a concert in the gym, and one song includes a short solo that can be played on any instrument.",
+        "This year, Maya and Leo both auditioned for it.",
+        "On Friday afternoon, the band teacher pinned a list to the music room door.",
+        "Next to the word \"Solo,\" it said \"Maya Brooks.\"",
+        "Maya read the list twice.",
+        "She grinned, and then she pressed her hand against her stomach.",
+        "She had wanted this solo since September, but she had never performed alone in front of three hundred people.",
+        "\"What if my hands start shaking?\" she whispered.",
+        "Leo was standing right behind her, and he read the list too.",
+        "He had practiced the solo every evening for two weeks.",
+        "For a moment, he looked down at his shoes without saying anything.",
+        "Then he tapped Maya on the shoulder.",
+        "\"Honestly, you played it better than I did,\" he said. \"I am happy for you, and I am also a little disappointed.\"",
+        "Maya nodded slowly. \"I am excited, and I am nervous too,\" she admitted.",
+        "\"Could you sit somewhere I can see you on concert night?\"",
+        "Leo grinned. \"I will be at the drums, right behind the flutes,\" he said. \"That is where I always sit.\""
+      ],
+      "breaks": [
+        4,
+        8
+      ],
+      "picture": "🎺🎶",
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Solo",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p08",
+      "title": "The Robot at the Café",
+      "kind": "story",
+      "sentences": [
+        "On Monday, the Lighthouse Café got a new helper: a robot that carried plates from the kitchen to the tables.",
+        "It was about as tall as a kitchen stool and had three shelves for plates.",
+        "Sensors on its front helped it stop before it bumped into a chair or a person.",
+        "When it reached the right table, it played a short tune and waited for the customer to lift off the food.",
+        "Priya came in after school and watched it for half an hour.",
+        "She drew a map of its path around the tables and timed each trip with her watch.",
+        "\"It turns so smoothly,\" she said. \"I want to build one like it for the robot fair.\"",
+        "Grandma Rose came in later for her usual cup of tea, but she did not smile at the robot.",
+        "For years, Mrs. Lin, the owner, had carried the tea over herself and stopped to chat.",
+        "Now the robot rolled up, played its tune and waited.",
+        "\"It is clever,\" Grandma Rose said, \"but it does not ask me how the bakery is doing.\"",
+        "Mrs. Lin felt two ways about the robot.",
+        "She no longer had to carry heavy trays across the room, so her back did not ache at the end of the day.",
+        "But she missed stopping at each table for a quick chat.",
+        "So she made a new plan: the robot would carry the plates, and she would walk over afterward to say hello.",
+        "The next day, Grandma Rose got her tea from the robot and a friendly chat from Mrs. Lin."
+      ],
+      "breaks": [
+        4,
+        11
+      ],
+      "picture": "🤖☕",
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Robot at the Café",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p09",
+      "title": "Lights Out at Nine",
+      "kind": "story",
+      "sentences": [
+        "For many years, the night sky above Harbor Town had a dull orange glow.",
+        "Bright street lights, shop signs and the floodlights at the skate park sent light upward into the sky as well as down onto the ground.",
+        "Scientists call this light pollution.",
+        "The extra light makes the whole sky glow, and that glow hides fainter stars from view.",
+        "Astronomers at the observatory on Lantern Peaks noticed that they could see fewer stars every year.",
+        "In March, the town council voted to approve a new dark-sky plan.",
+        "Every street light would get a metal shield that aimed its light down at the ground instead of up at the sky.",
+        "Shop signs would switch off automatically at ten o'clock every evening.",
+        "The floodlights at the skate park, which used to stay on until eleven, would now switch off at nine.",
+        "Maya was thrilled, because she loved to draw the constellations, and the astronomers predicted that the town would soon see many more stars.",
+        "Leo was not thrilled at all.",
+        "In summer, he usually skated until the floodlights went out, because the evenings were cool and the park was quiet.",
+        "\"Now I lose two hours of skating every night,\" he complained to Maya. \"The stars were fine before.\"",
+        "\"The stars were not fine,\" Maya replied. \"We just could not see most of them.\"",
+        "On the first night of the new plan, Maya invited Leo to walk up to the lookout with her after the skate park closed.",
+        "When they reached the top of the hill, Leo stopped walking and stared upward in silence.",
+        "A pale band of light stretched across the entire sky, made by the light of billions of distant stars.",
+        "\"Is that the Milky Way?\" he asked, and Maya nodded.",
+        "On the walk home, Leo admitted that the sky was amazing, but he still wished the skate park had one more hour of light.",
+        "Maya suggested that they could ask the council for special lamps that shine only down onto the ramps."
+      ],
+      "breaks": [
+        5,
+        9,
+        14
+      ],
+      "picture": "🌌🛹",
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Lights Out at Nine",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p10",
+      "title": "A Mine by the River",
+      "kind": "article",
+      "sentences": [
+        "Copper is a reddish metal that is found in certain kinds of rock under the ground.",
+        "It carries electricity well, so it is used in phone chargers, computers, electric cars and the wires inside our homes.",
+        "To get copper, a company digs a mine, crushes the rock and separates the metal from the stone.",
+        "When a company plans a new mine near a town, people in the town often feel very differently about it.",
+        "Some people are glad, because a mine brings jobs that pay well, and the money helps local shops, schools and roads.",
+        "Young people who might have moved away to find work may be able to stay near their families.",
+        "Other people are worried.",
+        "Mines can be noisy and dusty, and big trucks carry rock along roads where children walk to school.",
+        "If waste from a mine leaks into a river, it can harm fish and the water that people and farms need.",
+        "Some people also love the forests and hills as they are, and they do not want them dug up.",
+        "Many people feel both ways at once.",
+        "A worker might want a job at the mine but also want to keep fishing in a clean river with her children.",
+        "To protect the land and water, many places have rules for mines.",
+        "In those places, a mine must test the water often, and when it closes, the company must cover the bare ground with soil and plant new trees and grass.",
+        "Before a new mine is allowed to open, people in the town can often go to public meetings, ask questions and share their views.",
+        "Hearing every side does not make the choice easy, but it can help a town make a choice that more people can accept."
+      ],
+      "breaks": [
+        3,
+        6,
+        10
+      ],
+      "picture": "⛏️🏞️",
+      "topics": [
+        "mining",
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "A Mine by the River",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -326,6 +531,769 @@
       "explain": "One good answer is: Ben felt sad because his best friend was moving away. Kai felt happy and sad because he would miss Ben. Any honest answer is fine.",
       "inference": 1,
       "tags": ["opinion", "two-views", "mixed-feelings", "loss"]
+    },
+    {
+      "id": "p4-i11",
+      "skill": "P4",
+      "passage": "p4-p06",
+      "format": "sort",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Who said this? Sort each card to the little fish or the fisherman.",
+      "bins": [
+        "The little fish 🐟",
+        "The fisherman 🎣"
+      ],
+      "cards": [
+        {
+          "text": "Please put me back in the sea.",
+          "bin": 0
+        },
+        {
+          "text": "I am too small to make a good supper.",
+          "bin": 0
+        },
+        {
+          "text": "Come back next year and catch me again.",
+          "bin": 0
+        },
+        {
+          "text": "I am hungry tonight.",
+          "bin": 1
+        },
+        {
+          "text": "The sea is very big, and I may never find you again.",
+          "bin": 1
+        },
+        {
+          "text": "A small supper tonight is better than a big one I might never get.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "hint": "The fish speaks first. The fisherman answers after he thinks for a while.",
+      "explain": "The little fish asked to go back, said it was too small, and said to come back next year. The fisherman said he was hungry tonight, that he might never find the fish again, and that a small supper tonight was better.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "two-characters",
+        "fable",
+        "dialogue"
+      ]
+    },
+    {
+      "id": "p4-i12",
+      "skill": "P4",
+      "passage": "p4-p06",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why did the fisherman keep the little fish?",
+      "options": [
+        "He was hungry now, and he might never find the fish again.",
+        "He wanted to show the fish to his friends.",
+        "The fish asked him to take it home.",
+        "He liked small fish better than big fish."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Read what the fisherman says after he thinks about it. He gives two reasons.",
+      "explain": "He was hungry that night, and the sea is so big that he might never find the fish again. He says both things after he thinks for a while.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "reason",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i13",
+      "skill": "P4",
+      "passage": "p4-p06",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "The fish and the fisherman both had a reason. Whose reason do you think was stronger? Build your answer.",
+      "frame": "I think {0} had the stronger reason because {1}. {2}",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who",
+          "options": [
+            "the little fish",
+            "the fisherman",
+            "both of them"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "a big fish later would be a bigger supper",
+            "the fisherman was hungry that night",
+            "the sea is too big to find one fish again",
+            "the fish wanted to grow up in the sea"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Each one was thinking about a different time.",
+            "I can see both sides.",
+            "I would have let the fish go."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "hint": "The fish is thinking about next year. The fisherman is thinking about tonight. Which time matters more to you?",
+      "explain": "One good answer is: I think the fisherman had the stronger reason because he was hungry that night. Each one was thinking about a different time. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i14",
+      "skill": "P4",
+      "passage": "p4-p07",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "How did Maya feel when she saw her name on the list?",
+      "options": [
+        "excited and nervous",
+        "excited and jealous",
+        "nervous and disappointed",
+        "calm and proud"
+      ],
+      "pictures": [
+        "🤩😟",
+        "🤩😒",
+        "😟😞",
+        "😌😊"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        7,
+        13
+      ],
+      "hint": "Find one clue that Maya felt good. Then find one clue that she felt worried. Read what she tells Leo.",
+      "explain": "Maya felt excited and nervous. She grinned, but then she pressed her hand against her stomach and worried that her hands would shake. She tells Leo, \"I am excited, and I am nervous too.\"",
+      "inference": 1,
+      "tags": [
+        "mixed-feelings",
+        "body-clue",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p4-i15",
+      "skill": "P4",
+      "passage": "p4-p07",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Leo felt two ways about the list. Which choice shows both?",
+      "options": [
+        "glad for Maya and disappointed for himself",
+        "glad for himself and disappointed in Maya",
+        "excited about the solo and nervous about the concert",
+        "proud of his practice and bored by the band"
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10,
+        12
+      ],
+      "hint": "Leo says how he feels when he talks to Maya. Look for two feeling words in what he says.",
+      "explain": "Leo was glad for Maya and disappointed for himself. He says, \"I am happy for you, and I am also a little disappointed.\" He had practiced every evening for two weeks.",
+      "inference": 0,
+      "tags": [
+        "mixed-feelings",
+        "two-views",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p4-i16",
+      "skill": "P4",
+      "passage": "p4-p07",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows Leo was disappointed before he said it out loud.",
+      "answer": [
+        10
+      ],
+      "evidence": [
+        10
+      ],
+      "hint": "Find what Leo does right after he reads the list, before he speaks.",
+      "explain": "\"For a moment, he looked down at his shoes without saying anything.\" Looking down and staying quiet shows he was disappointed. Later he says it out loud.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "hidden-feeling",
+        "body-clue"
+      ]
+    },
+    {
+      "id": "p4-i17",
+      "skill": "P4",
+      "passage": "p4-p07",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "If you were Leo, how would you feel about the list? Build your answer.",
+      "frame": "If I were Leo, I would feel {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "My feeling",
+          "options": [
+            "disappointed",
+            "happy for Maya",
+            "both disappointed and happy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "I practiced for two weeks",
+            "my friend played it better",
+            "I can try again next year",
+            "Maya worked hard too"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Maya's feelings make sense too.",
+            "Two feelings at once is normal.",
+            "I felt like this after a tryout once."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        12
+      ],
+      "hint": "Think about how hard Leo practiced. Then think about what he says to Maya.",
+      "explain": "One good answer is: If I were Leo, I would feel both disappointed and happy because my friend played it better. Two feelings at once is normal. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i18",
+      "skill": "P4",
+      "passage": "p4-p08",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Who felt this way about the robot? Sort each card to Priya or Grandma Rose.",
+      "bins": [
+        "Priya 🤖",
+        "Grandma Rose ☕"
+      ],
+      "cards": [
+        {
+          "text": "She timed each trip with her watch.",
+          "bin": 0
+        },
+        {
+          "text": "She wanted to build one like it.",
+          "bin": 0
+        },
+        {
+          "text": "She liked the way it turned so smoothly.",
+          "bin": 0
+        },
+        {
+          "text": "She did not smile at the robot.",
+          "bin": 1
+        },
+        {
+          "text": "She came in for her usual cup of tea.",
+          "bin": 1
+        },
+        {
+          "text": "She said it does not ask about the bakery.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "hint": "Every card says \"she.\" Find each action in the story, and check whose name goes with it.",
+      "explain": "Priya timed the trips, wanted to build one, and said it turns so smoothly. Grandma Rose came in for her usual tea, did not smile at the robot, and said it does not ask about the bakery.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "two-characters",
+        "same-gender"
+      ]
+    },
+    {
+      "id": "p4-i19",
+      "skill": "P4",
+      "passage": "p4-p08",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Mrs. Lin felt two ways about the robot. Which choice shows both sides?",
+      "options": [
+        "She was glad not to carry heavy trays, but she missed chatting with customers.",
+        "She was glad the robot was fast, but she worried it would bump into chairs.",
+        "She was glad to have more time to chat, but her back hurt more.",
+        "She liked the robot's tune, but she wanted to build a better robot."
+      ],
+      "answer": 0,
+      "evidence": [
+        11,
+        12,
+        13
+      ],
+      "hint": "Find the sentence that says Mrs. Lin felt two ways. Read the two sentences after it.",
+      "explain": "Mrs. Lin was glad she no longer had to carry heavy trays, but she missed stopping at each table for a chat. This is in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i20",
+      "skill": "P4",
+      "passage": "p4-p08",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Priya and Grandma Rose saw the same robot in different ways. Who are you more like? Build your answer.",
+      "frame": "I see the robot more like {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who",
+          "options": [
+            "Priya",
+            "Grandma Rose",
+            "Mrs. Lin"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "a robot that moves by itself is exciting",
+            "a person asking how you are matters",
+            "it helps with heavy work",
+            "the café feels less friendly with it"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Mrs. Lin's plan makes room for both views.",
+            "Both of them have a good reason.",
+            "I would like to see this robot work."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        10,
+        14
+      ],
+      "hint": "Read what Priya says and what Grandma Rose says. Then think about which one sounds more like you.",
+      "explain": "One good answer is: I see the robot more like Priya because a robot that moves by itself is exciting. Mrs. Lin's plan makes room for both views. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p4-i21",
+      "skill": "P4",
+      "passage": "p4-p09",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Who would say this? Sort each card to Maya or Leo.",
+      "bins": [
+        "Maya 🌌",
+        "Leo 🛹"
+      ],
+      "cards": [
+        {
+          "text": "I am thrilled about the dark-sky plan.",
+          "bin": 0
+        },
+        {
+          "text": "I love to draw the constellations.",
+          "bin": 0
+        },
+        {
+          "text": "We just could not see most of the stars before.",
+          "bin": 0
+        },
+        {
+          "text": "Summer evenings are the best time to skate.",
+          "bin": 1
+        },
+        {
+          "text": "Two hours of skating is a lot to lose.",
+          "bin": 1
+        },
+        {
+          "text": "The stars were fine before.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        9,
+        11,
+        12,
+        13
+      ],
+      "hint": "Read the third paragraph. Maya cares most about the stars. Leo cares most about the skate park.",
+      "explain": "Maya was thrilled, loves to draw the stars, and says we could not see most of them. Leo skated on cool summer evenings, says he loses two hours, and says the stars were fine before. This is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p4-i22",
+      "skill": "P4",
+      "passage": "p4-p09",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "At the end, how did Leo feel about the dark-sky plan?",
+      "options": [
+        "He loved the dark sky, but he still wanted more time to skate.",
+        "He loved the dark sky, and he no longer cared about skating.",
+        "He still disliked the plan, and the sky did not interest him.",
+        "He wanted the orange glow back so he could skate until eleven."
+      ],
+      "answer": 0,
+      "evidence": [
+        15,
+        16,
+        18
+      ],
+      "hint": "Read what Leo says on the walk home. Look for the word \"but\" and read both parts of the sentence.",
+      "explain": "Leo said the sky was amazing, but he still wished the skate park had one more hour of light. He had two feelings at once. This is near the end of the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "mixed-feelings",
+        "change-of-view"
+      ]
+    },
+    {
+      "id": "p4-i23",
+      "skill": "P4",
+      "passage": "p4-p09",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Which idea could help both Maya and Leo?",
+      "options": [
+        "Lamps that shine only down onto the ramps",
+        "Turning the street lights back up toward the sky",
+        "Closing the observatory on summer nights",
+        "Switching the shop signs off at nine instead of ten"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        6,
+        19
+      ],
+      "hint": "Think about what Maya wants and what Leo wants. Then look for an idea at the end that gives each of them something.",
+      "explain": "Maya suggested lamps that shine only down onto the ramps. Light aimed down at the ground does not make the sky glow, so Leo could skate and Maya could still see the stars. The idea is in the last sentence.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "p4-i24",
+      "skill": "P4",
+      "passage": "p4-p09",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Maya and Leo both have a reason. What do you think of the dark-sky plan? Build your answer.",
+      "frame": "I think the dark-sky plan is {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "a good plan",
+            "unfair to skaters",
+            "good, with a change"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "everyone can see the Milky Way now",
+            "the skate park closes two hours earlier",
+            "a town is shared by many people",
+            "lamps that point down could help both"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "I can see Leo's side too.",
+            "I can see Maya's side too.",
+            "I would want to see the Milky Way."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        12,
+        13,
+        18,
+        19
+      ],
+      "hint": "Think about what Maya gets from the plan and what Leo loses. Then think about the idea at the end.",
+      "explain": "One good answer is: I think the dark-sky plan is good, with a change, because lamps that point down could help both. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p4-i25",
+      "skill": "P4",
+      "passage": "p4-p10",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "How people in a town can feel different ways about a new mine",
+        "How a company crushes rock and separates copper from stone",
+        "Why every mine harms rivers and fish",
+        "The good jobs that a copper mine brings to a town"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        10,
+        15
+      ],
+      "hint": "A main idea covers most of the article, not just one paragraph. Check which choice fits the second, third and last paragraphs.",
+      "explain": "The article is mostly about how people feel different ways about a new mine. The second paragraph says people often feel very differently, and the last paragraph says many feel both ways. Each other choice fits only one part.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "two-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i26",
+      "skill": "P4",
+      "passage": "p4-p10",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort each reason. Is it a reason to be glad about the mine, or a reason to be worried?",
+      "bins": [
+        "Glad 🙂",
+        "Worried 😟"
+      ],
+      "cards": [
+        {
+          "text": "Jobs that pay well",
+          "bin": 0
+        },
+        {
+          "text": "Money for local shops, schools and roads",
+          "bin": 0
+        },
+        {
+          "text": "Young people can stay near their families",
+          "bin": 0
+        },
+        {
+          "text": "Noise and dust",
+          "bin": 1
+        },
+        {
+          "text": "Big trucks on roads where children walk",
+          "bin": 1
+        },
+        {
+          "text": "Waste could leak into the river",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "hint": "The second paragraph is about people who are glad. The third paragraph is about people who are worried. Find each card in one of them.",
+      "explain": "Glad: good jobs, money for shops, schools and roads, and young people staying near family. Worried: noise and dust, big trucks near children, and waste in the river.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "two-views",
+        "sort-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i27",
+      "skill": "P4",
+      "passage": "p4-p10",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "The article says a worker might feel both ways at once. Which choice shows both feelings?",
+      "options": [
+        "She wants a job at the mine, but she also wants a clean river to fish in.",
+        "She wants a job at the mine, and she also wants more trucks on the road.",
+        "She wants a clean river, so she does not want the job at all.",
+        "She wants to move away for work, but she also wants to stay near her family."
+      ],
+      "answer": 0,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Find the sentence that says many people feel both ways. Read the sentence right after it.",
+      "explain": "The worker might want a job at the mine but also want to keep fishing in a clean river with her children. This is at the start of the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i28",
+      "skill": "P4",
+      "passage": "p4-p10",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "If a company planned a copper mine near your town, how would you feel? Build your answer.",
+      "frame": "I would feel {0} about the mine because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "My feeling",
+          "options": [
+            "glad",
+            "worried",
+            "both glad and worried"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "it would bring jobs and money",
+            "it could harm the river and the fish",
+            "copper is needed for phones and cars",
+            "rules could help protect the land and water"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "People who disagree with me have reasons too.",
+            "I would go to the public meeting.",
+            "I would want to see how a mine works."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        1,
+        4,
+        8,
+        10,
+        12,
+        14
+      ],
+      "hint": "Think about one reason to be glad and one reason to be worried. Which one matters more to you?",
+      "explain": "One good answer is: I would feel worried about the mine because it could harm the river and the fish. People who disagree with me have reasons too. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "mixed-feelings"
+      ]
     }
   ],
   "model": {

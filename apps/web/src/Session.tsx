@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button, Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId } from '@wayfinder/schema';
-import { ALL_SKILLS, choices, gate, isInterest, mulberry32, planGateCheck, planSession, strandOf, type Choice, type Progress, type SessionPlan } from '@wayfinder/engine';
+import { ALL_SKILLS, choices, gate, isInterest, levelFor, mulberry32, planGateCheck, planSession, strandOf, type Choice, type Progress, type SessionPlan } from '@wayfinder/engine';
 import { addNote, log, type Settings } from './db';
 import { pool, passageText, SKILL, STRAND } from './content';
 import { ItemView, NextSlot, type HintMode, type Result } from './ItemView';
@@ -82,7 +82,7 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
     const phase = step as 'warmup' | 'together' | 'yourturn' | 'gatecheck';
     log({
       type: 'answer', session: sid, item: item.id, skill: item.skill, phase, correct: r.correct, hint: r.hint, tries: r.tries, ms: r.ms, format: item.format,
-      transfer: !!item.transfer, interest: isInterest(pool, item, settings.interests), readAloud: settings.readAloud, ...(r.rubric !== undefined ? { rubric: r.rubric } : {}),
+      transfer: !!item.transfer, interest: isInterest(pool, item, settings.interests), readAloud: settings.readAloud, level: item.level, ...(r.rubric !== undefined ? { rubric: r.rubric } : {}),
     });
     if (r.note) addNote({ kind: 'answer', personal: !!item.personal, item: item.id, title: item.prompt, text: r.note });
     setDone((d) => [...d, { item, phase, r }]);
@@ -111,9 +111,10 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
         <ol className="schedule">
           {steps.map((s, i) => {
             const at = steps.indexOf(step);
-            return <li key={s} className={i < at ? 'done' : i === at ? 'now' : ''} aria-current={i === at ? 'step' : undefined}>
+            const skipped = (s === 'watch' && plan?.skipWatch) || (s === 'together' && plan?.skipTogether);
+            return <li key={s} className={`${i < at ? 'done' : i === at ? 'now' : ''} ${skipped ? 'skipped' : ''}`} aria-current={i === at ? 'step' : undefined}>
               <span className="dot" aria-hidden>{STEP_META[s].icon}</span>{STEP_META[s].label}
-              <span className="sr-only">{i < at ? ', done' : i === at ? ', now' : ''}</span>
+              <span className="sr-only">{skipped ? ', skipped: you know this' : i < at ? ', done' : i === at ? ', now' : ''}</span>
             </li>;
           })}
         </ol>
@@ -141,6 +142,10 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
         </NextSlot>
       </div>}
       {current && <div className="stack">
+        {idx === 0 && plan && (step === 'together' || step === 'yourturn') && (plan.skipWatch || plan.skipTogether) && (step === 'yourturn' || !plan.skipTogether) &&
+          <div className="feedback good appear"><Guide id={guide} mood="happy" size={44} /><span>{
+            plan.skipTogether ? 'You already know how to do this, so we skip ahead. More of your own instead.' : 'You already know how to do this, so we skip the example today.'
+          }</span></div>}
         <div className="row muted" style={{ fontWeight: 700 }}>
           <span className={`chip strand-${strandOf(current.skill)}`} style={{ background: 'var(--s-soft)', color: 'var(--s-deep)' }}>{STRAND[strandOf(current.skill)].icon} {SKILL[current.skill].name}</span>
           <span>{STEP_META[step].label} · {idx + 1} of {phaseItems}</span>
@@ -245,6 +250,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const newly = ALL_SKILLS.filter((s) => progress.skills[s].everMastered && !before.mastered.has(s));
+  const levelNow = plan ? levelFor(progress.skills[plan.skill], pool) : 0;
   const opened = (progress.gateOpened || checkPassed) && !before.opened;
   const own = done.filter((d) => d.phase === 'yourturn' || d.phase === 'gatecheck');
   const warm = [...new Set(done.filter((d) => d.phase === 'warmup').map((d) => SKILL[d.item.skill].name))];
@@ -304,6 +310,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
       </div>
     </div>
     {newly.map((s) => <div key={s} className="ican-new appear">⭐ New on your shelf: {SKILL[s].ican}</div>)}
+    {plan && levelNow > plan.level && <div className="ican-new appear">⬆️ Harder texts unlocked: level {levelNow} in {SKILL[plan.skill].name}.{levelNow >= 4 ? ' These are longer texts. You earned them.' : ''}</div>}
     {opened && <div className="ican-new appear strand-philosophical" style={{ background: 'var(--phi-soft)', color: 'var(--phi-deep)' }}>🏮 Lantern Peaks are open. A new part of your island is waiting.</div>}
     {arrivedStop && <PostcardCard stop={arrivedStop} arrived />}
     {koalaMet && <KoalaCard koala={koalaMet} />}

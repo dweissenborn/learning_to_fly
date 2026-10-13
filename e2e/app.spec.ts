@@ -1,5 +1,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import { createLearner, deleteLearner, learners, sync } from '../api/src/store.js';
+import { memoryRepo } from '../api/src/memory.js';
 
 // WCAG 2.2 AA is the plan's baseline: accessibility regressions fail the build.
 async function axe(page: Page, where: string) {
@@ -48,6 +50,11 @@ test('first run, a session item, and stopping without penalty', async ({ page })
   await expect(page.getByText(/Warm up · 1 of/)).toBeVisible();
   await axe(page, 'item');
 
+  // On a phone the bar shows icons only, but every button still has a name.
+  await page.setViewportSize({ width: 375, height: 812 });
+  await axe(page, 'item on a phone');
+  await page.setViewportSize({ width: 1280, height: 800 });
+
   // Help climbs the hint ladder; nothing marks the learner wrong.
   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: 'Help' }).click();
   await expect(page.getByText(/^Here is the answer/)).toBeVisible();
@@ -59,15 +66,33 @@ test('first run, a session item, and stopping without penalty', async ({ page })
 
 test('today recount and the grown-ups area', async ({ page }) => {
   await onboard(page);
+  // Telling about his day: tiles only, then a card of specific questions for the grown-up.
   await page.getByRole('button', { name: /Tell about today/ }).click();
-  const first = page.locator('.tcard').first();
-  await first.click();
+  await page.getByRole('button', { name: 'My day' }).click();
+  await page.locator('.tcard').first().click();
   await page.getByRole('button', { name: 'Next' }).click();
   await axe(page, 'today');
-  for (let i = 0; i < 3; i++) await page.locator('.tiles .tile').first().click();
-  await expect(page.getByRole('button', { name: /Save and show/ })).toBeVisible();
-  await page.getByRole('button', { name: /Save and show/ }).click();
+  const save = page.getByRole('button', { name: /Save and show/ });
+  for (let i = 0; i < 8 && !(await save.isVisible()); i++) await page.locator('.tiles .tile').first().click();
+  await save.click();
   await expect(page.getByText('For the grown-up: ask about these')).toBeVisible();
+  await page.getByRole('button', { name: /Back to my island/ }).click();
+
+  // Telling about a show: what it was mostly about, the problem, important things, the ending (school's routine).
+  await page.getByRole('button', { name: /Tell about today/ }).click();
+  await page.getByRole('button', { name: 'A show or video' }).click();
+  await page.getByRole('button', { name: 'a movie' }).click();
+  await page.getByRole('button', { name: 'an adventure' }).click();
+  await page.locator('.tiles .tile').first().click();
+  await page.getByRole('button', { name: 'someone made a plan' }).click();
+  await page.getByRole('button', { name: 'someone helped' }).click();
+  await page.getByRole('button', { name: 'Next' }).click();
+  await axe(page, 'show recount');
+  await page.getByRole('button', { name: 'they fixed it' }).click();
+  await expect(page.getByText('It was mostly about an adventure.')).toBeVisible();
+  await expect(page.getByText('Important things that happened: someone made a plan and someone helped.')).toBeVisible();
+  await save.click();
+  await expect(page.getByText('Tell me three important things that happened.')).toBeVisible();
   await page.getByRole('button', { name: /Back to my island/ }).click();
 
   await page.getByRole('button', { name: 'Grown-ups' }).click();
@@ -75,4 +100,43 @@ test('today recount and the grown-ups area', async ({ page }) => {
   await axe(page, 'overview');
   await page.getByRole('button', { name: 'Skills' }).click();
   await axe(page, 'skills');
+});
+
+/** A signed-in family member, and the real API logic over an in-memory store in place of Cosmos DB. */
+async function familyDevice(page: Page, repo: ReturnType<typeof memoryRepo>) {
+  await page.addInitScript(() => { window.speechSynthesis.speak = () => {}; });
+  await page.route('**/.auth/me', (r) => r.fulfill({ json: { clientPrincipal: { userDetails: 'grown-up@example.com', userRoles: ['anonymous', 'authenticated', 'family'] } } }));
+  await page.route('**/api/**', async (r) => {
+    const path = new URL(r.request().url()).pathname, method = r.request().method(), body = r.request().postDataJSON();
+    try {
+      const out = path === '/api/sync' ? await sync(repo, body)
+        : path === '/api/learners' ? (method === 'GET' ? await learners(repo) : await createLearner(repo, body))
+        : await deleteLearner(repo, path.split('/').pop());
+      await r.fulfill({ json: out });
+    } catch (e) { await r.fulfill({ status: (e as { status?: number }).status ?? 500, json: { error: String(e) } }); }
+  });
+}
+
+test('the family cloud copy: a second device carries on as the same learner', async ({ browser }) => {
+  const repo = memoryRepo();
+  const first = await (await browser.newContext()).newPage();
+  await familyDevice(first, repo);
+  await onboard(first); // nobody saved yet, so setup starts straight away and saves the new learner
+  const [saved] = await learners(repo);
+  expect(saved.name).toBe('Tester');
+  await expect.poll(async () => (await sync(repo, { learner: saved.id, since: 0 })).settings?.onboarded, { timeout: 15_000 }).toBe(true);
+  await expect.poll(async () => (await sync(repo, { learner: saved.id, since: 0 })).events.some((e: { type: string }) => e.type === 'placement'), { timeout: 15_000 }).toBe(true);
+
+  const second = await (await browser.newContext()).newPage();
+  await familyDevice(second, repo);
+  await second.goto('/');
+  await expect(second.getByRole('heading', { name: 'Who is learning on this device?' })).toBeVisible();
+  await axe(second, 'who is learning');
+  await second.getByRole('button', { name: 'Tester' }).click();
+  await expect(second.getByRole('button', { name: /Start reading/ })).toBeVisible(); // straight home: no setup, no scouting again
+
+  await second.getByRole('button', { name: 'Grown-ups' }).click();
+  await second.getByRole('button', { name: 'Data and report' }).click();
+  await expect(second.getByText("Tester's progress is saved on this device and in your family's cloud copy.", { exact: false })).toBeVisible();
+  await axe(second, 'cloud card');
 });

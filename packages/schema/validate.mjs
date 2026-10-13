@@ -52,6 +52,7 @@ for (const file of files) {
     if (seenPassage.has(p.id)) where(`duplicate passage id ${p.id} (also in ${seenPassage.get(p.id)})`);
     seenPassage.set(p.id, file);
     if (!p.sentences.length && !p.visual) where(`${p.id}: needs sentences or a visual`);
+    if (p.breaks?.some((b, k) => b >= p.sentences.length || (k > 0 && b <= p.breaks[k - 1]))) where(`${p.id}: breaks must be increasing sentence indexes`);
   }
   for (const it of bank.items) {
     const at = (m) => where(`${it.id}: ${m}`);
@@ -60,6 +61,7 @@ for (const file of files) {
     if (it.skill !== skill) at(`skill ${it.skill} does not match file ${skill}`);
     const p = passages.get(it.passage);
     if (!p) { at(`unknown passage ${it.passage}`); continue; }
+    if (it.level !== p.level) at(`level ${it.level} differs from its passage's level ${p.level}`);
     const rows = rowCount(p);
     const text = words(passageText(p));
     for (const e of it.evidence ?? []) if (e >= rows) at(`evidence ${e} out of range (${rows} rows)`);
@@ -121,7 +123,13 @@ for (const file of files) {
     else if (placement[0].format !== 'tap') where('placement item must be tap');
     if (practice.filter((i) => i.transfer).length < 3) where('needs at least 3 transfer items');
     for (const lv of [1, 2, 3]) if (!practice.some((i) => i.level === lv)) where(`no level ${lv} items`);
+    // Harder texts, offered only when he climbs to them (docs/content-guide.md, "Reading levels").
+    if (practice.filter((i) => i.level === 4).length < 4) where('needs at least 4 level 4 items');
+    if (practice.filter((i) => i.level === 5).length < 3) where('needs at least 3 level 5 items');
   }
+  const tagged = (t) => practice.filter((i) => i.tags?.includes(t)).length;
+  if (skill === 'N6' && tagged('main-idea') + tagged('key-detail') < 15) where('N6 needs at least 15 items tagged main-idea or key-detail');
+  if (skill === 'N3' && tagged('problem-solving') < 6) where('N3 needs at least 6 items tagged problem-solving');
   const gate = bank.items.filter((i) => i.gatecheck);
   if (['N3', 'N5', 'N6'].includes(skill)) {
     if (gate.length < 3) where(`needs 3 gatecheck items (has ${gate.length})`);

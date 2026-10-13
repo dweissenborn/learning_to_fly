@@ -4,6 +4,7 @@ import { Button } from 'react-aria-components';
 import type { Item, SkillId, Topic } from '@wayfinder/schema';
 import { placementItems, placementStart, placementSupports } from '@wayfinder/engine';
 import { log, saveSettings, type GuideId, type Settings } from './db';
+import { createAndLink, isFamily, useCloudStatus, useLink } from './cloud';
 import { placement, pool, TOPICS } from './content';
 import { Guide, GUIDES, BrandMark } from './art';
 import { ItemView, type Result } from './ItemView';
@@ -18,6 +19,9 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
   const [pin, setPin] = useState(settings.pin);
   const [scores, setScores] = useState(settings.scout ?? { word: 0, reading: 0, listening: 0 });
   const g = settings.guide;
+  const cloud = useCloudStatus();
+  const linked = useLink();
+  const family = isFamily(cloud.me);
   const header = <header className="topbar"><span className="brand"><BrandMark />Learning to Fly</span><span className="spacer" />
     {['words', 'reading', 'listening', 'functional', 'narrative'].includes(step) && <Btn className="quiet small" onPress={() => finishScout(scores, {})}>Stop scouting for now</Btn>}
   </header>;
@@ -39,8 +43,15 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
       <p>A reading program built for one learner. Set it up together, then hand over the device.</p>
       <div className="field"><label htmlFor="nick">The learner's nickname</label><input id="nick" className="input" value={name} onChange={(e) => setName(e.target.value)} autoComplete="off" /></div>
       <div className="field"><label htmlFor="pin">A 4-digit code for the grown-ups' area (optional)</label><input id="pin" className="input" inputMode="numeric" maxLength={4} value={pin} onChange={(e) => setPin(e.target.value.replace(/\D/g, ''))} autoComplete="off" /></div>
-      <p className="muted">Progress stays on this device. Nothing is sent anywhere. Only a nickname is stored: no real name, photo, birthday or diagnosis.</p>
-      <Btn className="primary big" isDisabled={!name.trim()} onPress={async () => { await saveSettings({ name: name.trim(), pin }); setStep('guide'); }}>Next →</Btn>
+      <p className="muted">{family
+        ? "Progress is saved on this device and in your family's private cloud copy, so it opens on any device where a family member signs in."
+        : 'Progress stays on this device. Nothing is sent anywhere.'} Only a nickname is stored: no real name, photo, birthday or diagnosis.</p>
+      <Btn className="primary big" isDisabled={!name.trim()} onPress={async () => {
+        await saveSettings({ name: name.trim(), pin });
+        // Saved to the cloud straight away when signed in; offline, the grown-ups' Data tab can do it later.
+        if (family && !linked) void createAndLink(name.trim()).catch(() => {});
+        setStep('guide');
+      }}>Next →</Btn>
     </div>}
 
     {step === 'guide' && <div className="stack">

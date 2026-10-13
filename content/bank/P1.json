@@ -119,6 +119,257 @@
       "level": 3,
       "socialLoad": 1,
       "credit": { "title": "The Last Match", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "p1-p06",
+      "title": "The Spring Concert",
+      "kind": "story",
+      "sentences": [
+        "On Friday night, the Harbor Middle School band played its spring concert.",
+        "Ana had a short trumpet solo in the very last song.",
+        "She had practiced it every day after school for a whole month.",
+        "Before the show, her hands felt cold, and she kept checking her sheet music.",
+        "Then the lights went down, and the band began to play.",
+        "When her solo came, Ana stood up and lifted her trumpet.",
+        "The first note came out clear and strong.",
+        "She played every note exactly the way she had practiced it.",
+        "When she sat down, the whole audience clapped, and Ben whistled from the third row.",
+        "After the concert, Ana held her trumpet case tight and smiled at everyone she passed.",
+        "\"I played the whole solo without one mistake,\" she told her mom.",
+        "On the drive home, she hummed the tune of her solo again and again."
+      ],
+      "picture": "🎺",
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Spring Concert",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p1-p07",
+      "title": "Dolphins by the Ferry",
+      "kind": "story",
+      "sentences": [
+        "On Sunday morning, Sam and Maya took the ferry to Gull Island.",
+        "Maya sat by the rail with her sketchbook open on her knees.",
+        "Halfway across the bay, she saw a gray fin rise out of the water.",
+        "Then she saw another fin, and then five more.",
+        "A group of dolphins was swimming right beside the ferry.",
+        "They leaped out of the waves in smooth curves and slid back into the sea.",
+        "Maya put down her pencil and stood very still.",
+        "Her mouth opened, but she did not say a word.",
+        "She watched the dolphins until they turned and swam out of sight.",
+        "Then she turned to Sam and asked question after question.",
+        "\"How do they swim so fast? Do they ever sleep? Where are they going?\"",
+        "Sam did not know the answers, so they planned to find a book about dolphins at the library.",
+        "That night, Maya drew the dolphins across a whole page of her sketchbook."
+      ],
+      "picture": "🐬⛴️",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Dolphins by the Ferry",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p1-p08",
+      "title": "The Fox and the Crow",
+      "kind": "fable",
+      "sentences": [
+        "One morning, a crow spotted a piece of cheese on a windowsill outside a farmhouse kitchen.",
+        "She snatched it in her beak and flew up to the highest branch of a tall oak tree.",
+        "There she settled comfortably, very pleased with herself, to enjoy her delicious breakfast in peace.",
+        "A hungry fox was trotting along the path below, and he noticed the cheese at once.",
+        "He sat down beneath the tree and gazed up at the crow with a friendly, admiring smile.",
+        "\"Good morning, beautiful bird,\" he called.",
+        "\"Your feathers shine in the sunlight, and your eyes are bright and clever.\"",
+        "\"A bird so lovely must have a lovely voice as well.\"",
+        "\"If you would sing just one song for me, I would call you the queen of all the birds.\"",
+        "The crow puffed out her chest and lifted her head high.",
+        "Nobody had ever praised her like this before, and she wanted the fox to hear her voice.",
+        "She opened her beak wide and gave the loudest caw she could.",
+        "At that very moment, the cheese slipped out of her beak and tumbled down to the ground.",
+        "The fox snapped it up and gulped it down in one bite.",
+        "\"Thank you for breakfast,\" said the fox, licking his whiskers.",
+        "\"In return, here is some advice: be careful of anyone who praises you only to get something from you.\"",
+        "Then he trotted away down the path.",
+        "The crow sat on her branch with an empty beak, and her feathers drooped.",
+        "She wished, more than anything, that she had kept her beak shut."
+      ],
+      "breaks": [
+        3,
+        9,
+        14
+      ],
+      "picture": "🦊🧀",
+      "topics": [
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Fox and the Crow",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p1-p09",
+      "title": "The Night Train",
+      "kind": "story",
+      "sentences": [
+        "Sam had wanted to ride a sleeper train for years, and in July he finally got his chance.",
+        "He and Grandma Rose were taking the overnight train to visit his uncle in a city far to the north.",
+        "The night before, Sam spread his paper map across the kitchen table and traced the route with a green pen.",
+        "He counted eleven stations between Harbor Town and the city.",
+        "At the station, he read every line on the departure board twice, and he could not keep his feet still.",
+        "Their sleeping compartment was tiny, with two narrow beds, one above the other.",
+        "For the first few hours, Sam sat by the window and checked off each station on his map.",
+        "Then the sky grew dark, and Grandma Rose fell asleep in the lower bed.",
+        "Sam climbed into the top bed, but he could not fall asleep.",
+        "The train rocked and clicked, and the little room felt strange and much too quiet.",
+        "He thought about Pixel curled up at the end of his own bed, far away at home.",
+        "He wished that someone were awake to talk to.",
+        "Near dawn, a soft gray light came in around the edges of the blind, and Sam lifted it.",
+        "The train was crossing a high bridge over a wide valley.",
+        "Far below, a river curved between dark green hills, and mist floated above the water.",
+        "In the distance, the snowy tops of the mountains were turning pink in the first sunlight.",
+        "Sam held his breath and did not move until the bridge was behind them.",
+        "Then he found the river on his map and marked the bridge with a small star.",
+        "When Grandma Rose woke up, he showed her the star and said, \"That was the best part of the whole trip.\""
+      ],
+      "breaks": [
+        5,
+        12
+      ],
+      "picture": "🚆🗺️",
+      "topics": [
+        "transport",
+        "maps"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Night Train",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p1-p10",
+      "title": "The Bone in the Hill",
+      "kind": "article",
+      "sentences": [
+        "Paleontologists are scientists who study fossils, the remains of plants and animals that lived long ago.",
+        "Many of them spend their summers in badlands, which are areas of dry, rocky hills with very few plants.",
+        "In the badlands, wind and rain slowly wear away the rock, and ancient bones are sometimes uncovered at the surface.",
+        "One paleontologist searches the same badlands for six weeks every summer.",
+        "Most days, she walks for hours with her eyes on the ground and finds nothing but broken stones and dust.",
+        "One hot afternoon, late in her third week, she noticed a dark brown shape poking out of a gray slope.",
+        "It had a smooth, curved surface, and its color was different from the rocks around it.",
+        "She knelt down and brushed away the dust with her fingers.",
+        "Her heart began to pound, because she recognized what it was: the rounded end of a very large bone.",
+        "Over the next ten days, her team uncovered the bone slowly, using small picks, dental tools and soft brushes.",
+        "They could not hurry, because a fossil can crack if it is handled roughly.",
+        "Over many hours, a thigh bone longer than a grown person's leg appeared from the rock.",
+        "The team believed it came from a large plant-eating dinosaur that lived about seventy million years ago.",
+        "To protect it for the journey, they wrapped it in strips of cloth dipped in wet plaster, much like a cast for a broken arm.",
+        "On the last day, the team lifted the heavy plaster jacket into the back of a truck.",
+        "Before she left, the paleontologist sat on the slope and looked out over the silent hills.",
+        "No person had ever seen that bone before her team found it.",
+        "For millions of years, it had lain hidden under the ground, and soon it would rest in a museum where thousands of visitors could see it.",
+        "She smiled, wiped the dust from her hands and wrote the date in her field notebook.",
+        "Years later, she still told her students that touching that bone was the best moment of her career."
+      ],
+      "breaks": [
+        5,
+        9,
+        14
+      ],
+      "picture": "🦴🦕",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Bone in the Hill",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p1-p11",
+      "title": "Waiting for the Rover",
+      "kind": "article",
+      "sentences": [
+        "After a journey of about seven months through space, a rover was finally about to land on Mars.",
+        "The rover was a robot about the size of a small car, with six wheels, many cameras and a long arm for studying rocks.",
+        "Hundreds of engineers had spent years designing and building it.",
+        "One of them had worked on its wheels for five years, testing them again and again on sand and sharp stones.",
+        "Landing on Mars is very difficult, because the rover arrives many times faster than a jet plane.",
+        "In about seven minutes, it must slow down almost to a stop, using a heat shield, a huge parachute and small rockets.",
+        "Nobody on Earth can steer it during those minutes.",
+        "On landing day, a radio signal from Mars took more than ten minutes to reach Earth.",
+        "So by the time the team heard that the landing had begun, it was already over, and all they could do was wait for the news.",
+        "In the control room, the wheel engineer sat at his desk and stared at the screens.",
+        "His hands were cold, and he kept tapping his foot on the floor.",
+        "A voice read out each message as it arrived: the heat shield, the parachute, the rockets.",
+        "Then came the words the whole room had been waiting for: \"Touchdown confirmed.\"",
+        "The room filled with cheers, and the engineer jumped up and hugged the people next to him.",
+        "He laughed, and at the same time his eyes filled with tears.",
+        "A few minutes later, the first picture from the rover appeared on the big screen.",
+        "It was grainy and black and white, and it showed only dusty ground and a few small rocks.",
+        "To the team, it looked more beautiful than any picture they had ever seen.",
+        "The engineer leaned close to the screen and thought about the six wheels he had helped to build, now resting on the ground of another planet."
+      ],
+      "breaks": [
+        4,
+        9,
+        15
+      ],
+      "picture": "🤖🔴",
+      "topics": [
+        "robots",
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Waiting for the Rover",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -325,6 +576,775 @@
       "explain": "One good answer is: After the match, Ana felt proud. I know because she told the story of the goal three times. Any honest answer is fine.",
       "inference": 1,
       "tags": ["opinion", "joy", "pride"]
+    },
+    {
+      "id": "p1-i11",
+      "skill": "P1",
+      "passage": "p1-p06",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "How did Ana feel after the concert?",
+      "options": [
+        "proud",
+        "lonely",
+        "scared",
+        "bored"
+      ],
+      "pictures": [
+        "😊",
+        "😔",
+        "😨",
+        "😐"
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Read the part after the concert ends. Look at what Ana does and what she says about her solo.",
+      "explain": "Ana felt proud. After the concert, she smiled at everyone she passed, and she told her mom she played the whole solo without one mistake.",
+      "inference": 1,
+      "tags": [
+        "hidden-feeling",
+        "pride"
+      ]
+    },
+    {
+      "id": "p1-i12",
+      "skill": "P1",
+      "passage": "p1-p06",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Ana felt nervous before the show. Tap the sentence that shows it.",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Look at the part before the band starts to play. Find a clue about Ana's body and what she keeps doing.",
+      "explain": "\"Before the show, her hands felt cold, and she kept checking her sheet music.\" Cold hands and checking again and again show she was nervous.",
+      "inference": 1,
+      "tags": [
+        "body-clue",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p1-i13",
+      "skill": "P1",
+      "passage": "p1-p06",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Ana felt one way before her solo and another way after it. Build your answer.",
+      "frame": "Before her solo, Ana felt {0}. After it, she felt {1} because {2}. {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling before",
+          "options": [
+            "nervous",
+            "excited",
+            "worried",
+            "ready"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling after",
+          "options": [
+            "proud",
+            "joyful",
+            "relieved",
+            "happy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "she played every note right",
+            "the whole audience clapped",
+            "she had practiced for a month",
+            "Ben whistled for her"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I felt like that before a test once.",
+            "I felt like that when I showed my work to the class.",
+            "I would feel nervous before a solo too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        8,
+        9,
+        10
+      ],
+      "hint": "Read the sentence before the lights go down. Then read the sentences after Ana sits down.",
+      "explain": "One good answer is: Before her solo, Ana felt nervous. After it, she felt proud because she played every note right. Any honest answer is fine.",
+      "inference": 1,
+      "tags": [
+        "opinion",
+        "feeling-change",
+        "pride"
+      ]
+    },
+    {
+      "id": "p1-i14",
+      "skill": "P1",
+      "passage": "p1-p07",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Maya stood very still and did not say a word. Which word best names her feeling?",
+      "options": [
+        "wonder",
+        "pride",
+        "fear",
+        "loneliness"
+      ],
+      "pictures": [
+        "😮",
+        "😊",
+        "😨",
+        "😔"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "Read what Maya is watching. Then look at what her hands, body and mouth do while she watches.",
+      "explain": "Maya felt wonder. She was watching dolphins leap beside the ferry, and she stood very still with her mouth open and did not say a word.",
+      "inference": 1,
+      "tags": [
+        "hidden-feeling",
+        "wonder"
+      ]
+    },
+    {
+      "id": "p1-i15",
+      "skill": "P1",
+      "passage": "p1-p07",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Maya also felt curious. Curious means you want to know more. Tap a sentence that shows it.",
+      "answer": [
+        9,
+        10
+      ],
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Look at the part after the dolphins swim away. Find where Maya wants to learn more about them.",
+      "explain": "Maya asked Sam question after question: \"How do they swim so fast? Do they ever sleep? Where are they going?\" Asking questions shows she was curious.",
+      "inference": 1,
+      "tags": [
+        "curiosity",
+        "action-shows-feeling"
+      ]
+    },
+    {
+      "id": "p1-i16",
+      "skill": "P1",
+      "passage": "p1-p08",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "The fox praised the crow, and she puffed out her chest. Which word best names her feeling at that moment?",
+      "options": [
+        "proud",
+        "embarrassed",
+        "curious",
+        "lonely"
+      ],
+      "pictures": [
+        "😊",
+        "😳",
+        "🤔",
+        "😔"
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Read the two sentences right after the fox stops talking. Look at what the crow does with her body, and why.",
+      "explain": "The crow felt proud. Right after the fox praised her, she puffed out her chest and lifted her head high. Nobody had ever praised her like this before.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "hidden-feeling",
+        "body-clue",
+        "pride",
+        "fable"
+      ]
+    },
+    {
+      "id": "p1-i17",
+      "skill": "P1",
+      "passage": "p1-p08",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "How did the crow feel at the end of the fable?",
+      "options": [
+        "embarrassed",
+        "proud",
+        "lonely",
+        "calm"
+      ],
+      "pictures": [
+        "😳",
+        "😊",
+        "😔",
+        "😌"
+      ],
+      "answer": 0,
+      "evidence": [
+        17,
+        18
+      ],
+      "hint": "Her feeling changes during the fable. Read only the last two sentences, and look at her feathers and her wish.",
+      "explain": "The crow felt embarrassed. At the end, her feathers drooped, and she wished she had kept her beak shut. She felt silly for believing the fox. She was proud in the middle of the fable, not at the end.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "feeling-change",
+        "fable"
+      ]
+    },
+    {
+      "id": "p1-i18",
+      "skill": "P1",
+      "passage": "p1-p08",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "The crow's feelings changed. Build your answer about them.",
+      "frame": "At first, the crow felt {0}. At the end, she felt {1} because {2}. {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling at first",
+          "options": [
+            "proud",
+            "pleased",
+            "special",
+            "happy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling at the end",
+          "options": [
+            "embarrassed",
+            "foolish",
+            "upset",
+            "sorry"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the fox tricked her",
+            "she lost her cheese",
+            "she believed the fox's praise",
+            "she opened her beak at the wrong time"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "The fox was not being a real friend.",
+            "Praise feels good, but I would ask why someone says it.",
+            "I would feel the same way."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        17,
+        18
+      ],
+      "hint": "Read the middle of the fable, when the fox praises her. Then read the last two sentences.",
+      "explain": "One good answer is: At first, the crow felt proud. At the end, she felt embarrassed because she believed the fox's praise. Any honest answer is fine.",
+      "inference": 1,
+      "tags": [
+        "opinion",
+        "feeling-change",
+        "pride",
+        "fable"
+      ]
+    },
+    {
+      "id": "p1-i19",
+      "skill": "P1",
+      "passage": "p1-p09",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "On the bridge, Sam held his breath and did not move. Which word best names his feeling there?",
+      "options": [
+        "wonder",
+        "excitement",
+        "loneliness",
+        "pride"
+      ],
+      "pictures": [
+        "😮",
+        "🤩",
+        "😔",
+        "😊"
+      ],
+      "answer": 0,
+      "evidence": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "hint": "Read the paragraph about the bridge. Is Sam quick and busy, or quiet and still? Then look at what he is looking at.",
+      "explain": "Sam felt wonder. He was looking at a river, mist and pink mountain tops, and he held his breath and did not move. His excitement came earlier, at the station, and his loneliness came in the dark night.",
+      "inference": 1,
+      "tags": [
+        "hidden-feeling",
+        "wonder",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p1-i20",
+      "skill": "P1",
+      "passage": "p1-p09",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sam's feelings changed during the trip. Sort each clue by the feeling it shows.",
+      "bins": [
+        "Excited 🤩",
+        "Lonely 😔",
+        "Wonder 😮"
+      ],
+      "cards": [
+        {
+          "text": "He could not keep his feet still at the station.",
+          "bin": 0
+        },
+        {
+          "text": "He read every line on the departure board twice.",
+          "bin": 0
+        },
+        {
+          "text": "He thought about Pixel, far away at home.",
+          "bin": 1
+        },
+        {
+          "text": "He wished that someone were awake to talk to.",
+          "bin": 1
+        },
+        {
+          "text": "He held his breath and did not move.",
+          "bin": 2
+        },
+        {
+          "text": "He watched the river and the pink mountain tops.",
+          "bin": 2
+        }
+      ],
+      "evidence": [
+        4,
+        10,
+        11,
+        14,
+        15,
+        16
+      ],
+      "hint": "Each feeling belongs to one part of the trip: the station, the dark night or the bridge at dawn. Find where each clue happens.",
+      "explain": "Excited: at the station, he could not keep his feet still and read the board twice. Lonely: at night, he thought about Pixel and wished someone were awake. Wonder: at dawn, he watched the valley and held his breath.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "feeling-change",
+        "body-clue",
+        "loneliness",
+        "wonder"
+      ]
+    },
+    {
+      "id": "p1-i21",
+      "skill": "P1",
+      "passage": "p1-p09",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Pick one of Sam's feelings on the trip. Build your answer.",
+      "frame": "On the train, Sam felt {0} because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "excited",
+            "lonely",
+            "wonder",
+            "happy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "he was finally riding a sleeper train",
+            "he missed Pixel and his own bed",
+            "he saw a beautiful valley at dawn",
+            "he marked the bridge on his map"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the story",
+          "options": [
+            "he could not keep his feet still",
+            "he wished someone were awake to talk to",
+            "he held his breath on the bridge",
+            "he said it was the best part of the trip"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I felt like that on a long trip once.",
+            "I would feel the same way.",
+            "I would like to ride a sleeper train."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        4,
+        10,
+        11,
+        16,
+        18
+      ],
+      "hint": "Pick one part of the trip first: the station, the night or the bridge. Then find a clue from that part.",
+      "explain": "One good answer is: On the train, Sam felt lonely because he missed Pixel and his own bed. In the story, he wished someone were awake to talk to. Any honest answer is fine.",
+      "inference": 1,
+      "tags": [
+        "opinion",
+        "feeling-change",
+        "loneliness"
+      ]
+    },
+    {
+      "id": "p1-i22",
+      "skill": "P1",
+      "passage": "p1-p10",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Her heart began to pound when she recognized the bone. Which word best names her feeling at that moment?",
+      "options": [
+        "excited",
+        "afraid",
+        "lonely",
+        "bored"
+      ],
+      "pictures": [
+        "🤩",
+        "😨",
+        "😔",
+        "😐"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        8
+      ],
+      "hint": "A pounding heart can go with more than one feeling. Read the whole sentence, and think about how long she had been searching.",
+      "explain": "She felt excited. Her heart pounded because she recognized a very large bone after almost three weeks of finding nothing. A fast heart can also mean afraid, but nothing in this account is dangerous.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "body-clue",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "p1-i23",
+      "skill": "P1",
+      "passage": "p1-p10",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "This account mixes facts and feelings. Sort each sentence: does it show a feeling, or does it only tell a fact?",
+      "bins": [
+        "Shows a feeling 💭",
+        "Only tells a fact 📏"
+      ],
+      "cards": [
+        {
+          "text": "Her heart began to pound.",
+          "bin": 0
+        },
+        {
+          "text": "She smiled and wrote the date in her field notebook.",
+          "bin": 0
+        },
+        {
+          "text": "Touching that bone was the best moment of her career.",
+          "bin": 0
+        },
+        {
+          "text": "Wind and rain slowly wear away the rock.",
+          "bin": 1
+        },
+        {
+          "text": "A fossil can crack if it is handled roughly.",
+          "bin": 1
+        },
+        {
+          "text": "The dinosaur lived about seventy million years ago.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        8,
+        10,
+        12,
+        18,
+        19
+      ],
+      "hint": "For each sentence, ask: does it tell what the paleontologist felt inside, or something that would be true for anyone?",
+      "explain": "Feelings: her heart pounded, she smiled, and she called it the best moment of her career. Facts: wind and rain wear away rock, a fossil can crack, and the dinosaur lived about seventy million years ago.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "feeling-vs-fact",
+        "article"
+      ]
+    },
+    {
+      "id": "p1-i24",
+      "skill": "P1",
+      "passage": "p1-p10",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Imagine you were the one who found the bone. Build your answer.",
+      "frame": "If I found that bone, I would feel {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "wonder",
+            "excited",
+            "proud",
+            "joyful"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "no person had ever seen it before",
+            "it was seventy million years old",
+            "I had searched for weeks to find it",
+            "thousands of people would see it in a museum"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I once found something special outside.",
+            "I would like to dig for fossils one day.",
+            "I would want to tell everyone right away."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "hint": "Read the last paragraph. Think about how old the bone is and how long she searched for it.",
+      "explain": "One good answer is: If I found that bone, I would feel wonder because no person had ever seen it before. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "wonder",
+        "imagine"
+      ]
+    },
+    {
+      "id": "p1-i25",
+      "skill": "P1",
+      "passage": "p1-p11",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Which feelings did the engineer have on landing day, in the right order?",
+      "options": [
+        "nervous, then joyful",
+        "joyful, then nervous",
+        "bored, then proud",
+        "lonely, then calm"
+      ],
+      "pictures": [
+        "😟😄",
+        "😄😟",
+        "😐😊",
+        "😔😌"
+      ],
+      "answer": 0,
+      "evidence": [
+        10,
+        13,
+        14
+      ],
+      "hint": "Find two parts: while he waits for news, and after the news arrives. Name the feeling in each part. Then check the order.",
+      "explain": "He felt nervous, then joyful. While he waited, his hands were cold and he kept tapping his foot. After \"Touchdown confirmed,\" he jumped up, hugged people and laughed.",
+      "inference": 1,
+      "tags": [
+        "feeling-change",
+        "body-clue",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "p1-i26",
+      "skill": "P1",
+      "passage": "p1-p11",
+      "format": "highlight",
+      "level": 5,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "At the end, the engineer felt proud of his own work. Tap the sentence that shows it.",
+      "answer": [
+        18
+      ],
+      "evidence": [
+        18
+      ],
+      "hint": "Look in the last paragraph for a sentence about the engineer himself, not the whole team. Find what he is thinking about.",
+      "explain": "\"The engineer leaned close to the screen and thought about the six wheels he had helped to build, now resting on the ground of another planet.\" He is thinking about his own work, now on Mars. That shows pride.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "pride"
+      ]
+    },
+    {
+      "id": "p1-i27",
+      "skill": "P1",
+      "passage": "p1-p11",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "The engineer laughed, and his eyes filled with tears. Name the feelings you think he had.",
+      "frame": "When the rover landed, the engineer felt {0} and {1}. I think so because {2}. {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "First feeling",
+          "options": [
+            "joyful",
+            "relieved",
+            "proud",
+            "amazed"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "feeling",
+          "label": "Second feeling",
+          "options": [
+            "relieved",
+            "proud",
+            "tired",
+            "full of wonder"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the rover he worked on landed safely",
+            "the long wait was over",
+            "his wheels were now on Mars",
+            "the whole team was cheering"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I have laughed and cried at the same time.",
+            "I felt like that when something I worked hard on went right.",
+            "I think I would cry too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        13,
+        14,
+        17,
+        18
+      ],
+      "hint": "Read the third paragraph again, from \"Touchdown confirmed\" to the tears. Think about the five years he spent on the wheels.",
+      "explain": "One good answer is: When the rover landed, the engineer felt joyful and relieved. I think so because the long wait was over. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "mixed-feelings",
+        "joy"
+      ]
     }
   ],
   "model": {

@@ -121,6 +121,258 @@
       "socialLoad": 1,
       "themes": ["loss"],
       "credit": { "title": "The Old Oak", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "p2-p06",
+      "title": "Ben's Game Song",
+      "kind": "story",
+      "sentences": [
+        "In music class, each student had to make a short song on the school computer.",
+        "Ben and Ana had already built a racing game together, so Ben decided to make music for it.",
+        "His first song was slow and soft.",
+        "When Ana played the game with his song, she yawned, and her car drifted off the track.",
+        "Ben slumped down in his chair and stared at the screen.",
+        "Then he had an idea.",
+        "He made the beat twice as fast and added loud drums.",
+        "This time, Ana leaned forward and gripped the controller tightly.",
+        "\"This music makes me want to go faster!\" she said, and she won the race.",
+        "On Friday, the music teacher played Ben's song for the whole class.",
+        "Three students asked if they could play the game, too.",
+        "Ben grinned and saved his song in a folder called Best Work."
+      ],
+      "picture": "🎵🎮",
+      "topics": [
+        "music",
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Ben's Game Song",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p07",
+      "title": "Kite Day",
+      "kind": "story",
+      "sentences": [
+        "On Saturday, Priya and Maya carried a big red kite up to the lookout on Lantern Peaks.",
+        "They had spent two evenings building it from thin sticks, paper and string.",
+        "But when they reached the top, the air was completely still.",
+        "The kite just dragged through the grass behind them.",
+        "Maya sat down on a rock and sighed.",
+        "Priya checked the weather forecast on her phone.",
+        "\"It says the wind will get stronger in the afternoon,\" she said.",
+        "So they ate their lunch on the rock and watched the clouds.",
+        "At two o'clock, the tall grass began to bend, and Maya's hair blew across her face.",
+        "Priya let out the string, and the kite rose higher and higher over the trees.",
+        "Maya laughed and clapped her hands.",
+        "Later, a line of gray clouds moved in from the sea, and the wind turned cold.",
+        "The girls wound up the string and walked down before the first drops of rain.",
+        "Maya was not upset, because the kite had flown higher than they had hoped."
+      ],
+      "picture": "🪁🌬️",
+      "topics": [
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Kite Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p08",
+      "title": "The Lark and Her Young Ones",
+      "kind": "fable",
+      "sentences": [
+        "A mother lark built her nest on the ground in the middle of a farmer's wheat field.",
+        "Her chicks hatched in spring and grew strong while the green wheat grew tall around them.",
+        "By summer, the wheat had turned golden, and the young larks were almost ready to fly.",
+        "One morning, while their mother was away finding food, the farmer and his son walked into the field.",
+        "\"This wheat is ripe,\" said the farmer. \"We must ask our neighbors to come and help us cut it.\"",
+        "The young larks huddled together in the nest, very worried.",
+        "When their mother returned, they all chirped at once and begged her to move them somewhere safe.",
+        "\"Did the farmer say he would cut the wheat himself?\" she asked.",
+        "\"No, he will ask his neighbors to help,\" they answered.",
+        "\"Then there is no need to worry yet,\" said the mother lark, and she calmly fed them their supper.",
+        "The neighbors were busy harvesting their own fields, so nobody came.",
+        "A few days later, the farmer returned and said, \"Tomorrow we will ask our cousins to help us.\"",
+        "Once again, the young larks were upset, but their mother stayed calm.",
+        "\"Cousins have their own work to do,\" she said. \"We can stay here a little longer.\"",
+        "On his third visit, the farmer looked at the ripe wheat and shook his head.",
+        "\"We cannot wait for anyone else,\" he told his son. \"At sunrise tomorrow, you and I will cut this field ourselves.\"",
+        "When the mother lark heard this, she gathered her young ones at once.",
+        "\"Now it is time to leave,\" she said. \"When a farmer decides to do the work himself, it will certainly get done.\"",
+        "That evening, the whole family flew to a new home beside the forest."
+      ],
+      "breaks": [
+        3,
+        10,
+        14
+      ],
+      "picture": "🐦🌾",
+      "topics": [
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Lark and Her Young Ones",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p2-p09",
+      "title": "The Harbor Fun Run",
+      "kind": "story",
+      "sentences": [
+        "Every June, Harbor Town holds a five-kilometer fun run along the harbor path.",
+        "This year, Leo wanted to finish in under thirty minutes, so he had trained three mornings a week since March.",
+        "Maya was entering the race for the first time.",
+        "She had never run farther than two kilometers before, and her only goal was to finish without stopping.",
+        "Leo started fast and passed many runners in the first kilometer.",
+        "By the fourth kilometer, his legs felt heavy, and he had to slow down.",
+        "He crossed the finish line, looked up at the big clock and saw thirty-one minutes.",
+        "Leo put his hands on his knees and stared at the ground.",
+        "He had missed his goal by one minute.",
+        "A few minutes later, Ana, who was helping at the finish table, came over with a list of last year's times.",
+        "\"Look,\" she said, pointing at his name. \"Last year you finished in thirty-four minutes.\"",
+        "Leo read the list twice.",
+        "He had run three whole minutes faster than last year.",
+        "He stood up straight, and a slow smile spread across his face.",
+        "Just then, Maya came around the last corner, running slowly but steadily.",
+        "When she crossed the line, she threw both arms in the air and shouted, \"I didn't stop once!\"",
+        "Her time was forty-two minutes, but she did not even glance at the clock.",
+        "Leo and Ana cheered for her, and Leo suggested that next year they could all train together."
+      ],
+      "breaks": [
+        4,
+        9,
+        14
+      ],
+      "picture": "🏃⏱️",
+      "topics": [
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Harbor Fun Run",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p10",
+      "title": "The Day the Sun Went Dark",
+      "kind": "article",
+      "sentences": [
+        "Last spring, my family drove for six hours to stand in the path of a total solar eclipse.",
+        "During a total eclipse, the Moon passes exactly between Earth and the Sun and covers the Sun completely.",
+        "This can only be seen from a narrow strip of land, and any one place may wait hundreds of years between total eclipses.",
+        "I had been reading about it for months, and I wanted to see it more than anything.",
+        "On the morning of the eclipse, I woke up early and looked out of our motel window.",
+        "Thick gray clouds covered the whole sky.",
+        "My stomach felt tight, and I could hardly eat any breakfast.",
+        "My dad studied the weather map on his phone, and we drove another hour west to a field where the forecast showed clear sky.",
+        "By noon, the clouds behind us had thinned, and the sky above the field was bright blue.",
+        "I let out a long breath, and my shoulders finally relaxed.",
+        "We put on special eclipse glasses, because looking straight at the Sun without them can damage your eyes.",
+        "Through the dark lenses, I watched the Moon slowly cover more and more of the Sun.",
+        "As the last sliver of sunlight disappeared, the air grew cool, and the birds in the trees went quiet.",
+        "The sky turned a deep blue, almost like night, and a few bright stars appeared.",
+        "Only during those few minutes, while the Sun was completely covered, was it safe to take our glasses off.",
+        "Where the Sun had been, there was a black circle with soft white light streaming out around it.",
+        "Everyone in the field cheered, and then they went completely silent.",
+        "I stared at it the whole time, and I forgot to take a single photo.",
+        "After about three minutes, a bright flash of sunlight burst from one edge, and we quickly put our glasses back on.",
+        "On the long drive home, I kept thinking about how tiny our field had looked under that strange, dark sky.",
+        "I have already marked the next total eclipse I can travel to on my calendar."
+      ],
+      "breaks": [
+        4,
+        10,
+        18
+      ],
+      "picture": "🌑☀️",
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Day the Sun Went Dark",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p11",
+      "title": "The Whale Watch",
+      "kind": "article",
+      "sentences": [
+        "Every summer, small boats carry visitors out from the coast to watch humpback whales feed.",
+        "Humpbacks can grow as long as a city bus, and like all whales, they must come to the surface to breathe air.",
+        "On one trip last July, a girl of about eleven stood at the front of the boat with binoculars around her neck.",
+        "She had read three books about whales, and she knew how to spot the tall puff of mist that a whale blows out when it breathes.",
+        "For the first hour, the sea was empty.",
+        "The boat rocked from side to side, the wind was cold, and several passengers went inside to sit down.",
+        "The girl kept scanning the water, but her shoulders slowly drooped.",
+        "\"Whales are wild animals, so we can never promise to see one,\" the captain said over the speaker.",
+        "The girl sat down on a bench and put her binoculars away.",
+        "Then, far off to the left, a puff of mist shot up from the waves.",
+        "The girl jumped to her feet and pointed, shouting, \"There! A blow!\"",
+        "The captain steered closer slowly and turned off the engine, so the noise would not disturb the whale.",
+        "A dark, shiny back rolled through the water, and then a huge tail rose high into the air and slid under the sea.",
+        "The underside of the tail was black and white, with a pattern of spots and scratches.",
+        "The captain explained that every humpback has its own tail pattern, so scientists can use photos to tell the whales apart.",
+        "The girl had taken a photo of the tail just before it disappeared.",
+        "The captain told her that she could send it to scientists who keep a record of every humpback tail they have seen.",
+        "On the ride back to shore, she did not seem to notice the cold wind at all.",
+        "She looked at her photo again and again, smiling at the spots on the tail."
+      ],
+      "breaks": [
+        4,
+        9,
+        15
+      ],
+      "picture": "🐋🚤",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Whale Watch",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -320,6 +572,738 @@
       "explain": "One good answer is: At the end, Sam felt hopeful because the new tree will grow big one day. Any honest answer is fine.",
       "inference": 2,
       "tags": ["opinion", "cause-of-feeling", "feeling-change", "loss"]
+    },
+    {
+      "id": "p2-i11",
+      "skill": "P2",
+      "passage": "p2-p06",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Ben slumped down in his chair. Why did he feel disappointed?",
+      "options": [
+        "His slow song did not fit a fast race.",
+        "Ana won the race.",
+        "The computer stopped working.",
+        "The teacher did not like his song."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "Find where Ben slumps. Then read the two sentences just before it.",
+      "explain": "Ben felt disappointed because his slow, soft song did not fit a fast race. Ana yawned, and her car drifted off the track. This comes just before he slumps.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "look-back"
+      ]
+    },
+    {
+      "id": "p2-i12",
+      "skill": "P2",
+      "passage": "p2-p06",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Why do you think Ben grinned at the end? Build your answer.",
+      "frame": "At the end, Ben felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "proud",
+            "happy",
+            "excited",
+            "pleased"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the teacher played his song for the class",
+            "other students wanted to play the game",
+            "he fixed his song by himself",
+            "Ana won the race with his music"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I feel proud when other people like what I made.",
+            "I like making things for games too.",
+            "I would save it in Best Work too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "hint": "Read the last three sentences. Look at what other people did with Ben's song.",
+      "explain": "One good answer is: At the end, Ben felt proud because the teacher played his song for the class. Any honest answer is fine.",
+      "inference": 1,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "pride"
+      ]
+    },
+    {
+      "id": "p2-i13",
+      "skill": "P2",
+      "passage": "p2-p07",
+      "format": "sort",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Sort what happened. Did it make the girls feel disappointed or joyful?",
+      "bins": [
+        "Disappointed 😞",
+        "Joyful 😄"
+      ],
+      "cards": [
+        {
+          "text": "The air at the top was completely still.",
+          "bin": 0
+        },
+        {
+          "text": "The kite dragged through the grass.",
+          "bin": 0
+        },
+        {
+          "text": "The tall grass began to bend in the wind.",
+          "bin": 1
+        },
+        {
+          "text": "The kite rose higher and higher over the trees.",
+          "bin": 1
+        },
+        {
+          "text": "The kite flew higher than they had hoped.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        13
+      ],
+      "hint": "Find where Maya sighs and where she laughs. Look at what happened just before each one.",
+      "explain": "Disappointed: the air was still, and the kite dragged through the grass, so Maya sighed. Joyful: the wind came, and the kite rose over the trees, so Maya laughed and clapped.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-of-feeling",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p2-i14",
+      "skill": "P2",
+      "passage": "p2-p07",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why could the girls wait calmly while they ate lunch?",
+      "options": [
+        "The forecast said the wind would get stronger later.",
+        "The forecast said rain was coming at noon.",
+        "Priya had brought a second kite.",
+        "The lookout was closing soon."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "Read what Priya says after she checks her phone. Then read what the girls do next.",
+      "explain": "The forecast said the wind would get stronger in the afternoon. So the girls knew the kite could fly later, and they ate lunch and watched the clouds.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "plan-changes"
+      ]
+    },
+    {
+      "id": "p2-i15",
+      "skill": "P2",
+      "passage": "p2-p08",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why were the young larks worried after the farmer's first visit?",
+      "options": [
+        "The farmer said the wheat was ripe and must be cut.",
+        "Their mother was away finding food.",
+        "The neighbors walked into the field.",
+        "The green wheat was growing too tall."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        6
+      ],
+      "hint": "Find where the young larks are worried. Then read what they heard just before it, and what they asked their mother to do.",
+      "explain": "The young larks were worried because the farmer said the wheat was ripe and must be cut. They heard this just before they huddled together. When their mother came back, they begged her to move them somewhere safe, so their worry was about the field.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "look-back"
+      ]
+    },
+    {
+      "id": "p2-i16",
+      "skill": "P2",
+      "passage": "p2-p08",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "After the farmer's first two visits, the mother lark stayed calm. Why?",
+      "options": [
+        "The farmer was waiting for other people to do the work.",
+        "The farmer said he would cut the wheat himself.",
+        "Her young ones could already fly far away.",
+        "The farmer's son wanted to protect the larks."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9,
+        12,
+        13
+      ],
+      "hint": "Read the question the mother lark asks her young ones. It tells you what she is listening for.",
+      "explain": "She stayed calm because the farmer was only asking neighbors and cousins to help. Those people were busy with their own work, so the wheat would not be cut yet. She moved only when the farmer said he would cut it himself.",
+      "inference": 2,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "character-reasoning"
+      ]
+    },
+    {
+      "id": "p2-i17",
+      "skill": "P2",
+      "passage": "p2-p08",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "How do you think the young larks felt when their mother stayed calm? Build your answer.",
+      "frame": "When their mother stayed calm, the young larks felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "calmer",
+            "still worried",
+            "safe",
+            "confused"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "she listened carefully to the farmer's words",
+            "she fed them supper as usual",
+            "she explained why there was no need to worry yet",
+            "they did not understand her reason"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "I think the mother lark was wise.",
+            "I would still be worried.",
+            "If you want something done, it helps to do it yourself."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        12,
+        13
+      ],
+      "hint": "Read what the mother says and does after each visit. Then think about how you feel when someone calm explains a problem to you.",
+      "explain": "One good answer is: When their mother stayed calm, the young larks felt calmer because she explained why there was no need to worry yet. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "fable"
+      ]
+    },
+    {
+      "id": "p2-i18",
+      "skill": "P2",
+      "passage": "p2-p09",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Leo put his hands on his knees and stared at the ground. Why did he feel disappointed?",
+      "options": [
+        "He missed his goal by one minute.",
+        "He ran slower than last year.",
+        "Maya finished the race before him.",
+        "He had to stop and walk."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        6,
+        7,
+        8
+      ],
+      "hint": "Find Leo's goal near the start. Then compare it with the time on the clock at the finish.",
+      "explain": "Leo felt disappointed because he wanted to finish in under thirty minutes, but the clock said thirty-one. He missed his goal by one minute.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "compare",
+        "look-back"
+      ]
+    },
+    {
+      "id": "p2-i19",
+      "skill": "P2",
+      "passage": "p2-p09",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Leo had two feelings after the race. Sort what happened: did it make him disappointed or proud?",
+      "bins": [
+        "Disappointed 😞",
+        "Proud 😊"
+      ],
+      "cards": [
+        {
+          "text": "His legs felt heavy, and he had to slow down.",
+          "bin": 0
+        },
+        {
+          "text": "The clock said thirty-one minutes.",
+          "bin": 0
+        },
+        {
+          "text": "He missed his goal by one minute.",
+          "bin": 0
+        },
+        {
+          "text": "He ran three minutes faster than last year.",
+          "bin": 1
+        },
+        {
+          "text": "His training since March made him faster.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        8,
+        12,
+        13
+      ],
+      "hint": "Find where Leo stares at the ground, and where he smiles. Each card belongs with one of those two moments.",
+      "explain": "Disappointed: his legs felt heavy, the clock said thirty-one minutes, and he missed his goal. Proud: Ana showed him he ran three minutes faster than last year, so his training worked. Then he smiled.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "feeling-change",
+        "two-feelings"
+      ]
+    },
+    {
+      "id": "p2-i20",
+      "skill": "P2",
+      "passage": "p2-p09",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Maya did not even glance at the clock. Why do you think she felt so happy? Build your answer.",
+      "frame": "Maya felt {0} because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "proud",
+            "joyful",
+            "happy",
+            "surprised"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "she met her own goal",
+            "she ran farther than ever before",
+            "she did not stop once",
+            "her friends cheered for her"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the story",
+          "options": [
+            "she shouted, \"I didn't stop once!\"",
+            "she threw both arms in the air",
+            "she did not even glance at the clock"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I feel proud when I meet my own goal.",
+            "My goal does not have to be the same as someone else's.",
+            "I would feel the same way."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        15,
+        16,
+        17
+      ],
+      "hint": "Look back at Maya's goal near the start. Then read what she does at the finish line.",
+      "explain": "One good answer is: Maya felt proud because she met her own goal. In the story, she shouted, \"I didn't stop once!\" Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "pride",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i21",
+      "skill": "P2",
+      "passage": "p2-p10",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "On the morning of the eclipse, the writer's stomach felt tight. What caused this feeling?",
+      "options": [
+        "Thick clouds covered the sky and might hide the eclipse.",
+        "The family had driven for six hours.",
+        "The writer had lost the eclipse glasses.",
+        "The birds in the trees had gone quiet."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        5,
+        6
+      ],
+      "hint": "Read what the writer saw out of the window, just before the stomach felt tight. Think about what that could mean for seeing the eclipse.",
+      "explain": "The writer felt worried because thick gray clouds covered the whole sky, and clouds could hide the eclipse. This comes just before the stomach felt tight.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue",
+        "account"
+      ]
+    },
+    {
+      "id": "p2-i22",
+      "skill": "P2",
+      "passage": "p2-p10",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort what happened by the feeling it caused: worried, relieved or wonder.",
+      "bins": [
+        "Worried 😟",
+        "Relieved 😌",
+        "Wonder 😮"
+      ],
+      "cards": [
+        {
+          "text": "Thick gray clouds covered the whole sky.",
+          "bin": 0
+        },
+        {
+          "text": "The clouds behind them thinned.",
+          "bin": 1
+        },
+        {
+          "text": "The sky above the field was bright blue.",
+          "bin": 1
+        },
+        {
+          "text": "Bright stars appeared in the middle of the day.",
+          "bin": 2
+        },
+        {
+          "text": "Soft white light streamed out around a black circle.",
+          "bin": 2
+        }
+      ],
+      "evidence": [
+        5,
+        8,
+        13,
+        15
+      ],
+      "hint": "Find three moments: the motel window, the field at noon and the dark sky. Each card belongs to one of them.",
+      "explain": "Worried: thick gray clouds covered the sky at the motel. Relieved: in the field, the clouds thinned and the sky was bright blue. Wonder: during the eclipse, stars appeared and white light streamed out around a black circle.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "feeling-change",
+        "three-feelings"
+      ]
+    },
+    {
+      "id": "p2-i23",
+      "skill": "P2",
+      "passage": "p2-p10",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "The writer forgot to take a single photo. Why do you think that happened? Build your answer.",
+      "frame": "During the eclipse, the writer felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "wonder",
+            "amazed",
+            "excited",
+            "joyful"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the sky turned dark in the middle of the day",
+            "white light streamed out around a black circle",
+            "the writer had waited months to see it",
+            "the whole field went silent"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "When I see something amazing, I forget everything else too.",
+            "I would want to take a photo.",
+            "I would like to see an eclipse one day."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        12,
+        13,
+        15,
+        16,
+        17
+      ],
+      "hint": "Read the third paragraph again. Think about how it would feel to see the sky turn dark at noon.",
+      "explain": "One good answer is: During the eclipse, the writer felt wonder because white light streamed out around a black circle. That feeling was so strong that the writer forgot the camera. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "wonder"
+      ]
+    },
+    {
+      "id": "p2-i24",
+      "skill": "P2",
+      "passage": "p2-p11",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "The girl's shoulders slowly drooped. What caused this feeling?",
+      "options": [
+        "An hour went by, and she saw no whales.",
+        "The cold wind made her shoulders tired.",
+        "Her binoculars were broken.",
+        "The captain told her to sit down."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        6
+      ],
+      "hint": "Read the paragraph that starts \"For the first hour.\" Think about what she came to see, and what she saw.",
+      "explain": "Her shoulders drooped because she felt disappointed. For the first hour, the sea was empty, and she saw no whales.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue",
+        "account"
+      ]
+    },
+    {
+      "id": "p2-i25",
+      "skill": "P2",
+      "passage": "p2-p11",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "On the ride back, the girl did not seem to notice the cold wind. What best explains this?",
+      "options": [
+        "She was so happy about the whale that the cold did not matter to her.",
+        "The wind had stopped blowing.",
+        "She was sitting inside the boat.",
+        "She was still looking for more whales."
+      ],
+      "answer": 0,
+      "evidence": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "hint": "Look at what she does on the ride back. What is she thinking about?",
+      "explain": "She was so happy about the whale and her photo that she did not notice the cold. She looked at her photo again and again and smiled.",
+      "inference": 2,
+      "tags": [
+        "cause-of-feeling",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "p2-i26",
+      "skill": "P2",
+      "passage": "p2-p11",
+      "format": "highlight",
+      "level": 5,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "The girl felt proud of her photo. Tap a sentence that tells why her photo mattered.",
+      "answer": [
+        14,
+        16
+      ],
+      "evidence": [
+        14,
+        16
+      ],
+      "hint": "Find what the captain explains about tails. Then find what he tells the girl she can do with her photo.",
+      "explain": "Every humpback has its own tail pattern, so scientists can use photos to tell whales apart. The captain said she could send her photo to scientists. Her photo could help them, so she felt proud.",
+      "inference": 2,
+      "tags": [
+        "cause-of-feeling",
+        "pride",
+        "join-two-parts"
+      ]
+    },
+    {
+      "id": "p2-i27",
+      "skill": "P2",
+      "passage": "p2-p11",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Which moment of the trip do you think mattered most to the girl? Build your answer.",
+      "frame": "The best moment for the girl was when {0}. She felt {1} because {2}. {3}",
+      "slots": [
+        {
+          "kind": "when",
+          "label": "Moment from the text",
+          "options": [
+            "she saw the puff of mist",
+            "the huge tail rose into the air",
+            "she took the photo of the tail",
+            "the captain said scientists could use her photo"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "excited",
+            "full of wonder",
+            "proud",
+            "joyful"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "she had waited a whole hour",
+            "she had read three books about whales",
+            "her photo could help scientists",
+            "the tail was so huge"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I would like to see a whale one day.",
+            "I waited a long time for something once, and I was glad I waited.",
+            "I would keep that photo forever."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        12,
+        15,
+        16,
+        18
+      ],
+      "hint": "Pick one moment from the second half of the account. Then think about what happened before it.",
+      "explain": "One good answer is: The best moment for the girl was when the huge tail rose into the air. She felt full of wonder because she had waited a whole hour. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "wonder"
+      ]
     }
   ],
   "model": {

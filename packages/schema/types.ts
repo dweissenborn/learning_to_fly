@@ -152,6 +152,9 @@ export interface Passage {
    * @minItems 1
    */
   topics: Topic[];
+  /**
+   * 1 to 3 are the core bands; 4 and 5 are harder texts, offered only once the learner climbs to them
+   */
   level: number;
   /**
    * 0 none, 1 some feelings or intentions, 2 depends on reading people
@@ -163,6 +166,10 @@ export interface Passage {
   themes?: ('loss' | 'illness' | 'suffering' | 'fear')[];
   credit: Credit;
   reviewed?: boolean;
+  /**
+   * Sentence indexes that start a new paragraph (for longer texts)
+   */
+  breaks?: number[];
 }
 export interface Sign {
   shape: 'octagon' | 'triangle' | 'rect' | 'circle' | 'diamond' | 'square';
@@ -382,6 +389,10 @@ export interface AnswerEvent {
    * Express-tier items: rubric points shown
    */
   rubric?: number;
+  /**
+   * The item's text level, so the level staircase has a record
+   */
+  level?: number;
 }
 export interface SessionEvent {
   id: string;
@@ -431,6 +442,10 @@ export interface RecountEvent {
    */
   parts: number;
   typed?: boolean;
+  /**
+   * Telling about his day, or about a show or video he watched
+   */
+  topic?: 'day' | 'show';
 }
 export interface RealWorldEvent {
   id: string;

@@ -176,6 +176,9 @@ main { padding-bottom: 1rem; min-width: 0; }
 .schedule li.now { color: var(--ink); background: var(--accent-soft); }
 .schedule li.now .dot { transform: scale(1.12); outline: 3px solid var(--accent); }
 .schedule ol { display: contents; }
+.schedule li.skipped { opacity: 0.5; }
+.schedule li.skipped .dot { box-shadow: none; outline: 2px dashed var(--line); }
+.prose + .prose { margin-top: 0.8em; }
 .lanterns { display: flex; gap: 6px; justify-content: center; min-height: 24px; flex-wrap: wrap; }
 .lantern { width: 18px; height: 24px; }
 .lantern .glow { opacity: 0; transition: opacity 600ms ease; }
@@ -438,7 +441,7 @@ details > summary { cursor: pointer; font-weight: 700; padding: 0.4rem 0; }
   h1 { font-size: 1.5rem; }
   .schedule li { min-width: 46px; font-size: 0; }
   .schedule li .dot { width: 34px; height: 34px; }
-  .bottombar .btn .lbl { display: none; }
+  .bottombar .btn .lbl { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } /* words stay for screen readers */
   .v-form .frow { grid-template-columns: 1fr; }
 }
 .bottombar.static { position: static; background: none; }

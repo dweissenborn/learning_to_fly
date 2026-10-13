@@ -183,6 +183,636 @@
       "level": 3,
       "socialLoad": 0,
       "credit": { "title": "Skate Park Gate", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f1-p10",
+      "title": "Observatory Door Signs",
+      "kind": "sign",
+      "sentences": ["Sam and Maya visit the Lantern Peaks Observatory on Friday night.", "They read the signs at the door before they go in."],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          { "shape": "rect", "color": "white", "text": "QUIET PLEASE", "icon": "🤫" },
+          { "shape": "circle", "color": "red", "text": "NO FLASH PHOTOS", "icon": "📸" },
+          { "shape": "rect", "color": "blue", "text": "TELESCOPE LINE STARTS HERE", "icon": "🔭" },
+          { "shape": "rect", "color": "red", "text": "AFTER DARK: RED LIGHTS ONLY", "icon": "🔦" },
+          { "shape": "rect", "color": "green", "text": "GIFT SHOP", "icon": "🎁" }
+        ]
+      },
+      "picture": "🔭🌌",
+      "topics": ["space"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Observatory Door Signs", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f1-p11",
+      "title": "Story Woods Trailhead Board",
+      "kind": "sign",
+      "sentences": ["This board stands where all the Story Woods trails begin.", "Rangers update the last column every morning."],
+      "visual": {
+        "type": "table",
+        "title": "Story Woods Trails",
+        "columns": ["Trail", "Level", "Length", "Allowed", "Today"],
+        "rows": [
+          ["Creek Loop", "🟢", "1.5 miles", "🚶 🐕", "Open"],
+          ["Old Mill Path", "🟢", "2 miles", "🚶 🐕 🚲", "Closed: bridge repair"],
+          ["Pine Ridge", "🔵", "4 miles", "🚶 🚲", "Open"],
+          ["Fern Hollow", "🔵", "3 miles", "🚶 🐕", "Open"],
+          ["Big Rock Climb", "⬛", "5 miles", "🚶", "Open"]
+        ],
+        "note": "Key: 🟢 easy, 🔵 medium, ⬛ hard. 🚶 hikers allowed, 🐕 dogs allowed on a leash, 🚲 bikes allowed. A trail without a symbol does not allow that use."
+      },
+      "picture": "🌲🥾🚲",
+      "topics": ["maps", "nature"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "Story Woods Trailhead Board", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f1-p12",
+      "title": "Ferry Terminal Signs",
+      "kind": "sign",
+      "sentences": ["These signs hang inside the Harbor Town ferry terminal.", "Two ferries leave from two different gates."],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          { "shape": "rect", "color": "blue", "text": "GATE A: STORY WOODS DOCK", "icon": "⛴️" },
+          { "shape": "rect", "color": "blue", "text": "GATE B: LANTERN PEAKS PIER", "icon": "⛴️" },
+          { "shape": "rect", "color": "red", "text": "GATE B STAIRS CLOSED FOR REPAIR", "icon": "🚧" },
+          { "shape": "rect", "color": "green", "text": "BIKE RAMP TO GATE B", "icon": "🚲" },
+          { "shape": "circle", "color": "blue", "text": "WALK YOUR BIKE", "icon": "🚶" },
+          { "shape": "square", "color": "blue", "text": "ELEVATOR TO GATE A", "icon": "🛗" },
+          { "shape": "rect", "color": "yellow", "text": "PETS: GATE A ONLY", "icon": "🐕" }
+        ]
+      },
+      "picture": "⛴️⚓",
+      "topics": ["transport", "ocean"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "Ferry Terminal Signs", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f1-p13",
+      "title": "ZipCell Battery Label",
+      "kind": "label",
+      "sentences": ["Priya's rover runs on a ZipCell battery pack.", "This label is printed on the back of the pack."],
+      "visual": {
+        "type": "label",
+        "title": "ZipCell Rover Battery Pack",
+        "rows": [
+          { "k": "🔌 Charge with", "v": "ZipCell USB-C charger only. Other chargers can damage the pack." },
+          { "k": "💡 Charging", "v": "The light glows red while the pack charges. It turns green when the pack is full, after about 2 hours." },
+          { "k": "⏱️ Run time", "v": "About 45 minutes of driving on a full charge" },
+          { "k": "🌡️ Temperature", "v": "Use the pack between 32°F and 95°F. Charge it only between 50°F and 85°F." },
+          { "k": "💧 Water", "v": "Not waterproof. Keep away from rain, puddles and sprinklers." },
+          { "k": "♻️ Worn out?", "v": "Do not put it in the trash. Take it to the battery bin at Harbor Town Library." }
+        ],
+        "warning": "Unplug the pack when the light turns green. Ask an adult before you charge it overnight."
+      },
+      "picture": "🔋🤖",
+      "topics": ["robots", "safety"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "ZipCell Battery Label", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f1-p14",
+      "title": "Harbor Beach Flag Board",
+      "kind": "sign",
+      "sentences": ["This board stands at the top of the path to Harbor Beach.", "A flag on the lifeguard tower shows the water conditions."],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Beach: Know Your Flags",
+        "columns": ["Flag", "What it means", "What you must do"],
+        "rows": [
+          ["🟩 Green", "Low hazard: the water is calm.", "Swim only in the zone between the red-and-yellow flags."],
+          ["🟨 Yellow", "Medium hazard: moderate waves and currents.", "Swim only where you can stand, and stay close to the lifeguard tower."],
+          ["🟥 Red", "High hazard: strong waves and currents.", "No swimming. You may wade in water up to your knees."],
+          ["🟪 Purple", "Jellyfish have been seen near the shore.", "Wear water shoes and keep watching the water around you."],
+          ["🟥🟨 Red and yellow", "These two flags mark the edges of the swim zone.", "Swim only between them."],
+          ["🛟 Lifeguards", "On duty 10:00 AM to 6:00 PM, June 1 to September 15.", "Swim only when a lifeguard is on duty."],
+          ["➕ Two flags", "More than one flag can fly at the same time.", "Follow the rules for every flag that is flying."]
+        ]
+      },
+      "picture": "🏖️🚩🛟",
+      "topics": ["ocean", "safety"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": { "title": "Harbor Beach Flag Board", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f1-p15",
+      "title": "Lab Safety Symbols",
+      "kind": "sign",
+      "sentences": ["This poster hangs in Ms. Ortiz's science room.", "Each lab card shows the symbols for that day's lab."],
+      "visual": {
+        "type": "table",
+        "title": "Lab Safety Symbols",
+        "columns": ["Symbol", "Name", "What you must do"],
+        "rows": [
+          ["🥽", "Eye protection", "Wear goggles from the start of the lab until all cleanup is finished."],
+          ["🔥", "Heat", "Hot plates stay hot for 20 minutes after they are switched off. Move hot items with tongs, never with your hands."],
+          ["🧤", "Chemicals", "Wear gloves whenever you pour or mix a liquid. Gloves do not protect your hands from heat."],
+          ["🧪", "Glassware", "Check glass for chips and cracks before you use it. Give damaged glass to your teacher."],
+          ["🧼", "Hand washing", "Wash your hands with soap before you leave the room."]
+        ]
+      },
+      "picture": "🧪🥽",
+      "topics": ["school", "safety"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": { "title": "Lab Safety Symbols", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f1-p16",
+      "title": "Petting Barn Gate",
+      "kind": "sign",
+      "sentences": [
+        "Sam and Maya visit the petting barn at Story Woods Farm.",
+        "They read the signs on the gate."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "PETTING BARN",
+            "icon": "🐐"
+          },
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "DO NOT FEED THE ANIMALS",
+            "icon": "🥕"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "WASH YOUR HANDS WHEN YOU LEAVE",
+            "icon": "🧼"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "SNACK STAND",
+            "icon": "🥨"
+          }
+        ]
+      },
+      "picture": "🐐🌾",
+      "topics": [
+        "animals"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Petting Barn Gate",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p17",
+      "title": "Music Hall Doors",
+      "kind": "sign",
+      "sentences": [
+        "Ana and Ben have piano concert tickets for Row P, Seats 4 and 5.",
+        "They reach the Music Hall at 7:10 PM."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "CONCERT STARTS 7:00 PM",
+            "icon": "🎹"
+          },
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "LATE? WAIT HERE UNTIL THE MUSIC STOPS",
+            "icon": "✋"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "ROWS A TO M: LEFT DOOR",
+            "icon": "⬅️"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "ROWS N TO Z: RIGHT DOOR",
+            "icon": "➡️"
+          },
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "NO PHOTOS",
+            "icon": "📸"
+          },
+          {
+            "shape": "square",
+            "color": "blue",
+            "text": "COAT ROOM",
+            "icon": "🧥"
+          }
+        ]
+      },
+      "picture": "🎹🎟️",
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Music Hall Doors",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p18",
+      "title": "Arcade Entrance",
+      "kind": "sign",
+      "sentences": [
+        "Leo and Ben go to the Harbor Arcade on Saturday morning.",
+        "Ben has a bag of chips in his backpack."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "OPEN 11 AM TO 9 PM",
+            "icon": "🕹️"
+          },
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "NO FOOD OR DRINKS PAST THIS POINT",
+            "icon": "🥤"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "SNACK TABLES",
+            "icon": "🍿"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "BUY TOKENS HERE",
+            "icon": "🪙"
+          },
+          {
+            "shape": "rect",
+            "color": "orange",
+            "text": "RACING GAME OUT OF ORDER",
+            "icon": "🔧"
+          }
+        ]
+      },
+      "picture": "🕹️🪙",
+      "topics": [
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Arcade Entrance",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p19",
+      "title": "Fossil Museum Floor Guide",
+      "kind": "sign",
+      "sentences": [
+        "This board stands inside the front doors of the Harbor Town Fossil Museum.",
+        "Use it to find rooms and the ways between floors."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Town Fossil Museum: Floor Guide",
+        "columns": [
+          "Floor",
+          "What is there",
+          "Ways to reach it"
+        ],
+        "rows": [
+          [
+            "Floor 3",
+            "Fossil Lab (closed today), Sky Café",
+            "🛗 Lift A"
+          ],
+          [
+            "Floor 2",
+            "Dinosaur Hall: T. rex skeleton, Triceratops skull, dinosaur eggs",
+            "🛗 Lift A, 🛗 Lift B, 🪜 East Stairs"
+          ],
+          [
+            "Floor 1",
+            "Front doors, Dig Pit, gift shop, 🚻",
+            "🛗 Lift A, 🛗 Lift B, 🪜 East Stairs, 🪜 West Stairs"
+          ],
+          [
+            "Lower level",
+            "Ice Age Room: mammoth tusks, 🚻",
+            "🛗 Lift A, 🪜 West Stairs"
+          ]
+        ],
+        "note": "Key: 🛗 lift, 🪜 stairs, 🚻 restrooms. 🚪 Exits are on Floor 1 only. Today the East Stairs are closed for cleaning."
+      },
+      "picture": "🦖🗺️🛗",
+      "topics": [
+        "dinosaurs",
+        "maps"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Fossil Museum Floor Guide",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p20",
+      "title": "Harbor Wind Flags",
+      "kind": "sign",
+      "sentences": [
+        "A flagpole stands at the end of the Harbor Town dock.",
+        "The harbor master raises flags to warn boats about strong wind."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Wind Flags",
+        "columns": [
+          "Flag",
+          "Warning",
+          "Wind",
+          "What the harbor does"
+        ],
+        "rows": [
+          [
+            "No flag",
+            "No warning",
+            "No strong wind expected",
+            "All boats may go out."
+          ],
+          [
+            "🚩 One red pennant (a triangle flag)",
+            "Small craft advisory",
+            "Strong wind or high waves for small boats",
+            "Kayaks, canoes and paddleboards stay on shore. Small sailboats stay inside the harbor."
+          ],
+          [
+            "🚩🚩 Two red pennants",
+            "Gale warning",
+            "39 to 54 miles per hour",
+            "All small boats stay tied up at the dock. The ferry may leave late."
+          ],
+          [
+            "🟥 One square red flag with a black square in the middle",
+            "Storm warning",
+            "55 to 73 miles per hour",
+            "No boats leave the harbor. The ferry does not run. Stay off the dock."
+          ]
+        ],
+        "note": "The flags can change during the day. Check the pole again before you go out on the water."
+      },
+      "picture": "🚩⚓🌬️",
+      "topics": [
+        "weather",
+        "ocean"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Harbor Wind Flags",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p21",
+      "title": "Mine Tour Gate",
+      "kind": "sign",
+      "sentences": [
+        "Maya's class takes a tour of the old Lantern Peaks Copper Mine.",
+        "These signs hang at the tunnel gate."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "HARD HATS ON PAST THIS GATE",
+            "icon": "👷"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "TURN ON YOUR HELMET LAMP AT THE TUNNEL",
+            "icon": "🔦"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "STAY ON THE YELLOW PATH",
+            "icon": "🟨"
+          },
+          {
+            "shape": "triangle",
+            "color": "yellow",
+            "text": "LOW ROOF",
+            "icon": "⚠️"
+          },
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "AREA CLOSED: DO NOT GO PAST THE CHAIN",
+            "icon": "⛓️"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "LOST YOUR GROUP? WAIT AT A GREEN LIGHT",
+            "icon": "🟢"
+          }
+        ]
+      },
+      "picture": "⛏️👷🔦",
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Mine Tour Gate",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p22",
+      "title": "Wildlife Park Map Key",
+      "kind": "sign",
+      "sentences": [
+        "This key is printed on the back of the Story Woods Wildlife Park map.",
+        "The park is open from 9:00 AM to 5:00 PM."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Story Woods Wildlife Park: Map Key",
+        "columns": [
+          "Symbol",
+          "Place",
+          "Times and rules"
+        ],
+        "rows": [
+          [
+            "🦦",
+            "Otter Creek",
+            "Feeding talk at 11:00 AM and 2:00 PM. Each talk lasts 20 minutes."
+          ],
+          [
+            "🦉",
+            "Owl Barn",
+            "These owls sleep in the day. Use quiet voices and no flash."
+          ],
+          [
+            "🐐",
+            "Goat Yard",
+            "Open 10:00 AM to 3:00 PM. Wash your hands at the gate sink when you leave."
+          ],
+          [
+            "🦇",
+            "Bat House",
+            "Open 4:00 PM to 5:00 PM. The room is kept dark, so the bats are awake."
+          ],
+          [
+            "🚂",
+            "Park Train",
+            "Leaves the Main Gate every 30 minutes, from 9:30 AM to 4:30 PM. One trip around the park takes 25 minutes."
+          ],
+          [
+            "🥾",
+            "Walking",
+            "About 5 minutes between any two places on the map."
+          ],
+          [
+            "🚻",
+            "Restrooms",
+            "At the Main Gate and beside the Goat Yard."
+          ]
+        ]
+      },
+      "picture": "🦦🦉🗺️",
+      "topics": [
+        "animals",
+        "maps"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Wildlife Park Map Key",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p23",
+      "title": "Backstage Guide",
+      "kind": "sign",
+      "sentences": [
+        "Tonight, two Harbor Middle School bands play at the Harbor Town Music Hall.",
+        "This guide hangs on the wall backstage."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Music Hall: Backstage Guide for Players",
+        "columns": [
+          "Sign or light",
+          "What it means",
+          "What you do"
+        ],
+        "rows": [
+          [
+            "🔴 Red light over a backstage door",
+            "A band is playing on stage.",
+            "Keep the door closed. Wait quietly in the hall."
+          ],
+          [
+            "🟢 Green light over a backstage door",
+            "The stage is quiet between pieces of music.",
+            "You may walk through quietly."
+          ],
+          [
+            "🎻 Warm-up Room",
+            "Bands tune and warm up here.",
+            "Arrive 30 minutes before your band's start time."
+          ],
+          [
+            "📦 Case Room",
+            "Storage for empty instrument cases.",
+            "Leave your case here before you go on stage. Pick it up after the show."
+          ],
+          [
+            "📵 Phones",
+            "Phones can buzz or light up on stage.",
+            "Switch your phone all the way off, not to quiet mode, before you leave the Warm-up Room."
+          ],
+          [
+            "🚪 Stage Door",
+            "The way onto the stage.",
+            "Wait beside it until the stage manager calls your band."
+          ]
+        ],
+        "note": "Tonight: 6:30 PM Jazz Band, 7:15 PM String Orchestra."
+      },
+      "picture": "🎺🎻🚪",
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Backstage Guide",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -433,6 +1063,840 @@
       "explain": "Leo can skate in the bowl. The big ramp sign says CLOSED TODAY. The bowl sign says ONE WAY, which only tells him which way to skate.",
       "inference": 1,
       "tags": ["one-way", "closed", "two-signs"]
+    },
+    {
+      "id": "f1-i18", "skill": "F1", "passage": "f1-p10", "format": "tap", "level": 3,
+      "prompt": "Maya wants to take a photo of the big telescope. What should she do?",
+      "options": ["Take the photo with the flash turned on", "Take the photo with the flash turned off", "Not take any photos at all", "Shine a white flashlight on the telescope first"],
+      "pictures": ["⚡", "📷", "🚫", "🔦"],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Find the sign about photos. Read every word on it, not just the first word.",
+      "explain": "Maya takes the photo with the flash turned off. The red round sign says NO FLASH PHOTOS, so photos are OK without a flash.",
+      "inference": 1,
+      "tags": ["read-every-word", "no-flash"]
+    },
+    {
+      "id": "f1-i19", "skill": "F1", "passage": "f1-p10", "format": "highlight", "level": 3,
+      "prompt": "It is dark outside, and Sam brought a white flashlight. Tap the sign that tells him this is the wrong kind of light.",
+      "unit": "row",
+      "answer": [3],
+      "evidence": [3],
+      "hint": "Look for a sign about lights. Check what time of day it talks about.",
+      "explain": "The sign that says AFTER DARK: RED LIGHTS ONLY tells Sam a white flashlight is the wrong kind. It is the fourth sign.",
+      "inference": 1,
+      "tags": ["find-sign", "after-dark"]
+    },
+    {
+      "id": "f1-i20", "skill": "F1", "passage": "f1-p11", "format": "tap", "level": 4,
+      "prompt": "Sam wants an easy walk with Pixel today. Which trail should they take?",
+      "options": ["Old Mill Path", "Fern Hollow", "Creek Loop", "Big Rock Climb"],
+      "answer": 2,
+      "evidence": [0, 1, 3],
+      "hint": "First cross out any trail that is closed today. Then use the key to check the level and the dog symbol.",
+      "explain": "They take Creek Loop. Its row shows 🟢 for easy, 🐕 for dogs, and Open. Old Mill Path is closed today, and Fern Hollow is 🔵 medium.",
+      "inference": 1,
+      "tags": ["symbol-key", "table-compare", "closed"]
+    },
+    {
+      "id": "f1-i21", "skill": "F1", "passage": "f1-p11", "format": "tap", "level": 4,
+      "prompt": "Leo wants to ride his bike on the longest trail that bikes may use today. Which trail should he pick?",
+      "options": ["Big Rock Climb", "Old Mill Path", "Fern Hollow", "Pine Ridge"],
+      "answer": 3,
+      "evidence": [1, 2, 4],
+      "hint": "Find every row with the bike symbol. Cross out the closed one. Then compare the lengths that are left.",
+      "explain": "Leo picks Pine Ridge. Only Pine Ridge and Old Mill Path show 🚲, and Old Mill Path is closed today. Big Rock Climb is longer, but it has no bike symbol.",
+      "inference": 1,
+      "tags": ["symbol-key", "table-compare", "compare-numbers"]
+    },
+    {
+      "id": "f1-i22", "skill": "F1", "passage": "f1-p12", "format": "scene", "level": 4,
+      "prompt": "Mr. Okafor has his bike and a ticket for the ferry to Lantern Peaks pier. Tap the way he should go to board.",
+      "scene": "station",
+      "objects": [
+        { "label": "Elevator", "emoji": "🛗", "sign": { "shape": "square", "color": "blue", "text": "ELEVATOR TO GATE A", "icon": "🛗" } },
+        { "label": "Gate B stairs", "emoji": "🪜", "sign": { "shape": "rect", "color": "red", "text": "GATE B STAIRS CLOSED FOR REPAIR", "icon": "🚧" } },
+        { "label": "Ramp", "emoji": "🛤️", "sign": { "shape": "rect", "color": "green", "text": "BIKE RAMP TO GATE B", "icon": "🚲" } },
+        { "label": "Gate A door", "emoji": "🚪", "sign": { "shape": "rect", "color": "blue", "text": "GATE A: STORY WOODS DOCK", "icon": "⛴️" } }
+      ],
+      "answer": 2,
+      "evidence": [1, 2, 3],
+      "hint": "First find which gate his ferry leaves from. Then check each way to that gate and whether it is open.",
+      "explain": "He takes the ramp. His ferry leaves from Gate B, the Gate B stairs are closed for repair, and the green sign says BIKE RAMP TO GATE B.",
+      "inference": 1,
+      "tags": ["two-signs", "closed", "decide"]
+    },
+    {
+      "id": "f1-i23", "skill": "F1", "passage": "f1-p12", "format": "tap", "level": 4,
+      "prompt": "Sam planned to take Pixel on the ferry to Lantern Peaks pier. What do the signs tell him to do?",
+      "options": ["Take Pixel up the bike ramp to Gate B", "Take Pixel to Gate B, as long as Pixel stays on his leash", "Take Pixel on the ferry to Story Woods dock instead, from Gate A", "Take Pixel in the elevator, then walk over to Gate B"],
+      "answer": 2,
+      "evidence": [0, 1, 6],
+      "hint": "Find the sign about pets. Then check which gate each ferry leaves from.",
+      "explain": "He takes Pixel on the Story Woods ferry instead. The yellow sign says PETS: GATE A ONLY. The Lantern Peaks ferry leaves from Gate B, and the Gate A ferry goes to Story Woods dock.",
+      "inference": 1,
+      "tags": ["two-signs", "pets", "problem-solving"]
+    },
+    {
+      "id": "f1-i24", "skill": "F1", "passage": "f1-p13", "format": "tap", "level": 4,
+      "prompt": "Priya's garage is 45°F today, and her kitchen is 70°F. She wants to charge the pack and then race her rover on the dry driveway. What is the best plan?",
+      "options": ["Charge it in the garage, because 45°F is above 32°F", "Skip the race, because 45°F is too cold to use the pack", "Charge it in the kitchen, then race on the driveway", "Charge it in the garage with her tablet charger"],
+      "answer": 2,
+      "evidence": [0, 3],
+      "hint": "The temperature row has two rules. Find the rule for using the pack and the rule for charging it, and check each one.",
+      "explain": "She charges it in the kitchen, then races. The Temperature row says to charge only between 50°F and 85°F, but the pack can be used from 32°F, so 45°F is fine for racing.",
+      "inference": 1,
+      "tags": ["two-numbers", "temperature", "decide", "label"],
+      "transfer": true
+    },
+    {
+      "id": "f1-i25", "skill": "F1", "passage": "f1-p13", "format": "tap", "level": 4,
+      "prompt": "Priya's battery is full when her rover race starts at 2:00 PM. If she drives the whole time, about when will the battery run out?",
+      "options": ["About 4:00 PM", "About 2:20 PM", "About 3:45 PM", "About 2:45 PM"],
+      "answer": 3,
+      "evidence": [2],
+      "hint": "Two rows give amounts of time. Pick the one about driving, not charging. Then add it to 2:00 PM.",
+      "explain": "It will run out at about 2:45 PM. The Run time row says about 45 minutes of driving on a full charge. The 2 hours is the charging time.",
+      "inference": 1,
+      "tags": ["time-math", "time-pm", "close-numbers"]
+    },
+    {
+      "id": "f1-i26", "skill": "F1", "passage": "f1-p14", "format": "tap", "level": 5,
+      "prompt": "It is 3:00 PM on July 10. The yellow flag and the purple flag are both flying. What must Ana do if she wants to swim?",
+      "options": ["Swim anywhere in the swim zone, because yellow is not red", "Stay out of the water, because two flags are flying", "Wear water shoes and swim past the red-and-yellow flags, away from the jellyfish", "Wear water shoes and swim where she can stand, close to the lifeguard tower"],
+      "answer": 3,
+      "evidence": [1, 3, 6],
+      "hint": "Find the row that tells you what to do when two flags fly. Then read the rule for each flag and put them together.",
+      "explain": "Ana wears water shoes and swims where she can stand, close to the tower. The Two flags row says to follow every flag, so she follows the Yellow row and the Purple row together.",
+      "inference": 1,
+      "tags": ["combine-rows", "two-flags", "decide"]
+    },
+    {
+      "id": "f1-i27", "skill": "F1", "passage": "f1-p14", "format": "tap", "level": 5,
+      "prompt": "It is 6:30 PM on August 2, and only the green flag is flying. Ben wants to go for a swim. What is the best decision?",
+      "options": ["Stay out of the water, because the lifeguards went off duty at 6:00 PM", "Swim between the red-and-yellow flags, because green means calm water", "Swim, because lifeguards are on duty until September 15", "Swim only where he can stand, because it is late in the day"],
+      "answer": 0,
+      "evidence": [0, 5],
+      "hint": "Check the flag, but also check the clock. Find the row that says when swimming is allowed at all.",
+      "explain": "Ben stays out of the water. The Lifeguards row says they are on duty only until 6:00 PM, and you may swim only when a lifeguard is on duty. September 15 is the last day of the season, not a time of day.",
+      "inference": 1,
+      "tags": ["key-detail", "time-pm", "rule-overrides"]
+    },
+    {
+      "id": "f1-i28", "skill": "F1", "passage": "f1-p15", "format": "tap", "level": 5,
+      "prompt": "Maya switches off her hot plate at 10:05 AM. At 10:15 AM, she needs to move the beaker that was sitting on it. What should she do?",
+      "options": ["Lift it with her hands, because the hot plate is switched off", "Move it with tongs, because the plate stays hot until about 10:25 AM", "Lift it with her gloves on, because gloves protect her hands", "Wait until 10:20 AM, then lift it with her hands"],
+      "answer": 1,
+      "evidence": [1, 2],
+      "hint": "Find the Heat row and add its number of minutes to 10:05 AM. Then check what the Chemicals row says about gloves.",
+      "explain": "She moves it with tongs. The Heat row says hot plates stay hot for 20 minutes, so it is hot until about 10:25 AM. The Chemicals row says gloves do not protect your hands from heat.",
+      "inference": 1,
+      "tags": ["time-math", "combine-rows", "close-distractor"]
+    },
+    {
+      "id": "f1-i29", "skill": "F1", "passage": "f1-p15", "format": "highlight", "level": 5,
+      "prompt": "Cleanup has started. Priya takes off her goggles to wipe her table. Tap the row that shows she took them off too early.",
+      "unit": "row",
+      "answer": [0],
+      "evidence": [0],
+      "hint": "Find the symbol for goggles. Read the whole rule and look for the word that tells you when you may stop.",
+      "explain": "The Eye protection row 🥽 says to wear goggles until all cleanup is finished. Priya is still cleaning up, so it is too early.",
+      "inference": 1,
+      "tags": ["symbol", "time-word", "until"],
+      "transfer": true
+    },
+    {
+      "id": "f1-i30",
+      "skill": "F1",
+      "passage": "f1-p16",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Maya has crackers in her pocket. A goat comes to the fence. What should she do with the crackers?",
+      "options": [
+        "Give the goat one cracker",
+        "Keep them in her pocket",
+        "Drop them over the fence"
+      ],
+      "pictures": [
+        "🐐",
+        "👖",
+        "⬇️"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the red sign. Read what it says about animals and food.",
+      "explain": "Maya keeps the crackers in her pocket. The red sign says DO NOT FEED THE ANIMALS.",
+      "inference": 0,
+      "tags": [
+        "no-feeding"
+      ]
+    },
+    {
+      "id": "f1-i31",
+      "skill": "F1",
+      "passage": "f1-p16",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Sam is done petting the goats. Now he wants a pretzel. Tap where he should go first.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Snack stand",
+          "emoji": "🥨",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "SNACK STAND",
+            "icon": "🥨"
+          }
+        },
+        {
+          "label": "Sink",
+          "emoji": "🚰",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "WASH YOUR HANDS WHEN YOU LEAVE",
+            "icon": "🧼"
+          }
+        },
+        {
+          "label": "Goat pen",
+          "emoji": "🐐",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "PETTING BARN",
+            "icon": "🐐"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Sam is leaving the barn. Find the sign that tells him what to do when he leaves.",
+      "explain": "Sam goes to the sink first. The blue sign says WASH YOUR HANDS WHEN YOU LEAVE. Then he can get his pretzel at the snack stand.",
+      "inference": 1,
+      "tags": [
+        "two-signs",
+        "sequence"
+      ]
+    },
+    {
+      "id": "f1-i32",
+      "skill": "F1",
+      "passage": "f1-p17",
+      "format": "tap",
+      "level": 3,
+      "prompt": "It is 7:10 PM, and the piano is playing. What should Ana and Ben do?",
+      "options": [
+        "Go in the right door and find their seats",
+        "Wait by the doors until the music stops",
+        "Go in the left door, because it is closer",
+        "Go home, because they missed the start"
+      ],
+      "pictures": [
+        "➡️",
+        "✋",
+        "⬅️",
+        "🏠"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Compare the time they arrived with the start time. Then find the sign for people who arrive after the start.",
+      "explain": "They wait until the music stops. The concert started at 7:00 PM, so they are late, and the red sign says LATE? WAIT HERE UNTIL THE MUSIC STOPS.",
+      "inference": 1,
+      "tags": [
+        "late",
+        "two-signs",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f1-i33",
+      "skill": "F1",
+      "passage": "f1-p17",
+      "format": "scene",
+      "level": 3,
+      "prompt": "The music has stopped. Tap the door Ana and Ben should use.",
+      "scene": "hall",
+      "objects": [
+        {
+          "label": "Left door",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "ROWS A TO M: LEFT DOOR",
+            "icon": "⬅️"
+          }
+        },
+        {
+          "label": "Right door",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "ROWS N TO Z: RIGHT DOOR",
+            "icon": "➡️"
+          }
+        },
+        {
+          "label": "Coat room door",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "square",
+            "color": "blue",
+            "text": "COAT ROOM",
+            "icon": "🧥"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find their row letter in the story. Then find the sign whose letters include it.",
+      "explain": "They use the right door. Their row is P, and P comes between N and Z, so the sign says ROWS N TO Z: RIGHT DOOR.",
+      "inference": 1,
+      "tags": [
+        "alphabet-range",
+        "seat"
+      ]
+    },
+    {
+      "id": "f1-i34",
+      "skill": "F1",
+      "passage": "f1-p17",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put Ana and Ben's steps in order.",
+      "steps": [
+        "Reach the Music Hall at 7:10 PM",
+        "Wait until the music stops",
+        "Go in the right door",
+        "Find Row P, Seats 4 and 5"
+      ],
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Read the red sign to see what comes before going in. Then think about what you do once you are inside.",
+      "explain": "They arrive at 7:10 PM, wait until the music stops, go in the right door, and then find Row P. The red sign says to wait, and the blue sign shows the door for rows N to Z.",
+      "inference": 1,
+      "tags": [
+        "sequence",
+        "late"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i35",
+      "skill": "F1",
+      "passage": "f1-p18",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben wants to eat his chips before he plays. Where should he eat them?",
+      "options": [
+        "At the snack tables",
+        "Next to the racing game",
+        "While he plays his first game",
+        "Walking around the game area"
+      ],
+      "pictures": [
+        "🍿",
+        "🏎️",
+        "🕹️",
+        "🚶"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the sign about food. Then find a sign that shows a place where food is OK.",
+      "explain": "He eats them at the snack tables. The red sign says NO FOOD OR DRINKS PAST THIS POINT, and the blue sign shows the SNACK TABLES.",
+      "inference": 1,
+      "tags": [
+        "two-signs",
+        "no-food"
+      ]
+    },
+    {
+      "id": "f1-i36",
+      "skill": "F1",
+      "passage": "f1-p18",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "It is 10:30 AM. Leo and Ben are at the door. Tap the sign that tells them they must wait.",
+      "unit": "row",
+      "answer": [
+        0
+      ],
+      "evidence": [
+        0
+      ],
+      "hint": "Look for a sign with times on it. Compare those times with 10:30 AM.",
+      "explain": "The green sign says OPEN 11 AM TO 9 PM. At 10:30 AM the arcade is not open yet, so they wait 30 minutes.",
+      "inference": 1,
+      "tags": [
+        "time",
+        "find-sign"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i37",
+      "skill": "F1",
+      "passage": "f1-p19",
+      "format": "scene",
+      "level": 4,
+      "prompt": "Sam and Grandma Rose are in the Dinosaur Hall. Her knee is sore, so she wants to skip the stairs. They want to see the Ice Age Room next. Tap the way they should go.",
+      "scene": "hall",
+      "objects": [
+        {
+          "label": "Lift A",
+          "emoji": "🛗",
+          "sign": {
+            "shape": "square",
+            "color": "blue",
+            "text": "LIFT A",
+            "icon": "🛗"
+          }
+        },
+        {
+          "label": "Lift B",
+          "emoji": "🛗",
+          "sign": {
+            "shape": "square",
+            "color": "blue",
+            "text": "LIFT B",
+            "icon": "🛗"
+          }
+        },
+        {
+          "label": "East Stairs",
+          "emoji": "🪜",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "EAST STAIRS",
+            "icon": "⬇️"
+          }
+        }
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Find the Ice Age Room's row and read which ways reach it. Then check which of those also reach Floor 2.",
+      "explain": "They take Lift A. The Lower level row lists only Lift A and the West Stairs, and Grandma Rose wants to skip the stairs. Lift B does not stop at the lower level.",
+      "inference": 1,
+      "tags": [
+        "map-key",
+        "combine-rows",
+        "decide"
+      ]
+    },
+    {
+      "id": "f1-i38",
+      "skill": "F1",
+      "passage": "f1-p19",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya has lunch at the Sky Café on Floor 3. Then she wants to leave the museum. What should she do?",
+      "options": [
+        "Take the East Stairs down to Floor 1, then use an exit",
+        "Take Lift A down to Floor 1, then use an exit",
+        "Take Lift B down to Floor 1, then use an exit",
+        "Find the exit on Floor 3, next to the café"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Find the Floor 3 row and read the ways to reach it. Then read the note to find where the exits are.",
+      "explain": "She takes Lift A down to Floor 1. The Floor 3 row lists only Lift A, and the note says exits are on Floor 1 only.",
+      "inference": 1,
+      "tags": [
+        "map-key",
+        "combine-rows",
+        "note"
+      ]
+    },
+    {
+      "id": "f1-i39",
+      "skill": "F1",
+      "passage": "f1-p19",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Ana is in the Dinosaur Hall and needs a restroom. Tap the floor with the nearest restrooms.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Find every row with the restroom symbol. Then count how many floors away from Floor 2 each one is.",
+      "explain": "Floor 1 has the nearest restrooms. The 🚻 symbol is on Floor 1 and on the lower level, and Floor 1 is just one floor below the Dinosaur Hall.",
+      "inference": 1,
+      "tags": [
+        "symbol",
+        "nearest"
+      ]
+    },
+    {
+      "id": "f1-i40",
+      "skill": "F1",
+      "passage": "f1-p20",
+      "format": "tap",
+      "level": 4,
+      "prompt": "One red pennant is flying. Leo planned to paddle his kayak around the harbor. What should he do?",
+      "options": [
+        "Paddle out, because one pennant is only a small warning",
+        "Keep his kayak on shore today",
+        "Paddle out, but stay inside the harbor",
+        "Wait until the ferry leaves, then paddle out"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the row for one red pennant. Read the last column and look for the kind of boat Leo has.",
+      "explain": "Leo keeps his kayak on shore. The one red pennant row says kayaks, canoes and paddleboards stay on shore. Staying inside the harbor is the rule for small sailboats.",
+      "inference": 0,
+      "tags": [
+        "flag-key",
+        "close-distractor",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f1-i41",
+      "skill": "F1",
+      "passage": "f1-p20",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam planned to take the morning ferry to Story Woods. At the dock, he sees one square red flag with a black square in the middle. What should he do?",
+      "options": [
+        "Wait on the dock until the ferry comes",
+        "Get on the ferry, but expect it to leave late",
+        "Make a new plan for the day, because the ferry does not run",
+        "Ask to ride in a small sailboat instead"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Match the flag Sam sees to a row in the table. Then read every rule in that row.",
+      "explain": "Sam makes a new plan. The square red flag with a black square is a storm warning, and that row says the ferry does not run and people stay off the dock. Leaving late is the rule for two red pennants.",
+      "inference": 0,
+      "tags": [
+        "flag-key",
+        "plan-change",
+        "problem-solving",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i42",
+      "skill": "F1",
+      "passage": "f1-p20",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "The wind is blowing at 45 miles per hour. Tap the row for the flag that should be flying.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Read the Wind column. Find the range that 45 fits inside.",
+      "explain": "Two red pennants should be flying. The gale warning row covers wind from 39 to 54 miles per hour, and 45 is between those numbers.",
+      "inference": 1,
+      "tags": [
+        "number-range",
+        "flag-key"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i43",
+      "skill": "F1",
+      "passage": "f1-p21",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Inside the tunnel, the yellow path goes under a LOW ROOF sign. Beside it, a side tunnel with a higher roof has a chain across it. What should Maya do?",
+      "options": [
+        "Step over the chain and use the side tunnel, because its roof is higher",
+        "Stay on the yellow path and duck carefully under the low roof",
+        "Turn back to the gate, because the yellow path is closed",
+        "Wait at the chain until a guide takes it down"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "Decide which signs tell you to keep out and which signs only tell you to be careful. A yellow triangle is a warning.",
+      "explain": "Maya stays on the yellow path and ducks carefully. The yellow LOW ROOF sign only warns her to be careful, but the red sign says AREA CLOSED: DO NOT GO PAST THE CHAIN.",
+      "inference": 1,
+      "tags": [
+        "warning-vs-closed",
+        "two-signs",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i44",
+      "skill": "F1",
+      "passage": "f1-p21",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben stops to look at a shiny rock. When he looks up, he cannot see his group. What should he do?",
+      "options": [
+        "Walk past the chain to look for them",
+        "Go back to the gate and wait outside",
+        "Wait at the nearest green light",
+        "Turn off his helmet lamp and listen"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the sign for someone who cannot see their group. Read what it tells you to do.",
+      "explain": "Ben waits at the nearest green light. The green sign says LOST YOUR GROUP? WAIT AT A GREEN LIGHT.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "find-sign"
+      ]
+    },
+    {
+      "id": "f1-i45",
+      "skill": "F1",
+      "passage": "f1-p21",
+      "format": "sort",
+      "level": 4,
+      "prompt": "What does each sign tell you? Put each sign in the right box.",
+      "bins": [
+        "What to wear or use",
+        "Where to go or not go"
+      ],
+      "cards": [
+        {
+          "text": "HARD HATS ON PAST THIS GATE",
+          "bin": 0,
+          "emoji": "👷"
+        },
+        {
+          "text": "STAY ON THE YELLOW PATH",
+          "bin": 1,
+          "emoji": "🟨"
+        },
+        {
+          "text": "TURN ON YOUR HELMET LAMP AT THE TUNNEL",
+          "bin": 0,
+          "emoji": "🔦"
+        },
+        {
+          "text": "AREA CLOSED: DO NOT GO PAST THE CHAIN",
+          "bin": 1,
+          "emoji": "⛓️"
+        },
+        {
+          "text": "LOST YOUR GROUP? WAIT AT A GREEN LIGHT",
+          "bin": 1,
+          "emoji": "🟢"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "hint": "Read each sign. Ask: is it about something I wear or carry, or about a place?",
+      "explain": "The hard hat and helmet lamp signs tell you what to wear or use. The yellow path, the chain and the green light signs tell you where to go or not go.",
+      "inference": 0,
+      "tags": [
+        "sort",
+        "sign-purpose"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i46",
+      "skill": "F1",
+      "passage": "f1-p22",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana is at the Goat Yard at 1:50 PM. She wants to hear the whole otter feeding talk and then come back to pet the goats. Which plan works?",
+      "options": [
+        "Walk to Otter Creek now, hear the talk, and be back at the goats at about 2:25 PM",
+        "Stay with the goats until 2:00 PM, then walk to Otter Creek for the talk",
+        "Hear the talk, take one train trip, and be back at the goats at about 3:15 PM",
+        "Stay with the goats now and hear the next talk at 4:00 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        2,
+        5
+      ],
+      "hint": "Add the walking time to 1:50 PM and compare it with the talk time. Then add the talk and the walk back, and check the Goat Yard's hours.",
+      "explain": "The first plan works. She reaches Otter Creek at about 1:55 PM, the talk runs from 2:00 to 2:20 PM, and the walk back gets her to the goats at about 2:25 PM, before the yard closes at 3:00 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "combine-rows",
+        "plan"
+      ]
+    },
+    {
+      "id": "f1-i47",
+      "skill": "F1",
+      "passage": "f1-p22",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Leo's family will be at the park from 10:00 AM until 3:30 PM. Tap the place that will be closed for their whole visit.",
+      "unit": "row",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Read the times in every row. Find the place that opens only after 3:30 PM.",
+      "explain": "The Bat House is closed for their whole visit. It opens at 4:00 PM, after they leave. The Goat Yard closes at 3:00 PM, but it is open for most of their visit.",
+      "inference": 1,
+      "tags": [
+        "time",
+        "close-distractor"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i48",
+      "skill": "F1",
+      "passage": "f1-p22",
+      "format": "tap",
+      "level": 5,
+      "prompt": "It is 4:35 PM, and Sam is at the Main Gate. He wanted one train trip around the park before he goes home. What should he do?",
+      "options": [
+        "Wait for the 5:00 PM train",
+        "Wait for the 4:45 PM train",
+        "Walk to see the animals instead, because the last train left at 4:30 PM",
+        "Catch the 4:30 PM train, because trains run until 4:30 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Read the Park Train row. Find the time of the last train, and compare it with 4:35 PM.",
+      "explain": "Sam walks instead. The Park Train row says trains leave from 9:30 AM to 4:30 PM, so the 4:30 PM train was the last one, and it has already left.",
+      "inference": 1,
+      "tags": [
+        "time",
+        "last-departure",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f1-i49",
+      "skill": "F1",
+      "passage": "f1-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya plays the cello in the String Orchestra. What time should she be in the Warm-up Room?",
+      "options": [
+        "6:00 PM",
+        "6:30 PM",
+        "6:45 PM",
+        "7:15 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find her band's start time in the note under the table. Then use the Warm-up Room row to work out how much earlier to arrive.",
+      "explain": "She should be there at 6:45 PM. The note says the String Orchestra starts at 7:15 PM, and the Warm-up Room row says to arrive 30 minutes before. 6:00 PM is the time for the Jazz Band.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "note",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i50",
+      "skill": "F1",
+      "passage": "f1-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben plays the keyboard in the Jazz Band. He is in the Warm-up Room with his keyboard in its case, and his phone is on quiet mode. What should he do before he walks to the Stage Door?",
+      "options": [
+        "Switch his phone off, then carry his keyboard in its case onto the stage",
+        "Switch his phone off, take out his keyboard, and leave the case in the Case Room",
+        "Keep his phone on quiet, take out his keyboard, and leave the case in the Case Room",
+        "Take out his keyboard, and leave the case and his quiet phone by the Stage Door"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Two rows tell Ben what to do before he goes on stage. Read each one to the end.",
+      "explain": "He switches his phone all the way off and leaves the case in the Case Room. The Phones row says quiet mode is not enough, and the Case Room row says to leave your case there before you go on stage.",
+      "inference": 1,
+      "tags": [
+        "combine-rows",
+        "read-every-word",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i51",
+      "skill": "F1",
+      "passage": "f1-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "While the String Orchestra is playing, Ben needs to go through a backstage door to reach the Case Room. A red light is on over the door. What should he do?",
+      "options": [
+        "Open the door slowly so nobody hears it",
+        "Wait quietly in the hall until the light turns green, then walk through quietly",
+        "Walk through quickly while the music is loud",
+        "Wait in the hall until the stage manager calls the Jazz Band"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the rows for both colors of light. Decide what Ben does now and what he does later.",
+      "explain": "He waits quietly until the light turns green, then walks through quietly. The red light row says to keep the door closed and wait, and the green light row says you may walk through quietly.",
+      "inference": 1,
+      "tags": [
+        "light-signal",
+        "combine-rows"
+      ]
     }
   ],
   "model": {

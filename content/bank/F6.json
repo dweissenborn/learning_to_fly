@@ -196,6 +196,530 @@
       "level": 3,
       "socialLoad": 0,
       "credit": { "title": "Our Tablet Rules", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p10",
+      "title": "Headphone Safety",
+      "kind": "prompt",
+      "sentences": ["Sam is listening to a podcast about trains on his tablet.", "He is wearing headphones when this box pops up."],
+      "visual": {
+        "type": "prompt",
+        "title": "Headphone Safety",
+        "icon": "🎧",
+        "rows": [
+          "You have listened at a high volume for 1 hour today.",
+          "Loud sound for a long time can hurt your hearing.",
+          "If you do nothing, the volume will go down by itself in 30 seconds.",
+          "You can turn it up again later, but a lower volume is safer for your ears."
+        ],
+        "buttons": ["Lower Volume Now", "Keep It Loud"]
+      },
+      "picture": "🎧📱🚆",
+      "topics": ["health", "safety"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": { "title": "Headphone Safety", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p11",
+      "title": "SketchCove Privacy Settings",
+      "kind": "prompt",
+      "sentences": ["Maya gets a new drawing app called SketchCove.", "Before she posts a comic, she opens the privacy settings with her mom."],
+      "visual": {
+        "type": "table",
+        "title": "SketchCove: Privacy Settings",
+        "columns": ["Setting", "Now set to", "Other choices"],
+        "rows": [
+          ["Who can see my drawings", "Everyone", "Friends, Only me"],
+          ["Who can send me messages", "Everyone", "Friends, No one"],
+          ["Add my town to each drawing I post", "On", "Off"],
+          ["Let the app use my camera", "Ask every time", "Always, Never"],
+          ["Find friends from my contacts list", "Off", "On"],
+          ["Show ads based on what I draw", "On", "Off"]
+        ],
+        "note": "Everyone means any SketchCove user, including people you have never met. Friends means only people you have accepted. A change is saved as soon as you tap it."
+      },
+      "picture": "🎨🔒📱",
+      "topics": ["safety", "home"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "SketchCove Privacy Settings", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p12",
+      "title": "The Gem Shop",
+      "kind": "prompt",
+      "sentences": ["Ben is playing Block Builder on the family tablet.", "He taps the gem shop, and this box opens."],
+      "visual": {
+        "type": "prompt",
+        "title": "Gem Shop: Buy Gems?",
+        "icon": "💎",
+        "rows": [
+          "Gems buy new skins and tools in Block Builder.",
+          "Small pack: 100 gems for $1.",
+          "Big pack: 500 gems for $4. Best value!",
+          "This is real money. It is charged to the card saved on this tablet.",
+          "Players under 13 need a parent to approve each purchase.",
+          "Tap Ask a Parent to send a request. Nothing is charged until a parent says yes.",
+          "Gems cannot be traded back for money after you buy them.",
+          "Free gems: finish the Daily Build to earn 20 gems each day.",
+          "You have 40 gems now. The Rocket Drill tool costs 100 gems."
+        ],
+        "buttons": ["Ask a Parent", "Buy Now", "Cancel"]
+      },
+      "picture": "🎮💎💵",
+      "topics": ["games", "money", "safety"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": { "title": "The Gem Shop", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p13",
+      "title": "The Sign-In Code",
+      "kind": "message",
+      "sentences": ["Ben's family phone gets this text from Block Builder.", "Ben plays Block Builder on a laptop and on a tablet."],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Block Builder",
+        "to": "Diaz family phone",
+        "time": "4:12 PM",
+        "rows": [
+          "Your Block Builder sign-in code is 482913.",
+          "Someone is signing in to Ben's account on a new laptop in Harbor Town.",
+          "If this is you, type the code on the sign-in screen. The code stops working in 10 minutes.",
+          "Never tell this code to anyone. Block Builder staff will never ask you for it in a chat, a call or an email.",
+          "If this is not you, do not type the code anywhere. Tap Secure My Account in the app and change your password with an adult.",
+          "Each code works one time only. A new sign-in needs a new code."
+        ]
+      },
+      "picture": "📱🔢🔒",
+      "topics": ["games", "safety"],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": { "title": "The Sign-In Code", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p14",
+      "title": "An Email About Priya's Account",
+      "kind": "message",
+      "sentences": ["Priya gets an email on the family computer.", "She buys rover parts from a shop called RoboParts."],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "RoboParts Customer Team",
+        "to": "Priya",
+        "subject": "URGENT: Your account will be closed in 24 hours!",
+        "time": "11:52 PM",
+        "rows": [
+          "Dear Customer,",
+          "Our safety system found strange activity on your RoboParts account last night.",
+          "We are sorry for the trouble, and we want to keep your account safe.",
+          "Your account will be closed in 24 hours unless you act now.",
+          "To keep it open, click the link below and type your username, your password and your parent's card number.",
+          "Link: roboparts-account-check.example.com",
+          "Use a computer, not a phone, so the page works correctly.",
+          "As a thank-you, the first 50 customers who reply will win a free rover kit worth $200.",
+          "Do not tell anyone about this email, because the prize is only for you.",
+          "If you do not click today, all of your saved orders and reward points will be deleted.",
+          "Thank you, The RoboParts Team",
+          "Sent from: rp-prizes-99@example.com",
+          "P.S. Reply with your home address so we can mail your prize."
+        ]
+      },
+      "picture": "📧⚠️🤖",
+      "topics": ["safety", "robots", "money"],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": { "title": "An Email About Priya's Account", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p15",
+      "title": "System Update",
+      "kind": "prompt",
+      "sentences": ["Sam is drawing a train map on his tablet after dinner.", "This box pops up over his drawing."],
+      "visual": {
+        "type": "prompt",
+        "title": "System Update 8.2 Is Ready",
+        "icon": "🔄",
+        "rows": [
+          "This update fixes problems and makes your tablet safer to use.",
+          "Download size: 1.2 GB. Installing takes about 25 minutes.",
+          "Your tablet will restart two times during the update. Each time, the screen may stay black for up to 2 minutes. This is normal.",
+          "Do not turn off your tablet while the update is installing.",
+          "Your battery must be at 50% or more, or the tablet must be plugged in.",
+          "All open apps will close when the update starts. Save your work first, or you may lose your changes.",
+          "You cannot use your tablet until the update is finished.",
+          "Your drawings, photos and games will still be there after the update.",
+          "After the update, type your passcode once to unlock the tablet.",
+          "Choose Install Tonight to update at 2:00 AM while you sleep. Leave the tablet plugged in overnight.",
+          "If the update stops before it finishes, keep the tablet plugged in. It will try again by itself."
+        ],
+        "buttons": ["Install Now", "Install Tonight", "Remind Me Later"]
+      },
+      "picture": "📱🔄🌙",
+      "topics": ["safety", "home", "maps"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": { "title": "System Update", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+    },
+    {
+      "id": "f6-p16",
+      "title": "The Dinosaur App",
+      "kind": "prompt",
+      "sentences": [
+        "Ben gets a new dinosaur app called DinoWalk.",
+        "A box pops up when he opens it."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Allow DinoWalk to use your camera?",
+        "icon": "📷",
+        "rows": [
+          "DinoWalk uses your camera to show a dinosaur in your room.",
+          "Meet a Velociraptor! It was about as big as a turkey.",
+          "DinoWalk can also take photos of you with the dinosaur."
+        ],
+        "buttons": [
+          "Allow",
+          "Don't Allow"
+        ]
+      },
+      "picture": "🦖📱📷",
+      "topics": [
+        "dinosaurs",
+        "safety"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Dinosaur App",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p17",
+      "title": "Platform Safety",
+      "kind": "notice",
+      "sentences": [
+        "Sam and Grandma Rose wait for the train at Harbor Town Station.",
+        "Sam reads the sign on the platform."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Platform Safety",
+        "icon": "🚆",
+        "rows": [
+          "Stand behind the yellow line until the train stops.",
+          "Some trains pass this platform without stopping. They go fast and make a strong wind.",
+          "Let people get off the train before you get on.",
+          "Watch the gap between the train and the platform when you step on.",
+          "If you drop something on the tracks, do not climb down. Tell a station worker in an orange vest.",
+          "Dogs must be on a short leash or in a carrier."
+        ]
+      },
+      "picture": "🚆⚠️🧍",
+      "topics": [
+        "transport",
+        "safety"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Platform Safety",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p18",
+      "title": "Touch Tank Rules",
+      "kind": "notice",
+      "sentences": [
+        "Maya and Priya visit the Harbor Town Aquarium.",
+        "They stop at the touch tank."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Touch Tank Rules",
+        "icon": "🦀",
+        "rows": [
+          "Rinse your hands with plain water before you touch. Lotion and sunscreen can harm the animals.",
+          "Touch gently with two fingers.",
+          "Keep the animals in the water. Do not lift them out.",
+          "You may touch the sea stars and the hermit crabs' shells.",
+          "Do not touch the sea urchins. Their spines are sharp.",
+          "Wash your hands with soap after you touch.",
+          "Questions? Ask a staff member in a blue shirt."
+        ]
+      },
+      "picture": "🦀⭐🌊",
+      "topics": [
+        "animals",
+        "ocean"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Touch Tank Rules",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p19",
+      "title": "The Star Show",
+      "kind": "notice",
+      "sentences": [
+        "Sam's class visits the planetarium at Lantern Peaks Observatory.",
+        "A notice hangs on the door of the dome."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Star Show: Please Read",
+        "icon": "🌌",
+        "rows": [
+          "The star show lasts 40 minutes. The dome gets very dark.",
+          "Near the end of the show, there are bright flashing lights for about 5 minutes.",
+          "If flashing lights bother you, ask for a seat by the exit door. You may step out and come back in.",
+          "If you need to leave, follow the small blue lights on the floor. Walk slowly.",
+          "No phones or flashlights during the show. Their light makes it hard for others to see the stars.",
+          "Food and drinks stay in the lobby."
+        ]
+      },
+      "picture": "🌌🔭✨",
+      "topics": [
+        "space"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Star Show",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p20",
+      "title": "Thunderstorm Warning",
+      "kind": "prompt",
+      "sentences": [
+        "Ana and Ben have soccer practice at Pier Field at 4:30 PM.",
+        "At 3:05 PM, this alert pops up on their mom's phone."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Severe Thunderstorm Warning",
+        "icon": "⛈️",
+        "rows": [
+          "Harbor Town Weather Service: Severe Thunderstorm Warning until 6:00 PM today.",
+          "Storms will reach Harbor Town at about 4:00 PM, with lightning, heavy rain and strong wind.",
+          "When you hear thunder, go inside a building or a car with a hard metal roof right away.",
+          "Do not wait under a tree, a picnic shelter or a dugout. They do not keep you safe from lightning.",
+          "Stay inside until 30 minutes after the last thunder you hear.",
+          "All outdoor games and practices in Harbor Town are canceled from 3:30 PM to 6:00 PM.",
+          "Tap Details to see the storm map. Tap Dismiss to close this alert."
+        ],
+        "buttons": [
+          "Details",
+          "Dismiss"
+        ]
+      },
+      "picture": "⛈️📱⚽",
+      "topics": [
+        "weather",
+        "sports",
+        "safety"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Thunderstorm Warning",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p21",
+      "title": "The Free Trial",
+      "kind": "prompt",
+      "sentences": [
+        "Leo wants to listen to music while he skates.",
+        "He opens a music app called TuneTide, and this box appears."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Try TuneTide Plus FREE!",
+        "icon": "🎵",
+        "rows": [
+          "Play any song with no ads, even with no internet.",
+          "Your first 7 days are free.",
+          "After 7 days, you pay $9 every month until you cancel.",
+          "To start, add a card number. Nothing is charged today.",
+          "To stop paying, cancel in Settings before day 7 ends.",
+          "Or keep TuneTide Free: play songs with short ads between them, for $0.",
+          "Hurry! This offer ends in 2 hours!"
+        ],
+        "buttons": [
+          "Start Free Trial",
+          "Keep TuneTide Free"
+        ]
+      },
+      "picture": "🎵📱💳",
+      "topics": [
+        "music",
+        "money",
+        "safety"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Free Trial",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p22",
+      "title": "Tunnel Tour Safety",
+      "kind": "notice",
+      "sentences": [
+        "Maya visits the Ridgeway Mine Museum with her dad.",
+        "Before the tunnel tour, they read this sign at the gate."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Ridgeway Mine: Tunnel Tour Safety",
+        "icon": "⛏️",
+        "rows": [
+          "Everyone must wear a hard hat in the tunnel. Pick one up at the gate.",
+          "Wear closed shoes. The tunnel floor is wet and uneven.",
+          "No closed shoes? Borrow a pair of rubber boots at the gate.",
+          "The tunnel stays at about 50°F all year. Bring a jacket, even in summer.",
+          "Stay on the path between the yellow ropes. The old side tunnels are closed.",
+          "Do not pick up rocks in the tunnel. You may take one rock from the Free Rock Bin at the gift shop.",
+          "Visitors under 12 must stay next to their adult for the whole tour.",
+          "If the tunnel lights go out, stand still. Your guide will turn on the backup lights."
+        ]
+      },
+      "picture": "⛏️⛑️🪨",
+      "topics": [
+        "mining",
+        "safety"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Tunnel Tour Safety",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p23",
+      "title": "The Tide Board at Gull Point",
+      "kind": "notice",
+      "sentences": [
+        "Sam, Pixel and Grandma Rose reach Gull Point at 11:40 AM.",
+        "They read the board by the beach stairs."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Gull Point Beach: Today's Tides and Warnings",
+        "icon": "🌊",
+        "rows": [
+          "Low tide: 12:30 PM. High tide: 6:45 PM.",
+          "Tide pools are open from 2 hours before low tide until 1 hour after low tide.",
+          "After that, the rising water covers the path back to the stairs.",
+          "Rip current warning: no swimming at the north end, by the red flags.",
+          "A rip current is a strong, narrow stream of water that flows away from the shore.",
+          "If a current pulls you, swim sideways, along the beach, not against it. Then wave to a lifeguard.",
+          "Swim only between the green flags. Lifeguards are there from 10:00 AM to 5:00 PM.",
+          "Dogs must be on a leash. Dogs are not allowed in the tide pools.",
+          "Look at sea stars and crabs, then leave them where you found them."
+        ]
+      },
+      "picture": "🌊🚩🦀",
+      "topics": [
+        "ocean",
+        "nature",
+        "safety"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Tide Board at Gull Point",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p24",
+      "title": "Story Woods Trail Notice",
+      "kind": "notice",
+      "sentences": [
+        "From April 1 to June 15, the Creek Trail in Story Woods is closed between the old mill and the campsite.",
+        "A pair of great blue herons has built a large nest of sticks high in a pine tree beside the trail.",
+        "Herons are easily disturbed while they are nesting, and if people walk too close, the parents may leave and the eggs can get cold.",
+        "Park rangers have put up a rope fence and orange signs at both ends of the closed section.",
+        "Hikers can still reach the campsite by using the Ridge Trail, which is the only other route.",
+        "The Ridge Trail is 1.5 miles longer than the Creek Trail, and it climbs a steep, rocky hill.",
+        "Allow about 45 extra minutes of walking, and carry additional water on warm afternoons.",
+        "Cyclists may use the Ridge Trail, but they must walk their bikes up the steepest section.",
+        "During the nesting season, dogs must remain on a leash on every trail in Story Woods.",
+        "Visitors who would like to observe the herons can use the viewing deck behind the old mill.",
+        "The deck is about 300 feet from the nest, a distance that keeps the birds calm.",
+        "Free binoculars hang on hooks at the deck, and a ranger answers questions there on Saturday mornings.",
+        "Please speak quietly on the deck, and never use a camera flash, because a sudden light can startle the birds.",
+        "The trail may reopen early if the young herons leave the nest before June 15.",
+        "Rangers will post any change on the information board in the Story Woods parking lot.",
+        "Thank you for helping the herons raise their chicks in peace."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "picture": "🌲🐦🚧",
+      "topics": [
+        "nature",
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Story Woods Trail Notice",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -502,6 +1026,962 @@
       "explain": "First Sam closes the box. Then he texts Mom to tell an adult. The last rule says to close a prize box and then tell an adult.",
       "inference": 1,
       "tags": ["prize-popup", "multi-step", "rules"]
+    },
+    {
+      "id": "f6-i18",
+      "skill": "F6",
+      "passage": "f6-p10",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Sam wants to keep his ears safe. Tap the button he should press.",
+      "unit": "row",
+      "answer": [4],
+      "evidence": [1, 4],
+      "hint": "Read the line about your hearing. Then read both buttons.",
+      "explain": "Tap Lower Volume Now. The box says loud sound for a long time can hurt your hearing, so a lower volume keeps Sam's ears safe.",
+      "inference": 1,
+      "tags": ["volume", "button", "health"]
+    },
+    {
+      "id": "f6-i19",
+      "skill": "F6",
+      "passage": "f6-p10",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam does not tap either button. What will happen in 30 seconds?",
+      "options": ["The volume will go down by itself.", "The podcast will stop.", "The tablet will turn off.", "The volume will get louder."],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Find the line with the number 30. Read what it says will happen.",
+      "explain": "The volume will go down by itself. The third line says this happens in 30 seconds if you do nothing.",
+      "inference": 0,
+      "tags": ["what-happens-next", "volume"]
+    },
+    {
+      "id": "f6-i20",
+      "skill": "F6",
+      "passage": "f6-p11",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya's mom says, \"People you have never met should not be able to message you or find out where you live.\" Which two settings should Maya change?",
+      "options": [
+        "Who can send me messages, and Add my town to each drawing I post",
+        "Let the app use my camera, and Find friends from my contacts list",
+        "Show ads based on what I draw, and Who can see my drawings",
+        "Find friends from my contacts list, and Add my town to each drawing I post"
+      ],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Mom names two worries: messages from people you have never met, and where you live. Find the setting for each worry. Read the note to see what Everyone means.",
+      "explain": "Maya should change Who can send me messages and Add my town to each drawing I post. Messages are set to Everyone, which the note says includes people she has never met, and adding her town tells people where she lives.",
+      "inference": 2,
+      "tags": ["privacy", "location", "messages", "combine-parts"]
+    },
+    {
+      "id": "f6-i21",
+      "skill": "F6",
+      "passage": "f6-p11",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Maya and her mom pick a choice for each setting. Sort the choices.",
+      "bins": ["Safer choice", "Riskier choice"],
+      "cards": [
+        { "text": "Who can send me messages: Friends", "bin": 0, "emoji": "💬" },
+        { "text": "Who can send me messages: Everyone", "bin": 1, "emoji": "💬" },
+        { "text": "Add my town: Off", "bin": 0, "emoji": "📍" },
+        { "text": "Add my town: On", "bin": 1, "emoji": "📍" },
+        { "text": "Let the app use my camera: Ask every time", "bin": 0, "emoji": "📷" },
+        { "text": "Let the app use my camera: Always", "bin": 1, "emoji": "📷" }
+      ],
+      "evidence": [1, 2, 3],
+      "hint": "For each card, ask two questions. Can people I have never met reach me or find me? Can the app do something without asking me first?",
+      "explain": "Friends for messages, town Off and camera Ask every time are the safer choices. Everyone, town On and camera Always let more people reach or find Maya, or let the app use the camera without asking. Each choice is in the rows for messages, town and camera.",
+      "inference": 2,
+      "tags": ["privacy", "permission", "compare"],
+      "transfer": true
+    },
+    {
+      "id": "f6-i22",
+      "skill": "F6",
+      "passage": "f6-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben is 12 years old. He wants the Big pack. What is the safe thing to do?",
+      "options": [
+        "Tap Buy Now, because the Big pack is the best value",
+        "Tap Ask a Parent, so a parent can say yes or no first",
+        "Buy the Small pack instead, because it costs only $1",
+        "Tap Buy Now and tell a parent about it tomorrow"
+      ],
+      "answer": 1,
+      "evidence": [4, 5],
+      "hint": "Find the line about players under 13. Then find the button that does what that line needs.",
+      "explain": "Ben should tap Ask a Parent. He is under 13, so a parent must approve each purchase, and Ask a Parent sends a request with no charge until a parent says yes.",
+      "inference": 1,
+      "tags": ["purchase", "ask-adult", "real-money", "combine-parts"]
+    },
+    {
+      "id": "f6-i23",
+      "skill": "F6",
+      "passage": "f6-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben wants the Rocket Drill. His mom says no to buying gems this week. What can he do instead?",
+      "options": [
+        "Tap Buy Now on the Small pack",
+        "Finish the Daily Build on 3 days",
+        "Finish the Daily Build on 5 days",
+        "Tap Ask a Parent again for the Big pack"
+      ],
+      "answer": 1,
+      "evidence": [7, 8],
+      "hint": "First work out how many more gems Ben needs. Then find the line about free gems and count the days.",
+      "explain": "Ben can finish the Daily Build on 3 days. The last line says he has 40 gems and the Rocket Drill costs 100, so he needs 60 more. The free gems line says he earns 20 each day, and 20 + 20 + 20 = 60.",
+      "inference": 1,
+      "tags": ["purchase", "free-option", "simple-math", "problem-solving"]
+    },
+    {
+      "id": "f6-i24",
+      "skill": "F6",
+      "passage": "f6-p13",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben is signing in on his new laptop, so he types the code. Then a player sends him a chat: \"I work for Block Builder. Tell me your code so I can check your account.\" What should Ben do?",
+      "options": [
+        "Tell the player the code, because he works for Block Builder",
+        "Keep the code secret and show the chat to his mom",
+        "Tell the player only half of the code",
+        "Wait 10 minutes, then tell the player the old code"
+      ],
+      "answer": 1,
+      "evidence": [3],
+      "hint": "Find the line that says who may ask for the code. Compare it with what the player says.",
+      "explain": "Ben should keep the code secret and show the chat to his mom. The fourth line says never to tell the code to anyone, and Block Builder staff will never ask for it in a chat.",
+      "inference": 1,
+      "tags": ["two-factor", "password", "stranger", "compare"]
+    },
+    {
+      "id": "f6-i25",
+      "skill": "F6",
+      "passage": "f6-p13",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben is at soccer practice when this text comes. Nobody at home is using his laptop. What should Ben and his mom do?",
+      "options": [
+        "Type the code on the sign-in screen",
+        "Not type the code, then tap Secure My Account and change the password together",
+        "Send the code back to Block Builder in a text",
+        "Do nothing, because the code stops working in 10 minutes"
+      ],
+      "answer": 1,
+      "evidence": [1, 4],
+      "hint": "First decide: is Ben the one signing in? Then find the line for that case.",
+      "explain": "They should not type the code, and they should tap Secure My Account and change the password together. Ben is not the one signing in, and the fifth line tells what to do when it is not you.",
+      "inference": 1,
+      "tags": ["two-factor", "not-me", "compare"]
+    },
+    {
+      "id": "f6-i26",
+      "skill": "F6",
+      "passage": "f6-p14",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Priya checks the email for clues. Sort each part.",
+      "bins": ["Clue that it is a trick", "Could be in a real email too"],
+      "cards": [
+        { "text": "Says the account will close in 24 hours unless she acts now", "bin": 0, "emoji": "⏰" },
+        { "text": "Asks for her password and a card number", "bin": 0, "emoji": "🔑" },
+        { "text": "Tells her to keep the email a secret", "bin": 0, "emoji": "🤫" },
+        { "text": "Promises a free $200 rover kit", "bin": 0, "emoji": "🎁" },
+        { "text": "Uses the shop's name, RoboParts", "bin": 1, "emoji": "🏪" },
+        { "text": "Says it is sorry for the trouble", "bin": 1, "emoji": "🙏" },
+        { "text": "Is signed The RoboParts Team", "bin": 1, "emoji": "✍️" }
+      ],
+      "evidence": [3, 4, 7, 8],
+      "hint": "For each card, ask: does it rush me, ask for a password or money, promise a big prize, or ask me to keep a secret? If not, any email could say it.",
+      "explain": "Rushing her, asking for her password and a card number, promising a big prize and asking for a secret are clues that it is a trick. Using the shop's name, saying sorry and signing as the team could be in any email, so they do not prove it is real.",
+      "inference": 2,
+      "tags": ["phishing", "clues", "password", "hurry", "secret"],
+      "transfer": true
+    },
+    {
+      "id": "f6-i27",
+      "skill": "F6",
+      "passage": "f6-p14",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What should Priya do with this email?",
+      "options": [
+        "Click the link quickly, before the 24 hours are up",
+        "Reply with only her username, not her password",
+        "Show it to a parent and not click the link",
+        "Send it to her friends so they can win a rover kit too"
+      ],
+      "answer": 2,
+      "evidence": [4, 8],
+      "hint": "Look at what the email asks her to type and what it asks her to keep secret. Then think about the rule for passwords.",
+      "explain": "Priya should show it to a parent and not click the link. The email asks for her password and a card number and tells her to keep it a secret. A real shop never asks for a password in an email.",
+      "inference": 2,
+      "tags": ["phishing", "password", "ask-adult", "secret"]
+    },
+    {
+      "id": "f6-i28",
+      "skill": "F6",
+      "passage": "f6-p15",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam's battery is at 35%, and his map is not saved. He needs the tablet for homework in 20 minutes. What is the best plan?",
+      "options": [
+        "Tap Install Now, because 35% battery is enough",
+        "Save the map, tap Install Tonight, and plug the tablet in before bed",
+        "Tap Install Now, and save the map while the update runs",
+        "Tap Install Now, and turn the tablet off if the screen goes black"
+      ],
+      "answer": 1,
+      "evidence": [1, 4, 5, 6, 9],
+      "hint": "Check four things: how long the update takes, how much battery it needs, what happens to open apps, and when he needs the tablet. Then find the plan that fits all four.",
+      "explain": "Sam should save his map, tap Install Tonight and plug the tablet in before bed. The update needs 50% battery or a plug, closes open apps, and takes about 25 minutes, but he needs the tablet in 20 minutes.",
+      "inference": 1,
+      "tags": ["update", "battery", "save-first", "combine-parts"]
+    },
+    {
+      "id": "f6-i29",
+      "skill": "F6",
+      "passage": "f6-p15",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam chose Install Tonight. He wakes up at 2:10 AM and sees that his tablet screen is black. What should he do?",
+      "options": [
+        "Leave it plugged in and go back to sleep, because a black screen during a restart is normal",
+        "Hold the power button to turn the tablet off",
+        "Unplug the tablet, because the update must be finished",
+        "Tap Remind Me Later to stop the update"
+      ],
+      "answer": 0,
+      "evidence": [2, 3, 9],
+      "hint": "Find the line about the screen going black. Then find the line about turning the tablet off.",
+      "explain": "Sam should leave it plugged in and go back to sleep. The box says the screen may stay black for up to 2 minutes during each restart, that this is normal, and not to turn the tablet off while it installs.",
+      "inference": 1,
+      "tags": ["update", "restart", "stay-calm", "do-not-turn-off"]
+    },
+    {
+      "id": "f6-i30",
+      "skill": "F6",
+      "passage": "f6-p16",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What does DinoWalk want to use?",
+      "options": [
+        "The camera",
+        "The microphone",
+        "Your location"
+      ],
+      "pictures": [
+        "📷",
+        "🎤",
+        "📍"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the first line in the box. Find the word that names a part of the tablet.",
+      "explain": "DinoWalk wants to use the camera. The first line says it uses your camera to show a dinosaur in your room.",
+      "inference": 0,
+      "tags": [
+        "permission",
+        "camera"
+      ]
+    },
+    {
+      "id": "f6-i31",
+      "skill": "F6",
+      "passage": "f6-p16",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben's mom is busy. Ben wants to see the Velociraptor right now. What should he do?",
+      "options": [
+        "Tap Allow now and tell his mom later",
+        "Wait and ask his mom before he taps Allow",
+        "Tap the dinosaur to take a photo"
+      ],
+      "pictures": [
+        "✅",
+        "🙋",
+        "📸"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Read what the box asks for. Is the camera something you allow by yourself?",
+      "explain": "Ben should wait and ask his mom before he taps Allow. The box asks to use his camera, and you ask an adult before you allow an app to use it.",
+      "inference": 2,
+      "tags": [
+        "permission",
+        "camera",
+        "ask-adult",
+        "wait"
+      ]
+    },
+    {
+      "id": "f6-i32",
+      "skill": "F6",
+      "passage": "f6-p17",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam's map falls off the platform onto the tracks. What should he do?",
+      "options": [
+        "Climb down fast and get it before a train comes",
+        "Lie down at the edge and reach for it",
+        "Tell a station worker in an orange vest",
+        "Ask Grandma Rose to climb down for it"
+      ],
+      "pictures": [
+        "🧗",
+        "🤚",
+        "🦺",
+        "👵"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line that starts with If you drop something. Read both parts of it.",
+      "explain": "Sam should tell a station worker in an orange vest. The fifth line says not to climb down and to tell a station worker.",
+      "inference": 0,
+      "tags": [
+        "dropped-item",
+        "tell-adult",
+        "safety-rule"
+      ]
+    },
+    {
+      "id": "f6-i33",
+      "skill": "F6",
+      "passage": "f6-p17",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put Sam's steps in order to get on the train safely.",
+      "steps": [
+        "Stand behind the yellow line.",
+        "Wait until the train stops.",
+        "Let people get off the train.",
+        "Watch the gap and step on."
+      ],
+      "evidence": [
+        0,
+        2,
+        3
+      ],
+      "hint": "Look for the words until and before in the rules. They tell you what comes first.",
+      "explain": "First Sam stands behind the yellow line until the train stops. Then he lets people get off, and last he watches the gap as he steps on. The order comes from the first, third and fourth rules.",
+      "inference": 1,
+      "tags": [
+        "sequence",
+        "safety-rule"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i34",
+      "skill": "F6",
+      "passage": "f6-p18",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Priya reads the rules. Sort each thing she might do.",
+      "bins": [
+        "OK at the touch tank",
+        "Not OK"
+      ],
+      "cards": [
+        {
+          "text": "Touch a sea star with two fingers",
+          "bin": 0,
+          "emoji": "⭐"
+        },
+        {
+          "text": "Lift a hermit crab out of the water",
+          "bin": 1,
+          "emoji": "🦀"
+        },
+        {
+          "text": "Touch a sea urchin",
+          "bin": 1,
+          "emoji": "🟣"
+        },
+        {
+          "text": "Rinse her hands with plain water first",
+          "bin": 0,
+          "emoji": "💧"
+        },
+        {
+          "text": "Wash her hands with soap at the end",
+          "bin": 0,
+          "emoji": "🧼"
+        },
+        {
+          "text": "Put on sunscreen just before she touches",
+          "bin": 1,
+          "emoji": "🧴"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "Match each card to one rule. Does the rule say to do it, or say not to?",
+      "explain": "Touching a sea star with two fingers, rinsing with water first and washing with soap at the end follow the rules. Lifting a crab out, touching an urchin and putting on sunscreen right before break the rules about keeping animals in the water, sharp spines and lotion or sunscreen.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "compare"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i35",
+      "skill": "F6",
+      "passage": "f6-p18",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya just put lotion on her hands. She wants to touch a sea star. What should she do?",
+      "options": [
+        "Touch the sea star right away with two fingers",
+        "Rinse her hands with plain water, then touch gently with two fingers",
+        "Ask a staff member to lift the sea star out for her",
+        "Touch it with one finger, so less lotion gets on it"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Find the rule about lotion. Then find the rule about how to touch.",
+      "explain": "Maya should rinse her hands with plain water, then touch gently with two fingers. The first rule says lotion can harm the animals, and the second says to touch with two fingers.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "rules"
+      ]
+    },
+    {
+      "id": "f6-i36",
+      "skill": "F6",
+      "passage": "f6-p19",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Bright flashing lights bother Maya. What can she do before the show starts?",
+      "options": [
+        "Bring her flashlight into the dome",
+        "Sit in the middle of the dome",
+        "Ask for a seat by the exit door",
+        "Hold up her phone to block the light"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the line that starts with If flashing lights bother you.",
+      "explain": "Maya can ask for a seat by the exit door. The third line says this, and it says she may step out and come back in.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "choice"
+      ]
+    },
+    {
+      "id": "f6-i37",
+      "skill": "F6",
+      "passage": "f6-p19",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam needs to leave during the show. How should he find the way out?",
+      "options": [
+        "Turn on his phone light",
+        "Follow the small blue lights on the floor and walk slowly",
+        "Run to the door before the lights flash",
+        "Ask a friend to shine a flashlight"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the line about leaving. Then check the line about phones and flashlights.",
+      "explain": "Sam should follow the small blue lights on the floor and walk slowly. The fourth line says this, and the fifth line says no phones or flashlights during the show.",
+      "inference": 0,
+      "tags": [
+        "rules",
+        "safe-action"
+      ]
+    },
+    {
+      "id": "f6-i38",
+      "skill": "F6",
+      "passage": "f6-p20",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What does this alert mean for Ana and Ben's practice at 4:30 PM?",
+      "options": [
+        "Practice is still on, because the warning ends at 6:00 PM",
+        "Practice is canceled, because outdoor practices stop from 3:30 PM to 6:00 PM",
+        "Practice moves into the picnic shelter at the field",
+        "Practice starts early, at 3:30 PM, before the storm comes"
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line about outdoor games and practices. Check whether 4:30 PM is inside its times.",
+      "explain": "Practice is canceled. The sixth line cancels outdoor practices from 3:30 PM to 6:00 PM, and 4:30 PM is between those times.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "time-window",
+        "weather-alert"
+      ]
+    },
+    {
+      "id": "f6-i39",
+      "skill": "F6",
+      "passage": "f6-p20",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The last thunder was at 5:55 PM. At 6:10 PM, the rain has stopped and the warning is over. When is it safe for the twins to kick a ball in the yard?",
+      "options": [
+        "Right away, because the warning ended at 6:00 PM",
+        "Right away, because the rain has stopped",
+        "At 6:25 PM",
+        "At 6:55 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "The rain and the warning are not the rule here. Find the line about the last thunder, then add the minutes it gives.",
+      "explain": "It is safe at 6:25 PM. The fifth line says to stay inside until 30 minutes after the last thunder, and 5:55 PM plus 30 minutes is 6:25 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "two-conditions",
+        "safe-action"
+      ]
+    },
+    {
+      "id": "f6-i40",
+      "skill": "F6",
+      "passage": "f6-p20",
+      "format": "scene",
+      "level": 4,
+      "prompt": "The storm reaches the skate park. Leo hears thunder. Tap the safest place for him to go.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Under the big oak tree",
+          "emoji": "🌳"
+        },
+        {
+          "label": "The open picnic shelter",
+          "emoji": "⛱️"
+        },
+        {
+          "label": "The dugout by the ball field",
+          "emoji": "⚾"
+        },
+        {
+          "label": "The library building across the street",
+          "emoji": "🏛️"
+        }
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Read the line about where to go when you hear thunder. Then read the line about places that are not safe.",
+      "explain": "Leo should go to the library building. The alert says to go inside a building, and it says a tree, a picnic shelter and a dugout do not keep you safe from lightning.",
+      "inference": 1,
+      "tags": [
+        "safe-action",
+        "lightning",
+        "place"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i41",
+      "skill": "F6",
+      "passage": "f6-p21",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Suppose Leo starts the free trial and forgets to cancel. What happens after 7 days?",
+      "options": [
+        "The trial ends, and nothing is charged",
+        "The card is charged $9 one time only",
+        "He gets 7 more free days",
+        "The card is charged $9, and then $9 again every month"
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        4
+      ],
+      "hint": "Find the line that starts with After 7 days. Then find the line that tells how to stop paying.",
+      "explain": "The card is charged $9, and then $9 again every month. The third line says you pay $9 every month until you cancel, and the fifth line says you must cancel before day 7 ends to stop paying.",
+      "inference": 1,
+      "tags": [
+        "free-trial",
+        "real-money",
+        "what-happens-next"
+      ]
+    },
+    {
+      "id": "f6-i42",
+      "skill": "F6",
+      "passage": "f6-p21",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Leo checks the box before he taps anything. Sort each part.",
+      "bins": [
+        "A reason to slow down and ask an adult",
+        "Plain information"
+      ],
+      "cards": [
+        {
+          "text": "It asks for a card number",
+          "bin": 0,
+          "emoji": "💳"
+        },
+        {
+          "text": "It says the offer ends in 2 hours",
+          "bin": 0,
+          "emoji": "⏰"
+        },
+        {
+          "text": "It charges $9 every month after day 7",
+          "bin": 0,
+          "emoji": "💵"
+        },
+        {
+          "text": "You must remember to cancel to stop paying",
+          "bin": 0,
+          "emoji": "📅"
+        },
+        {
+          "text": "TuneTide Free has short ads between songs",
+          "bin": 1,
+          "emoji": "🎵"
+        },
+        {
+          "text": "TuneTide Free costs $0",
+          "bin": 1,
+          "emoji": "🆓"
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "hint": "For each card, ask: does it rush me, or could it cost real money? If yes, slow down and ask an adult.",
+      "explain": "The card number, the 2-hour rush, the $9 every month and the need to cancel are reasons to slow down and ask an adult, because they rush Leo or cost real money. The lines about TuneTide Free are plain information about the $0 choice.",
+      "inference": 2,
+      "tags": [
+        "free-trial",
+        "clues",
+        "hurry",
+        "real-money"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i43",
+      "skill": "F6",
+      "passage": "f6-p21",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo wants music today. He cannot spend any money, and no adult is home to ask. Which choice is safe?",
+      "options": [
+        "Tap Start Free Trial, then cancel tomorrow",
+        "Tap Keep TuneTide Free",
+        "Tap Start Free Trial, because nothing is charged today",
+        "Tap Start Free Trial and use a card number he finds at home"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        5,
+        8
+      ],
+      "hint": "Leo has two conditions: no money, and no adult to ask. Check what each button needs before it works.",
+      "explain": "Leo should tap Keep TuneTide Free. The free trial needs a card number, which means real money and an adult. TuneTide Free plays songs for $0.",
+      "inference": 1,
+      "tags": [
+        "button",
+        "two-conditions",
+        "safe-action",
+        "free-trial"
+      ]
+    },
+    {
+      "id": "f6-i44",
+      "skill": "F6",
+      "passage": "f6-p22",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya is 11, and she is wearing sandals. What must she do to go on the tunnel tour?",
+      "options": [
+        "Wear a hard hat and walk at the front with the guide",
+        "Borrow rubber boots, wear a hard hat, and stay next to her dad",
+        "Borrow rubber boots and a hard hat, then walk the tour by herself",
+        "Skip the tour, because sandals are not allowed in the tunnel"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "hint": "Check three rules: the one for everyone, the one about shoes, and the one about age.",
+      "explain": "Maya must borrow rubber boots, wear a hard hat and stay next to her dad. Everyone wears a hard hat, visitors without closed shoes can borrow boots, and visitors under 12 stay next to their adult.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "combine-parts",
+        "age-rule"
+      ]
+    },
+    {
+      "id": "f6-i45",
+      "skill": "F6",
+      "passage": "f6-p22",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya sees a shiny gold-colored rock on the tunnel floor. She wants a rock to take home. What should she do?",
+      "options": [
+        "Pick it up, because it might be real gold",
+        "Step past the yellow ropes to look for a bigger one",
+        "Ask the guide to pick it up for her",
+        "Leave it there, and take one rock from the Free Rock Bin at the gift shop"
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the rule about rocks. It has two parts: what not to do, and what you may do instead.",
+      "explain": "Maya should leave it there and take one rock from the Free Rock Bin. The rule says not to pick up rocks in the tunnel, and you may take one rock from the bin at the gift shop.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "problem-solving",
+        "choose-instead"
+      ]
+    },
+    {
+      "id": "f6-i46",
+      "skill": "F6",
+      "passage": "f6-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "They reach Gull Point at 11:40 AM. What is the latest time they can stay at the tide pools?",
+      "options": [
+        "10:30 AM",
+        "12:30 PM",
+        "1:30 PM",
+        "6:45 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Find the time of low tide. Then read the rule about when the tide pools close, and add the time it gives.",
+      "explain": "They can stay until 1:30 PM. Low tide is at 12:30 PM, and the tide pools are open until 1 hour after low tide. After that, the water covers the path back to the stairs.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "combine-parts",
+        "tide"
+      ]
+    },
+    {
+      "id": "f6-i47",
+      "skill": "F6",
+      "passage": "f6-p23",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Grandma Rose wants to swim after lunch. Which plan follows the board?",
+      "options": [
+        "Swim between the green flags at 5:30 PM",
+        "Swim between the green flags at 3:00 PM",
+        "Swim by the red flags at 3:00 PM",
+        "Swim at the north end at 11:00 AM"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        6
+      ],
+      "hint": "A safe swim needs two things: the right place and the right time. Check each plan for both.",
+      "explain": "She should swim between the green flags at 3:00 PM. The board says to swim only between the green flags, and lifeguards are there from 10:00 AM to 5:00 PM. The red flags at the north end mark the rip current.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "safe-action",
+        "time-window",
+        "place"
+      ]
+    },
+    {
+      "id": "f6-i48",
+      "skill": "F6",
+      "passage": "f6-p23",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sam, Pixel and Grandma Rose spend the day at Gull Point. Sort what they do.",
+      "bins": [
+        "Follows the board",
+        "Breaks a rule"
+      ],
+      "cards": [
+        {
+          "text": "Pixel walks on a leash on the sand",
+          "bin": 0,
+          "emoji": "🐕"
+        },
+        {
+          "text": "Pixel splashes in a tide pool",
+          "bin": 1,
+          "emoji": "💦"
+        },
+        {
+          "text": "Sam looks at a crab, then leaves it in its pool",
+          "bin": 0,
+          "emoji": "🦀"
+        },
+        {
+          "text": "Sam takes a sea star home in a bucket",
+          "bin": 1,
+          "emoji": "⭐"
+        },
+        {
+          "text": "They stay on the rocks until 2:00 PM",
+          "bin": 1,
+          "emoji": "🕑"
+        },
+        {
+          "text": "They walk back up the stairs at 1:15 PM",
+          "bin": 0,
+          "emoji": "🪜"
+        }
+      ],
+      "evidence": [
+        1,
+        7,
+        8
+      ],
+      "hint": "Match each card to a rule about dogs, animals or tide pool times. For the times, work out when the tide pools close.",
+      "explain": "Walking Pixel on a leash, leaving the crab and going back at 1:15 PM follow the board. Pixel in a tide pool, taking a sea star and staying until 2:00 PM break the rules, because dogs stay out of the pools, animals stay where you found them, and the pools close at 1:30 PM.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "compare",
+        "dogs",
+        "time-window"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i49",
+      "skill": "F6",
+      "passage": "f6-p24",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On May 10, Sam wants to walk with Pixel from the old mill to the campsite. Which plan follows the notice?",
+      "options": [
+        "Take the Creek Trail with Pixel on a leash, because leashed dogs are allowed",
+        "Take the Ridge Trail with Pixel on a leash, and allow about 45 extra minutes",
+        "Take the Ridge Trail, and let Pixel off the leash on the steepest section",
+        "Wait until June 15, because every trail in Story Woods is closed"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        4,
+        6,
+        8
+      ],
+      "hint": "Check the dates of the closing first. Then find the other way to the campsite and the rule for dogs.",
+      "explain": "Sam should take the Ridge Trail with Pixel on a leash and allow about 45 extra minutes. May 10 is inside the closing, the second paragraph names the Ridge Trail as the only other route and gives the extra time, and dogs must remain on a leash on every trail.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "combine-parts",
+        "dogs",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i50",
+      "skill": "F6",
+      "passage": "f6-p24",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya wants to draw the herons. Which plan follows the notice?",
+      "options": [
+        "Walk past the rope fence to get a closer view of the nest",
+        "Go to the viewing deck, take photos with a flash, and draw from the photos",
+        "Wait at the parking lot board until the trail opens",
+        "Go to the viewing deck behind the old mill, borrow binoculars, and draw quietly"
+      ],
+      "answer": 3,
+      "evidence": [
+        9,
+        11,
+        12
+      ],
+      "hint": "Read the paragraph about seeing the herons. Check each plan against every rule in it.",
+      "explain": "Maya should go to the viewing deck, borrow binoculars and draw quietly. The third paragraph says to visit the deck, that free binoculars hang there, and to speak quietly and never use a camera flash.",
+      "inference": 1,
+      "tags": [
+        "choose-instead",
+        "rules",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i51",
+      "skill": "F6",
+      "passage": "f6-p24",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Leo asks why people must stay away from the nest. Tap the sentence that gives the reason.",
+      "unit": "sentence",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Read the first paragraph. Look for a sentence that says what could happen if people walk too close.",
+      "explain": "Tap the sentence that says herons are easily disturbed while nesting, and if people walk too close, the parents may leave and the eggs can get cold. It is in the first paragraph.",
+      "inference": 0,
+      "tags": [
+        "key-detail",
+        "reason"
+      ],
+      "transfer": true
     }
   ],
   "model": {

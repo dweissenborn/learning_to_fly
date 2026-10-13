@@ -14,6 +14,8 @@ import { Adult } from './Adult';
 import { Btn } from './ui';
 import { finishedCount, journeyNow, JourneyMap, LegDots } from './journey';
 import { setSound, setVoice } from './media';
+import { isFamily, useCloudSync } from './cloud';
+import { WhoIsLearning } from './CloudScreens';
 
 type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'map';
 
@@ -48,13 +50,17 @@ export class Safe extends Component<{ children: ReactNode }, { failed: boolean }
 export function App() {
   const settings = useSettings();
   const events = useEvents();
-  const progress = useProgress(events);
+  const progress = useProgress(events, settings?.fastTrack ?? true);
   const [screen, setScreen] = useState<Screen>('home');
   const [dialog, setDialog] = useState<null | 'comfort' | 'shelf'>(null);
+  const cloud = useCloudSync();
+  const [newHere, setNewHere] = useState(false);
   useApplySettings(settings);
   useEffect(() => { applyRetention(); }, []);
 
-  if (!settings || !events) return <div className="center" style={{ minHeight: '100vh' }}><span style={{ width: 80 }}><BrandMark /></span></div>;
+  // A device with no learner yet waits for the sign-in check, so it can offer the learners saved in the cloud.
+  const deciding = settings && !settings.onboarded && (!cloud.checked || cloud.link === undefined);
+  if (!settings || !events || deciding) return <div className="center" style={{ minHeight: '100vh' }}><span style={{ width: 80 }}><BrandMark /></span></div>;
   const go = (s: Screen) => {
     // A view transition waits for a drawn frame, so only animate when the app is in front; otherwise switch at once.
     const calm = document.documentElement.dataset.motion !== 'full' || !('startViewTransition' in document) || !document.hasFocus();
@@ -63,6 +69,8 @@ export function App() {
     window.scrollTo({ top: 0 });
   };
 
+  if (!settings.onboarded && screen !== 'rescout' && isFamily(cloud.me) && !cloud.link && !newHere)
+    return <div className="shell"><WhoIsLearning onNew={() => setNewHere(true)} /></div>;
   if (!settings.onboarded || screen === 'rescout')
     return <div className="shell"><Onboarding settings={settings} startAt={screen === 'rescout' ? 'scout' : 'hello'} onDone={() => go('home')} /></div>;
   if (screen === 'session') return <div className="shell"><Session settings={settings} events={events} progress={progress} onExit={() => go('home')} /></div>;

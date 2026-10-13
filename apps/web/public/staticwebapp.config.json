@@ -69,5 +69,8 @@
     "Referrer-Policy": "no-referrer",
     "X-Content-Type-Options": "nosniff",
     "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+  },
+  "platform": {
+    "apiRuntime": "node:22"
   }
 }
