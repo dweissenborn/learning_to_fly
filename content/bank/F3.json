@@ -2181,6 +2181,11 @@
         ]
       },
       "picture": "🔭🚀",
+      "words": [
+        { "word": "observatory", "means": "a building with big tools for looking at the sky", "pic": "🔭" },
+        { "word": "astronomer", "means": "a scientist who studies stars and planets", "pic": "🪐" },
+        { "word": "forecast", "means": "a report of what the weather will likely be", "pic": "🌦️" }
+      ],
       "topics": [
         "space"
       ],
@@ -2588,6 +2593,11 @@
         ]
       },
       "picture": "🦴⛏️",
+      "words": [
+        { "word": "fossils", "means": "very old bones or shapes left in rock", "pic": "🦴" },
+        { "word": "picks", "means": "small pointed tools for breaking up rock", "pic": "⛏️" },
+        { "word": "cast", "means": "a copy made by pouring wet paste that dries hard", "pic": "🦷" }
+      ],
       "topics": [
         "dinosaurs"
       ],
@@ -3065,6 +3075,11 @@
         ]
       },
       "picture": "⛵🌩️",
+      "words": [
+        { "word": "hourly", "means": "with one row for each sixty minutes", "pic": "🕐" },
+        { "word": "steer", "means": "to make a boat go the way you want", "pic": "🧭" },
+        { "word": "forecast", "means": "a report of what the weather will likely be", "pic": "🌦️" }
+      ],
       "topics": [
         "weather"
       ],
@@ -3384,6 +3399,11 @@
         ]
       },
       "picture": "🚌⛰️🥾",
+      "words": [
+        { "word": "shuttle", "means": "a bus that goes back and forth on one route", "pic": "🚌" },
+        { "word": "private", "means": "owned by people, not by the park", "pic": "🚗" },
+        { "word": "due", "means": "set to come at that time", "pic": "⏰" }
+      ],
       "topics": [
         "nature",
         "transport"
@@ -3474,6 +3494,677 @@
         "source": "Written for Learning to Fly",
         "licence": "original",
         "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p08",
+      "title": "After-School Clubs",
+      "kind": "schedule",
+      "picture": "🏫🤖",
+      "sentences": [
+        "Priya goes to robotics club every week.",
+        "This week, she is busy on Tuesday after school."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Middle School: After-School Clubs",
+        "note": "All clubs end at 4:30 PM. Sign in at the office first.",
+        "columns": ["Club", "Day", "Room"],
+        "rows": [
+          ["Chess club", "Monday", "Library"],
+          ["Robotics club", "Tuesday and Thursday", "Room 12"],
+          ["Art club", "Wednesday", "Room 4"],
+          ["Running club", "Thursday", "Gym"]
+        ]
+      },
+      "topics": ["school", "robots"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "After-School Clubs",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p12",
+      "title": "Bus and Shuttle to the Observatory",
+      "kind": "timetable",
+      "picture": "🚌🔭",
+      "sentences": [
+        "Sam wants to hear the 7:30 PM star talk at the Lantern Peaks observatory.",
+        "He takes Bus 3 and then the shuttle."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Bus 3 and Lookout Shuttle: Evenings",
+        "note": "Change from Bus 3 to the shuttle at Peak Road.",
+        "columns": [
+          "Bus 3 leaves bus station",
+          "Bus 3 reaches Peak Road",
+          "Shuttle leaves Peak Road",
+          "Shuttle reaches observatory"
+        ],
+        "rows": [
+          ["5:40 PM", "6:05 PM", "6:15 PM", "6:35 PM"],
+          ["6:10 PM", "6:35 PM", "6:45 PM", "7:05 PM"],
+          ["6:40 PM", "7:05 PM", "7:15 PM", "7:35 PM"],
+          ["7:10 PM", "7:35 PM", "7:45 PM", "8:05 PM"]
+        ]
+      },
+      "topics": ["transport", "space"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bus and Shuttle to the Observatory",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p08",
+      "title": "Gull Island Saturday Programs",
+      "kind": "schedule",
+      "picture": "🗓️🦀",
+      "sentences": ["Sam gets to Gull Island at 9:40 AM.", "He wants to join the tide pool walk."],
+      "visual": {
+        "type": "table",
+        "title": "Gull Island: Saturday Programs",
+        "note": "All programs are free. Bring water and a hat.",
+        "columns": ["Time", "Program", "Meet at"],
+        "rows": [
+          ["10:00 AM", "Seal watch with Ranger Jo", "Hill platform"],
+          ["11:30 AM", "Tide pool walk", "Beach stairs"],
+          ["1:00 PM", "Gulls and their nests", "Visitor center"],
+          ["3:00 PM", "Hike to the top of the hill", "Visitor center"]
+        ]
+      },
+      "topics": ["ocean", "nature"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Gull Island Saturday Programs",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p12",
+      "title": "Tide Pool Times",
+      "kind": "timetable",
+      "picture": "🌊🕐",
+      "sentences": [
+        "Priya can visit Gull Island on Saturday or Sunday.",
+        "Her ferry gets to the island at 12:10 PM."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Gull Island Tide Pools: This Week",
+        "note": "The tide pools open one hour before low tide and close one hour after low tide.",
+        "columns": ["Day", "Low tide", "Tide pools open"],
+        "rows": [
+          ["Thursday", "10:20 AM", "9:20 AM to 11:20 AM"],
+          ["Friday", "11:05 AM", "10:05 AM to 12:05 PM"],
+          ["Saturday", "11:50 AM", "10:50 AM to 12:50 PM"],
+          ["Sunday", "12:35 PM", "11:35 AM to 1:35 PM"]
+        ]
+      },
+      "topics": ["ocean", "nature"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Tide Pool Times",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p08",
+      "title": "Kite Day Program",
+      "kind": "schedule",
+      "picture": "🪁🏁",
+      "sentences": ["Leo is 13, and he wants to race his kite.", "He reads the Kite Day program."],
+      "visual": {
+        "type": "table",
+        "title": "Windy Cape Kite Day",
+        "note": "If the wind is too strong, the races move to the beach.",
+        "columns": ["Time", "Event", "Place"],
+        "rows": [
+          ["10:00 AM", "Kite making for beginners", "Boat shed"],
+          ["11:30 AM", "Big kite show", "Cliff top"],
+          ["1:00 PM", "Kite races, ages 8 to 12", "Cliff top"],
+          ["2:30 PM", "Kite races, ages 13 and up", "Cliff top"],
+          ["4:00 PM", "Prizes", "Boat shed"]
+        ]
+      },
+      "topics": ["sports", "weather"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Kite Day Program",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p12",
+      "title": "Beach Path Tides",
+      "kind": "timetable",
+      "picture": "🌊🥾",
+      "sentences": [
+        "Ana and Ben want to walk the beach path at Windy Cape this week.",
+        "They cannot start before 3:00 PM."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Windy Cape Beach Path: Tide Times",
+        "note": "The beach path opens 1 hour and 30 minutes before low tide and closes 1 hour and 30 minutes after it. The walk takes 45 minutes. Finish before the path closes.",
+        "columns": ["Day", "Low tide", "Beach path open"],
+        "rows": [
+          ["Monday", "12:30 PM", "11:00 AM to 2:00 PM"],
+          ["Tuesday", "1:15 PM", "11:45 AM to 2:45 PM"],
+          ["Wednesday", "2:00 PM", "12:30 PM to 3:30 PM"],
+          ["Thursday", "2:45 PM", "1:15 PM to 4:15 PM"],
+          ["Friday", "3:30 PM", "2:00 PM to 5:00 PM"]
+        ]
+      },
+      "topics": ["ocean", "nature"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Beach Path Tides",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p08",
+      "title": "Bus 9 Times",
+      "kind": "timetable",
+      "picture": "🚌🕘",
+      "sentences": [
+        "Mr. Lund lives in Windy Cape.",
+        "He rides Bus 9 to his job at Cloud Hill Airfield."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Bus 9: Windy Cape to Cloud Hill Airfield",
+        "note": "Bus 9 does not run on Sundays.",
+        "columns": ["Leaves Windy Cape", "Gets to Cloud Hill Airfield"],
+        "rows": [
+          ["8:00 AM", "8:35 AM"],
+          ["10:00 AM", "10:35 AM"],
+          ["12:30 PM", "1:05 PM"],
+          ["3:00 PM", "3:35 PM"]
+        ]
+      },
+      "topics": ["transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bus 9 Times",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p12",
+      "title": "Kookaburra Work Plan",
+      "kind": "schedule",
+      "picture": "📋🔧",
+      "sentences": [
+        "Captain Ada and Mr. Lund made a plan to get the Kookaburra ready.",
+        "They pinned it to the wall of the hangar."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Kookaburra Work Plan: Week of October 12",
+        "note": "Rain plan: Washing and filling the fuel tank happen outside. If it rains, an outside job moves to the next day at the same time. All other jobs happen inside the hangar.",
+        "columns": ["Day", "Job", "Who", "Time"],
+        "rows": [
+          ["Monday", "Take off the old tires", "Mr. Lund", "9:00 AM"],
+          ["Tuesday", "Put on the new tires", "Mr. Lund and Captain Ada", "9:00 AM"],
+          ["Wednesday", "Start and check the engine", "Mr. Lund and Captain Ada", "1:00 PM"],
+          ["Thursday", "Wash the windows and wings", "Captain Ada", "10:00 AM"],
+          ["Friday", "Fill the fuel tank", "Rosa", "2:00 PM"]
+        ]
+      },
+      "topics": ["transport", "weather"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Kookaburra Work Plan",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p08",
+      "title": "Packing for the Long Flight",
+      "kind": "list",
+      "picture": "🎒📋",
+      "sentences": [
+        "Captain Ada makes a packing list for the long flight.",
+        "The Kookaburra is small, so she packs only what she needs."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Packing List for the Long Flight",
+        "note": "Cockpit means things she needs while she flies.",
+        "columns": ["Item", "How many", "Where it goes"],
+        "rows": [
+          ["Water bottles", "4", "Cockpit"],
+          ["Sandwiches", "2", "Cockpit"],
+          ["Life jacket", "1", "Under the seat"],
+          ["Spare radio", "1", "Under the seat"],
+          ["Sleeping bag", "1", "Back of the plane"],
+          ["Warm jacket", "1", "Back of the plane"],
+          ["Map of the islands", "1", "Cockpit"]
+        ]
+      },
+      "topics": ["transport", "food"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Packing for the Long Flight",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p12",
+      "title": "The Flight Plan",
+      "kind": "timetable",
+      "picture": "🗺️🕗",
+      "sentences": [
+        "Captain Ada wrote a flight plan for the trip to Australia.",
+        "It shows each part of the flight."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Flight Plan: Cloud Hill to Australia",
+        "note": "Stop for fuel on each island. Sleep on Turtle Rock. If the take-off from Cloud Hill is late, add the same delay to every time in Parts 1 and 2. Part 3 always leaves at 8:00 AM the next morning.",
+        "columns": ["Part", "From", "To", "Leave", "Land"],
+        "rows": [
+          ["1", "Cloud Hill", "Pelican Island", "8:00 AM", "11:30 AM"],
+          ["2", "Pelican Island", "Turtle Rock", "12:30 PM", "4:00 PM"],
+          ["3", "Turtle Rock", "Australia", "8:00 AM", "1:00 PM"]
+        ]
+      },
+      "topics": ["transport", "ocean", "maps"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Flight Plan",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p08",
+      "title": "Today's Talks",
+      "kind": "schedule",
+      "picture": "🦘🗓️",
+      "sentences": [
+        "Rangers at Bluegum Koala Sanctuary give short talks every day.",
+        "Leah wants to learn about baby koalas."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Today's Talks",
+        "note": "Each talk is 20 minutes long.",
+        "columns": ["Time", "Talk", "Where"],
+        "rows": [
+          ["9:30 AM", "What Koalas Eat", "Koala Walk"],
+          ["11:00 AM", "Meet the Kangaroos", "Kangaroo Field"],
+          ["1:00 PM", "Wombat Homes", "Burrow Hill"],
+          ["2:30 PM", "Joeys: Baby Koalas", "Koala Walk"],
+          ["4:00 PM", "The Laughing Kookaburra", "Bird Trees"]
+        ]
+      },
+      "topics": ["animals"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Today's Talks",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p12",
+      "title": "Opening Hours",
+      "kind": "timetable",
+      "picture": "🕓🐨",
+      "sentences": [
+        "Bluegum Koala Sanctuary has different hours in summer and winter.",
+        "In Australia, summer is December to February, and winter is June to August."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Bluegum Koala Sanctuary: Opening Hours",
+        "note": "In all other months, use the summer hours. Last entry at the main gate is 30 minutes before it closes. The Koala Night Walk meets at the side gate.",
+        "columns": ["Area", "Summer (December to February)", "Winter (June to August)"],
+        "rows": [
+          ["Main gate", "8:00 AM to 6:00 PM", "9:00 AM to 5:00 PM"],
+          ["Koala Walk", "8:00 AM to 5:30 PM", "9:00 AM to 4:30 PM"],
+          ["Kangaroo Field", "9:00 AM to 5:00 PM", "10:00 AM to 3:00 PM"],
+          ["Café", "9:00 AM to 4:00 PM", "10:00 AM to 3:30 PM"],
+          ["Koala Night Walk", "7:00 PM to 8:30 PM", "6:00 PM to 7:30 PM"]
+        ]
+      },
+      "topics": ["animals", "nature"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Opening Hours",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p08",
+      "title": "Clear Nights at the Dome",
+      "kind": "schedule",
+      "picture": "🪐📅",
+      "sentences": [
+        "Priya is staying at Star Point this week.",
+        "She wants to see Saturn through the telescope."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Star Point: This Week",
+        "note": "Telescope programs happen only on clear nights. The star map class happens in any weather.",
+        "columns": ["Day", "Program", "Time", "Weather report"],
+        "rows": [
+          ["Monday", "Star map class, inside the dome", "7:00 PM", "Rain"],
+          ["Tuesday", "Saturn at the telescope", "9:00 PM", "Cloudy"],
+          ["Wednesday", "The Moon at the telescope", "8:30 PM", "Clear"],
+          ["Thursday", "Saturn at the telescope", "9:00 PM", "Clear"]
+        ]
+      },
+      "topics": ["space", "weather"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Clear Nights at the Dome",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p12",
+      "title": "When to Watch the Station",
+      "kind": "timetable",
+      "picture": "🛰️🕙",
+      "sentences": [
+        "Leo will stay at Star Point next week.",
+        "Dr. Amal gave him this list of space station times."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Space Station over Star Point: Next Week",
+        "note": "The station looks like a steady white light. It moves across the sky and does not blink. Clouds hide it.",
+        "columns": ["Night", "Comes into view", "Minutes in view", "Sky"],
+        "rows": [
+          ["Monday", "10:14 PM", "6", "Clear"],
+          ["Tuesday", "9:27 PM", "5", "Cloudy"],
+          ["Wednesday", "9:40 PM", "5", "Clear"],
+          ["Thursday", "8:53 PM", "2", "Clear"]
+        ]
+      },
+      "topics": ["space"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "When to Watch the Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p08",
+      "title": "Coast Line Trains After Lunch",
+      "kind": "timetable",
+      "picture": "🚆🕐",
+      "sentences": ["Maya is at Rail Coast station.", "She wants to look for rocks at Shell Halt."],
+      "visual": {
+        "type": "table",
+        "title": "Coast Line: Rail Coast to Pier Station, Saturday",
+        "note": "Some fast trains do not stop at Shell Halt.",
+        "columns": ["Leaves Rail Coast", "Shell Halt", "Reaches Pier Station"],
+        "rows": [
+          ["12:15 PM", "12:33 PM", "12:45 PM"],
+          ["1:05 PM", "Does not stop", "1:33 PM"],
+          ["1:45 PM", "2:03 PM", "2:15 PM"],
+          ["2:30 PM", "Does not stop", "2:58 PM"]
+        ]
+      },
+      "topics": ["transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Coast Line Trains After Lunch",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p12",
+      "title": "From Gull Island to Rail Coast",
+      "kind": "timetable",
+      "picture": "⛴️🚆",
+      "sentences": [
+        "Ana takes the 9:00 AM boat from Gull Island to Pier Station.",
+        "Then she takes the train to Rail Coast."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Sunday Boats and Trains",
+        "note": "It takes 15 minutes to walk from the boat to the train platform.",
+        "columns": ["Route", "Leaves", "Arrives"],
+        "rows": [
+          ["Boat: Gull Island to Pier Station", "9:00 AM", "9:50 AM"],
+          ["Boat: Gull Island to Pier Station", "10:30 AM", "11:20 AM"],
+          ["Train: Pier Station to Rail Coast", "9:55 AM", "10:25 AM"],
+          ["Train: Pier Station to Rail Coast", "10:20 AM", "10:50 AM"],
+          ["Train: Pier Station to Rail Coast", "11:30 AM", "12:00 PM"]
+        ]
+      },
+      "topics": ["transport", "ocean"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "From Gull Island to Rail Coast",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p08",
+      "title": "Dr. Bell's Dig Week",
+      "kind": "schedule",
+      "picture": "🗓️🦴",
+      "sentences": [
+        "Ben is 12, and he is staying near Fossil Bay this week.",
+        "He wants to help make a plaster jacket for a big bone."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Fossil Bay: Dig Week",
+        "note": "Meet at Dr. Bell's tent at 10:00 AM. Bring a hat and water.",
+        "columns": ["Day", "Job", "Ages"],
+        "rows": [
+          ["Monday", "Look for ammonites on the beach", "All ages"],
+          ["Tuesday", "Brush and clean the finds", "8 and up"],
+          ["Wednesday", "Make plaster jackets for big bones", "10 and up"],
+          ["Thursday", "Carry the plaster jackets to the boat", "16 and up"],
+          ["Friday", "Learn about the layers in the cliff", "All ages"]
+        ]
+      },
+      "topics": ["dinosaurs"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dr. Bell's Dig Week",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p12",
+      "title": "The South Sea Route",
+      "kind": "timetable",
+      "picture": "⛴️🕘",
+      "sentences": [
+        "Ana must get from Gull Island to Dr. Bell's tent by 11:00 AM.",
+        "The walk from the pier to the tent takes 25 minutes."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "South Sea Route: Gull Island to Fossil Bay",
+        "note": "Boats 2 and 4 stop at Seal Rock on the way, so they take longer.",
+        "columns": ["Boat", "Leaves Gull Island", "Gets to Fossil Bay Pier"],
+        "rows": [
+          ["Boat 1", "8:20 AM", "9:10 AM"],
+          ["Boat 2", "9:00 AM", "10:15 AM"],
+          ["Boat 3", "9:40 AM", "10:30 AM"],
+          ["Boat 4", "10:00 AM", "11:10 AM"],
+          ["Boat 5", "10:30 AM", "11:20 AM"]
+        ]
+      },
+      "topics": ["transport", "dinosaurs"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The South Sea Route",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p08",
+      "title": "Snorkel Gear at the Beach Hut",
+      "kind": "list",
+      "picture": "🤿💲",
+      "sentences": [
+        "Priya wants to snorkel in the lagoon for two hours.",
+        "She needs a mask, a snorkel and fins."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Reef Island Beach Hut: Snorkel Gear",
+        "note": "Life jackets are free. Pay at the hut window.",
+        "columns": ["Gear", "1 hour", "2 hours", "All day"],
+        "rows": [
+          ["Mask and snorkel", "$3", "$5", "$8"],
+          ["Fins", "$2", "$3", "$5"],
+          ["Full set: mask, snorkel and fins", "$4", "$7", "$12"],
+          ["Underwater camera", "$6", "$10", "$15"]
+        ]
+      },
+      "topics": ["ocean", "money"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Snorkel Gear at the Beach Hut",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p12",
+      "title": "The West Sea Route",
+      "kind": "timetable",
+      "picture": "⛴️🕐",
+      "sentences": [
+        "Ana and Ben will take the ferry from Gull Island.",
+        "At the reef pier, they change to Mari's reef boat."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "West Sea Route: Gull Island to Reef Island",
+        "note": "The reef boat crosses the channel only at high tide. High tide comes about 50 minutes later each day.",
+        "columns": [
+          "Day",
+          "Ferry leaves Gull Island",
+          "Ferry gets to the reef pier",
+          "Next reef boat across the channel"
+        ],
+        "rows": [
+          ["Thursday", "8:00 AM", "9:40 AM", "10:40 AM"],
+          ["Friday", "8:00 AM", "9:40 AM", "11:30 AM"],
+          ["Saturday", "10:00 AM", "11:40 AM", "12:20 PM"],
+          ["Sunday", "10:00 AM", "11:40 AM", "1:10 PM"]
+        ]
+      },
+      "topics": ["transport", "ocean"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The West Sea Route",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
         "adapted": false
       }
     }
@@ -7711,6 +8402,376 @@
         "grid"
       ],
       "transfer": true
+    },
+    {
+      "id": "cu-home-i08",
+      "skill": "F3",
+      "passage": "cu-home-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "On which day this week can Priya go to robotics club?",
+      "options": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      "answer": 3,
+      "evidence": [1],
+      "hint": "Find the Robotics club row. Then check which of its days Priya is free.",
+      "explain": "She can go on Thursday. The Robotics club row says Tuesday and Thursday, and Priya is busy on Tuesday.",
+      "inference": 1,
+      "checkup": "home",
+      "tags": ["find-row", "two-days"]
+    },
+    {
+      "id": "cu-home-i12",
+      "skill": "F3",
+      "passage": "cu-home-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the latest Bus 3 Sam can take and still reach the observatory before 7:30 PM?",
+      "options": ["5:40 PM", "6:10 PM", "6:40 PM", "7:10 PM"],
+      "answer": 1,
+      "evidence": [1, 2],
+      "hint": "Look down the last column for the latest time before 7:30 PM. Then look across that row to the first column.",
+      "explain": "Sam should take the 6:10 PM bus. Its shuttle reaches the observatory at 7:05 PM. The 6:40 PM bus is too late, because its shuttle gets there at 7:35 PM.",
+      "inference": 1,
+      "checkup": "home",
+      "tags": ["transfer", "latest", "close-distractor"]
+    },
+    {
+      "id": "cu-gull-i08",
+      "skill": "F3",
+      "passage": "cu-gull-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where and when should Sam meet for the tide pool walk?",
+      "options": [
+        "the hill platform at 10:00 AM",
+        "the beach stairs at 11:30 AM",
+        "the visitor center at 1:00 PM",
+        "the beach stairs at 10:00 AM"
+      ],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Find the row for the tide pool walk. Read across for the time and the place.",
+      "explain": "He should meet at the beach stairs at 11:30 AM. It is in the Tide pool walk row.",
+      "inference": 0,
+      "checkup": "gull",
+      "tags": ["find-row", "time-and-place"]
+    },
+    {
+      "id": "cu-gull-i12",
+      "skill": "F3",
+      "passage": "cu-gull-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya wants at least one hour at the tide pools after her ferry gets in. Which day should she go?",
+      "options": [
+        "Saturday. The pools open at 10:50 AM.",
+        "Thursday. Low tide is earliest that day.",
+        "Sunday. The pools stay open until 1:35 PM.",
+        "Saturday. Low tide is at 11:50 AM."
+      ],
+      "answer": 2,
+      "evidence": [2, 3],
+      "hint": "Find the closing time on Saturday and on Sunday. Count the time from 12:10 PM to each one.",
+      "explain": "She should go on Sunday. The pools close at 1:35 PM, so she has more than an hour after 12:10 PM. On Saturday they close at 12:50 PM, only 40 minutes after she arrives.",
+      "inference": 1,
+      "checkup": "gull",
+      "tags": ["time-math", "compare-rows"]
+    },
+    {
+      "id": "cu-cape-i08",
+      "skill": "F3",
+      "passage": "cu-cape-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "When is Leo's kite race?",
+      "options": ["at 1:00 PM", "at 4:00 PM", "at 11:30 AM", "at 2:30 PM"],
+      "answer": 3,
+      "evidence": [2, 3],
+      "hint": "There are two races. Find the one for Leo's age.",
+      "explain": "Leo's race is at 2:30 PM. He is 13, and that race is for ages 13 and up.",
+      "inference": 1,
+      "checkup": "cape",
+      "tags": ["age", "find-row", "close-options"]
+    },
+    {
+      "id": "cu-cape-i12",
+      "skill": "F3",
+      "passage": "cu-cape-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the first day this week Ana and Ben can finish the walk before the path closes?",
+      "options": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+      "answer": 2,
+      "evidence": [2, 3],
+      "hint": "Start at 3:00 PM and add the time the walk takes. Then find the first day the path is still open at that time.",
+      "explain": "Thursday is the first day. If they start at 3:00 PM, they finish at 3:45 PM, and on Thursday the path is open until 4:15 PM. On Wednesday it closes at 3:30 PM.",
+      "inference": 1,
+      "checkup": "cape",
+      "tags": ["time-math", "note", "close-distractor"]
+    },
+    {
+      "id": "cu-airfield-i08",
+      "skill": "F3",
+      "passage": "cu-airfield-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "On Tuesday, Mr. Lund is ready to leave home in Windy Cape at 9:15 AM. Which bus is the next one he can catch?",
+      "options": ["8:00 AM", "10:35 AM", "10:00 AM", "12:30 PM"],
+      "answer": 2,
+      "evidence": [1],
+      "hint": "Look down the Leaves Windy Cape column. Find the first time that comes after 9:15 AM.",
+      "explain": "The next bus leaves at 10:00 AM. It is the first time after 9:15 AM in the Leaves Windy Cape column. 10:35 AM is when that bus gets to Cloud Hill.",
+      "inference": 1,
+      "checkup": "airfield",
+      "tags": ["next-time", "wrong-column"]
+    },
+    {
+      "id": "cu-airfield-i12",
+      "skill": "F3",
+      "passage": "cu-airfield-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "It rains on Thursday. When will Captain Ada wash the windows and wings?",
+      "options": [
+        "Thursday at 10:00 AM",
+        "Friday at 2:00 PM",
+        "Saturday at 10:00 AM",
+        "Friday at 10:00 AM"
+      ],
+      "answer": 3,
+      "evidence": [3],
+      "hint": "Find the washing job in the table. Then read the rain plan under the table to see where an outside job moves.",
+      "explain": "She will wash them on Friday at 10:00 AM. The Thursday row says 10:00 AM, and the rain plan says an outside job moves to the next day at the same time.",
+      "inference": 1,
+      "checkup": "airfield",
+      "tags": ["plan-change", "rain-plan", "combine-parts"]
+    },
+    {
+      "id": "cu-takeoff-i08",
+      "skill": "F3",
+      "passage": "cu-takeoff-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Captain Ada wants something to drink while she flies. Where should she look?",
+      "options": ["Under the seat", "In the cockpit", "In the back of the plane"],
+      "answer": 1,
+      "evidence": [0],
+      "hint": "Find the row for something you can drink. Then read across to the Where it goes column.",
+      "explain": "She should look in the cockpit. The Water bottles row says they go in the cockpit.",
+      "inference": 1,
+      "checkup": "takeoff",
+      "tags": ["read-across", "find-row"]
+    },
+    {
+      "id": "cu-takeoff-i12",
+      "skill": "F3",
+      "passage": "cu-takeoff-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Fog makes the take-off from Cloud Hill two hours late. What time will the Kookaburra land on Turtle Rock?",
+      "options": ["4:00 PM", "1:30 PM", "6:00 PM", "3:00 PM"],
+      "answer": 2,
+      "evidence": [1],
+      "hint": "Find the row that lands on Turtle Rock. Then read the note to see if the delay changes that row, and add the hours.",
+      "explain": "It will land at 6:00 PM. Part 2 lands on Turtle Rock at 4:00 PM, and the note says to add the same delay to Parts 1 and 2. 4:00 PM plus two hours is 6:00 PM.",
+      "inference": 1,
+      "checkup": "takeoff",
+      "tags": ["plan-change", "time-math", "delay", "combine-parts"]
+    },
+    {
+      "id": "cu-australia-i08",
+      "skill": "F3",
+      "passage": "cu-australia-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "When and where is the talk about baby koalas?",
+      "options": [
+        "9:30 AM at the Koala Walk",
+        "11:00 AM at the Kangaroo Field",
+        "2:30 PM at the Koala Walk",
+        "4:00 PM at the Bird Trees"
+      ],
+      "answer": 2,
+      "evidence": [3],
+      "hint": "Find the row with baby koalas in the Talk column. Then read across to the time and the place.",
+      "explain": "The talk about baby koalas is at 2:30 PM at the Koala Walk. It is in the Joeys: Baby Koalas row.",
+      "inference": 1,
+      "checkup": "australia",
+      "tags": ["read-across", "two-columns"]
+    },
+    {
+      "id": "cu-australia-i12",
+      "skill": "F3",
+      "passage": "cu-australia-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "It is July. Leah gets to the sanctuary at 3:45 PM. Which area is open when she arrives?",
+      "options": ["The Kangaroo Field", "The Café", "The Koala Night Walk", "The Koala Walk"],
+      "answer": 3,
+      "evidence": [0, 1],
+      "hint": "First decide if July is summer or winter. Then use only that column, and check which area is open at 3:45 PM.",
+      "explain": "The Koala Walk is open. July is winter, and in winter the Koala Walk is open until 4:30 PM. The Kangaroo Field closes at 3:00 PM, the Café closes at 3:30 PM, and the Night Walk starts at 6:00 PM.",
+      "inference": 1,
+      "checkup": "australia",
+      "tags": ["season-column", "time-compare", "combine-parts"]
+    },
+    {
+      "id": "cu-star-i08",
+      "skill": "F3",
+      "passage": "cu-star-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "When should Priya plan to see Saturn?",
+      "options": [
+        "Tuesday at 9:00 PM",
+        "Thursday at 9:00 PM",
+        "Wednesday at 8:30 PM",
+        "Monday at 7:00 PM"
+      ],
+      "answer": 1,
+      "evidence": [1, 3],
+      "hint": "Find both Saturn rows. Then check the weather report and the note under the table.",
+      "explain": "She should plan on Thursday at 9:00 PM. Saturn is on Tuesday too, but Tuesday is cloudy, and the note says telescope programs happen only on clear nights.",
+      "inference": 1,
+      "checkup": "star",
+      "tags": ["compare-rows", "note"]
+    },
+    {
+      "id": "cu-star-i12",
+      "skill": "F3",
+      "passage": "cu-star-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo's bedtime is 10:00 PM. He wants to watch for at least 4 minutes on a clear night. Which night should he watch?",
+      "options": [
+        "Monday. The sky is clear, and the station is in view for 6 minutes.",
+        "Thursday. The station comes into view earliest that night.",
+        "Wednesday. The sky is clear, and the station is in view for 5 minutes.",
+        "Tuesday. The station comes into view at 9:27 PM."
+      ],
+      "answer": 2,
+      "evidence": [2],
+      "hint": "Check each night three ways: the time, the minutes in view, and the sky.",
+      "explain": "He should watch on Wednesday. The sky is clear, he can watch for 5 minutes, and the station comes into view at 9:40 PM, before his bedtime. Monday is after 10:00 PM, Tuesday is cloudy, and Thursday is only 2 minutes.",
+      "inference": 1,
+      "checkup": "star",
+      "tags": ["three-conditions", "time-math", "compare-rows"]
+    },
+    {
+      "id": "cu-rail-i08",
+      "skill": "F3",
+      "passage": "cu-rail-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya wants to leave Rail Coast after 1:00 PM and get off at Shell Halt. Which train should she take?",
+      "options": [
+        "the 1:05 PM train",
+        "the 1:45 PM train",
+        "the 12:15 PM train",
+        "the 2:30 PM train"
+      ],
+      "answer": 1,
+      "evidence": [1, 2],
+      "hint": "Find the trains that leave after 1:00 PM. Then look in the Shell Halt column.",
+      "explain": "She should take the 1:45 PM train. The 1:05 PM train leaves after 1:00 PM too, but it does not stop at Shell Halt.",
+      "inference": 1,
+      "checkup": "rail",
+      "tags": ["find-row", "does-not-stop"]
+    },
+    {
+      "id": "cu-rail-i12",
+      "skill": "F3",
+      "passage": "cu-rail-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What time will Ana reach Rail Coast?",
+      "options": ["10:25 AM", "12:00 PM", "9:50 AM", "10:50 AM"],
+      "answer": 3,
+      "evidence": [0, 3],
+      "hint": "Find when her boat arrives. Add the walk in the note. Then find the first train she can catch.",
+      "explain": "She will reach Rail Coast at 10:50 AM. Her boat arrives at 9:50 AM, and the walk takes 15 minutes, so she gets to the platform at 10:05 AM. The 9:55 AM train has left, so she takes the 10:20 AM train.",
+      "inference": 1,
+      "checkup": "rail",
+      "tags": ["transfer", "time-math"]
+    },
+    {
+      "id": "cu-fossil-i08",
+      "skill": "F3",
+      "passage": "cu-fossil-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which day can Ben help make a plaster jacket?",
+      "options": ["Wednesday", "Thursday", "Tuesday", "Friday"],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Find the row about making plaster jackets. Check the job and the ages.",
+      "explain": "Ben can help on Wednesday. That row says Make plaster jackets for big bones, for ages 10 and up, and Ben is 12. On Thursday, the jackets are only carried, and that job is for ages 16 and up.",
+      "inference": 0,
+      "checkup": "fossil",
+      "tags": ["find-row", "age-check", "close-distractor"]
+    },
+    {
+      "id": "cu-fossil-i12",
+      "skill": "F3",
+      "passage": "cu-fossil-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which is the latest boat Ana can take and still reach the tent by 11:00 AM?",
+      "options": [
+        "Boat 4. It leaves at 10:00 AM.",
+        "Boat 3. It gets to the pier at 10:30 AM.",
+        "Boat 2. It gets to the pier at 10:15 AM.",
+        "Boat 1. It leaves at 8:20 AM."
+      ],
+      "answer": 1,
+      "evidence": [1, 2, 3],
+      "hint": "For each boat, add 25 minutes to the time it gets to the pier. Then find the last boat that still gets Ana to the tent by 11:00 AM.",
+      "explain": "Boat 3 is the latest boat that works. It gets to the pier at 10:30 AM, and 25 minutes later is 10:55 AM. Boat 4 stops at Seal Rock and gets in at 11:10 AM, which is too late.",
+      "inference": 1,
+      "checkup": "fossil",
+      "tags": ["time-math", "compare-rows", "walk-time"]
+    },
+    {
+      "id": "cu-reef-i08",
+      "skill": "F3",
+      "passage": "cu-reef-p08",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is the cheapest way for Priya to get a mask, a snorkel and fins for two hours?",
+      "options": [
+        "Rent a mask and snorkel for $5, and fins for $3.",
+        "Rent a full set for all day, for $12.",
+        "Rent a mask and snorkel for $5.",
+        "Rent a full set for two hours, for $7."
+      ],
+      "answer": 3,
+      "evidence": [0, 1, 2],
+      "hint": "Look down the 2 hours column. Add the mask row and the fins row, then compare with the full set row.",
+      "explain": "A full set for two hours costs $7. A mask and snorkel plus fins would cost $5 and $3, which is $8. The full set row has all three things.",
+      "inference": 1,
+      "checkup": "reef",
+      "tags": ["price-math", "compare-rows"]
+    },
+    {
+      "id": "cu-reef-i12",
+      "skill": "F3",
+      "passage": "cu-reef-p12",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana and Ben want the shortest wait at the reef pier. Which day should they go?",
+      "options": [
+        "Thursday. The ferry leaves earliest that day.",
+        "Friday. The reef boat crosses before noon.",
+        "Sunday. The ferry leaves at 10:00 AM.",
+        "Saturday. They wait only 40 minutes."
+      ],
+      "answer": 3,
+      "evidence": [0, 1, 2, 3],
+      "hint": "For each day, count the time from when the ferry gets to the reef pier to when the reef boat crosses. Then pick the shortest wait.",
+      "explain": "They should go on Saturday. The ferry gets to the reef pier at 11:40 AM, and the reef boat crosses at 12:20 PM, so they wait 40 minutes. On the other days, they wait an hour or more.",
+      "inference": 1,
+      "checkup": "reef",
+      "tags": ["time-math", "compare-rows", "transfer-wait"]
     }
   ],
   "model": {

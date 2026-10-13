@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { LogEvent } from '@wayfinder/schema';
-import { GEAR, delayEffect, flightPoints, recountTrend, gearState, insights, sessionActivity, usualStop } from './activity';
+import { GEAR, delayEffect, flightPoints, recountTrend, ideasUse, formatEffect, reasonRecord, gearState, insights, sessionActivity, usualStop } from './activity';
 import { derive } from './index';
 
 let n = 0;
@@ -102,5 +102,59 @@ describe('how his telling is growing (LTF-08)', () => {
   });
   it('leaves out recounts saved before sentences were counted', () => {
     expect(recountTrend([{ id: 'old', ts: T0, type: 'recount', stage: 1, parts: 1 } as LogEvent]).recounts).toEqual([]);
+  });
+});
+
+describe('ideas behind a button (LTF-07)', () => {
+  const D = 86_400_000, now = 1_800_000_000_000;
+  const rec = (daysAgo: number, ideas: boolean[]) => ({ id: `i${daysAgo}-${ideas.join()}`, ts: now - daysAgo * D, type: 'recount', stage: 3, parts: 3, topic: 'day', ideas }) as LogEvent;
+  const all = [true, true, true];
+
+  it('counts the questions he answered without ideas this week', () => {
+    expect(ideasUse([rec(10, [false, false]), rec(3, [true, false, false]), rec(1, [true, true])], now).week).toEqual({ without: 2, of: 5 });
+    expect(ideasUse([], now).week).toEqual({ without: 0, of: 0 });
+  });
+
+  it('steps back a stage after two weeks of ideas on every question, and not before', () => {
+    expect(ideasUse([rec(15, all), rec(9, all), rec(4, all), rec(1, all)], now).stepBack).toBe(true);
+    expect(ideasUse([rec(9, all), rec(4, all), rec(1, all)], now).stepBack).toBe(false); // not two weeks with the button yet
+    expect(ideasUse([rec(15, all), rec(9, all), rec(4, [true, false]), rec(1, all)], now).stepBack).toBe(false); // one answer of his own
+    expect(ideasUse([rec(20, all), rec(1, all)], now).stepBack).toBe(false); // too few recounts to judge
+  });
+});
+
+describe('which question types work for him (LTF-15)', () => {
+  const ans = (item: string, skill: string, level: number, format: string, correct: boolean, phase = 'yourturn'): LogEvent =>
+    ({ id: id(), ts: T0 + n * 1000, type: 'answer', session: 's', item, skill: skill as never, phase: phase as never, correct, hint: 0, tries: 1, ms: 9000, format, level });
+  it('compares formats only within the same skill and level, on his own first-time answers', () => {
+    const ev = [
+      ans('o1', 'N2', 2, 'order', true), ans('o2', 'N2', 2, 'order', false), ans('o3', 'N2', 2, 'order', true, 'warmup'),
+      ans('t1', 'N2', 2, 'tap', true), ans('t2', 'N2', 2, 'tap', true),
+      ans('t1', 'N2', 2, 'tap', false), // a repeat: left out
+      ans('h1', 'N2', 2, 'highlight', false, 'together'), // guided: left out
+      ans('t3', 'N2', 3, 'tap', true), ans('t4', 'N2', 3, 'tap', true), // one format at this level: nothing to compare
+      ans('s1', 'F4', 2, 'sort', false), ans('t5', 'F4', 2, 'tap', true),
+    ];
+    expect(formatEffect(derive(ev))).toEqual([
+      { skill: 'F4', level: 2, formats: [{ format: 'sort', correct: 0, total: 1 }, { format: 'tap', correct: 1, total: 1 }] },
+      { skill: 'N2', level: 2, formats: [{ format: 'order', correct: 2, total: 3 }, { format: 'tap', correct: 2, total: 2 }] },
+    ]);
+  });
+});
+
+describe('the reasoning card, as a single-case record (LTF-02)', () => {
+  const ans = (item: string, phase: string, correct: boolean, hint = 0): LogEvent =>
+    ({ id: id(), ts: T0 + n * 1000, type: 'answer', session: 's', item, skill: 'N5', phase: phase as never, correct, hint, tries: 1, ms: 9000, format: 'tap', ...(item === 'r1' && hint >= 2 ? { card: true } : {}) });
+  it('compares his N5 right-first-time before and after he first saw a card, on first-time answers of his own', () => {
+    const ev = [
+      ans('a', 'yourturn', false), ans('b', 'warmup', true), ans('c', 'together', false), // before; guided practice is left out
+      ans('r1', 'together', false, 2), // he sees the card for the first time here
+      ans('d', 'yourturn', true), ans('r2', 'yourturn', true), ans('e', 'yourturn', false), ans('d', 'warmup', false), // the repeat of 'd' is left out
+    ];
+    const r = reasonRecord(derive(ev));
+    expect(r.before).toEqual({ correct: 1, total: 2 });
+    expect(r.after).toEqual({ correct: 2, total: 3 });
+    expect(r.since).toBe(ev[3].ts);
+    expect(reasonRecord(derive(ev.slice(0, 3))).since).toBeUndefined();
   });
 });

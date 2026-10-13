@@ -10,14 +10,16 @@ Each step lands its test before its code.
 
 1. **Foundations.** "Check whether content repeats across sessions" (below, built 2026-10-13), now needed by the notes on LTF-01, LTF-02, LTF-05 and LTF-16. Then LTF-16, so every new item after it passes the content checks. LTF-17 can run alongside.
 2. **Small, strongest evidence.** LTF-01, LTF-05, LTF-08, LTF-18 (all built 2026-10-13).
-3. **Today and hints.** LTF-06 (after LTF-05), LTF-07, LTF-02, LTF-15.
-4. **New questions.** LTF-09, LTF-10, LTF-12, LTF-13.
-5. **Large content work.** LTF-20 (island routes, before LTF-14 so check-up flights can come from the island he chose), LTF-04, LTF-11 (idioms use LTF-04), LTF-03, LTF-14.
-6. **Guest codes.** LTF-19, a separate track. Approach to confirm.
+3. **Today and hints.** LTF-06 (after LTF-05), LTF-07, LTF-02, LTF-15 (all built 2026-10-13).
+4. **New questions.** LTF-09, LTF-10, LTF-12, LTF-13 (all built 2026-10-13).
+5. **Large content work.** LTF-20 (island routes, before LTF-14 so check-up flights can come from the island he chose), LTF-04, LTF-11 (idioms use LTF-04), LTF-03, LTF-14. Built 2026-10-13: LTF-04 (pilot), LTF-11, LTF-03 (N4 first), LTF-14 (all ten stops, the four islands included), and LTF-20, built with the proposed LTF-21 to LTF-24 as its island stories so DW can review them in the app. Waiting for DW: those island stories, and the koala keeper arc (LTF-30 to LTF-35). LTF-25 to LTF-29 come later, if approved.
+6. **Guest codes.** LTF-19, a separate track. Approach to confirm; DW 2026-10-13: not now.
 
 ## LTF-20 Island routes that branch to themed islands
 
-Added 2026-10-13. Approved by DW: islands follow his interests, every route reaches Australia, and he picks the route. Starting size to confirm: one fork after Gull Island with three routes.
+Added 2026-10-13. Approved by DW: islands follow his interests, every route reaches Australia, and he picks the route. Size confirmed by DW 2026-10-13: one fork after Gull Island. Four islands are written, and the fork offers the three that best match his interests.
+
+- **What was built (2026-10-13).** The engine walks his chosen route (`journeyRoute`, `forkOptions`, `routePosition`, `pastFork`), with tests. `content/journey.json` has the four islands, with the proposed LTF-21 to LTF-24 text, for DW to review in the app; Gull Island's last postcard line is route-neutral, and the airfield's bus line has a boat version for island routes (`byFrom`). At Gull Island the journey waits for him: "Choose your sea route" shows the three islands that best match his interests, each with its first beat, its topics and read-aloud, and no timer. The map shows his route so far; before he chooses, the offered islands branch off it with dashes. Each island has a scene and a souvenir (ammonite, sea turtle, observatory dome, railway signal). On the way to an island, sessions lean toward its two topics, as a lean rather than a filter. Each fork is checked once per learner: anyone already on the way to Windy Cape when the routes arrived keeps that route, and the grown-ups' Settings says so. Settings shows the route he chose and when. The choice is logged (activity `route`), and "What do you think?" asks about it once. `npm run check` checks that every stop is reachable, every route ends at Australia and all routes have the same length. Tests: `apps/web/src/journey.test.ts` (each fork checked once, Windy Cape kept, the fork offered at Gull Island, the boat line on island routes; mutation-checked) and an e2e run that picks Star Point, with axe. The island text reads at grades 1.4 to 2.4 (Flesch-Kincaid), inside the range of today's stops (1.0 to 3.6), and each island has about twice Windy Cape's words. Check-up texts for the four islands are in (LTF-14). Still open: DW's read of every line.
 
 - **Research.** Islands that follow his interests use R8 ([El Zein et al. 2016](https://meadowscenter.org/library/embedding-perseverative-interest-of-a-child-with-autism-in-text-may-result-in-improved-reading-comprehension-a-pilot-study/); [Solis et al. 2022](https://eric.ed.gov/?id=ED634621)), whose mixed results are why one pick in five still ignores interests. A story world that rewards finished sessions, not scores, is R9 ([Deci et al. 1999](https://pure.ewha.ac.kr/en/publications/a-meta-analytic-review-of-experiments-examining-the-effects-of-ex/); [Sailer & Homner 2020](https://eric.ed.gov/?id=EJ1245270)). R30 ([Gao et al. 2025](https://frontiersin.org/journals/pediatrics/articles/10.3389/fped.2025.1498563/abstract)) keeps the islands a wrapper rather than the teaching. Branching routes and the route choice are our design, not a tested rule.
 - **He sees.** The journey map shows forks. At a fork, his guide names each sea route and the island it leads to, for example Fossil Bay (dinosaurs, mining), Reef Island (ocean, animals), Star Point (space, weather) or Rail Coast (transport, maps). He taps one, and the whole route stays visible ahead of time, so nothing is a surprise. Every route ends at Australia; a branch is a different way there, never a dead end.
@@ -28,9 +30,343 @@ Added 2026-10-13. Approved by DW: islands follow his interests, every route reac
 - **Eval first.** Engine tests: every route reaches Australia; finished sessions move him along the route he chose; changing the pace never moves him back; a learner partway along today's route keeps his place. An e2e test picks a route at the fork with an axe check. Content validation checks every stop is reachable and every route ends at Australia.
 - **Guards.** At most three routes at a fork, shown with pictures and read aloud. The choice waits for him and has no timer. Interest weighting stays a lean, not a filter: one pick in five still ignores interests, so the interest comparison (R8) stays fair. Items he has seen still come last (see the repeats tracking).
 
+## Proposed: branch-out stories (LTF-21 to LTF-29)
+
+Added 2026-10-13, drafted by a story-ideation pass for DW's review. Nothing here is approved yet. LTF-21 to LTF-24 are in the app as LTF-20's islands (stop entries, the shared seams, map, scenes, souvenirs and the "What do you think?" line), so they can be reviewed there, with 12 check-up texts each; DW's read stays open. LTF-21 to LTF-24 are a full five-beat arc for each LTF-20 island; LTF-25 to LTF-29 are smaller branch-outs for later. Every arc keeps the journey's rules: it moves with finished sessions, the setback is scripted and explained, both plans work, and Captain Ada's invitation to Cloud Hill closes each island's postcard, so the airfield leg still follows. Three seams in today's canon are shared subtasks, done once for all four islands: Gull Island's last postcard line ("The kites are over Windy Cape.") and the airfield's beat 1 ("Bus 9 goes from Windy Cape to Cloud Hill") assume the Windy Cape route, and the map marker in `journey.tsx` picks the bus icon by stop index (`now.stop === 2`) rather than by stop.
+
+## LTF-21 Fossil Bay: the dig under the cliff
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
+
+- **Story.** The south sea route goes to Fossil Bay, gray cliffs made of rock layers where Dr. Bell (the fossil expert at the Harbor Town Fossil Museum, already in the bank) is running a dig. The setback is a closed beach: the cliff is wet after a night of rain, so the boat cannot land under it. It suits dinosaurs and mining because the leg is about fossils, rock layers and digging tools, and the postcard ends with a real fossil going into a plaster jacket, as the bank's F2 passage describes.
+- **He sees.**
+  - Beat 0: "From the hill on Gull Island, you can see gray cliffs to the south. That is Fossil Bay. The south sea route goes there."
+  - Beat 1: "A letter came from Dr. Bell, the fossil expert at the museum. It says: We are digging at Fossil Bay this week. Come and help. Bring a hat. It rained hard last night." (smooth: the same letter without the last sentence)
+  - Beat 2 (obstacle, `blocked`): "Your boat reached Fossil Bay. But the beach under the cliff is closed. Rocks can fall from a cliff after heavy rain, so Dr. Bell put up a sign." Notice (type `notice`, title "Fossil Bay Beach", icon 🪨): "CLIFF BEACH CLOSED" / "The cliff is wet after the rain." / "Use the pier. The beach opens when the cliff is dry." Cope: "When a beach is closed, we can use the pier instead. The cliff will dry by the afternoon." Ask: "How will you get to the dig?" Plan A "Land at the pier and take the top path" → reply "Good plan. The top path runs along the cliff top to Dr. Bell's tent." → beat 3: "You landed at the pier and walked the top path. From the cliff top, you could see the whole dig below." Plan B "Wait on the boat until the cliff is dry" → reply "Good plan. Dr. Bell says the sun will dry the cliff by 3 PM." → beat 3: "The sun dried the cliff by 3 PM. Dr. Bell took the sign away, and your boat landed on the beach." Talk: "Ask: the beach was closed after rain, so he had to find another way in. What else could he have done?" Smooth: "Your boat reached Fossil Bay. The beach under the cliff is long and gray."
+  - Beat 3 (smooth): "You landed at the pier. A path leads along the beach to the dig."
+  - Beat 4: "Dr. Bell's tent is at the far end of the beach. You can see people with brushes and small hammers. One more session, and you reach Fossil Bay."
+  - Postcard: "Fossil Bay has gray cliffs made of thin layers of rock. The lowest layers are the oldest." / "Dr. Bell shows you an ammonite, the coiled shell of a sea animal from the time of the dinosaurs." / "You brush sand off a bone. Dr. Bell wraps it in a plaster jacket to keep it safe." / "A boat comes into the bay. It is Captain Ada, a pilot." / "She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+  - Souvenir: `ammonite`, "Ammonite fossil" (topic `dinosaurs`, stop `fossil`).
+- **School goal.** Key details: the notice has three rows, and only one of them (use the pier) decides what to do; the plan choice works only when he finds that row.
+- **Subtasks for story incorporation.**
+  - [ ] Stop entry in `content/journey.json`: id `fossil`, name, emoji 🦕, `souvenir: "ammonite"`, `topics: ["dinosaurs", "mining"]`, `next: ["airfield"]`, five beats with notice, cope, choice, talk and smooth texts, and the postcard.
+  - [ ] Gull Island gains `next: ["fossil", "reef", "star", "rail", "cape"]` (LTF-20; Windy Cape marked `legacy`), and its last postcard line "The kites are over Windy Cape." becomes route-neutral, for example "Far out, you can see other islands." (shared with LTF-22 to LTF-24, do once)
+  - [ ] The airfield's beat 1 ("Bus 9 goes from Windy Cape to Cloud Hill") gets a per-origin or neutral line, since from a themed island Captain Ada's boat goes to Cloud Hill; LTF-28 proposes the per-origin version. The map marker rule in `journey.tsx` (`now.stop === 2 ? '🚌' : '⛴️'`) must key on the stop id, not the index. (shared, do once)
+  - [ ] Journey map: `AT` coordinates for Fossil Bay and the two route curves (Gull to Fossil Bay, Fossil Bay to the airfield) in `apps/web/src/journey.tsx`; a `StopArt` scene (gray layered cliff, a tent, a brush).
+  - [ ] Souvenir piece `ammonite` in the pieces list in `apps/web/src/art.tsx` with `stop: 'fossil'`, so `pieceById` resolves it and the postcard offers it.
+  - [ ] One "What do you think?" line in `apps/web/src/features.ts` for the fork itself (`island-route`, met when a route choice is saved); shared with LTF-20, not one per island.
+  - [ ] LTF-14 check-up texts tagged with stop `fossil`: about 12 reserved items on fossils, rock layers, a quarry notice and a dig timetable.
+  - [ ] Checks: `npm run check` (it now also checks that every stop is reachable, every route ends at Australia and all routes have the same length), `npm run content:check` and `pipeline/check.py` on the check-up passages; the beats and postcard are outside the pipeline, so check their reading level by hand (level 1 to 2 band, sentences of 13 words or fewer).
+  - [ ] Tests: engine routing (Gull to Fossil Bay to the airfield reaches Australia in the same session count as the Windy Cape route; a pace change never moves him back); an e2e run that picks Fossil Bay at the fork, reaches the obstacle, chooses a plan, reads the postcard and picks the souvenir, with an axe check.
+  - [ ] DW reads every line: beats, notice rows, cope, both options and their after lines, talk, smooth texts, postcard and souvenir name.
+- **Guards.** "Rocks can fall" is one calm safety sentence, like Windy Cape's fallen rocks, and nobody is on the beach while it is closed. Dr. Bell matches the bank (museum fossil expert, plaster jackets). Fossils are handled only with Dr. Bell and stay with the dig, never kept as treasure, which matches the bank's "do not touch" rule. The facts are simple and true: layers, lowest is oldest, ammonites lived in the time of the dinosaurs. Watch the reading level of "ammonite" and "plaster jacket" (both are explained in the same sentence).
+
+## LTF-22 Reef Island: the boat waits for the tide
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
+
+- **Story.** The west sea route goes to Reef Island, a ring of coral around a calm lagoon, with Mari, who drives the reef boat (new, needed for the island). The setback is a late boat: the channel through the reef is deep enough only at high tide, so today's crossing moves to 5 PM. It suits ocean and animals because the wait is spent at tide pools and the postcard is coral, a clownfish and turtle tracks.
+- **He sees.**
+  - Beat 0: "From the hill on Gull Island, you can see a ring of white waves to the west. That is the reef around Reef Island. The west sea route goes there."
+  - Beat 1: "Mari drives the reef boat. She says the boat crosses the reef through a gap called a channel. The water in the channel is deep only at high tide." (smooth: "Mari drives the reef boat. She says the lagoon inside the reef is calm and clear.")
+  - Beat 2 (obstacle, `blocked`): "You are at the pier, but the boat is not going yet. The tide is low, and the water in the channel is too shallow for the boat." Notice (type `notice`, title "Reef Boat", icon 🌊): "LOW TIDE: the channel is too shallow." / "Next crossing at high tide: 5 PM." / "Tide pools open until 4 PM." Cope: "The tide comes in twice a day. The water will rise, and the boat will cross." Ask: "What will you do until the tide comes in?" Plan A "Explore the tide pools with Mari" → reply "Good plan. Mari knows where the sea stars hide." → beat 3: "You found a sea star and two crabs in the tide pools. At 5 PM the tide was high, and the boat crossed the channel." Plan B "Help Mari get the boat ready" → reply "Good plan. The boat needs fuel, and the life jackets need counting." → beat 3: "You helped Mari fuel the boat and count the life jackets. At 5 PM the tide was high, and the boat crossed the channel." Talk: "Ask: the boat was late because of the tide. What can we do while we wait for something we cannot change?" Smooth: "You are at the pier. Mari checks the boat, and you count the life jackets."
+  - Beat 3 (smooth): "The boat crossed the channel into the lagoon. The water is clear and calm."
+  - Beat 4: "Inside the reef, the water is calm and clear. You can see fish under the boat. One more session, and you reach Reef Island."
+  - Postcard: "Reef Island sits inside a ring of coral." / "Coral is made by tiny animals called polyps. Their hard skeletons build up into a reef, very slowly." / "Through the glass floor of the boat, you see a clownfish in a sea anemone." / "At night, Mari shows you turtle tracks in the sand. Sea turtles lay their eggs on this beach." / "Captain Ada's boat is tied up at the pier. She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+  - Souvenir: `turtle`, "Sea turtle" (topic `ocean`, stop `reef`).
+- **School goal.** Staying flexible when plans change: the crossing time moves with the tide, and both plans accept the new time instead of fighting it.
+- **Subtasks for story incorporation.**
+  - [ ] Stop entry in `content/journey.json`: id `reef`, emoji 🐢, `souvenir: "turtle"`, `topics: ["ocean", "animals"]`, `next: ["airfield"]`, five beats with notice, cope, choice, talk and smooth texts, and the postcard.
+  - [ ] Shared seams from LTF-21 (Gull's last postcard line, the airfield's beat 1, the map marker rule), done once.
+  - [ ] Journey map: `AT` coordinates and route curves; a `StopArt` scene (a ring of white surf, a lagoon, a small boat).
+  - [ ] Souvenir piece `turtle` in `apps/web/src/art.tsx` with `stop: 'reef'`.
+  - [ ] "What do you think?" line: covered by the shared fork feature in LTF-21.
+  - [ ] LTF-14 check-up texts tagged with stop `reef`: about 12 reserved items on coral, tides, a tide-pool checklist and a boat timetable (the bank already has tide-pool notices to match in tone).
+  - [ ] Checks as in LTF-21: `npm run check`, `npm run content:check`, `pipeline/check.py` for the check-up passages, and a hand reading-level pass over the beats.
+  - [ ] Tests: engine routing for the reef route; an e2e run that picks Reef Island, reaches the tide notice, chooses a plan and reads the postcard, with axe.
+  - [ ] DW reads every line.
+- **Guards.** Life jackets are counted and nobody swims alone; the turtle beach is visited with Mari and nothing is touched. Coral is "tiny animals called polyps", never a plant or a rock. "Twice a day" is the simple tide fact and holds for most coasts. The obstacle reuses `blocked` (low water blocks the channel), so no type change; if DW wants the card to read "A notice at the harbor" instead of "A sign on the path", add a `late` obstacle kind (three one-line edits: the Beat type, `NOTICE_TITLE`, `OBSTACLE_ICON`). Mari is the only new character.
+
+## LTF-23 Star Point: a cloudy night at the observatory
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
+
+- **Story.** The north sea route goes to Star Point, a headland with a white observatory dome and a weather station, run by Dr. Amal (new). The setback is weather: clouds come in from the sea on the first night, so the dome stays shut. It suits space and weather because the wait is spent on a weather balloon launch or a star map, and the clear night brings the Moon, Saturn and the space station.
+- **He sees.**
+  - Beat 0: "From the hill on Gull Island, you can see a white dome on a point of land to the north. That is the observatory at Star Point. The north sea route goes there."
+  - Beat 1: "Dr. Amal works at the observatory. Her message says: Come on a clear night. The telescope can show you the Moon and Saturn. The weather report says clouds may come." (smooth: without the last sentence)
+  - Beat 2 (obstacle, `weather`): "Your boat landed at the pier below Star Point. Then thick clouds came in from the sea. A telescope cannot see stars through clouds, so the dome stays shut tonight." Notice (type `notice`, title "Star Point Sky Board", icon ☁️): "Tonight: cloudy. No stars." / "Tomorrow night: clear." / "Weather balloon goes up at 6 AM." Cope: "Clouds move away. The sky will be clear again, and the dome will open." Ask: "What will you do on the cloudy night?" Plan A "Get up early for the weather balloon" → reply "Good plan. The balloon goes up at 6 AM, clouds or no clouds." → beat 3: "At 6 AM you watched the balloon go up. It carries a small box that measures the air and sends the numbers back by radio. That night, the sky was clear." Plan B "Learn the star map inside the dome" → reply "Good plan. Dr. Amal has a big star map on the wall." → beat 3: "You learned five star names on the map. The next night the clouds were gone, and you found all five in the sky." Talk: "Ask: the clouds hid the stars, so the plan changed. What did he do instead?" Smooth: "Your boat landed at the pier below Star Point. The dome is white and round, and the sky is clear."
+  - Beat 3 (smooth): "Dr. Amal opens the dome. The telescope points at the Moon."
+  - Beat 4: "Tonight is clear. Small lamps light the path up the point. One more session, and you reach Star Point."
+  - Postcard: "The observatory at Star Point has a round dome. A slit in the dome opens, and the telescope looks out." / "Through the telescope, the Moon has gray plains and round craters." / "Saturn looks like a small yellow ball with a ring around it." / "Dr. Amal points to a bright dot moving across the sky. It is the space station, which goes around Earth in about 90 minutes." / "Captain Ada climbs the path to the dome. She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+  - Souvenir: `dome`, "Observatory dome" (topic `space`, stop `star`).
+- **School goal.** Main idea: the Sky Board's rows add up to one idea (no stars tonight, but tomorrow is clear), and a check-up text on what a weather balloon does gives a clean main-idea item.
+- **Subtasks for story incorporation.**
+  - [ ] Stop entry in `content/journey.json`: id `star`, emoji 🔭, `souvenir: "dome"`, `topics: ["space", "weather"]`, `next: ["airfield"]`, five beats with notice, cope, choice, talk and smooth texts, and the postcard.
+  - [ ] Shared seams from LTF-21, done once.
+  - [ ] Journey map: `AT` coordinates and route curves; a `StopArt` scene (a dome on a headland at dusk, a few stars, a balloon).
+  - [ ] Souvenir piece `dome` in `apps/web/src/art.tsx` with `stop: 'star'` (the existing `telescope` piece stays a Lantern Peaks piece).
+  - [ ] "What do you think?" line: covered by the shared fork feature.
+  - [ ] LTF-14 check-up texts tagged with stop `star`: about 12 reserved items on the Moon's phases, a sky board, a weather balloon and planets (the bank's observatory notices set the tone).
+  - [ ] Checks as in LTF-21, plus a hand reading-level pass over the beats.
+  - [ ] Tests: engine routing for the star route; an e2e run that picks Star Point, reaches the sky board, chooses a plan and reads the postcard, with axe.
+  - [ ] DW reads every line.
+- **Guards.** Night-time is lit and with an adult; no dark-and-alone wording. The facts stay simple and true: the Moon's plains and craters, Saturn's ring through a small telescope, the space station's 90-minute orbit, a balloon that carries a small measuring box and sends numbers by radio. Nothing about the balloon bursting. Dr. Amal is the only new character; the Lantern Peaks observatory on Home Island is a different place and is not contradicted.
+
+## LTF-24 Rail Coast: a broken signal
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
+
+- **Story.** The east sea route lands at Pier Station on Rail Coast, where the Coast Line train runs beside the sea to Rail Coast station, with Mr. Haddad, the signal operator (new). The setback is a broken part: a signal at Shell Halt is broken, and trains wait until it is fixed, while a bus runs instead. It suits transport and maps because the plan is read off a message and a line map, and the postcard is a signal box and a map room with every island on the wall.
+- **He sees.**
+  - Beat 0: "From the hill on Gull Island, you can see a long, low island to the east. A train runs along its coast. That is Rail Coast. The east sea route goes there."
+  - Beat 1: "Your boat lands at Pier Station. From there, the Coast Line train runs beside the sea to Rail Coast. Mr. Haddad, the signal operator, sent you a map of the line. One signal on the line is very old." (smooth: without the last sentence)
+  - Beat 2 (obstacle, `broken`): "You are on the platform at Pier Station, but the train is not moving. A signal at Shell Halt is broken. A signal tells the driver to stop or go, so trains wait until it is fixed." Notice (type `message`, app text, from "Rail Coast Station"): "A signal at Shell Halt is broken." / "Trains wait until it is fixed, at about 3 PM." / "A bus runs from Pier Station to Rail Coast at 2 PM." Cope: "A broken signal gets fixed. Until then, we can take the bus or wait." Ask: "How will you get to Rail Coast?" Plan A "Take the bus at 2 PM" → reply "Good plan. The bus stops right outside the station." → beat 3: "The bus took the coast road. From the window, you saw the train waiting at Shell Halt, and then its signal turned green." Plan B "Wait for the train and follow the map" → reply "Good plan. Mr. Haddad says the signal will be fixed by 3 PM." → beat 3: "You followed the line on the map while you waited. At 3 PM the signal was fixed, and the train came in." Talk: "Ask: the train could not go because a signal was broken. He had two ways to get there. Which would you pick, and why?" Smooth: "You are on the platform at Pier Station. The Coast Line train comes in on time."
+  - Beat 3 (smooth): "The train runs right beside the sea. You can see the waves from your seat."
+  - Beat 4: "The map shows one more stop before Rail Coast. One more session, and you reach Rail Coast."
+  - Postcard: "Rail Coast station has a clock, a signal box and a map room." / "In the signal box, Mr. Haddad pulls a lever, and a signal changes to tell the driver to go." / "In the map room, a big map shows every island. The key tells you what each symbol means." / "You find Home Island, Gull Island and Cloud Hill on the map." / "Captain Ada is waiting on the platform. She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+  - Souvenir: `signal`, "Railway signal" (topic `transport`, stop `rail`).
+- **School goal.** Key details: the message has a time and a bus stop, and those two details decide the plan; the map key in the postcard is the same skill on a map.
+- **Subtasks for story incorporation.**
+  - [ ] Stop entry in `content/journey.json`: id `rail`, emoji 🚂, `souvenir: "signal"`, `topics: ["transport", "maps"]`, `next: ["airfield"]`, five beats with notice, cope, choice, talk and smooth texts, and the postcard.
+  - [ ] Shared seams from LTF-21, done once.
+  - [ ] Journey map: `AT` coordinates and route curves; a `StopArt` scene (a train on a sea wall, a signal, a small station).
+  - [ ] Souvenir piece `signal` in `apps/web/src/art.tsx` with `stop: 'rail'` (the existing `train` piece stays a Harbor Town piece).
+  - [ ] "What do you think?" line: covered by the shared fork feature.
+  - [ ] LTF-14 check-up texts tagged with stop `rail`: about 12 reserved items on a line timetable, a map key, a platform notice and a level crossing (the bank's Harbor Town Station texts set the tone).
+  - [ ] Checks as in LTF-21, plus a hand reading-level pass over the beats.
+  - [ ] Tests: engine routing for the rail route; an e2e run that picks Rail Coast, reaches the message, chooses a plan and reads the postcard, with axe.
+  - [ ] DW reads every line.
+- **Guards.** "Trains wait until it is fixed" states the safety rule without any danger word. Facts stay simple and true: a signal tells the driver to stop or go; a map key explains the symbols. Mr. Haddad is the only new character; the existing `transport` interest and the `train` piece are not touched. Sam Rivera's love of trains is left out on purpose, so the journey cast stays Captain Ada and the island hosts.
+
+## LTF-25 A second fork at Cloud Hill: two flight paths
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20.
+
+- **Story.** At the airfield, Captain Ada shows two flight paths on her map: the island way (today's Australia leg, with the windy day on a small island) and the reef way, over a chain of small islands. The reef way's setback is a closed airstrip: the runway on Shell Island is being rolled flat after rain, so the Kookaburra waits until 3 PM. Same number of sessions, same landing at Bluegum.
+- **He sees.** Beat 0: Captain Ada's map with two paths. Beat 1: "Below you, the small islands look like green dots in a blue sea." Beat 2 (`blocked`, notice "Shell Island Airstrip": "Runway closed until 3 PM." / "A roller is flattening it after the rain." / "Planes may land after 3 PM."), cope "A runway that is being fixed will open again. We land at 3 PM.", ask "What will you do while the roller works?", Plan A "Watch the roller from the fence" → beat 3 "At 3 PM the runway was flat and dry, and the Kookaburra landed for fuel." Plan B "Write a postcard home" → beat 3 "You wrote a postcard. At 3 PM the runway was flat and dry, and the Kookaburra landed for fuel." Beat 4: "The fuel tank is full again. One more session, and you land in Australia." Postcard and souvenir: the existing Australia postcard and koala piece, unchanged.
+- **School goal.** Staying flexible when plans change.
+- **Subtasks for story incorporation.**
+  - [ ] A second Australia-leg beat set in `content/journey.json`, keyed by the chosen path, and `next` on the airfield stop listing both paths.
+  - [ ] A fork beat at the airfield in `journey.tsx` reusing the LTF-20 fork card; a second curve on the map from the airfield to Australia.
+  - [ ] No new souvenir or stop art; the Australia stop stays one stop.
+  - [ ] Checks: the LTF-20 reachability check; a hand reading-level pass.
+  - [ ] Tests: engine test that both paths land after the same session count; an e2e run of the airfield fork with axe.
+  - [ ] DW reads every line.
+- **Guards.** The Kookaburra is Captain Ada's to fly, so the choice is never about the flight itself, only about the wait. Keep this after the four islands have landed, since it doubles the Australia leg's text to review.
+
+## LTF-26 Day trips: a second postcard from a reached island
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20.
+
+- **Story.** Once an island is reached, its postcard dialog gains a "Day trip" page: three or four sentences and one fact about a second place on the island (Fossil Bay's old quarry, Reef Island's tide pools, Star Point's weather station, Rail Coast's level crossing). It costs no sessions and moves nothing; it is a way to read more about the island he chose.
+- **He sees.** A "Day trip" button under the postcard. For example, Fossil Bay: "The old quarry is a place where rock was cut out of the ground. The rock is limestone. Limestone is made of the shells of tiny sea animals, pressed together over a very long time. Dr. Bell shows you a shell in the quarry wall."
+- **School goal.** Main idea: each day-trip text is short enough for "What is this mostly about?" in a check-up.
+- **Subtasks for story incorporation.**
+  - [ ] `daytrip: string[]` on the stop entries in `content/journey.json` (four texts) and on the `Stop` type.
+  - [ ] A second page in `PostcardCard` in `journey.tsx` with read-aloud; no map or art change.
+  - [ ] One "What do you think?" line in `features.ts` (`day-trip`, met when a day trip is opened).
+  - [ ] A hand reading-level pass; the facts checked by DW.
+  - [ ] An e2e check that the button appears only on reached islands, with axe.
+  - [ ] DW reads every line.
+- **Guards.** Never a reward for scores and never timed; it is simply there once the island is reached. Keep each text under 60 words.
+
+## LTF-27 The way home: back by a different island
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20.
+
+- **Story.** After the last koala is met, the sanctuary card offers a flight home with Captain Ada: Cloud Hill, then a fork to one of the islands he did not visit, then Gull Island and Home Island. The return legs reuse each island's host and places with new, shorter beats (a return visit has a different setback from the outward one), so the three unvisited islands' content is reached without a second journey. "Stay with the koalas" is always available, and the koalas stay visitable.
+- **He sees.** On the sanctuary card: "Captain Ada says the Kookaburra can fly you home. On the way, you can visit one more island." Then a fork with the islands he has not seen, and four legs home. Postcard at Home Island: "You are home. Your island has a new piece from every place you visited."
+- **School goal.** None directly; it reuses the islands' goals.
+- **Subtasks for story incorporation.**
+  - [ ] Return-leg beats for each island (five beats, one setback) and a Home Island arrival postcard in `content/journey.json`.
+  - [ ] Engine: a second route segment after `australia` in `journeyPosition`, saved like the outward choice; nothing resets for a learner at the sanctuary.
+  - [ ] Map: the return path drawn in a second color; the sanctuary card gains the offer.
+  - [ ] Checks: the LTF-20 reachability check extended to "every return route ends at Home Island"; a hand reading-level pass.
+  - [ ] Tests: engine test for the return segment and for the stay-with-koalas case; an e2e run of the home fork with axe.
+  - [ ] DW reads every line.
+- **Guards.** Decide first whether the journey should have an end (Australia) or keep going; this item only makes sense if DW wants the latter. Island souvenirs from the return trip are the same pieces, so a second visit to the same island must not be possible.
+
+## LTF-28 Letters between islands
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20; also closes the airfield beat 1 seam from LTF-21.
+
+- **Story.** The airfield's beat 1 today says "Bus 9 goes from Windy Cape to Cloud Hill", which is wrong for a sea route. Replace it with a per-origin letter from the island's host that quietly links to another island, so the world feels joined and a later return trip (LTF-27) has a reason. The links are true: Dr. Bell writes that Mari on Reef Island has a nautilus shell, a living animal with a coiled shell like the ammonite's; Mr. Haddad writes that the station clock is set by a radio time signal from the observatory at Star Point; Dr. Amal writes that the weather balloon's numbers go to the weather station on Reef Island too; Mari writes that the turtle beach sand came from the same reef that made Fossil Bay's limestone long ago.
+- **He sees.** At the airfield, beat 1 is "A letter came from Dr. Bell. It says: Captain Ada's boat will take you to the shore below Cloud Hill. Mari at Reef Island has a nautilus shell. It is a living animal with a coiled shell, like the ammonite." The Windy Cape origin keeps Bus 9.
+- **School goal.** Key details: each letter holds one travel detail (how he gets to Cloud Hill) and one fact.
+- **Subtasks for story incorporation.**
+  - [ ] A `byFrom` map on the airfield's beat 1 in `content/journey.json` (keys `cape`, `fossil`, `reef`, `star`, `rail`) and a one-line lookup in `shownBeat` in `journey.tsx` using the stop he came from.
+  - [ ] Checks: a hand reading-level pass; DW checks the four facts.
+  - [ ] Tests: a unit test that `shownBeat` picks the letter for the origin and falls back to the plain text.
+  - [ ] DW reads every line.
+- **Guards.** "Living animal with a coiled shell like the ammonite's" is literal; avoid "cousin". The nautilus lives in deep water by reefs, so Mari has a shell, not a tank.
+
+## LTF-29 Epilogue at Bluegum: a week with Ranger Tess
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20. If LTF-30 (the koala keeper arc) is approved, it replaces this item: this week becomes its first stop, LTF-31.
+
+- **Story.** After all eight koalas are met, instead of only "you can visit them any time", one last short leg: a week helping Ranger Tess at the sanctuary. The setback is a broken pump in the tree nursery, with the part coming on Thursday. It gives the journey a quiet ending and one last souvenir for the island.
+- **He sees.** Beat 0: "Ranger Tess asks for help this week. The sanctuary is planting new eucalyptus trees." Beat 1: "Koalas eat only some kinds of eucalyptus leaves, so the nursery grows those kinds." Beat 2 (`broken`, message from Ranger Tess: "The nursery pump is broken." / "The new part comes on Thursday." / "Until then, the young trees need water by hand."), cope "When something breaks, we can fix it. It just takes time, and there is a job we can do now.", ask "What will you do until Thursday?", Plan A "Carry water to the young trees" → beat 3 "You carried water every morning. On Thursday the part came, and the pump ran again." Plan B "Help count the joeys for the ranger's chart" → beat 3 "You counted three joeys for the chart. On Thursday the part came, and the pump ran again." Beat 4: "The young trees are green and tall enough to plant. One more session, and planting day comes." Postcard: "On planting day, you dig a hole and set a young eucalyptus tree in it." / "Ranger Tess says it will take years to grow tall." / "One day, a koala will sleep in it." / "Gumnut watches from the next tree." / "He is awake this time." Souvenir: `sapling`, "Eucalyptus sapling" (topic `nature`, stop `australia`).
+- **School goal.** Staying flexible when plans change.
+- **Subtasks for story incorporation.**
+  - [ ] An `epilogue` leg on the Australia stop in `content/journey.json` (five beats, message, cope, choice, talk, smooth, postcard, souvenir), shown after `allMet`.
+  - [ ] Engine: `journeyPosition` returns an epilogue step after the koalas; `BeatCard` shows it in place of the sanctuary card.
+  - [ ] Souvenir piece `sapling` in `apps/web/src/art.tsx`; no new map stop.
+  - [ ] Checks: a hand reading-level pass; `npm run check`.
+  - [ ] Tests: an engine test that the epilogue starts only after the last koala and never moves him back; an e2e run through the epilogue with axe.
+  - [ ] DW reads every line.
+- **Guards.** The eucalyptus fact matches the koala facts already in `journey.json` (Kip: "the right kinds of eucalyptus trees"). Gumnut was asleep in the arrival postcard, so "awake this time" is a deliberate small change, not a contradiction. Joeys are counted on a chart, never handled.
+
+## Proposed: the koala keeper arc (LTF-30 to LTF-35)
+
+Added 2026-10-13, drafted by a story-ideation pass at DW's request ("continue the journey from Australia to becoming a keeper of koalas, so the koalas are taken care of and many people can enjoy them"). Nothing here is approved yet. The arc continues after the eighth koala is met: Ranger Tess asks for help at Bluegum Koala Sanctuary, and five legs follow. It replaces LTF-29 (its week with Ranger Tess becomes the first stop) and comes before LTF-27 (the way home, if still wanted, is offered after Opening Day). It says "koala keeper at the sanctuary", never "zoo keeper", because Bluegum is a sanctuary run by a ranger in today's canon. The vet was drafted as "Dr. Lin"; renamed Dr. Reyes here, since Mrs. Lin already runs the Lighthouse Café.
+
+## LTF-30 Koala keeper arc at Bluegum (overview)
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20. Replaces LTF-29: its week with Ranger Tess becomes the first stop (LTF-31), with its beats and the `sapling` souvenir kept. Comes before LTF-27: if the way home is still wanted, its offer moves from the allMet card to the end of this arc, and "Stay with the koalas" becomes "Stay at the sanctuary". This answers LTF-27's open guard ("decide whether the journey should have an end"): the journey continues at the sanctuary.
+
+- **Story.** After the eighth koala is met, Ranger Tess asks for help at Bluegum Koala Sanctuary. Five legs follow: planting food trees, learning the keeper's morning round, the vet's check-up day, building a new koala home with a viewing path and signs, and opening day, when a school group and other visitors come. The arc is about caring for the koalas and sharing them with many people; the learner becomes a junior koala keeper at the sanctuary.
+- **He sees.** Stops in order: The Tree Nursery (LTF-31), Junior Keeper Day (LTF-32), The Vet Clinic (LTF-33), The New Koala Home (LTF-34), Opening Day (LTF-35). Start: after he meets Sunny, the eighth koala, the sanctuary card shows the allMet line exactly as now. His next finished session shows beat 0 of the first leg ("On the way to The Tree Nursery") in place of the sanctuary card, with the usual leg dots. Sessions: five legs at the journey pace, so 25 sessions at five a leg (15 at three, 35 at seven), after the eight koala sessions. End: the Opening Day postcard and souvenir, then a closing sanctuary card: "You are a junior koala keeper at Bluegum. The koalas and the visitors are glad you came. You can visit them any time." Finished sessions after that move nothing, as today after allMet, until LTF-27 or a later arc.
+- **School goal.** All three across the arc: staying flexible when plans change (LTF-31, LTF-33, LTF-35), key details (LTF-32, LTF-35), main idea (LTF-34).
+- **Subtasks for story incorporation.** Shared work, done once for the arc:
+  - [ ] `content/journey.json`: a new top-level `arc` object: `arc.about`, `arc.stops` (five entries with the same fields as today's stops: `id`, `name`, `emoji`, `souvenir`, `next`, `beats`, `postcard`; the last has no `next`) and `arc.done` (the closing line above). Keep `stops`, `koalas` and `allMet` unchanged. A separate list means `ROUTE_LENGTH`, the LTF-20 fork code and the routes check do not change; appending to `stops` would make every loop over `JOURNEY.stops` arc-aware. Update the top-level `about` line to say the arc follows the koalas.
+  - [ ] `packages/schema/routes.mjs` (or `validate.mjs`): an arc chain check: every `arc.stops[i].next` names the following arc stop, the chain is linear, and the last has none. Every arc stop with a `souvenir` must resolve in `pieceById` (an e2e or unit check, since the pieces live in the web app).
+  - [ ] Engine, `packages/engine/src/index.ts`: `journeyPosition` stays as it is for the way to Australia. A new `arcPosition(after, koalas, arcStops, legLength, anchor)` runs `journeyPosition` again on the sessions after the koala meetings (`after - koalas`, with stop 0 = Australia), as LTF-27 proposed for a second segment. `journeyNow` in `journey.tsx` returns the koala only while `after < koalas.length`, and the arc stop and beat once `after >= koalas.length`. Keep `arrived: true` throughout, so nothing that reads it (the map bubble, Session.tsx's `koalaMet`) changes meaning.
+  - [ ] Anchor: a pace change in the arc must never move him back or ahead. `JourneyAnchor` gains the arc position (for example `arc?: { at, stop, step }`), and the pace-change handler in `apps/web/src/Adult.tsx` saves it the same way it saves the outward position. A learner who already has `after >= 8` when this ships is anchored once on load at the start of the arc, so his next session shows beat 0, like the fork wait: no jump ahead, no reset.
+  - [ ] Engine tests: `after = 7` still meets Sunny and `after = 8` is arc stop 0 beat 0; `after = 8 + legLength` arrives at The Tree Nursery; `after = 8 + 5 * legLength` arrives at Opening Day; later sessions stay there with `done: true`; a pace change mid-arc keeps his stop and step; the "already all met" learner starts at beat 0; `routePosition` and `pastFork` are unchanged before Australia.
+  - [ ] `apps/web/src/journey.tsx`: `BeatCard` shows the arc beat instead of the sanctuary card once the arc has begun, and the closing card after Opening Day. `reachedStops` and the postcards include reached arc stops. Map: five small markers on the Australian landmass joined by a short path from the Australia marker, keyed by stop id; an arc-aware bubble line ("You are at Bluegum, on the way to The Tree Nursery."); `StopArt` scenes for the five stops. If the landmass is too crowded, a Bluegum inset panel is the fallback.
+  - [ ] `apps/web/src/art.tsx`: five souvenir pieces with `stop` set (`sapling`, `scale`, `vetbag`, `viewpath`, `koalasign`).
+  - [ ] `apps/web/src/features.ts`: one "What do you think?" line, `keeper-arc`, "The story goes on at the sanctuary. You help Ranger Tess as a junior koala keeper.", met by an activity event logged once when the first arc beat is shown.
+  - [ ] Checks: `npm run check` (with the arc chain check), `npm test`, and a hand reading-level pass over every arc line (level 1 to 2 band, sentences of 13 words or fewer); beats and postcards are outside `pipeline/check.py`.
+  - [ ] e2e: seed a learner at the sanctuary who has met seven koalas, finish a session and check "On the way to The Tree Nursery"; run to the first setback, choose a plan, read the postcard and pick the sapling; open the map with arc markers; axe check on each screen.
+  - [ ] DW reads every line of LTF-31 to LTF-35.
+- **Guards.** The learner never holds a koala: Ranger Tess and the vet handle koalas, for care only. No sick, hurt or lost animals; the clinic day is a check-up and Banjo is well throughout. Visitors look from the path, speak softly and never touch or feed a koala. Facts come from the koala facts already in `journey.json` plus a few simple true ones: keepers cut fresh branches every day, weigh koalas on a scale with a branch, rake under the trees, plant food trees, vets check eyes, ears and teeth, and koalas drink more on hot days. "Koala keeper", never "zoo". Captain Ada and the Kookaburra stay in Australia and are not contradicted (LTF-27 needs her there). Every setback is an everyday problem with nobody blamed. No new obstacle kinds: the five setbacks reuse `broken`, `weather` and `blocked`.
+
+## LTF-31 The Tree Nursery: planting food trees
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-30. Replaces LTF-29: its beats, pump setback, postcard and `sapling` souvenir are kept, with one plan option changed (see Guards).
+
+- **Story.** Ranger Tess asks for help this week: Bluegum is planting new eucalyptus trees so the koalas always have the right leaves to eat. The setback is the broken nursery pump, with the new part coming on Thursday, so the young trees get water by hand. The postcard is planting day, and the souvenir is a eucalyptus sapling.
+- **He sees.**
+  - Beat 0: "Ranger Tess asks for your help this week. The sanctuary is planting new eucalyptus trees. Koalas need the right trees to eat."
+  - Beat 1: "Koalas eat only some kinds of eucalyptus leaves. So the nursery grows just those kinds. A pump waters the young trees. It is very old." (smooth: without the last sentence)
+  - Beat 2 (obstacle, `broken`): "The nursery pump stopped working this morning. Ranger Tess has ordered a new part. Until it comes, the young trees need water by hand." Notice (type `message`, app text, from "Ranger Tess"): "The nursery pump is broken." / "The new part comes on Thursday." / "Until then, the young trees need water by hand." Cope: "When something breaks, we can fix it. It takes time, and there is a job we can do now." Ask: "What will you do until Thursday?" Plan A "Carry water to the young trees" (reply "Good plan. Two cans each morning is enough.") → beat 3: "You carried water every morning. On Thursday the part came, and the pump ran again." Plan B "Cut fresh leaves for the koalas" (reply "Good plan. Keepers cut fresh branches every day.") → beat 3: "You cut fresh branches every day with Ranger Tess. On Thursday the part came, and the pump ran again." Talk: "Ask: the pump broke, and the plan changed. What job did he do instead?" Smooth: "The pump hums, and the young trees are wet and green."
+  - Beat 3 (base text, shown if no plan was chosen): "The pump is running again. Ranger Tess checks every young tree." (smooth: "The young trees have grown. Some are as tall as you.")
+  - Beat 4: "The young trees are tall enough to plant. One more session, and planting day comes."
+  - Postcard: "On planting day, you dig a hole for a young eucalyptus tree." / "Ranger Tess says it will take years to grow tall." / "One day, a koala will sleep in it." / "Gumnut watches from the next tree." / "He is awake this time."
+  - Souvenir: `sapling`, "Eucalyptus sapling" (topic `nature`, stop `nursery`).
+- **School goal.** Staying flexible when plans change: the pump plan fails, and both plans accept the wait with a useful job.
+- **Subtasks for story incorporation.**
+  - [ ] Arc stop entry in `content/journey.json`: id `nursery`, name "The Tree Nursery", emoji 🌱, `souvenir: "sapling"`, `next: ["keeper"]`, five beats with notice, cope, choice, talk and smooth texts, and the postcard.
+  - [ ] Engine: covered by the shared LTF-30 work; this stop is the first arc leg, so the "arc starts at beat 0 after Sunny" test names it.
+  - [ ] Map and art: a marker on the landmass and a `StopArt` scene (rows of young trees in pots, a water tank, a pump). Souvenir piece `sapling` in `apps/web/src/art.tsx` with `stop: 'nursery'`.
+  - [ ] "What do you think?" line: covered by the shared `keeper-arc` line in LTF-30.
+  - [ ] Checks: `npm run check`; a hand reading-level pass (level 1 to 2 band, 13 words or fewer a sentence).
+  - [ ] Tests: engine arrival at this stop after `8 + legLength` sessions past Australia; the e2e run in LTF-30 with an axe check.
+  - [ ] DW reads every line: beats, message rows, cope, both options and their after lines, talk, smooth texts, postcard and souvenir name.
+- **Guards.** The eucalyptus fact matches Kip's ("the right kinds of eucalyptus trees"). Gumnut was asleep in the arrival postcard, so "awake this time" is a deliberate small change (from LTF-29). LTF-29's option "count the joeys for the ranger's chart" is replaced by cutting fresh leaves, a real daily keeper job, so no one counts joeys in pouches. The trees get water by hand the same day, so there is no water-shortage worry. Nobody is blamed for the old pump.
+
+## LTF-32 Junior Keeper Day: the morning round
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-30. Comes after LTF-31 and before LTF-27.
+
+- **Story.** Ranger Tess teaches the keeper's morning round from a chart with four jobs: weigh each koala, clean under the trees, fresh leaves, water. The setback is a very hot day: the koalas rest in the shade, so weighing moves to 7 AM the next day, when it is cool. The postcard is the first full round done alone, and the souvenir is a keeper's scale.
+- **He sees.**
+  - Beat 0: "Ranger Tess has a plan for you. Next week, you learn the keeper's morning round. There are four jobs on the chart."
+  - Beat 1: "Job one: weigh each koala. Job two: clean the ground under the trees. Job three: fresh leaves. Job four: water. The weather report says a hot day is coming." (smooth: without the last sentence)
+  - Beat 2 (obstacle, `weather`): "Today is very hot. The koalas rest in the shade and hold the cool tree trunks. Ranger Tess moves the weighing to 7 AM tomorrow, when it is cool." Notice (type `notice`, title "Bluegum Keeper Board", icon ☀️): "Hot day. Koalas rest in the shade." / "Weighing moves to 7 AM tomorrow." / "Put out extra water bowls today." Cope: "Hot days pass. The koalas rest to stay cool. We can change the plan too." Ask: "What will you do on the hot day?" Plan A "Put out extra water bowls" (reply "Good plan. Koalas drink more on hot days.") → beat 3: "You put out water bowls in the shade. The next morning was cool. At 7 AM, you weighed every koala." Plan B "Fill in the chart in the shade" (reply "Good plan. The chart has a row for each koala.") → beat 3: "You wrote each koala's name on the chart. The next morning was cool. At 7 AM, you weighed every koala." Talk: "Ask: the hot day changed the keeper's plan. What did they do instead, and when?" Smooth: "Today is warm and calm. The koalas rest in the shade."
+  - Beat 3 (base text): "Every koala's weight is on the chart now. Ranger Tess says the numbers look good." (smooth: "You weighed every koala. The numbers are on the chart.")
+  - Beat 4: "Wattle's joey is in her pouch, so Wattle weighs a little more. Tomorrow you do the whole round by yourself, with Ranger Tess close by. One more session, and it is Junior Keeper Day."
+  - Postcard: "On Junior Keeper Day, you do the morning round." / "You weigh Pip. He climbs onto the branch on the scale." / "You rake under the trees and hang fresh branches." / "Koalas sleep most of the day, so the round is quiet." / "Ranger Tess writes your name on the keeper's chart."
+  - Souvenir: `scale`, "Keeper's scale" (topic `animals`, stop `keeper`).
+- **School goal.** Key details: the Keeper Board has three rows, and only the 7 AM row decides when weighing happens; the four-job chart is the same skill in a list.
+- **Subtasks for story incorporation.**
+  - [ ] Arc stop entry in `content/journey.json`: id `keeper`, name "Junior Keeper Day", emoji 📋, `souvenir: "scale"`, `next: ["clinic"]`, five beats with notice, cope, choice, talk and smooth texts, and the postcard.
+  - [ ] Engine: covered by LTF-30.
+  - [ ] Map and art: a marker and a `StopArt` scene (a scale with a branch perch, a rake, a chart on a board). Souvenir piece `scale` with `stop: 'keeper'`.
+  - [ ] "What do you think?" line: covered by LTF-30.
+  - [ ] Checks: `npm run check`; a hand reading-level pass.
+  - [ ] Tests: engine arrival after `8 + 2 * legLength`; an e2e pass through the hot-day notice and a plan, with an axe check.
+  - [ ] DW reads every line.
+- **Guards.** "Hot day" is stated plainly with no temperature number and no danger word; koalas resting in shade and holding cool trunks is what they do. "Koalas drink more on hot days" sits beside Gumnut's fact that they do not drink much; both are true. The learner weighs Pip by watching him climb onto the branch; Ranger Tess is beside him, and he never lifts a koala. Cleaning is "rake the ground", nothing more. Wattle's joey stays in the pouch and is never handled; the weight note matches Wattle's facts.
+
+## LTF-33 The Vet Clinic: check-up day
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-30. Comes after LTF-32 and before LTF-27.
+
+- **Story.** Every koala at Bluegum gets a check-up with Dr. Reyes, the vet (new character). This week it is Banjo's turn, and the learner rides along with Ranger Tess. The setback is a closed road: workers are fixing the main road to town, so they take River Road or Dr. Reyes comes to the sanctuary in her van. The souvenir is a vet's bag.
+- **He sees.**
+  - Beat 0: "Every koala at Bluegum gets a check-up with the vet. The vet is Dr. Reyes. Her clinic is in town."
+  - Beat 1: "This week it is Banjo's turn. Ranger Tess puts fresh leaves in his travel box. The clinic is a short drive away. There are roadworks on the main road this week." (smooth: without the last sentence)
+  - Beat 2 (obstacle, `blocked`): "The truck reached the main road, but the road is closed. Workers are fixing the road today. The check-up is at 10 AM." Notice (type `notice`, title "Main Road", icon 🚧): "ROAD CLOSED today." / "Workers are fixing the road." / "Use River Road to town." Cope: "When a road is closed, there is another way. The check-up can still happen today." Ask: "How will Banjo get his check-up?" Plan A "Take River Road with Ranger Tess" (reply "Good plan. River Road is longer, but it is open.") → beat 3: "You took River Road. It was longer, but you reached the clinic by 10 AM. Dr. Reyes was ready." Plan B "Ask Dr. Reyes to come to the sanctuary" (reply "Good plan. Dr. Reyes has a van with all she needs.") → beat 3: "Dr. Reyes came in her van. She did Banjo's check-up under his own tree." Talk: "Ask: the road was closed, so they found another way. Which plan would you pick, and why?" Smooth: "The truck takes the main road to town. Banjo is asleep in his travel box."
+  - Beat 3 (base text): "Dr. Reyes checks Banjo's eyes, ears and teeth. Banjo is well." (smooth: "Dr. Reyes is ready for Banjo at 10 AM.")
+  - Beat 4: "Dr. Reyes asks you to spend a whole day at the clinic. You will see how a vet works. One more session, and you reach the clinic."
+  - Postcard: "At the clinic, Dr. Reyes shows you her tools." / "A small light is for looking in ears and eyes." / "Koalas chew tough leaves, so the vet checks their teeth." / "Keepers and vets work as a team to keep koalas well." / "On Banjo's chart, Dr. Reyes writes: Banjo is well."
+  - Souvenir: `vetbag`, "Vet's bag" (topic `animals`, stop `clinic`).
+- **School goal.** Staying flexible when plans change: the road is closed, and both plans still give Banjo his check-up that day.
+- **Subtasks for story incorporation.**
+  - [ ] Arc stop entry in `content/journey.json`: id `clinic`, name "The Vet Clinic", emoji 🩺, `souvenir: "vetbag"`, `next: ["habitat"]`, five beats with notice, cope, choice, talk and smooth texts, and the postcard.
+  - [ ] Engine: covered by LTF-30.
+  - [ ] Map and art: a marker and a `StopArt` scene (a small white clinic, a van, a gum tree). Souvenir piece `vetbag` with `stop: 'clinic'`.
+  - [ ] "What do you think?" line: covered by LTF-30.
+  - [ ] Checks: `npm run check`; a hand reading-level pass.
+  - [ ] Tests: engine arrival after `8 + 3 * legLength`; an e2e pass through the road notice and a plan, with an axe check.
+  - [ ] DW reads every line.
+- **Guards.** A check-up only: Banjo is well before, during and after, with no illness, injections or "hurt". Dr. Reyes is the only new character (not "Dr. Lin", which would clash with Mrs. Lin of the Lighthouse Café). Ranger Tess carries the travel box, which holds fresh leaves; the learner never holds Banjo. "Workers are fixing the road" states the closure without a danger word, like Windy Cape's fallen rocks. Facts are simple and true: vets check eyes, ears, teeth and weight; koala teeth wear from chewing tough leaves, so vets check them. Beat 4 works for both plans, since the clinic day is a visit to learn, not Banjo's appointment.
+
+## LTF-34 The New Koala Home: a path for everyone
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-30. Comes after LTF-33 and before LTF-27.
+
+- **Story.** Bluegum builds a new koala home: more trees, a shade roof, and a viewing path with a ramp so a visitor in a wheelchair can see the koalas too, with signs along it that teach. The setback is a delivery truck that broke down: the boards for the ramp come on Friday, so the signs and the trees come first. The souvenir is the viewing path.
+- **He sees.**
+  - Beat 0: "Bluegum is building a new koala home. It will have more trees and a shade roof. A viewing path will go around it."
+  - Beat 1: "Ranger Tess shows you the plan. The path has a ramp, so a wheelchair can use it. Signs along the path will teach about koalas. The boards for the ramp come by truck." (smooth: without the last sentence)
+  - Beat 2 (obstacle, `broken`): "The delivery truck broke down on the highway. The boards for the ramp are still on it. The driver says a new truck brings them on Friday." Notice (type `message`, app text, from "Bluegum Timber"): "Our truck broke down today." / "Your boards are safe on it." / "A new truck brings them on Friday." Cope: "When something breaks, the plan waits a few days. There are other jobs to do first." Ask: "What will you do until Friday?" Plan A "Paint the signs for the path" (reply "Good plan. Each sign says one thing about koalas.") → beat 3: "You painted four signs. On Friday the boards came, and the ramp was built." Plan B "Plant the new trees first" (reply "Good plan. The trees need to go in before the path.") → beat 3: "You planted six trees with Ranger Tess. On Friday the boards came, and the ramp was built." Talk: "Ask: the boards were late, so they did other jobs first. What else could they have done?" Smooth: "The boards for the ramp came today. Ranger Tess counts them."
+  - Beat 3 (base text): "The ramp is built. Omar, a visitor, tests it in his wheelchair, and it works well." (smooth: "The ramp is built. The path goes all the way around.")
+  - Beat 4: "The signs are up along the path. Each sign tells one thing about koalas. One more session, and the new koala home is ready."
+  - Postcard: "The new koala home has tall trees and a shade roof." / "A viewing path with a ramp goes all the way around." / "Omar comes in his wheelchair and sees Matilda in a tree." / "The signs say: Koalas sleep most of the day. Please speak softly." / "Ranger Tess says, \"Now many people can see the koalas.\""
+  - Souvenir: `viewpath`, "Viewing path" (topic `nature`, stop `habitat`).
+- **School goal.** Main idea: each sign along the path says one main thing about koalas, so a sign is a main idea in one sentence; plan A has him paint them.
+- **Subtasks for story incorporation.**
+  - [ ] Arc stop entry in `content/journey.json`: id `habitat`, name "The New Koala Home", emoji 🌳, `souvenir: "viewpath"`, `next: ["opening"]`, five beats with notice, cope, choice, talk and smooth texts, and the postcard.
+  - [ ] Engine: covered by LTF-30.
+  - [ ] Map and art: a marker and a `StopArt` scene (gum trees, a shade roof, a looping path with a ramp, one sign). Souvenir piece `viewpath` with `stop: 'habitat'`.
+  - [ ] "What do you think?" line: covered by LTF-30.
+  - [ ] Checks: `npm run check`; a hand reading-level pass.
+  - [ ] Tests: engine arrival after `8 + 4 * legLength`; an e2e pass through the truck message and a plan, with an axe check.
+  - [ ] DW reads every line.
+- **Guards.** "Broke down" is a flat everyday truck problem; nobody is hurt and the boards are safe, which the message says. Omar is a visitor who uses a wheelchair, named and ordinary; the ramp is for him and for everyone, and nobody "helps" him. "Wheelchair" is used as a plain word. The sign line asks visitors to speak softly, and nobody touches a koala. The sign facts match Banjo's (sleep most of the day). Where beat 3's base text was not shown, the postcard introduces Omar as "a visitor".
+
+## LTF-35 Opening Day: visitors come
+
+Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-30. Comes after LTF-34; it is the arc's end, and LTF-27's offer (if approved) follows it.
+
+- **Story.** The new koala home opens on Saturday, with a school group of 24 children, Omar and his family, and other visitors; the learner tells the children one koala fact he has practiced. The setback is a changed weather report: rain on Saturday morning, so the welcome talk moves under the big tent or into the shed. The postcard is opening day itself, and the souvenir is a koala sign.
+- **He sees.**
+  - Beat 0: "The new koala home opens on Saturday. Ranger Tess asks you to help on the day. A school group is coming."
+  - Beat 1: "The posters are up in town. The school group has 24 children and two teachers. You will tell them one koala fact. The weather report says rain may come on Saturday." (smooth: without the last sentence)
+  - Beat 2 (obstacle, `weather`): "The weather report changed. Rain will come on Saturday morning. The welcome talk was going to be on the grass." Notice (type `notice`, title "Weather Report", icon 🌧️): "Saturday morning: rain." / "Saturday afternoon: sun." / "Bring a raincoat." Cope: "Rain does not stop opening day. We can move the talk to a dry place." Ask: "Where will the welcome talk be?" Plan A "Put up the big tent on the grass" (reply "Good plan. The tent is in the shed, and it is dry inside.") → beat 3: "The tent went up on Friday. On Saturday, the visitors stayed dry under the tent for the talk." Plan B "Move the talk into the big shed" (reply "Good plan. The shed has room for the whole school group.") → beat 3: "You set out chairs in the shed on Friday. On Saturday, the talk was dry and warm inside." Talk: "Ask: rain was coming on opening day. How did they change the plan?" Smooth: "The weather report says Saturday will be sunny. The talk will be on the grass."
+  - Beat 3 (base text): "The talk has a dry place now. You practice your koala fact three times." (smooth: "You practice your koala fact three times. Ranger Tess listens.")
+  - Beat 4: "Everything is ready: the path, the signs and the chairs. One more session, and it is Opening Day."
+  - Postcard: "On Opening Day, the rain stops at noon, and the sun comes out." / "The school group walks the path and reads every sign." / "Omar is back, and he shows a family the ramp." / "You say your fact: koalas sleep most of the day." / "Ranger Tess says, \"You are a junior koala keeper now.\""
+  - Closing card after the postcard (`arc.done`): "You are a junior koala keeper at Bluegum. The koalas and the visitors are glad you came. You can visit them any time."
+  - Souvenir: `koalasign`, "Koala sign" (topic `animals`, stop `opening`).
+- **School goal.** Key details: the weather report's rows hold one time that decides the plan (Saturday morning), and the school group's size (24 children, two teachers) decides the chairs in plan B.
+- **Subtasks for story incorporation.**
+  - [ ] Arc stop entry in `content/journey.json`: id `opening`, name "Opening Day", emoji 🎉, `souvenir: "koalasign"`, no `next` (the arc's end), five beats with notice, cope, choice, talk and smooth texts, and the postcard; `arc.done` with the closing line.
+  - [ ] Engine: covered by LTF-30; this stop is where `done: true` holds for every later session.
+  - [ ] `apps/web/src/journey.tsx`: the closing card in `BeatCard` when the arc is done; if LTF-27 is approved, its "fly home" offer sits on this card instead of the allMet card.
+  - [ ] Map and art: a marker and a `StopArt` scene (a gate with a banner, people on the path, a tent). Souvenir piece `koalasign` with `stop: 'opening'`.
+  - [ ] "What do you think?" line: covered by LTF-30.
+  - [ ] Checks: `npm run check`; a hand reading-level pass.
+  - [ ] Tests: engine arrival after `8 + 5 * legLength` and that later sessions stay here; an e2e pass through the weather report, a plan, the postcard, the sign and the closing card, with an axe check.
+  - [ ] DW reads every line.
+- **Guards.** Rain is weather, not a storm; nobody is cold or wet, and the report itself promises afternoon sun. Visitors read the signs and stay on the path; nobody touches or feeds a koala. The school is "a school group" with no name, so no real or canon school is implied. The learner's talk is one sentence he practiced three times, so the social moment is planned and small. "Junior koala keeper", never zoo keeper. The postcard's weather matches the report and works for both plans.
+
 ## LTF-19 Guest codes for friends and classmates
 
-Added 2026-10-13. Requested by DW: "a way for me as an operator/parent to send login codes to friends/classmates can try without a microsoft invite." Approach to confirm.
+Added 2026-10-13. Requested by DW: "a way for me as an operator/parent to send login codes to friends/classmates can try without a microsoft invite." Approach to confirm. DW 2026-10-13: not now.
 
 - **Research.** None needed: this is an access feature, not a teaching one. It follows the plan's privacy rules (Safety, privacy and accessibility), so nothing about a guest child leaves their device.
 - **Why not the live site.** Static Web Apps grants a role only after a sign-in with an identity provider. Invitations are capped at 25 on both plans. Assigning roles with a function needs the Standard plan and still needs a sign-in. A code on its own cannot open the family site.
@@ -60,7 +396,9 @@ Added 2026-10-13. Approved. Built 2026-10-13. Research: [Kim et al. 2025](https:
 
 ## LTF-02 A reasoning card for feelings questions
 
-Added 2026-10-13. Approved. Research: [Wang & Poon 2026](https://link.springer.com/article/10.1007/s10803-025-07148-5) (think-alouds, an organizer and error correction; gains of 40 to 56 percentage points at ages 10 to 11). Plan rule R24, extending R3 and R14.
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [Wang & Poon 2026](https://link.springer.com/article/10.1007/s10803-025-07148-5) (think-alouds, an organizer and error correction; gains of 40 to 56 percentage points at ages 10 to 11). Plan rule R24, extending R3 and R14.
+
+- **What was built.** New content, not retrofits: 10 N5 passages with 23 items (n5-i174 to n5-i196) and 5 P2 passages with 12 items (p2-i87 to p2-i98), 29 of them with a card. All are inside their reading bands. The second hint shows Clue and What I know. "So" stays a question ("What does that tell you?") until the answer is shown, so the last step of the thinking is his. The N5 worked example fills the card box by box (model steps take `fill`). `packages/schema/reason.mjs` holds the rule, `npm run check` runs it, and `reason.test.ts` tests it. Answers record `card` when he saw one. The single-case record is a card in Activity: his N5 right-first-time on first-time answers, before and after he first saw a card. The content guide has a section on writing reasons. One open item: the content checks show 3 new coherence warnings on these passages, which read as false alarms and are left for DW to review.
 
 - **He sees.** On N5 and P2 items, the second hint is a three-box card: Clue, What I know, So. The N5 worked example in Watch fills in the same card.
 - **Build.** Item gains `reason: {clue, know, so}`. New N5 and P2 items are written with reasons. `ItemView.tsx` shows a ReasonCard at hint level 2. The content guide explains how to write a reason.
@@ -70,7 +408,11 @@ Added 2026-10-13. Approved. Research: [Wang & Poon 2026](https://link.springer.c
 
 ## LTF-03 Who's who: tap "she" to see who it means
 
-Added 2026-10-13. Approved. Research: [Courteau et al. 2026](https://link.springer.com/article/10.1007/s11145-026-10824-2); [O'Connor & Klein 2004](https://link.springer.com/article/10.1023/B:JADD.0000022603.44077.6b); [Jozwik & O'Quin 2026](https://eric.ed.gov/?id=EJ1512266). Plan rules R5 and R22.
+Added 2026-10-13. Approved. Built 2026-10-13, N4 first.
+
+- **What was built.** All 54 N4 passages with sentences have `refs` (659 pronouns), drafted and then checked: `npm run check` confirms each points at a pronoun that is there and names someone or something in the passage (`packages/schema/refs.mjs`), and the drafts agree with the referent named by every one of the 31 existing N4 pronoun questions. 23 pronouns were left out: one truly ambiguous, the rest meaning several people that no single phrase names, "it" with nothing to point to, or people in general. Dotted pronouns show a "she = Priya" card when tapped, in N4 guided practice and, outside N4, in level 1 and 2 texts that have refs; never in N4's own practice or warm-up, or the Peak check; after N4 is mastered, or with the setting "On Help only", only after Help. The pronoun a question asks about never gets a dot. The "Who's who help" setting is in Learning settings, and taps are logged (`who-help`). Tappable words are now at least 24px wide (WCAG 2.2 target size), which also helps the older tap-a-word items. Then the level 1 and 2 stories outside N4: 108 passages, 710 refs (38 pronouns left out for the same reasons, and 4 more dropped on review as uncertain). "Names instead of he and she in the easiest texts" (a Learning setting, off by default) shows and reads level 1 texts with names in place of the pronouns their refs know ("Maya took Maya's flute"), telling a possessive "her" from an object "her", never inside quoted speech, and never in N4. When the "Who did it?" stop finds sentence grammar low, the Overview now points to this setting. Unit tests cover the rewriting, and an e2e test turns it on.
+
+Research: [Courteau et al. 2026](https://link.springer.com/article/10.1007/s11145-026-10824-2); [O'Connor & Klein 2004](https://link.springer.com/article/10.1023/B:JADD.0000022603.44077.6b); [Jozwik & O'Quin 2026](https://eric.ed.gov/?id=EJ1512266). Plan rules R5 and R22.
 
 - **He sees.** Dotted pronouns during Together on N4 and in stories at levels 1 and 2. Tapping one shows "she = Priya". Once N4 is mastered, the dots appear only when he presses Help. They never show in N4 Your turn or the Peak check.
 - **Grown-ups see.** A "Who's who help" setting (auto, on Help only, off), and "Names instead of he/she at level 1".
@@ -80,7 +422,9 @@ Added 2026-10-13. Approved. Research: [Courteau et al. 2026](https://link.spring
 
 ## LTF-04 Word help
 
-Added 2026-10-13. Approved. Research: [Intepe et al. 2025](https://eric.ed.gov/?id=EJ1475591); [Kritsotakis & Morfidi 2025](https://journals.sagepub.com/doi/full/10.1177/23969415251371544). Plan rules R23 and R22, putting R1's "teach vocabulary inside lessons" into the app.
+Added 2026-10-13. Approved. Pilot size confirmed by DW 2026-10-13: about 60 level 3 to 5 passages first, so his taps and the warm-up word results show whether to gloss the rest. Built 2026-10-13.
+
+- **What was built.** 58 passages across F2 to F6 and N1 to N6 (picked by script, levels 3 to 5) have 170 glossed words, each with a plain meaning and a picture, drafted and then checked: every word is in its passage (`packages/schema/glossary.mjs`, in `npm run check`), and every meaning reads easier than its word (`pipeline/check.py`: no word in the meaning longer than the glossed word or two syllables). Underlined words show a card with the meaning and read-aloud; word help is off whenever the text itself is tapped to answer. The warm-up can open with a word for today: a glossed word from one of today's texts, or one he tapped before, with three meanings to choose from. It is logged as activity, never as a skill answer. The Activity tab shows the words he taps most and how the word for today goes. Every meaning still needs DW's review in the Content library. Research: [Intepe et al. 2025](https://eric.ed.gov/?id=EJ1475591); [Kritsotakis & Morfidi 2025](https://journals.sagepub.com/doi/full/10.1177/23969415251371544). Plan rules R23 and R22, putting R1's "teach vocabulary inside lessons" into the app.
 
 - **He sees.** Up to three underlined words in level 3 to 5 texts. Tapping one shows a picture, a plain meaning and a speaker button. Some warm-ups start with a word from today's text.
 - **Grown-ups see.** The words he taps most, which come back in later warm-ups.
@@ -102,7 +446,9 @@ Added 2026-10-13. Approved. Built 2026-10-13. Research: [Yang et al. 2026 (AUTIV
 
 ## LTF-06 His day as a four-panel strip
 
-Added 2026-10-13. Approved. Needs LTF-05. Research: [Yang et al. 2026 (AUTIVERSE)](https://arxiv.org/abs/2509.17466); [Lee, Quinn & Jiang 2025](https://link.springer.com/article/10.1007/s10803-025-07014-4). Plan rules R20 and R27.
+Added 2026-10-13. Approved. Built 2026-10-13. Needs LTF-05. Research: [Yang et al. 2026 (AUTIVERSE)](https://arxiv.org/abs/2509.17466); [Lee, Quinn & Jiang 2025](https://link.springer.com/article/10.1007/s10803-025-07014-4). Plan rules R20 and R27.
+
+- **What was built.** Day recounts show one strip per part of the day, in his order: Before (who he was with), What happened (what he did, and anything hard), After, and How I felt. Tapping a box asks only that box's questions again, then comes straight back. Play it aloud lights up each box as it is read. Skipped questions are now counted from his final answers, so a changed answer is not counted twice. RecountEvent records `changed`, which also tells the "What do you think?" card that he has seen the strip. Show recounts keep their sentence list. Still to do: check the plain panels with him, as the guard asks.
 
 - **He sees.** The "Here is what you told me" screen shows four panels: Before, What happened, After and How I felt. Tapping a panel changes it. Play it aloud reads one panel at a time.
 - **Build.** A Strip component in `Today.tsx`, with styles from the existing tokens.
@@ -111,7 +457,9 @@ Added 2026-10-13. Approved. Needs LTF-05. Research: [Yang et al. 2026 (AUTIVERSE
 
 ## LTF-07 Ideas behind a button as the tiles fade
 
-Added 2026-10-13. Approved. Research: [McWilliams & Hanson 2025](https://link.springer.com/article/10.1007/s40616-025-00218-w); [Petersen et al. 2014](https://pubs.asha.org/doi/10.1044/2013_LSHSS-12-0099). Plan rule R28, checking R16's "fade slowly".
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [McWilliams & Hanson 2025](https://link.springer.com/article/10.1007/s40616-025-00218-w); [Petersen et al. 2014](https://pubs.asha.org/doi/10.1044/2013_LSHSS-12-0099). Plan rule R28, checking R16's "fade slowly".
+
+- **What was built.** Day recounts only; show recounts keep their tiles. Each question shows a starter that his words finish ("In Math, I ...") and a Next button. "No" or "nothing" to the hard question counts as nothing was hard. RecountEvent records `ideas`, one entry per answered question. The step-back rule (`ideasUse` in `activity.ts`): once he has had the button for two weeks, if he opened the ideas on every question in at least three recounts over the last two weeks, Today steps back a stage. It moves on again by itself once fewer than three recent recounts do. A stage set by a grown-up in Settings is never changed. The card is in the Today recounts tab.
 
 - **He sees.** From stage 3, a sentence starter and a big "Show me ideas" button. The tiles appear only if he taps it. Nothing times him.
 - **Grown-ups see.** "Answered without ideas: 2 of 5 this week." If he taps Show me ideas on every question for two weeks, Today steps back a stage.
@@ -131,7 +479,9 @@ Added 2026-10-13. Approved. Built 2026-10-13. Research: [Harvey et al. 2025](htt
 
 ## LTF-09 "Knows" or "only thinks"?
 
-Added 2026-10-13. Approved. Research: [Eilon & Novogrodsky 2025](https://link.springer.com/article/10.1007/s10803-025-06895-9). Plan rule R22.
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [Eilon & Novogrodsky 2025](https://link.springer.com/article/10.1007/s10803-025-06895-9). Plan rule R22.
+
+- **What was built.** 6 new N5 passages and 16 items (n5-i197 to n5-i212), 6 of them sorts with two bins and at most four cards. `npm run check` enforces that guard. All 18 false-belief items now also carry `know-think` (there were 18, not 12, after the content tripled). The miss-pattern column in Skills calls it "knows or only thinks", and an engine test covers the report. The N5 brief in the content guide is updated.
 
 - **He sees.** New N5 sort and tap items that set knowing against thinking, for example "Leo knows" and "Leo only thinks".
 - **Build.** About 16 new N5 items tagged `know-think`, the 12 false-belief items retagged, and the N5 brief updated.
@@ -140,7 +490,9 @@ Added 2026-10-13. Approved. Research: [Eilon & Novogrodsky 2025](https://link.sp
 
 ## LTF-10 "Some", "only" and "all" in signs and steps
 
-Added 2026-10-13. Approved. Research: [Petit et al. 2026](https://eric.ed.gov/?id=EJ1517530). Plan rule R25.
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [Petit et al. 2026](https://eric.ed.gov/?id=EJ1517530). Plan rule R25.
+
+- **What was built.** 8 new functional passages and 22 items tagged `quantifier`: F2 quiz directions and a rover kit, F4 a pool pass and a trail-mix label, F5 a book sale notice and a club form, F6 a delete-photos prompt and a pond skating notice. All are real signs, labels, forms and steps.
 
 - **He sees.** Functional items where one small word changes what he can do: "Some lanes are closed today", "Answer any two", "Only for ages 12 and up".
 - **Build.** About 18 items tagged `quantifier` across F2, F4, F5 and F6.
@@ -149,7 +501,11 @@ Added 2026-10-13. Approved. Research: [Petit et al. 2026](https://eric.ed.gov/?i
 
 ## LTF-11 Metaphor map
 
-Added 2026-10-13. Approved. Research: [Skogli-Christensen et al. 2025](https://www.mdpi.com/2076-328X/15/11/1556); [Wei et al. 2025](https://link.springer.com/article/10.1007/s10803-025-07142-x); [Hu et al. 2025](https://eric.ed.gov/?id=EJ1479439). Plan rule R25.
+Added 2026-10-13. Approved. Built 2026-10-13.
+
+- **What was built.** Three new story-map kinds (`like`, `share`, `means`). 10 new N6 stories, each with two metaphors: one with the three-box map (10 items, tag `metaphor-map`) and one new, untaught metaphor asked as a plain question and marked as a transfer item (10 items, tag `metaphor-new`). The Activity tab compares the two on first-time answers. The lexical coherence check flags most metaphor sentences, since a metaphor brings in a new picture word; these are expected warnings.
+
+Research: [Skogli-Christensen et al. 2025](https://www.mdpi.com/2076-328X/15/11/1556); [Wei et al. 2025](https://link.springer.com/article/10.1007/s10803-025-07142-x); [Hu et al. 2025](https://eric.ed.gov/?id=EJ1479439). Plan rule R25.
 
 - **He sees.** A three-box map for a metaphor: "Her voice is like…", "What do they share?" and "So her voice was…". Idioms are handled by word help (LTF-04) and come back in review.
 - **Build.** Three new story-map slot kinds (`like`, `share`, `means`) in the schema and `ItemView.tsx`, and about 20 N6 metaphor items, some marked as transfer items.
@@ -158,7 +514,9 @@ Added 2026-10-13. Approved. Research: [Skogli-Christensen et al. 2025](https://w
 
 ## LTF-12 Understand the message, then act on it
 
-Added 2026-10-13. Approved. Research: [Prahl et al. 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12452825), where comprehension rose but replying did not. Plan rule R26.
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [Prahl et al. 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12452825), where comprehension rose but replying did not. Plan rule R26.
+
+- **What was built.** 10 new F5 messages, each with a message item (tag `message`) and an act item (tag `act`, with `after` naming its message item): 20 items, two at each level. Act steps pick the reply that matches the plan, or tap what to do in a scene. `pickItems` serves the pair together, the act step right after, and never an act step on its own. A list can run one item over rather than split a pair. `npm run check` checks every pair. The Overview card "Messages: understanding and acting" shows the two lines on first-time answers.
 
 - **He sees.** F5 messages get a second step: pick the reply that matches the plan, or act it out.
 - **Grown-ups see.** Two lines for F5: "Understood the message" and "Did the right thing".
@@ -168,7 +526,9 @@ Added 2026-10-13. Approved. Research: [Prahl et al. 2025](https://pmc.ncbi.nlm.n
 
 ## LTF-13 A "Who did it?" stop in scouting
 
-Added 2026-10-13. Approved. Research: [O'Leary et al. 2026](https://ifp.nyu.edu/2026/journal-article-abstracts/1471-3802-70094/); [Herrero-Roig et al. 2026](https://link.springer.com/article/10.1007/s11145-026-10864-8). Plan rule R22.
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [O'Leary et al. 2026](https://ifp.nyu.edu/2026/journal-article-abstracts/1471-3802-70094/); [Herrero-Roig et al. 2026](https://link.springer.com/article/10.1007/s11145-026-10864-8). Plan rule R22.
+
+- **What was built.** Three sets of six sentences in `content/placement.json`, each with one active, two passives, a subject relative, an object relative and a pronoun item. `grammarSet` picks the next set, so a second run uses sentences he has not seen. The stop comes after the listening story. "Stop scouting for now" and "Finish later" still work. Starting point has a "Run the Who did it? stop" button that keeps his starting steps and earlier scores, because placement only ever adds mastered steps. Below 75% (4 of 6 or fewer), the Overview suggests names in place of "he" and "she". The setting itself comes with LTF-03.
 
 - **He sees.** A two-minute scouting stop of six one-sentence grammar items, answered by tapping a picture.
 - **Grown-ups see.** Sentence grammar under Starting point. If it is low, the app suggests "Names instead of he/she" (LTF-03).
@@ -179,7 +539,11 @@ Added 2026-10-13. Approved. Research: [O'Leary et al. 2026](https://ifp.nyu.edu/
 
 ## LTF-14 Check-up flight
 
-Added 2026-10-13. Approved. Needs the repeats tracking. Research: [Masoumi et al. 2024](https://doi.org/10.47176/mjiri.38.118), where oral story gains did not carry over to reading. Plan rule R21, putting R12 into practice.
+Added 2026-10-13. Approved. Needs the repeats tracking. Built 2026-10-13 for the six stops of today's route, then the four LTF-20 islands.
+
+- **What was built.** 120 reserved texts with one question each (`checkup: <stop>`), 12 per stop (home, gull, cape, fossil, reef, star, rail, airfield, takeoff, australia), in the same mix at every stop so check-ups stay comparable: six stories (N1, N2, N3, N5, N6, N6) and six functional texts (F2 to F6 and F3), four each at levels 2, 3 and 4. All pass validation, the reading bands and the content checks. Check-up texts are never served in practice, and `npm run check` keeps their passages apart from practice. `checkupDue` offers one on the Choose screen once he has finished ten sessions since the last; `planCheckup` draws three stories and three functional texts from the stop he is at, ones he has not seen first. Answers have phase `checkup`: they earn flight points but never change his skills or levels. The Overview shows the results over time and warns when his stop has fewer than six unseen texts left. The island stops' check-up texts come with LTF-21 to LTF-24.
+
+Research: [Masoumi et al. 2024](https://doi.org/10.47176/mjiri.38.118), where oral story gains did not carry over to reading. Plan rule R21, putting R12 into practice.
 
 - **He sees.** About every ten finished sessions, an optional check-up flight: six new texts, no hints, and no right or wrong shown. It earns flight points like any session.
 - **Grown-ups see.** Check-up results over time, kept apart from practice and from Today.
@@ -190,7 +554,9 @@ Added 2026-10-13. Approved. Needs the repeats tracking. Research: [Masoumi et al
 
 ## LTF-15 Which question types work for him
 
-Added 2026-10-13. Approved. Research: [Lee, Quinn & Jiang 2025](https://link.springer.com/article/10.1007/s10803-025-07014-4). Plan rule R27.
+Added 2026-10-13. Approved. Built 2026-10-13. Research: [Lee, Quinn & Jiang 2025](https://link.springer.com/article/10.1007/s10803-025-07014-4). Plan rule R27.
+
+- **What was built.** `formatEffect` in `activity.ts` compares right-first-time by question type within one skill at one text level, on his own first-time answers (warm-up and your turn). The card is in the Activity tab, grouped by region. A printable paper story map (`apps/web/public/story-map.html`) follows the school's routine: who, where and when, the problem, three important things, how it ended, then what it was mostly about. It is linked from the grown-up card on the finish screen after story sessions. A new e2e test plays a whole Story Woods session through to the finish, the first test to cover that screen.
 
 - **Grown-ups see.** First-try accuracy by question type in each region, and a "Print a paper story map" button in the grown-up section of the finish screen.
 - **Build.** `formatEffect(progress)` in `activity.ts`, a card in `Adult.tsx`, and a printable story-map page.
@@ -225,7 +591,7 @@ Added 2026-10-13. Approved. Research: [Henkel et al. 2025](https://aclanthology.
 
 Added 2026-10-13. Approved. Built 2026-10-13. Research: [Johnson et al. 2026](https://journals.sagepub.com/doi/10.1177/13623613261460932). Plan rule R29, putting R13 into practice.
 
-- **What was built.** Five features so far: telling about a show, skipping a demo, the flight kit, the clue at once and "What happened after that?". Each is asked about after he first uses it, not on the day it ships, so he has something to judge. The card sits on his island under the flight kit, with Read to me. Each new feature needs a line in `features.ts`. Grown-ups see the votes in the Overview tab. The e2e test also checks the card stays gone after a reload and on a second device.
+- **What was built.** Five features at first: telling about a show, skipping a demo, the flight kit, the clue at once and "What happened after that?". Step 3 added the thinking card, "Show me ideas" and the four-box strip. Each is asked about after he first uses it, not on the day it ships, so he has something to judge. The card sits on his island under the flight kit, with Read to me. Each new feature needs a line in `features.ts`. Grown-ups see the votes in the Overview tab. The e2e test also checks the card stays gone after a reload and on a second device.
 
 - **He sees.** A one-time card on the island the first time a feature appears: I like it, not sure, I don't like it, then too much, just right, too little.
 - **Grown-ups see.** His votes next to each feature.

@@ -103,6 +103,13 @@ def test_gold_never_tunes():
     assert [p["id"] for p in skillcheck.tuning_passages([HARBOR, passage("h9", HARBOR["sentences"])], gold_ids)] == ["h9"]
 
 
+def test_gloss_reads_easier():
+    import check
+    assert check.gloss_problems("calibrates", "checks that a tool measures the right amount") == []
+    assert check.gloss_problems("gauge", "a tool for taking measurements") == ['meaning of "gauge" has harder words: measurements']
+    assert check.gloss_problems("tide", "the sea") == []
+
+
 if __name__ == "__main__":
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

@@ -16,6 +16,15 @@
         "\"We all have the same,\" Leo said. \"That is fair.\""
       ],
       "picture": "🍪",
+      "refs": [
+        { "s": 1, "w": "them", "n": 1, "to": "the cookies" },
+        { "s": 1, "w": "she", "n": 1, "to": "Grandma Rose" },
+        { "s": 3, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 4, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 4, "w": "himself", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 6, "w": "he", "n": 1, "to": "Leo" }
+      ],
       "topics": ["food", "friends"],
       "level": 1,
       "socialLoad": 1,
@@ -39,6 +48,16 @@
         "When Jai rolled down the ramp, the whole line cheered."
       ],
       "picture": "🛹📋",
+      "refs": [
+        { "s": 2, "w": "his", "n": 1, "to": "Jai" },
+        { "s": 3, "w": "He", "n": 1, "to": "Jai" },
+        { "s": 4, "w": "him", "n": 1, "to": "Jai" },
+        { "s": 5, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 5, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 6, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 7, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 9, "w": "they", "n": 1, "to": "the older kids" }
+      ],
       "topics": ["sports", "friends"],
       "level": 2,
       "socialLoad": 2,
@@ -63,6 +82,17 @@
         "\"Now you know how it feels,\" said the stork."
       ],
       "picture": "🦊🍲",
+      "refs": [
+        { "s": 2, "w": "He", "n": 1, "to": "the fox" },
+        { "s": 2, "w": "his", "n": 1, "to": "the fox" },
+        { "s": 4, "w": "Her", "n": 1, "to": "the stork" },
+        { "s": 4, "w": "she", "n": 1, "to": "the stork" },
+        { "s": 5, "w": "her", "n": 1, "to": "the stork" },
+        { "s": 7, "w": "She", "n": 1, "to": "the stork" },
+        { "s": 8, "w": "her", "n": 1, "to": "the stork" },
+        { "s": 8, "w": "it", "n": 1, "to": "the soup" },
+        { "s": 10, "w": "He", "n": 1, "to": "the fox" }
+      ],
       "topics": ["animals", "food"],
       "level": 2,
       "socialLoad": 2,
@@ -382,6 +412,15 @@
         "He sent the dog out of the barn, and the hungry cows finally ate their dinner."
       ],
       "picture": "🐕🌾🐄",
+      "refs": [
+        { "s": 3, "w": "They", "n": 1, "to": "the cows" },
+        { "s": 3, "w": "their", "n": 1, "to": "the cows" },
+        { "s": 4, "w": "them", "n": 1, "to": "the cows" },
+        { "s": 5, "w": "he", "n": 1, "to": "the dog" },
+        { "s": 7, "w": "it", "n": 1, "to": "the hay" },
+        { "s": 10, "w": "He", "n": 1, "to": "the farmer" },
+        { "s": 10, "w": "their", "n": 1, "to": "the cows" }
+      ],
       "topics": [
         "animals",
         "food"
@@ -416,6 +455,14 @@
         "The travelers looked at each other and said nothing."
       ],
       "picture": "🌳☀️",
+      "refs": [
+        { "s": 2, "w": "they", "n": 1, "to": "the travelers" },
+        { "s": 3, "w": "They", "n": 1, "to": "the travelers" },
+        { "s": 3, "w": "its", "n": 1, "to": "the plane tree" },
+        { "s": 5, "w": "he", "n": 1, "to": "one traveler" },
+        { "s": 6, "w": "It", "n": 1, "to": "the plane tree" },
+        { "s": 6, "w": "it", "n": 2, "to": "the plane tree" }
+      ],
       "topics": [
         "nature",
         "weather"

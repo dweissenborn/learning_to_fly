@@ -28,6 +28,10 @@ export interface Settings {
   hintDelay: number;
   /** Show the clue at once on a new skill's first guided item (LTF-01). */
   clueFirst: boolean;
+  /** LTF-03: who's who dots under pronouns. */
+  whosWho?: 'auto' | 'help' | 'off';
+  /** LTF-03: names in place of he, she, it and they in level 1 texts (never in N4, which teaches them). */
+  namesLevel1?: boolean;
   gate: GateOverride;
   hardThemes: boolean;
   hidden: string[];
@@ -49,7 +53,11 @@ export interface Settings {
   /** How many flight-kit pieces he has already been shown, so each one is celebrated once, on any device. */
   kitSeen?: number;
   /** Results of the first half of placement, kept so the scouting trip can be finished later. */
-  scout?: { word: number; reading: number; listening: number };
+  scout?: { word: number; reading: number; listening: number; grammar?: number };
+  /** LTF-20: the island he chose at each fork, and when. */
+  routes?: Record<string, { to: string; at: number }>;
+  /** LTF-20: forks already checked once for learners who were past them when the routes arrived. */
+  forksSeen?: string[];
 }
 
 export const DEFAULTS: Settings = {

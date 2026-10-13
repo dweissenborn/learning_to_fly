@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Item, LogEvent, Passage, SkillBank, SkillId } from '@wayfinder/schema';
 import {
-  buildPool, choices, derive, journeyPosition, levelFor, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, planGateCheck, planSession,
+  buildPool, choices, derive, errorPatterns, tagAccuracy, journeyPosition, journeyRoute, forkOptions, routePosition, pastFork, planWord, planCheckup, checkupDue, checkupResults, levelFor, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, grammarSet, planGateCheck, planSession,
 } from './index';
 
 const DAY = 86_400_000;
@@ -110,9 +110,23 @@ describe('placement', () => {
   });
 
   it('turns on read-aloud when listening beats reading', () => {
-    expect(placementSupports({ word: 0.9, reading: 1 / 3, listening: 1 })).toEqual({ readAloud: true, pictures: false });
-    expect(placementSupports({ word: 0.5, reading: 1, listening: 1 })).toEqual({ readAloud: true, pictures: true });
-    expect(placementSupports({ word: 1, reading: 1, listening: 1 })).toEqual({ readAloud: false, pictures: false });
+    expect(placementSupports({ word: 0.9, reading: 1 / 3, listening: 1 })).toEqual({ readAloud: true, pictures: false, names: false });
+    expect(placementSupports({ word: 0.5, reading: 1, listening: 1 })).toEqual({ readAloud: true, pictures: true, names: false });
+    expect(placementSupports({ word: 1, reading: 1, listening: 1 })).toEqual({ readAloud: false, pictures: false, names: false });
+  });
+
+  it('runs the next set of grammar sentences each time, so he never sees the same ones twice in a row (LTF-13)', () => {
+    const pl = (grammar?: number): LogEvent => ({ id: id(), ts: T0, type: 'placement', functional: 1, narrative: 1, word: 1, reading: 1, listening: 1, ...(grammar === undefined ? {} : { grammar }) });
+    expect(grammarSet([], 3)).toBe(0);
+    expect(grammarSet([pl(1)], 3)).toBe(1);
+    expect(grammarSet([pl(1), pl()], 3)).toBe(1); // a placement without the stop does not count
+    expect(grammarSet([pl(1), pl(0.5), pl(1)], 3)).toBe(0);
+  });
+
+  it('suggests names instead of he and she when sentence grammar is low, and only once it has been checked (LTF-13)', () => {
+    expect(placementSupports({ word: 1, reading: 1, listening: 1, grammar: 4 / 6 }).names).toBe(true);
+    expect(placementSupports({ word: 1, reading: 1, listening: 1, grammar: 5 / 6 }).names).toBe(false);
+    expect(placementSupports({ word: 1, reading: 1, listening: 1 }).names).toBe(false); // not run yet
   });
 });
 
@@ -262,6 +276,131 @@ describe('the journey', () => {
   });
 });
 
+describe('island routes that branch (LTF-20)', () => {
+  // Home, Gull, then a fork to one of four themed islands (or the old Windy Cape route), rejoining at the airfield.
+  const stops = [
+    { id: 'home', next: ['gull'] }, { id: 'gull', next: ['fossil', 'reef', 'star', 'rail', 'cape'] },
+    { id: 'fossil', topics: ['dinosaurs', 'mining'], next: ['airfield'] }, { id: 'reef', topics: ['ocean', 'animals'], next: ['airfield'] },
+    { id: 'star', topics: ['space', 'weather'], next: ['airfield'] }, { id: 'rail', topics: ['transport', 'maps'], next: ['airfield'] },
+    { id: 'cape', legacy: true, next: ['airfield'] },
+    { id: 'airfield', next: ['takeoff'] }, { id: 'takeoff', next: ['australia'] }, { id: 'australia' },
+  ];
+
+  it('every route reaches Australia, with the same number of stops', () => {
+    for (const pick of ['fossil', 'reef', 'star', 'rail', 'cape']) {
+      const r = journeyRoute(stops, { gull: pick });
+      expect(r.ids).toEqual(['home', 'gull', pick, 'airfield', 'takeoff', 'australia']);
+      expect(r.forkAt).toBeUndefined();
+    }
+    expect(journeyRoute(stops, {})).toEqual({ ids: ['home', 'gull'], forkAt: 1 });
+  });
+
+  it('offers at most three islands, the ones that best match his interests, and never the old route', () => {
+    expect(forkOptions(stops, 'gull', ['space', 'transport', 'maps']).map((s) => s.id)).toEqual(['rail', 'star', 'fossil']);
+    expect(forkOptions(stops, 'gull', []).map((s) => s.id)).toEqual(['fossil', 'reef', 'star']);
+  });
+
+  it('waits at the fork until he chooses, then moves along the route he chose from there', () => {
+    const none = journeyRoute(stops, {});
+    expect(routePosition(4, none, 6, 5)).toMatchObject({ stop: 0, step: 4, waiting: false }); // still on the way to Gull
+    expect(routePosition(5, none, 6, 5)).toMatchObject({ stop: 1, step: 0, waiting: true });
+    expect(routePosition(9, none, 6, 5)).toMatchObject({ stop: 1, step: 0, waiting: true }); // sessions while waiting do not move him
+    const chosen = journeyRoute(stops, { gull: 'reef' });
+    const anchor = { at: 9, stop: 1, step: 0, after: 0 }; // set when he chooses
+    expect(routePosition(9, chosen, 6, 5, anchor)).toMatchObject({ stop: 1, step: 0, waiting: false });
+    expect(routePosition(14, chosen, 6, 5, anchor)).toMatchObject({ stop: 2, step: 0 });
+    expect(routePosition(29, chosen, 6, 5, anchor)).toMatchObject({ stop: 5, arrived: true });
+    // Chosen before he reached Gull: no wait at all.
+    expect(routePosition(10, chosen, 6, 5)).toMatchObject({ stop: 2, step: 0, waiting: false });
+  });
+
+  it('keeps the place of a learner who was already past Gull Island when the routes arrived', () => {
+    expect(pastFork(12, 1, 6, 5)).toBe(true); // stop 2, partway along the old route: he stays on it
+    expect(pastFork(6, 1, 6, 5)).toBe(true); // one session into the leg after Gull: its story has begun
+    expect(pastFork(5, 1, 6, 5)).toBe(false); // just reached Gull: he gets the fork
+    expect(pastFork(3, 1, 6, 5)).toBe(false);
+  });
+});
+
+describe('a word for today in the warm-up (LTF-04)', () => {
+  const pass = (pid: string, sentences: string[], words?: { word: string; means: string; pic: string }[]): Passage => ({
+    id: pid, title: pid, kind: 'story', sentences, topics: ['school'], level: 4, socialLoad: 0, ...(words ? { words } : {}),
+    credit: { title: pid, author: 'x', source: 'x', licence: 'original', retrieved: '2026-10-13', adapted: false },
+  });
+  const item = (iid: string, pid: string): Item => ({ id: iid, skill: 'N1', passage: pid, format: 'tap', level: 4, prompt: '?', explain: '.', options: ['a', 'b'], answer: 0 });
+  const bank: SkillBank = {
+    skill: 'N1',
+    passages: [
+      pass('pa', ['The race is on Friday.', 'The club calibrates the sensor.'], [{ word: 'calibrates', means: 'checks that a tool measures right', pic: '📏' }]),
+      pass('pb', ['A periwinkle sat on the rock at low tide.'], [{ word: 'periwinkle', means: 'a small sea snail', pic: '🐌' }, { word: 'tide', means: 'the rise and fall of the sea', pic: '🌊' }]),
+      pass('pc', ['Sam walked home.']),
+    ],
+    items: [item('ia', 'pa'), item('ib', 'pb'), item('ic', 'pc'), item('im', 'pc')],
+    model: { item: 'im', steps: [{ say: '1' }, { say: '2' }, { say: '3', reveal: true }] },
+  };
+  const pool = buildPool([bank]);
+  const ia = pool.items.get('ia')!, ic = pool.items.get('ic')!;
+
+  it('pre-teaches a word from today\'s texts, in its sentence, with two other meanings as wrong options', () => {
+    const w = planWord(pool, [ic, ia], [], mulberry32(1))!;
+    expect(w.word).toBe('calibrates');
+    expect(w.sentence).toBe('The club calibrates the sensor.');
+    expect(w.options[w.answer]).toBe('checks that a tool measures right');
+    expect(new Set(w.options).size).toBe(3);
+  });
+
+  it('brings back a word he tapped before, and has no card when nothing is glossed', () => {
+    expect(planWord(pool, [ic], ['periwinkle'], mulberry32(1))?.word).toBe('periwinkle');
+    expect(planWord(pool, [ic], [], mulberry32(1))).toBeUndefined();
+  });
+});
+
+describe('check-up flights (LTF-14)', () => {
+  const pass = (pid: string): Passage => ({ id: pid, title: pid, kind: 'story', sentences: ['A.'], topics: ['school'], level: 2, socialLoad: 0,
+    credit: { title: pid, author: 'x', source: 'x', licence: 'original', retrieved: '2026-10-13', adapted: false } });
+  const item = (iid: string, skill: SkillId, checkup?: string): Item =>
+    ({ id: iid, skill, passage: `p-${iid}`, format: 'tap', level: 2, prompt: '?', explain: '.', options: ['a', 'b'], answer: 0, ...(checkup ? { checkup } : {}) });
+  const bank = (skill: SkillId, items: Item[]): SkillBank => ({ skill, passages: [...items.map((i) => pass(i.passage)), pass('m')],
+    items: [...items, { ...item('model-' + skill, skill), passage: 'm' }], model: { item: 'model-' + skill, steps: [{ say: '1' }, { say: '2' }, { say: '3', reveal: true }] } });
+  const n = ['N1', 'N2', 'N3', 'N5', 'N6'] as SkillId[], f = ['F2', 'F3', 'F4', 'F5', 'F6'] as SkillId[];
+  const pool = buildPool([
+    ...n.map((s) => bank(s, [item(`${s}-a`, s, 'gull'), item(`${s}-b`, s, 'cape'), item(`${s}-practice`, s)])),
+    ...f.map((s) => bank(s, [item(`${s}-a`, s, 'gull'), item(`${s}-b`, s, 'cape'), item(`${s}-practice`, s)])),
+  ]);
+  const ctx = (seen = new Map<string, number>()) => ({ pool, seen, interests: [], allowThemes: false, rng: mulberry32(5) });
+
+  it('never serves a check-up text in practice', () => {
+    for (const s of [...n, ...f]) expect(pickItems(ctx(), s, 10).map((i) => i.id)).toEqual([`${s}-practice`]);
+  });
+
+  it('draws six texts from the stop he is at, three stories and three functional texts, unseen first', () => {
+    const c = planCheckup(ctx(new Map([['N1-a', T0]])), 'gull');
+    expect(c).toHaveLength(6);
+    expect(c.every((i) => i.checkup === 'gull')).toBe(true);
+    expect(c.filter((i) => i.skill[0] === 'N')).toHaveLength(3);
+    expect(c.map((i) => i.id)).not.toContain('N1-a'); // seen: four other unseen stories come first
+  });
+
+  it('keeps check-up answers out of his skill records, and offers one every ten finished sessions', () => {
+    const cu = (t: number, sid: string): LogEvent[] => [
+      { id: id(), ts: t, type: 'session', session: sid, action: 'start', strand: 'narrative', checkup: true },
+      { id: id(), ts: t + 1, type: 'answer', session: sid, item: 'N1-a', skill: 'N1', phase: 'checkup', correct: true, hint: 0, tries: 1, ms: 1, format: 'tap', level: 2 },
+      { id: id(), ts: t + 2, type: 'answer', session: sid, item: 'F2-a', skill: 'F2', phase: 'checkup', correct: false, hint: 0, tries: 1, ms: 1, format: 'tap', level: 2 },
+      { id: id(), ts: t + 3, type: 'session', session: sid, action: 'finish' },
+    ];
+    const nine = Array.from({ length: 9 }, (_, k) => session(T0 + k * DAY, 'N1', [true])).flat();
+    expect(checkupDue(derive(nine))).toBe(false);
+    const ten = [...nine, ...session(T0 + 9 * DAY, 'N1', [true])];
+    expect(checkupDue(derive(ten))).toBe(true);
+    const after = [...ten, ...cu(T0 + 10 * DAY, 'c1')];
+    const p = derive(after);
+    expect(checkupDue(p)).toBe(false); // just had one
+    expect(p.skills.N1.answers.some((a) => a.phase === 'checkup')).toBe(false);
+    expect(p.seen.has('N1-a')).toBe(true);
+    expect(checkupResults(after)).toEqual([{ ts: T0 + 10 * DAY, correct: 1, total: 2 }]);
+  });
+});
+
 describe('pacing for a learner who locks skills in quickly', () => {
   const passage = (pid: string, level: number): Passage => ({
     id: pid, title: pid, kind: 'story', sentences: ['A.'], topics: ['school'], level, socialLoad: 0,
@@ -342,5 +481,59 @@ describe('pacing for a learner who locks skills in quickly', () => {
     expect(p2.together).toHaveLength(0);
     expect(p2.yourturn).toHaveLength(6); // two more of his own instead
     expect(p2.yourturn.every((i) => i.level <= p2.level)).toBe(true);
+  });
+});
+
+describe('the miss-pattern report (LTF-09, LTF-10, LTF-12)', () => {
+  it('names a new question kind once he misses it at least twice, and at least half the time', () => {
+    const items = new Map([
+      ['k1', { tags: ['know-think'] }], ['k2', { tags: ['know-think', 'false-belief'] }], ['k3', { tags: ['know-think'] }],
+      ['q1', { tags: ['quantifier'] }], ['q2', { tags: ['quantifier'] }], ['a1', { tags: ['act'] }],
+    ]);
+    const a = (item: string, correct: boolean) => ({ id: id(), ts: T0, type: 'answer', session: 's', item, skill: 'N5', phase: 'yourturn', correct, hint: 0, tries: 1, ms: 1, format: 'tap' });
+    const s = { answers: [a('k1', false), a('k2', false), a('k3', true), a('q1', false), a('q2', true), a('a1', false)] };
+    const pats = errorPatterns(s as never, { items } as never);
+    expect(pats.map((p) => p.tag)).toEqual(['know-think']); // one miss each on quantifier, act and false-belief is not a pattern yet
+    expect(pats[0]).toMatchObject({ tag: 'know-think', missed: 2, total: 3 });
+  });
+});
+
+describe('understand the message, then act on it (LTF-12)', () => {
+  const passage = (pid: string): Passage => ({ id: pid, title: pid, kind: 'message', sentences: ['A message.'], topics: ['friends'], level: 2, socialLoad: 0,
+    credit: { title: pid, author: 'a', source: 's', licence: 'original', retrieved: '2026-10-13', adapted: false } });
+  const item = (iid: string, pid: string, extra: Partial<Item> = {}): Item =>
+    ({ id: iid, skill: 'F5', passage: pid, format: 'tap', level: 2, prompt: '?', explain: '.', options: ['a', 'b'], answer: 0, ...extra });
+  const bank: SkillBank = {
+    skill: 'F5', passages: [passage('m1'), passage('m2'), passage('other')],
+    items: [
+      item('read1', 'm1', { tags: ['message'] }), item('act1', 'm1', { tags: ['act'], after: 'read1' }),
+      item('read2', 'm2', { tags: ['message'] }), item('act2', 'm2', { tags: ['act'], after: 'read2' }),
+      item('o1', 'other'), item('o2', 'other'), item('model', 'other'),
+    ],
+    model: { item: 'model', steps: [{ say: '1' }, { say: '2' }, { say: '3', reveal: true }] },
+  };
+  const pool = buildPool([bank]);
+  const ctx = (rng: () => number, o: Partial<Parameters<typeof pickItems>[0]> = {}) => ({ pool, seen: new Map(), interests: [], allowThemes: false, rng, ...o });
+
+  it('serves each act step right after its message step, and never on its own', () => {
+    for (let seed = 1; seed <= 40; seed++) for (const count of [1, 2, 3, 4, 6]) {
+      const ids = pickItems(ctx(mulberry32(seed)), 'F5', count).map((i) => i.id);
+      for (const [read, act] of [['read1', 'act1'], ['read2', 'act2']]) {
+        if (ids.includes(act)) expect(ids[ids.indexOf(act) - 1], `seed ${seed}, ${ids}`).toBe(read);
+        if (ids.includes(read)) expect(ids[ids.indexOf(read) + 1], `seed ${seed}, ${ids}`).toBe(act); // the second step always follows
+      }
+      expect(ids.length, `seed ${seed}, ${ids}`).toBeLessThanOrEqual(count + 1); // at most one over, never a split pair
+    }
+    // Even when the message step is hidden, its act step is not served alone.
+    const ids = pickItems(ctx(mulberry32(3), { hidden: new Set(['read1', 'read2']) }), 'F5', 6).map((i) => i.id);
+    expect(ids).not.toContain('act1');
+    expect(ids).not.toContain('act2');
+  });
+
+  it('reports "understood the message" and "did the right thing" as two lines, on first-time answers', () => {
+    const a = (item: string, correct: boolean): LogEvent => ({ id: id(), ts: T0 + n * 1000, type: 'answer', session: 's', item, skill: 'F5', phase: 'yourturn', correct, hint: 0, tries: 1, ms: 1, format: 'tap' });
+    const p = derive([a('read1', true), a('act1', false), a('read2', true), a('act2', true), a('act1', true)]); // the second act1 is a repeat
+    expect(tagAccuracy(p, pool, 'message', { firstTimeOnly: true })).toEqual({ correct: 2, total: 2 });
+    expect(tagAccuracy(p, pool, 'act', { firstTimeOnly: true })).toEqual({ correct: 1, total: 2 });
   });
 });

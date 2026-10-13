@@ -20,6 +20,20 @@ export const FEATURES: Feature[] = [
     met: (es) => es.some((e) => e.type === 'answer' && e.delay === 0) },
   { id: 'after-that', name: '"What happened after that?"', say: 'When you tell about your day, I ask what happened after.', arrived: '2026-10-13',
     met: (es) => es.some((e) => e.type === 'recount' && !!e.after) },
+  { id: 'thinking-card', name: 'The thinking card', say: 'On some feelings questions, a hint card shows the clue and what people know.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'answer' && !!e.card) },
+  { id: 'ideas-button', name: '"Show me ideas"', say: 'When you tell about your day, the ideas wait behind a button so you can try your own words first.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'recount' && !!e.ideas?.length) },
+  { id: 'island-route', name: 'Choosing your sea route', say: 'At Gull Island, you chose which island to sail to on the way to Australia.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'route') },
+  { id: 'checkup', name: 'The check-up flight', say: 'Every so often, you can choose six new texts with no hints, to see how your reading is growing.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'answer' && e.phase === 'checkup') },
+  { id: 'whos-who', name: "Who's who", say: 'You can tap a dotted "he", "she" or "they" to see who it means.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'who-help') },
+  { id: 'word-help', name: 'Word help', say: 'In some stories, you can tap an underlined word to see what it means.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'word-help') },
+  { id: 'day-strip', name: 'Your day in four boxes', say: 'When you tell about your day, it shows as four boxes, and you can tap one to change it.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'recount' && e.changed !== undefined) },
 ];
 
 /** His latest vote on each feature. */

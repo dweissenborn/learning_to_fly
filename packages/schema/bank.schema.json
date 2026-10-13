@@ -534,6 +534,67 @@
             "minimum": 1
           },
           "description": "Sentence indexes that start a new paragraph (for longer texts)"
+        },
+        "words": {
+          "type": "array",
+          "maxItems": 3,
+          "description": "LTF-04: word help, up to three words in a level 3 to 5 text. A person reviews every meaning.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "word",
+              "means",
+              "pic"
+            ],
+            "properties": {
+              "word": {
+                "type": "string",
+                "description": "As it appears in the passage"
+              },
+              "means": {
+                "type": "string",
+                "description": "A plain meaning, at most 12 words, easier than the word"
+              },
+              "pic": {
+                "type": "string",
+                "description": "One emoji"
+              }
+            }
+          }
+        },
+        "refs": {
+          "type": "array",
+          "description": "LTF-03: who or what each pronoun refers to. Drafted, then reviewed by a person.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "s",
+              "w",
+              "to"
+            ],
+            "properties": {
+              "s": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Sentence index"
+              },
+              "w": {
+                "type": "string",
+                "description": "The pronoun as written"
+              },
+              "n": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "Which occurrence of that word in the sentence, from 1"
+              },
+              "to": {
+                "type": "string",
+                "description": "Who or what it refers to, as written in the passage"
+              }
+            }
+          }
         }
       }
     },
@@ -582,7 +643,10 @@
             "lesson",
             "evidence",
             "me",
-            "other"
+            "other",
+            "like",
+            "share",
+            "means"
           ]
         },
         "label": {
@@ -835,6 +899,38 @@
               }
             }
           }
+        },
+        "reason": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "clue",
+            "know",
+            "so"
+          ],
+          "description": "LTF-02: the reasoning card shown as the second hint. At most 12 words a box.",
+          "properties": {
+            "clue": {
+              "type": "string",
+              "description": "A sentence from the passage, word for word"
+            },
+            "know": {
+              "type": "string",
+              "description": "What people generally know, for example that shaking hands can mean nerves"
+            },
+            "so": {
+              "type": "string",
+              "description": "What that tells you. Shown only with the answer, or in the worked example"
+            }
+          }
+        },
+        "after": {
+          "type": "string",
+          "description": "LTF-12: an act step's message item (tag act after tag message, same passage). Served right after it, so the same message stays on screen."
+        },
+        "checkup": {
+          "type": "string",
+          "description": "LTF-14: reserved for check-up flights at this journey stop (a stop id in content/journey.json). Never used in practice."
         }
       }
     },
@@ -875,6 +971,15 @@
               "reveal": {
                 "type": "boolean",
                 "description": "Show the answer at this step"
+              },
+              "fill": {
+                "type": "string",
+                "enum": [
+                  "clue",
+                  "know",
+                  "so"
+                ],
+                "description": "LTF-02: the box of the reasoning card this step fills in"
               }
             }
           }

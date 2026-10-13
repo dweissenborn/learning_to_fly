@@ -5,6 +5,7 @@
       "id": "home",
       "name": "Home Island",
       "emoji": "🏝️",
+      "next": ["gull"],
       "beats": [],
       "postcard": [
         "This is Home Island.",
@@ -18,6 +19,7 @@
       "id": "gull",
       "name": "Gull Island",
       "emoji": "🦭",
+      "next": ["fossil", "reef", "star", "rail", "cape"],
       "souvenir": "seal",
       "beats": [
         { "text": "Far past the lighthouse, there is another island. It is called Gull Island. A ferry goes there." },
@@ -45,13 +47,15 @@
         "Seals sleep on the warm rocks.",
         "Gulls fly over the water and call to each other.",
         "From the top of the hill, you can see kites far away.",
-        "The kites are over Windy Cape."
+        "Far out, you can see other islands."
       ]
     },
     {
       "id": "cape",
       "name": "Windy Cape",
       "emoji": "🪁",
+      "legacy": true,
+      "next": ["airfield"],
       "souvenir": "kite",
       "beats": [
         { "text": "From Gull Island, you can see kites over Windy Cape." },
@@ -83,13 +87,266 @@
       ]
     },
     {
+      "id": "fossil",
+      "name": "Fossil Bay",
+      "emoji": "🦕",
+      "souvenir": "ammonite",
+      "topics": ["dinosaurs", "mining"],
+      "next": ["airfield"],
+      "beats": [
+        {
+          "text": "From the hill on Gull Island, you can see gray cliffs to the south. That is Fossil Bay. The south sea route goes there."
+        },
+        {
+          "text": "A letter came from Dr. Bell, the fossil expert at the museum. It says: We are digging at Fossil Bay this week. Come and help. Bring a hat. It rained hard last night.",
+          "smooth": "A letter came from Dr. Bell, the fossil expert at the museum. It says: We are digging at Fossil Bay this week. Come and help. Bring a hat."
+        },
+        {
+          "obstacle": "blocked",
+          "text": "Your boat reached Fossil Bay. But the beach under the cliff is closed. Rocks can fall from a cliff after heavy rain, so Dr. Bell put up a sign.",
+          "notice": {
+            "type": "notice",
+            "title": "Fossil Bay Beach",
+            "icon": "🪨",
+            "rows": [
+              "CLIFF BEACH CLOSED",
+              "The cliff is wet after the rain.",
+              "Use the pier. The beach opens when the cliff is dry."
+            ]
+          },
+          "cope": "When a beach is closed, we can use the pier instead. The cliff will dry by the afternoon.",
+          "choice": {
+            "ask": "How will you get to the dig?",
+            "options": [
+              {
+                "label": "Land at the pier and take the top path",
+                "reply": "Good plan. The top path runs along the cliff top to Dr. Bell's tent.",
+                "after": "You landed at the pier and walked the top path. From the cliff top, you could see the whole dig below."
+              },
+              {
+                "label": "Wait on the boat until the cliff is dry",
+                "reply": "Good plan. Dr. Bell says the sun will dry the cliff by 3 PM.",
+                "after": "The sun dried the cliff by 3 PM. Dr. Bell took the sign away, and your boat landed on the beach."
+              }
+            ]
+          },
+          "talk": "Ask: the beach was closed after rain, so he had to find another way in. What else could he have done?",
+          "smooth": "Your boat reached Fossil Bay. The beach under the cliff is long and gray."
+        },
+        {
+          "text": "The cliff is dry now, and the beach is open again.",
+          "smooth": "You landed at the pier. A path leads along the beach to the dig."
+        },
+        {
+          "text": "Dr. Bell's tent is at the far end of the beach. You can see people with brushes and small hammers. One more session, and you reach Fossil Bay."
+        }
+      ],
+      "postcard": [
+        "Fossil Bay has gray cliffs made of thin layers of rock. The lowest layers are the oldest.",
+        "Dr. Bell shows you an ammonite, the coiled shell of a sea animal from the time of the dinosaurs.",
+        "You brush sand off a bone. Dr. Bell wraps it in a plaster jacket to keep it safe.",
+        "A boat comes into the bay. It is Captain Ada, a pilot.",
+        "She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+      ]
+    },
+    {
+      "id": "reef",
+      "name": "Reef Island",
+      "emoji": "🐢",
+      "souvenir": "turtle",
+      "topics": ["ocean", "animals"],
+      "next": ["airfield"],
+      "beats": [
+        {
+          "text": "From the hill on Gull Island, you can see a ring of white waves to the west. That is the reef around Reef Island. The west sea route goes there."
+        },
+        {
+          "text": "Mari drives the reef boat. She says the boat crosses the reef through a gap called a channel. The water in the channel is deep only at high tide.",
+          "smooth": "Mari drives the reef boat. She says the lagoon inside the reef is calm and clear."
+        },
+        {
+          "obstacle": "blocked",
+          "text": "You are at the pier, but the boat is not going yet. The tide is low, and the water in the channel is too shallow for the boat.",
+          "notice": {
+            "type": "notice",
+            "title": "Reef Boat",
+            "icon": "🌊",
+            "rows": [
+              "LOW TIDE: the channel is too shallow.",
+              "Next crossing at high tide: 5 PM.",
+              "Tide pools open until 4 PM."
+            ]
+          },
+          "cope": "The tide comes in twice a day. The water will rise, and the boat will cross.",
+          "choice": {
+            "ask": "What will you do until the tide comes in?",
+            "options": [
+              {
+                "label": "Explore the tide pools with Mari",
+                "reply": "Good plan. Mari knows where the sea stars hide.",
+                "after": "You found a sea star and two crabs in the tide pools. At 5 PM the tide was high, and the boat crossed the channel."
+              },
+              {
+                "label": "Help Mari get the boat ready",
+                "reply": "Good plan. The boat needs fuel, and the life jackets need counting.",
+                "after": "You helped Mari fuel the boat and count the life jackets. At 5 PM the tide was high, and the boat crossed the channel."
+              }
+            ]
+          },
+          "talk": "Ask: the boat was late because of the tide. What can we do while we wait for something we cannot change?",
+          "smooth": "You are at the pier. Mari checks the boat, and you count the life jackets."
+        },
+        {
+          "text": "The tide came in, and the boat crossed the channel into the lagoon.",
+          "smooth": "The boat crossed the channel into the lagoon. The water is clear and calm."
+        },
+        {
+          "text": "Inside the reef, the water is calm and clear. You can see fish under the boat. One more session, and you reach Reef Island."
+        }
+      ],
+      "postcard": [
+        "Reef Island sits inside a ring of coral.",
+        "Coral is made by tiny animals called polyps. Their hard skeletons build up into a reef, very slowly.",
+        "Through the glass floor of the boat, you see a clownfish in a sea anemone.",
+        "At night, Mari shows you turtle tracks in the sand. Sea turtles lay their eggs on this beach.",
+        "Captain Ada's boat is tied up at the pier. She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+      ]
+    },
+    {
+      "id": "star",
+      "name": "Star Point",
+      "emoji": "🔭",
+      "souvenir": "dome",
+      "topics": ["space", "weather"],
+      "next": ["airfield"],
+      "beats": [
+        {
+          "text": "From the hill on Gull Island, you can see a white dome on a point of land to the north. That is the observatory at Star Point. The north sea route goes there."
+        },
+        {
+          "text": "Dr. Amal works at the observatory. Her message says: Come on a clear night. The telescope can show you the Moon and Saturn. The weather report says clouds may come.",
+          "smooth": "Dr. Amal works at the observatory. Her message says: Come on a clear night. The telescope can show you the Moon and Saturn."
+        },
+        {
+          "obstacle": "weather",
+          "text": "Your boat landed at the pier below Star Point. Then thick clouds came in from the sea. A telescope cannot see stars through clouds, so the dome stays shut tonight.",
+          "notice": {
+            "type": "notice",
+            "title": "Star Point Sky Board",
+            "icon": "☁️",
+            "rows": [
+              "Tonight: cloudy. No stars.",
+              "Tomorrow night: clear.",
+              "Weather balloon goes up at 6 AM."
+            ]
+          },
+          "cope": "Clouds move away. The sky will be clear again, and the dome will open.",
+          "choice": {
+            "ask": "What will you do on the cloudy night?",
+            "options": [
+              {
+                "label": "Get up early for the weather balloon",
+                "reply": "Good plan. The balloon goes up at 6 AM, clouds or no clouds.",
+                "after": "At 6 AM you watched the balloon go up. It carries a small box that measures the air and sends the numbers back by radio. That night, the sky was clear."
+              },
+              {
+                "label": "Learn the star map inside the dome",
+                "reply": "Good plan. Dr. Amal has a big star map on the wall.",
+                "after": "You learned five star names on the map. The next night the clouds were gone, and you found all five in the sky."
+              }
+            ]
+          },
+          "talk": "Ask: the clouds hid the stars, so the plan changed. What did he do instead?",
+          "smooth": "Your boat landed at the pier below Star Point. The dome is white and round, and the sky is clear."
+        },
+        {
+          "text": "The clouds have gone, and the sky is clear.",
+          "smooth": "Dr. Amal opens the dome. The telescope points at the Moon."
+        },
+        {
+          "text": "Tonight is clear. Small lamps light the path up the point. One more session, and you reach Star Point."
+        }
+      ],
+      "postcard": [
+        "The observatory at Star Point has a round dome. A slit in the dome opens, and the telescope looks out.",
+        "Through the telescope, the Moon has gray plains and round craters.",
+        "Saturn looks like a small yellow ball with a ring around it.",
+        "Dr. Amal points to a bright dot moving across the sky. It is the space station, which goes around Earth in about 90 minutes.",
+        "Captain Ada climbs the path to the dome. She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+      ]
+    },
+    {
+      "id": "rail",
+      "name": "Rail Coast",
+      "emoji": "🚂",
+      "souvenir": "signal",
+      "topics": ["transport", "maps"],
+      "next": ["airfield"],
+      "beats": [
+        {
+          "text": "From the hill on Gull Island, you can see a long, low island to the east. A train runs along its coast. That is Rail Coast. The east sea route goes there."
+        },
+        {
+          "text": "Your boat lands at Pier Station. From there, the Coast Line train runs beside the sea to Rail Coast. Mr. Haddad, the signal operator, sent you a map of the line. One signal on the line is very old.",
+          "smooth": "Your boat lands at Pier Station. From there, the Coast Line train runs beside the sea to Rail Coast. Mr. Haddad, the signal operator, sent you a map of the line."
+        },
+        {
+          "obstacle": "broken",
+          "text": "You are on the platform at Pier Station, but the train is not moving. A signal at Shell Halt is broken. A signal tells the driver to stop or go, so trains wait until it is fixed.",
+          "notice": {
+            "type": "message",
+            "app": "text",
+            "from": "Rail Coast Station",
+            "rows": [
+              "A signal at Shell Halt is broken.",
+              "Trains wait until it is fixed, at about 3 PM.",
+              "A bus runs from Pier Station to Rail Coast at 2 PM."
+            ]
+          },
+          "cope": "A broken signal gets fixed. Until then, we can take the bus or wait.",
+          "choice": {
+            "ask": "How will you get to Rail Coast?",
+            "options": [
+              {
+                "label": "Take the bus at 2 PM",
+                "reply": "Good plan. The bus stops right outside the station.",
+                "after": "The bus took the coast road. From the window, you saw the train waiting at Shell Halt, and then its signal turned green."
+              },
+              {
+                "label": "Wait for the train and follow the map",
+                "reply": "Good plan. Mr. Haddad says the signal will be fixed by 3 PM.",
+                "after": "You followed the line on the map while you waited. At 3 PM the signal was fixed, and the train came in."
+              }
+            ]
+          },
+          "talk": "Ask: the train could not go because a signal was broken. He had two ways to get there. Which would you pick, and why?",
+          "smooth": "You are on the platform at Pier Station. The Coast Line train comes in on time."
+        },
+        {
+          "text": "The signal is fixed, and the trains are running again.",
+          "smooth": "The train runs right beside the sea. You can see the waves from your seat."
+        },
+        {
+          "text": "The map shows one more stop before Rail Coast. One more session, and you reach Rail Coast."
+        }
+      ],
+      "postcard": [
+        "Rail Coast station has a clock, a signal box and a map room.",
+        "In the signal box, Mr. Haddad pulls a lever, and a signal changes to tell the driver to go.",
+        "In the map room, a big map shows every island. The key tells you what each symbol means.",
+        "You find Home Island, Gull Island and Cloud Hill on the map.",
+        "Captain Ada is waiting on the platform. She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+      ]
+    },
+    {
       "id": "airfield",
       "name": "Cloud Hill Airfield",
       "emoji": "🛩️",
+      "next": ["takeoff"],
       "souvenir": "plane",
       "beats": [
         { "text": "Captain Ada showed you a map. Cloud Hill has a long, flat runway." },
-        { "text": "Bus 9 goes from Windy Cape to Cloud Hill. It leaves at 10 AM." },
+        { "text": "Bus 9 goes from Windy Cape to Cloud Hill. It leaves at 10 AM.", "byFrom": {"fossil": "Captain Ada's boat takes you to the shore below Cloud Hill. It leaves at 10 AM.", "reef": "Captain Ada's boat takes you to the shore below Cloud Hill. It leaves at 10 AM.", "star": "Captain Ada's boat takes you to the shore below Cloud Hill. It leaves at 10 AM.", "rail": "Captain Ada's boat takes you to the shore below Cloud Hill. It leaves at 10 AM."} },
         { "text": "There is an old hangar on Cloud Hill. A hangar is a big shed for planes." },
         { "text": "Captain Ada says there is something red inside the hangar." },
         { "text": "One more session, and you reach Cloud Hill." }
@@ -106,6 +363,7 @@
       "id": "takeoff",
       "name": "Take-off",
       "emoji": "☁️",
+      "next": ["australia"],
       "beats": [
         { "text": "The Kookaburra needs new tires and a check of the engine." },
         { "text": "The new tires are on. The engine starts with a steady hum." },

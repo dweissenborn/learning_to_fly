@@ -4,10 +4,10 @@
 import { useState, type ReactNode } from 'react';
 import { Button, Dialog, Modal, ModalOverlay } from 'react-aria-components';
 import type { Passage as P, Visual } from '@wayfinder/schema';
-import { journeyPosition, type Progress } from '@wayfinder/engine';
+import { forkOptions, journeyRoute, pastFork, routePosition, type Progress } from '@wayfinder/engine';
 import journeyData from '../../../content/journey.json';
-import { saveSettings, type Settings } from './db';
-import { passageText } from './content';
+import { log, saveSettings, type Settings } from './db';
+import { passageText, TOPICS } from './content';
 import { Passage } from './Passage';
 import { Guide, GUIDES, Koala, Plane, pieceById } from './art';
 import { Btn, SpeakBtn } from './ui';
@@ -20,28 +20,65 @@ export interface Beat {
   choice?: { ask: string; options: { label: string; reply: string; after: string }[] };
   talk?: string;
   smooth?: string;
+  /** LTF-20: the text for a learner arriving from this stop, where it differs (the Windy Cape bus is not on island routes). */
+  byFrom?: Record<string, string>;
 }
-export interface Stop { id: string; name: string; emoji: string; souvenir?: string; beats: Beat[]; postcard: string[] }
+export interface Stop { id: string; name: string; emoji: string; souvenir?: string; beats: Beat[]; postcard: string[]; next?: string[]; topics?: string[]; legacy?: boolean }
 export const JOURNEY = journeyData as unknown as { stops: Stop[]; koalas: { name: string; facts: string[] }[]; allMet: string };
+const BY_ID = new Map(JOURNEY.stops.map((s) => [s.id, s]));
+/** Every route has the same number of stops (checked by npm run check), so Australia comes after the same number of sessions. */
+export const ROUTE_LENGTH = (() => { let n = 1; for (let s = JOURNEY.stops[0]; s.next?.length; s = BY_ID.get(s.next[0])!) n++; return n; })();
+
+/** LTF-20: his route, following the island he chose at each fork. It ends at a fork he has not chosen yet. */
+export function routeOf(s: Settings) {
+  const r = journeyRoute(JOURNEY.stops, Object.fromEntries(Object.entries(s.routes ?? {}).map(([k, v]) => [k, v.to])));
+  return { ...r, stops: r.ids.map((id) => BY_ID.get(id)!) };
+}
+
+const FORKS = JOURNEY.stops.filter((s) => (s.next?.length ?? 0) > 1);
+/**
+ * LTF-20, once per fork: a learner whose story had already gone past the fork when the routes arrived keeps the old route
+ * (its `legacy` stop), so nothing moves him back. Everyone else gets the fork. Returns the settings to save, or null.
+ */
+export function forkMigration(s: Settings, finished: number): Partial<Settings> | null {
+  const todo = FORKS.filter((f) => !(s.forksSeen ?? []).includes(f.id) && !s.routes?.[f.id]);
+  if (!todo.length) return null;
+  const routes = { ...(s.routes ?? {}) };
+  for (const f of todo) {
+    const at = routeOf({ ...s, routes }).ids.indexOf(f.id);
+    const legacy = f.next!.find((id) => BY_ID.get(id)?.legacy);
+    if (at >= 0 && legacy && pastFork(finished, at, ROUTE_LENGTH, s.legLength, s.journeyAnchor)) routes[f.id] = { to: legacy, at: 0 };
+  }
+  return { routes, forksSeen: [...(s.forksSeen ?? []), ...todo.map((f) => f.id)] };
+}
 
 export const finishedCount = (p: Progress) => p.sessions.filter((s) => s.finished).length;
 
 /** Where he is on the journey and what the story says now. */
-export function journeyNow(finished: number, s: Settings) {
-  const pos = journeyPosition(finished, JOURNEY.stops.length, s.legLength, s.journeyAnchor);
-  const here = JOURNEY.stops[pos.stop];
-  const next = JOURNEY.stops[pos.stop + 1];
-  const beat = next ? shownBeat(next, pos.beat, s) : undefined;
-  return { ...pos, here, next, beat, legLength: s.legLength, koala: pos.arrived ? JOURNEY.koalas[pos.after] : undefined };
+export function journeyNow(finished: number, settings: Settings) {
+  const fix = forkMigration(settings, finished); // shown at once; App saves it
+  const s = fix ? { ...settings, ...fix } : settings;
+  const route = routeOf(s);
+  const pos = routePosition(finished, route, ROUTE_LENGTH, s.legLength, s.journeyAnchor);
+  const here = route.stops[pos.stop];
+  const next = route.stops[pos.stop + 1];
+  const beat = next ? shownBeat(next, pos.beat, s, here.id) : undefined;
+  // LTF-20: where his route meets a fork he has not chosen, the islands that best match his interests are offered (the map shows them
+  // ahead), and once he is there the journey waits for his pick.
+  const forkStop = route.forkAt === undefined ? undefined : route.stops[route.forkAt];
+  const branches = forkStop ? forkOptions(JOURNEY.stops, forkStop.id, s.interests).map((o) => BY_ID.get(o.id)!) : [];
+  const fork = pos.waiting ? { id: here.id, at: pos.stop, options: branches } : undefined;
+  return { ...pos, here, next, beat, fork, branches, route: route.stops, finished, legLength: s.legLength, koala: pos.arrived ? JOURNEY.koalas[pos.after] : undefined };
 }
 export type JourneyNow = ReturnType<typeof journeyNow>;
 
-/** The stops he has reached, for souvenirs and postcards. */
-export const reachedStops = (stop: number) => new Set(JOURNEY.stops.slice(0, stop + 1).map((s) => s.id));
+/** The stops he has reached on his route, for souvenirs and postcards. */
+export const reachedStops = (stop: number, s: Settings) => new Set(routeOf(s).ids.slice(0, stop + 1));
 
 export interface ShownBeat extends Omit<Beat, 'smooth'> { key: string; stop: Stop; chosen?: number }
-function shownBeat(stop: Stop, i: number, s: Settings): ShownBeat {
-  const b = stop.beats[i];
+function shownBeat(stop: Stop, i: number, s: Settings, from?: string): ShownBeat {
+  const b = { ...stop.beats[i] };
+  if (from && b.byFrom?.[from]) b.text = b.byFrom[from];
   const guide = GUIDES[s.guide].name;
   const fill = (t: string) => t.replaceAll('{guide}', guide);
   if (!s.setbacks && b.smooth) return { key: `${stop.id}-${i}`, stop, text: fill(b.smooth) };
@@ -71,7 +108,29 @@ export function LegDots({ now }: { now: JourneyNow }) {
 }
 
 /** The story beat for now: a hint, or an obstacle with its notice, a coping line and a choice of plan. */
+/** LTF-20: the sea routes at a fork. Every route reaches Australia; the choice waits for him and has no timer. */
+function ForkCard({ now, settings }: { now: JourneyNow; settings: Settings }) {
+  const f = now.fork!;
+  const ask = `Sea routes leave ${now.here.name}. Each one goes to a different island, and every route reaches Australia. Which island do you want to sail to?`;
+  const about = (o: Stop) => (o.topics ?? []).map((t) => TOPICS.find((x) => x.id === t)).filter(Boolean).map((t) => `${t!.emoji} ${t!.label}`).join(' · ');
+  const choose = (to: string) => {
+    void saveSettings({ routes: { ...(settings.routes ?? {}), [f.id]: { to, at: Date.now() } }, journeyAnchor: { at: now.finished, stop: f.at, step: 0, after: 0 } });
+    void log({ type: 'activity', session: 'home', kind: 'route', item: to });
+  };
+  return <section className="card journey-card stack" aria-label="Choose your sea route">
+    <div className="row"><span style={{ fontSize: '1.8rem' }} aria-hidden>🧭</span><h3 style={{ margin: 0, flex: 1 }}>Choose your sea route</h3>
+      <SpeakBtn lines={[ask, ...f.options.map((o) => `${o.name}. ${o.beats[0].text}`)]} k={'fork-' + f.id} label="" className="small iconbtn" /></div>
+    <p style={{ margin: 0 }}>{ask}</p>
+    <div className="choose">{f.options.map((o) => <Button key={o.id} className="ccard" onPress={() => choose(o.id)}>
+      <span className="cico" aria-hidden>{o.emoji}</span><span className="cname">{o.name}</span>
+      <span>{o.beats[0].text}</span>{about(o) && <span className="muted">{about(o)}</span>}
+    </Button>)}</div>
+    <p className="tagline">The journey waits here until you choose. There is no rush.</p>
+  </section>;
+}
+
 export function BeatCard({ now, settings }: { now: JourneyNow; settings: Settings }) {
+  if (now.fork) return <ForkCard now={now} settings={settings} />;
   const b = now.beat;
   if (!b) {
     if (!now.arrived) return null;
@@ -148,6 +207,18 @@ export function StopArt({ id }: { id: string }) {
     airfield: <>{sky}<path d="M0 120 Q160 80 320 116 L320 170 L0 170 Z" fill="#8fc77a" /><path d="M20 150 L300 136 L304 146 L24 160 Z" fill="#6a6f78" />
       <path d="M210 118 a34 30 0 0 1 68 0 Z" fill="#a9a39a" /><rect x="232" y="100" width="24" height="18" fill="#5a5450" />
       <Plane x={110} y={128} s={0.9} /></>,
+    fossil: <>{sky}{sea(128)}{[0, 1, 2, 3, 4].map((k) => <rect key={k} x={150 + k * 6} y={40 + k * 18} width={170 - k * 6} height="18" fill={['#b9b2a4', '#a79f90', '#c4bcab', '#9a9282', '#b1a998'][k]} />)}
+      <path d="M40 140 L72 112 L104 140 Z" fill="#e8913a" /><path d="M20 140 L320 140 L320 150 L20 150 Z" fill="#e9d6a8" />
+      <path d="M230 128 m-10 0 a10 10 0 1 1 20 0 a7 7 0 1 1 -14 0 a4 4 0 1 1 8 0" stroke="#6b5a3a" strokeWidth="2.5" fill="none" /></>,
+    reef: <>{sky}<rect y="70" width="320" height="100" fill="#4fa3d1" /><ellipse cx="160" cy="120" rx="130" ry="38" fill="#7fd0e8" stroke="#ffffff" strokeWidth="6" strokeDasharray="14 8" />
+      <ellipse cx="160" cy="118" rx="44" ry="14" fill="#e9d6a8" /><path d="M152 112 q4 -26 -6 -38 M152 112 q10 -24 26 -28" stroke="#7a5034" strokeWidth="3" fill="none" /><ellipse cx="148" cy="74" rx="16" ry="6" fill="#5fae5a" /><ellipse cx="176" cy="84" rx="14" ry="5" fill="#5fae5a" />
+      <path d="M232 132 L262 132 L256 140 L238 140 Z" fill="#f2e6d0" /><path d="M247 132 L247 112 L260 130 Z" fill="#fff" /></>,
+    star: <><rect width="320" height="170" fill="#243b6b" />{[[30, 30], [80, 18], [140, 40], [210, 22], [270, 46], [300, 16], [110, 70], [250, 80]].map(([x, y]) => <circle key={`${x}${y}`} cx={x} cy={y} r="2" fill="#fff" />)}
+      <path d="M0 170 L0 120 Q120 96 230 118 L320 150 L320 170 Z" fill="#3f6b4a" /><rect x="150" y="96" width="60" height="22" fill="#f2f2ec" /><path d="M150 96 A30 30 0 0 1 210 96 Z" fill="#ffffff" /><rect x="176" y="68" width="8" height="28" fill="#9aa5b1" />
+      <circle cx="60" cy="40" r="10" fill="#f5f0d8" /></>,
+    rail: <>{sky}{sea(110)}<rect y="118" width="320" height="14" fill="#a9a39a" /><path d="M0 132 L320 132" stroke="#6b5a4a" strokeWidth="3" />
+      <rect x="60" y="94" width="110" height="24" rx="5" fill="#3f88c5" /><rect x="170" y="98" width="40" height="20" rx="4" fill="#2f6f99" />{[74, 100, 126, 152].map((x) => <rect key={x} x={x} y="99" width="16" height="10" fill="#bfe3f5" />)}
+      <rect x="250" y="70" width="6" height="48" fill="#4a4a5a" /><rect x="242" y="58" width="22" height="34" rx="4" fill="#2b2b2b" /><circle cx="253" cy="68" r="5" fill="#3fbf5a" /><circle cx="253" cy="83" r="5" fill="#5a2b2b" /></>,
     takeoff: <><rect width="320" height="170" fill="#9fd3f0" /><circle cx="270" cy="34" r="16" fill="#ffe08a" />
       <ellipse cx="70" cy="130" rx="60" ry="16" fill="#fff" /><ellipse cx="240" cy="140" rx="70" ry="18" fill="#fff" /><ellipse cx="160" cy="60" rx="34" ry="10" fill="#fff" opacity="0.8" />
       <Plane x={150} y={96} s={1.1} rot={-12} /></>,
@@ -161,7 +232,10 @@ export function StopArt({ id }: { id: string }) {
 }
 
 // ---------------------------------------------------------------- the map screen
-const AT: Record<string, [number, number]> = { home: [120, 430], gull: [290, 350], cape: [410, 230], airfield: [560, 150], takeoff: [715, 120], australia: [905, 365] };
+const AT: Record<string, [number, number]> = {
+  home: [120, 430], gull: [290, 350], cape: [410, 230], airfield: [560, 150], takeoff: [715, 120], australia: [905, 365],
+  star: [330, 210], rail: [480, 380], fossil: [300, 485], reef: [110, 250], // LTF-20: north, east, south and west of Gull Island
+};
 const ctrl = (a: [number, number], b: [number, number]): [number, number] => [(a[0] + b[0]) / 2, Math.min(a[1], b[1]) - 50];
 const onCurve = (a: [number, number], c: [number, number], b: [number, number], t: number): [number, number] =>
   [(1 - t) ** 2 * a[0] + 2 * (1 - t) * t * c[0] + t ** 2 * b[0], (1 - t) ** 2 * a[1] + 2 * (1 - t) * t * c[1] + t ** 2 * b[1]];
@@ -170,10 +244,16 @@ const OBSTACLE_ICON = { weather: '⛈️', blocked: '🪨', broken: '🔧' };
 export function JourneyMap({ settings, progress, onExit }: { settings: Settings; progress: Progress; onExit: () => void }) {
   const now = journeyNow(finishedCount(progress), settings);
   const [open, setOpen] = useState<string | null>(null);
-  const stops = JOURNEY.stops;
+  // LTF-20: his route so far; at a fork he has not chosen, the offered islands branch off, and the rest of the way follows.
+  const stops = now.route;
   const reached = (i: number) => i <= now.stop;
+  const branches = now.branches;
+  const forkStop = stops[stops.length - 1];
+  const tail = branches.length ? journeyRoute(JOURNEY.stops, { ...Object.fromEntries(Object.entries(settings.routes ?? {}).map(([k, v]) => [k, v.to])), [forkStop.id]: branches[0].id }).ids.slice(stops.length + 1).map((id) => BY_ID.get(id)!) : [];
+  const ahead: Stop[] = [...branches, ...tail];
+  const dashed = (a: [number, number], b: [number, number], key: string) => { const c = ctrl(a, b); return <path key={key} d={`M${a[0]} ${a[1]} Q${c[0]} ${c[1]} ${b[0]} ${b[1]}`} fill="none" stroke="#ffffff" strokeWidth={4} strokeDasharray="10 10" strokeLinecap="round" />; };
   const from = AT[now.here.id], to = now.next && AT[now.next.id];
-  const marker = now.arrived || !to ? AT.australia : onCurve(from, ctrl(from, to), to, now.step / now.legLength);
+  const marker = now.arrived ? AT.australia : to ? onCurve(from, ctrl(from, to), to, now.step / now.legLength) : from;
   const flying = now.stop >= 3;
   const met = now.arrived ? JOURNEY.koalas.slice(0, Math.min(JOURNEY.koalas.length, now.after + 1)) : [];
   const openStop = stops.find((s) => s.id === open);
@@ -182,7 +262,7 @@ export function JourneyMap({ settings, progress, onExit }: { settings: Settings;
     <header className="topbar"><h1 style={{ margin: 0 }}>🗺️ My journey</h1><span className="spacer" /><Btn className="quiet small" onPress={onExit}>← Back to island</Btn></header>
     <main className="stack">
       <div className="guide-row"><Guide id={settings.guide} size={64} mood="happy" />
-        <div className="bubble">{now.arrived ? 'You made it to Australia. The koalas are glad you came.' : `You are at ${now.here.name}. Next stop: ${now.next!.name}. Far away is Australia, where the koalas live.`}</div></div>
+        <div className="bubble">{now.arrived ? 'You made it to Australia. The koalas are glad you came.' : now.next ? `You are at ${now.here.name}. Next stop: ${now.next.name}. Far away is Australia, where the koalas live.` : `You are at ${now.here.name}. Sea routes go to different islands, and every route reaches Australia. Choose one below.`}</div></div>
       <div className="journey-map">
         <svg viewBox="0 0 1000 560" role="group" aria-label={`Map of the journey. You are at ${now.here.name}.`}>
           <defs><linearGradient id="seaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#bfe3f5" /><stop offset="1" stopColor="#5fb0dc" /></linearGradient></defs>
@@ -195,6 +275,14 @@ export function JourneyMap({ settings, progress, onExit }: { settings: Settings;
             const a = AT[stops[i].id], b = AT[s.id], c = ctrl(a, b);
             return <path key={s.id} d={`M${a[0]} ${a[1]} Q${c[0]} ${c[1]} ${b[0]} ${b[1]}`} fill="none" stroke={reached(i + 1) ? '#f2b04a' : '#ffffff'} strokeWidth={reached(i + 1) ? 6 : 4} strokeDasharray={reached(i + 1) ? undefined : '10 10'} strokeLinecap="round" />;
           })}
+          {branches.map((o) => dashed(AT[forkStop.id], AT[o.id], 'to-' + o.id))}
+          {tail.length > 0 && branches.map((o) => dashed(AT[o.id], AT[tail[0].id], 'from-' + o.id))}
+          {tail.slice(1).map((s, i) => dashed(AT[tail[i].id], AT[s.id], 'tail-' + s.id))}
+          {ahead.map((s) => { const [x, y] = AT[s.id]; return <g key={'ahead-' + s.id}>
+            <circle cx={x} cy={y} r={s.id === 'australia' ? 40 : 32} fill="#fffdf6" stroke={branches.includes(s) ? '#3f88c5' : '#b9b2a4'} strokeWidth="5" strokeDasharray={branches.includes(s) ? '8 6' : undefined} opacity={0.85} />
+            <text x={x} y={y + 11} textAnchor="middle" fontSize={s.id === 'australia' ? 38 : 30}>{s.emoji}</text>
+            <text x={x} y={y + (s.id === 'australia' ? 64 : 54)} textAnchor="middle" fontSize="20" fontWeight="800" fill="#1d2b3a" stroke="#fffdf6" strokeWidth="5" paintOrder="stroke">{s.name}</text>
+          </g>; })}
           {stops.map((s, i) => {
             const [x, y] = AT[s.id];
             const isNext = i === now.stop + 1;
@@ -209,7 +297,7 @@ export function JourneyMap({ settings, progress, onExit }: { settings: Settings;
               : <g key={s.id}>{body}</g>;
           })}
           <g transform={`translate(${marker[0]} ${marker[1] - 44})`} aria-hidden="true">
-            {flying ? <Plane s={0.7} rot={-8} /> : <text textAnchor="middle" fontSize="40" y="12">{now.stop === 2 ? '🚌' : '⛴️'}</text>}
+            {flying ? <Plane s={0.7} rot={-8} /> : <text textAnchor="middle" fontSize="40" y="12">{now.here?.id === 'cape' ? '🚌' : '⛴️'}</text>}
             {now.beat?.obstacle && <text x="34" y="-14" fontSize="30">{OBSTACLE_ICON[now.beat.obstacle]}</text>}
           </g>
         </svg>

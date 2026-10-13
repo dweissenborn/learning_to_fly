@@ -2,8 +2,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button, Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId } from '@wayfinder/schema';
-import { ALL_SKILLS, choices, flightPoints, gate, isInterest, levelFor, mulberry32, planGateCheck, planSession, strandOf, usualStop, type Choice, type Progress, type SessionPlan, type StepName } from '@wayfinder/engine';
-import { addNote, log, type Settings } from './db';
+import { ALL_SKILLS, checkupDue, choices, flightPoints, gate, isInterest, levelFor, mulberry32, planCheckup, planGateCheck, planSession, RULES, strandOf, usualStop, type Choice, type Progress, type SessionPlan, type StepName, type WordCard as WordCardT } from '@wayfinder/engine';
+import { addNote, log, type GuideId, type Settings } from './db';
 import { pool, passageText, SKILL, STRAND } from './content';
 import { ItemView, NextSlot, type HintMode, type Result } from './ItemView';
 import { Guide, GUIDES, Island, PiecePreview, PIECES, pieceById, freeTiles, type Placed } from './art';
@@ -13,7 +13,7 @@ import { sfx, speak, stopSpeaking } from './media';
 import { useActivity } from './activity';
 import { GearCelebration, KitMeter } from './gear';
 
-type Step = 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish';
+type Step = 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'checkup' | 'finish';
 const STEP_META: Record<Step, { label: string; icon: string; say: string }> = {
   plan: { label: 'Plan', icon: '🗺️', say: 'See the plan.' },
   choose: { label: 'Choose', icon: '👆', say: 'Pick where to go today.' },
@@ -22,10 +22,12 @@ const STEP_META: Record<Step, { label: string; icon: string; say: string }> = {
   together: { label: 'Together', icon: '🤝', say: 'We do some together. Hints will help you.' },
   yourturn: { label: 'Your turn', icon: '⭐', say: 'You do some on your own. Ask for help if you want it.' },
   gatecheck: { label: 'Peak check', icon: '🔭', say: 'Five questions about new stories. No hints this time.' },
+  checkup: { label: 'Check-up flight', icon: '🛫', say: 'Six new texts. No hints, and no right or wrong. It shows how your reading is growing.' },
   finish: { label: 'Finish', icon: '🏁', say: 'See what you did, and add something to your island.' },
 };
 const LESSON: Step[] = ['plan', 'choose', 'warmup', 'watch', 'together', 'yourturn', 'finish'];
 const CHECK: Step[] = ['plan', 'choose', 'gatecheck', 'finish'];
+const CHECKUP: Step[] = ['plan', 'choose', 'checkup', 'finish'];
 
 export function placedFrom(events: LogEvent[]): Placed[] {
   return events.flatMap((e) => (e.type === 'world' ? [{ piece: e.piece, x: e.x, y: e.y, id: e.id, ts: e.ts }] : []));
@@ -33,33 +35,50 @@ export function placedFrom(events: LogEvent[]): Placed[] {
 
 export function Session({ settings, events, progress, onExit }: { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void }) {
   const [step, setStep] = useState<Step>('plan');
-  const [mode, setMode] = useState<'lesson' | 'check'>('lesson');
+  const [mode, setMode] = useState<'lesson' | 'check' | 'checkup'>('lesson');
   const [plan, setPlan] = useState<SessionPlan | null>(null);
   const [checkItems, setCheckItems] = useState<Item[]>([]);
   const [idx, setIdx] = useState(0);
   const [watchStep, setWatchStep] = useState(0);
   const [helpTick, setHelpTick] = useState(0);
+  const [wordDone, setWordDone] = useState(false);
   const [done, setDone] = useState<{ item: Item; phase: Step; r: Result }[]>([]);
   const [askStop, setAskStop] = useState(false);
   const sid = useMemo(() => crypto.randomUUID(), []);
   const started = useRef(false);
   const before = useMemo(() => ({ mastered: new Set(ALL_SKILLS.filter((s) => progress.skills[s].everMastered)), opened: progress.gateOpened, finished: finishedCount(progress) }), []); // eslint-disable-line react-hooks/exhaustive-deps
   const g = gate(progress, settings.gate);
-  const options = useMemo(() => choices(progress, g, Date.now()), []); // eslint-disable-line react-hooks/exhaustive-deps
+  // LTF-14: an optional check-up flight about every ten sessions, from the stop he is at, while its pool lasts.
+  const jn = journeyNow(finishedCount(progress), settings);
+  const stopId = jn.here?.id ?? 'home';
+  // LTF-20: on the way to a themed island, sessions lean toward its interests (a lean, not a filter: one pick in five still ignores interests).
+  const interests = [...new Set([...settings.interests, ...((jn.next?.topics ?? []) as typeof settings.interests)])];
+  const options = useMemo(() => {
+    const out = choices(progress, g, Date.now());
+    const ready = planCheckup({ pool, seen: new Map(), interests: [], allowThemes: settings.hardThemes, hidden: new Set(settings.hidden), rng: () => 0.5 }, stopId).length === RULES.checkupTexts;
+    return checkupDue(progress) && ready ? [...out, { kind: 'checkup' } as Choice] : out;
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const guide = settings.guide;
-  const steps = mode === 'lesson' ? LESSON : CHECK;
+  const steps = mode === 'lesson' ? LESSON : mode === 'check' ? CHECK : CHECKUP;
   const points = flightPoints(events);
   // Where his recent sessions usually end. Getting past it earns a bonus, said out loud.
   const stopAt = useMemo(() => usualStop(events), []); // eslint-disable-line react-hooks/exhaustive-deps
   const boosted = useRef(false);
   const [boostMsg, setBoostMsg] = useState('');
 
-  const lists: Partial<Record<Step, Item[]>> = plan ? { warmup: plan.warmup, together: plan.together, yourturn: [...plan.yourturn, ...plan.express] } : { gatecheck: checkItems };
+  const lists: Partial<Record<Step, Item[]>> = plan ? { warmup: plan.warmup, together: plan.together, yourturn: [...plan.yourturn, ...plan.express] } : mode === 'checkup' ? { checkup: checkItems } : { gatecheck: checkItems };
   const current = lists[step]?.[idx];
 
   const choose = (c: Choice) => {
-    const ctx = { pool, seen: progress.seen, interests: settings.interests, allowThemes: settings.hardThemes, hidden: new Set(settings.hidden), rng: mulberry32(Date.now() % 2147483647) };
+    const ctx = { pool, seen: progress.seen, interests, allowThemes: settings.hardThemes, hidden: new Set(settings.hidden), rng: mulberry32(Date.now() % 2147483647), tapped: tappedWords(events) };
     started.current = true;
+    if (c.kind === 'checkup') {
+      setCheckItems(planCheckup(ctx, stopId));
+      setMode('checkup');
+      log({ type: 'session', session: sid, action: 'start', checkup: true });
+      go('checkup');
+      return;
+    }
     if (c.kind === 'gatecheck') {
       setCheckItems(planGateCheck(ctx));
       setMode('check');
@@ -90,15 +109,16 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
     setStep(s);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  const nextPhase = (s: Step) => go(({ warmup: 'watch', watch: 'together', together: 'yourturn', yourturn: 'finish', gatecheck: 'finish' } as Record<string, Step>)[s] ?? 'finish');
+  const nextPhase = (s: Step) => go(({ warmup: 'watch', watch: 'together', together: 'yourturn', yourturn: 'finish', gatecheck: 'finish', checkup: 'finish' } as Record<string, Step>)[s] ?? 'finish');
 
   // A new skill's first guided item shows its clue at once; after that, the usual wait (LTF-01).
   const clueAtOnce = step === 'together' && idx === 0 && !!plan?.newSkill && settings.clueFirst;
   const onDone = (item: Item, r: Result) => {
-    const phase = step as 'warmup' | 'together' | 'yourturn' | 'gatecheck';
+    const phase = step as 'warmup' | 'together' | 'yourturn' | 'gatecheck' | 'checkup';
     log({
       type: 'answer', session: sid, item: item.id, skill: item.skill, phase, correct: r.correct, hint: r.hint, tries: r.tries, ms: r.ms, format: item.format,
       transfer: !!item.transfer, interest: isInterest(pool, item, settings.interests), readAloud: settings.readAloud, level: item.level, ...(phase === 'together' ? { delay: clueAtOnce ? 0 : settings.hintDelay } : {}), ...(r.rubric !== undefined ? { rubric: r.rubric } : {}),
+      ...(item.reason && r.hint >= 2 ? { card: true } : {}),
     });
     if (r.note) addNote({ kind: 'answer', personal: !!item.personal, item: item.id, title: item.prompt, text: r.note });
     setDone((d) => [...d, { item, phase, r }]);
@@ -119,7 +139,7 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
   const readLines = current ? [...passageText(pool.passages.get(current.passage)!), current.prompt]
     : step === 'watch' && plan?.model ? [plan.model.steps[watchStep].say] : [STEP_META[step].say];
   const helpOn = !!current && (step === 'warmup' || step === 'together' || step === 'yourturn');
-  const hintMode: HintMode = step === 'together' ? 'auto' : step === 'gatecheck' ? 'none' : 'request';
+  const hintMode: HintMode = step === 'together' ? 'auto' : step === 'gatecheck' || step === 'checkup' ? 'none' : 'request';
   const phaseItems = lists[step]?.length ?? 0;
 
   return <>
@@ -164,7 +184,8 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
             {plan.model.steps[watchStep].say}
           </div>
         </div>
-        <ItemView item={plan.model.item} mode="demo" guide={guide} pictures={settings.pictures} demo={{ show: plan.model.steps[watchStep].show, reveal: plan.model.steps.slice(0, watchStep + 1).some((s) => s.reveal) }} />
+        <ItemView item={plan.model.item} mode="demo" guide={guide} pictures={settings.pictures} demo={{ show: plan.model.steps[watchStep].show, reveal: plan.model.steps.slice(0, watchStep + 1).some((s) => s.reveal),
+          fill: plan.model.steps.slice(0, watchStep + 1).flatMap((s) => (s.fill ? [s.fill] : [])) }} />
         <NextSlot>
           {/* He does not need a thing shown twice: one press skips the rest of the demo. */}
           <Btn className="quiet" onPress={() => { void log({ type: 'activity', session: sid, kind: 'skip-demo', step: 'watch' }); nextPhase('watch'); }}>Got it, skip</Btn>
@@ -174,7 +195,8 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
             : <Btn className="primary big" autoFocus onPress={() => nextPhase('watch')}>Now we do it together →</Btn>}
         </NextSlot>
       </div>}
-      {current && <div className="stack">
+      {step === 'warmup' && idx === 0 && plan?.word && !wordDone && <WordCard sid={sid} card={plan.word} guide={guide} onDone={() => setWordDone(true)} />}
+      {current && !(step === 'warmup' && idx === 0 && plan?.word && !wordDone) && <div className="stack">
         {idx === 0 && plan && (step === 'together' || step === 'yourturn') && (plan.skipWatch || plan.skipTogether) && (step === 'yourturn' || !plan.skipTogether) &&
           <div className="feedback good appear"><Guide id={guide} mood="happy" size={44} /><span>{
             plan.skipTogether ? 'You already know how to do this, so we skip ahead. More of your own instead.' : 'You already know how to do this, so we skip the example today.'
@@ -182,9 +204,10 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
         <div className="row muted" style={{ fontWeight: 700 }}>
           <span className={`chip strand-${strandOf(current.skill)}`} style={{ background: 'var(--s-soft)', color: 'var(--s-deep)' }}>{STRAND[strandOf(current.skill)].icon} {SKILL[current.skill].name}</span>
           <span>{STEP_META[step].label} · {idx + 1} of {phaseItems}</span>
-          {step === 'gatecheck' && <span>· no hints this time</span>}
+          {(step === 'gatecheck' || step === 'checkup') && <span>· no hints this time</span>}
         </div>
         <ItemView key={current.id} item={current} mode={hintMode} guide={guide} hintDelay={settings.hintDelay} clueAtOnce={clueAtOnce} pictures={settings.pictures} helpTick={helpTick}
+          whosWho={{ setting: settings.whosWho ?? 'auto', n4Mastered: progress.skills.N4.everMastered, names: !!settings.namesLevel1 }}
           autoRead={settings.readAloud} praiseIndex={done.length} onDone={(r) => onDone(current, r)} />
       </div>}
       {step === 'finish' && <Finish sid={sid} plan={plan} done={done} settings={settings} events={events} progress={progress} before={before} onExit={onExit} />}
@@ -229,7 +252,12 @@ function ChooseStep({ options, onChoose, guide }: { options: Choice[]; onChoose:
   return <div className="stack">
     <div className="guide-row"><Guide id={guide} size={72} /><div className="bubble">Where do you want to go today?</div></div>
     <div className="choose">
-      {options.map((c) => c.kind === 'gatecheck'
+      {options.map((c) => c.kind === 'checkup'
+        ? <Button key="checkup" className="ccard" onPress={() => onChoose(c)}>
+          <span className="cico" aria-hidden>🛫</span><span className="cname">Check-up flight</span>
+          <span>Six new texts about where you are on your journey. No hints, and no right or wrong. You can do it now or another day.</span>
+        </Button>
+        : c.kind === 'gatecheck'
         ? <Button key="gate" className="ccard strand-philosophical" onPress={() => onChoose(c)}>
           <span className="cico" aria-hidden>🔭</span><span className="cname">Peak check</span>
           <span>Five questions about stories you have not read yet. No hints. If you get most of them, Lantern Peaks open.</span>
@@ -271,7 +299,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
   const offers = useMemo(() => {
     const rng = mulberry32([...sid].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) | 0, 7));
     const owned = new Set(placed.map((p) => p.piece));
-    const reached = reachedStops(now.stop);
+    const reached = reachedStops(now.stop, settings);
     const avail = PIECES.filter((p) => (p.region !== 'philosophical' || peaksOpen) && (!p.stop || reached.has(p.stop)));
     const out: string[] = arrivedStop?.souvenir ? [arrivedStop.souvenir] : [];
     const add = (list: typeof PIECES) => {
@@ -287,7 +315,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
   const newly = ALL_SKILLS.filter((s) => progress.skills[s].everMastered && !before.mastered.has(s));
   const levelNow = plan ? levelFor(progress.skills[plan.skill], pool) : 0;
   const opened = (progress.gateOpened || checkPassed) && !before.opened;
-  const own = done.filter((d) => d.phase === 'yourturn' || d.phase === 'gatecheck');
+  const own = done.filter((d) => d.phase === 'yourturn' || d.phase === 'gatecheck' || d.phase === 'checkup');
   const warm = [...new Set(done.filter((d) => d.phase === 'warmup').map((d) => SKILL[d.item.skill].name))];
   const lines = [
     warm.length ? `You warmed up with ${warm.join(' and ')}.` : '',
@@ -333,6 +361,8 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
       <h3>For your grown-up</h3>
       <p style={{ margin: 0 }}>{talk}</p>
       {now.beat?.talk && <p style={{ margin: '0.5rem 0 0' }}>{now.beat.talk}</p>}
+      {plan && strandOf(plan.skill) === 'narrative' && <p style={{ margin: '0.5rem 0 0' }}>
+        <a className="btn small" href="/story-map.html" target="_blank" rel="noopener">🗺️ Print a paper story map</a> Some children do better on paper, so this stays an option.</p>}
     </div>
     <Btn className="primary big" autoFocus onPress={onExit}>Back to my island</Btn>
   </div>;
@@ -356,6 +386,37 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
       </Button>)}
     </div>
     <p className="muted">Your island has {placed.length} {placed.length === 1 ? 'thing' : 'things'} on it.</p>
+  </div>;
+}
+
+/** LTF-04: words he tapped for their meaning, most tapped first. */
+export function tappedWords(events: readonly LogEvent[]) {
+  const n = new Map<string, number>();
+  for (const e of events) if (e.type === 'activity' && e.kind === 'word-help' && e.word) n.set(e.word.toLowerCase(), (n.get(e.word.toLowerCase()) ?? 0) + 1);
+  return [...n].sort((a, b) => b[1] - a[1]).map(([w]) => w);
+}
+
+/** LTF-04: a word for today, before the warm-up questions. A wrong pick only fades; nothing is scored. */
+function WordCard({ sid, card, guide, onDone }: { sid: string; card: WordCardT; guide: GuideId; onDone: () => void }) {
+  const [tried, setTried] = useState<number[]>([]);
+  const [right, setRight] = useState(false);
+  const pick = (k: number) => {
+    if (right || tried.includes(k)) return;
+    if (k === card.answer) {
+      setRight(true);
+      void log({ type: 'activity', session: sid, kind: 'word-check', word: card.word, correct: tried.length === 0 });
+    } else setTried((t) => [...t, k]);
+  };
+  const parts = card.sentence.split(new RegExp(`(\\b${card.word}\\b)`, 'i'));
+  return <div className="stack">
+    <div className="guide-row"><Guide id={guide} size={56} /><div className="bubble appear">A word for today: <b>{card.word}</b>. What does it mean here?
+      <SpeakBtn lines={[`A word for today: ${card.word}.`, card.sentence, ...card.options]} k="word-card" label="" className="small iconbtn" /></div></div>
+    <div className="card"><p className="prose" style={{ margin: 0, fontSize: '1.2rem' }}>{parts.map((t, i) => (i % 2 ? <b key={i} className="gloss on">{t}</b> : t))}</p></div>
+    <div className="answers" role="group" aria-label="Meanings">{card.options.map((o, k) =>
+      <Button key={k} className={`opt ${tried.includes(k) ? 'tried' : ''} ${right && k === card.answer ? 'right' : ''}`} onPress={() => pick(k)}>{o}</Button>)}</div>
+    {right && <div className="feedback good appear"><Guide id={guide} mood="happy" size={44} /><span><span aria-hidden>{card.pic}</span> <b>{card.word}</b> means {card.options[card.answer]}.</span></div>}
+    {tried.length > 0 && !right && <div className="feedback hint appear"><Guide id={guide} mood="think" size={44} /><span>Read the sentence again. What would make sense there?</span></div>}
+    {right && <NextSlot><Btn className="primary big appear" autoFocus onPress={onDone}>Next <span aria-hidden>→</span></Btn></NextSlot>}
   </div>;
 }
 

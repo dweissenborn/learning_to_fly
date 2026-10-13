@@ -45,7 +45,7 @@ export function gearState(points: number) {
 }
 
 // ---------------------------------------------------------------- sessions, moment to moment
-export type StepName = 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish';
+export type StepName = 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'checkup' | 'finish';
 export interface SessionActivity {
   id: string;
   start: number;
@@ -64,7 +64,7 @@ export interface SessionActivity {
   skippedDemo: boolean;
 }
 
-const PHASE_STEP: Record<string, StepName> = { warmup: 'warmup', together: 'together', yourturn: 'yourturn', gatecheck: 'gatecheck' };
+const PHASE_STEP: Record<string, StepName> = { warmup: 'warmup', together: 'together', yourturn: 'yourturn', gatecheck: 'gatecheck', checkup: 'checkup' };
 
 /** One summary per session, oldest first. Sessions from before activity logging infer their last step from answers. */
 export function sessionActivity(events: readonly LogEvent[]): SessionActivity[] {
@@ -159,12 +159,64 @@ export function recountTrend(events: readonly LogEvent[]) {
   };
 }
 
+/**
+ * LTF-15: right first time by question type, compared only within the same skill and level, on his own first-time
+ * answers (warm-up and your turn). A skill and level answered in only one format has nothing to compare, so it is left out.
+ */
+export function formatEffect(p: { skills: Record<string, { answers: AnswerEvent[] }>; repeats: ReadonlySet<string> }) {
+  const cells = new Map<string, Map<string, { correct: number; total: number }>>();
+  for (const s of Object.values(p.skills)) for (const a of s.answers) {
+    if ((a.phase !== 'yourturn' && a.phase !== 'warmup') || a.rubric !== undefined || a.level === undefined || p.repeats.has(a.id)) continue;
+    const key = `${a.skill}|${a.level}`;
+    if (!cells.has(key)) cells.set(key, new Map());
+    const byFormat = cells.get(key)!;
+    if (!byFormat.has(a.format)) byFormat.set(a.format, { correct: 0, total: 0 });
+    const r = byFormat.get(a.format)!;
+    r.total += 1;
+    if (a.correct) r.correct += 1;
+  }
+  return [...cells].filter(([, f]) => f.size > 1).map(([k, f]) => ({
+    skill: k.split('|')[0], level: Number(k.split('|')[1]),
+    formats: [...f].sort(([x], [y]) => x.localeCompare(y)).map(([format, r]) => ({ format, ...r })),
+  })).sort((x, y) => x.skill.localeCompare(y.skill) || x.level - y.level);
+}
+
+/**
+ * LTF-02 as a single-case record: his N5 right-first-time on his own first-time answers (warm-up and your turn),
+ * before and after he first saw a reasoning card. He sees one at the second hint of an item that has a card.
+ */
+export function reasonRecord(p: { skills: Record<string, { answers: AnswerEvent[] }>; repeats: ReadonlySet<string> }) {
+  const since = Object.values(p.skills).flatMap((s) => s.answers).filter((a) => a.card).sort((a, b) => a.ts - b.ts)[0]?.ts;
+  const r = { before: { correct: 0, total: 0 }, after: { correct: 0, total: 0 }, since };
+  for (const a of p.skills.N5?.answers ?? []) {
+    if ((a.phase !== 'yourturn' && a.phase !== 'warmup') || p.repeats.has(a.id)) continue;
+    const side = since !== undefined && a.ts >= since ? r.after : r.before;
+    side.total += 1;
+    if (a.correct) side.correct += 1;
+  }
+  return r;
+}
+
+const DAY = 86_400_000;
+/**
+ * LTF-07: from stage 3 the tiles wait behind "Show me ideas", and each day recount records, per answered question, whether
+ * he opened them. Today steps back a stage once he has had the button for two weeks and opened the ideas on every question
+ * in at least three recounts over the last two weeks. It moves on again by itself once fewer than three recent recounts do.
+ */
+export function ideasUse(events: readonly LogEvent[], now = Date.now()) {
+  const rs = events.filter((e): e is RecountEvent => e.type === 'recount' && !!e.ideas?.length).sort((a, b) => a.ts - b.ts);
+  const week = rs.filter((r) => r.ts > now - 7 * DAY).flatMap((r) => r.ideas!);
+  const recent = rs.filter((r) => r.ts > now - 14 * DAY);
+  const stepBack = !!rs.length && rs[0].ts <= now - 14 * DAY && recent.length >= 3 && recent.every((r) => r.ideas!.every(Boolean));
+  return { recounts: rs.length, week: { without: week.filter((x) => !x).length, of: week.length }, stepBack };
+}
+
 // ---------------------------------------------------------------- what the grown-ups can take from it
 export interface Insight { tone: 'good' | 'watch' | 'act'; title: string; detail: string; tryThis?: string }
 
 export const STEP_LABEL: Record<StepName, string> = {
   plan: 'the plan', choose: 'choosing where to go', warmup: 'the warm-up', watch: 'the demo (Watch)',
-  together: 'guided practice (Together)', yourturn: 'his own practice (Your turn)', gatecheck: 'the Lantern Peaks check', finish: 'the finish',
+  together: 'guided practice (Together)', yourturn: 'his own practice (Your turn)', gatecheck: 'the Lantern Peaks check', checkup: 'a check-up flight', finish: 'the finish',
 };
 const TRY_AT: Partial<Record<StepName, string>> = {
   warmup: 'Warm-ups review skills he already has. If they feel like repeats, a short chat about what is coming next can help him push on.',

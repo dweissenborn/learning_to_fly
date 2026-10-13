@@ -15,6 +15,10 @@
         "Water went all over Sam.",
         "Sam laughed and dried Pixel with a big towel."
       ],
+      "refs": [
+        { "s": 1, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 4, "w": "his", "n": 1, "to": "Pixel" }
+      ],
       "topics": ["animals", "home"],
       "level": 1,
       "socialLoad": 0,
@@ -34,6 +38,16 @@
         "At home, she put it in her rock box.",
         "Maya smiled at her new rock."
       ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "it", "n": 1, "to": "the pink rock" },
+        { "s": 5, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 6, "w": "her", "n": 1, "to": "Maya" }
+      ],
       "topics": ["mining", "nature"],
       "level": 1,
       "socialLoad": 0,
@@ -51,6 +65,10 @@
         "The bus went past the library and the harbor.",
         "Then it stopped at the skate park.",
         "Leo got off and rode to the ramps."
+      ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 4, "w": "it", "n": 1, "to": "the bus" }
       ],
       "topics": ["transport", "sports"],
       "level": 1,
@@ -73,6 +91,14 @@
         "Priya cheered, and Ben helped her carry the rover back to the table.",
         "Later, they fixed the wheel on Ben's rover together."
       ],
+      "refs": [
+        { "s": 1, "w": "their", "n": 1, "to": "Priya and Ben" },
+        { "s": 3, "w": "it", "n": 1, "to": "Ben's rover" },
+        { "s": 4, "w": "It", "n": 1, "to": "Ben's rover" },
+        { "s": 6, "w": "It", "n": 1, "to": "Priya's rover" },
+        { "s": 7, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 8, "w": "they", "n": 1, "to": "Priya and Ben" }
+      ],
       "topics": ["robots", "school"],
       "level": 2,
       "socialLoad": 0,
@@ -94,6 +120,18 @@
         "His own bone fell into the river and sank.",
         "The dog in the water was only his reflection.",
         "He walked home with an empty mouth."
+      ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "the dog" },
+        { "s": 1, "w": "it", "n": 1, "to": "the bone" },
+        { "s": 1, "w": "his", "n": 1, "to": "the dog" },
+        { "s": 2, "w": "he", "n": 1, "to": "the dog" },
+        { "s": 3, "w": "He", "n": 1, "to": "the dog" },
+        { "s": 6, "w": "He", "n": 1, "to": "the first dog" },
+        { "s": 6, "w": "his", "n": 1, "to": "the first dog" },
+        { "s": 7, "w": "His", "n": 1, "to": "the first dog" },
+        { "s": 8, "w": "his", "n": 1, "to": "the first dog" },
+        { "s": 9, "w": "He", "n": 1, "to": "the first dog" }
       ],
       "topics": ["animals", "nature"],
       "level": 2,
@@ -156,6 +194,10 @@
         "After the game on Saturday, the whole team walked to Rose's Bakery.",
         "Grandma Rose gave Ana a cookie shaped like a soccer ball.",
         "Ana ate half of it and gave the other half to Ben."
+      ],
+      "words": [
+        { "word": "curved", "means": "bent in a round path, not straight", "pic": "↪️" },
+        { "word": "practiced", "means": "did it again and again to get better", "pic": "🔁" }
       ],
       "topics": ["sports", "food"],
       "level": 3,
@@ -252,6 +294,17 @@
         "Next, her mom pointed to a small red dot low in the sky.",
         "\"That is the planet Mars,\" she said.",
         "Before they went to sleep, Priya drew the stars in her notebook."
+      ],
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 1, "w": "they", "n": 1, "to": "Priya and her mom" },
+        { "s": 1, "w": "their", "n": 1, "to": "Priya and her mom" },
+        { "s": 2, "w": "they", "n": 1, "to": "Priya and her mom" },
+        { "s": 4, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 5, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 6, "w": "she", "n": 1, "to": "her mom" },
+        { "s": 7, "w": "they", "n": 1, "to": "Priya and her mom" },
+        { "s": 7, "w": "her", "n": 1, "to": "Priya" }
       ],
       "topics": [
         "space"
@@ -439,6 +492,11 @@
         8,
         12
       ],
+      "words": [
+        { "word": "rover", "means": "a small robot car", "pic": "🤖" },
+        { "word": "sensor", "means": "a part that can tell how much light there is", "pic": "💡" },
+        { "word": "reflects", "means": "bounces back", "pic": "🪞" }
+      ],
       "topics": [
         "robots"
       ],
@@ -509,6 +567,16 @@
         "Next, she played a short song.",
         "At the end, she wiped the flute with a cloth."
       ],
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 0, "w": "its", "n": 1, "to": "the flute" },
+        { "s": 1, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 6, "w": "she", "n": 1, "to": "Maya" }
+      ],
       "topics": [
         "music"
       ],
@@ -536,6 +604,10 @@
         "Ben cut a small door in the wall.",
         "Next, Ana put a red flag on top.",
         "The fort was done by lunch."
+      ],
+      "refs": [
+        { "s": 2, "w": "they", "n": 1, "to": "Ana and Ben" },
+        { "s": 3, "w": "they", "n": 1, "to": "Ana and Ben" }
       ],
       "topics": [
         "weather"
@@ -565,6 +637,15 @@
         "It ate some seeds.",
         "Then it flew away.",
         "Sam drew the bird in his notebook."
+      ],
+      "refs": [
+        { "s": 1, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 1, "w": "it", "n": 1, "to": "the bird feeder" },
+        { "s": 2, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 2, "w": "it", "n": 1, "to": "the bird feeder" },
+        { "s": 5, "w": "It", "n": 1, "to": "the red bird" },
+        { "s": 6, "w": "it", "n": 1, "to": "the red bird" },
+        { "s": 7, "w": "his", "n": 1, "to": "Sam" }
       ],
       "topics": [
         "animals"
@@ -596,6 +677,13 @@
         "Next, she printed the photo for Priya.",
         "At home, Priya hung it above her desk."
       ],
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 5, "w": "it", "n": 1, "to": "the telescope" },
+        { "s": 7, "w": "she", "n": 1, "to": "Dr. Hale" },
+        { "s": 8, "w": "it", "n": 1, "to": "the photo" },
+        { "s": 8, "w": "her", "n": 1, "to": "Priya" }
+      ],
       "topics": [
         "space"
       ],
@@ -625,6 +713,13 @@
         "They left the sea star in the water, where it was safe.",
         "Next, the water began to rise.",
         "The tide was coming back in, so they walked home."
+      ],
+      "refs": [
+        { "s": 2, "w": "they", "n": 1, "to": "Sam and Maya" },
+        { "s": 5, "w": "it", "n": 1, "to": "the sea star" },
+        { "s": 6, "w": "They", "n": 1, "to": "Sam and Maya" },
+        { "s": 6, "w": "it", "n": 1, "to": "the sea star" },
+        { "s": 8, "w": "they", "n": 1, "to": "Sam and Maya" }
       ],
       "topics": [
         "ocean",
@@ -656,6 +751,12 @@
         "At the end, he used the gold key to open the big door.",
         "Ben saved the game and went to bed."
       ],
+      "refs": [
+        { "s": 1, "w": "His", "n": 1, "to": "Ben" },
+        { "s": 3, "w": "he", "n": 1, "to": "the hero" },
+        { "s": 4, "w": "he", "n": 1, "to": "the hero" },
+        { "s": 6, "w": "he", "n": 1, "to": "the hero" }
+      ],
       "topics": [
         "games"
       ],
@@ -686,6 +787,21 @@
         "This time, the arm held the cup and set it down on a shelf.",
         "Ms. Ortiz clapped when she saw it work."
       ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 1, "w": "it", "n": 1, "to": "the robot arm" },
+        { "s": 1, "w": "it", "n": 2, "to": "the cup" },
+        { "s": 2, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 2, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 3, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 3, "w": "it", "n": 1, "to": "the arm" },
+        { "s": 5, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 6, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 6, "w": "it", "n": 1, "to": "the arm" },
+        { "s": 7, "w": "it", "n": 1, "to": "the cup" },
+        { "s": 8, "w": "she", "n": 1, "to": "Ms. Ortiz" },
+        { "s": 8, "w": "it", "n": 1, "to": "the arm" }
+      ],
       "topics": [
         "robots"
       ],
@@ -714,6 +830,16 @@
         "Then she painted the horns on the skull light brown.",
         "When the paint was dry, she pressed the skull onto the backbone.",
         "She set the model on her shelf, next to her rock box."
+      ],
+      "refs": [
+        { "s": 1, "w": "its", "n": 1, "to": "Triceratops" },
+        { "s": 3, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 6, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "her", "n": 2, "to": "Maya" }
       ],
       "topics": [
         "dinosaurs"
@@ -1000,6 +1126,11 @@
         "The trip took ten minutes longer than usual, but Sam liked seeing the new streets.",
         "At the library, he borrowed a book of bus and train maps from around the world."
       ],
+      "words": [
+        { "word": "detour", "means": "a way around a road that is closed", "pic": "🚧" },
+        { "word": "creek", "means": "a small stream", "pic": "🏞️" },
+        { "word": "borrowed", "means": "took to use for a while and give back", "pic": "📚" }
+      ],
       "topics": [
         "transport"
       ],
@@ -1280,6 +1411,11 @@
         8,
         12
       ],
+      "words": [
+        { "word": "hollow", "means": "empty inside", "pic": "🫙" },
+        { "word": "seeps", "means": "slowly leaks in through small holes", "pic": "💧" },
+        { "word": "dissolves", "means": "breaks up and mixes into water, so you cannot see it", "pic": "🍵" }
+      ],
       "topics": [
         "mining"
       ],
@@ -1360,6 +1496,11 @@
         2,
         6,
         12
+      ],
+      "words": [
+        { "word": "studio", "means": "a room set up for making music", "pic": "🎙️" },
+        { "word": "separate", "means": "not the same", "pic": "📅" },
+        { "word": "steady", "means": "even, never speeding up or slowing down", "pic": "⏱️" }
       ],
       "topics": [
         "music"
@@ -1562,6 +1703,11 @@
         2,
         6,
         10
+      ],
+      "words": [
+        { "word": "gust", "means": "a sudden, strong push of wind", "pic": "🌬️" },
+        { "word": "halftime", "means": "the break in the middle of a game", "pic": "⏸️" },
+        { "word": "tying", "means": "making the score even", "pic": "⚽" }
       ],
       "topics": [
         "sports"
@@ -1824,6 +1970,305 @@
         "source": "Written for Learning to Fly",
         "licence": "original",
         "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p02",
+      "title": "Leo's Flat Tire",
+      "kind": "story",
+      "picture": "🚲🔧",
+      "sentences": [
+        "On Thursday after school, Leo rode his bike over a sharp stone on Pine Street.",
+        "By the time he reached Okafor's Bike Shop, his back tire was flat.",
+        "Mr. Okafor said Leo could fix it himself if he followed each step.",
+        "First, Leo turned the bike upside down so it rested on the seat and the handlebars.",
+        "Then he took off the back wheel and pulled the old tube out of the tire.",
+        "Mr. Okafor pumped a little air into the tube and held it near Leo's ear.",
+        "Leo heard a soft hiss and found a tiny hole.",
+        "Next, he ran his fingers slowly around the inside of the tire.",
+        "He found the sharp stone still stuck in the rubber and picked it out.",
+        "After that, he put a new tube in the tire and pumped it up.",
+        "Finally, he put the wheel back on and turned the bike the right way up.",
+        "Leo rode home before dinner, and the tire stayed hard all the way."
+      ],
+      "topics": ["transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Leo's Flat Tire",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p02",
+      "title": "Up the Hill on Gull Island",
+      "kind": "story",
+      "picture": "⛰️🪁",
+      "sentences": [
+        "The ferry reached Gull Island at 9:40 on Saturday morning.",
+        "Sam and Grandma Rose walked off the ferry and onto the wooden dock.",
+        "First, they stopped at the map board to find the path up the hill.",
+        "Then they walked past the tide pools, where Sam saw a red crab hide under a rock.",
+        "Halfway up the hill, Grandma Rose sat on a bench to rest.",
+        "While she rested, Sam took photos of the gulls that flew in circles above them.",
+        "When they reached the top, the wind was cool and strong.",
+        "Far across the water, Sam could see bright kites above the cliffs of Windy Cape.",
+        "Grandma Rose shared a cheese sandwich, and they ate it on the grass.",
+        "Then they walked back down to the dock to wait for the ferry home."
+      ],
+      "topics": ["nature", "animals"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Up the Hill on Gull Island",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p02",
+      "title": "Maya's Paper Kite",
+      "kind": "story",
+      "picture": "🪁✂️",
+      "sentences": [
+        "Every summer, the kite club at Windy Cape holds a kite-making day in the old boat shed.",
+        "This year, Maya made a diamond kite from paper and two thin sticks.",
+        "First, she tied the two sticks together in the shape of a cross.",
+        "Then she laid the cross on a big sheet of red paper and cut around it.",
+        "Next, she glued the edges of the paper over the ends of the sticks.",
+        "While the glue dried, she drew a gull on the front with a black pen.",
+        "After that, she tied a long tail of yellow ribbon to the bottom.",
+        "Finally, she tied the flying string to the place where the sticks crossed.",
+        "Outside, the wind from the sea was steady and strong.",
+        "Maya's kite climbed above the cliffs on her very first try."
+      ],
+      "topics": ["weather"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Maya's Paper Kite",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p02",
+      "title": "New Tires for the Kookaburra",
+      "kind": "story",
+      "picture": "🛞🔧",
+      "sentences": [
+        "The new tires for the Kookaburra came to Cloud Hill in a big, heavy box.",
+        "Mr. Lund and Captain Ada carried the box into the hangar together.",
+        "First, they used a jack to lift the plane a little way off the floor.",
+        "A jack is a strong tool that can lift something very heavy.",
+        "Next, Mr. Lund took off the old left tire, which was worn smooth.",
+        "Captain Ada pushed the new tire onto the wheel, and Mr. Lund tightened the bolts.",
+        "Then they did the same thing on the right side of the plane.",
+        "Before they lowered the plane, Captain Ada filled each new tire with air.",
+        "She used a small gauge to check that each tire had just the right amount.",
+        "Finally, they let the jack down, and the Kookaburra stood on its new tires.",
+        "Mr. Lund wrote the date of the job in the plane's logbook."
+      ],
+      "topics": ["transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "New Tires for the Kookaburra",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p02",
+      "title": "The Walk-Around",
+      "kind": "story",
+      "picture": "🚶✈️",
+      "sentences": [
+        "Before every flight, Captain Ada walks all the way around the Kookaburra.",
+        "This walk-around helps her find problems while the plane is still safe on the ground.",
+        "On the morning of the long flight, she started at the left wing.",
+        "She checked that the wing had no dents and that the light on its tip worked.",
+        "Next, she looked into the fuel tank to make sure it was full.",
+        "Then she walked to the tail and moved the rudder gently from side to side.",
+        "A rudder is the flat part on the tail that helps the plane turn.",
+        "After the tail, she checked the right wing and both tires.",
+        "Last of all, she ran her hand along the propeller to feel for cracks.",
+        "Only then did she climb into the cockpit and start her checklist."
+      ],
+      "topics": ["transport", "safety"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Walk-Around",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p02",
+      "title": "Wattle's Joey",
+      "kind": "story",
+      "picture": "🐨🌱",
+      "sentences": [
+        "At Bluegum Koala Sanctuary, Ranger Tess told a group of visitors about Wattle and her joey.",
+        "A joey is a baby koala.",
+        "When Wattle's joey was born, it was about as small as a jelly bean.",
+        "It could not see or hear yet, but it crawled into its mother's pouch.",
+        "It stayed safe in the pouch for about six months and grew bigger every day.",
+        "Then, one morning, Ranger Tess saw a small furry head peek out of the pouch.",
+        "A few weeks later, the joey climbed out and held on to Wattle's back.",
+        "Now it rides on her back while she climbs from branch to branch.",
+        "\"Soon it will be big enough to climb on its own,\" Ranger Tess said."
+      ],
+      "topics": ["animals"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Wattle's Joey",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p02",
+      "title": "One Night in the Dome",
+      "kind": "story",
+      "picture": "🔭🪐",
+      "sentences": [
+        "On a clear night, Priya and Ms. Ortiz climbed the lamp path to the dome at Star Point.",
+        "Dr. Amal met them at the door with a red flashlight.",
+        "She explained that red light helps your eyes stay used to the darkness.",
+        "First, she pressed a button, and a long slit opened in the roof.",
+        "Then the whole dome turned slowly until the slit faced the Moon.",
+        "Priya looked through the telescope and saw the gray plains and round craters of the Moon.",
+        "Next, Dr. Amal moved the telescope to Saturn.",
+        "Priya could see a small yellow ball with a ring around it.",
+        "While Ms. Ortiz took her turn, Priya stepped outside to rest her eyes.",
+        "Above the sea, a bright dot was moving quickly and steadily across the sky.",
+        "Dr. Amal came out and told her it was the space station.",
+        "At ten o'clock, they all walked back down the path."
+      ],
+      "topics": ["space"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "One Night in the Dome",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p02",
+      "title": "A Morning in the Signal Box",
+      "kind": "story",
+      "picture": "🚦🔔",
+      "sentences": [
+        "On Tuesday, Priya visited the signal box at Rail Coast station.",
+        "Mr. Haddad, the signal operator, let her stand by the window and watch.",
+        "Inside the signal box, a row of tall levers stood along the floor.",
+        "Red levers change the signals, and black levers move the points.",
+        "Points are rails that move to send a train onto a different track.",
+        "Soon a bell rang to tell Mr. Haddad that a train had left Shell Halt.",
+        "First, he pulled a black lever, and the points moved for platform 1.",
+        "Next, he pulled a red lever, and the signal outside turned green.",
+        "A few minutes later, the Coast Line train rolled into platform 1.",
+        "After the last coach passed the signal, Mr. Haddad pushed the red lever back.",
+        "The signal turned red again, so the next train would have to stop.",
+        "Then he wrote the time in a big book on his desk."
+      ],
+      "topics": ["transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Morning in the Signal Box",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p02",
+      "title": "Ana and Ben at the Dig",
+      "kind": "story",
+      "picture": "🖌️🦴",
+      "sentences": [
+        "Ana and Ben reached Fossil Bay on the early boat from Gull Island.",
+        "It had rained in the night, so the beach under the cliff was closed.",
+        "They landed at the pier and walked along the top path to Dr. Bell's tent.",
+        "From the cliff top, they could see the whole dig on the beach below.",
+        "First, Dr. Bell gave each of them a soft brush and a small hammer.",
+        "Then she showed them how to tap a flat stone gently along its layers.",
+        "Ben tapped a stone, and it split into two halves.",
+        "Inside the stone was a tiny ammonite.",
+        "By lunch, the sun had dried the cliff, and Dr. Bell opened the beach again.",
+        "In the afternoon, Ana brushed sand away from a long brown bone.",
+        "Dr. Bell wrapped the bone in a plaster jacket to keep it safe.",
+        "At five o'clock, Ana and Ben helped carry the jacket down to the boat."
+      ],
+      "topics": ["dinosaurs", "nature"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ana and Ben at the Dig",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p02",
+      "title": "Crossing at High Tide",
+      "kind": "story",
+      "picture": "🌊🚤",
+      "sentences": [
+        "Sam and Grandma Rose waited at the pier for the reef boat.",
+        "The tide was low, and Mari said the channel was too shallow for the boat.",
+        "While they waited, Sam helped Mari count the life jackets, and Grandma Rose read her book.",
+        "At five o'clock, the tide was high, and they climbed on board.",
+        "Mari steered the boat slowly through the channel in the reef.",
+        "White waves broke on the coral on both sides of them.",
+        "Inside the reef, the lagoon was calm and clear.",
+        "Mari stopped the boat over a patch of coral, and Sam knelt on the glass floor.",
+        "Below him, a clownfish swam in and out of a sea anemone.",
+        "Then Grandma Rose pointed at a sea turtle that lifted its head out of the water to breathe.",
+        "At last, Mari drove the boat up to the white sand of Reef Island."
+      ],
+      "topics": ["ocean", "animals"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Crossing at High Tide",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
         "adapted": false
       }
     }
@@ -6893,6 +7338,216 @@
         "time-words",
         "after"
       ]
+    },
+    {
+      "id": "cu-home-i02",
+      "skill": "N2",
+      "passage": "cu-home-p02",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Leo do just before he put a new tube in the tire?",
+      "options": [
+        "He turned the bike upside down.",
+        "He picked the stone out of the tire.",
+        "He put the wheel back on.",
+        "He heard a soft hiss from the old tube."
+      ],
+      "answer": 1,
+      "evidence": [8, 9],
+      "hint": "Find the sentence about the new tube. Then read the sentence just before it.",
+      "explain": "Leo picked the sharp stone out of the tire. Then he put in the new tube. Look at the ninth and tenth sentences.",
+      "inference": 0,
+      "checkup": "home",
+      "tags": ["before"]
+    },
+    {
+      "id": "cu-gull-i02",
+      "skill": "N2",
+      "passage": "cu-gull-p02",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Sam see just before Grandma Rose sat down to rest?",
+      "options": [
+        "kites above Windy Cape",
+        "gulls flying in circles",
+        "a red crab under a rock",
+        "the top of the hill"
+      ],
+      "answer": 2,
+      "evidence": [3, 4],
+      "hint": "Find the sentence where Grandma Rose rests. Then read the sentence just before it.",
+      "explain": "Sam saw a red crab hide under a rock at the tide pools. That is the sentence just before Grandma Rose sat on the bench. He took photos of the gulls while she rested.",
+      "inference": 0,
+      "checkup": "gull",
+      "tags": ["before", "close-distractor"]
+    },
+    {
+      "id": "cu-cape-i02",
+      "skill": "N2",
+      "passage": "cu-cape-p02",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Maya do while the glue dried?",
+      "options": [
+        "She cut around the cross.",
+        "She tied on a yellow tail.",
+        "She tied the two sticks together.",
+        "She drew a gull on the front."
+      ],
+      "answer": 3,
+      "evidence": [4, 5],
+      "hint": "Find the word while. Read what Maya did in that sentence.",
+      "explain": "Maya drew a gull on the front while the glue dried. It is in the sixth sentence.",
+      "inference": 0,
+      "checkup": "cape",
+      "tags": ["while", "same-time"]
+    },
+    {
+      "id": "cu-airfield-i02",
+      "skill": "N2",
+      "passage": "cu-airfield-p02",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did they do right after they lifted the plane with the jack?",
+      "options": [
+        "Captain Ada filled each tire with air.",
+        "Mr. Lund took off the old left tire.",
+        "They carried the box into the hangar.",
+        "Mr. Lund wrote the date in the logbook."
+      ],
+      "answer": 1,
+      "evidence": [2, 4],
+      "hint": "Find the step where they lift the plane. Then look for the next thing they did. One sentence in between only explains a word.",
+      "explain": "Mr. Lund took off the old left tire. The third sentence tells how they lifted the plane, and the fifth sentence, which starts with \"Next\", tells the step after it.",
+      "inference": 0,
+      "checkup": "airfield",
+      "tags": ["after", "sequence-words", "distance"]
+    },
+    {
+      "id": "cu-takeoff-i02",
+      "skill": "N2",
+      "passage": "cu-takeoff-p02",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Captain Ada check right after the fuel tank?",
+      "options": [
+        "the propeller",
+        "the left wing",
+        "the tail and the rudder",
+        "the right wing and the tires"
+      ],
+      "answer": 2,
+      "evidence": [4, 5],
+      "hint": "Find the sentence about the fuel tank. Then read on to the next step she took.",
+      "explain": "She checked the tail and the rudder. The sentence after the fuel tank starts with \"Then\" and says she walked to the tail and moved the rudder.",
+      "inference": 0,
+      "checkup": "takeoff",
+      "tags": ["after", "sequence-words"]
+    },
+    {
+      "id": "cu-australia-i02",
+      "skill": "N2",
+      "passage": "cu-australia-p02",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did the joey do after its head peeked out of the pouch?",
+      "options": [
+        "It crawled into the pouch.",
+        "It grew bigger in the pouch for six months.",
+        "It climbed trees on its own.",
+        "It climbed out and held on to Wattle's back."
+      ],
+      "answer": 3,
+      "evidence": [5, 6],
+      "hint": "Find the sentence where the head peeks out. Then read the next sentence, and look for the words that tell how much later.",
+      "explain": "It climbed out and held on to Wattle's back. The seventh sentence says this happened a few weeks after its head peeked out.",
+      "inference": 0,
+      "checkup": "australia",
+      "tags": ["after", "life-cycle", "time-words"]
+    },
+    {
+      "id": "cu-star-i02",
+      "skill": "N2",
+      "passage": "cu-star-p02",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What happened just after the slit opened in the roof?",
+      "options": [
+        "Dr. Amal moved the telescope to Saturn.",
+        "Priya stepped outside to rest her eyes.",
+        "The dome turned until the slit faced the Moon.",
+        "Dr. Amal met them with a red flashlight."
+      ],
+      "answer": 2,
+      "evidence": [3, 4],
+      "hint": "Find the sentence about the slit. Then read the sentence right after it.",
+      "explain": "The dome turned slowly until the slit faced the Moon. That is the sentence right after the slit opened. Saturn came later.",
+      "inference": 0,
+      "checkup": "star",
+      "tags": ["after", "close-distractor"]
+    },
+    {
+      "id": "cu-rail-i02",
+      "skill": "N2",
+      "passage": "cu-rail-p02",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Mr. Haddad do right after the bell rang?",
+      "options": [
+        "He pulled a red lever to turn the signal green.",
+        "He wrote the time in a big book.",
+        "He pushed the red lever back.",
+        "He pulled a black lever to move the points."
+      ],
+      "answer": 3,
+      "evidence": [5, 6],
+      "hint": "Find the sentence about the bell. Then read the sentence that starts with First.",
+      "explain": "He pulled a black lever to move the points. That is the first thing he did after the bell rang. The red lever came next.",
+      "inference": 0,
+      "checkup": "rail",
+      "tags": ["after", "close-distractor"]
+    },
+    {
+      "id": "cu-fossil-i02",
+      "skill": "N2",
+      "passage": "cu-fossil-p02",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What happened after Dr. Bell opened the beach again?",
+      "options": [
+        "Ben's stone split into two halves.",
+        "Dr. Bell gave them each a brush and a hammer.",
+        "Ana brushed sand away from a long brown bone.",
+        "They walked along the top path to the tent."
+      ],
+      "answer": 2,
+      "evidence": [8, 9],
+      "hint": "Find the sentence where the beach opens again. Then check which choice comes later in the story.",
+      "explain": "Ana brushed sand away from a long brown bone. That happened in the afternoon, after the beach opened at lunch. The other choices happened in the morning.",
+      "inference": 0,
+      "checkup": "fossil",
+      "tags": ["after", "time-words"]
+    },
+    {
+      "id": "cu-reef-i02",
+      "skill": "N2",
+      "passage": "cu-reef-p02",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What happened just before Mari steered the boat through the channel?",
+      "options": [
+        "Sam helped count the life jackets.",
+        "White waves broke on the coral.",
+        "They climbed on board at five o'clock.",
+        "Sam saw a clownfish below the glass floor."
+      ],
+      "answer": 2,
+      "evidence": [3, 4],
+      "hint": "Find the sentence about the channel. Then read the sentence just before it.",
+      "explain": "Just before, the tide was high, and they climbed on board at five o'clock. Counting the life jackets happened earlier, while they waited.",
+      "inference": 0,
+      "checkup": "reef",
+      "tags": ["before", "close-distractor"]
     }
   ],
   "model": {

@@ -17,6 +17,9 @@ describe('"What do you think?" cards (LTF-18)', () => {
     expect(nextFeature([])).toBeUndefined();
     expect(nextFeature([showRecount])?.id).toBe('show-recount');
     expect(nextFeature([showRecount, vote('show-recount', 'like', 'just-right')])).toBeUndefined();
+    // The strip counts as met only from a recount saved with it, even if he changed nothing.
+    expect(nextFeature([ev({ type: 'recount', stage: 1, parts: 1, topic: 'day' })])).toBeUndefined();
+    expect(nextFeature([ev({ type: 'recount', stage: 1, parts: 1, topic: 'day', changed: 0 })])?.id).toBe('day-strip');
   });
 
   it('keeps his latest answer per feature, for the grown-ups', () => {

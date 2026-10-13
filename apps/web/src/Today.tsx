@@ -3,25 +3,31 @@
 // It sits outside the lesson and never changes a mastery score.
 import { useMemo, useState } from 'react';
 import { Button } from 'react-aria-components';
-import type { Progress } from '@wayfinder/engine';
+import type { LogEvent } from '@wayfinder/schema';
+import { ideasUse, type Progress } from '@wayfinder/engine';
 import { addNote, log, type Settings } from './db';
 import { today, type Lesson } from './content';
 import { Guide } from './art';
 import { Btn, SpeakBtn } from './ui';
-import { sfx } from './media';
-import { buildAsks, buildDaySentences, nextKey, type Part, type QKey } from './recount';
+import { sfx, useReading } from './media';
+import { askable, buildAsks, buildDaySentences, buildStrip, nextKey, ORDER, ownAnswer, skippedKeys, starter, type Part, type QKey } from './recount';
 interface Show { kind?: string; name: string; about?: string; problem?: string; events: string[]; ending?: string }
 
-/** Supports fade slowly: one part with tiles, then starters and typing, then three parts, then the whole day in order. */
-export function todayStage(settings: Settings, recounts: number): 1 | 2 | 3 | 4 {
+/**
+ * Supports fade slowly: one part with tiles, then typing his own words too, then three parts with the tiles behind
+ * "Show me ideas", then the whole day in order. Steps back a stage if he leans on the ideas for two weeks (LTF-07).
+ */
+export function todayStage(settings: Settings, events: readonly LogEvent[]): 1 | 2 | 3 | 4 {
   if (settings.todayStage) return settings.todayStage as 1 | 2 | 3 | 4;
-  return recounts < 5 ? 1 : recounts < 12 ? 2 : recounts < 20 ? 3 : 4;
+  const n = events.filter((e) => e.type === 'recount').length;
+  const base = n < 5 ? 1 : n < 12 ? 2 : n < 20 ? 3 : 4;
+  return base >= 3 && ideasUse(events).stepBack ? ((base - 1) as 2 | 3) : base;
 }
 
 const list = (xs: string[]) => (xs.length <= 1 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}`);
 
-export function Today({ settings, progress, recounts, onExit }: { settings: Settings; progress: Progress; recounts: number; onExit: () => void }) {
-  const stage = todayStage(settings, recounts);
+export function Today({ settings, progress, events, onExit }: { settings: Settings; progress: Progress; events: readonly LogEvent[]; onExit: () => void }) {
+  const stage = todayStage(settings, events);
   const day = new Date().getDay();
   const weekend = day === 0 || day === 6;
   const ids = weekend ? today.weekend.map((l) => l.id) : settings.timetable[String(day)]?.length ? settings.timetable[String(day)] : today.defaultTimetable;
@@ -35,7 +41,11 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
   const [picked, setPicked] = useState<string[]>([]);
   const [parts, setParts] = useState<Part[]>([]);
   const [at, setAt] = useState<{ part: number; key: QKey } | null>(null);
-  const [skipped, setSkipped] = useState<QKey[]>([]);
+  const [edit, setEdit] = useState<QKey[] | null>(null); // the questions of a strip panel he tapped to change (LTF-06)
+  const [changed, setChanged] = useState(0);
+  const [own, setOwn] = useState(''); // from stage 3: his own words after the sentence starter (LTF-07)
+  const [ideasOpen, setIdeasOpen] = useState(false);
+  const [ideas, setIdeas] = useState<Record<string, boolean>>({}); // `${part}:${question}` -> he opened the ideas
   const [order, setOrder] = useState<string[]>([]);
   const [main, setMain] = useState<string>();
   const [typed, setTyped] = useState('');
@@ -62,16 +72,32 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
     setAt({ part: 0, key: nextKey(ps[0], null, asked)! });
     setPhase('ask');
   };
-  const answer = (value: string) => {
+  const answer = (value: string, usedIdeas = false) => {
     if (!at) return;
+    setOwn('');
+    setIdeasOpen(false);
+    setIdeas((m) => ({ ...m, [`${at.part}:${at.key}`]: usedIdeas }));
     const part = { ...parts[at.part], [at.key]: value || undefined };
-    if (!value) setSkipped((s) => [...s, at.key]);
     const ps = parts.map((p, i) => (i === at.part ? part : p));
     setParts(ps);
+    if (edit) {
+      const next = edit.slice(edit.indexOf(at.key) + 1).find((k) => askable(k, part, asked));
+      if (next) setAt({ ...at, key: next });
+      else { setEdit(null); setPhase('built'); }
+      return;
+    }
     const next = nextKey(part, at.key, asked);
     if (next) setAt({ ...at, key: next });
     else if (at.part + 1 < ps.length) setAt({ part: at.part + 1, key: nextKey(ps[at.part + 1], null, asked)! });
     else afterAsking();
+  };
+  const change = (part: number, keys: QKey[]) => {
+    const first = keys.find((k) => askable(k, parts[part], asked));
+    if (!first) return;
+    setEdit(keys);
+    setChanged((n) => n + 1);
+    setAt({ part, key: first });
+    setPhase('ask');
   };
   const afterAsking = () => {
     if (parts.length > 1 && stepReached(2)) setPhase('order');
@@ -108,7 +134,8 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
     await addNote({ kind: 'recount', personal: true, title: topic === 'show' ? `${date}: ${show.name.trim() || show.kind || 'a show'}` : date, text: sentences.join(' '), ask: asks });
     await log({
       type: 'recount', stage, parts: topic === 'show' ? 1 : parts.length, typed: !!typed.trim(), topic: topic ?? 'day',
-      sentences: sentences.length, skipped, after: parts.some((p) => !!(p.afterHard || p.afterDone)),
+      sentences: sentences.length, skipped: topic === 'show' ? [] : skippedKeys(parts, asked), ...(topic === 'show' ? {} : { changed }),
+      ...(hideTiles ? { ideas: parts.flatMap((p, i) => ORDER.filter((k) => askable(k, p, asked) && p[k]).map((k) => !!ideas[`${i}:${k}`])) } : {}), after: parts.some((p) => !!(p.afterHard || p.afterDone)),
     });
     sfx.finish();
     setPhase('card');
@@ -122,6 +149,15 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
       </Button>)}
     </div>;
   const asText = (xs: string[]) => xs.map((text) => ({ text }));
+  const hideTiles = topic === 'day' && stage >= 3; // LTF-07
+
+  // LTF-06: the day as four panels per part, in the order he gave. Play it aloud reads one panel at a time.
+  const reading = useReading();
+  const ordered = order.length === parts.length ? order.map((id) => parts.find((p) => p.lesson.id === id)!) : parts;
+  let line = 0;
+  const strips = ordered.map((p) => ({ p, at: parts.indexOf(p), panels: buildStrip(p, { weekend }).map((x) => ({ ...x, line: x.text ? line++ : -1 })) }));
+  const mainLine = main ? `The main thing about today was ${main}.` : undefined;
+  const stripLines = [...strips.flatMap((s) => s.panels.flatMap((x) => (x.text ? [x.text] : []))), ...(mainLine ? [mainLine] : [])];
 
   return <>
     <header className="topbar"><h1 style={{ margin: 0 }}>📅 Today</h1><span className="spacer" /><Btn className="quiet small" onPress={onExit}>← Back to island</Btn></header>
@@ -177,7 +213,15 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
       {phase === 'ask' && topic === 'day' && at && <>
         <div className="chip" style={{ width: 'fit-content' }}>{parts[at.part].lesson.emoji} {parts[at.part].lesson.name}</div>
         {guideSay(questions[at.key].ask(parts[at.part]))}
-        {tiles(questions[at.key].tiles(parts[at.part]), answer)}
+        {!hideTiles ? tiles(questions[at.key].tiles(parts[at.part]), (t) => answer(t)) : <>
+          <form className="starter" onSubmit={(e) => { e.preventDefault(); if (own.trim()) answer(ownAnswer(at.key, own)); }}>
+            <label htmlFor="own-words">{starter(at.key, parts[at.part], { weekend })}</label>
+            <input id="own-words" className="input" value={own} onChange={(e) => setOwn(e.target.value)} autoComplete="off" />
+            <Btn type="submit" className="primary" isDisabled={!own.trim()}>Next</Btn>
+          </form>
+          {ideasOpen ? tiles(questions[at.key].tiles(parts[at.part]), (t) => answer(t, true))
+            : <Btn className="big" onPress={() => setIdeasOpen(true)}><span className="ico" aria-hidden>💡</span>Show me ideas</Btn>}
+        </>}
         <Btn className="quiet small" onPress={() => answer('')}>Skip this one</Btn>
       </>}
 
@@ -196,10 +240,29 @@ export function Today({ settings, progress, recounts, onExit }: { settings: Sett
         <div className="tiles">{parts.map((p) => <Button key={p.lesson.id} className="tile" onPress={() => { setMain(p.lesson.name); setPhase('built'); }}><span className="temoji" aria-hidden>{p.lesson.emoji}</span>{p.lesson.name}</Button>)}</div>
       </>}
 
-      {phase === 'built' && <>
+      {phase === 'built' && topic === 'show' && <>
         {guideSay('Here is what you told me. You can read it aloud, or show your grown-up.')}
         <div className="built" aria-live="polite">{sentences.map((s, i) => <p key={i}>{s}</p>)}</div>
         <SpeakBtn lines={sentences} k="today-built" label="Play it aloud" />
+      </>}
+      {phase === 'built' && topic === 'day' && <>
+        {guideSay('Here is what you told me. Tap a box to change it, read it aloud, or show your grown-up.')}
+        {strips.map(({ p, at: pi, panels }) => <section key={p.lesson.id} className="stack" style={{ gap: '0.4rem' }}>
+          {strips.length > 1 && <h2 className="chip" style={{ width: 'fit-content', margin: 0, fontSize: '1rem' }}>{p.lesson.emoji} {p.lesson.name}</h2>}
+          <ol className="strip" aria-label={`${p.lesson.name}, in four parts`}>
+            {panels.map((x) => {
+              const body = <><span className="plabel">{x.label}</span><span className={x.text ? 'ptext' : 'ptext muted'}>{x.text ?? 'skipped'}</span></>;
+              const live = reading.key === 'today-strip' && reading.line === x.line;
+              return <li key={x.label} className={`panel ${live ? 'reading' : ''}`}>
+                {x.keys.some((k) => askable(k, p, asked)) ? <Button className="pbox" onPress={() => change(pi, x.keys)}>{body}<span className="pchange">Change</span></Button> : <div className="pbox">{body}</div>}
+              </li>;
+            })}
+          </ol>
+        </section>)}
+        {mainLine && <p className="built" style={{ margin: 0 }}>{mainLine}</p>}
+        <SpeakBtn lines={stripLines} k="today-strip" label="Play it aloud" />
+      </>}
+      {phase === 'built' && <>
         {(stage >= 2 || topic === 'show') && <div className="field">
           <label htmlFor="today-typed">Add your own words, if you want to.</label>
           <textarea id="today-typed" className="express-note" placeholder="Also, ..." value={typed} onChange={(e) => setTyped(e.target.value)} />

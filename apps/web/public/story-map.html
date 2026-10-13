@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Story map · Learning to Fly</title>
+  <style>
+    /* A paper story map (LTF-15): important details first, then what it was mostly about, as his school teaches it. */
+    :root { --ink: #1d2b3a; --line: #8a8478; --accent: #1d6e9e; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px 16px; background: #fff; color: var(--ink); font: 18px/1.5 system-ui, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; }
+    h1 { font-size: 1.6rem; margin: 0 0 0.2rem; }
+    .lead { margin: 0 0 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .box { border: 2px solid var(--line); border-radius: 14px; padding: 10px 14px; min-height: 120px; }
+    .box h2 { font-size: 1rem; margin: 0; }
+    .wide { grid-column: 1 / -1; }
+    .events { min-height: 210px; }
+    .events ol { margin: 0.4rem 0 0; padding-left: 1.4rem; }
+    .events li { height: 3.4rem; }
+    .main { border-color: var(--accent); border-width: 3px; }
+    button { margin-top: 16px; padding: 0.7rem 1.3rem; border: 0; border-radius: 999px; background: var(--accent); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+    button:focus-visible { outline: 3px solid #000; outline-offset: 3px; }
+    @media (max-width: 540px) { .grid { grid-template-columns: 1fr; } }
+    @media print { body { padding: 0; } button { display: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Story map</h1>
+    <p class="lead">Title: ______________________________</p>
+    <div class="grid">
+      <section class="box"><h2>Who is in it?</h2></section>
+      <section class="box"><h2>Where and when?</h2></section>
+      <section class="box wide"><h2>What was the problem?</h2></section>
+      <section class="box wide events"><h2>Three important things that happened</h2><ol><li></li><li></li><li></li></ol></section>
+      <section class="box wide"><h2>How did it end?</h2></section>
+      <section class="box wide main"><h2>What was it mostly about?</h2></section>
+    </div>
+    <button type="button" onclick="print()">Print this page</button>
+  </main>
+</body>
+</html>

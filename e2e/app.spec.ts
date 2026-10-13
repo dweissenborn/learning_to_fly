@@ -27,6 +27,28 @@ async function onboard(page: Page) {
   await page.getByRole('button', { name: 'Skip, start at step 1' }).click();
   await page.getByRole('button', { name: /Go to my island/ }).click();
   await expect(page.getByRole('button', { name: /Start reading/ })).toBeVisible();
+  // LTF-20: a new learner's forks are checked once on the first screen; tests that seed sessions need that saved first.
+  await expect.poll(() => page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const row = await new Promise<{ value?: { forksSeen?: string[] } } | undefined>((res) => { const g = db.transaction('kv').objectStore('kv').get('settings'); g.onsuccess = () => res(g.result); });
+    db.close();
+    return row?.value?.forksSeen ?? [];
+  })).toContain('gull');
+}
+
+async function seedFinished(page: Page, n: number) {
+  await page.evaluate(async (n) => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const tx = db.transaction('events', 'readwrite');
+    const t0 = Date.now() - 20 * 86_400_000;
+    for (let k = 0; k < n; k++) {
+      tx.objectStore('events').put({ id: `seed-s${k}`, ts: t0 + k * 86_400_000, type: 'session', session: `seed-${k}`, action: 'start', strand: 'functional', skill: 'F1' });
+      tx.objectStore('events').put({ id: `seed-f${k}`, ts: t0 + k * 86_400_000 + 60_000, type: 'session', session: `seed-${k}`, action: 'finish' });
+    }
+    await new Promise((r) => { tx.oncomplete = r; });
+    db.close();
+  }, n);
+  await page.reload();
 }
 
 test('first run, a session item, and stopping without penalty', async ({ page }) => {
@@ -50,14 +72,30 @@ test('first run, a session item, and stopping without penalty', async ({ page })
   await expect(page.getByText(/Warm up · 1 of/)).toBeVisible();
   await axe(page, 'item');
 
-  // On a phone the bar shows icons only, but every button still has a name.
-  await page.setViewportSize({ width: 375, height: 812 });
+  // On a phone the bar shows icons only, but every button still has a name, and nothing scrolls sideways.
+  const sideways = () => page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+  for (const width of [320, 375]) {
+    await page.setViewportSize({ width, height: 812 });
+    await expect.poll(sideways, { message: `sideways scroll at ${width}px` }).toBeLessThanOrEqual(1);
+  }
   await axe(page, 'item on a phone');
   await page.setViewportSize({ width: 1280, height: 800 });
 
   // Help climbs the hint ladder; nothing marks the learner wrong.
   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: 'Help' }).click();
   await expect(page.getByText(/^Here is the answer/)).toBeVisible();
+  // Once answered, Next stays fully on screen, even on the narrowest phone. (Story maps and the like need Check first.)
+  const check = page.getByRole('button', { name: /^Check/ });
+  if (await check.isVisible()) await check.click();
+  await answer(page, { press: false });
+  await expect(page.getByRole('button', { name: /^Next( →)?$/ })).toBeVisible();
+  for (const width of [320, 375]) {
+    await page.setViewportSize({ width, height: 640 });
+    await expect.poll(sideways, { message: `sideways scroll with Next showing at ${width}px` }).toBeLessThanOrEqual(1);
+    const box = await page.getByRole('button', { name: /^Next( →)?$/ }).boundingBox();
+    expect(box!.x + box!.width).toBeLessThanOrEqual(width);
+  }
+  await page.setViewportSize({ width: 1280, height: 800 });
 
   await page.getByRole('button', { name: 'Stop' }).click();
   await page.getByRole('dialog').getByRole('button', { name: 'Stop' }).click();
@@ -154,11 +192,11 @@ test('the family cloud copy: a second device carries on as the same learner', as
 });
 
 /** Answers the question on screen by trying each answer, or each line of the text, until one is right. */
-async function answer(page: Page) {
-  const next = page.getByRole('button', { name: /^Next/ });
+async function answer(page: Page, o: { press?: boolean } = {}) {
+  const next = page.getByRole('button', { name: /^Next( →)?$/ });
   for (const opts of [page.getByRole('group', { name: /^(Answers|Scene)$/ }).getByRole('button'), page.locator('main [role=button]:is(.sentence, .vrow, .word)')])
     for (let k = 0; k < (await opts.count()) && !(await next.isVisible()); k++) if (await opts.nth(k).isEnabled()) await opts.nth(k).click();
-  await next.click();
+  if (o.press !== false) await next.click();
 }
 
 test('flight gear: points in a session, a celebration, the kit, and the activity the grown-ups see', async ({ page }) => {
@@ -318,4 +356,310 @@ test('"What do you think?" asks once per new thing, on any device (LTF-18)', asy
   await second.getByRole('button', { name: 'Back to the island' }).click();
   await expect(second.getByRole('button', { name: /Start reading/ })).toBeVisible();
   await expect(second.getByRole('region', { name: 'What do you think?' })).toHaveCount(0);
+});
+
+test('his day as a four-panel strip: a skipped panel shows quietly, and tapping a panel changes it (LTF-06)', async ({ page }) => {
+  await onboard(page);
+  await page.getByRole('button', { name: /Tell about today/ }).click();
+  await page.getByRole('button', { name: 'My day' }).click();
+  await page.locator('.tcard').first().click();
+  await page.getByRole('button', { name: 'Next' }).click();
+  await page.getByRole('button', { name: 'Skip this one' }).click(); // who
+  await page.locator('.tiles .tile').first().click(); // what
+  await page.getByRole('button', { name: 'calm' }).click();
+  await page.getByRole('button', { name: 'I got stuck' }).click();
+  await page.getByRole('button', { name: 'I asked for help' }).click();
+
+  const strip = page.getByRole('list', { name: /in four parts/ });
+  await expect(strip.getByRole('listitem')).toHaveCount(4);
+  await expect(strip.getByRole('listitem').nth(0)).toContainText('skipped');
+  await expect(strip.getByRole('listitem').nth(2)).toContainText('After that, I asked for help.');
+  await axe(page, 'four-panel strip');
+
+  await strip.getByRole('button', { name: /How I felt/ }).click();
+  await expect(page.locator('.bubble', { hasText: 'How did you feel?' })).toBeVisible();
+  await page.getByRole('button', { name: 'proud' }).click();
+  await expect(strip.getByRole('listitem').nth(3)).toContainText('I felt proud.'); // straight back to the strip
+  await page.getByRole('button', { name: /Save and show/ }).click();
+  await expect(page.getByText('I felt proud.')).toBeVisible();
+  await expect(page.getByText('I felt calm.')).toHaveCount(0);
+});
+
+test('from stage 3 the tiles wait behind "Show me ideas", and the grown-ups see answers given without them (LTF-07)', async ({ page }) => {
+  await onboard(page);
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Today recounts' }).click();
+  await page.getByRole('button', { name: /^Three parts/ }).click();
+  await page.getByRole('button', { name: 'Back to the island' }).click();
+
+  await page.getByRole('button', { name: /Tell about today/ }).click();
+  await page.getByRole('button', { name: 'My day' }).click();
+  await page.locator('.tcard').first().click();
+  await page.getByRole('button', { name: 'Next' }).click();
+  // Who: a sentence starter, his own words, and no tiles until he asks.
+  await expect(page.locator('.tiles .tile')).toHaveCount(0);
+  await axe(page, 'sentence starter');
+  await page.getByLabel('I was with').fill('my cousin');
+  await page.getByRole('button', { name: 'Next' }).click();
+  // What: he asks for ideas this time.
+  await page.getByRole('button', { name: 'Show me ideas' }).click();
+  await page.locator('.tiles .tile').first().click();
+  await page.getByRole('button', { name: 'Skip this one' }).click(); // what happened after
+  await page.getByLabel('I felt').fill('happy');
+  await page.getByRole('button', { name: 'Next' }).click();
+  await page.getByRole('button', { name: 'Skip this one' }).click(); // why
+  await page.getByRole('button', { name: 'Show me ideas' }).click();
+  await page.getByRole('button', { name: 'nothing was hard' }).click();
+
+  const strip = page.getByRole('list', { name: /in four parts/ });
+  await expect(strip.getByRole('listitem').nth(0)).toContainText('I was with my cousin.');
+  await expect(strip.getByRole('listitem').nth(3)).toContainText('I felt happy.');
+  await page.getByRole('button', { name: /Save and show/ }).click();
+  await page.getByRole('button', { name: /Back to my island/ }).click();
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Today recounts' }).click();
+  await expect(page.getByText('2 of 4 questions this week')).toBeVisible();
+  await axe(page, 'ideas card');
+});
+
+test('a printable paper story map for the grown-up (LTF-15)', async ({ page }) => {
+  await page.goto('/story-map.html');
+  await expect(page.getByRole('heading', { name: 'Story map' })).toBeVisible();
+  await expect(page.getByText('What was it mostly about?')).toBeVisible();
+  await axe(page, 'paper story map');
+});
+
+test('a whole story session to the finish, with the paper story map for the grown-up (LTF-15)', async ({ page }) => {
+  test.setTimeout(120_000);
+  await onboard(page);
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.getByRole('button', { name: /Story Woods/ }).click();
+  // Each question: the full hint, then the answer (or Check), then Next. Demos are skipped, and gear celebrations,
+  // which can open after any answer, are closed before the next action.
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {}); // it may close by itself
+  });
+  const pick = page.getByRole('heading', { name: 'Pick one new thing for your island' });
+  for (let i = 0; i < 30 && !(await pick.isVisible()); i++) {
+    const skip = page.getByRole('button', { name: 'Got it, skip' });
+    if (await skip.isVisible()) { await skip.click(); continue; }
+    const help = page.getByRole('button', { name: 'Help' });
+    for (let h = 0; h < 3; h++) if (await help.isVisible() && await help.isEnabled()) await help.click();
+    const check = page.getByRole('button', { name: /^Check/ });
+    if (await check.isVisible() && await check.isEnabled()) await check.click();
+    const next = page.getByRole('button', { name: /^Next( →)?$/ });
+    for (const opts of [page.getByRole('group', { name: /^(Answers|Scene)$/ }).getByRole('button'), page.locator('main [role=button]:is(.sentence, .vrow, .word)')])
+      for (let k = 0; k < (await opts.count()) && !(await next.isVisible()); k++) if (await opts.nth(k).isEnabled()) await opts.nth(k).click();
+    if (await next.isVisible()) await next.click();
+  }
+  await page.locator('.piece').first().click();
+  await page.getByRole('button', { name: 'Choose a spot for me' }).click();
+  await expect(page.getByText('All done for today.')).toBeVisible();
+  await expect(page.getByRole('link', { name: /Print a paper story map/ })).toHaveAttribute('href', '/story-map.html');
+  await axe(page, 'finish');
+});
+
+test('the second hint on a feelings question is a three-box card, and "So" stays his to work out (LTF-02)', async ({ page }) => {
+  await onboard(page);
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Content library' }).click();
+  await page.getByLabel('Skill').selectOption('N5');
+  await page.locator('summary', { hasText: 'The Last Stamp' }).click();
+  const entry = page.locator('.lib-item', { hasText: 'n5-i174' }).last();
+  await entry.getByRole('button', { name: 'Try it' }).click();
+  const dialog = page.getByRole('dialog', { name: 'Try an item' });
+  const card = dialog.getByRole('region', { name: 'Thinking it through' });
+  await dialog.getByRole('button', { name: /Show a hint/ }).click();
+  await expect(card).toHaveCount(0); // the first hint only lights up the text
+  await dialog.getByRole('button', { name: /Show a hint/ }).click();
+  await expect(card).toContainText('He put it back in his bag slowly.');
+  await expect(card).toContainText('People move slowly and go quiet when a hope does not happen.');
+  await expect(card).toContainText('What does that tell you?');
+  await expect(card).not.toContainText('So Sam felt disappointed.');
+  await axe(page, 'reasoning card');
+  await dialog.getByRole('button', { name: /Show a hint/ }).click();
+  await expect(card).toContainText('So Sam felt disappointed.'); // with the answer
+});
+
+test('scouting has a "Who did it?" stop, and Starting point can run it on its own (LTF-13)', async ({ page }) => {
+  // Scouting answers earn flight points too, so a gear celebration can open on the island.
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await page.goto('/');
+  await page.getByLabel("The learner's nickname").fill('Tester');
+  await page.getByRole('button', { name: 'Next' }).click();
+  await page.getByRole('button', { name: /Rook/ }).click();
+  await page.getByRole('button', { name: /it is/ }).click();
+  await page.getByRole('button', { name: 'Space', exact: true }).click();
+  await page.getByRole('button', { name: 'Next' }).click();
+  await page.getByRole('button', { name: 'Next' }).click();
+  await page.getByRole('button', { name: /Start scouting/ }).click();
+  // Words, the reading story and the listening story: any answer will do here.
+  const grammar = page.getByRole('heading', { name: 'Who did it?' });
+  for (let i = 0; i < 40 && !(await grammar.isVisible()); i++) {
+    const opt = page.locator('main .tcard, main .opt').first();
+    if (await opt.isVisible()) await opt.click();
+    const next = page.getByRole('button', { name: /^Next( →)?$/ });
+    if (await next.isVisible()) await next.click();
+  }
+  await expect(grammar).toBeVisible();
+  await axe(page, 'who did it');
+  const firstRun = await page.locator('main .card.center').innerText();
+  for (let i = 0; i < 6; i++) await page.locator('main .tcard').first().click(); // six one-sentence items
+  await expect(page.getByRole('heading', { name: 'Halfway there.' })).toBeVisible();
+  await page.getByRole('button', { name: 'Finish later' }).click();
+  await page.getByRole('button', { name: /Go to my island/ }).click();
+
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await expect(page.getByText('Sentence grammar')).toBeVisible();
+  await page.getByRole('button', { name: 'Settings' }).click();
+  await page.getByRole('button', { name: 'Run the "Who did it?" stop' }).click();
+  await expect(grammar).toBeVisible();
+  expect(await page.locator('main .card.center').innerText()).not.toBe(firstRun); // a second run uses sentences he has not seen
+  for (let i = 0; i < 6; i++) await page.locator('main .tcard').nth(1).click();
+  await page.getByRole('button', { name: /Go to my island/ }).click();
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await expect(page.getByText('Sentence grammar')).toBeVisible();
+});
+
+test('word help: tap an underlined word for a plain meaning, and a tapped word comes back as a word for today (LTF-04)', async ({ page }) => {
+  await onboard(page);
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Content library' }).click();
+  await page.getByLabel('Skill').selectOption('N1');
+  await page.locator('summary', { hasText: 'Tide Pool Morning' }).click();
+  await page.locator('.lib-item', { hasText: 'n1-i37' }).last().getByRole('button', { name: 'Try it' }).click();
+  const dialog = page.getByRole('dialog', { name: 'Try an item' });
+  await dialog.locator('.word.gloss', { hasText: /^tide/i }).first().click();
+  await expect(dialog.locator('.gloss-card')).toContainText('the rise and fall of the sea each day');
+  await axe(page, 'word help');
+  await dialog.getByRole('button', { name: 'Close' }).click();
+  await page.getByRole('button', { name: 'Back to the island' }).click();
+
+  // The word he tapped comes back at the start of a later warm-up.
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.getByRole('button', { name: /Story Woods/ }).click();
+  await expect(page.locator('.bubble', { hasText: 'A word for today: tide' })).toBeVisible();
+  await axe(page, 'word for today');
+  await page.getByRole('group', { name: 'Meanings' }).getByRole('button', { name: 'the rise and fall of the sea each day' }).click();
+  await expect(page.getByText(/tide means the rise and fall/i)).toBeVisible();
+  await page.getByRole('button', { name: /^Next( →)?$/ }).click();
+  await expect(page.getByText(/Warm up · 1 of/)).toBeVisible();
+});
+
+test('the metaphor map: it is like, what they share, so it means (LTF-11)', async ({ page }) => {
+  await onboard(page);
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Content library' }).click();
+  await page.getByLabel('Skill').selectOption('N6');
+  await page.locator('summary', { hasText: 'Down the Big Hill' }).click();
+  await page.locator('.lib-item', { hasText: 'n6-i184' }).last().getByRole('button', { name: 'Try it' }).click();
+  const dialog = page.getByRole('dialog', { name: 'Try an item' });
+  for (const box of ['The skateboard was like…', 'What do they share?', 'So the skateboard…']) await expect(dialog.getByText(box)).toBeVisible();
+  await axe(page, 'metaphor map');
+});
+
+test('who\'s who: in N4 guided practice, tapping a dotted pronoun shows who it means (LTF-03)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Settings', exact: true }).click();
+  await page.getByRole('group', { name: 'Narrative starting step' }).getByRole('button', { name: '4', exact: true }).click();
+  await page.getByRole('button', { name: 'Apply starting steps' }).click();
+  await page.getByRole('button', { name: 'Back to the island' }).click();
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.getByRole('button', { name: /Story Woods/ }).click();
+  // Through the warm-up and the demo to guided practice.
+  const together = page.getByText(/Together · 1 of/);
+  for (let i = 0; i < 24 && !(await together.isVisible()); i++) {
+    const skip = page.getByRole('button', { name: 'Got it, skip' });
+    if (await skip.isVisible()) { await skip.click(); continue; }
+    const help = page.getByRole('button', { name: 'Help' });
+    for (let k = 0; k < 3; k++) if (await help.isVisible() && await help.isEnabled()) await help.click();
+    const check = page.getByRole('button', { name: /^Check/ });
+    if (await check.isVisible() && await check.isEnabled()) await check.click();
+    // Never wait on Next here: a story map fills in only after the last hint, so the next pass checks again.
+    const next = page.getByRole('button', { name: /^Next( →)?$/ });
+    for (const opts of [page.getByRole('group', { name: /^(Answers|Scene)$/ }).getByRole('button'), page.locator('main [role=button]:is(.sentence, .vrow, .word)')])
+      for (let k = 0; k < (await opts.count()) && !(await next.isVisible()); k++) if (await opts.nth(k).isEnabled()) await opts.nth(k).click();
+    if (await next.isVisible()) await next.click();
+  }
+  await expect(together).toBeVisible();
+  const dot = page.locator('main .word.ref').first();
+  await expect(dot).toBeVisible();
+  const pronoun = (await dot.innerText()).trim();
+  await dot.click();
+  await expect(page.locator('.gloss-card')).toContainText(`${pronoun} =`);
+  await axe(page, 'who is who');
+});
+
+test('a check-up flight every ten sessions: six new texts from where he is, no hints, results for the grown-ups (LTF-14)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  // Ten finished sessions, so a check-up is due (and the journey waits at Gull Island, where the sea routes leave).
+  await seedFinished(page, 10);
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await axe(page, 'choose with a check-up');
+  await page.getByRole('button', { name: /Check-up flight/ }).click();
+  for (let k = 1; k <= 6; k++) {
+    await expect(page.getByText(`Check-up flight · ${k} of 6`)).toBeVisible();
+    await expect(page.getByText('no hints this time')).toBeVisible();
+    await answer(page);
+  }
+  await expect(page.getByRole('heading', { name: 'Pick one new thing for your island' })).toBeVisible();
+  await page.locator('.piece').first().click();
+  await page.getByRole('button', { name: 'Choose a spot for me' }).click();
+  await page.getByRole('button', { name: /Back to my island/ }).click();
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  const card = page.locator('section', { has: page.getByRole('heading', { name: 'Check-up flights' }) });
+  await expect(card).toContainText(/of 6 right first time/);
+  await expect(card).toContainText('Gull Island');
+});
+
+test('at Gull Island he chooses a sea route: three islands that match his interests, and the story follows his pick (LTF-20)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page); // his interest is Space
+  await seedFinished(page, 5); // five sessions: at Gull Island
+  await expect(page.getByText(/Sea routes leave Gull Island/)).toBeVisible();
+  await page.getByRole('button', { name: /My journey/ }).click();
+  const fork = page.getByRole('region', { name: 'Choose your sea route' });
+  await expect(fork).toBeVisible();
+  const options = fork.locator('.ccard');
+  await expect(options).toHaveCount(3);
+  await expect(options.first()).toContainText('Star Point');
+  await expect(fork).not.toContainText('Windy Cape');
+  await axe(page, 'sea route choice');
+  await options.first().click();
+  await expect(fork).toBeHidden();
+  await expect(page.getByText(/white dome on a point of land to the north/).first()).toBeVisible();
+  await page.getByRole('button', { name: /Back to island/ }).click();
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await expect(page.getByText('Gull Island, 5 more to Star Point')).toBeVisible();
+});
+
+test('names instead of he and she in the easiest texts, never inside what a character says (LTF-03)', async ({ page }) => {
+  await onboard(page);
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Settings', exact: true }).click();
+  await page.getByText('Names instead of he and she in the easiest texts').click();
+  await expect(page.getByRole('switch', { name: 'Names instead of he and she in the easiest texts' })).toBeChecked();
+  await page.getByRole('button', { name: 'Content library' }).click();
+  await page.getByLabel('Skill').selectOption('N1');
+  await page.locator('summary', { hasText: 'Maya Plays Her Flute' }).click();
+  await page.locator('.lib-item', { hasText: 'n1-i57' }).last().getByRole('button', { name: 'Try it' }).click();
+  const passage = page.getByRole('dialog', { name: 'Try an item' }).locator('article.passage');
+  await expect(passage).toContainText("Maya took Maya's flute out of the flute's case.");
+  await expect(passage).not.toContainText('She took her flute');
+  await axe(page, 'names instead of pronouns');
 });

@@ -4,12 +4,18 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
+import { reasonProblems } from './reason.mjs';
+import { routeProblems } from './routes.mjs';
+import { glossProblems } from './glossary.mjs';
+import { refProblems } from './refs.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const bankDir = join(root, 'content', 'bank');
 const schema = JSON.parse(readFileSync(join(root, 'packages/schema/bank.schema.json'), 'utf8'));
 const validate = new Ajv({ allErrors: true, strict: false }).compile(schema);
 
+const journey = JSON.parse(readFileSync(join(root, 'content', 'journey.json'), 'utf8'));
+const stopIds = new Set(journey.stops.map((s) => s.id));
 const only = process.argv.slice(2).map((s) => s.toUpperCase());
 const files = readdirSync(bankDir).filter((f) => f.endsWith('.json') && (!only.length || only.includes(f.replace('.json', ''))));
 const errors = [];
@@ -53,6 +59,8 @@ for (const file of files) {
     seenPassage.set(p.id, file);
     if (!p.sentences.length && !p.visual) where(`${p.id}: needs sentences or a visual`);
     if (p.breaks?.some((b, k) => b >= p.sentences.length || (k > 0 && b <= p.breaks[k - 1]))) where(`${p.id}: breaks must be increasing sentence indexes`);
+    for (const m of glossProblems(p)) where(`${p.id}: ${m}`);
+    for (const m of refProblems(p)) where(`${p.id}: ${m}`);
   }
   for (const it of bank.items) {
     const at = (m) => where(`${it.id}: ${m}`);
@@ -107,6 +115,20 @@ for (const file of files) {
         break;
     }
     if (it.tier === 'express' && skill[0] !== 'P') at('express tier is for philosophical skills only');
+    for (const m of reasonProblems(it, p)) at(m);
+    // LTF-14: check-up texts belong to a journey stop and are never practice or the Peak check.
+    if (it.checkup !== undefined) {
+      if (!stopIds.has(it.checkup)) at(`checkup stop "${it.checkup}" is not in content/journey.json`);
+      if (it.gatecheck) at('a check-up item cannot also be a Peak check item');
+    }
+    // LTF-12: every act step follows a message item on the same message.
+    if (it.tags?.includes('act') !== !!it.after) at('an item tagged act needs "after", and only act items have it');
+    if (it.after) {
+      const first = bank.items.find((x) => x.id === it.after);
+      if (!first) at(`after: no item ${it.after}`);
+      else if (first.passage !== it.passage || !first.tags?.includes('message')) at(`after: ${it.after} must be a message item on the same passage`);
+    }
+    if (it.tags?.includes('know-think') && it.format === 'sort' && (it.bins.length !== 2 || it.cards.length > 4)) at('know-think sort items have two bins and at most four cards');
   }
   const model = bank.items.find((i) => i.id === bank.model.item);
   if (!model) where(`model item ${bank.model.item} not found`);
@@ -114,7 +136,9 @@ for (const file of files) {
   if (!bank.model.steps.some((s) => s.reveal)) where('model needs a step with reveal: true');
 
   // Coverage rules: enough items per level, one placement item, transfer items, and the inference check.
-  const practice = bank.items.filter((i) => i.id !== bank.model.item && !i.gatecheck);
+  const practice = bank.items.filter((i) => i.id !== bank.model.item && !i.gatecheck && !i.checkup);
+  const checkupPassages = new Set(bank.items.filter((i) => i.checkup).map((i) => i.passage));
+  for (const i of practice) if (checkupPassages.has(i.passage)) where(`${i.id}: passage ${i.passage} is reserved for check-ups`);
   const min = skill[0] === 'P' ? 6 : 15;
   if (practice.length < min) where(`only ${practice.length} practice items (need ${min})`);
   if (skill[0] !== 'P') {
@@ -141,6 +165,9 @@ for (const file of files) {
   } else if (gate.length) where('gatecheck items belong only to N3, N5 and N6');
   console.log(`${skill}: ${bank.passages.length} passages, ${practice.length} practice items, ${gate.length} gatecheck`);
 }
+
+// LTF-20: the journey's routes.
+for (const m of routeProblems(journey.stops, schema.definitions.Topic.enum)) errors.push(`journey.json: ${m}`);
 
 if (errors.length) {
   console.error(`\n${errors.length} problem(s):\n` + errors.map((e) => '  - ' + e).join('\n'));

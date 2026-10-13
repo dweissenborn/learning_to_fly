@@ -16,6 +16,13 @@
         "Sam saw her and got a second shovel."
       ],
       "picture": "❄️",
+      "refs": [
+        { "s": 3, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "Her", "n": 1, "to": "Grandma Rose" },
+        { "s": 6, "w": "She", "n": 1, "to": "Grandma Rose" },
+        { "s": 6, "w": "it", "n": 1, "to": "the car" },
+        { "s": 7, "w": "her", "n": 1, "to": "Grandma Rose" }
+      ],
       "topics": ["weather", "home"],
       "level": 1,
       "socialLoad": 1,
@@ -40,6 +47,17 @@
         "It was the same rain, but they felt two different ways."
       ],
       "picture": "🌧️⚽",
+      "refs": [
+        { "s": 4, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 4, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 5, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 6, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 7, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 8, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 8, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 9, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 11, "w": "they", "n": 1, "to": "the twins" }
+      ],
       "topics": ["sports", "weather"],
       "level": 2,
       "socialLoad": 2,
@@ -63,6 +81,11 @@
         "The next morning, he went home to his field."
       ],
       "picture": "🐭🏙️",
+      "refs": [
+        { "s": 1, "w": "his", "n": 1, "to": "the country mouse" },
+        { "s": 10, "w": "he", "n": 1, "to": "the country mouse" },
+        { "s": 10, "w": "his", "n": 1, "to": "the country mouse" }
+      ],
       "topics": ["animals", "home"],
       "level": 2,
       "socialLoad": 2,
@@ -341,6 +364,14 @@
         "Then he left the jewel in the dirt and went back to looking for corn."
       ],
       "picture": "🐓💎",
+      "refs": [
+        { "s": 1, "w": "His", "n": 1, "to": "the rooster" },
+        { "s": 2, "w": "it", "n": 2, "to": "the jewel" },
+        { "s": 3, "w": "his", "n": 1, "to": "the rooster" },
+        { "s": 4, "w": "he", "n": 1, "to": "the rooster" },
+        { "s": 4, "w": "it", "n": 1, "to": "the jewel" },
+        { "s": 8, "w": "he", "n": 1, "to": "the rooster" }
+      ],
       "topics": [
         "animals",
         "food"
@@ -376,6 +407,17 @@
         "The horn would sound softer there, and Maya could still draw the train."
       ],
       "picture": "🚂🎨",
+      "refs": [
+        { "s": 2, "w": "it", "n": 1, "to": "the long freight train" },
+        { "s": 2, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "its", "n": 1, "to": "the train" },
+        { "s": 4, "w": "it", "n": 1, "to": "the train" },
+        { "s": 6, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 7, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "her", "n": 2, "to": "Maya" },
+        { "s": 8, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 10, "w": "they", "n": 1, "to": "Sam and Maya" }
+      ],
       "topics": [
         "transport",
         "friends"

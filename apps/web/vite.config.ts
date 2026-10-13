@@ -28,8 +28,8 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
         // The whole content bank is in the main script so it works offline; it must stay under this or it is not cached.
         maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
-        // Sign-in pages always go to the server, never the offline copy.
-        navigateFallbackDenylist: [/^\/\.auth\//, /^\/not-invited\.html/],
+        // Sign-in pages always go to the server, never the offline copy, and the paper story map is its own page.
+        navigateFallbackDenylist: [/^\/\.auth\//, /^\/not-invited\.html/, /^\/story-map\.html/],
       },
     }),
   ],

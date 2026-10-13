@@ -17,6 +17,17 @@
         "\"Good boy!\" he said. \"We did it!\""
       ],
       "picture": "🐕🐾",
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 1, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 2, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 3, "w": "him", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "his", "n": 1, "to": "Pixel" },
+        { "s": 6, "w": "He", "n": 1, "to": "Pixel" },
+        { "s": 6, "w": "it", "n": 1, "to": "the paw" },
+        { "s": 7, "w": "him", "n": 1, "to": "Pixel" },
+        { "s": 8, "w": "he", "n": 1, "to": "Sam" }
+      ],
       "topics": ["animals", "home"],
       "level": 1,
       "socialLoad": 1,
@@ -41,6 +52,16 @@
         "\"I climbed all of it,\" she said."
       ],
       "picture": "⛰️",
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "They", "n": 1, "to": "Maya and her dad" },
+        { "s": 6, "w": "they", "n": 1, "to": "Maya and her dad" },
+        { "s": 8, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 11, "w": "she", "n": 1, "to": "Maya" }
+      ],
       "topics": ["nature", "maps"],
       "level": 2,
       "socialLoad": 1,
@@ -63,6 +84,14 @@
         "\"You'll get it,\" he said. \"I'll be here on Saturday too.\""
       ],
       "picture": "🛹",
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Jai" },
+        { "s": 1, "w": "it", "n": 1, "to": "the board" },
+        { "s": 1, "w": "him", "n": 1, "to": "Jai" },
+        { "s": 3, "w": "him", "n": 1, "to": "Jai" },
+        { "s": 7, "w": "he", "n": 1, "to": "Jai" },
+        { "s": 9, "w": "he", "n": 1, "to": "Leo" }
+      ],
       "topics": ["sports", "friends"],
       "level": 2,
       "socialLoad": 1,
@@ -347,6 +376,24 @@
         "Then she stood back and smiled."
       ],
       "picture": "🪨✨",
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 1, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "it", "n": 1, "to": "the rock" },
+        { "s": 5, "w": "it", "n": 1, "to": "the rock" },
+        { "s": 6, "w": "he", "n": 1, "to": "Mr. Varga" },
+        { "s": 6, "w": "It", "n": 1, "to": "pyrite" },
+        { "s": 6, "w": "it", "n": 2, "to": "pyrite" },
+        { "s": 9, "w": "They", "n": 1, "to": "the cubes" },
+        { "s": 10, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 10, "w": "them", "n": 1, "to": "the cubes" },
+        { "s": 11, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 11, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 12, "w": "she", "n": 1, "to": "Maya" }
+      ],
       "topics": [
         "mining",
         "nature"
@@ -382,6 +429,20 @@
         "In the last race, he came in second."
       ],
       "picture": "🎮🎧",
+      "refs": [
+        { "s": 3, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 3, "w": "his", "n": 2, "to": "Ben" },
+        { "s": 4, "w": "him", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "him", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 7, "w": "They", "n": 1, "to": "Ben and Ana" },
+        { "s": 8, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 9, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 10, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 11, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 11, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 12, "w": "he", "n": 1, "to": "Ben" }
+      ],
       "topics": [
         "games",
         "friends"

@@ -2,16 +2,16 @@
 import { useEffect, useState } from 'react';
 import { Button } from 'react-aria-components';
 import type { Item, SkillId, Topic } from '@wayfinder/schema';
-import { placementItems, placementStart, placementSupports } from '@wayfinder/engine';
-import { log, saveSettings, type GuideId, type Settings } from './db';
+import { grammarSet, placementItems, placementStart, placementSupports } from '@wayfinder/engine';
+import { log, saveSettings, useEvents, type GuideId, type Settings } from './db';
 import { createAndLink, isFamily, useCloudStatus, useLink } from './cloud';
-import { placement, pool, TOPICS } from './content';
+import { placement, pool, TOPICS, type GrammarItem } from './content';
 import { Guide, GUIDES, BrandMark } from './art';
 import { ItemView, type Result } from './ItemView';
 import { Btn, Seg, SpeakBtn, Toggle } from './ui';
 import { canSpeak, speak, stopSpeaking } from './media';
 
-type Step = 'hello' | 'guide' | 'interests' | 'comfort' | 'scout' | 'words' | 'reading' | 'listening' | 'break' | 'functional' | 'narrative' | 'done';
+type Step = 'hello' | 'guide' | 'interests' | 'comfort' | 'scout' | 'words' | 'reading' | 'listening' | 'grammar' | 'break' | 'functional' | 'narrative' | 'done';
 
 export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: Settings; startAt?: Step; onDone: () => void }) {
   const [step, setStep] = useState<Step>(startAt);
@@ -19,23 +19,33 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
   const [pin, setPin] = useState(settings.pin);
   const [scores, setScores] = useState(settings.scout ?? { word: 0, reading: 0, listening: 0 });
   const g = settings.guide;
+  const events = useEvents() ?? [];
+  const alone = startAt === 'grammar'; // Starting point can run the "Who did it?" stop on its own (LTF-13)
   const cloud = useCloudStatus();
   const linked = useLink();
   const family = isFamily(cloud.me);
   const header = <header className="topbar"><span className="brand"><BrandMark />Learning to Fly</span><span className="spacer" />
-    {['words', 'reading', 'listening', 'functional', 'narrative'].includes(step) && <Btn className="quiet small" onPress={() => finishScout(scores, {})}>Stop scouting for now</Btn>}
+    {['words', 'reading', 'listening', 'grammar', 'functional', 'narrative'].includes(step) && !alone && <Btn className="quiet small" onPress={() => finishScout(scores, {})}>Stop scouting for now</Btn>}
   </header>;
 
   // Placement: steps below the first miss start as mastered and are confirmed by review.
   const finishScout = async (s: typeof scores, starts: { functional?: number; narrative?: number }) => {
     stopSpeaking();
-    await log({ type: 'placement', functional: starts.functional ?? 1, narrative: starts.narrative ?? 1, word: s.word, reading: s.reading, listening: s.listening });
+    await log({ type: 'placement', functional: starts.functional ?? 1, narrative: starts.narrative ?? 1, word: s.word, reading: s.reading, listening: s.listening, ...(s.grammar !== undefined ? { grammar: s.grammar } : {}) });
     // Placement only ever switches supports on. Turning one off is the adult's call.
     const sup = placementSupports(s);
     await saveSettings({ readAloud: settings.readAloud || sup.readAloud, pictures: settings.pictures || sup.pictures, scout: s });
     setStep('done');
   };
   const [starts, setStarts] = useState<{ functional?: number; narrative?: number }>({});
+  // Run on its own, the stop keeps his starting steps and earlier scores: placement only ever adds mastered steps.
+  const grammarAlone = async (grammar: number) => {
+    const last = [...events].reverse().find((e) => e.type === 'placement');
+    const base = last?.type === 'placement' ? last : { functional: 1, narrative: 1, ...(settings.scout ?? { word: 0, reading: 0, listening: 0 }) };
+    await log({ type: 'placement', functional: base.functional, narrative: base.narrative, word: base.word, reading: base.reading, listening: base.listening, grammar, ...(last?.type === 'placement' && last.manual ? { manual: true } : {}) });
+    await saveSettings({ scout: { ...(settings.scout ?? { word: base.word, reading: base.reading, listening: base.listening }), grammar } });
+    setStep('done');
+  };
 
   return <>{header}<main className="stack" style={{ maxWidth: 900, margin: '0 auto', width: '100%' }}>
     {step === 'hello' && <div className="card stack">
@@ -84,13 +94,15 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
       <div className="guide-row"><Guide id={g} size={72} /><div className="bubble">
         Now a short scouting trip. It helps me find where you should start. Some questions will be easy and some will be hard. That is how scouting works. There are no hints, and you cannot lose anything.
       </div></div>
-      <div className="card"><ol style={{ margin: 0 }}><li>Words: match a word to a picture.</li><li>Read a short story.</li><li>Listen to a short story.</li><li>A few questions from each part of the island.</li></ol></div>
+      <div className="card"><ol style={{ margin: 0 }}><li>Words: match a word to a picture.</li><li>Read a short story.</li><li>Listen to a short story.</li><li>Who did it? Tap the picture.</li><li>A few questions from each part of the island.</li></ol></div>
       <div className="row"><Btn className="primary big" onPress={() => setStep('words')}>Start scouting →</Btn><Btn className="quiet" onPress={() => finishScout(scores, {})}>Skip, start at step 1</Btn></div>
     </div>}
 
     {step === 'words' && <WordCheck guide={g} onDone={(word) => { setScores((s) => ({ ...s, word })); setStep('reading'); }} />}
-    {step === 'reading' && <Probe key="r" guide={g} items={placement.reading.items} onDone={(c) => { setScores((s) => ({ ...s, reading: c })); setStep(canSpeak ? 'listening' : 'break'); }} />}
-    {step === 'listening' && <Probe key="l" guide={g} items={placement.listening.items} listen onDone={(c) => { setScores((s) => ({ ...s, listening: c })); setStep('break'); }} />}
+    {step === 'reading' && <Probe key="r" guide={g} items={placement.reading.items} onDone={(c) => { setScores((s) => ({ ...s, reading: c })); setStep(canSpeak ? 'listening' : 'grammar'); }} />}
+    {step === 'listening' && <Probe key="l" guide={g} items={placement.listening.items} listen onDone={(c) => { setScores((s) => ({ ...s, listening: c })); setStep('grammar'); }} />}
+    {step === 'grammar' && <GrammarCheck guide={g} set={placement.grammar[grammarSet(events, placement.grammar.length)]}
+      onDone={(grammar) => { if (alone) void grammarAlone(grammar); else { setScores((s) => ({ ...s, grammar })); setStep('break'); } }} />}
     {step === 'break' && <div className="stack center card">
       <Guide id={g} size={90} mood="happy" />
       <h2>Halfway there.</h2>
@@ -125,6 +137,25 @@ function WordCheck({ guide, onDone }: { guide: GuideId; onDone: (score: number) 
     <div className="guide-row"><Guide id={guide} size={56} /><div className="bubble">Read the word. Tap the picture that matches it. ({i + 1} of {placement.words.length})</div></div>
     <div className="card center"><span style={{ fontSize: '3rem', fontWeight: 800, letterSpacing: '0.04em' }}>{w.word}</span></div>
     <div className="choose" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>{w.options.map((o, k) => <Button key={k} className="tcard" aria-label={`Picture ${k + 1}`} onPress={() => pick(k)}><span style={{ fontSize: '3.4rem' }} aria-hidden>{o}</span></Button>)}</div>
+  </div>;
+}
+
+/** LTF-13: "Who did it?" Six one-sentence grammar items, each answered by tapping a picture. About two minutes. */
+function GrammarCheck({ guide, set, onDone }: { guide: GuideId; set: GrammarItem[]; onDone: (share: number) => void }) {
+  const [i, setI] = useState(0);
+  const [right, setRight] = useState(0);
+  const it = set[i];
+  const pick = (k: number) => {
+    const r = right + (k === it.answer ? 1 : 0);
+    if (i + 1 < set.length) { setRight(r); setI(i + 1); } else onDone(r / set.length);
+  };
+  return <div className="stack">
+    <h2 style={{ margin: 0 }}>Who did it?</h2>
+    <div className="guide-row"><Guide id={guide} size={56} /><div className="bubble">Read the sentence. {it.ask} Tap the picture. ({i + 1} of {set.length})</div></div>
+    <div className="card center"><span style={{ fontSize: '1.6rem', fontWeight: 700 }}>{it.sentence}</span></div>
+    <SpeakBtn lines={[it.sentence, it.ask]} k={`grammar-${i}`} className="small" />
+    <div className="choose" style={{ gridTemplateColumns: `repeat(${it.options.length}, 1fr)` }}>{it.options.map((o, k) =>
+      <Button key={`${i}-${k}`} className="tcard" onPress={() => pick(k)}><span style={{ fontSize: '3rem' }} aria-hidden>{o.emoji}</span>{o.label}</Button>)}</div>
   </div>;
 }
 

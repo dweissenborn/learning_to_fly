@@ -1553,6 +1553,11 @@
         10
       ],
       "picture": "🌘🕶️☀️",
+      "words": [
+        { "word": "partial", "means": "just some, not the whole thing", "pic": "🌗" },
+        { "word": "uncovered", "means": "not hidden, so it is open to see", "pic": "☀️" },
+        { "word": "binoculars", "means": "a tool for both eyes that makes far things look near", "pic": "👀" }
+      ],
       "topics": [
         "space"
       ],
@@ -1749,6 +1754,11 @@
         9
       ],
       "picture": "🤖🥽🏁",
+      "words": [
+        { "word": "pit", "means": "the space where teams fix and work on robots", "pic": "🔧" },
+        { "word": "arena", "means": "the closed space where the robots play their matches", "pic": "🏟️" },
+        { "word": "loose", "means": "not held on tight", "pic": "🔌" }
+      ],
       "topics": [
         "robots"
       ],
@@ -2030,6 +2040,11 @@
         13
       ],
       "picture": "⛏️🚧🦇",
+      "words": [
+        { "word": "beams", "means": "long, thick bars of wood that hold things up", "pic": "🪵" },
+        { "word": "rotten", "means": "soft and weak from being old and wet", "pic": "🍂" },
+        { "word": "oxygen", "means": "the part of air we need to breathe", "pic": "💨" }
+      ],
       "topics": [
         "mining"
       ],
@@ -2246,6 +2261,11 @@
         9
       ],
       "picture": "🦝🏕️🔒",
+      "words": [
+        { "word": "latch", "means": "a metal catch that keeps a lid shut", "pic": "🔒" },
+        { "word": "scented", "means": "with a strong smell", "pic": "🧴" },
+        { "word": "locker", "means": "a metal box with a door that shuts tight", "pic": "📦" }
+      ],
       "topics": [
         "animals",
         "nature"
@@ -2333,6 +2353,398 @@
         "source": "Written for Learning to Fly",
         "licence": "original",
         "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p67",
+      "title": "Delete Photos?",
+      "kind": "prompt",
+      "picture": "📱🗑️",
+      "sentences": [
+        "Sam wants to delete three blurry photos of Pixel.",
+        "He taps the three photos and then taps the trash can."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Photos",
+        "icon": "🗑️",
+        "rows": [
+          "Delete photos?",
+          "You selected 3 of the 24 photos in this album.",
+          "Deleted photos cannot be brought back."
+        ],
+        "buttons": ["Cancel", "Delete 3 selected", "Delete all 24"]
+      },
+      "topics": ["safety", "animals"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Delete Photos?",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p68",
+      "title": "Skating on Harbor Pond",
+      "kind": "notice",
+      "picture": "⛸️🚩",
+      "sentences": [
+        "The twins and Leo bring their skates to Harbor Pond after school.",
+        "A red flag is flying, and the sun sets at 5:10 PM."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Pond Skating",
+        "icon": "⛸️",
+        "rows": [
+          "Skating is allowed only when the green flag is up.",
+          "Some parts of the pond have thin ice. Stay inside the orange cones.",
+          "Children under 10 must skate with an adult.",
+          "No skating after dark.",
+          "Every skater must wear a helmet."
+        ]
+      },
+      "topics": ["safety", "sports", "weather"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Skating on Harbor Pond",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p11",
+      "title": "Library Computer Time",
+      "kind": "prompt",
+      "picture": "💻⏱️",
+      "sentences": [
+        "Maya is writing a story on a library computer.",
+        "She has not saved it, and two people are waiting for a computer."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Harbor Town Library Computer",
+        "icon": "⏱️",
+        "rows": [
+          "Your time ends in 2 minutes.",
+          "Save your work before your time ends.",
+          "Work that is not saved will be lost.",
+          "You can add 10 minutes only if no one is waiting."
+        ],
+        "buttons": ["Log out now", "Save my work", "Add 10 minutes"]
+      },
+      "topics": ["safety", "school"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Library Computer Time",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p11",
+      "title": "Low Battery on the Trail",
+      "kind": "prompt",
+      "picture": "🔋📱",
+      "sentences": [
+        "Leo uses a trail map app on Gull Island.",
+        "He needs the map to find his way back to the ferry dock."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Low Battery",
+        "icon": "🔋",
+        "rows": [
+          "Battery: 10% left.",
+          "Battery Saver makes your battery last longer.",
+          "Maps and phone calls still work in Battery Saver.",
+          "Games and videos are turned off."
+        ],
+        "buttons": ["Not now", "Turn on Battery Saver"]
+      },
+      "topics": ["safety", "maps"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Low Battery on the Trail",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p11",
+      "title": "Cliff Top Safety",
+      "kind": "notice",
+      "picture": "⚠️🪁",
+      "sentences": [
+        "Maya is flying a kite at Windy Cape.",
+        "The wind pulls it from her hands, and it lands past the fence."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Windy Cape Cliff Top",
+        "icon": "⚠️",
+        "rows": [
+          "Stay behind the white fence at all times.",
+          "The ground near the edge is soft and can break away.",
+          "Strong gusts of wind can push you off balance.",
+          "If your kite lands past the fence, leave it there. Ask the ranger at the hut for help."
+        ]
+      },
+      "topics": ["safety", "weather"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Cliff Top Safety",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p11",
+      "title": "The Fuel Pump Screen",
+      "kind": "prompt",
+      "picture": "⛽🛩️",
+      "sentences": [
+        "Captain Ada stops the Kookaburra next to Fuel Pump 1 and turns off the engine.",
+        "A screen on the pump lights up."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Before You Fill Up",
+        "icon": "⛽",
+        "rows": [
+          "Is the plane's engine turned off?",
+          "Clip the green safety wire to the plane. It stops sparks.",
+          "Keep phones and flames away from the fuel.",
+          "Tap Start only when you have done all of these."
+        ],
+        "buttons": ["Start", "Cancel"]
+      },
+      "topics": ["safety", "transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Fuel Pump Screen",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p11",
+      "title": "An Update Before Take-Off",
+      "kind": "prompt",
+      "picture": "📲🗺️",
+      "sentences": [
+        "Captain Ada uses a map app on a tablet in the cockpit.",
+        "Halfway over the sea, a box pops up on the screen."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Update Ready",
+        "icon": "🔄",
+        "rows": [
+          "A new version of SkyChart Maps is ready.",
+          "The app will close while it updates.",
+          "The update takes about 20 minutes.",
+          "Do not update while you are using the app to find your way."
+        ],
+        "buttons": ["Update Now", "Later"]
+      },
+      "topics": ["safety", "maps"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "An Update Before Take-Off",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p11",
+      "title": "Koala Walk Rules",
+      "kind": "notice",
+      "picture": "🐨⚠️",
+      "sentences": [
+        "Leah is walking on the boardwalk at Bluegum Koala Sanctuary.",
+        "A koala climbs down a tree and sits on the grass near her."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Koala Walk Rules",
+        "icon": "🐨",
+        "rows": [
+          "Stay on the boardwalk at all times.",
+          "Look at the koalas, but do not touch them. Koalas have sharp claws.",
+          "Do not feed the animals. Koalas eat only certain leaves.",
+          "Use a quiet voice. Koalas sleep for most of the day.",
+          "If a koala is on the ground, step back and tell a ranger."
+        ]
+      },
+      "topics": ["safety", "animals"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Koala Walk Rules",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p11",
+      "title": "Looking at the Sun Safely",
+      "kind": "notice",
+      "picture": "☀️🔭",
+      "sentences": [
+        "Ana is at Star Point on a sunny afternoon.",
+        "She has her binoculars, and she wants to see spots on the Sun."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Sun Watch Safety",
+        "icon": "☀️",
+        "rows": [
+          "Never look at the Sun with your eyes, binoculars or a telescope.",
+          "A quick look through binoculars or a telescope can badly hurt your eyes. Sunglasses do not protect them.",
+          "Look only through the Sun telescope. It has a special filter on the front.",
+          "Wait until Dr. Amal checks the filter before you look."
+        ]
+      },
+      "topics": ["space", "safety"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Looking at the Sun Safely",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p11",
+      "title": "The Prize on the Train",
+      "kind": "prompt",
+      "picture": "🎁📱",
+      "sentences": [
+        "Leo is on the Coast Line train, playing a game on his tablet.",
+        "A box pops up on the screen."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "You Won!",
+        "icon": "🎁",
+        "rows": [
+          "Congratulations! You won 100 free Coast Line rides!",
+          "To get your prize, type your email password below.",
+          "Hurry! This offer ends in 2 minutes."
+        ],
+        "buttons": ["Close", "Get my prize"]
+      },
+      "topics": ["safety", "transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Prize on the Train",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p11",
+      "title": "Safe Fossil Hunting",
+      "kind": "notice",
+      "picture": "⚠️🪨",
+      "sentences": [
+        "Leo is looking for fossils on the beach at Fossil Bay.",
+        "He sees an ammonite sticking out of the cliff, high above his head."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Fossil Bay: Safe Fossil Hunting",
+        "icon": "⚠️",
+        "rows": [
+          "Stay at least 10 meters from the bottom of the cliff. Rocks can fall at any time.",
+          "Look for fossils in the loose stones on the beach.",
+          "Do not dig or hammer into the cliff.",
+          "Found a fossil you cannot reach? Leave it where it is, and tell Dr. Bell at the tent.",
+          "Check the tide board. The rising tide covers the beach."
+        ]
+      },
+      "topics": ["safety", "dinosaurs"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Safe Fossil Hunting",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p11",
+      "title": "Turtle Beach Rules",
+      "kind": "notice",
+      "picture": "🐢⚠️",
+      "sentences": [
+        "Priya is on the beach at Reef Island after dark.",
+        "She sees a sea turtle digging a nest, and she wants a photo."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Turtle Beach at Night",
+        "icon": "🐢",
+        "rows": [
+          "Sea turtles lay their eggs on this beach from May to October.",
+          "Use only a red light. White light and camera flash can confuse turtles.",
+          "Stay at least 10 meters away from a turtle that is digging or laying eggs.",
+          "Never touch a turtle, a nest or the eggs.",
+          "Fill in any holes you dig in the sand before you leave."
+        ]
+      },
+      "topics": ["safety", "animals"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Turtle Beach Rules",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
         "adapted": false
       }
     }
@@ -6999,6 +7411,294 @@
         "before-after"
       ],
       "transfer": true
+    },
+    {
+      "id": "f6-i165",
+      "skill": "F6",
+      "passage": "f6-p67",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam wants to delete only the three blurry photos. Which button should he tap?",
+      "options": ["Delete 3 selected", "Delete all 24", "Cancel"],
+      "answer": 0,
+      "evidence": [1, 4],
+      "hint": "Read how many photos Sam picked. Find the button with that number.",
+      "explain": "He should tap Delete 3 selected. Delete all 24 would remove every photo in the album, and deleted photos cannot be brought back.",
+      "inference": 1,
+      "tags": ["quantifier", "delete"]
+    },
+    {
+      "id": "f6-i166",
+      "skill": "F6",
+      "passage": "f6-p67",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What would happen if Sam tapped \"Delete all 24\"?",
+      "options": [
+        "Every photo in the album would be gone for good.",
+        "Only the blurry photos would be deleted.",
+        "The photos would move to a new album."
+      ],
+      "answer": 0,
+      "evidence": [2, 5],
+      "hint": "Think about what \"all\" means here. Then read the line about bringing photos back.",
+      "explain": "Every photo in the album would be deleted, and deleted photos cannot be brought back.",
+      "inference": 1,
+      "tags": ["quantifier", "delete"]
+    },
+    {
+      "id": "f6-i167",
+      "skill": "F6",
+      "passage": "f6-p68",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Can the friends skate right now?",
+      "options": [
+        "No. Skating is allowed only when the green flag is up.",
+        "Yes, but only inside the cones.",
+        "Yes, if they wear helmets.",
+        "Yes, until 5:10 PM."
+      ],
+      "answer": 0,
+      "evidence": [0],
+      "hint": "What color is the flag today? Read the first rule.",
+      "explain": "No. A red flag is flying, and skating is allowed only when the green flag is up.",
+      "inference": 1,
+      "tags": ["quantifier", "safety-rule"]
+    },
+    {
+      "id": "f6-i168",
+      "skill": "F6",
+      "passage": "f6-p68",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Later, the green flag goes up. Where on the pond may they skate?",
+      "options": [
+        "Only inside the orange cones",
+        "Anywhere on the pond",
+        "Near the thin ice",
+        "Wherever the ice looks smooth"
+      ],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Read the rule about thin ice. What does it tell skaters to stay inside?",
+      "explain": "Only inside the orange cones. Some parts of the pond have thin ice, so skaters must stay inside the cones.",
+      "inference": 1,
+      "tags": ["quantifier", "safety-rule"]
+    },
+    {
+      "id": "f6-i169",
+      "skill": "F6",
+      "passage": "f6-p68",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben says only little kids need helmets. Is he right?",
+      "options": [
+        "No. Every skater must wear a helmet.",
+        "Yes. Only children under 10 need helmets.",
+        "Yes. Helmets are only for the thin ice.",
+        "No. No one needs a helmet."
+      ],
+      "answer": 0,
+      "evidence": [4],
+      "hint": "Read the helmet rule. Does it say some skaters, or every skater?",
+      "explain": "No. The notice says every skater must wear a helmet, not only children.",
+      "inference": 1,
+      "tags": ["quantifier", "safety-rule"]
+    },
+    {
+      "id": "cu-home-i11",
+      "skill": "F6",
+      "passage": "cu-home-p11",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya wants to keep her story. Which button should she tap?",
+      "options": ["Add 10 minutes", "Log out now", "Save my work"],
+      "answer": 2,
+      "evidence": [1, 2, 5],
+      "hint": "Read what happens to work that is not saved. Then check if Maya can add more time today.",
+      "explain": "She should tap Save my work. Work that is not saved will be lost, and she cannot add 10 minutes, because two people are waiting.",
+      "inference": 1,
+      "checkup": "home",
+      "tags": ["save", "condition", "on-screen"]
+    },
+    {
+      "id": "cu-gull-i11",
+      "skill": "F6",
+      "passage": "cu-gull-p11",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Leo needs his map to last until he reaches the dock. What should he do?",
+      "options": [
+        "Tap Turn on Battery Saver.",
+        "Tap Not now and keep walking.",
+        "Close the map app to save power."
+      ],
+      "answer": 0,
+      "evidence": [1, 2, 5],
+      "hint": "Read what Battery Saver does. Does the map still work with it on?",
+      "explain": "He should tap Turn on Battery Saver. It makes the battery last longer, and maps still work. If he closed the map app, he would have no map to follow.",
+      "inference": 1,
+      "checkup": "gull",
+      "tags": ["low-battery", "on-screen"]
+    },
+    {
+      "id": "cu-cape-i11",
+      "skill": "F6",
+      "passage": "cu-cape-p11",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What should Maya do about her kite?",
+      "options": [
+        "Climb over the fence and get it quickly.",
+        "Wait for the wind to blow it back.",
+        "Leave it, and ask the ranger at the hut for help."
+      ],
+      "answer": 2,
+      "evidence": [0, 3],
+      "hint": "Find the rule that starts with If. Read what it says to do.",
+      "explain": "She should leave the kite and ask the ranger at the hut for help. The last rule says this, and the first rule says to stay behind the fence.",
+      "inference": 0,
+      "checkup": "cape",
+      "tags": ["safety-rule", "if-step"]
+    },
+    {
+      "id": "cu-airfield-i11",
+      "skill": "F6",
+      "passage": "cu-airfield-p11",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Captain Ada has turned off the engine. What should she do next, before she taps Start?",
+      "options": [
+        "Tap Start right away",
+        "Start the engine again",
+        "Clip the green safety wire to the plane",
+        "Tap Cancel and leave"
+      ],
+      "answer": 2,
+      "evidence": [0, 1, 3],
+      "hint": "Read the screen from the top. Find the step that comes after the engine, and check what the last line says about Start.",
+      "explain": "She should clip the green safety wire to the plane. The second line tells her to do it, and the last line says to tap Start only when all the steps are done.",
+      "inference": 1,
+      "checkup": "airfield",
+      "tags": ["safety-steps", "before-start"]
+    },
+    {
+      "id": "cu-takeoff-i11",
+      "skill": "F6",
+      "passage": "cu-takeoff-p11",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Captain Ada is using the map to find her way over the sea. What should she tap?",
+      "options": ["Later", "Update Now", "The map behind the box"],
+      "answer": 0,
+      "evidence": [1, 3, 5],
+      "hint": "Read every line in the box. Look for a line that tells you when to wait.",
+      "explain": "She should tap Later. The box says the app will close while it updates, and the last line says not to update while you use the app to find your way.",
+      "inference": 1,
+      "checkup": "takeoff",
+      "tags": ["update-prompt", "safe-choice"]
+    },
+    {
+      "id": "cu-australia-i11",
+      "skill": "F6",
+      "passage": "cu-australia-p11",
+      "format": "tap",
+      "level": 3,
+      "prompt": "A koala is sitting on the grass near Leah. What should she do?",
+      "options": [
+        "Pick it up and put it back in the tree",
+        "Give it a leaf from the ground",
+        "Step back and tell a ranger",
+        "Call to it in a loud voice"
+      ],
+      "answer": 2,
+      "evidence": [4],
+      "hint": "Find the rule about a koala on the ground.",
+      "explain": "She should step back and tell a ranger. The last rule says this. The other rules also say not to touch the koalas, feed them or be loud.",
+      "inference": 0,
+      "checkup": "australia",
+      "tags": ["safety-rule", "find-the-rule"]
+    },
+    {
+      "id": "cu-star-i11",
+      "skill": "F6",
+      "passage": "cu-star-p11",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What should Ana do to see the spots on the Sun?",
+      "options": [
+        "Look at the Sun quickly through her binoculars.",
+        "Put on sunglasses and look at the Sun.",
+        "Wait for Dr. Amal to check the filter, then look through the Sun telescope."
+      ],
+      "answer": 2,
+      "evidence": [2, 3],
+      "hint": "Find the rule that says where you can look. Then read what must happen first.",
+      "explain": "She should wait for Dr. Amal to check the filter and then look through the Sun telescope. The notice says never to use binoculars, and sunglasses do not protect your eyes.",
+      "inference": 1,
+      "checkup": "star",
+      "tags": ["safety-rule", "two-rows"]
+    },
+    {
+      "id": "cu-rail-i11",
+      "skill": "F6",
+      "passage": "cu-rail-p11",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What should Leo do about this box?",
+      "options": [
+        "Tap Close, and tell an adult about the box.",
+        "Type his password quickly, before the offer ends.",
+        "Tap Get my prize to see what the rides are."
+      ],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Read what the box asks you to type. Is that something you share?",
+      "explain": "Leo should tap Close and tell an adult. The box asks for his password and tells him to hurry. A real prize never needs your password.",
+      "inference": 2,
+      "checkup": "rail",
+      "tags": ["prize-popup", "password", "hurry"]
+    },
+    {
+      "id": "cu-fossil-i11",
+      "skill": "F6",
+      "passage": "cu-fossil-p11",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What should Leo do about the ammonite in the cliff?",
+      "options": [
+        "Tap it out gently with a small hammer.",
+        "Climb up and pull it out with his hands.",
+        "Leave it there, and tell Dr. Bell at the tent."
+      ],
+      "answer": 2,
+      "evidence": [0, 2, 3],
+      "hint": "Find the rule about a fossil you cannot reach. Check the rules about the cliff too.",
+      "explain": "He should leave it in the cliff and tell Dr. Bell at the tent. The ammonite is too high to reach, and the rules say not to dig or hammer into the cliff.",
+      "inference": 1,
+      "checkup": "fossil",
+      "tags": ["safety-rule", "cliff"]
+    },
+    {
+      "id": "cu-reef-i11",
+      "skill": "F6",
+      "passage": "cu-reef-p11",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How can Priya take her photo safely?",
+      "options": [
+        "Stay at least 10 meters away, and turn off the flash.",
+        "Walk close, and use the camera flash.",
+        "Shine a white flashlight on the turtle first."
+      ],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Find the rule about light. Then find the rule about how far away to stay.",
+      "explain": "She should stay at least 10 meters away and turn off the flash. The notice says camera flash can confuse turtles, and people must stay 10 meters from a turtle that is digging.",
+      "inference": 1,
+      "checkup": "reef",
+      "tags": ["safety-rule", "two-rules"]
     }
   ],
   "model": {

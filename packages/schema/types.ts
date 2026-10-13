@@ -170,6 +170,46 @@ export interface Passage {
    * Sentence indexes that start a new paragraph (for longer texts)
    */
   breaks?: number[];
+  /**
+   * LTF-04: word help, up to three words in a level 3 to 5 text. A person reviews every meaning.
+   *
+   * @maxItems 3
+   */
+  words?: {
+    /**
+     * As it appears in the passage
+     */
+    word: string;
+    /**
+     * A plain meaning, at most 12 words, easier than the word
+     */
+    means: string;
+    /**
+     * One emoji
+     */
+    pic: string;
+  }[];
+  /**
+   * LTF-03: who or what each pronoun refers to. Drafted, then reviewed by a person.
+   */
+  refs?: {
+    /**
+     * Sentence index
+     */
+    s: number;
+    /**
+     * The pronoun as written
+     */
+    w: string;
+    /**
+     * Which occurrence of that word in the sentence, from 1
+     */
+    n?: number;
+    /**
+     * Who or what it refers to, as written in the passage
+     */
+    to: string;
+  }[];
 }
 export interface Sign {
   shape: 'octagon' | 'triangle' | 'rect' | 'circle' | 'diamond' | 'square';
@@ -287,6 +327,31 @@ export interface Item {
     bin: number;
     emoji?: string;
   }[];
+  /**
+   * LTF-02: the reasoning card shown as the second hint. At most 12 words a box.
+   */
+  reason?: {
+    /**
+     * A sentence from the passage, word for word
+     */
+    clue: string;
+    /**
+     * What people generally know, for example that shaking hands can mean nerves
+     */
+    know: string;
+    /**
+     * What that tells you. Shown only with the answer, or in the worked example
+     */
+    so: string;
+  };
+  /**
+   * LTF-12: an act step's message item (tag act after tag message, same passage). Served right after it, so the same message stays on screen.
+   */
+  after?: string;
+  /**
+   * LTF-14: reserved for check-up flights at this journey stop (a stop id in content/journey.json). Never used in practice.
+   */
+  checkup?: string;
 }
 export interface SceneObject {
   label: string;
@@ -311,7 +376,10 @@ export interface Slot {
     | 'lesson'
     | 'evidence'
     | 'me'
-    | 'other';
+    | 'other'
+    | 'like'
+    | 'share'
+    | 'means';
   label?: string;
   /**
    * @minItems 2
@@ -347,6 +415,10 @@ export interface Model {
      * Show the answer at this step
      */
     reveal?: boolean;
+    /**
+     * LTF-02: the box of the reasoning card this step fills in
+     */
+    fill?: 'clue' | 'know' | 'so';
   }[];
 }
 
@@ -355,7 +427,7 @@ export interface Model {
  */
 export type LogEvent =
   AnswerEvent | SessionEvent | PlacementEvent | WorldEvent | RecountEvent | RealWorldEvent | ActivityEvent;
-export type Phase = 'warmup' | 'together' | 'yourturn' | 'placement' | 'gatecheck';
+export type Phase = 'warmup' | 'together' | 'yourturn' | 'placement' | 'gatecheck' | 'checkup';
 export type Strand = 'functional' | 'narrative' | 'philosophical';
 
 export interface AnswerEvent {
@@ -398,6 +470,10 @@ export interface AnswerEvent {
    * Guided practice: seconds the clue waited before showing (0 = shown at once on a new skill's first item, LTF-01).
    */
   delay?: number;
+  /**
+   * A reasoning card (Clue, What I know, So) was shown before this answer (LTF-02).
+   */
+  card?: boolean;
 }
 export interface SessionEvent {
   id: string;
@@ -408,6 +484,10 @@ export interface SessionEvent {
   strand?: Strand;
   skill?: string;
   gatecheck?: boolean;
+  /**
+   * LTF-14: an optional check-up flight.
+   */
+  checkup?: boolean;
 }
 export interface PlacementEvent {
   id: string;
@@ -428,6 +508,10 @@ export interface PlacementEvent {
    * Set by an adult rather than by the checks
    */
   manual?: boolean;
+  /**
+   * Share correct on the "Who did it?" sentence grammar stop (LTF-13). Absent when the stop was not run.
+   */
+  grammar?: number;
 }
 export interface WorldEvent {
   id: string;
@@ -463,6 +547,14 @@ export interface RecountEvent {
    * He answered a "What happened after that?" question (LTF-05).
    */
   after?: boolean;
+  /**
+   * Day recounts: how many boxes of the four-panel strip he tapped to change (LTF-06).
+   */
+  changed?: number;
+  /**
+   * From stage 3, day recounts: one entry per question he answered, true if he opened "Show me ideas" for it (LTF-07).
+   */
+  ideas?: boolean[];
 }
 export interface RealWorldEvent {
   id: string;
@@ -480,10 +572,21 @@ export interface ActivityEvent {
   type: 'activity';
   session: string;
   /**
-   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point. opinion: his answer on a 'What do you think?' card.
+   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point. opinion: his answer on a 'What do you think?' card. word-help: he tapped a word for its meaning (LTF-04). word-check: he answered the warm-up's word for today. who-help: he tapped a dotted pronoun to see who it means (LTF-03). route: he chose a sea route at a fork; item is the island (LTF-20).
    */
-  kind: 'step' | 'idle' | 'away' | 'back' | 'skip-demo' | 'boost' | 'opinion';
-  step?: 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish';
+  kind:
+    | 'step'
+    | 'idle'
+    | 'away'
+    | 'back'
+    | 'skip-demo'
+    | 'boost'
+    | 'opinion'
+    | 'word-help'
+    | 'word-check'
+    | 'who-help'
+    | 'route';
+  step?: 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish' | 'checkup';
   item?: string;
   /**
    * For back: what he returned from.
@@ -509,4 +612,12 @@ export interface ActivityEvent {
    * For opinion: too much, just right, or too little.
    */
   amount?: 'too-much' | 'just-right' | 'too-little';
+  /**
+   * For word-help and word-check: the word.
+   */
+  word?: string;
+  /**
+   * For word-check: he picked the right meaning first time.
+   */
+  correct?: boolean;
 }

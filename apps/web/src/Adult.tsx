@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId, Strand } from '@wayfinder/schema';
-import { ALL_SKILLS, dayKey, delayEffect, errorPatterns, recountTrend, flightPoints, freshness, FRESH_LOW, focusSkill, gate, GEAR, gearState, hintNeed, insights, interestEffect, journeyPosition, levelFor, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName } from '@wayfinder/engine';
+import { ALL_SKILLS, checkupResults, dayKey, delayEffect, errorPatterns, formatEffect, ideasUse, placementSupports, reasonRecord, recountTrend, flightPoints, freshness, FRESH_LOW, focusSkill, gate, GEAR, gearState, hintNeed, insights, interestEffect, journeyPosition, levelFor, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName } from '@wayfinder/engine';
 import { finishedCount, JOURNEY, journeyNow } from './journey';
 import { deleteNote, exportAll, importAll, log, saveSettings, updateNote, useNotes, wipeAll, type GuideId, type Settings } from './db';
 import { deleteEverywhere, useLink } from './cloud';
@@ -20,7 +20,7 @@ type Tab = 'overview' | 'skills' | 'activity' | 'today' | 'content' | 'settings'
 const STATUS_CLASS = { 'not started': '', learning: 'learning', mastered: 'mastered', 'review due': 'due' } as const;
 const fmtDate = (ts?: number) => (ts ? new Date(ts).toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) : '–');
 
-export function Adult({ settings, events, progress, onExit, onRescout }: { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void; onRescout: () => void }) {
+export function Adult({ settings, events, progress, onExit, onRescout, onGrammar }: { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void; onRescout: () => void; onGrammar: () => void }) {
   const [unlocked, setUnlocked] = useState(!settings.pin);
   const [code, setCode] = useState('');
   const [tab, setTab] = useState<Tab>('overview');
@@ -47,7 +47,7 @@ export function Adult({ settings, events, progress, onExit, onRescout }: { setti
       {tab === 'activity' && <Activity events={events} settings={settings} progress={progress} />}
       {tab === 'today' && <TodayAdmin settings={settings} events={events} />}
       {tab === 'content' && <Library settings={settings} />}
-      {tab === 'settings' && <SettingsTab settings={settings} progress={progress} onRescout={onRescout} />}
+      {tab === 'settings' && <SettingsTab settings={settings} progress={progress} onRescout={onRescout} onGrammar={onGrammar} />}
       {tab === 'data' && <DataTab name={settings.name} onReport={() => setReport(true)} />}
     </main>
   </>;
@@ -60,6 +60,8 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
   const minutes = Math.round(progress.sessions.reduce((n, s) => n + ((s.end ?? s.start) - s.start), 0) / 60000);
   const ie = interestEffect(progress);
   const placement = [...events].reverse().find((e) => e.type === 'placement');
+  const grammar = [...events].reverse().find((e) => e.type === 'placement' && e.grammar !== undefined);
+  const g13 = grammar?.type === 'placement' ? grammar.grammar : undefined;
   const recounts = events.filter((e) => e.type === 'recount').length;
   const notes = useNotes();
   const lastRecount = notes.find((n) => n.kind === 'recount');
@@ -74,7 +76,7 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
         <span>Days used</span><b>{days}</b>
         <span>Time reading</span><b>{minutes} min</b>
         <span>Today recounts</span><b>{recounts}</b>
-        <span>Journey</span><b>{(() => { const j = journeyNow(finishedCount(progress), settings); return j.next ? `${j.here.name}, ${j.legLength - j.step} more to ${j.next.name}` : `In Australia, ${Math.min(j.after + 1, JOURNEY.koalas.length)} koalas met`; })()}</b>
+        <span>Journey</span><b>{(() => { const j = journeyNow(finishedCount(progress), settings); return j.fork ? `${j.here.name}, choosing a sea route` : j.next ? `${j.here.name}, ${j.legLength - j.step} more to ${j.next.name}` : `In Australia, ${Math.min(j.after + 1, JOURNEY.koalas.length)} koalas met`; })()}</b>
       </div>
       <p className="tagline">Studies of reading programs like this one measured gains after about 25 sessions, so give it that long before judging. Mastery needs two good days on a skill, so steady short sessions work best.</p>
     </section>
@@ -106,7 +108,10 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
       <div className="kv"><span>Interest topics</span><b>{pct(ie.interest)}</b><span>Other topics</span><b>{pct(ie.other)}</b></div>
       {placement?.type === 'placement' && <><h3 style={{ marginTop: '0.8rem' }}>Starting point</h3>
         <div className="kv"><span>Word reading</span><b>{Math.round(placement.word * 100)}%</b><span>Reading a story</span><b>{Math.round(placement.reading * 100)}%</b><span>Listening to a story</span><b>{Math.round(placement.listening * 100)}%</b>
-          <span>Started at</span><b>Functional step {placement.functional}, narrative step {placement.narrative}</b></div></>}
+          <span>Started at</span><b>Functional step {placement.functional}, narrative step {placement.narrative}</b>
+          <span>Sentence grammar</span><b>{g13 === undefined ? 'not checked yet' : `${Math.round(g13 * 100)}% (who did it, in six sentences)`}</b></div>
+        {g13 !== undefined && placementSupports({ word: 1, reading: 1, listening: 1, grammar: g13 }).names &&
+          <p className="tagline">Suggested: turn on "Names instead of he and she in the easiest texts" in Settings, under Learning.</p>}</>}
     </section>
     {lastRecount && <section className="card stack talk">
       <h2>Latest “Today”: {lastRecount.title}</h2>
@@ -115,6 +120,8 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
     </section>}
     <FreshWarning settings={settings} progress={progress} />
     <SchoolGoals progress={progress} />
+    <Messages progress={progress} />
+    <Checkups events={events} progress={progress} settings={settings} />
     <Votes events={events} />
     <section className="card stack"><h2>Due for review</h2>
       {ALL_SKILLS.filter((s) => statusOf(progress.skills[s], now) === 'review due').map((s) => <div key={s}>{SKILL[s].name} <span className="chip due">review due</span></div>)}
@@ -152,10 +159,38 @@ function SchoolGoals({ progress }: { progress: Progress }) {
   </section>;
 }
 
+/** LTF-14: check-up flights, kept apart from practice and from Today, and how many unseen texts are left at his stop. */
+function Checkups({ events, progress, settings }: { events: LogEvent[]; progress: Progress; settings: Settings }) {
+  const results = useMemo(() => checkupResults(events), [events]);
+  const here = journeyNow(finishedCount(progress), settings).here;
+  const left = [...pool.items.values()].filter((i) => i.checkup === here?.id && !progress.seen.has(i.id) && !settings.hidden.includes(i.id)).length;
+  return <section className="card stack">
+    <h2>Check-up flights</h2>
+    {!results.length ? <p className="muted">About every ten sessions, he can choose a check-up flight: six new texts, no hints, and no right or wrong shown. Results show here.</p>
+      : <div className="kv">{results.map((r) => <span key={r.ts} style={{ display: 'contents' }}><span>{fmtDate(r.ts)}</span><b>{r.correct} of {r.total} right first time</b></span>)}</div>}
+    {here && <p className="tagline" style={{ margin: 0 }}>{left >= 6 ? `${left} unseen check-up texts left at ${here.name}.` : `Only ${left} unseen check-up texts left at ${here.name}. A check-up would repeat some texts.`}</p>}
+    <p className="tagline">Check-ups measure reading on texts he has never seen, themed to where he is on the journey. They never change his skills or levels. Growth in telling stories did not carry over to reading in one study, so reading is measured on its own here.</p>
+  </section>;
+}
+
+/** LTF-12: understanding a message and acting on it, as two lines, because one can grow without the other. */
+function Messages({ progress }: { progress: Progress }) {
+  return <section className="card stack">
+    <h2>Messages: understanding and acting</h2>
+    <div className="kv">
+      <span>Understood the message</span><b>{goalText(tagAccuracy(progress, pool, 'message', { firstTimeOnly: true }))}</b>
+      <span>Did the right thing</span><b>{goalText(tagAccuracy(progress, pool, 'act', { firstTimeOnly: true }))}</b>
+    </div>
+    <p className="tagline">After a message question, a second step asks him to act on the same message: pick the reply that matches the plan, or tap what to do. In one study, understanding messages improved but replying did not, so the two are counted apart. Answers given without help, to questions he had not seen before.</p>
+  </section>;
+}
+
 /** How his sessions go: where they end, where he pauses, how long things take, and what to try. Timing only. */
 const TONE: Record<Insight['tone'], [string, string]> = { act: ['⚑', 'Needs attention'], watch: ['👀', 'Worth watching'], good: ['✅', 'Going well'] };
 const span = (ms: number) => (ms < 60_000 ? `${Math.round(ms / 1000)} s` : `${Math.round(ms / 60_000)} min`);
 const medianOf = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? s[Math.floor((s.length - 1) / 2)] : 0; };
+/** Plain names for the question kinds in "Pattern in misses" (LTF-09, LTF-10, LTF-12). Other tags read as words. */
+const PATTERN_NAME: Record<string, string> = { 'know-think': 'knows or only thinks', quantifier: '"some", "only" and "all"', act: 'acting on a message' };
 const skillName = (id: string) => SKILL[id as SkillId]?.name ?? id;
 
 function Insights({ events }: { events: LogEvent[] }) {
@@ -212,6 +247,70 @@ function HintWait({ events, progress }: { events: LogEvent[]; progress: Progress
   </section>;
 }
 
+/** LTF-11: metaphors with the three-box map, against new metaphors without it: does the map carry over? */
+function Metaphors({ progress }: { progress: Progress }) {
+  return <section className="card stack">
+    <h2>Metaphor map</h2>
+    <div className="kv">
+      <span>With the map</span><b>{goalText(tagAccuracy(progress, pool, 'metaphor-map', { firstTimeOnly: true }))}</b>
+      <span>New metaphors, without the map</span><b>{goalText(tagAccuracy(progress, pool, 'metaphor-new', { firstTimeOnly: true }))}</b>
+    </div>
+    <p className="tagline">The map has three boxes: what it is like, what the two share, and so what it means. Teaching that marked what the two things share carried over to new metaphors in one study, so new ones without the map show whether it carries over for him. There are 20 for now; his results on the new ones decide whether to add more.</p>
+  </section>;
+}
+
+/** LTF-04: the words he taps for their meaning, and how the warm-up's word for today goes. */
+function WordHelp({ events }: { events: LogEvent[] }) {
+  const taps = new Map<string, number>();
+  const checks = { right: 0, total: 0 };
+  for (const e of events) if (e.type === 'activity' && e.word) {
+    if (e.kind === 'word-help') taps.set(e.word.toLowerCase(), (taps.get(e.word.toLowerCase()) ?? 0) + 1);
+    if (e.kind === 'word-check') { checks.total += 1; if (e.correct) checks.right += 1; }
+  }
+  const most = [...taps].sort((a, b) => b[1] - a[1]).slice(0, 8);
+  return <section className="card stack">
+    <h2>Word help</h2>
+    <div className="kv">
+      <span>Words he tapped most</span><b>{most.length ? most.map(([w, n]) => `${w} (${n})`).join(', ') : 'none yet'}</b>
+      <span>Word for today, right first time</span><b>{checks.total ? `${checks.right} of ${checks.total}` : 'none yet'}</b>
+    </div>
+    <p className="tagline">In some harder texts, up to three words are underlined. Tapping one shows a picture and a plain meaning, read aloud. Vocabulary teaching on a screen helped in studies, and the words he taps come back as a word for today at the start of a later warm-up. For now, about 60 texts have word help, to see whether it helps him before more are added.</p>
+  </section>;
+}
+
+/** LTF-02: his feelings answers before and after the reasoning card, as a single-case record. */
+function ReasonRecord({ progress }: { progress: Progress }) {
+  const r = useMemo(() => reasonRecord(progress), [progress]);
+  const line = (b: { correct: number; total: number }) => (b.total ? `${b.correct} of ${b.total} right first time (${Math.round((100 * b.correct) / b.total)}%)` : 'none yet');
+  return <section className="card stack">
+    <h2>Thinking-it-through card</h2>
+    <div className="kv">
+      <span>{r.since ? `Before ${fmtDate(r.since)}` : 'So far'}</span><b>{line(r.before)}</b>
+      {r.since && <><span>Since he first saw the card</span><b>{line(r.after)}</b></>}
+    </div>
+    <p className="tagline">On new questions about what characters feel and why, the second hint is a card with three boxes: the clue from the story, what people generally know, and "so", which he works out. These lines are his own first-time answers on what characters feel, before and after he first saw the card. Thinking aloud with a card like this helped children of his age in one study; this shows whether it helps him.</p>
+  </section>;
+}
+
+/** LTF-15: which question types work for him, compared only within the same skill and level. */
+const FORMAT_NAME: Record<string, string> = { tap: 'Choose', order: 'Put in order', storymap: 'Story map', highlight: 'Find it in the text', sort: 'Sort', scene: 'Picture scene', build: 'Build an answer' };
+function Formats({ progress }: { progress: Progress }) {
+  const rows = useMemo(() => formatEffect(progress), [progress]);
+  const strands: Strand[] = ['functional', 'narrative', 'philosophical'];
+  return <section className="card stack">
+    <h2>Which question types work for him</h2>
+    {!rows.length ? <p className="muted">Shows once he has answered one skill, at one level, in two different question types.</p>
+      : strands.filter((s) => rows.some((r) => strandOf(r.skill as SkillId) === s)).map((s) => <div key={s} className="stack" style={{ gap: '0.3rem' }}>
+        <h3 style={{ margin: 0 }}>{STRAND[s].region}</h3>
+        <div className="kv">{rows.filter((r) => strandOf(r.skill as SkillId) === s).map((r) => <span key={`${r.skill}${r.level}`} style={{ display: 'contents' }}>
+          <span>{skillName(r.skill)}, level {r.level}</span>
+          <b>{r.formats.map((f) => `${FORMAT_NAME[f.format] ?? f.format}: ${f.correct} of ${f.total}`).join(' · ')}</b>
+        </span>)}</div>
+      </div>)}
+    <p className="tagline">Right first time on his own first-time answers, in the warm-up and his own practice. Each line compares question types on one skill at one text level, so a harder skill or a longer text never makes a type look worse. Reading on a screen can go differently from reading on paper, so the finish screen offers a paper story map after story sessions.</p>
+  </section>;
+}
+
 function Activity({ events, settings, progress }: { events: LogEvent[]; settings: Settings; progress: Progress }) {
   const sessions = useMemo(() => sessionActivity(events), [events]);
   const recent = sessions.slice(-10).reverse();
@@ -229,6 +328,10 @@ function Activity({ events, settings, progress }: { events: LogEvent[]; settings
     </section>
     <FreshContent settings={settings} progress={progress} />
     <HintWait events={events} progress={progress} />
+    <Formats progress={progress} />
+    <ReasonRecord progress={progress} />
+    <WordHelp events={events} />
+    <Metaphors progress={progress} />
     <section className="card stack">
       <h2>Recent sessions</h2>
       {!recent.length ? <p className="muted">No sessions yet.</p> : <div className="table-wrap"><table className="skills-table">
@@ -298,7 +401,7 @@ function Skills({ progress, events }: { progress: Progress; events: LogEvent[] }
           <td>{st.answers.length ? levelFor(st, pool) : '–'}</td>
           <td>{h === undefined ? '–' : h < 0.5 ? 'little' : h < 1.5 ? 'light' : h < 2.5 ? 'strategy' : 'full'}</td>
           <td><Spark points={trend(st)} /></td>
-          <td>{pats.length ? pats.map((p) => <div key={p.tag}>{p.tag.replace(/-/g, ' ')} <span className="muted">({p.missed} of {p.total})</span></div>) : <span className="muted">none yet</span>}</td>
+          <td>{pats.length ? pats.map((p) => <div key={p.tag}>{PATTERN_NAME[p.tag] ?? p.tag.replace(/-/g, ' ')} <span className="muted">({p.missed} of {p.total})</span></div>) : <span className="muted">none yet</span>}</td>
           <td>{real(s)} <Btn className="small quiet" onPress={() => setConfirm(s)}>Add</Btn></td>
           <td>{st.status === 'mastered' ? fmtDate(st.nextReview) : '–'}</td>
         </tr>;
@@ -345,6 +448,18 @@ function Telling({ events }: { events: LogEvent[] }) {
   </section>;
 }
 
+/** LTF-07: from stage 3, how often he answers in his own words before opening the ideas. */
+function Ideas({ settings, events }: { settings: Settings; events: LogEvent[] }) {
+  const u = useMemo(() => ideasUse(events), [events]);
+  return <section className="card stack">
+    <h2>Telling without the ideas</h2>
+    {!u.recounts ? <p className="muted">Shows once Today puts the answer tiles behind a button (stage 3).</p>
+      : <div className="kv"><span>Answered without ideas</span><b>{u.week.without} of {u.week.of} questions this week</b></div>}
+    {u.stepBack && !settings.todayStage && <p style={{ margin: 0 }}>He opened the ideas for every question in his recent recounts, so Today has stepped back a stage for now. It moves on again by itself.</p>}
+    <p className="tagline">From stage 3 the answer tiles wait behind a "Show me ideas" button, so he can try his own words first. Nothing times him. If he opens the ideas on every question for two weeks, Today steps back a stage. Printed cues helped a child tell about past events, but in that study they were never taken away, so this checks whether he manages without them.</p>
+  </section>;
+}
+
 function TodayAdmin({ settings, events }: { settings: Settings; events: LogEvent[] }) {
   const notes = useNotes();
   const [people, setPeople] = useState(settings.people.join(', '));
@@ -357,6 +472,7 @@ function TodayAdmin({ settings, events }: { settings: Settings; events: LogEvent
   };
   return <div className="stack">
     <Telling events={events} />
+    <Ideas settings={settings} events={events} />
     <section className="card stack">
       <h2>What he told you</h2>
       <p className="tagline">Personal answers are never sent to any model. They are deleted after 30 days unless you keep them, and other typed answers after 90 days. With the family cloud copy they are kept there too, and deleted there at the same time.</p>
@@ -377,7 +493,7 @@ function TodayAdmin({ settings, events }: { settings: Settings; events: LogEvent
       <div className="field"><label htmlFor="people">Names he can pick (teachers, friends), separated by commas</label>
         <input id="people" className="input" value={people} onChange={(e) => setPeople(e.target.value)} onBlur={() => saveSettings({ people: people.split(',').map((x) => x.trim()).filter(Boolean) })} /></div>
       <Seg label="Recount support" value={settings.todayStage} onChange={(todayStage) => saveSettings({ todayStage })}
-        options={[[0, 'Automatic'], [1, 'One part, tiles'], [2, 'Tiles and typing'], [3, 'Three parts'], [4, 'Whole day']]} />
+        options={[[0, 'Automatic'], [1, 'One part, tiles'], [2, 'Tiles and typing'], [3, 'Three parts, ideas on a button'], [4, 'Whole day']]} />
     </section>
   </div>;
 }
@@ -416,14 +532,15 @@ function Library({ settings }: { settings: Settings }) {
     })}
     <ModalOverlay className="overlay" isOpen={!!trying} onOpenChange={(o) => !o && setTrying(null)} isDismissable>
       <Modal><Dialog className="dialog" style={{ width: 'min(1100px, 100%)' }} aria-label="Try an item">
-        {trying && <><ItemView key={trying.id} item={trying} mode="request" guide={settings.guide} pictures={settings.pictures} helpTick={tick} onDone={() => setTrying(null)} />
+        {trying && <><ItemView key={trying.id} item={trying} mode="request" guide={settings.guide} pictures={settings.pictures} helpTick={tick} onDone={() => setTrying(null)}
+          whosWho={{ setting: settings.whosWho ?? 'auto', n4Mastered: false, names: !!settings.namesLevel1 }} />
           <div className="row" style={{ marginTop: '1rem' }}><Btn className="small" onPress={() => setTick((t) => t + 1)}>💡 Show a hint</Btn><span className="spacer" /><Btn className="quiet" onPress={() => setTrying(null)}>Close</Btn></div></>}
       </Dialog></Modal>
     </ModalOverlay>
   </section>;
 }
 
-function SettingsTab({ settings, progress, onRescout }: { settings: Settings; progress: Progress; onRescout: () => void }) {
+function SettingsTab({ settings, progress, onRescout, onGrammar }: { settings: Settings; progress: Progress; onRescout: () => void; onGrammar: () => void }) {
   const [pin, setPin] = useState(settings.pin);
   const [vs, setVs] = useState(voices());
   useEffect(() => {
@@ -442,9 +559,10 @@ function SettingsTab({ settings, progress, onRescout }: { settings: Settings; pr
       <Seg label="Sessions between places on the journey" value={settings.legLength} options={[[3, '3'], [5, '5'], [7, '7']]} onChange={(legLength) => {
         // Re-anchor at today's place, so a new pace never moves him back.
         const finished = finishedCount(progress);
-        const pos = journeyPosition(finished, JOURNEY.stops.length, settings.legLength, settings.journeyAnchor);
+        const pos = journeyNow(finished, settings); // on his route (LTF-20)
         saveSettings({ legLength, journeyAnchor: { at: finished, stop: pos.stop, step: pos.step, after: pos.after } });
       }} />
+      {Object.entries(settings.routes ?? {}).map(([from, r]) => <p key={from} style={{ margin: 0 }}>Route from {JOURNEY.stops.find((s) => s.id === from)?.name}: <b>{JOURNEY.stops.find((s) => s.id === r.to)?.name}</b>{r.at ? `, chosen ${fmtDate(r.at)}` : ' (he was already on this route when the island routes arrived)'}.</p>)}
       <p className="tagline">The journey to the koalas moves with finished sessions, never with scores. Five a leg reaches Australia at about session 25, about where studies measured gains.</p>
       <Toggle on={settings.setbacks} onChange={(setbacks) => saveSettings({ setbacks })}>Story setbacks (a storm, a blocked path, a broken part)</Toggle>
       <p className="tagline">Setbacks model coping with change: each one is explained, he hears a calm coping line, and he picks a plan. Nothing is lost. Turn them off for a smoother story.</p>
@@ -456,6 +574,9 @@ function SettingsTab({ settings, progress, onRescout }: { settings: Settings; pr
       <Seg label="Your-turn items per session" value={settings.yourTurn} onChange={(yourTurn) => saveSettings({ yourTurn })} options={[[3, '3'], [4, '4'], [5, '5']]} />
       <Seg label="Wait before a hint in “together”" value={settings.hintDelay} onChange={(hintDelay) => saveSettings({ hintDelay })} options={[[5, '5 s'], [8, '8 s'], [12, '12 s'], [20, '20 s']]} />
       <Toggle on={settings.clueFirst} onChange={(clueFirst) => saveSettings({ clueFirst })}>Show the clue at once on a new skill's first guided question</Toggle>
+      <Seg label="Who's who help" value={settings.whosWho ?? 'auto'} onChange={(whosWho) => saveSettings({ whosWho })} options={[['auto', 'Automatic'], ['help', 'On Help only'], ['off', 'Off']]} />
+      <Toggle on={!!settings.namesLevel1} onChange={(namesLevel1) => saveSettings({ namesLevel1 })}>Names instead of he and she in the easiest texts</Toggle>
+      <p className="tagline">Dotted pronouns: tapping "she" shows "she = Priya". Automatic shows them in guided practice on "he", "she" and "they", and in the easiest stories, and only on Help once he has mastered that step. Never in his own practice of that step or the Peak check. Cueing who a pronoun means helped autistic readers in studies. With names on, level 1 texts say "Maya took Maya's flute" in place of "She took her flute", and read it aloud that way; readers with weaker working memory understood more with names. Never in the step that teaches pronouns, and never inside what a character says.</p>
       <p className="tagline">In a 2025 review of reading apps, how long the app waited before a prompt was the one setting that made a measurable difference. So a skill he has never practised starts with its clue showing; after that, the usual wait. The Activity tab compares the two once there are 20 guided answers.</p>
       <div className="field"><span className="label">Guide</span><div className="row">{(Object.keys(GUIDES) as GuideId[]).map((g) => <Btn key={g} className={`small ${settings.guide === g ? 'on' : 'quiet'}`} onPress={() => saveSettings({ guide: g })}><Guide id={g} size={30} /> {GUIDES[g].name}</Btn>)}</div></div>
       <div className="field"><span className="label">Interests</span><div className="tiles">{TOPICS.map((t) => {
@@ -476,7 +597,8 @@ function SettingsTab({ settings, progress, onRescout }: { settings: Settings; pr
       <Seg label="Functional starting step" value={f} onChange={setF} options={[1, 2, 3, 4, 5, 6].map((x) => [x, String(x)] as [number, string])} />
       <Seg label="Narrative starting step" value={n} onChange={setN} options={[1, 2, 3, 4, 5, 6].map((x) => [x, String(x)] as [number, string])} />
       <div className="row"><Btn onPress={() => log({ type: 'placement', functional: f, narrative: n, word: settings.scout?.word ?? 1, reading: settings.scout?.reading ?? 1, listening: settings.scout?.listening ?? 1, manual: true })}>Apply starting steps</Btn>
-        <Btn className="quiet" onPress={onRescout}>Run scouting again</Btn></div>
+        <Btn className="quiet" onPress={onRescout}>Run scouting again</Btn>
+        <Btn className="quiet" onPress={onGrammar}>Run the "Who did it?" stop</Btn></div>
     </section>
   </div>;
 }

@@ -4,7 +4,7 @@ import { flushSync } from 'react-dom';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { SkillId, Strand } from '@wayfinder/schema';
 import { dayKey, flightPoints, focusSkill, gate, GEAR, gearState, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
-import { applyRetention, useEvents, useProgress, useSettings, type Settings } from './db';
+import { applyRetention, saveSettings, useEvents, useProgress, useSettings, type Settings } from './db';
 import { SKILL, STRAND } from './content';
 import { BrandMark, Guide, Island, pieceById } from './art';
 import { Session, litFrom, placedFrom } from './Session';
@@ -13,13 +13,13 @@ import { Onboarding, ComfortPanel } from './Onboarding';
 import { Adult } from './Adult';
 import { Btn, NewThing } from './ui';
 import { FEATURES, nextFeature, opinions } from './features';
-import { finishedCount, journeyNow, JourneyMap, LegDots } from './journey';
+import { finishedCount, forkMigration, journeyNow, JourneyMap, LegDots } from './journey';
 import { setSound, setVoice } from './media';
 import { autoSave, isFamily, useCloudSync } from './cloud';
 import { WhoIsLearning } from './CloudScreens';
 import { GearCelebration, KitPanel } from './gear';
 
-type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'map';
+type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'regrammar' | 'map';
 
 function useApplySettings(s: Settings | undefined) {
   useEffect(() => {
@@ -60,6 +60,12 @@ export function App() {
   const [asked, setAsked] = useState<string>(); // the one "What do you think?" card for this visit
   useApplySettings(settings);
   useEffect(() => { applyRetention(); }, []);
+  // LTF-20: once per fork, keep the old route for a learner who was already past it when the routes arrived.
+  useEffect(() => {
+    if (!settings?.onboarded || !events) return;
+    const fix = forkMigration(settings, finishedCount(progress));
+    if (fix) void saveSettings(fix);
+  }, [settings, events, progress]);
   useEffect(() => {
     if (isFamily(cloud.me) && cloud.link === null && settings?.onboarded && settings.name) void autoSave(settings.name);
   }, [cloud.me, cloud.link, settings?.onboarded, settings?.name]);
@@ -75,14 +81,14 @@ export function App() {
     window.scrollTo({ top: 0 });
   };
 
-  if (!settings.onboarded && screen !== 'rescout' && isFamily(cloud.me) && !cloud.link && !newHere)
+  if (!settings.onboarded && screen !== 'rescout' && screen !== 'regrammar' && isFamily(cloud.me) && !cloud.link && !newHere)
     return <div className="shell"><WhoIsLearning onNew={() => setNewHere(true)} /></div>;
-  if (!settings.onboarded || screen === 'rescout')
-    return <div className="shell"><Onboarding settings={settings} startAt={screen === 'rescout' ? 'scout' : 'hello'} onDone={() => go('home')} /></div>;
+  if (!settings.onboarded || screen === 'rescout' || screen === 'regrammar')
+    return <div className="shell"><Onboarding settings={settings} startAt={screen === 'rescout' ? 'scout' : screen === 'regrammar' ? 'grammar' : 'hello'} onDone={() => go('home')} /></div>;
   if (screen === 'session') return <div className="shell"><Session settings={settings} events={events} progress={progress} onExit={() => go('home')} /></div>;
-  if (screen === 'today') return <div className="shell"><Today settings={settings} progress={progress} recounts={events.filter((e) => e.type === 'recount').length} onExit={() => go('home')} /></div>;
+  if (screen === 'today') return <div className="shell"><Today settings={settings} progress={progress} events={events} onExit={() => go('home')} /></div>;
   if (screen === 'map') return <div className="shell"><JourneyMap settings={settings} progress={progress} onExit={() => go('home')} /></div>;
-  if (screen === 'adult') return <div className="shell"><Adult settings={settings} events={events} progress={progress} onExit={() => go('home')} onRescout={() => go('rescout')} /></div>;
+  if (screen === 'adult') return <div className="shell"><Adult settings={settings} events={events} progress={progress} onExit={() => go('home')} onRescout={() => go('rescout')} onGrammar={() => go('regrammar')} /></div>;
 
   const g = gate(progress, settings.gate);
   const placed = placedFrom(events);
@@ -99,8 +105,8 @@ export function App() {
   const hello = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
   const lastPiece = placed.at(-1);
   const jn = journeyNow(finishedCount(progress), settings);
-  const story = jn.beat
-    ? `${jn.beat.text}${jn.beat.cope ? ' ' + jn.beat.cope : ''}${jn.beat.choice && jn.beat.chosen === undefined ? ' Open My journey to choose a plan.' : ''}`
+  const story = jn.fork ? `Sea routes leave ${jn.here.name}. Open My journey to choose which island to sail to.`
+    : jn.beat ? `${jn.beat.text}${jn.beat.cope ? ' ' + jn.beat.cope : ''}${jn.beat.choice && jn.beat.chosen === undefined ? ' Open My journey to choose a plan.' : ''}`
     : 'You made it to Australia. The koalas are waiting for you.';
   const newThing = asked ? FEATURES.find((f) => f.id === asked) : nextFeature(events);
   const say = `${hello}, ${settings.name}. ${todayDone ? 'You already read today. ' : ''}${story}`;

@@ -1,8 +1,11 @@
 // A passage: prose with sentence and word highlighting, or a functional text drawn like the real thing.
+import { useState } from 'react';
 import type { Passage as P, Sign } from '@wayfinder/schema';
 import { useReading } from './media';
 import { passageText } from './content';
-import { SpeakBtn } from './ui';
+import { log } from './db';
+import { Btn, SpeakBtn } from './ui';
+import { withNames } from './whoswho';
 
 export type Mark = 'hl' | 'picked' | 'tried' | 'right' | 'hinted';
 export interface PassageProps {
@@ -18,33 +21,65 @@ export interface PassageProps {
   listenOnly?: boolean;
   credit?: boolean;
   speakKey?: string;
+  /** LTF-03: show who's who dots, except under `skip` (the pronoun the question asks about). */
+  refs?: { skip?: string };
+  /** LTF-03: show and read names in place of the pronouns the passage's refs know. */
+  names?: boolean;
 }
 
 export const norm = (w: string) => w.toLowerCase().replace(/[^a-z0-9'-]/g, '').replace(/'s$/, '');
 
-export function Passage({ passage: p, marks = {}, wordMarks = {}, tap, focus, pictures = true, listenOnly, credit = true, speakKey }: PassageProps) {
+export function Passage({ passage: p, marks = {}, wordMarks = {}, tap, focus, pictures = true, listenOnly, credit = true, speakKey, refs, names }: PassageProps) {
   const reading = useReading();
   const readingHere = reading.key === (speakKey ?? p.id);
+  // LTF-03: with names on, the passage is shown and read with names in place of pronouns, and has no dots to tap.
+  const sentences = names && p.refs?.length ? p.sentences.map((s, i) => withNames(s, i, p.refs!)) : p.sentences;
+  if (sentences !== p.sentences) refs = undefined;
+  // LTF-04: word help. Each glossed word is underlined where it first appears.
+  const glosses = !tap && !listenOnly ? p.words ?? [] : [];
+  const [open, setOpen] = useState<number | null>(null);
+  const [who, setWho] = useState<{ w: string; to: string } | null>(null);
+  // Never inside a tappable sentence or row, which would put a button inside a button.
+  const refOf = (s: number, w: string, n: number) => (refs && !listenOnly && (!tap || tap.unit === 'word') && w !== refs.skip?.toLowerCase()
+    ? p.refs?.find((r) => r.s === s && r.w.toLowerCase() === w && (r.n ?? 1) === n) : undefined);
+  const shownGloss = new Set<number>();
+  const openGloss = (g: number) => {
+    setOpen(g);
+    void log({ type: 'activity', session: 'reading', kind: 'word-help', word: glosses[g].word, item: p.id });
+  };
   const visual = !!p.visual;
   const cls = (m?: Mark) => (m === 'hinted' ? 'hl' : m ?? '');
   return <article className={`passage ${tap ? 'tappable' : ''} ${listenOnly ? 'listen-only' : ''}`} aria-label={p.title}>
     <div className="passage-head">
       {pictures && p.picture && <span className="picture" aria-hidden>{p.picture}</span>}
       <h3>{listenOnly ? 'Listen' : p.title}</h3>
-      <SpeakBtn lines={passageText(p)} k={speakKey ?? p.id} label={listenOnly ? 'Hear it again' : 'Read to me'} className="small" />
+      <SpeakBtn lines={passageText({ ...p, sentences })} k={speakKey ?? p.id} label={listenOnly ? 'Hear it again' : 'Read to me'} className="small" />
     </div>
     {p.sentences.length > 0 && <div aria-hidden={listenOnly || undefined}>{paragraphs(p).map(([from, to]) => <p key={from} className="prose">
-      {p.sentences.slice(from, to).map((s, k) => {
+      {sentences.slice(from, to).map((s, k) => {
         const i = from + k;
         const m = visual ? undefined : marks[i];
         const live = readingHere && reading.line === i;
         const words = tokens(s);
+        const seenWord = new Map<string, number>();
         const body = words.map((w, k) => {
           if (/^\s+$/.test(w.text)) return w.text;
           const n = norm(w.text);
           const wm = wordMarks[n];
           const reads = live && reading.char >= w.start && reading.char < w.start + Math.max(w.text.length, reading.len);
           const c = `word ${focus && n === norm(focus) ? 'cue' : ''} ${reads ? 'reading' : ''} ${cls(wm)}`;
+          const lw = w.text.toLowerCase().replace(/[^a-z'-]/g, '');
+          seenWord.set(lw, (seenWord.get(lw) ?? 0) + 1);
+          const ref = refOf(i, lw, seenWord.get(lw)!);
+          if (ref) return <span key={k} className={`${c} ref ${who?.to === ref.to && who.w === w.text ? 'on' : ''}`} {...pressable(() => {
+            setWho({ w: w.text, to: ref.to });
+            void log({ type: 'activity', session: 'reading', kind: 'who-help', word: w.text, item: p.id });
+          })}>{w.text}</span>;
+          const g = glosses.findIndex((x, gi) => !shownGloss.has(gi) && x.word.toLowerCase() === w.text.toLowerCase().replace(/[^a-z'-]/g, ''));
+          if (g >= 0) {
+            shownGloss.add(g);
+            return <span key={k} className={`${c} gloss ${open === g ? 'on' : ''}`} aria-expanded={open === g} {...pressable(() => openGloss(g))}>{w.text}</span>;
+          }
           return tap?.unit === 'word'
             ? <span key={k} className={c} {...pressable(() => tap.onTap(i, n))}>{w.text}</span>
             : <span key={k} className={c}>{w.text}</span>;
@@ -53,6 +88,18 @@ export function Passage({ passage: p, marks = {}, wordMarks = {}, tap, focus, pi
         return <span key={i}><span className={c} {...(tap?.unit === 'sentence' ? pressable(() => tap.onTap(i)) : {})}>{body}</span>{' '}</span>;
       })}
     </p>)}</div>}
+    {who && <div className="gloss-card appear" aria-live="polite">
+      <span className="gloss-pic" aria-hidden>👉</span>
+      <div style={{ flex: 1 }}><b>{who.w}</b> = <b>{who.to}</b></div>
+      <SpeakBtn lines={[`${who.w} means ${who.to}`]} k={`ref-${p.id}`} label="" className="small iconbtn" />
+      <Btn className="small quiet" onPress={() => setWho(null)}>Got it</Btn>
+    </div>}
+    {open !== null && glosses[open] && <div className="gloss-card appear" aria-live="polite">
+      <span className="gloss-pic" aria-hidden>{glosses[open].pic}</span>
+      <div style={{ flex: 1 }}><b>{glosses[open].word}</b>: {glosses[open].means}</div>
+      <SpeakBtn lines={[`${glosses[open].word}: ${glosses[open].means}`]} k={`gloss-${p.id}-${open}`} label="" className="small iconbtn" />
+      <Btn className="small quiet" onPress={() => setOpen(null)}>Got it</Btn>
+    </div>}
     {p.visual && <div style={{ marginTop: p.sentences.length ? '1rem' : 0 }}><Visual p={p} marks={marks} onRow={tap?.unit === 'row' ? (i) => tap.onTap(i) : undefined} /></div>}
     {credit && <div className="credit">{creditLine(p)}</div>}
   </article>;

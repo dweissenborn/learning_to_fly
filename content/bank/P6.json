@@ -17,6 +17,16 @@
         "Sam smiled. \"Pixel made a friend,\" he said."
       ],
       "picture": "🐕🐕",
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "the new dog" },
+        { "s": 2, "w": "His", "n": 1, "to": "the new dog" },
+        { "s": 3, "w": "him", "n": 1, "to": "the new dog" },
+        { "s": 4, "w": "his", "n": 1, "to": "Pixel" },
+        { "s": 5, "w": "He", "n": 1, "to": "Pixel" },
+        { "s": 5, "w": "it", "n": 1, "to": "the red ball" },
+        { "s": 6, "w": "his", "n": 1, "to": "the new dog" },
+        { "s": 8, "w": "he", "n": 1, "to": "Sam" }
+      ],
       "topics": ["animals", "friends"],
       "level": 1,
       "socialLoad": 1,
@@ -42,6 +52,13 @@
         "Then the two friends walked on together."
       ],
       "picture": "🐕🐓🦊",
+      "refs": [
+        { "s": 1, "w": "they", "n": 1, "to": "a dog and a rooster" },
+        { "s": 5, "w": "him", "n": 1, "to": "the rooster" },
+        { "s": 7, "w": "him", "n": 1, "to": "the rooster" },
+        { "s": 8, "w": "He", "n": 1, "to": "the dog" },
+        { "s": 11, "w": "he", "n": 1, "to": "the fox" }
+      ],
       "topics": ["animals", "friends"],
       "level": 2,
       "socialLoad": 1,
@@ -64,6 +81,13 @@
         "\"When you argue, you are weak, like one stick.\""
       ],
       "picture": "🪵",
+      "refs": [
+        { "s": 1, "w": "he", "n": 1, "to": "the farmer" },
+        { "s": 1, "w": "them", "n": 1, "to": "the three children" },
+        { "s": 2, "w": "he", "n": 1, "to": "the farmer" },
+        { "s": 5, "w": "He", "n": 1, "to": "the farmer" },
+        { "s": 6, "w": "he", "n": 1, "to": "the farmer" }
+      ],
       "topics": ["home", "friends"],
       "level": 2,
       "socialLoad": 1,
@@ -348,6 +372,13 @@
         "If one goat had gone back for a moment, both goats could have crossed safely."
       ],
       "picture": "🐐🪵🐐",
+      "refs": [
+        { "s": 3, "w": "They", "n": 1, "to": "both goats" },
+        { "s": 3, "w": "they", "n": 2, "to": "both goats" },
+        { "s": 7, "w": "They", "n": 1, "to": "both goats" },
+        { "s": 7, "w": "their", "n": 1, "to": "both goats" },
+        { "s": 9, "w": "They", "n": 1, "to": "both goats" }
+      ],
       "topics": [
         "animals",
         "nature"
@@ -382,6 +413,17 @@
         "So they walked down to the river, where no frogs lived, and skipped their stones there instead."
       ],
       "picture": "🐸🪨",
+      "refs": [
+        { "s": 1, "w": "They", "n": 1, "to": "the boys" },
+        { "s": 1, "w": "them", "n": 1, "to": "flat stones" },
+        { "s": 5, "w": "them", "n": 1, "to": "the frogs" },
+        { "s": 6, "w": "his", "n": 1, "to": "the old frog" },
+        { "s": 7, "w": "he", "n": 1, "to": "the old frog" },
+        { "s": 7, "w": "it", "n": 1, "to": "this game" },
+        { "s": 9, "w": "They", "n": 1, "to": "the boys" },
+        { "s": 10, "w": "they", "n": 1, "to": "the boys" },
+        { "s": 10, "w": "their", "n": 1, "to": "the boys" }
+      ],
       "topics": [
         "animals",
         "nature"

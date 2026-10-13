@@ -16,6 +16,12 @@
         "Everyone laughed.",
         "Then they started a new game."
       ],
+      "refs": [
+        { "s": 1, "w": "They", "n": 1, "to": "Sam, Ana and Ben" },
+        { "s": 3, "w": "his", "n": 1, "to": "Pixel" },
+        { "s": 4, "w": "His", "n": 1, "to": "Pixel" },
+        { "s": 7, "w": "they", "n": 1, "to": "Sam, Ana and Ben" }
+      ],
       "topics": ["games", "animals"],
       "level": 1,
       "socialLoad": 0,
@@ -34,6 +40,12 @@
         "The coach moved the match to next Saturday.",
         "Ana frowned and sat down.",
         "Then she played a soccer video game with Ben at home."
+      ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 1, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 1, "w": "her", "n": 2, "to": "Ana" },
+        { "s": 6, "w": "she", "n": 1, "to": "Ana" }
       ],
       "topics": ["sports", "weather"],
       "level": 1,
@@ -57,6 +69,15 @@
         "Each stone pushed the water higher.",
         "Finally, the water was near the top, and the crow drank it."
       ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "the crow" },
+        { "s": 3, "w": "Her", "n": 1, "to": "the crow" },
+        { "s": 3, "w": "it", "n": 1, "to": "the water" },
+        { "s": 5, "w": "She", "n": 1, "to": "the crow" },
+        { "s": 5, "w": "it", "n": 1, "to": "the stone" },
+        { "s": 7, "w": "She", "n": 1, "to": "the crow" },
+        { "s": 9, "w": "it", "n": 1, "to": "the water" }
+      ],
       "topics": ["animals", "nature"],
       "level": 2,
       "socialLoad": 1,
@@ -76,6 +97,15 @@
         "She had played with the rover all morning and forgot to charge it.",
         "Priya carried the rover home and plugged it in.",
         "After one hour, the light turned green, and the rover worked again."
+      ],
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 0, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 1, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 1, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 5, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 5, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 6, "w": "it", "n": 1, "to": "the rover" }
       ],
       "topics": ["robots"],
       "level": 2,
@@ -142,6 +172,12 @@
         "His socks were very wet.",
         "He put them by the heater to dry."
       ],
+      "refs": [
+        { "s": 3, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 4, "w": "His", "n": 1, "to": "Leo" },
+        { "s": 5, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 5, "w": "them", "n": 1, "to": "the socks" }
+      ],
       "topics": ["weather", "sports"],
       "level": 1,
       "socialLoad": 0,
@@ -162,6 +198,12 @@
         "Pixel was licking his nose and wagging his tail.",
         "Sam was still upstairs with his train track."
       ],
+      "refs": [
+        { "s": 1, "w": "she", "n": 1, "to": "Grandma Rose" },
+        { "s": 6, "w": "his", "n": 1, "to": "Pixel" },
+        { "s": 6, "w": "his", "n": 2, "to": "Pixel" },
+        { "s": 7, "w": "his", "n": 1, "to": "Sam" }
+      ],
       "topics": ["animals", "food", "home"],
       "level": 2,
       "socialLoad": 1,
@@ -180,6 +222,13 @@
         "The water was hard and cold, and it stayed in the bowl when he tipped it.",
         "A small bird landed on top of it and slid across.",
         "Ben smiled and went inside to get some warm water."
+      ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 1, "w": "it", "n": 1, "to": "the bowl" },
+        { "s": 4, "w": "it", "n": 1, "to": "the water" },
+        { "s": 4, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 4, "w": "it", "n": 2, "to": "the bowl" }
       ],
       "topics": ["weather", "animals"],
       "level": 2,
@@ -321,6 +370,14 @@
         "Then the boys walked back to the fork and turned right.",
         "Soon they saw the old mill in front of them."
       ],
+      "refs": [
+        { "s": 1, "w": "him", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 6, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 6, "w": "he", "n": 2, "to": "Sam" },
+        { "s": 9, "w": "they", "n": 1, "to": "Sam and Ben" },
+        { "s": 9, "w": "them", "n": 1, "to": "Sam and Ben" }
+      ],
       "topics": [
         "maps",
         "nature"
@@ -356,6 +413,11 @@
         "Inside, a guide showed them photos of meteors and said the shower would go on for three more nights.",
         "Sam checked the weather report, and it said the sky would be clear on Saturday.",
         "So on Saturday night, they drove back up and counted twenty-two meteors."
+      ],
+      "words": [
+        { "word": "observatory", "means": "a building with big tools for looking at stars", "pic": "🔭" },
+        { "word": "lookout", "means": "a high place where you can see far", "pic": "🏔️" },
+        { "word": "shower", "means": "a time when many bits of space rock fall and glow", "pic": "✨" }
       ],
       "topics": [
         "space",
@@ -606,6 +668,10 @@
         "Sam got a towel and wiped Pixel's paws.",
         "Then he mopped the floor."
       ],
+      "refs": [
+        { "s": 6, "w": "He", "n": 1, "to": "Pixel" },
+        { "s": 8, "w": "he", "n": 1, "to": "Sam" }
+      ],
       "topics": [
         "animals"
       ],
@@ -636,6 +702,16 @@
         "His dad fixed the hole with a ball repair kit.",
         "Then Ben pumped air into the ball.",
         "He kicked it again, and it bounced high."
+      ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 1, "w": "It", "n": 1, "to": "the ball" },
+        { "s": 2, "w": "It", "n": 1, "to": "the ball" },
+        { "s": 6, "w": "it", "n": 1, "to": "the ball" },
+        { "s": 7, "w": "His", "n": 1, "to": "Ben" },
+        { "s": 9, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 9, "w": "it", "n": 1, "to": "the ball" },
+        { "s": 9, "w": "it", "n": 2, "to": "the ball" }
       ],
       "topics": [
         "sports"
@@ -668,6 +744,9 @@
         "The driver gave each student a note for the office.",
         "The note said that a train had made the bus late."
       ],
+      "refs": [
+        { "s": 7, "w": "It", "n": 1, "to": "the bus" }
+      ],
       "topics": [
         "transport"
       ],
@@ -697,6 +776,13 @@
         "\"This can be your fourth piece,\" she said.",
         "They played the whole game with the button.",
         "Later, Ben opened the rule book and found the blue piece stuck between two pages."
+      ],
+      "refs": [
+        { "s": 2, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 4, "w": "they", "n": 1, "to": "Ana and Ben" },
+        { "s": 4, "w": "it", "n": 1, "to": "the blue piece" },
+        { "s": 6, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 7, "w": "They", "n": 1, "to": "Ana and Ben" }
       ],
       "topics": [
         "games"
@@ -729,6 +815,13 @@
         "Then the valve went up and down smoothly.",
         "Now Ana oils her valves every Friday."
       ],
+      "refs": [
+        { "s": 2, "w": "it", "n": 1, "to": "the first valve" },
+        { "s": 3, "w": "Her", "n": 1, "to": "Ana" },
+        { "s": 5, "w": "she", "n": 1, "to": "Ms. Gray" },
+        { "s": 6, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 9, "w": "her", "n": 1, "to": "Ana" }
+      ],
       "topics": [
         "music"
       ],
@@ -758,6 +851,20 @@
         "The hot sun had melted her ice cream.",
         "Maya laughed and licked the drips off the cone.",
         "Next time, she will eat her ice cream before she looks at rocks."
+      ],
+      "refs": [
+        { "s": 2, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "it", "n": 1, "to": "the sparkly rock" },
+        { "s": 3, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "it", "n": 1, "to": "the sparkly rock" },
+        { "s": 5, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 6, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "she", "n": 2, "to": "Maya" }
       ],
       "topics": [
         "food",
@@ -789,6 +896,13 @@
         "Human eyes need time to get used to darkness.",
         "Slowly, Sam could see more and more stars.",
         "Soon he counted more than one hundred."
+      ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 1, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 2, "w": "it", "n": 1, "to": "the porch light" },
+        { "s": 4, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 8, "w": "he", "n": 1, "to": "Sam" }
       ],
       "topics": [
         "space"
@@ -995,6 +1109,11 @@
         "They waited ten minutes for it to cool down.",
         "When they switched it back on, it worked, and it did not freeze again."
       ],
+      "words": [
+        { "word": "console", "means": "a game machine that plugs into a screen", "pic": "🎮" },
+        { "word": "vents", "means": "small holes or slots that let air out", "pic": "💨" },
+        { "word": "froze", "means": "stopped moving and stayed still", "pic": "⏸️" }
+      ],
       "topics": [
         "games"
       ],
@@ -1134,6 +1253,11 @@
       "breaks": [
         5,
         9
+      ],
+      "words": [
+        { "word": "weld", "means": "to join metal by melting the ends into one piece", "pic": "🔥" },
+        { "word": "clamp", "means": "to hold down tight", "pic": "🗜️" },
+        { "word": "kink", "means": "a sharp bend in something that should be straight", "pic": "〰️" }
       ],
       "topics": [
         "transport",
@@ -1291,6 +1415,11 @@
       "breaks": [
         3,
         9
+      ],
+      "words": [
+        { "word": "spoiled", "means": "went bad and was not safe to eat", "pic": "🥛" },
+        { "word": "sawdust", "means": "tiny bits of wood made when wood is cut", "pic": "🪵" },
+        { "word": "overflowed", "means": "spilled out past the top", "pic": "💧" }
       ],
       "topics": [
         "food"
@@ -1578,6 +1707,11 @@
         10,
         13
       ],
+      "words": [
+        { "word": "orbit", "means": "a path that goes around and around Earth", "pic": "🌍" },
+        { "word": "ground", "means": "shaped by rubbing it smooth", "pic": "🪞" },
+        { "word": "faulty", "means": "having a mistake in it", "pic": "⚠️" }
+      ],
       "topics": [
         "space"
       ],
@@ -1749,6 +1883,11 @@
         3,
         8,
         14
+      ],
+      "words": [
+        { "word": "banks", "means": "the land along the sides of a creek", "pic": "🏞️" },
+        { "word": "council", "means": "a group of people chosen to run the town", "pic": "🏛️" },
+        { "word": "downstream", "means": "farther along, the way the water flows", "pic": "🌊" }
       ],
       "topics": [
         "weather",
@@ -1938,6 +2077,360 @@
         "source": "Written for Learning to Fly",
         "licence": "original",
         "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p03",
+      "title": "The Sign That Turned",
+      "kind": "story",
+      "picture": "🪧🌲",
+      "sentences": [
+        "On Saturday morning, Sam and his dog Pixel set off on the trail to the old mill in Story Woods.",
+        "Sam had walked there twice before, but always with Grandma Rose, who remembered every turn.",
+        "This time, he planned to follow the wooden trail signs on his own.",
+        "At a fork in the path, a sign with the words OLD MILL pointed to the left.",
+        "Sam turned left, and Pixel trotted ahead with his nose close to the ground.",
+        "Twenty minutes later, the path ended at the creek, and Sam could not see the mill anywhere.",
+        "Sam stopped and took the paper map out of his backpack.",
+        "On the map, the trail to the mill went right at the fork, not left.",
+        "He also remembered that a powerful wind had swept through the forest the night before.",
+        "Sam and Pixel walked back to the fork to look at the sign more closely.",
+        "The sign hung on a single bolt, and the bolt was loose.",
+        "When Sam touched the sign, it swung around easily on its post.",
+        "The wind had spun it, so the arrow pointed the wrong way.",
+        "Sam took the trail to the right and reached the mill fifteen minutes later.",
+        "At the ranger hut, he told Ranger Cole about the loose sign.",
+        "The next day, Ranger Cole fixed the sign with two new bolts so it could not turn."
+      ],
+      "breaks": [5, 10],
+      "topics": ["maps", "nature"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Sign That Turned",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p03",
+      "title": "The Seals Slide Away",
+      "kind": "story",
+      "picture": "🦭📷",
+      "sentences": [
+        "Leo had saved his birthday money for a camera with a long zoom lens.",
+        "On Saturday, he took the 9:00 ferry to Gull Island to take photos of the seals.",
+        "His cousin Max, who is seven, came with Leo and his mom.",
+        "When they reached the seal beach, about twenty seals were lying on the flat rocks near the water.",
+        "Leo set up his camera at the top of the beach.",
+        "Before he could take a single photo, a family with a beach ball walked down toward the rocks to get a closer look.",
+        "One seal lifted its head and barked.",
+        "Then, one by one, all the seals slid off the rocks and into the sea.",
+        "A ranger walked over and explained that seals rest on land to warm up and save energy.",
+        "When people come close, the seals do not feel safe, so they escape into the water.",
+        "The ranger showed everyone a wooden platform on the hill above the beach.",
+        "From there, visitors could watch the seals without being seen.",
+        "Leo, Max and Leo's mom climbed up and waited quietly for half an hour.",
+        "Slowly, the seals came back and pulled themselves onto the rocks.",
+        "With his zoom lens, Leo took a clear photo of a young seal yawning."
+      ],
+      "breaks": [4, 10],
+      "topics": ["animals", "ocean"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Seals Slide Away",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p03",
+      "title": "The Kite That Spun",
+      "kind": "story",
+      "picture": "🪁🌬️",
+      "sentences": [
+        "Ben had built a new kite for Kite Day at Windy Cape, and he had tested it in the park in Harbor Town.",
+        "In the park, the wind was gentle, and the kite flew smoothly with its short tail.",
+        "On the cliff top at Windy Cape, the wind was much stronger.",
+        "As soon as Ben let go, the kite shot up, spun in a circle and dove into the grass.",
+        "He tried three more times, and each time it spun and fell.",
+        "Ben sat down on the grass, and Ana sat down next to him.",
+        "Captain Ada, a pilot who also flies kites, walked over to look.",
+        "She explained that a kite's tail pulls on the bottom of the kite and keeps its nose pointed into the wind.",
+        "In a gentle wind, a short tail is enough.",
+        "In a strong wind, the kite twists much harder, so it needs a longer tail to stay steady.",
+        "Ana had a roll of ribbon in her bag.",
+        "Ben tied on three more meters of ribbon, so the tail was much longer than before.",
+        "This time, the kite climbed high above the cliffs and stayed there, pointing straight into the wind.",
+        "Captain Ada said that pilots also change their plans when the wind changes."
+      ],
+      "breaks": [5, 10],
+      "topics": ["weather"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Kite That Spun",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p03",
+      "title": "The Flat Battery",
+      "kind": "story",
+      "picture": "🔋🛩️",
+      "sentences": [
+        "On Wednesday afternoon, Captain Ada climbed into the Kookaburra to start its engine for the first time in months.",
+        "She turned the key, but nothing happened.",
+        "The engine made no sound, and the lights on the panel stayed dark.",
+        "Mr. Lund came over from his workbench with a small meter in his hand.",
+        "He tested the plane's battery and shook his head.",
+        "\"The battery is flat,\" he said. \"There is no power left in it.\"",
+        "Captain Ada thought back to the afternoon before.",
+        "She had sat in the cockpit for an hour, testing the lights and the radio.",
+        "To make them work, she had turned on the master switch, which sends power from the battery to everything in the plane.",
+        "When she finished, she climbed out and closed the door.",
+        "She had forgotten to turn the master switch off, so power slowly drained out of the battery during the night.",
+        "Mr. Lund connected the battery to a charger, and they waited three hours while it filled with power again.",
+        "Then Captain Ada turned the key, and the engine started with a steady hum.",
+        "Afterward, she added a new line to the end of her checklist: \"Turn the master switch OFF before you leave the plane.\"",
+        "\"Now the list will remind me,\" she said."
+      ],
+      "breaks": [6, 11],
+      "topics": ["transport"],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Flat Battery",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p03",
+      "title": "Fog at Cloud Hill",
+      "kind": "story",
+      "picture": "🌫️🛩️",
+      "sentences": [
+        "Captain Ada had planned to take off from Cloud Hill at eight o'clock on Monday morning.",
+        "But when she opened the hangar doors at seven, she could not see the end of the runway.",
+        "Thick white fog covered the whole airfield.",
+        "A pilot in a small plane like the Kookaburra must be able to see where she is going.",
+        "So the Kookaburra could not leave in the fog.",
+        "Mr. Lund came into the hangar with two cups of tea and looked out at the fog.",
+        "\"Last night was clear, cold and very still,\" he said.",
+        "He explained that on a night like that, the ground loses its heat and becomes cold.",
+        "The air just above the ground cools down too.",
+        "Cold air cannot hold as much water as warm air, so some of the water turns into tiny drops.",
+        "Millions of those tiny drops floating near the ground are what we call fog.",
+        "Captain Ada did not like waiting, but she knew that morning fog often goes away when the sun warms the air.",
+        "She phoned the island where she planned to stop for fuel and said she would be two hours late.",
+        "Then she and Mr. Lund checked the map together while the sun climbed higher.",
+        "By ten o'clock, the fog was gone, and the runway was bright and clear."
+      ],
+      "breaks": [5, 11],
+      "topics": ["weather", "transport"],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Fog at Cloud Hill",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p03",
+      "title": "Why Kip Would Not Eat",
+      "kind": "story",
+      "picture": "🐨🍃",
+      "sentences": [
+        "One Tuesday morning, Ranger Tess noticed that Kip had not touched his breakfast.",
+        "The fresh branches in his yard were still covered with leaves.",
+        "Kip sat high in his tree, sniffing the air, and did not climb down to eat.",
+        "Ranger Tess checked him carefully, and he looked healthy and bright.",
+        "So she knew that something was wrong with the leaves, not with Kip.",
+        "Ranger Tess thought back to the day before.",
+        "That day, the road to the usual forest had been closed for repairs.",
+        "Because of that, Ranger Owen had cut leaves from a different group of trees beside the river.",
+        "Those trees were eucalyptus trees too, but they were a different kind.",
+        "There are hundreds of kinds of eucalyptus, and each koala eats only a few of them.",
+        "Kip had smelled the leaves and decided they were not his food.",
+        "Ranger Tess phoned Mr. Jamison, a farmer who has the right kind of eucalyptus trees along his fence.",
+        "He said she could cut as many branches as she needed.",
+        "By noon, fresh branches from the farm were in Kip's yard.",
+        "Kip climbed down right away and began to eat, one leaf at a time.",
+        "That afternoon, Ranger Tess wrote a list of the right trees for each koala, so this would not happen again."
+      ],
+      "breaks": [5, 11],
+      "topics": ["animals", "nature"],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Why Kip Would Not Eat",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p03",
+      "title": "The Moon Without Shadows",
+      "kind": "story",
+      "picture": "🌕📷",
+      "sentences": [
+        "Leo wanted a sharp photo of the Moon's craters for his science project.",
+        "On a Friday night, he went to the observatory at Star Point with his mom.",
+        "The Moon was full, round and very bright, and the sky had no clouds at all.",
+        "Dr. Amal pointed the big telescope at the Moon and checked that it was in focus.",
+        "Leo held his phone camera up to the eyepiece and took ten photos.",
+        "At home, Leo looked at the photos on his computer.",
+        "The edge of the Moon was sharp, but the middle looked flat and pale.",
+        "He could hardly see a single crater.",
+        "The next day, he sent the photos to Dr. Amal and asked what had gone wrong.",
+        "Dr. Amal wrote back that nothing was wrong with his phone or the telescope.",
+        "When the Moon is full, the Sun shines straight onto the side we see.",
+        "The craters have almost no shadows, so their shapes are hard to see.",
+        "When only half of the Moon is lit, the sunlight comes from the side.",
+        "Then each crater has a dark shadow, and it stands out clearly.",
+        "Leo checked a Moon calendar and came back three weeks later, on an evening with a half Moon.",
+        "This time, his photos showed hundreds of round craters along the line between light and dark."
+      ],
+      "breaks": [5, 9, 14],
+      "topics": ["space"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Moon Without Shadows",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p03",
+      "title": "The Train That Did Not Stop",
+      "kind": "story",
+      "picture": "🚂🪨",
+      "sentences": [
+        "Maya collects striped pebbles, and she had read that the beach at Shell Halt is full of them.",
+        "On Sunday, she bought a ticket from Pier Station to Shell Halt and took the 11:30 Coast Line train.",
+        "She sat by the window with an empty cloth bag on her lap.",
+        "After ten minutes, she saw the small Shell Halt sign beside the track.",
+        "Maya was surprised when the train did not slow down.",
+        "It rolled past the empty platform and kept going along the coast.",
+        "Maya walked to the conductor and asked why the train had not stopped.",
+        "The conductor explained that Shell Halt is a request stop.",
+        "At a request stop, the train only stops if a passenger tells the conductor before the stop.",
+        "If people are waiting on the platform, they raise a hand so the driver can see them.",
+        "Nobody had asked, and nobody was waiting, so the driver did not stop.",
+        "At Rail Coast, Maya looked at the timetable by the ticket window.",
+        "The next train back toward Pier Station left at 12:40.",
+        "As soon as she got on, she told the conductor that she wanted to get off at Shell Halt.",
+        "This time, the train slowed down and stopped at the little platform.",
+        "Maya filled half her bag with striped pebbles before the 2:15 train came by.",
+        "When she saw it coming, she raised her hand, and the driver stopped for her."
+      ],
+      "breaks": [6, 11],
+      "topics": ["transport", "nature"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Train That Did Not Stop",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p03",
+      "title": "Sam's Bag of Shells",
+      "kind": "story",
+      "picture": "🐚🌊",
+      "sentences": [
+        "Sam had read that Fossil Bay was one of the best places on the coast to find fossils.",
+        "On the boat from Gull Island, he told Dr. Bell that he hoped to find a dinosaur bone.",
+        "After three hours of searching the beach, his bag was heavy, but it held only shells.",
+        "There were coiled ammonites, tiny clams and small pointed fossils called belemnites, all made of gray stone.",
+        "Sam showed his bag to Dr. Bell and asked why he could not find any dinosaurs.",
+        "Dr. Bell pointed up at the gray cliff with its thin layers of rock.",
+        "She explained that millions of years ago, this whole place was under a warm, shallow sea.",
+        "Ammonites and other sea animals lived in that sea, and when they died, their shells sank to the sea floor.",
+        "Mud settled over the shells, layer after layer, and over a very long time the mud was pressed into rock.",
+        "Slowly, the shells inside the rock turned into fossils.",
+        "Dinosaurs lived on land, so only a few of their bones ever reached the sea floor.",
+        "Over millions of years, the land rose, and the old sea floor became the cliff.",
+        "Every winter, waves and rain wear away a little of the cliff, and new fossils fall onto the beach.",
+        "Sam looked at his heavy bag again.",
+        "He decided that a bag full of sea animals from the time of the dinosaurs was a very good find."
+      ],
+      "breaks": [4, 11],
+      "topics": ["dinosaurs", "ocean"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sam's Bag of Shells",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p03",
+      "title": "The Broken Coral",
+      "kind": "story",
+      "picture": "🪸⚓",
+      "sentences": [
+        "Mari has driven the reef boat at Reef Island for nine years.",
+        "When she started, every boat that stopped in the lagoon dropped an anchor.",
+        "An anchor is a heavy hook on a chain that holds a boat in one place.",
+        "On sand, an anchor does no harm.",
+        "But in the lagoon, many anchors landed on coral.",
+        "Over time, Mari noticed broken pieces of coral near the places where boats often stopped.",
+        "When a boat swung in the wind, its anchor chain dragged across the reef and snapped off more branches.",
+        "This was a big problem, because coral grows very slowly.",
+        "Some kinds grow only about one centimeter in a whole year, so a broken patch can take many years to grow back.",
+        "Mari met with the island helpers to find a way to protect the coral.",
+        "Together, they set six heavy blocks on the sandy floor of the lagoon, away from the coral.",
+        "A rope runs from each block up to a bright float on top of the water.",
+        "Now boats tie up to a float instead of dropping an anchor.",
+        "Last week, Priya helped Mari tie the boat to one of the floats.",
+        "Through the glass floor, she saw small new branches of coral growing near the old broken pieces."
+      ],
+      "breaks": [5, 9],
+      "topics": ["ocean", "nature"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Broken Coral",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
         "adapted": false
       }
     }
@@ -7163,6 +7656,216 @@
         "options",
         "plan-change"
       ]
+    },
+    {
+      "id": "cu-home-i03",
+      "skill": "N3",
+      "passage": "cu-home-p03",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did Sam and Pixel walk to the creek instead of the mill?",
+      "options": [
+        "Pixel ran ahead and led Sam down the wrong path.",
+        "The trail to the mill was closed after the storm.",
+        "The wind had turned a loose sign, so its arrow pointed the wrong way.",
+        "Sam forgot to bring his paper map."
+      ],
+      "answer": 2,
+      "evidence": [3, 10, 11, 12],
+      "hint": "Find what Sam used to choose his way at the fork. Then read the third paragraph to see what was wrong with it.",
+      "explain": "The wind had turned the loose sign, so its arrow pointed the wrong way, and Sam followed it to the left. The third paragraph explains the loose bolt.",
+      "inference": 1,
+      "checkup": "home",
+      "tags": ["cause-chain", "across-paragraphs"]
+    },
+    {
+      "id": "cu-gull-i03",
+      "skill": "N3",
+      "passage": "cu-gull-p03",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did all the seals slide into the water?",
+      "options": [
+        "People came close, so the seals did not feel safe.",
+        "The tide came in and covered the flat rocks.",
+        "Leo's camera made a loud clicking sound.",
+        "The seals were hungry and went to catch fish."
+      ],
+      "answer": 0,
+      "evidence": [5, 6, 7, 9],
+      "hint": "Read what happened just before the seals slid away. Then read what the ranger explained.",
+      "explain": "People walked close to the seals, so the seals did not feel safe and went into the water. The ranger explains this at the end of the second paragraph.",
+      "inference": 1,
+      "checkup": "gull",
+      "tags": ["cause-chain", "across-paragraphs"]
+    },
+    {
+      "id": "cu-cape-i03",
+      "skill": "N3",
+      "passage": "cu-cape-p03",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did Ben's kite keep spinning and falling at Windy Cape?",
+      "options": [
+        "The wind at Windy Cape was too gentle to lift it.",
+        "Its tail was too short for the strong wind.",
+        "Ana held the string too tightly.",
+        "The kite was too heavy to fly."
+      ],
+      "answer": 1,
+      "evidence": [1, 2, 9],
+      "hint": "Compare the wind in the park with the wind at Windy Cape. Then read what Captain Ada says about tails.",
+      "explain": "Its tail was too short for the strong wind. A short tail was enough in the gentle park wind, but Captain Ada explains that a strong wind needs a longer tail.",
+      "inference": 1,
+      "checkup": "cape",
+      "tags": ["cause-chain", "across-paragraphs"]
+    },
+    {
+      "id": "cu-airfield-i03",
+      "skill": "N3",
+      "passage": "cu-airfield-p03",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why was the Kookaburra's battery flat on Wednesday afternoon?",
+      "options": [
+        "The propeller was stuck, so the engine could not turn.",
+        "The battery was too old to hold any power.",
+        "Mr. Lund had taken the battery out to test it.",
+        "Captain Ada had left the master switch on all night."
+      ],
+      "answer": 3,
+      "evidence": [8, 10],
+      "hint": "The second paragraph goes back to the day before. Look for what Captain Ada turned on in the cockpit, and what she did when she left.",
+      "explain": "Captain Ada had left the master switch on all night. The second paragraph says she forgot to turn it off, so power drained out of the battery during the night.",
+      "inference": 1,
+      "checkup": "airfield",
+      "tags": ["cause-effect", "across-paragraphs"]
+    },
+    {
+      "id": "cu-takeoff-i03",
+      "skill": "N3",
+      "passage": "cu-takeoff-p03",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why was there fog at Cloud Hill on Monday morning?",
+      "options": [
+        "The air near the ground got cold in the clear, still night, and some of its water turned into tiny drops.",
+        "Rain fell all night and left water on the runway.",
+        "The sun warmed the air too quickly after it came up.",
+        "Strong wind blew clouds down from the hills onto the airfield."
+      ],
+      "answer": 0,
+      "evidence": [6, 7, 8, 9],
+      "hint": "Read what Mr. Lund says about last night. Then follow each step he explains: first the ground, then the air, then the water.",
+      "explain": "The night was clear, cold and still, so the ground and the air just above it cooled. Cold air cannot hold as much water, so some of it turned into the tiny drops we call fog. Mr. Lund explains this in the second paragraph.",
+      "inference": 1,
+      "checkup": "takeoff",
+      "tags": ["cause-effect", "science", "chain"]
+    },
+    {
+      "id": "cu-australia-i03",
+      "skill": "N3",
+      "passage": "cu-australia-p03",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did Kip refuse to eat his breakfast on Tuesday?",
+      "options": [
+        "The leaves came from a kind of eucalyptus that he does not eat.",
+        "He was sick and needed to see a vet.",
+        "Ranger Owen forgot to put branches in his yard.",
+        "He was asleep, because koalas sleep most of the day."
+      ],
+      "answer": 0,
+      "evidence": [6, 7, 8, 10],
+      "hint": "The second paragraph goes back to the day before. Follow what happened: the road, then where the leaves came from, then what kind of trees they were.",
+      "explain": "The leaves came from a kind of eucalyptus that Kip does not eat. The second paragraph says the usual road was closed, so the leaves were cut from a different kind of tree, and Kip smelled that they were not his food.",
+      "inference": 1,
+      "checkup": "australia",
+      "tags": ["cause-effect", "chain", "across-paragraphs"]
+    },
+    {
+      "id": "cu-star-i03",
+      "skill": "N3",
+      "passage": "cu-star-p03",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why could Leo hardly see the craters in his first photos?",
+      "options": [
+        "The Moon was full, so the craters had almost no shadows.",
+        "Thin clouds were in front of the Moon that night.",
+        "The telescope was not in focus.",
+        "His phone camera was not working well."
+      ],
+      "answer": 0,
+      "evidence": [2, 10, 11],
+      "hint": "Read what Dr. Amal wrote back. Then check what the Moon looked like on the first night.",
+      "explain": "The Moon was full, so the Sun shone straight onto it and the craters had almost no shadows. Dr. Amal explains this in the third paragraph. The sky was clear, and the telescope was in focus.",
+      "inference": 1,
+      "checkup": "star",
+      "tags": ["cause-chain", "across-paragraphs"]
+    },
+    {
+      "id": "cu-rail-i03",
+      "skill": "N3",
+      "passage": "cu-rail-p03",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Maya get to Shell Halt in the end?",
+      "options": [
+        "Mr. Haddad turned a signal red so the next train had to stop there.",
+        "She took the bus along the coast road to Shell Halt.",
+        "She took the next train back and told the conductor she wanted Shell Halt.",
+        "She raised her hand on the train so the driver could see her."
+      ],
+      "answer": 2,
+      "evidence": [12, 13, 14],
+      "hint": "Read the third paragraph. What did Maya do after she got on the next train?",
+      "explain": "She took the 12:40 train back and told the conductor she wanted to get off at Shell Halt, so the train stopped there. Raising a hand is for people who wait on the platform.",
+      "inference": 1,
+      "checkup": "rail",
+      "tags": ["problem-solving", "request-stop"]
+    },
+    {
+      "id": "cu-fossil-i03",
+      "skill": "N3",
+      "passage": "cu-fossil-p03",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why are most of the fossils at Fossil Bay from sea animals?",
+      "options": [
+        "The rock in the cliff formed from mud on the floor of a sea.",
+        "Waves wash new shells onto the beach every day.",
+        "Dinosaur bones turn into sand when they fall from the cliff.",
+        "Dr. Bell's team took all the dinosaur bones to the museum."
+      ],
+      "answer": 0,
+      "evidence": [6, 7, 8],
+      "hint": "Read what Dr. Bell explains about this place long ago. Follow each step, from the sea animals to the rock.",
+      "explain": "The rock in the cliff formed from mud on the floor of a sea, so it holds the shells of sea animals. Dr. Bell explains this in the second paragraph. Dinosaurs lived on land, so only a few of their bones reached the sea floor.",
+      "inference": 1,
+      "checkup": "fossil",
+      "tags": ["cause-chain", "science", "across-paragraphs"]
+    },
+    {
+      "id": "cu-reef-i03",
+      "skill": "N3",
+      "passage": "cu-reef-p03",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Mari and the island helpers solve the problem of the broken coral?",
+      "options": [
+        "They used longer chains so the anchors would hold better.",
+        "They stopped all boats from going into the lagoon.",
+        "They moved every boat stop to the open sea outside the reef.",
+        "They put heavy blocks and floats in the lagoon, so boats could tie up without anchors."
+      ],
+      "answer": 3,
+      "evidence": [10, 11, 12],
+      "hint": "First, find what was breaking the coral. Then read the last paragraph to see what the helpers built.",
+      "explain": "They set heavy blocks on the sand, with ropes up to floats. Boats tie up to a float, so no anchor lands on the coral. This is in the last paragraph.",
+      "inference": 1,
+      "checkup": "reef",
+      "tags": ["problem-solving", "cause-effect", "across-paragraphs"]
     }
   ],
   "model": {

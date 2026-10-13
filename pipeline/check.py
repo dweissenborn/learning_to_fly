@@ -7,6 +7,7 @@ Usage: pipeline/.venv/Scripts/python pipeline/check.py [SKILL ...]
 """
 import json
 import pathlib
+import re
 import sys
 
 import textstat
@@ -17,9 +18,18 @@ BANDS = {1: (25, 70, 10, 0.5, 2.5), 2: (50, 120, 13, 1.5, 3.5), 3: (80, 180, 16,
 MIN_WORDS = 25  # shorter passages are signs, labels and tables
 
 
+def gloss_problems(word, means):
+    """LTF-04: a word-help meaning reads easier than its word: none of its words has more syllables than the word, or than two."""
+    limit = max(2, textstat.syllable_count(word))
+    hard = [w for w in re.findall(r"[A-Za-z'-]+", means) if textstat.syllable_count(w) > limit]
+    return [f'meaning of "{word}" has harder words: {", ".join(hard)}'] if hard else []
+
+
 def check(path):
     problems, notes, rows = [], [], []
     for p in json.loads(path.read_text(encoding="utf-8"))["passages"]:
+        for g in p.get("words", []):
+            problems += [f'{p["id"]}: {m}' for m in gloss_problems(g["word"], g["means"])]
         text = " ".join(p["sentences"])
         n = textstat.lexicon_count(text)
         if n < MIN_WORDS:

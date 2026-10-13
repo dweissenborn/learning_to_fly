@@ -15,6 +15,12 @@
         "Then he ran in circles around Sam.",
         "Sam laughed and hugged his dog."
       ],
+      "refs": [
+        { "s": 4, "w": "He", "n": 1, "to": "Pixel" },
+        { "s": 4, "w": "his", "n": 1, "to": "Pixel" },
+        { "s": 5, "w": "he", "n": 1, "to": "Pixel" },
+        { "s": 6, "w": "his", "n": 1, "to": "Sam" }
+      ],
       "topics": ["animals", "home"],
       "level": 1,
       "socialLoad": 1,
@@ -34,6 +40,14 @@
         "The class smiled at the funny parts.",
         "Maya read the next page in a loud, clear voice.",
         "At the end, she smiled a big smile."
+      ],
+      "refs": [
+        { "s": 1, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 1, "w": "it", "n": 1, "to": "the comic" },
+        { "s": 3, "w": "Her", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "she", "n": 1, "to": "Maya" }
       ],
       "topics": ["school", "friends"],
       "level": 1,
@@ -58,6 +72,15 @@
         "\"We can practice kicks in the garage,\" she said.",
         "Ben looked up and nodded."
       ],
+      "refs": [
+        { "s": 2, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 3, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 7, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 7, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 8, "w": "him", "n": 1, "to": "Ben" },
+        { "s": 9, "w": "she", "n": 1, "to": "Ana" }
+      ],
       "topics": ["sports", "weather"],
       "level": 2,
       "socialLoad": 2,
@@ -79,6 +102,18 @@
         "The key was taped under the board, right where he had put it that morning.",
         "Leo let out a long breath and sat down on the step.",
         "He smiled and opened the door."
+      ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 1, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 1, "w": "his", "n": 2, "to": "Leo" },
+        { "s": 3, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 4, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 5, "w": "His", "n": 1, "to": "Leo" },
+        { "s": 6, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 7, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 7, "w": "it", "n": 1, "to": "the key" },
+        { "s": 9, "w": "He", "n": 1, "to": "Leo" }
       ],
       "topics": ["home", "sports"],
       "level": 2,
@@ -144,6 +179,12 @@
         "Ben shut his eyes and let out a loud groan.",
         "He pushed all the cards to the side of the table."
       ],
+      "refs": [
+        { "s": 1, "w": "him", "n": 1, "to": "Ben" },
+        { "s": 2, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "He", "n": 1, "to": "Ben" }
+      ],
       "topics": ["games", "home"],
       "level": 1,
       "socialLoad": 1,
@@ -163,6 +204,16 @@
         "Then she took her yellow umbrella from the hook by the door.",
         "She also put her soccer boots in a plastic bag.",
         "She waved goodbye to Ben and walked to the bus stop."
+      ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 4, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 4, "w": "it", "n": 1, "to": "the coat" },
+        { "s": 5, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 5, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 6, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 6, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 7, "w": "She", "n": 1, "to": "Ana" }
       ],
       "topics": ["weather", "school"],
       "level": 2,
@@ -267,6 +318,11 @@
         "He threw both fists in the air and grinned at Ana."
       ],
       "breaks": [3, 9, 13],
+      "words": [
+        { "word": "construction", "means": "the work of building something", "pic": "🏗️" },
+        { "word": "tail", "means": "the back end of the board", "pic": "🛹" },
+        { "word": "steeper", "means": "with a sharper drop, so harder to go down", "pic": "⛰️" }
+      ],
       "topics": ["sports", "friends"],
       "level": 4,
       "socialLoad": 2,
@@ -318,6 +374,16 @@
         "Her eyes opened wide.",
         "Then she ate the whole bowl and asked for more bread to dip in it.",
         "\"Can we come back next Sunday?\" she asked."
+      ],
+      "refs": [
+        { "s": 1, "w": "them", "n": 1, "to": "Ana and Grandma Rose" },
+        { "s": 3, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 3, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 4, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 5, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 6, "w": "Her", "n": 1, "to": "Ana" },
+        { "s": 7, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 8, "w": "she", "n": 1, "to": "Ana" }
       ],
       "topics": [
         "food"
@@ -626,6 +692,13 @@
         "\"Come and see!\" she shouted.",
         "Ben ran to the window and grinned."
       ],
+      "refs": [
+        { "s": 4, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 4, "w": "her", "n": 2, "to": "Ana" },
+        { "s": 5, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 5, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 6, "w": "she", "n": 1, "to": "Ana" }
+      ],
       "topics": [
         "weather"
       ],
@@ -655,6 +728,16 @@
         "Then he took a photo of his shoe and the footprint.",
         "He showed the photo to every kid on the bus home."
       ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 1, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 2, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 3, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 7, "w": "He", "n": 1, "to": "Ben" }
+      ],
       "topics": [
         "dinosaurs"
       ],
@@ -683,6 +766,14 @@
         "The sea lion looked at her.",
         "Then it slid into the water with a big splash.",
         "Priya laughed and waved goodbye."
+      ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 2, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 3, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 4, "w": "it", "n": 1, "to": "the sea lion" },
+        { "s": 5, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 6, "w": "it", "n": 1, "to": "the sea lion" }
       ],
       "topics": [
         "ocean",
@@ -719,6 +810,21 @@
         "At 4:30 PM, the blue express finally rolled in.",
         "Sam smiled and carefully drew it at the top of a new page."
       ],
+      "refs": [
+        { "s": 1, "w": "It", "n": 1, "to": "the blue express" },
+        { "s": 2, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 2, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 4, "w": "It", "n": 1, "to": "the board" },
+        { "s": 5, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 6, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 7, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 8, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 8, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 9, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 9, "w": "he", "n": 2, "to": "Sam" },
+        { "s": 10, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 12, "w": "it", "n": 1, "to": "the blue express" }
+      ],
       "topics": [
         "transport"
       ],
@@ -750,6 +856,16 @@
         "Ben looked up and grinned.",
         "His next pancake landed perfectly back in the pan."
       ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 2, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 4, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 4, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 6, "w": "she", "n": 2, "to": "Ana" },
+        { "s": 7, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 9, "w": "His", "n": 1, "to": "Ben" }
+      ],
       "topics": [
         "food"
       ],
@@ -779,6 +895,17 @@
         "Ms. Ortiz waved back, and the whole class laughed and clapped.",
         "Priya stood up tall and smiled a wide smile.",
         "\"Next, I will teach it to shake hands,\" she said."
+      ],
+      "refs": [
+        { "s": 1, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 1, "w": "it", "n": 1, "to": "the robot arm" },
+        { "s": 1, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 2, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 3, "w": "Her", "n": 1, "to": "Priya" },
+        { "s": 3, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 4, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 8, "w": "it", "n": 1, "to": "the robot arm" },
+        { "s": 8, "w": "she", "n": 1, "to": "Priya" }
       ],
       "topics": [
         "robots"
@@ -851,6 +978,22 @@
         "He took off his baseball cap and placed it over the sketchbook.",
         "Maya smiled at him, and then she looked at the hailstones too."
       ],
+      "refs": [
+        { "s": 3, "w": "they", "n": 1, "to": "the hailstones" },
+        { "s": 5, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "they", "n": 1, "to": "the hailstones" },
+        { "s": 6, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 8, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "her", "n": 2, "to": "Maya" },
+        { "s": 8, "w": "its", "n": 1, "to": "the sketchbook" },
+        { "s": 9, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 10, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 10, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 10, "w": "it", "n": 1, "to": "the baseball cap" },
+        { "s": 11, "w": "him", "n": 1, "to": "Ben" },
+        { "s": 11, "w": "she", "n": 1, "to": "Maya" }
+      ],
       "topics": [
         "weather"
       ],
@@ -886,6 +1029,11 @@
         "\"You're right,\" he said.",
         "Leo held the chair while Sam took down the extra star.",
         "Now there were exactly seven stars, and Sam turned off the light again with a grin."
+      ],
+      "words": [
+        { "word": "chart", "means": "a map of the stars", "pic": "🗺️" },
+        { "word": "handle", "means": "the long part of a pan that you hold", "pic": "🍳" },
+        { "word": "glow-in-the-dark", "means": "that shine softly after the lights go off", "pic": "✨" }
       ],
       "topics": [
         "space"
@@ -953,6 +1101,11 @@
         "Ana stood up straight, and her mouth opened wide.",
         "She walked along every shelf and asked Mr. Varga the name of each glowing mineral.",
         "On the way home, she asked Maya when the next club meeting was."
+      ],
+      "words": [
+        { "word": "minerals", "means": "natural solids found in rocks", "pic": "💎" },
+        { "word": "dull", "means": "not shiny or bright", "pic": "🪨" },
+        { "word": "glow", "means": "to give off light", "pic": "✨" }
       ],
       "topics": [
         "mining"
@@ -1442,6 +1595,11 @@
         4,
         9
       ],
+      "words": [
+        { "word": "fragile", "means": "easy to break", "pic": "🥚" },
+        { "word": "storage", "means": "a safe place where things are kept", "pic": "📦" },
+        { "word": "laboratory", "means": "a room where scientists do their work", "pic": "🔬" }
+      ],
       "topics": [
         "dinosaurs"
       ],
@@ -1700,6 +1858,11 @@
         9,
         15
       ],
+      "words": [
+        { "word": "remaining", "means": "still left to go", "pic": "⏳" },
+        { "word": "released", "means": "first made ready for people to buy", "pic": "📦" },
+        { "word": "route", "means": "a path from one place to the next", "pic": "🛤️" }
+      ],
       "topics": [
         "games"
       ],
@@ -1828,6 +1991,11 @@
         8,
         14
       ],
+      "words": [
+        { "word": "previous", "means": "the one just before this one", "pic": "⏮️" },
+        { "word": "totals", "means": "how many votes each name got", "pic": "🔢" },
+        { "word": "responsibility", "means": "a job a person is trusted to do", "pic": "📋" }
+      ],
       "topics": [
         "sports"
       ],
@@ -1929,6 +2097,817 @@
         "retrieved": "2026-10-12",
         "adapted": false
       }
+    },
+    {
+      "id": "n5-p57",
+      "title": "The Last Stamp",
+      "kind": "story",
+      "picture": "🚂📮",
+      "sentences": [
+        "Sam had a card for train stamps.",
+        "He needed one more stamp to fill it.",
+        "On Saturday, he rode the bus to the train museum.",
+        "The stamp desk had a sign on it.",
+        "The sign said, \"Closed today.\"",
+        "Sam looked at his card for a long time.",
+        "He put it back in his bag slowly.",
+        "He did not talk on the bus ride home."
+      ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 1, "w": "it", "n": 1, "to": "the card" },
+        { "s": 2, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 3, "w": "it", "n": 1, "to": "the stamp desk" },
+        { "s": 5, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 6, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 6, "w": "it", "n": 1, "to": "the card" },
+        { "s": 6, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 7, "w": "He", "n": 1, "to": "Sam" }
+      ],
+      "topics": ["transport", "maps"],
+      "level": 1,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Last Stamp",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p58",
+      "title": "Pixel Hides from the Bath",
+      "kind": "story",
+      "picture": "🐶🛁",
+      "sentences": [
+        "Sam filled the tub with warm water.",
+        "He called, \"Pixel, bath time!\"",
+        "Pixel ran under the bed.",
+        "His ears went flat.",
+        "He would not come out.",
+        "Sam held up a dog treat.",
+        "Pixel came out very slowly.",
+        "His tail stayed down low."
+      ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 3, "w": "His", "n": 1, "to": "Pixel" },
+        { "s": 4, "w": "He", "n": 1, "to": "Pixel" },
+        { "s": 7, "w": "His", "n": 1, "to": "Pixel" }
+      ],
+      "topics": ["animals", "home"],
+      "level": 1,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Pixel Hides from the Bath",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p59",
+      "title": "The Drum Solo",
+      "kind": "story",
+      "picture": "🥁👏",
+      "sentences": [
+        "Leo practiced his drum solo every night for two weeks.",
+        "On the day of the band show, he sat behind the drums.",
+        "Ms. Gray nodded at him to start.",
+        "Leo played the whole solo without one mistake.",
+        "When he finished, the crowd clapped and cheered.",
+        "Leo stood up and lifted his sticks high in the air.",
+        "After the show, he asked his dad to play the video three times."
+      ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 1, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 2, "w": "him", "n": 1, "to": "Leo" },
+        { "s": 4, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 5, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 6, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 6, "w": "his", "n": 1, "to": "Leo" }
+      ],
+      "topics": ["music", "school"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Drum Solo",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p60",
+      "title": "The Missing Sketchbook",
+      "kind": "story",
+      "picture": "📓🎨",
+      "sentences": [
+        "Maya always kept her sketchbook in the front pocket of her bag.",
+        "After art club, she reached into the pocket.",
+        "It was empty.",
+        "She checked the pocket again and then dumped out the whole bag.",
+        "Her face felt hot, and she kept saying, \"Where is it?\"",
+        "Then Priya ran over holding a blue book.",
+        "\"You left this on the art room table,\" Priya said.",
+        "Maya hugged the sketchbook and let out a long breath."
+      ],
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 0, "w": "her", "n": 2, "to": "Maya" },
+        { "s": 1, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "It", "n": 1, "to": "the pocket" },
+        { "s": 3, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "Her", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "it", "n": 1, "to": "the sketchbook" }
+      ],
+      "topics": ["school", "friends"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Missing Sketchbook",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p61",
+      "title": "The Trumpet Solo",
+      "kind": "story",
+      "picture": "🎺📄",
+      "sentences": [
+        "Ms. Gray handed out the parts for the spring concert.",
+        "Ana hoped to play the trumpet solo in the second song.",
+        "She had practiced it at home every day that week.",
+        "Ms. Gray read the names out loud.",
+        "The solo went to an eighth grader named Rosa.",
+        "Ana said, \"Okay,\" and looked down at her music.",
+        "For the rest of practice, she played her part, but she did not smile once.",
+        "On the walk home, Ben asked her about the solo.",
+        "Ana shrugged and kicked a small stone along the sidewalk.",
+        "\"Maybe next time,\" she said quietly."
+      ],
+      "topics": ["music", "school"],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Trumpet Solo",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p62",
+      "title": "The Trick Video",
+      "kind": "story",
+      "picture": "🛹📱",
+      "sentences": [
+        "Leo wanted to film his newest skateboard trick for the skate park's video contest.",
+        "Sam held the phone to film the trick and counted, \"Three, two, one!\"",
+        "Leo rolled toward the ramp, but his front wheel struck a small rock hidden in the dust.",
+        "He hopped off the board and nearly landed on the ground.",
+        "Two older kids sitting on the bench laughed.",
+        "Leo's cheeks turned red.",
+        "He pulled his cap down low over his eyes.",
+        "He picked up his board and walked to the far end of the park without a word.",
+        "Sam followed him and said, \"Everyone falls when they're learning a new trick.\"",
+        "Leo kicked the rock off the path.",
+        "Then he said, \"Let's try again, but this time I'll check the ground first.\""
+      ],
+      "topics": ["sports", "friends"],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Trick Video",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p63",
+      "title": "A Turn at the Telescope",
+      "kind": "story",
+      "picture": "🔭🪐",
+      "sentences": [
+        "The Lantern Peaks Observatory opens its big telescope to visitors one Friday night each month.",
+        "Priya had waited all summer for a turn, and she had written down three things she wanted to see: the rings of Saturn, the craters on the Moon, and a distant cluster of stars.",
+        "When she and her dad reached the top of the hill, a long line of people already stretched out the observatory door.",
+        "A volunteer walked down the line with a clipboard.",
+        "\"Clouds are moving in from the west,\" she explained.",
+        "\"We may have to close the dome in about twenty minutes.\"",
+        "Priya counted the people ahead of her.",
+        "There were twenty-six.",
+        "She checked the sky again and again, and she kept folding and unfolding her list.",
+        "When only four people stood in front of her, a gray cloud slid across Saturn.",
+        "The volunteer said the dome would stay open a little longer, just in case.",
+        "Then, slowly, the cloud drifted east.",
+        "Priya climbed the metal steps, pressed her eye to the telescope, and saw a tiny gold planet with a perfect ring around it.",
+        "She did not move until her dad gently tapped her shoulder."
+      ],
+      "breaks": [3, 9],
+      "topics": ["space", "weather"],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "A Turn at the Telescope",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p64",
+      "title": "Muffins for the Bake Sale",
+      "kind": "story",
+      "picture": "🧁📦",
+      "sentences": [
+        "Every Saturday, Sam helps Grandma Rose pack boxes at Rose's Bakery.",
+        "This Saturday, a big order came in for the Harbor Middle School bake sale: six boxes, each with twelve muffins.",
+        "Grandma Rose gave Sam the order slip and went to answer the phone.",
+        "Sam packed the first box with blueberry muffins.",
+        "Then he read the slip more carefully.",
+        "The school wanted three boxes of blueberry and three boxes of banana, and every muffin needed a paper liner.",
+        "Sam had packed his box without liners.",
+        "He groaned, pushed the box away, and dropped onto the stool by the window.",
+        "\"Now I have to do it all over,\" he muttered.",
+        "Grandma Rose came back and looked at the box.",
+        "\"Let's fix it together,\" she said, and she handed him a stack of liners.",
+        "Sam took a deep breath.",
+        "They moved each muffin into a liner, one at a time.",
+        "By the time the school van arrived, all six boxes were ready.",
+        "Sam was humming."
+      ],
+      "breaks": [3, 9],
+      "topics": ["food", "home"],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Muffins for the Bake Sale",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p65",
+      "title": "The Mineral Talk",
+      "kind": "story",
+      "picture": "🪨🎤",
+      "sentences": [
+        "Every summer, the Ridgeway Mine Museum invites one student to give a short talk to visitors about the minerals in its glass cases.",
+        "This year, Mr. Varga chose Maya, because she could tell quartz from calcite faster than anyone in rock club.",
+        "Maya spent three weeks writing note cards, and she practiced her talk in front of her bedroom mirror until she could say it without looking down.",
+        "On the morning of the talk, about twenty visitors gathered by the cases.",
+        "Maya held her note cards so tightly that the corners bent.",
+        "Her first sentence came out in a whisper, and a man in the back row cupped his hand behind his ear.",
+        "Maya swallowed, stepped closer to the crowd, and started again.",
+        "Halfway through, a girl of about seven asked whether the shiny gold rock was real gold.",
+        "Maya smiled for the first time that morning.",
+        "She explained that pyrite only looks like gold, and she showed how it leaves a greenish-black streak instead of a gold one.",
+        "The girl's eyes went wide, and several adults leaned in to look.",
+        "When the talk ended, the visitors clapped, and Mr. Varga gave Maya a thumbs-up from the doorway.",
+        "That evening, Maya taped one bent note card inside the front cover of her sketchbook.",
+        "Under it, she wrote the date in her neatest handwriting."
+      ],
+      "breaks": [3, 7, 11],
+      "topics": ["mining", "school"],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Mineral Talk",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p66",
+      "title": "A Change of Plan at the Harbor",
+      "kind": "story",
+      "picture": "⛴️🐦",
+      "sentences": [
+        "Ana and Ben had planned their Saturday for weeks: they would take the 11:30 ferry to Gull Island and count the seabirds that nest on its rocky cliffs.",
+        "Ben had packed his binoculars, a field guide to coastal birds, and a notebook with a carefully ruled table he had drawn for recording their counts.",
+        "When the twins reached the harbor, however, a notice taped to the ticket window explained that strong winds had canceled both the 9:00 and 11:30 ferries.",
+        "The next departure was scheduled for 2:00, but only if the wind dropped.",
+        "Ben read the notice twice.",
+        "Then he sat down hard on the bench, crossed his arms, and stared at the choppy gray water.",
+        "\"The whole plan is ruined,\" he said.",
+        "Ana sat beside him and opened the field guide to the section on harbor birds.",
+        "She pointed out that gulls, terns, and cormorants also feed along the harbor wall, right in front of them, especially when the wind stirs up small fish.",
+        "\"We could begin the count here and finish on the island if the 2:00 boat runs,\" she suggested.",
+        "Ben was quiet for a minute.",
+        "Then he uncrossed his arms, lifted the binoculars, and added a new row to his table.",
+        "He labeled the row \"Harbor.\"",
+        "By two o'clock, the twins had recorded forty-one birds along the wall, including three cormorants drying their wings on the posts.",
+        "The wind had calmed, and the ferry horn sounded across the water.",
+        "Ben tucked the notebook under his arm.",
+        "He jogged toward the dock.",
+        "He was already reading the next page of the guide."
+      ],
+      "breaks": [2, 7, 13],
+      "topics": ["animals", "transport"],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "A Change of Plan at the Harbor",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p67",
+      "title": "The Crash in the Garage",
+      "kind": "story",
+      "picture": "🔊🪜",
+      "sentences": [
+        "Sam heard a loud crash in the garage.",
+        "He did not go and look.",
+        "He thought Pixel had knocked over the paint cans again.",
+        "Then Pixel trotted in from the yard with a ball in his mouth.",
+        "Sam's dad called from the garage, \"I dropped the ladder!\"",
+        "Now Sam knew what the noise was."
+      ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 2, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 3, "w": "his", "n": 1, "to": "Pixel" }
+      ],
+      "topics": ["home", "animals"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Crash in the Garage",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p68",
+      "title": "Leo's Quiz Score",
+      "kind": "story",
+      "picture": "📝😄",
+      "sentences": [
+        "On Friday, Ms. Ortiz gave the class a science quiz about magnets.",
+        "On Monday, Priya saw Leo smiling at his desk.",
+        "\"I think Leo got a perfect score,\" she whispered to Maya.",
+        "Maya shook her head.",
+        "\"I sit next to him,\" Maya said.",
+        "\"I saw his paper, and he got eight out of ten.\"",
+        "\"He is smiling because his skateboard came back from the shop.\"",
+        "\"It was there all week.\"",
+        "Priya laughed.",
+        "\"I guess I should not decide things from a smile,\" she said."
+      ],
+      "topics": ["school", "friends"],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Leo's Quiz Score",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p69",
+      "title": "The Muffin Thief",
+      "kind": "story",
+      "picture": "🧁🐶",
+      "sentences": [
+        "Grandma Rose left one blueberry muffin on the bakery counter.",
+        "When she came back from the oven, the muffin was gone.",
+        "There were crumbs on the floor near the open back door.",
+        "\"A bird must have flown in and taken it,\" she said.",
+        "Sam looked under the counter.",
+        "Pixel was lying there, licking blueberry off his nose.",
+        "\"Grandma, I found the muffin thief,\" Sam said, laughing.",
+        "Grandma Rose bent down and saw Pixel's blue nose.",
+        "\"Now I know who it was,\" she said."
+      ],
+      "topics": ["food", "animals"],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Muffin Thief",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p70",
+      "title": "The Practice Track",
+      "kind": "story",
+      "picture": "🤖⏱️",
+      "sentences": [
+        "Before the robotics club race, each team tests its rover on the practice track.",
+        "Priya's rover finished the track in forty seconds, and she wrote the time on the board.",
+        "Ben's team tested their rover while Priya was getting a drink from the hallway fountain.",
+        "When she came back, she saw Ben's team packing up and laughing.",
+        "\"Their rover must have crashed,\" she told Leo.",
+        "\"That's why they're laughing.\"",
+        "Leo had watched the whole test.",
+        "He explained that Ben's rover had finished in thirty-five seconds, five seconds faster than hers.",
+        "The team was laughing because one of them had cheered so loudly that she knocked over a chair.",
+        "Priya looked at the board, where someone had written 35 under Ben's team name.",
+        "She took a deep breath and went to ask Ben how his team had made their rover so fast."
+      ],
+      "breaks": [3, 9],
+      "topics": ["robots", "school"],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Practice Track",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p71",
+      "title": "Reading the Weather Station",
+      "kind": "story",
+      "picture": "🌥️📈",
+      "sentences": [
+        "Every morning, two students in Ms. Ortiz's class read the school weather station and post a forecast by the front office.",
+        "This week, the job belonged to Sam and Maya.",
+        "On Tuesday, Sam arrived first, glanced out the window at a sky full of dark clouds, and wrote \"Rain by noon\" on the forecast card before Maya came in.",
+        "Maya hung up her jacket and went straight to the instruments: the rain gauge and the barometer.",
+        "The rain gauge from the night before was empty.",
+        "The barometer, which measures air pressure, showed the pressure rising steadily since dawn.",
+        "Ms. Ortiz had taught them that rising pressure usually means drier weather is on the way.",
+        "\"Those clouds look heavy, but the numbers say they're moving out,\" Maya said.",
+        "Sam frowned at the card.",
+        "He had been sure, because the clouds looked exactly like the ones before last week's storm.",
+        "Still, he admitted that he had only looked at the sky and had not checked a single instrument.",
+        "Together they crossed out his words and wrote \"Clouds clearing this afternoon,\" adding a small note that explained what the barometer showed.",
+        "By lunch, patches of blue sky had opened over Harbor Middle School.",
+        "Sam made a new rule for the rest of the week: read the instruments first, and look out the window second."
+      ],
+      "breaks": [3, 8, 12],
+      "topics": ["weather", "school"],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Reading the Weather Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p72",
+      "title": "The Rattling Present",
+      "kind": "story",
+      "picture": "🎁🎹",
+      "sentences": [
+        "Ana helped Mom wrap a present for Ben's birthday.",
+        "It was a new stand for his keyboard.",
+        "Ben found the box on the kitchen table that night.",
+        "He shook it and heard a rattle.",
+        "\"I bet it's a video game,\" he said.",
+        "Ana smiled and did not say a word.",
+        "She knew what was really inside."
+      ],
+      "refs": [
+        { "s": 1, "w": "It", "n": 1, "to": "the present" },
+        { "s": 1, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 3, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 3, "w": "it", "n": 1, "to": "the box" },
+        { "s": 4, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "She", "n": 1, "to": "Ana" }
+      ],
+      "topics": ["home", "music"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Rattling Present",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p04",
+      "title": "The Missing Library Card",
+      "kind": "story",
+      "picture": "📚🪪",
+      "sentences": [
+        "Ben wanted to borrow a book about soccer from the Harbor Town library.",
+        "At the front desk, he reached into his pocket for his library card.",
+        "It was not there.",
+        "He checked his backpack and his other pocket.",
+        "His face felt hot, and the line behind him was getting long.",
+        "Then Ana tapped his arm.",
+        "\"Your card is in your jacket,\" she said, and she pointed to the zip pocket.",
+        "Ben opened the zip and found the card.",
+        "He let out a long breath and smiled.",
+        "\"Thanks, Ana,\" he said."
+      ],
+      "topics": ["friends", "sports"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Missing Library Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p04",
+      "title": "Maya at the Seal Beach",
+      "kind": "story",
+      "picture": "✏️🦭",
+      "sentences": [
+        "Maya had a new sketchbook with a seal on the cover.",
+        "On the ferry to Gull Island, she held it on her lap the whole time.",
+        "She kept a sharp gray pencil in her pocket.",
+        "At the seal beach, she sat down on a rock far from the water.",
+        "She looked at the seals for a long time.",
+        "Then she opened the sketchbook to the first clean page.",
+        "Sam asked if she wanted to look at the tide pools.",
+        "\"Not yet,\" Maya said, without looking up.",
+        "Her pencil was already moving across the page."
+      ],
+      "topics": ["animals", "friends"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Maya at the Seal Beach",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p04",
+      "title": "Priya's First Kite",
+      "kind": "story",
+      "picture": "🪁",
+      "sentences": [
+        "Priya had never flown a kite before.",
+        "At Windy Cape, Leo gave her the string of his red kite.",
+        "Her hands shook a little as the kite pulled hard.",
+        "She held on and let the string out slowly, the way Leo showed her.",
+        "The kite rose higher and higher over the cliffs.",
+        "Soon it was the highest kite in the sky.",
+        "Priya grinned and called to Leo, \"Look how high it is!\"",
+        "She did not want to give the string back."
+      ],
+      "topics": ["weather", "friends"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Priya's First Kite",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p04",
+      "title": "Washing the Kookaburra",
+      "kind": "story",
+      "picture": "🧽🛩️",
+      "sentences": [
+        "Nell lives in a small house next to Cloud Hill Airfield.",
+        "Every Saturday, she sits on the fence and watches the planes land.",
+        "This Saturday, Captain Ada walked over to the fence.",
+        "\"Would you like to help me wash the Kookaburra?\" she asked.",
+        "Nell jumped down and ran home to get her boots.",
+        "She scrubbed the red wings with soap and water for an hour.",
+        "She even cleaned the bugs off the front window.",
+        "Captain Ada walked all the way around the plane and looked closely.",
+        "\"You did a careful job,\" she said.",
+        "Nell stood up tall and took a photo of the shiny plane to show her mom."
+      ],
+      "topics": ["transport", "friends"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Washing the Kookaburra",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p04",
+      "title": "The Night Before",
+      "kind": "story",
+      "picture": "🌅🛩️",
+      "sentences": [
+        "The Kookaburra would take off at eight o'clock the next morning.",
+        "That night, Nell lay in bed, but she could not fall asleep.",
+        "She kept thinking about the red plane flying over the sea.",
+        "At five o'clock, she was already up and dressed.",
+        "She packed her camera and ran to the airfield fence.",
+        "At the airfield, the sky was still pink, and the hangar doors were closed.",
+        "Nell bounced on her toes while she waited.",
+        "When the doors finally opened, she waved both arms at Captain Ada."
+      ],
+      "topics": ["transport", "friends"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Night Before",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p04",
+      "title": "A Loud Sound in the Trees",
+      "kind": "story",
+      "picture": "🐨🔊",
+      "sentences": [
+        "Leah and her dad walked along the boardwalk past the koala trees.",
+        "It was quiet, and most of the koalas were asleep.",
+        "Then a loud, deep sound came from a tree right next to them.",
+        "Leah jumped and grabbed her dad's arm.",
+        "Her eyes opened wide, and she looked up into the tree.",
+        "A koala named Sunny sat on a branch with his mouth open.",
+        "Ranger Tess saw them and walked over.",
+        "\"That sound is called a bellow,\" she said.",
+        "\"Sunny is telling other koalas where he is.\"",
+        "Leah laughed and listened for the next bellow."
+      ],
+      "topics": ["animals"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "A Loud Sound in the Trees",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p04",
+      "title": "Ana's Turn at the Telescope",
+      "kind": "story",
+      "picture": "🔭🌙",
+      "sentences": [
+        "The line for the big telescope at Star Point was long.",
+        "Ana stood at the very end of it.",
+        "When her turn came, she kept her hands behind her back.",
+        "\"What if I bump it?\" she asked Dr. Amal quietly.",
+        "Dr. Amal smiled and showed her a small black knob.",
+        "\"Turn this a little, and the Moon will get sharp,\" said Dr. Amal.",
+        "Ana turned the knob very slowly with one finger.",
+        "Slowly, the gray craters on the Moon came into focus.",
+        "She stepped back and grinned at her brother Ben."
+      ],
+      "topics": ["space"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Ana's Turn at the Telescope",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p04",
+      "title": "The Ticket in the Book",
+      "kind": "story",
+      "picture": "🎫📖",
+      "sentences": [
+        "Ana sat on the Coast Line train with her twin brother, Ben.",
+        "The conductor came down the coach to check tickets.",
+        "Ana put her hand in her coat pocket, but her ticket was not there.",
+        "She checked her other pocket and then her bag.",
+        "Her cheeks went red, and she bit her lip.",
+        "\"Look in your book,\" said Ben.",
+        "Ana opened her book, and the ticket was inside, between two pages.",
+        "She let out a long breath and smiled.",
+        "Then she held the ticket up for the conductor."
+      ],
+      "topics": ["transport"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Ticket in the Book",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p04",
+      "title": "The Bag on the Pier",
+      "kind": "story",
+      "picture": "🎒🐚",
+      "sentences": [
+        "Leo found a small ammonite at Fossil Bay on Saturday.",
+        "Dr. Bell wrapped it in soft paper, and Leo put it in his bag.",
+        "On the pier, Leo tripped over a rope.",
+        "His bag fell and hit the wooden boards with a loud thump.",
+        "Leo picked up the bag and sat down on a bench.",
+        "He opened it very slowly.",
+        "Then he unwrapped the paper, one fold at a time.",
+        "Inside the paper, the ammonite was still in one piece.",
+        "Leo let out a long breath, and his shoulders dropped.",
+        "He wrapped the ammonite up again and held the bag in both arms all the way home."
+      ],
+      "topics": ["dinosaurs"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Bag on the Pier",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p04",
+      "title": "Ben at the Ladder",
+      "kind": "story",
+      "picture": "🤿🪜",
+      "sentences": [
+        "Mari stopped the reef boat in the middle of the calm lagoon.",
+        "Everyone on the boat put on masks and fins to go snorkeling.",
+        "Ana jumped off the boat into the lagoon right away.",
+        "Ben sat on the edge of the boat and looked down at the water.",
+        "He checked the buckles on his life jacket three times.",
+        "He asked Mari twice how deep the water was.",
+        "His hands held on tight to the ladder.",
+        "Mari said the water was not deep, and she would swim right next to him.",
+        "Ben took a slow breath and climbed down one step at a time."
+      ],
+      "topics": ["ocean", "friends"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Ben at the Ladder",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -1946,7 +2925,8 @@
       "hint": "Find the part where Maya stands up. Look at what her hands and her voice did.",
       "explain": "Maya felt nervous. Her hands shook, and she read the first page very quietly.",
       "inference": 1,
-      "tags": ["shown-by-action"]
+      "tags": ["shown-by-action"],
+      "reason": { "clue": "Her hands shook as she held the paper.", "know": "Shaking hands and a quiet voice can mean someone is nervous.", "so": "So Maya felt nervous." }
     },
     {
       "id": "n5-i01",
@@ -2124,7 +3104,7 @@
       "hint": "Priya was at lunch when the rover was moved. Think only about what Priya saw.",
       "explain": "Priya thinks her rover is in the box. She put it there before lunch, and she was away when Ms. Ortiz took it out.",
       "inference": 2,
-      "tags": ["false-belief"]
+      "tags": ["false-belief", "know-think"]
     },
     {
       "id": "n5-i12",
@@ -2156,7 +3136,7 @@
       "hint": "Think about what Priya expects to see. Then think about what is really in the box.",
       "explain": "Priya will feel surprised. She expects her rover, but Ms. Ortiz left the box empty.",
       "inference": 2,
-      "tags": ["false-belief", "hidden-feeling"]
+      "tags": ["false-belief", "hidden-feeling", "know-think"]
     },
     {
       "id": "n5-i14",
@@ -2404,7 +3384,7 @@
       "hint": "Think only about what Maya knew. She was not there early in the morning. Read what she remembered, and what she told Ms. Ortiz later.",
       "explain": "Maya believed her comic was taken down because it was not good enough. She remembered that the board was only for the best work, and later she told Ms. Ortiz she spent all morning thinking that. This is in the second and last paragraphs.",
       "inference": 1,
-      "tags": ["false-belief"]
+      "tags": ["false-belief", "know-think"]
     },
     {
       "id": "n5-i29",
@@ -2420,7 +3400,7 @@
       "explain": "Ms. Ortiz took the comic down to send it to the science fair, because she thought it explained crystals better than any poster. This is in the first paragraph, and again in the third.",
       "inference": 1,
       "transfer": true,
-      "tags": ["false-belief"]
+      "tags": ["false-belief", "know-think"]
     },
     {
       "id": "n5-i30",
@@ -2965,7 +3945,8 @@
       "explain": "Ana believed the clean-up had been canceled and nobody had told her. She thought this at the end of the second paragraph. The volunteers really had moved to the south end, but Ana did not know that.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -2988,7 +3969,8 @@
       "explain": "A storm washed seaweed and trash onto the south end of the beach, so the volunteers met there instead, and the group chat had a message about it. This is in the third paragraph.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -3802,7 +4784,8 @@
       "explain": "Sam believed the handle had four stars. He said, \"No, it has four.\" The chart showed it really has three.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -3910,7 +4893,8 @@
       "explain": "Ana believed rocks are only gray and brown. She told Ben, \"Rocks are just gray and brown.\" Then she saw rocks glow green, red and blue.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -4212,7 +5196,8 @@
       "explain": "Priya believed her seeds were bad. She told Ms. Ortiz, \"I think my seeds are bad.\" Really, cold nights had made them grow more slowly.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -4447,7 +5432,8 @@
       "explain": "Sam thought the pie was cherry. He saw red juice, cherry was his favorite, and he asked, \"Is that a cherry pie?\" Grandma Rose only waved, so nobody told him it was not.",
       "inference": 2,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -5035,7 +6021,8 @@
       "explain": "Ana believed Priya was angry with her about the dropped baton. She saw Priya talking seriously and not smiling, and she was certain Priya was angry. It is at the end of the second paragraph.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -5084,7 +6071,8 @@
       "explain": "Priya was asking Ms. Ortiz about their handoff, because she thought she reached back too early. It is in the third paragraph.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -5269,7 +6257,8 @@
       "explain": "Leo believed the bones were the real fossil bones. He whispered, \"I can't believe these are the actual bones.\" Dr. Bell then explained that it was a cast. It is at the end of the first paragraph.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -5477,7 +6466,8 @@
       "explain": "Ben thought it would be slimy. He said, \"I thought it would be slimy.\" Really it felt rough. It is in the third paragraph.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -5502,7 +6492,8 @@
       "explain": "Leo believed Priya was only guessing. He said, \"You're just guessing, right?\" and at 7:41 he said, \"See? Nothing.\" This is in the second paragraph.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -5868,7 +6859,8 @@
       "explain": "Sam believed the song was going perfectly. He said \"That was our best one yet!\" because Priya never said that anything was wrong. This is in the second and third paragraphs.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -6152,7 +7144,8 @@
       "explain": "Priya believed he thought robots were boring. She decided this after he shook his head and looked out the window. She learned the truth only later, from Mrs. Hall. It is at the end of the second paragraph.",
       "inference": 1,
       "tags": [
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -6184,7 +7177,8 @@
       "inference": 2,
       "tags": [
         "hidden-feeling",
-        "false-belief"
+        "false-belief",
+        "know-think"
       ]
     },
     {
@@ -6737,16 +7731,1005 @@
         "problem-solving",
         "feeling-change"
       ]
+    },
+    {
+      "id": "n5-i174",
+      "skill": "N5",
+      "passage": "n5-p57",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How did Sam feel when he read the sign?",
+      "options": ["disappointed", "proud", "excited"],
+      "pictures": ["😞", "😊", "🤩"],
+      "answer": 0,
+      "evidence": [5, 6, 7],
+      "hint": "Read what Sam did after he read the sign. Think about why a person would act that way.",
+      "explain": "Sam felt disappointed. The stamp desk was closed, so he put his card away slowly and did not talk.",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "He put it back in his bag slowly.",
+        "know": "People move slowly and go quiet when a hope does not happen.",
+        "so": "So Sam felt disappointed."
+      }
+    },
+    {
+      "id": "n5-i175",
+      "skill": "N5",
+      "passage": "n5-p57",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What did Sam want to do at the museum?",
+      "options": ["get his last stamp", "ride a train", "buy a new card"],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Read what Sam needed. Then read where he went.",
+      "explain": "Sam wanted to get his last stamp. He needed one more stamp, so he went to the museum.",
+      "inference": 1,
+      "tags": ["want"]
+    },
+    {
+      "id": "n5-i176",
+      "skill": "N5",
+      "passage": "n5-p58",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How did Pixel feel about his bath?",
+      "options": ["worried", "happy", "proud"],
+      "pictures": ["😟", "😀", "😊"],
+      "answer": 0,
+      "evidence": [2, 3, 4, 7],
+      "hint": "Look at what Pixel did when he heard \"bath time.\" Look at his ears and his tail.",
+      "explain": "Pixel felt worried about the bath. He hid under the bed, his ears went flat, and his tail stayed low.",
+      "inference": 2,
+      "tags": ["hidden-feeling", "animal-feeling"],
+      "reason": {
+        "clue": "His ears went flat.",
+        "know": "Dogs hide and flatten their ears when they do not feel safe.",
+        "so": "So Pixel felt worried about the bath."
+      }
+    },
+    {
+      "id": "n5-i177",
+      "skill": "N5",
+      "passage": "n5-p58",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Why did Pixel come out from under the bed?",
+      "options": ["He wanted the treat.", "He wanted a bath.", "He heard a noise."],
+      "answer": 0,
+      "evidence": [5, 6],
+      "hint": "Read what Sam held up just before Pixel came out.",
+      "explain": "Pixel came out because he wanted the treat. Sam held up a dog treat, and then Pixel came out.",
+      "inference": 1,
+      "tags": ["want"]
+    },
+    {
+      "id": "n5-i178",
+      "skill": "N5",
+      "passage": "n5-p59",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Leo feel after he played his solo?",
+      "options": ["proud", "embarrassed", "lonely"],
+      "pictures": ["😊", "😳", "😔"],
+      "answer": 0,
+      "evidence": [3, 5, 6],
+      "hint": "Read what Leo did when the crowd clapped. Then read what he asked his dad.",
+      "explain": "Leo felt proud. He played without a mistake, lifted his sticks high, and wanted to watch the video again and again.",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "Leo stood up and lifted his sticks high in the air.",
+        "know": "People hold things up high when they did something hard well.",
+        "so": "So Leo felt proud of his solo."
+      }
+    },
+    {
+      "id": "n5-i179",
+      "skill": "N5",
+      "passage": "n5-p59",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did Leo ask to see the video three times?",
+      "options": [
+        "He liked seeing himself do well.",
+        "He wanted to find his mistakes.",
+        "His dad asked him to."
+      ],
+      "answer": 0,
+      "evidence": [3, 5, 6],
+      "hint": "Read how the solo went. Think about why someone would watch a video of it again.",
+      "explain": "Leo liked seeing himself do well. He played the whole solo without a mistake, so he wanted to watch it again.",
+      "inference": 2,
+      "tags": ["want"],
+      "reason": {
+        "clue": "Leo played the whole solo without one mistake.",
+        "know": "People like to watch again a moment they are proud of.",
+        "so": "So Leo wanted to enjoy his good solo again."
+      }
+    },
+    {
+      "id": "n5-i180",
+      "skill": "N5",
+      "passage": "n5-p60",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Maya feel when she found the pocket empty?",
+      "options": ["worried", "bored", "proud"],
+      "pictures": ["😟", "🥱", "😊"],
+      "answer": 0,
+      "evidence": [2, 3, 4],
+      "hint": "Read what Maya did after she found the pocket empty. Look at what she kept saying.",
+      "explain": "Maya felt worried. She checked again, dumped out her bag, and kept asking where her sketchbook was.",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "She checked the pocket again and then dumped out the whole bag.",
+        "know": "People search again and again when something important might be lost.",
+        "so": "So Maya felt worried about her sketchbook."
+      }
+    },
+    {
+      "id": "n5-i181",
+      "skill": "N5",
+      "passage": "n5-p60",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Maya feel when Priya gave her the book?",
+      "options": ["relieved", "frustrated", "lonely"],
+      "pictures": ["😌", "😤", "😔"],
+      "answer": 0,
+      "evidence": [7],
+      "hint": "Read what Maya did when she got the book back.",
+      "explain": "Maya felt relieved. Her lost sketchbook was found, so she hugged it and let out a long breath.",
+      "inference": 2,
+      "tags": ["hidden-feeling", "feeling-change"],
+      "reason": {
+        "clue": "Maya hugged the sketchbook and let out a long breath.",
+        "know": "A long breath out can mean a worry is over.",
+        "so": "So Maya felt relieved."
+      }
+    },
+    {
+      "id": "n5-i182",
+      "skill": "N5",
+      "passage": "n5-p61",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Ana feel when the solo went to Rosa?",
+      "options": ["disappointed", "relieved", "curious"],
+      "answer": 0,
+      "evidence": [1, 5, 6],
+      "hint": "Read what Ana hoped for. Then read what she did after the names were read.",
+      "explain": "Ana felt disappointed. She hoped to play the solo, so when it went to Rosa, she looked down and did not smile.",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "Ana said, \"Okay,\" and looked down at her music.",
+        "know": "People look down and stop smiling when they miss something they wanted.",
+        "so": "So Ana felt disappointed about the solo."
+      }
+    },
+    {
+      "id": "n5-i183",
+      "skill": "N5",
+      "passage": "n5-p61",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What does Ana mean when she says \"Maybe next time\"?",
+      "options": [
+        "She hopes to get a solo at a later concert.",
+        "She wants Ben to walk faster next time.",
+        "She thinks Rosa will give her the solo."
+      ],
+      "answer": 0,
+      "evidence": [1, 9],
+      "hint": "Think about what Ana wanted this time. What could happen at the next concert?",
+      "explain": "Ana hopes she can play a solo at a later concert. She did not get the solo this time, but she still hopes for one.",
+      "inference": 2,
+      "tags": ["belief", "hope"],
+      "reason": {
+        "clue": "\"Maybe next time,\" she said quietly.",
+        "know": "People say \"maybe next time\" to keep hoping after a letdown.",
+        "so": "So Ana still hopes to play a solo later."
+      }
+    },
+    {
+      "id": "n5-i184",
+      "skill": "N5",
+      "passage": "n5-p62",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Leo feel when the older kids laughed?",
+      "options": ["embarrassed", "excited", "calm", "curious"],
+      "answer": 0,
+      "evidence": [4, 5, 6, 7],
+      "hint": "Read what happened to Leo's face. Then read what he did with his cap.",
+      "explain": "Leo felt embarrassed. His cheeks turned red, he hid his eyes under his cap, and he walked away.",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "Leo's cheeks turned red.",
+        "know": "Red cheeks and hiding your face can mean you feel silly.",
+        "so": "So Leo felt embarrassed when they laughed."
+      }
+    },
+    {
+      "id": "n5-i185",
+      "skill": "N5",
+      "passage": "n5-p62",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What does Leo think made him fall?",
+      "options": ["the small rock", "Sam's counting", "the older kids", "his new cap"],
+      "answer": 0,
+      "evidence": [2, 9, 10],
+      "hint": "Read what Leo did with the rock. Then read what he says he will check.",
+      "explain": "Leo thinks the small rock made him fall. He kicked it off the path and said he will check the ground first.",
+      "inference": 1,
+      "tags": ["belief"],
+      "reason": {
+        "clue": "Leo kicked the rock off the path.",
+        "know": "People clear away what tripped them so it does not happen again.",
+        "so": "So Leo thinks the rock made him fall."
+      }
+    },
+    {
+      "id": "n5-i186",
+      "skill": "N5",
+      "passage": "n5-p62",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Leo want to do at the end?",
+      "options": ["try the trick again", "go home", "film Sam's trick"],
+      "answer": 0,
+      "evidence": [10],
+      "hint": "Read the last thing Leo said.",
+      "explain": "Leo wanted to try the trick again. He said, \"Let's try again.\"",
+      "inference": 0,
+      "tags": ["want"]
+    },
+    {
+      "id": "n5-i187",
+      "skill": "N5",
+      "passage": "n5-p63",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Priya feel while she waited in line?",
+      "options": ["worried", "bored", "proud", "lonely"],
+      "answer": 0,
+      "evidence": [5, 6, 8],
+      "hint": "Read what the volunteer said about the dome. Then read what Priya kept doing.",
+      "explain": "Priya felt worried. The dome might close soon, so she counted the people ahead of her and kept checking the sky.",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "Priya counted the people ahead of her.",
+        "know": "People count and check when they fear time will run out.",
+        "so": "So Priya felt worried she would miss her turn."
+      }
+    },
+    {
+      "id": "n5-i188",
+      "skill": "N5",
+      "passage": "n5-p63",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Priya feel when she finally saw Saturn?",
+      "options": ["amazed", "frustrated", "nervous", "bored"],
+      "answer": 0,
+      "evidence": [12, 13],
+      "hint": "Read what Priya saw. Then read how long she stayed at the telescope.",
+      "explain": "Priya felt amazed. She saw a tiny gold planet with a perfect ring, and she did not move until her dad tapped her.",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "She did not move until her dad gently tapped her shoulder.",
+        "know": "People forget to move when they see something wonderful.",
+        "so": "So Priya felt amazed by Saturn."
+      }
+    },
+    {
+      "id": "n5-i189",
+      "skill": "N5",
+      "passage": "n5-p64",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Sam feel when he saw that he had packed the box wrong?",
+      "options": ["frustrated", "proud", "curious", "relieved"],
+      "answer": 0,
+      "evidence": [6, 7, 8],
+      "hint": "Read what Sam did right after he found the mistake, and what he said.",
+      "explain": "Sam felt frustrated. He groaned, pushed the box away, and said he had to do it all over.",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "\"Now I have to do it all over,\" he muttered.",
+        "know": "People groan and mutter when they must redo their work.",
+        "so": "So Sam felt frustrated about the mistake."
+      }
+    },
+    {
+      "id": "n5-i190",
+      "skill": "N5",
+      "passage": "n5-p64",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Sam feel at the end, when the boxes were ready?",
+      "options": ["happy", "embarrassed", "worried", "lonely"],
+      "answer": 0,
+      "evidence": [13, 14],
+      "hint": "Read the last sentence. Think about what humming can show.",
+      "explain": "Sam felt happy at the end. All six boxes were ready, and he was humming.",
+      "inference": 2,
+      "tags": ["hidden-feeling", "feeling-change"],
+      "reason": {
+        "clue": "Sam was humming.",
+        "know": "People often hum to themselves when they feel good.",
+        "so": "So Sam felt happy at the end."
+      }
+    },
+    {
+      "id": "n5-i191",
+      "skill": "N5",
+      "passage": "n5-p65",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did Maya feel at the start of her talk?",
+      "options": ["nervous", "bored", "proud", "relieved"],
+      "answer": 0,
+      "evidence": [4, 5, 6],
+      "hint": "Read what Maya's hands did with the note cards, and how her first sentence came out.",
+      "explain": "Maya felt nervous at the start. She held her cards so tightly that they bent, and her first sentence came out in a whisper.",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "Maya held her note cards so tightly that the corners bent.",
+        "know": "Gripping things hard and whispering can mean a person feels tense.",
+        "so": "So Maya felt nervous at the start."
+      }
+    },
+    {
+      "id": "n5-i192",
+      "skill": "N5",
+      "passage": "n5-p65",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did Maya's feelings change when the girl asked about the gold rock?",
+      "options": [
+        "She began to feel more relaxed.",
+        "She began to feel more nervous.",
+        "She began to feel bored.",
+        "She began to feel angry at the girl."
+      ],
+      "answer": 0,
+      "evidence": [7, 8, 9],
+      "hint": "Find the girl's question. Read what Maya did right after it.",
+      "explain": "Maya began to feel more relaxed. She smiled for the first time that morning and explained how pyrite works.",
+      "inference": 2,
+      "tags": ["hidden-feeling", "feeling-change"],
+      "reason": {
+        "clue": "Maya smiled for the first time that morning.",
+        "know": "A first smile can show that the hardest part is over.",
+        "so": "So Maya began to feel more relaxed."
+      }
+    },
+    {
+      "id": "n5-i193",
+      "skill": "N5",
+      "passage": "n5-p65",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did Maya tape one bent note card inside her sketchbook?",
+      "options": [
+        "She wanted to remember a day she was proud of.",
+        "She needed the card for her next talk.",
+        "Mr. Varga asked her to keep it.",
+        "She wanted to flatten the bent corners."
+      ],
+      "answer": 0,
+      "evidence": [11, 12, 13],
+      "hint": "Read how the talk ended. Then read what Maya wrote under the card.",
+      "explain": "Maya wanted to remember a day she was proud of. The talk went well, and she saved a card with the date in her neatest writing.",
+      "inference": 2,
+      "tags": ["hidden-feeling", "want"],
+      "reason": {
+        "clue": "Under it, she wrote the date in her neatest handwriting.",
+        "know": "People save small things to remember days that mattered to them.",
+        "so": "So Maya kept it to remember a proud day."
+      }
+    },
+    {
+      "id": "n5-i194",
+      "skill": "N5",
+      "passage": "n5-p66",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did Ben feel when he read the notice?",
+      "options": ["frustrated", "relieved", "curious", "proud"],
+      "answer": 0,
+      "evidence": [4, 5, 6],
+      "hint": "Read what Ben did after he read the notice, and what he said.",
+      "explain": "Ben felt frustrated. The ferries were canceled, so he sat down hard, crossed his arms and said the plan was ruined.",
+      "inference": 2,
+      "tags": ["hidden-feeling", "plan-change"],
+      "reason": {
+        "clue": "\"The whole plan is ruined,\" he said.",
+        "know": "Crossed arms and harsh words can show a person is upset.",
+        "so": "So Ben felt frustrated about the ferry."
+      }
+    },
+    {
+      "id": "n5-i195",
+      "skill": "N5",
+      "passage": "n5-p66",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did Ben feel when the ferry horn sounded?",
+      "options": ["excited", "lonely", "embarrassed", "worried"],
+      "answer": 0,
+      "evidence": [14, 15, 16, 17],
+      "hint": "Read what Ben did when the horn sounded. Look at how he moved.",
+      "explain": "Ben felt excited. He jogged toward the dock and was already reading ahead in his bird guide.",
+      "inference": 2,
+      "tags": ["hidden-feeling", "feeling-change"],
+      "reason": {
+        "clue": "He jogged toward the dock.",
+        "know": "People hurry toward something they are looking forward to.",
+        "so": "So Ben felt excited about the trip."
+      }
+    },
+    {
+      "id": "n5-i196",
+      "skill": "N5",
+      "passage": "n5-p66",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What helped Ben change how he felt about the day?",
+      "options": [
+        "Ana showed him a way to count birds at the harbor.",
+        "The ferry left early.",
+        "Ben found a new bird guide.",
+        "The wind got stronger."
+      ],
+      "answer": 0,
+      "evidence": [8, 9, 11],
+      "hint": "Read what Ana did and said on the bench. Then read what Ben did next.",
+      "explain": "Ana showed Ben that they could start counting at the harbor. After that, he uncrossed his arms and added a Harbor row to his table.",
+      "inference": 1,
+      "tags": ["feeling-change", "plan-change"]
+    },
+    {
+      "id": "n5-i197",
+      "skill": "N5",
+      "passage": "n5-p67",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Sort the cards. What did Sam only think, and what did he know?",
+      "bins": ["Sam only thought it", "Sam knew it"],
+      "cards": [
+        {
+          "text": "Pixel knocked over the paint cans.",
+          "bin": 0
+        },
+        {
+          "text": "There was a crash in the garage.",
+          "bin": 1
+        },
+        {
+          "text": "His dad dropped the ladder.",
+          "bin": 1
+        }
+      ],
+      "hint": "Ask how Sam found out each thing. Did he hear it, or was he told, or did he only guess?",
+      "explain": "Sam heard the crash, and his dad told him about the ladder, so he knew those. He only thought Pixel knocked over the cans, because he did not look.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i198",
+      "skill": "N5",
+      "passage": "n5-p67",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did Sam only think that Pixel made the noise?",
+      "options": ["He did not go and look.", "Pixel was in the garage.", "His dad told him so."],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Read what Sam did, or did not do, after the crash.",
+      "explain": "Sam only thought it because he did not go and look. He guessed.",
+      "inference": 1,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i199",
+      "skill": "N5",
+      "passage": "n5-p68",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Does Priya know that Leo got a perfect score, or does she only think it?",
+      "options": [
+        "She only thinks it. She guessed from his smile.",
+        "She knows it. She saw his paper.",
+        "She knows it. Ms. Ortiz told her."
+      ],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Read how Priya found out. Did she see his paper, or something else?",
+      "explain": "Priya only thinks it. She saw Leo smiling and guessed why.",
+      "inference": 1,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i200",
+      "skill": "N5",
+      "passage": "n5-p68",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Who knows Leo's real score?",
+      "options": ["Maya", "Priya", "nobody"],
+      "answer": 0,
+      "evidence": [4, 5],
+      "hint": "Find who saw Leo's paper.",
+      "explain": "Maya knows Leo's real score. She sits next to him and saw his paper: eight out of ten.",
+      "inference": 1,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i201",
+      "skill": "N5",
+      "passage": "n5-p68",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sort the cards. What did Priya know on Monday, and what did she only think?",
+      "bins": ["Priya knew it", "Priya only thought it"],
+      "cards": [
+        {
+          "text": "Leo was smiling.",
+          "bin": 0
+        },
+        {
+          "text": "Leo got a perfect score.",
+          "bin": 1
+        },
+        {
+          "text": "There was a quiz on Friday.",
+          "bin": 0
+        },
+        {
+          "text": "Leo was smiling about the quiz.",
+          "bin": 1
+        }
+      ],
+      "hint": "For each card, ask: did Priya see it or take part in it, or did she guess?",
+      "explain": "Priya saw Leo smile and took the quiz on Friday, so she knew those. She only thought he got a perfect score and was smiling about the quiz.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i202",
+      "skill": "N5",
+      "passage": "n5-p69",
+      "format": "tap",
+      "level": 3,
+      "prompt": "When Grandma Rose said a bird took the muffin, did she know it or only think it?",
+      "options": [
+        "She only thought it. She guessed from the crumbs and the open door.",
+        "She knew it. She saw a bird take it.",
+        "She knew it. Sam told her."
+      ],
+      "answer": 0,
+      "evidence": [1, 2, 3],
+      "hint": "Read what Grandma Rose saw before she spoke. Did she see a bird?",
+      "explain": "She only thought it. She saw crumbs and an open door and guessed a bird. She never saw one.",
+      "inference": 1,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i203",
+      "skill": "N5",
+      "passage": "n5-p69",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What made Grandma Rose know who took the muffin?",
+      "options": [
+        "She saw Pixel's blue nose.",
+        "She saw a bird fly out.",
+        "She counted the crumbs."
+      ],
+      "answer": 0,
+      "evidence": [7, 8],
+      "hint": "Find the sentence just before she says, \"Now I know.\"",
+      "explain": "She saw Pixel's blue nose. Seeing it for herself made her know.",
+      "inference": 1,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i204",
+      "skill": "N5",
+      "passage": "n5-p70",
+      "format": "tap",
+      "level": 4,
+      "prompt": "When Priya said Ben's rover must have crashed, why did she only think it?",
+      "options": [
+        "She was in the hallway during the test, so she guessed from their laughing.",
+        "She watched the rover go off the track.",
+        "Leo told her that it crashed.",
+        "She read it on the board."
+      ],
+      "answer": 0,
+      "evidence": [2, 3, 4],
+      "hint": "Find where Priya was during Ben's test. Then read what she saw when she came back.",
+      "explain": "Priya only thought it. She was at the fountain during the test, so she guessed from the laughing.",
+      "inference": 1,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i205",
+      "skill": "N5",
+      "passage": "n5-p70",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort the cards. When Priya comes back from the fountain, what does she know, and what does she only think?",
+      "bins": ["Priya knows it", "Priya only thinks it"],
+      "cards": [
+        {
+          "text": "Her own rover took forty seconds.",
+          "bin": 0
+        },
+        {
+          "text": "Ben's team is laughing.",
+          "bin": 0
+        },
+        {
+          "text": "Ben's rover crashed.",
+          "bin": 1
+        },
+        {
+          "text": "The team is laughing at their rover.",
+          "bin": 1
+        }
+      ],
+      "hint": "For each card, ask: did Priya see it herself, or is she guessing?",
+      "explain": "Priya timed her own rover and sees the team laughing, so she knows those. She only thinks the rover crashed and that they are laughing at it, because she did not see the test.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i206",
+      "skill": "N5",
+      "passage": "n5-p70",
+      "format": "tap",
+      "level": 4,
+      "prompt": "After Leo explained, how did Priya check what was true?",
+      "options": [
+        "She looked at the time on the board.",
+        "She asked Ben's teammate.",
+        "She watched the test again.",
+        "She raced her rover again."
+      ],
+      "answer": 0,
+      "evidence": [9],
+      "hint": "Read the first thing Priya did after Leo explained.",
+      "explain": "She looked at the board, where 35 was written under Ben's team. Checking for herself turned a guess into knowing.",
+      "inference": 1,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i207",
+      "skill": "N5",
+      "passage": "n5-p71",
+      "format": "tap",
+      "level": 5,
+      "prompt": "When Sam wrote \"Rain by noon,\" did he know it would rain?",
+      "options": [
+        "No. He only thought so, because he looked at the clouds and checked no instruments.",
+        "Yes. The rain gauge showed rain.",
+        "Yes. The barometer showed falling pressure.",
+        "Yes. Ms. Ortiz told him."
+      ],
+      "answer": 0,
+      "evidence": [2, 10],
+      "hint": "Find what Sam looked at before he wrote the card. Then read what he admits later.",
+      "explain": "Sam only thought it would rain. He looked at the clouds and did not check a single instrument.",
+      "inference": 1,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i208",
+      "skill": "N5",
+      "passage": "n5-p71",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort the cards. What did Maya know from the instruments, and what did Sam only think from the sky?",
+      "bins": ["Maya knew it from the instruments", "Sam only thought it from the sky"],
+      "cards": [
+        {
+          "text": "No rain fell last night.",
+          "bin": 0
+        },
+        {
+          "text": "The air pressure is rising.",
+          "bin": 0
+        },
+        {
+          "text": "Rain will come by noon.",
+          "bin": 1
+        },
+        {
+          "text": "A storm is coming, like last week's.",
+          "bin": 1
+        }
+      ],
+      "hint": "Ask where each idea came from: a measurement, or a look out the window?",
+      "explain": "Maya read the empty rain gauge and the rising pressure, so she knew those. Sam only thought a storm was coming, because the clouds looked like last week's storm clouds.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i209",
+      "skill": "N5",
+      "passage": "n5-p71",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did Sam make a new rule for the rest of the week?",
+      "options": [
+        "He learned that a look at the sky is only a guess, but the instruments give facts.",
+        "Ms. Ortiz told him to change the rule.",
+        "The classroom window was broken.",
+        "Maya wanted to do the job alone."
+      ],
+      "answer": 0,
+      "evidence": [10, 12, 13],
+      "hint": "Read what Sam admitted, and what the sky did by lunch.",
+      "explain": "Sam's guess from the clouds was wrong, but the instruments were right. So he decided to check them first.",
+      "inference": 2,
+      "tags": ["know-think"],
+      "reason": {
+        "clue": "By lunch, patches of blue sky had opened over Harbor Middle School.",
+        "know": "When a guess turns out wrong, people change how they decide.",
+        "so": "So Sam chose to trust the instruments first."
+      }
+    },
+    {
+      "id": "n5-i210",
+      "skill": "N5",
+      "passage": "n5-p72",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How does Ana know what is in the box?",
+      "options": ["She helped wrap it.", "She shook the box.", "Ben told her."],
+      "answer": 0,
+      "evidence": [0, 1],
+      "hint": "Read the first sentence. What did Ana do before Ben found the box?",
+      "explain": "Ana knows because she helped Mom wrap it. She saw the keyboard stand.",
+      "inference": 1,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i211",
+      "skill": "N5",
+      "passage": "n5-p72",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben says, \"I bet it's a video game.\" Does he know, or does he only think so?",
+      "options": [
+        "He only thinks so. He just shook the box.",
+        "He knows. He saw inside.",
+        "He knows. Ana told him."
+      ],
+      "answer": 0,
+      "evidence": [3, 4],
+      "hint": "Read what Ben did to the box. Could he see inside?",
+      "explain": "Ben only thinks so. He shook the box and guessed. He did not see inside.",
+      "inference": 1,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "n5-i212",
+      "skill": "N5",
+      "passage": "n5-p72",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Sort the cards. What does Ana know, and what does Ben only think?",
+      "bins": ["Ana knows it", "Ben only thinks it"],
+      "cards": [
+        {
+          "text": "It is a keyboard stand.",
+          "bin": 0
+        },
+        {
+          "text": "It is a video game.",
+          "bin": 1
+        },
+        {
+          "text": "Mom wrapped it with Ana.",
+          "bin": 0
+        }
+      ],
+      "hint": "For each card, ask who believes it, and whether that person saw the present.",
+      "explain": "Ana helped wrap the keyboard stand, so she knows what it is and who wrapped it. Ben only thinks it is a video game, because he shook the box.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["know-think"]
+    },
+    {
+      "id": "cu-home-i04",
+      "skill": "N5",
+      "passage": "cu-home-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Ben feel when he found the card?",
+      "options": ["worried", "relieved", "angry"],
+      "answer": 1,
+      "evidence": [7, 8],
+      "hint": "Read what Ben did right after he found the card. Think about what a long breath and a smile can show.",
+      "explain": "Ben felt relieved. He let out a long breath and smiled when he found the card. He felt worried before, when the card was missing.",
+      "inference": 1,
+      "checkup": "home",
+      "tags": ["hidden-feeling", "feeling-changes"]
+    },
+    {
+      "id": "cu-gull-i04",
+      "skill": "N5",
+      "passage": "cu-gull-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What did Maya want to do at the seal beach?",
+      "options": ["take photos of the seals", "look at the tide pools", "draw the seals"],
+      "answer": 2,
+      "evidence": [5, 7, 8],
+      "hint": "Read what Maya brought with her. Then read what she did after she looked at the seals.",
+      "explain": "Maya wanted to draw the seals. She opened her sketchbook, and her pencil was moving. She said \"Not yet\" to the tide pools.",
+      "inference": 1,
+      "checkup": "gull",
+      "tags": ["want", "hidden-want"]
+    },
+    {
+      "id": "cu-cape-i04",
+      "skill": "N5",
+      "passage": "cu-cape-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Priya feel when the kite was the highest in the sky?",
+      "options": ["proud", "nervous", "bored"],
+      "answer": 0,
+      "evidence": [5, 6, 7],
+      "hint": "Read what Priya did and said when the kite was the highest. Think about what a grin can show.",
+      "explain": "Priya felt proud. She grinned and called out, \"Look how high it is!\" She felt nervous earlier, when her hands shook.",
+      "inference": 1,
+      "checkup": "cape",
+      "tags": ["hidden-feeling", "feeling-changes"]
+    },
+    {
+      "id": "cu-airfield-i04",
+      "skill": "N5",
+      "passage": "cu-airfield-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Nell feel when Captain Ada said she did a careful job?",
+      "options": ["proud", "worried", "bored"],
+      "pictures": ["😊", "😟", "🥱"],
+      "answer": 0,
+      "evidence": [8, 9],
+      "hint": "Read what Captain Ada said. Then look at what Nell did with her body and with her camera.",
+      "explain": "Nell felt proud. Captain Ada said she did a careful job, and Nell stood up tall and took a photo of the plane to show her mom. It is in the last two sentences.",
+      "inference": 2,
+      "checkup": "airfield",
+      "tags": ["hidden-feeling"]
+    },
+    {
+      "id": "cu-takeoff-i04",
+      "skill": "N5",
+      "passage": "cu-takeoff-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Nell feel about the take-off?",
+      "options": ["bored", "excited", "angry"],
+      "pictures": ["🥱", "🤩", "😠"],
+      "answer": 1,
+      "evidence": [1, 3, 6],
+      "hint": "Look at what Nell did that night and the next morning. Think about how a person acts when she is waiting for something she wants to see.",
+      "explain": "Nell felt excited. She could not fall asleep, she was up and dressed at five o'clock, and she bounced on her toes while she waited.",
+      "inference": 2,
+      "checkup": "takeoff",
+      "tags": ["hidden-feeling"]
+    },
+    {
+      "id": "cu-australia-i04",
+      "skill": "N5",
+      "passage": "cu-australia-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Leah feel when she first heard the loud sound?",
+      "options": ["surprised", "bored", "calm"],
+      "pictures": ["😲", "🥱", "😌"],
+      "answer": 0,
+      "evidence": [2, 3, 4],
+      "hint": "Find what Leah did right after the sound. Think about why a person jumps and opens her eyes wide.",
+      "explain": "Leah felt surprised. A loud sound came from right next to her, and she jumped, grabbed her dad's arm and opened her eyes wide.",
+      "inference": 2,
+      "checkup": "australia",
+      "tags": ["hidden-feeling"]
+    },
+    {
+      "id": "cu-star-i04",
+      "skill": "N5",
+      "passage": "cu-star-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Ana feel when her turn came?",
+      "options": ["proud", "bored", "nervous"],
+      "answer": 2,
+      "evidence": [2, 3],
+      "hint": "Read what Ana did with her hands and what she asked. What do those clues show?",
+      "explain": "Ana felt nervous. She kept her hands behind her back and asked what would happen if she bumped the telescope. She looked happy later, after she saw the craters.",
+      "inference": 1,
+      "checkup": "star",
+      "tags": ["hidden-feeling", "feeling-change"]
+    },
+    {
+      "id": "cu-rail-i04",
+      "skill": "N5",
+      "passage": "cu-rail-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Ana feel when she found the ticket in her book?",
+      "options": ["relieved", "worried", "proud"],
+      "answer": 0,
+      "evidence": [6, 7],
+      "hint": "Read what Ana did right after she found the ticket. What does that show about her?",
+      "explain": "Ana felt relieved. She let out a long breath and smiled when she found the ticket. She was worried before, when she could not find it.",
+      "inference": 1,
+      "checkup": "rail",
+      "tags": ["hidden-feeling", "feeling-change"]
+    },
+    {
+      "id": "cu-fossil-i04",
+      "skill": "N5",
+      "passage": "cu-fossil-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Leo feel when he saw that the ammonite was still in one piece?",
+      "options": ["embarrassed", "disappointed", "relieved"],
+      "answer": 2,
+      "evidence": [7, 8],
+      "hint": "Think about why Leo opened the bag so slowly. Then read what he did when he saw the ammonite.",
+      "explain": "Leo felt relieved. He let out a long breath, because the ammonite was not broken.",
+      "inference": 1,
+      "checkup": "fossil",
+      "tags": ["feeling", "hidden-feeling"]
+    },
+    {
+      "id": "cu-reef-i04",
+      "skill": "N5",
+      "passage": "cu-reef-p04",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Ben feel before he got into the water?",
+      "options": ["excited", "nervous", "bored"],
+      "answer": 1,
+      "evidence": [4, 5, 6],
+      "hint": "Read what Ben did while Ana was already in the water. Think about why someone checks the same thing again and again.",
+      "explain": "Ben felt nervous. He checked his buckles three times, asked about the depth twice and held on tight to the ladder.",
+      "inference": 1,
+      "checkup": "reef",
+      "tags": ["feeling", "hidden-feeling"]
     }
   ],
   "model": {
     "item": "n5-i00",
     "steps": [
       { "say": "The question asks how Maya felt when she stood at the front. I find that part.", "show": [2] },
-      { "say": "The next sentence says her hands shook as she held the paper.", "show": [3] },
+      { "say": "The next sentence says her hands shook as she held the paper.", "show": [3], "fill": "clue" },
       { "say": "Then she read the first page very quietly.", "show": [4] },
-      { "say": "Shaking hands and a quiet voice can show that a person is nervous." },
-      { "say": "So Maya felt nervous.", "reveal": true }
+      { "say": "Shaking hands and a quiet voice can show that a person is nervous.", "fill": "know" },
+      { "say": "So Maya felt nervous.", "reveal": true, "fill": "so" }
     ]
   }
 }

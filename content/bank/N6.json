@@ -14,6 +14,11 @@
         "Sam bought a postcard of the steam train.",
         "He put it on his wall at home."
       ],
+      "refs": [
+        { "s": 5, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "it", "n": 1, "to": "the postcard" },
+        { "s": 5, "w": "his", "n": 1, "to": "Sam" }
+      ],
       "topics": ["transport"],
       "level": 1,
       "socialLoad": 0,
@@ -31,6 +36,12 @@
         "After the test, Ben asked, \"Was it hard?\"",
         "Leo grinned and said, \"It was a piece of cake!\"",
         "Ben laughed and said, \"You studied a lot!\""
+      ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 2, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 3, "w": "it", "n": 1, "to": "the test" },
+        { "s": 4, "w": "It", "n": 1, "to": "the test" }
       ],
       "topics": ["school", "friends"],
       "level": 1,
@@ -55,6 +66,18 @@
         "At last, she stopped and laughed.",
         "\"Now I understand,\" she said. \"I should not tell you to do something that I cannot do myself.\""
       ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "the young crab" },
+        { "s": 3, "w": "his", "n": 1, "to": "the young crab" },
+        { "s": 6, "w": "His", "n": 1, "to": "the young crab" },
+        { "s": 6, "w": "her", "n": 1, "to": "his mother" },
+        { "s": 7, "w": "her", "n": 1, "to": "his mother" },
+        { "s": 7, "w": "his", "n": 1, "to": "the young crab" },
+        { "s": 8, "w": "She", "n": 1, "to": "his mother" },
+        { "s": 8, "w": "she", "n": 2, "to": "his mother" },
+        { "s": 9, "w": "she", "n": 1, "to": "his mother" },
+        { "s": 10, "w": "she", "n": 1, "to": "his mother" }
+      ],
       "topics": ["animals", "ocean"],
       "level": 2,
       "socialLoad": 1,
@@ -75,6 +98,17 @@
         "Ana stayed home that night.",
         "She had a cold and felt under the weather.",
         "After the show, Maya sent her a photo of the comic."
+      ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 1, "w": "it", "n": 1, "to": "the comic" },
+        { "s": 2, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "her", "n": 2, "to": "Maya" },
+        { "s": 3, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 8, "w": "her", "n": 1, "to": "Ana" }
       ],
       "topics": ["school", "friends"],
       "level": 2,
@@ -143,6 +177,17 @@
         "Soon the lion was free.",
         "The lion thanked the mouse, and they became good friends."
       ],
+      "refs": [
+        { "s": 1, "w": "his", "n": 1, "to": "the lion" },
+        { "s": 1, "w": "him", "n": 1, "to": "the lion" },
+        { "s": 2, "w": "his", "n": 1, "to": "the lion" },
+        { "s": 4, "w": "he", "n": 1, "to": "the lion" },
+        { "s": 6, "w": "He", "n": 1, "to": "the lion" },
+        { "s": 6, "w": "him", "n": 1, "to": "the lion" },
+        { "s": 7, "w": "him", "n": 1, "to": "the lion" },
+        { "s": 8, "w": "She", "n": 1, "to": "the mouse" },
+        { "s": 8, "w": "her", "n": 1, "to": "the mouse" }
+      ],
       "topics": ["animals", "nature"],
       "level": 2,
       "socialLoad": 1,
@@ -164,6 +209,14 @@
         "The boy shouted \"Wolf!\" as loudly as he could.",
         "This time, the people thought it was another trick, so they stayed home.",
         "The wolf chased the sheep far away into the hills."
+      ],
+      "refs": [
+        { "s": 1, "w": "he", "n": 1, "to": "the shepherd boy" },
+        { "s": 2, "w": "he", "n": 1, "to": "the shepherd boy" },
+        { "s": 4, "w": "They", "n": 1, "to": "the people" },
+        { "s": 5, "w": "he", "n": 1, "to": "the shepherd boy" },
+        { "s": 7, "w": "he", "n": 1, "to": "the shepherd boy" },
+        { "s": 8, "w": "they", "n": 1, "to": "the people" }
       ],
       "topics": ["animals"],
       "level": 2,
@@ -208,6 +261,13 @@
         "On Wednesday, Leo and his board jumped up together.",
         "He did his first ollie!"
       ],
+      "refs": [
+        { "s": 3, "w": "it", "n": 1, "to": "an ollie" },
+        { "s": 4, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 6, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 7, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 7, "w": "his", "n": 1, "to": "Leo" }
+      ],
       "topics": ["sports"],
       "level": 1,
       "socialLoad": 0,
@@ -229,6 +289,14 @@
         "By noon, they had sold every cookie.",
         "They made forty dollars, enough to buy four new balls.",
         "At practice on Wednesday, the whole team cheered."
+      ],
+      "refs": [
+        { "s": 2, "w": "They", "n": 1, "to": "Ana and Ben" },
+        { "s": 3, "w": "they", "n": 1, "to": "Ana and Ben" },
+        { "s": 5, "w": "they", "n": 1, "to": "Ana and Ben" },
+        { "s": 6, "w": "their", "n": 1, "to": "Ana and Ben" },
+        { "s": 7, "w": "they", "n": 1, "to": "Ana and Ben" },
+        { "s": 8, "w": "They", "n": 1, "to": "Ana and Ben" }
       ],
       "topics": ["sports", "food", "school"],
       "level": 2,
@@ -375,6 +443,11 @@
         "The wires that carry electricity are often made of copper, a metal that comes from rocks dug out of mines."
       ],
       "breaks": [5, 9],
+      "words": [
+        { "word": "naturally", "means": "on its own in the earth, not made by people", "pic": "🌱" },
+        { "word": "rich", "means": "having a lot of", "pic": "🏖️" },
+        { "word": "contain", "means": "have inside them", "pic": "✏️" }
+      ],
       "topics": ["mining", "home"],
       "level": 4,
       "socialLoad": 0,
@@ -775,6 +848,10 @@
         "By morning, the trains could run again.",
         "Sam watched the plow train from his window with Pixel."
       ],
+      "refs": [
+        { "s": 4, "w": "Its", "n": 1, "to": "the plow train" },
+        { "s": 6, "w": "his", "n": 1, "to": "Sam" }
+      ],
       "topics": [
         "transport",
         "weather"
@@ -804,6 +881,15 @@
         "It did not scratch the quartz at all.",
         "Maya put the hard rocks in one pile.",
         "Then she drew a chart of her rocks."
+      ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 1, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "It", "n": 1, "to": "the nail" },
+        { "s": 7, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "her", "n": 1, "to": "Maya" }
       ],
       "topics": [
         "mining"
@@ -895,6 +981,10 @@
         "The team passed quickly and won by two goals.",
         "After the game, Ben said the gym was more fun than he expected."
       ],
+      "refs": [
+        { "s": 5, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 9, "w": "he", "n": 1, "to": "Ben" }
+      ],
       "topics": [
         "weather",
         "sports"
@@ -955,6 +1045,15 @@
         "He also drew a small train in one corner, just for fun.",
         "The next morning, the new student used the map to find the music room by herself.",
         "She smiled and thanked Sam."
+      ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "the new student" },
+        { "s": 2, "w": "her", "n": 1, "to": "the new student" },
+        { "s": 3, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 4, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 6, "w": "herself", "n": 1, "to": "the new student" },
+        { "s": 7, "w": "She", "n": 1, "to": "the new student" }
       ],
       "topics": [
         "maps",
@@ -1180,6 +1279,11 @@
         "Most robot vacuums are thin enough to clean under a bed.",
         "Some families even give their robot vacuum a name."
       ],
+      "words": [
+        { "word": "laser", "means": "a thin, strong beam of light", "pic": "🔦" },
+        { "word": "wandering", "means": "moving around with no plan", "pic": "🔀" },
+        { "word": "charger", "means": "the base it plugs into to get power", "pic": "🔌" }
+      ],
       "topics": [
         "robots"
       ],
@@ -1243,6 +1347,11 @@
         "Gold is about nineteen times heavier than the same amount of water.",
         "In 1848, gold was found in California, and thousands of people rushed there to pan for it.",
         "Today, some people still pan for gold for fun."
+      ],
+      "words": [
+        { "word": "gravel", "means": "small loose stones", "pic": "🪨" },
+        { "word": "swirl", "means": "to move it around in a circle", "pic": "🌀" },
+        { "word": "flakes", "means": "tiny, thin pieces", "pic": "✨" }
       ],
       "topics": [
         "mining"
@@ -1476,6 +1585,11 @@
         3,
         8,
         11
+      ],
+      "words": [
+        { "word": "route", "means": "the way you plan to go", "pic": "🗺️" },
+        { "word": "steep", "means": "going up sharply, so it is hard to climb", "pic": "⛰️" },
+        { "word": "trace", "means": "to draw over the line of", "pic": "✏️" }
       ],
       "topics": [
         "transport",
@@ -1759,6 +1873,11 @@
         7,
         11,
         14
+      ],
+      "words": [
+        { "word": "froth", "means": "a layer of bubbles on top", "pic": "🫧" },
+        { "word": "furnace", "means": "a very hot oven for melting metal", "pic": "🔥" },
+        { "word": "pure", "means": "with nothing else mixed in", "pic": "✨" }
       ],
       "topics": [
         "mining"
@@ -2053,6 +2172,11 @@
         9,
         12
       ],
+      "words": [
+        { "word": "plaster", "means": "a white paste that dries very hard", "pic": "⚪" },
+        { "word": "angle", "means": "how much the tool leans", "pic": "📐" },
+        { "word": "preparing", "means": "cleaning a fossil out of its rock", "pic": "🦴" }
+      ],
       "topics": [
         "dinosaurs"
       ],
@@ -2106,6 +2230,947 @@
         "source": "Written for Learning to Fly",
         "licence": "original",
         "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p66",
+      "title": "Down the Big Hill",
+      "kind": "story",
+      "picture": "🛹🚀",
+      "sentences": [
+        "Leo pushed off at the top of the hill.",
+        "His skateboard was a rocket.",
+        "The trees went by in a green blur.",
+        "At the bottom, he stopped and laughed.",
+        "Then Sam rode down very slowly.",
+        "\"You are a snail today,\" Leo said with a grin.",
+        "Sam grinned back and said, \"A careful snail.\""
+      ],
+      "refs": [
+        { "s": 1, "w": "His", "n": 1, "to": "Leo" },
+        { "s": 3, "w": "he", "n": 1, "to": "Leo" }
+      ],
+      "topics": ["sports", "friends"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Down the Big Hill",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p67",
+      "title": "The Last One in the Library",
+      "kind": "story",
+      "picture": "📚🌙",
+      "sentences": [
+        "Maya was the last one in the library.",
+        "The room was a quiet cave.",
+        "Only one lamp was still on.",
+        "Then the bell rang for closing time.",
+        "Maya packed six thick books into her bag.",
+        "Her bag was a rock on her back as she walked home.",
+        "At home, she unpacked the books one by one."
+      ],
+      "refs": [
+        { "s": 4, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "Her", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "her", "n": 2, "to": "Maya" },
+        { "s": 5, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 6, "w": "she", "n": 1, "to": "Maya" }
+      ],
+      "topics": ["school"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Last One in the Library",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p68",
+      "title": "Ana's First Note",
+      "kind": "story",
+      "picture": "🎺🌅",
+      "sentences": [
+        "Ana played her trumpet in the band show.",
+        "Her first note was a bright sunrise.",
+        "Everyone in the room sat up and listened.",
+        "Ben clapped the loudest of all.",
+        "After the show, Ana said her legs were jelly.",
+        "She sat down until they felt strong again.",
+        "Later, Ben told her that the band sounded great."
+      ],
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 1, "w": "Her", "n": 1, "to": "Ana" },
+        { "s": 4, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 5, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 5, "w": "they", "n": 1, "to": "her legs" },
+        { "s": 6, "w": "her", "n": 1, "to": "Ana" }
+      ],
+      "topics": ["music", "school"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Ana's First Note",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p69",
+      "title": "Pixel in the Snow",
+      "kind": "story",
+      "picture": "🐶❄️",
+      "sentences": [
+        "Snow fell all night on Harbor Town.",
+        "In the morning, the yard was a white blanket.",
+        "Pixel ran out and rolled in the snow.",
+        "His black fur was soon covered in white dots.",
+        "Sam laughed and called him a little snowman.",
+        "Then they went inside to get warm.",
+        "Pixel shook the last snow off his fur by the warm fire."
+      ],
+      "refs": [
+        { "s": 3, "w": "His", "n": 1, "to": "Pixel" },
+        { "s": 4, "w": "him", "n": 1, "to": "Pixel" },
+        { "s": 6, "w": "his", "n": 1, "to": "Pixel" }
+      ],
+      "topics": ["animals", "weather"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Pixel in the Snow",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p70",
+      "title": "The Science Fair Table",
+      "kind": "story",
+      "picture": "🤖🔬",
+      "sentences": [
+        "On the morning of the science fair, the gym was busy.",
+        "Every table was covered with posters, wires and small machines.",
+        "Priya set up her rover next to a tall model volcano.",
+        "Her stomach was a washing machine, spinning and spinning.",
+        "When the first judge came to her table, Priya took a deep breath.",
+        "She showed how the rover's camera sent pictures to her tablet.",
+        "The judge watched closely and wrote some notes.",
+        "Then he smiled and said, \"This rover is a little explorer.\"",
+        "After he left, Priya felt calm again.",
+        "Her stomach was still at last."
+      ],
+      "topics": ["robots", "school"],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Science Fair Table",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p71",
+      "title": "The Storm Over the Harbor",
+      "kind": "story",
+      "picture": "🌧️⚓",
+      "sentences": [
+        "Dark clouds rolled over the harbor in the afternoon.",
+        "The wind was a wild horse, running through the streets.",
+        "Grandma Rose closed the bakery shutters.",
+        "Sam helped her carry the chairs inside.",
+        "Then heavy rain came down on the roof.",
+        "Thunder boomed over the water, and Pixel hid under the table.",
+        "Sam sat beside him and spoke in a soft voice.",
+        "By evening, the storm had passed.",
+        "The harbor was a mirror, smooth and still.",
+        "The next morning, Sam and Grandma Rose carried the chairs back outside."
+      ],
+      "topics": ["weather", "animals"],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Storm Over the Harbor",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p72",
+      "title": "Three Tests in One Week",
+      "kind": "story",
+      "picture": "📝⛰️",
+      "sentences": [
+        "Ben had three tests in one week.",
+        "On Monday night, his homework was a mountain on his desk.",
+        "He did not know where to start.",
+        "His mom helped him make a list.",
+        "They put the math test first, because it came first.",
+        "Ben did one small part of the list each night.",
+        "By Thursday, the mountain was a small hill.",
+        "On Friday, he finished the last test and walked home.",
+        "He smiled the whole way.",
+        "His mom said the list was a good plan for next time too."
+      ],
+      "topics": ["school", "home"],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Three Tests in One Week",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p73",
+      "title": "Saturday at the Bakery",
+      "kind": "story",
+      "picture": "🧁🐝",
+      "sentences": [
+        "Every Saturday morning, Grandma Rose's kitchen was a beehive.",
+        "Bakers hurried from the ovens to the tables and back again.",
+        "Sam's job was to fold the boxes.",
+        "He folded them so fast that Grandma Rose called him a machine.",
+        "At noon, the last tray of muffins came out of the oven.",
+        "The smell was a warm hug that filled the whole street.",
+        "People walking past stopped and came inside.",
+        "By one o'clock, every muffin was sold.",
+        "Sam folded the empty boxes flat for next week."
+      ],
+      "topics": ["food", "home"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Saturday at the Bakery",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p74",
+      "title": "The Night Train Home",
+      "kind": "story",
+      "picture": "🚆🌙",
+      "sentences": [
+        "On the last night of the school trip, Ms. Ortiz's class rode the night train from Pine Bay back to Harbor Town.",
+        "Outside the window, the dark fields were an ocean, and the farmhouse lights were small boats far away.",
+        "Sam pressed his forehead to the cold glass and tried to count them.",
+        "Inside, the train car was a warm, humming cocoon.",
+        "Most of the class had fallen asleep with their jackets over their knees.",
+        "Maya drew the moon in her sketchbook, and Priya read a book about Mars with a small flashlight.",
+        "Near midnight, the train slowed down beside the harbor.",
+        "The conductor walked through the car and said, \"Harbor Town, next stop.\"",
+        "Sam looked at the map on the wall, where a red line showed every station they had passed.",
+        "The line was a long thread that had pulled them all the way home."
+      ],
+      "breaks": [3, 6],
+      "topics": ["transport", "maps"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Night Train Home",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p75",
+      "title": "The Rover That Would Not Turn",
+      "kind": "story",
+      "picture": "🤖🔑",
+      "sentences": [
+        "For two weeks, Priya's rover had a problem she could not solve.",
+        "Every time she told it to turn left, it spun in a slow circle instead.",
+        "The problem was a locked door, and she could not find the key.",
+        "She checked the wheels, the battery and every wire.",
+        "She read her code line by line, three times.",
+        "Nothing was wrong that she could see.",
+        "At robotics club, Mrs. Hall looked over her shoulder and pointed at one number in the code.",
+        "\"Your turn speed is ninety, not nine,\" she said.",
+        "Priya changed one number, and the rover turned left in a neat, quick curve.",
+        "The fix was a tiny key that opened the whole door.",
+        "Priya laughed and wrote the number on a sticky note so she would never forget it."
+      ],
+      "breaks": [3, 8],
+      "topics": ["robots", "school"],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Rover That Would Not Turn",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p05",
+      "title": "Clean Beach Day",
+      "kind": "story",
+      "picture": "🏖️🧤",
+      "sentences": [
+        "On the first Saturday in May, Harbor Town holds Clean Beach Day.",
+        "This year, Ms. Ortiz asked her science class to help.",
+        "Sam, Priya and Leo met the rest of the class at the harbor beach at ten o'clock.",
+        "Each student got gloves, a bag and a grabber stick.",
+        "Priya counted every bottle cap she picked up, and she found sixty-two.",
+        "Leo carried the full bags up to the big bin by the road.",
+        "Sam walked along the edge of the water and pulled out a long tangle of fishing line.",
+        "Ms. Ortiz said fishing line can trap gulls and seals, so it must go in the bin.",
+        "By noon, the class had filled eighteen bags.",
+        "The beach was clean, and the gulls had space to walk on the sand again.",
+        "Grandma Rose brought muffins for everyone who helped."
+      ],
+      "topics": ["ocean", "school"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Clean Beach Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p06",
+      "title": "The Repair Café",
+      "kind": "story",
+      "picture": "🔧💡",
+      "sentences": [
+        "On the last Sunday of each month, the big room at the Harbor Town library turns into a Repair Café.",
+        "People bring things that are broken, and helpers show them how to fix them.",
+        "The idea is simple: if a thing can be fixed, it should not go in the trash.",
+        "This month, Mr. Okafor set up a bike stand by the windows.",
+        "By the end of the day, he had fixed eleven bikes that their owners had planned to throw away.",
+        "Most of them needed only new brake pads or a little oil on the chain.",
+        "At the next table, Priya helped a boy whose toy robot would not move.",
+        "She opened its case and found that one wire had come loose from the battery.",
+        "Ten minutes later, the robot rolled across the table.",
+        "Grandma Rose brought a tray of lemon bars for the helpers, and they were gone by noon.",
+        "Before the café closed, the librarian added up the day's work.",
+        "Forty-three things had been fixed, from lamps and toasters to a torn backpack.",
+        "All of them went home with their owners instead of into the trash."
+      ],
+      "breaks": [3, 9],
+      "topics": ["robots", "home"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Repair Café",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p05",
+      "title": "How Gulls Open Clams",
+      "kind": "story",
+      "picture": "🐦🐚",
+      "sentences": [
+        "On a windy afternoon, Sam sat on the hill above the tide pools on Gull Island.",
+        "He had come to watch the ferry, but he watched the gulls instead.",
+        "One gull picked up a clam from the wet sand at the edge of the water.",
+        "It flew high over the rocks and opened its beak.",
+        "The clam fell and hit the rocks with a sharp crack.",
+        "The gull flew down and ate the soft part inside the broken shell.",
+        "Soon, Sam saw three more gulls doing the same thing.",
+        "One gull dropped its clam on the soft sand, and the shell did not break.",
+        "That gull picked the clam up again and flew back over the rocks.",
+        "Sam wrote down each step in his notebook, from the sand to the rocks to the open shell.",
+        "Back home, he showed his notes to Ms. Ortiz.",
+        "She said the gulls were using the hard rocks to open their food."
+      ],
+      "topics": ["animals", "ocean"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How Gulls Open Clams",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p06",
+      "title": "Helping the Seal Pups",
+      "kind": "story",
+      "picture": "🦭🪢",
+      "sentences": [
+        "Every spring, seal pups are born on the quiet beaches of Gull Island.",
+        "A pup stays on the sand for several weeks while its mother swims out to catch fish.",
+        "If people come too close, the mother may stay away, and the pup cannot drink her milk.",
+        "So each spring, Ranger Jo asks for helpers to keep visitors at a safe distance.",
+        "This year, Ana and Ben signed up to help for a whole Saturday.",
+        "They took the early ferry, and the ride across the bay took forty minutes.",
+        "Their first job was to put up a long rope fence fifty meters from the pups.",
+        "Next, they stood by the path and showed visitors where to watch the pups through the free binoculars.",
+        "At noon, they ate their sandwiches at a picnic table near the dock.",
+        "In the afternoon, Ranger Jo gave them a clipboard to count the pups.",
+        "Ben counted nine pups, and Ana counted nine too, so they knew the number was right.",
+        "On the way back to the ferry, the wind blew Ben's hat into a bush.",
+        "Before Ana and Ben left, Ranger Jo told them that every pup on the beach had stayed safe that day."
+      ],
+      "breaks": [4, 9],
+      "topics": ["animals", "nature"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Helping the Seal Pups",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p05",
+      "title": "Checking the Wind",
+      "kind": "story",
+      "picture": "🎏🌊",
+      "sentences": [
+        "Sam spent a morning with Captain Ada at Windy Cape.",
+        "Before she takes her boat out, Captain Ada always checks the wind, and she showed Sam how.",
+        "First, she pointed to an orange windsock on a tall pole.",
+        "The windsock was full and straight, which meant the wind was strong.",
+        "It pointed toward the land, so the wind was blowing in from the sea.",
+        "Next, she asked Sam to look at the waves.",
+        "Many waves had white tops, and that is another sign of a strong wind.",
+        "Last, she turned on her weather radio and listened to the wind report for the coast.",
+        "The report said the wind would get even stronger after lunch.",
+        "So Captain Ada decided to keep her boat at the dock that day.",
+        "Sam wrote the three wind checks in his notebook so he could use them at home."
+      ],
+      "topics": ["weather", "ocean"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Checking the Wind",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p06",
+      "title": "The Best Place for Kites",
+      "kind": "story",
+      "picture": "🪁🌊",
+      "sentences": [
+        "Leo had flown kites in Harbor Town for years, but he had never flown one at Windy Cape.",
+        "Everyone in his kite club said it was the best place on the coast for kites.",
+        "On a Sunday in April, Leo finally went to find out why.",
+        "The first reason was easy to feel as soon as he stepped onto the cliff top.",
+        "A strong, steady wind blew in from the sea, and on most days it blows from the same side.",
+        "Nothing on the wide, grassy cliff top blocks the wind, because there are no trees or tall buildings.",
+        "The second reason was harder to see.",
+        "When the sea wind hits the cliffs, it is pushed upward, and it lifts kites high into the sky.",
+        "Leo let out his string, and his kite rose faster than it ever had in town.",
+        "Near the path, a small shop sold kites, string and key rings shaped like gulls.",
+        "Leo bought a cup of hot chocolate there and drank it on a bench.",
+        "By the end of the day, he agreed with his club: Windy Cape was the best place he had ever flown a kite."
+      ],
+      "breaks": [3, 8],
+      "topics": ["weather", "nature"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Best Place for Kites",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p05",
+      "title": "The Windsock",
+      "kind": "story",
+      "picture": "🌬️🛩️",
+      "sentences": [
+        "At the end of the runway at Cloud Hill, there is a tall pole with an orange and white tube of cloth on top.",
+        "Nell asked Mr. Lund what the tube was for.",
+        "\"That is a windsock,\" he said. \"It shows pilots what the wind is doing.\"",
+        "He explained that the wind blows into the wide end of the windsock.",
+        "The narrow end then points the same way the wind is going.",
+        "When the wind is strong, the windsock sticks straight out.",
+        "When the air is calm, it hangs down along the pole.",
+        "Pilots look at the windsock before they take off or land.",
+        "They like to take off into the wind, because it helps the plane lift into the air sooner.",
+        "Nell looked up at the windsock again.",
+        "It was hanging down, so today was a calm day for flying."
+      ],
+      "topics": ["weather", "transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Windsock",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p06",
+      "title": "Every Part Has a Job",
+      "kind": "story",
+      "picture": "🛬🧭",
+      "sentences": [
+        "On a clear afternoon, Captain Ada walked with Nell down the whole length of the runway at Cloud Hill.",
+        "It took them almost ten minutes, because the runway is long, flat and straight.",
+        "\"A plane needs a lot of room to speed up before it can lift off,\" Captain Ada said.",
+        "\"It also needs room to slow down after it lands.\"",
+        "At the far end, Nell stood next to a huge white number painted on the ground.",
+        "It was the number 27.",
+        "Captain Ada explained that runway numbers come from a compass.",
+        "A compass circle has 360 degrees, and west is at 270 degrees.",
+        "If you take away the last zero from 270, you get 27, so a plane that takes off from this end flies toward the west.",
+        "The other end of the same runway has the number 9, because a plane that takes off from there flies east, at 90 degrees.",
+        "On the way back, they passed small lights along both edges of the runway.",
+        "At night, these lights show pilots exactly where the runway is.",
+        "Captain Ada also picked up a loose stone and tossed it into the grass.",
+        "\"Even a small stone can damage a spinning propeller,\" she said, \"so we keep the runway clear.\"",
+        "Nell looked back at the long gray strip and saw that every part of it had a job."
+      ],
+      "breaks": [4, 10],
+      "topics": ["transport", "maps"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Every Part Has a Job",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p05",
+      "title": "Dials in the Cockpit",
+      "kind": "story",
+      "picture": "🧭⏱️",
+      "sentences": [
+        "Before the long flight, Captain Ada showed Nell the inside of the Kookaburra's cockpit.",
+        "In front of the pilot's seat was a panel full of round dials.",
+        "\"Each dial tells me something I need to know,\" Captain Ada said.",
+        "First she pointed to the altimeter, which shows how high the plane is flying.",
+        "Next to it was the airspeed dial, which shows how fast the plane is moving through the air.",
+        "The compass shows which way the plane is heading, such as north or east.",
+        "Then she tapped the fuel gauge, which shows how much fuel is left in the tank.",
+        "\"Over the sea, there are no roads or signs to follow,\" she said.",
+        "\"These dials help me fly safely all the way to Australia.\""
+      ],
+      "topics": ["transport", "maps"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dials in the Cockpit",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p06",
+      "title": "Over the Sea",
+      "kind": "story",
+      "picture": "🌊🛩️",
+      "sentences": [
+        "Flying over the sea is very different from flying over land.",
+        "Over land, a pilot can look down and see roads, rivers and towns that match her map.",
+        "Over the sea, there is only water in every direction, and the waves all look alike.",
+        "There is also nowhere to land until the next island.",
+        "So before Captain Ada left Cloud Hill, she planned the flight with great care.",
+        "She marked two small islands on her map where she could stop for fuel.",
+        "She worked out how much fuel each part of the trip would need.",
+        "Then she added extra fuel, in case strong wind slowed the plane down.",
+        "She also packed a life jacket and a spare radio.",
+        "Out over the water, Captain Ada flew by her compass and her clock.",
+        "If the plane kept the right heading for the right number of minutes, she knew it would reach the next island.",
+        "Every hour, she called a radio station on the coast to tell them where she was.",
+        "Once, she saw a group of dolphins jumping far below, and she smiled.",
+        "But she kept watching her dials, because over the sea, careful planning is what keeps a pilot safe."
+      ],
+      "breaks": [4, 9],
+      "topics": ["ocean", "maps", "transport"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Over the Sea",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p05",
+      "title": "Made for the Trees",
+      "kind": "story",
+      "picture": "🐨🌳",
+      "sentences": [
+        "Captain Ada watched a koala named Jarrah climb slowly up a tall gum tree.",
+        "\"How does he hold on so well?\" she asked Ranger Tess.",
+        "Ranger Tess explained that a koala's body is made for life in the trees.",
+        "Koalas have two thumbs on each front paw.",
+        "The thumbs help them hold on tight to branches.",
+        "Koalas also have long, sharp claws that grip the bark.",
+        "The pads on their paws are rough, so they do not slip.",
+        "When a koala sleeps, it sits in the fork of a tree, where two branches meet, so it does not fall.",
+        "Jarrah reached the top, wrapped his arms around a branch and closed his eyes."
+      ],
+      "topics": ["animals", "nature"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Made for the Trees",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p06",
+      "title": "Why Banjo Sleeps",
+      "kind": "story",
+      "picture": "🐨💤",
+      "sentences": [
+        "On her second day in Australia, Captain Ada went back to Bluegum Koala Sanctuary to see a koala named Banjo.",
+        "Banjo was asleep in the fork of his tree, just as he had been the day before.",
+        "\"Does Banjo ever wake up?\" Captain Ada asked with a laugh.",
+        "Ranger Tess smiled, because visitors ask her that question every day.",
+        "She explained that koalas sleep for 18 to 22 hours a day.",
+        "Their food is the reason.",
+        "Eucalyptus leaves are tough and full of strong oils, and they give a koala very little energy.",
+        "A koala's stomach needs a long time to break the leaves down.",
+        "So koalas rest for most of the day and night, and they save their energy for eating and climbing.",
+        "Ranger Tess also told Captain Ada that koalas are most awake in the evening and at night.",
+        "If she came back after six o'clock, she might see Banjo eat.",
+        "That evening, Captain Ada returned to the boardwalk with Ranger Tess.",
+        "Banjo was awake, pulling a branch toward him and chewing one leaf after another."
+      ],
+      "breaks": [4, 9],
+      "topics": ["animals", "nature"],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Why Banjo Sleeps",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p05",
+      "title": "Tools at the Weather Station",
+      "kind": "story",
+      "picture": "🌡️🌧️",
+      "sentences": [
+        "Next to the white dome at Star Point, there is a small weather station.",
+        "On Monday morning, Dr. Amal showed Maya how it works.",
+        "First, she opened a white wooden box with slanted slats on its sides.",
+        "Inside the box was a thermometer, which measures how warm the air is.",
+        "The slats let air flow through but keep the sun off the thermometer.",
+        "Next, she showed Maya a tall metal can that catches rain.",
+        "Each morning, Dr. Amal measures how much rain fell into it.",
+        "On top of the tallest pole, three small cups spun in the wind.",
+        "They measure how fast the wind is blowing.",
+        "Maya drew each tool and wrote its job next to it.",
+        "Dr. Amal uses all these numbers to tell when the sky will be clear for the telescope."
+      ],
+      "topics": ["weather"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Tools at the Weather Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p06",
+      "title": "Catching the Space Station",
+      "kind": "story",
+      "picture": "🛰️✨",
+      "sentences": [
+        "Sam and Grandma Rose spent two spring nights at Star Point.",
+        "On the first evening, Dr. Amal gave Sam a printed list of times for that week.",
+        "\"These are the times when you can see the space station from here,\" she said.",
+        "Sam was surprised, because he had always believed the station was too small to see without a telescope.",
+        "Dr. Amal explained that the space station is about as long as a soccer field.",
+        "Its wide solar panels reflect sunlight, so it shines like a bright star.",
+        "Unlike a plane, it has no blinking lights, and it moves across the sky in a few minutes.",
+        "The best times to see it are soon after sunset or just before sunrise.",
+        "Then the sky is dark where you stand, but the station, high above, is still in sunlight.",
+        "At 8:42 that evening, Sam and Grandma Rose stood by the lamp path and looked west.",
+        "Grandma Rose brought a flask of warm tea and two wool blankets.",
+        "Right on time, a steady white light rose above the sea and moved across the sky.",
+        "Four minutes later, it faded away in the east.",
+        "Sam wrote the time in his notebook so he could tell Priya at school."
+      ],
+      "breaks": [4, 9],
+      "topics": ["space"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Catching the Space Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p05",
+      "title": "The Key on the Big Map",
+      "kind": "story",
+      "picture": "🗺️🔑",
+      "sentences": [
+        "The map room at Rail Coast station has one huge map on the wall.",
+        "It shows every island, from Home Island to Cloud Hill.",
+        "On Thursday, Mr. Haddad showed Sam how to read it.",
+        "First, he pointed to a box in the corner called the key.",
+        "The key shows each symbol on the map and tells what it means.",
+        "A black line with short cross lines is a railway.",
+        "A dashed blue line is a ferry route, and a small red square is a station.",
+        "Under the key, a scale bar shows that one centimeter on the map is two kilometers on the ground.",
+        "Sam used the key to find Shell Halt and Pier Station.",
+        "Then he used the scale bar to measure the Coast Line.",
+        "It was about twelve kilometers long.",
+        "While Sam worked, the big clock in the hall ticked loudly."
+      ],
+      "topics": ["maps", "transport"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Key on the Big Map",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p06",
+      "title": "Why Trains Need Signals",
+      "kind": "story",
+      "picture": "🚦🚆",
+      "sentences": [
+        "Ben rode the Coast Line from Pier Station with his mom on a windy afternoon.",
+        "Halfway to Rail Coast, the train stopped at a red signal and waited for three minutes.",
+        "Ben looked out of the window, but he could not see another train anywhere.",
+        "At Rail Coast, he asked Mr. Haddad why the train had to wait on an empty track.",
+        "Mr. Haddad said that trains cannot stop quickly like cars.",
+        "Their steel wheels roll on smooth steel rails, so they have very little grip.",
+        "A heavy train going fast can need hundreds of meters to stop.",
+        "A driver also cannot steer around anything on the track.",
+        "So the driver must know about danger long before the train gets close to it.",
+        "To keep trains apart, the line is split into sections called blocks.",
+        "Only one train may be in a block at a time.",
+        "A signal stands at the start of each block.",
+        "It shows red when a train is still in the block ahead.",
+        "A yellow light warns the driver that the next signal is red, so the train slows down.",
+        "Green means the line ahead is clear.",
+        "Ben's train had waited because a slow train was still in the next block, around a bend.",
+        "Ben now watches every signal from the window, and he has started a notebook of their colors."
+      ],
+      "breaks": [4, 9, 15],
+      "topics": ["transport", "safety"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Why Trains Need Signals",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p05",
+      "title": "Rooms in a Shell",
+      "kind": "story",
+      "picture": "🐚🦑",
+      "sentences": [
+        "At the dig tent, Priya asked Dr. Bell what an ammonite was.",
+        "Dr. Bell said that ammonites were sea animals with soft bodies and hard, coiled shells.",
+        "They were related to the squid and the octopus of today.",
+        "Like a squid, an ammonite had arms near its head for catching food.",
+        "Its shell was split into many small rooms by thin walls.",
+        "The animal lived in the biggest room, at the open end of the shell.",
+        "The empty rooms held gas, which helped the ammonite float in the water.",
+        "As the ammonite grew, it built a new, bigger room and moved into it.",
+        "Most ammonites were small enough to hold in your hand, but a few grew wider than a bike wheel.",
+        "Ammonites lived in the sea for more than 300 million years.",
+        "They died out at the same time as the last dinosaurs.",
+        "Priya turned her own ammonite over and traced the curved lines where the walls had been."
+      ],
+      "topics": ["dinosaurs", "ocean", "animals"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rooms in a Shell",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p06",
+      "title": "Stripes in the Cliff",
+      "kind": "story",
+      "picture": "🪨🐚",
+      "sentences": [
+        "On the last day of the dig, Ms. Ortiz brought her science class to Fossil Bay by boat.",
+        "Dr. Bell met them on the beach, below the tall gray cliff.",
+        "She asked the class to look closely at the cliff and say what they noticed.",
+        "Maya said that the cliff was made of thin stripes, some dark gray and some light gray.",
+        "Dr. Bell explained that each stripe is a layer of rock.",
+        "Each layer began as mud that settled on the floor of a sea, long ago.",
+        "New mud always settled on top of older mud, so the lowest layers are the oldest.",
+        "This means the layers can help scientists tell how old a fossil is.",
+        "A fossil found near the bottom of the cliff is older than a fossil found near the top.",
+        "Dr. Bell showed the class a chart of the cliff, with a drawing of a different ammonite beside each layer.",
+        "One kind, with a smooth shell, is found only in the lowest layers.",
+        "Another kind, with sharp ridges, is found only near the top.",
+        "So when a visitor finds a loose stone on the beach, the ammonite inside it shows which layer the stone fell from.",
+        "After the talk, the class ate lunch on the pier, and a gull tried to take Sam's sandwich.",
+        "Before the boat left, Dr. Bell gave each student a postcard with a drawing of the cliff."
+      ],
+      "breaks": [4, 9],
+      "topics": ["dinosaurs", "mining", "school"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Stripes in the Cliff",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p05",
+      "title": "Under the Glass Floor",
+      "kind": "story",
+      "picture": "🐠🪸",
+      "sentences": [
+        "On the reef boat, Maya lay on the glass floor with her sketchbook.",
+        "Below her, an orange and white clownfish swam in and out of a sea anemone.",
+        "A sea anemone looks like a soft flower, but it is an animal.",
+        "Its long arms, called tentacles, can sting small fish that touch them.",
+        "Mari said the clownfish is safe, because a slimy coat on its skin stops the stings.",
+        "So the clownfish hides in the tentacles when a big fish comes near.",
+        "The clownfish helps the anemone too.",
+        "It chases away fish that try to eat the anemone's tentacles.",
+        "Mari said that the two animals help each other every day.",
+        "Maya drew the clownfish inside the anemone, with a big fish swimming away.",
+        "Then the boat moved on, and she closed her sketchbook."
+      ],
+      "topics": ["ocean", "animals"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Under the Glass Floor",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p06",
+      "title": "Inside the Ring of Coral",
+      "kind": "story",
+      "picture": "🌊🪸",
+      "sentences": [
+        "From the hill on Gull Island, Leo had seen a ring of white waves far to the west.",
+        "When he reached Reef Island, he learned what that white ring was.",
+        "It was the place where waves from the open sea meet the coral reef.",
+        "Mari explained that the reef is a ring of coral around the whole island, just under the surface of the sea.",
+        "Big waves roll in from the open sea, and when they reach the shallow reef, they break into white foam.",
+        "Most of their power is used up on the outer edge of the reef.",
+        "By the time the water reaches the lagoon, the waves are small and gentle.",
+        "Because the water is calm, sand sinks to the bottom, and the water stays clear.",
+        "Many young fish grow up in the calm lagoon, where they are safer than in the open sea.",
+        "Leo also noticed that Mari's boat was painted bright yellow, with a turtle on the side.",
+        "At lunch, he ate a mango and two cheese sandwiches on the beach.",
+        "In the afternoon, he swam in the lagoon, and there were almost no waves at all."
+      ],
+      "breaks": [3, 9],
+      "topics": ["ocean", "nature"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Inside the Ring of Coral",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
         "adapted": false
       }
     }
@@ -7193,6 +8258,1016 @@
         "article",
         "too-narrow"
       ]
+    },
+    {
+      "id": "n6-i184",
+      "skill": "N6",
+      "passage": "n6-p66",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "\"His skateboard was a rocket.\" Fill in the metaphor map.",
+      "slots": [
+        {
+          "kind": "like",
+          "label": "The skateboard was like…",
+          "options": ["a rocket", "a snail", "a tree"],
+          "answer": [0]
+        },
+        {
+          "kind": "share",
+          "label": "What do they share?",
+          "options": ["They go very fast.", "They are made of wood.", "They have four wheels."],
+          "answer": [0]
+        },
+        {
+          "kind": "means",
+          "label": "So the skateboard…",
+          "options": ["went very fast", "flew into space", "broke in half"],
+          "answer": [0]
+        }
+      ],
+      "evidence": [1, 2],
+      "hint": "Think about what a rocket does. Then read how the trees looked as Leo went by.",
+      "explain": "The skateboard was like a rocket, because both go very fast. So the skateboard went very fast down the hill. It was not a real rocket.",
+      "inference": 1,
+      "tags": ["metaphor", "metaphor-map"]
+    },
+    {
+      "id": "n6-i185",
+      "skill": "N6",
+      "passage": "n6-p66",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Leo said, \"You are a snail today.\" What did he mean?",
+      "options": [
+        "Sam was riding very slowly.",
+        "Sam had a shell on his back.",
+        "Sam was hiding from him."
+      ],
+      "answer": 0,
+      "evidence": [4, 5],
+      "hint": "Read what Sam did just before Leo spoke. Then think about how a snail moves.",
+      "explain": "Leo meant that Sam was riding very slowly, the way a snail moves. Sam is not really a snail.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["metaphor", "metaphor-new"]
+    },
+    {
+      "id": "n6-i186",
+      "skill": "N6",
+      "passage": "n6-p67",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "\"The room was a quiet cave.\" Fill in the metaphor map.",
+      "slots": [
+        {
+          "kind": "like",
+          "label": "The room was like…",
+          "options": ["a quiet cave", "a busy street", "a big party"],
+          "answer": [0]
+        },
+        {
+          "kind": "share",
+          "label": "What do they share?",
+          "options": [
+            "They are dim and still.",
+            "They are full of books.",
+            "They are cold and wet."
+          ],
+          "answer": [0]
+        },
+        {
+          "kind": "means",
+          "label": "So the room was…",
+          "options": ["dim and silent", "under the ground", "full of rocks"],
+          "answer": [0]
+        }
+      ],
+      "evidence": [1, 2],
+      "hint": "Think about what it is like inside a cave. Then read about the lamps.",
+      "explain": "The room was like a quiet cave, because both were dim and still. So the room was dim and silent. It was not a real cave.",
+      "inference": 1,
+      "tags": ["metaphor", "metaphor-map"]
+    },
+    {
+      "id": "n6-i187",
+      "skill": "N6",
+      "passage": "n6-p67",
+      "format": "tap",
+      "level": 2,
+      "prompt": "\"Her bag was a rock on her back.\" What does that mean?",
+      "options": ["Her bag felt very heavy.", "She carried a rock home.", "Her bag was gray."],
+      "answer": 0,
+      "evidence": [4, 5],
+      "hint": "Read what Maya put in her bag. How would that feel to carry?",
+      "explain": "Her bag felt very heavy, like a rock, because she packed six thick books. She did not really carry a rock.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["metaphor", "metaphor-new"]
+    },
+    {
+      "id": "n6-i188",
+      "skill": "N6",
+      "passage": "n6-p68",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "\"Her first note was a bright sunrise.\" Fill in the metaphor map.",
+      "slots": [
+        {
+          "kind": "like",
+          "label": "The note was like…",
+          "options": ["a bright sunrise", "a dark night", "a cold wind"],
+          "answer": [0]
+        },
+        {
+          "kind": "share",
+          "label": "What do they share?",
+          "options": [
+            "They are bright and make you notice them.",
+            "They are very hot.",
+            "They happen in the morning."
+          ],
+          "answer": [0]
+        },
+        {
+          "kind": "means",
+          "label": "So the note was…",
+          "options": ["clear and strong", "played at dawn", "too quiet to hear"],
+          "answer": [0]
+        }
+      ],
+      "evidence": [1, 2],
+      "hint": "Think about what a sunrise is like. Then read what the people in the room did.",
+      "explain": "The note was like a bright sunrise, because both are bright and make people notice them. So the note was clear and strong, and everyone listened.",
+      "inference": 1,
+      "tags": ["metaphor", "metaphor-map"]
+    },
+    {
+      "id": "n6-i189",
+      "skill": "N6",
+      "passage": "n6-p68",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ana said her legs were jelly. What did she mean?",
+      "options": [
+        "Her legs felt weak and shaky.",
+        "She ate jelly after the show.",
+        "Her legs were sticky."
+      ],
+      "answer": 0,
+      "evidence": [4, 5],
+      "hint": "Read what Ana did right after she said it.",
+      "explain": "Ana meant that her legs felt weak and shaky, like soft jelly. So she sat down until they felt strong again.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["metaphor", "metaphor-new"]
+    },
+    {
+      "id": "n6-i190",
+      "skill": "N6",
+      "passage": "n6-p69",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "\"The yard was a white blanket.\" Fill in the metaphor map.",
+      "slots": [
+        {
+          "kind": "like",
+          "label": "The yard was like…",
+          "options": ["a white blanket", "a white wall", "a white plate"],
+          "answer": [0]
+        },
+        {
+          "kind": "share",
+          "label": "What do they share?",
+          "options": [
+            "They cover things in a soft, even layer.",
+            "They keep you warm in bed.",
+            "They are made of cloth."
+          ],
+          "answer": [0]
+        },
+        {
+          "kind": "means",
+          "label": "So the yard was…",
+          "options": ["covered in snow", "covered by a real blanket", "very cold"],
+          "answer": [0]
+        }
+      ],
+      "evidence": [0, 1],
+      "hint": "Read what fell all night. Then think about how a blanket lies on a bed.",
+      "explain": "The yard was like a white blanket, because snow covered it in a soft, even layer. So snow covered the whole yard.",
+      "inference": 1,
+      "tags": ["metaphor", "metaphor-map"]
+    },
+    {
+      "id": "n6-i191",
+      "skill": "N6",
+      "passage": "n6-p69",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Sam called Pixel a little snowman. What did he mean?",
+      "options": ["Pixel was covered in snow.", "Pixel was made of snow.", "Pixel was very cold."],
+      "answer": 0,
+      "evidence": [3, 4],
+      "hint": "Read what Pixel's fur looked like just before Sam spoke.",
+      "explain": "Sam meant that Pixel was covered in snow, so he looked white like a snowman. Pixel is still a dog.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["metaphor", "metaphor-new"]
+    },
+    {
+      "id": "n6-i192",
+      "skill": "N6",
+      "passage": "n6-p70",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "\"Her stomach was a washing machine.\" Fill in the metaphor map.",
+      "slots": [
+        {
+          "kind": "like",
+          "label": "Her stomach was like…",
+          "options": ["a washing machine", "a quiet room", "a cold drink", "a tall volcano"],
+          "answer": [0]
+        },
+        {
+          "kind": "share",
+          "label": "What do they share?",
+          "options": [
+            "They churn and turn around and around.",
+            "They are full of water.",
+            "They are made of metal.",
+            "They are very loud."
+          ],
+          "answer": [0]
+        },
+        {
+          "kind": "means",
+          "label": "So her stomach…",
+          "options": [
+            "felt upset because she was nervous",
+            "was hungry for lunch",
+            "was full of soap",
+            "felt sleepy"
+          ],
+          "answer": [0]
+        }
+      ],
+      "evidence": [3, 8, 9],
+      "hint": "Think about how a washing machine moves. Then read how her stomach felt once she was calm.",
+      "explain": "Her stomach was like a washing machine, because it felt like it was churning. So her stomach felt upset because she was nervous. When she felt calm, it was still.",
+      "inference": 1,
+      "tags": ["metaphor", "metaphor-map"]
+    },
+    {
+      "id": "n6-i193",
+      "skill": "N6",
+      "passage": "n6-p70",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The judge said, \"This rover is a little explorer.\" What did he mean?",
+      "options": [
+        "The rover can move around and look at new places.",
+        "The rover is a person.",
+        "The rover is too small to work.",
+        "The rover has a map inside."
+      ],
+      "answer": 0,
+      "evidence": [5, 7],
+      "hint": "Read what Priya showed the judge. What does an explorer do?",
+      "explain": "The judge meant that the rover can move around and look at new places, as an explorer does. It sends pictures from its camera.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["metaphor", "metaphor-new"]
+    },
+    {
+      "id": "n6-i194",
+      "skill": "N6",
+      "passage": "n6-p71",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "\"The wind was a wild horse.\" Fill in the metaphor map.",
+      "slots": [
+        {
+          "kind": "like",
+          "label": "The wind was like…",
+          "options": ["a wild horse", "a sleeping cat", "a slow train", "a soft pillow"],
+          "answer": [0]
+        },
+        {
+          "kind": "share",
+          "label": "What do they share?",
+          "options": [
+            "They are strong and fast and hard to stop.",
+            "They have four legs.",
+            "They are brown.",
+            "They live on a farm."
+          ],
+          "answer": [0]
+        },
+        {
+          "kind": "means",
+          "label": "So the wind was…",
+          "options": ["strong and fast", "a horse in the street", "warm and gentle", "very quiet"],
+          "answer": [0]
+        }
+      ],
+      "evidence": [1],
+      "hint": "Think about how a wild horse runs. Then read what Grandma Rose did next.",
+      "explain": "The wind was like a wild horse, because both are strong and fast and hard to stop. So the wind was strong and fast. There was no real horse.",
+      "inference": 1,
+      "tags": ["metaphor", "metaphor-map"]
+    },
+    {
+      "id": "n6-i195",
+      "skill": "N6",
+      "passage": "n6-p71",
+      "format": "tap",
+      "level": 3,
+      "prompt": "\"The harbor was a mirror, smooth and still.\" What does that mean?",
+      "options": [
+        "The water was calm and flat.",
+        "Someone put a mirror in the harbor.",
+        "The harbor was made of glass.",
+        "The water was dark and cold."
+      ],
+      "answer": 0,
+      "evidence": [7, 8],
+      "hint": "Read what happened to the storm. Then think about how a mirror looks.",
+      "explain": "The water was calm and flat after the storm, so it looked smooth like a mirror. It was not a real mirror.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["metaphor", "metaphor-new"]
+    },
+    {
+      "id": "n6-i196",
+      "skill": "N6",
+      "passage": "n6-p72",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "\"His homework was a mountain on his desk.\" Fill in the metaphor map.",
+      "slots": [
+        {
+          "kind": "like",
+          "label": "His homework was like…",
+          "options": ["a mountain", "a feather", "a pencil", "a river"],
+          "answer": [0]
+        },
+        {
+          "kind": "share",
+          "label": "What do they share?",
+          "options": [
+            "They are very big and hard to get over.",
+            "They are covered in snow.",
+            "They are made of rock.",
+            "They are far away."
+          ],
+          "answer": [0]
+        },
+        {
+          "kind": "means",
+          "label": "So Ben had…",
+          "options": [
+            "a very large amount of work",
+            "a real mountain on his desk",
+            "a very tall desk",
+            "easy homework"
+          ],
+          "answer": [0]
+        }
+      ],
+      "evidence": [0, 1, 2],
+      "hint": "Think about how a mountain looks to someone at the bottom. Then read what Ben did not know.",
+      "explain": "His homework was like a mountain, because both were very big and hard to get over. So Ben had a very large amount of work.",
+      "inference": 1,
+      "tags": ["metaphor", "metaphor-map"]
+    },
+    {
+      "id": "n6-i197",
+      "skill": "N6",
+      "passage": "n6-p72",
+      "format": "tap",
+      "level": 3,
+      "prompt": "\"By Thursday, the mountain was a small hill.\" What does that tell you?",
+      "options": [
+        "There was much less work left.",
+        "The mountain got smaller in the rain.",
+        "Ben went for a walk on a hill.",
+        "His desk got smaller."
+      ],
+      "answer": 0,
+      "evidence": [5, 6],
+      "hint": "Remember what the mountain stood for. Then read what Ben did each night.",
+      "explain": "It tells you there was much less work left. Ben did one small part of his list each night, so the big pile of work got small.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["metaphor", "metaphor-new"]
+    },
+    {
+      "id": "n6-i198",
+      "skill": "N6",
+      "passage": "n6-p73",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "\"Grandma Rose's kitchen was a beehive.\" Fill in the metaphor map.",
+      "slots": [
+        {
+          "kind": "like",
+          "label": "The kitchen was like…",
+          "options": ["a beehive", "a library", "a garden", "a bedroom"],
+          "answer": [0]
+        },
+        {
+          "kind": "share",
+          "label": "What do they share?",
+          "options": [
+            "They are full of busy workers moving fast.",
+            "They are full of honey.",
+            "They are made of wax.",
+            "They are quiet and still."
+          ],
+          "answer": [0]
+        },
+        {
+          "kind": "means",
+          "label": "So the kitchen was…",
+          "options": ["very busy", "full of bees", "painted yellow", "empty"],
+          "answer": [0]
+        }
+      ],
+      "evidence": [0, 1],
+      "hint": "Think about what bees in a hive do all day. Then read what the bakers did.",
+      "explain": "The kitchen was like a beehive, because both are full of busy workers moving fast. So the kitchen was very busy. There were no real bees.",
+      "inference": 1,
+      "tags": ["metaphor", "metaphor-map"]
+    },
+    {
+      "id": "n6-i199",
+      "skill": "N6",
+      "passage": "n6-p73",
+      "format": "tap",
+      "level": 3,
+      "prompt": "\"The smell was a warm hug.\" What does that mean?",
+      "options": [
+        "The smell was nice and made people feel good.",
+        "The smell was very hot.",
+        "Someone hugged the people outside.",
+        "The smell was strong and bad."
+      ],
+      "answer": 0,
+      "evidence": [5, 6],
+      "hint": "Think about how a hug feels. Then read what people walking past did.",
+      "explain": "The smell was nice and made people feel good, the way a warm hug does. So people walking past came inside.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["metaphor", "metaphor-new"]
+    },
+    {
+      "id": "n6-i200",
+      "skill": "N6",
+      "passage": "n6-p74",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "\"The dark fields were an ocean.\" Fill in the metaphor map.",
+      "slots": [
+        {
+          "kind": "like",
+          "label": "The dark fields were like…",
+          "options": ["an ocean", "a forest", "a city", "a desert"],
+          "answer": [0]
+        },
+        {
+          "kind": "share",
+          "label": "What do they share?",
+          "options": [
+            "They are wide, flat and dark at night.",
+            "They are full of fish.",
+            "They are wet.",
+            "They are loud."
+          ],
+          "answer": [0]
+        },
+        {
+          "kind": "means",
+          "label": "So the fields…",
+          "options": [
+            "looked wide and dark, like the sea at night",
+            "were flooded with water",
+            "were next to the beach",
+            "were full of boats"
+          ],
+          "answer": [0]
+        }
+      ],
+      "evidence": [1],
+      "hint": "Think about how the sea looks at night. Then read what the farmhouse lights were compared to.",
+      "explain": "The dark fields were like an ocean, because both are wide, flat and dark at night. So the fields looked like the sea, and the farmhouse lights looked like far-away boats.",
+      "inference": 1,
+      "tags": ["metaphor", "metaphor-map"]
+    },
+    {
+      "id": "n6-i201",
+      "skill": "N6",
+      "passage": "n6-p74",
+      "format": "tap",
+      "level": 4,
+      "prompt": "\"Inside, the train car was a warm, humming cocoon.\" What does that mean?",
+      "options": [
+        "The train car felt cozy, safe and warm.",
+        "The train car was full of insects.",
+        "The train car was cold and noisy.",
+        "The train car was very small and crowded."
+      ],
+      "answer": 0,
+      "evidence": [3, 4],
+      "hint": "A cocoon is a soft case that wraps around a young insect. Read what most of the class was doing.",
+      "explain": "The train car felt cozy, safe and warm, like a soft cocoon wrapped around them. That is why most of the class fell asleep.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["metaphor", "metaphor-new"]
+    },
+    {
+      "id": "n6-i202",
+      "skill": "N6",
+      "passage": "n6-p75",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "\"The problem was a locked door.\" Fill in the metaphor map.",
+      "slots": [
+        {
+          "kind": "like",
+          "label": "The problem was like…",
+          "options": ["a locked door", "an open window", "a new rover", "a sticky note"],
+          "answer": [0]
+        },
+        {
+          "kind": "share",
+          "label": "What do they share?",
+          "options": [
+            "They stop you until you find the way through.",
+            "They are made of wood.",
+            "They are found in a house.",
+            "They make a loud noise."
+          ],
+          "answer": [0]
+        },
+        {
+          "kind": "means",
+          "label": "So the problem…",
+          "options": [
+            "stopped her, and she could not find the answer",
+            "was a real door in the club room",
+            "was about her house key",
+            "was easy to fix"
+          ],
+          "answer": [0]
+        }
+      ],
+      "evidence": [0, 2],
+      "hint": "Think about what a locked door does when you have no key. Then read how long the problem lasted.",
+      "explain": "The problem was like a locked door, because both stop you until you find the way through. So the problem stopped her, and she could not find the answer.",
+      "inference": 1,
+      "tags": ["metaphor", "metaphor-map"]
+    },
+    {
+      "id": "n6-i203",
+      "skill": "N6",
+      "passage": "n6-p75",
+      "format": "tap",
+      "level": 4,
+      "prompt": "\"The fix was a tiny key that opened the whole door.\" What does that mean?",
+      "options": [
+        "One small change solved the whole problem.",
+        "Mrs. Hall gave Priya a key.",
+        "The rover learned to open doors.",
+        "The fix took a very long time."
+      ],
+      "answer": 0,
+      "evidence": [8, 9],
+      "hint": "Remember what the locked door stood for. Then read how much Priya changed.",
+      "explain": "One small change solved the whole problem. Priya changed one number, and the rover turned left.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["metaphor", "metaphor-new"]
+    },
+    {
+      "id": "cu-home-i05",
+      "skill": "N6",
+      "passage": "cu-home-p05",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "Priya counted sixty-two bottle caps on the beach.",
+        "Grandma Rose brought muffins for the helpers.",
+        "Fishing line can trap gulls and seals.",
+        "Ms. Ortiz's class worked together to clean the harbor beach."
+      ],
+      "answer": 3,
+      "evidence": [1, 2, 8, 9],
+      "hint": "Think about what all the sentences have in common. A choice about only one person or one thing is too small.",
+      "explain": "The story is mostly about Ms. Ortiz's class working together to clean the harbor beach. The bottle caps, the fishing line and the muffins are details.",
+      "inference": 1,
+      "checkup": "home",
+      "tags": ["main-idea", "too-narrow"]
+    },
+    {
+      "id": "cu-home-i06",
+      "skill": "N6",
+      "passage": "cu-home-p06",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which detail best supports the main idea of this story?",
+      "options": [
+        "Mr. Okafor fixed eleven bikes that their owners had planned to throw away.",
+        "The Repair Café meets in the big room at the library.",
+        "Grandma Rose brought a tray of lemon bars for the helpers.",
+        "The Repair Café meets on the last Sunday of each month."
+      ],
+      "answer": 0,
+      "evidence": [2, 4],
+      "hint": "First, find the sentence that tells the idea of the Repair Café. Then pick the detail that shows that idea happening.",
+      "explain": "Mr. Okafor fixed eleven bikes that were going to be thrown away. This shows the main idea: things that can be fixed should not go in the trash. The room, the day and the lemon bars are extra details.",
+      "inference": 1,
+      "checkup": "home",
+      "tags": ["key-detail", "extra-detail"]
+    },
+    {
+      "id": "cu-gull-i05",
+      "skill": "N6",
+      "passage": "cu-gull-p05",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "Sam went to Gull Island to watch the ferry.",
+        "Sam watched gulls drop clams on rocks to break them open.",
+        "One gull dropped its clam on the soft sand.",
+        "Sam showed his notes to Ms. Ortiz."
+      ],
+      "answer": 1,
+      "evidence": [2, 3, 4, 5, 6],
+      "hint": "Ask what most of the sentences are about. A choice about only one moment is too small.",
+      "explain": "The story is mostly about Sam watching gulls drop clams on rocks to break them open. The ferry, the soft sand and Ms. Ortiz are smaller details.",
+      "inference": 1,
+      "checkup": "gull",
+      "tags": ["main-idea", "too-narrow"]
+    },
+    {
+      "id": "cu-gull-i06",
+      "skill": "N6",
+      "passage": "cu-gull-p06",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which detail best supports the main idea of this story?",
+      "options": [
+        "The ride across the bay took forty minutes.",
+        "The wind blew Ben's hat into a bush.",
+        "They ate their sandwiches at a picnic table near the dock.",
+        "They put up a rope fence fifty meters from the pups."
+      ],
+      "answer": 3,
+      "evidence": [6],
+      "hint": "First, say the main idea in your head. Then ask which detail shows Ana and Ben helping the pups.",
+      "explain": "Putting up a rope fence far from the pups supports the main idea, because it kept visitors at a safe distance. The ferry ride, the lunch and the hat are extra details.",
+      "inference": 1,
+      "checkup": "gull",
+      "tags": ["key-detail", "extra-detail"]
+    },
+    {
+      "id": "cu-cape-i05",
+      "skill": "N6",
+      "passage": "cu-cape-p05",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "Captain Ada showed Sam three ways to check the wind.",
+        "The windsock at Windy Cape is orange.",
+        "The weather report said the wind would get stronger after lunch.",
+        "Captain Ada kept her boat at the dock."
+      ],
+      "answer": 0,
+      "evidence": [1, 2, 5, 7],
+      "hint": "Count the ways to check the wind in the story. Then ask what all those sentences are about together.",
+      "explain": "The story is mostly about Captain Ada showing Sam three ways to check the wind: the windsock, the waves and the weather radio. The orange color, the report and the boat are details.",
+      "inference": 1,
+      "checkup": "cape",
+      "tags": ["main-idea", "too-narrow"]
+    },
+    {
+      "id": "cu-cape-i06",
+      "skill": "N6",
+      "passage": "cu-cape-p06",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which detail best supports the main idea of this story?",
+      "options": [
+        "A small shop sold key rings shaped like gulls.",
+        "The sea wind hits the cliffs and is pushed upward, so it lifts kites high.",
+        "Leo went to Windy Cape on a Sunday in April.",
+        "Leo drank a cup of hot chocolate on a bench."
+      ],
+      "answer": 1,
+      "evidence": [7],
+      "hint": "First, say the main idea in your head. Then pick the detail that gives a reason for it.",
+      "explain": "The sea wind being pushed up by the cliffs supports the main idea, because it is a reason Windy Cape is the best place for kites. The shop, the day and the hot chocolate are extra details.",
+      "inference": 1,
+      "checkup": "cape",
+      "tags": ["key-detail", "extra-detail"]
+    },
+    {
+      "id": "cu-airfield-i05",
+      "skill": "N6",
+      "passage": "cu-airfield-p05",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "how Nell met Mr. Lund at the airfield",
+        "why the windsock is orange and white",
+        "how a windsock shows pilots what the wind is doing",
+        "how a plane lifts into the air"
+      ],
+      "answer": 2,
+      "evidence": [2, 7],
+      "hint": "Think about what almost every sentence tells you. The main idea fits the whole story, not just one part.",
+      "explain": "The story is mostly about how a windsock shows pilots what the wind is doing. Mr. Lund says this in the third sentence, and the sentences after it explain how.",
+      "inference": 1,
+      "checkup": "airfield",
+      "tags": ["main-idea", "too-narrow"]
+    },
+    {
+      "id": "cu-airfield-i06",
+      "skill": "N6",
+      "passage": "cu-airfield-p06",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The story ends by saying that every part of the runway has a job. Which detail best supports this idea?",
+      "options": [
+        "At night, the edge lights show pilots exactly where the runway is.",
+        "The walk down the runway took almost ten minutes.",
+        "Captain Ada and Nell walked on a clear afternoon.",
+        "Nell walked with Captain Ada down the whole runway."
+      ],
+      "answer": 0,
+      "evidence": [10, 11, 14],
+      "hint": "Read the last sentence again. Then look for a detail that tells what one part of the runway does for pilots.",
+      "explain": "The edge lights show pilots where the runway is at night, so the lights have a job. This detail is in the third paragraph. The other details tell about the walk, not about what a part of the runway does.",
+      "inference": 1,
+      "checkup": "airfield",
+      "tags": ["key-detail", "supporting-detail"]
+    },
+    {
+      "id": "cu-takeoff-i05",
+      "skill": "N6",
+      "passage": "cu-takeoff-p05",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which title fits this story best?",
+      "options": [
+        "Nell Sits in a Plane",
+        "How Fast Can a Plane Go?",
+        "A Trip to Australia",
+        "The Dials That Help a Pilot Fly"
+      ],
+      "answer": 3,
+      "evidence": [2, 8],
+      "hint": "A good title fits the whole story. Ask what most of the sentences are about.",
+      "explain": "\"The Dials That Help a Pilot Fly\" fits best. Most sentences tell what one dial shows, and the last sentence says the dials help Captain Ada fly safely.",
+      "inference": 1,
+      "checkup": "takeoff",
+      "tags": ["main-idea", "best-title"]
+    },
+    {
+      "id": "cu-takeoff-i06",
+      "skill": "N6",
+      "passage": "cu-takeoff-p06",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The main idea is that flying over the sea takes careful planning. Which detail best supports this main idea?",
+      "options": [
+        "Once, she saw a group of dolphins jumping far below.",
+        "Over land, a pilot can see roads, rivers and towns.",
+        "Captain Ada left from Cloud Hill.",
+        "She marked two small islands on her map where she could stop for fuel."
+      ],
+      "answer": 3,
+      "evidence": [5, 6, 7],
+      "hint": "Ask of each detail: does it show Captain Ada planning the flight? Look for things she did before she left.",
+      "explain": "Marking two islands where she could stop for fuel shows careful planning. It is in the second paragraph. The dolphins are an interesting detail, but they do not show planning.",
+      "inference": 1,
+      "checkup": "takeoff",
+      "tags": ["key-detail", "supporting-detail"]
+    },
+    {
+      "id": "cu-australia-i05",
+      "skill": "N6",
+      "passage": "cu-australia-p05",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "how koalas use their two thumbs",
+        "how a koala's body helps it live in trees",
+        "how Captain Ada met Ranger Tess",
+        "why koalas sleep so much"
+      ],
+      "answer": 1,
+      "evidence": [2],
+      "hint": "Think about what the thumbs, the claws, the pads and the sleeping place have in common.",
+      "explain": "The story is mostly about how a koala's body helps it live in trees. Ranger Tess says this in the third sentence, and the thumbs, claws, pads and sleeping place are all examples.",
+      "inference": 1,
+      "checkup": "australia",
+      "tags": ["main-idea", "too-narrow"]
+    },
+    {
+      "id": "cu-australia-i06",
+      "skill": "N6",
+      "passage": "cu-australia-p06",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which detail best explains why koalas sleep so much?",
+      "options": [
+        "Banjo sleeps in the fork of his tree.",
+        "Visitors ask Ranger Tess about it every day.",
+        "Koalas are most awake in the evening and at night.",
+        "Eucalyptus leaves give a koala very little energy."
+      ],
+      "answer": 3,
+      "evidence": [5, 6, 8],
+      "hint": "Find the sentence that says what the reason is. Then read the sentences right after it.",
+      "explain": "Eucalyptus leaves give a koala very little energy, so koalas rest to save it. This is in the second paragraph, right after Ranger Tess says their food is the reason.",
+      "inference": 1,
+      "checkup": "australia",
+      "tags": ["key-detail", "cause-effect"]
+    },
+    {
+      "id": "cu-star-i05",
+      "skill": "N6",
+      "passage": "cu-star-p05",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "A white box keeps the sun off the thermometer.",
+        "Three small cups spin on top of the tallest pole.",
+        "Star Point has a white dome and a big telescope.",
+        "Maya learned how the tools at the weather station measure the weather."
+      ],
+      "answer": 3,
+      "evidence": [1, 3, 5, 8, 9],
+      "hint": "Ask what most of the sentences are about. A choice about only one tool is too small.",
+      "explain": "The story is mostly about Maya learning how the weather station tools measure the weather. The white box and the spinning cups are each only one tool.",
+      "inference": 1,
+      "checkup": "star",
+      "tags": ["main-idea", "too-narrow"]
+    },
+    {
+      "id": "cu-star-i06",
+      "skill": "N6",
+      "passage": "cu-star-p06",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which detail best supports the main idea of this story?",
+      "options": [
+        "Grandma Rose brought a flask of warm tea and two wool blankets.",
+        "Its wide solar panels reflect sunlight, so it shines like a bright star.",
+        "Sam wrote the time in his notebook so he could tell Priya at school.",
+        "Sam and Grandma Rose spent two spring nights at Star Point."
+      ],
+      "answer": 1,
+      "evidence": [5],
+      "hint": "First, say the main idea in your head. Then ask which detail helps explain how Sam could see the station.",
+      "explain": "The solar panels reflect sunlight, so the station shines like a bright star. This detail explains why Sam could see it without a telescope. The tea, the notebook and the two nights are extra details.",
+      "inference": 1,
+      "checkup": "star",
+      "tags": ["key-detail", "extra-detail"]
+    },
+    {
+      "id": "cu-rail-i05",
+      "skill": "N6",
+      "passage": "cu-rail-p05",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which detail is most important for reading the big map?",
+      "options": [
+        "The big clock in the hall ticked loudly.",
+        "Mr. Haddad showed Sam the map on Thursday.",
+        "The key shows each symbol on the map and tells what it means.",
+        "The map room is at Rail Coast station."
+      ],
+      "answer": 2,
+      "evidence": [4],
+      "hint": "Think about what the story is mostly about. Then pick the detail that helps most with that.",
+      "explain": "The most important detail is that the key tells what each symbol means. Without the key, Sam could not find Shell Halt or the railway. The clock and the day are extra details.",
+      "inference": 1,
+      "checkup": "rail",
+      "tags": ["key-detail", "extra-detail"]
+    },
+    {
+      "id": "cu-rail-i06",
+      "skill": "N6",
+      "passage": "cu-rail-p06",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the main idea of this story?",
+      "options": [
+        "Signals keep trains apart, because trains cannot stop or steer quickly.",
+        "A yellow light warns the driver that the next signal is red.",
+        "Ben rode the Coast Line with his mom on a windy afternoon.",
+        "Ben has started a notebook of signal colors."
+      ],
+      "answer": 0,
+      "evidence": [4, 8, 9, 10],
+      "hint": "Ask what most of the second and third paragraphs explain. A choice about one light or one moment is too small.",
+      "explain": "The main idea is that signals keep trains apart, because trains cannot stop or steer quickly. Most of the story explains this. The yellow light and Ben's notebook are smaller details.",
+      "inference": 1,
+      "checkup": "rail",
+      "tags": ["main-idea", "too-narrow"]
+    },
+    {
+      "id": "cu-fossil-i05",
+      "skill": "N6",
+      "passage": "cu-fossil-p05",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which title fits this story best?",
+      "options": [
+        "Priya Visits the Dig Tent",
+        "The Biggest Ammonites",
+        "When the Dinosaurs Died Out",
+        "How Ammonites Lived"
+      ],
+      "answer": 3,
+      "evidence": [1, 4, 5, 6, 7],
+      "hint": "A good title fits the whole story. Ask what most of the sentences tell about.",
+      "explain": "\"How Ammonites Lived\" fits best. Most sentences tell about the ammonite's body, the rooms in its shell and how it grew. The tent, the biggest ammonites and the dinosaurs are smaller details.",
+      "inference": 1,
+      "checkup": "fossil",
+      "tags": ["main-idea", "best-title"]
+    },
+    {
+      "id": "cu-fossil-i06",
+      "skill": "N6",
+      "passage": "cu-fossil-p06",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The main idea is that the layers in the cliff help tell how old a fossil is. Which detail best supports this main idea?",
+      "options": [
+        "A gull tried to take Sam's sandwich on the pier.",
+        "Maya said the cliff was made of thin gray stripes.",
+        "New mud settled on top of older mud, so the lowest layers are the oldest.",
+        "Dr. Bell gave each student a postcard of the cliff."
+      ],
+      "answer": 2,
+      "evidence": [6],
+      "hint": "Ask of each detail: does it help show how old a fossil is? A detail can be about the cliff and still say nothing about age.",
+      "explain": "New mud settled on top of older mud, so the lowest layers are the oldest. That is how a layer can tell the age of a fossil. It is in the second paragraph. The stripes, the postcard and the gull do not tell anything about age.",
+      "inference": 1,
+      "checkup": "fossil",
+      "tags": ["key-detail", "supporting-detail", "close-distractor"]
+    },
+    {
+      "id": "cu-reef-i05",
+      "skill": "N6",
+      "passage": "cu-reef-p05",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "A clownfish and a sea anemone help each other.",
+        "Maya draws in her sketchbook on the reef boat.",
+        "A sea anemone looks like a soft flower.",
+        "Mari drives the reef boat across the lagoon."
+      ],
+      "answer": 0,
+      "evidence": [4, 5, 6, 7, 8],
+      "hint": "Ask what most of the sentences are about. A choice about only one sentence is too small.",
+      "explain": "The story is mostly about a clownfish and a sea anemone helping each other. The anemone keeps the clownfish safe, and the clownfish chases away fish that eat the anemone. Maya's drawing and the flower are smaller details.",
+      "inference": 1,
+      "checkup": "reef",
+      "tags": ["main-idea", "too-narrow"]
+    },
+    {
+      "id": "cu-reef-i06",
+      "skill": "N6",
+      "passage": "cu-reef-p06",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The main idea is that the coral reef keeps the lagoon calm. Which detail best supports this main idea?",
+      "options": [
+        "Leo had seen a ring of white waves from Gull Island.",
+        "Big waves break on the outer edge of the reef before they reach the lagoon.",
+        "Mari's boat was painted bright yellow, with a turtle on the side.",
+        "Leo ate a mango and two cheese sandwiches on the beach."
+      ],
+      "answer": 1,
+      "evidence": [4, 5, 6],
+      "hint": "Ask of each detail: does it tell how the reef makes the water calm?",
+      "explain": "Big waves break on the outer edge of the reef, so they are small by the time they reach the lagoon. That shows how the reef keeps the lagoon calm. It is in the second paragraph. Seeing the white waves from Gull Island does not explain why the lagoon is calm.",
+      "inference": 1,
+      "checkup": "reef",
+      "tags": ["key-detail", "supporting-detail", "close-distractor"]
     }
   ],
   "model": {

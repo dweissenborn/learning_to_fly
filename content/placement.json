@@ -53,5 +53,31 @@
       { "id": "pl-l2", "skill": "N3", "passage": "pl-listen", "format": "tap", "level": 2, "inference": 1, "prompt": "Why did the rover stop?", "options": ["The battery was low", "A wheel fell off", "Priya pressed stop"], "answer": 0, "evidence": [4, 5], "explain": "The battery light was red, so the battery was low." },
       { "id": "pl-l3", "skill": "N5", "passage": "pl-listen", "format": "tap", "level": 2, "inference": 1, "prompt": "How did Priya feel at the end?", "options": ["Angry", "Scared", "Pleased"], "pictures": ["😠", "😨", "🙂"], "answer": 2, "evidence": [8], "explain": "She smiled, so she was pleased." }
     ]
-  }
+  },
+  "grammar": [
+    [
+      { "form": "active", "sentence": "The horse kicks the cow.", "ask": "Who did the kicking?", "options": [{"emoji": "🐴", "label": "the horse"}, {"emoji": "🐄", "label": "the cow"}], "answer": 0 },
+      { "form": "passive", "sentence": "The dog is chased by the cat.", "ask": "Who did the chasing?", "options": [{"emoji": "🐕", "label": "the dog"}, {"emoji": "🐈", "label": "the cat"}], "answer": 1 },
+      { "form": "relative", "sentence": "The girl who pushed the boy is wearing a hat.", "ask": "Who did the pushing?", "options": [{"emoji": "👧", "label": "the girl"}, {"emoji": "👦", "label": "the boy"}], "answer": 0 },
+      { "form": "object-relative", "sentence": "The boy that the girl is helping has a red bag.", "ask": "Who is helping?", "options": [{"emoji": "👦", "label": "the boy"}, {"emoji": "👧", "label": "the girl"}], "answer": 1 },
+      { "form": "pronoun", "sentence": "Sam gave Ana the ball, and then she threw it.", "ask": "Who threw the ball?", "options": [{"emoji": "👦", "label": "Sam"}, {"emoji": "👧", "label": "Ana"}], "answer": 1 },
+      { "form": "passive", "sentence": "The fish was given to the bear by the bird.", "ask": "Who gave the fish?", "options": [{"emoji": "🐦", "label": "the bird"}, {"emoji": "🐻", "label": "the bear"}, {"emoji": "🐟", "label": "the fish"}], "answer": 0 }
+    ],
+    [
+      { "form": "active", "sentence": "The teacher thanks the student.", "ask": "Who did the thanking?", "options": [{"emoji": "🧑‍🎓", "label": "the student"}, {"emoji": "👩‍🏫", "label": "the teacher"}], "answer": 1 },
+      { "form": "passive", "sentence": "The boy was helped by the man.", "ask": "Who did the helping?", "options": [{"emoji": "👨", "label": "the man"}, {"emoji": "👦", "label": "the boy"}], "answer": 0 },
+      { "form": "object-relative", "sentence": "The cat that the dog is watching is black.", "ask": "Who is watching?", "options": [{"emoji": "🐈", "label": "the cat"}, {"emoji": "🐕", "label": "the dog"}], "answer": 1 },
+      { "form": "relative", "sentence": "The man who called the woman is at the station.", "ask": "Who made the call?", "options": [{"emoji": "👨", "label": "the man"}, {"emoji": "👩", "label": "the woman"}], "answer": 0 },
+      { "form": "pronoun", "sentence": "Priya called Sam after she finished her homework.", "ask": "Who finished the homework?", "options": [{"emoji": "👦", "label": "Sam"}, {"emoji": "👧", "label": "Priya"}], "answer": 1 },
+      { "form": "passive", "sentence": "The lion is followed by the zebra.", "ask": "Who did the following?", "options": [{"emoji": "🦓", "label": "the zebra"}, {"emoji": "🦁", "label": "the lion"}], "answer": 0 }
+    ],
+    [
+      { "form": "active", "sentence": "The duck pecks the hen.", "ask": "Who did the pecking?", "options": [{"emoji": "🐓", "label": "the hen"}, {"emoji": "🦆", "label": "the duck"}], "answer": 1 },
+      { "form": "passive", "sentence": "The girl is pulled by the boy.", "ask": "Who did the pulling?", "options": [{"emoji": "👦", "label": "the boy"}, {"emoji": "👧", "label": "the girl"}], "answer": 0 },
+      { "form": "relative", "sentence": "The dog that chased the cat is brown.", "ask": "Who did the chasing?", "options": [{"emoji": "🐈", "label": "the cat"}, {"emoji": "🐕", "label": "the dog"}], "answer": 1 },
+      { "form": "object-relative", "sentence": "The girl that the woman is lifting is laughing.", "ask": "Who is lifting?", "options": [{"emoji": "👩", "label": "the woman"}, {"emoji": "👧", "label": "the girl"}], "answer": 0 },
+      { "form": "pronoun", "sentence": "Ana told Ben that he had won the race.", "ask": "Who won the race?", "options": [{"emoji": "👧", "label": "Ana"}, {"emoji": "👦", "label": "Ben"}], "answer": 1 },
+      { "form": "passive", "sentence": "The rabbit was found by the bear.", "ask": "Who did the finding?", "options": [{"emoji": "🐇", "label": "the rabbit"}, {"emoji": "🐻", "label": "the bear"}], "answer": 1 }
+    ]
+  ]
 }

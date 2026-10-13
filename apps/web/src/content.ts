@@ -17,7 +17,10 @@ export const placement = placementData as {
   words: { word: string; options: string[]; answer: number }[];
   reading: { passage: Passage; items: Item[] };
   listening: { passage: Passage; items: Item[] };
+  /** LTF-13: sets of six "Who did it?" sentences, answered by tapping a picture. */
+  grammar: GrammarItem[][];
 };
+export interface GrammarItem { form: string; sentence: string; ask: string; options: { emoji: string; label: string }[]; answer: number }
 for (const part of [placement.reading, placement.listening]) pool.passages.set(part.passage.id, part.passage);
 
 export interface Lesson { id: string; name: string; emoji: string; what: string[]; ask: string[] }

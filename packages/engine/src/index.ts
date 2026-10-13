@@ -8,6 +8,8 @@ export const RULES = {
   minPerSession: 2, // your-turn answers a session needs to count toward mastery
   relearnMin: 3, // after a failed review, one session with this many answers at `mastery` restores the skill
   reviewGapsDays: [3, 7, 21],
+  checkupEvery: 10, // LTF-14: finished sessions between optional check-up flights
+  checkupTexts: 6,
   gateInference: 0.8,
   gateCheckItems: 5,
   philosophicalOneIn: 4, // at most one session in four
@@ -56,7 +58,7 @@ export interface SkillState {
   /** Every non-placement answer, oldest first. */
   answers: AnswerEvent[];
 }
-export interface SessionRecord { id: string; strand?: Strand; skill?: string; start: number; end?: number; finished: boolean; gatecheck: boolean }
+export interface SessionRecord { id: string; strand?: Strand; skill?: string; start: number; end?: number; finished: boolean; gatecheck: boolean; checkup?: boolean }
 export interface Progress {
   skills: Record<SkillId, SkillState>;
   inferencePassed: boolean;
@@ -128,7 +130,7 @@ export function derive(events: readonly LogEvent[], opts: { fastTrack?: boolean 
     } else if (e.type === 'session') {
       if (e.action === 'start') {
         close(e.ts);
-        const rec: SessionRecord = { id: e.session, strand: e.strand, skill: e.skill, start: e.ts, finished: false, gatecheck: !!e.gatecheck };
+        const rec: SessionRecord = { id: e.session, strand: e.strand, skill: e.skill, start: e.ts, finished: false, gatecheck: !!e.gatecheck, checkup: !!e.checkup };
         p.sessions.push(rec);
         const due = new Set(ALL_SKILLS.filter((id) => skills[id].status === 'mastered' && (skills[id].nextReview ?? Infinity) <= e.ts));
         open = { rec, due, review: new Map(), practised: new Set(), gate: { c: 0, n: 0 } };
@@ -142,7 +144,7 @@ export function derive(events: readonly LogEvent[], opts: { fastTrack?: boolean 
       p.seen.set(e.item, e.ts); // placement items count as seen, so they are not served again straight away
       const s = skills[e.skill as SkillId];
       if (s && e.phase === 'placement' && e.correct) s.scouted = true;
-      if (!s || e.phase === 'placement') continue;
+      if (!s || e.phase === 'placement' || e.phase === 'checkup') continue; // check-ups measure; they never change his skill records (LTF-14)
       s.answers.push(e);
       if (s.status === 'new') s.status = 'learning';
       if (open?.rec.id !== e.session) continue;
@@ -206,7 +208,7 @@ export function focusSkill(p: Progress, strand: Strand): SkillId {
   return ids.find((id) => p.skills[id].status !== 'mastered') ?? [...ids].sort((a, b) => (p.skills[a].nextReview ?? 0) - (p.skills[b].nextReview ?? 0))[0];
 }
 
-export type Choice = { kind: 'strand'; strand: Strand; skill: SkillId } | { kind: 'gatecheck' };
+export type Choice = { kind: 'strand'; strand: Strand; skill: SkillId } | { kind: 'gatecheck' } | { kind: 'checkup' };
 
 /** The two or three cards on the Choose step. */
 export function choices(p: Progress, g: GateState, now: number): Choice[] {
@@ -244,6 +246,8 @@ export interface PickContext {
   allowThemes: boolean;
   hidden?: ReadonlySet<string>;
   rng: () => number;
+  /** LTF-04: words he tapped for their meaning, most tapped first. */
+  tapped?: readonly string[];
 }
 export interface PickOptions {
   exclude?: ReadonlySet<string>;
@@ -288,10 +292,11 @@ export const isInterest = (pool: Pool, item: Item, interests: readonly Topic[]) 
 export function pickItems(ctx: PickContext, skill: SkillId, count: number, o: PickOptions = {}): Item[] {
   const { pool, seen, interests, allowThemes, hidden, rng } = ctx;
   const modelItem = pool.models.get(skill)?.item;
-  const cands = (pool.bySkill.get(skill) ?? []).filter((i) =>
-    i.id !== modelItem && !!i.gatecheck === !!o.gatecheck && !o.exclude?.has(i.id) && !hidden?.has(i.id) &&
+  const cands: Item[] = (pool.bySkill.get(skill) ?? []).filter((i) =>
+    i.id !== modelItem && !!i.gatecheck === !!o.gatecheck && !i.checkup && !o.exclude?.has(i.id) && !hidden?.has(i.id) &&
     (allowThemes || !pool.passages.get(i.passage)?.themes?.length) &&
     (!o.tier || (i.tier ?? 'understand') === o.tier) && (!o.maxLevel || i.level <= o.maxLevel) && (!o.level || i.level <= o.level));
+  const allowed = new Set(cands.map((i) => i.id));
   const neutral = rng() < RULES.neutralTopicShare;
   const key = new Map(cands.map((i) => [i.id, rng()]));
   const rank = (i: Item) => [
@@ -316,7 +321,90 @@ export function pickItems(ctx: PickContext, skill: SkillId, count: number, o: Pi
     const t = rest.find((i) => i.transfer);
     if (t) out[out.length - 1] = t;
   }
+  return pairSteps(out, pool, allowed, count);
+}
+
+/**
+ * LTF-12: a message step and its act step are served as a pair, the act step right after, so the same message stays
+ * on screen. An act step is never served on its own. Unpaired items make room, so a list runs at most one over its
+ * length, and a whole pair waits for another session if it still does not fit.
+ */
+function pairSteps(out: Item[], pool: Pool, allowed: ReadonlySet<string>, count: number): Item[] {
+  const actOf = (m: Item) => (pool.bySkill.get(m.skill) ?? []).find((x) => x.after === m.id && allowed.has(x.id));
+  const res: Item[] = [];
+  for (const i of out) {
+    if (res.includes(i)) continue;
+    const first = i.after ? pool.items.get(i.after) : undefined;
+    if (i.after && (!first || !allowed.has(first.id))) continue; // its message step cannot be served
+    const m = first ?? i;
+    if (!res.includes(m)) res.push(m);
+    const act = i.after ? i : actOf(i);
+    if (act && !res.includes(act)) res.push(act);
+  }
+  const paired = (x: Item) => !!x.after || res.some((y) => y.after === x.id);
+  for (let k = res.length - 1; res.length > count && k >= 0; k--) if (!paired(res[k])) res.splice(k, 1);
+  while (res.length > count + 1) res.splice(res.findLastIndex((x) => !!x.after) - 1, 2);
+  return res;
+}
+
+// ---------------------------------------------------------------- check-up flights (LTF-14)
+
+/** An optional check-up flight is offered once he has finished this many sessions since the last one. */
+export function checkupDue(p: Progress) {
+  let n = 0;
+  for (const s of [...p.sessions].reverse()) {
+    if (s.checkup && s.finished) break;
+    if (s.finished && !s.checkup) n++;
+  }
+  return n >= RULES.checkupEvery;
+}
+
+/** Six reserved texts from the stop he is at: three stories and three functional texts, ones he has not seen first. */
+export function planCheckup(ctx: PickContext, stop: string): Item[] {
+  const all = [...ctx.pool.items.values()].filter((i) => i.checkup === stop && !ctx.hidden?.has(i.id));
+  const key = new Map(all.map((i) => [i.id, ctx.rng()]));
+  const rank = (i: Item) => (ctx.seen.has(i.id) ? 1 : 0) + key.get(i.id)!;
+  const half = (story: boolean) => all.filter((i) => (strandOf(i.skill) !== 'functional') === story).sort((a, b) => rank(a) - rank(b));
+  const n = RULES.checkupTexts / 2;
+  const [stories, functional] = [half(true), half(false)];
+  const out = [...stories.slice(0, n), ...functional.slice(0, n)];
+  for (const i of [...stories.slice(n), ...functional.slice(n)]) if (out.length < RULES.checkupTexts) out.push(i);
   return out;
+}
+
+/** His check-up results over time: right first time out of the texts, per check-up. */
+export function checkupResults(events: readonly LogEvent[]) {
+  const by = new Map<string, { ts: number; correct: number; total: number }>();
+  for (const e of events) if (e.type === 'answer' && e.phase === 'checkup') {
+    const r = by.get(e.session) ?? by.set(e.session, { ts: Infinity, correct: 0, total: 0 }).get(e.session)!;
+    r.total += 1;
+    if (e.correct) r.correct += 1;
+  }
+  for (const e of events) if (e.type === 'session' && e.action === 'start' && by.has(e.session)) by.get(e.session)!.ts = e.ts;
+  return [...by.values()].sort((a, b) => a.ts - b.ts);
+}
+
+/** LTF-04: the warm-up's word for today: the word in its sentence, and three meanings to choose from. */
+export interface WordCard { word: string; pic: string; sentence: string; options: string[]; answer: number }
+
+/**
+ * LTF-04: a word for the warm-up. Half the time, when he has tapped words before, one of those comes back; otherwise a
+ * glossed word from one of today's texts is taught before he meets it. The wrong options are other glossed meanings.
+ */
+export function planWord(pool: Pool, today: readonly Item[], tapped: readonly string[], rng: () => number): WordCard | undefined {
+  const all = [...pool.passages.values()].flatMap((p) => (p.words ?? []).map((g) => ({ ...g, p })));
+  const fromToday = all.filter((g) => today.some((i) => i.passage === g.p.id));
+  const back = tapped.map((w) => all.find((g) => g.word.toLowerCase() === w.toLowerCase())).filter((g) => !!g);
+  const pick = back.length && (rng() < 0.5 || !fromToday.length) ? back[0] : fromToday[Math.floor(rng() * fromToday.length)];
+  const others = [...new Set(all.map((g) => g.means).filter((m) => m !== pick?.means))];
+  if (!pick || others.length < 2) return undefined;
+  const wrong: string[] = [];
+  while (wrong.length < 2) { const m = others.splice(Math.floor(rng() * others.length), 1)[0]; wrong.push(m); }
+  const answer = Math.floor(rng() * 3);
+  const options = [...wrong];
+  options.splice(answer, 0, pick.means);
+  const re = new RegExp(`\\b${pick.word}\\b`, 'i');
+  return { word: pick.word, pic: pick.pic, sentence: pick.p.sentences.find((s) => re.test(s)) ?? pick.p.sentences[0], options, answer };
 }
 
 export interface SessionPlan {
@@ -330,6 +418,8 @@ export interface SessionPlan {
   skipTogether: boolean;
   /** He has never practised this skill: its first guided item shows the clue at once (LTF-01). */
   newSkill: boolean;
+  /** LTF-04: a word for today at the start of the warm-up, when there is one. */
+  word?: WordCard;
   /** Skills whose review happens in this warm-up. */
   review: SkillId[];
   warmup: Item[];
@@ -371,8 +461,9 @@ export function planSession(p: Progress, ctx: PickContext, strand: Strand, now: 
   const together = skipTogether ? [] : take(pickItems(ctx, skill, warmup.length >= 3 ? 2 : 3, { exclude: used, tier: 'understand', level }));
   const yourturn = take(pickItems(ctx, skill, yourTurnCount + (skipTogether ? 2 : 0), { exclude: used, tier: 'understand', transfer: true, level }));
   const express = strand === 'philosophical' ? take(pickItems(ctx, skill, 1, { exclude: used, tier: 'express' })) : [];
+  const word = planWord(ctx.pool, [...together, ...yourturn], ctx.tapped ?? [], ctx.rng);
   return {
-    strand, skill, level, skipWatch, skipTogether, newSkill: st.answers.length === 0, review, warmup,
+    strand, skill, level, skipWatch, skipTogether, newSkill: st.answers.length === 0, review, warmup, word,
     model: !skipWatch && modelItem && m ? { item: modelItem, steps: m.steps } : undefined,
     together, yourturn, express,
   };
@@ -400,10 +491,16 @@ export function placementStart(results: readonly { skill: SkillId; correct: bool
 }
 
 /** Read-aloud when listening beats reading by a clear margin or word reading is shaky (R1). */
-export const placementSupports = (r: { word: number; reading: number; listening: number }) => ({
+export const placementSupports = (r: { word: number; reading: number; listening: number; grammar?: number }) => ({
   readAloud: r.listening - r.reading >= 0.3 || r.word < 0.75,
   pictures: r.word < 0.75,
+  /** LTF-13: low sentence grammar suggests names in place of he and she (LTF-03). Only once the stop has been run. */
+  names: r.grammar !== undefined && r.grammar < 0.75,
 });
+
+/** LTF-13: which set of "Who did it?" sentences to run next, so a second run uses sentences he has not seen. */
+export const grammarSet = (events: readonly LogEvent[], sets: number) =>
+  events.filter((e) => e.type === 'placement' && e.grammar !== undefined).length % sets;
 
 // ---------------------------------------------------------------- reports for the adult
 
@@ -473,6 +570,51 @@ export function journeyPosition(finished: number, stops: number, legLength: numb
   const step = eff - (stop - from.stop) * legLength;
   const table = BEATS_FOR_LEG[legLength] ?? BEATS_FOR_LEG[5];
   return { stop, step, beat: table[Math.min(step, table.length - 1)], arrived: false, after: 0 };
+}
+
+// ---------------------------------------------------------------- island routes that branch (LTF-20)
+
+/** A stop as the routes see it. `legacy` stops stay only for learners who were already on them. */
+export interface RouteStop { id: string; next?: readonly string[]; topics?: readonly string[]; legacy?: boolean }
+
+/** The stops on his route, following his choices at forks. It ends at a fork he has not chosen yet (`forkAt`). */
+export function journeyRoute(stops: readonly RouteStop[], routes: Readonly<Record<string, string>>): { ids: string[]; forkAt?: number } {
+  const byId = new Map(stops.map((s) => [s.id, s]));
+  const ids = [stops[0].id];
+  for (let s = stops[0]; ids.length <= stops.length;) {
+    const next = s.next ?? [];
+    if (!next.length) return { ids };
+    const pick = next.length === 1 ? next[0] : routes[s.id];
+    if (!pick || !next.includes(pick) || !byId.has(pick)) return { ids, forkAt: ids.length - 1 };
+    ids.push(pick);
+    s = byId.get(pick)!;
+  }
+  throw new Error('journey routes loop');
+}
+
+/** The islands offered at a fork: at most three, those whose topics best match his interests, never a legacy stop. */
+export function forkOptions(stops: readonly RouteStop[], forkId: string, interests: readonly string[]): RouteStop[] {
+  const byId = new Map(stops.map((s) => [s.id, s]));
+  const score = (s: RouteStop) => (s.topics ?? []).filter((t) => interests.includes(t)).length;
+  const opts = (byId.get(forkId)?.next ?? []).map((id) => byId.get(id)!).filter((s) => s && !s.legacy);
+  return opts.map((s, i) => ({ s, i })).sort((a, b) => score(b.s) - score(a.s) || a.i - b.i).slice(0, 3).map((x) => x.s);
+}
+
+/**
+ * Where he is on his route. Every route has the same number of stops, so Australia comes after the same number of
+ * sessions. At a fork he has not chosen, he waits at the start of the next leg: the choice has no timer, and sessions
+ * finished meanwhile do not move him. When he chooses, the app anchors the journey there, so he never jumps ahead.
+ */
+export function routePosition(finished: number, route: { forkAt?: number }, stops: number, legLength: number, from: JourneyAnchor = JOURNEY_START) {
+  const pos = journeyPosition(finished, stops, legLength, from);
+  if (route.forkAt !== undefined && pos.stop >= route.forkAt) return { stop: route.forkAt, step: 0, beat: 0, arrived: false, after: 0, waiting: true };
+  return { ...pos, waiting: false };
+}
+
+/** Whether the story of the leg after the fork had already begun on the single route, so he keeps that route. */
+export function pastFork(finished: number, forkAt: number, stops: number, legLength: number, from: JourneyAnchor = JOURNEY_START) {
+  const pos = journeyPosition(finished, stops, legLength, from);
+  return pos.stop > forkAt || (pos.stop === forkAt && pos.step > 0);
 }
 
 /** First-time accuracy on items with a given tag (warm-up and your-turn answers only), for the school's goals. */

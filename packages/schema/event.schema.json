@@ -34,7 +34,8 @@
         "together",
         "yourturn",
         "placement",
-        "gatecheck"
+        "gatecheck",
+        "checkup"
       ]
     },
     "Strand": {
@@ -131,6 +132,10 @@
           "type": "integer",
           "minimum": 0,
           "description": "Guided practice: seconds the clue waited before showing (0 = shown at once on a new skill's first item, LTF-01)."
+        },
+        "card": {
+          "type": "boolean",
+          "description": "A reasoning card (Clue, What I know, So) was shown before this answer (LTF-02)."
         }
       }
     },
@@ -173,6 +178,10 @@
         },
         "gatecheck": {
           "type": "boolean"
+        },
+        "checkup": {
+          "type": "boolean",
+          "description": "LTF-14: an optional check-up flight."
         }
       }
     },
@@ -223,6 +232,12 @@
         "manual": {
           "type": "boolean",
           "description": "Set by an adult rather than by the checks"
+        },
+        "grammar": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Share correct on the \"Who did it?\" sentence grammar stop (LTF-13). Absent when the stop was not run."
         }
       }
     },
@@ -314,6 +329,18 @@
         "after": {
           "type": "boolean",
           "description": "He answered a \"What happened after that?\" question (LTF-05)."
+        },
+        "changed": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Day recounts: how many boxes of the four-panel strip he tapped to change (LTF-06)."
+        },
+        "ideas": {
+          "type": "array",
+          "items": {
+            "type": "boolean"
+          },
+          "description": "From stage 3, day recounts: one entry per question he answered, true if he opened \"Show me ideas\" for it (LTF-07)."
         }
       }
     },
@@ -377,9 +404,13 @@
             "back",
             "skip-demo",
             "boost",
-            "opinion"
+            "opinion",
+            "word-help",
+            "word-check",
+            "who-help",
+            "route"
           ],
-          "description": "step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point. opinion: his answer on a 'What do you think?' card."
+          "description": "step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point. opinion: his answer on a 'What do you think?' card. word-help: he tapped a word for its meaning (LTF-04). word-check: he answered the warm-up's word for today. who-help: he tapped a dotted pronoun to see who it means (LTF-03). route: he chose a sea route at a fork; item is the island (LTF-20)."
         },
         "step": {
           "type": "string",
@@ -391,7 +422,8 @@
             "together",
             "yourturn",
             "gatecheck",
-            "finish"
+            "finish",
+            "checkup"
           ]
         },
         "item": {
@@ -436,6 +468,14 @@
             "too-little"
           ],
           "description": "For opinion: too much, just right, or too little."
+        },
+        "word": {
+          "type": "string",
+          "description": "For word-help and word-check: the word."
+        },
+        "correct": {
+          "type": "boolean",
+          "description": "For word-check: he picked the right meaning first time."
         }
       }
     }

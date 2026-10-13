@@ -296,6 +296,11 @@
       ],
       "breaks": [4, 8, 12],
       "picture": "🤖📰🏁",
+      "words": [
+        { "word": "rover", "means": "a small robot car that drives over the ground", "pic": "🤖" },
+        { "word": "soldering", "means": "joining metal parts with hot melted metal", "pic": "🔩" },
+        { "word": "agreement", "means": "a paper that says you will follow the rules", "pic": "📝" }
+      ],
       "topics": ["robots", "school"],
       "level": 4,
       "socialLoad": 0,
@@ -607,6 +612,11 @@
         14
       ],
       "picture": "🎮📰🏆",
+      "words": [
+        { "word": "consoles", "means": "game machines that hook up to a screen", "pic": "🎮" },
+        { "word": "pairs", "means": "groups of two", "pic": "🧦" },
+        { "word": "trophy", "means": "a cup or prize given to the winner", "pic": "🏆" }
+      ],
       "topics": [
         "games",
         "school"
@@ -2271,6 +2281,11 @@
         13
       ],
       "picture": "🐾🐈🐇",
+      "words": [
+        { "word": "shifts", "means": "set times when you come in to work", "pic": "⏰" },
+        { "word": "shelter", "means": "a place that cares for pets with no home", "pic": "🏠" },
+        { "word": "kennel", "means": "a pen or small house for a dog", "pic": "🐕" }
+      ],
       "topics": [
         "animals"
       ],
@@ -2360,6 +2375,11 @@
         13
       ],
       "picture": "🎸🎻🎹",
+      "words": [
+        { "word": "act", "means": "a player or band that plays on the stage", "pic": "🎸" },
+        { "word": "volume", "means": "how loud a sound is", "pic": "🔊" },
+        { "word": "equipment", "means": "the tools and machines needed for a job", "pic": "🎛️" }
+      ],
       "topics": [
         "music"
       ],
@@ -2417,6 +2437,713 @@
         "source": "Written for Learning to Fly",
         "licence": "original",
         "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p63",
+      "title": "The Library Book Sale",
+      "kind": "notice",
+      "picture": "📚💵",
+      "sentences": ["Maya wants comics and books about rocks.", "She has $6 in cash."],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Library Book Sale",
+        "icon": "📚",
+        "rows": [
+          "Saturday, 10:00 AM to 2:00 PM",
+          "Every book costs $1, except the books in the green bin.",
+          "Books in the green bin are free. Take any two.",
+          "Each person may buy no more than five books.",
+          "Only cash is accepted."
+        ]
+      },
+      "topics": ["money", "school"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Library Book Sale",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p64",
+      "title": "Joining the Robotics Club",
+      "kind": "form",
+      "picture": "🤖📝",
+      "sentences": [
+        "Priya fills out a form to join the robotics club.",
+        "She is in grade 6, and her brother Dev is in grade 5."
+      ],
+      "visual": {
+        "type": "form",
+        "title": "Robotics Club: Sign-Up Form",
+        "rows": [
+          {
+            "k": "Name *",
+            "v": ""
+          },
+          {
+            "k": "Grade *",
+            "v": "Only grades 6, 7 and 8 may join."
+          },
+          {
+            "k": "Days *",
+            "v": "Check at least one: Tuesday, Thursday"
+          },
+          {
+            "k": "Parent signature *",
+            "v": ""
+          },
+          {
+            "k": "T-shirt size",
+            "v": "(optional)"
+          },
+          {
+            "k": "Note",
+            "v": "Every box with a * must be filled in, or the form will be returned."
+          }
+        ]
+      },
+      "topics": ["robots", "school"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Joining the Robotics Club",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p65",
+      "title": "Mom Will Be Late",
+      "kind": "message",
+      "picture": "📱🧁",
+      "sentences": ["Sam gets a text from Mom at 2:30 PM."],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Mom",
+        "time": "2:30 PM",
+        "rows": [
+          "Hi Sam. I will be late today.",
+          "Walk to Grandma Rose's bakery after school.",
+          "I will get you there at 5:00 PM."
+        ]
+      },
+      "topics": ["home", "food"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Mom Will Be Late",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p66",
+      "title": "Dad's Note About the Bins",
+      "kind": "message",
+      "picture": "📝🗑️",
+      "sentences": ["Sam finds a note from Dad on the kitchen table."],
+      "visual": {
+        "type": "message",
+        "app": "note",
+        "from": "Dad",
+        "rows": [
+          "Trash day is tomorrow morning.",
+          "Tonight, roll the blue bin out to the curb.",
+          "Leave the green bin in the garage. It goes out next week."
+        ]
+      },
+      "topics": ["home"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dad's Note About the Bins",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p67",
+      "title": "Band Moves to Room 12",
+      "kind": "message",
+      "picture": "🎺💬",
+      "sentences": ["Ana reads the band chat after lunch."],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "Band Kids",
+        "time": "12:40 PM",
+        "rows": [
+          "Ms. Gray: Band practice moves to Room 12 today.",
+          "Ms. Gray: Room 8 is getting new chairs.",
+          "Ms. Gray: Bring your instrument and your music folder. Leave your instrument case in your locker.",
+          "Leo: Got it!"
+        ]
+      },
+      "topics": ["music", "school"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Band Moves to Room 12",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p68",
+      "title": "Maya's Library Hold",
+      "kind": "message",
+      "picture": "📧📚",
+      "sentences": ["Maya gets an email from the library on Tuesday."],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Harbor Library",
+        "subject": "Your hold is ready",
+        "rows": [
+          "The book you asked for, Rocks and Minerals of the Coast, is ready.",
+          "Pick it up at the front desk by Friday.",
+          "Bring your library card."
+        ]
+      },
+      "topics": ["mining", "school"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Maya's Library Hold",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p69",
+      "title": "The Game Moves to Field 4",
+      "kind": "message",
+      "picture": "⚽📱",
+      "sentences": ["Ben reads a message from Coach Novak on Thursday night."],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "Harbor Hawks",
+        "time": "8:15 PM",
+        "rows": [
+          "Coach Novak: Field 2 is flooded.",
+          "Coach Novak: Saturday's game moves to Field 4, by the parking lot.",
+          "Coach Novak: Same time, 10:00 AM. Arrive 30 minutes early to warm up.",
+          "Coach Novak: Reply with a thumbs-up when you see this."
+        ]
+      },
+      "topics": ["sports", "weather"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Game Moves to Field 4",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p70",
+      "title": "Testing the Rover",
+      "kind": "message",
+      "picture": "🤖📱",
+      "sentences": [
+        "Leo has band practice on Wednesdays until 3:45.",
+        "Today is Tuesday, and Priya sends him a text."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Priya",
+        "time": "6:05 PM",
+        "rows": [
+          "Can you help me test my rover tomorrow?",
+          "Meet me at the robotics room at 3:15, after the bell.",
+          "If you have band, come at 4:00 instead.",
+          "Text me back so I know which time."
+        ]
+      },
+      "topics": ["robots", "friends"],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Testing the Rover",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p71",
+      "title": "The Tide Pool Trip Moves",
+      "kind": "message",
+      "picture": "📧🦀",
+      "sentences": [
+        "Maya returned her permission form last week.",
+        "On Tuesday evening, her family reads an email from Ms. Ortiz."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Ms. Ortiz",
+        "subject": "Tide pool trip: new date",
+        "rows": [
+          "The tide pool trip on Thursday is moved to Friday, because the tide will be too high on Thursday.",
+          "The bus will leave at 8:45 AM instead of 9:00 AM.",
+          "Please bring boots or old sneakers that can get wet.",
+          "If you already returned your permission form, you do not need a new one.",
+          "Reply to this email only if you have a question."
+        ]
+      },
+      "topics": ["ocean", "school"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Tide Pool Trip Moves",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p72",
+      "title": "A Stop at the Café",
+      "kind": "message",
+      "picture": "☕🚲",
+      "sentences": [
+        "Sam bikes to the bakery after school.",
+        "When he reaches the Lighthouse Café, the sign on the door says CLOSED."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Grandma Rose",
+        "time": "3:05 PM",
+        "rows": [
+          "Sam, could you stop at the Lighthouse Café on your way over?",
+          "Mrs. Lin is holding a bag of coffee beans for me. It is already paid for.",
+          "If the café is closed, come straight to the bakery instead. Do not wait outside.",
+          "Call me if you get lost."
+        ]
+      },
+      "topics": ["food", "transport"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Stop at the Café",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p73",
+      "title": "The Underground Tour",
+      "kind": "message",
+      "picture": "📧⛏️",
+      "sentences": [
+        "Maya signed up for the tour, but on Wednesday she learns that she has a dentist visit on Saturday morning.",
+        "The visit ends at 10:30 AM."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Ridgeway Mine Museum",
+        "subject": "Saturday's tour: what to know",
+        "rows": [
+          "Thank you for signing up for Saturday's underground tour with the Harbor Middle School Rock Club.",
+          "The tour train leaves the main entrance at 10:15 AM sharp. Anyone who arrives later can join the 11:30 AM surface tour instead, but not the underground one.",
+          "Because the tunnel stays at 54°F all year, everyone must bring a warm layer.",
+          "Closed-toe shoes are required underground. Sandals are not allowed on the train.",
+          "Hard hats and lamps are provided at the entrance, so please do not bring your own.",
+          "If you can no longer come, reply by Thursday so another student can take your place."
+        ]
+      },
+      "topics": ["mining", "school"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Underground Tour",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p74",
+      "title": "The Regional Rover Race",
+      "kind": "message",
+      "picture": "🤖🚐",
+      "sentences": [
+        "Priya's family is visiting her aunt in Pine Bay that weekend, so her dad will drive her to the race."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "Robotics Club",
+        "time": "4:20 PM",
+        "rows": [
+          "Mrs. Hall: The regional rover race is on Saturday, March 8, at the Pine Bay Science Center.",
+          "Mrs. Hall: Our van leaves the school at 7:30 AM and returns around 4:00 PM.",
+          "Mrs. Hall: Each racer packs one charged battery and one spare. Spare batteries go in a zip bag.",
+          "Mrs. Hall: Families who drive themselves: the race starts at 9:00 AM, and teams check in by 8:30 AM.",
+          "Mrs. Hall: Please reply \"van\" or \"own ride\" by Wednesday so I can count seats."
+        ]
+      },
+      "topics": ["robots", "transport"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Regional Rover Race",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p10",
+      "title": "A Text From Mom After School",
+      "kind": "message",
+      "picture": "📱🏛️",
+      "sentences": [
+        "Priya is at the Harbor Town library after robotics club.",
+        "She gets a text from her mom."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Mom",
+        "time": "3:50 PM",
+        "rows": [
+          "Hi Priya. I have to stay a little late at work.",
+          "I will pick you up at the library at 5:00, not 4:30.",
+          "Please wait inside, by the front desk."
+        ]
+      },
+      "topics": ["home"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Text From Mom After School",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p10",
+      "title": "Seal Pup Notice",
+      "kind": "notice",
+      "picture": "📋🦭",
+      "sentences": ["Priya steps off the ferry on Gull Island.", "She sees a notice on the dock."],
+      "visual": {
+        "type": "notice",
+        "title": "Gull Island Ranger Notice",
+        "icon": "🦭",
+        "rows": [
+          "The east beach is closed until June 1.",
+          "Seal pups are resting there.",
+          "You can watch them from the hill platform."
+        ]
+      },
+      "topics": ["animals", "nature"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Seal Pup Notice",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p10",
+      "title": "A Note From Captain Ada",
+      "kind": "message",
+      "picture": "📝🪁",
+      "sentences": [
+        "Leo is staying at Windy Cape for the weekend.",
+        "He finds a note from Captain Ada on the door."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "note",
+        "from": "Captain Ada",
+        "to": "Leo",
+        "rows": [
+          "Leo, the kite club meets on Sunday at 2 PM.",
+          "Meet me at the boat shed, not on the cliff top.",
+          "Bring warm gloves. The wind is cold today."
+        ]
+      },
+      "topics": ["friends", "weather"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Note From Captain Ada",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p10",
+      "title": "A Note on the Hangar Door",
+      "kind": "message",
+      "picture": "📝🚪",
+      "sentences": [
+        "Mr. Lund gets to the hangar at 9 AM.",
+        "There is a note from Captain Ada on the door."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "note",
+        "from": "Captain Ada",
+        "to": "Mr. Lund",
+        "rows": [
+          "Good morning!",
+          "I went to town to buy oil for the engine.",
+          "I will be back at 11 AM.",
+          "The new tires are on the bench by the window.",
+          "Please wait for me before you start the engine."
+        ]
+      },
+      "topics": ["transport"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Note on the Hangar Door",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p10",
+      "title": "A Text About the Weather",
+      "kind": "message",
+      "picture": "📱🌤️",
+      "sentences": [
+        "The night before the long flight, Captain Ada gets a text from the weather office."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Cloud Hill Weather Office",
+        "time": "8:00 PM",
+        "rows": [
+          "Weather for Monday:",
+          "Fog in the early morning. It will be gone by 10 AM.",
+          "Then sunny, with light wind.",
+          "Rain will start after 5 PM."
+        ]
+      },
+      "topics": ["weather", "transport"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Text About the Weather",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p10",
+      "title": "The Koala Walk Is Closed",
+      "kind": "notice",
+      "picture": "🚧🐨",
+      "sentences": [
+        "Captain Ada gets to the sanctuary at 10 AM.",
+        "There is a notice on the gate to the Koala Walk."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Koala Walk Closed This Morning",
+        "icon": "🚧",
+        "rows": [
+          "Rangers are fixing a broken board on the boardwalk.",
+          "The Koala Walk will open again at 1 PM.",
+          "The Kangaroo Field is open now."
+        ]
+      },
+      "topics": ["animals"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Koala Walk Is Closed",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p10",
+      "title": "A Text About Tonight",
+      "kind": "message",
+      "picture": "💬🌙",
+      "sentences": ["Sam is staying at Star Point.", "He gets a text from Dr. Amal."],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Dr. Amal",
+        "time": "4:10 PM",
+        "rows": [
+          "Hi Sam! The sky will be clear tonight, so the dome opens at 8:00 PM.",
+          "Meet me at the bottom of the lamp path at 7:45 PM.",
+          "Bring a warm jacket. It gets cold on the point at night."
+        ]
+      },
+      "topics": ["space", "weather"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Text About Tonight",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p10",
+      "title": "An Email from the Signal Box",
+      "kind": "message",
+      "picture": "📧🚦",
+      "sentences": ["Sam wants to see how signals work.", "He gets an email from Mr. Haddad."],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Mr. Haddad",
+        "to": "Sam Rivera",
+        "subject": "Signal box visit",
+        "rows": [
+          "Hi Sam,",
+          "You can visit the signal box on Friday at 3:00 PM.",
+          "When you get there, ring the bell by the green door.",
+          "Then wait at the bottom of the steps until I wave to you.",
+          "See you Friday, Mr. Haddad"
+        ]
+      },
+      "topics": ["transport"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "An Email from the Signal Box",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p10",
+      "title": "A Text From Dr. Bell",
+      "kind": "message",
+      "picture": "📱🚩",
+      "sentences": ["Sam is on the boat to Fossil Bay.", "He gets a text from Dr. Bell."],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Dr. Bell",
+        "to": "Sam",
+        "time": "9:20 AM",
+        "rows": [
+          "The cliff is dry, and the beach is open again.",
+          "Walk along the beach to my tent.",
+          "My tent has a big orange flag on top.",
+          "Wear boots. The sand is still wet."
+        ]
+      },
+      "topics": ["dinosaurs"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Text From Dr. Bell",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p10",
+      "title": "The Tide Pool Walk Moves",
+      "kind": "message",
+      "picture": "📱🦀",
+      "sentences": ["Ana is staying on Reef Island.", "In the morning, she gets a text from Mari."],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Mari",
+        "to": "Ana",
+        "time": "8:10 AM",
+        "rows": [
+          "The tide pool walk is moving to 3 PM today, not 11 AM.",
+          "I have to take the boat across the channel this morning.",
+          "Meet me at the big rock next to the pier.",
+          "Wear shoes that can get wet."
+        ]
+      },
+      "topics": ["ocean", "friends"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Tide Pool Walk Moves",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
         "adapted": false
       }
     }
@@ -6955,6 +7682,672 @@
         "cause",
         "plan-change"
       ]
+    },
+    {
+      "id": "f5-i166",
+      "skill": "F5",
+      "passage": "f5-p63",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya has $6 in cash. How many books can she buy?",
+      "options": ["five", "six", "two"],
+      "answer": 0,
+      "evidence": [1, 3],
+      "hint": "Her money is enough for six. Then read the row that starts with \"Each person\".",
+      "explain": "Five. She has $6, but each person may buy no more than five books.",
+      "inference": 1,
+      "tags": ["quantifier", "price-math"]
+    },
+    {
+      "id": "f5-i167",
+      "skill": "F5",
+      "passage": "f5-p63",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How many free books can Maya take from the green bin?",
+      "options": ["two", "all of them", "five"],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Read the green bin row. Look at the words after \"Take\".",
+      "explain": "Two. The notice says she may take any two free books.",
+      "inference": 0,
+      "tags": ["quantifier"]
+    },
+    {
+      "id": "f5-i168",
+      "skill": "F5",
+      "passage": "f5-p63",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya forgot her cash and has only a gift card. What can she do at the sale?",
+      "options": [
+        "She cannot buy books, but she can still take two free books.",
+        "She can buy five books with the gift card.",
+        "She cannot take any books at all."
+      ],
+      "answer": 0,
+      "evidence": [2, 4],
+      "hint": "Read the last row. Then read the green bin row again.",
+      "explain": "She cannot buy books, because only cash is accepted. The green bin books are free, so she can still take two.",
+      "inference": 1,
+      "tags": ["quantifier"]
+    },
+    {
+      "id": "f5-i169",
+      "skill": "F5",
+      "passage": "f5-p64",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya wants to go on both days. What should she check?",
+      "options": [
+        "Both Tuesday and Thursday. \"At least one\" means one or more.",
+        "Only one day, because the form says one.",
+        "No days. The days are optional.",
+        "Every day of the week."
+      ],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Read the Days row. What does \"at least one\" allow?",
+      "explain": "She can check both days. \"At least one\" means she must pick one, and she may pick more.",
+      "inference": 1,
+      "tags": ["quantifier", "form"]
+    },
+    {
+      "id": "f5-i170",
+      "skill": "F5",
+      "passage": "f5-p64",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya leaves the T-shirt size blank. Will the form be returned?",
+      "options": [
+        "No. Only the boxes with a * must be filled in.",
+        "Yes. Every box on the form must be filled in.",
+        "Yes. The T-shirt size has a *.",
+        "No. Nothing on the form is needed."
+      ],
+      "answer": 0,
+      "evidence": [4, 5],
+      "hint": "Read the Note row. Then check whether the T-shirt row has a *.",
+      "explain": "No. Every box with a * must be filled in, and the T-shirt size has no *. It is optional.",
+      "inference": 1,
+      "tags": ["quantifier", "form"]
+    },
+    {
+      "id": "f5-i171",
+      "skill": "F5",
+      "passage": "f5-p64",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Can Priya's brother Dev join the club?",
+      "options": [
+        "No. Only grades 6, 7 and 8 may join.",
+        "Yes, if he checks one day.",
+        "Yes. All students may join.",
+        "Yes, if a parent signs."
+      ],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Dev is in grade 5. Find the Grade row. Is grade 5 on the list?",
+      "explain": "No. Only grades 6, 7 and 8 may join, so a student in grade 5 cannot.",
+      "inference": 1,
+      "tags": ["quantifier"]
+    },
+    {
+      "id": "f5-i172",
+      "skill": "F5",
+      "passage": "f5-p65",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Where should Sam go after school?",
+      "options": ["to Grandma Rose's bakery", "home", "the skate park"],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Read Mom's second text.",
+      "explain": "Sam should go to Grandma Rose's bakery. Mom says to walk there after school.",
+      "inference": 0,
+      "tags": ["message", "place"]
+    },
+    {
+      "id": "f5-i173",
+      "skill": "F5",
+      "passage": "f5-p65",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Now Sam writes back. Which reply matches Mom's plan?",
+      "options": [
+        "OK! I will walk to the bakery. See you at 5.",
+        "OK! I will go home and wait for you.",
+        "Can you get me at school at 3?"
+      ],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Mom's plan has a place and a time. Find the reply with both.",
+      "explain": "\"OK! I will walk to the bakery. See you at 5.\" matches Mom's plan: the bakery, and 5:00 PM.",
+      "inference": 1,
+      "tags": ["act", "place"],
+      "after": "f5-i172"
+    },
+    {
+      "id": "f5-i174",
+      "skill": "F5",
+      "passage": "f5-p66",
+      "format": "tap",
+      "level": 1,
+      "prompt": "When is trash day?",
+      "options": ["tomorrow morning", "tonight", "next week"],
+      "answer": 0,
+      "evidence": [0],
+      "hint": "Read the first line of the note.",
+      "explain": "Trash day is tomorrow morning. The note says so on the first line.",
+      "inference": 0,
+      "tags": ["message", "time"]
+    },
+    {
+      "id": "f5-i175",
+      "skill": "F5",
+      "passage": "f5-p66",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Now it is evening. Tap what Sam rolls out to the curb.",
+      "answer": 0,
+      "scene": "street",
+      "objects": [
+        {
+          "label": "Blue bin",
+          "emoji": "🟦"
+        },
+        {
+          "label": "Green bin",
+          "emoji": "🟩"
+        },
+        {
+          "label": "Bike",
+          "emoji": "🚲"
+        }
+      ],
+      "evidence": [1, 2],
+      "hint": "Read the second and third lines. Which bin goes out tonight, and which stays in?",
+      "explain": "Sam rolls out the blue bin. The green bin stays in the garage until next week.",
+      "inference": 1,
+      "tags": ["act"],
+      "after": "f5-i174"
+    },
+    {
+      "id": "f5-i176",
+      "skill": "F5",
+      "passage": "f5-p67",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where is band practice today?",
+      "options": ["Room 12", "Room 8", "the gym"],
+      "answer": 0,
+      "evidence": [0, 1],
+      "hint": "Find Ms. Gray's first message. Then read why Room 8 is not used.",
+      "explain": "Practice is in Room 12 today. Room 8 is getting new chairs.",
+      "inference": 1,
+      "tags": ["message", "place"]
+    },
+    {
+      "id": "f5-i177",
+      "skill": "F5",
+      "passage": "f5-p67",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Now Ana gets ready for practice. What should she take to Room 12?",
+      "options": [
+        "her trumpet and her music folder, with the case left in her locker",
+        "her trumpet in its case, and no folder",
+        "only her music folder, with her trumpet in her locker"
+      ],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Read Ms. Gray's last message. What does she say to bring, and what to leave?",
+      "explain": "Ana takes her trumpet and her music folder and leaves the case in her locker, as Ms. Gray says.",
+      "inference": 1,
+      "tags": ["act"],
+      "after": "f5-i176"
+    },
+    {
+      "id": "f5-i178",
+      "skill": "F5",
+      "passage": "f5-p68",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What does the library want Maya to do?",
+      "options": [
+        "Pick up her book by Friday.",
+        "Return a book by Friday.",
+        "Buy a new library card."
+      ],
+      "answer": 0,
+      "evidence": [0, 1],
+      "hint": "Read the first two lines of the email.",
+      "explain": "The library wants Maya to pick up her book at the front desk by Friday.",
+      "inference": 0,
+      "tags": ["message"]
+    },
+    {
+      "id": "f5-i179",
+      "skill": "F5",
+      "passage": "f5-p68",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Now Maya is leaving for the library. Tap what she should bring.",
+      "answer": 0,
+      "scene": "home",
+      "objects": [
+        {
+          "label": "Library card",
+          "emoji": "🪪"
+        },
+        {
+          "label": "Rock hammer",
+          "emoji": "🔨"
+        },
+        {
+          "label": "Sketchbook",
+          "emoji": "📓"
+        }
+      ],
+      "evidence": [2],
+      "hint": "Read the last line of the email.",
+      "explain": "Maya should bring her library card. The email says to bring it.",
+      "inference": 0,
+      "tags": ["act"],
+      "after": "f5-i178"
+    },
+    {
+      "id": "f5-i180",
+      "skill": "F5",
+      "passage": "f5-p69",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What time should Ben get to the field on Saturday?",
+      "options": ["9:30 AM", "10:00 AM", "10:30 AM"],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "The game starts at 10:00 AM. Read what Coach Novak says about arriving.",
+      "explain": "Ben should get there at 9:30 AM. The game is at 10:00 AM, and players arrive 30 minutes early.",
+      "inference": 1,
+      "tags": ["message", "time-am"]
+    },
+    {
+      "id": "f5-i181",
+      "skill": "F5",
+      "passage": "f5-p69",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Now Ben replies to Coach Novak. Which reply does what she asked?",
+      "options": ["👍", "Where is Field 2?", "See you at Field 2 at 10!"],
+      "answer": 0,
+      "evidence": [3],
+      "hint": "Read Coach Novak's last message. What kind of reply does she ask for?",
+      "explain": "A thumbs-up. Coach Novak asked everyone to reply with a thumbs-up. The other replies get the field or the plan wrong.",
+      "inference": 1,
+      "tags": ["act"],
+      "after": "f5-i180"
+    },
+    {
+      "id": "f5-i182",
+      "skill": "F5",
+      "passage": "f5-p70",
+      "format": "tap",
+      "level": 3,
+      "prompt": "When should Leo meet Priya?",
+      "options": ["at 4:00", "at 3:15", "at 3:45"],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Tomorrow is Wednesday. Does Leo have band then? Read Priya's third message.",
+      "explain": "Leo should meet Priya at 4:00. Tomorrow is Wednesday, and he has band until 3:45, so he comes at the later time.",
+      "inference": 1,
+      "tags": ["message", "condition"]
+    },
+    {
+      "id": "f5-i183",
+      "skill": "F5",
+      "passage": "f5-p70",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Now Leo texts Priya back. Which reply matches the plan?",
+      "options": [
+        "I have band, so I'll come at 4:00.",
+        "See you at 3:15!",
+        "I can't come tomorrow."
+      ],
+      "answer": 0,
+      "evidence": [2, 3],
+      "hint": "Priya wants to know which time. Pick the reply with the right time for Leo.",
+      "explain": "\"I have band, so I'll come at 4:00.\" tells Priya the right time, as she asked.",
+      "inference": 1,
+      "tags": ["act", "condition"],
+      "after": "f5-i182"
+    },
+    {
+      "id": "f5-i184",
+      "skill": "F5",
+      "passage": "f5-p71",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What changed about the trip?",
+      "options": [
+        "It moved to Friday, and the bus leaves 15 minutes earlier.",
+        "It moved to Thursday, and the bus leaves at 9:00 AM.",
+        "It was canceled because of the tide.",
+        "Only the shoes changed."
+      ],
+      "answer": 0,
+      "evidence": [0, 1],
+      "hint": "Read the first two lines. Compare the old day and time with the new ones.",
+      "explain": "The trip moved to Friday, and the bus now leaves at 8:45 AM instead of 9:00 AM.",
+      "inference": 1,
+      "tags": ["message", "time-am"]
+    },
+    {
+      "id": "f5-i185",
+      "skill": "F5",
+      "passage": "f5-p71",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Now Maya's family gets ready. What should they do?",
+      "options": [
+        "Pack boots or old sneakers, and get Maya to school before 8:45 AM on Friday.",
+        "Send a new permission form, and email Ms. Ortiz to say they read the news.",
+        "Pack boots, and get Maya to school by 9:00 AM on Thursday.",
+        "Pack sandals, and get Maya to school before 8:45 AM on Friday."
+      ],
+      "answer": 0,
+      "evidence": [1, 2, 3, 4],
+      "hint": "Check each choice against the email: the day, the time, what to bring, and what not to send.",
+      "explain": "Pack boots or old sneakers and get Maya to school before 8:45 AM on Friday. She already returned her form, and they have no question, so they do not need to reply.",
+      "inference": 1,
+      "tags": ["act", "time-am"],
+      "after": "f5-i184"
+    },
+    {
+      "id": "f5-i186",
+      "skill": "F5",
+      "passage": "f5-p72",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What does Grandma Rose ask Sam to get at the café?",
+      "options": [
+        "a bag of coffee beans that is already paid for",
+        "a cup of coffee for himself",
+        "money from Mrs. Lin",
+        "a muffin for Pixel"
+      ],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Read Grandma Rose's second message.",
+      "explain": "She asks him to get a bag of coffee beans that Mrs. Lin is holding. It is already paid for.",
+      "inference": 0,
+      "tags": ["message"]
+    },
+    {
+      "id": "f5-i187",
+      "skill": "F5",
+      "passage": "f5-p72",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Now Sam is at the café, and it is closed. What should he do?",
+      "options": [
+        "Ride straight to the bakery.",
+        "Wait outside until it opens.",
+        "Knock until Mrs. Lin opens the door.",
+        "Go back home."
+      ],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Read Grandma Rose's third message. It tells Sam what to do if the café is closed.",
+      "explain": "He should ride straight to the bakery. Grandma Rose said to come straight there if the café is closed, and not to wait outside.",
+      "inference": 1,
+      "tags": ["act", "condition"],
+      "after": "f5-i186"
+    },
+    {
+      "id": "f5-i188",
+      "skill": "F5",
+      "passage": "f5-p73",
+      "format": "tap",
+      "level": 5,
+      "prompt": "A club member gets to the entrance at 10:40 AM. What can they do?",
+      "options": [
+        "Join the 11:30 AM surface tour, but not the underground one.",
+        "Still take the underground train.",
+        "Nothing. They must go home.",
+        "Take the 10:15 AM train when it comes back."
+      ],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Read the line about the 10:15 AM train and anyone who arrives later.",
+      "explain": "They can join the 11:30 AM surface tour, but not the underground tour, which leaves at 10:15 AM sharp.",
+      "inference": 1,
+      "tags": ["message", "time-am"]
+    },
+    {
+      "id": "f5-i189",
+      "skill": "F5",
+      "passage": "f5-p73",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Now Maya decides what to do. Her dentist visit ends at 10:30 AM. What is the right thing to do?",
+      "options": [
+        "Reply to the museum by Thursday, so another student can take her place.",
+        "Bring sandals and a warm layer on Saturday.",
+        "Arrive at 10:40 AM and take the underground train.",
+        "Do nothing, and miss the tour."
+      ],
+      "answer": 0,
+      "evidence": [1, 5],
+      "hint": "Can Maya make the 10:15 AM train? Then read the last line of the email.",
+      "explain": "Maya cannot make the 10:15 AM train, so she should reply by Thursday. Then another student can take her place on the underground tour.",
+      "inference": 1,
+      "tags": ["act", "condition"],
+      "after": "f5-i188"
+    },
+    {
+      "id": "f5-i190",
+      "skill": "F5",
+      "passage": "f5-p74",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya's dad is driving her. By what time must she be at the science center?",
+      "options": ["8:30 AM", "7:30 AM", "9:00 AM", "4:00 PM"],
+      "answer": 0,
+      "evidence": [3],
+      "hint": "Priya is not taking the van. Read the message for families who drive themselves.",
+      "explain": "By 8:30 AM. Teams check in by 8:30 AM, even though the race starts at 9:00 AM.",
+      "inference": 1,
+      "tags": ["message", "time-am"]
+    },
+    {
+      "id": "f5-i191",
+      "skill": "F5",
+      "passage": "f5-p74",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Now Priya replies to Mrs. Hall. Which reply does what Mrs. Hall asked?",
+      "options": [
+        "Own ride",
+        "Van",
+        "I'll be there at 9:00 AM!",
+        "Can I bring two spare batteries?"
+      ],
+      "answer": 0,
+      "evidence": [4],
+      "hint": "Read Mrs. Hall's last message. Which words does she ask for, and which fits Priya?",
+      "explain": "\"Own ride\". Mrs. Hall asked for \"van\" or \"own ride\", and Priya's dad is driving her.",
+      "inference": 1,
+      "tags": ["act"],
+      "after": "f5-i190"
+    },
+    {
+      "id": "cu-home-i10",
+      "skill": "F5",
+      "passage": "cu-home-p10",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where should Priya wait for her mom?",
+      "options": [
+        "inside, by the front desk",
+        "outside, on the library steps",
+        "at the bus station"
+      ],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Read the line of the text that tells Priya where to wait.",
+      "explain": "Priya should wait inside, by the front desk. It is in the last line of the text.",
+      "inference": 0,
+      "checkup": "home",
+      "tags": ["message", "where"]
+    },
+    {
+      "id": "cu-gull-i10",
+      "skill": "F5",
+      "passage": "cu-gull-p10",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where can Priya watch the seal pups?",
+      "options": ["from the hill platform", "on the east beach", "from the ferry dock"],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Find the line that tells you where you can watch.",
+      "explain": "Priya can watch them from the hill platform. It is in the last line. The east beach is closed.",
+      "inference": 0,
+      "checkup": "gull",
+      "tags": ["notice", "where"]
+    },
+    {
+      "id": "cu-cape-i10",
+      "skill": "F5",
+      "passage": "cu-cape-p10",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where should Leo meet Captain Ada?",
+      "options": ["on the cliff top", "at the boat shed", "at the kite shop"],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Read the line that starts with Meet me. Read all of it, to the end.",
+      "explain": "Leo should meet her at the boat shed. The second line says the boat shed, not the cliff top.",
+      "inference": 0,
+      "checkup": "cape",
+      "tags": ["message", "where"]
+    },
+    {
+      "id": "cu-airfield-i10",
+      "skill": "F5",
+      "passage": "cu-airfield-p10",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Captain Ada will be back at 11 AM. What should Mr. Lund wait to do until then?",
+      "options": ["Start the engine", "Look at the new tires", "Open the hangar door"],
+      "answer": 0,
+      "evidence": [2, 4],
+      "hint": "Find the line with the word \"wait\". Read what it asks him to wait for.",
+      "explain": "He should wait to start the engine. The last line says, \"Please wait for me before you start the engine.\" Captain Ada will be back at 11 AM.",
+      "inference": 1,
+      "checkup": "airfield",
+      "tags": ["wait", "note"]
+    },
+    {
+      "id": "cu-takeoff-i10",
+      "skill": "F5",
+      "passage": "cu-takeoff-p10",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Captain Ada wants to take off when there is no fog and no rain. Which time is best?",
+      "options": ["7 AM", "6 PM", "11 AM"],
+      "answer": 2,
+      "evidence": [1, 3],
+      "hint": "Find when the fog ends and when the rain starts. Pick the time that comes between them.",
+      "explain": "11 AM is best. The fog is gone by 10 AM, and the rain does not start until after 5 PM.",
+      "inference": 1,
+      "checkup": "takeoff",
+      "tags": ["two-times", "decide", "time-window"]
+    },
+    {
+      "id": "cu-australia-i10",
+      "skill": "F5",
+      "passage": "cu-australia-p10",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Captain Ada wants to see the koalas. When can she go on the Koala Walk?",
+      "options": ["At 1 PM", "At 10 AM", "Right now"],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Find the line that tells when the Koala Walk opens again.",
+      "explain": "She can go at 1 PM. The second line says the Koala Walk will open again at 1 PM.",
+      "inference": 0,
+      "checkup": "australia",
+      "tags": ["plan-change", "closed-open"]
+    },
+    {
+      "id": "cu-star-i10",
+      "skill": "F5",
+      "passage": "cu-star-p10",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What time should Sam meet Dr. Amal?",
+      "options": ["8:00 PM", "7:45 PM", "4:10 PM"],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Find the line that says Meet me. Read the time in that line.",
+      "explain": "Sam should meet her at 7:45 PM. It is in the second line. The dome opens at 8:00 PM.",
+      "inference": 0,
+      "checkup": "star",
+      "tags": ["time-pm", "close-options"]
+    },
+    {
+      "id": "cu-rail-i10",
+      "skill": "F5",
+      "passage": "cu-rail-p10",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What should Sam do first when he gets to the signal box?",
+      "options": ["Go up the steps.", "Ring the bell by the green door.", "Wave to Mr. Haddad."],
+      "answer": 1,
+      "evidence": [2],
+      "hint": "Find the line that starts with When you get there.",
+      "explain": "He should ring the bell by the green door first. Then he waits at the bottom of the steps until Mr. Haddad waves.",
+      "inference": 0,
+      "checkup": "rail",
+      "tags": ["message", "first-step"]
+    },
+    {
+      "id": "cu-fossil-i10",
+      "skill": "F5",
+      "passage": "cu-fossil-p10",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How can Sam tell which tent is Dr. Bell's?",
+      "options": [
+        "It has a big orange flag on top.",
+        "It is on the cliff top.",
+        "It is next to the pier."
+      ],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Find the line that starts with My tent. Read what it has.",
+      "explain": "Dr. Bell's tent has a big orange flag on top. It is in the third line of the text.",
+      "inference": 0,
+      "checkup": "fossil",
+      "tags": ["message", "find-detail"]
+    },
+    {
+      "id": "cu-reef-i10",
+      "skill": "F5",
+      "passage": "cu-reef-p10",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What time is the tide pool walk today?",
+      "options": ["11 AM", "3 PM", "8:10 AM"],
+      "answer": 1,
+      "evidence": [0],
+      "hint": "Find the line about the tide pool walk. Read all of it, to the end.",
+      "explain": "The walk is at 3 PM today. The first line says 3 PM, not 11 AM.",
+      "inference": 0,
+      "checkup": "reef",
+      "tags": ["message", "plan-change", "time"]
     }
   ],
   "model": {

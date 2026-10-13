@@ -15,6 +15,13 @@
         "Leo smiled and did the trick again.",
         "At noon, he rode home for lunch."
       ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 1, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 4, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 4, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 6, "w": "he", "n": 1, "to": "Leo" }
+      ],
       "topics": ["sports"],
       "level": 1,
       "socialLoad": 0,
@@ -33,6 +40,9 @@
         "The ferry blew its horn.",
         "Sam laughed.",
         "Then they walked home for dinner."
+      ],
+      "refs": [
+        { "s": 4, "w": "its", "n": 1, "to": "the ferry" }
       ],
       "topics": ["animals", "ocean"],
       "level": 1,
@@ -53,6 +63,11 @@
         "Ben won the next two races.",
         "He jumped up and cheered."
       ],
+      "refs": [
+        { "s": 1, "w": "They", "n": 1, "to": "Ana and Ben" },
+        { "s": 1, "w": "their", "n": 1, "to": "Ana and Ben" },
+        { "s": 6, "w": "He", "n": 1, "to": "Ben" }
+      ],
       "topics": ["games", "home"],
       "level": 1,
       "socialLoad": 0,
@@ -72,6 +87,12 @@
         "The rover rolled across the room and stopped by the door.",
         "Ms. Ortiz clapped, and Priya grinned.",
         "At 4:45 PM, Priya put the rover in her backpack and went home."
+      ],
+      "refs": [
+        { "s": 3, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 3, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 4, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 7, "w": "her", "n": 1, "to": "Priya" }
       ],
       "topics": ["robots", "school"],
       "level": 2,
@@ -94,6 +115,12 @@
         "The grasshopper was hungry, so he asked the ant for help.",
         "The ant gave him some seeds.",
         "The next summer, the grasshopper saved food too."
+      ],
+      "refs": [
+        { "s": 1, "w": "her", "n": 1, "to": "the ant" },
+        { "s": 6, "w": "her", "n": 1, "to": "the ant" },
+        { "s": 7, "w": "he", "n": 1, "to": "the grasshopper" },
+        { "s": 8, "w": "him", "n": 1, "to": "the grasshopper" }
       ],
       "topics": ["animals", "nature"],
       "level": 2,
@@ -259,6 +286,11 @@
         "At lunch, the girls sold the last three cookies to Ms. Ortiz.",
         "After school, they took the money box to the school office."
       ],
+      "refs": [
+        { "s": 2, "w": "them", "n": 1, "to": "Maya and Priya" },
+        { "s": 4, "w": "their", "n": 1, "to": "the students" },
+        { "s": 7, "w": "they", "n": 1, "to": "Maya and Priya" }
+      ],
       "topics": [
         "food",
         "school"
@@ -324,6 +356,10 @@
         "A hermit crab uses an old shell as its home, and it moves into a bigger one as it grows.",
         "Sam and Maya looked carefully, but they did not lift any animals out of the water.",
         "When the tide came back in, they climbed up to the seawall and ate their lunch."
+      ],
+      "words": [
+        { "word": "tide", "means": "the rise and fall of the sea each day", "pic": "🌊" },
+        { "word": "seawall", "means": "a high stone edge built to hold back the waves", "pic": "🧱" }
       ],
       "topics": [
         "ocean",
@@ -514,6 +550,12 @@
         "Ana gave it two sticks for arms.",
         "At noon, they walked home for hot tomato soup."
       ],
+      "refs": [
+        { "s": 3, "w": "They", "n": 1, "to": "Ana and Ben" },
+        { "s": 4, "w": "it", "n": 1, "to": "the snowman" },
+        { "s": 5, "w": "it", "n": 1, "to": "the snowman" },
+        { "s": 6, "w": "they", "n": 1, "to": "Ana and Ben" }
+      ],
       "topics": [
         "weather"
       ],
@@ -541,6 +583,16 @@
         "Her mom clapped from the kitchen.",
         "Maya smiled and played the fast song again.",
         "At eight o'clock, she put the flute away."
+      ],
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 1, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 1, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 1, "w": "its", "n": 1, "to": "the flute" },
+        { "s": 2, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "Her", "n": 1, "to": "Maya" },
+        { "s": 6, "w": "she", "n": 1, "to": "Maya" }
       ],
       "topics": [
         "music"
@@ -573,6 +625,17 @@
         "They found three shells and a piece of green sea glass.",
         "After lunch, they rode the train back home."
       ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 1, "w": "They", "n": 1, "to": "Sam and his dad" },
+        { "s": 2, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 2, "w": "his", "n": 2, "to": "Sam" },
+        { "s": 5, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 7, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 8, "w": "They", "n": 1, "to": "Sam and his dad" },
+        { "s": 9, "w": "they", "n": 1, "to": "Sam and his dad" }
+      ],
       "topics": [
         "transport"
       ],
@@ -602,6 +665,13 @@
         "The ducks swam under some low branches.",
         "Maya waited quietly until they came back out.",
         "At four o'clock, she walked home and showed the drawing to her dad."
+      ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 1, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "her", "n": 1, "to": "the mother duck" },
+        { "s": 8, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "her", "n": 1, "to": "Maya" }
       ],
       "topics": [
         "animals"
@@ -633,6 +703,10 @@
         "Ben shook his hand.",
         "Then they set up the board and played again."
       ],
+      "refs": [
+        { "s": 6, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 8, "w": "they", "n": 1, "to": "Ben and Leo" }
+      ],
       "topics": [
         "games"
       ],
@@ -663,6 +737,14 @@
         "The air was cool, and the sky was turning pink.",
         "Priya said it was the best pizza they had ever made."
       ],
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 0, "w": "their", "n": 1, "to": "Priya and her dad" },
+        { "s": 3, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 6, "w": "They", "n": 1, "to": "Priya and her dad" },
+        { "s": 8, "w": "it", "n": 1, "to": "the pizza" },
+        { "s": 8, "w": "they", "n": 1, "to": "Priya and her dad" }
+      ],
       "topics": [
         "food"
       ],
@@ -692,6 +774,13 @@
         "Leo turned the map around and walked past the slide.",
         "Five minutes later, Leo found the car.",
         "\"Now I will make a map for you,\" said Leo."
+      ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 1, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 2, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 3, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "him", "n": 1, "to": "Leo" }
       ],
       "topics": [
         "maps",
@@ -984,6 +1073,10 @@
         "By the time the Bike Bus reached the school gate, it had twenty-two riders.",
         "The first bell rang fifteen minutes later, at 8:30."
       ],
+      "words": [
+        { "word": "engine", "means": "the motor that makes a car or bus move", "pic": "🚌" },
+        { "word": "vest", "means": "a top with no sleeves, worn over clothes", "pic": "🦺" }
+      ],
       "topics": [
         "transport"
       ],
@@ -1058,6 +1151,11 @@
       "breaks": [
         3,
         7
+      ],
+      "words": [
+        { "word": "compass", "means": "a tool with a needle that points north", "pic": "🧭" },
+        { "word": "checkpoints", "means": "places on the course that runners must reach", "pic": "📍" },
+        { "word": "slope", "means": "the side of a hill that goes up", "pic": "⛰️" }
       ],
       "topics": [
         "maps"
@@ -1363,6 +1461,11 @@
         3,
         7
       ],
+      "words": [
+        { "word": "greenhouse", "means": "a glass building where plants are grown", "pic": "🌱" },
+        { "word": "sensor", "means": "a part that checks how wet the soil is", "pic": "💧" },
+        { "word": "snowplows", "means": "trucks with a big blade that clear the roads in winter", "pic": "🚛" }
+      ],
       "topics": [
         "robots"
       ],
@@ -1523,6 +1626,11 @@
         9,
         13
       ],
+      "words": [
+        { "word": "survey", "means": "a careful trip to measure and map a place", "pic": "🗺️" },
+        { "word": "pulse", "means": "a quick, short beep", "pic": "📡" },
+        { "word": "echo", "means": "a sound that bounces back", "pic": "🔁" }
+      ],
       "topics": [
         "maps",
         "ocean"
@@ -1603,6 +1711,11 @@
         3,
         7,
         11
+      ],
+      "words": [
+        { "word": "skull", "means": "the bones of the head", "pic": "🦖" },
+        { "word": "skeleton", "means": "all the bones of a body, put together", "pic": "🦴" },
+        { "word": "fossil", "means": "old bones or shapes kept in rock", "pic": "🪨" }
       ],
       "topics": [
         "dinosaurs"
@@ -1854,6 +1967,289 @@
         "source": "Written for Learning to Fly",
         "licence": "original",
         "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p01",
+      "title": "The Bus to Art Class",
+      "kind": "story",
+      "picture": "🚌🎨",
+      "sentences": [
+        "On Tuesday morning, Maya waited at the bus station in Harbor Town.",
+        "She had her sketchbook and a bag of pencils.",
+        "Her art class was at the library at nine o'clock.",
+        "Bus 2 came at a quarter past eight.",
+        "Maya sat by the window and drew the boats in the harbor.",
+        "Ben got on at the next stop.",
+        "He sat down next to her and looked at her drawing.",
+        "\"That boat looks real,\" he said.",
+        "They got off the bus together at the library.",
+        "Ben was going to the art class too."
+      ],
+      "topics": ["transport", "friends"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Bus to Art Class",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p01",
+      "title": "Counting Seals",
+      "kind": "story",
+      "picture": "🦭⛴️",
+      "sentences": [
+        "On Sunday morning, Priya and her dad took the ferry to Gull Island.",
+        "They walked to the flat rocks on the north beach.",
+        "Twelve seals were asleep in the warm sun.",
+        "Priya stayed behind the rope and counted them with her binoculars.",
+        "At eleven o'clock, Ranger Jo came along the path.",
+        "She wrote Priya's number in her notebook.",
+        "\"Twelve is the most this week,\" said Ranger Jo.",
+        "After lunch, Priya and her dad took the ferry home."
+      ],
+      "topics": ["animals", "ocean"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Counting Seals",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p01",
+      "title": "The Fish Kite",
+      "kind": "story",
+      "picture": "🪁🐟",
+      "sentences": [
+        "On Saturday afternoon, Leo and Sam went to Windy Cape.",
+        "The wind was strong, and the grass on the cliff top was bent flat.",
+        "Leo had a green kite shaped like a fish.",
+        "Sam held the kite up, and Leo let out the string.",
+        "The fish kite rose quickly into the sky.",
+        "A woman in a blue pilot's jacket watched them from a bench.",
+        "Her name was Captain Ada.",
+        "\"Keep the string tight,\" she said, \"and stay far from the cliff edge.\"",
+        "At five o'clock, the boys rolled up the string and packed the kite away."
+      ],
+      "topics": ["weather", "friends"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Fish Kite",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p01",
+      "title": "Monday at Cloud Hill",
+      "kind": "story",
+      "picture": "🛩️🌫️",
+      "sentences": [
+        "On Monday morning, Captain Ada drove up the road to Cloud Hill.",
+        "Thick fog sat on the hill, so no planes could fly yet.",
+        "Captain Ada parked by the old hangar and went in.",
+        "Inside the hangar, Mr. Lund was at work on the Kookaburra.",
+        "Mr. Lund fixes planes at Cloud Hill.",
+        "He was taking the old tires off the small red plane.",
+        "Then Rosa came to the door and waved.",
+        "Rosa drives the fuel truck.",
+        "She would come back on Friday to fill the plane with fuel.",
+        "By ten o'clock, the fog was gone, and the sun shone on the plane."
+      ],
+      "topics": ["transport", "weather"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Monday at Cloud Hill",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p01",
+      "title": "Take-off Morning",
+      "kind": "story",
+      "picture": "🛫☀️",
+      "sentences": [
+        "On Monday morning, the Kookaburra rolled out of the old hangar.",
+        "Mr. Lund and Nell pushed it onto the grass by the runway.",
+        "Then Captain Ada climbed into the cockpit.",
+        "The cockpit is the front part of the plane, where the pilot sits.",
+        "She put on her seat belt.",
+        "She checked the fuel, the radio and the map one last time.",
+        "Then the engine started, and the propeller began to spin.",
+        "Nell waved to her from behind the fence.",
+        "The plane rolled down the long runway and went up into the sky."
+      ],
+      "topics": ["transport"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Take-off Morning",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p01",
+      "title": "Breakfast for the Koalas",
+      "kind": "story",
+      "picture": "🐨🌿",
+      "sentences": [
+        "Every morning at seven, Ranger Tess gets in her truck.",
+        "She drives to the edge of the woods.",
+        "There, she cuts fresh branches from tall gum trees.",
+        "Then she drives back to the sanctuary.",
+        "She puts the branches up high in the koala yards.",
+        "A koala named Gumnut sniffs the leaves.",
+        "Then Gumnut starts to eat.",
+        "Koalas only eat the kinds of leaves they like.",
+        "By eight, every koala has a fresh breakfast."
+      ],
+      "topics": ["animals", "nature"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Breakfast for the Koalas",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p01",
+      "title": "The Balloon at Six",
+      "kind": "story",
+      "picture": "🎈🌅",
+      "sentences": [
+        "On Saturday, Ana woke up early at Star Point.",
+        "It was still dark outside her window.",
+        "At a quarter to six, she walked down the lamp path to the weather station.",
+        "Dr. Amal was there with a big white balloon.",
+        "A small box hung on a string under it.",
+        "\"This box measures the air,\" said Dr. Amal.",
+        "\"It sends the numbers back by radio.\"",
+        "At six o'clock, Dr. Amal let go of the string.",
+        "The balloon rose fast over the white dome.",
+        "Soon it was only a tiny dot in the sky.",
+        "Then Ana went back up the path to eat breakfast."
+      ],
+      "topics": ["weather", "space"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Balloon at Six",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p01",
+      "title": "Leo and Max on the Coast Line",
+      "kind": "story",
+      "picture": "🚂🌊",
+      "sentences": [
+        "On Saturday afternoon, Leo took his cousin Max to Pier Station.",
+        "Max is seven, and he had never been on a train.",
+        "Their train came in at two o'clock.",
+        "Max sat by the window and pointed at the waves.",
+        "The train stopped at Shell Halt, but they stayed in their seats.",
+        "At half past two, the train reached Rail Coast.",
+        "Leo and Max got off and walked to the station clock.",
+        "Mr. Haddad waved to them from the signal box.",
+        "Max waved back with both hands."
+      ],
+      "topics": ["transport", "friends"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Leo and Max on the Coast Line",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p01",
+      "title": "Maya's Coiled Stone",
+      "kind": "story",
+      "picture": "🐚🪨",
+      "sentences": [
+        "On Thursday morning, Maya and Grandma Rose took the boat to Fossil Bay.",
+        "They landed at the pier and walked down to the beach.",
+        "Tall gray cliffs stood above the beach.",
+        "Maya looked at the loose stones near the water.",
+        "Beside a big flat rock, she found a round gray stone.",
+        "A coiled shell was pressed into one side of it.",
+        "Maya carried the stone to Dr. Bell's tent at the far end of the beach.",
+        "\"This is an ammonite,\" said Dr. Bell.",
+        "\"It was a sea animal that lived long ago, in the time of the dinosaurs.\""
+      ],
+      "topics": ["dinosaurs", "ocean"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Maya's Coiled Stone",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p01",
+      "title": "Turtle Tracks After Dark",
+      "kind": "story",
+      "picture": "🐢🔦",
+      "sentences": [
+        "On Friday night, Ana and Ben walked along the beach on Reef Island with Mari.",
+        "Mari carried a small red flashlight.",
+        "She said that bright white light can confuse sea turtles.",
+        "Near the top of the beach, Ben stopped and pointed at the sand.",
+        "A wide trail of marks went from the water up to the dry sand.",
+        "Another trail went back down to the sea.",
+        "\"Those are turtle tracks,\" said Mari.",
+        "\"A mother turtle came up here to lay her eggs.\"",
+        "Ana wrote the date in her notebook, and they walked back very quietly."
+      ],
+      "topics": ["animals", "ocean"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Turtle Tracks After Dark",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
         "adapted": false
       }
     }
@@ -7285,6 +7681,166 @@
         "across-paragraphs",
         "close-options"
       ]
+    },
+    {
+      "id": "cu-home-i01",
+      "skill": "N1",
+      "passage": "cu-home-p01",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where was Maya's art class?",
+      "options": ["at the bus station", "at the harbor", "at the library"],
+      "answer": 2,
+      "evidence": [2],
+      "hint": "Find the sentence with the words art class. Look for a place in it.",
+      "explain": "Maya's art class was at the library. It is in the third sentence.",
+      "inference": 0,
+      "checkup": "home",
+      "tags": ["where"]
+    },
+    {
+      "id": "cu-gull-i01",
+      "skill": "N1",
+      "passage": "cu-gull-p01",
+      "format": "tap",
+      "level": 2,
+      "prompt": "When did Priya and her dad take the ferry home?",
+      "options": ["on Sunday morning", "after lunch", "at eleven o'clock"],
+      "answer": 1,
+      "evidence": [7],
+      "hint": "Find the sentence about going home. Look for a time word in it.",
+      "explain": "They took the ferry home after lunch. It is in the last sentence.",
+      "inference": 0,
+      "checkup": "gull",
+      "tags": ["when", "close-options"]
+    },
+    {
+      "id": "cu-cape-i01",
+      "skill": "N1",
+      "passage": "cu-cape-p01",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Who told the boys to stay far from the cliff edge?",
+      "options": ["Sam", "Captain Ada", "Leo"],
+      "answer": 1,
+      "evidence": [5, 6, 7],
+      "hint": "Find the words cliff edge. Then look back to see who \"she\" is.",
+      "explain": "Captain Ada told them. The sentence before it says her name.",
+      "inference": 1,
+      "checkup": "cape",
+      "tags": ["who", "she"]
+    },
+    {
+      "id": "cu-airfield-i01",
+      "skill": "N1",
+      "passage": "cu-airfield-p01",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Who was at work on the Kookaburra when Captain Ada went into the hangar?",
+      "options": ["Rosa", "Captain Ada", "Mr. Lund"],
+      "answer": 2,
+      "evidence": [2, 3],
+      "hint": "Find the sentence where Captain Ada goes in. Then read the next sentence to see who was inside the hangar.",
+      "explain": "Mr. Lund was at work on the Kookaburra. The fourth sentence says he was inside the hangar, working on it.",
+      "inference": 0,
+      "checkup": "airfield",
+      "tags": ["who", "three-characters"]
+    },
+    {
+      "id": "cu-takeoff-i01",
+      "skill": "N1",
+      "passage": "cu-takeoff-p01",
+      "format": "tap",
+      "level": 2,
+      "prompt": "When did the Kookaburra roll out of the hangar?",
+      "options": ["On Monday morning", "On Sunday night", "On Monday night"],
+      "answer": 0,
+      "evidence": [0],
+      "hint": "Look for the words that tell the day and the time of day.",
+      "explain": "It rolled out on Monday morning. The first sentence tells the day and the time of day.",
+      "inference": 0,
+      "checkup": "takeoff",
+      "tags": ["when"]
+    },
+    {
+      "id": "cu-australia-i01",
+      "skill": "N1",
+      "passage": "cu-australia-p01",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where does Ranger Tess cut the fresh branches?",
+      "options": ["In the koala yards", "At the sanctuary gate", "At the edge of the woods"],
+      "answer": 2,
+      "evidence": [1, 2],
+      "hint": "Find the sentence about cutting branches. The word \"There\" points back to a place in the sentence before it.",
+      "explain": "She cuts them at the edge of the woods. The second sentence names the place, and the word \"There\" in the third sentence points back to it.",
+      "inference": 1,
+      "checkup": "australia",
+      "tags": ["where", "there", "two-places"]
+    },
+    {
+      "id": "cu-star-i01",
+      "skill": "N1",
+      "passage": "cu-star-p01",
+      "format": "tap",
+      "level": 2,
+      "prompt": "When did Dr. Amal let go of the balloon?",
+      "options": ["at a quarter to six", "at six o'clock", "after breakfast"],
+      "answer": 1,
+      "evidence": [7],
+      "hint": "Find the sentence where Dr. Amal lets go. Look for a time word in it.",
+      "explain": "Dr. Amal let go at six o'clock. It is in the sentence about letting go of the string. A quarter to six is when Ana walked down the path.",
+      "inference": 0,
+      "checkup": "star",
+      "tags": ["when", "close-options"]
+    },
+    {
+      "id": "cu-rail-i01",
+      "skill": "N1",
+      "passage": "cu-rail-p01",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where did Leo and Max get off the train?",
+      "options": ["at Shell Halt", "at Rail Coast", "at Pier Station"],
+      "answer": 1,
+      "evidence": [5, 6],
+      "hint": "Find the sentence where they get off. Then read the sentence just before it to find the place.",
+      "explain": "They got off at Rail Coast. The train reached Rail Coast, and then they got off. At Shell Halt, they stayed in their seats.",
+      "inference": 1,
+      "checkup": "rail",
+      "tags": ["where", "close-options"]
+    },
+    {
+      "id": "cu-fossil-i01",
+      "skill": "N1",
+      "passage": "cu-fossil-p01",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where did Maya find the round gray stone?",
+      "options": ["on the pier", "beside a big flat rock", "inside Dr. Bell's tent"],
+      "answer": 1,
+      "evidence": [4],
+      "hint": "Find the sentence where Maya finds the stone. Look for a place word in it.",
+      "explain": "She found it beside a big flat rock. It is in the sentence where she finds the stone. She carried it to the tent later.",
+      "inference": 0,
+      "checkup": "fossil",
+      "tags": ["where", "close-options"]
+    },
+    {
+      "id": "cu-reef-i01",
+      "skill": "N1",
+      "passage": "cu-reef-p01",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Who saw the turtle tracks first?",
+      "options": ["Ben", "Ana", "Mari"],
+      "answer": 0,
+      "evidence": [3],
+      "hint": "Find the sentence where someone stops and points at the sand.",
+      "explain": "Ben saw the tracks first. He stopped and pointed at the sand before Mari said what the marks were.",
+      "inference": 1,
+      "checkup": "reef",
+      "tags": ["who", "three-characters"]
     }
   ],
   "model": {

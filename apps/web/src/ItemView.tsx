@@ -9,7 +9,24 @@ import { Passage, SignSvg, norm, type Mark } from './Passage';
 import { Btn, SpeakBtn, shuffled } from './ui';
 import { sfx, speak, stopSpeaking } from './media';
 import { Guide } from './art';
+import { whosWhoOn, type WhosWho } from './whoswho';
 import type { GuideId } from './db';
+
+type Box = 'clue' | 'know' | 'so';
+const BOXES: [Box, string][] = [['clue', 'Clue'], ['know', 'What I know'], ['so', 'So']];
+/**
+ * LTF-02: the reasoning card, as the second hint on a feelings question. "So" stays a question until the answer
+ * is shown, so the last step of the thinking is still his. The worked example fills the boxes as the guide talks.
+ */
+function ReasonCard({ id, reason, filled }: { id: string; reason: NonNullable<Item['reason']>; filled: Box[] }) {
+  return <section className="stack" style={{ gap: '0.4rem' }} aria-label="Thinking it through">
+    <ol className="strip three">{BOXES.map(([k, label]) => <li key={k} className="panel"><div className="pbox">
+      <span className="plabel">{label}</span>
+      <span className={filled.includes(k) ? 'ptext' : 'ptext muted'}>{filled.includes(k) ? reason[k] : k === 'so' ? 'What does that tell you?' : '…'}</span>
+    </div></li>)}</ol>
+    <SpeakBtn lines={BOXES.filter(([k]) => filled.includes(k)).map(([k, label]) => `${label}: ${reason[k]}`)} k={`reason-${id}-${filled.length}`} label="Read the card" className="small" />
+  </section>;
+}
 
 export interface Result { correct: boolean; hint: number; tries: number; ms: number; rubric?: number; note?: string }
 export type HintMode = 'auto' | 'request' | 'none' | 'demo';
@@ -21,23 +38,26 @@ export interface ItemViewProps {
   pictures?: boolean;
   /** Bumped by the bottom bar's Help button. */
   helpTick?: number;
-  demo?: { show?: number[]; reveal?: boolean };
+  demo?: { show?: number[]; reveal?: boolean; fill?: Box[] };
   autoRead?: boolean;
   listenOnly?: boolean;
   praiseIndex?: number;
   onDone?: (r: Result) => void;
   /** Show the clue straight away instead of after the usual wait (LTF-01). */
   clueAtOnce?: boolean;
+  /** LTF-03: the who's who setting, and whether N4 is mastered. */
+  whosWho?: { setting: WhosWho; n4Mastered: boolean; names?: boolean };
 }
 
 const SLOT: Record<string, [string, string]> = {
   who: ['👤', 'Who'], where: ['📍', 'Where'], when: ['🕒', 'When'], problem: ['⚡', 'Problem'], feeling: ['💗', 'Feeling'], want: ['🎯', 'Wants'],
   plan: ['🧭', 'Plan'], ending: ['🏁', 'Ending'], first: ['1️⃣', 'First'], then: ['2️⃣', 'Then'], last: ['3️⃣', 'Last'], why: ['❓', 'Why'],
   main: ['⭐', 'Main idea'], lesson: ['💡', 'Lesson'], evidence: ['🔎', 'Clue'], me: ['🙋', 'Me'], other: ['👥', 'Someone else'],
+  like: ['🔁', 'It is like'], share: ['🔗', 'What they share'], means: ['💬', 'So it means'], // LTF-11: the metaphor map
 };
 const RUBRIC = ['', 'You named the feeling or idea.', 'You gave a reason.', 'You tied it to the story.', 'You added your own life or another view.'];
 
-export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, helpTick = 0, demo, autoRead, listenOnly, praiseIndex = 0, onDone, clueAtOnce }: ItemViewProps) {
+export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, helpTick = 0, demo, autoRead, listenOnly, praiseIndex = 0, onDone, clueAtOnce, whosWho }: ItemViewProps) {
   const passage = pool.passages.get(item.passage)!;
   const [hint, setHint] = useState(0);
   const [tries, setTries] = useState(0);
@@ -128,12 +148,16 @@ export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, he
   return <div className="lesson">
     <div className={`lesson-grid ${showPassage ? 'two' : ''}`}>
       {showPassage && <Passage passage={passage} marks={marks} wordMarks={words} focus={item.focus} pictures={pictures} listenOnly={listenOnly}
+        refs={whosWho && whosWhoOn({ ...whosWho, skill: item.skill, mode, level: passage.level, hint }) ? { skip: item.focus } : undefined}
+        names={!!whosWho?.names && passage.level === 1 && item.skill !== 'N4' && mode !== 'none'}
         tap={highlight && !isDemo && !solved ? { unit: item.unit ?? 'sentence', onTap: onTapPassage } : undefined} />}
       <div className="stack">
         <div className="prompt"><SpeakBtn lines={[item.prompt]} k={'q-' + item.id} label="" className="small iconbtn speak" /><span>{item.prompt}</span></div>
         {body}
         <div aria-live="polite" className="stack">
           {!isDemo && hintText && !solved && <div className="feedback hint appear" key={hint}><Guide id={guide} mood="think" size={44} /><span>{hintText}</span></div>}
+          {item.reason && (isDemo ? !!demo?.fill?.length : hint >= 2 && !solved) && <ReasonCard id={item.id} reason={item.reason}
+            filled={isDemo ? demo!.fill! : hint >= 3 ? ['clue', 'know', 'so'] : ['clue', 'know']} />}
           {solved === 'answered' && <div className="feedback neutral appear"><Guide id={guide} size={44} /><span>Thank you. On to the next one.</span></div>}
           {solved === 'right' && <div className="feedback good appear">
             <Guide id={guide} mood="happy" size={44} />

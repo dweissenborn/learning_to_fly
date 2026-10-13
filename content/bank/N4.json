@@ -14,6 +14,15 @@
         "Then he found the library.",
         "He put a red dot on his house."
       ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 1, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 2, "w": "It", "n": 1, "to": "the map" },
+        { "s": 3, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 4, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "his", "n": 1, "to": "Sam" }
+      ],
       "topics": ["maps"],
       "level": 1,
       "socialLoad": 0,
@@ -32,6 +41,13 @@
         "Priya caught it at the edge.",
         "She smiled and turned the rover around."
       ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 2, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 3, "w": "It", "n": 1, "to": "the rover" },
+        { "s": 4, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 5, "w": "She", "n": 1, "to": "Priya" }
+      ],
       "topics": ["robots", "home"],
       "level": 1,
       "socialLoad": 0,
@@ -49,6 +65,9 @@
         "People sit on the top deck and look at the sea.",
         "The trip to Gull Island takes 40 minutes.",
         "Then the ferry comes back to town."
+      ],
+      "refs": [
+        { "s": 1, "w": "It", "n": 1, "to": "the ferry" }
       ],
       "topics": ["transport", "ocean"],
       "level": 1,
@@ -73,6 +92,18 @@
         "She held up her drawing of the jump.",
         "Leo laughed and gave her a high five."
       ],
+      "refs": [
+        { "s": 2, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 2, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 3, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 6, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 7, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 7, "w": "it", "n": 1, "to": "the board" },
+        { "s": 9, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 9, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 10, "w": "her", "n": 1, "to": "Maya" }
+      ],
       "topics": ["sports", "friends"],
       "level": 2,
       "socialLoad": 0,
@@ -91,6 +122,17 @@
         "Ben asked if he could keep the rock.",
         "Ms. Ortiz smiled and gave it back to him.",
         "Then she showed the class her own rock collection."
+      ],
+      "refs": [
+        { "s": 1, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 1, "w": "it", "n": 1, "to": "the rock" },
+        { "s": 3, "w": "She", "n": 1, "to": "Ms. Ortiz" },
+        { "s": 3, "w": "it", "n": 1, "to": "the rock" },
+        { "s": 4, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "it", "n": 1, "to": "the rock" },
+        { "s": 5, "w": "him", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "she", "n": 1, "to": "Ms. Ortiz" },
+        { "s": 6, "w": "her", "n": 1, "to": "Ms. Ortiz" }
       ],
       "topics": ["school", "mining"],
       "level": 2,
@@ -140,6 +182,13 @@
         "Sam traced the road up the hill on the map.",
         "At ten o'clock, the bus stopped in front of the observatory."
       ],
+      "refs": [
+        { "s": 2, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 3, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 4, "w": "him", "n": 1, "to": "Leo" },
+        { "s": 7, "w": "him", "n": 1, "to": "Leo" },
+        { "s": 9, "w": "his", "n": 1, "to": "Leo" }
+      ],
       "topics": ["transport", "space"],
       "level": 3,
       "socialLoad": 0,
@@ -162,6 +211,16 @@
         "Then he carried it out to the bus stop for them.",
         "At lunch, the whole team shared the muffins."
       ],
+      "refs": [
+        { "s": 2, "w": "They", "n": 1, "to": "Ana and Ben" },
+        { "s": 4, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "their", "n": 1, "to": "Ana and Ben" },
+        { "s": 6, "w": "They", "n": 1, "to": "Ana and Ben" },
+        { "s": 6, "w": "they", "n": 2, "to": "Ana and Ben" },
+        { "s": 8, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 8, "w": "it", "n": 1, "to": "the box" },
+        { "s": 8, "w": "them", "n": 1, "to": "Ana and Ben" }
+      ],
       "topics": ["food", "sports", "friends"],
       "level": 3,
       "socialLoad": 0,
@@ -181,6 +240,18 @@
         "Then Priya's detector beeped next to a log, and she dug up an old brass key.",
         "Maya held the key up to the light and drew it in her sketchbook.",
         "Then she gave it back to Priya, who put it in her pocket."
+      ],
+      "refs": [
+        { "s": 2, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 4, "w": "They", "n": 1, "to": "the pieces of green glass" },
+        { "s": 4, "w": "them", "n": 1, "to": "the pieces of green glass" },
+        { "s": 5, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 6, "w": "it", "n": 1, "to": "the key" },
+        { "s": 6, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "it", "n": 1, "to": "the key" },
+        { "s": 7, "w": "it", "n": 2, "to": "the key" },
+        { "s": 7, "w": "her", "n": 1, "to": "Priya" }
       ],
       "topics": ["ocean", "mining", "robots"],
       "level": 3,
@@ -207,6 +278,32 @@
         "Mr. Okafor told the boys that they could ride them to school on Monday to show the bike club."
       ],
       "breaks": [4, 8],
+      "words": [
+        { "word": "rust", "means": "brown flakes that form on old, wet metal", "pic": "🔩" },
+        { "word": "soak", "means": "to leave sitting in a liquid", "pic": "💧" },
+        { "word": "patch", "means": "a small piece that covers a hole", "pic": "🩹" }
+      ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Mr. Okafor" },
+        { "s": 0, "w": "them", "n": 1, "to": "the old bikes" },
+        { "s": 1, "w": "Their", "n": 1, "to": "the old bikes" },
+        { "s": 1, "w": "their", "n": 2, "to": "the old bikes" },
+        { "s": 2, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 2, "w": "them", "n": 1, "to": "the old bikes" },
+        { "s": 3, "w": "he", "n": 1, "to": "Mr. Okafor" },
+        { "s": 5, "w": "it", "n": 1, "to": "a chain" },
+        { "s": 7, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 7, "w": "them", "n": 1, "to": "the tires" },
+        { "s": 7, "w": "he", "n": 2, "to": "Sam" },
+        { "s": 7, "w": "it", "n": 1, "to": "a tiny hole" },
+        { "s": 8, "w": "His", "n": 1, "to": "Sam" },
+        { "s": 9, "w": "it", "n": 1, "to": "his careful work" },
+        { "s": 9, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 9, "w": "him", "n": 1, "to": "Sam" },
+        { "s": 9, "w": "her", "n": 1, "to": "his grandma" },
+        { "s": 11, "w": "they", "n": 1, "to": "the boys" },
+        { "s": 11, "w": "them", "n": 1, "to": "the old bikes" }
+      ],
       "topics": ["transport", "friends"],
       "level": 4,
       "socialLoad": 0,
@@ -230,6 +327,16 @@
         "Now people stop to read it while they wait to borrow their books."
       ],
       "breaks": [3, 7],
+      "refs": [
+        { "s": 2, "w": "They", "n": 1, "to": "six students" },
+        { "s": 2, "w": "they", "n": 2, "to": "six students" },
+        { "s": 4, "w": "its", "n": 1, "to": "the robot" },
+        { "s": 6, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 7, "w": "she", "n": 1, "to": "Mrs. Hall" },
+        { "s": 7, "w": "she", "n": 2, "to": "Mrs. Hall" },
+        { "s": 7, "w": "it", "n": 1, "to": "the comic" },
+        { "s": 9, "w": "it", "n": 1, "to": "the comic" }
+      ],
       "topics": ["school", "robots", "friends"],
       "level": 4,
       "socialLoad": 0,
@@ -260,6 +367,27 @@
         "On Monday, they hung it above the workbench in Ms. Ortiz's room."
       ],
       "breaks": [5, 9, 12],
+      "refs": [
+        { "s": 1, "w": "they", "n": 1, "to": "teams from four schools" },
+        { "s": 1, "w": "themselves", "n": 1, "to": "teams from four schools" },
+        { "s": 2, "w": "them", "n": 1, "to": "the machines" },
+        { "s": 3, "w": "its", "n": 1, "to": "the rover" },
+        { "s": 4, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 6, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 7, "w": "Their", "n": 1, "to": "the girls" },
+        { "s": 7, "w": "their", "n": 2, "to": "the girls" },
+        { "s": 8, "w": "her", "n": 1, "to": "Ms. Ortiz" },
+        { "s": 8, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "their", "n": 1, "to": "the girls" },
+        { "s": 9, "w": "herself", "n": 1, "to": "Ms. Ortiz" },
+        { "s": 10, "w": "she", "n": 1, "to": "Ms. Ortiz" },
+        { "s": 10, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 12, "w": "they", "n": 1, "to": "the judges" },
+        { "s": 13, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 13, "w": "it", "n": 2, "to": "the rover" },
+        { "s": 16, "w": "they", "n": 1, "to": "the girls" },
+        { "s": 16, "w": "it", "n": 1, "to": "the blue ribbon" }
+      ],
       "topics": ["robots", "school"],
       "level": 5,
       "socialLoad": 0,
@@ -280,6 +408,20 @@
         "Then a boat horn blew, and the gull flew away over the water.",
         "Leo laughed and finished his lunch.",
         "Maya showed him her drawing."
+      ],
+      "refs": [
+        { "s": 1, "w": "them", "n": 1, "to": "Leo and Maya" },
+        { "s": 2, "w": "It", "n": 1, "to": "the gull" },
+        { "s": 2, "w": "its", "n": 1, "to": "the gull" },
+        { "s": 3, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 3, "w": "his", "n": 2, "to": "Leo" },
+        { "s": 4, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "its", "n": 1, "to": "the gull" },
+        { "s": 5, "w": "its", "n": 2, "to": "the gull" },
+        { "s": 7, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 8, "w": "him", "n": 1, "to": "Leo" },
+        { "s": 8, "w": "her", "n": 1, "to": "Maya" }
       ],
       "topics": [
         "animals"
@@ -313,6 +455,12 @@
         "The other teams clapped when the bridge was finished.",
         "The Lighthouse Crew won second place, and each player got a small trophy."
       ],
+      "refs": [
+        { "s": 1, "w": "their", "n": 1, "to": "Ana, Ben and Leo" },
+        { "s": 2, "w": "they", "n": 1, "to": "Ana, Ben and Leo" },
+        { "s": 8, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 8, "w": "it", "n": 1, "to": "the truck" }
+      ],
       "topics": [
         "games"
       ],
@@ -344,6 +492,17 @@
         "By Friday, she could play the fast part without losing her place, and Priya's fingers were faster too.",
         "Ms. Gray asked the girls to play the hard part together for the band.",
         "When they finished, the whole band clapped."
+      ],
+      "refs": [
+        { "s": 2, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 3, "w": "her", "n": 2, "to": "Priya" },
+        { "s": 6, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "it", "n": 1, "to": "each note" },
+        { "s": 8, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 10, "w": "they", "n": 1, "to": "the two girls" }
       ],
       "topics": [
         "music"
@@ -384,6 +543,25 @@
       "breaks": [
         6,
         11
+      ],
+      "refs": [
+        { "s": 0, "w": "it", "n": 1, "to": "the creek" },
+        { "s": 2, "w": "it", "n": 1, "to": "the flat gray rock" },
+        { "s": 3, "w": "he", "n": 1, "to": "Pixel" },
+        { "s": 4, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "it", "n": 1, "to": "the mud" },
+        { "s": 6, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 6, "w": "it", "n": 1, "to": "the photo" },
+        { "s": 7, "w": "She", "n": 1, "to": "Ms. Ortiz" },
+        { "s": 8, "w": "she", "n": 1, "to": "Ms. Ortiz" },
+        { "s": 8, "w": "it", "n": 1, "to": "the shape" },
+        { "s": 9, "w": "She", "n": 1, "to": "Ms. Ortiz" },
+        { "s": 10, "w": "They", "n": 1, "to": "the scientists" },
+        { "s": 10, "w": "it", "n": 1, "to": "the footprint" },
+        { "s": 12, "w": "She", "n": 1, "to": "Dr. Bell" },
+        { "s": 12, "w": "it", "n": 1, "to": "the footprint" },
+        { "s": 13, "w": "it", "n": 1, "to": "the footprint" },
+        { "s": 14, "w": "his", "n": 1, "to": "Sam" }
       ],
       "topics": [
         "dinosaurs",
@@ -427,6 +605,22 @@
       "breaks": [
         5,
         12
+      ],
+      "refs": [
+        { "s": 1, "w": "she", "n": 1, "to": "Captain Lane" },
+        { "s": 2, "w": "Her", "n": 1, "to": "Captain Lane" },
+        { "s": 3, "w": "her", "n": 1, "to": "Captain Lane" },
+        { "s": 4, "w": "it", "n": 1, "to": "the storm" },
+        { "s": 5, "w": "Its", "n": 1, "to": "the storm" },
+        { "s": 7, "w": "She", "n": 1, "to": "Captain Lane" },
+        { "s": 7, "w": "it", "n": 1, "to": "the ferry" },
+        { "s": 8, "w": "she", "n": 1, "to": "Kim" },
+        { "s": 8, "w": "them", "n": 1, "to": "each knot" },
+        { "s": 10, "w": "them", "n": 1, "to": "the passengers" },
+        { "s": 11, "w": "them", "n": 1, "to": "the passengers" },
+        { "s": 11, "w": "they", "n": 1, "to": "the passengers" },
+        { "s": 15, "w": "its", "n": 1, "to": "the ferry" },
+        { "s": 16, "w": "It", "n": 1, "to": "the ferry" }
       ],
       "topics": [
         "weather",
@@ -472,6 +666,21 @@
         9,
         13
       ],
+      "refs": [
+        { "s": 2, "w": "it", "n": 1, "to": "each bar" },
+        { "s": 3, "w": "it", "n": 1, "to": "the robot" },
+        { "s": 5, "w": "they", "n": 1, "to": "the mallets" },
+        { "s": 6, "w": "they", "n": 1, "to": "the mallets" },
+        { "s": 8, "w": "it", "n": 1, "to": "the robot" },
+        { "s": 9, "w": "it", "n": 1, "to": "the robot" },
+        { "s": 10, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 10, "w": "its", "n": 1, "to": "this xylophone" },
+        { "s": 11, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 13, "w": "its", "n": 1, "to": "the robot" },
+        { "s": 14, "w": "Its", "n": 1, "to": "the robot" },
+        { "s": 15, "w": "it", "n": 1, "to": "the robot" },
+        { "s": 16, "w": "her", "n": 1, "to": "Priya" }
+      ],
       "topics": [
         "robots",
         "music"
@@ -514,6 +723,27 @@
         8,
         12
       ],
+      "refs": [
+        { "s": 1, "w": "they", "n": 1, "to": "beavers" },
+        { "s": 1, "w": "their", "n": 1, "to": "beavers" },
+        { "s": 2, "w": "it", "n": 1, "to": "a beaver" },
+        { "s": 2, "w": "its", "n": 1, "to": "a beaver" },
+        { "s": 2, "w": "it", "n": 2, "to": "a beaver" },
+        { "s": 4, "w": "It", "n": 1, "to": "the dam" },
+        { "s": 4, "w": "it", "n": 2, "to": "the dam" },
+        { "s": 5, "w": "their", "n": 1, "to": "beavers" },
+        { "s": 6, "w": "Their", "n": 1, "to": "beavers" },
+        { "s": 6, "w": "their", "n": 2, "to": "beavers" },
+        { "s": 6, "w": "them", "n": 1, "to": "the teeth" },
+        { "s": 6, "w": "they", "n": 1, "to": "the teeth" },
+        { "s": 9, "w": "Its", "n": 1, "to": "the lodge" },
+        { "s": 11, "w": "they", "n": 1, "to": "the beavers" },
+        { "s": 11, "w": "them", "n": 1, "to": "the branches" },
+        { "s": 13, "w": "their", "n": 1, "to": "ducks and frogs" },
+        { "s": 13, "w": "it", "n": 1, "to": "the pond" },
+        { "s": 13, "w": "its", "n": 1, "to": "the pond" },
+        { "s": 14, "w": "they", "n": 1, "to": "scientists" }
+      ],
       "topics": [
         "animals",
         "nature"
@@ -543,6 +773,14 @@
         "It flew over the grass and into the net.",
         "Ana jumped and shouted."
       ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 1, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 3, "w": "it", "n": 1, "to": "the ball" },
+        { "s": 4, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 4, "w": "it", "n": 1, "to": "the ball" },
+        { "s": 5, "w": "It", "n": 1, "to": "the ball" }
+      ],
       "topics": [
         "sports"
       ],
@@ -569,6 +807,13 @@
         "Maya took the rock home.",
         "She put it on the desk in her room.",
         "Then Maya drew a picture of the rock."
+      ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "It", "n": 1, "to": "the pink rock" },
+        { "s": 4, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "it", "n": 1, "to": "the pink rock" },
+        { "s": 4, "w": "her", "n": 1, "to": "Maya" }
       ],
       "topics": [
         "mining"
@@ -601,6 +846,14 @@
         "Ana ran to catch it before it hit the rocks.",
         "Sam smiled at her and wound up the string."
       ],
+      "refs": [
+        { "s": 3, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 3, "w": "it", "n": 1, "to": "the kite" },
+        { "s": 5, "w": "It", "n": 1, "to": "the kite" },
+        { "s": 8, "w": "it", "n": 1, "to": "the kite" },
+        { "s": 8, "w": "it", "n": 2, "to": "the kite" },
+        { "s": 9, "w": "her", "n": 1, "to": "Ana" }
+      ],
       "topics": [
         "weather"
       ],
@@ -632,6 +885,14 @@
         "The next one landed on the floor, and they both laughed.",
         "By noon, Ben had made a stack of twenty pancakes."
       ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "Grandma Rose" },
+        { "s": 1, "w": "him", "n": 1, "to": "Ben" },
+        { "s": 4, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "She", "n": 1, "to": "Grandma Rose" },
+        { "s": 7, "w": "it", "n": 1, "to": "the pancake" },
+        { "s": 7, "w": "it", "n": 2, "to": "the pancake" }
+      ],
       "topics": [
         "food"
       ],
@@ -661,6 +922,14 @@
         "Then Priya put the train on the track and pressed the switch.",
         "It went over the bridge and into the dark tunnel.",
         "Sam gave her a high five."
+      ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 1, "w": "him", "n": 1, "to": "Sam" },
+        { "s": 2, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 5, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 7, "w": "It", "n": 1, "to": "the train" },
+        { "s": 8, "w": "her", "n": 1, "to": "Priya" }
       ],
       "topics": [
         "maps",
@@ -693,6 +962,17 @@
         "Leo told Maya where it went.",
         "She drew the crab under the seaweed, with only its claws showing."
       ],
+      "refs": [
+        { "s": 2, "w": "it", "n": 1, "to": "the crab" },
+        { "s": 3, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 4, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 5, "w": "It", "n": 1, "to": "the crab" },
+        { "s": 6, "w": "it", "n": 1, "to": "the crab" },
+        { "s": 7, "w": "it", "n": 1, "to": "the crab" },
+        { "s": 8, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "its", "n": 1, "to": "the crab" }
+      ],
       "topics": [
         "ocean",
         "animals"
@@ -723,6 +1003,14 @@
         "She wrote the number in her notebook.",
         "Leo made a joke about a moon made of cheese.",
         "Priya laughed and let him look again."
+      ],
+      "refs": [
+        { "s": 2, "w": "it", "n": 1, "to": "the telescope" },
+        { "s": 3, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 5, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 6, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 6, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 8, "w": "him", "n": 1, "to": "Leo" }
       ],
       "topics": [
         "space"
@@ -755,6 +1043,18 @@
         "At the end, the boys tested the three microphones on the stage.",
         "They were all loud and clear, so Ms. Gray let the boys go home."
       ],
+      "refs": [
+        { "s": 2, "w": "them", "n": 1, "to": "the folding chairs" },
+        { "s": 3, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 4, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 4, "w": "it", "n": 1, "to": "the keyboard" },
+        { "s": 5, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "him", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 7, "w": "him", "n": 1, "to": "Sam" },
+        { "s": 7, "w": "it", "n": 1, "to": "the string" },
+        { "s": 9, "w": "They", "n": 1, "to": "the microphones" }
+      ],
       "topics": [
         "music"
       ],
@@ -785,6 +1085,17 @@
         "Maya laughed when she saw it.",
         "After an hour, the two girls counted their points.",
         "Their scores were the same, so Mrs. Hall, the librarian, said that they had both won."
+      ],
+      "refs": [
+        { "s": 4, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 6, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 6, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 7, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "it", "n": 1, "to": "the lucky card" },
+        { "s": 8, "w": "their", "n": 1, "to": "Ana and Maya" },
+        { "s": 9, "w": "Their", "n": 1, "to": "Ana and Maya" },
+        { "s": 9, "w": "they", "n": 1, "to": "Ana and Maya" }
       ],
       "topics": [
         "games"
@@ -817,6 +1128,23 @@
         "Then the students drew the skull in their notebooks.",
         "They gave their drawings to Ms. Ortiz at the end of the visit."
       ],
+      "words": [
+        { "word": "skull", "means": "the bones of the head", "pic": "🦴" },
+        { "word": "slicing", "means": "cutting into thin pieces", "pic": "🍃" },
+        { "word": "tough", "means": "hard to cut or chew", "pic": "🌿" }
+      ],
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Ms. Ortiz" },
+        { "s": 2, "w": "She", "n": 1, "to": "Dr. Bell" },
+        { "s": 3, "w": "It", "n": 1, "to": "the skull" },
+        { "s": 4, "w": "its", "n": 1, "to": "the Triceratops" },
+        { "s": 6, "w": "its", "n": 1, "to": "the dinosaur" },
+        { "s": 7, "w": "She", "n": 1, "to": "Dr. Bell" },
+        { "s": 7, "w": "they", "n": 1, "to": "the teeth" },
+        { "s": 8, "w": "their", "n": 1, "to": "the students" },
+        { "s": 9, "w": "They", "n": 1, "to": "the students" },
+        { "s": 9, "w": "their", "n": 1, "to": "the students" }
+      ],
       "topics": [
         "dinosaurs"
       ],
@@ -848,6 +1176,17 @@
         "She changed the program so the robot would slow down at corners.",
         "On the next try, it turned the corner and finished the whole line."
       ],
+      "refs": [
+        { "s": 3, "w": "they", "n": 1, "to": "Priya and Ana" },
+        { "s": 3, "w": "it", "n": 1, "to": "the robot" },
+        { "s": 4, "w": "it", "n": 1, "to": "the robot" },
+        { "s": 5, "w": "it", "n": 1, "to": "the robot" },
+        { "s": 6, "w": "it", "n": 1, "to": "the robot" },
+        { "s": 6, "w": "its", "n": 1, "to": "the robot" },
+        { "s": 7, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 8, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 9, "w": "it", "n": 1, "to": "the robot" }
+      ],
       "topics": [
         "robots"
       ],
@@ -878,6 +1217,14 @@
         "Through them, he could see every white spot.",
         "After a minute, the deer walked slowly into the woods.",
         "The boys marked the place on Sam's map with a small star."
+      ],
+      "refs": [
+        { "s": 4, "w": "They", "n": 1, "to": "the fawns" },
+        { "s": 4, "w": "their", "n": 1, "to": "the fawns" },
+        { "s": 5, "w": "its", "n": 1, "to": "the mother deer" },
+        { "s": 6, "w": "him", "n": 1, "to": "Sam" },
+        { "s": 7, "w": "them", "n": 1, "to": "the binoculars" },
+        { "s": 7, "w": "he", "n": 1, "to": "Sam" }
       ],
       "topics": [
         "nature",
@@ -912,6 +1259,20 @@
         "At the end of the day, the students laid out their finds on a long table.",
         "They had found twelve kinds of rocks and minerals."
       ],
+      "refs": [
+        { "s": 5, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "it", "n": 1, "to": "the stone" },
+        { "s": 6, "w": "He", "n": 1, "to": "Mr. Varga" },
+        { "s": 6, "w": "it", "n": 1, "to": "the stone" },
+        { "s": 6, "w": "his", "n": 1, "to": "Mr. Varga" },
+        { "s": 7, "w": "He", "n": 1, "to": "Mr. Varga" },
+        { "s": 7, "w": "it", "n": 1, "to": "malachite" },
+        { "s": 7, "w": "it", "n": 2, "to": "malachite" },
+        { "s": 8, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 8, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 9, "w": "their", "n": 1, "to": "the students" },
+        { "s": 10, "w": "They", "n": 1, "to": "the students" }
+      ],
       "topics": [
         "mining"
       ],
@@ -945,6 +1306,17 @@
         "The ball rolled under her hands and into the net.",
         "Ana's teammates ran over and cheered."
       ],
+      "refs": [
+        { "s": 2, "w": "them", "n": 1, "to": "the players" },
+        { "s": 3, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 4, "w": "Her", "n": 1, "to": "Ana" },
+        { "s": 4, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 4, "w": "them", "n": 1, "to": "her first kicks" },
+        { "s": 5, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 8, "w": "she", "n": 1, "to": "the Gull Point goalkeeper" },
+        { "s": 9, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 10, "w": "her", "n": 1, "to": "the Gull Point goalkeeper" }
+      ],
       "topics": [
         "sports"
       ],
@@ -977,6 +1349,16 @@
         "Mr. Okafor lent Leo his phone, and he took a photo of them.",
         "When the ferry reached the dock, the customer was waiting for her bike."
       ],
+      "refs": [
+        { "s": 1, "w": "him", "n": 1, "to": "Mr. Okafor" },
+        { "s": 4, "w": "it", "n": 1, "to": "the rack" },
+        { "s": 6, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 8, "w": "She", "n": 1, "to": "Captain Lane" },
+        { "s": 9, "w": "his", "n": 1, "to": "Mr. Okafor" },
+        { "s": 9, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 9, "w": "them", "n": 1, "to": "the seals" },
+        { "s": 10, "w": "her", "n": 1, "to": "the customer" }
+      ],
       "topics": [
         "transport"
       ],
@@ -1008,6 +1390,25 @@
         "Grandma Rose said that she had never tried that.",
         "Twenty minutes later, the scones came out golden brown.",
         "Mrs. Lin gave her six of them to say thank you."
+      ],
+      "words": [
+        { "word": "scones", "means": "small, round baked treats, like a plain cake", "pic": "🧁" },
+        { "word": "recipes", "means": "steps that tell you how to make a food", "pic": "📖" },
+        { "word": "peel", "means": "the skin of a fruit", "pic": "🍊" }
+      ],
+      "refs": [
+        { "s": 2, "w": "She", "n": 1, "to": "Mrs. Lin" },
+        { "s": 2, "w": "them", "n": 1, "to": "the scones" },
+        { "s": 3, "w": "her", "n": 1, "to": "Mrs. Lin" },
+        { "s": 4, "w": "her", "n": 1, "to": "Mrs. Lin" },
+        { "s": 5, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "them", "n": 1, "to": "the trays" },
+        { "s": 5, "w": "her", "n": 1, "to": "Grandma Rose" },
+        { "s": 7, "w": "she", "n": 1, "to": "Mrs. Lin" },
+        { "s": 7, "w": "her", "n": 1, "to": "Mrs. Lin" },
+        { "s": 8, "w": "she", "n": 1, "to": "Grandma Rose" },
+        { "s": 10, "w": "her", "n": 1, "to": "Grandma Rose" },
+        { "s": 10, "w": "them", "n": 1, "to": "the scones" }
       ],
       "topics": [
         "food"
@@ -1046,6 +1447,30 @@
       "breaks": [
         4,
         8
+      ],
+      "refs": [
+        { "s": 1, "w": "She", "n": 1, "to": "the turtle" },
+        { "s": 1, "w": "her", "n": 1, "to": "the turtle" },
+        { "s": 2, "w": "she", "n": 1, "to": "the turtle" },
+        { "s": 2, "w": "she", "n": 2, "to": "the turtle" },
+        { "s": 2, "w": "her", "n": 1, "to": "the turtle" },
+        { "s": 3, "w": "she", "n": 1, "to": "the turtle" },
+        { "s": 3, "w": "her", "n": 1, "to": "the turtle" },
+        { "s": 3, "w": "it", "n": 1, "to": "the hole" },
+        { "s": 3, "w": "them", "n": 1, "to": "the eggs" },
+        { "s": 4, "w": "it", "n": 1, "to": "each egg" },
+        { "s": 5, "w": "she", "n": 1, "to": "the turtle" },
+        { "s": 5, "w": "it", "n": 1, "to": "the nest" },
+        { "s": 6, "w": "she", "n": 1, "to": "the turtle" },
+        { "s": 7, "w": "She", "n": 1, "to": "the turtle" },
+        { "s": 7, "w": "she", "n": 2, "to": "the turtle" },
+        { "s": 7, "w": "her", "n": 1, "to": "the turtle" },
+        { "s": 9, "w": "Its", "n": 1, "to": "the sand" },
+        { "s": 10, "w": "their", "n": 1, "to": "the hatchlings" },
+        { "s": 10, "w": "they", "n": 1, "to": "the hatchlings" },
+        { "s": 11, "w": "they", "n": 1, "to": "the hatchlings" },
+        { "s": 12, "w": "they", "n": 1, "to": "the hatchlings" },
+        { "s": 12, "w": "they", "n": 2, "to": "the hatchlings" }
       ],
       "topics": [
         "animals",
@@ -1088,6 +1513,15 @@
         8,
         12
       ],
+      "refs": [
+        { "s": 1, "w": "it", "n": 1, "to": "a steam locomotive" },
+        { "s": 3, "w": "His", "n": 1, "to": "the fireman" },
+        { "s": 5, "w": "it", "n": 1, "to": "the boiler" },
+        { "s": 6, "w": "it", "n": 1, "to": "the water" },
+        { "s": 7, "w": "it", "n": 1, "to": "steam" },
+        { "s": 10, "w": "its", "n": 1, "to": "each piston" },
+        { "s": 13, "w": "it", "n": 1, "to": "the regulator" }
+      ],
       "topics": [
         "transport"
       ],
@@ -1127,6 +1561,23 @@
       "breaks": [
         4,
         9
+      ],
+      "words": [
+        { "word": "rumble", "means": "a low, deep sound that goes on", "pic": "🔊" },
+        { "word": "bleachers", "means": "rows of seats for people watching a game", "pic": "🏟️" },
+        { "word": "radar", "means": "a tool that shows where storms are on a map", "pic": "📡" }
+      ],
+      "refs": [
+        { "s": 3, "w": "it", "n": 1, "to": "the cloud" },
+        { "s": 5, "w": "his", "n": 1, "to": "the referee" },
+        { "s": 6, "w": "He", "n": 1, "to": "the referee" },
+        { "s": 7, "w": "him", "n": 1, "to": "the referee" },
+        { "s": 8, "w": "She", "n": 1, "to": "Coach Novak" },
+        { "s": 8, "w": "her", "n": 1, "to": "Coach Novak" },
+        { "s": 10, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 11, "w": "it", "n": 1, "to": "the weather radar" },
+        { "s": 14, "w": "he", "n": 1, "to": "the referee" },
+        { "s": 14, "w": "they", "n": 1, "to": "the teams" }
       ],
       "topics": [
         "weather",
@@ -1170,6 +1621,21 @@
         8,
         12
       ],
+      "refs": [
+        { "s": 2, "w": "it", "n": 1, "to": "the flag" },
+        { "s": 4, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 4, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 5, "w": "it", "n": 1, "to": "the compass" },
+        { "s": 5, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 7, "w": "it", "n": 1, "to": "the fourth flag" },
+        { "s": 8, "w": "its", "n": 1, "to": "the map" },
+        { "s": 9, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 9, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 10, "w": "They", "n": 1, "to": "Sam and Leo" },
+        { "s": 13, "w": "they", "n": 1, "to": "Sam and Leo" },
+        { "s": 13, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 14, "w": "their", "n": 1, "to": "Sam and Leo" }
+      ],
       "topics": [
         "maps"
       ],
@@ -1208,6 +1674,21 @@
         4,
         9
       ],
+      "refs": [
+        { "s": 2, "w": "Their", "n": 1, "to": "Ben and Leo" },
+        { "s": 4, "w": "they", "n": 1, "to": "Ben and Leo" },
+        { "s": 4, "w": "it", "n": 1, "to": "the level" },
+        { "s": 5, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 5, "w": "she", "n": 2, "to": "Ana" },
+        { "s": 6, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 7, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 9, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 10, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 11, "w": "she", "n": 1, "to": "Ana" },
+        { "s": 12, "w": "it", "n": 1, "to": "the level" },
+        { "s": 12, "w": "it", "n": 2, "to": "the level" },
+        { "s": 12, "w": "she", "n": 1, "to": "one judge" }
+      ],
       "topics": [
         "games"
       ],
@@ -1244,6 +1725,22 @@
       "breaks": [
         3,
         8
+      ],
+      "refs": [
+        { "s": 1, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 1, "w": "she", "n": 2, "to": "Maya" },
+        { "s": 2, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 2, "w": "herself", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 3, "w": "it", "n": 1, "to": "the solo" },
+        { "s": 4, "w": "She", "n": 1, "to": "Ms. Gray" },
+        { "s": 5, "w": "She", "n": 1, "to": "Ms. Gray" },
+        { "s": 6, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 7, "w": "Her", "n": 1, "to": "Maya" },
+        { "s": 10, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 10, "w": "her", "n": 2, "to": "Maya" },
+        { "s": 11, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 11, "w": "her", "n": 1, "to": "Maya" }
       ],
       "topics": [
         "music"
@@ -1282,6 +1779,18 @@
         3,
         6,
         10
+      ],
+      "refs": [
+        { "s": 1, "w": "Its", "n": 1, "to": "Maiasaura" },
+        { "s": 1, "w": "it", "n": 1, "to": "the name" },
+        { "s": 2, "w": "they", "n": 1, "to": "scientists" },
+        { "s": 2, "w": "their", "n": 1, "to": "these dinosaurs" },
+        { "s": 4, "w": "it", "n": 1, "to": "the nest" },
+        { "s": 5, "w": "them", "n": 1, "to": "the nests" },
+        { "s": 7, "w": "Their", "n": 1, "to": "babies" },
+        { "s": 9, "w": "Their", "n": 1, "to": "the young" },
+        { "s": 9, "w": "them", "n": 1, "to": "the young" },
+        { "s": 10, "w": "their", "n": 1, "to": "dinosaurs" }
       ],
       "topics": [
         "dinosaurs"
@@ -1322,6 +1831,21 @@
         7,
         11
       ],
+      "refs": [
+        { "s": 1, "w": "they", "n": 1, "to": "bits of this dust" },
+        { "s": 2, "w": "them", "n": 1, "to": "meteors" },
+        { "s": 2, "w": "they", "n": 1, "to": "meteors" },
+        { "s": 3, "w": "her", "n": 1, "to": "Dr. Lee" },
+        { "s": 4, "w": "She", "n": 1, "to": "Dr. Lee" },
+        { "s": 4, "w": "them", "n": 1, "to": "Priya and Maya" },
+        { "s": 4, "w": "they", "n": 1, "to": "Priya and Maya" },
+        { "s": 6, "w": "she", "n": 1, "to": "Maya" },
+        { "s": 6, "w": "its", "n": 1, "to": "the first one" },
+        { "s": 8, "w": "she", "n": 1, "to": "Dr. Lee" },
+        { "s": 9, "w": "it", "n": 1, "to": "a very bright one" },
+        { "s": 10, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 12, "w": "their", "n": 1, "to": "the girls" }
+      ],
       "topics": [
         "space"
       ],
@@ -1361,6 +1885,24 @@
         4,
         9
       ],
+      "refs": [
+        { "s": 1, "w": "his", "n": 1, "to": "Mr. Varga" },
+        { "s": 2, "w": "it", "n": 1, "to": "a hard hat" },
+        { "s": 3, "w": "he", "n": 1, "to": "Mr. Varga" },
+        { "s": 5, "w": "They", "n": 1, "to": "the miners" },
+        { "s": 5, "w": "they", "n": 2, "to": "the miners" },
+        { "s": 5, "w": "it", "n": 1, "to": "the rock" },
+        { "s": 7, "w": "it", "n": 1, "to": "one of the old carts" },
+        { "s": 8, "w": "it", "n": 1, "to": "one of the old carts" },
+        { "s": 8, "w": "it", "n": 2, "to": "one of the old carts" },
+        { "s": 9, "w": "his", "n": 1, "to": "Mr. Varga" },
+        { "s": 11, "w": "He", "n": 1, "to": "Mr. Varga" },
+        { "s": 11, "w": "they", "n": 1, "to": "the early miners" },
+        { "s": 12, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 12, "w": "his", "n": 2, "to": "Sam" },
+        { "s": 12, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 12, "w": "it", "n": 1, "to": "his hand" }
+      ],
       "topics": [
         "mining"
       ],
@@ -1399,6 +1941,20 @@
         4,
         7,
         11
+      ],
+      "refs": [
+        { "s": 0, "w": "it", "n": 1, "to": "Mars" },
+        { "s": 1, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 3, "w": "its", "n": 1, "to": "the rover" },
+        { "s": 4, "w": "they", "n": 1, "to": "six wheels" },
+        { "s": 4, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 5, "w": "its", "n": 1, "to": "the rover" },
+        { "s": 6, "w": "They", "n": 1, "to": "the cameras" },
+        { "s": 6, "w": "them", "n": 1, "to": "the pictures" },
+        { "s": 7, "w": "it", "n": 1, "to": "the robotic arm" },
+        { "s": 9, "w": "their", "n": 1, "to": "some rovers" },
+        { "s": 10, "w": "them", "n": 1, "to": "samples" },
+        { "s": 12, "w": "They", "n": 1, "to": "scientists on Earth" }
       ],
       "topics": [
         "space",
@@ -1443,6 +1999,37 @@
         9,
         13
       ],
+      "refs": [
+        { "s": 0, "w": "they", "n": 1, "to": "emperor penguins" },
+        { "s": 0, "w": "their", "n": 1, "to": "emperor penguins" },
+        { "s": 2, "w": "She", "n": 1, "to": "the female" },
+        { "s": 2, "w": "it", "n": 1, "to": "the egg" },
+        { "s": 2, "w": "she", "n": 2, "to": "the female" },
+        { "s": 3, "w": "she", "n": 1, "to": "the female" },
+        { "s": 3, "w": "it", "n": 1, "to": "the egg" },
+        { "s": 3, "w": "her", "n": 1, "to": "the female" },
+        { "s": 3, "w": "it", "n": 2, "to": "the egg" },
+        { "s": 3, "w": "his", "n": 1, "to": "the male" },
+        { "s": 4, "w": "his", "n": 1, "to": "the male" },
+        { "s": 4, "w": "it", "n": 1, "to": "the egg" },
+        { "s": 5, "w": "he", "n": 1, "to": "the male" },
+        { "s": 5, "w": "his", "n": 1, "to": "the male" },
+        { "s": 6, "w": "he", "n": 1, "to": "the male" },
+        { "s": 7, "w": "them", "n": 1, "to": "the males" },
+        { "s": 8, "w": "They", "n": 1, "to": "the males" },
+        { "s": 10, "w": "its", "n": 1, "to": "the chick" },
+        { "s": 11, "w": "she", "n": 1, "to": "the female" },
+        { "s": 11, "w": "its", "n": 1, "to": "the chick" },
+        { "s": 11, "w": "it", "n": 1, "to": "the chick" },
+        { "s": 11, "w": "he", "n": 1, "to": "the male" },
+        { "s": 11, "w": "his", "n": 1, "to": "the male" },
+        { "s": 13, "w": "she", "n": 1, "to": "the female" },
+        { "s": 13, "w": "her", "n": 1, "to": "the female" },
+        { "s": 13, "w": "his", "n": 1, "to": "the male" },
+        { "s": 15, "w": "She", "n": 1, "to": "the female" },
+        { "s": 15, "w": "her", "n": 1, "to": "the female" },
+        { "s": 15, "w": "he", "n": 1, "to": "the male" }
+      ],
       "topics": [
         "animals"
       ],
@@ -1481,6 +2068,21 @@
         2,
         7,
         11
+      ],
+      "refs": [
+        { "s": 1, "w": "It", "n": 1, "to": "a hurricane" },
+        { "s": 3, "w": "it", "n": 1, "to": "this air" },
+        { "s": 3, "w": "it", "n": 2, "to": "this air" },
+        { "s": 5, "w": "its", "n": 1, "to": "the air" },
+        { "s": 8, "w": "Its", "n": 1, "to": "the eye" },
+        { "s": 8, "w": "it", "n": 1, "to": "the eye" },
+        { "s": 9, "w": "it", "n": 1, "to": "the eye" },
+        { "s": 10, "w": "They", "n": 1, "to": "the fastest winds" },
+        { "s": 11, "w": "its", "n": 1, "to": "a hurricane" },
+        { "s": 11, "w": "it", "n": 1, "to": "a hurricane" },
+        { "s": 11, "w": "it", "n": 2, "to": "a hurricane" },
+        { "s": 12, "w": "they", "n": 1, "to": "weather forecasters" },
+        { "s": 12, "w": "it", "n": 1, "to": "each storm" }
       ],
       "topics": [
         "weather"
@@ -1524,6 +2126,40 @@
         9,
         13
       ],
+      "words": [
+        { "word": "panel", "means": "a small group of people who decide", "pic": "📋" },
+        { "word": "attempted", "means": "tried to do", "pic": "🛹" },
+        { "word": "announcer", "means": "the person who calls out names over a speaker", "pic": "📢" }
+      ],
+      "refs": [
+        { "s": 0, "w": "their", "n": 1, "to": "skaters" },
+        { "s": 2, "w": "His", "n": 1, "to": "Leo" },
+        { "s": 2, "w": "his", "n": 2, "to": "Leo" },
+        { "s": 4, "w": "he", "n": 1, "to": "the skater from Gull Point" },
+        { "s": 5, "w": "his", "n": 1, "to": "the skater from Gull Point" },
+        { "s": 5, "w": "he", "n": 1, "to": "the skater from Gull Point" },
+        { "s": 5, "w": "his", "n": 2, "to": "the skater from Gull Point" },
+        { "s": 5, "w": "he", "n": 2, "to": "the skater from Gull Point" },
+        { "s": 6, "w": "He", "n": 1, "to": "the skater from Gull Point" },
+        { "s": 6, "w": "his", "n": 1, "to": "the skater from Gull Point" },
+        { "s": 7, "w": "he", "n": 1, "to": "the skater from Gull Point" },
+        { "s": 7, "w": "him", "n": 1, "to": "Leo" },
+        { "s": 8, "w": "He", "n": 1, "to": "the skater from Gull Point" },
+        { "s": 8, "w": "it", "n": 1, "to": "the end of the rail" },
+        { "s": 8, "w": "he", "n": 2, "to": "Leo" },
+        { "s": 8, "w": "it", "n": 2, "to": "the end of the rail" },
+        { "s": 9, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 9, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 10, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 10, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 10, "w": "it", "n": 1, "to": "the rail" },
+        { "s": 11, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 12, "w": "His", "n": 1, "to": "Leo" },
+        { "s": 12, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 14, "w": "him", "n": 1, "to": "Leo" },
+        { "s": 15, "w": "he", "n": 1, "to": "Leo" },
+        { "s": 15, "w": "him", "n": 1, "to": "the skater from Gull Point" }
+      ],
       "topics": [
         "sports"
       ],
@@ -1565,6 +2201,34 @@
         5,
         9,
         13
+      ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 0, "w": "him", "n": 1, "to": "Sam" },
+        { "s": 1, "w": "She", "n": 1, "to": "Grandma Rose" },
+        { "s": 1, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 1, "w": "himself", "n": 1, "to": "Sam" },
+        { "s": 2, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 7, "w": "it", "n": 1, "to": "the fast train" },
+        { "s": 7, "w": "it", "n": 2, "to": "the slow train" },
+        { "s": 8, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 8, "w": "it", "n": 1, "to": "the map" },
+        { "s": 9, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 9, "w": "it", "n": 1, "to": "the bus" },
+        { "s": 10, "w": "He", "n": 1, "to": "Sam" },
+        { "s": 10, "w": "it", "n": 1, "to": "the bus" },
+        { "s": 10, "w": "she", "n": 1, "to": "the woman at the ticket window" },
+        { "s": 10, "w": "him", "n": 1, "to": "Sam" },
+        { "s": 10, "w": "it", "n": 2, "to": "the bus" },
+        { "s": 11, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 11, "w": "she", "n": 1, "to": "Grandma Rose" },
+        { "s": 12, "w": "She", "n": 1, "to": "Grandma Rose" },
+        { "s": 12, "w": "she", "n": 2, "to": "Grandma Rose" },
+        { "s": 12, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 13, "w": "it", "n": 1, "to": "the bus" },
+        { "s": 14, "w": "its", "n": 1, "to": "the old steam engine" },
+        { "s": 15, "w": "it", "n": 1, "to": "the trip" },
+        { "s": 15, "w": "he", "n": 1, "to": "Sam" }
       ],
       "topics": [
         "transport",
@@ -1608,6 +2272,28 @@
         9,
         12
       ],
+      "refs": [
+        { "s": 0, "w": "her", "n": 1, "to": "Grandma Rose" },
+        { "s": 2, "w": "it", "n": 1, "to": "the yeast" },
+        { "s": 3, "w": "she", "n": 1, "to": "Grandma Rose" },
+        { "s": 3, "w": "her", "n": 1, "to": "Grandma Rose" },
+        { "s": 3, "w": "he", "n": 1, "to": "Sam" },
+        { "s": 4, "w": "him", "n": 1, "to": "Sam" },
+        { "s": 6, "w": "it", "n": 1, "to": "the starter" },
+        { "s": 7, "w": "its", "n": 1, "to": "the starter" },
+        { "s": 8, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 8, "w": "it", "n": 1, "to": "the starter" },
+        { "s": 9, "w": "his", "n": 1, "to": "Sam" },
+        { "s": 10, "w": "She", "n": 1, "to": "Grandma Rose" },
+        { "s": 10, "w": "its", "n": 1, "to": "sourdough bread" },
+        { "s": 10, "w": "its", "n": 2, "to": "sourdough bread" },
+        { "s": 11, "w": "She", "n": 1, "to": "Grandma Rose" },
+        { "s": 11, "w": "him", "n": 1, "to": "Sam" },
+        { "s": 12, "w": "it", "n": 1, "to": "the dough" },
+        { "s": 13, "w": "they", "n": 1, "to": "the boys" },
+        { "s": 14, "w": "them", "n": 1, "to": "the boys" },
+        { "s": 14, "w": "her", "n": 1, "to": "Ben's mom" }
+      ],
       "topics": [
         "food"
       ],
@@ -1647,6 +2333,27 @@
         3,
         7,
         11
+      ],
+      "refs": [
+        { "s": 0, "w": "she", "n": 1, "to": "Captain Lane" },
+        { "s": 2, "w": "She", "n": 1, "to": "Captain Lane" },
+        { "s": 2, "w": "them", "n": 1, "to": "whales" },
+        { "s": 3, "w": "its", "n": 1, "to": "the humpback whale" },
+        { "s": 4, "w": "them", "n": 1, "to": "the passengers" },
+        { "s": 4, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "its", "n": 1, "to": "the mother whale" },
+        { "s": 5, "w": "it", "n": 1, "to": "the mother whale" },
+        { "s": 6, "w": "its", "n": 1, "to": "the calf" },
+        { "s": 6, "w": "their", "n": 1, "to": "the two whales" },
+        { "s": 7, "w": "its", "n": 1, "to": "a humpback calf" },
+        { "s": 7, "w": "its", "n": 2, "to": "a humpback calf" },
+        { "s": 8, "w": "it", "n": 1, "to": "a humpback calf" },
+        { "s": 8, "w": "their", "n": 1, "to": "humpback whales" },
+        { "s": 9, "w": "they", "n": 1, "to": "the two whales" },
+        { "s": 10, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 12, "w": "her", "n": 1, "to": "Maya" },
+        { "s": 12, "w": "it", "n": 1, "to": "the drawing" },
+        { "s": 13, "w": "It", "n": 1, "to": "the drawing" }
       ],
       "topics": [
         "ocean",
@@ -1691,6 +2398,30 @@
         8,
         13
       ],
+      "refs": [
+        { "s": 2, "w": "their", "n": 1, "to": "Priya and Maya" },
+        { "s": 2, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 3, "w": "Its", "n": 1, "to": "the rover" },
+        { "s": 3, "w": "they", "n": 1, "to": "the wheels" },
+        { "s": 3, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 5, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 5, "w": "she", "n": 2, "to": "Maya" },
+        { "s": 5, "w": "it", "n": 1, "to": "the photo" },
+        { "s": 6, "w": "they", "n": 1, "to": "wide tires" },
+        { "s": 7, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 7, "w": "they", "n": 1, "to": "Priya and Maya" },
+        { "s": 9, "w": "She", "n": 1, "to": "Maya" },
+        { "s": 10, "w": "them", "n": 1, "to": "the rings" },
+        { "s": 10, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 11, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 12, "w": "Its", "n": 1, "to": "the rover" },
+        { "s": 12, "w": "it", "n": 1, "to": "the rover" },
+        { "s": 13, "w": "they", "n": 1, "to": "the girls" },
+        { "s": 14, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 14, "w": "they", "n": 1, "to": "Priya and Maya" },
+        { "s": 15, "w": "their", "n": 1, "to": "the girls" },
+        { "s": 15, "w": "it", "n": 1, "to": "the solution" }
+      ],
       "topics": [
         "robots"
       ],
@@ -1731,6 +2462,23 @@
         3,
         7,
         11
+      ],
+      "refs": [
+        { "s": 1, "w": "their", "n": 1, "to": "the old trees" },
+        { "s": 1, "w": "it", "n": 1, "to": "the soil" },
+        { "s": 4, "w": "them", "n": 1, "to": "the students" },
+        { "s": 6, "w": "He", "n": 1, "to": "the ranger" },
+        { "s": 6, "w": "them", "n": 1, "to": "the roots" },
+        { "s": 6, "w": "they", "n": 1, "to": "the roots" },
+        { "s": 8, "w": "its", "n": 1, "to": "the young tree" },
+        { "s": 9, "w": "they", "n": 1, "to": "Sam and Leo" },
+        { "s": 9, "w": "their", "n": 1, "to": "Sam and Leo" },
+        { "s": 12, "w": "Their", "n": 1, "to": "the new trees" },
+        { "s": 13, "w": "he", "n": 1, "to": "Mr. Okafor" },
+        { "s": 13, "w": "his", "n": 1, "to": "Mr. Okafor" },
+        { "s": 13, "w": "them", "n": 1, "to": "the new trees" },
+        { "s": 14, "w": "he", "n": 1, "to": "the ranger" },
+        { "s": 14, "w": "him", "n": 1, "to": "Mr. Okafor" }
       ],
       "topics": [
         "nature"
@@ -1774,6 +2522,40 @@
         7,
         12
       ],
+      "words": [
+        { "word": "captured", "means": "taken off the board by the other player", "pic": "♟️" },
+        { "word": "opponent", "means": "the player you are playing against", "pic": "🆚" },
+        { "word": "exchanged", "means": "traded for something else", "pic": "🔄" }
+      ],
+      "refs": [
+        { "s": 1, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 1, "w": "him", "n": 1, "to": "Ben" },
+        { "s": 2, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 3, "w": "it", "n": 1, "to": "the chess clock" },
+        { "s": 3, "w": "his", "n": 1, "to": "each player" },
+        { "s": 4, "w": "he", "n": 1, "to": "the boy from Gull Point" },
+        { "s": 5, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "him", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 6, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "he", "n": 2, "to": "Ben" },
+        { "s": 6, "w": "he", "n": 3, "to": "Ben" },
+        { "s": 7, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 8, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 8, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 10, "w": "His", "n": 1, "to": "Ben" },
+        { "s": 10, "w": "it", "n": 1, "to": "the pawn" },
+        { "s": 10, "w": "he", "n": 1, "to": "the boy from Gull Point" },
+        { "s": 11, "w": "it", "n": 1, "to": "the pawn" },
+        { "s": 13, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 13, "w": "it", "n": 1, "to": "the game" },
+        { "s": 13, "w": "he", "n": 1, "to": "the boy from Gull Point" },
+        { "s": 14, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 15, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 15, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 15, "w": "himself", "n": 1, "to": "Ben" }
+      ],
       "topics": [
         "games"
       ],
@@ -1812,6 +2594,21 @@
         3,
         7,
         10
+      ],
+      "refs": [
+        { "s": 1, "w": "it", "n": 1, "to": "this change" },
+        { "s": 4, "w": "its", "n": 1, "to": "an animal" },
+        { "s": 6, "w": "them", "n": 1, "to": "the bones and teeth" },
+        { "s": 6, "w": "their", "n": 1, "to": "the layers of mud" },
+        { "s": 8, "w": "it", "n": 1, "to": "the water" },
+        { "s": 8, "w": "it", "n": 2, "to": "a buried bone" },
+        { "s": 9, "w": "they", "n": 1, "to": "the minerals" },
+        { "s": 10, "w": "it", "n": 1, "to": "the fossil" },
+        { "s": 11, "w": "they", "n": 1, "to": "paleontologists" },
+        { "s": 11, "w": "it", "n": 1, "to": "the fossil" },
+        { "s": 12, "w": "they", "n": 1, "to": "paleontologists" },
+        { "s": 12, "w": "they", "n": 2, "to": "paleontologists" },
+        { "s": 12, "w": "it", "n": 1, "to": "a large bone" }
       ],
       "topics": [
         "dinosaurs"

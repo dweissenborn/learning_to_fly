@@ -1810,6 +1810,11 @@
         ]
       },
       "picture": "🍓🚀",
+      "words": [
+        { "word": "astronauts", "means": "people who travel into space", "pic": "🚀" },
+        { "word": "crunchy", "means": "hard and making a loud sound when you bite it", "pic": "🥨" },
+        { "word": "keeps", "means": "stays good to eat", "pic": "🍓" }
+      ],
       "topics": [
         "space",
         "food"
@@ -2535,6 +2540,10 @@
         ]
       },
       "picture": "🦕🍝",
+      "words": [
+        { "word": "nutrition", "means": "the things in food that your body needs", "pic": "🥕" },
+        { "word": "panel", "means": "a box of facts printed on the package", "pic": "📋" }
+      ],
       "topics": [
         "dinosaurs",
         "food"
@@ -2614,6 +2623,11 @@
         ]
       },
       "picture": "🔭🪐",
+      "words": [
+        { "word": "magnification", "means": "how much bigger a tool makes things look", "pic": "🔍" },
+        { "word": "lens", "means": "the curved glass that light passes through", "pic": "🔭" },
+        { "word": "faint", "means": "dim and hard to see", "pic": "✨" }
+      ],
       "topics": [
         "space",
         "money"
@@ -2909,6 +2923,11 @@
         ]
       },
       "picture": "🕹️🎳",
+      "words": [
+        { "word": "credits", "means": "points on the card that you spend on games", "pic": "🕹️" },
+        { "word": "load", "means": "to put money onto the card", "pic": "💳" },
+        { "word": "alley", "means": "a long building made for bowling", "pic": "🎳" }
+      ],
       "topics": [
         "games",
         "money"
@@ -3348,6 +3367,633 @@
         "source": "Written for Learning to Fly",
         "licence": "original",
         "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p64",
+      "title": "The Pool Day Pass",
+      "kind": "ticket",
+      "picture": "🏊🎟️",
+      "sentences": [
+        "Leo and his cousin Max buy day passes at Harbor Pool.",
+        "Leo is 13. Max is 7."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Pool: Day Pass",
+        "rows": [
+          {
+            "k": "Price",
+            "v": "$4"
+          },
+          {
+            "k": "Lanes",
+            "v": "Some lanes are closed today for swim team practice."
+          },
+          {
+            "k": "Deep end",
+            "v": "Only for swimmers ages 12 and up"
+          },
+          {
+            "k": "Under age 8",
+            "v": "Swim with an adult at all times."
+          },
+          {
+            "k": "Lockers",
+            "v": "All lockers need a lock. Bring your own."
+          }
+        ]
+      },
+      "topics": ["sports", "safety"],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Pool Day Pass",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p65",
+      "title": "The Trail Mix Label",
+      "kind": "label",
+      "picture": "🥜🏔️",
+      "sentences": [
+        "Sam's family takes a bag of trail mix on a hike to the Lantern Peaks lookout.",
+        "Ana is coming too, and she cannot eat nuts."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Peak Trail Mix",
+        "warning": "Contains: peanuts and tree nuts (almonds).",
+        "rows": [
+          {
+            "k": "Serving size",
+            "v": "1/4 cup"
+          },
+          {
+            "k": "Servings per bag",
+            "v": "8"
+          },
+          {
+            "k": "Ingredients",
+            "v": "peanuts, almonds, raisins, sunflower seeds, dried apple"
+          },
+          {
+            "k": "Note",
+            "v": "Some bags may contain small pieces of shell."
+          },
+          {
+            "k": "Storage",
+            "v": "Keep the bag closed. Eat within two weeks of opening."
+          }
+        ]
+      },
+      "topics": ["food", "health"],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Trail Mix Label",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p09",
+      "title": "Honey Oat Bars",
+      "kind": "label",
+      "picture": "🍯🥜",
+      "sentences": [
+        "Sam buys a bag of honey oat bars at Rose's Bakery.",
+        "He wants to share them with Ana, who cannot eat nuts."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Rose's Bakery: Honey Oat Bars",
+        "rows": [
+          {
+            "k": "Price",
+            "v": "$3 each, or 2 for $5"
+          },
+          {
+            "k": "Contains",
+            "v": "oats, wheat, milk, honey"
+          },
+          {
+            "k": "May contain",
+            "v": "peanuts and other nuts. Made in a kitchen that uses nuts."
+          },
+          {
+            "k": "Baked on",
+            "v": "Monday, May 5"
+          },
+          {
+            "k": "Best before",
+            "v": "Friday, May 9"
+          },
+          {
+            "k": "Keep",
+            "v": "in a cool, dry place. Close the bag after you open it."
+          }
+        ]
+      },
+      "topics": ["food", "safety"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Honey Oat Bars",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p09",
+      "title": "The Ferry Ticket",
+      "kind": "ticket",
+      "picture": "🎟️⛴️",
+      "sentences": [
+        "Sam reaches the Gull Island dock at 3:10 PM on October 4.",
+        "His ferry back has already left."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Town Ferry: Round-Trip Ticket",
+        "rows": [
+          {
+            "k": "Passenger",
+            "v": "Youth, ages 6 to 17"
+          },
+          {
+            "k": "Price",
+            "v": "$6 (paid)"
+          },
+          {
+            "k": "Date",
+            "v": "Saturday, October 4"
+          },
+          {
+            "k": "Going",
+            "v": "Harbor Town to Gull Island, 9:00 AM"
+          },
+          {
+            "k": "Coming back",
+            "v": "Gull Island to Harbor Town, 3:00 PM"
+          },
+          {
+            "k": "Missed your ferry?",
+            "v": "You may take any later ferry on the same date. Show this ticket."
+          },
+          {
+            "k": "Bikes",
+            "v": "Not included. Bikes cost $3 extra each way."
+          }
+        ]
+      },
+      "topics": ["transport", "ocean"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Ferry Ticket",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p09",
+      "title": "The Sky Dart Kite",
+      "kind": "label",
+      "picture": "🪁🏷️",
+      "sentences": [
+        "The wind board at Windy Cape says the wind today is 34 miles per hour.",
+        "Sam wants to fly his new kite."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Sky Dart Delta Kite",
+        "warning": "Do not fly near power lines or roads.",
+        "rows": [
+          {
+            "k": "Price",
+            "v": "$24. This week: $6 off"
+          },
+          {
+            "k": "Ages",
+            "v": "10 and up"
+          },
+          {
+            "k": "Best wind",
+            "v": "8 to 25 miles per hour (mph)"
+          },
+          {
+            "k": "Do not fly",
+            "v": "in wind over 30 mph, or in rain"
+          },
+          {
+            "k": "In the box",
+            "v": "kite, 2 sticks, tail, 150 feet of string"
+          },
+          {
+            "k": "Made by",
+            "v": "Gullwing Kites, Windy Cape"
+          }
+        ]
+      },
+      "topics": ["weather", "safety"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Sky Dart Kite",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p09",
+      "title": "The Tire Box Label",
+      "kind": "label",
+      "picture": "🛞📦",
+      "sentences": [
+        "The new tires for the Kookaburra came in a big box.",
+        "Captain Ada reads the label on the box."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Skyroll Tires for Small Planes",
+        "warning": "Do not fill a tire above 40 PSI.",
+        "rows": [
+          {
+            "k": "In this box",
+            "v": "2 tires"
+          },
+          {
+            "k": "Fits",
+            "v": "small planes with 15-inch wheels"
+          },
+          {
+            "k": "Price",
+            "v": "$90 for each tire ($180 for the box)"
+          },
+          {
+            "k": "Fill with air to",
+            "v": "32 PSI"
+          },
+          {
+            "k": "Date made",
+            "v": "August 4, 2026"
+          },
+          {
+            "k": "Delivered",
+            "v": "October 6, 2026"
+          },
+          {
+            "k": "Returns",
+            "v": "Send back by November 5, 2026, only if the box has not been opened."
+          }
+        ]
+      },
+      "topics": ["transport", "money"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Tire Box Label",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p09",
+      "title": "The Pilot's Lunch Box",
+      "kind": "label",
+      "picture": "🥪🧊",
+      "sentences": [
+        "Captain Ada will fly on Monday, October 19.",
+        "That morning, she buys a lunch box at the Hilltop Café near Cloud Hill."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Hilltop Café: Pilot's Lunch Box",
+        "warning": "Keep cold.",
+        "rows": [
+          {
+            "k": "Inside",
+            "v": "1 chicken wrap, 1 apple, 1 oat bar"
+          },
+          {
+            "k": "Contains",
+            "v": "wheat, milk, eggs"
+          },
+          {
+            "k": "Price",
+            "v": "$9"
+          },
+          {
+            "k": "Made on",
+            "v": "Monday, October 19"
+          },
+          {
+            "k": "Eat by",
+            "v": "Tuesday, October 20"
+          },
+          {
+            "k": "Ice pack",
+            "v": "Keeps the food cold for 6 hours after it leaves the fridge."
+          },
+          {
+            "k": "After 6 hours",
+            "v": "Eat the apple and the oat bar. Throw away the wrap."
+          }
+        ]
+      },
+      "topics": ["food", "health"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Pilot's Lunch Box",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p09",
+      "title": "Ticket Prices",
+      "kind": "label",
+      "picture": "🎟️🐨",
+      "sentences": [
+        "The Lee family is visiting Bluegum Koala Sanctuary.",
+        "There are two adults and two children, ages 9 and 13."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Bluegum Koala Sanctuary: Ticket Prices",
+        "warning": "Tickets are good only on the date printed on them.",
+        "rows": [
+          {
+            "k": "Adult (16 and over)",
+            "v": "$20"
+          },
+          {
+            "k": "Child (4 to 15)",
+            "v": "$10"
+          },
+          {
+            "k": "Under 4",
+            "v": "Free"
+          },
+          {
+            "k": "Family (2 adults and 2 children)",
+            "v": "$50"
+          },
+          {
+            "k": "Koala Night Walk",
+            "v": "$5 more for each person"
+          }
+        ]
+      },
+      "topics": ["money", "animals"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ticket Prices",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p09",
+      "title": "The Box from the Sky",
+      "kind": "label",
+      "picture": "🎈📦",
+      "sentences": [
+        "Ben finds a small white box on the beach below Star Point.",
+        "The orange bag tied to it is torn."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Weather Instrument: Please Read",
+        "warning": "This box is not a toy. Please send it back so it can be used again.",
+        "rows": [
+          {
+            "k": "What is this?",
+            "v": "A weather instrument from Star Point Weather Station. It flew up under a weather balloon and measured the air."
+          },
+          {
+            "k": "Sent up",
+            "v": "October 12 at 6:00 AM"
+          },
+          {
+            "k": "Is it safe?",
+            "v": "Yes. It has one small battery and no sharp parts."
+          },
+          {
+            "k": "If you find it",
+            "v": "Show an adult. Put the box in the orange bag tied to it. Drop the bag in any mailbox. No stamp is needed."
+          },
+          {
+            "k": "Bag torn or missing?",
+            "v": "Do not mail the box. Call Dr. Amal at 555-0142, and she will come and get it."
+          },
+          {
+            "k": "Please do not",
+            "v": "Open the box or take out the battery."
+          }
+        ]
+      },
+      "topics": ["weather", "safety"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Box from the Sky",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p09",
+      "title": "The Coast Line Day Rover",
+      "kind": "ticket",
+      "picture": "🎫🚲",
+      "sentences": [
+        "It is Saturday, May 9.",
+        "Sam wants to take the 8:30 AM train with his dog Pixel and his bike."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Coast Line Day Rover Ticket",
+        "rows": [
+          {
+            "k": "Ticket",
+            "v": "Child, ages 5 to 15"
+          },
+          {
+            "k": "Price",
+            "v": "$4 (paid)"
+          },
+          {
+            "k": "Good on",
+            "v": "Saturday, May 9 only"
+          },
+          {
+            "k": "Trains",
+            "v": "Any Coast Line train that leaves at 9:00 AM or later"
+          },
+          {
+            "k": "Stops",
+            "v": "Pier Station, Shell Halt and Rail Coast. Get on and off as many times as you like."
+          },
+          {
+            "k": "Dogs",
+            "v": "Free. Keep your dog on a leash."
+          },
+          {
+            "k": "Bikes",
+            "v": "Free. Put your bike in the coach with the bike sign."
+          }
+        ]
+      },
+      "topics": ["transport", "money"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Coast Line Day Rover",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p09",
+      "title": "The Plaster Strip Box",
+      "kind": "label",
+      "picture": "🦴🏷️",
+      "sentences": [
+        "Dr. Bell's team finished wrapping a big bone in plaster at 1:15 PM.",
+        "The boat to the museum leaves the pier at 3:00 PM."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Bayside Plaster Strips",
+        "warning": "Plaster gets warm as it sets. Wear gloves, and keep it away from your eyes.",
+        "rows": [
+          {
+            "k": "For",
+            "v": "Making hard jackets to protect fossils"
+          },
+          {
+            "k": "In the box",
+            "v": "20 strips, each 3 meters long"
+          },
+          {
+            "k": "How to use",
+            "v": "Dip each strip in warm water for 5 seconds. Lay it over the fossil."
+          },
+          {
+            "k": "Sets",
+            "v": "In about 15 minutes. The jacket feels hard, but it is not strong yet."
+          },
+          {
+            "k": "Fully hard",
+            "v": "2 hours after the last strip goes on"
+          },
+          {
+            "k": "Moving",
+            "v": "Do not lift or turn the jacket until it is fully hard."
+          },
+          {
+            "k": "Price",
+            "v": "$18 a box"
+          }
+        ]
+      },
+      "topics": ["dinosaurs", "safety"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Plaster Strip Box",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p09",
+      "title": "The Glass-Floor Tour Ticket",
+      "kind": "ticket",
+      "picture": "🎟️🚤",
+      "sentences": [
+        "Leo has a ticket for Sunday's glass-floor tour.",
+        "On Sunday, a sign says the channel is shallow, so the tour moves to 5:30 PM."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Reef Island Glass-Floor Tour",
+        "rows": [
+          {
+            "k": "Ticket",
+            "v": "Youth, ages 6 to 17. $7, paid"
+          },
+          {
+            "k": "Date",
+            "v": "Sunday, July 12"
+          },
+          {
+            "k": "Boat leaves",
+            "v": "4:30 PM from the pier. Be at the pier 15 minutes before the boat leaves."
+          },
+          {
+            "k": "Tour time",
+            "v": "1 hour and 30 minutes"
+          },
+          {
+            "k": "Low tide",
+            "v": "If the channel is too shallow, the tour leaves later, at high tide. This ticket is still good."
+          },
+          {
+            "k": "Bring",
+            "v": "A hat and water. Life jackets are on the boat."
+          }
+        ]
+      },
+      "topics": ["ocean", "transport"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Glass-Floor Tour Ticket",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
         "adapted": false
       }
     }
@@ -7881,6 +8527,304 @@
         "problem-solving",
         "time-window"
       ]
+    },
+    {
+      "id": "f4-i167",
+      "skill": "F4",
+      "passage": "f4-p64",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Can Leo swim in the deep end?",
+      "options": ["Yes. He is 13.", "No. The deep end is closed.", "Only with an adult."],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Find the Deep end row. Is Leo old enough?",
+      "explain": "Yes. The deep end is only for ages 12 and up, and Leo is 13.",
+      "inference": 1,
+      "tags": ["quantifier", "age"]
+    },
+    {
+      "id": "f4-i168",
+      "skill": "F4",
+      "passage": "f4-p64",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What does Max need to do in the pool?",
+      "options": [
+        "Swim with an adult the whole time.",
+        "Swim only in the deep end.",
+        "Wait for swim team practice to end."
+      ],
+      "answer": 0,
+      "evidence": [3],
+      "hint": "How old is Max? Find the row for his age.",
+      "explain": "Max is 7, so he must swim with an adult at all times.",
+      "inference": 1,
+      "tags": ["quantifier", "age"]
+    },
+    {
+      "id": "f4-i169",
+      "skill": "F4",
+      "passage": "f4-p64",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The pass says some lanes are closed. What does that mean for Leo?",
+      "options": [
+        "Some lanes are still open, so he can swim in one of those.",
+        "The whole pool is closed today.",
+        "He can swim in any lane he likes."
+      ],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Read the Lanes row. Does \"some\" mean all of them?",
+      "explain": "Some lanes are closed, not all of them. Leo can swim in a lane that is still open.",
+      "inference": 1,
+      "tags": ["quantifier"]
+    },
+    {
+      "id": "f4-i170",
+      "skill": "F4",
+      "passage": "f4-p65",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana cannot eat nuts. Can she eat any of this trail mix?",
+      "options": [
+        "No. The nuts are mixed into every part of it.",
+        "Yes, if she picks out only the raisins.",
+        "Yes. Only some bags have nuts.",
+        "Yes, if she eats less than one serving."
+      ],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Read the warning and the ingredients. Are the nuts in some bags, or in the whole mix?",
+      "explain": "No. Peanuts and almonds are mixed into the trail mix itself, so no part of it is safe for Ana, even if she picks pieces out.",
+      "inference": 1,
+      "tags": ["quantifier", "allergy"]
+    },
+    {
+      "id": "f4-i171",
+      "skill": "F4",
+      "passage": "f4-p65",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The Note row says, \"Some bags may contain small pieces of shell.\" What should Sam do as he eats?",
+      "options": [
+        "Check each handful for hard pieces of shell.",
+        "Throw the bag away right now.",
+        "Eat only the first serving.",
+        "Nothing. No bag has shells."
+      ],
+      "answer": 0,
+      "evidence": [3],
+      "hint": "\"Some bags may\" means it could happen in any bag. What is a careful way to eat?",
+      "explain": "He should check each handful. Some bags may have shell pieces, so his bag could too, even if most do not.",
+      "inference": 1,
+      "tags": ["quantifier"]
+    },
+    {
+      "id": "cu-home-i09",
+      "skill": "F4",
+      "passage": "cu-home-p09",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Is it safe for Ana to eat these bars?",
+      "options": [
+        "Yes. Nuts are not in the Contains row.",
+        "Yes, if she eats them before Friday, May 9.",
+        "No. The bars have wheat and milk in them.",
+        "No. They may contain nuts, because the kitchen uses nuts."
+      ],
+      "answer": 3,
+      "evidence": [1, 2],
+      "hint": "Read the Contains row. Then read the row just below it. Both rows matter for Ana.",
+      "explain": "No. The May contain row says the bars may have nuts, because they are made in a kitchen that uses nuts. Nuts are not in the Contains row, but that is not enough.",
+      "inference": 1,
+      "checkup": "home",
+      "tags": ["may-contain", "allergy", "close-distractor"]
+    },
+    {
+      "id": "cu-gull-i09",
+      "skill": "F4",
+      "passage": "cu-gull-p09",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What can Sam do to get home today?",
+      "options": [
+        "Buy a new ticket for the next ferry.",
+        "Pay $3 extra and take the next ferry.",
+        "Show this ticket and take the next ferry today.",
+        "Come back and use this ticket on Sunday."
+      ],
+      "answer": 2,
+      "evidence": [2, 4, 5],
+      "hint": "Check the date and the time on the ticket. Then find the row about a missed ferry.",
+      "explain": "He can show this ticket and take the next ferry today. The Missed your ferry row says any later ferry on the same date is fine, and today is October 4. The $3 is only for bikes.",
+      "inference": 1,
+      "checkup": "gull",
+      "tags": ["ticket", "same-date", "plan-change"]
+    },
+    {
+      "id": "cu-cape-i09",
+      "skill": "F4",
+      "passage": "cu-cape-p09",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Should Sam fly the Sky Dart kite today?",
+      "options": [
+        "Yes. A strong wind is best for this kite.",
+        "Yes. Sam is older than 10.",
+        "No. It is raining at Windy Cape.",
+        "No. The wind today is over 30 mph."
+      ],
+      "answer": 3,
+      "evidence": [2, 3],
+      "hint": "Find today's wind speed in the first sentence. Then compare it with the Best wind and Do not fly rows.",
+      "explain": "No. The wind today is 34 mph, and the label says not to fly in wind over 30 mph. The best wind for this kite is 8 to 25 mph.",
+      "inference": 1,
+      "checkup": "cape",
+      "tags": ["compare-numbers", "safety-rule", "close-distractor"]
+    },
+    {
+      "id": "cu-airfield-i09",
+      "skill": "F4",
+      "passage": "cu-airfield-p09",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Mr. Lund opened the box on October 8 to look at the tires. Can Captain Ada send the tires back now?",
+      "options": [
+        "Yes, because it is still before November 5.",
+        "No, because the box has been opened.",
+        "Yes, because the tires were made in August.",
+        "No, because the tires cost $180."
+      ],
+      "answer": 1,
+      "evidence": [6],
+      "hint": "Find the Returns row. It has two parts: a date and a rule about the box. Check both parts.",
+      "explain": "No, she cannot send them back. The Returns row says the box must not have been opened, and Mr. Lund opened it on October 8. A date before November 5 is not enough by itself.",
+      "inference": 1,
+      "checkup": "airfield",
+      "tags": ["condition", "two-rules", "date-trap"]
+    },
+    {
+      "id": "cu-takeoff-i09",
+      "skill": "F4",
+      "passage": "cu-takeoff-p09",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Captain Ada takes the lunch box out of the fridge at 7:00 AM. At 2:00 PM, she is hungry. What should she eat?",
+      "options": [
+        "The wrap, the apple and the oat bar",
+        "Only the wrap",
+        "Nothing, because it is past the eat-by date",
+        "Only the apple and the oat bar"
+      ],
+      "answer": 3,
+      "evidence": [5, 6],
+      "hint": "Count the hours from 7:00 AM to 2:00 PM. Compare that with the Ice pack row. Then read the row that tells what to do after that time.",
+      "explain": "She should eat only the apple and the oat bar. From 7:00 AM to 2:00 PM is 7 hours, which is more than the 6 hours in the Ice pack row. The After 6 hours row says to eat the apple and the oat bar and to throw away the wrap.",
+      "inference": 1,
+      "checkup": "takeoff",
+      "tags": ["time-math", "condition", "date-trap"]
+    },
+    {
+      "id": "cu-australia-i09",
+      "skill": "F4",
+      "passage": "cu-australia-p09",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The Lee family is only visiting during the day. What is the lowest price they can pay to get in?",
+      "options": ["$60", "$50", "$30", "$70"],
+      "answer": 1,
+      "evidence": [0, 1, 3],
+      "hint": "Work out the price two ways: one ticket for each person, and the family ticket. Then compare the two totals.",
+      "explain": "The lowest price is $50, with the family ticket. Separate tickets would cost $20 + $20 + $10 + $10 = $60. The Night Walk is not part of a day visit.",
+      "inference": 1,
+      "checkup": "australia",
+      "tags": ["price-math", "compare-prices", "best-deal"]
+    },
+    {
+      "id": "cu-star-i09",
+      "skill": "F4",
+      "passage": "cu-star-p09",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What should Ben do?",
+      "options": [
+        "Show an adult, then put the box in the orange bag and mail it.",
+        "Open the box and take out the battery.",
+        "Buy a new bag and a stamp, then mail the box.",
+        "Show an adult, then call Dr. Amal so she can come and get it."
+      ],
+      "answer": 3,
+      "evidence": [3, 4],
+      "hint": "Read the If you find it row. Then find the row about a torn bag.",
+      "explain": "Ben should show an adult and then call Dr. Amal. The If you find it row says to show an adult, and the bag row says not to mail the box when the bag is torn.",
+      "inference": 1,
+      "checkup": "star",
+      "tags": ["two-rows", "if-then"]
+    },
+    {
+      "id": "cu-rail-i09",
+      "skill": "F4",
+      "passage": "cu-rail-p09",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What should Sam do?",
+      "options": [
+        "Take the 8:30 AM train with Pixel and his bike.",
+        "Pay $4 more for Pixel, then take the 8:30 AM train.",
+        "Take a train at 9:00 AM or later, with Pixel on a leash and his bike.",
+        "Leave his bike at home, because bikes are not allowed."
+      ],
+      "answer": 2,
+      "evidence": [3, 5, 6],
+      "hint": "Check the Trains row for times. Then read the rows about dogs and bikes.",
+      "explain": "Sam should take a train at 9:00 AM or later. The ticket is good only on trains that leave at 9:00 AM or later, and dogs and bikes ride free. Pixel must be on a leash.",
+      "inference": 1,
+      "checkup": "rail",
+      "tags": ["ticket", "time-rule", "two-rows"]
+    },
+    {
+      "id": "cu-fossil-i09",
+      "skill": "F4",
+      "passage": "cu-fossil-p09",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Can the team lift the jacket onto the 3:00 PM boat?",
+      "options": [
+        "Yes. The plaster sets in about 15 minutes.",
+        "Yes. The jacket is fully hard by 3:00 PM.",
+        "No. Plaster must dry for a whole day.",
+        "No. The jacket will not be fully hard until 3:15 PM."
+      ],
+      "answer": 3,
+      "evidence": [3, 4, 5],
+      "hint": "Find the row that tells when the jacket is fully hard. Add that time to 1:15 PM. Then read the Moving row.",
+      "explain": "No. The jacket is fully hard 2 hours after 1:15 PM, which is 3:15 PM. The Moving row says not to lift it until then, and the boat leaves at 3:00 PM. Setting in 15 minutes is not the same as fully hard.",
+      "inference": 1,
+      "checkup": "fossil",
+      "tags": ["time-math", "condition", "close-distractor"]
+    },
+    {
+      "id": "cu-reef-i09",
+      "skill": "F4",
+      "passage": "cu-reef-p09",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What should Leo do now?",
+      "options": [
+        "Buy a new ticket for the 5:30 PM boat.",
+        "Use this ticket, and be at the pier by 4:15 PM.",
+        "Use this ticket, and be at the pier by 5:15 PM.",
+        "Come back with this ticket on Monday."
+      ],
+      "answer": 2,
+      "evidence": [2, 4],
+      "hint": "Read the Low tide row to see if the ticket still works. Then use the Boat leaves row with the new time.",
+      "explain": "He should use this ticket and be at the pier by 5:15 PM. The Low tide row says the ticket is still good, and he must be there 15 minutes before the boat leaves at 5:30 PM.",
+      "inference": 1,
+      "checkup": "reef",
+      "tags": ["plan-change", "time-math", "ticket"]
     }
   ],
   "model": {

@@ -487,6 +487,11 @@
         9
       ],
       "picture": "🌡️🌳📟",
+      "words": [
+        { "word": "sensor", "means": "a part that checks the air, like how warm it is", "pic": "🌡️" },
+        { "word": "display", "means": "a screen that shows the numbers", "pic": "🖥️" },
+        { "word": "vapor", "means": "water in the air as a gas you cannot see", "pic": "💨" }
+      ],
       "topics": [
         "weather"
       ],
@@ -1197,6 +1202,11 @@
         "Mr. Varga smiles and says that many people think pyrite is gold."
       ],
       "picture": "🪨🔍",
+      "words": [
+        { "word": "mineral", "means": "a natural solid from the ground that rocks are made of", "pic": "💎" },
+        { "word": "streak", "means": "a thin line of color left on something", "pic": "🖍️" },
+        { "word": "firm", "means": "steady and pressing down hard", "pic": "💪" }
+      ],
       "topics": [
         "mining"
       ],
@@ -1227,6 +1237,11 @@
         "It crosses the sky in only a few minutes, so keep watching once you find it."
       ],
       "picture": "🛰️🌌",
+      "words": [
+        { "word": "astronomy", "means": "the study of stars, planets and space", "pic": "🔭" },
+        { "word": "solar", "means": "using light from the sun", "pic": "☀️" },
+        { "word": "circles", "means": "goes around and around", "pic": "🌍" }
+      ],
       "topics": [
         "space"
       ],
@@ -1510,6 +1525,11 @@
         8
       ],
       "picture": "🎮🏁",
+      "words": [
+        { "word": "tournament", "means": "a contest of many games, where the winners move on", "pic": "🏆" },
+        { "word": "tie", "means": "when both finish at the very same time", "pic": "⏱️" },
+        { "word": "spare", "means": "an extra one kept ready in case one breaks", "pic": "🎮" }
+      ],
       "topics": [
         "games"
       ],
@@ -1666,6 +1686,11 @@
         12
       ],
       "picture": "🍞🫙",
+      "words": [
+        { "word": "yeast", "means": "a tiny living thing that helps bread rise", "pic": "🍞" },
+        { "word": "lukewarm", "means": "not hot and not cold, but in between", "pic": "🌡️" },
+        { "word": "mold", "means": "fuzzy stuff that grows on old, wet food", "pic": "🦠" }
+      ],
       "topics": [
         "food"
       ],
@@ -1875,6 +1900,11 @@
         13
       ],
       "picture": "⛴️🚲",
+      "words": [
+        { "word": "ferry", "means": "a boat that carries people, bikes and cars across water", "pic": "⛴️" },
+        { "word": "board", "means": "to get on the boat", "pic": "🚢" },
+        { "word": "docks", "means": "pulls up to the land and stops", "pic": "⚓" }
+      ],
       "topics": [
         "transport"
       ],
@@ -2048,6 +2078,381 @@
         "source": "Written for Learning to Fly",
         "licence": "original",
         "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p61",
+      "title": "The Quiz Directions",
+      "kind": "directions",
+      "picture": "📝✏️",
+      "sentences": ["Ms. Ortiz hands Priya a science quiz with three questions."],
+      "visual": {
+        "type": "list",
+        "title": "Science Quiz: Directions",
+        "ordered": false,
+        "rows": [
+          "Answer any two of the three questions.",
+          "Write your name at the top of every page.",
+          "Use only a pencil.",
+          "When you finish, put all your pages in the blue tray."
+        ]
+      },
+      "topics": ["school"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Quiz Directions",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p62",
+      "title": "The Rover Kit Steps",
+      "kind": "directions",
+      "picture": "🤖🔧",
+      "sentences": [
+        "Priya opens a new rover kit at robotics club.",
+        "She reads all the steps before she starts."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Rover Kit: Getting Started",
+        "ordered": true,
+        "rows": [
+          "Check the box. Some kits include an extra screw, and you do not need it.",
+          "Attach all four wheels, and tighten each wheel screw.",
+          "Connect both motor wires to the board. The rover will not move if only one is connected.",
+          "Charge the battery for no more than two hours.",
+          "Turn on the power only after every wire is connected."
+        ]
+      },
+      "topics": ["robots"],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Rover Kit Steps",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-home-p07",
+      "title": "The Free Air Pump",
+      "kind": "directions",
+      "picture": "🚲💨",
+      "sentences": [
+        "Ana's bike tire is soft.",
+        "She stops at the free air pump outside Okafor's Bike Shop."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Free Air Pump: How to Use",
+        "ordered": true,
+        "rows": [
+          "Take the small cap off the tire valve.",
+          "Press the pump head onto the valve, and push the lever up.",
+          "Pump until the tire feels hard. Then put the cap back on."
+        ]
+      },
+      "topics": ["transport"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Free Air Pump",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-gull-p07",
+      "title": "Tide Pool Steps",
+      "kind": "directions",
+      "picture": "🦀🪨",
+      "sentences": [
+        "Ben and Priya are at the tide pools on Gull Island.",
+        "A sign by the stairs gives three steps."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Tide Pool Visit",
+        "ordered": true,
+        "rows": [
+          "Check the tide board by the stairs. Visit the pools only at low tide.",
+          "Walk down the stairs, and step only on bare rock. Wet seaweed is slippery.",
+          "Look with your eyes. If you lift a small rock, put it back gently, the same way up."
+        ]
+      },
+      "topics": ["ocean", "animals"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Tide Pool Steps",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-cape-p07",
+      "title": "How to Launch a Kite",
+      "kind": "directions",
+      "picture": "🪁🧵",
+      "sentences": [
+        "Ana buys a new kite at the kite shop at Windy Cape.",
+        "A card with three steps comes with it."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "How to Launch Your Kite",
+        "ordered": true,
+        "rows": [
+          "Stand with your back to the wind, far from the cliff edge.",
+          "Hold the kite up high, and let the wind lift it out of your hand.",
+          "As the kite climbs, let out the string a little at a time."
+        ]
+      },
+      "topics": ["weather"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How to Launch a Kite",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-airfield-p07",
+      "title": "From the Bus Stop to the Hangar",
+      "kind": "directions",
+      "picture": "🚌➡️",
+      "sentences": [
+        "Jo is Mr. Lund's new helper at Cloud Hill.",
+        "Captain Ada sent her directions for her first day."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "How to Get to the Hangar",
+        "ordered": true,
+        "note": "Never walk across the runway.",
+        "rows": [
+          "Get off Bus 9 at the Cloud Hill Airfield stop.",
+          "Walk through the green gate and past the orange windsock.",
+          "At the fuel pump, turn left. The old hangar is the big shed straight ahead."
+        ]
+      },
+      "topics": ["transport", "maps"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "From the Bus Stop to the Hangar",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-takeoff-p07",
+      "title": "The Headset Card",
+      "kind": "directions",
+      "picture": "🎧🛩️",
+      "sentences": [
+        "The Kookaburra is very loud inside when the engine runs.",
+        "A card in the cockpit shows how to use a headset."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "How to Use Your Headset",
+        "ordered": true,
+        "note": "Keep the headset on until the engine stops.",
+        "rows": [
+          "Put the headset over both of your ears.",
+          "Move the microphone close to your mouth.",
+          "Turn the volume knob until you can hear the pilot clearly."
+        ]
+      },
+      "topics": ["transport"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Headset Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-australia-p07",
+      "title": "Find Gumnut's Tree",
+      "kind": "directions",
+      "picture": "🐨🗺️",
+      "sentences": [
+        "Captain Ada wants to visit Gumnut again.",
+        "A sign by the sanctuary gate gives directions."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Find Gumnut's Tree",
+        "ordered": true,
+        "note": "Please stay on the boardwalk.",
+        "rows": [
+          "Walk along the boardwalk to the wooden bridge.",
+          "Cross the bridge and turn right.",
+          "Gumnut's tree is the third tree on your left. Look up!"
+        ]
+      },
+      "topics": ["animals", "maps"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Find Gumnut's Tree",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-star-p07",
+      "title": "Into the Dark Dome",
+      "kind": "directions",
+      "picture": "🔦🔭",
+      "sentences": [
+        "Leo is at the door of the dome at Star Point.",
+        "A card on the door gives three steps for night visitors."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Night Visitors",
+        "ordered": true,
+        "rows": [
+          "Turn your flashlight to red light, or switch it off.",
+          "Stand still inside the door until you can see the steps.",
+          "Hold the rail and walk up the steps to the telescope. Wait for Dr. Amal before you touch it."
+        ]
+      },
+      "topics": ["space", "safety"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Into the Dark Dome",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-rail-p07",
+      "title": "The Ticket Machine at Pier Station",
+      "kind": "directions",
+      "picture": "🎫🪙",
+      "sentences": [
+        "Sam is 12, and he is at the ticket machine at Pier Station.",
+        "He wants a ticket to Rail Coast."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "How to Buy a Ticket",
+        "ordered": true,
+        "rows": [
+          "Tap the name of the stop you are going to.",
+          "Tap Child if you are 5 to 15. Tap Adult if you are 16 or older.",
+          "Pay with coins. Then take your ticket from the slot at the bottom."
+        ]
+      },
+      "topics": ["transport", "money"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Ticket Machine at Pier Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-fossil-p07",
+      "title": "What to Do With a Find",
+      "kind": "directions",
+      "picture": "🏷️🐚",
+      "sentences": [
+        "Maya finds a small fossil on the beach at Fossil Bay.",
+        "A card at Dr. Bell's tent tells her what to do next."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Found a Fossil?",
+        "ordered": true,
+        "rows": [
+          "Wrap the fossil in soft paper, and put it in a cloth bag.",
+          "Write the date and the place you found it on the tag.",
+          "Put the bag in the tray by the tent door."
+        ]
+      },
+      "topics": ["dinosaurs"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "What to Do With a Find",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
+    },
+    {
+      "id": "cu-reef-p07",
+      "title": "The Life Jacket Card",
+      "kind": "directions",
+      "picture": "🦺🚤",
+      "sentences": [
+        "Ben is getting ready for the reef boat.",
+        "Mari gives him a card with three steps."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "How to Put On Your Life Jacket",
+        "ordered": true,
+        "rows": [
+          "Put your arms through the arm holes, like a coat.",
+          "Close the zipper. Then click all three buckles shut.",
+          "Ask Mari to pull up on the shoulders. If the jacket slides up past your chin, pull the straps tighter."
+        ]
+      },
+      "topics": ["safety", "ocean"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Life Jacket Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
         "adapted": false
       }
     }
@@ -6357,6 +6762,319 @@
         "if-step",
         "safety-step"
       ]
+    },
+    {
+      "id": "f2-i165",
+      "skill": "F2",
+      "passage": "f2-p61",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How many questions does Priya need to answer?",
+      "options": ["two of them", "all three", "only one"],
+      "answer": 0,
+      "evidence": [0],
+      "hint": "Read the first direction. Look at the small word before \"two\".",
+      "explain": "Priya needs to answer two of the questions. \"Any two\" means she picks two of the three.",
+      "inference": 0,
+      "tags": ["quantifier"]
+    },
+    {
+      "id": "f2-i166",
+      "skill": "F2",
+      "passage": "f2-p61",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where does Priya write her name?",
+      "options": ["at the top of every page", "only on the first page", "on the blue tray"],
+      "answer": 0,
+      "evidence": [1],
+      "hint": "Find the direction about her name. Which pages does it say?",
+      "explain": "She writes her name at the top of every page, not just the first one.",
+      "inference": 0,
+      "tags": ["quantifier"]
+    },
+    {
+      "id": "f2-i167",
+      "skill": "F2",
+      "passage": "f2-p61",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Priya gets ready. Sort what she can write with.",
+      "bins": ["OK to use", "Not OK"],
+      "cards": [
+        {
+          "text": "A pencil",
+          "bin": 0,
+          "emoji": "✏️"
+        },
+        {
+          "text": "A pen",
+          "bin": 1,
+          "emoji": "🖊️"
+        },
+        {
+          "text": "A marker",
+          "bin": 1,
+          "emoji": "🖍️"
+        }
+      ],
+      "evidence": [2],
+      "hint": "Read the direction with the word \"only\".",
+      "explain": "Only a pencil is OK. The directions say to use only a pencil, so a pen and a marker are not OK.",
+      "inference": 0,
+      "transfer": true,
+      "tags": ["quantifier"]
+    },
+    {
+      "id": "f2-i168",
+      "skill": "F2",
+      "passage": "f2-p62",
+      "format": "tap",
+      "level": 4,
+      "prompt": "After step 1, Priya finds one extra screw. What should she do?",
+      "options": [
+        "Keep going. Some kits have an extra screw.",
+        "Stop. She has lost a part.",
+        "Take the wheels off again.",
+        "Ask for a new kit."
+      ],
+      "answer": 0,
+      "evidence": [0],
+      "hint": "Read step 1 again. Look for the word \"some\".",
+      "explain": "She should keep going. Step 1 says some kits include an extra screw that is not needed.",
+      "inference": 1,
+      "tags": ["quantifier"]
+    },
+    {
+      "id": "f2-i169",
+      "skill": "F2",
+      "passage": "f2-p62",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya connects one motor wire and turns on the power. The rover does not move. Why?",
+      "options": [
+        "Both motor wires must be connected.",
+        "The battery needs four hours.",
+        "One wheel is missing.",
+        "The extra screw is needed."
+      ],
+      "answer": 0,
+      "evidence": [2, 4],
+      "hint": "Read the step about the motor wires. How many must be connected?",
+      "explain": "Both wires must be connected. Step 3 says the rover will not move if only one is connected, and step 5 says to turn on the power only after every wire is connected.",
+      "inference": 1,
+      "tags": ["quantifier"]
+    },
+    {
+      "id": "f2-i170",
+      "skill": "F2",
+      "passage": "f2-p62",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya plugs in the battery at 4:00 PM. By what time must she unplug it?",
+      "options": ["6:00 PM", "4:30 PM", "8:00 PM", "the next morning"],
+      "answer": 0,
+      "evidence": [3],
+      "hint": "Read step 4. Add the longest time it allows to 4:00 PM.",
+      "explain": "By 6:00 PM. Step 4 says to charge the battery for no more than two hours.",
+      "inference": 1,
+      "tags": ["quantifier", "time-pm"]
+    },
+    {
+      "id": "cu-home-i07",
+      "skill": "F2",
+      "passage": "cu-home-p07",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What should Ana do right after she takes off the cap?",
+      "options": [
+        "Put the cap back on.",
+        "Press the pump head onto the valve.",
+        "Pump until the tire feels hard."
+      ],
+      "answer": 1,
+      "evidence": [0, 1],
+      "hint": "Find the step about the cap. Then read the step that comes next.",
+      "explain": "She presses the pump head onto the valve and pushes the lever up. It is step 2.",
+      "inference": 0,
+      "checkup": "home",
+      "tags": ["next-step"]
+    },
+    {
+      "id": "cu-gull-i07",
+      "skill": "F2",
+      "passage": "cu-gull-p07",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben lifts a small rock and finds a crab under it. What should he do next?",
+      "options": [
+        "Put the rock back gently, the same way up.",
+        "Take the crab to show his friends.",
+        "Turn the rock over and leave it on the sand."
+      ],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Find the step with the word If. Read what it says to do after you lift a rock.",
+      "explain": "Ben should put the rock back gently, the same way up. It is in step 3.",
+      "inference": 0,
+      "checkup": "gull",
+      "tags": ["if-step"]
+    },
+    {
+      "id": "cu-cape-i07",
+      "skill": "F2",
+      "passage": "cu-cape-p07",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What should Ana do after the wind lifts the kite out of her hand?",
+      "options": [
+        "Hold the kite up high.",
+        "Stand with her back to the wind.",
+        "Let out the string a little at a time."
+      ],
+      "answer": 2,
+      "evidence": [1, 2],
+      "hint": "Find the step about the wind lifting the kite. Then read the next step.",
+      "explain": "She should let out the string a little at a time. It is step 3.",
+      "inference": 0,
+      "checkup": "cape",
+      "tags": ["next-step"]
+    },
+    {
+      "id": "cu-airfield-i07",
+      "skill": "F2",
+      "passage": "cu-airfield-p07",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Jo has walked past the windsock and is at the fuel pump. Which way should she turn?",
+      "options": ["Right", "Left", "Back toward the gate"],
+      "answer": 1,
+      "evidence": [2],
+      "hint": "Find the step that names the fuel pump. Read the direction word in it.",
+      "explain": "Jo should turn left. Step 3 says, \"At the fuel pump, turn left.\"",
+      "inference": 0,
+      "checkup": "airfield",
+      "tags": ["direction", "landmark"]
+    },
+    {
+      "id": "cu-takeoff-i07",
+      "skill": "F2",
+      "passage": "cu-takeoff-p07",
+      "format": "tap",
+      "level": 2,
+      "prompt": "You have put the headset over your ears. What do you do next?",
+      "options": [
+        "Turn the volume knob",
+        "Take the headset off",
+        "Move the microphone close to your mouth"
+      ],
+      "answer": 2,
+      "evidence": [0, 1],
+      "hint": "Find the step about your ears. Then read the step right after it.",
+      "explain": "Next, you move the microphone close to your mouth. It is step 2, right after the step about your ears.",
+      "inference": 0,
+      "checkup": "takeoff",
+      "tags": ["next-step"]
+    },
+    {
+      "id": "cu-australia-i07",
+      "skill": "F2",
+      "passage": "cu-australia-p07",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Captain Ada has crossed the bridge and turned right. Which tree is Gumnut's?",
+      "options": [
+        "The first tree on her left",
+        "The third tree on her left",
+        "The third tree on her right"
+      ],
+      "answer": 1,
+      "evidence": [2],
+      "hint": "Find the last step. Read the number word and the direction word in it.",
+      "explain": "Gumnut's tree is the third tree on her left. Step 3 says, \"Gumnut's tree is the third tree on your left.\"",
+      "inference": 0,
+      "checkup": "australia",
+      "tags": ["left-right", "count"]
+    },
+    {
+      "id": "cu-star-i07",
+      "skill": "F2",
+      "passage": "cu-star-p07",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Leo can see the steps now. What should he do next?",
+      "options": [
+        "Hold the rail and walk up the steps.",
+        "Turn his flashlight to red light.",
+        "Touch the telescope to point it at the Moon."
+      ],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Find the step that ends when you can see the steps. Then read the step after it.",
+      "explain": "He should hold the rail and walk up the steps. That is step 3, which comes after waiting until you can see the steps.",
+      "inference": 1,
+      "checkup": "star",
+      "tags": ["next-step"]
+    },
+    {
+      "id": "cu-rail-i07",
+      "skill": "F2",
+      "passage": "cu-rail-p07",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Sam has tapped Rail Coast. What should he do next?",
+      "options": [
+        "Take his ticket from the slot.",
+        "Tap Rail Coast again.",
+        "Tap Child, because he is 12."
+      ],
+      "answer": 2,
+      "evidence": [1],
+      "hint": "Find the step about the stop. Then read the step after it, and think about Sam's age.",
+      "explain": "He should tap Child, because he is 12. That is step 2. The ticket comes out after he pays, in step 3.",
+      "inference": 1,
+      "checkup": "rail",
+      "tags": ["next-step", "age-rule"]
+    },
+    {
+      "id": "cu-fossil-i07",
+      "skill": "F2",
+      "passage": "cu-fossil-p07",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Maya has put her fossil in a cloth bag. What should she do next?",
+      "options": [
+        "Put the bag in the tray by the tent door.",
+        "Write the date and the place on the tag.",
+        "Wrap the fossil in soft paper."
+      ],
+      "answer": 1,
+      "evidence": [0, 1],
+      "hint": "Find the step about the cloth bag. Then read the step right after it.",
+      "explain": "Next, she should write the date and the place on the tag. It is step 2, right after the step about the cloth bag.",
+      "inference": 0,
+      "checkup": "fossil",
+      "tags": ["next-step"]
+    },
+    {
+      "id": "cu-reef-i07",
+      "skill": "F2",
+      "passage": "cu-reef-p07",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Mari pulls up on Ben's life jacket, and it slides up past his chin. What should Ben do?",
+      "options": [
+        "Put his arms through the arm holes again.",
+        "Open the zipper and the buckles.",
+        "Pull the straps tighter."
+      ],
+      "answer": 2,
+      "evidence": [2],
+      "hint": "Find the step with the word If. Read what it says to do.",
+      "explain": "Ben should pull the straps tighter. It is in step 3.",
+      "inference": 0,
+      "checkup": "reef",
+      "tags": ["if-step"]
     }
   ],
   "model": {
