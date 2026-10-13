@@ -14,7 +14,7 @@ import { Adult } from './Adult';
 import { Btn } from './ui';
 import { finishedCount, journeyNow, JourneyMap, LegDots } from './journey';
 import { setSound, setVoice } from './media';
-import { isFamily, useCloudSync } from './cloud';
+import { autoSave, isFamily, useCloudSync } from './cloud';
 import { WhoIsLearning } from './CloudScreens';
 
 type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'map';
@@ -57,6 +57,9 @@ export function App() {
   const [newHere, setNewHere] = useState(false);
   useApplySettings(settings);
   useEffect(() => { applyRetention(); }, []);
+  useEffect(() => {
+    if (isFamily(cloud.me) && cloud.link === null && settings?.onboarded && settings.name) void autoSave(settings.name);
+  }, [cloud.me, cloud.link, settings?.onboarded, settings?.name]);
 
   // A device with no learner yet waits for the sign-in check, so it can offer the learners saved in the cloud.
   const deciding = settings && !settings.onboarded && (!cloud.checked || cloud.link === undefined);

@@ -65,6 +65,18 @@ export async function createAndLink(name: string) {
   await link(id, 'new');
 }
 
+let autoTried = false;
+/**
+ * A device that already has a learner saves it by itself when nobody is in the cloud copy yet, so there is no one
+ * it could be mistaken for. Once anyone is saved, joining or adding stays a grown-up's choice in the Data tab.
+ * ponytail: two devices doing this in the same second would make two learners; delete one in the Data tab.
+ */
+export async function autoSave(name: string) {
+  if (autoTried) return;
+  autoTried = true;
+  try { if (!(await listLearners()).length) await createAndLink(name); } catch { /* offline or not signed in: try on the next start */ }
+}
+
 /** Open a cloud learner on this device: their local database if there is one, else a new one that fills from the cloud. */
 export async function openLearner(learner: string) {
   const known = learnerDbs()[learner];

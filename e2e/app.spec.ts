@@ -117,6 +117,17 @@ async function familyDevice(page: Page, repo: ReturnType<typeof memoryRepo>) {
   });
 }
 
+test('a device that already has a learner saves it by itself when the cloud copy is empty', async ({ page }) => {
+  await onboard(page); // set up before the cloud copy existed: no sign-in on the dev server
+  const repo = memoryRepo();
+  await familyDevice(page, repo); // then a family member signs in
+  await page.reload();
+  await expect.poll(async () => (await learners(repo)).map((l) => l.name), { timeout: 15_000 }).toEqual(['Tester']);
+  const [saved] = await learners(repo);
+  await expect.poll(async () => (await sync(repo, { learner: saved.id, since: 0 })).events.some((e: { type: string }) => e.type === 'placement'), { timeout: 15_000 }).toBe(true);
+  await expect(page.getByRole('button', { name: /Start reading/ })).toBeVisible(); // he never sees any of this
+});
+
 test('the family cloud copy: a second device carries on as the same learner', async ({ browser }) => {
   const repo = memoryRepo();
   const first = await (await browser.newContext()).newPage();
