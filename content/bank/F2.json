@@ -506,7 +506,7 @@
       "title": "Rock Tumbler Guide",
       "kind": "directions",
       "sentences": [
-        "Maya bought rough agates at the Lantern Peaks Copper Mine gift shop.",
+        "Maya bought rough agates at the Ridgeway Mine Museum gift shop.",
         "She wants to polish them in her new rock tumbler."
       ],
       "visual": {
@@ -678,6 +678,1372 @@
       "socialLoad": 0,
       "credit": {
         "title": "Tuning a Guitar",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p24",
+      "title": "Fish Job",
+      "kind": "notice",
+      "sentences": [
+        "Leo has the fish job in Ms. Ortiz's room this week.",
+        "He reads the card on the tank."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Fish Job",
+        "icon": "🐟",
+        "rows": [
+          "Feed the fish at 9 AM.",
+          "Give them one pinch of fish flakes.",
+          "Too much food makes the water dirty."
+        ]
+      },
+      "picture": "🐟🫙",
+      "topics": [
+        "animals"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Fish Job",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p25",
+      "title": "Bus Stop Button",
+      "kind": "sign",
+      "sentences": [
+        "Sam rides the bus to the library.",
+        "He sees a sign by the back door."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "Press the red button before your stop.",
+            "icon": "🔴"
+          }
+        ]
+      },
+      "picture": "🚌🔴",
+      "topics": [
+        "transport"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bus Stop Button",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p26",
+      "title": "Star Finder",
+      "kind": "prompt",
+      "sentences": [
+        "Priya opens a star app on her phone.",
+        "This message pops up."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Star Finder",
+        "icon": "🔭",
+        "rows": [
+          "Hold your phone up to the night sky.",
+          "The app will show you the names of the stars."
+        ],
+        "buttons": [
+          "Start"
+        ]
+      },
+      "picture": "📱⭐",
+      "topics": [
+        "space"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Star Finder",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p27",
+      "title": "Pancake Mix",
+      "kind": "recipe",
+      "sentences": [
+        "Ben makes pancakes on Saturday morning.",
+        "He reads the back of the box."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Sunny Day Pancake Mix",
+        "ordered": true,
+        "note": "Ask an adult to help you use the stove.",
+        "rows": [
+          "Stir 1 cup of mix and 3/4 cup of water in a bowl.",
+          "Pour a little batter into a hot pan.",
+          "When you see bubbles on top, flip the pancake."
+        ]
+      },
+      "picture": "🥞🍳",
+      "topics": [
+        "food"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Pancake Mix",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p28",
+      "title": "Dino Dig Kit",
+      "kind": "directions",
+      "sentences": [
+        "Maya gets a dinosaur dig kit.",
+        "A model bone is hidden inside a hard block."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Dino Dig: How to Dig",
+        "ordered": true,
+        "rows": [
+          "Put on the safety goggles.",
+          "Tap the block gently with the wooden hammer.",
+          "When you see the bone, brush the dust off it."
+        ]
+      },
+      "picture": "🦴🔨",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dino Dig Kit",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p29",
+      "title": "Charging the Rover",
+      "kind": "directions",
+      "sentences": [
+        "Priya's rover has a low battery after robotics club.",
+        "Ms. Ortiz shows her how to charge it.",
+        "First, slide the power switch to OFF.",
+        "Next, plug the cable into the port on the back.",
+        "A small light turns red while the battery charges.",
+        "When the light turns green, the battery is full."
+      ],
+      "picture": "🤖🔌",
+      "topics": [
+        "robots"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Charging the Rover",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p30",
+      "title": "The Skate Park Helmet Sign",
+      "kind": "sign",
+      "sentences": [
+        "Leo reads the sign at the gate of the skate park."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Before You Ride",
+        "icon": "🛹",
+        "rows": [
+          "Put on your helmet so it sits low on your forehead.",
+          "Click the chin strap shut.",
+          "Shake your head. If the helmet slides, make the strap tighter."
+        ]
+      },
+      "picture": "🛹⛑️",
+      "topics": [
+        "sports"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Skate Park Helmet Sign",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p31",
+      "title": "Cleaning the Flute",
+      "kind": "directions",
+      "sentences": [
+        "Maya plays the flute every day after school.",
+        "When she finishes, she cleans it.",
+        "First, she takes the flute apart into three pieces.",
+        "Then she pushes a cleaning rod with a soft cloth through each piece.",
+        "This dries the water inside the flute.",
+        "Last, she puts the three pieces back in the case and closes the lid."
+      ],
+      "picture": "🪈🧽",
+      "topics": [
+        "music"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Cleaning the Flute",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p32",
+      "title": "Bath Time for Pixel",
+      "kind": "directions",
+      "sentences": [
+        "Pixel rolled in mud at the park, so Sam has to give him a bath.",
+        "Sam's dad wrote the steps on a card.",
+        "First, brush Pixel's fur to pull out any knots.",
+        "Next, fill the tub with warm water, not hot water.",
+        "Wet Pixel all over, but keep the water away from his eyes and ears.",
+        "Then rub in a little dog shampoo.",
+        "Do not use people shampoo, because it can dry out a dog's skin.",
+        "Rinse Pixel with clean water until you see no more bubbles.",
+        "Last, dry him with an old towel.",
+        "When Sam finishes, Pixel shakes, and water flies across the bathroom floor."
+      ],
+      "picture": "🐕🛁",
+      "topics": [
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bath Time for Pixel",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p33",
+      "title": "Beach Cleanup",
+      "kind": "notice",
+      "sentences": [
+        "Ana and Ben help with a beach cleanup on Saturday morning.",
+        "This sign stands at the blue tent."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Beach Cleanup: How to Help",
+        "icon": "🏖️",
+        "rows": [
+          "Write your name on the sign-up sheet at the blue tent.",
+          "Put on a pair of gloves and take one trash bag.",
+          "Pick up plastic, cans, rope and other trash.",
+          "Leave shells, rocks and seaweed on the sand. They are part of the beach.",
+          "If you find glass or anything sharp, do not touch it. Tell a helper in a yellow vest.",
+          "Bring your full bag back to the tent so a helper can weigh it."
+        ]
+      },
+      "picture": "🏖️🧤",
+      "topics": [
+        "ocean"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Beach Cleanup",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p34",
+      "title": "Model Train Set",
+      "kind": "directions",
+      "sentences": [
+        "Sam bought a model train set with money he saved.",
+        "He reads the guide in the box."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Harbor Line Train Set: Getting Started",
+        "ordered": true,
+        "rows": [
+          "Join the track pieces to make one big oval. Press each joint until it clicks.",
+          "Set the engine on the track. Check that all its wheels sit on the rails.",
+          "Hook the two cars onto the back of the engine.",
+          "Clip the wires from the power box onto the track.",
+          "Turn the speed dial to 0. Then plug the power box into the wall.",
+          "Turn the dial up slowly to make the train go. Turn it back to 0 to stop."
+        ]
+      },
+      "picture": "🚂🛤️",
+      "topics": [
+        "transport"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Model Train Set",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p35",
+      "title": "Volcano Island Setup",
+      "kind": "directions",
+      "sentences": [
+        "Maya, Sam and Leo play a board game at the library.",
+        "Maya is 11, Sam is 12, and Leo is 13.",
+        "Mrs. Hall reads them the setup rules."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Volcano Island: Game Setup",
+        "ordered": true,
+        "rows": [
+          "Open the board and set the volcano in the middle.",
+          "Each player picks a color and takes the four pieces of that color.",
+          "Put all your pieces on the START space of your color.",
+          "Shuffle the lava cards. Put them face down next to the board.",
+          "Give each player 3 gold coins.",
+          "The youngest player goes first. Then take turns going to the left."
+        ]
+      },
+      "picture": "🌋🎲",
+      "topics": [
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Volcano Island Setup",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p36",
+      "title": "A Map of My Street",
+      "kind": "directions",
+      "sentences": [
+        "Mr. Lee asks his class to draw a map of the street where they live.",
+        "Sam reads the steps on the homework sheet.",
+        "First, draw your street as two long lines across the middle of the page.",
+        "Next, draw your home as a small square and write your name inside it.",
+        "Then add three more places you can see from your front door, such as a tree or a bus stop.",
+        "After that, draw an arrow in the top corner that points north, and write the letter N next to it.",
+        "Last, make a key in the bottom corner.",
+        "A key is a small box that tells what each symbol on the map means.",
+        "For example, a green circle can mean a tree.",
+        "Sam adds the bus stop, a big oak tree and the post box to his map."
+      ],
+      "picture": "🗺️✏️",
+      "topics": [
+        "maps"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Map of My Street",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p37",
+      "title": "A Bigger Pot",
+      "kind": "directions",
+      "sentences": [
+        "Priya's spider plant has roots poking out of the holes in the bottom of its pot.",
+        "That means the plant needs a bigger pot.",
+        "Her mom shows her how to move it.",
+        "The day before, water the plant well so the soil holds together.",
+        "Then pick a new pot that is about two inches wider than the old one.",
+        "Make sure the new pot has holes in the bottom so extra water can drain out.",
+        "Put a layer of fresh soil in the new pot.",
+        "Next, tip the old pot on its side and gently slide the plant out.",
+        "Use your fingers to loosen the roots a little.",
+        "Set the plant in the new pot and fill in soil around it.",
+        "Last, water it until water drips out of the bottom."
+      ],
+      "picture": "🪴🌿",
+      "topics": [
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Bigger Pot",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p38",
+      "title": "Rain Gauge Steps",
+      "kind": "directions",
+      "sentences": [
+        "Ana and Ben keep a rain gauge in their backyard for a science project.",
+        "Ms. Ortiz gave the class these steps."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Rain Gauge: Daily Steps",
+        "ordered": true,
+        "rows": [
+          "Set the gauge on a post in an open spot, far from trees and roofs.",
+          "Check the gauge at 8 AM every day.",
+          "Bend down so your eyes are level with the top of the water.",
+          "Read the number on the line at the top of the water.",
+          "Write the number and the date on your rain chart.",
+          "Empty the gauge so it is ready for the next day."
+        ]
+      },
+      "picture": "🌧️📏",
+      "topics": [
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rain Gauge Steps",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p39",
+      "title": "The Streak Test",
+      "kind": "directions",
+      "sentences": [
+        "At rock club, Mr. Varga shows Maya how to do a streak test.",
+        "A streak test helps you name a mineral by the color of its powder.",
+        "First, set a white tile on the table with the rough side up.",
+        "Hold the tile still with one hand.",
+        "Then press a corner of the mineral on the tile and drag it across in one firm line.",
+        "Look closely at the color of the line it leaves.",
+        "Last, match that color to the chart on the wall.",
+        "The streak color can be very different from the color of the rock.",
+        "Maya's shiny gold-colored rock leaves a greenish-black line.",
+        "On the chart, a greenish-black streak means pyrite, not gold.",
+        "Mr. Varga smiles and says that many people think pyrite is gold."
+      ],
+      "picture": "🪨🔍",
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Streak Test",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p40",
+      "title": "Spotting the Space Station",
+      "kind": "directions",
+      "sentences": [
+        "Dr. Hale tells the astronomy club how to spot the space station from the ground.",
+        "The space station circles Earth, and sunlight bounces off its large solar panels.",
+        "First, check the club's sky app for the date and time it will pass over Harbor Town.",
+        "Go outside five minutes early, so your eyes can get used to the dark.",
+        "Next, face the direction the app gives, such as west.",
+        "Look for a bright dot that moves smoothly across the sky.",
+        "If the dot blinks or has a red or green light, it is an airplane.",
+        "The space station does not blink.",
+        "It crosses the sky in only a few minutes, so keep watching once you find it."
+      ],
+      "picture": "🛰️🌌",
+      "topics": [
+        "space"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Spotting the Space Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p41",
+      "title": "Two-Day Pizza Dough",
+      "kind": "recipe",
+      "sentences": [
+        "Grandma Rose is teaching Sam to make pizza dough for Saturday's family pizza night.",
+        "Her dough takes two days, because it rests in the refrigerator overnight, which gives it more flavor.",
+        "On Friday evening, stir 3 cups of flour, 1 teaspoon of salt and 1 teaspoon of yeast together in a large bowl.",
+        "Pour in 1 cup of warm water and stir until a rough, lumpy dough forms.",
+        "Knead the dough on a floured counter for 8 minutes, until it feels smooth and stretchy.",
+        "If the dough sticks to your hands, sprinkle on a spoonful of flour, but add no more than 3 spoonfuls in all.",
+        "Too much flour makes the crust dry and tough.",
+        "Put the dough in an oiled bowl, cover it, and place it in the refrigerator.",
+        "On Saturday, take the dough out of the refrigerator two hours before you plan to bake.",
+        "Cold dough is stiff, and it springs back when you try to stretch it.",
+        "Ask an adult to heat the oven to 475°F for 30 minutes before baking.",
+        "Press the dough into a circle with your fingertips, and if it shrinks back, let it rest for 10 minutes before you try again.",
+        "Add the sauce, cheese and toppings, and bake for 12 to 15 minutes, until the crust is golden brown."
+      ],
+      "breaks": [
+        2,
+        8
+      ],
+      "picture": "🍕👐",
+      "topics": [
+        "food"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Two-Day Pizza Dough",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p42",
+      "title": "The Floating Egg",
+      "kind": "directions",
+      "sentences": [
+        "Ms. Ortiz's science club is testing why people float more easily in the ocean than in a lake.",
+        "Ocean water has salt dissolved in it.",
+        "The salt makes the water denser, which means a cup of it is heavier than a cup of fresh water.",
+        "Denser water pushes up harder on things, so they float higher.",
+        "Each pair of students needs two tall clear glasses, warm tap water, a spoon, table salt and two raw eggs.",
+        "Fill both glasses halfway with warm water, and label one glass FRESH and the other SALT.",
+        "Stir 6 spoonfuls of salt into the SALT glass, one spoonful at a time, until you can no longer see the grains.",
+        "Then use the spoon to lower one egg gently into each glass.",
+        "Write down what each egg does: it may sink to the bottom, float in the middle, or float at the top.",
+        "If the egg in the SALT glass still sinks, lift it out, stir in 2 more spoonfuls of salt, and test again.",
+        "Keep adding salt this way until the egg floats.",
+        "If grains of salt stay on the bottom no matter how long you stir, the water cannot hold any more salt.",
+        "In that case, record what happened and stop adding salt.",
+        "Last, pour the salt water down the sink with plenty of tap water.",
+        "Wash your hands with soap, because raw eggs can carry germs."
+      ],
+      "breaks": [
+        4,
+        8
+      ],
+      "picture": "🥚🧂🌊",
+      "topics": [
+        "ocean"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Floating Egg",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p43",
+      "title": "Rover Troubleshooting",
+      "kind": "directions",
+      "sentences": [
+        "Priya's rover is having problems before a robotics club race.",
+        "She checks the troubleshooting table in the club's rover guide."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Club Rover Guide: Troubleshooting",
+        "columns": [
+          "Problem",
+          "Try this first",
+          "If that does not fix it"
+        ],
+        "rows": [
+          [
+            "The rover will not turn on.",
+            "Charge the battery until the light turns green.",
+            "Check that the battery plug is pushed all the way in."
+          ],
+          [
+            "The rover drives in a curve instead of straight.",
+            "Look for hair or string around the wheels, and pull it out.",
+            "Open the Settings app and press Balance Wheels."
+          ],
+          [
+            "The rover stops after a few seconds.",
+            "Move it away from walls. The bump sensor may think it hit something.",
+            "Wipe the bump sensor with a dry cloth."
+          ],
+          [
+            "The tablet cannot find the rover.",
+            "Turn the rover off and then on again.",
+            "Move the tablet closer, less than 30 feet from the rover."
+          ]
+        ],
+        "note": "Try the fixes in order. Never open the rover's body. If nothing works, ask the club leader."
+      },
+      "picture": "🤖🔧",
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rover Troubleshooting",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p44",
+      "title": "Storm Day Plan",
+      "kind": "notice",
+      "sentences": [
+        "Snow is in the forecast for Harbor Town.",
+        "Harbor Middle School sent this notice home with every student."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Storm Day Plan",
+        "icon": "❄️",
+        "rows": [
+          "On a storm morning, check the school message by 6:30 AM. It will say Open, Two-Hour Delay, or Closed.",
+          "Open: School starts at the normal time. Wear boots and bring dry shoes to change into.",
+          "Two-Hour Delay: Buses and classes start two hours later than normal. Morning clubs are canceled.",
+          "Closed: Stay home. After-school clubs and sports practices are canceled too.",
+          "If heavy snow starts during the day, school may close early. Buses will then leave at 12:30 PM.",
+          "If no one will be home for you by 12:30 PM, your family must fill in the Early Pickup form this week."
+        ]
+      },
+      "picture": "❄️🚌",
+      "topics": [
+        "weather",
+        "school"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Storm Day Plan",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p45",
+      "title": "How to Map a Creek",
+      "kind": "directions",
+      "sentences": [
+        "Mr. Lee's class is making a map of a short part of the creek in Story Woods.",
+        "Each group of three has a measuring tape, a compass, a clipboard and a sheet of grid paper.",
+        "Their map uses a scale, which tells how a distance on the paper matches a distance on the ground.",
+        "On this map, one grid square across equals 2 meters on the ground.",
+        "First, choose a starting point, such as the big flat rock, and mark it with a dot near the bottom left corner of the paper.",
+        "Next, one person holds the compass flat and finds north.",
+        "Draw a small arrow pointing to the top of the page, and label it N.",
+        "Then two people stretch the tape from the starting point to the next landmark, such as the footbridge.",
+        "Divide the distance in meters by 2 to find how many squares to draw.",
+        "For example, 10 meters becomes 5 squares on the paper.",
+        "Repeat the measuring for each landmark, and draw a symbol for it.",
+        "If a landmark is in the water, such as a fallen log, do not wade into the creek to measure it.",
+        "Instead, estimate the distance from the bank, and write the word about next to that distance on your map.",
+        "When you finish, add a key that explains each symbol."
+      ],
+      "breaks": [
+        4,
+        10
+      ],
+      "picture": "🗺️📏🏞️",
+      "topics": [
+        "maps"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How to Map a Creek",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p46",
+      "title": "Casting a Dinosaur Footprint",
+      "kind": "directions",
+      "sentences": [
+        "At the Harbor Town Museum, Dr. Bell is leading a workshop on casting dinosaur footprints.",
+        "A cast is a copy made by pouring a liquid into a shape and letting it harden.",
+        "The museum has rubber molds of real footprints left by a three-toed dinosaur.",
+        "First, brush a thin layer of cooking oil inside the mold, so the plaster will not stick to it.",
+        "Then mix 2 cups of plaster powder with 1 cup of cool water, and stir slowly for one minute, until it is as thick as pancake batter.",
+        "Pour the plaster into the mold, and tap the sides gently so air bubbles rise to the top.",
+        "As the plaster hardens, it will feel warm, which is normal.",
+        "Leave it alone for 30 minutes.",
+        "After 30 minutes, press the edge with one fingernail.",
+        "If your nail leaves a dent, wait 15 more minutes and test again.",
+        "When the plaster feels hard and cool, bend the rubber mold back and lift out your cast.",
+        "Let the cast dry overnight before you paint it, because paint does not stick well to damp plaster.",
+        "The next day, paint the footprint, and write your name and the date on the back."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "picture": "🦖👣",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Casting a Dinosaur Footprint",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p47",
+      "title": "Comet Karts Tournament",
+      "kind": "directions",
+      "sentences": [
+        "Ana and Ben are running a Comet Karts video game tournament at the Harbor Town Library on Saturday.",
+        "Eight players signed up, and Mrs. Hall set up three screens in the meeting room: two for matches and one for free play.",
+        "Ben wrote the rules on the whiteboard so everyone could follow them.",
+        "Each match is between two players and has up to three races.",
+        "The first player to win two races wins the match, so if one player wins the first two races, the third race is skipped.",
+        "The winner moves on to the next round, and the other player may use the free-play screen.",
+        "Matches 1 and 2 happen at the same time, one on each match screen.",
+        "Matches 3 and 4 start together when both match screens are free.",
+        "If two karts cross the finish line in a tie, those two players race that track again.",
+        "If a controller stops working during a race, pause the game, raise your hand, and wait for Ana or Ben to bring a spare.",
+        "Players may not switch screens or controllers in the middle of a match."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "picture": "🎮🏁",
+      "topics": [
+        "games"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Comet Karts Tournament",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p48",
+      "title": "Building a Bird Feeder",
+      "kind": "directions",
+      "sentences": [
+        "Sam and Grandma Rose are building a wooden bird feeder from a kit.",
+        "The kit comes with a tray, a roof, four short posts, eight screws and a metal hook.",
+        "First, screw the four posts into the corners of the tray.",
+        "Set the roof on top of the posts and screw it in place.",
+        "Then twist the metal hook into the center of the roof.",
+        "Hang the feeder from a branch at least 5 feet above the ground, so cats cannot reach the birds while they eat.",
+        "Choose a spot near bushes or trees, where small birds can hide quickly.",
+        "Fill the tray with black sunflower seeds, which many kinds of birds like to eat.",
+        "Birds may take a week or more to find a new feeder, so leave it in the same place even if none come right away.",
+        "Check the feeder every two days, and add seeds when the tray is less than half full.",
+        "If the seeds get wet and clump together, throw them away and wipe the tray dry, because wet seeds can grow mold that makes birds sick.",
+        "Every two weeks, take the feeder down, scrub it with warm soapy water, rinse it, and let it dry completely before you refill it.",
+        "If squirrels keep eating the seeds, ask an adult to add a squirrel guard, which is a wide cone that hangs above the feeder."
+      ],
+      "breaks": [
+        5,
+        9
+      ],
+      "picture": "🐦🌻",
+      "topics": [
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Building a Bird Feeder",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p49",
+      "title": "Setting Up the Drum Kit",
+      "kind": "directions",
+      "sentences": [
+        "Leo is the drummer in the Grade 7 band, and tonight the band has a concert in the school gym.",
+        "Ms. Gray asked Leo to set up the drum kit while two helpers, Sam and Maya, set up the chairs and music stands.",
+        "Both jobs can happen at the same time, but everything must be ready by 6:15 PM, when the band starts to tune.",
+        "Leo starts with the bass drum, the biggest drum, which stands on its side on the floor.",
+        "He clips the bass drum pedal to the front of it, where his right foot can reach it.",
+        "Next, he sets the drum stool at a height where his knees are a little lower than his hips.",
+        "The snare drum goes on its stand between his knees.",
+        "The hi-hat cymbals go on his left side, with their pedal under his left foot.",
+        "Last, he places the two small tom drums above the bass drum.",
+        "He sets the large cymbal where he can reach it easily.",
+        "Meanwhile, Sam and Maya set up twenty chairs in four rows of five, all facing Ms. Gray's stand.",
+        "They put one music stand in front of every two chairs, so each pair of players can share.",
+        "If a stand wobbles, they tighten the knob on its pole, or they swap it for a spare from the closet."
+      ],
+      "breaks": [
+        3,
+        10
+      ],
+      "picture": "🥁🎼",
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Setting Up the Drum Kit",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p50",
+      "title": "Tournament Day Plan",
+      "kind": "directions",
+      "sentences": [
+        "Coach Novak sent the team a plan for Saturday's soccer tournament at Harbor Fields.",
+        "Each team plays three games, and each game lasts 40 minutes.",
+        "Players must check in at the blue tent 45 minutes before their first game.",
+        "Our first game starts at 9:00 AM on Field 2.",
+        "Our second game is at 11:00 AM on Field 4, and our third game is at 1:00 PM on Field 2.",
+        "After you check in, we will warm up together.",
+        "First, jog two laps around the field, then stretch for five minutes, and then practice passing in pairs.",
+        "Between games, sit in the shade, drink water, and eat the snack you packed.",
+        "If anyone hears thunder or sees lightning, the referees will stop all games right away.",
+        "Walk calmly with the team to the school gym next to the fields, and wait inside with me.",
+        "Games can start again only after 30 minutes pass with no thunder.",
+        "If the storm goes on for a long time, the tournament director will send a text with the new game times."
+      ],
+      "breaks": [
+        5,
+        8
+      ],
+      "picture": "⚽⛈️",
+      "topics": [
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Tournament Day Plan",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p51",
+      "title": "Starting a Sourdough Starter",
+      "kind": "recipe",
+      "sentences": [
+        "A sourdough starter is a mix of flour and water that collects wild yeast from the flour and from the air around it.",
+        "As the yeast feeds on the flour, it makes tiny bubbles of gas, and those bubbles later help bread rise.",
+        "Grandma Rose is teaching a sourdough class at Rose's Bakery, and Maya and Priya are taking it.",
+        "She gave each student a glass jar and a schedule.",
+        "A new starter takes about a week to become strong enough for baking.",
+        "On Day 1, stir together 1/2 cup of whole wheat flour and 1/2 cup of lukewarm water in the clean jar.",
+        "Scrape down the sides, put a rubber band around the jar at the top of the mix, and cover the jar loosely with a cloth.",
+        "Keep the jar on the counter, out of direct sunlight.",
+        "For the next five days, feed the starter once a day at about the same time.",
+        "To feed it, pour out half of the starter, then stir in 1/2 cup of flour and 1/4 cup of water.",
+        "Pouring out half may seem wasteful, but if you skip it, the jar will overflow, and the yeast will run out of food.",
+        "Each time you feed it, move the rubber band to the new top of the mix.",
+        "On some days, you may see a layer of gray liquid on top.",
+        "This liquid means the starter is hungry, so pour it off and feed the starter right away, even if it is not feeding time yet.",
+        "If you see pink or orange streaks or fuzzy spots, harmful mold is growing.",
+        "In that case, throw the whole starter away and begin again in a clean jar.",
+        "Your starter is ready when it doubles in height within 6 hours of a feeding, rising to twice as high as the rubber band."
+      ],
+      "breaks": [
+        5,
+        8,
+        12
+      ],
+      "picture": "🍞🫙",
+      "topics": [
+        "food"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Starting a Sourdough Starter",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p52",
+      "title": "How to Pan for Gold",
+      "kind": "directions",
+      "sentences": [
+        "At the Ridgeway Mine Museum, Mr. Varga teaches visitors how miners once panned for gold in mountain streams.",
+        "Gold is much heavier than sand or gravel of the same size, so when a pan of wet gravel is shaken, the gold sinks to the bottom.",
+        "The goal of panning is to wash the light material away while the heavy material stays behind.",
+        "First, fill your pan about three-quarters full of gravel from the bucket.",
+        "Hold the pan under the water in the long trough, and rub the gravel with your fingers to break up any clumps of mud.",
+        "Pick out the large stones, but look at each one for gold before you toss it aside.",
+        "Next, keep the pan under the water and shake it hard from side to side for about thirty seconds.",
+        "The shaking lets the heavy pieces settle to the bottom.",
+        "Now lift the pan until its rim is just below the surface, and tilt it slightly away from you.",
+        "Swirl it in small circles so the water carries the top layer of light gravel over the far edge.",
+        "Repeat the shaking and the swirling, again and again, until only about a spoonful of dark, heavy sand remains.",
+        "If you tilt the pan too steeply, you may wash the gold away too, so keep the tilt gentle.",
+        "Finally, add a little clean water and swirl it slowly to spread out the dark sand.",
+        "Gold shows up as tiny bright yellow flecks that stay in place when you move the pan.",
+        "If you see shiny gold-colored flakes that float or wash away easily, they are probably mica, a light mineral that only looks like gold.",
+        "Use the plastic tweezers to put your gold flecks in a small tube of water, and Mr. Varga will label it with your name."
+      ],
+      "breaks": [
+        3,
+        8,
+        12
+      ],
+      "picture": "⛏️🪙",
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How to Pan for Gold",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p53",
+      "title": "Using the Club Telescope",
+      "kind": "directions",
+      "sentences": [
+        "Dr. Lee is lending the astronomy club a small telescope from the Lantern Peaks Observatory for a night of stargazing.",
+        "Before she hands it over, she goes through her setup steps with Priya and Sam.",
+        "The most important rule comes first: never point the telescope at the Sun, not even for a second.",
+        "The Sun's strong light, focused by the telescope, can harm your eyes.",
+        "Set up the tripod on flat, solid ground, and spread its legs wide so it stays steady.",
+        "Attach the telescope, and then line up the small finder scope on its side while it is still light outside.",
+        "To do this, aim the main telescope at a distant treetop.",
+        "Then turn the finder's two screws until the same treetop sits in the center of its crosshairs.",
+        "Lining up the finder in daylight is much easier than doing it in the dark.",
+        "At night, always start with the eyepiece that has the larger number on it, which is 25 mm.",
+        "A larger number means lower magnification, so you see a wider part of the sky, and finding an object is easier.",
+        "Once the object is in the center of the view, you can switch to the 10 mm eyepiece to see it larger.",
+        "If the view looks blurry, turn the focus knob slowly in one direction, and if it gets worse, turn it back the other way.",
+        "Stars and planets slowly drift out of view, because Earth is turning.",
+        "When an object reaches the edge of the view, nudge the telescope gently to bring it back to the center.",
+        "When you finish, put the caps back on both ends before you fold up the tripod, so dust cannot get inside."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "picture": "🔭🪐",
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Using the Club Telescope",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p54",
+      "title": "Jacketing a Fossil",
+      "kind": "directions",
+      "sentences": [
+        "Dr. Bell is showing the museum's young volunteers how her team protects a large fossil before moving it.",
+        "A fossil bone that has been underground for millions of years is often cracked.",
+        "It can fall apart if someone simply lifts it out of the ground.",
+        "So paleontologists wrap it in a hard shell called a plaster jacket.",
+        "First, dig a trench around the bone, leaving the bone sitting on a column of rock and dirt called a pedestal.",
+        "Make the trench deep enough that you can reach under the pedestal later.",
+        "Next, cover every exposed part of the bone with damp paper towels.",
+        "This layer keeps the plaster from sticking to the fossil, so the jacket can be removed later in the lab.",
+        "Then dip strips of burlap cloth into a bucket of wet plaster, squeeze off the extra, and lay them over the paper towels.",
+        "Overlap the strips by about half their width, and smooth each one with your hands so there are no gaps or air pockets.",
+        "Add at least two layers, and wrap the strips partway down the sides of the pedestal.",
+        "If the plaster in the bucket starts to thicken before you finish, mix a fresh batch instead of adding water to the old one.",
+        "Let the jacket harden for at least one hour, or overnight if the air is cool and damp.",
+        "Once it is hard, carefully dig under the pedestal until the jacket breaks free.",
+        "Then flip it over with help from two or three people.",
+        "Finally, plaster the open bottom the same way, and write the date and a number on the jacket so the team can match it to their field map."
+      ],
+      "breaks": [
+        4,
+        8,
+        12
+      ],
+      "picture": "🦴🧱",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Jacketing a Fossil",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p55",
+      "title": "The Line-Following Rover",
+      "kind": "directions",
+      "sentences": [
+        "In the next robotics contest, Priya's rover must follow a black line taped on a white floor, from the start box to the finish box.",
+        "Two light sensors sit under the front of the rover, one on each side of the line.",
+        "A white floor reflects a lot of light back to a sensor, while black tape reflects very little.",
+        "Priya's program follows three rules.",
+        "If both sensors see white, the line is between them, so the rover drives straight ahead.",
+        "If the left sensor sees black, the rover has drifted to the right, so it turns left until that sensor sees white again.",
+        "If the right sensor sees black, the rover turns right in the same way.",
+        "Before each test run, Priya sets the speed to 40 and the turn strength to 5.",
+        "Then she places the rover in the start box with the line centered under it.",
+        "During the run, a teammate times it with a stopwatch and writes down anything that goes wrong.",
+        "The rules allow three test runs before the real contest run.",
+        "Priya also made a short list of fixes for common problems.",
+        "If the rover wobbles from side to side on straight parts, lower the turn strength by 1.",
+        "If it shoots off the line at sharp curves, lower the speed by 10, because the sensors cannot react fast enough at high speed.",
+        "If it stops in the middle of the course, check that the battery is above 50 percent before you change any numbers.",
+        "Change only one number between runs, so you can tell which change made the difference."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "picture": "🤖〰️",
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Line-Following Rover",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p56",
+      "title": "Taking Your Bike on the Ferry",
+      "kind": "directions",
+      "sentences": [
+        "On Saturday, Sam and his dad are taking their bikes to Gull Island on the Harbor Town ferry.",
+        "Captain Ruth Lane's ferry has a special deck for bikes, but it holds only twelve, so riders with bikes follow some extra steps.",
+        "The ferry leaves the harbor at 9:00 AM, and the crossing takes 40 minutes.",
+        "First, buy your tickets at the ticket window.",
+        "A rider ticket costs $5, and each bike needs its own $3 bike ticket.",
+        "The window opens at 8:30 AM, and the twelve bike tickets often sell out on sunny weekends.",
+        "Next, wait with your bike in Lane B, the lane painted with green stripes.",
+        "Riders with bikes board first, starting 25 minutes before the ferry leaves, and cars board after them.",
+        "Boarding closes 10 minutes before the ferry leaves, and the crew cannot open the gate again after that.",
+        "Walk your bike up the ramp, and never ride it, because the metal ramp is slippery when it is wet.",
+        "On the lower deck, a crew member will show you which rack to use.",
+        "Hook your front wheel into the rack and wrap the strap around the frame.",
+        "Then carry your helmet, water bottle and anything else you need up to the passenger deck, because no one may stay on the bike deck during the crossing.",
+        "When the ferry docks, wait until a crew member calls the bike riders down to the lower deck.",
+        "If the bike tickets are sold out, you can lock your bike at the racks beside the ticket window and ride the ferry without it."
+      ],
+      "breaks": [
+        3,
+        9,
+        13
+      ],
+      "picture": "⛴️🚲",
+      "topics": [
+        "transport"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Taking Your Bike on the Ferry",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p57",
+      "title": "Weather Journal Week",
+      "kind": "directions",
+      "sentences": [
+        "Ms. Ortiz's class is keeping a weather journal for five school days, from Monday to Friday.",
+        "Every student records the same measurements at exactly the same time, 12:00 noon, so the class can compare observations at the end of the week.",
+        "The tools are kept in the white weather box outside the science room, next to a tall pole with a wind vane on top.",
+        "First, read the thermometer in the shade, and record the temperature in degrees Fahrenheit.",
+        "Next, look up at the sky and name the main type of cloud.",
+        "Puffy white clouds with flat bottoms are cumulus clouds.",
+        "A flat gray sheet that covers the whole sky is stratus, and thin, wispy streaks high up are cirrus.",
+        "If there are no clouds at all, write the word clear.",
+        "Then check the wind vane.",
+        "Its arrow points toward the direction the wind is coming from, and winds are named for the place they start.",
+        "So if the arrow points west, write west wind, even though the air is moving toward the east.",
+        "If the vane keeps swinging back and forth, watch it for one minute and write the direction it points to most often.",
+        "Last, write one sentence describing how the weather feels, such as cold and still or warm and breezy.",
+        "On Friday, look back over all five days and circle the warmest day and the coldest day.",
+        "Then write one sentence about how the clouds changed during the week."
+      ],
+      "breaks": [
+        3,
+        8,
+        12
+      ],
+      "picture": "🌤️🧭",
+      "topics": [
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Weather Journal Week",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p58",
+      "title": "Pitching a Tent",
+      "kind": "directions",
+      "sentences": [
+        "The science club is spending one night at the campsite in Story Woods, and every group of three must pitch its own tent.",
+        "The camp leader gave each group these steps and asked everyone to read all of them before unpacking anything.",
+        "First, choose a flat spot that is a little higher than the ground around it, so rainwater will not collect under the tent.",
+        "Look up for dead branches, and do not set up the tent under them.",
+        "Clear away sticks, pinecones and stones, because even small ones will poke you through the floor all night.",
+        "Next, spread the ground sheet where the tent will go, and fold under any edges that stick out past the tent floor.",
+        "If the edges stick out, rain can land on the sheet and run underneath the tent.",
+        "Lay the tent on the ground sheet with its door facing away from the wind.",
+        "Slide the two long poles through the sleeves so they cross in an X.",
+        "Bend the poles and push their ends into the metal rings at the four corners, and the tent will rise into a dome.",
+        "Push a stake through each corner loop and into the ground at an angle, with the top of the stake leaning away from the tent.",
+        "Finally, check the weather report on the camp notice board.",
+        "If rain is possible tonight, put the rain fly over the tent and stake it out so it does not touch the tent walls.",
+        "If the night will be clear and dry, you can leave the fly off and see the stars through the mesh roof.",
+        "Before dark, make sure everyone in the group knows where the flashlight is."
+      ],
+      "breaks": [
+        2,
+        7,
+        11
+      ],
+      "picture": "⛺🌲",
+      "topics": [
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Pitching a Tent",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p59",
+      "title": "Planning a Hike to the Lookout",
+      "kind": "directions",
+      "sentences": [
+        "Sam and Leo are planning a hike to the lookout at the top of Lantern Peaks, and Sam is reading the trail map.",
+        "Two trails start at the parking lot: the Red Trail, which is 2 miles long, and the Blue Trail, which is 3 miles long.",
+        "Thin brown lines called contour lines curve across the map.",
+        "Each line joins points that are the same height above sea level, and on this map, each line is 50 feet higher than the one below it.",
+        "Where contour lines are close together, the ground is steep, and where they are far apart, the ground is gentle.",
+        "The Red Trail goes almost straight up across lines that are packed close together, so it is short but steep the whole way.",
+        "The Blue Trail winds back and forth across lines that are spread out, so it is longer but gentle.",
+        "The legend at the bottom of the map lists the trail rules.",
+        "Hikers should allow 30 minutes for each mile of gentle trail and 45 minutes for each mile of steep trail.",
+        "Everyone must be back at the parking lot by 6:00 PM, when the gate closes.",
+        "If the wind becomes strong, take the Blue Trail down, because the Red Trail's steep, open rocks are hard to cross in strong wind.",
+        "Sam plans to walk up the gentle Blue Trail and come back down the steep Red Trail, so they can see both.",
+        "He also plans a 30-minute rest at the lookout to eat lunch and look at the view."
+      ],
+      "breaks": [
+        4,
+        7,
+        11
+      ],
+      "picture": "🗺️⛰️",
+      "topics": [
+        "maps"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Planning a Hike to the Lookout",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f2-p60",
+      "title": "Kayak Lesson",
+      "kind": "directions",
+      "sentences": [
+        "Ana and Ben are taking a two-hour kayak lesson in the calm north corner of the harbor.",
+        "Before anyone touches a paddle, the instructor checks that every life jacket is zipped and buckled.",
+        "A life jacket fits well when it stays in place as the instructor lifts it by the shoulders, instead of sliding up past your ears.",
+        "To hold the paddle, grip the shaft with both hands a little wider apart than your shoulders, with your knuckles pointing up.",
+        "Make sure the scooped side of each blade faces you, because that side catches more water.",
+        "For a forward stroke, reach forward, dip one blade into the water near your feet, and pull it back to your hip.",
+        "Then lift that blade out and do the same on the other side.",
+        "To turn, use a sweep stroke.",
+        "Dip the blade near your feet and draw a wide half circle out to the side and back toward the back of the kayak.",
+        "A sweep on the right side turns the front of the kayak to the left, and a sweep on the left side turns it to the right.",
+        "To stop, dig the blade into the water beside your hip and push it forward, first on one side and then on the other.",
+        "Stay inside the area marked by the orange buoys, and keep at least two kayak lengths away from other boats.",
+        "If you hear one long whistle blast, stop paddling and look at the instructor.",
+        "If you hear three short blasts, paddle back to the dock right away."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "picture": "🛶🌊",
+      "topics": [
+        "ocean",
+        "sports"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Kayak Lesson",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -1705,6 +3071,3291 @@
         "five-steps",
         "prose-directions",
         "order-words"
+      ]
+    },
+    {
+      "id": "f2-i51",
+      "skill": "F2",
+      "passage": "f2-p24",
+      "format": "tap",
+      "level": 1,
+      "prompt": "When should Leo feed the fish?",
+      "options": [
+        "At 9 AM",
+        "At 9 PM",
+        "At 3 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the line on the card with a time in it.",
+      "explain": "Leo feeds the fish at 9 AM. The first line of the card says, \"Feed the fish at 9 AM.\"",
+      "inference": 0,
+      "tags": [
+        "one-step",
+        "time-am"
+      ]
+    },
+    {
+      "id": "f2-i52",
+      "skill": "F2",
+      "passage": "f2-p24",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Tap the food Leo should give the fish.",
+      "scene": "school",
+      "objects": [
+        {
+          "label": "Bird seed",
+          "emoji": "🌾"
+        },
+        {
+          "label": "Fish flakes",
+          "emoji": "🐟"
+        },
+        {
+          "label": "Bread",
+          "emoji": "🍞"
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Read the card. Find the words that name the food.",
+      "explain": "Leo gives the fish fish flakes. The card says, \"Give them one pinch of fish flakes.\"",
+      "inference": 0,
+      "tags": [
+        "one-step",
+        "notice"
+      ]
+    },
+    {
+      "id": "f2-i53",
+      "skill": "F2",
+      "passage": "f2-p25",
+      "format": "tap",
+      "level": 1,
+      "prompt": "The library is the next stop. What should Sam do?",
+      "options": [
+        "Press the red button",
+        "Stand next to the driver",
+        "Wait for the driver to ask him"
+      ],
+      "pictures": [
+        "🔴",
+        "🧍",
+        "⏳"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the sign. Find the word that tells Sam what to do.",
+      "explain": "Sam presses the red button. The sign says, \"Press the red button before your stop.\"",
+      "inference": 0,
+      "tags": [
+        "one-step",
+        "sign"
+      ]
+    },
+    {
+      "id": "f2-i54",
+      "skill": "F2",
+      "passage": "f2-p25",
+      "format": "tap",
+      "level": 1,
+      "prompt": "When should Sam press the red button?",
+      "options": [
+        "After he gets off the bus",
+        "Before his stop",
+        "When he gets on the bus"
+      ],
+      "answer": 1,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the sign to the end. Look for the word that tells when.",
+      "explain": "He presses it before his stop. The sign says to press the red button before your stop.",
+      "inference": 0,
+      "tags": [
+        "one-step",
+        "before-after"
+      ]
+    },
+    {
+      "id": "f2-i55",
+      "skill": "F2",
+      "passage": "f2-p26",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Priya wants to see the names of the stars. What should she do?",
+      "options": [
+        "Hold her phone up to the night sky",
+        "Hold her phone down by the ground",
+        "Turn her phone off"
+      ],
+      "pictures": [
+        "🌌",
+        "⬇️",
+        "📴"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the message on the screen. Find the line that tells Priya what to do.",
+      "explain": "She holds her phone up to the night sky. The first line of the message says to do this, and the next line says the app will then show the names of the stars.",
+      "inference": 0,
+      "tags": [
+        "one-step",
+        "screen-prompt"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i56",
+      "skill": "F2",
+      "passage": "f2-p27",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put the pancake steps in order.",
+      "steps": [
+        "Stir the mix and the water in a bowl",
+        "Pour a little batter into the hot pan",
+        "Flip the pancake when you see bubbles"
+      ],
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Read the box from the top. Each line is the next step.",
+      "explain": "First Ben stirs the mix and water. Then he pours batter into the pan. Last, he flips the pancake when bubbles show. The box lists the steps in this order.",
+      "inference": 0,
+      "tags": [
+        "three-steps",
+        "recipe"
+      ]
+    },
+    {
+      "id": "f2-i57",
+      "skill": "F2",
+      "passage": "f2-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben sees bubbles on top of his pancake. What should he do now?",
+      "options": [
+        "Flip the pancake",
+        "Pour in more batter",
+        "Stir in more water"
+      ],
+      "pictures": [
+        "🥞",
+        "🫗",
+        "💧"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the step that talks about bubbles.",
+      "explain": "He flips the pancake. Step 3 says, \"When you see bubbles on top, flip the pancake.\"",
+      "inference": 0,
+      "tags": [
+        "when-step",
+        "next-step"
+      ]
+    },
+    {
+      "id": "f2-i58",
+      "skill": "F2",
+      "passage": "f2-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben puts 1 cup of mix in the bowl. How much water should he add?",
+      "options": [
+        "1 cup",
+        "3/4 cup",
+        "3 cups"
+      ],
+      "answer": 1,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the step with the bowl. Look for the amount of water.",
+      "explain": "He adds 3/4 cup of water. Step 1 says to stir 1 cup of mix and 3/4 cup of water in a bowl.",
+      "inference": 0,
+      "tags": [
+        "amount"
+      ]
+    },
+    {
+      "id": "f2-i59",
+      "skill": "F2",
+      "passage": "f2-p28",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Tap the things Maya uses, in order.",
+      "scene": "home",
+      "objects": [
+        {
+          "label": "Brush",
+          "emoji": "🖌️"
+        },
+        {
+          "label": "Safety goggles",
+          "emoji": "🥽"
+        },
+        {
+          "label": "Wooden hammer",
+          "emoji": "🔨"
+        },
+        {
+          "label": "Glue",
+          "emoji": "🧴"
+        }
+      ],
+      "answer": [
+        1,
+        2,
+        0
+      ],
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Read the steps from the top. Each time a step names a thing, tap that thing.",
+      "explain": "Maya uses the goggles, then the wooden hammer, then the brush. Steps 1, 2 and 3 name them in that order. The kit does not use glue.",
+      "inference": 0,
+      "tags": [
+        "multi-step",
+        "answer-order"
+      ]
+    },
+    {
+      "id": "f2-i60",
+      "skill": "F2",
+      "passage": "f2-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Maya taps the block and sees part of the bone. What should she do next?",
+      "options": [
+        "Put on the goggles",
+        "Brush the dust off the bone",
+        "Hit the block hard with the hammer"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the step that starts with When. Check if it matches what Maya sees.",
+      "explain": "She brushes the dust off the bone. Step 3 says to do this when you see the bone.",
+      "inference": 0,
+      "tags": [
+        "when-step",
+        "next-step"
+      ]
+    },
+    {
+      "id": "f2-i61",
+      "skill": "F2",
+      "passage": "f2-p29",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put Priya's steps in order.",
+      "steps": [
+        "Slide the power switch to OFF",
+        "Plug the cable into the back",
+        "Wait for the light to turn green"
+      ],
+      "evidence": [
+        2,
+        3,
+        5
+      ],
+      "hint": "Look for the order words First and Next. Then find what tells Priya the battery is full.",
+      "explain": "She slides the switch to OFF, plugs in the cable, then waits for the green light. The words First and Next show the order, and a green light means the battery is full.",
+      "inference": 0,
+      "tags": [
+        "three-steps",
+        "order-words"
+      ]
+    },
+    {
+      "id": "f2-i62",
+      "skill": "F2",
+      "passage": "f2-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "The light on Priya's rover is red. What does that tell her?",
+      "options": [
+        "The battery is full",
+        "The switch is still on",
+        "The battery is still charging"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the sentence about a red light.",
+      "explain": "The battery is still charging. The text says a small light turns red while the battery charges.",
+      "inference": 0,
+      "tags": [
+        "light-signal"
+      ]
+    },
+    {
+      "id": "f2-i63",
+      "skill": "F2",
+      "passage": "f2-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What should Priya do before she plugs in the cable?",
+      "options": [
+        "Wait for the light to turn green",
+        "Slide the power switch to OFF",
+        "Drive the rover around the room"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the step about the cable. Then read the step right before it.",
+      "explain": "She slides the power switch to OFF. That is the First step, and plugging in the cable comes Next.",
+      "inference": 0,
+      "tags": [
+        "before-step"
+      ]
+    },
+    {
+      "id": "f2-i64",
+      "skill": "F2",
+      "passage": "f2-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Leo shakes his head, and his helmet slides around. What should he do?",
+      "options": [
+        "Push the helmet higher on his head",
+        "Take off the helmet and ride",
+        "Make the strap tighter"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the step that starts with Shake. Read what to do if the helmet slides.",
+      "explain": "He makes the strap tighter. Step 3 says that if the helmet slides, make the strap tighter.",
+      "inference": 0,
+      "tags": [
+        "if-step"
+      ]
+    },
+    {
+      "id": "f2-i65",
+      "skill": "F2",
+      "passage": "f2-p30",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the step Leo does right after he puts on his helmet.",
+      "unit": "row",
+      "answer": [
+        1
+      ],
+      "evidence": [
+        1
+      ],
+      "hint": "Find the step about putting on the helmet. Then look at the line below it.",
+      "explain": "Right after he puts on his helmet, Leo clicks the chin strap shut. That is step 2.",
+      "inference": 0,
+      "tags": [
+        "next-step",
+        "sign"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i66",
+      "skill": "F2",
+      "passage": "f2-p31",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put Maya's cleaning steps in order.",
+      "steps": [
+        "Take the flute apart",
+        "Push the rod and cloth through each piece",
+        "Put the pieces back in the case"
+      ],
+      "evidence": [
+        2,
+        3,
+        5
+      ],
+      "hint": "Look for the order words First, Then and Last.",
+      "explain": "First she takes the flute apart. Then she pushes the rod and cloth through each piece. Last, she puts the pieces back in the case.",
+      "inference": 0,
+      "tags": [
+        "three-steps",
+        "order-words"
+      ]
+    },
+    {
+      "id": "f2-i67",
+      "skill": "F2",
+      "passage": "f2-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Maya has just taken her flute apart. What should she do next?",
+      "options": [
+        "Put the pieces in the case",
+        "Push the rod and cloth through each piece",
+        "Play the flute again"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the First step. Then read the step that comes after it.",
+      "explain": "Next she pushes the cleaning rod and cloth through each piece. The Then step comes right after she takes the flute apart.",
+      "inference": 0,
+      "tags": [
+        "next-step"
+      ]
+    },
+    {
+      "id": "f2-i68",
+      "skill": "F2",
+      "passage": "f2-p31",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Tap what Maya uses after she takes her flute apart, in order.",
+      "scene": "home",
+      "objects": [
+        {
+          "label": "Flute case",
+          "emoji": "🧳"
+        },
+        {
+          "label": "Cleaning rod and cloth",
+          "emoji": "🧽"
+        },
+        {
+          "label": "Music stand",
+          "emoji": "🎼"
+        }
+      ],
+      "answer": [
+        1,
+        0
+      ],
+      "evidence": [
+        3,
+        5
+      ],
+      "hint": "Read the Then step and the Last step. Tap each thing as it is named.",
+      "explain": "She uses the cleaning rod and cloth first, then the flute case. The Then step names the rod and cloth, and the Last step names the case.",
+      "inference": 0,
+      "tags": [
+        "multi-step",
+        "answer-order"
+      ]
+    },
+    {
+      "id": "f2-i69",
+      "skill": "F2",
+      "passage": "f2-p32",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the steps for Pixel's bath in order.",
+      "steps": [
+        "Brush Pixel's fur",
+        "Fill the tub with warm water",
+        "Wet Pixel all over",
+        "Rub in dog shampoo",
+        "Rinse until there are no bubbles",
+        "Dry him with a towel"
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "hint": "Look for the order words First, Next, Then and Last. Some steps come between them.",
+      "explain": "Brush, fill the tub, wet Pixel, rub in shampoo, rinse, then dry him. The card gives the steps in this order.",
+      "inference": 0,
+      "tags": [
+        "six-steps",
+        "order-words",
+        "prose-directions"
+      ]
+    },
+    {
+      "id": "f2-i70",
+      "skill": "F2",
+      "passage": "f2-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam rinses Pixel, but he still sees bubbles in the fur. What should he do?",
+      "options": [
+        "Keep rinsing with clean water",
+        "Dry Pixel with the towel",
+        "Rub in more dog shampoo",
+        "Brush Pixel's fur again"
+      ],
+      "answer": 0,
+      "evidence": [
+        7
+      ],
+      "hint": "Find the step about rinsing. Read the word until and what comes after it.",
+      "explain": "He keeps rinsing. The card says to rinse with clean water until you see no more bubbles.",
+      "inference": 0,
+      "tags": [
+        "until-step",
+        "close-step"
+      ]
+    },
+    {
+      "id": "f2-i71",
+      "skill": "F2",
+      "passage": "f2-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The dog shampoo is all gone. Can Sam use his own shampoo on Pixel?",
+      "options": [
+        "Yes, if he uses only a little",
+        "Yes, because any shampoo makes bubbles",
+        "No, because people shampoo can dry out a dog's skin",
+        "No, because Pixel does not like the smell"
+      ],
+      "answer": 2,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the sentence about people shampoo. Read the reason it gives.",
+      "explain": "No. The card says not to use people shampoo, because it can dry out a dog's skin.",
+      "inference": 0,
+      "tags": [
+        "rule-reason",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "f2-i72",
+      "skill": "F2",
+      "passage": "f2-p33",
+      "format": "scene",
+      "level": 3,
+      "prompt": "Tap the things Ana uses at the start, in order.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Trash bag",
+          "emoji": "🗑️"
+        },
+        {
+          "label": "Sign-up sheet",
+          "emoji": "📋"
+        },
+        {
+          "label": "Gloves",
+          "emoji": "🧤"
+        },
+        {
+          "label": "Bucket",
+          "emoji": "🪣"
+        }
+      ],
+      "answer": [
+        1,
+        2,
+        0
+      ],
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the first two steps. Tap each thing in the order the steps name it.",
+      "explain": "Ana uses the sign-up sheet, then the gloves, then a trash bag. Steps 1 and 2 name them in that order. The sign does not use a bucket.",
+      "inference": 0,
+      "tags": [
+        "multi-step",
+        "answer-order"
+      ]
+    },
+    {
+      "id": "f2-i73",
+      "skill": "F2",
+      "passage": "f2-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben finds a broken bottle in the sand. What should he do?",
+      "options": [
+        "Pick it up, because he has gloves on",
+        "Cover it with sand",
+        "Tell a helper in a yellow vest",
+        "Put it in his trash bag"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the step that talks about glass. Read all of it.",
+      "explain": "He tells a helper in a yellow vest. Step 5 says that if you find glass or anything sharp, do not touch it, and tell a helper in a yellow vest.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "safety-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i74",
+      "skill": "F2",
+      "passage": "f2-p33",
+      "format": "sort",
+      "level": 3,
+      "prompt": "What should Ana do with each thing she finds? Put each one in the right box.",
+      "bins": [
+        "Put it in the bag",
+        "Leave it on the sand"
+      ],
+      "cards": [
+        {
+          "text": "Plastic bottle cap",
+          "bin": 0,
+          "emoji": "🔵"
+        },
+        {
+          "text": "Seashell",
+          "bin": 1,
+          "emoji": "🐚"
+        },
+        {
+          "text": "Soda can",
+          "bin": 0,
+          "emoji": "🥫"
+        },
+        {
+          "text": "Seaweed",
+          "bin": 1,
+          "emoji": "🌿"
+        },
+        {
+          "text": "Piece of rope",
+          "bin": 0,
+          "emoji": "🪢"
+        },
+        {
+          "text": "Smooth rock",
+          "bin": 1,
+          "emoji": "🪨"
+        }
+      ],
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the step that says what to pick up. Then find the step that says what to leave.",
+      "explain": "Plastic, cans and rope go in the bag. Shells, seaweed and rocks stay on the sand, because the sign says they are part of the beach.",
+      "inference": 0,
+      "tags": [
+        "sort",
+        "rule-groups"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i75",
+      "skill": "F2",
+      "passage": "f2-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam has hooked the two cars onto the engine. What should he do next?",
+      "options": [
+        "Plug the power box into the wall",
+        "Join the track pieces into an oval",
+        "Turn the dial up to make the train go",
+        "Clip the power box wires onto the track"
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the step about the cars. Then read the step right after it.",
+      "explain": "He clips the power box wires onto the track. That is step 4, right after hooking on the cars.",
+      "inference": 0,
+      "tags": [
+        "next-step",
+        "close-step"
+      ]
+    },
+    {
+      "id": "f2-i76",
+      "skill": "F2",
+      "passage": "f2-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam is about to plug the power box into the wall. Where should the speed dial be?",
+      "options": [
+        "All the way up",
+        "Halfway up",
+        "At 0",
+        "Anywhere, because the train is not moving yet"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the step about plugging in the power box. Read what comes first in that step.",
+      "explain": "The dial should be at 0. Step 5 says to turn the speed dial to 0, then plug the power box into the wall.",
+      "inference": 0,
+      "tags": [
+        "detail-in-step",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f2-i77",
+      "skill": "F2",
+      "passage": "f2-p34",
+      "format": "scene",
+      "level": 3,
+      "prompt": "Tap the things Sam uses, in order.",
+      "scene": "home",
+      "objects": [
+        {
+          "label": "Power box",
+          "emoji": "🔌"
+        },
+        {
+          "label": "Track pieces",
+          "emoji": "🛤️"
+        },
+        {
+          "label": "Engine",
+          "emoji": "🚂"
+        },
+        {
+          "label": "Train cars",
+          "emoji": "🚃"
+        },
+        {
+          "label": "Ticket",
+          "emoji": "🎫"
+        }
+      ],
+      "answer": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Read the guide from the top. Each time a step names a thing, tap that thing.",
+      "explain": "Sam uses the track pieces, then the engine, then the cars, then the power box. Steps 1 to 4 name them in that order. The guide does not use a ticket.",
+      "inference": 0,
+      "tags": [
+        "multi-step",
+        "answer-order"
+      ]
+    },
+    {
+      "id": "f2-i78",
+      "skill": "F2",
+      "passage": "f2-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Who should go first?",
+      "options": [
+        "Leo",
+        "Sam",
+        "Maya",
+        "Mrs. Hall"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Read the last rule. Then use the ages at the top to find the youngest player.",
+      "explain": "Maya goes first. The last rule says the youngest player goes first, and Maya is 11, the youngest of the three players.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "who-first"
+      ]
+    },
+    {
+      "id": "f2-i79",
+      "skill": "F2",
+      "passage": "f2-p35",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the setup steps in order.",
+      "steps": [
+        "Set the volcano in the middle",
+        "Pick a color and take four pieces",
+        "Put your pieces on START",
+        "Shuffle the lava cards",
+        "Give each player 3 coins"
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "Read the rules from the top. Each rule comes after the one above it.",
+      "explain": "Set the volcano, pick a color and take four pieces, put them on START, shuffle the lava cards, then give out the coins. The rules list the steps in this order.",
+      "inference": 0,
+      "tags": [
+        "five-steps",
+        "game-setup"
+      ]
+    },
+    {
+      "id": "f2-i80",
+      "skill": "F2",
+      "passage": "f2-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How many pieces does Sam put on his START space?",
+      "options": [
+        "Three",
+        "One",
+        "Four",
+        "Five"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the rule that says how many pieces each player takes. Then read the rule right after it.",
+      "explain": "He puts four pieces on START. Rule 2 says each player takes four pieces, and rule 3 says to put all your pieces on START.",
+      "inference": 1,
+      "tags": [
+        "combine-steps",
+        "amount"
+      ]
+    },
+    {
+      "id": "f2-i81",
+      "skill": "F2",
+      "passage": "f2-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam has drawn his street and his home. What should he draw next?",
+      "options": [
+        "Three places he can see from his front door",
+        "An arrow that points north",
+        "A key in the bottom corner",
+        "Two long lines across the page"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the step about drawing your home. Then read the step that starts with Then.",
+      "explain": "He draws three places he can see from his front door. That step starts with Then and comes right after the step about his home.",
+      "inference": 0,
+      "tags": [
+        "next-step",
+        "order-words"
+      ]
+    },
+    {
+      "id": "f2-i82",
+      "skill": "F2",
+      "passage": "f2-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where should Sam draw the arrow that points north?",
+      "options": [
+        "In the bottom corner",
+        "In the middle of the street",
+        "Inside his home",
+        "In the top corner"
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the step about the arrow. Look for a place word. Another step names a different corner.",
+      "explain": "He draws it in the top corner. The After that step says to draw the arrow in the top corner. The key goes in the bottom corner.",
+      "inference": 0,
+      "tags": [
+        "detail-in-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i83",
+      "skill": "F2",
+      "passage": "f2-p36",
+      "format": "build",
+      "level": 3,
+      "prompt": "Sam has drawn his home. Build the rest of his steps.",
+      "frame": "Next, Sam will {0}. Then he will {1}. Last, he will {2}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "Next",
+          "options": [
+            "add three places",
+            "draw the north arrow",
+            "make a key"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "make a key",
+            "add three places",
+            "draw the north arrow"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "Last",
+          "options": [
+            "draw the north arrow",
+            "make a key",
+            "add three places"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        6
+      ],
+      "hint": "Find the step about his home. Then read the next three steps in order.",
+      "explain": "Next, Sam will add three places. Then he will draw the north arrow. Last, he will make a key. The steps after his home come in this order.",
+      "inference": 0,
+      "tags": [
+        "build-steps",
+        "order-words"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i84",
+      "skill": "F2",
+      "passage": "f2-p37",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the steps for moving the plant in order.",
+      "steps": [
+        "Water the plant the day before",
+        "Put fresh soil in the new pot",
+        "Slide the plant out of the old pot",
+        "Loosen the roots",
+        "Fill in soil around the plant",
+        "Water until it drips out the bottom"
+      ],
+      "evidence": [
+        3,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "hint": "Start with the step that happens the day before. Then follow the steps from top to bottom.",
+      "explain": "Water the day before, put soil in the new pot, slide the plant out, loosen the roots, fill in soil, then water until it drips. The steps come in this order.",
+      "inference": 0,
+      "tags": [
+        "six-steps",
+        "prose-directions"
+      ]
+    },
+    {
+      "id": "f2-i85",
+      "skill": "F2",
+      "passage": "f2-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya's old pot is 6 inches wide. Which new pot should she pick?",
+      "options": [
+        "A 6-inch pot with holes in the bottom",
+        "A 12-inch pot with no holes",
+        "An 8-inch pot with no holes",
+        "An 8-inch pot with holes in the bottom"
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Use two steps. One tells how much wider the new pot should be. One tells what the bottom needs.",
+      "explain": "She picks the 8-inch pot with holes. The new pot should be about two inches wider than the old one, and it must have holes so extra water can drain out.",
+      "inference": 1,
+      "tags": [
+        "calculate",
+        "combine-sentences",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i86",
+      "skill": "F2",
+      "passage": "f2-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya is watering the plant in its new pot. When should she stop?",
+      "options": [
+        "When the top of the soil looks dark",
+        "After one small cup",
+        "When the leaves look wet",
+        "When water drips out of the bottom"
+      ],
+      "answer": 3,
+      "evidence": [
+        10
+      ],
+      "hint": "Find the Last step. Read the word until and what comes after it.",
+      "explain": "She stops when water drips out of the bottom. The Last step says to water it until water drips out of the bottom.",
+      "inference": 0,
+      "tags": [
+        "until-step"
+      ]
+    },
+    {
+      "id": "f2-i87",
+      "skill": "F2",
+      "passage": "f2-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben has written the number and the date on the chart. What should he do next?",
+      "options": [
+        "Read the number again at noon",
+        "Move the gauge under a tree",
+        "Empty the gauge",
+        "Add water to the gauge"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the step about the chart. Then read the step after it.",
+      "explain": "He empties the gauge. Step 6 comes right after writing on the chart, so the gauge is ready for the next day.",
+      "inference": 0,
+      "tags": [
+        "next-step"
+      ]
+    },
+    {
+      "id": "f2-i88",
+      "skill": "F2",
+      "passage": "f2-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where should Ana set up the rain gauge?",
+      "options": [
+        "On a post under a big tree",
+        "Under the edge of the roof",
+        "On a post in an open spot",
+        "Inside the garage"
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the step that tells where to set the gauge. Check each choice against all of it.",
+      "explain": "She sets it on a post in an open spot. Step 1 says to set the gauge in an open spot, far from trees and roofs.",
+      "inference": 0,
+      "tags": [
+        "detail-in-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i89",
+      "skill": "F2",
+      "passage": "f2-p38",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the step that tells Ben how to hold his head when he reads the gauge.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Look for a step that talks about your eyes.",
+      "explain": "Step 3 says, \"Bend down so your eyes are level with the top of the water.\"",
+      "inference": 0,
+      "tags": [
+        "find-step"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i90",
+      "skill": "F2",
+      "passage": "f2-p39",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the streak test steps in order.",
+      "steps": [
+        "Set the tile rough side up",
+        "Hold the tile still",
+        "Drag the mineral across the tile",
+        "Look at the color of the line",
+        "Match the color to the chart"
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "hint": "Look for the order words First, Then and Last. Read the steps between them too.",
+      "explain": "Set the tile rough side up, hold it still, drag the mineral across, look at the line's color, then match it to the chart. Mr. Varga gives the steps in this order.",
+      "inference": 0,
+      "tags": [
+        "five-steps",
+        "prose-directions"
+      ]
+    },
+    {
+      "id": "f2-i91",
+      "skill": "F2",
+      "passage": "f2-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya's rock looks gold. How should she find out its name?",
+      "options": [
+        "Match the color of its streak to the chart",
+        "Match the color of the rock to the chart",
+        "Pick the shiniest name on the chart",
+        "Weigh the rock in her hand"
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Read the Last step. Then read the sentence after it to see why the rock's own color is not enough.",
+      "explain": "She matches the color of the streak to the chart. The Last step says to match the line's color, and the next sentence says the streak can look very different from the rock.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i92",
+      "skill": "F2",
+      "passage": "f2-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya's rock leaves a greenish-black line. What mineral is it?",
+      "options": [
+        "Gold",
+        "Pyrite",
+        "Quartz"
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the sentence about the chart. Match the color of Maya's line.",
+      "explain": "It is pyrite. The chart says a greenish-black streak means pyrite, not gold.",
+      "inference": 0,
+      "tags": [
+        "detail-in-step",
+        "chart"
+      ]
+    },
+    {
+      "id": "f2-i93",
+      "skill": "F2",
+      "passage": "f2-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam sees a moving dot that blinks red. What should he do?",
+      "options": [
+        "Tell everyone he found the space station",
+        "Go back inside, because he missed it",
+        "Keep looking for a bright dot that does not blink",
+        "Turn to face north"
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the sentence that starts with If. Decide what the blinking dot is. Then remember what you are looking for.",
+      "explain": "He keeps looking for a bright dot that does not blink. A dot that blinks red is an airplane, and the space station does not blink.",
+      "inference": 1,
+      "tags": [
+        "if-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i94",
+      "skill": "F2",
+      "passage": "f2-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The app says the space station will pass at 7:42 PM. When should Sam go outside?",
+      "options": [
+        "7:42 PM",
+        "7:47 PM",
+        "7:37 PM",
+        "7:32 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the step that says how early to go outside. Count back from 7:42 PM.",
+      "explain": "He goes outside at 7:37 PM. The steps say to go out five minutes early, and five minutes before 7:42 PM is 7:37 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f2-i95",
+      "skill": "F2",
+      "passage": "f2-p40",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the steps for spotting the space station in order.",
+      "steps": [
+        "Check the app for the date and time",
+        "Go outside five minutes early",
+        "Face the direction the app gives",
+        "Look for a bright dot that moves smoothly"
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "Use the order words First and Next. Steps without order words come in the order they are written.",
+      "explain": "Check the app, go outside five minutes early, face the direction the app gives, then look for a bright, smooth-moving dot. Dr. Hale gives the steps in this order.",
+      "inference": 0,
+      "tags": [
+        "four-steps",
+        "prose-directions"
+      ]
+    },
+    {
+      "id": "f2-i96",
+      "skill": "F2",
+      "passage": "f2-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Grandma Rose wants the pizza to go in the oven at 6:00 PM on Saturday. When should Sam take the dough out of the refrigerator?",
+      "options": [
+        "5:30 PM",
+        "6:00 PM",
+        "5:00 PM",
+        "4:00 PM"
+      ],
+      "answer": 3,
+      "evidence": [
+        8
+      ],
+      "hint": "Find the step about taking the dough out. Count back that many hours from 6:00 PM.",
+      "explain": "He takes it out at 4:00 PM. The third paragraph says to take the dough out two hours before you plan to bake, and two hours before 6:00 PM is 4:00 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "multi-day",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f2-i97",
+      "skill": "F2",
+      "passage": "f2-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam has already added 3 spoonfuls of flour, but the dough still sticks to his hands a little. What should he do?",
+      "options": [
+        "Keep kneading without adding more flour",
+        "Add one more spoonful of flour",
+        "Put the dough in the refrigerator right away",
+        "Pour in more warm water"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        6
+      ],
+      "hint": "Read the If sentence all the way to the end. Then check how many spoonfuls Sam has already used.",
+      "explain": "He keeps kneading without adding more flour. The second paragraph says to add no more than 3 spoonfuls in all, because too much flour makes the crust dry and tough.",
+      "inference": 1,
+      "tags": [
+        "if-step",
+        "limit",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i98",
+      "skill": "F2",
+      "passage": "f2-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "On Saturday, Sam presses the dough, and it shrinks back into a small circle. What should he do?",
+      "options": [
+        "Put it back in the refrigerator overnight",
+        "Knead it for 8 more minutes",
+        "Let it rest for 10 minutes, then try again",
+        "Add more flour and press harder"
+      ],
+      "answer": 2,
+      "evidence": [
+        11
+      ],
+      "hint": "Find the sentence about pressing the dough into a circle. Read what to do if it shrinks back.",
+      "explain": "He lets it rest for 10 minutes, then tries again. The third paragraph says to do this if the dough shrinks back.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": "f2-i99",
+      "skill": "F2",
+      "passage": "f2-p41",
+      "format": "sort",
+      "level": 4,
+      "prompt": "When does Sam do each step? Put each step in the right box.",
+      "bins": [
+        "Friday evening",
+        "Saturday"
+      ],
+      "cards": [
+        {
+          "text": "Stir the flour, salt and yeast",
+          "bin": 0,
+          "emoji": "🥣"
+        },
+        {
+          "text": "Heat the oven to 475°F",
+          "bin": 1,
+          "emoji": "🔥"
+        },
+        {
+          "text": "Knead the dough for 8 minutes",
+          "bin": 0,
+          "emoji": "👐"
+        },
+        {
+          "text": "Press the dough into a circle",
+          "bin": 1,
+          "emoji": "⭕"
+        },
+        {
+          "text": "Put the dough in the refrigerator",
+          "bin": 0,
+          "emoji": "🧊"
+        },
+        {
+          "text": "Add the sauce and cheese",
+          "bin": 1,
+          "emoji": "🧀"
+        }
+      ],
+      "evidence": [
+        2,
+        4,
+        7,
+        10,
+        11,
+        12
+      ],
+      "hint": "The second paragraph starts with Friday evening. The third paragraph starts with Saturday. Find each step and check its paragraph.",
+      "explain": "Stirring, kneading and putting the dough in the refrigerator happen on Friday evening. Heating the oven, pressing the circle and adding the sauce and cheese happen on Saturday.",
+      "inference": 0,
+      "tags": [
+        "sort",
+        "multi-day"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i100",
+      "skill": "F2",
+      "passage": "f2-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo's egg in the SALT glass still sinks after the first 6 spoonfuls. What should he do?",
+      "options": [
+        "Leave the egg in and stir in 2 more spoonfuls",
+        "Record that salt water does not work, and stop",
+        "Stir 2 spoonfuls of salt into the FRESH glass",
+        "Lift the egg out, stir in 2 more spoonfuls, and test again"
+      ],
+      "answer": 3,
+      "evidence": [
+        9
+      ],
+      "hint": "Find the sentence that starts with If the egg. Read every part of what it says to do.",
+      "explain": "He lifts the egg out, stirs in 2 more spoonfuls, and tests again. The third paragraph says to do this if the egg in the SALT glass still sinks.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i101",
+      "skill": "F2",
+      "passage": "f2-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya stirs for a long time, but salt grains stay on the bottom of her glass. Her egg still sinks. What should she do?",
+      "options": [
+        "Add 2 more spoonfuls and stir faster",
+        "Pour out half the water and add more salt",
+        "Record what happened and stop adding salt",
+        "Move her egg to the FRESH glass"
+      ],
+      "answer": 2,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Two sentences in the last paragraph start with If. Find the one that matches the grains Maya sees.",
+      "explain": "She records what happened and stops adding salt. The last paragraph says that if grains stay on the bottom, the water cannot hold any more salt, so record it and stop.",
+      "inference": 1,
+      "tags": [
+        "if-step",
+        "troubleshooting",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f2-i102",
+      "skill": "F2",
+      "passage": "f2-p42",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the experiment steps in order.",
+      "steps": [
+        "Fill and label the two glasses",
+        "Stir salt into the SALT glass",
+        "Lower an egg into each glass",
+        "Write down what each egg does",
+        "Pour the salt water down the sink"
+      ],
+      "evidence": [
+        5,
+        6,
+        7,
+        8,
+        13
+      ],
+      "hint": "The steps are in the second and third paragraphs. Read them from top to bottom.",
+      "explain": "Fill and label the glasses, stir in the salt, lower the eggs, write down what they do, then pour the salt water away. The steps are written in this order.",
+      "inference": 0,
+      "tags": [
+        "five-steps",
+        "prose-directions"
+      ]
+    },
+    {
+      "id": "f2-i103",
+      "skill": "F2",
+      "passage": "f2-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya's rover drives in a curve. She pulls a string off the left wheel, but it still curves. What should she do next?",
+      "options": [
+        "Open the Settings app and press Balance Wheels",
+        "Charge the battery until the light turns green",
+        "Open the rover's body and check the motor",
+        "Wipe the bump sensor with a dry cloth"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the row for a rover that drives in a curve. Priya already tried the first fix, so look in the last column.",
+      "explain": "She opens the Settings app and presses Balance Wheels. The curve row says to do this if pulling out hair or string does not fix it.",
+      "inference": 1,
+      "tags": [
+        "troubleshooting",
+        "table",
+        "if-step"
+      ]
+    },
+    {
+      "id": "f2-i104",
+      "skill": "F2",
+      "passage": "f2-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The tablet cannot find the rover. Priya turned the rover off and on, and she is standing 40 feet away. What should she try next?",
+      "options": [
+        "Turn the rover off and on again",
+        "Charge the battery",
+        "Move the tablet to less than 30 feet from the rover",
+        "Press Balance Wheels"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the row about the tablet. Compare Priya's distance with the number in the last column.",
+      "explain": "She moves the tablet closer, to less than 30 feet away. The tablet row says to do this if turning the rover off and on does not work, and 40 feet is too far.",
+      "inference": 1,
+      "tags": [
+        "troubleshooting",
+        "table",
+        "distance"
+      ]
+    },
+    {
+      "id": "f2-i105",
+      "skill": "F2",
+      "passage": "f2-p43",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Priya's rover keeps stopping a few seconds after it starts. Tap the row that tells her what to do.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Read the Problem column. Find the problem that matches what Priya's rover does.",
+      "explain": "The third row is for a rover that stops after a few seconds. It says to move the rover away from walls first, then wipe the bump sensor.",
+      "inference": 0,
+      "tags": [
+        "find-row",
+        "troubleshooting"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i106",
+      "skill": "F2",
+      "passage": "f2-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam's bus usually comes at 7:45 AM. The message says Two-Hour Delay. When will his bus come?",
+      "options": [
+        "7:45 AM",
+        "8:45 AM",
+        "9:45 AM",
+        "12:30 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the Two-Hour Delay row. Add the delay to Sam's usual bus time.",
+      "explain": "His bus comes at 9:45 AM. The Two-Hour Delay row says buses start two hours later than normal, and two hours after 7:45 AM is 9:45 AM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "if-step"
+      ]
+    },
+    {
+      "id": "f2-i107",
+      "skill": "F2",
+      "passage": "f2-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya's robotics club usually meets at 7:15 AM, before school. The message says Two-Hour Delay. What should she do?",
+      "options": [
+        "Go to robotics club at 9:15 AM",
+        "Stay home, because school is closed",
+        "Go to robotics club at 7:15 AM as usual",
+        "Skip robotics club, because morning clubs are canceled"
+      ],
+      "answer": 3,
+      "evidence": [
+        2
+      ],
+      "hint": "Read the whole Two-Hour Delay row. Check what it says about clubs.",
+      "explain": "She skips robotics club that morning. The Two-Hour Delay row says morning clubs are canceled.",
+      "inference": 1,
+      "tags": [
+        "if-step",
+        "close-distractor",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f2-i108",
+      "skill": "F2",
+      "passage": "f2-p44",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Which message goes with each card? Put each card in the right box.",
+      "bins": [
+        "Open",
+        "Two-Hour Delay",
+        "Closed"
+      ],
+      "cards": [
+        {
+          "text": "Bring dry shoes to change into",
+          "bin": 0,
+          "emoji": "👟"
+        },
+        {
+          "text": "Morning clubs are canceled",
+          "bin": 1,
+          "emoji": "⏰"
+        },
+        {
+          "text": "Stay home all day",
+          "bin": 2,
+          "emoji": "🏠"
+        },
+        {
+          "text": "Sports practice after school is canceled",
+          "bin": 2,
+          "emoji": "⚽"
+        },
+        {
+          "text": "Buses come two hours later",
+          "bin": 1,
+          "emoji": "🚌"
+        },
+        {
+          "text": "School starts at the normal time",
+          "bin": 0,
+          "emoji": "🏫"
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Find the row that starts with each word: Open, Two-Hour Delay and Closed. Match each card to its row.",
+      "explain": "Dry shoes and the normal start time go with Open. Canceled morning clubs and later buses go with Two-Hour Delay. Staying home and canceled practice go with Closed.",
+      "inference": 0,
+      "tags": [
+        "sort",
+        "conditional"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i109",
+      "skill": "F2",
+      "passage": "f2-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The footbridge is 16 meters from the flat rock. How many squares should Ana's group draw?",
+      "options": [
+        "8 squares",
+        "16 squares",
+        "32 squares",
+        "4 squares"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        8,
+        9
+      ],
+      "hint": "Find the sentence that says what to do with the distance in meters. Use the example to check your math.",
+      "explain": "They draw 8 squares. The second paragraph says to divide the distance in meters by 2, and 16 divided by 2 is 8.",
+      "inference": 1,
+      "tags": [
+        "calculate",
+        "use-example"
+      ]
+    },
+    {
+      "id": "f2-i110",
+      "skill": "F2",
+      "passage": "f2-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben wants to add a fallen log that lies in the middle of the creek. What should he do?",
+      "options": [
+        "Wade into the creek with the tape",
+        "Leave the log off the map",
+        "Estimate the distance from the bank and write about next to it",
+        "Measure from the flat rock to the log across the water"
+      ],
+      "answer": 2,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Find the sentence that starts with If a landmark. Then read the sentence that starts with Instead.",
+      "explain": "He estimates the distance from the bank and writes about next to it. The last paragraph says not to wade in for a landmark in the water, and to do this instead.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "safety-step"
+      ]
+    },
+    {
+      "id": "f2-i111",
+      "skill": "F2",
+      "passage": "f2-p45",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the mapping steps in order.",
+      "steps": [
+        "Mark the starting point with a dot",
+        "Find north with the compass",
+        "Draw an arrow and label it N",
+        "Measure to the next landmark",
+        "Add a key"
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        7,
+        13
+      ],
+      "hint": "Use the order words First, Next and Then. The key is added when you finish.",
+      "explain": "Mark the start, find north, draw the N arrow, measure to the next landmark, then add a key. The words First, Next, Then and When you finish show this order.",
+      "inference": 0,
+      "tags": [
+        "five-steps",
+        "order-words",
+        "prose-directions"
+      ]
+    },
+    {
+      "id": "f2-i112",
+      "skill": "F2",
+      "passage": "f2-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo pours his plaster at 2:00 PM. At 2:30 PM, his fingernail leaves a dent. When should he test it again?",
+      "options": [
+        "2:35 PM",
+        "3:00 PM",
+        "2:45 PM",
+        "The next day"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Find the sentence that starts with If your nail. Add that wait to 2:30 PM.",
+      "explain": "He tests again at 2:45 PM. The text says that if your nail leaves a dent, wait 15 more minutes, and 15 minutes after 2:30 PM is 2:45 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "if-step",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f2-i113",
+      "skill": "F2",
+      "passage": "f2-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya's plaster feels warm while it hardens. What should she do?",
+      "options": [
+        "Pour cool water over it",
+        "Lift it out of the mold right away",
+        "Stir it again",
+        "Leave it alone, because the warmth is normal"
+      ],
+      "answer": 3,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the sentence about the plaster feeling warm. Then read the sentence after it.",
+      "explain": "She leaves it alone. The text says the plaster will feel warm as it hardens, which is normal, and the next step is to leave it alone for 30 minutes.",
+      "inference": 0,
+      "tags": [
+        "key-detail",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f2-i114",
+      "skill": "F2",
+      "passage": "f2-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam lifts out his cast on Saturday afternoon. When can he paint it?",
+      "options": [
+        "Right away, while it is still damp",
+        "After 15 more minutes",
+        "On Sunday, after it dries overnight",
+        "After 30 more minutes"
+      ],
+      "answer": 2,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Find the sentence about paint. Read how long the cast must dry first.",
+      "explain": "He can paint it on Sunday. The text says to let the cast dry overnight before you paint it, so he paints it the next day.",
+      "inference": 1,
+      "tags": [
+        "multi-day",
+        "time-math"
+      ]
+    },
+    {
+      "id": "f2-i115",
+      "skill": "F2",
+      "passage": "f2-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo wins the first two races of his match. What happens next?",
+      "options": [
+        "They race a third time to finish the match",
+        "Leo moves to the free-play screen",
+        "They race the second track again",
+        "Leo wins the match and moves on, and the third race is skipped"
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the rule about winning two races. Read what it says about the third race.",
+      "explain": "Leo wins the match and moves on, and the third race is skipped. The second paragraph says the first player to win two races wins the match.",
+      "inference": 0,
+      "tags": [
+        "skip-step",
+        "if-step"
+      ]
+    },
+    {
+      "id": "f2-i116",
+      "skill": "F2",
+      "passage": "f2-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Match 1 ends after 10 minutes, but Match 2 is still going. When does Match 3 start?",
+      "options": [
+        "Right away, on the screen Match 1 used",
+        "Ten minutes after Match 1 ends",
+        "When Match 2 ends and both match screens are free",
+        "After the players from Match 1 use the free-play screen"
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the rule about Matches 3 and 4. Check what must be free before they start.",
+      "explain": "Match 3 starts when Match 2 ends. The rules say Matches 3 and 4 start together when both match screens are free.",
+      "inference": 1,
+      "tags": [
+        "parallel-steps",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i117",
+      "skill": "F2",
+      "passage": "f2-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya's controller stops working in the middle of a race. What should she do first?",
+      "options": [
+        "Raise her hand",
+        "Get a spare controller from the shelf",
+        "Pause the game",
+        "Move to the free-play screen"
+      ],
+      "answer": 2,
+      "evidence": [
+        9
+      ],
+      "hint": "Find the rule about a controller. Look at the order of the actions inside it.",
+      "explain": "She pauses the game first. The rule says to pause the game, then raise your hand, then wait for Ana or Ben to bring a spare.",
+      "inference": 0,
+      "tags": [
+        "order-in-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i118",
+      "skill": "F2",
+      "passage": "f2-p48",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Four days after Sam hangs the feeder, no birds have come. Tap the sentence that tells him what to do.",
+      "evidence": [
+        8
+      ],
+      "hint": "Look for a sentence about how long birds take to find a new feeder.",
+      "explain": "The sentence is \"Birds may take a week or more to find a new feeder, so leave it in the same place even if none come right away.\" It is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "wait-step"
+      ],
+      "unit": "sentence",
+      "answer": [
+        8
+      ]
+    },
+    {
+      "id": "f2-i119",
+      "skill": "F2",
+      "passage": "f2-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "After a rainy night, the seeds in the tray are wet and stuck together. What should Sam do?",
+      "options": [
+        "Add more dry seeds on top",
+        "Leave the seeds to dry in the sun",
+        "Throw the seeds away and wipe the tray dry",
+        "Scrub the feeder and hang it back up while it is wet"
+      ],
+      "answer": 2,
+      "evidence": [
+        10
+      ],
+      "hint": "Find the sentence that starts with If the seeds. Match it to what Sam sees.",
+      "explain": "He throws the seeds away and wipes the tray dry. The last paragraph says to do this if seeds get wet and clump, because wet seeds can grow mold that makes birds sick.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "troubleshooting",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i120",
+      "skill": "F2",
+      "passage": "f2-p48",
+      "format": "sort",
+      "level": 4,
+      "prompt": "How often does Sam do each job? Put each job in the right box.",
+      "bins": [
+        "Every two days",
+        "Every two weeks",
+        "Only if there is a problem"
+      ],
+      "cards": [
+        {
+          "text": "Check how many seeds are left",
+          "bin": 0,
+          "emoji": "👀"
+        },
+        {
+          "text": "Scrub the feeder with soapy water",
+          "bin": 1,
+          "emoji": "🧽"
+        },
+        {
+          "text": "Throw away wet, clumped seeds",
+          "bin": 2,
+          "emoji": "💧"
+        },
+        {
+          "text": "Add seeds when the tray is less than half full",
+          "bin": 0,
+          "emoji": "🌻"
+        },
+        {
+          "text": "Ask an adult to add a squirrel guard",
+          "bin": 2,
+          "emoji": "🐿️"
+        },
+        {
+          "text": "Let the feeder dry completely before refilling",
+          "bin": 1,
+          "emoji": "☀️"
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "hint": "Find the sentences that name a time, such as every two days. Sentences that start with If are for problems.",
+      "explain": "Checking the seeds and adding more happen every two days. Scrubbing and drying the feeder happen every two weeks. Throwing away wet seeds and adding a squirrel guard happen only if there is a problem.",
+      "inference": 0,
+      "tags": [
+        "sort",
+        "multi-day",
+        "if-step"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i121",
+      "skill": "F2",
+      "passage": "f2-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Where does the pedal for the hi-hat cymbals go?",
+      "options": [
+        "Under Leo's left foot",
+        "Under Leo's right foot",
+        "Between Leo's knees",
+        "Above the bass drum"
+      ],
+      "answer": 0,
+      "evidence": [
+        7
+      ],
+      "hint": "Find the sentence about the hi-hat cymbals. Read it to the end.",
+      "explain": "It goes under Leo's left foot. The second paragraph says the hi-hat cymbals go on his left side, with their pedal under his left foot. The bass drum pedal is the one for his right foot.",
+      "inference": 0,
+      "tags": [
+        "detail-in-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i122",
+      "skill": "F2",
+      "passage": "f2-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How many music stands do Sam and Maya need to set up?",
+      "options": [
+        "20",
+        "5",
+        "10",
+        "4"
+      ],
+      "answer": 2,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Find how many chairs there are. Then read how many chairs share one stand.",
+      "explain": "They need 10 stands. There are twenty chairs, and there is one stand for every two chairs.",
+      "inference": 1,
+      "tags": [
+        "calculate"
+      ]
+    },
+    {
+      "id": "f2-i123",
+      "skill": "F2",
+      "passage": "f2-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which jobs happen at the same time?",
+      "options": [
+        "Leo sets up the drums, and then he helps with the chairs",
+        "The band tunes while Leo sets up the drums",
+        "Sam and Maya set up the drums while Leo sets up the chairs",
+        "Leo sets up the drums while Sam and Maya set up the chairs and stands"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        2,
+        10
+      ],
+      "hint": "Look for the words at the same time and Meanwhile. Check who does each job.",
+      "explain": "Leo sets up the drums while Sam and Maya set up the chairs and stands. The first paragraph says both jobs can happen at the same time, and the last paragraph starts with Meanwhile.",
+      "inference": 0,
+      "tags": [
+        "parallel-steps"
+      ]
+    },
+    {
+      "id": "f2-i124",
+      "skill": "F2",
+      "passage": "f2-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the latest time Ana can check in at the blue tent?",
+      "options": [
+        "8:15 AM",
+        "8:00 AM",
+        "8:45 AM",
+        "9:00 AM"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the sentence about checking in. Count back that many minutes from the first game time.",
+      "explain": "The latest time is 8:15 AM. Players check in 45 minutes before their first game, and the first game starts at 9:00 AM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "combine-sentences"
+      ]
+    },
+    {
+      "id": "f2-i125",
+      "skill": "F2",
+      "passage": "f2-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Thunder rumbles at 10:20 AM, and the team walks to the gym. The last thunder is heard at 10:40 AM. What is the earliest time the games can start again?",
+      "options": [
+        "10:50 AM",
+        "10:40 AM",
+        "11:00 AM",
+        "11:10 AM"
+      ],
+      "answer": 3,
+      "evidence": [
+        10
+      ],
+      "hint": "Find the rule about starting games again. Count from the last thunder, not the first.",
+      "explain": "The earliest time is 11:10 AM. Games can start again only after 30 minutes pass with no thunder, and 30 minutes after 10:40 AM is 11:10 AM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "if-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i126",
+      "skill": "F2",
+      "passage": "f2-p50",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put Ana's steps for the morning in order.",
+      "steps": [
+        "Check in at the blue tent",
+        "Jog two laps around the field",
+        "Stretch for five minutes",
+        "Practice passing in pairs",
+        "Play the first game on Field 2"
+      ],
+      "evidence": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "hint": "Check-in comes before the warm-up. Inside the warm-up, use the words First and then.",
+      "explain": "Ana checks in, jogs two laps, stretches, practices passing, then plays the 9:00 AM game on Field 2.",
+      "inference": 0,
+      "tags": [
+        "five-steps",
+        "order-words"
+      ]
+    },
+    {
+      "id": "f2-i127",
+      "skill": "F2",
+      "passage": "f2-p50",
+      "format": "scene",
+      "level": 4,
+      "prompt": "Lightning flashes during the second game. Tap where Ben should go.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Blue tent",
+          "emoji": "⛺"
+        },
+        {
+          "label": "School gym",
+          "emoji": "🏫"
+        },
+        {
+          "label": "Bench under a tall tree",
+          "emoji": "🌳"
+        },
+        {
+          "label": "Goal on Field 4",
+          "emoji": "🥅"
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the sentence that starts with If anyone hears thunder. Then read the next sentence for the place.",
+      "explain": "Ben goes to the school gym. The plan says that if there is lightning, the team walks calmly to the school gym next to the fields and waits inside.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "safety-step"
+      ]
+    },
+    {
+      "id": "f2-i128",
+      "skill": "F2",
+      "passage": "f2-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya does Day 1 on Monday. On which day does she do the last feeding on the schedule?",
+      "options": [
+        "Friday",
+        "Sunday",
+        "Saturday",
+        "Thursday"
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        8
+      ],
+      "hint": "Day 1 is Monday. The feedings happen on the next five days. Count five days after Monday.",
+      "explain": "Her last feeding is on Saturday. The schedule says to feed the starter once a day for the next five days after Day 1, which are Tuesday through Saturday.",
+      "inference": 1,
+      "tags": [
+        "multi-day",
+        "calculate"
+      ]
+    },
+    {
+      "id": "f2-i129",
+      "skill": "F2",
+      "passage": "f2-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "At noon, Priya sees gray liquid on top of her starter. She usually feeds it at 6 PM. What should she do?",
+      "options": [
+        "Pour off the liquid and feed the starter right away",
+        "Wait until 6 PM, then pour off the liquid",
+        "Throw the starter away and start again",
+        "Stir the liquid back into the starter"
+      ],
+      "answer": 0,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Find the sentences about gray liquid. Read what they say about feeding time.",
+      "explain": "She pours off the liquid and feeds the starter right away. The last paragraph says gray liquid means the starter is hungry, so feed it right away, even if it is not feeding time yet.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i130",
+      "skill": "F2",
+      "passage": "f2-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On Day 4, Maya sees small fuzzy spots on her starter. What should she do?",
+      "options": [
+        "Scoop off the spots and feed the starter",
+        "Pour off half and feed it as usual",
+        "Throw the whole starter away and begin again in a clean jar",
+        "Move the jar out of the sunlight"
+      ],
+      "answer": 2,
+      "evidence": [
+        14,
+        15
+      ],
+      "hint": "Find the sentence that names fuzzy spots. Read the whole sentence.",
+      "explain": "She throws the whole starter away and begins again in a clean jar. The last paragraph says fuzzy spots mean harmful mold is growing.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "troubleshooting",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "f2-i131",
+      "skill": "F2",
+      "passage": "f2-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya feeds her starter at 8:00 AM. The rubber band is 2 inches up the jar. Which result means the starter is ready?",
+      "options": [
+        "It is 3 inches high at 1:00 PM",
+        "It is 2 inches high at 2:00 PM",
+        "It is 4 inches high at 5:00 PM",
+        "It is 4 inches high at 1:00 PM"
+      ],
+      "answer": 3,
+      "evidence": [
+        11,
+        16
+      ],
+      "hint": "Find the sentence that says when the starter is ready. Work out twice the height. Then add 6 hours to 8:00 AM.",
+      "explain": "It is ready if it is 4 inches high at 1:00 PM. The starter must double in height within 6 hours of a feeding. Twice 2 inches is 4 inches, and 1:00 PM is within 6 hours of 8:00 AM. At 5:00 PM, 9 hours have passed.",
+      "inference": 1,
+      "tags": [
+        "calculate",
+        "time-math",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i132",
+      "skill": "F2",
+      "passage": "f2-p52",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the gold panning steps in order.",
+      "steps": [
+        "Fill the pan with gravel",
+        "Break up the mud under the water",
+        "Shake the pan hard from side to side",
+        "Tilt and swirl to wash off light gravel",
+        "Spread out the dark sand and look for gold"
+      ],
+      "evidence": [
+        3,
+        4,
+        6,
+        9,
+        12
+      ],
+      "hint": "Use the order words First, Next, Now and Finally. Each one starts a new part of the job.",
+      "explain": "Fill the pan, break up the mud, shake it, tilt and swirl, then spread out the dark sand to look for gold. The order words First, Next, Now and Finally show this order.",
+      "inference": 0,
+      "tags": [
+        "five-steps",
+        "order-words",
+        "prose-directions"
+      ]
+    },
+    {
+      "id": "f2-i133",
+      "skill": "F2",
+      "passage": "f2-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam sees shiny gold-colored flakes wash over the edge of his pan with the water. What does this most likely mean?",
+      "options": [
+        "The flakes are probably mica, not gold",
+        "He tilted too steeply and lost his gold",
+        "He needs to shake the pan for thirty more seconds",
+        "The flakes are gold, because they are shiny"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        14
+      ],
+      "hint": "Think about how heavy gold is. Then find the sentence about flakes that wash away easily.",
+      "explain": "The flakes are probably mica. Gold is heavy and sinks, and the last paragraph says gold-colored flakes that float or wash away easily are probably mica.",
+      "inference": 1,
+      "tags": [
+        "close-distractor",
+        "combine-sentences"
+      ]
+    },
+    {
+      "id": "f2-i134",
+      "skill": "F2",
+      "passage": "f2-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya has shaken and swirled her pan many times. Only about a spoonful of dark, heavy sand is left. What should she do next?",
+      "options": [
+        "Shake the pan hard for thirty more seconds",
+        "Tilt the pan steeply to wash out the sand",
+        "Fill the pan with gravel again",
+        "Add a little clean water and swirl it slowly"
+      ],
+      "answer": 3,
+      "evidence": [
+        10,
+        12
+      ],
+      "hint": "Find the sentence that mentions a spoonful of dark sand. Then read the step that comes after it.",
+      "explain": "She adds a little clean water and swirls it slowly to spread out the sand. That is the Finally step, which comes once only a spoonful of dark sand remains.",
+      "inference": 0,
+      "tags": [
+        "next-step",
+        "until-step"
+      ]
+    },
+    {
+      "id": "f2-i135",
+      "skill": "F2",
+      "passage": "f2-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "It is dark, and Priya wants to find Saturn. Which eyepiece should she use first?",
+      "options": [
+        "The 10 mm eyepiece, because it makes Saturn look larger",
+        "The 10 mm eyepiece, because a smaller number is easier to use",
+        "The 25 mm eyepiece, because it shows a wider part of the sky",
+        "Either eyepiece, because they show the same view"
+      ],
+      "answer": 2,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Find the sentence that says which eyepiece to start with. Then read the next sentence for the reason.",
+      "explain": "She starts with the 25 mm eyepiece. The third paragraph says to start with the larger number, because it shows a wider part of the sky and makes finding an object easier.",
+      "inference": 1,
+      "tags": [
+        "close-distractor",
+        "find-reason"
+      ]
+    },
+    {
+      "id": "f2-i136",
+      "skill": "F2",
+      "passage": "f2-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam and Priya reach the field at 4 PM, while it is still light. They have attached the telescope. What should they do next?",
+      "options": [
+        "Aim at a distant treetop and line up the finder scope",
+        "Put in the 10 mm eyepiece and look for Saturn",
+        "Point the telescope at the Sun to test it",
+        "Put the caps on both ends"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "hint": "Find the step that comes right after attaching the telescope. Check what it says about daylight.",
+      "explain": "They aim at a distant treetop and line up the finder scope. The second paragraph says to do this while it is still light, because it is much easier than in the dark.",
+      "inference": 0,
+      "tags": [
+        "next-step",
+        "safety-rule"
+      ]
+    },
+    {
+      "id": "f2-i137",
+      "skill": "F2",
+      "passage": "f2-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Saturn is near the edge of Priya's view and moving out of it. What should she do?",
+      "options": [
+        "Turn the focus knob until Saturn is sharp",
+        "Switch to the 10 mm eyepiece",
+        "Nudge the telescope gently to bring Saturn back to the center",
+        "Wait for Saturn to come back by itself"
+      ],
+      "answer": 2,
+      "evidence": [
+        13,
+        14
+      ],
+      "hint": "Find the paragraph about objects that drift. Read what to do when an object reaches the edge.",
+      "explain": "She nudges the telescope gently to bring Saturn back to the center. The last paragraph says objects drift because Earth is turning, and tells you to do this.",
+      "inference": 0,
+      "tags": [
+        "troubleshooting",
+        "if-step"
+      ]
+    },
+    {
+      "id": "f2-i138",
+      "skill": "F2",
+      "passage": "f2-p53",
+      "format": "sort",
+      "level": 5,
+      "prompt": "When do you do each step? Put each step in the right box.",
+      "bins": [
+        "While it is light",
+        "At night",
+        "When you finish"
+      ],
+      "cards": [
+        {
+          "text": "Line up the finder scope",
+          "bin": 0,
+          "emoji": "🎯"
+        },
+        {
+          "text": "Start with the 25 mm eyepiece",
+          "bin": 1,
+          "emoji": "🔭"
+        },
+        {
+          "text": "Put the caps on both ends",
+          "bin": 2,
+          "emoji": "🧢"
+        },
+        {
+          "text": "Switch to the 10 mm eyepiece",
+          "bin": 1,
+          "emoji": "🔍"
+        },
+        {
+          "text": "Aim at a distant treetop",
+          "bin": 0,
+          "emoji": "🌳"
+        },
+        {
+          "text": "Fold up the tripod",
+          "bin": 2,
+          "emoji": "📐"
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        9,
+        11,
+        15
+      ],
+      "hint": "Look for the time words in each paragraph: still light, At night and When you finish.",
+      "explain": "Lining up the finder and aiming at a treetop happen while it is light. Starting with the 25 mm eyepiece and switching to the 10 mm eyepiece happen at night. Putting on the caps and folding the tripod happen when you finish.",
+      "inference": 0,
+      "tags": [
+        "sort",
+        "when-step"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i139",
+      "skill": "F2",
+      "passage": "f2-p54",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the steps for jacketing the fossil in order.",
+      "steps": [
+        "Dig a trench and leave a pedestal",
+        "Cover the bone with damp paper towels",
+        "Lay plaster strips over the towels",
+        "Let the jacket harden",
+        "Dig under it and flip it over",
+        "Plaster the open bottom"
+      ],
+      "evidence": [
+        4,
+        6,
+        8,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hint": "Use the order words First, Next, Then and Finally. The last paragraph has three steps in a row.",
+      "explain": "Dig a trench, cover the bone with damp towels, lay on the plaster strips, let the jacket harden, dig under it and flip it, then plaster the bottom. The order words and the paragraphs show this order.",
+      "inference": 0,
+      "tags": [
+        "six-steps",
+        "order-words",
+        "prose-directions"
+      ]
+    },
+    {
+      "id": "f2-i140",
+      "skill": "F2",
+      "passage": "f2-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Halfway through the jacket, the plaster in the bucket is getting thick. What should the volunteers do?",
+      "options": [
+        "Stir some water into the thick plaster",
+        "Save the thick plaster for the bottom",
+        "Stop and let the jacket harden overnight",
+        "Mix a fresh batch of plaster"
+      ],
+      "answer": 3,
+      "evidence": [
+        11
+      ],
+      "hint": "Find the sentence that starts with If the plaster. Read both choices it names.",
+      "explain": "They mix a fresh batch. The third paragraph says to mix a fresh batch instead of adding water to the old one.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i141",
+      "skill": "F2",
+      "passage": "f2-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "A volunteer runs out of damp paper towels before the whole bone is covered. Why should she wait for more before adding plaster?",
+      "options": [
+        "Without towels, the plaster could stick to the fossil",
+        "Without towels, the plaster will not harden",
+        "The towels make the jacket lighter to carry",
+        "The towels keep the bone warm"
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the sentence that tells what the paper towel layer does.",
+      "explain": "Without towels, the plaster could stick to the fossil. The second paragraph says the towel layer keeps the plaster from sticking, so the jacket can be removed in the lab.",
+      "inference": 1,
+      "tags": [
+        "find-reason",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "f2-i142",
+      "skill": "F2",
+      "passage": "f2-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The air is cool and damp on the afternoon the team finishes the top of the jacket. When should they plan to flip it?",
+      "options": [
+        "After exactly one hour",
+        "Right after the second layer of strips",
+        "The next day, after it hardens overnight",
+        "As soon as the strips are smooth"
+      ],
+      "answer": 2,
+      "evidence": [
+        12,
+        13,
+        14
+      ],
+      "hint": "Find the sentence about letting the jacket harden. Check what it says about cool, damp air.",
+      "explain": "They should plan to flip it the next day. The last paragraph says to let the jacket harden overnight if the air is cool and damp, and to flip it once it is hard.",
+      "inference": 1,
+      "tags": [
+        "if-step",
+        "multi-day",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i143",
+      "skill": "F2",
+      "passage": "f2-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "During a run, the rover's left sensor sees black. What does the rover do?",
+      "options": [
+        "Turns right until the left sensor sees white",
+        "Stops and waits",
+        "Drives straight ahead",
+        "Turns left until the left sensor sees white"
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the rule about the left sensor. Read the whole rule.",
+      "explain": "It turns left until the left sensor sees white again. The second paragraph says this is what the rover does when the left sensor sees black.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i144",
+      "skill": "F2",
+      "passage": "f2-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On test run 1, the rover wobbles on the straight parts and also shoots off the line at a sharp curve. What should Priya change before run 2?",
+      "options": [
+        "The speed to 30 and the turn strength to 4",
+        "Nothing, because the next run is the real one",
+        "Only one number, such as the speed from 40 to 30",
+        "The battery, even though it is above 50 percent"
+      ],
+      "answer": 2,
+      "evidence": [
+        12,
+        13,
+        15
+      ],
+      "hint": "Find the fixes for both problems. Then read the last sentence before you choose.",
+      "explain": "She changes only one number, such as the speed from 40 to 30. The fixes would lower both numbers, but the last sentence says to change only one number between runs, so you can tell which change made the difference.",
+      "inference": 1,
+      "tags": [
+        "combine-sentences",
+        "close-distractor",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f2-i145",
+      "skill": "F2",
+      "passage": "f2-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The rover stops halfway along the course. What should Priya do first?",
+      "options": [
+        "Lower the speed by 10",
+        "Lower the turn strength by 1",
+        "Check that the battery is above 50 percent",
+        "Move the line so it is centered"
+      ],
+      "answer": 2,
+      "evidence": [
+        14
+      ],
+      "hint": "Find the fix for a rover that stops. Look for the word before.",
+      "explain": "She checks that the battery is above 50 percent. The last paragraph says to check the battery before you change any numbers.",
+      "inference": 0,
+      "tags": [
+        "troubleshooting",
+        "order-in-step"
+      ]
+    },
+    {
+      "id": "f2-i146",
+      "skill": "F2",
+      "passage": "f2-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam and his dad each bring a bike. How much do they pay in all?",
+      "options": [
+        "$8",
+        "$16",
+        "$13",
+        "$10"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Work out the cost for one rider with one bike. Then add the cost for the second rider and bike.",
+      "explain": "They pay $16. One rider ticket is $5 and one bike ticket is $3, so each person pays $8, and two people pay $16.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "calculate"
+      ]
+    },
+    {
+      "id": "f2-i147",
+      "skill": "F2",
+      "passage": "f2-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "When can Sam start boarding, and what is the last time he can board?",
+      "options": [
+        "Start at 8:35 AM, and board by 8:50 AM",
+        "Start at 8:15 AM, and board by 9:00 AM",
+        "Start at 8:35 AM, and board by 9:00 AM",
+        "Start at 8:50 AM, and board by 9:00 AM"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        7,
+        8
+      ],
+      "hint": "Find the time the ferry leaves. Count back 25 minutes for the start of boarding and 10 minutes for the end.",
+      "explain": "He can start at 8:35 AM and must board by 8:50 AM. The ferry leaves at 9:00 AM. Riders with bikes start boarding 25 minutes before, and boarding closes 10 minutes before.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "combine-sentences",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i148",
+      "skill": "F2",
+      "passage": "f2-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "When Sam and his dad reach the window, all twelve bike tickets are sold. What can they do?",
+      "options": [
+        "Wait in Lane B in case a spot opens",
+        "Lock their bikes at the racks by the window and ride the ferry without them",
+        "Ride their bikes up the ramp before the cars",
+        "Buy two rider tickets and carry the bikes to the passenger deck"
+      ],
+      "answer": 1,
+      "evidence": [
+        14
+      ],
+      "hint": "Find the sentence that starts with If the bike tickets are sold out.",
+      "explain": "They lock their bikes at the racks beside the ticket window and ride the ferry without them. The last sentence says riders can do this when the bike tickets are sold out.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f2-i149",
+      "skill": "F2",
+      "passage": "f2-p56",
+      "format": "scene",
+      "level": 5,
+      "prompt": "Sam has hooked his front wheel into the rack. Tap what he uses or goes to next, in order.",
+      "scene": "station",
+      "objects": [
+        {
+          "label": "Strap",
+          "emoji": "🔗"
+        },
+        {
+          "label": "Helmet and water bottle",
+          "emoji": "⛑️"
+        },
+        {
+          "label": "Passenger deck",
+          "emoji": "🛳️"
+        },
+        {
+          "label": "Ticket window",
+          "emoji": "🎫"
+        }
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Read the rest of the sentence about the front wheel. Then read the sentence after it.",
+      "explain": "He wraps the strap around the frame, then carries his helmet and water bottle up to the passenger deck. The third paragraph gives these steps in this order.",
+      "inference": 0,
+      "tags": [
+        "multi-step",
+        "answer-order"
+      ]
+    },
+    {
+      "id": "f2-i150",
+      "skill": "F2",
+      "passage": "f2-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On Wednesday, the arrow on the wind vane points north. What should Ben write?",
+      "options": [
+        "South wind",
+        "North wind",
+        "Wind moving north",
+        "No wind today"
+      ],
+      "answer": 1,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Read the example about the arrow that points west. Use the same rule for north.",
+      "explain": "He writes north wind. The arrow points to where the wind comes from, and winds are named for the place they start, just like the west wind example.",
+      "inference": 1,
+      "tags": [
+        "use-example",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i151",
+      "skill": "F2",
+      "passage": "f2-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On Tuesday, one flat gray sheet of cloud covers the whole sky. What should Ana write?",
+      "options": [
+        "Cumulus",
+        "Cirrus",
+        "Stratus",
+        "Clear"
+      ],
+      "answer": 2,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the sentences that describe each kind of cloud. Match the one Ana sees.",
+      "explain": "She writes stratus. The second paragraph says a flat gray sheet that covers the whole sky is stratus.",
+      "inference": 0,
+      "tags": [
+        "detail-in-step",
+        "match-description"
+      ]
+    },
+    {
+      "id": "f2-i152",
+      "skill": "F2",
+      "passage": "f2-p57",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "The wind vane keeps swinging between east and south. Tap the sentence that tells Maya what to do.",
+      "evidence": [
+        11
+      ],
+      "hint": "Look for a sentence that starts with If and talks about the vane moving.",
+      "explain": "The sentence is \"If the vane keeps swinging back and forth, watch it for one minute and write the direction it points to most often.\" It is in the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "troubleshooting"
+      ],
+      "unit": "sentence",
+      "answer": [
+        11
+      ]
+    },
+    {
+      "id": "f2-i153",
+      "skill": "F2",
+      "passage": "f2-p57",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the noon journal steps in order.",
+      "steps": [
+        "Read the thermometer in the shade",
+        "Name the main type of cloud",
+        "Check the wind vane",
+        "Write one sentence about how the weather feels"
+      ],
+      "evidence": [
+        3,
+        4,
+        8,
+        12
+      ],
+      "hint": "Each paragraph after the first starts with an order word: First, Then and Last. Next is inside the second paragraph.",
+      "explain": "Read the thermometer, name the cloud type, check the wind vane, then write a sentence about how the weather feels. The words First, Next, Then and Last show this order.",
+      "inference": 0,
+      "tags": [
+        "four-steps",
+        "order-words",
+        "prose-directions"
+      ]
+    },
+    {
+      "id": "f2-i154",
+      "skill": "F2",
+      "passage": "f2-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana's group finds two flat spots. Spot A is lower than the ground around it. Spot B is a little higher, but a dead branch hangs right above it. What should they do?",
+      "options": [
+        "Choose Spot A, because it is flat",
+        "Choose Spot B, because it is higher",
+        "Look for a flat, higher spot with no dead branches above it",
+        "Choose Spot B and clear away the sticks first"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "The second paragraph gives two rules for the spot. Check each spot against both rules.",
+      "explain": "They look for another spot. Spot A breaks the rule about being higher than the ground around it, and Spot B breaks the rule about dead branches.",
+      "inference": 1,
+      "tags": [
+        "combine-sentences",
+        "close-distractor",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f2-i155",
+      "skill": "F2",
+      "passage": "f2-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The ground sheet sticks out past the tent floor on one side. What should Leo do?",
+      "options": [
+        "Leave it, because it keeps the floor clean",
+        "Fold the extra edge under",
+        "Put the tent door on that side",
+        "Pull the tent over to cover it"
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the sentence about the ground sheet. Then read the sentence after it to see why.",
+      "explain": "He folds the extra edge under. The second paragraph says to fold under edges that stick out, because rain can land on them and run under the tent.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "find-reason"
+      ]
+    },
+    {
+      "id": "f2-i156",
+      "skill": "F2",
+      "passage": "f2-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The notice board says rain is possible after midnight. What should the group do?",
+      "options": [
+        "Leave the fly off so they can see the stars",
+        "Put the rain fly on so it lies flat against the tent walls",
+        "Put the rain fly on and stake it out so it does not touch the tent walls",
+        "Move the tent under a tree"
+      ],
+      "answer": 2,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Find the sentence that starts with If rain is possible. Read it to the end.",
+      "explain": "They put the rain fly on and stake it out so it does not touch the tent walls. The last paragraph says to do this if rain is possible tonight.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i157",
+      "skill": "F2",
+      "passage": "f2-p58",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the tent steps in order.",
+      "steps": [
+        "Choose a flat spot that is a little higher",
+        "Clear away sticks and stones",
+        "Spread the ground sheet",
+        "Slide the poles through the sleeves",
+        "Stake the corners",
+        "Check the weather report"
+      ],
+      "evidence": [
+        2,
+        4,
+        5,
+        8,
+        10,
+        11
+      ],
+      "hint": "Read the paragraphs from top to bottom. Use the words First, Next and Finally to check.",
+      "explain": "Choose the spot, clear it, spread the ground sheet, slide in the poles, stake the corners, then check the weather report. The steps are written in this order.",
+      "inference": 0,
+      "tags": [
+        "six-steps",
+        "prose-directions"
+      ]
+    },
+    {
+      "id": "f2-i158",
+      "skill": "F2",
+      "passage": "f2-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam follows his plan. What is the latest time they can start up the Blue Trail and still be back by 6:00 PM?",
+      "options": [
+        "3:00 PM",
+        "2:30 PM",
+        "3:30 PM",
+        "2:00 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        8,
+        9,
+        11,
+        12
+      ],
+      "hint": "Use the legend's rule to work out the time for each trail. Add the rest. Then count back from 6:00 PM.",
+      "explain": "The latest start is 2:30 PM. The Blue Trail takes 90 minutes, the rest takes 30 minutes, and the steep Red Trail takes 90 minutes. That is 3 hours and 30 minutes, and 3 hours and 30 minutes before 6:00 PM is 2:30 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "calculate",
+        "combine-sentences"
+      ]
+    },
+    {
+      "id": "f2-i159",
+      "skill": "F2",
+      "passage": "f2-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "At the lookout, the wind becomes strong. What should Sam and Leo do?",
+      "options": [
+        "Go down the Red Trail as they planned",
+        "Go down the Red Trail, but more slowly",
+        "Change their plan and go down the Blue Trail",
+        "Wait at the lookout until the gate closes"
+      ],
+      "answer": 2,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Find the rule that starts with If the wind. Compare it with Sam's plan for the way down.",
+      "explain": "They change their plan and go down the Blue Trail. Sam planned to come down the Red Trail, but the legend says to take the Blue Trail down if the wind becomes strong.",
+      "inference": 1,
+      "tags": [
+        "if-step",
+        "plan-change",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f2-i160",
+      "skill": "F2",
+      "passage": "f2-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "They come down the Blue Trail instead of the Red Trail. How long should they allow for the walk down now?",
+      "options": [
+        "1 hour",
+        "1 hour and 30 minutes",
+        "2 hours and 15 minutes",
+        "45 minutes"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        6,
+        8
+      ],
+      "hint": "Find how long the Blue Trail is and whether it is gentle or steep. Then use the legend's rule.",
+      "explain": "They should allow 1 hour and 30 minutes. The Blue Trail is 3 miles of gentle trail, and the legend says to allow 30 minutes for each mile of gentle trail.",
+      "inference": 1,
+      "tags": [
+        "calculate",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f2-i161",
+      "skill": "F2",
+      "passage": "f2-p59",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells how to know from the map if the ground is steep.",
+      "unit": "sentence",
+      "answer": [
+        4
+      ],
+      "evidence": [
+        4
+      ],
+      "hint": "Look for a sentence that compares lines that are close together with lines that are far apart.",
+      "explain": "The sentence is \"Where contour lines are close together, the ground is steep, and where they are far apart, the ground is gentle.\" It starts the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "find-rule",
+        "map-reading"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f2-i162",
+      "skill": "F2",
+      "passage": "f2-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben wants to turn the front of his kayak to the left. What should he do?",
+      "options": [
+        "Do a sweep stroke on the left side",
+        "Do a sweep stroke on the right side",
+        "Dig the blade in beside his hip and push forward",
+        "Do forward strokes on both sides"
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the sentence that tells which way each sweep turns the kayak. Read both halves carefully.",
+      "explain": "He does a sweep stroke on the right side. The third paragraph says a sweep on the right side turns the front of the kayak to the left.",
+      "inference": 1,
+      "tags": [
+        "close-distractor",
+        "detail-in-step"
+      ]
+    },
+    {
+      "id": "f2-i163",
+      "skill": "F2",
+      "passage": "f2-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana hears three short whistle blasts. What should she do?",
+      "options": [
+        "Stop paddling and look at the instructor",
+        "Paddle back to the dock right away",
+        "Paddle out to the orange buoys",
+        "Do a sweep stroke to turn around and wait"
+      ],
+      "answer": 1,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Two sentences talk about the whistle. Find the one that matches three short blasts.",
+      "explain": "She paddles back to the dock right away. The last sentence says three short blasts mean paddle back to the dock. One long blast means stop and look at the instructor.",
+      "inference": 0,
+      "tags": [
+        "if-step",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f2-i164",
+      "skill": "F2",
+      "passage": "f2-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The instructor lifts Ben's life jacket by the shoulders, and it slides up past his ears. What does this tell them?",
+      "options": [
+        "The jacket fits well, so Ben can start paddling",
+        "The jacket does not fit well yet, so it needs to be fixed before Ben paddles",
+        "Ben is holding his paddle the wrong way",
+        "Ben should stay two kayak lengths away from other boats"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the sentence that says how to tell if a life jacket fits well. Compare it with what happens to Ben's jacket.",
+      "explain": "The jacket does not fit well yet. The first paragraph says a jacket fits well when it stays in place as it is lifted, instead of sliding up past your ears.",
+      "inference": 1,
+      "tags": [
+        "if-step",
+        "safety-step"
       ]
     }
   ],

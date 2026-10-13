@@ -39,25 +39,26 @@
     },
     {
       "id": "n6-p03",
-      "title": "The Ant and the Grasshopper",
+      "title": "The Young Crab and His Mother",
       "kind": "fable",
-      "picture": "🐜🦗❄️",
+      "picture": "🦀🏖️",
       "sentences": [
-        "All summer, a grasshopper played music and sang in a sunny field.",
-        "Nearby, an ant worked hard every day.",
-        "She carried seeds to her nest, one at a time.",
-        "\"Come and sing with me!\" said the grasshopper.",
-        "\"I am saving food for the winter,\" said the ant, and she kept working.",
-        "Soon winter came, and snow covered the field.",
-        "The grasshopper looked for food, but the field was empty.",
-        "Cold and hungry, he walked to the ant's nest and asked for something to eat.",
-        "The ant had plenty of food, and she shared some seeds with him.",
-        "\"Next summer, I will save food too,\" said the grasshopper."
+        "A young crab lived on a sandy beach with his mother.",
+        "One morning, they walked across the wet sand together.",
+        "Like all crabs, the young crab walked sideways.",
+        "\"You should walk straight ahead,\" said his mother.",
+        "\"Walking sideways is the wrong way.\"",
+        "\"I will try,\" said the young crab. \"Please show me how.\"",
+        "His mother lifted her claws and began to walk.",
+        "But her legs went sideways too, just like his.",
+        "She tried again and again, but she could not walk straight.",
+        "At last, she stopped and laughed.",
+        "\"Now I understand,\" she said. \"I should not tell you to do something that I cannot do myself.\""
       ],
-      "topics": ["animals", "nature", "food"],
+      "topics": ["animals", "ocean"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Ant and the Grasshopper", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Young Crab and His Mother", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "n6-p04",
@@ -194,7 +195,7 @@
     },
     {
       "id": "n6-p10",
-      "title": "Leo at the Skate Park",
+      "title": "Three Days at the Skate Park",
       "kind": "story",
       "picture": "🛹",
       "sentences": [
@@ -210,11 +211,11 @@
       "topics": ["sports"],
       "level": 1,
       "socialLoad": 0,
-      "credit": { "title": "Leo at the Skate Park", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Three Days at the Skate Park", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n6-p11",
-      "title": "The Bake Sale",
+      "title": "A Table Outside the Library",
       "kind": "story",
       "picture": "🍪⚽",
       "sentences": [
@@ -227,12 +228,12 @@
         "The wind blew their sign over twice.",
         "By noon, they had sold every cookie.",
         "They made forty dollars, enough to buy four new balls.",
-        "At practice on Monday, the whole team cheered."
+        "At practice on Wednesday, the whole team cheered."
       ],
       "topics": ["sports", "food", "school"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "The Bake Sale", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "A Table Outside the Library", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n6-p12",
@@ -385,7 +386,7 @@
       "kind": "story",
       "picture": "🤖🔋",
       "sentences": [
-        "Every Tuesday after school, the robotics club met in Ms. Ortiz's science room.",
+        "Every Wednesday after school, the robotics club met in Ms. Ortiz's science room.",
         "This month, Priya's team had one goal: build a rover that could climb a steep wooden ramp.",
         "Ms. Ortiz had built the ramp to copy a rocky hill on Mars.",
         "The room still smelled of fresh paint, because the walls had just been painted blue.",
@@ -788,6 +789,1325 @@
         "retrieved": "2026-10-13",
         "adapted": false
       }
+    },
+    {
+      "id": "n6-p30",
+      "title": "Maya's Rock Box",
+      "kind": "story",
+      "picture": "🪨🔍",
+      "sentences": [
+        "It was raining, so Maya stayed inside.",
+        "She got out her box of rocks and minerals.",
+        "She wanted to know which rocks were hard.",
+        "She tried to scratch each one with a nail.",
+        "The nail made a line on the soft talc.",
+        "It did not scratch the quartz at all.",
+        "Maya put the hard rocks in one pile.",
+        "Then she drew a chart of her rocks."
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Maya's Rock Box",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p31",
+      "title": "The Moon",
+      "kind": "article",
+      "picture": "🌕",
+      "sentences": [
+        "The Moon is covered with round holes called craters.",
+        "Long ago, many rocks from space hit the Moon.",
+        "Each rock made a crater when it hit.",
+        "The Moon has no wind and no rain.",
+        "So the craters do not wear away.",
+        "The Moon goes around Earth about once a month.",
+        "Twelve people have walked on the Moon."
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Moon",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p32",
+      "title": "Emperor Penguins",
+      "kind": "article",
+      "picture": "🐧❄️",
+      "sentences": [
+        "Emperor penguins live in Antarctica, where it is very cold.",
+        "They have many ways to stay warm.",
+        "Under their skin is a thick layer of fat.",
+        "Their short feathers are packed close together.",
+        "The feathers keep out the wind and the icy water.",
+        "On the coldest days, the penguins stand close in a big group.",
+        "This group is called a huddle.",
+        "They take turns in the warm middle.",
+        "Emperor penguins are the tallest of all penguins.",
+        "They dive deep under the ice to catch fish."
+      ],
+      "topics": [
+        "animals"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Emperor Penguins",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p33",
+      "title": "Saturday's Game",
+      "kind": "story",
+      "picture": "🌧️⚽",
+      "sentences": [
+        "On Saturday, Ana and Ben had a big soccer game.",
+        "But that morning, heavy rain fell on Harbor Town.",
+        "The soccer field was covered with deep puddles.",
+        "Coach Novak sent a message to the team.",
+        "The game would be played in the school gym instead.",
+        "At first, Ben was disappointed, because he liked the big field.",
+        "Ana's socks got wet on the walk to the gym.",
+        "In the gym, the ball bounced fast on the wooden floor.",
+        "The team passed quickly and won by two goals.",
+        "After the game, Ben said the gym was more fun than he expected."
+      ],
+      "topics": [
+        "weather",
+        "sports"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Saturday's Game",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p34",
+      "title": "Rainbows",
+      "kind": "article",
+      "picture": "🌈",
+      "sentences": [
+        "You can see a rainbow when the sun shines through rain.",
+        "Sunlight looks white, but it is made of many colors.",
+        "When sunlight goes into a raindrop, the drop bends the light.",
+        "Each color bends by its own amount, so the colors spread out.",
+        "The light comes back out of the drop as a band of colors.",
+        "Red is always on the outside.",
+        "Violet is on the inside.",
+        "To see a rainbow, stand with the sun at your back.",
+        "Sometimes a second, fainter rainbow shows up above the first one.",
+        "Its colors are in the opposite order."
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rainbows",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p35",
+      "title": "Finding the Rooms",
+      "kind": "story",
+      "picture": "🗺️🏫",
+      "sentences": [
+        "A new student joined Sam's class on Monday.",
+        "She did not know where any of the rooms were.",
+        "At lunch, Sam drew her a map of Harbor Middle School.",
+        "He drew the office, the gym and the library.",
+        "He marked their classroom with a red star.",
+        "He also drew a small train in one corner, just for fun.",
+        "The next morning, the new student used the map to find the music room by herself.",
+        "She smiled and thanked Sam."
+      ],
+      "topics": [
+        "maps",
+        "school"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Finding the Rooms",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p36",
+      "title": "Popcorn",
+      "kind": "article",
+      "picture": "🍿",
+      "sentences": [
+        "Popcorn is a special kind of corn.",
+        "It pops because of a tiny drop of water inside each kernel.",
+        "Each kernel has a hard shell with starch inside.",
+        "When the kernel gets hot, the water turns into steam.",
+        "The steam pushes harder and harder on the shell.",
+        "At last, the shell bursts open with a pop.",
+        "The hot starch puffs out and becomes white and fluffy.",
+        "People have eaten popcorn for thousands of years.",
+        "Some people like it with butter, and some like it with salt."
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Popcorn",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p37",
+      "title": "Sea Turtles",
+      "kind": "article",
+      "picture": "🐢🌊",
+      "sentences": [
+        "A sea turtle spends almost its whole life in the ocean.",
+        "But when a female is ready to lay eggs, she makes a long trip.",
+        "She swims back to the same beach where she hatched many years before.",
+        "Some sea turtles swim thousands of kilometers to get there.",
+        "Scientists think they use Earth's magnetic field to find their way.",
+        "At night, the mother turtle crawls up onto the sand.",
+        "She digs a hole with her back flippers and lays about one hundred eggs.",
+        "Then she covers the eggs with sand and swims back to sea.",
+        "About two months later, the baby turtles hatch and hurry to the water.",
+        "Sea turtles cannot pull their heads into their shells the way many land turtles can.",
+        "The biggest kind, the leatherback, can weigh more than 500 kilograms."
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sea Turtles",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p38",
+      "title": "The High Note",
+      "kind": "story",
+      "picture": "🎺🎶",
+      "sentences": [
+        "Ms. Gray chose Ana to play a short trumpet solo at the winter concert.",
+        "The solo had one very high note near the end.",
+        "At first, that note squeaked every time Ana tried it.",
+        "Ms. Gray showed her how to take a deep breath before the hard part.",
+        "Every day after school, Ana played the solo ten times in her bedroom.",
+        "In the next room, Ben wore headphones while he played a video game.",
+        "After two weeks, the high note sounded clear almost every time.",
+        "On the night of the concert, the school gym was full of families.",
+        "Ana stood up, took a deep breath and played her solo.",
+        "The high note rang out clear and strong.",
+        "Afterward, her parents gave her a bunch of yellow flowers."
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The High Note",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p39",
+      "title": "Triceratops",
+      "kind": "article",
+      "picture": "🦕",
+      "sentences": [
+        "Triceratops was a plant-eating dinosaur with a huge head.",
+        "Its name means \"three-horned face.\"",
+        "Scientists think each part of that head helped it in a different way.",
+        "Two long horns grew above its eyes, and a short horn grew on its nose.",
+        "It may have used its horns to protect itself from hungry Tyrannosaurus.",
+        "A wide plate of bone, called a frill, grew from the back of its skull.",
+        "The frill may have helped Triceratops show off to others of its kind.",
+        "At the front of its mouth was a sharp beak, like a parrot's beak.",
+        "It used the beak to bite off tough plants.",
+        "Triceratops lived in what is now North America.",
+        "It lived about 66 million years ago, near the end of the time of the dinosaurs."
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Triceratops",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p40",
+      "title": "Saturday's Goalkeeper",
+      "kind": "story",
+      "picture": "🧤⚽",
+      "sentences": [
+        "On Thursday, Coach Novak had a problem.",
+        "The team's goalkeeper had a bad cold and could not play in Saturday's game.",
+        "Coach Novak asked Ben to play in goal instead.",
+        "Ben had never been the goalkeeper before, and he felt nervous.",
+        "On Friday, Ana kicked ball after ball at him during practice.",
+        "She told him to keep his eyes on the ball until it reached his hands.",
+        "By the end of practice, Ben's shirt was covered in grass stains.",
+        "The game started at ten o'clock on Saturday morning.",
+        "Ben stopped six shots, and the team won the game 2 to 1.",
+        "Afterward, Coach Novak asked Ben to be the backup goalkeeper for the rest of the season.",
+        "Ben's grass-stained shirt took two washes to come clean."
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Saturday's Goalkeeper",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p41",
+      "title": "How Trains Roll",
+      "kind": "article",
+      "picture": "🚆",
+      "sentences": [
+        "A train is very heavy and moves fast, but it almost never slides off the track.",
+        "The reason is the special shape of its wheels.",
+        "Train wheels are made of steel, and they roll on steel rails.",
+        "Each wheel has a lip, called a flange, on its inside edge.",
+        "The flanges sit just inside the two rails.",
+        "If the train starts to slide sideways, a flange bumps the rail and holds the train in place.",
+        "The wheels are also slightly cone-shaped, so each one is wider near the flange.",
+        "On a curve, the outer wheel rolls on its wider part, and the inner wheel rolls on its narrower part.",
+        "That helps the train turn smoothly.",
+        "Steel wheels on steel rails roll very easily, so trains use less fuel than trucks to carry the same load.",
+        "Many early trains in the 1800s were pulled by steam engines."
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How Trains Roll",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p42",
+      "title": "Robot Vacuums",
+      "kind": "article",
+      "picture": "🤖🧹",
+      "sentences": [
+        "A robot vacuum cleans the floor while nobody pushes it.",
+        "To do this, it uses sensors to learn about the room around it.",
+        "A sensor is a part that notices something, such as a touch or a change in light.",
+        "When the robot bumps into a chair, a bump sensor in the front tells it to turn.",
+        "Cliff sensors underneath point down at the floor.",
+        "If the floor drops away, like at the top of the stairs, the robot backs up.",
+        "Some robots also use a camera or a laser to make a map of the home.",
+        "With a map, the robot can clean in neat rows instead of wandering around.",
+        "When its battery runs low, it finds its way back to its charger.",
+        "Most robot vacuums are thin enough to clean under a bed.",
+        "Some families even give their robot vacuum a name."
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Robot Vacuums",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p43",
+      "title": "The Ranger's Helpers",
+      "kind": "story",
+      "picture": "🌲🧤",
+      "sentences": [
+        "After a windy week, many branches had fallen across the trail in Story Woods.",
+        "The park ranger asked for helpers to clear the trail on Saturday.",
+        "Sam, Leo and Maya signed up, and each of them got a pair of thick gloves.",
+        "First, they dragged the branches off the path and piled them under the trees.",
+        "The ranger said the piles would become homes for mice and beetles.",
+        "Next, they filled muddy holes in the trail with gravel.",
+        "Leo found a beetle with a shiny green back and named it Gus.",
+        "Last, Maya painted new yellow marks on the trees so hikers would not get lost.",
+        "At noon, they ate lunch on a log by the creek.",
+        "By three o'clock, the whole trail was clear again.",
+        "The ranger thanked them and gave each of them a Story Woods patch."
+      ],
+      "topics": [
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Ranger's Helpers",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p44",
+      "title": "Searching for Gold",
+      "kind": "article",
+      "picture": "🥇🪨",
+      "sentences": [
+        "Long ago, many people searched for gold in streams with a simple metal pan.",
+        "This is called panning, and it works because gold is much heavier than sand and pebbles.",
+        "First, a person scoops sand and gravel from the bottom of a stream into the pan.",
+        "Then they hold the pan under the water and shake it from side to side.",
+        "The heavy gold sinks to the bottom of the pan.",
+        "Next, they tip the pan and swirl it, so the water washes the light sand over the edge.",
+        "After many swirls, only a little dark sand is left.",
+        "If they are lucky, tiny flakes of gold shine in it.",
+        "Gold is about nineteen times heavier than the same amount of water.",
+        "In 1848, gold was found in California, and thousands of people rushed there to pan for it.",
+        "Today, some people still pan for gold for fun."
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Searching for Gold",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p45",
+      "title": "The Game Shelf",
+      "kind": "story",
+      "picture": "🎲♟️",
+      "sentences": [
+        "The Harbor Town library has a shelf of board games that anyone can borrow.",
+        "But many games kept coming back with pieces missing.",
+        "One chess set had lost two pawns, and a word game was missing half its letter tiles.",
+        "Ana and Ben offered to help Mrs. Hall fix the problem.",
+        "First, they counted the pieces in every box.",
+        "Then they wrote a checklist and taped it inside each lid.",
+        "The checklist said exactly how many pieces belonged in the box.",
+        "Ana also found small bags for the cards and dice.",
+        "Mrs. Hall put up a sign that asked players to count the pieces before they returned a game.",
+        "The game shelf is next to a big window, where the sun shines in the afternoon.",
+        "A month later, almost every game came back with all its pieces.",
+        "To celebrate, Ben beat Ana at chess for the first time."
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Game Shelf",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p46",
+      "title": "The Space Station",
+      "kind": "article",
+      "picture": "🛰️🌍",
+      "sentences": [
+        "About 400 kilometers above Earth, a small crew lives and works inside the International Space Station.",
+        "The station circles the planet about every 90 minutes, so the crew sees around 16 sunrises each day.",
+        "Because everything on board floats, even simple daily tasks must be done in a new way.",
+        "Sleeping is a good example, because in space there is no real up or down.",
+        "Each crew member sleeps in a sleeping bag tied to the wall of a cabin about the size of a closet.",
+        "Drinks come in sealed pouches with straws, so the liquid cannot float away in drops.",
+        "Salt and pepper are mixed into liquids, because loose grains would drift into machines and eyes.",
+        "Floating may sound restful, but it is hard on the human body.",
+        "On Earth, gravity pulls on bones and muscles all day, and that work keeps them strong.",
+        "In space, without that pull, they slowly grow weaker.",
+        "So the crew must exercise for about two hours every day.",
+        "They run on a treadmill while straps hold them down, and they lift weights on a special machine.",
+        "People have lived on the station without a break since the year 2000.",
+        "Crew members from many countries have shared it."
+      ],
+      "breaks": [
+        3,
+        7,
+        12
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Space Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p47",
+      "title": "The Deep Ocean",
+      "kind": "article",
+      "picture": "🌊🐟",
+      "sentences": [
+        "Sunlight shines into the top part of the ocean, but it fades as the water gets deeper.",
+        "Below about 1,000 meters, the water is completely dark, and it stays very cold all year.",
+        "The weight of all the water above presses down hard on everything below.",
+        "In the darkness, many animals make their own light.",
+        "This light is called bioluminescence, and it comes from chemicals inside their bodies.",
+        "The anglerfish has a glowing lure that hangs in front of its mouth.",
+        "Small fish swim toward the light, and the anglerfish snaps them up.",
+        "Other animals flash light to confuse hunters or to find others of their kind.",
+        "Food is hard to find in the deep, because plants cannot grow without sunlight.",
+        "Much of the food is bits of dead plants and animals that drift down from above, called marine snow.",
+        "Many deep-sea fish move slowly to save energy, and some have huge mouths so they can eat almost anything they find.",
+        "Many deep-sea animals also have soft bodies with lots of water inside.",
+        "This helps them live under the heavy water without being crushed.",
+        "The deepest known spot in the ocean, called the Challenger Deep, is about 11,000 meters down."
+      ],
+      "breaks": [
+        3,
+        8,
+        11
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Deep Ocean",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p48",
+      "title": "Priya Leads the Workshop",
+      "kind": "story",
+      "picture": "🤖🧒",
+      "sentences": [
+        "Every Saturday morning in February, the Harbor Town library held a robot workshop for younger children, and Mrs. Hall asked Priya to lead it.",
+        "Priya had built her own rover, so she thought teaching eight-year-olds to build simple robots would be easy.",
+        "She arrived early, set out boxes of motors, wheels and wires, and wrote all the steps on the whiteboard.",
+        "Within ten minutes, every table had a problem.",
+        "One boy had connected his wires backward, so his robot drove in reverse.",
+        "Two girls both wanted to hold the only screwdriver.",
+        "A small boy in a dinosaur shirt had not started at all, because he did not understand the first step.",
+        "Priya realized that her steps were clear to her, but not to someone who had never seen a motor before.",
+        "She asked everyone to stop, and she started again, one step at a time.",
+        "This time, she held up each part, said its name, and waited until every table was ready before she moved on.",
+        "She gave the two girls separate jobs, so one held the screwdriver while the other read the next step aloud.",
+        "By the end of the hour, six small robots were rolling across the carpet.",
+        "The boy in the dinosaur shirt asked if he could come back next week.",
+        "On the walk home, Priya told her mom that teaching was harder than building, but she wanted to do it again."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Priya Leads the Workshop",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p49",
+      "title": "Ready for Winter",
+      "kind": "article",
+      "picture": "🐿️❄️",
+      "sentences": [
+        "In places where winters are cold, food becomes hard to find, and the days grow short and freezing.",
+        "Animals that live in these places cannot buy a coat or switch on a heater.",
+        "Instead, most of them get through the winter in one of three ways: they leave, they sleep, or they change how they live.",
+        "Some animals travel to warmer places for the winter, which is called migration.",
+        "Many geese fly south in long lines shaped like the letter V.",
+        "Monarch butterflies from eastern North America fly thousands of kilometers to forests in Mexico.",
+        "Other animals hibernate, which means they go into a deep sleep for the winter.",
+        "During hibernation, an animal's heart beats much more slowly, and its body cools down.",
+        "A woodchuck's heart may slow from about 80 beats a minute to fewer than ten.",
+        "It lives on fat that it stored by eating extra food in the fall.",
+        "Many animals stay active all winter but change their bodies or their habits.",
+        "Squirrels bury nuts in the fall and dig them up when snow covers the ground.",
+        "The snowshoe hare grows a white coat that matches the snow, and its wide back feet help it walk on top of the snow.",
+        "Some squirrels forget where they buried their nuts, and those nuts can grow into new trees."
+      ],
+      "breaks": [
+        3,
+        6,
+        10
+      ],
+      "topics": [
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ready for Winter",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p50",
+      "title": "The Bike Route",
+      "kind": "story",
+      "picture": "🚲🗺️",
+      "sentences": [
+        "Sam wanted to ride his bike to the lookout in Lantern Peaks with Leo and Priya on Saturday.",
+        "The shortest way was Ridge Road, but it was steep, narrow and busy with trucks.",
+        "So on Thursday evening, Sam spread a map of Harbor Town on the kitchen table to look for a better route.",
+        "He used a green pencil to trace every street that had a bike lane.",
+        "Then he studied the thin brown lines on the map, called contour lines, which show how steep the land is.",
+        "Where the lines are packed close together, the ground is steep, and on Ridge Road they almost touched.",
+        "Sam found another road, Mill Road, where the lines were spread far apart as it curved gently around the hill.",
+        "It was two kilometers longer, but it had a bike lane almost the whole way.",
+        "On Friday, Sam showed his route to Mr. Okafor at the bike shop.",
+        "Mr. Okafor agreed that it was a smart choice, and he pumped up the tires on all three bikes.",
+        "He also gave Leo a bell shaped like a fish, and Leo rang it the whole afternoon.",
+        "On Saturday, the three friends rode Mill Road to the lookout without having to walk their bikes once.",
+        "Priya said the longer road had felt easier than a shorter, steeper one.",
+        "At the top, they ate apples and looked down at the harbor."
+      ],
+      "breaks": [
+        3,
+        8,
+        11
+      ],
+      "topics": [
+        "transport",
+        "maps"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Bike Route",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p51",
+      "title": "Inside a Piano",
+      "kind": "article",
+      "picture": "🎹",
+      "sentences": [
+        "A piano looks like a large wooden box with keys, but inside it is a machine with thousands of parts.",
+        "Every note you hear begins when you press a key and a small hammer strikes tight steel strings.",
+        "Each key works like a seesaw.",
+        "When you press down the front of the key, the back end rises and pushes a small wooden hammer upward.",
+        "The hammer is covered with soft felt, and it hits the strings and then quickly falls back.",
+        "The strings vibrate, and a large, thin wooden board called the soundboard makes the sound louder.",
+        "A piano has 88 keys and more than 200 strings.",
+        "Most notes use two or three strings tuned to exactly the same note, which makes them louder.",
+        "Long, thick strings make low notes, and short, thin strings make high notes.",
+        "Together, the strings pull on the frame so hard that the frame must be made of iron.",
+        "When you let go of a key, a felt pad called a damper drops onto the strings and stops the sound.",
+        "If you press the right pedal, all the dampers lift, so the notes keep ringing.",
+        "A piano tuner usually adjusts the strings once or twice a year so the notes stay correct."
+      ],
+      "breaks": [
+        2,
+        6,
+        10
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Inside a Piano",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p52",
+      "title": "The Class Picnic",
+      "kind": "story",
+      "picture": "🧺🥪",
+      "sentences": [
+        "At the end of the school year, Ms. Ortiz's class planned a picnic at Harbor Park, and Ana and Maya offered to plan the food.",
+        "They wanted every student to be able to eat a full lunch.",
+        "That was harder than it sounded, because Ana cannot eat peanuts or tree nuts, and two classmates do not eat meat.",
+        "First, the girls made a list of every food they could think of.",
+        "Then they crossed out anything with nuts, such as the peanut butter cookies, the trail mix and the walnut bread.",
+        "Next, they made sure there was a choice without meat for each part of the meal.",
+        "Beside the turkey sandwiches, they added cheese and tomato sandwiches.",
+        "Maya drew a menu card for each dish, with a small picture and a list of what was in it.",
+        "On the sandwich card, she drew a tiny cartoon tomato wearing sunglasses.",
+        "Grandma Rose baked oat bars for dessert, using a recipe with no nuts at all.",
+        "On the day of the picnic, the sun was warm, and a breeze came off the harbor.",
+        "Students read the menu cards and filled their plates without needing to ask any questions.",
+        "Everyone ate a full lunch, and only crumbs were left of the oat bars."
+      ],
+      "breaks": [
+        3,
+        7,
+        10
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Class Picnic",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p53",
+      "title": "Dinosaur Sizes",
+      "kind": "article",
+      "picture": "🦕🐦",
+      "sentences": [
+        "Many people picture every dinosaur as a giant that shook the ground with each step.",
+        "Some dinosaurs really were huge, but others were no bigger than a chicken.",
+        "In fact, dinosaurs came in many sizes, from tiny to enormous.",
+        "The biggest dinosaurs were plant eaters with long necks and long tails, called sauropods.",
+        "One of them, Argentinosaurus, may have been more than 30 meters long.",
+        "That is longer than two school buses parked end to end.",
+        "Long necks let sauropods reach leaves that other animals could not.",
+        "At the other end, some meat-eating dinosaurs were small and quick.",
+        "Compsognathus was about the size of a turkey, and it hunted small lizards.",
+        "Microraptor was about the size of a crow.",
+        "It had feathers on both its arms and its legs.",
+        "The smallest dinosaurs alive today are smaller still.",
+        "Scientists agree that birds are a kind of dinosaur, so the tiny bee hummingbird is a dinosaur too.",
+        "It is only about five centimeters long."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dinosaur Sizes",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p54",
+      "title": "Wind",
+      "kind": "article",
+      "picture": "🌬️🏖️",
+      "sentences": [
+        "You cannot see the wind, but you can see it bend trees and push clouds across the sky.",
+        "Wind is simply air that is moving from one place to another.",
+        "Air moves because the Sun warms some places more than others.",
+        "When the Sun heats the ground, the ground warms the air just above it.",
+        "Warm air spreads out and becomes lighter, so it rises.",
+        "Cooler, heavier air then flows in to fill the space it left behind.",
+        "That flow of air is the wind.",
+        "You can feel this happen at a beach on a sunny day.",
+        "Land heats up faster than water, so by afternoon the air over the sand is warmer than the air over the sea.",
+        "The warm air over the land rises, and cool air from the sea moves in to take its place.",
+        "This cool wind from the water is called a sea breeze.",
+        "At night, the land cools faster than the water, so the wind often turns around and blows out to sea.",
+        "Scientists measure wind speed with a tool called an anemometer, which has small cups that spin in the wind.",
+        "The fastest wind gust ever measured by an anemometer was 408 kilometers per hour, on an island near Australia in 1996."
+      ],
+      "breaks": [
+        3,
+        7,
+        12
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Wind",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p55",
+      "title": "The Library Birthday",
+      "kind": "story",
+      "picture": "🧩📚",
+      "sentences": [
+        "For the library's birthday, Mrs. Hall hid five puzzle clues around the building, and the first team to solve them all would win a box of new board games.",
+        "Sam, Maya, Priya and Leo formed a team and called themselves the Fast Four.",
+        "The first clue was a drawing of a bookshelf.",
+        "Maya, who studies every line when she draws comics, noticed tiny numbers hidden on the spines of the books.",
+        "The numbers led the team to shelf 551, where the next clue was taped.",
+        "The second clue was a code made of numbers, and Priya, who programs her rover, solved it in two minutes.",
+        "The third clue was a map of the library with a path drawn in dotted lines.",
+        "Sam turned the map until it matched the room, and he led everyone straight to the history room.",
+        "The fourth clue was a riddle that asked what has keys but cannot open a door.",
+        "Leo laughed, because he had heard that joke before.",
+        "The answer was a piano, and the last clue was taped under the lid of the old piano in the reading room.",
+        "The last clue asked a question about the history of Harbor Town, and the four friends solved it together.",
+        "They finished first, ten minutes ahead of the next team.",
+        "Mrs. Hall handed them the box of games and a bag of apples.",
+        "Leo suggested that they become the Fast Five so that Pixel could join next time."
+      ],
+      "breaks": [
+        2,
+        6,
+        11
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Library Birthday",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p56",
+      "title": "Searching the Stars",
+      "kind": "article",
+      "picture": "🔭🪐",
+      "sentences": [
+        "For thousands of years, people wondered whether other stars had planets circling them, the way Earth circles the Sun.",
+        "The question was hard to answer, because a planet near a distant star is far too dim, and too close to its bright star, to be seen in most telescopes.",
+        "Since the 1990s, however, astronomers have found thousands of these distant planets, called exoplanets, by looking for small clues instead of the planets themselves.",
+        "The most common clue is a tiny dip in a star's light.",
+        "If a planet passes in front of its star, as seen from Earth, it blocks a small part of the starlight.",
+        "A telescope that measures the star's brightness records a dip that repeats every time the planet goes around.",
+        "The size of the dip tells astronomers how big the planet is, and the time between dips tells them how long its year lasts.",
+        "Another clue is a slight wobble.",
+        "As a planet circles a star, its gravity tugs the star back and forth by a tiny amount.",
+        "Astronomers cannot see the star move, but they can measure tiny changes in the color of its light as it wobbles toward us and away from us.",
+        "A heavier planet causes a bigger wobble.",
+        "Space telescopes have made the search much faster.",
+        "One space telescope, named Kepler, watched about 150,000 stars at the same time and found more than 2,600 planets.",
+        "Today, the number of known exoplanets is more than 5,000, and some of them are about the same size as Earth."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Searching the Stars",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p57",
+      "title": "From Rock to Wire",
+      "kind": "article",
+      "picture": "⛏️🔌",
+      "sentences": [
+        "The copper wires inside the walls of a house carry electricity to every light and outlet.",
+        "That copper began as rock deep in the ground, and turning it into wire takes several big steps.",
+        "Each step removes more of the rock, until almost pure copper is left.",
+        "Most copper comes from enormous open-pit mines, which look like giant bowls with steps carved into their sides.",
+        "Workers break the rock loose, and trucks as tall as a two-story house carry it away.",
+        "This rock, called ore, usually contains less than one percent copper.",
+        "That means a whole truckload of ore holds only a small amount of copper.",
+        "At a mill, machines crush the ore into a powder as fine as flour.",
+        "The powder is mixed with water and special chemicals in large tanks.",
+        "Air is bubbled through the tanks, and the bits of copper mineral stick to the bubbles and float to the top as a froth.",
+        "The froth is skimmed off, while the leftover rock sinks to the bottom.",
+        "Next, the copper powder is heated in a furnace until it melts.",
+        "Then electricity is used to remove the last unwanted materials, making copper that is more than 99 percent pure.",
+        "Finally, the pure copper is pulled through smaller and smaller holes until it becomes thin wire.",
+        "Copper is also easy to recycle, because old copper can be melted down and used again.",
+        "People have used copper for thousands of years."
+      ],
+      "breaks": [
+        3,
+        7,
+        11,
+        14
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "From Rock to Wire",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p58",
+      "title": "The Skate Park Ramps",
+      "kind": "story",
+      "picture": "🛹📸",
+      "sentences": [
+        "For months, the concrete ramps at the Harbor Town skate park had been cracking, and one of the metal rails had come loose.",
+        "Leo skated there almost every day, so he noticed every new crack.",
+        "He complained about it to anyone who would listen, but complaining did not fix a single crack.",
+        "Then Mrs. Hall showed him a notice at the library: the town council held a meeting on the first Monday of every month, and anyone could speak for three minutes.",
+        "Leo decided that three minutes was enough time if he used it well.",
+        "With Sam's help, he took photos of every crack and measured the longest one, which was almost a meter long.",
+        "Sam drew a map of the park and marked each damaged spot with a red dot.",
+        "Priya stood at the gate for a week with a clipboard and counted about two hundred visitors.",
+        "Ana and Ben collected signatures from forty skaters, parents and neighbors who wanted the park repaired.",
+        "Leo practiced his speech in front of Sam and Pixel until he could say it without reading his notes.",
+        "He also took out a joke he had planned to tell and put in Priya's count of visitors instead.",
+        "On the first Monday of the month, Leo wore his only button-up shirt to the town hall.",
+        "At the microphone, he showed the photos and the map, and he handed the council the list of signatures.",
+        "He spoke calmly and finished ten seconds before his three minutes were over.",
+        "Two weeks later, the council voted to repair the ramps and the rail before summer.",
+        "When the repairs were finished, Leo was the first to skate down the smooth new ramp.",
+        "He told his friends that the photos and the map had shown the problem better than his complaints ever had."
+      ],
+      "breaks": [
+        3,
+        9,
+        11,
+        15
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Skate Park Ramps",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p59",
+      "title": "Autumn Leaves",
+      "kind": "article",
+      "picture": "🍁🍂",
+      "sentences": [
+        "In many forests, autumn turns green hillsides into patches of yellow, orange and red.",
+        "It may seem that trees add new colors to their leaves, but most of those colors were hidden inside the leaves all summer.",
+        "Leaves are green because they are full of a chemical called chlorophyll.",
+        "Chlorophyll captures sunlight, and the tree uses that energy to make sugar from water and air.",
+        "Leaves also contain yellow and orange chemicals, but in summer there is so much green chlorophyll that it covers them up.",
+        "In autumn, the days grow shorter and the nights grow cooler.",
+        "The tree begins to get ready for winter, and it stops making new chlorophyll.",
+        "As the green fades, the yellow and orange that were there all along finally show.",
+        "Red and purple are different, because many trees make those colors only in the fall, from sugar trapped in the leaves.",
+        "Sunny days and cool nights help make the reds brighter.",
+        "Finally, a thin layer of cells grows where each leaf joins its twig.",
+        "The layer slowly cuts the leaf off, and the leaf falls to the ground.",
+        "There, fallen leaves break down and add food to the soil."
+      ],
+      "breaks": [
+        2,
+        5,
+        10
+      ],
+      "topics": [
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Autumn Leaves",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p60",
+      "title": "The Wheelhouse",
+      "kind": "story",
+      "picture": "⛴️🧭",
+      "sentences": [
+        "Sam had ridden the Harbor Town ferry dozens of times, but he had never been inside the wheelhouse, the room at the top where the captain steers.",
+        "So when Captain Ruth Lane invited his class on a tour, he was the first in line.",
+        "She explained that steering a ferry is not like driving a car, because the water has no painted lines or road signs.",
+        "Instead, a captain uses several tools together to find a safe path.",
+        "First, she unrolled a large paper chart, which is a map of the water instead of the land.",
+        "Tiny numbers covered the blue areas, and each one showed how deep the water was at that spot.",
+        "Sam noticed that the numbers grew small near Gull Island, where rocks lay just under the surface.",
+        "The ferry, she said, must always stay where the numbers are large enough.",
+        "Out the window, she pointed to red and green floating markers called buoys.",
+        "They mark the edges of the safe channel, the way lines mark the edges of a road.",
+        "When the ferry comes into the harbor, it keeps the red buoys on its right side.",
+        "Finally, she showed them two screens.",
+        "One was a radar screen, which shows nearby boats and land even in the dark, and the other showed the ferry's exact position from satellites.",
+        "Priya asked whether the ferry had an autopilot button, and Captain Lane said it did, but she always kept her hands near the wheel.",
+        "On the ride home, Sam drew his own chart of the harbor in his notebook, with the depth numbers he remembered.",
+        "He marked the rocks near Gull Island with a careful row of X's."
+      ],
+      "breaks": [
+        4,
+        8,
+        11,
+        14
+      ],
+      "topics": [
+        "transport",
+        "maps"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Wheelhouse",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p61",
+      "title": "Robot Arms",
+      "kind": "article",
+      "picture": "🦾🏭",
+      "sentences": [
+        "In many factories, some of the busiest workers are robot arms.",
+        "A robot arm can repeat the same movement thousands of times a day without getting tired.",
+        "That is why factories use robot arms for jobs that must be done exactly the same way every time.",
+        "The first factory robot arm went to work in a car factory in 1961.",
+        "A robot arm is built a little like a human arm.",
+        "It has joints that bend and turn, like a shoulder, an elbow and a wrist.",
+        "Each joint has its own electric motor, and a computer controls all the motors together.",
+        "At the end of the arm is a tool, which can be a gripper, a welder, a paint sprayer or even a suction cup.",
+        "In car factories, robot arms weld metal parts together and spray paint onto car bodies.",
+        "In food factories, they pack cookies into boxes and stack the boxes for shipping.",
+        "Some robots are so precise that they can place parts smaller than a grain of rice onto a circuit board.",
+        "Robots do not do every job in a factory, however.",
+        "People design the robots, write their programs and fix them when they break.",
+        "Many large robot arms work inside fences, because they move quickly and with great force.",
+        "Newer robots, called cobots, are smaller and slower, so they can work right next to people."
+      ],
+      "breaks": [
+        4,
+        8,
+        11
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Robot Arms",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p62",
+      "title": "Recording Day",
+      "kind": "story",
+      "picture": "🎙️🎶",
+      "sentences": [
+        "The Harbor Town radio station invited Ms. Gray's students to record one song for its Friday evening show.",
+        "Ms. Gray chose six students: Sam brought his guitar, Priya her cello, Maya her flute, Ana her trumpet, Ben his keyboard and Leo his drums.",
+        "They had three hours in the music room to make a recording they were proud of.",
+        "On the first try, the recording sounded messy, because every sound bounced off the hard walls and floor.",
+        "Ms. Gray explained that this was an echo, and that soft things soak up sound.",
+        "The students hung blankets on the walls and laid a rug under the drums.",
+        "The second recording was much clearer.",
+        "Now, however, they could hardly hear Maya's flute, because the drums and the trumpet were much louder.",
+        "Ms. Gray moved the flute closer to the microphone and asked Leo to use soft brushes instead of sticks.",
+        "Ana played a little more quietly and pointed her trumpet slightly away from the microphone.",
+        "On the third try, Ben's keyboard went silent in the middle of the song, because its power cord had come loose.",
+        "Everyone wanted to stop, but Ms. Gray said they had time for one more try.",
+        "Ben taped the cord to the floor, and the group played the song again from the beginning.",
+        "This time, every instrument could be heard, and no one missed a note.",
+        "On Friday evening, Sam listened to the show in Grandma Rose's kitchen while Pixel slept under the table.",
+        "When the song ended, the host said it was one of the best student recordings the station had ever played."
+      ],
+      "breaks": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Recording Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p63",
+      "title": "Bats in the Dark",
+      "kind": "article",
+      "picture": "🦇🌙",
+      "sentences": [
+        "Most bats hunt at night, when it is too dark to see insects flying through the air.",
+        "Many bats find their food by using sound instead of sight, with a skill called echolocation.",
+        "Echolocation means finding things by listening to echoes.",
+        "As a bat flies, it makes short, high-pitched calls through its mouth or nose.",
+        "Most of these calls are too high for people to hear.",
+        "When a call hits an object, such as a moth or a tree branch, part of the sound bounces back as an echo.",
+        "The bat's large ears catch the echo.",
+        "From the echo, the bat can tell where an insect is, how big it is and which way it is moving.",
+        "An echo that comes back quickly means the object is close.",
+        "As a bat closes in on an insect, it calls faster and faster, sometimes up to about 200 times a second, so it can follow every turn.",
+        "Using echolocation, a single little brown bat can catch hundreds of insects in one night.",
+        "This makes bats helpful to farmers, because many of the insects they eat damage crops.",
+        "Bats are the only mammals that can truly fly.",
+        "Not all bats use echolocation, however, and many large fruit bats find their food by sight and smell."
+      ],
+      "breaks": [
+        3,
+        7,
+        10
+      ],
+      "topics": [
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bats in the Dark",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p64",
+      "title": "The Fossil Lab",
+      "kind": "story",
+      "picture": "🦴🔬",
+      "sentences": [
+        "Maya had visited the dinosaur hall at the Harbor Town museum many times.",
+        "But she had never seen the room behind the glass wall, where fossils are cleaned.",
+        "That changed when Dr. Bell invited the rock club to spend a Saturday in the fossil lab.",
+        "On a long table sat a lump of rock wrapped in a hard white jacket of plaster.",
+        "Dr. Bell explained that her team had found a dinosaur leg bone in that rock and had wrapped it in plaster to protect it on the trip to the museum.",
+        "She handed Maya a tool that looked like a tiny, buzzing pen.",
+        "It was called an air scribe, and it chipped away rock a few grains at a time.",
+        "Dr. Bell showed her how to hold it at a low angle and stop as soon as the color changed, because the fossil bone was darker than the rock around it.",
+        "After an hour of careful work, Maya had uncovered a patch of bone no bigger than a postage stamp.",
+        "Mr. Varga, who was working at the next table, said that preparing one large bone can take months.",
+        "Maya was surprised, but she understood why when she brushed away the dust and saw tiny lines in the bone.",
+        "Rushing could break those lines, and they might show scientists how the dinosaur's bones had grown.",
+        "At lunch, the club ate sandwiches on the museum steps and watched pigeons hop around.",
+        "In the afternoon, Maya uncovered a second patch of bone, and Dr. Bell wrote Maya's name in the lab notebook next to that day's work.",
+        "Before she left, Maya drew the bone in her sketchbook, with every tiny line in place.",
+        "She asked Dr. Bell if she could come back next month to keep working on it."
+      ],
+      "breaks": [
+        5,
+        9,
+        12
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Fossil Lab",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p65",
+      "title": "From Dough to Bread",
+      "kind": "article",
+      "picture": "🍞",
+      "sentences": [
+        "A ball of bread dough can double in size while it sits in a warm kitchen, even though nobody touches it.",
+        "The work is done by yeast, a living organism so small that billions of them fit in a teaspoon.",
+        "Bread rises because yeast makes gas, and the dough traps that gas in millions of tiny bubbles.",
+        "Yeast is a kind of fungus, like a mushroom, but each one is a single cell.",
+        "When yeast is mixed into dough with water, it becomes active and begins to feed on sugars in the flour.",
+        "As it feeds, it gives off a gas called carbon dioxide, the same gas you breathe out.",
+        "Wheat flour contains proteins that form a stretchy net called gluten when the dough is mixed and kneaded.",
+        "Kneading, which means pressing and folding the dough, makes the gluten net stronger.",
+        "The net stretches around each bubble of gas like a tiny balloon, so the gas cannot escape.",
+        "As more gas is made, the bubbles grow, and the whole dough puffs up.",
+        "In the hot oven, the gas bubbles expand even more, and the bread rises one last time.",
+        "The heat kills the yeast and sets the gluten net, so the bread keeps its shape.",
+        "When you look at a slice of bread, the small holes you see are where the gas bubbles used to be.",
+        "Some flat breads, such as tortillas, are usually made without yeast, so they stay thin.",
+        "People have baked bread with yeast for thousands of years."
+      ],
+      "breaks": [
+        3,
+        6,
+        10,
+        13
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "From Dough to Bread",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -895,12 +2215,12 @@
       "level": 2,
       "prompt": "Fill in the story map for this fable.",
       "slots": [
-        { "kind": "main", "label": "What happens", "options": ["A grasshopper teaches an ant to sing.", "An ant saves food, and a grasshopper learns to get ready for winter.", "An ant and a grasshopper build a nest."], "answer": [1] },
-        { "kind": "lesson", "label": "The lesson", "options": ["Singing is better than working.", "Snow is good for fields.", "Get ready now for what you will need later."], "answer": [2] }
+        { "kind": "main", "label": "What happens", "options": ["A young crab teaches his mother to swim.", "A mother crab tells her son to walk straight, but she cannot do it herself.", "Two crabs build a home in the sand."], "answer": [1] },
+        { "kind": "lesson", "label": "The lesson", "options": ["Crabs should always walk straight ahead.", "A beach is a good place to walk.", "Do not ask others to do what you cannot do yourself."], "answer": [2] }
       ],
-      "evidence": [1, 4, 6, 9],
-      "hint": "For the first box, think about the whole story. For the lesson, look at what the grasshopper says at the end.",
-      "explain": "The ant saves food, and the grasshopper learns to get ready for winter. The lesson is to get ready now for what you will need later.",
+      "evidence": [3, 5, 8, 10],
+      "hint": "For the first box, think about the whole story. For the lesson, look at what the mother says at the end.",
+      "explain": "A mother crab tells her son to walk straight, but she cannot do it herself. The lesson is not to ask others to do what you cannot do yourself.",
       "inference": 2,
       "transfer": true,
       "tags": ["main-idea", "lesson", "fable"]
@@ -911,12 +2231,12 @@
       "passage": "n6-p03",
       "format": "highlight",
       "level": 2,
-      "prompt": "Tap the sentence where the ant says why she is working.",
+      "prompt": "Tap the sentence where the mother says what she learned.",
       "unit": "sentence",
-      "answer": [4],
-      "evidence": [4],
-      "hint": "Find the words the ant says. Look for the season she is thinking about.",
-      "explain": "\"I am saving food for the winter,\" said the ant. That is why she works all summer.",
+      "answer": [10],
+      "evidence": [10],
+      "hint": "Find the last words the mother says. Look for what she now understands.",
+      "explain": "\"Now I understand,\" she said. \"I should not tell you to do something that I cannot do myself.\" This is what she learned.",
       "inference": 0,
       "tags": ["lesson-evidence", "fable"]
     },
@@ -1432,11 +2752,11 @@
       "frame": "This is mostly about {0}. One important detail is {1}.",
       "slots": [
         { "kind": "main", "label": "Mostly about", "options": ["a science room with new blue walls", "a team that keeps fixing its rover until it climbs a ramp", "a teacher who builds wooden ramps", "a loud cheer in the science room"], "answer": [1] },
-        { "kind": "evidence", "label": "Important detail", "options": ["that the room smelled of fresh paint", "that the club meets on Tuesdays", "that the team moved the heavy battery down low", "that a teacher from next door looked in"], "answer": [2] }
+        { "kind": "evidence", "label": "Important detail", "options": ["that the room smelled of fresh paint", "that the club meets on Wednesdays", "that the team moved the heavy battery down low", "that a teacher from next door looked in"], "answer": [2] }
       ],
       "evidence": [1, 10, 11],
       "hint": "First ask what the whole story is about. Then ask which detail changes how the story ends.",
-      "explain": "This is mostly about a team that keeps fixing its rover until it climbs a ramp. Moving the heavy battery down low is important, because it stopped the rover from tipping over. The paint, Tuesdays and the teacher next door are extra details.",
+      "explain": "This is mostly about a team that keeps fixing its rover until it climbs a ramp. Moving the heavy battery down low is important, because it stopped the rover from tipping over. The paint, Wednesdays and the teacher next door are extra details.",
       "inference": 1,
       "transfer": true,
       "tags": ["main-idea", "key-detail"]
@@ -2292,6 +3612,3586 @@
       "inference": 1,
       "tags": [
         "main-idea"
+      ]
+    },
+    {
+      "id": "n6-i70",
+      "skill": "N6",
+      "passage": "n6-p30",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "a rainy day when Maya stays inside her house",
+        "how Maya draws a chart of all her rocks",
+        "Maya tests her rocks to find the hard ones"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Think about what most of the sentences tell about, not just one.",
+      "explain": "The story is mostly about Maya testing her rocks to find the hard ones. Most sentences tell about the test. The rain is only in the first sentence, and the chart is only in the last one.",
+      "inference": 1,
+      "tags": [
+        "main-idea"
+      ]
+    },
+    {
+      "id": "n6-i71",
+      "skill": "N6",
+      "passage": "n6-p30",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Which title fits best?",
+      "options": [
+        "Which Rocks Are Hard?",
+        "A Rainy Day at Maya's House",
+        "Maya Draws a Chart"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "A good title fits the whole story. Ask: what did Maya want to find out?",
+      "explain": "\"Which Rocks Are Hard?\" fits best. Maya wanted to know which rocks were hard, and the whole story tells how she found out. The other titles fit only one sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title"
+      ]
+    },
+    {
+      "id": "n6-i72",
+      "skill": "N6",
+      "passage": "n6-p30",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Which detail is the most important?",
+      "options": [
+        "It was raining, so Maya stayed inside.",
+        "Maya got out her box of rocks.",
+        "The nail did not scratch the quartz."
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        5
+      ],
+      "hint": "Ask: which detail tells what Maya found out?",
+      "explain": "\"The nail did not scratch the quartz\" is the most important detail. It shows Maya that quartz is hard. Staying inside because of the rain and getting out the box only start the story.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i73",
+      "skill": "N6",
+      "passage": "n6-p31",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Tap the sentence that tells what the whole article is about.",
+      "unit": "sentence",
+      "answer": [
+        0
+      ],
+      "evidence": [
+        0
+      ],
+      "hint": "Find the sentence that names the topic. The other sentences add facts about it.",
+      "explain": "\"The Moon is covered with round holes called craters\" tells what the whole article is about. It is the first sentence. The next sentences tell how the craters were made and why they stay.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i74",
+      "skill": "N6",
+      "passage": "n6-p31",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "The Moon goes around Earth about once every month.",
+        "Space rocks hit the Moon and made the craters.",
+        "Twelve people have walked on the Moon."
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "First find what the article is about. Then ask: which detail tells more about the craters?",
+      "explain": "\"Space rocks hit the Moon and made the craters\" supports the main idea, because it tells how the craters were made. The other two are true, but they are not about the craters.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i75",
+      "skill": "N6",
+      "passage": "n6-p31",
+      "format": "sort",
+      "level": 1,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "Rocks from space hit the Moon.",
+          "bin": 0
+        },
+        {
+          "text": "The Moon goes around Earth once a month.",
+          "bin": 1
+        },
+        {
+          "text": "Each rock made a crater.",
+          "bin": 0
+        },
+        {
+          "text": "Twelve people have walked on the Moon.",
+          "bin": 1
+        },
+        {
+          "text": "No wind or rain wears the craters away.",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "hint": "The article is about the Moon's craters. Ask of each card: is it about the craters?",
+      "explain": "Space rocks, the craters they made, and no wind or rain are all about the craters, so they are important. The trip around Earth and the twelve people are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i76",
+      "skill": "N6",
+      "passage": "n6-p32",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "how emperor penguins stay warm",
+        "how emperor penguins catch fish",
+        "how tall emperor penguins are"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "hint": "Ask: what do most of the sentences tell about?",
+      "explain": "The article is mostly about how emperor penguins stay warm. Most sentences tell one way: fat, packed feathers and the huddle. Catching fish and being tall are each in only one sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i77",
+      "skill": "N6",
+      "passage": "n6-p32",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "They take turns in the warm middle of a huddle.",
+        "Emperor penguins are the tallest of all the penguins.",
+        "They dive deep under the ice to catch fish."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        5,
+        7
+      ],
+      "hint": "First find the main idea. Then ask: which detail is one way to stay warm?",
+      "explain": "\"They take turns in the warm middle of a huddle\" supports the main idea, because it is one way penguins stay warm. Being tall and catching fish are true, but they are not about staying warm.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i78",
+      "skill": "N6",
+      "passage": "n6-p32",
+      "format": "build",
+      "level": 2,
+      "prompt": "Build a sentence about the article. Pick the main idea. Then pick one important detail.",
+      "frame": "This is mostly about {0}. One important detail is {1}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Mostly about",
+          "options": [
+            "how emperor penguins find food",
+            "how emperor penguins stay warm",
+            "the tallest kind of penguin"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "evidence",
+          "label": "Important detail",
+          "options": [
+            "that they eat fish and squid",
+            "that they are the tallest penguins",
+            "that they have a thick layer of fat"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "First ask what most sentences are about. Then pick the detail that helps that idea.",
+      "explain": "This is mostly about how emperor penguins stay warm. An important detail is that they have a thick layer of fat. Fish, squid and their height are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i79",
+      "skill": "N6",
+      "passage": "n6-p33",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "Ana's socks that got wet on the walk to the gym",
+        "how a ball bounces fast on a wooden gym floor",
+        "a game that moved into the gym because of rain"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        4,
+        8
+      ],
+      "hint": "Think about what happens from the start of the story to the end.",
+      "explain": "The story is mostly about a soccer game that moved into the gym because of rain. The wet socks and the bouncing ball are each in only one sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n6-i80",
+      "skill": "N6",
+      "passage": "n6-p33",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which detail is the most important?",
+      "options": [
+        "Coach Novak moved the game into the school gym.",
+        "Ana's socks got wet on the walk to the gym.",
+        "In the gym, the ball bounced fast on the wooden floor."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Ask: which detail tells how the team could still play in the rain?",
+      "explain": "The most important detail is that Coach Novak moved the game into the school gym. Without it, there would be no game. The wet socks and the wooden floor are extra details.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n6-i81",
+      "skill": "N6",
+      "passage": "n6-p33",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which title fits best?",
+      "options": [
+        "Ana's Wet Socks on Game Day",
+        "A Ball on a Wooden Floor",
+        "The Rainy Day Gym Game"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        4,
+        8
+      ],
+      "hint": "A good title fits the whole story, not just one sentence.",
+      "explain": "\"The Rainy Day Gym Game\" fits best. The rain moved the game into the gym, and the team played there. The other titles fit only one sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title"
+      ]
+    },
+    {
+      "id": "n6-i82",
+      "skill": "N6",
+      "passage": "n6-p34",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "where to look for a second, fainter rainbow",
+        "how raindrops bend sunlight into colors",
+        "the order of the colors in a second rainbow"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "hint": "Ask: what do most of the sentences explain?",
+      "explain": "The article is mostly about how raindrops bend sunlight into colors. The second rainbow and the order of its colors are only extra details at the end.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i83",
+      "skill": "N6",
+      "passage": "n6-p34",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "Sunlight is made of many colors.",
+          "bin": 0
+        },
+        {
+          "text": "A second rainbow can appear above the first.",
+          "bin": 1
+        },
+        {
+          "text": "A raindrop bends the light.",
+          "bin": 0
+        },
+        {
+          "text": "The second rainbow's colors are in the opposite order.",
+          "bin": 1
+        },
+        {
+          "text": "Each color bends by its own amount.",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        3,
+        8,
+        9
+      ],
+      "hint": "First say the main idea in your head. Then ask of each card: does it explain how a rainbow is made?",
+      "explain": "Sunlight's many colors, the bending in the raindrop and each color bending by its own amount explain how a rainbow is made, so they are important. The second rainbow and its colors are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i84",
+      "skill": "N6",
+      "passage": "n6-p34",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which title fits best?",
+      "options": [
+        "The Second, Fainter Rainbow",
+        "Red on the Outside, Violet Inside",
+        "How Raindrops Make a Rainbow"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        2,
+        3
+      ],
+      "hint": "A good title fits the whole article, not just one fact.",
+      "explain": "\"How Raindrops Make a Rainbow\" fits best, because most sentences explain how raindrops bend sunlight into colors. The other titles fit only one sentence each.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i85",
+      "skill": "N6",
+      "passage": "n6-p35",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "a map that Sam drew to help a new student",
+        "a small train that Sam drew in one corner",
+        "the office, the gym and the library at school"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2,
+        6
+      ],
+      "hint": "Ask: what problem did the new student have, and what did Sam do about it?",
+      "explain": "The story is mostly about a map that Sam drew to help a new student. The train drawing and the gym are only small parts of the map.",
+      "inference": 1,
+      "tags": [
+        "main-idea"
+      ]
+    },
+    {
+      "id": "n6-i86",
+      "skill": "N6",
+      "passage": "n6-p35",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which title fits best?",
+      "options": [
+        "The Red Star on the Classroom",
+        "A Map for the New Student",
+        "Lunch on a Monday at School"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2,
+        6
+      ],
+      "hint": "A good title fits the whole story. Ask: what is the story about from start to end?",
+      "explain": "\"A Map for the New Student\" fits best. The whole story is about the map Sam drew and how it helped her. The red star and lunch fit only one sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title"
+      ]
+    },
+    {
+      "id": "n6-i87",
+      "skill": "N6",
+      "passage": "n6-p35",
+      "format": "build",
+      "level": 2,
+      "prompt": "Build a sentence about the story. Pick the main idea. Then pick one important detail.",
+      "frame": "This is mostly about {0}. One important detail is {1}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Mostly about",
+          "options": [
+            "a train in the corner of a page",
+            "a map that helps a new student",
+            "the school library"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "evidence",
+          "label": "Important detail",
+          "options": [
+            "that Sam drew a small train for fun",
+            "that Sam drew the map at lunch",
+            "that she found the music room by herself with the map"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        6
+      ],
+      "hint": "First ask what the whole story is about. Then pick the detail that shows the map worked.",
+      "explain": "This is mostly about a map that helps a new student. An important detail is that she found the music room by herself with the map. The train and the time of day are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i88",
+      "skill": "N6",
+      "passage": "n6-p36",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the sentence that tells the main idea.",
+      "unit": "sentence",
+      "answer": [
+        1
+      ],
+      "evidence": [
+        1
+      ],
+      "hint": "Ask: which sentence could sum up the whole article? The other sentences explain it or add facts.",
+      "explain": "\"It pops because of a tiny drop of water inside each kernel\" tells the main idea. It is the second sentence. The next sentences explain how the water makes the kernel pop.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i89",
+      "skill": "N6",
+      "passage": "n6-p36",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which title fits best?",
+      "options": [
+        "Butter or Salt on Your Popcorn?",
+        "People Ate Popcorn Long Ago",
+        "What Makes Popcorn Pop"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        3,
+        5
+      ],
+      "hint": "A good title fits the whole article, not just the last sentences.",
+      "explain": "\"What Makes Popcorn Pop\" fits best, because most sentences explain how water and steam burst the kernel. Butter, salt and popcorn long ago are extra details.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i90",
+      "skill": "N6",
+      "passage": "n6-p36",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "The steam pushes on the shell until it bursts.",
+        "People have eaten popcorn for thousands of years.",
+        "Some people like popcorn with butter or salt."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        4,
+        5
+      ],
+      "hint": "First find the main idea. Then ask: which detail explains how the kernel pops?",
+      "explain": "\"The steam pushes on the shell until it bursts\" supports the main idea, because it explains how the water makes the kernel pop. The other two are true, but they do not explain the pop.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i91",
+      "skill": "N6",
+      "passage": "n6-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "how big the leatherback, the largest sea turtle, can grow",
+        "why sea turtles cannot pull their heads into their shells",
+        "how baby turtles hatch and hurry to the water",
+        "a mother turtle's trip back to her own beach to lay eggs"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        2,
+        6
+      ],
+      "hint": "Ask: what do most of the sentences tell about? A fact at the end can still be only one detail.",
+      "explain": "The article is mostly about a mother sea turtle's long trip back to her own beach to lay eggs. Most sentences tell about that trip and the eggs. The leatherback, the shells and the babies are each in only one sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i92",
+      "skill": "N6",
+      "passage": "n6-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "Turtles may use Earth's magnetic field to find their way back.",
+        "Sea turtles cannot pull their heads into their shells the way many land turtles can.",
+        "The leatherback can weigh more than 500 kilograms."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        4
+      ],
+      "hint": "First find the main idea. Then ask: which detail tells more about the trip back to the beach?",
+      "explain": "\"Turtles may use Earth's magnetic field to find their way back\" supports the main idea, because it tells how the turtle finds her beach. The shells and the leatherback's weight are true, but they are not about the trip.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i93",
+      "skill": "N6",
+      "passage": "n6-p37",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "She swims back to the beach where she hatched.",
+          "bin": 0
+        },
+        {
+          "text": "Sea turtles cannot pull their heads into their shells.",
+          "bin": 1
+        },
+        {
+          "text": "Some turtles swim thousands of kilometers.",
+          "bin": 0
+        },
+        {
+          "text": "She lays about one hundred eggs in the sand.",
+          "bin": 0
+        },
+        {
+          "text": "The leatherback is the biggest kind.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        6,
+        9,
+        10
+      ],
+      "hint": "First say the main idea in your head. Then ask of each card: is it part of the trip to lay eggs?",
+      "explain": "Swimming back to her beach, swimming thousands of kilometers and laying the eggs are parts of the trip, so they are important. The shells and the leatherback are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i94",
+      "skill": "N6",
+      "passage": "n6-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "Ben playing a video game in the next room",
+        "a school gym full of families on concert night",
+        "Ana practicing until she can play her solo well",
+        "the yellow flowers Ana got after the concert"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        4,
+        6,
+        9
+      ],
+      "hint": "Think about what the story talks about from start to end, not just one part.",
+      "explain": "The story is mostly about Ana practicing until she can play her solo well. It starts with the hard high note and ends when she plays it clearly. The video game, the full gym and the flowers are each only one sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i95",
+      "skill": "N6",
+      "passage": "n6-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which detail is the most important?",
+      "options": [
+        "Ana practiced the solo ten times every day.",
+        "In the next room, Ben wore headphones and played a video game.",
+        "After the concert, her parents gave her yellow flowers."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        6
+      ],
+      "hint": "Ask: what changed the high note from a squeak to a clear sound?",
+      "explain": "The most important detail is that Ana practiced the solo ten times every day. That practice made the high note clear. The headphones and the flowers do not change how the story ends.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i96",
+      "skill": "N6",
+      "passage": "n6-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which title fits best?",
+      "options": [
+        "A Night of Yellow Flowers",
+        "Ben's Video Game Next Door",
+        "A School Gym Full of Families",
+        "Ana Works on Her Solo"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        4,
+        8
+      ],
+      "hint": "A good title fits the whole story. Ask: what does Ana do from the start to the end?",
+      "explain": "\"Ana Works on Her Solo\" fits best. The whole story follows Ana from the squeaky note to a clear solo. The other titles fit only one sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i97",
+      "skill": "N6",
+      "passage": "n6-p39",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that tells the main idea.",
+      "unit": "sentence",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Ask: what do most sentences describe? Find the one sentence that says that for the whole article.",
+      "explain": "\"Scientists think each part of that head helped it in a different way\" tells the main idea. It is the third sentence, and the sentences after it describe the horns, the frill and the beak. The first sentence only says what Triceratops was.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i98",
+      "skill": "N6",
+      "passage": "n6-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "Triceratops lived in what is now North America.",
+        "It used its sharp beak to bite off tough plants.",
+        "Its name means \"three-horned face.\"",
+        "It lived about 66 million years ago, near the end of the time of the dinosaurs."
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        7,
+        8
+      ],
+      "hint": "First find the main idea. Then ask: which detail tells how one part of the head helped it?",
+      "explain": "\"It used its sharp beak to bite off tough plants\" supports the main idea, because it tells how one part of the head helped. The name, the place and the time are true, but they do not tell what a part of the head did.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i99",
+      "skill": "N6",
+      "passage": "n6-p39",
+      "format": "build",
+      "level": 3,
+      "prompt": "Build a sentence about the article. Pick the main idea. Then pick one important detail.",
+      "frame": "This is mostly about {0}. One important detail is {1}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Mostly about",
+          "options": [
+            "where Triceratops lived",
+            "how each part of a Triceratops head helped it",
+            "what the name Triceratops means"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "evidence",
+          "label": "Important detail",
+          "options": [
+            "that it lived about 66 million years ago",
+            "that it lived in North America",
+            "that its frill may have helped it show off"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        5,
+        6
+      ],
+      "hint": "First ask what most sentences describe. Then pick the detail about one part of the head.",
+      "explain": "This is mostly about how each part of a Triceratops head helped it. An important detail is that its frill may have helped it show off. The time and the place are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i100",
+      "skill": "N6",
+      "passage": "n6-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "Ana kicking ball after ball at Ben during practice",
+        "how to wash grass stains out of a soccer shirt",
+        "a goalkeeper who catches a bad cold before a game",
+        "Ben learns to play in goal when his team needs him"
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        4,
+        8
+      ],
+      "hint": "Ask: what happens to Ben from the start of the story to the end?",
+      "explain": "The story is mostly about Ben learning to play in goal when his team needs him. The kicks, the grass stains and the cold are each only one part of the story.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i101",
+      "skill": "N6",
+      "passage": "n6-p40",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "The team's goalkeeper was sick.",
+          "bin": 0
+        },
+        {
+          "text": "Ben's shirt took two washes to come clean.",
+          "bin": 1
+        },
+        {
+          "text": "Ana kicked ball after ball at Ben.",
+          "bin": 0
+        },
+        {
+          "text": "The game started at ten o'clock.",
+          "bin": 1
+        },
+        {
+          "text": "Ben stopped six shots on Saturday.",
+          "bin": 0
+        },
+        {
+          "text": "Ben's shirt was covered in grass stains.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "hint": "First say the main idea in your head. Then ask of each card: would the story still make sense without it?",
+      "explain": "The sick goalkeeper, Ana's practice kicks and Ben's six saves are the problem, the practice and the result, so they are important. The start time and the grass stains are true, but the story makes sense without them.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i102",
+      "skill": "N6",
+      "passage": "n6-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "The game started at ten o'clock on Saturday morning.",
+        "Ben's grass-stained shirt took two washes to come clean.",
+        "Ana taught Ben to keep his eyes on the ball."
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "First find the main idea. Then ask: which detail shows how Ben got ready to play in goal?",
+      "explain": "\"Ana taught Ben to keep his eyes on the ball\" supports the main idea, because it shows how Ben learned to be a goalkeeper. The start time and the washing are extra details.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i103",
+      "skill": "N6",
+      "passage": "n6-p41",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that tells the main idea.",
+      "unit": "sentence",
+      "answer": [
+        1
+      ],
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Ask: which sentence could sum up the whole article? The sentences after it should explain it.",
+      "explain": "\"The reason is the special shape of its wheels\" tells the main idea. It is the second sentence, and most sentences after it explain the shape of the wheels.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i104",
+      "skill": "N6",
+      "passage": "n6-p41",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which detail is the most important?",
+      "options": [
+        "Each wheel has a lip, called a flange, that sits inside the rail.",
+        "Steel wheels on steel rails roll easily, so trains use less fuel than trucks.",
+        "Many early trains were pulled by steam engines."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "hint": "First find the main idea. Then ask: which detail is about the shape of the wheels?",
+      "explain": "The most important detail is that each wheel has a lip, called a flange, that sits inside the rail. It is part of the special wheel shape that keeps the train on the track. Fuel and steam engines are true, but they are extra details.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i105",
+      "skill": "N6",
+      "passage": "n6-p41",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which title fits best?",
+      "options": [
+        "The Steam Engines of Long Ago",
+        "Why Train Wheels Do Not Slide Off",
+        "Why Trains Use Less Fuel Than Trucks",
+        "Steel Rails"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        3,
+        6
+      ],
+      "hint": "A good title fits the whole article, not just one sentence.",
+      "explain": "\"Why Train Wheels Do Not Slide Off\" fits best, because most of the article explains how the shape of the wheels keeps a train on the track. The other titles fit only one sentence each.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i106",
+      "skill": "N6",
+      "passage": "n6-p42",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "why some families give their robot vacuum a name",
+        "how robot vacuums are thin enough to clean under a bed",
+        "how a robot vacuum uses sensors to find its way",
+        "how a robot vacuum gets back to its charger when the battery is low"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "hint": "Ask: what do most of the sentences explain? The last facts may be only extra details.",
+      "explain": "The article is mostly about how a robot vacuum uses sensors to find its way around a room. Most sentences describe a sensor or a map. Names, being thin and the trip back to the charger are each only one sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i107",
+      "skill": "N6",
+      "passage": "n6-p42",
+      "format": "build",
+      "level": 3,
+      "prompt": "Build a sentence about the article. Pick the main idea. Then pick one important detail.",
+      "frame": "This is mostly about {0}. One important detail is {1}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Mostly about",
+          "options": [
+            "how to name a robot",
+            "how a robot vacuum uses sensors to find its way",
+            "cleaning under a bed"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "evidence",
+          "label": "Important detail",
+          "options": [
+            "that it is thin",
+            "that some families name it",
+            "that cliff sensors stop it from going down the stairs"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        1,
+        4,
+        5
+      ],
+      "hint": "First ask what most sentences explain. Then pick the detail about a sensor.",
+      "explain": "This is mostly about how a robot vacuum uses sensors to find its way. An important detail is that cliff sensors stop it from going down the stairs. Being thin and having a name are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i108",
+      "skill": "N6",
+      "passage": "n6-p42",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "Some families give their robot vacuum a name.",
+        "A bump sensor tells the robot to turn when it hits a chair.",
+        "Most robot vacuums are thin enough to go under a bed and clean there."
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "First find the main idea. Then ask: which detail shows a sensor at work?",
+      "explain": "\"A bump sensor tells the robot to turn when it hits a chair\" supports the main idea, because it shows a sensor helping the robot find its way. Names and being thin are extra details.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i109",
+      "skill": "N6",
+      "passage": "n6-p43",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which title fits best?",
+      "options": [
+        "Fixing the Story Woods Trail",
+        "Leo Finds a Shiny Green Beetle",
+        "Lunch on a Log by the Creek",
+        "After a Windy Week"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        3,
+        9
+      ],
+      "hint": "A good title fits the whole story. Ask: what did the friends spend the day doing?",
+      "explain": "\"Fixing the Story Woods Trail\" fits best, because the friends spend the whole day clearing and fixing the trail. The beetle, the lunch and the windy week each fit only one sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i110",
+      "skill": "N6",
+      "passage": "n6-p43",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which detail is the most important?",
+      "options": [
+        "Leo found a beetle with a shiny green back and named it Gus.",
+        "At noon, they ate lunch on a log by the creek.",
+        "They dragged the fallen branches off the path."
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Ask: what was wrong with the trail at the start? Find the detail that fixed it.",
+      "explain": "The most important detail is that they dragged the fallen branches off the path. The branches were the problem at the start. The beetle and the lunch are extra details.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i111",
+      "skill": "N6",
+      "passage": "n6-p43",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "Branches had fallen across the trail.",
+          "bin": 0
+        },
+        {
+          "text": "Leo named a beetle Gus.",
+          "bin": 1
+        },
+        {
+          "text": "They filled muddy holes with gravel.",
+          "bin": 0
+        },
+        {
+          "text": "They ate lunch on a log.",
+          "bin": 1
+        },
+        {
+          "text": "Maya painted new marks on the trees.",
+          "bin": 0
+        },
+        {
+          "text": "The beetle had a shiny green back.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        5,
+        6,
+        7,
+        8
+      ],
+      "hint": "First say the main idea in your head. Then ask of each card: is it part of fixing the trail?",
+      "explain": "The fallen branches, the gravel and the new marks are about fixing the trail, so they are important. The beetle, its green back and the lunch are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i112",
+      "skill": "N6",
+      "passage": "n6-p44",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "the California gold rush that began in 1848",
+        "why some people still pan for gold for fun today",
+        "how much heavier gold is than water",
+        "how panning uses the weight of gold to find it"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        4,
+        5
+      ],
+      "hint": "Ask: what do most of the sentences explain? A date near the end can still be only one detail.",
+      "explain": "The article is mostly about how panning uses the weight of gold to find it. Most sentences explain one step of panning. The gold rush and panning for fun are each one extra detail.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i113",
+      "skill": "N6",
+      "passage": "n6-p44",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that tells the main idea.",
+      "unit": "sentence",
+      "answer": [
+        1
+      ],
+      "evidence": [
+        1
+      ],
+      "hint": "Ask: which sentence tells what panning is and why it works?",
+      "explain": "\"This is called panning, and it works because gold is much heavier than sand and pebbles\" tells the main idea. It is the second sentence. The next sentences show the steps.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i114",
+      "skill": "N6",
+      "passage": "n6-p44",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "The heavy gold sinks to the bottom of the pan.",
+        "In 1848, gold was found in California, and thousands of people rushed there.",
+        "Today, some people still pan for gold for fun."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        4
+      ],
+      "hint": "First find the main idea. Then ask: which detail shows the weight of gold at work?",
+      "explain": "\"The heavy gold sinks to the bottom of the pan\" supports the main idea, because it shows why panning works. The gold rush and panning for fun are true, but they do not explain how panning works.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i115",
+      "skill": "N6",
+      "passage": "n6-p45",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "a chess game that Ben won against Ana for the first time",
+        "how the twins helped stop game pieces from going missing",
+        "a word game that was missing half its letter tiles",
+        "a sunny window next to the library's game shelf"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        3,
+        5,
+        10
+      ],
+      "hint": "Ask: what was the problem at the start, and how did it end?",
+      "explain": "The story is mostly about how the twins helped stop board game pieces from going missing. The chess win, the window and the word game are each only one part of the story.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i116",
+      "skill": "N6",
+      "passage": "n6-p45",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that shows the twins' plan worked.",
+      "unit": "sentence",
+      "answer": [
+        10
+      ],
+      "evidence": [
+        10
+      ],
+      "hint": "Find the problem in the second sentence. Then look for a later sentence that says the problem stopped.",
+      "explain": "\"A month later, almost every game came back with all its pieces\" shows the plan worked. It is an important detail, because it tells how the problem ended. Ben's chess win comes after it, but it does not show the plan worked.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i117",
+      "skill": "N6",
+      "passage": "n6-p45",
+      "format": "build",
+      "level": 3,
+      "prompt": "Build a sentence about the story. Pick the main idea. Then pick one important detail.",
+      "frame": "This is mostly about {0}. One important detail is {1}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Mostly about",
+          "options": [
+            "a sunny library window",
+            "a plan to stop game pieces from going missing",
+            "a chess match between twins"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "evidence",
+          "label": "Important detail",
+          "options": [
+            "that the sun shines in the afternoon",
+            "that Ben beat Ana at chess",
+            "that they taped a checklist inside each lid"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        1,
+        5,
+        6
+      ],
+      "hint": "First ask what the whole story is about. Then pick the detail that is part of the plan.",
+      "explain": "This is mostly about a plan to stop game pieces from going missing. An important detail is that they taped a checklist inside each lid. The sunny window and the chess win are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i118",
+      "skill": "N6",
+      "passage": "n6-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "how the crew sleeps in sleeping bags tied to the walls of small cabins",
+        "why the crew must exercise for about two hours every day",
+        "how the crew does daily tasks in new ways because everything floats",
+        "how fast the station circles Earth and how many sunrises the crew sees"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        4,
+        5,
+        10
+      ],
+      "hint": "Ask: what is every paragraph about? The main idea fits sleeping, drinking and exercise.",
+      "explain": "The article is mostly about how the crew does everyday things in new ways because everything floats. Sleeping, drinks and exercise are all examples of that. The sleeping bags and the exercise are each one example, and the station's speed is only one fact in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i119",
+      "skill": "N6",
+      "passage": "n6-p46",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that tells the main idea of the whole article.",
+      "unit": "sentence",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Look in the first paragraph. Ask: which sentence could sum up all four paragraphs?",
+      "explain": "\"Because everything on board floats, even simple daily tasks must be done in a new way\" tells the main idea. It ends the first paragraph, and the next paragraphs show sleeping, drinking and exercise done in new ways. The first two sentences only tell where the station is and how fast it goes.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i120",
+      "skill": "N6",
+      "passage": "n6-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the main idea of the third paragraph?",
+      "options": [
+        "The crew runs on a treadmill while straps hold them down.",
+        "On Earth, gravity pulls on bones and muscles all day and keeps them strong.",
+        "Everything on the space station floats, so daily tasks are done in a new way.",
+        "Floating makes bones and muscles weaker, so the crew must exercise every day."
+      ],
+      "answer": 3,
+      "evidence": [
+        7,
+        9,
+        10
+      ],
+      "hint": "Read only the third paragraph. Ask: what are all of its sentences about?",
+      "explain": "The main idea of the third paragraph is that floating makes bones and muscles weaker, so the crew must exercise every day. The treadmill and gravity on Earth are details inside that paragraph. Everything floating, so daily tasks are done in a new way, is the idea of the whole article.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i121",
+      "skill": "N6",
+      "passage": "n6-p46",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "The crew sleeps in bags tied to the wall.",
+          "bin": 0
+        },
+        {
+          "text": "The station is about 400 kilometers above Earth.",
+          "bin": 1
+        },
+        {
+          "text": "Drinks come in pouches with straws.",
+          "bin": 0
+        },
+        {
+          "text": "The crew sees around 16 sunrises a day.",
+          "bin": 1
+        },
+        {
+          "text": "The crew runs on a treadmill with straps.",
+          "bin": 0
+        },
+        {
+          "text": "People have lived on the station since 2000.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        4,
+        5,
+        11,
+        12
+      ],
+      "hint": "The main idea is that daily tasks are done in a new way because everything floats. Ask of each card: is it a daily task done in a new way?",
+      "explain": "Sleeping in bags on the wall, drinking from pouches and running with straps are daily tasks done in a new way, so they are important. The station's height, the 16 sunrises and the year 2000 are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i122",
+      "skill": "N6",
+      "passage": "n6-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "No one sentence tells the main idea of this article. Which choice tells it best?",
+      "options": [
+        "The anglerfish uses a glowing lure that hangs in front of its mouth to catch small fish.",
+        "Animals in the deep sea have ways to live with darkness, cold, little food and heavy water.",
+        "The deepest known spot in the ocean, the Challenger Deep, is about 11,000 meters down.",
+        "Sunlight fades as the ocean gets deeper, and below 1,000 meters it is completely dark."
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        8,
+        10,
+        11
+      ],
+      "hint": "Say in a few words what each paragraph is about. Then join those ideas into one.",
+      "explain": "The main idea is that animals in the deep sea have ways to live with darkness, cold, little food and heavy water. The first paragraph describes the place, and the others show how animals live there. The anglerfish, the deepest spot and the fading sunlight are true, but each fits only one paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "implied-main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i123",
+      "skill": "N6",
+      "passage": "n6-p47",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that tells the main idea of the second paragraph.",
+      "unit": "sentence",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Read only the second paragraph. Ask: which sentence do the other sentences in it explain?",
+      "explain": "\"In the darkness, many animals make their own light\" tells the main idea of the second paragraph. The name of the light, the anglerfish and the flashing are examples that explain it.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i124",
+      "skill": "N6",
+      "passage": "n6-p47",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build a sentence about the article. Pick the main idea. Then pick one important detail.",
+      "frame": "This is mostly about {0}. One important detail is {1}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Mostly about",
+          "options": [
+            "how deep the Challenger Deep is",
+            "how deep-sea animals live in a dark, cold place with little food",
+            "how sunlight fades in water",
+            "what an anglerfish eats"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "evidence",
+          "label": "Important detail",
+          "options": [
+            "that the deepest known spot has a name",
+            "that sunlight shines into the top part of the ocean",
+            "that many deep-sea animals make their own light",
+            "that light fades as the water gets deeper"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        8,
+        10
+      ],
+      "hint": "First join the ideas of all the paragraphs. Then pick the detail that shows how animals live there.",
+      "explain": "This is mostly about how deep-sea animals live in a dark, cold place with little food. An important detail is that many deep-sea animals make their own light. The name of the deepest spot is an extra detail, and the sunlight choices describe the water, not how the animals live.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "key-detail",
+        "implied-main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i125",
+      "skill": "N6",
+      "passage": "n6-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "No one sentence tells the main idea of this story. Which choice tells it best?",
+      "options": [
+        "A boy in a dinosaur shirt asks if he can come back to the workshop next week.",
+        "Two girls both want to hold the only screwdriver, so Priya gives them separate jobs.",
+        "Priya learns that beginners need her to slow down and go one step at a time.",
+        "By the end of the hour, six small robots are rolling across the library carpet."
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        7,
+        8,
+        13
+      ],
+      "hint": "Compare what Priya thought at the start with what she did and said at the end.",
+      "explain": "The main idea is that Priya learns that teaching beginners means slowing down and explaining one step at a time. At the start she thought it would be easy. Then she started again, one step at a time. The boy, the robots and the screwdriver are details.",
+      "inference": 2,
+      "tags": [
+        "main-idea",
+        "implied-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i126",
+      "skill": "N6",
+      "passage": "n6-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the main idea of the second paragraph?",
+      "options": [
+        "Every table had a problem, because Priya's steps were too hard for beginners.",
+        "One boy connected his wires backward, so his robot drove in reverse.",
+        "A small boy in a dinosaur shirt had not started, because he did not understand the first step.",
+        "Priya learns that teaching beginners takes patience and slow steps."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        7
+      ],
+      "hint": "Read only the second paragraph. Ask: what are all of its sentences about?",
+      "explain": "The main idea of the second paragraph is that every table had a problem, because Priya's steps were too hard for beginners. The wires and the boy who had not started are two of the problems. Learning patience is the idea of the whole story, not this paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i127",
+      "skill": "N6",
+      "passage": "n6-p48",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "Every table had a problem within ten minutes.",
+          "bin": 0
+        },
+        {
+          "text": "A boy wore a dinosaur shirt.",
+          "bin": 1
+        },
+        {
+          "text": "Priya started again, one step at a time.",
+          "bin": 0
+        },
+        {
+          "text": "The workshop was on a Saturday morning.",
+          "bin": 1
+        },
+        {
+          "text": "She waited until every table was ready before she moved on.",
+          "bin": 0
+        },
+        {
+          "text": "Priya walked home with her mom.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        6,
+        8,
+        9,
+        13
+      ],
+      "hint": "First say the main idea in your head. Then ask of each card: does it show what went wrong or how Priya changed her teaching?",
+      "explain": "The problems at every table, starting again and waiting for every table show how Priya's teaching changed, so they are important. The dinosaur shirt, Saturday morning and the walk home are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i128",
+      "skill": "N6",
+      "passage": "n6-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which detail is the most important?",
+      "options": [
+        "The boy in the dinosaur shirt had not started at all.",
+        "The workshop was held in the Harbor Town library on Saturday.",
+        "Priya arrived early, set out the motors and wheels, and wrote the steps on the whiteboard.",
+        "Priya showed each part and waited for every table to be ready."
+      ],
+      "answer": 3,
+      "evidence": [
+        9,
+        11
+      ],
+      "hint": "Ask: what changed the workshop from every table having a problem to six robots rolling?",
+      "explain": "The most important detail is that Priya showed each part and waited for every table to be ready. That change made the workshop work. Writing the steps on the whiteboard was her first plan, and it did not work. The boy who had not started and the place are only details.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i129",
+      "skill": "N6",
+      "passage": "n6-p49",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that tells the main idea of the whole article.",
+      "unit": "sentence",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Look in the first paragraph. Ask: which sentence names the ideas that the next paragraphs explain?",
+      "explain": "\"Instead, most of them get through the winter in one of three ways: they leave, they sleep, or they change how they live\" tells the main idea. Each paragraph after it explains one of the three ways.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i130",
+      "skill": "N6",
+      "passage": "n6-p49",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that tells the main idea of the third paragraph.",
+      "unit": "sentence",
+      "answer": [
+        6
+      ],
+      "evidence": [
+        6
+      ],
+      "hint": "Read only the third paragraph. Ask: which sentence do the other sentences in it explain?",
+      "explain": "\"Other animals hibernate, which means they go into a deep sleep for the winter\" tells the main idea of the third paragraph. The heartbeat, the woodchuck and the stored fat explain it. The main idea of the whole article is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i131",
+      "skill": "N6",
+      "passage": "n6-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "Some squirrels forget where they buried nuts, and the nuts grow into trees.",
+        "Animals that live in cold places cannot buy a coat or switch on a heater.",
+        "Monarch butterflies fly thousands of kilometers to forests in Mexico.",
+        "In cold places, winter days grow short and freezing, and food is hard to find."
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        3,
+        5
+      ],
+      "hint": "First find the three ways in the main idea. Then ask: which detail is an example of one of them?",
+      "explain": "\"Monarch butterflies fly thousands of kilometers to forests in Mexico\" supports the main idea, because it is an example of leaving for the winter. The trees from forgotten nuts are an extra detail, and the coat and the short days only describe the problem.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i132",
+      "skill": "N6",
+      "passage": "n6-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "Sam uses a map to plan an easier bike route to the lookout",
+        "a fish-shaped bell that Mr. Okafor gives to Leo at the shop",
+        "why Ridge Road is steep, narrow and busy with trucks",
+        "the view of the harbor from the lookout in Lantern Peaks"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        6,
+        11
+      ],
+      "hint": "Ask: what is every paragraph about? The main idea fits the plan and the ride.",
+      "explain": "The story is mostly about Sam using a map to plan an easier bike route to the lookout. The fish bell, the trucks and the view are each only one part of the story.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "too-narrow",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n6-i133",
+      "skill": "N6",
+      "passage": "n6-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the main idea of the second paragraph?",
+      "options": [
+        "Sam traces every street with a bike lane, using a green pencil.",
+        "Sam plans a Saturday bike ride to the lookout with Leo and Priya.",
+        "Sam reads the map to find a road that is less steep and has a bike lane.",
+        "Mill Road is two kilometers longer than Ridge Road, but it has a bike lane."
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "hint": "Read only the second paragraph. Ask: what are all of its sentences about?",
+      "explain": "The main idea of the second paragraph is that Sam reads the map's lines to find a road that is less steep and has a bike lane. The green pencil and the extra two kilometers are details in it. Planning the whole ride is the idea of the whole story, not one paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i134",
+      "skill": "N6",
+      "passage": "n6-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which detail is the most important?",
+      "options": [
+        "Leo rang his fish bell the whole afternoon.",
+        "At the top, they ate apples and looked down at the harbor.",
+        "Sam spread the map on the kitchen table on Thursday evening.",
+        "Close contour lines showed that Ridge Road was steep."
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Ask: what did the map tell Sam that helped him choose a different road?",
+      "explain": "The most important detail is that close contour lines showed that Ridge Road was steep. That is how Sam knew to choose another road. The bell and the apples are extra details, and the kitchen table only tells where he looked at the map.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i135",
+      "skill": "N6",
+      "passage": "n6-p50",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "Ridge Road was steep and busy.",
+          "bin": 0
+        },
+        {
+          "text": "Mr. Okafor gave Leo a fish-shaped bell.",
+          "bin": 1
+        },
+        {
+          "text": "Mill Road curved gently around the hill.",
+          "bin": 0
+        },
+        {
+          "text": "They ate apples at the top.",
+          "bin": 1
+        },
+        {
+          "text": "Mill Road had a bike lane almost the whole way.",
+          "bin": 0
+        },
+        {
+          "text": "Sam's pencil was green.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        1,
+        3,
+        6,
+        7,
+        10,
+        13
+      ],
+      "hint": "First say the main idea in your head. Then ask of each card: did it help Sam choose the route?",
+      "explain": "Ridge Road being steep and Mill Road being gentle with a bike lane are why Sam chose his route, so they are important. The fish bell, the apples and the pencil's color are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i136",
+      "skill": "N6",
+      "passage": "n6-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which title fits best?",
+      "options": [
+        "From Key to Hammer to String",
+        "Why the Iron Frame Is So Strong",
+        "Why the Right Pedal Matters",
+        "A Visit from the Piano Tuner"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "hint": "A good title fits every paragraph, not just one interesting fact.",
+      "explain": "\"From Key to Hammer to String\" fits best, because the article explains how pressing a key makes a hammer strike the strings. The iron frame, the pedal and the tuner are each only one detail.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i137",
+      "skill": "N6",
+      "passage": "n6-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the main idea of the last paragraph?",
+      "options": [
+        "A piano tuner adjusts the strings once or twice a year to keep the notes correct.",
+        "A damper is a felt pad that drops onto the strings.",
+        "Dampers stop the sound, and the right pedal lifts them so notes keep ringing.",
+        "Every note begins when you press a key and a hammer strikes the strings."
+      ],
+      "answer": 2,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Read only the last paragraph. Ask: what do most of its sentences explain?",
+      "explain": "The main idea of the last paragraph is that dampers stop the sound, and the right pedal lifts them so notes keep ringing. The tuner is an extra detail, the felt pad is only part of the idea, and the hammer striking the strings is the idea of the whole article.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i138",
+      "skill": "N6",
+      "passage": "n6-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "A piano tuner adjusts the strings once or twice a year.",
+        "The strings pull so hard on the frame that it must be made of iron.",
+        "A piano looks like a large wooden box with keys.",
+        "Pressing a key pushes a felt hammer up to hit the strings."
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "hint": "First find the main idea in the first paragraph. Then ask: which detail shows a step from the key to the string?",
+      "explain": "\"Pressing a key pushes a felt hammer up to hit the strings\" supports the main idea, because it shows how pressing a key makes a hammer strike the strings. The tuner, the iron frame and the wooden box are true, but they are not steps in making a note.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i139",
+      "skill": "N6",
+      "passage": "n6-p52",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "a warm day with a breeze coming off the harbor",
+        "two girls who plan picnic food so every student can eat",
+        "the menu cards that Maya drew, with a tomato in sunglasses",
+        "Grandma Rose's oat bars, made with no nuts at all"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        4,
+        5,
+        12
+      ],
+      "hint": "Ask: what is every paragraph about? Look at the goal in the first paragraph and how the story ends.",
+      "explain": "The story is mostly about two girls who plan picnic food so that every student can eat. The weather, the cartoon tomato and the oat bars are each only one detail.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i140",
+      "skill": "N6",
+      "passage": "n6-p52",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build a sentence about the story. Pick the main idea. Then pick one important detail.",
+      "frame": "This is mostly about {0}. One important detail is {1}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Mostly about",
+          "options": [
+            "planning a picnic so every student can eat",
+            "drawing menu cards",
+            "baking oat bars",
+            "the weather on picnic day"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "evidence",
+          "label": "Important detail",
+          "options": [
+            "that a tomato on a card wore sunglasses",
+            "that they crossed out every food with nuts",
+            "that a breeze came off the harbor",
+            "that the picnic was at the end of the year"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        1,
+        4
+      ],
+      "hint": "First ask what the girls wanted. Then pick the detail that helped them get it.",
+      "explain": "This is mostly about planning a picnic so every student can eat. An important detail is that they crossed out every food with nuts, so Ana could eat. The sunglasses, the breeze and the time of year are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i141",
+      "skill": "N6",
+      "passage": "n6-p52",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the main idea of the second paragraph?",
+      "options": [
+        "They crossed out the cookies, the trail mix and the walnut bread.",
+        "They added cheese and tomato sandwiches beside the turkey ones.",
+        "Everyone ate a full lunch, and only crumbs were left.",
+        "The girls take out foods with nuts and add choices without meat."
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Read only the second paragraph, from \"First, the girls made a list.\" Ask: what are all of its sentences about?",
+      "explain": "The main idea of the second paragraph is that the girls take out foods with nuts and add choices without meat. The trail mix and the cheese sandwiches are examples. \"Everyone ate a full lunch\" is from the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i142",
+      "skill": "N6",
+      "passage": "n6-p53",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the central idea of this article?",
+      "options": [
+        "Argentinosaurus may have been longer than two school buses.",
+        "Birds are a kind of dinosaur, so a hummingbird is a dinosaur.",
+        "Dinosaurs came in many sizes, from tiny to enormous.",
+        "Microraptor was the size of a crow and had feathers on its arms and legs."
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        4,
+        8,
+        13
+      ],
+      "hint": "The central idea is what the whole article is about. Ask: what is every paragraph about?",
+      "explain": "The central idea is that dinosaurs came in many sizes, from tiny to enormous. Each paragraph shows a different size. Argentinosaurus, birds and Microraptor are true details, but each fits only one paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i143",
+      "skill": "N6",
+      "passage": "n6-p53",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "Argentinosaurus may have been more than 30 meters long.",
+          "bin": 0
+        },
+        {
+          "text": "Compsognathus hunted small lizards.",
+          "bin": 1
+        },
+        {
+          "text": "Compsognathus was about the size of a turkey.",
+          "bin": 0
+        },
+        {
+          "text": "Microraptor had feathers on its arms and legs.",
+          "bin": 1
+        },
+        {
+          "text": "The bee hummingbird is about five centimeters long.",
+          "bin": 0
+        },
+        {
+          "text": "Long necks let sauropods reach high leaves.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        4,
+        6,
+        8,
+        10,
+        13
+      ],
+      "hint": "The main idea is about size. Ask of each card: does it tell how big or small a dinosaur was?",
+      "explain": "The length of Argentinosaurus, the turkey-sized Compsognathus and the five-centimeter hummingbird all tell size, so they are important. Hunting lizards, feathers and reaching leaves are true, but they are not about size, so they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i144",
+      "skill": "N6",
+      "passage": "n6-p53",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the main idea of the fourth paragraph?",
+      "options": [
+        "Birds are dinosaurs, so today's smallest dinosaurs are tiny birds.",
+        "The bee hummingbird is only about five centimeters long.",
+        "Dinosaurs came in many sizes, from huge plant eaters to tiny birds.",
+        "Scientists agree that birds are a kind of dinosaur."
+      ],
+      "answer": 0,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Read only the last paragraph. Ask: what do its sentences say together?",
+      "explain": "The main idea of the fourth paragraph is that birds are dinosaurs, so the smallest dinosaurs alive today are tiny birds. The five centimeters is one detail in it. \"Dinosaurs came in many sizes\" is the idea of the whole article, not this paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i145",
+      "skill": "N6",
+      "passage": "n6-p54",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "how an anemometer uses spinning cups to measure wind speed",
+        "the fastest wind gust ever measured, near Australia in 1996",
+        "why wind can bend trees and push clouds across the sky",
+        "how the Sun's uneven heating makes air move and causes wind"
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        3,
+        5,
+        9
+      ],
+      "hint": "Ask: what is every paragraph about? A record in the last paragraph can still be only one detail.",
+      "explain": "The article is mostly about how the Sun's uneven heating makes air move and causes wind. The second and third paragraphs both explain this. The anemometer, the record gust and the bending trees are each only one detail.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i146",
+      "skill": "N6",
+      "passage": "n6-p54",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What is the main idea of the third paragraph?",
+      "options": [
+        "At the beach, warm air over land rises and cool sea air moves in as a sea breeze.",
+        "Land heats up faster than water, so the air over the sand gets warmer by afternoon.",
+        "At night, the land cools faster, so the wind often turns and blows out to sea.",
+        "Wind is simply air that is moving from one place to another."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        9,
+        10
+      ],
+      "hint": "Read only the third paragraph, from \"You can feel this happen.\" Ask: what are all of its sentences about?",
+      "explain": "The main idea of the third paragraph is that on a sunny day at the beach, warm air over the land rises and cool sea air moves in, making a sea breeze. Land heating faster and the night wind are details in it. \"Wind is air moving\" comes from the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i147",
+      "skill": "N6",
+      "passage": "n6-p54",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "The Sun heats the ground, and the ground warms the air.",
+          "bin": 0
+        },
+        {
+          "text": "An anemometer has small cups that spin.",
+          "bin": 1
+        },
+        {
+          "text": "Warm air rises.",
+          "bin": 0
+        },
+        {
+          "text": "The fastest gust was 408 kilometers per hour.",
+          "bin": 1
+        },
+        {
+          "text": "Cooler air flows in to fill the space.",
+          "bin": 0
+        },
+        {
+          "text": "Wind can push clouds across the sky.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        3,
+        4,
+        5,
+        12,
+        13
+      ],
+      "hint": "First say the main idea in your head. Then ask of each card: does it explain why air moves?",
+      "explain": "The Sun warming the ground, warm air rising and cool air flowing in explain why air moves, so they are important. The anemometer, the record gust and the clouds are true, but they do not explain what causes wind.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i148",
+      "skill": "N6",
+      "passage": "n6-p55",
+      "format": "tap",
+      "level": 4,
+      "prompt": "No one sentence tells the main idea of this story. Which choice tells it best?",
+      "options": [
+        "Maya noticed tiny numbers hidden on the spines of the books in a drawing.",
+        "The Fast Four won the hunt because each friend used a different skill.",
+        "Mrs. Hall hid five puzzle clues around the library for its birthday.",
+        "Leo knew the answer to the riddle because he had heard the joke before."
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        5,
+        7,
+        9,
+        12
+      ],
+      "hint": "Look at who solved each clue and how. Then ask: what do all those parts show together?",
+      "explain": "The main idea is that the Fast Four won the hunt because each friend used a different skill. Maya noticed small details in a drawing, Priya solved a code, Sam read a map, and Leo knew a joke. Maya's numbers and Leo's riddle are each only one clue, and the five clues only set up the story.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "implied-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i149",
+      "skill": "N6",
+      "passage": "n6-p55",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "The team called itself the Fast Four, and Leo wanted Pixel to join.",
+        "The puzzle hunt was held for the library's birthday.",
+        "Sam turned the map to match the room and found the way.",
+        "Mrs. Hall gave the winners a box of games and a bag of apples."
+      ],
+      "answer": 2,
+      "evidence": [
+        7
+      ],
+      "hint": "First say the main idea in your head. Then ask: which detail shows one friend's skill solving a clue?",
+      "explain": "\"Sam turned the map to match the room and found the way\" supports the main idea, because it shows Sam's map skill solving a clue. The team name, the birthday and the prizes are extra details.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i150",
+      "skill": "N6",
+      "passage": "n6-p55",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that shows how Priya's skill helped the team.",
+      "unit": "sentence",
+      "answer": [
+        5
+      ],
+      "evidence": [
+        5
+      ],
+      "hint": "Look at each clue in turn. Ask: which clue did Priya solve, and how?",
+      "explain": "\"The second clue was a code made of numbers, and Priya, who programs her rover, solved it in two minutes\" shows how Priya's skill helped. It is a key detail, because it is one of the skills that won the hunt.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i151",
+      "skill": "N6",
+      "passage": "n6-p56",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells the main idea of the whole article.",
+      "unit": "sentence",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Main ideas are often near the start. Ask: which sentence could sum up all four paragraphs?",
+      "explain": "\"Since the 1990s, however, astronomers have found thousands of these distant planets, called exoplanets, by looking for small clues instead of the planets themselves\" tells the main idea. It ends the first paragraph, and the next paragraphs explain the clues. The sentence before it only tells why the planets are hard to see.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i152",
+      "skill": "N6",
+      "passage": "n6-p56",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells the main idea of the second paragraph.",
+      "unit": "sentence",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Read only the second paragraph. Ask: which sentence do the other sentences in it explain?",
+      "explain": "\"The most common clue is a tiny dip in a star's light\" tells the main idea of the second paragraph. The other sentences explain how the dip happens and what it shows. The main idea of the whole article is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i153",
+      "skill": "N6",
+      "passage": "n6-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "People wondered for thousands of years whether other stars had planets.",
+        "Some of the more than 5,000 known exoplanets are about the size of Earth.",
+        "Kepler was a space telescope that watched about 150,000 stars at once.",
+        "A planet's gravity makes its star wobble, which shows up in its light."
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        8,
+        9
+      ],
+      "hint": "First find the main idea. Then ask: which detail describes one of the clues astronomers use?",
+      "explain": "\"A planet's gravity makes its star wobble, which shows up in its light\" supports the main idea, because the wobble is one of the clues. The old question, the Earth-sized planets and the telescope are true, but they are not clues.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i154",
+      "skill": "N6",
+      "passage": "n6-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which title fits best?",
+      "options": [
+        "Clues That Reveal Distant Planets",
+        "Kepler, the Planet-Finding Telescope",
+        "Worlds About the Size of Earth",
+        "Why Distant Stars Are So Bright"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3,
+        7
+      ],
+      "hint": "A good title fits every paragraph, not just the last one or one interesting fact.",
+      "explain": "\"Clues That Reveal Distant Planets\" fits best, because the article explains how astronomers find planets by looking for clues. Kepler and Earth-sized planets each fit only the last paragraph, and the article does not explain why stars are bright.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i155",
+      "skill": "N6",
+      "passage": "n6-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "how old copper can be melted down and recycled",
+        "how giant trucks as tall as a two-story house carry ore away",
+        "how copper ore is dug, crushed, separated and refined into wire",
+        "why a whole truckload of ore holds only a small amount of copper"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        3,
+        7,
+        11,
+        13
+      ],
+      "hint": "Ask: what is every paragraph about? The main idea fits the mine, the mill and the furnace.",
+      "explain": "The article is mostly about how copper ore is dug up, crushed, separated and refined to make wire. Each paragraph tells one or two of those steps. Recycling, the trucks and the small amount of copper in ore are true, but each is only one detail.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i156",
+      "skill": "N6",
+      "passage": "n6-p57",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build a sentence about the article. Pick the main idea. Then pick one important detail.",
+      "frame": "This is mostly about {0}. One important detail is {1}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Mostly about",
+          "options": [
+            "how tall mine trucks are",
+            "the steps that turn rock into copper wire",
+            "why copper is easy to recycle",
+            "how electricity reaches a light"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "evidence",
+          "label": "Important detail",
+          "options": [
+            "that the trucks are as tall as a two-story house",
+            "that people have used copper for thousands of years",
+            "that bits of copper mineral stick to air bubbles and float to the top",
+            "that copper wires are inside the walls"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        1,
+        9
+      ],
+      "hint": "First ask what every paragraph is about. Then pick the detail that is one of the steps.",
+      "explain": "This is mostly about the steps that turn rock into copper wire. An important detail is that bits of copper mineral stick to air bubbles and float to the top, because that step separates the copper from the rock. The trucks, the long history and the wires in the walls are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i157",
+      "skill": "N6",
+      "passage": "n6-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the main idea of the third paragraph?",
+      "options": [
+        "At the mill, water, chemicals and bubbles separate the copper from the rock.",
+        "Machines at the mill crush the ore into a powder that is as fine as flour.",
+        "Turning rock into wire takes several big steps, and each one removes more rock.",
+        "The froth is skimmed off, while the leftover rock sinks to the bottom."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        9,
+        10
+      ],
+      "hint": "Read only the third paragraph. Ask: what are all of its sentences about?",
+      "explain": "The main idea of the third paragraph is that at the mill, the copper is separated from the crushed rock with water, chemicals and bubbles. Crushing the ore and the rock sinking are details in it. \"Several big steps\" is the idea of the whole article.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i158",
+      "skill": "N6",
+      "passage": "n6-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "No one sentence tells the main idea of this story. Which choice tells it best?",
+      "options": [
+        "Leo complains about the cracks in the skate park to anyone who will listen.",
+        "The town council meets on the first Monday of each month, and anyone can speak.",
+        "Leo and his friends show the council evidence, and the park gets repaired.",
+        "Sam marks each crack on his map of the park with a red dot."
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        5,
+        8,
+        12,
+        14
+      ],
+      "hint": "Compare what Leo did at the start with what he did later. Then ask what changed the ending.",
+      "explain": "The main idea is that Leo and his friends show the council evidence, and the park gets repaired. Complaining is only how the story starts, and it did not work. The meeting day and Sam's red dots are details.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "implied-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i159",
+      "skill": "N6",
+      "passage": "n6-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the main idea of the second paragraph?",
+      "options": [
+        "Mrs. Hall shows Leo a notice about the town council meeting at the library.",
+        "Ana and Ben collect signatures from forty skaters, parents and neighbors.",
+        "The longest crack in the skate park is almost a meter long.",
+        "Leo learns he can speak to the council, so the friends gather evidence."
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "hint": "Read only the second paragraph. Ask: what are all of its sentences about?",
+      "explain": "The main idea of the second paragraph is that Leo learns he can speak to the council, so the friends gather evidence. The notice, the signatures and the long crack are details in that paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i160",
+      "skill": "N6",
+      "passage": "n6-p58",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "Leo took photos of every crack.",
+          "bin": 0
+        },
+        {
+          "text": "Leo wore his only button-up shirt.",
+          "bin": 1
+        },
+        {
+          "text": "Ana and Ben collected forty signatures.",
+          "bin": 0
+        },
+        {
+          "text": "Leo practiced in front of Pixel.",
+          "bin": 1
+        },
+        {
+          "text": "Leo showed the council the photos and the map.",
+          "bin": 0
+        },
+        {
+          "text": "Leo finished ten seconds early.",
+          "bin": 1
+        },
+        {
+          "text": "The council voted to repair the ramps.",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        5,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14
+      ],
+      "hint": "First say the main idea in your head. Then ask of each card: would the ending change without it?",
+      "explain": "The photos, the signatures, showing the evidence to the council and the vote are how the park got repaired, so they are important. The shirt, Pixel and the ten seconds are true, but the ending would be the same without them.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i161",
+      "skill": "N6",
+      "passage": "n6-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which title fits best?",
+      "options": [
+        "Leo's Only Button-Up Shirt",
+        "Two Hundred Visitors a Week",
+        "From Complaints to Repairs",
+        "The Loose Metal Rail"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        12,
+        14
+      ],
+      "hint": "A good title fits the whole story. Ask: how is the ending different from the start?",
+      "explain": "\"From Complaints to Repairs\" fits best. Leo starts by complaining, then he and his friends show evidence, and the park is repaired. The shirt, the visitors and the rail each fit only one part.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i162",
+      "skill": "N6",
+      "passage": "n6-p59",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells the main idea.",
+      "unit": "sentence",
+      "answer": [
+        1
+      ],
+      "evidence": [
+        1,
+        7
+      ],
+      "hint": "Main ideas are often near the start. Ask: which sentence do the next paragraphs explain?",
+      "explain": "\"It may seem that trees add new colors to their leaves, but most of those colors were hidden inside the leaves all summer\" tells the main idea. It is the second sentence. The next paragraphs explain how the green covers the colors and then fades.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i163",
+      "skill": "N6",
+      "passage": "n6-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the main idea of the third paragraph?",
+      "options": [
+        "Most of the colors were hidden inside the leaves all summer, under the green.",
+        "Chlorophyll fades, so hidden yellow and orange show, and some trees make red.",
+        "Sunny days and cool nights in the fall help make the red leaves even brighter.",
+        "In autumn, the days grow shorter, the nights grow cooler, and trees get ready."
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Read only the third paragraph. Ask: what happens to the colors in it?",
+      "explain": "The main idea of the third paragraph is that chlorophyll fades, so hidden yellow and orange show, and some trees make red. The bright reds and the short days are details in it. The colors hidden all summer is the idea of the whole article.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i164",
+      "skill": "N6",
+      "passage": "n6-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "In summer, green chlorophyll covers the yellow and orange in leaves.",
+        "A thin layer of cells grows where each leaf joins its twig, and the leaf falls.",
+        "Fallen leaves break down on the ground and add food to the soil.",
+        "Chlorophyll captures sunlight so the tree can make sugar."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        4
+      ],
+      "hint": "First find the main idea. Then ask: which detail shows where the colors were hiding?",
+      "explain": "\"In summer, green chlorophyll covers the yellow and orange in leaves\" supports the main idea, because it shows how the colors were hidden. The other choices are true, but they are about falling leaves, the soil or making sugar, not the hidden colors.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i165",
+      "skill": "N6",
+      "passage": "n6-p60",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells the main idea of the whole story.",
+      "unit": "sentence",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Look in the first paragraph. Ask: which sentence do the next three paragraphs show, one part at a time?",
+      "explain": "\"Instead, a captain uses several tools together to find a safe path\" tells the main idea. It ends the first paragraph, and the next three paragraphs show the chart, the buoys and the screens.",
+      "inference": 1,
+      "tags": [
+        "main-idea"
+      ]
+    },
+    {
+      "id": "n6-i166",
+      "skill": "N6",
+      "passage": "n6-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the main idea of the second paragraph?",
+      "options": [
+        "A captain uses several tools together, such as a chart, buoys and two screens.",
+        "Sam notices that the numbers on the chart grow small near Gull Island.",
+        "A chart shows how deep the water is, so the ferry can stay in deep water.",
+        "On the ride home, Sam draws his own chart with the depth numbers."
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        5,
+        7
+      ],
+      "hint": "Read only the second paragraph, from \"First, she unrolled.\" Ask: what are all of its sentences about?",
+      "explain": "The main idea of the second paragraph is that a chart is a map of the water that shows how deep it is, so the captain can keep the ferry in deep water. Gull Island is one detail in it, Sam's chart comes in the last paragraph, and \"several tools\" is the idea of the whole story.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i167",
+      "skill": "N6",
+      "passage": "n6-p60",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "A chart shows how deep the water is.",
+          "bin": 0
+        },
+        {
+          "text": "Sam had ridden the ferry dozens of times.",
+          "bin": 1
+        },
+        {
+          "text": "Red and green buoys mark the safe channel.",
+          "bin": 0
+        },
+        {
+          "text": "Sam was first in line for the tour.",
+          "bin": 1
+        },
+        {
+          "text": "Radar shows boats and land even in the dark.",
+          "bin": 0
+        },
+        {
+          "text": "Priya asked about an autopilot button.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        5,
+        9,
+        12,
+        13
+      ],
+      "hint": "The main idea is that a captain uses several tools together. Ask of each card: does it name a tool and what it does?",
+      "explain": "The chart, the buoys and the radar are tools the captain uses to find a safe path, so they are important. Sam's many rides, his place in line and Priya's question are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i168",
+      "skill": "N6",
+      "passage": "n6-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the central idea of this article?",
+      "options": [
+        "A robot arm has joints that bend and turn like a shoulder, an elbow and a wrist.",
+        "Newer robots called cobots are slower, so they can work right next to people.",
+        "The first factory robot arm went to work in a car factory in 1961.",
+        "Factories use robot arms for jobs that must be done the same way every time."
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        2,
+        8,
+        9
+      ],
+      "hint": "The central idea is what the whole article is about. Ask: why are robot arms in factories at all?",
+      "explain": "The central idea is that factories use robot arms for jobs that must be done exactly the same way again and again. The joints, the cobots and the year 1961 are true details, but each fits only one paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i169",
+      "skill": "N6",
+      "passage": "n6-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the main idea of the fourth paragraph?",
+      "options": [
+        "Large robot arms work inside fences, because they move fast and with great force.",
+        "People still design, program and fix the robots, and cobots work beside people.",
+        "Factories use robot arms for jobs that must be done the same way every time.",
+        "Cobots are smaller and slower than other robot arms."
+      ],
+      "answer": 1,
+      "evidence": [
+        11,
+        12,
+        14
+      ],
+      "hint": "Read only the last paragraph, from \"Robots do not do every job.\" Ask: what are all of its sentences about?",
+      "explain": "The main idea of the fourth paragraph is that people still design, program and fix the robots, and cobots work beside people. The fences and the size of cobots are details in it. Jobs done the same way every time is the idea of the whole article.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i170",
+      "skill": "N6",
+      "passage": "n6-p61",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build a sentence about the article. Pick the main idea. Then pick one important detail.",
+      "frame": "This is mostly about {0}. One important detail is {1}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Mostly about",
+          "options": [
+            "how robot joints bend",
+            "why factories use robot arms for jobs that must be done the same way every time",
+            "the first factory robot",
+            "how cobots work next to people"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "evidence",
+          "label": "Important detail",
+          "options": [
+            "that the first robot arm started work in 1961",
+            "that each joint has its own motor",
+            "that robot arms pack cookies into boxes in food factories",
+            "that large robot arms work inside fences"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        9
+      ],
+      "hint": "First ask what the whole article is about. Then pick the detail that is an example of a job done the same way every time.",
+      "explain": "This is mostly about why factories use robot arms for jobs that must be done the same way every time. An important detail is that robot arms pack cookies into boxes, which is one of those jobs. The year 1961, the motors and the fences are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i171",
+      "skill": "N6",
+      "passage": "n6-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "No one sentence tells the main idea of this story. Which choice tells it best?",
+      "options": [
+        "The group solves one sound problem after another until the recording is clear.",
+        "Ben's keyboard goes silent on the third try, because its power cord has come loose.",
+        "Blankets on the walls and a rug under the drums soak up the echo.",
+        "Sam hears the song on the radio in Grandma Rose's kitchen with Pixel."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        7,
+        10,
+        13
+      ],
+      "hint": "Say in a few words what goes wrong in each paragraph. Then ask what all those parts show together.",
+      "explain": "The main idea is that the group solves one sound problem after another until they make a clear recording. The echo, the quiet flute and the loose cord are each one of the problems, and the radio show is only the ending.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "implied-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i172",
+      "skill": "N6",
+      "passage": "n6-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the main idea of the third paragraph?",
+      "options": [
+        "Leo used soft brushes instead of sticks, so the drums were quieter.",
+        "Ana played more quietly and pointed her trumpet away from the microphone.",
+        "The flute was hard to hear, so the others got quieter and it moved closer.",
+        "The group fixed one problem after another until the recording was clear."
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Read only the third paragraph, from \"Now, however.\" Ask: what problem does it tell, and how was it fixed?",
+      "explain": "The main idea of the third paragraph is that the flute was hard to hear, so the others got quieter and it moved closer. The brushes and the trumpet are details in it. Fixing one problem after another is the idea of the whole story.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i173",
+      "skill": "N6",
+      "passage": "n6-p62",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build a sentence about the story. Pick the main idea. Then pick one important detail.",
+      "frame": "This is mostly about {0}. One important detail is {1}.",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "Mostly about",
+          "options": [
+            "a radio host who likes student songs",
+            "a group that fixes one problem after another to make a clear recording",
+            "how to tape a cord to the floor",
+            "why drums are loud"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "evidence",
+          "label": "Important detail",
+          "options": [
+            "that Pixel slept under the table",
+            "that the show was on Friday evening",
+            "that six students were chosen",
+            "that they hung blankets to soak up the echo"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        6
+      ],
+      "hint": "First ask what the whole story is about. Then pick the detail that fixed one of the problems.",
+      "explain": "This is mostly about a group that fixes one problem after another to make a clear recording. An important detail is that they hung blankets to soak up the echo, which fixed the first problem. Pixel, the day of the show and the number of students are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "key-detail",
+        "implied-main-idea"
+      ]
+    },
+    {
+      "id": "n6-i174",
+      "skill": "N6",
+      "passage": "n6-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which detail is the most important?",
+      "options": [
+        "Pixel slept under the kitchen table during the radio show.",
+        "Ben taped the loose cord to the floor, and they played the song again.",
+        "The radio show played the song on Friday evening.",
+        "Ms. Gray chose six students and gave them three hours in the music room."
+      ],
+      "answer": 1,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Ask: which detail fixed the last problem and led to the clear recording?",
+      "explain": "The most important detail is that Ben taped the loose cord to the floor, and they played the song again. That try was the clear recording. Pixel, the day of the show and the six students are extra details.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i175",
+      "skill": "N6",
+      "passage": "n6-p63",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "why bats are the only mammals that can truly fly",
+        "how bats use echoes to find insects in the dark",
+        "how large fruit bats find food by sight and smell",
+        "why bats are helpful to farmers who grow crops"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        5,
+        7
+      ],
+      "hint": "Ask: what is every paragraph about? Facts in the last paragraph can still be only details.",
+      "explain": "The article is mostly about how bats use echoes to find insects in the dark. The first three paragraphs explain echolocation. Flying mammals, fruit bats and farmers are true, but each is only one detail at the end.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i176",
+      "skill": "N6",
+      "passage": "n6-p63",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the main idea of the third paragraph?",
+      "options": [
+        "An echo that comes back quickly tells the bat the object is close.",
+        "As it closes in, a bat calls faster, up to about 200 times a second.",
+        "Bats use sound instead of sight to find their food in the dark.",
+        "Echoes tell a bat where an insect is, how big it is and how it moves."
+      ],
+      "answer": 3,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Read only the third paragraph, from \"From the echo.\" Ask: which choice covers all of its sentences?",
+      "explain": "The main idea of the third paragraph is that echoes tell a bat where an insect is, how big it is and how it is moving. The quick echo and the 200 calls are details in it. Using sound instead of sight is the idea of the whole article.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i177",
+      "skill": "N6",
+      "passage": "n6-p63",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": [
+        "Important to the main idea",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "Bats make high-pitched calls as they fly.",
+          "bin": 0
+        },
+        {
+          "text": "Bats are the only mammals that can truly fly.",
+          "bin": 1
+        },
+        {
+          "text": "Part of each call bounces back as an echo.",
+          "bin": 0
+        },
+        {
+          "text": "Many large fruit bats find food by sight and smell.",
+          "bin": 1
+        },
+        {
+          "text": "A bat's large ears catch the echo.",
+          "bin": 0
+        },
+        {
+          "text": "Bats help farmers by eating insects that damage crops.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        6,
+        11,
+        12,
+        13
+      ],
+      "hint": "First say the main idea in your head. Then ask of each card: is it a step in finding food with echoes?",
+      "explain": "The calls, the echoes and the ears catching them are steps in echolocation, so they are important. Flying mammals, fruit bats and helping farmers are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i178",
+      "skill": "N6",
+      "passage": "n6-p64",
+      "format": "tap",
+      "level": 5,
+      "prompt": "No one sentence tells the main idea of this story. Which choice tells it best?",
+      "options": [
+        "Maya uses a buzzing tool called an air scribe to chip away rock.",
+        "Dr. Bell's team wrapped a dinosaur leg bone in plaster to protect it on the trip.",
+        "Maya learns that fossil work is slow and careful, and she wants to do more.",
+        "The rock club eats sandwiches on the museum steps and watches pigeons."
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        9,
+        11,
+        15
+      ],
+      "hint": "Think about what Maya learned during the day and what she asked at the end.",
+      "explain": "The main idea is that Maya learns that uncovering a fossil takes slow, careful work, and she wants to keep doing it. The air scribe, the lunch and the plaster are details. Her question at the end shows she wants to come back.",
+      "inference": 2,
+      "tags": [
+        "main-idea",
+        "implied-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i179",
+      "skill": "N6",
+      "passage": "n6-p64",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the main idea of the third paragraph?",
+      "options": [
+        "Maya learns that fossil work is slow and careful, and she wants to do more.",
+        "Cleaning one bone can take months, since rushing could break tiny lines.",
+        "Mr. Varga, who works at the next table, talks to Maya about fossils.",
+        "Maya brushes away the dust and sees tiny lines in the bone."
+      ],
+      "answer": 1,
+      "evidence": [
+        9,
+        11
+      ],
+      "hint": "Read only the third paragraph. Ask: what are all of its sentences about?",
+      "explain": "The main idea of the third paragraph is that cleaning one bone can take months, since rushing could break tiny lines that scientists need. Mr. Varga's table and the dust are details in it. Maya's lesson is the idea of the whole story, not this one paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i180",
+      "skill": "N6",
+      "passage": "n6-p64",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "Maya had visited the dinosaur hall at the museum many times before.",
+        "At lunch, the club watched pigeons hop around on the museum steps.",
+        "The rock was wrapped in a hard white jacket of plaster.",
+        "After an hour, Maya had uncovered only a stamp-sized patch of bone."
+      ],
+      "answer": 3,
+      "evidence": [
+        8
+      ],
+      "hint": "First say the main idea in your head. Then ask: which detail shows how slow the work is?",
+      "explain": "\"After an hour, Maya had uncovered only a stamp-sized patch of bone\" supports the main idea, because it shows how slow the work is. Her past visits, the pigeons and the plaster are extra details.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n6-i181",
+      "skill": "N6",
+      "passage": "n6-p65",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells the main idea.",
+      "unit": "sentence",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Main ideas are often near the start. Ask: which sentence could sum up all five paragraphs?",
+      "explain": "\"Bread rises because yeast makes gas, and the dough traps that gas in millions of tiny bubbles\" tells the main idea. It ends the first paragraph, and the next paragraphs explain the gas, the gluten net and the oven. The sentence before it only tells what yeast is.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "n6-i182",
+      "skill": "N6",
+      "passage": "n6-p65",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which title fits best?",
+      "options": [
+        "Tortillas and Other Flat Breads",
+        "What Kneading Means and Why It Matters",
+        "Bread Through Thousands of Years",
+        "How Gas and Gluten Make Bread Rise"
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        5,
+        8
+      ],
+      "hint": "A good title fits every paragraph, not just the last one or one word the article explains.",
+      "explain": "\"How Gas and Gluten Make Bread Rise\" fits best, because the article explains how yeast gas and the gluten net make bread rise. Flat breads, kneading and bread long ago are each only one detail.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "title",
+        "article",
+        "too-narrow"
+      ]
+    },
+    {
+      "id": "n6-i183",
+      "skill": "N6",
+      "passage": "n6-p65",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the main idea of the third paragraph?",
+      "options": [
+        "Gluten forms a stretchy net that traps the gas, so the dough puffs up.",
+        "Kneading, which means pressing and folding, makes the gluten net stronger.",
+        "Bread rises because yeast makes gas, and the dough traps it in tiny bubbles.",
+        "Wheat flour contains proteins that are mixed into the dough."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        8,
+        9
+      ],
+      "hint": "Read only the third paragraph. Ask: which choice covers all of its sentences?",
+      "explain": "The main idea of the third paragraph is that gluten forms a stretchy net that traps the gas, so the dough puffs up. Kneading and the proteins are details in it. \"Yeast makes gas\" is closer to the idea of the whole article and the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "paragraph-main-idea",
+        "article",
+        "too-narrow"
       ]
     }
   ],

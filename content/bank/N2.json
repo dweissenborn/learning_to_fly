@@ -228,9 +228,9 @@
         "The three of them walked to the Lighthouse Café, where the twins ate grilled cheese sandwiches and watched the fishing boats rock in the harbor.",
         "After lunch, the strap on Ana's backpack snapped, so Ben borrowed tape from the café owner and wrapped it tightly around the broken strap.",
         "Then the twins played cards at a table by the window until they heard the ferry horn.",
-        "The wind was much calmer now, and the crossing took only fifty minutes.",
+        "The wind was much calmer now, and the crossing took the usual forty minutes.",
         "Their cousins were waiting on the dock at Gull Island, holding a big sign that said WELCOME.",
-        "Ben laughed and told them that a one-hour trip had taken the whole day, but he agreed that it had still been a good day."
+        "Ben laughed and told them that a forty-minute trip had taken the whole day, but he agreed that it had still been a good day."
       ],
       "breaks": [2, 6, 11],
       "topics": ["transport", "weather", "ocean"],
@@ -488,6 +488,1338 @@
       "socialLoad": 0,
       "credit": {
         "title": "The Treasure Hunt",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p19",
+      "title": "Maya's Flute",
+      "kind": "story",
+      "picture": "🎶🪈",
+      "sentences": [
+        "Maya took her flute out of its case.",
+        "First, she put the three parts together.",
+        "Then she held the flute up to her lips.",
+        "She blew across the small hole.",
+        "A soft, clear note came out.",
+        "Next, she played a short song.",
+        "At the end, she wiped the flute with a cloth."
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Maya's Flute",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p20",
+      "title": "The Snow Fort",
+      "kind": "story",
+      "picture": "❄️🧱",
+      "sentences": [
+        "Snow fell all night.",
+        "In the morning, Ana and Ben ran out to the yard.",
+        "First, they rolled big balls of snow.",
+        "Then they piled the balls up to make a wall.",
+        "Ben cut a small door in the wall.",
+        "Next, Ana put a red flag on top.",
+        "The fort was done by lunch."
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Snow Fort",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p21",
+      "title": "The Bird Feeder",
+      "kind": "story",
+      "picture": "🐦🌳",
+      "sentences": [
+        "Sam got a new bird feeder.",
+        "First, he filled it with seeds.",
+        "Then he hung it on a tree in the yard.",
+        "Pixel sat by the back door and watched.",
+        "Soon, a red bird came to the feeder.",
+        "It ate some seeds.",
+        "Then it flew away.",
+        "Sam drew the bird in his notebook."
+      ],
+      "topics": [
+        "animals"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Bird Feeder",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p22",
+      "title": "The Comet Photo",
+      "kind": "story",
+      "picture": "☄️🔭📷",
+      "sentences": [
+        "On Tuesday night, Priya rode up to the observatory with her dad.",
+        "Dr. Hale met them at the door.",
+        "A comet was in the sky that week.",
+        "A comet is a ball of ice and dust that goes around the Sun.",
+        "First, Dr. Hale turned a telescope toward the comet.",
+        "Priya looked through it and saw a white spot with a long tail.",
+        "Then Dr. Hale took a photo with a camera on the telescope.",
+        "Next, she printed the photo for Priya.",
+        "At home, Priya hung it above her desk."
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Comet Photo",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p23",
+      "title": "The Tide Pool",
+      "kind": "story",
+      "picture": "🦀⭐🌊",
+      "sentences": [
+        "On Sunday morning, the tide was low.",
+        "Sam and Maya walked to the rocks by the harbor.",
+        "First, they found a pool of water between two rocks.",
+        "A small crab ran under a stone.",
+        "Then Maya saw an orange sea star on the side of the pool.",
+        "Sam took a photo of it.",
+        "They left the sea star in the water, where it was safe.",
+        "Next, the water began to rise.",
+        "The tide was coming back in, so they walked home."
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Tide Pool",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p24",
+      "title": "Ben's Game Level",
+      "kind": "story",
+      "picture": "🎮🏰🔑",
+      "sentences": [
+        "Ben played a new video game after dinner.",
+        "His hero had to get out of a castle.",
+        "First, the hero found a gold key under a table.",
+        "Then he jumped across three moving boxes.",
+        "Next, he pulled a lever, and a bridge came down.",
+        "The hero ran across the bridge.",
+        "At the end, he used the gold key to open the big door.",
+        "Ben saved the game and went to bed."
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ben's Game Level",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p25",
+      "title": "Priya's Robot Arm",
+      "kind": "story",
+      "picture": "🦾🥤",
+      "sentences": [
+        "Priya built a small robot arm for the science fair.",
+        "She wanted it to pick up a cup and move it.",
+        "On Monday, she wrote the code on her laptop.",
+        "On Tuesday, she tested the arm, but it dropped the cup.",
+        "The grip was too loose.",
+        "On Wednesday, she put rubber pads on the grip.",
+        "Then she tested it again.",
+        "This time, the arm held the cup and set it down on a shelf.",
+        "Ms. Ortiz clapped when she saw it work."
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Priya's Robot Arm",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p26",
+      "title": "The Dinosaur Model",
+      "kind": "story",
+      "picture": "🦕🦴",
+      "sentences": [
+        "Maya got a model kit of a Triceratops skeleton.",
+        "Triceratops was a plant eater with three horns on its head.",
+        "First, Maya snapped the leg bones onto a stand.",
+        "Then she joined the long backbone to the legs.",
+        "Next, she added the ribs, one at a time.",
+        "Then she painted the horns on the skull light brown.",
+        "When the paint was dry, she pressed the skull onto the backbone.",
+        "She set the model on her shelf, next to her rock box."
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Dinosaur Model",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p27",
+      "title": "A Map for Leo",
+      "kind": "story",
+      "picture": "🗺️🐕✏️",
+      "sentences": [
+        "Sam's family was going away for three days, so Leo agreed to walk Pixel.",
+        "On Thursday, Sam made a map of their usual walk, so Leo would know the way.",
+        "Before he started to draw, he walked the route with Pixel one more time and wrote notes.",
+        "At home, he drew his house in the bottom corner of a big sheet of paper.",
+        "Next, he drew the path to the creek and a small bridge over the water.",
+        "After the bridge, the path turns left at a tall pine tree, so he drew the tree too.",
+        "Then he drew the fountain in the park, where Pixel always stops to drink.",
+        "Last, he added a red arrow that showed the way back home.",
+        "On Friday morning, he gave the map to Leo.",
+        "Leo studied it and said it was easier to read than his math book."
+      ],
+      "topics": [
+        "maps"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Map for Leo",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p28",
+      "title": "Panning for Gold",
+      "kind": "story",
+      "picture": "⛏️✨🥘",
+      "sentences": [
+        "At the mine museum, Mr. Varga showed the rock club how people once looked for gold in streams.",
+        "Each student got a shallow metal pan full of sand and gravel.",
+        "First, Maya lowered her pan into a long tub of water.",
+        "Then she shook the pan from side to side.",
+        "Gold is much heavier than sand, so the gold sank to the bottom of the pan.",
+        "Next, she tipped the pan a little and swirled the water around.",
+        "The light sand washed over the edge, one small wave at a time.",
+        "After ten minutes, only a spoonful of dark sand was left.",
+        "Maya looked closely and saw three tiny yellow flakes shining in it.",
+        "Mr. Varga helped her put the flakes into a small glass tube with water.",
+        "At home, she put the tube in her rock box, next to her best crystals."
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Panning for Gold",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p29",
+      "title": "The Relay Race",
+      "kind": "story",
+      "picture": "🏃🏃‍♀️🏅",
+      "sentences": [
+        "On Sports Day, Ana, Priya, Leo and Sam ran the relay race for their team.",
+        "Each runner had to run once around the track and then pass a baton to the next runner.",
+        "A baton is a short stick that runners carry in one hand.",
+        "Ana ran first, and she was in second place when she reached Priya.",
+        "While Priya ran, Leo tied his shoe and Sam waved to Grandma Rose in the crowd.",
+        "Priya kept her team in second place.",
+        "Next, Leo dropped the baton when Priya handed it to him.",
+        "He picked it up quickly, but another team passed him, so they fell to third place.",
+        "Sam ran the last part of the race.",
+        "He passed one runner just before the finish line, and their team came in second."
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Relay Race",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p30",
+      "title": "The Pancake Breakfast",
+      "kind": "story",
+      "picture": "🥞☕📚",
+      "sentences": [
+        "By nine o'clock on Saturday, the Lighthouse Café was full of people eating pancakes.",
+        "The pancake breakfast was raising money for new library books.",
+        "Earlier that morning, Mrs. Lin had shown Leo and Ben how to make the batter.",
+        "First, they mixed flour, milk, eggs and a little sugar in a huge bowl.",
+        "Then Mrs. Lin heated the flat grill until a drop of water sizzled on it.",
+        "Leo poured the batter in circles, and Ben watched for small bubbles on top.",
+        "When the bubbles popped, Ben flipped each pancake over.",
+        "Leo tried to flip one high in the air, and it landed on the edge of a plate.",
+        "At eight o'clock, the doors opened, and the first customers sat down.",
+        "By noon, the café had sold three hundred pancakes.",
+        "Mrs. Hall, the librarian, said the money would buy forty new books."
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Pancake Breakfast",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p31",
+      "title": "Setting Up the Concert",
+      "kind": "story",
+      "picture": "🥁🎼🪑",
+      "sentences": [
+        "The school concert started at six o'clock on Thursday evening.",
+        "At four o'clock, Ms. Gray asked Leo and Sam to help her set up the stage.",
+        "First, the boys carried forty chairs from the music room and set them in rows.",
+        "Then Leo set up his drum kit at the back of the stage.",
+        "He tightened each drum and tapped it to check the sound.",
+        "While Leo worked on the drums, Sam placed a music stand in front of every chair.",
+        "Next, Ms. Gray tested the microphones.",
+        "She said a few words into each one, and Sam told her if he could hear them from the back of the gym.",
+        "At five thirty, the band members arrived with their instruments.",
+        "Ms. Gray played one note on the piano, and the players tuned their instruments to match it.",
+        "When the first song began, Sam sat in the front row with Grandma Rose."
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Setting Up the Concert",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p32",
+      "title": "Pixel Learns a Trick",
+      "kind": "story",
+      "picture": "🐕🦴🔄",
+      "sentences": [
+        "Sam wanted to teach Pixel to roll over.",
+        "Before he began, he read a dog training book from the library.",
+        "The book said to teach one small step at a time, and to give a treat after each step.",
+        "On the first day, Sam asked Pixel to lie down, and Pixel got a treat.",
+        "On the second day, Sam held a treat beside Pixel's nose and moved it slowly over his shoulder.",
+        "Pixel turned his head to follow it, and then he rolled onto his side.",
+        "Sam gave him the treat and said, \"Good boy.\"",
+        "On the third day, Sam moved the treat in a full circle, and Pixel rolled all the way over.",
+        "By the end of the week, Pixel rolled over when Sam only said the words.",
+        "Sam showed the trick to Grandma Rose, and she laughed and clapped."
+      ],
+      "topics": [
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Pixel Learns a Trick",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p33",
+      "title": "The Whale Spout",
+      "kind": "story",
+      "picture": "🐋⛴️💨",
+      "sentences": [
+        "On a calm Saturday in June, Sam and Priya took the ferry to Gull Island.",
+        "Halfway across the bay, Captain Ruth Lane spoke over the speakers.",
+        "She told everyone to look to the right side of the ferry.",
+        "First, Sam saw a tall puff of mist rise from the water.",
+        "Captain Lane explained that it was a whale's spout, the air a whale blows out when it comes up to breathe.",
+        "Then a long, dark back rose above the waves.",
+        "A gull flew over the ferry, and a child near Priya dropped a bag of crackers.",
+        "Next, the whale lifted its huge tail into the air and slid under the water.",
+        "Priya took three photos, but only the last one showed the tail.",
+        "When the ferry reached Gull Island, Sam looked up the whale in a guide book.",
+        "It was a humpback whale."
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Whale Spout",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p34",
+      "title": "The Bean Jar",
+      "kind": "story",
+      "picture": "🫘🌱🫙",
+      "sentences": [
+        "Ms. Ortiz gave each student a glass jar, a wet paper towel and three bean seeds.",
+        "Ana pressed the paper towel against the inside of her jar.",
+        "Then she pushed the beans between the towel and the glass, so she could watch them grow.",
+        "She put the jar on a sunny shelf and added a little water every morning.",
+        "After three days, each bean split open, and a small white root poked out.",
+        "The root always grows first, and it grows down.",
+        "Two days later, a pale shoot pushed up toward the light.",
+        "On the seventh day, the shoot opened into two green leaves.",
+        "Ana drew a picture of her jar every day and wrote the date under it.",
+        "At the end of two weeks, she planted the bean in a pot of soil."
+      ],
+      "topics": [
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Bean Jar",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p35",
+      "title": "The Bus Detour",
+      "kind": "story",
+      "picture": "🚌🚧🗺️",
+      "sentences": [
+        "On Saturday, Sam took the number 4 bus to the library.",
+        "Usually, the bus goes along Harbor Road, but that day workers were fixing the road.",
+        "A sign at the bus stop said that the bus would take a different way, called a detour.",
+        "First, the bus turned up Pine Street, past the bike shop.",
+        "Then it drove around the back of the school.",
+        "Sam opened a map on his phone and watched a blue dot move along the streets.",
+        "Next, the bus crossed the old stone bridge over the creek.",
+        "Sam had never been over that bridge on a bus before.",
+        "Finally, the bus came down Market Street and stopped in front of the library.",
+        "The trip took ten minutes longer than usual, but Sam liked seeing the new streets.",
+        "At the library, he borrowed a book of bus and train maps from around the world."
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Bus Detour",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p36",
+      "title": "How a Frog Grows",
+      "kind": "article",
+      "picture": "🐸🥚🌿",
+      "sentences": [
+        "Every spring, the pond behind Harbor Middle School fills with the sound of frogs.",
+        "Each frog in that pond started its life in the water, and its body changed shape many times before it could hop onto land.",
+        "This change is called metamorphosis, a word that means a change of form.",
+        "Ms. Ortiz's class watches it happen every year.",
+        "First, a female frog lays a large clump of eggs in shallow water.",
+        "Each egg is a tiny black dot inside a ball of clear jelly that protects it.",
+        "After one to three weeks, the eggs hatch into tadpoles.",
+        "A tadpole has a long tail for swimming and gills for breathing underwater, like a fish.",
+        "It spends most of its time eating soft plants and algae.",
+        "After several more weeks, the tadpole grows back legs.",
+        "A little later, its front legs appear, and its lungs develop so that it can breathe air.",
+        "At this stage, the young frog is called a froglet.",
+        "Its tail slowly gets shorter, because its body takes in the tail and uses it for energy.",
+        "Finally, when the tail is gone, the frog climbs out of the water and lives mostly on land.",
+        "For many kinds of frogs, the whole change takes about three months."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How a Frog Grows",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p37",
+      "title": "The Red Moon",
+      "kind": "story",
+      "picture": "🌕🔴🔭",
+      "sentences": [
+        "On a clear night in March, the full Moon was going to pass through Earth's shadow.",
+        "This is called a lunar eclipse, and it can only happen when the Sun, Earth and the Moon line up in a straight row.",
+        "Sam and Priya both wanted to watch it, but from different places.",
+        "At nine o'clock, Sam and Grandma Rose drove up to the lookout in Lantern Peaks with a jug of hot chocolate and two folding chairs.",
+        "Sam set up the chairs, and Grandma Rose poured the drinks.",
+        "At nine thirty, a dark curve began to cover the bottom edge of the Moon.",
+        "Sam took a photo every ten minutes, so that later he could study how the shadow traveled across the Moon.",
+        "Priya was at the observatory with Dr. Lee that night.",
+        "While Sam set up his chairs, Priya helped Dr. Lee point the big telescope at the Moon.",
+        "When the shadow started to cover the Moon, Dr. Lee let Priya look through the eyepiece first.",
+        "Priya watched the gray craters vanish into the shadow, one after another.",
+        "Just before eleven o'clock, the whole Moon turned a dull red color.",
+        "Sunlight that passes through Earth's air bends toward the Moon, and the air lets mostly red light through.",
+        "Sam sent Priya a text that said, \"It's red!\"",
+        "At that exact moment, Priya sent him the identical words, and they both laughed when they read the messages."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Red Moon",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p38",
+      "title": "The Lost Rover",
+      "kind": "story",
+      "picture": "🤖🌲🔊",
+      "sentences": [
+        "At four o'clock, Priya finally heard a faint beeping under a fern near the old mill.",
+        "Her rover was there, tipped on its side against a log.",
+        "She had been looking for it for more than an hour.",
+        "Earlier that afternoon, Priya and Ben had taken the rover to Story Woods to test a new program.",
+        "The program let the rover follow a trail by itself.",
+        "At two thirty, Priya set it on the path at the campsite and pressed the start button.",
+        "For twenty minutes, the rover rolled along the trail while Priya and Ben walked behind it.",
+        "Ben stopped once to take a photo of a woodpecker.",
+        "Then the rover reached a fork in the trail and turned down the wrong path, toward the creek.",
+        "Before Priya could catch up, it rolled behind a large rock and out of sight.",
+        "First, the friends searched the bushes near the fork, but they found nothing.",
+        "Next, Ben remembered that Priya had added a small speaker to the rover the week before.",
+        "Priya opened the rover's control app on her tablet and pressed a button that made the speaker beep.",
+        "They followed the sound along the creek all the way to the mill.",
+        "Priya turned the rover upright and checked each wheel.",
+        "That evening, she changed the program so the rover would stop and wait at every fork."
+      ],
+      "breaks": [
+        3,
+        10,
+        14
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Lost Rover",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p39",
+      "title": "The Second Balloon",
+      "kind": "story",
+      "picture": "🎈🌡️🪂",
+      "sentences": [
+        "On a still morning in May, Ms. Ortiz's class launched a second weather balloon from the school field.",
+        "A weather balloon carries small instruments high into the sky to measure the air.",
+        "First, Sam and Priya packed a small box with a thermometer, an air pressure sensor and a tracker that sends out its location.",
+        "Next, Maya tied a folded orange parachute to the bottom of the box.",
+        "Then Ms. Ortiz filled the large white balloon with helium until it was taller than she was.",
+        "Helium is a gas that is lighter than air, so it makes the balloon float upward.",
+        "At ten o'clock, the class counted down from ten, and Ben let go of the line.",
+        "The balloon rose fast, and in a few minutes it was only a white dot.",
+        "As it climbed, the air around it grew thinner, so the balloon slowly grew bigger.",
+        "After about two hours, it was more than thirty kilometers high, and it was so big that it burst.",
+        "Then the parachute opened, and the box floated down.",
+        "While the box was still falling, the class watched its location move across a map on Ms. Ortiz's laptop.",
+        "It landed in a field on a farm north of Harbor Town.",
+        "That afternoon, the farmer helped them find the box in the tall grass, and the class read the temperatures it had measured."
+      ],
+      "breaks": [
+        2,
+        7,
+        11
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Second Balloon",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p40",
+      "title": "Docking the Ferry",
+      "kind": "story",
+      "picture": "⛴️⚓🚗",
+      "sentences": [
+        "Captain Ruth Lane has steered the Harbor Town ferry for twenty years, but docking it still takes all of her attention.",
+        "On Monday, Ana and Ben watched her from the wheelhouse, the room at the top of the ferry where the captain steers.",
+        "Their class was visiting the ferry for a school project about jobs in the harbor.",
+        "Ten minutes before the ferry reached Gull Island, Captain Lane slowed the engines.",
+        "A big ferry cannot stop quickly, so it must start to slow down long before it reaches the dock.",
+        "Next, she turned the ferry so that its front pointed straight at the dock.",
+        "While she steered, two crew members walked to the front deck with thick ropes.",
+        "As the ferry slid the last few meters, the captain put the engines in reverse, and the ferry stopped beside the dock.",
+        "Then the crew threw the ropes to a worker on the dock, who looped them over two metal posts.",
+        "Once the ferry was tied tightly, the worker lowered a steel ramp from the dock onto the car deck.",
+        "Finally, the cars drove off, one by one, and the walking passengers followed.",
+        "Ben said that docking looked harder than any video game, and Captain Lane laughed and agreed."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Docking the Ferry",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p41",
+      "title": "Footprints on the Shore",
+      "kind": "story",
+      "picture": "🦕👣🌊",
+      "sentences": [
+        "On Monday morning, Maya stood on a flat shelf of gray rock below the cliffs and counted twelve giant footprints.",
+        "Each print had three wide toes and was longer than her arm.",
+        "Dr. Bell said they were made by a large plant-eating dinosaur that walked on three toes.",
+        "The prints had been found by accident two days earlier.",
+        "On Saturday night, a strong winter storm pushed huge waves against the shore.",
+        "The waves washed away a thick layer of sand that had covered the rock for as long as anyone could remember.",
+        "On Sunday, a man walking his dog saw the strange holes in the rock and took photos of them.",
+        "He sent the photos to the museum, and Dr. Bell called Maya's rock club that evening.",
+        "On Monday, the club worked fast, because the next high tide would cover the rock again by noon.",
+        "First, Maya and Mr. Varga brushed loose sand out of each print.",
+        "Then Dr. Bell measured every print and the distance between them.",
+        "The distance between steps shows how fast an animal was moving, and these steps were short and slow.",
+        "While the adults measured, Maya drew each print in her notebook, and a seagull watched her from a nearby rock.",
+        "Just before the water came back, Dr. Bell pressed soft rubber into the best print to make a copy for the museum."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Footprints on the Shore",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p42",
+      "title": "How a Geode Forms",
+      "kind": "article",
+      "picture": "🪨💜✨",
+      "sentences": [
+        "From the outside, a geode looks like a plain, round, lumpy rock.",
+        "When it is cut in half, a hollow space inside is lined with sparkling crystals.",
+        "Many geodes take millions of years to form, and the steps happen in a set order.",
+        "First, a hollow space forms inside rock.",
+        "In some places, gas bubbles are trapped in cooling lava, and the lava hardens around them.",
+        "In other places, a hole forms in soft rock when water slowly dissolves part of it.",
+        "Next, water seeps into the rock through tiny cracks.",
+        "This water carries minerals that are dissolved in it, in the same way that sugar dissolves in tea.",
+        "Over time, the water dries up or drains away, and a thin layer of mineral is left on the walls of the space.",
+        "This happens again and again, so the layers build up.",
+        "Finally, crystals grow from the walls toward the middle, and they keep growing until the space is full or the water stops coming.",
+        "Most geode crystals are quartz, which is clear or white, but some are purple amethyst, a kind of quartz.",
+        "Maya has a geode in her rock box that Mr. Varga cut open for her with a special saw.",
+        "She likes to hold it up to the window, so the crystals catch the light."
+      ],
+      "breaks": [
+        3,
+        8,
+        12
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How a Geode Forms",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p43",
+      "title": "The Game Jam",
+      "kind": "story",
+      "picture": "🎮🦀🐚",
+      "sentences": [
+        "At nine o'clock on Saturday, Mrs. Hall rang a bell, and the library's first game jam began.",
+        "A game jam is a contest where teams have a short time to make a whole video game.",
+        "Every team had six hours, and the theme was \"islands.\"",
+        "Ana, Ben and Maya spent the first half hour planning on a big sheet of paper.",
+        "They decided to make a game about a crab that collects shells before the tide comes in.",
+        "Then the team split up the work.",
+        "While Ben wrote the code that made the crab move, Maya drew the crab, the shells and the beach on a tablet.",
+        "At the same time, Ana recorded sounds, such as waves and a short tune on her trumpet for when the crab picked up a shell.",
+        "At noon, the team ate sandwiches and tested the first version.",
+        "The crab moved, but it walked straight through the rocks.",
+        "Ben spent the next hour fixing that problem, while Ana added a timer to the top of the screen.",
+        "At two o'clock, they let Leo play the game, and he found that the shells were too easy to collect.",
+        "So Maya moved some shells behind rocks, and Ben made the tide come in faster.",
+        "At three o'clock, Mrs. Hall rang the bell again, and every team showed its game.",
+        "The crab game did not win first prize, but it won the prize for the best sounds."
+      ],
+      "breaks": [
+        3,
+        8,
+        13
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Game Jam",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p44",
+      "title": "Recording the Song",
+      "kind": "story",
+      "picture": "🎸🎻🎧",
+      "sentences": [
+        "When people heard Sam and Priya's song at the spring fair, it sounded as if the two friends had played side by side.",
+        "In fact, they had recorded their parts on two separate days, in the small recording studio at the library.",
+        "Priya recorded first, on a Tuesday after school.",
+        "Before she started, Mrs. Hall showed her how to wear headphones that played a steady click, one click for every beat.",
+        "The click helped Priya keep the same speed, or tempo, from the beginning of the song to the end.",
+        "She played the cello part three times, and they kept the third try, because it had no mistakes.",
+        "On Thursday, it was Sam's turn.",
+        "He wore the headphones too, but this time he heard Priya's cello along with the click.",
+        "While the recording played in his ears, Sam played his guitar part along with it.",
+        "His first try was too fast, so he slowed down and tried again.",
+        "A book cart squeaked past the door during the second try, so Sam had to start over.",
+        "The third try was perfect.",
+        "On Friday, Mrs. Hall helped them mix the two parts, which means making each part loud or soft enough so both could be heard.",
+        "Then she saved the song on a small memory stick, and Priya made a label for it."
+      ],
+      "breaks": [
+        2,
+        6,
+        12
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Recording the Song",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p45",
+      "title": "How Maple Syrup Is Made",
+      "kind": "article",
+      "picture": "🍁🪣🥞",
+      "sentences": [
+        "Maple syrup starts as a clear, watery liquid inside a tree.",
+        "This liquid is called sap, and it carries sugar that the tree made and stored the summer before.",
+        "Sugar maple trees give the sweetest sap.",
+        "Sap flows best in late winter or early spring, when the nights are below freezing and the days are warmer.",
+        "First, a farmer drills a small hole, about as wide as a pencil, into the trunk.",
+        "Next, the farmer taps a small spout into the hole.",
+        "Sap drips out of the spout into a bucket, or it flows through plastic tubes to a building called a sugarhouse.",
+        "A healthy tree can give sap for several weeks without being harmed.",
+        "In the sugarhouse, the sap is poured into a wide, flat pan over a hot fire.",
+        "As the sap boils, most of the water turns to steam and rises into the air.",
+        "The sap slowly becomes thicker, sweeter and darker.",
+        "It takes about forty liters of sap to make just one liter of syrup.",
+        "Finally, the hot syrup is filtered to remove any grit, and then it is poured into bottles."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "topics": [
+        "food",
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How Maple Syrup Is Made",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p46",
+      "title": "How a Fossil Forms",
+      "kind": "article",
+      "picture": "🦴🪨⏳",
+      "sentences": [
+        "When Dr. Bell's team lifts a dinosaur bone out of the clay cliffs north of Harbor Town, they are holding something that took millions of years to form.",
+        "A fossil is the remains or trace of a living thing from long ago, preserved in rock.",
+        "Very few animals ever become fossils, because the process needs a long chain of events to happen in exactly the right order.",
+        "First, an animal dies near water, such as a river, a lake or the edge of the sea.",
+        "Soft parts, like skin and muscle, rot away quickly, so usually only hard parts such as bones and teeth are left.",
+        "Next, the bones must be buried quickly by mud or sand, before other animals or the weather can scatter them.",
+        "Over thousands of years, more and more layers of mud and sand pile on top.",
+        "The weight of those upper layers slowly presses the lower layers into solid rock.",
+        "Meanwhile, water seeps through the ground and carries dissolved minerals into the tiny spaces inside the bones.",
+        "Slowly, the minerals harden, and the bone turns into a heavy, stony copy of itself.",
+        "This step can take millions of years.",
+        "Much later, forces deep inside the Earth may push the rock layers upward, and wind, rain or waves slowly wear the surface away.",
+        "Only then can the fossil appear again, often at the edge of a cliff or the bottom of a canyon.",
+        "Even so, most fossils are found only by people who search very carefully, like Dr. Bell and her team."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How a Fossil Forms",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p47",
+      "title": "The Sea Turtle Nest",
+      "kind": "article",
+      "picture": "🐢🥚🌊",
+      "sentences": [
+        "On a warm summer night, dozens of baby sea turtles burst out of the sand on a quiet beach and scramble toward the waves.",
+        "Each one is small enough to fit in the palm of a hand, and each one must find its own way to the water.",
+        "Their journey began about two months earlier, on the very same beach.",
+        "First, a female sea turtle swam to shore after dark and crawled slowly up the sand, above the line that the high tide reaches.",
+        "With her back flippers, she dug a deep hole shaped like a jar.",
+        "Then she laid about one hundred soft, round eggs, each one about the size of a table tennis ball.",
+        "She covered the eggs with sand, packed it down firmly and crawled back to the sea.",
+        "She never returns to check on her nest, so the eggs develop on their own.",
+        "For about two months, the warm sand keeps the eggs at the right temperature.",
+        "Surprisingly, the temperature of the sand decides whether most of the babies will be male or female, and warmer nests produce more females.",
+        "When the babies, called hatchlings, are ready, each one breaks its shell with a tiny, sharp point on its snout called an egg tooth.",
+        "The hatchlings then work together for several days, digging upward until they are just below the surface.",
+        "They usually wait until night, when the sand is cooler, before they come out.",
+        "Then they head toward the brightest horizon, which on a natural beach is the open sky over the sea.",
+        "Once they reach the water, they swim for many hours without stopping, out toward deeper water.",
+        "In many places, volunteers cover or switch off beach lights at night, so the hatchlings do not crawl the wrong way."
+      ],
+      "breaks": [
+        3,
+        8,
+        12
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Sea Turtle Nest",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p48",
+      "title": "From Rock to Copper Wire",
+      "kind": "article",
+      "picture": "⛏️🔥🧵",
+      "sentences": [
+        "The copper wires inside a wall, a phone charger or a robot's motor all began as rock deep in the ground.",
+        "Rock that contains enough of a useful metal to be worth digging up is called ore.",
+        "Most copper ore contains less than one percent copper, so a huge amount of rock must be dug up to make a small amount of metal.",
+        "First, miners blast and dig the ore out of a giant open pit, and enormous trucks carry it to a mill.",
+        "At the mill, machines crush the rock into pieces the size of gravel, and then they grind the gravel into a fine powder.",
+        "Next, the powder is mixed with water and special chemicals in large tanks, and air is bubbled through the mixture.",
+        "The tiny bits of copper mineral stick to the bubbles and float to the top as foam, while the waste rock sinks to the bottom.",
+        "The foam is dried and then melted in a furnace at more than one thousand degrees Celsius.",
+        "Melting separates most of the remaining waste from the metal.",
+        "After that, the copper is cleaned even further, until it is almost completely pure.",
+        "Finally, the pure copper is shaped into a long, thick rod.",
+        "The rod is pulled through a series of smaller and smaller holes, and each pull makes it thinner and longer.",
+        "At the end, the copper has become thin wire, which is wound onto large spools, ready to carry electricity.",
+        "Mr. Varga keeps a lump of copper ore at the mine museum, so that visitors can compare it with a coil of shiny new wire."
+      ],
+      "breaks": [
+        3,
+        7,
+        10
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "From Rock to Copper Wire",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p49",
+      "title": "The Second Half",
+      "kind": "story",
+      "picture": "⚽💨🍊",
+      "sentences": [
+        "When the final whistle blew, the scoreboard at Pier Field showed Harbor Town 2, Gull Point 2, and the Harbor Town players cheered loudly.",
+        "Only an hour earlier, at halftime, the same players had been sitting on the grass, tired and quiet, while Gull Point led by two goals.",
+        "The first half had gone badly from the start.",
+        "In the fifth minute, Gull Point scored from a long, high kick that sailed over everyone.",
+        "Ten minutes later, a strong gust pushed Ana's pass off course, and a Gull Point player scored again.",
+        "The wind was blowing hard from the harbor, straight into the faces of the Harbor Town players.",
+        "At halftime, Coach Novak knelt on the grass with a clipboard and drew a new plan.",
+        "Because the teams would switch ends for the second half, the wind would now be behind Harbor Town.",
+        "The coach told the players to keep their passes short and low on the ground, and to let the wind carry their long shots.",
+        "While the coach talked, Ben passed around a bag of orange slices, and a dog barked at a seagull near the fence.",
+        "Early in the second half, Ben took a long shot, and the wind carried the ball just over the goalkeeper's hands.",
+        "After that, the team kept passing short and low, exactly as they had planned.",
+        "With three minutes left, Ben slid a short, low pass to Ana, and she scored the tying goal.",
+        "On the walk home, Ana said that the tie felt as good as a win."
+      ],
+      "breaks": [
+        2,
+        6,
+        10
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Second Half",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p50",
+      "title": "The Beach Robot",
+      "kind": "story",
+      "picture": "🤖🏖️🧢",
+      "sentences": [
+        "Every spring, volunteers spend a whole Saturday picking up litter on the sandy beach below the lighthouse.",
+        "This year, the robotics club wanted to help in a new way.",
+        "They spent a month building a robot that could collect bottle caps and other small pieces of plastic.",
+        "The robot, which the club named Sweeper, rolled on wide rubber treads that did not sink into the sand.",
+        "A camera on its front looked for bright colors.",
+        "Then a spinning brush swept anything it found up a small ramp and into a bin.",
+        "Before the club brought Sweeper to the beach, Priya tested it on a tray of sand in Ms. Ortiz's science room.",
+        "During that test, the brush picked up shells as well as plastic, so Priya changed the program to ignore anything white or gray.",
+        "On cleanup day, the club arrived at eight o'clock, and Priya steered Sweeper slowly along the line of dry seaweed at the top of the beach.",
+        "While she drove, Ben walked beside the robot with a clipboard and counted every piece it collected.",
+        "At the same time, Leo and Maya worked ahead of the robot, picking up larger things by hand, such as cans and an old rope.",
+        "Halfway through the morning, Sweeper's battery ran low, so Priya swapped in a spare battery from her backpack.",
+        "A seagull followed the robot for a while, and Leo said that the gull must want to join the club.",
+        "By noon, Sweeper had collected three hundred and twelve bottle caps and pieces of plastic.",
+        "Ben added his count to the volunteers' chart, and the leader of the cleanup asked the club to bring Sweeper back next spring."
+      ],
+      "breaks": [
+        3,
+        8,
+        13
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Beach Robot",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p51",
+      "title": "Mapping the Creek",
+      "kind": "story",
+      "picture": "🗺️📏🏞️",
+      "sentences": [
+        "Last week, Ms. Ortiz's class made the first detailed map of the creek in Story Woods, from the old mill down to the footbridge.",
+        "The finished map now hangs in the library, but making it took three full days of careful work.",
+        "On Monday, the class stretched a long measuring tape along the bank, from the mill to the footbridge.",
+        "This straight line, called a baseline, gave them something to measure everything else from.",
+        "Every five meters along the tape, Sam measured how far it was from the tape to the edge of the water.",
+        "While Sam measured, Priya wrote each number in a notebook, and Ben held the end of the tape still.",
+        "At the same time, Maya sketched the big rocks, a fallen log and a small pool where tiny fish were swimming.",
+        "On Tuesday, it rained so hard that the class stayed indoors, so they studied old maps of Story Woods instead.",
+        "Mrs. Hall brought a map from 1950 that showed the creek in a slightly different place, because creeks slowly change their path over many years.",
+        "On Wednesday, the class turned their numbers into a drawing.",
+        "They chose a scale in which one centimeter on paper stood for one meter of real ground.",
+        "First, Sam drew the baseline across a large sheet of paper.",
+        "Then the class marked each measurement and joined the marks into a smooth line for the water's edge.",
+        "Finally, Maya added her rocks, log and pool, and Priya drew a key that explained every symbol.",
+        "Beside their map, the library pinned the map from 1950, so visitors can compare the two."
+      ],
+      "breaks": [
+        2,
+        7,
+        9
+      ],
+      "topics": [
+        "maps",
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Mapping the Creek",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p52",
+      "title": "How a Thunderstorm Grows",
+      "kind": "article",
+      "picture": "⛈️☁️⚡",
+      "sentences": [
+        "On a hot summer afternoon, a small, puffy cloud can grow into a towering thunderstorm in less than an hour.",
+        "Scientists describe the life of a thunderstorm in three stages, and the stages always happen in the same order.",
+        "The first stage is called the growing stage.",
+        "The Sun heats the ground, and the ground warms the air just above it.",
+        "Warm, damp air is lighter than the cooler air around it, so it rises.",
+        "As it rises, it cools, and the water vapor in it turns into tiny droplets that form a cloud.",
+        "Warm air keeps rushing upward, so the cloud grows taller and taller, sometimes more than ten kilometers high.",
+        "The second stage, called the mature stage, is when the storm is at its strongest.",
+        "The droplets and bits of ice inside the cloud have grown so heavy that they begin to fall as rain or hail.",
+        "At the same time, bits of ice and water crash into each other as they rush up and down, and this builds up electric charge.",
+        "When the charge becomes strong enough, it is released as lightning.",
+        "Lightning heats the air so quickly that the air bursts outward, and this makes the booming sound of thunder.",
+        "In the last stage, the falling rain drags cool air down with it.",
+        "This cool air blocks the warm, rising air that kept the storm growing, so the storm begins to weaken.",
+        "The rain becomes lighter, the lightning stops, and the tall cloud slowly breaks apart.",
+        "During any thunderstorm, the safest place to wait is indoors, until the storm has passed."
+      ],
+      "breaks": [
+        2,
+        7,
+        12
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How a Thunderstorm Grows",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p53",
+      "title": "The Guitar Maker",
+      "kind": "story",
+      "picture": "🎸🪵🔧",
+      "sentences": [
+        "The guitar maker's workshop smelled of sawdust and varnish, and a row of unfinished guitars hung from hooks along one wall.",
+        "Ms. Gray had brought Sam, Priya and Ana there on a Saturday in November, so they could see how an instrument is made.",
+        "The guitar maker began by showing them a stack of thin wooden boards.",
+        "Before any wood is cut, she explained, it must dry slowly for several years, or the finished guitar may crack.",
+        "To make the top of a guitar, she joins two thin boards side by side, and then she cuts the shape of the body from them.",
+        "Next, she cuts a round sound hole in the top and glues thin wooden strips called braces underneath.",
+        "The braces make the top strong, but they still let it vibrate and make sound.",
+        "While the glue dries, she bends the sides of the guitar by pressing thin, damp wood against a hot metal form.",
+        "Once the top, back and sides are ready, she glues them together to make a hollow box.",
+        "Then she carves the neck from a single block of wood, sets thin metal strips called frets into it, and attaches it to the body.",
+        "Several coats of finish protect the wood, and each coat must dry for days before the next one goes on.",
+        "Last of all, she adds the strings and tunes them.",
+        "Priya asked how long one guitar takes, and the guitar maker said about two months of work, spread over half a year.",
+        "Before they left, she let Sam play a few chords on a guitar she had just finished.",
+        "Ana said it sounded warmer than any guitar she had ever heard.",
+        "On the bus home, Sam wrote the steps in his notebook, so he would remember them in the right order."
+      ],
+      "breaks": [
+        2,
+        8,
+        12
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Guitar Maker",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p54",
+      "title": "The Steam Engine",
+      "kind": "story",
+      "picture": "🚂💨🔥",
+      "sentences": [
+        "At exactly eleven o'clock on Sunday, the old steam engine at the Pine Bay Train Museum blew its whistle for the first time in forty years.",
+        "Sam covered his ears and grinned, because he had been waiting for that sound since he joined the museum's volunteers two years before.",
+        "When Sam joined, the engine was a rusty shell sitting on a short piece of track behind the museum.",
+        "The volunteers had already spent a year taking it apart, piece by piece, and labeling every part.",
+        "After that, they spent many months cleaning the rust off each part, replacing the worn pipes and repairing the huge boiler.",
+        "Sam's job was to paint the wheels, and he gave each of the eight wheels three coats of red paint.",
+        "Last spring, the volunteers put the engine back together, and a safety inspector checked every part of the boiler.",
+        "On Sunday, the work began long before the whistle.",
+        "At five o'clock in the morning, the volunteers lit a coal fire inside the firebox.",
+        "The fire heated the water in the boiler, and slowly the water turned to steam.",
+        "Steam takes up much more space than water, so the pressure inside the boiler grew higher and higher.",
+        "It took nearly six hours for the pressure to become strong enough to move the engine.",
+        "While they waited, Sam polished the brass bell, and Grandma Rose handed out cinnamon rolls from her bakery.",
+        "After the whistle, the driver opened a valve, and steam rushed into the cylinders and pushed the pistons.",
+        "The pistons turned the wheels, and the engine rolled slowly forward, puffing white clouds into the sky.",
+        "It traveled only a few hundred meters, but everyone on the platform clapped and cheered."
+      ],
+      "breaks": [
+        2,
+        7,
+        13
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Steam Engine",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p55",
+      "title": "The Space Station Pass",
+      "kind": "story",
+      "picture": "🛰️✨🌄",
+      "sentences": [
+        "At 7:42 in the evening, a bright white dot rose above the trees in the west and glided silently across the sky.",
+        "It did not blink or flash, which is how Leo knew that it was not an airplane.",
+        "It was a space station, a huge spacecraft where astronauts live and work as it circles Earth.",
+        "Leo, Maya and Ben had planned this evening for a week.",
+        "On Monday, Dr. Hale had told the astronomy club that the station would pass over Harbor Town on Friday, and she had given them the exact time.",
+        "She explained that the station can only be seen for a few hours after sunset or before sunrise, when the sky is dark but the station, high above, is still lit by the Sun.",
+        "On Thursday, Maya checked the weather forecast and saw that the sky would be clear, and Ben charged his camera.",
+        "On Friday at seven o'clock, the three friends hiked up to the lookout with Dr. Hale.",
+        "Ben set up his camera on a tripod and pointed it toward the west.",
+        "Meanwhile, Maya spread out a blanket, and Leo handed around cups of hot apple juice.",
+        "At 7:40, Dr. Hale started a countdown, and two minutes later, the station appeared.",
+        "It crossed the whole sky in about five minutes, moving much faster than any star or planet.",
+        "The station circles Earth about once every ninety minutes, at a speed of about twenty-eight thousand kilometers per hour.",
+        "While the others watched, Ben's camera took one long photo that showed the station as a bright line across the stars.",
+        "Then the dot faded and vanished in the east, as the station passed into Earth's shadow."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Space Station Pass",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -950,7 +2282,7 @@
       "slots": [
         { "kind": "first", "label": "First", "options": ["the morning ferry was cancelled because of strong wind", "the twins ate grilled cheese sandwiches", "the ferry left the harbor at two o'clock", "their cousins held up a WELCOME sign"], "answer": [0] },
         { "kind": "then", "label": "Then", "options": ["the fishing boats rocked in the harbor", "the twins used the long wait to do useful things", "their cousins met them at Gull Island", "Ben borrowed tape from the café owner"], "answer": [1] },
-        { "kind": "then", "label": "Next", "options": ["the twins played cards by the window", "the morning ferry was cancelled", "the ferry finally left at two o'clock", "the crossing took fifty minutes"], "answer": [2] },
+        { "kind": "then", "label": "Next", "options": ["the twins played cards by the window", "the morning ferry was cancelled", "the ferry finally left at two o'clock", "the crossing took forty minutes"], "answer": [2] },
         { "kind": "last", "label": "At the end", "options": ["their cousins met them at Gull Island", "Ana's backpack strap snapped", "the twins ate lunch", "the morning ferry was cancelled"], "answer": [0] }
       ],
       "evidence": [4, 7, 0, 12],
@@ -1772,6 +3104,3794 @@
       "tags": [
         "before",
         "out-of-order-telling"
+      ]
+    },
+    {
+      "id": "n2-i49",
+      "skill": "N2",
+      "passage": "n2-p19",
+      "format": "order",
+      "level": 1,
+      "prompt": "Put the events in order.",
+      "steps": [
+        "Maya put the three parts together.",
+        "She blew across the small hole.",
+        "She played a short song.",
+        "She wiped the flute with a cloth."
+      ],
+      "evidence": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "hint": "Read the story from the top. Look for order words like \"First\", \"Then\" and \"Next\".",
+      "explain": "Maya put the parts together, blew across the hole, played a song, and at the end wiped the flute. The story tells it in this order.",
+      "inference": 0,
+      "tags": [
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i50",
+      "skill": "N2",
+      "passage": "n2-p19",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What did Maya do right after the soft note came out?",
+      "options": [
+        "She played a short song.",
+        "She took the flute out of its case.",
+        "She wiped the flute with a cloth."
+      ],
+      "pictures": [
+        "🎶",
+        "🧳",
+        "🧽"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the sentence about the soft note. Then read the next sentence.",
+      "explain": "Next, Maya played a short song. It is in the sixth sentence, right after the note came out.",
+      "inference": 0,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i51",
+      "skill": "N2",
+      "passage": "n2-p20",
+      "format": "order",
+      "level": 1,
+      "prompt": "Put the events in order.",
+      "steps": [
+        "Snow fell all night.",
+        "Ana and Ben rolled big balls of snow.",
+        "They piled the balls up to make a wall.",
+        "Ana put a red flag on top."
+      ],
+      "evidence": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "hint": "Read the story from the top. Find each event, one at a time.",
+      "explain": "Snow fell all night. Then the twins rolled balls of snow, piled them into a wall, and Ana put a flag on top. The story tells it in this order.",
+      "inference": 0,
+      "tags": [
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i52",
+      "skill": "N2",
+      "passage": "n2-p20",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Tap the sentence that tells what Ben did after they made the wall.",
+      "unit": "sentence",
+      "answer": [
+        4
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the sentence about the wall. The answer is the next sentence.",
+      "explain": "Ben cut a small door in the wall. It is the fifth sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i53",
+      "skill": "N2",
+      "passage": "n2-p21",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What did Sam do right before he hung the feeder on the tree?",
+      "options": [
+        "He went to school.",
+        "He filled it with seeds.",
+        "He drew the bird."
+      ],
+      "pictures": [
+        "🏫",
+        "🌻",
+        "✏️"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the sentence where Sam hangs the feeder. Then read the sentence just before it.",
+      "explain": "Sam filled the feeder with seeds. It is in the second sentence, just before he hung it on the tree.",
+      "inference": 0,
+      "tags": [
+        "before"
+      ]
+    },
+    {
+      "id": "n2-i54",
+      "skill": "N2",
+      "passage": "n2-p21",
+      "format": "order",
+      "level": 1,
+      "prompt": "Put the events in order.",
+      "steps": [
+        "Sam filled the feeder with seeds.",
+        "He hung it on a tree.",
+        "A red bird came to the feeder.",
+        "Sam drew the bird."
+      ],
+      "evidence": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "hint": "Read the story from the top. Look for order words like \"First\" and \"Then\".",
+      "explain": "Sam filled the feeder, hung it on a tree, a red bird came, and Sam drew the bird. The story tells it in this order.",
+      "inference": 0,
+      "tags": [
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i55",
+      "skill": "N2",
+      "passage": "n2-p22",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put the events in order.",
+      "steps": [
+        "Dr. Hale met Priya and her dad at the door.",
+        "Dr. Hale turned the telescope toward the comet.",
+        "Priya saw a white spot with a long tail.",
+        "Dr. Hale took a photo.",
+        "Priya hung the photo above her desk."
+      ],
+      "evidence": [
+        1,
+        4,
+        5,
+        6,
+        8
+      ],
+      "hint": "Read the story from the top. Use the order words \"First\", \"Then\" and \"Next\" to help you.",
+      "explain": "Dr. Hale met them, turned the telescope, Priya saw the comet, Dr. Hale took a photo, and at home Priya hung it up. The story tells it in this order.",
+      "inference": 0,
+      "tags": [
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i56",
+      "skill": "N2",
+      "passage": "n2-p22",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What did Dr. Hale do right after she took the photo?",
+      "options": [
+        "She met them at the door.",
+        "She turned the telescope toward the comet.",
+        "She printed the photo for Priya."
+      ],
+      "pictures": [
+        "🚪",
+        "🔭",
+        "🖨️"
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the sentence with the word \"photo\". Then read the next sentence.",
+      "explain": "Next, Dr. Hale printed the photo for Priya. It is in the eighth sentence.",
+      "inference": 0,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i57",
+      "skill": "N2",
+      "passage": "n2-p22",
+      "format": "build",
+      "level": 2,
+      "prompt": "Build a retell of the story.",
+      "frame": "First, {0}. Then {1}. At the end, {2}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "Priya hung the photo above her desk",
+            "Dr. Hale turned the telescope toward the comet",
+            "Dr. Hale printed the photo"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "Dr. Hale took a photo of the comet",
+            "Priya rode up to the observatory",
+            "Priya hung the photo above her desk"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "Dr. Hale met them at the door",
+            "Priya hung the photo above her desk",
+            "Dr. Hale turned the telescope"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        4,
+        6,
+        8
+      ],
+      "hint": "Look for the order words \"First\" and \"Then\". For the end, read the last sentence.",
+      "explain": "First, Dr. Hale turned the telescope toward the comet. Then she took a photo. At the end, Priya hung the photo above her desk. These are the fifth, seventh and last sentences.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "first-then-last"
+      ]
+    },
+    {
+      "id": "n2-i58",
+      "skill": "N2",
+      "passage": "n2-p23",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put the events in order.",
+      "steps": [
+        "Sam and Maya walked to the rocks.",
+        "A small crab ran under a stone.",
+        "Maya saw an orange sea star.",
+        "Sam took a photo of the sea star.",
+        "The water began to rise."
+      ],
+      "evidence": [
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "hint": "Read the story from the top. Find each event, one at a time.",
+      "explain": "Sam and Maya walked to the rocks. A crab ran under a stone, Maya saw a sea star, and Sam took a photo. Next, the water began to rise.",
+      "inference": 0,
+      "tags": [
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i59",
+      "skill": "N2",
+      "passage": "n2-p23",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What happened right before Maya saw the sea star?",
+      "options": [
+        "A small crab ran under a stone.",
+        "Sam took a photo.",
+        "The water began to rise."
+      ],
+      "pictures": [
+        "🦀",
+        "📷",
+        "🌊"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the sentence about the sea star. Then read the sentence just before it.",
+      "explain": "A small crab ran under a stone. It is in the fourth sentence, just before Maya saw the sea star.",
+      "inference": 0,
+      "tags": [
+        "before"
+      ]
+    },
+    {
+      "id": "n2-i60",
+      "skill": "N2",
+      "passage": "n2-p23",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the sentence that tells what Sam and Maya did right after Sam took the photo.",
+      "unit": "sentence",
+      "answer": [
+        6
+      ],
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the sentence about the photo. The answer is the next sentence.",
+      "explain": "They left the sea star in the water, where it was safe. It is the seventh sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i61",
+      "skill": "N2",
+      "passage": "n2-p24",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put the events of the game in order.",
+      "steps": [
+        "The hero found a gold key.",
+        "He jumped across three moving boxes.",
+        "He pulled a lever.",
+        "He ran across the bridge.",
+        "He opened the big door."
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "hint": "Read the story from the top. Look for order words like \"First\", \"Then\", \"Next\" and \"At the end\".",
+      "explain": "The hero found the key, jumped across the boxes, pulled the lever, ran across the bridge, and opened the door. The story tells it in this order.",
+      "inference": 0,
+      "tags": [
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i62",
+      "skill": "N2",
+      "passage": "n2-p24",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What happened when the hero pulled the lever?",
+      "options": [
+        "Ben went to bed.",
+        "A bridge came down.",
+        "He found a gold key."
+      ],
+      "pictures": [
+        "🛏️",
+        "🌉",
+        "🔑"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the word \"lever\". Read the whole sentence.",
+      "explain": "When the hero pulled the lever, a bridge came down. It is in the fifth sentence.",
+      "inference": 0,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i63",
+      "skill": "N2",
+      "passage": "n2-p24",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What did the hero do before he jumped across the boxes?",
+      "options": [
+        "He ran across the bridge.",
+        "He opened the big door.",
+        "He found a gold key under a table."
+      ],
+      "pictures": [
+        "🌉",
+        "🚪",
+        "🔑"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the sentence about the moving boxes. Then read the sentence just before it.",
+      "explain": "The hero found a gold key under a table first. It is in the third sentence, before the boxes.",
+      "inference": 0,
+      "tags": [
+        "before"
+      ]
+    },
+    {
+      "id": "n2-i64",
+      "skill": "N2",
+      "passage": "n2-p25",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put the events in order.",
+      "steps": [
+        "Priya wrote the code.",
+        "The arm dropped the cup.",
+        "Priya put rubber pads on the grip.",
+        "The arm set the cup down on a shelf."
+      ],
+      "evidence": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "hint": "Look for the days of the week. Monday comes first, then Tuesday, then Wednesday.",
+      "explain": "On Monday, Priya wrote the code. On Tuesday, the arm dropped the cup. On Wednesday, she put pads on the grip, and then the arm set the cup on a shelf.",
+      "inference": 0,
+      "tags": [
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i65",
+      "skill": "N2",
+      "passage": "n2-p25",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What did Priya do after the arm dropped the cup?",
+      "options": [
+        "She put rubber pads on the grip.",
+        "She wrote the code on her laptop.",
+        "She clapped for the arm."
+      ],
+      "pictures": [
+        "🧤",
+        "💻",
+        "👏"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        5
+      ],
+      "hint": "Find the sentence where the arm drops the cup. Then read on to the next thing Priya does.",
+      "explain": "On Wednesday, Priya put rubber pads on the grip. It is in the sixth sentence. Ms. Ortiz was the one who clapped.",
+      "inference": 0,
+      "tags": [
+        "after",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n2-i66",
+      "skill": "N2",
+      "passage": "n2-p25",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the sentence that tells what happened when Priya tested the arm the second time.",
+      "unit": "sentence",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the words \"tested it again\". The answer is the next sentence.",
+      "explain": "This time, the arm held the cup and set it down on a shelf. It is the eighth sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i67",
+      "skill": "N2",
+      "passage": "n2-p26",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put the steps in order.",
+      "steps": [
+        "Maya snapped the leg bones onto a stand.",
+        "She joined the backbone to the legs.",
+        "She added the ribs.",
+        "She painted the horns.",
+        "She pressed the skull onto the backbone."
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "hint": "Start at the sentence with \"First\". Then follow the words \"Then\", \"Next\" and \"When\".",
+      "explain": "Maya snapped on the legs, joined the backbone, added the ribs, painted the horns, and pressed the skull on. The story tells it in this order.",
+      "inference": 0,
+      "tags": [
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i68",
+      "skill": "N2",
+      "passage": "n2-p26",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What did Maya do right before she pressed the skull on?",
+      "options": [
+        "She set the model on her shelf.",
+        "She painted the horns.",
+        "She snapped the legs onto a stand."
+      ],
+      "pictures": [
+        "📚",
+        "🖌️",
+        "🦴"
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the sentence about the skull and the backbone. Then read the sentence just before it.",
+      "explain": "Maya painted the horns light brown. She waited for the paint to dry, and then she pressed the skull on. Look at the sixth and seventh sentences.",
+      "inference": 0,
+      "tags": [
+        "before"
+      ]
+    },
+    {
+      "id": "n2-i69",
+      "skill": "N2",
+      "passage": "n2-p26",
+      "format": "build",
+      "level": 2,
+      "prompt": "Build a retell of how Maya made the model.",
+      "frame": "First, {0}. Then {1}. At the end, {2}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "Maya snapped the leg bones onto a stand",
+            "Maya pressed the skull onto the backbone",
+            "Maya set the model on her shelf"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "Maya set the model on her shelf",
+            "Maya added the ribs, one at a time",
+            "Maya snapped the legs onto a stand"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "Maya joined the backbone to the legs",
+            "Maya set the model on her shelf",
+            "Maya added the ribs"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        4,
+        7
+      ],
+      "hint": "The first step has the word \"First\". For the end, read the last sentence.",
+      "explain": "First, Maya snapped on the leg bones. Then she added the ribs. At the end, she set the model on her shelf. These are the third, fifth and last sentences.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "first-then-last"
+      ]
+    },
+    {
+      "id": "n2-i70",
+      "skill": "N2",
+      "passage": "n2-p27",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "Sam walked the route with Pixel and wrote notes.",
+        "Sam drew his house on a big sheet of paper.",
+        "He drew the path to the creek and the bridge.",
+        "He drew the fountain in the park.",
+        "He gave the map to Leo."
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        6,
+        8
+      ],
+      "hint": "Look for order words like \"Before\", \"Next\", \"Then\" and \"Last\". The words \"Before he started to draw\" tell you what came first.",
+      "explain": "Sam walked the route and wrote notes before he drew. Then he drew his house, the path and bridge, and the fountain. On Friday, he gave the map to Leo.",
+      "inference": 0,
+      "tags": [
+        "order-words",
+        "before"
+      ]
+    },
+    {
+      "id": "n2-i71",
+      "skill": "N2",
+      "passage": "n2-p27",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Sam draw right after the bridge?",
+      "options": [
+        "the tall pine tree",
+        "the fountain in the park",
+        "his house",
+        "the red arrow"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the sentence about the bridge. Then read the next sentence to see what he drew.",
+      "explain": "Sam drew the tall pine tree, because the path turns left there after the bridge. It is in the sixth sentence.",
+      "inference": 0,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i72",
+      "skill": "N2",
+      "passage": "n2-p27",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Sam do after he finished the map?",
+      "options": [
+        "He gave it to Leo.",
+        "He walked the route and wrote notes.",
+        "He drew the fountain."
+      ],
+      "pictures": [
+        "🤝",
+        "📝",
+        "⛲"
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the last thing Sam added to the map. Then read the next sentence.",
+      "explain": "On Friday morning, Sam gave the map to Leo. It is in the ninth sentence, after he added the red arrow.",
+      "inference": 0,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i73",
+      "skill": "N2",
+      "passage": "n2-p28",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the steps in the order Maya did them.",
+      "steps": [
+        "Maya lowered her pan into the water.",
+        "She shook the pan from side to side.",
+        "She tipped the pan and swirled the water.",
+        "She saw three tiny yellow flakes.",
+        "She put the flakes into a glass tube."
+      ],
+      "evidence": [
+        2,
+        3,
+        5,
+        8,
+        9
+      ],
+      "hint": "Follow the order words \"First\", \"Then\" and \"Next\". Then look for \"After ten minutes\".",
+      "explain": "Maya lowered the pan, shook it, tipped it and swirled the water. After ten minutes, she saw the flakes, and Mr. Varga helped her put them in a tube.",
+      "inference": 0,
+      "tags": [
+        "order-words",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i74",
+      "skill": "N2",
+      "passage": "n2-p28",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What happened when Maya tipped the pan and swirled the water?",
+      "options": [
+        "Each student got a pan of gravel.",
+        "Mr. Varga helped her fill a tube.",
+        "The light sand washed over the edge.",
+        "She saw three tiny yellow flakes."
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the sentence with the word \"swirled\". Then read the next sentence.",
+      "explain": "The light sand washed over the edge, one small wave at a time. It is in the seventh sentence.",
+      "inference": 0,
+      "tags": [
+        "after",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i75",
+      "skill": "N2",
+      "passage": "n2-p28",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that tells what was left in the pan after ten minutes.",
+      "unit": "sentence",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        7
+      ],
+      "hint": "Look for the words \"ten minutes\".",
+      "explain": "After ten minutes, only a spoonful of dark sand was left. It is the eighth sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i76",
+      "skill": "N2",
+      "passage": "n2-p29",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the events of the race in order.",
+      "steps": [
+        "Ana ran the first part of the race.",
+        "Priya kept the team in second place.",
+        "Leo dropped the baton.",
+        "Another team passed Leo.",
+        "Sam passed one runner before the finish line."
+      ],
+      "evidence": [
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "hint": "Each runner ran one part. Follow the baton from Ana to Priya to Leo to Sam.",
+      "explain": "Ana ran first, and Priya kept the team in second place. Leo dropped the baton, and another team passed him. At the end, Sam passed one runner.",
+      "inference": 0,
+      "tags": [
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i77",
+      "skill": "N2",
+      "passage": "n2-p29",
+      "format": "build",
+      "level": 3,
+      "prompt": "Build a short retell of the race. Choose only the important events, in order.",
+      "frame": "First, {0}. Then {1}. At the end, {2}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "Ana ran first and kept the team in second place",
+            "Sam waved to Grandma Rose",
+            "Leo tied his shoe"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "Leo tied his shoe",
+            "Leo dropped the baton, and the team fell to third",
+            "Sam waved to Grandma Rose"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "Sam passed a runner, and the team came in second",
+            "Leo tied his shoe",
+            "Ana ran the first part"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        6,
+        7,
+        9
+      ],
+      "hint": "A short retell keeps the events that change the race. Skip things that do not change it, like a wave to someone in the crowd.",
+      "explain": "First, Ana ran and kept the team in second place. Then Leo dropped the baton, and the team fell to third. At the end, Sam passed a runner, and the team came in second. The shoe and the wave are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n2-i78",
+      "skill": "N2",
+      "passage": "n2-p29",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What was Leo doing while Priya ran?",
+      "options": [
+        "He was running the last part.",
+        "He was waving to Grandma Rose.",
+        "He was passing a runner.",
+        "He was tying his shoe."
+      ],
+      "answer": 3,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the word \"While\". Read that sentence carefully. Two boys do two different things in it.",
+      "explain": "While Priya ran, Leo tied his shoe. It is in the fifth sentence. Sam was the one who waved.",
+      "inference": 0,
+      "tags": [
+        "while",
+        "same-time",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n2-i79",
+      "skill": "N2",
+      "passage": "n2-p30",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "Leo and Ben mixed flour, milk, eggs and sugar.",
+        "Mrs. Lin heated the grill.",
+        "The doors opened, and the first customers sat down.",
+        "The café was full of people eating pancakes.",
+        "The café had sold three hundred pancakes."
+      ],
+      "evidence": [
+        3,
+        4,
+        8,
+        0,
+        9
+      ],
+      "hint": "The story starts at nine o'clock. Look for \"Earlier that morning\". Then compare the clock times: eight o'clock, nine o'clock and noon.",
+      "explain": "The boys mixed the batter, and Mrs. Lin heated the grill earlier that morning. The doors opened at eight. By nine, the café was full. By noon, it had sold three hundred pancakes.",
+      "inference": 1,
+      "tags": [
+        "out-of-order-telling",
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i80",
+      "skill": "N2",
+      "passage": "n2-p30",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Ben do when the bubbles popped?",
+      "options": [
+        "He flipped each pancake over.",
+        "He poured the batter in circles.",
+        "He opened the doors.",
+        "He mixed the flour and milk."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the word \"popped\". Read the whole sentence.",
+      "explain": "When the bubbles popped, Ben flipped each pancake over. It is in the seventh sentence. Leo was the one who poured the batter.",
+      "inference": 0,
+      "tags": [
+        "after",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n2-i81",
+      "skill": "N2",
+      "passage": "n2-p30",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Which parts are important events in the story, and which are small details? Sort them.",
+      "bins": [
+        "Important event",
+        "Small detail"
+      ],
+      "cards": [
+        {
+          "text": "Mrs. Lin showed the boys how to make pancakes.",
+          "bin": 0
+        },
+        {
+          "text": "The doors opened, and customers came in.",
+          "bin": 0
+        },
+        {
+          "text": "The café sold three hundred pancakes.",
+          "bin": 0
+        },
+        {
+          "text": "The money would buy forty new library books.",
+          "bin": 0
+        },
+        {
+          "text": "A drop of water sizzled on the grill.",
+          "bin": 1
+        },
+        {
+          "text": "One pancake landed on the edge of a plate.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        8,
+        9,
+        10
+      ],
+      "hint": "Ask about each card: if I left this out of a retell, would the story still make sense? If it would, the card is a small detail.",
+      "explain": "Learning to make the pancakes, opening the doors, selling three hundred pancakes and buying forty books are the important events. The sizzling water and the pancake on the plate are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "retell"
+      ]
+    },
+    {
+      "id": "n2-i82",
+      "skill": "N2",
+      "passage": "n2-p31",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "The boys set chairs in rows.",
+        "Leo set up his drum kit.",
+        "Ms. Gray tested the microphones.",
+        "The band members arrived.",
+        "The first song began."
+      ],
+      "evidence": [
+        2,
+        3,
+        6,
+        8,
+        10
+      ],
+      "hint": "Follow the order words \"First\", \"Then\" and \"Next\". Then use the times: four o'clock, five thirty and six o'clock.",
+      "explain": "The boys set out the chairs, Leo set up his drums, and Ms. Gray tested the microphones. At five thirty, the band arrived. At six, the first song began.",
+      "inference": 0,
+      "tags": [
+        "order-words",
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i83",
+      "skill": "N2",
+      "passage": "n2-p31",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Sam do while Leo worked on the drums?",
+      "options": [
+        "He sat in the front row.",
+        "He placed a music stand in front of every chair.",
+        "He carried chairs from the music room.",
+        "He tested the microphones."
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the word \"While\". Read that whole sentence.",
+      "explain": "While Leo worked on the drums, Sam placed a music stand in front of every chair. It is in the sixth sentence.",
+      "inference": 0,
+      "tags": [
+        "while",
+        "same-time"
+      ]
+    },
+    {
+      "id": "n2-i84",
+      "skill": "N2",
+      "passage": "n2-p31",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What happened right after the band members arrived?",
+      "options": [
+        "Leo set up his drum kit.",
+        "The boys carried forty chairs.",
+        "The players tuned their instruments.",
+        "Ms. Gray tested the microphones."
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the words \"five thirty\". Then read the next sentence.",
+      "explain": "Ms. Gray played a note, and the players tuned their instruments to match it. It is in the tenth sentence, right after the band arrived.",
+      "inference": 0,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i85",
+      "skill": "N2",
+      "passage": "n2-p32",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "Sam read a dog training book.",
+        "Pixel got a treat for lying down.",
+        "Pixel rolled onto his side.",
+        "Pixel rolled all the way over.",
+        "Pixel rolled over when Sam only said the words."
+      ],
+      "evidence": [
+        1,
+        3,
+        5,
+        7,
+        8
+      ],
+      "hint": "Look for the time words: \"Before he began\", \"On the first day\", \"On the second day\", \"On the third day\" and \"By the end of the week\".",
+      "explain": "Sam read the book before he began. On the first day, Pixel lay down. On the second day, he rolled onto his side. On the third day, he rolled all the way over. By the end of the week, he did it when Sam only said the words.",
+      "inference": 0,
+      "tags": [
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i86",
+      "skill": "N2",
+      "passage": "n2-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Sam do before he began to teach Pixel?",
+      "options": [
+        "He showed the trick to Grandma Rose.",
+        "He moved a treat in a full circle.",
+        "He gave Pixel a treat for lying down.",
+        "He read a dog training book."
+      ],
+      "answer": 3,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the words \"Before he began\".",
+      "explain": "Sam read a dog training book from the library before he began. It is in the second sentence.",
+      "inference": 0,
+      "tags": [
+        "before"
+      ]
+    },
+    {
+      "id": "n2-i87",
+      "skill": "N2",
+      "passage": "n2-p32",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that tells the first time Pixel rolled all the way over.",
+      "unit": "sentence",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        5,
+        7
+      ],
+      "hint": "On one day, Pixel only rolled onto his side. Read on to find the day he went all the way over.",
+      "explain": "On the third day, Pixel rolled all the way over. It is the eighth sentence. On the second day, he only rolled onto his side.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "first",
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i88",
+      "skill": "N2",
+      "passage": "n2-p33",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "Captain Ruth Lane spoke over the speakers.",
+        "Sam saw a puff of mist rise from the water.",
+        "A long, dark back rose above the waves.",
+        "The whale lifted its tail and slid under the water.",
+        "Sam looked up the whale in a guide book."
+      ],
+      "evidence": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "Follow the order words \"First\", \"Then\" and \"Next\". The guide book comes when the ferry reaches the island.",
+      "explain": "Captain Lane spoke, Sam saw the spout, the whale's back rose, and the whale lifted its tail. When the ferry reached Gull Island, Sam looked up the whale.",
+      "inference": 0,
+      "tags": [
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i89",
+      "skill": "N2",
+      "passage": "n2-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Captain Lane do right after Sam saw the puff of mist?",
+      "options": [
+        "She explained that it was a whale's spout.",
+        "She told everyone to look to the right.",
+        "She took three photos.",
+        "She looked in a guide book."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the sentence about the puff of mist. Then read the next sentence.",
+      "explain": "Captain Lane explained that the mist was a whale's spout. It is in the fifth sentence. She told everyone to look to the right before Sam saw the mist.",
+      "inference": 0,
+      "tags": [
+        "after",
+        "before-after"
+      ]
+    },
+    {
+      "id": "n2-i90",
+      "skill": "N2",
+      "passage": "n2-p33",
+      "format": "build",
+      "level": 3,
+      "prompt": "Build a short retell of what the whale did. Choose only the important events, in order.",
+      "frame": "First, {0}. Then {1}. At the end, {2}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "a puff of mist rose from the water",
+            "a gull flew over the ferry",
+            "a child dropped a bag of crackers"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "a child dropped a bag of crackers",
+            "the whale's long, dark back rose above the waves",
+            "a gull flew over the ferry"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "the whale lifted its tail and slid under the water",
+            "a gull flew over the ferry",
+            "a puff of mist rose from the water"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        7
+      ],
+      "hint": "This retell is about the whale. Keep only what the whale did, and skip what other people and animals did.",
+      "explain": "First, a puff of mist rose from the water. Then the whale's back rose above the waves. At the end, the whale lifted its tail and slid under the water. The gull and the crackers are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n2-i91",
+      "skill": "N2",
+      "passage": "n2-p34",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "Ana pushed the beans between the towel and the glass.",
+        "A small white root poked out.",
+        "A pale shoot pushed up toward the light.",
+        "The shoot opened into two green leaves.",
+        "Ana planted the bean in a pot of soil."
+      ],
+      "evidence": [
+        2,
+        4,
+        6,
+        7,
+        9
+      ],
+      "hint": "Look for the time words: \"After three days\", \"Two days later\", \"On the seventh day\" and \"At the end of two weeks\".",
+      "explain": "Ana set up the beans. After three days, a root poked out. Two days later, a shoot pushed up. On the seventh day, it opened into leaves. After two weeks, Ana planted the bean.",
+      "inference": 0,
+      "tags": [
+        "time-words",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i92",
+      "skill": "N2",
+      "passage": "n2-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What happened two days after the root poked out?",
+      "options": [
+        "Each bean split open.",
+        "A pale shoot pushed up toward the light.",
+        "The shoot opened into two green leaves.",
+        "Ana planted the bean in a pot."
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        6
+      ],
+      "hint": "Find the root. Then look for the words \"Two days later\".",
+      "explain": "Two days later, a pale shoot pushed up toward the light. It is in the seventh sentence.",
+      "inference": 0,
+      "tags": [
+        "time-words",
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i93",
+      "skill": "N2",
+      "passage": "n2-p34",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that tells which part of a bean plant always grows first.",
+      "unit": "sentence",
+      "answer": [
+        5
+      ],
+      "evidence": [
+        5
+      ],
+      "hint": "Look for the word \"first\" in a sentence that tells a fact about all beans.",
+      "explain": "The root always grows first, and it grows down. It is the sixth sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "first",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i94",
+      "skill": "N2",
+      "passage": "n2-p35",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the events of the trip in order.",
+      "steps": [
+        "The bus turned up Pine Street.",
+        "It drove around the back of the school.",
+        "It crossed the old stone bridge.",
+        "It stopped in front of the library.",
+        "Sam borrowed a book of maps."
+      ],
+      "evidence": [
+        3,
+        4,
+        6,
+        8,
+        10
+      ],
+      "hint": "Follow the order words \"First\", \"Then\", \"Next\" and \"Finally\".",
+      "explain": "The bus turned up Pine Street, went around the school, crossed the bridge, and stopped at the library. Then Sam borrowed a book of maps.",
+      "inference": 0,
+      "tags": [
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i95",
+      "skill": "N2",
+      "passage": "n2-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where did the bus go just before it crossed the stone bridge?",
+      "options": [
+        "down Market Street",
+        "along Harbor Road",
+        "around the back of the school",
+        "up Pine Street"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        6
+      ],
+      "hint": "Find the sentence about the bridge. Then look back to the last place the bus went before it. Skip the sentence about Sam's phone.",
+      "explain": "The bus drove around the back of the school just before it crossed the bridge. Look at the fifth and seventh sentences.",
+      "inference": 0,
+      "tags": [
+        "before"
+      ]
+    },
+    {
+      "id": "n2-i96",
+      "skill": "N2",
+      "passage": "n2-p35",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that tells where the bus went first on the detour.",
+      "unit": "sentence",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Look for the word \"First\".",
+      "explain": "First, the bus turned up Pine Street, past the bike shop. It is the fourth sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "first"
+      ]
+    },
+    {
+      "id": "n2-i97",
+      "skill": "N2",
+      "passage": "n2-p36",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the stages of a frog's life in order.",
+      "steps": [
+        "A female frog lays eggs in shallow water.",
+        "The eggs hatch into tadpoles.",
+        "The tadpole grows back legs.",
+        "Its front legs appear.",
+        "Its tail gets shorter.",
+        "The frog climbs out of the water."
+      ],
+      "evidence": [
+        4,
+        6,
+        9,
+        10,
+        12,
+        13
+      ],
+      "hint": "This article explains how something grows. Follow the order words and time words in the second and third paragraphs, such as \"First\", \"After several more weeks\" and \"Finally\".",
+      "explain": "The frog lays eggs, the eggs hatch into tadpoles, the back legs grow, then the front legs, the tail gets shorter, and finally the frog climbs out. The second and third paragraphs tell the stages in this order.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "process",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i98",
+      "skill": "N2",
+      "passage": "n2-p36",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What happens next after a tadpole grows back legs?",
+      "options": [
+        "It hatches from an egg.",
+        "Its tail is gone.",
+        "It eats soft plants for the first time.",
+        "Its front legs appear."
+      ],
+      "answer": 3,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Find the sentence about the back legs. Then read the next sentence and look for the words \"A little later\".",
+      "explain": "A little later, the front legs appear. It is the second sentence of the third paragraph, right after the back legs grow.",
+      "inference": 0,
+      "tags": [
+        "after",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i99",
+      "skill": "N2",
+      "passage": "n2-p36",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that tells the last stage in the frog's change.",
+      "unit": "sentence",
+      "answer": [
+        13
+      ],
+      "evidence": [
+        13
+      ],
+      "hint": "Look for a word that tells about the end of a set of steps. The last sentence of the article is a summary, not a stage.",
+      "explain": "\"Finally, when the tail is gone, the frog climbs out of the water and lives mostly on land.\" It is the second to last sentence of the article.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "last",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i100",
+      "skill": "N2",
+      "passage": "n2-p37",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What was Priya doing while Sam set up the chairs?",
+      "options": [
+        "She was helping Dr. Lee point the telescope at the Moon.",
+        "She was looking through the eyepiece first.",
+        "She was pouring hot chocolate.",
+        "She was sending Sam a text."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        8
+      ],
+      "hint": "The story tells about two places at the same time. Find the paragraph about Priya, and look for the word \"While\".",
+      "explain": "While Sam set up his chairs, Priya helped Dr. Lee point the big telescope at the Moon. It is in the third paragraph. Grandma Rose poured the hot chocolate.",
+      "inference": 0,
+      "tags": [
+        "same-time",
+        "while",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n2-i101",
+      "skill": "N2",
+      "passage": "n2-p37",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the events of the night in order.",
+      "steps": [
+        "Sam and Grandma Rose drove up to the lookout.",
+        "A dark curve began to cover the Moon.",
+        "Priya watched the craters disappear into the shadow.",
+        "The whole Moon turned a dull red.",
+        "Sam and Priya sent each other the same words."
+      ],
+      "evidence": [
+        3,
+        5,
+        10,
+        11,
+        14
+      ],
+      "hint": "The second and third paragraphs happen at the same time in two places. Use the times, and the words \"When the shadow started\", to fit them together.",
+      "explain": "At nine, Sam drove to the lookout. At nine thirty, the shadow began to cover the Moon, and then Priya watched the craters disappear. Just before eleven, the Moon turned red, and the friends sent the same text.",
+      "inference": 1,
+      "tags": [
+        "same-time",
+        "time-words",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i102",
+      "skill": "N2",
+      "passage": "n2-p37",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Which parts are important events in the story, and which are small details? Sort them.",
+      "bins": [
+        "Important event",
+        "Small detail"
+      ],
+      "cards": [
+        {
+          "text": "Sam and Priya watched the eclipse from two different places.",
+          "bin": 0
+        },
+        {
+          "text": "A dark shadow began to cover the Moon.",
+          "bin": 0
+        },
+        {
+          "text": "The whole Moon turned a dull red.",
+          "bin": 0
+        },
+        {
+          "text": "Sam and Priya sent each other the same message.",
+          "bin": 0
+        },
+        {
+          "text": "Grandma Rose poured the drinks.",
+          "bin": 1
+        },
+        {
+          "text": "Sam set up two folding chairs.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        5,
+        11,
+        14
+      ],
+      "hint": "Ask about each card: if I left this out of a retell, would the story still make sense? If it would, the card is a small detail.",
+      "explain": "Watching from two places, the shadow, the red Moon and the matching messages are the important events. The drinks and the chairs are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "retell"
+      ]
+    },
+    {
+      "id": "n2-i103",
+      "skill": "N2",
+      "passage": "n2-p37",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What did Sam do right after the whole Moon turned red?",
+      "options": [
+        "He drove up to the lookout.",
+        "He sent Priya a text.",
+        "He took his first photo of the shadow.",
+        "He set up two folding chairs."
+      ],
+      "answer": 1,
+      "evidence": [
+        11,
+        13
+      ],
+      "hint": "Find the sentence where the Moon turns red. Skip the sentence that explains why, and read the next event.",
+      "explain": "Sam sent Priya a text that said, \"It's red!\" It is in the last paragraph. The sentence between them explains the red color.",
+      "inference": 0,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i104",
+      "skill": "N2",
+      "passage": "n2-p38",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "Priya added a small speaker to the rover.",
+        "Priya pressed the start button at the campsite.",
+        "The rover turned down the wrong path.",
+        "The friends searched the bushes near the fork.",
+        "Priya made the speaker beep.",
+        "Priya heard the beeping near the old mill."
+      ],
+      "evidence": [
+        11,
+        5,
+        8,
+        10,
+        12,
+        0
+      ],
+      "hint": "The story starts near the end, at four o'clock. Look for \"Earlier that afternoon\" and \"the week before\". They take you back in time.",
+      "explain": "Priya added the speaker the week before. That afternoon, she pressed the start button, the rover took the wrong path, the friends searched the bushes, and she made it beep. At four o'clock, she heard the beeping near the mill.",
+      "inference": 1,
+      "tags": [
+        "flashback",
+        "out-of-order-telling",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i105",
+      "skill": "N2",
+      "passage": "n2-p38",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build a short retell. Choose only the important events, in the order they happened.",
+      "frame": "First, {0}. Then {1}. Next, {2}. At the end, {3}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "the rover took the wrong path and was lost",
+            "Ben took a photo of a woodpecker",
+            "Priya checked each wheel",
+            "the rover was tipped against a log"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "Ben took a photo of a woodpecker",
+            "Priya made the rover's speaker beep",
+            "Priya changed the program",
+            "Priya turned the rover upright"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Next",
+          "options": [
+            "Priya pressed the start button",
+            "the rover rolled along the trail",
+            "they followed the sound and found the rover near the mill",
+            "Ben took a photo of a woodpecker"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "the rover rolled along the trail",
+            "Priya pressed the start button",
+            "Ben took a photo of a woodpecker",
+            "Priya changed the program so the rover would wait at every fork"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        8,
+        12,
+        13,
+        15
+      ],
+      "hint": "A short retell tells the problem, how it was solved and how it ended. Skip small details. Remember that the story does not start at the beginning.",
+      "explain": "First, the rover took the wrong path and was lost. Then Priya made its speaker beep. Next, they followed the sound and found it. At the end, she changed the program. The woodpecker is a small detail.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "key-detail",
+        "out-of-order-telling"
+      ]
+    },
+    {
+      "id": "n2-i106",
+      "skill": "N2",
+      "passage": "n2-p38",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "The story starts at four o'clock. Tap the sentence where it goes back in time to the start of the afternoon.",
+      "unit": "sentence",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Look for a time word that points back, like \"earlier\".",
+      "explain": "\"Earlier that afternoon, Priya and Ben had taken the rover to Story Woods to test a new program.\" It is the first sentence of the second paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "flashback",
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i107",
+      "skill": "N2",
+      "passage": "n2-p39",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "Sam and Priya packed the box with instruments.",
+        "Maya tied a parachute to the box.",
+        "Ms. Ortiz filled the balloon with helium.",
+        "Ben let go of the line.",
+        "The balloon burst.",
+        "The box landed on a farm."
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        6,
+        9,
+        12
+      ],
+      "hint": "Follow the order words in the second paragraph. Then follow the balloon up and down in the third and fourth paragraphs.",
+      "explain": "Sam and Priya packed the box, Maya tied on the parachute, Ms. Ortiz filled the balloon, and Ben let go. The balloon burst high in the sky, and the box landed on a farm.",
+      "inference": 0,
+      "tags": [
+        "long-sequence",
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i108",
+      "skill": "N2",
+      "passage": "n2-p39",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What happened right after the balloon burst?",
+      "options": [
+        "Ben let go of the line.",
+        "The farmer helped them find the box.",
+        "The parachute opened, and the box floated down.",
+        "The balloon slowly grew bigger."
+      ],
+      "answer": 2,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Find the word \"burst\". Then read the next sentence.",
+      "explain": "Then the parachute opened, and the box floated down. It is the last sentence of the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i109",
+      "skill": "N2",
+      "passage": "n2-p39",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What was the class doing while the box was falling?",
+      "options": [
+        "They were reading the temperatures it measured.",
+        "They were counting down from ten.",
+        "They were looking in the tall grass.",
+        "They were watching its location move on a map."
+      ],
+      "answer": 3,
+      "evidence": [
+        11
+      ],
+      "hint": "Look for the word \"While\" in the last paragraph.",
+      "explain": "While the box was still falling, the class watched its location move across a map on Ms. Ortiz's laptop. It is the first sentence of the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "while",
+        "same-time"
+      ]
+    },
+    {
+      "id": "n2-i110",
+      "skill": "N2",
+      "passage": "n2-p39",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build a short retell of the balloon's trip. Choose only the important events, in order.",
+      "frame": "First, {0}. Then {1}. Next, {2}. At the end, {3}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "helium is lighter than air",
+            "the class packed a box of instruments",
+            "the balloon was only a white dot",
+            "the farmer helped them"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "the box landed on a farm",
+            "helium is lighter than air",
+            "the balloon rose high into the sky",
+            "the class read the temperatures"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Next",
+          "options": [
+            "Ms. Ortiz filled the balloon",
+            "the class packed a box",
+            "helium is lighter than air",
+            "the balloon burst, and the box fell by parachute"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "the class found the box on a farm",
+            "the balloon was only a white dot",
+            "Ben let go of the line",
+            "the balloon slowly grew bigger"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        7,
+        9,
+        10,
+        13
+      ],
+      "hint": "A short retell follows the balloon from start to finish. Skip science facts and small details, and keep the order.",
+      "explain": "First, the class packed a box of instruments. Then the balloon rose high into the sky. Next, it burst, and the box fell by parachute. At the end, the class found the box on a farm. The fact about helium is not an event.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n2-i111",
+      "skill": "N2",
+      "passage": "n2-p40",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the steps of docking the ferry in order.",
+      "steps": [
+        "Captain Lane slowed the engines.",
+        "She turned the ferry toward the dock.",
+        "She put the engines in reverse.",
+        "The crew threw the ropes to a worker.",
+        "The worker lowered a steel ramp.",
+        "The cars drove off."
+      ],
+      "evidence": [
+        3,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "hint": "Start in the second paragraph, ten minutes before the ferry reached the island. Follow the steps one at a time until the cars leave.",
+      "explain": "The captain slowed the engines, turned toward the dock and put the engines in reverse. Then the crew threw the ropes, the worker lowered the ramp, and the cars drove off.",
+      "inference": 0,
+      "tags": [
+        "process",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i112",
+      "skill": "N2",
+      "passage": "n2-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What were two crew members doing while the captain steered toward the dock?",
+      "options": [
+        "They were walking to the front deck with ropes.",
+        "They were lowering a steel ramp.",
+        "They were driving the cars off.",
+        "They were slowing the engines."
+      ],
+      "answer": 0,
+      "evidence": [
+        6
+      ],
+      "hint": "Look for the word \"While\" in the second paragraph.",
+      "explain": "While the captain steered, two crew members walked to the front deck with thick ropes. It is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "while",
+        "same-time"
+      ]
+    },
+    {
+      "id": "n2-i113",
+      "skill": "N2",
+      "passage": "n2-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What had to happen before the worker could lower the ramp?",
+      "options": [
+        "Ben had to say that docking looked hard.",
+        "The ferry had to be tied tightly to the dock.",
+        "The cars had to drive off.",
+        "The walking passengers had to follow the cars."
+      ],
+      "answer": 1,
+      "evidence": [
+        9
+      ],
+      "hint": "Find the sentence about the ramp. Read the words at the start of that sentence.",
+      "explain": "The ferry had to be tied tightly first. The sentence about the ramp starts with \"Once the ferry was tied tightly\".",
+      "inference": 0,
+      "tags": [
+        "before",
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i114",
+      "skill": "N2",
+      "passage": "n2-p41",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "A storm pushed huge waves against the shore.",
+        "The waves washed away the sand.",
+        "A man walking his dog took photos of the prints.",
+        "Dr. Bell called the rock club.",
+        "Maya and Mr. Varga brushed sand out of the prints.",
+        "Dr. Bell made a rubber copy of the best print."
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        13
+      ],
+      "hint": "The story starts on Monday. Find the sentence that says the prints were found \"two days earlier\", and start there.",
+      "explain": "On Saturday night, the storm waves washed away the sand. On Sunday, a man took photos, and Dr. Bell called the club. On Monday, Maya and Mr. Varga brushed the prints, and Dr. Bell made a rubber copy.",
+      "inference": 1,
+      "tags": [
+        "flashback",
+        "out-of-order-telling",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i115",
+      "skill": "N2",
+      "passage": "n2-p41",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "The story begins on Monday. Tap the sentence where it goes back in time.",
+      "unit": "sentence",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Look for words that point to a day before Monday, like \"earlier\".",
+      "explain": "\"The prints had been found by accident two days earlier.\" It is the first sentence of the second paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "flashback",
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i116",
+      "skill": "N2",
+      "passage": "n2-p41",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Which parts are important events in the story, and which are small details? Sort them.",
+      "bins": [
+        "Important event",
+        "Small detail"
+      ],
+      "cards": [
+        {
+          "text": "A storm washed the sand off the rock.",
+          "bin": 0
+        },
+        {
+          "text": "A man saw the prints and sent photos to the museum.",
+          "bin": 0
+        },
+        {
+          "text": "The club cleaned and measured the prints.",
+          "bin": 0
+        },
+        {
+          "text": "Dr. Bell made a rubber copy of the best print.",
+          "bin": 0
+        },
+        {
+          "text": "The man was walking his dog.",
+          "bin": 1
+        },
+        {
+          "text": "A seagull watched Maya from a rock.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        5,
+        7,
+        10,
+        13
+      ],
+      "hint": "Ask about each card: if I left this out of a retell, would the story still make sense? If it would, the card is a small detail.",
+      "explain": "The storm, the photos sent to the museum, cleaning and measuring, and the rubber copy are the important events. The dog and the seagull are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "retell"
+      ]
+    },
+    {
+      "id": "n2-i117",
+      "skill": "N2",
+      "passage": "n2-p42",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the steps of how a geode forms in order.",
+      "steps": [
+        "A hollow space forms inside rock.",
+        "Water seeps in through tiny cracks.",
+        "A thin layer of mineral is left on the walls.",
+        "Crystals grow from the walls toward the middle."
+      ],
+      "evidence": [
+        3,
+        6,
+        8,
+        10
+      ],
+      "hint": "This article explains a process. Find the words \"First\", \"Next\", \"Over time\" and \"Finally\".",
+      "explain": "First, a hollow space forms. Next, water seeps in. Over time, layers of mineral are left on the walls. Finally, crystals grow toward the middle.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "process",
+        "order-words"
+      ]
+    },
+    {
+      "id": "n2-i118",
+      "skill": "N2",
+      "passage": "n2-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "After water seeps into the rock, what happens next?",
+      "options": [
+        "Someone cuts the geode in half.",
+        "The crystals fill the whole space.",
+        "The water dries up and leaves a thin layer of mineral.",
+        "Gas bubbles are trapped in cooling lava."
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        8
+      ],
+      "hint": "Find the sentence that starts with \"Next\". Skip the sentence that describes the water, and read the next step.",
+      "explain": "The water dries up or drains away and leaves a thin layer of mineral on the walls. It is the first sentence of the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "after",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i119",
+      "skill": "N2",
+      "passage": "n2-p42",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that tells the last step in how a geode forms.",
+      "unit": "sentence",
+      "answer": [
+        10
+      ],
+      "evidence": [
+        10
+      ],
+      "hint": "Look for a word that tells about the end of a set of steps.",
+      "explain": "\"Finally, crystals grow from the walls toward the middle.\" This sentence in the third paragraph tells the last step.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "last",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i120",
+      "skill": "N2",
+      "passage": "n2-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What was Maya doing while Ben wrote the code that made the crab move?",
+      "options": [
+        "She was recording the sound of waves.",
+        "She was adding a timer to the screen.",
+        "She was moving shells behind rocks.",
+        "She was drawing the crab, the shells and the beach."
+      ],
+      "answer": 3,
+      "evidence": [
+        6
+      ],
+      "hint": "Look for the word \"While\" in the second paragraph. Three people are working at the same time, so check who does each job.",
+      "explain": "While Ben wrote the code, Maya drew the crab, the shells and the beach on a tablet. It is in the second paragraph. Ana recorded the sounds.",
+      "inference": 0,
+      "tags": [
+        "same-time",
+        "while"
+      ]
+    },
+    {
+      "id": "n2-i121",
+      "skill": "N2",
+      "passage": "n2-p43",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "The team planned the game on paper.",
+        "They tested the first version.",
+        "Ben fixed the crab so it stopped walking through rocks.",
+        "Leo played the game.",
+        "Maya moved some shells behind rocks.",
+        "Every team showed its game."
+      ],
+      "evidence": [
+        3,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "hint": "Use the clock times: nine o'clock, noon, two o'clock and three o'clock.",
+      "explain": "The team planned first. At noon, they tested the first version, and Ben fixed the crab. At two, Leo played, and Maya moved the shells. At three, every team showed its game.",
+      "inference": 0,
+      "tags": [
+        "time-words",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i122",
+      "skill": "N2",
+      "passage": "n2-p43",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build a short retell of the game jam. Choose only the important events, in order.",
+      "frame": "First, {0}. Then {1}. Next, {2}. At the end, {3}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "the team ate sandwiches",
+            "Ana added a timer",
+            "the team planned a game about a crab that collects shells",
+            "Maya moved shells behind rocks"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "the team built the game, each person doing a different job",
+            "every team showed its game",
+            "Leo played the game",
+            "the team ate sandwiches"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Next",
+          "options": [
+            "the team planned on paper",
+            "the team ate sandwiches",
+            "Mrs. Hall rang a bell",
+            "Leo tested it, and the team made it harder"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "Ana recorded the sound of waves",
+            "the game won the prize for the best sounds",
+            "the team ate sandwiches",
+            "the team planned on paper"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        4,
+        6,
+        11,
+        12,
+        14
+      ],
+      "hint": "A short retell keeps the events that make and change the game. Skip small details, like lunch. Then keep the order.",
+      "explain": "First, the team planned a crab game. Then they built it, each person doing a different job. Next, Leo tested it, and they made it harder. At the end, it won the prize for the best sounds. Lunch is a small detail.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "n2-i123",
+      "skill": "N2",
+      "passage": "n2-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What did the team do right after Leo found that the shells were too easy to collect?",
+      "options": [
+        "Maya moved some shells, and Ben made the tide faster.",
+        "They ate sandwiches and tested the first version.",
+        "Ben fixed the crab so it stopped walking through rocks.",
+        "They planned the game on a big sheet of paper."
+      ],
+      "answer": 0,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Find the sentence where Leo plays the game. Then read the next sentence.",
+      "explain": "Maya moved some shells behind rocks, and Ben made the tide come in faster. It is the last sentence of the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "after"
+      ]
+    },
+    {
+      "id": "n2-i124",
+      "skill": "N2",
+      "passage": "n2-p44",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "Mrs. Hall showed Priya how to wear the headphones.",
+        "Priya played the cello part three times.",
+        "Sam played his guitar part too fast.",
+        "A book cart squeaked during Sam's second try.",
+        "Mrs. Hall helped them mix the two parts.",
+        "People heard the song at the spring fair."
+      ],
+      "evidence": [
+        3,
+        5,
+        9,
+        10,
+        12,
+        0
+      ],
+      "hint": "The story starts at the spring fair, after the song was made. Then it goes back to Tuesday. Use the days to put the rest in order.",
+      "explain": "On Tuesday, Mrs. Hall showed Priya the headphones, and Priya played her part. On Thursday, Sam played too fast, and a cart squeaked on his second try. On Friday, they mixed the parts. Later, people heard the song at the fair.",
+      "inference": 1,
+      "tags": [
+        "out-of-order-telling",
+        "time-words",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i125",
+      "skill": "N2",
+      "passage": "n2-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What did Sam hear in the headphones while he played his guitar part?",
+      "options": [
+        "Mrs. Hall counting the beats",
+        "Priya's cello and the click",
+        "only the click",
+        "a book cart squeaking"
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the paragraph about Sam's turn. Compare what he heard with what Priya heard on Tuesday.",
+      "explain": "Sam heard Priya's cello along with the click. It is in the third paragraph. Priya heard only the click, because she recorded first.",
+      "inference": 0,
+      "tags": [
+        "same-time",
+        "while",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n2-i126",
+      "skill": "N2",
+      "passage": "n2-p44",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Which parts are important events in the story, and which are small details? Sort them.",
+      "bins": [
+        "Important event",
+        "Small detail"
+      ],
+      "cards": [
+        {
+          "text": "Priya recorded her cello part with a click in her headphones.",
+          "bin": 0
+        },
+        {
+          "text": "Sam recorded his guitar part while he listened to the cello.",
+          "bin": 0
+        },
+        {
+          "text": "Mrs. Hall helped them mix the two parts.",
+          "bin": 0
+        },
+        {
+          "text": "People heard the song at the spring fair.",
+          "bin": 0
+        },
+        {
+          "text": "A book cart squeaked past the door.",
+          "bin": 1
+        },
+        {
+          "text": "Priya made a label for the memory stick.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        3,
+        8,
+        12
+      ],
+      "hint": "Ask about each card: if I left this out of a retell, would the story still make sense? If it would, the card is a small detail.",
+      "explain": "Priya's recording, Sam's recording, mixing the parts and the song at the fair are the important events. The squeaky cart and the label are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "retell"
+      ]
+    },
+    {
+      "id": "n2-i127",
+      "skill": "N2",
+      "passage": "n2-p45",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the steps of making maple syrup in order.",
+      "steps": [
+        "A farmer drills a small hole in the trunk.",
+        "The farmer taps a spout into the hole.",
+        "Sap drips into a bucket or flows through tubes.",
+        "The sap boils in a wide, flat pan.",
+        "The syrup is filtered.",
+        "The syrup is poured into bottles."
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        8,
+        12
+      ],
+      "hint": "This article explains how something is made. Follow the sap from the tree to the sugarhouse to the bottle.",
+      "explain": "The farmer drills a hole and taps in a spout. The sap drips out and goes to the sugarhouse, where it boils. Finally, the syrup is filtered and poured into bottles.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "process",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i128",
+      "skill": "N2",
+      "passage": "n2-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What happens to the sap while it boils?",
+      "options": [
+        "It flows through plastic tubes.",
+        "It is filtered to remove grit.",
+        "Most of its water turns to steam.",
+        "It drips into a bucket."
+      ],
+      "answer": 2,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Find the word \"boils\". Read that sentence and the one after it.",
+      "explain": "As the sap boils, most of the water turns to steam, and the sap becomes thicker and sweeter. It is in the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "while",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i129",
+      "skill": "N2",
+      "passage": "n2-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What does the farmer do right before tapping in the spout?",
+      "options": [
+        "boils the sap over a fire",
+        "pours the syrup into bottles",
+        "filters the syrup",
+        "drills a small hole in the trunk"
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the sentence about the spout. Then read the sentence just before it.",
+      "explain": "The farmer drills a small hole, about as wide as a pencil, into the trunk. It is in the second paragraph, just before the spout.",
+      "inference": 0,
+      "tags": [
+        "before",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i130",
+      "skill": "N2",
+      "passage": "n2-p46",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the steps of how a fossil forms in order.",
+      "steps": [
+        "An animal dies near water.",
+        "Its soft parts rot away.",
+        "Mud or sand buries the bones.",
+        "More layers of mud and sand pile on top.",
+        "Minerals turn the bone into a stony copy.",
+        "Wind, rain or waves wear the rock away."
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        11
+      ],
+      "hint": "This article explains a process that takes millions of years. Start at the second paragraph and follow the time words, such as \"First\", \"Next\", \"Over thousands of years\" and \"Much later\".",
+      "explain": "The animal dies near water, its soft parts rot, and mud or sand buries the bones. Layers pile on top, minerals turn the bone to stone, and much later wind, rain or waves wear the rock away.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "process",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i131",
+      "skill": "N2",
+      "passage": "n2-p46",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which step happens at the same time as the upper layers press the lower layers into rock?",
+      "options": [
+        "Water carries minerals into the tiny spaces inside the bones.",
+        "The soft parts of the animal rot away.",
+        "Waves wear the surface of the rock away.",
+        "The animal dies near the water."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the sentence about the weight of the upper layers. The next sentence starts with a word that means \"at the same time\".",
+      "explain": "Water carries dissolved minerals into the bones. That sentence starts with \"Meanwhile\", which means at the same time as the layers are pressed into rock.",
+      "inference": 1,
+      "tags": [
+        "same-time",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i132",
+      "skill": "N2",
+      "passage": "n2-p46",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Which cards tell a step in how a fossil forms, and which give extra information? Sort them.",
+      "bins": [
+        "Step in the process",
+        "Extra information"
+      ],
+      "cards": [
+        {
+          "text": "An animal dies near water.",
+          "bin": 0
+        },
+        {
+          "text": "Mud or sand buries the bones.",
+          "bin": 0
+        },
+        {
+          "text": "Minerals fill the tiny spaces inside the bones.",
+          "bin": 0
+        },
+        {
+          "text": "The rock is pushed up and slowly worn away.",
+          "bin": 0
+        },
+        {
+          "text": "Dr. Bell's team digs in the clay cliffs north of Harbor Town.",
+          "bin": 1
+        },
+        {
+          "text": "Very few animals ever become fossils.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        8,
+        11
+      ],
+      "hint": "A step is something that must happen to the bone for it to become a fossil. Ask about each card: does it tell something that happens to the bone?",
+      "explain": "Dying near water, being buried, filling with minerals, and being pushed up and worn away are the steps. Dr. Bell's team and the fact that few animals become fossils are extra information.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i133",
+      "skill": "N2",
+      "passage": "n2-p47",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the events in the order they happen.",
+      "steps": [
+        "A female turtle crawls up the beach after dark.",
+        "She digs a deep hole with her back flippers.",
+        "She lays about one hundred eggs.",
+        "Each hatchling breaks its shell with an egg tooth.",
+        "The hatchlings dig upward together.",
+        "The hatchlings scramble toward the waves."
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        10,
+        11,
+        0
+      ],
+      "hint": "The article starts at the end of the story, with the baby turtles. Find the sentence that goes back two months, and start there.",
+      "explain": "The mother crawls up the beach, digs a hole and lays her eggs. About two months later, each hatchling breaks its shell, they dig upward together, and they scramble to the waves. The first paragraph shows the last event.",
+      "inference": 1,
+      "tags": [
+        "out-of-order-telling",
+        "process",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i134",
+      "skill": "N2",
+      "passage": "n2-p47",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "The article begins with the baby turtles. Tap the sentence where it goes back in time.",
+      "unit": "sentence",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Look for words that point to an earlier time, such as \"earlier\" or \"began\".",
+      "explain": "\"Their journey began about two months earlier, on the very same beach.\" It is the last sentence of the first paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "flashback",
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i135",
+      "skill": "N2",
+      "passage": "n2-p47",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What does the mother turtle do after she covers the eggs with sand?",
+      "options": [
+        "She lays about one hundred eggs.",
+        "She crawls back to the sea.",
+        "She digs a hole shaped like a jar.",
+        "She checks on the nest every week."
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the sentence about covering the eggs. Read to the end of that sentence, and then read the next one.",
+      "explain": "She packs down the sand and crawls back to the sea. It is in the second paragraph. The next sentence says she never returns to check on the nest.",
+      "inference": 0,
+      "tags": [
+        "after",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i136",
+      "skill": "N2",
+      "passage": "n2-p48",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the steps of making copper wire in order.",
+      "steps": [
+        "Miners dig the ore out of an open pit.",
+        "Machines crush the rock and grind it into powder.",
+        "Copper bits float to the top as foam.",
+        "The foam is melted in a furnace.",
+        "The copper is shaped into a thick rod.",
+        "The rod is pulled through smaller and smaller holes."
+      ],
+      "evidence": [
+        3,
+        4,
+        6,
+        7,
+        10,
+        11
+      ],
+      "hint": "This article explains how something is made. Follow the copper from the pit, to the mill, to the furnace, to the wire.",
+      "explain": "Miners dig the ore, machines crush and grind it, the copper bits float up as foam, and the foam is melted. Then the copper is shaped into a rod and pulled through smaller and smaller holes.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "process",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i137",
+      "skill": "N2",
+      "passage": "n2-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What happens to the waste rock while the copper bits float to the top?",
+      "options": [
+        "It is pulled through small holes.",
+        "It sticks to the bubbles.",
+        "It sinks to the bottom.",
+        "It is melted in a furnace."
+      ],
+      "answer": 2,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the sentence about the foam. Look for the word \"while\" in it.",
+      "explain": "The waste rock sinks to the bottom while the copper bits float up as foam. It is the last sentence of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "while",
+        "same-time",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i138",
+      "skill": "N2",
+      "passage": "n2-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What happens to the foam right before it is melted?",
+      "options": [
+        "It is pulled into wire.",
+        "It is shaped into a rod.",
+        "It is wound onto a spool.",
+        "It is dried."
+      ],
+      "answer": 3,
+      "evidence": [
+        7
+      ],
+      "hint": "Find the sentence with the word \"furnace\". Read the words that come before \"melted\" in that sentence.",
+      "explain": "The foam is dried and then melted in a furnace. It is the first sentence of the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "before",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i139",
+      "skill": "N2",
+      "passage": "n2-p49",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the events of the game in the order they happened.",
+      "steps": [
+        "Gull Point scored from a long, high kick.",
+        "The wind pushed Ana's pass off course.",
+        "Coach Novak drew a new plan.",
+        "Ben scored with a long shot.",
+        "Ana scored the tying goal.",
+        "The final whistle blew."
+      ],
+      "evidence": [
+        3,
+        4,
+        6,
+        10,
+        12,
+        0
+      ],
+      "hint": "The story starts at the end of the game. Go to the second paragraph, which starts at the beginning of the first half.",
+      "explain": "Gull Point scored from a high kick, and then the wind pushed Ana's pass off course. At halftime, Coach Novak drew a new plan. Ben scored, Ana scored the tying goal, and then the final whistle blew. The first sentence shows the last event.",
+      "inference": 1,
+      "tags": [
+        "out-of-order-telling",
+        "flashback",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i140",
+      "skill": "N2",
+      "passage": "n2-p49",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build a short retell of the game. Choose only the important events, in the order they happened.",
+      "frame": "First, {0}. Then {1}. Next, {2}. At the end, {3}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "a dog barked at a seagull",
+            "Gull Point scored two goals in the first half",
+            "Ben passed around orange slices",
+            "the scoreboard showed 2 to 2"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "Ben passed around orange slices",
+            "a dog barked at a seagull",
+            "Coach Novak made a new plan for the wind",
+            "the final whistle blew"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Next",
+          "options": [
+            "Harbor Town scored two goals with the wind behind them",
+            "a dog barked at a seagull",
+            "Gull Point scored from a high kick",
+            "the players sat quietly on the grass"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "Ben passed around orange slices",
+            "Gull Point scored from a high kick",
+            "the wind pushed Ana's pass off course",
+            "the game ended in a tie, and the players cheered"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        6,
+        8,
+        10,
+        12,
+        0
+      ],
+      "hint": "A short retell tells the problem, the plan and how it ended. Skip small details, like the snack and the dog. Remember that the story does not start at the beginning.",
+      "explain": "First, Gull Point scored two goals. Then Coach Novak made a new plan for the wind. Next, Harbor Town scored two goals. At the end, the game ended in a tie, and the players cheered. The orange slices and the dog are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "key-detail",
+        "out-of-order-telling"
+      ]
+    },
+    {
+      "id": "n2-i141",
+      "skill": "N2",
+      "passage": "n2-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What was Ben doing while the coach talked at halftime?",
+      "options": [
+        "He was passing around a bag of orange slices.",
+        "He was taking a long shot.",
+        "He was drawing a new plan on a clipboard.",
+        "He was sliding a short pass to Ana."
+      ],
+      "answer": 0,
+      "evidence": [
+        9
+      ],
+      "hint": "Find the paragraph about halftime. Look for the word \"While\".",
+      "explain": "While the coach talked, Ben passed around a bag of orange slices. It is the last sentence of the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "while",
+        "same-time"
+      ]
+    },
+    {
+      "id": "n2-i142",
+      "skill": "N2",
+      "passage": "n2-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which goal was scored first?",
+      "options": [
+        "Ana's tying goal",
+        "Gull Point's goal from a long, high kick",
+        "Gull Point's goal after the wind pushed Ana's pass",
+        "Ben's long shot"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "The first paragraph only tells the final score. Go to the paragraph about the first half, and compare the times of the two Gull Point goals.",
+      "explain": "Gull Point scored first, from a long, high kick in the fifth minute. Their second goal came ten minutes later. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "first",
+        "out-of-order-telling",
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i143",
+      "skill": "N2",
+      "passage": "n2-p50",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "Priya tested the robot on a tray of sand.",
+        "Priya changed the program to ignore white and gray things.",
+        "The club arrived at the beach at eight o'clock.",
+        "Priya swapped in a spare battery.",
+        "Ben added his count to the volunteers' chart."
+      ],
+      "evidence": [
+        6,
+        7,
+        8,
+        11,
+        14
+      ],
+      "hint": "Look for the word \"Before\" in the second paragraph. It tells about a test that happened before cleanup day.",
+      "explain": "Before cleanup day, Priya tested the robot and changed its program. On cleanup day, the club arrived at eight, Priya swapped the battery halfway through the morning, and by noon Ben added his count to the chart.",
+      "inference": 1,
+      "tags": [
+        "before",
+        "out-of-order-telling",
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i144",
+      "skill": "N2",
+      "passage": "n2-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What were Leo and Maya doing while Priya steered the robot?",
+      "options": [
+        "swapping in a spare battery",
+        "testing the robot on a tray of sand",
+        "picking up larger things by hand",
+        "counting every piece the robot collected"
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        10
+      ],
+      "hint": "Three things happen at once in the third paragraph. Look for the words \"At the same time\".",
+      "explain": "At the same time, Leo and Maya worked ahead of the robot and picked up larger things by hand. It is in the third paragraph. Ben was the one counting.",
+      "inference": 0,
+      "tags": [
+        "same-time",
+        "while",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n2-i145",
+      "skill": "N2",
+      "passage": "n2-p50",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Which parts are important events in the story, and which are small details? Sort them.",
+      "bins": [
+        "Important event",
+        "Small detail"
+      ],
+      "cards": [
+        {
+          "text": "The club built a robot to collect small pieces of plastic.",
+          "bin": 0
+        },
+        {
+          "text": "Priya fixed the program after a test.",
+          "bin": 0
+        },
+        {
+          "text": "The robot cleaned the beach while the team helped.",
+          "bin": 0
+        },
+        {
+          "text": "The robot collected three hundred and twelve pieces.",
+          "bin": 0
+        },
+        {
+          "text": "A seagull followed the robot.",
+          "bin": 1
+        },
+        {
+          "text": "Ben carried a clipboard.",
+          "bin": 1
+        },
+        {
+          "text": "Leo and Maya found an old rope.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        7,
+        8,
+        13
+      ],
+      "hint": "Ask about each card: if I left this out of a retell, would the story still make sense? If it would, the card is a small detail.",
+      "explain": "Building the robot, fixing the program, cleaning the beach and collecting three hundred and twelve pieces are the important events. The seagull, the clipboard and the rope are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "retell"
+      ]
+    },
+    {
+      "id": "n2-i146",
+      "skill": "N2",
+      "passage": "n2-p51",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "The class stretched a tape along the bank.",
+        "Sam measured from the tape to the water's edge.",
+        "The class studied old maps indoors.",
+        "Sam drew the baseline on a large sheet of paper.",
+        "Priya drew a key."
+      ],
+      "evidence": [
+        2,
+        4,
+        7,
+        11,
+        13
+      ],
+      "hint": "The work took three days. Use the days of the week, and then the words \"First\" and \"Finally\" in the last paragraph.",
+      "explain": "On Monday, the class stretched the tape, and Sam measured to the water's edge. On Tuesday, they studied old maps indoors. On Wednesday, Sam drew the baseline, and at the end Priya drew a key.",
+      "inference": 0,
+      "tags": [
+        "time-words",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i147",
+      "skill": "N2",
+      "passage": "n2-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What was Maya doing while Sam measured and Priya wrote down the numbers?",
+      "options": [
+        "She was holding the end of the tape.",
+        "She was drawing a key for the symbols.",
+        "She was studying a map from 1950.",
+        "She was sketching the rocks, a log and a pool."
+      ],
+      "answer": 3,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Four people work at once in the second paragraph. Find the words \"At the same time\", and check who does each job.",
+      "explain": "At the same time, Maya sketched the big rocks, a fallen log and a small pool. It is the last sentence of the second paragraph. Ben held the tape.",
+      "inference": 0,
+      "tags": [
+        "same-time",
+        "while"
+      ]
+    },
+    {
+      "id": "n2-i148",
+      "skill": "N2",
+      "passage": "n2-p51",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build a short retell of how the class made the map. Choose only the important events, in order.",
+      "frame": "First, {0}. Then {1}. At the end, {2}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "tiny fish swam in a small pool",
+            "the class measured the creek along a baseline",
+            "Ben held the end of the tape",
+            "Maya sketched a fallen log"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "tiny fish swam in a small pool",
+            "Ben held the end of the tape",
+            "the class turned their numbers into a scale drawing",
+            "the class stretched a tape along the bank"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "Maya sketched a fallen log",
+            "the class measured the creek",
+            "Sam measured every five meters",
+            "the finished map was hung in the library"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        9,
+        1
+      ],
+      "hint": "A short retell keeps the main steps of making the map and how it ended. Skip small details, like the fish. The first paragraph tells where the map is now.",
+      "explain": "First, the class measured the creek along a baseline. Then they turned their numbers into a scale drawing. At the end, the finished map was hung in the library. The second sentence of the story tells the ending.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "key-detail",
+        "out-of-order-telling"
+      ]
+    },
+    {
+      "id": "n2-i149",
+      "skill": "N2",
+      "passage": "n2-p52",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the steps in the life of a thunderstorm in order.",
+      "steps": [
+        "The Sun heats the ground.",
+        "Warm, damp air rises.",
+        "The cloud grows taller and taller.",
+        "Rain or hail begins to fall.",
+        "Falling rain drags cool air down.",
+        "The tall cloud breaks apart."
+      ],
+      "evidence": [
+        3,
+        4,
+        6,
+        8,
+        12,
+        14
+      ],
+      "hint": "This article explains a process in three stages. Find the first stage, then the second, then the last, and follow the steps inside each one.",
+      "explain": "In the growing stage, the Sun heats the ground, warm air rises, and the cloud grows taller. In the mature stage, rain or hail falls. In the last stage, rain drags cool air down, and the cloud breaks apart.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "process",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i150",
+      "skill": "N2",
+      "passage": "n2-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What happens at the same time as rain or hail begins to fall?",
+      "options": [
+        "Ice and water crash together and build up electric charge.",
+        "The Sun heats the ground.",
+        "The tall cloud breaks apart.",
+        "Warm, damp air first begins to rise."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the sentence about rain or hail. Then read the next sentence and look at its first words.",
+      "explain": "At the same time, bits of ice and water crash into each other and build up electric charge. It is in the third paragraph, right after the rain or hail begins to fall.",
+      "inference": 0,
+      "tags": [
+        "same-time",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i151",
+      "skill": "N2",
+      "passage": "n2-p52",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort each event into the stage of the storm when it happens.",
+      "bins": [
+        "Growing stage",
+        "Mature stage",
+        "Last stage"
+      ],
+      "cards": [
+        {
+          "text": "The Sun heats the ground.",
+          "bin": 0
+        },
+        {
+          "text": "Water vapor turns into tiny droplets.",
+          "bin": 0
+        },
+        {
+          "text": "Rain or hail begins to fall.",
+          "bin": 1
+        },
+        {
+          "text": "Lightning flashes, and thunder booms.",
+          "bin": 1
+        },
+        {
+          "text": "Cool air blocks the warm, rising air.",
+          "bin": 2
+        },
+        {
+          "text": "The lightning stops.",
+          "bin": 2
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        8,
+        10,
+        13,
+        14
+      ],
+      "hint": "Each stage has its own paragraph. Find the paragraph that names each stage, and look for each card's event there.",
+      "explain": "The Sun heating the ground and droplets forming are in the growing stage, the second paragraph. Rain, hail and lightning are in the mature stage, the third paragraph. Cool air blocking the warm air and the lightning stopping are in the last stage, the fourth paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "process",
+        "stages"
+      ]
+    },
+    {
+      "id": "n2-i152",
+      "skill": "N2",
+      "passage": "n2-p53",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the steps of making a guitar in order.",
+      "steps": [
+        "The wood dries slowly for several years.",
+        "Two thin boards are joined, and the body shape is cut.",
+        "A sound hole is cut, and braces are glued on.",
+        "The top, back and sides are glued into a box.",
+        "The neck is attached to the body.",
+        "The strings are added and tuned."
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        8,
+        9,
+        11
+      ],
+      "hint": "The guitar maker explains the steps in the second and third paragraphs. Look for \"Before any wood is cut\", \"Next\", \"Once\", \"Then\" and \"Last of all\".",
+      "explain": "The wood dries for years before it is cut. Then the boards are joined and cut, the sound hole and braces are added, and the parts are glued into a box. The neck is attached, and last of all the strings are added.",
+      "inference": 0,
+      "tags": [
+        "process",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i153",
+      "skill": "N2",
+      "passage": "n2-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What does the guitar maker do while the glue on the braces dries?",
+      "options": [
+        "She cuts a round sound hole.",
+        "She bends the sides against a hot metal form.",
+        "She carves the neck from a block of wood.",
+        "She adds the strings and tunes them."
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        7
+      ],
+      "hint": "Find the sentence that starts with \"While the glue dries\". Read the rest of that sentence.",
+      "explain": "While the glue dries, she bends the sides by pressing damp wood against a hot metal form. It is the last sentence of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "while",
+        "same-time",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i154",
+      "skill": "N2",
+      "passage": "n2-p53",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Which cards tell a step in making a guitar, and which are extra details about the visit? Sort them.",
+      "bins": [
+        "Step in making a guitar",
+        "Extra detail"
+      ],
+      "cards": [
+        {
+          "text": "Two thin boards are joined, and the body shape is cut.",
+          "bin": 0
+        },
+        {
+          "text": "The sides are bent against a hot metal form.",
+          "bin": 0
+        },
+        {
+          "text": "The neck is carved and attached to the body.",
+          "bin": 0
+        },
+        {
+          "text": "Coats of finish are added to protect the wood.",
+          "bin": 0
+        },
+        {
+          "text": "The workshop smelled of sawdust.",
+          "bin": 1
+        },
+        {
+          "text": "Ana said the guitar sounded warm.",
+          "bin": 1
+        },
+        {
+          "text": "Sam wrote the steps on the bus home.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        4,
+        7,
+        9,
+        10
+      ],
+      "hint": "A step is something the guitar maker does to the wood. Ask about each card: does it change the guitar?",
+      "explain": "Joining and cutting the boards, bending the sides, attaching the neck and adding the finish are steps in making a guitar. The smell, Ana's words and Sam's notes are extra details about the visit.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i155",
+      "skill": "N2",
+      "passage": "n2-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What does the guitar maker do right after she glues the top, back and sides together?",
+      "options": [
+        "She cuts the sound hole.",
+        "She lets the wood dry for several years.",
+        "She carves the neck and attaches it to the body.",
+        "She bends the sides against a hot form."
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the sentence about the hollow box. Then read the next sentence.",
+      "explain": "Then she carves the neck, sets the frets into it and attaches it to the body. It is in the third paragraph, right after the box is glued.",
+      "inference": 0,
+      "tags": [
+        "after",
+        "process"
+      ]
+    },
+    {
+      "id": "n2-i156",
+      "skill": "N2",
+      "passage": "n2-p54",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "The volunteers took the engine apart and labeled every part.",
+        "Sam painted the wheels red.",
+        "A safety inspector checked the boiler.",
+        "The volunteers lit a coal fire.",
+        "The engine blew its whistle.",
+        "Steam pushed the pistons, and the engine rolled forward."
+      ],
+      "evidence": [
+        3,
+        5,
+        6,
+        8,
+        0,
+        13
+      ],
+      "hint": "The story starts with the whistle on Sunday. The second paragraph goes back years. Then the third paragraph goes back to early Sunday morning.",
+      "explain": "The volunteers took the engine apart before Sam joined. Sam painted the wheels, and last spring an inspector checked the boiler. On Sunday, they lit the fire at five, the whistle blew at eleven, and then the engine rolled forward.",
+      "inference": 1,
+      "tags": [
+        "flashback",
+        "out-of-order-telling",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i157",
+      "skill": "N2",
+      "passage": "n2-p54",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build a short retell of the story. Choose only the important events, in the order they happened.",
+      "frame": "First, {0}. Then {1}. Next, {2}. At the end, {3}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "Sam covered his ears",
+            "the volunteers took the rusty engine apart",
+            "Grandma Rose handed out cinnamon rolls",
+            "Sam polished the brass bell"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "Sam polished the brass bell",
+            "the engine blew its whistle",
+            "they repaired the parts and put the engine back together",
+            "Grandma Rose handed out cinnamon rolls"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Next",
+          "options": [
+            "the volunteers lit a fire and built up steam",
+            "Sam polished the brass bell",
+            "Grandma Rose handed out cinnamon rolls",
+            "the volunteers took the engine apart"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "Sam polished the brass bell",
+            "the engine blew its whistle and rolled forward",
+            "Grandma Rose handed out cinnamon rolls",
+            "the volunteers lit a coal fire"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        6,
+        8,
+        11,
+        0,
+        14
+      ],
+      "hint": "A short retell follows the engine from rusty shell to moving engine. Skip small details, like the bell and the snack. Remember that the story starts near the end.",
+      "explain": "First, the volunteers took the rusty engine apart. Then they repaired it and put it back together. Next, they lit a fire and built up steam. At the end, the engine blew its whistle and rolled forward. The bell and the cinnamon rolls are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "key-detail",
+        "out-of-order-telling"
+      ]
+    },
+    {
+      "id": "n2-i158",
+      "skill": "N2",
+      "passage": "n2-p54",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells what the volunteers did first on Sunday.",
+      "unit": "sentence",
+      "answer": [
+        8
+      ],
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "The whistle at eleven o'clock was not the first thing that happened on Sunday. Look for the earliest time of day in the story.",
+      "explain": "\"At five o'clock in the morning, the volunteers lit a coal fire inside the firebox.\" It is the second sentence of the third paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "first",
+        "out-of-order-telling",
+        "time-words"
+      ]
+    },
+    {
+      "id": "n2-i159",
+      "skill": "N2",
+      "passage": "n2-p55",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the events in the order they happened.",
+      "steps": [
+        "Dr. Hale told the club the time of the pass.",
+        "Maya checked the weather forecast.",
+        "The friends hiked up to the lookout.",
+        "Dr. Hale started a countdown.",
+        "A bright white dot rose above the trees.",
+        "The dot faded and vanished in the east."
+      ],
+      "evidence": [
+        4,
+        6,
+        7,
+        10,
+        0,
+        14
+      ],
+      "hint": "The story starts at 7:42 on Friday, when the station appears. The second paragraph goes back to Monday. Use the days and the clock times.",
+      "explain": "On Monday, Dr. Hale told the club the time. On Thursday, Maya checked the forecast. On Friday, the friends hiked to the lookout, Dr. Hale started a countdown at 7:40, the dot rose at 7:42, and at the end it faded in the east.",
+      "inference": 1,
+      "tags": [
+        "out-of-order-telling",
+        "time-words",
+        "long-sequence"
+      ]
+    },
+    {
+      "id": "n2-i160",
+      "skill": "N2",
+      "passage": "n2-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What was Maya doing while Ben set up his camera?",
+      "options": [
+        "She was handing around cups of apple juice.",
+        "She was checking the weather forecast.",
+        "She was starting a countdown.",
+        "She was spreading out a blanket."
+      ],
+      "answer": 3,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the sentence about the camera and the tripod. The next sentence starts with a word that means \"at the same time\".",
+      "explain": "Maya spread out a blanket. The sentence starts with \"Meanwhile\", which means at the same time as Ben set up his camera. Leo handed around the apple juice.",
+      "inference": 1,
+      "tags": [
+        "same-time",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n2-i161",
+      "skill": "N2",
+      "passage": "n2-p55",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build a short retell of the story. Choose only the important events, in the order they happened.",
+      "frame": "First, {0}. Then {1}. Next, {2}. At the end, {3}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "Leo handed around apple juice",
+            "Dr. Hale told the club when the station would pass",
+            "Maya spread out a blanket",
+            "the station faded in the east"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "Maya spread out a blanket",
+            "Leo handed around apple juice",
+            "the friends went up to the lookout with Dr. Hale",
+            "the station faded into Earth's shadow"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "Next",
+          "options": [
+            "Leo handed around apple juice",
+            "Maya spread out a blanket",
+            "Dr. Hale told the club the time",
+            "the station crossed the sky in about five minutes"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "the station faded into Earth's shadow",
+            "Leo handed around apple juice",
+            "Ben charged his camera",
+            "Maya spread out a blanket"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        4,
+        7,
+        11,
+        14
+      ],
+      "hint": "A short retell keeps the events that lead to seeing the station and how it ended. Skip small details, like the blanket and the drinks. Remember that the story does not start at the beginning.",
+      "explain": "First, Dr. Hale told the club when the station would pass. Then the friends went up to the lookout. Next, the station crossed the sky in about five minutes. At the end, it faded into Earth's shadow. The blanket and the apple juice are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "retell",
+        "key-detail",
+        "out-of-order-telling"
+      ]
+    },
+    {
+      "id": "n2-i162",
+      "skill": "N2",
+      "passage": "n2-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What happened two minutes after Dr. Hale started the countdown?",
+      "options": [
+        "The station appeared.",
+        "The station faded in the east.",
+        "Ben set up his camera.",
+        "The friends hiked up to the lookout."
+      ],
+      "answer": 0,
+      "evidence": [
+        10
+      ],
+      "hint": "Find the word \"countdown\". Read to the end of that sentence.",
+      "explain": "Two minutes later, the station appeared. It is the last sentence of the third paragraph. The countdown started at 7:40, and the station rose at 7:42.",
+      "inference": 0,
+      "tags": [
+        "time-words",
+        "after"
       ]
     }
   ],

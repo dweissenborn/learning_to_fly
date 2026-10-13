@@ -541,12 +541,12 @@
       "title": "The Gem Sluice Price Board",
       "kind": "label",
       "sentences": [
-        "Leo and Maya try gem mining at the Copper Hill Mine.",
+        "Leo and Maya try gem mining at the Ridgeway Mine Museum.",
         "They wash dirt in a water trough, called a sluice, to find stones."
       ],
       "visual": {
         "type": "label",
-        "title": "Copper Hill Gem Sluice",
+        "title": "Ridgeway Gem Sluice",
         "rows": [
           {
             "k": "Small bucket",
@@ -920,6 +920,2430 @@
       "socialLoad": 0,
       "credit": {
         "title": "Maps and Passes Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p25",
+      "title": "Leo's Skate Park Pass",
+      "kind": "ticket",
+      "sentences": [
+        "Leo buys a day pass at the skate park.",
+        "He reads it at the gate."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Skate Park: Day Pass",
+        "rows": [
+          {
+            "k": "Day",
+            "v": "Saturday"
+          },
+          {
+            "k": "Park open",
+            "v": "9 AM to 5 PM"
+          },
+          {
+            "k": "Price",
+            "v": "$3 (paid)"
+          },
+          {
+            "k": "You must wear",
+            "v": "a helmet"
+          }
+        ]
+      },
+      "picture": "🛹🎟️",
+      "topics": [
+        "sports"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Leo's Skate Park Pass",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p26",
+      "title": "Fish Food for the Class Tank",
+      "kind": "label",
+      "sentences": [
+        "Maya feeds the fish in her class tank.",
+        "She reads the can first."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Tank Pal Fish Flakes",
+        "rows": [
+          {
+            "k": "Feed",
+            "v": "2 times a day"
+          },
+          {
+            "k": "How much",
+            "v": "a small pinch"
+          },
+          {
+            "k": "Too much food?",
+            "v": "It makes the water dirty."
+          },
+          {
+            "k": "Best before",
+            "v": "May 2"
+          }
+        ]
+      },
+      "picture": "🐠🥫",
+      "topics": [
+        "animals"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Fish Food for the Class Tank",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p27",
+      "title": "The Harbor Dash Box",
+      "kind": "label",
+      "sentences": [
+        "Ana, Ben, Sam, Leo and Maya want to play a new board game.",
+        "Ben reads the side of the box."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Dash: A Board Game",
+        "rows": [
+          {
+            "k": "Players",
+            "v": "2 to 4"
+          },
+          {
+            "k": "Ages",
+            "v": "8 and up"
+          },
+          {
+            "k": "Time to play",
+            "v": "about 30 minutes"
+          },
+          {
+            "k": "In the box",
+            "v": "1 board, 4 boats, 1 spinner, 40 cards"
+          },
+          {
+            "k": "Price",
+            "v": "$15"
+          }
+        ]
+      },
+      "picture": "🎲⛵",
+      "topics": [
+        "games"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Harbor Dash Box",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p28",
+      "title": "The Snorkel Sale",
+      "kind": "sign",
+      "sentences": [
+        "Sam and Priya visit the beach shop at Harbor Beach.",
+        "They want to look at fish in the bay with a mask and a snorkel."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "MASK $8",
+            "icon": "🤿"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "SNORKEL $5"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "FINS $12"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "SALE: MASK, SNORKEL AND FINS SET $20",
+            "icon": "🏷️"
+          },
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "SALE ENDS SUNDAY"
+          }
+        ]
+      },
+      "picture": "🤿🐟",
+      "topics": [
+        "ocean",
+        "money"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Snorkel Sale",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p29",
+      "title": "The Class Bean Packet",
+      "kind": "label",
+      "sentences": [
+        "Ms. Ortiz's class will grow bean plants by the window.",
+        "Priya reads the back of the seed packet."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Seed Co. Pole Beans",
+        "rows": [
+          {
+            "k": "Before you plant",
+            "v": "Soak the seeds in water overnight."
+          },
+          {
+            "k": "Planting depth",
+            "v": "1 inch"
+          },
+          {
+            "k": "Water",
+            "v": "when the top of the soil feels dry"
+          },
+          {
+            "k": "Days to sprout",
+            "v": "6 to 10 days"
+          },
+          {
+            "k": "Support",
+            "v": "Give each plant a stick to climb."
+          },
+          {
+            "k": "Seeds in packet",
+            "v": "30"
+          }
+        ]
+      },
+      "picture": "🫘🌱",
+      "topics": [
+        "nature"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Class Bean Packet",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p30",
+      "title": "Sam's Bus Pass",
+      "kind": "ticket",
+      "sentences": [
+        "Sam rides the Harbor Town bus to the library on weekends.",
+        "He checks his bus pass before he gets on."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Town Bus: Youth Pass",
+        "rows": [
+          {
+            "k": "Name",
+            "v": "Sam Rivera"
+          },
+          {
+            "k": "Rides left",
+            "v": "5"
+          },
+          {
+            "k": "Good until",
+            "v": "November 30"
+          },
+          {
+            "k": "Each ride",
+            "v": "Tap the card. 1 ride comes off."
+          },
+          {
+            "k": "Ages",
+            "v": "6 to 17"
+          }
+        ]
+      },
+      "picture": "🚌🪪",
+      "topics": [
+        "transport"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sam's Bus Pass",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p31",
+      "title": "The Fossil Museum Ticket",
+      "kind": "ticket",
+      "sentences": [
+        "Maya gets to the Harbor Town Fossil Museum at 9:30 AM on Sunday.",
+        "She reads her ticket outside the front doors."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Town Fossil Museum: Ticket",
+        "rows": [
+          {
+            "k": "Museum open",
+            "v": "10 AM to 4 PM"
+          },
+          {
+            "k": "Dig Pit talk with Dr. Bell",
+            "v": "11 AM, Floor 1"
+          },
+          {
+            "k": "Dinosaur Hall",
+            "v": "Floor 2. See the T. rex skeleton."
+          },
+          {
+            "k": "Ticket",
+            "v": "Youth, $5 (paid)"
+          }
+        ]
+      },
+      "picture": "🦖🎟️",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Fossil Museum Ticket",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p32",
+      "title": "Priya's Observatory Card",
+      "kind": "ticket",
+      "sentences": [
+        "Priya has a member card for Lantern Peaks Observatory.",
+        "She shows it at the front desk each time she visits."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Lantern Peaks Observatory: Member Card",
+        "rows": [
+          {
+            "k": "Member",
+            "v": "Priya Shah"
+          },
+          {
+            "k": "Good until",
+            "v": "March 31"
+          },
+          {
+            "k": "Star shows",
+            "v": "Free for members"
+          },
+          {
+            "k": "Telescope nights",
+            "v": "Fridays, 8:00 PM to 10:00 PM. Free for members."
+          },
+          {
+            "k": "Bring a guest",
+            "v": "1 guest gets in free, on Fridays only"
+          },
+          {
+            "k": "Gift shop",
+            "v": "$2 off anything that costs $10 or more"
+          }
+        ]
+      },
+      "picture": "🔭🪪",
+      "topics": [
+        "space"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Priya's Observatory Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p33",
+      "title": "Sam's Guitar Strings",
+      "kind": "label",
+      "sentences": [
+        "Sam's guitar has steel strings.",
+        "One string broke at music club, so he looks at new strings at the music shop."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Tone Guitar Strings",
+        "rows": [
+          {
+            "k": "For",
+            "v": "steel-string guitars only. Not for nylon-string guitars."
+          },
+          {
+            "k": "Strings in a pack",
+            "v": "6, one of each size"
+          },
+          {
+            "k": "Change all strings",
+            "v": "about every 3 months if you play every day"
+          },
+          {
+            "k": "Price",
+            "v": "$8 a pack, or 2 packs for $14"
+          },
+          {
+            "k": "Tip",
+            "v": "Wipe the strings with a dry cloth after you play."
+          }
+        ]
+      },
+      "picture": "🎸🎶",
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sam's Guitar Strings",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p34",
+      "title": "The Lighthouse Café Receipt",
+      "kind": "receipt",
+      "sentences": [
+        "Leo, Maya and Ben have lunch at the Lighthouse Café.",
+        "Leo pays for all three, and the others will pay him back.",
+        "Mrs. Lin gives Leo the receipt."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Lighthouse Café: Receipt",
+        "rows": [
+          {
+            "k": "Grilled cheese",
+            "v": "$5.00"
+          },
+          {
+            "k": "Fish tacos",
+            "v": "$7.00"
+          },
+          {
+            "k": "Veggie burger",
+            "v": "$6.00"
+          },
+          {
+            "k": "3 lemonades, $2.00 each",
+            "v": "$6.00"
+          },
+          {
+            "k": "Total",
+            "v": "$24.00"
+          },
+          {
+            "k": "Paid",
+            "v": "$30.00 cash"
+          },
+          {
+            "k": "Change",
+            "v": "$6.00"
+          }
+        ]
+      },
+      "picture": "🧾🍋",
+      "topics": [
+        "food",
+        "money"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Lighthouse Café Receipt",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p35",
+      "title": "The Battery Charger Label",
+      "kind": "label",
+      "sentences": [
+        "The robotics club's small robots use AA batteries.",
+        "Priya reads the label on the club's charger."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "PowerNest Battery Charger",
+        "warning": "Charge rechargeable batteries only.",
+        "rows": [
+          {
+            "k": "Batteries",
+            "v": "AA or AAA rechargeable batteries"
+          },
+          {
+            "k": "Charges",
+            "v": "2 or 4 batteries at a time"
+          },
+          {
+            "k": "Time for 2 AA",
+            "v": "about 3 hours"
+          },
+          {
+            "k": "Time for 4 AA",
+            "v": "about 5 hours"
+          },
+          {
+            "k": "Red light",
+            "v": "still charging"
+          },
+          {
+            "k": "Green light",
+            "v": "full. Take the batteries out."
+          },
+          {
+            "k": "Never charge",
+            "v": "regular one-use batteries. They can leak."
+          }
+        ]
+      },
+      "picture": "🔋🤖",
+      "topics": [
+        "robots"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Battery Charger Label",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p36",
+      "title": "The Mineral Starter Set",
+      "kind": "label",
+      "sentences": [
+        "Maya buys a mineral set at the Ridgeway Mine Museum gift shop.",
+        "The box lists how hard each mineral is."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Ridgeway Mineral Starter Set",
+        "rows": [
+          {
+            "k": "In the box",
+            "v": "6 minerals, 1 magnifier, 1 hardness card"
+          },
+          {
+            "k": "Talc",
+            "v": "hardness 1, the softest"
+          },
+          {
+            "k": "Gypsum",
+            "v": "hardness 2"
+          },
+          {
+            "k": "Calcite",
+            "v": "hardness 3"
+          },
+          {
+            "k": "Fluorite",
+            "v": "hardness 4"
+          },
+          {
+            "k": "Feldspar",
+            "v": "hardness 6"
+          },
+          {
+            "k": "Quartz",
+            "v": "hardness 7"
+          },
+          {
+            "k": "How it works",
+            "v": "A harder mineral can scratch a softer one."
+          }
+        ]
+      },
+      "picture": "💎🔍",
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Mineral Starter Set",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p37",
+      "title": "Ana's Soccer Cleats",
+      "kind": "label",
+      "sentences": [
+        "Ana needs new soccer cleats.",
+        "Her team plays on grass in the fall and in the school gym in the winter."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Fieldstar Junior Soccer Cleats",
+        "rows": [
+          {
+            "k": "Size",
+            "v": "Youth 5"
+          },
+          {
+            "k": "Best for",
+            "v": "firm, dry grass"
+          },
+          {
+            "k": "Not for",
+            "v": "indoor gym floors or hard turf"
+          },
+          {
+            "k": "Studs",
+            "v": "12 molded studs. They help you grip the grass."
+          },
+          {
+            "k": "Care",
+            "v": "Knock off the mud. Let them dry in the air, away from heaters."
+          },
+          {
+            "k": "Price",
+            "v": "$35"
+          }
+        ]
+      },
+      "picture": "⚽👟",
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ana's Soccer Cleats",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p38",
+      "title": "The Snow Gloves Tag",
+      "kind": "label",
+      "sentences": [
+        "Sam walks Pixel every morning, even in winter.",
+        "He reads the tag on his new gloves."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Gear Snow Gloves",
+        "rows": [
+          {
+            "k": "Warmth",
+            "v": "Keeps hands warm down to 10°F"
+          },
+          {
+            "k": "Snow",
+            "v": "Water-resistant. Good for light, dry snow."
+          },
+          {
+            "k": "Wet snow or rain",
+            "v": "Water can get in. Wear waterproof mittens instead."
+          },
+          {
+            "k": "Fingertips",
+            "v": "Work on phone screens."
+          },
+          {
+            "k": "Wash",
+            "v": "By hand in cold water. Lay flat to dry."
+          }
+        ]
+      },
+      "picture": "🧤❄️",
+      "topics": [
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Snow Gloves Tag",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p39",
+      "title": "The Aquarium Ticket",
+      "kind": "ticket",
+      "sentences": [
+        "Ben and Leo have tickets for the Harbor Town Aquarium.",
+        "The aquarium lets people in at set times."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Town Aquarium: Timed Ticket",
+        "rows": [
+          {
+            "k": "Date",
+            "v": "Saturday, January 16"
+          },
+          {
+            "k": "Enter between",
+            "v": "1:00 PM and 1:30 PM"
+          },
+          {
+            "k": "Shark feeding",
+            "v": "2:30 PM at the Deep Tank"
+          },
+          {
+            "k": "Café",
+            "v": "Inside the aquarium. Open 11:00 AM to 3:00 PM."
+          },
+          {
+            "k": "Re-entry",
+            "v": "Not allowed. Once you leave, you cannot come back in."
+          },
+          {
+            "k": "Youth ticket",
+            "v": "$9 (paid)"
+          }
+        ]
+      },
+      "picture": "🦈🎟️",
+      "topics": [
+        "ocean"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Aquarium Ticket",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p40",
+      "title": "Food for Clover",
+      "kind": "label",
+      "sentences": [
+        "Maya's class has a guinea pig named Clover.",
+        "This week, Maya and Ben take care of her."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Meadow Munch Guinea Pig Pellets",
+        "rows": [
+          {
+            "k": "Pellets",
+            "v": "1/8 cup a day for each adult guinea pig"
+          },
+          {
+            "k": "Hay",
+            "v": "Keep fresh hay in the cage all day."
+          },
+          {
+            "k": "Vitamin C",
+            "v": "Guinea pigs cannot make their own. Give a small piece of red pepper each day."
+          },
+          {
+            "k": "Water",
+            "v": "Fill the bottle with fresh water every day."
+          },
+          {
+            "k": "Do not feed",
+            "v": "chocolate, onions or potato chips"
+          },
+          {
+            "k": "Best before",
+            "v": "December 1"
+          }
+        ]
+      },
+      "picture": "🐹🥕",
+      "topics": [
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Food for Clover",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p41",
+      "title": "Orbit Bites",
+      "kind": "label",
+      "sentences": [
+        "After the star show, Sam's class visits the gift shop at Lantern Peaks Observatory.",
+        "Sam finds a pack of freeze-dried strawberries made for space fans.",
+        "Freeze-drying takes almost all of the water out of food.",
+        "The food becomes light and crunchy, and it keeps for a long time while the pack is closed.",
+        "On the space station, astronauts add water to many dried foods before they eat them."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Orbit Bites: Freeze-Dried Strawberries",
+        "rows": [
+          {
+            "k": "Serving size",
+            "v": "1/2 cup (10 g)"
+          },
+          {
+            "k": "Servings in the pack",
+            "v": "3"
+          },
+          {
+            "k": "Calories in 1 serving",
+            "v": "35"
+          },
+          {
+            "k": "Added sugars",
+            "v": "0 g"
+          },
+          {
+            "k": "Ingredients",
+            "v": "strawberries"
+          },
+          {
+            "k": "After opening",
+            "v": "Close the bag tight. Eat within 5 days."
+          },
+          {
+            "k": "Price",
+            "v": "$4 a pack, or 3 packs for $10"
+          },
+          {
+            "k": "Best before",
+            "v": "June 30"
+          }
+        ]
+      },
+      "picture": "🍓🚀",
+      "topics": [
+        "space",
+        "food"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Orbit Bites",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p42",
+      "title": "Sam's Train Day Ticket",
+      "kind": "ticket",
+      "sentences": [
+        "Sam and Grandma Rose plan a train trip to the beach at Sandy Cove on Saturday.",
+        "Sam wants to bring his bike, so they can ride along the beach path.",
+        "Grandma Rose buys a day ticket for each of them at the station machine.",
+        "While they wait on Platform 2, Sam reads the small print on his ticket."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Line: Youth Day Ticket",
+        "rows": [
+          {
+            "k": "Good on",
+            "v": "Saturday only, the date printed on this ticket"
+          },
+          {
+            "k": "Zones",
+            "v": "1, 2 and 3"
+          },
+          {
+            "k": "Valid from",
+            "v": "9:00 AM to midnight"
+          },
+          {
+            "k": "Trips",
+            "v": "As many as you like inside your zones"
+          },
+          {
+            "k": "Sandy Cove",
+            "v": "Zone 3"
+          },
+          {
+            "k": "North Bluff",
+            "v": "Zone 4. Buy an extra zone ticket for $2 before you board."
+          },
+          {
+            "k": "Bikes",
+            "v": "Free, but not on trains that leave between 4:00 PM and 6:00 PM"
+          },
+          {
+            "k": "Price",
+            "v": "$7 (paid)"
+          }
+        ]
+      },
+      "picture": "🚆🚲",
+      "topics": [
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sam's Train Day Ticket",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p43",
+      "title": "The Weather Radio Box",
+      "kind": "label",
+      "sentences": [
+        "Sometimes a storm stops the power in Harbor Town for a few hours.",
+        "Leo's family wants a radio that works even when the power is off.",
+        "A weather radio plays alerts from the weather service, so you hear about storms early.",
+        "Leo reads the box at the hardware store.",
+        "He wants to know every way the radio can get its power."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "StormWatch Hand-Crank Weather Radio",
+        "rows": [
+          {
+            "k": "Power choice 1",
+            "v": "3 AA batteries (not included)"
+          },
+          {
+            "k": "Power choice 2",
+            "v": "Built-in battery. Charge it with the hand crank or a USB cable."
+          },
+          {
+            "k": "Hand crank",
+            "v": "Turn it for 1 minute to get about 10 minutes of radio."
+          },
+          {
+            "k": "USB charge",
+            "v": "Full in about 4 hours. A full charge plays the radio for about 8 hours."
+          },
+          {
+            "k": "Weather alerts",
+            "v": "The radio beeps and a red light flashes when an alert comes in."
+          },
+          {
+            "k": "Flashlight",
+            "v": "Yes, on the side"
+          },
+          {
+            "k": "Water",
+            "v": "Splash-proof. Do not put it under water."
+          },
+          {
+            "k": "Price",
+            "v": "$32"
+          }
+        ]
+      },
+      "picture": "📻⛈️",
+      "topics": [
+        "weather"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Weather Radio Box",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p44",
+      "title": "Sam's Map Challenge Card",
+      "kind": "ticket",
+      "sentences": [
+        "Sam and Ana enter the Lantern Peaks Map Challenge.",
+        "In this race, runners use a map and a compass to find small flags called controls.",
+        "Each control has a hole punch on a post, and each runner carries a race card.",
+        "Sam reads both sides of his card the night before the race."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Lantern Peaks Map Challenge: Race Card",
+        "rows": [
+          {
+            "k": "Runner",
+            "v": "Sam Rivera, number 47"
+          },
+          {
+            "k": "Course",
+            "v": "Green, 2 miles, 6 controls"
+          },
+          {
+            "k": "Start time",
+            "v": "10:12 AM. Be at the start 10 minutes early."
+          },
+          {
+            "k": "Controls",
+            "v": "Visit them in number order. Punch this card at each one."
+          },
+          {
+            "k": "Missed a control?",
+            "v": "Your time still counts, but 5 minutes are added for each missed control."
+          },
+          {
+            "k": "Finish",
+            "v": "Hand in this card by 12:30 PM, even if you did not finish."
+          },
+          {
+            "k": "Lost?",
+            "v": "Walk to the nearest trail and blow your whistle 3 times."
+          }
+        ]
+      },
+      "picture": "🧭🗺️",
+      "topics": [
+        "maps"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sam's Map Challenge Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p45",
+      "title": "Maya's Rock Club Card",
+      "kind": "ticket",
+      "sentences": [
+        "Maya joined the Harbor Town Rock Club this fall.",
+        "Mr. Varga, the club leader, gives each new member a card.",
+        "The card lists the club's rules and the extra things that members can do.",
+        "Maya keeps it in her backpack, next to her magnifier."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Town Rock Club: Member Card",
+        "rows": [
+          {
+            "k": "Member",
+            "v": "Maya Brooks"
+          },
+          {
+            "k": "Meetings",
+            "v": "Tuesdays, 5:00 PM to 6:00 PM, Harbor Town Library"
+          },
+          {
+            "k": "Card good until",
+            "v": "June 30"
+          },
+          {
+            "k": "Rock swap",
+            "v": "First Tuesday of each month. Bring up to 3 rocks to trade."
+          },
+          {
+            "k": "Label rule",
+            "v": "Each rock you trade needs a label with its name and the place where you found it."
+          },
+          {
+            "k": "Field trips",
+            "v": "Hand in a form signed by an adult at least 7 days before the trip."
+          },
+          {
+            "k": "Ridgeway Mine Museum tours",
+            "v": "Members get $2 off a ticket."
+          },
+          {
+            "k": "Club shop",
+            "v": "Field notebooks $3, hand lenses $5"
+          }
+        ]
+      },
+      "picture": "🪨🪪",
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Maya's Rock Club Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p46",
+      "title": "The Spider Plant Tag",
+      "kind": "label",
+      "sentences": [
+        "Sam wants a plant for his bedroom, where Pixel sleeps at night.",
+        "Grandma Rose takes him to the Green Corner Garden Shop.",
+        "Sam's window gets hot, direct sun every afternoon.",
+        "His desk is across the room, where the light is bright but the sun does not shine on it.",
+        "Each pot at the shop has a tag that tells how to care for the plant."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Green Corner Garden Shop: Spider Plant",
+        "rows": [
+          {
+            "k": "Light",
+            "v": "Bright light, but not hot, direct sun. Direct sun can burn the leaves."
+          },
+          {
+            "k": "Water",
+            "v": "When the top inch of soil feels dry. Too much water can rot the roots."
+          },
+          {
+            "k": "Temperature",
+            "v": "55°F to 80°F"
+          },
+          {
+            "k": "Pets",
+            "v": "Safe for dogs and cats"
+          },
+          {
+            "k": "Size",
+            "v": "Grows up to 2 feet wide"
+          },
+          {
+            "k": "New plants",
+            "v": "Small baby plants grow on long stems. Cut one off and plant it in soil."
+          },
+          {
+            "k": "Price",
+            "v": "$12 each, or 2 for $20"
+          }
+        ]
+      },
+      "picture": "🪴🐕",
+      "topics": [
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Spider Plant Tag",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p47",
+      "title": "Ben's Game Shop Receipt",
+      "kind": "receipt",
+      "sentences": [
+        "Ben saved money for two months to buy a new racing game.",
+        "On October 3, he went to Level Up Games with Ana and used a coupon at the counter.",
+        "At home, Ben opened the game and the controller grip.",
+        "Then he found the same puzzle book already on his shelf, so he left the new one in its wrapper."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Level Up Games: Receipt",
+        "rows": [
+          {
+            "k": "Date",
+            "v": "October 3"
+          },
+          {
+            "k": "Galaxy Racers (game)",
+            "v": "$40.00"
+          },
+          {
+            "k": "Controller grip",
+            "v": "$12.00"
+          },
+          {
+            "k": "Puzzle book",
+            "v": "$8.00"
+          },
+          {
+            "k": "Coupon SAVE10, $10 off orders of $50 or more",
+            "v": "-$10.00"
+          },
+          {
+            "k": "Total",
+            "v": "$50.00"
+          },
+          {
+            "k": "Paid",
+            "v": "$60.00 cash. Change: $10.00"
+          },
+          {
+            "k": "Returns",
+            "v": "Unopened items within 30 days, with this receipt. Opened games can only be swapped for the same game."
+          }
+        ]
+      },
+      "picture": "🎮🧾",
+      "topics": [
+        "games",
+        "money"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ben's Game Shop Receipt",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p48",
+      "title": "The Swim Card",
+      "kind": "ticket",
+      "sentences": [
+        "In winter, Ana and Ben swim at the indoor pool at the Harbor Town Community Center.",
+        "Their mom bought each of them a 10-visit swim card.",
+        "At each visit, the worker at the desk punches one hole in the card.",
+        "Ana's card has 7 holes in it so far, and Ben has not taken the deep-end swim test yet."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Community Center Pool: 10-Visit Youth Card",
+        "rows": [
+          {
+            "k": "Visits",
+            "v": "10. One hole is punched at each visit."
+          },
+          {
+            "k": "Good until",
+            "v": "April 30"
+          },
+          {
+            "k": "Open swim",
+            "v": "Monday to Friday, 4:00 PM to 6:00 PM. Saturday, 1:00 PM to 4:00 PM."
+          },
+          {
+            "k": "Lap swim only",
+            "v": "Monday to Friday, 6:00 PM to 8:00 PM. Ages 13 and up."
+          },
+          {
+            "k": "Deep end",
+            "v": "Swimmers under 14 must pass the swim test first."
+          },
+          {
+            "k": "Swim test",
+            "v": "Swim 2 lengths of the pool without stopping. Ask a lifeguard."
+          },
+          {
+            "k": "Lost card",
+            "v": "We cannot replace it."
+          },
+          {
+            "k": "Price",
+            "v": "$35 for the card. One visit without a card costs $5."
+          }
+        ]
+      },
+      "picture": "🏊🪪",
+      "topics": [
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Swim Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p49",
+      "title": "Use By or Best Before?",
+      "kind": "list",
+      "sentences": [
+        "Today is Friday, November 6.",
+        "Sam is making lunch at Grandma Rose's house above the bakery.",
+        "Grandma Rose taped a note to the fridge door.",
+        "It explains the two kinds of dates on food, and it lists what is on the top shelf.",
+        "Sam reads the whole note before he takes anything out."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Grandma Rose's Fridge Note",
+        "note": "USE BY is about safety. Do not eat food after its use-by date. BEST BEFORE is about quality. After that date, food may be less fresh, so ask an adult before you eat it. Once a pack is open, follow the After opening days, even if the printed date is later.",
+        "columns": [
+          "Food",
+          "Date on the pack",
+          "After opening"
+        ],
+        "rows": [
+          [
+            "Sliced turkey (not opened)",
+            "Use by November 5",
+            "Eat within 3 days"
+          ],
+          [
+            "Yogurt (not opened)",
+            "Use by November 10",
+            "Eat within 2 days"
+          ],
+          [
+            "Crackers (opened)",
+            "Best before November 2",
+            "Close the bag tight"
+          ],
+          [
+            "Cheese (not opened)",
+            "Best before December 1",
+            "Eat within 7 days"
+          ],
+          [
+            "Hummus (opened on October 30)",
+            "Use by November 20",
+            "Eat within 5 days"
+          ]
+        ]
+      },
+      "picture": "🥪📅",
+      "topics": [
+        "food"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Use By or Best Before?",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p50",
+      "title": "The Water-Powered Robot Arm",
+      "kind": "label",
+      "sentences": [
+        "Priya's robotics club is building robot arms this month.",
+        "Ms. Ortiz shows the club a kit that uses water instead of motors.",
+        "In this kit, you push water through thin plastic tubes with a syringe, and the push moves the arm.",
+        "This idea is called hydraulics.",
+        "Big diggers use the same idea, but with oil instead of water."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "PushPower Hydraulic Robot Arm Kit",
+        "warning": "Small parts. Not for children under 3.",
+        "rows": [
+          {
+            "k": "Ages",
+            "v": "10 and up. Ages 8 and 9 can build it with an adult."
+          },
+          {
+            "k": "Pieces",
+            "v": "220 wooden and plastic parts"
+          },
+          {
+            "k": "Build time",
+            "v": "About 4 hours. You can stop and start again."
+          },
+          {
+            "k": "Moves",
+            "v": "Grabs, lifts and turns. 4 syringes control 4 movements."
+          },
+          {
+            "k": "Power",
+            "v": "Water only. No batteries needed."
+          },
+          {
+            "k": "Lifts",
+            "v": "Up to 2 ounces, about the weight of a large egg"
+          },
+          {
+            "k": "Also needed",
+            "v": "a cup of water and a towel"
+          },
+          {
+            "k": "Price",
+            "v": "$28 each. Clubs: $5 off each kit when you buy 5 or more."
+          }
+        ]
+      },
+      "picture": "🦾💧",
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Water-Powered Robot Arm",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p51",
+      "title": "Ana's Music Shop Receipt",
+      "kind": "receipt",
+      "sentences": [
+        "Ana plays the trumpet in the Harbor Middle School band.",
+        "Ms. Gray gave the band a list of things to buy before the spring concert.",
+        "On Thursday, March 4, Ana and her mom went to Harbor Music.",
+        "The shop had a coupon taped to the counter, and Ana's mom kept the receipt."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Music: Receipt",
+        "rows": [
+          {
+            "k": "Date",
+            "v": "Thursday, March 4"
+          },
+          {
+            "k": "Valve oil",
+            "v": "$6.00"
+          },
+          {
+            "k": "Folding music stand",
+            "v": "$18.00"
+          },
+          {
+            "k": "Clip-on stand light",
+            "v": "$9.00"
+          },
+          {
+            "k": "Concert music book",
+            "v": "$7.00"
+          },
+          {
+            "k": "Coupon, $5 off orders of $30 or more",
+            "v": "-$5.00"
+          },
+          {
+            "k": "Total",
+            "v": "$35.00"
+          },
+          {
+            "k": "Returns",
+            "v": "Until March 18, with this receipt. Music books cannot be returned."
+          }
+        ]
+      },
+      "picture": "🎺🧾",
+      "topics": [
+        "music",
+        "money"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ana's Music Shop Receipt",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p52",
+      "title": "Dino Shapes Pasta",
+      "kind": "label",
+      "sentences": [
+        "Sam is making lunch for his young cousin, who loves dinosaurs.",
+        "Grandma Rose bought a box of pasta shaped like three kinds of dinosaurs.",
+        "The back of the box has cooking steps, a nutrition panel and a panel of dinosaur facts.",
+        "Sam's cousin wants to know which of the dinosaurs lived at the same time."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Dino Shapes Pasta",
+        "rows": [
+          {
+            "k": "Shapes",
+            "v": "T. rex, Stegosaurus, Triceratops"
+          },
+          {
+            "k": "Cook",
+            "v": "Boil water. Add the pasta. Cook 8 to 10 minutes. Drain."
+          },
+          {
+            "k": "Serving size",
+            "v": "1/2 cup dry, which makes about 1 cup cooked"
+          },
+          {
+            "k": "Servings in the box",
+            "v": "8"
+          },
+          {
+            "k": "Contains",
+            "v": "wheat, eggs"
+          },
+          {
+            "k": "T. rex",
+            "v": "lived about 68 to 66 million years ago"
+          },
+          {
+            "k": "Triceratops",
+            "v": "lived about 68 to 66 million years ago"
+          },
+          {
+            "k": "Stegosaurus",
+            "v": "lived about 155 to 150 million years ago"
+          }
+        ]
+      },
+      "picture": "🦕🍝",
+      "topics": [
+        "dinosaurs",
+        "food"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dino Shapes Pasta",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p53",
+      "title": "Two Telescopes",
+      "kind": "label",
+      "sentences": [
+        "Priya and Sam are saving up for a telescope that they will share.",
+        "Together, they have $95.",
+        "At Star Night, Dr. Hale told them that a wider lens gathers more light, so faint objects look brighter.",
+        "She also told them that more magnification is not always better, because the view gets dimmer and shakier.",
+        "They want to see the rings of Saturn and the craters on the Moon.",
+        "On Thursday, they compare two telescope boxes in the window of the camera shop."
+      ],
+      "breaks": [
+        2,
+        4
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Two Telescopes Compared",
+        "note": "Never point a telescope at the Sun. It can hurt your eyes.",
+        "columns": [
+          "Box line",
+          "StarHopper 60",
+          "SkyView 80"
+        ],
+        "rows": [
+          [
+            "Lens width",
+            "60 mm",
+            "80 mm"
+          ],
+          [
+            "Magnification",
+            "35x and 90x",
+            "20x and 50x"
+          ],
+          [
+            "Stand",
+            "Tabletop stand",
+            "Tall tripod"
+          ],
+          [
+            "Weight",
+            "4 pounds",
+            "9 pounds"
+          ],
+          [
+            "Extras",
+            "Moon map",
+            "Moon map and phone holder"
+          ],
+          [
+            "Price",
+            "$70",
+            "$110"
+          ],
+          [
+            "Sale",
+            "None",
+            "$20 off until Sunday"
+          ]
+        ]
+      },
+      "picture": "🔭🪐",
+      "topics": [
+        "space",
+        "money"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Two Telescopes",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p54",
+      "title": "The Ferry Fare Board",
+      "kind": "list",
+      "sentences": [
+        "Captain Ruth Lane steers the ferry between Harbor Town and Gull Island.",
+        "Sam, Leo and Grandma Rose want to spend a summer day on the island.",
+        "Sam wants to bring Pixel, and Leo wants to bring his bike.",
+        "At the ticket window, Grandma Rose reads the fare board to work out the cost.",
+        "The board also shows a family pass, and some families in the line are buying one."
+      ],
+      "breaks": [
+        3
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Gull Island Ferry: Fares",
+        "note": "Round trip means there and back on the same day. Buy one-way tickets at the dock window.",
+        "columns": [
+          "Ticket",
+          "One way",
+          "Round trip"
+        ],
+        "rows": [
+          [
+            "Adult (18 and up)",
+            "$7",
+            "$12"
+          ],
+          [
+            "Youth (6 to 17)",
+            "$4",
+            "$6"
+          ],
+          [
+            "Child (under 6)",
+            "Free",
+            "Free"
+          ],
+          [
+            "Dog on a leash",
+            "$2",
+            "$4"
+          ],
+          [
+            "Bike",
+            "$3",
+            "$6"
+          ],
+          [
+            "Family pass: 2 adults and up to 3 youths",
+            "Not sold",
+            "$28"
+          ]
+        ]
+      },
+      "picture": "⛴️🎟️",
+      "topics": [
+        "transport",
+        "money"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Ferry Fare Board",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p55",
+      "title": "The Zoo Price Board",
+      "kind": "sign",
+      "sentences": [
+        "Maya likes to draw the red pandas at the Harbor Town Zoo.",
+        "She and her dad plan to visit about once a month this year.",
+        "Her dad is choosing between buying day tickets each time and buying a membership.",
+        "A membership costs more at the start, but it can save money if you visit often.",
+        "Maya and her dad read the price board at the zoo gate together."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Town Zoo: Tickets and Memberships",
+        "rows": [
+          {
+            "k": "Day ticket, adult",
+            "v": "$15"
+          },
+          {
+            "k": "Day ticket, youth (3 to 17)",
+            "v": "$9"
+          },
+          {
+            "k": "Under 3",
+            "v": "Free"
+          },
+          {
+            "k": "Pair membership",
+            "v": "1 adult and 1 child: $90 a year"
+          },
+          {
+            "k": "Family membership",
+            "v": "2 adults and up to 4 children: $140 a year"
+          },
+          {
+            "k": "Members get",
+            "v": "Free entry every day for one year, and 10% off at the gift shop"
+          },
+          {
+            "k": "Guest passes",
+            "v": "2 free a year, with a family membership only"
+          },
+          {
+            "k": "Parking",
+            "v": "$5 a day. Free for members."
+          }
+        ]
+      },
+      "picture": "🐼🎟️",
+      "topics": [
+        "animals",
+        "money"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Zoo Price Board",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p56",
+      "title": "Three Cereals on the Shelf",
+      "kind": "label",
+      "sentences": [
+        "Ben is shopping for breakfast cereal at Harbor Market with his dad.",
+        "His dad says the biggest box is not always the best deal.",
+        "Each shelf tag at Harbor Market shows a unit price under the main price.",
+        "The unit price tells how much one ounce costs, so you can compare boxes of different sizes.",
+        "Ben also checks the labels, because Ana cannot eat peanuts or tree nuts.",
+        "He wants a cereal with plenty of fiber and not much added sugar."
+      ],
+      "breaks": [
+        2,
+        4
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Three Cereals on the Shelf",
+        "note": "Unit price is the price of 1 ounce. Numbers in ( ) are % Daily Value: 5% or less is low, and 20% or more is high.",
+        "columns": [
+          "Label line",
+          "Honey Hoops",
+          "Bran Stars",
+          "Oat Clouds"
+        ],
+        "rows": [
+          [
+            "Box size",
+            "10 ounces",
+            "16 ounces",
+            "20 ounces"
+          ],
+          [
+            "Price",
+            "$3.50",
+            "$4.00",
+            "$6.00"
+          ],
+          [
+            "Unit price",
+            "35 cents an ounce",
+            "25 cents an ounce",
+            "30 cents an ounce"
+          ],
+          [
+            "Fiber (1 cup)",
+            "1 g (4%)",
+            "7 g (25%)",
+            "6 g (21%)"
+          ],
+          [
+            "Added sugars (1 cup)",
+            "12 g (24%)",
+            "9 g (18%)",
+            "2 g (4%)"
+          ],
+          [
+            "Contains",
+            "oats, corn, honey",
+            "wheat, milk",
+            "oats"
+          ],
+          [
+            "May contain",
+            "no warning",
+            "tree nuts",
+            "no warning"
+          ]
+        ]
+      },
+      "picture": "🥣🏷️",
+      "topics": [
+        "food",
+        "money"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Three Cereals on the Shelf",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p57",
+      "title": "The Game Room Card",
+      "kind": "ticket",
+      "sentences": [
+        "Bayside Lanes is a bowling alley in Harbor Town with a small game room.",
+        "The game room uses a game card instead of tokens.",
+        "You load money onto the card, and the card turns the money into credits.",
+        "Each game uses some credits, and winning a game adds tickets to the card.",
+        "Leo and Ben read the back of the card before they start to play on Saturday afternoon."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Bayside Lanes Game Room: Game Card",
+        "rows": [
+          {
+            "k": "Load $10",
+            "v": "40 credits"
+          },
+          {
+            "k": "Load $20",
+            "v": "100 credits"
+          },
+          {
+            "k": "Racing games",
+            "v": "8 credits a play"
+          },
+          {
+            "k": "Air hockey",
+            "v": "10 credits a game, for 2 players"
+          },
+          {
+            "k": "Skee-ball",
+            "v": "5 credits a game"
+          },
+          {
+            "k": "Tickets",
+            "v": "Saved on the card. Trade them at the prize counter."
+          },
+          {
+            "k": "Credits and tickets",
+            "v": "They do not expire. You can use them on any later visit."
+          },
+          {
+            "k": "Lost card",
+            "v": "Show your receipt at the desk, and we will move your credits to a new card."
+          }
+        ]
+      },
+      "picture": "🕹️🎳",
+      "topics": [
+        "games",
+        "money"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Game Room Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p58",
+      "title": "The Map Shop Sale",
+      "kind": "sign",
+      "sentences": [
+        "Sam wants to cover one wall of his bedroom with maps.",
+        "He has $30 that he earned by helping at Grandma Rose's bakery.",
+        "At North Star Maps, he finds a sale sign next to a coupon on the counter.",
+        "The clerk tells him that the coupon can be used one time, on the whole order."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "North Star Maps: Fall Sale",
+        "rows": [
+          {
+            "k": "Harbor Town street map",
+            "v": "$4"
+          },
+          {
+            "k": "Lantern Peaks hiking map",
+            "v": "$6"
+          },
+          {
+            "k": "Island rail map poster",
+            "v": "$12"
+          },
+          {
+            "k": "World map poster",
+            "v": "$15"
+          },
+          {
+            "k": "Globe",
+            "v": "$25"
+          },
+          {
+            "k": "Map pins",
+            "v": "$3 for a pack of 20"
+          },
+          {
+            "k": "Sale",
+            "v": "All posters are half price this week."
+          },
+          {
+            "k": "Coupon",
+            "v": "$5 off an order of $25 or more. Work out the sale prices first, then use the coupon."
+          }
+        ]
+      },
+      "picture": "🗺️🏷️",
+      "topics": [
+        "maps",
+        "money"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Map Shop Sale",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p59",
+      "title": "The Rock Tumbler Kit",
+      "kind": "label",
+      "sentences": [
+        "Maya bought a rock tumbler kit with money she saved.",
+        "A rock tumbler is a small barrel that turns slowly, day and night.",
+        "Inside, rough rocks rub against grit, a rough powder that slowly wears the rocks smooth.",
+        "Polishing rocks takes weeks, so Maya reads the whole box before she starts.",
+        "She wants her shiny stones ready for a rock swap at her rock club."
+      ],
+      "breaks": [
+        3
+      ],
+      "visual": {
+        "type": "label",
+        "title": "ShineStone Rock Tumbler Kit",
+        "rows": [
+          {
+            "k": "Ages",
+            "v": "10 and up. An adult should help set it up."
+          },
+          {
+            "k": "In the box",
+            "v": "tumbler, 1 pound of rough rocks, 4 bags of grit, polish cloth"
+          },
+          {
+            "k": "Step 1, coarse grit",
+            "v": "7 days"
+          },
+          {
+            "k": "Step 2, medium grit",
+            "v": "7 days"
+          },
+          {
+            "k": "Step 3, fine grit",
+            "v": "7 days"
+          },
+          {
+            "k": "Step 4, polish",
+            "v": "7 days"
+          },
+          {
+            "k": "Between steps",
+            "v": "Rinse the rocks and the barrel well. Even a little old grit can scratch the rocks."
+          },
+          {
+            "k": "Power",
+            "v": "Plugs into the wall. Runs day and night."
+          },
+          {
+            "k": "Used grit water",
+            "v": "Pour it into a bag and put it in the trash. It can block sink pipes."
+          }
+        ]
+      },
+      "picture": "🪨✨",
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Rock Tumbler Kit",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p60",
+      "title": "Two Weather Stations",
+      "kind": "label",
+      "sentences": [
+        "Ms. Ortiz's science class wants to track the weather at Harbor Middle School for one month.",
+        "The class wants to measure rainfall and wind speed, not just the temperature.",
+        "The best spot for the outdoor sensor is a post next to the school garden.",
+        "That post is 150 feet from the classroom window, where the display will sit beside a wall plug.",
+        "Ms. Ortiz has $70 to spend from the science budget.",
+        "She plans to order the station on Thursday."
+      ],
+      "breaks": [
+        2,
+        4
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Two Weather Stations Compared",
+        "columns": [
+          "Box line",
+          "SkyCheck Basic",
+          "SkyCheck Plus"
+        ],
+        "rows": [
+          [
+            "Measures",
+            "Temperature, humidity",
+            "Temperature, humidity, rainfall, wind speed"
+          ],
+          [
+            "Sensor range",
+            "Up to 100 feet from the display",
+            "Up to 300 feet from the display"
+          ],
+          [
+            "Display power",
+            "2 AA batteries (not included)",
+            "Wall plug (included), or 2 AA batteries (not included)"
+          ],
+          [
+            "Sensor power",
+            "2 AAA batteries (not included)",
+            "Small solar panel, with a backup battery included"
+          ],
+          [
+            "Updates",
+            "Every 5 minutes",
+            "Every 1 minute"
+          ],
+          [
+            "Price",
+            "$30",
+            "$80"
+          ],
+          [
+            "Sale",
+            "None",
+            "$15 off until Friday"
+          ]
+        ]
+      },
+      "picture": "🌦️📟",
+      "topics": [
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Two Weather Stations",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p61",
+      "title": "The Music Weekend Passes",
+      "kind": "ticket",
+      "sentences": [
+        "The Story Woods Music Weekend runs from Friday to Sunday in the big meadow by the Nature Center.",
+        "Ana wants to hear the brass band on Friday, and Ben wants to see the piano show on Sunday.",
+        "Their dad will go with them on both days, and he reads the pass prices on the festival flyer.",
+        "He wants to spend as little as he can.",
+        "He also checks what happens if it rains, because the forecast for Sunday shows showers."
+      ],
+      "breaks": [
+        2,
+        4
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Story Woods Music Weekend: Passes",
+        "rows": [
+          {
+            "k": "Friday",
+            "v": "5:00 PM to 10:00 PM. Brass band at 6:30 PM."
+          },
+          {
+            "k": "Saturday",
+            "v": "12:00 PM to 10:00 PM"
+          },
+          {
+            "k": "Sunday",
+            "v": "12:00 PM to 6:00 PM. Piano show at 2:00 PM."
+          },
+          {
+            "k": "One-day pass",
+            "v": "Adult $20. Youth (7 to 17) $10."
+          },
+          {
+            "k": "Three-day pass",
+            "v": "Adult $45. Youth (7 to 17) $20."
+          },
+          {
+            "k": "Under 7",
+            "v": "Free with an adult who has a pass"
+          },
+          {
+            "k": "Wristbands",
+            "v": "Wear yours all weekend. A cut wristband is not valid."
+          },
+          {
+            "k": "Rain plan",
+            "v": "Shows move into the Story Woods Nature Center hall, at the same times."
+          }
+        ]
+      },
+      "picture": "🎺🎹",
+      "topics": [
+        "music",
+        "money"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Music Weekend Passes",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p62",
+      "title": "Two Rover Battery Packs",
+      "kind": "label",
+      "sentences": [
+        "Priya's rover runs on a ZipCell battery pack.",
+        "At the club's Long Drive Challenge, each rover must drive around a track for 2 hours without a battery change.",
+        "Priya's old pack runs for only about 45 minutes, so she looks at two new packs at the hobby shop.",
+        "The run times on the boxes were measured in a small rover like hers.",
+        "Ms. Ortiz says the club will pay for one new pack, up to $35."
+      ],
+      "breaks": [
+        2,
+        4
+      ],
+      "visual": {
+        "type": "table",
+        "title": "ZipCell Packs Compared",
+        "columns": [
+          "Box line",
+          "ZipCell 2000",
+          "ZipCell 4000"
+        ],
+        "rows": [
+          [
+            "Run time in a small rover",
+            "About 1 hour 15 minutes",
+            "About 2 hours 30 minutes"
+          ],
+          [
+            "Charge time",
+            "About 2 hours",
+            "About 4 hours"
+          ],
+          [
+            "Weight",
+            "3 ounces",
+            "6 ounces"
+          ],
+          [
+            "Charger",
+            "ZipCell USB-C charger only",
+            "ZipCell USB-C charger only"
+          ],
+          [
+            "Price",
+            "$18",
+            "$32"
+          ],
+          [
+            "Deal",
+            "2 packs for $30",
+            "None"
+          ],
+          [
+            "Storing for a month or more",
+            "Charge it to about half first",
+            "Charge it to about half first"
+          ]
+        ]
+      },
+      "picture": "🔋🤖",
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Two Rover Battery Packs",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p63",
+      "title": "The Aquarium Sleepover Pass",
+      "kind": "ticket",
+      "sentences": [
+        "Ben and Sam signed up for a sleepover at the Harbor Town Aquarium.",
+        "The kids sleep on the floor of the long glass tunnel, where sharks and rays swim above them.",
+        "Before the night, each family gets a pass with the plan and the rules.",
+        "Ben's mom will drive both boys there on Friday evening.",
+        "Sam's dad usually picks them up, but this Saturday he cannot come until 9:00 AM."
+      ],
+      "breaks": [
+        2
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Town Aquarium: Ocean Sleepover Pass",
+        "rows": [
+          {
+            "k": "When",
+            "v": "Friday night to Saturday morning"
+          },
+          {
+            "k": "Check-in",
+            "v": "6:00 PM to 6:30 PM at the Side Door. The front doors are locked after 5:00 PM."
+          },
+          {
+            "k": "Ages",
+            "v": "8 to 13. Kids aged 8 and 9 need an adult with them who also has a pass."
+          },
+          {
+            "k": "Bring",
+            "v": "sleeping bag, pillow, pajamas, toothbrush, flashlight"
+          },
+          {
+            "k": "Do not bring",
+            "v": "food, or cameras with a flash. Bright flashes can upset the fish."
+          },
+          {
+            "k": "Night plan",
+            "v": "7:00 PM pizza, 8:00 PM shark talk, 9:00 PM flashlight tour, 10:30 PM lights out"
+          },
+          {
+            "k": "Pick-up",
+            "v": "8:00 AM to 8:30 AM at the Side Door, after breakfast"
+          },
+          {
+            "k": "Price",
+            "v": "$45 for each person (paid). Dinner, breakfast and a T-shirt are included."
+          }
+        ]
+      },
+      "picture": "🦈🛌",
+      "topics": [
+        "ocean"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Aquarium Sleepover Pass",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -2130,6 +4554,3333 @@
         "late"
       ],
       "transfer": true
+    },
+    {
+      "id": "f4-i51",
+      "skill": "F4",
+      "passage": "f4-p25",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What must Leo wear to skate?",
+      "options": [
+        "A cap",
+        "A helmet"
+      ],
+      "pictures": [
+        "🧢",
+        "⛑️"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the row that tells what you must wear.",
+      "explain": "Leo must wear a helmet. It is in the You must wear row.",
+      "inference": 0,
+      "tags": [
+        "rule-row",
+        "safety"
+      ]
+    },
+    {
+      "id": "f4-i52",
+      "skill": "F4",
+      "passage": "f4-p25",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Leo wants to skate until the park closes. What time does it close?",
+      "options": [
+        "9 AM",
+        "5 PM",
+        "3 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the row with the park times. The second time tells when it closes.",
+      "explain": "The park closes at 5 PM. The Park open row says 9 AM to 5 PM.",
+      "inference": 0,
+      "tags": [
+        "two-times",
+        "closing-time"
+      ]
+    },
+    {
+      "id": "f4-i53",
+      "skill": "F4",
+      "passage": "f4-p25",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Leo's mom asks if he paid for the pass. Tap the row that tells her.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Look for a row with a $ sign.",
+      "explain": "Tap the Price row. It says $3 (paid), so Leo paid.",
+      "inference": 0,
+      "tags": [
+        "price",
+        "paid",
+        "find-row"
+      ]
+    },
+    {
+      "id": "f4-i54",
+      "skill": "F4",
+      "passage": "f4-p26",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How many times a day should Maya feed the fish?",
+      "options": [
+        "2 times",
+        "1 time",
+        "3 times"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the Feed row. Read the number in it.",
+      "explain": "Maya feeds the fish 2 times a day. It is in the Feed row.",
+      "inference": 0,
+      "tags": [
+        "how-often"
+      ]
+    },
+    {
+      "id": "f4-i55",
+      "skill": "F4",
+      "passage": "f4-p26",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How much food does Maya give the fish each time?",
+      "options": [
+        "The whole can",
+        "A small pinch"
+      ],
+      "pictures": [
+        "🥫",
+        "🤏"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the How much row. Then read the row under it.",
+      "explain": "Maya gives a small pinch. The How much row says a small pinch, and the next row says too much food makes the water dirty.",
+      "inference": 0,
+      "tags": [
+        "amount",
+        "two-rows"
+      ]
+    },
+    {
+      "id": "f4-i56",
+      "skill": "F4",
+      "passage": "f4-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "There are 5 friends. What does the box say about how many can play at once?",
+      "options": [
+        "All 5 can play at once.",
+        "Only 2 can play at once.",
+        "Up to 4 can play at once."
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the Players row. Look at the biggest number in it.",
+      "explain": "Up to 4 can play at once. The Players row says 2 to 4, so 5 players is one too many.",
+      "inference": 1,
+      "tags": [
+        "number-range",
+        "players"
+      ]
+    },
+    {
+      "id": "f4-i57",
+      "skill": "F4",
+      "passage": "f4-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "They start a game at 4:00 PM. About what time will it end?",
+      "options": [
+        "4:30 PM",
+        "4:08 PM",
+        "5:00 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find how long one game takes. Add that time to 4:00 PM.",
+      "explain": "The game will end at about 4:30 PM. The Time to play row says about 30 minutes, and 30 minutes after 4:00 PM is 4:30 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "number-trap"
+      ]
+    },
+    {
+      "id": "f4-i58",
+      "skill": "F4",
+      "passage": "f4-p27",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Ben wants to check that no boats are missing. Tap the row that tells how many boats should be in the box.",
+      "unit": "row",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Look for the row that lists what comes in the box.",
+      "explain": "Tap the In the box row. It says there are 4 boats.",
+      "inference": 0,
+      "tags": [
+        "what-is-inside",
+        "find-row"
+      ]
+    },
+    {
+      "id": "f4-i59",
+      "skill": "F4",
+      "passage": "f4-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Priya buys a mask and a snorkel. She does not buy fins. How much does she pay?",
+      "options": [
+        "$8",
+        "$20",
+        "$13"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Find the mask tag and the snorkel tag. Add the two prices.",
+      "explain": "Priya pays $13. The mask is $8 and the snorkel is $5, and $8 + $5 = $13.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "add"
+      ]
+    },
+    {
+      "id": "f4-i60",
+      "skill": "F4",
+      "passage": "f4-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Sam wants a mask, a snorkel and fins. Which way costs less?",
+      "options": [
+        "Buy the set for $20.",
+        "Buy each one alone, for $25 in all.",
+        "Both ways cost the same."
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Add the three single prices. Then compare that total with the set price.",
+      "explain": "The set costs less. Alone, the three cost $8 + $5 + $12 = $25. The green sale sign says the set is $20.",
+      "inference": 1,
+      "tags": [
+        "price-compare",
+        "set-price",
+        "add"
+      ]
+    },
+    {
+      "id": "f4-i61",
+      "skill": "F4",
+      "passage": "f4-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben comes to the shop on Saturday, the day before the sale ends. Can he still get the set for $20?",
+      "options": [
+        "No. The sale is over.",
+        "Yes. The sale is still on.",
+        "No. The set is sold only on Sunday."
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the sign that says when the sale ends. Is Saturday before or after that day?",
+      "explain": "Yes. The red sign says the sale ends on Sunday. Ben comes on Saturday, so the sale is still on.",
+      "inference": 1,
+      "tags": [
+        "sale-end",
+        "day-compare"
+      ]
+    },
+    {
+      "id": "f4-i62",
+      "skill": "F4",
+      "passage": "f4-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What should Priya do with the seeds the night before she plants them?",
+      "options": [
+        "Plant them 6 inches deep.",
+        "Put them in the sun.",
+        "Soak them in water."
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the row that tells what to do before you plant.",
+      "explain": "She should soak the seeds in water overnight. It is in the Before you plant row.",
+      "inference": 0,
+      "tags": [
+        "first-step",
+        "find-row"
+      ]
+    },
+    {
+      "id": "f4-i63",
+      "skill": "F4",
+      "passage": "f4-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "There are 24 students in the class. Each student plants 1 seed. How many seeds are left in the packet?",
+      "options": [
+        "6 seeds",
+        "24 seeds",
+        "30 seeds"
+      ],
+      "answer": 0,
+      "evidence": [
+        5
+      ],
+      "hint": "Find how many seeds are in the packet. Take away the seeds the class plants.",
+      "explain": "6 seeds are left. The Seeds in packet row says 30, and 30 - 24 = 6.",
+      "inference": 1,
+      "tags": [
+        "subtract",
+        "number-trap"
+      ]
+    },
+    {
+      "id": "f4-i64",
+      "skill": "F4",
+      "passage": "f4-p29",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put the steps from the bean packet in order.",
+      "steps": [
+        "Soak the seeds in water overnight.",
+        "Plant each seed 1 inch deep.",
+        "Watch for sprouts in 6 to 10 days.",
+        "Give each plant a stick to climb."
+      ],
+      "evidence": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "hint": "Think about what must happen first. A seed goes in the soil before it can sprout.",
+      "explain": "First soak the seeds overnight. Then plant them 1 inch deep. Then watch for sprouts in 6 to 10 days. Last, give each plant a stick to climb. Each step is in a row of the packet.",
+      "inference": 1,
+      "tags": [
+        "order",
+        "steps-from-label"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i65",
+      "skill": "F4",
+      "passage": "f4-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "On Saturday, Sam rides to the library and then rides home. How many rides are left after that?",
+      "options": [
+        "5 rides",
+        "4 rides",
+        "3 rides"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Find how many rides are on the pass. Count one ride there and one ride back.",
+      "explain": "3 rides are left. The pass has 5 rides, and going there and back uses 2 rides. 5 - 2 = 3.",
+      "inference": 1,
+      "tags": [
+        "subtract",
+        "round-trip"
+      ]
+    },
+    {
+      "id": "f4-i66",
+      "skill": "F4",
+      "passage": "f4-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Sam wants to use the pass on December 3. What does the pass say?",
+      "options": [
+        "It does not work. It was good until November 30.",
+        "It still works, because it has rides left.",
+        "It works until December 30."
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the row with a date. Is December 3 before or after that date?",
+      "explain": "It does not work. The Good until row says November 30, and December 3 is after that.",
+      "inference": 1,
+      "tags": [
+        "expiry-date",
+        "date-compare"
+      ]
+    },
+    {
+      "id": "f4-i67",
+      "skill": "F4",
+      "passage": "f4-p30",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Ana is 12. She wants a pass like Sam's. Tap the row that tells who can get this pass.",
+      "unit": "row",
+      "answer": [
+        4
+      ],
+      "evidence": [
+        4
+      ],
+      "hint": "Look for a row with ages in it.",
+      "explain": "Tap the Ages row. It says 6 to 17, and Ana is 12, so she can get one.",
+      "inference": 0,
+      "tags": [
+        "age-row",
+        "find-row"
+      ]
+    },
+    {
+      "id": "f4-i68",
+      "skill": "F4",
+      "passage": "f4-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Maya wants to hear Dr. Bell's talk. Where and when should she go?",
+      "options": [
+        "Floor 1 at 10 AM",
+        "Floor 2 at 11 AM",
+        "Floor 1 at 11 AM"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the row with Dr. Bell's name. It has a time and a floor.",
+      "explain": "She should go to Floor 1 at 11 AM. It is in the Dig Pit talk row.",
+      "inference": 0,
+      "tags": [
+        "time-and-place",
+        "close-options"
+      ]
+    },
+    {
+      "id": "f4-i69",
+      "skill": "F4",
+      "passage": "f4-p31",
+      "format": "scene",
+      "level": 2,
+      "prompt": "After the talk, Maya wants to see the T. rex skeleton. Tap where she should go.",
+      "scene": "hall",
+      "objects": [
+        {
+          "label": "Floor 1: Dig Pit",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "FLOOR 1: DIG PIT"
+          }
+        },
+        {
+          "label": "Floor 2: Dinosaur Hall",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "FLOOR 2: DINOSAUR HALL"
+          }
+        },
+        {
+          "label": "Floor 3: Sky Café",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "FLOOR 3: SKY CAFÉ"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the row that names the T. rex. Read which floor it is on.",
+      "explain": "Maya goes to Floor 2, the Dinosaur Hall. The Dinosaur Hall row says the T. rex skeleton is there.",
+      "inference": 0,
+      "tags": [
+        "find-place",
+        "floor"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i70",
+      "skill": "F4",
+      "passage": "f4-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Maya got there at 9:30 AM. What should she do?",
+      "options": [
+        "Go in now. The museum is open.",
+        "Wait. The museum opens at 10 AM.",
+        "Go home. The museum is closed on Sunday."
+      ],
+      "answer": 1,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the row that says when the museum is open. Compare 9:30 AM with the first time.",
+      "explain": "Maya should wait. The Museum open row says 10 AM to 4 PM, and 9:30 AM is before 10 AM.",
+      "inference": 1,
+      "tags": [
+        "opening-time",
+        "time-am"
+      ]
+    },
+    {
+      "id": "f4-i71",
+      "skill": "F4",
+      "passage": "f4-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "On Saturday, Priya wants to bring Maya to a star show. What does the card say?",
+      "options": [
+        "Both girls get in free.",
+        "Neither girl gets in free on Saturday.",
+        "Priya gets in free. Maya needs a ticket."
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        4
+      ],
+      "hint": "Read the Star shows row and the Bring a guest row. Check the day in each one.",
+      "explain": "Priya gets in free, but Maya needs a ticket. The Star shows row says shows are free for members, and the Bring a guest row says a guest is free on Fridays only.",
+      "inference": 1,
+      "tags": [
+        "guest-rule",
+        "two-rows",
+        "day-rule"
+      ]
+    },
+    {
+      "id": "f4-i72",
+      "skill": "F4",
+      "passage": "f4-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya buys a star map poster for $12 at the gift shop. How much does she pay?",
+      "options": [
+        "$10",
+        "$12",
+        "$14",
+        "$2"
+      ],
+      "answer": 0,
+      "evidence": [
+        5
+      ],
+      "hint": "Read the Gift shop row. Check if $12 is $10 or more.",
+      "explain": "Priya pays $10. The Gift shop row says $2 off anything that costs $10 or more, and $12 - $2 = $10.",
+      "inference": 1,
+      "tags": [
+        "discount",
+        "price-math"
+      ]
+    },
+    {
+      "id": "f4-i73",
+      "skill": "F4",
+      "passage": "f4-p32",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sort each visit. Is it free with Priya's card?",
+      "bins": [
+        "Free with the card",
+        "Not free with the card"
+      ],
+      "cards": [
+        {
+          "text": "Priya at a star show on February 20",
+          "bin": 0,
+          "emoji": "🌌"
+        },
+        {
+          "text": "Priya at a telescope night on Friday, March 13",
+          "bin": 0,
+          "emoji": "🔭"
+        },
+        {
+          "text": "Priya at a star show on April 4",
+          "bin": 1,
+          "emoji": "📅"
+        },
+        {
+          "text": "Priya's guest on a Friday",
+          "bin": 0,
+          "emoji": "🙋"
+        },
+        {
+          "text": "Priya's guest on a Sunday",
+          "bin": 1,
+          "emoji": "🎟️"
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "For each card, check the date against the Good until row. Then check the rule for guests.",
+      "explain": "The star show on February 20, the telescope night on March 13 and a guest on a Friday are free. April 4 is after March 31, when the card ends, and a guest is free on Fridays only.",
+      "inference": 1,
+      "tags": [
+        "expiry-date",
+        "guest-rule",
+        "sort"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i74",
+      "skill": "F4",
+      "passage": "f4-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The school's practice guitars have nylon strings. Can Sam use this pack on them?",
+      "options": [
+        "Yes. They are guitar strings.",
+        "Yes, if he buys 2 packs.",
+        "No. This pack is for steel-string guitars only."
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the whole For row, all the way to the end.",
+      "explain": "No. The For row says these strings are for steel-string guitars only, not for nylon-string guitars.",
+      "inference": 1,
+      "tags": [
+        "fits-or-not",
+        "read-whole-row"
+      ]
+    },
+    {
+      "id": "f4-i75",
+      "skill": "F4",
+      "passage": "f4-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam buys 2 packs. How much does he save, compared with paying the one-pack price for each?",
+      "options": [
+        "$14",
+        "$6",
+        "$8",
+        "$2"
+      ],
+      "answer": 3,
+      "evidence": [
+        3
+      ],
+      "hint": "Work out the cost of 2 packs at the one-pack price. Then compare it with the deal.",
+      "explain": "Sam saves $2. Two packs at $8 each cost $16. The Price row says 2 packs for $14, and $16 - $14 = $2.",
+      "inference": 1,
+      "tags": [
+        "savings",
+        "deal",
+        "price-math"
+      ]
+    },
+    {
+      "id": "f4-i76",
+      "skill": "F4",
+      "passage": "f4-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam plays every day. He put on all new strings on January 10. About when should he change all of them again?",
+      "options": [
+        "April 10",
+        "February 10",
+        "March 10",
+        "January 13"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the row about changing all the strings. Count that many months on from January 10.",
+      "explain": "About April 10. The Change all strings row says about every 3 months for someone who plays every day, and 3 months after January 10 is April 10.",
+      "inference": 1,
+      "tags": [
+        "date-math",
+        "months"
+      ]
+    },
+    {
+      "id": "f4-i77",
+      "skill": "F4",
+      "passage": "f4-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya had the fish tacos and one lemonade. How much does she owe Leo?",
+      "options": [
+        "$7.00",
+        "$9.00",
+        "$13.00",
+        "$8.00"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Find the price of her food. Then find the price of one lemonade, not three.",
+      "explain": "Maya owes $9.00. The fish tacos are $7.00, and the lemonade row says $2.00 each. $7 + $2 = $9.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "each-vs-total"
+      ]
+    },
+    {
+      "id": "f4-i78",
+      "skill": "F4",
+      "passage": "f4-p34",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Leo wants to check how much money Mrs. Lin gave back to him. Tap the row that tells him.",
+      "unit": "row",
+      "answer": [
+        6
+      ],
+      "evidence": [
+        6
+      ],
+      "hint": "Money that comes back to you after you pay has a special name on a receipt. Look near the bottom.",
+      "explain": "Tap the Change row. It says $6.00. Leo paid $30.00, and the total was $24.00.",
+      "inference": 1,
+      "tags": [
+        "receipt",
+        "find-row"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i79",
+      "skill": "F4",
+      "passage": "f4-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben had the veggie burger and one lemonade. He pays Leo back with a $10 bill. How much change does Leo give Ben?",
+      "options": [
+        "$8.00",
+        "$4.00",
+        "$6.00",
+        "$2.00"
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "First add up what Ben ate and drank. Then take that away from $10.",
+      "explain": "Leo gives Ben $2.00. The veggie burger is $6.00 and one lemonade is $2.00, so Ben owes $8.00. $10 - $8 = $2.",
+      "inference": 1,
+      "tags": [
+        "change",
+        "subtract",
+        "price-math"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i80",
+      "skill": "F4",
+      "passage": "f4-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya puts 4 empty AA batteries in the charger at 3:00 PM. About when will they be full?",
+      "options": [
+        "8:00 PM",
+        "6:00 PM",
+        "7:00 PM",
+        "5:00 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        3
+      ],
+      "hint": "Two rows give charge times. Pick the row for 4 batteries. Then add the hours to 3:00 PM.",
+      "explain": "About 8:00 PM. The Time for 4 AA row says about 5 hours, and 5 hours after 3:00 PM is 8:00 PM. 6:00 PM would be the time for only 2 batteries.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "close-rows"
+      ]
+    },
+    {
+      "id": "f4-i81",
+      "skill": "F4",
+      "passage": "f4-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The light on the charger is red. What should Priya do?",
+      "options": [
+        "Leave the batteries in.",
+        "Take the batteries out.",
+        "Add regular one-use batteries."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the row for the red light. Then compare it with the row for the green light.",
+      "explain": "Priya should leave the batteries in. The Red light row says they are still charging. She takes them out when the light is green.",
+      "inference": 1,
+      "tags": [
+        "light-meaning",
+        "close-rows"
+      ]
+    },
+    {
+      "id": "f4-i82",
+      "skill": "F4",
+      "passage": "f4-p35",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Priya finds these batteries in the club box. Sort them.",
+      "bins": [
+        "Can go in the charger",
+        "Keep out of the charger"
+      ],
+      "cards": [
+        {
+          "text": "AA rechargeable",
+          "bin": 0,
+          "emoji": "🔋"
+        },
+        {
+          "text": "AAA rechargeable",
+          "bin": 0,
+          "emoji": "🔋"
+        },
+        {
+          "text": "AA regular, one-use",
+          "bin": 1,
+          "emoji": "🚫"
+        },
+        {
+          "text": "AAA regular, one-use",
+          "bin": 1,
+          "emoji": "🚫"
+        },
+        {
+          "text": "9-volt rechargeable",
+          "bin": 1,
+          "emoji": "❓"
+        }
+      ],
+      "evidence": [
+        0,
+        6
+      ],
+      "hint": "Read the Batteries row for the sizes that fit. Then read the Never charge row.",
+      "explain": "AA and AAA rechargeable batteries can go in. Regular one-use batteries stay out, because the Never charge row says they can leak. The 9-volt stays out too, because the Batteries row lists only AA and AAA.",
+      "inference": 1,
+      "tags": [
+        "battery-type",
+        "sort",
+        "read-whole-row"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i83",
+      "skill": "F4",
+      "passage": "f4-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which mineral in the set is the hardest?",
+      "options": [
+        "Talc",
+        "Feldspar",
+        "Fluorite",
+        "Quartz"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "hint": "Read the hardness number for each mineral. Find the biggest number.",
+      "explain": "Quartz is the hardest. Its row says hardness 7, the biggest number in the set.",
+      "inference": 1,
+      "tags": [
+        "compare-numbers",
+        "hardest"
+      ]
+    },
+    {
+      "id": "f4-i84",
+      "skill": "F4",
+      "passage": "f4-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya wants to scratch her piece of calcite. Which mineral can scratch it?",
+      "options": [
+        "Feldspar",
+        "Gypsum",
+        "Talc"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "hint": "Read the How it works row. Then find a mineral with a bigger hardness number than calcite.",
+      "explain": "Feldspar can scratch calcite. Feldspar is hardness 6 and calcite is hardness 3, and the How it works row says a harder mineral can scratch a softer one. Talc and gypsum are softer than calcite.",
+      "inference": 1,
+      "tags": [
+        "compare-numbers",
+        "rule-row"
+      ]
+    },
+    {
+      "id": "f4-i85",
+      "skill": "F4",
+      "passage": "f4-p36",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put these minerals in order, from the softest to the hardest.",
+      "steps": [
+        "Talc",
+        "Calcite",
+        "Feldspar",
+        "Quartz"
+      ],
+      "evidence": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "hint": "Find the hardness number for each one. Start with the smallest number.",
+      "explain": "Talc (1), then calcite (3), then feldspar (6), then quartz (7). The numbers are in each mineral's row.",
+      "inference": 1,
+      "tags": [
+        "order",
+        "compare-numbers"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i86",
+      "skill": "F4",
+      "passage": "f4-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Can Ana wear these cleats for her team's winter games?",
+      "options": [
+        "Yes. They are soccer shoes.",
+        "Yes, if the gym floor is dry.",
+        "No. They are not for indoor gym floors."
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find where the team plays in winter. Then read the Not for row.",
+      "explain": "No. The team plays in the school gym in winter, and the Not for row says the cleats are not for indoor gym floors.",
+      "inference": 1,
+      "tags": [
+        "fits-or-not",
+        "season"
+      ]
+    },
+    {
+      "id": "f4-i87",
+      "skill": "F4",
+      "passage": "f4-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ana's cleats are wet and muddy after a game. Which plan follows the tag?",
+      "options": [
+        "Knock off the mud and let them dry in the air.",
+        "Put them next to the heater so they dry fast.",
+        "Leave the mud on and put them in her bag."
+      ],
+      "answer": 0,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the Care row. Check each plan against it.",
+      "explain": "Ana should knock off the mud and let them dry in the air. The Care row says this, and it says to keep them away from heaters.",
+      "inference": 0,
+      "tags": [
+        "care-tag"
+      ]
+    },
+    {
+      "id": "f4-i88",
+      "skill": "F4",
+      "passage": "f4-p37",
+      "format": "scene",
+      "level": 3,
+      "prompt": "Tap the place where Ana can wear these cleats.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Grass field",
+          "emoji": "🌱",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "GRASS FIELD"
+          }
+        },
+        {
+          "label": "School gym",
+          "emoji": "🏫",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "SCHOOL GYM"
+          }
+        },
+        {
+          "label": "Hard turf field",
+          "emoji": "🟩",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "HARD TURF FIELD"
+          }
+        }
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Read the Best for row and the Not for row.",
+      "explain": "Ana can wear them on the grass field. The Best for row says firm, dry grass, and the Not for row says gym floors and hard turf.",
+      "inference": 0,
+      "tags": [
+        "fits-or-not",
+        "two-rows"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i89",
+      "skill": "F4",
+      "passage": "f4-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The forecast says 20°F and light, dry snow. Can Sam wear these gloves?",
+      "options": [
+        "No. They are not for any snow.",
+        "No. 20°F is too cold for them.",
+        "Yes. The gloves work for both."
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Check the Warmth row and the Snow row. Compare each one with the forecast.",
+      "explain": "Yes. 20°F is warmer than 10°F, so the gloves keep him warm, and the Snow row says they are good for light, dry snow.",
+      "inference": 1,
+      "tags": [
+        "temperature",
+        "two-rows",
+        "forecast"
+      ]
+    },
+    {
+      "id": "f4-i90",
+      "skill": "F4",
+      "passage": "f4-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The next morning, it is 30°F with heavy, wet snow. What should Sam wear on his hands?",
+      "options": [
+        "Waterproof mittens",
+        "These gloves",
+        "No gloves at all"
+      ],
+      "pictures": [
+        "🧤💧",
+        "🧤",
+        "✋"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "The forecast says wet snow. Find the row about wet snow.",
+      "explain": "Sam should wear waterproof mittens. The Wet snow or rain row says water can get into these gloves.",
+      "inference": 1,
+      "tags": [
+        "condition",
+        "forecast"
+      ]
+    },
+    {
+      "id": "f4-i91",
+      "skill": "F4",
+      "passage": "f4-p38",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Sam wants to check the weather app on his phone without taking his gloves off. Tap the row that tells him if he can.",
+      "unit": "row",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Look for a row about phones or screens.",
+      "explain": "Tap the Fingertips row. It says the fingertips work on phone screens, so he can keep his gloves on.",
+      "inference": 1,
+      "tags": [
+        "find-row"
+      ]
+    },
+    {
+      "id": "f4-i92",
+      "skill": "F4",
+      "passage": "f4-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben and Leo get to the aquarium at 12:45 PM. What should they do?",
+      "options": [
+        "Go in right away.",
+        "Go home. They missed their time.",
+        "Wait until 1:00 PM, then go in."
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the row that says when to go in. Is 12:45 PM before or inside that time?",
+      "explain": "They should wait until 1:00 PM. The Enter between row says 1:00 PM and 1:30 PM, and 12:45 PM is before that.",
+      "inference": 1,
+      "tags": [
+        "time-window",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f4-i93",
+      "skill": "F4",
+      "passage": "f4-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Leo wants lunch at 2:00 PM, and he also wants to see the shark feeding. Which plan follows the ticket?",
+      "options": [
+        "Eat at the café inside, then go to the Deep Tank.",
+        "Leave for lunch, then come back for the feeding.",
+        "Skip lunch, because no food is sold inside."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Read the Café row and the Re-entry row. Find the plan that keeps him inside.",
+      "explain": "Leo should eat at the café inside, then go to the Deep Tank. The Re-entry row says he cannot come back in if he leaves, and the Café row says the café is inside and open until 3:00 PM.",
+      "inference": 1,
+      "tags": [
+        "re-entry",
+        "two-rows",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f4-i94",
+      "skill": "F4",
+      "passage": "f4-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben's mom paid for both boys' tickets. How much did she pay in all?",
+      "options": [
+        "$9",
+        "$18",
+        "$27"
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the price of one ticket. Count one ticket for each boy.",
+      "explain": "She paid $18. The Youth ticket row says $9, and two tickets cost $9 + $9 = $18.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "each-vs-total"
+      ]
+    },
+    {
+      "id": "f4-i95",
+      "skill": "F4",
+      "passage": "f4-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which food gives Clover the vitamin C she needs?",
+      "options": [
+        "Hay",
+        "Pellets",
+        "A small piece of red pepper"
+      ],
+      "pictures": [
+        "🌾",
+        "🥣",
+        "🫑"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the row named Vitamin C. Read it to the end.",
+      "explain": "A small piece of red pepper. The Vitamin C row says guinea pigs cannot make their own vitamin C, so they need red pepper each day.",
+      "inference": 0,
+      "tags": [
+        "find-row",
+        "read-whole-row"
+      ]
+    },
+    {
+      "id": "f4-i96",
+      "skill": "F4",
+      "passage": "f4-p40",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Ben has some foods in his lunch bag. Sort them for Clover.",
+      "bins": [
+        "OK for Clover",
+        "Do not feed Clover"
+      ],
+      "cards": [
+        {
+          "text": "Red pepper",
+          "bin": 0,
+          "emoji": "🫑"
+        },
+        {
+          "text": "Fresh hay",
+          "bin": 0,
+          "emoji": "🌾"
+        },
+        {
+          "text": "Chocolate",
+          "bin": 1,
+          "emoji": "🍫"
+        },
+        {
+          "text": "Potato chips",
+          "bin": 1,
+          "emoji": "🥔"
+        },
+        {
+          "text": "Onion",
+          "bin": 1,
+          "emoji": "🧅"
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        4
+      ],
+      "hint": "Read the Do not feed row. Then check the rows about hay and vitamin C.",
+      "explain": "Red pepper and fresh hay are OK. Chocolate, potato chips and onion are in the Do not feed row.",
+      "inference": 0,
+      "tags": [
+        "do-not-feed",
+        "sort"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i97",
+      "skill": "F4",
+      "passage": "f4-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "It is December 3. Maya finds an old bag of these pellets in the cupboard. What should she do?",
+      "options": [
+        "Feed the pellets to Clover.",
+        "Ask the teacher, because the date has passed.",
+        "Give Clover twice as many pellets."
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the date on the bag. Is December 3 before or after it?",
+      "explain": "Maya should ask the teacher. The Best before row says December 1, and December 3 is after that date.",
+      "inference": 1,
+      "tags": [
+        "best-before",
+        "date-compare"
+      ]
+    },
+    {
+      "id": "f4-i98",
+      "skill": "F4",
+      "passage": "f4-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam opens a pack on Monday. He eats one serving each day and closes the bag tight each time. What does the label say about his plan?",
+      "options": [
+        "It works. He can take until June 30 to finish it.",
+        "It does not work. He must eat the whole pack on Monday.",
+        "It works. He finishes the pack on Wednesday, inside 5 days.",
+        "It does not work. 3 days is longer than the label allows."
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        5,
+        7
+      ],
+      "hint": "Count the servings to find the day he finishes. Then read the After opening row. Think about which date is for a closed pack.",
+      "explain": "His plan works. The pack has 3 servings, so he finishes on Wednesday, and the After opening row says to eat it within 5 days. June 30 is the best-before date for a closed pack, so it does not count once the bag is open.",
+      "inference": 1,
+      "tags": [
+        "after-opening",
+        "best-before",
+        "close-rows"
+      ]
+    },
+    {
+      "id": "f4-i99",
+      "skill": "F4",
+      "passage": "f4-p41",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Sam's mom asks if any sugar was added to these strawberries. Tap the row that answers her.",
+      "unit": "row",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Look for a row with the word sugars in it.",
+      "explain": "Tap the Added sugars row. It says 0 g, so no sugar was added. The Ingredients row also lists only strawberries.",
+      "inference": 0,
+      "tags": [
+        "find-row",
+        "nutrition"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i100",
+      "skill": "F4",
+      "passage": "f4-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam has $10. He wants as many packs as he can get. How many packs can he buy?",
+      "options": [
+        "3 packs",
+        "2 packs",
+        "4 packs",
+        "1 pack"
+      ],
+      "answer": 0,
+      "evidence": [
+        6
+      ],
+      "hint": "Read the whole Price row. It shows two ways to buy.",
+      "explain": "Sam can buy 3 packs. The Price row says 3 packs for $10. At $4 a pack, $10 would buy only 2 packs.",
+      "inference": 1,
+      "tags": [
+        "budget",
+        "deal"
+      ]
+    },
+    {
+      "id": "f4-i101",
+      "skill": "F4",
+      "passage": "f4-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "After the beach, Sam wants to ride on to North Bluff. What does he need to do?",
+      "options": [
+        "Nothing. The day ticket covers every stop.",
+        "Buy an extra zone ticket for $2 before he gets on the train.",
+        "Buy a new day ticket for $7.",
+        "Pay $2 to the conductor after he gets on."
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        5
+      ],
+      "hint": "Find which zone North Bluff is in. Then check the zones on his ticket.",
+      "explain": "Sam needs an extra zone ticket for $2 before he boards. North Bluff is in Zone 4, and his ticket covers only Zones 1, 2 and 3. The North Bluff row says to buy it before you board.",
+      "inference": 1,
+      "tags": [
+        "zones",
+        "condition",
+        "close-options"
+      ]
+    },
+    {
+      "id": "f4-i102",
+      "skill": "F4",
+      "passage": "f4-p42",
+      "format": "scene",
+      "level": 4,
+      "prompt": "Sam has his bike with him at Sandy Cove. Tap a train home that he can take with the bike.",
+      "scene": "station",
+      "objects": [
+        {
+          "label": "Train at 3:30 PM",
+          "emoji": "🚆",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "3:30 PM TO HARBOR TOWN"
+          }
+        },
+        {
+          "label": "Train at 4:15 PM",
+          "emoji": "🚆",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "4:15 PM TO HARBOR TOWN"
+          }
+        },
+        {
+          "label": "Train at 5:45 PM",
+          "emoji": "🚆",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "5:45 PM TO HARBOR TOWN"
+          }
+        },
+        {
+          "label": "Train at 4:50 PM",
+          "emoji": "🚆",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "4:50 PM TO HARBOR TOWN"
+          }
+        }
+      ],
+      "answer": 0,
+      "evidence": [
+        6
+      ],
+      "hint": "Read the Bikes row. Check each train time against it.",
+      "explain": "Sam can take the 3:30 PM train. The Bikes row says bikes cannot go on trains that leave between 4:00 PM and 6:00 PM, and the other three trains leave inside that time.",
+      "inference": 1,
+      "tags": [
+        "time-rule",
+        "time-window"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i103",
+      "skill": "F4",
+      "passage": "f4-p42",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort each plan. Does Sam's ticket cover it?",
+      "bins": [
+        "Covered by the ticket",
+        "Not covered by the ticket"
+      ],
+      "cards": [
+        {
+          "text": "Ride to Sandy Cove at 9:30 AM on Saturday",
+          "bin": 0
+        },
+        {
+          "text": "Ride to Sandy Cove a second time on Saturday afternoon",
+          "bin": 0
+        },
+        {
+          "text": "Ride home from Sandy Cove at 7:00 PM on Saturday",
+          "bin": 0
+        },
+        {
+          "text": "Ride to Sandy Cove at 8:30 AM on Saturday",
+          "bin": 1
+        },
+        {
+          "text": "Ride to Sandy Cove on Sunday",
+          "bin": 1
+        },
+        {
+          "text": "Ride to North Bluff with no extra ticket",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "Check each plan against four rows: the day, the times, the number of trips and the zones.",
+      "explain": "The 9:30 AM ride, a second ride and the 7:00 PM ride home are covered, because the ticket is good on Saturday from 9:00 AM to midnight for as many trips as you like. 8:30 AM is too early, Sunday is the wrong day, and North Bluff is in Zone 4.",
+      "inference": 1,
+      "tags": [
+        "entry-rules",
+        "time-window",
+        "sort"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i104",
+      "skill": "F4",
+      "passage": "f4-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The power is off. Leo wants to listen to the radio for 30 minutes. About how long should he turn the crank?",
+      "options": [
+        "About 3 minutes",
+        "About 30 minutes",
+        "About 1 minute",
+        "About 10 minutes"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find how much radio time 1 minute of turning gives. Count up until you reach 30 minutes.",
+      "explain": "About 3 minutes. The Hand crank row says 1 minute of turning gives about 10 minutes of radio, so 3 minutes gives about 30 minutes.",
+      "inference": 1,
+      "tags": [
+        "rate",
+        "multiply"
+      ]
+    },
+    {
+      "id": "f4-i105",
+      "skill": "F4",
+      "passage": "f4-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The power is off, and the family has no AA batteries. Which plan runs the radio right now?",
+      "options": [
+        "Plug the USB cable into the wall outlet.",
+        "Turn the hand crank to charge the built-in battery.",
+        "Put 3 AA batteries in the radio.",
+        "Switch on the flashlight to charge the radio."
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Read both power choices. Then think about which one works with no power from the wall and no AA batteries.",
+      "explain": "Turning the hand crank works. Power choice 2 says the crank charges the built-in battery. The wall outlet has no power, the family has no AA batteries, and the flashlight does not charge the radio.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "two-rows",
+        "power-out"
+      ]
+    },
+    {
+      "id": "f4-i106",
+      "skill": "F4",
+      "passage": "f4-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo starts charging the radio with the USB cable at 1:00 PM. When will it be full, and how long can it play then?",
+      "options": [
+        "About 5:00 PM, and it plays for about 4 hours",
+        "About 9:00 PM, and it plays for about 4 hours",
+        "About 5:00 PM, and it plays for about 8 hours",
+        "About 9:00 PM, and it plays for about 8 hours"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "The USB charge row has two numbers. One is the time to charge, and one is the time it plays.",
+      "explain": "It is full at about 5:00 PM and plays for about 8 hours. The USB charge row says full in about 4 hours, and 4 hours after 1:00 PM is 5:00 PM. A full charge plays for about 8 hours.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "two-numbers",
+        "close-options"
+      ]
+    },
+    {
+      "id": "f4-i107",
+      "skill": "F4",
+      "passage": "f4-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam runs the course in 48 minutes, but he missed 2 controls. What is his final time?",
+      "options": [
+        "50 minutes",
+        "53 minutes",
+        "48 minutes",
+        "58 minutes"
+      ],
+      "answer": 3,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the row about missed controls. Work out the extra minutes for 2 of them, then add.",
+      "explain": "His final time is 58 minutes. The Missed a control? row adds 5 minutes for each one. 2 × 5 = 10, and 48 + 10 = 58.",
+      "inference": 1,
+      "tags": [
+        "penalty",
+        "multiply",
+        "add"
+      ]
+    },
+    {
+      "id": "f4-i108",
+      "skill": "F4",
+      "passage": "f4-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam finds control 4 before he finds control 3. What should he do?",
+      "options": [
+        "Leave control 4, find control 3, then come back to control 4.",
+        "Punch control 4 now, then look for control 3.",
+        "Skip both controls and go to the finish.",
+        "Punch control 4 two times."
+      ],
+      "answer": 0,
+      "evidence": [
+        3
+      ],
+      "hint": "Read the Controls row. Think about the order of the numbers.",
+      "explain": "He should leave control 4, find control 3 and then come back to control 4. The Controls row says to visit the controls in number order.",
+      "inference": 1,
+      "tags": [
+        "order-rule",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f4-i109",
+      "skill": "F4",
+      "passage": "f4-p44",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put Sam's race-day steps in order.",
+      "steps": [
+        "Get to the start by 10:02 AM.",
+        "Start the course at 10:12 AM.",
+        "Punch the card at control 1.",
+        "Punch the card at control 2.",
+        "Hand in the card at the finish by 12:30 PM."
+      ],
+      "evidence": [
+        2,
+        3,
+        5
+      ],
+      "hint": "Use the times on the card and the order of the controls.",
+      "explain": "Sam gets to the start by 10:02 AM, which is 10 minutes before his 10:12 AM start. Then he punches controls 1 and 2 in number order. Last, he hands in his card by 12:30 PM.",
+      "inference": 1,
+      "tags": [
+        "order",
+        "time-math"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i110",
+      "skill": "F4",
+      "passage": "f4-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The next field trip is on Saturday, May 16. What is the last day Maya can hand in her signed form?",
+      "options": [
+        "May 10",
+        "May 15",
+        "May 9",
+        "May 16"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the Field trips row. Count back that many days from May 16.",
+      "explain": "The last day is May 9. The Field trips row says at least 7 days before the trip, and 7 days before May 16 is May 9.",
+      "inference": 1,
+      "tags": [
+        "date-math",
+        "deadline",
+        "subtract"
+      ]
+    },
+    {
+      "id": "f4-i111",
+      "skill": "F4",
+      "passage": "f4-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya brings rocks to the rock swap. Which rock is ready to trade?",
+      "options": [
+        "An agate with a label: Found at Harbor Beach",
+        "A pyrite with a label: Pyrite",
+        "A garnet with no label",
+        "A quartz with a label: Quartz, found by the creek in Story Woods"
+      ],
+      "answer": 3,
+      "evidence": [
+        4
+      ],
+      "hint": "Read the Label rule row. A label needs two things. Check each rock for both.",
+      "explain": "The quartz is ready. The Label rule row says each label needs the rock's name and the place where it was found. The pyrite label has no place, the agate label has no name, and the garnet has no label.",
+      "inference": 1,
+      "tags": [
+        "label-rule",
+        "read-whole-row",
+        "close-options"
+      ]
+    },
+    {
+      "id": "f4-i112",
+      "skill": "F4",
+      "passage": "f4-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "It is July 8. Maya wants to go to the club meeting next Tuesday. What does she need to do first?",
+      "options": [
+        "Ask Mr. Varga about a new card, because hers was good until June 30.",
+        "Bring 3 rocks with labels.",
+        "Hand in a signed form 7 days before.",
+        "Nothing. Her card is still good."
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the date on the card. Is July 8 before or after it?",
+      "explain": "She should ask Mr. Varga about a new card. The Card good until row says June 30, and July 8 is after that.",
+      "inference": 1,
+      "tags": [
+        "expiry-date",
+        "date-compare"
+      ]
+    },
+    {
+      "id": "f4-i113",
+      "skill": "F4",
+      "passage": "f4-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Where in his room should Sam put the plant?",
+      "options": [
+        "On the windowsill, so it gets the most sun",
+        "On his desk, in bright light away from the hot sun",
+        "In his closet, where it is dark and cool",
+        "Next to the heater, so it stays warm"
+      ],
+      "answer": 1,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the Light row. Then compare it with the places in Sam's room.",
+      "explain": "On his desk. The Light row says bright light but not hot, direct sun, and the desk gets bright light without the sun shining on it. The window gets hot, direct sun.",
+      "inference": 1,
+      "tags": [
+        "light",
+        "decide"
+      ]
+    },
+    {
+      "id": "f4-i114",
+      "skill": "F4",
+      "passage": "f4-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "On Monday, Sam touches the soil, and the top inch is still wet. What should he do?",
+      "options": [
+        "Water it now.",
+        "Give it extra water so it lasts all week.",
+        "Wait, and check the soil again later.",
+        "Move it into the hot afternoon sun to dry."
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Read the Water row. Is the top of the soil dry yet?",
+      "explain": "He should wait and check again later. The Water row says to water when the top inch feels dry, and too much water can rot the roots.",
+      "inference": 1,
+      "tags": [
+        "condition",
+        "care"
+      ]
+    },
+    {
+      "id": "f4-i115",
+      "skill": "F4",
+      "passage": "f4-p46",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Sam worries that Pixel might chew a leaf. Tap the row that answers his worry.",
+      "unit": "row",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Pixel is a dog. Look for a row about animals.",
+      "explain": "Tap the Pets row. It says the plant is safe for dogs and cats.",
+      "inference": 1,
+      "tags": [
+        "find-row",
+        "pets"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i116",
+      "skill": "F4",
+      "passage": "f4-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben goes back to the shop on October 20 with the puzzle book, still in its wrapper, and the receipt. What can he do?",
+      "options": [
+        "Return it, because it is unopened and it is inside 30 days.",
+        "Only swap it for another copy of the same book.",
+        "Nothing, because he used a coupon.",
+        "Return it, but only after November 2."
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        3,
+        7
+      ],
+      "hint": "Read the Returns row. Then count the days from the date on the receipt to October 20.",
+      "explain": "He can return it. The Returns row says unopened items can come back within 30 days with the receipt. October 20 is 17 days after October 3, and the book is still in its wrapper.",
+      "inference": 1,
+      "tags": [
+        "return-policy",
+        "date-compare"
+      ]
+    },
+    {
+      "id": "f4-i117",
+      "skill": "F4",
+      "passage": "f4-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Without the coupon, how much would Ben's order have cost?",
+      "options": [
+        "$50.00",
+        "$60.00",
+        "$40.00",
+        "$70.00"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "Add the prices of the three things he bought. Leave out the coupon line.",
+      "explain": "It would have cost $60.00. $40 + $12 + $8 = $60. The coupon took $10 off, so the total was $50.",
+      "inference": 1,
+      "tags": [
+        "receipt",
+        "add",
+        "coupon"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i118",
+      "skill": "F4",
+      "passage": "f4-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The Galaxy Racers disc that Ben opened has a scratch, and it will not play. What does the receipt allow?",
+      "options": [
+        "Return it for his money back",
+        "Swap it for a different game",
+        "Swap it for another copy of Galaxy Racers",
+        "Return it without the receipt"
+      ],
+      "answer": 2,
+      "evidence": [
+        7
+      ],
+      "hint": "Read the Returns row to the end. Look for the part about opened games.",
+      "explain": "He can swap it for another copy of Galaxy Racers. The Returns row says opened games can only be swapped for the same game.",
+      "inference": 1,
+      "tags": [
+        "return-policy",
+        "read-whole-row",
+        "close-options"
+      ]
+    },
+    {
+      "id": "f4-i119",
+      "skill": "F4",
+      "passage": "f4-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How many visits are left on Ana's card?",
+      "options": [
+        "4",
+        "7",
+        "10",
+        "3"
+      ],
+      "answer": 3,
+      "evidence": [
+        0
+      ],
+      "hint": "Find how many visits the card has. Then take away the holes that are already punched.",
+      "explain": "3 visits are left. The Visits row says 10, and the story says Ana's card has 7 holes. 10 - 7 = 3.",
+      "inference": 1,
+      "tags": [
+        "subtract",
+        "prose-and-label"
+      ]
+    },
+    {
+      "id": "f4-i120",
+      "skill": "F4",
+      "passage": "f4-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana is 12. She wants to swim at 6:30 PM on a Wednesday. What does the card say?",
+      "options": [
+        "She cannot swim then. That time is lap swim for ages 13 and up.",
+        "She can swim. Open swim is on Wednesdays.",
+        "She can swim, but only in the deep end.",
+        "She can swim, because she has visits left."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the row that has 6:30 PM inside its times. Then check the ages in that row.",
+      "explain": "She cannot swim then. Open swim ends at 6:00 PM, and the Lap swim only row says 6:00 PM to 8:00 PM is for ages 13 and up. Ana is 12.",
+      "inference": 1,
+      "tags": [
+        "age-rule",
+        "time-rule"
+      ]
+    },
+    {
+      "id": "f4-i121",
+      "skill": "F4",
+      "passage": "f4-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben is 12. He wants to swim in the deep end today. What must he do first?",
+      "options": [
+        "Show his swim card to the lifeguard.",
+        "Pass the swim test: 2 lengths of the pool without stopping.",
+        "Wait until he is 13.",
+        "Buy a new swim card."
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Read the Deep end row. Then read the row it points to.",
+      "explain": "He must pass the swim test first. The Deep end row says swimmers under 14 must pass it, and the Swim test row says to swim 2 lengths without stopping and to ask a lifeguard.",
+      "inference": 1,
+      "tags": [
+        "two-rows",
+        "age-rule"
+      ]
+    },
+    {
+      "id": "f4-i122",
+      "skill": "F4",
+      "passage": "f4-p49",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Today is November 6. Sort each food for Sam's lunch.",
+      "bins": [
+        "OK to eat",
+        "Do not eat",
+        "Ask an adult first"
+      ],
+      "cards": [
+        {
+          "text": "Sliced turkey",
+          "bin": 1,
+          "emoji": "🥩"
+        },
+        {
+          "text": "Yogurt",
+          "bin": 0,
+          "emoji": "🥄"
+        },
+        {
+          "text": "Crackers",
+          "bin": 2,
+          "emoji": "🍘"
+        },
+        {
+          "text": "Cheese",
+          "bin": 0,
+          "emoji": "🧀"
+        },
+        {
+          "text": "Hummus",
+          "bin": 1,
+          "emoji": "🥣"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "Read the note first. Then check each food's date against November 6, and check if the pack is open.",
+      "explain": "Yogurt and cheese are OK, because they are not opened and their dates are still to come. Do not eat the turkey, because its use-by date has passed, or the hummus, because it was opened 7 days ago. The crackers are past their best-before date, so Sam asks an adult first.",
+      "inference": 1,
+      "tags": [
+        "use-by",
+        "best-before",
+        "after-opening",
+        "sort"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i123",
+      "skill": "F4",
+      "passage": "f4-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The hummus says use by November 20. Why should Sam still not eat it?",
+      "options": [
+        "It was opened today.",
+        "Its use-by date has passed.",
+        "It has a best-before date, so he must ask an adult.",
+        "It was opened on October 30, and opened hummus must be eaten within 5 days."
+      ],
+      "answer": 3,
+      "evidence": [
+        4
+      ],
+      "hint": "Read the last sentence of the note. Then count the days since the hummus was opened.",
+      "explain": "It was opened on October 30, and the After opening column says to eat it within 5 days. That time ended before November 6. The note says to follow the After opening days, even if the printed date is later.",
+      "inference": 1,
+      "tags": [
+        "after-opening",
+        "close-options"
+      ]
+    },
+    {
+      "id": "f4-i124",
+      "skill": "F4",
+      "passage": "f4-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The crackers say best before November 2. What does the note tell Sam to do?",
+      "options": [
+        "Ask an adult before he eats them.",
+        "Eat them. Best-before dates never matter.",
+        "Throw them away right away.",
+        "Eat them, because the bag is open."
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the part of the note about BEST BEFORE.",
+      "explain": "Sam should ask an adult before he eats them. The note says best before is about quality, and after that date you ask an adult.",
+      "inference": 1,
+      "tags": [
+        "best-before",
+        "note"
+      ]
+    },
+    {
+      "id": "f4-i125",
+      "skill": "F4",
+      "passage": "f4-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The club buys 6 kits. How much do they pay in all?",
+      "options": [
+        "$168",
+        "$138",
+        "$163",
+        "$115"
+      ],
+      "answer": 1,
+      "evidence": [
+        7
+      ],
+      "hint": "Check if 6 kits gets the club price. Find the price of one kit with $5 off, then count 6 of them.",
+      "explain": "They pay $138. 6 is 5 or more, so each kit costs $28 - $5 = $23. 6 × $23 = $138.",
+      "inference": 1,
+      "tags": [
+        "discount",
+        "multiply",
+        "club-price"
+      ]
+    },
+    {
+      "id": "f4-i126",
+      "skill": "F4",
+      "passage": "f4-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The club meets once a week for 1 and a half hours. About how many meetings will Priya need to build one arm?",
+      "options": [
+        "2 meetings",
+        "4 meetings",
+        "3 meetings",
+        "6 meetings"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the build time. Add 1 and a half hours for each meeting until you reach it.",
+      "explain": "About 3 meetings. The Build time row says about 4 hours. Two meetings give only 3 hours, and three meetings give 4 and a half hours, which is enough.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "rounding-up"
+      ]
+    },
+    {
+      "id": "f4-i127",
+      "skill": "F4",
+      "passage": "f4-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which of these can the robot arm lift?",
+      "options": [
+        "A 4-ounce apple",
+        "A 1-pound book",
+        "A full water bottle that weighs 16 ounces",
+        "A 1-ounce rubber ball"
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Find how much the arm can lift. Compare each thing with that number. 1 pound is the same as 16 ounces.",
+      "explain": "It can lift the 1-ounce ball. The Lifts row says up to 2 ounces. The book and the bottle each weigh 16 ounces, and the apple weighs 4 ounces.",
+      "inference": 1,
+      "tags": [
+        "limit",
+        "compare-numbers",
+        "units"
+      ]
+    },
+    {
+      "id": "f4-i128",
+      "skill": "F4",
+      "passage": "f4-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "On March 10, Ana wants to return the music book and the stand light. What can she return?",
+      "options": [
+        "Only the stand light",
+        "Only the music book",
+        "Both of them",
+        "Neither of them"
+      ],
+      "answer": 0,
+      "evidence": [
+        7
+      ],
+      "hint": "Read the whole Returns row. Check the date first, then check each thing.",
+      "explain": "Only the stand light. March 10 is before March 18, but the Returns row says music books cannot be returned.",
+      "inference": 1,
+      "tags": [
+        "return-policy",
+        "read-whole-row"
+      ]
+    },
+    {
+      "id": "f4-i129",
+      "skill": "F4",
+      "passage": "f4-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Suppose Ana had bought only the music stand and the stand light. Would the coupon work?",
+      "options": [
+        "Yes. She would pay $22.",
+        "No. $27 is less than $30.",
+        "Yes. The coupon works on any order.",
+        "No. The coupon is only for music books."
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3,
+        5
+      ],
+      "hint": "Add the two prices. Then compare the total with the amount in the Coupon row.",
+      "explain": "No. $18 + $9 = $27, and the Coupon row says the coupon works on orders of $30 or more.",
+      "inference": 1,
+      "tags": [
+        "coupon-rule",
+        "add",
+        "compare"
+      ]
+    },
+    {
+      "id": "f4-i130",
+      "skill": "F4",
+      "passage": "f4-p51",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Ms. Gray asked Ana to buy something that keeps her trumpet valves moving smoothly. Tap the row that shows she bought it.",
+      "unit": "row",
+      "answer": [
+        1
+      ],
+      "evidence": [
+        1
+      ],
+      "hint": "Look for a row that names a part of a trumpet.",
+      "explain": "Tap the Valve oil row. Valve oil keeps trumpet valves moving smoothly, and it cost $6.00.",
+      "inference": 1,
+      "tags": [
+        "find-row",
+        "receipt"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i131",
+      "skill": "F4",
+      "passage": "f4-p52",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which two dinosaurs on the box lived at the same time?",
+      "options": [
+        "Each one lived at a different time.",
+        "T. rex and Stegosaurus",
+        "Stegosaurus and Triceratops",
+        "T. rex and Triceratops"
+      ],
+      "answer": 3,
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "Read the three dinosaur rows. Look for two rows with the same numbers.",
+      "explain": "T. rex and Triceratops. Both rows say about 68 to 66 million years ago. Stegosaurus lived about 155 to 150 million years ago, long before them.",
+      "inference": 1,
+      "tags": [
+        "compare-dates",
+        "dino-fact"
+      ]
+    },
+    {
+      "id": "f4-i132",
+      "skill": "F4",
+      "passage": "f4-p52",
+      "format": "tap",
+      "level": 4,
+      "prompt": "About how many million years passed from the end of the Stegosaurus dates to the start of the T. rex dates?",
+      "options": [
+        "About 82 million years",
+        "About 2 million years",
+        "About 87 million years",
+        "About 5 million years"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        7
+      ],
+      "hint": "Find the number where Stegosaurus ends and the number where T. rex starts. Take the smaller number from the bigger one.",
+      "explain": "About 82 million years. The Stegosaurus row ends at 150 million years ago, and the T. rex row starts at 68 million years ago. 150 - 68 = 82.",
+      "inference": 1,
+      "tags": [
+        "subtract",
+        "big-numbers"
+      ]
+    },
+    {
+      "id": "f4-i133",
+      "skill": "F4",
+      "passage": "f4-p52",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam cooks 2 servings, one for him and one for his cousin. How much dry pasta does he use, and how many servings are left in the box?",
+      "options": [
+        "1/2 cup dry, and 7 servings are left",
+        "1 cup dry, and 6 servings are left",
+        "2 cups dry, and 6 servings are left",
+        "1 cup dry, and 8 servings are left"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find how much dry pasta is in one serving and count 2 servings. Then take 2 from the servings in the box.",
+      "explain": "He uses 1 cup of dry pasta, and 6 servings are left. One serving is 1/2 cup dry, so 2 servings are 1 cup. The box has 8 servings, and 8 - 2 = 6.",
+      "inference": 1,
+      "tags": [
+        "serving-size",
+        "two-rows"
+      ]
+    },
+    {
+      "id": "f4-i134",
+      "skill": "F4",
+      "passage": "f4-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which telescope gathers more light, and why?",
+      "options": [
+        "SkyView 80, because it weighs more",
+        "StarHopper 60, because it has more magnification",
+        "SkyView 80, because its lens is wider",
+        "StarHopper 60, because it costs less"
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Dr. Hale said what makes a telescope gather more light. Find that line on the boxes.",
+      "explain": "The SkyView 80 gathers more light. Dr. Hale said a wider lens gathers more light, and the Lens width row shows 80 mm, which is wider than 60 mm.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "prose-and-label"
+      ]
+    },
+    {
+      "id": "f4-i135",
+      "skill": "F4",
+      "passage": "f4-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On Saturday, can Priya and Sam buy the SkyView 80 with their $95?",
+      "options": [
+        "No. On sale it costs $100.",
+        "No. It costs $110.",
+        "Yes. It costs $70, so they have $25 left.",
+        "Yes. On sale it costs $90, so they have $5 left."
+      ],
+      "answer": 3,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the price and the sale for the SkyView 80. Check if Saturday is inside the sale.",
+      "explain": "Yes. The Sale row says $20 off until Sunday, so on Saturday the SkyView 80 costs $110 - $20 = $90. They have $95, so $5 is left.",
+      "inference": 1,
+      "tags": [
+        "sale",
+        "budget",
+        "price-math"
+      ]
+    },
+    {
+      "id": "f4-i136",
+      "skill": "F4",
+      "passage": "f4-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "They wait until Monday, and the sale is over. Which plan lets them buy a telescope that day with their $95?",
+      "options": [
+        "Buy the StarHopper 60 for $70.",
+        "Buy the SkyView 80 for $90.",
+        "Buy the SkyView 80 for $110.",
+        "Buy the StarHopper 60 for $50."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find each telescope's price once the sale is over. Compare each price with $95.",
+      "explain": "They can buy the StarHopper 60 for $70. After Sunday, the SkyView 80 costs the full $110, which is more than $95. The StarHopper 60 never had a sale, so it is still $70.",
+      "inference": 1,
+      "tags": [
+        "sale-end",
+        "budget",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f4-i137",
+      "skill": "F4",
+      "passage": "f4-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam and Leo go to the island and back on the same day. How much do their two tickets, Pixel's ticket and the bike cost together? Leave out Grandma Rose.",
+      "options": [
+        "$16",
+        "$22",
+        "$19",
+        "$12"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "hint": "Use the Round trip column. Add two youth tickets, one dog and one bike.",
+      "explain": "They cost $22. Two youth round trips are $6 + $6 = $12. Pixel's round trip is $4, and the bike's round trip is $6. $12 + $4 + $6 = $22.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "round-trip",
+        "add"
+      ]
+    },
+    {
+      "id": "f4-i138",
+      "skill": "F4",
+      "passage": "f4-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana and Ben's parents take the twins and their 7-year-old cousin to the island and back on the same day. What should they buy?",
+      "options": [
+        "The family pass. It costs $28 instead of $30.",
+        "Single tickets. They cost $28 in all.",
+        "The family pass. It costs $28 instead of $42.",
+        "Single tickets. The cousin rides free."
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "hint": "Add the round-trip tickets for 2 adults and 3 youths. Then compare that total with the family pass.",
+      "explain": "They should buy the family pass. Single round trips cost 2 × $12 + 3 × $6 = $24 + $18 = $42, and the family pass is $28. The cousin is 7, so the cousin pays the youth fare, not the free child fare.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "multiply",
+        "family-pass"
+      ]
+    },
+    {
+      "id": "f4-i139",
+      "skill": "F4",
+      "passage": "f4-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Mr. Hill goes to the island on Friday and comes back on Sunday. What should he buy?",
+      "options": [
+        "A family pass, $28",
+        "One round-trip adult ticket, $12",
+        "One one-way adult ticket, $7",
+        "Two one-way adult tickets at the dock window, $14 in all"
+      ],
+      "answer": 3,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the note about round trips. Does Mr. Hill come back on the same day?",
+      "explain": "He should buy two one-way adult tickets at the dock window, for $7 + $7 = $14. The note says a round trip is there and back on the same day, and Mr. Hill comes back two days later.",
+      "inference": 1,
+      "tags": [
+        "round-trip",
+        "note",
+        "condition"
+      ]
+    },
+    {
+      "id": "f4-i140",
+      "skill": "F4",
+      "passage": "f4-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya and her dad visit 4 times this year, and they drive and park each time. Which costs less, and by how much?",
+      "options": [
+        "The pair membership, by $26",
+        "Day tickets, by $6",
+        "The pair membership, by $6",
+        "Day tickets, by $26"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1,
+        3,
+        7
+      ],
+      "hint": "Work out one visit with day tickets and parking. Count 4 visits. Then compare with the pair membership.",
+      "explain": "The pair membership costs $26 less. One visit with day tickets is $15 + $9 + $5 for parking = $29, so 4 visits cost $116. The pair membership is $90, and parking is free for members. $116 - $90 = $26.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "multiply",
+        "hidden-cost"
+      ]
+    },
+    {
+      "id": "f4-i141",
+      "skill": "F4",
+      "passage": "f4-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "With the membership, Maya buys a $20 sketchbook at the gift shop. How much does she pay?",
+      "options": [
+        "$10",
+        "$18",
+        "$19",
+        "$20"
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the gift shop discount. Work out 10% of $20, then take it off.",
+      "explain": "Maya pays $18. The Members get row says 10% off at the gift shop, and 10% of $20 is $2. $20 - $2 = $18.",
+      "inference": 1,
+      "tags": [
+        "percent",
+        "discount"
+      ]
+    },
+    {
+      "id": "f4-i142",
+      "skill": "F4",
+      "passage": "f4-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya and her dad have the pair membership. Sam comes with them one day. What does Sam need?",
+      "options": [
+        "Nothing. Members' friends get in free.",
+        "A free guest pass",
+        "A youth day ticket for $9",
+        "A family membership for $140"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        3,
+        6
+      ],
+      "hint": "Read the Guest passes row to the end. Check which membership Maya and her dad have.",
+      "explain": "Sam needs a youth day ticket for $9. The Guest passes row says free guest passes come with a family membership only, and Maya and her dad have the pair membership.",
+      "inference": 1,
+      "tags": [
+        "membership-type",
+        "close-rows"
+      ]
+    },
+    {
+      "id": "f4-i143",
+      "skill": "F4",
+      "passage": "f4-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which cereal costs the least for each ounce?",
+      "options": [
+        "Honey Hoops and Oat Clouds cost the same.",
+        "Oat Clouds",
+        "Honey Hoops",
+        "Bran Stars"
+      ],
+      "answer": 3,
+      "evidence": [
+        2
+      ],
+      "hint": "Use the Unit price row, not the Price row.",
+      "explain": "Bran Stars costs the least for each ounce, at 25 cents. Oat Clouds is 30 cents an ounce, and Honey Hoops is 35 cents an ounce.",
+      "inference": 1,
+      "tags": [
+        "unit-price",
+        "compare",
+        "wrong-row"
+      ]
+    },
+    {
+      "id": "f4-i144",
+      "skill": "F4",
+      "passage": "f4-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Use the note. Which cereal is high in fiber and also low in added sugars?",
+      "options": [
+        "Oat Clouds",
+        "Bran Stars",
+        "Honey Hoops",
+        "Bran Stars and Oat Clouds"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the cereals with fiber of 20% or more. Then check which of those has added sugars of 5% or less.",
+      "explain": "Oat Clouds. Its fiber is 21%, which is high, and its added sugars are 4%, which is low. Bran Stars is high in fiber too, but its added sugars are 18%, which is not low.",
+      "inference": 1,
+      "tags": [
+        "daily-value",
+        "two-conditions",
+        "close-options"
+      ]
+    },
+    {
+      "id": "f4-i145",
+      "skill": "F4",
+      "passage": "f4-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben needs 40 ounces of a cereal that is safe for Ana. He wants the safe one that costs the least per ounce. What does he buy?",
+      "options": [
+        "4 boxes of Honey Hoops, for $14",
+        "2 boxes of Oat Clouds, for $12",
+        "3 boxes of Bran Stars, for $12",
+        "2 boxes of Oat Clouds, for $6"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "hint": "First cross out any cereal that is not safe for Ana. Then compare unit prices, and count boxes to reach 40 ounces.",
+      "explain": "He buys 2 boxes of Oat Clouds for $12. Bran Stars may contain tree nuts, so it is not safe for Ana. Of the two safe cereals, Oat Clouds costs less per ounce: 30 cents, not 35 cents. Two 20-ounce boxes make 40 ounces, and 2 × $6 = $12.",
+      "inference": 1,
+      "tags": [
+        "allergy",
+        "may-contain",
+        "unit-price",
+        "multiply"
+      ]
+    },
+    {
+      "id": "f4-i146",
+      "skill": "F4",
+      "passage": "f4-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo has $20 to put on a card. Which choice gives him the most credits?",
+      "options": [
+        "Load $10 two times, for 120 credits.",
+        "Load $10 two times, for 100 credits.",
+        "Load $20 at one time, for 100 credits.",
+        "Both ways give 80 credits."
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Work out the credits for loading $10 two times. Compare that with loading $20 one time.",
+      "explain": "Loading $20 at one time gives the most: 100 credits. Loading $10 two times gives only 40 + 40 = 80 credits.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "deal"
+      ]
+    },
+    {
+      "id": "f4-i147",
+      "skill": "F4",
+      "passage": "f4-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo loads $20. He plays racing games 5 times. Then he plays 2 games of air hockey with Ben, and Leo pays for both games. How many credits are left?",
+      "options": [
+        "20 credits",
+        "60 credits",
+        "50 credits",
+        "40 credits"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Start with the credits for $20. Take away 5 racing plays, then 2 air hockey games.",
+      "explain": "40 credits are left. $20 gives 100 credits. 5 racing plays use 5 × 8 = 40 credits, and 2 air hockey games use 2 × 10 = 20 credits. 100 - 40 - 20 = 40.",
+      "inference": 1,
+      "tags": [
+        "subtract",
+        "multiply",
+        "multi-step"
+      ]
+    },
+    {
+      "id": "f4-i148",
+      "skill": "F4",
+      "passage": "f4-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "At closing time, Ben has 12 credits and 30 tickets on his card. The prize he wants costs 50 tickets. What is his best plan?",
+      "options": [
+        "Keep the card, and use the credits and tickets on his next visit.",
+        "Spend the 12 credits fast, before they are gone at closing time.",
+        "Throw the card away, because 30 tickets are not enough.",
+        "Trade the 12 credits for 12 tickets at the prize counter."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Read the Credits and tickets row. Do they disappear when the game room closes?",
+      "explain": "He should keep the card for his next visit. The Credits and tickets row says they do not expire, so he can win more tickets later and trade them at the prize counter.",
+      "inference": 1,
+      "tags": [
+        "no-expiry",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f4-i149",
+      "skill": "F4",
+      "passage": "f4-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam buys the world map poster and the island rail map poster. What do they cost together this week?",
+      "options": [
+        "$27.00",
+        "$13.50",
+        "$8.50",
+        "$22.00"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3,
+        6
+      ],
+      "hint": "Both are posters. Read the Sale row, then halve each price before you add.",
+      "explain": "They cost $13.50. Posters are half price this week, so the world map poster is $7.50 and the rail map poster is $6. $7.50 + $6 = $13.50. The coupon does not work, because $13.50 is less than $25.",
+      "inference": 1,
+      "tags": [
+        "half-price",
+        "add"
+      ]
+    },
+    {
+      "id": "f4-i150",
+      "skill": "F4",
+      "passage": "f4-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam buys the globe, the world map poster and a pack of map pins. What is his total, and is his $30 enough?",
+      "options": [
+        "$38.00. He needs $8 more.",
+        "$35.50. He needs $5.50 more.",
+        "$30.50. He needs 50 cents more.",
+        "$30.50. He has enough."
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "hint": "Find the sale prices first and add them. Then check if the coupon works, and take it off.",
+      "explain": "His total is $30.50, so he needs 50 cents more. The poster is half price, $7.50. $25 + $7.50 + $3 = $35.50, which is $25 or more, so the coupon takes off $5. $35.50 - $5 = $30.50.",
+      "inference": 1,
+      "tags": [
+        "coupon",
+        "half-price",
+        "budget",
+        "multi-step"
+      ]
+    },
+    {
+      "id": "f4-i151",
+      "skill": "F4",
+      "passage": "f4-p58",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Use this week's sale prices. Sort each order. Does the coupon work?",
+      "bins": [
+        "Coupon works",
+        "Coupon does not work"
+      ],
+      "cards": [
+        {
+          "text": "The globe",
+          "bin": 0,
+          "emoji": "🌍"
+        },
+        {
+          "text": "The globe and a street map",
+          "bin": 0,
+          "emoji": "🗺️"
+        },
+        {
+          "text": "The globe and a pack of map pins",
+          "bin": 0,
+          "emoji": "📍"
+        },
+        {
+          "text": "The world map poster and the rail map poster",
+          "bin": 1,
+          "emoji": "🖼️"
+        },
+        {
+          "text": "Two world map posters and a hiking map",
+          "bin": 1,
+          "emoji": "🥾"
+        },
+        {
+          "text": "A hiking map, a street map and a pack of map pins",
+          "bin": 1,
+          "emoji": "🧭"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "hint": "For each order, use the sale price for any poster. Add the prices, then compare the total with $25.",
+      "explain": "The coupon works for the globe ($25), the globe and a street map ($29), and the globe and map pins ($28). The two posters cost only $13.50 at sale prices, two world map posters and a hiking map cost $21, and the hiking map, street map and pins cost $13. Those totals are less than $25.",
+      "inference": 1,
+      "tags": [
+        "coupon-rule",
+        "half-price",
+        "sort"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i152",
+      "skill": "F4",
+      "passage": "f4-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya starts step 1 on March 6. She starts each new step on the day the last one ends. On what day will her stones be done?",
+      "options": [
+        "April 3",
+        "March 27",
+        "April 6",
+        "March 13"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "Add up the days for all 4 steps. Then count that many days on from March 6. March has 31 days.",
+      "explain": "Her stones will be done on April 3. Each of the 4 steps takes 7 days, so all of them take 28 days, and 28 days after March 6 is April 3.",
+      "inference": 1,
+      "tags": [
+        "date-math",
+        "add-days",
+        "multi-step"
+      ]
+    },
+    {
+      "id": "f4-i153",
+      "skill": "F4",
+      "passage": "f4-p59",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put Maya's first jobs with the tumbler in order.",
+      "steps": [
+        "Have an adult help set up the tumbler.",
+        "Tumble the rocks with coarse grit for 7 days.",
+        "Rinse the rocks and the barrel well.",
+        "Tumble the rocks with medium grit for 7 days."
+      ],
+      "evidence": [
+        0,
+        2,
+        6,
+        3
+      ],
+      "hint": "The Ages row tells the first job. Then follow the step numbers, and check what happens between steps.",
+      "explain": "First an adult helps set up the tumbler. Then come 7 days of coarse grit. Between steps, Maya rinses the rocks and the barrel. Then come 7 days of medium grit.",
+      "inference": 1,
+      "tags": [
+        "order",
+        "between-steps"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i154",
+      "skill": "F4",
+      "passage": "f4-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Step 1 is done, and the barrel is full of muddy grit water. What should Maya do with it?",
+      "options": [
+        "Leave it in the barrel and add the medium grit.",
+        "Pour it down the kitchen sink.",
+        "Pour it into a bag and put it in the trash.",
+        "Pour it down the sink with lots of clean water."
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        8
+      ],
+      "hint": "Read the Used grit water row. Then read the Between steps row.",
+      "explain": "She pours it into a bag and puts it in the trash. The Used grit water row says it can block sink pipes, and the Between steps row says to rinse well, so old grit must not stay in the barrel.",
+      "inference": 1,
+      "tags": [
+        "do-not",
+        "two-rows",
+        "close-options"
+      ]
+    },
+    {
+      "id": "f4-i155",
+      "skill": "F4",
+      "passage": "f4-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which station measures what the class wants, with a sensor that reaches the garden post?",
+      "options": [
+        "SkyCheck Basic: it measures rainfall and wind.",
+        "SkyCheck Basic: it reaches 100 feet, which is far enough.",
+        "SkyCheck Plus: it updates every 5 minutes.",
+        "SkyCheck Plus: it measures rainfall and wind, and it reaches 300 feet."
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Check two things for each station: what it measures, and how far its sensor reaches. The post is 150 feet away.",
+      "explain": "The SkyCheck Plus. The Measures row shows it measures rainfall and wind speed, and the Sensor range row says up to 300 feet. The Basic measures only temperature and humidity, and it reaches only 100 feet, which is less than 150 feet.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f4-i156",
+      "skill": "F4",
+      "passage": "f4-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ms. Ortiz orders the SkyCheck Plus on Thursday. The display will use the wall plug. How much of her $70 is left?",
+      "options": [
+        "$5 is left.",
+        "Nothing is left.",
+        "She needs $10 more.",
+        "$40 is left."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "hint": "Find the sale price on Thursday. Then check if she must buy any batteries.",
+      "explain": "$5 is left. On Thursday the Plus costs $80 - $15 = $65. The display uses the wall plug, and the sensor has a solar panel with a backup battery included, so she buys no batteries. $70 - $65 = $5.",
+      "inference": 1,
+      "tags": [
+        "sale",
+        "budget",
+        "multi-step"
+      ]
+    },
+    {
+      "id": "f4-i157",
+      "skill": "F4",
+      "passage": "f4-p60",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort each feature. Does only the Plus have it, or do both stations have it?",
+      "bins": [
+        "Only the SkyCheck Plus",
+        "Both stations"
+      ],
+      "cards": [
+        {
+          "text": "Measures temperature",
+          "bin": 1,
+          "emoji": "🌡️"
+        },
+        {
+          "text": "Measures humidity",
+          "bin": 1,
+          "emoji": "💧"
+        },
+        {
+          "text": "Measures rainfall",
+          "bin": 0,
+          "emoji": "🌧️"
+        },
+        {
+          "text": "Measures wind speed",
+          "bin": 0,
+          "emoji": "💨"
+        },
+        {
+          "text": "Sensor runs on a solar panel",
+          "bin": 0,
+          "emoji": "☀️"
+        },
+        {
+          "text": "Display can run on 2 AA batteries",
+          "bin": 1,
+          "emoji": "🔋"
+        }
+      ],
+      "evidence": [
+        0,
+        2,
+        3
+      ],
+      "hint": "Read across the Measures, Display power and Sensor power rows. Check both columns for each card.",
+      "explain": "Only the Plus measures rainfall and wind speed and has a solar panel. Both stations measure temperature and humidity, and both displays can run on 2 AA batteries.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "table",
+        "sort"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i158",
+      "skill": "F4",
+      "passage": "f4-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The family goes on Friday and Sunday only. Which passes cost the least for the three of them?",
+      "options": [
+        "One-day passes on both days, $40 in all",
+        "Three-day passes, $85 in all",
+        "One-day passes on both days, $80 in all",
+        "Three-day passes, $45 in all"
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Work out one-day passes for 1 adult and 2 youths, for 2 days. Then work out three-day passes for the same 3 people. Compare.",
+      "explain": "One-day passes on both days cost the least, $80 in all. Each day costs $20 + $10 + $10 = $40, so 2 days cost $80. Three-day passes cost $45 + $20 + $20 = $85.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "multiply",
+        "multi-step"
+      ]
+    },
+    {
+      "id": "f4-i159",
+      "skill": "F4",
+      "passage": "f4-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Suppose Ben had a three-day pass. On Friday night, his wristband feels itchy, and he wants to cut it off. He still wants to go on Sunday. What does the flyer tell him?",
+      "options": [
+        "Cut it off, but keep the pieces to show at the gate.",
+        "Cut it off, and get a new one on Sunday.",
+        "Cut it off, because wristbands are for Friday only.",
+        "Keep it on, because a cut wristband is not valid."
+      ],
+      "answer": 3,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the Wristbands row. Read both sentences.",
+      "explain": "He should keep it on. The Wristbands row says to wear it all weekend, and a cut wristband is not valid.",
+      "inference": 1,
+      "tags": [
+        "rule-row",
+        "read-whole-row"
+      ]
+    },
+    {
+      "id": "f4-i160",
+      "skill": "F4",
+      "passage": "f4-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "It rains on Sunday afternoon. Where and when can the family hear the piano show?",
+      "options": [
+        "In the Nature Center hall at 2:00 PM",
+        "In the meadow at 2:00 PM, under umbrellas",
+        "Nowhere. The show is canceled.",
+        "In the Nature Center hall at 6:30 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        7
+      ],
+      "hint": "Find the time of the piano show. Then read the Rain plan row.",
+      "explain": "In the Story Woods Nature Center hall at 2:00 PM. The Sunday row says the piano show is at 2:00 PM, and the Rain plan row says shows move into the hall at the same times.",
+      "inference": 1,
+      "tags": [
+        "rain-plan",
+        "condition",
+        "two-rows"
+      ]
+    },
+    {
+      "id": "f4-i161",
+      "skill": "F4",
+      "passage": "f4-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which choice lets Priya's rover drive for 2 hours without a battery change?",
+      "options": [
+        "One ZipCell 2000",
+        "One ZipCell 4000",
+        "Two ZipCell 2000 packs, swapped halfway",
+        "Her old ZipCell pack, fully charged"
+      ],
+      "answer": 1,
+      "evidence": [
+        0
+      ],
+      "hint": "Compare each run time with 2 hours. Remember the challenge rule about battery changes.",
+      "explain": "One ZipCell 4000. It runs about 2 hours 30 minutes, which is more than 2 hours. One ZipCell 2000 runs only about 1 hour 15 minutes, and swapping packs is a battery change, which the challenge does not allow.",
+      "inference": 1,
+      "tags": [
+        "run-time",
+        "compare",
+        "rule"
+      ]
+    },
+    {
+      "id": "f4-i162",
+      "skill": "F4",
+      "passage": "f4-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya starts charging an empty ZipCell 4000 at 7:00 PM. At 8:30 PM, she starts charging the club's empty ZipCell 2000 on a second charger. Which pack is full first, and at what time?",
+      "options": [
+        "The ZipCell 2000, at 10:00 PM",
+        "The ZipCell 4000, at 11:00 PM",
+        "The ZipCell 2000, at 10:30 PM",
+        "The ZipCell 4000, at 9:00 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Add each pack's charge time to the time it started. Then compare the two end times.",
+      "explain": "The ZipCell 2000 is full first, at 10:30 PM. It charges in about 2 hours from 8:30 PM. The ZipCell 4000 charges in about 4 hours from 7:00 PM, so it is full at 11:00 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "compare"
+      ]
+    },
+    {
+      "id": "f4-i163",
+      "skill": "F4",
+      "passage": "f4-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "After the challenge, Priya will not use her rover for six weeks. What should she do with her ZipCell 4000?",
+      "options": [
+        "Charge it to about half with a phone charger, then store it.",
+        "Charge it all the way to full, then store it.",
+        "Let it run until it is empty, then store it.",
+        "Charge it to about half with the ZipCell charger, then store it."
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        6
+      ],
+      "hint": "Read the row about storing. Then check the Charger row to see which charger to use.",
+      "explain": "She should charge it to about half with the ZipCell charger, then store it. The Storing row says to charge it to about half for a month or more, and the Charger row says to use the ZipCell USB-C charger only.",
+      "inference": 1,
+      "tags": [
+        "storage",
+        "two-rows",
+        "close-options"
+      ]
+    },
+    {
+      "id": "f4-i164",
+      "skill": "F4",
+      "passage": "f4-p63",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben's mom leaves home at 5:40 PM. The drive takes 25 minutes. When will they get there, and which door should they use?",
+      "options": [
+        "At 6:05 PM, at the Side Door",
+        "At 6:05 PM, at the front doors",
+        "At 6:35 PM, at the Side Door",
+        "At 6:15 PM, at the front doors"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Add 25 minutes to 5:40 PM. Then read the whole Check-in row.",
+      "explain": "They get there at 6:05 PM and use the Side Door. 25 minutes after 5:40 PM is 6:05 PM, which is inside the check-in time, and the Check-in row says the front doors are locked after 5:00 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "read-whole-row"
+      ]
+    },
+    {
+      "id": "f4-i165",
+      "skill": "F4",
+      "passage": "f4-p63",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort what Sam packs for the sleepover.",
+      "bins": [
+        "Bring it",
+        "Leave it at home"
+      ],
+      "cards": [
+        {
+          "text": "Sleeping bag",
+          "bin": 0,
+          "emoji": "🛌"
+        },
+        {
+          "text": "Flashlight",
+          "bin": 0,
+          "emoji": "🔦"
+        },
+        {
+          "text": "Toothbrush",
+          "bin": 0,
+          "emoji": "🪥"
+        },
+        {
+          "text": "Bag of chips",
+          "bin": 1,
+          "emoji": "🍟"
+        },
+        {
+          "text": "Camera with a flash",
+          "bin": 1,
+          "emoji": "📸"
+        },
+        {
+          "text": "Pillow",
+          "bin": 0,
+          "emoji": "🛏️"
+        }
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Check each thing against the Bring row and the Do not bring row.",
+      "explain": "Sam brings the sleeping bag, flashlight, toothbrush and pillow, which are in the Bring row. He leaves the chips and the flash camera at home, because the Do not bring row says no food and no cameras with a flash.",
+      "inference": 1,
+      "tags": [
+        "bring-list",
+        "sort"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f4-i166",
+      "skill": "F4",
+      "passage": "f4-p63",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam's dad cannot come until 9:00 AM on Saturday. Which plan follows the pass?",
+      "options": [
+        "Sam's dad comes at 7:30 AM, before breakfast.",
+        "Sam's dad comes at 9:00 AM, and the boys wait inside.",
+        "Ask Ben's mom to pick up both boys between 8:00 AM and 8:30 AM.",
+        "The boys wait at the front doors until 9:00 AM."
+      ],
+      "answer": 2,
+      "evidence": [
+        6
+      ],
+      "hint": "Read the Pick-up row. Find the plan that fits inside those times and uses the right door.",
+      "explain": "Ask Ben's mom to pick up both boys between 8:00 AM and 8:30 AM. The Pick-up row says pick-up is 8:00 AM to 8:30 AM at the Side Door, so 9:00 AM is too late and 7:30 AM is too early.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "time-window"
+      ]
     }
   ],
   "model": {

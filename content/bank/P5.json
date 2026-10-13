@@ -157,11 +157,11 @@
       "title": "Leo Keeps the Beat",
       "kind": "story",
       "sentences": [
-        "For his birthday, Leo got a practice pad and a pair of drumsticks.",
+        "For his birthday, Leo got a practice pad and a new pair of drumsticks.",
         "A practice pad is a flat rubber circle that drummers hit to train their hands.",
         "It makes a soft tap instead of a loud bang, so his family did not mind the noise.",
-        "Leo wanted to join the Harbor Middle School band in the spring.",
-        "To try out, he would need to play a steady beat for one whole minute without speeding up.",
+        "Leo already played the drums in the Grade 7 band, but the band's newest song had a hard new part for him.",
+        "In the middle of the song, he had to play a steady beat alone for one whole minute without speeding up.",
         "The first week was harder than he expected.",
         "Every time Leo got excited, his hands moved faster, and the beat got quicker and quicker.",
         "He felt frustrated, and twice he put the sticks away in a drawer.",
@@ -170,9 +170,9 @@
         "\"Start slow,\" she told him. \"Practice for fifteen minutes every day, and only speed up when slow feels easy.\"",
         "Leo took the sticks out of the drawer and followed her plan, even on days when he wanted to be at the skate park.",
         "He counted out loud, one, two, three, four, and waited for each click before he hit the pad.",
-        "After six weeks, he played for the band teacher again.",
+        "After six weeks, he played the part for the band teacher again.",
         "The beat stayed steady for the whole minute, and she nodded.",
-        "\"Welcome to the band,\" she said.",
+        "\"That part is ready for the concert,\" she said.",
         "Leo grinned and tapped his sticks together twice."
       ],
       "breaks": [
@@ -199,7 +199,7 @@
       "title": "Ana's Chess Match",
       "kind": "story",
       "sentences": [
-        "On Thursday afternoons, the Harbor Town library holds a chess club in its back room.",
+        "On Monday afternoons, the Harbor Town library holds a chess club in its back room.",
         "Ana had played chess with her brother Ben for a year, and she won most of their games.",
         "So when Maya asked her to play, Ana felt sure that she would win.",
         "Twenty minutes later, Maya slid her queen across the board and said quietly, \"Checkmate.\"",
@@ -207,7 +207,7 @@
         "Her king was completely trapped, with no safe square left to move to.",
         "On the walk home, Ana told Ben that she did not want to go back to chess club.",
         "Ben thought about it for a moment. \"You could ask Maya to explain how she beat you,\" he suggested.",
-        "The next Thursday, Ana walked up to Maya's table and asked.",
+        "The next Monday, Ana walked up to Maya's table and asked.",
         "Maya set up the pieces again and showed her the moves that had trapped her king.",
         "\"You brought your queen out too early,\" Maya explained. \"I did that for months when I started.\"",
         "After that, Ana practiced on a chess app for twenty minutes after her homework.",
@@ -215,7 +215,7 @@
         "A month later, she and Maya played again.",
         "This time, the game lasted almost an hour, and it ended in a draw, with neither player able to win.",
         "Ana and Maya shook hands, and both of them laughed.",
-        "\"Rematch next Thursday?\" asked Maya, and Ana said yes."
+        "\"Rematch next Monday?\" asked Maya, and Ana said yes."
       ],
       "breaks": [
         6,
@@ -320,6 +320,812 @@
       "socialLoad": 0,
       "credit": {
         "title": "Learning to Live in Space",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p11",
+      "title": "Maya's Shiny Rock",
+      "kind": "story",
+      "sentences": [
+        "On Saturday, Maya walked along the creek in Story Woods.",
+        "She was looking for rocks for her shelf.",
+        "Near the water, she found a gray rock with shiny gold cubes.",
+        "\"Is this real gold?\" she wondered.",
+        "On Tuesday, she took it to rock club.",
+        "Mr. Varga looked at it with a hand lens.",
+        "\"This is pyrite,\" he said. \"It looks like gold, but it is a different mineral.\"",
+        "\"Pyrite often grows in tiny cubes like these.\"",
+        "Maya looked at the cubes again.",
+        "They had flat sides and sharp corners.",
+        "She liked them even more now.",
+        "At home, she put the rock on her shelf with a new label: \"Pyrite, Story Woods creek.\"",
+        "Then she stood back and smiled."
+      ],
+      "picture": "🪨✨",
+      "topics": [
+        "mining",
+        "nature"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Maya's Shiny Rock",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p12",
+      "title": "Too Loud at the Game Fair",
+      "kind": "story",
+      "sentences": [
+        "Ben and Ana went to the Harbor Town Game Fair.",
+        "Inside the big tent, it was very loud.",
+        "Games beeped, music played, and people shouted.",
+        "Ben covered his ears with his hands.",
+        "The noise made it hard for him to think.",
+        "Ana looked at him. \"Do you want a break?\" she asked.",
+        "Ben nodded.",
+        "They got hand stamps at the gate and went outside to a quiet bench by the harbor.",
+        "Ben put on his headphones and drank some water.",
+        "After ten minutes, he felt calm again.",
+        "\"Okay,\" he said. \"Now I want to try the racing game.\"",
+        "He kept his headphones on and played three races.",
+        "In the last race, he came in second."
+      ],
+      "picture": "🎮🎧",
+      "topics": [
+        "games",
+        "friends"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Too Loud at the Game Fair",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p13",
+      "title": "The Wild Boar and the Fox",
+      "kind": "fable",
+      "sentences": [
+        "One calm afternoon, a wild boar stood next to an old oak tree in the forest.",
+        "A wild boar is a kind of wild pig with two long, sharp teeth called tusks.",
+        "The boar rubbed his tusks against the bark, again and again, to make them sharper.",
+        "A fox walked by and stopped to watch.",
+        "\"Why are you doing that?\" the fox asked.",
+        "\"The forest is quiet today, and there is no danger anywhere.\"",
+        "The boar did not stop.",
+        "\"That is exactly why I am doing it now,\" he said.",
+        "\"If danger comes, I will have to move fast.\"",
+        "\"There will be no time to sharpen my tusks then.\"",
+        "\"So I get ready today, while everything is calm.\"",
+        "The fox thought carefully about this answer on his long walk home.",
+        "He decided that the boar was wiser than he had expected.",
+        "The best time to get ready is before you need to be ready."
+      ],
+      "picture": "🐗🦊",
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Wild Boar and the Fox",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p5-p14",
+      "title": "The Travelers and the Sea",
+      "kind": "fable",
+      "sentences": [
+        "Two travelers were walking along the seashore on a bright, windy afternoon.",
+        "Far out on the water, they saw something dark floating on the waves.",
+        "\"Look!\" said the first traveler. \"That must be a big ship coming to the harbor.\"",
+        "They were excited, so they sat down on the sand to watch it arrive.",
+        "Slowly, the wind and the waves pushed the dark shape closer to the shore.",
+        "\"It is smaller than I thought,\" said the second traveler. \"Maybe it is only a little boat.\"",
+        "They waited a little longer.",
+        "At last, a wave carried the thing right up onto the beach.",
+        "It was not a ship, and it was not a boat.",
+        "It was only a bundle of sticks tied together with a rope.",
+        "The two travelers looked at each other and laughed.",
+        "Then they brushed the sand off their clothes and walked on.",
+        "Things that are far away can seem bigger than they really are."
+      ],
+      "picture": "🌊🪵",
+      "topics": [
+        "ocean"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Travelers and the Sea",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p5-p15",
+      "title": "Practice at Seven",
+      "kind": "story",
+      "sentences": [
+        "In July, a heat wave came to Harbor Town.",
+        "For a whole week, the afternoons were hotter than 95 degrees.",
+        "Coach Novak sent a message to the soccer team.",
+        "\"It is not safe to run hard in this heat,\" the message said.",
+        "\"This week, practice will start at 7:00 AM, before the day gets hot.\"",
+        "Ben read the message twice and groaned.",
+        "He liked to sleep late in the summer.",
+        "On Monday, his alarm rang at 6:15 AM, and the sky was still gray.",
+        "Ana and Ben rode their bikes to Pier Field, yawning the whole way.",
+        "But the air was cool, and the grass was wet and shiny.",
+        "Over the harbor, the sun was coming up, big and orange.",
+        "The team ran drills, and nobody felt too hot.",
+        "By Friday, Ben was waking up before his alarm.",
+        "\"I like early practice more than I thought I would,\" he told Ana on the ride home.",
+        "\"Me too,\" said Ana. \"We get to see the sunrise.\""
+      ],
+      "picture": "☀️⚽",
+      "topics": [
+        "weather",
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Practice at Seven",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p16",
+      "title": "Priya's Rover Talk",
+      "kind": "story",
+      "sentences": [
+        "Priya had built a small rover with four wheels and a camera on top.",
+        "Mrs. Hall asked her to show it at the library on Saturday.",
+        "Twenty people came, and most of them were younger kids.",
+        "Priya's heart beat fast when she saw all the faces.",
+        "She had written her talk on three cards, so she read the first card slowly.",
+        "Then she set the rover on the floor and pressed a button.",
+        "It rolled forward, saw a chair leg with its camera and turned left.",
+        "The kids gasped, and one girl clapped.",
+        "\"How does it know where to go?\" a boy asked.",
+        "Priya forgot about her cards.",
+        "She explained how the camera sends pictures to a tiny computer inside the rover.",
+        "The computer decides when to turn.",
+        "She answered questions for twenty minutes.",
+        "At the end, Mrs. Hall thanked her, and the kids lined up to watch the rover one more time.",
+        "Priya packed it up slowly, smiling the whole time."
+      ],
+      "picture": "🤖📚",
+      "topics": [
+        "robots",
+        "school"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Priya's Rover Talk",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p17",
+      "title": "Leo Comes Over",
+      "kind": "story",
+      "sentences": [
+        "On Sunday afternoon, Leo visited Sam's house for the first time.",
+        "The night before, Sam had cleaned his room and organized his shelves.",
+        "He also made a rule card for the model train layout in his room.",
+        "It said, \"Look first. Ask before you touch.\"",
+        "When Leo arrived, Pixel raced to the front door and wagged his tail hard.",
+        "Sam showed Leo the layout on the big table next to his window.",
+        "It had two loops of track, a stone bridge, a tunnel and a tiny station.",
+        "Leo read the card and nodded. \"Fair rule,\" he said.",
+        "He pointed at the freight train. \"Can I drive that one?\"",
+        "Sam showed him the controller and explained how to go slowly around the curve.",
+        "Then Leo showed Sam a video of his newest skateboard trick.",
+        "They shared a bowl of popcorn and ran both trains at the same time.",
+        "When Leo's dad came to pick him up, Leo said, \"Next time, come to the skate park with me.\"",
+        "Sam said yes, and he meant it."
+      ],
+      "picture": "🚂🏠",
+      "topics": [
+        "transport",
+        "friends",
+        "home"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Leo Comes Over",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p18",
+      "title": "Waiting for Launch Day",
+      "kind": "article",
+      "sentences": [
+        "When a rocket is ready to launch, crowds often gather on beaches and roads nearby to watch.",
+        "Families bring chairs, snacks and binoculars, and some of them travel for hours to get there.",
+        "Yet many launches do not happen on the first day they are planned.",
+        "A launch that is called off for the day is known as a scrub.",
+        "Weather is one of the most common reasons for a scrub.",
+        "Strong winds high above the ground can push a rocket away from its planned path.",
+        "Some thick clouds carry electric charges, and a rocket flying through them could cause a lightning strike.",
+        "Engineers also watch readings from many sensors on the rocket, and if one reading looks wrong, they stop the countdown.",
+        "Each rocket also has a launch window, which is the period of time when it is able to leave.",
+        "Some launch windows last a few hours, but others last only a few seconds.",
+        "For the people watching, a scrub means more waiting.",
+        "Some families go home and return the next day, while others camp nearby.",
+        "Launch teams say that a scrub is a good decision, not a failure, because a safe launch matters more than a fast one.",
+        "When the rocket finally rises, many watchers say that the long wait made the moment even better."
+      ],
+      "breaks": [
+        4,
+        10
+      ],
+      "picture": "🚀⏳",
+      "topics": [
+        "space",
+        "weather"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Waiting for Launch Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p19",
+      "title": "Sam's Map to the Bakery",
+      "kind": "story",
+      "sentences": [
+        "For a social studies project, Mr. Lee asked each student to draw a map of a route they walk often.",
+        "Sam chose the walk from his house to Rose's Bakery, which he took with Pixel almost every Saturday.",
+        "He wanted his map to be accurate, so he decided to measure the distances himself.",
+        "On Saturday, he counted his steps between each corner while Pixel trotted beside him.",
+        "There were 212 steps from his front gate to the bus stop, and 340 more to the bakery door.",
+        "At home, Sam turned his steps into lines on graph paper, with one square for every ten steps.",
+        "He drew the streets in black, the bus stop as a blue circle and the bakery as a small brown square.",
+        "He added a key in the corner, so readers would know what each color and shape meant.",
+        "When Grandma Rose looked at the map, she smiled, but then she tapped the paper.",
+        "\"My bakery is on the other side of Pine Street,\" she said gently.",
+        "Sam's face felt hot, because he had checked every number twice.",
+        "He had counted the steps correctly, but he had drawn the bakery on the wrong side of the street.",
+        "Sam did not start over.",
+        "He covered the square with a small piece of white paper and drew the bakery again, on the correct side.",
+        "On Monday, Mr. Lee hung the map on the classroom wall, and two classmates used it to plan a walk to the bakery.",
+        "Sam was proud of his map, and he was proud of the fix too."
+      ],
+      "breaks": [
+        5,
+        12
+      ],
+      "picture": "🗺️🥐",
+      "topics": [
+        "maps",
+        "school"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Sam's Map to the Bakery",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p20",
+      "title": "The Gold Pan",
+      "kind": "story",
+      "sentences": [
+        "At the end of the rock club's tour of the Ridgeway Mine Museum, Mr. Varga led everyone to a long wooden trough full of muddy water.",
+        "\"Today you can try gold panning,\" he said, and he handed each student a wide, shallow metal pan.",
+        "Maya scooped up a pan of sand and gravel.",
+        "She had read about panning in a library book, but she had never tried it.",
+        "On her first try, Maya shook the pan hard and tipped it quickly.",
+        "Water, sand and pebbles poured over the edge, and soon the pan was empty.",
+        "If there had been any gold inside, it was gone now.",
+        "Mr. Varga crouched beside her.",
+        "\"Gold is very heavy,\" he explained. \"A piece of gold weighs about nineteen times as much as the same amount of water.\"",
+        "\"If you swirl the pan slowly, the gold sinks to the bottom, and the lighter sand washes away over the edge.\"",
+        "Maya tried again, and this time she moved slowly.",
+        "She swirled, tipped the pan a little, let the light sand wash out and then swirled again.",
+        "It took almost twenty minutes, and her arms began to ache.",
+        "At last, only a thin layer of black sand was left, and three tiny yellow flakes shone in it.",
+        "Mr. Varga helped her drop the flakes into a small glass tube of water.",
+        "They were smaller than grains of rice, but Maya held the tube up to the light and grinned.",
+        "On the bus home, she showed the tube to everyone in her row."
+      ],
+      "breaks": [
+        4,
+        10
+      ],
+      "picture": "⛏️✨",
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Gold Pan",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p21",
+      "title": "Ben's Hardest Level",
+      "kind": "story",
+      "sentences": [
+        "For three weeks, Ben designed and built a level in the game club's game-making app.",
+        "It was a castle full of moving platforms, falling blocks and long jumps over lava.",
+        "Ben tested every jump himself, and he was proud that his level was so difficult.",
+        "On Friday, he let Ana, Sam and Leo play it at the club.",
+        "Nobody got past the third jump.",
+        "Leo tried eleven times and then put the controller down.",
+        "\"Is this even possible?\" he asked.",
+        "Ben crossed his arms. \"It is possible. I did it,\" he said, a little too loudly.",
+        "Then he watched Sam try, and he noticed something.",
+        "Sam pressed the jump button at exactly the right moment, but his character still fell into the lava every time.",
+        "Ben had practiced that jump for three weeks, so he knew a special trick that new players did not know.",
+        "That night, Ben made the third jump a little shorter.",
+        "He also added a checkpoint, so players who fell would not have to start the whole castle again.",
+        "The next Friday, Sam reached the end on his sixth try, and everyone at the table cheered.",
+        "Ben grinned.",
+        "He had learned that a level is more enjoyable when other players are able to finish it."
+      ],
+      "breaks": [
+        3,
+        11
+      ],
+      "picture": "🎮🏰",
+      "topics": [
+        "games",
+        "friends"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Ben's Hardest Level",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p22",
+      "title": "A Song for Grandma Rose",
+      "kind": "story",
+      "sentences": [
+        "Every morning, Grandma Rose hums the same old song while she shapes bread at the bakery.",
+        "For her birthday, Sam decided to learn the song on his guitar and play it for her.",
+        "He found the chords in a songbook at the library.",
+        "A chord is a group of notes played at the same time.",
+        "The song used only three chords, but one of them, called F, was hard for a new player.",
+        "To play it, Sam had to press his first finger across all six strings at once, and at first the strings buzzed.",
+        "Sam made a plan.",
+        "Every day after school, he practiced for twenty minutes, and he spent the first five minutes on the F chord alone.",
+        "He also practiced moving from one chord to the next very slowly, so that the moves would start to feel easy.",
+        "After two weeks, the buzz was gone, and after three weeks, he could play the whole song without stopping.",
+        "On her birthday, the family met at the bakery after it closed.",
+        "Sam sat on a stool between the tables and started to play.",
+        "His hands shook a little, and in the second verse, he missed the F chord.",
+        "He did not stop, and he went on to the next chord, the way he had practiced.",
+        "By the last verse, Grandma Rose was singing along, and her eyes were shiny.",
+        "\"This is the best present I have ever had,\" she said, and she hugged him for a long time."
+      ],
+      "breaks": [
+        6,
+        10
+      ],
+      "picture": "🎸🎂",
+      "topics": [
+        "music",
+        "home"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "A Song for Grandma Rose",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p23",
+      "title": "Puppies in Training",
+      "kind": "article",
+      "sentences": [
+        "A guide dog helps a person who is blind or has low vision to walk safely from place to place.",
+        "Guide dogs stop at curbs, lead their partners around things in the way and stay calm in busy places.",
+        "No puppy is born knowing how to do this.",
+        "Its training starts when it is about eight weeks old, and it takes around two years.",
+        "First, the puppy lives for about a year with a volunteer family, called puppy raisers.",
+        "The raisers teach it house manners, such as waiting at the door and staying off the furniture.",
+        "They also take the puppy almost everywhere they go, so it can get used to new places.",
+        "Wearing a small vest that says it is in training, the puppy rides buses, visits stores and lies quietly under café tables.",
+        "Each new place has new sounds and smells, and at first many puppies seem unsure.",
+        "Little by little, the strange places start to feel normal.",
+        "Next, the dog goes back to the guide dog school for several months of training with a professional trainer.",
+        "It learns to guide a person around obstacles and to stop at the edge of every curb and stair.",
+        "Not every dog finishes the program, and some move on to other jobs that suit them better.",
+        "The dogs that graduate are matched with a partner, and the two of them learn to work as a team."
+      ],
+      "breaks": [
+        4,
+        10
+      ],
+      "picture": "🐕‍🦺🐾",
+      "topics": [
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Puppies in Training",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p24",
+      "title": "Ana in Goal",
+      "kind": "story",
+      "sentences": [
+        "Ana usually played forward for her soccer team, because scoring goals was her favorite part of every game.",
+        "On Saturday, ten minutes before a game at Pier Field, Coach Novak called her over to the bench.",
+        "\"Our regular goalkeeper is away visiting family this weekend,\" Coach Novak explained. \"Would you be willing to play in goal today?\"",
+        "Ana did not answer immediately.",
+        "She had never played goalkeeper in a real game, and she had been planning all week to score for her team.",
+        "Then she looked at her teammates, who were waiting for her answer, and she nodded.",
+        "Coach Novak handed her the heavy goalkeeper gloves and gave her three quick instructions.",
+        "\"Keep your knees bent. Watch the ball, not the players. And call out loudly so your defenders always know where you are.\"",
+        "In the first half, a powerful shot flew past her fingertips into the net, and the other team celebrated.",
+        "Ana wiped her gloves on her shorts, took a slow breath and got into position again.",
+        "In the second half, she dove to her left and pushed a hard, low shot around the post.",
+        "Her teammates rushed over and patted her on the back.",
+        "The game ended in a tie, one goal to one.",
+        "Ana had not scored a single goal, but she had stopped four shots.",
+        "On the walk home, Ben asked her how it had felt to be the goalkeeper.",
+        "\"Scary at first,\" Ana admitted. \"But I liked being able to see the whole field. Maybe I will try it again.\""
+      ],
+      "breaks": [
+        6,
+        12
+      ],
+      "picture": "🧤⚽",
+      "topics": [
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Ana in Goal",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p25",
+      "title": "The Miller, His Son and the Donkey",
+      "kind": "fable",
+      "sentences": [
+        "Long ago, a miller and his young son decided to sell their donkey at the market in the next town.",
+        "A miller is a person who grinds grain into flour at a mill.",
+        "Hoping to keep the donkey rested and healthy for the sale, they walked beside it along the dusty country road.",
+        "Before long, they passed a group of travelers relaxing in the shade of an enormous chestnut tree.",
+        "\"Look at those two,\" one traveler said with a laugh. \"They have a perfectly good donkey, and they are walking!\"",
+        "Embarrassed, the miller immediately lifted his son onto the donkey's back, and they continued on their journey.",
+        "Soon they met several elderly men who frowned disapprovingly at the boy.",
+        "\"The young boy rides while his tired father walks,\" one of them said. \"That is not right.\"",
+        "The boy climbed down, and the miller rode instead.",
+        "A little later, a group of women gathering water at a well pointed at them.",
+        "\"How can that man ride comfortably while his small son struggles to keep up?\" they asked.",
+        "So the miller pulled his son up beside him, and the donkey carried them both.",
+        "Near the entrance to the town, a shopkeeper called out to them from his doorway.",
+        "\"That poor donkey is carrying far too much,\" he said. \"You two are strong enough to carry it instead!\"",
+        "The miller and his son climbed down, tied the donkey's legs to a long pole and lifted it onto their shoulders.",
+        "People on the bridge laughed at the strange sight, and the noise frightened the donkey.",
+        "It kicked so hard that the ropes came loose, and it splashed down into the shallow river.",
+        "The donkey scrambled out on the far bank and trotted away down the road, and the miller and his son could not catch it.",
+        "Disappointed and exhausted, the miller and his son walked home slowly, with no donkey and no money.",
+        "\"We tried to please everyone,\" the miller said with a sigh, \"and in the end we pleased nobody, not even ourselves.\""
+      ],
+      "breaks": [
+        6,
+        12,
+        18
+      ],
+      "picture": "🫏🌾",
+      "topics": [
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Miller, His Son and the Donkey",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p5-p26",
+      "title": "Counting Fish on the Reef",
+      "kind": "article",
+      "sentences": [
+        "Scientists who study coral reefs cannot be everywhere at once, so many of them get help from trained volunteers.",
+        "The volunteers are people like students, teachers and grandparents who love the ocean.",
+        "Before they ever get wet, they spend weeks learning the names of dozens of kinds of reef fish from photos and cards.",
+        "They learn how to recognize a parrotfish or a wrasse by its shape, its colors and the way it swims.",
+        "On survey day, the volunteers snorkel or dive along a long measuring tape that has been laid across the reef.",
+        "This line is called a transect, and it makes sure that every survey covers the same area.",
+        "Each volunteer carries a white plastic slate and a pencil, because a pencil can still write underwater.",
+        "As they move slowly along the tape, they count certain kinds of fish that they see within a short distance of the line.",
+        "Moving slowly matters, because many fish hide when a swimmer rushes past.",
+        "Back on land, the volunteers type their counts into a computer.",
+        "Over many years, the numbers show scientists which fish are becoming more common and which are becoming rare.",
+        "These numbers help people decide which parts of a reef need to be protected.",
+        "Many volunteers say that their first survey was confusing, because the fish moved quickly and looked different underwater than in the photos.",
+        "Some of them counted the same fish twice or forgot to write a number down.",
+        "With practice, though, they learned to recognize each kind of fish quickly.",
+        "Several volunteers have said that learning the names of the fish made them notice far more on every swim than they had noticed before."
+      ],
+      "breaks": [
+        4,
+        9,
+        12
+      ],
+      "picture": "🐠🤿",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Counting Fish on the Reef",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p27",
+      "title": "Are Birds Dinosaurs?",
+      "kind": "article",
+      "sentences": [
+        "For more than a hundred years, most people imagined dinosaurs as slow, scaly giants that had all died out long ago.",
+        "Today, most scientists think that one group of dinosaurs never completely disappeared.",
+        "They believe that birds, including the pigeons and gulls you see every day, are living dinosaurs.",
+        "The first clues came from bones.",
+        "In the 1860s, workers in a stone quarry in Germany found the fossil of an animal that seemed to be part bird and part reptile.",
+        "It had feathers and wings, but it also had teeth, claws on its wings and a long, bony tail.",
+        "Later, scientists noticed that birds and some small, meat-eating dinosaurs share many other features, such as hollow bones, a wishbone and three main toes that point forward.",
+        "Not everyone agreed at first.",
+        "For a long time, some scientists argued that these shared features were only a coincidence.",
+        "Then, starting in the 1990s, people digging in China found many dinosaur fossils with clear marks of feathers preserved in fine rock.",
+        "Some of these dinosaurs could not fly at all, which suggests that feathers first helped them stay warm or display colors to each other.",
+        "Faced with this new evidence, many scientists changed their minds.",
+        "Changing your mind can feel uncomfortable, especially when you have believed something for years.",
+        "But good scientists change their ideas when strong new evidence appears, and they explain clearly what made them change.",
+        "Because of that, what we know about dinosaurs keeps improving.",
+        "The next time a gull lands on the harbor railing, take a close look at its scaly feet and its three forward toes.",
+        "You may be looking at a dinosaur."
+      ],
+      "breaks": [
+        3,
+        7,
+        12
+      ],
+      "picture": "🦖🐦",
+      "topics": [
+        "dinosaurs",
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Are Birds Dinosaurs?",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p28",
+      "title": "Learning the Route",
+      "kind": "article",
+      "sentences": [
+        "Before a train driver can carry passengers on a route alone, the driver must learn that route in great detail.",
+        "Railway workers call this route knowledge.",
+        "A driver needs to know every signal, every station, every curve and every hill along the line, sometimes across more than a hundred miles of track.",
+        "Drivers must know where the track goes up or down, because a heavy train needs a long distance to speed up or to slow down.",
+        "Learning a route takes weeks or even months.",
+        "New drivers ride in the cab beside an experienced driver, again and again, in daylight and in darkness.",
+        "They study track maps and write their own notes about each part of the line.",
+        "Many drivers draw simple diagrams that mark where to begin slowing down for each station.",
+        "On some railways, they also watch videos filmed from the front of a train, so they can see the route many times before they drive it.",
+        "At first, all the trees, bridges and signals can look the same.",
+        "Little by little, each place becomes familiar.",
+        "Drivers start to recognize a certain bridge as the sign that a curve is coming, or a certain tower as the place to begin braking.",
+        "Then an expert rides along to check that the driver truly knows the route before the driver may drive it alone.",
+        "Experienced drivers often say that, after many years, they can describe every part of their route from memory.",
+        "Knowing a route that well keeps passengers safe, and it also lets a driver notice right away when something is different, such as a new sign or a fallen branch."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "picture": "🚆🗺️",
+      "topics": [
+        "transport",
+        "maps"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Learning the Route",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p29",
+      "title": "The Winter Bird Count",
+      "kind": "story",
+      "sentences": [
+        "On a frosty Saturday in December, Sam and Maya volunteered for the annual winter bird count in Story Woods.",
+        "Every year, volunteers walk set paths through the woods and count every bird they see or hear, and the numbers go to scientists who study how bird populations change.",
+        "A guide from the nature center handed each of them a clipboard with a checklist of the local birds.",
+        "\"At each stop, we stand completely still for ten minutes,\" she explained. \"Birds hide when people move around or talk.\"",
+        "At the first stop, the ten minutes seemed incredibly long to Sam.",
+        "His toes were cold, and he kept checking the time on the guide's watch.",
+        "He could see nothing except bare branches against a gray, cloudy sky.",
+        "Maya leaned over and whispered, \"Close your eyes and just listen.\"",
+        "Sam closed his eyes, and gradually he began to hear sounds that he had not noticed before.",
+        "There was a soft whistle from somewhere high up, a quick knocking on wood and a call that sounded like \"chick-a-dee-dee-dee.\"",
+        "The guide smiled and nodded. \"That last one is a black-capped chickadee. It calls its own name.\"",
+        "The knocking came from a downy woodpecker, which was tapping a dead branch to find insects hiding under the bark.",
+        "After that, Sam completely stopped looking at the guide's watch.",
+        "At the third stop, he heard a high, thin call before anyone else did, and he pointed up into a pine tree.",
+        "A tiny brown bird was creeping up the trunk in a spiral.",
+        "\"Brown creeper,\" the guide whispered, and she let Sam write it on the checklist himself.",
+        "By noon, the group had recorded 63 individual birds of 14 different species.",
+        "On the way back to the parking lot, Sam walked more slowly than before, listening carefully.",
+        "\"I always thought the woods were quiet in winter,\" he told Maya. \"They are actually full of sounds.\""
+      ],
+      "breaks": [
+        4,
+        11,
+        16
+      ],
+      "picture": "🐦🌲",
+      "topics": [
+        "nature",
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Winter Bird Count",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p5-p30",
+      "title": "Sam Learns Table Tennis",
+      "kind": "story",
+      "sentences": [
+        "The community center on Harbor Street had a table tennis table in the back room, and Ben played there whenever he had a free afternoon.",
+        "One afternoon in March, he asked Sam to play a game to eleven points.",
+        "Sam had never played before, but he liked the quick tapping sound of the ball on the table, so he agreed.",
+        "Ben won eleven to two.",
+        "Sam's two points came from Ben's mistakes, not from his own shots.",
+        "Sam did not enjoy losing, but he was also curious about why the ball kept flying off his paddle in unexpected directions.",
+        "Ben showed him how to hold the paddle loosely in a grip called the handshake grip, and how to keep his wrist steady instead of flicking it.",
+        "Then Ben gave him a goal: hit the ball back and forth over the net fifty times in a row, with no score, just for practice.",
+        "On the first day, Sam's best was seven.",
+        "He came back twice more that week, and at home he practiced bouncing a ball on his paddle while Pixel watched from the couch.",
+        "By the end of the second week, Sam and Ben reached fifty in a row, and they cheered so loudly that the community center's manager opened the door to check on them.",
+        "Three weeks after their first game, Sam asked for a rematch.",
+        "This time, he won six points with his own shots.",
+        "Ben still won the game, eleven to six, but the rallies were much longer, and the ball crossed the net many times during each point.",
+        "Afterward, Sam carefully wrote both scores, 2 and 6, on a sticky note and attached it inside his notebook.",
+        "\"Next time, I want eight,\" he said.",
+        "Ben laughed and picked up the ball. \"Then we should definitely keep practicing.\""
+      ],
+      "breaks": [
+        5,
+        11
+      ],
+      "picture": "🏓",
+      "topics": [
+        "sports",
+        "friends"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Sam Learns Table Tennis",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -893,8 +1699,8 @@
         8,
         11
       ],
-      "hint": "Find the part after Ana said she did not want to go back. What did she do the next Thursday, and after that?",
-      "explain": "\"The next Thursday, Ana walked up to Maya's table and asked.\" She went back and asked how Maya beat her. After that, she practiced every day on a chess app.",
+      "hint": "Find the part after Ana said she did not want to go back. What did she do the next Monday, and after that?",
+      "explain": "\"The next Monday, Ana walked up to Maya's table and asked.\" She went back and asked how Maya beat her. After that, she practiced every day on a chess app.",
       "inference": 1,
       "transfer": true,
       "tags": [
@@ -1352,6 +2158,3203 @@
         "own-experience",
         "curiosity",
         "wonder"
+      ]
+    },
+    {
+      "id": "p5-i26",
+      "skill": "P5",
+      "passage": "p5-p11",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "How did Maya feel about her rock after she learned it was pyrite?",
+      "options": [
+        "She liked it even more.",
+        "She wished she had left it at the creek.",
+        "She wanted to give it to Mr. Varga."
+      ],
+      "answer": 0,
+      "evidence": [
+        10,
+        11,
+        12
+      ],
+      "hint": "Find what Mr. Varga told Maya. Then read what Maya did and felt after that.",
+      "explain": "She liked it even more. The story says, \"She liked them even more now.\" Then she put the rock on her shelf and smiled.",
+      "inference": 0,
+      "tags": [
+        "key-detail",
+        "feeling"
+      ]
+    },
+    {
+      "id": "p5-i27",
+      "skill": "P5",
+      "passage": "p5-p11",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Maya collects rocks and labels each one. What do you like to collect or keep? Build your answer.",
+      "frame": "Like Maya with rocks, I like to collect {0}. I keep them {1}. They make me feel {2}.",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I collect",
+          "options": [
+            "cards or games",
+            "rocks, shells or leaves",
+            "facts about a topic",
+            "something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "where",
+          "label": "Where I keep them",
+          "options": [
+            "on a shelf",
+            "in a box",
+            "in a notebook or a list",
+            "on a screen"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "happy",
+            "proud",
+            "calm",
+            "curious"
+          ],
+          "rubric": 1
+        }
+      ],
+      "evidence": [
+        1,
+        11
+      ],
+      "hint": "Find where Maya keeps her rocks. Then think about the things you like to keep.",
+      "explain": "One good answer is: Like Maya with rocks, I like to collect cards or games. I keep them in a box. They make me feel happy. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "hobby",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i28",
+      "skill": "P5",
+      "passage": "p5-p11",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Maya hoped for gold, but she found something else she liked. Tell about a time you got something different from what you hoped. Build your answer.",
+      "frame": "I hoped for {0}, but I got {1}. I felt {2}. {3}",
+      "slots": [
+        {
+          "kind": "want",
+          "label": "What I hoped for",
+          "options": [
+            "a sunny day",
+            "a certain gift",
+            "a certain game or food",
+            "something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "me",
+          "label": "What I got",
+          "options": [
+            "something different",
+            "something better",
+            "something I liked later",
+            "something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "surprised",
+            "disappointed, then okay",
+            "happy",
+            "not sure"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Maya (you can skip this)",
+          "options": [
+            "Maya liked her rock even more.",
+            "Like Maya, I found something good about it.",
+            "Like Maya, I asked someone to tell me more."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        6,
+        10
+      ],
+      "hint": "Find what Maya hoped the rock was, and how she felt when she learned more. Then think of a surprise in your own life.",
+      "explain": "One good answer is: I hoped for a sunny day, but I got something different. I felt disappointed, then okay. Like Maya, I found something good about it. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "flexibility",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i29",
+      "skill": "P5",
+      "passage": "p5-p12",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "What helped Ben feel calm again?",
+      "options": [
+        "A break on a quiet bench with his headphones on.",
+        "Playing the loudest game in the tent first.",
+        "Going home early on the bus."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Find where Ben and Ana went after Ana asked a question. Then read what Ben did there.",
+      "explain": "A break on a quiet bench with his headphones on helped. They went outside to a quiet bench, Ben put on his headphones, and after ten minutes he felt calm.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "noisy-place"
+      ]
+    },
+    {
+      "id": "p5-i30",
+      "skill": "P5",
+      "passage": "p5-p12",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "personal": true,
+      "prompt": "The game fair was too loud for Ben. When have you been in a loud place? Build your answer.",
+      "frame": "A loud place I have been is {0}. The noise made me feel {1}. What helps me is {2}.",
+      "slots": [
+        {
+          "kind": "where",
+          "label": "Loud place",
+          "options": [
+            "a game fair or an arcade",
+            "a lunchroom or a gym",
+            "a party",
+            "a concert or a big game"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "tired",
+            "upset",
+            "okay",
+            "excited"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "plan",
+          "label": "What helps",
+          "options": [
+            "a short break somewhere quiet",
+            "my headphones",
+            "a drink of water",
+            "a friend who checks on me"
+          ],
+          "rubric": 2
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        4,
+        7,
+        8
+      ],
+      "hint": "Find the sentences about the noise and what Ben did. Then think of a loud place you know.",
+      "explain": "One good answer is: A loud place I have been is a lunchroom or a gym. The noise made me feel tired. What helps me is my headphones. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "noisy-place",
+        "coping"
+      ]
+    },
+    {
+      "id": "p5-i31",
+      "skill": "P5",
+      "passage": "p5-p12",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Ana asked Ben if he wanted a break. Who can you tell when a place is too loud, and what can you say? Build your answer.",
+      "frame": "When a place is too loud, I can tell {0}. I can say, \"{1}\" {2}",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who I can tell",
+          "options": [
+            "someone in my family",
+            "a friend",
+            "a teacher",
+            "a coach or a helper"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "plan",
+          "label": "What I can say",
+          "options": [
+            "I need a break.",
+            "It is too loud for me.",
+            "Can we go somewhere quiet?",
+            "I need my headphones."
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Ben (you can skip this)",
+          "options": [
+            "Ana helped Ben find a quiet place.",
+            "Ben went back after his break.",
+            "Ben kept his headphones on."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "Find what Ana asked Ben and what Ben did. Then think about who you could tell and the words you could use.",
+      "explain": "One good answer is: When a place is too loud, I can tell a friend. I can say, \"I need a break.\" Ana helped Ben find a quiet place. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "self-advocacy",
+        "noisy-place"
+      ]
+    },
+    {
+      "id": "p5-i32",
+      "skill": "P5",
+      "passage": "p5-p13",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why did the boar sharpen his tusks on a calm day?",
+      "options": [
+        "There would be no time to get ready once danger came.",
+        "He was bored and had nothing else to do.",
+        "The fox asked him to sharpen them.",
+        "The old oak tree was in his way."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9,
+        10
+      ],
+      "hint": "Find what the boar says after the fox asks him. Read all the way to the end of his answer.",
+      "explain": "There would be no time to get ready once danger came. The boar says, \"There will be no time to sharpen my tusks then. So I get ready today, while everything is calm.\"",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "planning"
+      ]
+    },
+    {
+      "id": "p5-i33",
+      "skill": "P5",
+      "passage": "p5-p13",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "The boar got ready before he needed to. Tell about a time you got ready early for something. Build your answer.",
+      "frame": "I got ready early for {0}. I {1}. When the day came, I felt {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What it was",
+          "options": [
+            "a test",
+            "a game or a match",
+            "a trip",
+            "a show or a talk"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "plan",
+          "label": "How I got ready",
+          "options": [
+            "practiced a little each day",
+            "packed my bag the night before",
+            "made a list",
+            "asked what would happen"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "calm",
+            "ready",
+            "proud",
+            "a little nervous"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the fable (you can skip this)",
+          "options": [
+            "Like the boar, I got ready while things were calm.",
+            "Like the boar, I did not wait until the day came.",
+            "The boar said there is no time to get ready later."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        7,
+        8,
+        9,
+        10,
+        13
+      ],
+      "hint": "Find why the boar gets ready on a calm day. Then think of a time you got ready before a big day.",
+      "explain": "One good answer is: I got ready early for a trip. I packed my bag the night before. When the day came, I felt calm. Like the boar, I did not wait until the day came. Any honest answer is fine.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "own-experience",
+        "planning",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i34",
+      "skill": "P5",
+      "passage": "p5-p13",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "What is something coming up that you could start getting ready for now? Build your answer.",
+      "frame": "Something coming up for me is {0}. To get ready, I could {1}. Getting ready early would help because {2}.",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What is coming",
+          "options": [
+            "a test or a project",
+            "a trip or a visit",
+            "a game, a match or a show",
+            "a new class or club"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "plan",
+          "label": "How I could get ready",
+          "options": [
+            "practice a little each day",
+            "make a list",
+            "ask what will happen",
+            "set out what I need"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "why",
+          "label": "Why it would help",
+          "options": [
+            "I would feel calmer",
+            "I would not need to rush",
+            "I would know the plan",
+            "I could do my best"
+          ],
+          "rubric": 2
+        }
+      ],
+      "evidence": [
+        10,
+        13
+      ],
+      "hint": "The boar used a calm day to get ready. Think of something on your calendar, and one small thing you could do now.",
+      "explain": "One good answer is: Something coming up for me is a test or a project. To get ready, I could practice a little each day. Getting ready early would help because I would feel calmer. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "planning",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "p5-i35",
+      "skill": "P5",
+      "passage": "p5-p14",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "What did the floating thing turn out to be?",
+      "options": [
+        "A bundle of sticks tied with a rope",
+        "A big ship coming to the harbor",
+        "A little boat",
+        "A tree that fell into the sea"
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find what the wave carried onto the beach. Then read the next two sentences.",
+      "explain": "It was a bundle of sticks tied with a rope. The travelers first thought it was a ship, and then a boat, but it was neither.",
+      "inference": 0,
+      "tags": [
+        "key-detail",
+        "plans-change"
+      ]
+    },
+    {
+      "id": "p5-i36",
+      "skill": "P5",
+      "passage": "p5-p14",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "The travelers expected a big ship, but it was only sticks. Tell about a time something was different from what you expected. Build your answer.",
+      "frame": "Once, I expected {0}. It turned out {1}. I felt {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I expected",
+          "options": [
+            "a big event or party",
+            "a hard test or game",
+            "an exciting new place",
+            "something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "ending",
+          "label": "How it turned out",
+          "options": [
+            "smaller than I thought",
+            "easier than I thought",
+            "different, but still okay",
+            "better than I thought"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "surprised",
+            "relieved",
+            "a little disappointed",
+            "happy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the fable (you can skip this)",
+          "options": [
+            "Like the travelers, I laughed about it later.",
+            "Like the travelers, I waited to see what it really was.",
+            "The travelers also expected something big."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        2,
+        5,
+        9,
+        10
+      ],
+      "hint": "Find what the travelers first thought, and what it really was. Then think of a time something surprised you.",
+      "explain": "One good answer is: Once, I expected a hard test. It turned out easier than I thought. I felt relieved. Like the travelers, I laughed about it later. Any honest answer is fine.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "own-experience",
+        "plans-change",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i37",
+      "skill": "P5",
+      "passage": "p5-p14",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "The travelers laughed when they saw the sticks. What helps you stay calm when something is not what you expected? Build your answer.",
+      "frame": "When something is not what I expected, I {0}. It helps because {1}. It makes me feel {2}.",
+      "slots": [
+        {
+          "kind": "plan",
+          "label": "What I do",
+          "options": [
+            "take a slow breath",
+            "laugh about it",
+            "talk to someone",
+            "make a new plan"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "why",
+          "label": "Why it helps",
+          "options": [
+            "it gives me time to think",
+            "it makes the surprise feel smaller",
+            "someone can help me",
+            "I can still have a good day"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "calm",
+            "better",
+            "ready to try again",
+            "okay"
+          ],
+          "rubric": 1
+        }
+      ],
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Find what the travelers did when they saw the sticks. Then think about what helps you.",
+      "explain": "One good answer is: When something is not what I expected, I take a slow breath. It helps because it gives me time to think. It makes me feel calm. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "flexibility",
+        "plans-change"
+      ]
+    },
+    {
+      "id": "p5-i38",
+      "skill": "P5",
+      "passage": "p5-p15",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why did Coach Novak move practice to 7:00 AM?",
+      "options": [
+        "The afternoons were too hot to run hard.",
+        "Pier Field was closed in the afternoons.",
+        "The team wanted to watch the sunrise.",
+        "Ben asked to start practice earlier."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "hint": "Read Coach Novak's message. Then look at the sentence about the afternoons.",
+      "explain": "The afternoons were too hot to run hard. The afternoons were hotter than 95 degrees, and the message said, \"It is not safe to run hard in this heat.\"",
+      "inference": 0,
+      "tags": [
+        "key-detail",
+        "plans-change"
+      ]
+    },
+    {
+      "id": "p5-i39",
+      "skill": "P5",
+      "passage": "p5-p15",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Ben did not like the new practice time at first. By Friday, he liked it. Tell about a change that turned out better than you thought. Build your answer.",
+      "frame": "When {0} changed, I felt {1} at first. Later, I found something good: {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What changed",
+          "options": [
+            "my school schedule",
+            "a practice or club time",
+            "a trip plan",
+            "my morning routine"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "At first",
+          "options": [
+            "annoyed",
+            "worried",
+            "surprised",
+            "okay"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Something good",
+          "options": [
+            "it was quieter",
+            "I saw something new",
+            "I had more free time",
+            "I felt better"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Ben (you can skip this)",
+          "options": [
+            "Ben found cool air and a sunrise.",
+            "Like Ben, I got used to it in a few days.",
+            "Like Ben, I liked it more by the end of the week."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        9,
+        10,
+        12,
+        13
+      ],
+      "hint": "Find how Ben felt when he read the message, and what he found at the field. Then think of a change in your own life.",
+      "explain": "One good answer is: When my school schedule changed, I felt annoyed at first. Later, I found something good: I had more free time. Like Ben, I got used to it in a few days. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "plans-change",
+        "flexibility",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i40",
+      "skill": "P5",
+      "passage": "p5-p15",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Ben's alarm rang at 6:15 AM. What is your morning like on a school day? Build your answer.",
+      "frame": "On school days, I wake up at about {0}. The first thing I do is {1}. My favorite part of the morning is {2}.",
+      "slots": [
+        {
+          "kind": "when",
+          "label": "Wake-up time",
+          "options": [
+            "6:00 AM or earlier",
+            "6:30 AM",
+            "7:00 AM",
+            "7:30 AM or later"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "first",
+          "label": "First thing",
+          "options": [
+            "get dressed",
+            "eat breakfast",
+            "check the weather",
+            "say hi to my pet"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "me",
+          "label": "Favorite part",
+          "options": [
+            "breakfast",
+            "quiet time",
+            "the ride to school",
+            "seeing my friends"
+          ],
+          "rubric": 1
+        }
+      ],
+      "evidence": [
+        7,
+        12
+      ],
+      "hint": "Find what time Ben's alarm rang. Then think about your own school mornings, step by step.",
+      "explain": "One good answer is: On school days, I wake up at about 7:00 AM. The first thing I do is eat breakfast. My favorite part of the morning is quiet time. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "own-day",
+        "routine"
+      ]
+    },
+    {
+      "id": "p5-i41",
+      "skill": "P5",
+      "passage": "p5-p16",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows Priya felt nervous at the start.",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Look near the start, when Priya first sees the people. What does her body do?",
+      "explain": "\"Priya's heart beat fast when she saw all the faces.\" A fast heartbeat when you see a crowd can show that you feel nervous.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "hidden-feeling",
+        "courage"
+      ]
+    },
+    {
+      "id": "p5-i42",
+      "skill": "P5",
+      "passage": "p5-p16",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Priya showed her rover to a room full of people. Tell about a time you showed something to other people. Build your answer.",
+      "frame": "I showed {0} to {1}. Before I started, I felt {2}. After, I felt {3}.",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I showed",
+          "options": [
+            "something I built",
+            "a drawing or a story",
+            "facts I learned",
+            "a game skill"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "who",
+          "label": "Who saw it",
+          "options": [
+            "my class",
+            "my family",
+            "a friend",
+            "a group or a club"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "Before",
+          "options": [
+            "nervous",
+            "excited",
+            "calm",
+            "shy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "feeling",
+          "label": "After",
+          "options": [
+            "proud",
+            "happy",
+            "relieved",
+            "tired"
+          ],
+          "rubric": 1
+        }
+      ],
+      "evidence": [
+        3,
+        9,
+        12,
+        14
+      ],
+      "hint": "Find how Priya felt at the start and at the end. Then think of a time you showed people something.",
+      "explain": "One good answer is: I showed something I built to my family. Before I started, I felt excited. After, I felt proud. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "pride",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p5-i43",
+      "skill": "P5",
+      "passage": "p5-p16",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Priya talked about her rover for twenty minutes. What could you talk about for twenty minutes? Build your answer.",
+      "frame": "I could talk for twenty minutes about {0}. The first thing I would tell people is {1}. {2}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "My topic",
+          "options": [
+            "trains, buses or maps",
+            "space or weather",
+            "a game I know well",
+            "animals, robots or something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "why",
+          "label": "First thing",
+          "options": [
+            "how it works",
+            "a surprising fact",
+            "why I like it",
+            "how to get started"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Priya (you can skip this)",
+          "options": [
+            "Like Priya, I would feel better once I started.",
+            "Like Priya, I could answer questions about it.",
+            "Like Priya, I could bring something to show."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        10,
+        12
+      ],
+      "hint": "Find what happened when a boy asked Priya a question. Then think of a topic you know a lot about.",
+      "explain": "One good answer is: I could talk for twenty minutes about trains, buses or maps. The first thing I would tell people is how it works. Like Priya, I could answer questions about it. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "interests",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i44",
+      "skill": "P5",
+      "passage": "p5-p17",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why did Sam make a rule card before Leo came?",
+      "options": [
+        "He wanted Leo to ask before touching the trains.",
+        "He wanted Leo to help clean his room.",
+        "He wanted Leo to bring popcorn.",
+        "He wanted Leo to keep Pixel outside."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the rule card. Read what it said, and think about what it was for.",
+      "explain": "He wanted Leo to ask before touching the trains. The card was for his train layout, and it said, \"Look first. Ask before you touch.\"",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "planning"
+      ]
+    },
+    {
+      "id": "p5-i45",
+      "skill": "P5",
+      "passage": "p5-p17",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam got ready for Leo's visit. When a friend comes to your home, what do you do? Build your answer.",
+      "frame": "When a friend comes over, I like to {0} first. We could {1}. One rule at my home is: {2}.",
+      "slots": [
+        {
+          "kind": "plan",
+          "label": "Getting ready",
+          "options": [
+            "clean my room",
+            "plan what we will do",
+            "put away things I do not want to share",
+            "get a snack ready"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "What we could do",
+          "options": [
+            "play a game",
+            "build something",
+            "watch videos",
+            "go outside"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "other",
+          "label": "A rule",
+          "options": [
+            "Ask before you touch my things",
+            "Take your shoes off at the door",
+            "Be gentle with my pet",
+            "Something else"
+          ],
+          "rubric": 4
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Find two things Sam did before Leo came. Then think about your own home and friends.",
+      "explain": "One good answer is: When a friend comes over, I like to plan what we will do first. We could play a game. One rule at my home is: Ask before you touch my things. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "friend-visit",
+        "planning"
+      ]
+    },
+    {
+      "id": "p5-i46",
+      "skill": "P5",
+      "passage": "p5-p17",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam shared his trains, and Leo shared his skate video. What would you share with a friend? Build your answer.",
+      "frame": "I would share {0} with a friend. I think my friend would feel {1}. {2}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I would share",
+          "options": [
+            "a game I like",
+            "something I built",
+            "a favorite video or song",
+            "facts about my favorite topic"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "My friend's feeling",
+          "options": [
+            "happy",
+            "curious",
+            "excited",
+            "surprised"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the story (you can skip this)",
+          "options": [
+            "Like Sam, I would show them how it works.",
+            "Like Leo, I would show them something I can do.",
+            "Like Sam and Leo, we could take turns."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "Find what Sam showed Leo and what Leo showed Sam. Then think of something you like to show people.",
+      "explain": "One good answer is: I would share a game I like with a friend. I think my friend would feel excited. Like Sam and Leo, we could take turns. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "friendship",
+        "other-view"
+      ]
+    },
+    {
+      "id": "p5-i47",
+      "skill": "P5",
+      "passage": "p5-p18",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "Why rocket launches are sometimes called off, and how people handle the wait.",
+        "How strong winds high above the ground can push a rocket off its path.",
+        "What families bring with them when they watch a rocket launch.",
+        "How long the launch window lasts for different kinds of rockets."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3,
+        4,
+        10,
+        12
+      ],
+      "hint": "Look at what each paragraph is about. Find the choice that covers all three, not just one detail.",
+      "explain": "It is mostly about why launches are sometimes called off, and how people handle the wait. The first paragraph says many launches do not happen on the first day, the second gives the reasons, and the third is about waiting. The other choices are single details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea"
+      ]
+    },
+    {
+      "id": "p5-i48",
+      "skill": "P5",
+      "passage": "p5-p18",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Launch watchers sometimes wait for days. Tell about something you had to wait for. Build your answer.",
+      "frame": "I had to wait for {0}. While I waited, I {1}. When it finally happened, I felt {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I waited for",
+          "options": [
+            "a trip or a visit",
+            "a new game or a gift",
+            "my turn at something",
+            "something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "plan",
+          "label": "While I waited",
+          "options": [
+            "did something else I like",
+            "counted the days",
+            "read or learned about it",
+            "felt impatient the whole time"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "feeling",
+          "label": "When it happened",
+          "options": [
+            "happy",
+            "relieved",
+            "excited",
+            "calm"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the article (you can skip this)",
+          "options": [
+            "Like the watchers, I felt the wait made it even better.",
+            "Like the launch team, someone chose safe over fast.",
+            "Like some families, I came back another day."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        10,
+        11,
+        13
+      ],
+      "hint": "Find what the watchers do while they wait, and what they say when the rocket finally rises. Then think of a time you waited.",
+      "explain": "One good answer is: I had to wait for a trip or a visit. While I waited, I counted the days. When it finally happened, I felt excited. Like the watchers, I felt the wait made it even better. Any honest answer is fine.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "own-experience",
+        "waiting",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i49",
+      "skill": "P5",
+      "passage": "p5-p18",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Launch teams stop the countdown when something is not safe. How do you feel when a plan stops for a good reason, and what helps? Build your answer.",
+      "frame": "When a plan stops for a safety reason, I feel {0}. It helps me to know {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "disappointed",
+            "frustrated",
+            "okay",
+            "calm"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "What helps",
+          "options": [
+            "the reason",
+            "when we can try again",
+            "what we will do instead",
+            "that safe matters more than fast"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the article (you can skip this)",
+          "options": [
+            "The launch team says a scrub is a good decision.",
+            "Many launches do not happen on the first day.",
+            "Some families come back the next day."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        2,
+        7,
+        12
+      ],
+      "hint": "Find what launch teams say about a scrub. Then think about how you feel when your own plan stops.",
+      "explain": "One good answer is: When a plan stops for a safety reason, I feel disappointed. It helps me to know when we can try again. Some families come back the next day. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "plans-change",
+        "flexibility"
+      ]
+    },
+    {
+      "id": "p5-i50",
+      "skill": "P5",
+      "passage": "p5-p19",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What mistake did Sam make on his map?",
+      "options": [
+        "He drew the bakery on the wrong side of Pine Street.",
+        "He counted the wrong number of steps to the bus stop.",
+        "He forgot to add a key to show what the colors meant.",
+        "He drew the bus stop as a brown square instead of a blue circle."
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        11
+      ],
+      "hint": "Find what Grandma Rose said when she tapped the paper. Then read the sentence that explains the mistake.",
+      "explain": "He drew the bakery on the wrong side of Pine Street. The story says he counted the steps correctly, but he drew the bakery on the wrong side of the street.",
+      "inference": 0,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "p5-i51",
+      "skill": "P5",
+      "passage": "p5-p19",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam made a map of a walk he takes often. What place or route could you map? Build your answer.",
+      "frame": "I could make a map of {0}. On it, I would show {1}. To make it clear, I would use {2}.",
+      "slots": [
+        {
+          "kind": "where",
+          "label": "Place or route",
+          "options": [
+            "my walk or ride to school",
+            "my home or my room",
+            "a park or a trail",
+            "a place in a game"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "me",
+          "label": "What I would show",
+          "options": [
+            "the streets and stops",
+            "my favorite places",
+            "how far each part is",
+            "where things are kept"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "plan",
+          "label": "How I would make it clear",
+          "options": [
+            "a key with colors and shapes",
+            "graph paper and a ruler",
+            "counted steps, like Sam",
+            "labels with names"
+          ],
+          "rubric": 2
+        }
+      ],
+      "evidence": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "hint": "Find the tools and steps Sam used to make his map. Then think of a place you know well.",
+      "explain": "One good answer is: I could make a map of my walk or ride to school. On it, I would show the streets and stops. To make it clear, I would use a key with colors and shapes. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "interests",
+        "project"
+      ]
+    },
+    {
+      "id": "p5-i52",
+      "skill": "P5",
+      "passage": "p5-p19",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Grandma Rose told Sam about his mistake in a gentle way. How do you feel when someone tells you about a mistake, and what helps? Build your answer.",
+      "frame": "When someone tells me I made a mistake, I feel {0}. It helps when they {1}. Then I can {2}. {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "embarrassed",
+            "frustrated",
+            "okay",
+            "thankful"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "What helps",
+          "options": [
+            "say it kindly",
+            "show me where it is",
+            "tell me what I did well first",
+            "give me time to fix it"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "plan",
+          "label": "What I can do",
+          "options": [
+            "fix just that part",
+            "check the rest",
+            "ask a question",
+            "take a short break first"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Sam (you can skip this)",
+          "options": [
+            "Grandma Rose told Sam gently.",
+            "Like Sam, I can fix it without starting over.",
+            "Sam's face felt hot at first, too."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "hint": "Find how Grandma Rose told Sam, how Sam felt and what he did next. Then think about your own mistakes.",
+      "explain": "One good answer is: When someone tells me I made a mistake, I feel embarrassed. It helps when they show me where it is. Then I can fix just that part. Like Sam, I can fix it without starting over. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "feedback",
+        "mistakes"
+      ]
+    },
+    {
+      "id": "p5-i53",
+      "skill": "P5",
+      "passage": "p5-p20",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why did Maya lose everything in her pan on the first try?",
+      "options": [
+        "She shook the pan hard and tipped it too quickly.",
+        "She swirled the pan so slowly that the gold floated away.",
+        "Mr. Varga gave her a pan with no gold in it.",
+        "Her pan was too shallow to hold any water."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        9
+      ],
+      "hint": "Read what Maya did on her first try. Then read Mr. Varga's advice about how to move the pan.",
+      "explain": "She shook the pan hard and tipped it too quickly. Water, sand and pebbles poured over the edge. Mr. Varga said that swirling slowly lets the heavy gold sink to the bottom.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "p5-i54",
+      "skill": "P5",
+      "passage": "p5-p20",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Maya's first try did not work, so she changed how she did it. Tell about a time your first try did not work. Build your answer.",
+      "frame": "The first time I tried {0}, it did not work because {1}. On my next try, I {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I tried",
+          "options": [
+            "a new sport or trick",
+            "a new game",
+            "cooking or baking",
+            "something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "why",
+          "label": "Why it did not work",
+          "options": [
+            "I went too fast",
+            "I did not know the steps",
+            "I was nervous",
+            "it was harder than it looked"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "plan",
+          "label": "Next try",
+          "options": [
+            "slowed down",
+            "asked someone to show me",
+            "watched someone first",
+            "tried a different way"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Maya (you can skip this)",
+          "options": [
+            "Like Maya, I slowed down.",
+            "Like Maya, someone showed me how.",
+            "Like Maya, I tried again right away."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        8,
+        9,
+        10
+      ],
+      "hint": "Find what Maya did on her first try and what she changed. Then think of a time you changed how you did something.",
+      "explain": "One good answer is: The first time I tried cooking or baking, it did not work because I went too fast. On my next try, I slowed down. Like Maya, I slowed down. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "trying-new",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "p5-i55",
+      "skill": "P5",
+      "passage": "p5-p20",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Maya's gold flakes were smaller than grains of rice, but she was proud of them. Tell about a small thing that made you proud. Build your answer.",
+      "frame": "I felt proud of {0}. It might seem small, but it mattered to me because {1}. {2}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What it was",
+          "options": [
+            "a small thing I found",
+            "a small thing I made",
+            "one point or one level",
+            "a small step I took"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "why",
+          "label": "Why it mattered",
+          "options": [
+            "I worked hard for it",
+            "it was my first time",
+            "I did it myself",
+            "I waited a long time for it"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Maya (you can skip this)",
+          "options": [
+            "Maya worked for twenty minutes for three flakes.",
+            "Like Maya, I showed it to other people.",
+            "Like Maya, I kept it to look at later."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        12,
+        13,
+        15,
+        16
+      ],
+      "hint": "Find how long Maya worked and how big the flakes were. Then think of something small that you were proud of.",
+      "explain": "One good answer is: I felt proud of one point or one level. It might seem small, but it mattered to me because I worked hard for it. Maya worked for twenty minutes for three flakes. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "pride",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i56",
+      "skill": "P5",
+      "passage": "p5-p21",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What did Ben notice when he watched Sam play?",
+      "options": [
+        "Sam jumped at the right moment but still fell, so the jump was too long for new players.",
+        "Sam pressed the jump button too late every time.",
+        "Sam was holding the controller upside down.",
+        "Sam did not want to finish the level."
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Find the sentence that starts with \"Then he watched Sam try.\" Read the two sentences after it.",
+      "explain": "Sam jumped at the right moment but still fell into the lava. Ben knew a trick from three weeks of practice that new players did not know, so the jump was too long for them.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "p5-i57",
+      "skill": "P5",
+      "passage": "p5-p21",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Ben's friends tried his level and found it too hard. Tell about a time someone tried something you made. Build your answer.",
+      "frame": "Someone tried {0} that I made. They said {1}. I felt {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I made",
+          "options": [
+            "a game or a level",
+            "some food",
+            "a drawing or a story",
+            "something I built"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "other",
+          "label": "What they said",
+          "options": [
+            "it was great",
+            "it was too hard",
+            "it needed one change",
+            "they had a question"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "proud",
+            "frustrated",
+            "surprised",
+            "curious"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Ben (you can skip this)",
+          "options": [
+            "Ben felt upset at first too.",
+            "Like Ben, I watched them try it.",
+            "Like Ben, I changed it to make it better."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        7,
+        11,
+        12
+      ],
+      "hint": "Find how Ben acted when Leo asked his question, and what Ben did that night. Then think of something you made for others.",
+      "explain": "One good answer is: Someone tried a drawing or a story that I made. They said it needed one change. I felt frustrated. Like Ben, I changed it to make it better. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "feedback",
+        "project"
+      ]
+    },
+    {
+      "id": "p5-i58",
+      "skill": "P5",
+      "passage": "p5-p21",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Ben learned that a level is more enjoyable when other players are able to finish it. What makes a game fun for you? Build your answer.",
+      "frame": "A game is fun for me when {0}. A game is less fun for me when {1}. {2}",
+      "slots": [
+        {
+          "kind": "why",
+          "label": "Fun when",
+          "options": [
+            "it is hard but fair",
+            "I can play with friends",
+            "I can build things",
+            "I can get better with practice"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Less fun when",
+          "options": [
+            "it is too hard to finish",
+            "it is too easy",
+            "it is too loud or too fast",
+            "I have to start over too much"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the story (you can skip this)",
+          "options": [
+            "Ben added a checkpoint so players did not start over.",
+            "Ben made the jump shorter so others could finish.",
+            "Ben's friends cheered when Sam finished."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        11,
+        12,
+        13,
+        15
+      ],
+      "hint": "Find the two changes Ben made and what happened the next Friday. Then think about the games you like best.",
+      "explain": "One good answer is: A game is fun for me when it is hard but fair. A game is less fun for me when I have to start over too much. Ben added a checkpoint so players did not start over. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "interests",
+        "opinion"
+      ]
+    },
+    {
+      "id": "p5-i59",
+      "skill": "P5",
+      "passage": "p5-p22",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What did Sam do when he missed the F chord at the party?",
+      "options": [
+        "He kept going and played the next chord, the way he had practiced.",
+        "He stopped and started the song again from the beginning.",
+        "He asked Grandma Rose to sing that part for him.",
+        "He skipped the second verse and played the last verse instead."
+      ],
+      "answer": 0,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Find the sentence about the second verse. Then read the sentence right after it.",
+      "explain": "He kept going and played the next chord. The story says, \"He did not stop, and he went on to the next chord, the way he had practiced.\"",
+      "inference": 0,
+      "tags": [
+        "key-detail",
+        "mistakes"
+      ]
+    },
+    {
+      "id": "p5-i60",
+      "skill": "P5",
+      "passage": "p5-p22",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam learned a song as a gift for Grandma Rose. Tell about something you made or did for someone you care about. Build your answer.",
+      "frame": "I {0} for {1}. When they saw it, they {2}. I felt {3}.",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I did",
+          "options": [
+            "made a card or a drawing",
+            "learned or practiced something",
+            "cooked or baked something",
+            "helped with a job"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "who",
+          "label": "Who it was for",
+          "options": [
+            "someone in my family",
+            "a friend",
+            "a teacher",
+            "a neighbor"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "other",
+          "label": "What they did",
+          "options": [
+            "smiled",
+            "said thank you",
+            "gave me a hug",
+            "were surprised"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "My feeling",
+          "options": [
+            "proud",
+            "happy",
+            "shy",
+            "glad"
+          ],
+          "rubric": 1
+        }
+      ],
+      "evidence": [
+        1,
+        14,
+        15
+      ],
+      "hint": "Find why Sam learned the song and what Grandma Rose did when she heard it. Then think of a gift or a kind thing you did.",
+      "explain": "One good answer is: I made a card or a drawing for someone in my family. When they saw it, they smiled. I felt proud. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "kindness",
+        "pride"
+      ]
+    },
+    {
+      "id": "p5-i61",
+      "skill": "P5",
+      "passage": "p5-p22",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Grandma Rose hums the same song every morning. Is there a song or a sound that is part of your day? Build your answer.",
+      "frame": "A song or sound that is part of my day is {0}. I hear it {1}. It makes me feel {2}.",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "Song or sound",
+          "options": [
+            "a song I like",
+            "a sound at home",
+            "music on the way to school",
+            "a sound from a pet or from outside"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "when",
+          "label": "When I hear it",
+          "options": [
+            "in the morning",
+            "after school",
+            "at night",
+            "on weekends"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "calm",
+            "happy",
+            "awake",
+            "ready for the day"
+          ],
+          "rubric": 1
+        }
+      ],
+      "evidence": [
+        0
+      ],
+      "hint": "Read the first sentence about Grandma Rose's mornings. Then think about the sounds in your own day.",
+      "explain": "One good answer is: A song or sound that is part of my day is music on the way to school. I hear it in the morning. It makes me feel ready for the day. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "own-day",
+        "music"
+      ]
+    },
+    {
+      "id": "p5-i62",
+      "skill": "P5",
+      "passage": "p5-p23",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why do puppy raisers take the puppy almost everywhere they go?",
+      "options": [
+        "So the puppy can get used to new places, sounds and smells.",
+        "So the puppy can learn to stop at the edge of every curb and stair.",
+        "So the puppy can meet the person it will guide one day.",
+        "So the puppy can pick the job that suits it best."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "hint": "Find the sentence about taking the puppy almost everywhere. Read the end of that sentence and the sentences after it.",
+      "explain": "So the puppy can get used to new places. The article says the raisers take it almost everywhere \"so it can get used to new places.\" Learning to stop at curbs comes later, at the guide dog school.",
+      "inference": 0,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "p5-i63",
+      "skill": "P5",
+      "passage": "p5-p23",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "The puppies get used to new places little by little. What place felt new or strange to you at first? Build your answer.",
+      "frame": "A place that felt strange to me at first was {0}. The hardest part was {1}. Now it feels {2}. {3}",
+      "slots": [
+        {
+          "kind": "where",
+          "label": "The place",
+          "options": [
+            "a new school or classroom",
+            "a store or a mall",
+            "a bus, a train or a plane",
+            "a doctor's or dentist's office"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "problem",
+          "label": "Hardest part",
+          "options": [
+            "the noise",
+            "the smells",
+            "the crowds",
+            "not knowing what would happen"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "feeling",
+          "label": "Now",
+          "options": [
+            "normal",
+            "okay",
+            "a little easier",
+            "still strange"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the article (you can skip this)",
+          "options": [
+            "Like the puppies, I got used to it little by little.",
+            "Like the puppies, I had someone with me.",
+            "The puppies also seem unsure at first."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        8,
+        9
+      ],
+      "hint": "Find how the puppies feel in new places at first, and what happens little by little. Then think of a place that was new to you.",
+      "explain": "One good answer is: A place that felt strange to me at first was a new school or classroom. The hardest part was the noise. Now it feels okay. Like the puppies, I got used to it little by little. Any honest answer is fine.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "own-experience",
+        "new-places",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i64",
+      "skill": "P5",
+      "passage": "p5-p23",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Puppy raisers keep a puppy for about a year and teach it many things. Would you like to raise a guide dog puppy? Build your answer.",
+      "frame": "I {0} like to raise a guide dog puppy because {1}. The hardest part for me would be {2}.",
+      "slots": [
+        {
+          "kind": "other",
+          "label": "Would I",
+          "options": [
+            "would",
+            "would not",
+            "might"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Why",
+          "options": [
+            "I like dogs",
+            "it helps someone",
+            "it is a lot of work",
+            "it would be fun to teach"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "problem",
+          "label": "Hardest part",
+          "options": [
+            "giving the dog back after a year",
+            "taking it everywhere",
+            "teaching it to stay off the furniture",
+            "keeping it calm in loud places"
+          ],
+          "rubric": 3
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hint": "Reread the second paragraph about puppy raisers. Picture yourself doing each job.",
+      "explain": "One good answer is: I might like to raise a guide dog puppy because it helps someone. The hardest part for me would be taking it everywhere. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "opinion",
+        "animals"
+      ]
+    },
+    {
+      "id": "p5-i65",
+      "skill": "P5",
+      "passage": "p5-p24",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sort each card. Was it Ana's plan before the game, or what really happened in the game?",
+      "bins": [
+        "Ana's plan before the game",
+        "What really happened"
+      ],
+      "cards": [
+        {
+          "text": "Play forward",
+          "bin": 0,
+          "emoji": "🏃"
+        },
+        {
+          "text": "Score goals for her team",
+          "bin": 0,
+          "emoji": "🥅"
+        },
+        {
+          "text": "Play in goal with big gloves",
+          "bin": 1,
+          "emoji": "🧤"
+        },
+        {
+          "text": "Stop four shots",
+          "bin": 1,
+          "emoji": "✋"
+        },
+        {
+          "text": "Push a hard shot around the post",
+          "bin": 1,
+          "emoji": "⚽"
+        }
+      ],
+      "evidence": [
+        0,
+        4,
+        6,
+        10,
+        13
+      ],
+      "hint": "Find what Ana usually did and what she had been planning all week. Then find what she did in each half of the game.",
+      "explain": "Ana usually played forward, and she had planned to score goals. What really happened was that she played in goal, pushed a hard shot around the post and stopped four shots.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "plans-change",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "p5-i66",
+      "skill": "P5",
+      "passage": "p5-p24",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Coach Novak asked Ana to play a new position just before the game. Tell about a time you were asked to do something different from your plan. Build your answer.",
+      "frame": "Once, I was asked to {0} instead of what I planned. I felt {1}. I {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What changed",
+          "options": [
+            "play a different position or role",
+            "go to a different place",
+            "do a different job",
+            "work with a different partner"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "nervous",
+            "surprised",
+            "annoyed",
+            "okay"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "plan",
+          "label": "What I did",
+          "options": [
+            "said yes and tried it",
+            "asked a question first",
+            "took a breath and then tried",
+            "said I needed a minute"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Ana (you can skip this)",
+          "options": [
+            "Like Ana, I said yes even though it was new.",
+            "Like Ana, I got some tips first.",
+            "Like Ana, I found something I liked about it."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "hint": "Find what Ana did before she nodded, and what Coach Novak gave her. Then think of a time your plan changed just before something started.",
+      "explain": "One good answer is: Once, I was asked to do a different job instead of what I planned. I felt surprised. I asked a question first. Like Ana, I found something I liked about it. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "plans-change",
+        "flexibility",
+        "courage"
+      ]
+    },
+    {
+      "id": "p5-i67",
+      "skill": "P5",
+      "passage": "p5-p24",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Ana said she liked seeing the whole field, and she might try goal again. What is something new you tried that you might try again? Build your answer.",
+      "frame": "Something new I tried was {0}. One part I liked was that {1}. I {2} try it again.",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I tried",
+          "options": [
+            "a new sport or position",
+            "a new food",
+            "a new game",
+            "a new place"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "why",
+          "label": "Part I liked",
+          "options": [
+            "it was different",
+            "I learned something",
+            "I was good at it",
+            "my friends were there"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Again?",
+          "options": [
+            "will",
+            "might",
+            "will not"
+          ],
+          "rubric": 1
+        }
+      ],
+      "evidence": [
+        13,
+        15
+      ],
+      "hint": "Read what Ana tells Ben at the end. Then think of a new thing you tried.",
+      "explain": "One good answer is: Something new I tried was a new food. One part I liked was that it was different. I might try it again. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "trying-new",
+        "courage"
+      ]
+    },
+    {
+      "id": "p5-i68",
+      "skill": "P5",
+      "passage": "p5-p25",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why did the miller and his son keep changing the way they traveled?",
+      "options": [
+        "Each time they met someone, that person said they were doing it the wrong way.",
+        "The donkey grew tired and needed a rest after each part of the road.",
+        "The miller and his son took turns because the road was long and dusty.",
+        "They wanted the people on the bridge to laugh at them."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14
+      ],
+      "hint": "Look at what happens just before each change. Who speaks, and what do they say?",
+      "explain": "Each time they met someone, that person said they were doing it the wrong way. The travelers, the older men, the women and the shopkeeper each gave a complaint, and each time the miller changed the plan.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "p5-i69",
+      "skill": "P5",
+      "passage": "p5-p25",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Everyone on the road gave the miller different advice. Tell about a time people told you different things. Build your answer.",
+      "frame": "Once, people told me different things about {0}. One person said {1}, but someone else said the opposite. In the end, I {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What it was about",
+          "options": [
+            "how to play a game",
+            "what to bring or wear",
+            "how to do my work",
+            "something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "other",
+          "label": "What one person said",
+          "options": [
+            "to do it fast",
+            "to do it one certain way",
+            "to wait",
+            "to try something new"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "plan",
+          "label": "What I did",
+          "options": [
+            "chose what made sense to me",
+            "asked a grown-up I trust",
+            "tried both ways",
+            "kept my first plan"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the fable (you can skip this)",
+          "options": [
+            "Unlike the miller, I made my own choice.",
+            "Like the miller, I tried to please everyone at first.",
+            "The miller learned that you cannot please everyone."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        4,
+        7,
+        10,
+        13,
+        19
+      ],
+      "hint": "Count how many people gave the miller advice. Then think of a time two people told you different things.",
+      "explain": "One good answer is: Once, people told me different things about how to play a game. One person said to do it fast, but someone else said the opposite. In the end, I tried both ways. Unlike the miller, I made my own choice. Any honest answer is fine.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "own-experience",
+        "advice",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i70",
+      "skill": "P5",
+      "passage": "p5-p25",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "The miller said that they did not even please themselves. When is it important to you to make your own choice? Build your answer.",
+      "frame": "It is important to me to choose for myself when {0}. I like to decide by {1}. {2}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "When",
+          "options": [
+            "I pick a game or a hobby",
+            "I plan my free time",
+            "I make something",
+            "I choose what to wear or eat"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "plan",
+          "label": "How I decide",
+          "options": [
+            "thinking about what I like",
+            "making a list",
+            "asking one person I trust",
+            "trying it out first"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the fable (you can skip this)",
+          "options": [
+            "The miller listened to everyone except himself.",
+            "The miller changed his plan four times.",
+            "The miller said they did not please themselves."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        8,
+        11,
+        14,
+        19
+      ],
+      "hint": "Read what the miller says in the last sentence. Then think about choices that matter to you.",
+      "explain": "One good answer is: It is important to me to choose for myself when I plan my free time. I like to decide by thinking about what I like. The miller listened to everyone except himself. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "choices",
+        "opinion"
+      ]
+    },
+    {
+      "id": "p5-i71",
+      "skill": "P5",
+      "passage": "p5-p26",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why do the volunteers move slowly along the tape?",
+      "options": [
+        "Many fish hide when a swimmer rushes past, so moving slowly helps them count.",
+        "Their pencils can only write underwater when they move slowly.",
+        "The tape is so long that they would get tired if they swam fast.",
+        "Every survey has to take exactly the same amount of time."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the sentence that says moving slowly matters. Read the reason in the same sentence.",
+      "explain": "Many fish hide when a swimmer rushes past. The article says, \"Moving slowly matters, because many fish hide when a swimmer rushes past.\" The pencil works underwater at any speed.",
+      "inference": 0,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "p5-i72",
+      "skill": "P5",
+      "passage": "p5-p26",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "The volunteers studied the fish for weeks before they ever got wet. Tell about something you learned about before you tried it. Build your answer.",
+      "frame": "Before I tried {0}, I learned about it by {1}. When I finally tried it, {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I tried",
+          "options": [
+            "a new game",
+            "a new place",
+            "a sport or a skill",
+            "something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "plan",
+          "label": "How I learned",
+          "options": [
+            "reading books or websites",
+            "watching videos",
+            "asking someone who knew",
+            "looking at maps or pictures"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "ending",
+          "label": "What happened",
+          "options": [
+            "it was easier than I thought",
+            "it was different from what I learned",
+            "I felt ready",
+            "I still had a lot to learn"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the article (you can skip this)",
+          "options": [
+            "Like the volunteers, I studied first.",
+            "Like the volunteers, it looked different in real life.",
+            "Like the volunteers, I got better with practice."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        12,
+        14
+      ],
+      "hint": "Find what the volunteers did before their first survey, and how the first survey went. Then think of something you studied before you tried it.",
+      "explain": "One good answer is: Before I tried a new place, I learned about it by looking at maps or pictures. When I finally tried it, it was different from what I learned. Like the volunteers, it looked different in real life. Any honest answer is fine.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "own-experience",
+        "trying-new",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i73",
+      "skill": "P5",
+      "passage": "p5-p26",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Learning the fish names helped the volunteers notice more. What do you notice that other people might not, because you know a lot about it? Build your answer.",
+      "frame": "Because I know a lot about {0}, I notice {1}. Other people might not notice it, but {2}.",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "My topic",
+          "options": [
+            "trains, buses or maps",
+            "animals or nature",
+            "games or computers",
+            "weather, space or something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "other",
+          "label": "What I notice",
+          "options": [
+            "small details",
+            "the names of different kinds",
+            "when something changes",
+            "how things work"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "why",
+          "label": "Why it matters to me",
+          "options": [
+            "I like to share what I see",
+            "it makes the world more interesting",
+            "it helps me feel calm",
+            "it helps me learn more"
+          ],
+          "rubric": 2
+        }
+      ],
+      "evidence": [
+        15
+      ],
+      "hint": "Read the last sentence of the article. Then think about a topic you know well.",
+      "explain": "One good answer is: Because I know a lot about trains, buses or maps, I notice small details. Other people might not notice it, but it makes the world more interesting. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "interests",
+        "strengths"
+      ]
+    },
+    {
+      "id": "p5-i74",
+      "skill": "P5",
+      "passage": "p5-p27",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What new evidence helped many scientists change their minds?",
+      "options": [
+        "Dinosaur fossils with clear marks of feathers, found in China starting in the 1990s.",
+        "A fossil from the 1860s with feathers, teeth and a long, bony tail.",
+        "Gulls with scaly feet that land on the harbor railing.",
+        "Small, meat-eating dinosaurs that had teeth on their wings."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9,
+        11
+      ],
+      "hint": "Find the paragraph that starts with \"Not everyone agreed at first.\" What was found after that?",
+      "explain": "Dinosaur fossils with marks of feathers, found in China starting in the 1990s. The third paragraph says some scientists did not agree until these fossils were found, and then many changed their minds. The fossil from the 1860s was only the first clue.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "p5-i75",
+      "skill": "P5",
+      "passage": "p5-p27",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Many scientists changed their minds when they saw new evidence. Tell about a time you changed your mind about something. Build your answer.",
+      "frame": "I used to think {0}. I changed my mind when {1}. Changing my mind felt {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I thought",
+          "options": [
+            "a food tasted bad",
+            "a game or a book was boring",
+            "something would be too hard",
+            "something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "why",
+          "label": "What changed my mind",
+          "options": [
+            "I tried it myself",
+            "I learned new facts",
+            "someone showed me",
+            "I saw it with my own eyes"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "strange",
+            "okay",
+            "good",
+            "uncomfortable at first"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the article (you can skip this)",
+          "options": [
+            "Like the scientists, I changed my mind because of new evidence.",
+            "The article says changing your mind can feel uncomfortable.",
+            "Like good scientists, I can explain what made me change."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        11,
+        12,
+        13
+      ],
+      "hint": "Find what the article says about changing your mind. Then think of something you used to believe.",
+      "explain": "One good answer is: I used to think something would be too hard. I changed my mind when I tried it myself. Changing my mind felt good. Like the scientists, I changed my mind because of new evidence. Any honest answer is fine.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "own-experience",
+        "flexibility",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i76",
+      "skill": "P5",
+      "passage": "p5-p27",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "After reading this, you might look at a gull in a new way. What fact made you look at something in a new way? Build your answer.",
+      "frame": "A fact that surprised me was about {0}. Now when I see {1}, I think about it. It makes me feel {2}.",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "Topic",
+          "options": [
+            "animals",
+            "space",
+            "weather",
+            "machines or something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "me",
+          "label": "What I see",
+          "options": [
+            "a bird or a pet",
+            "the sky or the moon",
+            "rain, snow or wind",
+            "a train, a car or a robot"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "amazed",
+            "curious",
+            "excited",
+            "calm"
+          ],
+          "rubric": 1
+        }
+      ],
+      "evidence": [
+        2,
+        15,
+        16
+      ],
+      "hint": "Read the last paragraph about the gull. Then think of a fact that changed how you see something.",
+      "explain": "One good answer is: A fact that surprised me was about space. Now when I see the sky or the moon, I think about it. It makes me feel amazed. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "wonder",
+        "curiosity"
+      ]
+    },
+    {
+      "id": "p5-i77",
+      "skill": "P5",
+      "passage": "p5-p28",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort each card. Is it a way drivers learn a route, or something drivers must know about a route?",
+      "bins": [
+        "A way drivers learn a route",
+        "Something drivers must know"
+      ],
+      "cards": [
+        {
+          "text": "Ride in the cab beside an experienced driver",
+          "bin": 0,
+          "emoji": "🚆"
+        },
+        {
+          "text": "Study track maps and write notes",
+          "bin": 0,
+          "emoji": "📝"
+        },
+        {
+          "text": "Watch videos filmed from the front of a train",
+          "bin": 0,
+          "emoji": "🎥"
+        },
+        {
+          "text": "Every signal and every station",
+          "bin": 1,
+          "emoji": "🚦"
+        },
+        {
+          "text": "Where the track goes up or down",
+          "bin": 1,
+          "emoji": "⛰️"
+        },
+        {
+          "text": "Every curve along the line",
+          "bin": 1,
+          "emoji": "↪️"
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        5,
+        6,
+        8
+      ],
+      "hint": "The first paragraph tells what drivers must know. The second paragraph tells how they learn it.",
+      "explain": "Riding in the cab, studying maps and watching videos are ways drivers learn, from the second paragraph. Signals, stations, curves and hills are things drivers must know, from the first paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "key-detail"
+      ]
+    },
+    {
+      "id": "p5-i78",
+      "skill": "P5",
+      "passage": "p5-p28",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Train drivers learn a route until they know every part of it. What route do you know very well? Build your answer.",
+      "frame": "A route I know very well is {0}. One thing I notice along the way is {1}. I learned it by {2}. {3}",
+      "slots": [
+        {
+          "kind": "where",
+          "label": "The route",
+          "options": [
+            "the way to school",
+            "the way to a friend's or a relative's home",
+            "a bus or train route",
+            "a path in a game"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "me",
+          "label": "What I notice",
+          "options": [
+            "a certain sign or building",
+            "a bridge or a hill",
+            "the turns and stops",
+            "a place with animals or trees"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "plan",
+          "label": "How I learned it",
+          "options": [
+            "going many times",
+            "looking at a map",
+            "watching from the window",
+            "someone showing me"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to the article (you can skip this)",
+          "options": [
+            "Like the drivers, I learned it little by little.",
+            "Like the drivers, I notice when something is different.",
+            "Like the drivers, a certain place tells me what comes next."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        10,
+        11,
+        13
+      ],
+      "hint": "Find how a route becomes familiar to drivers. Then think of a trip you take often.",
+      "explain": "One good answer is: A route I know very well is the way to school. One thing I notice along the way is a bridge or a hill. I learned it by going many times. Like the drivers, a certain place tells me what comes next. Any honest answer is fine.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "own-experience",
+        "interests",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i79",
+      "skill": "P5",
+      "passage": "p5-p28",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Drivers notice right away when something on their route is different. How do you feel when something on your usual route is different? Build your answer.",
+      "frame": "When something on my usual route is different, I notice it {0}. I feel {1}. It helps me to {2}.",
+      "slots": [
+        {
+          "kind": "when",
+          "label": "When I notice",
+          "options": [
+            "right away",
+            "after a while",
+            "only if it is big"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "curious",
+            "surprised",
+            "worried",
+            "okay"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "plan",
+          "label": "What helps",
+          "options": [
+            "say what I see",
+            "ask someone about it",
+            "look at it closely",
+            "keep going and check later"
+          ],
+          "rubric": 2
+        }
+      ],
+      "evidence": [
+        14
+      ],
+      "hint": "Read the last sentence of the article. Then think about a day when something on your way looked different.",
+      "explain": "One good answer is: When something on my usual route is different, I notice it right away. I feel curious. It helps me to ask someone about it. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "flexibility",
+        "change"
+      ]
+    },
+    {
+      "id": "p5-i80",
+      "skill": "P5",
+      "passage": "p5-p29",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What helped Sam notice the birds at the first stop?",
+      "options": [
+        "He closed his eyes and listened, the way Maya suggested.",
+        "He looked more closely at the bare branches and the gray sky.",
+        "He checked the guide's watch to know when to look up.",
+        "The guide pointed to each bird and said its name."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Find what Maya whispered to Sam. Then read what happened after he did it.",
+      "explain": "He closed his eyes and listened, the way Maya suggested. After that, he began to hear a whistle, a knocking and a chickadee's call. When he only looked, he could see nothing but branches and sky.",
+      "inference": 0,
+      "tags": [
+        "key-detail",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "p5-i81",
+      "skill": "P5",
+      "passage": "p5-p29",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "At first, standing still for ten minutes was hard for Sam. What helps you when you have to wait quietly? Build your answer.",
+      "frame": "Waiting quietly is {0} for me. When I have to wait, it helps to {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "How it feels",
+          "options": [
+            "easy",
+            "hard",
+            "okay",
+            "hard at first, then easier"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "plan",
+          "label": "What helps",
+          "options": [
+            "listen to the sounds around me",
+            "count things or look for patterns",
+            "think about something I like",
+            "know how long the wait will be"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Sam (you can skip this)",
+          "options": [
+            "Like Sam, listening helped me.",
+            "Sam stopped checking the watch once he was busy listening.",
+            "The guide told everyone how long each stop would be."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        7,
+        12
+      ],
+      "hint": "Find what made the wait hard for Sam and what changed. Then think about a time you had to wait without talking.",
+      "explain": "One good answer is: Waiting quietly is hard at first, then easier for me. When I have to wait, it helps to know how long the wait will be. The guide told everyone how long each stop would be. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "waiting",
+        "coping"
+      ]
+    },
+    {
+      "id": "p5-i82",
+      "skill": "P5",
+      "passage": "p5-p29",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam found out that the winter woods are full of sounds. Tell about a time you noticed something you had never noticed before. Build your answer.",
+      "frame": "Once, I noticed {0} at {1}. I had not noticed it before because {2}. It made me feel {3}.",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I noticed",
+          "options": [
+            "a sound",
+            "an animal",
+            "a pattern or a shape",
+            "something in the sky"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "where",
+          "label": "Where",
+          "options": [
+            "home",
+            "school",
+            "a park or the woods",
+            "the beach or the harbor"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "why",
+          "label": "Why I missed it before",
+          "options": [
+            "I was not looking",
+            "I was moving too fast",
+            "nobody had shown me",
+            "it was very small"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "amazed",
+            "curious",
+            "happy",
+            "calm"
+          ],
+          "rubric": 1
+        }
+      ],
+      "evidence": [
+        8,
+        18
+      ],
+      "hint": "Read what Sam tells Maya at the end. Then think of a time you saw or heard something new in a place you knew.",
+      "explain": "One good answer is: Once, I noticed an animal at a park or the woods. I had not noticed it before because I was moving too fast. It made me feel amazed. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "wonder",
+        "nature"
+      ]
+    },
+    {
+      "id": "p5-i83",
+      "skill": "P5",
+      "passage": "p5-p30",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sam lost the rematch. How could he tell that he had still improved?",
+      "options": [
+        "He won six points with his own shots instead of two points from Ben's mistakes.",
+        "He won the rematch by eleven points to six.",
+        "Ben told him that he was now the better player.",
+        "He hit the ball fifty times in a row during the rematch."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4,
+        12,
+        13,
+        14
+      ],
+      "hint": "Compare the first game with the rematch. Look at how many points Sam won, and how he won them.",
+      "explain": "He won six points with his own shots. In the first game, his two points came from Ben's mistakes. He wrote both scores, 2 and 6, on a sticky note. The fifty in a row happened in practice, not in the rematch.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "progress"
+      ]
+    },
+    {
+      "id": "p5-i84",
+      "skill": "P5",
+      "passage": "p5-p30",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam measured his progress with his points, not with winning. How do you know when you are getting better at something? Build your answer.",
+      "frame": "I know I am getting better at {0} when {1}. One number I could keep track of is {2}. {3}",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I am learning",
+          "options": [
+            "a sport",
+            "a game",
+            "music or art",
+            "school work"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "why",
+          "label": "How I know",
+          "options": [
+            "it feels easier",
+            "I make fewer mistakes",
+            "I can do it for longer",
+            "someone tells me"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "A number to track",
+          "options": [
+            "how many in a row",
+            "my score",
+            "how long it takes",
+            "how many days I practiced"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Link to Sam (you can skip this)",
+          "options": [
+            "Sam wrote his scores on a sticky note.",
+            "Like Sam, I can get better even when I do not win.",
+            "Like Sam, I can set a goal for next time."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        10,
+        14,
+        15
+      ],
+      "hint": "Find the numbers Sam paid attention to. Then think of something you are learning and how you could measure it.",
+      "explain": "One good answer is: I know I am getting better at a game when I make fewer mistakes. One number I could keep track of is my score. Like Sam, I can get better even when I do not win. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "progress",
+        "practice",
+        "text-to-self"
+      ]
+    },
+    {
+      "id": "p5-i85",
+      "skill": "P5",
+      "passage": "p5-p30",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "personal": true,
+      "prompt": "Sam tried table tennis because he liked the sound of the ball. What new sport or activity would you like to try? Build your answer.",
+      "frame": "I would like to try {0}. It interests me because {1}. To get started, I would {2}.",
+      "slots": [
+        {
+          "kind": "me",
+          "label": "What I would try",
+          "options": [
+            "table tennis or another ball game",
+            "swimming or skating",
+            "climbing or hiking",
+            "something else"
+          ],
+          "rubric": 4
+        },
+        {
+          "kind": "why",
+          "label": "Why",
+          "options": [
+            "of how it looks or sounds",
+            "my friends do it",
+            "it looks fun",
+            "I want a new challenge"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "plan",
+          "label": "How I would start",
+          "options": [
+            "ask a friend to show me",
+            "watch videos first",
+            "join a club or a class",
+            "practice a little each day"
+          ],
+          "rubric": 2
+        }
+      ],
+      "evidence": [
+        2,
+        6,
+        7
+      ],
+      "hint": "Find why Sam agreed to play and how Ben helped him start. Then think of something new you are curious about.",
+      "explain": "One good answer is: I would like to try climbing or hiking. It interests me because I want a new challenge. To get started, I would join a club or a class. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "own-experience",
+        "trying-new",
+        "curiosity"
       ]
     }
   ],

@@ -64,14 +64,14 @@
       "kind": "story",
       "picture": "🤖🏫",
       "sentences": [
-        "On Tuesday after school, Priya went to robotics club.",
+        "On Wednesday after school, Priya went to robotics club.",
         "The club meets in Ms. Ortiz's science room at Harbor Middle School.",
         "Priya was building a small rover with six wheels.",
         "Today she wanted to test it on the floor.",
         "She pressed the green button on the remote.",
         "The rover rolled across the room and stopped by the door.",
         "Ms. Ortiz clapped, and Priya grinned.",
-        "At five o'clock, Priya put the rover in her backpack and went home."
+        "At 4:45 PM, Priya put the rover in her backpack and went home."
       ],
       "topics": ["robots", "school"],
       "level": 2,
@@ -283,7 +283,7 @@
         "Ms. Ortiz's class had a science test on Monday.",
         "The next morning, the whole class rode a bus to the far side of Lantern Peaks.",
         "The bus stopped beside a gray stone building with a tall wooden tower.",
-        "A sign over the door said OLD COPPER MINE MUSEUM.",
+        "A sign over the door said RIDGEWAY MINE MUSEUM.",
         "A guide named Mr. Varga gave each student a hard hat with a lamp on the front.",
         "Long ago, miners dug tunnels deep under this hill to find copper.",
         "Copper is a metal that is used to make electric wires.",
@@ -347,10 +347,10 @@
       "picture": "🥁🎺🎶",
       "sentences": [
         "On Wednesday afternoon, the music room at Harbor Middle School was full of noise.",
-        "Twenty students were tuning their instruments at the same time, and every one of them sounded a little different.",
+        "Twenty students in the Grade 7 band were tuning their instruments at the same time, and every one of them sounded a little different.",
         "Their teacher, a tall woman with a silver trumpet, tapped her music stand until the room went quiet.",
-        "Her name was Ms. Gray, and she had led the school band for ten years.",
-        "She reminded the students that their first concert would begin at seven o'clock the next evening, in the school gym.",
+        "Her name was Ms. Gray, and she had taught music at Harbor Middle School for ten years.",
+        "She reminded the students that their first concert of the year, with the Grade 6 band, would begin at seven o'clock the next evening, in the school gym.",
         "By seven o'clock the next evening, every folding chair in the gym was full.",
         "The band's drummer sat at the back, behind three drums and a shiny cymbal.",
         "It was Leo Park, and he had never played in front of a crowd before.",
@@ -467,17 +467,17 @@
       "picture": "⚽🏆⛴️",
       "sentences": [
         "Ana and Ben had waited all spring for the final of the island soccer league.",
-        "Their team, the Harbor Town Herons, would play the Gull Island Gulls on the last Sunday in May.",
+        "Their team, the Harbor Hawks, would play the Gull Island Gulls on the last Sunday in May.",
         "The final would be played on the Gulls' home field, so the whole team had to cross the bay by ferry.",
-        "The ferry left Harbor Town at eight o'clock in the morning and reached Gull Island one hour later.",
+        "The ferry left Harbor Town at nine o'clock in the morning and reached Gull Island 40 minutes later.",
         "The field was a short walk from the dock, on a flat, grassy hill above the beach, where a crowd of families was already gathering.",
         "The referee, a man in a black shirt with a whistle around his neck, was already checking the nets.",
         "When he turned around, the twins saw that he was Mr. Okafor from the bike shop.",
         "He explained that he had been a soccer referee for twenty years, since long before he opened his shop.",
-        "The game began one hour after the ferry arrived.",
+        "The game began one hour and twenty minutes after the ferry arrived.",
         "Both teams defended carefully, and neither team scored during the first half.",
         "Early in the second half, Ana passed the ball across the field, and Ben kicked it into the corner of the net.",
-        "That single goal was enough, and the Herons won the championship by one goal to nothing.",
+        "That single goal was enough, and the Hawks won the championship by one goal to nothing.",
         "On the ferry home that afternoon, the players shared orange slices and took turns holding the small silver cup.",
         "Mr. Okafor sat at the back of the ferry and read a book, because he lives in Harbor Town too."
       ],
@@ -493,6 +493,1363 @@
       "socialLoad": 0,
       "credit": {
         "title": "The Final on Gull Island",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p19",
+      "title": "A Snowman by the Slide",
+      "kind": "story",
+      "picture": "❄️⛄",
+      "sentences": [
+        "On Tuesday morning, deep snow covered Harbor Town.",
+        "There was no school that day.",
+        "Ana and Ben hurried to the park.",
+        "They made a big snowman by the slide.",
+        "Ben gave it a red hat.",
+        "Ana gave it two sticks for arms.",
+        "At noon, they walked home for hot tomato soup."
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Snowman by the Slide",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p20",
+      "title": "Maya Plays Her Flute",
+      "kind": "story",
+      "picture": "🎶",
+      "sentences": [
+        "After dinner on Wednesday, Maya went to her room.",
+        "She took her flute out of its case.",
+        "She played a slow song.",
+        "Then she played a fast song.",
+        "Her mom clapped from the kitchen.",
+        "Maya smiled and played the fast song again.",
+        "At eight o'clock, she put the flute away."
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Maya Plays Her Flute",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p21",
+      "title": "The Coast Train",
+      "kind": "story",
+      "picture": "🚆🐚",
+      "sentences": [
+        "On Sunday morning, Sam and his dad walked to the train station in Harbor Town.",
+        "They got on the coast train at nine o'clock.",
+        "Sam sat by the window with his map on his lap.",
+        "The train ran beside the sea for a long time.",
+        "Sam saw fishing boats, black rocks and a tall lighthouse.",
+        "He marked each station on his map with a pencil.",
+        "At ten o'clock, the train stopped at Shell Beach.",
+        "Sam and his dad got off and walked on the sand.",
+        "They found three shells and a piece of green sea glass.",
+        "After lunch, they rode the train back home."
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Coast Train",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p22",
+      "title": "Ducks at the Creek",
+      "kind": "story",
+      "picture": "🦆✏️",
+      "sentences": [
+        "On Saturday afternoon, Maya walked to the creek in Story Woods.",
+        "She brought her sketchbook and two pencils.",
+        "A mother duck was swimming near the bank.",
+        "Six brown ducklings swam in a line behind her.",
+        "Maya sat on a big flat rock and drew them.",
+        "Then a man with a gray dog came down the trail.",
+        "The ducks swam under some low branches.",
+        "Maya waited quietly until they came back out.",
+        "At four o'clock, she walked home and showed the drawing to her dad."
+      ],
+      "topics": [
+        "animals"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ducks at the Creek",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p23",
+      "title": "The Chess Club",
+      "kind": "story",
+      "picture": "♟️📚",
+      "sentences": [
+        "Every Monday after school, the chess club meets at the library.",
+        "This week, Ben and Leo sat at the table by the big window.",
+        "Ben played with the white pieces.",
+        "Leo played with the black pieces.",
+        "The game was slow, and both boys thought hard.",
+        "The librarian, Mrs. Hall, stopped to watch for a few minutes.",
+        "After forty minutes, Leo moved his queen and said, \"Checkmate.\"",
+        "Ben shook his hand.",
+        "Then they set up the board and played again."
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Chess Club",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p24",
+      "title": "Pizza on the Porch",
+      "kind": "story",
+      "picture": "🍕",
+      "sentences": [
+        "On Friday evening, Priya and her dad made pizza in their kitchen.",
+        "Dad rolled out the dough on the counter.",
+        "Priya spread red sauce on top.",
+        "She added cheese, peppers and mushrooms.",
+        "Dad slid the pizza into the hot oven.",
+        "Twenty minutes later, the cheese was brown and bubbling.",
+        "They ate the pizza out on the back porch.",
+        "The air was cool, and the sky was turning pink.",
+        "Priya said it was the best pizza they had ever made."
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Pizza on the Porch",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p25",
+      "title": "Sam's Map Game",
+      "kind": "story",
+      "picture": "🗺️❌",
+      "sentences": [
+        "On Monday after school, Sam drew a map of the playground near his house.",
+        "He drew the slide, the swings and a tall pine tree.",
+        "Then he hid a toy car under the bench by the swings.",
+        "He drew an X on that spot on the map.",
+        "Leo came to the playground at four o'clock.",
+        "Sam gave him the map.",
+        "Leo turned the map around and walked past the slide.",
+        "Five minutes later, Leo found the car.",
+        "\"Now I will make a map for you,\" said Leo."
+      ],
+      "topics": [
+        "maps",
+        "games"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sam's Map Game",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p26",
+      "title": "The Geode",
+      "kind": "story",
+      "picture": "🪨💜",
+      "sentences": [
+        "Mr. Varga opened a big box on the long table.",
+        "Inside were twenty round, gray rocks, each about the size of a tennis ball.",
+        "\"These are geodes,\" he told the rock club.",
+        "\"They look plain on the outside, but many are hollow, with crystals inside.\"",
+        "Maya picked the roughest rock in the box.",
+        "Everyone in the club put on safety glasses.",
+        "Mr. Varga showed Maya how to wrap her geode in a towel and tap it with a small hammer.",
+        "After three taps, the geode cracked into two pieces.",
+        "Inside, hundreds of tiny purple crystals shone in the light.",
+        "Mr. Varga said that the purple crystals were a mineral called amethyst.",
+        "The rock club meets in the back room of the library, and this was its last meeting before winter break.",
+        "At six o'clock, Maya wrapped both halves in paper and carried them home."
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Geode",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p27",
+      "title": "A Whale Past Gull Island",
+      "kind": "story",
+      "picture": "🐋🚤",
+      "sentences": [
+        "The boat left the harbor at one o'clock on Saturday, with forty people on board.",
+        "Sam and Grandma Rose stood at the front rail and held on to their hats.",
+        "A guide in a green jacket spoke into a microphone.",
+        "She asked everyone to watch the water for a puff of mist called a blow.",
+        "A whale breathes out through a hole on top of its head, and the warm, wet air makes a cloud.",
+        "For almost an hour, the sea was empty and gray.",
+        "Then, far out past Gull Island, Sam saw a tall puff of white mist.",
+        "A humpback whale rose up, and its long, dark back slid through the waves.",
+        "Its tail lifted high into the air before it dove down.",
+        "Everyone on the boat cheered.",
+        "When the boat came back to the dock, it was almost four o'clock."
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Whale Past Gull Island",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p28",
+      "title": "The Dinosaur Talk",
+      "kind": "story",
+      "picture": "🦖🪶",
+      "sentences": [
+        "On Tuesday afternoon, the main hall of the library was full of people.",
+        "Forty chairs faced a big screen, and every chair was taken.",
+        "Dr. Bell from the museum had come to give a talk.",
+        "It was about dinosaurs with feathers, and it lasted one hour.",
+        "She held up a copy of a fossil from a small dinosaur.",
+        "The dinosaur was about as big as a turkey.",
+        "The rock around its bones showed the shapes of long feathers on its arms and tail.",
+        "Dr. Bell said that many small, meat-eating dinosaurs had feathers.",
+        "Scientists now think that birds came from dinosaurs like these.",
+        "Leo sat in the second row with Ana and Ben.",
+        "When the talk ended at five o'clock, Ana raised her hand.",
+        "She asked if a chicken is a kind of dinosaur.",
+        "Dr. Bell said that birds, like chickens, are close relatives of those small dinosaurs.",
+        "On the walk home, Ana drew a feathered dinosaur on the back of her program."
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Dinosaur Talk",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p29",
+      "title": "The Skate Contest",
+      "kind": "story",
+      "picture": "🛹🥉",
+      "sentences": [
+        "The skate park in Harbor Town held a contest on a sunny Saturday in July.",
+        "Twelve skaters signed up, and each one had one minute to show their best tricks.",
+        "Leo was the ninth skater on the list.",
+        "While he waited, he sat on the fence beside the big ramp and watched the others.",
+        "Sam and Pixel stood near the gate with a sign that said GO LEO.",
+        "At eleven o'clock, after eight skaters had finished, the judge called Leo's name.",
+        "The judge was a woman in a blue helmet who once skated in big contests.",
+        "Leo rolled down the big ramp, turned around at the top of the other side and rolled back down.",
+        "His last trick was a jump over a low orange cone.",
+        "When the scores were read, Leo was in third place, and he got a small bronze medal.",
+        "After the contest, Leo, Sam and Pixel walked to Rose's Bakery for a snack."
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Skate Contest",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p30",
+      "title": "Ben at the Fair",
+      "kind": "story",
+      "picture": "🎹🎪",
+      "sentences": [
+        "On the second Saturday in August, the Harbor Town Summer Fair filled the school field with tents, games and food stands.",
+        "Near the gate, a small wooden stage stood under a striped roof.",
+        "At three o'clock, Ben carried his keyboard up the steps and plugged it in.",
+        "He had practiced four songs all month.",
+        "Ana sat in the front row with their mom and dad.",
+        "Ben played a fast song first, and some little children danced on the grass.",
+        "Then he played a slow song that he had written himself.",
+        "When he finished, a woman with a fair badge asked him to play one more song.",
+        "She was the person in charge of the whole fair.",
+        "Ben played a song from the twins' favorite video game, and the crowd cheered."
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ben at the Fair",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p31",
+      "title": "Five Leaves for Friday",
+      "kind": "story",
+      "picture": "🍁🍂",
+      "sentences": [
+        "In October, the trees in Story Woods began to change color.",
+        "Ms. Ortiz told her class that leaves are green because of a substance called chlorophyll.",
+        "In autumn, many trees stop making it, and the yellow and orange colors in the leaves start to show.",
+        "She asked each student to bring five different leaves to class on Friday.",
+        "On Wednesday after school, Maya and Sam walked up the trail behind the campsite.",
+        "Pixel ran ahead and rolled in a pile of dry brown leaves.",
+        "Maya found a red maple leaf and a yellow birch leaf near the creek.",
+        "Sam found a brown oak leaf under a tall tree by the old mill.",
+        "By the time the sun set, they each had five leaves in a paper bag.",
+        "The next day, they pressed the leaves flat inside heavy books at Maya's house."
+      ],
+      "topics": [
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Five Leaves for Friday",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p32",
+      "title": "The Maker Room",
+      "kind": "story",
+      "picture": "🦾✏️",
+      "sentences": [
+        "The new maker room opened in the basement of the Harbor Town library in March.",
+        "It has 3D printers, sewing machines and a long table full of robot parts.",
+        "On the first Saturday after it opened, Priya was waiting at the door at ten o'clock.",
+        "A young man with a name tag that said HELPER showed her around.",
+        "Priya wanted to build a robot arm that could pick up a pencil.",
+        "She used a small motor for the shoulder and another one for the elbow.",
+        "For the hand, she printed two plastic fingers that could open and close.",
+        "The first time she tested the arm, it dropped the pencil on the floor.",
+        "Priya added rubber bands to the fingers so they could grip better.",
+        "On the second try, the arm lifted the pencil and put it in a cup.",
+        "The helper wrote her name on the maker room's board for Builder of the Week."
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Maker Room",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p33",
+      "title": "The Planet Walk",
+      "kind": "story",
+      "picture": "🪐🚶",
+      "sentences": [
+        "A row of nine metal signs stands along the path beside the harbor.",
+        "Together, they make a model of the solar system called the Planet Walk.",
+        "The first sign shows the Sun, and it stands outside the library.",
+        "The other eight signs show the planets in order.",
+        "On Sunday afternoon, Sam and Leo walked the whole path with Pixel.",
+        "Mercury, Venus, Earth and Mars were all close to the Sun sign.",
+        "After Mars, the boys walked a long way before they reached Jupiter, near the ferry dock.",
+        "Saturn stood beside a row of fishing boats, and Uranus was next to a playground.",
+        "Neptune, the last planet, stood at the far end of the path, beside the seawall.",
+        "The walk from the Sun to Neptune took them 25 minutes.",
+        "Leo joked that Pixel was the first dog to walk past all the planets."
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Planet Walk",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p34",
+      "title": "The Bike Bus",
+      "kind": "story",
+      "picture": "🚲🚲🚲",
+      "sentences": [
+        "Every Wednesday morning, a long line of bikes rolls through Harbor Town to the middle school.",
+        "People call it the Bike Bus, even though it has no engine.",
+        "It starts at Okafor's Bike Shop at eight o'clock, and riders join it at stops along the way.",
+        "Mr. Okafor rides at the front in a bright orange vest.",
+        "This week, Sam was waiting at the corner by Rose's Bakery with his helmet already on.",
+        "Grandma Rose waved from the shop window as he joined the line.",
+        "At the next stop, outside the library, Priya and Maya joined too.",
+        "The riders stopped at every red light and rode in a single line.",
+        "By the time the Bike Bus reached the school gate, it had twenty-two riders.",
+        "The first bell rang fifteen minutes later, at 8:30."
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Bike Bus",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p35",
+      "title": "Calling the Space Station",
+      "kind": "article",
+      "picture": "📡🛰️",
+      "sentences": [
+        "On a Tuesday morning in November, the gym at Harbor Middle School was very quiet.",
+        "Two hundred students sat on the floor, facing a large screen and a table covered with radios and wires.",
+        "In a few minutes, the International Space Station would pass over the island, and the school had been chosen to talk to an astronaut on board.",
+        "The space station circles Earth about once every ninety minutes, about 400 kilometers above the ground.",
+        "Because it moves so fast, a radio on the ground can reach it for only about ten minutes at a time.",
+        "For weeks, a retired sailor with a white beard had been setting up an antenna on the gym roof.",
+        "His name is Mr. Dunn, and he leads the island's radio club.",
+        "At 10:42, a calm voice came through the speakers and said hello from space.",
+        "Ten students had written questions, and Priya was fourth in line.",
+        "Priya asked what the astronaut missed most about Earth.",
+        "The astronaut answered that she missed the sound of rain.",
+        "Nine minutes after the first hello, the voice faded into crackling noise as the station moved out of range."
+      ],
+      "breaks": [
+        3,
+        7
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Calling the Space Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p36",
+      "title": "The Orienteering Race",
+      "kind": "story",
+      "picture": "🧭🚩",
+      "sentences": [
+        "Orienteering is a race in which runners use a map and a compass to find a series of checkpoints.",
+        "Each checkpoint is marked by an orange-and-white flag, and runners must reach the flags in the right order.",
+        "The fastest runner does not always win, because one wrong turn can add many minutes to a runner's time.",
+        "On the second Saturday in October, the Story Woods orienteering race began at the campsite.",
+        "Sam had studied the trail map for days, and he was the first person to sign up.",
+        "At nine o'clock, the organizer, a woman in a red cap, handed him a map with five circles drawn on it.",
+        "Sam was surprised to see that she was Ms. Ortiz, his science teacher, who had planned the course over the summer.",
+        "The first flag hung beside the old mill, and the second was on a bridge over the creek.",
+        "Sam reached the third flag, at the bottom of a rocky hill, after twenty minutes.",
+        "There, he checked his compass and saw that the fourth flag was due north, at the top of the hill.",
+        "Instead of following the long trail around the hill, he climbed straight up the gentle slope.",
+        "The fifth and last flag stood at the finish line, beside the lookout in Lantern Peaks.",
+        "Sam crossed the line fifty-two minutes after he started, and he finished in second place."
+      ],
+      "breaks": [
+        3,
+        7
+      ],
+      "topics": [
+        "maps"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Orienteering Race",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p37",
+      "title": "Gold in the Creek",
+      "kind": "article",
+      "picture": "🪙🏞️",
+      "sentences": [
+        "More than a hundred years ago, a fisherman found a shiny yellow flake in the creek that runs through Story Woods.",
+        "It was gold, and within a year, hundreds of people had come to the island to search for more.",
+        "Most of them used a method called panning.",
+        "A miner scooped sand and water from the creek into a wide, shallow pan and swirled it around.",
+        "Gold is much heavier than sand, so the gold sank to the bottom of the pan while the light sand washed over the edge.",
+        "The gold rush on the island did not last long.",
+        "After about ten years, the creek had very little gold left, and most of the miners sailed home.",
+        "Today, the Ridgeway Mine Museum holds a gold panning day each summer, on the last Sunday in July.",
+        "Visitors stand in the shallow creek below the old mill and try panning for themselves.",
+        "Last year, Maya and Leo spent the whole morning there, with Mr. Varga showing them what to do.",
+        "Leo found only sand, but Maya found three tiny flakes, which she keeps in a glass jar on her desk."
+      ],
+      "breaks": [
+        5,
+        7
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Gold in the Creek",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p38",
+      "title": "The Night of the Frogs",
+      "kind": "story",
+      "picture": "🐸🌧️🔦",
+      "sentences": [
+        "For most of the year, the wood frogs of Story Woods live quietly under fallen leaves on the forest floor.",
+        "Each spring, on the first warm, rainy night, they wake up and travel to the pond where they hatched, so they can lay their eggs.",
+        "To get there, many of them must cross Pond Lane, a narrow road between the woods and the water.",
+        "On that one night, the town closes the road to cars, and volunteers help the frogs across.",
+        "This year, the warm rain finally came on the second Friday in March.",
+        "As soon as it was dark, a small group gathered at the edge of Pond Lane with flashlights and buckets.",
+        "The group's leader, a tall man in a yellow raincoat, explained three rules.",
+        "Everyone had to walk slowly, carry each frog gently and always take it in the direction it was already going.",
+        "Sam, Maya and Priya worked together on one side of the road.",
+        "Sam held the flashlight, Priya carried the bucket and Maya kept count.",
+        "By ten o'clock, they had carried 112 frogs across, and the rain had almost stopped.",
+        "The next morning, Maya went back to the pond and heard the frogs calling, a sound like ducks quacking far away."
+      ],
+      "breaks": [
+        4,
+        8
+      ],
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Night of the Frogs",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p39",
+      "title": "The Pie Contest",
+      "kind": "story",
+      "picture": "🥧🎀",
+      "sentences": [
+        "The pie contest at the Harbor Town Fall Festival was on Saturday, and Grandma Rose had entered it for the first time.",
+        "On Friday night, she and Sam peeled and sliced twelve apples at the long steel table in the bakery's back kitchen.",
+        "Sam mixed the apples with sugar and cinnamon while Grandma Rose rolled out the crust.",
+        "They laid strips of dough across the top in a crisscross pattern.",
+        "Then they baked the pie in the big oven until the crust was golden.",
+        "Early the next morning, they carried the pie three blocks to the festival tent in the town square.",
+        "Twenty pies sat in a row on a long table, each with a card that showed a number but no name.",
+        "That way, the judges would not know who had baked each pie.",
+        "Three judges walked along the table, tasting a small piece of every pie and writing notes.",
+        "The first judge, a woman in a white apron, owns the Lighthouse Café, and her name is Mrs. Lin.",
+        "At noon, Mrs. Lin stood up and read the results.",
+        "Pie number 14, the apple pie with the crisscross top, had won second place.",
+        "That evening, back at the bakery, Grandma Rose hung the red ribbon above the cash register."
+      ],
+      "breaks": [
+        5,
+        10
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Pie Contest",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p40",
+      "title": "The Library Tournament",
+      "kind": "story",
+      "picture": "🎮🏁",
+      "sentences": [
+        "The library's video game tournament lasted a whole weekend, and forty players signed up.",
+        "Every match was a race in the same racing game, played on two big screens in the community room.",
+        "The early rounds were on Saturday, and the last four players would meet in the final on Sunday afternoon.",
+        "Ana and Ben both won their first three races on Saturday.",
+        "In the fourth race, the twins had to play against each other.",
+        "Ben chose a heavy green truck, and Ana chose a small silver car that turned quickly.",
+        "Ana won by less than a second, and Ben shook her hand and said that he hoped she would win the final.",
+        "The final started at two o'clock the next day.",
+        "Ana raced against a high school student, a boy from Gull Island and a man who works at the bus station.",
+        "The race had five laps around a twisting mountain track.",
+        "Ana was in third place until the last lap, when she took a shortcut through a tunnel.",
+        "She crossed the line first, and the whole room cheered, especially Ben."
+      ],
+      "breaks": [
+        3,
+        7
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Library Tournament",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p41",
+      "title": "The Long-Necked Visitor",
+      "kind": "article",
+      "picture": "🦕📦",
+      "sentences": [
+        "Last winter, the Harbor Town museum got the biggest delivery it has ever had.",
+        "It was a copy of a Diplodocus skeleton, packed in thirty-eight wooden crates.",
+        "Diplodocus was a plant-eating dinosaur with a very long neck and an even longer tail.",
+        "The real animal was about twenty-six meters long, about as long as two school buses parked end to end.",
+        "The crates arrived at the harbor on a cargo boat on the second Monday in January.",
+        "A team of six builders from the mainland was waiting at the dock.",
+        "Their leader, a woman in a hard hat and a bright yellow jacket, checked each crate against a long list.",
+        "Her name is Ms. Lund, and she has built more than forty dinosaur skeletons.",
+        "The bones in the crates are not real fossils.",
+        "They are copies made of a light, strong plastic.",
+        "Each one was shaped in a mold taken from the bone of a real Diplodocus.",
+        "The builders spent three weeks putting the skeleton together on a steel frame.",
+        "They started with the legs and finished with the tip of the tail.",
+        "On the first Saturday in February, the museum opened the new hall to visitors.",
+        "Leo and Ben were near the front of the line, and Ben stood under the neck and looked straight up for a long time."
+      ],
+      "breaks": [
+        4,
+        8,
+        13
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Long-Necked Visitor",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p42",
+      "title": "Feeding Time",
+      "kind": "story",
+      "picture": "🐙🫙",
+      "sentences": [
+        "The Harbor Town Aquarium has only one octopus, and she is the most popular animal in the building.",
+        "An octopus can change the color of its skin in less than a second.",
+        "It can also squeeze its soft body through any gap bigger than its beak, which is the only hard part of its body.",
+        "Because of this, her tank has a heavy lid with no holes at all.",
+        "Every Saturday at two o'clock, a keeper feeds the octopus while visitors watch.",
+        "Last Saturday, Maya and Leo arrived at half past one.",
+        "First they went to the touch tank by the entrance.",
+        "There, they gently touched a sea star and a sea cucumber with two fingers, as the sign asked.",
+        "Twenty minutes later, they hurried upstairs to find seats in front of the octopus tank.",
+        "At two o'clock, a young woman in a blue shirt climbed a short ladder beside the tank.",
+        "She was the aquarium's animal keeper, and she has cared for the octopus for three years.",
+        "She dropped a closed plastic jar with a crab inside into the water.",
+        "The octopus turned from brown to dark red.",
+        "It wrapped two arms around the jar and twisted off the lid in less than a minute.",
+        "Everyone clapped, and Maya drew the octopus in her sketchbook before they left at three o'clock."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Feeding Time",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p43",
+      "title": "The Recording",
+      "kind": "story",
+      "picture": "🎙️🎻",
+      "sentences": [
+        "The island's radio station plays music by local musicians every Sunday evening.",
+        "This year, the station asked Ms. Gray to choose three students to record a song in its studio.",
+        "She chose Priya, a cellist, and two older students who are violinists.",
+        "The recording was set for the Tuesday before winter break, at four o'clock.",
+        "That afternoon, Ms. Gray drove the three students to a small brick building behind the bus station.",
+        "Inside, a man wearing large headphones sat behind a desk covered in buttons and sliders.",
+        "He was the sound engineer, the person who records the music and makes it sound clear, and his name was Mr. Quinn.",
+        "He placed a microphone in front of each instrument and asked the students to play a few notes.",
+        "The first try was too fast, and the second try had a wrong note.",
+        "On the third try, the three students played the whole song without a mistake.",
+        "Mr. Quinn played it back through the speakers, and Priya could hear every note of her cello.",
+        "Twelve days later, the song was played on the radio, and Priya's whole family listened in the kitchen."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Recording",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p44",
+      "title": "The Greenhouse Robot",
+      "kind": "story",
+      "picture": "🤖🍅",
+      "sentences": [
+        "Behind Harbor Middle School there is a glass greenhouse where the science classes grow tomatoes, beans and herbs.",
+        "The plants need water every day, even on weekends, when the school is empty.",
+        "For years, Ms. Ortiz drove to school every Saturday and Sunday to water them by hand.",
+        "In January, the robotics club decided to solve the problem.",
+        "Priya and two other members built a small robot that rolls along a track between the rows of plants.",
+        "A sensor pushed into the soil measures how wet it is, and the robot waters only the plants that are dry.",
+        "They tested it in the robotics room for three weeks before they moved it to the greenhouse.",
+        "The first real test came on the weekend of the big February snowstorm, when nobody could reach the school.",
+        "On Monday morning, after the snowplows had cleared the roads, Priya hurried to the greenhouse before the first bell.",
+        "The tomato plants were green and healthy, and the robot was parked at the end of its track.",
+        "Ms. Ortiz said it was the first weekend in four years that she had stayed home."
+      ],
+      "breaks": [
+        3,
+        7
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Greenhouse Robot",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p45",
+      "title": "Lightning Delay",
+      "kind": "story",
+      "picture": "⛈️⚽⏱️",
+      "sentences": [
+        "Lightning can hit the ground far away from the storm cloud that makes it.",
+        "So sports teams follow a simple rule.",
+        "When anyone hears thunder, everyone must leave the field and go inside a building or a car.",
+        "Play can start again only after thirty minutes have passed without any thunder.",
+        "On the first Saturday in June, Ana and Ben's team was playing a home game at Pier Field.",
+        "The sky was bright when the game started at ten o'clock, but dark clouds were gathering over Lantern Peaks.",
+        "Twenty minutes into the game, the players heard a low rumble of thunder.",
+        "The referee, a young woman with a whistle on a red cord, blew three short blasts and pointed at the clubhouse.",
+        "Both teams walked quickly off the field and waited inside while heavy rain fell on the roof.",
+        "Ben watched the clubhouse clock, and Ana counted the seconds between each flash and its thunder.",
+        "The last thunder came at 10:45, and the storm moved out over the sea.",
+        "Thirty minutes later, the referee blew her whistle again, and the teams ran back onto the wet grass.",
+        "The twins' team won the game two to one, and Ana scored the winning goal."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "topics": [
+        "weather",
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Lightning Delay",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p46",
+      "title": "The Eclipse",
+      "kind": "story",
+      "picture": "🌘🕶️",
+      "sentences": [
+        "A solar eclipse happens when the Moon passes between the Sun and Earth and blocks some or all of the Sun's light.",
+        "During a partial eclipse, the Moon covers only part of the Sun, so the bright disk slowly turns into a curved crescent.",
+        "It is never safe to look straight at the Sun, even during an eclipse, so people use special eclipse glasses or project the Sun's image onto paper.",
+        "The island's most recent eclipse happened on a school day in early April.",
+        "Weeks before, Ms. Ortiz had ordered a pair of eclipse glasses for every student.",
+        "She had also invited a guest: a scientist who studies distant galaxies at the observatory on Lantern Peaks.",
+        "The guest was Dr. Hale, and she arrived with a telescope fitted with a dark filter that made the Sun safe to view.",
+        "Just after lunch, the whole school gathered on the soccer field behind the gym, and at 1:10 the Moon began to slide across the edge of the Sun.",
+        "Leo had brought a kitchen colander from home.",
+        "When he held it above a sheet of white paper, dozens of tiny crescents appeared in its shadow, one for every hole.",
+        "Priya made a pinhole viewer from a cereal box, and Sam wrote down the time of each change in a notebook.",
+        "At the middle of the eclipse, the Moon covered most of the Sun, and the air felt noticeably cooler.",
+        "The eclipse lasted two and a half hours from start to finish.",
+        "By the time the Moon moved completely away from the Sun, the school buses were already lined up in front of the school."
+      ],
+      "breaks": [
+        3,
+        8,
+        12
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Eclipse",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p47",
+      "title": "A Hundred Years of the Coast Railway",
+      "kind": "article",
+      "picture": "🚂🌉",
+      "sentences": [
+        "This spring, the coast railway celebrated its hundredth birthday.",
+        "Before the line opened, the only ways to travel from Harbor Town to the villages along the north shore were by boat or on horseback.",
+        "Building the railway took four years, because workers had to cut a path through rocky hills and build eleven bridges over streams and inlets.",
+        "The first trains were pulled by steam engines.",
+        "A worker called a fireman shoveled coal into a firebox, and the heat boiled water in a large tank called a boiler.",
+        "The steam pushed on pistons, which turned the wheels.",
+        "In those days, a trip from Harbor Town to Shell Beach took almost two hours, because the train stopped at every village.",
+        "Today the same trip takes one hour, and the trains run on diesel engines.",
+        "To celebrate the birthday, the railway brought an old steam engine back to the island for one weekend in May.",
+        "On Saturday morning, a crowd gathered at the train station in Harbor Town, where the engine stood hissing beside the platform.",
+        "The driver, an older man in a striped cap and blue overalls, leaned out of the cab to wave.",
+        "He had driven trains on the coast line for thirty years before he retired, and he had learned to drive a steam engine just for this weekend.",
+        "Sam and Grandma Rose rode the steam train to Shell Beach and back.",
+        "The trip took longer than usual, because people stood on every bridge to wave as it passed."
+      ],
+      "breaks": [
+        3,
+        8,
+        12
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Hundred Years of the Coast Railway",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p48",
+      "title": "Mapping the Bottom of the Bay",
+      "kind": "article",
+      "picture": "🗺️🚢🌊",
+      "sentences": [
+        "Most maps show roads, rivers and towns, but some of the most useful maps show a place that no one can see: the bottom of the sea.",
+        "These maps are called charts, and ship captains use them to stay away from rocks and shallow water.",
+        "To make a chart, a survey boat travels slowly back and forth across the water in long, straight lines.",
+        "A device under the boat sends a pulse of sound down to the seabed and listens for the echo.",
+        "The longer the echo takes to return, the deeper the water is.",
+        "Last summer, a survey boat from the mainland spent three weeks mapping the bay around Harbor Town.",
+        "The harbor had not been charted for forty years, and storms had moved large amounts of sand since then.",
+        "The boat's chief scientist, a woman with short gray hair, gave a talk at the library on her last evening on the island.",
+        "Her name is Dr. Shaw, and she has mapped the seafloor in every ocean on Earth.",
+        "Sam sat in the front row with his notebook.",
+        "Dr. Shaw showed a colorful chart on the screen, with deep water in dark blue and shallow water in yellow.",
+        "Sam noticed a long yellow strip near the harbor entrance that was not on the old chart.",
+        "Dr. Shaw explained that it was a new sandbar, a long hill of sand under the water, and that the ferry's route would move slightly north to avoid it.",
+        "Two weeks after the talk, Captain Ruth Lane steered the ferry along the new route for the first time.",
+        "Sam watched from the seawall, holding the copy of the chart that Dr. Shaw had given him."
+      ],
+      "breaks": [
+        5,
+        9,
+        13
+      ],
+      "topics": [
+        "maps",
+        "ocean"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Mapping the Bottom of the Bay",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p49",
+      "title": "Rocks in the Dark",
+      "kind": "story",
+      "picture": "🪨🔦💚",
+      "sentences": [
+        "Some minerals look plain in daylight but glow in bright colors under ultraviolet light.",
+        "Ultraviolet light, often called UV light, is a kind of light that human eyes cannot see.",
+        "When it shines on certain minerals, they give off light that we can see, and the colors can be surprising: fluorite often glows blue, and calcite can glow red.",
+        "Every year on the last Friday in October, the Ridgeway Mine Museum in Lantern Peaks holds an evening tour called Rocks in the Dark.",
+        "This year, the rock club met at the museum's front door at seven o'clock, just after sunset.",
+        "Their guide for the night was a short man with a lamp on his hard hat, and he led them down a long wooden staircase into the oldest tunnel.",
+        "It was Mr. Varga, who leads the rock club and also gives tours at the museum.",
+        "At the bottom, Mr. Varga asked everyone to switch off their lamps.",
+        "For a moment, the tunnel was completely black.",
+        "Then he turned on a small UV lamp and pointed it at the wall.",
+        "Streaks of green and red glowed in the rock, and Maya gasped so loudly that the sound echoed down the tunnel.",
+        "Mr. Varga explained that the green came from a mineral called willemite, and the red came from calcite.",
+        "Forty-five minutes after the tour began, the club climbed back up the staircase.",
+        "In the gift shop, Maya spent her saved money on a small piece of fluorite and a tiny UV flashlight, and Mr. Varga reminded her never to shine it into anyone's eyes.",
+        "That night, in her bedroom, she switched off the lights and watched the fluorite glow blue."
+      ],
+      "breaks": [
+        3,
+        7,
+        12
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rocks in the Dark",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p50",
+      "title": "The Museum Sleepover",
+      "kind": "story",
+      "picture": "🦖🛏️🔦",
+      "sentences": [
+        "Twice a year, the Harbor Town museum invites a small group of students to sleep overnight in its dinosaur hall.",
+        "The spring sleepover was on the third Friday in April, and Ana, Ben and Leo were among the twenty students chosen.",
+        "They arrived at half past six in the evening, carrying sleeping bags, pillows and flashlights.",
+        "The evening began with a tour led by the museum's fossil expert, a woman with reading glasses on a chain around her neck.",
+        "She introduced herself as Dr. Bell and said that she had been digging up fossils for twenty-five years.",
+        "She showed them the new Tyrannosaurus skull, which had arrived from a museum on the mainland only a week before.",
+        "The skull was about as long as Ben is tall.",
+        "After a snack of popcorn in the museum café, the students spread their sleeping bags on the floor beneath the Triceratops skeleton.",
+        "At nine o'clock, Dr. Bell turned off the main lights, and the students explored the hall with their flashlights.",
+        "Leo pointed his flashlight at the Triceratops skull and made the shadow of its horns stretch across the ceiling.",
+        "Lights out was at half past ten, but most of the students whispered for another hour.",
+        "The next morning, a guard woke everyone at seven o'clock.",
+        "They ate breakfast in the café, rolled up their sleeping bags and were picked up by their families two hours later, just before the museum opened its doors to visitors."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Museum Sleepover",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p51",
+      "title": "A Robot That Cleans the Harbor",
+      "kind": "article",
+      "picture": "🤖🚤♻️",
+      "sentences": [
+        "Every day, wind and rain carry plastic bottles, bags and wrappers into the harbor.",
+        "Much of this trash floats near the docks, where the wind pushes it into corners.",
+        "Last fall, the town tried a new way to clean it up: a small robot boat that works on its own.",
+        "The robot is about the size of a bathtub, with two floating hulls and a wide net between them.",
+        "Solar panels on its roof charge its battery, so it never needs fuel.",
+        "Cameras and sensors help it steer around boats, docks and birds.",
+        "When its net is full, it returns to its station at the end of the fishing pier to be emptied.",
+        "The person who looks after the robot is a young engineer who grew up in Harbor Town.",
+        "Her name is Ms. Kaur, and she first saw a robot like this one while she was studying at a university on the mainland.",
+        "In its first month, the robot collected more than two thousand plastic bottles.",
+        "In March, Ms. Kaur visited the robotics club at Harbor Middle School.",
+        "She showed the students a video of the robot at work, and Priya asked how it knows when its net is full.",
+        "Ms. Kaur explained that a sensor weighs the net, and when the net is heavy enough, the robot heads back to its station.",
+        "Two days later, the club wrote a letter to the town council to ask if students could help test the next robot."
+      ],
+      "breaks": [
+        3,
+        7,
+        10
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Robot That Cleans the Harbor",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p52",
+      "title": "The Sugar Shack",
+      "kind": "story",
+      "picture": "🍁🥞",
+      "sentences": [
+        "Maple syrup begins as sap, a thin, clear liquid that flows inside maple trees.",
+        "The sap runs best in early spring, when the nights are below freezing and the days are warm.",
+        "Farmers drill a small hole in each tree and collect the sap in buckets or through long plastic tubes.",
+        "Then they boil it for hours, until most of the water has turned to steam and only thick, sweet syrup is left.",
+        "It takes about forty liters of sap to make one liter of syrup.",
+        "Every March, a family farm on the far side of Story Woods opens its sugar shack to visitors for two weekends.",
+        "A sugar shack is a small wooden building where the sap is boiled.",
+        "This year, Ana, Ben and their mom drove out on the second Saturday of the month, the morning after a hard frost.",
+        "A tall man in a red wool jacket met them at the gate with a wagon pulled by two horses.",
+        "He was Mr. Dale, the farmer, and his family has made syrup on the same land for more than a hundred years.",
+        "The wagon carried them into the woods, where thin blue tubes ran from tree to tree and down the hill to a large tank.",
+        "Mr. Dale let Ben taste a drop of sap, which was only a little sweet, almost like water.",
+        "Then they rode to the sugar shack, where clouds of steam rose from the roof.",
+        "Inside, the sap bubbled in a long metal pan over a wood fire.",
+        "At noon, everyone ate pancakes with fresh syrup at long tables outside the shack.",
+        "Before they left, Ana bought a small bottle of syrup to take home, and Ben said it was the sweetest thing he had ever tasted."
+      ],
+      "breaks": [
+        5,
+        10,
+        14
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Sugar Shack",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p53",
+      "title": "Midsummer Music Day",
+      "kind": "story",
+      "picture": "🥁🎪🌅",
+      "sentences": [
+        "On the longest day of the year, Harbor Town holds Midsummer Music Day, a free concert that lasts from noon until sunset.",
+        "Bands play on three stages: one on the ferry dock, one in the town square and one on the grass beside the lighthouse.",
+        "This year, Ms. Gray's Grade 7 band was invited to play on the town square stage at two o'clock.",
+        "The band arrived an hour early to set up.",
+        "Leo tightened the screws on his drums while the rest of the band tuned their instruments.",
+        "Ben spent the afternoon helping a man in a straw hat carry speakers to the ferry dock stage.",
+        "The man in the straw hat was the festival's sound director, and he was Mr. Quinn, the same engineer who records music at the island's radio station.",
+        "The band's set lasted forty minutes.",
+        "Leo kept a steady beat through all six songs, and Ana and Maya clapped along from the front row.",
+        "When the set was over, Leo, Ana and Maya walked across town to the lighthouse stage to hear a fiddle group from Gull Island.",
+        "Sunset came at almost nine o'clock that night.",
+        "As the last song ended, Ben finally joined his friends on the grass beside the lighthouse, tired but smiling."
+      ],
+      "breaks": [
+        3,
+        7,
+        10
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Midsummer Music Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p54",
+      "title": "The King Tide",
+      "kind": "story",
+      "picture": "🌊📏🌕",
+      "sentences": [
+        "A few times each year, the tides along the coast rise much higher than usual.",
+        "People call these extra-high tides king tides.",
+        "They happen when the Moon is at its closest to Earth and lines up with the Sun, so the pull of both is added together.",
+        "Scientists can work out the day and time of each king tide years in advance.",
+        "In early January, Ms. Ortiz learned that the year's highest king tide would arrive on the third Saturday in January, at 11:20 in the morning.",
+        "She asked her science club to measure it.",
+        "Priya built a tide gauge, a tall pole with a line painted every ten centimeters, and tied it to the ladder at the end of the ferry dock.",
+        "At nine o'clock on that Saturday, the water was just below the third line.",
+        "Sam and Maya stood on the seawall with clipboards, and every fifteen minutes Priya called out a new number.",
+        "There was almost no wind that day, so the water rose slowly and smoothly.",
+        "When the water finally stopped rising, it had reached the ninth line, the highest mark the club had ever seen.",
+        "By lunchtime, the water was going down again, and the fishing boats beside the dock were slowly getting lower as the tide went out.",
+        "That afternoon, the club pinned a photo of the gauge on the science room wall, next to the date and the time of the highest water."
+      ],
+      "breaks": [
+        4,
+        8,
+        11
+      ],
+      "topics": [
+        "ocean"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The King Tide",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p55",
+      "title": "The Salmon Run",
+      "kind": "story",
+      "picture": "🐟🍂🌉",
+      "sentences": [
+        "Salmon begin their lives in fresh water, in streams and creeks far from the sea.",
+        "After a year or two, the young fish swim downstream to the ocean, where they grow large and strong.",
+        "Years later, each adult salmon swims back to the same stream where it hatched, using its sense of smell to find the way.",
+        "There, the salmon lay their eggs in the gravel, and the cycle begins again.",
+        "In Story Woods, the salmon return to the creek every autumn, usually in the first two weeks of October.",
+        "This year, the first fish were seen on the morning of Tuesday, October 3, below the old mill.",
+        "A park ranger who has counted the salmon for many years put a notice on the trail board.",
+        "It asked visitors to stay on the bank and keep dogs on leashes, so the fish could rest in the shallow pools.",
+        "The following Saturday, Sam and Grandma Rose packed a lunch and walked to the creek with Pixel on his leash.",
+        "They stood on the wooden bridge, where the water was clear and slow.",
+        "Below them, dozens of red salmon waited in a deep pool, their tails moving gently in the current.",
+        "Sam counted forty-one fish before Pixel lay down on the bridge for a nap.",
+        "On the way home, they met the ranger, a woman in a green uniform carrying a clipboard.",
+        "She told them that this year's count had already passed two thousand fish."
+      ],
+      "breaks": [
+        4,
+        8,
+        12
+      ],
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Salmon Run",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n1-p56",
+      "title": "The Island Loop",
+      "kind": "story",
+      "picture": "🚴⛰️",
+      "sentences": [
+        "Every summer, cyclists from all over the region come to Harbor Town for the Island Loop, a bike race that follows the coast road all the way around the island.",
+        "The loop is eighty kilometers long, and the fastest riders finish in a little over two hours.",
+        "There is also a shorter family ride of twenty kilometers, which ends at the lookout on Lantern Peaks.",
+        "This year, the race was held on the second Sunday in August.",
+        "Leo and his dad entered the family ride, and they were at the starting line in front of Okafor's Bike Shop by half past seven.",
+        "Before the start, a man with a toolbox checked every bike's brakes and tires.",
+        "It was Mr. Okafor, who has checked bikes for the race every year since it began.",
+        "The big race started at eight o'clock, and the family ride left thirty minutes later.",
+        "The family ride followed the coast road past the harbor and the fishing piers, and then it turned inland toward the hills.",
+        "The last five kilometers were a steep climb, and Leo had to stand up on his pedals to keep going.",
+        "He and his dad reached the lookout an hour and a half after they started.",
+        "They ate sandwiches at the top and watched the fast riders far below, racing along the coast road in a long, colorful line.",
+        "Leo said his legs felt very tired, and his dad laughed and said that his legs did too."
+      ],
+      "breaks": [
+        3,
+        8,
+        11
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Island Loop",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -629,11 +1986,11 @@
       "slots": [
         { "kind": "who", "label": "Who is the story mostly about?", "options": ["Ms. Ortiz", "Priya", "Maya"], "answer": [1] },
         { "kind": "where", "label": "Where is she?", "options": ["Okafor's Bike Shop", "the library", "the science room at school"], "answer": [2] },
-        { "kind": "when", "label": "When is it?", "options": ["Tuesday after school", "Saturday morning", "Friday night"], "answer": [0] }
+        { "kind": "when", "label": "When is it?", "options": ["Wednesday after school", "Saturday morning", "Friday night"], "answer": [0] }
       ],
       "evidence": [0, 1],
       "hint": "Find the name that comes up the most. Then look near the start for a place and a day.",
-      "explain": "The story is about Priya. She is in the science room at school on Tuesday after school. It is in the first two sentences.",
+      "explain": "The story is about Priya. She is in the science room at school on Wednesday after school. It is in the first two sentences.",
       "inference": 1,
       "tags": ["two-characters", "main-character"]
     },
@@ -659,12 +2016,12 @@
       "format": "tap",
       "level": 2,
       "prompt": "When did Priya go home?",
-      "options": ["Before school", "At five o'clock", "At noon"],
+      "options": ["Before school", "At 4:45 PM", "At noon"],
       "pictures": ["🌅", "🕔", "🕛"],
       "answer": 1,
       "evidence": [7],
       "hint": "Find the sentence where Priya goes home. Look for a clock time.",
-      "explain": "Priya went home at five o'clock. It is in the last sentence.",
+      "explain": "Priya went home at 4:45 PM. It is in the last sentence.",
       "inference": 0,
       "tags": ["when", "two-times"]
     },
@@ -1198,7 +2555,7 @@
         3
       ],
       "hint": "The bus stops beside a building. Keep reading to find a sign with the building's name.",
-      "explain": "The sign over the door said OLD COPPER MINE MUSEUM. It is in the fourth sentence.",
+      "explain": "The sign over the door said RIDGEWAY MINE MUSEUM. It is in the fourth sentence.",
       "inference": 0,
       "transfer": true,
       "tags": [
@@ -1738,13 +3095,13 @@
         "At ten o'clock",
         "At eleven o'clock"
       ],
-      "answer": 2,
+      "answer": 3,
       "evidence": [
         3,
         8
       ],
       "hint": "The game time is not given as a clock time. Find when the ferry left and how long the trip took. Then add the time until the game began.",
-      "explain": "The game began at ten o'clock. The ferry left at eight o'clock and arrived one hour later, at nine. The game began one hour after that.",
+      "explain": "The game began at eleven o'clock. The ferry left at nine o'clock and arrived 40 minutes later, at 9:40. The game began one hour and twenty minutes after that.",
       "inference": 1,
       "tags": [
         "when",
@@ -1791,10 +3148,10 @@
           "kind": "who",
           "label": "Who won?",
           "options": [
-            "The Harbor Town Herons",
+            "The Harbor Hawks",
             "The Gull Island Gulls",
-            "The Harbor Town Gulls",
-            "The Gull Island Herons"
+            "The Harbor Gulls",
+            "The Gull Island Hawks"
           ],
           "answer": [
             0
@@ -1834,13 +3191,4097 @@
         11
       ],
       "hint": "Check the team names carefully. Each one has a place and a bird. Then find where the Gulls' home field is, and the day of the final.",
-      "explain": "The Harbor Town Herons won the final at a field on Gull Island, on the last Sunday in May. The first paragraph gives the teams, the day and the island. The second paragraph says the field was on a hill above the beach.",
+      "explain": "The Harbor Hawks won the final at a field on Gull Island, on the last Sunday in May. The first paragraph gives the teams, the day and the island. The second paragraph says the field was on a hill above the beach.",
       "inference": 1,
       "transfer": true,
       "tags": [
         "who",
         "where",
         "when",
+        "across-paragraphs",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i53",
+      "skill": "N1",
+      "passage": "n1-p19",
+      "format": "storymap",
+      "level": 1,
+      "prompt": "Fill in the story map: who and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who went to the park?",
+          "options": [
+            "Ana and Ben",
+            "Sam and Leo",
+            "Ana and Maya"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the snow fall?",
+          "options": [
+            "Friday night",
+            "Tuesday morning",
+            "Saturday morning"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Read the first sentence for a day and a time. Then find the names in the third sentence.",
+      "explain": "Ana and Ben went to the park. The snow fell on Tuesday morning. Look at the first and third sentences.",
+      "inference": 0,
+      "tags": [
+        "who",
+        "when"
+      ]
+    },
+    {
+      "id": "n1-i54",
+      "skill": "N1",
+      "passage": "n1-p19",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Where did Ana and Ben go?",
+      "options": [
+        "To the park",
+        "To school",
+        "To the harbor"
+      ],
+      "pictures": [
+        "🛝",
+        "🏫",
+        "⚓"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the sentence with the word \"hurried\". Look for a place.",
+      "explain": "Ana and Ben hurried to the park. It is in the third sentence.",
+      "inference": 0,
+      "tags": [
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i55",
+      "skill": "N1",
+      "passage": "n1-p19",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Who gave the snowman a red hat?",
+      "options": [
+        "Ana",
+        "Ben"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the words \"red hat\". Read the name in that sentence.",
+      "explain": "Ben gave the snowman a red hat. It is in the fifth sentence.",
+      "inference": 0,
+      "tags": [
+        "who",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n1-i56",
+      "skill": "N1",
+      "passage": "n1-p20",
+      "format": "storymap",
+      "level": 1,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who played the flute?",
+          "options": [
+            "Ana",
+            "Maya",
+            "Priya"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did she play?",
+          "options": [
+            "in her room",
+            "in the music room at school",
+            "at the library"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did she play?",
+          "options": [
+            "Saturday morning",
+            "Monday after school",
+            "Wednesday after dinner"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        0
+      ],
+      "hint": "Read the first sentence. Look for a name, a place and a time.",
+      "explain": "Maya played the flute in her room on Wednesday after dinner. It is all in the first sentence.",
+      "inference": 0,
+      "tags": [
+        "who-where-when"
+      ]
+    },
+    {
+      "id": "n1-i57",
+      "skill": "N1",
+      "passage": "n1-p20",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Who clapped?",
+      "options": [
+        "Maya",
+        "Her mom",
+        "Ms. Gray"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the word \"clapped\". Read who did it.",
+      "explain": "Maya's mom clapped from the kitchen. It is in the fifth sentence.",
+      "inference": 0,
+      "tags": [
+        "who",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n1-i58",
+      "skill": "N1",
+      "passage": "n1-p20",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Tap the sentence that tells when Maya put her flute away.",
+      "unit": "sentence",
+      "answer": [
+        6
+      ],
+      "evidence": [
+        6
+      ],
+      "hint": "Look for the words \"put the flute away\". Check that the sentence has a time.",
+      "explain": "At eight o'clock, Maya put the flute away. It is in the last sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "when"
+      ]
+    },
+    {
+      "id": "n1-i59",
+      "skill": "N1",
+      "passage": "n1-p21",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who rode the train?",
+          "options": [
+            "Sam and his dad",
+            "Sam and Grandma Rose",
+            "Sam and Leo"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did they get off the train?",
+          "options": [
+            "at Harbor Town",
+            "at Shell Beach",
+            "at the lighthouse"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the train leave?",
+          "options": [
+            "Sunday at ten o'clock",
+            "Saturday at nine o'clock",
+            "Sunday at nine o'clock"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "hint": "Find the names and the day in the first sentence. Then look for the clock times and the place where they got off.",
+      "explain": "Sam and his dad rode the train. It left on Sunday at nine o'clock, and they got off at Shell Beach. Look at the first two sentences and the seventh and eighth sentences.",
+      "inference": 1,
+      "tags": [
+        "who-where-when",
+        "two-times"
+      ]
+    },
+    {
+      "id": "n1-i60",
+      "skill": "N1",
+      "passage": "n1-p21",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What time did the train stop at Shell Beach?",
+      "options": [
+        "At nine o'clock",
+        "At ten o'clock",
+        "After lunch"
+      ],
+      "pictures": [
+        "🕘",
+        "🕙",
+        "🥪"
+      ],
+      "answer": 1,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the words \"Shell Beach\". Look for a clock time in that sentence.",
+      "explain": "The train stopped at Shell Beach at ten o'clock. It is in the seventh sentence.",
+      "inference": 0,
+      "tags": [
+        "when",
+        "two-times"
+      ]
+    },
+    {
+      "id": "n1-i61",
+      "skill": "N1",
+      "passage": "n1-p21",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where did Sam and his dad get on the train?",
+      "options": [
+        "At Shell Beach",
+        "At the train station in Harbor Town",
+        "At the lighthouse"
+      ],
+      "pictures": [
+        "🐚",
+        "🚉",
+        "🗼"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the first two sentences. Find where they walked before they got on.",
+      "explain": "They got on at the train station in Harbor Town. The first sentence says they walked there, and the second sentence says they got on the train.",
+      "inference": 1,
+      "tags": [
+        "where",
+        "two-places"
+      ]
+    },
+    {
+      "id": "n1-i62",
+      "skill": "N1",
+      "passage": "n1-p22",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where did Maya sit to draw the ducks?",
+      "options": [
+        "Under some low branches",
+        "On a big flat rock",
+        "On a bench by the trail"
+      ],
+      "pictures": [
+        "🌿",
+        "🪨",
+        "🪑"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the sentence with the word \"drew\". Look for the place in it.",
+      "explain": "Maya sat on a big flat rock. It is in the fifth sentence.",
+      "inference": 0,
+      "tags": [
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i63",
+      "skill": "N1",
+      "passage": "n1-p22",
+      "format": "tap",
+      "level": 2,
+      "prompt": "When did Maya go to the creek?",
+      "options": [
+        "Saturday morning",
+        "Sunday afternoon",
+        "Saturday afternoon"
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the first sentence. Check the day and the part of the day.",
+      "explain": "Maya went to the creek on Saturday afternoon. It is in the first sentence.",
+      "inference": 0,
+      "tags": [
+        "when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i64",
+      "skill": "N1",
+      "passage": "n1-p22",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "Fill in the story map: who and where.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who came down the trail?",
+          "options": [
+            "Sam and Pixel",
+            "a man with a gray dog",
+            "Maya's dad"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where is the creek?",
+          "options": [
+            "in Story Woods",
+            "in Lantern Peaks",
+            "behind the school"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        5
+      ],
+      "hint": "Find the sentence with the word \"trail\". Then look in the first sentence for the place.",
+      "explain": "A man with a gray dog came down the trail. The creek is in Story Woods. Look at the sixth sentence and the first sentence.",
+      "inference": 0,
+      "tags": [
+        "who",
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i65",
+      "skill": "N1",
+      "passage": "n1-p23",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who played chess?",
+          "options": [
+            "Ben and Leo",
+            "Ben and Ana",
+            "Leo and Mrs. Hall"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did they play?",
+          "options": [
+            "at school",
+            "at the library",
+            "at Ben's house"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did they play?",
+          "options": [
+            "Monday morning",
+            "Friday after school",
+            "Monday after school"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the first two sentences. The club meets on the same day every week.",
+      "explain": "Ben and Leo played chess at the library on Monday after school. The first sentence tells the day and the place, and the second sentence names the boys.",
+      "inference": 1,
+      "tags": [
+        "who-where-when"
+      ]
+    },
+    {
+      "id": "n1-i66",
+      "skill": "N1",
+      "passage": "n1-p23",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Who played with the black pieces?",
+      "options": [
+        "Ben",
+        "Leo",
+        "Mrs. Hall"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the word \"black\". Read the name in that sentence.",
+      "explain": "Leo played with the black pieces. It is in the fourth sentence.",
+      "inference": 0,
+      "tags": [
+        "who",
+        "two-characters",
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n1-i67",
+      "skill": "N1",
+      "passage": "n1-p23",
+      "format": "tap",
+      "level": 2,
+      "prompt": "When did Leo say \"Checkmate\"?",
+      "options": [
+        "At the start of the game",
+        "After forty minutes",
+        "After the second game"
+      ],
+      "pictures": [
+        "🏁",
+        "⏱️",
+        "♟️"
+      ],
+      "answer": 1,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the word \"Checkmate\". Read the words at the start of that sentence.",
+      "explain": "Leo said \"Checkmate\" after forty minutes. It is in the seventh sentence.",
+      "inference": 0,
+      "tags": [
+        "when"
+      ]
+    },
+    {
+      "id": "n1-i68",
+      "skill": "N1",
+      "passage": "n1-p24",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who made the pizza?",
+          "options": [
+            "Priya and her mom",
+            "Priya and her dad",
+            "Priya and Grandma Rose"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did they make it?",
+          "options": [
+            "in their kitchen",
+            "at Rose's Bakery",
+            "on the back porch"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did they make it?",
+          "options": [
+            "Saturday evening",
+            "Friday morning",
+            "Friday evening"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        0
+      ],
+      "hint": "Read the first sentence. Look for names, a place and a time.",
+      "explain": "Priya and her dad made pizza in their kitchen on Friday evening. It is all in the first sentence.",
+      "inference": 0,
+      "tags": [
+        "who-where-when"
+      ]
+    },
+    {
+      "id": "n1-i69",
+      "skill": "N1",
+      "passage": "n1-p24",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Who rolled out the dough?",
+      "options": [
+        "Priya",
+        "Her dad",
+        "Her mom"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the word \"dough\". Read who did it.",
+      "explain": "Priya's dad rolled out the dough. It is in the second sentence.",
+      "inference": 0,
+      "tags": [
+        "who",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n1-i70",
+      "skill": "N1",
+      "passage": "n1-p24",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where did Priya and her dad eat the pizza?",
+      "options": [
+        "In the kitchen",
+        "On the back porch",
+        "At the Lighthouse Café"
+      ],
+      "pictures": [
+        "🍳",
+        "🪑",
+        "☕"
+      ],
+      "answer": 1,
+      "evidence": [
+        6
+      ],
+      "hint": "The pizza was made in one place and eaten in another. Find the word \"ate\".",
+      "explain": "They ate the pizza on the back porch. It is in the seventh sentence.",
+      "inference": 0,
+      "tags": [
+        "where",
+        "two-places"
+      ]
+    },
+    {
+      "id": "n1-i71",
+      "skill": "N1",
+      "passage": "n1-p25",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who drew the map?",
+          "options": [
+            "Leo",
+            "Sam",
+            "Maya"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did Sam hide the car?",
+          "options": [
+            "under the slide",
+            "by the tall pine tree",
+            "under the bench by the swings"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did Leo come to the playground?",
+          "options": [
+            "Monday at four o'clock",
+            "Monday at five o'clock",
+            "Tuesday at four o'clock"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        2,
+        4
+      ],
+      "hint": "The day is in the first sentence. The clock time is in the sentence where Leo comes.",
+      "explain": "Sam drew the map and hid the car under the bench by the swings. Leo came on Monday at four o'clock. Look at the first, third and fifth sentences.",
+      "inference": 1,
+      "tags": [
+        "who-where-when"
+      ]
+    },
+    {
+      "id": "n1-i72",
+      "skill": "N1",
+      "passage": "n1-p25",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Who found the toy car?",
+      "options": [
+        "Sam",
+        "Leo",
+        "Pixel"
+      ],
+      "answer": 1,
+      "evidence": [
+        7
+      ],
+      "hint": "Find the word \"found\". Read the name in that sentence.",
+      "explain": "Leo found the car. It is in the eighth sentence.",
+      "inference": 0,
+      "tags": [
+        "who",
+        "two-characters",
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n1-i73",
+      "skill": "N1",
+      "passage": "n1-p25",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the sentence that tells where Sam hid the toy car.",
+      "unit": "sentence",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Look for the word \"hid\". Check that the sentence names a place.",
+      "explain": "Sam hid the car under the bench by the swings. It is in the third sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i74",
+      "skill": "N1",
+      "passage": "n1-p26",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where was the rock club meeting?",
+      "options": [
+        "In the back room of the library",
+        "At the mine museum",
+        "In Ms. Ortiz's science room",
+        "At Maya's house"
+      ],
+      "pictures": [
+        "📚",
+        "⛏️",
+        "🔬",
+        "🏠"
+      ],
+      "answer": 0,
+      "evidence": [
+        10
+      ],
+      "hint": "The place is not at the start of the story. Keep reading until you find where the club meets.",
+      "explain": "The rock club meets in the back room of the library. It is in the eleventh sentence, near the end.",
+      "inference": 0,
+      "tags": [
+        "where",
+        "place-later"
+      ]
+    },
+    {
+      "id": "n1-i75",
+      "skill": "N1",
+      "passage": "n1-p26",
+      "format": "tap",
+      "level": 3,
+      "prompt": "When did Maya crack open her geode?",
+      "options": [
+        "At the first club meeting of the year",
+        "At the last club meeting before winter break",
+        "On the first day of winter break",
+        "At six o'clock, at home"
+      ],
+      "answer": 1,
+      "evidence": [
+        10
+      ],
+      "hint": "No day is named. Find the sentence that tells which meeting this was.",
+      "explain": "Maya opened the geode at the club's last meeting before winter break. It is in the eleventh sentence.",
+      "inference": 0,
+      "tags": [
+        "when",
+        "when-indirect"
+      ]
+    },
+    {
+      "id": "n1-i76",
+      "skill": "N1",
+      "passage": "n1-p26",
+      "format": "build",
+      "level": 3,
+      "prompt": "Build a sentence about who, and where.",
+      "frame": "{0} showed {1} how to open a geode in {2}.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who showed her?",
+          "options": [
+            "Mr. Varga",
+            "Ms. Ortiz",
+            "Mr. Okafor",
+            "Dr. Bell"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "Who did he show?",
+          "options": [
+            "Priya",
+            "Maya",
+            "Sam"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where?",
+          "options": [
+            "the back room of the library",
+            "the mine museum",
+            "the school art room"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        6,
+        10
+      ],
+      "hint": "Find the sentence with the word \"showed\". Then keep reading to find where the club meets.",
+      "explain": "Mr. Varga showed Maya how to open a geode in the back room of the library. Look at the seventh and eleventh sentences.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "who",
+        "where",
+        "place-later"
+      ]
+    },
+    {
+      "id": "n1-i77",
+      "skill": "N1",
+      "passage": "n1-p27",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where was the whale when Sam first saw its blow?",
+      "options": [
+        "Far out past Gull Island",
+        "Next to the dock in the harbor",
+        "Right under the front rail of the boat",
+        "Beside the Gull Island ferry"
+      ],
+      "answer": 0,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the sentence where Sam sees the puff of mist. Look for the place in it.",
+      "explain": "The whale was far out past Gull Island. It is in the seventh sentence.",
+      "inference": 0,
+      "tags": [
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i78",
+      "skill": "N1",
+      "passage": "n1-p27",
+      "format": "tap",
+      "level": 3,
+      "prompt": "About how long was the boat trip?",
+      "options": [
+        "About one hour",
+        "About two hours",
+        "Almost three hours",
+        "About four hours"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        10
+      ],
+      "hint": "Find the time the boat left. Then find the time it came back, and count the hours between.",
+      "explain": "The trip was almost three hours. The boat left at one o'clock, and the last sentence says it came back at almost four o'clock.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math"
+      ]
+    },
+    {
+      "id": "n1-i79",
+      "skill": "N1",
+      "passage": "n1-p27",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who stood at the front rail?",
+          "options": [
+            "Sam and Grandma Rose",
+            "Sam and the guide",
+            "Sam and his dad"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did the boat leave from?",
+          "options": [
+            "Gull Island",
+            "the harbor",
+            "Shell Beach"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the boat leave?",
+          "options": [
+            "Sunday at one o'clock",
+            "Saturday at one o'clock",
+            "Saturday at four o'clock"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the first two sentences. Check the day and the clock time.",
+      "explain": "Sam and Grandma Rose stood at the front rail. The boat left the harbor on Saturday at one o'clock. It is in the first two sentences.",
+      "inference": 0,
+      "tags": [
+        "who-where-when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i80",
+      "skill": "N1",
+      "passage": "n1-p28",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What time did the talk begin?",
+      "options": [
+        "At three o'clock",
+        "At six o'clock",
+        "At five o'clock",
+        "At four o'clock"
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        10
+      ],
+      "hint": "The start time is not given. Find how long the talk lasted and the time it ended. Then count back.",
+      "explain": "The talk began at four o'clock. The fourth sentence says it lasted one hour, and the eleventh sentence says it ended at five o'clock.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math",
+        "when-indirect"
+      ]
+    },
+    {
+      "id": "n1-i81",
+      "skill": "N1",
+      "passage": "n1-p28",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where did Leo sit during the talk?",
+      "options": [
+        "In the second row, with Ana and Ben",
+        "In the front row, next to Dr. Bell",
+        "At the back of the hall, by the door",
+        "Behind the big screen"
+      ],
+      "answer": 0,
+      "evidence": [
+        9
+      ],
+      "hint": "Find the sentence with Leo's name. Look for the place in it.",
+      "explain": "Leo sat in the second row with Ana and Ben. It is in the tenth sentence.",
+      "inference": 0,
+      "tags": [
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i82",
+      "skill": "N1",
+      "passage": "n1-p28",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that tells who gave the talk.",
+      "unit": "sentence",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Look for the words \"give a talk\". Read the name in that sentence.",
+      "explain": "Dr. Bell from the museum gave the talk. It is in the third sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "who"
+      ]
+    },
+    {
+      "id": "n1-i83",
+      "skill": "N1",
+      "passage": "n1-p29",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where did Leo wait for his turn?",
+      "options": [
+        "Near the gate, with Sam",
+        "On the fence beside the big ramp",
+        "At Rose's Bakery",
+        "At the top of the big ramp"
+      ],
+      "pictures": [
+        "🚪",
+        "🛹",
+        "🥐",
+        "⛰️"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the words \"While he waited\". Look for the place in that sentence.",
+      "explain": "Leo waited on the fence beside the big ramp. It is in the fourth sentence. Sam was the one near the gate.",
+      "inference": 0,
+      "tags": [
+        "where",
+        "two-places"
+      ]
+    },
+    {
+      "id": "n1-i84",
+      "skill": "N1",
+      "passage": "n1-p29",
+      "format": "tap",
+      "level": 3,
+      "prompt": "When did the judge call Leo's name?",
+      "options": [
+        "At ten o'clock, before anyone skated",
+        "At eleven o'clock, after nine skaters",
+        "At noon, after all twelve skaters",
+        "At eleven o'clock, after eight skaters"
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the words \"called Leo's name\". Check the clock time and the number of skaters.",
+      "explain": "The judge called Leo's name at eleven o'clock, after eight skaters had finished. It is in the sixth sentence.",
+      "inference": 0,
+      "tags": [
+        "when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i85",
+      "skill": "N1",
+      "passage": "n1-p29",
+      "format": "sort",
+      "level": 3,
+      "prompt": "These words are from the story. Does each one tell where or when?",
+      "bins": [
+        "Tells where",
+        "Tells when"
+      ],
+      "cards": [
+        {
+          "text": "in Harbor Town",
+          "bin": 0
+        },
+        {
+          "text": "on a sunny Saturday in July",
+          "bin": 1
+        },
+        {
+          "text": "beside the big ramp",
+          "bin": 0
+        },
+        {
+          "text": "at eleven o'clock",
+          "bin": 1
+        },
+        {
+          "text": "near the gate",
+          "bin": 0
+        },
+        {
+          "text": "after the contest",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        3,
+        4,
+        5,
+        10
+      ],
+      "hint": "Ask \"Where?\" and \"When?\" about each card. A \"when\" card can name a day, a month, a clock time or an event that came first.",
+      "explain": "\"On a sunny Saturday in July\", \"at eleven o'clock\" and \"after the contest\" tell when. \"In Harbor Town\", \"beside the big ramp\" and \"near the gate\" tell where.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "where",
+        "when"
+      ]
+    },
+    {
+      "id": "n1-i86",
+      "skill": "N1",
+      "passage": "n1-p30",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who played the keyboard?",
+          "options": [
+            "Ana",
+            "Ben",
+            "Ms. Gray"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where was the stage?",
+          "options": [
+            "near the gate of the fair, on the school field",
+            "inside the school gym",
+            "at the harbor"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did Ben start to play?",
+          "options": [
+            "the second Saturday in August, at three o'clock",
+            "the second Saturday in August, at noon",
+            "the last Saturday in August, at three o'clock"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "The day is in the first sentence. The clock time is in the sentence where Ben carries his keyboard.",
+      "explain": "Ben played the keyboard on the stage near the gate, on the school field. He started on the second Saturday in August, at three o'clock. Look at the first three sentences.",
+      "inference": 1,
+      "tags": [
+        "who-where-when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i87",
+      "skill": "N1",
+      "passage": "n1-p30",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Who asked Ben to play one more song?",
+      "options": [
+        "Ms. Gray",
+        "Ana",
+        "The person in charge of the fair",
+        "His mom"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the woman with the fair badge. Read the next sentence to find out who she is.",
+      "explain": "The person in charge of the whole fair asked him. The eighth sentence says a woman with a fair badge asked, and the ninth sentence says who she was.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i88",
+      "skill": "N1",
+      "passage": "n1-p30",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where did Ana sit?",
+      "options": [
+        "On the grass with the little children",
+        "Behind the stage",
+        "In the front row with their mom and dad",
+        "At a food stand"
+      ],
+      "pictures": [
+        "🌱",
+        "🎪",
+        "🪑",
+        "🌭"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the sentence with Ana's name. Look for the place in it.",
+      "explain": "Ana sat in the front row with their mom and dad. It is in the fifth sentence.",
+      "inference": 0,
+      "tags": [
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i89",
+      "skill": "N1",
+      "passage": "n1-p31",
+      "format": "tap",
+      "level": 3,
+      "prompt": "On which day did Maya and Sam press the leaves?",
+      "options": [
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        9
+      ],
+      "hint": "Find the words \"The next day\". Ask: the day after which day?",
+      "explain": "They pressed the leaves on Thursday. They collected them on Wednesday, and the last sentence says they pressed them the next day.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "when-indirect"
+      ]
+    },
+    {
+      "id": "n1-i90",
+      "skill": "N1",
+      "passage": "n1-p31",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where did Sam find the oak leaf?",
+      "options": [
+        "Near the creek",
+        "In Ms. Ortiz's classroom",
+        "In a pile of leaves behind the campsite",
+        "Under a tall tree by the old mill"
+      ],
+      "pictures": [
+        "💧",
+        "🏫",
+        "🍂",
+        "🌳"
+      ],
+      "answer": 3,
+      "evidence": [
+        7
+      ],
+      "hint": "Find the words \"oak leaf\". Read the place in that sentence.",
+      "explain": "Sam found the oak leaf under a tall tree by the old mill. It is in the eighth sentence. Maya was the one who found leaves near the creek.",
+      "inference": 0,
+      "tags": [
+        "where",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n1-i91",
+      "skill": "N1",
+      "passage": "n1-p31",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who went up the trail?",
+          "options": [
+            "Maya, Sam and Pixel",
+            "Maya and Ms. Ortiz",
+            "Sam and Priya"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did the trail start?",
+          "options": [
+            "behind the school",
+            "behind the campsite in Story Woods",
+            "at the lookout in Lantern Peaks"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did they collect the leaves?",
+          "options": [
+            "Wednesday morning, in October",
+            "Friday after school, in October",
+            "Wednesday after school, in October"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        4,
+        5
+      ],
+      "hint": "The month is in the first sentence. Find the day and the place in the sentence where Maya and Sam walk up the trail.",
+      "explain": "Maya, Sam and Pixel went up the trail behind the campsite on Wednesday after school, in October. The first sentence gives the month, and the fifth and sixth sentences give the rest.",
+      "inference": 1,
+      "tags": [
+        "who-where-when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i92",
+      "skill": "N1",
+      "passage": "n1-p32",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who built the robot arm?",
+          "options": [
+            "Maya",
+            "the helper",
+            "Priya"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where is the maker room?",
+          "options": [
+            "in the basement of the library",
+            "in the robotics room at school",
+            "at Okafor's Bike Shop"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did Priya go there?",
+          "options": [
+            "on the day it opened, at ten o'clock",
+            "the first Saturday after it opened, at ten o'clock",
+            "the first Saturday after it opened, at noon"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        2,
+        4
+      ],
+      "hint": "The place is in the first sentence. Read the third sentence carefully for the day and the time.",
+      "explain": "Priya built the arm in the maker room, in the basement of the library. She went on the first Saturday after it opened, at ten o'clock. Look at the first and third sentences.",
+      "inference": 0,
+      "tags": [
+        "who-where-when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i93",
+      "skill": "N1",
+      "passage": "n1-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Who showed Priya around the maker room?",
+      "options": [
+        "The librarian, Mrs. Hall",
+        "A young man who works as a helper",
+        "Ms. Ortiz",
+        "Priya's dad"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the words \"name tag\". Read what the tag said.",
+      "explain": "A young man with a HELPER name tag showed her around. It is in the fourth sentence.",
+      "inference": 0,
+      "tags": [
+        "who"
+      ]
+    },
+    {
+      "id": "n1-i94",
+      "skill": "N1",
+      "passage": "n1-p32",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that tells where the maker room is.",
+      "unit": "sentence",
+      "answer": [
+        0
+      ],
+      "evidence": [
+        0
+      ],
+      "hint": "Look for a building and a part of that building.",
+      "explain": "The maker room is in the basement of the Harbor Town library. It is in the first sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i95",
+      "skill": "N1",
+      "passage": "n1-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where is the sign for the Sun?",
+      "options": [
+        "Near the ferry dock",
+        "Beside the seawall",
+        "Next to a playground",
+        "Outside the library"
+      ],
+      "pictures": [
+        "⛴️",
+        "🌊",
+        "🛝",
+        "📚"
+      ],
+      "answer": 3,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the sentence with the word \"Sun\". Look for a place in it.",
+      "explain": "The Sun sign stands outside the library. It is in the third sentence.",
+      "inference": 0,
+      "tags": [
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i96",
+      "skill": "N1",
+      "passage": "n1-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where did the boys finish their walk?",
+      "options": [
+        "Outside the library, at the Sun sign",
+        "Near the ferry dock, at the Jupiter sign",
+        "Beside the seawall, at the Neptune sign",
+        "Next to a playground, at the Uranus sign"
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "The walk went from the Sun to the last planet. Find the sentence about the last planet.",
+      "explain": "They finished beside the seawall, at the Neptune sign. The tenth sentence says they walked from the Sun to Neptune, and the ninth sentence says Neptune is beside the seawall.",
+      "inference": 1,
+      "tags": [
+        "where",
+        "place-later"
+      ]
+    },
+    {
+      "id": "n1-i97",
+      "skill": "N1",
+      "passage": "n1-p33",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "Fill in the story map: who and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who walked the Planet Walk?",
+          "options": [
+            "Sam and Grandma Rose",
+            "Sam, Leo and Pixel",
+            "Leo and Priya"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did they walk it?",
+          "options": [
+            "Sunday afternoon",
+            "Sunday morning",
+            "Saturday afternoon"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        4
+      ],
+      "hint": "The first part of the story tells about the signs. Find the sentence where the people come in.",
+      "explain": "Sam, Leo and Pixel walked the path on Sunday afternoon. It is in the fifth sentence.",
+      "inference": 0,
+      "tags": [
+        "who",
+        "when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i98",
+      "skill": "N1",
+      "passage": "n1-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What time did the Bike Bus reach the school gate?",
+      "options": [
+        "8:00",
+        "8:45",
+        "8:30",
+        "8:15"
+      ],
+      "answer": 3,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "The arrival time is not given. Find the time of the first bell, and count back fifteen minutes.",
+      "explain": "The Bike Bus reached the gate at 8:15. The last sentence says the first bell rang fifteen minutes later, at 8:30.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math"
+      ]
+    },
+    {
+      "id": "n1-i99",
+      "skill": "N1",
+      "passage": "n1-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where did Sam join the Bike Bus?",
+      "options": [
+        "At Okafor's Bike Shop",
+        "At the corner by Rose's Bakery",
+        "Outside the library",
+        "At the school gate"
+      ],
+      "pictures": [
+        "🚲",
+        "🥐",
+        "📚",
+        "🏫"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the sentence with Sam's name. Look for the place where he was waiting.",
+      "explain": "Sam joined at the corner by Rose's Bakery. It is in the fifth sentence.",
+      "inference": 0,
+      "tags": [
+        "where",
+        "three-places"
+      ]
+    },
+    {
+      "id": "n1-i100",
+      "skill": "N1",
+      "passage": "n1-p34",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sort the riders by where they joined the Bike Bus.",
+      "bins": [
+        "At the bike shop",
+        "By Rose's Bakery",
+        "Outside the library"
+      ],
+      "cards": [
+        {
+          "text": "Mr. Okafor",
+          "bin": 0
+        },
+        {
+          "text": "Sam",
+          "bin": 1
+        },
+        {
+          "text": "Priya",
+          "bin": 2
+        },
+        {
+          "text": "Maya",
+          "bin": 2
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "hint": "The Bike Bus starts at one place and stops at others. Find where each rider was when the line came by.",
+      "explain": "Mr. Okafor leads the Bike Bus from the start, at his bike shop. Sam joined at the corner by Rose's Bakery. Priya and Maya joined outside the library.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "who",
+        "where",
+        "three-places"
+      ]
+    },
+    {
+      "id": "n1-i101",
+      "skill": "N1",
+      "passage": "n1-p35",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "This is a news report. Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who talked to the students from space?",
+          "options": [
+            "an astronaut on the space station",
+            "Mr. Dunn from the radio club",
+            "a sailor on a ship at sea",
+            "a scientist at the observatory"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where were the students?",
+          "options": [
+            "on the roof of the gym",
+            "in their classrooms",
+            "at the radio club",
+            "in the school gym"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the call begin?",
+          "options": [
+            "at 10:42 on a Tuesday in November",
+            "at 10:42 on a Thursday in November",
+            "at 9:42 on a Tuesday in November",
+            "at 10:42 on a Tuesday in October"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        2,
+        7
+      ],
+      "hint": "Read the first paragraph for the day, the month and the place. Then find the clock time at the start of the third paragraph.",
+      "explain": "An astronaut on the space station talked to students in the school gym. The call began at 10:42 on a Tuesday in November. The first paragraph gives the day, month and place, and the third paragraph gives the time.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "who-where-when",
+        "close-options",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i102",
+      "skill": "N1",
+      "passage": "n1-p35",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Who is the retired sailor with the white beard?",
+      "options": [
+        "Mr. Dunn, the leader of the island's radio club",
+        "The astronaut on the space station",
+        "A science teacher at Harbor Middle School",
+        "The captain of the Harbor Town ferry"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the white beard. The text tells what he did first. Read the next sentence to find out who he is.",
+      "explain": "He is Mr. Dunn, who leads the island's radio club. The second paragraph says the sailor set up the antenna, and the next sentence gives his name.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i103",
+      "skill": "N1",
+      "passage": "n1-p35",
+      "format": "tap",
+      "level": 4,
+      "prompt": "At about what time did the call end?",
+      "options": [
+        "10:33",
+        "10:42",
+        "10:51",
+        "10:52"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        11
+      ],
+      "hint": "Find the time of the first hello. Then use the number of minutes in the last sentence, not the number in the second paragraph, and count forward.",
+      "explain": "The call ended at about 10:51. It began at 10:42, and the last sentence says the voice faded nine minutes later. The ten minutes in the second paragraph only tells how long a call can usually last.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i104",
+      "skill": "N1",
+      "passage": "n1-p36",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What time did Sam finish the race?",
+      "options": [
+        "9:20",
+        "9:52",
+        "10:00",
+        "10:52"
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        12
+      ],
+      "hint": "Find the time Sam got his map at the start. Then find how many minutes after he started he crossed the line, and count forward.",
+      "explain": "Sam finished at 9:52. The second paragraph says he started at nine o'clock, and the last sentence says he finished fifty-two minutes later.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i105",
+      "skill": "N1",
+      "passage": "n1-p36",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Who is the woman in the red cap?",
+      "options": [
+        "A runner who finished in first place",
+        "Mrs. Hall, the librarian",
+        "Ms. Ortiz, Sam's science teacher",
+        "Grandma Rose"
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the red cap. The story tells her job in the race first. Read the next sentence to find her name.",
+      "explain": "She is Ms. Ortiz, Sam's science teacher. The second paragraph calls her the organizer, and the next sentence says who she is.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i106",
+      "skill": "N1",
+      "passage": "n1-p36",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build a sentence about where and when the race happened.",
+      "frame": "Sam started the race at {0} and finished it at {1} on {2}.",
+      "slots": [
+        {
+          "kind": "where",
+          "label": "Where did he start?",
+          "options": [
+            "the campsite in Story Woods",
+            "the old mill in Story Woods",
+            "the bridge over the creek",
+            "the lookout in Lantern Peaks"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did he finish?",
+          "options": [
+            "the bottom of a rocky hill",
+            "the old mill",
+            "the lookout in Lantern Peaks",
+            "the campsite in Story Woods"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When?",
+          "options": [
+            "the second Saturday in October",
+            "the first Saturday in October",
+            "the second Sunday in October",
+            "the second Saturday in November"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        11
+      ],
+      "hint": "The start is in the first sentence of the second paragraph. The finish is near the end of the third paragraph.",
+      "explain": "Sam started at the campsite in Story Woods and finished at the lookout in Lantern Peaks on the second Saturday in October. The second paragraph gives the start and the day. The third paragraph gives the finish.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "where",
+        "when",
+        "two-places",
+        "across-paragraphs",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i107",
+      "skill": "N1",
+      "passage": "n1-p37",
+      "format": "tap",
+      "level": 4,
+      "prompt": "When does the museum hold its gold panning day?",
+      "options": [
+        "Every summer, on the first Sunday in July",
+        "Every summer, on the last Saturday in July",
+        "Every summer, on the last Sunday in July",
+        "Once, more than a hundred years ago"
+      ],
+      "answer": 2,
+      "evidence": [
+        7
+      ],
+      "hint": "Find the word \"Today\". Check the day, the week and the month in that sentence.",
+      "explain": "The panning day is every summer, on the last Sunday in July. It is in the first sentence of the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i108",
+      "skill": "N1",
+      "passage": "n1-p37",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Who first found gold on the island?",
+      "options": [
+        "Mr. Varga",
+        "A miner who sailed from the mainland",
+        "A fisherman",
+        "Maya"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Go back to the very first sentence. Find who found the shiny yellow flake.",
+      "explain": "A fisherman found the first gold. The first sentence says he found a shiny yellow flake, and the second sentence says it was gold.",
+      "inference": 1,
+      "tags": [
+        "who"
+      ]
+    },
+    {
+      "id": "n1-i109",
+      "skill": "N1",
+      "passage": "n1-p37",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "This is a short history. Fill in the story map for last year's panning day.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who went to the panning day last year?",
+          "options": [
+            "Maya and Sam",
+            "the whole rock club",
+            "Leo and Mr. Okafor",
+            "Maya and Leo"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did they pan for gold?",
+          "options": [
+            "inside the mine museum",
+            "on the beach by the harbor",
+            "in the creek below the old mill",
+            "in a tunnel of the copper mine"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did they pan?",
+          "options": [
+            "the last Sunday in July, in the morning",
+            "the last Sunday in July, in the afternoon",
+            "the last Saturday in July, in the morning",
+            "more than a hundred years ago"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "The third paragraph has all three. The day is in its first sentence. The part of the day is in its third sentence.",
+      "explain": "Maya and Leo panned for gold in the creek below the old mill, on the last Sunday in July, in the morning. It is all in the third paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "who-where-when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i110",
+      "skill": "N1",
+      "passage": "n1-p38",
+      "format": "tap",
+      "level": 4,
+      "prompt": "On which night did the frogs cross Pond Lane this year?",
+      "options": [
+        "The first Friday in March",
+        "The second Friday in March",
+        "The second Saturday in March",
+        "The second Friday in April"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the words \"This year\". Check the day, the week and the month.",
+      "explain": "The frogs crossed on the second Friday in March. It is in the first sentence of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i111",
+      "skill": "N1",
+      "passage": "n1-p38",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Where were Sam, Maya and Priya while they carried the frogs?",
+      "options": [
+        "Beside the pond, the next morning",
+        "In the school science room",
+        "Under the leaves on the forest floor",
+        "At the edge of Pond Lane"
+      ],
+      "answer": 3,
+      "evidence": [
+        5,
+        8
+      ],
+      "hint": "The third paragraph says \"one side of the road\" but not its name. Look back to where the group gathered.",
+      "explain": "They were at the edge of Pond Lane. The second paragraph says the group gathered there, and the third paragraph says they worked on one side of the road.",
+      "inference": 1,
+      "tags": [
+        "where",
+        "place-earlier",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i112",
+      "skill": "N1",
+      "passage": "n1-p38",
+      "format": "tap",
+      "level": 4,
+      "prompt": "On which day did Maya hear the frogs calling?",
+      "options": [
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        11
+      ],
+      "hint": "Find the night of the crossing. Then find the words \"The next morning\" and count forward one day.",
+      "explain": "Maya heard the frogs on Saturday. The crossing was on a Friday night, and the last sentence says she went back the next morning.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "when-indirect",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i113",
+      "skill": "N1",
+      "passage": "n1-p39",
+      "format": "sort",
+      "level": 4,
+      "prompt": "The story happens in two places. Sort the events by where they happened.",
+      "bins": [
+        "At the bakery",
+        "In the festival tent"
+      ],
+      "cards": [
+        {
+          "text": "Sam and Grandma Rose sliced twelve apples.",
+          "bin": 0
+        },
+        {
+          "text": "The pie baked until the crust was golden.",
+          "bin": 0
+        },
+        {
+          "text": "Twenty pies sat in a row.",
+          "bin": 1
+        },
+        {
+          "text": "Three judges tasted every pie.",
+          "bin": 1
+        },
+        {
+          "text": "Mrs. Lin read the results.",
+          "bin": 1
+        },
+        {
+          "text": "Grandma Rose hung the red ribbon.",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        1,
+        4,
+        5,
+        6,
+        8,
+        10,
+        12
+      ],
+      "hint": "The first paragraph happens in one place and the second in another. Then check the place in the last sentence.",
+      "explain": "Slicing the apples, baking the pie and hanging the ribbon happened at the bakery. The row of pies, the judging and the results happened in the festival tent.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "where",
+        "two-places",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i114",
+      "skill": "N1",
+      "passage": "n1-p39",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Who is the judge in the white apron?",
+      "options": [
+        "Grandma Rose, who owns the bakery",
+        "Mrs. Lin, who owns the Lighthouse Café",
+        "The baker of pie number 14",
+        "Ms. Gray, the music teacher"
+      ],
+      "answer": 1,
+      "evidence": [
+        9
+      ],
+      "hint": "Find the white apron. Read to the end of that sentence for her job and her name.",
+      "explain": "The judge in the white apron is Mrs. Lin, who owns the Lighthouse Café. It is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i115",
+      "skill": "N1",
+      "passage": "n1-p39",
+      "format": "tap",
+      "level": 4,
+      "prompt": "When did Sam and Grandma Rose make the pie?",
+      "options": [
+        "On Saturday morning, just before the contest",
+        "On Thursday night, two nights before the contest",
+        "On Saturday evening, after the contest",
+        "On Friday night, the night before the contest"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Find the day of the contest in the first sentence. Then find the day they sliced the apples.",
+      "explain": "They made the pie on Friday night, the night before the contest. The first sentence says the contest was on Saturday, and the second sentence says they made the pie on Friday night.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "two-times"
+      ]
+    },
+    {
+      "id": "n1-i116",
+      "skill": "N1",
+      "passage": "n1-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "On which day did Ana win the final?",
+      "options": [
+        "Friday",
+        "Saturday",
+        "Sunday",
+        "Monday"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        3,
+        7
+      ],
+      "hint": "The last paragraph says \"the next day\". Find the day of the earlier races, then count forward one day.",
+      "explain": "Ana won the final on Sunday. The early races were on Saturday, and the final started the next day. The first paragraph also says the final was on Sunday afternoon.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "when-indirect",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i117",
+      "skill": "N1",
+      "passage": "n1-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Where were the races played?",
+      "options": [
+        "In the twins' living room",
+        "At the bus station",
+        "In the gym at Harbor Middle School",
+        "In the library's community room"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the first paragraph. Find the room with the two big screens.",
+      "explain": "The races were played in the library's community room. The first sentence names the library, and the second sentence names the room.",
+      "inference": 1,
+      "tags": [
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i118",
+      "skill": "N1",
+      "passage": "n1-p40",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "Fill in the story map: who and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who did Ana race in the fourth race on Saturday?",
+          "options": [
+            "Ben",
+            "a boy from Gull Island",
+            "a man who works at the bus station",
+            "a high school student"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "Who won the final?",
+          "options": [
+            "a high school student",
+            "Ben",
+            "a boy from Gull Island",
+            "Ana"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the final start?",
+          "options": [
+            "Sunday at two o'clock",
+            "Saturday at two o'clock",
+            "Sunday at four o'clock",
+            "Sunday morning"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        4,
+        7,
+        11
+      ],
+      "hint": "The fourth race is in the second paragraph. The final is in the third paragraph.",
+      "explain": "Ana raced Ben in the fourth race. Ana won the final, which started on Sunday at two o'clock. Look at the second and third paragraphs.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "when",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i119",
+      "skill": "N1",
+      "passage": "n1-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Who is the woman in the hard hat?",
+      "options": [
+        "Dr. Bell, the museum's paleontologist",
+        "Ms. Lund, the leader of the builders",
+        "A worker from the cargo boat",
+        "A visitor at the front of the line"
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the hard hat. The article tells her job first. Read the next sentence to find her name.",
+      "explain": "She is Ms. Lund, the leader of the builders. The second paragraph says the builders' leader wore the hard hat, and the next sentence gives her name.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i120",
+      "skill": "N1",
+      "passage": "n1-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Where were the builders waiting when the crates arrived?",
+      "options": [
+        "Inside the new hall at the museum",
+        "At their company on the mainland",
+        "At the dock in the harbor",
+        "On the cargo boat"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find where the crates arrived. Then read the next sentence to see where the builders were.",
+      "explain": "The builders were waiting at the dock. The second paragraph says the crates arrived at the harbor, and the builders were waiting at the dock.",
+      "inference": 0,
+      "tags": [
+        "where",
+        "two-places"
+      ]
+    },
+    {
+      "id": "n1-i121",
+      "skill": "N1",
+      "passage": "n1-p41",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "This is a news report. Fill in the story map: who and when.",
+      "slots": [
+        {
+          "kind": "when",
+          "label": "When did the crates arrive?",
+          "options": [
+            "the first Saturday in February",
+            "the first Monday in January",
+            "the second Monday in February",
+            "the second Monday in January"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the new hall open?",
+          "options": [
+            "the second Monday in January",
+            "the first Saturday in January",
+            "the first Saturday in February",
+            "the second Saturday in February"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "Who stood under the neck and looked up?",
+          "options": [
+            "Leo",
+            "Ms. Lund",
+            "Dr. Bell",
+            "Ben"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        4,
+        13,
+        14
+      ],
+      "hint": "There are two dates in the report. Find the date in the second paragraph and the date in the last paragraph. Then read the last sentence carefully.",
+      "explain": "The crates arrived on the second Monday in January, and the hall opened on the first Saturday in February. Ben stood under the neck. Look at the start of the second paragraph and at the last paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "who",
+        "when",
+        "two-times",
+        "across-paragraphs",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i122",
+      "skill": "N1",
+      "passage": "n1-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Where were Maya and Leo at a quarter to two?",
+      "options": [
+        "In front of the octopus tank upstairs",
+        "At the touch tank by the entrance",
+        "On the ladder beside the tank",
+        "On their way home"
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        6,
+        8
+      ],
+      "hint": "Find the time they arrived and the place they went first. Then find when they moved upstairs. Ask which place a quarter to two belongs to.",
+      "explain": "At a quarter to two, they were at the touch tank. They got there at half past one, and they went upstairs twenty minutes later, at ten minutes to two.",
+      "inference": 1,
+      "tags": [
+        "where",
+        "when",
+        "time-math",
+        "two-places"
+      ]
+    },
+    {
+      "id": "n1-i123",
+      "skill": "N1",
+      "passage": "n1-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Who is the young woman in the blue shirt?",
+      "options": [
+        "A visitor who came to see the feeding",
+        "Maya's art teacher",
+        "A scientist from the observatory",
+        "The aquarium's animal keeper"
+      ],
+      "answer": 3,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Find the blue shirt. Read the next sentence to find out her job.",
+      "explain": "She is the aquarium's animal keeper. The third paragraph says she climbed the ladder, and the next sentence tells her job.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i124",
+      "skill": "N1",
+      "passage": "n1-p42",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who watched the octopus?",
+          "options": [
+            "Maya and Sam",
+            "Maya and her dad",
+            "Leo and Ben",
+            "Maya and Leo"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where is the octopus tank?",
+          "options": [
+            "by the entrance of the aquarium",
+            "inside the touch tank",
+            "upstairs in the Harbor Town Aquarium",
+            "at the end of the fishing pier"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When was the feeding they watched?",
+          "options": [
+            "last Saturday at two o'clock",
+            "last Saturday at half past one",
+            "last Sunday at two o'clock",
+            "last Saturday at three o'clock"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        4,
+        5,
+        8,
+        9
+      ],
+      "hint": "The day is in the second paragraph. The clock time is at the start of the third paragraph. Check the times carefully, because the story has three of them.",
+      "explain": "Maya and Leo watched the octopus upstairs in the Harbor Town Aquarium, last Saturday at two o'clock. The second paragraph gives the day and the stairs, and the third paragraph gives the time.",
+      "inference": 1,
+      "tags": [
+        "who-where-when",
+        "close-options",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i125",
+      "skill": "N1",
+      "passage": "n1-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Who is the man wearing large headphones?",
+      "options": [
+        "A violinist from the high school",
+        "Mr. Quinn, the sound engineer",
+        "Ms. Gray's helper from the school",
+        "A driver from the bus station"
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the large headphones. Read the next sentence for his job and his name.",
+      "explain": "He is Mr. Quinn, the sound engineer. The second paragraph tells his job first and his name at the end of the same sentence.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i126",
+      "skill": "N1",
+      "passage": "n1-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "On which day of the week was the song played on the radio?",
+      "options": [
+        "Tuesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        3,
+        11
+      ],
+      "hint": "Find the day of the recording and count forward twelve days. Then check the first sentence of the story to see when the station plays local music.",
+      "explain": "The song was played on a Sunday. Twelve days after a Tuesday is a Sunday. The first sentence also says the station plays local music every Sunday evening.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i127",
+      "skill": "N1",
+      "passage": "n1-p43",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who drove the students to the studio?",
+          "options": [
+            "Mr. Quinn",
+            "Priya's mom",
+            "Ms. Gray",
+            "a bus driver"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where is the studio?",
+          "options": [
+            "inside Harbor Middle School",
+            "on the top floor of the library",
+            "next to the school music room",
+            "in a small brick building behind the bus station"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When was the recording?",
+          "options": [
+            "the Tuesday after winter break, at four o'clock",
+            "a Sunday evening during winter break",
+            "the Tuesday before winter break, at two o'clock",
+            "the Tuesday before winter break, at four o'clock"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Read the first two sentences of the second paragraph. Check every part of each choice: before or after, the day and the clock time.",
+      "explain": "Ms. Gray drove the students to a small brick building behind the bus station. The recording was the Tuesday before winter break, at four o'clock. It is in the first two sentences of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "who-where-when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i128",
+      "skill": "N1",
+      "passage": "n1-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "When did Priya check the greenhouse after the storm?",
+      "options": [
+        "On Sunday, during the snowstorm",
+        "On Monday morning, before the first bell",
+        "On Saturday, before the storm began",
+        "On Monday afternoon, after school"
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the word \"hurried\". Read the time words at the start and the end of that sentence.",
+      "explain": "Priya checked the greenhouse on Monday morning, before the first bell. It is in the second sentence of the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "when",
+        "two-times"
+      ]
+    },
+    {
+      "id": "n1-i129",
+      "skill": "N1",
+      "passage": "n1-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Where did the club test the robot first?",
+      "options": [
+        "In the greenhouse",
+        "In the school parking lot",
+        "In Ms. Ortiz's car",
+        "In the robotics room"
+      ],
+      "answer": 3,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the word \"tested\". The robot was in one place before it moved to the greenhouse.",
+      "explain": "The club tested the robot in the robotics room first. The last sentence of the second paragraph says they tested it there for three weeks before they moved it.",
+      "inference": 0,
+      "tags": [
+        "where",
+        "two-places"
+      ]
+    },
+    {
+      "id": "n1-i130",
+      "skill": "N1",
+      "passage": "n1-p44",
+      "format": "sort",
+      "level": 4,
+      "prompt": "These words are from the story. Does each one tell where or when?",
+      "bins": [
+        "Tells where",
+        "Tells when"
+      ],
+      "cards": [
+        {
+          "text": "behind Harbor Middle School",
+          "bin": 0
+        },
+        {
+          "text": "every Saturday and Sunday",
+          "bin": 1
+        },
+        {
+          "text": "in January",
+          "bin": 1
+        },
+        {
+          "text": "between the rows of plants",
+          "bin": 0
+        },
+        {
+          "text": "the weekend of the big February snowstorm",
+          "bin": 1
+        },
+        {
+          "text": "at the end of its track",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        0,
+        2,
+        3,
+        4,
+        7,
+        9
+      ],
+      "hint": "Ask \"Where?\" and \"When?\" about each card. A month can be part of a \"when\" card even when it is joined to other words.",
+      "explain": "\"Every Saturday and Sunday\", \"in January\" and \"the weekend of the big February snowstorm\" tell when. \"Behind Harbor Middle School\", \"between the rows of plants\" and \"at the end of its track\" tell where.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "where",
+        "when"
+      ]
+    },
+    {
+      "id": "n1-i131",
+      "skill": "N1",
+      "passage": "n1-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What time did the game start again?",
+      "options": [
+        "10:20",
+        "10:45",
+        "11:15",
+        "11:45"
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        10,
+        11
+      ],
+      "hint": "Find the time of the last thunder. Then find how long the teams had to wait, and count forward.",
+      "explain": "The game started again at 11:15. The last thunder came at 10:45, and the next sentence says the whistle blew thirty minutes later. The first paragraph explains the thirty-minute rule.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i132",
+      "skill": "N1",
+      "passage": "n1-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Where did the teams wait during the storm?",
+      "options": [
+        "Under the trees beside the field",
+        "Inside the clubhouse",
+        "In their cars",
+        "At the twins' house"
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "The sentence where they wait says \"inside\" but does not name the building. Look at the sentence before it.",
+      "explain": "The teams waited inside the clubhouse. The referee pointed at the clubhouse, and the next sentence says both teams waited inside.",
+      "inference": 1,
+      "tags": [
+        "where",
+        "place-earlier"
+      ]
+    },
+    {
+      "id": "n1-i133",
+      "skill": "N1",
+      "passage": "n1-p45",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "Fill in the story map: where and when.",
+      "slots": [
+        {
+          "kind": "where",
+          "label": "Where was the game?",
+          "options": [
+            "at the school field",
+            "on Gull Island",
+            "at the skate park",
+            "at Pier Field"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the game first start?",
+          "options": [
+            "the first Sunday in June, at ten o'clock",
+            "the first Saturday in July, at ten o'clock",
+            "the first Saturday in June, at eleven o'clock",
+            "the first Saturday in June, at ten o'clock"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the referee stop the game?",
+          "options": [
+            "at 10:20",
+            "at 10:00",
+            "at 10:45",
+            "at 11:15"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hint": "The day and the place are in the first sentence of the second paragraph. For the stop, find the start time and add the minutes in the sentence about the thunder.",
+      "explain": "The game was at Pier Field. It started on the first Saturday in June, at ten o'clock. Thunder came twenty minutes into the game, so the referee stopped it at 10:20.",
+      "inference": 1,
+      "tags": [
+        "where",
+        "when",
+        "time-math",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i134",
+      "skill": "N1",
+      "passage": "n1-p46",
+      "format": "storymap",
+      "level": 5,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who came to the school as a guest?",
+          "options": [
+            "Dr. Lee, who runs the weather station",
+            "Dr. Hale, a scientist from the observatory",
+            "a parent with a telescope",
+            "a scientist from the museum"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did the school watch the eclipse?",
+          "options": [
+            "on the roof of the school",
+            "at the observatory on Lantern Peaks",
+            "on the soccer field behind the gym",
+            "inside the gym"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the eclipse begin?",
+          "options": [
+            "at 1:10 on a Saturday in early April",
+            "just before lunch on a school day in early April",
+            "at 1:10 on a school day in late April",
+            "at 1:10 on a school day in early April"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "hint": "The day and the month are at the start of the second paragraph. The guest's name comes after her job. The place and the clock time are in the last sentence of that paragraph.",
+      "explain": "Dr. Hale, a scientist from the observatory, came as a guest. The school watched from the soccer field behind the gym, and the eclipse began at 1:10 on a school day in early April. It is all in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "who-where-when",
+        "close-options",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i135",
+      "skill": "N1",
+      "passage": "n1-p46",
+      "format": "tap",
+      "level": 5,
+      "prompt": "At about what time did the eclipse end?",
+      "options": [
+        "1:10",
+        "2:40",
+        "3:40",
+        "4:10"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        12
+      ],
+      "hint": "Find the time the eclipse began. Then find how long it lasted in the last paragraph, and count forward.",
+      "explain": "The eclipse ended at about 3:40. The second paragraph says it began at 1:10, and the last paragraph says it lasted two and a half hours.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i136",
+      "skill": "N1",
+      "passage": "n1-p46",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Who made dozens of tiny crescents appear on paper?",
+      "options": [
+        "Priya, with a cereal box",
+        "Dr. Hale, with a dark filter",
+        "Sam, with his notebook",
+        "Leo, with a kitchen colander"
+      ],
+      "answer": 3,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the word \"crescents\" in the third paragraph. The sentence says \"he\". Look back one sentence to see who that is.",
+      "explain": "Leo made the crescents with a kitchen colander. The third paragraph says Leo brought it, and the next sentence says he held it above the paper.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n1-i137",
+      "skill": "N1",
+      "passage": "n1-p47",
+      "format": "tap",
+      "level": 5,
+      "prompt": "When did the old steam engine come back to the island?",
+      "options": [
+        "For one weekend in May, a hundred years ago",
+        "For one weekend in April, this spring",
+        "For one weekend in May, this spring",
+        "For the whole summer, this year"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        8
+      ],
+      "hint": "The third paragraph gives the month. Look back at the first sentence to find which year the birthday is.",
+      "explain": "The steam engine came back for one weekend in May, this spring. The third paragraph gives the weekend in May, and the first sentence says the birthday is this spring.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "across-paragraphs",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i138",
+      "skill": "N1",
+      "passage": "n1-p47",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Who is the man in the striped cap?",
+      "options": [
+        "A fireman who shovels coal into the firebox",
+        "A worker who built one of the eleven bridges",
+        "The driver of the steam engine, who once drove trains on the coast line",
+        "A passenger who waved from a bridge"
+      ],
+      "answer": 2,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Find the striped cap. Read that sentence and the next one to learn his job, then and now.",
+      "explain": "He is the driver of the steam engine. The third paragraph says the driver wore the striped cap, and the next sentence says he drove trains on the coast line for thirty years.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i139",
+      "skill": "N1",
+      "passage": "n1-p47",
+      "format": "sort",
+      "level": 5,
+      "prompt": "This article tells about long ago and about today. Sort each fact by when it is true.",
+      "bins": [
+        "A hundred years ago",
+        "Today"
+      ],
+      "cards": [
+        {
+          "text": "Trains were pulled by steam engines.",
+          "bin": 0
+        },
+        {
+          "text": "A fireman shoveled coal into a firebox.",
+          "bin": 0
+        },
+        {
+          "text": "The trip to Shell Beach took almost two hours.",
+          "bin": 0
+        },
+        {
+          "text": "The trip to Shell Beach takes one hour.",
+          "bin": 1
+        },
+        {
+          "text": "The trains run on diesel engines.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "hint": "Look for time words such as \"The first trains\", \"In those days\" and \"Today\". Each fact belongs to the time word that starts its sentence.",
+      "explain": "Steam engines, the fireman and the two-hour trip belong to a hundred years ago. The one-hour trip and diesel engines are true today. The second paragraph tells both.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "when",
+        "then-and-now"
+      ]
+    },
+    {
+      "id": "n1-i140",
+      "skill": "N1",
+      "passage": "n1-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Who is the woman with short gray hair?",
+      "options": [
+        "Captain Ruth Lane, the ferry captain",
+        "Dr. Shaw, the survey boat's chief scientist",
+        "Mrs. Hall, the librarian",
+        "A scientist from the observatory"
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the short gray hair. The article tells her job first. Read the next sentence to find her name.",
+      "explain": "She is Dr. Shaw, the survey boat's chief scientist. The second paragraph tells her job first, and the next sentence gives her name.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i141",
+      "skill": "N1",
+      "passage": "n1-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "When did the ferry first use the new route?",
+      "options": [
+        "During the three weeks of the survey",
+        "On Dr. Shaw's last evening on the island",
+        "Two weeks after Dr. Shaw's talk at the library",
+        "Last summer, before the survey began"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        13
+      ],
+      "hint": "Find the words \"Two weeks after\" in the last paragraph. Then look back to see where and when that event happened.",
+      "explain": "The ferry first used the new route two weeks after Dr. Shaw's talk at the library. The last paragraph says \"two weeks after the talk\", and the second paragraph says the talk was at the library.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "when-indirect",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i142",
+      "skill": "N1",
+      "passage": "n1-p48",
+      "format": "sort",
+      "level": 5,
+      "prompt": "This article has three places. Sort the events by where they happened.",
+      "bins": [
+        "At the library",
+        "On the water",
+        "On the seawall"
+      ],
+      "cards": [
+        {
+          "text": "A survey boat went back and forth in long, straight lines.",
+          "bin": 1
+        },
+        {
+          "text": "Dr. Shaw showed a colorful chart on a screen.",
+          "bin": 0
+        },
+        {
+          "text": "Sam noticed a long yellow strip on the new chart.",
+          "bin": 0
+        },
+        {
+          "text": "Captain Ruth Lane steered the ferry on the new route.",
+          "bin": 1
+        },
+        {
+          "text": "Sam held his own copy of the chart.",
+          "bin": 2
+        }
+      ],
+      "evidence": [
+        2,
+        5,
+        7,
+        10,
+        11,
+        13,
+        14
+      ],
+      "hint": "Find where the talk was. Everything Sam saw on the screen happened there. Then find where Sam stood at the very end.",
+      "explain": "The chart on the screen and the yellow strip were at the library talk. The survey boat and the ferry were on the water. At the end, Sam held his chart on the seawall.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "where",
+        "three-places",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i143",
+      "skill": "N1",
+      "passage": "n1-p49",
+      "format": "storymap",
+      "level": 5,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who led the tour?",
+          "options": [
+            "Ms. Ortiz",
+            "Dr. Bell",
+            "Mr. Varga",
+            "a worker from the gift shop"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did the rocks glow green and red?",
+          "options": [
+            "at the bottom of the oldest tunnel",
+            "in the museum gift shop",
+            "in Maya's bedroom",
+            "at the museum's front door"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the tour begin?",
+          "options": [
+            "at seven o'clock on the first Friday in October",
+            "at seven o'clock on a Wednesday in October",
+            "at sunset on the last Friday in November",
+            "at seven o'clock on the last Friday in October"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        6,
+        7,
+        10
+      ],
+      "hint": "The day is in the first sentence of the second paragraph, and the clock time is in the next sentence. The guide's name comes after his description.",
+      "explain": "Mr. Varga led the tour. The rocks glowed at the bottom of the oldest tunnel. The tour began at seven o'clock on the last Friday in October. Look at the second and third paragraphs.",
+      "inference": 1,
+      "tags": [
+        "who-where-when",
+        "close-options",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i144",
+      "skill": "N1",
+      "passage": "n1-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "At about what time did the club climb back up the staircase?",
+      "options": [
+        "7:00",
+        "7:15",
+        "7:45",
+        "8:45"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        12
+      ],
+      "hint": "Find the time the club met at the door. Then find how many minutes after the start they climbed back up, and count forward.",
+      "explain": "They climbed back up at about 7:45. The tour began at seven o'clock, and the last paragraph says they climbed up forty-five minutes after it began.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i145",
+      "skill": "N1",
+      "passage": "n1-p49",
+      "format": "sort",
+      "level": 5,
+      "prompt": "The story has three places. Sort the events by where they happened.",
+      "bins": [
+        "In the tunnel",
+        "In the gift shop",
+        "In Maya's bedroom"
+      ],
+      "cards": [
+        {
+          "text": "Everyone switched off their lamps.",
+          "bin": 0
+        },
+        {
+          "text": "Green and red streaks glowed in the rock.",
+          "bin": 0
+        },
+        {
+          "text": "Maya bought a piece of fluorite.",
+          "bin": 1
+        },
+        {
+          "text": "Mr. Varga said never to shine the flashlight into anyone's eyes.",
+          "bin": 1
+        },
+        {
+          "text": "The fluorite glowed blue.",
+          "bin": 2
+        }
+      ],
+      "evidence": [
+        5,
+        7,
+        10,
+        13,
+        14
+      ],
+      "hint": "Find the place words at the start of each part: \"At the bottom\", \"In the gift shop\" and \"in her bedroom\". Each event belongs to the place named before it.",
+      "explain": "The lamps went off and the rock glowed in the tunnel. Maya bought the fluorite, and Mr. Varga gave his reminder, in the gift shop. The fluorite glowed blue in her bedroom.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "where",
+        "three-places",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i146",
+      "skill": "N1",
+      "passage": "n1-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Who is the woman with reading glasses on a chain?",
+      "options": [
+        "A guard who works at night",
+        "Ana and Ben's mom",
+        "Dr. Bell, the museum's fossil expert",
+        "A scientist from a museum on the mainland"
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the reading glasses. The story tells her job first. Read the next sentence to find her name.",
+      "explain": "She is Dr. Bell, the museum's fossil expert. The second paragraph tells her job first, and the next sentence says she introduced herself as Dr. Bell.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i147",
+      "skill": "N1",
+      "passage": "n1-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "At about what time were the students picked up?",
+      "options": [
+        "At about seven o'clock",
+        "At about eight o'clock",
+        "At about nine o'clock",
+        "At about ten o'clock"
+      ],
+      "answer": 2,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Find the time the guard woke everyone. Then find how much later the families came, and count forward.",
+      "explain": "The students were picked up at about nine o'clock. The guard woke them at seven o'clock, and the last sentence says the families came two hours later.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math"
+      ]
+    },
+    {
+      "id": "n1-i148",
+      "skill": "N1",
+      "passage": "n1-p50",
+      "format": "storymap",
+      "level": 5,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who went to the sleepover?",
+          "options": [
+            "Ana, Ben and Sam",
+            "Ben, Leo and Maya",
+            "Ana, Ben and Leo",
+            "Sam, Leo and Priya"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did the students sleep?",
+          "options": [
+            "in the museum café",
+            "beneath the Triceratops skeleton in the dinosaur hall",
+            "in Dr. Bell's lab",
+            "in tents outside the museum"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When was the sleepover?",
+          "options": [
+            "the night of the third Friday in April",
+            "the night of the third Saturday in April",
+            "the night of the third Friday in August",
+            "the night of the first Friday in April"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        7
+      ],
+      "hint": "The names and the date are in the second sentence. For the place, find the word \"sleeping bags\" in the third paragraph.",
+      "explain": "Ana, Ben and Leo slept beneath the Triceratops skeleton in the dinosaur hall, on the night of the third Friday in April. The first paragraph gives the names and the date, and the third paragraph gives the place.",
+      "inference": 0,
+      "tags": [
+        "who-where-when",
+        "close-options",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i149",
+      "skill": "N1",
+      "passage": "n1-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Who looks after the robot boat?",
+      "options": [
+        "Priya, from the robotics club",
+        "A fisherman at the pier",
+        "Ms. Ortiz, the science teacher",
+        "Ms. Kaur, a young engineer from Harbor Town"
+      ],
+      "answer": 3,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the words \"looks after\". The article tells the person's job first. Read the next sentence to find her name.",
+      "explain": "Ms. Kaur looks after the robot. The third paragraph says a young engineer from Harbor Town looks after it, and the next sentence gives her name.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i150",
+      "skill": "N1",
+      "passage": "n1-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Where does the robot go when its net is full?",
+      "options": [
+        "To the corners near the docks",
+        "To the robotics room at the school",
+        "To its station at the end of the fishing pier",
+        "To a university on the mainland"
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        12
+      ],
+      "hint": "Find the words \"net is full\" in the second paragraph. Read where it goes next.",
+      "explain": "The robot goes to its station at the end of the fishing pier. It is in the last sentence of the second paragraph. Ms. Kaur says the same thing in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "where"
+      ]
+    },
+    {
+      "id": "n1-i151",
+      "skill": "N1",
+      "passage": "n1-p51",
+      "format": "build",
+      "level": 5,
+      "prompt": "This is a news report. Build a sentence about who, and when.",
+      "frame": "{0} showed the robotics club a video in {1}, and the club wrote to the town council {2}.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who showed the video?",
+          "options": [
+            "Priya",
+            "Ms. Ortiz",
+            "Ms. Kaur",
+            "a fisherman"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When was the visit?",
+          "options": [
+            "last fall",
+            "May",
+            "the robot's first month",
+            "March"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When did the club write?",
+          "options": [
+            "the same day",
+            "a month later",
+            "last fall",
+            "two days later"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        10,
+        11,
+        13
+      ],
+      "hint": "Read the last paragraph. The month is in its first sentence. The words that tell when the club wrote are at the start of its last sentence.",
+      "explain": "Ms. Kaur showed the robotics club a video in March, and the club wrote to the town council two days later. It is all in the last paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "who",
+        "when",
+        "two-times"
+      ]
+    },
+    {
+      "id": "n1-i152",
+      "skill": "N1",
+      "passage": "n1-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Who is the man in the red wool jacket?",
+      "options": [
+        "A visitor from Harbor Town",
+        "Mr. Dale, the farmer",
+        "The twins' dad",
+        "Mr. Okafor from the bike shop"
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the red wool jacket. Read the next sentence to find his name and his job.",
+      "explain": "He is Mr. Dale, the farmer. The second paragraph describes him at the gate, and the next sentence gives his name and job.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i153",
+      "skill": "N1",
+      "passage": "n1-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Where did the twins eat pancakes?",
+      "options": [
+        "Inside the sugar shack, beside the fire",
+        "On the wagon in the woods",
+        "At long tables outside the sugar shack",
+        "At home in Harbor Town"
+      ],
+      "answer": 2,
+      "evidence": [
+        14
+      ],
+      "hint": "Find the word \"pancakes\". Check whether the place is inside or outside.",
+      "explain": "They ate pancakes at long tables outside the sugar shack. It is in the first sentence of the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "where",
+        "three-places",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i154",
+      "skill": "N1",
+      "passage": "n1-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "When did the twins visit the sugar shack?",
+      "options": [
+        "The first Saturday in March, the morning after a hard frost",
+        "The second Saturday in March, during a warm rain",
+        "The second Sunday in March, the morning after a hard frost",
+        "The second Saturday in March, the morning after a hard frost"
+      ],
+      "answer": 3,
+      "evidence": [
+        5,
+        7
+      ],
+      "hint": "The sentence about the visit says \"the month\" but does not name it. Look back to find the month when the shack is open.",
+      "explain": "They visited on the second Saturday in March, the morning after a hard frost. The second paragraph says the shack opens every March, and then it says \"the second Saturday of the month\".",
+      "inference": 1,
+      "tags": [
+        "when",
+        "when-indirect",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i155",
+      "skill": "N1",
+      "passage": "n1-p53",
+      "format": "sort",
+      "level": 5,
+      "prompt": "The music day had three stages. Sort the events by where they happened.",
+      "bins": [
+        "Ferry dock stage",
+        "Town square stage",
+        "Lighthouse stage"
+      ],
+      "cards": [
+        {
+          "text": "Ben carried speakers for Mr. Quinn.",
+          "bin": 0
+        },
+        {
+          "text": "The Grade 7 band played six songs.",
+          "bin": 1
+        },
+        {
+          "text": "Ana and Maya clapped from the front row.",
+          "bin": 1
+        },
+        {
+          "text": "A fiddle group from Gull Island played.",
+          "bin": 2
+        },
+        {
+          "text": "Ben joined his friends on the grass.",
+          "bin": 2
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        5,
+        8,
+        9,
+        11
+      ],
+      "hint": "The first paragraph names the three stages. Then follow each person: where the band played, where Ben carried speakers, and where everyone met at the end.",
+      "explain": "Ben carried speakers to the ferry dock stage. The band played, and Ana and Maya clapped, at the town square stage. The fiddle group played, and Ben joined his friends, at the lighthouse stage.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "where",
+        "three-places",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i156",
+      "skill": "N1",
+      "passage": "n1-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Who is the man in the straw hat?",
+      "options": [
+        "A fiddle player from Gull Island",
+        "The twins' dad",
+        "Ms. Gray's helper from the school",
+        "Mr. Quinn, the festival's sound director"
+      ],
+      "answer": 3,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the straw hat. Read the next sentence for his job and his name.",
+      "explain": "He is Mr. Quinn, the festival's sound director. The second paragraph says Ben helped him, and the next sentence tells his job and his name.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i157",
+      "skill": "N1",
+      "passage": "n1-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "At what time did the band finish playing?",
+      "options": [
+        "1:00",
+        "2:00",
+        "2:40",
+        "3:40"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        7
+      ],
+      "hint": "Find the time the band was invited to play. Then find how long the set lasted, and count forward.",
+      "explain": "The band finished at 2:40. The first paragraph says they played at two o'clock, and the third paragraph says the set lasted forty minutes.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i158",
+      "skill": "N1",
+      "passage": "n1-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "At about what time did the water stop rising?",
+      "options": [
+        "9:00",
+        "9:15",
+        "11:20",
+        "At lunchtime"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        10
+      ],
+      "hint": "The third paragraph does not give the time. The water stops rising at the highest tide. Look back for the time of the highest tide.",
+      "explain": "The water stopped rising at about 11:20. The second paragraph says the highest king tide would come at 11:20 in the morning, and the third paragraph says when the water stopped rising.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "when-indirect",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i159",
+      "skill": "N1",
+      "passage": "n1-p54",
+      "format": "storymap",
+      "level": 5,
+      "prompt": "Fill in the story map: who, where and when.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who built the tide gauge?",
+          "options": [
+            "Ms. Ortiz",
+            "Priya",
+            "Sam",
+            "Maya"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where was the tide gauge?",
+          "options": [
+            "on top of the seawall",
+            "in the science room",
+            "on the ladder at the end of the ferry dock",
+            "on the beach below the lighthouse"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When was the highest king tide?",
+          "options": [
+            "the third Saturday in January",
+            "the third Sunday in January",
+            "the first Saturday in January",
+            "the third Saturday in June"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        4,
+        6
+      ],
+      "hint": "Read the second paragraph. Check each part of the date, and find where Priya tied the pole.",
+      "explain": "Priya built the gauge and tied it to the ladder at the end of the ferry dock. The highest king tide was on the third Saturday in January. It is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "who-where-when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i160",
+      "skill": "N1",
+      "passage": "n1-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Where were Sam and Maya while Priya called out the numbers?",
+      "options": [
+        "On the ladder at the end of the dock",
+        "On a fishing boat beside the dock",
+        "In the science room",
+        "On the seawall, with clipboards"
+      ],
+      "answer": 3,
+      "evidence": [
+        8
+      ],
+      "hint": "Find the words \"called out\". Read the start of that sentence for the place.",
+      "explain": "Sam and Maya were on the seawall with clipboards. It is in the first sentence of the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "where",
+        "two-places"
+      ]
+    },
+    {
+      "id": "n1-i161",
+      "skill": "N1",
+      "passage": "n1-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On what date did Sam and Grandma Rose visit the creek?",
+      "options": [
+        "October 3",
+        "October 7",
+        "October 10",
+        "October 14"
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        8
+      ],
+      "hint": "Find the date and the day of the week when the first fish were seen. Then count forward to the next Saturday.",
+      "explain": "They visited on October 7. The first fish were seen on Tuesday, October 3, and the third paragraph says they went the following Saturday. Four days after Tuesday, October 3, is Saturday, October 7.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i162",
+      "skill": "N1",
+      "passage": "n1-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Who is the woman in the green uniform?",
+      "options": [
+        "A visitor walking her dog",
+        "A worker from Rose's Bakery",
+        "A scientist from the museum",
+        "The park ranger who counts the salmon"
+      ],
+      "answer": 3,
+      "evidence": [
+        6,
+        12
+      ],
+      "hint": "The last paragraph says \"the ranger\". Look back to the second paragraph to find what the ranger does.",
+      "explain": "She is the park ranger who counts the salmon. The second paragraph says the ranger counts the salmon and put up the notice, and the last paragraph says the ranger wore a green uniform.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i163",
+      "skill": "N1",
+      "passage": "n1-p55",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells when the salmon usually come back to the creek in Story Woods.",
+      "unit": "sentence",
+      "answer": [
+        4
+      ],
+      "evidence": [
+        4
+      ],
+      "hint": "Look for the word \"usually\". This year's date is a different sentence.",
+      "explain": "The salmon usually come back in the first two weeks of October. It is the first sentence of the second paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "when",
+        "close-options"
+      ]
+    },
+    {
+      "id": "n1-i164",
+      "skill": "N1",
+      "passage": "n1-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What time did Leo and his dad reach the lookout?",
+      "options": [
+        "8:30",
+        "9:30",
+        "10:00",
+        "10:30"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        10
+      ],
+      "hint": "Find the time the family ride started. It is not eight o'clock. Then find how long the ride took, and count forward.",
+      "explain": "They reached the lookout at 10:00. The family ride left thirty minutes after eight, at 8:30, and the third paragraph says they arrived an hour and a half later.",
+      "inference": 1,
+      "tags": [
+        "when",
+        "time-math",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n1-i165",
+      "skill": "N1",
+      "passage": "n1-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Who is the man with the toolbox?",
+      "options": [
+        "Leo's dad",
+        "Mr. Okafor, who owns the bike shop",
+        "One of the fastest riders",
+        "A race judge from the lookout"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5,
+        6
+      ],
+      "hint": "Find the toolbox. Read the next sentence to find out who he is.",
+      "explain": "He is Mr. Okafor. The second paragraph says a man with a toolbox checked the bikes, and the next sentence gives his name.",
+      "inference": 1,
+      "tags": [
+        "who",
+        "role-before-name"
+      ]
+    },
+    {
+      "id": "n1-i166",
+      "skill": "N1",
+      "passage": "n1-p56",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build a sentence about where and when Leo rode.",
+      "frame": "Leo and his dad started at {0} and finished at {1} on {2}.",
+      "slots": [
+        {
+          "kind": "where",
+          "label": "Where did they start?",
+          "options": [
+            "Okafor's Bike Shop",
+            "the harbor",
+            "the fishing piers",
+            "the lookout on Lantern Peaks"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "where",
+          "label": "Where did they finish?",
+          "options": [
+            "the harbor",
+            "the fishing piers",
+            "Okafor's Bike Shop",
+            "the lookout on Lantern Peaks"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "when",
+          "label": "When?",
+          "options": [
+            "the second Saturday in August",
+            "the second Sunday in August",
+            "the first Sunday in August",
+            "the second Sunday in July"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        10
+      ],
+      "hint": "The finish of the family ride is in the first paragraph. The day and the starting line are in the second paragraph.",
+      "explain": "Leo and his dad started at Okafor's Bike Shop and finished at the lookout on Lantern Peaks on the second Sunday in August. The first paragraph says where the family ride ends, and the second paragraph gives the day and the start.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "where",
+        "when",
+        "two-places",
         "across-paragraphs",
         "close-options"
       ]

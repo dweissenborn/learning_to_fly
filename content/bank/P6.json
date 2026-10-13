@@ -24,28 +24,28 @@
     },
     {
       "id": "p6-p02",
-      "title": "The Lion and the Mouse",
+      "title": "The Dog, the Cock and the Fox",
       "kind": "fable",
       "sentences": [
-        "A lion was asleep in the sun.",
-        "A small mouse ran across his paw and woke him.",
-        "The lion trapped the mouse under his big paw.",
-        "\"Please let me go,\" said the mouse. \"One day, I may help you.\"",
-        "The lion laughed at the idea of a tiny mouse helping a lion.",
-        "But he lifted his paw and let the mouse go.",
-        "Days later, the lion got caught in a rope net.",
-        "He pulled hard, but the ropes held him tight.",
-        "The mouse heard him roar and ran to help.",
-        "She chewed through the ropes, one by one.",
-        "Soon the lion was free.",
-        "\"Thank you, little friend,\" said the lion.",
-        "After that, the lion and the mouse were friends."
+        "A dog and a rooster were good friends.",
+        "One night, they slept under a big tree.",
+        "The rooster flew up to a branch.",
+        "The dog slept in a hollow at the bottom of the tree.",
+        "In the morning, the rooster crowed.",
+        "A hungry fox heard him and came to the tree.",
+        "\"What a lovely song!\" said the fox. \"Please come down.\"",
+        "The rooster knew the fox was trying to trick him.",
+        "\"Wake my friend at the bottom first,\" said the rooster. \"He will show you the way up.\"",
+        "The fox went to find the friend.",
+        "Out jumped the dog, barking loudly.",
+        "The fox ran away as fast as he could.",
+        "Then the two friends walked on together."
       ],
-      "picture": "🦁🐭",
+      "picture": "🐕🐓🦊",
       "topics": ["animals", "friends"],
       "level": 2,
       "socialLoad": 1,
-      "credit": { "title": "The Lion and the Mouse", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Dog, the Cock and the Fox", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "p6-p03",
@@ -96,29 +96,26 @@
     },
     {
       "id": "p6-p05",
-      "title": "The North Wind and the Sun",
+      "title": "The Fox and the Leopard",
       "kind": "fable",
       "sentences": [
-        "The North Wind and the Sun had an argument.",
-        "Each one said, \"I am the strongest.\"",
-        "Just then, a man walked down the road in a warm coat.",
-        "\"Let's have a contest,\" said the Sun.",
-        "\"Whoever can get the coat off that man is the strongest.\"",
-        "The Wind went first.",
-        "He blew a cold, hard blast at the man.",
-        "But the harder he blew, the tighter the man held his coat.",
-        "At last, the Wind stopped.",
-        "Then the Sun came out from behind a cloud.",
-        "She shone warm and gentle on the man.",
-        "Soon the man wiped his forehead.",
-        "He took off his coat and sat down in the shade of a tree.",
-        "The Sun won the contest."
+        "A fox and a leopard were resting in the shade of a tree.",
+        "The leopard looked down at his golden coat, which was covered in dark spots.",
+        "\"Look at my beautiful coat,\" he said. \"No other animal in the forest has a coat like mine.\"",
+        "The fox had a plain red coat, but she did not mind.",
+        "\"Your coat is very handsome,\" she said. \"But I have something that I like even more.\"",
+        "\"What could be better than my spots?\" asked the leopard.",
+        "\"A quick mind,\" said the fox.",
+        "\"Your spots are on the outside, where everyone can see them.\"",
+        "\"My ideas are on the inside, and they help me every day.\"",
+        "\"They help me find food, choose safe paths and solve difficult problems.\"",
+        "The leopard looked at his spots and said nothing for a long time."
       ],
-      "picture": "🌬️☀️",
-      "topics": ["weather"],
+      "picture": "🦊🐆",
+      "topics": ["animals", "nature"],
       "level": 3,
       "socialLoad": 1,
-      "credit": { "title": "The North Wind and the Sun", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
+      "credit": { "title": "The Fox and the Leopard", "author": "Aesop, retold for Learning to Fly", "source": "The Aesop for Children (1919), Library of Congress", "url": "https://www.loc.gov/item/19014083/", "licence": "public-domain", "retrieved": "2026-10-12", "adapted": true }
     },
     {
       "id": "p6-p06",
@@ -158,14 +155,14 @@
     },
     {
       "id": "p6-p07",
-      "title": "The Spring Concert",
+      "title": "Starting Again",
       "kind": "story",
       "sentences": [
-        "The Harbor Middle School band had practiced for the spring concert since January.",
-        "Ana played the trumpet, and in the last song she had a short solo, eight bars of music that she played all by herself.",
-        "Her friend Leo sat behind her at the drums.",
-        "At every practice, he kept the beat steady so that the whole band could follow it.",
-        "On the night of the concert, the school gym was full of families.",
+        "Since January, the Grade 6 band and the Grade 7 band had practiced one song together for the end of the spring concert.",
+        "Ana played the trumpet in the Grade 6 band, and in that last song she had a short solo, eight bars of music that she played all by herself.",
+        "Her friend Leo, the Grade 7 drummer, played the drums in that song.",
+        "At every practice together, he kept the beat steady so that both bands could follow it.",
+        "It rained on the night of the concert, so the bands played in the school gym, which was full of families.",
         "When Ana stood up for her solo, her hands felt cold on the trumpet.",
         "The first note came out wrong and squeaky, and several people in the audience looked up in surprise.",
         "Ana lowered her trumpet and stared at the music on her stand.",
@@ -191,7 +188,7 @@
       "level": 4,
       "socialLoad": 2,
       "credit": {
-        "title": "The Spring Concert",
+        "title": "Starting Again",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -332,6 +329,800 @@
         "retrieved": "2026-10-12",
         "adapted": false
       }
+    },
+    {
+      "id": "p6-p11",
+      "title": "The Two Goats",
+      "kind": "fable",
+      "sentences": [
+        "A narrow log lay across a deep, fast stream.",
+        "One morning, a white goat stepped onto one end of the log.",
+        "At the same moment, a black goat stepped onto the other end.",
+        "They walked carefully until they met in the middle.",
+        "\"Go back,\" said the white goat. \"I was here first.\"",
+        "\"No, you go back,\" said the black goat. \"I will not move for anyone.\"",
+        "Neither goat would go back, not even one step.",
+        "They pushed against each other with their curved horns.",
+        "The log shook, and both goats tumbled into the cold water.",
+        "They climbed out on opposite banks, dripping and shivering.",
+        "If one goat had gone back for a moment, both goats could have crossed safely."
+      ],
+      "picture": "🐐🪵🐐",
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Two Goats",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p6-p12",
+      "title": "The Boys and the Frogs",
+      "kind": "fable",
+      "sentences": [
+        "Some boys were playing beside a quiet pond.",
+        "They threw flat stones to make them skip across the water.",
+        "Each stone bounced across the surface three or four times.",
+        "The boys laughed and cheered after every throw.",
+        "But many frogs lived in the pond.",
+        "The stones splashed all around them, so the frogs hid deep in the mud.",
+        "At last, an old frog poked his head above the water.",
+        "\"Please stop,\" he called. \"This game is fun for you, but it could hurt us.\"",
+        "The boys looked at each other in surprise.",
+        "They had not thought about the frogs at all.",
+        "So they walked down to the river, where no frogs lived, and skipped their stones there instead."
+      ],
+      "picture": "🐸🪨",
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Boys and the Frogs",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p6-p13",
+      "title": "Belling the Cat",
+      "kind": "fable",
+      "sentences": [
+        "A family of mice lived inside the walls of an old farmhouse.",
+        "A gray cat lived in the house too, and she loved to chase mice.",
+        "The mice worried about her all the time, so they rarely left their holes, even to look for food.",
+        "One night, the mice held a big meeting to solve their problem.",
+        "Many mice shared ideas, but none of the ideas seemed good enough.",
+        "Then a young mouse jumped up with a new suggestion.",
+        "\"Let's hang a bell around the cat's neck,\" he said.",
+        "\"Whenever she moves, the bell will ring, and we will hear her coming.\"",
+        "The other mice cheered and clapped for the wonderful plan.",
+        "Then an old mouse slowly stood up at the back of the room.",
+        "\"It is a fine plan,\" she said. \"But which one of us will put the bell on the cat?\"",
+        "The room went completely silent.",
+        "The mice looked at each other, and then they looked down at the floor.",
+        "Not one mouse raised a paw."
+      ],
+      "picture": "🔔🐭🐈",
+      "topics": [
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Belling the Cat",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p6-p14",
+      "title": "Two Players, One Door",
+      "kind": "story",
+      "sentences": [
+        "On Saturday, Ben showed Maya his new video game.",
+        "It was a game for two players, and Maya had never played it before.",
+        "In the first level, the players had to jump across moving platforms.",
+        "Ben knew every jump, so he raced ahead.",
+        "Maya kept missing the platforms and starting over at the beginning.",
+        "Soon Ben reached a big door at the end of the level.",
+        "The door had two switches, one on each side.",
+        "Both switches had to be pressed at the same time.",
+        "Ben waited, but Maya was still far behind.",
+        "So he walked his player all the way back to the start.",
+        "\"Watch my feet,\" he said, and he showed her each jump slowly.",
+        "Maya copied him, one platform at a time.",
+        "When they reached the door together, they each stood on a switch.",
+        "The door opened, and Maya laughed. \"Next level!\" she said."
+      ],
+      "picture": "🎮🚪",
+      "topics": [
+        "games",
+        "friends"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Two Players, One Door",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p15",
+      "title": "One Map, Many Ships",
+      "kind": "article",
+      "sentences": [
+        "People have made detailed maps of the Moon and of Mars.",
+        "But less than a third of the floor of Earth's own ocean has been mapped in detail.",
+        "Light cannot travel far through deep water, so the bottom is too dark to photograph from above.",
+        "Instead, ships map the ocean floor with sound.",
+        "A device under the ship sends a short sound straight down.",
+        "The sound hits the bottom and bounces back to the ship.",
+        "By timing that echo, the crew can tell how deep the water is at that spot.",
+        "One ship can only map a narrow strip at a time, and the ocean is enormous.",
+        "So a worldwide project now asks every ship that can help to share its maps.",
+        "Research ships, fishing boats and even some sailboats send in what they find.",
+        "All of these strips are joined together into one big map that anyone can use for free.",
+        "Bit by bit, the empty places on the map are being filled in."
+      ],
+      "picture": "🗺️🚢🌊",
+      "topics": [
+        "maps",
+        "ocean"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "One Map, Many Ships",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p16",
+      "title": "Taking Turns at the Front",
+      "kind": "article",
+      "sentences": [
+        "In the fall, many geese fly south together in a long V shape.",
+        "Scientists have studied why some large birds fly this way.",
+        "When a bird flaps its wings, the air just past the tips of its wings rises a little.",
+        "A bird flying just behind and to the side can ride on that rising air.",
+        "This makes flying a little easier, so the birds behind save energy.",
+        "The bird at the very front has no bird ahead of it.",
+        "So the front bird works the hardest of all.",
+        "But studies of birds flying in a V have found that they share the front place.",
+        "One bird leads for a while, and then it moves back.",
+        "Then another bird takes a turn at the front.",
+        "By sharing the hardest job, the whole flock saves energy on its long trip."
+      ],
+      "picture": "🐦🐦🐦",
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Taking Turns at the Front",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p17",
+      "title": "The Long Trip to Pluto",
+      "kind": "article",
+      "sentences": [
+        "In January 2006, a spacecraft about the size of a piano was launched toward Pluto.",
+        "Pluto is a small, icy world far out past Neptune.",
+        "The spacecraft was named New Horizons, and it had to travel about three billion miles.",
+        "The trip took more than nine years.",
+        "For much of that time, most of its machines were switched off to save power.",
+        "Every so often, the team on Earth switched them back on to check that everything still worked.",
+        "At last, in July 2015, New Horizons flew past Pluto.",
+        "It could not stop, so it took as many pictures as it could while it passed.",
+        "Because Pluto is so far away, the pictures came back to Earth very slowly.",
+        "It took more than a year for all of them to arrive.",
+        "The pictures showed tall mountains of ice and a huge pale area shaped like a heart.",
+        "No one had ever seen Pluto clearly before."
+      ],
+      "picture": "🚀🪐",
+      "topics": [
+        "space"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Long Trip to Pluto",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p18",
+      "title": "Hercules and the Wagoner",
+      "kind": "fable",
+      "sentences": [
+        "Long ago, a farmer was driving a heavy wagon along a country road after three days of rain.",
+        "The wagon was loaded with sacks of grain for the market in town, and two strong horses pulled it.",
+        "The road had turned soft and deep with mud.",
+        "Suddenly, the front wheels sank into a muddy rut, a long groove in the road, and the wagon stopped.",
+        "The horses strained and pulled, but the wagon would not move.",
+        "The farmer climbed down and stood beside the road with his arms folded.",
+        "He did not push the wagon or even look closely at the wheels.",
+        "Instead, he looked up at the sky and called for Hercules, a hero from old Greek and Roman stories who was famous for his great strength.",
+        "\"Hercules, come and help me!\" he shouted. \"My wagon is stuck, and I cannot move it.\"",
+        "After a while, Hercules appeared beside the wagon.",
+        "He looked at the farmer, and then he looked at the deep mud around the wheels.",
+        "\"Put your shoulder against that wheel and push,\" he said. \"While you push, call to your horses so that they pull at the same moment.\"",
+        "The farmer was surprised, but he did what Hercules said.",
+        "He pressed his shoulder against the muddy wheel and pushed as hard as he could.",
+        "At the same moment, he called to the horses, and they pulled together.",
+        "Slowly, the wheel began to turn, and then the wagon rolled up out of the rut.",
+        "When the farmer turned around to thank Hercules, the road beside him was empty."
+      ],
+      "breaks": [
+        5,
+        9,
+        12
+      ],
+      "picture": "🐴🛞",
+      "topics": [
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Hercules and the Wagoner",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p6-p19",
+      "title": "The Quiet Teammate",
+      "kind": "story",
+      "sentences": [
+        "In September, a new player joined the soccer team that Ana and Ben play on.",
+        "He was tall and fast, but he hardly said a word at practice.",
+        "When other players shouted \"Over here!\" or \"Pass it!\", he stayed silent.",
+        "A few players decided that he was unfriendly, and they stopped passing the ball to him.",
+        "During a scrimmage, which is a practice game between players on the same team, Ana watched him closely.",
+        "She noticed that he did send messages, but he used his hands instead of his voice.",
+        "Right before he ran, he always pointed to the empty space where he was going.",
+        "Then he looked straight at the player who had the ball.",
+        "Nobody had been paying attention to his signals.",
+        "The next time Ana had the ball, she watched for his pointing hand.",
+        "He pointed toward the left side of the goal and started to sprint.",
+        "Ana kicked the ball into that space, and it reached him at exactly the right moment.",
+        "He scored easily.",
+        "For the rest of the scrimmage, the two of them passed the ball back and forth again and again.",
+        "After practice, the new player walked over while Ana was untying her cleats.",
+        "He gave her a thumbs-up and said two quiet words: \"Good pass.\"",
+        "At the next practice, Ana and Ben waited for him at the field gate so that the three of them could warm up together."
+      ],
+      "breaks": [
+        4,
+        9,
+        14
+      ],
+      "picture": "⚽👉",
+      "topics": [
+        "sports",
+        "friends"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Quiet Teammate",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p20",
+      "title": "The Youngest Teacher",
+      "kind": "story",
+      "sentences": [
+        "For three weeks, Leo had been trying to land a pop shove-it at the Harbor Town skate park.",
+        "In a pop shove-it, the rider jumps while the skateboard spins halfway around underneath, staying flat, and then the rider lands back on it.",
+        "Leo could get the board spinning, but it always spun too far or shot out to the side.",
+        "Each time he missed, he made a joke about it, but his jokes were getting shorter.",
+        "One afternoon, a girl who looked about nine years old rolled into the park.",
+        "On her very first try, she landed a perfect pop shove-it.",
+        "Leo stopped and stared.",
+        "His face felt hot, and for a moment he thought about picking up his board and going home.",
+        "He was thirteen, and she was much younger than he was.",
+        "Instead, Leo skated over to her.",
+        "\"That was a great shove-it,\" he said. \"Can you show me how you do it?\"",
+        "The girl showed him how she kept her front foot light, resting near the middle of the board.",
+        "She also told him to scoop the tail backward with his back foot instead of stamping down hard.",
+        "Leo tried her way twelve times before the board finally spun halfway around and landed right under his feet.",
+        "The girl clapped, and Leo took a deep bow, like a performer at the end of a show.",
+        "Before he left, he showed her a trick that he knew well, the manual, where you roll along on just the back wheels."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "picture": "🛹",
+      "topics": [
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Youngest Teacher",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p21",
+      "title": "The Goatherd and the Wild Goats",
+      "kind": "fable",
+      "sentences": [
+        "One winter evening, a goatherd was leading his goats home across the hills when a heavy snowstorm began.",
+        "He hurried them into a deep cave to wait until the storm passed.",
+        "Inside the cave, he found that a small group of wild goats had already taken shelter there.",
+        "They were larger and stronger than his own goats, and the goatherd decided that he wanted to keep them.",
+        "The storm lasted for several days, and the snow piled high outside the cave.",
+        "The goatherd had brought only a little hay, so he had to choose how to share it.",
+        "He gave the wild goats almost all of it, because he hoped they would grow fond of him and stay.",
+        "His own goats, who had followed him faithfully for years, received only a few mouthfuls each.",
+        "They stood at the back of the cave and watched the wild goats eat.",
+        "At last, the snow stopped, and the sun came out over the hills.",
+        "The goatherd led the way out of the cave, expecting the wild goats to follow his flock home.",
+        "Instead, they ran straight up the mountain toward their old home.",
+        "\"Wait!\" he called. \"I fed you better than my own goats!\"",
+        "The oldest wild goat stopped on a rock and looked back at him.",
+        "\"That is exactly why we are leaving,\" she said. \"Your own goats followed you for years, and you gave them almost nothing as soon as we arrived.\"",
+        "\"If new goats come along next winter, you will treat us the same way.\""
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "picture": "🐐🏔️",
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Goatherd and the Wild Goats",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p6-p22",
+      "title": "The Cleaning Station",
+      "kind": "article",
+      "sentences": [
+        "On a coral reef, some small fish have an unusual job: they clean other fish.",
+        "One of the best known is the cleaner wrasse, a slim fish with a dark stripe along its side.",
+        "Each cleaner wrasse stays at one spot on the reef, which scientists call a cleaning station.",
+        "Bigger fish swim to the station and wait their turn, a bit like customers waiting at a shop.",
+        "When it is a fish's turn, it holds still and often opens its mouth and gills wide.",
+        "The cleaner swims all over the fish's body, even inside its mouth, and eats tiny pests called parasites.",
+        "The big fish gets cleaned, and the small fish gets a meal.",
+        "Some visitors, such as groupers, usually eat small fish, but at the cleaning station they leave the cleaner alone.",
+        "Scientists who watch cleaning stations have noticed something else.",
+        "Sometimes a cleaner cheats.",
+        "It bites off a bit of the healthy slime that coats the visitor's skin, because it likes that taste better.",
+        "When that happens, the visitor jerks away and may swim off.",
+        "Studies suggest that fish waiting nearby notice this, and they are more likely to visit cleaners that do not cheat.",
+        "Cleaners also seem to do a more careful job when other fish are watching."
+      ],
+      "breaks": [
+        4,
+        8
+      ],
+      "picture": "🐠🪸",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Cleaning Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p23",
+      "title": "The Jackdaw and the Borrowed Feathers",
+      "kind": "fable",
+      "sentences": [
+        "A jackdaw is a small black bird with pale gray eyes, a cousin of the crow.",
+        "One jackdaw often flew over the garden of a large palace, where the king kept a flock of peacocks.",
+        "He admired their long, shining tail feathers, which were blue and green and covered with bright spots shaped like eyes.",
+        "Compared to them, his own plain black feathers seemed dull, and he began to feel ashamed of them.",
+        "Once a year, peacocks shed their long tail feathers, and many of them lay scattered across the palace lawn.",
+        "The jackdaw collected as many as he could carry and carefully tucked them in among his own feathers.",
+        "Then he strutted into the garden and walked among the peacocks as if he were one of them.",
+        "When his old jackdaw friends called to him from the palace wall, he turned his head away and pretended not to hear.",
+        "At first, the peacocks were puzzled by the strange little bird.",
+        "Then one of them recognized a feather with a bent tip that she had lost only the week before.",
+        "The peacocks gathered around the jackdaw and pulled their feathers back out, one by one.",
+        "Soon he stood on the lawn as he really was, a small black bird.",
+        "The jackdaw flew back to the palace wall to join his old friends.",
+        "But they remembered how he had turned away from them, and they did not make room for him on the wall.",
+        "He sat alone at the far end, plain and black, wishing he had never borrowed a single feather."
+      ],
+      "breaks": [
+        4,
+        8,
+        12
+      ],
+      "picture": "🐦🦚",
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Vain Jackdaw and his Borrowed Feathers",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p6-p24",
+      "title": "Biscuit's Window",
+      "kind": "story",
+      "sentences": [
+        "For eighteen years, an orange cat named Biscuit lived at the Lighthouse Café.",
+        "Every morning, he slept in a patch of sunlight on the front window seat, and customers stopped to stroke his soft fur.",
+        "Mrs. Lin, who owns the café, gave him a small breakfast each day before she unlocked the door.",
+        "Biscuit was very old, and in March he died quietly in his sleep.",
+        "The next Saturday, Maya and Sam went to the café for hot chocolate, as they often did.",
+        "The window seat was empty, and Mrs. Lin was quieter than usual.",
+        "Sam wanted to say something kind, but every sentence he thought of sounded wrong in his head.",
+        "Maya did not know what to say either, so the two friends drank their hot chocolate in silence.",
+        "At home that night, Maya took out her sketchbook.",
+        "She drew Biscuit curled up asleep in his patch of sunlight, with the harbor behind him.",
+        "She took her time with the colors, so that his fur was the same warm orange she remembered.",
+        "On Monday after school, she gave the drawing to Mrs. Lin without saying a word.",
+        "Mrs. Lin looked at it for a long time.",
+        "Then she held Maya's hand for a moment and said softly, \"That is exactly how he looked.\"",
+        "The next week, the drawing hung in a small frame beside the cash register, where every customer could see it."
+      ],
+      "breaks": [
+        3,
+        8,
+        12
+      ],
+      "picture": "🐈🖼️",
+      "topics": [
+        "animals",
+        "friends"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "themes": [
+        "loss"
+      ],
+      "credit": {
+        "title": "Biscuit's Window",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p25",
+      "title": "Test Number Twenty-Three",
+      "kind": "story",
+      "sentences": [
+        "For its spring showcase, the robotics club set a challenge: each member had to build a robot arm that could pick up a raw egg and set it gently in an egg carton.",
+        "The arm had to lift the egg from a bowl, swing it across the table and let go without a single crack.",
+        "Priya built an arm with a small motor at each joint and a two-fingered gripper at the end.",
+        "She named it Feather, because she wanted its touch to be that light.",
+        "On the first test, the gripper squeezed so hard that the egg cracked before it even left the bowl.",
+        "Priya did not start rebuilding right away.",
+        "Instead, she wiped up the egg, opened a notebook and wrote down exactly what had happened: the grip was too strong.",
+        "For the second test, she changed only one thing, setting the gripper motor to close more gently.",
+        "This time Feather lifted the egg, but halfway across the table the egg slipped out and rolled away.",
+        "Test after test, Priya followed the same pattern: try, watch carefully, write it down and change one thing.",
+        "She glued soft foam pads to the gripper's fingers, slowed down the swing of the arm and added a sensor that stopped the fingers when they touched the shell.",
+        "Some changes helped, and others made things worse, so she undid those and recorded them too.",
+        "By the end of the second week, her notebook described twenty-two tests, and not one egg had reached the carton in one piece.",
+        "On the morning of the showcase, Priya read through every page of her notes.",
+        "She noticed that every egg that slipped had fallen at the same moment, just as the arm started to swing.",
+        "So she changed the program to make the arm start its swing very slowly and then speed up.",
+        "On test twenty-three, Feather lifted the egg, carried it smoothly across the table and set it in the carton without a crack.",
+        "The club cheered, and Leo, who had come to watch, asked whether Feather could flip pancakes next.",
+        "Priya laughed and turned to a fresh page in her notebook."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "picture": "🦾🥚",
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Test Number Twenty-Three",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p26",
+      "title": "The Rain Gauge Volunteers",
+      "kind": "article",
+      "sentences": [
+        "Every morning at about the same time, thousands of volunteers around the world step outside to check a simple tool in their yards.",
+        "The tool is a rain gauge, a tall, clear tube that catches rain and shows how much has fallen.",
+        "Some volunteers also read a thermometer that records the highest and lowest temperatures of the day.",
+        "They write the numbers down or send them to a weather service, even on days when the gauge is completely empty.",
+        "One reading by itself does not tell scientists very much.",
+        "A single backyard might get a heavy shower while a neighborhood three miles away stays completely dry.",
+        "But when thousands of readings are put together, they form a detailed picture of where rain fell and how much.",
+        "Forecasters use these reports to plan for floods and dry spells, and farmers use them to decide when to water their crops.",
+        "Some volunteers have kept their records for more than fifty years, through snowstorms, heat waves and pouring rain.",
+        "Their long lists of numbers allow scientists to compare today's weather with the weather of many years ago.",
+        "In some places, the records go back more than a hundred years, because one volunteer handed the job on to the next.",
+        "Most of these volunteers are not famous, and few people ever see their notebooks.",
+        "Many of them say the job takes only a few minutes a day.",
+        "Yet without all those quiet minutes, added up over many years, forecasters and scientists would know far less about the weather."
+      ],
+      "breaks": [
+        4,
+        8,
+        11
+      ],
+      "picture": "🌧️📏",
+      "topics": [
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Rain Gauge Volunteers",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p27",
+      "title": "The Salt Hall",
+      "kind": "article",
+      "sentences": [
+        "Near the city of Kraków in Poland, there is a salt mine where people dug rock salt for about seven hundred years.",
+        "Long ago, salt was so valuable that people sometimes called it white gold, because they needed it to keep meat and fish from spoiling.",
+        "Over the centuries, miners dug more than one hundred miles of tunnels and large rooms deep under the ground.",
+        "The miners did more than dig.",
+        "Using simple hand tools, some of them began to carve the salt walls around them into statues and pictures.",
+        "The most famous carving is a huge underground hall, more than three hundred feet below the surface.",
+        "Almost everything in it is made of salt: the floor, the stairs, the carved pictures on the walls and many statues.",
+        "Even the large chandeliers that hang from the ceiling are made of salt crystals.",
+        "Miners worked on this hall for more than thirty years, carving it a little at a time.",
+        "Rock salt is softer than most stone, but it is still slow work to carve.",
+        "One wrong cut can crack a figure that has taken months to shape, so the carvers had to be patient and careful.",
+        "The work was passed from one carver to the next, and each one continued what the last had started.",
+        "Mining for salt there ended about thirty years ago, but the tunnels did not close.",
+        "Today, visitors walk down hundreds of steps to see the salt hall, and some say it is the most beautiful room they have ever seen.",
+        "Every carving they see was made one small cut at a time."
+      ],
+      "breaks": [
+        3,
+        9,
+        12
+      ],
+      "picture": "🧂⛏️",
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Salt Hall",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p28",
+      "title": "One Hundred Players, One Song",
+      "kind": "article",
+      "sentences": [
+        "Trinidad and Tobago is a small island country in the Caribbean Sea, and its national instrument is the steelpan.",
+        "A steelpan is made from a large metal oil drum.",
+        "Pan makers hammer the top of the drum into a deep bowl and then shape small areas on it, and each area plays a different note.",
+        "People on the islands began making these instruments in the 1930s and 1940s, using metal cans and drums that had been thrown away.",
+        "Steelpans come in many sizes.",
+        "Small, high pans play the melody, while the deepest bass pans are so large that one player may stand surrounded by six whole drums.",
+        "A big steel band, which is also called a steel orchestra, can have more than one hundred players.",
+        "Each player has only a small part of the music, and on its own, a single part may not sound much like a song.",
+        "Every year, before the islands' Carnival festival, steel bands enter a large music contest.",
+        "For weeks beforehand, the players gather almost every night in outdoor practice spaces called panyards.",
+        "Many of them learn their parts by listening and copying, while a leader teaches one section of the band at a time.",
+        "Some players are teenagers, some are grandparents, and many have played with the same band for years.",
+        "Slowly, over many nights, the separate parts begin to fit together.",
+        "On the night of the contest, the band rolls its pans onto the stage on racks with wheels.",
+        "When the music starts, the high pans, the middle pans and the bass pans join into one huge sound that people can feel as well as hear.",
+        "The crowd hears one song, but it is really more than a hundred small parts played together."
+      ],
+      "breaks": [
+        4,
+        8,
+        13
+      ],
+      "picture": "🥁🎶",
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "One Hundred Players, One Song",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p29",
+      "title": "The New Order Screen",
+      "kind": "story",
+      "sentences": [
+        "In September, Grandma Rose bought a tablet for the counter at Rose's Bakery, so that she could type in cake orders instead of writing them on paper slips.",
+        "Sam came over after school to help her learn it, because he was quick with screens.",
+        "The first afternoon did not go well.",
+        "Every time Grandma Rose paused to read a button, Sam reached over and tapped it for her.",
+        "When she typed a customer's name too slowly, he took the tablet and finished it himself.",
+        "By the end of the afternoon, five orders were saved perfectly, but Grandma Rose could not remember how to make a single one.",
+        "She pressed her lips together and said that she would go back to paper slips.",
+        "That night, Sam thought about the afternoon.",
+        "He realized that Grandma Rose had not learned anything, because he had done every step for her.",
+        "The next day, he brought five index cards to the bakery.",
+        "On each card, he wrote one step in large letters and drew a picture of the button to press.",
+        "Then he sat on a stool beside her and kept his hands in his lap.",
+        "Grandma Rose went slowly, and twice she pressed the wrong button and had to go back.",
+        "Each time, Sam waited and pointed to the card instead of the screen.",
+        "On Saturday morning, the bakery was crowded, and a man wanted a chocolate cake that said \"Happy Birthday, Grandpa.\"",
+        "Grandma Rose typed the whole order herself, without looking at a single card.",
+        "When the man left, she looked across the room at Sam, who was filling bags with cinnamon rolls, and gave him a thumbs-up."
+      ],
+      "breaks": [
+        3,
+        7,
+        12
+      ],
+      "picture": "🎂📱",
+      "topics": [
+        "food",
+        "home"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The New Order Screen",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p6-p30",
+      "title": "The Fossil That Was Glued Together",
+      "kind": "article",
+      "sentences": [
+        "In 1999, a fossil went on display that seemed to answer a big question about dinosaurs and birds.",
+        "The flat slab of rock showed the skeleton of a small animal with the wings and chest of a bird and the long, bony tail of a dinosaur.",
+        "A famous magazine said it showed how dinosaurs and birds were joined, and pictures of it spread around the world.",
+        "But the fossil had been bought from a dealer, and no one had checked it carefully before it was announced.",
+        "When scientists finally studied the slab closely, some things did not fit.",
+        "A scanner that uses X-rays to see inside solid things showed that the slab was made of many separate pieces.",
+        "Someone had glued them together and filled the cracks with paste, probably so that it would look whole and sell for more money.",
+        "Then a scientist found another fossil whose tail matched the tail on the slab exactly, and it belonged to a completely different animal.",
+        "The magazine had to tell its readers that it had been wrong.",
+        "It was an awkward moment, but scientists learned a lesson from it.",
+        "Today, many scientists will not study a fossil until they know exactly where it came from and are sure that it has not been changed.",
+        "The story also had a surprise ending.",
+        "Once the pieces were taken apart and studied honestly, the tail turned out to belong to a small feathered dinosaur that no one had ever named before.",
+        "The front half was a real early bird.",
+        "The truth gave scientists two real animals to study instead of one that never existed."
+      ],
+      "breaks": [
+        4,
+        8,
+        11
+      ],
+      "picture": "🦖🔍",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Fossil That Was Glued Together",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -342,14 +1133,14 @@
       "format": "tap",
       "level": 2,
       "tier": "understand",
-      "prompt": "What does this story say about kindness?",
-      "options": ["A kind act can come back to you.", "Big animals should rule the land.", "It is best to sleep in the sun."],
+      "prompt": "What does this story say about friendship?",
+      "options": ["Good friends look out for each other.", "It is best to sleep up in a tree.", "You should always come down when someone calls you."],
       "answer": 0,
-      "evidence": [5, 9, 10],
-      "hint": "Find the kind thing the lion did. Then find the kind thing the mouse did later.",
-      "explain": "A kind act can come back to you. The lion let the mouse go. Later, the mouse chewed through the ropes and set the lion free.",
+      "evidence": [8, 10, 11],
+      "hint": "Find what the rooster said about his friend. Then find what the dog did.",
+      "explain": "Good friends look out for each other. The rooster sent the fox to his friend, and the dog jumped out, barking, so the fox ran away.",
       "inference": 2,
-      "tags": ["big-idea", "kindness", "fable"]
+      "tags": ["big-idea", "friendship", "fable"]
     },
     {
       "id": "p6-i01",
@@ -391,18 +1182,18 @@
       "format": "build",
       "level": 2,
       "tier": "express",
-      "prompt": "What do you think this story says about kindness? Build your answer.",
+      "prompt": "What do you think this story says about friendship? Build your answer.",
       "frame": "I think this story says {0}. I think so because {1}. {2}",
       "slots": [
-        { "kind": "lesson", "label": "Big idea", "options": ["kindness can come back to you", "small friends can help big friends", "everyone can help in some way"], "rubric": 1 },
-        { "kind": "evidence", "label": "Clue from the story", "options": ["the lion let the mouse go", "the mouse chewed through the ropes", "the lion and the mouse became friends"], "rubric": 3 },
-        { "kind": "me", "label": "About me (you can skip this)", "options": ["A small kind act helped me once.", "I helped someone bigger than me once.", "I agree with this idea."], "rubric": 4, "optional": true }
+        { "kind": "lesson", "label": "Big idea", "options": ["good friends look out for each other", "two friends are stronger than one", "a smart idea can keep a friend safe"], "rubric": 1 },
+        { "kind": "evidence", "label": "Clue from the story", "options": ["the rooster sent the fox to his friend", "the dog jumped out, barking", "the two friends walked on together"], "rubric": 3 },
+        { "kind": "me", "label": "About me (you can skip this)", "options": ["A friend helped me once.", "I helped a friend once.", "I agree with this idea."], "rubric": 4, "optional": true }
       ],
-      "evidence": [5, 9, 12],
+      "evidence": [8, 10, 12],
       "hint": "Pick the big idea you believe. Then find a part of the story that shows it.",
-      "explain": "One good answer is: I think this story says small friends can help big friends. I think so because the mouse chewed through the ropes. Any honest answer is fine.",
+      "explain": "One good answer is: I think this story says two friends are stronger than one. I think so because the dog jumped out, barking. Any honest answer is fine.",
       "inference": 2,
-      "tags": ["opinion", "big-idea", "kindness", "fable"]
+      "tags": ["opinion", "big-idea", "friendship", "fable"]
     },
     {
       "id": "p6-i04",
@@ -503,14 +1294,14 @@
       "format": "tap",
       "level": 3,
       "tier": "understand",
-      "prompt": "What does this story say about being gentle?",
-      "options": ["Gentle, warm ways can work better than force.", "The wind is the strongest thing in the world.", "Coats are useful on a rainy day.", "It is good to win every contest."],
+      "prompt": "What big idea does this story show?",
+      "options": ["What is on the inside can matter more than looks.", "A spotted coat is the best thing an animal can have.", "Foxes and leopards should not rest together.", "It is good to rest in the shade on a hot day."],
       "answer": 0,
-      "evidence": [7, 10, 12, 13],
-      "hint": "Compare what the Wind did with what the Sun did. Which one got the coat off?",
-      "explain": "Gentle, warm ways can work better than force. The Wind blew hard, and the man held his coat tighter. The Sun shone warm and gentle, and the man took his coat off.",
+      "evidence": [7, 8, 9],
+      "hint": "Compare what the leopard is proud of with what the fox is proud of. Which one helps every day?",
+      "explain": "What is on the inside can matter more than looks. The leopard is proud of his spots, but the fox says her ideas help her every day.",
       "inference": 2,
-      "tags": ["big-idea", "kindness", "fable", "compare"]
+      "tags": ["big-idea", "fable", "compare"]
     },
     {
       "id": "p6-i10",
@@ -519,18 +1310,18 @@
       "format": "build",
       "level": 3,
       "tier": "express",
-      "prompt": "The Sun's gentle way won. Do you agree with the story? Build your answer.",
-      "frame": "I {0} with the story. I think {1}. {2}",
+      "prompt": "The fox said a quick mind matters more than a beautiful coat. Do you agree? Build your answer.",
+      "frame": "I {0} with the fox. I think {1}. {2}",
       "slots": [
         { "kind": "main", "label": "My view", "options": ["agree", "partly agree", "disagree"], "rubric": 1 },
-        { "kind": "why", "label": "Reason", "options": ["being gentle helps people listen", "sometimes you need to be firm", "warm words feel better than cold words", "both ways can work"], "rubric": 2 },
-        { "kind": "other", "label": "More (you can skip this)", "options": ["Someone else might agree with the Wind.", "I saw a gentle way work at school.", "I would try the Sun's way first."], "rubric": 4, "optional": true }
+        { "kind": "why", "label": "Reason", "options": ["what you can do matters more than how you look", "looks can matter too", "good ideas help people every day", "both can be good"], "rubric": 2 },
+        { "kind": "other", "label": "More (you can skip this)", "options": ["Someone else might agree with the leopard.", "I know someone who is clever and kind.", "I am proud of something on the inside."], "rubric": 4, "optional": true }
       ],
-      "evidence": [6, 7, 10, 12],
-      "hint": "Think about a time someone was gentle with you, and a time someone was firm. Which way worked better?",
-      "explain": "One good answer is: I agree with the story. I think being gentle helps people listen. Another person might disagree, and that is fine too. Any honest answer is fine.",
+      "evidence": [2, 7, 8],
+      "hint": "Think about what the leopard is proud of and what the fox is proud of. Which do you think matters more?",
+      "explain": "One good answer is: I agree with the fox. I think what you can do matters more than how you look. Another person might disagree, and that is fine too. Any honest answer is fine.",
       "inference": 2,
-      "tags": ["opinion", "big-idea", "kindness", "fable"]
+      "tags": ["opinion", "big-idea", "fable"]
     },
     {
       "id": "p6-i11",
@@ -1157,16 +1948,2368 @@
         "big-idea",
         "kindness"
       ]
+    },
+    {
+      "id": "p6-i27",
+      "skill": "P6",
+      "passage": "p6-p11",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "Which big idea fits this fable?",
+      "options": [
+        "Letting someone go first can help everyone.",
+        "The strongest goat should always win.",
+        "Goats should never cross a stream."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        8,
+        10
+      ],
+      "hint": "Find what happened because neither goat would go back. Then read the last sentence.",
+      "explain": "Letting someone go first can help everyone. Neither goat would go back, so both fell into the water. The last sentence says both could have crossed if one had gone back for a moment.",
+      "inference": 1,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "patience",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i28",
+      "skill": "P6",
+      "passage": "p6-p11",
+      "format": "highlight",
+      "level": 2,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that tells what would have helped both goats.",
+      "answer": [
+        10
+      ],
+      "evidence": [
+        10
+      ],
+      "hint": "Read the end of the fable. Find what one goat could have done differently.",
+      "explain": "\"If one goat had gone back for a moment, both goats could have crossed safely.\" It is the last sentence.",
+      "inference": 0,
+      "tags": [
+        "key-detail",
+        "patience",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i29",
+      "skill": "P6",
+      "passage": "p6-p11",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "prompt": "Would you go back so the other goat could cross? Build your answer.",
+      "frame": "I {0} go back first. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "would",
+            "might",
+            "would not"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "then we could both cross",
+            "it is fair to take turns",
+            "I was there first",
+            "going back takes only a moment"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "Once I let someone go first.",
+            "Someone let me go first once.",
+            "Waiting my turn is hard for me."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        8,
+        10
+      ],
+      "hint": "Think about what happened to both goats. Then imagine you are on the log.",
+      "explain": "One good answer is: I would go back first. I think so because then we could both cross. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "patience",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i30",
+      "skill": "P6",
+      "passage": "p6-p12",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "What does this fable say about kindness?",
+      "options": [
+        "Think about how your fun might affect others.",
+        "Skipping stones is a bad game.",
+        "Frogs should move to a river."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        7,
+        9,
+        10
+      ],
+      "hint": "Find what the old frog said. Then find what the boys did after they heard him.",
+      "explain": "Think about how your fun might affect others. The old frog said the game was fun for the boys but could hurt the frogs. The boys had not thought about the frogs, so they moved to the river.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "kindness",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i31",
+      "skill": "P6",
+      "passage": "p6-p12",
+      "format": "sort",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "Which fun is kind to others, like skipping stones at the river? Which fun could bother or hurt others?",
+      "bins": [
+        "Kind to others 😊",
+        "Could bother others 😟"
+      ],
+      "cards": [
+        {
+          "text": "Playing music with headphones on the bus",
+          "bin": 0
+        },
+        {
+          "text": "Kicking a ball in an empty field",
+          "bin": 0
+        },
+        {
+          "text": "Skateboarding at the skate park",
+          "bin": 0
+        },
+        {
+          "text": "Playing loud music on a quiet bus",
+          "bin": 1
+        },
+        {
+          "text": "Kicking a ball near a neighbor's window",
+          "bin": 1
+        },
+        {
+          "text": "Skateboarding on a crowded sidewalk",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        7,
+        10
+      ],
+      "hint": "Ask: could this bother or hurt someone nearby, like the stones and the frogs?",
+      "explain": "Kind to others: headphones, the empty field, and the skate park. Could bother others: loud music on a quiet bus, a ball near a window, and a crowded sidewalk. The boys moved their game to a place where it could not hurt anyone.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "big-idea",
+        "kindness",
+        "apply-idea"
+      ]
+    },
+    {
+      "id": "p6-i32",
+      "skill": "P6",
+      "passage": "p6-p12",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "prompt": "The old frog asked the boys to stop. What do you think of what the boys did next? Build your answer.",
+      "frame": "I think the boys were {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "kind",
+            "fair",
+            "thoughtful",
+            "slow to notice the frogs"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the fable",
+          "options": [
+            "they moved to the river",
+            "they had not thought about the frogs",
+            "they listened to the old frog"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "Once I stopped a game because it bothered someone.",
+            "Someone asked me to stop, and I listened.",
+            "It is easy to forget about others when you are having fun."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        7,
+        9,
+        10
+      ],
+      "hint": "Read the end of the fable. Think about what the boys could have done instead.",
+      "explain": "One good answer is: I think the boys were thoughtful. I think so because they moved to the river. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "kindness",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i33",
+      "skill": "P6",
+      "passage": "p6-p13",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Which big idea about courage fits this fable best?",
+      "options": [
+        "Talking about a brave plan is easier than doing it.",
+        "Young mice always have the best ideas.",
+        "A bell is the best way to stop a cat.",
+        "A big meeting always solves a problem."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        10,
+        11,
+        13
+      ],
+      "hint": "Find how the mice felt about the plan at first. Then find what happened after the old mouse's question.",
+      "explain": "Talking about a brave plan is easier than doing it. The mice cheered for the bell plan. But when the old mouse asked who would put the bell on the cat, not one mouse raised a paw.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "courage",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i34",
+      "skill": "P6",
+      "passage": "p6-p13",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows the hard part of the plan.",
+      "answer": [
+        10
+      ],
+      "evidence": [
+        10
+      ],
+      "hint": "Find the sentence where someone asks a question about the plan.",
+      "explain": "\"But which one of us will put the bell on the cat?\" The old mouse's question shows that someone would have to be very brave to do it.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "courage",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i35",
+      "skill": "P6",
+      "passage": "p6-p13",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "If you were a mouse at the meeting, what would you do? Build your answer.",
+      "frame": "I would {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "offer to put the bell on the cat",
+            "help a friend put the bell on",
+            "think of a safer plan",
+            "stay quiet like the others"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "someone has to be brave first",
+            "a hard job is easier with a helper",
+            "the plan was too risky",
+            "I would feel too nervous"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "Another mouse might choose differently.",
+            "Once I said I would do something hard, and I did it.",
+            "Saying an idea is easier than doing it."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        10,
+        13
+      ],
+      "hint": "Think about the old mouse's question. Then decide what you would really do.",
+      "explain": "One good answer is: I would help a friend put the bell on. I think so because a hard job is easier with a helper. Any honest answer is fine, and staying quiet is an honest answer too.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "courage",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i36",
+      "skill": "P6",
+      "passage": "p6-p14",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "What does this story show about playing as a team?",
+      "options": [
+        "A team moves forward only when the whole team gets there.",
+        "The fastest player should finish the level alone.",
+        "Video games are more fun when you play by yourself.",
+        "A new player should practice alone before playing with a friend."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        9,
+        12
+      ],
+      "hint": "Look at what the door needed to open. Then find what Ben did about it.",
+      "explain": "A team moves forward only when the whole team gets there. The door needed both switches pressed at the same time. Ben went back for Maya, and the door opened when they reached it together.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i37",
+      "skill": "P6",
+      "passage": "p6-p14",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence where Ben chose to go back for Maya.",
+      "answer": [
+        9
+      ],
+      "evidence": [
+        9
+      ],
+      "hint": "Find the part after Ben waited at the door. What did he do next?",
+      "explain": "\"So he walked his player all the way back to the start.\" Ben went back to help Maya instead of waiting at the door.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "teamwork",
+        "turning-point"
+      ]
+    },
+    {
+      "id": "p6-i38",
+      "skill": "P6",
+      "passage": "p6-p14",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Ben went back to help Maya. What do you think about his choice? Build your answer.",
+      "frame": "I think Ben's choice was {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "kind",
+            "smart",
+            "kind and smart",
+            "surprising"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the story",
+          "options": [
+            "the door needed two players",
+            "he showed her each jump slowly",
+            "they reached the door together"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "Someone showed me how to play a game once.",
+            "I like to race ahead in games.",
+            "I helped a friend learn something once."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        7,
+        9,
+        10,
+        12
+      ],
+      "hint": "Think about what Ben could have done instead. Then pick a part of the story that shows why his choice mattered.",
+      "explain": "One good answer is: I think Ben's choice was kind and smart. I think so because the door needed two players. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i39",
+      "skill": "P6",
+      "passage": "p6-p15",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "What does this article suggest about sharing what you know?",
+      "options": [
+        "When many people share what they know, they can finish a job no one could do alone.",
+        "One fast ship can map the whole ocean by itself.",
+        "Maps of the Moon are more useful than maps of the ocean.",
+        "Only scientists should be allowed to make maps."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "hint": "Find why one ship is not enough. Then find what the worldwide project does about it.",
+      "explain": "When many people share what they know, they can finish a job no one could do alone. One ship maps only a narrow strip, so many kinds of ships share their maps, and the strips are joined into one big map.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i40",
+      "skill": "P6",
+      "passage": "p6-p15",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows many kinds of ships helping.",
+      "answer": [
+        9
+      ],
+      "evidence": [
+        9
+      ],
+      "hint": "Find the part about the worldwide project. Look for a list of different boats.",
+      "explain": "\"Research ships, fishing boats and even some sailboats send in what they find.\" Many kinds of ships help.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i41",
+      "skill": "P6",
+      "passage": "p6-p15",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Would you share a map you made so that anyone could use it for free? Build your answer.",
+      "frame": "I {0} share my map for free. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "would",
+            "might",
+            "would not"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "sharing helps everyone",
+            "I worked hard on it",
+            "a big job needs many helpers",
+            "other people share with me too"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I shared something I made once.",
+            "I would like to help map the ocean.",
+            "Someone else might want to sell their map."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        10,
+        11
+      ],
+      "hint": "Think about how the ocean map got made. Then think about something you made.",
+      "explain": "One good answer is: I would share my map for free. I think so because a big job needs many helpers. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i42",
+      "skill": "P6",
+      "passage": "p6-p16",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "What does this article suggest about teamwork?",
+      "options": [
+        "When everyone takes a turn at the hard job, the whole group does better.",
+        "The strongest bird should always fly at the front.",
+        "The birds at the back of the V do not need to work at all.",
+        "Geese fly in a V so that they can see the ground."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        8,
+        10
+      ],
+      "hint": "Find which bird works the hardest. Then find what the birds do about it.",
+      "explain": "When everyone takes a turn at the hard job, the whole group does better. The front bird works the hardest, so the birds take turns at the front, and the whole flock saves energy.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i43",
+      "skill": "P6",
+      "passage": "p6-p16",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Which detail best shows that the birds share the hardest job?",
+      "options": [
+        "One bird leads for a while, and then it moves back.",
+        "Many geese fly south in the fall.",
+        "The air past the tips of a bird's wings rises a little.",
+        "Scientists have studied why large birds fly this way."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "The hardest job is flying at the front. Find a sentence about who flies there.",
+      "explain": "One bird leads for a while, and then it moves back. Then another bird takes a turn. This shows the birds share the front place, which is the hardest job.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i44",
+      "skill": "P6",
+      "passage": "p6-p16",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Is taking turns at the hard job a good idea for people too? Build your answer.",
+      "frame": "I think taking turns at the hard job is {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "a good idea",
+            "a good idea most of the time",
+            "not always needed"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "no one gets too tired",
+            "it is fair to everyone",
+            "some people are better at some jobs",
+            "the whole team saves energy"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "My class takes turns at hard jobs.",
+            "I could take a turn at a hard job at home.",
+            "Someone else might like to lead all the time."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        8,
+        10
+      ],
+      "hint": "Think about a hard job at home or at school. Would taking turns help?",
+      "explain": "One good answer is: I think taking turns at the hard job is a good idea. I think so because no one gets too tired. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i45",
+      "skill": "P6",
+      "passage": "p6-p17",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "What big idea about patience does this article show?",
+      "options": [
+        "Some great discoveries take years of waiting and careful work.",
+        "A spacecraft should always travel as fast as it can.",
+        "Pictures from space always arrive right away.",
+        "Places that are far away are not worth exploring."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        5,
+        9,
+        11
+      ],
+      "hint": "Find how long the trip took, and how long the pictures took. Then read the last sentence.",
+      "explain": "Some great discoveries take years of waiting and careful work. The trip took more than nine years, and the pictures took more than a year to arrive. Then people saw Pluto clearly for the first time.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i46",
+      "skill": "P6",
+      "passage": "p6-p17",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Which detail best shows that the team still needed patience after the spacecraft reached Pluto?",
+      "options": [
+        "It took more than a year for all of the pictures to arrive.",
+        "The spacecraft was about the size of a piano.",
+        "Pluto is a small, icy world far out past Neptune.",
+        "The pictures showed tall mountains of ice."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the part after New Horizons flew past Pluto. What did the team have to wait for?",
+      "explain": "It took more than a year for all of the pictures to arrive. The team had to wait again, even after the flyby.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i47",
+      "skill": "P6",
+      "passage": "p6-p17",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "The team waited more than nine years. Could you wait that long for something? Build your answer.",
+      "frame": "I think I {0} wait that long. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "could",
+            "might be able to",
+            "could not"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the pictures were worth the wait",
+            "nine years is a very long time",
+            "I like long projects",
+            "I would want to see results sooner"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I waited a long time for something once.",
+            "Waiting is hard for me.",
+            "I would like to work on a space mission."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        9,
+        11
+      ],
+      "hint": "Think about the long trip and what the team saw at the end. Then think about yourself.",
+      "explain": "One good answer is: I think I might be able to wait that long. I think so because the pictures were worth the wait. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i48",
+      "skill": "P6",
+      "passage": "p6-p18",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What big idea is hidden in this fable?",
+      "options": [
+        "Trying with your own strength is often the first step to solving a problem.",
+        "When you are stuck, the best plan is to wait for someone stronger.",
+        "It is never right to ask anyone for help.",
+        "A strong helper will do the hard work if you call loudly enough."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        11,
+        13,
+        15
+      ],
+      "hint": "Compare what the farmer did before Hercules came with what he did after. Which one moved the wagon?",
+      "explain": "Trying with your own strength is often the first step to solving a problem. At first, the farmer only called for help, and the wagon stayed stuck. When he pushed and the horses pulled at the same moment, the wagon rolled out. Hercules helped with advice, so asking for help was not wrong.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "trying-again",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i49",
+      "skill": "P6",
+      "passage": "p6-p18",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows the farmer's own effort worked.",
+      "answer": [
+        15
+      ],
+      "evidence": [
+        15
+      ],
+      "hint": "Find the part after the farmer pushed. What happened to the wagon?",
+      "explain": "\"Slowly, the wheel began to turn, and then the wagon rolled up out of the rut.\" It happened right after the farmer pushed and the horses pulled together.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "trying-again",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i50",
+      "skill": "P6",
+      "passage": "p6-p18",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "The farmer called for help before he tried. What do you think he should do next time? Build your answer.",
+      "frame": "Next time, I think he should {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "try first, then ask for help",
+            "ask for help and try at the same time",
+            "ask for help right away"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the fable",
+          "options": [
+            "the wagon moved when he pushed",
+            "he did not push at first",
+            "the wheel turned when he and the horses worked together"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I try first before I ask for help.",
+            "Sometimes I ask for help very fast.",
+            "Asking for help can be a smart choice too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        11,
+        13,
+        15
+      ],
+      "hint": "Think about what the farmer did at first and what worked in the end. Then decide what you would tell him.",
+      "explain": "One good answer is: Next time, I think he should try first, then ask for help. I think so because the wagon moved when he pushed. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "trying-again",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i51",
+      "skill": "P6",
+      "passage": "p6-p19",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What does this story suggest about how a friendship can start?",
+      "options": [
+        "Friendship can start when you notice how someone else communicates.",
+        "Friendship starts when a new person learns to shout like everyone else.",
+        "Friendship means passing the ball to the best scorer every time.",
+        "People who are quiet do not want to make friends."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        11,
+        15,
+        16
+      ],
+      "hint": "Find what Ana noticed that the other players missed. Then read how things changed between them.",
+      "explain": "Friendship can start when you notice how someone else communicates. Ana saw that the new player pointed before he ran. She passed to the spot he pointed at, he said \"Good pass,\" and they began to warm up together.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "friendship"
+      ]
+    },
+    {
+      "id": "p6-i52",
+      "skill": "P6",
+      "passage": "p6-p19",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows how the new player told others where he was going.",
+      "answer": [
+        6
+      ],
+      "evidence": [
+        6
+      ],
+      "hint": "Read the second paragraph. Look for what he did right before he ran.",
+      "explain": "\"Right before he ran, he always pointed to the empty space where he was going.\" He used his hand instead of his voice.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "friendship"
+      ]
+    },
+    {
+      "id": "p6-i53",
+      "skill": "P6",
+      "passage": "p6-p19",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Ana paid attention to how the new player communicated. What do you think about that? Build your answer.",
+      "frame": "I think paying attention like Ana did is {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "important",
+            "kind",
+            "hard but worth it",
+            "a good way to make a friend"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the story",
+          "options": [
+            "Ana saw him point before he ran",
+            "the two of them passed back and forth again and again",
+            "he said \"Good pass\" to Ana"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I sometimes say things without words too.",
+            "A friend once understood me without words.",
+            "Some people like to use words more."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        11,
+        15
+      ],
+      "hint": "Think about what the other players missed and what Ana saw. Then pick the clue that matters most to you.",
+      "explain": "One good answer is: I think paying attention like Ana did is a good way to make a friend. I think so because Ana saw him point before he ran. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "friendship"
+      ]
+    },
+    {
+      "id": "p6-i54",
+      "skill": "P6",
+      "passage": "p6-p20",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Which big idea about courage does Leo's story show?",
+      "options": [
+        "It can take courage to ask for help, even from someone younger than you.",
+        "It takes courage to keep trying a trick alone without any help.",
+        "Older skaters should always teach younger skaters first.",
+        "Brave people never feel embarrassed."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "hint": "Find how Leo felt when the girl landed the trick. Then find what he chose to do anyway.",
+      "explain": "It can take courage to ask for help, even from someone younger than you. Leo's face felt hot, and he thought about going home. Instead, he skated over and asked the younger girl to show him.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "courage"
+      ]
+    },
+    {
+      "id": "p6-i55",
+      "skill": "P6",
+      "passage": "p6-p20",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence where Leo makes his brave choice.",
+      "answer": [
+        9,
+        10
+      ],
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Find the moment after Leo thought about going home. What did he do next?",
+      "explain": "\"Instead, Leo skated over to her.\" Then he asked her to show him the trick. He felt embarrassed, and he asked anyway.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "courage",
+        "turning-point"
+      ]
+    },
+    {
+      "id": "p6-i56",
+      "skill": "P6",
+      "passage": "p6-p20",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Leo asked someone younger for help. Would you do the same? Build your answer.",
+      "frame": "I {0} ask someone younger for help. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "would",
+            "might",
+            "would not"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "anyone can be good at something",
+            "it would feel embarrassing",
+            "I would want to learn the trick",
+            "Leo learned the trick that way"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "A younger person taught me something once.",
+            "Asking for help is hard for me.",
+            "I could teach someone too, like Leo did."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        7,
+        9,
+        10,
+        13
+      ],
+      "hint": "Think about how Leo felt and what he learned. Then imagine you were at the skate park.",
+      "explain": "One good answer is: I would ask someone younger for help. I think so because anyone can be good at something. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "courage"
+      ]
+    },
+    {
+      "id": "p6-i57",
+      "skill": "P6",
+      "passage": "p6-p21",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What does this fable suggest about friendship?",
+      "options": [
+        "Treat old friends well, even when new friends come along.",
+        "New friends are always better than old friends.",
+        "You can make anyone stay with you by giving them gifts.",
+        "Animals always stay with whoever feeds them the most."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        14,
+        15
+      ],
+      "hint": "Find how the goatherd treated his own goats. Then read why the wild goats would not stay.",
+      "explain": "Treat old friends well, even when new friends come along. The goatherd gave his faithful goats almost nothing to win over the wild goats. The wild goats left, because they saw he would do the same to them one day.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "friendship",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i58",
+      "skill": "P6",
+      "passage": "p6-p21",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that explains why the wild goats did not trust the goatherd.",
+      "answer": [
+        14,
+        15
+      ],
+      "evidence": [
+        14,
+        15
+      ],
+      "hint": "Read what the oldest wild goat says at the end. Find her reason.",
+      "explain": "The oldest wild goat says that the goatherd gave his own goats almost nothing as soon as the wild goats arrived. If new goats came next winter, he would treat the wild goats the same way. Either sentence shows her reason.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "friendship",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i59",
+      "skill": "P6",
+      "passage": "p6-p21",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "The goatherd gave almost all the hay to the new goats. What do you think of his choice? Build your answer.",
+      "frame": "I think his choice was {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "unfair",
+            "unkind to his own goats",
+            "a mistake",
+            "easy to understand, but wrong"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the fable",
+          "options": [
+            "his own goats got only a few mouthfuls",
+            "the wild goats ran away anyway",
+            "his own goats had followed him for years"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I try to include old friends when I make new ones.",
+            "Once I felt left out when someone new came.",
+            "Someone else might think he just wanted a bigger flock."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        11,
+        15
+      ],
+      "hint": "Think about how his own goats felt in the cave. Then think about what happened at the end.",
+      "explain": "One good answer is: I think his choice was unfair. I think so because his own goats had followed him for years. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "friendship",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i60",
+      "skill": "P6",
+      "passage": "p6-p22",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What big idea does this article suggest about working together?",
+      "options": [
+        "Helping each other works best when each side can trust the other.",
+        "The biggest fish on the reef should make all the rules.",
+        "It is smart to cheat when the other side is not looking.",
+        "Small fish should always stay away from bigger fish."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        11,
+        12
+      ],
+      "hint": "Find what each fish gets from a cleaning visit. Then find what happens when a cleaner cheats.",
+      "explain": "Helping each other works best when each side can trust the other. The big fish gets cleaned and the cleaner gets a meal. But when a cleaner cheats, the visitor swims off, and other fish choose cleaners that do not cheat.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "teamwork",
+        "honesty"
+      ]
+    },
+    {
+      "id": "p6-i61",
+      "skill": "P6",
+      "passage": "p6-p22",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Which detail best supports the idea that trust matters at a cleaning station?",
+      "options": [
+        "Fish waiting nearby are more likely to visit cleaners that do not cheat.",
+        "The cleaner wrasse is a slim fish with a dark stripe along its side.",
+        "Bigger fish swim to the station and wait their turn.",
+        "Each cleaner wrasse stays at one spot on the reef."
+      ],
+      "answer": 0,
+      "evidence": [
+        12
+      ],
+      "hint": "Read the last paragraph. Find what the waiting fish do after they see a cleaner cheat.",
+      "explain": "Fish waiting nearby are more likely to visit cleaners that do not cheat. This is in the last paragraph. The other details are true, but they do not show trust.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "honesty"
+      ]
+    },
+    {
+      "id": "p6-i62",
+      "skill": "P6",
+      "passage": "p6-p22",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Some cleaners cheat, and they work more carefully when others are watching. What do you think about that? Build your answer.",
+      "frame": "I think cheating when no one is watching is {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "not fair",
+            "risky",
+            "tempting but wrong"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the article",
+          "options": [
+            "visitors swim away from a cleaner that cheats",
+            "other fish choose cleaners that do not cheat",
+            "the big fish holds still and trusts the cleaner"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I try to be honest even when no one is watching.",
+            "People can act like the cleaner fish too.",
+            "It can be hard to be fair when no one would know."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        4,
+        11,
+        12,
+        13
+      ],
+      "hint": "Think about what happens to a cleaner that cheats. Then think about people.",
+      "explain": "One good answer is: I think cheating when no one is watching is not fair. I think so because the big fish holds still and trusts the cleaner. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "honesty"
+      ]
+    },
+    {
+      "id": "p6-i63",
+      "skill": "P6",
+      "passage": "p6-p23",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Which big idea about honesty does this fable show?",
+      "options": [
+        "Pretending to be something you are not can cost you your real friends.",
+        "Peacocks are kinder birds than jackdaws.",
+        "It is fine to use things that other people have dropped.",
+        "Plain birds should stay away from palace gardens."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        10,
+        13
+      ],
+      "hint": "Find what the jackdaw pretended, and how he treated his old friends. Then read what happened at the end.",
+      "explain": "Pretending to be something you are not can cost you your real friends. The jackdaw pretended to be a peacock and ignored his old friends. The peacocks took their feathers back, and his old friends did not make room for him.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "honesty",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i64",
+      "skill": "P6",
+      "passage": "p6-p23",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows how the jackdaw treated his old friends while he was pretending.",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        7
+      ],
+      "hint": "Read the second paragraph. Find where his old friends called to him.",
+      "explain": "\"When his old jackdaw friends called to him from the palace wall, he turned his head away and pretended not to hear.\" This is why they did not make room for him later.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "honesty",
+        "friendship",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i65",
+      "skill": "P6",
+      "passage": "p6-p23",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "The jackdaw wished his own feathers were bright. What do you think he should have done? Build your answer.",
+      "frame": "I think the jackdaw should have {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My idea",
+          "options": [
+            "been proud of his own feathers",
+            "stayed with his old friends",
+            "told the truth about the feathers",
+            "tried to make friends with the peacocks as himself"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the fable",
+          "options": [
+            "the peacocks took their feathers back",
+            "his old friends did not make room for him",
+            "he ended up sitting alone"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "It is hard to feel plain next to someone bright.",
+            "I like being myself.",
+            "Someone else might understand why he did it."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        7,
+        10,
+        13
+      ],
+      "hint": "Think about why the jackdaw borrowed the feathers and what it cost him. Then decide what would have been better.",
+      "explain": "One good answer is: I think the jackdaw should have stayed with his old friends. I think so because he ended up sitting alone. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "honesty",
+        "fable"
+      ]
+    },
+    {
+      "id": "p6-i66",
+      "skill": "P6",
+      "passage": "p6-p24",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What does Maya's gift suggest about kindness?",
+      "options": [
+        "You can show kindness to a sad person even when you cannot find the right words.",
+        "It is kindest to stay away from someone who is sad.",
+        "Kindness means finding exactly the right sentence to say.",
+        "A kind friend helps a sad person forget what happened."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "hint": "Find what Sam and Maya could not do at the café. Then find what Maya did instead, and how Mrs. Lin answered.",
+      "explain": "You can show kindness to a sad person even when you cannot find the right words. Sam and Maya did not know what to say. Maya gave Mrs. Lin a drawing without a word, and Mrs. Lin said it was exactly how Biscuit looked.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "kindness",
+        "loss"
+      ]
+    },
+    {
+      "id": "p6-i67",
+      "skill": "P6",
+      "passage": "p6-p24",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows Maya's drawing meant a lot to Mrs. Lin.",
+      "answer": [
+        13,
+        14
+      ],
+      "evidence": [
+        13,
+        14
+      ],
+      "hint": "Read the last paragraph. Find what Mrs. Lin said or did with the drawing.",
+      "explain": "Mrs. Lin held Maya's hand and said, \"That is exactly how he looked.\" Then she hung the drawing in a frame by the cash register. Either sentence shows it.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "kindness",
+        "loss"
+      ]
+    },
+    {
+      "id": "p6-i68",
+      "skill": "P6",
+      "passage": "p6-p24",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Maya gave a drawing instead of words. What could you do for someone who is sad? Build your answer.",
+      "frame": "If someone I know were sad, I would {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My idea",
+          "options": [
+            "make them something",
+            "sit with them",
+            "say a few kind words",
+            "ask an adult what to do"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "you do not always need words to be kind",
+            "it shows that I care",
+            "Maya's drawing helped Mrs. Lin",
+            "everyone shows care in a different way"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "Someone was kind to me when I was sad.",
+            "I find it hard to know what to say too.",
+            "Mrs. Lin might also like kind words."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        11,
+        13
+      ],
+      "hint": "Think about what Maya did when she could not find words. Then think about what feels right for you.",
+      "explain": "One good answer is: If someone I know were sad, I would make them something. I think so because you do not always need words to be kind. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "kindness",
+        "loss"
+      ]
+    },
+    {
+      "id": "p6-i69",
+      "skill": "P6",
+      "passage": "p6-p25",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What big idea about trying again does Priya's story show?",
+      "options": [
+        "Trying again works best when you learn something from each try.",
+        "If you try enough times, success will come by luck.",
+        "When a test fails, it is best to rebuild everything from the start.",
+        "A good builder gets things right on the first try."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        9,
+        14,
+        16
+      ],
+      "hint": "Find what Priya did after each test. Then find how her notes helped her on the last morning.",
+      "explain": "Trying again works best when you learn something from each try. After every test, Priya wrote down what happened and changed one thing. On the last morning, her notes showed that every egg slipped as the arm started to swing, and test twenty-three worked.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "trying-again"
+      ]
+    },
+    {
+      "id": "p6-i70",
+      "skill": "P6",
+      "passage": "p6-p25",
+      "format": "highlight",
+      "level": 5,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that tells the method Priya used after every test.",
+      "answer": [
+        9
+      ],
+      "evidence": [
+        9
+      ],
+      "hint": "Look at the start of the third paragraph. Find a sentence that lists her steps.",
+      "explain": "\"Test after test, Priya followed the same pattern: try, watch carefully, write it down and change one thing.\" It starts the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "trying-again"
+      ]
+    },
+    {
+      "id": "p6-i71",
+      "skill": "P6",
+      "passage": "p6-p25",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Twenty-two of Priya's tests did not work. Were those tests failures? Build your answer.",
+      "frame": "I think the twenty-two tests were {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "failures",
+            "not really failures",
+            "steps toward success",
+            "both failures and lessons"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the story",
+          "options": [
+            "each test taught Priya something",
+            "her notes showed when the eggs slipped",
+            "test twenty-three worked",
+            "some changes made things worse"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I kept trying at something hard once.",
+            "I want to stop when things go wrong sometimes.",
+            "A notebook could help me try again too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        12,
+        14,
+        16
+      ],
+      "hint": "Think about what Priya got from each test, even the ones that did not work.",
+      "explain": "One good answer is: I think the twenty-two tests were steps toward success. I think so because her notes showed when the eggs slipped. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "trying-again"
+      ]
+    },
+    {
+      "id": "p6-i72",
+      "skill": "P6",
+      "passage": "p6-p26",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Which big idea fits this article best?",
+      "options": [
+        "Small jobs done carefully every day can add up to something important.",
+        "Only famous scientists can help people understand the weather.",
+        "One rain gauge can tell scientists everything about the weather.",
+        "A volunteer job is only worth doing if it takes a lot of time."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        6,
+        12,
+        13
+      ],
+      "hint": "Find what one reading can do on its own. Then find what happens when many readings are added together.",
+      "explain": "Small jobs done carefully every day can add up to something important. One reading does not tell scientists much, and the job takes only a few minutes. But thousands of readings over many years help forecasters, farmers and scientists.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "patience",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i73",
+      "skill": "P6",
+      "passage": "p6-p26",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Which detail best supports the idea that many small readings add up?",
+      "options": [
+        "When thousands of readings are put together, they form a detailed picture of where rain fell.",
+        "A rain gauge is a tall, clear tube that catches rain.",
+        "Many volunteers say the job takes only a few minutes a day.",
+        "Some volunteers also read a thermometer each day."
+      ],
+      "answer": 0,
+      "evidence": [
+        6
+      ],
+      "hint": "Look in the second paragraph. Find the sentence that tells what happens when readings are joined together.",
+      "explain": "When thousands of readings are put together, they form a detailed picture of where rain fell. This is in the second paragraph. The other details are true, but they do not show readings adding up.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i74",
+      "skill": "P6",
+      "passage": "p6-p26",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Would you like to do a small job like this every day for years? Build your answer.",
+      "frame": "I {0} like to do this job. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "would",
+            "might",
+            "would not"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "small jobs can matter a lot",
+            "I like keeping records",
+            "doing it every day would be hard",
+            "I like knowing about the weather"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I do something small every day too.",
+            "I could keep a rain record at home.",
+            "Someone else might find this job boring."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        12,
+        13
+      ],
+      "hint": "Think about how long the job takes each day, and how long some volunteers keep doing it.",
+      "explain": "One good answer is: I might like to do this job. I think so because small jobs can matter a lot. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i75",
+      "skill": "P6",
+      "passage": "p6-p27",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Which big idea fits the account of the salt hall?",
+      "options": [
+        "Patient work, done a little at a time, can create something amazing.",
+        "Salt is too soft to be useful for anything except food.",
+        "Great work should always be finished by just one person.",
+        "A beautiful room can only be made by famous artists."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        10,
+        11,
+        14
+      ],
+      "hint": "Find how long the hall took and how the carvers worked. Then read the last sentence.",
+      "explain": "Patient work, done a little at a time, can create something amazing. Miners carved the hall a little at a time for more than thirty years, and many visitors now call it the most beautiful room they have seen.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i76",
+      "skill": "P6",
+      "passage": "p6-p27",
+      "format": "highlight",
+      "level": 5,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows why the carvers had to be patient.",
+      "answer": [
+        10
+      ],
+      "evidence": [
+        10
+      ],
+      "hint": "Read the third paragraph. Find what could happen if a carver made a mistake.",
+      "explain": "\"One wrong cut can crack a figure that has taken months to shape, so the carvers had to be patient and careful.\" It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i77",
+      "skill": "P6",
+      "passage": "p6-p27",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Miners carved one hall for more than thirty years. What do you think about their work? Build your answer.",
+      "frame": "I think their work was {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "amazing",
+            "worth it",
+            "too slow for me",
+            "hard to imagine"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the account",
+          "options": [
+            "almost everything in the hall is made of salt",
+            "the work was passed from one carver to the next",
+            "one wrong cut could crack a figure"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I would like to see the salt hall.",
+            "I worked on something slowly once.",
+            "Someone else might think it took too long."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        8,
+        10,
+        11
+      ],
+      "hint": "Think about how long the work took and what it looks like now. Then decide what you think.",
+      "explain": "One good answer is: I think their work was worth it. I think so because almost everything in the hall is made of salt. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i78",
+      "skill": "P6",
+      "passage": "p6-p29",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "On the second day, Sam helped Grandma Rose learn to do it herself. Which ones help someone learn to do it? Which ones do it for them?",
+      "bins": [
+        "Helps them learn to do it 📝",
+        "Does it for them 🙌"
+      ],
+      "cards": [
+        {
+          "text": "Showing a friend the first move in a game, then letting them try",
+          "bin": 0
+        },
+        {
+          "text": "Writing out the steps of a recipe so a friend can follow them",
+          "bin": 0
+        },
+        {
+          "text": "Holding the back of a bike seat while someone practices riding",
+          "bin": 0
+        },
+        {
+          "text": "Finishing a friend's puzzle for them while they watch",
+          "bin": 1
+        },
+        {
+          "text": "Typing a classmate's answer into the computer for them",
+          "bin": 1
+        },
+        {
+          "text": "Tying a younger child's shoes every time instead of showing how",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        11,
+        13
+      ],
+      "hint": "Ask: after this, could the person do it alone next time?",
+      "explain": "Helps them learn: showing the first move, writing out recipe steps, and holding the bike seat. Does it for them: finishing the puzzle, typing the answer, and tying the shoes. On the second day, Sam used step cards and let Grandma Rose press every button herself.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "big-idea",
+        "kindness",
+        "patience",
+        "apply-idea"
+      ]
+    },
+    {
+      "id": "p6-i79",
+      "skill": "P6",
+      "passage": "p6-p28",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What does this account suggest about working as a team?",
+      "options": [
+        "Many small parts, each played well, can join into something no one could make alone.",
+        "The players with the biggest drums matter most in a band.",
+        "Music sounds best when every player plays the melody.",
+        "Only players with many years of practice should join a big band."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        12,
+        14,
+        15
+      ],
+      "hint": "Find what one player's part sounds like on its own. Then find what happens when all the parts are played together.",
+      "explain": "Many small parts, each played well, can join into something no one could make alone. One part on its own may not sound much like a song. When more than a hundred players join together, they make one huge sound.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i80",
+      "skill": "P6",
+      "passage": "p6-p28",
+      "format": "highlight",
+      "level": 5,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows one player's part is not a whole song.",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        7
+      ],
+      "hint": "Read the second paragraph. Find what a single part sounds like on its own.",
+      "explain": "\"Each player has only a small part of the music, and on its own, a single part may not sound much like a song.\" It ends the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i81",
+      "skill": "P6",
+      "passage": "p6-p28",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Would you like to play one small part in a band of more than one hundred players? Build your answer.",
+      "frame": "I {0} like to play in a band like this. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "would",
+            "might",
+            "would not"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "every part matters to the song",
+            "it would be loud and exciting",
+            "I would rather play a whole song myself",
+            "practicing every night would be hard"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I like being part of a team.",
+            "I would want to play the big bass pans.",
+            "Someone else might like to play alone."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        7,
+        9,
+        12,
+        15
+      ],
+      "hint": "Think about what each player does and what the whole band sounds like. Then think about yourself.",
+      "explain": "One good answer is: I would like to play in a band like this. I think so because every part matters to the song. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "teamwork"
+      ]
+    },
+    {
+      "id": "p6-i82",
+      "skill": "P6",
+      "passage": "p6-p29",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What does this story suggest about helping someone?",
+      "options": [
+        "Sometimes the kindest help is to wait patiently while someone learns to do it alone.",
+        "The best help is to do the hard part for someone as fast as you can.",
+        "Older people cannot learn to use new machines.",
+        "It is better to keep using paper than to learn something new."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        8,
+        11,
+        15
+      ],
+      "hint": "Compare the first afternoon with the second day. Which kind of help let Grandma Rose take an order alone?",
+      "explain": "Sometimes the kindest help is to wait patiently while someone learns to do it alone. When Sam did every step, Grandma Rose learned nothing. When he waited with his hands in his lap, she learned, and on Saturday she typed a whole order by herself.",
+      "inference": 2,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "kindness",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i83",
+      "skill": "P6",
+      "passage": "p6-p29",
+      "format": "highlight",
+      "level": 5,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows Sam letting Grandma Rose do it herself.",
+      "answer": [
+        11,
+        13
+      ],
+      "evidence": [
+        11,
+        13
+      ],
+      "hint": "Read the third and fourth paragraphs. Find what Sam did with his hands, or what he pointed to.",
+      "explain": "\"Then he sat on a stool beside her and kept his hands in his lap.\" Later, Sam pointed to the card instead of the screen. Either sentence shows it.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "kindness",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i84",
+      "skill": "P6",
+      "passage": "p6-p29",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "At first, Sam did the steps for Grandma Rose. Later, he waited while she did them. Which way of helping do you think is better? Build your answer.",
+      "frame": "I think {0} is better. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "doing it for someone",
+            "waiting while they do it",
+            "a bit of both, depending on the job"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the story",
+          "options": [
+            "Grandma Rose could not remember the steps the first day",
+            "she typed a whole order by herself on Saturday",
+            "she almost went back to paper slips"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "Someone was patient with me while I learned.",
+            "It is hard for me to wait while someone is slow.",
+            "I would like to make step cards for someone."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        11,
+        15
+      ],
+      "hint": "Think about what happened after each kind of help. Then decide which you would choose.",
+      "explain": "One good answer is: I think waiting while they do it is better. I think so because she typed a whole order by herself on Saturday. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "kindness",
+        "patience"
+      ]
+    },
+    {
+      "id": "p6-i85",
+      "skill": "P6",
+      "passage": "p6-p30",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What does this account suggest about honesty?",
+      "options": [
+        "A lie can fool people for a while, but careful checking can bring out the truth.",
+        "A fossil is only important if it becomes famous.",
+        "Scientists should never admit that they made a mistake.",
+        "Gluing pieces together is the best way to make a fossil more valuable."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        5,
+        6,
+        14
+      ],
+      "hint": "Find how the fooling started, and how the scientists found out. Then read the last sentence.",
+      "explain": "A lie can fool people for a while, but careful checking can bring out the truth. The glued fossil fooled a famous magazine. A scanner and a matching tail showed the truth, and the truth gave scientists two real animals to study.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "big-idea",
+        "main-idea",
+        "honesty"
+      ]
+    },
+    {
+      "id": "p6-i86",
+      "skill": "P6",
+      "passage": "p6-p30",
+      "format": "highlight",
+      "level": 5,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that tells how scientists discovered the trick.",
+      "answer": [
+        5,
+        7
+      ],
+      "evidence": [
+        5,
+        7
+      ],
+      "hint": "Read the second paragraph. Look for a tool, or for a second fossil, that showed the truth.",
+      "explain": "A scanner showed that the slab was made of many separate pieces. Then a scientist found another fossil with a matching tail. Either sentence shows how the trick was found.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "honesty"
+      ]
+    },
+    {
+      "id": "p6-i87",
+      "skill": "P6",
+      "passage": "p6-p30",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "The magazine had to tell its readers it was wrong. What do you think about that? Build your answer.",
+      "frame": "I think saying it was wrong was {0}. I think so because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "the right thing to do",
+            "embarrassing but important",
+            "hard but brave"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the account",
+          "options": [
+            "readers had seen the fake pictures",
+            "scientists learned to check where fossils come from",
+            "the truth gave scientists two real animals to study"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I said I was wrong once, and it helped.",
+            "Saying I was wrong is hard for me.",
+            "Someone else might have kept quiet."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        2,
+        8,
+        10,
+        14
+      ],
+      "hint": "Think about the people who saw the pictures. Then think about what happened after the truth came out.",
+      "explain": "One good answer is: I think saying it was wrong was embarrassing but important. I think so because scientists learned to check where fossils come from. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "big-idea",
+        "honesty"
+      ]
     }
   ],
   "model": {
     "item": "p6-i00",
     "steps": [
-      { "say": "The question asks about kindness. So I look for kind acts in the story." },
-      { "say": "The lion was kind first. He lifted his paw and let the mouse go.", "show": [5] },
-      { "say": "Later, the mouse was kind. She chewed through the ropes and set the lion free.", "show": [9, 10] },
-      { "say": "The lion's kind act came back to him as help from the mouse." },
-      { "say": "So the story says a kind act can come back to you.", "reveal": true }
+      { "say": "The question asks about friendship. So I look for what the two friends do for each other." },
+      { "say": "The fox tried to trick the rooster. The rooster told the fox to wake his friend first.", "show": [8] },
+      { "say": "The dog jumped out, barking, and the fox ran away.", "show": [10, 11] },
+      { "say": "The rooster and the dog kept each other safe." },
+      { "say": "So the story says good friends look out for each other.", "reveal": true }
     ]
   }
 }

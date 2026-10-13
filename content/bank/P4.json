@@ -23,10 +23,10 @@
     },
     {
       "id": "p4-p02",
-      "title": "Rain on Match Day",
+      "title": "Same Rain, Two Feelings",
       "kind": "story",
       "sentences": [
-        "The Gulls had a big soccer match on Saturday.",
+        "The Harbor Hawks had a big soccer match on a Saturday in November.",
         "But on Saturday morning, rain poured down, and the field turned to mud.",
         "The coach sent a text to say the match was canceled.",
         "Ana stared at the rain on the window.",
@@ -43,7 +43,7 @@
       "topics": ["sports", "weather"],
       "level": 2,
       "socialLoad": 2,
-      "credit": { "title": "Rain on Match Day", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "Same Rain, Two Feelings", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "p4-p03",
@@ -159,7 +159,7 @@
       "title": "The Solo",
       "kind": "story",
       "sentences": [
-        "Every spring, the Harbor Middle School band performs a concert in the gym, and one song includes a short solo that can be played on any instrument.",
+        "Every spring, the Grade 6 band and the Grade 7 band start their concert with one song that they play together, and that song has a short solo that can be played on any instrument.",
         "This year, Maya and Leo both auditioned for it.",
         "On Friday afternoon, the band teacher pinned a list to the music room door.",
         "Next to the word \"Solo,\" it said \"Maya Brooks.\"",
@@ -174,7 +174,7 @@
         "\"Honestly, you played it better than I did,\" he said. \"I am happy for you, and I am also a little disappointed.\"",
         "Maya nodded slowly. \"I am excited, and I am nervous too,\" she admitted.",
         "\"Could you sit somewhere I can see you on concert night?\"",
-        "Leo grinned. \"I will be at the drums, right behind the flutes,\" he said. \"That is where I always sit.\""
+        "Leo grinned. \"I will be at the drums, right behind the flutes,\" he said. \"That is where I always sit when our two bands play together.\""
       ],
       "breaks": [
         4,
@@ -318,6 +318,715 @@
       "socialLoad": 1,
       "credit": {
         "title": "A Mine by the River",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p11",
+      "title": "The Cock and the Jewel",
+      "kind": "fable",
+      "sentences": [
+        "A hungry rooster was scratching in the farmyard dirt for food.",
+        "His claws hit something hard and smooth.",
+        "It was a red jewel, and it sparkled in the sun.",
+        "The rooster looked at the jewel and shook his head.",
+        "\"People think you are a treasure,\" he said to it.",
+        "\"A jeweler would be glad to find you and sell you in her shop.\"",
+        "\"But you are no use to me, because I cannot eat you.\"",
+        "\"To me, one grain of corn is worth more than a jewel.\"",
+        "Then he left the jewel in the dirt and went back to looking for corn."
+      ],
+      "picture": "🐓💎",
+      "topics": [
+        "animals",
+        "food"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Cock and the Jewel",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p4-p12",
+      "title": "The Train Horn",
+      "kind": "story",
+      "sentences": [
+        "On Saturday, Sam and Maya waited at the train crossing by the harbor.",
+        "Sam wanted to see the long freight train.",
+        "Maya wanted to draw it for her new comic.",
+        "Soon the red lights flashed, and the gate came down.",
+        "The train blew its horn as it came close.",
+        "Sam grinned and counted the cars.",
+        "\"That horn is the best sound in the world!\" he shouted.",
+        "Maya put her hands over her ears and stepped back.",
+        "The horn was much too loud for her.",
+        "After the train left, Sam had an idea.",
+        "Next time, they could watch from the hill behind the station.",
+        "The horn would sound softer there, and Maya could still draw the train."
+      ],
+      "picture": "🚂🎨",
+      "topics": [
+        "transport",
+        "friends"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Train Horn",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p13",
+      "title": "The Gnat and the Bull",
+      "kind": "fable",
+      "sentences": [
+        "A gnat is a tiny fly, smaller than a grain of rice.",
+        "One hot afternoon, a gnat flew across a wide field and landed on the horn of a big bull.",
+        "He sat there for a long time and rested his wings.",
+        "He looked out over the field and felt very important.",
+        "\"I am sitting on the biggest animal in this whole field,\" he thought.",
+        "\"The bull must be amazed to have a visitor like me.\"",
+        "At last, the gnat got ready to leave.",
+        "He buzzed loudly next to the bull's ear.",
+        "\"Excuse me,\" he said politely. \"I am sorry if I was too heavy for you.\"",
+        "\"I will fly away now, so you can rest.\"",
+        "The bull kept chewing his grass.",
+        "\"I did not even know you were there,\" he said calmly. \"I will not notice when you go, either.\"",
+        "The gnat flew away without another word."
+      ],
+      "picture": "🦟🐂",
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Gnat and the Bull",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p4-p14",
+      "title": "The Swallow and the Crow",
+      "kind": "fable",
+      "sentences": [
+        "On a warm spring morning, a swallow landed on a fence next to a crow.",
+        "The swallow's feathers were shiny blue on top and soft orange underneath.",
+        "She looked at the crow's stiff black feathers and shook her head.",
+        "\"Your feathers are so dull,\" she said. \"You should take more pride in how you look, like I do.\"",
+        "The crow did not seem upset.",
+        "\"Your feathers are very pretty in the spring sunshine,\" she replied.",
+        "\"But every fall, you fly far away to warmer places.\"",
+        "\"You have never seen this farm in winter, when the snow is deep and the wind is cold.\"",
+        "\"My thick black feathers keep me warm all winter long, so I can stay here the whole year.\"",
+        "\"In fact, winter is my favorite season of all.\"",
+        "The swallow had never thought about winter before.",
+        "She looked at the crow's feathers again, and this time she looked more carefully."
+      ],
+      "picture": "🐦❄️",
+      "topics": [
+        "animals",
+        "nature",
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Swallow and the Crow",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p4-p15",
+      "title": "Feathers on the Raptors",
+      "kind": "story",
+      "sentences": [
+        "Ben and Leo had played Dino Valley every Friday for a year.",
+        "In the game, each player builds a park and takes care of the dinosaurs.",
+        "This Friday, a new update gave the raptors, the fastest dinosaurs in the game, a brand-new look.",
+        "Now they had brown and white feathers on their arms and tails.",
+        "Ben cheered when he saw them.",
+        "\"Scientists found out that raptors really had feathers,\" he said. \"Now the game is right!\"",
+        "Leo frowned at the screen.",
+        "\"They look like giant chickens,\" he said. \"I liked the old green scales better.\"",
+        "Ben opened his dinosaur book and showed Leo a picture of a raptor's arm bone.",
+        "It had a row of tiny bumps where feathers were once attached.",
+        "Leo studied the picture for a long time.",
+        "\"Okay, that is pretty cool,\" he admitted. \"But I still miss the old scales a little.\"",
+        "Then he found a setting that turned his raptors' feathers bright blue, and he grinned."
+      ],
+      "picture": "🦖🎮",
+      "topics": [
+        "games",
+        "dinosaurs"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Feathers on the Raptors",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p16",
+      "title": "The Seal on the Ramp",
+      "kind": "story",
+      "sentences": [
+        "Early on Sunday, a gray harbor seal climbed out of the water and lay down on the boat ramp.",
+        "It stretched out in the warm sun and closed its eyes.",
+        "A harbor worker put up a rope, because seals need plenty of space when they rest.",
+        "Soon a crowd gathered behind the rope.",
+        "Sam and Priya were in the crowd, and they could not stop smiling.",
+        "\"Look at its long whiskers!\" Priya whispered.",
+        "A woman with a small fishing boat was not smiling.",
+        "She needed the ramp to put her boat in the water.",
+        "\"I wanted to go fishing two hours ago,\" she said with a sigh.",
+        "But she knew the seal was resting, and she did not want to bother it.",
+        "So she sat on a bench, poured a cup of coffee and watched the seal too.",
+        "At noon, the seal slid back into the water, and the crowd clapped.",
+        "The woman clapped too, and then she backed her boat down the ramp."
+      ],
+      "picture": "🦭⛵",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Seal on the Ramp",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p17",
+      "title": "The Finish Line",
+      "kind": "article",
+      "sentences": [
+        "A marathon is a running race that is about 42 kilometers, or 26 miles, long.",
+        "Big city marathons can have more than thirty thousand runners.",
+        "The fastest runners finish in just over two hours.",
+        "Many others take five or six hours, and some walk part of the way.",
+        "At the finish line, runners feel many different things.",
+        "The winner runs through a ribbon and raises both arms in the air.",
+        "A runner near the back may feel just as proud, because she reached a goal she trained for all year.",
+        "Many runners feel two things at the same time.",
+        "Their legs ache, and they are very tired.",
+        "But they also feel proud that they did not give up.",
+        "Volunteers hand each finisher a medal and a bottle of water.",
+        "For most runners, the medal means finishing, not winning."
+      ],
+      "picture": "🏃🏅",
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Finish Line",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p18",
+      "title": "The Man and the Lion",
+      "kind": "fable",
+      "sentences": [
+        "Long ago, a man and a lion were traveling together along a forest path.",
+        "To pass the time, they began to argue about which of them was stronger and smarter.",
+        "\"People are the greatest of all creatures,\" said the man. \"We build cities, bridges and ships, and we can solve problems that no animal can solve.\"",
+        "\"Lions are greater,\" the lion replied calmly. \"We are faster and stronger than any person, and every animal in the forest respects us.\"",
+        "Neither of them would agree, so they continued walking in silence.",
+        "After a while, the path led into a town square with an enormous stone statue in the middle.",
+        "The statue showed a tall, powerful man standing proudly, with a lion lying quietly at his feet.",
+        "The man pointed at it and smiled.",
+        "\"There!\" he said. \"That statue proves that people are stronger than lions.\"",
+        "The lion studied the statue for a long moment, and then he laughed a deep, rumbling laugh.",
+        "\"That statue was carved by a person,\" he said. \"Naturally, the person who carved it put a person on top.\"",
+        "\"If lions knew how to carve stone, every statue in this town would show a lion standing proudly, with a man at its feet.\"",
+        "The man opened his mouth to answer, but then he closed it again.",
+        "For the first time, he wondered how the same story might sound if someone else were telling it."
+      ],
+      "breaks": [
+        5,
+        9
+      ],
+      "picture": "🦁🗿",
+      "topics": [
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Man and the Lion",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p4-p19",
+      "title": "The Winning Kick",
+      "kind": "story",
+      "sentences": [
+        "The spring tournament game had ended in a tie, so the two teams had to decide the winner with penalty kicks.",
+        "Each team chose five players to shoot, and Coach Novak picked Ana to take the last kick for her team.",
+        "Ana had practiced penalty kicks after school every day for a month, always aiming for the low corners of the net.",
+        "As she set the ball on the spot, she looked up at the goalkeeper and recognized her.",
+        "They had met at summer camp, shared a cabin for two weeks and become good friends.",
+        "Ana took a deep breath and kicked the ball hard toward the left corner.",
+        "The goalkeeper dived the other way, and the ball rolled into the back of the net.",
+        "Ana's teammates rushed over, shouting and jumping, and Ben lifted her off the ground.",
+        "A moment later, the referee blew the whistle to end the game, and Ana's team had won.",
+        "While her team celebrated, Ana glanced back at the goal.",
+        "Her friend was sitting on the grass with her gloves in her lap, staring at the ground.",
+        "Ana's smile faded a little.",
+        "She was proud of her kick, but she also knew exactly how her friend was feeling.",
+        "She jogged over and held out her hand.",
+        "\"That was a great game,\" she said. \"You stopped three of our best shots in the first half.\"",
+        "Her friend looked up, took a long breath and smiled a small smile.",
+        "\"Next year, I am going to guess the right way,\" she said, and Ana laughed as she helped her up."
+      ],
+      "breaks": [
+        5,
+        9
+      ],
+      "picture": "⚽🥅",
+      "topics": [
+        "sports",
+        "friends"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Winning Kick",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p20",
+      "title": "The Dropped Can",
+      "kind": "story",
+      "sentences": [
+        "At the school open house, the robotics club showed its newest machine: a robot arm that sorted recycling.",
+        "A camera looked at each object on a moving belt, and then the arm picked it up and dropped it into the right bin.",
+        "Cans went into the blue bin, and paper went into the green one.",
+        "Priya and Ben had helped build the arm for six weeks, and about forty parents and students had come to watch.",
+        "The first five objects landed perfectly, and the crowd clapped.",
+        "Then the arm picked up a shiny soda can, lifted it high and let go too early.",
+        "The can missed both bins, bounced off the edge of the stage and rolled under the front row of chairs.",
+        "A few people laughed.",
+        "Ben's face turned hot and red, and he stared at the floor.",
+        "He wished he could switch the robot off and walk away.",
+        "Priya laughed too, but she leaned forward with interest.",
+        "\"Did you see that?\" she whispered. \"It only happened with the shiny can. I bet the stage lights are bouncing off the metal and confusing the camera.\"",
+        "Ms. Ortiz asked the crowd if they would like to see how engineers find and fix a problem, and many people nodded.",
+        "Priya dimmed the bright stage lights, and Ben placed another shiny can on the belt.",
+        "This time, the arm dropped it neatly into the blue bin, and the crowd clapped even louder than before.",
+        "Afterward, Ben said that the dropped can was the most embarrassing moment of his whole year.",
+        "\"But it was also the best part of the show,\" he added, \"because everyone got to see us solve a real problem.\""
+      ],
+      "breaks": [
+        4,
+        12
+      ],
+      "picture": "🤖🥫",
+      "topics": [
+        "robots",
+        "school"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Dropped Can",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p21",
+      "title": "Drums in the Garage",
+      "kind": "story",
+      "sentences": [
+        "Every day when he got home from school, Leo practiced his drums in the garage for one hour.",
+        "The band had a concert in three weeks, and he was learning a fast new rhythm for the last song.",
+        "He loved how loud and strong the beat sounded inside the garage.",
+        "One afternoon, someone knocked on the garage door.",
+        "It was his neighbor, who drove a freight train all night and slept during the day.",
+        "She looked tired, and her voice was quiet.",
+        "\"I am glad you love music,\" she said, \"but I go to sleep at two, and your drums wake me up every afternoon.\"",
+        "Leo felt two things at once.",
+        "He felt bad that he had been waking her up, because he had never thought about anyone sleeping during the day.",
+        "But he also felt frustrated, because the concert was close and he needed every minute of practice.",
+        "His neighbor felt two ways too: she did not want to stop a young drummer from getting better, but she could not drive the train safely without enough sleep.",
+        "They sat on the front steps and talked about it.",
+        "On weekdays, Leo would practice on a rubber practice pad, which makes a soft tap instead of a loud bang.",
+        "On Saturday mornings, when his neighbor was awake, he could play the full drum kit as loudly as he liked.",
+        "Three weeks later, she came to the concert and sat in the front row.",
+        "When the last song ended, she clapped harder than anyone else in the gym."
+      ],
+      "breaks": [
+        7,
+        11
+      ],
+      "picture": "🥁🚂",
+      "topics": [
+        "music",
+        "home"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Drums in the Garage",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p22",
+      "title": "Ten Flags at Lantern Peaks",
+      "kind": "story",
+      "sentences": [
+        "On a Saturday in May, Sam and Priya entered the team orienteering race at Lantern Peaks.",
+        "In orienteering, teams use a map and a compass to locate orange and white flags hidden across the hills.",
+        "At each flag, they punch a card to prove they were there, and the fastest team to find every flag wins.",
+        "Sam carried the map, and Priya carried the compass and a stopwatch.",
+        "The fourth flag was on the opposite side of a steep, rocky hill.",
+        "Most teams scrambled straight over the top, but Sam studied the map carefully and chose a trail that curved around the bottom of the hill.",
+        "The trail was longer, but the ground was flat, and it would lead them directly to the flag.",
+        "The plan worked perfectly, and they located all ten flags without a single wrong turn.",
+        "But when they crossed the finish line, the results board showed that they had finished eighth out of ten teams.",
+        "Priya frowned at her stopwatch, which showed that they had been twelve minutes slower than the winning team.",
+        "\"Climbing over the hill would definitely have been faster,\" she said.",
+        "Sam could not stop grinning.",
+        "\"We found all ten flags, and we never got lost once,\" he said. \"That is the best I have ever done with a map.\"",
+        "Priya considered this for a moment, and then she smiled.",
+        "\"You are right, and I am proud of that too,\" she said. \"But next year, I want to try the hill.\"",
+        "Sam laughed and suggested that they could practice on the steep hill behind the observatory first."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "picture": "🧭🗺️",
+      "topics": [
+        "maps",
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Ten Flags at Lantern Peaks",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p23",
+      "title": "Grandma Rose's New Bread",
+      "kind": "story",
+      "sentences": [
+        "For as long as Sam could remember, Rose's Bakery had sold the same soft white bread every morning.",
+        "In the spring, Grandma Rose decided to try something new.",
+        "For six weeks, she tested a brown loaf made with whole wheat flour, oats and sunflower seeds.",
+        "Whole wheat flour is made from the entire grain, so it has more fiber than white flour, and the seeds add a nutty crunch.",
+        "When the recipe was finally just right, she replaced the white bread with the new loaf.",
+        "Sam loved it from the first bite, and so did many customers.",
+        "But on Monday, Mr. Okafor came in for his usual white loaf and stared at the shelf in surprise.",
+        "\"I make my lunch sandwiches with your white bread every day,\" he said. \"This new bread is good, but it is not the same.\"",
+        "Two other customers who had shopped there for years said almost the same thing that week.",
+        "That night, Grandma Rose sat at the kitchen table with Sam.",
+        "\"I feel proud of the new bread, because I worked hard to get it right,\" she said.",
+        "\"But I also feel bad, because some of my oldest customers miss the bread they have loved for years.\"",
+        "Sam thought for a while, and then he suggested a plan.",
+        "The bakery could sell the new loaf every day and bake the white bread again on Mondays and Thursdays.",
+        "Grandma Rose liked the idea, and the next morning she taped a sign about it to the window.",
+        "The following Monday, Mr. Okafor bought a white loaf for his sandwiches and a brown one to try at home."
+      ],
+      "breaks": [
+        5,
+        9
+      ],
+      "picture": "🍞🥖",
+      "topics": [
+        "food"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Grandma Rose's New Bread",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p24",
+      "title": "The Quiet Ferry",
+      "kind": "story",
+      "sentences": [
+        "For twenty years, Captain Ruth Lane had steered the Harbor Town ferry across the bay, and she knew every sound its old diesel engine made.",
+        "In September, the town replaced that ferry with a new electric one.",
+        "Instead of burning fuel, the new ferry runs on large batteries, which are recharged through a thick cable at the dock while passengers get on and off.",
+        "It produces no exhaust smoke, and its motors are so quiet that passengers can hear the waves splashing against the hull.",
+        "Sam rode the new ferry on its very first morning, and he could hardly stand still.",
+        "He had read about electric ferries for months, and he asked the captain dozens of questions about the batteries, the charging cable and the motors.",
+        "\"It is the most amazing boat I have ever seen,\" he told Grandma Rose, who had come along for the ride.",
+        "Grandma Rose agreed that the air smelled cleaner, and she was delighted that she could finally hear the seagulls during the trip.",
+        "Captain Lane felt two ways about the change.",
+        "She was proud that Harbor Town had chosen a cleaner boat, and she enjoyed the calm, smooth ride.",
+        "But she also missed the deep rumble of the old engine, because for twenty years that sound had told her exactly how the ferry was running.",
+        "Without it, she had to learn to read new signals, such as the numbers on a bright screen beside the wheel.",
+        "On the first few trips, she checked that screen every few minutes.",
+        "After the last trip of the day, Sam found the captain standing quietly at the rail, looking at the old ferry tied up across the harbor.",
+        "\"Do you miss it?\" he asked.",
+        "\"I do,\" she said with a small smile. \"I can miss the old ferry and still be glad about the new one. Both feelings are true.\"",
+        "Then she showed Sam how the screen counted down the minutes until the batteries were full again."
+      ],
+      "breaks": [
+        4,
+        8,
+        13
+      ],
+      "picture": "⛴️🔋",
+      "topics": [
+        "transport",
+        "ocean"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Quiet Ferry",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p25",
+      "title": "The Garnet",
+      "kind": "story",
+      "sentences": [
+        "On a warm Saturday in July, Maya and Leo visited the Ridgeway Mine Museum in Lantern Peaks.",
+        "Behind the museum stood a long wooden trough called a sluice, where water flowed slowly past a row of benches.",
+        "Visitors filled a screen box with sandy gravel, dipped it into the water and shook it gently until only the stones remained.",
+        "Mr. Varga, who guides the mine tours and leads the rock club, showed them how to search the wet stones for anything unusual.",
+        "Leo's screen box held nothing but plain gray pebbles and one piece of green glass.",
+        "Maya found something very different: a dark red crystal about the size of a pea, with smooth, flat sides.",
+        "Mr. Varga held it up to the sunlight and whistled softly.",
+        "\"That is a garnet, and it is the best one anyone has found here all summer,\" he said.",
+        "He explained that the name garnet comes from an old Latin word for pomegranate, a fruit full of deep red seeds, because the crystals are often the same color.",
+        "Then Mr. Varga asked Maya a question.",
+        "\"The rock club's display case at the library has no garnet in it,\" he said. \"Would you consider lending this one to the club, so that other people can enjoy it too?\"",
+        "Maya closed her hand around the stone and did not answer right away.",
+        "She wanted to keep it in her own collection box, where she could examine it every night.",
+        "But she also remembered how excited she had felt the first time she saw a real crystal in that display case.",
+        "Leo stood beside her, holding his piece of green glass.",
+        "He felt a little jealous, because he had shaken his screen box for an entire hour and found nothing special.",
+        "Still, he was genuinely glad for Maya, and he told her it was the most beautiful stone he had ever seen.",
+        "Finally, Maya decided to lend the garnet to the display case for one month, with a card that said, \"Found by Maya Brooks.\"",
+        "After that, it would come home to her collection box."
+      ],
+      "breaks": [
+        4,
+        9,
+        14
+      ],
+      "picture": "💎⛏️",
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Garnet",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p26",
+      "title": "Coming Home from Space",
+      "kind": "article",
+      "sentences": [
+        "Astronauts who live on the International Space Station usually stay for about six months.",
+        "During that time, they float everywhere they go, and they can look down at Earth's oceans and clouds through the windows every day.",
+        "When their mission ends, a capsule carries them back through the atmosphere, and large parachutes slow it down before it reaches the ground or the sea.",
+        "Many astronauts say that coming home brings two strong feelings at the same time.",
+        "The first feeling is joy.",
+        "After months away, they can finally hug their families, take a real shower and eat fresh fruit and vegetables whenever they like.",
+        "Many of them say they also missed simple things about Earth, like the smell of rain, the feeling of wind and the sound of birds.",
+        "The second feeling is harder to describe, because it is a kind of missing.",
+        "Some astronauts miss the fun of floating from room to room, the view of Earth below them and the close teamwork of a small crew.",
+        "Their bodies need time to adjust to gravity again, too.",
+        "In space, muscles and bones get weaker because they do not have to hold up the body's weight, even though astronauts exercise for about two hours every day.",
+        "Back on Earth, their arms and legs feel heavy, and some astronauts feel dizzy when they first try to stand up and walk.",
+        "Some say they let go of a cup or a pen and were surprised when it fell to the floor.",
+        "With help from doctors and trainers, most astronauts can walk and balance well again within a few weeks, though their bones take longer to heal.",
+        "Many of them say they would happily return to space, even though they are glad to be home.",
+        "For them, joy and missing something are not opposites, and both feelings can be true at once."
+      ],
+      "breaks": [
+        4,
+        7,
+        13
+      ],
+      "picture": "🚀🌍",
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Coming Home from Space",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p27",
+      "title": "The Return of the Sea Otters",
+      "kind": "article",
+      "sentences": [
+        "Sea otters are furry ocean mammals that live in shallow water along rocky coasts of the North Pacific Ocean.",
+        "Unlike seals and whales, they have no thick layer of fat to keep them warm.",
+        "Instead, they have the thickest fur of any animal, with up to about one million hairs in a single square inch.",
+        "To keep their bodies warm in cold water, sea otters eat about a quarter of their body weight in food every day.",
+        "Their favorite foods include sea urchins, crabs and clams, which they often crack open with a rock while floating on their backs.",
+        "Long ago, so many sea otters were hunted for their fur that they disappeared from most of the coasts where they once lived.",
+        "Laws now protect them, and in some places they have slowly returned.",
+        "Their return has made different people feel very different ways.",
+        "Many scientists and divers are delighted.",
+        "Sea urchins eat kelp, a giant seaweed that grows in tall underwater forests, and without otters, urchins can eat a kelp forest down to bare rock.",
+        "When otters come back and eat the urchins, the kelp can grow again, and fish, seals and seabirds return to the forest too.",
+        "Some people who catch crabs and clams as their job feel worried instead.",
+        "A hungry otter can eat many crabs and clams each day, so there may be fewer left for the boats to catch and sell.",
+        "Even one person can feel two ways at once.",
+        "A crab fisher might love watching otters play beside her boat, yet still worry about how many crabs she will catch this year.",
+        "In some places, scientists and fishers now meet to share what they have counted and to talk about ways to protect both the otters and the fishing towns."
+      ],
+      "breaks": [
+        5,
+        8,
+        11
+      ],
+      "picture": "🦦🌿",
+      "topics": [
+        "ocean",
+        "animals",
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Return of the Sea Otters",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p4-p28",
+      "title": "Rain After a Dry Summer",
+      "kind": "article",
+      "sentences": [
+        "In some summers, weeks go by without a single drop of rain.",
+        "Lawns turn brown and crunchy, rivers shrink, and farmers watch the soil in their fields dry out and crack.",
+        "A long dry period like this is called a drought.",
+        "When rain finally arrives, the same storm can bring very different feelings to different people.",
+        "For farmers, the first heavy rain after a drought is often an enormous relief.",
+        "Their corn and beans finally get the water they need, and the ponds where their cows drink begin to fill again.",
+        "Gardeners are delighted too, and so are the people who manage a town's water supply, because the lakes that hold the town's drinking water start to rise.",
+        "Other people see the same rain differently.",
+        "A family that planned a beach day all week may feel disappointed when the sky turns gray.",
+        "The owner of an ice cream stand may sell almost nothing that afternoon.",
+        "Hard, dry ground cannot soak up water quickly, so a sudden storm after a drought can run off into the streets and leave large puddles behind.",
+        "Some people even feel two ways at once.",
+        "A farmer might be thankful for the rain on her corn but frustrated that it arrived on the day she planned to cut and dry her hay.",
+        "A child might be sad that a trip to the pool was canceled and also excited to jump in the first puddles of the summer.",
+        "The rain itself is the same everywhere it falls, but what changes is what each person needs from that day."
+      ],
+      "breaks": [
+        4,
+        7,
+        11
+      ],
+      "picture": "🌧️🌽",
+      "topics": [
+        "weather",
+        "food"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Rain After a Dry Summer",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -1288,6 +1997,2560 @@
       ],
       "hint": "Think about one reason to be glad and one reason to be worried. Which one matters more to you?",
       "explain": "One good answer is: I would feel worried about the mine because it could harm the river and the fish. People who disagree with me have reasons too. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i29",
+      "skill": "P4",
+      "passage": "p4-p11",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "Why did the rooster leave the jewel in the dirt?",
+      "options": [
+        "He did not like the color red.",
+        "He could not eat it.",
+        "He wanted a jeweler to find it."
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Read what the rooster says to the jewel. Look for the word \"because.\"",
+      "explain": "He left it because he could not eat it. He says, \"You are no use to me, because I cannot eat you.\"",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "reason",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i30",
+      "skill": "P4",
+      "passage": "p4-p11",
+      "format": "sort",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "The rooster and a jeweler want different things. Sort each card to the one who would want it.",
+      "bins": [
+        "The rooster 🐓",
+        "A jeweler 💎"
+      ],
+      "cards": [
+        {
+          "text": "a grain of corn",
+          "bin": 0
+        },
+        {
+          "text": "something to eat",
+          "bin": 0
+        },
+        {
+          "text": "a red jewel that sparkles",
+          "bin": 1
+        },
+        {
+          "text": "something to sell in a shop",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "hint": "The rooster talks about both of them. Read what he says a jeweler would do. Then read what he wants.",
+      "explain": "The rooster wants corn, something he can eat. A jeweler would want the sparkling jewel to sell in her shop. The rooster says both things to the jewel.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "two-views",
+        "sort-views",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i31",
+      "skill": "P4",
+      "passage": "p4-p11",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "prompt": "The rooster and a jeweler see the same jewel in two ways. Which would you pick? Build your answer.",
+      "frame": "I would rather have {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "the jewel",
+            "the grain of corn",
+            "both"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "it is bright and beautiful",
+            "food is what you need when you are hungry",
+            "I could sell it and buy lots of food"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "The rooster had a good reason too.",
+            "A jeweler would have a good reason too.",
+            "What is worth a lot depends on who you are."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "Think about what the rooster needs. Then think about what a jeweler needs. Which one sounds more like you?",
+      "explain": "One good answer is: I would rather have the jewel because I could sell it and buy lots of food. The rooster had a good reason too. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i32",
+      "skill": "P4",
+      "passage": "p4-p12",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "How did Sam feel when the train blew its horn?",
+      "options": [
+        "annoyed",
+        "sleepy",
+        "happy"
+      ],
+      "pictures": [
+        "😒",
+        "😴",
+        "😄"
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find what Sam does and says when the train comes past.",
+      "explain": "Sam felt happy. He grinned and shouted that the horn is the best sound in the world.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "two-characters",
+        "action-shows-feeling"
+      ]
+    },
+    {
+      "id": "p4-i33",
+      "skill": "P4",
+      "passage": "p4-p12",
+      "format": "highlight",
+      "level": 2,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that tells why Maya stepped back.",
+      "answer": [
+        8
+      ],
+      "evidence": [
+        8
+      ],
+      "hint": "Find where Maya steps back. Then look for a sentence that gives the reason.",
+      "explain": "\"The horn was much too loud for her.\" That is why she covered her ears and stepped back.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "reason"
+      ]
+    },
+    {
+      "id": "p4-i34",
+      "skill": "P4",
+      "passage": "p4-p12",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "prompt": "Sam and Maya felt different about the same horn. Where would you like to watch the train? Build your answer.",
+      "frame": "I would watch the train from {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My place",
+          "options": [
+            "right by the crossing",
+            "the hill behind the station",
+            "either place"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "I like loud sounds",
+            "loud sounds bother me",
+            "I want to see the whole train",
+            "I could draw it in a calm place"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "I can see why Sam likes to be close.",
+            "I can see why Maya likes to be farther away.",
+            "Friends can find a place that works for both."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "hint": "Think about how Sam felt and how Maya felt. Then think about loud sounds and you.",
+      "explain": "One good answer is: I would watch the train from the hill behind the station because I could draw it in a calm place. Friends can find a place that works for both. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p4-i35",
+      "skill": "P4",
+      "passage": "p4-p13",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "How did the gnat feel while he sat on the bull's horn?",
+      "options": [
+        "bored",
+        "nervous",
+        "important",
+        "sleepy"
+      ],
+      "pictures": [
+        "😐",
+        "😟",
+        "😎",
+        "😴"
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Read the part where the gnat sits on the horn. Look for a feeling word.",
+      "explain": "The gnat felt important. The story says he \"felt very important,\" and he thought the bull must be amazed to have him as a visitor.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i36",
+      "skill": "P4",
+      "passage": "p4-p13",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "The gnat and the bull thought about the visit in two different ways. Which choice shows both?",
+      "options": [
+        "The gnat thought the visit was very important, but the bull did not even notice it.",
+        "The gnat thought the visit was short, but the bull thought it was long.",
+        "The gnat was too heavy, and the bull was glad when he left.",
+        "Both of them thought the visit was very important."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        5,
+        8,
+        11
+      ],
+      "hint": "Read what the gnat thinks while he sits. Then read what the bull says at the end.",
+      "explain": "The gnat felt important and thought the bull must be amazed. But the bull said, \"I did not even know you were there.\" The same visit meant a lot to one and nothing to the other.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "two-characters",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i37",
+      "skill": "P4",
+      "passage": "p4-p13",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "If you were the gnat, how would you feel after the bull spoke? Build your answer.",
+      "frame": "If I were the gnat, I would feel {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "My feeling",
+          "options": [
+            "surprised",
+            "a little embarrassed",
+            "fine about it",
+            "disappointed"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "I thought my visit mattered a lot",
+            "the bull did not even notice me",
+            "the bull was calm, not unkind"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "The bull was just busy eating.",
+            "We often notice ourselves more than others notice us.",
+            "A small visit can still matter to the one who makes it."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        11
+      ],
+      "hint": "Think about what the gnat expected. Then think about what the bull really said.",
+      "explain": "One good answer is: If I were the gnat, I would feel surprised because I thought my visit mattered a lot. The bull was just busy eating. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i38",
+      "skill": "P4",
+      "passage": "p4-p14",
+      "format": "sort",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Who said this? Sort each card to the swallow or the crow.",
+      "bins": [
+        "The swallow 💙",
+        "The crow 🖤"
+      ],
+      "cards": [
+        {
+          "text": "Your feathers are so dull.",
+          "bin": 0
+        },
+        {
+          "text": "You should take more pride in how you look.",
+          "bin": 0
+        },
+        {
+          "text": "Your feathers are very pretty in the spring sunshine.",
+          "bin": 1
+        },
+        {
+          "text": "You have never seen this farm in winter.",
+          "bin": 1
+        },
+        {
+          "text": "My thick black feathers keep me warm.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        7,
+        8
+      ],
+      "hint": "The swallow speaks first. The crow answers after that. Find each card in the story.",
+      "explain": "The swallow said the crow's feathers were dull and that she should take more pride in how she looks. The crow said the swallow's feathers were pretty in spring, that the swallow had never seen the farm in winter, and that her own feathers keep her warm.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "two-views",
+        "dialogue",
+        "fable",
+        "same-gender"
+      ]
+    },
+    {
+      "id": "p4-i39",
+      "skill": "P4",
+      "passage": "p4-p14",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "How did the swallow's view change at the end?",
+      "options": [
+        "She decided that her own feathers were dull.",
+        "She made a plan to stay on the farm all winter.",
+        "She still thought the crow's feathers were worth nothing.",
+        "She began to see that the crow's feathers are useful in winter."
+      ],
+      "answer": 3,
+      "evidence": [
+        8,
+        10,
+        11
+      ],
+      "hint": "Read what the crow says about winter. Then read the last two sentences about the swallow.",
+      "explain": "The crow explained that her thick feathers keep her warm all winter. The swallow had never thought about winter, so she looked at the crow's feathers again, more carefully.",
+      "inference": 1,
+      "tags": [
+        "change-of-view",
+        "two-views",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i40",
+      "skill": "P4",
+      "passage": "p4-p14",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "The swallow and the crow judged feathers in two different ways. What do you think? Build your answer.",
+      "frame": "I think the best feathers are {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "bright and pretty",
+            "thick and warm",
+            "whatever fits that bird's life"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "pretty colors are nice to look at",
+            "staying warm in winter matters more",
+            "each bird lives a different life"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "The swallow was not kind to call the crow dull.",
+            "The crow answered calmly, even though the swallow was rude.",
+            "Each season shows a different strength."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        8,
+        10
+      ],
+      "hint": "Think about what the swallow cares about and what the crow cares about. Which one matters more to you?",
+      "explain": "One good answer is: I think the best feathers are whatever fits that bird's life because each bird lives a different life. The crow answered calmly, even though the swallow was rude. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i41",
+      "skill": "P4",
+      "passage": "p4-p15",
+      "format": "sort",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Who felt this way about the new raptors? Sort each card to Ben or Leo.",
+      "bins": [
+        "Ben 😄",
+        "Leo 🤨"
+      ],
+      "cards": [
+        {
+          "text": "He cheered when he saw them.",
+          "bin": 0
+        },
+        {
+          "text": "He said the game is right now.",
+          "bin": 0
+        },
+        {
+          "text": "He showed a picture in his dinosaur book.",
+          "bin": 0
+        },
+        {
+          "text": "He frowned at the screen.",
+          "bin": 1
+        },
+        {
+          "text": "He said they look like giant chickens.",
+          "bin": 1
+        },
+        {
+          "text": "He liked the old green scales better.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "hint": "Every card says \"he.\" Find each action in the story, and check whose name goes with it.",
+      "explain": "Ben cheered, said the game is right now, and showed the picture in his book. Leo frowned, said they look like giant chickens, and liked the old scales better.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "two-characters",
+        "same-gender"
+      ]
+    },
+    {
+      "id": "p4-i42",
+      "skill": "P4",
+      "passage": "p4-p15",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "At the end, how did Leo feel about the feathers?",
+      "options": [
+        "He still thought they looked like chickens, so he stopped playing.",
+        "He thought they were cool, but he still missed the scales a little.",
+        "He liked the feathers, and he was glad the scales were gone.",
+        "He did not care about the raptors at all."
+      ],
+      "answer": 1,
+      "evidence": [
+        10,
+        11,
+        12
+      ],
+      "hint": "Read what Leo says after he studies the picture. Look for the word \"but.\"",
+      "explain": "Leo said, \"Okay, that is pretty cool. But I still miss the old scales a little.\" He felt two ways at once. Then he made his feathers blue and grinned.",
+      "inference": 0,
+      "tags": [
+        "mixed-feelings",
+        "change-of-view"
+      ]
+    },
+    {
+      "id": "p4-i43",
+      "skill": "P4",
+      "passage": "p4-p15",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Ben and Leo felt different about the update. Which look do you like? Build your answer.",
+      "frame": "I like {0} better because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "the feathers",
+            "the old scales",
+            "both looks"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the game should match what scientists found",
+            "the scales looked cool",
+            "it is fun to choose the colors"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "A clue from the story (you can skip this)",
+          "options": [
+            "In the story, Ben shows a bone with bumps for feathers.",
+            "In the story, Leo says they look like giant chickens.",
+            "In the story, Leo makes his feathers bright blue."
+          ],
+          "rubric": 3,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        7,
+        9,
+        12
+      ],
+      "hint": "Think about Ben's reason and Leo's reason. Then pick a clue from the story that fits your answer.",
+      "explain": "One good answer is: I like the feathers better because the game should match what scientists found. In the story, Ben shows a bone with bumps for feathers. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p4-i44",
+      "skill": "P4",
+      "passage": "p4-p16",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why was the woman with the fishing boat not smiling?",
+      "options": [
+        "The seal had scared all the fish away.",
+        "The harbor worker told her to go home.",
+        "The seal was lying on the ramp she needed for her boat.",
+        "She did not like seals."
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Find the woman with the boat. Read what she needed and what she said.",
+      "explain": "The seal was on the boat ramp, and she needed the ramp to put her boat in the water. She had wanted to go fishing two hours earlier.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "reason"
+      ]
+    },
+    {
+      "id": "p4-i45",
+      "skill": "P4",
+      "passage": "p4-p16",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "The woman felt two ways about the seal. Which choice shows both?",
+      "options": [
+        "She was annoyed about waiting, but she cared about letting the seal rest.",
+        "She was excited to see the seal, and she wanted to touch it.",
+        "She was annoyed about waiting, so she tried to make the seal move.",
+        "She was calm all morning, and she forgot about fishing."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9,
+        10
+      ],
+      "hint": "Find one clue that she was unhappy. Then find what she did instead of bothering the seal.",
+      "explain": "She sighed because she had wanted to fish two hours ago. But she did not want to bother the resting seal, so she sat with her coffee and waited.",
+      "inference": 1,
+      "tags": [
+        "mixed-feelings",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "p4-i46",
+      "skill": "P4",
+      "passage": "p4-p16",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Two people at the harbor felt different about the same seal. If you were there, how would you feel? Build your answer.",
+      "frame": "If I were {0}, I would feel {1} because {2}. {3}",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who",
+          "options": [
+            "Sam or Priya",
+            "the woman with the boat"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "feeling",
+          "label": "My feeling",
+          "options": [
+            "happy",
+            "annoyed",
+            "annoyed but kind",
+            "curious"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "a seal up close is amazing",
+            "I would want to go fishing",
+            "the seal needed to rest"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Both feelings make sense.",
+            "Waiting is easier with a plan, like her coffee.",
+            "I would take a photo from far back."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        8,
+        9,
+        10
+      ],
+      "hint": "Think about what Sam and Priya wanted. Then think about what the woman wanted.",
+      "explain": "One good answer is: If I were the woman with the boat, I would feel annoyed but kind because the seal needed to rest. Both feelings make sense. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i47",
+      "skill": "P4",
+      "passage": "p4-p17",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Which choice tells what the whole article is mostly about?",
+      "options": [
+        "How long a marathon race is",
+        "How fast the winners of a marathon can run",
+        "What volunteers hand out at the finish line",
+        "How runners can feel different things when they finish a marathon"
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        6,
+        7,
+        11
+      ],
+      "hint": "Most of the article tells about one thing. Check which choice fits the second half, not just the first sentence.",
+      "explain": "The article is mostly about how runners feel when they finish. It says runners feel many different things, that people at the back can be proud, and that many feel two things at once. The other choices are small details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "two-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i48",
+      "skill": "P4",
+      "passage": "p4-p17",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that tells why a runner near the back may feel proud.",
+      "answer": [
+        6
+      ],
+      "evidence": [
+        6
+      ],
+      "hint": "Find the words \"near the back.\" Then look for the word \"because.\"",
+      "explain": "\"A runner near the back may feel just as proud, because she reached a goal she trained for all year.\" She is proud of reaching her goal, not of winning.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "reason",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i49",
+      "skill": "P4",
+      "passage": "p4-p17",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "A runner finishes near the back, but she did not give up. How do you think she feels? Build your answer.",
+      "frame": "I think she feels {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Her feeling",
+          "options": [
+            "proud",
+            "tired and proud",
+            "happy",
+            "tired"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "she reached her goal",
+            "her legs ache",
+            "she trained all year",
+            "she did not give up"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Finishing can matter more than winning.",
+            "The winner and the last runner can both be proud.",
+            "I felt like this after something hard once."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "hint": "Read the part about runners near the back. Then read about the two feelings many runners have.",
+      "explain": "One good answer is: I think she feels tired and proud because she did not give up. Finishing can matter more than winning. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i50",
+      "skill": "P4",
+      "passage": "p4-p18",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why did the man think the statue proved he was right?",
+      "options": [
+        "It was carved by a lion who admired people.",
+        "It showed a man standing proudly, with a lion at his feet.",
+        "It was the largest statue in the whole town.",
+        "It showed a man and a lion walking together as friends."
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        8
+      ],
+      "hint": "Read what the statue shows. Then read what the man says when he points at it.",
+      "explain": "The statue showed a powerful man standing proudly, with a lion lying at his feet. The man said it proved that people are stronger than lions. This is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "reason",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i51",
+      "skill": "P4",
+      "passage": "p4-p18",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why did the lion laugh at the statue?",
+      "options": [
+        "The statue made the lion look much bigger than he really was.",
+        "He thought the man had carved it himself that morning.",
+        "A person carved it, so of course it showed a person on top.",
+        "He thought statues were too small to prove anything."
+      ],
+      "answer": 2,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Read what the lion says right after he laughs. Look for who carved the statue.",
+      "explain": "The lion said a person carved the statue, so the person put a person on top. If lions could carve stone, the statues would show lions on top. This is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "reason",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i52",
+      "skill": "P4",
+      "passage": "p4-p18",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Who would say this? Sort each card to the man or the lion.",
+      "bins": [
+        "The man 🧑",
+        "The lion 🦁"
+      ],
+      "cards": [
+        {
+          "text": "People build cities, bridges and ships.",
+          "bin": 0
+        },
+        {
+          "text": "We can solve problems no animal can solve.",
+          "bin": 0
+        },
+        {
+          "text": "That statue proves people are stronger.",
+          "bin": 0
+        },
+        {
+          "text": "Every animal in the forest respects us.",
+          "bin": 1
+        },
+        {
+          "text": "A person carved that statue.",
+          "bin": 1
+        },
+        {
+          "text": "Lions would carve a different statue.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        8,
+        10,
+        11
+      ],
+      "hint": "In the first paragraph, each one gives reasons. In the last part, the lion answers the man about the statue.",
+      "explain": "The man said people build cities, bridges and ships, solve problems no animal can, and that the statue proves people are stronger. The lion said every animal respects lions, a person carved the statue, and lions would carve a different one.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "two-views",
+        "sort-views",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i53",
+      "skill": "P4",
+      "passage": "p4-p18",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "The man and the lion saw the same statue in two ways. What do you think the story teaches? Build your answer.",
+      "frame": "I think the story teaches that {0}. {1} {2}",
+      "slots": [
+        {
+          "kind": "lesson",
+          "label": "The lesson",
+          "options": [
+            "the same thing can look different to each side",
+            "who tells a story can change the story",
+            "the man and the lion were both too proud"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "A clue from the story",
+          "options": [
+            "In the story, the lion says a person carved the statue.",
+            "In the story, the man points at the statue to win the argument.",
+            "In the story, the man wonders how someone else would tell it."
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Before I decide, I could ask the other side.",
+            "I have heard two people tell the same event differently.",
+            "Both of them had good points about their own kind."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        10,
+        11,
+        13
+      ],
+      "hint": "Think about why the lion laughed. Then read the last sentence about the man.",
+      "explain": "One good answer is: I think the story teaches that who tells a story can change the story. In the story, the lion says a person carved the statue. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "lesson",
+        "fable"
+      ]
+    },
+    {
+      "id": "p4-i54",
+      "skill": "P4",
+      "passage": "p4-p19",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "After the game, Ana felt two things at once. Which two?",
+      "options": [
+        "proud and sorry for her friend",
+        "proud and angry at her friend",
+        "nervous and disappointed",
+        "relieved and bored"
+      ],
+      "pictures": [
+        "😊😔",
+        "😊😠",
+        "😟😞",
+        "😌😐"
+      ],
+      "answer": 0,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Find the sentence where Ana's smile changes. Read the sentence right after it.",
+      "explain": "Ana felt proud and sorry for her friend. She was proud of her kick, but she also knew exactly how her friend was feeling. This is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "mixed-feelings",
+        "two-characters",
+        "same-gender"
+      ]
+    },
+    {
+      "id": "p4-i55",
+      "skill": "P4",
+      "passage": "p4-p19",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows how the goalkeeper felt before Ana spoke to her.",
+      "answer": [
+        10
+      ],
+      "evidence": [
+        10
+      ],
+      "hint": "Find what Ana sees when she looks back at the goal.",
+      "explain": "\"Her friend was sitting on the grass with her gloves in her lap, staring at the ground.\" Sitting still and staring down shows she was disappointed.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "hidden-feeling",
+        "body-clue"
+      ]
+    },
+    {
+      "id": "p4-i56",
+      "skill": "P4",
+      "passage": "p4-p19",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Ana's team won, and her friend's team lost. What do you think of what Ana did after the game? Build your answer.",
+      "frame": "I think Ana's handshake was {0} because {1}. {2} {3}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "kind",
+            "brave",
+            "a good idea",
+            "hard to do"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "she knew how her friend felt",
+            "she said something true and kind",
+            "she was proud and sorry at the same time"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "A clue from the story (you can skip this)",
+          "options": [
+            "In the story, her friend smiles a small smile.",
+            "In the story, Ana says her friend stopped three shots.",
+            "In the story, Ana's smile fades a little."
+          ],
+          "rubric": 3,
+          "optional": true
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "I would want a friend to do this for me.",
+            "Winning next to a friend who lost can feel strange.",
+            "I would feel proud and sorry too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        11,
+        12,
+        14,
+        15
+      ],
+      "hint": "Think about how the friend felt before Ana came over, and how she felt after.",
+      "explain": "One good answer is: I think Ana's handshake was kind because she knew how her friend felt. In the story, her friend smiles a small smile. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i57",
+      "skill": "P4",
+      "passage": "p4-p20",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "The can fell, and two people felt different. Sort each card to Ben or Priya.",
+      "bins": [
+        "Ben 😳",
+        "Priya 🤔"
+      ],
+      "cards": [
+        {
+          "text": "His face turned hot and red.",
+          "bin": 0
+        },
+        {
+          "text": "He stared at the floor.",
+          "bin": 0
+        },
+        {
+          "text": "He wished he could walk away.",
+          "bin": 0
+        },
+        {
+          "text": "She leaned forward with interest.",
+          "bin": 1
+        },
+        {
+          "text": "She guessed why the arm missed.",
+          "bin": 1
+        },
+        {
+          "text": "She whispered, \"Did you see that?\"",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "hint": "Read the end of the second paragraph. Ben's part comes first, and Priya's part comes right after it.",
+      "explain": "Ben's face turned hot and red, he stared at the floor, and he wished he could walk away. Priya leaned forward with interest, she whispered \"Did you see that?\", and she guessed why the arm missed.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p4-i58",
+      "skill": "P4",
+      "passage": "p4-p20",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why did Ben and Priya feel so differently about the same mistake?",
+      "options": [
+        "Ben had built the arm alone, and Priya had not helped with it.",
+        "Ben thought the can was funny, and Priya was upset that people laughed.",
+        "Ben wanted the show to end early, and Priya wanted to go home.",
+        "Ben thought about the crowd watching, and Priya thought about why the arm missed."
+      ],
+      "answer": 3,
+      "evidence": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "hint": "Look at what each of them pays attention to right after the can falls. Ben looks at the floor. What does Priya think about?",
+      "explain": "Ben was thinking about the crowd watching him, so he felt embarrassed. Priya was thinking about the puzzle of why the arm missed, so she felt curious. This is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "two-views",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "p4-i59",
+      "skill": "P4",
+      "passage": "p4-p20",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "At the end, how did Ben feel about the dropped can?",
+      "options": [
+        "It was embarrassing, and he never wanted to show the robot again.",
+        "It was embarrassing, but it was also the best part of the show.",
+        "It was funny, and he was not embarrassed at all.",
+        "It was the best part, because the crowd laughed at the robot."
+      ],
+      "answer": 1,
+      "evidence": [
+        15,
+        16
+      ],
+      "hint": "Read what Ben says afterward. Look for the word \"but\" and read both parts.",
+      "explain": "Ben said the dropped can was his most embarrassing moment of the year, but also the best part of the show, because everyone saw them solve a real problem. This is at the end.",
+      "inference": 0,
+      "tags": [
+        "mixed-feelings",
+        "change-of-view"
+      ]
+    },
+    {
+      "id": "p4-i60",
+      "skill": "P4",
+      "passage": "p4-p20",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Think about a mistake in front of a crowd. Would you feel more like Ben or Priya? Build your answer.",
+      "frame": "I would feel more like {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who",
+          "options": [
+            "Ben",
+            "Priya",
+            "both of them"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "people watching would make me feel hot and red",
+            "I would want to find out what went wrong",
+            "I would laugh and also feel embarrassed"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "A mistake can help everyone learn.",
+            "Ben's feeling makes sense too.",
+            "Priya's idea helped Ben feel better."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        10,
+        11,
+        16
+      ],
+      "hint": "Read how Ben reacts and how Priya reacts when the can falls. Which one sounds more like you?",
+      "explain": "One good answer is: I would feel more like Ben because people watching would make me feel hot and red. A mistake can help everyone learn. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p4-i61",
+      "skill": "P4",
+      "passage": "p4-p21",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "After his neighbor spoke, Leo felt two things at once. Which two?",
+      "options": [
+        "proud and bored",
+        "sorry and relieved",
+        "sorry and frustrated",
+        "excited and frustrated"
+      ],
+      "pictures": [
+        "😊😐",
+        "😔😌",
+        "😔😤",
+        "🤩😤"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Find the sentence that says Leo felt two things. Read the two sentences after it.",
+      "explain": "Leo felt sorry and frustrated. He felt bad that he had been waking her up, but he was frustrated because he needed every minute of practice. This is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i62",
+      "skill": "P4",
+      "passage": "p4-p21",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "How did the neighbor see the problem?",
+      "options": [
+        "She wanted Leo to keep getting better, but she needed sleep to drive safely.",
+        "She wanted Leo to stop playing the drums, because she did not like music.",
+        "She wanted to sleep in the morning, so Leo should only practice at night.",
+        "She wanted Leo to play louder for the concert, but only on weekdays."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        10
+      ],
+      "hint": "Read what the neighbor says at the door. Then find the sentence that says she felt two ways too.",
+      "explain": "She did not want to stop Leo from getting better, but she could not drive the train safely without enough sleep. This is at the end of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i63",
+      "skill": "P4",
+      "passage": "p4-p21",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "How did Leo and his neighbor solve the problem?",
+      "options": [
+        "Leo stopped practicing until the concert was over.",
+        "The neighbor slept at a friend's house on weekdays.",
+        "Leo played the full drum kit at night while she was at work.",
+        "Leo used a soft practice pad on weekdays and the full drum kit on Saturday mornings."
+      ],
+      "answer": 3,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Read the last paragraph. Find what Leo does on weekdays and what he does on Saturdays.",
+      "explain": "On weekdays, Leo used a rubber practice pad that makes a soft tap. On Saturday mornings, when his neighbor was awake, he played the full drum kit. This is in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p4-i64",
+      "skill": "P4",
+      "passage": "p4-p21",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Leo and his neighbor both had a good reason. Build your answer.",
+      "frame": "I think {0} had the harder problem because {1}. {2}",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who",
+          "options": [
+            "Leo",
+            "the neighbor",
+            "both of them"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the concert was only three weeks away",
+            "a train driver needs enough sleep",
+            "it is hard to knock on a neighbor's door"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "Their plan was fair to both of them.",
+            "Talking it over worked well.",
+            "I would have looked for another place to practice."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "hint": "Think about what Leo needed and what his neighbor needed. Then read how they solved it.",
+      "explain": "One good answer is: I think both of them had the harder problem because a train driver needs enough sleep. Their plan was fair to both of them. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p4-i65",
+      "skill": "P4",
+      "passage": "p4-p22",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Who did or said this after the race? Sort each card to Sam or Priya.",
+      "bins": [
+        "Sam 🗺️",
+        "Priya ⏱️"
+      ],
+      "cards": [
+        {
+          "text": "Could not stop grinning",
+          "bin": 0
+        },
+        {
+          "text": "Said they never got lost once",
+          "bin": 0
+        },
+        {
+          "text": "Called it the best he has done with a map",
+          "bin": 0
+        },
+        {
+          "text": "Frowned at the stopwatch",
+          "bin": 1
+        },
+        {
+          "text": "Said the hill would have been faster",
+          "bin": 1
+        },
+        {
+          "text": "Wants to try the hill next year",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "hint": "Read the last paragraph. Priya speaks first, then Sam, then Priya again.",
+      "explain": "Sam grinned, said they never got lost, and called it his best day with a map. Priya frowned at her stopwatch, said the hill would have been faster, and wants to try the hill next year.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p4-i66",
+      "skill": "P4",
+      "passage": "p4-p22",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sam and Priya looked at the same result in two ways. Which choice shows both views?",
+      "options": [
+        "Priya cared most about never getting lost, and Sam cared most about their time.",
+        "Priya cared most about their time, and Sam cared most about never getting lost.",
+        "Both of them were upset that they finished eighth.",
+        "Priya was proud of the map, and Sam wanted to beat the winners."
+      ],
+      "answer": 1,
+      "evidence": [
+        9,
+        10,
+        12
+      ],
+      "hint": "Read about Priya's stopwatch. Then read what Sam says about the flags.",
+      "explain": "Priya cared about their time: her stopwatch showed they were twelve minutes slower than the winners. Sam cared that they found all ten flags and never got lost. This is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p4-i67",
+      "skill": "P4",
+      "passage": "p4-p22",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Would you go over the hill or around it? Build your answer.",
+      "frame": "I would take {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My way",
+          "options": [
+            "the steep hill",
+            "the trail around the bottom",
+            "the hill, but only after practice"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "it is faster",
+            "it is easier to follow",
+            "finding every flag matters most to me",
+            "winning matters most to me"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Sam's plan made sense for a first race.",
+            "Priya's plan could win next year.",
+            "Both of them had a good goal."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        10,
+        12,
+        14
+      ],
+      "hint": "Think about Sam's reason for the trail and Priya's reason for the hill. Which one matters more to you?",
+      "explain": "One good answer is: I would take the trail around the bottom because finding every flag matters most to me. Priya's plan could win next year. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p4-i68",
+      "skill": "P4",
+      "passage": "p4-p23",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Grandma Rose felt two ways about her new bread. Which choice shows both?",
+      "options": [
+        "Proud of the old bread, but sorry that she tried a new recipe",
+        "Excited about the new bread, but worried that it cost too much to make",
+        "Proud of her hard work, but sorry that some customers missed the old bread",
+        "Tired from six weeks of testing, but glad that every customer liked it"
+      ],
+      "answer": 2,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Read what Grandma Rose tells Sam at the kitchen table. She gives one feeling, then says \"But.\"",
+      "explain": "She felt proud because she worked hard to get the bread right. She also felt bad because some of her oldest customers missed the white bread. This is in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i69",
+      "skill": "P4",
+      "passage": "p4-p23",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Sam loved the new bread. Tap the sentence that shows how Mr. Okafor saw it.",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        7
+      ],
+      "hint": "Find the part where Mr. Okafor comes into the bakery. Read what he says.",
+      "explain": "\"This new bread is good, but it is not the same.\" Mr. Okafor liked the new bread, but he missed the white bread he used for his sandwiches.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "dialogue"
+      ]
+    },
+    {
+      "id": "p4-i70",
+      "skill": "P4",
+      "passage": "p4-p23",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "How did Sam's plan work for customers who liked the new bread and customers who missed the old bread?",
+      "options": [
+        "The new loaf was sold every day, and the white bread came back two days a week.",
+        "The white bread came back every day, and the new loaf was sold only on Mondays.",
+        "The bakery stopped making the new loaf so that every customer would be happy.",
+        "Mr. Okafor learned to bake his own white bread on Mondays and Thursdays."
+      ],
+      "answer": 0,
+      "evidence": [
+        13,
+        15
+      ],
+      "hint": "Find Sam's plan in the last paragraph. Then read what Mr. Okafor buys the next Monday.",
+      "explain": "The bakery sold the new loaf every day and baked the white bread on Mondays and Thursdays. So Mr. Okafor could buy both. This is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p4-i71",
+      "skill": "P4",
+      "passage": "p4-p23",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Mr. Okafor missed the old bread, and Sam loved the new one. Which would you want? Build your answer.",
+      "frame": "If I shopped at Rose's Bakery, I would want {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "the old white bread",
+            "the new brown bread",
+            "both kinds"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "I like the food I know best",
+            "I like trying new things",
+            "the seeds sound tasty",
+            "I like having a choice"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "It is hard when a favorite thing changes.",
+            "Sam's plan was fair to everyone.",
+            "Trying a new recipe takes courage."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        7,
+        11,
+        13
+      ],
+      "hint": "Think about why Sam liked the new bread and why Mr. Okafor missed the old one.",
+      "explain": "One good answer is: If I shopped at Rose's Bakery, I would want both kinds because I like having a choice. It is hard when a favorite thing changes. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p4-i72",
+      "skill": "P4",
+      "passage": "p4-p24",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Captain Lane felt two ways about the new ferry. Sort each card to what she is glad about or what she misses.",
+      "bins": [
+        "Glad about 😊",
+        "Misses 💭"
+      ],
+      "cards": [
+        {
+          "text": "The town chose a cleaner boat.",
+          "bin": 0
+        },
+        {
+          "text": "The calm, smooth ride",
+          "bin": 0
+        },
+        {
+          "text": "The deep rumble of the old engine",
+          "bin": 1
+        },
+        {
+          "text": "Knowing how the ferry runs by its sound",
+          "bin": 1
+        },
+        {
+          "text": "The old ferry across the harbor",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        13,
+        15
+      ],
+      "hint": "Read the third paragraph. The sentence with \"proud\" tells what she is glad about. The sentence that starts with \"But\" tells what she misses.",
+      "explain": "She is glad the town chose a cleaner boat and enjoys the calm ride. She misses the old engine's rumble, which told her how the ferry was running, and she misses the old ferry itself. She says so at the end.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "mixed-feelings",
+        "sort-views"
+      ]
+    },
+    {
+      "id": "p4-i73",
+      "skill": "P4",
+      "passage": "p4-p24",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "How did Sam and Captain Lane feel differently about the new ferry?",
+      "options": [
+        "Sam missed the old engine, but the captain was simply thrilled.",
+        "Both of them were simply thrilled, and neither one missed anything.",
+        "Sam was worried about the batteries, but the captain felt calm about everything.",
+        "Sam was simply thrilled, but the captain was proud and also missed the old engine."
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "hint": "Read the second paragraph about Sam. Then read the third paragraph about the captain. Count how many feelings each one has.",
+      "explain": "Sam could hardly stand still and called it the most amazing boat he had ever seen. Captain Lane was proud of the cleaner boat, but she also missed the old engine's rumble. She felt two ways, and Sam felt one.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "mixed-feelings",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p4-i74",
+      "skill": "P4",
+      "passage": "p4-p24",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why did Captain Lane miss the sound of the old engine?",
+      "options": [
+        "The sound had kept the seagulls away from the ferry.",
+        "For twenty years, the sound had told her how the ferry was running.",
+        "The new motors were so loud that she could not think.",
+        "The old engine had carried the ferry faster than the new motors."
+      ],
+      "answer": 1,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Find the sentence that starts with \"But\" in the third paragraph. Look for the word \"because.\"",
+      "explain": "She missed the deep rumble because for twenty years that sound had told her exactly how the ferry was running. Now she has to read numbers on a screen instead. This is in the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "mixed-feelings",
+        "reason"
+      ]
+    },
+    {
+      "id": "p4-i75",
+      "skill": "P4",
+      "passage": "p4-p24",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Captain Lane says, \"Both feelings are true.\" What do you think she means? Build your answer.",
+      "frame": "I think Captain Lane feels {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Her feelings",
+          "options": [
+            "proud and a little sad",
+            "happy about the new ferry and sad about the old one",
+            "calm, but still getting used to it"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "she knew the old engine for twenty years",
+            "the new ferry is cleaner and quieter",
+            "learning new signals takes time"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "It is normal to miss something old and like something new.",
+            "Sam might feel this way someday too.",
+            "I felt two ways once when something I knew changed."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        11,
+        15
+      ],
+      "hint": "Read what the captain is glad about and what she misses. Then read what she tells Sam at the rail.",
+      "explain": "One good answer is: I think Captain Lane feels happy about the new ferry and sad about the old one because she knew the old engine for twenty years. It is normal to miss something old and like something new. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i76",
+      "skill": "P4",
+      "passage": "p4-p25",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Maya wanted two different things for the garnet. Which choice shows both?",
+      "options": [
+        "She wanted to keep it at home, but she also wanted to give it to Leo.",
+        "She wanted to sell it, but she also wanted to show it to Mr. Varga.",
+        "She wanted to keep it at home, but she also wanted other people to see it.",
+        "She wanted to put it in the display case, but she worried it was only glass."
+      ],
+      "answer": 2,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Find where Maya closes her hand around the stone. Read the two sentences after it.",
+      "explain": "Maya wanted to keep the garnet in her collection box, but she also remembered how exciting it was to see a crystal in the display case. This is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i77",
+      "skill": "P4",
+      "passage": "p4-p25",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "How did Leo feel about Maya's find?",
+      "options": [
+        "A little jealous, but also glad for her",
+        "Glad for her, and not jealous at all",
+        "Jealous, and annoyed with Mr. Varga",
+        "Bored, because he did not care about stones"
+      ],
+      "answer": 0,
+      "evidence": [
+        15,
+        16
+      ],
+      "hint": "Read the last paragraph. Find one feeling word for Leo, then look for the word \"Still.\"",
+      "explain": "Leo felt a little jealous, because he found nothing special. Still, he was glad for Maya and told her it was the most beautiful stone he had ever seen. This is in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "mixed-feelings",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p4-i78",
+      "skill": "P4",
+      "passage": "p4-p25",
+      "format": "highlight",
+      "level": 5,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence that shows why Maya thought about sharing the garnet.",
+      "answer": [
+        13
+      ],
+      "evidence": [
+        13
+      ],
+      "hint": "Maya's first wish is to keep it. Look for a memory that makes her think about other people.",
+      "explain": "\"But she also remembered how excited she had felt the first time she saw a real crystal in that display case.\" She wanted someone else to feel that way too.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "mixed-feelings",
+        "reason"
+      ]
+    },
+    {
+      "id": "p4-i79",
+      "skill": "P4",
+      "passage": "p4-p25",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Would you keep the garnet, lend it, or give it away? Build your answer.",
+      "frame": "I would {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "plan",
+          "label": "My choice",
+          "options": [
+            "keep it in my collection",
+            "lend it to the display, like Maya",
+            "give it to the rock club to keep"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "I found it, so I would want to see it every day",
+            "other people could enjoy it too",
+            "a card with my name would make me proud"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Maya's plan gave her a bit of both.",
+            "Leo's feelings make sense too.",
+            "I would want two things at once, like Maya."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        10,
+        12,
+        13,
+        17
+      ],
+      "hint": "Think about the two things Maya wanted. Which one matters more to you?",
+      "explain": "One good answer is: I would lend it to the display, like Maya, because other people could enjoy it too. Maya's plan gave her a bit of both. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i80",
+      "skill": "P4",
+      "passage": "p4-p26",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What is the main idea of this article about astronauts?",
+      "options": [
+        "A capsule uses large parachutes to land safely on Earth.",
+        "Astronauts exercise for two hours a day to keep their muscles strong.",
+        "Most astronauts want to stay on the space station forever.",
+        "Astronauts can feel glad to be home and also miss being in space."
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        14,
+        15
+      ],
+      "hint": "A main idea covers the whole article. Check which choice fits the first, second and third paragraphs, not just one of them.",
+      "explain": "The article is mostly about the two feelings astronauts have when they come home: joy and missing space. The first paragraph names the two feelings, and the last sentence says both can be true at once. The other choices are small details or not true.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "mixed-feelings",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i81",
+      "skill": "P4",
+      "passage": "p4-p26",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort each card. Is it something astronauts are glad to have back, or something they may miss about space?",
+      "bins": [
+        "Glad to have back 🌍",
+        "May miss about space 🚀"
+      ],
+      "cards": [
+        {
+          "text": "Hugging their families",
+          "bin": 0
+        },
+        {
+          "text": "A real shower",
+          "bin": 0
+        },
+        {
+          "text": "The smell of rain",
+          "bin": 0
+        },
+        {
+          "text": "Floating from room to room",
+          "bin": 1
+        },
+        {
+          "text": "The view of Earth from above",
+          "bin": 1
+        },
+        {
+          "text": "Teamwork with a small crew",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        8
+      ],
+      "hint": "The second paragraph tells about the joy of coming home. The third paragraph tells what they miss.",
+      "explain": "Glad to have back: hugging their families, a real shower and the smell of rain. May miss: floating, the view of Earth and the teamwork of a small crew.",
+      "inference": 0,
+      "tags": [
+        "mixed-feelings",
+        "sort-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i82",
+      "skill": "P4",
+      "passage": "p4-p26",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why might an astronaut miss space even though she is glad to be home?",
+      "options": [
+        "Her family did not come to meet her when she landed.",
+        "She enjoyed floating and the view of Earth, and those things are gone now.",
+        "She does not like fresh food or real showers.",
+        "Her arms and legs feel lighter on Earth than they did in space."
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the paragraph about the second feeling. Read what some astronauts miss.",
+      "explain": "Some astronauts miss the fun of floating, the view of Earth and the teamwork of a small crew. Those things stay in space. This is at the start of the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "mixed-feelings",
+        "reason",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i83",
+      "skill": "P4",
+      "passage": "p4-p26",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "If you came home after six months in space, how would you feel? Build your answer.",
+      "frame": "I would feel {0} because {1}. {2} {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "My feeling",
+          "options": [
+            "glad",
+            "glad and a bit sad",
+            "excited",
+            "tired"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "I could see my family and eat fresh food",
+            "I would miss floating and the view",
+            "my body would feel heavy"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "A fact from the article (you can skip this)",
+          "options": [
+            "The article says joy and missing something can both be true.",
+            "The article says many astronauts would happily go back.",
+            "The article says some astronauts feel dizzy at first."
+          ],
+          "rubric": 3,
+          "optional": true
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "I would want to go back to space someday.",
+            "I would be happy to stay on Earth.",
+            "I felt this way after a long trip once."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        8,
+        11,
+        15
+      ],
+      "hint": "Think about what you would be glad to have back. Then think about what you might miss.",
+      "explain": "One good answer is: I would feel glad and a bit sad because I would miss floating and the view. The article says joy and missing something can both be true. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i84",
+      "skill": "P4",
+      "passage": "p4-p27",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Who would most likely say this? Sort each card to a kelp scientist or a crab fisher.",
+      "bins": [
+        "Kelp scientist 🌿",
+        "Crab fisher 🦀"
+      ],
+      "cards": [
+        {
+          "text": "The kelp forest is growing back.",
+          "bin": 0
+        },
+        {
+          "text": "More fish are living here now.",
+          "bin": 0
+        },
+        {
+          "text": "The otters eat the urchins that ate the kelp.",
+          "bin": 0
+        },
+        {
+          "text": "There are fewer crabs to catch this year.",
+          "bin": 1
+        },
+        {
+          "text": "Otters eat many crabs each day.",
+          "bin": 1
+        },
+        {
+          "text": "I worry about catching enough crabs to sell.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "hint": "The third paragraph is about people who are delighted. The fourth paragraph is about people who are worried.",
+      "explain": "A kelp scientist would talk about the kelp growing back, the fish returning and otters eating the urchins. A crab fisher would talk about fewer crabs, otters eating many crabs, and catching enough crabs to sell.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "two-views",
+        "sort-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i85",
+      "skill": "P4",
+      "passage": "p4-p27",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why are many scientists glad that sea otters came back?",
+      "options": [
+        "Otters eat the kelp, so the water stays clear for fish.",
+        "Otters bring more crabs and clams to the coast.",
+        "Otters eat the urchins, so kelp forests can grow back.",
+        "Otters chase the seals away from the kelp forest."
+      ],
+      "answer": 2,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Read the third paragraph. Follow the chain: who eats the kelp, and who eats them?",
+      "explain": "Urchins eat kelp. When otters come back and eat the urchins, the kelp grows again, and fish, seals and seabirds return. This is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "reason",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i86",
+      "skill": "P4",
+      "passage": "p4-p27",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Sea otters help kelp forests, but they also eat crabs that fishers want. How do you feel about otters coming back? Build your answer.",
+      "frame": "I feel {0} about the otters coming back because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "My feeling",
+          "options": [
+            "glad",
+            "worried",
+            "glad and worried"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "kelp forests are home to many animals",
+            "fishers need crabs to earn money",
+            "otters were almost gone, so it is good they returned"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "The fishers' worry makes sense too.",
+            "Sharing counts and talking can help both sides.",
+            "I would like to see otters in the wild."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        10,
+        12,
+        14,
+        15
+      ],
+      "hint": "Think about one reason to be glad and one reason to be worried. Which one matters more to you?",
+      "explain": "One good answer is: I feel glad and worried about the otters coming back because kelp forests are home to many animals. The fishers' worry makes sense too. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p4-i87",
+      "skill": "P4",
+      "passage": "p4-p28",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why can the same rain make a farmer and an ice cream seller feel so differently?",
+      "options": [
+        "The farmer needs water for crops, but the ice cream seller needs sunny weather for customers.",
+        "The farmer needs dry weather to cut hay, so she is never glad when it rains.",
+        "The farmer lives where it rains, but the ice cream seller lives where it stays dry.",
+        "The farmer wants the lakes to rise, and the ice cream seller wants them to rise too."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        9,
+        14
+      ],
+      "hint": "Find the farmer in the second paragraph and the ice cream seller in the third. What does each one need from the day?",
+      "explain": "The farmer's corn and beans need water, so the rain is a relief. The ice cream seller may sell almost nothing on a rainy afternoon. The last sentence says what changes is what each person needs.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "reason",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i88",
+      "skill": "P4",
+      "passage": "p4-p28",
+      "format": "highlight",
+      "level": 5,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap a sentence that tells the main idea of the whole article.",
+      "answer": [
+        3,
+        14
+      ],
+      "evidence": [
+        3,
+        14
+      ],
+      "hint": "The main idea fits every paragraph, not just one. Look for a sentence that talks about all the people at once.",
+      "explain": "\"When rain finally arrives, the same storm can bring very different feelings to different people.\" The last sentence says the same idea in other words. Either one is right.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "main-idea",
+        "two-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i89",
+      "skill": "P4",
+      "passage": "p4-p28",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "How would the rain make each person feel? Sort each card to glad, disappointed, or both.",
+      "bins": [
+        "Glad 🙂",
+        "Disappointed 😞",
+        "Both 🙂😞"
+      ],
+      "cards": [
+        {
+          "text": "A farmer whose corn needs water",
+          "bin": 0
+        },
+        {
+          "text": "People who manage the town's drinking water",
+          "bin": 0
+        },
+        {
+          "text": "A family that planned a beach day",
+          "bin": 1
+        },
+        {
+          "text": "The owner of an ice cream stand",
+          "bin": 1
+        },
+        {
+          "text": "A farmer who planned to cut hay that day",
+          "bin": 2
+        },
+        {
+          "text": "A child whose pool trip was canceled",
+          "bin": 2
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        12,
+        13
+      ],
+      "hint": "The second paragraph is about glad people, the third is about people who see it differently, and the last is about feeling two ways.",
+      "explain": "Glad: the farmer whose corn needs water and the people who manage the drinking water. Disappointed: the beach family and the ice cream seller. Both: the farmer who planned to cut hay and the child who can jump in puddles but misses the pool.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "mixed-feelings",
+        "sort-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p4-i90",
+      "skill": "P4",
+      "passage": "p4-p28",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Think about the first rain after a long dry summer. Build your answer.",
+      "frame": "If I were {0}, I would feel {1} about the rain because {2}. {3}",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Who",
+          "options": [
+            "a farmer",
+            "a family planning a beach day",
+            "the ice cream seller",
+            "a child who loves puddles"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "feeling",
+          "label": "My feeling",
+          "options": [
+            "glad",
+            "disappointed",
+            "glad and disappointed"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the crops need water",
+            "my plans for the day would change",
+            "the summer has been so dry",
+            "I could jump in puddles"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Someone else could feel the opposite way.",
+            "The same rain can be good and bad.",
+            "I like rainy days."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        8,
+        12,
+        14
+      ],
+      "hint": "Pick one person from the article. Think about what that person needs from the day.",
+      "explain": "One good answer is: If I were a farmer, I would feel glad about the rain because the crops need water. Someone else could feel the opposite way. Any honest answer is fine.",
       "inference": 2,
       "tags": [
         "opinion",

@@ -23,11 +23,11 @@
     },
     {
       "id": "n3-p02",
-      "title": "Rain on Match Day",
+      "title": "The Muddy Field",
       "kind": "story",
       "picture": "🌧️⚽",
       "sentences": [
-        "On Saturday, Ana had a soccer match.",
+        "On a Saturday in April, Ana had a soccer match.",
         "She put on her red shirt and her soccer shoes.",
         "Then it started to rain very hard.",
         "The field got wet and muddy.",
@@ -38,7 +38,7 @@
       "topics": ["sports", "weather"],
       "level": 1,
       "socialLoad": 1,
-      "credit": { "title": "Rain on Match Day", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "The Muddy Field", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n3-p03",
@@ -378,12 +378,12 @@
       "kind": "story",
       "picture": "🎹🎧",
       "sentences": [
-        "Ben plays the keyboard in the Harbor Middle School band.",
-        "On Monday night, he practiced a new song at home.",
+        "Ben plays the keyboard in the Harbor Middle School jazz band.",
+        "On Wednesday night, he practiced a new song at home.",
         "He wore headphones, so the music would not bother Ana while she did her homework.",
         "When he finished, he packed the keyboard into its case.",
         "He did not unplug the headphones, so they went into the case too.",
-        "The next day, the band met in the music room to practice.",
+        "The next day, the jazz band met in the music room to practice.",
         "Ben switched on his keyboard, and the green power light came on.",
         "But when he pressed the keys, the speakers made no sound at all.",
         "Leo, who plays the drums, came over to help.",
@@ -391,7 +391,7 @@
         "It led to Ben's headphones.",
         "On his keyboard, when headphones are plugged in, the sound goes only to them and not to the speakers.",
         "Ben unplugged the headphones and pressed a key, and a clear note rang out.",
-        "The band started the new song on time."
+        "The jazz band started the new song on time."
       ],
       "topics": [
         "music"
@@ -455,9 +455,9 @@
       "kind": "story",
       "picture": "🎺🌬️",
       "sentences": [
-        "The Harbor Middle School band had practiced for six weeks for its spring concert.",
+        "The Grade 6 band at Harbor Middle School had practiced for six weeks for its summer concert.",
         "The concert was planned for two o'clock on Saturday, at the bandstand in the harbor park.",
-        "Maya would play the flute, and Leo would play the drums.",
+        "Maya would play the flute, and Ana would play the trumpet.",
         "On Saturday morning, a strong wind began to blow in from the sea.",
         "Flags on the harbor flapped hard, and paper cups rolled across the park.",
         "At the bandstand, the wind kept lifting the sheet music off the music stands.",
@@ -467,7 +467,7 @@
         "They could move the concert to the school gym, which was free all afternoon.",
         "Or they could wait and play on the next Saturday.",
         "Maya tried two clothespins on her stand, but the wind still bent the pages and turned them over.",
-        "Leo said that many families had already planned to come today.",
+        "Ana said that many families had already planned to come today.",
         "So the band chose the gym.",
         "Moving the concert caused a new problem, because the families would go to the harbor, not the school.",
         "Sam drew a simple map from the bandstand to the gym, and Ms. Gray taped copies to the bandstand posts.",
@@ -583,6 +583,1357 @@
       "socialLoad": 1,
       "credit": {
         "title": "The Rained-Out Dig",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p21",
+      "title": "Pixel's Muddy Paws",
+      "kind": "story",
+      "picture": "🐕🐾",
+      "sentences": [
+        "It rained all morning.",
+        "Then the sun came out.",
+        "Sam let Pixel out into the yard.",
+        "Pixel ran to the garden and dug a big hole.",
+        "The dirt was wet and soft.",
+        "Then Pixel ran back into the house.",
+        "He left brown paw prints all over the kitchen floor.",
+        "Sam got a towel and wiped Pixel's paws.",
+        "Then he mopped the floor."
+      ],
+      "topics": [
+        "animals"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Pixel's Muddy Paws",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p22",
+      "title": "The Flat Ball",
+      "kind": "story",
+      "picture": "⚽🌹",
+      "sentences": [
+        "Ben kicked his soccer ball hard.",
+        "It sailed over the fence.",
+        "It landed in the neighbor's rose bush.",
+        "A sharp thorn poked a small hole in the ball.",
+        "Air escaped through the hole.",
+        "Soon the ball was completely flat.",
+        "Ben could not kick it.",
+        "His dad fixed the hole with a ball repair kit.",
+        "Then Ben pumped air into the ball.",
+        "He kicked it again, and it bounced high."
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Flat Ball",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p23",
+      "title": "The Long Train",
+      "kind": "story",
+      "picture": "🚌🚂",
+      "sentences": [
+        "On Monday morning, Sam rode the bus to school.",
+        "The bus stopped at the rail crossing near the harbor.",
+        "Red lights flashed, and the gate came down.",
+        "A long freight train rolled slowly past.",
+        "Sam counted the cars, and there were ninety-two.",
+        "The bus had to wait for twelve minutes.",
+        "When the gate went up, the bus drove on.",
+        "It got to Harbor Middle School after the bell.",
+        "The driver gave each student a note for the office.",
+        "The note said that a train had made the bus late."
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Long Train",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p24",
+      "title": "The Missing Game Piece",
+      "kind": "story",
+      "picture": "🎲🔵",
+      "sentences": [
+        "Ana and Ben set up a board game on the floor.",
+        "Each player needs four pieces of one color.",
+        "Ben picked blue, but he found only three blue pieces.",
+        "One blue piece was missing.",
+        "The twins looked in the box and under the rug, but they did not find it.",
+        "Then Ana found a small blue button in the craft box.",
+        "\"This can be your fourth piece,\" she said.",
+        "They played the whole game with the button.",
+        "Later, Ben opened the rule book and found the blue piece stuck between two pages."
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Missing Game Piece",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p25",
+      "title": "Ana's Sticky Valve",
+      "kind": "story",
+      "picture": "🎺🛢️",
+      "sentences": [
+        "Ana plays the trumpet in the school band.",
+        "A trumpet has three valves that you press down with your fingers.",
+        "On Tuesday, Ana pressed the first valve, and it stayed down.",
+        "Her notes sounded wrong.",
+        "Ms. Gray, the music teacher, looked at the trumpet.",
+        "\"This valve is dry,\" she said.",
+        "Ana had not put oil on her valves for two months.",
+        "Ms. Gray put three drops of valve oil on the valve.",
+        "Then the valve went up and down smoothly.",
+        "Now Ana oils her valves every Friday."
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ana's Sticky Valve",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p26",
+      "title": "The Melting Ice Cream",
+      "kind": "story",
+      "picture": "🍦☀️",
+      "sentences": [
+        "It was a hot, sunny afternoon in Harbor Town.",
+        "Maya bought a cone of mint ice cream at the Lighthouse Café.",
+        "On the way home, she saw a sparkly rock next to the path.",
+        "She knelt down to look at it with her magnifying glass.",
+        "She looked at it for a long time.",
+        "When she stood up, green drops were running down her hand.",
+        "The hot sun had melted her ice cream.",
+        "Maya laughed and licked the drips off the cone.",
+        "Next time, she will eat her ice cream before she looks at rocks."
+      ],
+      "topics": [
+        "food",
+        "weather"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Melting Ice Cream",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p27",
+      "title": "Too Bright for Stars",
+      "kind": "story",
+      "picture": "⭐💡",
+      "sentences": [
+        "On Friday night, Sam lay on a blanket in his backyard to look at the stars.",
+        "He could see only five stars.",
+        "The porch light was on, and it was very bright.",
+        "Bright lights make it hard to see dim stars.",
+        "Sam asked his dad to switch off the porch light.",
+        "Then Sam waited in the dark for twenty minutes.",
+        "Human eyes need time to get used to darkness.",
+        "Slowly, Sam could see more and more stars.",
+        "Soon he counted more than one hundred."
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Too Bright for Stars",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p28",
+      "title": "The Slippery Gripper",
+      "kind": "story",
+      "picture": "🦾🎾",
+      "sentences": [
+        "Priya's robotics club built a robot arm for the school science fair.",
+        "The arm had a gripper with two flat plastic fingers.",
+        "Its job was to pick up a tennis ball and drop it into a bucket.",
+        "On Monday, Priya tested the arm ten times.",
+        "The fingers closed around the ball each time, but the ball slipped out seven times.",
+        "Priya looked closely at the fingers.",
+        "They were smooth and shiny, so they could not hold the fuzzy ball tightly.",
+        "Sam, who was helping, said the motor could squeeze the fingers harder.",
+        "But Priya worried that a harder squeeze might crack the plastic fingers.",
+        "Instead, she wrapped a thick rubber band around each finger.",
+        "Rubber is soft and grippy, so it does not slide easily.",
+        "Priya tested the arm ten more times, and the ball slipped out only once.",
+        "At the science fair, the arm dropped every ball into the bucket."
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Slippery Gripper",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p29",
+      "title": "No Signal in Story Woods",
+      "kind": "story",
+      "picture": "📱🗺️🌲",
+      "sentences": [
+        "On Sunday, Sam and Maya hiked in Story Woods with Pixel.",
+        "Sam followed the Fern Loop trail with a map app on his phone.",
+        "Deep in the forest, the map on the screen suddenly went blank.",
+        "A message said, \"No signal.\"",
+        "The steep hills surrounding them were blocking the phone signal.",
+        "Maya stopped walking and looked around at the trees.",
+        "\"The phone map is not working, so let's think about our choices,\" Sam said calmly.",
+        "They could walk all the way back the way they came.",
+        "They could wait and hope the signal came back.",
+        "Or they could use the paper trail map that Sam always keeps in his backpack.",
+        "They chose the paper map.",
+        "Sam found the creek on the map, and they could hear the creek on their left.",
+        "That told them where they were on the trail.",
+        "They followed the trail signs and got back to the parking lot before lunch."
+      ],
+      "topics": [
+        "maps",
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "No Signal in Story Woods",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p30",
+      "title": "The Skate Park Is Closed",
+      "kind": "story",
+      "picture": "🛹🚧",
+      "sentences": [
+        "Leo planned to practice a new trick at the skate park on Saturday morning.",
+        "Ben was coming to film it with his tablet.",
+        "But when they got there, a metal fence stood around the ramps.",
+        "A sign on the fence said, \"Closed for repairs until Monday.\"",
+        "Workers were filling cracks in the concrete with fresh cement.",
+        "Leo let out a long sigh.",
+        "Then he said, \"Okay. What else can we do today?\"",
+        "Ben listed three ideas.",
+        "They could go home and play video games.",
+        "They could come back on Monday after school.",
+        "Or they could go to the smooth, flat lot behind the library, where skating is allowed.",
+        "Leo's new trick did not need a ramp, so they chose the library lot.",
+        "Leo practiced for an hour, and Ben filmed him landing the trick twice.",
+        "On Monday, they went back to try the repaired ramps."
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Skate Park Is Closed",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p31",
+      "title": "No Eggs for Muffins",
+      "kind": "story",
+      "picture": "🧁🍌",
+      "sentences": [
+        "On Sunday morning, Sam and Grandma Rose wanted to bake oat muffins for a picnic.",
+        "The recipe needed two eggs.",
+        "But when Sam opened the fridge, the egg carton was empty.",
+        "The corner store was closed until noon, and the picnic started at eleven.",
+        "Grandma Rose stayed calm.",
+        "\"Let's list what we can do,\" she said.",
+        "They could skip the muffins and bring apples instead.",
+        "They could make a different snack that did not need eggs.",
+        "Or they could use mashed banana in place of the eggs.",
+        "Grandma Rose said that half of a mashed banana can take the place of one egg in muffins.",
+        "Sam found one ripe banana in the fruit bowl, which was just enough.",
+        "They chose the banana, because the muffins would still be ready in time.",
+        "The muffins came out soft and sweet, with a little banana taste.",
+        "At the picnic, Ana asked for the recipe."
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "No Eggs for Muffins",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p32",
+      "title": "The Echo in the Gym",
+      "kind": "story",
+      "picture": "🎵🏀",
+      "sentences": [
+        "The school band had to practice in the gym for a week while the music room was painted.",
+        "The gym has a high ceiling, hard walls and a shiny wooden floor.",
+        "When the band played, the sound bounced off the walls and came back as echoes.",
+        "The echoes mixed with the new notes, so the songs were hard to hear clearly.",
+        "Maya could not hear her own flute, and Ben missed the moment to start his part.",
+        "Ms. Gray explained that hard, flat surfaces bounce sound back, but soft things soak it up.",
+        "The band dragged the thick blue gym mats over and stood them up against the walls.",
+        "They also hung two old stage curtains over the railings of the bleachers.",
+        "Then they played the first song again.",
+        "This time, the echoes were much quieter, and each instrument sounded clear.",
+        "Maya could hear her flute, and Ben started his part at the right moment."
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Echo in the Gym",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p33",
+      "title": "The Frozen Game",
+      "kind": "story",
+      "picture": "🎮🔥",
+      "sentences": [
+        "Ana and Ben were playing their favorite racing game in the living room.",
+        "Their game console sat on the floor, and Ben's jacket was lying on top of it.",
+        "After an hour, the picture froze in the middle of a race.",
+        "The console felt very hot, and its fan was loud.",
+        "Then the console switched itself off.",
+        "Ana looked up the problem in the console's instruction booklet.",
+        "It said that the console has vents that let hot air out.",
+        "If the vents are covered, the console gets too hot and turns off to protect itself.",
+        "Ben's jacket had been covering the vents the whole time.",
+        "Ben hung up his jacket, and the twins moved the console to an open shelf.",
+        "They waited ten minutes for it to cool down.",
+        "When they switched it back on, it worked, and it did not freeze again."
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Frozen Game",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p34",
+      "title": "The Tipping Dinosaur",
+      "kind": "story",
+      "picture": "🦕🪵",
+      "sentences": [
+        "Maya and Sam were building a wooden model of a long-necked dinosaur.",
+        "The kit had forty flat wooden pieces that slot together.",
+        "They built the four legs and the body first.",
+        "Then they slotted the long neck onto the front of the body.",
+        "But every time they let go, the model tipped forward and fell on its nose.",
+        "Sam looked at the picture on the box.",
+        "In the picture, a long tail stuck out behind the body.",
+        "\"The tail balances the heavy neck, and we left it out,\" Sam said.",
+        "The tail pieces were still in the bag.",
+        "Maya slotted the tail onto the back of the body.",
+        "Now the neck at the front and the tail at the back balanced each other.",
+        "The model stood on its four legs without tipping.",
+        "Maya read that real long-necked dinosaurs also had long tails that helped balance their heavy necks."
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Tipping Dinosaur",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p35",
+      "title": "The Gulls at the Harbor",
+      "kind": "story",
+      "picture": "🐦🥪⚓",
+      "sentences": [
+        "On a sunny Saturday, Sam, Leo and Priya ate lunch on a bench by the harbor.",
+        "Leo unwrapped his sandwich and set it on the bench beside him.",
+        "A seagull swooped down, grabbed half of the sandwich and flew away.",
+        "Soon five more gulls landed on the railing and watched the friends' food.",
+        "Priya said that gulls learn quickly where people leave food, so they keep coming back.",
+        "The friends talked about what to do.",
+        "Waving the gulls away would work for only a minute.",
+        "So they moved to a picnic table in the covered shelter by the ferry dock.",
+        "They kept their food in their lunch boxes and took out one piece at a time.",
+        "Now the gulls could not see any food, and they could not swoop under the roof.",
+        "After a few minutes, the gulls flew off to look somewhere else.",
+        "Sam gave Leo half of his own sandwich."
+      ],
+      "topics": [
+        "animals",
+        "ocean"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Gulls at the Harbor",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p36",
+      "title": "Maya's Mixed-Up Labels",
+      "kind": "story",
+      "picture": "🪨🏷️",
+      "sentences": [
+        "Maya keeps her rock and mineral collection in an egg carton with twelve cups.",
+        "She used to tape a small paper label with the rock's name onto each rock.",
+        "But tape does not stick well to rough, dusty rocks.",
+        "One day, Maya bumped the carton, and the rocks rolled across her desk.",
+        "Half of the labels fell off.",
+        "Now Maya could not remember which gray rock was granite and which was basalt.",
+        "At the rock club, Mr. Varga showed her how to tell them apart.",
+        "Granite has light and dark speckles, but basalt is dark gray all over.",
+        "Then he showed her a better way to label rocks.",
+        "Maya painted a small white dot on each rock and wrote a number on the dot.",
+        "In her notebook, she wrote each number next to the rock's name.",
+        "Now, even if the rocks spill, every rock still has its number."
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Maya's Mixed-Up Labels",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p37",
+      "title": "Rails in the Heat",
+      "kind": "article",
+      "picture": "🛤️☀️",
+      "sentences": [
+        "Train tracks are made of long steel rails.",
+        "Like most metals, steel grows a tiny bit longer when it gets hot, and it shrinks again when it cools.",
+        "On a very hot summer afternoon, a rail in full sunshine can become much hotter than the air around it.",
+        "If a hot rail grows longer but has no room to move, it pushes sideways and can bend out of line.",
+        "Railway workers call this a \"sun kink,\" and trains must slow down or stop until it is repaired.",
+        "Long ago, railways solved this problem by leaving small gaps between short rails.",
+        "Each gap gave the steel room to grow on hot days.",
+        "But the gaps caused new problems.",
+        "The wheels banged over every gap, which made the ride bumpy and wore out the wheels and the rail ends faster.",
+        "Today, many railways weld their rails together into one long, smooth rail with no gaps.",
+        "Before workers clamp the welded rail down, they warm it or stretch it, so it already has the length it would have on a warm day.",
+        "That way, it has much less need to grow when summer comes.",
+        "On the hottest days, some railways also paint the sides of rails white, because white reflects sunlight and keeps the steel cooler.",
+        "Trains may also run more slowly on very hot afternoons as an extra safety step."
+      ],
+      "breaks": [
+        5,
+        9
+      ],
+      "topics": [
+        "transport",
+        "weather"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rails in the Heat",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p38",
+      "title": "Plaster Jackets for Fossils",
+      "kind": "article",
+      "picture": "🦴🦕",
+      "sentences": [
+        "Dinosaur bones that have been buried for millions of years are often cracked and fragile.",
+        "When paleontologists find one, the rock around it may be the only thing holding the pieces together.",
+        "If they lifted a large bone straight out of the ground, it could break into hundreds of pieces before it reached the museum.",
+        "To solve this problem, field teams build a hard case called a plaster jacket.",
+        "First, they dig a trench around the bone, so that it sits on a pillar of rock.",
+        "Next, they cover the bone with damp paper towels, so the plaster will not stick to the fossil.",
+        "Then they dip strips of rough cloth called burlap in wet plaster and lay them over the bone, one strip at a time.",
+        "When the plaster dries, it holds the bone still, the same way a cast holds a broken arm still.",
+        "Later, the team digs under the pillar, flips the whole block over and covers the bottom with plaster, too.",
+        "Large jackets can weigh as much as a car, so teams sometimes need a crane or a truck to move them.",
+        "At the museum, workers called preparators cut the jacket open with a small saw.",
+        "Then they spend months removing rock from the bone with tiny picks and soft brushes."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Plaster Jackets for Fossils",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p39",
+      "title": "The Sunny Corner",
+      "kind": "story",
+      "picture": "🤖☀️",
+      "sentences": [
+        "For the spring robot show, Priya's robotics club built a small robot that follows a line.",
+        "The track was a loop of black tape on the pale floor of the school library.",
+        "Under the robot's front edge, a light sensor shines a tiny beam at the floor and measures how much light bounces back.",
+        "The pale floor bounces back a lot of light, and the black tape bounces back very little, so the robot can tell where the line is.",
+        "All morning, the robot followed the line perfectly.",
+        "But at two o'clock, it rolled off the tape at the same corner three times in a row.",
+        "Priya noticed that the corner was beside a tall window, and bright afternoon sunlight now covered that part of the floor.",
+        "She guessed that the sunlight was shining into the sensor, so the black tape looked bright, too.",
+        "To test her guess, Leo held up a large book to block the sun, and the robot followed the line around the corner.",
+        "The club compared two fixes.",
+        "They could close the window blinds, which would take only a minute.",
+        "But Mrs. Hall, the librarian, explained that closed blinds would make the reading corner too dark for the students reading there.",
+        "The other fix was to build a small hood around the sensor to keep outside light away from it.",
+        "A hood would take longer to make, but it would work in any room at any time of day.",
+        "The club chose the hood, and Priya made it from black cardboard and tape.",
+        "After that, the robot followed the line through the sunny corner every time."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Sunny Corner",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p40",
+      "title": "Beehive Fences",
+      "kind": "article",
+      "picture": "🐘🐝",
+      "sentences": [
+        "In parts of Africa, elephants sometimes walk into farms at night and eat the crops.",
+        "A small group of them can eat or trample a whole field of corn in one night.",
+        "Farmers need their crops to feed their families, but most of them also want the elephants to stay safe.",
+        "Scientists noticed something useful: elephants stay away from bees.",
+        "A bee sting on the soft skin inside a trunk hurts.",
+        "So when elephants hear buzzing bees, they usually walk away.",
+        "The scientists helped farmers build beehive fences.",
+        "Hives hang from a wire that runs between wooden posts, with a hive about every ten meters around the field.",
+        "If an elephant pushes the wire, the hives swing, and bees fly out buzzing.",
+        "Most elephants then turn around and leave the crops alone.",
+        "In tests, the fences kept most elephants out of the fields.",
+        "The fences also helped farmers in a second way, because they could collect and sell the honey.",
+        "The bees also carry pollen from flower to flower, which helps nearby crops grow.",
+        "But the fences have limits: the bees need flowers and water nearby, and the hives must be checked often."
+      ],
+      "breaks": [
+        3,
+        10
+      ],
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Beehive Fences",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p41",
+      "title": "Ice from the Lake",
+      "kind": "article",
+      "picture": "🧊🥛",
+      "sentences": [
+        "Before electric refrigerators, keeping food cold in summer was a hard problem.",
+        "Milk turned sour, butter melted, and meat spoiled quickly in the heat.",
+        "Tiny living things called bacteria grow fast in warm food, but cold slows them down.",
+        "Many towns solved the problem with winter ice.",
+        "When lakes froze thick in January, workers cut the ice into large blocks with long saws.",
+        "Horses pulled the blocks to an ice house, a building with thick walls and almost no windows.",
+        "Inside, workers packed sawdust around every block.",
+        "Sawdust holds lots of trapped air, and trapped air slows heat from moving into the ice.",
+        "Packed this way, much of the ice stayed frozen until autumn.",
+        "In summer, an ice wagon delivered blocks to homes, and families kept them in a wooden icebox.",
+        "The ice sat in the top part of the icebox, and cold air sank down over the food below.",
+        "As the ice melted, the water dripped into a pan that someone had to empty every day.",
+        "If people forgot, the pan overflowed onto the kitchen floor."
+      ],
+      "breaks": [
+        3,
+        9
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ice from the Lake",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p42",
+      "title": "Water on the Space Station",
+      "kind": "article",
+      "picture": "🛰️💧",
+      "sentences": [
+        "The International Space Station is a science lab that circles Earth about 400 kilometers above the ground.",
+        "The crew on board needs water to drink, to cook, to wash and to grow plants.",
+        "But water is heavy, and sending it up on a rocket costs a lot of money.",
+        "Each supply rocket can carry only so much, and it must also bring food and tools.",
+        "Engineers solved this problem by making the station clean and reuse almost all of its water.",
+        "When astronauts breathe and sweat, they put tiny amounts of water into the air.",
+        "Machines cool the station's air.",
+        "Then the water in the air forms drops, like the drops on a cold glass on a hot day.",
+        "The machines also collect used wash water and the crew's urine.",
+        "Then they filter and clean all of this water until it is purer than most tap water on Earth.",
+        "Today, the station reuses about 98 out of every 100 liters of its water.",
+        "The system does need care, though, because filters fill up and parts sometimes break.",
+        "So the crew keeps spare parts on board, and supply rockets still bring a small amount of fresh water."
+      ],
+      "breaks": [
+        4,
+        10
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Water on the Space Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p43",
+      "title": "The Cancelled Train",
+      "kind": "story",
+      "picture": "🚆🚌",
+      "sentences": [
+        "For a month, Sam had been counting the days until his trip to the Pine Bay Train Museum.",
+        "Grandma Rose had bought two tickets for the 9:10 AM train, and the museum's old steam engine would run at eleven o'clock.",
+        "Sam had even marked the route on his map: fifty-five minutes along the coast, over three bridges and through one tunnel.",
+        "But when they reached the Harbor Town station, the screen above the platform said, \"9:10 to Pine Bay: CANCELLED.\"",
+        "A station worker explained that a signal on the line had stopped working, so no trains could pass until it was repaired.",
+        "Sam stared at the screen, and his face felt hot.",
+        "He took a slow breath and asked Grandma Rose, \"What are our choices?\"",
+        "Together they found three.",
+        "They could ride the replacement bus, which would leave at 9:30 and reach Pine Bay at 10:45.",
+        "They could wait at the station for the signal to be fixed, but the worker did not know how long that would take.",
+        "Or they could go home and use their tickets on another Saturday.",
+        "Sam checked the times again and saw that the bus would still get them to the museum before eleven o'clock.",
+        "The bus was not a train, but it followed the coast road, and Sam could see the railway line from his window most of the way.",
+        "They walked into the museum at 10:50, just in time to watch the steam engine roll out of its shed.",
+        "By the evening, the signal had been repaired, so they took the train home instead of the bus."
+      ],
+      "breaks": [
+        5,
+        11
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Cancelled Train",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p44",
+      "title": "Pixel and the Fence",
+      "kind": "story",
+      "picture": "🐕🕳️",
+      "sentences": [
+        "Every afternoon that week, Pixel dug a hole under the back fence and squeezed into the neighbor's yard.",
+        "Each time, the neighbor kindly walked him back to Sam's front door.",
+        "Sam wanted to stop the digging, but first he wanted to understand why it was happening.",
+        "He noticed that Pixel dug only on long school days, when nobody had taken him for a walk.",
+        "Sam's dad said that many dogs dig when they have extra energy and nothing to do.",
+        "Sam and his dad talked about two fixes.",
+        "One fix was to bury chicken wire along the bottom of the fence, so Pixel could not dig through.",
+        "The other fix was to give Pixel more exercise and a place where he was allowed to dig.",
+        "The wire was quicker, so they tried it first.",
+        "The wire stopped the digging, but it caused a new problem.",
+        "With nothing to do, Pixel began barking at the fence for an hour at a time.",
+        "So Sam added the second fix, too.",
+        "Each morning, he walked Pixel for thirty minutes before school.",
+        "He also built a sandbox in a corner of the yard and buried a chew toy in it.",
+        "Pixel spent his afternoons digging up the toy, and the barking stopped."
+      ],
+      "breaks": [
+        5,
+        9
+      ],
+      "topics": [
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Pixel and the Fence",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p45",
+      "title": "Two Groups, One Gym",
+      "kind": "story",
+      "picture": "⚽♟️",
+      "sentences": [
+        "On rainy days, the twins' soccer team practices in the Harbor Middle School gym.",
+        "One wet Wednesday, Ana and Ben arrived with their teammates at five o'clock, ready to run drills.",
+        "But the gym was already full of tables, because the chess club was holding its yearly tournament there.",
+        "The school calendar showed both groups in the gym at the same time, because two bookings had been typed into the same time slot by mistake.",
+        "Coach Novak looked at the rows of chess boards and nodded slowly.",
+        "\"Two groups and one gym,\" she said, \"so let's work this out together.\"",
+        "She and the chess teacher listed three choices.",
+        "The team could practice in the covered area by the bus stop, which was dry but small.",
+        "The two groups could share the gym, but bouncing balls would distract the chess players.",
+        "Or the team could skip practice today and practice twice next week.",
+        "Ben pointed out that the covered area was too small for running drills but big enough for passing drills in pairs.",
+        "Ana added that passing was the skill the team most needed to practice before Saturday's game.",
+        "So the team practiced passing under the roof for one hour.",
+        "Afterward, some players tiptoed into the gym to watch the last round of the tournament.",
+        "Coach Novak and the chess teacher also asked the office to add a check so that one room cannot be booked twice."
+      ],
+      "breaks": [
+        4,
+        10
+      ],
+      "topics": [
+        "sports",
+        "school"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Two Groups, One Gym",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p46",
+      "title": "Game Night in the Dark",
+      "kind": "story",
+      "picture": "🎲🔦",
+      "sentences": [
+        "Every Friday, Ana and Ben host a game night for their friends.",
+        "This Friday, Leo, Maya, Sam and Priya came over to play a new racing game on the big screen.",
+        "Halfway through the first race, the lights flickered, and then the whole house went dark.",
+        "The screen went black, and the game stopped.",
+        "Ben's mom found a flashlight and checked her phone.",
+        "A message from the power company said that a fallen branch had cut the power on their street.",
+        "The power would be back in about two hours.",
+        "Leo groaned, and then he laughed.",
+        "\"We need a new plan,\" Ana said, \"so let's list what we can do without power.\"",
+        "They could play the racing game on Ben's tablet, but its battery was low, and only two people could play at a time.",
+        "They could play a board game by flashlight.",
+        "Or they could end game night early and go home.",
+        "Priya pointed out that a board game would let all six friends play at once and would not need any power.",
+        "Maya found four flashlights and stood them on the shelves, pointing up at the white ceiling, so the light spread over the whole table.",
+        "They played a game about building train lines across a map, and Sam won by two points.",
+        "At nine o'clock, the lights came back on, but by then nobody wanted to stop the board game."
+      ],
+      "breaks": [
+        7,
+        12
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Game Night in the Dark",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p47",
+      "title": "The Flooded Trail",
+      "kind": "article",
+      "picture": "🦫🌊🌲",
+      "sentences": [
+        "Last spring, a family of beavers moved into the creek that runs through Story Woods.",
+        "Beavers build dams out of branches, mud and stones to create deep ponds, where they can swim safely and store branches to eat in winter.",
+        "Within a month, the new dam had raised the water so much that the pond spread across the trail beside the creek.",
+        "Hikers had to turn back, and the trail crew worried that the soaked ground would wash away.",
+        "A park ranger explained the problem to Ms. Ortiz's science club during a visit.",
+        "Simply tearing out the dam would not work, because beavers usually rebuild a broken dam within a few days.",
+        "Moving the beavers to another place was possible, but the pond had become a home for frogs, ducks and herons, and those animals would lose it too.",
+        "The ranger wanted a solution that would keep the beavers and also keep the trail dry.",
+        "The answer came from a surprising fact about how beavers behave.",
+        "Beavers repair a dam when they hear or feel water rushing through it.",
+        "So the trail crew pushed a long plastic pipe through the dam, with its far end lying deep in the pond, several meters upstream.",
+        "They put a wire cage around that end, so the beavers could not block it with sticks.",
+        "Now water flows quietly into the deep end of the pipe and out below the dam, and the beavers cannot hear the leak.",
+        "The pond dropped about half a meter, which was enough to uncover the trail.",
+        "The fix did cause one small new problem.",
+        "Leaves and twigs sometimes collect on the cage, so the crew must clear it every few weeks.",
+        "The club agreed that a few minutes of cleaning was worth it for a dry trail and a pond full of wildlife."
+      ],
+      "breaks": [
+        4,
+        8,
+        14
+      ],
+      "topics": [
+        "nature",
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Flooded Trail",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p48",
+      "title": "Glasses for a Space Telescope",
+      "kind": "article",
+      "picture": "🔭✨",
+      "sentences": [
+        "In 1990, scientists launched a large telescope into orbit around Earth.",
+        "High above the air, which blurs starlight, it was supposed to take the sharpest pictures of space ever made.",
+        "But when the first pictures came back, the stars looked fuzzy, with a soft glow around each one.",
+        "Engineers studied the pictures and found the cause: the telescope's main mirror had been ground to the wrong shape.",
+        "The mistake was tiny, only about one-fiftieth of the width of a human hair, but a telescope mirror must be almost perfect, so it was enough to blur every image.",
+        "The mirror was 2.4 meters wide and built deep inside the telescope, so it could not be replaced in space.",
+        "Bringing the whole telescope back to Earth would have been extremely difficult and expensive.",
+        "Then the engineers realized something useful.",
+        "Because they could measure exactly how wrong the mirror was, they could design new parts with the opposite error.",
+        "Light would bounce off the faulty mirror, pass through the new parts and come out focused, the same way glasses help a person see clearly.",
+        "In December 1993, a team of astronauts flew up to the telescope on a space shuttle.",
+        "During five spacewalks, they installed a set of small correcting mirrors and a new camera that had the correction built in.",
+        "When the next pictures arrived, the stars were sharp points of light.",
+        "The fix did cause a small new problem: the correcting mirrors took up space, so the astronauts had to remove one science instrument to make room.",
+        "Later missions built the correction into every new instrument, so the extra mirrors were removed in 2009.",
+        "The telescope is still working today, more than thirty years after it was launched."
+      ],
+      "breaks": [
+        5,
+        10,
+        13
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Glasses for a Space Telescope",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p49",
+      "title": "Stuck in the Sand on Mars",
+      "kind": "article",
+      "picture": "🤖🔴⏳",
+      "sentences": [
+        "In 2004, two robot rovers landed on Mars to study its rocks and soil.",
+        "Each rover was about the size of a golf cart and was driven by a team of engineers on Earth.",
+        "Radio signals take several minutes to travel between Earth and Mars, so the drivers could not steer the rovers live, the way a player steers a car in a video game.",
+        "Instead, they sent a list of commands each day, and the rover carried them out by itself.",
+        "In April 2005, one rover, named Opportunity, was driving across a field of sand ripples, which are low waves of sand shaped by the wind.",
+        "It tried to cross a ripple that was softer than it looked, and its six wheels dug deep into the loose sand.",
+        "The wheels kept spinning, but the rover barely moved.",
+        "If the team simply sent more \"drive forward\" commands, the wheels might dig even deeper and trap the rover for the rest of the mission.",
+        "So the team did not rush.",
+        "On Earth, engineers built a copy of the ripple in a test area, using a soft mix of sand and clay that behaved like the Mars sand, and they buried a test rover in it the same way.",
+        "For weeks, they tried different ways of driving the test rover out, and they measured which moves worked best.",
+        "Then they sent Opportunity commands to drive a few centimeters at a time, and they checked the results after each small move.",
+        "After about five weeks, in early June 2005, Opportunity rolled free.",
+        "Getting stuck also taught the team a lesson for the rest of the mission.",
+        "They studied photos of the ground more carefully, and they planned routes that went around soft ripples.",
+        "The safer routes meant the rover took longer to reach new places, but it kept exploring Mars until 2018."
+      ],
+      "breaks": [
+        4,
+        8,
+        13
+      ],
+      "topics": [
+        "robots",
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Stuck in the Sand on Mars",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p50",
+      "title": "Water in the Mine",
+      "kind": "story",
+      "picture": "⛏️💧",
+      "sentences": [
+        "On a class trip to the Ridgeway Mine Museum, Mr. Varga led the students down a long, sloping tunnel into the old mine.",
+        "Halfway down, he stopped beside a rusty iron pipe as thick as a tree trunk.",
+        "\"Listen,\" he said, and the students heard a steady drip somewhere in the dark.",
+        "He explained that rainwater soaks down through soil and cracks in the rock, so water slowly gathers in the deepest tunnels of a mine.",
+        "Hundreds of years ago, as miners dug deeper, many mines filled with water faster than workers could carry it out in buckets.",
+        "At first, miners used pumps turned by horses walking in circles or by water wheels on nearby streams.",
+        "These pumps helped, but they could not lift water from very deep tunnels, and a strong stream was not always nearby.",
+        "In the early 1700s, inventors built some of the first useful steam engines to solve exactly this problem.",
+        "A fire boiled water to make steam, and the steam helped rock a huge wooden beam up and down, which worked a pump far below.",
+        "Steam pumps were strong enough to drain much deeper mines, and they could be built anywhere, even far from a stream.",
+        "Steam pumps solved the flooding, but they caused new problems of their own.",
+        "They burned huge amounts of coal, which cost a lot of money and filled the air with smoke.",
+        "For the next hundred years, engineers worked to build engines that did the same work with less fuel.",
+        "Maya asked how the museum keeps its own tunnels dry today.",
+        "Mr. Varga pointed to a small gray box on the wall: an electric pump with a float switch.",
+        "When the water at the bottom rises, a float lifts and switches the pump on, and when the water drops, the pump switches itself off.",
+        "\"It is the same problem with a much smaller machine,\" he said, and the class followed him deeper into the mine."
+      ],
+      "breaks": [
+        5,
+        10,
+        13
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Water in the Mine",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p51",
+      "title": "Bridges and the Wind",
+      "kind": "article",
+      "picture": "🌉🌬️",
+      "sentences": [
+        "A long bridge must hold up its own weight, the cars and trucks that cross it, and a force that nobody can see: the wind.",
+        "When wind blows across a bridge, it pushes on the deck, which is the flat road part that vehicles drive on.",
+        "Engineers have learned that wind can do more than push.",
+        "As air flows over and under a flat, solid deck, it can form swirls that tug the deck up and down, again and again.",
+        "If those tugs match the natural rhythm of the bridge, the bouncing can grow larger, the way a swing goes higher when you push it at just the right moment.",
+        "To prevent this, engineers test a bridge design before they build it.",
+        "They make a small, exact model of the bridge and place it in a wind tunnel, a long tube where powerful fans blow air at different speeds.",
+        "Sensors on the model measure every movement, so the engineers can find problems while the bridge is still a model.",
+        "When a test shows too much movement, engineers can change the shape of the deck.",
+        "Some modern decks are shaped like a flat box with sloped edges, so the air slides smoothly past without forming strong swirls.",
+        "Other bridges use open frames of steel beams called trusses, which let much of the wind pass straight through.",
+        "Some very long bridges even have a gap down the middle of the deck so air can flow between the two halves.",
+        "Each fix has a cost.",
+        "A deep steel truss is heavy and needs more metal, which makes the bridge more expensive to build and to paint.",
+        "A deck with a gap must be wider to fit the same number of lanes.",
+        "So engineers compare the choices and pick the shape that stays steady in the wind and is also sensible to build."
+      ],
+      "breaks": [
+        5,
+        8,
+        12
+      ],
+      "topics": [
+        "transport",
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bridges and the Wind",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p52",
+      "title": "Harbor Town's Flood Plan",
+      "kind": "article",
+      "picture": "🌧️🗺️🏞️",
+      "sentences": [
+        "Mill Creek flows out of Story Woods and runs through the low part of Harbor Town before it reaches the harbor.",
+        "For years, heavy spring rain made the creek overflow its banks, and water flooded the streets near the library and the bus station.",
+        "Shops had to close, buses took long detours, and families spent days cleaning mud out of their basements.",
+        "The first step in the town's plan was a flood map.",
+        "After each storm, workers marked which streets had water and how deep it was.",
+        "They shaded the map from light blue for shallow water to dark blue for deep water.",
+        "The finished map showed something surprising: the worst flooding always started at one narrow bend near the old bridge.",
+        "There, the creek squeezed through a small pipe under the road.",
+        "The town council then compared two fixes.",
+        "The first fix was to build tall concrete walls along both banks of the creek.",
+        "Walls would keep water off the nearby streets, but an engineer warned that the water would rush faster between them and could flood the farms farther downstream.",
+        "The second fix was to replace the small pipe with a wide bridge and to turn an empty field beside the creek into a park that is allowed to flood.",
+        "During a big storm, extra water would spread across the park's low grass and soak in slowly, instead of rushing into town.",
+        "The council chose the second fix, partly because the park would also give the town a new place for soccer and picnics on dry days.",
+        "The park caused one small problem of its own: after each flood, a layer of mud and branches is left on the grass.",
+        "Now volunteers hold a cleanup morning after big storms, and the soccer field is usually ready again within a week.",
+        "Since the park opened three years ago, the streets near the library have not flooded once."
+      ],
+      "breaks": [
+        3,
+        8,
+        14
+      ],
+      "topics": [
+        "weather",
+        "maps"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Harbor Town's Flood Plan",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p53",
+      "title": "Finding the Way at Sea",
+      "kind": "article",
+      "picture": "⛵🧭⏱️",
+      "sentences": [
+        "For hundreds of years, sailors on long ocean voyages faced a serious map problem.",
+        "To mark a ship's position on a map, a navigator needed two numbers.",
+        "Latitude tells how far north or south a ship is, and longitude tells how far east or west it is.",
+        "Latitude was fairly easy to find, because sailors could measure how high the sun was at noon or how high the North Star was at night.",
+        "Longitude was much harder, and a ship that guessed it wrong could sail right past the island it was looking for.",
+        "The answer came from a surprising place: a clock.",
+        "Earth turns once every 24 hours, so each hour of difference in time equals 15 degrees of longitude.",
+        "If a navigator knew the exact time back at the home port and the time on the ship, the difference showed how far east or west the ship had sailed.",
+        "Time on the ship was easy to find, because the sun is highest in the sky at noon.",
+        "The hard part was keeping the home port's time.",
+        "The best clocks of that time used swinging pendulums, which did not work on a rolling ship.",
+        "In the 1700s, one clockmaker spent decades building clocks that could keep accurate time at sea.",
+        "Instead of a pendulum, his clocks used springs and balanced wheels, and they adjusted for heat and cold.",
+        "On a test voyage across the Atlantic Ocean in 1761, his best clock lost only about five seconds.",
+        "The new sea clocks were very expensive at first, so only some ships carried them.",
+        "Over the next hundred years, makers learned to build them more cheaply, and most ocean ships carried at least one.",
+        "Today, ships find their position with signals from satellites, and those satellites also depend on extremely exact clocks."
+      ],
+      "breaks": [
+        5,
+        11,
+        14
+      ],
+      "topics": [
+        "maps",
+        "ocean"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Finding the Way at Sea",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p54",
+      "title": "Coral Gardens",
+      "kind": "article",
+      "picture": "🪸🐠",
+      "sentences": [
+        "Coral reefs look like colorful rocks under the sea, but they are built by tiny animals called coral polyps.",
+        "Each polyp builds a hard cup of limestone around its soft body.",
+        "Over many years, millions of these cups join together to form a reef.",
+        "Reefs give food and shelter to about one quarter of all kinds of ocean animals, even though they cover less than one percent of the ocean floor.",
+        "In many places, reefs have been damaged by storms, by water that is too warm and by boat anchors dropped on them.",
+        "Many corals grow only a few centimeters a year, so a damaged reef can take decades to grow back by itself.",
+        "Scientists and divers found a way to help, called coral gardening.",
+        "First, divers collect small broken pieces of healthy coral, which can keep growing if they are given a safe place.",
+        "They hang the pieces on frames shaped like trees, made of plastic pipes and fishing line, a few meters below the surface.",
+        "This underwater garden is called a nursery.",
+        "Hanging in open water, the pieces get plenty of light and moving water, and they are safe from sand and from animals that eat coral.",
+        "In a nursery, some corals grow much faster than they would on the reef floor.",
+        "After six months to a year, divers carry the grown pieces back to the damaged reef.",
+        "They attach each piece to the rock with a small dab of underwater cement or a plastic tie.",
+        "Over time, the pieces grow together, and fish return to the reef.",
+        "Coral gardening has limits.",
+        "It is slow, careful work, and divers can plant only a small area each year compared with the huge size of the world's reefs.",
+        "It also cannot help if the water stays too warm, so scientists say it is even more important to protect healthy reefs before they are damaged."
+      ],
+      "breaks": [
+        6,
+        12,
+        15
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Coral Gardens",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p55",
+      "title": "The Flat Tire on Lantern Peaks",
+      "kind": "story",
+      "picture": "🚌☀️🔭",
+      "sentences": [
+        "Ms. Ortiz's class had waited all term for their visit to the observatory on Lantern Peaks.",
+        "Dr. Lee, the scientist who runs the big telescope, had planned a morning with two parts: a tour of the telescope dome at ten o'clock and a sun-watching session at eleven.",
+        "For the sun session, she would use a special telescope with a filter, because looking at the sun is safe only through the right kind of filter.",
+        "But halfway up the winding road, the bus driver heard a thumping sound and pulled into a wide parking area.",
+        "One of the back tires was flat, so the bus could not go any farther.",
+        "A few students groaned, and Leo leaned his forehead against the window.",
+        "Ms. Ortiz phoned Dr. Lee, explained the problem and then turned to the class.",
+        "\"We have a new problem to solve, so let's look at every choice,\" she said.",
+        "A spare bus could come from town, but it would not arrive until almost eleven o'clock.",
+        "The class could walk the rest of the way, but the road had no sidewalk and climbed steeply for two more kilometers.",
+        "Or they could ride the spare bus back to school and book another visit, but Dr. Lee's calendar was full until spring.",
+        "Priya pointed out that waiting for the spare bus meant missing the dome tour but still reaching the sun session.",
+        "Then Dr. Lee offered to give the dome tour by video call, so the class could watch it on Ms. Ortiz's tablet while they waited.",
+        "Everyone agreed that this plan saved the most of their morning.",
+        "The spare bus arrived at five minutes to eleven, and the class reached the observatory just as the sun session began.",
+        "Through the filtered telescope, Sam counted four dark sunspots, and Maya sketched each one in her notebook.",
+        "Before they left, Dr. Lee invited the class to see the real dome in person at the spring open house."
+      ],
+      "breaks": [
+        5,
+        11,
+        14
+      ],
+      "topics": [
+        "space",
+        "transport"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Flat Tire on Lantern Peaks",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n3-p56",
+      "title": "The New Cello String",
+      "kind": "story",
+      "picture": "🎻🎶",
+      "sentences": [
+        "An hour before the winter concert, Priya opened her cello case in the music room and began tuning her strings.",
+        "As she tightened the peg for the highest string, there was a sharp snap, and the string curled up, loose and useless.",
+        "The string had been on the cello for two years, and Ms. Gray explained that old strings gradually wear thin and can break under tension.",
+        "Priya had an important solo in the second piece, and almost every note of it was played on that string.",
+        "Priya held the broken string and closed her eyes for a moment.",
+        "Then she and Ms. Gray calmly listed the possible choices.",
+        "Ms. Gray had a replacement string, but a brand-new string keeps stretching for a day or two, so it gradually slides out of tune.",
+        "The school also owned an extra cello that was already tuned, but it was a smaller size, so Priya's fingers would land in slightly different positions.",
+        "A third possibility was to let Ben play the solo melody on the piano, although Priya had practiced it for six weeks.",
+        "Priya tested a few notes on the smaller cello and missed two of them.",
+        "So she chose the replacement string, and Ms. Gray helped her attach it.",
+        "To deal with the stretching, Priya tuned the new string and gently pulled it away from the fingerboard several times.",
+        "Pulling helps a new string stretch faster, so afterward she tuned it again.",
+        "She also asked Ms. Gray for a short pause between the first and second pieces, so she could check her tuning once more.",
+        "During the first piece, the new string slipped slightly flat, which means a little too low, exactly as Ms. Gray had predicted.",
+        "Priya used the pause to adjust it, and her solo in the second piece sounded clear and steady.",
+        "Afterward, she wrote a reminder in her practice notebook: \"Replace old strings a week before a concert, not an hour before.\""
+      ],
+      "breaks": [
+        4,
+        9,
+        14
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The New Cello String",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -1392,7 +2743,7 @@
       "passage": "n3-p16",
       "format": "tap",
       "level": 3,
-      "prompt": "Why did the keyboard make no sound at band practice?",
+      "prompt": "Why did the keyboard make no sound at jazz band practice?",
       "options": [
         "Ben forgot to switch the keyboard on.",
         "The speakers broke when Ben packed the keyboard.",
@@ -1424,7 +2775,7 @@
       "steps": [
         "Ben wore headphones to practice at home.",
         "He packed the keyboard without unplugging the headphones.",
-        "At band practice, the headphones were still plugged in.",
+        "At jazz band practice, the headphones were still plugged in.",
         "The sound went to the headphones, not the speakers.",
         "The speakers made no sound."
       ],
@@ -1434,7 +2785,7 @@
         7,
         11
       ],
-      "hint": "Start with what Ben did on Monday night. Then ask what each thing made happen next.",
+      "hint": "Start with what Ben did on Wednesday night. Then ask what each thing made happen next.",
       "explain": "Ben wore headphones, then packed the keyboard without unplugging them, so they were still plugged in at practice. The sound went to the headphones, so the speakers made no sound. Look at the third, fifth, eighth and twelfth sentences.",
       "inference": 1,
       "transfer": true,
@@ -1635,7 +2986,7 @@
       "options": [
         "Ms. Gray said clothespins were not allowed at the bandstand.",
         "The families had planned to go to the gym, not the harbor.",
-        "Leo's drums were too heavy to carry outside.",
+        "The drums were too heavy to carry outside.",
         "Maya tried two clothespins, and the wind still bent the pages and turned them over."
       ],
       "answer": 3,
@@ -1689,7 +3040,7 @@
       "prompt": "Moving the concert caused a new problem. How did they solve it?",
       "options": [
         "Sam drew a map to the gym, Ms. Gray taped copies at the bandstand, and the school sent a message.",
-        "Leo played his drums at the harbor so families would hear the band and follow.",
+        "Ana played her trumpet at the harbor so families would hear the band and follow.",
         "Ms. Gray waited at the bandstand and walked each family to the gym.",
         "The band moved the concert to three o'clock so families had more time."
       ],
@@ -2048,6 +3399,3768 @@
       "tags": [
         "problem-solving",
         "flexible",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i59",
+      "skill": "N3",
+      "passage": "n3-p21",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Why did Pixel leave brown paw prints?",
+      "options": [
+        "He jumped in a bath.",
+        "He dug in the wet dirt.",
+        "Sam spilled paint on him."
+      ],
+      "pictures": [
+        "🛁",
+        "🕳️",
+        "🎨"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4,
+        6
+      ],
+      "hint": "Find what Pixel did in the garden. Then read what the dirt was like.",
+      "explain": "Pixel dug a hole in wet, soft dirt. The fourth and fifth sentences tell this.",
+      "inference": 1,
+      "tags": [
+        "cause-unstated"
+      ]
+    },
+    {
+      "id": "n3-i60",
+      "skill": "N3",
+      "passage": "n3-p21",
+      "format": "storymap",
+      "level": 1,
+      "prompt": "Fill in the story map: the problem and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "Pixel ran away.",
+            "Sam lost his towel.",
+            "Pixel left paw prints on the floor."
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "Sam wiped Pixel's paws and mopped the floor.",
+            "Pixel slept in the yard.",
+            "Sam gave Pixel a bath outside."
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Find what Pixel did in the kitchen. Then read the last two sentences.",
+      "explain": "The problem was that Pixel left paw prints on the floor. At the end, Sam wiped Pixel's paws and mopped the floor. Look at the seventh sentence and the last two sentences.",
+      "inference": 0,
+      "tags": [
+        "problem",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i61",
+      "skill": "N3",
+      "passage": "n3-p21",
+      "format": "build",
+      "level": 1,
+      "prompt": "Build a sentence that tells why the dirt was wet.",
+      "frame": "The dirt was wet because {0}.",
+      "slots": [
+        {
+          "kind": "why",
+          "label": "Why?",
+          "options": [
+            "Sam watered the garden",
+            "it rained all morning",
+            "Pixel spilled his water"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        4
+      ],
+      "hint": "Read the first sentence. Think about what rain does to dirt.",
+      "explain": "The dirt was wet because it rained all morning. The first sentence says it rained, and the fifth sentence says the dirt was wet.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "because",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i62",
+      "skill": "N3",
+      "passage": "n3-p22",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What made the hole in the ball?",
+      "options": [
+        "The fence.",
+        "A sharp thorn.",
+        "Ben's shoe."
+      ],
+      "pictures": [
+        "🚧",
+        "🌹",
+        "👟"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the word \"hole\". Read the whole sentence.",
+      "explain": "A sharp thorn poked the hole. It is in the fourth sentence.",
+      "inference": 0,
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i63",
+      "skill": "N3",
+      "passage": "n3-p22",
+      "format": "order",
+      "level": 1,
+      "prompt": "Put the causes in order, from the first one to the flat ball.",
+      "steps": [
+        "The ball landed in a rose bush.",
+        "A thorn made a hole in the ball.",
+        "Air escaped through the hole.",
+        "The ball went flat."
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "Start with where the ball landed. Then ask what each thing made happen next.",
+      "explain": "The ball landed in a rose bush, a thorn poked a hole, air escaped, and the ball went flat. Look at the third, fourth, fifth and sixth sentences.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i64",
+      "skill": "N3",
+      "passage": "n3-p22",
+      "format": "storymap",
+      "level": 1,
+      "prompt": "Fill in the story map: the problem and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "Ben lost the ball.",
+            "The fence fell down.",
+            "The ball went flat."
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "Ben got a new ball.",
+            "His dad fixed the ball, and Ben kicked it again.",
+            "Ben stopped playing soccer."
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        5,
+        7,
+        9
+      ],
+      "hint": "Find what went wrong with the ball. Then read the last three sentences.",
+      "explain": "The problem was that the ball went flat. At the end, his dad fixed the hole, and Ben kicked the ball again. Look at the sixth sentence and the last three sentences.",
+      "inference": 0,
+      "tags": [
+        "problem",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i65",
+      "skill": "N3",
+      "passage": "n3-p23",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did the bus stop at the crossing?",
+      "options": [
+        "The driver wanted Sam to count the cars.",
+        "A long freight train was going past.",
+        "The bus was out of gas."
+      ],
+      "pictures": [
+        "🔢",
+        "🚂",
+        "⛽"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Read the two sentences after the bus stops. Look for what came along the track.",
+      "explain": "A long freight train was going past. The third sentence says the gate came down, and the fourth sentence says the train rolled past.",
+      "inference": 1,
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i66",
+      "skill": "N3",
+      "passage": "n3-p23",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did the driver give each student a note for the office?",
+      "options": [
+        "They forgot their lunches.",
+        "They wanted to go home early.",
+        "They got to school after the bell."
+      ],
+      "pictures": [
+        "🥪",
+        "🏠",
+        "🔔"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Read when the bus got to school. Then read what the note said.",
+      "explain": "The students got to school after the bell, so the note told the office that a train had made the bus late. Look at the last three sentences.",
+      "inference": 1,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i67",
+      "skill": "N3",
+      "passage": "n3-p23",
+      "format": "build",
+      "level": 2,
+      "prompt": "Build a sentence that tells what caused what.",
+      "frame": "The bus had to wait because {0}, so it got to school {1}.",
+      "slots": [
+        {
+          "kind": "why",
+          "label": "Why it waited",
+          "options": [
+            "a student was missing",
+            "the driver took a wrong turn",
+            "a freight train was crossing"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "What happened next",
+          "options": [
+            "after the bell",
+            "before the bell",
+            "at lunch time"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        7
+      ],
+      "hint": "Find what the bus waited for. Then find when it got to school.",
+      "explain": "The bus had to wait because a freight train was crossing, so it got to school after the bell. Look at the fourth, sixth and eighth sentences.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "because",
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i68",
+      "skill": "N3",
+      "passage": "n3-p24",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "Fill in the story map: the problem and what they did.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "The game board was torn.",
+            "One blue piece was missing.",
+            "The twins lost the dice."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "What did they do?",
+          "options": [
+            "They used a blue button as the fourth piece.",
+            "They played a video game instead.",
+            "They painted a red piece blue."
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "hint": "Find what Ben could not find. Then find what Ana took from the craft box.",
+      "explain": "The problem was that one blue piece was missing. They used a blue button as the fourth piece. Look at the fourth sentence and the sixth to eighth sentences.",
+      "inference": 0,
+      "tags": [
+        "problem",
+        "plan"
+      ]
+    },
+    {
+      "id": "n3-i69",
+      "skill": "N3",
+      "passage": "n3-p24",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did Ana give Ben a blue button?",
+      "options": [
+        "Buttons are easier to move.",
+        "He asked for a red piece.",
+        "He needed a fourth blue piece."
+      ],
+      "pictures": [
+        "👆",
+        "🔴",
+        "🔵"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "hint": "Count how many pieces each player needs. Then count how many blue pieces Ben found.",
+      "explain": "Ben needed a fourth blue piece. Each player needs four pieces, and Ben found only three. The button became his fourth piece.",
+      "inference": 1,
+      "tags": [
+        "cause-unstated"
+      ]
+    },
+    {
+      "id": "n3-i70",
+      "skill": "N3",
+      "passage": "n3-p24",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the sentence that tells why the twins could not find the blue piece.",
+      "unit": "sentence",
+      "answer": [
+        8
+      ],
+      "evidence": [
+        8
+      ],
+      "hint": "The twins looked in the box and under the rug. Look for where the piece really was.",
+      "explain": "The piece was stuck between two pages of the rule book, so the twins did not see it. It is in the last sentence.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-unstated",
+        "clue"
+      ]
+    },
+    {
+      "id": "n3-i71",
+      "skill": "N3",
+      "passage": "n3-p25",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did the valve stay down?",
+      "options": [
+        "Ana pressed it much too hard.",
+        "It was full of water from her breath.",
+        "It was dry because it had no oil."
+      ],
+      "pictures": [
+        "💪",
+        "💧",
+        "🛢️"
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Read what Ms. Gray said about the valve. Then read the sentence after it.",
+      "explain": "The valve was dry because Ana had not oiled it for two months. Look at the sixth and seventh sentences.",
+      "inference": 1,
+      "tags": [
+        "cause-unstated"
+      ]
+    },
+    {
+      "id": "n3-i72",
+      "skill": "N3",
+      "passage": "n3-p25",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Tap what Ms. Gray used to fix the valve.",
+      "scene": "school",
+      "objects": [
+        {
+          "label": "Valve oil",
+          "emoji": "🧴"
+        },
+        {
+          "label": "A pencil",
+          "emoji": "✏️"
+        },
+        {
+          "label": "Sheet music",
+          "emoji": "🎼"
+        },
+        {
+          "label": "Drumsticks",
+          "emoji": "🥁"
+        }
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the sentence where Ms. Gray puts something on the valve.",
+      "explain": "Ms. Gray used valve oil. She put three drops on the valve, in the eighth sentence.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "fix"
+      ]
+    },
+    {
+      "id": "n3-i73",
+      "skill": "N3",
+      "passage": "n3-p25",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What does Ana do now so her valves do not stick again?",
+      "options": [
+        "She plays only the second valve.",
+        "She oils her valves every Friday.",
+        "She keeps her trumpet at school."
+      ],
+      "pictures": [
+        "2️⃣",
+        "🛢️",
+        "🏫"
+      ],
+      "answer": 1,
+      "evidence": [
+        9
+      ],
+      "hint": "Read the last sentence. Look for the word \"Now\".",
+      "explain": "Ana oils her valves every Friday. It is in the last sentence.",
+      "inference": 0,
+      "tags": [
+        "prevent"
+      ]
+    },
+    {
+      "id": "n3-i74",
+      "skill": "N3",
+      "passage": "n3-p26",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did Maya's ice cream melt?",
+      "options": [
+        "She dropped it on the hot path by the rock.",
+        "The sun melted it while she looked at a rock.",
+        "The café gave her ice cream that was already soft."
+      ],
+      "pictures": [
+        "⬇️",
+        "☀️",
+        "🔥"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        4,
+        6
+      ],
+      "hint": "Read what the weather was like. Then find what Maya did for a long time.",
+      "explain": "The hot sun melted the ice cream while Maya looked at a rock for a long time. Look at the first, fifth and seventh sentences.",
+      "inference": 1,
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i75",
+      "skill": "N3",
+      "passage": "n3-p26",
+      "format": "build",
+      "level": 2,
+      "prompt": "Build a sentence that tells what caused what.",
+      "frame": "{0} because {1}.",
+      "slots": [
+        {
+          "kind": "then",
+          "label": "What happened",
+          "options": [
+            "Maya bought a cone",
+            "Green drops ran down Maya's hand",
+            "Maya found a rock"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "why",
+          "label": "Why",
+          "options": [
+            "she was painting a comic",
+            "the café was closed",
+            "the ice cream was melting"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find what Maya saw on her hand when she stood up. Then read the next sentence.",
+      "explain": "Green drops ran down Maya's hand because the ice cream was melting. Look at the sixth and seventh sentences.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "because",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i76",
+      "skill": "N3",
+      "passage": "n3-p26",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "Fill in the story map: the problem and the plan for next time.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "Maya lost her magnifying glass.",
+            "Maya's ice cream melted while she looked at a rock.",
+            "The café had no mint ice cream."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "What will she do next time?",
+          "options": [
+            "Stay home on sunny days.",
+            "Buy two cones.",
+            "Eat her ice cream before she looks at rocks."
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        6,
+        8
+      ],
+      "hint": "Find what happened to the ice cream. Then read the last sentence.",
+      "explain": "The problem was that Maya's ice cream melted while she looked at a rock. Next time, she will eat her ice cream first. Look at the seventh sentence and the last sentence.",
+      "inference": 0,
+      "tags": [
+        "problem",
+        "plan",
+        "prevent"
+      ]
+    },
+    {
+      "id": "n3-i77",
+      "skill": "N3",
+      "passage": "n3-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why could Sam see only five stars at first?",
+      "options": [
+        "Thick clouds covered most of the night sky.",
+        "The bright porch light made dim stars hard to see.",
+        "It was too early, and the sky was still light."
+      ],
+      "pictures": [
+        "☁️",
+        "💡",
+        "🌅"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Read the two sentences after Sam sees five stars. Look for something bright.",
+      "explain": "The bright porch light made dim stars hard to see. Look at the third and fourth sentences.",
+      "inference": 1,
+      "tags": [
+        "cause-unstated"
+      ]
+    },
+    {
+      "id": "n3-i78",
+      "skill": "N3",
+      "passage": "n3-p27",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the sentence that tells why Sam waited in the dark.",
+      "unit": "sentence",
+      "answer": [
+        6
+      ],
+      "evidence": [
+        6
+      ],
+      "hint": "Find the sentence where Sam waits. Then read the sentence after it.",
+      "explain": "Human eyes need time to get used to darkness. It is the seventh sentence, just after Sam waits for twenty minutes.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "why-stated"
+      ]
+    },
+    {
+      "id": "n3-i79",
+      "skill": "N3",
+      "passage": "n3-p27",
+      "format": "storymap",
+      "level": 2,
+      "prompt": "Fill in the story map: the problem and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "Sam could see only a few stars.",
+            "Sam lost his blanket.",
+            "Pixel barked at the stars."
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "Sam went inside to sleep.",
+            "Sam saw only five stars all night.",
+            "Sam counted more than one hundred stars."
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        1,
+        8
+      ],
+      "hint": "Find how many stars Sam could see at first. Then read the last sentence.",
+      "explain": "The problem was that Sam could see only a few stars. At the end, he counted more than one hundred. Look at the second sentence and the last sentence.",
+      "inference": 0,
+      "tags": [
+        "problem",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i80",
+      "skill": "N3",
+      "passage": "n3-p28",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why did the ball slip out of the gripper?",
+      "options": [
+        "The motor was too weak to close the fingers around the ball.",
+        "The ball was too heavy for the plastic arm to lift.",
+        "The fingers were smooth and could not hold the fuzzy ball tightly.",
+        "The bucket was too far away for the arm to reach."
+      ],
+      "pictures": [
+        "⚙️",
+        "🏋️",
+        "✨",
+        "🪣"
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the sentence where Priya looks closely at the fingers. Read what she saw.",
+      "explain": "The fingers were smooth and shiny, so they could not hold the fuzzy ball tightly. It is in the seventh sentence.",
+      "inference": 0,
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i81",
+      "skill": "N3",
+      "passage": "n3-p28",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Priya fix the problem?",
+      "options": [
+        "She made the motor squeeze the fingers harder.",
+        "She wrapped a rubber band around each finger.",
+        "She used a smaller ball that was easier to hold.",
+        "She moved the bucket closer to the arm."
+      ],
+      "pictures": [
+        "💪",
+        "➰",
+        "⚾",
+        "🪣"
+      ],
+      "answer": 1,
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "Find the word \"Instead\". Read what Priya did.",
+      "explain": "Priya wrapped a thick rubber band around each finger. It is in the tenth sentence. After that, the ball slipped out only once.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "fix"
+      ]
+    },
+    {
+      "id": "n3-i82",
+      "skill": "N3",
+      "passage": "n3-p28",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why did Priya choose rubber bands instead of a harder squeeze?",
+      "options": [
+        "The science fair had a rule against strong motors.",
+        "A harder squeeze would take too long to set up before the fair.",
+        "She worried that a harder squeeze might crack the plastic fingers.",
+        "A harder squeeze would squash the soft tennis ball flat."
+      ],
+      "pictures": [
+        "📜",
+        "⏳",
+        "💥",
+        "🎾"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find Sam's idea. Then read the sentence that starts with \"But\".",
+      "explain": "Priya worried that a harder squeeze might crack the plastic fingers. It is in the ninth sentence, just after Sam's idea.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "compare-fixes"
+      ]
+    },
+    {
+      "id": "n3-i83",
+      "skill": "N3",
+      "passage": "n3-p29",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "Fill in the story map: the problem, the plan and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "Pixel ran off the trail.",
+            "The map app stopped working because there was no signal.",
+            "Maya hurt her foot.",
+            "The trail was closed."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "What did they choose to do?",
+          "options": [
+            "Walk all the way back",
+            "Wait for the signal to come back",
+            "Use the paper trail map"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "They got back to the parking lot before lunch.",
+            "They waited in the woods until dark.",
+            "They called for a ride home."
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        10,
+        13
+      ],
+      "hint": "Find what went wrong with the phone. Then find the choice they picked. Then read the last sentence.",
+      "explain": "The problem was that the map app stopped working because there was no signal. They chose the paper map. At the end, they got back to the parking lot before lunch. Look at the fourth, eleventh and last sentences.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "problem",
+        "plan",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i84",
+      "skill": "N3",
+      "passage": "n3-p29",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why did the map app stop working?",
+      "options": [
+        "The phone battery was empty after the long hike.",
+        "Pixel stepped on the phone and broke the screen.",
+        "Sam closed the map app by mistake.",
+        "The steep hills blocked the phone signal."
+      ],
+      "pictures": [
+        "🪫",
+        "🐾",
+        "❌",
+        "⛰️"
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the message on the screen. Then read the next sentence.",
+      "explain": "The steep hills were blocking the phone signal. It is in the fifth sentence, just after the \"No signal\" message.",
+      "inference": 0,
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i85",
+      "skill": "N3",
+      "passage": "n3-p29",
+      "format": "tap",
+      "level": 3,
+      "prompt": "They chose the paper map. What else could they have done?",
+      "options": [
+        "Followed the blue dot on the phone map",
+        "Waited and hoped the signal came back",
+        "Asked Pixel to lead the way",
+        "Walked up to the observatory"
+      ],
+      "pictures": [
+        "🔵",
+        "⏳",
+        "🐕",
+        "🔭"
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Find the three choices after Sam speaks. Pick one they did not choose.",
+      "explain": "They could have waited and hoped the signal came back. It is one of the three choices, in the ninth sentence. The phone map was blank, so it could not show the way.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "what-else",
+        "options",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i86",
+      "skill": "N3",
+      "passage": "n3-p29",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that shows how they found their place on the paper map.",
+      "unit": "sentence",
+      "answer": [
+        11
+      ],
+      "evidence": [
+        11
+      ],
+      "hint": "Look after they choose the paper map. Find something they could hear and also find on the map.",
+      "explain": "Sam found the creek on the map, and they could hear the creek on their left. It is the twelfth sentence.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "clue"
+      ]
+    },
+    {
+      "id": "n3-i87",
+      "skill": "N3",
+      "passage": "n3-p30",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why was the skate park closed?",
+      "options": [
+        "Rain had made the ramps too wet and slippery.",
+        "Workers were repairing cracks in the concrete.",
+        "It was too early in the morning for the park to open.",
+        "A skating contest was being held there."
+      ],
+      "pictures": [
+        "🌧️",
+        "🚧",
+        "🌅",
+        "🏆"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Read the sign on the fence. Then read what the workers were doing.",
+      "explain": "Workers were filling cracks in the concrete. The sign said the park was closed for repairs, in the fourth and fifth sentences.",
+      "inference": 1,
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i88",
+      "skill": "N3",
+      "passage": "n3-p30",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why did Leo and Ben choose the library lot?",
+      "options": [
+        "The library lot had bigger ramps than the skate park.",
+        "Ben wanted to borrow a book from the library after skating.",
+        "Leo's trick did not need a ramp, and skating is allowed there.",
+        "The library lot was closer to Leo's house than the park."
+      ],
+      "pictures": [
+        "📐",
+        "📚",
+        "🛹",
+        "🏠"
+      ],
+      "answer": 2,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Find the third idea Ben listed. Then read the sentence after it.",
+      "explain": "Leo's new trick did not need a ramp, and skating is allowed in the library lot. Look at the eleventh and twelfth sentences.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i89",
+      "skill": "N3",
+      "passage": "n3-p30",
+      "format": "build",
+      "level": 3,
+      "prompt": "Build two sentences about the problem and how they solved it.",
+      "frame": "The problem was {0}. They solved it by {1}.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "The problem",
+          "options": [
+            "Ben's tablet was broken",
+            "the skate park was closed for repairs",
+            "Leo forgot his skateboard",
+            "it rained all day"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "How they solved it",
+          "options": [
+            "playing video games at home",
+            "waiting at the fence until Monday",
+            "skating on the fresh cement",
+            "practicing in the lot behind the library"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        11,
+        12
+      ],
+      "hint": "First find what the sign said. Then find where Leo practiced his trick.",
+      "explain": "The problem was the skate park was closed for repairs. They solved it by practicing in the lot behind the library. Look at the fourth, twelfth and thirteenth sentences.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i90",
+      "skill": "N3",
+      "passage": "n3-p31",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What stopped Sam and Grandma Rose from buying eggs before the picnic?",
+      "options": [
+        "The store had sold all of its eggs that morning.",
+        "Grandma Rose had no money with her that day.",
+        "The corner store opened at noon, after the picnic started.",
+        "The store was too far away to walk to and back."
+      ],
+      "pictures": [
+        "🥚",
+        "💵",
+        "🕛",
+        "🚶"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the sentence about the corner store. Compare the two times in it.",
+      "explain": "The corner store was closed until noon, and the picnic started at eleven. It is in the fourth sentence.",
+      "inference": 1,
+      "tags": [
+        "cause-effect",
+        "time"
+      ]
+    },
+    {
+      "id": "n3-i91",
+      "skill": "N3",
+      "passage": "n3-p31",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "Fill in the story map: the problem, the plan and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "The oven was broken.",
+            "There were no eggs for the muffins.",
+            "The picnic was cancelled.",
+            "Sam lost the recipe."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "What did they choose?",
+          "options": [
+            "Bring apples instead",
+            "Make a snack without eggs",
+            "Use mashed banana in place of the eggs"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "The muffins came out soft, and Ana asked for the recipe.",
+            "The muffins were not ready in time.",
+            "They bought muffins at the store."
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        11,
+        12,
+        13
+      ],
+      "hint": "Find what Sam saw in the fridge. Then find the choice they made. Then read the last two sentences.",
+      "explain": "The problem was that there were no eggs. They chose mashed banana in place of the eggs. At the end, the muffins came out soft, and Ana asked for the recipe. Look at the third sentence and the last three sentences.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "problem",
+        "plan",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i92",
+      "skill": "N3",
+      "passage": "n3-p31",
+      "format": "tap",
+      "level": 3,
+      "prompt": "They used mashed banana. What else could they have done?",
+      "options": [
+        "Used the eggs in the fridge",
+        "Bought eggs at the corner store before eleven",
+        "Asked Ana to bake the muffins",
+        "Brought apples to the picnic instead"
+      ],
+      "pictures": [
+        "🥚",
+        "🏪",
+        "👧",
+        "🍎"
+      ],
+      "answer": 3,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Find the list of things they could do. Cross out any choice the story says was not possible.",
+      "explain": "They could have brought apples instead. It is the first choice in the list, in the seventh sentence. The fridge had no eggs, and the store was closed.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "what-else",
+        "options",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i93",
+      "skill": "N3",
+      "passage": "n3-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why were the songs hard to hear clearly in the gym?",
+      "options": [
+        "The instruments were out of tune after the move.",
+        "The band was playing the songs much too fast.",
+        "The paint smell from the music room made it hard to play.",
+        "Sound bounced off the hard walls and came back as echoes."
+      ],
+      "pictures": [
+        "🎻",
+        "⏩",
+        "🎨",
+        "🔊"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Read about the walls and floor of the gym. Then read what the sound did.",
+      "explain": "Sound bounced off the hard walls and came back as echoes, and the echoes mixed with the new notes. Look at the second, third and fourth sentences.",
+      "inference": 1,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i94",
+      "skill": "N3",
+      "passage": "n3-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did the band fix the echo problem?",
+      "options": [
+        "They played more quietly so there was less sound.",
+        "They put gym mats and curtains around the gym.",
+        "They moved back into the music room early.",
+        "They opened all the gym doors to let sound out."
+      ],
+      "pictures": [
+        "🤫",
+        "🟦",
+        "🎵",
+        "🚪"
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7,
+        9
+      ],
+      "hint": "Read what the band did after Ms. Gray explained about sound.",
+      "explain": "They stood thick gym mats against the walls and hung old stage curtains over the bleachers. Look at the seventh and eighth sentences.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "fix"
+      ]
+    },
+    {
+      "id": "n3-i95",
+      "skill": "N3",
+      "passage": "n3-p32",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that explains why mats and curtains would help.",
+      "unit": "sentence",
+      "answer": [
+        5
+      ],
+      "evidence": [
+        5
+      ],
+      "hint": "Look for the sentence that tells what hard things and soft things do to sound.",
+      "explain": "Ms. Gray explained that hard surfaces bounce sound back, but soft things soak it up. Mats and curtains are soft. It is the sixth sentence.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "why-it-works"
+      ]
+    },
+    {
+      "id": "n3-i96",
+      "skill": "N3",
+      "passage": "n3-p33",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the causes in order, from the first one to the console switching off.",
+      "steps": [
+        "Ben's jacket covered the vents.",
+        "Hot air could not get out of the console.",
+        "The console got too hot.",
+        "The console switched itself off."
+      ],
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Start with what was lying on the console. Then use the booklet's rule to see what each thing made happen next.",
+      "explain": "The jacket covered the vents, so hot air could not get out. The console got too hot, and it switched itself off. The rule is in the seventh and eighth sentences, and the jacket is in the ninth.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i97",
+      "skill": "N3",
+      "passage": "n3-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did the twins fix the problem?",
+      "options": [
+        "They bought a new console with a bigger fan.",
+        "They turned the loud fan off so it would be quiet.",
+        "They played a slower game that did not freeze.",
+        "They uncovered the vents and moved the console to a shelf."
+      ],
+      "pictures": [
+        "🛒",
+        "🌀",
+        "🐢",
+        "📦"
+      ],
+      "answer": 3,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Read what Ben did with his jacket. Then read where the twins moved the console.",
+      "explain": "Ben hung up his jacket, the twins moved the console to an open shelf, and they let it cool. Look at the tenth and eleventh sentences.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "fix"
+      ]
+    },
+    {
+      "id": "n3-i98",
+      "skill": "N3",
+      "passage": "n3-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What could the twins do so this does not happen again?",
+      "options": [
+        "Keep things off the console so the vents stay open",
+        "Play for only five minutes at a time, then rest",
+        "Put the console inside a closed drawer",
+        "Turn the game sound down so the fan is quiet"
+      ],
+      "pictures": [
+        "🌬️",
+        "⏱️",
+        "🗄️",
+        "🔈"
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Read the rule in the instruction booklet. Think about what keeps the vents working.",
+      "explain": "They could keep things off the console so the vents stay open. The booklet says covered vents make the console too hot, in the seventh and eighth sentences.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "prevent"
+      ]
+    },
+    {
+      "id": "n3-i99",
+      "skill": "N3",
+      "passage": "n3-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why did the model keep tipping forward?",
+      "options": [
+        "The legs were too short to hold the body up.",
+        "The tail was missing, so nothing balanced the neck.",
+        "The neck was slotted on backward by mistake.",
+        "The table under the model was not flat."
+      ],
+      "pictures": [
+        "🦵",
+        "🦕",
+        "🔄",
+        "📐"
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Find what Sam saw in the picture on the box. Then find where those pieces were.",
+      "explain": "The tail was missing, so nothing balanced the heavy neck. Sam says this in the eighth sentence, and the tail pieces were still in the bag.",
+      "inference": 1,
+      "tags": [
+        "cause-unstated"
+      ]
+    },
+    {
+      "id": "n3-i100",
+      "skill": "N3",
+      "passage": "n3-p34",
+      "format": "build",
+      "level": 3,
+      "prompt": "Build a sentence that tells what caused what.",
+      "frame": "{0} because {1}.",
+      "slots": [
+        {
+          "kind": "then",
+          "label": "What happened",
+          "options": [
+            "The neck fell off",
+            "The model stood without tipping",
+            "Sam lost the box"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "why",
+          "label": "Why",
+          "options": [
+            "they glued the legs down",
+            "Maya held it up",
+            "the tail balanced the neck"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "Find what the model did at the end. Then read the sentence just before it.",
+      "explain": "The model stood without tipping because the tail balanced the neck. Look at the eleventh and twelfth sentences.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "because",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i101",
+      "skill": "N3",
+      "passage": "n3-p34",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence where Sam finds the clue that solves the problem.",
+      "unit": "sentence",
+      "answer": [
+        6
+      ],
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Sam looked at something. Find what he saw there that the model did not have.",
+      "explain": "In the picture on the box, a long tail stuck out behind the body. It is the seventh sentence.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "clue"
+      ]
+    },
+    {
+      "id": "n3-i102",
+      "skill": "N3",
+      "passage": "n3-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why did more gulls come to the railing?",
+      "options": [
+        "Leo threw pieces of his bread to the gulls on the rail.",
+        "They wanted to rest in the shade of the railing.",
+        "Gulls learn where people leave food, and they saw food.",
+        "The friends were tossing chips onto the ground."
+      ],
+      "pictures": [
+        "🍞",
+        "⛱️",
+        "👀",
+        "🍟"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "Find what one gull did. Then read what Priya said about gulls.",
+      "explain": "One gull had already found food, and Priya said gulls learn quickly where people leave food. Look at the third, fourth and fifth sentences.",
+      "inference": 1,
+      "tags": [
+        "cause-unstated"
+      ]
+    },
+    {
+      "id": "n3-i103",
+      "skill": "N3",
+      "passage": "n3-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did the friends solve the gull problem?",
+      "options": [
+        "They fed the gulls so the birds would leave them alone.",
+        "They ate their lunch very fast before the gulls came.",
+        "They moved under a roof and kept their food in their boxes.",
+        "They went home and ate their lunch in the kitchen."
+      ],
+      "pictures": [
+        "🍞",
+        "⏩",
+        "⛺",
+        "🏠"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Find where the friends moved. Then read what they did with their food.",
+      "explain": "They moved to a covered shelter and kept their food in their lunch boxes. Look at the eighth and ninth sentences.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "fix"
+      ]
+    },
+    {
+      "id": "n3-i104",
+      "skill": "N3",
+      "passage": "n3-p35",
+      "format": "storymap",
+      "level": 3,
+      "prompt": "Fill in the story map: the problem, why the fix worked, and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "The bench was wet.",
+            "Gulls were taking and watching the friends' food.",
+            "Leo forgot his lunch.",
+            "The ferry was late."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "why",
+          "label": "Why did the fix work?",
+          "options": [
+            "The gulls were full.",
+            "The gulls could not see the food or swoop under the roof.",
+            "The friends shouted at the gulls."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "The gulls ate all the food.",
+            "The friends fed the gulls.",
+            "The gulls flew off, and Sam shared his sandwich with Leo."
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        9,
+        10,
+        11
+      ],
+      "hint": "Find what the gulls did at the bench. Then read the last three sentences.",
+      "explain": "The problem was that gulls were taking and watching the food. The fix worked because the gulls could not see the food or swoop under the roof. At the end, the gulls flew off, and Sam shared his sandwich. Look at the third, fourth and last three sentences.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "problem",
+        "why-it-works",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i105",
+      "skill": "N3",
+      "passage": "n3-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why did half of the labels fall off when the rocks spilled?",
+      "options": [
+        "Maya peeled the labels off to write new ones.",
+        "The tape did not stick well to the rough, dusty rocks.",
+        "The ink on the labels washed away in the rain.",
+        "The paper labels were too big for the small rocks."
+      ],
+      "pictures": [
+        "✋",
+        "🩹",
+        "💧",
+        "📏"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "Read how Maya stuck the labels on. Then read what tape does on rough rocks.",
+      "explain": "The tape did not stick well to rough, dusty rocks, so the labels came off when the rocks rolled. Look at the second to fifth sentences.",
+      "inference": 1,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i106",
+      "skill": "N3",
+      "passage": "n3-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Maya fix the label problem?",
+      "options": [
+        "She put two pieces of tape on each paper label.",
+        "She kept only smooth rocks so the tape would stick.",
+        "She glued the egg carton shut so nothing could spill.",
+        "She painted a number on each rock and listed the names."
+      ],
+      "pictures": [
+        "🩹",
+        "⚪",
+        "🧴",
+        "🔢"
+      ],
+      "answer": 3,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Find the better way Mr. Varga showed her. Read the two sentences after it.",
+      "explain": "Maya painted a white dot with a number on each rock and wrote the numbers and names in her notebook. Look at the tenth and eleventh sentences.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "fix"
+      ]
+    },
+    {
+      "id": "n3-i107",
+      "skill": "N3",
+      "passage": "n3-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why is the painted number better than a taped label?",
+      "options": [
+        "Paint makes the rocks shine under the light.",
+        "The painted number cannot fall off the rock.",
+        "Numbers are shorter to write than rock names.",
+        "Mr. Varga likes white paint better than tape."
+      ],
+      "pictures": [
+        "✨",
+        "🔢",
+        "✏️",
+        "⚪"
+      ],
+      "answer": 1,
+      "evidence": [
+        9,
+        11
+      ],
+      "hint": "Compare the two ways. Read the last sentence to see what happens now if the rocks spill.",
+      "explain": "The number is painted right on the rock, so it stays even if the rocks spill. The last sentence tells this.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "compare-fixes"
+      ]
+    },
+    {
+      "id": "n3-i108",
+      "skill": "N3",
+      "passage": "n3-p37",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the causes in order, from the sun to the bent rail.",
+      "steps": [
+        "The sun shines on the steel rail.",
+        "The rail gets much hotter than the air.",
+        "The hot rail grows a tiny bit longer.",
+        "With no room to move, the rail pushes sideways.",
+        "The rail bends out of line."
+      ],
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Start with the sun. Then use the first paragraph to ask what each step makes happen next.",
+      "explain": "The sun heats the rail until it is hotter than the air, the hot rail grows longer, it has no room, so it pushes sideways and bends. The chain is in the first paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i109",
+      "skill": "N3",
+      "passage": "n3-p37",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The gaps between rails fixed one problem. What new problem did they cause?",
+      "options": [
+        "The rails still grew too long and bent on hot summer days.",
+        "Water got into the gaps and froze, which cracked the rails.",
+        "The ride was bumpy, and the wheels and rail ends wore out faster.",
+        "Trains had to slow down on cold mornings to cross the gaps."
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the sentence that says the gaps caused new problems. Read the sentence after it.",
+      "explain": "The wheels banged over every gap, so the ride was bumpy and the wheels and rail ends wore out faster. It is at the end of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i110",
+      "skill": "N3",
+      "passage": "n3-p37",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why do some railways paint the sides of rails white?",
+      "options": [
+        "White paint helps drivers see the rails at night.",
+        "White paint fills the gaps between rails.",
+        "White paint stops rain from rusting the rails.",
+        "White reflects sunlight, so the steel stays cooler."
+      ],
+      "answer": 3,
+      "evidence": [
+        12
+      ],
+      "hint": "Look in the last paragraph for the word \"white\". Read to the end of that sentence.",
+      "explain": "White reflects sunlight and keeps the steel cooler. It is in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "fix"
+      ]
+    },
+    {
+      "id": "n3-i111",
+      "skill": "N3",
+      "passage": "n3-p38",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why do paleontologists put a plaster jacket on a fossil?",
+      "options": [
+        "To keep the bone from drying out in the sun",
+        "To hold the cracked bone together while it is moved",
+        "To make the bone heavy so it stays in place",
+        "To help the bone turn into rock faster"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "hint": "Read the problem in the first paragraph. Then find what the dry plaster does to the bone.",
+      "explain": "Old bones are cracked and could break into pieces when they are moved, and the dry plaster holds the bone still. Look at the first paragraph and the end of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "why-it-works"
+      ]
+    },
+    {
+      "id": "n3-i112",
+      "skill": "N3",
+      "passage": "n3-p38",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why does the team cover the bone with damp paper towels first?",
+      "options": [
+        "So the bone stays cool in the hot sun",
+        "So the wet plaster dries much faster",
+        "So the plaster does not stick to the fossil",
+        "So the burlap strips do not tear apart"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the step that starts with \"Next\". Read the part after \"so\".",
+      "explain": "The damp paper towels stop the plaster from sticking to the fossil. It is the step that starts with \"Next\" in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i113",
+      "skill": "N3",
+      "passage": "n3-p38",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the steps for making a plaster jacket in order.",
+      "steps": [
+        "Dig a trench so the bone sits on a pillar of rock.",
+        "Cover the bone with damp paper towels.",
+        "Lay strips of burlap dipped in plaster over the bone.",
+        "Dig under the pillar and flip the block over.",
+        "Cover the bottom of the block with plaster."
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "hint": "Look for the order words: First, Next, Then and Later.",
+      "explain": "First the team digs a trench, next it adds damp paper towels, then it lays plaster strips, and later it flips the block and plasters the bottom. Look at the second and third paragraphs.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "plan-steps"
+      ]
+    },
+    {
+      "id": "n3-i114",
+      "skill": "N3",
+      "passage": "n3-p38",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What new problem can a large plaster jacket cause?",
+      "options": [
+        "It can stick to the bone and pull pieces off it.",
+        "It can take months to cut open with a small saw.",
+        "It can crack into pieces when it dries in the sun.",
+        "It can be so heavy that it needs a crane or truck."
+      ],
+      "answer": 3,
+      "evidence": [
+        9
+      ],
+      "hint": "Read the third paragraph. Look for how much a large jacket can weigh.",
+      "explain": "A large jacket can weigh as much as a car, so a crane or a truck may be needed. It is in the third paragraph. The months of work are for removing rock, not for cutting the jacket.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i115",
+      "skill": "N3",
+      "passage": "n3-p39",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did the robot roll off the line at the corner?",
+      "options": [
+        "The tape at the corner had peeled up from the floor.",
+        "Sunlight shone into the sensor, so the black tape looked bright.",
+        "The robot's battery got weak after a whole morning of driving.",
+        "Leo's large book blocked the sensor's tiny beam at the corner."
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Read what Priya noticed about the corner. Then read how the test showed her guess was right.",
+      "explain": "Sunlight shone into the sensor, so the black tape looked bright. Priya guessed this, and Leo's test with the book showed it was right. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "cause-unstated",
+        "rule-out"
+      ]
+    },
+    {
+      "id": "n3-i116",
+      "skill": "N3",
+      "passage": "n3-p39",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that shows how the club tested Priya's guess.",
+      "unit": "sentence",
+      "answer": [
+        8
+      ],
+      "evidence": [
+        8
+      ],
+      "hint": "Look for the words \"To test\".",
+      "explain": "Leo held up a large book to block the sun, and the robot followed the line. It is the last sentence of the second paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "test-idea"
+      ]
+    },
+    {
+      "id": "n3-i117",
+      "skill": "N3",
+      "passage": "n3-p39",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did the club choose the hood instead of closing the blinds?",
+      "options": [
+        "The hood was quicker to make than closing the blinds would be.",
+        "The blinds were broken, so they would not close all the way.",
+        "Closed blinds would darken the reading corner, and a hood works anywhere.",
+        "Mrs. Hall gave them black cardboard and asked them to make a hood."
+      ],
+      "answer": 2,
+      "evidence": [
+        11,
+        12,
+        13
+      ],
+      "hint": "Read what Mrs. Hall said about the blinds. Then read what was good about the hood.",
+      "explain": "Closed blinds would make the reading corner too dark, and a hood would work in any room at any time. Both facts are in the third paragraph. The blinds were quicker, not the hood.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "compare-fixes",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i118",
+      "skill": "N3",
+      "passage": "n3-p39",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build two sentences about the first fix and what the club did.",
+      "frame": "Closing the blinds would help the robot, but it would {0}. So the club {1}.",
+      "slots": [
+        {
+          "kind": "then",
+          "label": "The new problem",
+          "options": [
+            "cost too much money",
+            "take a whole day",
+            "make the reading corner too dark",
+            "stop the robot's motor"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "What the club did",
+          "options": [
+            "moved the track to the gym",
+            "built a hood around the sensor",
+            "painted the tape white",
+            "ran the robot only at night"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        10,
+        11,
+        14
+      ],
+      "hint": "Find what Mrs. Hall said about the blinds. Then find the fix the club chose.",
+      "explain": "Closing the blinds would make the reading corner too dark. So the club built a hood around the sensor. Look at the third paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "new-problem",
+        "compare-fixes"
+      ]
+    },
+    {
+      "id": "n3-i119",
+      "skill": "N3",
+      "passage": "n3-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why do beehive fences keep most elephants away?",
+      "options": [
+        "Elephants cannot step over the wire that runs between the posts.",
+        "The smell of the honey makes the elephants sleepy and slow.",
+        "The wooden posts are too tall and too close together for elephants.",
+        "Elephants stay away from bees, and pushing the wire lets bees out."
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "hint": "Read what scientists noticed about elephants. Then read what happens when an elephant pushes the wire.",
+      "explain": "Elephants stay away from bees, and when an elephant pushes the wire, the hives swing and bees fly out. Look at the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "why-it-works"
+      ]
+    },
+    {
+      "id": "n3-i120",
+      "skill": "N3",
+      "passage": "n3-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "In which two ways do beehive fences help farmers?",
+      "options": [
+        "They keep elephants out of crops, and they give farmers honey to sell.",
+        "They feed the elephants, and they give the bees water.",
+        "They keep the crops warm, and they keep the rain off.",
+        "They keep elephants out of crops, and they help the bees find water."
+      ],
+      "answer": 0,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Read the first two sentences of the last paragraph. Each one names something the fences do.",
+      "explain": "The fences keep most elephants out of the fields, and farmers can sell the honey. Both are at the start of the last paragraph. Needing water is a limit of the fences, not a help.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i121",
+      "skill": "N3",
+      "passage": "n3-p40",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort each sentence. Is it a good thing about beehive fences, or a limit of beehive fences?",
+      "bins": [
+        "Good thing",
+        "Limit"
+      ],
+      "cards": [
+        {
+          "text": "They keep most elephants out of the fields.",
+          "bin": 0
+        },
+        {
+          "text": "The bees need flowers nearby.",
+          "bin": 1
+        },
+        {
+          "text": "Farmers can sell the honey.",
+          "bin": 0
+        },
+        {
+          "text": "The hives must be checked often.",
+          "bin": 1
+        },
+        {
+          "text": "The bees help nearby crops grow.",
+          "bin": 0
+        },
+        {
+          "text": "The bees need water nearby.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "hint": "Read the last paragraph. Find the word \"limits\". The things after it are limits.",
+      "explain": "Keeping elephants out, honey to sell and helping crops grow are good things. Needing flowers and water and checking the hives are limits. They are all in the last paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "fix-limits"
+      ]
+    },
+    {
+      "id": "n3-i122",
+      "skill": "N3",
+      "passage": "n3-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did sawdust help the ice last until autumn?",
+      "options": [
+        "Sawdust is cold, so it froze the ice again.",
+        "Sawdust soaked up the melted water before the ice could melt.",
+        "Sawdust holds trapped air, which slows heat from reaching the ice.",
+        "Sawdust kept the horses away from the ice."
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Find the sentence that tells what sawdust holds. Read what that does to heat.",
+      "explain": "Sawdust holds trapped air, and trapped air slows heat from moving into the ice. It is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "why-it-works"
+      ]
+    },
+    {
+      "id": "n3-i123",
+      "skill": "N3",
+      "passage": "n3-p41",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the steps in order, from the frozen lake to cold food in summer.",
+      "steps": [
+        "Workers cut blocks of ice from the frozen lake.",
+        "Horses pulled the blocks to the ice house.",
+        "Workers packed sawdust around each block.",
+        "An ice wagon delivered a block to a home in summer.",
+        "Cold air from the ice sank over the food in the icebox."
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        9,
+        10
+      ],
+      "hint": "Follow one block of ice. Start in January at the lake and end in a family's kitchen.",
+      "explain": "Workers cut the ice, horses pulled it to the ice house, workers packed it in sawdust, a wagon delivered it in summer, and its cold air sank over the food. Look at the second and third paragraphs.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "plan-steps"
+      ]
+    },
+    {
+      "id": "n3-i124",
+      "skill": "N3",
+      "passage": "n3-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The icebox solved one problem but made a small new one. What was the new problem?",
+      "options": [
+        "The food on the bottom shelf froze solid during the night.",
+        "Sawdust from the ice house got into the milk and butter.",
+        "The ice wagon could bring blocks to homes only in winter.",
+        "Melted water dripped into a pan that had to be emptied every day."
+      ],
+      "answer": 3,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Read the end of the last paragraph. Think about what happens to ice as it melts.",
+      "explain": "Melted water dripped into a pan that someone had to empty every day, or it overflowed. It is at the end of the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i125",
+      "skill": "N3",
+      "passage": "n3-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why do engineers want the space station to reuse its water?",
+      "options": [
+        "Water from Earth tastes different in space.",
+        "Water is heavy, and sending it on a rocket costs a lot.",
+        "Astronauts are not allowed to bring water bottles.",
+        "Water freezes on the way up to the station."
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "Read the first paragraph. Look for the word \"But\".",
+      "explain": "Water is heavy, and sending it up on a rocket costs a lot of money. It is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i126",
+      "skill": "N3",
+      "passage": "n3-p42",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put the steps in order, from an astronaut's breath to clean water.",
+      "steps": [
+        "An astronaut breathes out tiny amounts of water.",
+        "The water goes into the station's air.",
+        "Machines cool the air, and the water forms drops.",
+        "The machines filter and clean the water.",
+        "The clean water is ready to drink."
+      ],
+      "evidence": [
+        5,
+        6,
+        7,
+        9
+      ],
+      "hint": "Read the second paragraph. Follow the water from the astronaut to the machines.",
+      "explain": "The astronaut breathes out water into the air, machines cool the air so the water forms drops, and then the machines filter and clean it. It is in the second paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "cause-chain",
+        "plan-steps"
+      ]
+    },
+    {
+      "id": "n3-i127",
+      "skill": "N3",
+      "passage": "n3-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What extra work does the water system make for the crew?",
+      "options": [
+        "They must boil every cup of water before drinking.",
+        "They must change full filters and fix broken parts.",
+        "They must collect ice from outside the station.",
+        "They must send all used water back to Earth."
+      ],
+      "answer": 1,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Read the last paragraph. Look for what the system needs.",
+      "explain": "Filters fill up and parts break, so the crew changes filters and uses spare parts. It is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i128",
+      "skill": "N3",
+      "passage": "n3-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why was the 9:10 train cancelled?",
+      "options": [
+        "Too many people had bought tickets.",
+        "The museum's steam engine was using the track.",
+        "A signal on the line had stopped working.",
+        "A storm had closed the coast road."
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the sentence after the screen says \"CANCELLED\". Read what the station worker explained.",
+      "explain": "A signal on the line had stopped working, so no trains could pass. The station worker explained this at the end of the first paragraph.",
+      "inference": 0,
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i129",
+      "skill": "N3",
+      "passage": "n3-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did Sam and Grandma Rose choose the replacement bus?",
+      "options": [
+        "It would get them to Pine Bay faster than the train.",
+        "It would reach the museum before the steam engine ran at eleven o'clock.",
+        "The worker said the signal would stay broken for the whole day.",
+        "Their tickets could not be used again on another Saturday."
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        8,
+        11
+      ],
+      "hint": "Find the time the bus would reach Pine Bay. Compare it with the time the steam engine would run.",
+      "explain": "The bus would reach Pine Bay at 10:45, before the steam engine ran at eleven o'clock. The times are in the first and second paragraphs, and Sam checks them at the start of the third.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "options"
+      ]
+    },
+    {
+      "id": "n3-i130",
+      "skill": "N3",
+      "passage": "n3-p43",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "Fill in the story map: the problem, the plan and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "The museum's steam engine was broken.",
+            "Sam lost the tickets.",
+            "Their train to Pine Bay was cancelled.",
+            "The bus was late."
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "Which choice did they pick?",
+          "options": [
+            "Wait at the station until the signal was fixed",
+            "Take the replacement bus",
+            "Go home and come back another Saturday",
+            "Walk along the railway line"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "They missed the steam engine and went home.",
+            "They rode the bus both ways.",
+            "They stayed at the station all day.",
+            "They saw the steam engine and took the train home."
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        11,
+        13,
+        14
+      ],
+      "hint": "Find what the screen said. Then find the choice the times helped them pick. Then read the last two sentences.",
+      "explain": "The problem was that their train was cancelled. They took the replacement bus. At the end, they saw the steam engine and took the train home. Look at the first paragraph and the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "problem",
+        "plan",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i131",
+      "skill": "N3",
+      "passage": "n3-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did Pixel dig under the fence?",
+      "options": [
+        "He wanted to play with the neighbor's dog.",
+        "He was hiding his chew toys from Sam.",
+        "The ground by the fence was soft from rain.",
+        "He had extra energy and nothing to do."
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Read what Sam noticed about the days Pixel dug. Then read what Sam's dad said about dogs.",
+      "explain": "Pixel had extra energy and nothing to do. He dug only on days without a walk, and Sam's dad said dogs dig when they have extra energy. It is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "cause-unstated",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i132",
+      "skill": "N3",
+      "passage": "n3-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The chicken wire fixed one problem. What new problem did it cause?",
+      "options": [
+        "Pixel dug a new hole in a different corner of the yard.",
+        "Pixel began barking at the fence for an hour at a time.",
+        "The neighbor could not open the gate in the fence.",
+        "Pixel chewed on the chicken wire until it bent."
+      ],
+      "answer": 1,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Find the words \"a new problem\". Read the sentence after them.",
+      "explain": "Pixel began barking at the fence for an hour at a time. It is at the start of the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i133",
+      "skill": "N3",
+      "passage": "n3-p44",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build sentences about the problem, the first fix and the second fix.",
+      "frame": "The problem was {0}. The wire stopped the digging, but then {1}. So Sam added {2}.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "The problem",
+          "options": [
+            "Pixel chewed the fence",
+            "Pixel dug under the fence",
+            "the neighbor's dog dug into Sam's yard",
+            "Pixel ran away on walks"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "The new problem",
+          "options": [
+            "the wire broke the fence",
+            "Pixel stopped eating",
+            "Pixel began barking at the fence",
+            "the sandbox filled with rain"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "The second fix",
+          "options": [
+            "morning walks and a sandbox for digging",
+            "a taller fence",
+            "a second layer of wire",
+            "a new lock on the gate"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        10,
+        12,
+        13
+      ],
+      "hint": "Find what Pixel did every afternoon. Then find what happened after the wire. Then read what Sam did each morning and in the yard.",
+      "explain": "The problem was Pixel dug under the fence. The wire stopped the digging, but then Pixel began barking. So Sam added morning walks and a sandbox. Look at the first sentence and the last paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "new-problem",
+        "compare-fixes"
+      ]
+    },
+    {
+      "id": "n3-i134",
+      "skill": "N3",
+      "passage": "n3-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did the soccer team have to find another place to practice?",
+      "options": [
+        "The gym floor was too wet from the rain to play on.",
+        "The chess club was holding a tournament there at that time.",
+        "The band was using the gym to practice for a concert.",
+        "Coach Novak had forgotten the key to the gym door."
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Read what the gym was full of. Then read what the school calendar showed.",
+      "explain": "The chess club was holding its tournament in the gym at the same time, because two bookings were typed into the same time slot. It is in the first paragraph.",
+      "inference": 0,
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i135",
+      "skill": "N3",
+      "passage": "n3-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did the team choose the covered area?",
+      "options": [
+        "It was big enough for running drills, which the team needed most.",
+        "The chess players asked the team to practice outside the gym.",
+        "It fit passing drills, and passing was the skill the team needed most.",
+        "It was the only dry place at school with a soccer goal."
+      ],
+      "answer": 2,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Read what Ben pointed out. Then read what Ana added.",
+      "explain": "The covered area was big enough for passing drills, and passing was the skill the team most needed. Ben and Ana say this at the start of the last paragraph. It was too small for running drills.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i136",
+      "skill": "N3",
+      "passage": "n3-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The team chose the covered area. What else could they have done?",
+      "options": [
+        "Done running drills in the small covered area",
+        "Played on the wet soccer field in the rain",
+        "Skipped practice today and practiced twice next week",
+        "Joined the chess tournament in the gym"
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "hint": "Find the three choices Coach Novak and the chess teacher listed. Pick one the team did not choose.",
+      "explain": "They could have skipped practice today and practiced twice next week. It is the last of the three choices in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "what-else",
+        "options",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i137",
+      "skill": "N3",
+      "passage": "n3-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What did the adults do so this problem would not happen again?",
+      "options": [
+        "They moved the chess tournament to Friday afternoon.",
+        "They told the team to stay home on all rainy days.",
+        "They asked the school to build a second, smaller gym.",
+        "They asked for a check so one room cannot be booked twice."
+      ],
+      "answer": 3,
+      "evidence": [
+        14
+      ],
+      "hint": "Read the last sentence. Look for what Coach Novak and the chess teacher asked the office to do.",
+      "explain": "They asked the office to add a check so that one room cannot be booked twice. It is the last sentence.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "prevent"
+      ]
+    },
+    {
+      "id": "n3-i138",
+      "skill": "N3",
+      "passage": "n3-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did the racing game stop?",
+      "options": [
+        "Ben's tablet ran out of battery in the race.",
+        "A fallen branch cut the power on the street.",
+        "The big screen broke halfway through the race.",
+        "Ana switched off the lights by mistake."
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3,
+        5
+      ],
+      "hint": "Read what happened to the lights. Then read the message from the power company.",
+      "explain": "A fallen branch cut the power on their street, so the house went dark and the game stopped. It is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i139",
+      "skill": "N3",
+      "passage": "n3-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did the friends choose a board game?",
+      "options": [
+        "Sam wanted to play a game about building train lines.",
+        "The power company's message told families to play quietly.",
+        "It would let all six friends play at once without any power.",
+        "The tablet's racing game had only two tracks to choose from."
+      ],
+      "answer": 2,
+      "evidence": [
+        9,
+        12
+      ],
+      "hint": "Read the problem with the tablet. Then read what Priya pointed out.",
+      "explain": "A board game would let all six friends play at once and needed no power. Priya says this at the start of the last paragraph. The tablet let only two people play.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "options"
+      ]
+    },
+    {
+      "id": "n3-i140",
+      "skill": "N3",
+      "passage": "n3-p46",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "Fill in the story map: the problem, the plan and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "The power went out, and the racing game stopped.",
+            "Ben's tablet broke.",
+            "The friends could not agree on a game.",
+            "Sam lost the board game."
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "Which choice did they pick?",
+          "options": [
+            "Play the racing game on Ben's tablet",
+            "Play a board game by flashlight",
+            "Wait in the dark until the power came back",
+            "End game night early and go home"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "They went home early.",
+            "They finished the racing game on the big screen.",
+            "The lights came back, but they kept playing the board game.",
+            "They took turns on the tablet until nine o'clock."
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        12,
+        15
+      ],
+      "hint": "Find what happened halfway through the race. Then find the choice Priya liked. Then read the last sentence.",
+      "explain": "The problem was that the power went out and the game stopped. They played a board game by flashlight. At the end, the lights came back, but they kept playing. Look at the first paragraph and the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "problem",
+        "plan",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i141",
+      "skill": "N3",
+      "passage": "n3-p47",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the causes in order, from the beavers' work to the hikers turning back.",
+      "steps": [
+        "The beavers built a dam across the creek.",
+        "The water behind the dam rose higher.",
+        "The pond spread across the trail beside the creek.",
+        "Hikers had to turn back."
+      ],
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Read the first paragraph. Start with what the beavers built, and ask what each thing made happen next.",
+      "explain": "The beavers built a dam, the water rose, the pond spread across the trail, and hikers had to turn back. The chain is in the first paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i142",
+      "skill": "N3",
+      "passage": "n3-p47",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did the ranger decide against simply tearing out the dam?",
+      "options": [
+        "Tearing out a dam is against the park's rules.",
+        "The frogs, ducks and herons would lose their pond.",
+        "Beavers usually rebuild a broken dam within a few days.",
+        "The dam was too heavy for the trail crew to move."
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "The second paragraph gives a reason against each of two fixes. Find the reason that goes with tearing out the dam.",
+      "explain": "Beavers usually rebuild a broken dam within a few days. It is in the second paragraph. The frogs, ducks and herons are the reason against moving the beavers.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "compare-fixes"
+      ]
+    },
+    {
+      "id": "n3-i143",
+      "skill": "N3",
+      "passage": "n3-p47",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why does the pipe keep working without the beavers blocking it?",
+      "options": [
+        "The pipe is too wide for the beavers to fill with sticks and mud.",
+        "The leak is too quiet for beavers to hear, and a cage keeps sticks out.",
+        "Beavers will not swim near anything that is made of plastic.",
+        "The cage scares the beavers away from that part of the pond."
+      ],
+      "answer": 1,
+      "evidence": [
+        9,
+        11,
+        12
+      ],
+      "hint": "Read the fact about when beavers repair a dam. Then read what the cage and the quiet water do.",
+      "explain": "Beavers repair a dam when they hear rushing water, but the water in the pipe flows quietly, and the cage keeps sticks out. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "why-it-works",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i144",
+      "skill": "N3",
+      "passage": "n3-p47",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The pipe fixed the flooded trail. What small new problem did it cause?",
+      "options": [
+        "The pond dropped so far that the frogs and ducks left it.",
+        "The beavers moved away to build a new dam on another creek.",
+        "Leaves and twigs collect on the cage, so the crew must clear it.",
+        "The trail flooded again when the next spring came."
+      ],
+      "answer": 2,
+      "evidence": [
+        14,
+        15
+      ],
+      "hint": "Read the last paragraph. Look for what collects on the cage.",
+      "explain": "Leaves and twigs collect on the cage, so the crew must clear it every few weeks. It is in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i145",
+      "skill": "N3",
+      "passage": "n3-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What caused the telescope's first pictures to be fuzzy?",
+      "options": [
+        "The air around Earth blurred the starlight.",
+        "The camera was pointed at the wrong stars.",
+        "The main mirror had been ground to a slightly wrong shape.",
+        "The rocket shook the mirror loose during the launch."
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the sentence where the engineers found the cause. Read the part after the colon.",
+      "explain": "The main mirror had been ground to the wrong shape by a tiny amount. It is at the end of the first paragraph. The telescope was above the air, so the air was not the cause.",
+      "inference": 0,
+      "tags": [
+        "cause-effect",
+        "rule-out"
+      ]
+    },
+    {
+      "id": "n3-i146",
+      "skill": "N3",
+      "passage": "n3-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How could engineers fix the pictures without replacing the mirror?",
+      "options": [
+        "Astronauts polished the mirror into the right shape during a spacewalk.",
+        "The shuttle brought the mirror back to Earth to be fixed.",
+        "They measured the mistake exactly and made new parts with the opposite error.",
+        "They waited for the blur to fade on its own."
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        9,
+        11
+      ],
+      "hint": "Read what the engineers realized in the second paragraph. Then read what the astronauts installed.",
+      "explain": "They measured exactly how wrong the mirror was and designed new parts with the opposite error, like glasses. The astronauts installed them. Look at the second and third paragraphs.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "why-it-works"
+      ]
+    },
+    {
+      "id": "n3-i147",
+      "skill": "N3",
+      "passage": "n3-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The fix caused a small new problem. What was it?",
+      "options": [
+        "The new parts made the pictures a little fuzzy again.",
+        "The telescope could no longer point at faint stars.",
+        "The new camera had to be sent back to Earth for repairs.",
+        "One science instrument had to be removed to make room."
+      ],
+      "answer": 3,
+      "evidence": [
+        13
+      ],
+      "hint": "Read the first sentence of the last paragraph. Look for what the correcting mirrors took up.",
+      "explain": "The correcting mirrors took up space, so the astronauts removed one science instrument to make room. It is the first sentence of the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i148",
+      "skill": "N3",
+      "passage": "n3-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did the team decide against sending more \"drive forward\" commands?",
+      "options": [
+        "The rover's radio could not receive messages in the sand.",
+        "Radio signals took too long to reach Mars.",
+        "The rover's batteries were too weak to drive.",
+        "The wheels might dig even deeper and trap the rover."
+      ],
+      "answer": 3,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the sentence that starts with \"If the team simply sent\". Read what might happen.",
+      "explain": "The wheels might dig even deeper and trap the rover for the rest of the mission. It is the last sentence of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "compare-fixes"
+      ]
+    },
+    {
+      "id": "n3-i149",
+      "skill": "N3",
+      "passage": "n3-p49",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the team's rescue plan in order.",
+      "steps": [
+        "Build a copy of the sand ripple on Earth.",
+        "Bury a test rover in it the same way.",
+        "Try different ways to drive the test rover out.",
+        "Send Opportunity commands to move a few centimeters at a time.",
+        "Check the results after each small move."
+      ],
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "Read the third paragraph. The team worked on Earth first, then on Mars.",
+      "explain": "The team built a copy of the ripple, buried a test rover, tried ways to drive it out, and then moved Opportunity a few centimeters at a time, checking after each move. It is in the third paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "plan-steps"
+      ]
+    },
+    {
+      "id": "n3-i150",
+      "skill": "N3",
+      "passage": "n3-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did getting stuck change the way the team drove the rover?",
+      "options": [
+        "They drove only at night, when the cold sand was firmer to cross.",
+        "They studied photos of the ground and planned routes around soft ripples.",
+        "They stopped driving and kept the rover parked in one safe place.",
+        "They drove faster across ripples so the wheels could not sink."
+      ],
+      "answer": 1,
+      "evidence": [
+        13,
+        14
+      ],
+      "hint": "Read the last paragraph. Look for the lesson the team learned.",
+      "explain": "They studied photos of the ground more carefully and planned routes that went around soft ripples. It is in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "prevent"
+      ]
+    },
+    {
+      "id": "n3-i151",
+      "skill": "N3",
+      "passage": "n3-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The safer routes caused a small new problem. What was it?",
+      "options": [
+        "The rover's wheels wore out faster.",
+        "The team lost contact with the rover.",
+        "The rover got stuck in a different ripple.",
+        "The rover took longer to reach new places."
+      ],
+      "answer": 3,
+      "evidence": [
+        15
+      ],
+      "hint": "Read the last sentence. Look for what the safer routes meant.",
+      "explain": "The safer routes meant the rover took longer to reach new places. It is the last sentence.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i152",
+      "skill": "N3",
+      "passage": "n3-p50",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the causes in order, from the rain to the flooded tunnels.",
+      "steps": [
+        "Rain falls on the ground above the mine.",
+        "Rainwater soaks down through soil and cracks in the rock.",
+        "Water slowly gathers in the deepest tunnels.",
+        "The deep tunnels fill faster than workers can empty them with buckets."
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Read what Mr. Varga explained at the end of the first paragraph. Follow the water from the ground down into the mine.",
+      "explain": "Rain falls, soaks down through soil and cracks, gathers in the deepest tunnels, and fills them faster than buckets can empty them. It is at the end of the first paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i153",
+      "skill": "N3",
+      "passage": "n3-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why were steam pumps better than horse pumps and water wheels?",
+      "options": [
+        "They were quiet machines that needed no coal or other fuel.",
+        "They burned less coal than any pump that came before them.",
+        "They could drain deeper mines and work far from any stream.",
+        "They switched themselves on and off whenever the water rose."
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        9
+      ],
+      "hint": "Read the two problems with horse pumps and water wheels. Then find the sentence that tells how steam pumps solved both.",
+      "explain": "Steam pumps could drain much deeper mines, and they could be built anywhere, even far from a stream. It is at the end of the second paragraph. The pump that switches itself on is the modern electric one.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "compare-fixes",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i154",
+      "skill": "N3",
+      "passage": "n3-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Steam pumps solved the flooding. What new problems did they cause?",
+      "options": [
+        "They pumped so much water that nearby streams dried up.",
+        "They could not lift water from very deep tunnels.",
+        "They needed horses to walk in circles all day long.",
+        "They burned lots of coal, which cost money and made smoke."
+      ],
+      "answer": 3,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Find the words \"new problems\". Read the sentence after them.",
+      "explain": "Steam pumps burned huge amounts of coal, which cost a lot of money and filled the air with smoke. It is in the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i155",
+      "skill": "N3",
+      "passage": "n3-p51",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the causes in order, from the wind to a bouncing bridge.",
+      "steps": [
+        "Wind blows across a flat, solid deck.",
+        "The moving air forms swirls above and below the deck.",
+        "The swirls tug the deck up and down.",
+        "The tugs match the bridge's natural rhythm.",
+        "The bouncing grows larger."
+      ],
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "hint": "Read the first paragraph. Start with the wind, and ask what each step makes happen next.",
+      "explain": "Wind blows across the deck, the air forms swirls, the swirls tug the deck, the tugs match the bridge's rhythm, and the bouncing grows. The chain is in the first paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-chain"
+      ]
+    },
+    {
+      "id": "n3-i156",
+      "skill": "N3",
+      "passage": "n3-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why do engineers test a model in a wind tunnel before they build a bridge?",
+      "options": [
+        "To find out how many cars the bridge can safely hold",
+        "To choose the color of paint for the steel beams",
+        "To find movement problems while the bridge is still a model",
+        "To check that the fans work at many different speeds"
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        7
+      ],
+      "hint": "Read the second paragraph. Look for what the sensors let the engineers do.",
+      "explain": "The test lets engineers find movement problems while the bridge is still a model. It is at the end of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "prevent"
+      ]
+    },
+    {
+      "id": "n3-i157",
+      "skill": "N3",
+      "passage": "n3-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is one cost of using a deep steel truss?",
+      "options": [
+        "It lets the wind blow straight through the bridge deck.",
+        "It must be wider to fit the same number of lanes.",
+        "It forms strong swirls of air under the bridge deck.",
+        "It is heavy and needs more metal, so it costs more."
+      ],
+      "answer": 3,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Read the last paragraph. Each fix has its own cost, so find the sentence about the truss.",
+      "explain": "A deep steel truss is heavy and needs more metal, so it costs more to build and to paint. It is in the last paragraph. Being wider is the cost of a deck with a gap.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "compare-fixes",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i158",
+      "skill": "N3",
+      "passage": "n3-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did the flood map help the town?",
+      "options": [
+        "It showed where the flooding began, so the town knew where to fix it.",
+        "It warned each family a day before every big storm arrived.",
+        "It showed the best places to build tall concrete walls.",
+        "It helped the buses find shorter detours around the water."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        11
+      ],
+      "hint": "Read what the finished map showed. Then look at what the town changed in that same place.",
+      "explain": "The map showed that the worst flooding started at the small pipe near the old bridge, and the town's fix replaced that pipe. Look at the end of the second paragraph and the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "clue"
+      ]
+    },
+    {
+      "id": "n3-i159",
+      "skill": "N3",
+      "passage": "n3-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did an engineer warn against the tall walls?",
+      "options": [
+        "The walls would block the town's view of the creek.",
+        "The walls would take too many years to finish building.",
+        "Water would rush faster between them and could flood farms.",
+        "The walls would make the streets near the library flood."
+      ],
+      "answer": 2,
+      "evidence": [
+        10
+      ],
+      "hint": "Find the sentence about the walls that has the word \"but\". Read what the engineer warned.",
+      "explain": "The water would rush faster between the walls and could flood the farms farther downstream. It is in the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "compare-fixes",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i160",
+      "skill": "N3",
+      "passage": "n3-p52",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build sentences about the fix the town chose.",
+      "frame": "The town chose {0}, because it {1}. Its small new problem is {2}.",
+      "slots": [
+        {
+          "kind": "plan",
+          "label": "The fix",
+          "options": [
+            "tall concrete walls on both banks",
+            "a wide bridge and a park that can flood",
+            "a new, smaller pipe",
+            "moving the library uphill"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "why",
+          "label": "Why it works",
+          "options": [
+            "makes the water rush faster toward the farms",
+            "keeps every street dry by blocking the creek",
+            "lets extra water spread out and soak in slowly",
+            "needs no work after storms"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "The new problem",
+          "options": [
+            "mud and branches left on the grass after a flood",
+            "water rushing onto the farms",
+            "longer bus detours",
+            "a bigger pipe to clean"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "hint": "Find the fix the council chose. Then read what happens to the water in a big storm. Then read the first sentence of the last paragraph.",
+      "explain": "The town chose a wide bridge and a park that can flood, because it lets extra water spread out and soak in slowly. Its new problem is mud and branches left on the grass. Look at the third and fourth paragraphs.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "compare-fixes",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i161",
+      "skill": "N3",
+      "passage": "n3-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did the best clocks of that time fail at sea?",
+      "options": [
+        "They could not show the time when it was noon.",
+        "Their springs broke in very hot and very cold weather.",
+        "They cost too much money for most ships to buy.",
+        "Their swinging pendulums did not work on a rolling ship."
+      ],
+      "answer": 3,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Read the last two sentences of the second paragraph. Find the part that tells how those clocks worked.",
+      "explain": "Those clocks used swinging pendulums, which did not work on a rolling ship. It is at the end of the second paragraph. Springs and high prices belong to the new sea clocks.",
+      "inference": 0,
+      "tags": [
+        "cause-effect",
+        "rule-out"
+      ]
+    },
+    {
+      "id": "n3-i162",
+      "skill": "N3",
+      "passage": "n3-p53",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build sentences that explain how a clock could find longitude.",
+      "frame": "Earth turns {0}, so each hour of time difference equals {1}. Comparing home time with ship time showed {2}.",
+      "slots": [
+        {
+          "kind": "why",
+          "label": "How fast Earth turns",
+          "options": [
+            "once every 12 hours",
+            "once every 24 hours",
+            "once a year",
+            "15 times a day"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "then",
+          "label": "What one hour equals",
+          "options": [
+            "one degree of latitude",
+            "24 kilometers",
+            "15 degrees of longitude",
+            "the height of the sun"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "last",
+          "label": "What the difference showed",
+          "options": [
+            "how far east or west the ship had sailed",
+            "how far north the ship had sailed",
+            "how deep the ocean was",
+            "when the next storm would come"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Read the second and third sentences of the second paragraph. They make a chain from Earth's turning to the ship's place.",
+      "explain": "Earth turns once every 24 hours, so each hour of difference equals 15 degrees of longitude. The difference showed how far east or west the ship had sailed. It is in the second paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-chain",
+        "because"
+      ]
+    },
+    {
+      "id": "n3-i163",
+      "skill": "N3",
+      "passage": "n3-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The sea clock solved the longitude problem. What made it hard for every ship to carry one at first?",
+      "options": [
+        "It lost five seconds on each voyage.",
+        "It needed signals from satellites.",
+        "It was very expensive.",
+        "It stopped working in hot weather."
+      ],
+      "answer": 2,
+      "evidence": [
+        14
+      ],
+      "hint": "Read the first sentence of the last paragraph.",
+      "explain": "The new sea clocks were very expensive at first, so only some ships carried them. It is the first sentence of the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i164",
+      "skill": "N3",
+      "passage": "n3-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why can a damaged reef take decades to grow back by itself?",
+      "options": [
+        "Fish eat all the new coral.",
+        "The water is too deep for light to reach it.",
+        "Many corals grow only a few centimeters a year.",
+        "Boat anchors break it again every year."
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the word \"decades\" in the first paragraph. Read the start of that sentence.",
+      "explain": "Many corals grow only a few centimeters a year, so a damaged reef grows back slowly. It is the last sentence of the first paragraph.",
+      "inference": 0,
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "n3-i165",
+      "skill": "N3",
+      "passage": "n3-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why do divers grow coral pieces on frames that hang in open water?",
+      "options": [
+        "The frames keep the coral warm when the water turns cold.",
+        "Hanging in open water keeps the coral away from too much light.",
+        "It gets light and moving water, away from sand and coral-eating animals.",
+        "Coral can grow only on plastic pipes and fishing line."
+      ],
+      "answer": 3,
+      "evidence": [
+        8,
+        9,
+        10
+      ],
+      "hint": "Read the sentence that starts with \"Hanging in open water\".",
+      "explain": "Hanging in open water gives the coral plenty of light and moving water and keeps it safe from sand and from animals that eat coral. It is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "why-it-works"
+      ]
+    },
+    {
+      "id": "n3-i166",
+      "skill": "N3",
+      "passage": "n3-p54",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort each sentence. Is it a step in coral gardening, or a limit of coral gardening?",
+      "bins": [
+        "A step in coral gardening",
+        "A limit of coral gardening"
+      ],
+      "cards": [
+        {
+          "text": "Divers collect small broken pieces of healthy coral.",
+          "bin": 0
+        },
+        {
+          "text": "Divers can plant only a small area each year.",
+          "bin": 1
+        },
+        {
+          "text": "They hang the pieces on frames in a nursery.",
+          "bin": 0
+        },
+        {
+          "text": "It cannot help if the water stays too warm.",
+          "bin": 1
+        },
+        {
+          "text": "They attach the grown pieces to the damaged reef.",
+          "bin": 0
+        },
+        {
+          "text": "It is slow, careful work.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        7,
+        8,
+        9,
+        13,
+        15,
+        16,
+        17
+      ],
+      "hint": "Steps are things divers do. Limits are in the last paragraph, after the words \"has limits\".",
+      "explain": "Collecting pieces, hanging them in a nursery and attaching them to the reef are steps, in the second and third paragraphs. Slow work, a small area each year and warm water are limits, in the last paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "problem-solving",
+        "fix-limits"
+      ]
+    },
+    {
+      "id": "n3-i167",
+      "skill": "N3",
+      "passage": "n3-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did the class choose to wait for the spare bus?",
+      "options": [
+        "It would get them to the observatory in time for the ten o'clock tour.",
+        "Dr. Lee had a free day for the class the following week.",
+        "They could still reach the sun session and see the dome tour by video.",
+        "The spare bus could drive them all the way to the dome door."
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        11,
+        12
+      ],
+      "hint": "Find when the spare bus would arrive. Then read what Priya pointed out and what Dr. Lee offered.",
+      "explain": "The spare bus would still get them to the sun session, and Dr. Lee offered a video tour of the dome. Look at the third paragraph. The bus would arrive almost at eleven, too late for the ten o'clock tour.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i168",
+      "skill": "N3",
+      "passage": "n3-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why was walking the rest of the way a poor choice?",
+      "options": [
+        "Dr. Lee said the observatory was closed to people on foot.",
+        "The road had no sidewalk and climbed steeply for two kilometers.",
+        "It was raining hard on the road up Lantern Peaks.",
+        "The bus driver needed the class to help change the tire."
+      ],
+      "answer": 1,
+      "evidence": [
+        9
+      ],
+      "hint": "Find the choice about walking in the second paragraph. Read the part after \"but\".",
+      "explain": "The road had no sidewalk and climbed steeply for two more kilometers. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "options",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n3-i169",
+      "skill": "N3",
+      "passage": "n3-p55",
+      "format": "storymap",
+      "level": 5,
+      "prompt": "Fill in the story map: the problem, the plan and the ending.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What was the problem?",
+          "options": [
+            "The observatory was closed.",
+            "The bus had a flat tire on the way up.",
+            "Clouds hid the sun.",
+            "Ms. Ortiz lost the tickets."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "What was the plan?",
+          "options": [
+            "Walk the rest of the way",
+            "Go back to school and book another day",
+            "Wait for the spare bus and watch the dome tour by video",
+            "Wait for the spare bus and skip the dome tour"
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "ending",
+          "label": "How did it end?",
+          "options": [
+            "They reached the sun session, and Sam counted four sunspots.",
+            "They never reached the observatory that day.",
+            "They saw the dome in person at ten o'clock.",
+            "They reached the observatory after the sun session ended."
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        4,
+        11,
+        12,
+        14,
+        15
+      ],
+      "hint": "Find why the bus stopped. Then find the plan everyone agreed on. Then read the last paragraph.",
+      "explain": "The problem was a flat tire on the way up. The plan was to wait for the spare bus and watch the dome tour by video. At the end, they reached the sun session, and Sam counted four sunspots. Look at the first, third and last paragraphs.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "problem",
+        "plan",
+        "ending"
+      ]
+    },
+    {
+      "id": "n3-i170",
+      "skill": "N3",
+      "passage": "n3-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did Priya decide against the school's smaller cello?",
+      "options": [
+        "The smaller cello was out of tune and would take too long to fix.",
+        "Ms. Gray needed the smaller cello for another student that night.",
+        "The smaller cello had an old string that might break too.",
+        "Her fingers would land in new positions, and she missed two notes."
+      ],
+      "answer": 3,
+      "evidence": [
+        7,
+        9
+      ],
+      "hint": "Read what Ms. Gray said about the smaller cello. Then read what happened when Priya tried it.",
+      "explain": "On the smaller cello, her fingers would land in slightly different positions, and she missed two notes when she tried it. Look at the second paragraph and the start of the third. The smaller cello was already tuned.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "compare-fixes",
+        "plan-change",
+        "two-facts"
+      ]
+    },
+    {
+      "id": "n3-i171",
+      "skill": "N3",
+      "passage": "n3-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The new string caused a small new problem. How did Priya handle it?",
+      "options": [
+        "She played the solo on the school's smaller cello instead.",
+        "She stretched it, retuned it, and tuned again in a pause.",
+        "She asked Ben to play the solo melody on the piano.",
+        "She put on a second new string after the first piece."
+      ],
+      "answer": 1,
+      "evidence": [
+        11,
+        12,
+        13,
+        15
+      ],
+      "hint": "The new problem was stretching. Read what Priya did before the concert and during the pause.",
+      "explain": "Priya stretched and retuned the string, asked for a pause, and used the pause to tune it again. Look at the third and last paragraphs.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "new-problem"
+      ]
+    },
+    {
+      "id": "n3-i172",
+      "skill": "N3",
+      "passage": "n3-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya chose the new string. What else could she have done?",
+      "options": [
+        "Played the solo on the broken string",
+        "Played a different piece for her solo",
+        "Let Ben play the solo melody on the piano",
+        "Tuned the old string much tighter"
+      ],
+      "answer": 2,
+      "evidence": [
+        8
+      ],
+      "hint": "Find the three choices Priya and Ms. Gray listed. Pick one she did not choose.",
+      "explain": "She could have let Ben play the solo melody on the piano. It was the third choice in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "what-else",
+        "options",
         "plan-change"
       ]
     }

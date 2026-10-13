@@ -373,6 +373,771 @@
         "retrieved": "2026-10-12",
         "adapted": false
       }
+    },
+    {
+      "id": "p2-p12",
+      "title": "Pixel Rings the Bell",
+      "kind": "story",
+      "sentences": [
+        "Sam hung a small bell on the back door.",
+        "He wanted Pixel to ring it when he needed to go outside.",
+        "Every day, Sam showed Pixel the bell and gave him a treat.",
+        "For five days, Pixel just sniffed the bell and wagged his tail.",
+        "Sam sighed, but he kept trying.",
+        "On Saturday morning, Sam was eating breakfast at the table.",
+        "Then he heard a sound from the back door.",
+        "Ding, ding!",
+        "Pixel was sitting by the door, and the bell was still swinging.",
+        "Sam jumped up and opened the door.",
+        "\"You did it, Pixel!\" he shouted.",
+        "Then he called Grandma Rose to tell her the news."
+      ],
+      "picture": "🐕🔔",
+      "topics": [
+        "animals",
+        "home"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Pixel Rings the Bell",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p13",
+      "title": "The Boy and the Filberts",
+      "kind": "fable",
+      "sentences": [
+        "A boy saw a tall jar of filberts on a high shelf.",
+        "Filberts are small, round nuts, and he loved them.",
+        "He pushed his hand in and grabbed as many as he could.",
+        "Then he tried to pull his hand out.",
+        "It would not come out!",
+        "The top of the jar was too narrow for his full fist.",
+        "He did not want to drop a single nut.",
+        "He pulled and pulled, and then he began to cry.",
+        "His mother came into the kitchen.",
+        "\"Hold only half as many,\" she said. \"You can take more later.\"",
+        "The boy let go of some nuts, and his hand slid out easily.",
+        "He smiled and ate the nuts one at a time."
+      ],
+      "picture": "🥜🫙",
+      "topics": [
+        "food",
+        "home"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Boy and the Filberts",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p2-p14",
+      "title": "Level Nine",
+      "kind": "story",
+      "sentences": [
+        "Ben was stuck on level nine of his puzzle game.",
+        "He had to push ten blocks onto ten gold squares.",
+        "Every time, one block got trapped in a corner.",
+        "He tried for a whole week.",
+        "On Friday, he put down the controller and groaned.",
+        "Ana sat next to him and watched him play.",
+        "\"Try moving the corner block first,\" she said.",
+        "Ben tried her idea.",
+        "This time, no block got trapped.",
+        "The last block slid onto the last gold square.",
+        "The screen flashed LEVEL COMPLETE.",
+        "Ben jumped off the couch and gave Ana a high five."
+      ],
+      "picture": "🎮🧩",
+      "topics": [
+        "games",
+        "home"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Level Nine",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p15",
+      "title": "The Heron",
+      "kind": "fable",
+      "sentences": [
+        "Early one morning, a tall heron walked slowly along the edge of a clear stream.",
+        "He was looking for breakfast, and the water was full of fish.",
+        "A small fish swam close to his long legs.",
+        "\"That fish is far too small for a fine bird like me,\" said the heron, and he lifted his beak high.",
+        "Next, a young perch swam by.",
+        "\"I will not open my beak for such a skinny fish,\" he said.",
+        "He decided to wait for a big, fat fish instead.",
+        "As the sun climbed higher, the fish swam away into the deep, cool middle of the stream.",
+        "The heron waited and waited, but no more fish came near the edge.",
+        "By noon, he was very hungry.",
+        "At last, he found a tiny snail on a rock, and he gobbled it up.",
+        "Then he thought about all the fish he had turned away.",
+        "He wished he had not been so picky."
+      ],
+      "picture": "🐟🐌",
+      "topics": [
+        "animals",
+        "nature",
+        "food"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Heron",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p2-p16",
+      "title": "The Station in the Sky",
+      "kind": "story",
+      "sentences": [
+        "Priya's phone app said the space station would fly over Harbor Town at 7:42 that evening.",
+        "The space station is a huge science lab that circles Earth about every ninety minutes.",
+        "Astronauts live and work inside it.",
+        "Priya and her mom went out to the back yard at 7:30 and looked at the western sky.",
+        "Priya kept checking the time on her phone.",
+        "She bounced on her toes and could not stand still.",
+        "At 7:42, a bright white dot rose above the trees.",
+        "It did not blink like an airplane, and it moved smoothly across the sky.",
+        "\"It shines because sunlight bounces off it,\" said her mom.",
+        "Priya watched without saying a word.",
+        "Somewhere inside that tiny dot, real people were eating supper or looking down at Earth.",
+        "After about five minutes, the dot faded and disappeared.",
+        "Priya let out a long breath.",
+        "\"Can we watch it again next week?\" she asked."
+      ],
+      "picture": "🛰️✨",
+      "topics": [
+        "space"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Station in the Sky",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p17",
+      "title": "The Penalty Kick",
+      "kind": "story",
+      "sentences": [
+        "Ana and Ben's soccer team was tied 1 to 1, and only two minutes were left in the game.",
+        "Then a defender bumped into Ben inside the penalty area, and the referee blew a whistle.",
+        "Their team would get a penalty kick.",
+        "\"Who wants to take it?\" asked Coach Novak.",
+        "Nobody answered.",
+        "Ana's heart was pounding, but she raised her hand.",
+        "She had practiced penalty kicks every day after school for a month.",
+        "She set the ball on the white spot and chose the left corner of the goal.",
+        "She took three steps back and breathed out slowly.",
+        "Then she ran forward and kicked.",
+        "The ball flew past the goalkeeper's fingers and into the net.",
+        "Her teammates ran over and cheered, and Ben gave her a huge hug.",
+        "Ana could not stop smiling all the way home."
+      ],
+      "picture": "⚽🥅",
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Penalty Kick",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p18",
+      "title": "Blue Sparks",
+      "kind": "story",
+      "sentences": [
+        "On a warm summer night, Grandma Rose took Sam and Leo down to the beach after dark.",
+        "She had heard that the waves were glowing.",
+        "At first, Leo laughed and said it was probably just the moon.",
+        "Then a small wave broke on the sand, and a line of bright blue light ran along its edge.",
+        "Leo stopped laughing and stared.",
+        "Grandma Rose explained that the sea was full of tiny living things called plankton.",
+        "Some kinds of plankton make a flash of blue light when the water around them moves.",
+        "Sam waded into the shallow water up to his ankles.",
+        "Every time he kicked, blue sparks swirled around his feet.",
+        "Leo ran in next to him and pulled his hand through the water, making long blue streaks.",
+        "\"It looks like a video game!\" Leo whispered.",
+        "The boys stayed until Grandma Rose said it was time to go home.",
+        "On the walk back, Sam asked her if the plankton would glow again tomorrow night."
+      ],
+      "picture": "🌊✨",
+      "topics": [
+        "ocean",
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Blue Sparks",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p19",
+      "title": "The Lumpy Rolls",
+      "kind": "story",
+      "sentences": [
+        "On Saturday, Grandma Rose let Sam make the dinner rolls at her bakery.",
+        "He mixed the flour, water, yeast and salt, just like she showed him.",
+        "Then he shaped the dough into twelve rolls.",
+        "Grandma Rose's rolls were always perfectly round.",
+        "Sam's rolls came out of the oven lumpy and uneven, and one looked like a potato.",
+        "Sam's face turned red, and he pushed the tray to the back of the counter.",
+        "\"Nobody will want these,\" he said quietly.",
+        "Just then, Mrs. Lin from the Lighthouse Café came in to buy bread.",
+        "She saw the tray and asked if she could try one.",
+        "She took a bite and closed her eyes.",
+        "\"These are soft and warm inside,\" she said. \"I will take all twelve for my café.\"",
+        "Sam looked at Grandma Rose, and she nodded and smiled.",
+        "That afternoon, Sam walked past the café and saw his rolls in the window with a sign that said FRESH TODAY."
+      ],
+      "picture": "🍞🥖",
+      "topics": [
+        "food"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Lumpy Rolls",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p20",
+      "title": "The Donkey and the Load of Salt",
+      "kind": "fable",
+      "sentences": [
+        "A merchant sold salt in a market town on the far side of a river.",
+        "Every week, he loaded heavy sacks of salt onto his donkey's back, and the two of them walked to market together.",
+        "On the way, they had to cross the river at a shallow place called a ford.",
+        "One morning, the donkey slipped on a smooth stone in the ford and fell into the water.",
+        "When he struggled back to his feet, the load on his back felt much lighter.",
+        "Much of the salt had melted away in the river.",
+        "The donkey trotted the rest of the way to market, feeling very pleased with himself.",
+        "The merchant was not pleased at all, because he had lost half of the salt he planned to sell.",
+        "On the next trip, the donkey remembered what had happened.",
+        "At the ford, he lay down in the water on purpose, and once again his load became light.",
+        "The merchant frowned as they walked on, and he began to think.",
+        "He guessed that the second fall had not been an accident.",
+        "The following week, the merchant filled the donkey's sacks with sponges instead of salt.",
+        "The sponges were light and dry, and the donkey felt sure that his trick would work again.",
+        "At the ford, he lay down in the river and waited.",
+        "But sponges do not melt the way salt does, because they soak up water instead.",
+        "When the donkey stood up, his load was far heavier than before, and he had to stagger slowly all the way home.",
+        "He never lay down in the river again."
+      ],
+      "breaks": [
+        7,
+        12
+      ],
+      "picture": "🫏🧂",
+      "topics": [
+        "animals",
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Donkey and the Load of Salt",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p2-p21",
+      "title": "A Raven and a Swan",
+      "kind": "fable",
+      "sentences": [
+        "A raven lived at the edge of a farm, where he found plenty of food in the fields every day.",
+        "His feathers were black from the top of his head to the tip of his tail.",
+        "One morning, he saw a swan gliding across the pond near the farmhouse.",
+        "Her feathers were so white that they shone in the sun.",
+        "The raven watched her for a long time, and he began to feel jealous.",
+        "\"If I lived in the water like the swan, my feathers would turn white too,\" he told himself.",
+        "So the raven left the fields, where he always found food, and moved to the edge of the pond.",
+        "Every day, he splashed in the water and scrubbed his feathers with his beak.",
+        "He washed in the morning, at noon and again before the sun went down.",
+        "But his feathers stayed exactly as black as before.",
+        "The pond had none of the seeds and insects that he liked to eat, so he grew hungry and tired.",
+        "At last, the raven stood on the bank and looked at his reflection in the water.",
+        "He was still black, and now he was thin as well.",
+        "Slowly, he understood that washing could not change the color he was born with.",
+        "He flew back to the fields and ate until he was full.",
+        "From then on, he let the swan be white, and he was glad to be a raven."
+      ],
+      "breaks": [
+        6,
+        11
+      ],
+      "picture": "🐦🦢",
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "A Raven and a Swan",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p2-p22",
+      "title": "The Trail Map",
+      "kind": "story",
+      "sentences": [
+        "In May, Harbor Town opened a new bike trail through Story Woods.",
+        "It curved past the old mill, crossed the creek on a wooden bridge and ended at the campsite.",
+        "Every day, riders came into Okafor's Bike Shop to ask how to find it, and Mr. Okafor explained the route again and again.",
+        "Some days, he answered the same question twenty times while a row of broken bikes waited for repairs.",
+        "Sam had an idea.",
+        "On Saturday, he rode the whole trail with a notebook and a small meter on his handlebars that measured distance.",
+        "At every turn, he stopped and wrote down how far he had come.",
+        "That week, he spent four evenings drawing a map at the kitchen table.",
+        "He marked the bridge, the mill and the steep hill, and he added a scale bar so riders could measure distances.",
+        "Mr. Okafor printed one hundred copies and put them in a box by the door with a sign that said FREE TRAIL MAPS.",
+        "The next Saturday, a family of four came back to the shop, muddy and smiling.",
+        "The father held up Sam's map and said it was the only reason they had found the campsite.",
+        "Sam's ears turned pink, and he looked down at his shoes, but he was grinning.",
+        "Mr. Okafor laughed and pointed to his work bench.",
+        "\"Thanks to you, I fixed six bikes today instead of two,\" he said.",
+        "By the end of June, the box of maps was empty, and Mr. Okafor asked Sam to draw a second trail map."
+      ],
+      "breaks": [
+        4,
+        10
+      ],
+      "picture": "🗺️🚲",
+      "topics": [
+        "maps",
+        "nature",
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Trail Map",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p23",
+      "title": "The Ore Cart",
+      "kind": "story",
+      "sentences": [
+        "On the first Saturday in May, Mr. Varga's rock club visited the Ridgeway Mine Museum, where he also works as a guide.",
+        "Maya had joined the club because she loved minerals, and she brought Sam along because the museum had old mine carts on rails.",
+        "Long ago, miners pushed these carts through the tunnels to carry rock out of the hill.",
+        "Sam had read that visitors could ride a cart along a short track outside the museum, and he had talked about it all week.",
+        "When they arrived, a sign beside the track said CLOSED FOR REPAIRS.",
+        "Sam stopped walking and read the sign twice.",
+        "His shoulders dropped, and he hardly said a word during the tour of the first tunnel.",
+        "Maya felt the opposite.",
+        "Mr. Varga let the club search a pile of waste rock that the miners had left behind, and each member could keep one piece.",
+        "Within ten minutes, Maya found a lump of rock streaked with bright green malachite, a mineral that forms where there is copper.",
+        "She held it up to the light and grinned.",
+        "After the search, Mr. Varga noticed Sam standing alone by the closed track.",
+        "He explained that one rail had cracked, and a worker was coming to replace it next week.",
+        "Then he led Sam into a shed and showed him the museum's oldest cart, which had iron wheels and a box that tipped forward to dump out the rock.",
+        "Mr. Varga even let Sam push the cart a few meters along the rails inside the shed.",
+        "On the bus ride home, Maya turned her malachite over and over in her hands, and Sam told everyone exactly how the cart's box tipped forward."
+      ],
+      "breaks": [
+        4,
+        11
+      ],
+      "picture": "⛏️🛤️",
+      "topics": [
+        "mining",
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Ore Cart",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p24",
+      "title": "The Broken String",
+      "kind": "story",
+      "sentences": [
+        "Sam had been learning the guitar in the school music club since September.",
+        "In March, Ms. Gray invited him to play one song by himself at the library's Music Afternoon.",
+        "He practiced the song every evening for three weeks, until he could play it without looking at his fingers.",
+        "Even so, he had never performed alone in front of strangers, and just imagining it made his hands feel cold.",
+        "Twenty minutes before the show, Sam sat in a back room to warm up.",
+        "As he tightened one of the thin strings, it snapped with a sharp twang.",
+        "Sam stared at the loose string, and his face felt hot.",
+        "He had no spare strings in his guitar case.",
+        "Ms. Gray looked in her bag and found a new pack of guitar strings.",
+        "She helped him put the new string on, and together they tuned it.",
+        "She warned him that new strings stretch and can slip out of tune, and she told him to continue playing if that happened.",
+        "When Sam's name was called, he walked to the chair at the front of the room.",
+        "Grandma Rose was sitting in the second row, and she gave him a small wave.",
+        "Sam checked the new string one more time, took a deep breath and began.",
+        "Halfway through, the new string sounded slightly too low, but he continued playing, exactly as Ms. Gray had advised.",
+        "When he finished, the audience applauded loudly, and a small girl in the front row asked if he could play it again.",
+        "Sam laughed, and his hands did not feel cold anymore."
+      ],
+      "breaks": [
+        4,
+        11
+      ],
+      "picture": "🎸🎶",
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Broken String",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p25",
+      "title": "The Climbing Wall",
+      "kind": "story",
+      "sentences": [
+        "For Leo's birthday, his dad took Leo, Maya and Ana to the climbing gym near the harbor.",
+        "Every climber wore a harness clipped to a rope, and a worker on the ground held the other end of the rope.",
+        "The tallest wall was ten meters high, and it was covered with colored holds shaped like small rocks.",
+        "Leo had climbed many times before, and he raced to the top of the easiest route in less than a minute.",
+        "He rang the bell at the top, came back down and shrugged.",
+        "\"That was too easy,\" he said.",
+        "Maya had never climbed before.",
+        "On her first try, she stopped halfway up, holding on tightly and looking down at the floor.",
+        "The worker told her she could come down whenever she liked, so she did.",
+        "On her second try, she reached a little higher, but her arms got tired.",
+        "Ana showed her how to push up with her legs instead of pulling with her arms.",
+        "On her third try, Maya moved slowly and used her legs the way Ana had shown her.",
+        "When she reached the top, she rang the bell so hard that everyone in the gym looked up.",
+        "Back on the ground, her legs were shaking, but she was smiling so widely that her cheeks hurt.",
+        "Leo looked at her for a moment.",
+        "Then he walked over to the hardest route on the wall, a line of tiny purple holds, and said, \"Okay, my turn to try something hard.\""
+      ],
+      "breaks": [
+        6,
+        11
+      ],
+      "picture": "🧗🔔",
+      "topics": [
+        "sports",
+        "friends"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Climbing Wall",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p26",
+      "title": "The Fossil Lab Window",
+      "kind": "article",
+      "sentences": [
+        "Last winter, my class visited a natural history museum that has a fossil lab with a large glass window.",
+        "Through the window, visitors can watch scientists called preparators remove rock from around dinosaur bones.",
+        "Fossils arrive at the lab wrapped in hard jackets of plaster, which protect them on the long trip from the dig site.",
+        "Before the trip, I had imagined an exciting room full of people uncovering giant skeletons.",
+        "Instead, I saw one woman sitting very still at a table, bent over a gray lump of rock.",
+        "She held a tool shaped like a thick pen, and it buzzed quietly as she pressed its tip against the rock.",
+        "A sign explained that the tool is called an air scribe, and it works like a tiny jackhammer, chipping away a few grains of rock at a time.",
+        "I watched for ten minutes, and I could not see anything change at all.",
+        "Most of my classmates had already wandered off to the gift shop, and I was about to follow them.",
+        "Then the preparator noticed me and waved me over to a small speaker in the wall beside the window.",
+        "She explained that she had been working on this one block of rock for three months.",
+        "She turned her magnifying lamp so I could see the spot she was uncovering, and I noticed a smooth, dark, curved shape poking out of the gray rock.",
+        "\"That is the tip of a claw,\" she said. \"You are the first person besides me to see it in about seventy-five million years.\"",
+        "I pressed my hands against the glass and could not stop staring.",
+        "Before I left, I asked her how she could stay patient doing such slow work every day.",
+        "She smiled and said that every grain she removed brought her a little closer to something nobody had ever seen.",
+        "On the bus back to school, my classmates showed off the plastic dinosaurs they had bought, but I kept thinking about the claw.",
+        "I have already asked whether the museum lets students volunteer in the lab when they are older."
+      ],
+      "breaks": [
+        4,
+        9,
+        14
+      ],
+      "picture": "🦖🔬",
+      "topics": [
+        "dinosaurs",
+        "school"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Fossil Lab Window",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p27",
+      "title": "The Mountain Railway",
+      "kind": "article",
+      "sentences": [
+        "Last summer, my grandfather took me on a mountain railway that climbs slopes far steeper than ordinary trains can handle.",
+        "An ordinary train has smooth metal wheels on smooth rails, so on a very steep hill its wheels would slip.",
+        "This railway has a third rail in the middle of the track, and the top of that rail is lined with metal teeth.",
+        "Under the train, a gear wheel fits into the teeth, so the train can pull itself up the mountain one tooth at a time without sliding back.",
+        "My grandfather had ridden this railway once before, when he was nine years old, with his own father.",
+        "While we waited on the platform, he told me he still remembered the smell of the engine and the cold wind at the top.",
+        "Then he stood quietly, holding the ticket from his first trip, which he had kept for sixty years.",
+        "About halfway up, the track tilted so steeply that my water bottle rolled to the back of the car.",
+        "Through the side window, the valley floor seemed to drop away beneath us, and I gripped the edge of my seat with both hands.",
+        "My grandfather noticed and pointed at the floor of the car, where we could hear a steady clicking sound.",
+        "\"That is the gear catching each tooth,\" he said. \"As long as you hear that, it is holding us safely.\"",
+        "I listened to the clicking, and slowly my hands relaxed.",
+        "At the summit, the air was so cold that we could see our breath, even though it was July.",
+        "I ran from one side of the viewing platform to the other, pointing out lakes and villages I had only seen on a map.",
+        "My grandfather stood at the railing for a long time without speaking.",
+        "When he turned around, his eyes were shiny, and he said he was happy that the view was exactly as he remembered it.",
+        "Then he handed me his old ticket and told me to keep it for the next sixty years."
+      ],
+      "breaks": [
+        4,
+        7,
+        12
+      ],
+      "picture": "🚞⛰️",
+      "topics": [
+        "transport",
+        "nature",
+        "maps"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Mountain Railway",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p28",
+      "title": "Robot Day at the Library",
+      "kind": "story",
+      "sentences": [
+        "Every spring, the Harbor Town Library holds Robot Day, when older students show their inventions to younger children.",
+        "This year, Priya brought her rover, which she had rebuilt as a drawing robot.",
+        "She had attached a marker to its back so the tip touched the floor, and she had programmed the rover to draw shapes on a large sheet of paper.",
+        "A child could type a shape into her tablet, such as a square or a star, and the rover would drive along the lines and draw it.",
+        "Priya had tested it on her bedroom carpet more than twenty times, and every shape had come out neat and straight.",
+        "At the library, Mrs. Hall spread a sheet of shiny paper across the smooth floor of the meeting room.",
+        "A boy of about six typed STAR and pressed GO.",
+        "The rover started well, but on the first sharp turn, its wheels slipped on the shiny paper, and one point of the star came out short and crooked.",
+        "By the end, the star looked more like a lopsided flower.",
+        "Priya felt her face grow warm, because a crowd of parents was watching.",
+        "But the boy clapped and shouted, \"It made a star flower!\"",
+        "He asked if he could take the drawing home, and two other children lined up to make star flowers of their own.",
+        "While the children waited, Priya studied the wheels carefully.",
+        "At home, the carpet had gripped the wheels, but on the shiny paper they spun without pushing the rover forward.",
+        "She borrowed four rubber bands from Mrs. Hall's desk and stretched one around each wheel so they would grip better.",
+        "On the next try, the rover drew a perfect square, and the parents clapped.",
+        "By the end of the afternoon, Priya's rover had drawn more than thirty shapes.",
+        "Most were neat and straight, but the children still kept asking for star flowers, so Priya added a new button to her program that drew one on purpose.",
+        "On the walk home, she thought it was strange that her favorite moment of the day had begun with a mistake."
+      ],
+      "breaks": [
+        5,
+        12,
+        16
+      ],
+      "picture": "🤖🖍️",
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Robot Day at the Library",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p29",
+      "title": "The Game Showcase",
+      "kind": "story",
+      "sentences": [
+        "For six weeks, Ana and Leo built a video game together in the after-school coding club at Harbor Middle School.",
+        "In their game, a small robot named Bolt rolls through a city to deliver packages.",
+        "Ana designed the levels, and she spent most of her time on the last one, a maze of moving platforms that she had rebuilt seven times.",
+        "Leo wrote everything the characters said, and he filled the game with jokes, such as a grumpy mailbox that complained about getting too many letters.",
+        "At the end of the term, the club held a showcase, and anyone could come to the school gym to play the students' games.",
+        "For the first hour, Leo could hardly stop smiling.",
+        "Players laughed out loud at the grumpy mailbox, and one girl read every joke aloud to her little brother.",
+        "Ana, however, was watching the screen, not the players' faces.",
+        "Every player who reached the last level fell off the moving platforms within a minute, and most of them gave up and went to try another game.",
+        "After the fifth player walked away, Ana crossed her arms and stopped talking.",
+        "She wondered whether all her hard work on the maze had been a mistake.",
+        "Near the end of the showcase, a tall boy sat down and played the whole game without saying a word.",
+        "When he reached the maze, he fell off again and again, but each time he tried a different path.",
+        "On his twelfth try, he jumped onto the final platform and guided the robot safely to the last mailbox.",
+        "He threw both arms in the air and cheered so loudly that half the gym turned around.",
+        "Then he turned to Ana and asked whether she had designed the maze.",
+        "When she nodded, he said it was the best level he had played all day, because it made him think.",
+        "Ana uncrossed her arms, and for the rest of the afternoon she stood beside the screen, giving small hints to anyone who got stuck.",
+        "On the way out, Leo told her that people had laughed at his jokes, but her level was the part they would remember."
+      ],
+      "breaks": [
+        5,
+        11,
+        15
+      ],
+      "picture": "🎮🏆",
+      "topics": [
+        "games",
+        "school"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Game Showcase",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p2-p30",
+      "title": "The Weather Balloon",
+      "kind": "story",
+      "sentences": [
+        "Every day, at hundreds of places around the world, weather scientists release large balloons filled with a light gas, such as helium.",
+        "Each balloon carries a small box of instruments that measures the temperature, the air pressure and the moisture in the air as it rises.",
+        "As the balloon climbs, the air around it gets thinner, so the balloon slowly swells until it bursts, often more than thirty kilometers above the ground.",
+        "Then the box floats back down on a small parachute.",
+        "In April, Ms. Ortiz's science class launched a weather balloon of its own from the field behind Harbor Middle School.",
+        "Priya had spent three weeks building the instrument box, which held a thermometer, a battery and a tracker that sent out its location every minute.",
+        "Sam had volunteered to follow the tracker on a map on the classroom computer.",
+        "At ten o'clock, the class counted down, and the white balloon rose quickly into the clear sky until it was only a dot.",
+        "For the next hour, Sam did not leave the screen.",
+        "He traced the balloon's path with his finger as the wind carried it east across the bay, and he called out its height every few minutes.",
+        "Priya stood behind him with her arms folded tightly.",
+        "The map showed the wind pushing the balloon toward the open sea, and if the box landed in the water, it would be lost along with all its measurements.",
+        "At 11:20, the height suddenly began to drop, which meant the balloon had burst.",
+        "The dot drifted lower and lower over the bay, and Priya held her breath.",
+        "At 11:58, the dot stopped moving.",
+        "Sam zoomed in on the map and laughed.",
+        "The box had landed in a cabbage field on Gull Island, only two hundred meters from the shore.",
+        "Priya let out her breath and sat down on the nearest chair.",
+        "That afternoon, Ms. Ortiz, Priya and Sam took the ferry across the bay, and the farmer met them at his gate with the box in his hands.",
+        "Back in class, Priya connected the box to the computer and found that the temperature high above them had dropped to fifty-five degrees Celsius below zero.",
+        "Sam printed the balloon's path and pinned it to the wall, and Priya stood in front of it for a long time."
+      ],
+      "breaks": [
+        4,
+        8,
+        14
+      ],
+      "picture": "🎈🗺️",
+      "topics": [
+        "weather",
+        "maps",
+        "school"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Weather Balloon",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -1303,6 +2068,2505 @@
         "opinion",
         "cause-of-feeling",
         "wonder"
+      ]
+    },
+    {
+      "id": "p2-i28",
+      "skill": "P2",
+      "passage": "p2-p12",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "Sam jumped up and shouted. Why was he so happy?",
+      "options": [
+        "Pixel rang the bell by himself.",
+        "Pixel ate all of his treats.",
+        "Grandma Rose came for breakfast."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "hint": "Find where Sam jumps up. Read the two sentences just before it.",
+      "explain": "Sam was happy because Pixel rang the bell by himself. Pixel was sitting by the door, and the bell was still swinging.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "look-back",
+        "pride"
+      ]
+    },
+    {
+      "id": "p2-i29",
+      "skill": "P2",
+      "passage": "p2-p12",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "prompt": "Why do you think Sam called Grandma Rose? Build your answer.",
+      "frame": "Sam felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "proud",
+            "excited",
+            "happy",
+            "surprised"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "Pixel learned the trick",
+            "he worked on it for many days",
+            "Pixel rang the bell with no help"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I feel proud when I teach someone something.",
+            "I would tell my family too.",
+            "I like to share good news."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        8,
+        10,
+        11
+      ],
+      "hint": "Think about how long Sam tried. Then think about what Pixel did on Saturday.",
+      "explain": "One good answer is: Sam felt proud because Pixel learned the trick. Any honest answer is fine.",
+      "inference": 1,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "pride"
+      ]
+    },
+    {
+      "id": "p2-i30",
+      "skill": "P2",
+      "passage": "p2-p13",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "The boy began to cry. Why was he upset?",
+      "options": [
+        "His hand was stuck in the jar.",
+        "The jar was empty.",
+        "His mother took his nuts away."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "hint": "Find where the boy cries. Look back at what happened when he pulled his hand.",
+      "explain": "The boy was upset because his hand was stuck in the jar. His full fist was too big for the top of the jar.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "look-back"
+      ]
+    },
+    {
+      "id": "p2-i31",
+      "skill": "P2",
+      "passage": "p2-p13",
+      "format": "highlight",
+      "level": 2,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "At the end, the boy smiled. Tap a sentence that tells why he could smile.",
+      "answer": [
+        9,
+        10
+      ],
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Read what his mother says. Then read what happens to his hand.",
+      "explain": "His mother told him to hold only half as many nuts. He let go of some, and his hand slid out easily. These two sentences come just before he smiles.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p2-i32",
+      "skill": "P2",
+      "passage": "p2-p14",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "Ben groaned on Friday. Why did he feel frustrated?",
+      "options": [
+        "He had been stuck on the same level for a week.",
+        "Ana took his controller away.",
+        "The game stopped working."
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "hint": "Read the first four sentences. Look for how long Ben had been trying.",
+      "explain": "Ben felt frustrated because he had been stuck on level nine for a whole week. One block always got trapped.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "look-back"
+      ]
+    },
+    {
+      "id": "p2-i33",
+      "skill": "P2",
+      "passage": "p2-p14",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "prompt": "Ben gave Ana a high five. Why do you think he did that? Build your answer.",
+      "frame": "Ben felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "proud",
+            "excited",
+            "thankful",
+            "happy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "he finally finished level nine",
+            "Ana's idea worked",
+            "he did not give up"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "I would thank Ana too.",
+            "A friend's idea can help when I am stuck.",
+            "I like finishing a hard level."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "hint": "Read what Ana said. Then read what happened when Ben tried her idea.",
+      "explain": "One good answer is: Ben felt thankful because Ana's idea worked. Any honest answer is fine.",
+      "inference": 1,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i34",
+      "skill": "P2",
+      "passage": "p2-p15",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "The heron lifted his beak high. Why did he turn away the first two fish?",
+      "options": [
+        "He thought they were too small for a fine bird like him.",
+        "He was not hungry yet.",
+        "The fish swam away too fast.",
+        "He wanted to eat a snail instead."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        5,
+        6
+      ],
+      "hint": "Read what the heron says about each fish.",
+      "explain": "The heron felt too proud to eat small fish. He said the first fish was far too small for a fine bird like him, and the perch was too skinny.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "pride"
+      ]
+    },
+    {
+      "id": "p2-i35",
+      "skill": "P2",
+      "passage": "p2-p15",
+      "format": "sort",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Sort what happened. Did it go with the heron feeling too proud, or with him feeling sorry?",
+      "bins": [
+        "Too proud 😤",
+        "Sorry 😞"
+      ],
+      "cards": [
+        {
+          "text": "He said the first fish was too small for a fine bird like him.",
+          "bin": 0
+        },
+        {
+          "text": "He would not open his beak for a skinny perch.",
+          "bin": 0
+        },
+        {
+          "text": "The fish swam away into the deep middle of the stream.",
+          "bin": 1
+        },
+        {
+          "text": "No more fish came near the edge.",
+          "bin": 1
+        },
+        {
+          "text": "All he could find was a tiny snail.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "hint": "The proud part comes first, when fish are swimming close to him. The sorry part comes after the fish swim away.",
+      "explain": "Too proud: he called the first fish too small and the perch too skinny. Sorry: the fish swam into deep water, no more came near, and he only found a tiny snail. That is why he wished he had not been so picky.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p2-i36",
+      "skill": "P2",
+      "passage": "p2-p15",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "How did the heron feel at the end, and why? Build your answer.",
+      "frame": "At the end, the heron felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "foolish",
+            "sorry",
+            "disappointed",
+            "still hungry"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "he turned away good fish",
+            "the fish swam into deep water",
+            "he only got a tiny snail"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "Next time he could eat the first fish he sees.",
+            "I have been picky about food too.",
+            "Waiting for something better does not always work."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "hint": "Read the last four sentences. Think about what the heron had at the start and what he had at the end.",
+      "explain": "One good answer is: At the end, the heron felt foolish because he turned away good fish. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "fable"
+      ]
+    },
+    {
+      "id": "p2-i37",
+      "skill": "P2",
+      "passage": "p2-p16",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Priya bounced on her toes and could not stand still. Why?",
+      "options": [
+        "She was excited to see the space station.",
+        "She was cold in the back yard.",
+        "She was worried her phone was broken.",
+        "She was in a hurry to eat supper."
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "hint": "Read the first sentence. What was Priya waiting to see?",
+      "explain": "Priya was excited because the space station would fly over at 7:42. She kept checking the time while she waited.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue"
+      ]
+    },
+    {
+      "id": "p2-i38",
+      "skill": "P2",
+      "passage": "p2-p16",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Priya watched without saying a word. What gave her such a strong feeling of wonder?",
+      "options": [
+        "Real people were living inside that tiny dot.",
+        "Her mom told her to stay quiet.",
+        "The dot blinked like an airplane.",
+        "The dot was gone after five minutes."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        9,
+        10
+      ],
+      "hint": "Read the sentence right after Priya goes quiet. What is she thinking about?",
+      "explain": "Priya felt wonder because real people were inside that tiny dot, eating supper or looking down at Earth. This comes right after she goes quiet.",
+      "inference": 2,
+      "tags": [
+        "cause-of-feeling",
+        "wonder",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "p2-i39",
+      "skill": "P2",
+      "passage": "p2-p16",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Priya asked to watch again next week. Why do you think she wants to? Build your answer.",
+      "frame": "Priya felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "amazed",
+            "full of wonder",
+            "excited",
+            "happy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "real people live inside that dot",
+            "it moved so smoothly across the sky",
+            "five minutes went by too fast"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I would want to see it again too.",
+            "I like looking at the sky at night.",
+            "I would want to know what the astronauts were doing."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        7,
+        9,
+        10,
+        11,
+        13
+      ],
+      "hint": "Read from the bright dot to the end. Pick the part you think mattered most to Priya.",
+      "explain": "One good answer is: Priya felt full of wonder because real people live inside that dot. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "wonder"
+      ]
+    },
+    {
+      "id": "p2-i40",
+      "skill": "P2",
+      "passage": "p2-p17",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Ana's heart was pounding, but she raised her hand. What helped her feel brave enough to take the kick?",
+      "options": [
+        "She had practiced penalty kicks every day for a month.",
+        "Coach Novak told her she had to take it.",
+        "The goalkeeper was very small.",
+        "Ben said he would take it if she missed."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Read the sentence right after Ana raises her hand.",
+      "explain": "Ana had practiced penalty kicks every day after school for a month. This sentence comes right after she raises her hand.",
+      "inference": 2,
+      "tags": [
+        "cause-of-feeling",
+        "courage"
+      ]
+    },
+    {
+      "id": "p2-i41",
+      "skill": "P2",
+      "passage": "p2-p17",
+      "format": "sort",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Sort what happened. Did it make Ana feel nervous or proud?",
+      "bins": [
+        "Nervous 😟",
+        "Proud 😊"
+      ],
+      "cards": [
+        {
+          "text": "The score was tied with two minutes left.",
+          "bin": 0
+        },
+        {
+          "text": "Nobody answered when the coach asked.",
+          "bin": 0
+        },
+        {
+          "text": "The ball flew past the goalkeeper.",
+          "bin": 1
+        },
+        {
+          "text": "Her teammates ran over and cheered.",
+          "bin": 1
+        },
+        {
+          "text": "Ben gave her a huge hug.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        4,
+        5,
+        10,
+        11
+      ],
+      "hint": "Find where Ana's heart pounds, and where she smiles. Each card belongs with one of those moments.",
+      "explain": "Nervous: the score was tied with two minutes left, and nobody answered the coach. Proud: the ball went into the net, her teammates cheered, and Ben hugged her.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-of-feeling",
+        "feeling-change",
+        "courage"
+      ]
+    },
+    {
+      "id": "p2-i42",
+      "skill": "P2",
+      "passage": "p2-p17",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Why do you think Ana could not stop smiling? Build your answer.",
+      "frame": "Ana felt {0} because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "proud",
+            "happy",
+            "brave",
+            "excited"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "she scored the goal",
+            "she was brave when nobody else was",
+            "all her practice worked"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the story",
+          "options": [
+            "she raised her hand",
+            "the ball flew into the net",
+            "her teammates cheered"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I feel proud when I do something hard.",
+            "Practice helps me feel ready too.",
+            "I would feel nervous at first too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        10,
+        11,
+        12
+      ],
+      "hint": "Think about how Ana felt before the kick and after it. Then pick a clue that shows it.",
+      "explain": "One good answer is: Ana felt proud because she was brave when nobody else was. In the story, she raised her hand. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "courage",
+        "pride"
+      ]
+    },
+    {
+      "id": "p2-i43",
+      "skill": "P2",
+      "passage": "p2-p18",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Leo stopped laughing and stared. What changed his feeling?",
+      "options": [
+        "He saw blue light run along the edge of a wave.",
+        "Grandma Rose told him to be quiet.",
+        "A cold wave splashed over his shoes.",
+        "The moon came out from behind a cloud."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "Find where Leo stops laughing. Read the sentence just before it.",
+      "explain": "Leo saw a line of bright blue light run along the edge of a wave. This comes just before he stops laughing and stares.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "feeling-change",
+        "wonder"
+      ]
+    },
+    {
+      "id": "p2-i44",
+      "skill": "P2",
+      "passage": "p2-p18",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Leo whispered, \"It looks like a video game!\" Why do you think he whispered?",
+      "options": [
+        "He was amazed by the blue sparks.",
+        "He was too cold to talk loudly.",
+        "He wanted Grandma Rose to stop talking.",
+        "He was afraid of the dark water."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9,
+        10
+      ],
+      "hint": "Read what Leo was doing just before he whispered. Think about how people sound when they see something amazing.",
+      "explain": "Leo whispered because he was amazed. He was making long blue streaks in the water with his hand. He ran into the water, so he was not afraid of it.",
+      "inference": 2,
+      "tags": [
+        "cause-of-feeling",
+        "hidden-feeling",
+        "wonder"
+      ]
+    },
+    {
+      "id": "p2-i45",
+      "skill": "P2",
+      "passage": "p2-p18",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "On the walk home, Sam asked if the plankton would glow again. Why do you think he asked? Build your answer.",
+      "frame": "Sam felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "curious",
+            "excited",
+            "amazed",
+            "happy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "he wanted to see the blue sparks again",
+            "he wanted to learn more about plankton",
+            "the night was a lot of fun"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I would want to come back too.",
+            "I would want to read about plankton.",
+            "I like things that glow in the dark."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        8,
+        12
+      ],
+      "hint": "Read what Sam did in the water. Then read his question at the end.",
+      "explain": "One good answer is: Sam felt curious because he wanted to learn more about plankton. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "curiosity"
+      ]
+    },
+    {
+      "id": "p2-i46",
+      "skill": "P2",
+      "passage": "p2-p19",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Sam's face turned red, and he pushed the tray away. Why did he feel embarrassed?",
+      "options": [
+        "His rolls looked lumpy next to Grandma Rose's round ones.",
+        "He burned his hand on the tray.",
+        "Mrs. Lin laughed at his rolls.",
+        "He forgot to put in the yeast."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "hint": "Read the two sentences before Sam's face turns red. Compare his rolls with Grandma Rose's rolls.",
+      "explain": "Sam felt embarrassed because his rolls came out lumpy, and Grandma Rose's rolls were always perfectly round. Mrs. Lin did not laugh. She liked the rolls.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue",
+        "compare"
+      ]
+    },
+    {
+      "id": "p2-i47",
+      "skill": "P2",
+      "passage": "p2-p19",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Sam's feeling changed from embarrassed to proud. What changed it?",
+      "options": [
+        "Mrs. Lin tasted a roll and bought all twelve for her café.",
+        "Grandma Rose baked a new tray of round rolls for him.",
+        "Sam fixed the lumpy rolls before Mrs. Lin came in.",
+        "Mrs. Lin said the rolls looked perfectly round."
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10,
+        12
+      ],
+      "hint": "Read what Mrs. Lin does and says after she sees the tray.",
+      "explain": "Mrs. Lin tasted a roll, said it was soft and warm inside, and bought all twelve. Later, Sam saw his rolls in the café window. She talked about how the rolls tasted, not how they looked.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "feeling-change",
+        "pride"
+      ]
+    },
+    {
+      "id": "p2-i48",
+      "skill": "P2",
+      "passage": "p2-p19",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "How do you think Sam felt when he saw his rolls in the café window? Build your answer.",
+      "frame": "Sam felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "proud",
+            "surprised",
+            "happy",
+            "a little shy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "Mrs. Lin liked his rolls",
+            "his rolls tasted good even if they looked lumpy",
+            "people at the café would eat his bread"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "How food tastes matters more than how it looks.",
+            "I would feel proud too.",
+            "I would tell all my friends."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "hint": "Read the last four sentences. Think about what Sam said earlier: \"Nobody will want these.\"",
+      "explain": "One good answer is: Sam felt proud because his rolls tasted good even if they looked lumpy. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "pride"
+      ]
+    },
+    {
+      "id": "p2-i49",
+      "skill": "P2",
+      "passage": "p2-p20",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "After the first fall, the donkey felt pleased, but the merchant did not. Why was the merchant upset?",
+      "options": [
+        "He had lost half of the salt he planned to sell.",
+        "The donkey had hurt his leg on a smooth stone.",
+        "The load of salt had become too heavy to carry.",
+        "The donkey had walked too slowly to market."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        7
+      ],
+      "hint": "The donkey and the merchant felt differently about the same thing. Find the sentence that says how the merchant felt, and read the reason in it.",
+      "explain": "The merchant was upset because he had lost half of the salt he planned to sell. It is the first sentence of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i50",
+      "skill": "P2",
+      "passage": "p2-p20",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "The donkey and the merchant felt differently. Sort each card by who it belongs to.",
+      "bins": [
+        "The donkey 🫏",
+        "The merchant 🧺"
+      ],
+      "cards": [
+        {
+          "text": "Felt pleased because his load was lighter",
+          "bin": 0
+        },
+        {
+          "text": "Felt sure the trick would work with sponges",
+          "bin": 0
+        },
+        {
+          "text": "Felt upset because he had less salt to sell",
+          "bin": 1
+        },
+        {
+          "text": "Guessed that the second fall was not an accident",
+          "bin": 1
+        },
+        {
+          "text": "Trotted happily the rest of the way to market",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        13
+      ],
+      "hint": "Ask who would be glad to carry less, and who would lose money when the salt melted.",
+      "explain": "The donkey: he felt pleased and trotted on because his load was lighter, and he felt sure the trick would work again. The merchant: he was upset because he lost salt to sell, and he guessed that the second fall was on purpose.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i51",
+      "skill": "P2",
+      "passage": "p2-p20",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "At the ford on the third trip, why did the donkey feel sure his trick would work?",
+      "options": [
+        "Lying down in the river had made his load lighter two times before.",
+        "The merchant had told him that sponges melt in water.",
+        "The river was deeper than it had been on other days.",
+        "The sponges were already wet when they left home."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        9,
+        13
+      ],
+      "hint": "Look back at what happened at the ford on the first two trips.",
+      "explain": "The donkey felt sure because the trick had worked twice. On the first two trips, his load became light after he fell or lay down in the water.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "join-two-parts"
+      ]
+    },
+    {
+      "id": "p2-i52",
+      "skill": "P2",
+      "passage": "p2-p20",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "At the end, the donkey had to stagger home. How do you think he felt, and why? Build your answer.",
+      "frame": "At the end, the donkey felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "tired",
+            "foolish",
+            "surprised",
+            "sorry"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the sponges soaked up water",
+            "his trick did not work this time",
+            "the merchant had guessed his trick"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "A trick that works once may not work again.",
+            "I think the merchant was clever.",
+            "I would feel silly too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        12,
+        13,
+        15,
+        16,
+        17
+      ],
+      "hint": "Read the last paragraph. Compare what the donkey expected with what really happened.",
+      "explain": "One good answer is: At the end, the donkey felt foolish because his trick did not work this time. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "fable"
+      ]
+    },
+    {
+      "id": "p2-i53",
+      "skill": "P2",
+      "passage": "p2-p21",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "At the start of the story, why did the raven feel jealous?",
+      "options": [
+        "The swan's white feathers shone in the sun, and his were black.",
+        "The swan ate all the food in the fields.",
+        "The farmer chased him away from the pond.",
+        "The swan laughed at his black feathers."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "hint": "Read the first paragraph only. Compare the raven's feathers with the swan's.",
+      "explain": "The raven felt jealous because the swan's feathers were white and shining, and his were black. Nobody laughed at him, and he had plenty of food at the start.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "jealousy"
+      ]
+    },
+    {
+      "id": "p2-i54",
+      "skill": "P2",
+      "passage": "p2-p21",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "The raven washed his feathers again and again. What best explains why he grew frustrated?",
+      "options": [
+        "His feathers stayed black no matter how much he washed.",
+        "The water in the pond was too cold for him.",
+        "The swan told him to leave her pond.",
+        "He could not find the pond near the farmhouse."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Read the second paragraph. Find what he did every day, and then what happened to his feathers.",
+      "explain": "The raven grew frustrated because his feathers stayed exactly as black as before, even though he washed them three times a day.",
+      "inference": 2,
+      "tags": [
+        "cause-of-feeling",
+        "fable",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "p2-i55",
+      "skill": "P2",
+      "passage": "p2-p21",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "At the end, the raven flew back to the fields. How do you think he felt, and why? Build your answer.",
+      "frame": "The raven felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "relieved",
+            "glad",
+            "a little sad",
+            "calm"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "he could eat until he was full again",
+            "he stopped trying to be like the swan",
+            "he understood he could not change his color"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "Being yourself is easier than trying to be someone else.",
+            "The swan never asked him to change.",
+            "Everyone looks different, and that is fine."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        13,
+        14,
+        15
+      ],
+      "hint": "Read the last paragraph. Think about how hungry he was, and what he understood.",
+      "explain": "One good answer is: The raven felt relieved because he could eat until he was full again. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "fable",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p2-i56",
+      "skill": "P2",
+      "passage": "p2-p22",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Before Sam made the map, what made the new trail hard for Mr. Okafor?",
+      "options": [
+        "He explained the route again and again while broken bikes waited.",
+        "Riders kept getting lost and coming back angry.",
+        "Nobody came into his shop after the trail opened.",
+        "The trail had no bridge, so riders got wet."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Read the first paragraph. Look for what Mr. Okafor had to do every day, and what was waiting for him.",
+      "explain": "Mr. Okafor had to explain the route again and again, sometimes twenty times a day, while a row of broken bikes waited for repairs. It is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "key-detail"
+      ]
+    },
+    {
+      "id": "p2-i57",
+      "skill": "P2",
+      "passage": "p2-p22",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sam and Mr. Okafor were both happy, but for different reasons. Sort each reason.",
+      "bins": [
+        "Sam 🗺️",
+        "Mr. Okafor 🔧"
+      ],
+      "cards": [
+        {
+          "text": "A family found the campsite with his map.",
+          "bin": 0
+        },
+        {
+          "text": "Something he drew was really used by riders.",
+          "bin": 0
+        },
+        {
+          "text": "He fixed six bikes in one day instead of two.",
+          "bin": 1
+        },
+        {
+          "text": "He did not have to explain the route twenty times a day.",
+          "bin": 1
+        },
+        {
+          "text": "A stranger thanked him for his drawing.",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        3,
+        11,
+        12,
+        14
+      ],
+      "hint": "Sam made the map. Mr. Okafor fixes bikes. Ask which person each reason matters to.",
+      "explain": "Sam was happy because people used his map, and the family's father thanked him for it. Mr. Okafor was happy because the map saved him time, so he fixed six bikes instead of two.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-of-feeling",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i58",
+      "skill": "P2",
+      "passage": "p2-p22",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sam's ears turned pink, and he looked down at his shoes, but he was grinning. Why did he feel this way?",
+      "options": [
+        "A stranger thanked him because his map had really helped.",
+        "The family found a mistake on his map.",
+        "The family was upset about the muddy trail.",
+        "Mr. Okafor laughed at his drawing."
+      ],
+      "answer": 0,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Read the sentence just before Sam's ears turn pink. Who is talking, and what do they say about the map?",
+      "explain": "Sam felt proud and a little shy because the father said the map was the only reason they found the campsite. That comes just before Sam's ears turn pink.",
+      "inference": 2,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue",
+        "mixed-feelings"
+      ]
+    },
+    {
+      "id": "p2-i59",
+      "skill": "P2",
+      "passage": "p2-p22",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Why do you think Mr. Okafor asked Sam to draw a second map? Build your answer.",
+      "frame": "Mr. Okafor felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "thankful",
+            "pleased",
+            "relieved",
+            "proud of Sam"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the map saved him a lot of time",
+            "riders liked the map",
+            "he could fix more bikes"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "I like making things that help people.",
+            "I would want to draw the second map.",
+            "One good idea can help many people."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        13,
+        14,
+        15
+      ],
+      "hint": "Read the last paragraph. Think about how Mr. Okafor's days changed after the maps were in the box.",
+      "explain": "One good answer is: Mr. Okafor felt thankful because the map saved him a lot of time. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i60",
+      "skill": "P2",
+      "passage": "p2-p23",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sam's shoulders dropped, and he hardly spoke in the first tunnel. Why?",
+      "options": [
+        "The cart ride he had talked about all week was closed.",
+        "He did not like being inside a dark tunnel.",
+        "Maya found a mineral before he did.",
+        "Mr. Varga said that visitors could never touch the carts."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "hint": "Read the end of the first paragraph and the start of the second. What had Sam been waiting for, and what did the sign say?",
+      "explain": "Sam felt disappointed because he had talked about the cart ride all week, and the sign said CLOSED FOR REPAIRS. Maya found her mineral later, after the tunnel.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue",
+        "look-back"
+      ]
+    },
+    {
+      "id": "p2-i61",
+      "skill": "P2",
+      "passage": "p2-p23",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Maya and Sam were both happy on the bus home, for different reasons. Sort what made each one happy.",
+      "bins": [
+        "Maya 💎",
+        "Sam 🛤️"
+      ],
+      "cards": [
+        {
+          "text": "She found a rock streaked with green malachite.",
+          "bin": 0
+        },
+        {
+          "text": "Each club member could keep one piece of rock.",
+          "bin": 0
+        },
+        {
+          "text": "He saw the museum's oldest cart in the shed.",
+          "bin": 1
+        },
+        {
+          "text": "He pushed a real mine cart along the rails.",
+          "bin": 1
+        },
+        {
+          "text": "He learned how the cart's box tipped forward.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        10,
+        13,
+        14,
+        15
+      ],
+      "hint": "Maya joined the club for minerals. Sam came for the carts. Use that to sort the cards.",
+      "explain": "Maya was happy because she found malachite and could keep it. Sam was happy because Mr. Varga showed him the oldest cart, let him push it, and he learned how its box tipped.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "two-characters",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p2-i62",
+      "skill": "P2",
+      "passage": "p2-p23",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Sam felt one way at the start and another way at the end. What do you think changed his feeling? Build your answer.",
+      "frame": "At first, Sam felt {0} because {1}. At the end, he felt {2} because {3}.",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling at the start",
+          "options": [
+            "disappointed",
+            "sad",
+            "upset"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason at the start",
+          "options": [
+            "the cart track was closed",
+            "he had waited all week for the ride"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling at the end",
+          "options": [
+            "happy",
+            "excited",
+            "interested",
+            "thankful"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Reason at the end",
+          "options": [
+            "Mr. Varga noticed him standing alone",
+            "he pushed a real mine cart",
+            "he learned how the cart worked"
+          ],
+          "rubric": 3
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        11,
+        13,
+        14,
+        15
+      ],
+      "hint": "Compare the second paragraph with the third. Look for what Mr. Varga did.",
+      "explain": "One good answer is: At first, Sam felt disappointed because the cart track was closed. At the end, he felt excited because he pushed a real mine cart. Any honest answer is fine.",
+      "inference": 1,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p2-i63",
+      "skill": "P2",
+      "passage": "p2-p24",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Before the show, Sam's hands felt cold. What first made him feel this way?",
+      "options": [
+        "He had never performed alone in front of strangers.",
+        "One of his guitar strings had snapped.",
+        "The back room of the library was cold.",
+        "He had not practiced the song enough."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "The question says \"first\". Read the first paragraph, before Sam goes to the back room.",
+      "explain": "Sam's hands felt cold because he had never performed alone in front of strangers. This is in the first paragraph. The string snapped later.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue",
+        "two-causes"
+      ]
+    },
+    {
+      "id": "p2-i64",
+      "skill": "P2",
+      "passage": "p2-p24",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Sam's worry had more than one cause. In the second paragraph, tap a sentence that gave him a new reason to worry.",
+      "answer": [
+        5,
+        7,
+        10
+      ],
+      "evidence": [
+        5,
+        7,
+        10
+      ],
+      "hint": "Read the second paragraph. Look for things that could go wrong with the guitar.",
+      "explain": "A string snapped, he had no spare strings, and Ms. Gray warned that a new string can slip out of tune. Each one is a new reason to worry, in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "two-causes"
+      ]
+    },
+    {
+      "id": "p2-i65",
+      "skill": "P2",
+      "passage": "p2-p24",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "At the end, Sam's hands did not feel cold anymore. Why do you think he felt better? Build your answer.",
+      "frame": "Sam felt {0} because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "proud",
+            "relieved",
+            "happy",
+            "calm"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "he kept playing when the string sounded wrong",
+            "people liked his song",
+            "the hard part was over"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the story",
+          "options": [
+            "the audience applauded loudly",
+            "a girl asked him to play it again",
+            "he kept playing, as Ms. Gray advised"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I feel better after I finish something hard.",
+            "I would feel proud too.",
+            "Practice helps me when things go wrong."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        14,
+        15,
+        16
+      ],
+      "hint": "Read the last three sentences. Think about what went wrong and what Sam did anyway.",
+      "explain": "One good answer is: Sam felt proud because he kept playing when the string sounded wrong. In the story, the audience applauded loudly. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p2-i66",
+      "skill": "P2",
+      "passage": "p2-p25",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Leo reached the top in less than a minute, but he just shrugged. Why?",
+      "options": [
+        "The route was too easy for him, so it did not feel special.",
+        "He was tired from climbing so many times.",
+        "He wanted Maya to go first.",
+        "He had not reached the bell at the top."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Read what Leo says when he comes down. Then look back at how often he had climbed before.",
+      "explain": "Leo shrugged because the route was too easy for him. He had climbed many times, and he said, \"That was too easy.\"",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue"
+      ]
+    },
+    {
+      "id": "p2-i67",
+      "skill": "P2",
+      "passage": "p2-p25",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Maya rang the bell so hard that everyone looked up. Which reason best explains why she felt so proud?",
+      "options": [
+        "She reached the top on her third try, after stopping twice.",
+        "She climbed faster than Leo did.",
+        "She climbed the hardest route in the gym.",
+        "The worker said she was the best climber."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        9,
+        11,
+        12
+      ],
+      "hint": "Count Maya's tries. Then compare her climb with Leo's climb.",
+      "explain": "Maya felt proud because the climb was hard for her. She had never climbed before, she stopped on her first two tries, and she reached the top on her third try.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "two-characters",
+        "compare",
+        "pride"
+      ]
+    },
+    {
+      "id": "p2-i68",
+      "skill": "P2",
+      "passage": "p2-p25",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Why do you think Leo decided to try the hardest route? Build your answer.",
+      "frame": "Leo felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "inspired",
+            "curious",
+            "bored with easy routes",
+            "excited"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "he saw how proud Maya was after something hard",
+            "the easy route did not feel special",
+            "he wanted a real challenge"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "Hard things can make me prouder than easy things.",
+            "I like a real challenge too.",
+            "I would cheer for Maya."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        13,
+        14,
+        15
+      ],
+      "hint": "Leo looked at Maya before he walked to the hard route. Think about what he saw on her face.",
+      "explain": "One good answer is: Leo felt inspired because he saw how proud Maya was after something hard. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "two-characters",
+        "courage"
+      ]
+    },
+    {
+      "id": "p2-i69",
+      "skill": "P2",
+      "passage": "p2-p26",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "At the end of the second paragraph, the writer was about to leave for the gift shop. Why did the writer feel like leaving?",
+      "options": [
+        "The writer expected an exciting lab but saw nothing change for ten minutes.",
+        "The writer wanted to buy a plastic dinosaur like the others.",
+        "The buzzing tool was too loud to stand near.",
+        "The preparator had asked the visitors to move along."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4,
+        7,
+        8
+      ],
+      "hint": "Compare what the writer imagined before the trip with what the writer saw through the window.",
+      "explain": "The writer felt bored and disappointed. The writer had imagined an exciting room, but saw one person working slowly, and nothing changed for ten minutes.",
+      "inference": 2,
+      "tags": [
+        "cause-of-feeling",
+        "account",
+        "hidden-feeling",
+        "compare"
+      ]
+    },
+    {
+      "id": "p2-i70",
+      "skill": "P2",
+      "passage": "p2-p26",
+      "format": "highlight",
+      "level": 5,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap a sentence that changed the writer's feeling from bored to amazed.",
+      "answer": [
+        11,
+        12
+      ],
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Find where the writer presses both hands against the glass. Then look at the sentences just before it.",
+      "explain": "The writer saw a dark, curved shape in the rock, and the preparator said it was a claw that nobody had seen in about seventy-five million years. Right after this, the writer could not stop staring.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-of-feeling",
+        "account",
+        "feeling-change",
+        "wonder"
+      ]
+    },
+    {
+      "id": "p2-i71",
+      "skill": "P2",
+      "passage": "p2-p26",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "The writer found the slow work boring at first, but the preparator did not. Why could she stay patient?",
+      "options": [
+        "Each grain she removed brought her closer to something nobody had ever seen.",
+        "She had to finish the block of rock in three months.",
+        "She liked having visitors watch her through the glass.",
+        "The air scribe made the work fast and easy."
+      ],
+      "answer": 0,
+      "evidence": [
+        14,
+        15
+      ],
+      "hint": "Read the last paragraph. The writer asks the preparator this question, and she answers it.",
+      "explain": "She stayed patient because every grain she removed brought her a little closer to something nobody had ever seen. She says this in the last paragraph.",
+      "inference": 0,
+      "tags": [
+        "cause-of-feeling",
+        "account",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i72",
+      "skill": "P2",
+      "passage": "p2-p26",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "On the bus, the writer kept thinking about the claw, not the plastic dinosaurs. Why do you think that was? Build your answer.",
+      "frame": "The writer felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "amazed",
+            "full of wonder",
+            "curious",
+            "inspired"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "nobody had seen the claw in seventy-five million years",
+            "the claw was real, not a toy",
+            "the preparator shared her discovery"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "Real things can be more exciting than toys.",
+            "I would want to work in the lab too.",
+            "Slow work can lead to amazing things."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        12,
+        13,
+        16,
+        17
+      ],
+      "hint": "Read the third paragraph again. Think about what made the claw different from a toy in a gift shop.",
+      "explain": "One good answer is: The writer felt full of wonder because nobody had seen the claw in seventy-five million years. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "wonder"
+      ]
+    },
+    {
+      "id": "p2-i73",
+      "skill": "P2",
+      "passage": "p2-p27",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Halfway up, the writer gripped the edge of the seat with both hands. Which two details caused this feeling?",
+      "options": [
+        "The track tilted steeply, and the valley seemed to drop away below.",
+        "The summit air was so cold that they could see their breath.",
+        "The water bottle broke, and the floor became wet.",
+        "The clicking sound stopped, and the train slid back."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Read the start of the third paragraph. Look for what the writer felt and saw just before gripping the seat.",
+      "explain": "The writer felt nervous because the track tilted so steeply that a water bottle rolled away, and the valley seemed to drop away below. The cold air came later, at the summit.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "account",
+        "body-clue",
+        "two-causes"
+      ]
+    },
+    {
+      "id": "p2-i74",
+      "skill": "P2",
+      "passage": "p2-p27",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What helped the writer's hands relax?",
+      "options": [
+        "Learning that the clicking meant the gear was holding the train safely.",
+        "Reaching the summit and seeing the lakes below.",
+        "Holding the grandfather's old ticket from his first trip.",
+        "Moving to a seat away from the side window."
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "Find where the writer's hands relax. Read what the grandfather said just before.",
+      "explain": "The grandfather explained that the clicking was the gear catching each tooth, and it was holding them safely. The writer listened to the clicking, and the writer's hands relaxed.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "account",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p2-i75",
+      "skill": "P2",
+      "passage": "p2-p27",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "At the summit, the writer ran around, but the grandfather stood quietly. Why do you think they felt differently? Build your answer.",
+      "frame": "The writer felt {0} because {1}. The grandfather felt {2} because {3}.",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "The writer's feeling",
+          "options": [
+            "excited",
+            "amazed",
+            "happy"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "The writer's reason",
+          "options": [
+            "the writer could see places from the map",
+            "the steep part was over",
+            "everything at the top was new"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "feeling",
+          "label": "The grandfather's feeling",
+          "options": [
+            "happy",
+            "moved",
+            "peaceful",
+            "thoughtful"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "The grandfather's reason",
+          "options": [
+            "the view was the same as when he was nine",
+            "he remembered his first trip with his father",
+            "he was sharing the trip with his grandchild"
+          ],
+          "rubric": 3
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        13,
+        14,
+        15
+      ],
+      "hint": "Think about who had been here before and who had not. The second paragraph tells you about the grandfather's first trip.",
+      "explain": "One good answer is: The writer felt excited because the writer could see places from the map. The grandfather felt moved because the view was the same as when he was nine. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i76",
+      "skill": "P2",
+      "passage": "p2-p28",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Priya felt her face grow warm. Which two things together caused this feeling?",
+      "options": [
+        "The star came out crooked, and a crowd of parents was watching.",
+        "The rover's battery ran out, and the children laughed.",
+        "The marker ran out of ink, and Mrs. Hall frowned.",
+        "The boy typed the wrong shape, and the rover drew a flower."
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Read the sentence where Priya's face grows warm. Then read the two sentences just before it.",
+      "explain": "Priya felt embarrassed because the star came out short and crooked, and a crowd of parents was watching. The boy typed STAR, which was the right shape.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue",
+        "two-causes"
+      ]
+    },
+    {
+      "id": "p2-i77",
+      "skill": "P2",
+      "passage": "p2-p28",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Priya and the boy saw the same crooked star but felt differently. Sort each card by who it belongs to.",
+      "bins": [
+        "Priya 🤖",
+        "The boy 🌟"
+      ],
+      "cards": [
+        {
+          "text": "Felt embarrassed because parents were watching",
+          "bin": 0
+        },
+        {
+          "text": "Knew the star was not what the program should draw",
+          "bin": 0
+        },
+        {
+          "text": "Thought the robot had made a new kind of shape",
+          "bin": 1
+        },
+        {
+          "text": "Clapped and wanted to take the drawing home",
+          "bin": 1
+        },
+        {
+          "text": "Studied the wheels to find the problem",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        4,
+        9,
+        10,
+        11,
+        12
+      ],
+      "hint": "Priya built the robot and had tested it many times. The boy was seeing it for the first time. Use that to sort the cards.",
+      "explain": "Priya felt embarrassed because she knew the star was wrong and parents were watching, so she studied the wheels. The boy was delighted because he thought the robot had made a new shape, a star flower, so he clapped and wanted to keep it.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "cause-of-feeling",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i78",
+      "skill": "P2",
+      "passage": "p2-p28",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Priya's favorite moment of the day began with a mistake. Why do you think that was her favorite? Build your answer.",
+      "frame": "Priya felt {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "happy",
+            "proud",
+            "surprised",
+            "amused"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the children loved the star flowers",
+            "she found out why the wheels slipped",
+            "she turned a mistake into a new button"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "Mistakes can turn into good ideas.",
+            "I would feel embarrassed at first too.",
+            "I would like to see a star flower."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        10,
+        11,
+        14,
+        15,
+        17,
+        18
+      ],
+      "hint": "Read the last paragraph. Then look back at what the children did after the first star.",
+      "explain": "One good answer is: Priya felt happy because the children loved the star flowers. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "feeling-change",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "p2-i79",
+      "skill": "P2",
+      "passage": "p2-p28",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "How do you think the boy felt when he took his drawing home? Build your answer.",
+      "frame": "The boy felt {0} because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "proud",
+            "happy",
+            "excited",
+            "lucky"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "he made the very first star flower",
+            "the robot drew a shape just for him",
+            "he got to keep the drawing"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the story",
+          "options": [
+            "he clapped and shouted",
+            "he asked to take the drawing home",
+            "other children lined up to make star flowers"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I would want to keep it too.",
+            "I like it when something surprising happens.",
+            "I would want to program a robot."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        10,
+        11
+      ],
+      "hint": "Read what the boy said and did after the star was drawn.",
+      "explain": "One good answer is: The boy felt proud because he made the very first star flower. In the story, other children lined up to make star flowers. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i80",
+      "skill": "P2",
+      "passage": "p2-p29",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "During the first hour, Leo and Ana felt very differently. Why was Leo so happy?",
+      "options": [
+        "Players laughed out loud at the jokes he wrote.",
+        "Players finished the maze very quickly.",
+        "Their game won first prize at the showcase.",
+        "A tall boy told him his jokes were the best part."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        5,
+        6
+      ],
+      "hint": "Remember which part of the game Leo made. Then read what the players did in the second paragraph.",
+      "explain": "Leo was happy because players laughed out loud at the grumpy mailbox, and Leo wrote the jokes. The tall boy praised the maze, not the jokes.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "two-characters",
+        "join-two-parts"
+      ]
+    },
+    {
+      "id": "p2-i81",
+      "skill": "P2",
+      "passage": "p2-p29",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Ana crossed her arms and stopped talking. What made her feel this way?",
+      "options": [
+        "Player after player gave up on the maze she had worked hardest on.",
+        "Nobody laughed at the jokes in the game.",
+        "Leo was getting all the attention from the players.",
+        "The moving platforms in her maze were broken."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        8,
+        9,
+        10
+      ],
+      "hint": "Read what Ana was watching, and what she wondered after the fifth player walked away.",
+      "explain": "Ana felt frustrated and disappointed because players kept falling off her maze and giving up. She had rebuilt it seven times, and she wondered whether her hard work had been a mistake.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue",
+        "look-back"
+      ]
+    },
+    {
+      "id": "p2-i82",
+      "skill": "P2",
+      "passage": "p2-p29",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Ana uncrossed her arms and started helping other players. What do you think changed her feeling? Build your answer.",
+      "frame": "At first, Ana felt {0} because {1}. Later, she felt {2} because {3}.",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling at first",
+          "options": [
+            "frustrated",
+            "disappointed",
+            "worried"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason at first",
+          "options": [
+            "players kept giving up on her maze",
+            "she thought her hard work was a mistake"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "feeling",
+          "label": "Feeling later",
+          "options": [
+            "proud",
+            "relieved",
+            "happy",
+            "hopeful"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "evidence",
+          "label": "Reason later",
+          "options": [
+            "a player finally beat her maze",
+            "the boy said it was the best level",
+            "she saw that her maze made people think"
+          ],
+          "rubric": 3
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        10,
+        13,
+        14,
+        16,
+        17
+      ],
+      "hint": "Compare the second paragraph with the last two. Look at what the tall boy did and said.",
+      "explain": "One good answer is: At first, Ana felt disappointed because players kept giving up on her maze. Later, she felt proud because the boy said it was the best level. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "p2-i83",
+      "skill": "P2",
+      "passage": "p2-p29",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "On the way out, Leo said people would remember Ana's level. Why do you think he said that? Build your answer.",
+      "frame": "Leo felt {0} for Ana because {1}. {2}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "happy",
+            "proud",
+            "glad"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "he saw how upset she had been",
+            "he saw the tall boy cheer",
+            "he knew she rebuilt the maze seven times"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "What I think (you can skip this)",
+          "options": [
+            "I think Leo was being a good friend.",
+            "Jokes and hard puzzles both make a game good.",
+            "I would say something kind too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        2,
+        9,
+        14,
+        18
+      ],
+      "hint": "Think about what Leo saw Ana go through during the showcase.",
+      "explain": "One good answer is: Leo felt glad for Ana because he saw how upset she had been. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "p2-i84",
+      "skill": "P2",
+      "passage": "p2-p30",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "While the balloon flew, Priya stood with her arms folded tightly. What was she worried about?",
+      "options": [
+        "The wind might carry her box into the sea, and its measurements would be lost.",
+        "The balloon might burst before it went very high.",
+        "Sam might lose the balloon's path on the map.",
+        "The farmer on Gull Island might keep her box."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        10,
+        11
+      ],
+      "hint": "Read the sentence right after Priya folds her arms. What did the map show?",
+      "explain": "Priya was worried because the wind was pushing the balloon toward the open sea. If her box landed in the water, it would be lost with all its measurements. The balloon was supposed to burst.",
+      "inference": 1,
+      "tags": [
+        "cause-of-feeling",
+        "body-clue",
+        "look-back"
+      ]
+    },
+    {
+      "id": "p2-i85",
+      "skill": "P2",
+      "passage": "p2-p30",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sam and Priya watched the same screen but felt differently. Which reason best explains why Sam was excited instead of worried?",
+      "options": [
+        "He was following the path on a map, and he had not spent three weeks building the box.",
+        "He already knew the box would land on Gull Island.",
+        "Ms. Ortiz had told him the box could float.",
+        "He was hoping to ride the ferry that afternoon."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        9
+      ],
+      "hint": "Compare each person's job in the second paragraph. Whose work could be lost in the sea?",
+      "explain": "Sam's job was to follow the tracker on the map, and he enjoyed tracing the path. Priya had built the box over three weeks, so she had more to lose. Nobody knew where the box would land until 11:58.",
+      "inference": 2,
+      "tags": [
+        "cause-of-feeling",
+        "two-characters",
+        "compare"
+      ]
+    },
+    {
+      "id": "p2-i86",
+      "skill": "P2",
+      "passage": "p2-p30",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "At the end, Priya stood in front of the map for a long time. Why do you think she did that? Build your answer.",
+      "frame": "Priya felt {0} because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "Feeling",
+          "options": [
+            "proud",
+            "relieved",
+            "amazed",
+            "thankful"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "her box came back safely",
+            "her box measured the air high above Earth",
+            "her three weeks of work were not lost"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "Clue from the story",
+          "options": [
+            "the temperature high above had dropped to fifty-five degrees Celsius below zero",
+            "the box landed only two hundred meters from the shore",
+            "the farmer met them with the box"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "me",
+          "label": "About me (you can skip this)",
+          "options": [
+            "I would want to launch another balloon.",
+            "I would feel proud of the box too.",
+            "I would want to look at that map too."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "hint": "Read the last paragraph. Think about how Priya felt during the flight, and what happened to her box after it landed.",
+      "explain": "One good answer is: Priya felt proud because her box measured the air high above Earth. In the story, the temperature high above had dropped to fifty-five degrees Celsius below zero. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "cause-of-feeling",
+        "feeling-change"
       ]
     }
   ],

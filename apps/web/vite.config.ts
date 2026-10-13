@@ -26,13 +26,14 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
-        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+        // The whole content bank is in the main script so it works offline; it must stay under this or it is not cached.
+        maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
         // Sign-in pages always go to the server, never the offline copy.
         navigateFallbackDenylist: [/^\/\.auth\//, /^\/not-invited\.html/],
       },
     }),
   ],
   // The whole content bank is bundled on purpose (offline, no fetches), so the main chunk is large.
-  build: { chunkSizeWarningLimit: 1500 },
+  build: { chunkSizeWarningLimit: 6000 },
   server: { port: 5173 },
 });

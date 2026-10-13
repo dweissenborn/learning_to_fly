@@ -46,7 +46,7 @@
       "kind": "story",
       "picture": "🌧️⚽",
       "sentences": [
-        "Ana and Ben had a big soccer match on Saturday.",
+        "Ana and Ben had a big soccer match on a Saturday in October.",
         "Ben wanted to score a goal for the first time.",
         "He practiced kicks every day after school.",
         "On Saturday morning, he looked out the window.",
@@ -371,7 +371,7 @@
     },
     {
       "id": "n5-p16",
-      "title": "The Dinosaur Hall",
+      "title": "Closed for Cleaning",
       "kind": "story",
       "picture": "🦕🦴",
       "sentences": [
@@ -393,7 +393,7 @@
       "level": 3,
       "socialLoad": 1,
       "credit": {
-        "title": "The Dinosaur Hall",
+        "title": "Closed for Cleaning",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -487,22 +487,22 @@
       "kind": "story",
       "picture": "🥁🛹",
       "sentences": [
-        "Every Thursday afternoon, the Harbor Middle School band rehearsed in the music room at the end of the east hallway.",
+        "Every Thursday at 4:45 PM, the Harbor Middle School jazz band, which has players from every grade, rehearsed in the music room at the end of the east hallway.",
         "Leo's usual route to the skate park passed directly by its open door.",
-        "Each week, he slowed down when he heard the drummer practicing a complicated rhythm.",
+        "Each week, he slowed down when he heard the jazz drummer practicing a complicated swing rhythm.",
         "Sometimes he paused at the water fountain and quietly tapped the beat on his skateboard with two fingers.",
         "One Thursday, Ms. Gray, the music teacher, noticed him and stepped into the hallway.",
-        "\"Your rhythm is very steady,\" she said. \"Do you play the drums?\"",
-        "Leo shrugged and answered, \"Not really. Drums are kind of loud anyway.\"",
+        "\"Your swing rhythm is very steady,\" she said. \"Have you ever played jazz?\"",
+        "Leo shrugged and answered, \"Not really. Jazz is kind of complicated anyway.\"",
         "Then he glanced past Ms. Gray at the shiny drum set for a long moment before he continued down the hallway.",
-        "That evening, Leo watched video lessons about drumming until his mother reminded him to turn off the light.",
-        "The following Thursday, Ms. Gray was waiting by the door with a pair of wooden drumsticks.",
-        "\"The band needs a second drummer for the spring concert,\" she explained. \"Would you like to try a simple beat?\"",
-        "Leo held the sticks and stared at the floor for a second.",
+        "That evening, Leo watched video lessons about jazz drumming until his mother reminded him to turn off the light.",
+        "The following Thursday, Ms. Gray was waiting by the door with a pair of wire brushes, which jazz drummers use for a soft sound.",
+        "\"The jazz band needs a second drummer,\" she explained. \"Would you like to try a simple swing beat?\"",
+        "Leo held the brushes and stared at the floor for a second.",
         "His cheeks felt warm, but he could not stop grinning.",
-        "He sat down behind the drum set and played a steady beat, and his hands trembled only a little.",
-        "When he finished, two band members applauded.",
-        "Leo laughed and said, \"That was louder than I expected.\"",
+        "He sat down behind the drum set and played a steady swing beat, and his hands trembled only a little.",
+        "When he finished, two members of the jazz band applauded.",
+        "Leo laughed and said, \"That was more fun than I expected.\"",
         "Then he asked Ms. Gray what time rehearsal started the following week."
       ],
       "breaks": [
@@ -604,6 +604,1325 @@
       "socialLoad": 2,
       "credit": {
         "title": "Clouds over the Dome",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p22",
+      "title": "After the Rain",
+      "kind": "story",
+      "picture": "🌈🌧️",
+      "sentences": [
+        "Rain fell on Harbor Town all morning.",
+        "Then the sun came out.",
+        "Ana looked out the kitchen window.",
+        "A big rainbow was over the harbor!",
+        "Ana gasped and put her hands on her cheeks.",
+        "She ran to get her brother Ben.",
+        "\"Come and see!\" she shouted.",
+        "Ben ran to the window and grinned."
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 1,
+      "socialLoad": 1,
+      "credit": {
+        "title": "After the Rain",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p23",
+      "title": "The Giant Footprint",
+      "kind": "story",
+      "picture": "🦖👟",
+      "sentences": [
+        "Ben went to the museum with his class.",
+        "He saw a dinosaur footprint in a big rock.",
+        "Ben put his shoe next to the footprint.",
+        "The footprint was three times as long as his shoe!",
+        "Ben's eyes got big.",
+        "\"Wow!\" he said.",
+        "Then he took a photo of his shoe and the footprint.",
+        "He showed the photo to every kid on the bus home."
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 1,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Giant Footprint",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p24",
+      "title": "A Bark at the Dock",
+      "kind": "story",
+      "picture": "🦭⚓",
+      "sentences": [
+        "Priya walked on the dock by the harbor.",
+        "She heard a loud bark.",
+        "She looked for a dog, but there was no dog.",
+        "Then she saw a brown sea lion on a rock!",
+        "Priya gasped and pointed at it.",
+        "The sea lion looked at her.",
+        "Then it slid into the water with a big splash.",
+        "Priya laughed and waved goodbye."
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 1,
+      "socialLoad": 1,
+      "credit": {
+        "title": "A Bark at the Dock",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p25",
+      "title": "The Late Train",
+      "kind": "story",
+      "picture": "🚆🕓📓",
+      "sentences": [
+        "Sam went to the station to see the new blue express train.",
+        "It was supposed to arrive at 4:00 PM.",
+        "He waited beside the departure board with his notebook.",
+        "At 4:00 PM, the board changed.",
+        "It said, \"Blue express: 30 minutes late.\"",
+        "Sam stamped his foot.",
+        "\"That was not the plan!\" he said in a loud voice.",
+        "He sat on a bench and frowned at the board.",
+        "After a minute, he opened his notebook.",
+        "He wrote down every train that went by while he waited.",
+        "He counted two long freight trains and one fast passenger train.",
+        "At 4:30 PM, the blue express finally rolled in.",
+        "Sam smiled and carefully drew it at the top of a new page."
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Late Train",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p26",
+      "title": "The Pancake Flip",
+      "kind": "story",
+      "picture": "🥞🍳",
+      "sentences": [
+        "On Sunday morning, Ben made pancakes for the whole family.",
+        "He wanted to flip one high in the air, like a chef on television.",
+        "He gave the pan a big push.",
+        "The pancake flew up and landed on the kitchen floor.",
+        "Ben's face turned red, and he looked down at his shoes.",
+        "Ana laughed loudly at first.",
+        "Then she noticed Ben's face, and she stopped laughing.",
+        "\"My first flip landed on the floor too,\" she said.",
+        "Ben looked up and grinned.",
+        "His next pancake landed perfectly back in the pan."
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 2,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Pancake Flip",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p27",
+      "title": "The Waving Robot",
+      "kind": "story",
+      "picture": "🦾👋",
+      "sentences": [
+        "Priya built a robot arm at robotics club.",
+        "On Friday, she was going to show it to her class.",
+        "That morning, she checked the batteries three times.",
+        "Her hands felt cold as she set the arm on the table.",
+        "She pressed the button.",
+        "The arm lifted up and waved at Ms. Ortiz.",
+        "Ms. Ortiz waved back, and the whole class laughed and clapped.",
+        "Priya stood up tall and smiled a wide smile.",
+        "\"Next, I will teach it to shake hands,\" she said."
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Waving Robot",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p28",
+      "title": "Priya's Cello Chat",
+      "kind": "message",
+      "picture": "🎻💬",
+      "sentences": [
+        "Priya and Maya sent these messages on Tuesday night."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "Priya and Maya",
+        "time": "7:10 PM",
+        "rows": [
+          "Priya: I practiced my new cello piece for an hour.",
+          "Priya: I still miss the same three notes in the fast part. I want to put my cello away and never play that part again.",
+          "Maya: Try that part very slowly first. It helps me on my flute.",
+          "Priya: OK. I will try it at half speed.",
+          "Priya: It is 8:00 now. I played the fast part slowly five times with no mistakes!",
+          "Priya: Then I played it fast. No mistakes again!",
+          "Maya: You did it! Will you play it for me at lunch tomorrow?",
+          "Priya: Yes! I can't wait."
+        ]
+      },
+      "topics": [
+        "music"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Priya's Cello Chat",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p29",
+      "title": "Hail at the Bus Stop",
+      "kind": "story",
+      "picture": "🧊🚏📓",
+      "sentences": [
+        "Ben and Maya waited at the bus stop after school.",
+        "All at once, small balls of ice began to fall from the sky.",
+        "It was hail!",
+        "The hailstones were as small as peas, and they bounced on the road.",
+        "Ben and Maya hurried under the bus shelter.",
+        "Ben held out his hand and caught three hailstones.",
+        "\"Look how perfectly round they are!\" he said with a big grin.",
+        "Maya did not look.",
+        "She held her sketchbook tightly against her chest and frowned at its wet cover.",
+        "Ben noticed her face.",
+        "He took off his baseball cap and placed it over the sketchbook.",
+        "Maya smiled at him, and then she looked at the hailstones too."
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 2,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Hail at the Bus Stop",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p30",
+      "title": "Stars on the Ceiling",
+      "kind": "story",
+      "picture": "⭐🛏️",
+      "sentences": [
+        "Sam bought a pack of glow-in-the-dark stars for his bedroom ceiling.",
+        "He wanted to make the Big Dipper, a group of seven bright stars in the night sky.",
+        "Four stars make the bowl of the Big Dipper, and the rest make its long handle.",
+        "Sam looked at his star chart and stuck each star up with care.",
+        "That evening, Leo came over to play video games.",
+        "Sam turned off the light and pointed at the ceiling.",
+        "\"The handle of the Big Dipper has three stars, not four,\" Leo said.",
+        "Sam's smile disappeared.",
+        "\"No, it has four,\" he said, and he crossed his arms.",
+        "Then he turned on the light and opened his star chart.",
+        "He counted the handle stars with his finger: one, two, three.",
+        "Sam's cheeks turned pink, and he laughed a little.",
+        "\"You're right,\" he said.",
+        "Leo held the chair while Sam took down the extra star.",
+        "Now there were exactly seven stars, and Sam turned off the light again with a grin."
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Stars on the Ceiling",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p31",
+      "title": "Paper or Phone",
+      "kind": "story",
+      "picture": "🗺️📱🌲",
+      "sentences": [
+        "On Saturday, Ben and Maya hiked to the waterfall in Story Woods.",
+        "Ben used the map on his phone, and Maya carried a paper trail map in her pocket.",
+        "Ben liked how a blue dot on his phone showed exactly where they were.",
+        "At a fork in the trail, Ben looked down at his phone, and the screen went black.",
+        "The battery was empty.",
+        "Ben stopped walking and looked left, and then right.",
+        "\"Which way do we go?\" he asked in a quiet voice.",
+        "Maya unfolded her paper map on a tree stump.",
+        "She found the fork and traced the left trail to the waterfall with her finger.",
+        "\"Left,\" she said calmly.",
+        "Twenty minutes later, they heard the loud rush of the waterfall.",
+        "Ben let out a long breath and smiled.",
+        "On the way home, he asked Maya to show him how to read the paper map."
+      ],
+      "topics": [
+        "maps"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Paper or Phone",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p32",
+      "title": "Just Gray and Brown",
+      "kind": "story",
+      "picture": "🪨💡",
+      "sentences": [
+        "Maya invited Ana to the rock club at the mine museum on a Saturday in March.",
+        "Ana went, but she did not expect to have much fun.",
+        "\"Rocks are just gray and brown,\" she told Ben before she left.",
+        "At the museum, Mr. Varga led the club into a small room with no windows.",
+        "Rows of plain, dull rocks sat on the shelves.",
+        "Ana yawned and leaned against the wall.",
+        "Then Mr. Varga switched off the lights and turned on a special lamp.",
+        "He explained that some minerals glow in bright colors under this kind of lamp.",
+        "All at once, the dull rocks glowed bright green, red and blue.",
+        "Ana stood up straight, and her mouth opened wide.",
+        "She walked along every shelf and asked Mr. Varga the name of each glowing mineral.",
+        "On the way home, she asked Maya when the next club meeting was."
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Just Gray and Brown",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p33",
+      "title": "The Puzzle Door",
+      "kind": "story",
+      "picture": "🎮🚪💡",
+      "sentences": [
+        "Ana and Leo played a puzzle game at Ana's house.",
+        "To open the last door, a player had to light four lamps in the right order.",
+        "Ana tried again and again, but the door stayed shut.",
+        "She pressed the controller buttons hard and groaned.",
+        "Leo had already finished this level at home, so he knew the right order.",
+        "He opened his mouth, and then he closed it again.",
+        "He sat on his hands and watched.",
+        "\"Look at the colors on the wall,\" he said quietly.",
+        "Ana looked at the wall and saw four colored stripes.",
+        "She lit the lamps in the same order as the stripes, and the door slid open.",
+        "Ana jumped up and cheered.",
+        "Leo grinned and gave her a high five."
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Puzzle Door",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p34",
+      "title": "Goalie for a Day",
+      "kind": "story",
+      "picture": "🧤⚽🥅",
+      "sentences": [
+        "Ben always played forward, because he loved chasing the ball and shooting at the goal.",
+        "Before Saturday's game, Coach Novak called him over.",
+        "\"Our goalie is visiting her grandparents this weekend,\" the coach said. \"Can you play in goal today?\"",
+        "Ben looked at the ground and did not answer for a long moment.",
+        "Then he nodded once, without a smile.",
+        "He pulled on the big goalie gloves very slowly.",
+        "For most of the first half, he stood in front of the net with his arms crossed.",
+        "Then a player from the other team kicked a hard, low shot.",
+        "Ben dove to his left and stopped the ball with both hands.",
+        "His teammates ran over and cheered.",
+        "After that, Ben clapped his gloves together before every kick.",
+        "After the game, he asked Coach Novak if he could practice in goal again next week."
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Goalie for a Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p35",
+      "title": "The Bean Seeds",
+      "kind": "story",
+      "picture": "🌱🫘",
+      "sentences": [
+        "Priya planted six bean seeds in the school garden on Monday.",
+        "The packet said the first sprouts would come up in one to two weeks.",
+        "Priya checked the soil every morning before class.",
+        "After eight days, the soil was still flat and brown.",
+        "Priya frowned and poked the dirt with one finger.",
+        "\"I think my seeds are bad,\" she told Ms. Ortiz.",
+        "Ms. Ortiz explained that cold nights can make seeds grow more slowly.",
+        "She told Priya to wait a few more days.",
+        "On the eleventh day, Priya saw a tiny green loop pushing up through the soil.",
+        "She knelt down so fast that her backpack slid off her shoulder.",
+        "By the end of the week, all six seeds had sprouted, and Priya started a chart to measure them every day."
+      ],
+      "topics": [
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Bean Seeds",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p36",
+      "title": "Keeping Time",
+      "kind": "story",
+      "picture": "🎹🥁",
+      "sentences": [
+        "Ben wanted to play a song on his keyboard with a drummer, just like a real band.",
+        "Leo, the drummer in the Grade 7 band, came over after school with his practice pad and sticks.",
+        "They started the song together.",
+        "By the end of the first page, Ben was playing faster and faster.",
+        "Leo stopped drumming and said, \"You sped up.\"",
+        "Ben pushed back his chair and let out a loud sigh.",
+        "\"I always do that,\" he said, staring at the keys.",
+        "Leo tapped his sticks together four times and counted out loud, \"One, two, three, four.\"",
+        "\"Listen to my sticks, not your fingers,\" he said.",
+        "They started again, and this time Ben kept his eyes on Leo's sticks.",
+        "They reached the last note at exactly the same moment.",
+        "Ben spun around on his chair and laughed.",
+        "\"Can we record that one?\" he asked."
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Keeping Time",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p37",
+      "title": "Pixel Meets the Rover",
+      "kind": "story",
+      "picture": "🐶🤖",
+      "sentences": [
+        "Priya brought her rover to Sam's house to test it on his long hallway floor.",
+        "She set it down and pressed the start button.",
+        "The rover rolled forward with a soft whirring sound.",
+        "Pixel had been asleep on his mat, but now he lifted his head.",
+        "When the rover rolled toward him, Pixel jumped up and backed away.",
+        "His ears went flat, and he gave a short, low bark.",
+        "Priya stopped the rover right away.",
+        "\"He has never seen a robot before,\" Sam said, and he knelt next to Pixel.",
+        "Priya left the rover sitting still on the floor.",
+        "After a minute, Pixel crept closer and sniffed its wheels.",
+        "Then he sniffed the blinking light on top.",
+        "His tail began to wag, slowly at first and then faster.",
+        "\"I think he likes it now,\" Priya said with a laugh."
+      ],
+      "topics": [
+        "robots",
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Pixel Meets the Rover",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p38",
+      "title": "The Red Pie",
+      "kind": "story",
+      "picture": "🥧🍓",
+      "sentences": [
+        "When Sam came into Rose's Bakery after school, a pie was cooling on the back counter.",
+        "Red juice bubbled up through the holes in its top crust.",
+        "Sam's favorite pie in the whole world was cherry.",
+        "He dropped his backpack and hurried over to the counter.",
+        "\"Is that a cherry pie?\" he asked, but Grandma Rose was busy with a customer and only waved.",
+        "Sam grinned and took two plates from the shelf.",
+        "Then Grandma Rose cut the pie, and Sam saw pink and green pieces inside.",
+        "It was strawberry and rhubarb, not cherry.",
+        "Sam's grin faded a little.",
+        "\"Rhubarb is a sour stalk, but the strawberries make it sweet,\" Grandma Rose said.",
+        "Sam took a small bite and chewed slowly.",
+        "Then he took a much bigger bite.",
+        "\"Can I have a second piece?\" he asked."
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Red Pie",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p39",
+      "title": "Second Prize",
+      "kind": "story",
+      "picture": "🚂✉️",
+      "sentences": [
+        "Every year, the Harbor Town railway holds an essay contest for students who love trains.",
+        "The first prize is a ride in the driver's cab of the morning express, right beside the driver.",
+        "Sam spent three weekends on his essay about how the express climbs the steep hill into Lantern Peaks.",
+        "He read it aloud to Pixel so many times that he could recite the first paragraph from memory.",
+        "On Friday, an envelope arrived from the railway.",
+        "Sam opened it in the hallway and read the first line: \"Congratulations! You have won second prize.\"",
+        "Second prize was a guided tour of the train yard and the repair shop.",
+        "Sam read the letter again, slowly, and his shoulders sank a little.",
+        "\"Second prize is really good,\" his dad said with a smile. \"Are you happy?\"",
+        "\"Yes,\" Sam said quietly, and he folded the letter into a small, tight square.",
+        "That night, he looked at a photo of the express on his wall for a long time before he turned off the light.",
+        "On the morning of the tour, a guide led Sam through the enormous repair shop.",
+        "Mechanics were replacing a wheel on a locomotive, and Sam asked so many questions that the guide laughed.",
+        "Near the end of the tour, the guide noticed Sam staring at a parked locomotive.",
+        "She opened the cab door and let him sit in the driver's seat for five minutes, with the engine switched off.",
+        "Sam rested his hands on the controls without moving them, and he grinned the whole time.",
+        "On the walk home, he told his dad that he had already chosen the topic for next year's essay."
+      ],
+      "breaks": [
+        4,
+        11
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Second Prize",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p40",
+      "title": "Cards Face Up",
+      "kind": "story",
+      "picture": "🃏🐟⛵",
+      "sentences": [
+        "On Friday evening, Maya went to Ana and Ben's house for game night.",
+        "The twins had a new card game in which players race to fill their boats with fish cards before anyone else.",
+        "Ana and Ben had played it twenty times, but Maya had never seen the rules.",
+        "Ben explained them very quickly, and Maya nodded as if she understood.",
+        "Maya lost the first round, and then the second round, by a lot.",
+        "Each time Ana won, she cheered and slapped the table.",
+        "Maya laughed along, but her laugh was short, and then she stopped talking.",
+        "She held her cards close to her face and kept pressing their edges with her thumbs.",
+        "When Ana asked if she wanted to play again, Maya said, \"Sure, it's fine,\" without looking up.",
+        "Ben watched Maya for a moment.",
+        "\"Let's play the next round with our cards face up,\" he suggested. \"That's how Ana and I learned, and we can show each other our best moves.\"",
+        "Maya's shoulders relaxed, and she laid her cards on the table.",
+        "With the cards face up, she soon noticed that the twins saved their biggest fish cards for the end.",
+        "In the fourth round, with the cards hidden again, Maya filled her boat first.",
+        "She threw both hands in the air, and this time her laugh was long and loud."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Cards Face Up",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p41",
+      "title": "The Question in the Sketchbook",
+      "kind": "story",
+      "picture": "📓💚⛏️",
+      "sentences": [
+        "On Saturday morning, Mr. Varga guided the rock club through the Ridgeway Mine Museum in Lantern Peaks.",
+        "He showed them a narrow tunnel where miners once dug for copper, a row of heavy iron carts and a wall of glittering mineral samples.",
+        "Maya stayed near the back of the group with her sketchbook open, drawing everything.",
+        "At the end of each room, Mr. Varga asked, \"Any questions?\"",
+        "In the mineral room, Maya noticed a bright green stone covered in curving light and dark stripes.",
+        "She took a step toward Mr. Varga, then stopped and looked at the floor.",
+        "When he asked for questions, two other kids spoke first, and Maya's hand rose halfway before it dropped back to her side.",
+        "Then her pencil moved quickly across a fresh page of her sketchbook.",
+        "Sam was standing beside her, and he saw what she had written: \"What is the green striped stone, and why does it have stripes?\"",
+        "\"You could show him the page,\" Sam whispered.",
+        "Maya held her sketchbook against her chest for a second.",
+        "Then she walked up and turned the page toward Mr. Varga without a word.",
+        "He read it, and his eyebrows went up.",
+        "\"Excellent question,\" he said. \"That stone is malachite. It forms inside copper mines one thin layer at a time, and each layer makes a stripe.\"",
+        "Maya wrote down every word, and she smiled at Sam all the way to the bus."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Question in the Sketchbook",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p42",
+      "title": "Five Strings",
+      "kind": "story",
+      "picture": "🎸☕",
+      "sentences": [
+        "On the first Friday of every month, the Lighthouse Café holds a music night, and anyone can sign up to play one song.",
+        "Sam had practiced his guitar song every evening for three weeks, and he was fourth on Mrs. Lin's list.",
+        "Grandma Rose and his dad sat at a table near the front, and Leo waited outside the window with Pixel.",
+        "While the third player was singing, Sam tuned his guitar one last time.",
+        "As he tightened the thinnest string, it snapped with a sharp twang.",
+        "Sam stared at the loose string curling in the air.",
+        "His face went hot, and he gripped the neck of the guitar so hard that his knuckles turned white.",
+        "\"Now I can't play it,\" he whispered. \"I practiced it with six strings.\"",
+        "He thought about walking straight out the door.",
+        "Mrs. Lin knelt beside him and quietly asked if he wanted to wait until the end of the night.",
+        "Sam took three slow breaths and thought carefully about his song.",
+        "Most of his chords used the thicker strings, and he could hum the high notes instead of playing them.",
+        "He told Mrs. Lin that he would try it with five strings, as long as he could go last.",
+        "When his turn came, his first chord sounded a little thin, but the second one sounded steady.",
+        "He hummed the high part, and a few people at the back hummed along.",
+        "When he finished, everyone clapped, and Grandma Rose stood up from her chair.",
+        "Sam bowed, and then he laughed and held up the broken string for everyone to see."
+      ],
+      "breaks": [
+        3,
+        9
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Five Strings",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p43",
+      "title": "The Dropped Baton",
+      "kind": "story",
+      "picture": "🏃‍♀️🏃🥇",
+      "sentences": [
+        "On Field Day, the four fastest runners from each class competed in the relay race, passing a short metal baton from one runner to the next.",
+        "Ana ran third for her class, and Priya ran last.",
+        "They had practiced the handoff every lunch period for a week: Ana would shout \"Now!\" and Priya would reach back without turning around.",
+        "When the starting whistle blew, Ana's class quickly moved into second place.",
+        "Ana sprinted down the track and shouted, \"Now!\"",
+        "Priya reached back, but the baton hit her fingers and bounced onto the grass.",
+        "Ana grabbed it and pushed it into Priya's hand, and Priya raced away, but two runners had already passed her.",
+        "Their class finished fourth out of five.",
+        "Ana walked off the track with her eyes fixed on her shoes.",
+        "Across the field, Priya was talking seriously with Ms. Ortiz, and she was not smiling.",
+        "Ana was certain that Priya was angry with her, so she sat alone under a maple tree and did not go over.",
+        "A few minutes later, Priya jogged over and sat down beside her.",
+        "\"I was asking Ms. Ortiz about our handoff,\" Priya said. \"I think I reached back too early.\"",
+        "Ana looked up. \"You're not mad at me?\"",
+        "\"No! I'm glad we finished, and I want to practice the handoff again for next year,\" Priya said.",
+        "Ana let out a long breath, and the two friends walked to the water table together."
+      ],
+      "breaks": [
+        3,
+        11
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Dropped Baton",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p44",
+      "title": "The Bird Count",
+      "kind": "story",
+      "picture": "🐦📋☕",
+      "sentences": [
+        "Every winter, volunteers all over the island count the birds they see on one weekend, so that scientists can learn which kinds of birds are doing well.",
+        "Maya signed up to count birds along the creek in Story Woods, and she asked Priya to come with her.",
+        "Maya brought binoculars, a bird guide and a clipboard with a tally sheet.",
+        "The morning was gray and very cold, and frost covered the grass beside the trail.",
+        "Maya spotted a chickadee within the first minute and marked it on her sheet with a big grin.",
+        "Priya stood with her hands pushed deep into her pockets.",
+        "She kept bouncing on her toes, and every few minutes she glanced back toward the parking lot.",
+        "When Maya asked if she was having fun, Priya said, \"Sure,\" but her teeth were chattering.",
+        "Maya looked at Priya's red nose and at her shoulders pulled up toward her ears.",
+        "She poured hot cocoa from her thermos and handed Priya the cup.",
+        "\"Can you be our tally keeper?\" she asked. \"You can stand in the sunny spot by the bridge.\"",
+        "Priya wrapped both hands around the warm cup and moved into the patch of sunlight.",
+        "A few minutes later, a blue and white bird dove straight into the creek and flew up with a tiny fish.",
+        "\"What was that?\" Priya shouted, nearly spilling her cocoa.",
+        "Maya found the page in the bird guide: it was a belted kingfisher.",
+        "For the rest of the morning, Priya held the clipboard and watched the water for another one."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "topics": [
+        "nature",
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Bird Count",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p45",
+      "title": "The Copy in the Hall",
+      "kind": "story",
+      "picture": "🦖🦷",
+      "sentences": [
+        "On Saturday morning, Leo and Priya rode the bus to the Harbor Town museum.",
+        "In the main hall stood a Tyrannosaurus rex skeleton so tall that its skull nearly touched the ceiling.",
+        "Leo walked around it three times, staring up at the long rows of teeth.",
+        "\"I can't believe these are the actual bones,\" he whispered to Priya. \"This animal really stood here.\"",
+        "Dr. Bell, the museum's paleontologist, overheard him and smiled.",
+        "She explained that the skeleton in the hall was a cast, an exact copy made from real fossils.",
+        "Real fossil bones are heavy and fragile, so many museums keep them safe in storage and display copies instead.",
+        "Leo stopped smiling and took a step back from the skeleton.",
+        "\"So it's fake,\" he said in a flat voice, and he pushed his hands into his pockets.",
+        "Dr. Bell invited them downstairs to her laboratory and opened a wooden drawer.",
+        "Inside, on a bed of soft foam, lay a single dark tooth as long as a banana.",
+        "\"This one is real,\" she said. \"It is about sixty-seven million years old.\"",
+        "She handed Leo a pair of gloves and let him hold the tooth for ten seconds.",
+        "Leo held his breath, and his hands stayed completely still.",
+        "On the bus home, he asked Priya to quiz him on dinosaur facts until they reached their stop."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Copy in the Hall",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p46",
+      "title": "The Touch Tank",
+      "kind": "story",
+      "picture": "⭐🦀🌊",
+      "sentences": [
+        "On Sunday afternoon, Ben and Maya visited the marine science center at the end of the harbor.",
+        "In the middle of the main room was a wide, shallow touch tank full of sea stars, hermit crabs and sea urchins.",
+        "A volunteer explained the rule: visitors could gently touch the animals with two fingers, but they could never lift them out of the water.",
+        "Maya rolled up her sleeve right away and touched a purple sea star.",
+        "\"It feels rough and bumpy,\" she said.",
+        "Ben stood a step back from the edge with his hands behind his back.",
+        "\"I don't want to bother them,\" he joked. \"They look very busy.\"",
+        "When a hermit crab scuttled toward his side of the tank, Ben laughed loudly, but he took another step back.",
+        "Maya noticed that he still had not touched a single animal.",
+        "\"Want to try the sea star with me?\" Maya asked quietly. \"It moves so slowly that you can watch it the whole time.\"",
+        "Ben looked at the sea star for a long moment.",
+        "Then he put his fingertips into the cold water next to Maya's hand.",
+        "He touched one arm of the sea star, and his eyebrows went up.",
+        "\"It's rough!\" he said. \"I thought it would be slimy.\"",
+        "He touched it twice more before they moved on, and on the way out he asked the volunteer exactly how sea stars eat."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "topics": [
+        "ocean"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Touch Tank",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p47",
+      "title": "The Moving Light",
+      "kind": "story",
+      "picture": "🛰️🌌🍿",
+      "sentences": [
+        "Priya read that the International Space Station would pass over Harbor Town at 7:42 PM on Thursday.",
+        "The station circles Earth about every ninety minutes, and from the ground it looks like a very bright star moving smoothly across the sky.",
+        "Priya invited Leo to watch it with her from the field behind her house.",
+        "Leo arrived at 7:30 with a flashlight and a bag of popcorn.",
+        "\"Nobody can know the exact minute,\" he said with a grin. \"You're just guessing, right?\"",
+        "Priya did not argue.",
+        "She checked her watch, pointed at the trees in the west and waited calmly.",
+        "At 7:41, Leo was tossing popcorn into the air and catching it in his mouth.",
+        "\"See? Nothing,\" he said.",
+        "At 7:42, a bright, steady light rose over the treetops, exactly where Priya was pointing.",
+        "It did not blink like an airplane, and it moved silently across the whole sky.",
+        "Leo stopped moving, with a piece of popcorn halfway to his mouth.",
+        "\"There are astronauts living inside that,\" Priya said softly.",
+        "They watched without talking until the light faded in the east, about five minutes later.",
+        "Then Leo turned to Priya and asked when the station would pass over again."
+      ],
+      "breaks": [
+        3,
+        9
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Moving Light",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p48",
+      "title": "A Night in the Dinosaur Hall",
+      "kind": "story",
+      "picture": "🦕🔦🛏️",
+      "sentences": [
+        "Once a year, the Harbor Town museum invites twenty students to spend a night sleeping on the floor of its Dinosaur Hall.",
+        "Ben had applied three years in a row, and this spring his name was finally drawn, along with Maya's.",
+        "He packed his sleeping bag a full week early and taped a list of every skeleton in the hall to the inside of his bedroom door.",
+        "Maya packed her sketchbook, a flashlight and two extra pairs of socks.",
+        "At nine o'clock, the staff switched off the main lights, and the hall filled with long, unfamiliar shadows.",
+        "The Triceratops skull above their sleeping bags seemed much larger in the dark than it had during the day.",
+        "Ben sat straight up and whispered, \"This is the best night of my entire life.\"",
+        "Maya zipped her sleeping bag up to her chin and kept her flashlight switched on, pointed at the ceiling.",
+        "Whenever the old building creaked, her eyes darted toward the sound.",
+        "\"Are you okay?\" Ben asked.",
+        "\"I'm just tired,\" Maya answered, but she did not close her eyes.",
+        "A few minutes later, Dr. Bell came by with a lantern and offered a short night tour to anyone who was still awake.",
+        "Ben jumped up immediately, and after a moment, Maya slowly unzipped her bag and followed.",
+        "Dr. Bell held her lantern close to each skeleton and explained what the animal ate, how fast it might have moved and where its bones had been discovered.",
+        "She also pointed out small details that most visitors never notice, such as the rough bumps where powerful muscles were once attached to the bones.",
+        "Maya began to sketch by lantern light, and her drawing hand grew steadier with every skeleton.",
+        "When they returned to their sleeping bags, Maya switched off her flashlight without being asked.",
+        "\"The shadows are just the skeletons,\" she told Ben. \"I know every one of them now.\"",
+        "She fell asleep before Ben did, with her sketchbook open beside her pillow."
+      ],
+      "breaks": [
+        4,
+        11,
+        16
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "A Night in the Dinosaur Hall",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p49",
+      "title": "The Cake Without Eggs",
+      "kind": "story",
+      "picture": "🎂🥚",
+      "sentences": [
+        "Grandma Rose bakes cakes for half of Harbor Town, but nobody ever bakes a cake for her.",
+        "This year, Sam decided to surprise her on her birthday with her favorite dessert: chocolate cake with chocolate frosting.",
+        "He copied her own recipe onto an index card, bought the ingredients with his allowance and hid them at the back of the refrigerator.",
+        "His plan was to bake the cake on Sunday morning while Grandma Rose was at her walking group, then carry it to the bakery at noon.",
+        "On Sunday morning, Sam lined up everything on the counter and read the card again.",
+        "The first line said, \"Two eggs.\"",
+        "He opened the egg carton and found it empty, because his dad had made omelets the night before.",
+        "Sam slammed the carton shut and pressed both hands flat against the counter.",
+        "\"The whole plan is ruined,\" he said, with his teeth pressed together.",
+        "The grocery store did not open until noon, and he could not ask Grandma Rose for eggs without spoiling the surprise.",
+        "Sam walked to the window and counted ten slow breaths, the way he did at school when a plan changed.",
+        "Then he remembered an old cookbook on his dad's shelf that Grandma Rose had once shown him, full of recipes from times when eggs were difficult to find.",
+        "One recipe was a chocolate cake made with vinegar and baking soda instead of eggs.",
+        "When vinegar and baking soda mix, they make tiny bubbles of gas that help the batter rise.",
+        "Sam took the cookbook down, crossed out \"Two eggs\" on his card and wrote the new steps underneath.",
+        "The cake came out of the oven a little flat on one side, so Sam covered that side with extra frosting.",
+        "At noon, he carried it into the bakery, and Grandma Rose put both hands over her mouth.",
+        "After her first bite, she asked for the recipe, and Sam explained the vinegar trick with a proud grin.",
+        "\"I think I like this one even better than mine,\" she said."
+      ],
+      "breaks": [
+        4,
+        10,
+        15
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Cake Without Eggs",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p50",
+      "title": "Too Fast",
+      "kind": "story",
+      "picture": "🎻🎸",
+      "sentences": [
+        "Ms. Gray asked Priya and Sam to play a duet at the library's spring music night, with Priya on cello and Sam on guitar.",
+        "They chose a slow, gentle folk song and practiced it twice a week in the music room after school.",
+        "At every practice, Sam started a little faster than the time before.",
+        "He liked the song best when it felt lively, and he tapped his foot hard to keep himself going.",
+        "Priya's part had a long run of low notes in the middle, and at Sam's speed her fingers could barely keep up.",
+        "Each time they reached that section, she frowned at the music, and her bow made a scratchy sound.",
+        "When they finished, Sam would grin and say, \"That was our best one yet!\"",
+        "Priya always nodded and said, \"Yeah, good,\" and then she packed up her cello faster than usual.",
+        "One evening, Sam noticed that she had marked the middle section of her music with a pencil arrow and the word \"SLOWER.\"",
+        "Until then, Sam had believed that the song was going perfectly, because Priya had never said that anything was wrong.",
+        "Now he remembered her frowns, her scratchy notes and how quickly she always left.",
+        "\"Is the middle part too fast for you?\" he asked.",
+        "Priya let out a long breath and admitted that she had wanted to ask him to slow down for two weeks, but she had worried that he would think she was not good enough.",
+        "Sam said he would much rather play together than play fast.",
+        "They tried the song again while Priya tapped the speed she wanted with her foot, and this time her low notes came out smooth and warm.",
+        "At the music night, the audience was so quiet during the middle section that Sam could hear the cello's lowest notes humming through the floor.",
+        "Afterward, Priya told Sam that it was the first time she had truly enjoyed playing the song."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Too Fast",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p51",
+      "title": "The Long Download",
+      "kind": "story",
+      "picture": "🎮⏳🚂",
+      "sentences": [
+        "For a month, Ben and Leo had counted down the days until a new racing game came out on Saturday at ten in the morning.",
+        "They planned to download it at Leo's house the moment it was released and play until dinner.",
+        "Ben arrived at 9:45 with a bag of pretzels and a list of the tracks he wanted to try first.",
+        "At ten o'clock, Leo pressed the download button, and a gray bar appeared on the screen.",
+        "Underneath it, small letters said, \"Time remaining: 8 hours.\"",
+        "So many people were downloading the game at the same moment that every download had slowed down.",
+        "Ben groaned, dropped onto the couch and stared at the bar.",
+        "Every few minutes he got up to check it, and every time he sat back down a little harder.",
+        "Leo only shrugged and said, \"It will finish when it finishes,\" and then he went to the kitchen for juice.",
+        "Leo's little brother, who is eight years old, wandered in holding a board game about building railroads across a map.",
+        "\"Will you play this with me?\" he asked.",
+        "Ben opened his mouth to say no, and then he looked at the gray bar again.",
+        "\"One game,\" he said with a sigh, and he sat down on the floor.",
+        "The game was harder than it looked, because every player had to plan a route between cities while the others blocked the best tracks.",
+        "By the second game, Ben was leaning over the board, counting spaces and cheerfully arguing about the rules.",
+        "At six o'clock, the download finished with a loud chime.",
+        "Leo grabbed the controllers, but Ben did not move from the floor.",
+        "\"Can we finish this round first?\" he asked. \"I'm about to complete my longest route.\"",
+        "Leo laughed, and his little brother grinned so widely that he nearly knocked over the board."
+      ],
+      "breaks": [
+        3,
+        9,
+        15
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Long Download",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p52",
+      "title": "The Robot Workshop",
+      "kind": "story",
+      "picture": "🤖🔧📚",
+      "sentences": [
+        "Every Saturday in March, the Harbor Town library held a robot workshop for younger children, and Mrs. Hall asked Priya to help as a volunteer.",
+        "Priya spent Friday evening preparing six small robot kits, each with wheels, a motor, a battery pack and a simple remote control.",
+        "She was excited to show the children how a handful of parts could become a machine that moved.",
+        "On Saturday, five of the six children opened their kits immediately and started snapping pieces together.",
+        "The sixth child, a boy of about eight in a striped sweater, sat with his arms folded and his kit still closed.",
+        "When Priya asked if he wanted help, he shook his head and looked out the window.",
+        "Priya decided that he must think robots were boring, so she left him alone and spent the hour helping the others.",
+        "As the children packed up, the boy walked over to the table where the finished robots were racing, and he watched them closely.",
+        "He reached out to touch one of the wheels, then quickly pulled his hand back.",
+        "Mrs. Hall knelt beside him and spoke quietly with him for a minute.",
+        "Afterward, she told Priya that the boy loved robots, but he had never built anything before and was worried that he would break the parts.",
+        "Priya's cheeks felt warm, because she had guessed wrong.",
+        "She opened a spare kit, sat down next to the boy and said, \"I broke my first motor too. That's how I learned where the wires go.\"",
+        "She let him hold each part before he connected it, and she never touched his robot unless he asked her to.",
+        "Twenty minutes later, his robot rolled across the floor, and he turned to Priya with an enormous smile.",
+        "\"Can I come back next Saturday?\" he asked."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Robot Workshop",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p53",
+      "title": "Learning to Sail",
+      "kind": "story",
+      "picture": "⛵🌊",
+      "sentences": [
+        "In July, Ana and Leo signed up for a week of sailing lessons in the calm water inside the harbor.",
+        "Every student wore a life jacket, and a safety boat with a motor followed the small sailboats wherever they went.",
+        "On the first morning, Ana and Leo shared a boat with their instructor, a tall woman with a whistle who had been sailing for thirty years.",
+        "As soon as the wind filled the sail, the boat tipped to one side, and the edge dipped close to the water.",
+        "Leo whooped, leaned out over the side and laughed into the wind.",
+        "Ana grabbed the bench with both hands, and her knuckles turned pale.",
+        "She stared at the water rushing past and did not say a word for several minutes.",
+        "\"Is it supposed to lean like this?\" she finally asked in a small voice.",
+        "The instructor explained that a sailboat leans whenever the wind pushes on its sail.",
+        "She said their boat had a heavy fin called a keel under the water, which pulls the boat back upright.",
+        "Then she handed Ana the rope that controls the sail.",
+        "When Ana let the rope out a little, the boat leaned less and slowed down.",
+        "When she pulled it back in, the sail filled again, and the boat leaned and went faster.",
+        "Ana tried it again and again, and her shoulders slowly dropped away from her ears.",
+        "By the end of the lesson, Ana was the one asking to go faster.",
+        "As they sailed back toward the dock, Leo asked her to teach him the rope trick.",
+        "Ana explained it carefully, holding the rope exactly the way the instructor had shown her, and she grinned the whole way in."
+      ],
+      "breaks": [
+        3,
+        8,
+        14
+      ],
+      "topics": [
+        "ocean"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Learning to Sail",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p54",
+      "title": "Two Names on the Board",
+      "kind": "story",
+      "picture": "⚽📋",
+      "sentences": [
+        "At the end of the first practice of the season, Coach Novak asked the soccer team to vote for a captain.",
+        "Each player wrote one name on a slip of paper and dropped it into an empty water bottle, and the coach wrote the totals on a whiteboard.",
+        "Ben had hoped to become captain since the previous season, and he had already imagined exactly how he would lead the warm-up exercises.",
+        "When the counting finished, two names were on the board: Ben had six votes, and Ana had nine.",
+        "The team cheered enthusiastically, and several players patted Ana on the back.",
+        "Ben clapped too, and he was the first one to hug his sister.",
+        "\"You'll be great at it,\" he told her, and he meant it.",
+        "But on the walk home, Ben kicked a pebble along the sidewalk for three entire blocks and answered Ana's questions with single words.",
+        "Ana noticed how quiet her brother was.",
+        "She was excited about becoming captain, but she kept glancing sideways at Ben, and her smile kept fading.",
+        "That night, she knocked on his door and asked if he would lead the warm-ups at every practice, since he already knew every stretch without looking at a list.",
+        "Ben looked up from his game controller.",
+        "\"You would really want me to do that?\" he asked.",
+        "Ana explained that a good captain should choose the best person for each responsibility.",
+        "At the next practice, Ben stood confidently in front of the team and led the warm-ups in a loud, clear voice.",
+        "Ana stretched in the front row along with everyone else, and she grinned at him when they finished.",
+        "On the walk home that afternoon, Ben talked the entire way."
+      ],
+      "breaks": [
+        3,
+        8,
+        14
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Two Names on the Board",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p55",
+      "title": "Junior Rangers",
+      "kind": "story",
+      "picture": "🌲🪵🛹",
+      "sentences": [
+        "In August, Leo spent a week at the Junior Ranger day camp in Story Woods, where children learn to identify trees, follow animal tracks and care for the trails.",
+        "His friends were all away or busy that week, so he did not know a single person in his group of twelve.",
+        "On Monday morning, he tried to make the group laugh with one of his best jokes.",
+        "Nobody laughed, and a few kids glanced at him for a second before they went back to their conversations.",
+        "On Monday and Tuesday, Leo hiked at the very back of the line.",
+        "At lunch, he ate his sandwich on a log a little apart from the others and kept his eyes on his trail guide.",
+        "When the ranger asked everyone to find a partner for the tracking game, the others paired up quickly, and Leo was left standing alone.",
+        "He shrugged and told the ranger it was fine, because he liked working by himself.",
+        "But on Tuesday evening, he told his mom that he did not want to go back.",
+        "On Wednesday, the ranger set a challenge: each team had to build a small bridge across a muddy stream using only fallen branches and string.",
+        "Leo's team kept disagreeing about which branches to use, and their first two bridges sagged into the mud.",
+        "Leo had built dozens of small ramps for skateboarding, so he knew how to brace a wobbly structure.",
+        "Quietly, he showed a girl on his team how to cross two branches into an X underneath the bridge so that it would not wobble.",
+        "She tried it, and the next bridge held the weight of a full water bottle.",
+        "The team cheered, and the girl told everyone that the X had been Leo's idea.",
+        "At lunch, two kids carried their sandwiches over to Leo's log and asked him how he had learned about building.",
+        "He told them about the skate park, and this time, when he added a joke, they both laughed.",
+        "That evening, Leo packed his bag for Thursday before his mom even asked."
+      ],
+      "breaks": [
+        4,
+        9,
+        14
+      ],
+      "topics": [
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Junior Rangers",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p56",
+      "title": "The Red Line",
+      "kind": "story",
+      "picture": "🗺️🚆🖍️",
+      "sentences": [
+        "The Harbor Town visitor center held a contest for a new hand-drawn map of the town to hang beside its front door.",
+        "Sam spent four weekends on his entry, measuring streets on the town plan at the library and making sure every street was the right length compared with the others.",
+        "He colored the railway line bright red, so that visitors could find the station from anywhere on the map.",
+        "In May, the visitor center called to say that Sam's map had won, and that a designer would prepare it for printing.",
+        "Sam was so happy that he ran around the yard with Pixel three times.",
+        "Two weeks later, the designer sent him a copy of the final version.",
+        "Everything looked sharp and clean, but the railway line was now pale gray, and it almost disappeared among the streets.",
+        "Sam stared at the screen and slowly scrolled back and forth.",
+        "When his dad asked what he thought, Sam said, \"It looks very professional,\" and closed the laptop.",
+        "Then he went to his room and did not come out until dinner.",
+        "At dinner, he pushed his peas around his plate without eating them.",
+        "His dad asked if something about the map was bothering him.",
+        "Sam was quiet for a long moment, and then he explained that the red line was the most important part, because it helped people find the trains.",
+        "He was worried that the designer would think he was ungrateful if he asked her to change it.",
+        "His dad suggested writing a short, polite message that explained his reason.",
+        "Sam rewrote the message three times before he sent it.",
+        "The next morning, the designer replied that his reason made sense, and that she would change the line back to red.",
+        "When the map was hung by the front door, Sam stood beside it for a photo, pointing straight at the bright red railway."
+      ],
+      "breaks": [
+        3,
+        10,
+        15
+      ],
+      "topics": [
+        "maps"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Red Line",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -1504,10 +2823,10 @@
       "level": 4,
       "prompt": "What did Leo want but not say?",
       "options": [
-        "to listen to the band from the hallway each week",
-        "to join the band and play the drums",
+        "to listen to the jazz band from the hallway each week",
+        "to join the jazz band and play jazz drums",
         "to find a quieter way to the skate park",
-        "to borrow drumsticks to tap on his skateboard"
+        "to borrow wire brushes to tap on his skateboard"
       ],
       "answer": 1,
       "evidence": [
@@ -1517,7 +2836,7 @@
         8
       ],
       "hint": "Leo's words and his actions do not match. Look at what he does when nobody is asking him anything.",
-      "explain": "Leo wanted to join the band and play the drums. He slowed down when he heard the drummer, tapped the beat, looked at the drum set and watched drum lessons until bedtime. These clues are in the first and second paragraphs. Listening from the hallway is what he did, not what he wanted.",
+      "explain": "Leo wanted to join the jazz band and play jazz drums. He slowed down when he heard the jazz drummer, tapped the beat, looked at the drum set and watched jazz drumming lessons until bedtime. These clues are in the first and second paragraphs. Listening from the hallway is what he did, not what he wanted.",
       "inference": 2,
       "tags": [
         "want",
@@ -1530,11 +2849,11 @@
       "passage": "n5-p19",
       "format": "tap",
       "level": 4,
-      "prompt": "Leo said, \"Not really. Drums are kind of loud anyway.\" Why did he say that?",
+      "prompt": "Leo said, \"Not really. Jazz is kind of complicated anyway.\" Why did he say that?",
       "options": [
-        "He did not like the sound of drums.",
+        "He did not like the sound of jazz.",
         "He wanted Ms. Gray to close the music room door.",
-        "He already played the drums in another band.",
+        "He already played jazz in another group.",
         "He wanted to play, but he felt too shy to say so."
       ],
       "answer": 3,
@@ -1544,7 +2863,7 @@
         8
       ],
       "hint": "Look at what Leo did right after he said it, and what he did that night.",
-      "explain": "Leo wanted to play, but he felt too shy to say so. Right after he said it, he looked at the drum set for a long moment, and that night he watched drum lessons. It is at the end of the second paragraph.",
+      "explain": "Leo wanted to play, but he felt too shy to say so. Right after he said it, he looked at the drum set for a long moment, and that night he watched jazz drumming lessons. It is at the end of the second paragraph.",
       "inference": 2,
       "tags": [
         "unspoken-want",
@@ -1557,7 +2876,7 @@
       "passage": "n5-p19",
       "format": "tap",
       "level": 4,
-      "prompt": "How did Leo feel when he held the drumsticks?",
+      "prompt": "How did Leo feel when he held the brushes?",
       "options": [
         "calm and proud",
         "excited and a little nervous",
@@ -1584,14 +2903,14 @@
       "passage": "n5-p19",
       "format": "sort",
       "level": 4,
-      "prompt": "Sort the clues. Which ones show Leo wanted to play the drums, and which show he felt nervous?",
+      "prompt": "Sort the clues. Which ones show Leo wanted to play in the jazz band, and which show he felt nervous?",
       "bins": [
         "Wanted to play",
         "Felt nervous"
       ],
       "cards": [
         {
-          "text": "He slowed down when he heard the drummer.",
+          "text": "He slowed down when he heard the jazz drummer.",
           "bin": 0
         },
         {
@@ -1607,7 +2926,7 @@
           "bin": 1
         },
         {
-          "text": "He watched drum lessons until bedtime.",
+          "text": "He watched jazz drumming lessons until bedtime.",
           "bin": 0
         },
         {
@@ -1615,8 +2934,8 @@
           "bin": 1
         }
       ],
-      "hint": "For each clue, ask: does it show Leo moving toward the drums, or does it show his body feeling unsure?",
-      "explain": "Slowing down at the drums, tapping the beat and watching drum lessons show he wanted to play. Staring at the floor, warm cheeks and trembling hands show he felt nervous.",
+      "hint": "For each clue, ask: does it show Leo moving toward the jazz band, or does it show his body feeling unsure?",
+      "explain": "Slowing down for the jazz drummer, tapping the beat and watching jazz drumming lessons show he wanted to play. Staring at the floor, warm cheeks and trembling hands show he felt nervous.",
       "inference": 2,
       "transfer": true,
       "tags": [
@@ -1831,6 +3150,3592 @@
       "tags": [
         "unspoken-want",
         "want"
+      ]
+    },
+    {
+      "id": "n5-i54",
+      "skill": "N5",
+      "passage": "n5-p22",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How did Ana feel when she saw the rainbow?",
+      "options": [
+        "surprised",
+        "lonely",
+        "frustrated"
+      ],
+      "pictures": [
+        "😮",
+        "😔",
+        "😤"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find what Ana did right after she saw the rainbow.",
+      "explain": "Ana felt surprised. She gasped and put her hands on her cheeks.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i55",
+      "skill": "N5",
+      "passage": "n5-p22",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Tap the sentence that shows Ben was happy to see the rainbow.",
+      "unit": "sentence",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        7
+      ],
+      "hint": "Find the sentence about Ben at the window. Look at what his face did.",
+      "explain": "\"Ben ran to the window and grinned\" shows Ben was happy. It is the last sentence.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i56",
+      "skill": "N5",
+      "passage": "n5-p23",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How did Ben feel when he saw how big the footprint was?",
+      "options": [
+        "worried",
+        "surprised",
+        "lonely"
+      ],
+      "pictures": [
+        "😟",
+        "😮",
+        "😔"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Find what Ben's eyes did. Then read what he said.",
+      "explain": "Ben felt surprised. His eyes got big, and he said, \"Wow!\"",
+      "inference": 1,
+      "tags": [
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i57",
+      "skill": "N5",
+      "passage": "n5-p23",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Why did Ben show the photo to every kid on the bus?",
+      "options": [
+        "He was lonely on the bus.",
+        "He lost his shoe at the museum.",
+        "He was excited about the big footprint."
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        6,
+        7
+      ],
+      "hint": "Think about what is in the photo. Think about how Ben felt when he saw it.",
+      "explain": "Ben was excited about the big footprint. The photo showed his shoe next to a footprint three times as long.",
+      "inference": 2,
+      "tags": [
+        "feeling-cause"
+      ]
+    },
+    {
+      "id": "n5-i58",
+      "skill": "N5",
+      "passage": "n5-p24",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How did Priya feel when she saw the sea lion?",
+      "options": [
+        "frustrated",
+        "lonely",
+        "surprised"
+      ],
+      "pictures": [
+        "😤",
+        "😔",
+        "😮"
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find what Priya did right after she saw the sea lion.",
+      "explain": "Priya felt surprised. She gasped and pointed at the sea lion.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i59",
+      "skill": "N5",
+      "passage": "n5-p24",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Why did Priya look for a dog?",
+      "options": [
+        "She heard a loud bark.",
+        "She saw a dog on the dock.",
+        "She wanted to walk Pixel."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Read what Priya heard just before she looked.",
+      "explain": "Priya heard a loud bark, so she thought a dog was there. The bark came from a sea lion.",
+      "inference": 1,
+      "tags": [
+        "belief"
+      ]
+    },
+    {
+      "id": "n5-i60",
+      "skill": "N5",
+      "passage": "n5-p25",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Sam feel when the board changed?",
+      "options": [
+        "proud",
+        "frustrated",
+        "relieved"
+      ],
+      "pictures": [
+        "😊",
+        "😤",
+        "😌"
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "Look at what Sam did with his foot and his voice after the board changed.",
+      "explain": "Sam felt frustrated. He stamped his foot, said \"That was not the plan!\" in a loud voice and frowned at the board.",
+      "inference": 1,
+      "tags": [
+        "hidden-feeling",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n5-i61",
+      "skill": "N5",
+      "passage": "n5-p25",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What did Sam do to make the wait better?",
+      "options": [
+        "He went home and came back later.",
+        "He wrote down every train that went by.",
+        "He asked to ride a different train."
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find what Sam did after he sat on the bench for a minute.",
+      "explain": "Sam wrote down every train that went by in his notebook. It is right after he opened his notebook.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "n5-i62",
+      "skill": "N5",
+      "passage": "n5-p25",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Sort what Sam did. Put each action under the feeling it shows.",
+      "bins": [
+        "Frustrated",
+        "Calm and happy"
+      ],
+      "cards": [
+        {
+          "text": "Sam stamped his foot.",
+          "bin": 0
+        },
+        {
+          "text": "He wrote down every train that went by.",
+          "bin": 1
+        },
+        {
+          "text": "He frowned at the board.",
+          "bin": 0
+        },
+        {
+          "text": "Sam smiled and drew the blue express.",
+          "bin": 1
+        },
+        {
+          "text": "He said, \"That was not the plan!\"",
+          "bin": 0
+        }
+      ],
+      "hint": "Ask if each action came before or after Sam opened his notebook.",
+      "explain": "Before he opened his notebook, Sam was frustrated: he stamped his foot, said it was not the plan and frowned. After that, he was calm and happy: he wrote down trains, then smiled and drew the blue express.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "plan-change",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i63",
+      "skill": "N5",
+      "passage": "n5-p26",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Ben feel when the pancake landed on the floor?",
+      "options": [
+        "embarrassed",
+        "proud",
+        "curious"
+      ],
+      "pictures": [
+        "😳",
+        "😊",
+        "🤔"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Look at Ben's face and where he looked after the pancake fell.",
+      "explain": "Ben felt embarrassed. His face turned red, and he looked down at his shoes.",
+      "inference": 1,
+      "tags": [
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i64",
+      "skill": "N5",
+      "passage": "n5-p26",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ana and Ben saw the same pancake fall. How did each of them feel at first?",
+      "options": [
+        "Ben thought it was funny, and Ana was embarrassed.",
+        "Ben was embarrassed, and Ana thought it was funny.",
+        "Ben and Ana both felt proud."
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find one sentence about Ben's face. Then find one sentence about what Ana did.",
+      "explain": "Ben was embarrassed: his face turned red. Ana thought it was funny at first: she laughed loudly.",
+      "inference": 2,
+      "tags": [
+        "two-characters",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i65",
+      "skill": "N5",
+      "passage": "n5-p26",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did Ana tell Ben about her own first flip?",
+      "options": [
+        "to show Ben that she flips better",
+        "to help Ben feel less embarrassed",
+        "to ask Ben for the next pancake"
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Ana spoke right after she noticed Ben's face. Think about what she saw.",
+      "explain": "Ana wanted to help Ben feel less embarrassed. She noticed his red face, stopped laughing and told him her first flip fell too. Then Ben grinned.",
+      "inference": 2,
+      "tags": [
+        "intention",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n5-i66",
+      "skill": "N5",
+      "passage": "n5-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Priya feel before she pressed the button?",
+      "options": [
+        "lonely",
+        "frustrated",
+        "nervous"
+      ],
+      "pictures": [
+        "😔",
+        "😤",
+        "😬"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find two things Priya did or felt that morning, before the button.",
+      "explain": "Priya felt nervous. She checked the batteries three times, and her hands felt cold.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i67",
+      "skill": "N5",
+      "passage": "n5-p27",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the sentence that shows Priya felt proud.",
+      "unit": "sentence",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        7
+      ],
+      "hint": "Find the part after the class clapped. Look at how Priya stood and what her face did.",
+      "explain": "\"Priya stood up tall and smiled a wide smile\" shows she felt proud. It comes right after the class clapped.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i68",
+      "skill": "N5",
+      "passage": "n5-p27",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put Priya's feelings in the order they happened.",
+      "steps": [
+        "Priya was nervous about showing her robot arm.",
+        "Priya was proud when the class clapped.",
+        "Priya was excited to teach the arm something new."
+      ],
+      "evidence": [
+        2,
+        7,
+        8
+      ],
+      "hint": "Find the morning, then the button, then the last thing Priya said.",
+      "explain": "First Priya was nervous and checked the batteries three times. Then she was proud and smiled a wide smile. Last, she was excited to teach the arm to shake hands.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i69",
+      "skill": "N5",
+      "passage": "n5-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Priya feel at the start of the chat?",
+      "options": [
+        "proud",
+        "frustrated",
+        "lonely"
+      ],
+      "pictures": [
+        "😊",
+        "😤",
+        "😔"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read Priya's first two messages. Look at what she wanted to do with her cello.",
+      "explain": "Priya felt frustrated. She practiced for an hour, still missed the same three notes and wanted to put her cello away.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i70",
+      "skill": "N5",
+      "passage": "n5-p28",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap a message that shows Priya felt proud.",
+      "unit": "row",
+      "answer": [
+        4,
+        5
+      ],
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the messages Priya sent after she tried the fast part slowly.",
+      "explain": "\"I played the fast part slowly five times with no mistakes!\" shows Priya felt proud. Her next message, \"No mistakes again!\", shows it too.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "shown-by-words",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i71",
+      "skill": "N5",
+      "passage": "n5-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did Maya tell Priya to play the fast part very slowly?",
+      "options": [
+        "Maya wanted to help Priya fix the fast part.",
+        "Maya wanted to borrow the cello.",
+        "Maya thought it was too late to play loudly."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Read Maya's first message. Think about the problem Priya just told her.",
+      "explain": "Maya wanted to help Priya fix the fast part. Priya kept missing the same notes. Maya told her to play the part slowly first, a trick that helps Maya with her own flute.",
+      "inference": 1,
+      "tags": [
+        "intention"
+      ]
+    },
+    {
+      "id": "n5-i72",
+      "skill": "N5",
+      "passage": "n5-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Ben feel about the hail?",
+      "options": [
+        "excited",
+        "worried",
+        "lonely"
+      ],
+      "pictures": [
+        "🤩",
+        "😟",
+        "😔"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Look at what Ben did with his hand and what he said.",
+      "explain": "Ben felt excited. He caught three hailstones and said, \"Look how perfectly round they are!\" with a big grin.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i73",
+      "skill": "N5",
+      "passage": "n5-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Maya feel when the hail started?",
+      "options": [
+        "proud",
+        "excited",
+        "worried"
+      ],
+      "pictures": [
+        "😊",
+        "🤩",
+        "😟"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Look at what Maya held and what she frowned at.",
+      "explain": "Maya felt worried about her sketchbook. She held it tight against her chest and frowned at its wet cover.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n5-i74",
+      "skill": "N5",
+      "passage": "n5-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why did Ben put his cap over the sketchbook?",
+      "options": [
+        "He wanted Maya to hold his cap for him.",
+        "He was hot and wanted to take off his cap.",
+        "He wanted to help keep Maya's drawings dry."
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        9,
+        10
+      ],
+      "hint": "Ben did this right after he noticed Maya's face. Think about what Maya was worried about.",
+      "explain": "Ben wanted to help keep Maya's drawings dry. He noticed her face, and he covered the wet sketchbook with his cap.",
+      "inference": 2,
+      "tags": [
+        "intention",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n5-i75",
+      "skill": "N5",
+      "passage": "n5-p30",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Sam feel when Leo said the handle was wrong?",
+      "options": [
+        "frustrated",
+        "relieved",
+        "lonely",
+        "proud"
+      ],
+      "pictures": [
+        "😤",
+        "😌",
+        "😔",
+        "😊"
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Look at Sam's smile, his words and his arms right after Leo spoke.",
+      "explain": "Sam felt frustrated. His smile disappeared, he said \"No, it has four,\" and he crossed his arms.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i76",
+      "skill": "N5",
+      "passage": "n5-p30",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that shows Sam was embarrassed.",
+      "unit": "sentence",
+      "answer": [
+        11
+      ],
+      "evidence": [
+        11
+      ],
+      "hint": "Find the part after Sam counted the stars on his chart. Look at his face.",
+      "explain": "\"Sam's cheeks turned pink, and he laughed a little\" shows he was embarrassed. It comes right after he counted only three handle stars.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i77",
+      "skill": "N5",
+      "passage": "n5-p30",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Before he opened his star chart, what did Sam believe?",
+      "options": [
+        "Leo had moved one of the stars.",
+        "The stars would not glow in the dark.",
+        "The handle of the Big Dipper had four stars.",
+        "The handle of the Big Dipper had three stars."
+      ],
+      "answer": 2,
+      "evidence": [
+        8
+      ],
+      "hint": "Read what Sam said back to Leo before he turned on the light.",
+      "explain": "Sam believed the handle had four stars. He said, \"No, it has four.\" The chart showed it really has three.",
+      "inference": 1,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i78",
+      "skill": "N5",
+      "passage": "n5-p31",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Ben feel when his phone screen went black?",
+      "options": [
+        "proud",
+        "worried",
+        "excited",
+        "calm"
+      ],
+      "pictures": [
+        "😊",
+        "😟",
+        "🤩",
+        "🙂"
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Look at what Ben did with his feet and eyes, and how he asked his question.",
+      "explain": "Ben felt worried. He stopped walking, looked left and right, and asked which way to go in a quiet voice.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i79",
+      "skill": "N5",
+      "passage": "n5-p31",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben and Maya stood at the same fork. How did each of them feel?",
+      "options": [
+        "Ben was calm, and Maya was worried.",
+        "Ben was worried, and Maya was calm.",
+        "Ben and Maya were both worried.",
+        "Ben and Maya were both proud."
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        6,
+        7,
+        9
+      ],
+      "hint": "Find what Ben did at the fork. Then find how Maya said \"Left.\"",
+      "explain": "Ben was worried: he stopped and asked in a quiet voice which way to go. Maya was calm: she unfolded her map and said \"Left\" calmly.",
+      "inference": 2,
+      "tags": [
+        "two-characters",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i80",
+      "skill": "N5",
+      "passage": "n5-p31",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What did Ben want at the end of the hike?",
+      "options": [
+        "to learn how to read a paper map",
+        "to buy a new phone",
+        "to hike to the waterfall again without a map",
+        "to charge his phone at the waterfall"
+      ],
+      "answer": 0,
+      "evidence": [
+        12
+      ],
+      "hint": "Read the last sentence. Look at what Ben asked Maya.",
+      "explain": "Ben wanted to learn how to read a paper map. On the way home, he asked Maya to show him.",
+      "inference": 1,
+      "tags": [
+        "want"
+      ]
+    },
+    {
+      "id": "n5-i81",
+      "skill": "N5",
+      "passage": "n5-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Before the rock club, what did Ana believe about rocks?",
+      "options": [
+        "Rocks can glow in bright colors.",
+        "Rock club is only for adults.",
+        "Rocks are too heavy to carry home.",
+        "Rocks are only gray and brown."
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Read what Ana told Ben before she left.",
+      "explain": "Ana believed rocks are only gray and brown. She told Ben, \"Rocks are just gray and brown.\" Then she saw rocks glow green, red and blue.",
+      "inference": 1,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i82",
+      "skill": "N5",
+      "passage": "n5-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Ana feel when the rocks began to glow?",
+      "options": [
+        "lonely",
+        "embarrassed",
+        "surprised",
+        "frustrated"
+      ],
+      "pictures": [
+        "😔",
+        "😳",
+        "😮",
+        "😤"
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Look at how Ana stood and what her mouth did after the lamp went on.",
+      "explain": "Ana felt surprised. She stood up straight, and her mouth opened wide.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i83",
+      "skill": "N5",
+      "passage": "n5-p32",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sort what Ana did. Put each action under the feeling it shows.",
+      "bins": [
+        "Bored",
+        "Curious"
+      ],
+      "cards": [
+        {
+          "text": "Ana yawned.",
+          "bin": 0
+        },
+        {
+          "text": "She asked the name of each glowing mineral.",
+          "bin": 1
+        },
+        {
+          "text": "She leaned against the wall.",
+          "bin": 0
+        },
+        {
+          "text": "She walked along every shelf.",
+          "bin": 1
+        },
+        {
+          "text": "She asked when the next club meeting was.",
+          "bin": 1
+        }
+      ],
+      "hint": "Ask if each action came before or after Mr. Varga turned on the special lamp.",
+      "explain": "Before the lamp, Ana was bored: she yawned and leaned against the wall. After the lamp, she was curious: she walked along every shelf, asked the names of the minerals and asked about the next meeting.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "feeling-change",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i84",
+      "skill": "N5",
+      "passage": "n5-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Ana feel before the door opened?",
+      "options": [
+        "proud",
+        "frustrated",
+        "calm",
+        "lonely"
+      ],
+      "pictures": [
+        "😊",
+        "😤",
+        "🙂",
+        "😔"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Look at how Ana pressed the buttons and the sound she made.",
+      "explain": "Ana felt frustrated. The door stayed shut, so she pressed the buttons hard and groaned.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i85",
+      "skill": "N5",
+      "passage": "n5-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Leo knew the right order. What did he want?",
+      "options": [
+        "He wanted to play the level instead of Ana.",
+        "He wanted Ana to stop playing.",
+        "He wanted to go home and play.",
+        "He wanted Ana to solve the puzzle herself."
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hint": "Leo did not say the order. Look at what he did with his mouth and his hands, and at the small clue he gave.",
+      "explain": "Leo wanted Ana to solve the puzzle herself. He closed his mouth, sat on his hands and only gave a small clue about the colors on the wall.",
+      "inference": 2,
+      "tags": [
+        "unspoken-want",
+        "want"
+      ]
+    },
+    {
+      "id": "n5-i86",
+      "skill": "N5",
+      "passage": "n5-p33",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that shows Leo stopped himself from telling Ana the answer.",
+      "unit": "sentence",
+      "answer": [
+        5,
+        6
+      ],
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the part right after you learn that Leo knew the order. Look at his mouth and his hands.",
+      "explain": "\"He opened his mouth, and then he closed it again\" shows Leo stopped himself. Sitting on his hands shows it too.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action",
+        "unspoken-want"
+      ]
+    },
+    {
+      "id": "n5-i87",
+      "skill": "N5",
+      "passage": "n5-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Ben feel when Coach Novak asked him to play in goal?",
+      "options": [
+        "disappointed",
+        "excited",
+        "proud",
+        "relieved"
+      ],
+      "pictures": [
+        "😞",
+        "🤩",
+        "😊",
+        "😌"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "hint": "Remember where Ben loved to play. Then look at his eyes, his face and how he put on the gloves.",
+      "explain": "Ben felt disappointed. He loved playing forward, so he looked at the ground, nodded without a smile and pulled on the gloves very slowly.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n5-i88",
+      "skill": "N5",
+      "passage": "n5-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What changed how Ben felt about being goalie?",
+      "options": [
+        "Coach Novak let him play forward in the second half.",
+        "He stopped a hard shot, and his teammates cheered.",
+        "The other goalie came back in the first half.",
+        "The other team did not take any shots."
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "hint": "Find the moment Ben stopped standing with his arms crossed. Read what happened just before it.",
+      "explain": "Ben stopped a hard shot, and his teammates cheered. After that, he clapped his gloves before every kick.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "feeling-cause"
+      ]
+    },
+    {
+      "id": "n5-i89",
+      "skill": "N5",
+      "passage": "n5-p34",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put Ben's feelings in the order they happened.",
+      "steps": [
+        "Ben was disappointed that he had to play in goal.",
+        "Ben was proud when he stopped the hard shot.",
+        "Ben was excited to practice in goal again."
+      ],
+      "evidence": [
+        3,
+        8,
+        9,
+        11
+      ],
+      "hint": "Find the start of the game, the hard shot and the end of the game.",
+      "explain": "First Ben was disappointed and looked at the ground. Then he was proud when he stopped the shot and his teammates cheered. At the end, he was excited and asked to practice in goal again.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "plan-change",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i90",
+      "skill": "N5",
+      "passage": "n5-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Priya feel on the eighth day?",
+      "options": [
+        "worried",
+        "proud",
+        "excited",
+        "embarrassed"
+      ],
+      "pictures": [
+        "😟",
+        "😊",
+        "🤩",
+        "😳"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Look at what Priya saw in the soil, what her face did and what she told Ms. Ortiz.",
+      "explain": "Priya felt worried. The soil was still flat, she frowned and poked the dirt, and she said she thought her seeds were bad.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i91",
+      "skill": "N5",
+      "passage": "n5-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "On the eighth day, what did Priya believe about her seeds?",
+      "options": [
+        "They were bad and would not grow.",
+        "Someone had dug them up.",
+        "They had already sprouted.",
+        "They needed a bigger pot."
+      ],
+      "answer": 0,
+      "evidence": [
+        5
+      ],
+      "hint": "Read what Priya told Ms. Ortiz.",
+      "explain": "Priya believed her seeds were bad. She told Ms. Ortiz, \"I think my seeds are bad.\" Really, cold nights had made them grow more slowly.",
+      "inference": 1,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i92",
+      "skill": "N5",
+      "passage": "n5-p35",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that shows Priya was excited when she saw the sprout.",
+      "unit": "sentence",
+      "answer": [
+        9
+      ],
+      "evidence": [
+        9
+      ],
+      "hint": "Find what Priya did right after she saw the green loop.",
+      "explain": "\"She knelt down so fast that her backpack slid off her shoulder\" shows Priya was excited. It comes right after she saw the sprout.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i93",
+      "skill": "N5",
+      "passage": "n5-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Ben feel when Leo said, \"You sped up\"?",
+      "options": [
+        "relieved",
+        "curious",
+        "proud",
+        "frustrated"
+      ],
+      "pictures": [
+        "😌",
+        "🤔",
+        "😊",
+        "😤"
+      ],
+      "answer": 3,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Look at what Ben did with his chair, the sound he made and what he said.",
+      "explain": "Ben felt frustrated. He pushed back his chair, let out a loud sigh and said, \"I always do that.\"",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i94",
+      "skill": "N5",
+      "passage": "n5-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why did Leo count out loud and tell Ben to listen to his sticks?",
+      "options": [
+        "to help Ben stay at the same speed as the drums",
+        "to show Ben how loud the sticks are",
+        "to tell Ben that the song was over",
+        "to make Ben play faster"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        7,
+        8,
+        9
+      ],
+      "hint": "Remember the problem: Ben played faster and faster. Think about how counting and listening could fix it.",
+      "explain": "Leo wanted to help Ben stay at the same speed as the drums. Ben kept speeding up, so Leo counted and told him to listen to the sticks. Then they finished together.",
+      "inference": 2,
+      "tags": [
+        "intention",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n5-i95",
+      "skill": "N5",
+      "passage": "n5-p36",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the sentence that shows Ben felt proud at the end.",
+      "unit": "sentence",
+      "answer": [
+        11,
+        12
+      ],
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Find what Ben did after they reached the last note together.",
+      "explain": "\"Ben spun around on his chair and laughed\" shows he felt proud. Asking to record the song shows it too.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i96",
+      "skill": "N5",
+      "passage": "n5-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Pixel feel when the rover first rolled toward him?",
+      "options": [
+        "excited",
+        "proud",
+        "nervous",
+        "lonely"
+      ],
+      "pictures": [
+        "🤩",
+        "😊",
+        "😬",
+        "😔"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Look at what Pixel's feet, ears and voice did when the rover came close.",
+      "explain": "Pixel felt nervous. He jumped up and backed away, his ears went flat and he gave a short, low bark.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i97",
+      "skill": "N5",
+      "passage": "n5-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why did Priya stop the rover and leave it sitting still?",
+      "options": [
+        "The battery was empty.",
+        "Sam asked her to take it home.",
+        "She needed to fix one of its wheels.",
+        "She wanted Pixel to feel safe and get used to it."
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "hint": "Priya stopped the rover right after Pixel backed away. Think about what Pixel needed.",
+      "explain": "Priya wanted Pixel to feel safe and get used to the rover. She stopped it when he backed away, and then Pixel crept closer to sniff it.",
+      "inference": 2,
+      "tags": [
+        "intention"
+      ]
+    },
+    {
+      "id": "n5-i98",
+      "skill": "N5",
+      "passage": "n5-p37",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sort what Pixel did. Put each action under the feeling it shows.",
+      "bins": [
+        "Nervous",
+        "Curious and friendly"
+      ],
+      "cards": [
+        {
+          "text": "Pixel backed away.",
+          "bin": 0
+        },
+        {
+          "text": "He sniffed the rover's wheels.",
+          "bin": 1
+        },
+        {
+          "text": "His ears went flat.",
+          "bin": 0
+        },
+        {
+          "text": "He sniffed the blinking light.",
+          "bin": 1
+        },
+        {
+          "text": "He gave a short, low bark.",
+          "bin": 0
+        },
+        {
+          "text": "His tail began to wag.",
+          "bin": 1
+        }
+      ],
+      "hint": "Ask if each action came before or after Priya left the rover sitting still.",
+      "explain": "At first Pixel was nervous: he backed away, his ears went flat and he barked. Later he was curious and friendly: he sniffed the wheels and the light, and his tail wagged.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "feeling-change",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i99",
+      "skill": "N5",
+      "passage": "n5-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Before Grandma Rose cut the pie, what did Sam think was in it?",
+      "options": [
+        "strawberries and rhubarb",
+        "apples",
+        "cherries"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2,
+        4
+      ],
+      "hint": "Look at the color of the juice, Sam's favorite pie and the question he asked.",
+      "explain": "Sam thought the pie was cherry. He saw red juice, cherry was his favorite, and he asked, \"Is that a cherry pie?\" Grandma Rose only waved, so nobody told him it was not.",
+      "inference": 2,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i100",
+      "skill": "N5",
+      "passage": "n5-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Sam feel when he saw the pink and green pieces inside?",
+      "options": [
+        "a little disappointed",
+        "relieved",
+        "proud",
+        "lonely"
+      ],
+      "pictures": [
+        "😞",
+        "😌",
+        "😊",
+        "😔"
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Think about the pie Sam wanted. Then look at what his grin did.",
+      "explain": "Sam felt a little disappointed. He wanted cherry, but the pie was strawberry and rhubarb, and his grin faded a little.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i101",
+      "skill": "N5",
+      "passage": "n5-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How did Sam feel about the pie at the end?",
+      "options": [
+        "He still wished it was cherry.",
+        "He liked it and wanted more.",
+        "He was too full to finish it.",
+        "He was embarrassed to eat it."
+      ],
+      "answer": 1,
+      "evidence": [
+        10,
+        11,
+        12
+      ],
+      "hint": "Compare Sam's first bite with his second bite. Then read his question.",
+      "explain": "Sam liked the pie and wanted more. After a small first bite, he took a much bigger bite and asked for a second piece.",
+      "inference": 1,
+      "tags": [
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i102",
+      "skill": "N5",
+      "passage": "n5-p39",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Sam feel when he read that he had won second prize?",
+      "options": [
+        "proud and a little disappointed",
+        "proud and completely calm",
+        "embarrassed and lonely",
+        "surprised and relieved"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        7,
+        9
+      ],
+      "hint": "In the second paragraph, find two kinds of clues: what Sam won, and what his shoulders and hands did.",
+      "explain": "Sam felt proud and a little disappointed. He won a prize, but his shoulders sank and he folded the letter into a tight square. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "mixed-feelings",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i103",
+      "skill": "N5",
+      "passage": "n5-p39",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam told his dad he was happy. What did Sam still want?",
+      "options": [
+        "to take the tour of the train yard",
+        "to ride in the cab of the morning express",
+        "to read his essay to his class",
+        "to work as a mechanic in the repair shop"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        9,
+        10
+      ],
+      "hint": "Sam's words and his actions do not match. Look at what he did after he said yes, and what he looked at that night.",
+      "explain": "Sam still wanted the first prize: a ride in the cab of the morning express. He folded the letter tightly and stared at a photo of the express that night. The tour was what he won, not what he wanted most. The clues are in the first and second paragraphs.",
+      "inference": 2,
+      "tags": [
+        "unspoken-want",
+        "want"
+      ]
+    },
+    {
+      "id": "n5-i104",
+      "skill": "N5",
+      "passage": "n5-p39",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence where Sam's words and his feelings are different.",
+      "unit": "sentence",
+      "answer": [
+        9
+      ],
+      "evidence": [
+        9
+      ],
+      "hint": "Find Sam's answer to his dad. Look at his voice and his hands while he answered.",
+      "explain": "\"'Yes,' Sam said quietly, and he folded the letter into a small, tight square\" shows it. He said yes, but his quiet voice and tight fold show he was not fully happy. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "unspoken-want",
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i105",
+      "skill": "N5",
+      "passage": "n5-p39",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put Sam's feelings about the contest in the order they happened.",
+      "steps": [
+        "Sam was excited and worked hard on his essay.",
+        "Sam was disappointed when he read the letter.",
+        "Sam was curious and happy on the tour.",
+        "Sam was eager to enter the contest again next year."
+      ],
+      "evidence": [
+        3,
+        7,
+        12,
+        15,
+        16
+      ],
+      "hint": "Read one paragraph at a time. For each one, ask what Sam's actions show.",
+      "explain": "First Sam was excited and read his essay to Pixel again and again. Then his shoulders sank when he read the letter. On the tour he asked many questions and grinned. At the end, he had already chosen next year's topic.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i106",
+      "skill": "N5",
+      "passage": "n5-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya said, \"Sure, it's fine.\" How did she really feel?",
+      "options": [
+        "relieved",
+        "proud",
+        "curious",
+        "frustrated"
+      ],
+      "pictures": [
+        "😌",
+        "😊",
+        "🤔",
+        "😤"
+      ],
+      "answer": 3,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Do not stop at her words. Look at her laugh, her hands and her eyes in the second paragraph.",
+      "explain": "Maya felt frustrated. Her laugh was short, she stopped talking, she pressed the edges of her cards and she did not look up. These clues are in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i107",
+      "skill": "N5",
+      "passage": "n5-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did Ben suggest playing a round with the cards face up?",
+      "options": [
+        "He wanted to see Maya's cards so that he could win.",
+        "The rules said that the third round is played face up.",
+        "He noticed Maya was unhappy and wanted to help her learn.",
+        "He was bored of winning every round."
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        9,
+        10
+      ],
+      "hint": "Ben spoke right after he watched Maya. Think about what he saw, and read the reason he gave.",
+      "explain": "Ben noticed Maya was unhappy and wanted to help her learn. He watched her for a moment, then said they could show each other their best moves. It is at the start of the third paragraph.",
+      "inference": 2,
+      "tags": [
+        "intention",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n5-i108",
+      "skill": "N5",
+      "passage": "n5-p40",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort the clues. Which ones show Maya was frustrated, and which show she was relaxed and happy?",
+      "bins": [
+        "Frustrated",
+        "Relaxed and happy"
+      ],
+      "cards": [
+        {
+          "text": "Her laugh was short.",
+          "bin": 0
+        },
+        {
+          "text": "Her shoulders relaxed.",
+          "bin": 1
+        },
+        {
+          "text": "She kept pressing the edges of her cards.",
+          "bin": 0
+        },
+        {
+          "text": "She threw both hands in the air.",
+          "bin": 1
+        },
+        {
+          "text": "She said, \"Sure, it's fine,\" without looking up.",
+          "bin": 0
+        },
+        {
+          "text": "Her laugh was long and loud.",
+          "bin": 1
+        }
+      ],
+      "hint": "Ask if each clue came before or after Ben's idea about playing face up.",
+      "explain": "Before Ben's idea, Maya was frustrated: a short laugh, pressing her cards and not looking up. After it, she was relaxed and happy: her shoulders relaxed, she threw her hands up and laughed long and loud.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "hidden-feeling",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i109",
+      "skill": "N5",
+      "passage": "n5-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "In the first two rounds, how were Ana's feelings and Maya's feelings different?",
+      "options": [
+        "Ana was excited, and Maya was frustrated.",
+        "Ana was frustrated, and Maya was excited.",
+        "Ana was excited, and Maya was relieved.",
+        "Ana was embarrassed, and Maya was proud."
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "Find what Ana did each time she won. Then find what Maya did at the same time.",
+      "explain": "Ana was excited: she cheered and slapped the table. Maya was frustrated: her laugh was short and she stopped talking. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "two-characters",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i110",
+      "skill": "N5",
+      "passage": "n5-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What did Maya want but not say out loud?",
+      "options": [
+        "to ask Mr. Varga about the green striped stone",
+        "to hold the green stone in her hands",
+        "to go back into the narrow tunnel",
+        "to show Mr. Varga her drawings of the carts"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "hint": "Look at Maya's feet and her hand when Mr. Varga asked for questions. Then read what she wrote.",
+      "explain": "Maya wanted to ask Mr. Varga about the green striped stone. She stepped toward him, raised her hand halfway and wrote the question in her sketchbook. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "unspoken-want",
+        "want"
+      ]
+    },
+    {
+      "id": "n5-i111",
+      "skill": "N5",
+      "passage": "n5-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Maya feel when Mr. Varga asked for questions in the mineral room?",
+      "options": [
+        "bored and tired",
+        "curious and nervous",
+        "proud and calm",
+        "frustrated and lonely"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5,
+        6
+      ],
+      "hint": "Find two kinds of clues: one that shows she wanted to know something, and one that shows she felt unsure.",
+      "explain": "Maya felt curious and nervous. She wanted to know about the stone, but she stopped, looked at the floor and dropped her hand. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "mixed-feelings",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i112",
+      "skill": "N5",
+      "passage": "n5-p41",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that shows Maya almost asked her question out loud.",
+      "unit": "sentence",
+      "answer": [
+        5,
+        6
+      ],
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Look in the second paragraph for something Maya started to do and then stopped.",
+      "explain": "\"Maya's hand rose halfway before it dropped back to her side\" shows she almost asked. Stepping toward Mr. Varga and stopping shows it too. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action",
+        "unspoken-want"
+      ]
+    },
+    {
+      "id": "n5-i113",
+      "skill": "N5",
+      "passage": "n5-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Maya get her question answered?",
+      "options": [
+        "Sam asked Mr. Varga the question for her.",
+        "She showed Mr. Varga the question she had written.",
+        "Mr. Varga saw her drawing and explained the stone.",
+        "She waited until the other kids had left and then asked."
+      ],
+      "answer": 1,
+      "evidence": [
+        9,
+        11,
+        12
+      ],
+      "hint": "Read the third paragraph. Sam gave an idea, but check who walked up to Mr. Varga and what she showed him.",
+      "explain": "Maya showed Mr. Varga the question she had written. Sam only whispered the idea; Maya walked up and turned the page toward Mr. Varga herself. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "feeling-cause"
+      ]
+    },
+    {
+      "id": "n5-i114",
+      "skill": "N5",
+      "passage": "n5-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Sam feel right after the string snapped?",
+      "options": [
+        "curious",
+        "proud",
+        "frustrated",
+        "relieved"
+      ],
+      "pictures": [
+        "🤔",
+        "😊",
+        "😤",
+        "😌"
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "In the second paragraph, look at his face, his hands, his words and what he thought about doing.",
+      "explain": "Sam felt frustrated. His face went hot, he gripped the guitar until his knuckles turned white, and he whispered that he could not play. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n5-i115",
+      "skill": "N5",
+      "passage": "n5-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What helped Sam settle down after the string broke?",
+      "options": [
+        "Mrs. Lin gave him a new string for his guitar.",
+        "Leo came inside and played the song for him.",
+        "He decided to sing a different song with no guitar.",
+        "He took slow breaths and found a way to play with five strings."
+      ],
+      "answer": 3,
+      "evidence": [
+        10,
+        11,
+        12
+      ],
+      "hint": "Read the third paragraph. Find what Sam did with his breathing and what he worked out about his chords.",
+      "explain": "Sam took three slow breaths and found a way to play with five strings, humming the high notes. It is in the third paragraph. Mrs. Lin offered more time, not a new string.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "problem-solving",
+        "feeling-cause"
+      ]
+    },
+    {
+      "id": "n5-i116",
+      "skill": "N5",
+      "passage": "n5-p42",
+      "format": "storymap",
+      "level": 4,
+      "prompt": "Fill in the story map about Sam.",
+      "slots": [
+        {
+          "kind": "want",
+          "label": "What Sam wanted",
+          "options": [
+            "to be first on Mrs. Lin's list",
+            "to play his guitar song at music night",
+            "to sing with Mrs. Lin",
+            "to sit with Grandma Rose"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "problem",
+          "label": "The problem",
+          "options": [
+            "He forgot the words to his song.",
+            "The café closed early.",
+            "A string snapped while he tuned his guitar.",
+            "Pixel ran into the café."
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "The new plan",
+          "options": [
+            "Play with five strings and hum the high notes.",
+            "Borrow Leo's guitar.",
+            "Play next month instead.",
+            "Play the song much faster."
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "feeling",
+          "label": "How Sam felt at the end",
+          "options": [
+            "embarrassed and lonely",
+            "frustrated",
+            "worried",
+            "proud and happy"
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ],
+      "evidence": [
+        1,
+        4,
+        11,
+        12,
+        16
+      ],
+      "hint": "Do one box at a time. The want is in the first paragraph, the problem in the second, and the new plan and the ending in the third.",
+      "explain": "Sam wanted to play his song. A string snapped. He played with five strings and hummed the high notes. At the end he bowed and laughed, so he was proud and happy.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "plan-change",
+        "want",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i117",
+      "skill": "N5",
+      "passage": "n5-p42",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that shows Sam felt settled and proud at the end.",
+      "unit": "sentence",
+      "answer": [
+        16
+      ],
+      "evidence": [
+        16
+      ],
+      "hint": "Find what Sam did after everyone clapped. Look at how he treated the broken string this time.",
+      "explain": "\"Sam bowed, and then he laughed and held up the broken string for everyone to see\" shows he felt settled and proud. It is the last sentence.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i118",
+      "skill": "N5",
+      "passage": "n5-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "After the race, what did Ana believe about Priya?",
+      "options": [
+        "Priya was proud that they finished fourth.",
+        "Priya was angry with Ms. Ortiz.",
+        "Priya wanted to run third next time.",
+        "Priya was angry with her about the dropped baton."
+      ],
+      "answer": 3,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Think only about what Ana could see from across the field. Read what Ana was certain about.",
+      "explain": "Ana believed Priya was angry with her about the dropped baton. She saw Priya talking seriously and not smiling, and she was certain Priya was angry. It is at the end of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i119",
+      "skill": "N5",
+      "passage": "n5-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana and Priya felt differently after the race. Which sentence is right?",
+      "options": [
+        "Ana was embarrassed and worried, and Priya was calm and wanted to practice.",
+        "Ana was calm, and Priya was angry with Ana.",
+        "Ana and Priya were both angry with each other.",
+        "Ana was proud, and Priya was embarrassed and lonely."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "hint": "Find Ana's clues in the second paragraph. Then find what Priya said in the third paragraph.",
+      "explain": "Ana was embarrassed and worried: she looked at her shoes and sat alone. Priya was calm: she was glad they finished and wanted to practice again. This is in the second and third paragraphs.",
+      "inference": 2,
+      "tags": [
+        "two-characters",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i120",
+      "skill": "N5",
+      "passage": "n5-p43",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Ana's belief was wrong. Tap the sentence that tells why Priya was really talking to Ms. Ortiz.",
+      "unit": "sentence",
+      "answer": [
+        12
+      ],
+      "evidence": [
+        12
+      ],
+      "hint": "Ana could not hear Priya from across the field. Find what Priya says about it later.",
+      "explain": "Priya was asking Ms. Ortiz about their handoff, because she thought she reached back too early. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i121",
+      "skill": "N5",
+      "passage": "n5-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Ana feel at the very end of the story?",
+      "options": [
+        "embarrassed",
+        "lonely",
+        "frustrated",
+        "relieved"
+      ],
+      "pictures": [
+        "😳",
+        "😔",
+        "😤",
+        "😌"
+      ],
+      "answer": 3,
+      "evidence": [
+        13,
+        14,
+        15
+      ],
+      "hint": "Find what Ana learned from Priya. Then look at what Ana's breath did.",
+      "explain": "Ana felt relieved. Priya said she was not mad, and Ana let out a long breath and walked with her. It is the last sentence.",
+      "inference": 2,
+      "tags": [
+        "feeling-change",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i122",
+      "skill": "N5",
+      "passage": "n5-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya said \"Sure\" when Maya asked if she was having fun. What did Priya want but not say?",
+      "options": [
+        "to use the binoculars herself",
+        "to draw the birds in Maya's sketchbook",
+        "to count birds at a different creek",
+        "to get warm, and maybe go home"
+      ],
+      "answer": 3,
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "Priya's word and her body do not match. Look at her hands, her feet, her teeth and where she kept looking.",
+      "explain": "Priya wanted to get warm, and maybe go home. Her hands were deep in her pockets, she bounced on her toes, her teeth chattered and she kept glancing at the parking lot. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "unspoken-want",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i123",
+      "skill": "N5",
+      "passage": "n5-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "At the start of the bird count, how were Maya's and Priya's feelings different?",
+      "options": [
+        "Maya was cold and unhappy, and Priya was excited.",
+        "Maya was excited, and Priya was cold and unhappy.",
+        "Maya and Priya were both excited.",
+        "Maya was bored, and Priya was curious."
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hint": "Find what Maya did when she saw the chickadee. Then find three clues about Priya in the same paragraph.",
+      "explain": "Maya was excited: she marked the chickadee with a big grin. Priya was cold and unhappy: her hands were in her pockets and her teeth chattered. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "two-characters",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i124",
+      "skill": "N5",
+      "passage": "n5-p44",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort the clues about Priya. Which show she was cold and unhappy, and which show she was curious and excited?",
+      "bins": [
+        "Cold and unhappy",
+        "Curious and excited"
+      ],
+      "cards": [
+        {
+          "text": "Her hands were pushed deep into her pockets.",
+          "bin": 0
+        },
+        {
+          "text": "She shouted, \"What was that?\"",
+          "bin": 1
+        },
+        {
+          "text": "She kept glancing back toward the parking lot.",
+          "bin": 0
+        },
+        {
+          "text": "She watched the water for another kingfisher.",
+          "bin": 1
+        },
+        {
+          "text": "Her teeth were chattering.",
+          "bin": 0
+        },
+        {
+          "text": "She held the clipboard all morning.",
+          "bin": 1
+        }
+      ],
+      "hint": "Ask if each clue came before or after the kingfisher dove into the creek.",
+      "explain": "Before the kingfisher, Priya was cold and unhappy: hands in her pockets, glancing at the parking lot, teeth chattering. After it, she was curious and excited: she shouted a question, watched the water and kept the tally all morning.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "hidden-feeling",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i125",
+      "skill": "N5",
+      "passage": "n5-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did Maya ask Priya to be the tally keeper in the sunny spot?",
+      "options": [
+        "Maya noticed Priya was cold and wanted to help her feel better.",
+        "Maya wanted to stand in the sunny spot herself.",
+        "Maya thought Priya was better at counting than at spotting birds.",
+        "Maya needed someone to watch the parking lot."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9,
+        10
+      ],
+      "hint": "Find what Maya looked at just before she asked. Think about why she gave Priya cocoa and a spot in the sun.",
+      "explain": "Maya noticed Priya was cold and wanted to help her feel better. She looked at Priya's red nose and raised shoulders, gave her hot cocoa and sent her to the sunny spot. It is at the start of the third paragraph.",
+      "inference": 2,
+      "tags": [
+        "intention",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n5-i126",
+      "skill": "N5",
+      "passage": "n5-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "When Leo first saw the skeleton, what did he believe?",
+      "options": [
+        "The bones in the hall were the real fossil bones.",
+        "The skeleton was a copy made from real fossils.",
+        "The skeleton came from a different kind of dinosaur.",
+        "Dr. Bell had built the skeleton by herself."
+      ],
+      "answer": 0,
+      "evidence": [
+        3
+      ],
+      "hint": "Read what Leo whispered to Priya in the first paragraph.",
+      "explain": "Leo believed the bones were the real fossil bones. He whispered, \"I can't believe these are the actual bones.\" Dr. Bell then explained that it was a cast. It is at the end of the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i127",
+      "skill": "N5",
+      "passage": "n5-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How did Leo feel when he learned that the skeleton was a cast?",
+      "options": [
+        "relieved",
+        "proud",
+        "disappointed",
+        "curious"
+      ],
+      "pictures": [
+        "😌",
+        "😊",
+        "😞",
+        "🤔"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Look at Leo's smile, his feet, his voice and his hands at the end of the second paragraph.",
+      "explain": "Leo felt disappointed. He stopped smiling, stepped back, said \"So it's fake\" in a flat voice and pushed his hands into his pockets. It is at the end of the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i128",
+      "skill": "N5",
+      "passage": "n5-p45",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that shows Leo was amazed when he held the real tooth.",
+      "unit": "sentence",
+      "answer": [
+        13
+      ],
+      "evidence": [
+        13
+      ],
+      "hint": "Find the part after Dr. Bell handed Leo the gloves. Look at his breath and his hands.",
+      "explain": "\"Leo held his breath, and his hands stayed completely still\" shows he was amazed. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i129",
+      "skill": "N5",
+      "passage": "n5-p45",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put Leo's feelings at the museum in the order they happened.",
+      "steps": [
+        "Leo was excited by the giant skeleton.",
+        "Leo was disappointed to learn it was a copy.",
+        "Leo was amazed to hold a real tooth.",
+        "Leo was curious to learn more about dinosaurs."
+      ],
+      "evidence": [
+        2,
+        3,
+        7,
+        8,
+        13,
+        14
+      ],
+      "hint": "Read one paragraph at a time. For each one, ask what Leo did or said.",
+      "explain": "First Leo walked around the skeleton three times. Then he stopped smiling when he heard it was a cast. In the lab he held his breath with the real tooth. On the bus home he asked Priya to quiz him on dinosaur facts.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i130",
+      "skill": "N5",
+      "passage": "n5-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben joked that the animals looked busy. How did he really feel?",
+      "options": [
+        "proud",
+        "nervous",
+        "lonely",
+        "relieved"
+      ],
+      "pictures": [
+        "😊",
+        "😬",
+        "😔",
+        "😌"
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "A joke can hide a feeling. Look at where Ben stood, where his hands were and what his feet did when the crab came close.",
+      "explain": "Ben felt nervous. He stood back with his hands behind his back, and when the crab came toward him he laughed but stepped back again. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i131",
+      "skill": "N5",
+      "passage": "n5-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why did Maya tell Ben that the sea star moves very slowly?",
+      "options": [
+        "She noticed Ben was nervous and wanted to help him feel safe.",
+        "She wanted Ben to leave the sea star alone.",
+        "She wanted to teach Ben a fact for a school report.",
+        "She thought Ben was bored and wanted to go home."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find what Maya noticed just before she spoke. Think about why a slow animal might help.",
+      "explain": "Maya noticed Ben still had not touched a single animal, and she wanted to help him feel safe. A slow sea star is one he could watch the whole time. It is at the start of the third paragraph.",
+      "inference": 2,
+      "tags": [
+        "intention",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n5-i132",
+      "skill": "N5",
+      "passage": "n5-p46",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort the clues about Ben. Which show he was nervous, and which show he was curious?",
+      "bins": [
+        "Nervous",
+        "Curious"
+      ],
+      "cards": [
+        {
+          "text": "He stood back with his hands behind his back.",
+          "bin": 0
+        },
+        {
+          "text": "He touched the sea star twice more.",
+          "bin": 1
+        },
+        {
+          "text": "He made a joke about the animals being busy.",
+          "bin": 0
+        },
+        {
+          "text": "He asked the volunteer how sea stars eat.",
+          "bin": 1
+        },
+        {
+          "text": "He laughed loudly but took another step back.",
+          "bin": 0
+        }
+      ],
+      "hint": "Ask if each clue came before or after Ben touched the sea star for the first time.",
+      "explain": "Before he touched the sea star, Ben was nervous: he stood back, made a joke and stepped away from the crab. After, he was curious: he touched it again and asked how sea stars eat.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "hidden-feeling",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i133",
+      "skill": "N5",
+      "passage": "n5-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Before he touched it, what did Ben think the sea star would feel like?",
+      "options": [
+        "rough and bumpy",
+        "sharp",
+        "warm",
+        "slimy"
+      ],
+      "answer": 3,
+      "evidence": [
+        13
+      ],
+      "hint": "Read what Ben said right after he touched it. Look for the words \"I thought.\"",
+      "explain": "Ben thought it would be slimy. He said, \"I thought it would be slimy.\" Really it felt rough. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i134",
+      "skill": "N5",
+      "passage": "n5-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Before 7:42, what did Leo believe about Priya's time?",
+      "options": [
+        "She had the exact minute right.",
+        "She was only guessing the time.",
+        "The station would come an hour later.",
+        "The station could not be seen from Harbor Town."
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        8
+      ],
+      "hint": "Read what Leo asked Priya when he arrived, and what he said at 7:41.",
+      "explain": "Leo believed Priya was only guessing. He said, \"You're just guessing, right?\" and at 7:41 he said, \"See? Nothing.\" This is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i135",
+      "skill": "N5",
+      "passage": "n5-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "While they waited, how were Priya and Leo feeling differently?",
+      "options": [
+        "Priya was calm and sure, and Leo did not think the station would come.",
+        "Priya was worried, and Leo was sure the station would come.",
+        "Priya and Leo were both nervous.",
+        "Priya was frustrated with Leo, and Leo was embarrassed."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "hint": "Find what Priya did while she waited. Then find what Leo did and said at 7:41.",
+      "explain": "Priya was calm and sure: she checked her watch, pointed at the trees and waited calmly. Leo did not think it would come: he played with his popcorn and said, \"See? Nothing.\" It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "two-characters",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i136",
+      "skill": "N5",
+      "passage": "n5-p47",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that shows Leo was amazed when he saw the station.",
+      "unit": "sentence",
+      "answer": [
+        11
+      ],
+      "evidence": [
+        11
+      ],
+      "hint": "Find what Leo was doing with his popcorn. Look at what happened to him when the light appeared.",
+      "explain": "\"Leo stopped moving, with a piece of popcorn halfway to his mouth\" shows he was amazed. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i137",
+      "skill": "N5",
+      "passage": "n5-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "At the end of the story, what did Leo want?",
+      "options": [
+        "to go home before it got cold",
+        "to see the space station pass over again",
+        "to eat the rest of his popcorn",
+        "to borrow Priya's watch"
+      ],
+      "answer": 1,
+      "evidence": [
+        14
+      ],
+      "hint": "Read the last sentence. Look at what Leo asked Priya.",
+      "explain": "Leo wanted to see the space station again. He asked Priya when it would pass over again. It is the last sentence.",
+      "inference": 1,
+      "tags": [
+        "want",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i138",
+      "skill": "N5",
+      "passage": "n5-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya said, \"I'm just tired.\" How did she really feel?",
+      "options": [
+        "nervous",
+        "frustrated",
+        "proud",
+        "lonely"
+      ],
+      "pictures": [
+        "😬",
+        "😤",
+        "😊",
+        "😔"
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        10
+      ],
+      "hint": "Her words say one thing. Look at her sleeping bag, her flashlight, her eyes and whether she closed them.",
+      "explain": "Maya felt nervous. She zipped her bag to her chin, kept her flashlight on, looked quickly at every creak and did not close her eyes. These clues are in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i139",
+      "skill": "N5",
+      "passage": "n5-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben and Maya lay in the same dark hall. How did each of them feel when the lights went off?",
+      "options": [
+        "Ben was nervous, and Maya was thrilled.",
+        "Ben and Maya were both tired and calm.",
+        "Ben was thrilled, and Maya was nervous.",
+        "Ben was disappointed, and Maya was curious."
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Find what Ben whispered. Then find what Maya did with her sleeping bag and flashlight.",
+      "explain": "Ben was thrilled: he whispered that it was the best night of his life. Maya was nervous: she zipped her bag to her chin and kept her flashlight on. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "two-characters",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i140",
+      "skill": "N5",
+      "passage": "n5-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What helped Maya stop feeling nervous?",
+      "options": [
+        "Ben told her that the museum was safe.",
+        "The staff turned the main lights back on.",
+        "She fell asleep and forgot about the shadows.",
+        "Dr. Bell's lantern tour helped her get to know every skeleton."
+      ],
+      "answer": 3,
+      "evidence": [
+        11,
+        15,
+        17
+      ],
+      "hint": "Find what happened in the third paragraph. Then read what Maya told Ben at the end.",
+      "explain": "Dr. Bell's lantern tour helped Maya get to know every skeleton. She sketched each one, and at the end she said, \"I know every one of them now.\" This is in the third and last paragraphs.",
+      "inference": 2,
+      "tags": [
+        "feeling-cause",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i141",
+      "skill": "N5",
+      "passage": "n5-p48",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put Maya's feelings in the order they happened.",
+      "steps": [
+        "Maya was nervous about the shadows in the dark hall.",
+        "Maya was unsure, but she followed the lantern tour.",
+        "Maya grew calmer as she sketched each skeleton.",
+        "Maya felt safe enough to switch off her flashlight."
+      ],
+      "evidence": [
+        7,
+        12,
+        15,
+        16
+      ],
+      "hint": "Follow Maya's flashlight and her drawing hand from the second paragraph to the end.",
+      "explain": "First Maya kept her flashlight on and watched every creak. Then she slowly unzipped her bag to join the tour. Her drawing hand grew steadier as she sketched. At the end she switched off her flashlight without being asked.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i142",
+      "skill": "N5",
+      "passage": "n5-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did Sam feel when he found the empty egg carton?",
+      "options": [
+        "embarrassed",
+        "relieved",
+        "lonely",
+        "frustrated"
+      ],
+      "pictures": [
+        "😳",
+        "😌",
+        "😔",
+        "😤"
+      ],
+      "answer": 3,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Look at what Sam did with the carton and his hands, and how he spoke.",
+      "explain": "Sam felt frustrated. He slammed the carton shut, pressed his hands flat on the counter and said that the plan was ruined with his teeth pressed together. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n5-i143",
+      "skill": "N5",
+      "passage": "n5-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What helped Sam feel settled again after he found the empty carton?",
+      "options": [
+        "His dad drove to another town to buy eggs.",
+        "He decided to buy a cake when the store opened at noon.",
+        "Grandma Rose brought him eggs from the bakery.",
+        "He took slow breaths and remembered a cake recipe that needs no eggs."
+      ],
+      "answer": 3,
+      "evidence": [
+        10,
+        11,
+        12,
+        14
+      ],
+      "hint": "Read the third paragraph. Find what Sam did at the window, and what he remembered next.",
+      "explain": "Sam counted ten slow breaths and remembered an old cookbook with a chocolate cake made without eggs. Then he wrote the new steps on his card. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "problem-solving",
+        "feeling-cause"
+      ]
+    },
+    {
+      "id": "n5-i144",
+      "skill": "N5",
+      "passage": "n5-p49",
+      "format": "build",
+      "level": 5,
+      "prompt": "Build a sentence about how Sam's feelings changed.",
+      "frame": "When Sam found the empty carton, he felt {0}. Then he {1}. At the end, he felt {2}.",
+      "slots": [
+        {
+          "kind": "feeling",
+          "label": "First feeling",
+          "options": [
+            "proud",
+            "frustrated",
+            "curious",
+            "relieved"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "What he did",
+          "options": [
+            "found a cake recipe without eggs",
+            "went to the store at nine",
+            "asked Grandma Rose for eggs",
+            "bought a cake instead"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "feeling",
+          "label": "Last feeling",
+          "options": [
+            "lonely",
+            "frustrated",
+            "proud",
+            "worried"
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ],
+      "evidence": [
+        7,
+        8,
+        12,
+        17
+      ],
+      "hint": "Fill one box at a time. Look at the second paragraph, then the third, then the last.",
+      "explain": "When Sam found the empty carton, he felt frustrated. Then he found a cake recipe without eggs. At the end, he felt proud: he explained the vinegar trick with a proud grin.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "plan-change",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i145",
+      "skill": "N5",
+      "passage": "n5-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did Sam have to solve the egg problem without Grandma Rose's help?",
+      "options": [
+        "The bakery had no eggs that day.",
+        "He did not want to spoil the surprise.",
+        "He was upset with Grandma Rose.",
+        "His dad told him not to call her."
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        9
+      ],
+      "hint": "Remember what Sam wanted to do for Grandma Rose. Then read the last sentence of the second paragraph.",
+      "explain": "Sam did not want to spoil the surprise. He wanted to surprise Grandma Rose with a cake, and asking her for eggs would give the secret away. It is at the end of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "want",
+        "intention"
+      ]
+    },
+    {
+      "id": "n5-i146",
+      "skill": "N5",
+      "passage": "n5-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Before he saw Priya's pencil mark, what did Sam believe?",
+      "options": [
+        "The song was going perfectly.",
+        "Priya wanted to play the song faster.",
+        "Priya did not like the folk song.",
+        "Ms. Gray wanted them to choose another song."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        9
+      ],
+      "hint": "Find what Sam said after each practice. Then read the first sentence of the third paragraph.",
+      "explain": "Sam believed the song was going perfectly. He said \"That was our best one yet!\" because Priya never said that anything was wrong. This is in the second and third paragraphs.",
+      "inference": 1,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i147",
+      "skill": "N5",
+      "passage": "n5-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What did Priya want but not say for two weeks?",
+      "options": [
+        "to choose a different song",
+        "to stop playing at the music night",
+        "to play the middle section more slowly",
+        "to play the guitar part herself"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        5,
+        8,
+        12
+      ],
+      "hint": "Look at her pencil mark and at what she admitted in the third paragraph.",
+      "explain": "Priya wanted to play the middle section more slowly. She marked it \"SLOWER\" and later admitted she had wanted to ask Sam to slow down for two weeks. This is in the second and third paragraphs.",
+      "inference": 2,
+      "tags": [
+        "unspoken-want",
+        "want"
+      ]
+    },
+    {
+      "id": "n5-i148",
+      "skill": "N5",
+      "passage": "n5-p50",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort the clues. Which show Priya was unhappy with the speed, and which show Sam was happy with it?",
+      "bins": [
+        "Priya: unhappy with the speed",
+        "Sam: happy with the speed"
+      ],
+      "cards": [
+        {
+          "text": "She frowned at the music.",
+          "bin": 0
+        },
+        {
+          "text": "He tapped his foot hard.",
+          "bin": 1
+        },
+        {
+          "text": "Her bow made a scratchy sound.",
+          "bin": 0
+        },
+        {
+          "text": "He said, \"That was our best one yet!\"",
+          "bin": 1
+        },
+        {
+          "text": "She packed up faster than usual.",
+          "bin": 0
+        },
+        {
+          "text": "He grinned after every practice.",
+          "bin": 1
+        }
+      ],
+      "hint": "First decide who each clue is about. Then ask what that person felt about the speed.",
+      "explain": "Priya frowned, played scratchy notes and packed up quickly, so she was unhappy with the speed. Sam tapped his foot, grinned and called it their best one, so he was happy with it. They felt differently about the same practices.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "two-characters",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i149",
+      "skill": "N5",
+      "passage": "n5-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya said \"Yeah, good\" after every practice. Why did she keep her wish a secret for two weeks?",
+      "options": [
+        "She wanted Sam to play even faster.",
+        "She worried that Sam would think she was not good enough.",
+        "She thought the music night was canceled.",
+        "She did not want to play with Sam at all."
+      ],
+      "answer": 1,
+      "evidence": [
+        12
+      ],
+      "hint": "Read what Priya admitted after Sam asked his question.",
+      "explain": "Priya worried that Sam would think she was not good enough. She admitted this in the third paragraph, after Sam asked if the middle part was too fast.",
+      "inference": 1,
+      "tags": [
+        "unspoken-want",
+        "feeling-cause"
+      ]
+    },
+    {
+      "id": "n5-i150",
+      "skill": "N5",
+      "passage": "n5-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did Ben feel when he saw \"Time remaining: 8 hours\"?",
+      "options": [
+        "relieved",
+        "frustrated",
+        "proud",
+        "curious"
+      ],
+      "pictures": [
+        "😌",
+        "😤",
+        "😊",
+        "🤔"
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Look at the sound Ben made, how he sat down and what he kept doing.",
+      "explain": "Ben felt frustrated. He groaned, dropped onto the couch, kept checking the bar and sat down harder each time. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n5-i151",
+      "skill": "N5",
+      "passage": "n5-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben and Leo saw the same slow download. How did each of them react?",
+      "options": [
+        "Ben stayed calm, and Leo was frustrated.",
+        "Ben and Leo were both frustrated.",
+        "Ben and Leo were both excited.",
+        "Ben was frustrated, and Leo stayed calm."
+      ],
+      "answer": 3,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Find what Ben did on the couch. Then find what Leo said and did.",
+      "explain": "Ben was frustrated: he groaned and kept checking the bar. Leo stayed calm: he shrugged, said \"It will finish when it finishes\" and went for juice. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "two-characters",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n5-i152",
+      "skill": "N5",
+      "passage": "n5-p51",
+      "format": "storymap",
+      "level": 5,
+      "prompt": "Fill in the story map about Ben's Saturday.",
+      "slots": [
+        {
+          "kind": "want",
+          "label": "What Ben wanted",
+          "options": [
+            "to play a railroad board game",
+            "to play the new racing game at ten o'clock",
+            "to eat pretzels with Leo",
+            "to finish his longest route"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "problem",
+          "label": "The problem",
+          "options": [
+            "Leo forgot to buy the game.",
+            "The download would take eight hours.",
+            "The controllers did not work.",
+            "Leo's brother took the TV."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "What Ben did instead",
+          "options": [
+            "He went home to wait.",
+            "He watched Leo play alone.",
+            "He played a board game with Leo's little brother.",
+            "He checked the bar all day."
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "feeling",
+          "label": "How Ben felt at the end",
+          "options": [
+            "happy and busy with the board game",
+            "still frustrated",
+            "lonely",
+            "embarrassed"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        4,
+        12,
+        14,
+        17
+      ],
+      "hint": "Do one box at a time. The want is in the first paragraph, the problem in the second, what he did instead in the third, and the ending in the last.",
+      "explain": "Ben wanted to play the new racing game at ten. The download would take eight hours. He played a railroad board game with Leo's little brother instead. At the end he was so happy with it that he asked to finish the round first.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "plan-change",
+        "want",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i153",
+      "skill": "N5",
+      "passage": "n5-p51",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that shows Ben's feelings had changed by the end.",
+      "unit": "sentence",
+      "answer": [
+        16,
+        17
+      ],
+      "evidence": [
+        16,
+        17
+      ],
+      "hint": "Find the moment the download finished. Look at what Ben did and said then.",
+      "explain": "\"Can we finish this round first?\" shows Ben's feelings had changed. The game he waited all day for was ready, but he wanted to keep playing the board game. Ben not moving from the floor shows it too. It is in the last paragraph.",
+      "inference": 2,
+      "tags": [
+        "feeling-change",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "n5-i154",
+      "skill": "N5",
+      "passage": "n5-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did Priya leave the boy alone during the workshop?",
+      "options": [
+        "She believed he thought robots were boring.",
+        "She knew he was worried that he would break the parts.",
+        "Mrs. Hall asked her to help only the other children.",
+        "He told her he already knew how to build robots."
+      ],
+      "answer": 0,
+      "evidence": [
+        6
+      ],
+      "hint": "Find what Priya decided after the boy shook his head. Be careful: what Priya knew then is different from what was true.",
+      "explain": "Priya believed he thought robots were boring. She decided this after he shook his head and looked out the window. She learned the truth only later, from Mrs. Hall. It is at the end of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i155",
+      "skill": "N5",
+      "passage": "n5-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did the boy really feel at the start of the workshop?",
+      "options": [
+        "bored",
+        "proud",
+        "nervous",
+        "lonely"
+      ],
+      "pictures": [
+        "🥱",
+        "😊",
+        "😬",
+        "😔"
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        10
+      ],
+      "hint": "What Priya guessed was wrong. Read what the boy did at the racing table, and what Mrs. Hall learned.",
+      "explain": "The boy felt nervous. He loved robots but was worried he would break the parts, so he reached for a wheel and quickly pulled his hand back. This is in the third paragraph.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "false-belief"
+      ]
+    },
+    {
+      "id": "n5-i156",
+      "skill": "N5",
+      "passage": "n5-p52",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that shows the boy wanted to touch the robots but felt unsure.",
+      "unit": "sentence",
+      "answer": [
+        8
+      ],
+      "evidence": [
+        8
+      ],
+      "hint": "Look in the third paragraph for something the boy started to do and then stopped.",
+      "explain": "\"He reached out to touch one of the wheels, then quickly pulled his hand back\" shows he wanted to touch it but felt unsure. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "unspoken-want",
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i157",
+      "skill": "N5",
+      "passage": "n5-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did Priya feel when she learned the truth, and what did she do next?",
+      "options": [
+        "She felt frustrated, and she asked Mrs. Hall to help him.",
+        "She felt lonely, and she packed up the spare kit.",
+        "She felt proud, and she raced the finished robots.",
+        "She felt a little embarrassed, and she sat down to help the boy build."
+      ],
+      "answer": 3,
+      "evidence": [
+        11,
+        12,
+        13
+      ],
+      "hint": "Look at Priya's cheeks at the start of the last paragraph. Then read what she did with the spare kit.",
+      "explain": "Priya felt a little embarrassed, because her cheeks felt warm when she learned she had guessed wrong. Then she opened a spare kit and sat down to help the boy. It is in the last paragraph.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "n5-i158",
+      "skill": "N5",
+      "passage": "n5-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "When the boat first tipped, how did Ana and Leo each feel?",
+      "options": [
+        "Leo was nervous, and Ana was thrilled.",
+        "Leo and Ana were both calm.",
+        "Leo was embarrassed, and Ana was frustrated.",
+        "Leo was thrilled, and Ana was nervous."
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "hint": "In the second paragraph, find what Leo did when the boat tipped. Then find what Ana's hands and voice did.",
+      "explain": "Leo was thrilled: he whooped, leaned out and laughed. Ana was nervous: she gripped the bench until her knuckles turned pale and asked her question in a small voice. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "two-characters",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i159",
+      "skill": "N5",
+      "passage": "n5-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which clue shows Ana's feeling through her body?",
+      "options": [
+        "She asked, \"Is it supposed to lean like this?\"",
+        "Her knuckles turned pale as she grabbed the bench.",
+        "Leo whooped and leaned out over the side.",
+        "The instructor had been sailing for thirty years."
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Check who each option is about. Then ask: is this something Ana said, or something her body did?",
+      "explain": "Her pale knuckles as she grabbed the bench are a body clue. Her question is a word clue, and the other two options are about Leo and the instructor. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "shown-by-action",
+        "clue-type"
+      ]
+    },
+    {
+      "id": "n5-i160",
+      "skill": "N5",
+      "passage": "n5-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What helped Ana go from nervous to confident?",
+      "options": [
+        "She learned why the boat leans and how to control it with the rope.",
+        "Leo held the rope for her the whole time.",
+        "The wind stopped, so the boat no longer leaned.",
+        "The instructor steered the boat back to the dock early."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9,
+        11,
+        12,
+        13
+      ],
+      "hint": "Read the third paragraph. Find what the instructor explained and what she handed to Ana.",
+      "explain": "Ana learned why the boat leans and how to control it with the rope. The instructor explained the keel, and Ana practiced letting the rope out and pulling it in until her shoulders relaxed. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "feeling-cause",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i161",
+      "skill": "N5",
+      "passage": "n5-p53",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put Ana's feelings in the order they happened.",
+      "steps": [
+        "Ana was nervous when the boat tipped.",
+        "Ana grew calmer as she learned to use the rope.",
+        "Ana felt confident and wanted to go faster.",
+        "Ana was proud to teach Leo the rope trick."
+      ],
+      "evidence": [
+        5,
+        13,
+        14,
+        16
+      ],
+      "hint": "Follow Ana from the second paragraph to the last. Look at her hands, her shoulders and what she asked for.",
+      "explain": "First Ana gripped the bench. Then her shoulders slowly relaxed as she used the rope. Next she asked to go faster. Last, she taught Leo the trick and grinned the whole way in.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i162",
+      "skill": "N5",
+      "passage": "n5-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did Ben feel when Ana was chosen as captain?",
+      "options": [
+        "relieved that he did not have to be captain",
+        "proud of Ana and disappointed for himself",
+        "upset with Ana and the whole team",
+        "embarrassed and lonely"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "hint": "Remember what Ben had hoped for. Then find clues from the field and different clues from the walk home.",
+      "explain": "Ben felt proud of Ana and disappointed for himself. He hugged her first and meant it when he said she would be great, but he had hoped to be captain, and he kicked a pebble for three blocks. This is in the first two paragraphs.",
+      "inference": 2,
+      "tags": [
+        "mixed-feelings",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i163",
+      "skill": "N5",
+      "passage": "n5-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did Ana feel on the walk home after the vote?",
+      "options": [
+        "proud and completely calm",
+        "annoyed with Ben for being so quiet",
+        "excited to be captain and worried about Ben",
+        "disappointed that she was chosen"
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Read the start of the third paragraph. Find one clue about being captain and one clue about her brother.",
+      "explain": "Ana was excited to be captain and worried about Ben. She noticed he was quiet, kept glancing at him and her smile kept fading. It is at the start of the third paragraph.",
+      "inference": 2,
+      "tags": [
+        "mixed-feelings",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n5-i164",
+      "skill": "N5",
+      "passage": "n5-p54",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort Ben's clues. Which show he was proud of Ana, and which show he was disappointed?",
+      "bins": [
+        "Proud of Ana",
+        "Disappointed"
+      ],
+      "cards": [
+        {
+          "text": "He was the first one to hug his sister.",
+          "bin": 0
+        },
+        {
+          "text": "He kicked a pebble for three entire blocks.",
+          "bin": 1
+        },
+        {
+          "text": "He told her, \"You'll be great at it.\"",
+          "bin": 0
+        },
+        {
+          "text": "He answered Ana's questions with single words.",
+          "bin": 1
+        },
+        {
+          "text": "He clapped when the votes were counted.",
+          "bin": 0
+        }
+      ],
+      "hint": "A person can feel two things at once. Ask if each clue is about Ana's success or about Ben's own hope.",
+      "explain": "Hugging Ana first, clapping and saying she would be great show Ben was proud of her. Kicking a pebble for three blocks and answering with single words show he was disappointed for himself.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "mixed-feelings",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i165",
+      "skill": "N5",
+      "passage": "n5-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did Ana ask Ben to lead the warm-ups?",
+      "options": [
+        "Coach Novak told her that Ben had to lead them.",
+        "She did not want to be captain anymore.",
+        "She wanted to stretch in the back row.",
+        "She noticed he was disappointed and gave him a job he was good at."
+      ],
+      "answer": 3,
+      "evidence": [
+        8,
+        10,
+        13
+      ],
+      "hint": "Find what Ana noticed about her brother. Then read the reason she gave him.",
+      "explain": "Ana noticed Ben was disappointed and gave him a job he was good at. She saw how quiet he was, and she said a good captain chooses the best person for each responsibility. It is in the third paragraph.",
+      "inference": 2,
+      "tags": [
+        "intention",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n5-i166",
+      "skill": "N5",
+      "passage": "n5-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo told the ranger it was fine to work alone. How did he really feel?",
+      "options": [
+        "proud",
+        "lonely",
+        "relieved",
+        "curious"
+      ],
+      "pictures": [
+        "😊",
+        "😔",
+        "😌",
+        "🤔"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "hint": "Do not stop at what Leo told the ranger. Look at where he walked, where he ate and what he told his mom.",
+      "explain": "Leo felt lonely. He hiked at the back, ate apart from the others, was left without a partner and told his mom he did not want to go back. It is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i167",
+      "skill": "N5",
+      "passage": "n5-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What did Leo want but not say at camp?",
+      "options": [
+        "to be friends with the kids in his group",
+        "to work alone on every challenge",
+        "to go home early every day",
+        "to walk at the front of the line"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        5,
+        6,
+        8
+      ],
+      "hint": "Think about why Leo told a joke on the first morning. Then compare what he told the ranger with what he told his mom.",
+      "explain": "Leo wanted to be friends with the kids in his group. He tried a joke on the first day, and he felt so alone that he did not want to go back. Saying he liked working alone hid what he wanted. This is in the first and second paragraphs.",
+      "inference": 2,
+      "tags": [
+        "unspoken-want",
+        "want"
+      ]
+    },
+    {
+      "id": "n5-i168",
+      "skill": "N5",
+      "passage": "n5-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What changed how Leo felt about camp?",
+      "options": [
+        "The ranger told two kids to be his partners.",
+        "His friends came back early and joined the camp.",
+        "He shared his idea for the bridge, and his team saw how helpful it was.",
+        "He told a funnier joke on Wednesday morning."
+      ],
+      "answer": 2,
+      "evidence": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "hint": "Read the third and fourth paragraphs. Find what Leo showed his team, and what happened after the bridge held.",
+      "explain": "Leo shared his idea for the bridge, and his team saw how helpful it was. The X made the bridge hold, the girl told everyone it was his idea, and two kids sat with him at lunch. This is in the third and last paragraphs.",
+      "inference": 1,
+      "tags": [
+        "feeling-cause",
+        "feeling-change"
+      ]
+    },
+    {
+      "id": "n5-i169",
+      "skill": "N5",
+      "passage": "n5-p55",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that shows Leo was now happy to go back to camp.",
+      "unit": "sentence",
+      "answer": [
+        17
+      ],
+      "evidence": [
+        17
+      ],
+      "hint": "Compare the end of the second paragraph with the end of the story. Look at what Leo did that evening.",
+      "explain": "\"That evening, Leo packed his bag for Thursday before his mom even asked\" shows he was happy to go back. On Tuesday evening he had said he did not want to go. It is the last sentence.",
+      "inference": 2,
+      "tags": [
+        "feeling-change",
+        "shown-by-action"
+      ]
+    },
+    {
+      "id": "n5-i170",
+      "skill": "N5",
+      "passage": "n5-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How did Sam feel when he saw the final version of the map?",
+      "options": [
+        "proud and completely satisfied",
+        "proud that it won, but disappointed about the gray line",
+        "relieved that the work was finished",
+        "embarrassed that the designer had changed his streets"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        6,
+        7,
+        9
+      ],
+      "hint": "Remember how Sam felt when he heard he had won. Then look at what he did after he saw the gray line.",
+      "explain": "Sam was proud that his map won, but disappointed about the gray line. He ran around the yard when he heard the news, but after he saw the final version he stared, closed the laptop and stayed in his room. This is in the second paragraph.",
+      "inference": 2,
+      "tags": [
+        "mixed-feelings",
+        "hidden-feeling"
+      ]
+    },
+    {
+      "id": "n5-i171",
+      "skill": "N5",
+      "passage": "n5-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam said, \"It looks very professional.\" What did he really want?",
+      "options": [
+        "to make all the streets lighter",
+        "to hang the map in his own room",
+        "to draw a new map for next year",
+        "to have the railway line changed back to red"
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        6,
+        12
+      ],
+      "hint": "Remember why Sam made the railway red in the first paragraph. Then read what he finally told his dad.",
+      "explain": "Sam wanted the railway line changed back to red. He made it red so visitors could find the station, and at dinner he said the red line was the most important part. This is in the first and third paragraphs.",
+      "inference": 2,
+      "tags": [
+        "unspoken-want",
+        "want"
+      ]
+    },
+    {
+      "id": "n5-i172",
+      "skill": "N5",
+      "passage": "n5-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why did Sam wait before he asked the designer to change the line?",
+      "options": [
+        "He did not notice the gray line at first.",
+        "His dad told him not to send a message.",
+        "He liked the gray line better than the red one.",
+        "He worried she would think he was ungrateful."
+      ],
+      "answer": 3,
+      "evidence": [
+        13
+      ],
+      "hint": "Read what Sam explained to his dad at dinner.",
+      "explain": "Sam worried that the designer would think he was ungrateful. He said this at dinner, in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "feeling-cause",
+        "unspoken-want"
+      ]
+    },
+    {
+      "id": "n5-i173",
+      "skill": "N5",
+      "passage": "n5-p56",
+      "format": "storymap",
+      "level": 5,
+      "prompt": "Fill in the story map about Sam.",
+      "slots": [
+        {
+          "kind": "want",
+          "label": "What Sam wanted",
+          "options": [
+            "a red railway line so visitors could find the trains",
+            "a bigger prize from the visitor center",
+            "a gray map that looked professional",
+            "a photo with the designer"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "problem",
+          "label": "The problem",
+          "options": [
+            "His map did not win.",
+            "The designer made the railway line pale gray.",
+            "The visitor center lost his map.",
+            "Pixel chewed the map."
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "What Sam did",
+          "options": [
+            "He drew a new map.",
+            "He said nothing and hid the map.",
+            "He wrote a polite message that gave his reason.",
+            "He asked his dad to call the visitor center."
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "kind": "feeling",
+          "label": "How Sam felt at the end",
+          "options": [
+            "disappointed",
+            "proud and happy",
+            "embarrassed",
+            "worried"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        2,
+        6,
+        14,
+        15,
+        16,
+        17
+      ],
+      "hint": "Do one box at a time. The want is in the first paragraph, the problem in the second, and what he did and how it ended in the last two.",
+      "explain": "Sam wanted a red railway line so visitors could find the trains. The designer made it gray. He wrote a polite message with his reason, the designer changed it back, and he proudly pointed at the red line in the photo.",
+      "inference": 2,
+      "transfer": true,
+      "tags": [
+        "want",
+        "problem-solving",
+        "feeling-change"
       ]
     }
   ],

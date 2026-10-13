@@ -490,6 +490,9 @@ details > summary { cursor: pointer; font-weight: 700; padding: 0.4rem 0; }
 .kit-item.next { border-style: dashed; border-color: var(--fun); }
 .kit-emoji { font-size: 2rem; }
 
+/* Messages that come and go float above the bottom bar, so showing or hiding them never moves what he is about to tap. */
+.toast { position: fixed; left: 1rem; right: 1rem; margin-inline: auto; max-width: 36rem; bottom: calc(5.5rem + env(safe-area-inset-bottom)); z-index: 6; box-shadow: var(--shadow); }
+.nudge.toast { background: var(--surface); border-radius: var(--radius); padding: 0.6rem; }
 .nudge .bubble { border: 2px dashed var(--accent); }
 .feedback.boost { font-size: 1.15rem; }
 

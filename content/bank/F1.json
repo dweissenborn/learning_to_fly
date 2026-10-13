@@ -620,7 +620,7 @@
       "title": "Mine Tour Gate",
       "kind": "sign",
       "sentences": [
-        "Maya's class takes a tour of the old Lantern Peaks Copper Mine.",
+        "Maya's class takes a tour of the old copper mine at the Ridgeway Mine Museum.",
         "These signs hang at the tunnel gate."
       ],
       "visual": {
@@ -807,6 +807,2173 @@
       "socialLoad": 0,
       "credit": {
         "title": "Backstage Guide",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p24",
+      "title": "Sea Center Tanks",
+      "kind": "sign",
+      "sentences": [
+        "Maya and Priya visit the Sea Center.",
+        "They see a shark tank and a touch tank."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "TOUCH TANK",
+            "icon": "🦀"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "TOUCH WITH TWO FINGERS",
+            "icon": "✌️"
+          },
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "DO NOT TAP THE GLASS",
+            "icon": "🦈"
+          }
+        ]
+      },
+      "picture": "🦀🦈",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sea Center Tanks",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p25",
+      "title": "Two Dinosaur Bones",
+      "kind": "sign",
+      "sentences": [
+        "Leo is at the Harbor Town Library.",
+        "A table has two dinosaur bones.",
+        "One is real, and one is a copy."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "REAL FOSSIL: DO NOT TOUCH",
+            "icon": "🦴"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "COPY: PLEASE TOUCH",
+            "icon": "👆"
+          }
+        ]
+      },
+      "picture": "🦴🦖",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Two Dinosaur Bones",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p26",
+      "title": "Which Way to the Trains",
+      "kind": "sign",
+      "sentences": [
+        "Sam and Grandma Rose are at Harbor Town Station.",
+        "They want to take a train."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "TRAINS: UP THE STAIRS",
+            "icon": "⬆️"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "BUSES: TURN LEFT",
+            "icon": "⬅️"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "TAXIS: TURN RIGHT",
+            "icon": "➡️"
+          }
+        ]
+      },
+      "picture": "🚆⬆️",
+      "topics": [
+        "transport"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Which Way to the Trains",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p27",
+      "title": "Snow Day at Harbor Park",
+      "kind": "sign",
+      "sentences": [
+        "It snowed all night in Harbor Town.",
+        "Ana and Ben take their sleds to Harbor Park.",
+        "They read the signs by the gate."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "SLED HILL OPEN",
+            "icon": "🛷"
+          },
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "POND CLOSED: THIN ICE",
+            "icon": "🧊"
+          },
+          {
+            "shape": "triangle",
+            "color": "yellow",
+            "text": "ICY PATH: WALK SLOWLY",
+            "icon": "⚠️"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "WARMING HUT",
+            "icon": "🛖"
+          }
+        ]
+      },
+      "picture": "❄️🛷",
+      "topics": [
+        "weather"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Snow Day at Harbor Park",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p28",
+      "title": "Robot Club Room",
+      "kind": "sign",
+      "sentences": [
+        "Priya brings her rover to robot club.",
+        "Its battery is low.",
+        "She reads the signs in the room."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "CHARGING SHELF",
+            "icon": "🔌"
+          },
+          {
+            "shape": "circle",
+            "color": "blue",
+            "text": "SAFETY GLASSES ON WHEN YOU BUILD",
+            "icon": "🥽"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "TEST MAT: DRIVE ROBOTS HERE",
+            "icon": "🤖"
+          },
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "NO DRIVING ON THE TABLES",
+            "icon": "🚫"
+          }
+        ]
+      },
+      "picture": "🤖🔌",
+      "topics": [
+        "robots"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Robot Club Room",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p29",
+      "title": "Practice Room Doors",
+      "kind": "sign",
+      "sentences": [
+        "After school, Maya brings her flute to the music wing.",
+        "She needs an empty room to practice.",
+        "Three doors have signs."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "ROOM 1: IN USE",
+            "icon": "🎻"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "ROOM 2: EMPTY",
+            "icon": "🎵"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "DRUM ROOM: WEAR EAR PLUGS",
+            "icon": "🥁"
+          }
+        ]
+      },
+      "picture": "🎵🚪",
+      "topics": [
+        "music"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Practice Room Doors",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p30",
+      "title": "Game Shop Aisles",
+      "kind": "sign",
+      "sentences": [
+        "Ben goes to the Harbor Game Shop on Saturday.",
+        "He wants a new board game.",
+        "He looks at the signs over the aisles."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "AISLE 1: VIDEO GAMES",
+            "icon": "🎮"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "AISLE 2: BOARD GAMES",
+            "icon": "🎲"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "AISLE 3: PUZZLES",
+            "icon": "🧩"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "TRY A GAME HERE",
+            "icon": "🕹️"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "PAY HERE",
+            "icon": "💵"
+          }
+        ]
+      },
+      "picture": "🎲🎮",
+      "topics": [
+        "games"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Game Shop Aisles",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p31",
+      "title": "Garden Gate Signs",
+      "kind": "sign",
+      "sentences": [
+        "Maya and Sam help at the Harbor Town Garden on Sunday.",
+        "Pixel comes with them on his leash.",
+        "They stop at the gate."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "PLEASE STAY ON THE PATHS",
+            "icon": "🌱"
+          },
+          {
+            "shape": "triangle",
+            "color": "yellow",
+            "text": "BEES AT WORK",
+            "icon": "🐝"
+          },
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "NO DOGS IN THE GARDEN",
+            "icon": "🐕"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "TOOL SHED",
+            "icon": "🧰"
+          }
+        ]
+      },
+      "picture": "🌻🐝",
+      "topics": [
+        "nature"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Garden Gate Signs",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p32",
+      "title": "Café Sorting Station",
+      "kind": "sign",
+      "sentences": [
+        "After lunch at the Lighthouse Café, everyone sorts what is left on their tray.",
+        "Mrs. Lin put signs over the bins."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "RECYCLING: CANS AND PLASTIC BOTTLES",
+            "icon": "♻️"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "COMPOST: FOOD SCRAPS AND PAPER NAPKINS",
+            "icon": "🍌"
+          },
+          {
+            "shape": "rect",
+            "color": "black",
+            "text": "TRASH: EVERYTHING ELSE",
+            "icon": "🗑️"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "POUR OUT DRINKS IN THE SINK FIRST",
+            "icon": "🚰"
+          }
+        ]
+      },
+      "picture": "♻️🍌🗑️",
+      "topics": [
+        "food"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Café Sorting Station",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p33",
+      "title": "Recess Weather Board",
+      "kind": "sign",
+      "sentences": [
+        "Every morning, the office puts one symbol on the recess board.",
+        "The symbol tells students where recess will be."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Recess Weather Key",
+        "columns": [
+          "Symbol",
+          "Weather",
+          "Recess"
+        ],
+        "rows": [
+          [
+            "☀️",
+            "Sunny or cloudy",
+            "Outside on the field"
+          ],
+          [
+            "🌧️",
+            "Rain",
+            "Inside in the gym"
+          ],
+          [
+            "⛈️",
+            "Thunder or lightning",
+            "Inside in the gym. Outdoor games stop until 30 minutes after the last thunder."
+          ],
+          [
+            "❄️",
+            "Snow",
+            "Outside on the blacktop. Wear boots."
+          ],
+          [
+            "🥶",
+            "Colder than 20°F",
+            "Inside in the library"
+          ]
+        ]
+      },
+      "picture": "☀️🌧️❄️",
+      "topics": [
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Recess Weather Board",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p34",
+      "title": "Harbor Park Fields Map",
+      "kind": "sign",
+      "sentences": [
+        "Coach Novak sends the team this map of the Harbor Park fields.",
+        "Saturday's game is on Field 4."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Park Fields",
+        "columns": [
+          "",
+          "West",
+          "Middle",
+          "East"
+        ],
+        "rows": [
+          [
+            "North",
+            "⚽ Field 1",
+            "🅿️ Parking",
+            "⚽ Field 2"
+          ],
+          [
+            "Center",
+            "🚻 Restrooms",
+            "🍿 Snack stand",
+            "🚰 Water"
+          ],
+          [
+            "South",
+            "⚽ Field 3: closed, new grass",
+            "🚪 Main gate",
+            "⚽ Field 4"
+          ]
+        ],
+        "note": "North is at the top of the map. Each box is one part of the park."
+      },
+      "picture": "⚽🗺️",
+      "topics": [
+        "sports",
+        "maps"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Harbor Park Fields Map",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p35",
+      "title": "Planetarium Doors",
+      "kind": "sign",
+      "sentences": [
+        "Priya and Maya go to the star show at the Harbor Science Center planetarium.",
+        "They read the signs by the doors."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "STAR SHOWS: 1:00 PM AND 3:00 PM",
+            "icon": "⭐"
+          },
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "DOORS CLOSE WHEN THE SHOW STARTS",
+            "icon": "🚪"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "EACH SHOW LASTS 40 MINUTES",
+            "icon": "⏱️"
+          },
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "PHONES OFF DURING THE SHOW",
+            "icon": "📵"
+          }
+        ]
+      },
+      "picture": "🌌⭐",
+      "topics": [
+        "space"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Planetarium Doors",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p36",
+      "title": "Mine Museum Rooms",
+      "kind": "sign",
+      "sentences": [
+        "Mr. Varga leads the rock club through the Ridgeway Mine Museum.",
+        "Maya reads the signs on each room."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "MINERAL ROOM: PLEASE TOUCH THE ROCKS ON THE TABLES",
+            "icon": "🪨"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "UV ROOM: SHUT THE DOOR SO THE ROCKS GLOW IN THE DARK",
+            "icon": "🔦"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "PANNING TABLE: ROLL UP YOUR SLEEVES",
+            "icon": "💧"
+          },
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "GLASS CASES: LOOK ONLY",
+            "icon": "👀"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "GIFT SHOP: ROCKS FOR SALE",
+            "icon": "💎"
+          }
+        ]
+      },
+      "picture": "⛏️💎",
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Mine Museum Rooms",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p37",
+      "title": "Dog Park Gates",
+      "kind": "sign",
+      "sentences": [
+        "Sam takes Pixel to the new dog park.",
+        "Pixel weighs 25 pounds.",
+        "Two gates stand side by side."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "SMALL DOGS: UNDER 20 POUNDS",
+            "icon": "⬅️"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "LARGE DOGS: 20 POUNDS AND UP",
+            "icon": "➡️"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "CLOSE THE FIRST GATE BEFORE YOU OPEN THE SECOND GATE",
+            "icon": "🚪"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "CLEAN UP AFTER YOUR DOG: BAGS HERE",
+            "icon": "🛍️"
+          },
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "NO PEOPLE FOOD IN THE DOG PARK",
+            "icon": "🍔"
+          }
+        ]
+      },
+      "picture": "🐕🚪",
+      "topics": [
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dog Park Gates",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p38",
+      "title": "Platform Change",
+      "kind": "sign",
+      "sentences": [
+        "Sam and Grandma Rose are taking the train to Lantern Peaks.",
+        "At Harbor Town Station, they look up at the signs."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "PLATFORM 1: HARBOR LOOP, ALL STOPS",
+            "icon": "🚆"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "PLATFORM 2: LANTERN PEAKS EXPRESS",
+            "icon": "🚄"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "TODAY: PLATFORM 2 TRAINS LEAVE FROM PLATFORM 3",
+            "icon": "↪️"
+          },
+          {
+            "shape": "triangle",
+            "color": "yellow",
+            "text": "STAND BEHIND THE YELLOW LINE",
+            "icon": "⚠️"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "EXIT TO STREET",
+            "icon": "🚪"
+          }
+        ]
+      },
+      "picture": "🚆🔁",
+      "topics": [
+        "transport"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Platform Change",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p39",
+      "title": "Bakery Case Symbols",
+      "kind": "sign",
+      "sentences": [
+        "Grandma Rose puts symbols next to each treat in her bakery case.",
+        "The key is on the wall above the case."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Rose's Bakery: Today's Treats",
+        "columns": [
+          "Treat",
+          "Symbols"
+        ],
+        "rows": [
+          [
+            "Blueberry muffin",
+            "🥛 🌾"
+          ],
+          [
+            "Banana walnut bread",
+            "🥜 🥛 🌾"
+          ],
+          [
+            "Peanut butter cookie",
+            "🥜 🥛 🌾"
+          ],
+          [
+            "Apple oat bar",
+            "🌾 🌱 ⭐"
+          ],
+          [
+            "Lemon rice cake",
+            "🥛"
+          ],
+          [
+            "Chocolate almond cookie",
+            "🥜 🥛 🌾 ⭐"
+          ],
+          [
+            "Fruit cup",
+            "🌱"
+          ]
+        ],
+        "note": "Key: 🥜 has nuts, 🥛 has milk, 🌾 has wheat, 🌱 no animal foods, ⭐ new this week."
+      },
+      "picture": "🧁🥜",
+      "topics": [
+        "food"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bakery Case Symbols",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p40",
+      "title": "Bus Map Key",
+      "kind": "sign",
+      "sentences": [
+        "This key is printed on the Harbor Town bus map.",
+        "Sam keeps a copy of the map in his backpack."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Town Bus Map: Key",
+        "columns": [
+          "Symbol",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "🔴 Red line",
+            "Route 1: Harbor Loop"
+          ],
+          [
+            "🔵 Blue line",
+            "Route 2: to Story Woods"
+          ],
+          [
+            "🟢 Green line",
+            "Route 3: to Lantern Peaks"
+          ],
+          [
+            "⚪ White dot",
+            "Bus stop"
+          ],
+          [
+            "⭐ Star",
+            "Transfer stop: change to another route here"
+          ],
+          [
+            "🌙 Moon",
+            "Night stop: after 8:00 PM, buses stop only at moon stops"
+          ],
+          [
+            "Dashed line",
+            "Route moved for road work"
+          ]
+        ]
+      },
+      "picture": "🚌🗺️",
+      "topics": [
+        "maps",
+        "transport"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bus Map Key",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p41",
+      "title": "Jersey Care Symbols",
+      "kind": "label",
+      "sentences": [
+        "Coach Novak wants every jersey clean for Saturday's game.",
+        "Ana checks the symbols on her jersey's tag against this chart."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Laundry Symbols Chart",
+        "columns": [
+          "Symbol",
+          "What it means"
+        ],
+        "rows": [
+          [
+            "Tub with 1 dot",
+            "Wash in cold water"
+          ],
+          [
+            "Tub with 2 dots",
+            "Wash in warm water"
+          ],
+          [
+            "Tub with a hand",
+            "Wash by hand only"
+          ],
+          [
+            "Triangle with an X",
+            "Do not use bleach"
+          ],
+          [
+            "Square with a circle and 1 dot",
+            "Dry in a dryer on low heat"
+          ],
+          [
+            "Square with a circle and an X",
+            "Do not put it in a dryer"
+          ],
+          [
+            "Square with a curved line at the top",
+            "Hang it up to dry"
+          ],
+          [
+            "Iron with 1 dot",
+            "Iron on low heat"
+          ],
+          [
+            "Iron with an X",
+            "Do not iron"
+          ]
+        ],
+        "note": "Ana's jersey tag shows: Tub with 1 dot. Triangle with an X. Square with a circle and an X. Square with a curved line at the top. Iron with an X."
+      },
+      "picture": "👕🧺",
+      "topics": [
+        "home"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Jersey Care Symbols",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p42",
+      "title": "Snow Park Run Board",
+      "kind": "sign",
+      "sentences": [
+        "This board stands at the bottom of the Lantern Peaks Snow Park.",
+        "Workers update the Today column every hour."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Snow Park Runs",
+        "columns": [
+          "Run",
+          "Symbol",
+          "Lift",
+          "Today"
+        ],
+        "rows": [
+          [
+            "Bunny Slope",
+            "🟢",
+            "Rope tow",
+            "Open"
+          ],
+          [
+            "Pine Run",
+            "🟢",
+            "Chair lift",
+            "Open"
+          ],
+          [
+            "Fox Trail",
+            "🟦",
+            "Chair lift",
+            "Open"
+          ],
+          [
+            "Eagle Drop",
+            "◆",
+            "Chair lift",
+            "Closed: icy"
+          ],
+          [
+            "Summit Chute",
+            "◆◆",
+            "Top lift",
+            "Closed: wind"
+          ],
+          [
+            "Sled Hill",
+            "🛷",
+            "Walk up",
+            "Open until 3:00 PM"
+          ]
+        ],
+        "note": "Key: 🟢 green circle = easiest. 🟦 blue square = more difficult. ◆ black diamond = most difficult. ◆◆ double black diamond = experts only. The chair lift and the top lift stop when the wind is over 35 miles per hour. Wind now: 20 miles per hour."
+      },
+      "picture": "⛷️🏔️",
+      "topics": [
+        "sports",
+        "weather"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Snow Park Run Board",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p43",
+      "title": "Station Departure Board",
+      "kind": "timetable",
+      "sentences": [
+        "This board hangs over the platforms at Harbor Town Station.",
+        "It is 10:40 AM on Saturday."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Departures",
+        "columns": [
+          "Time",
+          "To",
+          "Platform",
+          "Notes"
+        ],
+        "rows": [
+          [
+            "10:45 AM",
+            "Harbor Loop",
+            "1",
+            "On time"
+          ],
+          [
+            "10:50 AM",
+            "Lantern Peaks",
+            "2",
+            "On time. 🚫🚲"
+          ],
+          [
+            "11:05 AM",
+            "Story Woods",
+            "3",
+            "Delayed 20 minutes"
+          ],
+          [
+            "11:15 AM",
+            "Lantern Peaks",
+            "2",
+            "On time. 🚲 in car 4"
+          ],
+          [
+            "11:20 AM",
+            "Story Woods",
+            "3",
+            "On time. 🤫 in car 1"
+          ]
+        ],
+        "note": "Key: 🚲 bikes allowed. 🚫🚲 no bikes. 🤫 quiet car: no phone calls and no music out loud. The walk from the station doors to Platform 2 takes 5 minutes."
+      },
+      "picture": "🚆🕙",
+      "topics": [
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Station Departure Board",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p44",
+      "title": "Aquarium Map",
+      "kind": "sign",
+      "sentences": [
+        "This map is on the back of each Harbor Town Aquarium ticket.",
+        "Today the aquarium is open from 10:00 AM to 4:00 PM."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Town Aquarium: Map",
+        "columns": [
+          "",
+          "West",
+          "Center",
+          "East"
+        ],
+        "rows": [
+          [
+            "North",
+            "🦈 Shark Tunnel",
+            "🐧 Penguin Beach",
+            "🪼 Jelly Room"
+          ],
+          [
+            "Middle",
+            "🚻 Restrooms",
+            "ℹ️ Front Desk",
+            "🐢 Turtle Pool"
+          ],
+          [
+            "South",
+            "🍽️ Café",
+            "🚪 Entrance and Exit",
+            "🦭 Seal Show"
+          ]
+        ],
+        "note": "Penguin feeding: 11:00 AM. Seal shows: 1:00 PM and 3:00 PM. Jelly Room: kept dark, no flash photos. Shark Tunnel: one way, go in at the south end only. Turtle Pool: closed today for cleaning."
+      },
+      "picture": "🦈🐧🗺️",
+      "topics": [
+        "ocean",
+        "maps"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Aquarium Map",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p45",
+      "title": "Band Day Program Key",
+      "kind": "sign",
+      "sentences": [
+        "Ms. Gray's students go to Band Day at the Harbor Middle School field.",
+        "This key is on the back of the program."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Band Day: Program Key",
+        "columns": [
+          "Symbol",
+          "Place",
+          "Times and rules"
+        ],
+        "rows": [
+          [
+            "🎺",
+            "Main Stage",
+            "School bands play from 10:00 AM to 2:00 PM. Each band plays for 30 minutes. Ms. Gray's Grade 7 band plays at 12:30 PM."
+          ],
+          [
+            "🎸",
+            "Tent Stage",
+            "Rock and jazz groups, 11:00 AM to 3:00 PM. Very loud: free ear plugs at the tent door."
+          ],
+          [
+            "🥁",
+            "Drum Circle",
+            "Anyone may play drums here, 12:00 PM to 1:00 PM."
+          ],
+          [
+            "🤫",
+            "Quiet Tent",
+            "A calm place to rest. No music inside."
+          ],
+          [
+            "🎪",
+            "Try-It Tent",
+            "Try a real instrument. One 10-minute turn for each person. Sign up at the door."
+          ],
+          [
+            "🥾",
+            "Walking",
+            "About 5 minutes between any two places."
+          ]
+        ]
+      },
+      "picture": "🎺🥁🎪",
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Band Day Program Key",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p46",
+      "title": "Game Expo Floor Plan",
+      "kind": "sign",
+      "sentences": [
+        "The Spring Game Expo is in the Harbor Town Community Center hall.",
+        "This floor plan hangs by the main doors."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Spring Game Expo: Floor Plan",
+        "columns": [
+          "",
+          "Left",
+          "Middle",
+          "Right"
+        ],
+        "rows": [
+          [
+            "Back",
+            "🏆 Tournament Stage",
+            "🎲 Board Game Tables",
+            "🔌 Phone Charging"
+          ],
+          [
+            "Center",
+            "🕹️ Retro Arcade: free play",
+            "🎮 Try New Games: 20-minute turns",
+            "🍕 Food Court"
+          ],
+          [
+            "Front",
+            "🎟️ Sign-up Desk",
+            "🚪 Main Doors",
+            "🧥 Bag Check"
+          ]
+        ],
+        "note": "Tournaments: Kart Racing at 2:00 PM, Block Builder at 4:00 PM. Sign up at the Sign-up Desk. Sign-up for each tournament closes 1 hour before it starts. Food and drinks stay in the Food Court. Big bags go to Bag Check."
+      },
+      "picture": "🎮🏆🗺️",
+      "topics": [
+        "games",
+        "maps"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Game Expo Floor Plan",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p47",
+      "title": "Robot Games Pit Signs",
+      "kind": "sign",
+      "sentences": [
+        "Priya's team brings their robot to the Harbor Robot Games.",
+        "These signs hang in the pit, where teams fix their robots."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "PIT AREA: TEAM BADGES ONLY",
+            "icon": "🪪"
+          },
+          {
+            "shape": "circle",
+            "color": "blue",
+            "text": "SAFETY GLASSES ON IN THE PIT",
+            "icon": "🥽"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "CHARGING TABLE: AN ADULT MUST STAY WITH CHARGING BATTERIES",
+            "icon": "🔋"
+          },
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "TEST FIELD: WAIT FOR THE GREEN LIGHT",
+            "icon": "🚦"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "SWITCH ROBOTS OFF BEFORE YOU CARRY THEM",
+            "icon": "🤖"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "MATCH LINE: BE HERE 10 MINUTES BEFORE YOUR MATCH",
+            "icon": "⏰"
+          }
+        ]
+      },
+      "picture": "🤖🔧🚦",
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Robot Games Pit Signs",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p48",
+      "title": "Dig Site Flag Key",
+      "kind": "sign",
+      "sentences": [
+        "Maya helps at Dr. Bell's dinosaur dig for one day.",
+        "First, she learns what the colored flags in the ground mean."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Dig Site Flag Key",
+        "columns": [
+          "Flag",
+          "What it means",
+          "Tools you may use"
+        ],
+        "rows": [
+          [
+            "🟥 Red",
+            "A fossil is showing here. Only Dr. Bell's team digs here.",
+            "None. Stay one big step away."
+          ],
+          [
+            "🟨 Yellow",
+            "A fossil may be close.",
+            "Soft brush and wooden pick only"
+          ],
+          [
+            "🟩 Green",
+            "No fossils found here yet.",
+            "Trowel and brush"
+          ],
+          [
+            "🟦 Blue",
+            "A path for walking.",
+            "None. Never dig on a path."
+          ],
+          [
+            "⬜ White",
+            "Sifting station: shake dirt through a screen to find tiny bones and teeth.",
+            "Screen box"
+          ]
+        ],
+        "note": "Found a bone in a green area? Stop digging. Put a yellow flag beside it. Then tell a team member."
+      },
+      "picture": "🦕🚩⛏️",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dig Site Flag Key",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p49",
+      "title": "Observatory Sky Board",
+      "kind": "sign",
+      "sentences": [
+        "Dr. Lee updates this board at the observatory door every evening.",
+        "It tells visitors if the big telescope will open."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Tonight's Sky Board",
+        "columns": [
+          "Symbol",
+          "Meaning",
+          "Telescope"
+        ],
+        "rows": [
+          [
+            "✨",
+            "Clear sky",
+            "Open from 8:00 PM to 11:00 PM"
+          ],
+          [
+            "⛅",
+            "Some clouds",
+            "Open, but objects may hide behind clouds for a while"
+          ],
+          [
+            "☁️",
+            "Clouds cover more than half the sky",
+            "Closed. Dr. Lee gives a sky talk with photos in the classroom at 8:30 PM instead."
+          ],
+          [
+            "💨",
+            "Wind over 25 miles per hour",
+            "Closed. The dome cannot open in strong wind."
+          ],
+          [
+            "🌕",
+            "Full moon",
+            "Open. Faint galaxies are hard to see in bright moonlight, but the Moon and planets look sharp."
+          ],
+          [
+            "🌧️",
+            "Rain",
+            "Closed. Water can damage the telescope."
+          ]
+        ],
+        "note": "When the board shows more than one symbol, read every row. If any row says Closed, the telescope stays closed."
+      },
+      "picture": "🔭🌕☁️",
+      "topics": [
+        "space",
+        "weather"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Observatory Sky Board",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p50",
+      "title": "Fire Danger at the Campsite",
+      "kind": "sign",
+      "sentences": [
+        "Ms. Ortiz's science club is camping for one night at the Story Woods campsite.",
+        "Next to the ranger station, a big wooden sign shows the fire danger for the day.",
+        "Each morning, a ranger checks the weather and moves a pointer on the sign.",
+        "Hot, dry and windy days raise the danger, because dry grass and twigs catch fire easily.",
+        "The sign has five colored parts, from low danger to extreme danger.",
+        "Each part has a short rule that tells campers which fires are allowed.",
+        "Sam reads the rules aloud while Priya checks the pointer.",
+        "This morning, the pointer is on the yellow part.",
+        "Leo had hoped to toast marshmallows over a campfire after dinner.",
+        "Ms. Ortiz says the club will follow the sign, so she unpacks the small camp stove.",
+        "She also fills a bucket with water and sets it beside the stove."
+      ],
+      "breaks": [
+        4,
+        8
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "LOW: CAMPFIRES OK IN FIRE RINGS",
+            "icon": "🔥"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "MODERATE: CAMPFIRES OK IN FIRE RINGS. KEEP WATER CLOSE.",
+            "icon": "💧"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "HIGH: NO CAMPFIRES. CAMP STOVES OK.",
+            "icon": "🍳"
+          },
+          {
+            "shape": "rect",
+            "color": "orange",
+            "text": "VERY HIGH: NO CAMPFIRES. STOVES ONLY AT THE PICNIC SHELTER.",
+            "icon": "🏕️"
+          },
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "EXTREME: NO FIRES OR STOVES OF ANY KIND.",
+            "icon": "🚫"
+          }
+        ]
+      },
+      "picture": "🏕️🌲🔥",
+      "topics": [
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Fire Danger at the Campsite",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p51",
+      "title": "Airport Gate Signs",
+      "kind": "sign",
+      "sentences": [
+        "Priya and her mom have tickets for Flight 212 at 11:00 AM.",
+        "It is 10:15 AM, and they just finished airport security."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "GATES 1 TO 10: TURN LEFT",
+            "icon": "⬅️"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "GATES 11 TO 20: TAKE THE TRAIN, THEN TURN RIGHT",
+            "icon": "🚝"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "FLIGHT 212 TO PINE BAY HAS MOVED: NOW GATE 14 (WAS GATE 6)",
+            "icon": "✈️"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "BOARDING STARTS 30 MINUTES BEFORE TAKEOFF",
+            "icon": "🎫"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "WALKING TIME: GATES 1 TO 10, UP TO 8 MINUTES. GATES 11 TO 20, ABOUT 15 MINUTES WITH THE TRAIN.",
+            "icon": "⏱️"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "FAMILY RESTROOMS: NEAR GATE 9 AND NEAR GATE 16",
+            "icon": "🚻"
+          }
+        ]
+      },
+      "picture": "✈️🧳",
+      "topics": [
+        "transport"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Airport Gate Signs",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p52",
+      "title": "Stadium Gate Board",
+      "kind": "sign",
+      "sentences": [
+        "This board stands outside Harbor Stadium on game days.",
+        "Today's soccer game starts at 4:00 PM."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Stadium: Find Your Gate",
+        "columns": [
+          "Gate",
+          "Sections",
+          "Notes"
+        ],
+        "rows": [
+          [
+            "Gate A (north)",
+            "101 to 110",
+            "Family zone. No air horns or noisemakers."
+          ],
+          [
+            "Gate B (east)",
+            "111 to 120",
+            "Closest gate to the bus stop."
+          ],
+          [
+            "Gate C (south)",
+            "121 to 130",
+            "Closed today for repairs. Section 121 to 130 tickets: use Gate D and take the ramp down."
+          ],
+          [
+            "Gate D (west)",
+            "201 to 230 (upper level)",
+            "Ramps and elevators to every section."
+          ],
+          [
+            "Bags",
+            "All gates",
+            "Clear plastic bags only, up to 12 inches by 12 inches."
+          ],
+          [
+            "Leaving",
+            "All gates",
+            "No re-entry. Once you leave, you cannot come back in."
+          ]
+        ],
+        "note": "All gates open 1 hour before the game starts."
+      },
+      "picture": "🏟️⚽",
+      "topics": [
+        "sports"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Stadium Gate Board",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p53",
+      "title": "Weather Alert Chart",
+      "kind": "sign",
+      "sentences": [
+        "The Harbor Town weather app uses four alert levels.",
+        "Ms. Ortiz posts this chart in her science room."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Weather Alerts: What They Mean",
+        "columns": [
+          "Alert",
+          "What it means",
+          "What to do"
+        ],
+        "rows": [
+          [
+            "🟢 No alert",
+            "Normal weather.",
+            "Go on with your plans."
+          ],
+          [
+            "🟡 Advisory",
+            "The weather may be a bother, like thick fog or a little ice.",
+            "Take care. Leave extra time to travel."
+          ],
+          [
+            "🟠 Watch",
+            "The weather is right for a storm to form. It is not here yet.",
+            "Get ready. Charge phones and check the alerts often."
+          ],
+          [
+            "🔴 Warning",
+            "A storm is happening now or will start soon.",
+            "Act now. Stay inside, away from windows, until the warning ends."
+          ]
+        ],
+        "note": "Every alert names the places and the times it covers. Check that your place and your time are inside it."
+      },
+      "picture": "⛈️📱",
+      "topics": [
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Weather Alert Chart",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p54",
+      "title": "Reading the Trail Blazes",
+      "kind": "article",
+      "sentences": [
+        "On the Lantern Peaks trails, painted marks on trees and rocks show hikers the way.",
+        "These marks are called blazes, and each one is a small rectangle about the size of a dollar bill.",
+        "Every trail has its own color, so a hiker who follows one color stays on one trail.",
+        "The blazes are painted at about eye level, and from one blaze you can usually see the next.",
+        "Blazes also give directions.",
+        "A single blaze means the trail goes straight ahead.",
+        "Two blazes stacked one above the other warn that the trail is about to change direction or join another trail at a junction.",
+        "If the top blaze is shifted to the right, the turn is to the right, and if it is shifted to the left, the turn is to the left.",
+        "At each fork, a wooden signpost adds arrows, trail names and distances.",
+        "Today the signpost at the first fork says that the Blue Trail goes straight to the lookout in 1.2 miles and the Yellow Trail goes left to the creek in 2 miles.",
+        "A paper notice is pinned below the arrows: a fallen tree blocks the Yellow Trail, so it is closed past the fork.",
+        "Rangers post temporary notices like this whenever storm damage or a repair project changes a route.",
+        "Sam and Maya had planned to hike the Yellow Trail to the creek and eat lunch there.",
+        "Before they start, they agree on one more rule.",
+        "If they walk for five minutes without seeing a blaze of their trail's color, they will turn around and walk back to the last blaze they saw."
+      ],
+      "breaks": [
+        4,
+        8,
+        12
+      ],
+      "picture": "🌲🟦🥾",
+      "topics": [
+        "maps",
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Reading the Trail Blazes",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p55",
+      "title": "Space Wing Symbols",
+      "kind": "sign",
+      "sentences": [
+        "The Space Wing at the Harbor Science Center has its own symbol key.",
+        "Each exhibit sign shows one or more of these symbols."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Space Wing: Exhibit Symbols",
+        "columns": [
+          "Symbol",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "✋",
+            "Hands-on: you may touch"
+          ],
+          [
+            "👀",
+            "Look only: rare object, do not touch"
+          ],
+          [
+            "🎧",
+            "Audio guide: type the exhibit number into the guide player"
+          ],
+          [
+            "⏰",
+            "Timed entry: get a free time ticket at the Space Wing desk first"
+          ],
+          [
+            "📏",
+            "Height rule: riders must be at least 48 inches tall"
+          ],
+          [
+            "🔊",
+            "Loud sounds"
+          ]
+        ],
+        "note": "Exhibits: Moon Rock 👀 🎧 21. Mars Rover Driving Game ✋ ⏰. Rocket Launch Theater 🔊 ⏰. Meteorite (space rock) Touch Table ✋ 🎧 24. Spacewalk Ride ✋ 📏 ⏰."
+      },
+      "picture": "🚀🌑🎧",
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Space Wing Symbols",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p56",
+      "title": "Robot Arm Light Tower",
+      "kind": "sign",
+      "sentences": [
+        "Priya's robotics club tours a lab where robot arms build parts.",
+        "Each arm has a tower of lights, and visitors read this chart."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Robot Arm Light Tower",
+        "columns": [
+          "Light",
+          "What it means",
+          "Visitors"
+        ],
+        "rows": [
+          [
+            "🟢 Green, steady",
+            "The arm is working.",
+            "Watch from behind the yellow floor line."
+          ],
+          [
+            "🟢 Green, flashing",
+            "The arm is paused. It can start again at any moment.",
+            "Stay behind the line. A paused arm can still move."
+          ],
+          [
+            "🟡 Yellow",
+            "The arm needs parts or a check soon.",
+            "Stay behind the line. A worker is on the way."
+          ],
+          [
+            "🔴 Red",
+            "The arm has stopped because of a problem.",
+            "Stay behind the line. A worker will lock the arm before anyone goes near it."
+          ],
+          [
+            "🔵 Blue",
+            "The arm is locked for repair.",
+            "A trained worker may go inside the line. Visitors still stay behind it."
+          ]
+        ],
+        "note": "Two lights can be on at the same time. Read the row for each light."
+      },
+      "picture": "🦾🚦",
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Robot Arm Light Tower",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p57",
+      "title": "Seal Viewing Board",
+      "kind": "sign",
+      "sentences": [
+        "Harbor seals rest on the rocks at Gull Point.",
+        "This board stands where the viewing path begins."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Gull Point: Seal Viewing",
+        "columns": [
+          "Topic",
+          "Rule"
+        ],
+        "rows": [
+          [
+            "📏 Distance",
+            "Stay at least 50 yards from seals. That is about half the length of a soccer field."
+          ],
+          [
+            "👀 Too close?",
+            "If a seal lifts its head to watch you, or moves toward the water, you are too close. Back away slowly."
+          ],
+          [
+            "🍼 Pups",
+            "A mother seal often leaves her pup on the beach while she feeds at sea. Do not touch or move a pup. Stay at least 50 yards away so she can come back."
+          ],
+          [
+            "📅 Pup season",
+            "March 1 to June 30: the lower path is closed. Use the cliff path and the viewing deck."
+          ],
+          [
+            "🌊 Tides",
+            "The lower path floods at high tide. Today's high tide is 2:40 PM. Stay off the lower path from 1:40 PM to 3:40 PM."
+          ],
+          [
+            "🐕 Dogs",
+            "Dogs on a leash are allowed on the cliff path only."
+          ],
+          [
+            "🔭 Viewing deck",
+            "Free binoculars, 9:00 AM to 5:00 PM."
+          ]
+        ]
+      },
+      "picture": "🦭🌊🔭",
+      "topics": [
+        "animals",
+        "ocean"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Seal Viewing Board",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p58",
+      "title": "Food Market Stall Key",
+      "kind": "sign",
+      "sentences": [
+        "The Dockside Food Market is open on Saturdays from 8:00 AM to 1:00 PM.",
+        "Each stall on the map shows symbols."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Dockside Food Market: Stalls",
+        "columns": [
+          "Stall",
+          "Food",
+          "Symbols"
+        ],
+        "rows": [
+          [
+            "1",
+            "Hot soup and bread",
+            "🌾 🥛 💳"
+          ],
+          [
+            "2",
+            "Fruit cups and smoothies",
+            "🌱 💵"
+          ],
+          [
+            "3",
+            "Fish tacos",
+            "🌾 🐟 💳 ⏰"
+          ],
+          [
+            "4",
+            "Rice bowls with tofu",
+            "🌱 🥜 💵 💳"
+          ],
+          [
+            "5",
+            "Honey cakes",
+            "🌾 🥛 🥜 💵"
+          ],
+          [
+            "6",
+            "Corn on the cob",
+            "🌱 💵 💳"
+          ]
+        ],
+        "note": "Key: 🌾 has wheat. 🥛 has milk. 🥜 has nuts. 🐟 has fish. 🌱 no animal foods. 💵 cash. 💳 card. ⏰ often sells out by 11:00 AM."
+      },
+      "picture": "🌽🌮🗺️",
+      "topics": [
+        "food"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Food Market Stall Key",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p59",
+      "title": "Mine Train Platform",
+      "kind": "sign",
+      "sentences": [
+        "The Ridgeway Mine Museum has a small train that rides into an old tunnel.",
+        "These signs stand on the boarding platform."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "RIDERS MUST BE AT LEAST 42 INCHES TALL. RIDERS UNDER 48 INCHES SIT NEXT TO AN ADULT.",
+            "icon": "📏"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "TRAINS LEAVE AT 10:00 AM AND EVERY 20 MINUTES AFTER THAT. LAST TRAIN: 4:00 PM.",
+            "icon": "🚂"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "RIDE TIME: 25 MINUTES. THE TUNNEL IS 50°F. BRING A JACKET.",
+            "icon": "🧥"
+          },
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "KEEP HANDS AND HEADS INSIDE THE CART",
+            "icon": "✋"
+          },
+          {
+            "shape": "rect",
+            "color": "orange",
+            "text": "TODAY ONLY: NO STOP AT THE CRYSTAL ROOM. RIDE TIME IS 15 MINUTES.",
+            "icon": "🚧"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "TICKETS AT THE GIFT SHOP. TICKET SALES END 15 MINUTES BEFORE THE LAST TRAIN.",
+            "icon": "🎟️"
+          }
+        ]
+      },
+      "picture": "🚂⛏️",
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Mine Train Platform",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p60",
+      "title": "Real or Copy? Dinosaur Hall Labels",
+      "kind": "sign",
+      "sentences": [
+        "In the Dinosaur Hall at the Harbor Town Fossil Museum, every display has a colored label.",
+        "The color tells visitors what kind of object they are looking at.",
+        "This matters because many skeletons in museums are not made of real bone.",
+        "Real fossils are heavy and can crack, so museums often show casts, which are exact copies made from strong, light materials.",
+        "Scientists can then keep the real fossils safe in a lab, where they can study them.",
+        "A blue label means the object is a real fossil, and visitors must not touch it.",
+        "A white label means the object is a cast, but it is part of a display, so it stays behind the rope.",
+        "A green label means the object is a cast made for handling, and visitors are welcome to touch it.",
+        "A small star on any label means the real fossil is kept upstairs in the museum's Fossil Lab.",
+        "Leo and Ben are visiting the hall with their class.",
+        "Leo wants to hold a T. rex tooth, and Ben wants to see a real skull up close.",
+        "Before they start, they read the five labels in the first room."
+      ],
+      "breaks": [
+        5,
+        9
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "T. REX SKELETON ★",
+            "icon": "🦖"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "TRICERATOPS SKULL",
+            "icon": "💀"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "DINOSAUR EGGS",
+            "icon": "🥚"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "T. REX TOOTH ★",
+            "icon": "🦷"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "TRICERATOPS HORN",
+            "icon": "🦴"
+          }
+        ]
+      },
+      "picture": "🦖🏛️",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Real or Copy? Dinosaur Hall Labels",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -1897,6 +4064,3334 @@
         "light-signal",
         "combine-rows"
       ]
+    },
+    {
+      "id": "f1-i52",
+      "skill": "F1",
+      "passage": "f1-p24",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Maya wants to touch a crab. Tap the tank she should go to.",
+      "scene": "hall",
+      "objects": [
+        {
+          "label": "Shark tank",
+          "emoji": "🦈",
+          "sign": {
+            "shape": "circle",
+            "color": "red",
+            "text": "DO NOT TAP THE GLASS",
+            "icon": "🦈"
+          }
+        },
+        {
+          "label": "Touch tank",
+          "emoji": "🦀",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "TOUCH TANK",
+            "icon": "🦀"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Read the sign on each tank. Find the word that means you may touch.",
+      "explain": "Maya goes to the touch tank. Its green sign says TOUCH TANK.",
+      "inference": 0,
+      "tags": [
+        "find-sign",
+        "touch"
+      ]
+    },
+    {
+      "id": "f1-i53",
+      "skill": "F1",
+      "passage": "f1-p24",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Priya wants to touch a sea star. How should she touch it?",
+      "options": [
+        "With two fingers",
+        "With her whole hand",
+        "With a stick"
+      ],
+      "pictures": [
+        "✌️",
+        "✋",
+        "🥢"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the sign that tells you how to touch.",
+      "explain": "She touches it with two fingers. The white sign says TOUCH WITH TWO FINGERS.",
+      "inference": 0,
+      "tags": [
+        "how-to",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i54",
+      "skill": "F1",
+      "passage": "f1-p25",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Leo wants to feel a dinosaur bone. Which bone can he touch?",
+      "options": [
+        "The real fossil",
+        "The copy"
+      ],
+      "pictures": [
+        "🦴",
+        "👆"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Read both signs. Find the sign that says you may touch.",
+      "explain": "Leo can touch the copy. Its green sign says PLEASE TOUCH.",
+      "inference": 0,
+      "tags": [
+        "touch",
+        "find-sign"
+      ]
+    },
+    {
+      "id": "f1-i55",
+      "skill": "F1",
+      "passage": "f1-p25",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What does the red sign tell Leo to do?",
+      "options": [
+        "Touch the real fossil gently",
+        "Pick up the real fossil",
+        "Keep his hands off the real fossil"
+      ],
+      "pictures": [
+        "👆",
+        "🤲",
+        "🙅"
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Read every word on the red sign.",
+      "explain": "Leo keeps his hands off the real fossil. The red sign says DO NOT TOUCH.",
+      "inference": 0,
+      "tags": [
+        "do-not-touch",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i56",
+      "skill": "F1",
+      "passage": "f1-p26",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Tap the way Sam and Grandma Rose should go.",
+      "scene": "station",
+      "objects": [
+        {
+          "label": "Stairs",
+          "emoji": "🪜",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "TRAINS: UP THE STAIRS",
+            "icon": "⬆️"
+          }
+        },
+        {
+          "label": "Left hall",
+          "emoji": "🚌",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "BUSES: TURN LEFT",
+            "icon": "⬅️"
+          }
+        },
+        {
+          "label": "Right door",
+          "emoji": "🚕",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "TAXIS: TURN RIGHT",
+            "icon": "➡️"
+          }
+        }
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Think about what they want to ride. Find the sign with that word.",
+      "explain": "They go up the stairs. The sign says TRAINS: UP THE STAIRS.",
+      "inference": 0,
+      "tags": [
+        "find-sign",
+        "direction"
+      ]
+    },
+    {
+      "id": "f1-i57",
+      "skill": "F1",
+      "passage": "f1-p26",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Grandma Rose says, \"Next time, we will take the bus.\" Which way will they go for the bus?",
+      "options": [
+        "Up the stairs",
+        "Left",
+        "Right"
+      ],
+      "pictures": [
+        "⬆️",
+        "⬅️",
+        "➡️"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the sign that says BUSES. Read where it tells you to go.",
+      "explain": "They turn left. The sign says BUSES: TURN LEFT.",
+      "inference": 0,
+      "tags": [
+        "direction",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f1-i58",
+      "skill": "F1",
+      "passage": "f1-p27",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Tap the place where Ana and Ben can sled today.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Pond",
+          "emoji": "🧊",
+          "sign": {
+            "shape": "rect",
+            "color": "red",
+            "text": "POND CLOSED: THIN ICE",
+            "icon": "🧊"
+          }
+        },
+        {
+          "label": "Hill",
+          "emoji": "⛰️",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "SLED HILL OPEN",
+            "icon": "🛷"
+          }
+        },
+        {
+          "label": "Hut",
+          "emoji": "🛖",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "WARMING HUT",
+            "icon": "🛖"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the sign at each place. Check which place is for sleds, and which places are closed or for something else.",
+      "explain": "They sled on the hill. Its green sign says SLED HILL OPEN.",
+      "inference": 0,
+      "tags": [
+        "open-closed",
+        "find-sign"
+      ]
+    },
+    {
+      "id": "f1-i59",
+      "skill": "F1",
+      "passage": "f1-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben wants to slide across the frozen pond. What do the signs tell him?",
+      "options": [
+        "The pond is closed, because the ice is thin",
+        "The pond is open after lunch",
+        "The pond is only for sleds"
+      ],
+      "pictures": [
+        "🚫",
+        "🕛",
+        "🛷"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the sign about the pond. Read all of it.",
+      "explain": "The pond is closed. The red sign says POND CLOSED: THIN ICE.",
+      "inference": 0,
+      "tags": [
+        "closed",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i60",
+      "skill": "F1",
+      "passage": "f1-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ana's toes are cold after sledding. Where can she go to warm up?",
+      "options": [
+        "The pond",
+        "The warming hut",
+        "The icy path"
+      ],
+      "pictures": [
+        "🧊",
+        "🛖",
+        "⚠️"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Think about what Ana needs. Then read each sign and ask which place could help her.",
+      "explain": "She goes to the warming hut. The blue sign says WARMING HUT.",
+      "inference": 1,
+      "tags": [
+        "match-need"
+      ]
+    },
+    {
+      "id": "f1-i61",
+      "skill": "F1",
+      "passage": "f1-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What should Priya do with her rover first?",
+      "options": [
+        "Drive it on the test mat",
+        "Drive it on a table",
+        "Put it on the charging shelf"
+      ],
+      "pictures": [
+        "🤖",
+        "🪑",
+        "🔌"
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the story to find what is wrong with the rover. Then find the sign that can help.",
+      "explain": "She puts it on the charging shelf. The battery is low, and the CHARGING SHELF sign shows where to charge it.",
+      "inference": 1,
+      "tags": [
+        "match-need",
+        "sequence"
+      ]
+    },
+    {
+      "id": "f1-i62",
+      "skill": "F1",
+      "passage": "f1-p28",
+      "format": "scene",
+      "level": 2,
+      "prompt": "The rover is charged now. Tap the place where Priya should drive it.",
+      "scene": "school",
+      "objects": [
+        {
+          "label": "Table",
+          "emoji": "🪑",
+          "sign": {
+            "shape": "circle",
+            "color": "red",
+            "text": "NO DRIVING ON THE TABLES",
+            "icon": "🚫"
+          }
+        },
+        {
+          "label": "Test mat",
+          "emoji": "🟩",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "TEST MAT: DRIVE ROBOTS HERE",
+            "icon": "🤖"
+          }
+        },
+        {
+          "label": "Shelf",
+          "emoji": "🔌",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "CHARGING SHELF",
+            "icon": "🔌"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Read the sign at each place. Find the sign that says where robots can drive.",
+      "explain": "She drives it on the test mat. Its green sign says DRIVE ROBOTS HERE, and the red sign says NO DRIVING ON THE TABLES.",
+      "inference": 0,
+      "tags": [
+        "two-signs",
+        "find-sign"
+      ]
+    },
+    {
+      "id": "f1-i63",
+      "skill": "F1",
+      "passage": "f1-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Priya starts to build a new arm for her rover. What must she put on?",
+      "options": [
+        "Safety glasses",
+        "A hard hat",
+        "A helmet lamp"
+      ],
+      "pictures": [
+        "🥽",
+        "👷",
+        "🔦"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the sign that talks about building.",
+      "explain": "She puts on safety glasses. The round blue sign says SAFETY GLASSES ON WHEN YOU BUILD.",
+      "inference": 0,
+      "tags": [
+        "what-to-wear"
+      ]
+    },
+    {
+      "id": "f1-i64",
+      "skill": "F1",
+      "passage": "f1-p29",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Tap the door Maya should open.",
+      "scene": "school",
+      "objects": [
+        {
+          "label": "Room 1 door",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "red",
+            "text": "ROOM 1: IN USE",
+            "icon": "🎻"
+          }
+        },
+        {
+          "label": "Room 2 door",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "ROOM 2: EMPTY",
+            "icon": "🎵"
+          }
+        },
+        {
+          "label": "Drum room door",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "DRUM ROOM: WEAR EAR PLUGS",
+            "icon": "🥁"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the story to see what kind of room Maya needs. Then read the sign on each door.",
+      "explain": "Maya opens the Room 2 door. She needs an empty room, and its sign says EMPTY.",
+      "inference": 0,
+      "tags": [
+        "find-sign",
+        "in-use"
+      ]
+    },
+    {
+      "id": "f1-i65",
+      "skill": "F1",
+      "passage": "f1-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Leo goes into the drum room to practice. What should he do first?",
+      "options": [
+        "Knock on Room 1",
+        "Put in ear plugs",
+        "Take off his shoes"
+      ],
+      "pictures": [
+        "✊",
+        "👂",
+        "👟"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the sign on the drum room door. Read what it tells you to do.",
+      "explain": "He puts in ear plugs. The drum room sign says WEAR EAR PLUGS.",
+      "inference": 0,
+      "tags": [
+        "what-to-wear"
+      ]
+    },
+    {
+      "id": "f1-i66",
+      "skill": "F1",
+      "passage": "f1-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What does IN USE on the Room 1 sign mean?",
+      "options": [
+        "The room is broken",
+        "The room is for drums",
+        "Someone is using the room now"
+      ],
+      "pictures": [
+        "🔧",
+        "🥁",
+        "🧑"
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Think about what the words IN USE say about a room. Compare them with the Room 2 sign.",
+      "explain": "IN USE means someone is using Room 1 now, so Maya picks another room. It is the red sign.",
+      "inference": 1,
+      "tags": [
+        "sign-words"
+      ]
+    },
+    {
+      "id": "f1-i67",
+      "skill": "F1",
+      "passage": "f1-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which aisle should Ben go to?",
+      "options": [
+        "Aisle 1",
+        "Aisle 2",
+        "Aisle 3"
+      ],
+      "pictures": [
+        "🎮",
+        "🎲",
+        "🧩"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find what Ben wants in the story. Then find the aisle sign with the same words.",
+      "explain": "Ben goes to Aisle 2. Its sign says BOARD GAMES.",
+      "inference": 0,
+      "tags": [
+        "find-sign"
+      ]
+    },
+    {
+      "id": "f1-i68",
+      "skill": "F1",
+      "passage": "f1-p30",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Ben picks a game. Tap the sign that shows where he can buy it.",
+      "unit": "row",
+      "answer": [
+        4
+      ],
+      "evidence": [
+        4
+      ],
+      "hint": "Think about what you do when you buy something in a shop. Then find a sign about it.",
+      "explain": "The PAY HERE sign shows where Ben can buy his game. It is the yellow sign.",
+      "inference": 1,
+      "tags": [
+        "find-sign",
+        "sign-words"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i69",
+      "skill": "F1",
+      "passage": "f1-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ana wants to play a video game before she buys it. Where should she go?",
+      "options": [
+        "To the TRY A GAME HERE spot",
+        "To Aisle 1",
+        "To the PAY HERE desk"
+      ],
+      "pictures": [
+        "🕹️",
+        "🎮",
+        "💵"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Ana wants to play first. Find the sign about playing a game in the shop.",
+      "explain": "She goes to the TRY A GAME HERE spot. Aisle 1 sells video games, but the green sign shows where to try one.",
+      "inference": 1,
+      "tags": [
+        "close-distractor",
+        "find-sign"
+      ]
+    },
+    {
+      "id": "f1-i70",
+      "skill": "F1",
+      "passage": "f1-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What should Sam do with Pixel?",
+      "options": [
+        "Walk Pixel along the paths",
+        "Stay outside the garden with Pixel",
+        "Let Pixel sniff the plants"
+      ],
+      "pictures": [
+        "🌱",
+        "🚪",
+        "🌸"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the sign with a dog on it. Read what it says.",
+      "explain": "Sam stays outside the garden with Pixel. The red sign says NO DOGS IN THE GARDEN.",
+      "inference": 1,
+      "tags": [
+        "no-dogs",
+        "decide"
+      ]
+    },
+    {
+      "id": "f1-i71",
+      "skill": "F1",
+      "passage": "f1-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Maya walks to the flowers and sees the yellow sign. What should she do?",
+      "options": [
+        "Pick the flowers quickly",
+        "Run past the flowers",
+        "Walk calmly and watch for bees"
+      ],
+      "pictures": [
+        "💐",
+        "🏃",
+        "🐝"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Read the yellow sign. A yellow triangle is a warning to be careful.",
+      "explain": "Maya walks calmly and watches for bees. The yellow sign says BEES AT WORK, so bees are near the flowers.",
+      "inference": 1,
+      "tags": [
+        "warning-sign",
+        "caution"
+      ]
+    },
+    {
+      "id": "f1-i72",
+      "skill": "F1",
+      "passage": "f1-p32",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Ana has these things on her tray. Put each one in the right bin.",
+      "bins": [
+        "Recycling",
+        "Compost",
+        "Trash"
+      ],
+      "cards": [
+        {
+          "text": "Empty juice can",
+          "bin": 0,
+          "emoji": "🥫"
+        },
+        {
+          "text": "Apple core",
+          "bin": 1,
+          "emoji": "🍎"
+        },
+        {
+          "text": "Used paper napkin",
+          "bin": 1,
+          "emoji": "🧻"
+        },
+        {
+          "text": "Empty plastic water bottle",
+          "bin": 0,
+          "emoji": "💧"
+        },
+        {
+          "text": "Plastic fork",
+          "bin": 2,
+          "emoji": "🍴"
+        },
+        {
+          "text": "Chip bag",
+          "bin": 2,
+          "emoji": "🥔"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Read each bin sign word by word. A thing that is not named on the Recycling or Compost sign goes in the bin for everything else.",
+      "explain": "The can and the bottle go in Recycling. The apple core and the napkin go in Compost. The plastic fork and the chip bag are not named on those two signs, so they go in Trash.",
+      "inference": 1,
+      "tags": [
+        "sort",
+        "read-every-word",
+        "close-distractor"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i73",
+      "skill": "F1",
+      "passage": "f1-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Leo still has some milk in his plastic bottle. What should he do?",
+      "options": [
+        "Pour the milk out in the sink, then put the bottle in Recycling",
+        "Put the bottle in Recycling with the milk still inside",
+        "Put the bottle in Compost, because milk is food",
+        "Put the bottle in Trash, because it is not empty"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Two signs are about this bottle. Find the one that says what to do first. Then find the bin for bottles.",
+      "explain": "Leo pours the milk out in the sink, then puts the bottle in Recycling. The white sign says POUR OUT DRINKS IN THE SINK FIRST, and the blue sign takes plastic bottles.",
+      "inference": 1,
+      "tags": [
+        "two-signs",
+        "sequence"
+      ]
+    },
+    {
+      "id": "f1-i74",
+      "skill": "F1",
+      "passage": "f1-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben has a banana peel and an empty soda can. Where does each one go?",
+      "options": [
+        "Both in Recycling",
+        "The peel in Compost, the can in Recycling",
+        "Both in Compost",
+        "The peel in Trash, the can in Recycling"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Check each thing on its own. Match it to the words on a bin sign.",
+      "explain": "The banana peel is a food scrap, so it goes in Compost, and the can goes in Recycling. The green sign and the blue sign name them.",
+      "inference": 1,
+      "tags": [
+        "two-signs",
+        "match-need"
+      ]
+    },
+    {
+      "id": "f1-i75",
+      "skill": "F1",
+      "passage": "f1-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The board shows ❄️. Where is recess, and what should Sam wear?",
+      "options": [
+        "Outside on the field, in sneakers",
+        "Inside in the gym, in boots",
+        "Outside on the blacktop, in boots",
+        "Inside in the library, in sneakers"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the snow symbol in the key. Read both parts of its Recess box.",
+      "explain": "Recess is outside on the blacktop, and Sam wears boots. The ❄️ row says Outside on the blacktop. Wear boots.",
+      "inference": 0,
+      "tags": [
+        "symbol-key",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i76",
+      "skill": "F1",
+      "passage": "f1-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The board shows ☀️, and the class is on the field. They hear thunder at 12:10 PM. The last thunder is at 12:20 PM. When may they play outside again?",
+      "options": [
+        "12:20 PM",
+        "12:40 PM",
+        "12:50 PM",
+        "1:20 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the row for thunder. Then add its number of minutes to the time of the last thunder.",
+      "explain": "They may play outside again at 12:50 PM. The thunder row says outdoor games stop until 30 minutes after the last thunder, and 30 minutes after 12:20 PM is 12:50 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "rule-overrides",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i77",
+      "skill": "F1",
+      "passage": "f1-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The board shows 🥶. Ana wanted to play soccer at recess. What is a good new plan?",
+      "options": [
+        "Play soccer on the field",
+        "Play soccer on the blacktop in boots",
+        "Play soccer in the gym",
+        "Bring a book or a quiet game to the library"
+      ],
+      "answer": 3,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the symbol from the board in the key. Then think about what fits in that place.",
+      "explain": "Ana brings a book or a quiet game. The 🥶 row says recess is inside in the library, and soccer does not fit there.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "problem-solving",
+        "symbol-key"
+      ]
+    },
+    {
+      "id": "f1-i78",
+      "skill": "F1",
+      "passage": "f1-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ana and Ben walk in through the main gate. Where is Field 4?",
+      "options": [
+        "Right next to the gate, to the east",
+        "Right next to the gate, to the west",
+        "Two boxes north of the gate",
+        "Just north of the gate, behind the snack stand"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the main gate on the map. Then look at the boxes beside it, and use the column names.",
+      "explain": "Field 4 is right next to the gate, to the east. In the South row, the main gate is in the Middle column, and Field 4 is in the East column.",
+      "inference": 1,
+      "tags": [
+        "map-grid",
+        "direction"
+      ]
+    },
+    {
+      "id": "f1-i79",
+      "skill": "F1",
+      "passage": "f1-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben's water bottle is empty before the game. Where should he go?",
+      "options": [
+        "The 🚻 box, on the west side",
+        "The 🚰 box, just north of Field 4",
+        "The 🅿️ box, in the north",
+        "The 🍿 box, just north of the gate"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the symbol that means drinking water. Then see which box it is in.",
+      "explain": "He goes to the 🚰 box. It is in the Center row and the East column, just north of Field 4.",
+      "inference": 1,
+      "tags": [
+        "map-grid",
+        "symbol"
+      ]
+    },
+    {
+      "id": "f1-i80",
+      "skill": "F1",
+      "passage": "f1-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Leo wants to practice on an open field right next to the restrooms. Which field should he use?",
+      "options": [
+        "Field 2",
+        "Field 3",
+        "Field 1",
+        "Field 4"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Find the restrooms. Look at the boxes just above and just below them. Then check if each field there is open.",
+      "explain": "Leo uses Field 1. Field 1 and Field 3 are both next to the restrooms, but Field 3 is closed for new grass.",
+      "inference": 1,
+      "tags": [
+        "map-grid",
+        "closed",
+        "combine-rows"
+      ]
+    },
+    {
+      "id": "f1-i81",
+      "skill": "F1",
+      "passage": "f1-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya and Maya get to the doors at 1:05 PM. What will happen?",
+      "options": [
+        "They go in quietly and find seats",
+        "They watch the end of the 1:00 PM show",
+        "They go in at 1:40 PM",
+        "They wait for the 3:00 PM show"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Compare the time they arrive with the show times. Then read the red sign about the doors.",
+      "explain": "They wait for the 3:00 PM show. The 1:00 PM show has already started, and the red sign says DOORS CLOSE WHEN THE SHOW STARTS.",
+      "inference": 1,
+      "tags": [
+        "two-signs",
+        "late",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f1-i82",
+      "skill": "F1",
+      "passage": "f1-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The 3:00 PM show starts on time. When will it end?",
+      "options": [
+        "3:04 PM",
+        "3:30 PM",
+        "3:40 PM",
+        "4:00 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Find the sign that says how long a show lasts. Add that to the start time.",
+      "explain": "It ends at 3:40 PM. The white sign says EACH SHOW LASTS 40 MINUTES, and 40 minutes after 3:00 PM is 3:40 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math"
+      ]
+    },
+    {
+      "id": "f1-i83",
+      "skill": "F1",
+      "passage": "f1-p35",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Maya wants to text her dad during the show. Tap the sign that tells her to wait until the show ends.",
+      "unit": "row",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Texting uses a phone. Find the sign about phones.",
+      "explain": "The round red sign says PHONES OFF DURING THE SHOW. Maya can text her dad after the show.",
+      "inference": 1,
+      "tags": [
+        "find-sign",
+        "phones"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i84",
+      "skill": "F1",
+      "passage": "f1-p36",
+      "format": "scene",
+      "level": 3,
+      "prompt": "Maya wants to hold a rock and feel how heavy it is. Tap the place where she can do that.",
+      "scene": "hall",
+      "objects": [
+        {
+          "label": "Glass cases",
+          "emoji": "🗄️",
+          "sign": {
+            "shape": "circle",
+            "color": "red",
+            "text": "GLASS CASES: LOOK ONLY",
+            "icon": "👀"
+          }
+        },
+        {
+          "label": "Mineral Room door",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "MINERAL ROOM: PLEASE TOUCH THE ROCKS ON THE TABLES",
+            "icon": "🪨"
+          }
+        },
+        {
+          "label": "UV Room door",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "UV ROOM: SHUT THE DOOR SO THE ROCKS GLOW IN THE DARK",
+            "icon": "🔦"
+          }
+        },
+        {
+          "label": "Panning table",
+          "emoji": "💧",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "PANNING TABLE: ROLL UP YOUR SLEEVES",
+            "icon": "💧"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Look for a sign that says you may touch. Check the red sign too.",
+      "explain": "She goes to the Mineral Room. Its sign says PLEASE TOUCH THE ROCKS ON THE TABLES. The glass cases are look only.",
+      "inference": 1,
+      "tags": [
+        "touch",
+        "find-sign",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i85",
+      "skill": "F1",
+      "passage": "f1-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam walks into the UV Room. What should he do right after he goes in?",
+      "options": [
+        "Shut the door behind him",
+        "Leave the door open so light comes in",
+        "Turn on the room lights",
+        "Roll up his sleeves"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the sign for the UV Room. Read what it says to do with the door, and why.",
+      "explain": "He shuts the door behind him. The UV Room sign says to shut the door so the rocks glow in the dark.",
+      "inference": 0,
+      "tags": [
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i86",
+      "skill": "F1",
+      "passage": "f1-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben is wearing a long-sleeved shirt. He wants to try the panning table. What should he do first?",
+      "options": [
+        "Put on gloves",
+        "Roll up his sleeves",
+        "Wash his hands",
+        "Change his shirt"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the sign for the panning table. Read what it tells you to do.",
+      "explain": "He rolls up his sleeves. The green sign says PANNING TABLE: ROLL UP YOUR SLEEVES.",
+      "inference": 0,
+      "tags": [
+        "what-to-wear",
+        "find-sign"
+      ]
+    },
+    {
+      "id": "f1-i87",
+      "skill": "F1",
+      "passage": "f1-p37",
+      "format": "scene",
+      "level": 3,
+      "prompt": "Tap the gate Sam and Pixel should use.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Left gate",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "SMALL DOGS: UNDER 20 POUNDS",
+            "icon": "⬅️"
+          }
+        },
+        {
+          "label": "Right gate",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "LARGE DOGS: 20 POUNDS AND UP",
+            "icon": "➡️"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Find Pixel's weight in the story. Compare it with the number on each sign.",
+      "explain": "They use the right gate. Pixel weighs 25 pounds, and the LARGE DOGS sign is for dogs 20 pounds and up.",
+      "inference": 1,
+      "tags": [
+        "number-compare",
+        "two-signs"
+      ]
+    },
+    {
+      "id": "f1-i88",
+      "skill": "F1",
+      "passage": "f1-p37",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put Sam's steps at the two gates in order.",
+      "steps": [
+        "Open the first gate",
+        "Walk in with Pixel",
+        "Close the first gate",
+        "Open the second gate"
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Read the yellow sign. It tells you which gate must be closed before the other one opens.",
+      "explain": "Sam opens the first gate, walks in with Pixel, closes the first gate, and then opens the second gate. The yellow sign says to close the first gate before you open the second gate.",
+      "inference": 1,
+      "tags": [
+        "sequence",
+        "read-every-word"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i89",
+      "skill": "F1",
+      "passage": "f1-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam brought a sandwich for his lunch. What should he do with it?",
+      "options": [
+        "Eat it inside the dog park",
+        "Share it with Pixel in the park",
+        "Eat it before he goes in or after he comes out",
+        "Throw it away at the gate"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the sign about food. Then think about where Sam can eat instead.",
+      "explain": "He eats it outside the park, before or after his visit. The red sign says NO PEOPLE FOOD IN THE DOG PARK.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "no-food"
+      ]
+    },
+    {
+      "id": "f1-i90",
+      "skill": "F1",
+      "passage": "f1-p38",
+      "format": "scene",
+      "level": 3,
+      "prompt": "Tap the platform where Sam and Grandma Rose should wait today.",
+      "scene": "station",
+      "objects": [
+        {
+          "label": "Platform 1",
+          "emoji": "🚆",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "PLATFORM 1",
+            "icon": "1️⃣"
+          }
+        },
+        {
+          "label": "Platform 2",
+          "emoji": "🚄",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "PLATFORM 2",
+            "icon": "2️⃣"
+          }
+        },
+        {
+          "label": "Platform 3",
+          "emoji": "🚉",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "PLATFORM 3",
+            "icon": "3️⃣"
+          }
+        }
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "First find the platform for Lantern Peaks trains. Then check the yellow sign for a change today.",
+      "explain": "They wait on Platform 3. Lantern Peaks trains use Platform 2, but the yellow sign says Platform 2 trains leave from Platform 3 today.",
+      "inference": 1,
+      "tags": [
+        "two-signs",
+        "plan-change",
+        "change"
+      ]
+    },
+    {
+      "id": "f1-i91",
+      "skill": "F1",
+      "passage": "f1-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The train is coming in. Where should Sam stand?",
+      "options": [
+        "On the yellow line",
+        "At the edge of the platform",
+        "In front of the yellow line",
+        "Behind the yellow line"
+      ],
+      "answer": 3,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the warning sign. Read the word that comes just before \"the yellow line\".",
+      "explain": "Sam stands behind the yellow line. The yellow triangle sign says STAND BEHIND THE YELLOW LINE.",
+      "inference": 0,
+      "tags": [
+        "read-every-word",
+        "warning-sign"
+      ]
+    },
+    {
+      "id": "f1-i92",
+      "skill": "F1",
+      "passage": "f1-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ana wants a train that stops at every station around the harbor. Which platform should she go to?",
+      "options": [
+        "Platform 1",
+        "Platform 2",
+        "Platform 3"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Look for the sign with words about stops.",
+      "explain": "She goes to Platform 1. Its sign says HARBOR LOOP, ALL STOPS.",
+      "inference": 1,
+      "tags": [
+        "sign-words"
+      ]
+    },
+    {
+      "id": "f1-i93",
+      "skill": "F1",
+      "passage": "f1-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ana cannot eat peanuts or tree nuts. Which of these treats is safe for her?",
+      "options": [
+        "Apple oat bar",
+        "Banana walnut bread",
+        "Peanut butter cookie",
+        "Chocolate almond cookie"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "hint": "Use the key to find the nut symbol. Then check each treat's row for it.",
+      "explain": "The apple oat bar is safe for Ana. Its row has no 🥜, and the key says 🥜 means the treat has nuts.",
+      "inference": 1,
+      "tags": [
+        "symbol-key",
+        "allergy"
+      ]
+    },
+    {
+      "id": "f1-i94",
+      "skill": "F1",
+      "passage": "f1-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Leo wants to try a treat that is new this week and has no milk. Which treat should he pick?",
+      "options": [
+        "Chocolate almond cookie",
+        "Apple oat bar",
+        "Lemon rice cake",
+        "Fruit cup"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        5
+      ],
+      "hint": "Find the rows with the symbol for new this week. Then check which of them has no milk symbol.",
+      "explain": "Leo picks the apple oat bar. It has ⭐ for new this week and no 🥛. The chocolate almond cookie is new too, but it has milk.",
+      "inference": 1,
+      "tags": [
+        "combine-symbols",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i95",
+      "skill": "F1",
+      "passage": "f1-p39",
+      "format": "sort",
+      "level": 3,
+      "prompt": "A customer cannot eat wheat. Put each treat in the right box.",
+      "bins": [
+        "Has wheat",
+        "No wheat"
+      ],
+      "cards": [
+        {
+          "text": "Blueberry muffin",
+          "bin": 0,
+          "emoji": "🧁"
+        },
+        {
+          "text": "Lemon rice cake",
+          "bin": 1,
+          "emoji": "🍋"
+        },
+        {
+          "text": "Apple oat bar",
+          "bin": 0,
+          "emoji": "🍎"
+        },
+        {
+          "text": "Fruit cup",
+          "bin": 1,
+          "emoji": "🍇"
+        },
+        {
+          "text": "Banana walnut bread",
+          "bin": 0,
+          "emoji": "🍌"
+        },
+        {
+          "text": "Peanut butter cookie",
+          "bin": 0,
+          "emoji": "🍪"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "hint": "Find the wheat symbol in the key. Then check each treat's row for it.",
+      "explain": "The muffin, the oat bar, the banana walnut bread and the peanut butter cookie have 🌾, so they have wheat. The lemon rice cake and the fruit cup have no 🌾.",
+      "inference": 0,
+      "tags": [
+        "sort",
+        "symbol-key"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i96",
+      "skill": "F1",
+      "passage": "f1-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam is riding Route 1 and wants to get to Story Woods. Which symbol should he look for along the red line?",
+      "options": [
+        "⚪ White dot",
+        "🌙 Moon",
+        "⭐ Star",
+        "🟢 Green line"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        4
+      ],
+      "hint": "Story Woods is on a different route. Find the symbol that shows where you can change routes.",
+      "explain": "He looks for a ⭐ star. Story Woods is on Route 2, the blue line, and the key says a star is a transfer stop where you change to another route.",
+      "inference": 1,
+      "tags": [
+        "map-key",
+        "transfer-stop"
+      ]
+    },
+    {
+      "id": "f1-i97",
+      "skill": "F1",
+      "passage": "f1-p40",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Maya is riding home at 9:00 PM. Tap the row that tells her which stops the bus will use.",
+      "unit": "row",
+      "answer": [
+        5
+      ],
+      "evidence": [
+        5
+      ],
+      "hint": "Look for a row with a time in it. Compare that time with 9:00 PM.",
+      "explain": "The Moon row says that after 8:00 PM, buses stop only at moon stops. 9:00 PM is after 8:00 PM.",
+      "inference": 1,
+      "tags": [
+        "map-key",
+        "time"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i98",
+      "skill": "F1",
+      "passage": "f1-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Part of the blue line on Sam's map is dashed. What does that tell him?",
+      "options": [
+        "Route 2 stops running there today",
+        "That part of Route 2 runs only at night",
+        "That part is a walking path",
+        "Route 2 takes a different way there because of road work"
+      ],
+      "answer": 3,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the row for a dashed line. Read its meaning.",
+      "explain": "Route 2 takes a different way there. The key says a dashed line means the route moved for road work.",
+      "inference": 0,
+      "tags": [
+        "map-key"
+      ]
+    },
+    {
+      "id": "f1-i99",
+      "skill": "F1",
+      "passage": "f1-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which washer setting matches Ana's tag?",
+      "options": [
+        "Cold water, no bleach",
+        "Warm water, with bleach",
+        "Cold water, with bleach",
+        "Warm water, no bleach"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Find the tub symbol on Ana's tag in the note, then find its row. Do the same for the triangle.",
+      "explain": "She uses cold water and no bleach. Her tag has a tub with 1 dot, which means wash in cold water, and a triangle with an X, which means do not use bleach.",
+      "inference": 1,
+      "tags": [
+        "combine-rows",
+        "symbol-key",
+        "note"
+      ]
+    },
+    {
+      "id": "f1-i100",
+      "skill": "F1",
+      "passage": "f1-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The jersey is washed and wet. How should Ana dry it?",
+      "options": [
+        "In the dryer on low heat",
+        "Hang it up to dry",
+        "In the dryer, then iron it on low heat",
+        "Iron it until it is dry"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5,
+        6
+      ],
+      "hint": "Ana's tag has two square symbols. Find both rows and put them together.",
+      "explain": "She hangs it up to dry. Her tag has a square with a circle and an X, which means do not put it in a dryer, and a square with a curved line at the top, which means hang it up to dry.",
+      "inference": 1,
+      "tags": [
+        "combine-rows",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i101",
+      "skill": "F1",
+      "passage": "f1-p41",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "The jersey has wrinkles after it dries. Tap the row that matches the iron symbol on Ana's tag.",
+      "unit": "row",
+      "answer": [
+        8
+      ],
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find the iron symbol in the note about Ana's tag. Then find the row with exactly the same words.",
+      "explain": "The Iron with an X row matches Ana's tag. It means do not iron, so she leaves the wrinkles. The Iron with 1 dot row is not on her tag.",
+      "inference": 1,
+      "tags": [
+        "symbol-key",
+        "note",
+        "close-distractor"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i102",
+      "skill": "F1",
+      "passage": "f1-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo is a strong skier. He wants the most difficult run that is open right now. Which run should he pick?",
+      "options": [
+        "Eagle Drop",
+        "Summit Chute",
+        "Fox Trail",
+        "Pine Run"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "Use the key to rank the symbols from easiest to hardest. Then cross out every run that is closed today.",
+      "explain": "Leo picks Fox Trail. Eagle Drop and Summit Chute are harder, but both are closed today, so the blue square on Fox Trail is the hardest symbol left.",
+      "inference": 1,
+      "tags": [
+        "symbol-key",
+        "closed",
+        "compare"
+      ]
+    },
+    {
+      "id": "f1-i103",
+      "skill": "F1",
+      "passage": "f1-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya is skiing for the first time. She wants an easy run, and she wants to ride the chair lift. Which run fits her?",
+      "options": [
+        "Bunny Slope",
+        "Fox Trail",
+        "Eagle Drop",
+        "Pine Run"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Find every run with the easiest symbol. Then check the Lift column for each one.",
+      "explain": "Pine Run fits. It has the green circle for easiest, and its lift is the chair lift. The Bunny Slope is easy too, but it uses a rope tow.",
+      "inference": 1,
+      "tags": [
+        "combine-columns",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i104",
+      "skill": "F1",
+      "passage": "f1-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "At 2:00 PM, the wind sign changes to 40 miles per hour. Sam is at the bottom of Pine Run. What can he do now?",
+      "options": [
+        "Ski the Bunny Slope or go sledding, because the chair lift has stopped",
+        "Ride the chair lift up Pine Run, because Pine Run is open",
+        "Ride the top lift up to Summit Chute",
+        "Wait at the chair lift until the Sled Hill closes at 3:00 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1,
+        5
+      ],
+      "hint": "Read the note about wind and compare 40 with its number. Then find the runs that do not need the chair lift or the top lift.",
+      "explain": "Sam can ski the Bunny Slope or go sledding. The note says the lifts stop when the wind is over 35 miles per hour. The Bunny Slope uses a rope tow, and you walk up the Sled Hill.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "plan-change",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f1-i105",
+      "skill": "F1",
+      "passage": "f1-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana wants to take her bike to Lantern Peaks. Which train should she take?",
+      "options": [
+        "10:50 AM",
+        "11:15 AM",
+        "11:05 AM",
+        "11:20 AM"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Find every train to Lantern Peaks. Then use the key to read the bike symbols in the Notes column.",
+      "explain": "She takes the 11:15 AM train. The 10:50 AM train also goes to Lantern Peaks, but it shows 🚫🚲, which means no bikes. The 11:15 AM train allows bikes in car 4.",
+      "inference": 1,
+      "tags": [
+        "symbol-key",
+        "combine-columns"
+      ]
+    },
+    {
+      "id": "f1-i106",
+      "skill": "F1",
+      "passage": "f1-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam wants to get to Story Woods as soon as he can. Which train will leave first?",
+      "options": [
+        "The 11:05 AM train, which will now leave at 11:25 AM",
+        "The 11:20 AM train",
+        "The 10:50 AM train",
+        "The 11:15 AM train"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        4
+      ],
+      "hint": "Find both Story Woods trains. Add the delay to the first one, then compare the two times.",
+      "explain": "The 11:20 AM train leaves first. The 11:05 AM train is delayed 20 minutes, so it will leave at 11:25 AM, which is after 11:20 AM.",
+      "inference": 1,
+      "tags": [
+        "delay",
+        "time-math",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i107",
+      "skill": "F1",
+      "passage": "f1-p43",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Maya wants to read in a quiet car on her way to Story Woods. Tap the row for the train she should take.",
+      "unit": "row",
+      "answer": [
+        4
+      ],
+      "evidence": [
+        2,
+        4
+      ],
+      "hint": "Use the key to find the quiet car symbol. Then find the Story Woods row that has it.",
+      "explain": "Maya should take the 11:20 AM train to Story Woods. Its Notes say 🤫 in car 1, and the key says 🤫 means a quiet car.",
+      "inference": 1,
+      "tags": [
+        "symbol-key",
+        "find-row"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i108",
+      "skill": "F1",
+      "passage": "f1-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben reaches the station doors at 10:47 AM. He wants to ride to Lantern Peaks, and he has no bike. What should he do?",
+      "options": [
+        "Catch the 10:50 AM train, because he has 3 minutes",
+        "Go to Platform 1 for the 10:50 AM train",
+        "Take the 11:15 AM train, because the walk to Platform 2 takes 5 minutes",
+        "Take the 11:05 AM train, because it leaves sooner"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Add the walking time in the note to 10:47 AM. Then compare it with the times of the Lantern Peaks trains.",
+      "explain": "He takes the 11:15 AM train. The note says the walk to Platform 2 takes 5 minutes, so he would reach the platform at 10:52 AM, after the 10:50 AM train has left. The 11:05 AM train goes to Story Woods.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "note",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f1-i109",
+      "skill": "F1",
+      "passage": "f1-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana walks in at the entrance. She wanted to see the turtles first. What is her best plan?",
+      "options": [
+        "Walk to the Turtle Pool, north-east of the entrance",
+        "Wait at the Front Desk until the Turtle Pool opens at 11:00 AM",
+        "Look at the turtles from the Seal Show",
+        "Visit another room first, because the Turtle Pool is closed today"
+      ],
+      "answer": 3,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the Turtle Pool on the map. Then read the note to see if anything about it is different today.",
+      "explain": "She visits another room. The note says the Turtle Pool is closed today for cleaning. The 11:00 AM time in the note is for the penguins.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "plan-change",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i110",
+      "skill": "F1",
+      "passage": "f1-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya is at Penguin Beach at 1:20 PM. She wants to see a seal show before the aquarium closes. Which show can she see?",
+      "options": [
+        "The 3:00 PM show",
+        "The 1:00 PM show",
+        "The 11:00 AM show",
+        "The 4:00 PM show"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Find the seal show times in the note. Cross out any time that has already passed.",
+      "explain": "She can see the 3:00 PM show. The note lists seal shows at 1:00 PM and 3:00 PM, and 1:00 PM has already passed. 4:00 PM is when the aquarium closes.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "time",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i111",
+      "skill": "F1",
+      "passage": "f1-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo is at the restrooms. He wants to walk through the Shark Tunnel. Where should he go in?",
+      "options": [
+        "At the tunnel's north end",
+        "At the tunnel's south end, right next to the restrooms",
+        "Through Penguin Beach",
+        "Through the Café"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the note about the Shark Tunnel. Then use the map to see which side of the tunnel touches the restrooms.",
+      "explain": "He goes in at the south end, right next to the restrooms. The note says to go in at the south end only, and on the map the restrooms are just south of the Shark Tunnel.",
+      "inference": 1,
+      "tags": [
+        "map-grid",
+        "one-way",
+        "note"
+      ]
+    },
+    {
+      "id": "f1-i112",
+      "skill": "F1",
+      "passage": "f1-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo plays the drums in Ms. Gray's Grade 7 band. He also wants to play in the Drum Circle. Which time works for both?",
+      "options": [
+        "12:00 PM to about 12:25 PM, then walk to the Main Stage",
+        "12:30 PM to 1:00 PM",
+        "1:00 PM to 2:00 PM",
+        "11:00 AM to 12:00 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        2,
+        5
+      ],
+      "hint": "Find when Leo's band plays and for how long. Then find when the Drum Circle is open, and leave time to walk.",
+      "explain": "He plays in the Drum Circle from 12:00 PM to about 12:25 PM, then walks 5 minutes to the Main Stage. His band plays from 12:30 PM to 1:00 PM, and the Drum Circle closes at 1:00 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "combine-rows",
+        "plan"
+      ]
+    },
+    {
+      "id": "f1-i113",
+      "skill": "F1",
+      "passage": "f1-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya wants to hear the jazz group at the Tent Stage, but very loud music bothers her. What can she do?",
+      "options": [
+        "Listen to the jazz group from inside the Quiet Tent",
+        "Ask to sit on the Main Stage",
+        "Pick up free ear plugs at the tent door, then listen",
+        "Go to the Drum Circle instead"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Read the Tent Stage row to the end. Then check what the Quiet Tent allows.",
+      "explain": "She picks up free ear plugs at the tent door. The Tent Stage row says the music is very loud and the ear plugs are free. The Quiet Tent has no music inside, so she would not hear the jazz group there.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i114",
+      "skill": "F1",
+      "passage": "f1-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana plays the trumpet. Today she wants to try a cello for the first time. What should she do?",
+      "options": [
+        "Bring a cello from home",
+        "Ask Ms. Gray's band for a 30-minute turn",
+        "Go to the Main Stage at 12:30 PM",
+        "Sign up at the Try-It Tent door for a 10-minute turn"
+      ],
+      "answer": 3,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the place where you can try an instrument. Read its rules from start to end.",
+      "explain": "She signs up at the Try-It Tent door. That row says each person gets one 10-minute turn, and you sign up at the door.",
+      "inference": 0,
+      "tags": [
+        "read-every-word",
+        "find-row"
+      ]
+    },
+    {
+      "id": "f1-i115",
+      "skill": "F1",
+      "passage": "f1-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben arrives at 1:15 PM. He wanted to play in the Kart Racing tournament. What can he do?",
+      "options": [
+        "Sign up for Block Builder instead, because Kart Racing sign-up closed at 1:00 PM",
+        "Sign up for Kart Racing at the Sign-up Desk now",
+        "Go to the Tournament Stage at 2:00 PM and sign up there",
+        "Wait until 2:00 PM, then sign up for Kart Racing"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Find the Kart Racing start time in the note. Work out when its sign-up closed, and compare that with 1:15 PM.",
+      "explain": "He can sign up for Block Builder instead. Kart Racing starts at 2:00 PM, so its sign-up closed at 1:00 PM. Block Builder starts at 4:00 PM, so its sign-up is open until 3:00 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "note",
+        "plan-change",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f1-i116",
+      "skill": "F1",
+      "passage": "f1-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo has a big backpack and a slice of pizza. He wants to try a new game. What should he do?",
+      "options": [
+        "Eat the pizza while he waits in line for Try New Games",
+        "Eat at the Food Court and leave his backpack at Bag Check, then go to Try New Games",
+        "Leave his backpack at Phone Charging, then eat at the Board Game Tables",
+        "Take his backpack and his pizza to Try New Games"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "The note has one rule about food and one rule about big bags. Follow both before he plays.",
+      "explain": "He eats at the Food Court and leaves his backpack at Bag Check first. The note says food and drinks stay in the Food Court, and big bags go to Bag Check.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "two-rules",
+        "sequence"
+      ]
+    },
+    {
+      "id": "f1-i117",
+      "skill": "F1",
+      "passage": "f1-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya is at the Main Doors. She wants to play board games. Which way should she walk?",
+      "options": [
+        "Left, to the front corner of the hall",
+        "Right, past Bag Check, to the back corner",
+        "Straight ahead, past Try New Games, to the back of the hall",
+        "Straight ahead, and stop in the center of the hall"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Find the Main Doors and the Board Game Tables on the plan. Check which column and which row each one is in.",
+      "explain": "She walks straight ahead to the back of the hall. The Main Doors and the Board Game Tables are both in the Middle column, and the tables are in the Back row, past Try New Games.",
+      "inference": 1,
+      "tags": [
+        "map-grid",
+        "direction"
+      ]
+    },
+    {
+      "id": "f1-i118",
+      "skill": "F1",
+      "passage": "f1-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya's match is at 2:30 PM. At 2:15 PM, the team wants to test the robot, but the test field light is red. What should they do?",
+      "options": [
+        "Drive onto the test field now, because the match is soon",
+        "Wait at the test field for the green light, even if it is after 2:30 PM",
+        "Test the robot on the match line",
+        "Go to the match line by 2:20 PM, even if they cannot test first"
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        5
+      ],
+      "hint": "Work out when the team must be at the match line. Then decide what to do if the light stays red.",
+      "explain": "They go to the match line by 2:20 PM. The green sign says to be there 10 minutes before the match, and the red sign says to wait for the green light before testing.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "two-signs",
+        "plan-change",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f1-i119",
+      "skill": "F1",
+      "passage": "f1-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam came to watch Priya's team. He does not have a team badge. Where should he watch from?",
+      "options": [
+        "Outside the pit area",
+        "Inside the pit, if he wears safety glasses",
+        "At the charging table",
+        "On the match line with the team"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the sign about who may go into the pit. Check whether Sam has what it asks for.",
+      "explain": "He watches from outside the pit area. The blue sign says PIT AREA: TEAM BADGES ONLY, and Sam has no badge.",
+      "inference": 1,
+      "tags": [
+        "who-may-enter",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i120",
+      "skill": "F1",
+      "passage": "f1-p47",
+      "format": "order",
+      "level": 4,
+      "prompt": "The team takes their robot from the pit to the test field. Put their steps in order.",
+      "steps": [
+        "Switch the robot off",
+        "Carry the robot to the test field",
+        "Wait for the green light",
+        "Switch the robot on and drive it"
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "One sign says what to do before you carry a robot. Another sign says what to wait for at the test field.",
+      "explain": "They switch the robot off, carry it to the test field, wait for the green light, and then switch it on and drive. The white sign and the red sign give these steps.",
+      "inference": 1,
+      "tags": [
+        "sequence",
+        "two-signs"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i121",
+      "skill": "F1",
+      "passage": "f1-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The team wants to charge a battery during lunch. Their adult helper is going to lunch with them. What should they do?",
+      "options": [
+        "Leave the battery charging while everyone eats",
+        "Charge it after lunch, when an adult can stay at the charging table",
+        "Charge it in the pit with no adult, because they have badges",
+        "Charge it on the test field"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Read the yellow sign. Check who must stay with a battery while it charges.",
+      "explain": "They charge it after lunch, when an adult can stay with it. The yellow sign says an adult must stay with charging batteries, and their helper will be at lunch.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "rule"
+      ]
+    },
+    {
+      "id": "f1-i122",
+      "skill": "F1",
+      "passage": "f1-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya is digging with a trowel in a green area. Her trowel scrapes something hard and brown that looks like a bone. What should she do next?",
+      "options": [
+        "Keep digging with the trowel, because green means no fossils",
+        "Put a red flag beside it and dig it out with the trowel",
+        "Stop, put a yellow flag beside it, and tell a team member",
+        "Switch to a soft brush and dig it out by herself"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Read the note under the key. It tells you what to do when you find a bone in a green area.",
+      "explain": "She stops, puts a yellow flag beside it, and tells a team member. The note gives these three steps for a bone found in a green area.",
+      "inference": 0,
+      "tags": [
+        "note",
+        "problem-solving",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i123",
+      "skill": "F1",
+      "passage": "f1-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Later, Maya works next to a yellow flag. Which tools may she use?",
+      "options": [
+        "A trowel and a brush",
+        "A screen box",
+        "No tools at all",
+        "A soft brush and a wooden pick"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the yellow row. Read the last column, and compare it with the green row.",
+      "explain": "She may use a soft brush and a wooden pick. The Yellow row says those tools only. A trowel is for green areas.",
+      "inference": 0,
+      "tags": [
+        "close-distractor",
+        "find-row"
+      ]
+    },
+    {
+      "id": "f1-i124",
+      "skill": "F1",
+      "passage": "f1-p48",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Sam wants to look for tiny fossil teeth without digging in the ground. Tap the row that tells him where to go.",
+      "unit": "row",
+      "answer": [
+        4
+      ],
+      "evidence": [
+        4
+      ],
+      "hint": "Look for a row that talks about small fossils and does not use a digging tool.",
+      "explain": "The White row tells him to go to the sifting station. There he shakes dirt through a screen to find tiny bones and teeth.",
+      "inference": 1,
+      "tags": [
+        "find-row"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i125",
+      "skill": "F1",
+      "passage": "f1-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The board shows ✨ and 🌕. Maya hopes to see a faint galaxy. What should she expect?",
+      "options": [
+        "The telescope is open, but the galaxy will be hard to see",
+        "The telescope is closed tonight",
+        "The galaxy will look sharp, because the sky is clear",
+        "Dr. Lee will give a sky talk instead"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        4
+      ],
+      "hint": "Read the row for each symbol on the board. Then put the two rows together.",
+      "explain": "The telescope is open, but the galaxy will be hard to see. The ✨ row says open, and the 🌕 row says faint galaxies are hard to see in bright moonlight.",
+      "inference": 1,
+      "tags": [
+        "combine-rows",
+        "symbol-key"
+      ]
+    },
+    {
+      "id": "f1-i126",
+      "skill": "F1",
+      "passage": "f1-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The board shows ⛅ and 💨. Sam rode the bus up the hill to see Saturn. What should he do?",
+      "options": [
+        "Look at Saturn through the telescope when the clouds move",
+        "Plan to come back on another night, because the telescope is closed",
+        "Use the telescope from 8:00 PM to 11:00 PM",
+        "Wait inside the dome until the wind stops"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Read the note first. Then check each symbol's row for the word Closed.",
+      "explain": "Sam plans to come back another night. The 💨 row says the telescope is closed in strong wind, and the note says that if any row says Closed, the telescope stays closed.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "combine-rows",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f1-i127",
+      "skill": "F1",
+      "passage": "f1-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The board shows ☁️. It is 8:10 PM. What can Priya do tonight?",
+      "options": [
+        "Use the telescope until 11:00 PM",
+        "Wait for the clouds to pass, then use the telescope at 8:30 PM",
+        "Go to Dr. Lee's sky talk in the classroom at 8:30 PM",
+        "Go home, because nothing is open tonight"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the cloud symbol in the key. Read the whole Telescope box, not only the first word.",
+      "explain": "Priya can go to Dr. Lee's sky talk at 8:30 PM. The ☁️ row says the telescope is closed and a sky talk happens in the classroom instead.",
+      "inference": 0,
+      "tags": [
+        "read-every-word",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f1-i128",
+      "skill": "F1",
+      "passage": "f1-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "How can the club cook dinner tonight?",
+      "options": [
+        "On a campfire in the fire ring",
+        "Only on a stove at the picnic shelter",
+        "With no fire and no stove at all",
+        "On the camp stove at their campsite"
+      ],
+      "answer": 3,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the color of the pointer in the second paragraph. Then read the sign part with that color.",
+      "explain": "They cook on the camp stove at their campsite. The pointer is on yellow, and the yellow part says HIGH: NO CAMPFIRES. CAMP STOVES OK.",
+      "inference": 1,
+      "tags": [
+        "text-and-sign",
+        "decide"
+      ]
+    },
+    {
+      "id": "f1-i129",
+      "skill": "F1",
+      "passage": "f1-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The next morning is hotter and windier, and the ranger moves the pointer to orange. Where may the club use the stove for breakfast?",
+      "options": [
+        "Only at the picnic shelter",
+        "At their campsite",
+        "In the fire ring",
+        "Nowhere, because stoves are not allowed"
+      ],
+      "answer": 0,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the orange part of the sign. Read every word after NO CAMPFIRES.",
+      "explain": "They may use the stove only at the picnic shelter. The orange part says VERY HIGH: NO CAMPFIRES. STOVES ONLY AT THE PICNIC SHELTER.",
+      "inference": 0,
+      "tags": [
+        "read-every-word",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f1-i130",
+      "skill": "F1",
+      "passage": "f1-p50",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that tells which part of the sign the pointer is on this morning.",
+      "unit": "sentence",
+      "answer": [
+        7
+      ],
+      "hint": "The pointer is named in more than one sentence. Find the one that gives a color and says this morning.",
+      "explain": "The eighth sentence says the pointer is on the yellow part this morning. That is the detail that tells the club which rule to follow.",
+      "inference": 0,
+      "tags": [
+        "key-detail"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i131",
+      "skill": "F1",
+      "passage": "f1-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo's plan was to toast marshmallows over a campfire. Which new plan follows today's sign?",
+      "options": [
+        "Make a small campfire in the fire ring and keep water close",
+        "Ask Ms. Ortiz to help him warm a treat on the camp stove",
+        "Wait until the pointer moves to red, then make a campfire",
+        "Make the campfire at the picnic shelter"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find today's part of the sign. Check which kinds of fire it allows.",
+      "explain": "He asks Ms. Ortiz to help him warm a treat on the camp stove. The yellow part says no campfires, but camp stoves are OK. Keeping water close is the rule for the blue part, not the yellow part.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i132",
+      "skill": "F1",
+      "passage": "f1-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which way should Priya and her mom go?",
+      "options": [
+        "Turn left and walk to Gate 6",
+        "Turn left, then take the train to Gate 14",
+        "Take the train, then turn right to Gate 14",
+        "Wait by security until their gate is called"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "First find the gate for Flight 212 now. Then find the sign for that group of gates.",
+      "explain": "They take the train, then turn right to Gate 14. The yellow sign says Flight 212 moved from Gate 6 to Gate 14, and the sign for Gates 11 to 20 says to take the train, then turn right.",
+      "inference": 1,
+      "tags": [
+        "gate-change",
+        "two-signs",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f1-i133",
+      "skill": "F1",
+      "passage": "f1-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What time does boarding start, and what should Priya and her mom do now?",
+      "options": [
+        "Boarding starts at 10:45 AM, so they have time to shop first",
+        "Boarding starts at 11:00 AM, so they have 45 minutes to spare",
+        "Boarding starts at 10:30 AM, but Gate 6 is only 8 minutes away, so they can wait",
+        "Boarding starts at 10:30 AM, and the walk takes about 15 minutes, so they should go now"
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Subtract the minutes on the boarding sign from the takeoff time. Then add the walking time for their gate to 10:15 AM.",
+      "explain": "Boarding starts at 10:30 AM, 30 minutes before the 11:00 AM takeoff. The walk to Gates 11 to 20 takes about 15 minutes, so if they leave at 10:15 AM they arrive at about 10:30 AM. They should go now.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "two-signs",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i134",
+      "skill": "F1",
+      "passage": "f1-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya needs a restroom on the way. Which restroom is on the same side of the airport as her gate?",
+      "options": [
+        "The one near Gate 16",
+        "The one near Gate 9",
+        "The one near Gate 6",
+        "The one at the security line"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2,
+        5
+      ],
+      "hint": "Find which group of gates her new gate belongs to. Then check which restroom has a gate number in the same group.",
+      "explain": "The restroom near Gate 16 is on her side. Gate 14 and Gate 16 are both in the group Gates 11 to 20. Gate 9 is in the group Gates 1 to 10.",
+      "inference": 1,
+      "tags": [
+        "number-range",
+        "two-signs"
+      ]
+    },
+    {
+      "id": "f1-i135",
+      "skill": "F1",
+      "passage": "f1-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana and Ben have tickets for Section 124. How should they get to their seats today?",
+      "options": [
+        "Enter at Gate C, the south gate",
+        "Enter at Gate D and take the ramp down",
+        "Enter at Gate A and walk around the stadium",
+        "Enter at Gate D and ride the elevator up to the upper level"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the row that lists Section 124. Read the whole row to see if anything has changed today.",
+      "explain": "They enter at Gate D and take the ramp down. Section 124 is in the Gate C row, but Gate C is closed today, and that row says to use Gate D and take the ramp down.",
+      "inference": 1,
+      "tags": [
+        "closed",
+        "combine-rows",
+        "number-range"
+      ]
+    },
+    {
+      "id": "f1-i136",
+      "skill": "F1",
+      "passage": "f1-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben wants to bring snacks in his school backpack. What should he do?",
+      "options": [
+        "Carry the backpack in through Gate D",
+        "Leave the snacks with the guard at Gate C",
+        "Put the snacks in a clear plastic bag no bigger than 12 inches by 12 inches",
+        "Hold the backpack in his arms instead of wearing it"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the row about bags. Check what kind of bag is allowed and how big it may be.",
+      "explain": "He puts the snacks in a clear plastic bag, up to 12 inches by 12 inches. The Bags row says only clear plastic bags of that size are allowed.",
+      "inference": 1,
+      "tags": [
+        "rule",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i137",
+      "skill": "F1",
+      "passage": "f1-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "It is 3:05 PM. The twins are at their gate when Ana remembers that her scarf is in the car. What should they do?",
+      "options": [
+        "Go in now, and get the scarf at halftime",
+        "Wait inside until 4:00 PM, then go to the car",
+        "Go in at Gate C, because it is closer to the car",
+        "Get the scarf first, then go in"
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the row about leaving. Think about what happens if they go in first and then leave.",
+      "explain": "They get the scarf first, then go in. The Leaving row says there is no re-entry, so once they leave, they cannot come back in.",
+      "inference": 1,
+      "tags": [
+        "no-re-entry",
+        "sequence"
+      ]
+    },
+    {
+      "id": "f1-i138",
+      "skill": "F1",
+      "passage": "f1-p52",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Leo has a ticket for Section 105 and an air horn to cheer with. Tap the row with a rule he must follow at his gate.",
+      "unit": "row",
+      "answer": [
+        0
+      ],
+      "evidence": [
+        0
+      ],
+      "hint": "Find the row whose sections include 105. Then read its Notes.",
+      "explain": "The Gate A row lists Sections 101 to 110, and its Notes say no air horns or noisemakers. Leo leaves the horn at home.",
+      "inference": 1,
+      "tags": [
+        "number-range",
+        "find-row"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i139",
+      "skill": "F1",
+      "passage": "f1-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On Saturday morning, the app shows 🟠 Watch: strong storms possible this afternoon. Ana's soccer game is at 3:00 PM. What should she do this morning?",
+      "options": [
+        "Get ready, and check the alerts often before the game",
+        "Stay inside, away from windows, until the game",
+        "Go on with her plans, because the storm is not here yet",
+        "Leave extra time to travel to the game"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Match the alert to its row. Read the What to do box, and check whether the storm is here yet.",
+      "explain": "She gets ready and checks the alerts often. The Watch row says the weather is right for a storm, but it is not here yet, so you get ready. Staying inside is the rule for a Warning.",
+      "inference": 1,
+      "tags": [
+        "watch-vs-warning",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i140",
+      "skill": "F1",
+      "passage": "f1-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "At 3:00 PM, the app shows 🔴 Warning for Harbor Town until 5:00 PM. Leo planned to skate at 4:00 PM. What should he do?",
+      "options": [
+        "Skate at 4:00 PM, but leave extra time",
+        "Stay inside, away from windows, and skate another time after the warning ends",
+        "Go to the skate park early, at 3:30 PM",
+        "Charge his phone, then skate at 4:00 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the row for a Warning. Compare the time the warning ends with Leo's plan.",
+      "explain": "Leo stays inside, away from windows, and skates after the warning ends. The Warning row says to stay inside until the warning ends, and this one lasts until 5:00 PM.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "problem-solving",
+        "time"
+      ]
+    },
+    {
+      "id": "f1-i141",
+      "skill": "F1",
+      "passage": "f1-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The app shows 🟡 Advisory: thick fog in Story Woods, 6:00 AM to 10:00 AM. Sam's bus leaves Harbor Town at 9:00 AM and reaches Story Woods at 9:30 AM. What should he do?",
+      "options": [
+        "Stay home, because fog is a storm",
+        "Go as planned, because he lives in Harbor Town",
+        "Leave extra time, because his trip is inside the place and time of the advisory",
+        "Wait inside, away from windows, until 10:00 AM"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Read the note under the chart. Check the place and the time of the advisory against Sam's trip.",
+      "explain": "He leaves extra time. His bus is in Story Woods at 9:30 AM, which is inside the advisory's place and time, and the Advisory row says to take care and leave extra time to travel.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "place-and-time",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i142",
+      "skill": "F1",
+      "passage": "f1-p53",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Does each card go with a Watch or a Warning? Put each card in the right box.",
+      "bins": [
+        "Watch: get ready",
+        "Warning: act now"
+      ],
+      "cards": [
+        {
+          "text": "🟠 alert",
+          "bin": 0,
+          "emoji": "🟠"
+        },
+        {
+          "text": "🔴 alert",
+          "bin": 1,
+          "emoji": "🔴"
+        },
+        {
+          "text": "A storm could form later today",
+          "bin": 0,
+          "emoji": "🌥️"
+        },
+        {
+          "text": "The storm is starting now",
+          "bin": 1,
+          "emoji": "⛈️"
+        },
+        {
+          "text": "Charge phones and check the alerts often",
+          "bin": 0,
+          "emoji": "🔋"
+        },
+        {
+          "text": "Stay inside, away from windows",
+          "bin": 1,
+          "emoji": "🏠"
+        }
+      ],
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Decide if each card is about a storm that might come or a storm that is here. Use the Watch row and the Warning row.",
+      "explain": "The orange alert, a storm that could form later today, and charging phones go with a Watch. The red alert, a storm starting now, and staying inside away from windows go with a Warning.",
+      "inference": 1,
+      "tags": [
+        "sort",
+        "watch-vs-warning"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i143",
+      "skill": "F1",
+      "passage": "f1-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam sees two yellow blazes on a tree, one above the other. The top one is shifted to the left. What does this tell him?",
+      "options": [
+        "Keep walking straight ahead",
+        "The Yellow Trail ends here",
+        "The Yellow Trail is about to turn right",
+        "The Yellow Trail is about to turn left"
+      ],
+      "answer": 3,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the paragraph about directions. Read what two blazes mean, then what it means when the top one is shifted.",
+      "explain": "The Yellow Trail is about to turn left. The second paragraph says two blazes warn of a turn, and a top blaze shifted to the left means the turn is to the left.",
+      "inference": 1,
+      "tags": [
+        "symbol-meaning",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i144",
+      "skill": "F1",
+      "passage": "f1-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam and Maya reach the first fork and read the notice. What is their best new plan?",
+      "options": [
+        "Hike the Blue Trail to the lookout instead",
+        "Take the Yellow Trail and climb over the fallen tree",
+        "Wait at the fork until the rangers move the tree",
+        "Follow the yellow blazes, but walk around the tree through the woods"
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10,
+        12
+      ],
+      "hint": "Read the third paragraph to find what changed today. Then check which trail at the fork is still open.",
+      "explain": "They hike the Blue Trail to the lookout instead. The notice says the Yellow Trail is closed past the fork, and the signpost shows the Blue Trail going straight to the lookout.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f1-i145",
+      "skill": "F1",
+      "passage": "f1-p54",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells what Sam and Maya will do if they lose the trail.",
+      "unit": "sentence",
+      "answer": [
+        14
+      ],
+      "evidence": [
+        14
+      ],
+      "hint": "Look in the last paragraph for a rule they made before they started.",
+      "explain": "The last sentence says they will turn around and walk back to the last blaze they saw if they walk for five minutes without seeing one.",
+      "inference": 1,
+      "tags": [
+        "key-detail"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i146",
+      "skill": "F1",
+      "passage": "f1-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How far will Sam and Maya walk from the first fork to the lookout and back to the fork?",
+      "options": [
+        "1.2 miles",
+        "2 miles",
+        "2.4 miles",
+        "3.2 miles"
+      ],
+      "answer": 2,
+      "evidence": [
+        9
+      ],
+      "hint": "Find the distance to the lookout on the signpost. Remember that they walk there and back.",
+      "explain": "They walk 2.4 miles. The signpost says the lookout is 1.2 miles away, and 1.2 miles there plus 1.2 miles back is 2.4 miles. 2 miles is the distance to the creek.",
+      "inference": 1,
+      "tags": [
+        "distance",
+        "math",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i147",
+      "skill": "F1",
+      "passage": "f1-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben is 50 inches tall. He wants to try the Spacewalk Ride. What must he do first?",
+      "options": [
+        "Nothing, because he is tall enough",
+        "Get a free time ticket at the Space Wing desk",
+        "Type 24 into the guide player",
+        "Measure his height at the theater"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the Spacewalk Ride in the note and list its symbols. Check what each symbol asks him to do.",
+      "explain": "He gets a free time ticket first. The Spacewalk Ride shows 📏 and ⏰. He is tall enough for the 48-inch rule, but ⏰ means he needs a time ticket from the Space Wing desk.",
+      "inference": 1,
+      "tags": [
+        "combine-symbols",
+        "note",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i148",
+      "skill": "F1",
+      "passage": "f1-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya wants a quiet visit with no loud sounds. Which exhibit has a symbol that warns her?",
+      "options": [
+        "Mars Rover Driving Game",
+        "Moon Rock",
+        "Rocket Launch Theater",
+        "Spacewalk Ride"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the symbol for loud sounds in the key. Then find which exhibit in the note shows it.",
+      "explain": "The Rocket Launch Theater warns her. It shows 🔊, and the key says 🔊 means loud sounds.",
+      "inference": 1,
+      "tags": [
+        "symbol-key",
+        "note"
+      ]
+    },
+    {
+      "id": "f1-i149",
+      "skill": "F1",
+      "passage": "f1-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which two exhibits can Sam hear about on the audio guide?",
+      "options": [
+        "Moon Rock and Mars Rover Driving Game",
+        "Meteorite Touch Table and Rocket Launch Theater",
+        "Spacewalk Ride and Moon Rock",
+        "Moon Rock and Meteorite Touch Table"
+      ],
+      "answer": 3,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the audio guide symbol. Then look for every exhibit in the note that shows it.",
+      "explain": "Moon Rock and the Meteorite Touch Table both show 🎧, with the numbers 21 and 24.",
+      "inference": 1,
+      "tags": [
+        "symbol-key",
+        "note"
+      ]
+    },
+    {
+      "id": "f1-i150",
+      "skill": "F1",
+      "passage": "f1-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo wants to touch something that really came from space. Which exhibit should he go to?",
+      "options": [
+        "Meteorite (space rock) Touch Table",
+        "Moon Rock",
+        "Mars Rover Driving Game",
+        "Spacewalk Ride"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Find the exhibits that are real objects from space. Then check which of them shows the hands-on symbol.",
+      "explain": "He goes to the Meteorite Touch Table. A meteorite is a space rock, and it shows ✋ for hands-on. The Moon Rock came from space too, but it shows 👀 for look only.",
+      "inference": 1,
+      "tags": [
+        "combine-symbols",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i151",
+      "skill": "F1",
+      "passage": "f1-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The green light is flashing, and the arm is not moving. Leo wants a closer look. What should he do?",
+      "options": [
+        "Step over the line, because the arm is not moving",
+        "Stay behind the line, because the arm can start again at any moment",
+        "Step closer as soon as a worker arrives",
+        "Step closer when the light turns red"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the row for a flashing green light. Read both the meaning and the Visitors rule.",
+      "explain": "Leo stays behind the line. The flashing green row says the arm is paused and can start again at any moment.",
+      "inference": 1,
+      "tags": [
+        "read-every-word",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i152",
+      "skill": "F1",
+      "passage": "f1-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "A worker walks inside the yellow line to fix an arm. Which light should be on?",
+      "options": [
+        "Steady green",
+        "Flashing green",
+        "Blue",
+        "Red"
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the row that lets a worker go inside the line. Check the red row too.",
+      "explain": "The blue light should be on. The Blue row says the arm is locked and a trained worker may go inside the line. The Red row says a worker locks the arm before anyone goes near it.",
+      "inference": 1,
+      "tags": [
+        "close-distractor",
+        "find-row"
+      ]
+    },
+    {
+      "id": "f1-i153",
+      "skill": "F1",
+      "passage": "f1-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "An arm shows a steady green light and a yellow light at the same time. What does this tell the club?",
+      "options": [
+        "The arm has stopped because of a problem",
+        "The arm is locked for repair",
+        "The arm is paused",
+        "The arm is working, but it needs parts or a check soon"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Read the note. Then read the row for each light and put the two meanings together.",
+      "explain": "The arm is working, but it needs parts or a check soon. The note says to read the row for each light: steady green means working, and yellow means it needs parts or a check soon.",
+      "inference": 1,
+      "tags": [
+        "combine-rows",
+        "note"
+      ]
+    },
+    {
+      "id": "f1-i154",
+      "skill": "F1",
+      "passage": "f1-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "It is May 12. Sam wants to watch the seal pups. What should he do?",
+      "options": [
+        "Take the cliff path to the viewing deck and use the free binoculars",
+        "Walk the lower path, staying 50 yards from the seals",
+        "Walk along the beach slowly until a pup lifts its head",
+        "Wait at the lower path until the tide goes out"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        6
+      ],
+      "hint": "Check whether May 12 is inside the pup season dates. Then read where that row tells you to go.",
+      "explain": "He takes the cliff path to the viewing deck. May 12 is between March 1 and June 30, so the lower path is closed. The Viewing deck row says the binoculars are free.",
+      "inference": 1,
+      "tags": [
+        "date-range",
+        "combine-rows"
+      ]
+    },
+    {
+      "id": "f1-i155",
+      "skill": "F1",
+      "passage": "f1-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "It is August 3 at 2:00 PM. Ana wants to walk the lower path. What should she do?",
+      "options": [
+        "Walk the lower path now, because pup season is over",
+        "Use the cliff path now, or wait until after 3:40 PM for the lower path",
+        "Walk the lower path quickly, before high tide at 2:40 PM",
+        "Stay off both paths, because it is summer"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Check two rows: the pup season dates and the tide times. Ask if each one allows the lower path at 2:00 PM on August 3.",
+      "explain": "She uses the cliff path now or waits until after 3:40 PM. Pup season is over, but the Tides row says to stay off the lower path from 1:40 PM to 3:40 PM, and 2:00 PM is inside that time.",
+      "inference": 1,
+      "tags": [
+        "time",
+        "combine-rows",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i156",
+      "skill": "F1",
+      "passage": "f1-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On July 10, Maya walks the lower path. She sees a seal pup alone on the sand ahead. What should she do?",
+      "options": [
+        "Carry the pup down to the water",
+        "Sit close by so the pup is not alone",
+        "Stay at least 50 yards away, because the mother will come back",
+        "Move the pup to a safer spot on the rocks"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Find the row about pups. Read why a pup may be alone and what people should do.",
+      "explain": "She stays at least 50 yards away. The Pups row says a mother often leaves her pup while she feeds at sea, so people do not touch or move it and stay back so she can come back.",
+      "inference": 1,
+      "tags": [
+        "read-every-word",
+        "rule"
+      ]
+    },
+    {
+      "id": "f1-i157",
+      "skill": "F1",
+      "passage": "f1-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo is 70 yards from a seal. The seal lifts its head and watches him. What should he do?",
+      "options": [
+        "Stay where he is, because 70 yards is more than 50 yards",
+        "Walk closer to take a photo",
+        "Wave so the seal can see he is friendly",
+        "Back away slowly"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Compare 70 with the distance rule. Then read the Too close row. Decide which row tells him what to do right now.",
+      "explain": "Leo backs away slowly. He is farther than 50 yards, but the Too close row says that if a seal lifts its head to watch you, you are too close.",
+      "inference": 1,
+      "tags": [
+        "rule-overrides",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i158",
+      "skill": "F1",
+      "passage": "f1-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana cannot eat peanuts or tree nuts, and she has only a bank card with her. Which stall can she buy lunch from?",
+      "options": [
+        "Stall 6, corn on the cob",
+        "Stall 4, rice bowls",
+        "Stall 2, fruit cups",
+        "Stall 5, honey cakes"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "hint": "Cross out every option with the nut symbol. Then check the payment symbols for the ones that are left.",
+      "explain": "She buys from Stall 6. Its row has no 🥜, and it shows 💳, so it takes cards. Stall 2 has no nuts, but it takes cash only.",
+      "inference": 1,
+      "tags": [
+        "combine-symbols",
+        "allergy",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i159",
+      "skill": "F1",
+      "passage": "f1-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam arrives at 11:30 AM. He hopes to get fish tacos. What is the best plan?",
+      "options": [
+        "Wait for the taco stall to open at 1:00 PM",
+        "Have a second choice ready, because the tacos often sell out by 11:00 AM",
+        "Bring cash, because Stall 3 takes cash only",
+        "Buy tacos at Stall 1, which sells them too"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the taco stall. Read every symbol in its row, and check the key for the clock symbol.",
+      "explain": "Sam has a second choice ready. Stall 3 shows ⏰, and the key says it often sells out by 11:00 AM. He arrives at 11:30 AM.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "problem-solving",
+        "symbol-key"
+      ]
+    },
+    {
+      "id": "f1-i160",
+      "skill": "F1",
+      "passage": "f1-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Grandma Rose is buying lunch for a guest who eats no animal foods. Which stalls fit?",
+      "options": [
+        "Stalls 1, 2 and 6",
+        "Stalls 3, 4 and 6",
+        "Stalls 2, 4 and 6",
+        "Stalls 2, 5 and 6"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        3,
+        5
+      ],
+      "hint": "Find the symbol that means no animal foods. List every stall that shows it.",
+      "explain": "Stalls 2, 4 and 6 fit. Each one shows 🌱, and the key says 🌱 means no animal foods.",
+      "inference": 0,
+      "tags": [
+        "symbol-key",
+        "find-all"
+      ]
+    },
+    {
+      "id": "f1-i161",
+      "skill": "F1",
+      "passage": "f1-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya and her dad bring a younger neighbor who is 45 inches tall. Where should the neighbor sit?",
+      "options": [
+        "Alone in a cart",
+        "Next to Maya",
+        "Nowhere, because the neighbor is too short to ride",
+        "Next to Maya's dad"
+      ],
+      "answer": 3,
+      "evidence": [
+        0
+      ],
+      "hint": "Compare 45 inches with both numbers on the yellow sign. Then check who in the group is an adult.",
+      "explain": "The neighbor sits next to Maya's dad. 45 inches is tall enough to ride, but it is under 48 inches, so the rider must sit next to an adult. Maya is 11, so she is not an adult.",
+      "inference": 1,
+      "tags": [
+        "number-range",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i162",
+      "skill": "F1",
+      "passage": "f1-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "It is 3:50 PM. Sam wants a ticket for the last train. What will happen?",
+      "options": [
+        "He is too late, because ticket sales ended at 3:45 PM",
+        "He can buy a ticket for the 4:00 PM train",
+        "He can wait for a 4:20 PM train",
+        "He can buy a ticket on the train"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        5
+      ],
+      "hint": "Find the time of the last train. Then use the ticket sign to work out when sales end.",
+      "explain": "He is too late. The last train is at 4:00 PM, and the green sign says ticket sales end 15 minutes before it, at 3:45 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "two-signs"
+      ]
+    },
+    {
+      "id": "f1-i163",
+      "skill": "F1",
+      "passage": "f1-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben rides the 2:20 PM train today. About what time will he get back to the platform?",
+      "options": [
+        "2:35 PM",
+        "2:45 PM",
+        "2:40 PM",
+        "3:00 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        4
+      ],
+      "hint": "Two signs give a ride time. Check which one is for today.",
+      "explain": "He gets back at about 2:35 PM. The usual ride is 25 minutes, but the orange sign says today the ride is 15 minutes, and 15 minutes after 2:20 PM is 2:35 PM.",
+      "inference": 1,
+      "tags": [
+        "rule-overrides",
+        "time-math",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i164",
+      "skill": "F1",
+      "passage": "f1-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo wants to hold the T. rex tooth. What do the labels tell him?",
+      "options": [
+        "He may only look at it, because the star means it is real",
+        "He may hold it, because its green label means a cast made for handling",
+        "He may hold it only after his class leaves",
+        "He may only look at it from behind the rope"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the T. rex tooth label. Check what its color means and what its star means, one at a time.",
+      "explain": "He may hold it. The tooth has a green label, which means a cast made for handling. The star only means the real tooth is kept in the Fossil Lab.",
+      "inference": 1,
+      "tags": [
+        "color-key",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i165",
+      "skill": "F1",
+      "passage": "f1-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Where is the real fossil that the T. rex skeleton was copied from?",
+      "options": [
+        "In the Dinosaur Hall, behind the rope",
+        "On the green label table",
+        "Upstairs in the museum's Fossil Lab",
+        "In the first room, with a blue label"
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Look at the T. rex skeleton label. Then find what the star means in the second paragraph.",
+      "explain": "It is upstairs in the Fossil Lab. The skeleton's label has a star, and the second paragraph says a star means the real fossil is kept in the museum's Fossil Lab.",
+      "inference": 1,
+      "tags": [
+        "text-and-sign",
+        "symbol"
+      ]
+    },
+    {
+      "id": "f1-i166",
+      "skill": "F1",
+      "passage": "f1-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben wants to see a real dinosaur skull, not a copy. Which display should he go to?",
+      "options": [
+        "T. rex skeleton",
+        "Triceratops horn",
+        "T. rex tooth",
+        "Triceratops skull"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Find the label color that means a real fossil. Then find the skull with that color.",
+      "explain": "He goes to the Triceratops skull. Its label is blue, and blue means a real fossil. The T. rex skeleton has a white label, which means a cast.",
+      "inference": 1,
+      "tags": [
+        "color-key",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i167",
+      "skill": "F1",
+      "passage": "f1-p60",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that tells why museums often show casts.",
+      "unit": "sentence",
+      "answer": [
+        3
+      ],
+      "hint": "Find the sentence in the first paragraph that names casts and gives a reason with the word so.",
+      "explain": "The fourth sentence says real fossils are heavy and can crack, so museums often show casts.",
+      "inference": 0,
+      "tags": [
+        "key-detail"
+      ],
+      "transfer": true
     }
   ],
   "model": {

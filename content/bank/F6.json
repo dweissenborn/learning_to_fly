@@ -720,6 +720,1621 @@
         "retrieved": "2026-10-12",
         "adapted": false
       }
+    },
+    {
+      "id": "f6-p25",
+      "title": "Hot Day Alert",
+      "kind": "prompt",
+      "sentences": [
+        "Ana has a soccer game today.",
+        "She checks the weather app."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Hot Day",
+        "icon": "☀️",
+        "rows": [
+          "It will be very hot today.",
+          "Drink lots of water.",
+          "Rest in the shade."
+        ],
+        "buttons": [
+          "OK"
+        ]
+      },
+      "picture": "☀️⚽💧",
+      "topics": [
+        "weather",
+        "sports"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Hot Day Alert",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p26",
+      "title": "The Dog Park Gate",
+      "kind": "notice",
+      "sentences": [
+        "Sam takes Pixel to the dog park.",
+        "A sign is on the gate."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Dog Park Rules",
+        "icon": "🐕",
+        "rows": [
+          "Shut the gate behind you.",
+          "Keep your dog on a leash at the gate.",
+          "Pick up after your dog."
+        ]
+      },
+      "picture": "🐕🚪🌳",
+      "topics": [
+        "animals"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Dog Park Gate",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p27",
+      "title": "The Rover Motor",
+      "kind": "notice",
+      "sentences": [
+        "Priya drives her rover for a long time.",
+        "Then it stops.",
+        "She reads the label on the motor."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Motor Warning",
+        "icon": "⚠️",
+        "rows": [
+          "The motor gets hot.",
+          "Do not touch it after a long drive.",
+          "Wait 5 minutes for it to cool."
+        ]
+      },
+      "picture": "🤖⚠️⏳",
+      "topics": [
+        "robots"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Rover Motor",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p28",
+      "title": "The Bakery Oven",
+      "kind": "notice",
+      "sentences": [
+        "Sam helps Grandma Rose at the bakery.",
+        "The cookies are done."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Oven Rules",
+        "icon": "🔥",
+        "rows": [
+          "The oven door is hot.",
+          "Use oven mitts.",
+          "Only Grandma Rose opens the oven."
+        ]
+      },
+      "picture": "🍪🔥🧤",
+      "topics": [
+        "food"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Bakery Oven",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p29",
+      "title": "The Tuner App",
+      "kind": "prompt",
+      "sentences": [
+        "Sam gets a new app to tune his guitar.",
+        "It is called TuneUp.",
+        "A box pops up when he opens it."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Allow TuneUp to use the microphone?",
+        "icon": "🎤",
+        "rows": [
+          "TuneUp listens to your guitar strings.",
+          "Then it tells you if each string is too high or too low.",
+          "TuneUp does not save or send what it hears."
+        ],
+        "buttons": [
+          "Allow",
+          "Don't Allow"
+        ]
+      },
+      "picture": "🎸🎤📱",
+      "topics": [
+        "music"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Tuner App",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p30",
+      "title": "Not Enough Space",
+      "kind": "prompt",
+      "sentences": [
+        "Ben wants to get a racing game called Kart Kingdom.",
+        "He taps Download, and this box pops up."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Not enough space",
+        "icon": "💾",
+        "rows": [
+          "Kart Kingdom needs 3 GB of space.",
+          "Your tablet has 1 GB free.",
+          "To make space, you can delete apps, photos or videos.",
+          "Ask an adult before you delete anything."
+        ],
+        "buttons": [
+          "Manage Space",
+          "Cancel"
+        ]
+      },
+      "picture": "🎮💾📱",
+      "topics": [
+        "games"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Not Enough Space",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p31",
+      "title": "The Railroad Crossing",
+      "kind": "notice",
+      "sentences": [
+        "Sam walks Pixel on Shore Road.",
+        "The road crosses the train tracks.",
+        "A sign stands next to the tracks."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Railroad Crossing",
+        "icon": "🚦",
+        "rows": [
+          "When the red lights flash and the bell rings, a train is coming.",
+          "Stop behind the white line.",
+          "Wait until the gates go all the way up.",
+          "More than one train may come. Look both ways before you cross."
+        ]
+      },
+      "picture": "🚆🚦🐕",
+      "topics": [
+        "transport"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Railroad Crossing",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p32",
+      "title": "Sunscreen at the Pool",
+      "kind": "notice",
+      "sentences": [
+        "Maya and Priya go to the Harbor Town Pool.",
+        "A board by the gate tells about the sun today."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Today's Sun Level: Very High",
+        "icon": "☀️",
+        "rows": [
+          "The sun is very strong today from 10:00 AM to 4:00 PM.",
+          "Put on sunscreen 15 minutes before you go in the sun.",
+          "Put it on again every 2 hours.",
+          "Put it on again each time you get out of the pool. Do this even if the bottle says it works in water.",
+          "Rest in the shade when you can."
+        ]
+      },
+      "picture": "☀️🏊🧴",
+      "topics": [
+        "weather",
+        "health"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sunscreen at the Pool",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p33",
+      "title": "A Friend Request",
+      "kind": "prompt",
+      "sentences": [
+        "Ana plays a soccer game called Goal Rush.",
+        "This box pops up on her screen."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "New friend request",
+        "icon": "👤",
+        "rows": [
+          "StrikerMax wants to be your friend.",
+          "You have 0 friends in common.",
+          "Friends can send you messages and see when you are online.",
+          "Only add people you know in real life."
+        ],
+        "buttons": [
+          "Accept",
+          "Decline"
+        ]
+      },
+      "picture": "🎮⚽👤",
+      "topics": [
+        "games"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "A Friend Request",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p34",
+      "title": "The Touch Table",
+      "kind": "notice",
+      "sentences": [
+        "Maya visits the dinosaur hall at the museum.",
+        "She stops at a table full of bones and teeth."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Touch Table",
+        "icon": "🦖",
+        "rows": [
+          "The bones on this table are casts.",
+          "A cast is a copy of a real fossil.",
+          "You may pick up the casts.",
+          "Put each cast back on its picture when you are done.",
+          "The real fossils are in the glass case. Please do not lean on the glass."
+        ]
+      },
+      "picture": "🦖🦴🔍",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Touch Table",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p35",
+      "title": "Download the Trail Map?",
+      "kind": "prompt",
+      "sentences": [
+        "Sam plans a hike in Story Woods on Saturday.",
+        "He opens Trail Tracker at home on Friday night."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Download the Story Woods map?",
+        "icon": "🗺️",
+        "rows": [
+          "Most trails in Story Woods have no phone signal.",
+          "Download the map now so it works with no signal.",
+          "The download takes about 5 minutes.",
+          "Use Wi-Fi at home so it does not use your phone data."
+        ],
+        "buttons": [
+          "Download",
+          "Not Now"
+        ]
+      },
+      "picture": "🗺️🌲📶",
+      "topics": [
+        "maps",
+        "nature"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Download the Trail Map?",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p36",
+      "title": "Jellyfish Warning",
+      "kind": "notice",
+      "sentences": [
+        "Leo walks on the beach at Gull Point.",
+        "He sees a new sign by the stairs."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Jellyfish on the Beach",
+        "icon": "🪼",
+        "rows": [
+          "Many jellyfish have washed up on the sand this week.",
+          "Do not touch them, even if they look dry.",
+          "A jellyfish on the sand can still sting.",
+          "If a jellyfish stings you, tell a lifeguard."
+        ]
+      },
+      "picture": "🪼🏖️⚠️",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Jellyfish Warning",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p37",
+      "title": "Block or Report",
+      "kind": "prompt",
+      "sentences": [
+        "Ana is playing Goal Rush online.",
+        "A player called GoalGuy22 keeps sending her unkind messages.",
+        "She taps the player's name, and this box opens."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Block GoalGuy22?",
+        "icon": "🚫",
+        "rows": [
+          "GoalGuy22 will not be able to send you messages or join your games.",
+          "GoalGuy22 will not be told that you blocked them.",
+          "To tell the Goal Rush safety team about the messages, tap Report.",
+          "You can block and report the same player.",
+          "If a message upsets you, show it to an adult you trust."
+        ],
+        "buttons": [
+          "Block",
+          "Report",
+          "Cancel"
+        ]
+      },
+      "picture": "🎮🚫🚩",
+      "topics": [
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Block or Report",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p38",
+      "title": "Ferry Safety Card",
+      "kind": "notice",
+      "sentences": [
+        "Sam and Grandma Rose ride the ferry to Gull Island.",
+        "Captain Ruth Lane asks everyone to read the safety card."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Town Ferry: Safety Card",
+        "icon": "⛴️",
+        "rows": [
+          "Adult life jackets are under every seat.",
+          "Life jackets for children are in the orange box by the stairs.",
+          "Hold the rail when you use the stairs. The steps can be wet.",
+          "When the Outer Deck Closed light is on, stay inside. The waves are big.",
+          "If you hear 7 short horn blasts and then 1 long blast, put on a life jacket.",
+          "Then go to the meeting area by the snack bar and wait for the crew."
+        ]
+      },
+      "picture": "⛴️🦺🌊",
+      "topics": [
+        "transport",
+        "ocean"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ferry Safety Card",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p39",
+      "title": "Skate Park Rules",
+      "kind": "notice",
+      "sentences": [
+        "Leo rides his skateboard to the skate park after school.",
+        "It rained at lunch, and the ramps are still wet."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Town Skate Park Rules",
+        "icon": "🛹",
+        "rows": [
+          "Helmets are required for every rider.",
+          "Knee and elbow pads are a good idea, but you do not have to wear them.",
+          "No skating on wet ramps. Wet ramps are slippery. You may skate on the flat area if it is dry.",
+          "One rider on a ramp at a time. Wait your turn at the top.",
+          "Riders under 10 must have an adult at the park.",
+          "Open 8:00 AM to 8:00 PM."
+        ]
+      },
+      "picture": "🛹⛑️💧",
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Skate Park Rules",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p40",
+      "title": "A Strange Message",
+      "kind": "message",
+      "sentences": [
+        "Ben gets a chat in Kart Kingdom from Leo's account.",
+        "Leo usually writes short, funny chats about skateboards."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "LeoSkates",
+        "to": "Ben",
+        "time": "7:40 PM",
+        "rows": [
+          "Dear friend, I have a great gift for you.",
+          "I found a website that gives 10,000 free Kart Coins.",
+          "Type your username and password on the website to get them.",
+          "Do it in the next 5 minutes or the coins will be gone.",
+          "Do not tell anyone else about this."
+        ]
+      },
+      "picture": "🎮💬❓",
+      "topics": [
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "A Strange Message",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p41",
+      "title": "Campfire Rules",
+      "kind": "notice",
+      "sentences": [
+        "Priya's family camps at the Story Woods campsite.",
+        "They read the board before they make a fire."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Story Woods Campsite: Fire Rules",
+        "icon": "🔥",
+        "rows": [
+          "Fire danger today: HIGH.",
+          "When fire danger is HIGH, fires are allowed only in the metal fire rings.",
+          "Keep a full bucket of water next to your fire.",
+          "Never leave a fire alone, not even for a few minutes.",
+          "To put out a fire, pour water on it, stir the ashes, and pour water on it again.",
+          "Then hold the back of your hand near the ashes. If you still feel heat, add more water.",
+          "When fire danger is EXTREME, no fires are allowed at all."
+        ]
+      },
+      "picture": "🏕️🔥🪣",
+      "topics": [
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Campfire Rules",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p42",
+      "title": "Rock Hammer Safety",
+      "kind": "notice",
+      "sentences": [
+        "Maya goes to rock club with Mr. Varga.",
+        "Today they will break open rocks to look for crystals."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Rock Club: Hammer Safety",
+        "icon": "🔨",
+        "rows": [
+          "Wear safety glasses every time you hit a rock. Small chips can fly into your eyes.",
+          "Forgot your glasses? Borrow a pair from the blue box.",
+          "Use a rock hammer. A regular hammer can chip and break.",
+          "Wrap the rock in a cloth before you hit it.",
+          "Stand at least 10 steps away from anyone who is hammering.",
+          "Wear gloves when you pick up broken pieces. The edges can be sharp."
+        ]
+      },
+      "picture": "🪨🔨🥽",
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rock Hammer Safety",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p43",
+      "title": "Charging the Rover Battery",
+      "kind": "notice",
+      "sentences": [
+        "Priya's rover battery is almost empty.",
+        "She reads the label before she charges it."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Battery Pack: Charging Rules",
+        "icon": "🔋",
+        "rows": [
+          "Charge only with the yellow charger that came in the kit.",
+          "Charge on a hard surface, like a table or the floor. Never charge on a bed or a carpet.",
+          "Stay in the room while it charges.",
+          "Charging takes about 1 hour. Unplug it when the light turns green.",
+          "If the battery looks puffy or feels hot, stop. Do not charge it. Tell an adult."
+        ]
+      },
+      "picture": "🤖🔋🔌",
+      "topics": [
+        "robots"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Charging the Rover Battery",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p44",
+      "title": "Share Your Dino Photo?",
+      "kind": "prompt",
+      "sentences": [
+        "Ben takes a photo with a Triceratops in the DinoWalk app.",
+        "The photo shows Ben's face and his bedroom.",
+        "Then this box pops up."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Share your photo?",
+        "icon": "🦕",
+        "rows": [
+          "Share your photo on the Dino Wall?",
+          "Everyone who uses DinoWalk can see the Dino Wall.",
+          "Fun fact: Triceratops had three horns and a big bony frill.",
+          "You can also save the photo to your tablet only. Then nobody else can see it."
+        ],
+        "buttons": [
+          "Share to Dino Wall",
+          "Save to Tablet Only",
+          "Cancel"
+        ]
+      },
+      "picture": "🦕📸📱",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Share Your Dino Photo?",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p45",
+      "title": "Flood on Mill Road",
+      "kind": "prompt",
+      "sentences": [
+        "It rained all day in Harbor Town.",
+        "Sam and his dad plan to bike to the library.",
+        "Then this alert pops up."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Flood Advisory",
+        "icon": "🌊",
+        "rows": [
+          "Harbor Town Weather Service: Flood Advisory until 8:00 PM.",
+          "Mill Road is under water near the creek.",
+          "Water on a road can be deeper than it looks.",
+          "Never walk, bike or drive through flood water. Moving water only 6 inches deep can knock a person down.",
+          "Use Hill Street instead of Mill Road until the advisory ends."
+        ],
+        "buttons": [
+          "Details",
+          "Dismiss"
+        ]
+      },
+      "picture": "🌧️🚲🌊",
+      "topics": [
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Flood on Mill Road",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p46",
+      "title": "Star Party Rules",
+      "kind": "notice",
+      "sentences": [
+        "Sam's class goes to a star party at Lantern Peaks Observatory.",
+        "Dr. Lee hands out a list of rules."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Star Party Rules",
+        "icon": "🔭",
+        "rows": [
+          "Bring a flashlight with a red light only. Red light does not spoil your night vision.",
+          "Your eyes need about 20 minutes in the dark to see faint stars. White light starts that time over.",
+          "Never point a telescope or binoculars at the Sun, even near sunset.",
+          "Ask before you touch a telescope. A small bump can move it off its target.",
+          "Walk, do not run. Cables for the telescopes lie on the ground.",
+          "Dress warmly. It is colder on the peak than in town."
+        ]
+      },
+      "picture": "🔭🌌🔦",
+      "topics": [
+        "space"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Star Party Rules",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p47",
+      "title": "Eclipse Day",
+      "kind": "notice",
+      "sentences": [
+        "Next Monday afternoon, the Moon will pass in front of part of the Sun.",
+        "This is called a partial solar eclipse, and Harbor Town will see it from 1:10 PM to 3:40 PM.",
+        "At 2:25 PM, the Moon will cover the biggest part of the Sun.",
+        "Lantern Peaks Observatory will give out free eclipse glasses at the library on Saturday.",
+        "Never look straight at the Sun without eclipse glasses, not even for a few seconds.",
+        "During a partial eclipse, part of the Sun is always uncovered, and its light can hurt your eyes.",
+        "Regular sunglasses are not safe, even very dark ones.",
+        "Before you use eclipse glasses, check them for scratches or holes.",
+        "If they are damaged, do not use them.",
+        "Put the glasses on before you look up, and look away from the Sun before you take them off.",
+        "Do not look through a telescope, binoculars or a camera while you wear eclipse glasses.",
+        "These tools gather the Sun's light and make it much stronger, so it can burn through the glasses.",
+        "If you do not have glasses, you can make a pinhole viewer.",
+        "Poke a small hole in a card, stand with your back to the Sun, and let the light shine through the hole onto a sheet of paper.",
+        "You will see a small, bright circle on the paper, with a dark piece missing where the Moon covers the Sun."
+      ],
+      "breaks": [
+        4,
+        10
+      ],
+      "picture": "🌘🕶️☀️",
+      "topics": [
+        "space"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Eclipse Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p48",
+      "title": "Game Time Is Almost Up",
+      "kind": "prompt",
+      "sentences": [
+        "Ben is in the middle of the Volcano Cup in Kart Kingdom.",
+        "This box pops up on the family tablet."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "15 Minutes Left",
+        "icon": "⏰",
+        "rows": [
+          "You have 15 minutes of game time left today.",
+          "When the time runs out, Kart Kingdom will close by itself.",
+          "Kart Kingdom saves your cup only when you finish all 4 races or tap Save and Quit in the menu.",
+          "If the game closes in the middle of a cup, you will start that cup again from race 1.",
+          "Tap Ask for More Time to send a request to a parent. Your time keeps running while you wait for an answer.",
+          "Game time starts again tomorrow at 7:00 AM."
+        ],
+        "buttons": [
+          "Ask for More Time",
+          "OK"
+        ]
+      },
+      "picture": "🎮⏰🏎️",
+      "topics": [
+        "games"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Game Time Is Almost Up",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p49",
+      "title": "Before You Ride",
+      "kind": "notice",
+      "sentences": [
+        "Sam takes his bike to Okafor's Bike Shop for a check.",
+        "Mr. Okafor gives him a card to keep in his bag."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Okafor's Bike Shop: Check Before Every Ride",
+        "icon": "🚲",
+        "rows": [
+          "Air: Squeeze each tire. It should feel firm. Soft tires make the bike hard to steer.",
+          "Brakes: Squeeze each brake lever. The lever should stop before it touches the handlebar.",
+          "Chain: Turn the pedals backward. The chain should run smoothly, with no rust and no loud clicks.",
+          "Helmet: It should sit level, about two fingers above your eyebrows.",
+          "The side straps should make a V under each ear. Buckle the chin strap so only one finger fits under it.",
+          "If the brakes fail the check, do not ride. Walk the bike home or to the shop.",
+          "If a tire is a little soft, pump it to the number printed on the side of the tire."
+        ]
+      },
+      "picture": "🚲⛑️🔧",
+      "topics": [
+        "transport",
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Before You Ride",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p50",
+      "title": "Heat Advisory for the Tournament",
+      "kind": "prompt",
+      "sentences": [
+        "Ana and Ben have a soccer tournament on Saturday at Pier Field.",
+        "On Friday night, this alert pops up in the team app."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Heat Advisory: Saturday Games",
+        "icon": "🌡️",
+        "rows": [
+          "Harbor Town Weather Service: Heat Advisory on Saturday from 11:00 AM to 7:00 PM. High of 96°F.",
+          "Games before 11:00 AM will be played as planned.",
+          "Games planned between 11:00 AM and 7:00 PM will move to Sunday at the same time.",
+          "Every player needs two full water bottles. Drink before you feel thirsty.",
+          "Referees will stop each game for a water break every 15 minutes.",
+          "If you feel dizzy, sick to your stomach or very tired, stop playing. Sit in the shade, sip water and tell your coach.",
+          "Wear light-colored clothes and a hat when you are not playing."
+        ],
+        "buttons": [
+          "See New Times",
+          "OK"
+        ]
+      },
+      "picture": "🌡️⚽💧",
+      "topics": [
+        "weather",
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Heat Advisory for the Tournament",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p51",
+      "title": "The Earplug Box",
+      "kind": "notice",
+      "sentences": [
+        "Leo practices drums in the band room at Harbor Middle School.",
+        "Ms. Gray put up a new notice next to the drum set."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Band Room: Protect Your Hearing",
+        "icon": "👂",
+        "rows": [
+          "Drums and brass instruments can be as loud as a lawn mower, or louder.",
+          "Loud sound for a long time can hurt your hearing, and that damage does not heal.",
+          "Wear earplugs when you play drums for more than 15 minutes, and during every full band practice.",
+          "Foam earplugs are in the green box by the door. Take a new pair each day.",
+          "How to put in a foam earplug: Roll it into a thin, tight tube with clean fingers.",
+          "Reach over your head and gently pull the top of your ear up and back.",
+          "Slide the earplug in, then hold it for 20 seconds while it grows to fill your ear.",
+          "If your ears ring after practice, tell Ms. Gray."
+        ]
+      },
+      "picture": "🥁👂🟢",
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Earplug Box",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p52",
+      "title": "Robot Rally Rules",
+      "kind": "notice",
+      "sentences": [
+        "Welcome to the Harbor Town Robot Rally!",
+        "Everyone who enters the pit area must put on safety glasses, including visitors.",
+        "You may take them off only in the lunch room or outside.",
+        "Carry robots on a cart or in two hands, and never drive a robot in the hallways.",
+        "Every robot must pass a safety check before its first match.",
+        "At the check table, a judge will look for loose wires and sharp edges.",
+        "The judge will also test the red stop button, which must cut all power to the robot at once.",
+        "A robot that fails the check may be fixed and checked again, as many times as the team needs.",
+        "Charge battery packs only at the charging station by the stage, where a volunteer watches them.",
+        "During a match, only the drivers may stand inside the white box.",
+        "If a robot moves in a way you did not expect, press its stop button.",
+        "Do not reach into the arena or try to grab a moving robot.",
+        "Wait until the referee says the arena is safe, and then you may pick up your robot."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "picture": "🤖🥽🏁",
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Robot Rally Rules",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p53",
+      "title": "Kayak Rentals at Gull Point",
+      "kind": "notice",
+      "sentences": [
+        "Ana, Ben and their mom want to rent kayaks at Gull Point.",
+        "They read the board at the rental hut."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Gull Point Kayak Rentals",
+        "icon": "🛶",
+        "rows": [
+          "Open 9:00 AM to 6:00 PM. All kayaks must be back on the sand by 6:00 PM.",
+          "Rentals last 1 hour or 2 hours. Pay at the hut before you go out.",
+          "Everyone must wear a life jacket, zipped and buckled, for the whole trip.",
+          "Paddlers under 16 must be in a group with an adult, in another kayak or in the same kayak.",
+          "Stay inside the yellow buoys. The water past them has strong currents and boats.",
+          "Wind flag: Green means rentals are open. Red means no rentals until the wind drops.",
+          "If your kayak tips over, stay with it. Hold on to it and wave your paddle in the air. A guard in the rescue boat will come to you."
+        ]
+      },
+      "picture": "🛶🦺🌊",
+      "topics": [
+        "ocean",
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Kayak Rentals at Gull Point",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p54",
+      "title": "Off the Trail",
+      "kind": "prompt",
+      "sentences": [
+        "Sam and his dad hike in Story Woods with Trail Tracker.",
+        "They leave the trail to see a waterfall, and this box pops up."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "You are off the trail",
+        "icon": "🧭",
+        "rows": [
+          "You are 300 feet from the Ridge Trail.",
+          "Sunset is at 7:10 PM. It is now 5:50 PM.",
+          "The parking lot is 2 miles away on the Ridge Trail. Most hikers walk 2 miles in about 50 minutes.",
+          "Phone battery: 15%.",
+          "Tap Guide Me Back to see arrows to the nearest trail.",
+          "Turn on Battery Saver to make your battery last longer. The map still works, but photos and videos turn off.",
+          "If you cannot find the trail, stay where you are and call for help. Staying in one place makes you easier to find."
+        ],
+        "buttons": [
+          "Guide Me Back",
+          "Battery Saver",
+          "Close"
+        ]
+      },
+      "picture": "🧭🌲🔋",
+      "topics": [
+        "maps",
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Off the Trail",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p55",
+      "title": "Knife Rules at Cooking Club",
+      "kind": "notice",
+      "sentences": [
+        "Welcome to the Harbor Middle School Cooking Club!",
+        "This week, each team will chop vegetables for an enormous pot of vegetable soup.",
+        "Sharp knives are important tools, and a sharp knife is actually safer than a dull one, because it slices cleanly instead of slipping.",
+        "Always cut on a cutting board, never on a plate or in your hand.",
+        "Place a damp paper towel underneath the board so that it cannot slide.",
+        "Hold the food with your fingertips bent under, so the side of the blade touches your knuckles and not your fingertips.",
+        "This careful position is called the claw grip.",
+        "If a knife starts to fall, step back and let it drop, and never try to catch it.",
+        "To carry a knife, hold the handle with the blade pointing down, next to your leg.",
+        "Say the words \"Knife behind you\" when you walk past someone.",
+        "Never put a knife into a sink full of soapy water, because another person could reach in without seeing it.",
+        "Wash it separately, dry it carefully, and return it to the knife block."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "picture": "🔪🥕🍲",
+      "topics": [
+        "food"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Knife Rules at Cooking Club",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p56",
+      "title": "Make a Strong Password",
+      "kind": "prompt",
+      "sentences": [
+        "Sam makes an account on the Harbor Town Library website.",
+        "His mom sits with him while he picks a password."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Create a password",
+        "icon": "🔑",
+        "rows": [
+          "Use at least 12 characters. Letters, numbers, spaces and symbols all count.",
+          "Do not use your name, your pet's name or your birthday. Other people can guess them.",
+          "A good idea: join 4 or more words that have nothing to do with each other.",
+          "Use a different password for every account.",
+          "Never share your password with friends. You may share it with a parent."
+        ],
+        "buttons": [
+          "Create Account",
+          "Cancel"
+        ]
+      },
+      "picture": "🔑📚💻",
+      "topics": [
+        "safety"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Make a Strong Password",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p57",
+      "title": "Watch or Warning?",
+      "kind": "article",
+      "sentences": [
+        "The Harbor Town Weather Service uses two different words when a big winter storm may be on its way.",
+        "A winter storm watch means that a storm is possible in the next two days, but forecasters are not yet certain where it will go.",
+        "A winter storm warning means that heavy snow or ice is already falling or is expected very soon, usually within a day.",
+        "A simple way to remember the difference is this: a watch means be prepared, and a warning means act now.",
+        "During a watch, families can check that they have flashlights, fresh batteries, warm blankets, and enough food and water for three days.",
+        "Phones and tablets should be fully charged, in case the power goes out.",
+        "Pet owners should also store extra food for their animals.",
+        "When a warning begins, the safest place to be is indoors.",
+        "Roads can become icy and slippery, so trips that are not necessary should wait until plows have cleared the streets.",
+        "If you must go outside, wear layers, a hat and gloves, because cold wind can damage bare skin quickly.",
+        "Never use a grill or a camp stove inside a house or a garage to stay warm, because they give off a harmful gas that you cannot see or smell.",
+        "Harbor Middle School will post any closing on its website by 6:00 AM.",
+        "The ferry does not run during a winter storm warning, and Captain Ruth Lane posts the next sailing time at the dock.",
+        "When the warning ends, wait for an adult to say that the sidewalks are safe before you go out to play in the snow."
+      ],
+      "breaks": [
+        4,
+        7,
+        11
+      ],
+      "picture": "❄️📻🔦",
+      "topics": [
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Watch or Warning?",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p58",
+      "title": "The Season Pass Screen",
+      "kind": "prompt",
+      "sentences": [
+        "Ben has $10 from his mom to spend in Kart Kingdom this month.",
+        "He taps the shop, and this screen opens."
+      ],
+      "visual": {
+        "type": "prompt",
+        "title": "Get the Season Pass!",
+        "icon": "🏆",
+        "rows": [
+          "Season Pass: new karts, new tracks and 2,000 coins every week.",
+          "Price: $0.00 today!*",
+          "Only 3 players can still get this deal. Decide now!",
+          "☑ Add Coin Doubler for $2 a month. (Already checked for you.)",
+          "*Free for 3 days. Then $8 every month, charged to the card on this account, until you cancel in Settings.",
+          "Wheels and other single items are in the Item Shop. Tap the small x at the top to go there."
+        ],
+        "buttons": [
+          "Get My Pass",
+          "No thanks, I don't like winning",
+          "Ask a Parent"
+        ]
+      },
+      "picture": "🎮🏆💳",
+      "topics": [
+        "games",
+        "money"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Season Pass Screen",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p59",
+      "title": "Old Mine Openings",
+      "kind": "notice",
+      "sentences": [
+        "More than a hundred years ago, miners dug for copper in the hills of Lantern Peaks.",
+        "When the copper ran out, the miners left, but many of their tunnels and shafts are still there.",
+        "A shaft is a hole that goes straight down into the ground, sometimes deeper than a ten-story building is tall.",
+        "Today, Ridgeway Mine Museum is the only old mine in the hills that is safe to enter, because workers check its walls, air and lights every day.",
+        "Old mine openings can look like small caves or shallow holes, but they are very different inside.",
+        "Wooden beams that once held up the roof may be rotten, and rocks can fall without warning.",
+        "The air deep inside may not have enough oxygen, and you cannot see or smell the difference.",
+        "Some shafts are hidden by bushes or covered with old boards that look solid but can break.",
+        "For these reasons, the rule for old mines is simple: stay out, and stay away from the edges.",
+        "Hikers on the Lantern Peaks trails may see orange signs that say DANGER: OLD MINE.",
+        "If you find an opening that has no sign, do not go near it, and do not throw rocks into it.",
+        "Instead, mark the spot on your map or write down the nearest trail sign, and tell a park ranger.",
+        "Rangers will put up a fence or a gate to keep people out.",
+        "Bats often live in old mines, and some sleep there all winter.",
+        "The gates over mine openings have bars spaced so that bats can fly through, but people cannot get in.",
+        "If you want to explore underground, take the tunnel tour at Ridgeway Mine Museum with Mr. Varga, who knows every safe path."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "picture": "⛏️🚧🦇",
+      "topics": [
+        "mining"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Old Mine Openings",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p60",
+      "title": "RoverLink Permissions",
+      "kind": "prompt",
+      "sentences": [
+        "Priya downloads RoverLink, an app that drives her rover from a tablet.",
+        "She and her mom read the list of requests together."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "RoverLink wants permission to use:",
+        "columns": [
+          "Request",
+          "What RoverLink says it is for",
+          "Choices"
+        ],
+        "rows": [
+          [
+            "Bluetooth",
+            "To connect to your rover and drive it",
+            "Allow, Don't Allow"
+          ],
+          [
+            "Camera",
+            "To scan the code on the bottom of your rover one time, during setup",
+            "Allow Once, Allow While Using the App, Don't Allow"
+          ],
+          [
+            "Location",
+            "To show robot clubs near you",
+            "Allow Always, Allow While Using the App, Don't Allow"
+          ],
+          [
+            "Contacts",
+            "To invite your friends to RoverLink",
+            "Allow, Don't Allow"
+          ],
+          [
+            "Microphone",
+            "To drive with voice commands like Go and Stop. You can also drive with the arrow buttons.",
+            "Allow While Using the App, Don't Allow"
+          ]
+        ],
+        "note": "RoverLink needs Bluetooth to drive your rover, and the camera one time to set it up. Everything else is optional. You can change any choice later in Settings."
+      },
+      "picture": "🤖📱🔒",
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "RoverLink Permissions",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p61",
+      "title": "Ferry Service in Fog",
+      "kind": "notice",
+      "sentences": [
+        "On Wednesday, Sam and Grandma Rose want to join a 12:45 PM bird walk on Gull Island.",
+        "At the dock, they read this notice."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Town Ferry: Fog Schedule Today",
+        "icon": "🌫️",
+        "rows": [
+          "Thick fog is on the water today. Every ferry will leave 30 minutes later than usual.",
+          "Today, ferries leave Harbor Town at 9:30 AM, 12:00 PM and 2:30 PM.",
+          "The trip to Gull Island takes 60 minutes in fog, not the usual 40 minutes.",
+          "The outer deck is closed. Please stay in the cabin and keep the doors shut.",
+          "You will hear the ship's horn every 2 minutes. This is normal in fog. It lets other boats know where we are.",
+          "Dogs must stay on a leash and inside the cabin.",
+          "If the fog gets thicker, Captain Ruth Lane may cancel a ferry. Changes will be posted on this board and in the Harbor Town Ferry app.",
+          "Tickets for a canceled ferry can be used on any ferry for 30 days."
+        ]
+      },
+      "picture": "⛴️🌫️🕑",
+      "topics": [
+        "transport",
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ferry Service in Fog",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p62",
+      "title": "Fossil Dig Day",
+      "kind": "notice",
+      "sentences": [
+        "On Saturday, Dr. Bell and the museum team will lead a fossil dig for families at Shell Cliff Quarry.",
+        "The quarry's rocks formed on the floor of a shallow sea about 70 million years ago, when dinosaurs lived nearby.",
+        "Most fossils here are seashells, shark teeth and bits of plants, but last spring a visitor found part of a dinosaur's toe bone.",
+        "Every digger must wear a hard hat and safety glasses, which the museum will lend you at the gate.",
+        "Wear long pants and boots with closed toes, because the ground is covered with sharp stones.",
+        "Stay out of the area behind the orange fence, where the cliff face is loose and pieces of rock can fall.",
+        "Bring at least two bottles of water and wear sunscreen, since the quarry has no shade.",
+        "You may keep up to five shells or shark teeth that you find in the dig pile.",
+        "Any bone, and any fossil larger than your hand, belongs to the museum so that scientists can study it.",
+        "If you uncover something that might be a bone, do not dig it out yourself, because bones break easily when they are pulled from rock.",
+        "Instead, put a yellow flag next to it and call a museum worker, who will help you remove it carefully.",
+        "If your find is important, your name will go on its label when it is shown in the museum.",
+        "The dig runs from 9:00 AM to 1:00 PM, and children under 12 must stay with an adult the whole time.",
+        "If anyone sees lightning or hears thunder, everyone must walk back to the cars right away."
+      ],
+      "breaks": [
+        3,
+        7,
+        12
+      ],
+      "picture": "🦴⛏️🦈",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Fossil Dig Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p63",
+      "title": "Climbing Wall Rules",
+      "kind": "notice",
+      "sentences": [
+        "Leo and Ana visit the climbing wall at the Harbor Town Rec Center.",
+        "A staff member points to the board before they climb."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Climbing Wall: Read Before You Climb",
+        "icon": "🧗",
+        "rows": [
+          "Climbers must be 8 or older. Climbers under 14 need an adult to sign a safety form first.",
+          "Wear a harness. A staff member checks every harness before your first climb.",
+          "Clip the auto-belay to the front loop of your harness. Check that the gate on the clip is fully closed.",
+          "An auto-belay is a rope machine. It holds you if you slip, and it lowers you slowly when you let go.",
+          "Only one climber on each rope at a time. Never climb above or below another person.",
+          "Shoes: climbing shoes or clean sneakers. No bare feet and no sandals.",
+          "Empty your pockets before you climb. Phones and keys can fall on people below.",
+          "Green routes are easy, blue routes are medium, and black routes are hard. Start on green.",
+          "When you reach the top, let go of the wall and lean back. The auto-belay will lower you."
+        ]
+      },
+      "picture": "🧗🪢🟢",
+      "topics": [
+        "sports"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Climbing Wall Rules",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p64",
+      "title": "Campsite Food Lockers",
+      "kind": "notice",
+      "sentences": [
+        "Story Woods is home to raccoons, foxes, skunks and mice, and all of them have an excellent sense of smell.",
+        "A raccoon can smell food inside a closed cooler, and its clever paws can open zippers, lids and even some latches.",
+        "When wild animals eat food from people, they can get sick, and they may stop being careful around people.",
+        "Animals that get people food often come back to campsites again and again, looking for more.",
+        "Every campsite in Story Woods has a metal food locker with a heavy latch.",
+        "Store all food, drinks, trash and cooking pots in the locker whenever you are not eating.",
+        "Also store anything with a strong smell, such as toothpaste, sunscreen, soap and bug spray, because animals may think it is food.",
+        "Never keep food or scented things in your tent, not even a granola bar in a backpack pocket.",
+        "Close the latch every time, even if you will be gone for only a few minutes.",
+        "Never feed wild animals, even if they come very close and seem friendly.",
+        "If a raccoon or a fox walks into your campsite, stand up, speak in a loud voice, and give it space to leave.",
+        "Do not chase it or try to touch it, and keep pets on a leash so that they stay calm and safe.",
+        "If an animal seems sick, acts strangely, or will not leave, move away from it and tell a ranger at the campsite office."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "picture": "🦝🏕️🔒",
+      "topics": [
+        "animals",
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Campsite Food Lockers",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p65",
+      "title": "Concert Video Rules",
+      "kind": "notice",
+      "sentences": [
+        "Leo plays drums with the Grade 7 band at the spring concert tonight.",
+        "His dad wants to film it, so they read the program."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Spring Concert: Photos and Videos",
+        "icon": "🎥",
+        "rows": [
+          "You may film your own child. Please do not film other students up close.",
+          "Some students have a blue star sticker on their music folder. Their families asked that they not appear in any photos or videos.",
+          "No flash, and no bright screens held up high, during the music. Lights bother the players and the people behind you.",
+          "You may take flash photos during the bows at the end of each song.",
+          "Post concert videos only on the Harbor Middle family page, which only school families can see.",
+          "Do not post videos on public sites, where anyone can watch them.",
+          "Ms. Gray will share a full recording of the concert with every family next week."
+        ]
+      },
+      "picture": "🥁🎥⭐",
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Concert Video Rules",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f6-p66",
+      "title": "Kitchen Helper Rules",
+      "kind": "notice",
+      "sentences": [
+        "On Saturdays, Sam and Maya help Grandma Rose at the bakery.",
+        "Before they start, they read the rules on the kitchen door."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Rose's Bakery: Kitchen Helper Rules",
+        "icon": "🧁",
+        "rows": [
+          "Wash your hands with soap for 20 seconds before you start, and again after you touch eggs, raw dough or trash.",
+          "Tie back long hair and wear an apron.",
+          "Use only dry oven mitts. A wet mitt lets heat through quickly and can burn your hand.",
+          "Turn the mixer off and wait for the beater to stop moving before you scrape the bowl or touch the beater.",
+          "Do not taste raw dough or batter. Raw eggs and raw flour can make people sick.",
+          "The back table is for nut-free baking. Wash your hands before you work there, and never bring nuts, nut butters or tools from other tables to it.",
+          "If you spill something, put out the yellow Wet Floor sign before you get the mop.",
+          "Ask Grandma Rose before you use the oven, the big mixer or any knife."
+        ]
+      },
+      "picture": "🧁🧤🥣",
+      "topics": [
+        "food"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Kitchen Helper Rules",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -1980,6 +3595,3408 @@
       "tags": [
         "key-detail",
         "reason"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i52",
+      "skill": "F6",
+      "passage": "f6-p25",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What should Ana bring to her game?",
+      "options": [
+        "An umbrella",
+        "A water bottle",
+        "A winter coat"
+      ],
+      "pictures": [
+        "☂️",
+        "🚰",
+        "🧥"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Read the alert. Find the line that tells you what to drink.",
+      "explain": "Ana should bring a water bottle. The alert says to drink lots of water.",
+      "inference": 1,
+      "tags": [
+        "weather-alert",
+        "heat",
+        "object-match"
+      ]
+    },
+    {
+      "id": "f6-i53",
+      "skill": "F6",
+      "passage": "f6-p25",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Ana needs a rest. Tap the best place to rest.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Middle of the field",
+          "emoji": "⚽"
+        },
+        {
+          "label": "Bench in the sun",
+          "emoji": "☀️"
+        },
+        {
+          "label": "Bench under a tree",
+          "emoji": "🌳"
+        }
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Read the last line of the alert. Which place matches it?",
+      "explain": "Ana should rest on the bench under the tree. The alert says to rest in the shade, and the tree makes shade.",
+      "inference": 1,
+      "tags": [
+        "heat",
+        "place"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i54",
+      "skill": "F6",
+      "passage": "f6-p26",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Sam and Pixel walk in. What does Sam do with the gate?",
+      "options": [
+        "Shut it",
+        "Leave it open"
+      ],
+      "pictures": [
+        "🚪",
+        "↔️"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the rule about the gate. What does it tell you to do?",
+      "explain": "Sam shuts the gate. The first rule says to shut the gate behind you.",
+      "inference": 0,
+      "tags": [
+        "rules",
+        "gate"
+      ]
+    },
+    {
+      "id": "f6-i55",
+      "skill": "F6",
+      "passage": "f6-p26",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Tap the rule about Pixel's leash.",
+      "unit": "row",
+      "answer": [
+        1
+      ],
+      "evidence": [
+        1
+      ],
+      "hint": "Read each rule. Look for the word leash.",
+      "explain": "Tap the second rule. It says to keep your dog on a leash at the gate.",
+      "inference": 0,
+      "tags": [
+        "rules",
+        "scan"
+      ]
+    },
+    {
+      "id": "f6-i56",
+      "skill": "F6",
+      "passage": "f6-p27",
+      "format": "tap",
+      "level": 1,
+      "prompt": "The rover stops. What should Priya do first?",
+      "options": [
+        "Touch the motor now",
+        "Drive it again fast",
+        "Wait 5 minutes"
+      ],
+      "pictures": [
+        "✋",
+        "🏎️",
+        "⏳"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the line with a number in it. What does it tell you to do?",
+      "explain": "Priya should wait 5 minutes. The label says to wait 5 minutes for the motor to cool.",
+      "inference": 0,
+      "tags": [
+        "wait",
+        "hot"
+      ]
+    },
+    {
+      "id": "f6-i57",
+      "skill": "F6",
+      "passage": "f6-p27",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Why should Priya not touch the motor?",
+      "options": [
+        "The motor is hot",
+        "The motor is lost",
+        "The motor is new"
+      ],
+      "pictures": [
+        "🔥",
+        "❓",
+        "✨"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the first line of the label.",
+      "explain": "The motor is hot. The first line says the motor gets hot.",
+      "inference": 0,
+      "tags": [
+        "reason",
+        "hot"
+      ]
+    },
+    {
+      "id": "f6-i58",
+      "skill": "F6",
+      "passage": "f6-p28",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Grandma Rose takes out the hot tray. Tap what she needs.",
+      "scene": "kitchen",
+      "objects": [
+        {
+          "label": "Wooden spoon",
+          "emoji": "🥄"
+        },
+        {
+          "label": "Oven mitts",
+          "emoji": "🧤"
+        },
+        {
+          "label": "Paper napkin",
+          "emoji": "🧻"
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Read the rules. Which thing do they tell you to use?",
+      "explain": "She needs oven mitts. The second rule says to use oven mitts.",
+      "inference": 0,
+      "tags": [
+        "hot",
+        "object-match"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i59",
+      "skill": "F6",
+      "passage": "f6-p28",
+      "format": "tap",
+      "level": 1,
+      "prompt": "The cookies are done. Who opens the oven?",
+      "options": [
+        "Sam",
+        "A customer",
+        "Grandma Rose"
+      ],
+      "pictures": [
+        "👦",
+        "🧑",
+        "👵"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the rule that names a person.",
+      "explain": "Grandma Rose opens the oven. The last rule says only Grandma Rose opens it.",
+      "inference": 0,
+      "tags": [
+        "rules",
+        "who"
+      ]
+    },
+    {
+      "id": "f6-i60",
+      "skill": "F6",
+      "passage": "f6-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why does TuneUp want to use the microphone?",
+      "options": [
+        "To listen to Sam's guitar strings",
+        "To record Sam singing a song",
+        "To find out where Sam lives"
+      ],
+      "pictures": [
+        "🎸",
+        "🗣️",
+        "🏠"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the lines under the title. Find what TuneUp does with the sound.",
+      "explain": "TuneUp wants to listen to Sam's guitar strings. The first line says it listens to your guitar strings.",
+      "inference": 0,
+      "tags": [
+        "permission",
+        "microphone",
+        "reason"
+      ]
+    },
+    {
+      "id": "f6-i61",
+      "skill": "F6",
+      "passage": "f6-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Sam taps Don't Allow. What will happen?",
+      "options": [
+        "TuneUp will save his songs for later",
+        "TuneUp cannot hear his strings, so it cannot help him tune",
+        "TuneUp will tune the guitar by itself"
+      ],
+      "pictures": [
+        "💾",
+        "🔇",
+        "🎸"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        4
+      ],
+      "hint": "Think about what TuneUp needs the microphone for. What happens if it cannot use it?",
+      "explain": "TuneUp cannot hear his strings, so it cannot help him tune. The box says TuneUp listens with the microphone, and Don't Allow says no to that. Sam can ask an adult if he wants to change it to Allow.",
+      "inference": 1,
+      "tags": [
+        "permission",
+        "what-happens-next",
+        "button"
+      ]
+    },
+    {
+      "id": "f6-i62",
+      "skill": "F6",
+      "passage": "f6-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How much more space does Ben need for Kart Kingdom?",
+      "options": [
+        "3 GB",
+        "1 GB",
+        "2 GB"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Find how much space the game needs. Then find how much is free. Take the smaller number away from the bigger one.",
+      "explain": "Ben needs 2 GB more. The game needs 3 GB and the tablet has 1 GB free, and 3 minus 1 is 2.",
+      "inference": 1,
+      "tags": [
+        "simple-math",
+        "storage"
+      ]
+    },
+    {
+      "id": "f6-i63",
+      "skill": "F6",
+      "passage": "f6-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "The tablet has videos of Ana's soccer games. What should Ben do before he deletes anything?",
+      "options": [
+        "Ask an adult first",
+        "Tap Manage Space and delete all the photos",
+        "Delete the videos fast"
+      ],
+      "pictures": [
+        "🙋",
+        "📸",
+        "🗑️"
+      ],
+      "answer": 0,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the line that tells you what to do before you delete.",
+      "explain": "Ben should ask an adult first. The last line says to ask an adult before you delete anything.",
+      "inference": 0,
+      "tags": [
+        "delete",
+        "ask-adult",
+        "keep-file"
+      ]
+    },
+    {
+      "id": "f6-i64",
+      "skill": "F6",
+      "passage": "f6-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "The red lights start to flash. What should Sam do?",
+      "options": [
+        "Run across before the gates go down",
+        "Stop behind the white line with Pixel",
+        "Walk around the end of the gate"
+      ],
+      "pictures": [
+        "🏃",
+        "🛑",
+        "🚧"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read what the flashing lights mean. Then read the next rule.",
+      "explain": "Sam should stop behind the white line with Pixel. The sign says flashing lights mean a train is coming, and the next rule says to stop behind the white line.",
+      "inference": 1,
+      "tags": [
+        "safety-rule",
+        "stop"
+      ]
+    },
+    {
+      "id": "f6-i65",
+      "skill": "F6",
+      "passage": "f6-p31",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put Sam's steps at the crossing in order.",
+      "steps": [
+        "Stop behind the white line.",
+        "Let the train go past.",
+        "Wait until the gates go all the way up.",
+        "Look both ways, then cross."
+      ],
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Look for the words until and before in the sign. They tell you what comes first.",
+      "explain": "First Sam stops behind the white line. He lets the train go past and waits until the gates go all the way up. Last, he looks both ways and crosses. The order comes from the second, third and fourth lines.",
+      "inference": 1,
+      "tags": [
+        "sequence",
+        "safety-rule"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i66",
+      "skill": "F6",
+      "passage": "f6-p32",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Maya put on sunscreen at 12:00 PM. She swims, then gets out at 12:45 PM. What should she do now?",
+      "options": [
+        "Put on sunscreen again now",
+        "Wait until 2:00 PM to put it on again",
+        "Nothing, because sunscreen lasts all day"
+      ],
+      "pictures": [
+        "🧴",
+        "🕑",
+        "🤷"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Two lines tell you when to put sunscreen on again. Which one fits what Maya just did?",
+      "explain": "Maya should put on sunscreen again now. The fourth line says to put it on again each time you get out of the pool, so she does not wait for the 2 hours to end.",
+      "inference": 1,
+      "tags": [
+        "after-swim",
+        "two-rules",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f6-i67",
+      "skill": "F6",
+      "passage": "f6-p32",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Priya will walk out into the sun at 11:00 AM. When should she put on sunscreen?",
+      "options": [
+        "At 1:00 PM",
+        "At 10:45 AM",
+        "At 11:15 AM"
+      ],
+      "pictures": [
+        "🕐",
+        "🕥",
+        "🕚"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the line with 15 minutes. Does it say before or after you go in the sun?",
+      "explain": "At 10:45 AM. The board says to put on sunscreen 15 minutes before you go in the sun, and 15 minutes before 11:00 AM is 10:45 AM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "before-after"
+      ]
+    },
+    {
+      "id": "f6-i68",
+      "skill": "F6",
+      "passage": "f6-p33",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ana does not know StrikerMax. Which button should she tap?",
+      "options": [
+        "Accept, then ask StrikerMax who they are",
+        "Accept",
+        "Decline"
+      ],
+      "pictures": [
+        "💬",
+        "✅",
+        "❌"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Find the line that says who you should add. Does StrikerMax fit it?",
+      "explain": "Ana should tap Decline. The box says to add only people you know in real life, and Ana does not know StrikerMax.",
+      "inference": 1,
+      "tags": [
+        "friend-request",
+        "stranger",
+        "button"
+      ]
+    },
+    {
+      "id": "f6-i69",
+      "skill": "F6",
+      "passage": "f6-p33",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Ana shows the box to her mom. Tap the line that tells what a friend can do.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Read the lines above the buttons. Which one tells what changes if Ana says yes?",
+      "explain": "Tap the third line. It says friends can send you messages and see when you are online.",
+      "inference": 0,
+      "tags": [
+        "friend-request",
+        "what-happens-next"
+      ]
+    },
+    {
+      "id": "f6-i70",
+      "skill": "F6",
+      "passage": "f6-p34",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What may Maya pick up?",
+      "options": [
+        "The glass case",
+        "The casts on the table",
+        "The real fossils in the glass case"
+      ],
+      "pictures": [
+        "🪟",
+        "🦴",
+        "🦖"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the line that starts with You may.",
+      "explain": "Maya may pick up the casts on the table. The third line says you may pick up the casts.",
+      "inference": 0,
+      "tags": [
+        "rules",
+        "may-or-may-not"
+      ]
+    },
+    {
+      "id": "f6-i71",
+      "skill": "F6",
+      "passage": "f6-p34",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Maya is done with a cast of a T. rex tooth. What should she do with it?",
+      "options": [
+        "Put it on top of the glass case",
+        "Take it home",
+        "Put it back on its picture"
+      ],
+      "pictures": [
+        "🪟",
+        "🏠",
+        "🖼️"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the line that tells you what to do when you are done.",
+      "explain": "Maya should put it back on its picture. The fourth line says to put each cast back on its picture when you are done.",
+      "inference": 0,
+      "tags": [
+        "rules",
+        "when-done"
+      ]
+    },
+    {
+      "id": "f6-i72",
+      "skill": "F6",
+      "passage": "f6-p35",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why should Sam download the map before the hike?",
+      "options": [
+        "Most trails have no phone signal",
+        "The map costs money on the trail",
+        "The trails are closed on Saturday"
+      ],
+      "pictures": [
+        "📵",
+        "💵",
+        "🚧"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the first two lines. What problem do they tell you about?",
+      "explain": "Most trails have no phone signal. The box says to download the map now so it works with no signal.",
+      "inference": 1,
+      "tags": [
+        "reason",
+        "no-signal"
+      ]
+    },
+    {
+      "id": "f6-i73",
+      "skill": "F6",
+      "passage": "f6-p35",
+      "format": "tap",
+      "level": 2,
+      "prompt": "When is the best time for Sam to tap Download?",
+      "options": [
+        "After the hike",
+        "Now, at home on Wi-Fi",
+        "On the trail on Saturday"
+      ],
+      "pictures": [
+        "🏁",
+        "🏠",
+        "🌲"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Find the lines that say when and where to download.",
+      "explain": "Now, at home on Wi-Fi. The box says to download the map now and to use Wi-Fi at home.",
+      "inference": 1,
+      "tags": [
+        "timing",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i74",
+      "skill": "F6",
+      "passage": "f6-p36",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Leo sees a dry jellyfish on the sand. What should he do?",
+      "options": [
+        "Pick it up and throw it in the sea",
+        "Poke it with one finger",
+        "Leave it alone"
+      ],
+      "pictures": [
+        "🌊",
+        "👉",
+        "🚶"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the rule about touching. Read the words after even if.",
+      "explain": "Leo should leave it alone. The sign says not to touch jellyfish, even if they look dry, because they can still sting.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "even-if"
+      ]
+    },
+    {
+      "id": "f6-i75",
+      "skill": "F6",
+      "passage": "f6-p36",
+      "format": "tap",
+      "level": 2,
+      "prompt": "A jellyfish stings Ana's foot on the beach. Who should she tell?",
+      "options": [
+        "A lifeguard",
+        "The ice cream seller",
+        "Nobody"
+      ],
+      "pictures": [
+        "🛟",
+        "🍦",
+        "🤐"
+      ],
+      "answer": 0,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the line that starts with If.",
+      "explain": "Ana should tell a lifeguard. The last line says to tell a lifeguard if a jellyfish stings you.",
+      "inference": 0,
+      "tags": [
+        "tell-adult",
+        "if-then"
+      ]
+    },
+    {
+      "id": "f6-i76",
+      "skill": "F6",
+      "passage": "f6-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What will happen if Ana taps Block?",
+      "options": [
+        "GoalGuy22 cannot send her messages or join her games",
+        "GoalGuy22 gets a message that says Ana blocked them",
+        "The safety team reads all of GoalGuy22's messages",
+        "Ana cannot play Goal Rush anymore"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the first two lines. They tell what Block does and what it does not do.",
+      "explain": "GoalGuy22 cannot send her messages or join her games. The first line says this. The second line says GoalGuy22 is not told about the block.",
+      "inference": 0,
+      "tags": [
+        "block",
+        "what-happens-next",
+        "button"
+      ]
+    },
+    {
+      "id": "f6-i77",
+      "skill": "F6",
+      "passage": "f6-p37",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Ana wants the Goal Rush safety team to know about the messages. Tap the button she should press.",
+      "unit": "row",
+      "answer": [
+        6
+      ],
+      "evidence": [
+        2,
+        6
+      ],
+      "hint": "Find the line about the safety team. It names a button.",
+      "explain": "Tap Report. The third line says to tap Report to tell the Goal Rush safety team about the messages.",
+      "inference": 1,
+      "tags": [
+        "report",
+        "button"
+      ]
+    },
+    {
+      "id": "f6-i78",
+      "skill": "F6",
+      "passage": "f6-p37",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Ana thinks about what to do. Sort each choice.",
+      "bins": [
+        "Follows the box and helps",
+        "Does not help"
+      ],
+      "cards": [
+        {
+          "text": "Tap Block so GoalGuy22 cannot message her",
+          "bin": 0,
+          "emoji": "🚫"
+        },
+        {
+          "text": "Tap Report so the safety team knows",
+          "bin": 0,
+          "emoji": "🚩"
+        },
+        {
+          "text": "Show the messages to her mom",
+          "bin": 0,
+          "emoji": "🙋"
+        },
+        {
+          "text": "Send an unkind message back",
+          "bin": 1,
+          "emoji": "💬"
+        },
+        {
+          "text": "Tap Cancel and keep reading the messages",
+          "bin": 1,
+          "emoji": "↩️"
+        }
+      ],
+      "evidence": [
+        0,
+        2,
+        4
+      ],
+      "hint": "For each card, ask: does a line in the box tell Ana to do this? Does it stop the messages or bring help?",
+      "explain": "Block, Report and showing her mom all come from lines in the box. Block stops the messages, Report tells the safety team, and the last line says to show an adult. Sending an unkind message back or reading more messages does not stop the problem.",
+      "inference": 1,
+      "tags": [
+        "block",
+        "report",
+        "tell-adult",
+        "problem-solving"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i79",
+      "skill": "F6",
+      "passage": "f6-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Grandma Rose needs an adult life jacket. Where should she look?",
+      "options": [
+        "In the orange box by the stairs",
+        "At the snack bar",
+        "On the outer deck",
+        "Under her seat"
+      ],
+      "pictures": [
+        "🟧",
+        "🥨",
+        "🌊",
+        "💺"
+      ],
+      "answer": 3,
+      "evidence": [
+        0
+      ],
+      "hint": "The card names two places for life jackets. Find the one for adults.",
+      "explain": "Under her seat. The first line says adult life jackets are under every seat. The orange box has life jackets for children.",
+      "inference": 0,
+      "tags": [
+        "two-places",
+        "compare"
+      ]
+    },
+    {
+      "id": "f6-i80",
+      "skill": "F6",
+      "passage": "f6-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam hears 7 short horn blasts and then 1 long blast. What should he do first?",
+      "options": [
+        "Put on a life jacket",
+        "Go out on the deck to look",
+        "Go to the snack bar and buy a drink",
+        "Wait for the horn to stop, then decide"
+      ],
+      "pictures": [
+        "🦺",
+        "👀",
+        "🥤",
+        "⏳"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the line about the horn. Then look for the word Then in the next line.",
+      "explain": "Sam should put on a life jacket first. The fifth line says to put on a life jacket, and the next line says then go to the meeting area.",
+      "inference": 0,
+      "tags": [
+        "first-then",
+        "sequence",
+        "signal"
+      ]
+    },
+    {
+      "id": "f6-i81",
+      "skill": "F6",
+      "passage": "f6-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The Outer Deck Closed light is on. Sam wants to see the big waves. What should he do?",
+      "options": [
+        "Ask Grandma Rose to go out on the deck with him",
+        "Stay inside and look out a window",
+        "Go out on the deck for one minute",
+        "Hold the rail and go out on the deck"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the line about the light. What does it tell you to do?",
+      "explain": "Sam should stay inside and look out a window. The fourth line says to stay inside when the Outer Deck Closed light is on.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "choose-instead",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i82",
+      "skill": "F6",
+      "passage": "f6-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The ramps are wet, but the flat area is dry. What can Leo do?",
+      "options": [
+        "Skate on the ramps with pads on",
+        "Go home, because the park is closed",
+        "Skate on the flat area",
+        "Skate on the ramps slowly"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the rule about wet ramps. Read all of it, to the end.",
+      "explain": "Leo can skate on the flat area. The third rule says no skating on wet ramps, and you may skate on the flat area if it is dry.",
+      "inference": 0,
+      "tags": [
+        "rules",
+        "choose-instead",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i83",
+      "skill": "F6",
+      "passage": "f6-p39",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Leo checks the rules. Sort each thing.",
+      "bins": [
+        "A rule you must follow",
+        "A good idea, but not required"
+      ],
+      "cards": [
+        {
+          "text": "Wear a helmet",
+          "bin": 0,
+          "emoji": "⛑️"
+        },
+        {
+          "text": "Wear knee pads",
+          "bin": 1,
+          "emoji": "🦵"
+        },
+        {
+          "text": "Wear elbow pads",
+          "bin": 1,
+          "emoji": "💪"
+        },
+        {
+          "text": "Wait your turn at the top of a ramp",
+          "bin": 0,
+          "emoji": "⏳"
+        },
+        {
+          "text": "Bring an adult if you are 8 years old",
+          "bin": 0,
+          "emoji": "🧑"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "hint": "Look for the words required and must in the rules. Then look for the words a good idea.",
+      "explain": "A helmet, waiting your turn and an adult for a rider under 10 are rules you must follow. Knee and elbow pads are a good idea, but the second rule says you do not have to wear them.",
+      "inference": 1,
+      "tags": [
+        "must-or-may",
+        "compare",
+        "rules"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i84",
+      "skill": "F6",
+      "passage": "f6-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Leo is 13. A boy who is 9 wants to skate with Leo, and no adult came with him. Can the boy stay at the park?",
+      "options": [
+        "No, because riders under 10 must have an adult at the park",
+        "Yes, because Leo is 13 and can watch him",
+        "Yes, if he wears a helmet and pads",
+        "No, because riders under 13 cannot use the ramps"
+      ],
+      "answer": 0,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the rule with an age in it. Check the boy's age. Then ask: is Leo an adult?",
+      "explain": "No. The fifth rule says riders under 10 must have an adult at the park. The boy is 9, and Leo is 13, so Leo is not an adult.",
+      "inference": 1,
+      "tags": [
+        "age-rule",
+        "not-an-adult"
+      ]
+    },
+    {
+      "id": "f6-i85",
+      "skill": "F6",
+      "passage": "f6-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why might this chat not really be from Leo?",
+      "options": [
+        "It came from Leo's account",
+        "It does not sound like Leo, and it asks for a password",
+        "It is about Kart Kingdom",
+        "It was sent in the evening"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Compare the chat with how Leo usually writes. Then look for something a friend should never ask for.",
+      "explain": "It does not sound like Leo, and it asks for a password. Leo usually writes short, funny chats, but this one starts with Dear friend. The third line asks for Ben's password, and a real friend would not ask for that.",
+      "inference": 2,
+      "tags": [
+        "phishing",
+        "hacked-account",
+        "clues"
+      ]
+    },
+    {
+      "id": "f6-i86",
+      "skill": "F6",
+      "passage": "f6-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is the safest thing for Ben to do?",
+      "options": [
+        "Type only his username, not his password",
+        "Type his password on the website quickly",
+        "Not open the website, and tell an adult and Leo about the chat",
+        "Send the website to Ana so she gets coins too"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "Look at what the chat rushes Ben to do and what it asks him to keep secret. Who should know about it?",
+      "explain": "Ben should not open the website, and he should tell an adult and Leo. The chat rushes him, asks for his password and asks him to keep a secret. Leo needs to know, because someone else may be using his account.",
+      "inference": 2,
+      "tags": [
+        "phishing",
+        "password",
+        "tell-adult",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i87",
+      "skill": "F6",
+      "passage": "f6-p40",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Tap the line that tries to rush Ben.",
+      "unit": "row",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Look for a line with a short amount of time in it.",
+      "explain": "Tap the fourth line. It says to do it in the next 5 minutes or the coins will be gone. A trick often tries to rush you.",
+      "inference": 0,
+      "tags": [
+        "hurry",
+        "clues"
+      ]
+    },
+    {
+      "id": "f6-i88",
+      "skill": "F6",
+      "passage": "f6-p41",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put the steps for putting out the campfire in order.",
+      "steps": [
+        "Pour water on the fire.",
+        "Stir the ashes.",
+        "Pour water on it again.",
+        "Hold the back of your hand near the ashes to check for heat."
+      ],
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the line that starts with To put out a fire. Then read the line after it.",
+      "explain": "First pour water, then stir the ashes, then pour water again. Last, hold the back of your hand near the ashes to check for heat. The steps are in the fifth and sixth lines.",
+      "inference": 0,
+      "tags": [
+        "sequence",
+        "fire"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i89",
+      "skill": "F6",
+      "passage": "f6-p41",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya's family wants to make a fire in a circle of rocks by their tent. What should they do?",
+      "options": [
+        "Make no fire, because fires are never allowed",
+        "Make the fire in a metal fire ring instead",
+        "Make the fire in the circle of rocks, with water nearby",
+        "Make a small fire in the circle of rocks"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Check today's fire danger first. Then find the rule for that level.",
+      "explain": "They should make the fire in a metal fire ring instead. Fire danger is HIGH, and the second line says fires are allowed only in the metal fire rings.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "choose-instead",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i90",
+      "skill": "F6",
+      "passage": "f6-p41",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya's mom wants everyone to walk to the creek for 10 minutes. The fire is still burning. What should the family do?",
+      "options": [
+        "Put a bucket of water next to the fire and all go",
+        "Add more wood so the fire lasts until they come back",
+        "Have someone stay by the fire, or put it out before they go",
+        "All walk to the creek, because 10 minutes is a short time"
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the rule about leaving a fire. Read the words after not even.",
+      "explain": "Someone must stay by the fire, or they must put it out before they go. The fourth line says never leave a fire alone, not even for a few minutes.",
+      "inference": 1,
+      "tags": [
+        "not-even",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i91",
+      "skill": "F6",
+      "passage": "f6-p42",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya forgot her safety glasses at home. What should she do?",
+      "options": [
+        "Hit the rock with her eyes closed",
+        "Hit the rock gently without glasses",
+        "Wear her sunglasses instead",
+        "Borrow a pair from the blue box"
+      ],
+      "pictures": [
+        "🙈",
+        "🔨",
+        "🕶️",
+        "🥽"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Find the line that asks a question about glasses.",
+      "explain": "Maya should borrow a pair from the blue box. The second line says this for anyone who forgot their glasses.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "choose-instead"
+      ]
+    },
+    {
+      "id": "f6-i92",
+      "skill": "F6",
+      "passage": "f6-p42",
+      "format": "scene",
+      "level": 3,
+      "prompt": "Tap the tool Maya should use to hit her rock.",
+      "scene": "school",
+      "objects": [
+        {
+          "label": "Screwdriver",
+          "emoji": "🪛"
+        },
+        {
+          "label": "Another rock",
+          "emoji": "🪨"
+        },
+        {
+          "label": "Rock hammer",
+          "emoji": "⛏️"
+        },
+        {
+          "label": "Regular hammer",
+          "emoji": "🔨"
+        }
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the line that names the right kind of hammer.",
+      "explain": "Maya should use the rock hammer. The third line says to use a rock hammer, because a regular hammer can chip and break.",
+      "inference": 0,
+      "tags": [
+        "object-match",
+        "tools"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i93",
+      "skill": "F6",
+      "passage": "f6-p42",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Another club member is hammering a rock. Maya wants to watch. Where should she stand?",
+      "options": [
+        "Behind the club member, holding the cloth",
+        "At least 10 steps away",
+        "Right next to the rock",
+        "2 steps away, with her glasses on"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line with a number of steps in it.",
+      "explain": "At least 10 steps away. The fifth line says to stand at least 10 steps away from anyone who is hammering.",
+      "inference": 0,
+      "tags": [
+        "distance-rule",
+        "number"
+      ]
+    },
+    {
+      "id": "f6-i94",
+      "skill": "F6",
+      "passage": "f6-p43",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya wants to charge the battery while she reads on her bed. What should she do?",
+      "options": [
+        "Charge it in another room and come back in 1 hour",
+        "Charge it on the carpet with a friend's charger",
+        "Charge it on her desk in the same room",
+        "Charge it on her bed next to her"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Check two rules: where to charge it, and where you must be while it charges.",
+      "explain": "Priya should charge it on her desk in the same room. The label says to charge on a hard surface, never on a bed, and to stay in the room while it charges.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "combine-parts",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i95",
+      "skill": "F6",
+      "passage": "f6-p43",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The battery looks puffy. What should Priya do?",
+      "options": [
+        "Charge it for only half an hour",
+        "Press it flat, then charge it",
+        "Charge it with the yellow charger",
+        "Stop, do not charge it, and tell an adult"
+      ],
+      "answer": 3,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line that starts with If.",
+      "explain": "Priya should stop, not charge it, and tell an adult. The last line says this when the battery looks puffy.",
+      "inference": 0,
+      "tags": [
+        "if-then",
+        "tell-adult",
+        "stop"
+      ]
+    },
+    {
+      "id": "f6-i96",
+      "skill": "F6",
+      "passage": "f6-p43",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya plugs in the battery at 4:00 PM. The light turns green at 4:50 PM. What should she do?",
+      "options": [
+        "Unplug it now",
+        "Leave it plugged in until 5:00 PM",
+        "Leave it plugged in all night",
+        "Plug in a second charger"
+      ],
+      "answer": 0,
+      "evidence": [
+        3
+      ],
+      "hint": "Find what to do when the light turns green. Is the rule about the light or about the time?",
+      "explain": "She should unplug it now. The fourth line says to unplug it when the light turns green. About 1 hour is only how long it usually takes.",
+      "inference": 1,
+      "tags": [
+        "what-to-do-when",
+        "time-trap"
+      ]
+    },
+    {
+      "id": "f6-i97",
+      "skill": "F6",
+      "passage": "f6-p44",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Ben wants to keep the photo, but he does not want strangers to see it. Tap the button he should press.",
+      "unit": "row",
+      "answer": [
+        5
+      ],
+      "evidence": [
+        1,
+        3,
+        5
+      ],
+      "hint": "Find out who can see the Dino Wall. Then find the choice that keeps the photo just for Ben.",
+      "explain": "Tap Save to Tablet Only. Everyone who uses DinoWalk can see the Dino Wall, and the fourth line says nobody else can see a photo saved to the tablet only.",
+      "inference": 1,
+      "tags": [
+        "privacy",
+        "button",
+        "photo"
+      ]
+    },
+    {
+      "id": "f6-i98",
+      "skill": "F6",
+      "passage": "f6-p44",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Why is it not safe to put this photo on the Dino Wall?",
+      "options": [
+        "The photo will be deleted from his tablet",
+        "The Dino Wall costs money",
+        "Everyone who uses DinoWalk could see his face and his bedroom",
+        "The Triceratops in the photo is too small"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Read what the photo shows. Then read who can see the Dino Wall.",
+      "explain": "Everyone who uses DinoWalk could see Ben's face and his bedroom. The story says the photo shows them, and the box says everyone who uses DinoWalk can see the Dino Wall.",
+      "inference": 1,
+      "tags": [
+        "privacy",
+        "reason",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f6-i99",
+      "skill": "F6",
+      "passage": "f6-p45",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam and his dad usually bike on Mill Road to the library. What should they do today?",
+      "options": [
+        "Bike through the water slowly",
+        "Walk their bikes through the water",
+        "Bike on Mill Road, because the water looks shallow",
+        "Bike on Hill Street instead"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "hint": "Find the line that tells you which road to use.",
+      "explain": "They should bike on Hill Street instead. The alert says Mill Road is under water and to use Hill Street until the advisory ends. It also says never to walk or bike through flood water.",
+      "inference": 0,
+      "tags": [
+        "choose-instead",
+        "route",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i100",
+      "skill": "F6",
+      "passage": "f6-p45",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The water on Mill Road looks only a few inches deep. Why should Sam still stay out of it?",
+      "options": [
+        "It can be deeper than it looks, and moving water can knock a person down",
+        "The water is too cold for his bike tires",
+        "The library is closed until 8:00 PM",
+        "Bikes are never allowed on Mill Road"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the two lines about how deep the water is.",
+      "explain": "The water can be deeper than it looks, and moving water only 6 inches deep can knock a person down. The third and fourth lines say this.",
+      "inference": 0,
+      "tags": [
+        "reason",
+        "even-if"
+      ]
+    },
+    {
+      "id": "f6-i101",
+      "skill": "F6",
+      "passage": "f6-p45",
+      "format": "tap",
+      "level": 3,
+      "prompt": "When can they use Mill Road again, if the water is gone?",
+      "options": [
+        "Tomorrow at 8:00 AM",
+        "After 8:00 PM",
+        "Right after they tap Dismiss",
+        "As soon as the rain stops"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        4
+      ],
+      "hint": "Find when the advisory ends. Then read the line about Hill Street.",
+      "explain": "After 8:00 PM. The first line says the advisory lasts until 8:00 PM, and the last line says to use Hill Street until the advisory ends. Tapping Dismiss only closes the alert.",
+      "inference": 1,
+      "tags": [
+        "time-window",
+        "button-trap"
+      ]
+    },
+    {
+      "id": "f6-i102",
+      "skill": "F6",
+      "passage": "f6-p46",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which light should Sam bring to the star party?",
+      "options": [
+        "His phone's flashlight",
+        "A flashing bike light",
+        "A flashlight with a red light",
+        "A very bright white flashlight"
+      ],
+      "pictures": [
+        "📱",
+        "🚲",
+        "🔴",
+        "🔦"
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the rule about flashlights. What color of light does it name?",
+      "explain": "Sam should bring a flashlight with a red light. The first rule says to bring a red light only, because red light does not spoil your night vision.",
+      "inference": 0,
+      "tags": [
+        "object-match",
+        "rules"
+      ]
+    },
+    {
+      "id": "f6-i103",
+      "skill": "F6",
+      "passage": "f6-p46",
+      "format": "tap",
+      "level": 3,
+      "prompt": "After 15 minutes in the dark, Priya turns on her phone's bright white screen. What happens?",
+      "options": [
+        "She can see faint stars better",
+        "Her eyes need only 5 more minutes",
+        "Nothing changes, because she only looked for a moment",
+        "Her eyes must start the 20 minutes over"
+      ],
+      "answer": 3,
+      "evidence": [
+        1
+      ],
+      "hint": "Read the second rule. What does white light do to the 20 minutes?",
+      "explain": "Her eyes must start the 20 minutes over. The second rule says white light starts that time over.",
+      "inference": 1,
+      "tags": [
+        "what-happens-next",
+        "time-trap"
+      ]
+    },
+    {
+      "id": "f6-i104",
+      "skill": "F6",
+      "passage": "f6-p46",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Leo wants to look at the sunset with binoculars. What does the rule say?",
+      "options": [
+        "Never point binoculars at the Sun, even near sunset",
+        "Point them at the Sun only at sunset",
+        "Point them at the Sun for one second only",
+        "Point them at the Sun with sunglasses on"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the rule about the Sun. Read the words after even.",
+      "explain": "Never point binoculars at the Sun, even near sunset. The third rule says this.",
+      "inference": 0,
+      "tags": [
+        "even-if",
+        "rules"
+      ]
+    },
+    {
+      "id": "f6-i105",
+      "skill": "F6",
+      "passage": "f6-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam finds his eclipse glasses from last year. One lens has a tiny scratch. What should he do?",
+      "options": [
+        "Use them, but look at the Sun for only a few seconds",
+        "Not use them, and get a new free pair at the library on Saturday",
+        "Use them, because the scratch is very small",
+        "Wear them over his sunglasses to make them safer"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        7,
+        8
+      ],
+      "hint": "Find what the notice says to check before you use the glasses. Then find where you can get new ones.",
+      "explain": "Sam should not use them, and he should get a new free pair at the library on Saturday. The second paragraph says to check for scratches or holes and not to use damaged glasses. The first paragraph says free glasses are given out at the library.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "combine-parts",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i106",
+      "skill": "F6",
+      "passage": "f6-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo wants a closer look, so he puts on eclipse glasses and lifts his binoculars. What is the problem?",
+      "options": [
+        "Binoculars may be used only after 2:25 PM",
+        "The binoculars will show the Moon, not the Sun",
+        "The binoculars make the Sun's light stronger, and it can burn through the glasses",
+        "The glasses make the view too dark to see anything"
+      ],
+      "answer": 2,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Find the paragraph about tools like telescopes. Look for the reason it gives.",
+      "explain": "The binoculars gather the Sun's light and make it much stronger, so it can burn through the glasses. The third paragraph says not to look through binoculars while you wear eclipse glasses.",
+      "inference": 1,
+      "tags": [
+        "reason",
+        "tools",
+        "spot-the-risk"
+      ]
+    },
+    {
+      "id": "f6-i107",
+      "skill": "F6",
+      "passage": "f6-p47",
+      "format": "order",
+      "level": 4,
+      "prompt": "Maya has no eclipse glasses. Put the steps for using a pinhole viewer in order.",
+      "steps": [
+        "Poke a small hole in a card.",
+        "Stand with your back to the Sun.",
+        "Let the light shine through the hole onto a sheet of paper.",
+        "Look at the small, bright circle on the paper."
+      ],
+      "evidence": [
+        12,
+        13,
+        14
+      ],
+      "hint": "Find the sentence that tells how to make a pinhole viewer. Its steps come in the same order as the words.",
+      "explain": "First poke a small hole in a card, then stand with your back to the Sun. Next let the light shine through the hole onto paper, and last look at the bright circle on the paper. The steps are in the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "sequence",
+        "problem-solving"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i108",
+      "skill": "F6",
+      "passage": "f6-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben has 3 races left in the cup. Each race takes about 6 minutes. What is the best plan?",
+      "options": [
+        "Tap Save and Quit in the menu now, and finish the cup tomorrow",
+        "Keep racing, because 15 minutes is enough for 3 races",
+        "Keep racing, and tap Ask for More Time after the game closes",
+        "Tap OK and race as fast as he can"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        2,
+        3
+      ],
+      "hint": "Work out how many minutes 3 races take. Compare it with the time left. Then check what happens if the game closes in the middle of a cup.",
+      "explain": "Ben should tap Save and Quit now and finish the cup tomorrow. Three races take about 18 minutes, but he has only 15 minutes left. If the game closes in the middle of the cup, he starts the cup again from race 1.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "save-first",
+        "two-conditions",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i109",
+      "skill": "F6",
+      "passage": "f6-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben taps Ask for More Time right away. His mom answers 10 minutes later. How much game time does Ben have left when she answers?",
+      "options": [
+        "None, because the game closed",
+        "About 5 minutes",
+        "15 minutes, because the time stopped",
+        "About 10 minutes"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        4
+      ],
+      "hint": "Read the line about Ask for More Time. Does the time stop or keep running while he waits?",
+      "explain": "About 5 minutes. The box says his time keeps running while he waits for an answer, and 15 minutes minus 10 minutes is 5 minutes.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "what-happens-next",
+        "button"
+      ]
+    },
+    {
+      "id": "f6-i110",
+      "skill": "F6",
+      "passage": "f6-p48",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "No one gives Ben more time today. Tap the line that tells him when he can play again.",
+      "unit": "row",
+      "answer": [
+        5
+      ],
+      "evidence": [
+        5
+      ],
+      "hint": "Look for a line with a time of day in it.",
+      "explain": "Tap the sixth line. It says game time starts again tomorrow at 7:00 AM.",
+      "inference": 0,
+      "tags": [
+        "scan",
+        "time-am"
+      ]
+    },
+    {
+      "id": "f6-i111",
+      "skill": "F6",
+      "passage": "f6-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam squeezes his back brake lever, and it touches the handlebar. His front tire is a little soft. What should he do?",
+      "options": [
+        "Pump the tire, then ride to the shop slowly",
+        "Ride slowly and use only the front brake",
+        "Pump the tire, because a soft tire is the bigger problem",
+        "Walk the bike to the shop, because the brakes failed the check"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        5,
+        6
+      ],
+      "hint": "There are two problems. Find the line for each one. Which line says do not ride?",
+      "explain": "Sam should walk the bike to the shop. The brake lever touched the handlebar, so the brakes failed the check, and the card says not to ride. Pumping the tire does not fix the brakes.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "combine-parts",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i112",
+      "skill": "F6",
+      "passage": "f6-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam puts on his helmet. Four fingers fit between his eyebrows and the front of the helmet. What does this tell him?",
+      "options": [
+        "The helmet sits too far back, so he should move it forward and lower",
+        "The helmet sits just right",
+        "The chin strap is too tight",
+        "The helmet sits too low over his eyes"
+      ],
+      "answer": 0,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the line about where the helmet should sit. Compare two fingers with four fingers.",
+      "explain": "The helmet sits too far back, so he should move it forward and lower. The card says it should sit about two fingers above your eyebrows, and four fingers is too high.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "number",
+        "helmet"
+      ]
+    },
+    {
+      "id": "f6-i113",
+      "skill": "F6",
+      "passage": "f6-p49",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sort what Sam finds when he checks his bike and helmet.",
+      "bins": [
+        "Passes the check",
+        "Fix it first"
+      ],
+      "cards": [
+        {
+          "text": "Both brake levers stop before the handlebar",
+          "bin": 0,
+          "emoji": "✋"
+        },
+        {
+          "text": "Both tires feel firm",
+          "bin": 0,
+          "emoji": "🛞"
+        },
+        {
+          "text": "The chain is rusty and makes loud clicks",
+          "bin": 1,
+          "emoji": "⛓️"
+        },
+        {
+          "text": "One finger fits under the chin strap",
+          "bin": 0,
+          "emoji": "☝️"
+        },
+        {
+          "text": "The side straps hang loose below his ears",
+          "bin": 1,
+          "emoji": "🎗️"
+        },
+        {
+          "text": "The helmet sits four fingers above his eyebrows",
+          "bin": 1,
+          "emoji": "⛑️"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "Match each card to its line on the card. Does it meet what the line says, or not?",
+      "explain": "Brakes that stop before the handlebar, firm tires and one finger under the chin strap pass the check. A rusty, clicking chain, loose side straps and a helmet four fingers above the eyebrows must be fixed first.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "checklist",
+        "rules"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i114",
+      "skill": "F6",
+      "passage": "f6-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The twins' first game is at 9:00 AM on Saturday. Their second game is at 1:00 PM on Saturday. When will they play?",
+      "options": [
+        "Both games on Sunday",
+        "9:00 AM on Sunday and 1:00 PM on Saturday",
+        "9:00 AM on Saturday and 1:00 PM on Sunday",
+        "Both games on Saturday, as planned"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Check each game time against the advisory times. Then read what happens to games in each group.",
+      "explain": "They play at 9:00 AM on Saturday and at 1:00 PM on Sunday. Games before 11:00 AM stay as planned, and games between 11:00 AM and 7:00 PM move to Sunday at the same time.",
+      "inference": 1,
+      "tags": [
+        "time-window",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f6-i115",
+      "skill": "F6",
+      "passage": "f6-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "During the 9:00 AM game, Ana feels dizzy and very tired. What should she do?",
+      "options": [
+        "Keep playing until the next water break",
+        "Drink a whole bottle of water fast, then keep playing",
+        "Lie down on the field until the feeling goes away",
+        "Stop playing, sit in the shade, sip water and tell Coach Novak"
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line that starts with If you feel dizzy. Read every step it gives.",
+      "explain": "Ana should stop playing, sit in the shade, sip water and tell Coach Novak. The sixth line gives these steps.",
+      "inference": 0,
+      "tags": [
+        "if-then",
+        "tell-adult",
+        "health"
+      ]
+    },
+    {
+      "id": "f6-i116",
+      "skill": "F6",
+      "passage": "f6-p50",
+      "format": "scene",
+      "level": 4,
+      "prompt": "Ben packs his bag on Friday night. Tap what every player needs to bring.",
+      "scene": "home",
+      "objects": [
+        {
+          "label": "Two empty water bottles",
+          "emoji": "🫙"
+        },
+        {
+          "label": "Two full water bottles",
+          "emoji": "💧"
+        },
+        {
+          "label": "One small juice box",
+          "emoji": "🧃"
+        },
+        {
+          "label": "A dark wool sweater",
+          "emoji": "🧶"
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the line that says what every player needs. Check how many, and how full.",
+      "explain": "Ben must bring two full water bottles. The fourth line says every player needs two full water bottles.",
+      "inference": 0,
+      "tags": [
+        "object-match",
+        "number"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i117",
+      "skill": "F6",
+      "passage": "f6-p51",
+      "format": "order",
+      "level": 4,
+      "prompt": "Put Leo's steps for putting in an earplug in order.",
+      "steps": [
+        "Take a new pair from the green box.",
+        "Roll the earplug into a thin, tight tube.",
+        "Pull the top of your ear up and back.",
+        "Slide the earplug in.",
+        "Hold it for 20 seconds."
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "hint": "Start with where the earplugs are kept. Then follow the How to steps from top to bottom.",
+      "explain": "Take a new pair from the green box, roll the earplug thin, pull the top of your ear up and back, slide it in, and hold it for 20 seconds. The steps are in the fourth to seventh lines.",
+      "inference": 1,
+      "tags": [
+        "sequence",
+        "multi-step"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i118",
+      "skill": "F6",
+      "passage": "f6-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which student must wear earplugs, by the rules on the notice?",
+      "options": [
+        "Ana, choosing trumpet music from the shelf for 20 minutes",
+        "Ben, carrying a keyboard into the band room",
+        "A trombone player in a 40-minute full band practice",
+        "Leo, playing drums alone for 10 minutes"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "The rule about earplugs names two times. Check each student against both.",
+      "explain": "The trombone player must wear earplugs. The third line says to wear them during every full band practice. Leo plays drums for only 10 minutes, and the drum rule starts at more than 15 minutes.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "compare",
+        "rules"
+      ]
+    },
+    {
+      "id": "f6-i119",
+      "skill": "F6",
+      "passage": "f6-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo forgot to wear earplugs today. After practice, his ears are ringing. What should he do?",
+      "options": [
+        "Wait until the ringing stops and tell no one",
+        "Play louder next time so his ears get used to it",
+        "Use the earplugs from last week that are in his pocket",
+        "Tell Ms. Gray, and take a new pair of earplugs from the box next time"
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        7
+      ],
+      "hint": "Find the line about ringing ears. Then find the line about where to get earplugs and how often.",
+      "explain": "Leo should tell Ms. Gray and take a new pair from the box next time. The last line says to tell Ms. Gray if your ears ring, and the fourth line says to take a new pair each day.",
+      "inference": 1,
+      "tags": [
+        "tell-adult",
+        "combine-parts",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i120",
+      "skill": "F6",
+      "passage": "f6-p52",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya's rover fails the safety check because a wire is loose. What can her team do?",
+      "options": [
+        "Fix the wire and bring the rover back to the check table",
+        "Skip the check, because only one wire is loose",
+        "Drive the rover in its first match and fix it later",
+        "Leave the rally, because a robot gets only one check"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        7
+      ],
+      "hint": "Find the sentence about a robot that fails the check.",
+      "explain": "They can fix the wire and bring the rover back to the check table. The second paragraph says a robot that fails may be fixed and checked again, as many times as the team needs.",
+      "inference": 0,
+      "tags": [
+        "problem-solving",
+        "second-chance"
+      ]
+    },
+    {
+      "id": "f6-i121",
+      "skill": "F6",
+      "passage": "f6-p52",
+      "format": "tap",
+      "level": 4,
+      "prompt": "During a match, Priya's rover suddenly turns and drives toward the wall. Priya is a driver in the white box. What should she do?",
+      "options": [
+        "Wait for the match to end, then press the stop button",
+        "Press the rover's stop button",
+        "Reach into the arena and grab the rover",
+        "Ask the referee if she may grab the rover"
+      ],
+      "answer": 1,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Read the third paragraph. Find what to do when a robot moves in a way you did not expect.",
+      "explain": "Priya should press the rover's stop button. The third paragraph says to press the stop button if a robot moves in a way you did not expect, and not to grab a moving robot.",
+      "inference": 0,
+      "tags": [
+        "safe-action",
+        "stop"
+      ]
+    },
+    {
+      "id": "f6-i122",
+      "skill": "F6",
+      "passage": "f6-p52",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Leo visits Priya in the pit area. He wants to know where he can take off his safety glasses. Tap the sentence that tells him.",
+      "unit": "sentence",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Read the first paragraph. Look for the words take them off.",
+      "explain": "Tap the third sentence. It says you may take them off only in the lunch room or outside.",
+      "inference": 0,
+      "tags": [
+        "scan",
+        "place"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i123",
+      "skill": "F6",
+      "passage": "f6-p53",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The twins want to paddle together in one kayak while their mom waits on the sand. What does the board say?",
+      "options": [
+        "They may, because there are two of them",
+        "They may, if they both wear life jackets",
+        "They may, if they stay inside the yellow buoys",
+        "They may not, because paddlers under 16 need an adult with them on the water"
+      ],
+      "answer": 3,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the rule with an age in it. The twins are 12. Where must the adult be?",
+      "explain": "They may not. The fourth rule says paddlers under 16 must be in a group with an adult, in another kayak or in the same kayak. Their mom would be on the sand, not in a kayak.",
+      "inference": 1,
+      "tags": [
+        "age-rule",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f6-i124",
+      "skill": "F6",
+      "passage": "f6-p53",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The wind flag is green. The family wants to go out at 4:30 PM. Which rental can they choose?",
+      "options": [
+        "Only the 1-hour rental",
+        "Only the 2-hour rental",
+        "Either rental",
+        "No rental, because the hut closes at 4:30 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Add each rental time to 4:30 PM. Then check when the kayaks must be back.",
+      "explain": "Only the 1-hour rental. One hour ends at 5:30 PM, but two hours would end at 6:30 PM, and all kayaks must be back by 6:00 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "time-window",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i125",
+      "skill": "F6",
+      "passage": "f6-p53",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben's kayak tips over inside the buoys. What should he do?",
+      "options": [
+        "Take off his life jacket so he can climb back in",
+        "Stay with the kayak, hold on, and wave his paddle in the air",
+        "Let go of the kayak and swim to the beach",
+        "Swim past the buoys to reach a boat"
+      ],
+      "answer": 1,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the rule that starts with If your kayak tips over.",
+      "explain": "Ben should stay with the kayak, hold on and wave his paddle. The last rule says this, and a guard in the rescue boat will come to him.",
+      "inference": 0,
+      "tags": [
+        "if-then",
+        "safe-action",
+        "stay-calm"
+      ]
+    },
+    {
+      "id": "f6-i126",
+      "skill": "F6",
+      "passage": "f6-p54",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam wants to take a long video of the waterfall. Which plan is best?",
+      "options": [
+        "Turn on Battery Saver, then take the video",
+        "Tap Close and look for the trail without the map",
+        "Skip the video, turn on Battery Saver, then tap Guide Me Back",
+        "Take the long video first, then tap Guide Me Back"
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Check the battery number. Then read what Battery Saver does and what Guide Me Back does.",
+      "explain": "Sam should skip the video, turn on Battery Saver and tap Guide Me Back. The battery is at 15%. Battery Saver makes it last longer and turns videos off, but the map still works, and Guide Me Back shows arrows to the trail.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "button",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i127",
+      "skill": "F6",
+      "passage": "f6-p54",
+      "format": "tap",
+      "level": 4,
+      "prompt": "They reach the Ridge Trail at 6:00 PM and walk straight to the parking lot. About when will they get there?",
+      "options": [
+        "About 7:10 PM, at sunset",
+        "About 6:20 PM",
+        "About 7:50 PM, after sunset",
+        "About 6:50 PM, before sunset"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find how long 2 miles takes. Add it to 6:00 PM. Then compare with the sunset time.",
+      "explain": "About 6:50 PM, before sunset. The box says most hikers walk 2 miles in about 50 minutes, and 6:00 PM plus 50 minutes is 6:50 PM. Sunset is at 7:10 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f6-i128",
+      "skill": "F6",
+      "passage": "f6-p54",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Suppose Sam and his dad cannot find the trail, even with the arrows. What does the box say to do?",
+      "options": [
+        "Stay where they are and call for help",
+        "Keep walking in a new direction until they find a trail",
+        "Split up so each person can look for the trail",
+        "Walk toward the sunset to find the parking lot"
+      ],
+      "answer": 0,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the line that starts with If you cannot find the trail. Read the reason too.",
+      "explain": "They should stay where they are and call for help. The seventh line says this, because staying in one place makes you easier to find.",
+      "inference": 0,
+      "tags": [
+        "if-then",
+        "stay-calm",
+        "safe-action"
+      ]
+    },
+    {
+      "id": "f6-i129",
+      "skill": "F6",
+      "passage": "f6-p55",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana is cutting carrots. Her knife slides off the counter. What should she do?",
+      "options": [
+        "Grab it with a towel",
+        "Step back and let it drop",
+        "Catch it by the handle",
+        "Put her foot out to stop it"
+      ],
+      "answer": 1,
+      "evidence": [
+        7
+      ],
+      "hint": "Find the sentence about a falling knife. Read both parts of it.",
+      "explain": "Ana should step back and let it drop. The second paragraph says to step back and never try to catch a falling knife.",
+      "inference": 0,
+      "tags": [
+        "safe-action",
+        "rules"
+      ]
+    },
+    {
+      "id": "f6-i130",
+      "skill": "F6",
+      "passage": "f6-p55",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya finishes cutting. The sink is full of soapy water. What should she do with her knife?",
+      "options": [
+        "Push it under the soapy water so it gets very clean",
+        "Leave it on the cutting board for the next team",
+        "Wash it separately, dry it, and put it back in the knife block",
+        "Put it in the sink to soak with the bowls"
+      ],
+      "answer": 2,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Read the third paragraph. Find what not to do with soapy water, and what to do instead.",
+      "explain": "Priya should wash it separately, dry it and put it back in the knife block. The third paragraph says never to put a knife into a sink full of soapy water, because another person could reach in without seeing it.",
+      "inference": 0,
+      "tags": [
+        "choose-instead",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i131",
+      "skill": "F6",
+      "passage": "f6-p55",
+      "format": "build",
+      "level": 4,
+      "prompt": "Build Ben's plan for carrying a knife across the room.",
+      "frame": "Hold the knife with {0}. Say {1} when you walk past someone.",
+      "slots": [
+        {
+          "kind": "first",
+          "options": [
+            "the blade pointing up, in front of you",
+            "the blade pointing at the floor, in front of your body",
+            "the blade wrapped in a paper towel",
+            "the blade pointing down, next to your leg"
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "kind": "then",
+          "options": [
+            "\"Knife behind you\"",
+            "\"Watch out\"",
+            "\"Excuse me\"",
+            "\"Hot pan\""
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Read the third paragraph. Find how to hold the knife and the exact words to say.",
+      "explain": "Hold the knife with the blade pointing down, next to your leg, and say Knife behind you when you walk past someone. Both are at the start of the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "sequence",
+        "exact-words"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i132",
+      "skill": "F6",
+      "passage": "f6-p56",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Which example password follows all the rules on the screen?",
+      "options": [
+        "violin cactus ladder pancake",
+        "PixelRivera2014",
+        "trains",
+        "SamLovesTrains!"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Check each password against three rules: how long it is, no names or birthdays, and words that have nothing to do with each other.",
+      "explain": "violin cactus ladder pancake follows all the rules. It has more than 12 characters and joins 4 words that have nothing to do with each other. The others are too short, or they use Sam's name or his dog's name. Make your own password, not this example.",
+      "inference": 1,
+      "tags": [
+        "password",
+        "compare",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f6-i133",
+      "skill": "F6",
+      "passage": "f6-p56",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo asks for Sam's library password so he can borrow an e-book. What should Sam do?",
+      "options": [
+        "Text the password to Leo, then change it next week",
+        "Say no, and help Leo make his own account",
+        "Tell Leo, because they are good friends",
+        "Tell Leo only the first half"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line about sharing. Who may know your password?",
+      "explain": "Sam should say no and help Leo make his own account. The last line says never to share your password with friends. Only a parent may know it.",
+      "inference": 1,
+      "tags": [
+        "password",
+        "friend",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i134",
+      "skill": "F6",
+      "passage": "f6-p56",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam wants to use his new library password for his train game too. What does the screen say?",
+      "options": [
+        "Use the same one, but add his birthday at the end",
+        "Use the same one, but for only two accounts",
+        "Use a different password for every account",
+        "Use the same one, because it is strong"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the rule about more than one account.",
+      "explain": "Use a different password for every account. The fourth line says this.",
+      "inference": 0,
+      "tags": [
+        "password",
+        "rules"
+      ]
+    },
+    {
+      "id": "f6-i135",
+      "skill": "F6",
+      "passage": "f6-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The weather service says a winter storm watch begins tonight. What does this mean?",
+      "options": [
+        "Heavy snow is falling now, so everyone must stay indoors",
+        "The storm has ended, so plows are clearing the streets",
+        "A storm will surely hit tomorrow, so the ferry has stopped",
+        "A storm is possible in the next two days, so it is time to get ready"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        3
+      ],
+      "hint": "Find the sentence that explains a watch. Then find the simple way to remember the difference.",
+      "explain": "A storm is possible in the next two days, so it is time to get ready. The first paragraph says a watch means a storm is possible and forecasters are not yet certain, and that a watch means be prepared.",
+      "inference": 0,
+      "tags": [
+        "vocabulary",
+        "compare"
+      ]
+    },
+    {
+      "id": "f6-i136",
+      "skill": "F6",
+      "passage": "f6-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "There is a winter storm watch, and no snow has fallen yet. Which job fits this time best?",
+      "options": [
+        "Charge the tablet and put fresh batteries in the flashlights",
+        "Stay indoors until the plows clear the streets",
+        "Check the school website for a closing by 6:00 AM",
+        "Wait for an adult to say the sidewalks are safe"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "The article tells what to do at each stage: during a watch, during a warning, and after the warning ends. Find the paragraph for a watch.",
+      "explain": "Charging the tablet and putting fresh batteries in the flashlights fits a watch. The second paragraph lists these jobs for a watch. The other jobs belong to a warning or to the time after it ends.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "stages",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i137",
+      "skill": "F6",
+      "passage": "f6-p57",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort each action by when the article says to do it.",
+      "bins": [
+        "During a watch",
+        "During a warning",
+        "After the warning ends"
+      ],
+      "cards": [
+        {
+          "text": "Check for food and water for three days",
+          "bin": 0,
+          "emoji": "🥫"
+        },
+        {
+          "text": "Charge phones and tablets",
+          "bin": 0,
+          "emoji": "🔋"
+        },
+        {
+          "text": "Store extra pet food",
+          "bin": 0,
+          "emoji": "🐕"
+        },
+        {
+          "text": "Stay indoors",
+          "bin": 1,
+          "emoji": "🏠"
+        },
+        {
+          "text": "Wait to travel until plows clear the streets",
+          "bin": 1,
+          "emoji": "🚜"
+        },
+        {
+          "text": "Wait for an adult to say the sidewalks are safe",
+          "bin": 2,
+          "emoji": "🚶"
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        13
+      ],
+      "hint": "Each stage has its own part of the article. Put each card with the part that names it.",
+      "explain": "Food and water, charging and pet food are in the paragraph about a watch. Staying indoors and waiting for the plows are in the paragraph about a warning. Waiting for an adult to say the sidewalks are safe comes when the warning ends, in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "stages",
+        "sort-by-time"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i138",
+      "skill": "F6",
+      "passage": "f6-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Suppose Ben taps Get My Pass and changes nothing. How much will he be charged each month after the 3 free days?",
+      "options": [
+        "$8",
+        "$2",
+        "$10",
+        "$0"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "hint": "Find the star after the price, and read the line that starts with the same star. Then check what is already checked for him.",
+      "explain": "$10 each month. The line with the star says the pass costs $8 every month after 3 free days, and Coin Doubler is already checked, which adds $2 a month. $8 plus $2 is $10, which is all of the money his mom gave him.",
+      "inference": 1,
+      "tags": [
+        "fine-print",
+        "pre-checked",
+        "price-math",
+        "spot-the-trick"
+      ]
+    },
+    {
+      "id": "f6-i139",
+      "skill": "F6",
+      "passage": "f6-p58",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Ben checks the screen for tricks. Sort each part.",
+      "bins": [
+        "A trick to watch for",
+        "Plain information"
+      ],
+      "cards": [
+        {
+          "text": "$0.00 today, with a small star",
+          "bin": 0,
+          "emoji": "⭐"
+        },
+        {
+          "text": "Only 3 players can still get this deal",
+          "bin": 0,
+          "emoji": "⏰"
+        },
+        {
+          "text": "Coin Doubler is already checked for you",
+          "bin": 0,
+          "emoji": "☑️"
+        },
+        {
+          "text": "A button that says No thanks, I don't like winning",
+          "bin": 0,
+          "emoji": "😞"
+        },
+        {
+          "text": "Single items are in the Item Shop",
+          "bin": 1,
+          "emoji": "🛒"
+        },
+        {
+          "text": "The pass gives new karts and new tracks",
+          "bin": 1,
+          "emoji": "🏎️"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "hint": "For each card, ask: does it hide a cost, rush me, choose for me, or try to make me feel bad for saying no? If not, it is plain information.",
+      "explain": "The star hides the monthly cost, the 3 players line rushes Ben, the checked box chooses for him, and the No thanks button tries to make him feel bad for saying no. Where single items are and what the pass gives are plain information.",
+      "inference": 2,
+      "tags": [
+        "spot-the-trick",
+        "clues",
+        "hurry",
+        "pre-checked"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i140",
+      "skill": "F6",
+      "passage": "f6-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben only wants new wheels for $3. What should he do?",
+      "options": [
+        "Tap the small x to go to the Item Shop, and buy the wheels there",
+        "Tap No thanks, I don't like winning, because it is the only way out",
+        "Tap Get My Pass, and plan to cancel before the 3 days end",
+        "Tap Get My Pass, but uncheck Coin Doubler first"
+      ],
+      "answer": 0,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line that tells where single items are, and how to get there.",
+      "explain": "Ben should tap the small x and buy the wheels in the Item Shop. The last line says single items are there. The No thanks button is not the only way out, and the pass would cost money every month.",
+      "inference": 1,
+      "tags": [
+        "choose-instead",
+        "problem-solving",
+        "button"
+      ]
+    },
+    {
+      "id": "f6-i141",
+      "skill": "F6",
+      "passage": "f6-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo and Sam find a hole in a hillside with old boards over it and no sign. What should they do?",
+      "options": [
+        "Take a quick look inside with a flashlight, then tell a ranger",
+        "Stay away from it, mark the spot on their map, and tell a park ranger",
+        "Stand on the boards to see if they are strong, then tell a ranger",
+        "Throw a rock in to find out how deep it is, then mark the map"
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        10,
+        11
+      ],
+      "hint": "Read the third paragraph. It tells what to do when an opening has no sign. Check every part of each plan.",
+      "explain": "They should stay away, mark the spot on their map and tell a park ranger. The third paragraph says not to go near an opening with no sign or throw rocks into it, and to tell a ranger. The second paragraph says old boards can break.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "combine-parts",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f6-i142",
+      "skill": "F6",
+      "passage": "f6-p59",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the sentence that explains why you cannot tell when the air in a mine is bad.",
+      "unit": "sentence",
+      "answer": [
+        6
+      ],
+      "evidence": [
+        6
+      ],
+      "hint": "Read the second paragraph. Look for a sentence about air.",
+      "explain": "Tap the sentence that says the air deep inside may not have enough oxygen, and you cannot see or smell the difference. It is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "reason",
+        "key-detail"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i143",
+      "skill": "F6",
+      "passage": "f6-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is the main idea of this notice?",
+      "options": [
+        "Miners dug for copper in Lantern Peaks more than a hundred years ago",
+        "Bats can fly through the gates over mine openings",
+        "Workers check the walls of Ridgeway Mine Museum every day",
+        "Old mines in the hills are not safe, so stay out and tell a ranger about openings"
+      ],
+      "answer": 3,
+      "evidence": [
+        8,
+        10,
+        11
+      ],
+      "hint": "Ask which choice the whole notice is about. A detail is true, but it comes from only one part.",
+      "explain": "The main idea is that old mines are not safe, so you stay out and tell a ranger about openings. Every paragraph leads to this. The other choices are true details from one part of the notice.",
+      "inference": 1,
+      "tags": [
+        "main-idea"
+      ]
+    },
+    {
+      "id": "f6-i144",
+      "skill": "F6",
+      "passage": "f6-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which request must Priya allow, or RoverLink cannot drive her rover?",
+      "options": [
+        "Bluetooth",
+        "Microphone",
+        "Location",
+        "Contacts"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the note under the table. Then find the row it names for driving.",
+      "explain": "Bluetooth. The note says RoverLink needs Bluetooth to drive the rover, and the Bluetooth row says it is used to connect and drive. The microphone is optional, because the arrow buttons also drive the rover.",
+      "inference": 1,
+      "tags": [
+        "permission",
+        "required-or-optional"
+      ]
+    },
+    {
+      "id": "f6-i145",
+      "skill": "F6",
+      "passage": "f6-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya's mom says, \"Give an app only what it needs, and only for as long as it needs it.\" Which Camera choice fits her rule best?",
+      "options": [
+        "Allow Always",
+        "Allow Once",
+        "Allow While Using the App",
+        "Don't Allow, and skip the setup"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Read why RoverLink wants the camera and how many times it needs it. Then choose the shortest choice that still lets the setup work.",
+      "explain": "Allow Once. The Camera row says the app scans the code one time, during setup, and the note says it needs the camera one time. Allow While Using the App would give it more time than it needs, and Allow Always is not a choice for the camera.",
+      "inference": 1,
+      "tags": [
+        "permission",
+        "least-access",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f6-i146",
+      "skill": "F6",
+      "passage": "f6-p60",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Priya and her mom go through the list. Sort each request.",
+      "bins": [
+        "Needed for RoverLink to work",
+        "Optional: Don't Allow is fine"
+      ],
+      "cards": [
+        {
+          "text": "Bluetooth, to connect and drive",
+          "bin": 0,
+          "emoji": "📶"
+        },
+        {
+          "text": "Camera, to scan the code during setup",
+          "bin": 0,
+          "emoji": "📷"
+        },
+        {
+          "text": "Location, to show robot clubs nearby",
+          "bin": 1,
+          "emoji": "📍"
+        },
+        {
+          "text": "Contacts, to invite friends",
+          "bin": 1,
+          "emoji": "👥"
+        },
+        {
+          "text": "Microphone, for voice commands",
+          "bin": 1,
+          "emoji": "🎤"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "Read the note under the table first. Then check each row against it.",
+      "explain": "Bluetooth and the camera for setup are needed, because the note says so. Location, contacts and the microphone are optional. The rover can still be driven with the arrow buttons.",
+      "inference": 1,
+      "tags": [
+        "permission",
+        "required-or-optional",
+        "compare"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i147",
+      "skill": "F6",
+      "passage": "f6-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The bird walk starts at the Gull Island dock at 12:45 PM. Which is the latest ferry that gets them there in time today?",
+      "options": [
+        "The 12:00 PM ferry",
+        "The 11:30 AM ferry",
+        "The 2:30 PM ferry",
+        "The 9:30 AM ferry"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Use today's ferry times and the trip time for fog, not the usual ones. Add the trip time to each ferry time.",
+      "explain": "The 9:30 AM ferry. In fog the trip takes 60 minutes, so it arrives at 10:30 AM. The 12:00 PM ferry would arrive at 1:00 PM, which is too late. It would only be in time on a day with the usual 40-minute trip. There is no 11:30 AM ferry today, because every ferry leaves 30 minutes later.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "two-conditions",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f6-i148",
+      "skill": "F6",
+      "passage": "f6-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On the ferry, Sam hears the horn again and again. What does the notice say about it?",
+      "options": [
+        "It is normal in fog, and it tells other boats where the ferry is",
+        "It means everyone must put on a life jacket",
+        "It means the ferry is turning back to Harbor Town",
+        "It means passengers may go out on the outer deck"
+      ],
+      "answer": 0,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line about the horn. Read the reason it gives.",
+      "explain": "It is normal in fog, and it lets other boats know where the ferry is. The fifth line says the horn sounds every 2 minutes for this reason.",
+      "inference": 0,
+      "tags": [
+        "stay-calm",
+        "reason"
+      ]
+    },
+    {
+      "id": "f6-i149",
+      "skill": "F6",
+      "passage": "f6-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "They bought tickets for a ferry, but the fog gets thicker and Captain Ruth Lane cancels it. What can they do with their tickets?",
+      "options": [
+        "Use them only after the fog clears today",
+        "Use them on any ferry in the next 30 days",
+        "Use them only on the next ferry today",
+        "Nothing, because the tickets no longer work"
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the line about tickets for a canceled ferry.",
+      "explain": "They can use the tickets on any ferry for 30 days. The last line says this, so they can choose another day for the bird walk.",
+      "inference": 0,
+      "tags": [
+        "plan-changes",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i150",
+      "skill": "F6",
+      "passage": "f6-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya finds a small shark tooth. Then she finds a long, flat piece in the rock that might be bone. What should she do?",
+      "options": [
+        "Dig the bone out slowly with her own tools, then give it to the museum",
+        "Give the tooth to the museum, and keep the bone for her rock collection",
+        "Keep the tooth, put a yellow flag by the bone, and call a museum worker",
+        "Keep both, because she found them herself"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "hint": "There are two finds. Find the rule for shells and teeth and the rule for bones. A good plan follows both.",
+      "explain": "Maya should keep the tooth, put a yellow flag by the bone and call a museum worker. The third paragraph says you may keep small shells or shark teeth, that bones belong to the museum, and not to dig out a bone yourself.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "combine-parts",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i151",
+      "skill": "F6",
+      "passage": "f6-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why does the notice say not to dig out a bone yourself?",
+      "options": [
+        "Bones are too heavy to carry to the cars",
+        "Only adults are allowed to touch bones",
+        "Bones must stay in the quarry for good",
+        "Bones break easily when they are pulled from rock"
+      ],
+      "answer": 3,
+      "evidence": [
+        9
+      ],
+      "hint": "Find the sentence about uncovering a bone. Look for the word because.",
+      "explain": "Bones break easily when they are pulled from rock. The third paragraph gives this reason after the word because.",
+      "inference": 0,
+      "tags": [
+        "reason"
+      ]
+    },
+    {
+      "id": "f6-i152",
+      "skill": "F6",
+      "passage": "f6-p62",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort what each person does at the dig.",
+      "bins": [
+        "Follows the notice",
+        "Breaks a rule"
+      ],
+      "cards": [
+        {
+          "text": "Ben borrows safety glasses at the gate",
+          "bin": 0,
+          "emoji": "🥽"
+        },
+        {
+          "text": "Ana wears sandals so her feet stay cool",
+          "bin": 1,
+          "emoji": "🩴"
+        },
+        {
+          "text": "Maya, who is 11, digs next to her dad all morning",
+          "bin": 0,
+          "emoji": "👨‍👧"
+        },
+        {
+          "text": "Leo steps behind the orange fence to see the cliff",
+          "bin": 1,
+          "emoji": "🚧"
+        },
+        {
+          "text": "Sam keeps four shells from the dig pile",
+          "bin": 0,
+          "emoji": "🐚"
+        },
+        {
+          "text": "Priya takes home a fossil bigger than her hand",
+          "bin": 1,
+          "emoji": "✋"
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        12
+      ],
+      "hint": "Match each card to one rule in the notice. Check numbers, ages and sizes carefully.",
+      "explain": "Borrowing glasses, digging next to an adult at age 11 and keeping four shells follow the notice. Sandals, going behind the orange fence and taking a fossil bigger than your hand break the rules about boots, the loose cliff and what belongs to the museum.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "compare",
+        "numbers"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i153",
+      "skill": "F6",
+      "passage": "f6-p63",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo is 13 and Ana is 12. What must happen before either of them climbs?",
+      "options": [
+        "A staff member checks their harnesses, and they sign the safety forms themselves",
+        "An adult signs a safety form for each of them, and a staff member checks their harnesses",
+        "Only Ana needs an adult to sign, because Leo is a teenager",
+        "Neither needs a form, because both are older than 8"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Check the age rule against both ages. Then check what happens before every first climb.",
+      "explain": "An adult signs a safety form for each of them, and a staff member checks their harnesses. The first rule says climbers under 14 need an adult to sign, and both are under 14. The second rule says staff check every harness before the first climb.",
+      "inference": 1,
+      "tags": [
+        "age-rule",
+        "two-characters",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f6-i154",
+      "skill": "F6",
+      "passage": "f6-p63",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put Ana's steps for her first climb in order.",
+      "steps": [
+        "Put on a harness and have a staff member check it.",
+        "Clip the auto-belay to the front loop and check that the gate is closed.",
+        "Climb a green route to the top.",
+        "Let go of the wall and lean back while the auto-belay lowers her."
+      ],
+      "evidence": [
+        1,
+        2,
+        7,
+        8
+      ],
+      "hint": "Think about what must happen before she leaves the ground, then what happens on the wall, then at the top.",
+      "explain": "First Ana puts on a harness and has it checked. Then she clips the auto-belay to the front loop and checks the gate. Next she climbs a green route, because the board says to start on green. At the top she lets go and leans back.",
+      "inference": 1,
+      "tags": [
+        "sequence",
+        "multi-step"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i155",
+      "skill": "F6",
+      "passage": "f6-p63",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana is halfway up a rope. Leo wants to clip onto the same rope and climb below her so they can race. What does the board say?",
+      "options": [
+        "Climb, but stay far below Ana",
+        "Climb, if both of them check their gates first",
+        "Climb on the same rope, but take a blue route",
+        "Wait until Ana is back on the ground, because only one climber may be on each rope"
+      ],
+      "answer": 3,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the rule about how many climbers can be on a rope. Read both parts of it.",
+      "explain": "Leo should wait until Ana is back on the ground. The fifth rule says only one climber on each rope at a time, and never to climb above or below another person.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "safe-action"
+      ]
+    },
+    {
+      "id": "f6-i156",
+      "skill": "F6",
+      "passage": "f6-p64",
+      "format": "tap",
+      "level": 5,
+      "prompt": "It is bedtime at the campsite. Sam has toothpaste and a granola bar in his backpack in the tent. What should he do?",
+      "options": [
+        "Put both in the food locker and close the latch",
+        "Put the granola bar in the locker, but keep the toothpaste in the tent",
+        "Keep both in the backpack, but zip it tightly",
+        "Eat the granola bar, and keep the toothpaste in his sleeping bag"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "hint": "Check the rule for food and the rule for things with a strong smell. Then check the rule about tents.",
+      "explain": "Sam should put both in the food locker and close the latch. The second paragraph says to store food and things with a strong smell, such as toothpaste, in the locker, and never to keep them in your tent. Raccoons can open zippers.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "combine-parts",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i157",
+      "skill": "F6",
+      "passage": "f6-p64",
+      "format": "tap",
+      "level": 5,
+      "prompt": "A fox walks into the campsite while Pixel is on his leash. What should Sam do?",
+      "options": [
+        "Walk slowly toward the fox so he can touch it gently",
+        "Stand up, speak in a loud voice, give the fox space to leave, and keep Pixel on the leash",
+        "Toss the fox a piece of bread so it will go away",
+        "Let Pixel off the leash to chase the fox away"
+      ],
+      "answer": 1,
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "Read the third paragraph. Check each plan against every rule in it.",
+      "explain": "Sam should stand up, speak loudly, give the fox space and keep Pixel on the leash. The third paragraph says never to feed wild animals, not to chase or touch them, and to keep pets on a leash.",
+      "inference": 0,
+      "tags": [
+        "safe-action",
+        "dogs"
+      ]
+    },
+    {
+      "id": "f6-i158",
+      "skill": "F6",
+      "passage": "f6-p64",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which title fits this notice best?",
+      "options": [
+        "How to Choose a Campsite in Story Woods",
+        "What to Do When a Fox Visits",
+        "Keep Food and Smells Away From Wild Animals",
+        "Raccoons Can Open Coolers and Zippers"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        5,
+        9
+      ],
+      "hint": "A good title fits every paragraph, not just one or two sentences.",
+      "explain": "Keep Food and Smells Away From Wild Animals fits best. The first paragraph says why people food is bad for animals, the second tells how to store food and smells, and the third says never to feed animals. Raccoons and foxes are details from one part.",
+      "inference": 1,
+      "tags": [
+        "main-idea"
+      ]
+    },
+    {
+      "id": "f6-i159",
+      "skill": "F6",
+      "passage": "f6-p65",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The student next to Leo has a blue star sticker on her music folder. What should Leo's dad do?",
+      "options": [
+        "Film the whole row, because he is filming his own child",
+        "Film that student only during the bows",
+        "Film everyone, but post the video only on the family page",
+        "Film Leo, but keep that student out of the video"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the line about blue stars. Then read the line about whom you may film.",
+      "explain": "He should film Leo but keep that student out of the video. The program says you may film your own child, and families of students with a blue star asked that they not appear in any photos or videos.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "privacy",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f6-i160",
+      "skill": "F6",
+      "passage": "f6-p65",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort what people do at the concert.",
+      "bins": [
+        "Follows the rules",
+        "Breaks a rule"
+      ],
+      "cards": [
+        {
+          "text": "A flash photo during the bows",
+          "bin": 0,
+          "emoji": "📸"
+        },
+        {
+          "text": "A flash photo during the second song",
+          "bin": 1,
+          "emoji": "⚡"
+        },
+        {
+          "text": "A close video of Leo's drum part",
+          "bin": 0,
+          "emoji": "🥁"
+        },
+        {
+          "text": "A close video of a student with a blue star",
+          "bin": 1,
+          "emoji": "⭐"
+        },
+        {
+          "text": "Posting Leo's video on the family page",
+          "bin": 0,
+          "emoji": "🏫"
+        },
+        {
+          "text": "Posting Leo's video on a public site",
+          "bin": 1,
+          "emoji": "🌐"
+        },
+        {
+          "text": "Holding a bright phone up high during a song",
+          "bin": 1,
+          "emoji": "📱"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "Match each card to a rule. Watch for words about time, like during the music and during the bows.",
+      "explain": "A flash photo during the bows, a close video of your own child and posting on the family page follow the rules. Flash or a bright phone during a song, filming a blue-star student and posting on a public site break them.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "compare",
+        "time-window"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f6-i161",
+      "skill": "F6",
+      "passage": "f6-p65",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo's grandma could not come, and she is not a school family. How can she see the whole concert without anyone breaking a rule?",
+      "options": [
+        "She can log in to the family page with Leo's dad's password",
+        "Leo's family can show her Ms. Gray's full recording when it comes next week",
+        "Leo's dad can post his video on a public site for her",
+        "Leo's dad can film the whole band up close for her"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5,
+        6
+      ],
+      "hint": "Find who can see the family page and what Ms. Gray will share. Then find the plan that breaks no rule.",
+      "explain": "Leo's family can show her Ms. Gray's full recording next week. The last line says every family gets it. Posting on a public site and filming other students up close are against the rules, and a password should never be shared.",
+      "inference": 2,
+      "tags": [
+        "problem-solving",
+        "choose-instead",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f6-i162",
+      "skill": "F6",
+      "passage": "f6-p66",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam's oven mitt got wet when he washed a bowl. Grandma Rose says the cookies are ready. What should Sam do?",
+      "options": [
+        "Use a damp towel instead of the mitt",
+        "Use the wet mitt, because it is only a little wet",
+        "Get a dry mitt, and ask Grandma Rose if he may open the oven",
+        "Use the wet mitt quickly, before the cookies burn"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        7
+      ],
+      "hint": "Check the rule about mitts and the rule about the oven. A safe plan follows both.",
+      "explain": "Sam should get a dry mitt and ask Grandma Rose if he may open the oven. The third rule says to use only dry mitts, because a wet mitt lets heat through. The last rule says to ask Grandma Rose before you use the oven.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "combine-parts",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f6-i163",
+      "skill": "F6",
+      "passage": "f6-p66",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya just spread peanut butter on her lunch at the front table. Now she wants to help at the back table. What should she do?",
+      "options": [
+        "Wipe the knife on a towel, then use it at the back table",
+        "Bring the knife, but use it only to spread jam",
+        "Wash the knife, but not her hands, because her hands look clean",
+        "Wash her hands, and leave the peanut butter knife at the front table"
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Read the rule about the back table. It has two parts: one about hands and one about what may come to the table.",
+      "explain": "Maya should wash her hands and leave the peanut butter knife at the front table. The rule says to wash your hands before you work at the back table and never to bring nut butters or tools from other tables to it.",
+      "inference": 1,
+      "tags": [
+        "allergy",
+        "two-conditions",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f6-i164",
+      "skill": "F6",
+      "passage": "f6-p66",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sort what Sam and Maya do in the kitchen.",
+      "bins": [
+        "Follows the rules",
+        "Breaks a rule"
+      ],
+      "cards": [
+        {
+          "text": "Sam scrapes the bowl after the beater stops moving",
+          "bin": 0,
+          "emoji": "🥣"
+        },
+        {
+          "text": "Maya touches the beater while it is still slowing down",
+          "bin": 1,
+          "emoji": "🌀"
+        },
+        {
+          "text": "Sam puts out the Wet Floor sign, then gets the mop",
+          "bin": 0,
+          "emoji": "⚠️"
+        },
+        {
+          "text": "Maya tastes a spoonful of raw cookie dough",
+          "bin": 1,
+          "emoji": "🥄"
+        },
+        {
+          "text": "Sam washes his hands after he cracks eggs",
+          "bin": 0,
+          "emoji": "🥚"
+        },
+        {
+          "text": "Maya gets the mop first and puts out the sign after",
+          "bin": 1,
+          "emoji": "🧹"
+        }
+      ],
+      "evidence": [
+        0,
+        3,
+        4,
+        6
+      ],
+      "hint": "Match each card to one rule. Check the order words carefully: before, after, first.",
+      "explain": "Scraping after the beater stops, putting out the sign before the mop, and washing after eggs follow the rules. Touching a beater that is still moving, tasting raw dough and getting the mop before the sign break them.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "compare",
+        "before-after"
       ],
       "transfer": true
     }

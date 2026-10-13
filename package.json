@@ -12,7 +12,7 @@
     "check": "node packages/schema/validate.mjs",
     "gen:types": "node packages/schema/gen.mjs",
     "e2e": "playwright test",
-    "ci": "npm run check && npm run typecheck && npm test && npm run build"
+    "ci": "npm run check && npm run typecheck && npm test && npm run build && node apps/web/check-offline.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.11.0",

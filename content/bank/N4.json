@@ -44,10 +44,10 @@
       "picture": "⛴️",
       "sentences": [
         "The Harbor Town ferry is big and white.",
-        "Every morning, it leaves the dock at 9 AM.",
+        "It leaves the dock at 9 AM each morning, but not in summer.",
         "Cars drive onto the lower deck.",
         "People sit on the top deck and look at the sea.",
-        "The trip to Gull Island takes one hour.",
+        "The trip to Gull Island takes 40 minutes.",
         "Then the ferry comes back to town."
       ],
       "topics": ["transport", "ocean"],
@@ -99,7 +99,7 @@
     },
     {
       "id": "n4-p06",
-      "title": "A Text from Grandma Rose",
+      "title": "A Text About the Rover",
       "kind": "message",
       "picture": "📱",
       "sentences": [],
@@ -119,7 +119,7 @@
       "topics": ["friends", "robots"],
       "level": 2,
       "socialLoad": 0,
-      "credit": { "title": "A Text from Grandma Rose", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
+      "credit": { "title": "A Text About the Rover", "author": "Learning to Fly (AI-drafted)", "source": "Written for Learning to Fly", "licence": "original", "retrieved": "2026-10-12", "adapted": false }
     },
     {
       "id": "n4-p07",
@@ -218,8 +218,8 @@
       "kind": "story",
       "picture": "📚🤖☂️",
       "sentences": [
-        "In September, Maya and Ana started a comic club at the Harbor Town library.",
-        "Every Thursday after school, six students met at a long table by the window.",
+        "In September, Maya and Ana joined the comic club at the Harbor Town library.",
+        "Every Wednesday after school, six students met at a long table in the Story Room.",
         "They each drew one page, and at the end of every month, they joined the pages into one long comic.",
         "In October, the club invented a story about a robot that lives inside the old lighthouse.",
         "The robot never goes outside without its tiny yellow umbrella.",
@@ -528,6 +528,1304 @@
         "retrieved": "2026-10-12",
         "adapted": false
       }
+    },
+    {
+      "id": "n4-p20",
+      "title": "Ana's New Ball",
+      "kind": "story",
+      "picture": "⚽",
+      "sentences": [
+        "Ana went to the soccer field after school.",
+        "She had a new ball in her bag.",
+        "The ball was black and white.",
+        "Ana put it in the corner of the field.",
+        "Then she kicked it hard.",
+        "It flew over the grass and into the net.",
+        "Ana jumped and shouted."
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ana's New Ball",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p21",
+      "title": "Maya's Pink Rock",
+      "kind": "story",
+      "picture": "🪨",
+      "sentences": [
+        "Maya walked by the creek in Story Woods.",
+        "She found a pink rock on the path.",
+        "It was shiny and had a white stripe.",
+        "Maya took the rock home.",
+        "She put it on the desk in her room.",
+        "Then Maya drew a picture of the rock."
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Maya's Pink Rock",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p22",
+      "title": "The Red Kite",
+      "kind": "story",
+      "picture": "🪁💨",
+      "sentences": [
+        "On a windy Sunday afternoon, Sam and Ana carried a red kite up to the lookout.",
+        "The wind was strong and steady at the top of the hill.",
+        "Sam held the string, and Ana held the kite up high.",
+        "When the wind blew hard, she let it go.",
+        "The kite rose quickly into the sky.",
+        "It pulled hard on the string.",
+        "Sam held on with both hands.",
+        "Then the wind slowed down, and the kite began to drop toward the ground.",
+        "Ana ran to catch it before it hit the rocks.",
+        "Sam smiled at her and wound up the string."
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Red Kite",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p23",
+      "title": "Pancakes at the Bakery",
+      "kind": "story",
+      "picture": "🥞",
+      "sentences": [
+        "On Saturday morning, Ben helped Grandma Rose at the bakery.",
+        "She wanted to teach him how to make pancakes.",
+        "Ben cracked two eggs into a big bowl.",
+        "Grandma Rose added milk and flour.",
+        "Then he stirred the batter with a spoon.",
+        "She poured some batter onto a hot pan.",
+        "Soon small bubbles came up on top of the pancake.",
+        "Ben flipped it, and it landed back in the pan.",
+        "The next one landed on the floor, and they both laughed.",
+        "By noon, Ben had made a stack of twenty pancakes."
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Pancakes at the Bakery",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p24",
+      "title": "The Track Map",
+      "kind": "story",
+      "picture": "🚂🗺️",
+      "sentences": [
+        "Sam has a model train in his bedroom.",
+        "Priya came over to help him build a new track.",
+        "First, she drew a careful map of the track on paper.",
+        "The map showed a bridge, a tunnel and two little stations.",
+        "Sam laid the pieces of track across the floor.",
+        "He followed the map closely.",
+        "Then Priya put the train on the track and pressed the switch.",
+        "It went over the bridge and into the dark tunnel.",
+        "Sam gave her a high five."
+      ],
+      "topics": [
+        "maps",
+        "transport"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Track Map",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p25",
+      "title": "The Crab in the Pool",
+      "kind": "story",
+      "picture": "🦀",
+      "sentences": [
+        "Leo and Maya looked into a tide pool by the harbor.",
+        "A small green crab sat under a rock.",
+        "Maya wanted to draw it.",
+        "She sat on a dry rock with her sketchbook.",
+        "Leo lay on his stomach to watch the crab.",
+        "It walked sideways across the sand.",
+        "Then it hid under some seaweed.",
+        "Leo told Maya where it went.",
+        "She drew the crab under the seaweed, with only its claws showing."
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Crab in the Pool",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p26",
+      "title": "The Moon Up Close",
+      "kind": "story",
+      "picture": "🔭🌕",
+      "sentences": [
+        "On Friday night, Leo and Priya went to the observatory.",
+        "A big telescope was pointed at the Moon.",
+        "Leo looked into it first.",
+        "He saw gray spots and many round holes called craters.",
+        "Then Priya took a turn.",
+        "She counted ten craters near the edge of the Moon.",
+        "She wrote the number in her notebook.",
+        "Leo made a joke about a moon made of cheese.",
+        "Priya laughed and let him look again."
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Moon Up Close",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p27",
+      "title": "Music Night Setup",
+      "kind": "story",
+      "picture": "🎸🎹",
+      "sentences": [
+        "On Thursday, Sam and Ben stayed after school to set up the gym for the spring music night.",
+        "Ms. Gray gave the boys a list of jobs.",
+        "Sam carried in forty folding chairs, and Ben put them in rows.",
+        "Then Ben set up his electric keyboard at the front of the stage.",
+        "He plugged it into a speaker and played a few quiet notes.",
+        "Sam tuned his guitar next to him.",
+        "One string sounded too low, so he slowly turned the tuning peg again and again.",
+        "Ben listened and told him when it sounded right.",
+        "At the end, the boys tested the three microphones on the stage.",
+        "They were all loud and clear, so Ms. Gray let the boys go home."
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Music Night Setup",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p28",
+      "title": "The Island Game",
+      "kind": "story",
+      "picture": "🎲🏝️",
+      "sentences": [
+        "On a rainy afternoon, Ana and Maya played a board game at the library.",
+        "In the game, each player builds a town on an island.",
+        "Ana chose the blue pieces, and Maya chose the green pieces.",
+        "Maya rolled the dice first.",
+        "She got a six and built a bridge to the harbor.",
+        "Ana rolled a two, so she could only build a short road.",
+        "Then she drew a lucky card that gave her three extra houses.",
+        "Maya laughed when she saw it.",
+        "After an hour, the two girls counted their points.",
+        "Their scores were the same, so Mrs. Hall, the librarian, said that they had both won."
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Island Game",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p29",
+      "title": "The Triceratops Skull",
+      "kind": "story",
+      "picture": "🦕🏛️",
+      "sentences": [
+        "Ms. Ortiz took her science class to the Harbor Town Museum on Tuesday.",
+        "Dr. Bell met them at the door of the dinosaur hall.",
+        "She showed the students a huge skull with three horns.",
+        "It came from a Triceratops, a plant-eating dinosaur.",
+        "Dr. Bell said that the two long horns on its face were about as long as a baseball bat.",
+        "Ms. Ortiz asked how scientists know what the dinosaur ate.",
+        "Dr. Bell held up a model of its teeth.",
+        "She explained that they had sharp edges for slicing tough plants.",
+        "Then the students drew the skull in their notebooks.",
+        "They gave their drawings to Ms. Ortiz at the end of the visit."
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Triceratops Skull",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p30",
+      "title": "The Line Robot",
+      "kind": "story",
+      "picture": "🤖➰",
+      "sentences": [
+        "Priya and Ana built a robot that follows a black line on the floor.",
+        "Priya made the body and the wheels.",
+        "Ana wrote the program that tells the robot where to turn.",
+        "On Monday, they tested it in the school hall.",
+        "The robot followed the line until it reached a sharp corner.",
+        "Then it rolled straight off the tape and bumped into a wall.",
+        "Priya picked it up and checked its sensor.",
+        "The sensor was fine, so she handed the robot to Ana.",
+        "She changed the program so the robot would slow down at corners.",
+        "On the next try, it turned the corner and finished the whole line."
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Line Robot",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p31",
+      "title": "Deer by the Creek",
+      "kind": "story",
+      "picture": "🦌🌲",
+      "sentences": [
+        "Early on Sunday, Sam and Leo walked the creek trail in Story Woods.",
+        "Sam carried a trail map, and Leo carried a pair of binoculars.",
+        "Near the old mill, Leo stopped and pointed at the trees.",
+        "A mother deer stood in the shade with two young deer, called fawns.",
+        "They had white spots on their brown backs.",
+        "The mother deer lifted its head and looked at the boys.",
+        "Sam stood very still, and Leo passed him the binoculars.",
+        "Through them, he could see every white spot.",
+        "After a minute, the deer walked slowly into the woods.",
+        "The boys marked the place on Sam's map with a small star."
+      ],
+      "topics": [
+        "nature",
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Deer by the Creek",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p32",
+      "title": "Green Streaks",
+      "kind": "story",
+      "picture": "⛏️💚",
+      "sentences": [
+        "On Saturday, Mr. Varga took the rock club to the Ridgeway Mine Museum in Lantern Peaks.",
+        "The mine closed long ago, but visitors can still look for rocks near the entrance.",
+        "Mr. Varga gave each student a small bag and a hand lens.",
+        "Ben and Maya searched a pile of broken rock beside the old rail tracks.",
+        "Ben found a stone with bright green streaks.",
+        "He showed it to Mr. Varga.",
+        "He looked at it through his lens and smiled.",
+        "He told Ben that the green mineral was called malachite, and that it has copper in it.",
+        "Maya found one too, and she put it in her bag.",
+        "At the end of the day, the students laid out their finds on a long table.",
+        "They had found twelve kinds of rocks and minerals."
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Green Streaks",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p33",
+      "title": "The Last Kick",
+      "kind": "story",
+      "picture": "⚽🥅",
+      "sentences": [
+        "The Harbor Middle School soccer team had a big game against Gull Point on Saturday.",
+        "Coach Novak gave the players one job for the week.",
+        "Each of them had to practice penalty kicks for ten minutes a day.",
+        "Ana practiced in her backyard with Ben in the goal.",
+        "Her first kicks went too high, and he caught most of them.",
+        "Then she started to aim low, at the corners.",
+        "On Saturday, the game ended in a tie, so each team took five penalty kicks.",
+        "Ana took the last kick for Harbor Middle School.",
+        "The Gull Point goalkeeper was tall, and she had stopped two kicks already.",
+        "Ana aimed low at the left corner, just as she had practiced.",
+        "The ball rolled under her hands and into the net.",
+        "Ana's teammates ran over and cheered."
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Last Kick",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p34",
+      "title": "The Bike on the Ferry",
+      "kind": "story",
+      "picture": "🚲⛴️🦭",
+      "sentences": [
+        "Mr. Okafor had to deliver a repaired bike to a customer on Gull Island.",
+        "On Saturday, Leo went with him on the ferry.",
+        "They wheeled the bike onto the lower deck, next to the cars.",
+        "A deckhand checked their tickets and showed them a rack for bikes.",
+        "Mr. Okafor locked the bike to it with a chain.",
+        "Then the two of them climbed the stairs to the top deck.",
+        "Leo wanted to see the island, so he stood by the front window.",
+        "Halfway across, Captain Lane blew the horn twice.",
+        "She pointed to a group of seals on the rocks.",
+        "Mr. Okafor lent Leo his phone, and he took a photo of them.",
+        "When the ferry reached the dock, the customer was waiting for her bike."
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Bike on the Ferry",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p35",
+      "title": "Scones for the Café",
+      "kind": "story",
+      "picture": "☕🍪",
+      "sentences": [
+        "Early on Saturday, Mrs. Lin called Grandma Rose from the Lighthouse Café.",
+        "The oven at the café had stopped working.",
+        "She had forty scones ready to bake, but no way to bake them.",
+        "Grandma Rose told her to bring the trays to the bakery.",
+        "Mrs. Lin arrived ten minutes later with Sam, who had met her at the corner.",
+        "He carried the trays inside, and Grandma Rose slid them into her big oven.",
+        "While the scones baked, the two women drank tea and talked about recipes.",
+        "Mrs. Lin said that she adds orange peel to her scones.",
+        "Grandma Rose said that she had never tried that.",
+        "Twenty minutes later, the scones came out golden brown.",
+        "Mrs. Lin gave her six of them to say thank you."
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Scones for the Café",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p36",
+      "title": "Sea Turtle Nests",
+      "kind": "article",
+      "picture": "🐢🏖️",
+      "sentences": [
+        "On warm summer nights, a female sea turtle sometimes crawls out of the ocean and onto a sandy beach.",
+        "She moves slowly, because her flippers are made for swimming, not for walking.",
+        "When she finds a dry spot above the high-tide line, she digs a deep hole with her back flippers.",
+        "Then she lays her eggs in it, often about one hundred of them.",
+        "Each egg is round and white, and it is about the size of a ping-pong ball.",
+        "When the turtle has finished, she covers the nest with sand to hide it.",
+        "Then she crawls back to the sea and swims away.",
+        "She does not stay to guard the nest, and she will never meet her young.",
+        "The sand keeps the eggs warm for about two months.",
+        "Its temperature even affects whether the babies become males or females.",
+        "When the hatchlings break out of their shells, they dig up through the sand together, usually at night.",
+        "Then they hurry toward the brightest part of the sky, which is normally over the water.",
+        "Once they reach the waves, they swim away from the beach for many hours without stopping."
+      ],
+      "breaks": [
+        4,
+        8
+      ],
+      "topics": [
+        "animals",
+        "ocean"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sea Turtle Nests",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p37",
+      "title": "Inside a Steam Locomotive",
+      "kind": "article",
+      "picture": "🚂💨",
+      "sentences": [
+        "A steam locomotive is a train engine that is powered by steam.",
+        "Inside it, a fire burns in a metal box called the firebox.",
+        "A worker called the fireman feeds the fire with coal, one shovel at a time.",
+        "His job is hot, heavy work, especially on a long trip up a hill.",
+        "In front of the firebox is the boiler, a long tank filled with water.",
+        "Hot gases from the fire travel through metal tubes that run through the middle of it.",
+        "The tubes heat the water until it boils and turns into steam.",
+        "Steam takes up much more space than water, so it pushes hard against the walls of the boiler.",
+        "Pipes carry this steam to two cylinders near the front wheels.",
+        "Inside each cylinder, the steam pushes a piston back and forth.",
+        "Each piston is joined to a wheel by a long metal rod, so its movement turns the wheel.",
+        "The used steam leaves through the chimney in quick puffs, and this is what makes the famous chugging sound.",
+        "The driver controls the speed with a handle called the regulator.",
+        "When the driver opens it, more steam flows to the cylinders, and the train speeds up."
+      ],
+      "breaks": [
+        4,
+        8,
+        12
+      ],
+      "topics": [
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Inside a Steam Locomotive",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p38",
+      "title": "Thunder at Pier Field",
+      "kind": "story",
+      "picture": "⚽⛈️",
+      "sentences": [
+        "On Saturday morning, the Harbor Middle School soccer team was playing a game at Pier Field.",
+        "Ana and Ben were on the field, and Coach Novak was watching from the side.",
+        "Late in the first half, the sky in the west turned dark gray.",
+        "A tall cloud was building over the hills, and it was growing taller every minute.",
+        "Then a low rumble of thunder rolled across the field.",
+        "The referee blew his whistle three times and stopped the game.",
+        "He told both teams to go into the school gym right away.",
+        "Coach Novak agreed with him.",
+        "She told her players that thunder means lightning is close by, so the safest place is inside a building.",
+        "In the gym, the players sat on the bleachers while heavy rain fell on the roof.",
+        "Ben checked the weather radar on his phone every few minutes.",
+        "At first, it showed a red and yellow storm right over Harbor Town.",
+        "Slowly the storm moved east, out over the ocean.",
+        "The referee waited until thirty minutes had passed without any thunder.",
+        "Then he let the teams go back outside, and they finished the game on the wet grass."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "topics": [
+        "weather",
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Thunder at Pier Field",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p39",
+      "title": "The Orange Flags",
+      "kind": "story",
+      "picture": "🧭🚩",
+      "sentences": [
+        "In May, the Harbor Town hiking club set up an orienteering course in Story Woods.",
+        "In orienteering, people use a map and a compass to find a series of checkpoints.",
+        "Each checkpoint is an orange and white flag with a paper punch tied to it.",
+        "Sam and Leo signed up to race the course as a team.",
+        "Sam held the map, because he can read one faster than anyone else in his class.",
+        "Leo held the compass and kept it flat in his hand, so the needle could swing freely.",
+        "The first three flags were easy to find.",
+        "The fourth flag was supposed to be beside the creek, but the boys could not find it anywhere.",
+        "Sam turned the map until its north arrow pointed the same way as the compass needle.",
+        "Then he saw his mistake.",
+        "They were standing beside a small stream, not the creek.",
+        "The creek was about two hundred steps farther east, past a tall pine tree.",
+        "Leo led the way east, checking the compass every few steps.",
+        "When they reached the pine tree, he spotted the orange flag hanging from a low branch.",
+        "Sam punched their card, and the boys jogged on toward flag number five."
+      ],
+      "breaks": [
+        4,
+        8,
+        12
+      ],
+      "topics": [
+        "maps"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Orange Flags",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p40",
+      "title": "The Castle Level",
+      "kind": "story",
+      "picture": "🎮🏰",
+      "sentences": [
+        "The library's game club was holding a contest for the best homemade game level.",
+        "Ben and Leo decided to build one together in a block-building game.",
+        "Their level was a tall castle on a cliff, with a hidden door at the top.",
+        "Ben designed the castle, and Leo built the traps and the moving platforms.",
+        "After two weeks, they asked Ana to test it.",
+        "She played the level three times, but she never reached the hidden door.",
+        "The last platform moved too fast, and each time she fell into the moat.",
+        "Leo wanted to keep the platform fast, because he thought that hard levels are more fun.",
+        "Ben said that if nobody could finish the level, the judges would never see the best part.",
+        "Leo thought about this for a minute, and then he agreed.",
+        "He slowed the platform down a little and added a second, easier path up the cliff.",
+        "Ana tested the level again, and this time she reached the door.",
+        "On contest day, it won second place, and one judge said that it had the best castle she had ever seen."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Castle Level",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p41",
+      "title": "The Flute Solo",
+      "kind": "story",
+      "picture": "🎶🎼",
+      "sentences": [
+        "Ms. Gray chose Maya to play a short flute solo at the winter concert in the school gym.",
+        "Maya was pleased, but she was also nervous, because she had never played alone on a stage.",
+        "Every day after school, she practiced the solo by herself in the empty music room.",
+        "On Wednesday, Ms. Gray listened to her play it from start to finish.",
+        "She said that the notes were correct, but that the solo sounded rushed.",
+        "She suggested that Maya take a slow, deep breath before the first note.",
+        "Maya tried this, and she was surprised by the difference.",
+        "Her first note was steady and clear, and the rest of the solo followed at a comfortable, even speed.",
+        "On the night of the concert, the gym was crowded with families and teachers.",
+        "When it was time for the solo, Ms. Gray looked at Maya and nodded.",
+        "Maya took her slow breath, lifted her flute and began.",
+        "When she finished, the audience clapped, and Ms. Gray smiled at her from the front of the stage."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Flute Solo",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p42",
+      "title": "The Good Mother Lizard",
+      "kind": "article",
+      "picture": "🦕🥚",
+      "sentences": [
+        "Maiasaura was a large plant-eating dinosaur that lived about 76 million years ago.",
+        "Its name means \"good mother lizard,\" and scientists chose it for a reason.",
+        "In 1978, in the state of Montana, they found a nesting ground where many of these dinosaurs had laid their eggs.",
+        "Each nest was a bowl dug into the ground, about seven feet across.",
+        "A mother Maiasaura laid about thirty to forty eggs in it.",
+        "The nests were spaced about one adult's body length apart, so the mothers had room to move between them.",
+        "Inside some nests, scientists found the bones of babies that were too big to be newly hatched.",
+        "Their teeth were already worn down from chewing plants.",
+        "This told the scientists that the young had stayed in the nest for a while after hatching.",
+        "Their leg bones were not yet strong enough for walking far, so the adults probably brought them food.",
+        "Before this discovery, many people thought that dinosaurs did not care for their young.",
+        "Maiasaura helped change that idea."
+      ],
+      "breaks": [
+        3,
+        6,
+        10
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Good Mother Lizard",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p43",
+      "title": "Counting Meteors",
+      "kind": "story",
+      "picture": "🌠🌌",
+      "sentences": [
+        "Every August, Earth passes through a trail of dust left behind by a comet.",
+        "When bits of this dust hit the air high above us, they burn up and make bright streaks of light called meteors.",
+        "People often call them shooting stars, but they are not stars at all.",
+        "This year, Dr. Lee invited Priya and Maya to count meteors with her at the observatory.",
+        "She told them that they would not need a telescope, because meteors move too fast and cover too much of the sky.",
+        "The three of them lay on blankets on the grass and waited for their eyes to get used to the dark.",
+        "After about twenty minutes, Maya saw the first one, and she called out its direction.",
+        "Priya kept count on a clipboard, using a small red flashlight, because red light lets eyes stay used to the dark.",
+        "Dr. Lee checked the time every fifteen minutes so she could write down how many meteors they had seen.",
+        "Most of the meteors were faint, but around midnight a very bright one crossed half the sky and left a glowing trail behind it.",
+        "Maya gasped, and Priya almost dropped her clipboard.",
+        "By one o'clock, the girls had counted fifty-two meteors.",
+        "Dr. Lee sent their count to a group of scientists who collect reports from people all over the world."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "topics": [
+        "space"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Counting Meteors",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p44",
+      "title": "Into the Copper Mine",
+      "kind": "story",
+      "picture": "⛏️🔦",
+      "sentences": [
+        "Mr. Varga guides tours at the Ridgeway Mine Museum, an old copper mine in Lantern Peaks.",
+        "On Saturday, Ben and Sam joined his ten o'clock tour.",
+        "Everyone put on a hard hat with a lamp on the front of it.",
+        "Then he led the group down a long tunnel into the hill.",
+        "About a hundred years ago, miners worked in these tunnels for ten hours a day.",
+        "They broke the rock with hammers and drills, and then they loaded it into small carts.",
+        "Mules pulled the carts along rails to the entrance, where the rock was crushed to get the copper out.",
+        "Mr. Varga stopped beside one of the old carts and let the boys push it a short way along the rails.",
+        "Ben was surprised at how heavy it was, even when it was empty.",
+        "Next, Mr. Varga switched off his lamp and asked everyone to do the same.",
+        "The tunnel became completely dark.",
+        "He explained that the early miners worked by the light of candles, so this was what they saw whenever a candle went out.",
+        "Sam held his hand in front of his face, but he could not see it at all.",
+        "When the lamps came back on, the whole group blinked in the bright light."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Into the Copper Mine",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p45",
+      "title": "A Rover on Mars",
+      "kind": "article",
+      "picture": "🤖🔴",
+      "sentences": [
+        "A Mars rover is a robot that drives across the surface of Mars and studies it.",
+        "No person drives it with a steering wheel.",
+        "Mars is so far from Earth that a radio message can take more than ten minutes to get there.",
+        "Because of this delay, the rover must be able to make some decisions on its own.",
+        "The rover has six wheels, and they help it roll over rocks and sand.",
+        "On its mast, which is a tall pole, there are cameras that work like eyes.",
+        "They take pictures of the ground ahead, and the rover uses them to choose a safe path.",
+        "The rover also has a long robotic arm with tools at the end of it.",
+        "The arm can drill into a rock and collect a little of the powder from inside.",
+        "Some rovers test this powder in a small lab inside their bodies.",
+        "Others seal samples in tubes so that a future mission can bring them back to Earth.",
+        "Scientists on Earth study the pictures and test results that the rover sends home.",
+        "They are looking for clues about whether Mars once had lakes and rivers."
+      ],
+      "breaks": [
+        4,
+        7,
+        11
+      ],
+      "topics": [
+        "space",
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Rover on Mars",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p46",
+      "title": "The Emperor Penguin's Winter",
+      "kind": "article",
+      "picture": "🐧❄️",
+      "sentences": [
+        "Emperor penguins are the largest penguins in the world, and they raise their chicks in one of the coldest places on Earth.",
+        "Early in the Antarctic winter, each female lays a single egg on the ice.",
+        "She cannot keep it warm for long, because she needs to return to the sea to feed.",
+        "So she carefully passes it to her partner, rolling it across the ice onto his feet.",
+        "The male balances the egg on top of his feet and covers it with a warm fold of skin called a brood pouch.",
+        "For about two months, he stands in the cold and dark with the egg tucked against his body.",
+        "During this long, dark period, he does not eat anything at all.",
+        "Thousands of males crowd together in a tight group called a huddle, which protects them from the freezing wind.",
+        "They take turns standing at the colder outer edge, so no single bird stays cold for too long.",
+        "Meanwhile, the females are far away, catching fish and squid in the open ocean.",
+        "When the chick hatches, its mother is often still at sea.",
+        "If she has not returned yet, its father feeds it a milky liquid that he makes in his throat.",
+        "This small meal gives the chick enough food for a few more days.",
+        "When the female returns, she finds her partner by listening for his call among thousands of others.",
+        "Then the two parents exchange places and switch jobs.",
+        "She feeds the chick food from her stomach, and he finally walks to the sea to eat."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "topics": [
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Emperor Penguin's Winter",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p47",
+      "title": "How a Hurricane Grows",
+      "kind": "article",
+      "picture": "🌀🌊",
+      "sentences": [
+        "A hurricane is a huge, spinning storm that forms over warm ocean water.",
+        "It needs water that is at least about 80 degrees Fahrenheit, which is why most hurricanes begin in tropical seas in late summer and early fall.",
+        "The storm starts when the sun heats the sea and warm, wet air rises from the surface.",
+        "As this air climbs, it cools, and the water in it forms tall clouds.",
+        "This process releases heat, which makes the air rise even faster.",
+        "More air rushes in across the water to take its place.",
+        "Because Earth is spinning, the moving air begins to turn in a giant circle.",
+        "At the center of a strong hurricane is a calm, clear area called the eye.",
+        "Its winds are light, and sometimes people can even see blue sky through it.",
+        "Around it, a ring of thick clouds called the eyewall has the fastest winds in the whole storm.",
+        "They can blow faster than 150 miles per hour in the strongest storms.",
+        "A hurricane gets its energy from warm water, so it begins to weaken when it moves over land or cooler seas.",
+        "Weather forecasters use satellites to follow each storm, and they send alerts to towns days before it arrives, so people have time to get ready."
+      ],
+      "breaks": [
+        2,
+        7,
+        11
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "How a Hurricane Grows",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p48",
+      "title": "The Skate Jam",
+      "kind": "story",
+      "picture": "🛹🏆",
+      "sentences": [
+        "Every June, the skate park in Harbor Town holds a skate jam, a friendly contest where skaters take turns showing their best tricks to a panel of judges.",
+        "This year, Leo had been practicing a difficult new trick on the long metal rail for several weeks.",
+        "His plan was to slide down the whole rail on the middle of his board and then land smoothly on the concrete at the bottom.",
+        "On the morning of the jam, Leo waited in line behind an older skater from Gull Point.",
+        "The boy wore a bright orange helmet covered in stickers, and he looked completely relaxed.",
+        "When his turn came, he attempted the same rail trick, but his back wheels caught the end of the rail, and he slid off onto the soft grass.",
+        "He stood up, brushed off his knees and laughed.",
+        "Then he skated over to Leo and gave him some advice.",
+        "He explained that the end of the rail was a little higher than it looked, so Leo should lean back slightly just before he reached it.",
+        "Leo had not noticed this, and he was grateful to learn it before his turn.",
+        "When the announcer called his name, he pushed off hard, jumped onto the rail and slid down the middle of it.",
+        "Near the end, he leaned back, exactly as the other skater had described.",
+        "His wheels cleared the end of the rail, and he landed smoothly on the concrete.",
+        "The crowd cheered, and the skater from Gull Point clapped louder than anyone.",
+        "Leo did not win first place, but the judges gave him a prize for the cleanest trick of the day.",
+        "Afterward, he found the older boy and thanked him."
+      ],
+      "breaks": [
+        3,
+        9,
+        13
+      ],
+      "topics": [
+        "sports"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Skate Jam",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p49",
+      "title": "The Bus up the Valley",
+      "kind": "story",
+      "picture": "🗺️🚆🚌",
+      "sentences": [
+        "For his birthday, Sam asked Grandma Rose to take him to ride the old steam train at Valley Junction, on the mainland.",
+        "She agreed, but only if he planned the whole trip himself.",
+        "Sam spread a map across the kitchen table and traced the route with his finger.",
+        "First, they would take the early ferry from Harbor Town to the mainland.",
+        "Then they would ride two trains: a fast one along the coast, and a slow one up the river valley to Valley Junction.",
+        "On Saturday, everything went smoothly until they reached the station on the mainland.",
+        "A screen on the platform showed that the fast train was delayed by forty minutes.",
+        "If they waited for it, they would miss the slow train, because it left only once every two hours.",
+        "Grandma Rose looked worried, but Sam unfolded his map again and studied it carefully.",
+        "He noticed that a bus also traveled up the river valley, and that it stopped right outside Valley Junction station.",
+        "He asked the woman at the ticket window when it left, and she told him that it would leave in ten minutes from the stop across the street.",
+        "Sam explained this to his grandma, and she smiled.",
+        "She said that it was a smart change, and she was proud that he had stayed calm.",
+        "The bus was slower than the trains would have been, but it had large windows, and the road followed the river the whole way.",
+        "When they arrived, the old steam engine was waiting at the platform, with white steam rising from its chimney.",
+        "Sam told Grandma Rose that it was the best birthday trip he had ever taken."
+      ],
+      "breaks": [
+        5,
+        9,
+        13
+      ],
+      "topics": [
+        "transport",
+        "maps"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Bus up the Valley",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p50",
+      "title": "The Sourdough Starter",
+      "kind": "story",
+      "picture": "🍞🫙",
+      "sentences": [
+        "Grandma Rose has kept the same sourdough starter at her bakery for thirty years.",
+        "A starter is a mix of flour and water that is full of wild yeast, a kind of tiny living thing that makes bread rise.",
+        "When the yeast eats the flour, it gives off a gas, and the gas makes bubbles in the dough.",
+        "In March, she gave Sam a small jar of her starter so that he could bake bread for the school fair.",
+        "Sam asked Ben to help him, because the fair was raising money for the soccer team.",
+        "Every morning, one of the boys had to feed the starter with fresh flour and water.",
+        "On Monday and Wednesday, Sam fed it, and on Tuesday and Thursday, Ben did.",
+        "By Friday, the starter had doubled in size, and its surface was covered in bubbles.",
+        "Ben was impressed, but he wondered why it smelled a little sour.",
+        "Sam called his grandma to ask about this.",
+        "She explained that tiny bacteria in the starter make an acid, and that this acid gives sourdough bread its name and its tangy taste.",
+        "She also told him to keep the jar somewhere warm, because yeast works faster in warm places.",
+        "On Saturday morning, the boys mixed the dough, let it rise for six hours and baked four round loaves in Ben's oven.",
+        "At the fair, they sold every loaf in less than an hour.",
+        "Ben's mom asked them for the recipe, and Sam promised to bring her a jar of starter too."
+      ],
+      "breaks": [
+        4,
+        9,
+        12
+      ],
+      "topics": [
+        "food"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Sourdough Starter",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p51",
+      "title": "The Whale and Its Calf",
+      "kind": "story",
+      "picture": "🐋⛴️",
+      "sentences": [
+        "On a clear morning in July, Captain Ruth Lane was steering the ferry toward Gull Island when she saw a puff of mist rise from the water ahead.",
+        "A moment later, a second, smaller puff rose next to the first one.",
+        "She slowed the engines at once, because boats are supposed to stay well away from whales and move slowly near them.",
+        "Over the speaker, the captain told the passengers that a humpback whale and its calf were swimming off the right side of the ferry.",
+        "Many of them hurried to the rail, and Maya, who was traveling to the island with her sketchbook, found a spot near the front.",
+        "The mother whale was about as long as a school bus, and its dark back curved slowly out of the water each time it came up to breathe.",
+        "The calf swam so close to its mother that their backs almost touched.",
+        "A deckhand explained to Maya that a humpback calf drinks its mother's milk and stays beside its mother for about a year.",
+        "During that time, it learns the long routes that humpback whales travel between their feeding and breeding waters.",
+        "Maya drew the two whales quickly, because they were already moving away from the ferry.",
+        "She added the puffs of mist, the waves and the green hills of the island in the background.",
+        "When the whales were far enough away, the captain sped the ferry up again.",
+        "Later, Maya gave her drawing to Captain Lane, who pinned it beside the ticket window.",
+        "It is still there today."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Whale and Its Calf",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p52",
+      "title": "Wheels in the Sand",
+      "kind": "story",
+      "picture": "🤖🏜️",
+      "sentences": [
+        "Ms. Ortiz set up a challenge for the robotics club: each team's rover had to cross a large tray of sand and bring back a small red ball from the far side.",
+        "Priya and Maya worked as a team, using the rover that Priya had built in the fall.",
+        "On their first try, it drove into the sand and stopped after only a few inches.",
+        "Its thin wheels had sunk deep into the sand, and they spun without moving it forward.",
+        "Maya knelt beside the tray and looked closely at the tracks the wheels had made.",
+        "She remembered a photo of a desert truck with very wide tires, and she described it to Priya.",
+        "Wide tires spread the weight of a vehicle over more sand, so they do not sink as easily.",
+        "Priya liked this idea, but she pointed out that they had no wide wheels in the club's parts box.",
+        "Then Maya had another idea.",
+        "She cut four rings from an old plastic bottle and slid one over each wheel, so that every wheel became twice as wide.",
+        "Priya fixed them in place with tape, and then she set the rover at the edge of the sand again.",
+        "This time it rolled slowly across the tray without sinking.",
+        "Its claw closed around the red ball, and Priya steered it back to the start.",
+        "Ms. Ortiz asked the girls how they had solved the problem.",
+        "Priya said that the bottle rings were her partner's idea, and that this was the reason they had finished.",
+        "Ms. Ortiz wrote their solution on the board so that the other teams could try it too."
+      ],
+      "breaks": [
+        4,
+        8,
+        13
+      ],
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Wheels in the Sand",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p53",
+      "title": "Planting Day",
+      "kind": "story",
+      "picture": "🌱🌲",
+      "sentences": [
+        "Last winter, a powerful storm knocked down a row of old trees along the creek in Story Woods.",
+        "Without their roots to hold it in place, the soil on the bank gradually began to wash into the water.",
+        "This made the creek muddy, and the fish that live there need clear water.",
+        "In April, a park ranger invited the students at Harbor Middle School to help plant new trees along the bank.",
+        "Thirty of them came on a Saturday morning, along with Ms. Ortiz and Mr. Okafor, who brought a box of work gloves.",
+        "The ranger demonstrated how to dig a hole twice as wide as the roots of each young tree.",
+        "He explained that the roots need loose soil around them so they can spread out easily and absorb water.",
+        "Sam and Leo volunteered to work together as a pair.",
+        "Leo dug each hole, and Sam held the young tree straight while the soil went back in around its roots.",
+        "Then they pressed the soil down firmly with their boots and gave every tree a bucket of water from the creek.",
+        "By noon, the two boys had planted twelve trees, more than any other pair of volunteers.",
+        "Before everyone left, the ranger told the group that the new trees would need about ten years to grow tall.",
+        "Their roots, however, would begin to hold the bank together much sooner, probably in only a year or two.",
+        "Mr. Okafor joked that he would ride his bicycle back in ten years to see them.",
+        "The ranger laughed and said that he would be glad to show him around."
+      ],
+      "breaks": [
+        3,
+        7,
+        11
+      ],
+      "topics": [
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Planting Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p54",
+      "title": "The Pawn on the Far Side",
+      "kind": "story",
+      "picture": "♟️⏱️",
+      "sentences": [
+        "In February, the library held a chess tournament for students from schools all over the island.",
+        "Ben had been playing chess since he was six, and Ana had come to cheer for him.",
+        "In the final round, he faced a tall boy from Gull Point who had won every single game that day.",
+        "A chess clock sat beside the board, and it counted down each player's remaining time during his turn.",
+        "The boy from Gull Point moved quickly and confidently, and soon he had captured two of Ben's pieces.",
+        "Ben felt his face get hot, but he remembered what Ana had told him at breakfast.",
+        "She had said that when a game goes badly, he should stop looking at what he has lost and look for what he can still do.",
+        "So he slowed down and carefully studied the whole board, one piece at a time.",
+        "He noticed that one of his pawns was only two squares from the far side.",
+        "In chess, a pawn that reaches the last row can be exchanged for a queen, the most powerful piece in the game.",
+        "His opponent had not noticed it, because he was busy attacking Ben's king.",
+        "Ben pushed the pawn forward twice, and it became a queen.",
+        "Twenty moves later, the game ended in a draw, which means that neither player won.",
+        "The boy from Gull Point shook his hand and said that it was the hardest game he had played all year.",
+        "On the bus home, Ben told Ana that her advice had saved the game.",
+        "She laughed and said that he had done all the difficult thinking himself."
+      ],
+      "breaks": [
+        3,
+        7,
+        12
+      ],
+      "topics": [
+        "games"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Pawn on the Far Side",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p55",
+      "title": "From Bone to Stone",
+      "kind": "article",
+      "picture": "🦴🪨",
+      "sentences": [
+        "When people look at a dinosaur skeleton in a museum, they are often looking at bones that have slowly turned into stone.",
+        "This change takes millions of years, and it happens only when conditions are just right.",
+        "In fact, most dinosaurs that ever lived left no fossils at all.",
+        "A fossil usually begins when an animal dies near a river or a lake.",
+        "If mud or sand covers its body quickly, the bones are protected from wind, rain and hungry animals.",
+        "The soft parts of the body break down, but the hard bones and teeth remain.",
+        "Over time, more layers of mud pile up on top of them, and their weight slowly presses the lower layers into rock.",
+        "Water moving through the rock carries tiny bits of minerals.",
+        "When it seeps into a buried bone, the minerals fill the tiny holes and spaces inside it.",
+        "Little by little, they harden, and the bone becomes a copy made of stone.",
+        "Millions of years later, wind and rain may wear away the rock above the fossil until part of it shows at the surface.",
+        "When paleontologists find one, they dig around it slowly with small tools and soft brushes.",
+        "Before they move a large bone, they wrap it in a hard jacket of plaster, the same material that doctors use for casts."
+      ],
+      "breaks": [
+        3,
+        7,
+        10
+      ],
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "From Bone to Stone",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -616,7 +1914,7 @@
       "passage": "n4-p03",
       "format": "tap",
       "level": 1,
-      "prompt": "Read: \"Every morning, it leaves the dock at 9 AM.\" What is \"it\"?",
+      "prompt": "Read: \"It leaves the dock at 9 AM each morning, but not in summer.\" What is \"It\"?",
       "options": ["the dock", "the deck", "the ferry"],
       "answer": 2,
       "evidence": [0, 1],
@@ -1662,6 +2960,3584 @@
         "they",
         "they-objects",
         "distance"
+      ]
+    },
+    {
+      "id": "n4-i53",
+      "skill": "N4",
+      "passage": "n4-p20",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Read: \"It flew over the grass and into the net.\" What does \"It\" mean?",
+      "options": [
+        "the ball",
+        "the bag",
+        "the field"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        4,
+        5
+      ],
+      "hint": "Read the sentences before. Ask which thing Ana kicked.",
+      "explain": "\"It\" means the ball. Ana kicked the ball, and the ball flew into the net.",
+      "inference": 1,
+      "tags": [
+        "it"
+      ]
+    },
+    {
+      "id": "n4-i54",
+      "skill": "N4",
+      "passage": "n4-p20",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "The word \"her\" is marked. Tap the name that \"her\" means.",
+      "unit": "word",
+      "focus": "her",
+      "accept": [
+        "Ana"
+      ],
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "\"Her\" means something belongs to a girl or a woman. Look back for a name.",
+      "explain": "\"Her\" means Ana. Ana is the only person in the story, so the bag is Ana's bag.",
+      "inference": 1,
+      "tags": [
+        "possessive"
+      ]
+    },
+    {
+      "id": "n4-i55",
+      "skill": "N4",
+      "passage": "n4-p20",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Read: \"Ana put it in the corner of the field.\" What did Ana put in the corner?",
+      "options": [
+        "the net",
+        "the ball",
+        "her bag"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Look at the sentence just before. Find the thing it names.",
+      "explain": "Ana put the ball in the corner. The sentence just before is about the ball.",
+      "inference": 1,
+      "tags": [
+        "it"
+      ]
+    },
+    {
+      "id": "n4-i56",
+      "skill": "N4",
+      "passage": "n4-p21",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Read: \"It was shiny and had a white stripe.\" What does \"It\" mean?",
+      "options": [
+        "the creek",
+        "the pink rock",
+        "the path"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Look at the sentence before. Ask which thing could be shiny and have a stripe.",
+      "explain": "\"It\" means the pink rock. Maya found the rock, and the rock was shiny with a white stripe.",
+      "inference": 1,
+      "tags": [
+        "it"
+      ]
+    },
+    {
+      "id": "n4-i57",
+      "skill": "N4",
+      "passage": "n4-p21",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "The word \"her\" is marked. Tap the name that \"her\" means.",
+      "unit": "word",
+      "focus": "her",
+      "accept": [
+        "Maya"
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "\"Her\" means something belongs to a girl or a woman. Look back for a name.",
+      "explain": "\"Her\" means Maya. Maya took the rock home and put it in her own room.",
+      "inference": 1,
+      "tags": [
+        "possessive"
+      ]
+    },
+    {
+      "id": "n4-i58",
+      "skill": "N4",
+      "passage": "n4-p22",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "The word \"she\" is marked. Tap the name that \"she\" means.",
+      "unit": "word",
+      "focus": "she",
+      "accept": [
+        "Ana"
+      ],
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "\"She\" means a girl or a woman. Look at the sentence before. Find who was holding the kite.",
+      "explain": "\"She\" means Ana. Ana held the kite up high, and she let it go when the wind blew.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i59",
+      "skill": "N4",
+      "passage": "n4-p22",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"It pulled hard on the string.\" What does \"It\" mean?",
+      "options": [
+        "the sky",
+        "the kite",
+        "the hill"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Read the sentence before. Ask which thing was up in the sky on the end of the string.",
+      "explain": "\"It\" means the kite. The kite rose into the sky, and then it pulled on the string.",
+      "inference": 1,
+      "tags": [
+        "it"
+      ]
+    },
+    {
+      "id": "n4-i60",
+      "skill": "N4",
+      "passage": "n4-p22",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"Sam smiled at her and wound up the string.\" Who is \"her\"?",
+      "options": [
+        "Sam",
+        "Ana",
+        "the kite"
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "\"Her\" means a girl or a woman. Find the girl in the story.",
+      "explain": "\"Her\" means Ana. Ana ran to catch the kite, and Sam smiled at her.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i61",
+      "skill": "N4",
+      "passage": "n4-p23",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "The word \"he\" is marked. Tap the name that \"he\" means.",
+      "unit": "word",
+      "focus": "he",
+      "accept": [
+        "Ben"
+      ],
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "\"He\" means a boy or a man. Grandma Rose is a woman. Look back for a boy's name.",
+      "explain": "\"He\" means Ben. Ben cracked the eggs, and then he stirred the batter.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i62",
+      "skill": "N4",
+      "passage": "n4-p23",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"She poured some batter onto a hot pan.\" Who is \"She\"?",
+      "options": [
+        "Ben",
+        "Grandma Rose",
+        "Sam"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        3,
+        5
+      ],
+      "hint": "\"She\" means a girl or a woman. Find the woman in the story.",
+      "explain": "\"She\" means Grandma Rose. She is the only woman in the story, and she was teaching Ben.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i63",
+      "skill": "N4",
+      "passage": "n4-p23",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"Ben flipped it, and it landed back in the pan.\" What does \"it\" mean?",
+      "options": [
+        "the pancake",
+        "the bowl",
+        "the spoon"
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Read the sentence before. Ask which thing Ben could flip in the pan.",
+      "explain": "\"It\" means the pancake. Bubbles came up on the pancake, and then Ben flipped it.",
+      "inference": 1,
+      "tags": [
+        "it"
+      ]
+    },
+    {
+      "id": "n4-i64",
+      "skill": "N4",
+      "passage": "n4-p24",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "The word \"she\" is marked. Tap the name that \"she\" means.",
+      "unit": "word",
+      "focus": "she",
+      "accept": [
+        "Priya"
+      ],
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "\"She\" means a girl or a woman. Look back for a girl's name.",
+      "explain": "\"She\" means Priya. Priya came over to help, and she drew the map.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i65",
+      "skill": "N4",
+      "passage": "n4-p24",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"It went over the bridge and into the dark tunnel.\" What does \"It\" mean?",
+      "options": [
+        "the map",
+        "the train",
+        "the switch"
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Read the sentence before. Ask which thing can move on a track.",
+      "explain": "\"It\" means the train. Priya put the train on the track, and the train went over the bridge.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "it-machine"
+      ]
+    },
+    {
+      "id": "n4-i66",
+      "skill": "N4",
+      "passage": "n4-p24",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"Priya came over to help him build a new track.\" Who is \"him\"?",
+      "options": [
+        "Priya",
+        "Sam",
+        "the train"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "\"Him\" means a boy or a man. Look at the sentence before.",
+      "explain": "\"Him\" means Sam. Sam has the model train, and Priya came to help him.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i67",
+      "skill": "N4",
+      "passage": "n4-p25",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "The word \"her\" is marked. Tap the name that \"her\" means.",
+      "unit": "word",
+      "focus": "her",
+      "accept": [
+        "Maya"
+      ],
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "\"Her\" means something belongs to a girl or a woman. Look at the sentence before for a girl's name.",
+      "explain": "\"Her\" means Maya. Maya wanted to draw the crab, so she sat down with her sketchbook.",
+      "inference": 1,
+      "tags": [
+        "two-characters",
+        "possessive"
+      ]
+    },
+    {
+      "id": "n4-i68",
+      "skill": "N4",
+      "passage": "n4-p25",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"It walked sideways across the sand.\" What does \"It\" mean?",
+      "options": [
+        "the rock",
+        "the crab",
+        "the sketchbook"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "\"It\" can mean an animal. Ask which thing in the story can walk.",
+      "explain": "\"It\" means the crab. Leo was watching the crab, and the crab walked sideways.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "animal"
+      ]
+    },
+    {
+      "id": "n4-i69",
+      "skill": "N4",
+      "passage": "n4-p25",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"She drew the crab under the seaweed, with only its claws showing.\" Who is \"She\"?",
+      "options": [
+        "Leo",
+        "Maya",
+        "the crab"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        8
+      ],
+      "hint": "\"She\" means a girl or a woman. Find the girl who wanted to draw.",
+      "explain": "\"She\" means Maya. Maya is the girl in the story, and she wanted to draw the crab.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i70",
+      "skill": "N4",
+      "passage": "n4-p26",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "The word \"it\" is marked. Tap the word for the thing that \"it\" means.",
+      "unit": "word",
+      "focus": "it",
+      "accept": [
+        "telescope"
+      ],
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "\"It\" means one thing. Read the sentence before. Ask what Leo could look into.",
+      "explain": "\"It\" means the telescope. The telescope was pointed at the Moon, and Leo looked into it.",
+      "inference": 1,
+      "tags": [
+        "it"
+      ]
+    },
+    {
+      "id": "n4-i71",
+      "skill": "N4",
+      "passage": "n4-p26",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"Priya laughed and let him look again.\" Who is \"him\"?",
+      "options": [
+        "Priya",
+        "the Moon",
+        "Leo"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "\"Him\" means a boy or a man. Find the boy in the story.",
+      "explain": "\"Him\" means Leo. Leo made the joke, and Priya let him look again.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i72",
+      "skill": "N4",
+      "passage": "n4-p27",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "The word \"them\" is marked. Tap the word for the things that \"them\" means.",
+      "unit": "word",
+      "focus": "them",
+      "accept": [
+        "chairs"
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "\"Them\" can mean things, not only people. Ask what Ben could put in rows.",
+      "explain": "\"Them\" means the folding chairs. Sam carried in the chairs, and Ben put the chairs in rows.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "they-objects"
+      ]
+    },
+    {
+      "id": "n4-i73",
+      "skill": "N4",
+      "passage": "n4-p27",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"Sam tuned his guitar next to him.\" Who is \"him\"?",
+      "options": [
+        "Sam",
+        "Ben",
+        "Ms. Gray"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Sam is doing the tuning, so \"him\" is someone else. Read the two sentences before.",
+      "explain": "\"Him\" means Ben. Ben was at his keyboard, and Sam tuned his guitar next to Ben.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i74",
+      "skill": "N4",
+      "passage": "n4-p27",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"They were all loud and clear, so Ms. Gray let the boys go home.\" What does \"They\" mean?",
+      "options": [
+        "Sam and Ben",
+        "the three microphones",
+        "the folding chairs"
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "\"They\" can mean things, not only people. Read the sentence before. Ask what the boys were testing.",
+      "explain": "\"They\" means the three microphones. The boys tested the microphones, and the microphones were all loud and clear.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "they-objects"
+      ]
+    },
+    {
+      "id": "n4-i75",
+      "skill": "N4",
+      "passage": "n4-p28",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"Their scores were the same, so Mrs. Hall, the librarian, said that they had both won.\" Who are \"they\"?",
+      "options": [
+        "Ana and Maya",
+        "Mrs. Hall and Ana",
+        "the people at the library"
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "\"They\" means more than one person. Mrs. Hall is the one talking. Read the sentence before to find who counted points.",
+      "explain": "\"They\" means Ana and Maya. The two girls counted their points, and Mrs. Hall said they had both won.",
+      "inference": 1,
+      "tags": [
+        "they"
+      ]
+    },
+    {
+      "id": "n4-i76",
+      "skill": "N4",
+      "passage": "n4-p28",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Each sentence has \"she\" or \"her\". Put it under the girl that the word means.",
+      "bins": [
+        "Ana",
+        "Maya"
+      ],
+      "evidence": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "cards": [
+        {
+          "text": "She got a six and built a bridge to the harbor.",
+          "bin": 1
+        },
+        {
+          "text": "Ana rolled a two, so she could only build a short road.",
+          "bin": 0
+        },
+        {
+          "text": "Then she drew a lucky card that gave her three extra houses.",
+          "bin": 0
+        },
+        {
+          "text": "Maya laughed when she saw it.",
+          "bin": 1
+        }
+      ],
+      "hint": "Find each sentence in the story. If it has no name, read the sentence just before it.",
+      "explain": "Maya rolled first and got a six, and Maya laughed at the card, so those go under Maya. Ana rolled a two, and then she drew the lucky card, so those go under Ana.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i77",
+      "skill": "N4",
+      "passage": "n4-p28",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "The word \"it\" is marked. Tap the word for the thing that \"it\" means.",
+      "unit": "word",
+      "focus": "it",
+      "accept": [
+        "card"
+      ],
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "\"It\" means one thing. Read the sentence before. Ask what Maya could see that made her laugh.",
+      "explain": "\"It\" means the lucky card. Ana drew a lucky card, and Maya laughed when she saw the card.",
+      "inference": 1,
+      "tags": [
+        "it"
+      ]
+    },
+    {
+      "id": "n4-i78",
+      "skill": "N4",
+      "passage": "n4-p29",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"She showed the students a huge skull with three horns.\" Who is \"She\"?",
+      "options": [
+        "Ms. Ortiz",
+        "Dr. Bell",
+        "a student"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Two women are in this story. Read the sentence before. Find who met the class in the dinosaur hall.",
+      "explain": "\"She\" means Dr. Bell. Dr. Bell met the class at the dinosaur hall, and then she showed them the skull.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i79",
+      "skill": "N4",
+      "passage": "n4-p29",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"She explained that they had sharp edges for slicing tough plants.\" What does \"they\" mean?",
+      "options": [
+        "the students",
+        "the Triceratops teeth",
+        "the three horns"
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "\"They\" can mean things, not only people. Read the sentence before. Ask which things could slice plants.",
+      "explain": "\"They\" means the Triceratops teeth. Dr. Bell held up a model of the teeth, and the teeth had sharp edges for slicing plants.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "they-objects"
+      ]
+    },
+    {
+      "id": "n4-i80",
+      "skill": "N4",
+      "passage": "n4-p29",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"They gave their drawings to Ms. Ortiz at the end of the visit.\" Who are \"They\"?",
+      "options": [
+        "the students",
+        "Dr. Bell and Ms. Ortiz",
+        "the scientists at the museum"
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "\"They\" means more than one person. They gave something to Ms. Ortiz, so she is not one of them. Read the sentence before.",
+      "explain": "\"They\" means the students. The students drew the skull in their notebooks, and then they gave their drawings to Ms. Ortiz.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "two-groups"
+      ]
+    },
+    {
+      "id": "n4-i81",
+      "skill": "N4",
+      "passage": "n4-p30",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"She changed the program so the robot would slow down at corners.\" Who is \"She\"?",
+      "options": [
+        "Priya",
+        "Ana",
+        "Ms. Ortiz"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        7,
+        8
+      ],
+      "hint": "Both girls are \"she\". Read the sentence before. Then ask who works on the program.",
+      "explain": "\"She\" means Ana. Priya handed the robot to Ana, and Ana is the one who wrote the program.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i82",
+      "skill": "N4",
+      "passage": "n4-p30",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "The word \"its\" is marked. Tap the word for the thing that \"its\" means.",
+      "unit": "word",
+      "focus": "its",
+      "accept": [
+        "robot"
+      ],
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "\"Its\" means something belongs to an animal or a thing. Ask what has a sensor and could be picked up.",
+      "explain": "\"Its\" means the robot's. Priya picked up the robot and checked the robot's sensor.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "possessive"
+      ]
+    },
+    {
+      "id": "n4-i83",
+      "skill": "N4",
+      "passage": "n4-p30",
+      "format": "build",
+      "level": 3,
+      "prompt": "Rewrite the sentence with names and things. Choose what \"they\" and \"it\" mean.",
+      "frame": "On Monday, {0} tested {1} in the school hall.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "they",
+          "options": [
+            "Priya and Ana",
+            "Ana and Ms. Ortiz",
+            "the wheels"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "other",
+          "label": "it",
+          "options": [
+            "the robot",
+            "the wall",
+            "the corner"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "\"They\" means more than one. Find who built something in the first sentence. Then ask what they would test.",
+      "explain": "On Monday, Priya and Ana tested the robot in the school hall. The first sentence says the two girls built the robot.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "they",
+        "it"
+      ]
+    },
+    {
+      "id": "n4-i84",
+      "skill": "N4",
+      "passage": "n4-p31",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"They had white spots on their brown backs.\" Who are \"They\"?",
+      "options": [
+        "Sam and Leo",
+        "the two fawns",
+        "the trees"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "\"They\" means more than one. Read the sentence before. Ask what could have spots on its back.",
+      "explain": "\"They\" means the two fawns. The sentence before names the two young deer, and they had white spots on their backs.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "animal"
+      ]
+    },
+    {
+      "id": "n4-i85",
+      "skill": "N4",
+      "passage": "n4-p31",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "The word \"him\" is marked. Tap the name that \"him\" means.",
+      "unit": "word",
+      "focus": "him",
+      "accept": [
+        "Sam"
+      ],
+      "evidence": [
+        6
+      ],
+      "hint": "\"Him\" means a boy or a man. Ask who gives the binoculars, and who gets them.",
+      "explain": "\"Him\" means Sam. Sam stood still, and Leo passed the binoculars to Sam.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i86",
+      "skill": "N4",
+      "passage": "n4-p31",
+      "format": "build",
+      "level": 3,
+      "prompt": "Rewrite the sentence. Choose what \"them\" and \"he\" mean.",
+      "frame": "Through {0}, {1} could see every white spot.",
+      "slots": [
+        {
+          "kind": "other",
+          "label": "them",
+          "options": [
+            "the binoculars",
+            "the fawns",
+            "the trees"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "he",
+          "options": [
+            "Leo",
+            "Sam",
+            "the mother deer"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Read the sentence before. Find what was passed, and who got it.",
+      "explain": "Through the binoculars, Sam could see every white spot. In the sentence before, Leo passed the binoculars to Sam.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "same-gender",
+        "they-objects"
+      ]
+    },
+    {
+      "id": "n4-i87",
+      "skill": "N4",
+      "passage": "n4-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"He told Ben that the green mineral was called malachite, and that it has copper in it.\" Who is \"He\"?",
+      "options": [
+        "Ben",
+        "Mr. Varga",
+        "Maya"
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "\"He\" is telling something to Ben. Look back to find who Ben showed the stone to.",
+      "explain": "\"He\" means Mr. Varga. Ben showed the stone to Mr. Varga, and Mr. Varga told Ben the name of the mineral.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i88",
+      "skill": "N4",
+      "passage": "n4-p32",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "The word \"his\" is marked. Tap the name that \"his\" means.",
+      "unit": "word",
+      "focus": "his",
+      "accept": [
+        "Varga",
+        "Mr"
+      ],
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Read the sentence before. Ben showed the stone to someone. Ask who looked at it next.",
+      "explain": "\"His\" means Mr. Varga's. Ben showed the stone to Mr. Varga, and Mr. Varga looked at it through his lens.",
+      "inference": 1,
+      "tags": [
+        "same-gender",
+        "possessive"
+      ]
+    },
+    {
+      "id": "n4-i89",
+      "skill": "N4",
+      "passage": "n4-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"They had found twelve kinds of rocks and minerals.\" Who are \"They\"?",
+      "options": [
+        "the students in the rock club",
+        "Ben and Mr. Varga",
+        "the miners from long ago"
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "\"They\" means more than one person. Read the sentence before. Find who laid out their finds.",
+      "explain": "\"They\" means the students in the rock club. The students laid out their finds on a table, and they had found twelve kinds.",
+      "inference": 1,
+      "tags": [
+        "they"
+      ]
+    },
+    {
+      "id": "n4-i90",
+      "skill": "N4",
+      "passage": "n4-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"Each of them had to practice penalty kicks for ten minutes a day.\" Who are \"them\"?",
+      "options": [
+        "the players on the team",
+        "Ana and Ben",
+        "the Gull Point team"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "\"Them\" means more than one person. Read the sentence before. Find the group that got a job from the coach.",
+      "explain": "\"Them\" means the players on the Harbor Middle School team. Coach Novak gave the players a job, and each of them had to practice.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "two-groups"
+      ]
+    },
+    {
+      "id": "n4-i91",
+      "skill": "N4",
+      "passage": "n4-p33",
+      "format": "build",
+      "level": 3,
+      "prompt": "Rewrite the sentence. Choose who or what \"Her\", \"he\" and \"them\" mean.",
+      "frame": "{0} first kicks went too high, and {1} caught most of {2}.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "Her",
+          "options": [
+            "Ana's",
+            "the goalkeeper's",
+            "Coach Novak's"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "he",
+          "options": [
+            "Coach Novak",
+            "Ben",
+            "Ana"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "other",
+          "label": "them",
+          "options": [
+            "the kicks",
+            "the players",
+            "the corners"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Read the sentence before. Find who was kicking and who was in the goal.",
+      "explain": "Ana's first kicks went too high, and Ben caught most of the kicks. The sentence before says Ana practiced with Ben in the goal.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "two-characters",
+        "possessive",
+        "they-objects"
+      ]
+    },
+    {
+      "id": "n4-i92",
+      "skill": "N4",
+      "passage": "n4-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"The ball rolled under her hands and into the net.\" Whose hands were they?",
+      "options": [
+        "Ana's",
+        "the Gull Point goalkeeper's",
+        "Coach Novak's"
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        9,
+        10
+      ],
+      "hint": "Two girls are in this part of the story. Ana kicked the ball. Ask who was trying to stop it with her hands.",
+      "explain": "They were the Gull Point goalkeeper's hands. Ana kicked the ball, and it rolled under the goalkeeper's hands into the net.",
+      "inference": 2,
+      "tags": [
+        "same-gender",
+        "possessive"
+      ]
+    },
+    {
+      "id": "n4-i93",
+      "skill": "N4",
+      "passage": "n4-p34",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "The word \"it\" is marked. Tap the word for the thing that \"it\" means.",
+      "unit": "word",
+      "focus": "it",
+      "accept": [
+        "rack"
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "\"It\" means one thing. Read the sentence before. Ask what you can lock a bike to.",
+      "explain": "\"It\" means the rack. The deckhand showed them a rack for bikes, and Mr. Okafor locked the bike to the rack.",
+      "inference": 1,
+      "tags": [
+        "it"
+      ]
+    },
+    {
+      "id": "n4-i94",
+      "skill": "N4",
+      "passage": "n4-p34",
+      "format": "build",
+      "level": 3,
+      "prompt": "Rewrite the sentence. Choose who or what \"his\", \"he\" and \"them\" mean.",
+      "frame": "Mr. Okafor lent Leo {0} phone, and {1} took a photo of {2}.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "his",
+          "options": [
+            "Mr. Okafor's",
+            "Leo's",
+            "the captain's"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "he",
+          "options": [
+            "Mr. Okafor",
+            "Leo",
+            "the captain"
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "kind": "other",
+          "label": "them",
+          "options": [
+            "the seals",
+            "the cars",
+            "the tickets"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "You lend something that is yours. Ask who had the phone after that, and what the captain pointed to.",
+      "explain": "Mr. Okafor lent Leo Mr. Okafor's phone, and Leo took a photo of the seals. The captain pointed to the seals in the sentence before.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "same-gender",
+        "possessive",
+        "they-objects"
+      ]
+    },
+    {
+      "id": "n4-i95",
+      "skill": "N4",
+      "passage": "n4-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"They wheeled the bike onto the lower deck, next to the cars.\" Who are \"They\"?",
+      "options": [
+        "Mr. Okafor and Leo",
+        "Leo and Captain Lane",
+        "the people in the cars"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "\"They\" means more than one person. Read the two sentences before. Find who took the bike on the ferry.",
+      "explain": "\"They\" means Mr. Okafor and Leo. Leo went with Mr. Okafor on the ferry, and they wheeled the bike on board.",
+      "inference": 1,
+      "tags": [
+        "they"
+      ]
+    },
+    {
+      "id": "n4-i96",
+      "skill": "N4",
+      "passage": "n4-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"She had forty scones ready to bake, but no way to bake them.\" Who is \"She\"?",
+      "options": [
+        "Grandma Rose",
+        "Mrs. Lin",
+        "a customer at the café"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Two women are named. Ask whose oven had stopped working.",
+      "explain": "\"She\" means Mrs. Lin. The oven at Mrs. Lin's café stopped working, so she had no way to bake her scones.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i97",
+      "skill": "N4",
+      "passage": "n4-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"Grandma Rose said that she had never tried that.\" What does \"that\" mean?",
+      "options": [
+        "adding orange peel to scones",
+        "drinking tea with a friend",
+        "baking forty scones at once"
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "\"That\" can point back to an idea. Read the sentence before. Find the idea Mrs. Lin talked about.",
+      "explain": "\"That\" means adding orange peel to scones. Mrs. Lin said she adds orange peel, and Grandma Rose had never tried it.",
+      "inference": 1,
+      "tags": [
+        "this-that"
+      ]
+    },
+    {
+      "id": "n4-i98",
+      "skill": "N4",
+      "passage": "n4-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Read: \"Mrs. Lin gave her six of them to say thank you.\" Who is \"her\"?",
+      "options": [
+        "Mrs. Lin",
+        "Grandma Rose",
+        "a customer at the café"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        5,
+        10
+      ],
+      "hint": "Mrs. Lin is the one giving, so \"her\" is someone else. Ask who helped Mrs. Lin.",
+      "explain": "\"Her\" means Grandma Rose. Grandma Rose baked the scones in her oven, so Mrs. Lin gave her six to say thank you.",
+      "inference": 1,
+      "tags": [
+        "same-gender",
+        "distance"
+      ]
+    },
+    {
+      "id": "n4-i99",
+      "skill": "N4",
+      "passage": "n4-p36",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"Then she lays her eggs in it, often about one hundred of them.\" What does \"it\" mean?",
+      "options": [
+        "the deep hole",
+        "the high-tide line",
+        "the sandy beach",
+        "her back flipper"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "\"It\" means one thing. Read the sentence before. Ask what a turtle could lay its eggs in.",
+      "explain": "\"It\" means the deep hole. The turtle digs a deep hole with her back flippers, and then she lays her eggs in the hole. It is at the end of the first paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "it",
+        "it-objects",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i100",
+      "skill": "N4",
+      "passage": "n4-p36",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "The word \"Its\" is marked. Tap the word for the thing that \"Its\" means.",
+      "unit": "word",
+      "focus": "Its",
+      "accept": [
+        "sand"
+      ],
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "\"Its\" means something belongs to a thing. Read the sentence before. Ask what has a temperature that keeps the eggs warm.",
+      "explain": "\"Its\" means the sand's. The sand keeps the eggs warm, and the temperature of the sand affects whether the babies become males or females. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "possessive",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i101",
+      "skill": "N4",
+      "passage": "n4-p36",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"Then they hurry toward the brightest part of the sky, which is normally over the water.\" Who are \"they\"?",
+      "options": [
+        "the hatchlings",
+        "the mother turtles",
+        "the eggs",
+        "the waves"
+      ],
+      "answer": 0,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "\"They\" means more than one. Read the sentence before. Ask who has just come up out of the sand.",
+      "explain": "\"They\" means the hatchlings. The hatchlings dig up through the sand, and then they hurry toward the water. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "animal-young",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i102",
+      "skill": "N4",
+      "passage": "n4-p36",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Each sentence has \"she\" or \"they\". Put it under the turtle or turtles that the word means.",
+      "bins": [
+        "the mother turtle",
+        "the hatchlings"
+      ],
+      "cards": [
+        {
+          "text": "She digs a deep hole with her back flippers.",
+          "bin": 0
+        },
+        {
+          "text": "They break out of their shells.",
+          "bin": 1
+        },
+        {
+          "text": "She covers the nest with sand to hide it.",
+          "bin": 0
+        },
+        {
+          "text": "They dig up through the sand together, usually at night.",
+          "bin": 1
+        },
+        {
+          "text": "She will never meet her young.",
+          "bin": 0
+        },
+        {
+          "text": "They swim away from the beach for many hours.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        5,
+        7,
+        10,
+        12
+      ],
+      "hint": "\"She\" means one female. \"They\" means more than one. Find each sentence in the article and ask who is doing the action.",
+      "explain": "The mother turtle digs the hole, covers the nest and never meets her young. The hatchlings break out of their shells, dig up through the sand and swim away from the beach.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "they",
+        "animal-young",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i103",
+      "skill": "N4",
+      "passage": "n4-p37",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"Hot gases from the fire travel through metal tubes that run through the middle of it.\" What does \"it\" mean?",
+      "options": [
+        "the boiler",
+        "the firebox",
+        "the fire",
+        "the chimney"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "\"It\" means one thing. Read the sentence before. Ask which part is a long tank that tubes could run through.",
+      "explain": "\"It\" means the boiler. The sentence before names the boiler, a long tank, and the tubes run through the middle of the boiler. It is in the second paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "it",
+        "it-machine",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i104",
+      "skill": "N4",
+      "passage": "n4-p37",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The third paragraph starts: \"Pipes carry this steam to two cylinders near the front wheels.\" Which steam is \"this steam\"?",
+      "options": [
+        "the steam made in the boiler",
+        "the used steam that leaves through the chimney",
+        "the hot gases in the metal tubes",
+        "the water in the tank"
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "\"This\" points back to something already named. Read the end of the paragraph before.",
+      "explain": "\"This steam\" means the steam made in the boiler. The second paragraph ends by telling how the boiler turns water into steam, and the pipes carry that steam to the cylinders.",
+      "inference": 1,
+      "tags": [
+        "this-that",
+        "across-paragraphs",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i105",
+      "skill": "N4",
+      "passage": "n4-p37",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "The word \"its\" is marked. Tap the word for the part that \"its\" means.",
+      "unit": "word",
+      "focus": "its",
+      "accept": [
+        "piston"
+      ],
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "\"Its\" means something belongs to a thing. Ask which part moves back and forth and is joined to a wheel.",
+      "explain": "\"Its\" means the piston's. Each piston is joined to a wheel by a rod, so the piston's movement turns the wheel. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "possessive",
+        "it-machine",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i106",
+      "skill": "N4",
+      "passage": "n4-p37",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"When the driver opens it, more steam flows to the cylinders, and the train speeds up.\" What does \"it\" mean?",
+      "options": [
+        "the regulator",
+        "the firebox",
+        "the chimney",
+        "the boiler"
+      ],
+      "answer": 0,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Read the sentence before. Find the part that the driver uses to control the speed.",
+      "explain": "\"It\" means the regulator. The sentence before says the driver controls the speed with a handle called the regulator. It is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "it-machine",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i107",
+      "skill": "N4",
+      "passage": "n4-p38",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "The word \"him\" is marked. Tap the word for the person that \"him\" means.",
+      "unit": "word",
+      "focus": "him",
+      "accept": [
+        "referee"
+      ],
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "Coach Novak is the one who agreed. Read the two sentences before. Ask who said something that Coach Novak could agree with.",
+      "explain": "\"Him\" means the referee. The referee stopped the game and told the teams to go inside, and Coach Novak agreed with the referee. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i108",
+      "skill": "N4",
+      "passage": "n4-p38",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"She told her players that thunder means lightning is close by, so the safest place is inside a building.\" Who is \"She\"?",
+      "options": [
+        "the referee",
+        "Coach Novak",
+        "Ana",
+        "a player from the other team"
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Ana and Coach Novak are both in this story. Read the sentence before. Look at the words \"her players\", and ask who has players of her own.",
+      "explain": "\"She\" means Coach Novak. The sentence before is about Coach Novak, and she is the one with players on the team. It is at the end of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender",
+        "three-characters"
+      ]
+    },
+    {
+      "id": "n4-i109",
+      "skill": "N4",
+      "passage": "n4-p38",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"At first, it showed a red and yellow storm right over Harbor Town.\" What does \"it\" mean?",
+      "options": [
+        "the weather radar on Ben's phone",
+        "the tall cloud over the hills",
+        "the sky in the west",
+        "the roof of the gym"
+      ],
+      "answer": 0,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "In the first paragraph, \"it\" meant the cloud. Read the sentence just before this one. Ask which thing can show a picture of a storm.",
+      "explain": "\"It\" means the weather radar on Ben's phone. Ben checked the radar, and the radar showed the storm. It is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "two-its"
+      ]
+    },
+    {
+      "id": "n4-i110",
+      "skill": "N4",
+      "passage": "n4-p38",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read the last sentence: \"Then he let the teams go back outside, and they finished the game on the wet grass.\" Who is \"he\"?",
+      "options": [
+        "the referee",
+        "Coach Novak",
+        "Ben",
+        "a player from the other team"
+      ],
+      "answer": 0,
+      "evidence": [
+        13,
+        14
+      ],
+      "hint": "Read the sentence before. Ask who was waiting for the thunder to stop.",
+      "explain": "\"He\" means the referee. The referee waited thirty minutes without thunder, and then he let the teams go outside. It is the last sentence of the story.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i111",
+      "skill": "N4",
+      "passage": "n4-p39",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "The word \"its\" is marked. Tap the word for the thing that \"its\" means.",
+      "unit": "word",
+      "focus": "its",
+      "accept": [
+        "map"
+      ],
+      "evidence": [
+        8
+      ],
+      "hint": "\"Its\" means something belongs to a thing. Two things in this sentence have something that points north. Ask which one Sam turned.",
+      "explain": "\"Its\" means the map's. Sam turned the map until the map's north arrow pointed the same way as the compass needle. It is at the start of the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "possessive"
+      ]
+    },
+    {
+      "id": "n4-i112",
+      "skill": "N4",
+      "passage": "n4-p39",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"Then he saw his mistake.\" Who is \"he\"?",
+      "options": [
+        "Sam",
+        "Leo",
+        "a leader from the hiking club",
+        "a hiker by the stream"
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Both boys are \"he\". Read the sentence before. Find who was turning the map.",
+      "explain": "\"He\" means Sam. Sam turned the map in the sentence before, and then he saw his mistake. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i113",
+      "skill": "N4",
+      "passage": "n4-p39",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Each sentence has \"he\" or \"his\". Put it under the boy that the word means.",
+      "bins": [
+        "Sam",
+        "Leo"
+      ],
+      "cards": [
+        {
+          "text": "He held the map.",
+          "bin": 0
+        },
+        {
+          "text": "He can read a map faster than anyone else in his class.",
+          "bin": 0
+        },
+        {
+          "text": "He kept the compass flat in his hand.",
+          "bin": 1
+        },
+        {
+          "text": "When they reached the pine tree, he spotted the orange flag.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        12,
+        13
+      ],
+      "hint": "Find each sentence in the story. Ask which boy held the map, which boy held the compass, and who was leading at the end.",
+      "explain": "Sam held the map and reads maps fast. Leo kept the compass flat in his hand, and Leo led the way to the pine tree, so he spotted the flag.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "same-gender",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n4-i114",
+      "skill": "N4",
+      "passage": "n4-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The last paragraph starts: \"Leo thought about this for a minute, and then he agreed.\" What does \"this\" mean?",
+      "options": [
+        "Ben's point that the judges would never see the best part if nobody could finish",
+        "Leo's idea that hard levels are more fun",
+        "Ana falling into the moat three times",
+        "the rules of the library contest"
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "\"This\" points back to an idea. Read the end of the paragraph before. Ask what Leo could agree with.",
+      "explain": "\"This\" means Ben's point that the judges would never see the best part if nobody could finish. Ben says it at the end of the second paragraph, and then Leo agreed.",
+      "inference": 1,
+      "tags": [
+        "this-that",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n4-i115",
+      "skill": "N4",
+      "passage": "n4-p40",
+      "format": "build",
+      "level": 4,
+      "prompt": "Rewrite the sentence with names and things. Choose what \"they\" and \"it\" mean.",
+      "frame": "After two weeks, {0} asked Ana to test {1}.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "they",
+          "options": [
+            "Ben and Leo",
+            "the judges",
+            "Ana and Ben",
+            "the game club"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "other",
+          "label": "it",
+          "options": [
+            "their castle level",
+            "the moat",
+            "the contest",
+            "the library"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "Read the first paragraph. Find who built something, and what they built.",
+      "explain": "After two weeks, Ben and Leo asked Ana to test their castle level. The first paragraph says the two boys built the level together.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "they",
+        "it",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n4-i116",
+      "skill": "N4",
+      "passage": "n4-p40",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"He slowed the platform down a little and added a second, easier path up the cliff.\" Who is \"He\"?",
+      "options": [
+        "Ben",
+        "Leo",
+        "one of the judges",
+        "another player in the game club"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        9,
+        10
+      ],
+      "hint": "Both boys are \"he\". Read the sentence before. Also ask which boy built the moving platforms.",
+      "explain": "\"He\" means Leo. Leo agreed in the sentence before, and Leo is the one who built the platforms. It is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i117",
+      "skill": "N4",
+      "passage": "n4-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"She said that the notes were correct, but that the solo sounded rushed.\" Who is \"She\"?",
+      "options": [
+        "Maya",
+        "Ms. Gray",
+        "someone in the audience",
+        "another student in the band"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Two people in this story are \"she\". Read the sentence before. Ask who was listening to the solo.",
+      "explain": "\"She\" means Ms. Gray. Ms. Gray listened to Maya play, and then she said the solo sounded rushed. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i118",
+      "skill": "N4",
+      "passage": "n4-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"Maya tried this, and she was surprised by the difference.\" What does \"this\" mean?",
+      "options": [
+        "taking a slow, deep breath before the first note",
+        "playing the solo faster",
+        "practicing alone in the music room",
+        "playing the solo from start to finish for Ms. Gray"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "\"This\" points back to an idea. Read the sentence before. Find what Ms. Gray suggested.",
+      "explain": "\"This\" means taking a slow, deep breath before the first note. Ms. Gray suggested it in the sentence before, and Maya tried it. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "this-that"
+      ]
+    },
+    {
+      "id": "n4-i119",
+      "skill": "N4",
+      "passage": "n4-p41",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Each sentence has \"she\". Put it under the person that \"she\" means.",
+      "bins": [
+        "Maya",
+        "Ms. Gray"
+      ],
+      "cards": [
+        {
+          "text": "She had never played alone on a stage.",
+          "bin": 0
+        },
+        {
+          "text": "She practiced the solo in the music room.",
+          "bin": 0
+        },
+        {
+          "text": "She suggested a slow, deep breath before the first note.",
+          "bin": 1
+        },
+        {
+          "text": "She was surprised by the difference.",
+          "bin": 0
+        },
+        {
+          "text": "She smiled from the front of the stage.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        5,
+        6,
+        11
+      ],
+      "hint": "Find each sentence in the story. Ask who plays the flute solo and who teaches the band.",
+      "explain": "Maya had never played alone, practiced the solo and was surprised by the difference. Ms. Gray suggested the deep breath and smiled from the front of the stage.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i120",
+      "skill": "N4",
+      "passage": "n4-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"Its name means 'good mother lizard,' and scientists chose it for a reason.\" What does \"it\" mean?",
+      "options": [
+        "the name",
+        "the dinosaur",
+        "the reason",
+        "the nesting ground"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "This sentence has \"Its\" and \"it\", and they mean different things. Ask what scientists could choose.",
+      "explain": "\"It\" means the name. Scientists chose the name \"good mother lizard\" for a reason. It is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "two-its",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i121",
+      "skill": "N4",
+      "passage": "n4-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"This told the scientists that the young had stayed in the nest for a while after hatching.\" What does \"This\" mean?",
+      "options": [
+        "the babies' teeth were already worn down from chewing plants",
+        "the nests were spaced one body length apart",
+        "the dinosaur's name means 'good mother lizard'",
+        "each nest was about seven feet across"
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "\"This\" points back to a fact. Read the sentence just before. Ask which fact shows that the babies had been eating for a while.",
+      "explain": "\"This\" means the fact that the babies' teeth were already worn down from chewing plants. It is the sentence just before, in the third paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "this-that",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i122",
+      "skill": "N4",
+      "passage": "n4-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"Their leg bones were not yet strong enough for walking far, so the adults probably brought them food.\" Who are \"them\"?",
+      "options": [
+        "the young Maiasaura in the nests",
+        "the adult Maiasaura",
+        "the scientists",
+        "the eggs"
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        9
+      ],
+      "hint": "\"Them\" gets food from the adults, so \"them\" is not the adults. Ask who could not walk far yet.",
+      "explain": "\"Them\" means the young Maiasaura in the nests. Their legs were not strong enough to walk far, so the adults brought them food. It is at the end of the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "animal-young",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i123",
+      "skill": "N4",
+      "passage": "n4-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read the last sentence: \"Maiasaura helped change that idea.\" What idea is \"that idea\"?",
+      "options": [
+        "that dinosaurs did not care for their young",
+        "that Maiasaura ate plants",
+        "that dinosaur nests were dug into the ground",
+        "that dinosaurs lived in Montana"
+      ],
+      "answer": 0,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "\"That\" points back to an idea. Read the sentence before. Find what many people thought.",
+      "explain": "\"That idea\" means the idea that dinosaurs did not care for their young. The sentence before says many people thought this, and Maiasaura showed that some dinosaurs did care for their young.",
+      "inference": 1,
+      "tags": [
+        "this-that",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i124",
+      "skill": "N4",
+      "passage": "n4-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"When bits of this dust hit the air high above us, they burn up and make bright streaks of light called meteors.\" What does \"they\" mean?",
+      "options": [
+        "the bits of dust",
+        "the streaks of light",
+        "the stars",
+        "the people watching"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Ask what hits the air and burns up. Find it earlier in the same sentence.",
+      "explain": "\"They\" means the bits of dust. The bits of dust hit the air, and then they burn up and make streaks of light. It is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "they-objects"
+      ]
+    },
+    {
+      "id": "n4-i125",
+      "skill": "N4",
+      "passage": "n4-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"She told them that they would not need a telescope, because meteors move too fast and cover too much of the sky.\" Who is \"She\"?",
+      "options": [
+        "Dr. Lee",
+        "Priya",
+        "Maya",
+        "a scientist from another country"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Three people in this story are \"she\". Read the sentence before. Ask who invited the others and would tell them what to bring.",
+      "explain": "\"She\" means Dr. Lee. Dr. Lee invited Priya and Maya in the sentence before, and she told them they would not need a telescope. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender",
+        "three-characters"
+      ]
+    },
+    {
+      "id": "n4-i126",
+      "skill": "N4",
+      "passage": "n4-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"After about twenty minutes, Maya saw the first one, and she called out its direction.\" Whose direction did Maya call out?",
+      "options": [
+        "the first meteor's",
+        "the comet's",
+        "the observatory's",
+        "Dr. Lee's"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "\"Its\" means something belongs to a thing. Ask what \"the first one\" means. They were waiting to count something.",
+      "explain": "\"Its\" means the first meteor's. Maya saw the first meteor, and she called out which way the meteor went. It is at the end of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "possessive"
+      ]
+    },
+    {
+      "id": "n4-i127",
+      "skill": "N4",
+      "passage": "n4-p43",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Each sentence has \"she\" or \"her\". Put it under the person that the word means.",
+      "bins": [
+        "Dr. Lee",
+        "Priya",
+        "Maya"
+      ],
+      "cards": [
+        {
+          "text": "Dr. Lee invited Priya and Maya to count meteors with her.",
+          "bin": 0
+        },
+        {
+          "text": "She told them that they would not need a telescope.",
+          "bin": 0
+        },
+        {
+          "text": "She called out its direction.",
+          "bin": 2
+        },
+        {
+          "text": "She kept count on a clipboard.",
+          "bin": 1
+        },
+        {
+          "text": "She could write down how many meteors they had seen.",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "hint": "Find each sentence in the story. If the sentence has a name, ask whether the pronoun means that person or someone else.",
+      "explain": "Dr. Lee invited the girls to count with her, told them they would not need a telescope and wrote down how many meteors they saw. Priya kept count on the clipboard. Maya saw the first meteor and called out its direction.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "same-gender",
+        "three-characters"
+      ]
+    },
+    {
+      "id": "n4-i128",
+      "skill": "N4",
+      "passage": "n4-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"Then he led the group down a long tunnel into the hill.\" Who is \"he\"?",
+      "options": [
+        "Mr. Varga",
+        "Ben",
+        "Sam",
+        "one of the old miners"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1,
+        3
+      ],
+      "hint": "Three people in this paragraph are \"he\". Read the first two sentences. Ask what job each person has.",
+      "explain": "\"He\" means Mr. Varga. Mr. Varga guides the tours, and Ben and Sam joined his tour, so he led the group. It is at the end of the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender",
+        "three-characters",
+        "distance"
+      ]
+    },
+    {
+      "id": "n4-i129",
+      "skill": "N4",
+      "passage": "n4-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"They broke the rock with hammers and drills, and then they loaded it into small carts.\" Who are \"They\"?",
+      "options": [
+        "the miners from about a hundred years ago",
+        "the people on the ten o'clock tour",
+        "Ben and Sam",
+        "the mules"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "\"They\" means more than one. The tour group is also more than one. Read the sentence before to find who broke rock long ago.",
+      "explain": "\"They\" means the miners from about a hundred years ago. The sentence before says the miners worked in these tunnels for ten hours a day. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "two-groups"
+      ]
+    },
+    {
+      "id": "n4-i130",
+      "skill": "N4",
+      "passage": "n4-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"Ben was surprised at how heavy it was, even when it was empty.\" What does \"it\" mean?",
+      "options": [
+        "the old cart",
+        "the rock",
+        "the hard hat",
+        "the tunnel"
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "\"It\" means one thing. Read the sentence before. Ask which thing the boys pushed and could be empty.",
+      "explain": "\"It\" means the old cart. Mr. Varga let the boys push the cart, and Ben was surprised that the cart was heavy even when it was empty. It is at the end of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "it-objects"
+      ]
+    },
+    {
+      "id": "n4-i131",
+      "skill": "N4",
+      "passage": "n4-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"He explained that the early miners worked by the light of candles, so this was what they saw whenever a candle went out.\" What does \"this\" mean?",
+      "options": [
+        "the complete darkness in the tunnel",
+        "the light of a candle",
+        "the lamp on a hard hat",
+        "the copper in the rock"
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "\"This\" points back to something the group had just seen. Read the sentence before.",
+      "explain": "\"This\" means the complete darkness in the tunnel. The tunnel became completely dark, and that is what the miners saw when a candle went out. It is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "this-that"
+      ]
+    },
+    {
+      "id": "n4-i132",
+      "skill": "N4",
+      "passage": "n4-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"No person drives it with a steering wheel.\" What does \"it\" mean?",
+      "options": [
+        "the rover",
+        "Mars",
+        "the surface of Mars",
+        "a radio message"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "In the first sentence, \"it\" means Mars. Ask which thing could be driven.",
+      "explain": "\"It\" means the rover. A rover is a robot that drives across Mars, and no person drives the rover with a steering wheel. It is in the first paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "it",
+        "two-its",
+        "it-machine",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i133",
+      "skill": "N4",
+      "passage": "n4-p45",
+      "format": "build",
+      "level": 4,
+      "prompt": "Rewrite the sentence. Choose what \"They\" and \"them\" mean.",
+      "frame": "{0} take pictures of the ground ahead, and the rover uses {1} to choose a safe path.",
+      "slots": [
+        {
+          "kind": "other",
+          "label": "They",
+          "options": [
+            "the cameras",
+            "the wheels",
+            "the scientists",
+            "the tools"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "other",
+          "label": "them",
+          "options": [
+            "the pictures",
+            "the cameras",
+            "the rocks",
+            "the wheels"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Read the sentence before. Ask which things can take pictures. Then ask what the rover could use to choose a path.",
+      "explain": "The cameras take pictures of the ground ahead, and the rover uses the pictures to choose a safe path. The sentence before names the cameras on the mast.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "they",
+        "they-objects",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i134",
+      "skill": "N4",
+      "passage": "n4-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read: \"Because of this delay, the rover must be able to make some decisions on its own.\" What is \"this delay\"?",
+      "options": [
+        "the minutes a radio message takes to get to Mars",
+        "the time the rover takes to roll over rocks",
+        "the time the arm takes to drill into a rock",
+        "the years before a future mission comes"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "\"This\" points back to something already named. Read the sentence before. Ask what takes a long time.",
+      "explain": "\"This delay\" means the minutes a radio message takes to get to Mars. The sentence before says a message can take more than ten minutes. It is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "this-that",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i135",
+      "skill": "N4",
+      "passage": "n4-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Read the last sentence: \"They are looking for clues about whether Mars once had lakes and rivers.\" Who are \"They\"?",
+      "options": [
+        "the scientists on Earth",
+        "the test results",
+        "the cameras",
+        "the samples in tubes"
+      ],
+      "answer": 0,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "\"They\" can mean people or things. Read the sentence before. Ask who studies the pictures and could look for clues.",
+      "explain": "\"They\" means the scientists on Earth. The sentence before says scientists study the pictures and test results, and they look for clues about lakes and rivers.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i136",
+      "skill": "N4",
+      "passage": "n4-p46",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"They take turns standing at the colder outer edge, so no single bird stays cold for too long.\" Who are \"They\"?",
+      "options": [
+        "the males in the huddle",
+        "the females at sea",
+        "the chicks",
+        "the fish and squid"
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "\"They\" means more than one. Read the sentence before. Find the group that is standing together on the ice.",
+      "explain": "\"They\" means the males in the huddle. Thousands of males crowd together, and they take turns at the cold outer edge. It is at the end of the second paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "they",
+        "two-groups",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i137",
+      "skill": "N4",
+      "passage": "n4-p46",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"If she has not returned yet, its father feeds it a milky liquid that he makes in his throat.\" What does \"it\" mean?",
+      "options": [
+        "the chick",
+        "the egg",
+        "the huddle",
+        "the brood pouch"
+      ],
+      "answer": 0,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Read the sentence before. Ask what has just hatched and needs to eat.",
+      "explain": "\"It\" means the chick. The sentence before says the chick hatches while its mother is still at sea, so the father feeds the chick. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "animal-young",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i138",
+      "skill": "N4",
+      "passage": "n4-p46",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"This small meal gives the chick enough food for a few more days.\" What is \"this small meal\"?",
+      "options": [
+        "the milky liquid from the father's throat",
+        "the fish and squid that the mother catches",
+        "the food from the mother's stomach",
+        "the egg"
+      ],
+      "answer": 0,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "\"This\" points back to something just named. Read the sentence before.",
+      "explain": "\"This small meal\" means the milky liquid that the father makes in his throat. It is named in the sentence before, in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "this-that",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i139",
+      "skill": "N4",
+      "passage": "n4-p46",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Each sentence has \"she\" or \"he\". Put it under the parent that the word means.",
+      "bins": [
+        "the mother penguin",
+        "the father penguin"
+      ],
+      "cards": [
+        {
+          "text": "She cannot keep the egg warm for long.",
+          "bin": 0
+        },
+        {
+          "text": "He covers the egg with a warm fold of skin.",
+          "bin": 1
+        },
+        {
+          "text": "He does not eat at all for about two months.",
+          "bin": 1
+        },
+        {
+          "text": "She finds her partner by listening for his call.",
+          "bin": 0
+        },
+        {
+          "text": "She feeds the chick food from her stomach.",
+          "bin": 0
+        },
+        {
+          "text": "He finally walks to the sea to eat.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        4,
+        6,
+        13,
+        15
+      ],
+      "hint": "\"She\" means a female and \"he\" means a male. Find each sentence in the article and ask which parent does it.",
+      "explain": "The mother cannot keep the egg warm, finds her partner by his call and feeds the chick from her stomach. The father covers the egg, does not eat for about two months and finally walks to the sea to eat.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "two-characters",
+        "animal-young",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i140",
+      "skill": "N4",
+      "passage": "n4-p47",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"As this air climbs, it cools, and the water in it forms tall clouds.\" What does \"it\" mean?",
+      "options": [
+        "the warm, wet air rising from the sea",
+        "the sun",
+        "the surface of the sea",
+        "the hurricane"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "\"This air\" points back to the sentence before. Ask what is climbing and cooling.",
+      "explain": "\"It\" means the warm, wet air rising from the sea. The sentence before says the air rises, and as it climbs, it cools. It is in the second paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "it",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i141",
+      "skill": "N4",
+      "passage": "n4-p47",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"More air rushes in across the water to take its place.\" Whose place is \"its place\"?",
+      "options": [
+        "the place of the warm air that rose",
+        "the place of the sun",
+        "the place of the ocean water",
+        "the place of the eye"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        4,
+        5
+      ],
+      "hint": "Something moved away and left a space. Read the sentences before. Ask what was rising up from the sea.",
+      "explain": "\"Its place\" means the place of the warm air that rose. The warm air rises faster and faster, so more air rushes in to fill the space it left. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "possessive",
+        "distance",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i142",
+      "skill": "N4",
+      "passage": "n4-p47",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"This process releases heat, which makes the air rise even faster.\" What does \"This process\" mean?",
+      "options": [
+        "the water in the rising air forming clouds",
+        "the sun heating the sea",
+        "Earth spinning",
+        "more air rushing in across the water"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "\"This\" points back to the sentence just before. Find what is happening in that sentence.",
+      "explain": "\"This process\" means the water in the rising air forming clouds. The sentence just before tells about it, in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "this-that",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i143",
+      "skill": "N4",
+      "passage": "n4-p47",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"They can blow faster than 150 miles per hour in the strongest storms.\" What does \"They\" mean?",
+      "options": [
+        "the winds in the eyewall",
+        "the light winds in the eye",
+        "the weather forecasters",
+        "the thick clouds"
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9,
+        10
+      ],
+      "hint": "\"They\" can mean things. Ask what can blow. Then read the sentence before to find which ones are the fastest.",
+      "explain": "\"They\" means the winds in the eyewall. The sentence before says the eyewall has the fastest winds in the whole storm. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "they-objects",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i144",
+      "skill": "N4",
+      "passage": "n4-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Then he skated over to Leo and gave him some advice.\" Who is \"he\"?",
+      "options": [
+        "the skater from Gull Point",
+        "Leo",
+        "the announcer",
+        "one of the judges"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "hint": "This \"he\" skated over to Leo, so \"he\" is someone else. Read the sentences before to find who had just tried the trick.",
+      "explain": "\"He\" means the older skater from Gull Point. He slid off the rail, stood up and laughed, and then he skated over to give Leo advice. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i145",
+      "skill": "N4",
+      "passage": "n4-p48",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The third paragraph starts: \"Leo had not noticed this, and he was grateful to learn it before his turn.\" What does \"this\" mean?",
+      "options": [
+        "the end of the rail was a little higher than it looked",
+        "the older skater wore a bright orange helmet",
+        "the older skater's back wheels caught the rail",
+        "the skate jam was a friendly contest"
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "\"This\" points back to an idea. Read the last sentence of the paragraph before. Ask what Leo learned before his turn.",
+      "explain": "\"This\" means the fact that the end of the rail was a little higher than it looked. The older skater explains it in the last sentence of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "this-that",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n4-i146",
+      "skill": "N4",
+      "passage": "n4-p48",
+      "format": "build",
+      "level": 5,
+      "prompt": "Rewrite the last two sentences with names. Choose who each \"him\" and \"he\" means.",
+      "frame": "Leo did not win first place, but the judges gave {0} a prize. Afterward, {1} found the older boy and thanked {2}.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "him",
+          "options": [
+            "Leo",
+            "the skater from Gull Point",
+            "the announcer",
+            "one of the judges"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "he",
+          "options": [
+            "Leo",
+            "the skater from Gull Point",
+            "the announcer",
+            "one of the judges"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "him",
+          "options": [
+            "Leo",
+            "the skater from Gull Point",
+            "the announcer",
+            "one of the judges"
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ],
+      "evidence": [
+        14,
+        15
+      ],
+      "hint": "Ask who won a prize, who said thank you, and who was being thanked. You thank someone other than yourself.",
+      "explain": "The judges gave Leo a prize. Afterward, Leo found the older boy and thanked the skater from Gull Point. It is in the last paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "same-gender",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i147",
+      "skill": "N4",
+      "passage": "n4-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"If they waited for it, they would miss the slow train, because it left only once every two hours.\" This sentence uses \"it\" two times. What does the second \"it\" mean?",
+      "options": [
+        "the slow train",
+        "the fast train",
+        "the early ferry",
+        "the bus"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        6,
+        7
+      ],
+      "hint": "The first \"it\" is the train they would wait for. Ask which train they would miss.",
+      "explain": "The second \"it\" means the slow train. They would miss the slow train, because the slow train left only once every two hours. The first \"it\" means the fast train. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "two-its"
+      ]
+    },
+    {
+      "id": "n4-i148",
+      "skill": "N4",
+      "passage": "n4-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"He asked the woman at the ticket window when it left, and she told him that it would leave in ten minutes from the stop across the street.\" Who is \"she\"?",
+      "options": [
+        "the woman at the ticket window",
+        "Grandma Rose",
+        "a woman on the bus",
+        "a guide at Valley Junction"
+      ],
+      "answer": 0,
+      "evidence": [
+        10
+      ],
+      "hint": "Two women are in this part of the story. Look earlier in the same sentence. Ask who Sam asked about the bus.",
+      "explain": "\"She\" means the woman at the ticket window. Sam asked her when the bus left, and she told him. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender"
+      ]
+    },
+    {
+      "id": "n4-i149",
+      "skill": "N4",
+      "passage": "n4-p49",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Sam explained this to his grandma, and she smiled.\" What does \"this\" mean?",
+      "options": [
+        "the plan to take the bus that leaves in ten minutes",
+        "the news that the fast train was forty minutes late",
+        "the fact that the slow train left once every two hours",
+        "the route he traced on the map at home"
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "\"This\" points back to an idea. Read the two sentences before. Ask what Sam had just found out.",
+      "explain": "\"This\" means the plan to take the bus that leaves in ten minutes. Sam found the bus on the map and asked when it left, and then he explained the plan to his grandma. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "this-that"
+      ]
+    },
+    {
+      "id": "n4-i150",
+      "skill": "N4",
+      "passage": "n4-p49",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Each sentence has \"it\". Put it under the thing that \"it\" means.",
+      "bins": [
+        "the map",
+        "a train",
+        "the bus"
+      ],
+      "cards": [
+        {
+          "text": "Sam unfolded his map again and studied it carefully.",
+          "bin": 0
+        },
+        {
+          "text": "If they waited for it, they would miss the slow train.",
+          "bin": 1
+        },
+        {
+          "text": "He noticed that it stopped right outside Valley Junction station.",
+          "bin": 2
+        },
+        {
+          "text": "He asked the woman at the ticket window when it left.",
+          "bin": 2
+        },
+        {
+          "text": "The bus was slower than the trains, but it had large windows.",
+          "bin": 2
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        13
+      ],
+      "hint": "Find each sentence in the story. Ask which thing could be studied, which thing they were waiting for, and which thing stops at Valley Junction.",
+      "explain": "Sam studied the map. They would wait for the fast train. The bus stopped outside Valley Junction station, left from the stop across the street and had large windows.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "it",
+        "it-objects"
+      ]
+    },
+    {
+      "id": "n4-i151",
+      "skill": "N4",
+      "passage": "n4-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"When the yeast eats the flour, it gives off a gas, and the gas makes bubbles in the dough.\" What does \"it\" mean?",
+      "options": [
+        "the yeast",
+        "the flour",
+        "the dough",
+        "the gas"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Ask what is eating and then giving off gas. Find it earlier in the same sentence.",
+      "explain": "\"It\" means the yeast. The yeast eats the flour, and then the yeast gives off a gas. It is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "it-objects"
+      ]
+    },
+    {
+      "id": "n4-i152",
+      "skill": "N4",
+      "passage": "n4-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The third paragraph starts: \"Sam called his grandma to ask about this.\" What does \"this\" mean?",
+      "options": [
+        "why the starter smelled a little sour",
+        "how to feed the starter every morning",
+        "when the school fair would start",
+        "how many loaves to bake"
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "\"This\" points back to a question. Read the last sentence of the paragraph before.",
+      "explain": "\"This\" means why the starter smelled a little sour. Ben wondered about it at the end of the second paragraph, and Sam called his grandma to ask.",
+      "inference": 1,
+      "tags": [
+        "this-that",
+        "across-paragraphs"
+      ]
+    },
+    {
+      "id": "n4-i153",
+      "skill": "N4",
+      "passage": "n4-p50",
+      "format": "build",
+      "level": 5,
+      "prompt": "Rewrite the sentence with names. Choose who \"she\", \"her\" and \"he\" mean.",
+      "frame": "In March, {0} gave Sam a small jar of {1} starter so that {2} could bake bread for the school fair.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "she",
+          "options": [
+            "Grandma Rose",
+            "Ben's mom",
+            "a customer",
+            "Sam's teacher"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "her",
+          "options": [
+            "Grandma Rose's",
+            "Ben's mom's",
+            "a customer's",
+            "Sam's teacher's"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "he",
+          "options": [
+            "Sam",
+            "Ben",
+            "Ben's dad",
+            "a customer"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Read the first sentence of the story. Find whose bakery has the starter. Then ask who got the jar.",
+      "explain": "In March, Grandma Rose gave Sam a small jar of Grandma Rose's starter so that Sam could bake bread for the school fair. The first sentence says the starter is at her bakery.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "two-characters",
+        "possessive"
+      ]
+    },
+    {
+      "id": "n4-i154",
+      "skill": "N4",
+      "passage": "n4-p50",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Ben's mom asked them for the recipe, and Sam promised to bring her a jar of starter too.\" Who is \"her\"?",
+      "options": [
+        "Ben's mom",
+        "Grandma Rose",
+        "a customer at the fair",
+        "a teacher at the fair"
+      ],
+      "answer": 0,
+      "evidence": [
+        14
+      ],
+      "hint": "Two women are in this story. Look earlier in the same sentence. Ask who wanted the recipe.",
+      "explain": "\"Her\" means Ben's mom. She asked for the recipe, so Sam promised to bring her a jar of starter. It is the last sentence.",
+      "inference": 1,
+      "tags": [
+        "same-gender",
+        "distance"
+      ]
+    },
+    {
+      "id": "n4-i155",
+      "skill": "N4",
+      "passage": "n4-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Many of them hurried to the rail, and Maya, who was traveling to the island with her sketchbook, found a spot near the front.\" Who are \"them\"?",
+      "options": [
+        "the passengers on the ferry",
+        "the whales",
+        "the deckhands",
+        "the people on Gull Island"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "\"Them\" means more than one. Read the sentence before. Ask who heard the captain on the speaker.",
+      "explain": "\"Them\" means the passengers. The captain told the passengers about the whales, and many of them hurried to the rail. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "two-groups"
+      ]
+    },
+    {
+      "id": "n4-i156",
+      "skill": "N4",
+      "passage": "n4-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"During that time, it learns the long routes that humpback whales travel between their feeding and breeding waters.\" What does \"it\" mean?",
+      "options": [
+        "the humpback calf",
+        "the mother whale",
+        "the ferry",
+        "the deckhand"
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Read the sentence before. Ask who stays with its mother for about a year and has things to learn.",
+      "explain": "\"It\" means the humpback calf. The sentence before says the calf stays beside its mother for about a year, and during that time it learns the routes. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "animal-young"
+      ]
+    },
+    {
+      "id": "n4-i157",
+      "skill": "N4",
+      "passage": "n4-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"She added the puffs of mist, the waves and the green hills of the island in the background.\" Who is \"She\"?",
+      "options": [
+        "Maya",
+        "Captain Lane",
+        "the mother whale",
+        "a passenger at the rail"
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "Two people in this story are \"she\". Read the sentence before. Ask who was drawing.",
+      "explain": "\"She\" means Maya. Maya drew the whales in the sentence before, and then she added the mist, the waves and the hills. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender",
+        "distance"
+      ]
+    },
+    {
+      "id": "n4-i158",
+      "skill": "N4",
+      "passage": "n4-p51",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read the last sentence: \"It is still there today.\" What does \"It\" mean?",
+      "options": [
+        "Maya's drawing of the whales",
+        "the humpback whale",
+        "the ticket window",
+        "the ferry"
+      ],
+      "answer": 0,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Read the sentence before. Ask what was put in a place. \"There\" is that place.",
+      "explain": "\"It\" means Maya's drawing. Captain Lane pinned the drawing beside the ticket window, and the drawing is still there today.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "it-objects"
+      ]
+    },
+    {
+      "id": "n4-i159",
+      "skill": "N4",
+      "passage": "n4-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Its thin wheels had sunk deep into the sand, and they spun without moving it forward.\" What does \"they\" mean?",
+      "options": [
+        "the rover's thin wheels",
+        "Priya and Maya",
+        "the grains of sand",
+        "the tracks in the sand"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Ask what can spin. Then look earlier in the same sentence.",
+      "explain": "\"They\" means the rover's thin wheels. The wheels sank into the sand, and they spun without moving the rover. It is at the end of the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "they-objects"
+      ]
+    },
+    {
+      "id": "n4-i160",
+      "skill": "N4",
+      "passage": "n4-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Priya liked this idea, but she pointed out that they had no wide wheels in the club's parts box.\" What does \"this idea\" mean?",
+      "options": [
+        "using wide wheels so the rover would not sink",
+        "cutting rings from a plastic bottle",
+        "driving the rover faster across the sand",
+        "asking Ms. Ortiz for new wheels"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        7
+      ],
+      "hint": "\"This\" points back to an idea that was already named. Read the two sentences before.",
+      "explain": "\"This idea\" means using wide wheels so the rover would not sink. Maya described the truck with wide tires, and the next sentence explains why wide tires work. The bottle rings come later, in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "this-that"
+      ]
+    },
+    {
+      "id": "n4-i161",
+      "skill": "N4",
+      "passage": "n4-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Priya fixed them in place with tape, and then she set the rover at the edge of the sand again.\" What does \"them\" mean?",
+      "options": [
+        "the four plastic rings",
+        "the rover's wheels",
+        "the parts in the club's box",
+        "the red balls"
+      ],
+      "answer": 0,
+      "evidence": [
+        9,
+        10
+      ],
+      "hint": "\"Them\" means more than one thing. Read the sentence before. Ask what Maya had just made that needed to stay in place.",
+      "explain": "\"Them\" means the four plastic rings. Maya slid a ring over each wheel, and Priya taped the rings in place. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "they-objects"
+      ]
+    },
+    {
+      "id": "n4-i162",
+      "skill": "N4",
+      "passage": "n4-p52",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Each sentence has \"she\" or \"her\". Put it under the person that the word means.",
+      "bins": [
+        "Priya",
+        "Maya",
+        "Ms. Ortiz"
+      ],
+      "cards": [
+        {
+          "text": "She remembered a photo of a desert truck with very wide tires.",
+          "bin": 1
+        },
+        {
+          "text": "She pointed out that they had no wide wheels in the parts box.",
+          "bin": 0
+        },
+        {
+          "text": "She cut four rings from an old plastic bottle.",
+          "bin": 1
+        },
+        {
+          "text": "She set the rover at the edge of the sand again.",
+          "bin": 0
+        },
+        {
+          "text": "Priya said that the bottle rings were her partner's idea.",
+          "bin": 0
+        },
+        {
+          "text": "She wrote their solution on the board.",
+          "bin": 2
+        }
+      ],
+      "evidence": [
+        5,
+        7,
+        9,
+        10,
+        14,
+        15
+      ],
+      "hint": "Find each sentence in the story. If the sentence has a name, ask whether the pronoun means that person or someone else.",
+      "explain": "Maya remembered the truck photo and cut the bottle rings. Priya pointed out there were no wide wheels, set the rover down again and said the rings were her partner's idea. Ms. Ortiz wrote the solution on the board.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "same-gender",
+        "three-characters"
+      ]
+    },
+    {
+      "id": "n4-i163",
+      "skill": "N4",
+      "passage": "n4-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"This made the creek muddy, and the fish that live there need clear water.\" What does \"This\" mean?",
+      "options": [
+        "the soil on the bank washing into the water",
+        "the roots holding the soil in place",
+        "the fish swimming in the creek",
+        "the students planting new trees"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "\"This\" points back to the sentence just before. Ask what could make water muddy.",
+      "explain": "\"This\" means the soil on the bank washing into the water. Soil in the water makes the creek muddy. It is in the first paragraph.",
+      "inference": 1,
+      "tags": [
+        "this-that"
+      ]
+    },
+    {
+      "id": "n4-i164",
+      "skill": "N4",
+      "passage": "n4-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Thirty of them came on a Saturday morning, along with Ms. Ortiz and Mr. Okafor, who brought a box of work gloves.\" Who are \"them\"?",
+      "options": [
+        "the students at Harbor Middle School",
+        "the park rangers",
+        "the teachers at the school",
+        "the young trees"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "\"Them\" means more than one. Read the sentence before. Ask who was invited to come and help.",
+      "explain": "\"Them\" means the students at Harbor Middle School. The ranger invited the students to help, and thirty of them came. It is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "they"
+      ]
+    },
+    {
+      "id": "n4-i165",
+      "skill": "N4",
+      "passage": "n4-p53",
+      "format": "build",
+      "level": 5,
+      "prompt": "Rewrite the last sentence with names. Choose who \"he\" and \"him\" mean.",
+      "frame": "The ranger laughed and said that {0} would be glad to show {1} around.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "he",
+          "options": [
+            "the ranger",
+            "Mr. Okafor",
+            "Sam",
+            "Leo"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "him",
+          "options": [
+            "Mr. Okafor",
+            "the ranger",
+            "Sam",
+            "Leo"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        13,
+        14
+      ],
+      "hint": "Read the sentence before. Ask who wants to come back in ten years, and who works in the woods.",
+      "explain": "The ranger laughed and said that the ranger would be glad to show Mr. Okafor around. Mr. Okafor said he would come back in the sentence before, and the ranger works in the woods.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "same-gender",
+        "three-characters"
+      ]
+    },
+    {
+      "id": "n4-i166",
+      "skill": "N4",
+      "passage": "n4-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Their roots, however, would begin to hold the bank together much sooner, probably in only a year or two.\" What does \"Their\" mean?",
+      "options": [
+        "the new trees'",
+        "the old trees'",
+        "the students'",
+        "the fish's"
+      ],
+      "answer": 0,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "In the first paragraph, \"their roots\" meant other trees. Read the sentence just before this one.",
+      "explain": "\"Their\" means the new trees'. The sentence before is about the new trees, and their roots will soon hold the bank together. It is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "possessive",
+        "two-groups"
+      ]
+    },
+    {
+      "id": "n4-i167",
+      "skill": "N4",
+      "passage": "n4-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"The boy from Gull Point shook his hand and said that it was the hardest game he had played all year.\" Whose hand did he shake?",
+      "options": [
+        "Ben's",
+        "the boy from Gull Point's",
+        "Ana's",
+        "a player at the next table's"
+      ],
+      "answer": 0,
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "You shake someone else's hand. Ask who the boy from Gull Point had just played.",
+      "explain": "He shook Ben's hand. The boy from Gull Point had just played Ben, so \"his hand\" means Ben's hand. It is in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "same-gender",
+        "possessive"
+      ]
+    },
+    {
+      "id": "n4-i168",
+      "skill": "N4",
+      "passage": "n4-p54",
+      "format": "build",
+      "level": 5,
+      "prompt": "Rewrite the sentence. Choose who or what \"His\", \"it\" and \"he\" mean.",
+      "frame": "{0} opponent had not noticed {1}, because {2} was busy attacking Ben's king.",
+      "slots": [
+        {
+          "kind": "who",
+          "label": "His",
+          "options": [
+            "Ben's",
+            "the Gull Point boy's",
+            "Ana's",
+            "a library helper's"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "other",
+          "label": "it",
+          "options": [
+            "Ben's pawn near the far side",
+            "the chess clock",
+            "Ben's king",
+            "the queen"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "he",
+          "options": [
+            "the boy from Gull Point",
+            "Ben",
+            "a player at the next table",
+            "a library helper"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        8,
+        10
+      ],
+      "hint": "Find what Ben noticed, two sentences before. Then ask who Ben was playing against.",
+      "explain": "Ben's opponent had not noticed Ben's pawn near the far side, because the boy from Gull Point was busy attacking Ben's king. It is in the third paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "same-gender",
+        "possessive",
+        "distance"
+      ]
+    },
+    {
+      "id": "n4-i169",
+      "skill": "N4",
+      "passage": "n4-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"On the bus home, Ben told Ana that her advice had saved the game.\" What was her advice?",
+      "options": [
+        "to stop looking at what he had lost and look for what he could still do",
+        "to move quickly and confidently",
+        "to push the pawn forward twice",
+        "to watch the chess clock closely"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6,
+        14
+      ],
+      "hint": "Find who \"her\" means. Then look back in the second paragraph for what that person told Ben at breakfast.",
+      "explain": "Ana's advice was to stop looking at what he had lost and look for what he could still do. Ana told Ben this at breakfast, at the end of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "possessive",
+        "across-paragraphs",
+        "distance"
+      ]
+    },
+    {
+      "id": "n4-i170",
+      "skill": "N4",
+      "passage": "n4-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"This change takes millions of years, and it happens only when conditions are just right.\" What is \"This change\"?",
+      "options": [
+        "bones slowly turning into stone",
+        "people visiting a museum",
+        "an animal dying near a river",
+        "wind and rain wearing away rock"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "\"This\" points back to the sentence before. Find something that changes from one thing into another.",
+      "explain": "\"This change\" means bones slowly turning into stone. The first sentence tells about it, in the first paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "this-that",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i171",
+      "skill": "N4",
+      "passage": "n4-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"When it seeps into a buried bone, the minerals fill the tiny holes and spaces inside it.\" This sentence uses \"it\" two times. What does the first \"it\" mean?",
+      "options": [
+        "the water moving through the rock",
+        "the buried bone",
+        "the mud",
+        "the minerals"
+      ],
+      "answer": 0,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "The second \"it\" is the thing with holes inside. Read the sentence before. Ask what can move and seep into a bone.",
+      "explain": "The first \"it\" means the water moving through the rock. The water seeps into the bone, and the minerals fill the holes inside the bone. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "two-its",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i172",
+      "skill": "N4",
+      "passage": "n4-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Little by little, they harden, and the bone becomes a copy made of stone.\" What does \"they\" mean?",
+      "options": [
+        "the minerals inside the bone",
+        "the layers of mud",
+        "the soft parts of the body",
+        "the paleontologists"
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "\"They\" means more than one thing. Read the sentence before. Ask what filled the holes in the bone.",
+      "explain": "\"They\" means the minerals. The minerals fill the holes in the bone, and then they harden into stone. It is at the end of the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "they-objects",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i173",
+      "skill": "N4",
+      "passage": "n4-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Read: \"Over time, more layers of mud pile up on top of them, and their weight slowly presses the lower layers into rock.\" Whose weight presses the lower layers into rock?",
+      "options": [
+        "the new layers of mud",
+        "the bones and teeth",
+        "the soft parts of the body",
+        "the dinosaurs"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "This sentence has \"them\" and \"their\", and they mean different things. \"Them\" is what is buried. Ask what is piling up on top.",
+      "explain": "\"Their weight\" means the weight of the new layers of mud. The layers pile up on top of the bones, and their weight presses the lower layers into rock. \"Them\" means the bones and teeth.",
+      "inference": 1,
+      "tags": [
+        "they",
+        "possessive",
+        "two-groups",
+        "article"
       ]
     }
   ],

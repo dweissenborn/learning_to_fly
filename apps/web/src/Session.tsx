@@ -141,8 +141,8 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
     </header>
 
     <main id="main">
-      {boostMsg && <div className="feedback good appear boost" role="status"><span aria-hidden>🚀</span><span>{boostMsg}</span></div>}
-      {idle && (current || step === 'watch') && <div className="guide-row nudge appear" role="status">
+      {boostMsg && <div className="feedback good appear boost toast" role="status"><span aria-hidden>🚀</span><span>{boostMsg}</span></div>}
+      {idle && (current || step === 'watch') && <div className="guide-row nudge appear toast" role="status">
         <Guide id={guide} mood="think" size={48} />
         <div className="bubble">{step === 'watch'
           ? <>Already know this one? Tap <b>Got it, skip</b>.</>

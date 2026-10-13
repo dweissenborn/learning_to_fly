@@ -129,7 +129,7 @@
           { "k": "Student name", "v": "Priya Shah" },
           { "k": "Grade", "v": "6" },
           { "k": "Today's date" },
-          { "k": "Club day (circle one): Tuesday or Thursday" },
+          { "k": "Club day: Wednesday, 3:15 PM to 4:45 PM" },
           { "k": "Parent or guardian signature" }
         ]
       },
@@ -286,7 +286,7 @@
         "To enter the race, each team must hand in an entry form to Ms. Ortiz by Friday, March 14.",
         "A team needs three or four members, and every member needs a safety agreement signed by a parent.",
         "Priya Shah's team has already finished its rover, which uses two motors and a light sensor.",
-        "Teams that are still building can use the club workshop on Tuesdays and Thursdays from 3:15 PM to 5:00 PM.",
+        "Teams that are still building can also use the club workshop on Mondays from 3:15 PM to 5:00 PM.",
         "Please remember the workshop rules.",
         "Wear safety glasses whenever anyone at your table is cutting, drilling or soldering.",
         "Charge batteries on the metal tray by the window, and never inside a backpack.",
@@ -747,6 +747,1672 @@
       "socialLoad": 1,
       "credit": {
         "title": "The Soccer Team Chat",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p24",
+      "title": "Dad's Note About Pixel",
+      "kind": "message",
+      "sentences": [
+        "Sam finds a note on the fridge after school."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "note",
+        "from": "Dad",
+        "to": "Sam",
+        "rows": [
+          "Hi Sam! I am at work until 6:00 PM.",
+          "Please feed Pixel at 5:00 PM.",
+          "Give him one scoop of dog food.",
+          "Then take him for a walk."
+        ]
+      },
+      "picture": "📝🐶",
+      "topics": [
+        "animals",
+        "home"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dad's Note About Pixel",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p25",
+      "title": "No Practice Today",
+      "kind": "message",
+      "sentences": [
+        "Ben gets a text from his soccer coach at lunch."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Coach Novak",
+        "to": "Harbor Hawks",
+        "time": "12:15 PM",
+        "rows": [
+          "Hi team. It is raining hard.",
+          "There is no practice today.",
+          "Our next practice is on Friday at 5:00 PM.",
+          "See you then!"
+        ]
+      },
+      "picture": "⚽🌧️📱",
+      "topics": [
+        "sports",
+        "weather"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "No Practice Today",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p26",
+      "title": "A Note on the Bakery Door",
+      "kind": "notice",
+      "sentences": [
+        "Sam walks to Grandma Rose's bakery after school.",
+        "He sees a note on the door."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Rose's Bakery",
+        "icon": "🥐",
+        "rows": [
+          "I went to get more flour.",
+          "I will be back at 3:30 PM.",
+          "Fresh bread will be ready at 4:00 PM.",
+          "Thank you! Rose"
+        ]
+      },
+      "picture": "🥐🚪🕒",
+      "topics": [
+        "food"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Note on the Bakery Door",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p27",
+      "title": "Bike to School Day",
+      "kind": "notice",
+      "sentences": [
+        "Sam sees this notice at school.",
+        "He wants to ride with the group."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Bike to School Day",
+        "icon": "🚲",
+        "rows": [
+          "Ride to school with friends on Wednesday, April 23!",
+          "Meet at Okafor's Bike Shop at 7:45 AM.",
+          "Mr. Okafor will ride with the group to school.",
+          "Everyone must wear a helmet.",
+          "Lock your bike on the racks by the gym.",
+          "If it rains on Wednesday, the ride moves to Friday, April 25."
+        ]
+      },
+      "picture": "🚲🏫⛑️",
+      "topics": [
+        "transport",
+        "school"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bike to School Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p28",
+      "title": "Dinosaur Day at the Library",
+      "kind": "notice",
+      "sentences": [
+        "Ana and Ben see a notice at the library.",
+        "Ben wants to go."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Dinosaur Day at the Library",
+        "icon": "🦖",
+        "rows": [
+          "Meet Dr. Bell, a scientist who studies fossils!",
+          "Saturday, March 8, from 11:00 AM to 12:00 PM.",
+          "Come to the Story Room on the second floor.",
+          "Dr. Bell will bring a model of a T. rex tooth.",
+          "Some T. rex teeth were as long as a banana!",
+          "There are 30 seats. Sign up at the front desk to get one."
+        ]
+      },
+      "picture": "🦖📚🦷",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dinosaur Day at the Library",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p29",
+      "title": "Rain Changes the Walk Home",
+      "kind": "message",
+      "sentences": [
+        "Maya gets a text from her dad at lunch."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Dad",
+        "to": "Maya",
+        "time": "12:05 PM",
+        "rows": [
+          "Big rain is coming this afternoon.",
+          "You will not walk home with Leo today.",
+          "I will pick you up in the car instead.",
+          "Wait for me at the front door at 3:15 PM.",
+          "Your rain boots are in the car."
+        ]
+      },
+      "picture": "🌧️📱🚗",
+      "topics": [
+        "weather"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rain Changes the Walk Home",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p30",
+      "title": "The Guitar Lesson Moves",
+      "kind": "message",
+      "sentences": [
+        "Sam finds a sticky note on his guitar case."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "note",
+        "from": "Mom",
+        "to": "Sam",
+        "rows": [
+          "Sam, your guitar lesson moves this week.",
+          "It is on Wednesday, not Tuesday.",
+          "The time stays the same, 4:30 PM.",
+          "This week the lesson is in Room 2 at the library, not at your teacher's house.",
+          "Bring your music book and your guitar picks."
+        ]
+      },
+      "picture": "🎸📝",
+      "topics": [
+        "music"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Guitar Lesson Moves",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p31",
+      "title": "Moon Night Invitation",
+      "kind": "notice",
+      "sentences": [
+        "Priya gives Sam an invitation at school."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "You Are Invited to Moon Night!",
+        "icon": "🌙",
+        "rows": [
+          "Come to Moon Night at Priya's house, 14 Gull Street.",
+          "Friday, October 3, from 7:00 PM to 8:30 PM.",
+          "My dad will set up his telescope in our yard.",
+          "We will look at the craters on the Moon.",
+          "Bring a warm jacket. It gets cold at night.",
+          "Please tell me by Wednesday if you can come."
+        ]
+      },
+      "picture": "🌙🔭💌",
+      "topics": [
+        "space"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Moon Night Invitation",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p32",
+      "title": "The Rover Test Moves",
+      "kind": "message",
+      "sentences": [
+        "Priya's robot club uses a group chat.",
+        "Her team's rover is ready for its first test."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "Robot Club",
+        "time": "Monday, 4:05 PM",
+        "rows": [
+          "Ms. Ortiz: Rover test day is Wednesday at 3:30 PM in the gym.",
+          "Ms. Ortiz: Each team gets 10 minutes to drive its rover on the test track.",
+          "Priya: Our rover is ready! Can our team go first?",
+          "Ms. Ortiz: Yes, your team is first.",
+          "Ms. Ortiz: Update: the gym is being used for a basketball game on Wednesday.",
+          "Ms. Ortiz: The test moves to the long hall outside Room 12. Same day and same time.",
+          "Ben: Is the floor in the hall smooth enough for rovers?",
+          "Ms. Ortiz: Yes. Please bring a fully charged battery, because there are no plugs in the hall."
+        ]
+      },
+      "picture": "🤖💬🔋",
+      "topics": [
+        "robots",
+        "school"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Rover Test Moves",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p33",
+      "title": "Team Picture Day",
+      "kind": "message",
+      "sentences": [
+        "Coach Novak sends an email to the families of the Harbor Hawks soccer team."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Coach Novak",
+        "to": "Harbor Hawks families",
+        "subject": "Team picture day",
+        "time": "Sunday, 6:00 PM",
+        "rows": [
+          "Hello Hawks families,",
+          "Team picture day is on Saturday, September 13, at Pier Field.",
+          "Players should come at 9:00 AM. Pictures start at 9:15 AM.",
+          "Wear your blue team shirt and your blue socks.",
+          "Please bring clean cleats. Muddy cleats look dark in pictures.",
+          "A team picture costs $10. A picture of just your child costs $6.",
+          "Write your order on the yellow form, and give it to me with cash by Thursday.",
+          "Thank you! Coach Novak"
+        ]
+      },
+      "picture": "⚽📸📧",
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Team Picture Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p34",
+      "title": "Lunch News",
+      "kind": "notice",
+      "sentences": [
+        "Ana reads the lunch notice on the cafeteria door."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Middle School Lunch News",
+        "icon": "🍽️",
+        "rows": [
+          "This week, Pizza Day moves from Friday to Thursday.",
+          "On Friday, the kitchen will be closed while workers put in a new oven.",
+          "Students need to bring a packed lunch from home on Friday.",
+          "Taco Day stays on Tuesday, as usual.",
+          "New this month: a salad bar with carrots, peas and corn.",
+          "A school lunch still costs $3. Milk costs $0.50."
+        ]
+      },
+      "picture": "🍕📋🥕",
+      "topics": [
+        "food",
+        "school"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Lunch News",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p35",
+      "title": "The Map Club Sign-Up",
+      "kind": "form",
+      "sentences": [
+        "Sam wants to join a new club.",
+        "He reads the form and fills in his part."
+      ],
+      "visual": {
+        "type": "form",
+        "title": "Story Woods Map Club Sign-Up",
+        "rows": [
+          {
+            "k": "What we do",
+            "v": "We use a map and a compass to find our way from flag to flag in Story Woods. This sport is called orienteering."
+          },
+          {
+            "k": "When",
+            "v": "Saturdays, 9:00 AM to 11:00 AM, starting October 4"
+          },
+          {
+            "k": "Meet at",
+            "v": "The trail sign by the old mill"
+          },
+          {
+            "k": "Student name",
+            "v": "Sam Rivera"
+          },
+          {
+            "k": "Age",
+            "v": "12"
+          },
+          {
+            "k": "Do you have your own compass? Circle yes or no. If no, the club will lend you one."
+          },
+          {
+            "k": "Parent or guardian signature"
+          }
+        ]
+      },
+      "picture": "🧭🗺️🌲",
+      "topics": [
+        "maps",
+        "nature"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Map Club Sign-Up",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p36",
+      "title": "Fog at the Ferry Dock",
+      "kind": "message",
+      "sentences": [
+        "Sam and Grandma Rose plan to take the 9:00 AM ferry to Gull Island.",
+        "Grandma Rose gets a text alert."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "text",
+        "from": "Harbor Town Ferry",
+        "time": "8:20 AM",
+        "rows": [
+          "Ferry alert: there is thick fog in the harbor this morning.",
+          "Captain Ruth Lane cannot see far enough to sail safely.",
+          "The 9:00 AM ferry to Gull Island is canceled.",
+          "The fog should be gone before noon.",
+          "The next ferry leaves at 11:30 AM.",
+          "Tickets for the 9:00 AM ferry can be used on the 11:30 AM ferry. You do not need new tickets.",
+          "Please be at the dock 15 minutes before your ferry leaves."
+        ]
+      },
+      "picture": "⛴️🌫️📱",
+      "topics": [
+        "transport",
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Fog at the Ferry Dock",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p37",
+      "title": "Board Game Day Sign-Up",
+      "kind": "form",
+      "sentences": [
+        "Ana and Ben want to play at Board Game Day.",
+        "Ana fills in the form for both of them."
+      ],
+      "visual": {
+        "type": "form",
+        "title": "Harbor Town Library Board Game Day",
+        "rows": [
+          {
+            "k": "Date",
+            "v": "Saturday, November 1, 1:00 PM to 4:00 PM, in the big hall"
+          },
+          {
+            "k": "Game table (write one): CHESS, CASTLE BUILDERS or PUZZLE RACE",
+            "v": "CASTLE BUILDERS"
+          },
+          {
+            "k": "Players at this table (up to 4 names)",
+            "v": "Ana Diaz, Ben Diaz"
+          },
+          {
+            "k": "Age of the youngest player",
+            "v": "12"
+          },
+          {
+            "k": "Players under 10 must bring an adult."
+          },
+          {
+            "k": "Hand in this form at the front desk by Wednesday, October 29."
+          },
+          {
+            "k": "Parent or guardian signature"
+          }
+        ]
+      },
+      "picture": "🎲♟️📝",
+      "topics": [
+        "games"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Board Game Day Sign-Up",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p38",
+      "title": "Rock Club: The Scratch Test",
+      "kind": "message",
+      "sentences": [
+        "Maya's rock club is going to test how hard some minerals are.",
+        "Mr. Varga emails the club."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Mr. Varga",
+        "to": "Rock Club",
+        "subject": "Next meeting: the scratch test",
+        "time": "Sunday, 5:30 PM",
+        "rows": [
+          "Hello Rock Club,",
+          "On Tuesday we will find out how hard some minerals are.",
+          "We will use the scratch test. A harder mineral can scratch a softer one.",
+          "Talc is very soft. You can scratch it with your fingernail.",
+          "Quartz is much harder. A fingernail cannot scratch it.",
+          "Please bring two rocks from home in a paper bag with your name on it.",
+          "I will bring the talc, the quartz and the magnifying glasses.",
+          "We meet at the library at 5:00 PM, as usual. Mr. Varga"
+        ]
+      },
+      "picture": "🪨🔍📧",
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rock Club: The Scratch Test",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p39",
+      "title": "The Dog Park Is Closed",
+      "kind": "notice",
+      "sentences": [
+        "Sam walks Pixel to the dog park every afternoon.",
+        "Today he finds a notice on the gate."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Town Dog Park",
+        "icon": "🐕",
+        "rows": [
+          "The dog park is closed from Monday, June 2, to Friday, June 6.",
+          "We are planting new grass.",
+          "Please walk your dog on the Beach Path instead. It starts next to the ferry dock.",
+          "On the Beach Path, dogs must stay on a leash.",
+          "Pick up after your dog. Bags are at the start of the path.",
+          "The dog park opens again on Saturday, June 7."
+        ]
+      },
+      "picture": "🐕🚧🌱",
+      "topics": [
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Dog Park Is Closed",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p40",
+      "title": "Trail Closed After the Storm",
+      "kind": "notice",
+      "sentences": [
+        "Priya and her mom plan to hike to the old mill in Story Woods.",
+        "They see a notice at the start of the trail."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Story Woods Trail Notice",
+        "icon": "🌲",
+        "rows": [
+          "Last night's storm knocked down two big trees on the Mill Trail.",
+          "The Mill Trail is closed until workers can move the trees.",
+          "You can still reach the old mill on the Creek Trail.",
+          "The Creek Trail is longer. The walk takes about 50 minutes, not 30.",
+          "Some parts of the Creek Trail are muddy. Wear boots if you have them.",
+          "The campsite and the picnic tables are open as usual."
+        ]
+      },
+      "picture": "🌲🌧️🚧",
+      "topics": [
+        "nature",
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Trail Closed After the Storm",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p41",
+      "title": "The Solar Telescope Visit",
+      "kind": "message",
+      "sentences": [
+        "Ms. Ortiz sends this email to Grade 6 families.",
+        "Sam has never looked at the Sun through a telescope."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Ms. Ortiz",
+        "to": "Grade 6 families",
+        "subject": "Looking at the Sun on Friday",
+        "time": "Monday, 4:15 PM",
+        "rows": [
+          "Dear Grade 6 families,",
+          "On Friday, March 7, Dr. Hale, an astronomer from the Lantern Peaks Observatory, will visit our science class.",
+          "She will bring a solar telescope. Its special filter blocks almost all of the Sun's light, so it is safe to look through.",
+          "Students will look for sunspots, which are darker, cooler patches on the Sun.",
+          "The viewing will be on the field behind the gym from 10:00 AM to 11:00 AM.",
+          "Please remind your child of our safety rule: never look at the Sun with your eyes alone, through sunglasses, or through a normal telescope.",
+          "Only the solar telescope is safe, and Dr. Hale will stand next to it the whole time.",
+          "The telescope needs a clear sky. If it is cloudy on Friday morning, Dr. Hale will give a talk about the Sun in the library at the same time instead.",
+          "If Friday is cloudy, we will try the viewing again on Monday, March 10, from 10:00 AM to 11:00 AM.",
+          "Students should wear a hat and bring a water bottle, because there is little shade on the field.",
+          "There is no cost, and you do not need to sign a form.",
+          "Thank you, Ms. Ortiz"
+        ]
+      },
+      "picture": "☀️🔭📧",
+      "topics": [
+        "space",
+        "school"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Solar Telescope Visit",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p42",
+      "title": "Garden Club News",
+      "kind": "notice",
+      "sentences": [
+        "Welcome to the April newsletter of the Harbor Middle School Garden Club.",
+        "Our club grows vegetables in six raised beds behind the cafeteria.",
+        "Everything we pick goes to the school kitchen, where the cooks use it in the salad bar.",
+        "This spring, we are planting carrots, peas, lettuce and green beans.",
+        "Planting Day is on Saturday, April 26, from 9:00 AM to 11:00 AM.",
+        "Every member should bring gardening gloves and a water bottle.",
+        "The club will provide the seeds, the small shovels and the watering cans.",
+        "If it rains hard that morning, we will plant on Sunday, April 27, at the same time instead.",
+        "Seeds need water to sprout, but heavy rain can wash them out of the soil before their roots grow.",
+        "During the school week, two members water the beds at lunch each day.",
+        "To help, write your name on the watering chart outside the cafeteria, under one day of the week.",
+        "Each day needs two names, and only Wednesday and Friday still have open spots.",
+        "Finally, our harvest party will be in June.",
+        "Members will make a big salad with the vegetables they grew, and families are welcome to taste it."
+      ],
+      "breaks": [
+        4,
+        9,
+        12
+      ],
+      "picture": "🥕🌱📰",
+      "topics": [
+        "food",
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Garden Club News",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p43",
+      "title": "The Aquarium Permission Slip",
+      "kind": "form",
+      "sentences": [
+        "Ana fills in her part of a permission slip.",
+        "Then she gives it to her dad to finish."
+      ],
+      "visual": {
+        "type": "form",
+        "title": "Permission Slip: Kelp Bay Aquarium",
+        "rows": [
+          {
+            "k": "Trip",
+            "v": "Wednesday, May 21. The bus leaves school at 9:00 AM and returns by 2:00 PM."
+          },
+          {
+            "k": "What we will see",
+            "v": "The Kelp Forest Tank, the Touch Pool, and a talk about how sea otters stay warm in cold water. Sea otters have the thickest fur of any animal."
+          },
+          {
+            "k": "Return to",
+            "v": "Ms. Ortiz by Friday, May 16"
+          },
+          {
+            "k": "Part A (student): Full name",
+            "v": "Ana Diaz"
+          },
+          {
+            "k": "Part B (Touch Pool): Students may gently touch sea stars and sea snails with two fingers. Write YES if your child may use the Touch Pool, or NO if your child should only watch."
+          },
+          {
+            "k": "Part C (lunch): Write CAFÉ to buy a lunch at the aquarium café, or PACKED to bring lunch from home. A café lunch costs $6.",
+            "v": "CAFÉ"
+          },
+          {
+            "k": "Part D (cost): Every student pays $5 for the aquarium ticket. Add $6 if you wrote CAFÉ in Part C. Put the money in an envelope with this slip."
+          },
+          {
+            "k": "Part E: Signature of parent or guardian"
+          }
+        ]
+      },
+      "picture": "🦦🐠📝",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Aquarium Permission Slip",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p44",
+      "title": "The Skate Jam Chat",
+      "kind": "message",
+      "sentences": [
+        "Leo is riding in a skateboard contest at the skate park.",
+        "His friends plan to come and watch."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "Skate Jam Fans",
+        "time": "Friday, 6:15 PM",
+        "rows": [
+          "Leo: The Harbor Skate Jam is tomorrow, Saturday, at 1:00 PM at the skate park!",
+          "Leo: Riders who are 13 and older go one hour after the start, at 2:00 PM. That is my group.",
+          "Sam: Pixel and I will come 15 minutes before your group, at 1:45 PM, to get a good spot.",
+          "Maya: I will bring a sign that I drew for you.",
+          "Leo: Update from the skate park: it rained all night, and the ramps are still wet.",
+          "Leo: Wet ramps are too slippery to ride, so the Jam moves to Sunday.",
+          "Leo: On Sunday it starts at 3:00 PM. My group still goes one hour after the start.",
+          "Ana: Ben and I have a soccer game on Sunday until 2:30 PM. Can we still make it?",
+          "Leo: Yes! The soccer field is a ten-minute walk from the skate park.",
+          "Sam: Is the snack stand open on Sunday?",
+          "Leo: No, the snack stand is closed on Sundays. Bring your own water."
+        ]
+      },
+      "picture": "🛹💬🌧️",
+      "topics": [
+        "sports",
+        "friends"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Skate Jam Chat",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p45",
+      "title": "A Substitute for Band",
+      "kind": "message",
+      "sentences": [
+        "Ana and Maya are in the Grade 6 band at Harbor Middle School.",
+        "Ms. Gray sends the band an email on Sunday night."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Ms. Gray",
+        "to": "Grade 6 band students and families",
+        "subject": "Next week: a substitute teacher and a new folder",
+        "time": "Sunday, 8:10 PM",
+        "rows": [
+          "Hello Grade 6 band,",
+          "Next week I will be at a meeting for music teachers in another town, so a substitute teacher will lead our practices.",
+          "The substitute has led school bands for many years, and I have given her our music for the spring concert.",
+          "Practice stays on Tuesday and Thursday from 3:15 PM to 4:30 PM in the music room.",
+          "One thing is different: on Thursday, practice will end at 4:00 PM, because the music room is needed for a parent meeting at 4:15 PM.",
+          "On Tuesday, please pick up a new red music folder from the shelf by the door.",
+          "Put the songs for the spring concert in the red folder, and take your old blue folder home.",
+          "On Thursday, the substitute will check that every student has the red folder.",
+          "Small instruments still go home with you after each practice, and the drums still stay in the music room.",
+          "I will be back on Monday, April 7. Please be kind and helpful to our substitute.",
+          "Thank you, Ms. Gray"
+        ]
+      },
+      "picture": "🎺📧📁",
+      "topics": [
+        "music",
+        "school"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Substitute for Band",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p46",
+      "title": "Track Work on the Harbor Line",
+      "kind": "notice",
+      "sentences": [
+        "Sam and Grandma Rose plan to take the Harbor Line train to Lantern Peaks on Saturday.",
+        "Sam reads this notice at the station."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Line: Track Work on Saturday, June 14",
+        "icon": "🚧",
+        "rows": [
+          "Workers will replace old rails between Mill Creek and Lantern Peaks on Saturday, June 14, from 6:00 AM to 8:00 PM.",
+          "Trains will run as usual from Harbor Town to Mill Creek.",
+          "At Mill Creek, get off the train and take the free shuttle bus to Lantern Peaks.",
+          "The shuttle bus stops in the parking lot on the north side of Mill Creek station. Follow the yellow signs.",
+          "The bus ride takes about 25 minutes, so your trip will be about 20 minutes longer than usual.",
+          "Bikes are allowed on the trains, but they cannot go on the shuttle bus.",
+          "Train tickets for June 14 can be used on the shuttle bus. You do not need a new ticket.",
+          "On Sunday, June 15, trains will run all the way to Lantern Peaks again."
+        ]
+      },
+      "picture": "🚆🚌🚧",
+      "topics": [
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Track Work on the Harbor Line",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p47",
+      "title": "The Kart Cup Sign-Up",
+      "kind": "form",
+      "sentences": [
+        "Ben wants to enter a video game tournament.",
+        "He reads the whole form before he fills it in."
+      ],
+      "visual": {
+        "type": "form",
+        "title": "Harbor Town Kart Cup Sign-Up",
+        "rows": [
+          {
+            "k": "Event",
+            "v": "The Kart Cup, a racing tournament in the video game Rocket Karts. Saturday, February 8, at the Harbor Town Community Center."
+          },
+          {
+            "k": "Two groups",
+            "v": "Ages 9 to 11 race in the morning, from 10:00 AM to 12:00 PM. Ages 12 to 14 race in the afternoon, from 1:00 PM to 3:00 PM."
+          },
+          {
+            "k": "Player name",
+            "v": "Ben Diaz"
+          },
+          {
+            "k": "Age",
+            "v": "12"
+          },
+          {
+            "k": "Group (write MORNING or AFTERNOON)"
+          },
+          {
+            "k": "Entry fee",
+            "v": "$3. Pay at the door on the day of the Cup."
+          },
+          {
+            "k": "Controller",
+            "v": "Players bring their own controller. Put a label with your name on it."
+          },
+          {
+            "k": "Deadline",
+            "v": "Hand in this form at the front desk by Wednesday, February 5. Late forms cannot be added, because the race list is made on Thursday."
+          },
+          {
+            "k": "Parent or guardian signature"
+          }
+        ]
+      },
+      "picture": "🎮🏁📝",
+      "topics": [
+        "games"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Kart Cup Sign-Up",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p48",
+      "title": "Robot Kits at the Library",
+      "kind": "notice",
+      "sentences": [
+        "Starting this month, the Harbor Town Library lends robot kits, just like it lends books.",
+        "Each kit comes in a plastic box with a small robot, a charging cable, a set of coding cards and a short guide.",
+        "The robots can follow a line drawn on paper, and they can be programmed to draw shapes with a marker.",
+        "There are eight kits, and each one has a number on its lid.",
+        "To borrow a kit, you need a library card, and you must be at least 10 years old.",
+        "Children under 10 may use a kit inside the library with an adult.",
+        "You may keep a kit for one week.",
+        "If nobody is waiting for it, you can renew it one time for one more week.",
+        "Please do not return kits in the book drop, because the robots can break when they fall.",
+        "Instead, bring each kit to the front desk and hand it to a librarian.",
+        "Before you return a kit, count the coding cards.",
+        "Every kit should have 24 cards, and each missing card costs $1.",
+        "Please also charge the robot fully, so the next person can use it right away.",
+        "If a robot stops working, do not try to open it.",
+        "Write a short note about the problem, put it in the box, and Mrs. Hall will send the robot to be fixed."
+      ],
+      "breaks": [
+        4,
+        10
+      ],
+      "picture": "🤖📚📦",
+      "topics": [
+        "robots"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Robot Kits at the Library",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p49",
+      "title": "Stegosaurus Night Moves",
+      "kind": "message",
+      "sentences": [
+        "Maya is in the Junior Paleontologist Club.",
+        "A paleontologist is a scientist who studies fossils.",
+        "Dr. Bell emails the club."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Dr. Bell",
+        "to": "Junior Paleontologist Club",
+        "subject": "Stegosaurus Night: new date and one new activity",
+        "time": "Tuesday, 5:45 PM",
+        "rows": [
+          "Hello Junior Paleontologists,",
+          "The truck bringing our new Stegosaurus skeleton was slowed down by snow in the mountains, so the skeleton will arrive late.",
+          "Because of this, Stegosaurus Night moves from Friday, January 17, to Friday, January 24.",
+          "It still starts at 6:00 PM and ends at 8:00 PM, and it is still in the Fossil Hall.",
+          "Stegosaurus had two rows of bony plates along its back and sharp spikes at the end of its tail.",
+          "At the event, you will measure one of the plates with a tape measure and draw it in your field notebook.",
+          "Please bring your field notebook and a pencil. The museum will lend everyone a tape measure.",
+          "One activity has changed. The fossil cleaning table will not be ready on January 24.",
+          "Instead, each member will make a plaster copy of a Stegosaurus tail spike to take home.",
+          "Please wear old clothes, because wet plaster is messy and can leave white marks.",
+          "If your child cannot come on the new date, please reply by Wednesday, January 22.",
+          "See you soon! Dr. Bell"
+        ]
+      },
+      "picture": "🦕📧🦴",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Stegosaurus Night Moves",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p50",
+      "title": "Rock Swap News",
+      "kind": "notice",
+      "sentences": [
+        "Welcome to the winter newsletter of the Harbor Town Rock Club.",
+        "Our biggest event this season is the Rock Swap on Saturday, February 22, at the Harbor Town Library.",
+        "At a rock swap, members trade rocks and minerals with each other instead of buying them.",
+        "Each member may bring up to five rocks to trade.",
+        "Before the swap, every rock needs a label, because a rock without a name is hard to trade.",
+        "Write three things on a small card: the name of the rock, the place where you found it, and your own name.",
+        "If you do not know the name of a rock, write a question mark instead, and Mr. Varga will help you find out.",
+        "The doors open at 9:30 AM so that you can set out your rocks, and trading starts at 10:00 AM.",
+        "Please follow the swap rules, so that every trade is fair.",
+        "A trade only happens when both members say yes.",
+        "You may look closely at a rock with a magnifying glass, but ask before you pick it up.",
+        "Only trade rocks that you found yourself or that someone gave to you.",
+        "Members under 12 must come with a parent.",
+        "After the swap, Mr. Varga will show the club how to store rocks in an egg carton, with one rock in each cup.",
+        "An egg carton keeps rocks from rubbing together, so soft minerals do not get scratched."
+      ],
+      "breaks": [
+        4,
+        8,
+        13
+      ],
+      "picture": "🪨🔄📰",
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rock Swap News",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p51",
+      "title": "The Library Map Hunt",
+      "kind": "notice",
+      "sentences": [
+        "Sam and Priya want to try the Map Hunt at the library.",
+        "They read the notice by the front desk."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Map Week: The Library Map Hunt",
+        "icon": "🗺️",
+        "rows": [
+          "Pick up a floor map of the library and a stamp card at the front desk.",
+          "The map is divided into a grid of squares. Letters run across the top edge, and numbers run down the left side.",
+          "To locate square C2, place one finger on C at the top and another finger on 2 at the side. Slide them toward each other until they meet.",
+          "There are four stamp stations around the library. Station 1 is in square A1, beside the globe.",
+          "At each station, you will find a clue that tells you the square of the next station.",
+          "Work in pairs. Each pair needs only one stamp card.",
+          "Get all four stamps by 4:00 PM to win a pocket compass.",
+          "Change for Tuesday: the reading room in square D3 is closed for a class. On Tuesday only, Station 4 moves to the map table in square B4.",
+          "The hunt runs from Monday to Friday during Map Week."
+        ]
+      },
+      "picture": "🗺️🔎📚",
+      "topics": [
+        "maps"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Library Map Hunt",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p52",
+      "title": "The Beach Clean-Up Chat",
+      "kind": "message",
+      "sentences": [
+        "Ms. Ortiz's science club is cleaning up a beach on Saturday.",
+        "The plan changes two times in the group chat."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "Beach Crew",
+        "time": "Wednesday, 5:30 PM",
+        "rows": [
+          "Ms. Ortiz: Our beach clean-up at Driftwood Beach is on Saturday from 9:00 AM to 11:00 AM.",
+          "Ms. Ortiz: Meet at the big anchor by the parking lot. Bring gloves, a hat and a water bottle. I will bring the trash bags.",
+          "Sam: Can Pixel come? He walks well on a leash.",
+          "Ms. Ortiz: Sorry, Sam. Dogs are not allowed on Driftwood Beach in summer, because birds lay their eggs in the sand there.",
+          "Ms. Ortiz: Update 1: I checked the tide table. On Saturday, high tide is at 9:30 AM, and low tide is at 3:45 PM.",
+          "Ms. Ortiz: At high tide, the water covers most of the sand, so there is very little beach to clean.",
+          "Ms. Ortiz: The clean-up moves to 2:00 PM to 4:00 PM, when the water is low. Same beach, same meeting place.",
+          "Priya: I have cello practice until 2:30 PM. Can I come late?",
+          "Ms. Ortiz: Yes. Find us by the lifeguard tower when you get there.",
+          "Ms. Ortiz: Update 2: I have a family event on Saturday afternoon, so Mr. Lee will lead the clean-up instead of me.",
+          "Ms. Ortiz: Mr. Lee will bring the trash bags now. Everything else stays the same.",
+          "Leo: Will it be hot at 2:00 PM?",
+          "Ms. Ortiz: It is often the warmest part of the day. Wear sunscreen, and bring an extra bottle of water."
+        ]
+      },
+      "picture": "🏖️💬🌊",
+      "topics": [
+        "ocean",
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Beach Clean-Up Chat",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p53",
+      "title": "Dome Notes",
+      "kind": "notice",
+      "sentences": [
+        "Welcome to the November issue of Dome Notes, the newsletter for the Junior Astronomers at the Lantern Peaks Observatory.",
+        "This month brings two changes to our Thursday night meetings, so please read this issue carefully.",
+        "First, the big telescope in the dome will be closed from November 3 to November 21.",
+        "Every few years, its giant mirror must be removed and cleaned, because a thin layer of dust makes faint stars harder to see.",
+        "While the mirror is being cleaned, we will set up five small telescopes on the lookout deck instead.",
+        "The lookout deck has no roof and no walls, so please dress for wind and cold.",
+        "Second, our winter schedule begins on December 1.",
+        "As the nights grow longer, the sky gets dark much earlier, so meetings will start at 6:30 PM instead of 8:00 PM.",
+        "Meetings will still last 90 minutes, and the last bus down the hill will still leave ten minutes after each meeting ends.",
+        "The winter schedule continues until the end of February.",
+        "Finally, here is a note about how we plan our star counts.",
+        "Bright moonlight makes faint stars very hard to see, so we count stars only on nights when the Moon is thin or cannot be seen at all.",
+        "Our next star count is on Thursday, November 20, a night with no bright Moon.",
+        "Please bring a notebook, a pencil and a flashlight with a red cover, because white light makes it harder for everyone's eyes to adjust to the dark.",
+        "Dr. Lee and the observatory team look forward to a season of clear, dark skies with you."
+      ],
+      "breaks": [
+        2,
+        6,
+        10
+      ],
+      "picture": "🔭📰🌙",
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dome Notes",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p54",
+      "title": "The Bread Class Update",
+      "kind": "message",
+      "sentences": [
+        "Grandma Rose teaches a bread class for kids at her bakery.",
+        "Sam, Leo and Ben signed up.",
+        "Then this email arrives."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Rose's Bakery",
+        "to": "Bread class families",
+        "subject": "UPDATE: Saturday bread class",
+        "time": "Wednesday, 7:30 PM",
+        "rows": [
+          "Hello young bakers and families,",
+          "This email updates the one I sent on Monday. If the two emails say different things, follow this one.",
+          "Some things stay the same. The class is still on Saturday, March 15, and it still costs $10 for each student.",
+          "The place is also the same: the kitchen at the back of Rose's Bakery. Please use the side door by the parking lot.",
+          "The time has changed. We now start at 1:00 PM instead of 10:00 AM, because a repair worker is fixing the big oven that morning.",
+          "The class still lasts three hours, so please pick up your child at the side door at 4:00 PM.",
+          "The recipe has changed too. Some students cannot eat nuts, so we will make oat and honey bread instead of walnut bread.",
+          "In my first email, I asked each student to bring a cup of flour. You do not need to bring flour now, because a friend gave the bakery three large bags.",
+          "Please still bring an apron, a clean dish towel and a bag to carry your bread home.",
+          "The towel covers the dough while it rises. Yeast in the dough makes tiny bubbles of gas, and the bubbles make the dough grow.",
+          "If your child cannot come at the new time, reply by Thursday, March 13, and I will give you your $10 back.",
+          "Thank you for being flexible! Rose"
+        ]
+      },
+      "picture": "🍞📧🕐",
+      "topics": [
+        "food"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Bread Class Update",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p55",
+      "title": "Night at the Fossil Hall",
+      "kind": "form",
+      "sentences": [
+        "The museum is holding a sleepover in the Fossil Hall.",
+        "Ana and Ben's dad reads the whole form."
+      ],
+      "visual": {
+        "type": "form",
+        "title": "Permission Form: Night at the Fossil Hall",
+        "rows": [
+          {
+            "k": "Event",
+            "v": "Friday, May 2, at 6:00 PM, to Saturday, May 3, at 8:30 AM. Students sleep on the floor of the Fossil Hall, next to the Triceratops skeleton."
+          },
+          {
+            "k": "Who can come",
+            "v": "Students in Grades 5 to 7. Every group of six students needs one adult helper who stays all night."
+          },
+          {
+            "k": "Cost",
+            "v": "$20 for each student. Brothers and sisters who come together pay $15 each."
+          },
+          {
+            "k": "Bring",
+            "v": "A sleeping bag, a pillow, pajamas, a toothbrush and a flashlight. Dinner and breakfast are included."
+          },
+          {
+            "k": "Leave at home",
+            "v": "Snacks and other food, because crumbs bring ants into the museum."
+          },
+          {
+            "k": "Part A: Student names and grades",
+            "v": "Ana Diaz, Grade 6; Ben Diaz, Grade 6"
+          },
+          {
+            "k": "Part B: Food allergies, so the museum can plan dinner and breakfast"
+          },
+          {
+            "k": "Part C: Name of the adult who will pick up. Students leave only with this adult. If a different adult will come, call the museum at 555-0148 before 8:00 AM on Saturday."
+          },
+          {
+            "k": "Part D: Signature of parent or guardian"
+          },
+          {
+            "k": "Return to",
+            "v": "The museum front desk, with payment, by Friday, April 25. There are only 60 spots, and forms are taken in the order they arrive."
+          }
+        ]
+      },
+      "picture": "🦖🛌📝",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Night at the Fossil Hall",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p56",
+      "title": "Early Dismissal for Wind",
+      "kind": "notice",
+      "sentences": [
+        "The twins' mom gets this notice from the school at 9:00 AM.",
+        "Ana and Ben usually stay after school on Tuesdays."
+      ],
+      "visual": {
+        "type": "notice",
+        "title": "Harbor Middle School: Early Dismissal Today",
+        "icon": "🌬️",
+        "rows": [
+          "Today, Tuesday, November 18, strong winds are expected to reach Harbor Town at about 2:00 PM.",
+          "To get everyone home before the wind gets strong, school will end early today, at 12:30 PM.",
+          "Students will eat lunch at 11:45 AM, before they leave.",
+          "Students who ride the bus will go to the bus loop after lunch. Buses will leave at 12:45 PM.",
+          "Students who walk home or get picked up will leave from the front door at 12:30 PM.",
+          "All after-school activities are canceled today, including band practice and music lessons.",
+          "The Grade 6 science quiz planned for this afternoon will happen on Thursday instead.",
+          "Because of the wind, the last ferry to Gull Island today leaves at 1:00 PM instead of 2:00 PM. Students who live on Gull Island will walk with a teacher to the ferry dock at 12:30 PM.",
+          "If the power goes out tonight, check the school text message at 6:00 AM tomorrow to learn whether school will open.",
+          "At home, please keep pets inside and bring in anything in your yard that the wind could blow away."
+        ]
+      },
+      "picture": "🌬️🏫🚌",
+      "topics": [
+        "weather",
+        "school"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Early Dismissal for Wind",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p57",
+      "title": "The Tournament Team Chat",
+      "kind": "message",
+      "sentences": [
+        "Ben, Ana, Leo and Sam are a team in an online video game tournament.",
+        "They plan in a group chat."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "chat",
+        "from": "Harbor Comets",
+        "time": "Thursday, 7:00 PM",
+        "rows": [
+          "Ben: The Sky Track team tournament is on Saturday at 4:00 PM. Each team has three players and one substitute.",
+          "Ben: A substitute is a player who waits and plays only if someone on the team cannot.",
+          "Ben: Our three players are Ana, Leo and me. Sam is our substitute.",
+          "Sam: Sounds good. I will keep Saturday free in case you need me.",
+          "Ana: The rules say every player must log in 15 minutes before the start to test their headset.",
+          "Ben: Update: the tournament moved to Sunday at 5:00 PM, because the game is getting a big update on Saturday.",
+          "Leo: I have a family dinner on Sunday from 4:30 PM to 6:30 PM. I cannot play.",
+          "Ben: Then Sam plays in your place, Leo. Sam, can you play on Sunday?",
+          "Sam: Yes! I walk Pixel at 4:00 PM, and I will be home by 4:30 PM.",
+          "Ana: Sam, our team name is Harbor Comets. Use that name when you log in.",
+          "Leo: Good luck, everyone! I will watch the replay on Monday."
+        ]
+      },
+      "picture": "🎮💬🏆",
+      "topics": [
+        "games",
+        "friends"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Tournament Team Chat",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p58",
+      "title": "Island Cup Day",
+      "kind": "message",
+      "sentences": [
+        "The Harbor Hawks are playing in a soccer tournament.",
+        "Coach Novak sends this email on Monday."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Coach Novak",
+        "to": "Harbor Hawks families",
+        "subject": "Saturday tournament: games, fields and rides",
+        "time": "Monday, 8:00 PM",
+        "rows": [
+          "Hello Hawks families,",
+          "This Saturday, October 11, we play two games in the Island Cup at Gull Point Park.",
+          "Game 1 is at 9:00 AM on Field A, next to the parking lot. Players must be at Field A by 8:15 AM to warm up.",
+          "Game 2 was planned for 1:00 PM on Field C, but a water pipe under Field C has broken, and the grass is flooded.",
+          "Game 2 will now be at 12:00 PM on Field B, behind the snack building. We still play the Seacliff Sharks.",
+          "Between games, players rest in the shade by the snack building. Please pack a lunch, because the snack building sells only drinks.",
+          "Each player needs two shirts: blue for Game 1, and white for Game 2, because the Sharks also wear blue.",
+          "We still need two drivers. If you can drive, reply by Thursday, October 9, and tell me how many seats you have.",
+          "Team cars will leave the school parking lot at 7:30 AM. If you are driving only your own child, please go straight to Gull Point Park.",
+          "Thank you! Coach Novak"
+        ]
+      },
+      "picture": "⚽🏆📧",
+      "topics": [
+        "sports"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Island Cup Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p59",
+      "title": "Welcome, Junior Volunteers",
+      "kind": "message",
+      "sentences": [
+        "Thank you for joining the Junior Volunteer program at the Harbor Town Animal Shelter.",
+        "Junior volunteers are 11 to 15 years old, and they help us care for the cats, dogs and rabbits that are waiting for new homes.",
+        "Every junior volunteer works with an adult family member, who must stay in the same room the whole time.",
+        "Shifts are on Saturdays and Sundays, from 10:00 AM to 12:00 PM or from 2:00 PM to 4:00 PM.",
+        "Please sign up for each shift on the paper calendar at the front desk at least two days ahead.",
+        "During your first three shifts, you will fold towels, wash food bowls and fill water dishes.",
+        "These jobs help the animals get used to you, and they help you learn how the shelter works.",
+        "After three shifts, you may also brush the cats and play with the rabbits in the small animal room.",
+        "Dog walking is only for volunteers who are 14 or older, because some of our dogs are large and pull hard on the leash.",
+        "Before you touch any animal, wash your hands at the sink by the door.",
+        "Wash them again when you move from one room to another, so that germs do not spread between the animals.",
+        "Never open a cage or a kennel by yourself; ask a staff member first.",
+        "Please wear closed shoes and clothes that can get covered in fur.",
+        "From December 1 to February 28, the afternoon shift moves to 1:00 PM to 3:00 PM, because the shelter closes earlier in winter.",
+        "Morning shifts stay the same all year.",
+        "If you cannot come to a shift you signed up for, call the front desk at 555-0172 as soon as you can, so that another volunteer can take your place."
+      ],
+      "breaks": [
+        3,
+        9,
+        13
+      ],
+      "picture": "🐾🐈🐇",
+      "topics": [
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Welcome, Junior Volunteers",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p60",
+      "title": "The Robot Rally: Corrected",
+      "kind": "message",
+      "sentences": [
+        "Priya's robotics club, the Gear Grinders, is going to a Robot Rally.",
+        "Ms. Ortiz sends a second email two days after the first."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Ms. Ortiz",
+        "to": "Gear Grinders teams",
+        "subject": "CORRECTED: Robot Rally details",
+        "time": "Thursday, 3:50 PM",
+        "rows": [
+          "Hello Gear Grinders,",
+          "My email on Tuesday had two mistakes. This email has the correct details, so please use this one.",
+          "Mistake 1: the Robot Rally is on Saturday, May 17, not on Saturday, May 10.",
+          "Mistake 2: the Rally is at Seacliff Middle School, not at our school. Seacliff is about 30 minutes away by bus.",
+          "Everything else in Tuesday's email is still correct. Here are the main details again.",
+          "The school bus leaves from our front office at 7:45 AM and returns by 4:00 PM.",
+          "Each team runs its rover in two events: the Maze in the morning, and the Rescue Challenge after lunch.",
+          "In the Rescue Challenge, a rover must pick up a small foam block and carry it to a green square.",
+          "Pack two charged batteries for each rover, because there are no charging tables at Seacliff.",
+          "Lunch is sold in the Seacliff cafeteria for $5, or you can bring a packed lunch.",
+          "Each team must email me a photo of its rover by Wednesday, May 14, so the judges can print the team cards.",
+          "Thank you, and sorry for my mistakes. Ms. Ortiz"
+        ]
+      },
+      "picture": "🤖📧🔋",
+      "topics": [
+        "robots",
+        "school"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Robot Rally: Corrected",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p61",
+      "title": "Harbor Town Music Day",
+      "kind": "notice",
+      "sentences": [
+        "Harbor Town Music Day returns on Saturday, June 21, and this year young musicians are invited to perform on the Open Stage.",
+        "The festival runs from 11:00 AM to 5:00 PM in Harbor Park, with food stands along the path to the ferry dock.",
+        "The Open Stage is for players aged 10 to 16, who may perform alone or in groups of up to five.",
+        "Each act may play for up to eight minutes, which is usually enough time for two songs.",
+        "To perform, fill in a sign-up form at the library front desk by Friday, June 13.",
+        "On the form, list every player, the instrument each one plays, and the names of your songs.",
+        "Spots are given in the order that forms arrive, and there are only twenty spots.",
+        "Every act must come to a short sound check on the morning of the festival.",
+        "A sound check is a quick test that lets the sound crew set the right volume for each instrument and voice.",
+        "Sound checks start at 9:00 AM, and each act will receive its own ten-minute time by email two days before the festival.",
+        "The stage already has two microphones, a keyboard and a drum set.",
+        "Keyboard players do not need to bring anything, and drummers bring only their sticks.",
+        "Players of every other instrument should bring their own, along with a music stand if they need one.",
+        "Music Day needs dry weather, because the stage and the sound equipment are outdoors.",
+        "If the forecast shows rain, the festival will move one week later, to Saturday, June 28.",
+        "The decision will be posted on the library door by 6:00 PM on Friday, June 20.",
+        "We hope to hear you there!"
+      ],
+      "breaks": [
+        4,
+        7,
+        13
+      ],
+      "picture": "🎸🎻🎹",
+      "topics": [
+        "music"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Harbor Town Music Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f5-p62",
+      "title": "The Campout Update",
+      "kind": "message",
+      "sentences": [
+        "Sam is going on an overnight campout with the Story Woods Nature Club.",
+        "The club leaders send an email two days before."
+      ],
+      "visual": {
+        "type": "message",
+        "app": "email",
+        "from": "Story Woods Nature Club",
+        "to": "Campout families",
+        "subject": "Campout update: new campsite and no campfire",
+        "time": "Wednesday, 6:00 PM",
+        "rows": [
+          "Dear families,",
+          "Our campout is still on Friday, August 8, to Saturday, August 9. We still meet at the Story Woods trailhead at 4:00 PM on Friday.",
+          "Two things have changed since our last email.",
+          "First, a large branch fell near Campsite 4 during last week's wind, so the park has closed that campsite for now.",
+          "We will use Campsite 9 instead. It is by the creek, a 20-minute walk from the trailhead instead of 10 minutes.",
+          "Second, the weather has been very dry, so the park does not allow any campfires this month.",
+          "Dry leaves and grass can catch fire very easily, and the park wants to keep the woods safe.",
+          "Without a campfire, we cannot toast marshmallows. Instead, the club will bring a cooler with frozen fruit bars.",
+          "Adults will cook dinner on a camp stove at the picnic table, which the park allows.",
+          "There will be no campfire light at night, so please check that your flashlight has fresh batteries.",
+          "The packing list is the same as before: a sleeping bag, a sleeping pad, a warm sweater, a flashlight, a water bottle and closed shoes.",
+          "Pick-up is still at the trailhead on Saturday at 10:00 AM.",
+          "Thank you, the Story Woods Nature Club leaders"
+        ]
+      },
+      "picture": "⛺📧🔦",
+      "topics": [
+        "nature"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Campout Update",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -1978,6 +3644,3317 @@
         "two-changes"
       ],
       "transfer": true
+    },
+    {
+      "id": "f5-i52",
+      "skill": "F5",
+      "passage": "f5-p24",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What time should Sam feed Pixel?",
+      "options": [
+        "6:00 PM",
+        "4:00 PM",
+        "5:00 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the line with the word feed. Read the time in it.",
+      "explain": "Sam should feed Pixel at 5:00 PM. It is in the second line. 6:00 PM is when Dad's work ends.",
+      "inference": 0,
+      "tags": [
+        "time-pm",
+        "two-times"
+      ]
+    },
+    {
+      "id": "f5-i53",
+      "skill": "F5",
+      "passage": "f5-p24",
+      "format": "scene",
+      "level": 1,
+      "prompt": "It is 5:00 PM. Tap what Sam gives Pixel.",
+      "scene": "kitchen",
+      "objects": [
+        {
+          "label": "Cookies",
+          "emoji": "🍪"
+        },
+        {
+          "label": "Dog food",
+          "emoji": "🥣"
+        },
+        {
+          "label": "Milk",
+          "emoji": "🥛"
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the line that starts with Give him. Read what comes next.",
+      "explain": "Sam gives Pixel one scoop of dog food. It is in the third line.",
+      "inference": 0,
+      "tags": [
+        "what-to-do"
+      ]
+    },
+    {
+      "id": "f5-i54",
+      "skill": "F5",
+      "passage": "f5-p25",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Ben had soccer practice today. What is different now?",
+      "options": [
+        "There is no practice today.",
+        "Practice is at 5:00 PM today.",
+        "Practice is inside today."
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the line with the words practice and today.",
+      "explain": "There is no practice today. The second line says so. The first line says it is raining hard.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "cancelled"
+      ]
+    },
+    {
+      "id": "f5-i55",
+      "skill": "F5",
+      "passage": "f5-p25",
+      "format": "tap",
+      "level": 1,
+      "prompt": "When should Ben go to soccer practice now?",
+      "options": [
+        "Today at 5:00 PM",
+        "Friday at 5:00 PM",
+        "Saturday at 5:00 PM"
+      ],
+      "pictures": [
+        "🌧️",
+        "⚽",
+        "📅"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the word next. Read the day and the time after it.",
+      "explain": "Ben should go on Friday at 5:00 PM. The third line says the next practice is then.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "day-and-time"
+      ]
+    },
+    {
+      "id": "f5-i56",
+      "skill": "F5",
+      "passage": "f5-p26",
+      "format": "tap",
+      "level": 1,
+      "prompt": "When will Grandma Rose be back?",
+      "options": [
+        "3:30 PM",
+        "4:00 PM",
+        "3:00 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the words be back. Read the time.",
+      "explain": "She will be back at 3:30 PM. It is in the second line. 4:00 PM is when the bread is ready.",
+      "inference": 0,
+      "tags": [
+        "time-pm",
+        "two-times"
+      ]
+    },
+    {
+      "id": "f5-i57",
+      "skill": "F5",
+      "passage": "f5-p26",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Why is Grandma Rose out?",
+      "options": [
+        "She went home.",
+        "She went to the park.",
+        "She went to get flour."
+      ],
+      "pictures": [
+        "🏠",
+        "🌳",
+        "🌾"
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the first line. It says where she went.",
+      "explain": "She went to get more flour. It is in the first line of the note.",
+      "inference": 0,
+      "tags": [
+        "why"
+      ]
+    },
+    {
+      "id": "f5-i58",
+      "skill": "F5",
+      "passage": "f5-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where should Sam meet the group?",
+      "options": [
+        "At the racks by the gym",
+        "At Okafor's Bike Shop",
+        "At the front door of the school"
+      ],
+      "pictures": [
+        "🏫",
+        "🚲",
+        "🚪"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the line that starts with Meet. Read the place after the word at.",
+      "explain": "Sam should meet the group at Okafor's Bike Shop at 7:45 AM. It is in the second line. The racks by the gym are where he locks his bike.",
+      "inference": 0,
+      "tags": [
+        "place",
+        "two-places"
+      ]
+    },
+    {
+      "id": "f5-i59",
+      "skill": "F5",
+      "passage": "f5-p27",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Sam rides his bike to school. Tap where he should leave it.",
+      "scene": "school",
+      "objects": [
+        {
+          "label": "Front office",
+          "emoji": "🏢",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "OFFICE"
+          }
+        },
+        {
+          "label": "Library",
+          "emoji": "📚",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "LIBRARY"
+          }
+        },
+        {
+          "label": "Bike racks by the gym",
+          "emoji": "🚲",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "GYM"
+          }
+        }
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line with the word Lock. Read where it says to lock your bike.",
+      "explain": "Sam leaves his bike on the racks by the gym. The fifth line says to lock your bike there.",
+      "inference": 0,
+      "tags": [
+        "place"
+      ]
+    },
+    {
+      "id": "f5-i60",
+      "skill": "F5",
+      "passage": "f5-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "It rains on Wednesday morning. What should Sam do?",
+      "options": [
+        "Ride to school in the rain with the group",
+        "Ride with the group on Friday, April 25",
+        "Stay home from school on Wednesday"
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line that starts with If it rains. Read what changes.",
+      "explain": "Sam should ride with the group on Friday, April 25. The last line says the ride moves to Friday if it rains on Wednesday.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "if-then",
+        "rain-plan"
+      ]
+    },
+    {
+      "id": "f5-i61",
+      "skill": "F5",
+      "passage": "f5-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What time does Dinosaur Day start?",
+      "options": [
+        "8:00 AM",
+        "12:00 PM",
+        "11:00 AM"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the line with the day. Read the first time after the word from.",
+      "explain": "Dinosaur Day starts at 11:00 AM. It is in the second line. 12:00 PM is when it ends, and 8 is part of the date.",
+      "inference": 0,
+      "tags": [
+        "time-am",
+        "number-trap"
+      ]
+    },
+    {
+      "id": "f5-i62",
+      "skill": "F5",
+      "passage": "f5-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben wants to be sure he gets a seat. What should he do?",
+      "options": [
+        "Sign up at the front desk",
+        "Come to the Story Room at 12:00 PM",
+        "Bring a chair from home"
+      ],
+      "answer": 0,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line about seats. Read what it says to do.",
+      "explain": "Ben should sign up at the front desk. The last line says there are 30 seats and to sign up there to get one.",
+      "inference": 1,
+      "tags": [
+        "what-to-do",
+        "sign-up"
+      ]
+    },
+    {
+      "id": "f5-i63",
+      "skill": "F5",
+      "passage": "f5-p28",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Ana asks what Dr. Bell will bring. Tap the line that tells her.",
+      "unit": "row",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        3
+      ],
+      "hint": "Look for the words will bring.",
+      "explain": "Tap the line that says Dr. Bell will bring a model of a T. rex tooth. It is the fourth line.",
+      "inference": 0,
+      "tags": [
+        "find-the-line"
+      ]
+    },
+    {
+      "id": "f5-i64",
+      "skill": "F5",
+      "passage": "f5-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What is different about Maya's trip home today?",
+      "options": [
+        "She will walk home with Leo in the rain.",
+        "She will take the bus with Leo.",
+        "Her dad will drive her home in the car."
+      ],
+      "pictures": [
+        "🚶",
+        "🚌",
+        "🚗"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the line about walking with Leo. Then read the next line. Look for the word instead.",
+      "explain": "Her dad will drive her home in the car. The second line says she will not walk with Leo, and the third line says Dad will pick her up in the car instead.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "what-to-do-instead"
+      ]
+    },
+    {
+      "id": "f5-i65",
+      "skill": "F5",
+      "passage": "f5-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Where and when should Maya wait for her dad?",
+      "options": [
+        "At the front door at 12:05 PM",
+        "At Leo's house at 3:15 PM",
+        "At the front door at 3:15 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the line that starts with Wait. Read the place and the time.",
+      "explain": "Maya should wait at the front door at 3:15 PM. It is in the fourth line. 12:05 PM is when Dad sent the text.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "place",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f5-i66",
+      "skill": "F5",
+      "passage": "f5-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What will Maya find in the car?",
+      "options": [
+        "Her art box",
+        "Her rain boots",
+        "Her lunch"
+      ],
+      "pictures": [
+        "🎨",
+        "🥾",
+        "🥪"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line with the word car at the end.",
+      "explain": "Maya will find her rain boots. The last line says they are in the car.",
+      "inference": 0,
+      "tags": [
+        "detail"
+      ]
+    },
+    {
+      "id": "f5-i67",
+      "skill": "F5",
+      "passage": "f5-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "When is Sam's guitar lesson this week?",
+      "options": [
+        "Tuesday at 4:30 PM",
+        "Wednesday at 4:30 PM",
+        "Wednesday at 2:00 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Read the line with the days. Then find the line about the time.",
+      "explain": "The lesson is on Wednesday at 4:30 PM. The second line gives the new day, and the third line says the time stays the same. The 2 is the room number.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "day-and-time",
+        "number-trap"
+      ]
+    },
+    {
+      "id": "f5-i68",
+      "skill": "F5",
+      "passage": "f5-p30",
+      "format": "sort",
+      "level": 2,
+      "prompt": "What changed this week? Sort each part of Sam's lesson.",
+      "bins": [
+        "Changed this week",
+        "Same as before"
+      ],
+      "cards": [
+        {
+          "text": "The day",
+          "bin": 0,
+          "emoji": "📅"
+        },
+        {
+          "text": "The time",
+          "bin": 1,
+          "emoji": "🕟"
+        },
+        {
+          "text": "The place",
+          "bin": 0,
+          "emoji": "📍"
+        }
+      ],
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Look for the words not and same. Not shows a change. Same shows no change.",
+      "explain": "The day and the place changed: the lesson is on Wednesday, in Room 2 at the library. The time is the same, 4:30 PM.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "same-different"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i69",
+      "skill": "F5",
+      "passage": "f5-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What should Sam bring to the lesson?",
+      "options": [
+        "His music book and his guitar picks",
+        "His library card and his music book",
+        "His guitar picks and a sticky note"
+      ],
+      "answer": 0,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line that starts with Bring.",
+      "explain": "Sam should bring his music book and his guitar picks. It is in the last line.",
+      "inference": 0,
+      "tags": [
+        "what-to-bring"
+      ]
+    },
+    {
+      "id": "f5-i70",
+      "skill": "F5",
+      "passage": "f5-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What will the friends look at on Moon Night?",
+      "options": [
+        "Priya's rover",
+        "The lights of Harbor Town",
+        "The craters on the Moon"
+      ],
+      "pictures": [
+        "🤖",
+        "🏙️",
+        "🌙"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the line that starts with We will look.",
+      "explain": "They will look at the craters on the Moon. It is in the fourth line.",
+      "inference": 0,
+      "tags": [
+        "detail"
+      ]
+    },
+    {
+      "id": "f5-i71",
+      "skill": "F5",
+      "passage": "f5-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Sam can come. By what day should he tell Priya?",
+      "options": [
+        "Friday",
+        "Wednesday",
+        "Saturday"
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line that asks you to tell Priya. Read the day in it.",
+      "explain": "Sam should tell Priya by Wednesday. It is in the last line. Friday is the day of Moon Night.",
+      "inference": 0,
+      "tags": [
+        "rsvp",
+        "deadline",
+        "two-days"
+      ]
+    },
+    {
+      "id": "f5-i72",
+      "skill": "F5",
+      "passage": "f5-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Why should Sam bring a warm jacket?",
+      "options": [
+        "It will rain.",
+        "It gets cold at night.",
+        "The yard is wet."
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line about the jacket. Read the sentence after it.",
+      "explain": "Sam should bring a warm jacket because it gets cold at night. It is in the fifth line.",
+      "inference": 0,
+      "tags": [
+        "why",
+        "what-to-bring"
+      ]
+    },
+    {
+      "id": "f5-i73",
+      "skill": "F5",
+      "passage": "f5-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya reads the whole chat. Where and when will her team test the rover?",
+      "options": [
+        "In the gym on Wednesday at 3:30 PM",
+        "In the hall outside Room 12 on Wednesday at 3:30 PM",
+        "In the hall outside Room 12 on Thursday at 3:30 PM",
+        "In Room 12 on Monday at 4:05 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the message that starts with Update. Then read the next message. What moves, and what stays the same?",
+      "explain": "The team tests the rover in the hall outside Room 12 on Wednesday at 3:30 PM. The update moves the test to the hall, and it says same day and same time.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "place",
+        "latest-message"
+      ]
+    },
+    {
+      "id": "f5-i74",
+      "skill": "F5",
+      "passage": "f5-p32",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The test is in the hall now. What should Priya's team do to get ready?",
+      "options": [
+        "Bring a long cord to plug in the rover",
+        "Ask to go last instead of first",
+        "Charge the rover's battery fully before the test",
+        "Bring the rover to the gym first"
+      ],
+      "answer": 2,
+      "evidence": [
+        7
+      ],
+      "hint": "Find Ms. Ortiz's last message. Look for the word because.",
+      "explain": "The team should charge the battery fully. Ms. Ortiz's last message says to bring a fully charged battery, because there are no plugs in the hall.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "what-to-bring",
+        "because"
+      ]
+    },
+    {
+      "id": "f5-i75",
+      "skill": "F5",
+      "passage": "f5-p32",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Ben asks why the test moved. Tap the message that tells him.",
+      "unit": "row",
+      "answer": [
+        4
+      ],
+      "evidence": [
+        4
+      ],
+      "hint": "Look for a message about the gym.",
+      "explain": "Tap the update from Ms. Ortiz. It says the gym is being used for a basketball game on Wednesday.",
+      "inference": 0,
+      "tags": [
+        "cause"
+      ]
+    },
+    {
+      "id": "f5-i76",
+      "skill": "F5",
+      "passage": "f5-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ana's family wants one team picture and one picture of just Ana. How much money should they send?",
+      "options": [
+        "$6",
+        "$10",
+        "$16",
+        "$20"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line with the prices. Add the two prices together.",
+      "explain": "They should send $16. The line with the prices says a team picture costs $10 and a picture of one child costs $6. $10 and $6 make $16.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i77",
+      "skill": "F5",
+      "passage": "f5-p33",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Ben gets ready for picture day. Sort each thing.",
+      "bins": [
+        "Wear or bring it",
+        "Leave it at home"
+      ],
+      "cards": [
+        {
+          "text": "Blue team shirt",
+          "bin": 0,
+          "emoji": "👕"
+        },
+        {
+          "text": "Muddy cleats",
+          "bin": 1
+        },
+        {
+          "text": "Blue socks",
+          "bin": 0,
+          "emoji": "🧦"
+        },
+        {
+          "text": "Clean cleats",
+          "bin": 0
+        },
+        {
+          "text": "White team shirt",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Read the line about what to wear and the line about cleats. Check each card against them.",
+      "explain": "Ben wears his blue team shirt and blue socks, and brings clean cleats. The email says muddy cleats look dark in pictures, and it asks for the blue team shirt, so the white one stays home.",
+      "inference": 1,
+      "tags": [
+        "what-to-bring",
+        "list-check"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i78",
+      "skill": "F5",
+      "passage": "f5-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben's family wants to order pictures. When must they give Coach Novak the form and the cash?",
+      "options": [
+        "On Saturday at 9:00 AM",
+        "On Sunday at 6:00 PM",
+        "On Saturday at 9:15 AM",
+        "By Thursday"
+      ],
+      "answer": 3,
+      "evidence": [
+        6
+      ],
+      "hint": "Find the line about the yellow form. Look for the word by.",
+      "explain": "They must give it to her by Thursday. The line about the yellow form says to give it with cash by Thursday. Saturday is picture day.",
+      "inference": 0,
+      "tags": [
+        "deadline",
+        "two-days"
+      ]
+    },
+    {
+      "id": "f5-i79",
+      "skill": "F5",
+      "passage": "f5-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ben always buys pizza on Pizza Day. Which day should he buy it this week?",
+      "options": [
+        "Tuesday",
+        "Thursday",
+        "Friday",
+        "Monday"
+      ],
+      "answer": 1,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the line about Pizza Day. Read the words from and to.",
+      "explain": "Ben should buy pizza on Thursday. The first line says Pizza Day moves from Friday to Thursday this week.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "day"
+      ]
+    },
+    {
+      "id": "f5-i80",
+      "skill": "F5",
+      "passage": "f5-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The kitchen is closed on Friday. What should Ana do for lunch that day?",
+      "options": [
+        "Buy pizza in the cafeteria",
+        "Pay $3 for a school lunch",
+        "Bring a packed lunch from home",
+        "Eat at the salad bar"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the two lines about Friday. Read what students need.",
+      "explain": "Ana should bring a packed lunch from home. The third line says students need to bring one on Friday, because the kitchen is closed.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "what-to-do-instead"
+      ]
+    },
+    {
+      "id": "f5-i81",
+      "skill": "F5",
+      "passage": "f5-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "On Tuesday, Ana buys a school lunch and a milk. How much does she pay?",
+      "options": [
+        "$3",
+        "$0.50",
+        "$3.50",
+        "$4"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line with the prices. Add the lunch and the milk.",
+      "explain": "Ana pays $3.50. The last line says a lunch costs $3 and milk costs $0.50.",
+      "inference": 1,
+      "tags": [
+        "price-math"
+      ]
+    },
+    {
+      "id": "f5-i82",
+      "skill": "F5",
+      "passage": "f5-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam does not have a compass. What should he do on the form?",
+      "options": [
+        "Leave the compass box empty",
+        "Circle no, and the club will lend him one",
+        "Circle yes, and buy a compass before October 4",
+        "Write his age in the compass box"
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Read the whole compass box. It has two parts: a question, and what happens if the answer is no.",
+      "explain": "Sam should circle no. The compass box says that if the answer is no, the club will lend him one.",
+      "inference": 1,
+      "tags": [
+        "form-box",
+        "if-then",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f5-i83",
+      "skill": "F5",
+      "passage": "f5-p35",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Sam's mom asks where to drop him off on Saturday. Tap the box that tells her.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Look for a box that names a place.",
+      "explain": "Tap the Meet at box. It says to meet at the trail sign by the old mill.",
+      "inference": 0,
+      "tags": [
+        "form-box",
+        "place"
+      ]
+    },
+    {
+      "id": "f5-i84",
+      "skill": "F5",
+      "passage": "f5-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is orienteering?",
+      "options": [
+        "Drawing a map of Story Woods",
+        "Running on a track as fast as you can",
+        "Walking a dog on the trails",
+        "Finding your way from flag to flag with a map and a compass"
+      ],
+      "answer": 3,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the word orienteering. Read the sentence just before it.",
+      "explain": "Orienteering means finding your way from flag to flag with a map and a compass. The first box tells what the club does and then names the sport.",
+      "inference": 0,
+      "tags": [
+        "word-in-context"
+      ]
+    },
+    {
+      "id": "f5-i85",
+      "skill": "F5",
+      "passage": "f5-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which ferry should Sam and Grandma Rose take now?",
+      "options": [
+        "The 9:00 AM ferry",
+        "The 11:30 AM ferry",
+        "The 8:20 AM ferry",
+        "The 12:00 PM ferry"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        4
+      ],
+      "hint": "Find the line that says canceled. Then find the next ferry.",
+      "explain": "They should take the 11:30 AM ferry. The 9:00 AM ferry is canceled, and the alert says the next ferry leaves at 11:30 AM.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "cancelled",
+        "two-times"
+      ]
+    },
+    {
+      "id": "f5-i86",
+      "skill": "F5",
+      "passage": "f5-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What time should Sam and Grandma Rose be at the dock?",
+      "options": [
+        "11:30 AM",
+        "9:45 AM",
+        "11:15 AM",
+        "11:45 AM"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        6
+      ],
+      "hint": "Find the time of the next ferry. Then read how early to be at the dock, and count back.",
+      "explain": "They should be at the dock at 11:15 AM. The next ferry leaves at 11:30 AM, and the last line says to come 15 minutes before.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "time-math",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i87",
+      "skill": "F5",
+      "passage": "f5-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Grandma Rose already has tickets for the 9:00 AM ferry. What should she do with them?",
+      "options": [
+        "Buy new tickets for 11:30 AM",
+        "Use the same tickets on the 11:30 AM ferry",
+        "Throw them away",
+        "Keep them for tomorrow"
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line about tickets.",
+      "explain": "She should use the same tickets on the 11:30 AM ferry. The line about tickets says they can be used on that ferry, and no new tickets are needed.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "tickets"
+      ]
+    },
+    {
+      "id": "f5-i88",
+      "skill": "F5",
+      "passage": "f5-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam and Leo want to play at the same table as the twins. What should Ana do?",
+      "options": [
+        "Write their names in the signature box",
+        "Change the game to CHESS",
+        "Tell them they cannot come, because the table is full",
+        "Write their names in the players box"
+      ],
+      "answer": 3,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the box about players. Check how many names fit, and count the names already there.",
+      "explain": "Ana should write Sam and Leo in the players box. The box takes up to 4 names, and only 2 names are there now.",
+      "inference": 1,
+      "tags": [
+        "form-box",
+        "limit"
+      ]
+    },
+    {
+      "id": "f5-i89",
+      "skill": "F5",
+      "passage": "f5-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Ana adds Sam, who is 12, and Leo, who is 13. What should the age box say now?",
+      "options": [
+        "12",
+        "13",
+        "10",
+        "Nothing"
+      ],
+      "answer": 0,
+      "evidence": [
+        3
+      ],
+      "hint": "The box asks for the youngest player. Find the smallest age at the table.",
+      "explain": "The box should still say 12. It asks for the age of the youngest player. Ana, Ben and Sam are 12, and Leo is 13, so the youngest age is 12.",
+      "inference": 1,
+      "tags": [
+        "form-box",
+        "compare"
+      ]
+    },
+    {
+      "id": "f5-i90",
+      "skill": "F5",
+      "passage": "f5-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Where should Ana hand in the form, and by when?",
+      "options": [
+        "In the big hall, by Saturday, November 1",
+        "At the front desk, by Saturday, November 1",
+        "At the front desk, by Wednesday, October 29",
+        "In the big hall, by Wednesday, October 29"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Two lines have dates. Find the line that starts with Hand in.",
+      "explain": "Ana should hand it in at the front desk by Wednesday, October 29. It is in the line that starts with Hand in. November 1 is Board Game Day.",
+      "inference": 0,
+      "tags": [
+        "deadline",
+        "two-dates"
+      ]
+    },
+    {
+      "id": "f5-i91",
+      "skill": "F5",
+      "passage": "f5-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya wants to know if her fingernail can scratch quartz. What does the email say?",
+      "options": [
+        "Yes, because quartz is very soft",
+        "No, because quartz is much harder",
+        "Yes, but only with a magnifying glass"
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line that starts with Quartz.",
+      "explain": "A fingernail cannot scratch quartz, because quartz is much harder. It is in the line about quartz. Talc is the soft one.",
+      "inference": 0,
+      "tags": [
+        "detail",
+        "two-things"
+      ]
+    },
+    {
+      "id": "f5-i92",
+      "skill": "F5",
+      "passage": "f5-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How should Maya bring her rocks to the meeting?",
+      "options": [
+        "Two rocks in her coat pocket",
+        "One piece of talc and one piece of quartz",
+        "Two rocks in a paper bag with her name on it",
+        "Five rocks in a plastic box"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line that starts with Please bring.",
+      "explain": "Maya should bring two rocks in a paper bag with her name on it. It is in the line that starts with Please bring.",
+      "inference": 0,
+      "tags": [
+        "what-to-bring"
+      ]
+    },
+    {
+      "id": "f5-i93",
+      "skill": "F5",
+      "passage": "f5-p38",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Who brings each thing to the meeting? Sort them.",
+      "bins": [
+        "Maya brings it",
+        "Mr. Varga brings it"
+      ],
+      "cards": [
+        {
+          "text": "Two rocks from home",
+          "bin": 0,
+          "emoji": "🪨"
+        },
+        {
+          "text": "Talc",
+          "bin": 1
+        },
+        {
+          "text": "A paper bag with her name on it",
+          "bin": 0,
+          "emoji": "🛍️"
+        },
+        {
+          "text": "Quartz",
+          "bin": 1,
+          "emoji": "💎"
+        },
+        {
+          "text": "Magnifying glasses",
+          "bin": 1,
+          "emoji": "🔍"
+        }
+      ],
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "One line says Please bring. The next line says I will bring. Who is I?",
+      "explain": "Maya brings two rocks in a paper bag with her name on it. Mr. Varga wrote the email, so I will bring means he brings the talc, the quartz and the magnifying glasses.",
+      "inference": 1,
+      "tags": [
+        "what-to-bring",
+        "two-groups",
+        "my-means-sender"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i94",
+      "skill": "F5",
+      "passage": "f5-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "It is Wednesday, June 4. Where can Sam walk Pixel instead of the dog park?",
+      "options": [
+        "In the dog park, but only in the morning",
+        "At the skate park",
+        "On the new grass in the dog park",
+        "On the Beach Path by the ferry dock"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Check that June 4 is inside the closed days. Then find the word instead.",
+      "explain": "Sam can walk Pixel on the Beach Path. The park is closed from June 2 to June 6, and the notice says to use the Beach Path instead. It starts next to the ferry dock.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "what-to-do-instead",
+        "place"
+      ]
+    },
+    {
+      "id": "f5-i95",
+      "skill": "F5",
+      "passage": "f5-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What rule must Sam follow with Pixel on the Beach Path?",
+      "options": [
+        "Let him run free on the sand",
+        "Keep him on a leash",
+        "Bring him home by noon",
+        "Keep him off the path"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the line that starts with On the Beach Path.",
+      "explain": "Sam must keep Pixel on a leash. The line about the Beach Path says dogs must stay on a leash there.",
+      "inference": 0,
+      "tags": [
+        "rules"
+      ]
+    },
+    {
+      "id": "f5-i96",
+      "skill": "F5",
+      "passage": "f5-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is the first day Pixel can play in the dog park again?",
+      "options": [
+        "Monday, June 2",
+        "Friday, June 6",
+        "Saturday, June 7",
+        "Sunday, June 8"
+      ],
+      "answer": 2,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line with the word again.",
+      "explain": "Pixel can play there again on Saturday, June 7. The last line says the park opens again that day. Friday, June 6 is the last closed day.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "date",
+        "two-dates"
+      ]
+    },
+    {
+      "id": "f5-i97",
+      "skill": "F5",
+      "passage": "f5-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "The Mill Trail is closed. How can Priya and her mom get to the old mill?",
+      "options": [
+        "Wait at the picnic tables until the trail opens",
+        "Walk on the Mill Trail around the trees",
+        "Walk on the Creek Trail",
+        "Go to the campsite instead"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the line with the word still.",
+      "explain": "They can walk on the Creek Trail. The third line says you can still reach the old mill on the Creek Trail.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "what-to-do-instead"
+      ]
+    },
+    {
+      "id": "f5-i98",
+      "skill": "F5",
+      "passage": "f5-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "About how long will the walk to the mill take today?",
+      "options": [
+        "About 30 minutes",
+        "About 20 minutes",
+        "About 50 minutes",
+        "About 80 minutes"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the line that says the Creek Trail is longer. Read the two times. Which one is for today's trail?",
+      "explain": "The walk will take about 50 minutes. The fourth line says the Creek Trail walk takes about 50 minutes, not 30. 30 minutes is the time on the Mill Trail.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "two-times",
+        "compare"
+      ]
+    },
+    {
+      "id": "f5-i99",
+      "skill": "F5",
+      "passage": "f5-p40",
+      "format": "build",
+      "level": 3,
+      "prompt": "Priya texts her dad about the change. Fill in each part.",
+      "frame": "The {0} is closed because {1}. We will walk on the {2} instead.",
+      "slots": [
+        {
+          "kind": "problem",
+          "label": "What is closed",
+          "options": [
+            "Mill Trail",
+            "Creek Trail",
+            "campsite"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "why",
+          "label": "Why",
+          "options": [
+            "two big trees fell on it",
+            "it is muddy",
+            "the mill is closed"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "plan",
+          "label": "New plan",
+          "options": [
+            "Creek Trail",
+            "Mill Trail",
+            "campsite road"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Read the first three lines of the notice. Find what is closed, why, and the other way to the mill.",
+      "explain": "The Mill Trail is closed because two big trees fell on it. They will walk on the Creek Trail instead. All three parts are in the first three lines.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "cause",
+        "retell"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i100",
+      "skill": "F5",
+      "passage": "f5-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Friday morning is cloudy. What will Sam's class do from 10:00 AM to 11:00 AM?",
+      "options": [
+        "Look through the solar telescope on the field",
+        "Listen to Dr. Hale's talk about the Sun in the library",
+        "Wait on the field until the clouds are gone",
+        "Stay in the classroom, because the visit is canceled"
+      ],
+      "answer": 1,
+      "evidence": [
+        7
+      ],
+      "hint": "Find the line that starts with The telescope needs a clear sky. Read what happens if it is cloudy.",
+      "explain": "The class will listen to Dr. Hale's talk in the library. The eighth line says that if it is cloudy, she will give a talk there at the same time instead.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "if-then",
+        "what-to-do-instead"
+      ]
+    },
+    {
+      "id": "f5-i101",
+      "skill": "F5",
+      "passage": "f5-p41",
+      "format": "tap",
+      "level": 4,
+      "prompt": "It was cloudy on Friday. When is the next chance to look at sunspots?",
+      "options": [
+        "Friday, March 7, at 11:00 AM",
+        "Saturday, March 8, from 10:00 AM to 11:00 AM",
+        "Monday, March 10, from 10:00 AM to 11:00 AM",
+        "Tuesday, March 11, from 10:00 AM to 11:00 AM"
+      ],
+      "answer": 2,
+      "evidence": [
+        8
+      ],
+      "hint": "Find the line that says we will try the viewing again. Read the day and the time.",
+      "explain": "The next chance is Monday, March 10, from 10:00 AM to 11:00 AM. The ninth line says the class will try the viewing again then if Friday is cloudy.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "date",
+        "two-dates"
+      ]
+    },
+    {
+      "id": "f5-i102",
+      "skill": "F5",
+      "passage": "f5-p41",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Sam learns the safety rule. Sort each way of looking at the Sun.",
+      "bins": [
+        "Safe to do",
+        "Never do this"
+      ],
+      "cards": [
+        {
+          "text": "Through Dr. Hale's solar telescope",
+          "bin": 0,
+          "emoji": "🔭"
+        },
+        {
+          "text": "With your eyes alone",
+          "bin": 1,
+          "emoji": "👀"
+        },
+        {
+          "text": "Through sunglasses",
+          "bin": 1,
+          "emoji": "🕶️"
+        },
+        {
+          "text": "Through a normal telescope",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        2,
+        5,
+        6
+      ],
+      "hint": "Find the line with the safety rule. Then find the line that starts with Only.",
+      "explain": "Only the solar telescope is safe, because its filter blocks almost all of the Sun's light. The safety rule says never to look at the Sun with your eyes alone, through sunglasses or through a normal telescope.",
+      "inference": 1,
+      "tags": [
+        "safety",
+        "rules",
+        "two-groups"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i103",
+      "skill": "F5",
+      "passage": "f5-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "It rains hard on the morning of April 26. When should Maya come to plant?",
+      "options": [
+        "Saturday, April 26, at 11:00 AM, after the rain",
+        "Sunday, April 27, at lunch",
+        "Saturday, May 3, from 9:00 AM to 11:00 AM",
+        "Sunday, April 27, from 9:00 AM to 11:00 AM"
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        7
+      ],
+      "hint": "Find the sentence that starts with If it rains. Then look back for the time of Planting Day, because the time stays the same.",
+      "explain": "Maya should come on Sunday, April 27, from 9:00 AM to 11:00 AM. The second paragraph says the club will plant on Sunday at the same time if it rains hard, and Planting Day runs from 9:00 AM to 11:00 AM.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "rain-plan",
+        "if-then",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i104",
+      "skill": "F5",
+      "passage": "f5-p42",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam wants to help water the beds. What should he do?",
+      "options": [
+        "Bring a watering can to Planting Day",
+        "Write his name under Wednesday or Friday on the chart outside the cafeteria",
+        "Write his name under any day on the chart in the kitchen",
+        "Ask the cooks if he can work at the salad bar"
+      ],
+      "answer": 1,
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Read the third paragraph. Find where the chart is. Then find which days still need names.",
+      "explain": "Sam should write his name under Wednesday or Friday on the watering chart outside the cafeteria. The third paragraph says where the chart is, and that only those two days still have open spots.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "sign-up"
+      ]
+    },
+    {
+      "id": "f5-i105",
+      "skill": "F5",
+      "passage": "f5-p42",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that explains why the club moves Planting Day when it rains hard.",
+      "unit": "sentence",
+      "answer": [
+        8
+      ],
+      "evidence": [
+        8
+      ],
+      "hint": "Read the second paragraph. Look for a sentence about seeds and rain.",
+      "explain": "Tap the sentence about seeds. It says heavy rain can wash seeds out of the soil before their roots grow. It is the last sentence of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "cause",
+        "newsletter"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i106",
+      "skill": "F5",
+      "passage": "f5-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana wrote CAFÉ in Part C. How much money should go in the envelope?",
+      "options": [
+        "$5",
+        "$6",
+        "$11",
+        "$12"
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Read Part D. Find the ticket price. Then check what Part D says to add for CAFÉ.",
+      "explain": "The envelope needs $11. Part D says every student pays $5 for the ticket and adds $6 for a café lunch. $5 and $6 make $11.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "combine-parts",
+        "form-box"
+      ]
+    },
+    {
+      "id": "f5-i107",
+      "skill": "F5",
+      "passage": "f5-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana's dad says she may touch the animals in the Touch Pool. What should he write, and where?",
+      "options": [
+        "YES in Part E",
+        "NO in Part B",
+        "YES in Part B",
+        "His name in Part A"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the part about the Touch Pool. Read what each word means.",
+      "explain": "He should write YES in Part B. Part B is about the Touch Pool, and YES means Ana may use it.",
+      "inference": 0,
+      "tags": [
+        "form-box"
+      ]
+    },
+    {
+      "id": "f5-i108",
+      "skill": "F5",
+      "passage": "f5-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Today is Thursday, May 15. The slip is signed. What should Ana do with it, and by when?",
+      "options": [
+        "Give it to Ms. Ortiz by Friday, May 16",
+        "Give it to Ms. Ortiz on the trip day, Wednesday, May 21",
+        "Give it to the aquarium café by Friday, May 16",
+        "Keep it in her bag until the bus leaves on May 21"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "The slip has two dates. Find the Return to box.",
+      "explain": "Ana should give it to Ms. Ortiz by Friday, May 16. The Return to box names Ms. Ortiz and that date. May 21 is the trip day.",
+      "inference": 0,
+      "tags": [
+        "deadline",
+        "two-dates"
+      ]
+    },
+    {
+      "id": "f5-i109",
+      "skill": "F5",
+      "passage": "f5-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam reads the whole chat. At what time on Sunday will Leo's group ride?",
+      "options": [
+        "2:00 PM",
+        "3:00 PM",
+        "4:00 PM",
+        "3:45 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        6
+      ],
+      "hint": "Find the new start time on Sunday. Then find how long after the start Leo's group goes.",
+      "explain": "Leo's group will ride at 4:00 PM. The Jam starts at 3:00 PM on Sunday, and Leo says his group still goes one hour after the start.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "time-math",
+        "latest-message"
+      ]
+    },
+    {
+      "id": "f5-i110",
+      "skill": "F5",
+      "passage": "f5-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam still wants to arrive 15 minutes before Leo's group. When should he get to the skate park on Sunday?",
+      "options": [
+        "1:45 PM",
+        "2:45 PM",
+        "3:45 PM",
+        "4:15 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        6
+      ],
+      "hint": "First work out when Leo's group rides on Sunday. Then count back 15 minutes.",
+      "explain": "Sam should get there at 3:45 PM. Leo's group rides one hour after the 3:00 PM start, at 4:00 PM, and 15 minutes before that is 3:45 PM. 1:45 PM was Sam's plan for Saturday.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "time-math",
+        "what-to-do-instead"
+      ]
+    },
+    {
+      "id": "f5-i111",
+      "skill": "F5",
+      "passage": "f5-p44",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Maya wants to know what is different now. Sort each part of the Skate Jam plan.",
+      "bins": [
+        "Changed",
+        "Same as before"
+      ],
+      "cards": [
+        {
+          "text": "The day",
+          "bin": 0,
+          "emoji": "📅"
+        },
+        {
+          "text": "The start time",
+          "bin": 0,
+          "emoji": "🕒"
+        },
+        {
+          "text": "Leo's group goes one hour after the start",
+          "bin": 1,
+          "emoji": "🛹"
+        },
+        {
+          "text": "The place: the skate park",
+          "bin": 1,
+          "emoji": "📍"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "hint": "Compare Leo's first two messages with the messages after the update. Look for the words moves and still.",
+      "explain": "The day changed to Sunday and the start time changed to 3:00 PM. Leo's group still goes one hour after the start, and the Jam is still at the skate park.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "same-different"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i112",
+      "skill": "F5",
+      "passage": "f5-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana has band practice on Thursday next week. When will it start and end?",
+      "options": [
+        "3:15 PM to 4:30 PM",
+        "3:30 PM to 4:00 PM",
+        "3:15 PM to 4:15 PM",
+        "3:15 PM to 4:00 PM"
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the usual practice time. Then find the line that says one thing is different, and fix only that part.",
+      "explain": "Practice will run from 3:15 PM to 4:00 PM. The start time stays 3:15 PM, but on Thursday practice ends at 4:00 PM because of a parent meeting at 4:15 PM.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "two-times",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i113",
+      "skill": "F5",
+      "passage": "f5-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What should Maya do with her music folders next week?",
+      "options": [
+        "Pick up a red folder on Tuesday, put the concert songs in it, and take the blue folder home",
+        "Pick up a blue folder on Tuesday and leave the red folder on the shelf",
+        "Give her blue folder to the substitute on Thursday",
+        "Take the red folder home on Tuesday and leave the songs in the blue folder"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Two lines are about folders. Read both, and keep the colors straight.",
+      "explain": "Maya should pick up a red folder on Tuesday, put the concert songs in it, and take her old blue folder home. Both steps are in the two lines about folders.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "what-to-do"
+      ]
+    },
+    {
+      "id": "f5-i114",
+      "skill": "F5",
+      "passage": "f5-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why will a substitute teacher lead band practice next week?",
+      "options": [
+        "Ms. Gray will be at a parent meeting at 4:15 PM",
+        "The music room is getting a new floor",
+        "Ms. Gray will be at a meeting for music teachers in another town",
+        "The band is getting ready for the spring concert"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the line with the word substitute. Look for the word so.",
+      "explain": "Ms. Gray will be at a meeting for music teachers in another town. The second line gives this reason. The parent meeting is only why Thursday's practice ends early.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "substitute",
+        "cause"
+      ]
+    },
+    {
+      "id": "f5-i115",
+      "skill": "F5",
+      "passage": "f5-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam and Grandma Rose ride the train from Harbor Town on June 14. What should they do at Mill Creek?",
+      "options": [
+        "Stay on the train until it reaches Lantern Peaks",
+        "Get off and take the shuttle bus from the north parking lot",
+        "Get off and buy new tickets for the shuttle bus",
+        "Get off and wait for the next train"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the line that starts with At Mill Creek. Then read the next line to find where the bus stops.",
+      "explain": "They should get off and take the free shuttle bus from the parking lot on the north side of the station. The third and fourth lines say this. Their train tickets also work on the bus.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "what-to-do-instead",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i116",
+      "skill": "F5",
+      "passage": "f5-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Grandma Rose wants to take her bike all the way to Lantern Peaks on June 14. What problem will she have?",
+      "options": [
+        "Her bike cannot go on any train",
+        "Her bike needs its own ticket",
+        "Her bike must stay at Harbor Town station",
+        "Her bike cannot go on the shuttle bus"
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the line about bikes. It has two parts. Which part of her trip is by bus?",
+      "explain": "Her bike cannot go on the shuttle bus. The line about bikes says bikes are allowed on trains but not on the shuttle bus, and the bus is the last part of the trip on June 14.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "rules"
+      ]
+    },
+    {
+      "id": "f5-i117",
+      "skill": "F5",
+      "passage": "f5-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The trip to Lantern Peaks usually takes 45 minutes. About how long will it take on June 14?",
+      "options": [
+        "About 25 minutes",
+        "About 45 minutes",
+        "About 65 minutes",
+        "About 70 minutes"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the line that says how much longer the trip will be. Add that to the usual time.",
+      "explain": "It will take about 65 minutes. The notice says the trip will be about 20 minutes longer than usual, and 45 minutes plus 20 minutes is 65 minutes. 25 minutes is only the bus ride.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "time-math"
+      ]
+    },
+    {
+      "id": "f5-i118",
+      "skill": "F5",
+      "passage": "f5-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben is 12. What should he write in the Group box?",
+      "options": [
+        "MORNING",
+        "AFTERNOON",
+        "10:00 AM",
+        "1:00 PM to 3:00 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        3,
+        4
+      ],
+      "hint": "Find Ben's age on the form. Then find which group has his age. Write the word the Group box asks for.",
+      "explain": "Ben should write AFTERNOON. The Two groups box says ages 12 to 14 race in the afternoon, and the Group box asks for the word MORNING or AFTERNOON, not a time.",
+      "inference": 1,
+      "tags": [
+        "form-box",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i119",
+      "skill": "F5",
+      "passage": "f5-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ben's cousin is 10 and wants to race too. When will she race?",
+      "options": [
+        "From 1:00 PM to 3:00 PM, with Ben",
+        "From 12:00 PM to 1:00 PM",
+        "From 10:00 AM to 12:00 PM",
+        "She will not race, because she is too young"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Read the Two groups box. Which group has the age 10 in it?",
+      "explain": "She will race from 10:00 AM to 12:00 PM. The Two groups box says ages 9 to 11 race in the morning, and 10 is in that group.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "age-rule"
+      ]
+    },
+    {
+      "id": "f5-i120",
+      "skill": "F5",
+      "passage": "f5-p47",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Ben plans what to do and when. Sort each job.",
+      "bins": [
+        "By Wednesday, February 5",
+        "On Saturday, February 8"
+      ],
+      "cards": [
+        {
+          "text": "Get a parent's signature on the form",
+          "bin": 0,
+          "emoji": "✍️"
+        },
+        {
+          "text": "Hand in the form at the front desk",
+          "bin": 0,
+          "emoji": "📝"
+        },
+        {
+          "text": "Pay the $3 entry fee at the door",
+          "bin": 1,
+          "emoji": "💵"
+        },
+        {
+          "text": "Bring his controller with his name on it",
+          "bin": 1,
+          "emoji": "🎮"
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "hint": "The form must be finished before it is handed in. Find the deadline. Then find what happens on the day of the Cup.",
+      "explain": "By February 5, Ben gets the signature and hands in the form, as the Deadline box says. On February 8, he pays $3 at the door and brings his labeled controller.",
+      "inference": 1,
+      "tags": [
+        "deadline",
+        "sequence",
+        "two-groups"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i121",
+      "skill": "F5",
+      "passage": "f5-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya counts the coding cards in her kit before she returns it. She finds 22. What will happen?",
+      "options": [
+        "She will pay $1",
+        "She will pay $2",
+        "She will pay $22",
+        "She will pay $24"
+      ],
+      "answer": 1,
+      "evidence": [
+        11
+      ],
+      "hint": "Find how many cards a kit should have. Work out how many are missing. Then find the cost of each missing card.",
+      "explain": "She will pay $2. A kit should have 24 cards, so 2 are missing, and each missing card costs $1. It is in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "rules"
+      ]
+    },
+    {
+      "id": "f5-i122",
+      "skill": "F5",
+      "passage": "f5-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam's week with a kit is almost over. Nobody is waiting for it, and he wants it longer. What can he do?",
+      "options": [
+        "Keep it as long as he wants",
+        "Put it in the book drop and borrow it again",
+        "Renew it two times, for two more weeks",
+        "Renew it one time, for one more week"
+      ],
+      "answer": 3,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Read the second paragraph. Find the sentence that starts with If nobody is waiting.",
+      "explain": "Sam can renew it one time, for one more week. The second paragraph says this when nobody is waiting for the kit.",
+      "inference": 0,
+      "tags": [
+        "rules",
+        "if-then"
+      ]
+    },
+    {
+      "id": "f5-i123",
+      "skill": "F5",
+      "passage": "f5-p48",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Leo's robot stops moving, even after he charges it. Tap the sentence that tells him what to do.",
+      "unit": "sentence",
+      "answer": [
+        14
+      ],
+      "evidence": [
+        13,
+        14
+      ],
+      "hint": "Read the last paragraph. Find the sentence about a robot that stops working. The sentence after it tells the steps.",
+      "explain": "Tap the last sentence. It tells Leo to write a note about the problem and put it in the box, so Mrs. Hall can send the robot to be fixed. The sentence before it says not to open the robot.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "newsletter"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i124",
+      "skill": "F5",
+      "passage": "f5-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya's mom reads the email. Which plan for Stegosaurus Night is right now?",
+      "options": [
+        "Friday, January 17, 6:00 PM to 8:00 PM, in the Fossil Hall",
+        "Friday, January 24, 6:00 PM to 8:00 PM, in the Fossil Hall",
+        "Friday, January 24, 6:00 PM to 8:00 PM, at the fossil cleaning table",
+        "Wednesday, January 22, 6:00 PM to 8:00 PM, in the Fossil Hall"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the line with the words moves from. Then read the next line for the time and the place.",
+      "explain": "Stegosaurus Night is on Friday, January 24, from 6:00 PM to 8:00 PM, in the Fossil Hall. The third line gives the new date, and the fourth line says the time and place stay the same. January 22 is the day to reply by.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "combine-parts",
+        "two-dates"
+      ]
+    },
+    {
+      "id": "f5-i125",
+      "skill": "F5",
+      "passage": "f5-p49",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Maya wants to know what is different now. Sort each part of Stegosaurus Night.",
+      "bins": [
+        "Changed",
+        "Same as before"
+      ],
+      "cards": [
+        {
+          "text": "The date",
+          "bin": 0,
+          "emoji": "📅"
+        },
+        {
+          "text": "The fossil cleaning table",
+          "bin": 0,
+          "emoji": "🧹"
+        },
+        {
+          "text": "Starting at 6:00 PM",
+          "bin": 1,
+          "emoji": "🕕"
+        },
+        {
+          "text": "Meeting in the Fossil Hall",
+          "bin": 1,
+          "emoji": "🦕"
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        7,
+        8
+      ],
+      "hint": "Look for signal words. Moves and changed show what is different. Still shows what stayed.",
+      "explain": "The date changed to January 24, and the fossil cleaning table is replaced by making a plaster spike. The 6:00 PM start and the Fossil Hall are still the same.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "same-different"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i126",
+      "skill": "F5",
+      "passage": "f5-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Why should Maya wear old clothes to Stegosaurus Night?",
+      "options": [
+        "She will clean fossils at the cleaning table",
+        "The Fossil Hall is cold at night",
+        "Wet plaster is messy and can leave white marks",
+        "She will measure the dusty plates"
+      ],
+      "answer": 2,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the line about clothes. Look for the word because.",
+      "explain": "Wet plaster is messy and can leave white marks. The line about clothes gives this reason, and the line before it says each member will make a plaster spike.",
+      "inference": 0,
+      "tags": [
+        "cause",
+        "what-to-bring"
+      ]
+    },
+    {
+      "id": "f5-i127",
+      "skill": "F5",
+      "passage": "f5-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya found a shiny gray rock by the creek, but she does not know its name. What should she write on its card?",
+      "options": [
+        "A question mark, the creek, and her own name",
+        "Nothing, because she cannot trade a rock with no name",
+        "Shiny gray rock, the creek, and Mr. Varga's name",
+        "A question mark and Mr. Varga's name"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the three things that go on a card. Then find what to write when you do not know the name.",
+      "explain": "Maya should write a question mark, the creek, and her own name. The second paragraph says a card has the rock's name, the place it was found and your name, and to write a question mark if you do not know the name.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "problem-solving",
+        "rules"
+      ]
+    },
+    {
+      "id": "f5-i128",
+      "skill": "F5",
+      "passage": "f5-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya is 11. She wants to trade at the Rock Swap. Who must come with her?",
+      "options": [
+        "Mr. Varga",
+        "Leo, because he is 13",
+        "Nobody, because every member can come alone",
+        "A parent"
+      ],
+      "answer": 3,
+      "evidence": [
+        12
+      ],
+      "hint": "Read the swap rules. Find the rule that names an age.",
+      "explain": "A parent must come with Maya. The third paragraph says members under 12 must come with a parent, and Maya is 11.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "age-rule"
+      ]
+    },
+    {
+      "id": "f5-i129",
+      "skill": "F5",
+      "passage": "f5-p50",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Ana offers Sam a crystal for his piece of quartz. Sam says no. Tap the sentence that tells whether the trade happens.",
+      "unit": "sentence",
+      "answer": [
+        9
+      ],
+      "evidence": [
+        9
+      ],
+      "hint": "Read the swap rules in the third paragraph. Find the rule about saying yes.",
+      "explain": "Tap the sentence that says a trade only happens when both members say yes. Sam said no, so the trade does not happen.",
+      "inference": 1,
+      "tags": [
+        "rules",
+        "newsletter"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i130",
+      "skill": "F5",
+      "passage": "f5-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "On Tuesday, the clue at Station 3 says Station 4 is in square D3. Where should Sam and Priya go?",
+      "options": [
+        "Square D3, the reading room",
+        "Square B4, the map table",
+        "Square A1, by the globe",
+        "Back to the front desk"
+      ],
+      "answer": 1,
+      "evidence": [
+        7
+      ],
+      "hint": "Find the line that starts with Change for Tuesday. Read where Station 4 moves.",
+      "explain": "They should go to square B4, the map table. The change for Tuesday says the reading room in D3 is closed, so Station 4 moves to B4 on Tuesday only.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "what-to-do-instead",
+        "place"
+      ]
+    },
+    {
+      "id": "f5-i131",
+      "skill": "F5",
+      "passage": "f5-p51",
+      "format": "order",
+      "level": 4,
+      "prompt": "Priya shows Sam how to find square C2. Put the steps in order.",
+      "steps": [
+        "Pick up a floor map at the front desk.",
+        "Put one finger on the letter C at the top.",
+        "Put one finger on the number 2 at the side.",
+        "Slide both fingers toward each other until they meet."
+      ],
+      "evidence": [
+        0,
+        2
+      ],
+      "hint": "Read the first line. Then read the line about square C2 and keep its order.",
+      "explain": "First pick up a floor map. Then put a finger on C at the top and a finger on 2 at the side. Last, slide them toward each other until they meet. The steps are in the first and third lines.",
+      "inference": 0,
+      "tags": [
+        "sequence",
+        "map-grid"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i132",
+      "skill": "F5",
+      "passage": "f5-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What do Sam and Priya need to do to win a pocket compass?",
+      "options": [
+        "Get three stamps by 4:00 PM",
+        "Get all four stamps on two stamp cards",
+        "Get all four stamps by 4:00 PM",
+        "Find the globe in square A1 by 4:00 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Find the line with the word win. Read what comes before it.",
+      "explain": "They need to get all four stamps by 4:00 PM. The line with the prize says this. Each pair uses one stamp card.",
+      "inference": 0,
+      "tags": [
+        "rules",
+        "deadline"
+      ]
+    },
+    {
+      "id": "f5-i133",
+      "skill": "F5",
+      "passage": "f5-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam reads every message. Which plan is right now?",
+      "options": [
+        "Saturday at 9:00 AM, at the big anchor, with Ms. Ortiz",
+        "Saturday at 2:00 PM, at the big anchor, with Mr. Lee",
+        "Saturday at 2:00 PM, at the lifeguard tower, with Ms. Ortiz",
+        "Saturday at 3:45 PM, at the big anchor, with Mr. Lee"
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        9,
+        10
+      ],
+      "hint": "There are two updates. Use Update 1 for the time and the place. Use Update 2 for who leads.",
+      "explain": "The plan is Saturday at 2:00 PM, at the big anchor, with Mr. Lee. Update 1 moves the time and keeps the same meeting place, and Update 2 says Mr. Lee will lead. 3:45 PM is only the time of low tide.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "two-changes",
+        "latest-message",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i134",
+      "skill": "F5",
+      "passage": "f5-p52",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya gets to Driftwood Beach at 2:45 PM. Where should she look for the group?",
+      "options": [
+        "At the big anchor by the parking lot",
+        "At the high-tide line",
+        "At Ms. Ortiz's car",
+        "By the lifeguard tower"
+      ],
+      "answer": 3,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Find Priya's message. Then read the answer she gets.",
+      "explain": "Priya should look by the lifeguard tower. She asked if she could come late, and Ms. Ortiz told her to find the group there. The big anchor is where everyone meets at the start.",
+      "inference": 1,
+      "tags": [
+        "exception",
+        "place",
+        "two-places"
+      ]
+    },
+    {
+      "id": "f5-i135",
+      "skill": "F5",
+      "passage": "f5-p52",
+      "format": "build",
+      "level": 5,
+      "prompt": "Sam explains the changes to Grandma Rose. Fill in each part.",
+      "frame": "The clean-up moved to {0}, because {1}. {2} will lead it, because Ms. Ortiz has a family event.",
+      "slots": [
+        {
+          "kind": "when",
+          "label": "New start time",
+          "options": [
+            "2:00 PM",
+            "9:00 AM",
+            "3:45 PM",
+            "2:30 PM"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "why",
+          "label": "Why it moved",
+          "options": [
+            "the water covers most of the sand at high tide",
+            "dogs are not allowed in summer",
+            "birds lay their eggs in the sand",
+            "it is the warmest part of the day"
+          ],
+          "answer": [
+            0
+          ]
+        },
+        {
+          "kind": "who",
+          "label": "New leader",
+          "options": [
+            "Mr. Lee",
+            "Ms. Ortiz",
+            "Priya",
+            "Leo"
+          ],
+          "answer": [
+            0
+          ]
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        6,
+        9
+      ],
+      "hint": "Read Update 1 for the new time and the reason. Read Update 2 for the new leader.",
+      "explain": "The clean-up moved to 2:00 PM, because the water covers most of the sand at high tide. Mr. Lee will lead it. Ms. Ortiz gives these changes in Update 1 and Update 2.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "two-changes",
+        "cause",
+        "retell"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i136",
+      "skill": "F5",
+      "passage": "f5-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Where and when will the Junior Astronomers count stars on Thursday, November 20?",
+      "options": [
+        "In the dome with the big telescope, starting at 8:00 PM",
+        "On the lookout deck with small telescopes, starting at 8:00 PM",
+        "On the lookout deck with small telescopes, starting at 6:30 PM",
+        "In the dome with the big telescope, starting at 6:30 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        4,
+        6,
+        7,
+        12
+      ],
+      "hint": "Check November 20 against two date ranges: when the dome is closed, and when the winter schedule begins.",
+      "explain": "They will count stars on the lookout deck with small telescopes, starting at 8:00 PM. The dome is closed until November 21, so the club uses the deck. The 6:30 PM start only begins on December 1.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "combine-parts",
+        "two-dates"
+      ]
+    },
+    {
+      "id": "f5-i137",
+      "skill": "F5",
+      "passage": "f5-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya goes to the meeting on Thursday, December 4. When does the last bus down the hill leave?",
+      "options": [
+        "8:00 PM",
+        "9:30 PM",
+        "8:10 PM",
+        "9:40 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Find the start time for December. Add the length of a meeting. Then add the time until the last bus.",
+      "explain": "The last bus leaves at 8:10 PM. In December, meetings start at 6:30 PM and last 90 minutes, so they end at 8:00 PM, and the bus leaves ten minutes later. 9:40 PM would be right only for the old 8:00 PM start.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "time-math",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i138",
+      "skill": "F5",
+      "passage": "f5-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "What is this newsletter mostly about?",
+      "options": [
+        "Changes to the club's meetings, and how members should plan for them",
+        "How the giant mirror in the dome is cleaned",
+        "Why bright moonlight makes stars hard to see",
+        "Which flashlight is best for looking at the night sky"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Read the second sentence. It tells what the whole issue covers. Then check that each paragraph fits.",
+      "explain": "The newsletter is mostly about changes to the club's meetings and how to plan for them. The second sentence says so, and each paragraph tells one change or plan. The mirror and the moonlight are details that explain the changes.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "newsletter"
+      ]
+    },
+    {
+      "id": "f5-i139",
+      "skill": "F5",
+      "passage": "f5-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo's mom read only Monday's email. Which plan is right for Leo now?",
+      "options": [
+        "Arrive at 10:00 AM with an apron, a towel, a bag and a cup of flour",
+        "Arrive at 1:00 PM with an apron, a towel, a bag and a cup of flour",
+        "Arrive at 10:00 AM with an apron, a towel and a bag, and no flour",
+        "Arrive at 1:00 PM with an apron, a towel and a bag, and no flour"
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        7,
+        8
+      ],
+      "hint": "Check two things that changed: the start time and the flour. Then check what to bring.",
+      "explain": "Leo should arrive at 1:00 PM with an apron, a towel and a bag, and no flour. The new email moves the start from 10:00 AM to 1:00 PM, says flour is not needed now, and says to still bring the apron, towel and bag.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "update-earlier-message",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i140",
+      "skill": "F5",
+      "passage": "f5-p54",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sam wants to know what is different now. Sort each part of the bread class.",
+      "bins": [
+        "Changed",
+        "Same as before"
+      ],
+      "cards": [
+        {
+          "text": "The start time",
+          "bin": 0,
+          "emoji": "🕐"
+        },
+        {
+          "text": "The kind of bread",
+          "bin": 0,
+          "emoji": "🍞"
+        },
+        {
+          "text": "Bringing a cup of flour",
+          "bin": 0,
+          "emoji": "🌾"
+        },
+        {
+          "text": "The date, March 15",
+          "bin": 1,
+          "emoji": "📅"
+        },
+        {
+          "text": "The $10 cost",
+          "bin": 1,
+          "emoji": "💵"
+        },
+        {
+          "text": "The bakery kitchen",
+          "bin": 1,
+          "emoji": "🏠"
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "hint": "Rose uses signal words. Still and same show what stayed. Changed, instead and now show what is different.",
+      "explain": "The start time, the kind of bread and the flour changed. The class now starts at 1:00 PM, makes oat and honey bread, and needs no flour from home. The March 15 date, the $10 cost and the bakery kitchen are the same.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "same-different",
+        "update-earlier-message"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i141",
+      "skill": "F5",
+      "passage": "f5-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben has a soccer game on that Saturday from 12:00 PM to 2:00 PM, so he cannot come at the new time. What should his family do?",
+      "options": [
+        "Reply by Thursday, March 13, and get the $10 back",
+        "Reply after the class, on Saturday night",
+        "Ask Rose to move the class back to 10:00 AM",
+        "Send $10 more for a later class"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        10
+      ],
+      "hint": "Find the line that starts with If your child cannot come. Read the day and what Rose will do.",
+      "explain": "His family should reply by Thursday, March 13, and Rose will give the $10 back. It is in the line for children who cannot come at the new time.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "deadline",
+        "if-then"
+      ]
+    },
+    {
+      "id": "f5-i142",
+      "skill": "F5",
+      "passage": "f5-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana and Ben are both going to the sleepover. How much should their dad pay in all?",
+      "options": [
+        "$15",
+        "$20",
+        "$30",
+        "$40"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        5
+      ],
+      "hint": "Read the Cost box. Ana and Ben are brother and sister. Find their price, then count two of them.",
+      "explain": "Their dad should pay $30. The Cost box says brothers and sisters who come together pay $15 each, and two times $15 is $30. $40 would be the price for two students who are not brother and sister.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i143",
+      "skill": "F5",
+      "passage": "f5-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana cannot eat peanuts or tree nuts. Where should her dad write this, and why?",
+      "options": [
+        "In Part A, next to her grade",
+        "In Part C, so the pick-up adult knows",
+        "In Part B, so the museum can plan dinner and breakfast",
+        "Nowhere, because Ana will bring her own snacks"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        6
+      ],
+      "hint": "Find the part about food allergies. Then check the Leave at home box about food.",
+      "explain": "He should write it in Part B, so the museum can plan dinner and breakfast. Part B asks for food allergies, and the Leave at home box says students cannot bring snacks.",
+      "inference": 1,
+      "tags": [
+        "form-box",
+        "allergy",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i144",
+      "skill": "F5",
+      "passage": "f5-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The twins' dad wrote his name in Part C. Now their grandma will pick them up on Saturday instead. What should he do?",
+      "options": [
+        "Call the museum at 555-0148 before 8:00 AM on Saturday",
+        "Tell the twins to leave the museum alone at 8:30 AM",
+        "Write a new form on Saturday at 8:30 AM",
+        "Ask the adult helper to drive the twins home"
+      ],
+      "answer": 0,
+      "evidence": [
+        7
+      ],
+      "hint": "Read all of Part C. Find what to do if a different adult will come.",
+      "explain": "He should call the museum at 555-0148 before 8:00 AM on Saturday. Part C says students leave only with the adult named there, and a different adult means a call before 8:00 AM.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "problem-solving",
+        "rules"
+      ]
+    },
+    {
+      "id": "f5-i145",
+      "skill": "F5",
+      "passage": "f5-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana walks home from school. When and from where will she leave today?",
+      "options": [
+        "At 12:45 PM, from the bus loop",
+        "At 3:00 PM, from the front door",
+        "At 12:30 PM, from the ferry dock",
+        "At 12:30 PM, from the front door"
+      ],
+      "answer": 3,
+      "evidence": [
+        1,
+        4
+      ],
+      "hint": "The notice has different lines for bus riders, walkers and Gull Island students. Find the line for students who walk home.",
+      "explain": "Ana will leave at 12:30 PM from the front door. The line for students who walk home or get picked up says this. 12:45 PM is when the buses leave.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "two-times",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i146",
+      "skill": "F5",
+      "passage": "f5-p56",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Ana and Ben's mom wants to know what is different today. Sort each part of the school day.",
+      "bins": [
+        "Still happens today",
+        "Canceled today",
+        "Moved to another day"
+      ],
+      "cards": [
+        {
+          "text": "Lunch, at 11:45 AM",
+          "bin": 0,
+          "emoji": "🥪"
+        },
+        {
+          "text": "Band practice",
+          "bin": 1,
+          "emoji": "🎺"
+        },
+        {
+          "text": "Music lessons",
+          "bin": 1,
+          "emoji": "🎵"
+        },
+        {
+          "text": "The Grade 6 science quiz",
+          "bin": 2,
+          "emoji": "📝"
+        },
+        {
+          "text": "The buses home, at 12:45 PM",
+          "bin": 0,
+          "emoji": "🚌"
+        }
+      ],
+      "evidence": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "hint": "Look for the words canceled and instead. Things with a time today still happen today.",
+      "explain": "Lunch and the buses still happen today, at the times in the notice. Band practice and music lessons are canceled. The science quiz moves to Thursday instead.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "cancelled",
+        "same-different"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i147",
+      "skill": "F5",
+      "passage": "f5-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The power goes out at the twins' house that night. How will the family learn if school will open tomorrow?",
+      "options": [
+        "Check the school text message at 6:00 AM",
+        "Wait for the bus at 12:45 PM",
+        "Call the ferry dock at 1:00 PM",
+        "Go to school and look at the front door"
+      ],
+      "answer": 0,
+      "evidence": [
+        8
+      ],
+      "hint": "Find the line that starts with If the power goes out.",
+      "explain": "They should check the school text message at 6:00 AM. The line about the power says it will tell families whether school will open.",
+      "inference": 0,
+      "tags": [
+        "if-then",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f5-i148",
+      "skill": "F5",
+      "passage": "f5-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Who will play for the team on Sunday?",
+      "options": [
+        "Ana, Ben and Leo",
+        "Ben, Leo and Sam",
+        "Ana, Ben and Sam",
+        "Ana, Leo and Sam"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        6,
+        7
+      ],
+      "hint": "Start with the three players Ben names. Then find who cannot play on Sunday, and who takes that place.",
+      "explain": "Ana, Ben and Sam will play. Leo has a family dinner on Sunday, so Sam, the substitute, plays in Leo's place.",
+      "inference": 1,
+      "tags": [
+        "substitute",
+        "plan-change",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i149",
+      "skill": "F5",
+      "passage": "f5-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "By what time must Sam log in on Sunday?",
+      "options": [
+        "3:45 PM",
+        "4:30 PM",
+        "4:45 PM",
+        "5:00 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Find the new start time. Then find how early players must log in, and count back.",
+      "explain": "Sam must log in by 4:45 PM. The tournament now starts at 5:00 PM, and Ana says players log in 15 minutes before the start. 3:45 PM would match the old Saturday time.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "time-math"
+      ]
+    },
+    {
+      "id": "f5-i150",
+      "skill": "F5",
+      "passage": "f5-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why does Sam play in the tournament on Sunday?",
+      "options": [
+        "Leo cannot play on Sunday, and Sam is the team's substitute",
+        "Sam asked to play instead of Ana",
+        "The game update on Saturday changed the teams",
+        "Leo wants to watch the replay instead of playing"
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "hint": "Find what a substitute does. Then find who cannot play after the update.",
+      "explain": "Leo cannot play, because he has a family dinner on Sunday, and Sam is the substitute. Ben explains that a substitute plays only if someone on the team cannot.",
+      "inference": 1,
+      "tags": [
+        "cause",
+        "substitute",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i151",
+      "skill": "F5",
+      "passage": "f5-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana's dad will drive only Ana to Gull Point Park. Where and when should she be for Game 1?",
+      "options": [
+        "At the school parking lot at 7:30 AM",
+        "At Field A by 9:00 AM",
+        "At Field B by 8:15 AM",
+        "At Field A by 8:15 AM"
+      ],
+      "answer": 3,
+      "evidence": [
+        2,
+        8
+      ],
+      "hint": "Find the line for families who drive only their own child. Then find where and when players warm up for Game 1.",
+      "explain": "Ana should be at Field A by 8:15 AM. Families who drive only their own child go straight to the park, and players must be at Field A by 8:15 AM to warm up. 7:30 AM is for the team cars.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "place",
+        "if-then"
+      ]
+    },
+    {
+      "id": "f5-i152",
+      "skill": "F5",
+      "passage": "f5-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Where and when is Game 2 now, and which shirt does Ben wear?",
+      "options": [
+        "12:00 PM on Field B, in the white shirt",
+        "1:00 PM on Field C, in the white shirt",
+        "12:00 PM on Field B, in the blue shirt",
+        "12:00 PM on Field C, in the white shirt"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        6
+      ],
+      "hint": "Game 2 changed. Find the line with the word now. Then find the line about shirts.",
+      "explain": "Game 2 is at 12:00 PM on Field B, and Ben wears white. The fifth line gives the new time and field, and the shirt line says white for Game 2 because the Sharks also wear blue.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "combine-parts",
+        "latest-info"
+      ]
+    },
+    {
+      "id": "f5-i153",
+      "skill": "F5",
+      "passage": "f5-p58",
+      "format": "order",
+      "level": 5,
+      "prompt": "Ben rides in a team car. Put his Saturday in order.",
+      "steps": [
+        "Meet the team car at the school parking lot at 7:30 AM.",
+        "Warm up at Field A by 8:15 AM.",
+        "Play Game 1 in a blue shirt at 9:00 AM.",
+        "Rest in the shade by the snack building.",
+        "Play Game 2 in a white shirt on Field B at 12:00 PM."
+      ],
+      "evidence": [
+        2,
+        4,
+        5,
+        6,
+        8
+      ],
+      "hint": "Put the clock times in order. The rest between games goes between the two games.",
+      "explain": "Ben meets the team car at 7:30 AM, warms up by 8:15 AM and plays Game 1 at 9:00 AM. Then he rests by the snack building and plays Game 2 at 12:00 PM on Field B, using the new plan.",
+      "inference": 1,
+      "tags": [
+        "sequence",
+        "plan-change",
+        "combine-parts"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i154",
+      "skill": "F5",
+      "passage": "f5-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo is 13, and he has done five shifts. Which new job can he do now?",
+      "options": [
+        "Walk the large dogs",
+        "Open the kennels by himself",
+        "Brush the cats and play with the rabbits",
+        "Nothing new, because he must do ten shifts first"
+      ],
+      "answer": 2,
+      "evidence": [
+        7,
+        8,
+        11
+      ],
+      "hint": "Read the second paragraph. Check two rules: what you can do after three shifts, and how old you must be to walk dogs.",
+      "explain": "Leo can brush the cats and play with the rabbits, because he has done more than three shifts. He cannot walk dogs yet, because that job is for volunteers who are 14 or older.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "rules",
+        "age-rule"
+      ]
+    },
+    {
+      "id": "f5-i155",
+      "skill": "F5",
+      "passage": "f5-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya wants an afternoon shift on a Saturday in January. What time will it be?",
+      "options": [
+        "2:00 PM to 4:00 PM",
+        "1:00 PM to 3:00 PM",
+        "10:00 AM to 12:00 PM",
+        "1:00 PM to 4:00 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        13
+      ],
+      "hint": "Find the usual afternoon shift. Then read the last paragraph to see if January is inside the winter dates.",
+      "explain": "The shift will be from 1:00 PM to 3:00 PM. The last paragraph says the afternoon shift moves to that time from December 1 to February 28, and January is inside those dates.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "schedule-change",
+        "two-times"
+      ]
+    },
+    {
+      "id": "f5-i156",
+      "skill": "F5",
+      "passage": "f5-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam signed up for a Sunday morning shift, but his family will be away that day. What should he do?",
+      "options": [
+        "Ask Maya to go in his place and tell nobody",
+        "Come to the afternoon shift instead",
+        "Wait until the next time he visits, then explain",
+        "Call the front desk at 555-0172 as soon as he can"
+      ],
+      "answer": 3,
+      "evidence": [
+        15
+      ],
+      "hint": "Read the last sentence. It tells what to do when you cannot come.",
+      "explain": "Sam should call the front desk at 555-0172 as soon as he can. The last sentence says this, so that another volunteer can take his place.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f5-i157",
+      "skill": "F5",
+      "passage": "f5-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya's dad read only Tuesday's email. Which details are right now?",
+      "options": [
+        "Saturday, May 17, at Seacliff Middle School",
+        "Saturday, May 10, at Seacliff Middle School",
+        "Saturday, May 17, at Harbor Middle School",
+        "Wednesday, May 14, at Seacliff Middle School"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the two lines that start with Mistake. Each one gives a wrong detail and the right one.",
+      "explain": "The Rally is on Saturday, May 17, at Seacliff Middle School. Mistake 1 fixes the date, and Mistake 2 fixes the place. May 14 is the day to send the photo.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "update-earlier-message",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i158",
+      "skill": "F5",
+      "passage": "f5-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya's team has one rover. What should they pack for it, and why?",
+      "options": [
+        "One charged battery, because the rover runs only two events",
+        "Two charged batteries, because the Rescue Challenge is after lunch",
+        "Two charged batteries, because there are no charging tables at Seacliff",
+        "A long charging cord, so they can charge in the Seacliff cafeteria"
+      ],
+      "answer": 2,
+      "evidence": [
+        8
+      ],
+      "hint": "Find the line that starts with Pack. Read the reason after because.",
+      "explain": "They should pack two charged batteries, because there are no charging tables at Seacliff. It is in the line that starts with Pack.",
+      "inference": 0,
+      "tags": [
+        "what-to-bring",
+        "cause"
+      ]
+    },
+    {
+      "id": "f5-i159",
+      "skill": "F5",
+      "passage": "f5-p60",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the Gear Grinders' steps in order.",
+      "steps": [
+        "Email Ms. Ortiz a photo of the rover by May 14.",
+        "Get on the bus at the front office at 7:45 AM on May 17.",
+        "Run the rover in the Maze.",
+        "Run the rover in the Rescue Challenge after lunch."
+      ],
+      "evidence": [
+        5,
+        6,
+        10
+      ],
+      "hint": "Put the dates in order first. Then use the words morning and after lunch.",
+      "explain": "First the team emails the photo by May 14. On May 17 they take the 7:45 AM bus, run the Maze in the morning and run the Rescue Challenge after lunch.",
+      "inference": 1,
+      "tags": [
+        "sequence",
+        "update-earlier-message"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i160",
+      "skill": "F5",
+      "passage": "f5-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam plays guitar. Priya plays cello. Ben plays keyboard. They will perform as a group. Which instruments must they bring?",
+      "options": [
+        "A guitar and a cello",
+        "A guitar, a cello and a keyboard",
+        "Only a cello",
+        "A guitar, a cello and drum sticks"
+      ],
+      "answer": 0,
+      "evidence": [
+        10,
+        11,
+        12
+      ],
+      "hint": "Find what the stage already has. Then read who must bring their own instrument.",
+      "explain": "They must bring a guitar and a cello. The stage already has a keyboard, so keyboard players bring nothing. Players of every other instrument bring their own.",
+      "inference": 1,
+      "tags": [
+        "combine-parts",
+        "what-to-bring"
+      ]
+    },
+    {
+      "id": "f5-i161",
+      "skill": "F5",
+      "passage": "f5-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The forecast shows rain for June 21. Where will the twins learn the decision, and when could Music Day happen instead?",
+      "options": [
+        "On the library door by 6:00 PM on June 20; in the school gym on June 21",
+        "By email two days before; on Saturday, June 28",
+        "At the library front desk on June 13; on Sunday, June 22",
+        "On the library door by 6:00 PM on June 20; on Saturday, June 28"
+      ],
+      "answer": 3,
+      "evidence": [
+        14,
+        15
+      ],
+      "hint": "Read the last paragraph. Find where the decision is posted, and where the festival moves if it rains.",
+      "explain": "The decision goes on the library door by 6:00 PM on June 20, and a rainy forecast moves Music Day to Saturday, June 28. Both are in the last paragraph. The email two days before is for sound check times.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "rain-plan",
+        "if-then",
+        "combine-parts"
+      ]
+    },
+    {
+      "id": "f5-i162",
+      "skill": "F5",
+      "passage": "f5-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "How will Priya's group learn the time of its sound check?",
+      "options": [
+        "By email, two days before the festival",
+        "At the library front desk, by June 13",
+        "On the library door, by 6:00 PM on June 20",
+        "From the sound crew at 9:00 AM on the festival morning"
+      ],
+      "answer": 0,
+      "evidence": [
+        9
+      ],
+      "hint": "Read the third paragraph. Find the sentence that starts with Sound checks start.",
+      "explain": "The group will learn its time by email, two days before the festival. The third paragraph says each act gets its own ten-minute time that way.",
+      "inference": 0,
+      "tags": [
+        "detail",
+        "two-dates"
+      ]
+    },
+    {
+      "id": "f5-i163",
+      "skill": "F5",
+      "passage": "f5-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam's mom will drop him off on Friday. Where and when should she bring him, and where will the group sleep?",
+      "options": [
+        "The trailhead at 4:00 PM; Campsite 4",
+        "Campsite 9 at 4:00 PM; Campsite 9 by the creek",
+        "The trailhead at 4:00 PM; Campsite 9 by the creek",
+        "The trailhead at 4:20 PM; Campsite 9 by the creek"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        4
+      ],
+      "hint": "Find the line with the word still. Then find the new campsite.",
+      "explain": "She should bring Sam to the trailhead at 4:00 PM, and the group will sleep at Campsite 9 by the creek. The meeting is still at the trailhead, and Campsite 9 replaces the closed Campsite 4.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "combine-parts",
+        "place"
+      ]
+    },
+    {
+      "id": "f5-i164",
+      "skill": "F5",
+      "passage": "f5-p62",
+      "format": "sort",
+      "level": 5,
+      "prompt": "Sam wants to know what is different now. Sort each part of the campout.",
+      "bins": [
+        "Changed",
+        "Same as before"
+      ],
+      "cards": [
+        {
+          "text": "The campsite",
+          "bin": 0,
+          "emoji": "⛺"
+        },
+        {
+          "text": "Toasting marshmallows",
+          "bin": 0,
+          "emoji": "🔥"
+        },
+        {
+          "text": "How long the walk from the trailhead takes",
+          "bin": 0,
+          "emoji": "🥾"
+        },
+        {
+          "text": "Meeting at the trailhead at 4:00 PM",
+          "bin": 1,
+          "emoji": "🕓"
+        },
+        {
+          "text": "The packing list",
+          "bin": 1,
+          "emoji": "🎒"
+        },
+        {
+          "text": "Pick-up on Saturday at 10:00 AM",
+          "bin": 1,
+          "emoji": "🚗"
+        }
+      ],
+      "evidence": [
+        1,
+        4,
+        7,
+        10,
+        11
+      ],
+      "hint": "Look for signal words. Instead and without show a change. Still and same show what stayed.",
+      "explain": "The campsite, the marshmallows and the walk changed: the group uses Campsite 9, a 20-minute walk, and gets fruit bars instead of marshmallows. The 4:00 PM meeting, the packing list and the 10:00 AM pick-up are the same.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "same-different"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f5-i165",
+      "skill": "F5",
+      "passage": "f5-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Why will the adults cook dinner on a camp stove?",
+      "options": [
+        "Campfires are not allowed this month, because the weather is very dry",
+        "Campsite 4 is closed, because a branch fell",
+        "Campsite 9 has no picnic table",
+        "The club is bringing frozen fruit bars"
+      ],
+      "answer": 0,
+      "evidence": [
+        5,
+        8
+      ],
+      "hint": "Find the line about campfires. Then find the line about the camp stove, and join them.",
+      "explain": "The park does not allow campfires this month, because the weather is very dry. So the adults use a camp stove, which the park allows.",
+      "inference": 1,
+      "tags": [
+        "cause",
+        "plan-change"
+      ]
     }
   ],
   "model": {

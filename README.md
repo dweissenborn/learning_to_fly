@@ -64,7 +64,7 @@ That checks the reading level of every prose passage. Create the venv once with 
 | `apps/web/` | The React PWA |
 | `packages/engine/` | The rules: mastery, review dates, the gate, item choice, placement. Pure TypeScript with tests. |
 | `packages/schema/` | JSON Schema for the content bank and the event log, the generated types, and the content validator |
-| `content/bank/` | 18 skill files: 327 passages, 786 practice items, 9 inference-check items, 18 worked examples |
+| `content/bank/` | 18 skill files: 895 passages, 2,555 practice items, 9 inference-check items, 18 worked examples |
 | `content/` | Skill wording, the scouting check, and the vocabulary for the daily recount |
 | `api/` | The cloud copy's API: managed Azure Functions over Cosmos DB, with tests |
 | `pipeline/` | The reading-level check |

@@ -363,6 +363,767 @@
         "retrieved": "2026-10-12",
         "adapted": false
       }
+    },
+    {
+      "id": "p3-p12",
+      "title": "The Dog in the Manger",
+      "kind": "fable",
+      "sentences": [
+        "A dog lay down for a nap in a manger, a long wooden box that holds hay for cows.",
+        "The manger stood in a warm, quiet barn on a farm.",
+        "Late in the afternoon, the cows came in from the field, tired and very hungry.",
+        "They walked over to the manger to eat their hay.",
+        "The dog jumped up and barked at them.",
+        "\"Go away!\" he growled. \"This is my bed.\"",
+        "The cows stepped back in surprise.",
+        "\"You do not even eat hay,\" said one cow. \"Why keep it from us?\"",
+        "The dog only barked louder.",
+        "Then the farmer came in and saw everything.",
+        "He sent the dog out of the barn, and the hungry cows finally ate their dinner."
+      ],
+      "picture": "🐕🌾🐄",
+      "topics": [
+        "animals",
+        "food"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Dog in the Manger",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p3-p13",
+      "title": "The Plane Tree",
+      "kind": "fable",
+      "sentences": [
+        "Two travelers walked along a dusty road on a hot summer day.",
+        "There was no wind, and the sun was very strong.",
+        "At noon, they came to a plane tree, a tall tree with wide green leaves.",
+        "They lay down in its cool shade to rest.",
+        "One traveler looked up at the branches.",
+        "\"This tree is no use to anyone,\" he said.",
+        "\"It has no fruit, and it drops leaves all over the road.\"",
+        "Then a voice came from the branches.",
+        "\"You are lying in my shade right now,\" said the tree.",
+        "\"I am keeping you cool on a hot day, and you still say I am no use!\"",
+        "The travelers looked at each other and said nothing."
+      ],
+      "picture": "🌳☀️",
+      "topics": [
+        "nature",
+        "weather"
+      ],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Plane Tree",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p3-p14",
+      "title": "The Travelers and the Purse",
+      "kind": "fable",
+      "sentences": [
+        "Two travelers were walking together along a dusty country road.",
+        "One of them spotted a leather purse lying in the dirt, and he picked it up.",
+        "It was heavy with coins.",
+        "\"Look what I have found!\" he said happily.",
+        "\"Do not say 'I have found,'\" said his friend. \"We are traveling together, so say 'we have found.'\"",
+        "\"No,\" said the first traveler. \"I saw it first, so it belongs to me.\"",
+        "A few minutes later, they heard loud voices behind them.",
+        "A group of people was hurrying down the road, looking at the ground.",
+        "\"We have lost our purse!\" they called. \"Has anyone seen it?\"",
+        "The first traveler began to worry that the people would think he had stolen it.",
+        "\"We are in trouble now,\" he whispered to his friend.",
+        "His friend shook his head.",
+        "\"When you found the purse, you said 'I,'\" he answered.",
+        "\"So now you must say, 'I am in trouble.'\"",
+        "The first traveler walked back alone and handed the purse to its owners."
+      ],
+      "picture": "👛🪙",
+      "topics": [
+        "money",
+        "friends"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Travelers and the Purse",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p3-p15",
+      "title": "The Monkey and the Cat",
+      "kind": "fable",
+      "sentences": [
+        "A monkey and a cat lived in the same house.",
+        "One cold evening, a pan of chestnuts was roasting in the hot coals of the fireplace.",
+        "The nuts smelled wonderful, and the monkey wanted every one of them.",
+        "\"Cat, you have such quick paws,\" said the monkey. \"You are much better at this than I am.\"",
+        "\"Pull the chestnuts out of the fire, and we will share them.\"",
+        "The cat felt proud of the praise.",
+        "She reached in carefully and pulled out one chestnut.",
+        "The coals were hot, and the tips of her paws stung.",
+        "While she reached in again, the monkey cracked the first nut and ate it.",
+        "The cat pulled out nut after nut, and the monkey ate each one.",
+        "Then their owner came into the room, and both animals ran away.",
+        "The cat had sore paws and not a single chestnut.",
+        "After that, she stayed away from the monkey and his nice words."
+      ],
+      "picture": "🐒🐈🌰",
+      "topics": [
+        "animals",
+        "food"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Monkey and the Cat",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p3-p16",
+      "title": "The Window Seat",
+      "kind": "story",
+      "sentences": [
+        "On Saturday morning, Sam and Ben rode the train to a model train show in the city.",
+        "Sam had ridden this line many times, but it was Ben's first trip.",
+        "Their two seats had only one window between them.",
+        "Sam loved to watch the tracks curve along the coast, and he wanted the window seat very much.",
+        "He also knew that the best views came in the first half of the trip, when the train ran beside the sea.",
+        "Ben looked at the window, but he did not say anything.",
+        "Sam opened his map of the rail line and counted the stops.",
+        "\"There are eight stops,\" he said. \"You take the window for the first four, and I will take it for the last four.\"",
+        "Ben grinned and slid into the window seat.",
+        "For four stops, he watched waves splash against the rocks below the tracks.",
+        "At the fourth stop, Ben stood up without being asked.",
+        "\"Your turn,\" he said. \"Thanks for giving me the sea part.\"",
+        "Sam watched the bridges and tunnels for the rest of the ride."
+      ],
+      "picture": "🚆🌊",
+      "topics": [
+        "transport",
+        "maps",
+        "friends"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Window Seat",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p17",
+      "title": "The Rain Gauge",
+      "kind": "story",
+      "sentences": [
+        "Ms. Ortiz's class kept a rain gauge on a post behind Harbor Middle School.",
+        "A rain gauge is a clear tube with lines that show how much rain has fallen.",
+        "Each day, two students read the tube, wrote the number on a chart and emptied it.",
+        "This week, the job belonged to Maya and Ana.",
+        "On Wednesday, the girls got busy painting a poster, and they both forgot.",
+        "On Thursday morning, the tube held two days of rain mixed together.",
+        "\"We could split the number in half,\" said Ana. \"Nobody would know.\"",
+        "Maya looked at the chart, which the class would make into a graph.",
+        "\"But we do not know how much fell on each day,\" she said.",
+        "\"If we guess, the graph will look true, but it will not be true.\"",
+        "Ana thought for a moment, and then she nodded.",
+        "They wrote the total in Thursday's box with a note: \"Two days of rain. We forgot on Wednesday.\"",
+        "Ms. Ortiz thanked them for being honest.",
+        "\"Scientists make mistakes too,\" she said. \"Good scientists write them down.\""
+      ],
+      "picture": "🌧️📏",
+      "topics": [
+        "weather",
+        "school"
+      ],
+      "level": 3,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Rain Gauge",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p18",
+      "title": "The Wrong Note",
+      "kind": "story",
+      "sentences": [
+        "Ms. Gray's band was practicing a new song for the spring concert.",
+        "In the middle of the song, the four flutes played a short part by themselves.",
+        "Every time they reached it, one high note sounded wrong.",
+        "Ms. Gray stopped the band and listened to the flutes alone.",
+        "\"One flute is playing an F instead of an F sharp,\" she said. \"Who is it?\"",
+        "Nobody answered, and the music room became completely silent.",
+        "Maya's cheeks felt hot.",
+        "She had been playing a plain F, because she had missed the sharp sign in her music.",
+        "Maya felt uncomfortable speaking in front of the whole band.",
+        "But she knew the other flute players might get the blame, and the song would keep sounding wrong.",
+        "She raised her hand. \"It was me,\" she said quietly.",
+        "Ms. Gray nodded and smiled. \"Thank you, Maya. That took courage.\"",
+        "She pointed to the small sharp sign printed next to the note, and the band practiced the part again.",
+        "This time, all four flutes sounded exactly right together."
+      ],
+      "picture": "🎶🪈",
+      "topics": [
+        "music",
+        "school"
+      ],
+      "level": 3,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Wrong Note",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p19",
+      "title": "The Honey in the Hollow Tree",
+      "kind": "fable",
+      "sentences": [
+        "High in a hollow oak tree, someone had built a large honeycomb packed with golden honey.",
+        "One morning, a group of bees and a group of wasps both arrived at the tree, and each group claimed that the honey belonged to them.",
+        "The argument grew so loud that every creature in the forest could hear it.",
+        "At last, the two sides agreed to let an old hornet act as judge, since he had settled many arguments before.",
+        "The hornet began by calling witnesses to describe what they had seen.",
+        "An ant reported that she had noticed striped, winged insects buzzing around the tree for weeks.",
+        "Unfortunately, bees and wasps are both striped, winged insects that buzz, so her report did not settle anything.",
+        "Every other witness said much the same thing, and the hornet could not decide.",
+        "He announced that the case would continue in six weeks.",
+        "Then a wise old bee asked to speak.",
+        "\"Six weeks is far too long,\" she said. \"By then, the honey may spoil.\"",
+        "\"Here is a fair test: let each side build a new honeycomb and fill it with honey.\"",
+        "\"Then the judge can see which side is able to make honey like this.\"",
+        "The wasps quickly complained that the test was unfair, and they refused to take part.",
+        "The hornet turned to the crowd and gave his decision.",
+        "\"The wasps will not take the test, so it is clear who made this honeycomb,\" he said. \"The honey belongs to the bees.\""
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "picture": "🐝🍯🌳",
+      "topics": [
+        "animals",
+        "nature",
+        "food"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Bees and Wasps, and the Hornet",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p3-p20",
+      "title": "Half of Every Game",
+      "kind": "story",
+      "sentences": [
+        "Coach Novak's soccer team had one rule that never changed: every player plays at least half of every game.",
+        "The team had fifteen players but only eleven places on the field, so some players always had to wait on the bench.",
+        "Coach Novak kept a clipboard with every name on it and wrote down how many minutes each person played.",
+        "In the league final, the score was tied at halftime.",
+        "Ana had played the whole first half, and she had scored the team's only goal.",
+        "Four players had not played at all yet, including a girl who had joined the team in the spring and had never scored.",
+        "Coach Novak checked the clipboard and called Ana over to the bench.",
+        "A few parents groaned, and Ben whispered, \"We need Ana on the field if we want to win.\"",
+        "At first, Ana felt frustrated as she sat down on the bench.",
+        "Then she remembered her own first season, when she was the newest player and the rule had given her a chance to play in big games.",
+        "She cheered loudly for the girl from the spring, who ran hard and blocked two shots.",
+        "Near the end, the other team scored, and that team won the final by one goal.",
+        "On the walk home, Ben said the rule had cost them the trophy.",
+        "Ana answered that it might have, but the same rule had also helped her become the player she was now.",
+        "\"A team is everyone on it,\" she said, \"not just the eleven people on the field at the end.\""
+      ],
+      "breaks": [
+        3,
+        8,
+        12
+      ],
+      "picture": "⚽📋",
+      "topics": [
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "Half of Every Game",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p21",
+      "title": "Rules of the Gold Camps",
+      "kind": "article",
+      "sentences": [
+        "In 1848, people found gold in a river in California, and soon thousands of people rushed there hoping to get rich.",
+        "At first, there were almost no laws or police in the gold fields.",
+        "So in many mining camps, the miners met together and voted on their own rules.",
+        "Most camps had rules about claims.",
+        "A claim was a small piece of ground along a river where one miner had the right to dig.",
+        "To keep things fair, many camps limited how big a claim could be, so that one person could not take a whole riverbank.",
+        "A miner usually marked a claim by leaving a wooden stake or a tool in the ground.",
+        "If the miner stopped working on the claim for too many days, someone else could take it.",
+        "Arguments were often settled at a meeting where the miners listened to both sides and then voted.",
+        "These rules were fairer than having no rules at all, but they were not fair to everyone.",
+        "Some camps tried to push out miners who had come from other countries, and a state law made many of them pay an extra tax.",
+        "The miners at the meeting made the rules, so people who were kept out of the meeting were often treated unfairly."
+      ],
+      "breaks": [
+        3,
+        9
+      ],
+      "picture": "⛏️✨",
+      "topics": [
+        "mining",
+        "money"
+      ],
+      "level": 4,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Rules of the Gold Camps",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p22",
+      "title": "One Look Each",
+      "kind": "story",
+      "sentences": [
+        "On a clear night in October, the observatory on Lantern Peaks opened its giant telescope to the public.",
+        "The Moon was half full, which is a good time to see craters, because long shadows make every bump easy to see.",
+        "More than forty people stood in a line that wound down the observatory's stone steps.",
+        "Dr. Lee set a timer beside the eyepiece, the small lens that you look into.",
+        "\"Everyone gets one minute,\" she said. \"When the timer beeps, please let the next person look.\"",
+        "Leo was near the front of the line, and he planned to photograph the craters by holding his phone up to the eyepiece.",
+        "Lining up the phone was much harder than he expected, and every picture came out blurry or bright white.",
+        "The timer beeped just as he finally got the craters in the middle of his screen.",
+        "\"Could I have one more minute, please?\" he asked. \"I almost have it.\"",
+        "Behind him, a father was holding a small boy who kept yawning and rubbing his eyes.",
+        "Dr. Lee explained that the timer let everyone have a first turn before the observatory closed.",
+        "\"But anyone who wants a second look may join the back of the line,\" she added.",
+        "Leo looked at the sleepy boy, put his phone away and walked down to the end of the line.",
+        "Forty minutes later, he reached the telescope again, and this time he knew exactly how to hold the phone.",
+        "His photo showed rows of sharp gray craters, and that night he made it the background on his phone.",
+        "He told his friends that waiting had been boring, but it felt better than taking a turn from someone who had not looked yet."
+      ],
+      "breaks": [
+        5,
+        10,
+        13
+      ],
+      "picture": "🔭🌓",
+      "topics": [
+        "space"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "One Look Each",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p23",
+      "title": "The Printer Sign-Up Sheet",
+      "kind": "story",
+      "sentences": [
+        "The robot club at Harbor Middle School had one 3D printer, and almost every member wanted to use it.",
+        "A 3D printer builds a solid object one thin layer of plastic at a time, so even a small part can take hours to finish.",
+        "To keep things fair, Ms. Ortiz made a sign-up sheet with two-hour slots, and each member could sign up for only one slot each week.",
+        "On Tuesday, the back wheel of Priya's rover cracked during a test run.",
+        "The rover race was on Saturday, and printing a new wheel would take almost two hours.",
+        "Priya's slot was not until the following Monday, and every slot before Saturday was already full.",
+        "Ben had signed up for the Thursday slot.",
+        "Priya asked Ms. Ortiz whether she could have an extra slot, just this once.",
+        "\"I can't move other people's names for you,\" Ms. Ortiz said. \"That would not be fair to them.\"",
+        "\"But members are allowed to trade slots if both people agree.\"",
+        "Ben was planning to print a stand for his game controller, which he did not need by any special day.",
+        "Still, he had been waiting all week, and he had already finished the design.",
+        "Priya explained the problem and offered him her Monday slot in exchange.",
+        "Ben thought about it, and then he crossed out his name on the Thursday line and wrote hers.",
+        "\"My controller stand can wait until Monday,\" he said. \"Your race can't.\"",
+        "On Saturday, the rover crossed the finish line on its new wheel, and Ben was the first person Priya thanked."
+      ],
+      "breaks": [
+        3,
+        10
+      ],
+      "picture": "🖨️🤖",
+      "topics": [
+        "robots",
+        "school"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Printer Sign-Up Sheet",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p24",
+      "title": "The Pizza Problem",
+      "kind": "story",
+      "sentences": [
+        "On Friday evening, Priya, Leo, Ben and Maya met at Priya's house to finish a science project.",
+        "By six o'clock everyone was hungry, so they ordered one large pizza that cost twelve dollars and came cut into twelve slices.",
+        "Leo, Ben and Maya each had only two dollars with them.",
+        "Priya had more money, so she paid the other six dollars.",
+        "When the pizza arrived, Ben began to hand out the slices.",
+        "\"Three slices each,\" he said. \"Twelve slices and four people makes three each, so that is fair.\"",
+        "\"Wait,\" said Leo. \"Priya paid half of the money, so maybe she should get half of the pizza.\"",
+        "He counted on his fingers: one slice for each dollar would mean six slices for Priya and two for everyone else.",
+        "Ben argued that friends should share equally, no matter who happened to have more money that day.",
+        "Leo argued that it was not fair for Priya to pay three times as much and get the same amount.",
+        "Maya, who had been quiet, said that she only wanted two slices anyway.",
+        "Everyone turned to Priya, because the extra money had been hers.",
+        "Priya said she had paid more only because she had more money with her, not because she wanted more pizza.",
+        "\"Let's split it equally,\" she said. \"Next time, someone else can pay the extra.\"",
+        "They each took three slices, and Maya gave her third slice to Leo, who said it was the best math problem he had ever solved.",
+        "Then Ben wrote \"Next pizza: Ben pays extra\" on a sticky note and stuck it to the empty box."
+      ],
+      "breaks": [
+        4,
+        10,
+        14
+      ],
+      "picture": "🍕",
+      "topics": [
+        "food",
+        "friends",
+        "money"
+      ],
+      "level": 4,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Pizza Problem",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p25",
+      "title": "The Donkey's Shadow",
+      "kind": "fable",
+      "sentences": [
+        "Long ago, a traveler needed to cross a wide, sandy plain to reach a distant town.",
+        "The journey would take the whole day, so he rented a donkey from a man who earned his living by hiring out his animals.",
+        "The owner walked beside the donkey to guide it, while the traveler rode comfortably on its back.",
+        "By noon, the summer sun was scorching, and there was not a single tree anywhere on the plain to offer shade.",
+        "The traveler climbed down to rest, and he noticed that the donkey's body cast a dark patch of shade on the sand.",
+        "It was the only shade for miles, and it was just large enough for one person.",
+        "He sat down in it gratefully, but the owner was exhausted from walking and wanted the shade too.",
+        "\"Move over,\" the owner said. \"You rented my donkey, but you did not rent its shadow.\"",
+        "\"The shadow comes with the donkey,\" the traveler replied. \"I paid for the whole animal for the whole day.\"",
+        "The owner argued that he had agreed to carry a passenger, not to give away the only shade on the plain.",
+        "The traveler argued that a rider who pays for a donkey should be able to use every part of it.",
+        "Each man was certain that his own reasoning was correct, and their voices grew louder and louder.",
+        "Meanwhile, the donkey grew nervous at all the shouting.",
+        "It shook its head, turned around and trotted off across the plain toward home.",
+        "The two men stopped arguing and stared after it in silence.",
+        "Now neither of them had any shade at all, and the traveler had no way to reach the town.",
+        "They had argued so hard about the shadow that they had lost the donkey itself."
+      ],
+      "breaks": [
+        4,
+        9,
+        14
+      ],
+      "picture": "🫏☀️",
+      "topics": [
+        "transport",
+        "animals",
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Ass and His Shadow",
+        "author": "Aesop, retold for Learning to Fly",
+        "source": "The Aesop for Children (1919), Library of Congress",
+        "url": "https://www.loc.gov/item/19014083/",
+        "licence": "public-domain",
+        "retrieved": "2026-10-12",
+        "adapted": true
+      }
+    },
+    {
+      "id": "p3-p26",
+      "title": "Sharing the Sea",
+      "kind": "article",
+      "sentences": [
+        "The ocean can seem endless, but the number of fish in it is not.",
+        "If people catch fish faster than the fish can produce young, the number of fish shrinks year after year.",
+        "For this reason, many countries set rules about how many fish may be caught, and where and when people may fish.",
+        "One common rule is a catch limit, which sets the total weight of one kind of fish that boats may bring in during a year.",
+        "Another is a size limit: a fish shorter than a certain length must be put back, so it can grow up and have young of its own.",
+        "Some areas also close for part of the year, often during the season when fish gather to lay their eggs.",
+        "Scientists count and measure fish every year to help decide what the limits should be.",
+        "These rules can be hard on the people who fish for a living.",
+        "When a limit is lowered, a crew may earn less money, even though the boat, the fuel and the nets cost just as much as before.",
+        "Some fishers say the limits are set too low, or that the scientists' counts are not always correct.",
+        "Many fishing families have worked on the water for generations, and they want to help make the rules that affect their work.",
+        "People who support the limits point to what can happen without them.",
+        "In the early 1990s, a huge cod fishery in the North Atlantic Ocean was closed after the fish became too scarce to catch.",
+        "Thousands of people lost their jobs, and many years later the cod had still not returned to their old numbers.",
+        "Supporters say a limit that feels unfair today protects the fish, and the jobs, for children who are not old enough to fish yet.",
+        "Most people agree that the sea should be shared fairly.",
+        "The hard question is how to be fair to the people who fish today and the people who will fish tomorrow at the same time."
+      ],
+      "breaks": [
+        3,
+        7,
+        11,
+        15
+      ],
+      "picture": "🐟🌊🎣",
+      "topics": [
+        "ocean",
+        "food"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Sharing the Sea",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p27",
+      "title": "Making Sport Fair",
+      "kind": "article",
+      "sentences": [
+        "In most sports, the fun depends on a fair contest, where nobody wins just because of luck or a better place to stand.",
+        "That sounds simple, but wind, sunshine and even the shape of a track can give one player an advantage.",
+        "Over many years, people have invented clever rules to make contests more equal.",
+        "In soccer, a coin toss helps decide which team starts at which end of the field, and the teams switch ends at halftime.",
+        "If a strong wind blows down the field or the sun shines in one goalkeeper's eyes, each team spends half the game facing it.",
+        "Tennis players change ends many times during a match for the same reason.",
+        "On a running track, the outside lanes curve around a wider circle than the inside lanes.",
+        "If every runner in a 400-meter race started on the same line, the runners in the outside lanes would have to run farther.",
+        "So the starts are staggered: each lane starts a bit ahead of the one inside it, and every runner covers exactly 400 meters.",
+        "Wind matters on the track too: in short sprints, a record does not count if a strong wind was pushing the runners from behind.",
+        "Not every rule makes everyone equal, though.",
+        "In swimming and running finals, the athletes with the fastest times from the earlier races are given the middle lanes.",
+        "Supporters say this rewards the fastest athletes and lets them see their rivals on both sides.",
+        "Others say the outer lanes can be harder, because waves in a pool bounce off the side walls, so slower athletes start with an extra problem.",
+        "Both sides want a fair race, but they disagree about whether fair means \"the same for everyone\" or \"a reward for doing well.\""
+      ],
+      "breaks": [
+        3,
+        6,
+        10
+      ],
+      "picture": "🏃⚽🏊",
+      "topics": [
+        "sports",
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Making Sport Fair",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p28",
+      "title": "Who Owns a Dinosaur?",
+      "kind": "article",
+      "sentences": [
+        "In recent years, a few dinosaur skeletons have been sold at auction for tens of millions of dollars.",
+        "At an auction, buyers bid against each other, and the item goes to whoever offers the most money.",
+        "Some went to museums, but others went to private buyers, and that worries many scientists.",
+        "Who is allowed to sell a fossil depends on where it was found.",
+        "In some countries, every dinosaur fossil belongs to the whole country, and selling one is against the law.",
+        "In others, such as the United States, a fossil found on private land belongs to the landowner, who may sell it.",
+        "But dinosaur bones found on public land there usually must go to a museum or a college.",
+        "Scientists who want fossils kept in museums say that science depends on checking each other's work.",
+        "If a skeleton sits in a private home, other scientists may never get to measure it again, so no one can check what was learned from it.",
+        "For this reason, many scientists will not publish a study about a fossil unless it is kept in a public museum.",
+        "They also worry that museums cannot afford such high prices.",
+        "People on the other side make their own arguments.",
+        "Collectors say that wind and rain slowly wear away bones left in the ground, and that digging them up saves them.",
+        "Landowners say that a fossil on their land is theirs, just like the soil or the trees.",
+        "Some buyers have also lent or given their skeletons to museums, where anyone can see them.",
+        "In the end, this is a hard question about fairness.",
+        "Should something that teaches us about the history of life belong to everyone, or to the person who found it or paid for it?"
+      ],
+      "breaks": [
+        3,
+        7,
+        11,
+        15
+      ],
+      "picture": "🦖🏛️",
+      "topics": [
+        "dinosaurs",
+        "money"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Who Owns a Dinosaur?",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p29",
+      "title": "Maps for Every Rider",
+      "kind": "article",
+      "sentences": [
+        "A transit map is supposed to help every rider get where they are going.",
+        "For a long time, though, many maps were made for riders who could see every color, climb any stairs and read small print.",
+        "Riders who could not do those things often had to ask for help or guess, and some stayed home rather than risk getting stuck.",
+        "Today, many transit maps mark step-free stations, where a person can get from the street to the train without any stairs.",
+        "For someone who uses a wheelchair or pushes a stroller, that small symbol can decide whether a trip is possible at all.",
+        "Some stations also have tactile maps, with raised lines and braille labels, so people who are blind can read them by touch.",
+        "Map makers have also learned that about one in twelve men has trouble telling certain colors apart, especially red and green.",
+        "A map that shows two lines only in red and green can be confusing, so careful designers add letters, numbers or patterns to each line.",
+        "These changes raise questions without easy answers.",
+        "Every new symbol takes up space, and a crowded map can become harder for everyone to read.",
+        "Some designers prefer to make one map that works for all riders, even if it has to be plainer.",
+        "Others make several maps, each for a different need, but then a rider has to find the right one.",
+        "Both groups agree on the goal: a map is only fair if every rider can use it."
+      ],
+      "breaks": [
+        3,
+        8
+      ],
+      "picture": "🗺️🚇",
+      "topics": [
+        "maps",
+        "transport"
+      ],
+      "level": 5,
+      "socialLoad": 1,
+      "credit": {
+        "title": "Maps for Every Rider",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "p3-p30",
+      "title": "The Canyon Glitch",
+      "kind": "story",
+      "sentences": [
+        "Ben had been practicing the desert track in his favorite racing game for three weeks.",
+        "Each track had a leaderboard listing the fastest laps in the world, and Ben's best time was in 512th place.",
+        "One evening, he steered too wide on the last corner, hit a rock at a strange angle and landed on the far side of a canyon wall.",
+        "His car had skipped almost a quarter of the track, and his lap time was eleven seconds faster than any time on the whole list.",
+        "\"That's a glitch,\" said Ana, who was watching from the couch. \"It's a mistake in the game's code.\"",
+        "Ben grinned, because a glitch like that could put him at the top of the list by morning.",
+        "Ana said that some players hunt for glitches for months, and some games keep separate lists for glitch runs, so finding one takes real skill.",
+        "Ben stopped grinning, because he was thinking about the players who drove every corner of the track.",
+        "\"They practiced for months to get half a second faster,\" he said. \"My lap would move them all down the list, and I skipped the hard part.\"",
+        "Ana argued that the rules page said nothing about glitches, so using one was not cheating.",
+        "Ben argued that a rule does not have to be written down for something to be unfair.",
+        "Both of them had a point, and they argued about it until dinner.",
+        "Afterward, they read the game's help page together and found a form for reporting glitches to the people who made the game.",
+        "Ben sent a report that described exactly where the rock was and how he had hit it.",
+        "He did not upload his glitch lap to the leaderboard.",
+        "Two weeks later, a game update fixed the canyon wall, and the notes for the update thanked \"a player who reported the canyon glitch.\"",
+        "Ben's best time was still in 512th place, but he said he would rather move up the list one honest half-second at a time."
+      ],
+      "breaks": [
+        4,
+        9,
+        13
+      ],
+      "picture": "🎮🏎️",
+      "topics": [
+        "games"
+      ],
+      "level": 5,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Canyon Glitch",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -1293,6 +2054,3123 @@
         "opinion",
         "fair-rule",
         "two-views"
+      ]
+    },
+    {
+      "id": "p3-i28",
+      "skill": "P3",
+      "passage": "p3-p12",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "Why was the dog unkind to the cows?",
+      "options": [
+        "He kept the hay from them, but he could not eat it himself.",
+        "He ate all of the cows' hay before they came in from the field.",
+        "He took the cows' place out in the field so he could nap in the sun."
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5,
+        7
+      ],
+      "hint": "Read what the cow asks the dog. Think about who needs the hay.",
+      "explain": "The dog kept the hay from the hungry cows, but dogs do not eat hay. The cow says this in the middle of the story.",
+      "inference": 1,
+      "tags": [
+        "kind-unkind",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i29",
+      "skill": "P3",
+      "passage": "p3-p12",
+      "format": "sort",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "Sort these ways the dog could act. Is each one kind or unkind?",
+      "bins": [
+        "Kind 👍",
+        "Unkind 👎"
+      ],
+      "cards": [
+        {
+          "text": "Bark at the hungry cows",
+          "bin": 1
+        },
+        {
+          "text": "Move out of the manger so the cows can eat",
+          "bin": 0
+        },
+        {
+          "text": "Keep the hay, even though he cannot eat it",
+          "bin": 1
+        },
+        {
+          "text": "Find another warm place to nap",
+          "bin": 0
+        },
+        {
+          "text": "Growl, \"This is my bed.\"",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        7
+      ],
+      "hint": "For each card, ask: do the hungry cows get their food?",
+      "explain": "Kind: moving out of the manger, and finding another place to nap. Unkind: barking at the cows, keeping hay he cannot eat, and growling. In the story, the dog barked and growled, so the cows could not eat.",
+      "inference": 1,
+      "tags": [
+        "kind-unkind",
+        "sort-kind",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i30",
+      "skill": "P3",
+      "passage": "p3-p12",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "prompt": "What would you tell the dog? Build your answer.",
+      "frame": "I would tell the dog he was {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "unkind",
+            "not fair",
+            "selfish"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "dogs do not eat hay",
+            "the cows were tired and hungry",
+            "he could nap in another place",
+            "the cows needed their dinner"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "Maybe the dog was very tired too.",
+            "Sharing would help everyone.",
+            "I have seen someone keep a thing they did not need."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        2,
+        5,
+        7
+      ],
+      "hint": "Think about what the dog wanted and what the cows needed.",
+      "explain": "One good answer is: I would tell the dog he was unkind because the cows were tired and hungry. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "kind-unkind",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i31",
+      "skill": "P3",
+      "passage": "p3-p13",
+      "format": "tap",
+      "level": 2,
+      "tier": "understand",
+      "prompt": "Why did the tree say the traveler was unfair to it?",
+      "options": [
+        "He picked all of the fruit from its branches and left none.",
+        "He was resting in its shade, but he said it was no use.",
+        "He broke off one of its branches to use as a walking stick."
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        5,
+        8,
+        9
+      ],
+      "hint": "Find where the travelers are lying. Then read what the tree says back.",
+      "explain": "The traveler was resting in the tree's cool shade, but he said the tree was no use. The tree says this near the end.",
+      "inference": 1,
+      "tags": [
+        "kind-unkind",
+        "thankful",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i32",
+      "skill": "P3",
+      "passage": "p3-p13",
+      "format": "highlight",
+      "level": 2,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap a sentence that shows how the tree was helping the travelers.",
+      "answer": [
+        3,
+        8,
+        9
+      ],
+      "evidence": [
+        3,
+        8,
+        9
+      ],
+      "hint": "Look for what the travelers got from the tree, even though no fruit grew on it.",
+      "explain": "The travelers lay down in the tree's cool shade. The tree says, \"I am keeping you cool on a hot day.\"",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "thankful",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i33",
+      "skill": "P3",
+      "passage": "p3-p13",
+      "format": "build",
+      "level": 2,
+      "tier": "express",
+      "prompt": "The traveler said the tree was no use. What do you think? Build your answer.",
+      "frame": "I think the traveler was {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "unkind",
+            "not thankful",
+            "only saying what he saw"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the tree gave him cool shade",
+            "the tree really had no fruit",
+            "he did not notice the help he was getting",
+            "leaves on a road can be messy"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "The tree might feel hurt by his words.",
+            "It is kind to thank the things that help us.",
+            "I sometimes forget to thank people who help me."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "hint": "Think about what the tree gave the travelers. Then think about what the traveler said.",
+      "explain": "One good answer is: I think the traveler was not thankful because the tree gave him cool shade. Another person might say he was only saying what he saw. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "thankful",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i34",
+      "skill": "P3",
+      "passage": "p3-p14",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why did the friend say \"I am in trouble\" instead of \"we are in trouble\"?",
+      "options": [
+        "The friend was the one who had picked up the purse from the dirt.",
+        "The friend did not hear the people who were hurrying down the road.",
+        "The first traveler kept the purse for himself, so he faced the trouble alone.",
+        "The first traveler had lost his own purse earlier on the same road."
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        5,
+        12,
+        13
+      ],
+      "hint": "Find what the first traveler said when he found the purse. Then read what his friend says at the end.",
+      "explain": "The first traveler said the purse was only his, so his friend would not share the trouble either. The friend says this near the end: \"When you found the purse, you said 'I.'\"",
+      "inference": 1,
+      "tags": [
+        "fair-share",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i35",
+      "skill": "P3",
+      "passage": "p3-p14",
+      "format": "sort",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Sort these ideas. Is each one fair or not fair?",
+      "bins": [
+        "Fair 👍",
+        "Not fair 👎"
+      ],
+      "cards": [
+        {
+          "text": "Two friends share what they find together.",
+          "bin": 0
+        },
+        {
+          "text": "One friend keeps the good luck but wants to share the trouble.",
+          "bin": 1
+        },
+        {
+          "text": "A friend says \"we\" for good luck and for bad luck.",
+          "bin": 0
+        },
+        {
+          "text": "Keeping a purse that belongs to someone else.",
+          "bin": 1
+        },
+        {
+          "text": "Giving a lost purse back to its owners.",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        10,
+        14
+      ],
+      "hint": "Ask: does each person get the same share of the good things and the hard things?",
+      "explain": "Fair: sharing what you find together, saying \"we\" for good and bad luck, and giving the purse back. Not fair: keeping the good luck but sharing the trouble, and keeping someone else's purse. At the end, the first traveler gave the purse back.",
+      "inference": 1,
+      "tags": [
+        "fair-share",
+        "sort-fair",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i36",
+      "skill": "P3",
+      "passage": "p3-p14",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Was the first traveler fair to his friend? Build your answer.",
+      "frame": "I think the first traveler was {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "fair",
+            "not fair",
+            "partly fair"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "he would not share the good luck",
+            "he did see the purse first",
+            "he wanted to share the trouble but not the coins",
+            "friends who travel together should share"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "The purse really belonged to the people on the road.",
+            "The friend might help him next time.",
+            "I have shared something lucky with a friend."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        4,
+        5,
+        10,
+        12,
+        13
+      ],
+      "hint": "Think about what the first traveler said when he found the purse, and what he said when trouble came.",
+      "explain": "One good answer is: I think the first traveler was not fair because he wanted to share the trouble but not the coins. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-share",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i37",
+      "skill": "P3",
+      "passage": "p3-p15",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why was the monkey's plan not fair to the cat?",
+      "options": [
+        "The monkey pulled out more of the hot nuts than the cat did.",
+        "The cat ate the nuts before the monkey could have any.",
+        "The owner gave all of the nuts to the monkey.",
+        "The cat did the hard work, and the monkey ate all of the nuts."
+      ],
+      "answer": 3,
+      "evidence": [
+        8,
+        9,
+        11
+      ],
+      "hint": "Look at who pulled the nuts out. Then look at who ate them.",
+      "explain": "The cat pulled the hot nuts out of the fire, but the monkey ate each one. At the end, the cat had sore paws and not a single chestnut.",
+      "inference": 1,
+      "tags": [
+        "fair-work",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i38",
+      "skill": "P3",
+      "passage": "p3-p15",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap a sentence that shows the monkey did not keep his promise.",
+      "answer": [
+        8,
+        9
+      ],
+      "evidence": [
+        4,
+        8,
+        9
+      ],
+      "hint": "First find the promise the monkey made. Then look for what he did with the nuts.",
+      "explain": "The monkey promised, \"We will share them.\" But he cracked the first nut and ate it, and then he ate each one the cat pulled out.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "honest",
+        "promise",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i39",
+      "skill": "P3",
+      "passage": "p3-p15",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why did the monkey say nice things about the cat's paws?",
+      "options": [
+        "He wanted her to do the hot work for him.",
+        "He wanted to thank her for a gift.",
+        "He wanted her to stay away from the fire.",
+        "He wanted to teach her how to roast nuts."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "Read what the monkey wanted at the start. Then read what he asked the cat to do right after his nice words.",
+      "explain": "The monkey wanted the nuts, so he praised the cat to get her to pull them out of the fire. He asked her right after he said she had quick paws.",
+      "inference": 2,
+      "tags": [
+        "honest",
+        "flattery",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i40",
+      "skill": "P3",
+      "passage": "p3-p15",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "What should the monkey have done? Build your answer.",
+      "frame": "I think the monkey should have {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My idea",
+          "options": [
+            "shared the nuts with the cat",
+            "pulled out some nuts himself",
+            "told the truth about his plan"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the cat did the hard work",
+            "he made a promise",
+            "it is not fair to let a friend get hurt for you",
+            "they both wanted the nuts"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "The cat could have said no.",
+            "The cat might trust him again if he shares.",
+            "Someone has said nice things to me to get my help."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        4,
+        8,
+        9,
+        11
+      ],
+      "hint": "Think about the promise the monkey made and what happened to the cat's paws.",
+      "explain": "One good answer is: I think the monkey should have shared the nuts with the cat because he made a promise. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-work",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i41",
+      "skill": "P3",
+      "passage": "p3-p16",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "How did Sam make the window seat fair?",
+      "options": [
+        "He let Ben keep the window seat for the whole trip to the city.",
+        "He split the trip so each boy had the window for four stops.",
+        "He asked the conductor to find them two seats that had windows.",
+        "He took the window first because he knew the line better than Ben."
+      ],
+      "answer": 1,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find what Sam does with his map. Then read what he says.",
+      "explain": "Sam counted eight stops and split them, so each boy had the window for four stops. He says this after he opens his map.",
+      "inference": 0,
+      "tags": [
+        "fair-turns",
+        "fair-share"
+      ]
+    },
+    {
+      "id": "p3-i42",
+      "skill": "P3",
+      "passage": "p3-p16",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Sam gave Ben the first four stops. Why was that kind, and not only fair?",
+      "options": [
+        "The first half of the trip was shorter than the second half.",
+        "Sam did not like to look at the sea.",
+        "The first half had the sea views, and it was Ben's first trip.",
+        "Ben asked Sam for the first half."
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        4,
+        7
+      ],
+      "hint": "Find when the best views come. Then find whose first trip it was.",
+      "explain": "The best views came in the first half, beside the sea, and it was Ben's first trip. Sam gave Ben that half. This is in the first five sentences and in what Sam says.",
+      "inference": 1,
+      "tags": [
+        "kind",
+        "fair-vs-kind"
+      ]
+    },
+    {
+      "id": "p3-i43",
+      "skill": "P3",
+      "passage": "p3-p16",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap a sentence that shows Ben kept the deal.",
+      "answer": [
+        10,
+        11
+      ],
+      "evidence": [
+        10,
+        11
+      ],
+      "hint": "Look at what happens at the fourth stop.",
+      "explain": "At the fourth stop, Ben stood up without being asked and said, \"Your turn.\" He kept the deal that Sam made.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "fair-turns",
+        "promise"
+      ]
+    },
+    {
+      "id": "p3-i44",
+      "skill": "P3",
+      "passage": "p3-p16",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Sam wanted the window seat very much, but he shared it. What do you think of his choice? Build your answer.",
+      "frame": "I think Sam's choice was {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "fair",
+            "kind",
+            "fair and kind",
+            "more than he had to do"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "each boy got four stops",
+            "Ben got the sea views on his first trip",
+            "Sam has seen the views many times",
+            "Sam had to wait for his turn"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "Ben was fair too, because he moved without being asked.",
+            "Someone might say Sam should keep the seat, since he loves trains.",
+            "I have taken turns with a window seat."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        4,
+        7,
+        11
+      ],
+      "hint": "Think about what Sam wanted, and what he gave Ben.",
+      "explain": "One good answer is: I think Sam's choice was fair and kind because Ben got the sea views on his first trip. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-turns",
+        "kind"
+      ]
+    },
+    {
+      "id": "p3-i45",
+      "skill": "P3",
+      "passage": "p3-p17",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why did Maya say no to splitting the number in half?",
+      "options": [
+        "She wanted Thursday to show the most rain of any day that month.",
+        "Ms. Ortiz had told the class never to write halves on the chart.",
+        "The rain gauge was too full of water to read the lines on the side.",
+        "They did not know how much fell each day, so a guess would not be true."
+      ],
+      "answer": 3,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Read what Maya says right after she looks at the chart.",
+      "explain": "Maya said they did not know how much rain fell on each day. If they guessed, the graph would look true, but it would not be true.",
+      "inference": 0,
+      "tags": [
+        "honest"
+      ]
+    },
+    {
+      "id": "p3-i46",
+      "skill": "P3",
+      "passage": "p3-p17",
+      "format": "sort",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Sort these choices. Is each one honest or not honest?",
+      "bins": [
+        "Honest 👍",
+        "Not honest 👎"
+      ],
+      "cards": [
+        {
+          "text": "Writing a note that says they forgot",
+          "bin": 0
+        },
+        {
+          "text": "Putting half the rain in each box and saying nothing",
+          "bin": 1
+        },
+        {
+          "text": "Telling Ms. Ortiz what happened",
+          "bin": 0
+        },
+        {
+          "text": "Making up a number that looks right",
+          "bin": 1
+        },
+        {
+          "text": "Writing the two-day total with a note",
+          "bin": 0
+        },
+        {
+          "text": "Saying another pair forgot the job",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        6,
+        11
+      ],
+      "hint": "For each card, ask: would the class know what really happened?",
+      "explain": "Honest: the note, telling Ms. Ortiz, and the two-day total with a note. Not honest: splitting the rain and saying nothing, making up a number, and blaming another pair. Maya and Ana wrote the total with a note.",
+      "inference": 1,
+      "tags": [
+        "honest",
+        "sort-honest"
+      ]
+    },
+    {
+      "id": "p3-i47",
+      "skill": "P3",
+      "passage": "p3-p17",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Imagine you forgot to read the rain gauge. What would you do? Build your answer.",
+      "frame": "If I forgot, I would {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "write a note like Maya and Ana",
+            "tell the teacher right away",
+            "ask the class what to do"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the chart should be true",
+            "a guess is not a real number",
+            "everyone makes mistakes",
+            "the teacher can help fix it"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "It might feel a little embarrassing.",
+            "Maya's way was honest and calm.",
+            "I have forgotten a job and told someone."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        11
+      ],
+      "hint": "Think about what Maya and Ana did. Would you do the same, or something else?",
+      "explain": "One good answer is: If I forgot, I would write a note like Maya and Ana because the chart should be true. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "honest"
+      ]
+    },
+    {
+      "id": "p3-i48",
+      "skill": "P3",
+      "passage": "p3-p17",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Ana said, \"Nobody would know.\" What do you think of Maya's answer? Build your answer.",
+      "frame": "I think Maya was {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "honest",
+            "brave",
+            "right",
+            "too careful"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "a guess would not be true",
+            "the graph should show the real rain",
+            "they could write a note instead",
+            "it was only a small mistake"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "Ana listened, and that was fair of her.",
+            "Ms. Ortiz was glad they told the truth.",
+            "It can be hard to say you forgot."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        6,
+        8,
+        9,
+        12,
+        13
+      ],
+      "hint": "Read what Maya says about the graph. Then read what Ms. Ortiz says at the end.",
+      "explain": "One good answer is: I think Maya was honest because a guess would not be true. Ms. Ortiz thanked them for being honest. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "honest"
+      ]
+    },
+    {
+      "id": "p3-i49",
+      "skill": "P3",
+      "passage": "p3-p18",
+      "format": "highlight",
+      "level": 3,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap the sentence where Maya tells the truth.",
+      "answer": [
+        10
+      ],
+      "evidence": [
+        10
+      ],
+      "hint": "Look for the place where Maya speaks.",
+      "explain": "Maya raised her hand and said, \"It was me.\" She told the truth about the wrong note.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "honest",
+        "courage"
+      ]
+    },
+    {
+      "id": "p3-i50",
+      "skill": "P3",
+      "passage": "p3-p18",
+      "format": "tap",
+      "level": 3,
+      "tier": "understand",
+      "prompt": "Why did Maya decide to speak up, even though it was hard?",
+      "options": [
+        "Other flutes might get the blame, and the song would keep sounding wrong.",
+        "Ms. Gray had already looked at her and called out her name.",
+        "She wanted Ms. Gray to give her a part on her own at the concert.",
+        "The other flute players whispered to her that she should say it."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the sentence that starts with \"But\". It tells what Maya was thinking.",
+      "explain": "Maya knew the other flute players might get the blame, and the song would keep sounding wrong. This is in the sentence that starts with \"But\".",
+      "inference": 0,
+      "tags": [
+        "courage",
+        "honest"
+      ]
+    },
+    {
+      "id": "p3-i51",
+      "skill": "P3",
+      "passage": "p3-p18",
+      "format": "build",
+      "level": 3,
+      "tier": "express",
+      "prompt": "Maya told the truth, even though it was hard for her. What do you think? Build your answer.",
+      "frame": "I think Maya was {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "brave",
+            "honest",
+            "fair to the other flutes"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "she spoke even though it was hard",
+            "the others would not get the blame",
+            "the song could sound right",
+            "she said what really happened"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "Ms. Gray said it took courage.",
+            "Someone else might have stayed quiet.",
+            "I have told a teacher about my own mistake."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "hint": "Think about why speaking was hard for Maya, and why she did it anyway.",
+      "explain": "One good answer is: I think Maya was brave because she spoke even though it was hard. Ms. Gray said, \"That took courage.\" Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "courage",
+        "honest"
+      ]
+    },
+    {
+      "id": "p3-i52",
+      "skill": "P3",
+      "passage": "p3-p19",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why could the ant's report not settle the case?",
+      "options": [
+        "The ant had not been near the oak tree for weeks.",
+        "Bees and wasps are both striped, winged insects that buzz.",
+        "The ant was a friend of the wasps, so the judge did not trust her.",
+        "The ant said she had seen no insects near the tree."
+      ],
+      "answer": 1,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Read what the ant saw. Then ask: could that be true of both groups?",
+      "explain": "The ant saw striped, winged insects that buzz, but bees and wasps both look and sound like that. So her report could fit either side. This is in the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "fair-test",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i53",
+      "skill": "P3",
+      "passage": "p3-p19",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why was the old bee's test a fair way to decide?",
+      "options": [
+        "It gave the bees six more weeks to collect honey.",
+        "It let the witnesses vote on who owned the honey.",
+        "It let each side show what it could really do.",
+        "It gave the honey to the side that arrived first."
+      ],
+      "answer": 2,
+      "evidence": [
+        11,
+        12
+      ],
+      "hint": "Read the test the old bee describes. Ask what each side would have to do.",
+      "explain": "The test asked each side to build a honeycomb and fill it with honey, so each side could show what it could really do. The old bee explains it in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "fair-test",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i54",
+      "skill": "P3",
+      "passage": "p3-p19",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sort these ways to decide who owns the honey. Is each one fair or not fair?",
+      "bins": [
+        "Fair 👍",
+        "Not fair 👎"
+      ],
+      "cards": [
+        {
+          "text": "Let each side build a honeycomb and show it.",
+          "bin": 0
+        },
+        {
+          "text": "Give the honey to the side that shouts the loudest.",
+          "bin": 1
+        },
+        {
+          "text": "Listen to what witnesses saw before deciding.",
+          "bin": 0
+        },
+        {
+          "text": "Give the honey to the side the judge likes better.",
+          "bin": 1
+        },
+        {
+          "text": "Let the bigger group take all of it.",
+          "bin": 1
+        },
+        {
+          "text": "Use the same test for both sides.",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        4,
+        11,
+        12
+      ],
+      "hint": "For each card, ask two questions. Does it treat both sides the same way? Does it help find out what really happened?",
+      "explain": "Fair: the honeycomb test, listening to witnesses, and the same test for both sides. Not fair: the loudest side, the side the judge likes, and the bigger group. In the fable, the hornet listened to witnesses and then used the old bee's test.",
+      "inference": 1,
+      "tags": [
+        "sort-fair",
+        "fair-test",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i55",
+      "skill": "P3",
+      "passage": "p3-p19",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "The wasps would not take the test. Was it fair for the hornet to give the honey to the bees? Build your answer.",
+      "frame": "I think the hornet's decision was {0} because {1}. In the fable, {2}. {3}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "fair",
+            "not fair",
+            "fair, but quick"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the wasps would not show they could make honey",
+            "both sides had the same chance to take the test",
+            "the wasps might have had their own reason to say no",
+            "only the bees were ready to prove it"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "From the fable",
+          "options": [
+            "the wasps refused to take part",
+            "the old bee offered the test",
+            "the witnesses could not tell bees and wasps apart",
+            "the honey might spoil in six weeks"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "The wasps might say the test was not fair to them.",
+            "A test that shows real skill is a good way to judge.",
+            "I have had to show I could do something I said I could do."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        11,
+        12,
+        13,
+        15
+      ],
+      "hint": "Think about what each side was asked to do. Then think about what the wasps did.",
+      "explain": "One good answer is: I think the hornet's decision was fair because both sides had the same chance to take the test. In the fable, the wasps refused to take part. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-test",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i56",
+      "skill": "P3",
+      "passage": "p3-p20",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why did Coach Novak call Ana to the bench at halftime?",
+      "options": [
+        "Ana was too tired to keep running after scoring the team's only goal.",
+        "Ana had broken one of the team's rules during the first half of the final.",
+        "The parents asked the coach to give Ana a rest before the second half.",
+        "Four players had not played yet, and every player must play at least half."
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        5,
+        6
+      ],
+      "hint": "Read the team's rule in the first sentence. Then read who had not played yet.",
+      "explain": "The rule says every player plays at least half of every game, and four players had not played yet. So Coach Novak had to give them the second half. The rule is in the first paragraph, and the four players are in the second.",
+      "inference": 1,
+      "tags": [
+        "fair-rule"
+      ]
+    },
+    {
+      "id": "p3-i57",
+      "skill": "P3",
+      "passage": "p3-p20",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What changed Ana's feelings about sitting on the bench?",
+      "options": [
+        "She remembered that the same rule gave her a chance when she was new.",
+        "She saw that the new player was faster than she was at running.",
+        "Ben told her that the team could still win the final without her.",
+        "Coach Novak promised that she could play the whole of the next game."
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the sentence that starts with \"Then\" in the third paragraph.",
+      "explain": "Ana remembered her own first season, when the rule gave her a chance to play in big games. This is at the start of the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "fair-rule",
+        "perspective"
+      ]
+    },
+    {
+      "id": "p3-i58",
+      "skill": "P3",
+      "passage": "p3-p20",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sort each reason. Does it support the coach's rule, or Ben's view?",
+      "bins": [
+        "Supports the rule",
+        "Supports Ben's view"
+      ],
+      "cards": [
+        {
+          "text": "Every player is part of the team.",
+          "bin": 0
+        },
+        {
+          "text": "New players need chances in big games to get better.",
+          "bin": 0
+        },
+        {
+          "text": "Ana had scored the team's only goal.",
+          "bin": 1
+        },
+        {
+          "text": "A final is the biggest game of the year.",
+          "bin": 1
+        },
+        {
+          "text": "The rule helped Ana when she was new.",
+          "bin": 0
+        },
+        {
+          "text": "The team lost by only one goal.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        7,
+        9,
+        11,
+        12,
+        14
+      ],
+      "hint": "Ben wants the team to win the final. The rule wants every player to get a chance. Ask which goal each card helps.",
+      "explain": "Supports the rule: every player is part of the team, new players need big-game chances, and the rule helped Ana. Supports Ben's view: Ana scored the only goal, a final is the biggest game, and the team lost by one goal. Ben's view is in the second and fourth paragraphs.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "sort-reasons"
+      ]
+    },
+    {
+      "id": "p3-i59",
+      "skill": "P3",
+      "passage": "p3-p20",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "The rule was fair to the new players but hard on the team's chance to win. Should a team keep a rule like this in a final? Build your answer.",
+      "frame": "I think the team should {0} the rule in a final because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "keep",
+            "drop",
+            "change"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "every player deserves a chance",
+            "the team wants to win the trophy",
+            "new players learn from big games",
+            "a rule should be the same in every game"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "From the story",
+          "options": [
+            "the new player blocked two shots",
+            "the team lost by one goal",
+            "the rule once helped Ana",
+            "Ben said the rule cost them the trophy"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Ben and Ana both have a point.",
+            "The new player might remember this game for a long time.",
+            "I have waited on a bench for my turn."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "hint": "Think about the rule from the new player's side. Then think about it from Ben's side.",
+      "explain": "One good answer is: I think the team should keep the rule in a final because every player deserves a chance. In the story, the new player blocked two shots. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-rule",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p3-i60",
+      "skill": "P3",
+      "passage": "p3-p21",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why did many camps limit how big a claim could be?",
+      "options": [
+        "So that miners could find gold more quickly.",
+        "So that one person could not take a whole riverbank.",
+        "So that the police could check every claim.",
+        "So that miners from other countries could have bigger claims."
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the sentence that starts with \"To keep things fair\".",
+      "explain": "Camps limited the size of a claim so that one person could not take a whole riverbank. This is in the second paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "fair-rule",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i61",
+      "skill": "P3",
+      "passage": "p3-p21",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sort these camp rules. Was each one fair to everyone, or not fair to everyone?",
+      "bins": [
+        "Fair to everyone 👍",
+        "Not fair to everyone 👎"
+      ],
+      "cards": [
+        {
+          "text": "Each claim is limited in size.",
+          "bin": 0
+        },
+        {
+          "text": "Both sides speak at a meeting before the vote.",
+          "bin": 0
+        },
+        {
+          "text": "A claim nobody works on can go to someone else.",
+          "bin": 0
+        },
+        {
+          "text": "Miners from other countries must pay an extra tax.",
+          "bin": 1
+        },
+        {
+          "text": "Some miners are pushed out of the camp.",
+          "bin": 1
+        },
+        {
+          "text": "Only some people are allowed at the meeting.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "hint": "For each rule, ask: does it treat every miner the same way, wherever they came from?",
+      "explain": "Fair to everyone: limited claims, both sides speaking, and passing on a claim nobody works. Not fair to everyone: the extra tax, pushing miners out, and keeping some people out of the meeting. The second paragraph has the fair rules, and the third has the unfair ones.",
+      "inference": 1,
+      "tags": [
+        "sort-fair",
+        "fair-rule",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i62",
+      "skill": "P3",
+      "passage": "p3-p21",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "What is the main point of the last paragraph?",
+      "options": [
+        "The rules were the very first laws that anyone wrote down in California.",
+        "The rules gave every miner the same amount of gold.",
+        "The rules were fairer than no rules, but they were not fair to everyone.",
+        "The rules were fair to every person who came to the gold fields."
+      ],
+      "answer": 2,
+      "evidence": [
+        9
+      ],
+      "hint": "Read the first sentence of the last paragraph. The other sentences give examples of it.",
+      "explain": "The last paragraph says the rules were fairer than having no rules, but they were not fair to everyone. Its first sentence says this, and the next two sentences give examples.",
+      "inference": 0,
+      "tags": [
+        "main-idea",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i63",
+      "skill": "P3",
+      "passage": "p3-p21",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "The article says the camp rules were fairer than no rules, but not fair to everyone. What do you think? Build your answer.",
+      "frame": "I think the miners' rules were {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "mostly fair",
+            "not fair",
+            "fair for some people"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "claims were limited in size",
+            "both sides could speak at meetings",
+            "some miners were pushed out",
+            "people kept out of the meeting had no vote"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "A rule is only fair if it is fair to everyone it affects.",
+            "Having some rules was better than having none.",
+            "I have seen a group make a rule that left someone out."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "hint": "Think about the rules in the second paragraph. Then think about the people in the third paragraph.",
+      "explain": "One good answer is: I think the miners' rules were fair for some people because some miners were pushed out. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-rule",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i64",
+      "skill": "P3",
+      "passage": "p3-p22",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why did Dr. Lee use a one-minute timer?",
+      "options": [
+        "So that the telescope would stay pointed at the Moon all night long.",
+        "So that Leo would learn to take his photo more quickly.",
+        "So that the small boy and his father could go home to sleep sooner.",
+        "So that everyone could have a first turn before the observatory closed."
+      ],
+      "answer": 3,
+      "evidence": [
+        4,
+        10
+      ],
+      "hint": "Find the part where Dr. Lee explains the timer to Leo.",
+      "explain": "Dr. Lee explained that the timer let everyone have a first turn before the observatory closed. This is at the start of the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "fair-turns"
+      ]
+    },
+    {
+      "id": "p3-i65",
+      "skill": "P3",
+      "passage": "p3-p22",
+      "format": "highlight",
+      "level": 4,
+      "tier": "understand",
+      "unit": "sentence",
+      "prompt": "Tap a sentence that shows Leo thought about people who were still waiting.",
+      "answer": [
+        12,
+        15
+      ],
+      "evidence": [
+        9,
+        12,
+        15
+      ],
+      "hint": "Look for what Leo looks at before he walks away. Then read what he tells his friends at the end.",
+      "explain": "Leo looked at the sleepy boy before he walked to the end of the line. At the end, he said waiting felt better than taking a turn from someone who had not looked yet.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "fair-turns",
+        "perspective"
+      ]
+    },
+    {
+      "id": "p3-i66",
+      "skill": "P3",
+      "passage": "p3-p22",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Leo could ask again, or he could go to the back of the line. What would you do? Build your answer.",
+      "frame": "If I were Leo, I would {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "go to the back of the line",
+            "ask Dr. Lee one more time",
+            "try again on another night"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "everyone should get a first look",
+            "the photo mattered to me",
+            "the little boy was tired",
+            "I would still get another turn"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "Waiting is boring, but it can be fair.",
+            "The people behind me might be tired too.",
+            "I have waited in a long line for a second turn."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        11,
+        12
+      ],
+      "hint": "Think about what Leo wanted and who was waiting behind him.",
+      "explain": "One good answer is: If I were Leo, I would go to the back of the line because everyone should get a first look. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-turns"
+      ]
+    },
+    {
+      "id": "p3-i67",
+      "skill": "P3",
+      "passage": "p3-p22",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Was the one-minute rule fair to Leo? Build your answer.",
+      "frame": "I think the one-minute rule was {0} for Leo because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "fair",
+            "not fair",
+            "fair but hard"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "everyone got the same time",
+            "a photo takes longer than a look",
+            "he could still get a second turn",
+            "forty people were waiting"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "From the story",
+          "options": [
+            "Dr. Lee let people join the back of the line",
+            "Leo's first photos came out blurry",
+            "his second photo showed sharp craters",
+            "the small boy kept yawning"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Dr. Lee found a way that was fair to everyone.",
+            "Someone taking a photo might see it differently.",
+            "I have had to wait my turn twice."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        4,
+        6,
+        11,
+        14
+      ],
+      "hint": "Think about the timer from Leo's side. Then think about it from the side of the people in line.",
+      "explain": "One good answer is: I think the one-minute rule was fair but hard for Leo because a photo takes longer than a look. In the story, Dr. Lee let people join the back of the line. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-turns",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p3-i68",
+      "skill": "P3",
+      "passage": "p3-p23",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why did Ms. Ortiz say no when Priya asked for an extra slot?",
+      "options": [
+        "Moving other people's names would not be fair to them.",
+        "Priya had already used her one slot earlier that same week.",
+        "The printer was broken and could not be used until Monday.",
+        "Priya's new wheel was too big to fit inside the printer."
+      ],
+      "answer": 0,
+      "evidence": [
+        8
+      ],
+      "hint": "Read what Ms. Ortiz says right after Priya asks.",
+      "explain": "Ms. Ortiz said she could not move other people's names, because that would not be fair to them. This is in the middle of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "fair-rule"
+      ]
+    },
+    {
+      "id": "p3-i69",
+      "skill": "P3",
+      "passage": "p3-p23",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "How did Priya get the Thursday slot in a fair way?",
+      "options": [
+        "Ms. Ortiz added an extra slot just for her.",
+        "She traded slots with Ben, and he agreed to it.",
+        "She used Ben's slot while he was at soccer practice.",
+        "The club voted to give her the Thursday slot."
+      ],
+      "answer": 1,
+      "evidence": [
+        9,
+        12,
+        13
+      ],
+      "hint": "Read the rule Ms. Ortiz gives about trading. Then find what Priya offers Ben.",
+      "explain": "Members may trade slots if both people agree. Priya offered Ben her Monday slot, and he agreed and wrote her name on the Thursday line. This is in the second and third paragraphs.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "fair-turns"
+      ]
+    },
+    {
+      "id": "p3-i70",
+      "skill": "P3",
+      "passage": "p3-p23",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sort these ways to share one printer. Is each one fair or not fair?",
+      "bins": [
+        "Fair 👍",
+        "Not fair 👎"
+      ],
+      "cards": [
+        {
+          "text": "Each member signs up for one slot a week.",
+          "bin": 0
+        },
+        {
+          "text": "Two members trade slots when both agree.",
+          "bin": 0
+        },
+        {
+          "text": "The teacher moves names around for one student.",
+          "bin": 1
+        },
+        {
+          "text": "A member prints during someone else's slot without asking.",
+          "bin": 1
+        },
+        {
+          "text": "A member signs up for every slot before anyone else can.",
+          "bin": 1
+        },
+        {
+          "text": "Everyone can see the sign-up sheet.",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        2,
+        8,
+        9
+      ],
+      "hint": "For each card, ask: does every member get the same chance, and does anyone lose a turn without agreeing?",
+      "explain": "Fair: one slot a week, trading when both agree, and a sheet everyone can see. Not fair: moving names for one student, printing in someone else's slot, and taking every slot. Ms. Ortiz's rules are in the first and second paragraphs.",
+      "inference": 1,
+      "tags": [
+        "sort-fair",
+        "fair-turns"
+      ]
+    },
+    {
+      "id": "p3-i71",
+      "skill": "P3",
+      "passage": "p3-p23",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Ben gave up a slot he had waited all week for. What do you think of his choice? Build your answer.",
+      "frame": "I think Ben was {0} because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "kind",
+            "fair",
+            "too generous",
+            "helpful"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "Priya had a race on Saturday",
+            "he still got a slot on Monday",
+            "he had waited all week too",
+            "his project could wait"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "From the story",
+          "options": [
+            "Priya offered Ben her Monday slot",
+            "Ben had already finished his design",
+            "the rover finished the race on its new wheel",
+            "Priya thanked Ben first"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Priya was fair to offer her own slot.",
+            "Someone might say Ben's turn mattered just as much.",
+            "I have traded turns to help someone."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "hint": "Think about what Ben gave up and what he got back.",
+      "explain": "One good answer is: I think Ben was kind because Priya had a race on Saturday. In the story, Priya offered Ben her Monday slot. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "kind",
+        "fair-turns"
+      ]
+    },
+    {
+      "id": "p3-i72",
+      "skill": "P3",
+      "passage": "p3-p24",
+      "format": "tap",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Why did Leo think Priya should get six slices?",
+      "options": [
+        "She was the hungriest person in the group that evening.",
+        "The group was working at her house, so she was the host.",
+        "She paid half of the money, so she could get half of the pizza.",
+        "She had done most of the work on the science project that week."
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        6,
+        7
+      ],
+      "hint": "Read what Leo says after \"Wait\". Then look back at who paid what.",
+      "explain": "Priya paid six of the twelve dollars, which is half. Leo said she should get half of the pizza, or one slice for each dollar. This is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "fair-share",
+        "two-views"
+      ]
+    },
+    {
+      "id": "p3-i73",
+      "skill": "P3",
+      "passage": "p3-p24",
+      "format": "sort",
+      "level": 4,
+      "tier": "understand",
+      "prompt": "Sort each reason. Does it support equal slices, or slices that match the money?",
+      "bins": [
+        "Equal slices for everyone",
+        "Slices that match the money"
+      ],
+      "cards": [
+        {
+          "text": "Friends should share the same amount.",
+          "bin": 0
+        },
+        {
+          "text": "Priya paid half of the cost.",
+          "bin": 1
+        },
+        {
+          "text": "Twelve slices and four people makes three each.",
+          "bin": 0
+        },
+        {
+          "text": "Each dollar buys one slice.",
+          "bin": 1
+        },
+        {
+          "text": "Priya just happened to have more money that day.",
+          "bin": 0
+        },
+        {
+          "text": "It is not fair to pay three times as much and get the same.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "hint": "Ben wants equal slices. Leo counts by money. Ask which friend would say each card.",
+      "explain": "Equal slices: friends share the same amount, three each, and Priya just had more money that day. Slices that match the money: Priya paid half, each dollar buys a slice, and paying three times as much for the same is not fair. Both views are in the second paragraph, and Priya's reason is in the third.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "sort-reasons",
+        "fair-share"
+      ]
+    },
+    {
+      "id": "p3-i74",
+      "skill": "P3",
+      "passage": "p3-p24",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Ben and Leo had different ideas about what was fair. Who do you agree with more? Build your answer.",
+      "frame": "I agree more with {0} because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "Ben",
+            "Leo",
+            "both of them"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "friends should share equally",
+            "the person who pays more should get more",
+            "Priya was happy to share",
+            "it is easy to take turns paying extra"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "From the story",
+          "options": [
+            "Priya chose to split it equally",
+            "Leo counted one slice for each dollar",
+            "Maya only wanted two slices",
+            "Ben offered to pay extra next time"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Both ideas of fair make sense.",
+            "Priya could have chosen either way.",
+            "I have shared food when someone paid more."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        8,
+        9,
+        13
+      ],
+      "hint": "Read Ben's reason and Leo's reason. Then decide which one matters more to you.",
+      "explain": "One good answer is: I agree more with Ben because friends should share equally. In the story, Priya chose to split it equally. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "fair-share"
+      ]
+    },
+    {
+      "id": "p3-i75",
+      "skill": "P3",
+      "passage": "p3-p24",
+      "format": "build",
+      "level": 4,
+      "tier": "express",
+      "prompt": "Imagine you paid the extra money, like Priya. What would you choose? Build your answer.",
+      "frame": "If I paid extra, I would {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "split the pizza equally",
+            "take more slices",
+            "ask my friends what they think"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "we are all friends",
+            "I paid more money",
+            "someone else can pay next time",
+            "everyone was hungry"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "More (you can skip this)",
+          "options": [
+            "My friends might choose differently.",
+            "Both choices could be fair.",
+            "I have paid for something to share with friends."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        12,
+        13
+      ],
+      "hint": "Think about what Priya chose and why. Would you choose the same?",
+      "explain": "One good answer is: If I paid extra, I would split the pizza equally because someone else can pay next time. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-share"
+      ]
+    },
+    {
+      "id": "p3-i76",
+      "skill": "P3",
+      "passage": "p3-p25",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What was the owner's reason for saying the shade should be his?",
+      "options": [
+        "He had found the patch of shade on the sand before the traveler did.",
+        "The traveler had paid him for only half of the day, not the whole day.",
+        "He wanted the traveler to walk the rest of the way to town.",
+        "He had agreed to carry a passenger, not to give away the only shade."
+      ],
+      "answer": 3,
+      "evidence": [
+        7,
+        9
+      ],
+      "hint": "Read what the owner says when he tells the traveler to move over. Then read the first sentence of the third paragraph.",
+      "explain": "The owner said the traveler rented the donkey but not its shadow. He had agreed to carry a passenger, not to give away the only shade. This is at the end of the second paragraph and the start of the third.",
+      "inference": 0,
+      "tags": [
+        "two-views",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i77",
+      "skill": "P3",
+      "passage": "p3-p25",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort each reason. Which man would give it?",
+      "bins": [
+        "The owner",
+        "The traveler"
+      ],
+      "cards": [
+        {
+          "text": "I paid for the whole animal for the whole day.",
+          "bin": 1
+        },
+        {
+          "text": "I only agreed to carry a passenger.",
+          "bin": 0
+        },
+        {
+          "text": "A rider should be able to use every part of the donkey.",
+          "bin": 1
+        },
+        {
+          "text": "You rented my donkey, not its shadow.",
+          "bin": 0
+        },
+        {
+          "text": "I walked all morning, and it is my animal.",
+          "bin": 0
+        },
+        {
+          "text": "The shadow comes with the donkey.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "hint": "The owner thinks about what he agreed to. The traveler thinks about what he paid for. Ask which idea each card is about.",
+      "explain": "The owner: he only agreed to carry a passenger, the traveler rented the donkey and not its shadow, and he walked all morning beside his own animal. The traveler: he paid for the whole animal for the whole day, a rider can use every part, and the shadow comes with the donkey. Both views are in the second and third paragraphs.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "sort-reasons",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i78",
+      "skill": "P3",
+      "passage": "p3-p25",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What is the lesson of this fable?",
+      "options": [
+        "Arguing too long over a small thing can make everyone lose something bigger.",
+        "The person who pays for something should always get to use all of it.",
+        "An owner should never rent out an animal for a long trip on a hot day.",
+        "A traveler should always carry an umbrella to make his own shade."
+      ],
+      "answer": 0,
+      "evidence": [
+        15,
+        16
+      ],
+      "hint": "Read the last paragraph. Ask what the two men lost and why they lost it.",
+      "explain": "The men argued so hard about the shadow that they lost the donkey itself. So arguing too long over a small thing can make everyone lose something bigger. This is in the last sentence.",
+      "inference": 1,
+      "tags": [
+        "main-idea",
+        "lesson",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i79",
+      "skill": "P3",
+      "passage": "p3-p25",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "The owner and the traveler both had a point. How could they have shared the shade fairly? Build your answer.",
+      "frame": "They could have {0}. That would be fair because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My idea",
+          "options": [
+            "taken turns in the shade",
+            "sat back to back in the shade",
+            "let the more tired man rest first"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "each man would get some shade",
+            "both of them were hot and tired",
+            "nobody would have to win the argument",
+            "the donkey would stay calm"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Both men were partly right.",
+            "Listening to each other might have saved the trip.",
+            "I have ended an argument by taking turns."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        5,
+        6,
+        9,
+        10,
+        16
+      ],
+      "hint": "The shade was big enough for one person. Think about a way both men could still get some of it.",
+      "explain": "One good answer is: They could have taken turns in the shade. That would be fair because each man would get some shade. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "problem-solving",
+        "two-views",
+        "fable"
+      ]
+    },
+    {
+      "id": "p3-i80",
+      "skill": "P3",
+      "passage": "p3-p26",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why must a fish that is too short be put back into the sea?",
+      "options": [
+        "So the crew can catch it again the same day.",
+        "So it can grow up and have young of its own.",
+        "So the scientists can count it next season.",
+        "So the boat does not get too heavy to sail."
+      ],
+      "answer": 1,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the sentence about a size limit in the second paragraph. Read the part after \"so\".",
+      "explain": "A fish shorter than a certain length must be put back so it can grow up and have young of its own. This is the size limit in the second paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i81",
+      "skill": "P3",
+      "passage": "p3-p26",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort each idea. Is it a reason for fishing limits, or a worry about them?",
+      "bins": [
+        "A reason for limits",
+        "A worry about limits"
+      ],
+      "cards": [
+        {
+          "text": "Fish need time to have young.",
+          "bin": 0
+        },
+        {
+          "text": "Children today may want to fish one day.",
+          "bin": 0
+        },
+        {
+          "text": "A crew may earn less while the boat costs the same.",
+          "bin": 1
+        },
+        {
+          "text": "The scientists' counts might be wrong.",
+          "bin": 1
+        },
+        {
+          "text": "Without limits, a whole fishery can close.",
+          "bin": 0
+        },
+        {
+          "text": "Fishing families want to help make the rules.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        1,
+        8,
+        9,
+        10,
+        12,
+        14
+      ],
+      "hint": "The third paragraph tells the worries. The first and fourth paragraphs tell the reasons. Find where each card comes from.",
+      "explain": "Reasons for limits: fish need time to have young, children may fish one day, and without limits a fishery can close. Worries: a crew may earn less, the counts might be wrong, and families want to help make the rules. The worries are in the third paragraph.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "sort-reasons",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i82",
+      "skill": "P3",
+      "passage": "p3-p26",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why does the article tell about the cod fishery?",
+      "options": [
+        "To show that scientists always count the fish in the sea correctly.",
+        "To show that cod are the only kind of fish that has a catch limit.",
+        "To show what can happen when too many fish are caught for too long.",
+        "To show how fishing crews can earn more money from cod each year."
+      ],
+      "answer": 2,
+      "evidence": [
+        11,
+        12,
+        13
+      ],
+      "hint": "Read the sentence just before the cod story. It tells you why the story is there.",
+      "explain": "The cod story shows what can happen without limits: the fishery closed, people lost their jobs and the cod did not come back to their old numbers. The fourth paragraph starts by saying supporters point to what can happen without limits.",
+      "inference": 1,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i83",
+      "skill": "P3",
+      "passage": "p3-p26",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Is a fishing limit fair, even when it is hard on people who fish today? Build your answer.",
+      "frame": "I think fishing limits are {0} because {1}. In the article, {2}. {3}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "fair",
+            "not fair",
+            "fair but hard"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "fish need time to have young",
+            "fishers need to earn money now",
+            "children should get to fish one day too",
+            "the limits might be set wrong"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "From the article",
+          "options": [
+            "a whole cod fishery had to close",
+            "a crew may earn less when a limit drops",
+            "scientists count fish every year",
+            "some families have fished for generations"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Fishing families should help make the rules.",
+            "Both sides want fish in the sea.",
+            "I have waited so that something would last longer."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        9,
+        12,
+        13,
+        14,
+        16
+      ],
+      "hint": "Think about the people who fish today. Then think about the people who will fish tomorrow.",
+      "explain": "One good answer is: I think fishing limits are fair but hard because children should get to fish one day too. In the article, a whole cod fishery had to close. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i84",
+      "skill": "P3",
+      "passage": "p3-p27",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why do runners in a 400-meter race start at different places?",
+      "options": [
+        "The fastest runners from earlier races get to start a little closer to the finish line.",
+        "A strong wind on the track pushes the runners in some lanes harder than the others.",
+        "Runners in the inside lanes need more room behind them to get ready at the start.",
+        "The outside lanes curve around a wider circle, so staggered starts keep every distance equal."
+      ],
+      "answer": 3,
+      "evidence": [
+        6,
+        7,
+        8
+      ],
+      "hint": "Read the third paragraph. Compare the inside lanes with the outside lanes.",
+      "explain": "The outside lanes curve around a wider circle, so a runner there would run farther from the same line. Staggered starts make every runner cover exactly 400 meters. This is in the third paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "fair-rule",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i85",
+      "skill": "P3",
+      "passage": "p3-p27",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "How does switching ends at halftime make a soccer game fairer?",
+      "options": [
+        "Each team faces the wind or the sun for half of the game.",
+        "The team that is losing gets an extra player.",
+        "The goalkeepers get a chance to rest.",
+        "Each team gets to play part of the game on its home field."
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Read the second paragraph. Find what could help one end of the field more than the other.",
+      "explain": "If wind or sun favors one end, switching ends means each team faces it for half of the game. This is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "fair-rule",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i86",
+      "skill": "P3",
+      "passage": "p3-p27",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort each idea about the middle lanes. Which view of fair does it show?",
+      "bins": [
+        "Fair means the same for everyone",
+        "Fair means a reward for doing well"
+      ],
+      "cards": [
+        {
+          "text": "The fastest athletes earned the middle lanes.",
+          "bin": 1
+        },
+        {
+          "text": "Every swimmer should face the same waves.",
+          "bin": 0
+        },
+        {
+          "text": "Seeing rivals on both sides is a prize for a fast time.",
+          "bin": 1
+        },
+        {
+          "text": "Slower athletes should not get an extra problem.",
+          "bin": 0
+        },
+        {
+          "text": "A good earlier race should count for something.",
+          "bin": 1
+        },
+        {
+          "text": "No lane should be harder than another.",
+          "bin": 0
+        }
+      ],
+      "evidence": [
+        12,
+        13,
+        14
+      ],
+      "hint": "Read the last paragraph. One group talks about a reward. The other group talks about an extra problem for some athletes.",
+      "explain": "The same for everyone: the same waves, no extra problem for slower athletes, and no harder lanes. A reward for doing well: the fastest earned the middle lanes, seeing rivals is a prize, and a good earlier race should count. Both views are in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "sort-reasons",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i87",
+      "skill": "P3",
+      "passage": "p3-p27",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Should the fastest athletes get the middle lanes in a final? Build your answer.",
+      "frame": "I think the fastest athletes {0} get the middle lanes because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "should",
+            "should not"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "they earned it with a fast time",
+            "every athlete should start the same way",
+            "the outer lanes can be harder",
+            "it makes the final exciting to watch"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Both sides want a fair race.",
+            "Lanes could be picked by chance instead.",
+            "I have wondered if a rule in a game was fair."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "hint": "Read both views in the last paragraph. Decide which idea of fair matters more to you.",
+      "explain": "One good answer is: I think the fastest athletes should get the middle lanes because they earned it with a fast time. Another person might say every athlete should start the same way. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i88",
+      "skill": "P3",
+      "passage": "p3-p28",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why do many scientists want dinosaur skeletons kept in museums?",
+      "options": [
+        "Museums can sell the skeletons again later for a much higher price.",
+        "Other scientists need to be able to measure the bones and check the work.",
+        "Private homes are usually too small to hold a whole dinosaur skeleton.",
+        "Only museum workers know how to dig fossils safely out of the ground."
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Read the start of the third paragraph. Look for what science depends on.",
+      "explain": "Science depends on checking each other's work. If a skeleton is in a private home, other scientists may never measure it again. This is in the third paragraph.",
+      "inference": 0,
+      "transfer": true,
+      "tags": [
+        "two-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i89",
+      "skill": "P3",
+      "passage": "p3-p28",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort each argument. Which side would make it?",
+      "bins": [
+        "Keep fossils in museums",
+        "Allow fossils to be sold"
+      ],
+      "cards": [
+        {
+          "text": "Science depends on checking each other's work.",
+          "bin": 0
+        },
+        {
+          "text": "A fossil on my land is mine.",
+          "bin": 1
+        },
+        {
+          "text": "Museums cannot afford such high prices.",
+          "bin": 0
+        },
+        {
+          "text": "Digging up bones saves them from wind and rain.",
+          "bin": 1
+        },
+        {
+          "text": "A skeleton in a private home may never be measured again.",
+          "bin": 0
+        },
+        {
+          "text": "Some buyers lend their skeletons to museums.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        7,
+        8,
+        10,
+        12,
+        13,
+        14
+      ],
+      "hint": "The third paragraph gives one side. The fourth paragraph gives the other side. Find each card in one of them.",
+      "explain": "Keep fossils in museums: checking each other's work, high prices, and skeletons that may never be measured again. Allow fossils to be sold: a fossil on your land is yours, digging saves bones from wind and rain, and some buyers lend skeletons to museums. The two sides are in the third and fourth paragraphs.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "sort-reasons",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i90",
+      "skill": "P3",
+      "passage": "p3-p28",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "What decides whether a dinosaur fossil may be sold?",
+      "options": [
+        "How old the fossil is and what kind of dinosaur it was.",
+        "How much money the nearest museum has to spend.",
+        "Where it was found, and the laws of that place.",
+        "Whether a scientist has already studied it."
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Read the first sentence of the second paragraph. The sentences after it give examples.",
+      "explain": "Who may sell a fossil depends on where it was found. Some countries say every fossil belongs to the whole country, and others let a landowner sell it. This is in the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i91",
+      "skill": "P3",
+      "passage": "p3-p28",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Should dinosaur fossils belong to everyone, or to the person who found them or paid for them? Build your answer.",
+      "frame": "I think dinosaur fossils should belong to {0} because {1}. In the article, {2}. {3}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "everyone",
+            "the person who found them",
+            "the owner of the land",
+            "the person who paid for them"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "they teach us about the history of life",
+            "the finder did the hard work",
+            "other scientists need to check the work",
+            "the land belongs to its owner"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "From the article",
+          "options": [
+            "scientists need to measure the bones again",
+            "digging up bones saves them from wind and rain",
+            "some buyers lend skeletons to museums",
+            "some countries say fossils belong to the whole country"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Both sides have a point.",
+            "A buyer who lends a skeleton to a museum is sharing it.",
+            "I would like to see a real skeleton in a museum."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        8,
+        12,
+        13,
+        14,
+        16
+      ],
+      "hint": "Read the question at the end of the article. Then pick the reason that matters most to you.",
+      "explain": "One good answer is: I think dinosaur fossils should belong to everyone because they teach us about the history of life. In the article, scientists need to measure the bones again. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i92",
+      "skill": "P3",
+      "passage": "p3-p29",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why can a step-free symbol matter so much to a rider who uses a wheelchair?",
+      "options": [
+        "It shows which trains have the most empty seats for riders.",
+        "It shows where a rider can buy a cheaper ticket for the train.",
+        "It shows which stations are closest to a hospital.",
+        "It shows which stations the rider can reach without stairs."
+      ],
+      "answer": 3,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find what a step-free station is in the second paragraph. Then read the sentence after it.",
+      "explain": "At a step-free station, a person can get from the street to the train without any stairs. For a wheelchair user, that symbol can decide whether a trip is possible at all. This is at the start of the second paragraph.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "fair-access",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i93",
+      "skill": "P3",
+      "passage": "p3-p29",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why do careful designers add letters, numbers or patterns to map lines?",
+      "options": [
+        "Some riders have trouble telling red and green apart.",
+        "Colors fade when a map hangs in the sun.",
+        "Letters and numbers take up less space than colors.",
+        "Some lines are too long to fit on one page."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Read the last two sentences of the second paragraph.",
+      "explain": "About one in twelve men has trouble telling some colors apart, especially red and green. Letters, numbers or patterns help those riders tell the lines apart. This is at the end of the second paragraph.",
+      "inference": 0,
+      "tags": [
+        "fair-access",
+        "key-detail",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i94",
+      "skill": "P3",
+      "passage": "p3-p29",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort each idea. Does it support one map for all riders, or several maps for different needs?",
+      "bins": [
+        "One map for all",
+        "Several maps"
+      ],
+      "cards": [
+        {
+          "text": "A crowded map is harder for everyone to read.",
+          "bin": 0
+        },
+        {
+          "text": "Each map can be designed for one need.",
+          "bin": 1
+        },
+        {
+          "text": "Riders do not have to search for the right map.",
+          "bin": 0
+        },
+        {
+          "text": "A tactile map can be made just for readers who use braille.",
+          "bin": 1
+        },
+        {
+          "text": "A plainer map can still work for every rider.",
+          "bin": 0
+        },
+        {
+          "text": "Each map can show more detail for its own riders.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        11
+      ],
+      "hint": "Read the last paragraph. One group wants one plain map. The other group makes a map for each need.",
+      "explain": "One map for all: a crowded map is hard to read, riders do not have to search, and a plain map can still work. Several maps: each map fits one need, a tactile map for braille readers, and more detail for each group. Both views are in the last paragraph.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "sort-reasons",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i95",
+      "skill": "P3",
+      "passage": "p3-p29",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "The article says a map is only fair if every rider can use it. Do you agree? Build your answer.",
+      "frame": "I {0} that a map is only fair if every rider can use it, because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "agree",
+            "disagree",
+            "partly agree"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "some riders cannot use stairs",
+            "every rider should be able to travel on their own",
+            "a map with too many symbols can confuse people",
+            "nobody should have to stay home"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Designers on both sides want the same goal.",
+            "Making things fair can take extra work.",
+            "I have used a map that was hard to read."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        2,
+        4,
+        9,
+        12
+      ],
+      "hint": "Think about the riders in the first paragraph. Then think about the crowded map in the last paragraph.",
+      "explain": "One good answer is: I agree that a map is only fair if every rider can use it, because nobody should have to stay home. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-access",
+        "article"
+      ]
+    },
+    {
+      "id": "p3-i96",
+      "skill": "P3",
+      "passage": "p3-p30",
+      "format": "tap",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Why did Ben decide that using the glitch lap would be unfair?",
+      "options": [
+        "The rules page said that any player who used a glitch would be removed from the list.",
+        "It would move down players who drove the whole track, and he skipped the hard part.",
+        "Ana told him that using a glitch to get a faster lap was a kind of cheating.",
+        "His glitch lap was only half a second faster than the top time on the list."
+      ],
+      "answer": 1,
+      "evidence": [
+        7,
+        8
+      ],
+      "hint": "Read what Ben says after he stops grinning.",
+      "explain": "Ben said his lap would move down the list every player who practiced for months, and he skipped the hard part. This is at the end of the second paragraph.",
+      "inference": 1,
+      "tags": [
+        "fair-play"
+      ]
+    },
+    {
+      "id": "p3-i97",
+      "skill": "P3",
+      "passage": "p3-p30",
+      "format": "sort",
+      "level": 5,
+      "tier": "understand",
+      "prompt": "Sort each reason. Is it Ana's view or Ben's view?",
+      "bins": [
+        "Ana's view",
+        "Ben's view"
+      ],
+      "cards": [
+        {
+          "text": "Finding a glitch takes real skill.",
+          "bin": 0
+        },
+        {
+          "text": "Some games keep separate lists for glitch runs.",
+          "bin": 0
+        },
+        {
+          "text": "The rules page says nothing about glitches.",
+          "bin": 0
+        },
+        {
+          "text": "Other players drove every corner of the track.",
+          "bin": 1
+        },
+        {
+          "text": "Something can be unfair even if no rule says so.",
+          "bin": 1
+        },
+        {
+          "text": "He did not drive the hard part of the track.",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        6,
+        8,
+        9,
+        10
+      ],
+      "hint": "Ana talks about skill and rules. Ben talks about the other players. Find who says each idea.",
+      "explain": "Ana's view: finding a glitch takes skill, some games keep glitch lists, and the rules page says nothing about glitches. Ben's view: other players drove every corner, something can be unfair without a rule, and he skipped the hard part. Their views are in the second and third paragraphs.",
+      "inference": 1,
+      "tags": [
+        "two-views",
+        "sort-reasons"
+      ]
+    },
+    {
+      "id": "p3-i98",
+      "skill": "P3",
+      "passage": "p3-p30",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Imagine you found the canyon glitch. What would you do? Build your answer.",
+      "frame": "If I found the glitch, I would {0} because {1}. {2}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My choice",
+          "options": [
+            "report it like Ben",
+            "post my glitch lap",
+            "post it on a list just for glitch runs"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "other players drove the whole track",
+            "finding a glitch takes skill",
+            "the rules do not ban glitches",
+            "the game makers should fix it"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "Ana and Ben both had a point.",
+            "Reporting the glitch helped every player.",
+            "I have found a shortcut in a game."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        9,
+        10,
+        12,
+        13
+      ],
+      "hint": "Think about Ana's reasons and Ben's reasons. Which ones would guide your choice?",
+      "explain": "One good answer is: If I found the glitch, I would report it like Ben because other players drove the whole track. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "fair-play"
+      ]
+    },
+    {
+      "id": "p3-i99",
+      "skill": "P3",
+      "passage": "p3-p30",
+      "format": "build",
+      "level": 5,
+      "tier": "express",
+      "prompt": "Ana said using the glitch was not cheating. Ben said it was unfair. Who do you agree with more? Build your answer.",
+      "frame": "I agree more with {0} because {1}. In the story, {2}. {3}",
+      "slots": [
+        {
+          "kind": "main",
+          "label": "My view",
+          "options": [
+            "Ana",
+            "Ben",
+            "both of them"
+          ],
+          "rubric": 1
+        },
+        {
+          "kind": "why",
+          "label": "Reason",
+          "options": [
+            "the rules did not ban glitches",
+            "finding a glitch takes skill",
+            "other players drove the whole track",
+            "a rule does not have to be written down"
+          ],
+          "rubric": 2
+        },
+        {
+          "kind": "evidence",
+          "label": "From the story",
+          "options": [
+            "Ben skipped almost a quarter of the track",
+            "some games keep separate lists for glitch runs",
+            "the game makers fixed the canyon wall",
+            "the glitch lap was eleven seconds faster than any other"
+          ],
+          "rubric": 3
+        },
+        {
+          "kind": "other",
+          "label": "Another view (you can skip this)",
+          "options": [
+            "A separate list for glitch runs would be fair to both.",
+            "Reporting the glitch helped every player.",
+            "I have argued with someone about a rule in a game."
+          ],
+          "rubric": 4,
+          "optional": true
+        }
+      ],
+      "evidence": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        15
+      ],
+      "hint": "Read Ana's reason and Ben's reason in the third paragraph. Then pick the one that makes more sense to you.",
+      "explain": "One good answer is: I agree more with Ben because other players drove the whole track. In the story, Ben skipped almost a quarter of the track. Another person might agree with Ana because the rules did not ban glitches. Any honest answer is fine.",
+      "inference": 2,
+      "tags": [
+        "opinion",
+        "two-views",
+        "fair-play"
       ]
     }
   ],

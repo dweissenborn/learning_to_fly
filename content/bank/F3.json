@@ -133,7 +133,7 @@
       "sentences": ["The ferry goes from Harbor Town to Gull Island.", "The ride takes 40 minutes."],
       "visual": {
         "type": "table",
-        "title": "Harbor Town Ferry",
+        "title": "Harbor Town Ferry: September 2 to June 14",
         "note": "The 5:15 PM ferry runs on Saturday and Sunday only.",
         "columns": ["Leaves Harbor Town", "Gets to Gull Island"],
         "rows": [
@@ -474,15 +474,15 @@
     },
     {
       "id": "f3-p18",
-      "title": "Spring Concert Program",
+      "title": "Spring Music Night Program",
       "kind": "schedule",
       "sentences": [
-        "Harbor Middle School has a spring concert in the gym.",
+        "Harbor Middle School has a spring music night in the gym.",
         "It starts at 6:00 PM."
       ],
       "visual": {
         "type": "table",
-        "title": "Spring Concert Program",
+        "title": "Spring Music Night Program",
         "note": "The groups play in this order. Each group starts right after the one before it ends.",
         "columns": [
           "Group",
@@ -529,7 +529,7 @@
       "level": 3,
       "socialLoad": 0,
       "credit": {
-        "title": "Spring Concert Program",
+        "title": "Spring Music Night Program",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -543,11 +543,11 @@
       "kind": "timetable",
       "sentences": [
         "A strong wind is coming to Harbor Town on Sunday.",
-        "The ferry company posts its Sunday timetable with the wind forecast."
+        "For the Spring Fair, the ferry posts a special timetable with two boats."
       ],
       "visual": {
         "type": "table",
-        "title": "Gull Island Ferry: Sunday, April 12",
+        "title": "Gull Island Ferry: Spring Fair, Sunday, April 12",
         "note": "The small boat, the Puffin, stays in the harbor when the wind forecast is 25 miles per hour (mph) or more. The large boat, the Osprey, sails in winds up to 40 mph. If your trip is canceled, your ticket works on any other trip that day. Each trip takes 40 minutes.",
         "columns": [
           "Leaves Harbor Town",
@@ -605,15 +605,15 @@
     },
     {
       "id": "f3-p20",
-      "title": "Copper Hill Mine Tours",
+      "title": "Ridgeway Mine Tours",
       "kind": "schedule",
       "sentences": [
-        "The old Copper Hill Mine in Lantern Peaks is now a museum.",
+        "The old Ridgeway Mine in Lantern Peaks is now a museum.",
         "Leo reads the tour booking table."
       ],
       "visual": {
         "type": "table",
-        "title": "Copper Hill Mine: Saturday Tours",
+        "title": "Ridgeway Mine Museum: Saturday Tours",
         "note": "Prices for each tour: adults $10, ages 6 to 17 $6, under 6 free. Every visitor wears a hard hat. We lend them for free. It is cool inside the mine all year, so bring a jacket.",
         "columns": [
           "Tour",
@@ -674,7 +674,7 @@
       "level": 4,
       "socialLoad": 0,
       "credit": {
-        "title": "Copper Hill Mine Tours",
+        "title": "Ridgeway Mine Tours",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -918,6 +918,2558 @@
       "socialLoad": 0,
       "credit": {
         "title": "Dinosaur Weekend at the Museum",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p24",
+      "title": "Rock Club Checklist",
+      "kind": "list",
+      "sentences": [
+        "Maya goes on a rock hunt with the rock club.",
+        "She puts a check mark next to each rock she finds."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Rocks to Find",
+        "note": "✔ means Maya found it.",
+        "ordered": false,
+        "rows": [
+          "Quartz ✔",
+          "Mica ✔",
+          "Garnet",
+          "Pyrite ✔"
+        ]
+      },
+      "picture": "🪨🔍",
+      "topics": [
+        "mining"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rock Club Checklist",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p25",
+      "title": "Robot Fair Shows",
+      "kind": "schedule",
+      "sentences": [
+        "The robot fair is in the school gym on Saturday.",
+        "Priya reads the show times."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Robot Fair Shows",
+        "columns": [
+          "Robot",
+          "Show time"
+        ],
+        "rows": [
+          [
+            "Dancing robot",
+            "10 AM"
+          ],
+          [
+            "Drawing robot",
+            "11 AM"
+          ],
+          [
+            "Soccer robot",
+            "1 PM"
+          ]
+        ]
+      },
+      "picture": "🤖⏰",
+      "topics": [
+        "robots"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Robot Fair Shows",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p26",
+      "title": "Bread of the Day",
+      "kind": "list",
+      "sentences": [
+        "Rose's Bakery makes a special bread on some days.",
+        "Sam reads the sign in the window."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Bread of the Day",
+        "columns": [
+          "Day",
+          "Bread"
+        ],
+        "rows": [
+          [
+            "Monday",
+            "Rye bread"
+          ],
+          [
+            "Wednesday",
+            "Corn bread"
+          ],
+          [
+            "Friday",
+            "Raisin bread"
+          ],
+          [
+            "Saturday",
+            "Seed bread"
+          ]
+        ]
+      },
+      "picture": "🍞🥖",
+      "topics": [
+        "food"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bread of the Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p27",
+      "title": "Saturday at the Pool",
+      "kind": "schedule",
+      "sentences": [
+        "Ana and Ben want to swim on Saturday.",
+        "They read the board at the Harbor Town Pool."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Saturday at the Pool",
+        "columns": [
+          "Time",
+          "What is on"
+        ],
+        "rows": [
+          [
+            "9:00 AM to 10:00 AM",
+            "Swim lessons"
+          ],
+          [
+            "10:00 AM to 12:00 PM",
+            "Free swim"
+          ],
+          [
+            "12:00 PM to 1:00 PM",
+            "Closed for cleaning"
+          ],
+          [
+            "1:00 PM to 3:00 PM",
+            "Lap swim, ages 16 and up"
+          ],
+          [
+            "3:00 PM to 5:00 PM",
+            "Free swim"
+          ]
+        ]
+      },
+      "picture": "🏊🕒",
+      "topics": [
+        "sports"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Saturday at the Pool",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p28",
+      "title": "Whale Watch Trips",
+      "kind": "timetable",
+      "sentences": [
+        "Sam and Grandma Rose want to see whales on Saturday.",
+        "They read the boat times at the harbor."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Whale Watch Trips: Saturday",
+        "columns": [
+          "Boat",
+          "Leaves",
+          "Comes back"
+        ],
+        "rows": [
+          [
+            "Blue Fin",
+            "9:00 AM",
+            "11:00 AM"
+          ],
+          [
+            "Sea Star",
+            "10:30 AM",
+            "1:00 PM"
+          ],
+          [
+            "Blue Fin",
+            "1:30 PM",
+            "3:30 PM"
+          ],
+          [
+            "Sea Star",
+            "3:00 PM",
+            "5:30 PM"
+          ]
+        ]
+      },
+      "picture": "🐋⛴️",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Whale Watch Trips",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p29",
+      "title": "Weekend Weather",
+      "kind": "list",
+      "sentences": [
+        "Leo wants to skate at the outdoor skate park this weekend.",
+        "He checks the weather first."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Town Weather",
+        "note": "High means the warmest it will get that day.",
+        "columns": [
+          "Day",
+          "Weather",
+          "High"
+        ],
+        "rows": [
+          [
+            "Friday",
+            "Rain all day",
+            "58°F"
+          ],
+          [
+            "Saturday",
+            "Sunny",
+            "62°F"
+          ],
+          [
+            "Sunday",
+            "Windy and cloudy",
+            "54°F"
+          ]
+        ]
+      },
+      "picture": "🌦️🛹",
+      "topics": [
+        "weather"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Weekend Weather",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p30",
+      "title": "Arcade Game Tokens",
+      "kind": "list",
+      "sentences": [
+        "Ana and Ben go to the Harbor Arcade.",
+        "Each game takes tokens to play."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Arcade",
+        "columns": [
+          "Game",
+          "Tokens for one play"
+        ],
+        "rows": [
+          [
+            "Space Racer",
+            "2 tokens"
+          ],
+          [
+            "Robot Maze",
+            "3 tokens"
+          ],
+          [
+            "Air hockey",
+            "2 tokens"
+          ],
+          [
+            "Dance Floor",
+            "4 tokens"
+          ],
+          [
+            "Claw machine",
+            "1 token"
+          ]
+        ]
+      },
+      "picture": "🕹️🎟️",
+      "topics": [
+        "games"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Arcade Game Tokens",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p31",
+      "title": "Music Lesson Times",
+      "kind": "schedule",
+      "sentences": [
+        "Ms. Gray gives music lessons after school.",
+        "Every lesson is in the music room."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "After-School Music Lessons",
+        "columns": [
+          "Instrument",
+          "Day",
+          "Time"
+        ],
+        "rows": [
+          [
+            "Flute",
+            "Monday",
+            "4:45 PM"
+          ],
+          [
+            "Trumpet",
+            "Tuesday",
+            "4:45 PM"
+          ],
+          [
+            "Cello",
+            "Monday",
+            "4:00 PM"
+          ],
+          [
+            "Guitar",
+            "Monday",
+            "3:30 PM"
+          ],
+          [
+            "Piano",
+            "Tuesday",
+            "5:15 PM"
+          ]
+        ]
+      },
+      "picture": "🎵🎻",
+      "topics": [
+        "music"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Music Lesson Times",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p32",
+      "title": "Museum Floor Guide",
+      "kind": "list",
+      "sentences": [
+        "The Harbor Town Museum has four floors.",
+        "This guide hangs next to the elevator."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Museum Floor Guide",
+        "columns": [
+          "Floor",
+          "What you will find"
+        ],
+        "rows": [
+          [
+            "Floor 1",
+            "Front desk, gift shop and café"
+          ],
+          [
+            "Floor 2",
+            "Dinosaur Hall: big dinosaur skeletons"
+          ],
+          [
+            "Floor 3",
+            "Fossil Lab and fossil sea shells"
+          ],
+          [
+            "Floor 4",
+            "Dinosaur eggs and nests"
+          ]
+        ]
+      },
+      "picture": "🦕🛗",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Museum Floor Guide",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p33",
+      "title": "Coast Line Morning Trains",
+      "kind": "timetable",
+      "sentences": [
+        "Sam likes to ride the Coast Line train.",
+        "It runs along the coast from Harbor Town Station to Pine Bay."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Coast Line: Weekday Morning Trains to Pine Bay",
+        "note": "A dash (—) means the train does not stop there. The Express train makes fewer stops, so it is faster.",
+        "columns": [
+          "Station",
+          "Train 1",
+          "Train 2 (Express)",
+          "Train 3"
+        ],
+        "rows": [
+          [
+            "Harbor Town Station",
+            "7:10 AM",
+            "8:00 AM",
+            "9:15 AM"
+          ],
+          [
+            "Gull Point",
+            "7:25 AM",
+            "—",
+            "9:30 AM"
+          ],
+          [
+            "Sandy Cove",
+            "7:40 AM",
+            "—",
+            "9:45 AM"
+          ],
+          [
+            "Pine Bay",
+            "8:05 AM",
+            "8:35 AM",
+            "10:10 AM"
+          ]
+        ]
+      },
+      "picture": "🚆🌊",
+      "topics": [
+        "transport"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Coast Line Morning Trains",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p34",
+      "title": "Food Truck Night",
+      "kind": "menu",
+      "sentences": [
+        "Food trucks park by the harbor every Friday night.",
+        "Priya and Maya each bring $8."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Food Truck Night",
+        "note": "Water is free at the table by the harbor wall.",
+        "columns": [
+          "Truck",
+          "Food",
+          "Price"
+        ],
+        "rows": [
+          [
+            "Taco Wave",
+            "Two bean tacos",
+            "$5"
+          ],
+          [
+            "Taco Wave",
+            "Corn on a stick",
+            "$2"
+          ],
+          [
+            "Noodle Boat",
+            "Veggie noodles",
+            "$6"
+          ],
+          [
+            "Noodle Boat",
+            "Egg roll",
+            "$2"
+          ],
+          [
+            "Scoop Shack",
+            "Ice cream cone",
+            "$3"
+          ],
+          [
+            "Scoop Shack",
+            "Fruit ice pop",
+            "$2"
+          ]
+        ]
+      },
+      "picture": "🚚🌮",
+      "topics": [
+        "food",
+        "money"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Food Truck Night",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p35",
+      "title": "Harbor Cup Games",
+      "kind": "schedule",
+      "sentences": [
+        "Ana and Ben play for the Harbor Hawks, the soccer team at Harbor Middle School.",
+        "Coach Novak gives the team the schedule for the Harbor Cup."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Cup: Saturday Games",
+        "note": "Each game lasts 50 minutes. Teams must arrive 30 minutes before their first game.",
+        "columns": [
+          "Time",
+          "Field",
+          "Team",
+          "Against"
+        ],
+        "rows": [
+          [
+            "9:00 AM",
+            "Field 1",
+            "Harbor Hawks",
+            "Pine Bay Pumas"
+          ],
+          [
+            "9:00 AM",
+            "Field 2",
+            "Sandy Cove Sharks",
+            "Gull Point Pelicans"
+          ],
+          [
+            "10:30 AM",
+            "Field 1",
+            "Sandy Cove Sharks",
+            "Pine Bay Pumas"
+          ],
+          [
+            "10:30 AM",
+            "Field 2",
+            "Harbor Hawks",
+            "Gull Point Pelicans"
+          ],
+          [
+            "12:00 PM",
+            "Field 1",
+            "Harbor Hawks",
+            "Sandy Cove Sharks"
+          ],
+          [
+            "12:00 PM",
+            "Field 2",
+            "Pine Bay Pumas",
+            "Gull Point Pelicans"
+          ]
+        ]
+      },
+      "picture": "⚽🏆",
+      "topics": [
+        "sports"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Harbor Cup Games",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p36",
+      "title": "Sky Nights in May",
+      "kind": "schedule",
+      "sentences": [
+        "On some nights, the Lantern Peaks Observatory lets visitors look through its big telescope.",
+        "Dr. Lee runs these sky nights."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Sky Nights in May",
+        "note": "Sky nights are canceled if the sky is cloudy. Visitors must be 8 or older.",
+        "columns": [
+          "Date",
+          "Starts",
+          "What to look at"
+        ],
+        "rows": [
+          [
+            "Friday, May 8",
+            "8:30 PM",
+            "Jupiter and its four biggest moons"
+          ],
+          [
+            "Saturday, May 16",
+            "9:00 PM",
+            "Star clusters"
+          ],
+          [
+            "Friday, May 22",
+            "9:00 PM",
+            "Craters on the Moon"
+          ],
+          [
+            "Saturday, May 30",
+            "9:00 PM",
+            "Double stars"
+          ]
+        ]
+      },
+      "picture": "🔭🪐",
+      "topics": [
+        "space"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sky Nights in May",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p37",
+      "title": "Rock Club Field Trips",
+      "kind": "schedule",
+      "sentences": [
+        "Mr. Varga leads the rock club at the library.",
+        "He plans three field trips this spring."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Rock Club Field Trips",
+        "note": "On each trip day, meet at the library at 9:00 AM.",
+        "columns": [
+          "Date",
+          "Place",
+          "Look for",
+          "Bring"
+        ],
+        "rows": [
+          [
+            "Saturday, April 4",
+            "Creek bed in Story Woods",
+            "Smooth river stones",
+            "Boots that can get wet"
+          ],
+          [
+            "Saturday, April 18",
+            "Ridgeway Mine Museum",
+            "Copper ore and pyrite",
+            "A warm jacket"
+          ],
+          [
+            "Saturday, May 2",
+            "Gull Point beach",
+            "Agates on the sand",
+            "A sun hat"
+          ]
+        ]
+      },
+      "picture": "🪨🚌",
+      "topics": [
+        "mining"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rock Club Field Trips",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p38",
+      "title": "Robot Race Heats",
+      "kind": "list",
+      "sentences": [
+        "Priya's rover is in the Harbor Robot Race.",
+        "Robots race in small groups called heats."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Robot Race: Heat Results",
+        "note": "A smaller time means a faster robot. The two fastest robots in each heat race again in the final at 2:00 PM.",
+        "columns": [
+          "Heat",
+          "Robot",
+          "Time to finish"
+        ],
+        "rows": [
+          [
+            "Heat 1",
+            "Zip",
+            "40 seconds"
+          ],
+          [
+            "Heat 1",
+            "Spark",
+            "36 seconds"
+          ],
+          [
+            "Heat 1",
+            "Gizmo",
+            "44 seconds"
+          ],
+          [
+            "Heat 2",
+            "Bolt",
+            "39 seconds"
+          ],
+          [
+            "Heat 2",
+            "Priya's rover",
+            "35 seconds"
+          ],
+          [
+            "Heat 2",
+            "Pebble",
+            "41 seconds"
+          ]
+        ]
+      },
+      "picture": "🤖🏁",
+      "topics": [
+        "robots"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Robot Race Heats",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p39",
+      "title": "Kite Day Forecast",
+      "kind": "list",
+      "sentences": [
+        "Leo and Sam want to fly a kite on Saturday.",
+        "A kite flies best when there is wind but no rain."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Town: Saturday Forecast",
+        "note": "Kites fly best in wind from 8 to 20 miles per hour (mph).",
+        "columns": [
+          "Time",
+          "Sky",
+          "Chance of rain",
+          "Wind"
+        ],
+        "rows": [
+          [
+            "9 AM",
+            "Rain",
+            "90%",
+            "9 mph"
+          ],
+          [
+            "11 AM",
+            "Cloudy",
+            "50%",
+            "6 mph"
+          ],
+          [
+            "1 PM",
+            "Sunny",
+            "10%",
+            "5 mph"
+          ],
+          [
+            "3 PM",
+            "Sunny",
+            "10%",
+            "14 mph"
+          ],
+          [
+            "5 PM",
+            "Clear",
+            "0%",
+            "3 mph"
+          ]
+        ]
+      },
+      "picture": "🪁🌤️",
+      "topics": [
+        "weather"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Kite Day Forecast",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p40",
+      "title": "Driftwood Beach Tides",
+      "kind": "timetable",
+      "sentences": [
+        "Maya wants to look for shells and smooth stones at Driftwood Beach.",
+        "More of the beach shows at low tide."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Driftwood Beach Tide Table",
+        "note": "The sea comes in and goes out two times each day.",
+        "columns": [
+          "Day",
+          "Low tides",
+          "High tides"
+        ],
+        "rows": [
+          [
+            "Friday",
+            "3:40 AM and 4:05 PM",
+            "9:50 AM and 10:15 PM"
+          ],
+          [
+            "Saturday",
+            "4:30 AM and 4:55 PM",
+            "10:40 AM and 11:05 PM"
+          ],
+          [
+            "Sunday",
+            "5:20 AM and 5:45 PM",
+            "11:30 AM and 11:55 PM"
+          ]
+        ]
+      },
+      "picture": "🌊🐚",
+      "topics": [
+        "ocean"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Driftwood Beach Tides",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p41",
+      "title": "Animal Shelter Visiting Times",
+      "kind": "schedule",
+      "sentences": [
+        "The Harbor Town Animal Shelter has dogs and cats that need homes.",
+        "Visitors can meet them at set times."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Animal Shelter Visiting Times",
+        "note": "Children under 14 must visit with an adult.",
+        "columns": [
+          "Day",
+          "Dog room",
+          "Cat room"
+        ],
+        "rows": [
+          [
+            "Monday",
+            "Closed",
+            "Closed"
+          ],
+          [
+            "Tuesday to Friday",
+            "12 PM to 5 PM",
+            "1 PM to 4 PM"
+          ],
+          [
+            "Saturday",
+            "10 AM to 4 PM",
+            "10 AM to 2 PM"
+          ],
+          [
+            "Sunday",
+            "12 PM to 3 PM",
+            "Closed"
+          ]
+        ]
+      },
+      "picture": "🐶🐱",
+      "topics": [
+        "animals"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Animal Shelter Visiting Times",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p42",
+      "title": "Harbor Town Map Index",
+      "kind": "list",
+      "sentences": [
+        "The town map has a grid.",
+        "Letters go across the top, and numbers go down the side.",
+        "Each place is in one square."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Map Index",
+        "columns": [
+          "Place",
+          "Square"
+        ],
+        "rows": [
+          [
+            "Bus station",
+            "B2"
+          ],
+          [
+            "Harbor Middle School",
+            "C4"
+          ],
+          [
+            "Lighthouse Café",
+            "A1"
+          ],
+          [
+            "Library",
+            "B2"
+          ],
+          [
+            "Okafor's Bike Shop",
+            "C3"
+          ],
+          [
+            "Skate park",
+            "D4"
+          ]
+        ]
+      },
+      "picture": "🗺️📍",
+      "topics": [
+        "maps"
+      ],
+      "level": 3,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Harbor Town Map Index",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p43",
+      "title": "Bus and Train to the Train Museum",
+      "kind": "timetable",
+      "sentences": [
+        "On Friday after school, Sam and Grandma Rose visit the Pine Bay Train Museum.",
+        "They need a bus and then a train."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Friday Afternoon: Bus 12 and the Coast Line",
+        "note": "You need at least 10 minutes to walk from the Bus 12 stop to the train platform. Express trains do not stop at Gull Point or Sandy Cove. The train museum is a 5-minute walk from Pine Bay Station, and it closes at 6:00 PM.",
+        "columns": [
+          "Route",
+          "Leaves",
+          "From",
+          "Arrives",
+          "At"
+        ],
+        "rows": [
+          [
+            "Bus 12",
+            "3:00 PM",
+            "Harbor Middle School",
+            "3:18 PM",
+            "Harbor Town Station"
+          ],
+          [
+            "Bus 12",
+            "3:30 PM",
+            "Harbor Middle School",
+            "3:48 PM",
+            "Harbor Town Station"
+          ],
+          [
+            "Bus 12",
+            "4:00 PM",
+            "Harbor Middle School",
+            "4:18 PM",
+            "Harbor Town Station"
+          ],
+          [
+            "Coast Line",
+            "3:25 PM",
+            "Harbor Town Station",
+            "4:20 PM",
+            "Pine Bay Station"
+          ],
+          [
+            "Coast Line Express",
+            "4:00 PM",
+            "Harbor Town Station",
+            "4:35 PM",
+            "Pine Bay Station"
+          ],
+          [
+            "Coast Line",
+            "4:30 PM",
+            "Harbor Town Station",
+            "5:25 PM",
+            "Pine Bay Station"
+          ],
+          [
+            "Coast Line Express",
+            "5:00 PM",
+            "Harbor Town Station",
+            "5:35 PM",
+            "Pine Bay Station"
+          ]
+        ]
+      },
+      "picture": "🚌🔁🚆",
+      "topics": [
+        "transport"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bus and Train to the Train Museum",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p44",
+      "title": "Dockside Pizza",
+      "kind": "menu",
+      "sentences": [
+        "Coach Novak is buying pizza for the soccer team party.",
+        "She needs food for 14 people, and each person will eat 2 slices."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Dockside Pizza",
+        "note": "Every pizza has cheese and tomato sauce. Each topping costs extra, for each pizza. Deal: buy 3 large pizzas and get 1 large cheese pizza free. Delivery is free for orders of $50 or more. Under $50, delivery costs $5.",
+        "columns": [
+          "Size",
+          "Slices",
+          "Cheese pizza",
+          "Each topping"
+        ],
+        "rows": [
+          [
+            "Small",
+            "6",
+            "$8",
+            "$1"
+          ],
+          [
+            "Medium",
+            "8",
+            "$11",
+            "$1.50"
+          ],
+          [
+            "Large",
+            "10",
+            "$14",
+            "$2"
+          ],
+          [
+            "Party size",
+            "24",
+            "$30",
+            "$4"
+          ]
+        ]
+      },
+      "picture": "🍕🧾",
+      "topics": [
+        "food",
+        "money"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Dockside Pizza",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p45",
+      "title": "Star Camp Week",
+      "kind": "schedule",
+      "sentences": [
+        "Star Camp runs for one week in July at the Lantern Peaks Observatory.",
+        "Dr. Hale, an astronomer, leads the camp.",
+        "Campers are 10 to 14 years old.",
+        "On most days, camp starts at 9:00 AM and ends at 3:00 PM.",
+        "Thursday is different.",
+        "On Thursday, camp starts at 1:00 PM and ends at 9:30 PM, so campers can look through the big telescope after dark.",
+        "Eat lunch at home before you come that day.",
+        "The camp serves dinner at the observatory at 5:30 PM.",
+        "A parent must sign the night form by Wednesday.",
+        "Bring a packed lunch on Monday, Tuesday and Wednesday.",
+        "On Friday, the camp serves a pizza lunch after the rocket launch.",
+        "Campers launch their water rockets on the field on Friday morning.",
+        "If rain or strong wind is forecast for Friday, the launch moves to the next Monday at 10:00 AM."
+      ],
+      "breaks": [
+        4,
+        9
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Star Camp: Week Plan",
+        "columns": [
+          "Day",
+          "Morning",
+          "Afternoon"
+        ],
+        "rows": [
+          [
+            "Monday",
+            "Tour of the observatory",
+            "How rockets fly"
+          ],
+          [
+            "Tuesday",
+            "Our Sun is a star",
+            "Build a model rover"
+          ],
+          [
+            "Wednesday",
+            "Moon maps",
+            "Build your water rocket"
+          ],
+          [
+            "Thursday",
+            "No camp",
+            "Star charts, then telescope night"
+          ],
+          [
+            "Friday",
+            "Rocket launch on the field",
+            "Show and tell for families"
+          ]
+        ]
+      },
+      "picture": "🔭🚀",
+      "topics": [
+        "space"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Star Camp Week",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p46",
+      "title": "Rock and Mineral Show",
+      "kind": "schedule",
+      "sentences": [
+        "The rock club holds a Rock and Mineral Show in the library hall.",
+        "Maya plans her Saturday with the show guide."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Rock and Mineral Show: Saturday",
+        "note": "The show is open from 10:00 AM to 3:00 PM, and entry is free. Pay for geodes and gold panning at the club table. Only rock club members may trade at the rock swap. Mr. Varga names rocks for anyone at the Ask the Expert desk all day.",
+        "columns": [
+          "Time",
+          "Event",
+          "Place",
+          "Cost"
+        ],
+        "rows": [
+          [
+            "10:00 to 10:30 AM",
+            "Talk: How crystals grow",
+            "Meeting room",
+            "Free"
+          ],
+          [
+            "10:00 AM to 12:00 PM",
+            "Geode cracking",
+            "Back table",
+            "$4 for each geode"
+          ],
+          [
+            "11:00 to 11:30 AM",
+            "Talk: Metals from mines",
+            "Meeting room",
+            "Free"
+          ],
+          [
+            "11:00 AM to 2:00 PM",
+            "Rock swap: trade up to 3 rocks",
+            "Swap table",
+            "Free"
+          ],
+          [
+            "1:00 to 1:30 PM",
+            "Talk: Minerals that glow under black light",
+            "Meeting room",
+            "Free"
+          ],
+          [
+            "1:00 to 3:00 PM",
+            "Gold panning",
+            "Back table",
+            "$5 for 15 minutes"
+          ]
+        ]
+      },
+      "picture": "💎⛏️",
+      "topics": [
+        "mining"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rock and Mineral Show",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p47",
+      "title": "Field Day Moves Indoors",
+      "kind": "schedule",
+      "sentences": [
+        "Harbor Middle School holds Field Day on Friday, June 5.",
+        "The weather service now says thunderstorms will reach Harbor Town at about noon.",
+        "Outdoor games must stop when there is thunder or lightning, so the afternoon events will move indoors.",
+        "The morning events stay outside on the field.",
+        "The relay races start at 9:00 AM.",
+        "The long jump starts at 10:00 AM.",
+        "The tug-of-war starts at 11:00 AM and ends at 11:45 AM.",
+        "Lunch moves from the field to the cafeteria at 12:00 PM.",
+        "After lunch, Grade 6 goes to the gym for the obstacle course at 12:45 PM.",
+        "Grade 7 goes to the gym at 1:30 PM.",
+        "While one grade is in the gym, the other grade plays board games in the library.",
+        "The water balloon toss is canceled, because it cannot be held indoors.",
+        "School ends at the normal time, 2:35 PM.",
+        "Please wear sneakers and bring a water bottle with your name on it."
+      ],
+      "breaks": [
+        3,
+        7,
+        12
+      ],
+      "picture": "⛈️🏃",
+      "topics": [
+        "weather",
+        "sports"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Field Day Moves Indoors",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p48",
+      "title": "Music Camp Timetable",
+      "kind": "schedule",
+      "sentences": [
+        "Harbor Music Camp runs from Monday to Friday in the last week of June at Harbor Middle School.",
+        "Ms. Gray, the music teacher, leads the camp with three helpers.",
+        "Campers must be 10 to 14 years old.",
+        "Each camper joins one of four sections, based on the instrument they play.",
+        "Trumpets and trombones are in the brass section.",
+        "Flutes and clarinets are in the woodwinds section.",
+        "Violins and cellos are in the strings section.",
+        "Pianos, keyboards and drums are in the keys and drums section.",
+        "Bring your own instrument every day, with your name on the case.",
+        "Drums and pianos are too big to carry, so the school lends them.",
+        "On Friday at 2:00 PM, families are invited to a short concert in the gym."
+      ],
+      "breaks": [
+        4,
+        8
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Music Camp: Daily Timetable",
+        "columns": [
+          "Time",
+          "Brass",
+          "Woodwinds",
+          "Strings",
+          "Keys and drums"
+        ],
+        "rows": [
+          [
+            "9:00 to 9:30 AM",
+            "Warm-up, gym",
+            "Warm-up, gym",
+            "Warm-up, gym",
+            "Warm-up, gym"
+          ],
+          [
+            "9:30 to 10:30 AM",
+            "Section practice, Room 20",
+            "Section practice, Room 21",
+            "Section practice, Room 22",
+            "Section practice, music room"
+          ],
+          [
+            "10:30 to 10:45 AM",
+            "Snack break",
+            "Snack break",
+            "Snack break",
+            "Snack break"
+          ],
+          [
+            "10:45 AM to 12:00 PM",
+            "Band, gym",
+            "Band, gym",
+            "Orchestra, stage",
+            "Band, gym"
+          ],
+          [
+            "12:00 to 12:45 PM",
+            "Lunch, cafeteria",
+            "Lunch, cafeteria",
+            "Lunch, cafeteria",
+            "Lunch, cafeteria"
+          ],
+          [
+            "12:45 to 2:00 PM",
+            "Music games, gym",
+            "Music games, gym",
+            "Orchestra, stage",
+            "Rhythm lab, music room"
+          ]
+        ]
+      },
+      "picture": "🎺🎻🥁",
+      "topics": [
+        "music"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Music Camp Timetable",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p49",
+      "title": "Game Day Room Plan",
+      "kind": "schedule",
+      "sentences": [
+        "The community center holds a Game Day on Saturday.",
+        "Ana and Ben read the room plan."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Game Day: Room Plan",
+        "note": "Game Day runs from 10:00 AM to 5:00 PM. To play in a tournament, sign up at the front table at least 30 minutes before it starts. Each tournament has 16 places.",
+        "columns": [
+          "Time",
+          "Room A",
+          "Room B",
+          "Room C"
+        ],
+        "rows": [
+          [
+            "10:00 to 11:30 AM",
+            "Kart racing tournament",
+            "Board game library",
+            "Make your own card game"
+          ],
+          [
+            "11:30 AM to 12:30 PM",
+            "Lunch break",
+            "Board game library",
+            "Lunch break"
+          ],
+          [
+            "12:30 to 2:00 PM",
+            "Puzzle game tournament",
+            "Chess for beginners",
+            "Game art class, ages 11 and up"
+          ],
+          [
+            "2:00 to 3:30 PM",
+            "Soccer video game tournament",
+            "Board game library",
+            "Make your own card game"
+          ],
+          [
+            "3:30 to 5:00 PM",
+            "Free play on game consoles",
+            "Chess tournament",
+            "Game music class"
+          ]
+        ]
+      },
+      "picture": "🎮♟️",
+      "topics": [
+        "games"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Game Day Room Plan",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p50",
+      "title": "Harbor Town Dog Show",
+      "kind": "schedule",
+      "sentences": [
+        "Sam is taking Pixel to the Harbor Town Dog Show on Sunday.",
+        "A dog may enter more than one contest."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Dog Show Contests: Sunday",
+        "note": "Sign in at the main tent at least 20 minutes before each contest. Entry costs $3 for each contest. Dogs stay on a leash at all times, except during Agility and Best Trick. Ring 1 and Ring 2 are at opposite ends of the park, a 10-minute walk apart.",
+        "columns": [
+          "Contest",
+          "Ring",
+          "Starts",
+          "Ends"
+        ],
+        "rows": [
+          [
+            "Best Puppy (under 1 year old)",
+            "Ring 1",
+            "10:00 AM",
+            "10:45 AM"
+          ],
+          [
+            "Agility course",
+            "Ring 2",
+            "10:30 AM",
+            "12:00 PM"
+          ],
+          [
+            "Waggiest Tail",
+            "Ring 1",
+            "11:00 AM",
+            "11:30 AM"
+          ],
+          [
+            "Best Trick",
+            "Ring 2",
+            "1:00 PM",
+            "2:00 PM"
+          ],
+          [
+            "Dog and Owner Look-alike",
+            "Ring 1",
+            "1:30 PM",
+            "2:15 PM"
+          ]
+        ]
+      },
+      "picture": "🐕🏅",
+      "topics": [
+        "animals"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Harbor Town Dog Show",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p51",
+      "title": "Fossil Field Camp",
+      "kind": "schedule",
+      "sentences": [
+        "The Harbor Town Museum runs Fossil Field Camp for three days in August.",
+        "Dr. Bell, the museum's paleontologist, leads it.",
+        "A paleontologist is a scientist who studies fossils.",
+        "Campers learn how scientists find dinosaur bones, clean them and put them together.",
+        "On Day 1 and Day 3, campers work in the museum's Fossil Lab.",
+        "On Day 2, a bus takes them to the Red Bluff dig site, where real dinosaur bones have been found.",
+        "Day 2 is longer than the other days because of the bus ride.",
+        "The dig site is hot and has little shade, so bring a hat and two bottles of water on Day 2.",
+        "Campers may use brushes and small picks.",
+        "Only Dr. Bell's team may use the big tools.",
+        "Anything you find stays with the museum, but every camper takes home a plaster cast of a dinosaur tooth.",
+        "The camp costs $60 for all three days or $25 for one day."
+      ],
+      "breaks": [
+        4,
+        7
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Fossil Field Camp Times",
+        "columns": [
+          "Day",
+          "Date",
+          "Drop-off",
+          "Pick-up",
+          "Where"
+        ],
+        "rows": [
+          [
+            "Day 1",
+            "Tuesday, August 11",
+            "9:00 AM",
+            "3:00 PM",
+            "Fossil Lab"
+          ],
+          [
+            "Day 2",
+            "Wednesday, August 12",
+            "8:00 AM",
+            "4:30 PM",
+            "Bus from the museum to Red Bluff"
+          ],
+          [
+            "Day 3",
+            "Thursday, August 13",
+            "9:00 AM",
+            "3:00 PM",
+            "Fossil Lab"
+          ]
+        ]
+      },
+      "picture": "🦴⛏️",
+      "topics": [
+        "dinosaurs"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Fossil Field Camp",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p52",
+      "title": "Campsite Ranger Programs",
+      "kind": "schedule",
+      "sentences": [
+        "Maya and her dad are camping at the Story Woods campsite this weekend.",
+        "A ranger runs free programs for campers."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Ranger Programs: This Weekend",
+        "note": "Meet at the fire circle for every program. Bring a flashlight to evening programs. If it rains, the campfire moves into the camp hall.",
+        "columns": [
+          "Day",
+          "Time",
+          "Program",
+          "Ages"
+        ],
+        "rows": [
+          [
+            "Saturday",
+            "8:00 to 9:00 AM",
+            "Bird songs walk",
+            "All ages"
+          ],
+          [
+            "Saturday",
+            "10:00 to 11:30 AM",
+            "Creek bugs: what lives in the water",
+            "8 and up"
+          ],
+          [
+            "Saturday",
+            "2:00 to 3:00 PM",
+            "Leaves and bark: name that tree",
+            "All ages"
+          ],
+          [
+            "Saturday",
+            "8:00 to 9:00 PM",
+            "Campfire and star stories",
+            "All ages"
+          ],
+          [
+            "Sunday",
+            "7:00 to 8:00 AM",
+            "Animal tracks at the creek",
+            "10 and up"
+          ],
+          [
+            "Sunday",
+            "9:30 to 10:30 AM",
+            "Clean-up hike",
+            "All ages"
+          ]
+        ]
+      },
+      "picture": "🏕️🌲",
+      "topics": [
+        "nature"
+      ],
+      "level": 4,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Campsite Ranger Programs",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p53",
+      "title": "Train and Ferry to Otter Island",
+      "kind": "timetable",
+      "sentences": [
+        "Sam and Grandma Rose plan a Saturday trip to Otter Island.",
+        "They need a train to Pine Bay and then a ferry."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Saturday: Harbor Town to Otter Island",
+        "note": "It takes 15 minutes to walk between Pine Bay Station and the ferry pier. Train tickets, each way: adults $9, ages 6 to 17 $5. Ferry tickets, round trip: adults $14, ages 6 to 17 $8.",
+        "columns": [
+          "Trip",
+          "From",
+          "Leaves",
+          "To",
+          "Arrives"
+        ],
+        "rows": [
+          [
+            "Train 21",
+            "Harbor Town Station",
+            "7:15 AM",
+            "Pine Bay Station",
+            "8:10 AM"
+          ],
+          [
+            "Train 23 Express",
+            "Harbor Town Station",
+            "8:05 AM",
+            "Pine Bay Station",
+            "8:40 AM"
+          ],
+          [
+            "Train 25",
+            "Harbor Town Station",
+            "9:15 AM",
+            "Pine Bay Station",
+            "10:10 AM"
+          ],
+          [
+            "Ferry",
+            "Pine Bay pier",
+            "8:30 AM",
+            "Otter Island",
+            "9:40 AM"
+          ],
+          [
+            "Ferry",
+            "Pine Bay pier",
+            "10:00 AM",
+            "Otter Island",
+            "11:10 AM"
+          ],
+          [
+            "Ferry",
+            "Pine Bay pier",
+            "11:30 AM",
+            "Otter Island",
+            "12:40 PM"
+          ],
+          [
+            "Ferry",
+            "Otter Island",
+            "2:00 PM",
+            "Pine Bay pier",
+            "3:10 PM"
+          ],
+          [
+            "Ferry",
+            "Otter Island",
+            "4:30 PM",
+            "Pine Bay pier",
+            "5:40 PM"
+          ],
+          [
+            "Train 40 Express",
+            "Pine Bay Station",
+            "5:45 PM",
+            "Harbor Town Station",
+            "6:20 PM"
+          ],
+          [
+            "Train 42",
+            "Pine Bay Station",
+            "6:30 PM",
+            "Harbor Town Station",
+            "7:25 PM"
+          ]
+        ]
+      },
+      "picture": "🚆⛴️🏝️",
+      "topics": [
+        "transport"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Train and Ferry to Otter Island",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p54",
+      "title": "Space Week TV Guide",
+      "kind": "schedule",
+      "sentences": [
+        "Two TV channels show Space Week programs on Saturday evening.",
+        "Priya's family can record shows with their TV box."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Space Week TV Guide: Saturday Evening",
+        "note": "The TV box can record only one show at a time. A box that says (still on) means the show from the row above has not ended yet.",
+        "columns": [
+          "Time",
+          "Channel 8",
+          "Channel 31"
+        ],
+        "rows": [
+          [
+            "6:00 PM",
+            "Mars Rovers: The Long Drive (60 min)",
+            "Space Quiz Live (30 min)"
+          ],
+          [
+            "6:30 PM",
+            "Mars Rovers (still on)",
+            "Build a Telescope (30 min)"
+          ],
+          [
+            "7:00 PM",
+            "Life on the Space Station (30 min)",
+            "Saturn's Moons (60 min)"
+          ],
+          [
+            "7:30 PM",
+            "Comets and Meteors (30 min)",
+            "Saturn's Moons (still on)"
+          ],
+          [
+            "8:00 PM",
+            "The First Moon Landing (90 min)",
+            "Night Sky Tonight (30 min)"
+          ],
+          [
+            "8:30 PM",
+            "The First Moon Landing (still on)",
+            "How Stars Shine (30 min)"
+          ]
+        ]
+      },
+      "picture": "📺🪐",
+      "topics": [
+        "space"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Space Week TV Guide",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p55",
+      "title": "School Lunch Menu",
+      "kind": "menu",
+      "sentences": [
+        "Harbor Middle School posts the lunch menu for each week.",
+        "Students can buy a full lunch or single items."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Lunch Menu: Week of March 9",
+        "note": "A full lunch is one main, one side, one fruit and a milk, for $3.50. Single items: main $2.50, side $1, fruit $0.50, milk $0.50. V means vegetarian (no meat or fish). Every full lunch on Friday comes with a free cookie.",
+        "columns": [
+          "Day",
+          "Main",
+          "Side",
+          "Fruit"
+        ],
+        "rows": [
+          [
+            "Monday",
+            "Bean chili (V)",
+            "Corn bread",
+            "Apple"
+          ],
+          [
+            "Tuesday",
+            "Fish sticks",
+            "Green beans",
+            "Orange slices"
+          ],
+          [
+            "Wednesday",
+            "Cheese pizza (V)",
+            "Salad",
+            "Pear"
+          ],
+          [
+            "Thursday",
+            "Chicken noodle soup",
+            "Crackers",
+            "Grapes"
+          ],
+          [
+            "Friday",
+            "Veggie wrap (V)",
+            "Sweet potato fries",
+            "Banana"
+          ]
+        ]
+      },
+      "picture": "🍱🥛",
+      "topics": [
+        "food",
+        "school"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "School Lunch Menu",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p56",
+      "title": "Robot Challenge Scores",
+      "kind": "list",
+      "sentences": [
+        "Four robots compete in the Harbor Robot Challenge.",
+        "Each robot gets three runs on the course, and only its best run counts."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Robot Challenge: Final Scores",
+        "note": "A robot's best run is its run with the most points. The robot with the highest best score wins. If two robots have the same best score, the robot whose best run took less time places higher.",
+        "columns": [
+          "Robot",
+          "Run 1",
+          "Run 2",
+          "Run 3"
+        ],
+        "rows": [
+          [
+            "Priya's rover",
+            "30 points in 100 seconds",
+            "45 points in 115 seconds",
+            "40 points in 90 seconds"
+          ],
+          [
+            "Echo",
+            "45 points in 105 seconds",
+            "35 points in 95 seconds",
+            "No run"
+          ],
+          [
+            "Tumble",
+            "50 points in 118 seconds",
+            "20 points in 80 seconds",
+            "40 points in 100 seconds"
+          ],
+          [
+            "Pip",
+            "25 points in 70 seconds",
+            "40 points in 110 seconds",
+            "45 points in 118 seconds"
+          ]
+        ]
+      },
+      "picture": "🤖🏆",
+      "topics": [
+        "robots"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Robot Challenge Scores",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p57",
+      "title": "Sailing Lessons and the Forecast",
+      "kind": "schedule",
+      "sentences": [
+        "The Harbor Sailing School teaches young sailors in small boats called dinghies.",
+        "Each lesson lasts two hours and takes place in the calm water inside the harbor wall.",
+        "An instructor follows every group in a motor boat.",
+        "On Saturday, lessons start at 8 AM, 10 AM, 1 PM and 3 PM.",
+        "Before each lesson, the instructors study the hourly forecast.",
+        "A dinghy is small and light, so strong wind makes it hard to steer.",
+        "The boats stay at the dock if the wind is over 15 miles per hour (mph) at any hour of the lesson.",
+        "They also stay at the dock if the chance of a thunderstorm is 30% or more at any hour of the lesson.",
+        "For example, a 10 AM lesson uses the 10 AM row and the 11 AM row of the forecast.",
+        "If the boats cannot go out, students stay in the classroom on the dock.",
+        "They learn to tie knots and read weather maps instead.",
+        "Students who miss a lesson on the water may join a make-up lesson on Sunday at 9 AM.",
+        "Students should arrive 15 minutes before their lesson to put on a life jacket.",
+        "Life jackets are worn at all times, on the dock and in the boats."
+      ],
+      "breaks": [
+        4,
+        9,
+        12
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Forecast: Saturday",
+        "columns": [
+          "Hour",
+          "Wind",
+          "Chance of thunderstorm",
+          "Sky"
+        ],
+        "rows": [
+          [
+            "8 AM",
+            "6 mph",
+            "0%",
+            "Sunny"
+          ],
+          [
+            "9 AM",
+            "8 mph",
+            "5%",
+            "Sunny"
+          ],
+          [
+            "10 AM",
+            "12 mph",
+            "10%",
+            "Some clouds"
+          ],
+          [
+            "11 AM",
+            "17 mph",
+            "20%",
+            "Cloudy"
+          ],
+          [
+            "12 PM",
+            "14 mph",
+            "35%",
+            "Cloudy"
+          ],
+          [
+            "1 PM",
+            "10 mph",
+            "60%",
+            "Thunderstorms"
+          ],
+          [
+            "2 PM",
+            "9 mph",
+            "40%",
+            "Showers"
+          ],
+          [
+            "3 PM",
+            "7 mph",
+            "10%",
+            "Clearing"
+          ],
+          [
+            "4 PM",
+            "6 mph",
+            "5%",
+            "Sunny"
+          ]
+        ]
+      },
+      "picture": "⛵🌩️",
+      "topics": [
+        "weather"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Sailing Lessons and the Forecast",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p58",
+      "title": "Kayak Tours and the Tides",
+      "kind": "schedule",
+      "sentences": [
+        "Otter Bay Kayaks runs guided tours of the bay in two-person sea kayaks.",
+        "Every paddler must wear a life jacket, and a trained guide leads each group.",
+        "Paddlers must be at least 10 years old, and anyone under 16 shares a kayak with an adult.",
+        "The Seal Rock Tour visits a group of rocks where harbor seals often rest in the sun.",
+        "The seals climb onto the rocks when the tide is low, and the rocks disappear under the water at high tide.",
+        "For this reason, the tour leaves 1 hour before low tide and comes back 1 hour after it.",
+        "Guides keep the kayaks at least 50 yards from the seals, so that the animals can rest without being disturbed.",
+        "The Kelp Forest Tour paddles over an underwater forest of tall seaweed called kelp, where sea otters often float on their backs.",
+        "This tour needs deep water, so it leaves at the time of high tide and lasts 90 minutes.",
+        "For safety, no tour leaves before 7:00 AM or comes back after 7:00 PM.",
+        "Each tour costs $35 for an adult and $25 for anyone 10 to 15 years old.",
+        "Use the tide table below to work out the tour times for each day."
+      ],
+      "breaks": [
+        3,
+        7,
+        10
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Otter Bay Tide Table",
+        "columns": [
+          "Day",
+          "Low tides",
+          "High tides"
+        ],
+        "rows": [
+          [
+            "Friday",
+            "7:40 AM and 8:05 PM",
+            "1:25 AM and 1:50 PM"
+          ],
+          [
+            "Saturday",
+            "8:30 AM and 8:55 PM",
+            "2:15 AM and 2:40 PM"
+          ],
+          [
+            "Sunday",
+            "9:20 AM and 9:45 PM",
+            "3:05 AM and 3:30 PM"
+          ]
+        ]
+      },
+      "picture": "🛶🦭",
+      "topics": [
+        "ocean"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Kayak Tours and the Tides",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p59",
+      "title": "Instrument Rentals",
+      "kind": "list",
+      "sentences": [
+        "Harbor Music Shop rents instruments to students.",
+        "Families can rent by the month or buy a new instrument."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Harbor Music Shop: Student Rentals",
+        "note": "Rent the same instrument for 10 months in a row, and it is yours to keep. A care plan costs $15 one time and pays for repairs. Rent is paid at the start of each month.",
+        "columns": [
+          "Instrument",
+          "Rent for one month",
+          "Buy new"
+        ],
+        "rows": [
+          [
+            "Flute",
+            "$20",
+            "$450"
+          ],
+          [
+            "Trumpet",
+            "$25",
+            "$520"
+          ],
+          [
+            "Clarinet",
+            "$22",
+            "$480"
+          ],
+          [
+            "Violin",
+            "$18",
+            "$300"
+          ],
+          [
+            "Cello",
+            "$40",
+            "$1,200"
+          ],
+          [
+            "Keyboard (61 keys)",
+            "$15",
+            "$180"
+          ]
+        ]
+      },
+      "picture": "🎺🏷️",
+      "topics": [
+        "music",
+        "money"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Instrument Rentals",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p60",
+      "title": "Shelter Volunteer Shifts",
+      "kind": "schedule",
+      "sentences": [
+        "The Harbor Town Animal Shelter needs volunteers to help care for the dogs and cats that are waiting for new homes.",
+        "Volunteers walk dogs, play with cats, wash food bowls, fold clean towels and help keep the animal rooms clean and quiet.",
+        "Every new volunteer must first attend a one-hour training class.",
+        "After the class, volunteers may work at any job they are old enough to do.",
+        "Every volunteer receives a green shirt to wear on each shift.",
+        "Volunteers aged 12 to 15 must work with a parent or another adult from their family, while volunteers aged 16 and up may work on their own.",
+        "Only volunteers aged 14 and up may walk the dogs, because some of the dogs are large and pull hard on the leash.",
+        "Each shift has a limited number of places, shown in the Places left column.",
+        "Sign up at the front desk at least two days before a shift.",
+        "If you cannot come to a shift, please tell the front desk, so that another volunteer can take your place.",
+        "Wear closed shoes, and leave your own pets at home."
+      ],
+      "breaks": [
+        5,
+        7
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Volunteer Shifts in June",
+        "columns": [
+          "Date",
+          "Time",
+          "Job",
+          "Places left"
+        ],
+        "rows": [
+          [
+            "Tuesday, June 2",
+            "4:00 to 5:00 PM",
+            "Training class",
+            "6"
+          ],
+          [
+            "Thursday, June 4",
+            "4:00 to 5:30 PM",
+            "Cat playtime",
+            "3"
+          ],
+          [
+            "Saturday, June 6",
+            "10:00 to 11:00 AM",
+            "Training class",
+            "0"
+          ],
+          [
+            "Saturday, June 6",
+            "1:00 to 3:00 PM",
+            "Dog walking",
+            "4"
+          ],
+          [
+            "Wednesday, June 10",
+            "3:30 to 5:00 PM",
+            "Wash bowls and fold towels",
+            "5"
+          ],
+          [
+            "Thursday, June 11",
+            "4:00 to 5:30 PM",
+            "Cat playtime",
+            "1"
+          ],
+          [
+            "Saturday, June 13",
+            "10:00 to 11:00 AM",
+            "Training class",
+            "8"
+          ],
+          [
+            "Saturday, June 13",
+            "1:00 to 3:00 PM",
+            "Dog walking",
+            "2"
+          ]
+        ]
+      },
+      "picture": "🐾🗓️",
+      "topics": [
+        "animals"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Shelter Volunteer Shifts",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p61",
+      "title": "Park Shuttle and Trails",
+      "kind": "timetable",
+      "sentences": [
+        "On summer weekends, Lantern Peaks Nature Park closes its narrow mountain road to private cars.",
+        "Visitors leave their cars at the Park Gate and ride a free shuttle bus up into the hills.",
+        "Up shuttles start at the Park Gate and climb all the way to the Summit Trailhead.",
+        "Down shuttles start at the Summit Trailhead and stop at every stop on the way back down to the gate.",
+        "Three trails begin at the shuttle stops.",
+        "The Lakeshore Loop starts and ends at Pine Lake and takes about 1 hour to walk.",
+        "The Falls Trail starts and ends at the Waterfall Trailhead and takes about 2 hours, because it climbs beside a steep waterfall.",
+        "The Summit Trail climbs to the top of the highest peak and returns to the Summit Trailhead, which takes about 3 hours.",
+        "Plan to be at your stop at least 5 minutes before your shuttle is due.",
+        "The last shuttle of the day leaves the Summit Trailhead at 5:00 PM.",
+        "There is no drinking water for sale beyond the Park Gate, so carry at least one full bottle for each person.",
+        "Please stay on the marked trails to protect the plants and animals that live in the park."
+      ],
+      "breaks": [
+        4,
+        8
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Park Shuttle: Summer Weekends",
+        "note": "Read Up shuttles from left to right. Read Down shuttles from right to left, starting at the Summit Trailhead.",
+        "columns": [
+          "Shuttle",
+          "Park Gate",
+          "Pine Lake",
+          "Waterfall Trailhead",
+          "Summit Trailhead"
+        ],
+        "rows": [
+          [
+            "Up 1",
+            "8:00 AM",
+            "8:15 AM",
+            "8:25 AM",
+            "8:40 AM"
+          ],
+          [
+            "Up 2",
+            "10:00 AM",
+            "10:15 AM",
+            "10:25 AM",
+            "10:40 AM"
+          ],
+          [
+            "Up 3",
+            "12:00 PM",
+            "12:15 PM",
+            "12:25 PM",
+            "12:40 PM"
+          ],
+          [
+            "Down 1",
+            "1:40 PM",
+            "1:25 PM",
+            "1:15 PM",
+            "1:00 PM"
+          ],
+          [
+            "Down 2",
+            "3:40 PM",
+            "3:25 PM",
+            "3:15 PM",
+            "3:00 PM"
+          ],
+          [
+            "Down 3",
+            "5:40 PM",
+            "5:25 PM",
+            "5:15 PM",
+            "5:00 PM"
+          ]
+        ]
+      },
+      "picture": "🚌⛰️🥾",
+      "topics": [
+        "nature",
+        "transport"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Park Shuttle and Trails",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-12",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f3-p62",
+      "title": "Bike Club Distance Chart",
+      "kind": "list",
+      "sentences": [
+        "Mr. Okafor leads rides for the bike club at his shop.",
+        "He uses this distance chart to plan each route."
+      ],
+      "visual": {
+        "type": "table",
+        "title": "Distance Chart: Miles by Road",
+        "note": "Find one place in the first column and the other place in the top row. The box where that row and that column meet shows the miles between them. Club riders ride about 10 miles in 1 hour.",
+        "columns": [
+          "Place",
+          "Harbor Town",
+          "Gull Point",
+          "Sandy Cove",
+          "Pine Bay",
+          "Lantern Peaks"
+        ],
+        "rows": [
+          [
+            "Harbor Town",
+            "—",
+            "6",
+            "12",
+            "20",
+            "8"
+          ],
+          [
+            "Gull Point",
+            "6",
+            "—",
+            "7",
+            "15",
+            "13"
+          ],
+          [
+            "Sandy Cove",
+            "12",
+            "7",
+            "—",
+            "9",
+            "18"
+          ],
+          [
+            "Pine Bay",
+            "20",
+            "15",
+            "9",
+            "—",
+            "24"
+          ],
+          [
+            "Lantern Peaks",
+            "8",
+            "13",
+            "18",
+            "24",
+            "—"
+          ]
+        ]
+      },
+      "picture": "🚲🗺️",
+      "topics": [
+        "maps"
+      ],
+      "level": 5,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Bike Club Distance Chart",
         "author": "Learning to Fly (AI-drafted)",
         "source": "Written for Learning to Fly",
         "licence": "original",
@@ -1231,9 +3783,9 @@
     },
     {
       "id": "f3-i24", "skill": "F3", "passage": "f3-p13", "format": "tap", "level": 4,
-      "prompt": "Wednesday, March 4 is an early release day. Priya's mom plans to pick her up after robotics club at 4:00 PM, like on other Wednesdays. What should Priya tell her?",
+      "prompt": "Wednesday, March 4 is an early release day. Priya's mom plans to pick her up after robotics club at 4:45 PM, like on other Wednesdays. What should Priya tell her?",
       "options": [
-        "Pick me up at 4:00 PM, after robotics club.",
+        "Pick me up at 4:45 PM, after robotics club.",
         "Pick me up at 12:45 PM. Robotics club does not meet today.",
         "Pick me up at 2:35 PM, when school ends.",
         "Pick me up at 1:25 PM, after History."
@@ -1514,7 +4066,7 @@
         1
       ],
       "hint": "Find the group that plays before the Drum Club. Add its length to the start time.",
-      "explain": "The Drum Club starts at 6:05 PM. The concert starts at 6:00 PM, and the Grade 6 Choir plays first for 5 minutes.",
+      "explain": "The Drum Club starts at 6:05 PM. The music night starts at 6:00 PM, and the Grade 6 Choir plays first for 5 minutes.",
       "inference": 1,
       "tags": [
         "time-math",
@@ -1528,7 +4080,7 @@
       "passage": "f3-p18",
       "format": "highlight",
       "level": 3,
-      "prompt": "Sam's family gets to the concert at 6:20 PM. Tap the row for the group that is playing when they arrive.",
+      "prompt": "Sam's family gets to the music night at 6:20 PM. Tap the row for the group that is playing when they arrive.",
       "unit": "row",
       "answer": [
         2
@@ -1554,7 +4106,7 @@
       "passage": "f3-p18",
       "format": "tap",
       "level": 3,
-      "prompt": "Ben's mom will pick him up when the concert ends. What time does it end?",
+      "prompt": "Ben's mom will pick him up when the music night ends. What time does it end?",
       "options": [
         "6:40 PM",
         "6:45 PM",
@@ -1571,7 +4123,7 @@
         5
       ],
       "hint": "Add up every number in the Length column, the break too. Then add the total to the start time.",
-      "explain": "The concert ends at 6:55 PM. The lengths add up to 5 + 10 + 10 + 15 + 5 + 10 = 55 minutes, and 55 minutes after 6:00 PM is 6:55 PM.",
+      "explain": "The music night ends at 6:55 PM. The lengths add up to 5 + 10 + 10 + 15 + 5 + 10 = 55 minutes, and 55 minutes after 6:00 PM is 6:55 PM.",
       "inference": 1,
       "tags": [
         "time-math",
@@ -1991,6 +4543,3172 @@
         "time-math",
         "no-overlap",
         "two-conditions"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i52",
+      "skill": "F3",
+      "passage": "f3-p24",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Which rock does Maya still need to find?",
+      "options": [
+        "Garnet",
+        "Quartz",
+        "Pyrite"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Look for the rock with no check mark next to it.",
+      "explain": "Maya still needs to find garnet. Garnet is the only rock on the list with no check mark.",
+      "inference": 1,
+      "tags": [
+        "symbol-key",
+        "list-match"
+      ]
+    },
+    {
+      "id": "f3-i53",
+      "skill": "F3",
+      "passage": "f3-p24",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How many rocks has Maya found?",
+      "options": [
+        "Four",
+        "Two",
+        "Three"
+      ],
+      "pictures": [
+        "4️⃣",
+        "2️⃣",
+        "3️⃣"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        3
+      ],
+      "hint": "Count only the rocks with a check mark.",
+      "explain": "Maya found three rocks: quartz, mica and pyrite. Each one has a check mark.",
+      "inference": 0,
+      "tags": [
+        "count",
+        "symbol-key"
+      ]
+    },
+    {
+      "id": "f3-i54",
+      "skill": "F3",
+      "passage": "f3-p25",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Ben loves soccer. What time is the soccer robot show?",
+      "options": [
+        "10 AM",
+        "11 AM",
+        "1 PM"
+      ],
+      "pictures": [
+        "🕙",
+        "🕚",
+        "🕐"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the row that says Soccer robot. Then look across to the time.",
+      "explain": "The soccer robot show is at 1 PM. It is in the Soccer robot row.",
+      "inference": 0,
+      "tags": [
+        "find-row",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f3-i55",
+      "skill": "F3",
+      "passage": "f3-p25",
+      "format": "scene",
+      "level": 1,
+      "prompt": "It is 11 AM. Tap the robot that has a show now.",
+      "scene": "school",
+      "objects": [
+        {
+          "label": "Dancing robot",
+          "emoji": "🤖"
+        },
+        {
+          "label": "Drawing robot",
+          "emoji": "🤖"
+        },
+        {
+          "label": "Soccer robot",
+          "emoji": "🤖"
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find 11 AM in the Show time column. Then look across to the robot.",
+      "explain": "The drawing robot has a show at 11 AM. It is in the Drawing robot row.",
+      "inference": 0,
+      "tags": [
+        "find-row",
+        "time-am"
+      ]
+    },
+    {
+      "id": "f3-i56",
+      "skill": "F3",
+      "passage": "f3-p26",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Sam wants raisin bread. What day should he go to the bakery?",
+      "options": [
+        "Monday",
+        "Friday",
+        "Saturday"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the row with raisin bread. Then read the day in the same row.",
+      "explain": "He should go on Friday. The Friday row says Raisin bread.",
+      "inference": 0,
+      "tags": [
+        "find-row"
+      ]
+    },
+    {
+      "id": "f3-i57",
+      "skill": "F3",
+      "passage": "f3-p26",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Sam goes to the bakery on Tuesday. Is there a bread of the day?",
+      "options": [
+        "Yes, corn bread",
+        "No. Tuesday is not on the sign."
+      ],
+      "pictures": [
+        "✅",
+        "❌"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Read the Day column from top to bottom. Look for Tuesday.",
+      "explain": "No. The sign has a row for Monday and a row for Wednesday, but no row for Tuesday.",
+      "inference": 1,
+      "tags": [
+        "missing-row"
+      ]
+    },
+    {
+      "id": "f3-i58",
+      "skill": "F3",
+      "passage": "f3-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "The twins want free swim in the afternoon. What time does it start?",
+      "options": [
+        "10:00 AM",
+        "1:00 PM",
+        "3:00 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the rows that say Free swim. Pick the one with a PM time.",
+      "explain": "Afternoon free swim starts at 3:00 PM. It is in the last row. At 1:00 PM there is lap swim for ages 16 and up.",
+      "inference": 1,
+      "tags": [
+        "two-rows",
+        "time-pm"
+      ]
+    },
+    {
+      "id": "f3-i59",
+      "skill": "F3",
+      "passage": "f3-p27",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Ben gets to the pool at 12:30 PM. Tap the row that shows what is on then.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        2
+      ],
+      "hint": "Find the row that starts before 12:30 PM and ends after it.",
+      "explain": "Tap the 12:00 PM to 1:00 PM row. The pool is closed for cleaning then.",
+      "inference": 1,
+      "tags": [
+        "time-range",
+        "closed"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i60",
+      "skill": "F3",
+      "passage": "f3-p27",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ana is 12. Can she go to lap swim?",
+      "options": [
+        "Yes. It is for all ages.",
+        "No. It is for ages 16 and up.",
+        "Yes, but only in the morning."
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the row for lap swim. Read the ages in that row.",
+      "explain": "No. The lap swim row says ages 16 and up, and Ana is 12.",
+      "inference": 1,
+      "tags": [
+        "age-rule"
+      ]
+    },
+    {
+      "id": "f3-i61",
+      "skill": "F3",
+      "passage": "f3-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Grandma Rose must be back by 12:00 PM. Which trip should they take?",
+      "options": [
+        "Blue Fin at 9:00 AM",
+        "Sea Star at 10:30 AM",
+        "Blue Fin at 1:30 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Look down the Comes back column. Find a time before 12:00 PM.",
+      "explain": "They should take the 9:00 AM Blue Fin trip. It comes back at 11:00 AM. The Sea Star trip comes back at 1:00 PM, which is too late.",
+      "inference": 1,
+      "tags": [
+        "wrong-column",
+        "deadline"
+      ]
+    },
+    {
+      "id": "f3-i62",
+      "skill": "F3",
+      "passage": "f3-p28",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What time does the last trip of the day come back?",
+      "options": [
+        "3:00 PM",
+        "3:30 PM",
+        "5:30 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the last row. Then look across to the Comes back column.",
+      "explain": "The last trip comes back at 5:30 PM. It is the 3:00 PM Sea Star trip in the last row.",
+      "inference": 0,
+      "tags": [
+        "last-row",
+        "wrong-column"
+      ]
+    },
+    {
+      "id": "f3-i63",
+      "skill": "F3",
+      "passage": "f3-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Leo wants to skate on a sunny day. Which day should he go?",
+      "options": [
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Look down the Weather column for the word sunny.",
+      "explain": "He should go on Saturday. The Saturday row says Sunny.",
+      "inference": 0,
+      "tags": [
+        "find-row"
+      ]
+    },
+    {
+      "id": "f3-i64",
+      "skill": "F3",
+      "passage": "f3-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "On which day does Leo need a raincoat if he goes out?",
+      "options": [
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the Weather column. Find the day with rain.",
+      "explain": "He needs a raincoat on Friday. The Friday row says Rain all day.",
+      "inference": 1,
+      "tags": [
+        "what-to-bring"
+      ]
+    },
+    {
+      "id": "f3-i65",
+      "skill": "F3",
+      "passage": "f3-p29",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the row for the coldest day.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Look down the High column. Find the smallest number.",
+      "explain": "Tap the Sunday row. Its high is 54°F, the lowest of the three days.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "temperature"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i66",
+      "skill": "F3",
+      "passage": "f3-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which game takes the most tokens?",
+      "options": [
+        "Dance Floor",
+        "Robot Maze",
+        "Space Racer"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1,
+        3
+      ],
+      "hint": "Look down the Tokens column. Find the biggest number.",
+      "explain": "Dance Floor takes the most. It takes 4 tokens for one play.",
+      "inference": 1,
+      "tags": [
+        "compare"
+      ]
+    },
+    {
+      "id": "f3-i67",
+      "skill": "F3",
+      "passage": "f3-p30",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ana has 4 tokens. She plays Space Racer one time. How many tokens does she have left?",
+      "options": [
+        "1 token",
+        "2 tokens",
+        "3 tokens"
+      ],
+      "answer": 1,
+      "evidence": [
+        0
+      ],
+      "hint": "Find how many tokens Space Racer takes. Take that number away from 4.",
+      "explain": "She has 2 tokens left. Space Racer takes 2 tokens, and 4 - 2 = 2.",
+      "inference": 1,
+      "tags": [
+        "math"
+      ]
+    },
+    {
+      "id": "f3-i68",
+      "skill": "F3",
+      "passage": "f3-p30",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Ben has 2 tokens. Sort the games.",
+      "bins": [
+        "He can play it",
+        "He needs more tokens"
+      ],
+      "cards": [
+        {
+          "text": "Space Racer",
+          "bin": 0,
+          "emoji": "🚀"
+        },
+        {
+          "text": "Robot Maze",
+          "bin": 1,
+          "emoji": "🤖"
+        },
+        {
+          "text": "Air hockey",
+          "bin": 0,
+          "emoji": "🏒"
+        },
+        {
+          "text": "Dance Floor",
+          "bin": 1,
+          "emoji": "💃"
+        },
+        {
+          "text": "Claw machine",
+          "bin": 0,
+          "emoji": "🧸"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "hint": "Read the tokens for each game. Check if it is 2 or less.",
+      "explain": "Ben can play Space Racer, Air hockey and the Claw machine, because they take 2 tokens or less. Robot Maze takes 3 and Dance Floor takes 4.",
+      "inference": 1,
+      "tags": [
+        "sort",
+        "budget",
+        "boundary"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i69",
+      "skill": "F3",
+      "passage": "f3-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Maya plays the flute. What day is her lesson?",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Thursday"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the row for Flute. Then look across to the Day column.",
+      "explain": "Her lesson is on Monday. The Flute row says Monday at 4:45 PM.",
+      "inference": 0,
+      "tags": [
+        "find-row"
+      ]
+    },
+    {
+      "id": "f3-i70",
+      "skill": "F3",
+      "passage": "f3-p31",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Sam plays guitar. Priya plays cello. On which day do they both have a lesson?",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the Guitar row and the Cello row. Compare their days.",
+      "explain": "They both have a lesson on Monday. The Guitar row and the Cello row both say Monday.",
+      "inference": 1,
+      "tags": [
+        "two-rows"
+      ]
+    },
+    {
+      "id": "f3-i71",
+      "skill": "F3",
+      "passage": "f3-p32",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Sam wants to see dinosaur eggs. Which floor should he go to?",
+      "options": [
+        "Floor 2",
+        "Floor 3",
+        "Floor 4"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Read each row. Look for the words dinosaur eggs.",
+      "explain": "He should go to Floor 4. The Floor 4 row says Dinosaur eggs and nests.",
+      "inference": 0,
+      "tags": [
+        "find-row"
+      ]
+    },
+    {
+      "id": "f3-i72",
+      "skill": "F3",
+      "passage": "f3-p32",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Maya wants to see the big skeletons. Tap the elevator button she should press.",
+      "scene": "hall",
+      "objects": [
+        {
+          "label": "Button 1",
+          "sign": {
+            "shape": "circle",
+            "color": "white",
+            "text": "1"
+          }
+        },
+        {
+          "label": "Button 2",
+          "sign": {
+            "shape": "circle",
+            "color": "white",
+            "text": "2"
+          }
+        },
+        {
+          "label": "Button 3",
+          "sign": {
+            "shape": "circle",
+            "color": "white",
+            "text": "3"
+          }
+        },
+        {
+          "label": "Button 4",
+          "sign": {
+            "shape": "circle",
+            "color": "white",
+            "text": "4"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the row that tells about big skeletons. Read its floor number.",
+      "explain": "She presses 2. The Floor 2 row says Dinosaur Hall: big dinosaur skeletons.",
+      "inference": 0,
+      "tags": [
+        "find-row"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i73",
+      "skill": "F3",
+      "passage": "f3-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam gets to Harbor Town Station at 7:30 AM. He wants to get to Pine Bay as early as he can. Which train should he take?",
+      "options": [
+        "Train 1",
+        "Train 2 (Express)",
+        "Train 3"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Find the trains that leave Harbor Town Station after 7:30 AM. Then compare when they get to Pine Bay.",
+      "explain": "He should take Train 2, the Express. Train 1 left at 7:10 AM. Train 2 leaves at 8:00 AM and gets to Pine Bay at 8:35 AM, before Train 3.",
+      "inference": 1,
+      "tags": [
+        "next-time",
+        "two-columns"
+      ]
+    },
+    {
+      "id": "f3-i74",
+      "skill": "F3",
+      "passage": "f3-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya wants to get off at Sandy Cove. Which trains stop there?",
+      "options": [
+        "Train 1 and Train 3",
+        "Train 2 only",
+        "All three trains",
+        "Train 3 only"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the Sandy Cove row. Read the note to learn what a dash means.",
+      "explain": "Train 1 and Train 3 stop at Sandy Cove. The Sandy Cove row has a dash for Train 2, and the note says a dash means the train does not stop there.",
+      "inference": 1,
+      "tags": [
+        "symbol-key",
+        "note"
+      ]
+    },
+    {
+      "id": "f3-i75",
+      "skill": "F3",
+      "passage": "f3-p33",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How long does Train 3 take to go from Harbor Town Station to Pine Bay?",
+      "options": [
+        "35 minutes",
+        "45 minutes",
+        "55 minutes",
+        "1 hour 5 minutes"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Find the Train 3 time at Harbor Town Station and at Pine Bay. Count the minutes from the first time to the second.",
+      "explain": "Train 3 takes 55 minutes. It leaves Harbor Town Station at 9:15 AM and gets to Pine Bay at 10:10 AM.",
+      "inference": 1,
+      "tags": [
+        "duration",
+        "time-math"
+      ]
+    },
+    {
+      "id": "f3-i76",
+      "skill": "F3",
+      "passage": "f3-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya buys veggie noodles and a fruit ice pop. How much of her $8 is left?",
+      "options": [
+        "$0",
+        "$1",
+        "$2",
+        "$3"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        5
+      ],
+      "hint": "Add the prices of the two things she buys. Then take the total away from $8.",
+      "explain": "She has $0 left. Veggie noodles cost $6 and a fruit ice pop costs $2. $6 + $2 = $8, and $8 - $8 = $0.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "budget",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i77",
+      "skill": "F3",
+      "passage": "f3-p34",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya buys two bean tacos and corn on a stick. Then she wants a sweet treat. What can she buy with the money she has left?",
+      "options": [
+        "Both sweet treats",
+        "An ice cream cone",
+        "A fruit ice pop",
+        "Nothing. She has only $1 left."
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "hint": "Add up what she buys first and take it away from $8. Then compare what is left with the prices at Scoop Shack.",
+      "explain": "She cannot buy a sweet treat. Tacos cost $5 and corn costs $2, so she spends $7 and has $1 left. The cheapest treat, the fruit ice pop, costs $2.",
+      "inference": 1,
+      "tags": [
+        "budget",
+        "price-math",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i78",
+      "skill": "F3",
+      "passage": "f3-p34",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Leo wants the cheapest food at Noodle Boat. Tap its row.",
+      "unit": "row",
+      "answer": [
+        3
+      ],
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the two Noodle Boat rows. Compare their prices.",
+      "explain": "Tap the Egg roll row. At Noodle Boat, an egg roll costs $2 and veggie noodles cost $6.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "find-row"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i79",
+      "skill": "F3",
+      "passage": "f3-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What time must Ana and Ben arrive on Saturday?",
+      "options": [
+        "8:00 AM",
+        "8:30 AM",
+        "9:00 AM",
+        "10:00 AM"
+      ],
+      "answer": 1,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the Hawks' first game. Then read the note about when to arrive.",
+      "explain": "They must arrive at 8:30 AM. The Hawks' first game is at 9:00 AM, and the note says to arrive 30 minutes before the first game.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "time-math"
+      ]
+    },
+    {
+      "id": "f3-i80",
+      "skill": "F3",
+      "passage": "f3-p35",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What time does the Hawks' last game end?",
+      "options": [
+        "12:00 PM",
+        "12:30 PM",
+        "12:50 PM",
+        "1:50 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the Hawks' latest game. Add the game length from the note to its start time.",
+      "explain": "It ends at 12:50 PM. The last Hawks game starts at 12:00 PM, and the note says each game lasts 50 minutes.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "duration",
+        "time-math"
+      ]
+    },
+    {
+      "id": "f3-i81",
+      "skill": "F3",
+      "passage": "f3-p35",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sort the games. Which ones do the Hawks play in?",
+      "bins": [
+        "The Hawks play",
+        "Other teams play"
+      ],
+      "cards": [
+        {
+          "text": "9:00 AM, Field 1",
+          "bin": 0
+        },
+        {
+          "text": "9:00 AM, Field 2",
+          "bin": 1
+        },
+        {
+          "text": "10:30 AM, Field 1",
+          "bin": 1
+        },
+        {
+          "text": "10:30 AM, Field 2",
+          "bin": 0
+        },
+        {
+          "text": "12:00 PM, Field 1",
+          "bin": 0
+        },
+        {
+          "text": "12:00 PM, Field 2",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "Read each row. Look for Harbor Hawks in the Team column, then read the time and the field.",
+      "explain": "The Hawks play at 9:00 AM on Field 1, at 10:30 AM on Field 2 and at 12:00 PM on Field 1. The other three games are for other teams.",
+      "inference": 0,
+      "tags": [
+        "sort",
+        "two-columns"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i82",
+      "skill": "F3",
+      "passage": "f3-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam wants to see craters on the Moon. Which date should he go?",
+      "options": [
+        "Friday, May 8",
+        "Saturday, May 16",
+        "Friday, May 22",
+        "Saturday, May 30"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the Moon in the What to look at column. Then read the date in that row.",
+      "explain": "He should go on Friday, May 22. That row says Craters on the Moon.",
+      "inference": 0,
+      "tags": [
+        "find-row"
+      ]
+    },
+    {
+      "id": "f3-i83",
+      "skill": "F3",
+      "passage": "f3-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "On Saturday, May 16, the sky is full of clouds. What happens to the sky night?",
+      "options": [
+        "It starts later, at 9:30 PM.",
+        "It is canceled.",
+        "Visitors look at the Moon instead.",
+        "It moves to Sunday."
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Read the note under the table. Find what happens when the sky is cloudy.",
+      "explain": "It is canceled. The note says sky nights are canceled if the sky is cloudy.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f3-i84",
+      "skill": "F3",
+      "passage": "f3-p36",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya wants to look at a planet through the telescope. Which date should she pick?",
+      "options": [
+        "Friday, May 8",
+        "Saturday, May 16",
+        "Friday, May 22",
+        "Saturday, May 30"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Read each row in the What to look at column. Think about which one is a planet.",
+      "explain": "She should pick Friday, May 8. Jupiter is a planet. Star clusters and double stars are stars, and the Moon is not a planet.",
+      "inference": 2,
+      "tags": [
+        "background-knowledge"
+      ]
+    },
+    {
+      "id": "f3-i85",
+      "skill": "F3",
+      "passage": "f3-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya wants to find pyrite. On which date should she go?",
+      "options": [
+        "Saturday, April 18",
+        "Saturday, May 2",
+        "Saturday, April 4"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Look down the Look for column for pyrite. Then read the date in that row.",
+      "explain": "She should go on Saturday, April 18. The Ridgeway Mine Museum row says Copper ore and pyrite.",
+      "inference": 0,
+      "tags": [
+        "find-row"
+      ]
+    },
+    {
+      "id": "f3-i86",
+      "skill": "F3",
+      "passage": "f3-p37",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya packs a warm jacket. Which trip is she packing for, and where does she meet the club?",
+      "options": [
+        "The beach trip. She meets at the library.",
+        "The creek trip. She meets at the creek.",
+        "The mine trip. She meets at the library.",
+        "The mine trip. She meets at the mine."
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the row with a jacket in the Bring column. Then read the note to see where to meet.",
+      "explain": "She is packing for the Ridgeway Mine Museum trip on April 18. The note says to meet at the library at 9:00 AM on every trip day.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f3-i87",
+      "skill": "F3",
+      "passage": "f3-p37",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Leo can come only in May. Tap the row for the trip he can join.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Read the Date column. Find the month of May.",
+      "explain": "Tap the Gull Point beach row. It is the only trip in May, on Saturday, May 2.",
+      "inference": 0,
+      "tags": [
+        "date",
+        "find-row"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i88",
+      "skill": "F3",
+      "passage": "f3-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Which robot was the fastest in Heat 1?",
+      "options": [
+        "Zip",
+        "Spark",
+        "Gizmo"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Look at the three Heat 1 rows. Find the smallest time.",
+      "explain": "Spark was the fastest in Heat 1. It finished in 36 seconds, the smallest time in that heat.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "note"
+      ]
+    },
+    {
+      "id": "f3-i89",
+      "skill": "F3",
+      "passage": "f3-p38",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Sort the robots. Which ones race in the final?",
+      "bins": [
+        "Races in the final",
+        "Out after the heat"
+      ],
+      "cards": [
+        {
+          "text": "Zip",
+          "bin": 0
+        },
+        {
+          "text": "Spark",
+          "bin": 0
+        },
+        {
+          "text": "Gizmo",
+          "bin": 1
+        },
+        {
+          "text": "Bolt",
+          "bin": 0
+        },
+        {
+          "text": "Priya's rover",
+          "bin": 0
+        },
+        {
+          "text": "Pebble",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "Read the note. Then find the two smallest times in each heat.",
+      "explain": "Spark and Zip go on from Heat 1. Priya's rover and Bolt go on from Heat 2. Gizmo and Pebble had the biggest time in their heats, so they are out.",
+      "inference": 1,
+      "tags": [
+        "sort",
+        "note",
+        "compare"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i90",
+      "skill": "F3",
+      "passage": "f3-p38",
+      "format": "tap",
+      "level": 3,
+      "prompt": "How many seconds faster was Priya's rover than Bolt?",
+      "options": [
+        "3 seconds",
+        "4 seconds",
+        "6 seconds",
+        "35 seconds"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find both times. Take the smaller time away from the bigger time.",
+      "explain": "Priya's rover was 4 seconds faster. Bolt took 39 seconds and her rover took 35 seconds. 39 - 35 = 4.",
+      "inference": 1,
+      "tags": [
+        "math",
+        "compare"
+      ]
+    },
+    {
+      "id": "f3-i91",
+      "skill": "F3",
+      "passage": "f3-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "At what time is rain most likely?",
+      "options": [
+        "9 AM",
+        "11 AM",
+        "5 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Look down the Chance of rain column. Find the biggest number.",
+      "explain": "Rain is most likely at 9 AM. The chance of rain is 90%, the biggest number in that column.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "percent"
+      ]
+    },
+    {
+      "id": "f3-i92",
+      "skill": "F3",
+      "passage": "f3-p39",
+      "format": "tap",
+      "level": 3,
+      "prompt": "What is the best time to fly the kite?",
+      "options": [
+        "9 AM",
+        "1 PM",
+        "3 PM",
+        "5 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "hint": "Read the note. Find a time with wind from 8 to 20 mph. Then check that the chance of rain is low.",
+      "explain": "3 PM is best. The wind is 14 mph, which is inside the 8 to 20 mph range, and the chance of rain is only 10%. At 9 AM there is wind, but it will probably rain.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "note",
+        "two-columns"
+      ]
+    },
+    {
+      "id": "f3-i93",
+      "skill": "F3",
+      "passage": "f3-p39",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Sam wants to walk Pixel when there is no chance of rain at all. Tap that row.",
+      "unit": "row",
+      "answer": [
+        4
+      ],
+      "evidence": [
+        4
+      ],
+      "hint": "Look down the Chance of rain column for 0%.",
+      "explain": "Tap the 5 PM row. The chance of rain is 0%.",
+      "inference": 0,
+      "tags": [
+        "find-row",
+        "percent"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i94",
+      "skill": "F3",
+      "passage": "f3-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya can go to the beach only on Saturday afternoon. What time is low tide then?",
+      "options": [
+        "4:30 AM",
+        "4:05 PM",
+        "4:55 PM",
+        "11:05 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the Saturday row and the Low tides column. Pick the time that is in the afternoon.",
+      "explain": "Low tide is at 4:55 PM. The Saturday row has two low tides, and 4:55 PM is the PM one. 4:05 PM is on Friday.",
+      "inference": 1,
+      "tags": [
+        "am-pm",
+        "wrong-row"
+      ]
+    },
+    {
+      "id": "f3-i95",
+      "skill": "F3",
+      "passage": "f3-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "On Sunday, what time is the first high tide?",
+      "options": [
+        "5:20 AM",
+        "10:40 AM",
+        "11:30 AM",
+        "11:55 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the Sunday row. Then look in the High tides column for the earlier time.",
+      "explain": "The first high tide on Sunday is at 11:30 AM. It is the first time in the High tides column of the Sunday row.",
+      "inference": 0,
+      "tags": [
+        "wrong-column",
+        "wrong-row"
+      ]
+    },
+    {
+      "id": "f3-i96",
+      "skill": "F3",
+      "passage": "f3-p40",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Look at the morning low tide on Friday, Saturday and Sunday. What happens to its time each day?",
+      "options": [
+        "It comes about 50 minutes later each day.",
+        "It comes at the same time each day.",
+        "It comes about 50 minutes earlier each day.",
+        "It comes about 2 hours later each day."
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Read the AM low tide for each day. Count the minutes from one day to the next.",
+      "explain": "It comes about 50 minutes later each day: 3:40 AM on Friday, 4:30 AM on Saturday and 5:20 AM on Sunday.",
+      "inference": 1,
+      "tags": [
+        "pattern",
+        "compare"
+      ]
+    },
+    {
+      "id": "f3-i97",
+      "skill": "F3",
+      "passage": "f3-p40",
+      "format": "order",
+      "level": 3,
+      "prompt": "Put Saturday's tides in order, from earliest to latest.",
+      "steps": [
+        "Low tide at 4:30 AM",
+        "High tide at 10:40 AM",
+        "Low tide at 4:55 PM",
+        "High tide at 11:05 PM"
+      ],
+      "evidence": [
+        1
+      ],
+      "hint": "Read both columns in the Saturday row. Put the AM times in order first, then the PM times.",
+      "explain": "Low tide at 4:30 AM, high tide at 10:40 AM, low tide at 4:55 PM, then high tide at 11:05 PM. The tides take turns: low, high, low, high.",
+      "inference": 1,
+      "tags": [
+        "time-order",
+        "two-columns"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i98",
+      "skill": "F3",
+      "passage": "f3-p41",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam and Grandma Rose go to the shelter on Sunday. They want to see the cats. What will they find?",
+      "options": [
+        "The cat room is closed.",
+        "The cat room is open 10 AM to 2 PM.",
+        "The cat room is open 12 PM to 3 PM."
+      ],
+      "answer": 0,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the Sunday row. Then look across to the Cat room column.",
+      "explain": "The cat room is closed on Sunday. The Sunday row says Closed in the Cat room column. The 12 PM to 3 PM hours are for the dog room.",
+      "inference": 0,
+      "tags": [
+        "wrong-column",
+        "closed"
+      ]
+    },
+    {
+      "id": "f3-i99",
+      "skill": "F3",
+      "passage": "f3-p41",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Priya and her mom want to see the dogs and the cats on Wednesday. When are both rooms open?",
+      "options": [
+        "From 10 AM to 12 PM",
+        "From 12 PM to 1 PM",
+        "From 1 PM to 4 PM",
+        "From 4 PM to 5 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        1
+      ],
+      "hint": "Wednesday is part of Tuesday to Friday. Find the hours when both rooms are open.",
+      "explain": "Both rooms are open from 1 PM to 4 PM. On Tuesday to Friday, the dog room is open 12 PM to 5 PM and the cat room is open 1 PM to 4 PM.",
+      "inference": 1,
+      "tags": [
+        "day-range",
+        "overlap",
+        "two-columns"
+      ]
+    },
+    {
+      "id": "f3-i100",
+      "skill": "F3",
+      "passage": "f3-p41",
+      "format": "highlight",
+      "level": 3,
+      "prompt": "Ana and her dad want to visit the dog room at 11 AM. Tap the row for the day they can do that.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        1,
+        2,
+        3
+      ],
+      "hint": "Look down the Dog room column. Find hours that start before 11 AM.",
+      "explain": "Tap the Saturday row. On Saturday the dog room opens at 10 AM. On the other days it opens at 12 PM or is closed.",
+      "inference": 1,
+      "tags": [
+        "time-range",
+        "find-row"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i101",
+      "skill": "F3",
+      "passage": "f3-p42",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Maya finds square D4 on the map. Which place will she see there?",
+      "options": [
+        "Harbor Middle School",
+        "Skate park",
+        "Okafor's Bike Shop",
+        "Library"
+      ],
+      "answer": 1,
+      "evidence": [
+        5
+      ],
+      "hint": "Look down the Square column for D4. Then read the place in that row.",
+      "explain": "She will see the skate park. The Skate park row says D4.",
+      "inference": 0,
+      "tags": [
+        "reverse-lookup"
+      ]
+    },
+    {
+      "id": "f3-i102",
+      "skill": "F3",
+      "passage": "f3-p42",
+      "format": "tap",
+      "level": 3,
+      "prompt": "Sam is at the bus station. Which place is in the same square?",
+      "options": [
+        "Library",
+        "Okafor's Bike Shop",
+        "Harbor Middle School",
+        "Lighthouse Café"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Find the square for the bus station. Then look for another place with the same square.",
+      "explain": "The library is in the same square. The bus station and the library are both in B2.",
+      "inference": 1,
+      "tags": [
+        "two-rows",
+        "match"
+      ]
+    },
+    {
+      "id": "f3-i103",
+      "skill": "F3",
+      "passage": "f3-p42",
+      "format": "sort",
+      "level": 3,
+      "prompt": "Leo's map page shows only row 4 of the grid. Sort the places.",
+      "bins": [
+        "On Leo's page",
+        "On another page"
+      ],
+      "cards": [
+        {
+          "text": "Harbor Middle School",
+          "bin": 0
+        },
+        {
+          "text": "Skate park",
+          "bin": 0
+        },
+        {
+          "text": "Bus station",
+          "bin": 1
+        },
+        {
+          "text": "Lighthouse Café",
+          "bin": 1
+        },
+        {
+          "text": "Okafor's Bike Shop",
+          "bin": 1
+        },
+        {
+          "text": "Library",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "hint": "The number in each square tells the row. Find the squares that end in 4.",
+      "explain": "Harbor Middle School (C4) and the skate park (D4) are in row 4, so they are on Leo's page. The other places are in rows 1, 2 and 3.",
+      "inference": 1,
+      "tags": [
+        "sort",
+        "grid"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i104",
+      "skill": "F3",
+      "passage": "f3-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam and Grandma Rose take the 3:00 PM bus. What is the earliest time they can get to Pine Bay Station?",
+      "options": [
+        "4:20 PM",
+        "4:35 PM",
+        "4:40 PM",
+        "5:25 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        3,
+        4
+      ],
+      "hint": "Find when the 3:00 PM bus gets to the station and add the walk from the note. Then find the first train that leaves after that.",
+      "explain": "They get to Pine Bay Station at 4:35 PM. The bus arrives at 3:18 PM, and after the 10-minute walk it is 3:28 PM. The 3:25 PM train has left, so they take the 4:00 PM Express.",
+      "inference": 1,
+      "tags": [
+        "transfer",
+        "note",
+        "stop-too-soon"
+      ]
+    },
+    {
+      "id": "f3-i105",
+      "skill": "F3",
+      "passage": "f3-p43",
+      "format": "tap",
+      "level": 4,
+      "prompt": "They take the 3:30 PM bus instead. How much time will they have in the museum before it closes?",
+      "options": [
+        "30 minutes",
+        "1 hour 20 minutes",
+        "1 hour 25 minutes",
+        "1 hour 40 minutes"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        4
+      ],
+      "hint": "Find when the bus arrives, add the walk, and pick the first train they can reach. Then add the walk to the museum and count up to 6:00 PM.",
+      "explain": "They have 1 hour 20 minutes. The bus arrives at 3:48 PM, and after the 10-minute walk it is 3:58 PM, so they catch the 4:00 PM Express. It reaches Pine Bay at 4:35 PM. With the 5-minute walk they reach the museum at 4:40 PM, and 4:40 PM to 6:00 PM is 1 hour 20 minutes.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "note",
+        "transfer",
+        "duration"
+      ]
+    },
+    {
+      "id": "f3-i106",
+      "skill": "F3",
+      "passage": "f3-p43",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Leo takes the 4:00 PM bus. He wants a train that stops at Sandy Cove. Tap the row for the train he should take.",
+      "unit": "row",
+      "answer": [
+        5
+      ],
+      "evidence": [
+        2,
+        5,
+        6
+      ],
+      "hint": "Work out when Leo can reach the platform. Then read the note to see which trains stop at Sandy Cove.",
+      "explain": "Tap the 4:30 PM Coast Line row. Leo reaches the platform at 4:28 PM. The 4:30 PM train is not an Express, so it stops at Sandy Cove. The 5:00 PM Express does not stop there.",
+      "inference": 1,
+      "tags": [
+        "transfer",
+        "note",
+        "two-conditions"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i107",
+      "skill": "F3",
+      "passage": "f3-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "The team needs 28 slices. Which order has enough slices for the lowest price?",
+      "options": [
+        "3 large",
+        "2 large and 1 medium",
+        "1 party size",
+        "1 party size and 1 small"
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "For each order, add up the slices and check that there are at least 28. Then add up the prices of the orders that have enough.",
+      "explain": "1 party size and 1 small is best. It has 24 + 6 = 30 slices for $30 + $8 = $38. 2 large and 1 medium has 28 slices but costs $39. 3 large costs $42, and 1 party size has only 24 slices.",
+      "inference": 1,
+      "tags": [
+        "best-option",
+        "price-math",
+        "two-conditions",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i108",
+      "skill": "F3",
+      "passage": "f3-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Coach Novak orders 2 large pizzas with one topping each and 1 party size cheese pizza. They are delivered. How much does she pay?",
+      "options": [
+        "$60",
+        "$62",
+        "$66",
+        "$67"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Find the price of one large pizza with one topping. Double it and add the party size price. Then read the note about delivery.",
+      "explain": "She pays $62. Each large pizza with one topping is $14 + $2 = $16, so two cost $32. The party size cheese pizza is $30. $32 + $30 = $62, and orders of $50 or more get free delivery.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "note",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i109",
+      "skill": "F3",
+      "passage": "f3-p44",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ms. Ortiz needs 40 slices for the science club. She will pick up the pizzas herself and use the deal. How much does she pay?",
+      "options": [
+        "$42",
+        "$44",
+        "$47",
+        "$56"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Count how many large pizzas make 40 slices. Then read the deal in the note.",
+      "explain": "She pays $42. Four large pizzas make 40 slices. With the deal, she buys 3 large pizzas for 3 × $14 = $42 and gets the fourth one free. She picks them up, so she pays nothing for delivery.",
+      "inference": 1,
+      "tags": [
+        "deal",
+        "note",
+        "price-math",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i110",
+      "skill": "F3",
+      "passage": "f3-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya's mom asks when to pick her up each day. Which answer is right?",
+      "options": [
+        "At 3:00 PM, but at 1:00 PM on Thursday",
+        "At 3:00 PM every day",
+        "At 3:00 PM, but at 9:30 PM on Thursday",
+        "At 9:30 PM every day"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Read when camp ends on most days. Then look for the day that is different.",
+      "explain": "She picks Priya up at 3:00 PM, but at 9:30 PM on Thursday. The text says camp ends at 3:00 PM on most days, and on Thursday it ends at 9:30 PM after telescope night.",
+      "inference": 1,
+      "tags": [
+        "exception",
+        "prose-and-table"
+      ]
+    },
+    {
+      "id": "f3-i111",
+      "skill": "F3",
+      "passage": "f3-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "On which days does Leo need to pack a lunch for camp?",
+      "options": [
+        "Monday to Friday",
+        "Monday, Tuesday and Wednesday",
+        "Monday to Thursday",
+        "Only on Friday"
+      ],
+      "answer": 1,
+      "hint": "Find every sentence about lunch. Check what happens on Thursday and on Friday.",
+      "explain": "He packs a lunch on Monday, Tuesday and Wednesday. On Thursday he eats lunch at home before camp, and on Friday the camp serves a pizza lunch.",
+      "inference": 1,
+      "tags": [
+        "exception",
+        "detail-search"
+      ]
+    },
+    {
+      "id": "f3-i112",
+      "skill": "F3",
+      "passage": "f3-p45",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Strong wind is forecast for Friday. When will the campers launch their rockets?",
+      "options": [
+        "On the next Monday at 10:00 AM",
+        "On Thursday night",
+        "They will not launch them at all",
+        "On Friday afternoon"
+      ],
+      "answer": 0,
+      "evidence": [
+        4
+      ],
+      "hint": "Find the sentence that tells what happens if there is rain or strong wind on Friday.",
+      "explain": "They launch on the next Monday at 10:00 AM. The last sentence says the launch moves there if rain or strong wind is forecast for Friday.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "if-then"
+      ]
+    },
+    {
+      "id": "f3-i113",
+      "skill": "F3",
+      "passage": "f3-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya gets to the show at 10:15 AM. Before she leaves for lunch at 12:00 PM, she wants to hear a whole talk and crack a geode. Which plan works?",
+      "options": [
+        "Crack a geode, then hear the talk on glowing minerals.",
+        "Hear the talk on metals, then crack a geode at 1:00 PM.",
+        "Hear the talk on crystals, then crack a geode.",
+        "Crack a geode now, then hear the talk on metals at 11:00 AM."
+      ],
+      "answer": 3,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Cross out any talk that has already started at 10:15 AM. Then check that each part of the plan happens before 12:00 PM.",
+      "explain": "She should crack a geode now and then hear the talk on metals at 11:00 AM. The crystals talk started at 10:00 AM, so she would miss the start. The glowing minerals talk is at 1:00 PM, after she leaves, and geode cracking ends at 12:00 PM.",
+      "inference": 1,
+      "tags": [
+        "plan",
+        "no-overlap",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f3-i114",
+      "skill": "F3",
+      "passage": "f3-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo is not in the rock club. He brings two rocks and wants to know what they are. What should he do?",
+      "options": [
+        "Pay $4 at the club table to trade them.",
+        "Wait for the talk on metals to ask about them.",
+        "Take them to the Ask the Expert desk.",
+        "Trade them at the rock swap at 11:00 AM."
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Read the note. Find who may use the rock swap, and who names rocks.",
+      "explain": "He should take them to the Ask the Expert desk. The note says Mr. Varga names rocks for anyone there all day. Only club members may trade at the rock swap.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "rule",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f3-i115",
+      "skill": "F3",
+      "passage": "f3-p46",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya cracks one geode. Later she pans for gold for 30 minutes. How much does she pay in all?",
+      "options": [
+        "$9",
+        "$13",
+        "$14",
+        "$19"
+      ],
+      "answer": 2,
+      "evidence": [
+        1,
+        5
+      ],
+      "hint": "Find the cost of one geode. Then work out how many 15-minute turns fit in 30 minutes.",
+      "explain": "She pays $14. One geode costs $4. Gold panning costs $5 for 15 minutes, and 30 minutes is two turns, so it costs $10. $4 + $10 = $14.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "duration",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i116",
+      "skill": "F3",
+      "passage": "f3-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana is in Grade 6. Where will she be at 1:00 PM?",
+      "options": [
+        "On the field, at the water balloon toss",
+        "In the gym, at the obstacle course",
+        "In the library, playing board games",
+        "In the cafeteria, at lunch"
+      ],
+      "answer": 1,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "Find the sentence about Grade 6 after lunch. Then find when Grade 7 goes to the gym.",
+      "explain": "She will be in the gym at the obstacle course. Grade 6 goes to the gym at 12:45 PM, and Grade 7 does not go until 1:30 PM.",
+      "inference": 1,
+      "tags": [
+        "prose-schedule",
+        "time-pm",
+        "plan-change"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i117",
+      "skill": "F3",
+      "passage": "f3-p47",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the sentence that tells which event is canceled.",
+      "unit": "sentence",
+      "answer": [
+        11
+      ],
+      "evidence": [
+        11
+      ],
+      "hint": "Read the third paragraph. Look for an event that will not happen at all.",
+      "explain": "The sentence is: The water balloon toss is canceled, because it cannot be held indoors. It is in the third paragraph.",
+      "inference": 0,
+      "tags": [
+        "plan-change",
+        "find-sentence"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i118",
+      "skill": "F3",
+      "passage": "f3-p47",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo is in Grade 7. How long is it from the end of the tug-of-war until his grade goes to the gym?",
+      "options": [
+        "45 minutes",
+        "1 hour 30 minutes",
+        "1 hour 45 minutes",
+        "2 hours 15 minutes"
+      ],
+      "answer": 2,
+      "evidence": [
+        6,
+        9
+      ],
+      "hint": "Find when the tug-of-war ends and when Grade 7 goes to the gym. Count the time between them.",
+      "explain": "It is 1 hour 45 minutes. The tug-of-war ends at 11:45 AM, and Grade 7 goes to the gym at 1:30 PM.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "duration",
+        "prose-schedule"
+      ]
+    },
+    {
+      "id": "f3-i119",
+      "skill": "F3",
+      "passage": "f3-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana plays the trumpet. Where should she be at 9:45 AM?",
+      "options": [
+        "Room 20",
+        "Room 21",
+        "The gym",
+        "The music room"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "First find which section a trumpet is in. Then find 9:45 AM in the Time column and read across to that section.",
+      "explain": "She should be in Room 20. The text says trumpets are in the brass section, and from 9:30 to 10:30 AM the Brass column says Section practice, Room 20.",
+      "inference": 1,
+      "tags": [
+        "prose-and-table",
+        "two-columns"
+      ]
+    },
+    {
+      "id": "f3-i120",
+      "skill": "F3",
+      "passage": "f3-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya plays the cello. Ben plays the piano. Where is each of them at 1:15 PM?",
+      "options": [
+        "Both of them are in the gym.",
+        "Priya is in Room 22, and Ben is in the music room.",
+        "Priya is on the stage, and Ben is in the gym.",
+        "Priya is on the stage, and Ben is in the music room."
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Find the section for each instrument. Then read the 12:45 to 2:00 PM row in both of those columns.",
+      "explain": "Priya is on the stage, and Ben is in the music room. A cello is in the strings, and the Strings column says Orchestra, stage. A piano is in keys and drums, and that column says Rhythm lab, music room.",
+      "inference": 1,
+      "tags": [
+        "two-characters",
+        "two-columns",
+        "prose-and-table"
+      ]
+    },
+    {
+      "id": "f3-i121",
+      "skill": "F3",
+      "passage": "f3-p48",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya plays the flute. Leo plays the drums. What should each of them bring to camp?",
+      "options": [
+        "Neither of them brings an instrument.",
+        "Leo brings his drums. Maya uses a flute from the school.",
+        "Maya brings her flute. Leo does not need to bring drums.",
+        "Both of them bring their own instruments."
+      ],
+      "answer": 2,
+      "hint": "Read the third paragraph. Check which instruments the school lends.",
+      "explain": "Maya brings her flute, and Leo does not need to bring drums. Campers bring their own instrument, but the school lends drums and pianos because they are too big to carry.",
+      "inference": 1,
+      "tags": [
+        "rule",
+        "exception",
+        "two-characters"
+      ]
+    },
+    {
+      "id": "f3-i122",
+      "skill": "F3",
+      "passage": "f3-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Ana and Ben want to play in the soccer video game tournament. What is the latest time they can sign up?",
+      "options": [
+        "12:30 PM",
+        "1:00 PM",
+        "1:30 PM",
+        "2:00 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        3
+      ],
+      "hint": "Find when the soccer tournament starts. Then read the note about signing up.",
+      "explain": "They can sign up until 1:30 PM. The tournament starts at 2:00 PM, and the note says to sign up at least 30 minutes before it starts.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "time-math"
+      ]
+    },
+    {
+      "id": "f3-i123",
+      "skill": "F3",
+      "passage": "f3-p49",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya is 11. She wants to draw and to play chess, with nothing at the same time. Which plan works?",
+      "options": [
+        "Game art class and chess for beginners, both at 12:30 PM",
+        "Game art class at 12:30 PM, then the chess tournament at 3:30 PM",
+        "Chess for beginners at 12:30 PM, then game art class at 2:00 PM",
+        "Game art class at 12:30 PM, then chess for beginners at 2:00 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        4
+      ],
+      "hint": "Find every row with art or chess. Check the time of each one, and make sure the two do not overlap.",
+      "explain": "Game art class at 12:30 PM and then the chess tournament at 3:30 PM works. Maya is 11, so she can join the art class. Game art class and chess for beginners are both only at 12:30 PM, so those two overlap.",
+      "inference": 1,
+      "tags": [
+        "no-overlap",
+        "plan",
+        "two-conditions",
+        "age-rule"
+      ]
+    },
+    {
+      "id": "f3-i124",
+      "skill": "F3",
+      "passage": "f3-p49",
+      "format": "sort",
+      "level": 4,
+      "prompt": "Leo gets to Game Day at 2:30 PM. Sort the events.",
+      "bins": [
+        "He can join from the start",
+        "Already started or over"
+      ],
+      "cards": [
+        {
+          "text": "Soccer video game tournament",
+          "bin": 1
+        },
+        {
+          "text": "Chess tournament",
+          "bin": 0
+        },
+        {
+          "text": "Game music class",
+          "bin": 0
+        },
+        {
+          "text": "Free play on game consoles",
+          "bin": 0
+        },
+        {
+          "text": "Puzzle game tournament",
+          "bin": 1
+        },
+        {
+          "text": "Kart racing tournament",
+          "bin": 1
+        }
+      ],
+      "evidence": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "hint": "Find the start time of each event. Compare it with 2:30 PM.",
+      "explain": "Leo can join the chess tournament, the game music class and free play from the start, because they begin at 3:30 PM. The kart, puzzle and soccer tournaments started before 2:30 PM.",
+      "inference": 1,
+      "tags": [
+        "sort",
+        "time-pm",
+        "compare"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i125",
+      "skill": "F3",
+      "passage": "f3-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam enters Pixel in Waggiest Tail and Best Trick. What is the latest time he can sign in for Best Trick?",
+      "options": [
+        "12:30 PM",
+        "12:40 PM",
+        "12:50 PM",
+        "1:00 PM"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find when Best Trick starts. Then read the note about signing in.",
+      "explain": "He must sign in by 12:40 PM. Best Trick starts at 1:00 PM, and the note says to sign in at least 20 minutes before each contest.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "time-math"
+      ]
+    },
+    {
+      "id": "f3-i126",
+      "skill": "F3",
+      "passage": "f3-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo is helping his neighbor show her dog, Biscuit. She wants Biscuit in the Agility course and in Waggiest Tail. Can Biscuit do both?",
+      "options": [
+        "No. Agility is still going on when Waggiest Tail starts.",
+        "Yes. The two contests are in different rings.",
+        "Yes. Waggiest Tail ends before Agility starts.",
+        "No. A dog may enter only one contest."
+      ],
+      "answer": 0,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Find the start and end times of both contests. Check if the times overlap.",
+      "explain": "No. Agility runs from 10:30 AM to 12:00 PM, and Waggiest Tail starts at 11:00 AM, while Agility is still going on.",
+      "inference": 1,
+      "tags": [
+        "no-overlap",
+        "two-rows"
+      ]
+    },
+    {
+      "id": "f3-i127",
+      "skill": "F3",
+      "passage": "f3-p50",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Leo pays the entry for Biscuit in Agility and in the Look-alike contest. He gives $10. How much change does he get?",
+      "options": [
+        "$3",
+        "$4",
+        "$6",
+        "$7"
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        4
+      ],
+      "hint": "Find the entry cost in the note. Work out the cost of two contests, then take it away from $10.",
+      "explain": "He gets $4 back. Each contest costs $3, so two contests cost $6, and $10 - $6 = $4.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "note",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i128",
+      "skill": "F3",
+      "passage": "f3-p50",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Tap the row for the contest that starts after 12:00 PM and keeps the dog on a leash the whole time.",
+      "unit": "row",
+      "answer": [
+        4
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the contests that start after 12:00 PM. Then read the note about leashes.",
+      "explain": "Tap the Dog and Owner Look-alike row. It starts at 1:30 PM. Best Trick also starts after 12:00 PM, but the note says dogs come off the leash during Best Trick.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "note"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i129",
+      "skill": "F3",
+      "passage": "f3-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Sam wants to dig at the real dig site. When should he be dropped off at the museum?",
+      "options": [
+        "Wednesday, August 12, at 9:00 AM",
+        "Tuesday, August 11, at 9:00 AM",
+        "Thursday, August 13, at 8:00 AM",
+        "Wednesday, August 12, at 8:00 AM"
+      ],
+      "answer": 3,
+      "evidence": [
+        1
+      ],
+      "hint": "Find which day the bus goes to the dig site. Then read that row for the date and the drop-off time.",
+      "explain": "He should be dropped off on Wednesday, August 12, at 8:00 AM. The text says the bus goes to Red Bluff on Day 2, and the Day 2 row shows that date and time.",
+      "inference": 1,
+      "tags": [
+        "prose-and-table",
+        "two-columns"
+      ]
+    },
+    {
+      "id": "f3-i130",
+      "skill": "F3",
+      "passage": "f3-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Priya comes only on Day 2 and Day 3. Leo comes on all three days. How much do they pay in all?",
+      "options": [
+        "$85",
+        "$100",
+        "$110",
+        "$120"
+      ],
+      "answer": 2,
+      "hint": "Find the two prices in the last sentence. Work out Priya's cost with the one-day price, then add Leo's cost.",
+      "explain": "They pay $110. Priya pays $25 for each of her two days, which is $50. Leo pays $60 for all three days. $50 + $60 = $110.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i131",
+      "skill": "F3",
+      "passage": "f3-p51",
+      "format": "tap",
+      "level": 4,
+      "prompt": "What should Ana pack for Day 2?",
+      "options": [
+        "A big pick and a hat",
+        "Two bottles of water and a plaster cast",
+        "A hat and two bottles of water",
+        "A hat and one bottle of water"
+      ],
+      "answer": 2,
+      "hint": "Find the sentence about the dig site. It tells you what to bring.",
+      "explain": "She should pack a hat and two bottles of water. The third paragraph says the dig site is hot with little shade. Only Dr. Bell's team may use the big tools.",
+      "inference": 1,
+      "tags": [
+        "what-to-bring",
+        "detail-search"
+      ]
+    },
+    {
+      "id": "f3-i132",
+      "skill": "F3",
+      "passage": "f3-p52",
+      "format": "tap",
+      "level": 4,
+      "prompt": "It rains on Saturday evening. Where should campers go at 8:00 PM, and what should they bring?",
+      "options": [
+        "The creek, with a flashlight",
+        "The camp hall, with a flashlight",
+        "The fire circle, with a flashlight",
+        "The camp hall, with nothing"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the 8:00 PM program. Then read the note for the rain rule and for what to bring in the evening.",
+      "explain": "They go to the camp hall with a flashlight. The note says the campfire moves into the camp hall if it rains, and to bring a flashlight to evening programs.",
+      "inference": 1,
+      "tags": [
+        "note",
+        "plan-change",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f3-i133",
+      "skill": "F3",
+      "passage": "f3-p52",
+      "format": "tap",
+      "level": 4,
+      "prompt": "Maya is 11. She and her dad must leave the campsite at 9:00 AM on Sunday. Which Sunday program can Maya do?",
+      "options": [
+        "Animal tracks at the creek",
+        "Clean-up hike",
+        "Bird songs walk",
+        "Both Sunday programs"
+      ],
+      "answer": 0,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "Look at the two Sunday rows. Check each time against 9:00 AM, and check the ages.",
+      "explain": "She can do Animal tracks at the creek. It runs from 7:00 to 8:00 AM and is for ages 10 and up. The clean-up hike starts at 9:30 AM, after they leave.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "age-rule"
+      ]
+    },
+    {
+      "id": "f3-i134",
+      "skill": "F3",
+      "passage": "f3-p52",
+      "format": "highlight",
+      "level": 4,
+      "prompt": "Maya's dad wants an afternoon program on Saturday that her 6-year-old cousin can join. Tap that row.",
+      "unit": "row",
+      "answer": [
+        2
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Find the Saturday rows with PM times. Then check the Ages column.",
+      "explain": "Tap the Leaves and bark row. It is at 2:00 PM on Saturday and is for all ages. The campfire is in the evening, and the creek bugs program is in the morning.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "age-rule"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i135",
+      "skill": "F3",
+      "passage": "f3-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam and Grandma Rose take Train 21. What time do they get to Otter Island?",
+      "options": [
+        "8:25 AM",
+        "8:30 AM",
+        "9:40 AM",
+        "11:10 AM"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Find when Train 21 arrives and add the walk to the pier from the note. Then find the first ferry after that and read when it arrives.",
+      "explain": "They get to Otter Island at 9:40 AM. Train 21 arrives at 8:10 AM. After the 15-minute walk it is 8:25 AM, so they catch the 8:30 AM ferry, which arrives at 9:40 AM.",
+      "inference": 1,
+      "tags": [
+        "transfer",
+        "note",
+        "time-math"
+      ]
+    },
+    {
+      "id": "f3-i136",
+      "skill": "F3",
+      "passage": "f3-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On the way home, they take the 4:30 PM ferry. What time do they get back to Harbor Town Station?",
+      "options": [
+        "5:55 PM",
+        "6:20 PM",
+        "6:30 PM",
+        "7:25 PM"
+      ],
+      "answer": 3,
+      "evidence": [
+        7,
+        8,
+        9
+      ],
+      "hint": "Find when the ferry reaches Pine Bay and add the walk. Then check which train they can still catch.",
+      "explain": "They get back at 7:25 PM. The ferry reaches Pine Bay at 5:40 PM, and after the 15-minute walk it is 5:55 PM. The 5:45 PM Express has left, so they take Train 42 at 6:30 PM.",
+      "inference": 1,
+      "tags": [
+        "transfer",
+        "note",
+        "stop-too-soon"
+      ]
+    },
+    {
+      "id": "f3-i137",
+      "skill": "F3",
+      "passage": "f3-p53",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam is 12. What do Sam and Grandma Rose pay in all for the trains both ways and the round-trip ferry?",
+      "options": [
+        "$36",
+        "$42",
+        "$50",
+        "$64"
+      ],
+      "answer": 2,
+      "hint": "Use the prices in the note. Work out one person at a time: two train tickets plus one ferry ticket. Then add the two totals.",
+      "explain": "They pay $50. Grandma Rose pays $9 + $9 + $14 = $32. Sam is 12, so he pays $5 + $5 + $8 = $18. $32 + $18 = $50.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "note",
+        "age-rule",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i138",
+      "skill": "F3",
+      "passage": "f3-p53",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Leo and his mom take the 10:00 AM ferry to Otter Island. They want at least 3 hours on the island. Tap the row for the ferry they should take home.",
+      "unit": "row",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        4,
+        6,
+        7
+      ],
+      "hint": "Find when the 10:00 AM ferry arrives and add 3 hours. Then look for the first ferry from Otter Island after that time.",
+      "explain": "Tap the 4:30 PM ferry row. They arrive at 11:10 AM, and 3 hours later is 2:10 PM. The 2:00 PM ferry leaves too soon, so they take the 4:30 PM ferry.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "plan",
+        "stop-too-soon"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i139",
+      "skill": "F3",
+      "passage": "f3-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya records Saturn's Moons. She also wants to record Life on the Space Station. Can the TV box record both?",
+      "options": [
+        "Yes. They are on different channels.",
+        "Yes. Life on the Space Station ends at 7:30 PM.",
+        "No. Saturn's Moons ends at 9:00 PM.",
+        "No. Both start at 7:00 PM, and the box records only one show at a time."
+      ],
+      "answer": 3,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the start time of each show. Then read the note about recording.",
+      "explain": "No. Both shows start at 7:00 PM, and the note says the box can record only one show at a time.",
+      "inference": 1,
+      "tags": [
+        "no-overlap",
+        "note"
+      ]
+    },
+    {
+      "id": "f3-i140",
+      "skill": "F3",
+      "passage": "f3-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam watches all of Mars Rovers. Then he switches to Channel 31. Which show is starting on Channel 31 when he switches?",
+      "options": [
+        "Comets and Meteors",
+        "Night Sky Tonight",
+        "Saturn's Moons",
+        "Build a Telescope"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Use the length of Mars Rovers to work out when it ends. Then read the Channel 31 column at that time.",
+      "explain": "Saturn's Moons is starting. Mars Rovers lasts 60 minutes, so it ends at 7:00 PM, and Saturn's Moons starts on Channel 31 at 7:00 PM. Comets and Meteors is on Channel 8.",
+      "inference": 1,
+      "tags": [
+        "duration",
+        "two-columns"
+      ]
+    },
+    {
+      "id": "f3-i141",
+      "skill": "F3",
+      "passage": "f3-p54",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo is free from 7:00 PM to 8:30 PM. He wants to watch as many whole shows as he can. How many whole shows can he watch?",
+      "options": [
+        "1 show",
+        "2 shows",
+        "3 shows",
+        "4 shows"
+      ],
+      "answer": 2,
+      "evidence": [
+        2,
+        3,
+        4
+      ],
+      "hint": "Look for short shows that start at 7:00 PM or later and end by 8:30 PM. Shows on either channel count, as long as they do not overlap.",
+      "explain": "He can watch 3 whole shows: Life on the Space Station at 7:00 PM and Comets and Meteors at 7:30 PM on Channel 8, then Night Sky Tonight at 8:00 PM on Channel 31. The First Moon Landing lasts 90 minutes, so it ends too late.",
+      "inference": 1,
+      "tags": [
+        "plan",
+        "no-overlap",
+        "best-option"
+      ]
+    },
+    {
+      "id": "f3-i142",
+      "skill": "F3",
+      "passage": "f3-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana wants to try every vegetarian main this week. On which days should she buy lunch?",
+      "options": [
+        "Wednesday and Friday only",
+        "Monday, Wednesday and Friday",
+        "Monday and Wednesday only",
+        "Tuesday, Wednesday and Friday"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        2,
+        4
+      ],
+      "hint": "Read the note to learn what V means. Then find every main with a V.",
+      "explain": "She should buy lunch on Monday, Wednesday and Friday. Bean chili, cheese pizza and the veggie wrap have a V, and the note says V means vegetarian.",
+      "inference": 1,
+      "tags": [
+        "symbol-key",
+        "note"
+      ]
+    },
+    {
+      "id": "f3-i143",
+      "skill": "F3",
+      "passage": "f3-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam buys a full lunch every day this week. Ben buys only a main and a milk each day. Who spends more this week, and by how much?",
+      "options": [
+        "Sam, by $2.50",
+        "Ben, by $2.50",
+        "Sam, by $0.50",
+        "They spend the same."
+      ],
+      "answer": 0,
+      "hint": "Work out what each boy pays in one day. Then multiply by 5 days and compare.",
+      "explain": "Sam spends $2.50 more. A full lunch is $3.50, so Sam pays $17.50 for 5 days. A main and a milk cost $2.50 + $0.50 = $3, so Ben pays $15. $17.50 - $15 = $2.50.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "compare",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i144",
+      "skill": "F3",
+      "passage": "f3-p55",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo has $4 on Friday. He wants the veggie wrap, the sweet potato fries and a cookie. What is his best choice?",
+      "options": [
+        "Buy the wrap and the fries as single items for $3.50.",
+        "Buy a full lunch, and pay $0.50 more for the cookie.",
+        "Buy the wrap and the fries as single items for $3.",
+        "Buy a full lunch for $3.50. It comes with the cookie."
+      ],
+      "answer": 3,
+      "evidence": [
+        4
+      ],
+      "hint": "Read the note about full lunches on Friday. Compare that price with the price of the single items.",
+      "explain": "He should buy a full lunch for $3.50. It has the wrap, the fries, a banana and a milk, and on Friday every full lunch comes with a free cookie. The wrap and fries alone also cost $3.50, with no cookie.",
+      "inference": 1,
+      "tags": [
+        "best-option",
+        "note",
+        "price-math"
+      ]
+    },
+    {
+      "id": "f3-i145",
+      "skill": "F3",
+      "passage": "f3-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which robot wins the challenge?",
+      "options": [
+        "Pip",
+        "Priya's rover",
+        "Tumble",
+        "Echo"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Find the run with the most points for each robot. Compare only those best runs.",
+      "explain": "Tumble wins. Its best run scored 50 points, the highest best score. Priya's rover has the most points if you add all three runs, but the note says only the best run counts.",
+      "inference": 1,
+      "tags": [
+        "best-of",
+        "note",
+        "wrong-method"
+      ]
+    },
+    {
+      "id": "f3-i146",
+      "skill": "F3",
+      "passage": "f3-p56",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Which robot finished its best run in the least time?",
+      "options": [
+        "Pip",
+        "Echo",
+        "Tumble",
+        "Priya's rover"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "First find each robot's best run. Then compare only the times of those four runs.",
+      "explain": "Echo did. Echo's best run, 45 points, took 105 seconds. Priya's rover took 115 seconds, and Tumble and Pip each took 118 seconds. Pip's 70-second run is not its best run.",
+      "inference": 1,
+      "tags": [
+        "best-of",
+        "wrong-cell",
+        "compare"
+      ]
+    },
+    {
+      "id": "f3-i147",
+      "skill": "F3",
+      "passage": "f3-p56",
+      "format": "order",
+      "level": 5,
+      "prompt": "Put the robots in order, from first place to last place.",
+      "steps": [
+        "Tumble",
+        "Echo",
+        "Priya's rover",
+        "Pip"
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Rank the best scores from highest to lowest. For robots with the same best score, use the tie rule in the note.",
+      "explain": "Tumble is first with 50 points. Echo, Priya's rover and Pip all have 45 points, so the tie rule decides: Echo took 105 seconds, Priya's rover 115 seconds and Pip 118 seconds.",
+      "inference": 1,
+      "tags": [
+        "tie-break",
+        "note",
+        "rank"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i148",
+      "skill": "F3",
+      "passage": "f3-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana has the 10 AM lesson. What will happen?",
+      "options": [
+        "The boats stay in, because the wind at 11 AM is over 15 mph.",
+        "The boats stay in, because the chance of a thunderstorm at 10 AM is 30% or more.",
+        "The lesson sails, because the wind at 10 AM is only 12 mph.",
+        "The lesson sails, because the chance of a thunderstorm stays under 30%."
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "Use the example in the text to find the two forecast rows for a 10 AM lesson. Check both rows for wind and for thunderstorms.",
+      "explain": "The boats stay in. A 10 AM lesson uses the 10 AM and 11 AM rows, and the wind at 11 AM is 17 mph, which is over 15 mph. The thunderstorm chance stays under 30%, but one rule is enough to keep the boats at the dock.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "rule",
+        "prose-and-table"
+      ]
+    },
+    {
+      "id": "f3-i149",
+      "skill": "F3",
+      "passage": "f3-p57",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben's 1 PM lesson cannot go out on the water. He wants to sail this weekend. What should he do?",
+      "options": [
+        "Wait at the dock and sail with the 3 PM group.",
+        "Sail at 1 PM anyway, because the wind is only 10 mph.",
+        "Come back next Saturday at 1 PM.",
+        "Join the make-up lesson on Sunday at 9 AM."
+      ],
+      "answer": 3,
+      "evidence": [
+        5,
+        6
+      ],
+      "hint": "Read the third paragraph. Find what students can do when they miss a lesson on the water.",
+      "explain": "He should join the make-up lesson on Sunday at 9 AM. The third paragraph says students who miss a lesson on the water may join it. His 1 PM lesson stays in because the chance of a thunderstorm is 60% at 1 PM.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "plan-change"
+      ]
+    },
+    {
+      "id": "f3-i150",
+      "skill": "F3",
+      "passage": "f3-p57",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Leo can sail only in the afternoon. Tap the forecast row for the hour when his lesson should start.",
+      "unit": "row",
+      "answer": [
+        7
+      ],
+      "evidence": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "hint": "Check the two afternoon lessons. For each one, read its two forecast rows and test both rules.",
+      "explain": "Tap the 3 PM row. The 1 PM lesson stays in, because the chance of a thunderstorm is 60% at 1 PM and 40% at 2 PM. The 3 PM lesson uses the 3 PM and 4 PM rows, where the wind is under 15 mph and the chance is only 10% and 5%.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "rule",
+        "plan"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i151",
+      "skill": "F3",
+      "passage": "f3-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya, who is 11, and her mom want to see the seals on Saturday. What time does their tour leave?",
+      "options": [
+        "7:30 AM",
+        "8:30 AM",
+        "9:30 AM",
+        "7:55 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        1
+      ],
+      "hint": "Find Saturday's low tides. Use the rule for the Seal Rock Tour, then check each time against the safety rule.",
+      "explain": "Their tour leaves at 7:30 AM. Saturday's morning low tide is at 8:30 AM, and the tour leaves 1 hour before it. A tour for the evening low tide would come back after 7:00 PM, so it does not run.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "prose-and-table",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f3-i152",
+      "skill": "F3",
+      "passage": "f3-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam wants to see the seals, but he is free only on Friday. What should he know?",
+      "options": [
+        "The Friday tour leaves at 7:05 PM.",
+        "The Friday tour leaves at 7:40 AM, at low tide.",
+        "No Seal Rock Tour can run on Friday.",
+        "The Friday tour leaves at 6:40 AM."
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Work out both possible Friday tours from the two low tides. Then test each one against the safety rule.",
+      "explain": "No Seal Rock Tour can run on Friday. A tour for the 7:40 AM low tide would leave at 6:40 AM, before 7:00 AM. A tour for the 8:05 PM low tide would come back at 9:05 PM, after 7:00 PM.",
+      "inference": 1,
+      "tags": [
+        "boundary",
+        "rule",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f3-i153",
+      "skill": "F3",
+      "passage": "f3-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana's dad wants to take Ana and Ben, who are both 12, on the Kelp Forest Tour. What problem do they have?",
+      "options": [
+        "Each kayak holds three people, so one twin must stay on shore.",
+        "Each twin must share a kayak with an adult, so they need one more adult.",
+        "The twins are too young. Paddlers must be 16.",
+        "The Kelp Forest Tour does not run on weekends."
+      ],
+      "answer": 1,
+      "hint": "Read the first paragraph. Count the people, how many fit in one kayak, and the adults.",
+      "explain": "They need one more adult. The kayaks hold two people, and the first paragraph says anyone under 16 shares a kayak with an adult. Two children need two kayaks, so they need two adults.",
+      "inference": 1,
+      "tags": [
+        "problem-solving",
+        "rule",
+        "two-conditions"
+      ]
+    },
+    {
+      "id": "f3-i154",
+      "skill": "F3",
+      "passage": "f3-p58",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo's mom takes Leo, who is 13, on the Kelp Forest Tour on Sunday. How much do they pay, and when do they get back?",
+      "options": [
+        "$60, back at 5:00 PM",
+        "$70, back at 5:00 PM",
+        "$60, back at 4:30 PM",
+        "$50, back at 3:30 PM"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find Sunday's afternoon high tide and add 90 minutes. Then add one adult price and one price for ages 10 to 15.",
+      "explain": "They pay $60 and get back at 5:00 PM. The tour leaves at the 3:30 PM high tide and lasts 90 minutes. One adult is $35, and Leo, who is 13, is $25.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "price-math",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i155",
+      "skill": "F3",
+      "passage": "f3-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ana plays the trumpet. She rents one for the 9-month school year and buys the care plan. How much does that cost?",
+      "options": [
+        "$225",
+        "$240",
+        "$265",
+        "$520"
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Find the monthly rent for a trumpet. Multiply it by 9, then add the care plan from the note.",
+      "explain": "It costs $240. A trumpet is $25 a month, and 9 × $25 = $225. The care plan adds $15, so $225 + $15 = $240.",
+      "inference": 1,
+      "tags": [
+        "price-math",
+        "note",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i156",
+      "skill": "F3",
+      "passage": "f3-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Ben plays keyboard. He wants a keyboard of his own to keep. Which way costs less, and by how much?",
+      "options": [
+        "Buying new, by $30",
+        "Renting for 10 months, by $15",
+        "They cost the same.",
+        "Renting for 10 months, by $30"
+      ],
+      "answer": 3,
+      "evidence": [
+        5
+      ],
+      "hint": "Read the note to see how renting can make the keyboard his. Work out that cost, then compare it with the Buy new price.",
+      "explain": "Renting for 10 months costs less, by $30. The note says 10 months of rent makes the keyboard his to keep: 10 × $15 = $150. Buying new costs $180, and $180 - $150 = $30.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "best-option",
+        "note",
+        "price-math"
+      ]
+    },
+    {
+      "id": "f3-i157",
+      "skill": "F3",
+      "passage": "f3-p59",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Priya plays the cello. Her family has $200 for September to December. Can they rent a cello for those months with the care plan?",
+      "options": [
+        "No. It costs $215.",
+        "No. It costs $1,200.",
+        "Yes, and $25 is left over.",
+        "Yes, and $40 is left over."
+      ],
+      "answer": 2,
+      "evidence": [
+        4
+      ],
+      "hint": "Count the months from September to December. Multiply by the cello rent, add the care plan, and compare with $200.",
+      "explain": "Yes, with $25 left over. September to December is 4 months, and 4 × $40 = $160. The care plan adds $15, so the total is $175. $200 - $175 = $25.",
+      "inference": 1,
+      "tags": [
+        "budget",
+        "note",
+        "price-math",
+        "money"
+      ]
+    },
+    {
+      "id": "f3-i158",
+      "skill": "F3",
+      "passage": "f3-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "It is Saturday, May 30. Sam is 12 and has not done the training yet. Grandma Rose will come with him. Which two shifts should he sign up for, to start as soon as he can?",
+      "options": [
+        "Cat playtime on June 4, then training on June 13",
+        "Training on June 2, then cat playtime on June 4",
+        "Training on June 6, then dog walking on June 6",
+        "Training on June 2, then dog walking on June 6"
+      ],
+      "answer": 1,
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Find the first training class with places left. Then find the first job after it that a 12-year-old may do.",
+      "explain": "He should sign up for training on June 2 and then cat playtime on June 4. Training must come first, and the June 6 class has 0 places left. Dog walking is only for volunteers aged 14 and up.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "age-rule",
+        "prose-and-table",
+        "plan"
+      ]
+    },
+    {
+      "id": "f3-i159",
+      "skill": "F3",
+      "passage": "f3-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Leo is 13 and has done the training. He wants to help on Saturday, June 13, with his mom. Which is true?",
+      "options": [
+        "There is no job for him that day. Dog walking is for ages 14 and up.",
+        "He can walk dogs at 1:00 PM, because his mom comes too.",
+        "He can walk dogs on his own, because he is over 12.",
+        "He must take the training class again at 10:00 AM."
+      ],
+      "answer": 0,
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "Find the shifts on June 13. Then read the second paragraph for the age rules.",
+      "explain": "There is no job for him that day. The only job on June 13 is dog walking, and the second paragraph says only volunteers aged 14 and up may walk the dogs, even with an adult.",
+      "inference": 1,
+      "tags": [
+        "age-rule",
+        "rule",
+        "close-reading"
+      ]
+    },
+    {
+      "id": "f3-i160",
+      "skill": "F3",
+      "passage": "f3-p60",
+      "format": "tap",
+      "level": 5,
+      "prompt": "On Friday, June 12, a 16-year-old volunteer asks to sign up for dog walking on June 13. What is the problem?",
+      "options": [
+        "There are not enough places left.",
+        "She is too young to walk dogs.",
+        "She must bring a parent with her.",
+        "She must sign up at least two days before, so Friday is too late."
+      ],
+      "answer": 3,
+      "evidence": [
+        7
+      ],
+      "hint": "Read the third paragraph about when to sign up. Count the days from June 12 to June 13.",
+      "explain": "She is signing up too late. The third paragraph says to sign up at least two days before a shift, and June 12 is only one day before June 13. The shift still has 2 places, and at 16 she may walk dogs on her own.",
+      "inference": 1,
+      "tags": [
+        "rule",
+        "date-math",
+        "problem-solving"
+      ]
+    },
+    {
+      "id": "f3-i161",
+      "skill": "F3",
+      "passage": "f3-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Maya and her dad take Up 1 to the Waterfall Trailhead and walk the Falls Trail. Which shuttle do they take back, and when do they reach the Park Gate?",
+      "options": [
+        "Down 1, reaching the gate at 1:00 PM",
+        "Down 2, reaching the gate at 3:40 PM",
+        "Down 1, reaching the gate at 1:40 PM",
+        "Down 1, reaching the gate at 1:15 PM"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "Find when they finish the trail. Then find the first Down shuttle at the Waterfall Trailhead after that, and follow its row to the Park Gate column.",
+      "explain": "They take Down 1 and reach the gate at 1:40 PM. They finish the Falls Trail at about 10:25 AM. Down 1 is the first shuttle down: it stops at the Waterfall Trailhead at 1:15 PM and reaches the Park Gate at 1:40 PM.",
+      "inference": 1,
+      "tags": [
+        "direction",
+        "time-math",
+        "wrong-column"
+      ]
+    },
+    {
+      "id": "f3-i162",
+      "skill": "F3",
+      "passage": "f3-p61",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Sam and Grandma Rose take Up 3 to the Summit Trailhead and hike the Summit Trail. What happens next?",
+      "options": [
+        "They finish at about 3:40 PM and take Down 3 at 5:40 PM from the Summit Trailhead.",
+        "They finish at about 3:40 PM and take Down 3 at 5:00 PM.",
+        "They finish at about 3:40 PM and take Down 2 at 3:00 PM.",
+        "They finish after the last shuttle has left."
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        4,
+        5
+      ],
+      "hint": "Add 3 hours to the time they reach the Summit Trailhead. Then read the Summit Trailhead column for the Down shuttles.",
+      "explain": "They finish at about 3:40 PM and take Down 3 at 5:00 PM. Up 3 reaches the Summit Trailhead at 12:40 PM, and the trail takes about 3 hours. Down 2 left at 3:00 PM, so they wait for the last shuttle. 5:40 PM is when Down 3 reaches the Park Gate.",
+      "inference": 1,
+      "tags": [
+        "time-math",
+        "direction",
+        "wrong-column",
+        "plan"
+      ]
+    },
+    {
+      "id": "f3-i163",
+      "skill": "F3",
+      "passage": "f3-p61",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Leo wants to walk the Lakeshore Loop and the Falls Trail in one day. He takes Up 1 to Pine Lake and walks the loop first. Tap the row for the shuttle he takes from Pine Lake to the Waterfall Trailhead.",
+      "unit": "row",
+      "answer": [
+        1
+      ],
+      "evidence": [
+        0,
+        1
+      ],
+      "hint": "Find when Leo finishes the loop. Then find the next Up shuttle that stops at Pine Lake after that.",
+      "explain": "Tap the Up 2 row. Leo reaches Pine Lake at 8:15 AM and finishes the 1-hour loop at about 9:15 AM. Up 2 stops at Pine Lake at 10:15 AM and reaches the Waterfall Trailhead at 10:25 AM.",
+      "inference": 1,
+      "tags": [
+        "direction",
+        "time-math",
+        "plan"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f3-i164",
+      "skill": "F3",
+      "passage": "f3-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The club rides from Harbor Town to Gull Point, then to Sandy Cove, then straight back to Harbor Town. How many miles is the whole ride?",
+      "options": [
+        "13 miles",
+        "19 miles",
+        "25 miles",
+        "31 miles"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Find the miles for each part of the ride, one pair of places at a time. Then add the three numbers.",
+      "explain": "The whole ride is 25 miles. Harbor Town to Gull Point is 6 miles, Gull Point to Sandy Cove is 7 miles, and Sandy Cove back to Harbor Town is 12 miles. 6 + 7 + 12 = 25.",
+      "inference": 1,
+      "tags": [
+        "two-columns",
+        "math",
+        "distance"
+      ]
+    },
+    {
+      "id": "f3-i165",
+      "skill": "F3",
+      "passage": "f3-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "The club leaves Harbor Town at 9:00 AM and rides straight to Pine Bay. About what time will they get there?",
+      "options": [
+        "9:20 AM",
+        "10:00 AM",
+        "11:00 AM",
+        "11:30 AM"
+      ],
+      "answer": 2,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the miles from Harbor Town to Pine Bay. Use the note to change miles into hours.",
+      "explain": "They get there at about 11:00 AM. Harbor Town to Pine Bay is 20 miles. The note says riders go about 10 miles in 1 hour, so 20 miles takes about 2 hours.",
+      "inference": 1,
+      "tags": [
+        "rate",
+        "time-math",
+        "note",
+        "distance"
+      ]
+    },
+    {
+      "id": "f3-i166",
+      "skill": "F3",
+      "passage": "f3-p62",
+      "format": "tap",
+      "level": 5,
+      "prompt": "Mr. Okafor wants a ride from Harbor Town to one place and back on the same road. The whole ride must be at least 20 miles and no more than 30 miles. Where should they ride to?",
+      "options": [
+        "Sandy Cove",
+        "Pine Bay",
+        "Lantern Peaks",
+        "Gull Point"
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Find the miles from Harbor Town to each place. Double each number for there and back, then compare with 20 and 30.",
+      "explain": "They should ride to Sandy Cove. It is 12 miles each way, so the whole ride is 24 miles. Gull Point (12 miles in all) and Lantern Peaks (16 miles in all) are too short, and Pine Bay (40 miles in all) is too long.",
+      "inference": 1,
+      "tags": [
+        "two-conditions",
+        "distance",
+        "double-it"
+      ]
+    },
+    {
+      "id": "f3-i167",
+      "skill": "F3",
+      "passage": "f3-p62",
+      "format": "highlight",
+      "level": 5,
+      "prompt": "Tap the row for the place that is closest to Lantern Peaks.",
+      "unit": "row",
+      "answer": [
+        0
+      ],
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "hint": "Read down the Lantern Peaks column. Find the smallest number, then tap the row it is in.",
+      "explain": "Tap the Harbor Town row. Harbor Town is 8 miles from Lantern Peaks. Gull Point is 13 miles, Sandy Cove is 18 miles and Pine Bay is 24 miles.",
+      "inference": 1,
+      "tags": [
+        "compare",
+        "distance",
+        "grid"
       ],
       "transfer": true
     }
