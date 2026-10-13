@@ -24,8 +24,8 @@ jobs:
       - run: npm ci
       - name: Content validation, type check, engine tests, build
         run: npm run ci
-      - name: Reading levels
-        run: pip install -r pipeline/requirements.txt && python pipeline/check.py
+      - name: Content checks (reading levels, coherence, skills; LTF-16)
+        run: pip install -r pipeline/requirements.txt && python pipeline/test_checks.py && python pipeline/content_check.py
       - name: End-to-end and accessibility (WCAG 2.2 AA)
         run: npx playwright install --with-deps chromium && npm run e2e
       - uses: actions/upload-artifact@v4

@@ -194,7 +194,14 @@ Added 2026-10-13. Approved. Research: [Lee, Quinn & Jiang 2025](https://link.spr
 
 ## LTF-16 Coherence and skill checks for new content
 
-Added 2026-10-13. Approved. Research: [Maheshwary et al. 2026](https://aclanthology.org/2026.readi-1.10/); [Ma, Flor & Wang 2025](https://aclanthology.org/2025.bea-1.31/); [Shen et al. 2026](https://aclanthology.org/2026.bea-1.51/). Plan rule R19.
+Added 2026-10-13. Approved. Built 2026-10-13, warning only: waiting for DW's gold-set ratings.
+
+- **What was built.** `pipeline/coherence.py`, `pipeline/skillcheck.py` (inference level, school-goal tags, near-duplicates) and `pipeline/content_check.py`, run by `npm run content:check` and in CI. Tests in `pipeline/test_checks.py`. Today's 328 flags are recorded in `pipeline/baseline.json`, so only new problems can ever block.
+- **Gold set.** `evals/gold/gold.py pick` chose 30 passages and 60 items (seed 2026; `gold-set.json`). DW rates them blind in `evals/gold/rate.html` (it shows no checker output and no inference labels) and saves `evals/gold/ratings.json`. Then `python evals/gold/gold.py agree` writes `agreement.json`, and each check blocks new problems only once it reaches kappa 0.6 and precision 0.8 on at least 20 rated cases.
+- **Tuning, without the gold set.** Near-duplicates: on held-out passages, reworded copies scored 0.48 to 1 and different texts at most 0.14, so the threshold is 0.5. It found one real pair: f5-p24 "Dad's Note About Pixel" rewords f2-p01 "Note on the Fridge". Coherence by shared words is weak on these short texts: the best variant caught 27% of sentences spliced in from other texts and flagged 23% of unchanged passages, so it will most likely stay warning-only; the gold ratings will judge any better checker (for example a model-based one) without re-rating.
+- **Flags to review.** 59 items carry `key-detail` on questions that ask for a clue rather than which detail matters most (as the guide defines it), which inflates the key-details school goal. Also 33 problem-solving, 12 plan-change and 10 main-idea tag flags, and 37 inference labels two steps from the checker's reading (mostly sign items marked "stated" where the answer interprets the sign).
+
+Original entry: Research: [Maheshwary et al. 2026](https://aclanthology.org/2026.readi-1.10/); [Ma, Flor & Wang 2025](https://aclanthology.org/2025.bea-1.31/); [Shen et al. 2026](https://aclanthology.org/2026.bea-1.51/). Plan rule R19.
 
 - **Build.** `pipeline/coherence.py` flags sentence pairs that share no people or things. `pipeline/skillcheck.py` checks each item's inference level and tags, and flags near-duplicate passages, so a new passage is not an old one reworded. `content:check` runs all three checks, and CI fails on new problems.
 - **Eval first.** DW rates a gold set of 30 passages and 60 items by hand. The checks must agree with those ratings before they can block a merge, and the gold set is never used for tuning.

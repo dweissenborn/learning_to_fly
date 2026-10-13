@@ -12,6 +12,7 @@
     "check": "node packages/schema/validate.mjs",
     "gen:types": "node packages/schema/gen.mjs",
     "e2e": "playwright test",
+    "content:check": "node pipeline/content-check.mjs",
     "ci": "npm run check && npm run typecheck && npm test && npm run build && node apps/web/check-offline.mjs"
   },
   "devDependencies": {

@@ -59,6 +59,8 @@ pipeline/.venv/Scripts/python pipeline/check.py
 
 That checks the reading level of every prose passage. Create the venv once with `python -m venv pipeline/.venv` and `pipeline/.venv/Scripts/pip install -r pipeline/requirements.txt`.
 
+`npm run content:check` runs the reading-level check plus the content checks from LTF-16: coherence (a sentence that shares no people or things with what came before), each question's inference level and school-goal tags, and near-duplicate passages. The new checks only warn until they agree with a hand-rated gold set (`evals/gold/`), and then block only new problems; today's flags are recorded in `pipeline/baseline.json`.
+
 [Why it works](docs/why-it-works.md) links each feature to the research behind it, and says which choices are ours rather than a study's. The [research page](https://dweissenborn.github.io/learning_to_fly/) goes into each study in depth.
 
 ## Layout
