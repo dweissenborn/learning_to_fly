@@ -151,3 +151,80 @@ test('the family cloud copy: a second device carries on as the same learner', as
   await expect(second.getByText("Tester's progress is saved on this device and in your family's cloud copy.", { exact: false })).toBeVisible();
   await axe(second, 'cloud card');
 });
+
+/** Answers the question on screen by trying each answer, or each line of the text, until one is right. */
+async function answer(page: Page) {
+  const next = page.getByRole('button', { name: /^Next/ });
+  for (const opts of [page.getByRole('group', { name: /^(Answers|Scene)$/ }).getByRole('button'), page.locator('main [role=button]:is(.sentence, .vrow, .word)')])
+    for (let k = 0; k < (await opts.count()) && !(await next.isVisible()); k++) if (await opts.nth(k).isEnabled()) await opts.nth(k).click();
+  await next.click();
+}
+
+test('flight gear: points in a session, a celebration, the kit, and the activity the grown-ups see', async ({ page }) => {
+  await onboard(page);
+  // Three points already, from scouting: one right first time (2) and one miss (1).
+  await page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const tx = db.transaction('events', 'readwrite');
+    const base = { type: 'answer', session: 'placement', skill: 'N1', phase: 'placement', hint: 0, tries: 1, ms: 1000, format: 'tap' };
+    tx.objectStore('events').put({ ...base, id: 'seed-1', ts: Date.now() - 9000, item: 'pl-r1', correct: true });
+    tx.objectStore('events').put({ ...base, id: 'seed-2', ts: Date.now() - 8000, item: 'pl-r2', correct: false });
+    await new Promise((r) => { tx.oncomplete = r; });
+    db.close();
+  });
+  await page.reload();
+  await expect(page.getByRole('button', { name: /Flight kit · 0 of 12/ })).toBeVisible();
+
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.getByRole('button', { name: /Harbor Town/ }).click();
+  await expect(page.getByRole('progressbar', { name: 'Flight kit: 1 more point to the flight cap' })).toBeVisible();
+  await answer(page); // any answer earns a point, so the cap arrives
+  await expect(page.getByRole('dialog', { name: 'New flight gear: Flight cap' })).toBeVisible();
+  await axe(page, 'gear celebration');
+  await page.getByRole('button', { name: /Keep going/ }).click();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Stop' }).click();
+  await page.getByRole('dialog').getByRole('button', { name: 'Stop' }).click();
+  await page.getByRole('button', { name: /Flight kit · 1 of 12/ }).click();
+  await expect(page.getByText('Every answer is a point.', { exact: false })).toBeVisible();
+  await axe(page, 'flight kit');
+  await page.getByRole('dialog').getByRole('button', { name: 'Done' }).click();
+
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Activity' }).click();
+  await expect(page.getByRole('heading', { name: 'What his sessions tell us' })).toBeVisible();
+  await expect(page.getByText(/Stopped at the (warm-up|demo)/)).toBeVisible();
+  await axe(page, 'activity');
+});
+
+test('a gentle nudge when he goes quiet, and a bonus for getting past his usual stopping point', async ({ page }) => {
+  await page.clock.install({ time: new Date('2026-10-14T16:00:00') }); // a fixed time, so the same warm-ups come up every run
+  await onboard(page);
+  // Two earlier sessions that both ended in the warm-up.
+  await page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const tx = db.transaction('events', 'readwrite');
+    const put = (e: object) => tx.objectStore('events').put(e);
+    for (const [k, t] of [[1, Date.now() - 7_200_000], [2, Date.now() - 3_600_000]] as const) {
+      put({ id: `s${k}a`, ts: t, type: 'session', session: `old${k}`, action: 'start', strand: 'functional', skill: 'F1' });
+      put({ id: `s${k}b`, ts: t + 1, type: 'activity', session: `old${k}`, kind: 'step', step: 'warmup' });
+      put({ id: `s${k}c`, ts: t + 60_000, type: 'session', session: `old${k}`, action: 'stop' });
+    }
+    await new Promise((r) => { tx.oncomplete = r; });
+    db.close();
+  });
+  await page.reload();
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.getByRole('button', { name: /Harbor Town/ }).click();
+  await expect(page.getByText(/Warm up · 1 of/)).toBeVisible();
+
+  await page.clock.fastForward(46_000);
+  await expect(page.getByText('Still with me?', { exact: false })).toBeVisible();
+  await axe(page, 'idle nudge');
+
+  for (let i = 0; i < 4 && (await page.getByText(/Warm up · \d of/).isVisible()); i++) await answer(page);
+  await expect(page.getByText('You kept going past Warm up. +3 flight points!')).toBeVisible();
+});

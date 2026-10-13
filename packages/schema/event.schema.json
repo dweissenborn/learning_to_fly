@@ -21,6 +21,9 @@
     },
     {
       "$ref": "#/definitions/RealWorldEvent"
+    },
+    {
+      "$ref": "#/definitions/ActivityEvent"
     }
   ],
   "definitions": {
@@ -317,6 +320,78 @@
         },
         "note": {
           "type": "string"
+        }
+      }
+    },
+    "ActivityEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "ts",
+        "type",
+        "session",
+        "kind"
+      ],
+      "description": "How a session went, moment to moment: steps entered, idle spells, leaving the app, demo skips, and the bonus for getting past his usual stopping point. Holds no text he wrote.",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "ts": {
+          "type": "number"
+        },
+        "type": {
+          "const": "activity"
+        },
+        "session": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "step",
+            "idle",
+            "away",
+            "back",
+            "skip-demo",
+            "boost"
+          ],
+          "description": "step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point."
+        },
+        "step": {
+          "type": "string",
+          "enum": [
+            "plan",
+            "choose",
+            "warmup",
+            "watch",
+            "together",
+            "yourturn",
+            "gatecheck",
+            "finish"
+          ]
+        },
+        "item": {
+          "type": "string"
+        },
+        "from": {
+          "type": "string",
+          "enum": [
+            "idle",
+            "away"
+          ],
+          "description": "For back: what he returned from."
+        },
+        "ms": {
+          "type": "number",
+          "minimum": 0,
+          "description": "For back: how long the idle spell or absence lasted. For idle: time since the last touch."
+        },
+        "points": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "For boost: flight points earned."
         }
       }
     }

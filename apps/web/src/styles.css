@@ -462,3 +462,40 @@ details > summary { cursor: pointer; font-weight: 700; padding: 0.4rem 0; }
 @media (max-width: 640px) { .island-label { font-size: 0.68rem; padding: 0.1rem 0.45rem; } }
 /* React Aria's modal wrapper takes the overlay's full width so dialogs can size themselves. */
 .overlay .react-aria-Modal { width: 100%; display: grid; justify-items: center; max-height: 100%; }
+
+/* ---------------------------------------------------------------- flight kit, celebrations, nudges, activity */
+.kit-meter { position: relative; display: flex; align-items: center; gap: 0.45rem; min-width: 9rem; }
+.kit-next { font-size: 1.6rem; line-height: 1; }
+.kit-bar { flex: 1; height: 0.8rem; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); overflow: hidden; }
+.kit-bar > span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--fun), oklch(80% 0.15 90)); transition: width 700ms cubic-bezier(.2,.9,.3,1.2); }
+.kit-gain { position: absolute; right: 0; top: -0.4rem; font-weight: 800; color: var(--good-deep); animation: gain 1.4s ease-out both; pointer-events: none; }
+@keyframes gain { from { opacity: 0; transform: translateY(6px) scale(0.8); } 20% { opacity: 1; transform: translateY(-4px) scale(1.15); } to { opacity: 0; transform: translateY(-22px); } }
+.home .kit { justify-content: flex-start; }
+
+.dialog.celebrate { position: relative; overflow: hidden; text-align: center; max-width: 480px; }
+.celebrate-title { margin: 0; font-size: 1.8rem; }
+.celebrate-guide { display: grid; justify-items: center; }
+.celebrate-piece { display: block; font-size: 2.6rem; letter-spacing: 0.35rem; animation: drop 900ms cubic-bezier(.3,1.6,.5,1) both; }
+@keyframes drop { from { opacity: 0; transform: translateY(-60px) rotate(-30deg) scale(0.5); } }
+.celebrate-name { margin: 0; font-size: 1.4rem; font-weight: 800; }
+.confetti { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.confetti span { position: absolute; top: -12px; width: 9px; height: 14px; border-radius: 2px; animation: fall 2.4s ease-in both; }
+@keyframes fall { to { top: 105%; transform: rotate(540deg) translateX(30px); opacity: 0.8; } }
+:root[data-motion='reduced'] .confetti, :root[data-motion='off'] .confetti { display: none; }
+:root[data-motion='reduced'] .celebrate-piece { animation: none; }
+
+.kit-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: 0.6rem; }
+.kit-item { display: grid; justify-items: center; text-align: center; gap: 0.15rem; padding: 0.7rem 0.5rem; border-radius: var(--radius); border: 2px solid var(--line); background: var(--surface); font-weight: 700; }
+.kit-item.have { border-color: var(--good); background: var(--good-soft); color: var(--good-deep); }
+.kit-item.next { border-style: dashed; border-color: var(--fun); }
+.kit-emoji { font-size: 2rem; }
+
+.nudge .bubble { border: 2px dashed var(--accent); }
+.feedback.boost { font-size: 1.15rem; }
+
+.insights { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+.insight { display: grid; gap: 0.25rem; padding: 0.8rem 1rem; border-radius: var(--radius); border-left: 6px solid var(--line); background: var(--surface-2); }
+.insight.act { border-left-color: var(--fun); }
+.insight.watch { border-left-color: var(--accent); }
+.insight.good { border-left-color: var(--good); }
+.insight .try { color: var(--muted); }

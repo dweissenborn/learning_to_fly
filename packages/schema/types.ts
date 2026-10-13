@@ -353,7 +353,8 @@ export interface Model {
 /**
  * One entry in the append-only progress log. Every view of progress is derived from these.
  */
-export type LogEvent = AnswerEvent | SessionEvent | PlacementEvent | WorldEvent | RecountEvent | RealWorldEvent;
+export type LogEvent =
+  AnswerEvent | SessionEvent | PlacementEvent | WorldEvent | RecountEvent | RealWorldEvent | ActivityEvent;
 export type Phase = 'warmup' | 'together' | 'yourturn' | 'placement' | 'gatecheck';
 export type Strand = 'functional' | 'narrative' | 'philosophical';
 
@@ -453,4 +454,31 @@ export interface RealWorldEvent {
   type: 'realworld';
   skill: string;
   note?: string;
+}
+/**
+ * How a session went, moment to moment: steps entered, idle spells, leaving the app, demo skips, and the bonus for getting past his usual stopping point. Holds no text he wrote.
+ */
+export interface ActivityEvent {
+  id: string;
+  ts: number;
+  type: 'activity';
+  session: string;
+  /**
+   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point.
+   */
+  kind: 'step' | 'idle' | 'away' | 'back' | 'skip-demo' | 'boost';
+  step?: 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish';
+  item?: string;
+  /**
+   * For back: what he returned from.
+   */
+  from?: 'idle' | 'away';
+  /**
+   * For back: how long the idle spell or absence lasted. For idle: time since the last touch.
+   */
+  ms?: number;
+  /**
+   * For boost: flight points earned.
+   */
+  points?: number;
 }

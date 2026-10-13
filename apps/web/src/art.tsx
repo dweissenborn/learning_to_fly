@@ -1,5 +1,5 @@
 // All art is drawn in code: the guides, the island, and every piece the learner adds to it.
-import type { ReactNode } from 'react';
+import { createContext, useContext, useId, type ReactNode } from 'react';
 import type { GuideId } from './db';
 
 // ---------------------------------------------------------------- guides
@@ -22,7 +22,61 @@ function eyes(mood: Mood, l: [number, number], r: [number, number], color: strin
   </g>;
 }
 
-export function Guide({ id, mood = 'idle', size = 84, label }: { id: GuideId; mood?: Mood; size?: number; label?: boolean }) {
+/** The flight gear his guide has earned, by GEAR id. The app shell provides it, so every guide on screen wears it. */
+export const GearContext = createContext<readonly string[]>([]);
+
+/** Where gear sits on each guide, in the guides' 100 x 100 drawing. */
+const FIT: Record<GuideId, { top: number; headW: number; ears: [number, number]; earY: number; neckY: number; neckW: number; bodyY: number; bodyW: number; bottom: number; vest?: string }> = {
+  bolt: { top: 18, headW: 58, ears: [18, 82], earY: 42, neckY: 69, neckW: 40, bodyY: 70, bodyW: 38, bottom: 94 },
+  rook: { top: 17, headW: 44, ears: [30, 70], earY: 38, neckY: 57, neckW: 40, bodyY: 62, bodyW: 46, bottom: 90, vest: 'M26 68 Q26 92 50 92 Q74 92 74 68 Q74 61 66 61 L34 61 Q26 61 26 68 Z' },
+  moss: { top: 23, headW: 60, ears: [21, 79], earY: 46, neckY: 71, neckW: 58, bodyY: 74, bodyW: 58, bottom: 94 },
+};
+
+function gearArt(id: GuideId, has: (g: string) => boolean) {
+  const f = FIT[id], cx = 50, w = f.headW;
+  return <g className="gear">
+    {has('jacket') && <g>
+      {f.vest ? <path d={f.vest} fill="#8b5a2b" stroke="#5e3b1b" strokeWidth="2" />
+        : <rect x={cx - f.bodyW / 2} y={f.bodyY} width={f.bodyW} height={f.bottom - f.bodyY} rx="9" fill="#8b5a2b" stroke="#5e3b1b" strokeWidth="2" />}
+      <path d={`M${cx - 9} ${f.bodyY} L${cx} ${f.bodyY + 10} L${cx + 9} ${f.bodyY} Z`} fill="#f2e6cf" />
+      <line x1={cx} y1={f.bodyY + 10} x2={cx} y2={f.bottom - 3} stroke="#d9b36c" strokeWidth="1.6" />
+    </g>}
+    {has('backpack') && <g>
+      <rect x={cx - f.bodyW / 2 - 8} y={f.bodyY + 2} width="10" height="19" rx="3.5" fill="#d0743a" stroke="#8f4a1e" strokeWidth="1.6" />
+      <g stroke="#5a3a20" strokeWidth="3.4" strokeLinecap="round"><line x1={cx - f.bodyW * 0.28} y1={f.bodyY + 1} x2={cx - f.bodyW * 0.28} y2={f.bottom - 3} /><line x1={cx + f.bodyW * 0.28} y1={f.bodyY + 1} x2={cx + f.bodyW * 0.28} y2={f.bottom - 3} /></g>
+    </g>}
+    {has('wings') && <g transform={`translate(${cx + f.bodyW * 0.14} ${f.bodyY + 9})`}>
+      <path d="M0 0 Q-6 -4 -12 -1 Q-7 1 -1 2 Z M0 0 Q6 -4 12 -1 Q7 1 1 2 Z" fill="#f5c542" stroke="#a67c00" strokeWidth="0.8" />
+      <circle r="2.4" fill="#f5c542" stroke="#a67c00" strokeWidth="0.8" />
+    </g>}
+    {has('scarf') && <g>
+      <rect x={cx - f.neckW / 2} y={f.neckY - 3.5} width={f.neckW} height="7" rx="3.5" fill="#d64545" stroke="#9e2c2c" strokeWidth="1.2" />
+      <path d={`M${cx + f.neckW / 2 - 11} ${f.neckY + 2} q 5 9 -1 17 l 7 -1 q 4 -9 0 -16 z`} fill="#c43c3c" stroke="#9e2c2c" strokeWidth="1.2" />
+    </g>}
+    {has('cap') && <g>
+      <path d={`M${cx - w / 2} ${f.top + 7} Q${cx - w / 2} ${f.top - 13} ${cx} ${f.top - 13} Q${cx + w / 2} ${f.top - 13} ${cx + w / 2} ${f.top + 7} Z`} fill="#7a4a2a" stroke="#4e2f19" strokeWidth="2" />
+      <path d={`M${cx} ${f.top - 13} L${cx} ${f.top + 5}`} stroke="#4e2f19" strokeWidth="1.4" />
+    </g>}
+    {has('goggles') && <g>
+      <line x1={cx - w / 2} y1={f.top} x2={cx + w / 2} y2={f.top} stroke="#3a3a3a" strokeWidth="2.4" />
+      <circle cx={cx - 9} cy={f.top - 1} r="6.2" fill="#a8e0ff" stroke="#333" strokeWidth="2.2" />
+      <circle cx={cx + 9} cy={f.top - 1} r="6.2" fill="#a8e0ff" stroke="#333" strokeWidth="2.2" />
+      <circle cx={cx - 11} cy={f.top - 3} r="1.6" fill="#fff" /><circle cx={cx + 7} cy={f.top - 3} r="1.6" fill="#fff" />
+    </g>}
+    {has('headset') && <g>
+      <path d={`M${f.ears[0]} ${f.earY - 6} Q${cx} ${f.top - 30} ${f.ears[1]} ${f.earY - 6}`} stroke="#2b2b2b" strokeWidth="3.2" fill="none" />
+      <rect x={f.ears[0] - 5} y={f.earY - 9} width="10" height="15" rx="4" fill="#2b2b2b" /><rect x={f.ears[1] - 5} y={f.earY - 9} width="10" height="15" rx="4" fill="#2b2b2b" />
+      <path d={`M${f.ears[0]} ${f.earY + 5} Q${f.ears[0] + 2} ${f.earY + 16} ${f.ears[0] + 14} ${f.earY + 15}`} stroke="#2b2b2b" strokeWidth="2" fill="none" />
+      <circle cx={f.ears[0] + 15} cy={f.earY + 15} r="2.4" fill="#2b2b2b" />
+    </g>}
+  </g>;
+}
+
+export function Guide({ id, mood = 'idle', size = 84, label, gear }: { id: GuideId; mood?: Mood; size?: number; label?: boolean; gear?: readonly string[] }) {
+  const earned = useContext(GearContext);
+  const worn = gear ?? earned;
+  const has = (g: string) => worn.includes(g);
+  const glow = useId();
   const art: Record<GuideId, ReactNode> = {
     bolt: <>
       <line x1="50" y1="19" x2="50" y2="8" stroke="#4d6f7d" strokeWidth="3" />
@@ -58,7 +112,11 @@ export function Guide({ id, mood = 'idle', size = 84, label }: { id: GuideId; mo
     </>,
   };
   return <span className="guide" title={label ? GUIDES[id].name : undefined}>
-    <svg width={size} height={size} viewBox="0 0 100 100" role="img" aria-label={`${GUIDES[id].name}, your guide`} className={mood === 'happy' ? 'bob moves' : undefined}>{art[id]}</svg>
+    <svg width={size} height={size} viewBox="0 0 100 100" role="img" aria-label={`${GUIDES[id].name}, your guide${worn.length ? ', in flight gear' : ''}`} className={mood === 'happy' ? 'bob moves' : undefined} overflow="visible">
+      {has('ready') && <g className="ready-glow" aria-hidden><circle cx="50" cy="52" r="48" fill={`url(#${glow})`} /><defs><radialGradient id={glow}><stop offset="55%" stopColor="#ffd166" stopOpacity="0.45" /><stop offset="100%" stopColor="#ffd166" stopOpacity="0" /></radialGradient></defs></g>}
+      {art[id]}
+      {worn.length > 0 && gearArt(id, has)}
+    </svg>
   </span>;
 }
 

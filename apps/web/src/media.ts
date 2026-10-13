@@ -64,4 +64,6 @@ export const sfx = {
   place: () => { tone(392, 0, 0.25, 0.06, 'triangle'); tone(523, 0.08, 0.4, 0.05); },
   finish: () => [523, 659, 784, 1047].forEach((f, i) => tone(f, i * 0.12, 0.7, 0.045)),
   soft: () => tone(440, 0, 0.18, 0.025, 'triangle'),
+  gear: () => [392, 523, 659, 784, 1047, 1319].forEach((f, i) => tone(f, i * 0.08, 0.5, 0.04, i % 2 ? 'triangle' : 'sine')),
+  boost: () => { tone(523, 0, 0.3, 0.05, 'triangle'); tone(784, 0.1, 0.45, 0.05, 'triangle'); },
 };

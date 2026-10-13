@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId, Strand } from '@wayfinder/schema';
-import { ALL_SKILLS, dayKey, errorPatterns, focusSkill, gate, hintNeed, interestEffect, journeyPosition, levelFor, skillsOf, statusOf, strandOf, tagAccuracy, trend, type Progress } from '@wayfinder/engine';
+import { ALL_SKILLS, dayKey, errorPatterns, flightPoints, focusSkill, gate, GEAR, gearState, hintNeed, insights, interestEffect, journeyPosition, levelFor, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName } from '@wayfinder/engine';
 import { finishedCount, JOURNEY, journeyNow } from './journey';
 import { deleteNote, exportAll, importAll, log, saveSettings, updateNote, useNotes, wipeAll, type GuideId, type Settings } from './db';
 import { deleteEverywhere, useLink } from './cloud';
@@ -15,7 +15,7 @@ import { Guide, GUIDES } from './art';
 import { Btn, Seg, Toggle } from './ui';
 import { canSpeak, speak, voices } from './media';
 
-type Tab = 'overview' | 'skills' | 'today' | 'content' | 'settings' | 'data';
+type Tab = 'overview' | 'skills' | 'activity' | 'today' | 'content' | 'settings' | 'data';
 const STATUS_CLASS = { 'not started': '', learning: 'learning', mastered: 'mastered', 'review due': 'due' } as const;
 const fmtDate = (ts?: number) => (ts ? new Date(ts).toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) : '–');
 
@@ -38,11 +38,12 @@ export function Adult({ settings, events, progress, onExit, onRescout }: { setti
     <header className="topbar no-print"><h1 style={{ margin: 0 }}>Grown-ups</h1><span className="spacer" /><Btn onPress={onExit}>Back to the island</Btn></header>
     <main className="stack">
       <nav className="tabs" aria-label="Sections">
-        {([['overview', 'Overview'], ['skills', 'Skills'], ['today', 'Today recounts'], ['content', 'Content library'], ['settings', 'Settings'], ['data', 'Data and report']] as [Tab, string][]).map(([t, l]) =>
+        {([['overview', 'Overview'], ['skills', 'Skills'], ['activity', 'Activity'], ['today', 'Today recounts'], ['content', 'Content library'], ['settings', 'Settings'], ['data', 'Data and report']] as [Tab, string][]).map(([t, l]) =>
           <Btn key={t} className="small" aria-current={tab === t ? 'page' : undefined} onPress={() => setTab(t)}>{l}</Btn>)}
       </nav>
       {tab === 'overview' && <Overview settings={settings} events={events} progress={progress} />}
       {tab === 'skills' && <Skills progress={progress} events={events} />}
+      {tab === 'activity' && <Activity events={events} />}
       {tab === 'today' && <TodayAdmin settings={settings} />}
       {tab === 'content' && <Library settings={settings} />}
       {tab === 'settings' && <SettingsTab settings={settings} progress={progress} onRescout={onRescout} />}
@@ -129,6 +130,76 @@ function SchoolGoals({ progress }: { progress: Progress }) {
     <p className="tagline">What his school is working on, measured on answers given without help.</p>
     <div className="kv">{GOALS.map(([tag, label]) => <span key={tag} style={{ display: 'contents' }}><span>{label}</span><b>{goalText(tagAccuracy(progress, pool, tag))}</b></span>)}</div>
   </section>;
+}
+
+/** How his sessions go: where they end, where he pauses, how long things take, and what to try. Timing only. */
+const TONE: Record<Insight['tone'], [string, string]> = { act: ['⚑', 'Needs attention'], watch: ['👀', 'Worth watching'], good: ['✅', 'Going well'] };
+const span = (ms: number) => (ms < 60_000 ? `${Math.round(ms / 1000)} s` : `${Math.round(ms / 60_000)} min`);
+const medianOf = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? s[Math.floor((s.length - 1) / 2)] : 0; };
+const skillName = (id: string) => SKILL[id as SkillId]?.name ?? id;
+
+function Insights({ events }: { events: LogEvent[] }) {
+  const tips = useMemo(() => insights(events, skillName), [events]);
+  return <ul className="insights">{tips.map((t) => <li key={t.title} className={`insight ${t.tone}`}>
+    <b><span aria-hidden>{TONE[t.tone][0]} </span><span className="sr-only">{TONE[t.tone][1]}: </span>{t.title}</b>
+    <span>{t.detail}</span>
+    {t.tryThis && <span className="try"><b>Try this:</b> {t.tryThis}</span>}
+  </li>)}</ul>;
+}
+
+function Activity({ events }: { events: LogEvent[] }) {
+  const sessions = useMemo(() => sessionActivity(events), [events]);
+  const recent = sessions.slice(-10).reverse();
+  const perStep = new Map<StepName, number[]>();
+  for (const s of sessions) for (const st of s.steps) if (st.step !== 'finish') perStep.set(st.step, [...(perStep.get(st.step) ?? []), st.ms]);
+  const answers = events.filter((e) => e.type === 'answer' && e.phase !== 'placement' && e.ms > 0);
+  const bySkill = ALL_SKILLS.map((s) => ({ s, list: answers.filter((a) => a.type === 'answer' && a.skill === s) })).filter((x) => x.list.length);
+  const kit = gearState(flightPoints(events));
+  const ended = (s: (typeof sessions)[number]) => (s.outcome === 'finished' ? 'Finished' : `${s.outcome === 'stopped' ? 'Stopped' : 'Left open'}${s.lastStep ? ` at ${STEP_LABEL[s.lastStep]}` : ''}`);
+  return <div className="stack">
+    <section className="card stack">
+      <h2>What his sessions tell us</h2>
+      <p className="tagline">Read from timing alone: where sessions end, where he pauses for 45 seconds or more, when the app is put away, and how long questions take. Nothing he types is used.</p>
+      <Insights events={events} />
+    </section>
+    <section className="card stack">
+      <h2>Recent sessions</h2>
+      {!recent.length ? <p className="muted">No sessions yet.</p> : <div className="table-wrap"><table className="skills-table">
+        <thead><tr><th>When</th><th>Learning</th><th>Length</th><th>How it ended</th><th>Pauses</th><th>Put away</th><th>Answers</th></tr></thead>
+        <tbody>{recent.map((s) => <tr key={s.id}>
+          <td>{new Date(s.start).toLocaleString(undefined, { weekday: 'short', hour: 'numeric', minute: '2-digit' })}</td>
+          <td>{s.skill ? skillName(s.skill) : 'Lantern Peaks check'}</td>
+          <td>{span(s.end - s.start)}</td>
+          <td>{ended(s)}{s.skippedDemo ? ' · skipped the demo' : ''}</td>
+          <td>{s.idle ? `${s.idle} (${span(s.idleMs)})` : '–'}</td>
+          <td>{s.away ? `${s.away} (${span(s.awayMs)})` : '–'}</td>
+          <td>{s.answers ? `${s.firstTry} of ${s.answers} first time` : '–'}</td>
+        </tr>)}</tbody>
+      </table></div>}
+    </section>
+    <div className="grid2">
+      <section className="card stack">
+        <h2>Typical time in each step</h2>
+        {!perStep.size ? <p className="muted">Shows after his next session.</p> : <div className="kv">{(['plan', 'choose', 'warmup', 'watch', 'together', 'yourturn', 'gatecheck'] as StepName[]).filter((k) => perStep.has(k)).map((k) =>
+          <span key={k} style={{ display: 'contents' }}><span>{STEP_LABEL[k]}</span><b>{span(medianOf(perStep.get(k)!))}</b></span>)}</div>}
+      </section>
+      <section className="card stack">
+        <h2>Flight kit</h2>
+        <p style={{ margin: 0 }}>{kit.owned.length} of {GEAR.length} pieces, {kit.points} points. {kit.next ? `Next: the ${kit.next.name.toLowerCase()} in ${kit.toNext} points.` : 'Ready for take-off.'}</p>
+        <p className="tagline">His guide earns flight gear for the trip to Australia. Points reward effort, never speed: 1 per answer, 1 more for right first time, 3 for finishing, and 3 for getting past the step where his sessions usually end.</p>
+      </section>
+    </div>
+    <section className="card stack">
+      <h2>Time per question</h2>
+      {!bySkill.length ? <p className="muted">Shows after his first questions in a session.</p> : <div className="table-wrap"><table className="skills-table">
+        <thead><tr><th>Skill</th><th>Answers</th><th>Typical time</th><th>Right first time</th></tr></thead>
+        <tbody>{bySkill.map(({ s, list }) => <tr key={s}>
+          <td>{s} {SKILL[s].name}</td><td>{list.length}</td><td>{span(medianOf(list.map((a) => (a.type === 'answer' ? a.ms : 0))))}</td>
+          <td>{Math.round((100 * list.filter((a) => a.type === 'answer' && a.correct && a.tries <= 1).length) / list.length)}%</td>
+        </tr>)}</tbody>
+      </table></div>}
+    </section>
+  </div>;
 }
 
 function Spark({ points }: { points: { acc: number }[] }) {
@@ -366,6 +437,10 @@ function Report({ settings, events, progress, onBack }: { settings: Settings; ev
     <h1>Reading progress: {settings.name}</h1>
     <p>Report made {new Date().toLocaleDateString()} from {events.filter((e) => e.type === 'answer').length} recorded answers across {progress.sessions.length} sessions. Mastery rule: 80% or better on independent items across two sessions on different days, including one item in a new format or setting; reviews at about 3, 7 and 21 days.</p>
     {placement?.type === 'placement' && <p><b>Baseline ({fmtDate(placement.ts)}):</b> word reading {Math.round(placement.word * 100)}%, reading comprehension {Math.round(placement.reading * 100)}%, listening comprehension {Math.round(placement.listening * 100)}%. Started at functional step {placement.functional} and narrative step {placement.narrative}.</p>}
+    <section className="card" style={{ breakInside: 'avoid' }}>
+      <h3>How sessions go</h3>
+      <Insights events={events} />
+    </section>
     <section className="card" style={{ breakInside: 'avoid' }}>
       <h3>School goals</h3>
       <div className="kv">{GOALS.map(([tag, label]) => <span key={tag} style={{ display: 'contents' }}><span>{label}</span><b>{goalText(tagAccuracy(progress, pool, tag))}</b></span>)}</div>

@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button, Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId } from '@wayfinder/schema';
-import { ALL_SKILLS, choices, gate, isInterest, levelFor, mulberry32, planGateCheck, planSession, strandOf, type Choice, type Progress, type SessionPlan } from '@wayfinder/engine';
+import { ALL_SKILLS, choices, flightPoints, gate, isInterest, levelFor, mulberry32, planGateCheck, planSession, strandOf, usualStop, type Choice, type Progress, type SessionPlan, type StepName } from '@wayfinder/engine';
 import { addNote, log, type Settings } from './db';
 import { pool, passageText, SKILL, STRAND } from './content';
 import { ItemView, NextSlot, type HintMode, type Result } from './ItemView';
@@ -10,6 +10,8 @@ import { Guide, GUIDES, Island, PiecePreview, PIECES, pieceById, freeTiles, type
 import { Btn, Lanterns, SpeakBtn } from './ui';
 import { BeatCard, finishedCount, journeyNow, KoalaCard, PostcardCard, reachedStops } from './journey';
 import { sfx, speak, stopSpeaking } from './media';
+import { useActivity } from './activity';
+import { GearCelebration, KitMeter } from './gear';
 
 type Step = 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish';
 const STEP_META: Record<Step, { label: string; icon: string; say: string }> = {
@@ -46,6 +48,11 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
   const options = useMemo(() => choices(progress, g, Date.now()), []); // eslint-disable-line react-hooks/exhaustive-deps
   const guide = settings.guide;
   const steps = mode === 'lesson' ? LESSON : CHECK;
+  const points = flightPoints(events);
+  // Where his recent sessions usually end. Getting past it earns a bonus, said out loud.
+  const stopAt = useMemo(() => usualStop(events), []); // eslint-disable-line react-hooks/exhaustive-deps
+  const boosted = useRef(false);
+  const [boostMsg, setBoostMsg] = useState('');
 
   const lists: Partial<Record<Step, Item[]>> = plan ? { warmup: plan.warmup, together: plan.together, yourturn: [...plan.yourturn, ...plan.express] } : { gatecheck: checkItems };
   const current = lists[step]?.[idx];
@@ -72,6 +79,13 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
     if (s === 'watch' && !p?.model) s = 'together';
     if (s === 'together' && !p?.together.length) s = 'yourturn';
     if (s === 'yourturn' && p && !p.yourturn.length && !p.express.length) s = 'finish';
+    if (stopAt && !boosted.current && LESSON.indexOf(s) > LESSON.indexOf(stopAt) && started.current) {
+      boosted.current = true;
+      void log({ type: 'activity', session: sid, kind: 'boost', step: stopAt, points: 3 });
+      sfx.boost();
+      setBoostMsg(`You kept going past ${STEP_META[stopAt].label}. +3 flight points!`);
+      setTimeout(() => setBoostMsg(''), 7000);
+    }
     if (settings.rewardPace === 'step' && !['plan', 'choose', 'warmup'].includes(s)) sfx.lantern();
     setStep(s);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -97,6 +111,8 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
     onExit();
   };
 
+  const idle = useActivity(sid, step as StepName, current?.id, started.current);
+
   // Read-to-me reads whatever is on screen.
   const readLines = current ? [...passageText(pool.passages.get(current.passage)!), current.prompt]
     : step === 'watch' && plan?.model ? [plan.model.steps[watchStep].say] : [STEP_META[step].say];
@@ -121,9 +137,22 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
         {settings.rewardPace === 'item' && phaseItems > 0 && <Lanterns total={phaseItems} lit={idx} />}
         {settings.rewardPace === 'step' && <Lanterns total={steps.length - 2} lit={Math.max(0, steps.indexOf(step) - 2)} />}
       </nav>
+      <KitMeter points={points} />
     </header>
 
     <main id="main">
+      {boostMsg && <div className="feedback good appear boost" role="status"><span aria-hidden>🚀</span><span>{boostMsg}</span></div>}
+      {idle && (current || step === 'watch') && <div className="guide-row nudge appear" role="status">
+        <Guide id={guide} mood="think" size={48} />
+        <div className="bubble">{step === 'watch'
+          ? <>Already know this one? Tap <b>Got it, skip</b>.</>
+          : <>Still with me? I can read it to you, or give you a hint.
+            <span className="row" style={{ marginTop: '0.4rem' }}>
+              <Btn className="small" onPress={() => speak(readLines, 'nudge')}><span aria-hidden>🔊</span> Read it to me</Btn>
+              {helpOn && <Btn className="small" onPress={() => setHelpTick((t) => t + 1)}><span aria-hidden>💡</span> A hint</Btn>}
+            </span></>}
+        </div>
+      </div>}
       {step === 'plan' && <PlanStep guide={guide} steps={steps} onGo={() => go('choose')} />}
       {step === 'choose' && <ChooseStep options={options} onChoose={choose} guide={guide} />}
       {step === 'watch' && plan?.model && <div className="stack">
@@ -136,7 +165,7 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
         <ItemView item={plan.model.item} mode="demo" guide={guide} pictures={settings.pictures} demo={{ show: plan.model.steps[watchStep].show, reveal: plan.model.steps.slice(0, watchStep + 1).some((s) => s.reveal) }} />
         <NextSlot>
           {/* He does not need a thing shown twice: one press skips the rest of the demo. */}
-          <Btn className="quiet" onPress={() => nextPhase('watch')}>Got it, skip</Btn>
+          <Btn className="quiet" onPress={() => { void log({ type: 'activity', session: sid, kind: 'skip-demo', step: 'watch' }); nextPhase('watch'); }}>Got it, skip</Btn>
           {watchStep > 0 && <Btn className="quiet" onPress={() => setWatchStep(watchStep - 1)}>← Back</Btn>}
           {watchStep + 1 < plan.model.steps.length
             ? <Btn className="primary big" autoFocus onPress={() => { setWatchStep(watchStep + 1); if (settings.readAloud) speak([plan.model!.steps[watchStep + 1].say], 'watch'); }}>Next →</Btn>
@@ -166,6 +195,8 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
       <span className="spacer" />
       <span id="bar-next" className="row" style={{ gap: '0.6rem' }} />
     </footer>}
+
+    <GearCelebration points={points} guide={guide} seen={settings.kitSeen ?? 0} />
 
     <ModalOverlay className="overlay" isOpen={askStop} onOpenChange={setAskStop} isDismissable>
       <Modal><Dialog className="dialog" style={{ maxWidth: 480 }}>

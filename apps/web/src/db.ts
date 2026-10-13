@@ -44,6 +44,8 @@ export interface Settings {
   fastTrack: boolean;
   /** The calm-down words his school uses, shown with the journey's setbacks so home and school sound the same. */
   resetWords: string;
+  /** How many flight-kit pieces he has already been shown, so each one is celebrated once, on any device. */
+  kitSeen?: number;
   /** Results of the first half of placement, kept so the scouting trip can be finished later. */
   scout?: { word: number; reading: number; listening: number };
 }

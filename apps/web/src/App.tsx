@@ -3,7 +3,7 @@ import { Component, useEffect, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { SkillId, Strand } from '@wayfinder/schema';
-import { dayKey, focusSkill, gate, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
+import { dayKey, flightPoints, focusSkill, gate, GEAR, gearState, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
 import { applyRetention, useEvents, useProgress, useSettings, type Settings } from './db';
 import { SKILL, STRAND } from './content';
 import { BrandMark, Guide, Island, pieceById } from './art';
@@ -16,6 +16,7 @@ import { finishedCount, journeyNow, JourneyMap, LegDots } from './journey';
 import { setSound, setVoice } from './media';
 import { autoSave, isFamily, useCloudSync } from './cloud';
 import { WhoIsLearning } from './CloudScreens';
+import { GearCelebration, KitPanel } from './gear';
 
 type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'map';
 
@@ -52,7 +53,7 @@ export function App() {
   const events = useEvents();
   const progress = useProgress(events, settings?.fastTrack ?? true);
   const [screen, setScreen] = useState<Screen>('home');
-  const [dialog, setDialog] = useState<null | 'comfort' | 'shelf'>(null);
+  const [dialog, setDialog] = useState<null | 'comfort' | 'shelf' | 'kit'>(null);
   const cloud = useCloudSync();
   const [newHere, setNewHere] = useState(false);
   useApplySettings(settings);
@@ -122,6 +123,7 @@ export function App() {
           {jn.next && <LegDots now={jn} />}
           <Btn className="big nar" onPress={() => go('today')}><span className="ico" aria-hidden>📅</span>Tell about today</Btn>
           <Btn className="big" onPress={() => setDialog('shelf')}><span className="ico" aria-hidden>⭐</span>Things I can do · {shelf.length}</Btn>
+          <Btn className="big kit" onPress={() => setDialog('kit')}><span className="ico" aria-hidden>🎒</span>Flight kit · {gearState(flightPoints(events)).owned.length} of {GEAR.length}</Btn>
         </div>
         <section className="paths" aria-label="Your three paths">
           {strands.map((s) => {
@@ -143,9 +145,11 @@ export function App() {
     </main>
     <footer className="bottombar static"><span className="spacer" /><Btn className="quiet small" onPress={() => go('adult')}>Grown-ups</Btn></footer>
 
+    <GearCelebration points={flightPoints(events)} guide={settings.guide} seen={settings.kitSeen ?? 0} />
     <ModalOverlay className="overlay" isOpen={!!dialog} onOpenChange={(o) => !o && setDialog(null)} isDismissable>
       <Modal><Dialog className="dialog">
         {dialog === 'comfort' && <><Heading slot="title">How do you like it?</Heading><ComfortPanel settings={settings} /></>}
+        {dialog === 'kit' && <><Heading slot="title">Flight kit</Heading><KitPanel points={flightPoints(events)} guide={settings.guide} /></>}
         {dialog === 'shelf' && <><Heading slot="title">Things I can do</Heading>
           {!shelf.length && <p>Your shelf fills up as you learn. Each skill you master adds a line here.</p>}
           <ul className="shelf" style={{ padding: 0 }}>{shelf.map((id: SkillId) => <li key={id} className={`strand-${strandOf(id)}`}><span aria-hidden>{STRAND[strandOf(id)].icon}</span>{SKILL[id].ican}</li>)}</ul></>}

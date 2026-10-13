@@ -1,0 +1,190 @@
+// How sessions go, and the flight kit. Pure functions over the event log, like the rest of the engine.
+import type { AnswerEvent, LogEvent } from '@wayfinder/schema';
+
+/** No touch or key for this long during a task counts as an idle spell. */
+export const IDLE_MS = 45_000;
+
+// ---------------------------------------------------------------- flight kit
+/**
+ * His guide gears up for the flight to Australia. Points reward effort, never speed:
+ * 1 for every answer, 1 more when it is right first time, 3 for finishing a session,
+ * and a bonus for getting past the step where his sessions usually end.
+ */
+export interface GearPiece { id: string; name: string; emoji: string; at: number; worn: boolean }
+export const GEAR: readonly GearPiece[] = [
+  { id: 'cap', name: 'Flight cap', emoji: '🧢', at: 4, worn: true },
+  { id: 'scarf', name: 'Red scarf', emoji: '🧣', at: 12, worn: true },
+  { id: 'goggles', name: 'Goggles', emoji: '🥽', at: 25, worn: true },
+  { id: 'compass', name: 'Compass', emoji: '🧭', at: 45, worn: false },
+  { id: 'backpack', name: 'Backpack', emoji: '🎒', at: 70, worn: true },
+  { id: 'map', name: 'Map', emoji: '🗺️', at: 100, worn: false },
+  { id: 'jacket', name: 'Flight jacket', emoji: '🧥', at: 135, worn: true },
+  { id: 'flashlight', name: 'Flashlight', emoji: '🔦', at: 175, worn: false },
+  { id: 'headset', name: 'Radio headset', emoji: '🎧', at: 220, worn: true },
+  { id: 'logbook', name: 'Pilot logbook', emoji: '📓', at: 270, worn: false },
+  { id: 'wings', name: 'Pilot wings', emoji: '🎖️', at: 330, worn: true },
+  { id: 'ready', name: 'Ready for take-off', emoji: '✈️', at: 400, worn: true },
+];
+
+export function flightPoints(events: readonly LogEvent[]): number {
+  let pts = 0;
+  for (const e of events) {
+    if (e.type === 'answer') pts += 1 + (e.correct && e.tries <= 1 ? 1 : 0);
+    else if (e.type === 'session' && e.action === 'finish') pts += 3;
+    else if (e.type === 'activity' && e.kind === 'boost') pts += e.points ?? 0;
+  }
+  return pts;
+}
+
+export function gearState(points: number) {
+  const owned = GEAR.filter((g) => points >= g.at);
+  const next = GEAR.find((g) => points < g.at);
+  const from = owned.at(-1)?.at ?? 0;
+  return { points, owned, next, toNext: next ? next.at - points : 0, frac: next ? (points - from) / (next.at - from) : 1 };
+}
+
+// ---------------------------------------------------------------- sessions, moment to moment
+export type StepName = 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish';
+export interface SessionActivity {
+  id: string;
+  start: number;
+  end: number;
+  skill?: string;
+  outcome: 'finished' | 'stopped' | 'left';
+  /** The step he was on when the session ended (or the last one he reached). */
+  lastStep?: StepName;
+  steps: { step: StepName; ms: number }[];
+  idle: number;
+  idleMs: number;
+  away: number;
+  awayMs: number;
+  answers: number;
+  firstTry: number;
+  skippedDemo: boolean;
+}
+
+const PHASE_STEP: Record<string, StepName> = { warmup: 'warmup', together: 'together', yourturn: 'yourturn', gatecheck: 'gatecheck' };
+
+/** One summary per session, oldest first. Sessions from before activity logging infer their last step from answers. */
+export function sessionActivity(events: readonly LogEvent[]): SessionActivity[] {
+  const sorted = [...events].sort((a, b) => a.ts - b.ts);
+  const out = new Map<string, SessionActivity & { marks: { step: StepName; ts: number }[]; warm: number }>();
+  for (const e of sorted) {
+    if (e.type === 'session' && e.action === 'start') {
+      out.set(e.session, { id: e.session, start: e.ts, end: e.ts, skill: e.skill, outcome: 'left', steps: [], idle: 0, idleMs: 0, away: 0, awayMs: 0, answers: 0, firstTry: 0, skippedDemo: false, marks: [], warm: 0 });
+      continue;
+    }
+    if (!('session' in e)) continue;
+    const s = out.get(e.session);
+    if (!s) continue;
+    s.end = Math.max(s.end, e.ts);
+    if (e.type === 'session') {
+      s.outcome = e.action === 'finish' ? 'finished' : 'stopped';
+      if (e.action === 'finish') s.lastStep = 'finish';
+    } else if (e.type === 'answer') {
+      s.answers += 1;
+      if (e.correct && e.tries <= 1) s.firstTry += 1;
+      if (!s.marks.length && PHASE_STEP[e.phase] && s.lastStep !== 'finish') { s.lastStep = PHASE_STEP[e.phase]; if (e.phase === 'warmup') s.warm += 1; }
+    } else if (e.type === 'activity') {
+      if (e.kind === 'step' && e.step) { s.marks.push({ step: e.step, ts: e.ts }); if (s.lastStep !== 'finish' || e.step === 'finish') s.lastStep = e.step; }
+      else if (e.kind === 'idle') s.idle += 1;
+      else if (e.kind === 'away') s.away += 1;
+      else if (e.kind === 'back' && e.from === 'idle') s.idleMs += e.ms ?? 0;
+      else if (e.kind === 'back' && e.from === 'away') s.awayMs += e.ms ?? 0;
+      else if (e.kind === 'skip-demo') s.skippedDemo = true;
+    }
+  }
+  return [...out.values()].map(({ marks, warm, ...s }) => ({
+    ...s,
+    // Before step logging: two warm-ups answered and nothing after means he had reached the demo.
+    // ponytail: a plan with three due reviews would be misread; only sessions from before 2026-10-13 rely on this.
+    lastStep: !marks.length && s.lastStep === 'warmup' && warm >= 2 && s.outcome !== 'finished' ? 'watch' : s.lastStep,
+    steps: marks.map((m, i) => ({ step: m.step, ms: (marks[i + 1]?.ts ?? s.end) - m.ts })),
+  }));
+}
+
+/**
+ * The step where his recent sessions usually end, if there is a clear one:
+ * at least 2 of his last 5 unfinished sessions ended there.
+ */
+export function usualStop(events: readonly LogEvent[]): StepName | undefined {
+  const ended = sessionActivity(events).filter((s) => s.outcome !== 'finished' && s.lastStep && s.lastStep !== 'finish').slice(-5);
+  const count = new Map<StepName, number>();
+  for (const s of ended) count.set(s.lastStep!, (count.get(s.lastStep!) ?? 0) + 1);
+  const [step, n] = [...count].sort((a, b) => b[1] - a[1])[0] ?? [];
+  return n !== undefined && n >= 2 ? step : undefined;
+}
+
+// ---------------------------------------------------------------- what the grown-ups can take from it
+export interface Insight { tone: 'good' | 'watch' | 'act'; title: string; detail: string; tryThis?: string }
+
+export const STEP_LABEL: Record<StepName, string> = {
+  plan: 'the plan', choose: 'choosing where to go', warmup: 'the warm-up', watch: 'the demo (Watch)',
+  together: 'guided practice (Together)', yourturn: 'his own practice (Your turn)', gatecheck: 'the Lantern Peaks check', finish: 'the finish',
+};
+const TRY_AT: Partial<Record<StepName, string>> = {
+  warmup: 'Warm-ups review skills he already has. If they feel like repeats, a short chat about what is coming next can help him push on.',
+  watch: 'Demos now disappear for any skill he has shown he can do, and every demo has a "Got it, skip" button. Show him that button once.',
+  together: 'Guided practice drops out once he works a skill on his own. Until then, sit with him for this part, or turn on read-aloud.',
+  yourturn: 'Try fewer of his own questions per session (Settings, "Your-turn items per session"), so the finish comes sooner.',
+  choose: 'If choosing is hard, choose together, or always start with the same strand.',
+  plan: 'If the plan screen is too long, tell him the plan out loud and press "Let\'s go" together.',
+};
+
+const median = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? s[Math.floor((s.length - 1) / 2)] : 0; };
+const partOfDay = (ts: number) => { const h = new Date(ts).getHours(); return h < 12 ? 'morning' : h < 17 ? 'afternoon' : 'evening'; };
+
+/** Plain-language patterns, strongest first. Each needs enough sessions to say anything; otherwise it stays quiet. */
+export function insights(events: readonly LogEvent[], skillName: (id: string) => string = (id) => id): Insight[] {
+  const all = sessionActivity(events);
+  const recent = all.slice(-8);
+  const out: Insight[] = [];
+  if (all.length < 3) return [{ tone: 'good', title: 'Not enough sessions yet', detail: `Patterns show up after about three sessions. So far: ${all.length}.` }];
+
+  // Where sessions end.
+  const unfinished = recent.filter((s) => s.outcome !== 'finished' && s.lastStep && s.lastStep !== 'finish');
+  const stop = usualStop(events);
+  if (stop) {
+    const n = unfinished.filter((s) => s.lastStep === stop).length;
+    out.push({ tone: 'act', title: `Sessions often end at ${STEP_LABEL[stop]}`, detail: `${n} of his last ${recent.length} sessions ended there. When he gets past it, the app now gives him a bonus and says so.`, tryThis: TRY_AT[stop] });
+  }
+  const finished = recent.filter((s) => s.outcome === 'finished').length;
+  const done = `${finished} of his last ${recent.length} sessions ${finished === 1 ? 'was' : 'were'} finished.`;
+  if (finished / recent.length >= 0.75) out.push({ tone: 'good', title: 'He finishes most sessions', detail: done });
+  else if (finished / recent.length <= 0.34) out.push({ tone: 'watch', title: 'Most sessions end early', detail: done, tryThis: 'Shorter sessions finish more often: try fewer of his own questions per session in Settings.' });
+
+  // Where he pauses.
+  const idleBy = new Map<StepName, number>();
+  for (const e of events) if (e.type === 'activity' && e.kind === 'idle' && e.step && recent.some((s) => s.id === e.session)) idleBy.set(e.step, (idleBy.get(e.step) ?? 0) + 1);
+  const [pauseStep, pauses] = [...idleBy].sort((a, b) => b[1] - a[1])[0] ?? [];
+  if (pauseStep && pauses >= 3) out.push({ tone: 'watch', title: `He often pauses during ${STEP_LABEL[pauseStep]}`, detail: `${pauses} pauses of 45 seconds or more in his recent sessions. The guide now offers to read aloud or give a hint when he pauses.`, tryThis: TRY_AT[pauseStep] });
+  const away = recent.reduce((n, s) => n + s.away, 0);
+  if (away >= 3) out.push({ tone: 'watch', title: 'He leaves the app during sessions', detail: `The app was put away ${away} times in his recent sessions.`, tryThis: 'Notifications or other apps may be pulling him away. A focus mode on the device can help.' });
+  const skips = recent.filter((s) => s.skippedDemo).length;
+  if (skips >= 2) out.push({ tone: 'good', title: 'He skips demos and goes straight to trying', detail: `He pressed "Got it, skip" in ${skips} sessions. That fits how he learns: show once, then let him do it.` });
+
+  // Which sections take him longest, and which come easily.
+  const answers = events.filter((e): e is AnswerEvent => e.type === 'answer' && e.phase !== 'placement' && e.ms > 0);
+  const usual = median(answers.map((a) => a.ms));
+  if (usual > 0) {
+    const bySkill = new Map<string, AnswerEvent[]>();
+    for (const a of answers) bySkill.set(a.skill, [...(bySkill.get(a.skill) ?? []), a]);
+    for (const [skill, list] of bySkill) {
+      if (list.length < 4) continue;
+      const r = median(list.map((a) => a.ms)) / usual;
+      const first = list.filter((a) => a.correct && a.tries <= 1).length / list.length;
+      if (r >= 1.8) out.push({ tone: 'act', title: `${skillName(skill)} takes him longer`, detail: `His answers here take about ${r.toFixed(1)} times his usual time.`, tryThis: 'This section may need a boost: read-aloud, texts on his interests, or sitting with him for one session. Check which texts took longest in the Skills tab.' });
+      else if (r <= 0.6 && first >= 0.9) out.push({ tone: 'good', title: `${skillName(skill)} comes easily`, detail: `He answers in about ${r.toFixed(1)} times his usual time and gets ${Math.round(first * 100)}% right first time.`, tryThis: 'Harder texts open by themselves after two right in a row, so this will stretch him soon.' });
+    }
+  }
+
+  // When he does best.
+  const parts = new Map<string, { n: number; done: number }>();
+  for (const s of recent) { const p = parts.get(partOfDay(s.start)) ?? { n: 0, done: 0 }; p.n += 1; if (s.outcome === 'finished') p.done += 1; parts.set(partOfDay(s.start), p); }
+  const ranked = [...parts].filter(([, p]) => p.n >= 2).sort((a, b) => b[1].done / b[1].n - a[1].done / a[1].n);
+  if (ranked.length >= 2 && ranked[0][1].done / ranked[0][1].n - ranked.at(-1)![1].done / ranked.at(-1)![1].n >= 0.4)
+    out.push({ tone: 'good', title: `He finishes more sessions in the ${ranked[0][0]}`, detail: `${ranked[0][1].done} of ${ranked[0][1].n} in the ${ranked[0][0]}, against ${ranked.at(-1)![1].done} of ${ranked.at(-1)![1].n} in the ${ranked.at(-1)![0]}.` });
+
+  const order = { act: 0, watch: 1, good: 2 };
+  return out.sort((a, b) => order[a.tone] - order[b.tone]);
+}

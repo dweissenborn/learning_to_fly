@@ -7,5 +7,6 @@ import '@fontsource/lexend/400.css';
 import '@fontsource/lexend/700.css';
 import './styles.css';
 import { App, Safe } from './App';
+import { GearProvider } from './gear';
 
-createRoot(document.getElementById('root')!).render(<StrictMode><Safe><App /></Safe></StrictMode>);
+createRoot(document.getElementById('root')!).render(<StrictMode><Safe><GearProvider><App /></GearProvider></Safe></StrictMode>);
