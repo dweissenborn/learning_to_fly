@@ -149,7 +149,7 @@ test('the family cloud copy: a second device carries on as the same learner', as
   await second.getByRole('button', { name: 'Grown-ups' }).click();
   await second.getByRole('button', { name: 'Data and report' }).click();
   await expect(second.getByText("Tester's progress is saved on this device and in your family's cloud copy.", { exact: false })).toBeVisible();
-  await expect(second.getByRole('link', { name: 'Why it works' })).toHaveAttribute('href', /docs\/why-it-works\.md$/);
+  await expect(second.getByRole('link', { name: 'The research behind Learning to Fly' })).toHaveAttribute('href', 'https://dweissenborn.github.io/learning_to_fly/');
   await axe(second, 'cloud card');
 });
 

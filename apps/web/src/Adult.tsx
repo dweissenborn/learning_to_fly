@@ -468,7 +468,7 @@ function DataTab({ name, onReport }: { name: string; onReport: () => void }) {
         <li><b>A grown-up stays in the loop.</b> Programs like this worked best with an adult nearby, and the evidence is still thin, so the app measures its own effect for him.</li>
         <li><b>Some choices are ours.</b> The level steps, the fast track and the review timing are design choices to check against his results, not tested rules.</li>
       </ul>
-      <p className="tagline">Every feature, with the studies behind it: <a href="https://github.com/dweissenborn/learning_to_fly/blob/main/docs/why-it-works.md" target="_blank" rel="noreferrer">Why it works</a>.</p>
+      <p className="tagline">Every study the design rests on, what the app does with each one, and where the evidence is thin: <a href="https://dweissenborn.github.io/learning_to_fly/" target="_blank" rel="noreferrer">The research behind Learning to Fly</a>.</p>
     </section>
     <section className="card stack">
       <h2>About the content</h2>
