@@ -196,6 +196,11 @@ test('flight gear: points in a session, a celebration, the kit, and the activity
   await page.getByRole('button', { name: 'Activity' }).click();
   await expect(page.getByRole('heading', { name: 'What his sessions tell us' })).toBeVisible();
   await expect(page.getByText(/Stopped at the (warm-up|demo)/)).toBeVisible();
+  // Fresh content: the question he answered is no longer new, and nothing he answered was a repeat.
+  const fresh = page.locator('section', { has: page.getByRole('heading', { name: 'Fresh content' }) }).getByRole('row', { name: /^F1 Signs and symbols/ });
+  await expect(fresh).toContainText(/\d+ of \d+/);
+  await expect(page.getByRole('heading', { name: 'Fresh content' })).toBeVisible();
+  await expect(fresh.getByRole('cell').nth(5)).toHaveText('0 of 1');
   await axe(page, 'activity');
 });
 

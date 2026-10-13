@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId, Strand } from '@wayfinder/schema';
-import { ALL_SKILLS, dayKey, errorPatterns, flightPoints, focusSkill, gate, GEAR, gearState, hintNeed, insights, interestEffect, journeyPosition, levelFor, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName } from '@wayfinder/engine';
+import { ALL_SKILLS, dayKey, errorPatterns, flightPoints, freshness, FRESH_LOW, focusSkill, gate, GEAR, gearState, hintNeed, insights, interestEffect, journeyPosition, levelFor, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName } from '@wayfinder/engine';
 import { finishedCount, JOURNEY, journeyNow } from './journey';
 import { deleteNote, exportAll, importAll, log, saveSettings, updateNote, useNotes, wipeAll, type GuideId, type Settings } from './db';
 import { deleteEverywhere, useLink } from './cloud';
@@ -43,7 +43,7 @@ export function Adult({ settings, events, progress, onExit, onRescout }: { setti
       </nav>
       {tab === 'overview' && <Overview settings={settings} events={events} progress={progress} />}
       {tab === 'skills' && <Skills progress={progress} events={events} />}
-      {tab === 'activity' && <Activity events={events} />}
+      {tab === 'activity' && <Activity events={events} settings={settings} progress={progress} />}
       {tab === 'today' && <TodayAdmin settings={settings} />}
       {tab === 'content' && <Library settings={settings} />}
       {tab === 'settings' && <SettingsTab settings={settings} progress={progress} onRescout={onRescout} />}
@@ -112,6 +112,7 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
       <p>{lastRecount.text}</p>
       {lastRecount.ask && <ul>{lastRecount.ask.map((a) => <li key={a}>{a}</li>)}</ul>}
     </section>}
+    <FreshWarning settings={settings} progress={progress} />
     <SchoolGoals progress={progress} />
     <section className="card stack"><h2>Due for review</h2>
       {ALL_SKILLS.filter((s) => statusOf(progress.skills[s], now) === 'review due').map((s) => <div key={s}>{SKILL[s].name} <span className="chip due">review due</span></div>)}
@@ -127,8 +128,8 @@ const goalText = (r: { correct: number; total: number }) => (r.total < 5 ? `${r.
 function SchoolGoals({ progress }: { progress: Progress }) {
   return <section className="card stack">
     <h2>School goals</h2>
-    <p className="tagline">What his school is working on, measured on answers given without help.</p>
-    <div className="kv">{GOALS.map(([tag, label]) => <span key={tag} style={{ display: 'contents' }}><span>{label}</span><b>{goalText(tagAccuracy(progress, pool, tag))}</b></span>)}</div>
+    <p className="tagline">What his school is working on, measured on answers given without help, to questions he had not seen before.</p>
+    <div className="kv">{GOALS.map(([tag, label]) => <span key={tag} style={{ display: 'contents' }}><span>{label}</span><b>{goalText(tagAccuracy(progress, pool, tag, { firstTimeOnly: true }))}</b></span>)}</div>
   </section>;
 }
 
@@ -147,7 +148,40 @@ function Insights({ events }: { events: LogEvent[] }) {
   </li>)}</ul>;
 }
 
-function Activity({ events }: { events: LogEvent[] }) {
+const FRESH_STATUS = { plenty: 'Plenty', low: 'Running low', repeating: 'Repeats now' } as const;
+const useFresh = (settings: Settings, progress: Progress) =>
+  useMemo(() => freshness(progress, pool, { now: Date.now(), hidden: new Set(settings.hidden), allowThemes: settings.hardThemes }), [progress, settings.hidden, settings.hardThemes]);
+
+/** On the overview: only when a skill he is working on is close to giving him questions he has already seen. */
+function FreshWarning({ settings, progress }: { settings: Settings; progress: Progress }) {
+  const rows = useFresh(settings, progress).filter((r) => r.status !== 'plenty' && progress.skills[r.skill].answers.length > 0);
+  if (!rows.length) return null;
+  return <section className="card stack">
+    <h2>New questions running low</h2>
+    <p style={{ margin: 0 }}>{rows.map((r) => `${SKILL[r.skill].name}: ${r.status === 'repeating' ? 'he is getting questions he has seen before' : `${r.unseen} new at his level`}`).join('. ')}.</p>
+    <p className="tagline">A right answer to a question he has seen may be memory, not reading. The Activity tab has the details; more content for these skills keeps his answers fresh.</p>
+  </section>;
+}
+
+/** Per skill: how much he has not met yet, and how many answers were repeats. */
+function FreshContent({ settings, progress }: { settings: Settings; progress: Progress }) {
+  const rows = useFresh(settings, progress);
+  return <section className="card stack">
+    <h2>Fresh content</h2>
+    <p className="tagline">Questions he can be given now (at his level or easier) that he has never answered, and texts he has not read yet. A repeat is an answer to a question he had answered before. Running low means fewer than {FRESH_LOW} new questions at his level or the next one up.</p>
+    <div className="table-wrap"><table className="skills-table">
+      <thead><tr><th>Skill</th><th>Level</th><th>New questions</th><th>New texts</th><th>Repeats this week</th><th>Repeats overall</th><th>Status</th></tr></thead>
+      <tbody>{rows.map((r) => <tr key={r.skill}>
+        <td>{r.skill} {SKILL[r.skill].name}</td><td>{r.level}</td>
+        <td>{r.unseen} of {r.total}</td><td>{r.unseenTexts} of {r.texts}</td>
+        <td>{r.answersWeek ? `${r.repeatsWeek} of ${r.answersWeek}` : '–'}</td><td>{r.answersAll ? `${r.repeatsAll} of ${r.answersAll}` : '–'}</td>
+        <td><span className={`chip ${r.status === 'plenty' ? 'mastered' : r.status === 'low' ? 'learning' : 'due'}`}>{FRESH_STATUS[r.status]}</span></td>
+      </tr>)}</tbody>
+    </table></div>
+  </section>;
+}
+
+function Activity({ events, settings, progress }: { events: LogEvent[]; settings: Settings; progress: Progress }) {
   const sessions = useMemo(() => sessionActivity(events), [events]);
   const recent = sessions.slice(-10).reverse();
   const perStep = new Map<StepName, number[]>();
@@ -162,6 +196,7 @@ function Activity({ events }: { events: LogEvent[] }) {
       <p className="tagline">Read from timing alone: where sessions end, where he pauses for 45 seconds or more, when the app is put away, and how long questions take. Nothing he types is used.</p>
       <Insights events={events} />
     </section>
+    <FreshContent settings={settings} progress={progress} />
     <section className="card stack">
       <h2>Recent sessions</h2>
       {!recent.length ? <p className="muted">No sessions yet.</p> : <div className="table-wrap"><table className="skills-table">
@@ -456,7 +491,8 @@ function Report({ settings, events, progress, onBack }: { settings: Settings; ev
     </section>
     <section className="card" style={{ breakInside: 'avoid' }}>
       <h3>School goals</h3>
-      <div className="kv">{GOALS.map(([tag, label]) => <span key={tag} style={{ display: 'contents' }}><span>{label}</span><b>{goalText(tagAccuracy(progress, pool, tag))}</b></span>)}</div>
+      <p className="tagline">Answers given without help, to questions he had not seen before.</p>
+      <div className="kv">{GOALS.map(([tag, label]) => <span key={tag} style={{ display: 'contents' }}><span>{label}</span><b>{goalText(tagAccuracy(progress, pool, tag, { firstTimeOnly: true }))}</b></span>)}</div>
     </section>
     {ALL_SKILLS.filter((s) => strandOf(s) !== 'philosophical' || progress.skills[s].answers.length).map((s) => {
       const st = progress.skills[s];
@@ -467,6 +503,7 @@ function Report({ settings, events, progress, onBack }: { settings: Settings; ev
         <div className="kv">
           <span>Mastered</span><b>{st.masteredAt ? fmtDate(st.masteredAt) + (st.placed ? ' (placed, awaiting review)' : '') : '–'}</b>
           <span>Reviews passed</span><b>{st.reviewStage}</b>
+          <span>First-time answers</span><b>{st.answers.length ? `${st.answers.length - st.answers.filter((a) => progress.repeats.has(a.id)).length} of ${st.answers.length}` : '–'}</b>
           <span>Text level now</span><b>{st.answers.length ? `${levelFor(st, pool)} of 5` : '–'}</b>
           <span>Your-turn trend</span><b>{t.length ? t.map((x) => `${fmtDate(x.ts)} ${Math.round(x.acc * 100)}% (${x.n})`).join(' · ') : '–'}</b>
           <span>Real-world checks</span><b>{events.filter((e) => e.type === 'realworld' && e.skill === s).length}</b>

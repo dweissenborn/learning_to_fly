@@ -8,7 +8,7 @@ Added 2026-10-13. All 18 proposals from the research review (LTF-01 to LTF-18) w
 
 Each step lands its test before its code.
 
-1. **Foundations.** "Check whether content repeats across sessions" (below), now needed by the notes on LTF-01, LTF-02, LTF-05 and LTF-16. Then LTF-16, so every new item after it passes the content checks. LTF-17 can run alongside.
+1. **Foundations.** "Check whether content repeats across sessions" (below, built 2026-10-13), now needed by the notes on LTF-01, LTF-02, LTF-05 and LTF-16. Then LTF-16, so every new item after it passes the content checks. LTF-17 can run alongside.
 2. **Small, strongest evidence.** LTF-01, LTF-05, LTF-08, LTF-18.
 3. **Today and hints.** LTF-06 (after LTF-05), LTF-07, LTF-02, LTF-15.
 4. **New questions.** LTF-09, LTF-10, LTF-12, LTF-13.
@@ -221,7 +221,14 @@ Added 2026-10-13. Approved. Research: [Johnson et al. 2026](https://journals.sag
 
 ## Check whether content repeats across sessions
 
-Added 2026-10-12.
+Added 2026-10-12. Built 2026-10-13 (step 1 of the build order).
+
+- **What was built.**
+  - Every answer is read as first-time or repeat from the learner's shared event log, in time order, so his devices agree even when they sync late (`isRepeat` and `Progress.repeats` in `packages/engine/src/index.ts`). It is derived rather than stored on each answer, because a flag written by one device could be wrong once another device's older answers arrive.
+  - `freshness()` in `packages/engine/src/fresh.ts` reports, per skill: his level, questions and texts he has not met yet at his level or easier, repeats this week and overall, and a status (plenty, running low below 10 new at his level or the next, or repeats now). It leaves out worked examples, inference checks, hidden items and themes he is not shown, like item choice does.
+  - The grown-ups' Activity tab has a Fresh content card, the Overview warns when a skill he is working on runs low, the report shows first-time answers per skill, and the school goals now count first-time answers only.
+- **For the next features.** LTF-01, LTF-02, LTF-05 and LTF-16 measure themselves with `isRepeat` (first-time answers only), as DW's notes ask.
+- **Not changed.** Item choice already serves unseen questions first, and mastery still counts every independent answer. Counting only first-time answers toward mastery is a possible next change.
 
 - **Research.** R12: the evidence is thin, so the program measures itself, and that measure is only fair on items he has not seen before ([Singh et al. 2021](https://link.springer.com/article/10.1007/s40489-020-00200-3); [Zhang et al. 2023](https://eric.ed.gov/?id=EJ1361852)).
 Check whether the same items and passages come back in later sessions, and how often. Make this part of the reporting component (the grown-ups' area) and the progress tracker.

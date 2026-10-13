@@ -65,7 +65,12 @@ export interface Progress {
   sessions: SessionRecord[];
   /** Item id to the last time it was answered. */
   seen: Map<string, number>;
+  /** Answer ids where he had already answered that same question before (any phase), read from the shared log in time order. */
+  repeats: Set<string>;
 }
+
+/** Whether this answer was to a question he had answered before. Features measured on fresh content count only first-time answers. */
+export const isRepeat = (p: Progress, a: { id: string }) => p.repeats.has(a.id);
 
 const fresh = (skill: SkillId): SkillState => ({
   skill, status: 'new', everMastered: false, placed: false, scouted: false, reviewStage: 0, relearning: false, tallies: [], answers: [],
@@ -95,7 +100,7 @@ function meetsMastery(s: SkillState, fastTrack: boolean): boolean {
 export function derive(events: readonly LogEvent[], opts: { fastTrack?: boolean } = {}): Progress {
   const fastTrack = opts.fastTrack ?? true;
   const skills = Object.fromEntries(ALL_SKILLS.map((s) => [s, fresh(s)])) as Record<SkillId, SkillState>;
-  const p: Progress = { skills, inferencePassed: false, gateOpened: false, sessions: [], seen: new Map() };
+  const p: Progress = { skills, inferencePassed: false, gateOpened: false, sessions: [], seen: new Map(), repeats: new Set() };
   type Open = { rec: SessionRecord; due: Set<SkillId>; review: Map<SkillId, { c: number; n: number }>; practised: Set<SkillId>; gate: { c: number; n: number } };
   let open: Open | null = null;
 
@@ -133,6 +138,7 @@ export function derive(events: readonly LogEvent[], opts: { fastTrack?: boolean 
         close(e.ts);
       }
     } else if (e.type === 'answer') {
+      if (p.seen.has(e.item)) p.repeats.add(e.id);
       p.seen.set(e.item, e.ts); // placement items count as seen, so they are not served again straight away
       const s = skills[e.skill as SkillId];
       if (s && e.phase === 'placement' && e.correct) s.scouted = true;
@@ -468,10 +474,10 @@ export function journeyPosition(finished: number, stops: number, legLength: numb
 }
 
 /** First-time accuracy on items with a given tag (warm-up and your-turn answers only), for the school's goals. */
-export function tagAccuracy(p: Progress, pool: Pool, tag: string) {
+export function tagAccuracy(p: Progress, pool: Pool, tag: string, o: { firstTimeOnly?: boolean } = {}) {
   const r = { correct: 0, total: 0 };
   for (const s of Object.values(p.skills)) for (const a of s.answers)
-    if ((a.phase === 'yourturn' || a.phase === 'warmup') && a.rubric === undefined && pool.items.get(a.item)?.tags?.includes(tag)) {
+    if ((a.phase === 'yourturn' || a.phase === 'warmup') && a.rubric === undefined && pool.items.get(a.item)?.tags?.includes(tag) && !(o.firstTimeOnly && p.repeats.has(a.id))) {
       r.total += 1;
       if (a.correct) r.correct += 1;
     }
@@ -490,3 +496,4 @@ export function mulberry32(seed: number) {
 }
 
 export * from './activity';
+export * from './fresh';
