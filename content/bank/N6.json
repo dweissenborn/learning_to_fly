@@ -759,6 +759,35 @@
         "retrieved": "2026-10-12",
         "adapted": false
       }
+    },
+    {
+      "id": "n6-p29",
+      "title": "The Plow Train",
+      "kind": "story",
+      "picture": "🚆❄️",
+      "sentences": [
+        "Last winter, a big storm dropped deep snow on Harbor Town.",
+        "The snow covered the train tracks.",
+        "A special train with a plow on the front came to help.",
+        "The plow pushed the snow off the tracks.",
+        "Its bright lights helped the driver see in the storm.",
+        "By morning, the trains could run again.",
+        "Sam watched the plow train from his window with Pixel."
+      ],
+      "topics": [
+        "transport",
+        "weather"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Plow Train",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-10-13",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -2239,15 +2268,58 @@
         "title",
         "too-narrow"
       ]
+    },
+    {
+      "id": "n6-i69",
+      "skill": "N6",
+      "passage": "n6-p29",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "A plow train that cleared snow off the tracks",
+        "Sam and Pixel at the window",
+        "The bright lights on the train"
+      ],
+      "answer": 0,
+      "evidence": [
+        2,
+        3,
+        5
+      ],
+      "hint": "Think about what most of the sentences talk about, not just one.",
+      "explain": "It is mostly about a plow train clearing the snow so trains could run. Sam and Pixel, and the lights, are each in only one sentence: they are details.",
+      "inference": 1,
+      "tags": [
+        "main-idea"
+      ]
     }
   ],
   "model": {
-    "item": "n6-i00",
+    "item": "n6-i69",
     "steps": [
-      { "say": "I read the words 'hit the books'. Why would Priya hit her books? That sounds strange, so the words may mean something else." },
-      { "say": "I look at the sentences around the words.", "show": [2, 3, 4] },
-      { "say": "Priya has a science quiz. That night she reads her notes until bedtime." },
-      { "say": "So 'hit the books' means study hard. The words are not meant literally.", "reveal": true }
+      {
+        "say": "The question asks what the story is mostly about. I look for what most of the sentences talk about, not just one."
+      },
+      {
+        "say": "Sentence after sentence is about the plow train and the snow on the tracks.",
+        "show": [
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "say": "The lights are in one sentence. Sam and Pixel are in one sentence. Those are details.",
+        "show": [
+          4,
+          6
+        ]
+      },
+      {
+        "say": "So the story is mostly about a plow train clearing the snow off the tracks.",
+        "reveal": true
+      }
     ]
   }
 }

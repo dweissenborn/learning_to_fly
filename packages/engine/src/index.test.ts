@@ -325,6 +325,12 @@ describe('pacing for a learner who locks skills in quickly', () => {
     expect(p1.skipWatch).toBe(true);
     expect(p1.model).toBeUndefined();
 
+    // Solving the skill's scouting question counts too: a learner who scouted well is not shown the demo.
+    const scouted = derive([{ id: id(), ts: T0, type: 'answer', session: 'placement', item: 'i0', skill: 'N1', phase: 'placement', correct: true, hint: 0, tries: 1, ms: 1, format: 'tap' }]);
+    expect(planSession(scouted, ctx(), 'narrative', T0 + DAY, 4).skipWatch).toBe(true);
+    const missedScout = derive([{ id: id(), ts: T0, type: 'answer', session: 'placement', item: 'i0', skill: 'N1', phase: 'placement', correct: false, hint: 0, tries: 1, ms: 1, format: 'tap' }]);
+    expect(planSession(missedScout, ctx(), 'narrative', T0 + DAY, 4).skipWatch).toBe(false);
+
     const independent = derive(run(T0, [[1, true], [1, true], [2, true], [2, false], [3, true]]));
     const p2 = planSession(independent, ctx(), 'narrative', T0 + DAY, 4);
     expect(p2.skipTogether).toBe(true);

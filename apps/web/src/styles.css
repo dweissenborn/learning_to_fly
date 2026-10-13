@@ -217,6 +217,9 @@ main { padding-bottom: 1rem; min-width: 0; }
 .picked { background: var(--accent-soft) !important; box-shadow: 0 0 0 2px var(--accent); }
 .tried { opacity: 0.55; text-decoration: line-through dotted; }
 .right { background: var(--good-soft) !important; box-shadow: 0 0 0 2px var(--good); }
+/* Notices and sticky notes stay light paper in every theme, so their highlights stay light too (dark text stays readable). */
+:is(.v-notice, .v-msg.note) .picked { background: oklch(90% 0.05 230) !important; box-shadow: 0 0 0 2px oklch(50% 0.12 230); color: oklch(25% 0.02 90); }
+:is(.v-notice, .v-msg.note) .right { background: oklch(89% 0.08 150) !important; box-shadow: 0 0 0 2px oklch(48% 0.12 150); color: oklch(25% 0.02 90); }
 .credit { font-size: 0.75rem; color: var(--muted); margin-top: 0.9rem; border-top: 1px dashed var(--line); padding-top: 0.5rem; }
 .listen-only .prose { filter: blur(7px); user-select: none; }
 

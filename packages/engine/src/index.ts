@@ -44,6 +44,8 @@ export interface SkillState {
   everMastered: boolean;
   /** Mastered by placement and not yet confirmed by a passed review. */
   placed: boolean;
+  /** Answered this skill's scouting question right: he has already shown he can do it. */
+  scouted: boolean;
   masteredAt?: number;
   /** Reviews passed since the last (re)mastery. 3 means the 21-day review passed. */
   reviewStage: number;
@@ -66,7 +68,7 @@ export interface Progress {
 }
 
 const fresh = (skill: SkillId): SkillState => ({
-  skill, status: 'new', everMastered: false, placed: false, reviewStage: 0, relearning: false, tallies: [], answers: [],
+  skill, status: 'new', everMastered: false, placed: false, scouted: false, reviewStage: 0, relearning: false, tallies: [], answers: [],
 });
 
 function master(s: SkillState, ts: number, placed = false) {
@@ -133,6 +135,7 @@ export function derive(events: readonly LogEvent[], opts: { fastTrack?: boolean 
     } else if (e.type === 'answer') {
       p.seen.set(e.item, e.ts); // placement items count as seen, so they are not served again straight away
       const s = skills[e.skill as SkillId];
+      if (s && e.phase === 'placement' && e.correct) s.scouted = true;
       if (!s || e.phase === 'placement') continue;
       s.answers.push(e);
       if (s.status === 'new') s.status = 'learning';
@@ -348,10 +351,10 @@ export function planSession(p: Progress, ctx: PickContext, strand: Strand, now: 
   }
   if (warmup.length < 2) warmup.push(...take(pickItems(ctx, skill, 2 - warmup.length, { exclude: used, maxLevel: 1, tier: 'understand' })));
 
-  // Once he has solved this kind of item on his own, he does not need it shown again.
+  // Once he has solved this kind of item on his own, in scouting or in practice, he does not need it shown again.
   const level = levelFor(s[skill], ctx.pool);
   const st = s[skill];
-  const skipWatch = st.answers.some((a) => a.correct);
+  const skipWatch = st.scouted || st.answers.some((a) => a.correct);
   const last = st.tallies.at(-1);
   const skipTogether = (!!last && last.total >= RULES.minPerSession && last.correct / last.total >= RULES.mastery) ||
     (st.answers.length >= 3 && st.answers.slice(-3).every((a) => a.correct));

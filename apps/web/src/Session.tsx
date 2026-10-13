@@ -135,6 +135,8 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
         </div>
         <ItemView item={plan.model.item} mode="demo" guide={guide} pictures={settings.pictures} demo={{ show: plan.model.steps[watchStep].show, reveal: plan.model.steps.slice(0, watchStep + 1).some((s) => s.reveal) }} />
         <NextSlot>
+          {/* He does not need a thing shown twice: one press skips the rest of the demo. */}
+          <Btn className="quiet" onPress={() => nextPhase('watch')}>Got it, skip</Btn>
           {watchStep > 0 && <Btn className="quiet" onPress={() => setWatchStep(watchStep - 1)}>← Back</Btn>}
           {watchStep + 1 < plan.model.steps.length
             ? <Btn className="primary big" autoFocus onPress={() => { setWatchStep(watchStep + 1); if (settings.readAloud) speak([plan.model!.steps[watchStep + 1].say], 'watch'); }}>Next →</Btn>
