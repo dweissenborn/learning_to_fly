@@ -149,6 +149,7 @@ test('the family cloud copy: a second device carries on as the same learner', as
   await second.getByRole('button', { name: 'Grown-ups' }).click();
   await second.getByRole('button', { name: 'Data and report' }).click();
   await expect(second.getByText("Tester's progress is saved on this device and in your family's cloud copy.", { exact: false })).toBeVisible();
+  await expect(second.getByRole('link', { name: 'Why it works' })).toHaveAttribute('href', /docs\/why-it-works\.md$/);
   await axe(second, 'cloud card');
 });
 
@@ -162,13 +163,12 @@ async function answer(page: Page) {
 
 test('flight gear: points in a session, a celebration, the kit, and the activity the grown-ups see', async ({ page }) => {
   await onboard(page);
-  // Three points already, from scouting: one right first time (2) and one miss (1).
+  // Two points already, from one scouting answer. Every answer earns two, right or not.
   await page.evaluate(async () => {
     const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
     const tx = db.transaction('events', 'readwrite');
     const base = { type: 'answer', session: 'placement', skill: 'N1', phase: 'placement', hint: 0, tries: 1, ms: 1000, format: 'tap' };
     tx.objectStore('events').put({ ...base, id: 'seed-1', ts: Date.now() - 9000, item: 'pl-r1', correct: true });
-    tx.objectStore('events').put({ ...base, id: 'seed-2', ts: Date.now() - 8000, item: 'pl-r2', correct: false });
     await new Promise((r) => { tx.oncomplete = r; });
     db.close();
   });
@@ -178,8 +178,8 @@ test('flight gear: points in a session, a celebration, the kit, and the activity
   await page.getByRole('button', { name: /Start reading/ }).click();
   await page.getByRole('button', { name: /Let's go/ }).click();
   await page.getByRole('button', { name: /Harbor Town/ }).click();
-  await expect(page.getByRole('progressbar', { name: 'Flight kit: 1 more point to the flight cap' })).toBeVisible();
-  await answer(page); // any answer earns a point, so the cap arrives
+  await expect(page.getByRole('progressbar', { name: 'Flight kit: 2 more points to the flight cap' })).toBeVisible();
+  await answer(page); // any answer earns two points, so the cap arrives
   await expect(page.getByRole('dialog', { name: 'New flight gear: Flight cap' })).toBeVisible();
   await axe(page, 'gear celebration');
   await page.getByRole('button', { name: /Keep going/ }).click();
@@ -188,7 +188,7 @@ test('flight gear: points in a session, a celebration, the kit, and the activity
   await page.getByRole('button', { name: 'Stop' }).click();
   await page.getByRole('dialog').getByRole('button', { name: 'Stop' }).click();
   await page.getByRole('button', { name: /Flight kit · 1 of 12/ }).click();
-  await expect(page.getByText('Every answer is a point.', { exact: false })).toBeVisible();
+  await expect(page.getByText('Every answer is two points, right or not.', { exact: false })).toBeVisible();
   await axe(page, 'flight kit');
   await page.getByRole('dialog').getByRole('button', { name: 'Done' }).click();
 

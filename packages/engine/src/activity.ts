@@ -6,9 +6,10 @@ export const IDLE_MS = 45_000;
 
 // ---------------------------------------------------------------- flight kit
 /**
- * His guide gears up for the flight to Australia. Points reward effort, never speed:
- * 1 for every answer, 1 more when it is right first time, 3 for finishing a session,
- * and a bonus for getting past the step where his sessions usually end.
+ * His guide gears up for the flight to Australia. Points reward effort only, never speed or scores
+ * (rewards promised for performance can lower a child's own interest; see docs/why-it-works.md):
+ * 2 for every answer, right or not, 3 for finishing a session, and a bonus for getting past the step
+ * where his sessions usually end. No one's points ever go down.
  */
 export interface GearPiece { id: string; name: string; emoji: string; at: number; worn: boolean }
 export const GEAR: readonly GearPiece[] = [
@@ -29,7 +30,7 @@ export const GEAR: readonly GearPiece[] = [
 export function flightPoints(events: readonly LogEvent[]): number {
   let pts = 0;
   for (const e of events) {
-    if (e.type === 'answer') pts += 1 + (e.correct && e.tries <= 1 ? 1 : 0);
+    if (e.type === 'answer') pts += 2;
     else if (e.type === 'session' && e.action === 'finish') pts += 3;
     else if (e.type === 'activity' && e.kind === 'boost') pts += e.points ?? 0;
   }

@@ -75,7 +75,7 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
         <span>Today recounts</span><b>{recounts}</b>
         <span>Journey</span><b>{(() => { const j = journeyNow(finishedCount(progress), settings); return j.next ? `${j.here.name}, ${j.legLength - j.step} more to ${j.next.name}` : `In Australia, ${Math.min(j.after + 1, JOURNEY.koalas.length)} koalas met`; })()}</b>
       </div>
-      <p className="tagline">The research behind this plan judged gains after at least 25 sessions (R7). Mastery needs two good days on a skill, so steady short sessions work best.</p>
+      <p className="tagline">Studies of reading programs like this one measured gains after about 25 sessions, so give it that long before judging. Mastery needs two good days on a skill, so steady short sessions work best.</p>
     </section>
     <section className="card stack">
       <h2>Next steps</h2>
@@ -101,7 +101,7 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
     </section>
     <section className="card stack">
       <h2>Does his interest help?</h2>
-      <p className="tagline">One pick in five ignores his interests on purpose, so this comparison is fair (R8).</p>
+      <p className="tagline">Texts about a child's interests helped in one study but not in others, so the app checks it for him: one pick in five ignores his interests on purpose, which keeps this comparison fair.</p>
       <div className="kv"><span>Interest topics</span><b>{pct(ie.interest)}</b><span>Other topics</span><b>{pct(ie.other)}</b></div>
       {placement?.type === 'placement' && <><h3 style={{ marginTop: '0.8rem' }}>Starting point</h3>
         <div className="kv"><span>Word reading</span><b>{Math.round(placement.word * 100)}%</b><span>Reading a story</span><b>{Math.round(placement.reading * 100)}%</b><span>Listening to a story</span><b>{Math.round(placement.listening * 100)}%</b>
@@ -186,7 +186,7 @@ function Activity({ events }: { events: LogEvent[] }) {
       <section className="card stack">
         <h2>Flight kit</h2>
         <p style={{ margin: 0 }}>{kit.owned.length} of {GEAR.length} pieces, {kit.points} points. {kit.next ? `Next: the ${kit.next.name.toLowerCase()} in ${kit.toNext} points.` : 'Ready for take-off.'}</p>
-        <p className="tagline">His guide earns flight gear for the trip to Australia. Points reward effort, never speed: 1 per answer, 1 more for right first time, 3 for finishing, and 3 for getting past the step where his sessions usually end.</p>
+        <p className="tagline">His guide earns flight gear for the trip to Australia. Points reward effort only, never speed or scores: 2 per answer, right or not, 3 for finishing, and 3 for getting past the step where his sessions usually end. Rewards promised for good scores can make children like a task less, so none are.</p>
       </section>
     </div>
     <section className="card stack">
@@ -241,7 +241,7 @@ function Skills({ progress, events }: { progress: Progress; events: LogEvent[] }
       <Modal><Dialog className="dialog" style={{ maxWidth: 520 }}>
         {confirm && <><Heading slot="title">Real-world check: {SKILL[confirm].name}</Heading>
           <p>{SKILL[confirm].realworld}</p>
-          <p className="tagline">Confirming it here records that the skill carried over to daily life (R6). It does not change mastery.</p>
+          <p className="tagline">Skills learned in practice do not always carry over to real life, so this records when one did. It does not change mastery.</p>
           <div className="row"><Btn className="primary" onPress={async () => { await log({ type: 'realworld', skill: confirm }); setConfirm(null); }}>Yes, I saw it</Btn><Btn className="quiet" onPress={() => setConfirm(null)}>Cancel</Btn></div></>}
       </Dialog></Modal>
     </ModalOverlay>
@@ -340,14 +340,14 @@ function SettingsTab({ settings, progress, onRescout }: { settings: Settings; pr
     <section className="card stack">
       <h2>Learning</h2>
       <Seg label="Small rewards" value={settings.rewardPace} onChange={(rewardPace) => saveSettings({ rewardPace })} options={[['item', 'After every item'], ['step', 'After every step'], ['session', 'At the end only']]} />
-      <p className="tagline">Start with frequent rewards if he needs them, then thin them out (R6). Rewards build his island; they never depend on scores (R9).</p>
+      <p className="tagline">Start with frequent rewards if he needs them, then thin them out, as is standard in teaching. Rewards build his island and never depend on scores, because rewards promised for scores can make children like a task less.</p>
       <Seg label="Sessions between places on the journey" value={settings.legLength} options={[[3, '3'], [5, '5'], [7, '7']]} onChange={(legLength) => {
         // Re-anchor at today's place, so a new pace never moves him back.
         const finished = finishedCount(progress);
         const pos = journeyPosition(finished, JOURNEY.stops.length, settings.legLength, settings.journeyAnchor);
         saveSettings({ legLength, journeyAnchor: { at: finished, stop: pos.stop, step: pos.step, after: pos.after } });
       }} />
-      <p className="tagline">The journey to the koalas moves with finished sessions, never with scores (R9). Five a leg reaches Australia at about session 25, the dose the research judged by (R7).</p>
+      <p className="tagline">The journey to the koalas moves with finished sessions, never with scores. Five a leg reaches Australia at about session 25, about where studies measured gains.</p>
       <Toggle on={settings.setbacks} onChange={(setbacks) => saveSettings({ setbacks })}>Story setbacks (a storm, a blocked path, a broken part)</Toggle>
       <p className="tagline">Setbacks model coping with change: each one is explained, he hears a calm coping line, and he picks a plan. Nothing is lost. Turn them off for a smoother story.</p>
       <Toggle on={settings.fastTrack} onChange={(fastTrack) => saveSettings({ fastTrack })}>Fast track: one flawless session can master a skill</Toggle>
@@ -421,6 +421,19 @@ function DataTab({ name, onReport }: { name: string; onReport: () => void }) {
           await wipeAll(); location.reload();
         }}>Delete {name} everywhere</Btn>}
       </div>
+    </section>
+    <section className="card stack">
+      <h2>Why it is built this way</h2>
+      <ul className="why">
+        <li><b>Show, help, then let him try.</b> Clear step-by-step teaching is the best-supported approach for autistic readers. Demos drop out once he shows he can do a skill.</li>
+        <li><b>Hints wait, then step up.</b> Waiting a moment before a prompt, then giving more help, is an established way to teach.</li>
+        <li><b>Answer by choosing and pointing.</b> Story maps and picture supports help most, and understanding is checked before he is asked to explain.</li>
+        <li><b>Feelings come last and gently.</b> Working out what characters feel is the hardest part at his age, so it is taught on purpose and its own strand opens only after the basics.</li>
+        <li><b>Rewards tell a story, not a score.</b> Points come from effort, and nothing is lost for a wrong answer.</li>
+        <li><b>A grown-up stays in the loop.</b> Programs like this worked best with an adult nearby, and the evidence is still thin, so the app measures its own effect for him.</li>
+        <li><b>Some choices are ours.</b> The level steps, the fast track and the review timing are design choices to check against his results, not tested rules.</li>
+      </ul>
+      <p className="tagline">Every feature, with the studies behind it: <a href="https://github.com/dweissenborn/learning_to_fly/blob/main/docs/why-it-works.md" target="_blank" rel="noreferrer">Why it works</a>.</p>
     </section>
     <section className="card stack">
       <h2>About the content</h2>

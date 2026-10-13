@@ -496,6 +496,7 @@ details > summary { cursor: pointer; font-weight: 700; padding: 0.4rem 0; }
 .nudge .bubble { border: 2px dashed var(--accent); }
 .feedback.boost { font-size: 1.15rem; }
 
+.why { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
 .insights { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
 .insight { display: grid; gap: 0.25rem; padding: 0.8rem 1rem; border-radius: var(--radius); border-left: 6px solid var(--line); background: var(--surface-2); }
 .insight.act { border-left-color: var(--fun); }

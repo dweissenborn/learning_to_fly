@@ -18,10 +18,10 @@ function session(t: number, answers: [string, boolean][], end: 'finish' | 'stop'
 }
 
 describe('flight kit', () => {
-  it('rewards effort, first tries, finished sessions and the push-through bonus', () => {
+  it('rewards effort, not scores: every answer, finished sessions and the push-through bonus', () => {
     const ev = [...session(T0, [['warmup', true], ['warmup', false]], 'finish')];
-    expect(flightPoints(ev)).toBe(2 + 1 + 3);
-    expect(flightPoints([...ev, { id: id(), ts: T0, type: 'activity', session: 's', kind: 'boost', points: 3 }])).toBe(9);
+    expect(flightPoints(ev)).toBe(2 + 2 + 3); // a wrong answer earns the same as a right one
+    expect(flightPoints([...ev, { id: id(), ts: T0, type: 'activity', session: 's', kind: 'boost', points: 3 }])).toBe(10);
   });
   it('unlocks pieces in order and says how far the next one is', () => {
     expect(gearState(0)).toMatchObject({ owned: [], next: { id: 'cap' }, toNext: 4 });

@@ -4,7 +4,7 @@ Notes on work still to do. Newest first.
 
 ## Build order for the research features
 
-Added 2026-10-13. All 18 proposals from the research review (LTF-01 to LTF-18) were approved. Guest codes (LTF-19) were added at DW's request. The mockups and the full case for each are on the review page in claude.ai. The research is in the project doc `claude/reading-research/2026-10-12.md`.
+Added 2026-10-13. All 18 proposals from the research review (LTF-01 to LTF-18) were approved. Guest codes (LTF-19) were added at DW's request. The mockups and the full case for each are on the review page in claude.ai. The research is in the project doc `claude/reading-research/2026-10-12.md`. Each entry below links its studies. The findings are rules R17 to R30 in `docs/plan.md`, with full citations in its Sources section.
 
 Each step lands its test before its code.
 
@@ -12,13 +12,27 @@ Each step lands its test before its code.
 2. **Small, strongest evidence.** LTF-01, LTF-05, LTF-08, LTF-18.
 3. **Today and hints.** LTF-06 (after LTF-05), LTF-07, LTF-02, LTF-15.
 4. **New questions.** LTF-09, LTF-10, LTF-12, LTF-13.
-5. **Large content work.** LTF-04, LTF-11 (idioms use LTF-04), LTF-03, LTF-14.
+5. **Large content work.** LTF-20 (island routes, before LTF-14 so check-up flights can come from the island he chose), LTF-04, LTF-11 (idioms use LTF-04), LTF-03, LTF-14.
 6. **Guest codes.** LTF-19, a separate track. Approach to confirm.
+
+## LTF-20 Island routes that branch to themed islands
+
+Added 2026-10-13. Approved by DW: islands follow his interests, every route reaches Australia, and he picks the route. Starting size to confirm: one fork after Gull Island with three routes.
+
+- **Research.** Islands that follow his interests use R8 ([El Zein et al. 2016](https://meadowscenter.org/library/embedding-perseverative-interest-of-a-child-with-autism-in-text-may-result-in-improved-reading-comprehension-a-pilot-study/); [Solis et al. 2022](https://eric.ed.gov/?id=ED634621)), whose mixed results are why one pick in five still ignores interests. A story world that rewards finished sessions, not scores, is R9 ([Deci et al. 1999](https://pure.ewha.ac.kr/en/publications/a-meta-analytic-review-of-experiments-examining-the-effects-of-ex/); [Sailer & Homner 2020](https://eric.ed.gov/?id=EJ1245270)). R30 ([Gao et al. 2025](https://frontiersin.org/journals/pediatrics/articles/10.3389/fped.2025.1498563/abstract)) keeps the islands a wrapper rather than the teaching. Branching routes and the route choice are our design, not a tested rule.
+- **He sees.** The journey map shows forks. At a fork, his guide names each sea route and the island it leads to, for example Fossil Bay (dinosaurs, mining), Reef Island (ocean, animals), Star Point (space, weather) or Rail Coast (transport, maps). He taps one, and the whole route stays visible ahead of time, so nothing is a surprise. Every route ends at Australia; a branch is a different way there, never a dead end.
+- **On a themed island.** Sessions on that leg lean toward the island's two interests, through the interest weighting that already exists. Each island has its own art, story beats, a setback with a coping line and a plan choice, a postcard and a souvenir, like the current stops.
+- **Grown-ups see.** The route he chose and when, on the journey card in Settings. The journey pace and setbacks settings work as now.
+- **Why now.** Every interest has 166 to 359 practice items after the 2026-10-13 tripling, 145 to 261 of them at levels 3 to 5, so each island can draw on its own themes. DW's note on LTF-05 asks for a larger island route list as the corpus grows, and LTF-14 asks for check-ups themed to the island he is on.
+- **Build.** `content/journey.json` stops gain `next` (the stops a route can go to) and `topics`. The engine's `journeyPosition` walks the route he chose instead of a single list; his choices are saved like `journeyChoices`, and his place on today's route maps onto the new map, so nothing resets. A fork beat and route choice in `journey.tsx`, island art in `art.tsx`, and the island's topics added to the item ranking in `pickItems` for that leg.
+- **Eval first.** Engine tests: every route reaches Australia; finished sessions move him along the route he chose; changing the pace never moves him back; a learner partway along today's route keeps his place. An e2e test picks a route at the fork with an axe check. Content validation checks every stop is reachable and every route ends at Australia.
+- **Guards.** At most three routes at a fork, shown with pictures and read aloud. The choice waits for him and has no timer. Interest weighting stays a lean, not a filter: one pick in five still ignores interests, so the interest comparison (R8) stays fair. Items he has seen still come last (see the repeats tracking).
 
 ## LTF-19 Guest codes for friends and classmates
 
 Added 2026-10-13. Requested by DW: "a way for me as an operator/parent to send login codes to friends/classmates can try without a microsoft invite." Approach to confirm.
 
+- **Research.** None needed: this is an access feature, not a teaching one. It follows the plan's privacy rules (Safety, privacy and accessibility), so nothing about a guest child leaves their device.
 - **Why not the live site.** Static Web Apps grants a role only after a sign-in with an identity provider. Invitations are capped at 25 on both plans. Assigning roles with a function needs the Standard plan and still needs a sign-in. A code on its own cannot open the family site.
 - **Proposed: a guest edition at its own address.** A second Free-plan Static Web App, built from this repo with a guest flag. It has no cloud copy and no `/api`, so it never reaches the family's data, and a guest's progress stays on their own device. A `/guest/` path on the same site is possible, but it would share the family site's origin, storage and service worker, so a separate address is cleaner.
 - **Codes.** The grown-ups' area on the family site gains a Guest codes section: a label (for example "Sam's family"), an expiry, and a code to share as a link or a QR code. The family API signs each code with a private key kept in app settings. The guest edition checks the signature and the expiry in the browser with the matching public key.
@@ -33,7 +47,7 @@ Added 2026-10-13. Requested by DW: "a way for me as an operator/parent to send l
 
 ## LTF-01 Show the clue straight away on a new skill's first item
 
-Added 2026-10-13. Approved. Research: Kim et al. 2025, where time delay was the only significant moderator in technology-aided reading. Proposed R17.
+Added 2026-10-13. Approved. Research: [Kim et al. 2025](https://journals.sagepub.com/doi/10.1177/10883576241267963), where time delay was the only significant moderator in technology-aided reading. Plan rule R17.
 
 - **He sees.** On the first Together item of a skill he has never practised, the clue lights up at once. From the second item on, it waits the usual 8 seconds. Your turn does not change.
 - **Grown-ups see.** A switch in Learning settings, and a Hint wait card in Activity once there are 20 answers.
@@ -44,7 +58,7 @@ Added 2026-10-13. Approved. Research: Kim et al. 2025, where time delay was the 
 
 ## LTF-02 A reasoning card for feelings questions
 
-Added 2026-10-13. Approved. Research: Wang & Poon 2026 (think-alouds, an organizer and error correction; gains of 40 to 56 percentage points at ages 10 to 11). Extends R3 and R14.
+Added 2026-10-13. Approved. Research: [Wang & Poon 2026](https://link.springer.com/article/10.1007/s10803-025-07148-5) (think-alouds, an organizer and error correction; gains of 40 to 56 percentage points at ages 10 to 11). Plan rule R24, extending R3 and R14.
 
 - **He sees.** On N5 and P2 items, the second hint is a three-box card: Clue, What I know, So. The N5 worked example in Watch fills in the same card.
 - **Build.** Item gains `reason: {clue, know, so}`. New N5 and P2 items are written with reasons. `ItemView.tsx` shows a ReasonCard at hint level 2. The content guide explains how to write a reason.
@@ -54,7 +68,7 @@ Added 2026-10-13. Approved. Research: Wang & Poon 2026 (think-alouds, an organiz
 
 ## LTF-03 Who's who: tap "she" to see who it means
 
-Added 2026-10-13. Approved. Research: Courteau et al. 2026; O'Connor & Klein 2004; Jozwik & O'Quin 2026. Extends R5, part of proposed R22.
+Added 2026-10-13. Approved. Research: [Courteau et al. 2026](https://link.springer.com/article/10.1007/s11145-026-10824-2); [O'Connor & Klein 2004](https://link.springer.com/article/10.1023/B:JADD.0000022603.44077.6b); [Jozwik & O'Quin 2026](https://eric.ed.gov/?id=EJ1512266). Plan rules R5 and R22.
 
 - **He sees.** Dotted pronouns during Together on N4 and in stories at levels 1 and 2. Tapping one shows "she = Priya". Once N4 is mastered, the dots appear only when he presses Help. They never show in N4 Your turn or the Peak check.
 - **Grown-ups see.** A "Who's who help" setting (auto, on Help only, off), and "Names instead of he/she at level 1".
@@ -64,7 +78,7 @@ Added 2026-10-13. Approved. Research: Courteau et al. 2026; O'Connor & Klein 200
 
 ## LTF-04 Word help
 
-Added 2026-10-13. Approved. Research: Intepe et al. 2025; Kritsotakis & Morfidi 2025. Puts R1's "teach vocabulary inside lessons" into the app.
+Added 2026-10-13. Approved. Research: [Intepe et al. 2025](https://eric.ed.gov/?id=EJ1475591); [Kritsotakis & Morfidi 2025](https://journals.sagepub.com/doi/full/10.1177/23969415251371544). Plan rules R23 and R22, putting R1's "teach vocabulary inside lessons" into the app.
 
 - **He sees.** Up to three underlined words in level 3 to 5 texts. Tapping one shows a picture, a plain meaning and a speaker button. Some warm-ups start with a word from today's text.
 - **Grown-ups see.** The words he taps most, which come back in later warm-ups.
@@ -74,7 +88,7 @@ Added 2026-10-13. Approved. Research: Intepe et al. 2025; Kritsotakis & Morfidi 
 
 ## LTF-05 Today asks "What happened after?"
 
-Added 2026-10-13. Approved. Research: Yang et al. 2026 (AUTIVERSE), where consequences and feelings mostly came only when asked. Proposed R20.
+Added 2026-10-13. Approved. Research: [Yang et al. 2026 (AUTIVERSE)](https://arxiv.org/abs/2509.17466), where consequences and feelings mostly came only when asked. Plan rule R20.
 
 - **He sees.** After something hard, "What happened after that?" with tiles. From stage 2 it is also asked after "What did you do?". His story gains a sentence like "After that, I tried again."
 - **Grown-ups see.** The prompt card uses his answer.
@@ -85,7 +99,7 @@ Added 2026-10-13. Approved. Research: Yang et al. 2026 (AUTIVERSE), where conseq
 
 ## LTF-06 His day as a four-panel strip
 
-Added 2026-10-13. Approved. Needs LTF-05. Research: AUTIVERSE 2026; Lee, Quinn & Jiang 2025.
+Added 2026-10-13. Approved. Needs LTF-05. Research: [Yang et al. 2026 (AUTIVERSE)](https://arxiv.org/abs/2509.17466); [Lee, Quinn & Jiang 2025](https://link.springer.com/article/10.1007/s10803-025-07014-4). Plan rules R20 and R27.
 
 - **He sees.** The "Here is what you told me" screen shows four panels: Before, What happened, After and How I felt. Tapping a panel changes it. Play it aloud reads one panel at a time.
 - **Build.** A Strip component in `Today.tsx`, with styles from the existing tokens.
@@ -94,7 +108,7 @@ Added 2026-10-13. Approved. Needs LTF-05. Research: AUTIVERSE 2026; Lee, Quinn &
 
 ## LTF-07 Ideas behind a button as the tiles fade
 
-Added 2026-10-13. Approved. Research: McWilliams & Hanson 2025; Petersen et al. 2014. Checks R16's "fade slowly".
+Added 2026-10-13. Approved. Research: [McWilliams & Hanson 2025](https://link.springer.com/article/10.1007/s40616-025-00218-w); [Petersen et al. 2014](https://pubs.asha.org/doi/10.1044/2013_LSHSS-12-0099). Plan rule R28, checking R16's "fade slowly".
 
 - **He sees.** From stage 3, a sentence starter and a big "Show me ideas" button. The tiles appear only if he taps it. Nothing times him.
 - **Grown-ups see.** "Answered without ideas: 2 of 5 this week." If he taps Show me ideas on every question for two weeks, Today steps back a stage.
@@ -103,7 +117,7 @@ Added 2026-10-13. Approved. Research: McWilliams & Hanson 2025; Petersen et al. 
 
 ## LTF-08 How his telling is growing
 
-Added 2026-10-13. Approved. Research: Harvey et al. 2025, where length explained most of the gap in narrative structure.
+Added 2026-10-13. Approved. Research: [Harvey et al. 2025](https://journals.sagepub.com/doi/10.1177/01427237251315253), where length explained most of the gap in narrative structure. Plan rule R28.
 
 - **Grown-ups see.** A Today card: sentences per recount over time, parts of the day told, the questions he skips most, and how often he adds his own words.
 - **Build.** RecountEvent gains `sentences` and `skipped`. `recountTrend(events)` goes in `activity.ts`, and the card in `Adult.tsx`.
@@ -112,7 +126,7 @@ Added 2026-10-13. Approved. Research: Harvey et al. 2025, where length explained
 
 ## LTF-09 "Knows" or "only thinks"?
 
-Added 2026-10-13. Approved. Research: Eilon & Novogrodsky 2025. Part of proposed R22.
+Added 2026-10-13. Approved. Research: [Eilon & Novogrodsky 2025](https://link.springer.com/article/10.1007/s10803-025-06895-9). Plan rule R22.
 
 - **He sees.** New N5 sort and tap items that set knowing against thinking, for example "Leo knows" and "Leo only thinks".
 - **Build.** About 16 new N5 items tagged `know-think`, the 12 false-belief items retagged, and the N5 brief updated.
@@ -121,7 +135,7 @@ Added 2026-10-13. Approved. Research: Eilon & Novogrodsky 2025. Part of proposed
 
 ## LTF-10 "Some", "only" and "all" in signs and steps
 
-Added 2026-10-13. Approved. Research: Petit et al. 2026.
+Added 2026-10-13. Approved. Research: [Petit et al. 2026](https://eric.ed.gov/?id=EJ1517530). Plan rule R25.
 
 - **He sees.** Functional items where one small word changes what he can do: "Some lanes are closed today", "Answer any two", "Only for ages 12 and up".
 - **Build.** About 18 items tagged `quantifier` across F2, F4, F5 and F6.
@@ -130,7 +144,7 @@ Added 2026-10-13. Approved. Research: Petit et al. 2026.
 
 ## LTF-11 Metaphor map
 
-Added 2026-10-13. Approved. Research: Skogli-Christensen et al. 2025; Wei et al. 2025; Hu et al. 2025.
+Added 2026-10-13. Approved. Research: [Skogli-Christensen et al. 2025](https://www.mdpi.com/2076-328X/15/11/1556); [Wei et al. 2025](https://link.springer.com/article/10.1007/s10803-025-07142-x); [Hu et al. 2025](https://eric.ed.gov/?id=EJ1479439). Plan rule R25.
 
 - **He sees.** A three-box map for a metaphor: "Her voice is like…", "What do they share?" and "So her voice was…". Idioms are handled by word help (LTF-04) and come back in review.
 - **Build.** Three new story-map slot kinds (`like`, `share`, `means`) in the schema and `ItemView.tsx`, and about 20 N6 metaphor items, some marked as transfer items.
@@ -139,7 +153,7 @@ Added 2026-10-13. Approved. Research: Skogli-Christensen et al. 2025; Wei et al.
 
 ## LTF-12 Understand the message, then act on it
 
-Added 2026-10-13. Approved. Research: Prahl et al. 2025, where comprehension rose but replying did not.
+Added 2026-10-13. Approved. Research: [Prahl et al. 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12452825), where comprehension rose but replying did not. Plan rule R26.
 
 - **He sees.** F5 messages get a second step: pick the reply that matches the plan, or act it out.
 - **Grown-ups see.** Two lines for F5: "Understood the message" and "Did the right thing".
@@ -149,7 +163,7 @@ Added 2026-10-13. Approved. Research: Prahl et al. 2025, where comprehension ros
 
 ## LTF-13 A "Who did it?" stop in scouting
 
-Added 2026-10-13. Approved. Research: O'Leary et al. 2026; Herrero-Roig et al. 2026. Part of proposed R22.
+Added 2026-10-13. Approved. Research: [O'Leary et al. 2026](https://ifp.nyu.edu/2026/journal-article-abstracts/1471-3802-70094/); [Herrero-Roig et al. 2026](https://link.springer.com/article/10.1007/s11145-026-10864-8). Plan rule R22.
 
 - **He sees.** A two-minute scouting stop of six one-sentence grammar items, answered by tapping a picture.
 - **Grown-ups see.** Sentence grammar under Starting point. If it is low, the app suggests "Names instead of he/she" (LTF-03).
@@ -160,7 +174,7 @@ Added 2026-10-13. Approved. Research: O'Leary et al. 2026; Herrero-Roig et al. 2
 
 ## LTF-14 Check-up flight
 
-Added 2026-10-13. Approved. Needs the repeats tracking. Research: Masoumi et al. 2024, where oral story gains did not carry over to reading. Puts R12 into practice, proposed R21.
+Added 2026-10-13. Approved. Needs the repeats tracking. Research: [Masoumi et al. 2024](https://doi.org/10.47176/mjiri.38.118), where oral story gains did not carry over to reading. Plan rule R21, putting R12 into practice.
 
 - **He sees.** About every ten finished sessions, an optional check-up flight: six new texts, no hints, and no right or wrong shown. It earns flight points like any session.
 - **Grown-ups see.** Check-up results over time, kept apart from practice and from Today.
@@ -171,7 +185,7 @@ Added 2026-10-13. Approved. Needs the repeats tracking. Research: Masoumi et al.
 
 ## LTF-15 Which question types work for him
 
-Added 2026-10-13. Approved. Research: Lee, Quinn & Jiang 2025.
+Added 2026-10-13. Approved. Research: [Lee, Quinn & Jiang 2025](https://link.springer.com/article/10.1007/s10803-025-07014-4). Plan rule R27.
 
 - **Grown-ups see.** First-try accuracy by question type in each region, and a "Print a paper story map" button in the grown-up section of the finish screen.
 - **Build.** `formatEffect(progress)` in `activity.ts`, a card in `Adult.tsx`, and a printable story-map page.
@@ -180,7 +194,7 @@ Added 2026-10-13. Approved. Research: Lee, Quinn & Jiang 2025.
 
 ## LTF-16 Coherence and skill checks for new content
 
-Added 2026-10-13. Approved. Research: Maheshwary et al. 2026; Ma, Flor & Wang 2025. Proposed R19.
+Added 2026-10-13. Approved. Research: [Maheshwary et al. 2026](https://aclanthology.org/2026.readi-1.10/); [Ma, Flor & Wang 2025](https://aclanthology.org/2025.bea-1.31/); [Shen et al. 2026](https://aclanthology.org/2026.bea-1.51/). Plan rule R19.
 
 - **Build.** `pipeline/coherence.py` flags sentence pairs that share no people or things. `pipeline/skillcheck.py` checks each item's inference level and tags, and flags near-duplicate passages, so a new passage is not an old one reworded. `content:check` runs all three checks, and CI fails on new problems.
 - **Eval first.** DW rates a gold set of 30 passages and 60 items by hand. The checks must agree with those ratings before they can block a merge, and the gold set is never used for tuning.
@@ -189,7 +203,7 @@ Added 2026-10-13. Approved. Research: Maheshwary et al. 2026; Ma, Flor & Wang 20
 
 ## LTF-17 A scoring test set for typed answers
 
-Added 2026-10-13. Approved. Research: Henkel et al. 2025; Gurin Schleifer et al. 2026. Proposed R18.
+Added 2026-10-13. Approved. Research: [Henkel et al. 2025](https://aclanthology.org/2025.aimecon-sessions.8/); [Gurin Schleifer et al. 2026](https://aclanthology.org/2026.bea-1.29/). Plan rule R18.
 
 - **Build.** `evals/scoring/`: about 300 invented child-style answers, scored by two people and banded clearly right, partly right or clearly wrong. A pytest report gives agreement per band and on answers the two people scored differently. A fine-tuned small encoder joins the model bake-off.
 - **Eval first.** The eval is the deliverable: 0.80 agreement in every band, not just overall.
@@ -197,7 +211,7 @@ Added 2026-10-13. Approved. Research: Henkel et al. 2025; Gurin Schleifer et al.
 
 ## LTF-18 "What do you think?" cards
 
-Added 2026-10-13. Approved. Research: Johnson et al. 2026. Puts R13 into practice.
+Added 2026-10-13. Approved. Research: [Johnson et al. 2026](https://journals.sagepub.com/doi/10.1177/13623613261460932). Plan rule R29, putting R13 into practice.
 
 - **He sees.** A one-time card on the island the first time a feature appears: I like it, not sure, I don't like it, then too much, just right, too little.
 - **Grown-ups see.** His votes next to each feature.
@@ -209,6 +223,7 @@ Added 2026-10-13. Approved. Research: Johnson et al. 2026. Puts R13 into practic
 
 Added 2026-10-12.
 
+- **Research.** R12: the evidence is thin, so the program measures itself, and that measure is only fair on items he has not seen before ([Singh et al. 2021](https://link.springer.com/article/10.1007/s40489-020-00200-3); [Zhang et al. 2023](https://eric.ed.gov/?id=EJ1361852)).
 Check whether the same items and passages come back in later sessions, and how often. Make this part of the reporting component (the grown-ups' area) and the progress tracker.
 
 - **Where it stands.** `pickItems` in `packages/engine/src/index.ts` already serves unseen items first, then the least recently seen, using `Progress.seen`. So repeats should only happen once a skill's pool at that level runs out. Nothing reports when they do.

@@ -77,7 +77,7 @@ export function KitPanel({ points, guide }: { points: number; guide: GuideId }) 
       <div className="bubble">{g.next
         ? <>I have {g.owned.length} of {GEAR.length} pieces for the flight. <b>{g.toNext} more {g.toNext === 1 ? 'point' : 'points'}</b> for the {g.next.name.toLowerCase()}.</>
         : <>We have everything. Ready for take-off!</>}
-        <span className="tagline" style={{ display: 'block', marginTop: '0.4rem' }}>Every answer is a point. Right the first time is one more. Finishing a session is three.</span>
+        <span className="tagline" style={{ display: 'block', marginTop: '0.4rem' }}>Every answer is two points, right or not. Finishing a session is three.</span>
       </div>
     </div>
     <KitMeter points={points} />

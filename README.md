@@ -23,7 +23,7 @@ Engagement is watched and answered, from timing alone (nothing he types):
 - **Activity logging.** Each session records the steps he reaches, pauses of 45 seconds or more, when the app is put away, and demo skips.
 - **What it tells the grown-ups.** The Activity tab and the report say where sessions usually end, where he pauses, which sections take him much longer than usual, which come easily, and when in the day he finishes most. Each pattern comes with something to try.
 - **What the app does about it.** When he pauses, his guide offers to read aloud or give a hint. When he gets past the step where his sessions usually end, he gets a bonus and is told so. Demos he does not need are skipped, and every demo has a "Got it, skip" button.
-- **Flight kit.** His guide gears up for the flight to Australia: twelve pieces, from a flight cap to pilot wings. Points reward effort, never speed (1 per answer, 1 more right first time, 3 per finished session), a meter fills during each session, and every new piece gets a celebration.
+- **Flight kit.** His guide gears up for the flight to Australia: twelve pieces, from a flight cap to pilot wings. Points reward effort only, never speed or scores (2 per answer, right or not, 3 per finished session), a meter fills during each session, and every new piece gets a celebration.
 
 ## Run it
 
@@ -56,6 +56,8 @@ pipeline/.venv/Scripts/python pipeline/check.py
 ```
 
 That checks the reading level of every prose passage. Create the venv once with `python -m venv pipeline/.venv` and `pipeline/.venv/Scripts/pip install -r pipeline/requirements.txt`.
+
+[Why it works](docs/why-it-works.md) links each feature to the research behind it, and says which choices are ours rather than a study's.
 
 ## Layout
 
