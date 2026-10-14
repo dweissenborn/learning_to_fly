@@ -1,5 +1,6 @@
 // One item in any of the seven formats. Every format works by tapping alone; dragging is an extra.
-// A wrong answer never ends an item and never shows a cross: it opens the next hint (R6).
+// A wrong answer never shows a cross. It opens the clue for one more try; a second wrong answer shows the answer, explained
+// (LTF-38: tapping through every choice no longer ends in a success, and only a first-tap right answer looks like one).
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import { Button, DropIndicator, GridList, GridListItem, isTextDropItem, useDragAndDrop, type DropItem, type DropTarget, type Key } from 'react-aria-components';
@@ -28,7 +29,11 @@ function ReasonCard({ id, reason, filled }: { id: string; reason: NonNullable<It
   </section>;
 }
 
-export interface Result { correct: boolean; hint: number; tries: number; ms: number; rubric?: number; note?: string }
+export interface Result {
+  correct: boolean; hint: number; tries: number; ms: number; rubric?: number; note?: string;
+  /** LTF-38: right on the first tap (help asked for or not), the answer shown after two misses, and the time to the first tap. */
+  firstRight: boolean; shown: boolean; firstMs: number;
+}
 export type HintMode = 'auto' | 'request' | 'none' | 'demo';
 export interface ItemViewProps {
   item: Item;
@@ -61,12 +66,13 @@ export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, he
   const passage = pool.passages.get(item.passage)!;
   const [hint, setHint] = useState(0);
   const [tries, setTries] = useState(0);
-  const [solved, setSolved] = useState<null | 'right' | 'answered'>(null);
+  const [solved, setSolved] = useState<null | 'right' | 'helped' | 'shown' | 'answered'>(null);
   const [poke, setPoke] = useState(0); // any interaction restarts the hint timer
   const [rubric, setRubric] = useState<number | undefined>();
   const [note, setNote] = useState('');
   const start = useRef(Date.now());
   const first = useRef<boolean | null>(null);
+  const firstTap = useRef<{ right: boolean; ms: number } | null>(null);
   const isDemo = mode === 'demo';
   const express = item.tier === 'express';
   const highlight = item.format === 'highlight';
@@ -74,7 +80,7 @@ export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, he
   // Reset when the item changes.
   useEffect(() => {
     setHint(0); setTries(0); setSolved(null); setRubric(undefined); setNote('');
-    start.current = Date.now(); first.current = null;
+    start.current = Date.now(); first.current = null; firstTap.current = null;
     if (autoRead && !isDemo) speak([...(listenOnly || item.format !== 'scene' ? passageText(passage) : []), item.prompt], 'auto-' + item.id);
     return () => stopSpeaking();
   }, [item.id]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -93,17 +99,25 @@ export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, he
     return () => clearTimeout(t);
   }, [mode, solved, hint, poke, hintDelay, express, clueAtOnce]);
 
-  const submit = (right: boolean) => {
+  /** `left`: choices still untried after this tap, where a format knows. One left is no real second try, so it shows the answer. */
+  const submit = (right: boolean, left?: number) => {
     const t = tries + 1;
     setTries(t);
     setPoke((p) => p + 1);
     if (first.current === null) first.current = right && hint === 0;
+    firstTap.current ??= { right, ms: Date.now() - start.current };
     if (mode === 'none') { setSolved('answered'); return; }
-    if (right) { setSolved('right'); sfx.good(); }
-    else setHint((h) => Math.min(3, h + 1));
+    if (right) {
+      if (t === 1) { setSolved('right'); sfx.good(); } else setSolved('helped');
+      return;
+    }
+    // LTF-38: the first miss opens the clue (never the answer), the second shows the answer.
+    if (t === 1 && (left === undefined || left > 1)) setHint((h) => Math.min(highlight ? 1 : 2, Math.max(h + 1, 1)));
+    else { setHint(3); setSolved('shown'); }
   };
   const finishExpress = (points: number) => { setRubric(points); setSolved('right'); first.current = true; sfx.good(); };
-  const next = () => onDone?.({ correct: !!first.current, hint, tries: Math.max(1, tries), ms: Date.now() - start.current, rubric, note: note.trim() || undefined });
+  const next = () => onDone?.({ correct: !!first.current, hint, tries: Math.max(1, tries), ms: Date.now() - start.current, rubric, note: note.trim() || undefined,
+    firstRight: !!firstTap.current?.right || (express && solved === 'right'), shown: solved === 'shown', firstMs: firstTap.current?.ms ?? Date.now() - start.current });
 
   // Highlight items tap the passage itself.
   const [hl, setHl] = useState<{ marks: Record<number, Mark>; words: Record<string, Mark> }>({ marks: {}, words: {} });
@@ -122,13 +136,13 @@ export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, he
   const words: Record<string, Mark> = { ...hl.words };
   const showEvidence = isDemo ? demo?.show ?? [] : (highlight ? hint >= 2 : hint >= 1) && !solved ? item.evidence ?? [] : [];
   for (const e of showEvidence) marks[e] ??= 'hl';
-  if (highlight && ((hint >= 3 && !solved) || (isDemo && demo?.reveal))) {
+  if (highlight && ((hint >= 3 && (!solved || solved === 'shown')) || (isDemo && demo?.reveal))) {
     if (item.unit === 'word') words[norm(item.accept?.[0] ?? '')] = isDemo ? 'right' : 'hinted';
     else marks[accepted[0]] = isDemo ? 'right' : 'hinted';
   }
 
   const reveal = isDemo && !!demo?.reveal;
-  const fmt: FormatProps = { item, hint: isDemo ? 0 : hint, solved: !!solved, submit, poke: () => setPoke((p) => p + 1), demo: isDemo, reveal, pictures, none: mode === 'none', finishExpress };
+  const fmt: FormatProps = { item, hint: isDemo ? 0 : hint, solved: !!solved, shown: solved === 'shown', submit, poke: () => setPoke((p) => p + 1), demo: isDemo, reveal, pictures, none: mode === 'none', finishExpress };
   let body: ReactNode = null;
   switch (item.format) {
     case 'tap': body = <Tap {...fmt} />; break;
@@ -142,7 +156,7 @@ export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, he
   const hintText = hint === 0 ? null
     : hint === 1 ? (highlight || !item.evidence?.length ? item.hint ?? 'Read it again, slowly.' : 'Look at the part that is lit up.')
     : hint === 2 ? `${item.hint ?? 'Read it again, slowly.'}${highlight ? ' Look at the lit-up part.' : ''}`
-    : `Here is the answer. ${item.explain} ${['order', 'sort', 'storymap', 'build'].includes(item.format) ? 'Tap Check to go on.' : 'Tap it to go on.'}`;
+    : `Here is the answer. ${item.explain}`;
 
   const showPassage = item.format !== 'scene' || passage.sentences.length > 0 || !!passage.visual;
   return <div className="lesson">
@@ -159,11 +173,13 @@ export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, he
           {item.reason && (isDemo ? !!demo?.fill?.length : hint >= 2 && !solved) && <ReasonCard id={item.id} reason={item.reason}
             filled={isDemo ? demo!.fill! : hint >= 3 ? ['clue', 'know', 'so'] : ['clue', 'know']} />}
           {solved === 'answered' && <div className="feedback neutral appear"><Guide id={guide} size={44} /><span>Thank you. On to the next one.</span></div>}
+          {solved === 'helped' && <div className="feedback neutral appear"><Guide id={guide} size={44} /><span>You found it with the clue. {item.explain}</span></div>}
+          {solved === 'shown' && <div className="feedback neutral appear"><Guide id={guide} mood="think" size={44} /><span>Here is the answer. {item.explain} <b>Now you have seen how.</b></span></div>}
           {solved === 'right' && <div className="feedback good appear">
             <Guide id={guide} mood="happy" size={44} />
             <div>
               {express ? <>{(RUBRIC.slice(1, (rubric ?? 0) + 1).join(' ') || 'Thank you for sharing your ideas.')} <span className="muted">{item.explain}</span></>
-                : <><b>{first.current ? '' : 'You got there. '}{praiseFor(item, praiseIndex)}</b> {item.explain}</>}
+                : <><b>{praiseFor(item, praiseIndex)}</b> {item.explain}</>}
             </div>
           </div>}
           {solved === 'right' && (express || item.personal) && <div className="field appear">
@@ -184,24 +200,26 @@ export function NextSlot({ children }: { children: ReactNode }) {
 }
 
 interface FormatProps {
-  item: Item; hint: number; solved: boolean; submit: (right: boolean) => void; poke: () => void;
+  item: Item; hint: number; solved: boolean; submit: (right: boolean, left?: number) => void; poke: () => void;
   demo: boolean; reveal: boolean; pictures: boolean; none: boolean; finishExpress: (points: number) => void;
+  /** LTF-38: the answer is being shown after two misses: mark it as the answer, not as a success. */
+  shown?: boolean;
 }
 
 // ---------------------------------------------------------------- tap
-function Tap({ item, hint, solved, submit, demo, reveal, pictures, none }: FormatProps) {
+function Tap({ item, hint, solved, shown, submit, demo, reveal, pictures, none }: FormatProps) {
   const order = useMemo(() => shuffled(item.options!, item.id), [item.id]);
   const [tried, setTried] = useState<Set<number>>(new Set());
   const [pick, setPick] = useState<number | null>(null);
   useEffect(() => { setTried(new Set()); setPick(null); }, [item.id]);
   const ans = item.answer as number;
-  const faded = hint >= 2 && !none ? order.find((i) => i !== ans && !tried.has(i)) : undefined;
+  const faded = hint >= 2 && !none && !tried.size ? order.find((i) => i !== ans) : undefined;
   return <div className="options" role="group" aria-label="Answers">
     {order.map((i) => {
-      const right = (solved && !none && i === ans) || (reveal && i === ans);
-      const cls = ['opt', tried.has(i) && 'tried', right && 'right', hint >= 3 && i === ans && !solved && 'hinted', faded === i && 'faded', none && pick === i && 'picked'].filter(Boolean).join(' ');
+      const right = (solved && !none && !shown && i === ans) || (reveal && i === ans);
+      const cls = ['opt', tried.has(i) && 'tried', right && 'right', hint >= 3 && i === ans && (!solved || shown) && 'hinted', faded === i && 'faded', none && pick === i && 'picked'].filter(Boolean).join(' ');
       return <Button key={i} className={cls} isDisabled={demo || solved || tried.has(i) || faded === i}
-        onPress={() => { setPick(i); if (i === ans) submit(true); else { if (!none) setTried((t) => new Set(t).add(i)); submit(false); } }}>
+        onPress={() => { setPick(i); if (i === ans) submit(true); else { if (!none) setTried((t) => new Set(t).add(i)); submit(false, order.length - tried.size - 1); } }}>
         {pictures && item.pictures?.[i] && <span className="pic" aria-hidden>{item.pictures[i]}</span>}
         <span>{item.options![i]}</span>
       </Button>;
@@ -210,21 +228,21 @@ function Tap({ item, hint, solved, submit, demo, reveal, pictures, none }: Forma
 }
 
 // ---------------------------------------------------------------- scene
-function Scene({ item, hint, solved, submit, demo, reveal, none }: FormatProps) {
+function Scene({ item, hint, solved, shown, submit, demo, reveal, none }: FormatProps) {
   const seq = ([] as number[]).concat(item.answer as number | number[]);
   const [k, setK] = useState(0);
   const [tried, setTried] = useState<Set<number>>(new Set());
   useEffect(() => { setK(0); setTried(new Set()); }, [item.id]);
-  const done = reveal ? seq.length : solved && !none ? seq.length : k;
-  const faded = hint >= 2 && seq.length === 1 && !none ? item.objects!.findIndex((_, j) => j !== seq[0] && !tried.has(j)) : -1;
+  const done = reveal ? seq.length : solved && !none && !shown ? seq.length : k;
+  const faded = hint >= 2 && seq.length === 1 && !none && !tried.size ? item.objects!.findIndex((_, j) => j !== seq[0]) : -1;
   const press = (j: number) => {
     if (j === seq[k]) { if (k + 1 === seq.length) submit(true); setK(k + 1); }
-    else { if (seq.length === 1 && !none) setTried((t) => new Set(t).add(j)); submit(false); }
+    else { if (seq.length === 1 && !none) setTried((t) => new Set(t).add(j)); submit(false, seq.length === 1 ? item.objects!.length - tried.size - 1 : undefined); }
   };
   return <div className={`scene scene-${item.scene}`} role="group" aria-label="Scene">
     {item.objects!.map((o, j) => {
       const step = seq.slice(0, done).indexOf(j);
-      const cls = ['sobj', step >= 0 && 'right', tried.has(j) && 'tried', hint >= 3 && !solved && seq[k] === j && 'hinted', faded === j && 'tried'].filter(Boolean).join(' ');
+      const cls = ['sobj', step >= 0 && 'right', tried.has(j) && 'tried', hint >= 3 && (!solved || shown) && (shown ? seq.slice(k).includes(j) : seq[k] === j) && 'hinted', faded === j && 'tried'].filter(Boolean).join(' ');
       return <Button key={j} className={cls} isDisabled={demo || solved || tried.has(j) || faded === j} onPress={() => press(j)} aria-label={o.sign ? `${o.label}, sign says ${o.sign.text}` : o.label}>
         {step >= 0 && seq.length > 1 && <span className="stepn" aria-hidden>{step + 1}</span>}
         {o.sign ? <SignSvg s={o.sign} /> : <span className="semoji" aria-hidden>{o.emoji ?? '⬜'}</span>}

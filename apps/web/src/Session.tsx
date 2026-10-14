@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button, Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId } from '@wayfinder/schema';
-import { ALL_SKILLS, checkupDue, choices, flightPoints, gate, isInterest, levelFor, mulberry32, planCheckup, planGateCheck, planSession, RULES, strandOf, usualStop, type Choice, type Progress, type SessionPlan, type StepName, type WordCard as WordCardT } from '@wayfinder/engine';
+import { pointsFor, minReadMs, flightPeak, ALL_SKILLS, checkupDue, choices, flightPoints, gate, isInterest, levelFor, mulberry32, planCheckup, planGateCheck, planSession, RULES, strandOf, type Choice, type Progress, type SessionPlan, type StepName, type WordCard as WordCardT } from '@wayfinder/engine';
 import { addNote, log, type GuideId, type Settings } from './db';
 import { pool, passageText, SKILL, STRAND } from './content';
 import { ItemView, NextSlot, type HintMode, type Result } from './ItemView';
@@ -33,7 +33,7 @@ export function placedFrom(events: LogEvent[]): Placed[] {
   return events.flatMap((e) => (e.type === 'world' ? [{ piece: e.piece, x: e.x, y: e.y, id: e.id, ts: e.ts, island: e.island ?? 'home' }] : []));
 }
 
-export function Session({ settings, events, progress, onExit }: { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void }) {
+export function Session({ settings, events, progress, onExit, onBreak }: { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void; onBreak: (why: 'break' | 'rapid') => void }) {
   const [step, setStep] = useState<Step>('plan');
   const [mode, setMode] = useState<'lesson' | 'check' | 'checkup'>('lesson');
   const [plan, setPlan] = useState<SessionPlan | null>(null);
@@ -43,7 +43,6 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
   const [helpTick, setHelpTick] = useState(0);
   const [wordDone, setWordDone] = useState(false);
   const [done, setDone] = useState<{ item: Item; phase: Step; r: Result }[]>([]);
-  const [askStop, setAskStop] = useState(false);
   const sid = useMemo(() => crypto.randomUUID(), []);
   const started = useRef(false);
   const before = useMemo(() => ({ mastered: new Set(ALL_SKILLS.filter((s) => progress.skills[s].everMastered)), opened: progress.gateOpened, finished: finishedCount(progress) }), []); // eslint-disable-line react-hooks/exhaustive-deps
@@ -60,11 +59,10 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const guide = settings.guide;
   const steps = mode === 'lesson' ? LESSON : mode === 'check' ? CHECK : CHECKUP;
-  const points = flightPoints(events);
-  // Where his recent sessions usually end. Getting past it earns a bonus, said out loud.
-  const stopAt = useMemo(() => usualStop(events), []); // eslint-disable-line react-hooks/exhaustive-deps
-  const boosted = useRef(false);
-  const [boostMsg, setBoostMsg] = useState('');
+  const points = flightPoints(events), peak = flightPeak(events);
+  // LTF-38: fast wrong answers in a row, and when the session began (for ending on a success at a set time).
+  const rapidRun = useRef(0);
+  const begun = useRef(0);
 
   const lists: Partial<Record<Step, Item[]>> = plan ? { warmup: plan.warmup, together: plan.together, yourturn: [...plan.yourturn, ...plan.express] } : mode === 'checkup' ? { checkup: checkItems } : { gatecheck: checkItems };
   const current = lists[step]?.[idx];
@@ -72,6 +70,7 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
   const choose = (c: Choice) => {
     const ctx = { pool, seen: progress.seen, interests, allowThemes: settings.hardThemes, hidden: new Set(settings.hidden), rng: mulberry32(Date.now() % 2147483647), tapped: tappedWords(events) };
     started.current = true;
+    begun.current = Date.now();
     if (c.kind === 'checkup') {
       setCheckItems(planCheckup(ctx, stopId));
       setMode('checkup');
@@ -98,13 +97,6 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
     if (s === 'watch' && !p?.model) s = 'together';
     if (s === 'together' && !p?.together.length) s = 'yourturn';
     if (s === 'yourturn' && p && !p.yourturn.length && !p.express.length) s = 'finish';
-    if (stopAt && !boosted.current && LESSON.indexOf(s) > LESSON.indexOf(stopAt) && started.current) {
-      boosted.current = true;
-      void log({ type: 'activity', session: sid, kind: 'boost', step: stopAt, points: 3 });
-      sfx.boost();
-      setBoostMsg(`You kept going past ${STEP_META[stopAt].label}. +3 flight points!`);
-      setTimeout(() => setBoostMsg(''), 7000);
-    }
     if (settings.rewardPace === 'step' && !['plan', 'choose', 'warmup'].includes(s)) sfx.lantern();
     setStep(s);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -115,22 +107,31 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
   const clueAtOnce = step === 'together' && idx === 0 && !!plan?.newSkill && settings.clueFirst;
   const onDone = (item: Item, r: Result) => {
     const phase = step as 'warmup' | 'together' | 'yourturn' | 'gatecheck' | 'checkup';
+    // LTF-38: a first tap faster than the question could be read is a guess: it is set aside and earns nothing.
+    const rapid = settings.guessCheck !== false && item.tier !== 'express' && r.firstMs < minReadMs(item);
     log({
       type: 'answer', session: sid, item: item.id, skill: item.skill, phase, correct: r.correct, hint: r.hint, tries: r.tries, ms: r.ms, format: item.format,
       transfer: !!item.transfer, interest: isInterest(pool, item, settings.interests), readAloud: settings.readAloud, level: item.level, ...(phase === 'together' ? { delay: clueAtOnce ? 0 : settings.hintDelay } : {}), ...(r.rubric !== undefined ? { rubric: r.rubric } : {}),
       ...(item.reason && r.hint >= 2 ? { card: true } : {}),
+      ...(r.shown ? { shown: true } : {}), ...(rapid ? { rapid: true } : {}), points: pointsFor({ correct: r.correct, shown: r.shown, rapid }),
     });
     if (r.note) addNote({ kind: 'answer', personal: !!item.personal, item: item.id, title: item.prompt, text: r.note });
     setDone((d) => [...d, { item, phase, r }]);
     if (settings.rewardPace === 'item') sfx.lantern();
+    // LTF-38: two fast wrong answers in a row end the session kindly. Never a "slow down".
+    rapidRun.current = rapid && !r.firstRight ? rapidRun.current + 1 : 0;
+    if (rapidRun.current >= 2) return takeBreak('rapid');
+    // LTF-38: a grown-up can end sessions on a success after a set time, before guessing tends to start.
+    if (mode === 'lesson' && settings.endAt && r.firstRight && Date.now() - begun.current >= settings.endAt * 60_000) return go('finish');
     if (idx + 1 < (lists[step]?.length ?? 0)) { setIdx(idx + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }
     else nextPhase(step);
   };
 
-  const stop = () => {
+  // LTF-38: "I need a break" is honoured at once, every time, and he goes to the lounge. Everything is saved.
+  const takeBreak = (why: 'break' | 'rapid') => {
     stopSpeaking();
-    if (started.current && step !== 'finish') log({ type: 'session', session: sid, action: 'stop' });
-    onExit();
+    if (started.current && step !== 'finish') log({ type: 'session', session: sid, action: 'stop', reason: why });
+    onBreak(why);
   };
 
   const idle = useActivity(sid, step as StepName, current?.id, started.current);
@@ -159,11 +160,10 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
         {settings.rewardPace === 'item' && phaseItems > 0 && <Lanterns total={phaseItems} lit={idx} />}
         {settings.rewardPace === 'step' && <Lanterns total={steps.length - 2} lit={Math.max(0, steps.indexOf(step) - 2)} />}
       </nav>
-      <KitMeter points={points} />
+      <KitMeter points={points} peak={peak} />
     </header>
 
     <main id="main">
-      {boostMsg && <div className="feedback good appear boost toast" role="status"><span aria-hidden>🚀</span><span>{boostMsg}</span></div>}
       {idle && (current || step === 'watch') && <div className="guide-row nudge appear toast" role="status">
         <Guide id={guide} mood="think" size={48} />
         <div className="bubble">{step === 'watch'
@@ -214,22 +214,15 @@ export function Session({ settings, events, progress, onExit }: { settings: Sett
     </main>
 
     {step !== 'finish' && <footer className="bottombar no-print">
-      <Btn className="quiet" onPress={() => (started.current ? setAskStop(true) : stop())}><span className="ico" aria-hidden>⏸️</span><span className="lbl">Stop</span></Btn>
+      <Btn className="quiet" onPress={() => takeBreak('break')}><span className="ico" aria-hidden>⏸️</span><span className="lbl">I need a break</span></Btn>
       <SpeakBtn lines={readLines} k="bar" />
       <Btn isDisabled={!helpOn} onPress={() => setHelpTick((t) => t + 1)}><span className="ico" aria-hidden>💡</span><span className="lbl">Help</span></Btn>
       <span className="spacer" />
       <span id="bar-next" className="row" style={{ gap: '0.6rem' }} />
     </footer>}
 
-    <GearCelebration points={points} guide={guide} seen={settings.kitSeen ?? 0} />
+    <GearCelebration peak={peak} guide={guide} seen={settings.kitSeen ?? 0} />
 
-    <ModalOverlay className="overlay" isOpen={askStop} onOpenChange={setAskStop} isDismissable>
-      <Modal><Dialog className="dialog" style={{ maxWidth: 480 }}>
-        <Heading slot="title">Stop for now?</Heading>
-        <p>Everything you did is saved. You can come back any time.</p>
-        <div className="row"><Btn className="primary" autoFocus onPress={() => setAskStop(false)}>Keep going</Btn><Btn onPress={stop}>Stop</Btn></div>
-      </Dialog></Modal>
-    </ModalOverlay>
   </>;
 }
 
@@ -294,7 +287,10 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
   // The journey: this session counts as finished, so it may bring an arrival or a new koala.
   const prev = journeyNow(before.finished, settings);
   const now = journeyNow(before.finished + 1, settings);
-  const arrivedStop = now.stop > prev.stop ? now.here : null;
+  // An arrival on the way to Australia, or (LTF-30) at a stop of the keeper arc.
+  const arrivedStop = now.stop > prev.stop ? now.here : now.arc && now.arc.stop > (prev.arc?.stop ?? 0) ? now.arc.here
+    : now.trip && now.trip.stop > (prev.trip?.stop ?? 0) ? now.trip.here : null; // LTF-30, LTF-27
+  useEffect(() => { if (now.arc && !prev.arc) void log({ type: 'activity', session: sid, kind: 'arc' }); }, []); // eslint-disable-line react-hooks/exhaustive-deps
   // LTF-36: what he builds today goes on the island he is on now (the new one, if he just arrived).
   const isle = islandOf(now.here.id);
   const lit = litFrom(progress);
@@ -306,7 +302,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
   const offers = useMemo(() => {
     const rng = mulberry32([...sid].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) | 0, 7));
     const owned = new Set(onIsle.map((p) => p.piece));
-    const reached = reachedStops(now.stop, settings);
+    const reached = new Set([...reachedStops(now.stop, settings, now.arc?.stop), ...(now.trip?.places ?? [])]);
     const avail = PIECES.filter((p) => (p.region !== 'philosophical' || peaksOpen) && (!p.stop || reached.has(p.stop)));
     const out: string[] = arrivedStop?.souvenir ? [arrivedStop.souvenir] : [];
     const add = (list: typeof PIECES) => {

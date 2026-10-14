@@ -25,7 +25,7 @@ Engagement is watched and answered, from timing alone (nothing he types):
 - **Activity logging.** Each session records the steps he reaches, pauses of 45 seconds or more, when the app is put away, and demo skips.
 - **What it tells the grown-ups.** The Activity tab and the report say where sessions usually end, where he pauses, which sections take him much longer than usual, which come easily, and when in the day he finishes most. Each pattern comes with something to try.
 - **What the app does about it.** When he pauses, his guide offers to read aloud or give a hint. When he gets past the step where his sessions usually end, he gets a bonus and is told so. Demos he does not need are skipped, and every demo has a "Got it, skip" button.
-- **Flight kit.** His guide gears up for the flight to Australia: twelve pieces, from a flight cap to pilot wings. Points reward effort only, never speed or scores (2 per answer, right or not, 3 per finished session), a meter fills during each session, and every new piece gets a celebration.
+- **Flight kit.** His guide gears up for the flight to Australia: twelve pieces, from a flight cap to pilot wings. Points reward thinking rather than tapping through (4 right on the first tap, 2 with the clue, 1 off when the answer is shown, none for a guess faster than reading, 3 per finished session), gear once earned is never taken back, a meter fills during each session, and every new piece gets a celebration.
 
 ## Run it
 

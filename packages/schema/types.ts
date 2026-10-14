@@ -474,6 +474,18 @@ export interface AnswerEvent {
    * A reasoning card (Clue, What I know, So) was shown before this answer (LTF-02).
    */
   card?: boolean;
+  /**
+   * LTF-38: two wrong taps, so the answer was shown ("Now you've seen how").
+   */
+  shown?: boolean;
+  /**
+   * LTF-38: the first tap came faster than the question could be read. Set aside: no points, and it never counts toward or against mastery.
+   */
+  rapid?: boolean;
+  /**
+   * LTF-38: flight points this answer earned, saved when it was given (4 right on the first tap, 2 with the clue, -1 when shown, 0 for a fast guess). Older answers without it earned 2.
+   */
+  points?: number;
 }
 export interface SessionEvent {
   id: string;
@@ -488,6 +500,10 @@ export interface SessionEvent {
    * LTF-14: an optional check-up flight.
    */
   checkup?: boolean;
+  /**
+   * LTF-38, on a stop: he asked for a break, answers came faster than reading, or the session ended on a success at the time a grown-up set.
+   */
+  reason?: 'break' | 'rapid' | 'time';
 }
 export interface PlacementEvent {
   id: string;
@@ -568,7 +584,7 @@ export interface RealWorldEvent {
   note?: string;
 }
 /**
- * How a session went, moment to moment: steps entered, idle spells, leaving the app, demo skips, his votes on new things, and the bonus for getting past his usual stopping point. Holds no text he wrote.
+ * How a session went, moment to moment: steps entered, idle spells, leaving the app, demo skips, his votes on new things, and (before LTF-38) the bonus for getting past his usual stopping point. Holds no text he wrote.
  */
 export interface ActivityEvent {
   id: string;
@@ -576,7 +592,7 @@ export interface ActivityEvent {
   type: 'activity';
   session: string;
   /**
-   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point. opinion: his answer on a 'What do you think?' card. word-help: he tapped a word for its meaning (LTF-04). word-check: he answered the warm-up's word for today. who-help: he tapped a dotted pronoun to see who it means (LTF-03). route: he chose a sea route at a fork; item is the island (LTF-20).
+   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point (no longer given since LTF-38). opinion: his answer on a 'What do you think?' card. word-help: he tapped a word for its meaning (LTF-04). word-check: he answered the warm-up's word for today. who-help: he tapped a dotted pronoun to see who it means (LTF-03). route: he chose a sea route at a fork; item is the island (LTF-20). daytrip: he opened a reached island's day trip; item is the stop (LTF-26). arc: the koala keeper arc began after the eighth koala (LTF-30). home: he chose to fly home after Opening Day (LTF-27).
    */
   kind:
     | 'step'
@@ -589,7 +605,10 @@ export interface ActivityEvent {
     | 'word-help'
     | 'word-check'
     | 'who-help'
-    | 'route';
+    | 'route'
+    | 'daytrip'
+    | 'arc'
+    | 'home';
   step?: 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish' | 'checkup';
   item?: string;
   /**

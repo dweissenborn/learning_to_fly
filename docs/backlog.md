@@ -15,6 +15,22 @@ Each step lands its test before its code.
 5. **Large content work.** LTF-20 (island routes, before LTF-14 so check-up flights can come from the island he chose), LTF-04, LTF-11 (idioms use LTF-04), LTF-03, LTF-14. Built 2026-10-13: LTF-04 (pilot), LTF-11, LTF-03 (N4 first), LTF-14 (all ten stops, the four islands included), and LTF-20, built with the proposed LTF-21 to LTF-24 as its island stories so DW can review them in the app. Waiting for DW: those island stories, and the koala keeper arc (LTF-30 to LTF-35). LTF-25 to LTF-29 come later, if approved.
 6. **Guest codes.** LTF-19, a separate track. Approach to confirm; DW 2026-10-13: not now.
 
+## LTF-38 Clicking through to the green check
+
+Added 2026-10-13 by DW. Approach chosen by DW the same day, and built 2026-10-13, first in the queue.
+
+- **What was built.** A wrong tap opens the clue for one more try (it never fades a choice, which would leave only the answer); a second wrong tap shows the answer, explained, with a neutral "Now you have seen how." Only an answer right on the first tap gets the success look and sound; right with the clue gets a neutral "You found it with the clue." Points are saved on each answer (`pointsFor`): 4 right on the first tap, 2 with the clue, 1 off when the answer was shown, none for a fast guess; older answers keep their 2. Gear follows his best total (`flightPeak`), so a piece is never taken back. The +3 bonus for going past his usual stopping point is gone. A first tap faster than the question could be read (`minReadMs`, about 600 words a minute, at least 1.5 seconds) is flagged `rapid`: it earns nothing and never counts toward or against mastery; two fast wrong answers in a row end the session kindly. "I need a break" replaces Stop on every session screen and is honoured at once, with no "Keep going" question, and both kinds of stop go to the lounge (`apps/web/src/Lounge.tsx`): a kite to fly (pointer, tap or arrow keys), his journey, his flight kit, nothing to answer. The grown-ups' Activity tab has a "Guessing and breaks" card (`guessing`: guesses set aside, kind stops, breaks asked for, and the minute guessing usually starts), and Settings can turn the guess check off or end sessions on a success after 8 to 15 minutes. Tests: `packages/engine/src/guessing.test.ts` (points, best total, reading time, set-aside answers, the guessing summary) and e2e runs of the wrong-tap path, a break, and two fast wrong answers into the lounge, with axe. The e2e helper answers instantly, so tests turn the guess check off unless they test it.
+- **DW's choices.** A wrong tap: the clue, then one more try. Stopping: honoured, and "put him in a lounge with something fun to do". Points: "bonus when answered correct the first time, subtract when it's a third attempt", read as 4 on the first tap and 1 off when the answer had to be shown, replacing the keep-going bonus.
+- **Original proposal.** Tapping choices until one turns green is a known pattern ("gaming the system"): when work becomes aversive, clicking through is the fastest way out. In a study of middle schoolers with a maths tutor it was the off-task behaviour most strongly tied to learning less, and rapid guessing on tests grows the longer a session runs. A three-choice item that allows retries always ends in success within three taps, so it rewards finishing, not thinking.
+
+- **What the app does today.** Mastery already counts only answers right on the first tap with no hint (`first.current` in `apps/web/src/ItemView.tsx`). But a wrong tap opens the next hint and he can keep tapping, and any right tap gets the same success sound and look. Flight points are 2 for every answer, right or wrong (`flightPoints` in `packages/engine/src/activity.ts`), so fast guessing earns points too. Every session screen has a Stop button, but its dialog makes "Keep going" the default. Answer times are logged (`ms`), but nothing looks for rapid guessing. And a +3 bonus rewards keeping going past his usual stopping point (`usualStop`), the opposite of ending before fatigue.
+- **1. Take away the payoff.** The success look only for answers right on the first tap; after a wrong tap or help, a neutral "Now you have seen how." A wrong tap opens a smaller step or "show me", then a fresh item, rather than the remaining choices. More items where guessing barely works (tapping the sentence, building an answer) rather than picking from three.
+- **2. A real way out.** An "I need a break" button on every screen, honoured at once, every time, with no "Keep going" nudge. Teaching a request to replace escape behaviour is an established practice (Functional Communication Training).
+- **3. Detect it gently.** With no clock on screen, two or three wrong answers in a row, each faster than the question could be read, end the session kindly ("Good place to stop. Your progress is saved."). That stretch of answers is set aside and counts neither for nor against him.
+- **4. End before burnout.** The grown-ups see when guessing tends to start (say minute 9), and sessions can be set to end on a success before then.
+- **Guards.** Nothing that feels like punishment: no lockouts, no "slow down" messages, no timers on screen.
+- **Research.** [Baker et al. 2004, gaming the system](https://hci.rwth-aachen.de/materials/conferences/CHI2004/1p383.pdf); [Lindner, Lüdtke & Nagy 2019, onset of rapid guessing](https://www.frontiersin.org/articles/10.3389/fpsyg.2019.01533/pdf); [Wise & Kong 2005, response time effort](https://doi.org/10.1207/s15324818ame1802_2); [NCAEP 2020 evidence-based practices](https://ncaep.fpg.unc.edu/wp-content/uploads/EBP-Report-2020.pdf); [ASAT on Functional Communication Training](https://asatonline.org/?p=17300).
+
 ## LTF-36 A new island at each stop
 
 Added 2026-10-13 from DW's feedback: "as he progresses island, he stays in the same place... if he's progressing to the next island, the scenery should change, and he should have a new series/areas to unlock and progress." Approach chosen by DW the same day: home moves to each island he reaches, with areas that open one by one, things to build that belong there, a small quest, and areas gated on his level that he can come back to later. Built 2026-10-13, with the island text for DW's review in the app.
@@ -49,11 +65,11 @@ Added 2026-10-13. Approved by DW: islands follow his interests, every route reac
 
 ## Proposed: branch-out stories (LTF-21 to LTF-29)
 
-Added 2026-10-13, drafted by a story-ideation pass for DW's review. Nothing here is approved yet. LTF-21 to LTF-24 are in the app as LTF-20's islands (stop entries, the shared seams, map, scenes, souvenirs and the "What do you think?" line), so they can be reviewed there, with 12 check-up texts each; DW's read stays open. LTF-21 to LTF-24 are a full five-beat arc for each LTF-20 island; LTF-25 to LTF-29 are smaller branch-outs for later. Every arc keeps the journey's rules: it moves with finished sessions, the setback is scripted and explained, both plans work, and Captain Ada's invitation to Cloud Hill closes each island's postcard, so the airfield leg still follows. Three seams in today's canon are shared subtasks, done once for all four islands: Gull Island's last postcard line ("The kites are over Windy Cape.") and the airfield's beat 1 ("Bus 9 goes from Windy Cape to Cloud Hill") assume the Windy Cape route, and the map marker in `journey.tsx` picks the bus icon by stop index (`now.stop === 2`) rather than by stop.
+Added 2026-10-13, drafted by a story-ideation pass for DW's review. DW approved all of them on 2026-10-13 (LTF-29 is replaced by the koala keeper arc). LTF-21 to LTF-24 are in the app as LTF-20's islands (stop entries, the shared seams, map, scenes, souvenirs and the "What do you think?" line), so they can be reviewed there, with 12 check-up texts each; DW's read stays open. LTF-21 to LTF-24 are a full five-beat arc for each LTF-20 island; LTF-25 to LTF-29 are smaller branch-outs for later. Every arc keeps the journey's rules: it moves with finished sessions, the setback is scripted and explained, both plans work, and Captain Ada's invitation to Cloud Hill closes each island's postcard, so the airfield leg still follows. Three seams in today's canon are shared subtasks, done once for all four islands: Gull Island's last postcard line ("The kites are over Windy Cape.") and the airfield's beat 1 ("Bus 9 goes from Windy Cape to Cloud Hill") assume the Windy Cape route, and the map marker in `journey.tsx` picks the bus icon by stop index (`now.stop === 2`) rather than by stop.
 
 ## LTF-21 Fossil Bay: the dig under the cliff
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
+Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LTF-36 quest lines). Part of LTF-20.
 
 - **Story.** The south sea route goes to Fossil Bay, gray cliffs made of rock layers where Dr. Bell (the fossil expert at the Harbor Town Fossil Museum, already in the bank) is running a dig. The setback is a closed beach: the cliff is wet after a night of rain, so the boat cannot land under it. It suits dinosaurs and mining because the leg is about fossils, rock layers and digging tools, and the postcard ends with a real fossil going into a plaster jacket, as the bank's F2 passage describes.
 - **He sees.**
@@ -80,7 +96,7 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
 
 ## LTF-22 Reef Island: the boat waits for the tide
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
+Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LTF-36 quest lines). Part of LTF-20.
 
 - **Story.** The west sea route goes to Reef Island, a ring of coral around a calm lagoon, with Mari, who drives the reef boat (new, needed for the island). The setback is a late boat: the channel through the reef is deep enough only at high tide, so today's crossing moves to 5 PM. It suits ocean and animals because the wait is spent at tide pools and the postcard is coral, a clownfish and turtle tracks.
 - **He sees.**
@@ -106,7 +122,7 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
 
 ## LTF-23 Star Point: a cloudy night at the observatory
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
+Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LTF-36 quest lines). Part of LTF-20.
 
 - **Story.** The north sea route goes to Star Point, a headland with a white observatory dome and a weather station, run by Dr. Amal (new). The setback is weather: clouds come in from the sea on the first night, so the dome stays shut. It suits space and weather because the wait is spent on a weather balloon launch or a star map, and the clear night brings the Moon, Saturn and the space station.
 - **He sees.**
@@ -132,7 +148,7 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
 
 ## LTF-24 Rail Coast: a broken signal
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
+Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LTF-36 quest lines). Part of LTF-20.
 
 - **Story.** The east sea route lands at Pier Station on Rail Coast, where the Coast Line train runs beside the sea to Rail Coast station, with Mr. Haddad, the signal operator (new). The setback is a broken part: a signal at Shell Halt is broken, and trains wait until it is fixed, while a bus runs instead. It suits transport and maps because the plan is read off a message and a line map, and the postcard is a signal box and a map room with every island on the wall.
 - **He sees.**
@@ -158,7 +174,9 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Part of LTF-20.
 
 ## LTF-25 A second fork at Cloud Hill: two flight paths
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20.
+Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20.
+
+- **What was built (2026-10-13).** The Australia stop has two `paths`: the island way (its own beats, kept for anyone already flying when the paths arrived) and the reef way, with Shell Island's runway closed for rolling after rain. At Take-off the journey waits, as at a sea fork, on a "Choose your flight path" card; the story then follows the chosen path's beats, and both land after the same number of sessions. One change from the proposal, for the story's logic: the Kookaburra lands on Shell Island for fuel and the runway then closes, so he waits on the ground (watching the roller is possible) and takes off at 3 PM. The map shows both paths while he chooses and the reef way's small islands after. The home screen says Captain Ada has two flight paths; the Overview and Settings name the path. `npm run check` checks that a stop with paths keeps exactly one for learners already on the way and that every path has as many beats as the stop. Tests: unit (waiting at Take-off, the reef way's beats, the same landing time, the kept path) and an e2e run that picks the reef way, with axe.
 
 - **Story.** At the airfield, Captain Ada shows two flight paths on her map: the island way (today's Australia leg, with the windy day on a small island) and the reef way, over a chain of small islands. The reef way's setback is a closed airstrip: the runway on Shell Island is being rolled flat after rain, so the Kookaburra waits until 3 PM. Same number of sessions, same landing at Bluegum.
 - **He sees.** Beat 0: Captain Ada's map with two paths. Beat 1: "Below you, the small islands look like green dots in a blue sea." Beat 2 (`blocked`, notice "Shell Island Airstrip": "Runway closed until 3 PM." / "A roller is flattening it after the rain." / "Planes may land after 3 PM."), cope "A runway that is being fixed will open again. We land at 3 PM.", ask "What will you do while the roller works?", Plan A "Watch the roller from the fence" → beat 3 "At 3 PM the runway was flat and dry, and the Kookaburra landed for fuel." Plan B "Write a postcard home" → beat 3 "You wrote a postcard. At 3 PM the runway was flat and dry, and the Kookaburra landed for fuel." Beat 4: "The fuel tank is full again. One more session, and you land in Australia." Postcard and souvenir: the existing Australia postcard and koala piece, unchanged.
@@ -174,7 +192,9 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20.
 
 ## LTF-26 Day trips: a second postcard from a reached island
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20.
+Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20.
+
+- **What was built (2026-10-13).** `daytrip` on Fossil Bay (the old quarry), Reef Island (tide pools), Star Point (the weather station) and Rail Coast (the level crossing), each under 60 words with sentences of 13 words or fewer. A reached island's postcard has a "Day trip" button that opens the page with read-aloud and a way back; it moves nothing. Opening one is logged (activity `daytrip`), and "What do you think?" asks about it once. An e2e test checks the button is on Fossil Bay's postcard and not Gull Island's, with axe.
 
 - **Story.** Once an island is reached, its postcard dialog gains a "Day trip" page: three or four sentences and one fact about a second place on the island (Fossil Bay's old quarry, Reef Island's tide pools, Star Point's weather station, Rail Coast's level crossing). It costs no sessions and moves nothing; it is a way to read more about the island he chose.
 - **He sees.** A "Day trip" button under the postcard. For example, Fossil Bay: "The old quarry is a place where rock was cut out of the ground. The rock is limestone. Limestone is made of the shells of tiny sea animals, pressed together over a very long time. Dr. Bell shows you a shell in the quarry wall."
@@ -190,7 +210,9 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20.
 
 ## LTF-27 The way home: back by a different island
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20.
+Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20.
+
+- **What was built (2026-10-13).** After Opening Day, the sanctuary card offers the way home ("Fly home" or "Stay at the sanctuary"; staying keeps the offer open). Flying home is a second trip with its own legs at the journey's pace: Cloud Hill, then a choice of the islands he skipped on the way out (up to three, best match for his interests first, so a second visit is impossible), then Gull Island and Home Island, where the postcard ends "You are home. Your island has a new piece from every place you visited." While on the way home, his island view follows him (the new island gets its quest and spots to build), the map draws the way home in purple with the new island's marker, and the postcards list includes the trip's stops. A pace change keeps his place. `npm run check` checks the way home has five beats a stop, real places, and all four themed islands to choose from. Tests: unit (the offer, Cloud Hill, only unvisited islands, each leg's arrival, the island view, pace; mutation-checked) and an e2e run from the offer to choosing Fossil Bay, with axe. The text (`home` in `content/journey.json`) was drafted for this build, since the proposal only outlined it: seven legs, each with a new setback (fog at Cloud Hill, the Fossil Bay pier crane, Turtle Beach closed for hatching, the Star Point dome motor, the Rail Coast lift bridge, a flat bike tire on Gull Island, the Home Island ramp under repair). Two facts were corrected before merging: red light bothers turtles less than white light (not "does not bother"), and patch glue dries in minutes. For DW to read: every line, and these additions to the canon: a crane on the Fossil Bay pier, a river lift bridge past Shell Halt, an old pier by the Home Island lighthouse, and Captain Ada sailing back to Cloud Hill from Gull Island rather than going home with him.
 
 - **Story.** After the last koala is met, the sanctuary card offers a flight home with Captain Ada: Cloud Hill, then a fork to one of the islands he did not visit, then Gull Island and Home Island. The return legs reuse each island's host and places with new, shorter beats (a return visit has a different setback from the outward one), so the three unvisited islands' content is reached without a second journey. "Stay with the koalas" is always available, and the koalas stay visitable.
 - **He sees.** On the sanctuary card: "Captain Ada says the Kookaburra can fly you home. On the way, you can visit one more island." Then a fork with the islands he has not seen, and four legs home. Postcard at Home Island: "You are home. Your island has a new piece from every place you visited."
@@ -206,7 +228,9 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20.
 
 ## LTF-28 Letters between islands
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20; also closes the airfield beat 1 seam from LTF-21.
+Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20; also closes the airfield beat 1 seam from LTF-21.
+
+- **What was built (2026-10-13).** The Cloud Hill beat now comes as a letter from the host of the island he sailed from, with the boat time and one fact that links to another island: Dr. Bell on Mari's nautilus shell, Mari on Fossil Bay's limestone, Dr. Amal on the weather balloon's numbers that Mari uses, Mr. Haddad on the station clock's radio time signal from Star Point. Windy Cape keeps Bus 9. A unit test checks each origin's letter. For DW to check: the four facts.
 
 - **Story.** The airfield's beat 1 today says "Bus 9 goes from Windy Cape to Cloud Hill", which is wrong for a sea route. Replace it with a per-origin letter from the island's host that quietly links to another island, so the world feels joined and a later return trip (LTF-27) has a reason. The links are true: Dr. Bell writes that Mari on Reef Island has a nautilus shell, a living animal with a coiled shell like the ammonite's; Mr. Haddad writes that the station clock is set by a radio time signal from the observatory at Star Point; Dr. Amal writes that the weather balloon's numbers go to the weather station on Reef Island too; Mari writes that the turtle beach sand came from the same reef that made Fossil Bay's limestone long ago.
 - **He sees.** At the airfield, beat 1 is "A letter came from Dr. Bell. It says: Captain Ada's boat will take you to the shore below Cloud Hill. Mari at Reef Island has a nautilus shell. It is a living animal with a coiled shell, like the ammonite." The Windy Cape origin keeps Bus 9.
@@ -220,7 +244,7 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20; also cl
 
 ## LTF-29 Epilogue at Bluegum: a week with Ranger Tess
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20. If LTF-30 (the koala keeper arc) is approved, it replaces this item: this week becomes its first stop, LTF-31.
+Proposed 2026-10-13. Replaced by the koala keeper arc (LTF-30), approved by DW 2026-10-13. Builds on LTF-20. If LTF-30 (the koala keeper arc) is approved, it replaces this item: this week becomes its first stop, LTF-31.
 
 - **Story.** After all eight koalas are met, instead of only "you can visit them any time", one last short leg: a week helping Ranger Tess at the sanctuary. The setback is a broken pump in the tree nursery, with the part coming on Thursday. It gives the journey a quiet ending and one last souvenir for the island.
 - **He sees.** Beat 0: "Ranger Tess asks for help this week. The sanctuary is planting new eucalyptus trees." Beat 1: "Koalas eat only some kinds of eucalyptus leaves, so the nursery grows those kinds." Beat 2 (`broken`, message from Ranger Tess: "The nursery pump is broken." / "The new part comes on Thursday." / "Until then, the young trees need water by hand."), cope "When something breaks, we can fix it. It just takes time, and there is a job we can do now.", ask "What will you do until Thursday?", Plan A "Carry water to the young trees" → beat 3 "You carried water every morning. On Thursday the part came, and the pump ran again." Plan B "Help count the joeys for the ranger's chart" → beat 3 "You counted three joeys for the chart. On Thursday the part came, and the pump ran again." Beat 4: "The young trees are green and tall enough to plant. One more session, and planting day comes." Postcard: "On planting day, you dig a hole and set a young eucalyptus tree in it." / "Ranger Tess says it will take years to grow tall." / "One day, a koala will sleep in it." / "Gumnut watches from the next tree." / "He is awake this time." Souvenir: `sapling`, "Eucalyptus sapling" (topic `nature`, stop `australia`).
@@ -236,11 +260,13 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20. If LTF-
 
 ## Proposed: the koala keeper arc (LTF-30 to LTF-35)
 
-Added 2026-10-13, drafted by a story-ideation pass at DW's request ("continue the journey from Australia to becoming a keeper of koalas, so the koalas are taken care of and many people can enjoy them"). Nothing here is approved yet. The arc continues after the eighth koala is met: Ranger Tess asks for help at Bluegum Koala Sanctuary, and five legs follow. It replaces LTF-29 (its week with Ranger Tess becomes the first stop) and comes before LTF-27 (the way home, if still wanted, is offered after Opening Day). It says "koala keeper at the sanctuary", never "zoo keeper", because Bluegum is a sanctuary run by a ranger in today's canon. The vet was drafted as "Dr. Lin"; renamed Dr. Reyes here, since Mrs. Lin already runs the Lighthouse Café.
+Added 2026-10-13, drafted by a story-ideation pass at DW's request ("continue the journey from Australia to becoming a keeper of koalas, so the koalas are taken care of and many people can enjoy them"). Approved by DW 2026-10-13. The arc continues after the eighth koala is met: Ranger Tess asks for help at Bluegum Koala Sanctuary, and five legs follow. It replaces LTF-29 (its week with Ranger Tess becomes the first stop) and comes before LTF-27 (the way home, if still wanted, is offered after Opening Day). It says "koala keeper at the sanctuary", never "zoo keeper", because Bluegum is a sanctuary run by a ranger in today's canon. The vet was drafted as "Dr. Lin"; renamed Dr. Reyes here, since Mrs. Lin already runs the Lighthouse Café.
 
 ## LTF-30 Koala keeper arc at Bluegum (overview)
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20. Replaces LTF-29: its week with Ranger Tess becomes the first stop (LTF-31), with its beats and the `sapling` souvenir kept. Comes before LTF-27: if the way home is still wanted, its offer moves from the allMet card to the end of this arc, and "Stay with the koalas" becomes "Stay at the sanctuary". This answers LTF-27's open guard ("decide whether the journey should have an end"): the journey continues at the sanctuary.
+Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20. Replaces LTF-29: its week with Ranger Tess becomes the first stop (LTF-31), with its beats and the `sapling` souvenir kept. Comes before LTF-27: if the way home is still wanted, its offer moves from the allMet card to the end of this arc, and "Stay with the koalas" becomes "Stay at the sanctuary". This answers LTF-27's open guard ("decide whether the journey should have an end"): the journey continues at the sanctuary.
+
+- **What was built (2026-10-13).** `content/journey.json` has the arc under `arc` (about, five stops, done), transcribed word for word from LTF-31 to LTF-35 and checked against this backlog. After the eighth koala, the story is the arc: `journeyNow` gives the arc's next stop, beat and leg step in place of the journey's, at the journey's pace, while he stays at Bluegum (so his island and check-ups stay Australia's). Each arc stop is reached after a leg, with its postcard scene and souvenir (sapling, keeper's scale, vet's bag, viewing path, koala sign); after Opening Day, a closing card says he is a junior koala keeper and nothing more moves. A pace change mid-arc keeps his place (`repace`), and a learner who had met all eight koalas before the arc existed starts it at its first beat (`arcStart`, once). The map has a Bluegum Koala Sanctuary panel with the five stops (the landmass is too small for markers, the fallback this item named), and the postcards list includes reached arc stops. `npm run check` checks the arc is one line of stops with five beats each. "What do you think?" asks about it once (activity `arc`). Tests: unit (Sunny first, then beat 0; each arrival; done; the start for all-met learners; pace changes, mutation-checked; every souvenir drawn) and an e2e run to the Tree Nursery's postcard, with axe. For DW: LTF-34's Guards say the Opening Day postcard introduces Omar as "a visitor", but the approved postcard line does not; a learner who chose a plan meets him there with no introduction. The text is as approved; say which to change.
 
 - **Story.** After the eighth koala is met, Ranger Tess asks for help at Bluegum Koala Sanctuary. Five legs follow: planting food trees, learning the keeper's morning round, the vet's check-up day, building a new koala home with a viewing path and signs, and opening day, when a school group and other visitors come. The arc is about caring for the koalas and sharing them with many people; the learner becomes a junior koala keeper at the sanctuary.
 - **He sees.** Stops in order: The Tree Nursery (LTF-31), Junior Keeper Day (LTF-32), The Vet Clinic (LTF-33), The New Koala Home (LTF-34), Opening Day (LTF-35). Start: after he meets Sunny, the eighth koala, the sanctuary card shows the allMet line exactly as now. His next finished session shows beat 0 of the first leg ("On the way to The Tree Nursery") in place of the sanctuary card, with the usual leg dots. Sessions: five legs at the journey pace, so 25 sessions at five a leg (15 at three, 35 at seven), after the eight koala sessions. End: the Opening Day postcard and souvenir, then a closing sanctuary card: "You are a junior koala keeper at Bluegum. The koalas and the visitors are glad you came. You can visit them any time." Finished sessions after that move nothing, as today after allMet, until LTF-27 or a later arc.
@@ -261,7 +287,7 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20. Replace
 
 ## LTF-31 The Tree Nursery: planting food trees
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-30. Replaces LTF-29: its beats, pump setback, postcard and `sapling` souvenir are kept, with one plan option changed (see Guards).
+Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Replaces LTF-29: its beats, pump setback, postcard and `sapling` souvenir are kept, with one plan option changed (see Guards).
 
 - **Story.** Ranger Tess asks for help this week: Bluegum is planting new eucalyptus trees so the koalas always have the right leaves to eat. The setback is the broken nursery pump, with the new part coming on Thursday, so the young trees get water by hand. The postcard is planting day, and the souvenir is a eucalyptus sapling.
 - **He sees.**
@@ -285,7 +311,7 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-
 
 ## LTF-32 Junior Keeper Day: the morning round
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-30. Comes after LTF-31 and before LTF-27.
+Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-31 and before LTF-27.
 
 - **Story.** Ranger Tess teaches the keeper's morning round from a chart with four jobs: weigh each koala, clean under the trees, fresh leaves, water. The setback is a very hot day: the koalas rest in the shade, so weighing moves to 7 AM the next day, when it is cool. The postcard is the first full round done alone, and the souvenir is a keeper's scale.
 - **He sees.**
@@ -309,7 +335,7 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-
 
 ## LTF-33 The Vet Clinic: check-up day
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-30. Comes after LTF-32 and before LTF-27.
+Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-32 and before LTF-27.
 
 - **Story.** Every koala at Bluegum gets a check-up with Dr. Reyes, the vet (new character). This week it is Banjo's turn, and the learner rides along with Ranger Tess. The setback is a closed road: workers are fixing the main road to town, so they take River Road or Dr. Reyes comes to the sanctuary in her van. The souvenir is a vet's bag.
 - **He sees.**
@@ -333,7 +359,7 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-
 
 ## LTF-34 The New Koala Home: a path for everyone
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-30. Comes after LTF-33 and before LTF-27.
+Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-33 and before LTF-27.
 
 - **Story.** Bluegum builds a new koala home: more trees, a shade roof, and a viewing path with a ramp so a visitor in a wheelchair can see the koalas too, with signs along it that teach. The setback is a delivery truck that broke down: the boards for the ramp come on Friday, so the signs and the trees come first. The souvenir is the viewing path.
 - **He sees.**
@@ -357,7 +383,7 @@ Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-
 
 ## LTF-35 Opening Day: visitors come
 
-Proposed 2026-10-13 for DW's review. Not approved yet. Builds on LTF-20 and LTF-30. Comes after LTF-34; it is the arc's end, and LTF-27's offer (if approved) follows it.
+Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-34; it is the arc's end, and LTF-27's offer (if approved) follows it.
 
 - **Story.** The new koala home opens on Saturday, with a school group of 24 children, Omar and his family, and other visitors; the learner tells the children one koala fact he has practiced. The setback is a changed weather report: rain on Saturday morning, so the welcome talk moves under the big tent or into the shed. The postcard is opening day itself, and the souvenir is a koala sign.
 - **He sees.**

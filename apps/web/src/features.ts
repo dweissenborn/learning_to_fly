@@ -1,7 +1,7 @@
 // "What do you think?" cards (LTF-18): the new things he meets, and his vote on each. Votes are activity events,
 // so "already asked" follows him to every device.
 import type { LogEvent } from '@wayfinder/schema';
-import { flightPoints, gearState } from '@wayfinder/engine';
+import { flightPeak, flightPoints, gearState } from '@wayfinder/engine';
 
 export type Like = 'like' | 'unsure' | 'dislike';
 export type Amount = 'too-much' | 'just-right' | 'too-little';
@@ -15,7 +15,7 @@ export const FEATURES: Feature[] = [
   { id: 'skip-demo', name: 'Skipping a demo', say: 'You can skip a demo when you already know how.', arrived: '2026-10-12',
     met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'skip-demo') },
   { id: 'flight-kit', name: 'The flight kit', say: 'Your guide earns flight gear for the trip to Australia.', arrived: '2026-10-12',
-    met: (es) => gearState(flightPoints(es)).owned.length > 0 },
+    met: (es) => gearState(flightPoints(es), flightPeak(es)).owned.length > 0 },
   { id: 'clue-first', name: 'A clue straight away', say: 'On a new skill, the first clue comes straight away.', arrived: '2026-10-13',
     met: (es) => es.some((e) => e.type === 'answer' && e.delay === 0) },
   { id: 'after-that', name: '"What happened after that?"', say: 'When you tell about your day, I ask what happened after.', arrived: '2026-10-13',
@@ -24,6 +24,14 @@ export const FEATURES: Feature[] = [
     met: (es) => es.some((e) => e.type === 'answer' && !!e.card) },
   { id: 'ideas-button', name: '"Show me ideas"', say: 'When you tell about your day, the ideas wait behind a button so you can try your own words first.', arrived: '2026-10-13',
     met: (es) => es.some((e) => e.type === 'recount' && !!e.ideas?.length) },
+  { id: 'way-home', name: 'The way home', say: 'After Opening Day, you can fly home with Captain Ada and visit one more island.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'home') },
+  { id: 'keeper-arc', name: 'The koala keeper story', say: 'The story goes on at the sanctuary. You help Ranger Tess as a junior koala keeper.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'arc') },
+  { id: 'day-trip', name: 'Day trips', say: 'Islands you have reached have a day trip to read about, on their postcards.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'daytrip') },
+  { id: 'break-lounge', name: 'Taking a break', say: 'When you need a break, you can stop any time and go to the lounge.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'session' && e.action === 'stop' && e.reason === 'break') },
   { id: 'new-islands', name: 'A new island at each stop', say: 'Each place on your journey is an island to explore, with places that open as you read.', arrived: '2026-10-13',
     met: (es) => es.some((e) => e.type === 'world' && !!e.island && e.island !== 'home') },
   { id: 'island-route', name: 'Choosing your sea route', say: 'At Gull Island, you chose which island to sail to on the way to Australia.', arrived: '2026-10-13',

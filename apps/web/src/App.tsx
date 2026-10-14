@@ -3,23 +3,24 @@ import { Component, useEffect, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
 import { Dialog, Heading, Modal, ModalOverlay, ToggleButton } from 'react-aria-components';
 import type { SkillId, Strand } from '@wayfinder/schema';
-import { dayKey, flightPoints, focusSkill, gate, GEAR, gearState, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
+import { dayKey, flightPeak, flightPoints, focusSkill, gate, GEAR, gearState, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
 import { applyRetention, saveSettings, useEvents, useProgress, useSettings, type Settings } from './db';
 import { SKILL, STRAND } from './content';
-import { BrandMark, Guide, Island, ISLANDS, pieceById } from './art';
+import { BrandMark, Guide, Island, islandOf, ISLANDS, pieceById } from './art';
 import { Session, litFrom, placedFrom } from './Session';
 import { Today } from './Today';
 import { Onboarding, ComfortPanel } from './Onboarding';
 import { Adult } from './Adult';
 import { Btn, NewThing } from './ui';
 import { FEATURES, nextFeature, opinions } from './features';
-import { finishedCount, forkMigration, islandArrival, islandAreas, islandsReached, IslandQuest, journeyNow, JourneyMap, LegDots } from './journey';
+import { arcStart, finishedCount, forkMigration, islandArrival, islandAreas, islandsReached, IslandQuest, journeyNow, JourneyMap, LegDots, JOURNEY } from './journey';
 import { setSound, setVoice } from './media';
 import { autoSave, isFamily, useCloudSync } from './cloud';
 import { WhoIsLearning } from './CloudScreens';
 import { GearCelebration, KitPanel } from './gear';
+import { Lounge } from './Lounge';
 
-type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'regrammar' | 'map';
+type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'regrammar' | 'map' | 'lounge';
 
 function useApplySettings(s: Settings | undefined) {
   useEffect(() => {
@@ -59,14 +60,16 @@ export function App() {
   const [newHere, setNewHere] = useState(false);
   const [asked, setAsked] = useState<string>(); // the one "What do you think?" card for this visit
   const [visit, setVisit] = useState<string | null>(null); // LTF-36: an earlier island he is looking at
+  const [breakWhy, setBreakWhy] = useState<'break' | 'rapid'>('break'); // LTF-38
   useApplySettings(settings);
   useEffect(() => { applyRetention(); }, []);
   // LTF-20: once per fork, keep the old route for a learner who was already past it when the routes arrived.
   useEffect(() => {
     if (!settings?.onboarded || !events) return;
     const fix = forkMigration(settings, finishedCount(progress));
-    const ashore = islandArrival({ ...settings, ...fix }, finishedCount(progress)); // LTF-36
-    if (fix || ashore) void saveSettings({ ...fix, ...ashore });
+    const arc = arcStart({ ...settings, ...fix }, finishedCount(progress)); // LTF-30
+    const ashore = islandArrival({ ...settings, ...fix, ...arc }, finishedCount(progress)); // LTF-36
+    if (fix || arc || ashore) void saveSettings({ ...fix, ...arc, ...ashore });
   }, [settings, events, progress]);
   useEffect(() => {
     if (isFamily(cloud.me) && cloud.link === null && settings?.onboarded && settings.name) void autoSave(settings.name);
@@ -87,7 +90,8 @@ export function App() {
     return <div className="shell"><WhoIsLearning onNew={() => setNewHere(true)} /></div>;
   if (!settings.onboarded || screen === 'rescout' || screen === 'regrammar')
     return <div className="shell"><Onboarding settings={settings} startAt={screen === 'rescout' ? 'scout' : screen === 'regrammar' ? 'grammar' : 'hello'} onDone={() => go('home')} /></div>;
-  if (screen === 'session') return <div className="shell"><Session settings={settings} events={events} progress={progress} onExit={() => go('home')} /></div>;
+  if (screen === 'session') return <div className="shell"><Session settings={settings} events={events} progress={progress} onExit={() => go('home')} onBreak={(why) => { setBreakWhy(why); go('lounge'); }} /></div>;
+  if (screen === 'lounge') return <div className="shell"><Lounge settings={settings} events={events} why={breakWhy} onJourney={() => go('map')} onHome={() => go('home')} /></div>;
   if (screen === 'today') return <div className="shell"><Today settings={settings} progress={progress} events={events} onExit={() => go('home')} /></div>;
   if (screen === 'map') return <div className="shell"><JourneyMap settings={settings} progress={progress} onExit={() => go('home')} /></div>;
   if (screen === 'adult') return <div className="shell"><Adult settings={settings} events={events} progress={progress} onExit={() => go('home')} onRescout={() => go('rescout')} onGrammar={() => go('regrammar')} /></div>;
@@ -107,13 +111,16 @@ export function App() {
   const jn = journeyNow(finishedCount(progress), settings);
   // LTF-36: the island he is on, or an earlier one he chose to look at.
   const isles = islandsReached(jn);
-  const isle = visit && isles.includes(visit) ? visit : isles[isles.length - 1];
+  const atIsle = islandOf(jn.here.id);
+  const isle = visit && isles.includes(visit) ? visit : atIsle;
   const view = islandAreas(isle, jn, settings, lit);
   const placed = placedFrom(events).filter((p) => p.island === isle);
   const lastPiece = placed.at(-1);
-  const story = jn.fork ? `Sea routes leave ${jn.here.name}. Open My journey to choose which island to sail to.`
+  const story = jn.fork ? (jn.fork.kind === 'path' ? 'Captain Ada has two flight paths to Australia. Open My journey to choose one.'
+    : jn.fork.kind === 'home' ? "Captain Ada's boat can take you to one more island on the way home. Open My journey to choose it." : `Sea routes leave ${jn.here.name}. Open My journey to choose which island to sail to.`)
     : jn.beat ? `${jn.beat.text}${jn.beat.cope ? ' ' + jn.beat.cope : ''}${jn.beat.choice && jn.beat.chosen === undefined ? ' Open My journey to choose a plan.' : ''}`
-    : 'You made it to Australia. The koalas are waiting for you.';
+    : jn.trip?.done && JOURNEY.home ? JOURNEY.home.stops.at(-1)!.postcard.at(-1)!
+    : jn.arc?.done && JOURNEY.arc ? `${JOURNEY.arc.done}${JOURNEY.home && !settings.homeTrip ? ' ' + JOURNEY.home.offer.text + ' Open My journey to choose.' : ''}` : 'You made it to Australia. The koalas are waiting for you.';
   const newThing = asked ? FEATURES.find((f) => f.id === asked) : nextFeature(events);
   const say = `${hello}, ${settings.name}. ${todayDone ? 'You already read today. ' : ''}${story}`;
 
@@ -126,7 +133,7 @@ export function App() {
     <main className="home">
       <div className="stack">
         {isles.length > 1 && <div className="isle-switch" role="group" aria-label="Your islands">{isles.map((id) =>
-          <ToggleButton key={id} className="btn small" isSelected={id === isle} onChange={() => setVisit(id === isles[isles.length - 1] ? null : id)}>{ISLANDS[id].name}</ToggleButton>)}</div>}
+          <ToggleButton key={id} className="btn small" isSelected={id === isle} onChange={() => setVisit(id === atIsle ? null : id)}>{ISLANDS[id].name}</ToggleButton>)}</div>}
         <Island placed={placed} lit={lit} here={here} peaksOpen={g.available || g.opened} stage={jn.stop} island={view.def} areas={view.open} />
         <p className="muted" style={{ textAlign: 'center', margin: 0 }}>
           {placed.length ? `${isle === 'home' ? 'Your island' : view.def.name} has ${placed.length} ${placed.length === 1 ? 'thing' : 'things'} you added. The newest is the ${pieceById.get(lastPiece!.piece)?.name.toLowerCase()}.` : `Finish a session to add your first thing to ${isle === 'home' ? 'the island' : view.def.name}.`}
@@ -138,10 +145,10 @@ export function App() {
         <div className="hero-actions">
           <Btn className="primary big" autoFocus onPress={() => go('session')}><span className="ico" aria-hidden>📖</span>Start reading</Btn>
           <Btn className="big journey" onPress={() => go('map')}><span className="ico" aria-hidden>🗺️</span>My journey</Btn>
-          {jn.next && <LegDots now={jn} />}
+          {jn.next && !jn.fork && <LegDots now={jn} />}
           <Btn className="big nar" onPress={() => go('today')}><span className="ico" aria-hidden>📅</span>Tell about today</Btn>
           <Btn className="big" onPress={() => setDialog('shelf')}><span className="ico" aria-hidden>⭐</span>Things I can do · {shelf.length}</Btn>
-          <Btn className="big kit" onPress={() => setDialog('kit')}><span className="ico" aria-hidden>🎒</span>Flight kit · {gearState(flightPoints(events)).owned.length} of {GEAR.length}</Btn>
+          <Btn className="big kit" onPress={() => setDialog('kit')}><span className="ico" aria-hidden>🎒</span>Flight kit · {gearState(flightPoints(events), flightPeak(events)).owned.length} of {GEAR.length}</Btn>
         </div>
         {newThing && <NewThing key={newThing.id} feature={newThing} answered={opinions(events).has(newThing.id)} onShown={setAsked} />}
         <section className="paths" aria-label="Your three paths">
@@ -164,11 +171,11 @@ export function App() {
     </main>
     <footer className="bottombar static"><span className="spacer" /><Btn className="quiet small" onPress={() => go('adult')}>Grown-ups</Btn></footer>
 
-    <GearCelebration points={flightPoints(events)} guide={settings.guide} seen={settings.kitSeen ?? 0} />
+    <GearCelebration peak={flightPeak(events)} guide={settings.guide} seen={settings.kitSeen ?? 0} />
     <ModalOverlay className="overlay" isOpen={!!dialog} onOpenChange={(o) => !o && setDialog(null)} isDismissable>
       <Modal><Dialog className="dialog">
         {dialog === 'comfort' && <><Heading slot="title">How do you like it?</Heading><ComfortPanel settings={settings} /></>}
-        {dialog === 'kit' && <><Heading slot="title">Flight kit</Heading><KitPanel points={flightPoints(events)} guide={settings.guide} /></>}
+        {dialog === 'kit' && <><Heading slot="title">Flight kit</Heading><KitPanel points={flightPoints(events)} peak={flightPeak(events)} guide={settings.guide} /></>}
         {dialog === 'shelf' && <><Heading slot="title">Things I can do</Heading>
           {!shelf.length && <p>Your shelf fills up as you learn. Each skill you master adds a line here.</p>}
           <ul className="shelf" style={{ padding: 0 }}>{shelf.map((id: SkillId) => <li key={id} className={`strand-${strandOf(id)}`}><span aria-hidden>{STRAND[strandOf(id)].icon}</span>{SKILL[id].ican}</li>)}</ul></>}

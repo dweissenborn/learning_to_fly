@@ -147,6 +147,14 @@
         "You brush sand off a bone. Dr. Bell wraps it in a plaster jacket to keep it safe.",
         "A boat comes into the bay. It is Captain Ada, a pilot.",
         "She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+      ],
+      "daytrip": [
+        "Fossil Bay has an old quarry.",
+        "A quarry is a place where rock was cut out of the ground.",
+        "The rock is limestone.",
+        "Limestone is made of the shells of tiny sea animals.",
+        "They were pressed together over a very long time.",
+        "Dr. Bell shows you a shell in the quarry wall."
       ]
     },
     {
@@ -210,6 +218,13 @@
         "Through the glass floor of the boat, you see a clownfish in a sea anemone.",
         "At night, Mari shows you turtle tracks in the sand. Sea turtles lay their eggs on this beach.",
         "Captain Ada's boat is tied up at the pier. She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+      ],
+      "daytrip": [
+        "At low tide, the sea leaves water in holes in the rocks.",
+        "These are called tide pools.",
+        "Mari shows you a sea star holding on to a rock.",
+        "Under each arm, a sea star has rows of tiny tube feet.",
+        "It uses them to hold on and to move."
       ]
     },
     {
@@ -273,6 +288,12 @@
         "Saturn looks like a small yellow ball with a ring around it.",
         "Dr. Amal points to a bright dot moving across the sky. It is the space station, which goes around Earth in about 90 minutes.",
         "Captain Ada climbs the path to the dome. She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+      ],
+      "daytrip": [
+        "Star Point has a small weather station.",
+        "On top is a set of cups that spin in the wind.",
+        "The faster the cups spin, the stronger the wind.",
+        "Dr. Amal writes down the wind speed every morning."
       ]
     },
     {
@@ -336,6 +357,12 @@
         "In the map room, a big map shows every island. The key tells you what each symbol means.",
         "You find Home Island, Gull Island and Cloud Hill on the map.",
         "Captain Ada is waiting on the platform. She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
+      ],
+      "daytrip": [
+        "A level crossing is a place where a road crosses the railway.",
+        "When a train comes, red lights flash and a gate comes down.",
+        "Cars and people wait behind the gate.",
+        "Mr. Haddad says the gate goes up when the train has passed."
       ]
     },
     {
@@ -346,7 +373,7 @@
       "souvenir": "plane",
       "beats": [
         { "text": "Captain Ada showed you a map. Cloud Hill has a long, flat runway." },
-        { "text": "Bus 9 goes from Windy Cape to Cloud Hill. It leaves at 10 AM.", "byFrom": {"fossil": "Captain Ada's boat takes you to the shore below Cloud Hill. It leaves at 10 AM.", "reef": "Captain Ada's boat takes you to the shore below Cloud Hill. It leaves at 10 AM.", "star": "Captain Ada's boat takes you to the shore below Cloud Hill. It leaves at 10 AM.", "rail": "Captain Ada's boat takes you to the shore below Cloud Hill. It leaves at 10 AM."} },
+        { "text": "Bus 9 goes from Windy Cape to Cloud Hill. It leaves at 10 AM.", "byFrom": {"fossil": "A letter came from Dr. Bell. Captain Ada's boat leaves for Cloud Hill at 10 AM. Mari at Reef Island has a nautilus shell. A nautilus is a living sea animal with a coiled shell. It looks like the ammonite.", "reef": "A letter came from Mari. Captain Ada's boat leaves for Cloud Hill at 10 AM. The rock at Fossil Bay is limestone. It was made long ago from shells and coral. The sand on Turtle Beach is shells and coral too.", "star": "A letter came from Dr. Amal. Captain Ada's boat leaves for Cloud Hill at 10 AM. The weather balloon sends its numbers by radio. Mari on Reef Island uses them to plan her boat trips.", "rail": "A letter came from Mr. Haddad. Captain Ada's boat leaves for Cloud Hill at 10 AM. The station clock gets its time by radio. The time signal comes from the observatory at Star Point."} },
         { "text": "There is an old hangar on Cloud Hill. A hangar is a big shed for planes." },
         { "text": "Captain Ada says there is something red inside the hangar." },
         { "text": "One more session, and you reach Cloud Hill." }
@@ -397,6 +424,66 @@
       "id": "australia",
       "name": "Australia",
       "emoji": "🐨",
+      "paths": [
+        {
+          "id": "island",
+          "name": "The island way",
+          "emoji": "🏝️",
+          "legacy": true
+        },
+        {
+          "id": "reef",
+          "name": "The reef way",
+          "emoji": "🪸",
+          "beats": [
+            {
+              "text": "You take the reef way. The Kookaburra flies over a chain of small islands."
+            },
+            {
+              "text": "Below you, the small islands look like green dots in a blue sea."
+            },
+            {
+              "obstacle": "blocked",
+              "text": "The Kookaburra landed on Shell Island for fuel. Now the runway is closed. A roller is flattening it after the rain.",
+              "notice": {
+                "type": "notice",
+                "title": "Shell Island Airstrip",
+                "icon": "🛬",
+                "rows": [
+                  "Runway closed until 3 PM.",
+                  "A roller is flattening it after the rain.",
+                  "Planes may take off after 3 PM."
+                ]
+              },
+              "cope": "A runway that is being fixed will open again. We take off at 3 PM.",
+              "choice": {
+                "ask": "What will you do while the roller works?",
+                "options": [
+                  {
+                    "label": "Watch the roller from the fence",
+                    "reply": "Good plan. The roller makes the runway flat and safe.",
+                    "after": "You watched the roller go up and down. At 3 PM the runway was dry, and the Kookaburra took off."
+                  },
+                  {
+                    "label": "Write a postcard home",
+                    "reply": "Good plan. Captain Ada has a stamp you can use.",
+                    "after": "You wrote a postcard home. At 3 PM the runway was dry, and the Kookaburra took off."
+                  }
+                ]
+              },
+              "talk": "Ask: the runway was closed, so the plane had to wait. What did he do while he waited?",
+              "smooth": "The Kookaburra landed on Shell Island for fuel. The runway is flat and dry."
+            },
+            {
+              "text": "The runway is open again, and the Kookaburra is back in the sky.",
+              "smooth": "The Kookaburra takes off from Shell Island."
+            },
+            {
+              "text": "The fuel tank is full again. One more session, and you land in Australia."
+            }
+          ]
+        }
+      ],
       "souvenir": "koala",
       "beats": [
         { "text": "You are flying over the ocean. The clouds look like cotton." },
@@ -438,5 +525,759 @@
     { "name": "Kip", "facts": ["Koalas live in forests in eastern Australia.", "They need the right kinds of eucalyptus trees to eat."] },
     { "name": "Sunny", "facts": ["Some koalas make a loud, deep sound called a bellow.", "It helps other koalas know where they are."] }
   ],
-  "allMet": "You have met all the koalas at Bluegum Koala Sanctuary. Ranger Tess says you can visit them any time."
+  "allMet": "You have met all the koalas at Bluegum Koala Sanctuary. Ranger Tess says you can visit them any time.",
+  "arc": {
+    "about": "After the eighth koala is met, Ranger Tess asks for help at Bluegum Koala Sanctuary. The arc is about caring for the koalas and sharing them with many people; the learner becomes a junior koala keeper at the sanctuary.",
+    "stops": [
+      {
+        "id": "nursery",
+        "name": "The Tree Nursery",
+        "emoji": "🌱",
+        "souvenir": "sapling",
+        "next": ["keeper"],
+        "beats": [
+          {
+            "text": "Ranger Tess asks for your help this week. The sanctuary is planting new eucalyptus trees. Koalas need the right trees to eat."
+          },
+          {
+            "text": "Koalas eat only some kinds of eucalyptus leaves. So the nursery grows just those kinds. A pump waters the young trees. It is very old.",
+            "smooth": "Koalas eat only some kinds of eucalyptus leaves. So the nursery grows just those kinds. A pump waters the young trees."
+          },
+          {
+            "obstacle": "broken",
+            "text": "The nursery pump stopped working this morning. Ranger Tess has ordered a new part. Until it comes, the young trees need water by hand.",
+            "notice": {
+              "type": "message",
+              "app": "text",
+              "from": "Ranger Tess",
+              "rows": [
+                "The nursery pump is broken.",
+                "The new part comes on Thursday.",
+                "Until then, the young trees need water by hand."
+              ]
+            },
+            "cope": "When something breaks, we can fix it. It takes time, and there is a job we can do now.",
+            "choice": {
+              "ask": "What will you do until Thursday?",
+              "options": [
+                {
+                  "label": "Carry water to the young trees",
+                  "reply": "Good plan. Two cans each morning is enough.",
+                  "after": "You carried water every morning. On Thursday the part came, and the pump ran again."
+                },
+                {
+                  "label": "Cut fresh leaves for the koalas",
+                  "reply": "Good plan. Keepers cut fresh branches every day.",
+                  "after": "You cut fresh branches every day with Ranger Tess. On Thursday the part came, and the pump ran again."
+                }
+              ]
+            },
+            "talk": "Ask: the pump broke, and the plan changed. What job did he do instead?",
+            "smooth": "The pump hums, and the young trees are wet and green."
+          },
+          {
+            "text": "The pump is running again. Ranger Tess checks every young tree.",
+            "smooth": "The young trees have grown. Some are as tall as you."
+          },
+          {
+            "text": "The young trees are tall enough to plant. One more session, and planting day comes."
+          }
+        ],
+        "postcard": [
+          "On planting day, you dig a hole for a young eucalyptus tree.",
+          "Ranger Tess says it will take years to grow tall.",
+          "One day, a koala will sleep in it.",
+          "Gumnut watches from the next tree.",
+          "He is awake this time."
+        ]
+      },
+      {
+        "id": "keeper",
+        "name": "Junior Keeper Day",
+        "emoji": "📋",
+        "souvenir": "scale",
+        "next": ["clinic"],
+        "beats": [
+          {
+            "text": "Ranger Tess has a plan for you. Next week, you learn the keeper's morning round. There are four jobs on the chart."
+          },
+          {
+            "text": "Job one: weigh each koala. Job two: clean the ground under the trees. Job three: fresh leaves. Job four: water. The weather report says a hot day is coming.",
+            "smooth": "Job one: weigh each koala. Job two: clean the ground under the trees. Job three: fresh leaves. Job four: water."
+          },
+          {
+            "obstacle": "weather",
+            "text": "Today is very hot. The koalas rest in the shade and hold the cool tree trunks. Ranger Tess moves the weighing to 7 AM tomorrow, when it is cool.",
+            "notice": {
+              "type": "notice",
+              "title": "Bluegum Keeper Board",
+              "icon": "☀️",
+              "rows": [
+                "Hot day. Koalas rest in the shade.",
+                "Weighing moves to 7 AM tomorrow.",
+                "Put out extra water bowls today."
+              ]
+            },
+            "cope": "Hot days pass. The koalas rest to stay cool. We can change the plan too.",
+            "choice": {
+              "ask": "What will you do on the hot day?",
+              "options": [
+                {
+                  "label": "Put out extra water bowls",
+                  "reply": "Good plan. Koalas drink more on hot days.",
+                  "after": "You put out water bowls in the shade. The next morning was cool. At 7 AM, you weighed every koala."
+                },
+                {
+                  "label": "Fill in the chart in the shade",
+                  "reply": "Good plan. The chart has a row for each koala.",
+                  "after": "You wrote each koala's name on the chart. The next morning was cool. At 7 AM, you weighed every koala."
+                }
+              ]
+            },
+            "talk": "Ask: the hot day changed the keeper's plan. What did they do instead, and when?",
+            "smooth": "Today is warm and calm. The koalas rest in the shade."
+          },
+          {
+            "text": "Every koala's weight is on the chart now. Ranger Tess says the numbers look good.",
+            "smooth": "You weighed every koala. The numbers are on the chart."
+          },
+          {
+            "text": "Wattle's joey is in her pouch, so Wattle weighs a little more. Tomorrow you do the whole round by yourself, with Ranger Tess close by. One more session, and it is Junior Keeper Day."
+          }
+        ],
+        "postcard": [
+          "On Junior Keeper Day, you do the morning round.",
+          "You weigh Pip. He climbs onto the branch on the scale.",
+          "You rake under the trees and hang fresh branches.",
+          "Koalas sleep most of the day, so the round is quiet.",
+          "Ranger Tess writes your name on the keeper's chart."
+        ]
+      },
+      {
+        "id": "clinic",
+        "name": "The Vet Clinic",
+        "emoji": "🩺",
+        "souvenir": "vetbag",
+        "next": ["habitat"],
+        "beats": [
+          {
+            "text": "Every koala at Bluegum gets a check-up with the vet. The vet is Dr. Reyes. Her clinic is in town."
+          },
+          {
+            "text": "This week it is Banjo's turn. Ranger Tess puts fresh leaves in his travel box. The clinic is a short drive away. There are roadworks on the main road this week.",
+            "smooth": "This week it is Banjo's turn. Ranger Tess puts fresh leaves in his travel box. The clinic is a short drive away."
+          },
+          {
+            "obstacle": "blocked",
+            "text": "The truck reached the main road, but the road is closed. Workers are fixing the road today. The check-up is at 10 AM.",
+            "notice": {
+              "type": "notice",
+              "title": "Main Road",
+              "icon": "🚧",
+              "rows": [
+                "ROAD CLOSED today.",
+                "Workers are fixing the road.",
+                "Use River Road to town."
+              ]
+            },
+            "cope": "When a road is closed, there is another way. The check-up can still happen today.",
+            "choice": {
+              "ask": "How will Banjo get his check-up?",
+              "options": [
+                {
+                  "label": "Take River Road with Ranger Tess",
+                  "reply": "Good plan. River Road is longer, but it is open.",
+                  "after": "You took River Road. It was longer, but you reached the clinic by 10 AM. Dr. Reyes was ready."
+                },
+                {
+                  "label": "Ask Dr. Reyes to come to the sanctuary",
+                  "reply": "Good plan. Dr. Reyes has a van with all she needs.",
+                  "after": "Dr. Reyes came in her van. She did Banjo's check-up under his own tree."
+                }
+              ]
+            },
+            "talk": "Ask: the road was closed, so they found another way. Which plan would you pick, and why?",
+            "smooth": "The truck takes the main road to town. Banjo is asleep in his travel box."
+          },
+          {
+            "text": "Dr. Reyes checks Banjo's eyes, ears and teeth. Banjo is well.",
+            "smooth": "Dr. Reyes is ready for Banjo at 10 AM."
+          },
+          {
+            "text": "Dr. Reyes asks you to spend a whole day at the clinic. You will see how a vet works. One more session, and you reach the clinic."
+          }
+        ],
+        "postcard": [
+          "At the clinic, Dr. Reyes shows you her tools.",
+          "A small light is for looking in ears and eyes.",
+          "Koalas chew tough leaves, so the vet checks their teeth.",
+          "Keepers and vets work as a team to keep koalas well.",
+          "On Banjo's chart, Dr. Reyes writes: Banjo is well."
+        ]
+      },
+      {
+        "id": "habitat",
+        "name": "The New Koala Home",
+        "emoji": "🌳",
+        "souvenir": "viewpath",
+        "next": ["opening"],
+        "beats": [
+          {
+            "text": "Bluegum is building a new koala home. It will have more trees and a shade roof. A viewing path will go around it."
+          },
+          {
+            "text": "Ranger Tess shows you the plan. The path has a ramp, so a wheelchair can use it. Signs along the path will teach about koalas. The boards for the ramp come by truck.",
+            "smooth": "Ranger Tess shows you the plan. The path has a ramp, so a wheelchair can use it. Signs along the path will teach about koalas."
+          },
+          {
+            "obstacle": "broken",
+            "text": "The delivery truck broke down on the highway. The boards for the ramp are still on it. The driver says a new truck brings them on Friday.",
+            "notice": {
+              "type": "message",
+              "app": "text",
+              "from": "Bluegum Timber",
+              "rows": [
+                "Our truck broke down today.",
+                "Your boards are safe on it.",
+                "A new truck brings them on Friday."
+              ]
+            },
+            "cope": "When something breaks, the plan waits a few days. There are other jobs to do first.",
+            "choice": {
+              "ask": "What will you do until Friday?",
+              "options": [
+                {
+                  "label": "Paint the signs for the path",
+                  "reply": "Good plan. Each sign says one thing about koalas.",
+                  "after": "You painted four signs. On Friday the boards came, and the ramp was built."
+                },
+                {
+                  "label": "Plant the new trees first",
+                  "reply": "Good plan. The trees need to go in before the path.",
+                  "after": "You planted six trees with Ranger Tess. On Friday the boards came, and the ramp was built."
+                }
+              ]
+            },
+            "talk": "Ask: the boards were late, so they did other jobs first. What else could they have done?",
+            "smooth": "The boards for the ramp came today. Ranger Tess counts them."
+          },
+          {
+            "text": "The ramp is built. Omar, a visitor, tests it in his wheelchair, and it works well.",
+            "smooth": "The ramp is built. The path goes all the way around."
+          },
+          {
+            "text": "The signs are up along the path. Each sign tells one thing about koalas. One more session, and the new koala home is ready."
+          }
+        ],
+        "postcard": [
+          "The new koala home has tall trees and a shade roof.",
+          "A viewing path with a ramp goes all the way around.",
+          "Omar comes in his wheelchair and sees Matilda in a tree.",
+          "The signs say: Koalas sleep most of the day. Please speak softly.",
+          "Ranger Tess says, \"Now many people can see the koalas.\""
+        ]
+      },
+      {
+        "id": "opening",
+        "name": "Opening Day",
+        "emoji": "🎉",
+        "souvenir": "koalasign",
+        "beats": [
+          {
+            "text": "The new koala home opens on Saturday. Ranger Tess asks you to help on the day. A school group is coming."
+          },
+          {
+            "text": "The posters are up in town. The school group has 24 children and two teachers. You will tell them one koala fact. The weather report says rain may come on Saturday.",
+            "smooth": "The posters are up in town. The school group has 24 children and two teachers. You will tell them one koala fact."
+          },
+          {
+            "obstacle": "weather",
+            "text": "The weather report changed. Rain will come on Saturday morning. The welcome talk was going to be on the grass.",
+            "notice": {
+              "type": "notice",
+              "title": "Weather Report",
+              "icon": "🌧️",
+              "rows": ["Saturday morning: rain.", "Saturday afternoon: sun.", "Bring a raincoat."]
+            },
+            "cope": "Rain does not stop opening day. We can move the talk to a dry place.",
+            "choice": {
+              "ask": "Where will the welcome talk be?",
+              "options": [
+                {
+                  "label": "Put up the big tent on the grass",
+                  "reply": "Good plan. The tent is in the shed, and it is dry inside.",
+                  "after": "The tent went up on Friday. On Saturday, the visitors stayed dry under the tent for the talk."
+                },
+                {
+                  "label": "Move the talk into the big shed",
+                  "reply": "Good plan. The shed has room for the whole school group.",
+                  "after": "You set out chairs in the shed on Friday. On Saturday, the talk was dry and warm inside."
+                }
+              ]
+            },
+            "talk": "Ask: rain was coming on opening day. How did they change the plan?",
+            "smooth": "The weather report says Saturday will be sunny. The talk will be on the grass."
+          },
+          {
+            "text": "The talk has a dry place now. You practice your koala fact three times.",
+            "smooth": "You practice your koala fact three times. Ranger Tess listens."
+          },
+          {
+            "text": "Everything is ready: the path, the signs and the chairs. One more session, and it is Opening Day."
+          }
+        ],
+        "postcard": [
+          "On Opening Day, the rain stops at noon, and the sun comes out.",
+          "The school group walks the path and reads every sign.",
+          "Omar is back, and he shows a family the ramp.",
+          "You say your fact: koalas sleep most of the day.",
+          "Ranger Tess says, \"You are a junior koala keeper now.\""
+        ]
+      }
+    ],
+    "done": "You are a junior koala keeper at Bluegum. The koalas and the visitors are glad you came. You can visit them any time."
+  },
+  "home": {
+    "about": "The way home (LTF-27), offered on the sanctuary card after Opening Day: the Kookaburra flies back to Cloud Hill, Captain Ada's boat takes him to one island he skipped (first visit, same host and places, a new setback), then to Gull Island, and the ferry brings him home; each stop keeps the outward beat format, with the setback at beat 2.",
+    "offer": {
+      "text": "Captain Ada says the Kookaburra can fly you home. On the way, you can visit one more island.",
+      "go": "Fly home",
+      "stay": "Stay at the sanctuary"
+    },
+    "stayText": "You stay at Bluegum, and the koalas are glad. Captain Ada says the Kookaburra can fly you home any time.",
+    "stops": [
+      {
+        "id": "back-cloud",
+        "place": "airfield",
+        "name": "Cloud Hill",
+        "emoji": "🛩️",
+        "beats": [
+          {
+            "text": "Ranger Tess says, \"Come back any time.\" Captain Ada says the Kookaburra is ready. You climb in and put on your seat belt."
+          },
+          {
+            "text": "The Kookaburra flies over the ocean. Captain Ada lands on Shell Island for fuel. The radio says fog may come to Cloud Hill.",
+            "smooth": "The Kookaburra flies over the ocean. Captain Ada lands on Shell Island for fuel."
+          },
+          {
+            "obstacle": "weather",
+            "text": "The radio says thick fog covers Cloud Hill. A pilot must see the runway to land. So the Kookaburra waits on Shell Island.",
+            "notice": {
+              "type": "notice",
+              "title": "Cloud Hill Airfield",
+              "icon": "🌫️",
+              "rows": [
+                "Thick fog this morning.",
+                "Pilots cannot see the runway.",
+                "The fog should lift by noon."
+              ]
+            },
+            "cope": "Fog lifts when the sun warms the air. Then we can land.",
+            "choice": {
+              "ask": "What will you do while the fog lifts?",
+              "options": [
+                {
+                  "label": "Look for shells on the beach",
+                  "reply": "Good plan. Shell Island is named for its shells.",
+                  "after": "You found five shells on the beach. By noon the fog had gone, and the Kookaburra took off."
+                },
+                {
+                  "label": "Look at Captain Ada's island map",
+                  "reply": "Good plan. The map shows every island you have not seen yet.",
+                  "after": "You found the islands you have not seen on the map. By noon the fog had gone, and the Kookaburra took off."
+                }
+              ]
+            },
+            "talk": "Ask: fog hid the runway, so the plane waited. Why must a pilot see the runway?",
+            "smooth": "The Kookaburra lands on Shell Island for fuel. The sky over the sea is clear."
+          },
+          {
+            "text": "The fog has gone. The Kookaburra flies on toward Cloud Hill.",
+            "smooth": "The fuel tank is full. The Kookaburra flies on toward Cloud Hill."
+          },
+          {
+            "text": "Captain Ada says, \"Look for a long, flat runway on a hill.\" One more session, and you land at Cloud Hill."
+          }
+        ],
+        "postcard": [
+          "The Kookaburra lands on the long runway at Cloud Hill.",
+          "Captain Ada rolls it into the hangar.",
+          "Her boat is tied up at the shore below the hill.",
+          "She says, \"Which island will you visit on the way home?\""
+        ]
+      },
+      {
+        "id": "back-fossil",
+        "place": "fossil",
+        "name": "Fossil Bay",
+        "emoji": "🦕",
+        "souvenir": "ammonite",
+        "topics": ["dinosaurs", "mining"],
+        "beats": [
+          {
+            "text": "Captain Ada's boat leaves the shore below Cloud Hill. To the south are gray cliffs. That is Fossil Bay. You have not been there yet."
+          },
+          {
+            "text": "A letter came from Dr. Bell, the fossil expert. It says: We found a big bone at the dig. Come and see it before it goes to the museum. The pier crane is very old.",
+            "smooth": "A letter came from Dr. Bell, the fossil expert. It says: We found a big bone at the dig. Come and see it before it goes to the museum."
+          },
+          {
+            "obstacle": "broken",
+            "text": "Your boat reached the pier at Fossil Bay. The big bone is in its plaster jacket, ready to go. But the pier crane is broken. It cannot lift the bone onto the boat today.",
+            "notice": {
+              "type": "message",
+              "app": "text",
+              "from": "Dr. Bell",
+              "rows": [
+                "The pier crane is broken.",
+                "A new part comes on Friday.",
+                "The bone waits at the dig until then."
+              ]
+            },
+            "cope": "When a machine breaks, we fix it. The bone is safe in its plaster jacket.",
+            "choice": {
+              "ask": "What will you do until Friday?",
+              "options": [
+                {
+                  "label": "Write the label for the bone",
+                  "reply": "Good plan. A label says what the bone is and where it was found.",
+                  "after": "You wrote the label with Dr. Bell. On Friday the crane was fixed, and the bone went onto the boat."
+                },
+                {
+                  "label": "Draw the bone for the museum",
+                  "reply": "Good plan. Dr. Bell draws every big find before it goes.",
+                  "after": "You drew the bone in Dr. Bell's book. On Friday the crane was fixed, and the bone went onto the boat."
+                }
+              ]
+            },
+            "talk": "Ask: the crane broke, so the bone had to wait. What did he do while he waited?",
+            "smooth": "Your boat reached the pier at Fossil Bay. The big bone is in its plaster jacket, ready to go."
+          },
+          {
+            "text": "The crane is fixed. The bone is on its way to the museum.",
+            "smooth": "Dr. Bell shows you the bone in its plaster jacket."
+          },
+          {
+            "text": "Dr. Bell's tent is at the far end of the beach. One more session, and you reach Fossil Bay."
+          }
+        ],
+        "postcard": [
+          "Fossil Bay has gray cliffs made of thin layers of rock. The lowest layers are the oldest.",
+          "Dr. Bell shows you an ammonite. It is the coiled shell of a sea animal.",
+          "Ammonites lived in the sea in the time of the dinosaurs.",
+          "You brush sand off a small bone with a soft brush.",
+          "Captain Ada's boat waits at the pier. Next stop: Gull Island."
+        ]
+      },
+      {
+        "id": "back-reef",
+        "place": "reef",
+        "name": "Reef Island",
+        "emoji": "🐢",
+        "souvenir": "turtle",
+        "topics": ["ocean", "animals"],
+        "beats": [
+          {
+            "text": "Captain Ada's boat leaves the shore below Cloud Hill. To the west is a ring of white waves. That is the reef around Reef Island. You have not been there yet."
+          },
+          {
+            "text": "Mari drives the reef boat. Her letter says: Come and see Turtle Beach. Sea turtles laid eggs in the sand there. The eggs may hatch this week.",
+            "smooth": "Mari drives the reef boat. Her letter says: Come and see Turtle Beach. Sea turtles laid eggs in the sand there."
+          },
+          {
+            "obstacle": "blocked",
+            "text": "Your boat crossed the channel into the lagoon. But Turtle Beach is closed tonight. Baby turtles are hatching. They need the beach dark and quiet.",
+            "notice": {
+              "type": "notice",
+              "title": "Turtle Beach",
+              "icon": "🐢",
+              "rows": [
+                "BEACH CLOSED tonight.",
+                "Baby turtles are hatching.",
+                "Please watch from the path above the beach."
+              ]
+            },
+            "cope": "A closed beach keeps the baby turtles safe. We can watch from the path.",
+            "choice": {
+              "ask": "What will you do tonight?",
+              "options": [
+                {
+                  "label": "Watch from the path with Mari",
+                  "reply": "Good plan. Mari has a dim red light. It bothers turtles less than white light.",
+                  "after": "From the path, you saw tiny turtles crawl to the sea. In the morning, the beach was open again."
+                },
+                {
+                  "label": "Help Mari clean the glass-floor boat",
+                  "reply": "Good plan. The boat goes out in the morning.",
+                  "after": "You helped Mari clean the glass floor. In the morning, the beach was open. Tiny tracks led down the sand to the sea."
+                }
+              ]
+            },
+            "talk": "Ask: the beach was closed for the baby turtles. Why was that a good rule?",
+            "smooth": "Your boat crossed the channel into the lagoon. Turtle Beach is long and white."
+          },
+          {
+            "text": "The baby turtles are in the sea now. Turtle Beach is open again.",
+            "smooth": "Mari shows you turtle tracks in the sand. They lead to the sea."
+          },
+          {
+            "text": "Inside the reef, the water is calm and clear. You can see fish under the boat. One more session, and you reach Reef Island."
+          }
+        ],
+        "postcard": [
+          "Reef Island sits inside a ring of coral.",
+          "Coral is made by tiny animals called polyps. Their hard skeletons build up into a reef, very slowly.",
+          "Through the glass floor, you see a clownfish in a sea anemone.",
+          "A sea turtle swims under the boat. It is as big as you.",
+          "Captain Ada's boat waits at the pier. Next stop: Gull Island."
+        ]
+      },
+      {
+        "id": "back-star",
+        "place": "star",
+        "name": "Star Point",
+        "emoji": "🔭",
+        "souvenir": "dome",
+        "topics": ["space", "weather"],
+        "beats": [
+          {
+            "text": "Captain Ada's boat leaves the shore below Cloud Hill. To the north is a white dome on a point of land. That is the observatory at Star Point. You have not been there yet."
+          },
+          {
+            "text": "Dr. Amal works at the observatory. Her message says: Come on a clear night. The telescope can show you the Moon and Saturn. The dome is very old.",
+            "smooth": "Dr. Amal works at the observatory. Her message says: Come on a clear night. The telescope can show you the Moon and Saturn."
+          },
+          {
+            "obstacle": "broken",
+            "text": "Your boat landed at the pier below Star Point. The sky is clear, but the dome will not open. Its motor is broken. So the big telescope cannot see out tonight.",
+            "notice": {
+              "type": "message",
+              "app": "text",
+              "from": "Dr. Amal",
+              "rows": [
+                "The dome motor is broken.",
+                "A new motor comes tomorrow.",
+                "Tonight we use the small telescope on the grass."
+              ]
+            },
+            "cope": "A broken motor gets fixed. The sky is clear, and a small telescope works too.",
+            "choice": {
+              "ask": "What will you look at tonight?",
+              "options": [
+                {
+                  "label": "Look at the Moon through the small telescope",
+                  "reply": "Good plan. The small telescope shows the Moon's craters.",
+                  "after": "You saw the Moon's craters through the small telescope. The next day the new motor came, and the dome opened."
+                },
+                {
+                  "label": "Count shooting stars from the grass",
+                  "reply": "Good plan. A shooting star is a tiny rock burning up high in the sky.",
+                  "after": "You counted four shooting stars. The next day the new motor came, and the dome opened."
+                }
+              ]
+            },
+            "talk": "Ask: the dome would not open, so they used a small telescope. What else could they have done?",
+            "smooth": "Your boat landed at the pier below Star Point. Dr. Amal waves from the dome."
+          },
+          {
+            "text": "The new motor is in. The dome opens with a hum.",
+            "smooth": "Dr. Amal opens the dome. The telescope points at Saturn."
+          },
+          {
+            "text": "Tonight is clear. Small lamps light the path up the point. One more session, and you reach Star Point."
+          }
+        ],
+        "postcard": [
+          "The observatory at Star Point has a round dome. A slit in the dome opens, and the telescope looks out.",
+          "Through the telescope, the Moon has gray plains and round craters.",
+          "Saturn looks like a small yellow ball with a ring around it.",
+          "Dr. Amal says the ring is made mostly of ice.",
+          "Captain Ada's boat waits at the pier below. Next stop: Gull Island."
+        ]
+      },
+      {
+        "id": "back-rail",
+        "place": "rail",
+        "name": "Rail Coast",
+        "emoji": "🚂",
+        "souvenir": "signal",
+        "topics": ["transport", "maps"],
+        "beats": [
+          {
+            "text": "Captain Ada's boat leaves the shore below Cloud Hill. To the east is a long, low island. A train runs along its coast. That is Rail Coast. You have not been there yet."
+          },
+          {
+            "text": "Your boat lands at Pier Station. From there, the Coast Line train runs beside the sea to Rail Coast. Mr. Haddad, the signal operator, sent you a map of the line. The line crosses a river on a bridge that lifts for boats.",
+            "smooth": "Your boat lands at Pier Station. From there, the Coast Line train runs beside the sea to Rail Coast. Mr. Haddad, the signal operator, sent you a map of the line."
+          },
+          {
+            "obstacle": "blocked",
+            "text": "You are on the train, but it has stopped at Shell Halt. The bridge over the river is up. A tall sailboat is going under it, so the train waits.",
+            "notice": {
+              "type": "notice",
+              "title": "Coast Line",
+              "icon": "🌉",
+              "rows": [
+                "The river bridge is up for a sailboat.",
+                "Trains wait at Shell Halt.",
+                "The bridge comes down when the boat has passed."
+              ]
+            },
+            "cope": "A bridge that lifts comes down again. Boats and trains take turns.",
+            "choice": {
+              "ask": "What will you do while the bridge is up?",
+              "options": [
+                {
+                  "label": "Watch the sailboat from the platform",
+                  "reply": "Good plan. The sailboat's mast is too tall to fit under the bridge.",
+                  "after": "You watched the sailboat pass. Then the bridge came down, and the train rolled on."
+                },
+                {
+                  "label": "Find the bridge on Mr. Haddad's map",
+                  "reply": "Good plan. The map shows the river and the bridge.",
+                  "after": "You found the river and the bridge on the map. Then the bridge came down, and the train rolled on."
+                }
+              ]
+            },
+            "talk": "Ask: the bridge was up, so the train waited. Why do boats and trains take turns?",
+            "smooth": "You are on the train. It runs right beside the sea."
+          },
+          {
+            "text": "The bridge is down, and the train is running again.",
+            "smooth": "The train runs right beside the sea. You can see the waves from your seat."
+          },
+          {
+            "text": "The map shows one more stop before Rail Coast. One more session, and you reach Rail Coast."
+          }
+        ],
+        "postcard": [
+          "Rail Coast station has a clock, a signal box and a map room.",
+          "In the signal box, Mr. Haddad pulls a lever. A signal changes to tell the driver to go.",
+          "In the map room, a big map shows every island.",
+          "You find Home Island and Gull Island on the map. They are close now.",
+          "Captain Ada meets you on the platform. Her boat goes to Gull Island next."
+        ]
+      },
+      {
+        "id": "back-gull",
+        "place": "gull",
+        "name": "Gull Island",
+        "emoji": "🦭",
+        "beats": [
+          {
+            "text": "Captain Ada's boat sails for Gull Island. You have been there before. Ranger Jo looks after the seals and the gulls."
+          },
+          {
+            "text": "Ranger Jo sent a note. It says: Come and see the seal rocks. We can ride bikes along the shore. One bike has an old tire.",
+            "smooth": "Ranger Jo sent a note. It says: Come and see the seal rocks. We can ride bikes along the shore."
+          },
+          {
+            "obstacle": "broken",
+            "text": "Your boat landed at the harbor on Gull Island. Ranger Jo brought two bikes. But one bike has a flat tire. It needs a patch before it can roll.",
+            "notice": {
+              "type": "message",
+              "app": "text",
+              "from": "Ranger Jo",
+              "rows": [
+                "One bike has a flat tire.",
+                "I have a patch kit. The glue needs a few minutes to dry.",
+                "Or we can walk the beach path to the seal rocks."
+              ]
+            },
+            "cope": "A flat tire is a small problem. We can patch it, or we can walk.",
+            "choice": {
+              "ask": "How will you get to the seal rocks?",
+              "options": [
+                {
+                  "label": "Patch the tire with Ranger Jo",
+                  "reply": "Good plan. First find the hole, then stick on the patch.",
+                  "after": "You found the hole and stuck on the patch. Soon you rode to the seal rocks."
+                },
+                {
+                  "label": "Walk the beach path",
+                  "reply": "Good plan. The path is flat, and the seal rocks are close.",
+                  "after": "You walked the beach path with Ranger Jo. The seals were asleep on the warm rocks."
+                }
+              ]
+            },
+            "talk": "Ask: the bike had a flat tire. He could fix it or walk. Which would you pick, and why?",
+            "smooth": "Your boat landed at the harbor on Gull Island. Ranger Jo brought two bikes."
+          },
+          {
+            "text": "You are at the seal rocks. The seals sleep in the sun.",
+            "smooth": "You rode to the seal rocks with Ranger Jo. The seals sleep in the sun."
+          },
+          {
+            "text": "Ranger Jo says the view from the hill is best in the morning. One more session, and you climb the hill on Gull Island."
+          }
+        ],
+        "postcard": [
+          "From the top of the hill, you can see Home Island.",
+          "Seals sleep on the warm rocks below.",
+          "Gulls fly over the water and call to each other.",
+          "Ranger Jo points to the ferry in the harbor. It sails to Home Island tomorrow."
+        ]
+      },
+      {
+        "id": "back-home",
+        "place": "home",
+        "name": "Home Island",
+        "emoji": "🏝️",
+        "beats": [
+          {
+            "text": "Captain Ada's boat sails back to Cloud Hill. She says, \"Come and fly with me again.\" The ferry will take you home."
+          },
+          {
+            "text": "You bought a ferry ticket at the harbor. The ferry sails on Saturday at 9 AM. Workers are fixing the ramp at Home Island harbor this week.",
+            "smooth": "You bought a ferry ticket at the harbor. The ferry sails on Saturday at 9 AM."
+          },
+          {
+            "obstacle": "blocked",
+            "text": "The ferry sailed on time. But it cannot land at Home Island harbor today. Workers are fixing the ramp. So the ferry lands at the old pier by the lighthouse.",
+            "notice": {
+              "type": "notice",
+              "title": "Home Island Harbor",
+              "icon": "🚧",
+              "rows": [
+                "HARBOR RAMP CLOSED today.",
+                "Workers are fixing the ramp.",
+                "Ferries land at the lighthouse pier."
+              ]
+            },
+            "cope": "When one landing is closed, the ferry uses another. The lighthouse pier is close to town.",
+            "choice": {
+              "ask": "How will you get from the lighthouse to town?",
+              "options": [
+                {
+                  "label": "Walk the lighthouse path to town",
+                  "reply": "Good plan. The path goes along the shore to the harbor.",
+                  "after": "You walked the lighthouse path. You could see the town and the peaks the whole way."
+                },
+                {
+                  "label": "Take the bus from the lighthouse",
+                  "reply": "Good plan. The bus stops right by the pier.",
+                  "after": "The bus took the shore road. From the window, you saw the harbor, the town and the forest."
+                }
+              ]
+            },
+            "talk": "Ask: the ferry landed at a different pier. How did he get to town?",
+            "smooth": "The ferry sailed on time. The sea is calm, and Home Island grows bigger."
+          },
+          {
+            "text": "You are on Home Island. The town is close now.",
+            "smooth": "The ferry lands at the harbor. The town is close now."
+          },
+          {
+            "text": "You can see the forest and the peaks. One more session, and you are home."
+          }
+        ],
+        "postcard": [
+          "You walk up the hill into town.",
+          "The forest is green, and the peaks stand against the sky.",
+          "Mr. Okafor waves from the bike shop.",
+          "You are home. Your island has a new piece from every place you visited."
+        ]
+      }
+    ]
+  }
 }

@@ -58,8 +58,20 @@ export interface Settings {
   routes?: Record<string, { to: string; at: number }>;
   /** LTF-20: forks already checked once for learners who were past them when the routes arrived. */
   forksSeen?: string[];
+  /** LTF-30: the koala keeper arc's start was checked once; and where it is anchored after a pace change (in sessions after the eighth koala). */
+  arcSeen?: boolean;
+  arcAnchor?: { at: number; stop: number; step: number; after: number };
+  /** LTF-27: the way home, once he chose it after Opening Day: when (finished sessions), the island he picked on the way, and
+   * where it is anchored after a choice or a pace change (in sessions since he set off). */
+  homeTrip?: { at: number; island?: string; anchor?: { at: number; stop: number; step: number; after: number } };
+  /** LTF-27: he chose to stay at the sanctuary for now; the offer stays open. */
+  homeStayed?: boolean;
   /** LTF-36: finished sessions when he first came ashore on each island; its areas open with the sessions after that. */
   islandsSeen?: Record<string, number>;
+  /** LTF-38: notice answers faster than reading, set them aside, and stop kindly after two in a row. On unless a grown-up turns it off. */
+  guessCheck?: boolean;
+  /** LTF-38: end sessions on his next first-tap success after this many minutes. Off when unset. */
+  endAt?: number;
 }
 
 export const DEFAULTS: Settings = {

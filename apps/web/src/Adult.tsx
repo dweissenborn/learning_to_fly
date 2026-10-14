@@ -2,8 +2,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId, Strand } from '@wayfinder/schema';
-import { ALL_SKILLS, checkupResults, dayKey, delayEffect, errorPatterns, formatEffect, ideasUse, placementSupports, reasonRecord, recountTrend, flightPoints, freshness, FRESH_LOW, focusSkill, gate, GEAR, gearState, hintNeed, insights, interestEffect, journeyPosition, levelFor, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName } from '@wayfinder/engine';
-import { finishedCount, JOURNEY, journeyNow } from './journey';
+import { ALL_SKILLS, checkupResults, dayKey, delayEffect, errorPatterns, flightPeak, flightPoints, focusSkill, formatEffect, FRESH_LOW, freshness, gate, GEAR, gearState, guessing, hintNeed, ideasUse, insights, interestEffect, journeyPosition, levelFor, placementSupports, reasonRecord, recountTrend, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName } from '@wayfinder/engine';
+import { finishedCount, JOURNEY, journeyNow, routeLabel, repace } from './journey';
 import { deleteNote, exportAll, importAll, log, saveSettings, updateNote, useNotes, wipeAll, type GuideId, type Settings } from './db';
 import { deleteEverywhere, useLink } from './cloud';
 import { CloudCard } from './CloudScreens';
@@ -76,7 +76,7 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
         <span>Days used</span><b>{days}</b>
         <span>Time reading</span><b>{minutes} min</b>
         <span>Today recounts</span><b>{recounts}</b>
-        <span>Journey</span><b>{(() => { const j = journeyNow(finishedCount(progress), settings); return j.fork ? `${j.here.name}, choosing a sea route` : j.next ? `${j.here.name}, ${j.legLength - j.step} more to ${j.next.name}` : `In Australia, ${Math.min(j.after + 1, JOURNEY.koalas.length)} koalas met`; })()}</b>
+        <span>Journey</span><b>{(() => { const j = journeyNow(finishedCount(progress), settings); return j.fork ? `${j.here.name}, choosing ${j.fork.kind === 'path' ? 'a flight path' : j.fork.kind === 'home' ? 'an island on the way home' : 'a sea route'}` : j.trip?.done ? 'Home again, after the whole journey' : j.next ? `${j.here.name}, ${j.legLength - j.step} more to ${j.next.name}` : j.arc?.done ? 'A junior koala keeper at Bluegum' : `In Australia, ${Math.min(j.after + 1, JOURNEY.koalas.length)} koalas met`; })()}</b>
       </div>
       <p className="tagline">Studies of reading programs like this one measured gains after about 25 sessions, so give it that long before judging. Mastery needs two good days on a skill, so steady short sessions work best.</p>
     </section>
@@ -294,6 +294,23 @@ function ReasonRecord({ progress }: { progress: Progress }) {
 
 /** LTF-15: which question types work for him, compared only within the same skill and level. */
 const FORMAT_NAME: Record<string, string> = { tap: 'Choose', order: 'Put in order', storymap: 'Story map', highlight: 'Find it in the text', sort: 'Sort', scene: 'Picture scene', build: 'Build an answer' };
+/** LTF-38: tapping through for the green check, read from answer times. Nothing on his screen ever shows a clock. */
+function Guessing({ events, settings }: { events: LogEvent[]; settings: Settings }) {
+  const g = useMemo(() => guessing(events), [events]);
+  const suggest = g.startMinute !== undefined ? Math.max(5, g.startMinute - 1) : undefined;
+  return <section className="card stack">
+    <h2>Guessing and breaks</h2>
+    <div className="kv">
+      <span>Answers set aside as guesses</span><b>{g.setAside}</b>
+      <span>Sessions stopped kindly for guessing</span><b>{g.rapidStops}</b>
+      <span>Breaks he asked for</span><b>{g.breaks}</b>
+      {g.startMinute !== undefined && <><span>Guessing usually starts</span><b>around minute {g.startMinute}</b></>}
+    </div>
+    <p className="tagline">A first tap faster than anyone could read the question is a guess. It earns no points and counts neither for nor against him. Two in a row, both wrong, end the session kindly: "Good place to stop. Your progress is saved." Tapping through to the answer is often a way out of work that has become too much, so asking for a break is always honoured and takes him to the lounge.</p>
+    {suggest !== undefined && !settings.endAt && <p className="tagline">Suggested: end sessions on a success at minute {suggest}, before guessing tends to start (Settings, under Learning).</p>}
+  </section>;
+}
+
 function Formats({ progress }: { progress: Progress }) {
   const rows = useMemo(() => formatEffect(progress), [progress]);
   const strands: Strand[] = ['functional', 'narrative', 'philosophical'];
@@ -318,7 +335,7 @@ function Activity({ events, settings, progress }: { events: LogEvent[]; settings
   for (const s of sessions) for (const st of s.steps) if (st.step !== 'finish') perStep.set(st.step, [...(perStep.get(st.step) ?? []), st.ms]);
   const answers = events.filter((e) => e.type === 'answer' && e.phase !== 'placement' && e.ms > 0);
   const bySkill = ALL_SKILLS.map((s) => ({ s, list: answers.filter((a) => a.type === 'answer' && a.skill === s) })).filter((x) => x.list.length);
-  const kit = gearState(flightPoints(events));
+  const kit = gearState(flightPoints(events), flightPeak(events));
   const ended = (s: (typeof sessions)[number]) => (s.outcome === 'finished' ? 'Finished' : `${s.outcome === 'stopped' ? 'Stopped' : 'Left open'}${s.lastStep ? ` at ${STEP_LABEL[s.lastStep]}` : ''}`);
   return <div className="stack">
     <section className="card stack">
@@ -328,6 +345,7 @@ function Activity({ events, settings, progress }: { events: LogEvent[]; settings
     </section>
     <FreshContent settings={settings} progress={progress} />
     <HintWait events={events} progress={progress} />
+    <Guessing events={events} settings={settings} />
     <Formats progress={progress} />
     <ReasonRecord progress={progress} />
     <WordHelp events={events} />
@@ -356,7 +374,7 @@ function Activity({ events, settings, progress }: { events: LogEvent[]; settings
       <section className="card stack">
         <h2>Flight kit</h2>
         <p style={{ margin: 0 }}>{kit.owned.length} of {GEAR.length} pieces, {kit.points} points. {kit.next ? `Next: the ${kit.next.name.toLowerCase()} in ${kit.toNext} points.` : 'Ready for take-off.'}</p>
-        <p className="tagline">His guide earns flight gear for the trip to Australia. Points reward effort only, never speed or scores: 2 per answer, right or not, 3 for finishing, and 3 for getting past the step where his sessions usually end. Rewards promised for good scores can make children like a task less, so none are.</p>
+        <p className="tagline">His guide earns flight gear for the trip to Australia. Since LTF-38, points reward thinking rather than tapping through: 4 for an answer right on the first tap, 2 for right with the clue, 1 off when the answer had to be shown, none for a guess faster than the question could be read, and 3 for finishing a session. A piece he has earned is never taken back, the journey still moves with finished sessions alone, and nothing rewards pushing on past the point where he usually tires.</p>
       </section>
     </div>
     <section className="card stack">
@@ -558,14 +576,15 @@ function SettingsTab({ settings, progress, onRescout, onGrammar }: { settings: S
       <p className="tagline">Start with frequent rewards if he needs them, then thin them out, as is standard in teaching. Rewards build his island and never depend on scores, because rewards promised for scores can make children like a task less.</p>
       <Seg label="Sessions between places on the journey" value={settings.legLength} options={[[3, '3'], [5, '5'], [7, '7']]} onChange={(legLength) => {
         // Re-anchor at today's place, so a new pace never moves him back.
-        const finished = finishedCount(progress);
-        const pos = journeyNow(finished, settings); // on his route (LTF-20)
-        saveSettings({ legLength, journeyAnchor: { at: finished, stop: pos.stop, step: pos.step, after: pos.after } });
+        saveSettings(repace(settings, finishedCount(progress), legLength)); // on his route (LTF-20) and in the keeper arc (LTF-30)
       }} />
-      {Object.entries(settings.routes ?? {}).map(([from, r]) => <p key={from} style={{ margin: 0 }}>Route from {JOURNEY.stops.find((s) => s.id === from)?.name}: <b>{JOURNEY.stops.find((s) => s.id === r.to)?.name}</b>{r.at ? `, chosen ${fmtDate(r.at)}` : ' (he was already on this route when the island routes arrived)'}.</p>)}
+      {Object.entries(settings.routes ?? {}).map(([from, r]) => <p key={from} style={{ margin: 0 }}>Route from {JOURNEY.stops.find((s) => s.id === from)?.name}: <b>{routeLabel(from, r.to)}</b>{r.at ? `, chosen ${fmtDate(r.at)}` : ' (he was already on this route when the island routes arrived)'}.</p>)}
       <p className="tagline">The journey to the koalas moves with finished sessions, never with scores. Five a leg reaches Australia at about session 25, about where studies measured gains.</p>
       <Toggle on={settings.setbacks} onChange={(setbacks) => saveSettings({ setbacks })}>Story setbacks (a storm, a blocked path, a broken part)</Toggle>
       <p className="tagline">Setbacks model coping with change: each one is explained, he hears a calm coping line, and he picks a plan. Nothing is lost. Turn them off for a smoother story.</p>
+      <Toggle on={settings.guessCheck !== false} onChange={(guessCheck) => saveSettings({ guessCheck })}>Notice guesses faster than reading, set them aside, and stop kindly after two in a row</Toggle>
+      <Seg label="End sessions on a success after" value={settings.endAt ?? 0} options={[[0, 'Off'], [8, '8 min'], [10, '10 min'], [12, '12 min'], [15, '15 min']]} onChange={(endAt) => saveSettings({ endAt })} />
+      <p className="tagline">After this time, the next answer he gets right on the first tap ends the session, so it ends on a success before he tires. The Activity tab shows when guessing tends to start.</p>
       <Toggle on={settings.fastTrack} onChange={(fastTrack) => saveSettings({ fastTrack })}>Fast track: one flawless session can master a skill</Toggle>
       <p className="tagline">For a learner who locks a skill in once he sees how. It needs every answer right first time, a new format, and a level 3 or harder text. Reviews at 3, 7 and 21 days still check that it lasts. Harder levels (4 and 5) open by themselves after two right answers in a row.</p>
       <div className="field"><label htmlFor="reset">Calm-down words his school uses</label>

@@ -5,7 +5,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
 import { reasonProblems } from './reason.mjs';
-import { routeProblems } from './routes.mjs';
+import { arcProblems, homeProblems, routeProblems } from './routes.mjs';
 import { glossProblems } from './glossary.mjs';
 import { refProblems } from './refs.mjs';
 
@@ -168,6 +168,8 @@ for (const file of files) {
 
 // LTF-20: the journey's routes.
 for (const m of routeProblems(journey.stops, schema.definitions.Topic.enum)) errors.push(`journey.json: ${m}`);
+for (const m of arcProblems(journey.arc)) errors.push(`journey.json: ${m}`); // LTF-30
+for (const m of homeProblems(journey.home, journey.stops)) errors.push(`journey.json: ${m}`); // LTF-27
 
 if (errors.length) {
   console.error(`\n${errors.length} problem(s):\n` + errors.map((e) => '  - ' + e).join('\n'));

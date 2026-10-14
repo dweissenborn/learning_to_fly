@@ -547,3 +547,14 @@ button.pbox { cursor: pointer; }
 .isle-switch .btn[data-selected] { background: var(--s); color: var(--on-s, #fff); border-color: var(--s); }
 .quest-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4rem; }
 .quest-list li { display: flex; gap: 0.5rem; align-items: baseline; }
+
+/* LTF-38: the lounge's kite. */
+.kite-sky { border-radius: 16px; overflow: hidden; touch-action: none; cursor: pointer; }
+.kite-sky svg { display: block; width: 100%; height: auto; }
+.kite-sky:focus-visible { outline: 3px solid var(--focus, #2f6f99); outline-offset: 3px; }
+
+/* LTF-30: the keeper arc's stops at Bluegum. */
+.arc-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.arc-steps li { padding: 0.35rem 0.7rem; border-radius: 999px; background: var(--surface-2, #f1ece2); border: 2px solid transparent; }
+.arc-steps li.done { border-color: #3f9a5c; }
+.arc-steps li.next { border: 2px dashed #3f88c5; }

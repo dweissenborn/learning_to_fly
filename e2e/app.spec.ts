@@ -2,6 +2,23 @@ import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { createLearner, deleteLearner, learners, sync } from '../api/src/store.js';
 import { memoryRepo } from '../api/src/memory.js';
+import { readdirSync, readFileSync } from 'node:fs';
+
+// Every bank item, so a test can tap the right choice on purpose (LTF-38: points and the success look depend on it).
+const ITEMS: { prompt: string; format: string; options?: string[]; objects?: { label: string }[]; answer?: unknown }[] = readdirSync('content/bank').filter((f) => f.endsWith('.json'))
+  .flatMap((f) => JSON.parse(readFileSync(`content/bank/${f}`, 'utf8')).items);
+const exactStart = (s: string) => new RegExp('^' + s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(,|$)');
+
+/** The question on screen (three choices or a scene with one answer): the button for its answer, and for each wrong choice. */
+async function choicesHere(page: Page) {
+  const prompt = (await page.locator('.prompt > span').last().textContent()) ?? '';
+  const it = ITEMS.find((i) => i.prompt === prompt && (i.format === 'tap' || (i.format === 'scene' && typeof i.answer === 'number')));
+  if (!it) throw new Error(`no three-choice or one-answer scene item with the prompt: ${prompt}`);
+  const group = page.getByRole('group', { name: /^(Answers|Scene)$/ });
+  const labels = it.format === 'tap' ? it.options! : it.objects!.map((o) => o.label);
+  const button = (l: string) => (it.format === 'tap' ? group.getByRole('button', { name: l, exact: true }) : group.getByRole('button', { name: exactStart(l) }));
+  return { right: button(labels[it.answer as number]), wrong: labels.filter((_, k) => k !== it.answer).map(button) };
+}
 
 // WCAG 2.2 AA is the plan's baseline: accessibility regressions fail the build.
 async function axe(page: Page, where: string) {
@@ -34,6 +51,24 @@ async function onboard(page: Page) {
     db.close();
     return row?.value?.forksSeen ?? [];
   })).toContain('gull');
+  await setSettings(page, { guessCheck: false });
+  await page.reload(); // the app reads settings through Dexie, which does not see a write made straight to IndexedDB
+  await expect(page.getByRole('button', { name: /Start reading/ })).toBeVisible();
+}
+
+async function setSettings(page: Page, patch: Record<string, unknown>) {
+  await page.evaluate(async (patch) => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const st = db.transaction('kv', 'readwrite').objectStore('kv');
+    const g = st.get('settings');
+    await new Promise((r) => { g.onsuccess = () => { g.result.value = { ...g.result.value, ...patch }; st.put(g.result).onsuccess = r; }; });
+    db.close();
+  }, patch);
+}
+
+/** Taps the right answer on the first try, found by the question's prompt in the bank. */
+async function answerRight(page: Page) {
+  await (await choicesHere(page)).right.click();
 }
 
 async function seedFinished(page: Page, n: number) {
@@ -97,8 +132,10 @@ test('first run, a session item, and stopping without penalty', async ({ page })
   }
   await page.setViewportSize({ width: 1280, height: 800 });
 
-  await page.getByRole('button', { name: 'Stop' }).click();
-  await page.getByRole('dialog').getByRole('button', { name: 'Stop' }).click();
+  // "I need a break" is honoured at once: no "Keep going" question, straight to the lounge (LTF-38).
+  await page.getByRole('button', { name: 'I need a break' }).click();
+  await expect(page.getByText('Good idea to take a break. Everything you did is saved.', { exact: false })).toBeVisible();
+  await page.getByRole('button', { name: 'Back to my island' }).click();
   await expect(page.getByRole('button', { name: /Start reading/ })).toBeVisible();
 });
 
@@ -196,12 +233,18 @@ async function answer(page: Page, o: { press?: boolean } = {}) {
   const next = page.getByRole('button', { name: /^Next( →)?$/ });
   for (const opts of [page.getByRole('group', { name: /^(Answers|Scene)$/ }).getByRole('button'), page.locator('main [role=button]:is(.sentence, .vrow, .word)')])
     for (let k = 0; k < (await opts.count()) && !(await next.isVisible()); k++) if (await opts.nth(k).isEnabled()) await opts.nth(k).click();
+  // Sort, order and story-map questions: Help until the answer is filled in, then Check.
+  const help = page.getByRole('button', { name: 'Help' });
+  for (let k = 0; k < 3 && !(await next.isVisible()) && (await help.count()) && (await help.isEnabled()); k++) await help.click();
+  const check = page.getByRole('button', { name: 'Check', exact: true });
+  if (!(await next.isVisible()) && (await check.isVisible())) await check.click();
   if (o.press !== false) await next.click();
 }
 
 test('flight gear: points in a session, a celebration, the kit, and the activity the grown-ups see', async ({ page }) => {
+  await page.clock.install({ time: new Date('2026-10-14T16:00:00') }); // the same warm-ups every run
   await onboard(page);
-  // Two points already, from one scouting answer. Every answer earns two, right or not.
+  // Two points already, from one scouting answer given before LTF-38 (they earned two each).
   await page.evaluate(async () => {
     const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
     const tx = db.transaction('events', 'readwrite');
@@ -217,16 +260,18 @@ test('flight gear: points in a session, a celebration, the kit, and the activity
   await page.getByRole('button', { name: /Let's go/ }).click();
   await page.getByRole('button', { name: /Harbor Town/ }).click();
   await expect(page.getByRole('progressbar', { name: 'Flight kit: 2 more points to the flight cap' })).toBeVisible();
-  await answer(page); // any answer earns two points, so the cap arrives
+  await answerRight(page); // right on the first tap: four points, so the cap arrives
+  await expect(page.locator('.feedback.good')).toBeVisible(); // and it looks like a success
+  await page.getByRole('button', { name: /^Next( →)?$/ }).click();
   await expect(page.getByRole('dialog', { name: 'New flight gear: Flight cap' })).toBeVisible();
   await axe(page, 'gear celebration');
   await page.getByRole('button', { name: /Keep going/ }).click();
   await expect(page.getByRole('dialog')).toHaveCount(0);
 
-  await page.getByRole('button', { name: 'Stop' }).click();
-  await page.getByRole('dialog').getByRole('button', { name: 'Stop' }).click();
+  await page.getByRole('button', { name: 'I need a break' }).click();
+  await page.getByRole('button', { name: 'Back to my island' }).click();
   await page.getByRole('button', { name: /Flight kit · 1 of 12/ }).click();
-  await expect(page.getByText('Every answer is two points, right or not.', { exact: false })).toBeVisible();
+  await expect(page.getByText('Right the first time: four points.', { exact: false })).toBeVisible();
   await axe(page, 'flight kit');
   await page.getByRole('dialog').getByRole('button', { name: 'Done' }).click();
 
@@ -242,7 +287,10 @@ test('flight gear: points in a session, a celebration, the kit, and the activity
   await axe(page, 'activity');
 });
 
-test('a gentle nudge when he goes quiet, and a bonus for getting past his usual stopping point', async ({ page }) => {
+test('a gentle nudge when he goes quiet, and no bonus for pushing past his usual stopping point (LTF-38)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
   await page.clock.install({ time: new Date('2026-10-14T16:00:00') }); // a fixed time, so the same warm-ups come up every run
   await onboard(page);
   // Two earlier sessions that both ended in the warm-up.
@@ -269,10 +317,14 @@ test('a gentle nudge when he goes quiet, and a bonus for getting past his usual 
   await axe(page, 'idle nudge');
 
   for (let i = 0; i < 4 && (await page.getByText(/Warm up · \d of/).isVisible()); i++) await answer(page);
-  await expect(page.getByText('You kept going past Warm up. +3 flight points!')).toBeVisible();
+  await expect(page.getByText(/Warm up · \d of/)).toHaveCount(0);
+  await expect(page.getByText(/You kept going past/)).toHaveCount(0);
 });
 
 test('the clue shows at once on the first guided question of a new skill, then waits as usual (LTF-01)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
   await page.clock.install({ time: new Date('2026-10-14T16:00:00') });
   await onboard(page);
   await page.getByRole('button', { name: /Start reading/ }).click();
@@ -689,4 +741,143 @@ test('a new island at each stop: its own look, a quest that opens places one ses
   await page.getByRole('button', { name: 'Home Island' }).click();
   await expect(page.getByRole('img', { name: /^Your island\./ })).toBeVisible();
   await expect(page.getByRole('region', { name: /quest/ })).toHaveCount(0);
+});
+
+test('a wrong tap opens the clue for one more try, a second shows the answer, and only a first-tap answer looks like a success (LTF-38)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await page.clock.setFixedTime(new Date('2026-10-14T16:00:00')); // the same questions every run
+  await onboard(page);
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.getByRole('button', { name: /Harbor Town/ }).click();
+  await expect(page.getByText(/Warm up · 1 of/)).toBeVisible();
+  const { wrong } = await choicesHere(page);
+  await wrong[0].click();
+  await expect(page.locator('.feedback.hint')).toBeVisible(); // the clue
+  await expect(page.getByRole('button', { name: /^Next( →)?$/ })).toHaveCount(0);
+  await expect(wrong[1]).toBeEnabled(); // a real second try, not one choice left
+  await wrong[1].click();
+  await expect(page.getByText('Now you have seen how.')).toBeVisible();
+  await expect(page.locator('.feedback.good')).toHaveCount(0);
+  await axe(page, 'answer shown');
+  await page.getByRole('button', { name: /^Next( →)?$/ }).click();
+  await expect(page.getByText(/Warm up · 2 of/)).toBeVisible();
+});
+
+test('two fast wrong answers in a row end the session kindly, in the lounge, and the grown-ups see it (LTF-38)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await page.clock.setFixedTime(new Date('2026-10-14T16:00:00')); // the same questions every run, and every answer instant
+  await onboard(page);
+  await setSettings(page, { guessCheck: true });
+  await page.reload();
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.getByRole('button', { name: /Harbor Town/ }).click();
+  for (let k = 0; k < 2; k++) {
+    const { wrong } = await choicesHere(page);
+    for (const w of wrong.slice(0, 2)) await w.click();
+    if (k === 0) await page.getByRole('button', { name: /^Next( →)?$/ }).click();
+  }
+  await page.getByRole('button', { name: /^Next( →)?$/ }).click();
+  await expect(page.getByText('Good place to stop. Your progress is saved.', { exact: false })).toBeVisible();
+  await expect(page.getByRole('group', { name: /Fly a kite/ })).toBeVisible();
+  await axe(page, 'lounge');
+  await page.getByRole('group', { name: /Fly a kite/ }).press('ArrowLeft'); // the kite also flies by keyboard
+  await page.getByRole('button', { name: 'Back to my island' }).click();
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Activity' }).click();
+  const card = page.locator('section', { has: page.getByRole('heading', { name: 'Guessing and breaks' }) });
+  await expect(card).toContainText(/Answers set aside as guesses\s*2/);
+  await expect(card).toContainText(/Sessions stopped kindly for guessing\s*1/);
+  await axe(page, 'guessing card');
+});
+
+test('a reached island has a day trip on its postcard; Gull Island has none (LTF-26)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await setSettings(page, { routes: { gull: { to: 'fossil', at: 1 } }, journeyAnchor: { at: 5, stop: 1, step: 0, after: 0 } });
+  await seedFinished(page, 10); // ashore at Fossil Bay
+  await page.getByRole('button', { name: /My journey/ }).click();
+  await page.getByRole('button', { name: 'Open the postcard from Gull Island' }).click();
+  await expect(page.getByRole('dialog').getByRole('button', { name: /Day trip/ })).toHaveCount(0);
+  await page.getByRole('dialog').getByRole('button', { name: 'Done' }).click();
+  await page.getByRole('button', { name: 'Open the postcard from Fossil Bay' }).click();
+  await page.getByRole('dialog').getByRole('button', { name: /Day trip/ }).click();
+  await expect(page.getByRole('region', { name: 'Day trip on Fossil Bay' })).toContainText('A quarry is a place where rock was cut out of the ground.');
+  await axe(page, 'day trip');
+  await page.getByRole('button', { name: /Back to the postcard/ }).click();
+  await expect(page.getByRole('region', { name: 'Postcard from Fossil Bay' })).toBeVisible();
+});
+
+test('at Take-off Captain Ada offers two flight paths, and the reef way has its own story (LTF-25)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await setSettings(page, { routes: { gull: { to: 'star', at: 1 } }, journeyAnchor: { at: 5, stop: 1, step: 0, after: 0 } });
+  await seedFinished(page, 20); // at Take-off
+  await expect(page.getByText(/Captain Ada has two flight paths to Australia/)).toBeVisible();
+  await page.getByRole('button', { name: /My journey/ }).click();
+  const fork = page.getByRole('region', { name: 'Choose your flight path' });
+  await expect(fork.locator('.ccard')).toHaveCount(2);
+  await expect(fork).toContainText('The island way');
+  await expect(fork).toContainText('The reef way');
+  await axe(page, 'flight paths');
+  await fork.locator('.ccard', { hasText: 'The reef way' }).click();
+  await expect(page.getByText('You take the reef way.', { exact: false }).first()).toBeVisible();
+  await page.getByRole('button', { name: /Back to island/ }).click();
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Settings', exact: true }).click();
+  await expect(page.getByText(/Route from Take-off: The reef way/)).toBeVisible();
+});
+
+test('after the eighth koala, the keeper arc at Bluegum: its first beat, its stops, and their postcards (LTF-30)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await setSettings(page, { routes: { gull: { to: 'star', at: 1 }, takeoff: { to: 'island', at: 1 } }, journeyAnchor: { at: 5, stop: 1, step: 0, after: 0 } });
+  await seedFinished(page, 33); // landed after 25, then eight koalas
+  await expect(page.getByText(/Ranger Tess asks for your help this week/).first()).toBeVisible();
+  await page.getByRole('button', { name: /My journey/ }).click();
+  await expect(page.getByRole('region', { name: 'On the way to The Tree Nursery' })).toBeVisible();
+  await expect(page.getByRole('region', { name: 'Bluegum Koala Sanctuary' })).toContainText('Opening Day');
+  await axe(page, 'keeper arc');
+  await page.getByRole('button', { name: /Back to island/ }).click();
+  await seedFinished(page, 38); // one leg on: the Tree Nursery
+  await page.getByRole('button', { name: /My journey/ }).click();
+  await expect(page.getByRole('region', { name: 'On the way to Junior Keeper Day' })).toBeVisible();
+  await page.getByRole('button', { name: /The Tree Nursery/ }).click();
+  await expect(page.getByRole('region', { name: 'Postcard from The Tree Nursery' })).toContainText('On planting day');
+  await axe(page, 'arc postcard');
+});
+
+test('after Opening Day he can fly home, visit an island he skipped, and his island view follows him (LTF-27)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await setSettings(page, { routes: { gull: { to: 'star', at: 1 }, takeoff: { to: 'island', at: 1 } }, journeyAnchor: { at: 5, stop: 1, step: 0, after: 0 } });
+  await seedFinished(page, 58); // the keeper arc is done
+  await page.getByRole('button', { name: /My journey/ }).click();
+  await expect(page.getByText('Captain Ada says the Kookaburra can fly you home.', { exact: false }).first()).toBeVisible();
+  await axe(page, 'way home offer');
+  await page.getByRole('button', { name: /Fly home/ }).click();
+  await expect(page.getByRole('region', { name: 'On the way to Cloud Hill' })).toBeVisible();
+  await page.getByRole('button', { name: /Back to island/ }).click();
+  await seedFinished(page, 63); // one leg: at Cloud Hill
+  await expect(page.getByRole('img', { name: /^Cloud Hill\./ })).toBeVisible();
+  await page.getByRole('button', { name: /My journey/ }).click();
+  const fork = page.getByRole('region', { name: 'Choose an island on the way home' });
+  await expect(fork).not.toContainText('Star Point'); // he has been there
+  await expect(fork.locator('.ccard')).toHaveCount(3);
+  await axe(page, 'way home fork');
+  await fork.locator('.ccard', { hasText: 'Fossil Bay' }).click();
+  await expect(page.getByRole('region', { name: 'On the way to Fossil Bay' })).toBeVisible();
 });

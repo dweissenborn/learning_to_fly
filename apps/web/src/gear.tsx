@@ -1,8 +1,9 @@
 // The flight kit: his guide gears up for the flight to Australia. A meter in each session, a celebration for
-// every new piece, and the whole kit on the home screen. Points come from effort and never go down.
+// every new piece, and the whole kit on the home screen. Points reward thinking (LTF-38) and can go down a little, but a
+// piece he has earned is his to keep: gear follows his best total.
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
-import { flightPoints, GEAR, gearState, type GearPiece } from '@wayfinder/engine';
+import { flightPeak, flightPoints, GEAR, gearState, type GearPiece } from '@wayfinder/engine';
 import { GearContext, Guide, GUIDES } from './art';
 import { saveSettings, useEvents, type GuideId } from './db';
 import { Btn } from './ui';
@@ -11,13 +12,13 @@ import { sfx } from './media';
 /** Every guide on screen wears the gear he has earned. */
 export function GearProvider({ children }: { children: ReactNode }) {
   const events = useEvents();
-  const worn = useMemo(() => gearState(flightPoints(events ?? [])).owned.filter((g) => g.worn).map((g) => g.id), [events]);
+  const worn = useMemo(() => gearState(flightPoints(events ?? []), flightPeak(events ?? [])).owned.filter((g) => g.worn).map((g) => g.id), [events]);
   return <GearContext.Provider value={worn}>{children}</GearContext.Provider>;
 }
 
 /** Points toward the next piece, with a small "+2" that floats up when points arrive. */
-export function KitMeter({ points }: { points: number }) {
-  const g = gearState(points);
+export function KitMeter({ points, peak }: { points: number; peak: number }) {
+  const g = gearState(points, peak);
   const prev = useRef(points);
   const [gain, setGain] = useState(0);
   useEffect(() => {
@@ -47,8 +48,8 @@ export function Confetti() {
 const listOf = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}`);
 
 /** Celebrates gear he has not been shown yet, over whatever screen he is on. Several new pieces share one celebration. */
-export function GearCelebration({ points, guide, seen }: { points: number; guide: GuideId; seen: number }) {
-  const owned = gearState(points).owned.length;
+export function GearCelebration({ peak, guide, seen }: { peak: number; guide: GuideId; seen: number }) {
+  const owned = gearState(peak).owned.length;
   const fresh: GearPiece[] = owned > seen ? GEAR.slice(seen, owned) : [];
   useEffect(() => { if (fresh.length) sfx.gear(); }, [fresh.length]);
   if (!fresh.length) return null;
@@ -70,20 +71,20 @@ export function GearCelebration({ points, guide, seen }: { points: number; guide
 }
 
 /** The whole kit: what he has, and how far the next piece is. */
-export function KitPanel({ points, guide }: { points: number; guide: GuideId }) {
-  const g = gearState(points);
+export function KitPanel({ points, peak, guide }: { points: number; peak: number; guide: GuideId }) {
+  const g = gearState(points, peak);
   return <div className="stack">
     <div className="guide-row"><Guide id={guide} mood="happy" size={110} />
       <div className="bubble">{g.next
         ? <>I have {g.owned.length} of {GEAR.length} pieces for the flight. <b>{g.toNext} more {g.toNext === 1 ? 'point' : 'points'}</b> for the {g.next.name.toLowerCase()}.</>
         : <>We have everything. Ready for take-off!</>}
-        <span className="tagline" style={{ display: 'block', marginTop: '0.4rem' }}>Every answer is two points, right or not. Finishing a session is three.</span>
+        <span className="tagline" style={{ display: 'block', marginTop: '0.4rem' }}>Right the first time: four points. Right with the clue: two. When the answer is shown, one comes off. Finishing a session: three. A piece you have earned is yours to keep.</span>
       </div>
     </div>
-    <KitMeter points={points} />
+    <KitMeter points={points} peak={peak} />
     <ul className="kit-grid">
       {GEAR.map((p) => {
-        const have = points >= p.at, next = p === g.next;
+        const have = g.owned.includes(p), next = p === g.next;
         return <li key={p.id} className={`kit-item ${have ? 'have' : ''} ${next ? 'next' : ''}`}>
           <span className="kit-emoji" aria-hidden>{have ? p.emoji : '🔒'}</span>
           <span>{p.name}</span>

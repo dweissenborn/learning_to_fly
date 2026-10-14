@@ -6,10 +6,9 @@ export const IDLE_MS = 45_000;
 
 // ---------------------------------------------------------------- flight kit
 /**
- * His guide gears up for the flight to Australia. Points reward effort only, never speed or scores
- * (rewards promised for performance can lower a child's own interest; see docs/why-it-works.md):
- * 2 for every answer, right or not, 3 for finishing a session, and a bonus for getting past the step
- * where his sessions usually end. No one's points ever go down.
+ * His guide gears up for the flight to Australia. Since LTF-38 points reward thinking rather than tapping through
+ * (see pointsFor and docs/why-it-works.md): 4 right on the first tap, 2 with the clue, 1 off when the answer was shown,
+ * none for a guess faster than reading, 3 for finishing a session. Gear follows his best total, so it is never lost.
  */
 export interface GearPiece { id: string; name: string; emoji: string; at: number; worn: boolean }
 export const GEAR: readonly GearPiece[] = [
@@ -27,21 +26,61 @@ export const GEAR: readonly GearPiece[] = [
   { id: 'ready', name: 'Ready for take-off', emoji: '✈️', at: 400, worn: true },
 ];
 
-export function flightPoints(events: readonly LogEvent[]): number {
-  let pts = 0;
-  for (const e of events) {
-    if (e.type === 'answer') pts += 2;
-    else if (e.type === 'session' && e.action === 'finish') pts += 3;
-    else if (e.type === 'activity' && e.kind === 'boost') pts += e.points ?? 0;
-  }
-  return pts;
+/**
+ * LTF-38: what an answer earns, saved on it when it is given. Right on the first tap: four. Right with the clue: two.
+ * When the answer had to be shown: one comes off. A guess faster than the question could be read: none.
+ */
+export function pointsFor(a: { correct: boolean; shown?: boolean; rapid?: boolean }): number {
+  if (a.rapid) return 0;
+  if (a.correct) return 4;
+  return a.shown ? -1 : 2;
 }
 
-export function gearState(points: number) {
-  const owned = GEAR.filter((g) => points >= g.at);
-  const next = GEAR.find((g) => points < g.at);
+function* pointSteps(events: readonly LogEvent[]) {
+  for (const e of events) {
+    if (e.type === 'answer') yield e.points ?? 2; // answers before LTF-38 earned two each
+    else if (e.type === 'session' && e.action === 'finish') yield 3;
+    else if (e.type === 'activity' && e.kind === 'boost') yield e.points ?? 0;
+  }
+}
+export function flightPoints(events: readonly LogEvent[]): number {
+  let pts = 0;
+  for (const d of pointSteps(events)) pts += d;
+  return pts;
+}
+/** The most points he has ever had. Gear follows it, so points that come off never take away a piece he earned. */
+export function flightPeak(events: readonly LogEvent[]): number {
+  let pts = 0, peak = 0;
+  for (const d of pointSteps(events)) { pts += d; peak = Math.max(peak, pts); }
+  return peak;
+}
+
+/**
+ * LTF-38, for the grown-ups: answers set aside as guesses, sessions that stopped kindly because of them, breaks he asked
+ * for, and the minute into a session when guessing usually begins (the median of each session's first set-aside answer).
+ */
+export function guessing(events: readonly LogEvent[]) {
+  const start = new Map<string, number>(), first = new Map<string, number>();
+  let setAside = 0, rapidStops = 0, breaks = 0;
+  for (const e of events) {
+    if (e.type === 'session' && e.action === 'start') start.set(e.session, e.ts);
+    else if (e.type === 'session' && e.action === 'stop') { if (e.reason === 'rapid') rapidStops++; else if (e.reason === 'break') breaks++; }
+    else if (e.type === 'answer' && e.rapid) {
+      setAside++;
+      const s = start.get(e.session);
+      if (s !== undefined && !first.has(e.session)) first.set(e.session, (e.ts - s) / 60_000);
+    }
+  }
+  const mins = [...first.values()].sort((a, b) => a - b);
+  const mid = mins.length ? (mins.length % 2 ? mins[(mins.length - 1) / 2] : (mins[mins.length / 2 - 1] + mins[mins.length / 2]) / 2) : undefined;
+  return { setAside, rapidStops, breaks, startMinute: mid === undefined ? undefined : Math.round(mid) };
+}
+
+export function gearState(points: number, peak = points) {
+  const owned = GEAR.filter((g) => peak >= g.at);
+  const next = GEAR.find((g) => peak < g.at);
   const from = owned.at(-1)?.at ?? 0;
-  return { points, owned, next, toNext: next ? next.at - points : 0, frac: next ? (points - from) / (next.at - from) : 1 };
+  return { points, owned, next, toNext: next ? next.at - points : 0, frac: next ? Math.max(0, (points - from) / (next.at - from)) : 1 };
 }
 
 // ---------------------------------------------------------------- sessions, moment to moment

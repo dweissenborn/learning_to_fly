@@ -142,6 +142,7 @@ export function derive(events: readonly LogEvent[], opts: { fastTrack?: boolean 
     } else if (e.type === 'answer') {
       if (p.seen.has(e.item)) p.repeats.add(e.id);
       p.seen.set(e.item, e.ts); // placement items count as seen, so they are not served again straight away
+      if (e.rapid) continue; // LTF-38: a guess faster than reading is set aside: it counts neither for nor against him
       const s = skills[e.skill as SkillId];
       if (s && e.phase === 'placement' && e.correct) s.scouted = true;
       if (!s || e.phase === 'placement' || e.phase === 'checkup') continue; // check-ups measure; they never change his skill records (LTF-14)
@@ -637,6 +638,16 @@ export function mulberry32(seed: number) {
     t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
+}
+
+/**
+ * LTF-38: the least time it takes to read a question and its choices, at a pace no reader beats (about 600 words a
+ * minute). A first tap faster than this is a guess, not an answer.
+ */
+export function minReadMs(item: Item): number {
+  const text = [item.prompt, ...(item.options ?? []), ...(item.objects ?? []).map((o) => o.label), ...(item.cards ?? []).map((c) => (typeof c === 'string' ? c : c.text)),
+    ...(item.slots ?? []).flatMap((s) => s.options ?? []), ...(item.bins ?? []), ...(item.steps ?? [])].join(' ');
+  return Math.max(1500, text.split(/\s+/).filter(Boolean).length * 100);
 }
 
 export * from './activity';
