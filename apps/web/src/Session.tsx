@@ -6,9 +6,9 @@ import { ALL_SKILLS, checkupDue, choices, flightPoints, gate, isInterest, levelF
 import { addNote, log, type GuideId, type Settings } from './db';
 import { pool, passageText, SKILL, STRAND } from './content';
 import { ItemView, NextSlot, type HintMode, type Result } from './ItemView';
-import { Guide, GUIDES, Island, PiecePreview, PIECES, pieceById, freeTiles, type Placed } from './art';
+import { Guide, GUIDES, Island, islandOf, PiecePreview, PIECES, pieceById, freeTiles, type Placed } from './art';
 import { Btn, Lanterns, SpeakBtn } from './ui';
-import { BeatCard, finishedCount, journeyNow, KoalaCard, PostcardCard, reachedStops } from './journey';
+import { BeatCard, finishedCount, journeyNow, KoalaCard, PostcardCard, reachedStops, islandAreas } from './journey';
 import { sfx, speak, stopSpeaking } from './media';
 import { useActivity } from './activity';
 import { GearCelebration, KitMeter } from './gear';
@@ -30,7 +30,7 @@ const CHECK: Step[] = ['plan', 'choose', 'gatecheck', 'finish'];
 const CHECKUP: Step[] = ['plan', 'choose', 'checkup', 'finish'];
 
 export function placedFrom(events: LogEvent[]): Placed[] {
-  return events.flatMap((e) => (e.type === 'world' ? [{ piece: e.piece, x: e.x, y: e.y, id: e.id, ts: e.ts }] : []));
+  return events.flatMap((e) => (e.type === 'world' ? [{ piece: e.piece, x: e.x, y: e.y, id: e.id, ts: e.ts, island: e.island ?? 'home' }] : []));
 }
 
 export function Session({ settings, events, progress, onExit }: { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void }) {
@@ -295,10 +295,17 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
   const prev = journeyNow(before.finished, settings);
   const now = journeyNow(before.finished + 1, settings);
   const arrivedStop = now.stop > prev.stop ? now.here : null;
+  // LTF-36: what he builds today goes on the island he is on now (the new one, if he just arrived).
+  const isle = islandOf(now.here.id);
+  const lit = litFrom(progress);
+  const view = islandAreas(isle, now, settings, lit);
+  const before0 = islandAreas(isle, prev, settings, lit);
+  const opensNow = islandOf(prev.here.id) === isle ? view.def.areas.filter((a, i) => a.quest && view.open[i] && !before0.open[i]) : [];
+  const onIsle = placed.filter((p) => p.island === isle);
   const koalaMet = prev.arrived && now.koala ? now.koala : null;
   const offers = useMemo(() => {
     const rng = mulberry32([...sid].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) | 0, 7));
-    const owned = new Set(placed.map((p) => p.piece));
+    const owned = new Set(onIsle.map((p) => p.piece));
     const reached = reachedStops(now.stop, settings);
     const avail = PIECES.filter((p) => (p.region !== 'philosophical' || peaksOpen) && (!p.stop || reached.has(p.stop)));
     const out: string[] = arrivedStop?.souvenir ? [arrivedStop.souvenir] : [];
@@ -306,6 +313,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
       const c = list.filter((p) => !out.includes(p.id)).map((p) => ({ p, k: (owned.has(p.id) ? 1 : 0) + rng() * 0.9 })).sort((a, b) => a.k - b.k)[0];
       if (c) out.push(c.p.id);
     };
+    add(avail.filter((p) => view.def.pieces.includes(p.id))); // LTF-36: something that belongs on this island
     add(avail.filter((p) => p.region === (plan?.strand ?? 'philosophical')));
     add(avail.filter((p) => p.topic && settings.interests.includes(p.topic as never)));
     while (out.length < 3) add(avail);
@@ -326,7 +334,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
   ].filter(Boolean);
 
   const place = (x: number, y: number) => {
-    log({ type: 'world', piece: piece!, x, y });
+    log({ type: 'world', piece: piece!, x, y, ...(isle === 'home' ? {} : { island: isle }) });
     sfx.place();
     setFresh('pending');
     setStage('done');
@@ -334,7 +342,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
   const autoPlace = () => {
     const p = pieceById.get(piece!)!;
     const want = p.beach ? 'beach' : p.region === 'functional' ? 'town' : p.region === 'narrative' ? 'forest' : 'peaks';
-    const free = freeTiles(placed, peaksOpen, p.beach);
+    const free = freeTiles(onIsle, peaksOpen, p.beach, view.def, view.open);
     const best = free.filter((t) => t.region === want).sort((a, b) => Math.abs(a.r - 5) + Math.abs(a.c - 5) - (Math.abs(b.r - 5) + Math.abs(b.c - 5)))[0] ?? free[0];
     if (best) place(best.c, best.r);
     else setStage('done');
@@ -345,7 +353,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
 
   if (stage === 'place') return <div className="stack">
     <div className="guide-row"><Guide id={settings.guide} size={64} /><div className="bubble">Tap a dotted spot to put your {pieceById.get(piece!)?.name.toLowerCase()} there. Or I can choose a spot.</div></div>
-    <Island placed={placed} lit={litFrom(progress)} here={{}} peaksOpen={peaksOpen} placing={{ piece: piece!, onPlace: place }} stage={now.stop} />
+    <Island placed={onIsle} lit={lit} here={{}} peaksOpen={peaksOpen} placing={{ piece: piece!, onPlace: place }} stage={now.stop} island={view.def} areas={view.open} />
     <div className="row"><Btn onPress={() => setStage('pick')}>← Pick a different one</Btn><span className="spacer" /><Btn className="primary big" onPress={autoPlace}>Choose a spot for me</Btn></div>
   </div>;
 
@@ -353,9 +361,9 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
     <div className="center stack card">
       <div className="done-badge" aria-hidden>🏁</div>
       <h1>All done for today.</h1>
-      {piece && <p>Your {pieceById.get(piece)?.name.toLowerCase()} is on the island now.</p>}
+      {piece && <p>Your {pieceById.get(piece)?.name.toLowerCase()} is on {isle === 'home' ? 'the island' : view.def.name} now.</p>}
     </div>
-    <Island placed={placedFrom(events)} lit={litFrom(progress)} here={{}} peaksOpen={peaksOpen} fresh={fresh} stage={now.stop} />
+    <Island placed={placedFrom(events).filter((p) => p.island === isle)} lit={lit} here={{}} peaksOpen={peaksOpen} fresh={fresh} stage={now.stop} island={view.def} areas={view.open} />
     <BeatCard now={now} settings={settings} />
     <div className="card talk">
       <h3>For your grown-up</h3>
@@ -377,15 +385,16 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
     {newly.map((s) => <div key={s} className="ican-new appear">⭐ New on your shelf: {SKILL[s].ican}</div>)}
     {plan && levelNow > plan.level && <div className="ican-new appear">⬆️ Harder texts unlocked: level {levelNow} in {SKILL[plan.skill].name}.{levelNow >= 4 ? ' These are longer texts. You earned them.' : ''}</div>}
     {opened && <div className="ican-new appear strand-philosophical" style={{ background: 'var(--phi-soft)', color: 'var(--phi-deep)' }}>🏮 Lantern Peaks are open. A new part of your island is waiting.</div>}
+    {opensNow.map((a) => <div key={a.name} className="ican-new appear">🗝️ {a.quest} {a.name} is open on {view.def.name} now.</div>)}
     {arrivedStop && <PostcardCard stop={arrivedStop} arrived />}
     {koalaMet && <KoalaCard koala={koalaMet} />}
     <h2>Pick one new thing for your island</h2>
     <div className="pieces">
-      {offers.map((id) => <Button key={id} className={`piece ${piece === id ? 'on' : ''}`} onPress={() => { setPiece(id); setStage(freeTiles(placed, peaksOpen, pieceById.get(id)?.beach).length ? 'place' : 'done'); }}>
+      {offers.map((id) => <Button key={id} className={`piece ${piece === id ? 'on' : ''}`} onPress={() => { setPiece(id); setStage(freeTiles(onIsle, peaksOpen, pieceById.get(id)?.beach, view.def, view.open).length ? 'place' : 'done'); }}>
         <PiecePreview id={id} />{pieceById.get(id)?.name}
       </Button>)}
     </div>
-    <p className="muted">Your island has {placed.length} {placed.length === 1 ? 'thing' : 'things'} on it.</p>
+    <p className="muted">{isle === 'home' ? 'Your island' : view.def.name} has {onIsle.length} {onIsle.length === 1 ? 'thing' : 'things'} on it.</p>
   </div>;
 }
 

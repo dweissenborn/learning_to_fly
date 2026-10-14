@@ -11,6 +11,19 @@ export const useReading = () => useSyncExternalStore((f) => (subs.add(f), () => 
 const synth = typeof window !== 'undefined' ? window.speechSynthesis : undefined;
 export const canSpeak = !!synth;
 export const voices = () => (synth?.getVoices() ?? []).filter((v) => v.lang.startsWith('en'));
+
+type VoiceLike = Pick<SpeechSynthesisVoice, 'name' | 'lang' | 'localService' | 'default'>;
+/**
+ * The chosen voice, or else the most natural one the device has: Edge's online "Natural" voices, Apple's Enhanced and
+ * Premium ones, Google's, before the old desktop voices that sound flat. Offline, only voices on the device itself.
+ */
+export function pickVoice<V extends VoiceLike>(list: readonly V[], chosen: string, online: boolean): V | undefined {
+  const named = list.find((v) => v.name === chosen);
+  if (named && (online || named.localService)) return named;
+  const score = (v: V) => (/Natural|Neural/.test(v.name) ? 8 : /Enhanced|Premium/.test(v.name) ? 6 : /Google/.test(v.name) ? 4 : 0)
+    + (/\b(Ava|Andrew|Emma|Brian)\b/.test(v.name) ? 2 : 0) + (v.lang === 'en-US' ? 1 : 0) + (v.default ? 0.5 : 0);
+  return list.filter((v) => online || v.localService).sort((a, b) => score(b) - score(a))[0] ?? list[0];
+}
 let opts = { rate: 0.9, voice: '' };
 export const setVoice = (o: Partial<typeof opts>) => { opts = { ...opts, ...o }; };
 
@@ -23,7 +36,7 @@ export function stopSpeaking() {
 export function speak(lines: string[], key = 'any'): Promise<void> {
   if (!synth) return Promise.resolve();
   synth.cancel();
-  const voice = voices().find((v) => v.name === opts.voice) ?? voices().find((v) => v.default) ?? voices()[0];
+  const voice = pickVoice(voices(), opts.voice, navigator.onLine);
   return new Promise((resolve) => {
     lines.forEach((text, i) => {
       const u = new SpeechSynthesisUtterance(text);

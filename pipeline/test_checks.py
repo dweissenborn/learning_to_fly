@@ -6,11 +6,13 @@ import tempfile
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent / "evals" / "gold"))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent / "evals" / "scoring"))
 
 import coherence
 import skillcheck
 import content_check
 import gold
+import scoring
 
 CREDIT = {"title": "t", "author": "x", "source": "x", "licence": "original", "retrieved": "2026-10-13", "adapted": False}
 
@@ -108,6 +110,34 @@ def test_gloss_reads_easier():
     assert check.gloss_problems("calibrates", "checks that a tool measures the right amount") == []
     assert check.gloss_problems("gauge", "a tool for taking measurements") == ['meaning of "gauge" has harder words: measurements']
     assert check.gloss_problems("tide", "the sea") == []
+
+
+def test_scoring_set():
+    """LTF-17: agreement per band, and a scorer passes only at 0.80 in every band, not just overall."""
+    a = ["right", "right", "partly", "wrong", "wrong"]
+    assert scoring.qwk(a, a) == 1.0
+    assert scoring.qwk(a, list(reversed(a))) < 0
+    assert scoring.band_agreement(a, ["right", "partly", "partly", "wrong", "wrong"]) == {"wrong": 1.0, "partly": 0.667, "right": 0.667}
+    people = [{f"x{i}": v for i, v in enumerate(a + ["partly"])}, {f"x{i}": v for i, v in enumerate(a + ["right"])}]
+    good = dict(people[0])
+    assert scoring.scorer_report(good, people)["passes"]
+    lazy = {k: "right" if v == "partly" else v for k, v in good.items()}  # right on every clear case, never "partly"
+    r = scoring.scorer_report(lazy, people)
+    assert r["per_band"]["partly"]["agreement"] == 0.0 and not r["passes"]
+    assert r["disputed"] == {"n": 1, "matches_one": 1.0}
+    # The rating page never shows the band an answer was written to be, or why.
+    with tempfile.TemporaryDirectory() as d:
+        d = pathlib.Path(d)
+        saved = scoring.QUESTIONS, scoring.ANSWERS, scoring.PAGE
+        scoring.QUESTIONS, scoring.ANSWERS, scoring.PAGE = d / "q.json", d / "a.json", d / "rate.html"
+        try:
+            scoring.QUESTIONS.write_text(json.dumps({"questions": [{"id": "q1", "title": "T", "text": ["A."], "question": "Why?", "key": "K"}]}))
+            scoring.ANSWERS.write_text(json.dumps({"answers": [{"id": "q1-a01", "question": "q1", "text": "because", "intended": "right", "borderline": True, "why": "SECRET"}]}))
+            scoring.page()
+            html_out = scoring.PAGE.read_text(encoding="utf-8")
+        finally:
+            scoring.QUESTIONS, scoring.ANSWERS, scoring.PAGE = saved
+    assert "because" in html_out and "SECRET" not in html_out and '"intended"' not in html_out and '"borderline"' not in html_out
 
 
 if __name__ == "__main__":

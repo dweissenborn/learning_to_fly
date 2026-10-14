@@ -14,7 +14,7 @@ import { ComfortPanel } from './Onboarding';
 import { Guide, GUIDES } from './art';
 import { Btn, Seg, Toggle } from './ui';
 import { AMOUNT, FEATURES, LIKE, opinions } from './features';
-import { canSpeak, speak, voices } from './media';
+import { canSpeak, pickVoice, speak, voices } from './media';
 
 type Tab = 'overview' | 'skills' | 'activity' | 'today' | 'content' | 'settings' | 'data';
 const STATUS_CLASS = { 'not started': '', learning: 'learning', mastered: 'mastered', 'review due': 'due' } as const;
@@ -585,9 +585,9 @@ function SettingsTab({ settings, progress, onRescout, onGrammar }: { settings: S
       })}</div></div>
       {canSpeak && <div className="field"><label htmlFor="voice">Reading voice</label>
         <div className="row"><select id="voice" className="input" value={settings.voice} onChange={(e) => saveSettings({ voice: e.target.value })}>
-          <option value="">Device default</option>{vs.map((v) => <option key={v.name} value={v.name}>{v.name}</option>)}
+          <option value="">The most natural voice here{(() => { const v = pickVoice(vs, '', true); return v ? ` (${v.name})` : ''; })()}</option>{vs.map((v) => <option key={v.name} value={v.name}>{v.name}</option>)}
         </select><Btn className="small" onPress={() => speak(['This is how I sound when I read to you.'], 'voice-test')}>Try it</Btn></div>
-        <p className="tagline">Voices come from this device. Natural-sounding ones are often named “Natural” or “Enhanced”.</p></div>}
+        <p className="tagline">Voices come from this device. Natural-sounding ones are named “Natural” (Edge, with internet) or “Enhanced” (iPad); the app picks one by itself unless you choose. Offline, it uses a voice on the device.</p></div>}
       <div className="field"><label htmlFor="pin2">Grown-ups' code (leave empty for none)</label>
         <div className="row"><input id="pin2" className="input" inputMode="numeric" maxLength={4} value={pin} onChange={(e) => setPin(e.target.value.replace(/\D/g, ''))} /><Btn className="small" onPress={() => saveSettings({ pin })}>Save code</Btn></div></div>
     </section>

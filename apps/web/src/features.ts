@@ -24,6 +24,8 @@ export const FEATURES: Feature[] = [
     met: (es) => es.some((e) => e.type === 'answer' && !!e.card) },
   { id: 'ideas-button', name: '"Show me ideas"', say: 'When you tell about your day, the ideas wait behind a button so you can try your own words first.', arrived: '2026-10-13',
     met: (es) => es.some((e) => e.type === 'recount' && !!e.ideas?.length) },
+  { id: 'new-islands', name: 'A new island at each stop', say: 'Each place on your journey is an island to explore, with places that open as you read.', arrived: '2026-10-13',
+    met: (es) => es.some((e) => e.type === 'world' && !!e.island && e.island !== 'home') },
   { id: 'island-route', name: 'Choosing your sea route', say: 'At Gull Island, you chose which island to sail to on the way to Australia.', arrived: '2026-10-13',
     met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'route') },
   { id: 'checkup', name: 'The check-up flight', say: 'Every so often, you can choose six new texts with no hints, to see how your reading is growing.', arrived: '2026-10-13',

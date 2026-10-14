@@ -541,3 +541,9 @@ button.pbox { cursor: pointer; }
 .insight.watch { border-left-color: var(--accent); }
 .insight.good { border-left-color: var(--good); }
 .insight .try { color: var(--muted); }
+
+/* LTF-36: the islands he has reached, and the quest on the one he is on. */
+.isle-switch { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+.isle-switch .btn[data-selected] { background: var(--s); color: var(--on-s, #fff); border-color: var(--s); }
+.quest-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4rem; }
+.quest-list li { display: flex; gap: 0.5rem; align-items: baseline; }

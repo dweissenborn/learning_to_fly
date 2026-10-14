@@ -58,6 +58,8 @@ export interface Settings {
   routes?: Record<string, { to: string; at: number }>;
   /** LTF-20: forks already checked once for learners who were past them when the routes arrived. */
   forksSeen?: string[];
+  /** LTF-36: finished sessions when he first came ashore on each island; its areas open with the sessions after that. */
+  islandsSeen?: Record<string, number>;
 }
 
 export const DEFAULTS: Settings = {

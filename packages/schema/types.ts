@@ -520,6 +520,10 @@ export interface WorldEvent {
   piece: string;
   x: number;
   y: number;
+  /**
+   * LTF-36: the island it was built on (a journey stop id). Left out on pieces built before the islands: Home Island.
+   */
+  island?: string;
 }
 export interface RecountEvent {
   id: string;

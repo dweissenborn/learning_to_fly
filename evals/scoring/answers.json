@@ -1,0 +1,2406 @@
+{
+ "note": "Invented answers, never a real child's (LTF-17). 'intended' and 'why' are the writer's own band and reason, hidden from raters; the two people's scores decide.",
+ "created": "2026-10-13",
+ "answers": [
+  {
+   "id": "p2-i04-a01",
+   "question": "p2-i04",
+   "text": "she fixed it all on her own and nobody had to help her",
+   "intended": "right",
+   "borderline": false,
+   "why": "Pride plus the story's reason: she fixed it herself."
+  },
+  {
+   "id": "p2-i04-a02",
+   "question": "p2-i04",
+   "text": "Its battery was empty.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; says nothing about why she was proud."
+  },
+  {
+   "id": "p2-i04-a03",
+   "question": "p2-i04",
+   "text": "she felt realy happy",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A feeling with no reason."
+  },
+  {
+   "id": "p2-i04-a04",
+   "question": "p2-i04",
+   "text": "becuase the rover made it all the way up the ramp this time",
+   "intended": "right",
+   "borderline": true,
+   "why": "Supported reason, but it is the result rather than her fixing it; raters may split."
+  },
+  {
+   "id": "p2-i04-a05",
+   "question": "p2-i04",
+   "text": "because ms ortiz fixed the wires for her",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story: she fixed it by herself."
+  },
+  {
+   "id": "p2-i04-a06",
+   "question": "p2-i04",
+   "text": "because she won first place at the robot fair",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A pride reason the story does not support."
+  },
+  {
+   "id": "p2-i04-a07",
+   "question": "p2-i04",
+   "text": "the battery died but she didnt give up, she charged it and checked all the wires and got it working agian",
+   "intended": "right",
+   "borderline": false,
+   "why": "Explains how she fixed it herself."
+  },
+  {
+   "id": "p2-i04-a08",
+   "question": "p2-i04",
+   "text": "she worked on it for 3 weeks",
+   "intended": "partly",
+   "borderline": true,
+   "why": "True detail, but not what made her proud at the end; could read as hard work paying off."
+  },
+  {
+   "id": "p2-i04-a09",
+   "question": "p2-i04",
+   "text": "she was mad at the ramp because it was to steep",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Wrong feeling; misses the fix and the success."
+  },
+  {
+   "id": "p2-i04-a10",
+   "question": "p2-i04",
+   "text": "she solved the problem solo",
+   "intended": "right",
+   "borderline": false,
+   "why": "Same idea in unusual words: she fixed it alone."
+  },
+  {
+   "id": "p2-i36-a01",
+   "question": "p2-i36",
+   "text": "hungry",
+   "intended": "partly",
+   "borderline": true,
+   "why": "True body state but not really the feeling asked, and no reason."
+  },
+  {
+   "id": "p2-i36-a02",
+   "question": "p2-i36",
+   "text": "he felt sorry he was so picky becuase he said no to all those fish and only got a snail",
+   "intended": "right",
+   "borderline": false,
+   "why": "Regret plus the reason: he turned away the fish."
+  },
+  {
+   "id": "p2-i36-a03",
+   "question": "p2-i36",
+   "text": "He was looking for breakfast, and the water was full of fish.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied opening sentence; not about the end."
+  },
+  {
+   "id": "p2-i36-a04",
+   "question": "p2-i36",
+   "text": "regret, he could of had a fish but he was to fussy",
+   "intended": "right",
+   "borderline": false,
+   "why": "Feeling and reason in unusual words."
+  },
+  {
+   "id": "p2-i36-a05",
+   "question": "p2-i36",
+   "text": "he felt sad",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A feeling with no reason."
+  },
+  {
+   "id": "p2-i36-a06",
+   "question": "p2-i36",
+   "text": "silly cuz he let the good fish swim by and then there were none left",
+   "intended": "right",
+   "borderline": false,
+   "why": "Foolish feeling plus the supported reason."
+  },
+  {
+   "id": "p2-i36-a07",
+   "question": "p2-i36",
+   "text": "happy because he finally got a snail to eat",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the ending: he wished he had not been picky."
+  },
+  {
+   "id": "p2-i36-a08",
+   "question": "p2-i36",
+   "text": "he was mad because the fish swam away to the deep part",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Half the story; leaves out that he turned the fish down."
+  },
+  {
+   "id": "p2-i36-a09",
+   "question": "p2-i36",
+   "text": "foolish because he turned down the fish and then all he could find was a frog",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right feeling and reason, but adds a wrong detail (frog, not snail)."
+  },
+  {
+   "id": "p2-i36-a10",
+   "question": "p2-i36",
+   "text": "i dont know",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "No answer."
+  },
+  {
+   "id": "p2-i65-a01",
+   "question": "p2-i65",
+   "text": "everyone clapped super loud and a little girl in the front asked him to play it agian so he knew he did good even tho the string was wierd",
+   "intended": "right",
+   "borderline": false,
+   "why": "Run-on but has the reason: he played through it and the audience loved it."
+  },
+  {
+   "id": "p2-i65-a02",
+   "question": "p2-i65",
+   "text": "he was happy",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A feeling with no reason."
+  },
+  {
+   "id": "p2-i65-a03",
+   "question": "p2-i65",
+   "text": "Sam stared at the loose string, and his face felt hot.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence from the bad moment; does not explain feeling better."
+  },
+  {
+   "id": "p2-i65-a04",
+   "question": "p2-i65",
+   "text": "he kept going even when the string went out of tune and it turned out fine",
+   "intended": "right",
+   "borderline": false,
+   "why": "The key reason in his own words."
+  },
+  {
+   "id": "p2-i65-a05",
+   "question": "p2-i65",
+   "text": "because grandma rose waved at him",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Detail from the story, but from before he played; half a reason."
+  },
+  {
+   "id": "p2-i65-a06",
+   "question": "p2-i65",
+   "text": "the nerves went away cuz the crowd liked it",
+   "intended": "right",
+   "borderline": false,
+   "why": "Unusual wording of the supported reason."
+  },
+  {
+   "id": "p2-i65-a07",
+   "question": "p2-i65",
+   "text": "because ms gray played the song for him",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story: Sam played."
+  },
+  {
+   "id": "p2-i65-a08",
+   "question": "p2-i65",
+   "text": "because his hands warmed up",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Restates the question; too vague to tell."
+  },
+  {
+   "id": "p2-i65-a09",
+   "question": "p2-i65",
+   "text": "people clapped",
+   "intended": "right",
+   "borderline": true,
+   "why": "Supported reason but very thin."
+  },
+  {
+   "id": "p2-i65-a10",
+   "question": "p2-i65",
+   "text": "i play guitar to in music class and my teacher is realy nice",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Personal tangent; no answer."
+  },
+  {
+   "id": "p2-i83-a01",
+   "question": "p2-i83",
+   "text": "to make ana feel better because she was upset when people kept quiting her maze",
+   "intended": "right",
+   "borderline": false,
+   "why": "Leo saw she was upset and wanted to cheer her."
+  },
+  {
+   "id": "p2-i83-a02",
+   "question": "p2-i83",
+   "text": "because the tall boy said it was the best level",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Story fact, but says nothing about Leo or why he told her."
+  },
+  {
+   "id": "p2-i83-a03",
+   "question": "p2-i83",
+   "text": "because people laughed at the grumpy mailbox",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "About Leo's jokes, not why he praised Ana's level."
+  },
+  {
+   "id": "p2-i83-a04",
+   "question": "p2-i83",
+   "text": "he saw she thought her maze was a mistake and he wanted her to know it wasnt",
+   "intended": "right",
+   "borderline": false,
+   "why": "Supported motive: she doubted her work."
+  },
+  {
+   "id": "p2-i83-a05",
+   "question": "p2-i83",
+   "text": "he was being nice",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Too vague; no link to how Ana felt."
+  },
+  {
+   "id": "p2-i83-a06",
+   "question": "p2-i83",
+   "text": "leo was jelous that people liked her level more",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the friendly ending."
+  },
+  {
+   "id": "p2-i83-a07",
+   "question": "p2-i83",
+   "text": "hes a good freind, she was sad earlier so he cheered her up by saying her part mattered the most",
+   "intended": "right",
+   "borderline": false,
+   "why": "Feeling for Ana plus the reason."
+  },
+  {
+   "id": "p2-i83-a08",
+   "question": "p2-i83",
+   "text": "because her level was realy hard",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Half from the story; misses Leo's reason."
+  },
+  {
+   "id": "p2-i83-a09",
+   "question": "p2-i83",
+   "text": "he wanted her to feel good",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right idea but vague; no mention that she had been upset."
+  },
+  {
+   "id": "p2-i83-a10",
+   "question": "p2-i83",
+   "text": "the robot is named bolt and it delivers packages",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "About something else in the story."
+  },
+  {
+   "id": "p2-i33-a01",
+   "question": "p2-i33",
+   "text": "he was exited",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A feeling with no reason."
+  },
+  {
+   "id": "p2-i33-a02",
+   "question": "p2-i33",
+   "text": "to say thanks because her tip helped him beat the level",
+   "intended": "right",
+   "borderline": false,
+   "why": "Thankful because Ana's idea worked."
+  },
+  {
+   "id": "p2-i33-a03",
+   "question": "p2-i33",
+   "text": "He tried for a whole week.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; does not explain the high five."
+  },
+  {
+   "id": "p2-i33-a04",
+   "question": "p2-i33",
+   "text": "ana told him to move the corner block first and it worked",
+   "intended": "right",
+   "borderline": false,
+   "why": "Gives Ana's idea working as the reason."
+  },
+  {
+   "id": "p2-i33-a05",
+   "question": "p2-i33",
+   "text": "because he finaly beat level nine",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Supported reason, but leaves out Ana's part."
+  },
+  {
+   "id": "p2-i33-a06",
+   "question": "p2-i33",
+   "text": "teamwork",
+   "intended": "right",
+   "borderline": true,
+   "why": "One word; right idea but very vague."
+  },
+  {
+   "id": "p2-i33-a07",
+   "question": "p2-i33",
+   "text": "because ana beat the level for him",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story: Ben finished it."
+  },
+  {
+   "id": "p2-i33-a08",
+   "question": "p2-i33",
+   "text": "he was greatful she helped him get past level 9 after being stuck a whole week",
+   "intended": "right",
+   "borderline": false,
+   "why": "Thankful plus the reason."
+  },
+  {
+   "id": "p2-i33-a09",
+   "question": "p2-i33",
+   "text": "ana is his best freind",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A reason the story does not support."
+  },
+  {
+   "id": "p2-i33-a10",
+   "question": "p2-i33",
+   "text": "to celebrate anas birthday",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Reason from outside the story."
+  },
+  {
+   "id": "p2-i10-a01",
+   "question": "p2-i10",
+   "text": "they planted a new little oak and one day it will be big like the old one",
+   "intended": "right",
+   "borderline": false,
+   "why": "Hope that the new tree will grow."
+  },
+  {
+   "id": "p2-i10-a02",
+   "question": "p2-i10",
+   "text": "Workers from the town said it had to come down.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; does not explain feeling better."
+  },
+  {
+   "id": "p2-i10-a03",
+   "question": "p2-i10",
+   "text": "he was happy again",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A feeling with no reason."
+  },
+  {
+   "id": "p2-i10-a04",
+   "question": "p2-i10",
+   "text": "new tree",
+   "intended": "right",
+   "borderline": true,
+   "why": "Points at the right reason in two words; no feeling."
+  },
+  {
+   "id": "p2-i10-a05",
+   "question": "p2-i10",
+   "text": "he was sad becuase the tree got cut down",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Answers why he cried, not why he felt better."
+  },
+  {
+   "id": "p2-i10-a06",
+   "question": "p2-i10",
+   "text": "because his freinds helped him dig the hole",
+   "intended": "partly",
+   "borderline": true,
+   "why": "From the story, but not the main reason he felt better."
+  },
+  {
+   "id": "p2-i10-a07",
+   "question": "p2-i10",
+   "text": "he knows the baby tree will grow up and give shade agian someday",
+   "intended": "right",
+   "borderline": false,
+   "why": "Hopeful reason in his own words."
+  },
+  {
+   "id": "p2-i10-a08",
+   "question": "p2-i10",
+   "text": "because the workers put the old tree back",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story."
+  },
+  {
+   "id": "p2-i10-a09",
+   "question": "p2-i10",
+   "text": "grandma rose brought a new oak so the spot wont be empty forever",
+   "intended": "right",
+   "borderline": false,
+   "why": "Supported reason: a new tree in the same spot."
+  },
+  {
+   "id": "p2-i10-a10",
+   "question": "p2-i10",
+   "text": "because he got to plant something",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Too vague; misses that the tree will grow."
+  },
+  {
+   "id": "p2-i52-a01",
+   "question": "p2-i52",
+   "text": "he felt silly because his trick backfired and the sponges got super hevy",
+   "intended": "right",
+   "borderline": false,
+   "why": "Foolish because the trick failed."
+  },
+  {
+   "id": "p2-i52-a02",
+   "question": "p2-i52",
+   "text": "the merchant felt angry because he lost half his salt",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Right kind of idea about the wrong character."
+  },
+  {
+   "id": "p2-i52-a03",
+   "question": "p2-i52",
+   "text": "tired",
+   "intended": "partly",
+   "borderline": true,
+   "why": "A body state with no reason; some would accept it as a feeling."
+  },
+  {
+   "id": "p2-i52-a04",
+   "question": "p2-i52",
+   "text": "embarassed that his plan didnt work this time",
+   "intended": "right",
+   "borderline": false,
+   "why": "Feeling plus the reason."
+  },
+  {
+   "id": "p2-i52-a05",
+   "question": "p2-i52",
+   "text": "he felt bad",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Vague feeling, no reason."
+  },
+  {
+   "id": "p2-i52-a06",
+   "question": "p2-i52",
+   "text": "pleased with himself becuase the load was light",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "That was the first trip; contradicts the end."
+  },
+  {
+   "id": "p2-i52-a07",
+   "question": "p2-i52",
+   "text": "like he got what he deserved for being lazy",
+   "intended": "right",
+   "borderline": true,
+   "why": "Feeling is implied, not named; reason fits."
+  },
+  {
+   "id": "p2-i52-a08",
+   "question": "p2-i52",
+   "text": "sad because the salt melted in the river",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Reason from the wrong part of the story."
+  },
+  {
+   "id": "p2-i52-a09",
+   "question": "p2-i52",
+   "text": "dumb, the merchant tricked him right back",
+   "intended": "right",
+   "borderline": false,
+   "why": "Feeling plus a supported reason."
+  },
+  {
+   "id": "p2-i52-a10",
+   "question": "p2-i52",
+   "text": "idk",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "No answer."
+  },
+  {
+   "id": "p2-i86-a01",
+   "question": "p2-i86",
+   "text": "she was proud her box worked and went super high and still came back",
+   "intended": "right",
+   "borderline": false,
+   "why": "Proud because her box did its job."
+  },
+  {
+   "id": "p2-i86-a02",
+   "question": "p2-i86",
+   "text": "she was proud",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Right feeling, no reason."
+  },
+  {
+   "id": "p2-i86-a03",
+   "question": "p2-i86",
+   "text": "Sam printed the balloon's path and pinned it to the wall.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; does not say why she stood there."
+  },
+  {
+   "id": "p2-i86-a04",
+   "question": "p2-i86",
+   "text": "she was thinking about how close it came to landing in the sea and how lucky they were that it landed on the island so she still got all the mesurements",
+   "intended": "right",
+   "borderline": false,
+   "why": "Run-on; relief and pride about the box surviving are supported."
+  },
+  {
+   "id": "p2-i86-a05",
+   "question": "p2-i86",
+   "text": "because sam was proud he followed the tracker the whole hour",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Right kind of idea about the wrong character."
+  },
+  {
+   "id": "p2-i86-a06",
+   "question": "p2-i86",
+   "text": "she spent three weeks bilding the box and it measured minus 55 degrees way up there, thats amazing",
+   "intended": "right",
+   "borderline": false,
+   "why": "Her box measured the air high above."
+  },
+  {
+   "id": "p2-i86-a07",
+   "question": "p2-i86",
+   "text": "because she liked the map",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Too vague to tell."
+  },
+  {
+   "id": "p2-i86-a08",
+   "question": "p2-i86",
+   "text": "she was upset the box got lost in the water",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story: it landed on Gull Island."
+  },
+  {
+   "id": "p2-i86-a09",
+   "question": "p2-i86",
+   "text": "becuase the farmer gave the box back",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Half from the story; not why she stood at the map."
+  },
+  {
+   "id": "p2-i86-a10",
+   "question": "p2-i86",
+   "text": "she was remembering the whole day",
+   "intended": "right",
+   "borderline": true,
+   "why": "Plausible but vague; no feeling named."
+  },
+  {
+   "id": "p2-i29-a01",
+   "question": "p2-i29",
+   "text": "He wanted Pixel to ring it when he needed to go outside.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; does not explain the call."
+  },
+  {
+   "id": "p2-i29-a02",
+   "question": "p2-i29",
+   "text": "he was so excited pixel finaly rang the bell he had to tell somebody",
+   "intended": "right",
+   "borderline": false,
+   "why": "Feeling plus the reason: Pixel learned it."
+  },
+  {
+   "id": "p2-i29-a03",
+   "question": "p2-i29",
+   "text": "to tell her the news",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Restates the story without the feeling or why."
+  },
+  {
+   "id": "p2-i29-a04",
+   "question": "p2-i29",
+   "text": "to share the good news, his dog learned the trick after alot of trying",
+   "intended": "right",
+   "borderline": false,
+   "why": "Supported reason in his own words."
+  },
+  {
+   "id": "p2-i29-a05",
+   "question": "p2-i29",
+   "text": "because he was happy",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A feeling with no reason."
+  },
+  {
+   "id": "p2-i29-a06",
+   "question": "p2-i29",
+   "text": "because pixel ran away",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story."
+  },
+  {
+   "id": "p2-i29-a07",
+   "question": "p2-i29",
+   "text": "to brag about his smart dog lol",
+   "intended": "right",
+   "borderline": false,
+   "why": "Pride, unusually worded."
+  },
+  {
+   "id": "p2-i29-a08",
+   "question": "p2-i29",
+   "text": "because grandma rose gave him the bell",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A reason the story does not support."
+  },
+  {
+   "id": "p2-i29-a09",
+   "question": "p2-i29",
+   "text": "pixel did it!",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right reason, but no feeling or explanation."
+  },
+  {
+   "id": "p2-i29-a10",
+   "question": "p2-i29",
+   "text": "i have a dog to and he can sit and shake",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Personal tangent; no answer."
+  },
+  {
+   "id": "p2-i45-a01",
+   "question": "p2-i45",
+   "text": "he wanted to come back tomorow cause it was so cool",
+   "intended": "right",
+   "borderline": false,
+   "why": "Wanting more of it, with a reason."
+  },
+  {
+   "id": "p2-i45-a02",
+   "question": "p2-i45",
+   "text": "At first, Leo laughed and said it was probably just the moon.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence about Leo; not an answer."
+  },
+  {
+   "id": "p2-i45-a03",
+   "question": "p2-i45",
+   "text": "curious",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Right feeling in one word; no reason."
+  },
+  {
+   "id": "p2-i45-a04",
+   "question": "p2-i45",
+   "text": "he was curius how the plankton make light",
+   "intended": "right",
+   "borderline": false,
+   "why": "Curious plus what about."
+  },
+  {
+   "id": "p2-i45-a05",
+   "question": "p2-i45",
+   "text": "he liked it",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Too vague to tell."
+  },
+  {
+   "id": "p2-i45-a06",
+   "question": "p2-i45",
+   "text": "because he was scared of the glowing water",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story: he waded in and kicked."
+  },
+  {
+   "id": "p2-i45-a07",
+   "question": "p2-i45",
+   "text": "he wonderd if it happens every night or just once in a while",
+   "intended": "right",
+   "borderline": false,
+   "why": "Curiosity in unusual words."
+  },
+  {
+   "id": "p2-i45-a08",
+   "question": "p2-i45",
+   "text": "because leo said it looked like a video game",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Half from the story; Leo's words, not Sam's reason."
+  },
+  {
+   "id": "p2-i45-a09",
+   "question": "p2-i45",
+   "text": "so he could go again",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right idea, no feeling named."
+  },
+  {
+   "id": "p2-i45-a10",
+   "question": "p2-i45",
+   "text": "plankton are tiny living things in the sea",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Answers a different question (what plankton are)."
+  },
+  {
+   "id": "n5-i57-a01",
+   "question": "n5-i57",
+   "text": "he was exited about how huge the footprint was",
+   "intended": "right",
+   "borderline": false,
+   "why": "Excited about the big footprint."
+  },
+  {
+   "id": "n5-i57-a02",
+   "question": "n5-i57",
+   "text": "Ben went to the museum with his class.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; no reason."
+  },
+  {
+   "id": "n5-i57-a03",
+   "question": "n5-i57",
+   "text": "because the footprint was 3 times bigger then his shoe and he thought it was so cool",
+   "intended": "right",
+   "borderline": false,
+   "why": "Reason the story supports."
+  },
+  {
+   "id": "n5-i57-a04",
+   "question": "n5-i57",
+   "text": "because it was a dinosaur",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Points at the right thing but no size or excitement."
+  },
+  {
+   "id": "n5-i57-a05",
+   "question": "n5-i57",
+   "text": "he wanted everyone to see how giant the dinosuar foot was",
+   "intended": "right",
+   "borderline": false,
+   "why": "Supported reason: the size amazed him."
+  },
+  {
+   "id": "n5-i57-a06",
+   "question": "n5-i57",
+   "text": "he took a picture",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Restates the story; no reason."
+  },
+  {
+   "id": "n5-i57-a07",
+   "question": "n5-i57",
+   "text": "it was a long bus ride and he was bored",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Reason from outside the story."
+  },
+  {
+   "id": "n5-i57-a08",
+   "question": "n5-i57",
+   "text": "it blew his mind",
+   "intended": "right",
+   "borderline": true,
+   "why": "Excitement in unusual words; the footprint is only implied."
+  },
+  {
+   "id": "n5-i57-a09",
+   "question": "n5-i57",
+   "text": "because he liked the museum",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Too vague; not about the footprint."
+  },
+  {
+   "id": "n5-i57-a10",
+   "question": "n5-i57",
+   "text": "dont know",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "No answer."
+  },
+  {
+   "id": "n3-i74-a01",
+   "question": "n3-i74",
+   "text": "it was hot out and she spent forever looking at a rock",
+   "intended": "right",
+   "borderline": false,
+   "why": "Heat plus the long look at the rock."
+  },
+  {
+   "id": "n3-i74-a02",
+   "question": "n3-i74",
+   "text": "she was looking at a rock",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Leaves out the hot sun; half the cause."
+  },
+  {
+   "id": "n3-i74-a03",
+   "question": "n3-i74",
+   "text": "Maya laughed and licked the drips off the cone.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; not a reason."
+  },
+  {
+   "id": "n3-i74-a04",
+   "question": "n3-i74",
+   "text": "the sun melted it while she was busy with the sparkly rock",
+   "intended": "right",
+   "borderline": false,
+   "why": "Full reason in her own words."
+  },
+  {
+   "id": "n3-i74-a05",
+   "question": "n3-i74",
+   "text": "because mint melts faster",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A reason the story does not support."
+  },
+  {
+   "id": "n3-i74-a06",
+   "question": "n3-i74",
+   "text": "becuase it was a hot sunny day",
+   "intended": "right",
+   "borderline": true,
+   "why": "The sun is the cause, but the long wait is left out."
+  },
+  {
+   "id": "n3-i74-a07",
+   "question": "n3-i74",
+   "text": "because she dropped it on the path",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story."
+  },
+  {
+   "id": "n3-i74-a08",
+   "question": "n3-i74",
+   "text": "she forgot about it looking through her magnifing glass and the sun got it",
+   "intended": "right",
+   "borderline": false,
+   "why": "Same cause, unusually worded."
+  },
+  {
+   "id": "n3-i74-a09",
+   "question": "n3-i74",
+   "text": "she held it to long",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Vague; no sun, no rock."
+  },
+  {
+   "id": "n3-i74-a10",
+   "question": "n3-i74",
+   "text": "next time she will eat it first",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Answers a different question."
+  },
+  {
+   "id": "n3-i82-a01",
+   "question": "n3-i82",
+   "text": "she was scared squeezing harder would brake the fingers",
+   "intended": "right",
+   "borderline": false,
+   "why": "The worry about breaking the fingers."
+  },
+  {
+   "id": "n3-i82-a02",
+   "question": "n3-i82",
+   "text": "because rubber is grippy",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Why rubber works, not why she avoided the harder squeeze."
+  },
+  {
+   "id": "n3-i82-a03",
+   "question": "n3-i82",
+   "text": "Sam, who was helping, said the motor could squeeze the fingers harder.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; Sam's idea, not her reason."
+  },
+  {
+   "id": "n3-i82-a04",
+   "question": "n3-i82",
+   "text": "the plastic might crack if the motor pressed to hard",
+   "intended": "right",
+   "borderline": false,
+   "why": "The supported reason."
+  },
+  {
+   "id": "n3-i82-a05",
+   "question": "n3-i82",
+   "text": "it was a better idea",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Too vague to tell."
+  },
+  {
+   "id": "n3-i82-a06",
+   "question": "n3-i82",
+   "text": "because sam told her to use rubber bands",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story: Sam wanted a harder squeeze."
+  },
+  {
+   "id": "n3-i82-a07",
+   "question": "n3-i82",
+   "text": "so the fingers wouldnt snap",
+   "intended": "right",
+   "borderline": false,
+   "why": "Right reason, unusual word."
+  },
+  {
+   "id": "n3-i82-a08",
+   "question": "n3-i82",
+   "text": "because the ball is fuzzy",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Half: why it slipped, not why she chose rubber."
+  },
+  {
+   "id": "n3-i82-a09",
+   "question": "n3-i82",
+   "text": "she was worryed the fingers would crack, and sams motor was already broken",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right reason plus a wrong extra detail about the motor."
+  },
+  {
+   "id": "n3-i82-a10",
+   "question": "n3-i82",
+   "text": "she wanted to win the science fair",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Does not address the choice."
+  },
+  {
+   "id": "n3-i110-a01",
+   "question": "n3-i110",
+   "text": "white bounces the sunlight off so the rail doesnt get as hot",
+   "intended": "right",
+   "borderline": false,
+   "why": "Reflects sunlight, keeps the rail cooler."
+  },
+  {
+   "id": "n3-i110-a02",
+   "question": "n3-i110",
+   "text": "Train tracks are made of long steel rails.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; not a reason."
+  },
+  {
+   "id": "n3-i110-a03",
+   "question": "n3-i110",
+   "text": "because of the sun",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Right direction, too vague to tell."
+  },
+  {
+   "id": "n3-i110-a04",
+   "question": "n3-i110",
+   "text": "to keep the metal cooler on realy hot days",
+   "intended": "right",
+   "borderline": false,
+   "why": "Keeps the steel cooler."
+  },
+  {
+   "id": "n3-i110-a05",
+   "question": "n3-i110",
+   "text": "so the trains can see them in the dark",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Reason from outside the text."
+  },
+  {
+   "id": "n3-i110-a06",
+   "question": "n3-i110",
+   "text": "because steel grows when its hot",
+   "intended": "partly",
+   "borderline": false,
+   "why": "True fact, but not linked to the paint."
+  },
+  {
+   "id": "n3-i110-a07",
+   "question": "n3-i110",
+   "text": "so it doesnt bend from the heat",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right goal, but skips reflecting and cooling."
+  },
+  {
+   "id": "n3-i110-a08",
+   "question": "n3-i110",
+   "text": "for safty",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Too vague to tell."
+  },
+  {
+   "id": "n3-i110-a09",
+   "question": "n3-i110",
+   "text": "i went on a train once and it was really loud",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Personal tangent; no answer."
+  },
+  {
+   "id": "n3-i110-a10",
+   "question": "n3-i110",
+   "text": "the white color sends the sunlight back so the steel dosent heat up as much and you dont get sun kinks",
+   "intended": "right",
+   "borderline": false,
+   "why": "Full reason in own words."
+  },
+  {
+   "id": "n5-i209-a01",
+   "question": "n5-i209",
+   "text": "he only looked at the sky and said rain but maya checked the barometor and it was going up so it didnt rain, so now he knows to check the instruments first",
+   "intended": "right",
+   "borderline": false,
+   "why": "Run-on; his sky guess was wrong and the instruments were right."
+  },
+  {
+   "id": "n5-i209-a02",
+   "question": "n5-i209",
+   "text": "because he was wrong",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Correct but vague; no instruments versus sky."
+  },
+  {
+   "id": "n5-i209-a03",
+   "question": "n5-i209",
+   "text": "By lunch, patches of blue sky had opened over Harbor Middle School.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; does not explain the rule."
+  },
+  {
+   "id": "n5-i209-a04",
+   "question": "n5-i209",
+   "text": "he learned the barometer tells you more then just looking out the window",
+   "intended": "right",
+   "borderline": false,
+   "why": "Instruments beat a look at the sky."
+  },
+  {
+   "id": "n5-i209-a05",
+   "question": "n5-i209",
+   "text": "so he wouldnt get in trouble with ms ortiz",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A reason the story does not support."
+  },
+  {
+   "id": "n5-i209-a06",
+   "question": "n5-i209",
+   "text": "clouds can trick you but the numbers dont",
+   "intended": "right",
+   "borderline": false,
+   "why": "Same lesson, unusually worded."
+  },
+  {
+   "id": "n5-i209-a07",
+   "question": "n5-i209",
+   "text": "because it rained by noon like he said",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story: the sky cleared."
+  },
+  {
+   "id": "n5-i209-a08",
+   "question": "n5-i209",
+   "text": "because maya told him to",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Not in the story; Sam made the rule himself."
+  },
+  {
+   "id": "n5-i209-a09",
+   "question": "n5-i209",
+   "text": "he learned his lesson about the clouds",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right idea but vague about what the lesson was."
+  },
+  {
+   "id": "n5-i209-a10",
+   "question": "n5-i209",
+   "text": "because it was his turn to do the wether this week",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "True but does not explain the new rule."
+  },
+  {
+   "id": "n3-i01-a01",
+   "question": "n3-i01",
+   "text": "he wanted his ball",
+   "intended": "right",
+   "borderline": false,
+   "why": "To get his ball."
+  },
+  {
+   "id": "n3-i01-a02",
+   "question": "n3-i01",
+   "text": "The tower fell down.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; what happened, not why."
+  },
+  {
+   "id": "n3-i01-a03",
+   "question": "n3-i01",
+   "text": "to play",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Close but too vague; no ball."
+  },
+  {
+   "id": "n3-i01-a04",
+   "question": "n3-i01",
+   "text": "he was going after his ball",
+   "intended": "right",
+   "borderline": false,
+   "why": "Same reason in own words."
+  },
+  {
+   "id": "n3-i01-a05",
+   "question": "n3-i01",
+   "text": "because his tail hit the table",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Mixes up what happened after with the reason."
+  },
+  {
+   "id": "n3-i01-a06",
+   "question": "n3-i01",
+   "text": "he was chasing somthing",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Too vague to tell."
+  },
+  {
+   "id": "n3-i01-a07",
+   "question": "n3-i01",
+   "text": "to get his ball that sam through under there",
+   "intended": "right",
+   "borderline": false,
+   "why": "Right reason with a wrong extra detail (nobody threw it)."
+  },
+  {
+   "id": "n3-i01-a08",
+   "question": "n3-i01",
+   "text": "he wanted to knock the tower over",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story: it was an accident."
+  },
+  {
+   "id": "n3-i01-a09",
+   "question": "n3-i01",
+   "text": "he wanted to play with the kids",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A reason the story does not support."
+  },
+  {
+   "id": "n3-i01-a10",
+   "question": "n3-i01",
+   "text": "ball",
+   "intended": "right",
+   "borderline": true,
+   "why": "One word; right but bare."
+  },
+  {
+   "id": "n3-i09-a01",
+   "question": "n3-i09",
+   "text": "the batery ran out",
+   "intended": "right",
+   "borderline": false,
+   "why": "Battery was empty."
+  },
+  {
+   "id": "n3-i09-a02",
+   "question": "n3-i09",
+   "text": "the light turned red",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Clue from the text without what it means."
+  },
+  {
+   "id": "n3-i09-a03",
+   "question": "n3-i09",
+   "text": "She drove it in a big circle around a bench.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; not a reason."
+  },
+  {
+   "id": "n3-i09-a04",
+   "question": "n3-i09",
+   "text": "it was out of power because she forgot to charge it",
+   "intended": "right",
+   "borderline": false,
+   "why": "Battery empty, with the cause."
+  },
+  {
+   "id": "n3-i09-a05",
+   "question": "n3-i09",
+   "text": "it was broken",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Too vague; not the battery."
+  },
+  {
+   "id": "n3-i09-a06",
+   "question": "n3-i09",
+   "text": "it crashed into the bench",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story."
+  },
+  {
+   "id": "n3-i09-a07",
+   "question": "n3-i09",
+   "text": "dead battery",
+   "intended": "right",
+   "borderline": false,
+   "why": "Short but complete."
+  },
+  {
+   "id": "n3-i09-a08",
+   "question": "n3-i09",
+   "text": "becuase she drove it on the grass",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Half from the story; grass was not the cause."
+  },
+  {
+   "id": "n3-i09-a09",
+   "question": "n3-i09",
+   "text": "she played with it all morning",
+   "intended": "right",
+   "borderline": true,
+   "why": "Cause behind the empty battery, but never says battery."
+  },
+  {
+   "id": "n3-i09-a10",
+   "question": "n3-i09",
+   "text": "idk sorry",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "No answer."
+  },
+  {
+   "id": "n3-i15-a01",
+   "question": "n3-i15",
+   "text": "the wind blew a paper into the last domino",
+   "intended": "right",
+   "borderline": false,
+   "why": "Wind pushed paper into the last domino."
+  },
+  {
+   "id": "n3-i15-a02",
+   "question": "n3-i15",
+   "text": "a paper hit it",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Leaves out the wind; vague about what was hit."
+  },
+  {
+   "id": "n3-i15-a03",
+   "question": "n3-i15",
+   "text": "He pulled out three dominoes to make a gap, and the line stopped falling at the gap.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence about stopping the fall, not starting it."
+  },
+  {
+   "id": "n3-i15-a04",
+   "question": "n3-i15",
+   "text": "the window was open and the wind pushed paper of the desk onto them",
+   "intended": "right",
+   "borderline": false,
+   "why": "Full cause in own words."
+  },
+  {
+   "id": "n3-i15-a05",
+   "question": "n3-i15",
+   "text": "it was ten minutes before four",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Says when, not why."
+  },
+  {
+   "id": "n3-i15-a06",
+   "question": "n3-i15",
+   "text": "maya bumped into the dominos by acident",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story."
+  },
+  {
+   "id": "n3-i15-a07",
+   "question": "n3-i15",
+   "text": "a gust came thru the window and a sheet slid into the end one",
+   "intended": "right",
+   "borderline": false,
+   "why": "Same cause, unusual words."
+  },
+  {
+   "id": "n3-i15-a08",
+   "question": "n3-i15",
+   "text": "the window",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Too vague to tell."
+  },
+  {
+   "id": "n3-i15-a09",
+   "question": "n3-i15",
+   "text": "because of the wind",
+   "intended": "right",
+   "borderline": true,
+   "why": "Main cause, but leaves out the paper."
+  },
+  {
+   "id": "n3-i15-a10",
+   "question": "n3-i15",
+   "text": "because mr hill started it early",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story."
+  },
+  {
+   "id": "n6-i01-a01",
+   "question": "n6-i01",
+   "text": "sam and grandma rose going to the train museam",
+   "intended": "right",
+   "borderline": false,
+   "why": "The museum visit."
+  },
+  {
+   "id": "n6-i01-a02",
+   "question": "n6-i01",
+   "text": "trains",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Topic only; no trip."
+  },
+  {
+   "id": "n6-i01-a03",
+   "question": "n6-i01",
+   "text": "i like trains too i went on one at the fair",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Personal tangent."
+  },
+  {
+   "id": "n6-i01-a04",
+   "question": "n6-i01",
+   "text": "sams sunday trip to see trains with his grandma",
+   "intended": "right",
+   "borderline": false,
+   "why": "Whole story in own words."
+  },
+  {
+   "id": "n6-i01-a05",
+   "question": "n6-i01",
+   "text": "sam got to sit in the drivers seet",
+   "intended": "partly",
+   "borderline": false,
+   "why": "One detail, not the main idea."
+  },
+  {
+   "id": "n6-i01-a06",
+   "question": "n6-i01",
+   "text": "it was grandma roses birthday",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Not in the story."
+  },
+  {
+   "id": "n6-i01-a07",
+   "question": "n6-i01",
+   "text": "a fun day out at a train musuem, they saw a steam train and rode a little one around the park",
+   "intended": "right",
+   "borderline": false,
+   "why": "Main idea with supporting details."
+  },
+  {
+   "id": "n6-i01-a08",
+   "question": "n6-i01",
+   "text": "the postcard on his wall",
+   "intended": "partly",
+   "borderline": false,
+   "why": "One detail, not the main idea."
+  },
+  {
+   "id": "n6-i01-a09",
+   "question": "n6-i01",
+   "text": "going to a museum",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right idea but leaves out who and what kind."
+  },
+  {
+   "id": "n6-i01-a10",
+   "question": "n6-i01",
+   "text": "how steam trains are made",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "About something else."
+  },
+  {
+   "id": "n6-i76-a01",
+   "question": "n6-i76",
+   "text": "the ways penguins keep warm in the freezeing cold",
+   "intended": "right",
+   "borderline": false,
+   "why": "How they stay warm."
+  },
+  {
+   "id": "n6-i76-a02",
+   "question": "n6-i76",
+   "text": "penguins",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Topic only."
+  },
+  {
+   "id": "n6-i76-a03",
+   "question": "n6-i76",
+   "text": "penguins live at the north pole",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the text (Antarctica)."
+  },
+  {
+   "id": "n6-i76-a04",
+   "question": "n6-i76",
+   "text": "how emperor penguins survive antartica with fat, thick feathers and huddling",
+   "intended": "right",
+   "borderline": false,
+   "why": "Main idea with its three ways."
+  },
+  {
+   "id": "n6-i76-a05",
+   "question": "n6-i76",
+   "text": "the huddle",
+   "intended": "partly",
+   "borderline": false,
+   "why": "One way, not the whole."
+  },
+  {
+   "id": "n6-i76-a06",
+   "question": "n6-i76",
+   "text": "a penguin who gets lost from his family",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Not in the text."
+  },
+  {
+   "id": "n6-i76-a07",
+   "question": "n6-i76",
+   "text": "penguins have blubber and fethers and they huddle up so they dont freeze",
+   "intended": "right",
+   "borderline": false,
+   "why": "Main idea, unusual word (blubber)."
+  },
+  {
+   "id": "n6-i76-a08",
+   "question": "n6-i76",
+   "text": "how they catch fish under the ice",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A single-sentence detail."
+  },
+  {
+   "id": "n6-i76-a09",
+   "question": "n6-i76",
+   "text": "staying warm",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right idea, no subject named."
+  },
+  {
+   "id": "n6-i76-a10",
+   "question": "n6-i76",
+   "text": "Emperor penguins are the tallest of all penguins.",
+   "intended": "wrong",
+   "borderline": true,
+   "why": "Copied side fact; some would call it a detail (partly)."
+  },
+  {
+   "id": "n6-i100-a01",
+   "question": "n6-i100",
+   "text": "ben has to be goalie becuase the real one is sick and he does realy good",
+   "intended": "right",
+   "borderline": false,
+   "why": "Ben fills in when the team needs him."
+  },
+  {
+   "id": "n6-i100-a02",
+   "question": "n6-i100",
+   "text": "ana helps ben practice",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Names only one part of the story."
+  },
+  {
+   "id": "n6-i100-a03",
+   "question": "n6-i100",
+   "text": "coach novak gets a bad cold",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Wrong character; the goalkeeper had the cold."
+  },
+  {
+   "id": "n6-i100-a04",
+   "question": "n6-i100",
+   "text": "ben stepping in as keeper for his team",
+   "intended": "right",
+   "borderline": false,
+   "why": "Main idea in own words."
+  },
+  {
+   "id": "n6-i100-a05",
+   "question": "n6-i100",
+   "text": "soccer",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Topic only."
+  },
+  {
+   "id": "n6-i100-a06",
+   "question": "n6-i100",
+   "text": "ben is a bad goalie and they lose the game",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the story."
+  },
+  {
+   "id": "n6-i100-a07",
+   "question": "n6-i100",
+   "text": "how ben went from nervus to a good goalie in like two days",
+   "intended": "right",
+   "borderline": false,
+   "why": "Main idea, unusually worded."
+  },
+  {
+   "id": "n6-i100-a08",
+   "question": "n6-i100",
+   "text": "Ben's grass-stained shirt took two washes to come clean.",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Copied detail instead of the main idea."
+  },
+  {
+   "id": "n6-i100-a09",
+   "question": "n6-i100",
+   "text": "ben being goalie",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right but bare; no why or how."
+  },
+  {
+   "id": "n6-i100-a10",
+   "question": "n6-i100",
+   "text": "how to be a good soccer coach",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "About something else."
+  },
+  {
+   "id": "p5-i47-a01",
+   "question": "p5-i47",
+   "text": "why rocket launches get delayed and what the people watching do while they wait",
+   "intended": "right",
+   "borderline": false,
+   "why": "Both parts: reasons and waiting."
+  },
+  {
+   "id": "p5-i47-a02",
+   "question": "p5-i47",
+   "text": "why rockets sometimes dont launch on time",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Names only one part; leaves out the waiting."
+  },
+  {
+   "id": "p5-i47-a03",
+   "question": "p5-i47",
+   "text": "how rockets are built",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "About something else."
+  },
+  {
+   "id": "p5-i47-a04",
+   "question": "p5-i47",
+   "text": "rocket launches getting scrubbed becuase of weather or a bad sensor and familys having to wait",
+   "intended": "right",
+   "borderline": false,
+   "why": "Both parts with examples."
+  },
+  {
+   "id": "p5-i47-a05",
+   "question": "p5-i47",
+   "text": "weather",
+   "intended": "partly",
+   "borderline": false,
+   "why": "One reason, not the main idea."
+  },
+  {
+   "id": "p5-i47-a06",
+   "question": "p5-i47",
+   "text": "rockets go to space to take pictures of planets",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "From outside the text."
+  },
+  {
+   "id": "p5-i47-a07",
+   "question": "p5-i47",
+   "text": "launches can be called off to keep everyone safe and the crowd has to be pacient",
+   "intended": "right",
+   "borderline": false,
+   "why": "Both parts in own words."
+  },
+  {
+   "id": "p5-i47-a08",
+   "question": "p5-i47",
+   "text": "launch windows are sometimes only a few seconds",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A single detail."
+  },
+  {
+   "id": "p5-i47-a09",
+   "question": "p5-i47",
+   "text": "scrubs",
+   "intended": "right",
+   "borderline": true,
+   "why": "Names the key idea in one word; no waiting part."
+  },
+  {
+   "id": "p5-i47-a10",
+   "question": "p5-i47",
+   "text": "the first rocket that went to the moon",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Not in the text."
+  },
+  {
+   "id": "p4-i25-a01",
+   "question": "p4-i25",
+   "text": "people in a town have diffrent feelings about a new mine, some like it and some dont",
+   "intended": "right",
+   "borderline": false,
+   "why": "Different feelings about a mine."
+  },
+  {
+   "id": "p4-i25-a02",
+   "question": "p4-i25",
+   "text": "how mines can pollute rivers",
+   "intended": "partly",
+   "borderline": true,
+   "why": "One side only."
+  },
+  {
+   "id": "p4-i25-a03",
+   "question": "p4-i25",
+   "text": "how to make a phone charger",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "About something else."
+  },
+  {
+   "id": "p4-i25-a04",
+   "question": "p4-i25",
+   "text": "a mine brings jobs but can wreck the river so people dissagree about it",
+   "intended": "right",
+   "borderline": false,
+   "why": "Both sides and the disagreement."
+  },
+  {
+   "id": "p4-i25-a05",
+   "question": "p4-i25",
+   "text": "copper",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Topic only."
+  },
+  {
+   "id": "p4-i25-a06",
+   "question": "p4-i25",
+   "text": "a worker who loses her job at the mine",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Not in the text."
+  },
+  {
+   "id": "p4-i25-a07",
+   "question": "p4-i25",
+   "text": "mixed feelings about a copper mine",
+   "intended": "right",
+   "borderline": false,
+   "why": "Main idea, short and unusual."
+  },
+  {
+   "id": "p4-i25-a08",
+   "question": "p4-i25",
+   "text": "the rules mines have to folow",
+   "intended": "partly",
+   "borderline": false,
+   "why": "One part of the text."
+  },
+  {
+   "id": "p4-i25-a09",
+   "question": "p4-i25",
+   "text": "if a town should get a mine or not",
+   "intended": "right",
+   "borderline": true,
+   "why": "The decision, but the different feelings are only implied."
+  },
+  {
+   "id": "p4-i25-a10",
+   "question": "p4-i25",
+   "text": "not sure",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "No answer."
+  },
+  {
+   "id": "n6-i20-a01",
+   "question": "n6-i20",
+   "text": "leo practicing untill he can do an ollie",
+   "intended": "right",
+   "borderline": false,
+   "why": "Leo learning the ollie."
+  },
+  {
+   "id": "n6-i20-a02",
+   "question": "n6-i20",
+   "text": "sam eating an apple on the bench",
+   "intended": "wrong",
+   "borderline": true,
+   "why": "Side detail unrelated to the main idea; some would call it partly."
+  },
+  {
+   "id": "n6-i20-a03",
+   "question": "n6-i20",
+   "text": "sam learning to skate",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Right idea, wrong character."
+  },
+  {
+   "id": "n6-i20-a04",
+   "question": "n6-i20",
+   "text": "leo keeps trying a skateboard trick for three days and finaly lands it",
+   "intended": "right",
+   "borderline": false,
+   "why": "Main idea in own words."
+  },
+  {
+   "id": "n6-i20-a05",
+   "question": "n6-i20",
+   "text": "skateboarding",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Topic only."
+  },
+  {
+   "id": "n6-i20-a06",
+   "question": "n6-i20",
+   "text": "the ollie is when you jump and the board jumps too",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Answers a different question (what an ollie is)."
+  },
+  {
+   "id": "n6-i20-a07",
+   "question": "n6-i20",
+   "text": "never giving up on a skate trick",
+   "intended": "right",
+   "borderline": true,
+   "why": "The lesson rather than the story; no Leo or ollie named."
+  },
+  {
+   "id": "n6-i20-a08",
+   "question": "n6-i20",
+   "text": "leo fell off on monday",
+   "intended": "partly",
+   "borderline": false,
+   "why": "One detail."
+  },
+  {
+   "id": "n6-i20-a09",
+   "question": "n6-i20",
+   "text": "leo learns an ollie, it took 3 days and sam helped him",
+   "intended": "right",
+   "borderline": false,
+   "why": "Right main idea plus a wrong extra detail (Sam did not help)."
+  },
+  {
+   "id": "n6-i20-a10",
+   "question": "n6-i20",
+   "text": "the skate park",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Setting only."
+  },
+  {
+   "id": "f5-i41-a01",
+   "question": "f5-i41",
+   "text": "put just her name on the sheet and ben diaz will find her a partener",
+   "intended": "right",
+   "borderline": false,
+   "why": "Write only her name; Ben helps."
+  },
+  {
+   "id": "f5-i41-a02",
+   "question": "f5-i41",
+   "text": "ask ben diaz for a partner",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Sensible, but skips writing her name on the sheet."
+  },
+  {
+   "id": "f5-i41-a03",
+   "question": "f5-i41",
+   "text": "Phones stay in backpacks during club time.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied club rule; not an answer."
+  },
+  {
+   "id": "f5-i41-a04",
+   "question": "f5-i41",
+   "text": "sign up alone on the tournement sheet before october 22",
+   "intended": "right",
+   "borderline": false,
+   "why": "Key action and deadline."
+  },
+  {
+   "id": "f5-i41-a05",
+   "question": "f5-i41",
+   "text": "find a partner",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Vague; the text says she can sign up without one."
+  },
+  {
+   "id": "f5-i41-a06",
+   "question": "f5-i41",
+   "text": "she cant play without a partner so she should just watch",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the newsletter."
+  },
+  {
+   "id": "f5-i41-a07",
+   "question": "f5-i41",
+   "text": "write her name by itself on the list by wensday the 22nd",
+   "intended": "right",
+   "borderline": false,
+   "why": "Key action and deadline in own words."
+  },
+  {
+   "id": "f5-i41-a08",
+   "question": "f5-i41",
+   "text": "write her name on the sheet on october 24",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Right step, wrong date (after the deadline)."
+  },
+  {
+   "id": "f5-i41-a09",
+   "question": "f5-i41",
+   "text": "sign up solo and let ben match her with someone",
+   "intended": "right",
+   "borderline": true,
+   "why": "Key action, but skips the deadline."
+  },
+  {
+   "id": "f5-i41-a10",
+   "question": "f5-i41",
+   "text": "go to room 8 on october 17",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Answers a different question."
+  },
+  {
+   "id": "f5-i156-a01",
+   "question": "f5-i156",
+   "text": "call the front desk as soon as he can so another volunter can come instead",
+   "intended": "right",
+   "borderline": false,
+   "why": "Call the desk soon."
+  },
+  {
+   "id": "f5-i156-a02",
+   "question": "f5-i156",
+   "text": "tell them",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Right idea, too vague on who and how."
+  },
+  {
+   "id": "f5-i156-a03",
+   "question": "f5-i156",
+   "text": "Please wear closed shoes and clothes that can get covered in fur.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied rule; not an answer."
+  },
+  {
+   "id": "f5-i156-a04",
+   "question": "f5-i156",
+   "text": "phone the shelter right away and say he cant make it",
+   "intended": "right",
+   "borderline": false,
+   "why": "Key action in own words."
+  },
+  {
+   "id": "f5-i156-a05",
+   "question": "f5-i156",
+   "text": "sign up for a diffrent shift",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Skips telling the shelter he cannot come."
+  },
+  {
+   "id": "f5-i156-a06",
+   "question": "f5-i156",
+   "text": "go anyway by himself",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the rule that an adult must be there."
+  },
+  {
+   "id": "f5-i156-a07",
+   "question": "f5-i156",
+   "text": "ring 555-0172 asap",
+   "intended": "right",
+   "borderline": false,
+   "why": "Key action, unusual words."
+  },
+  {
+   "id": "f5-i156-a08",
+   "question": "f5-i156",
+   "text": "send the shelter an email",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Sensible but not what the text says."
+  },
+  {
+   "id": "f5-i156-a09",
+   "question": "f5-i156",
+   "text": "call the front desk",
+   "intended": "right",
+   "borderline": true,
+   "why": "Key action without 'as soon as he can'."
+  },
+  {
+   "id": "f5-i156-a10",
+   "question": "f5-i156",
+   "text": "just dont go",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "No notice; misses the instruction."
+  },
+  {
+   "id": "f6-i105-a01",
+   "question": "f6-i105",
+   "text": "dont use them and go get free ones at the libary on saturday",
+   "intended": "right",
+   "borderline": false,
+   "why": "Both actions."
+  },
+  {
+   "id": "f6-i105-a02",
+   "question": "f6-i105",
+   "text": "dont use them",
+   "intended": "partly",
+   "borderline": true,
+   "why": "The safety step, but skips getting new glasses."
+  },
+  {
+   "id": "f6-i105-a03",
+   "question": "f6-i105",
+   "text": "At 2:25 PM, the Moon will cover the biggest part of the Sun.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied sentence; not an answer."
+  },
+  {
+   "id": "f6-i105-a04",
+   "question": "f6-i105",
+   "text": "throw them out and pick up a new pair from the library",
+   "intended": "right",
+   "borderline": false,
+   "why": "Both actions in own words."
+  },
+  {
+   "id": "f6-i105-a05",
+   "question": "f6-i105",
+   "text": "check them for holes to",
+   "intended": "partly",
+   "borderline": false,
+   "why": "A checking step; never says not to use them."
+  },
+  {
+   "id": "f6-i105-a06",
+   "question": "f6-i105",
+   "text": "use them, its only a tiny scratch",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the text."
+  },
+  {
+   "id": "f6-i105-a07",
+   "question": "f6-i105",
+   "text": "the scratch could let sunlight thru and hurt his eyes so he needs new ones from the library saturday",
+   "intended": "right",
+   "borderline": false,
+   "why": "Both actions with the reason."
+  },
+  {
+   "id": "f6-i105-a08",
+   "question": "f6-i105",
+   "text": "go to the library",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Vague; no glasses or not using the old pair."
+  },
+  {
+   "id": "f6-i105-a09",
+   "question": "f6-i105",
+   "text": "make a pinhole viewer insted of using the scratched ones",
+   "intended": "right",
+   "borderline": true,
+   "why": "Safe plan the text supports, but not the key's new pair."
+  },
+  {
+   "id": "f6-i105-a10",
+   "question": "f6-i105",
+   "text": "wear his darkest sunglasses instead",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the text: sunglasses are not safe."
+  },
+  {
+   "id": "f2-i28-a01",
+   "question": "f2-i28",
+   "text": "clean the sensor with a dry cloth, get a bigger box and redo the test from the start",
+   "intended": "right",
+   "borderline": false,
+   "why": "All three steps."
+  },
+  {
+   "id": "f2-i28-a02",
+   "question": "f2-i28",
+   "text": "wipe the sensor",
+   "intended": "partly",
+   "borderline": true,
+   "why": "One step; skips the bigger box and restart."
+  },
+  {
+   "id": "f2-i28-a03",
+   "question": "f2-i28",
+   "text": "type the diffrence into the offset box and press save",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "That fix is for readings all too high or low."
+  },
+  {
+   "id": "f2-i28-a04",
+   "question": "f2-i28",
+   "text": "his numbers are jumping around so wipe it off, use a larger box and start over",
+   "intended": "right",
+   "borderline": false,
+   "why": "Spots the jumping numbers and gives all steps."
+  },
+  {
+   "id": "f2-i28-a05",
+   "question": "f2-i28",
+   "text": "start again",
+   "intended": "partly",
+   "borderline": false,
+   "why": "One step, no cleaning or box."
+  },
+  {
+   "id": "f2-i28-a06",
+   "question": "f2-i28",
+   "text": "the sensor is fine so he can unplug the cable",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the text: readings are not 19 to 21."
+  },
+  {
+   "id": "f2-i28-a07",
+   "question": "f2-i28",
+   "text": "dust off the sensor and try a bigger box then do the whole thing agian",
+   "intended": "right",
+   "borderline": false,
+   "why": "All steps, own words."
+  },
+  {
+   "id": "f2-i28-a08",
+   "question": "f2-i28",
+   "text": "use a bigger box",
+   "intended": "partly",
+   "borderline": false,
+   "why": "One step only."
+  },
+  {
+   "id": "f2-i28-a09",
+   "question": "f2-i28",
+   "text": "the sensor is probly dusty so wipe it and start again with a bigger box, and type minus 9 in the offset box",
+   "intended": "right",
+   "borderline": true,
+   "why": "Right steps plus a wrong extra offset step."
+  },
+  {
+   "id": "f2-i28-a10",
+   "question": "f2-i28",
+   "text": "no idea",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "No answer."
+  },
+  {
+   "id": "f6-i130-a01",
+   "question": "f6-i130",
+   "text": "wash it by itself, dry it and stick it back in the knife block",
+   "intended": "right",
+   "borderline": false,
+   "why": "All three steps."
+  },
+  {
+   "id": "f6-i130-a02",
+   "question": "f6-i130",
+   "text": "dont put it in the sink",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Avoids the danger but skips wash, dry and return."
+  },
+  {
+   "id": "f6-i130-a03",
+   "question": "f6-i130",
+   "text": "put it in the sink with the other dishes",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts the rule."
+  },
+  {
+   "id": "f6-i130-a04",
+   "question": "f6-i130",
+   "text": "dont put it in the soapy water, clean it seperately then dry it and return it to the block",
+   "intended": "right",
+   "borderline": false,
+   "why": "All steps with the warning."
+  },
+  {
+   "id": "f6-i130-a05",
+   "question": "f6-i130",
+   "text": "put it in the knife block",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Skips washing and drying."
+  },
+  {
+   "id": "f6-i130-a06",
+   "question": "f6-i130",
+   "text": "Say the words \"Knife behind you\" when you walk past someone.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied rule for carrying, not for cleaning."
+  },
+  {
+   "id": "f6-i130-a07",
+   "question": "f6-i130",
+   "text": "hand wash it alone and put it back were it lives",
+   "intended": "right",
+   "borderline": false,
+   "why": "Key steps, unusual words."
+  },
+  {
+   "id": "f6-i130-a08",
+   "question": "f6-i130",
+   "text": "give it to the teacher",
+   "intended": "partly",
+   "borderline": false,
+   "why": "Safe-ish but not what the text says."
+  },
+  {
+   "id": "f6-i130-a09",
+   "question": "f6-i130",
+   "text": "wash it separately",
+   "intended": "right",
+   "borderline": true,
+   "why": "Main step, skips drying and returning it."
+  },
+  {
+   "id": "f6-i130-a10",
+   "question": "f6-i130",
+   "text": "use the claw grip",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Answers a different question (how to hold food)."
+  },
+  {
+   "id": "f6-i150-a01",
+   "question": "f6-i150",
+   "text": "keep the tooth, put a yellow flag next to the bone thing and get a museum worker",
+   "intended": "right",
+   "borderline": false,
+   "why": "All three actions."
+  },
+  {
+   "id": "f6-i150-a02",
+   "question": "f6-i150",
+   "text": "keep the tooth",
+   "intended": "partly",
+   "borderline": true,
+   "why": "Right about the tooth, skips the bone."
+  },
+  {
+   "id": "f6-i150-a03",
+   "question": "f6-i150",
+   "text": "dig the bone out carefuly and keep it",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Contradicts both rules about bones."
+  },
+  {
+   "id": "f6-i150-a04",
+   "question": "f6-i150",
+   "text": "she can keep the shark tooth but she shouldnt dig out the bone, flag it and call someone from the musem",
+   "intended": "right",
+   "borderline": false,
+   "why": "All actions with the don't-dig warning."
+  },
+  {
+   "id": "f6-i150-a05",
+   "question": "f6-i150",
+   "text": "call a museum worker",
+   "intended": "partly",
+   "borderline": false,
+   "why": "One step; no flag, no tooth."
+  },
+  {
+   "id": "f6-i150-a06",
+   "question": "f6-i150",
+   "text": "If anyone sees lightning or hears thunder, everyone must walk back to the cars right away.",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Copied rule; not an answer."
+  },
+  {
+   "id": "f6-i150-a07",
+   "question": "f6-i150",
+   "text": "tooth goes home with her, mark the bone with a yellow flag and get help from a worker",
+   "intended": "right",
+   "borderline": false,
+   "why": "All actions, own words."
+  },
+  {
+   "id": "f6-i150-a08",
+   "question": "f6-i150",
+   "text": "put a flag by it",
+   "intended": "partly",
+   "borderline": false,
+   "why": "One step, vague."
+  },
+  {
+   "id": "f6-i150-a09",
+   "question": "f6-i150",
+   "text": "flag the bone and call a museum worker",
+   "intended": "right",
+   "borderline": true,
+   "why": "Handles the bone safely but skips the tooth."
+  },
+  {
+   "id": "f6-i150-a10",
+   "question": "f6-i150",
+   "text": "give the tooth to the museum and take the bone home",
+   "intended": "wrong",
+   "borderline": false,
+   "why": "Backwards; contradicts the rules."
+  }
+ ]
+}

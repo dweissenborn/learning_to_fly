@@ -7,9 +7,9 @@ import type { Passage as P, Visual } from '@wayfinder/schema';
 import { forkOptions, journeyRoute, pastFork, routePosition, type Progress } from '@wayfinder/engine';
 import journeyData from '../../../content/journey.json';
 import { log, saveSettings, type Settings } from './db';
-import { passageText, TOPICS } from './content';
+import { passageText, STRAND, TOPICS } from './content';
 import { Passage } from './Passage';
-import { Guide, GUIDES, Koala, Plane, pieceById } from './art';
+import { Guide, GUIDES, Koala, Plane, pieceById, areaOpen, ISLANDS, islandOf, type IslandDef } from './art';
 import { Btn, SpeakBtn } from './ui';
 
 export interface Beat {
@@ -71,6 +71,36 @@ export function journeyNow(finished: number, settings: Settings) {
   return { ...pos, here, next, beat, fork, branches, route: route.stops, finished, legLength: s.legLength, koala: pos.arrived ? JOURNEY.koalas[pos.after] : undefined };
 }
 export type JourneyNow = ReturnType<typeof journeyNow>;
+
+/** LTF-36: the islands on his route so far, in order. The last is the one he is on. */
+export function islandsReached(now: JourneyNow): string[] {
+  return [...new Set(now.route.slice(0, now.stop + 1).map((s) => islandOf(s.id)))];
+}
+/** LTF-36: the first time he is on a new island, remember how many sessions were finished, so its areas open after that. */
+export function islandArrival(s: Settings, finished: number): Partial<Settings> | null {
+  const cur = islandOf(journeyNow(finished, s).here.id);
+  return cur === 'home' || s.islandsSeen?.[cur] !== undefined ? null : { islandsSeen: { ...(s.islandsSeen ?? {}), [cur]: finished } };
+}
+type Lit = Record<'functional' | 'narrative' | 'philosophical', boolean[]>;
+/** LTF-36: an island and which of its areas are open. Islands he has sailed on from have all their quest areas open. */
+export function islandAreas(isle: string, now: JourneyNow, s: Settings, lit: Lit) {
+  const def = ISLANDS[isle];
+  const order = islandsReached(now), current = islandOf(now.here.id);
+  const left = order.indexOf(isle) < order.indexOf(current);
+  const sessions = isle === current ? now.finished - (s.islandsSeen?.[isle] ?? now.finished) : 0;
+  return { def, open: def.areas.map((a, i) => areaOpen(a, i, { sessions, left, lit })), current: isle === current };
+}
+
+/** LTF-36: the island's quest, and what opens the area that waits for a lantern. */
+export function IslandQuest({ def, open, current }: { def: IslandDef; open: readonly boolean[]; current: boolean }) {
+  return <section className="card stack quest" aria-label={`${def.name} quest`}>
+    <h3 style={{ margin: 0 }}>{def.name}</h3>
+    <ul className="quest-list">{def.areas.map((a, i) => a.quest && <li key={a.name} className={open[i] ? 'done' : ''}>
+      <span aria-hidden>{open[i] ? '✅' : '⬜'}</span><span>{a.quest}{open[i] ? <span className="muted"> Done: {a.name} is open.</span> : <span className="sr-only"> Not yet.</span>}</span></li>)}</ul>
+    {def.areas.map((a, i) => a.gate && <p key={a.name} className="tagline" style={{ margin: 0 }}>{open[i] ? `🔓 ${a.name} is open.` : `🔒 ${a.name} opens when lantern ${a.gate.step} is lit on the ${STRAND[a.gate.strand].region} path. You can come back for it later.`}</p>)}
+    {current && open.some((o, i) => !o && def.areas[i].quest) && <p className="tagline" style={{ margin: 0 }}>Each session you finish here does the next step.</p>}
+  </section>;
+}
 
 /** The stops he has reached on his route, for souvenirs and postcards. */
 export const reachedStops = (stop: number, s: Settings) => new Set(routeOf(s).ids.slice(0, stop + 1));

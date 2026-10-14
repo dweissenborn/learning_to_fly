@@ -1,19 +1,19 @@
 // The app shell: home island, and a calm, predictable move between screens.
 import { Component, useEffect, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
-import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
+import { Dialog, Heading, Modal, ModalOverlay, ToggleButton } from 'react-aria-components';
 import type { SkillId, Strand } from '@wayfinder/schema';
 import { dayKey, flightPoints, focusSkill, gate, GEAR, gearState, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
 import { applyRetention, saveSettings, useEvents, useProgress, useSettings, type Settings } from './db';
 import { SKILL, STRAND } from './content';
-import { BrandMark, Guide, Island, pieceById } from './art';
+import { BrandMark, Guide, Island, ISLANDS, pieceById } from './art';
 import { Session, litFrom, placedFrom } from './Session';
 import { Today } from './Today';
 import { Onboarding, ComfortPanel } from './Onboarding';
 import { Adult } from './Adult';
 import { Btn, NewThing } from './ui';
 import { FEATURES, nextFeature, opinions } from './features';
-import { finishedCount, forkMigration, journeyNow, JourneyMap, LegDots } from './journey';
+import { finishedCount, forkMigration, islandArrival, islandAreas, islandsReached, IslandQuest, journeyNow, JourneyMap, LegDots } from './journey';
 import { setSound, setVoice } from './media';
 import { autoSave, isFamily, useCloudSync } from './cloud';
 import { WhoIsLearning } from './CloudScreens';
@@ -58,13 +58,15 @@ export function App() {
   const cloud = useCloudSync();
   const [newHere, setNewHere] = useState(false);
   const [asked, setAsked] = useState<string>(); // the one "What do you think?" card for this visit
+  const [visit, setVisit] = useState<string | null>(null); // LTF-36: an earlier island he is looking at
   useApplySettings(settings);
   useEffect(() => { applyRetention(); }, []);
   // LTF-20: once per fork, keep the old route for a learner who was already past it when the routes arrived.
   useEffect(() => {
     if (!settings?.onboarded || !events) return;
     const fix = forkMigration(settings, finishedCount(progress));
-    if (fix) void saveSettings(fix);
+    const ashore = islandArrival({ ...settings, ...fix }, finishedCount(progress)); // LTF-36
+    if (fix || ashore) void saveSettings({ ...fix, ...ashore });
   }, [settings, events, progress]);
   useEffect(() => {
     if (isFamily(cloud.me) && cloud.link === null && settings?.onboarded && settings.name) void autoSave(settings.name);
@@ -91,7 +93,6 @@ export function App() {
   if (screen === 'adult') return <div className="shell"><Adult settings={settings} events={events} progress={progress} onExit={() => go('home')} onRescout={() => go('rescout')} onGrammar={() => go('regrammar')} /></div>;
 
   const g = gate(progress, settings.gate);
-  const placed = placedFrom(events);
   const lit = litFrom(progress);
   const strands: Strand[] = ['functional', 'narrative', 'philosophical'];
   const here: Partial<Record<Strand, number>> = {};
@@ -103,8 +104,13 @@ export function App() {
   const todayDone = progress.sessions.some((x) => x.finished && dayKey(x.start) === dayKey(Date.now()));
   const hour = new Date().getHours();
   const hello = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
-  const lastPiece = placed.at(-1);
   const jn = journeyNow(finishedCount(progress), settings);
+  // LTF-36: the island he is on, or an earlier one he chose to look at.
+  const isles = islandsReached(jn);
+  const isle = visit && isles.includes(visit) ? visit : isles[isles.length - 1];
+  const view = islandAreas(isle, jn, settings, lit);
+  const placed = placedFrom(events).filter((p) => p.island === isle);
+  const lastPiece = placed.at(-1);
   const story = jn.fork ? `Sea routes leave ${jn.here.name}. Open My journey to choose which island to sail to.`
     : jn.beat ? `${jn.beat.text}${jn.beat.cope ? ' ' + jn.beat.cope : ''}${jn.beat.choice && jn.beat.chosen === undefined ? ' Open My journey to choose a plan.' : ''}`
     : 'You made it to Australia. The koalas are waiting for you.';
@@ -119,10 +125,13 @@ export function App() {
     </header>
     <main className="home">
       <div className="stack">
-        <Island placed={placed} lit={lit} here={here} peaksOpen={g.available || g.opened} stage={jn.stop} />
+        {isles.length > 1 && <div className="isle-switch" role="group" aria-label="Your islands">{isles.map((id) =>
+          <ToggleButton key={id} className="btn small" isSelected={id === isle} onChange={() => setVisit(id === isles[isles.length - 1] ? null : id)}>{ISLANDS[id].name}</ToggleButton>)}</div>}
+        <Island placed={placed} lit={lit} here={here} peaksOpen={g.available || g.opened} stage={jn.stop} island={view.def} areas={view.open} />
         <p className="muted" style={{ textAlign: 'center', margin: 0 }}>
-          {placed.length ? `Your island has ${placed.length} ${placed.length === 1 ? 'thing' : 'things'} you added. The newest is the ${pieceById.get(lastPiece!.piece)?.name.toLowerCase()}.` : 'Finish a session to add your first thing to the island.'}
+          {placed.length ? `${isle === 'home' ? 'Your island' : view.def.name} has ${placed.length} ${placed.length === 1 ? 'thing' : 'things'} you added. The newest is the ${pieceById.get(lastPiece!.piece)?.name.toLowerCase()}.` : `Finish a session to add your first thing to ${isle === 'home' ? 'the island' : view.def.name}.`}
         </p>
+        {view.def.areas.length > 0 && <IslandQuest def={view.def} open={view.open} current={view.current} />}
       </div>
       <aside className="side">
         <div className="guide-row"><Guide id={settings.guide} size={76} mood="happy" /><div className="bubble">{say}</div></div>

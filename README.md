@@ -61,6 +61,8 @@ That checks the reading level of every prose passage. Create the venv once with 
 
 `npm run content:check` runs the reading-level check plus the content checks from LTF-16: coherence (a sentence that shares no people or things with what came before), each question's inference level and school-goal tags, and near-duplicate passages. The new checks only warn until they agree with a hand-rated gold set (`evals/gold/`), and then block only new problems; today's flags are recorded in `pipeline/baseline.json`.
 
+Typed answers will be scored by a model only after it passes a test set (LTF-17, `evals/scoring/`): 300 invented child-style answers to 30 open questions, scored blind by two people in `evals/scoring/rate.html` as clearly right, partly right or clearly wrong. `python evals/scoring/scoring.py agree` compares the two people, and `scoring.py check <scores.json>` judges a scorer, which passes at 0.80 agreement in every band, not just overall.
+
 [Why it works](docs/why-it-works.md) links each feature to the research behind it, and says which choices are ours rather than a study's. The [research page](https://dweissenborn.github.io/learning_to_fly/) goes into each study in depth.
 
 ## Layout

@@ -270,6 +270,10 @@
         },
         "y": {
           "type": "integer"
+        },
+        "island": {
+          "type": "string",
+          "description": "LTF-36: the island it was built on (a journey stop id). Left out on pieces built before the islands: Home Island."
         }
       }
     },

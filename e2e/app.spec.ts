@@ -663,3 +663,30 @@ test('names instead of he and she in the easiest texts, never inside what a char
   await expect(passage).not.toContainText('She took her flute');
   await axe(page, 'names instead of pronouns');
 });
+
+test('a new island at each stop: its own look, a quest that opens places one session at a time, and Home Island to go back to (LTF-36)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await seedFinished(page, 5); // five sessions: ashore on Gull Island
+  await expect(page.getByRole('img', { name: /^Gull Island\./ })).toBeVisible();
+  const quest = page.getByRole('region', { name: 'Gull Island quest' });
+  await expect(quest).toContainText('Count the gull nests with Ranger Jo.');
+  await expect(quest).not.toContainText('Done');
+  await expect(quest).toContainText('opens when lantern 2 is lit on the Harbor Town path');
+  await axe(page, 'Gull Island');
+  // The app remembers when he came ashore; one more finished session there does the first step and opens its place.
+  await expect.poll(() => page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const row = await new Promise<{ value?: { islandsSeen?: Record<string, number> } } | undefined>((res) => { const g = db.transaction('kv').objectStore('kv').get('settings'); g.onsuccess = () => res(g.result); });
+    db.close();
+    return row?.value?.islandsSeen?.gull;
+  })).toBe(5);
+  await seedFinished(page, 6);
+  await expect(quest).toContainText('Done: The gull nests is open.');
+  await expect(page.getByRole('img', { name: /Still closed: Seal Rocks, The rock pools, The ranger hut\./ })).toBeVisible();
+  await page.getByRole('button', { name: 'Home Island' }).click();
+  await expect(page.getByRole('img', { name: /^Your island\./ })).toBeVisible();
+  await expect(page.getByRole('region', { name: /quest/ })).toHaveCount(0);
+});

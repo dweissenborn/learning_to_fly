@@ -315,14 +315,192 @@ const LANDMARKS: { r: number; c: number; kind: 'lighthouse' | 'bigoak' | 'observ
 ];
 const reserved = new Set([...Object.values(PATHS).flat().map(([r, c]) => `${r},${c}`), ...LANDMARKS.map((l) => `${l.r},${l.c}`)]);
 
-export interface Placed { piece: string; x: number; y: number; id: string; ts: number }
-export function freeTiles(placed: Placed[], peaksOpen: boolean, beach?: boolean) {
+export interface Placed { piece: string; x: number; y: number; id: string; ts: number; island: string }
+/** Where a piece can go: not on a path, a landmark, another piece, a closed area, or closed peaks. */
+export function freeTiles(placed: Placed[], peaksOpen: boolean, beach?: boolean, island: IslandDef = ISLANDS.home, areas: readonly boolean[] = []) {
   const used = new Set(placed.map((p) => `${p.y},${p.x}`));
-  return TILES.filter((t) => !reserved.has(`${t.r},${t.c}`) && !used.has(`${t.r},${t.c}`) && (peaksOpen || t.region !== 'peaks') && (beach ? t.region === 'beach' : t.region !== 'beach'));
+  const res = reservedOn(island);
+  const closed = new Set(island.areas.flatMap((_, i) => (areas[i] ? [] : areaSpots(island, i))));
+  return islandTiles(island).filter((t) => !res.has(`${t.r},${t.c}`) && !used.has(`${t.r},${t.c}`) && !closed.has(`${t.r},${t.c}`) && (peaksOpen || t.region !== 'peaks') && (beach ? t.region === 'beach' : t.region !== 'beach'));
 }
 
 const TOP: Record<Region, [string, string]> = { town: ['#e9d9b8', '#e2cfa9'], forest: ['#9fcf7a', '#93c56d'], peaks: ['#cfcadf', '#c4bfd6'], beach: ['#f0dca0', '#ead396'] };
 const SIDE: Record<Region, string> = { town: '#b99d72', forest: '#8a6a46', peaks: '#9a95ad', beach: '#d4b977' };
+
+// ---------------------------------------------------------------- an island at each stop (LTF-36)
+// Every island has Home Island's tile layout, so his three lantern paths come with him. What changes: the colours, the coast,
+// what stands on the high ground, the landmark where he comes ashore, and four areas. Three open with the island's quest,
+// one session at a time; the fourth opens when a lantern is lit, so he can come back for it later.
+export interface Area {
+  name: string;
+  /** The landmark that appears when the area opens: a piece's drawing, or one of the island drawings below. */
+  look: string;
+  /** Areas 1 to 3: the quest step that opens it. */
+  quest?: string;
+  /** Area 4: the lantern that opens it. */
+  gate?: { strand: 'functional' | 'narrative'; step: number };
+}
+export interface IslandDef {
+  id: string; name: string;
+  top: Record<Region, [string, string]>; side: Record<Region, string>;
+  relief: 'mountain' | 'boulders' | 'layers' | 'palms' | 'hills' | 'redrock';
+  /** Which edge tiles are sea; 0 keeps Home Island's coast. */
+  coast: number;
+  /** Where he comes ashore, at the lighthouse's spot. */
+  arrival?: string;
+  areas: Area[];
+  /** Things to build that belong here, offered first while he is on this island. */
+  pieces: string[];
+}
+/** Where the four areas sit on every island, clear of the lantern paths: town, woods, beach, and the far side of town. */
+export const AREA_AT: [number, number][] = [[6, 5], [5, 7], [8, 8], [7, 2]];
+const ARRIVAL_AT: [number, number] = [10, 6];
+
+const pal = (t: string, f: string, p: string, b: string, s: [string, string, string, string]) => ({
+  top: { town: [t, shade(t, -0.04)], forest: [f, shade(f, -0.05)], peaks: [p, shade(p, -0.04)], beach: [b, shade(b, -0.04)] } as Record<Region, [string, string]>,
+  side: { town: s[0], forest: s[1], peaks: s[2], beach: s[3] } as Record<Region, string>,
+});
+
+export const ISLANDS: Record<string, IslandDef> = {
+  home: { id: 'home', name: 'Home Island', top: TOP, side: SIDE, relief: 'mountain', coast: 0, areas: [], pieces: [] },
+  gull: { id: 'gull', name: 'Gull Island', ...pal('#dfe2e4', '#b9d59c', '#c9cac4', '#ebe3cb', ['#9aa3ab', '#7d8f5a', '#8d8e88', '#c2b590']), relief: 'boulders', coast: 3, arrival: 'pier',
+    areas: [
+      { name: 'The gull nests', look: 'nest', quest: 'Count the gull nests with Ranger Jo.' },
+      { name: 'Seal Rocks', look: 'seal', quest: 'Watch the seals from far away, so they can rest.' },
+      { name: 'The rock pools', look: 'pool', quest: 'Find a crab in the rock pools.' },
+      { name: 'The ranger hut', look: 'cabin', gate: { strand: 'functional', step: 2 } },
+    ], pieces: ['seal', 'boat', 'telescope'] },
+  cape: { id: 'cape', name: 'Windy Cape', ...pal('#e6dcc4', '#a9c98b', '#cbc4b6', '#ecdcae', ['#b39d78', '#7f8f58', '#958c7c', '#cdb67c']), relief: 'hills', coast: 5, arrival: 'busstop',
+    areas: [
+      { name: 'The kite field', look: 'kite', quest: 'Help fly a kite in the strong wind.' },
+      { name: 'The windmill', look: 'windmill', quest: 'Watch the windmill turn in the wind.' },
+      { name: 'The cliff path', look: 'flag', quest: 'Walk the cliff path, far from the edge.' },
+      { name: 'The weather station', look: 'weather', gate: { strand: 'narrative', step: 2 } },
+    ], pieces: ['kite', 'windmill', 'weather'] },
+  fossil: { id: 'fossil', name: 'Fossil Bay', ...pal('#ddd3c2', '#a9c590', '#c6bead', '#e9d7a9', ['#a8977c', '#7c8a5a', '#8e8574', '#c9b27a']), relief: 'layers', coast: 7, arrival: 'pier',
+    areas: [
+      { name: 'The dig', look: 'dig', quest: 'Help Dr. Bell brush the sand off a bone.' },
+      { name: 'The plaster tent', look: 'tent', quest: 'Help wrap the bone in a plaster jacket.' },
+      { name: 'Ammonite Beach', look: 'ammonite', quest: 'Find an ammonite shell in the rocks.' },
+      { name: 'The dinosaur garden', look: 'dino', gate: { strand: 'narrative', step: 3 } },
+    ], pieces: ['ammonite', 'dino', 'mine'] },
+  reef: { id: 'reef', name: 'Reef Island', ...pal('#f4e8c8', '#92d38c', '#a9d9a1', '#fbefc6', ['#c9b07a', '#5f9a58', '#6f9a5a', '#d6c08a']), relief: 'palms', coast: 11, arrival: 'pier',
+    areas: [
+      { name: 'The tide pools', look: 'pool', quest: 'Find a sea star in the tide pools with Mari.' },
+      { name: 'The glass-bottom boat', look: 'boat', quest: 'Look for a clownfish through the glass floor.' },
+      { name: 'Turtle Beach', look: 'turtle', quest: 'Help Mari mark where the turtles laid their eggs.' },
+      { name: 'The lagoon hut', look: 'cabin', gate: { strand: 'functional', step: 3 } },
+    ], pieces: ['turtle', 'boat', 'garden'] },
+  star: { id: 'star', name: 'Star Point', ...pal('#dadce6', '#93bb8d', '#bcc4d7', '#e5ddc6', ['#9a9db0', '#5f8a5a', '#7c87a3', '#c4b68e']), relief: 'hills', coast: 13, arrival: 'pier',
+    areas: [
+      { name: 'The balloon field', look: 'weather', quest: 'Watch the weather balloon go up at 6 AM.' },
+      { name: 'The telescope', look: 'telescope', quest: 'Look at the Moon through the telescope.' },
+      { name: 'The dome', look: 'dome', quest: 'Help Dr. Amal open the dome on a clear night.' },
+      { name: 'The rocket garden', look: 'rocket', gate: { strand: 'narrative', step: 4 } },
+    ], pieces: ['dome', 'telescope', 'rocket'] },
+  rail: { id: 'rail', name: 'Rail Coast', ...pal('#e5d3c1', '#a5c886', '#c8c1b4', '#ebdaaf', ['#b08a6a', '#728d55', '#928a7b', '#c9b27c']), relief: 'hills', coast: 17, arrival: 'pier',
+    areas: [
+      { name: 'The signal box', look: 'signal', quest: 'Help Mr. Haddad pull the signal lever.' },
+      { name: 'The platform', look: 'clocktower', quest: 'Check the clock before the train comes in.' },
+      { name: 'The map room', look: 'house', quest: 'Find Home Island on the big map.' },
+      { name: 'The engine shed', look: 'train', gate: { strand: 'functional', step: 4 } },
+    ], pieces: ['signal', 'train', 'busstop'] },
+  airfield: { id: 'airfield', name: 'Cloud Hill', ...pal('#d9ddd0', '#b6d791', '#d0e1c1', '#e7ddb9', ['#9aa08e', '#7e9a5c', '#8fa585', '#c7b88a']), relief: 'hills', coast: 19, arrival: 'plane',
+    areas: [
+      { name: 'The hangar', look: 'hangar', quest: 'Help Captain Ada open the hangar doors.' },
+      { name: 'The windsock', look: 'kite', quest: 'Check the windsock to see which way the wind blows.' },
+      { name: 'The workshop', look: 'house', quest: 'Hand Captain Ada the tools to fix the plane.' },
+      { name: 'The lookout', look: 'telescope', gate: { strand: 'narrative', step: 4 } },
+    ], pieces: ['plane', 'weather', 'rocket'] },
+  australia: { id: 'australia', name: 'Australia', ...pal('#ebcda5', '#abca90', '#da9470', '#f1dbab', ['#b98a5c', '#76935a', '#a85f3d', '#cdb27a']), relief: 'redrock', coast: 23, arrival: 'plane',
+    areas: [
+      { name: 'The young gum trees', look: 'garden', quest: 'Help Ranger Tess plant a young gum tree.' },
+      { name: 'The koala walk', look: 'koala', quest: 'Find Gumnut asleep in a tree.' },
+      { name: 'The picnic spot', look: 'bench', quest: 'Have a picnic with Ranger Tess by the creek.' },
+      { name: "The keeper's hut", look: 'cabin', gate: { strand: 'functional', step: 5 } },
+    ], pieces: ['koala', 'garden', 'tent'] },
+};
+/** The island for a journey stop. The take-off is still Cloud Hill; anything unknown is Home Island. */
+export const islandOf = (stop: string) => (stop === 'takeoff' ? 'airfield' : ISLANDS[stop] ? stop : 'home');
+
+/** An area is open once he has finished more sessions on the island than the areas before it (all of them once he has
+ * sailed on), or, for the fourth, once its lantern is lit. */
+export function areaOpen(a: Area, i: number, o: { sessions: number; left: boolean; lit: Record<'functional' | 'narrative' | 'philosophical', boolean[]> }) {
+  if (a.gate) return !!o.lit[a.gate.strand][a.gate.step - 1];
+  return o.left || o.sessions > i;
+}
+
+const pathTiles = new Set(Object.values(PATHS).flat().map(([r, c]) => `${r},${c}`));
+const keep = new Set([...pathTiles, ...AREA_AT.map(([r, c]) => `${r},${c}`), `${ARRIVAL_AT[0]},${ARRIVAL_AT[1]}`]);
+const tilesFor = new Map<string, Tile[]>();
+/** The island's tiles: Home Island's, with its own bays (edge tiles left to the sea) and spits of beach beyond the old
+ * coast. Paths, areas and the landing always stay. */
+export function islandTiles(def: IslandDef): Tile[] {
+  if (!def.coast) return TILES;
+  if (!tilesFor.has(def.id)) {
+    const out: Tile[] = [];
+    for (let r = 0; r < N; r++) for (let c = 0; c < N; c++) {
+      const h = c - r, d = r + c, e = (h / 6.6) ** 2 + ((d - 10) / 7.6) ** 2, k = `${r},${c}`;
+      const base = TILES.find((t) => t.r === r && t.c === c);
+      if (base && (keep.has(k) || e < 0.55 || noise(r + def.coast, c * 2 + def.coast) > 0.45)) out.push(base);
+      else if (!base && e < 1.45 && d >= 8 && d <= 18 && noise(r * 3 + def.coast, c + def.coast * 2) > 0.5) out.push({ r, c, region: 'beach', z: 0.25 });
+    }
+    tilesFor.set(def.id, out);
+  }
+  return tilesFor.get(def.id)!;
+}
+const decoFor = new Map<string, Set<string>>();
+/** A few of the island's own features (boulders, palms, rock layers) on open ground, so it reads as a different place. */
+function islandDeco(def: IslandDef): Set<string> {
+  if (!def.coast) return new Set();
+  if (!decoFor.has(def.id)) {
+    const spots = new Set(def.areas.flatMap((_, i) => areaSpots(def, i)));
+    const taken = new Set([...keep, ...spots]);
+    const open = islandTiles(def).filter((t) => t.region !== 'peaks' && !taken.has(`${t.r},${t.c}`));
+    decoFor.set(def.id, new Set(open.sort((a, b) => noise(b.r * 7 + def.coast, b.c * 5) - noise(a.r * 7 + def.coast, a.c * 5)).slice(0, 5).map((t) => `${t.r},${t.c}`)));
+  }
+  return decoFor.get(def.id)!;
+}
+/** The build spots in each area: the tiles around its landmark. */
+function areaSpots(def: IslandDef, i: number): string[] {
+  const [r, c] = AREA_AT[i];
+  const here = new Set(islandTiles(def).map((t) => `${t.r},${t.c}`));
+  const out: string[] = [];
+  for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++) {
+    const k = `${r + dr},${c + dc}`;
+    if ((dr || dc) && here.has(k) && !pathTiles.has(k) && !LANDMARKS.some((l) => `${l.r},${l.c}` === k && def.id === 'home')) out.push(k);
+  }
+  return out;
+}
+function reservedOn(def: IslandDef) {
+  if (def.id === 'home') return reserved;
+  return new Set([...pathTiles, `${ARRIVAL_AT[0]},${ARRIVAL_AT[1]}`, ...def.areas.map((_, i) => `${AREA_AT[i][0]},${AREA_AT[i][1]}`), ...islandDeco(def)]);
+}
+
+/** Island drawings that are not pieces he can build. */
+const ISLAND_ART: Record<string, (night: boolean) => ReactNode> = {
+  pier: () => <>{[0.12, 0.88].map((u) => [0.3, 0.7].map((v) => <g key={`${u}${v}`}>{cyl(u, v, 0.04, -0.4, 0.55, '#6b4a2f')}</g>))}{box(0.05, 0.25, 0.9, 0.5, 0.15, 0.06, '#a8814f')}
+    {box(0.55, 0.78, 0.4, 0.2, -0.1, 0.18, '#f5f5f0')}{box(0.62, 0.8, 0.18, 0.14, 0.08, 0.14, '#3f88c5')}</>,
+  nest: () => { const [x, y] = at(0.5, 0.5, 0.1); return <><ellipse cx={x} cy={y} rx="16" ry="7" fill="#8a6a46" /><ellipse cx={x} cy={y - 1} rx="11" ry="4.5" fill="#5e4630" />
+    {[-5, 0, 5].map((d) => <ellipse key={d} cx={x + d} cy={y - 3} rx="3" ry="4" fill="#e9e4d6" />)}<ellipse cx={x + 18} cy={y - 12} rx="9" ry="6" fill="#ffffff" /><path d={`M${x + 12} ${y - 14} l10 -4 l2 5 z`} fill="#9aa3ab" /><circle cx={x + 25} cy={y - 15} r="3.5" fill="#ffffff" /><path d={`M${x + 28} ${y - 15} l4 1 l-4 1 z`} fill="#f2b04a" /></>; },
+  pool: () => { const [x, y] = at(0.5, 0.5, 0.05); return <>{ball(0.2, 0.5, 0, 0.2, '#9a968f')}{ball(0.75, 0.3, 0, 0.18, '#8d8a85')}{ball(0.6, 0.8, 0, 0.16, '#a39f97')}<ellipse cx={x} cy={y} rx="20" ry="9" fill="#5fb0dc" stroke="#d8d2c4" strokeWidth="2" />
+    <ellipse cx={x - 4} cy={y} rx="5" ry="3" fill="#e4572e" /><path d={`M${x - 9} ${y - 1} l-4 -3 M${x + 1} ${y - 1} l4 -3 M${x - 8} ${y + 2} l-4 2 M${x} ${y + 2} l4 2`} stroke="#e4572e" strokeWidth="1.4" /><path d={`M${x + 9} ${y - 2} l2 4 l4 0 l-3 3 l1 4 l-4 -2 l-4 2 l1 -4 l-3 -3 l4 0 z`} fill="#f28c28" /></>; },
+  dig: () => { const [x, y] = at(0.5, 0.5, 0); return <><Poly p={[[0.2, 0.2, 0.01], [0.8, 0.2, 0.01], [0.8, 0.8, 0.01], [0.2, 0.8, 0.01]]} fill="#8a6a46" />{[[0.2, 0.2], [0.8, 0.2], [0.8, 0.8], [0.2, 0.8]].map(([u, v]) => <g key={`${u}${v}`}>{cyl(u, v, 0.02, 0, 0.35, '#c9a46a')}</g>)}
+    <path d={`M${x - 12} ${y - 2} l24 0`} stroke="#f2ecdc" strokeWidth="4" strokeLinecap="round" /><circle cx={x - 13} cy={y - 4} r="3" fill="#f2ecdc" /><circle cx={x - 13} cy={y} r="3" fill="#f2ecdc" /><circle cx={x + 13} cy={y - 4} r="3" fill="#f2ecdc" /><circle cx={x + 13} cy={y} r="3" fill="#f2ecdc" /></>; },
+  hangar: (n) => { const [x, y] = at(0.5, 0.95, 0); return <>{box(0.1, 0.15, 0.8, 0.8, 0, 0.9, '#c9ccd2')}{gable(0.06, 0.1, 0.88, 0.9, 0.9, 0.5, '#d64545', '#c9ccd2')}<rect x={x - 14} y={y - 30} width="28" height="24" fill={n ? '#ffd56b' : '#5b6170'} /></>; },
+};
+/** What stands on an island's high ground, by `relief`. */
+function Relief({ kind, seed }: { kind: IslandDef['relief']; seed: number }) {
+  const h = 0.7 + seed * 0.8;
+  if (kind === 'mountain') return <Mountain seed={seed} />;
+  if (kind === 'boulders') return <g>{ball(0.4, 0.55, 0, 0.3 + seed * 0.15, '#9a9a94')}{ball(0.68, 0.38, 0, 0.22, '#a9a9a3')}</g>;
+  if (kind === 'layers') return <g>{box(0.12, 0.12, 0.76, 0.76, 0, h * 0.4, '#c4bcab')}{box(0.2, 0.2, 0.6, 0.6, h * 0.4, h * 0.35, '#b1a998')}{box(0.3, 0.3, 0.4, 0.4, h * 0.75, h * 0.3, '#cfc7b5')}</g>;
+  if (kind === 'palms') { const [x, y] = at(0.5, 0.5, 1.3 + seed * 0.3); return <g>{cyl(0.5, 0.5, 0.04, 0, 1.3 + seed * 0.3, '#8a6a46')}{[-1, 1].map((s) => <ellipse key={s} cx={x + s * 12} cy={y + 2} rx="14" ry="5" fill="#4f9a48" transform={`rotate(${s * 18} ${x + s * 12} ${y + 2})`} />)}<ellipse cx={x} cy={y - 2} rx="12" ry="5" fill="#5fae5a" /></g>; }
+  if (kind === 'redrock') return <g>{ball(0.5, 0.5, 0, 0.42 + seed * 0.18, '#c8643c')}{ball(0.72, 0.35, 0, 0.2, '#b75a36')}</g>;
+  const [x, y] = at(0.5, 0.5, 0), ry = 14 + seed * 12;
+  return <g><path d={`M${x - 28} ${y} A28 ${ry} 0 0 1 ${x + 28} ${y} Z`} fill="#93c27c" /><path d={`M${x} ${y - ry} A28 ${ry} 0 0 1 ${x + 28} ${y} L${x} ${y} Z`} fill="#000" opacity="0.12" /></g>;
+}
+export const drawLook = (look: string, night: boolean) => ISLAND_ART[look]?.(night) ?? pieceById.get(look)?.draw(night);
 
 function skyFor(hour: number) {
   if (hour >= 20 || hour < 6) return { sky: '#1d2b4f', sea: '#2b4a78', sea2: '#3c5d8f', night: true };
@@ -341,28 +519,38 @@ export interface IslandProps {
   hour?: number;
   /** How far along the journey: 0 Home Island to 5 Australia. Shows small clues on the horizon. */
   stage?: number;
+  /** LTF-36: which island, and which of its areas are open. Home Island when left out. */
+  island?: IslandDef;
+  areas?: readonly boolean[];
 }
 
-export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = new Date().getHours(), stage = 0 }: IslandProps) {
+export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = new Date().getHours(), stage = 0, island = ISLANDS.home, areas = [] }: IslandProps) {
   const t = skyFor(hour);
-  const spots = placing ? new Set(freeTiles(placed, peaksOpen, pieceById.get(placing.piece)?.beach).map((x) => `${x.r},${x.c}`)) : null;
+  const home = island.id === 'home';
+  const deco = islandDeco(island);
+  const spots = placing ? new Set(freeTiles(placed, peaksOpen, pieceById.get(placing.piece)?.beach, island, areas).map((x) => `${x.r},${x.c}`)) : null;
+  const look = new Map<string, { draw: ReactNode; title: string }>(home ? [] : [
+    [`${ARRIVAL_AT[0]},${ARRIVAL_AT[1]}`, { draw: drawLook(island.arrival ?? 'pier', t.night), title: `Where you came ashore on ${island.name}` }],
+    ...island.areas.flatMap((a, i) => (areas[i] ? [[`${AREA_AT[i][0]},${AREA_AT[i][1]}`, { draw: drawLook(a.look, t.night), title: a.name }] as [string, { draw: ReactNode; title: string }]] : [])),
+  ]);
   const byTile = new Map(placed.map((p) => [`${p.y},${p.x}`, p]));
   const pathAt = new Map<string, { strand: 'functional' | 'narrative' | 'philosophical'; i: number }>();
   (Object.keys(PATHS) as (keyof typeof PATHS)[]).forEach((strand) => PATHS[strand].forEach(([r, c], i) => pathAt.set(`${r},${c}`, { strand, i })));
   const strandColor = { functional: '#f2b04a', narrative: '#58b38a', philosophical: '#a68be0' };
-  const sorted = [...TILES].sort((a, b) => a.r + a.c - (b.r + b.c) || a.c - b.c);
+  const sorted = [...islandTiles(island)].sort((a, b) => a.r + a.c - (b.r + b.c) || a.c - b.c);
 
   const tile = (tl: Tile) => {
     const [ox, oy] = pr([tl.c, tl.r, 0]);
     const key = `${tl.r},${tl.c}`;
-    const top = TOP[tl.region][(tl.r + tl.c) % 2];
+    const top = island.top[tl.region][(tl.r + tl.c) % 2];
     const z = tl.z, base = -0.6;
-    const L = <Poly p={[[0, 1, z], [1, 1, z], [1, 1, base], [0, 1, base]]} fill={shade(SIDE[tl.region], -0.05)} />;
-    const R = <Poly p={[[1, 0, z], [1, 1, z], [1, 1, base], [1, 0, base]]} fill={shade(SIDE[tl.region], -0.25)} />;
+    const L = <Poly p={[[0, 1, z], [1, 1, z], [1, 1, base], [0, 1, base]]} fill={shade(island.side[tl.region], -0.05)} />;
+    const R = <Poly p={[[1, 0, z], [1, 1, z], [1, 1, base], [1, 0, base]]} fill={shade(island.side[tl.region], -0.25)} />;
     const topPts: P3[] = [[0, 0, z], [1, 0, z], [1, 1, z], [0, 1, z]];
     const p = byTile.get(key);
     const piece = p && pieceById.get(p.piece);
-    const lm = LANDMARKS.find((l) => l.r === tl.r && l.c === tl.c);
+    const lm = home ? LANDMARKS.find((l) => l.r === tl.r && l.c === tl.c) : undefined;
+    const isle = look.get(key);
     const path = pathAt.get(key);
     const canPlace = spots?.has(key);
     const [zx, zy] = pr([0, 0, z]);
@@ -373,7 +561,8 @@ export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = ne
         <g transform={`translate(0 ${-z * ZH})`}>
           {path && <PathStone strand={path.strand} lit={lit[path.strand][path.i]} here={here[path.strand] === path.i} color={strandColor[path.strand]} n={path.i + 1} night={t.night} />}
           {lm && <Landmark kind={lm.kind} night={t.night} peaksOpen={peaksOpen} />}
-          {!lm && !path && !piece && tl.region === 'peaks' && tl.r + tl.c <= 4 && <Mountain seed={noise(tl.r, tl.c)} />}
+          {isle && <g><title>{isle.title}</title>{isle.draw}</g>}
+          {!lm && !isle && !path && !piece && ((tl.region === 'peaks' && tl.r + tl.c <= 4) || deco.has(key)) && <Relief kind={island.relief} seed={noise(tl.r, tl.c)} />}
           {piece && <g className={fresh === p!.id ? 'newpiece moves' : undefined}><title>{piece.name}</title>{piece.draw(t.night)}</g>}
         </g>
       </g>
@@ -385,13 +574,15 @@ export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = ne
   };
 
   return <div className="island-wrap" style={{ ['--sky' as string]: `linear-gradient(${t.sky}, ${t.sea2} 28%, ${t.sea})` }}>
-    <svg viewBox={`${VB.x} ${VB.y} ${VB.w} ${VB.h}`} preserveAspectRatio="xMidYMid meet" role={placing ? 'group' : 'img'} aria-label="Your island. Harbor Town, Story Woods and Lantern Peaks.">
+    <svg viewBox={`${VB.x} ${VB.y} ${VB.w} ${VB.h}`} preserveAspectRatio="xMidYMid meet" role={placing ? 'group' : 'img'} aria-label={`${home ? 'Your island' : island.name}. Harbor Town, Story Woods and Lantern Peaks.${island.areas.some((_, i) => !areas[i]) ? ` Still closed: ${island.areas.filter((_, i) => !areas[i]).map((a) => a.name).join(', ')}.` : ''}`}>
       <Defs />
       {t.night && Array.from({ length: 40 }, (_, i) => <circle key={i} cx={VB.x + noise(i, 3) * VB.w} cy={VB.y + noise(i, 7) * 90} r={noise(i, 11) * 1.4 + 0.4} fill="#fff" opacity={0.4 + noise(i, 5) * 0.5} />)}
       {Array.from({ length: 14 }, (_, i) => <path key={i} className="wave moves" style={{ animationDelay: `${-i * 0.7}s` }} d={`M${VB.x + noise(i, 1) * VB.w} ${VB.y + 40 + noise(i, 2) * (VB.h - 40)} q10 -4 20 0 t20 0`} stroke="#ffffff" strokeOpacity="0.45" strokeWidth="2" fill="none" />)}
       <ellipse cx="0" cy="175" rx="290" ry="135" fill="#ffffff" opacity="0.14" />
       <Horizon stage={stage} night={t.night} />
       {sorted.map(tile)}
+      {island.areas.map((a, i) => { if (areas[i]) return null; const [x, y] = pr([AREA_AT[i][1] + 0.5, AREA_AT[i][0] + 0.5, 0.6]); return <g key={a.name} pointerEvents="none">
+        <ellipse className="mist moves" cx={x} cy={y} rx="62" ry="27" fill="#fff" opacity="0.72" /><text x={x} y={y + 6} textAnchor="middle" fontSize="17">🔒</text></g>; })}
       {!peaksOpen && <g className="mist moves" opacity="0.55" pointerEvents="none">
         <ellipse cx="-20" cy="20" rx="150" ry="40" fill="#fff" /><ellipse cx="40" cy="-10" rx="110" ry="30" fill="#fff" /><ellipse cx="-70" cy="-15" rx="80" ry="24" fill="#fff" />
       </g>}
