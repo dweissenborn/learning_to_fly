@@ -881,3 +881,116 @@ test('after Opening Day he can fly home, visit an island he skipped, and his isl
   await fork.locator('.ccard', { hasText: 'Fossil Bay' }).click();
   await expect(page.getByRole('region', { name: 'On the way to Fossil Bay' })).toBeVisible();
 });
+
+// Every story setback, read from the journey itself: its notice, coping line and question, both plans, and the smooth text.
+type Beat = { text: string; obstacle?: string; notice?: { rows?: string[]; signs?: { text: string }[] }; cope?: string; choice?: { ask: string; options: { label: string; reply: string; after: string }[] }; smooth?: string };
+type StopJ = { id: string; name: string; beats: Beat[]; paths?: { id: string; beats?: Beat[] }[] };
+const JOURNEY_J: { stops: StopJ[]; arc: { stops: StopJ[] }; home: { stops: (StopJ & { place: string })[] } } = JSON.parse(readFileSync('content/journey.json', 'utf8'));
+const OUT = new Map(JOURNEY_J.stops.map((s) => [s.id, s]));
+const via = (to: string) => ({ routes: { gull: { to, at: 1 }, takeoff: { to: 'island', at: 1 } }, journeyAnchor: { at: 5, stop: 1, step: 0, after: 0 } });
+const SETBACKS: { part: string; key: string; name: string; beats: Beat[]; patch: Record<string, unknown>; at: number }[] = [
+  { part: 'way out', key: 'gull', name: OUT.get('gull')!.name, beats: OUT.get('gull')!.beats, patch: { routes: {}, journeyAnchor: { at: 0, stop: 0, step: 0, after: 0 } }, at: 2 },
+  ...['cape', 'fossil', 'reef', 'star', 'rail'].map((id) => ({ part: 'way out', key: id, name: OUT.get(id)!.name, beats: OUT.get(id)!.beats, patch: via(id), at: 7 })),
+  { part: 'way out', key: 'takeoff', name: OUT.get('takeoff')!.name, beats: OUT.get('takeoff')!.beats, patch: via('star'), at: 17 },
+  { part: 'way out', key: 'australia', name: OUT.get('australia')!.name, beats: OUT.get('australia')!.beats, patch: via('star'), at: 22 },
+  { part: 'way out', key: 'australia', name: OUT.get('australia')!.name, beats: OUT.get('australia')!.paths!.find((p) => p.id === 'reef')!.beats!,
+    patch: { ...via('star'), routes: { gull: { to: 'star', at: 1 }, takeoff: { to: 'reef', at: 1 } } }, at: 22 },
+  ...JOURNEY_J.arc.stops.map((s, i) => ({ part: 'keeper arc', key: s.id, name: s.name, beats: s.beats, patch: via('star'), at: 35 + 5 * i })),
+  { part: 'way home', key: 'back-cloud', name: JOURNEY_J.home.stops[0].name, beats: JOURNEY_J.home.stops[0].beats, patch: { ...via('star'), homeTrip: { at: 58 } }, at: 60 },
+  ...JOURNEY_J.home.stops.slice(1, 5).map((s) => ({ part: 'way home', key: s.id, name: s.name, beats: s.beats,
+    patch: { ...via(s.place === 'star' ? 'fossil' : 'star'), homeTrip: { at: 58, island: s.place, anchor: { at: 5, stop: 1, step: 0, after: 0 } } }, at: 65 })),
+  ...JOURNEY_J.home.stops.slice(5).map((s, i) => ({ part: 'way home', key: s.id, name: s.name, beats: s.beats,
+    patch: { ...via('star'), homeTrip: { at: 58, island: 'fossil', anchor: { at: 5, stop: 1, step: 0, after: 0 } } }, at: 70 + 5 * i })),
+];
+
+/** Puts the learner at `n` finished sessions with these settings: earlier seeded sessions are cleared first. */
+async function journeyAt(page: Page, patch: Record<string, unknown>, n: number) {
+  await page.evaluate(async ([patch, n]) => {
+    const open = () => new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    let db = await open();
+    await new Promise((done) => {
+      const tx = db.transaction('events', 'readwrite');
+      const c = tx.objectStore('events').openCursor();
+      c.onsuccess = () => { const cur = c.result; if (cur) { if (String(cur.key).startsWith('seed-')) cur.delete(); cur.continue(); } };
+      tx.oncomplete = done;
+    });
+    await new Promise((done) => {
+      const tx = db.transaction(['events', 'kv'], 'readwrite');
+      const t0 = Date.now() - ((n as number) + 2) * 86_400_000;
+      for (let k = 0; k < (n as number); k++) {
+        tx.objectStore('events').put({ id: `seed-s${k}`, ts: t0 + k * 86_400_000, type: 'session', session: `seed-${k}`, action: 'start', strand: 'functional', skill: 'F1' });
+        tx.objectStore('events').put({ id: `seed-f${k}`, ts: t0 + k * 86_400_000 + 60_000, type: 'session', session: `seed-${k}`, action: 'finish' });
+      }
+      const kv = tx.objectStore('kv'); const g = kv.get('settings');
+      g.onsuccess = () => { g.result.value = { ...g.result.value, ...(patch as object) }; kv.put(g.result); };
+      tx.oncomplete = done;
+    });
+    db.close();
+    db = await open(); db.close();
+  }, [patch, n] as const);
+  await page.reload();
+}
+
+test('every story setback: the notice, a calm coping line, two plans that both work, and the smooth text when setbacks are off', async ({ page }) => {
+  test.setTimeout(300_000);
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  expect(SETBACKS.length).toBe(21);
+  const checked = new Set<string>();
+  for (const c of SETBACKS) await test.step(`${c.part}: ${c.name}${c.key === 'australia' && c.patch.routes && (c.patch.routes as { takeoff: { to: string } }).takeoff.to === 'reef' ? ' (the reef way)' : ''}`, async () => {
+    const b = c.beats[2], ch = b.choice!;
+    const shown = b.notice!.rows?.[0] ?? b.notice!.signs![0].text; // a notice board, a message, or road signs
+    const base = { ...c.patch, journeyChoices: {}, setbacks: true };
+    await journeyAt(page, base, c.at);
+    await page.getByRole('button', { name: /My journey/ }).click();
+    const card = page.getByRole('region', { name: `On the way to ${c.name}` });
+    await expect(card).toContainText(b.text);
+    await expect(card).toContainText(shown);
+    await expect(card).toContainText(b.cope!);
+    await card.getByRole('button', { name: ch.options[0].label, exact: true }).click();
+    await expect(card).toContainText(ch.options[0].reply);
+    if (!checked.has(c.part)) { checked.add(c.part); await axe(page, `setback on the ${c.part}`); }
+    // The next beat tells how each plan worked.
+    await journeyAt(page, { ...base, journeyChoices: { [c.key]: 0 } }, c.at + 1);
+    await page.getByRole('button', { name: /My journey/ }).click();
+    await expect(page.getByRole('region', { name: `On the way to ${c.name}` })).toContainText(ch.options[0].after);
+    await journeyAt(page, { ...base, journeyChoices: { [c.key]: 1 } }, c.at + 1);
+    await page.getByRole('button', { name: /My journey/ }).click();
+    await expect(page.getByRole('region', { name: `On the way to ${c.name}` })).toContainText(ch.options[1].after);
+    // With setbacks off, the smooth text and no notice.
+    await journeyAt(page, { ...base, setbacks: false }, c.at);
+    await page.getByRole('button', { name: /My journey/ }).click();
+    const smooth = page.getByRole('region', { name: `On the way to ${c.name}` });
+    await expect(smooth).toContainText(b.smooth!);
+    await expect(smooth).not.toContainText(shown);
+  });
+});
+
+test('"What would you like to do?": his last choice is marked so one tap starts it, and one daily budget covers every subject (LTF-39)', async ({ page }) => {
+  await onboard(page);
+  const pick = page.getByRole('region', { name: 'What would you like to do?' });
+  await expect(pick.getByRole('button', { name: /Start reading/ })).toBeFocused(); // the default, before he has chosen anything
+  await expect(pick).not.toContainText('Last time');
+  await axe(page, 'picker');
+  await pick.getByRole('button', { name: /Tell about today/ }).click();
+  await page.getByRole('button', { name: /Back/ }).first().click();
+  await expect(pick.getByRole('button', { name: /Tell about today/ })).toContainText('Last time');
+  await expect(pick.getByRole('button', { name: /Start reading/ })).not.toContainText('Last time');
+  // A grown-up sets one session a day; after today's, reading waits for tomorrow and Today stays open.
+  await setSettings(page, { perDay: 1 });
+  await page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const tx = db.transaction('events', 'readwrite');
+    tx.objectStore('events').put({ id: 'today-s', ts: Date.now() - 120_000, type: 'session', session: 'today', action: 'start', strand: 'functional', skill: 'F1' });
+    tx.objectStore('events').put({ id: 'today-f', ts: Date.now() - 60_000, type: 'session', session: 'today', action: 'finish' });
+    await new Promise((r) => { tx.oncomplete = r; });
+    db.close();
+  });
+  await page.reload();
+  await expect(pick.getByRole('button', { name: /Start reading/ })).toBeDisabled();
+  await expect(pick).toContainText("That's today's session done.");
+  await expect(pick.getByRole('button', { name: /Tell about today/ })).toBeEnabled();
+  await axe(page, 'picker, budget used');
+});

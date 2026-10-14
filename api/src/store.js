@@ -6,9 +6,12 @@
 //   { id: 'e:<id>',   learner, kind: 'event',   data: LogEvent }            append-only
 //   { id: 'n:<id>',   learner, kind: 'note',    data: Note | null }         null = deleted
 //   { id: 'settings', learner, kind: 'settings', data: Settings }           last write wins
+//   { id: 'settings:<module>', learner, kind: 'module', data: object }     LTF-39: one per module, last write wins
+// Events and notes from a module other than reading carry `module` in their data (missing means reading).
 
 export const ROLE = 'family';
 const ID = /^[A-Za-z0-9_-]{1,64}$/;
+const MODULE = /^[a-z][a-z0-9-]{0,31}$/;
 const MAX = 2000; // documents per request; the app sends at most 1000
 
 export class HttpError extends Error {
@@ -57,6 +60,8 @@ export async function sync(repo, body) {
   for (const n of notes) id(n?.id, 'note id');
   for (const g of gone) id(g, 'note id');
   const settings = body.settings && typeof body.settings === 'object' ? body.settings : null;
+  const modules = body.modules && typeof body.modules === 'object' ? Object.entries(body.modules) : [];
+  for (const [m, v] of modules) if (!MODULE.test(m) || m === 'reading' || !v || typeof v !== 'object') throw bad('bad module settings');
 
   const profile = await repo.get(learner, 'profile');
   if (!profile) throw new HttpError(404, 'this learner is not in the cloud');
@@ -64,6 +69,7 @@ export async function sync(repo, body) {
     ...events.map((e) => ({ id: `e:${e.id}`, learner, kind: 'event', data: e })),
     ...notes.map((n) => ({ id: `n:${n.id}`, learner, kind: 'note', data: n })),
     ...gone.map((g) => ({ id: `n:${g}`, learner, kind: 'note', data: null })),
+    ...modules.map(([m, v]) => ({ id: `settings:${m}`, learner, kind: 'module', data: v })),
   ];
   if (settings) {
     docs.push({ id: 'settings', learner, kind: 'settings', data: settings });
@@ -72,12 +78,22 @@ export async function sync(repo, body) {
   }
   if (docs.length) await repo.put(learner, docs);
 
-  const out = { events: [], notes: [], gone: [], settings: null, since };
+  const out = { events: [], notes: [], gone: [], settings: null, modules: {}, since };
   for (const d of await repo.changes(learner, since)) {
     out.since = Math.max(out.since, d._ts);
     if (d.kind === 'event') out.events.push(d.data);
     else if (d.kind === 'note') d.data ? out.notes.push(d.data) : out.gone.push(d.id.slice(2));
     else if (d.kind === 'settings') out.settings = d.data;
+    else if (d.kind === 'module') out.modules[d.id.slice('settings:'.length)] = d.data;
   }
   return out;
+}
+
+/** LTF-39: deletes one module's memory (its events, notes and settings) in the learner's partition, and nothing else. */
+export async function deleteModule(repo, learnerId, module) {
+  const learner = id(learnerId, 'learner');
+  if (typeof module !== 'string' || !MODULE.test(module) || module === 'reading') throw bad('bad module');
+  const ids = (await repo.changes(learner, 0)).filter((d) => d.id === `settings:${module}` || ((d.kind === 'event' || d.kind === 'note') && d.data?.module === module)).map((d) => d.id);
+  if (ids.length) await repo.drop(learner, ids);
+  return { deleted: module, documents: ids.length };
 }

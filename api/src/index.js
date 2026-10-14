@@ -2,7 +2,7 @@
 // staticwebapp.config.json already limits /api/* to the "family" role; each handler checks it again.
 import { app } from '@azure/functions';
 import { CosmosClient } from '@azure/cosmos';
-import { HttpError, who, learners, createLearner, deleteLearner, sync } from './store.js';
+import { HttpError, who, learners, createLearner, deleteLearner, deleteModule, sync } from './store.js';
 
 let container;
 const c = () => (container ??= new CosmosClient(process.env.COSMOS_CONNECTION).database('learning-to-fly').container('data'));
@@ -22,6 +22,7 @@ export const repo = {
   put: (learner, docs) => batch(learner, docs.map((d) => ({ operationType: 'Upsert', resourceBody: d }))),
   changes: (learner, since) => all({ query: 'SELECT * FROM c WHERE c._ts >= @since', parameters: [{ name: '@since', value: since }] }, learner),
   remove: async (learner) => batch(learner, (await all('SELECT c.id FROM c', learner)).map(({ id }) => ({ operationType: 'Delete', id }))),
+  drop: (learner, ids) => batch(learner, ids.map((id) => ({ operationType: 'Delete', id }))), // LTF-39: one module's documents
 };
 
 function route(name, methods, path, fn) {
@@ -44,3 +45,4 @@ function route(name, methods, path, fn) {
 route('learners', ['GET', 'POST'], 'learners', async (req) => (req.method === 'GET' ? learners(repo) : createLearner(repo, await req.json())));
 route('learner', ['DELETE'], 'learners/{id}', (req) => deleteLearner(repo, req.params.id));
 route('sync', ['POST'], 'sync', async (req) => sync(repo, await req.json()));
+route('module', ['DELETE'], 'learners/{id}/modules/{module}', (req) => deleteModule(repo, req.params.id, req.params.module)); // LTF-39

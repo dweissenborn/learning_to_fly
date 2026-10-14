@@ -93,7 +93,7 @@ The live site is open only to Microsoft accounts invited to the `family` role (`
 
 To invite someone, open the Static Web App in the Azure portal, then Role management, then Invite. Choose Microsoft Entra ID as the provider, enter their email and the role `family`, and send them the link. The link is valid for up to seven days. The Free plan allows up to 25 invited users. The same can be done with `az staticwebapp users invite --roles family`.
 
-After a grown-up signs in once on a device, the app's offline copy keeps opening without asking again. New versions arrive after the next sign-in, from the grown-ups' area under Data.
+After a grown-up signs in once on a device, the app's offline copy keeps opening without asking again. The app looks for a new version every 30 minutes and whenever it comes back to the front, and switches to it only on the home screen with nothing open, or while it is in the background, never during a session (`apps/web/src/update.ts`). Fetching a new version needs the family sign-in, so while that has expired, the new version arrives after the next sign-in. The grown-ups' Settings shows when the running copy was built.
 
 Local development (`npm run dev`) has no sign-in.
 

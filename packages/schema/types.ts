@@ -486,6 +486,10 @@ export interface AnswerEvent {
    * LTF-38: flight points this answer earned, saved when it was given (4 right on the first tap, 2 with the clue, -1 when shown, 0 for a fast guess). Older answers without it earned 2.
    */
   points?: number;
+  /**
+   * LTF-39: the module this belongs to; left out for reading.
+   */
+  module?: string;
 }
 export interface SessionEvent {
   id: string;
@@ -504,6 +508,10 @@ export interface SessionEvent {
    * LTF-38, on a stop: he asked for a break, answers came faster than reading, or the session ended on a success at the time a grown-up set.
    */
   reason?: 'break' | 'rapid' | 'time';
+  /**
+   * LTF-39: the module this belongs to; left out for reading.
+   */
+  module?: string;
 }
 export interface PlacementEvent {
   id: string;
@@ -528,6 +536,10 @@ export interface PlacementEvent {
    * Share correct on the "Who did it?" sentence grammar stop (LTF-13). Absent when the stop was not run.
    */
   grammar?: number;
+  /**
+   * LTF-39: the module this belongs to; left out for reading.
+   */
+  module?: string;
 }
 export interface WorldEvent {
   id: string;

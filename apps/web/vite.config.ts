@@ -7,7 +7,9 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
+      // A new version waits, and src/update.ts switches to it at a safe moment, never mid-session.
+      registerType: 'prompt',
+      injectRegister: false,
       includeAssets: ['icon.svg', 'icon-192.png', 'icon-512.png'],
       manifest: {
         name: 'Learning to Fly',
@@ -35,5 +37,7 @@ export default defineConfig({
   ],
   // The whole content bank is bundled on purpose (offline, no fetches), so the main chunk is large.
   build: { chunkSizeWarningLimit: 6000 },
+  // When this copy was built, shown in the grown-ups' Settings, so a family can see which version a device runs.
+  define: { __APP_BUILT__: JSON.stringify(new Date().toISOString()) },
   server: { port: 5173 },
 });

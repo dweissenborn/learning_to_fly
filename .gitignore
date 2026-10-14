@@ -7,4 +7,5 @@ playwright-report/
 # Design notes about the first learner stay on this machine.
 docs/plan.md
 docs/content-guide.md
+docs/math-module.md
 docs/adr/

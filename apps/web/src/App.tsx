@@ -1,9 +1,9 @@
 // The app shell: home island, and a calm, predictable move between screens.
-import { Component, useEffect, useState, type ReactNode } from 'react';
+import { Component, useEffect, useRef, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
 import { Dialog, Heading, Modal, ModalOverlay, ToggleButton } from 'react-aria-components';
 import type { SkillId, Strand } from '@wayfinder/schema';
-import { dayKey, flightPeak, flightPoints, focusSkill, gate, GEAR, gearState, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
+import { dayKey, flightPeak, flightPoints, focusSkill, gate, GEAR, gearState, sessionsToday, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
 import { applyRetention, saveSettings, useEvents, useProgress, useSettings, type Settings } from './db';
 import { SKILL, STRAND } from './content';
 import { BrandMark, Guide, Island, islandOf, ISLANDS, pieceById } from './art';
@@ -18,6 +18,8 @@ import { setSound, setVoice } from './media';
 import { autoSave, isFamily, useCloudSync } from './cloud';
 import { WhoIsLearning } from './CloudScreens';
 import { GearCelebration, KitPanel } from './gear';
+import { MODULES } from './modules';
+import { maybeSwitch, startUpdates } from './update';
 import { Lounge } from './Lounge';
 
 type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'regrammar' | 'map' | 'lounge';
@@ -62,6 +64,11 @@ export function App() {
   const [visit, setVisit] = useState<string | null>(null); // LTF-36: an earlier island he is looking at
   const [breakWhy, setBreakWhy] = useState<'break' | 'rapid'>('break'); // LTF-38
   useApplySettings(settings);
+  // New versions switch in only on the home screen with nothing open, or while the app is in the background.
+  const safe = useRef(false);
+  safe.current = screen === 'home' && !dialog && !!settings?.onboarded;
+  useEffect(() => { void startUpdates(() => safe.current); }, []);
+  useEffect(() => { if (safe.current) maybeSwitch(); }, [screen, dialog, settings?.onboarded]);
   useEffect(() => { applyRetention(); }, []);
   // LTF-20: once per fork, keep the old route for a learner who was already past it when the routes arrived.
   useEffect(() => {
@@ -109,6 +116,7 @@ export function App() {
   const hour = new Date().getHours();
   const hello = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
   const jn = journeyNow(finishedCount(progress), settings);
+  const budgetUsed = !!settings.perDay && sessionsToday(events) >= settings.perDay; // LTF-39: across every subject
   // LTF-36: the island he is on, or an earlier one he chose to look at.
   const isles = islandsReached(jn);
   const atIsle = islandOf(jn.here.id);
@@ -143,10 +151,17 @@ export function App() {
       <aside className="side">
         <div className="guide-row"><Guide id={settings.guide} size={76} mood="happy" /><div className="bubble">{say}</div></div>
         <div className="hero-actions">
-          <Btn className="primary big" autoFocus onPress={() => go('session')}><span className="ico" aria-hidden>📖</span>Start reading</Btn>
+          {/* LTF-39: one picker, always here: his last choice is marked so one tap starts it; the day has one budget. */}
+          <section className="picker stack" aria-labelledby="pick-h">
+            <h2 id="pick-h" className="pick-h">What would you like to do?</h2>
+            {MODULES.map((m) => { const last = (settings.lastModule ?? 'reading') === m.id, full = m.kind === 'content' && budgetUsed;
+              return <Btn key={m.id} className={`big ${last && !full ? 'primary' : m.id === 'today' ? 'nar' : ''}`} autoFocus={last && !full} isDisabled={full}
+                onPress={() => { if (!last) void saveSettings({ lastModule: m.id }); go(m.screen); }}>
+                <span className="ico" aria-hidden>{m.icon}</span>{m.title}{last && settings.lastModule && <span className="pick-last"> · Last time</span>}</Btn>; })}
+            {budgetUsed && <p className="tagline" style={{ margin: 0 }}>That's today's session done. You can tell about today, look at your journey, or rest. More tomorrow.</p>}
+          </section>
           <Btn className="big journey" onPress={() => go('map')}><span className="ico" aria-hidden>🗺️</span>My journey</Btn>
           {jn.next && !jn.fork && <LegDots now={jn} />}
-          <Btn className="big nar" onPress={() => go('today')}><span className="ico" aria-hidden>📅</span>Tell about today</Btn>
           <Btn className="big" onPress={() => setDialog('shelf')}><span className="ico" aria-hidden>⭐</span>Things I can do · {shelf.length}</Btn>
           <Btn className="big kit" onPress={() => setDialog('kit')}><span className="ico" aria-hidden>🎒</span>Flight kit · {gearState(flightPoints(events), flightPeak(events)).owned.length} of {GEAR.length}</Btn>
         </div>

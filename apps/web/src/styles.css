@@ -558,3 +558,8 @@ button.pbox { cursor: pointer; }
 .arc-steps li { padding: 0.35rem 0.7rem; border-radius: 999px; background: var(--surface-2, #f1ece2); border: 2px solid transparent; }
 .arc-steps li.done { border-color: #3f9a5c; }
 .arc-steps li.next { border: 2px dashed #3f88c5; }
+
+/* LTF-39: the module picker. */
+.picker { gap: 0.6rem; }
+.pick-h { margin: 0; font-size: 1.15rem; }
+.pick-last { font-size: 0.85em; font-weight: 600; opacity: 0.85; }

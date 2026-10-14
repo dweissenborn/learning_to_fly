@@ -55,6 +55,11 @@ describe('the flight-path fork at Take-off (LTF-25)', () => {
     expect(journeyNow(25, reef).arrived && journeyNow(25, island).arrived).toBe(true);
     expect(journeyNow(24, reef).arrived || journeyNow(24, island).arrived).toBe(false);
   });
+  it("after the reef way's setback, the next beat tells how his plan worked on the reef way", () => {
+    const reef = { ...base, routes: { ...base.routes, takeoff: { to: 'reef', at: 1 } }, journeyAnchor: { at: 20, stop: 4, step: 0, after: 0 }, journeyChoices: { australia: 1 } };
+    const plan = JOURNEY.stops.find((s) => s.id === 'australia')!.paths!.find((p) => p.id === 'reef')!.beats![2].choice!.options[1];
+    expect(journeyNow(23, reef).beat?.text).toBe(plan.after);
+  });
   it('anyone already flying when the paths arrive keeps the island way', () => {
     const flying = { ...base, forksSeen: ['gull'] };
     expect(forkMigration(flying, 22)?.routes?.takeoff?.to).toBe('island');

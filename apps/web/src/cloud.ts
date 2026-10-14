@@ -9,7 +9,7 @@ import { DB, currentDb, db, forgetDb, learnerDbs, rememberDb, switchDb, type Not
 export interface Me { userDetails: string; userRoles: string[] }
 export interface Learner { id: string; name: string; created: number }
 export interface Link { learner: string; since: number }
-interface Pull { events: LogEvent[]; notes: Note[]; gone: string[]; settings: Record<string, unknown> | null; since: number }
+interface Pull { events: LogEvent[]; notes: Note[]; gone: string[]; settings: Record<string, unknown> | null; modules?: Record<string, Record<string, unknown>>; since: number }
 
 /** me: undefined until checked or where there is no sign-in at all; null when signed out. */
 interface Status { checked: boolean; me?: Me | null; state: 'idle' | 'syncing' | 'ok' | 'offline' | 'signed-out' | 'gone'; at?: number }
@@ -49,7 +49,7 @@ export async function link(learner: string, mode: 'new' | 'join' | 'empty') {
     await db.outbox.clear();
     if (mode !== 'empty') {
       const keys = [...(await db.events.toCollection().primaryKeys()).map((k) => `event:${k}`), ...(await db.notes.toCollection().primaryKeys()).map((k) => `note:${k}`)];
-      if (mode === 'new') keys.push('settings');
+      if (mode === 'new') keys.push('settings', ...(await db.kv.where('key').startsWith('settings:').primaryKeys()).map(String));
       await db.outbox.bulkPut(keys.map((key) => ({ key, v: crypto.randomUUID() })));
     }
     await db.kv.put({ key: 'cloud', value: { learner, since: 0 } satisfies Link });
@@ -109,13 +109,15 @@ async function run() {
       const box = await db.outbox.limit(1000).toArray();
       const events: LogEvent[] = [], notes: Note[] = [], gone: string[] = [];
       let settings: unknown;
+      const modules: Record<string, unknown> = {}; // LTF-39: `settings:<module>` documents
       for (const { key } of box) {
         const [kind, id] = [key.slice(0, key.indexOf(':')), key.slice(key.indexOf(':') + 1)];
         if (kind === 'event') { const e = await db.events.get(id); if (e) events.push(e); }
         else if (kind === 'note') { const n = await db.notes.get(id); if (n) notes.push(n); else gone.push(id); }
         else if (key === 'settings') settings = (await db.kv.get('settings'))?.value;
+        else if (kind === 'settings') { const v = (await db.kv.get(key))?.value; if (v) modules[id] = v; }
       }
-      const r = await api<Pull>('sync', { method: 'POST', body: JSON.stringify({ learner: link.learner, since: link.since, events, notes, gone, settings }) });
+      const r = await api<Pull>('sync', { method: 'POST', body: JSON.stringify({ learner: link.learner, since: link.since, events, notes, gone, settings, modules }) });
       await db.transaction('rw', [db.events, db.notes, db.kv, db.outbox], async () => {
         for (const b of box) if ((await db.outbox.get(b.key))?.v === b.v) await db.outbox.delete(b.key); // sent, and not edited since
         const pending = new Set(await db.outbox.toCollection().primaryKeys());
@@ -126,6 +128,10 @@ async function run() {
         await db.notes.bulkDelete(r.gone.filter((id) => !pending.has(`note:${id}`)));
         const cur = (await db.kv.get('settings'))?.value;
         if (r.settings && !pending.has('settings') && JSON.stringify(cur) !== JSON.stringify(r.settings)) await db.kv.put({ key: 'settings', value: r.settings });
+        for (const [m, v] of Object.entries(r.modules ?? {})) {
+          const key = `settings:${m}`;
+          if (!pending.has(key) && JSON.stringify((await db.kv.get(key))?.value) !== JSON.stringify(v)) await db.kv.put({ key, value: v });
+        }
         await db.kv.put({ key: 'cloud', value: { ...link, since: r.since } });
       });
       link.since = r.since;

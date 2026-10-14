@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { createLearner, deleteLearner, learners, sync, who } from '../src/store.js';
+import { createLearner, deleteLearner, deleteModule, learners, sync, who } from '../src/store.js';
 import { memoryRepo } from '../src/memory.js';
 
 const header = (roles) => Buffer.from(JSON.stringify({ userId: 'u1', userDetails: 'a@example.com', userRoles: roles })).toString('base64');
@@ -37,6 +37,26 @@ describe('family cloud copy', () => {
     await deleteLearner(repo, 'kid-1');
     expect(await learners(repo)).toEqual([]);
     await expect(sync(repo, { learner: 'kid-1', since: 0 })).rejects.toMatchObject({ status: 404 });
+  });
+
+  it("keeps each module's settings apart, and deletes one module's memory without touching another's (LTF-39)", async () => {
+    let now = 2000;
+    const repo = memoryRepo(() => now);
+    await createLearner(repo, { id: 'kid-2', name: 'Bo' });
+    await sync(repo, { learner: 'kid-2', since: 0, settings: { name: 'Bo' }, modules: { math: { ramp: 'choices' } },
+      events: [{ id: 'r1', ts: 1 }, { id: 'm1', ts: 2, module: 'math' }], notes: [{ id: 'nr', text: 'r' }, { id: 'nm', text: 'm', module: 'math' }] });
+    const other = await sync(repo, { learner: 'kid-2', since: 0 });
+    expect(other.modules).toEqual({ math: { ramp: 'choices' } });
+    expect(other.settings).toEqual({ name: 'Bo' });
+    now = 2010;
+    expect(await deleteModule(repo, 'kid-2', 'math')).toEqual({ deleted: 'math', documents: 3 });
+    const after = await sync(repo, { learner: 'kid-2', since: 0 });
+    expect(after.events.map((e) => e.id)).toEqual(['r1']);
+    expect(after.notes.map((n) => n.id)).toEqual(['nr']);
+    expect(after.modules).toEqual({});
+    expect(after.settings).toEqual({ name: 'Bo' });
+    await expect(deleteModule(repo, 'kid-2', 'reading')).rejects.toMatchObject({ status: 400 }); // reading's memory is the learner's own
+    await expect(sync(repo, { learner: 'kid-2', modules: { 'no/pe': {} } })).rejects.toMatchObject({ status: 400 });
   });
 
   it('rejects bad input', async () => {

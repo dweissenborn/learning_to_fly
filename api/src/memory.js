@@ -9,5 +9,6 @@ export function memoryRepo(clock = () => Math.floor(Date.now() / 1000)) {
     put: async (learner, docs) => { for (const d of docs) part(learner).set(d.id, { ...structuredClone(d), _ts: clock() }); },
     changes: async (learner, since) => [...part(learner).values()].filter((d) => d._ts >= since),
     remove: async (learner) => { parts.delete(learner); },
+    drop: async (learner, ids) => { for (const i of ids) part(learner).delete(i); },
   };
 }

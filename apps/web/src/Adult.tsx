@@ -582,6 +582,8 @@ function SettingsTab({ settings, progress, onRescout, onGrammar }: { settings: S
       <p className="tagline">The journey to the koalas moves with finished sessions, never with scores. Five a leg reaches Australia at about session 25, about where studies measured gains.</p>
       <Toggle on={settings.setbacks} onChange={(setbacks) => saveSettings({ setbacks })}>Story setbacks (a storm, a blocked path, a broken part)</Toggle>
       <p className="tagline">Setbacks model coping with change: each one is explained, he hears a calm coping line, and he picks a plan. Nothing is lost. Turn them off for a smoother story.</p>
+      <Seg label="Sessions a day, all subjects together" value={settings.perDay ?? 0} options={[[0, 'No limit'], [1, '1'], [2, '2'], [3, '3']]} onChange={(perDay) => saveSettings({ perDay })} />
+      <p className="tagline">One budget for the day, so another subject never adds a session on top. Telling about today is not counted.</p>
       <Toggle on={settings.guessCheck !== false} onChange={(guessCheck) => saveSettings({ guessCheck })}>Notice guesses faster than reading, set them aside, and stop kindly after two in a row</Toggle>
       <Seg label="End sessions on a success after" value={settings.endAt ?? 0} options={[[0, 'Off'], [8, '8 min'], [10, '10 min'], [12, '12 min'], [15, '15 min']]} onChange={(endAt) => saveSettings({ endAt })} />
       <p className="tagline">After this time, the next answer he gets right on the first tap ends the session, so it ends on a success before he tires. The Activity tab shows when guessing tends to start.</p>
@@ -607,6 +609,7 @@ function SettingsTab({ settings, progress, onRescout, onGrammar }: { settings: S
           <option value="">The most natural voice here{(() => { const v = pickVoice(vs, '', true); return v ? ` (${v.name})` : ''; })()}</option>{vs.map((v) => <option key={v.name} value={v.name}>{v.name}</option>)}
         </select><Btn className="small" onPress={() => speak(['This is how I sound when I read to you.'], 'voice-test')}>Try it</Btn></div>
         <p className="tagline">Voices come from this device. Natural-sounding ones are named “Natural” (Edge, with internet) or “Enhanced” (iPad); the app picks one by itself unless you choose. Offline, it uses a voice on the device.</p></div>}
+      <p className="tagline">This copy of the app was built {new Date(__APP_BUILT__).toLocaleString()}. A new version switches in by itself, on the home screen or while the app is in the background, never during a session.</p>
       <div className="field"><label htmlFor="pin2">Grown-ups' code (leave empty for none)</label>
         <div className="row"><input id="pin2" className="input" inputMode="numeric" maxLength={4} value={pin} onChange={(e) => setPin(e.target.value.replace(/\D/g, ''))} /><Btn className="small" onPress={() => saveSettings({ pin })}>Save code</Btn></div></div>
     </section>

@@ -14,6 +14,65 @@ Each step lands its test before its code.
 4. **New questions.** LTF-09, LTF-10, LTF-12, LTF-13 (all built 2026-10-13).
 5. **Large content work.** LTF-20 (island routes, before LTF-14 so check-up flights can come from the island he chose), LTF-04, LTF-11 (idioms use LTF-04), LTF-03, LTF-14. Built 2026-10-13: LTF-04 (pilot), LTF-11, LTF-03 (N4 first), LTF-14 (all ten stops, the four islands included), and LTF-20, built with the proposed LTF-21 to LTF-24 as its island stories so DW can review them in the app. Waiting for DW: those island stories, and the koala keeper arc (LTF-30 to LTF-35). LTF-25 to LTF-29 come later, if approved.
 6. **Guest codes.** LTF-19, a separate track. Approach to confirm; DW 2026-10-13: not now.
+7. **Math module.** LTF-39 to LTF-44 (below), from DW's design note: modules as add-ons first, then typed answers, skills and gates, the help ladder, story or plain, and the grown-ups' measures. Approach to confirm.
+
+## Proposed: the math module (LTF-39 to LTF-44)
+
+Added 2026-10-13 from DW's design note (kept local in `docs/math-module.md` with ADR-0003, since it describes the learner). Approach to confirm. Goal: close the gaps under the fraction topics he is working on now, so he does them correctly on his own, still does them weeks later, and wants to come back. Math is an add-on to Learning to Fly, not a separate app: it uses the same island, guide, journey, rules, break button and grown-ups' area, and adds its own skills, answer formats and memory. Out of scope for the first version: long division, timed fact practice, and an adventure story around the problems. DW 2026-10-13: start with LTF-39; dividing fractions by keep, change, flip (the worked examples and error rules follow it); long division later; a new skill opens with choices first. Build order: LTF-39, then LTF-40, LTF-41, LTF-43, LTF-42 and LTF-44; each step lands its test before its code.
+
+## LTF-39 Modules as add-ons
+
+Proposed 2026-10-13. Approach to confirm. ADR-0003 (local, Proposed).
+
+- **What was built (2026-10-13, approved by DW the same day).** A module registry (`apps/web/src/modules.ts`) with reading (content) and Today (function). On his island, "What would you like to do?" groups the module cards in one fixed place; his last choice is marked "Last time" and focused, so one tap starts it (before he has chosen anything, reading is the default). One budget for the day across subjects: a grown-up can set sessions a day (no limit by default); when today's are done, reading says so calmly and Today stays open (`sessionsToday` counts finished sessions from every module). `moduleOf` reads a skill's module from its prefix (`math:FR3`), with today's reading ids as module `reading`; answer, session and placement events may carry `module` (missing means reading). In the cloud copy each module has its own settings document (`settings:<module>`), synced both ways, and `deleteModule` (route `DELETE /api/learners/{id}/modules/{module}`) removes one module's events, notes and settings without touching reading's. Tests: engine (`modules.test.ts`), API store (module settings, module delete; mutation-checked), and an e2e run of the picker and the daily budget, with axe. Left for LTF-41, when math brings a second content module: drawing Home's paths per module, math in the registry and its grown-up switch, module-scoped notes in the app, and a grown-up button for deleting a module's memory.
+
+- **What it is.** A module registry with two kinds. A content module brings skills with a dependency graph, bank items, worked examples and any new answer formats, and uses the core's session loop and rules (mastery, reviews, gates, the guessing check, the break button), the journey and the grown-ups' area. A function module brings its own activity and screens (Today, the lounge). Each module has a manifest: id, kind, title and icon, enabled by a grown-up, its skills or entry screen, and where its memory lives (none, device or cloud).
+- **He sees.** On his island, "Start reading" becomes "What would you like to do?", always in the same place: 2 or 3 large cards (the enabled modules and Today), his last choice highlighted so one tap starts. The journey moves with finished sessions from any module, never with scores. One daily budget across modules, so math never adds a second session on top of reading.
+- **Build.** Namespaced skill ids (`math:FR3`), with today's ids read as module `reading` so nothing stored needs migrating; an optional `module` field on events (missing means reading); Home draws its paths from the enabled modules; per-module settings and notes documents in the existing Cosmos `data` container and `/learner` partition (`settings:<module>`, `n:<module>:<id>`), with no new container.
+- **Tests first.** Store tests for module-scoped reads, writes and deletes (deleting one module's memory leaves the others); engine test for one daily budget across modules; e2e: the picker's default is highlighted and one tap starts, with axe; every existing test passes with reading as a module.
+- **Guards.** 2 to 4 choices at most, a fixed layout, one story world. If the picker slows him down (time to choose is logged), it drops to a single "Carry on" button.
+
+## LTF-40 Typed math answers
+
+Proposed 2026-10-13. Approach to confirm.
+
+- **What it is.** Typed answers by default, judged by code. Effortful recall with feedback beats recognition for retention, and typed answers show which error was made, while three choices can be passed by guessing ([Kang, McDermott & Roediger 2007](https://www.gwern.net/docs/spaced-repetition/2007-kang.pdf); [Birenbaum & Tatsuoka 1987](https://conservancy.umn.edu/items/073afebf-7637-41cc-8f93-031780b947ba)).
+- **He sees.** An on-screen keypad, not a keyboard: large digit keys, a numerator box over a denominator box, a whole-number box for mixed numbers, "r" for remainders, delete and Check. The answer field always shows the answer's shape, never a blank box. The multiplication chart is one tap away, and using it never counts as help.
+- **Build.** Exact fraction arithmetic. Equivalent forms are right (3/4 and 6/8) unless the item asks for simplest form or a mixed number. Wrong answers are matched against coded error rules (whole-number thinking, adding across tops and bottoms, flipping the wrong fraction, not simplifying fully), and the match picks the feedback.
+- **Tests first.** Unit tests over an answer-equivalence table (6/8 for 3/4, 1 1/2 for 3/2, extra zeros, simplest-form items), mutation-checked; unit tests for each error rule; e2e: the keypad by tapping alone, with axe.
+
+## LTF-41 Math skills, gates and a check-in
+
+Proposed 2026-10-13. Approach to confirm.
+
+- **What it is.** A dependency graph, to confirm against his worksheets: MF1 multiplication and division facts (chart allowed); MF2 factors and common factors (after MF1); DV1 division with remainders (after MF1); FR1 unit fractions and fractions on a 0 to 1 line; FR2 equivalent fractions (after FR1, MF1); FR3 simplifying fractions (after FR2, MF2); FR4 proper, improper and mixed fractions and converting between them (after FR1, DV1); FR5 multiplying fractions (after FR2, MF1); FR6 dividing fractions (after FR3, FR4, FR5). Mastering what a skill depends on helps weaker students most, and probing that starts low and branches down places an uneven profile well; the best-known prerequisite-graph system did as well as classroom teaching but not better, so the gains still have to come from the teaching ([Fang et al. 2019](https://digitalcommons.memphis.edu/facpubs/7254)).
+- **He sees.** A check-in, not a test: the scouting framing, untimed, easy first, no score shown; it stops after two misses in a row and picks up next time. Skills whose dependencies are not yet mastered show as "coming up" with what opens them, like Lantern Peaks, and a grown-up can open one early.
+- **Build.** A grown-up can enter a start point (for example from a school assessment), so the check-in confirms those skills with about two typed items each instead of testing everything. It starts one step below the target topic and branches down after a miss. A skill passed in the check-in is `placed` (provisional) and confirmed by its first review. When a later skill stalls (two sessions under 60%), a two-item check on its dependencies routes him to the weakest one.
+- **Tests first.** Engine tests for gates, placement, the provisional mark and the stall re-check; e2e: two misses end the check-in kindly, with axe.
+
+## LTF-42 Story or plain numbers
+
+Proposed 2026-10-13. Approach to confirm.
+
+- **What it is.** He picks the setting, and every problem can be read as a short story or as plain numbers. Choice raises motivation and perceived competence, most for children and for choices that do not change the instruction ([Patall, Cooper & Robinson 2008](https://selfdeterminationtheory.org/wp-content/uploads/2019/10/2008_PatallCooperRobinson_PsychBulletin.pdf)); starting concrete and fading to symbols is the route to transfer ([Fyfe et al. 2014](https://doi.org/10.1007/s10648-014-9249-3)).
+- **He sees.** At the start of a session, 2 to 4 settings drawn from his interests and the island he is on; the setting changes only words and pictures. A story/plain switch on every problem; switching never counts as help. Stories are short (a proposed cap of 40 words), with a picture over each quantity, read-aloud, exact quantities, and no sentence without a quantity. Worked examples fade from story to picture to plain numbers, and every skill ends in plain notation.
+- **Build.** Mastery tracks story and plain accuracy separately and needs independent first-try answers in both, so the switch is never a way around word problems. A content check: the quantities in the story equal the item's spec, the word cap holds, and no sentence lacks a quantity.
+- **Tests first.** Engine test: mastery needs both views; the content check with its own unit tests; e2e of the switch, with axe.
+
+## LTF-43 The math help ladder and a choices-first ramp
+
+Proposed 2026-10-13. Approach to confirm.
+
+- **What it is.** One Help button with three steps: "Show choices" (three options, each wrong one built from a named error), then a clue or a smaller step, then the worked answer. An answer after any step counts as supported, not independent. Typed recall is much harder at first (about 55% first-try against 85% with choices in the study above), so a new skill opens with choices shown for its first session, and typed answers take over once first-try accuracy with choices holds at 80%.
+- **Build.** Feedback names the step and what to do next. A wrong answer opens the clue for one more try, as in LTF-38. The guessing check uses reading time plus typing time.
+- **Tests first.** Engine tests for the ramp's rule and for supported against independent answers; first-session accuracy is logged with and without choices.
+
+## LTF-44 What the grown-ups see in math
+
+Proposed 2026-10-13. Approach to confirm.
+
+- **What it is.** A Math tab in the grown-ups' area, read from the event log: each skill on the path to dividing fractions, mastered and passing its reviews; first-try accuracy on new problems in story and plain form (80% is a starting point to tune, not a validated threshold); breaks and guesses (the LTF-38 measures); and how often he picks math on his own. Whether the skills show on paper at school has to be checked outside the app.
+- **Tests first.** Unit tests for each measure from seeded events; e2e of the tab, with axe.
 
 ## LTF-38 Clicking through to the green check
 
@@ -71,6 +130,8 @@ Added 2026-10-13, drafted by a story-ideation pass for DW's review. DW approved 
 
 Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LTF-36 quest lines). Part of LTF-20.
 
+- **Status (2026-10-13).** Built under LTF-20 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene, souvenir and check-ups (12 per island). DW approved it as built on 2026-10-13.
+
 - **Story.** The south sea route goes to Fossil Bay, gray cliffs made of rock layers where Dr. Bell (the fossil expert at the Harbor Town Fossil Museum, already in the bank) is running a dig. The setback is a closed beach: the cliff is wet after a night of rain, so the boat cannot land under it. It suits dinosaurs and mining because the leg is about fossils, rock layers and digging tools, and the postcard ends with a real fossil going into a plaster jacket, as the bank's F2 passage describes.
 - **He sees.**
   - Beat 0: "From the hill on Gull Island, you can see gray cliffs to the south. That is Fossil Bay. The south sea route goes there."
@@ -98,6 +159,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LT
 
 Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LTF-36 quest lines). Part of LTF-20.
 
+- **Status (2026-10-13).** Built under LTF-20 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene, souvenir and check-ups (12 per island). DW approved it as built on 2026-10-13.
+
 - **Story.** The west sea route goes to Reef Island, a ring of coral around a calm lagoon, with Mari, who drives the reef boat (new, needed for the island). The setback is a late boat: the channel through the reef is deep enough only at high tide, so today's crossing moves to 5 PM. It suits ocean and animals because the wait is spent at tide pools and the postcard is coral, a clownfish and turtle tracks.
 - **He sees.**
   - Beat 0: "From the hill on Gull Island, you can see a ring of white waves to the west. That is the reef around Reef Island. The west sea route goes there."
@@ -124,6 +187,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LT
 
 Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LTF-36 quest lines). Part of LTF-20.
 
+- **Status (2026-10-13).** Built under LTF-20 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene, souvenir and check-ups (12 per island). DW approved it as built on 2026-10-13.
+
 - **Story.** The north sea route goes to Star Point, a headland with a white observatory dome and a weather station, run by Dr. Amal (new). The setback is weather: clouds come in from the sea on the first night, so the dome stays shut. It suits space and weather because the wait is spent on a weather balloon launch or a star map, and the clear night brings the Moon, Saturn and the space station.
 - **He sees.**
   - Beat 0: "From the hill on Gull Island, you can see a white dome on a point of land to the north. That is the observatory at Star Point. The north sea route goes there."
@@ -149,6 +214,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LT
 ## LTF-24 Rail Coast: a broken signal
 
 Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LTF-36 quest lines). Part of LTF-20.
+
+- **Status (2026-10-13).** Built under LTF-20 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene, souvenir and check-ups (12 per island). DW approved it as built on 2026-10-13.
 
 - **Story.** The east sea route lands at Pier Station on Rail Coast, where the Coast Line train runs beside the sea to Rail Coast station, with Mr. Haddad, the signal operator (new). The setback is a broken part: a signal at Shell Halt is broken, and trains wait until it is fixed, while a bus runs instead. It suits transport and maps because the plan is read off a message and a line map, and the postcard is a signal box and a map room with every island on the wall.
 - **He sees.**
@@ -266,7 +333,7 @@ Added 2026-10-13, drafted by a story-ideation pass at DW's request ("continue th
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20. Replaces LTF-29: its week with Ranger Tess becomes the first stop (LTF-31), with its beats and the `sapling` souvenir kept. Comes before LTF-27: if the way home is still wanted, its offer moves from the allMet card to the end of this arc, and "Stay with the koalas" becomes "Stay at the sanctuary". This answers LTF-27's open guard ("decide whether the journey should have an end"): the journey continues at the sanctuary.
 
-- **What was built (2026-10-13).** `content/journey.json` has the arc under `arc` (about, five stops, done), transcribed word for word from LTF-31 to LTF-35 and checked against this backlog. After the eighth koala, the story is the arc: `journeyNow` gives the arc's next stop, beat and leg step in place of the journey's, at the journey's pace, while he stays at Bluegum (so his island and check-ups stay Australia's). Each arc stop is reached after a leg, with its postcard scene and souvenir (sapling, keeper's scale, vet's bag, viewing path, koala sign); after Opening Day, a closing card says he is a junior koala keeper and nothing more moves. A pace change mid-arc keeps his place (`repace`), and a learner who had met all eight koalas before the arc existed starts it at its first beat (`arcStart`, once). The map has a Bluegum Koala Sanctuary panel with the five stops (the landmass is too small for markers, the fallback this item named), and the postcards list includes reached arc stops. `npm run check` checks the arc is one line of stops with five beats each. "What do you think?" asks about it once (activity `arc`). Tests: unit (Sunny first, then beat 0; each arrival; done; the start for all-met learners; pace changes, mutation-checked; every souvenir drawn) and an e2e run to the Tree Nursery's postcard, with axe. For DW: LTF-34's Guards say the Opening Day postcard introduces Omar as "a visitor", but the approved postcard line does not; a learner who chose a plan meets him there with no introduction. The text is as approved; say which to change.
+- **What was built (2026-10-13).** `content/journey.json` has the arc under `arc` (about, five stops, done), transcribed word for word from LTF-31 to LTF-35 and checked against this backlog. After the eighth koala, the story is the arc: `journeyNow` gives the arc's next stop, beat and leg step in place of the journey's, at the journey's pace, while he stays at Bluegum (so his island and check-ups stay Australia's). Each arc stop is reached after a leg, with its postcard scene and souvenir (sapling, keeper's scale, vet's bag, viewing path, koala sign); after Opening Day, a closing card says he is a junior koala keeper and nothing more moves. A pace change mid-arc keeps his place (`repace`), and a learner who had met all eight koalas before the arc existed starts it at its first beat (`arcStart`, once). The map has a Bluegum Koala Sanctuary panel with the five stops (the landmass is too small for markers, the fallback this item named), and the postcards list includes reached arc stops. `npm run check` checks the arc is one line of stops with five beats each. "What do you think?" asks about it once (activity `arc`). Tests: unit (Sunny first, then beat 0; each arrival; done; the start for all-met learners; pace changes, mutation-checked; every souvenir drawn) and an e2e run to the Tree Nursery's postcard, with axe. LTF-34's Guards said the postcard introduces Omar as "a visitor", but the approved line did not; DW chose 2026-10-13 to introduce him there ("A visitor, Omar, comes in his wheelchair and sees Matilda in a tree.").
 
 - **Story.** After the eighth koala is met, Ranger Tess asks for help at Bluegum Koala Sanctuary. Five legs follow: planting food trees, learning the keeper's morning round, the vet's check-up day, building a new koala home with a viewing path and signs, and opening day, when a school group and other visitors come. The arc is about caring for the koalas and sharing them with many people; the learner becomes a junior koala keeper at the sanctuary.
 - **He sees.** Stops in order: The Tree Nursery (LTF-31), Junior Keeper Day (LTF-32), The Vet Clinic (LTF-33), The New Koala Home (LTF-34), Opening Day (LTF-35). Start: after he meets Sunny, the eighth koala, the sanctuary card shows the allMet line exactly as now. His next finished session shows beat 0 of the first leg ("On the way to The Tree Nursery") in place of the sanctuary card, with the usual leg dots. Sessions: five legs at the journey pace, so 25 sessions at five a leg (15 at three, 35 at seven), after the eight koala sessions. End: the Opening Day postcard and souvenir, then a closing sanctuary card: "You are a junior koala keeper at Bluegum. The koalas and the visitors are glad you came. You can visit them any time." Finished sessions after that move nothing, as today after allMet, until LTF-27 or a later arc.
@@ -288,6 +355,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20. Replaces LTF-2
 ## LTF-31 The Tree Nursery: planting food trees
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Replaces LTF-29: its beats, pump setback, postcard and `sapling` souvenir are kept, with one plan option changed (see Guards).
+
+- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. Still open: DW's read of every line.
 
 - **Story.** Ranger Tess asks for help this week: Bluegum is planting new eucalyptus trees so the koalas always have the right leaves to eat. The setback is the broken nursery pump, with the new part coming on Thursday, so the young trees get water by hand. The postcard is planting day, and the souvenir is a eucalyptus sapling.
 - **He sees.**
@@ -313,6 +382,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Rep
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-31 and before LTF-27.
 
+- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. Still open: DW's read of every line.
+
 - **Story.** Ranger Tess teaches the keeper's morning round from a chart with four jobs: weigh each koala, clean under the trees, fresh leaves, water. The setback is a very hot day: the koalas rest in the shade, so weighing moves to 7 AM the next day, when it is cool. The postcard is the first full round done alone, and the souvenir is a keeper's scale.
 - **He sees.**
   - Beat 0: "Ranger Tess has a plan for you. Next week, you learn the keeper's morning round. There are four jobs on the chart."
@@ -336,6 +407,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Com
 ## LTF-33 The Vet Clinic: check-up day
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-32 and before LTF-27.
+
+- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. Still open: DW's read of every line.
 
 - **Story.** Every koala at Bluegum gets a check-up with Dr. Reyes, the vet (new character). This week it is Banjo's turn, and the learner rides along with Ranger Tess. The setback is a closed road: workers are fixing the main road to town, so they take River Road or Dr. Reyes comes to the sanctuary in her van. The souvenir is a vet's bag.
 - **He sees.**
@@ -361,6 +434,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Com
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-33 and before LTF-27.
 
+- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. Still open: DW's read of every line.
+
 - **Story.** Bluegum builds a new koala home: more trees, a shade roof, and a viewing path with a ramp so a visitor in a wheelchair can see the koalas too, with signs along it that teach. The setback is a delivery truck that broke down: the boards for the ramp come on Friday, so the signs and the trees come first. The souvenir is the viewing path.
 - **He sees.**
   - Beat 0: "Bluegum is building a new koala home. It will have more trees and a shade roof. A viewing path will go around it."
@@ -368,7 +443,7 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Com
   - Beat 2 (obstacle, `broken`): "The delivery truck broke down on the highway. The boards for the ramp are still on it. The driver says a new truck brings them on Friday." Notice (type `message`, app text, from "Bluegum Timber"): "Our truck broke down today." / "Your boards are safe on it." / "A new truck brings them on Friday." Cope: "When something breaks, the plan waits a few days. There are other jobs to do first." Ask: "What will you do until Friday?" Plan A "Paint the signs for the path" (reply "Good plan. Each sign says one thing about koalas.") → beat 3: "You painted four signs. On Friday the boards came, and the ramp was built." Plan B "Plant the new trees first" (reply "Good plan. The trees need to go in before the path.") → beat 3: "You planted six trees with Ranger Tess. On Friday the boards came, and the ramp was built." Talk: "Ask: the boards were late, so they did other jobs first. What else could they have done?" Smooth: "The boards for the ramp came today. Ranger Tess counts them."
   - Beat 3 (base text): "The ramp is built. Omar, a visitor, tests it in his wheelchair, and it works well." (smooth: "The ramp is built. The path goes all the way around.")
   - Beat 4: "The signs are up along the path. Each sign tells one thing about koalas. One more session, and the new koala home is ready."
-  - Postcard: "The new koala home has tall trees and a shade roof." / "A viewing path with a ramp goes all the way around." / "Omar comes in his wheelchair and sees Matilda in a tree." / "The signs say: Koalas sleep most of the day. Please speak softly." / "Ranger Tess says, \"Now many people can see the koalas.\""
+  - Postcard: "The new koala home has tall trees and a shade roof." / "A viewing path with a ramp goes all the way around." / "A visitor, Omar, comes in his wheelchair and sees Matilda in a tree." (DW 2026-10-13: Omar is introduced here, so every learner meets him) / "The signs say: Koalas sleep most of the day. Please speak softly." / "Ranger Tess says, \"Now many people can see the koalas.\""
   - Souvenir: `viewpath`, "Viewing path" (topic `nature`, stop `habitat`).
 - **School goal.** Main idea: each sign along the path says one main thing about koalas, so a sign is a main idea in one sentence; plan A has him paint them.
 - **Subtasks for story incorporation.**
@@ -384,6 +459,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Com
 ## LTF-35 Opening Day: visitors come
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-34; it is the arc's end, and LTF-27's offer (if approved) follows it.
+
+- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. Still open: DW's read of every line.
 
 - **Story.** The new koala home opens on Saturday, with a school group of 24 children, Omar and his family, and other visitors; the learner tells the children one koala fact he has practiced. The setback is a changed weather report: rain on Saturday morning, so the welcome talk moves under the big tent or into the shed. The postcard is opening day itself, and the souvenir is a koala sign.
 - **He sees.**

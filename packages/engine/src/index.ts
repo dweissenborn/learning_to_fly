@@ -650,5 +650,14 @@ export function minReadMs(item: Item): number {
   return Math.max(1500, text.split(/\s+/).filter(Boolean).length * 100);
 }
 
+// ---------------------------------------------------------------- modules as add-ons (LTF-39, ADR-0003)
+/** A skill's module is its prefix (`math:FR3`); today's reading skills have none, so nothing stored needs migrating. */
+export const moduleOf = (skill: string) => (skill.includes(':') ? skill.slice(0, skill.indexOf(':')) : 'reading');
+/** Finished sessions today, from every module: the day has one budget, so a second module never adds a second session. */
+export function sessionsToday(events: readonly LogEvent[], now = Date.now()) {
+  const today = dayKey(now);
+  return events.filter((e) => e.type === 'session' && e.action === 'finish' && dayKey(e.ts) === today).length;
+}
+
 export * from './activity';
 export * from './fresh';

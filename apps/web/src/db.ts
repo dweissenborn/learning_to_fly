@@ -66,6 +66,10 @@ export interface Settings {
   homeTrip?: { at: number; island?: string; anchor?: { at: number; stop: number; step: number; after: number } };
   /** LTF-27: he chose to stay at the sanctuary for now; the offer stays open. */
   homeStayed?: boolean;
+  /** LTF-39: the module he chose last, marked on the picker so one tap starts it. */
+  lastModule?: string;
+  /** LTF-39: sessions a day across every subject together; unset or 0 is no limit. */
+  perDay?: number;
   /** LTF-36: finished sessions when he first came ashore on each island; its areas open with the sessions after that. */
   islandsSeen?: Record<string, number>;
   /** LTF-38: notice answers faster than reading, set them aside, and stop kindly after two in a row. On unless a grown-up turns it off. */

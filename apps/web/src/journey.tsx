@@ -183,12 +183,13 @@ export function repace(s: Settings, finished: number, legLength: Settings['legLe
 export interface ShownBeat extends Omit<Beat, 'smooth'> { key: string; stop: Stop; chosen?: number }
 function shownBeat(stop: Stop, i: number, s: Settings, from?: string): ShownBeat {
   const path = stop.paths?.find((p) => p.id === s.routes?.[from ?? '']?.to);
-  const b = { ...(path?.beats ?? stop.beats)[i] };
+  const beats = path?.beats ?? stop.beats; // LTF-25: the chosen flight path's own story, setback and plans
+  const b = { ...beats[i] };
   if (from && b.byFrom?.[from]) b.text = b.byFrom[from];
   const guide = GUIDES[s.guide].name;
   const fill = (t: string) => t.replaceAll('{guide}', guide);
   if (!s.setbacks && b.smooth) return { key: `${stop.id}-${i}`, stop, text: fill(b.smooth) };
-  const obstacle = stop.beats.find((x) => x.choice);
+  const obstacle = beats.find((x) => x.choice);
   const chosen = s.journeyChoices[stop.id];
   // Beat 3 tells how his chosen plan worked.
   const text = i === 3 && obstacle?.choice && chosen !== undefined ? obstacle.choice.options[chosen]?.after ?? b.text : b.text;
