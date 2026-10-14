@@ -13,5 +13,5 @@
     "allowImportingTsExtensions": true,
     "types": ["vite/client", "vite-plugin-pwa/client"]
   },
-  "include": ["apps/web/src", "packages/engine/src", "packages/schema/types.ts"]
+  "include": ["apps/web/src", "packages/engine/src", "packages/schema/types.ts", "modules/*/src"]
 }

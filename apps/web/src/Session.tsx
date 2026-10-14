@@ -266,15 +266,17 @@ function ChooseStep({ options, onChoose, guide }: { options: Choice[]; onChoose:
 }
 
 // ---------------------------------------------------------------- finish: name the skill, grow the world, hand over to the adult (R7, R9)
-function Finish({ sid, plan, done, settings, events, progress, before, onExit }: {
+export function Finish({ sid, plan, done, settings, events, progress, before, onExit, module, talk: talkFor }: {
   sid: string; plan: SessionPlan | null; done: { item: Item; phase: Step; r: Result }[]; settings: Settings; events: LogEvent[]; progress: Progress;
   before: { mastered: Set<SkillId>; opened: boolean; finished: number }; onExit: () => void;
+  /** LTF-41: another module's session (math) finishes here too, with its own note for the grown-up. */
+  module?: string; talk?: string;
 }) {
   const logged = useRef(false);
   useEffect(() => {
     if (logged.current) return;
     logged.current = true;
-    log({ type: 'session', session: sid, action: 'finish' });
+    log({ type: 'session', session: sid, action: 'finish', ...(module ? { module } : {}) });
     sfx.finish();
   }, [sid]);
   const [stage, setStage] = useState<'pick' | 'place' | 'done'>('pick');
@@ -345,7 +347,7 @@ function Finish({ sid, plan, done, settings, events, progress, before, onExit }:
   };
   const lastWorld = [...events].reverse().find((e) => e.type === 'world');
   useEffect(() => { if (fresh === 'pending' && lastWorld) setFresh(lastWorld.id); }, [fresh, lastWorld]);
-  const talk = plan ? SKILL[plan.skill].talk : 'Ask: which of today\'s stories was the most interesting? Why?';
+  const talk = talkFor ?? (plan ? SKILL[plan.skill].talk : 'Ask: which of today\'s stories was the most interesting? Why?');
 
   if (stage === 'place') return <div className="stack">
     <div className="guide-row"><Guide id={settings.guide} size={64} /><div className="bubble">Tap a dotted spot to put your {pieceById.get(piece!)?.name.toLowerCase()} there. Or I can choose a spot.</div></div>

@@ -15,6 +15,7 @@ import { Guide, GUIDES } from './art';
 import { Btn, Seg, Toggle } from './ui';
 import { AMOUNT, FEATURES, LIKE, opinions } from './features';
 import { canSpeak, pickVoice, speak, voices } from './media';
+import { MODULES } from './modules';
 
 type Tab = 'overview' | 'skills' | 'activity' | 'today' | 'content' | 'settings' | 'data';
 const STATUS_CLASS = { 'not started': '', learning: 'learning', mastered: 'mastered', 'review due': 'due' } as const;
@@ -46,7 +47,7 @@ export function Adult({ settings, events, progress, onExit, onRescout, onGrammar
       {tab === 'skills' && <Skills progress={progress} events={events} />}
       {tab === 'activity' && <Activity events={events} settings={settings} progress={progress} />}
       {tab === 'today' && <TodayAdmin settings={settings} events={events} />}
-      {tab === 'content' && <Library settings={settings} />}
+      {tab === 'content' && <><Library settings={settings} />{MODULES.filter((m) => m.Preview).map((m) => { const Preview = m.Preview!; return <Preview key={m.id} />; })}</>}
       {tab === 'settings' && <SettingsTab settings={settings} progress={progress} onRescout={onRescout} onGrammar={onGrammar} />}
       {tab === 'data' && <DataTab name={settings.name} onReport={() => setReport(true)} />}
     </main>
@@ -582,6 +583,7 @@ function SettingsTab({ settings, progress, onRescout, onGrammar }: { settings: S
       <p className="tagline">The journey to the koalas moves with finished sessions, never with scores. Five a leg reaches Australia at about session 25, about where studies measured gains.</p>
       <Toggle on={settings.setbacks} onChange={(setbacks) => saveSettings({ setbacks })}>Story setbacks (a storm, a blocked path, a broken part)</Toggle>
       <p className="tagline">Setbacks model coping with change: each one is explained, he hears a calm coping line, and he picks a plan. Nothing is lost. Turn them off for a smoother story.</p>
+      {MODULES.filter((m) => m.SettingsPanel).map((m) => { const Panel = m.SettingsPanel!; return <Panel key={m.id} />; })}
       <Seg label="Sessions a day, all subjects together" value={settings.perDay ?? 0} options={[[0, 'No limit'], [1, '1'], [2, '2'], [3, '3']]} onChange={(perDay) => saveSettings({ perDay })} />
       <p className="tagline">One budget for the day, so another subject never adds a session on top. Telling about today is not counted.</p>
       <Toggle on={settings.guessCheck !== false} onChange={(guessCheck) => saveSettings({ guessCheck })}>Notice guesses faster than reading, set them aside, and stop kindly after two in a row</Toggle>

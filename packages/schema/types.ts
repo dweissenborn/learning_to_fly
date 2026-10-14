@@ -427,7 +427,10 @@ export interface Model {
  */
 export type LogEvent =
   AnswerEvent | SessionEvent | PlacementEvent | WorldEvent | RecountEvent | RealWorldEvent | ActivityEvent;
-export type Phase = 'warmup' | 'together' | 'yourturn' | 'placement' | 'gatecheck' | 'checkup';
+/**
+ * recheck: LTF-41, two math problems on a skill another one rests on, after that one stalled.
+ */
+export type Phase = 'warmup' | 'together' | 'yourturn' | 'placement' | 'gatecheck' | 'checkup' | 'recheck';
 export type Strand = 'functional' | 'narrative' | 'philosophical';
 
 export interface AnswerEvent {

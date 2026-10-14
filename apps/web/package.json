@@ -16,7 +16,8 @@
     "dexie-react-hooks": "^4.4.0",
     "react": "^19.3.0",
     "react-aria-components": "^1.22.1",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "@wayfinder/math": "*"
   },
   "devDependencies": {
     "@types/react": "^19.2.0",
@@ -24,5 +25,8 @@
     "@vitejs/plugin-react": "^6.1.2",
     "vite": "^8.3.4",
     "vite-plugin-pwa": "^2.0.0"
+  },
+  "exports": {
+    "./host": "./src/host.ts"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "name": "@wayfinder/math",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "description": "Math for Learning to Fly, as a functional extension: its own activity on the core's settings, sync, event log, journey and rewards (ADR-0003).",
+  "dependencies": {
+    "@wayfinder/engine": "*",
+    "@wayfinder/schema": "*"
+  },
+  "peerDependencies": {
+    "@wayfinder/web": "*",
+    "react": "*",
+    "react-aria-components": "*"
+  }
+}

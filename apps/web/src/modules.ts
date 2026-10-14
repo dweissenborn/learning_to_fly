@@ -1,18 +1,12 @@
-// LTF-39 (ADR-0003): modules as add-ons. A content module brings skills and uses the core's session loop, rules, journey and
-// grown-ups' area; a function module brings its own activity. Reading and Today are modules like any other; math joins
-// with its skills (LTF-41). Each module's memory: its events (with `module`), notes, and a settings document `settings:<id>`.
-export interface ModuleDef {
-  id: string;
-  kind: 'content' | 'function';
-  /** What the picker card says. */
-  title: string;
-  icon: string;
-  /** Where its memory lives: on this device only, or in the family cloud copy too. */
-  memory: 'none' | 'device' | 'cloud';
-  /** The screen it opens. */
-  screen: 'session' | 'today';
-}
+// LTF-39 (ADR-0003): modules as add-ons. Reading and Today are built into the core; extensions such as math live in their
+// own packages under modules/ and plug in here through their manifest only (see host.ts for what they may use).
+import math from '@wayfinder/math';
+import type { ModuleManifest } from './host';
+
+/** A core module opens one of the app's own screens; an extension brings its Screen. */
+export type ModuleDef = ModuleManifest & { screen?: 'session' | 'today' };
 export const MODULES: readonly ModuleDef[] = [
-  { id: 'reading', kind: 'content', title: 'Start reading', icon: '📖', memory: 'cloud', screen: 'session' },
+  { id: 'reading', kind: 'content', title: 'Start reading', icon: '📖', memory: 'cloud', sessions: true, screen: 'session' },
   { id: 'today', kind: 'function', title: 'Tell about today', icon: '📅', memory: 'cloud', screen: 'today' },
+  math,
 ];

@@ -139,6 +139,15 @@ export const addNote = (n: Omit<Note, 'id' | 'ts'>) => db.transaction('rw', db.n
 });
 export const updateNote = (id: string, patch: Partial<Note>) => db.transaction('rw', db.notes, db.outbox, async () => { await db.notes.update(id, patch); await mark([`note:${id}`]); });
 export const deleteNote = (id: string) => db.transaction('rw', db.notes, db.outbox, async () => { await db.notes.delete(id); await mark([`note:${id}`]); });
+export const saveModuleSettings = (module: string, patch: Record<string, unknown>) => db.transaction('rw', db.kv, db.outbox, async () => {
+  const key = `settings:${module}`;
+  const cur = ((await db.kv.get(key))?.value ?? {}) as Record<string, unknown>;
+  await db.kv.put({ key, value: { ...cur, ...patch } });
+  await mark([key]);
+});
+export const useModuleSettings = <T,>(module: string) => useLiveQuery(async () => ((await db.kv.get(`settings:${module}`))?.value ?? {}) as T, [module]);
+/** Every module's own settings document, by module id. */
+export const useAllModuleSettings = () => useLiveQuery(async () => Object.fromEntries((await db.kv.where('key').startsWith('settings:').toArray()).map((r) => [r.key.slice('settings:'.length), r.value as Record<string, unknown>])), []);
 export const saveSettings = (patch: Partial<Settings>) => db.transaction('rw', db.kv, db.outbox, async () => {
   const cur = ((await db.kv.get('settings'))?.value ?? {}) as Partial<Settings>;
   await db.kv.put({ key: 'settings', value: { ...cur, ...patch } });

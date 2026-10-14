@@ -4,7 +4,7 @@ import { flushSync } from 'react-dom';
 import { Dialog, Heading, Modal, ModalOverlay, ToggleButton } from 'react-aria-components';
 import type { SkillId, Strand } from '@wayfinder/schema';
 import { dayKey, flightPeak, flightPoints, focusSkill, gate, GEAR, gearState, sessionsToday, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
-import { applyRetention, saveSettings, useEvents, useProgress, useSettings, type Settings } from './db';
+import { applyRetention, saveSettings, useAllModuleSettings, useEvents, useProgress, useSettings, type Settings } from './db';
 import { SKILL, STRAND } from './content';
 import { BrandMark, Guide, Island, islandOf, ISLANDS, pieceById } from './art';
 import { Session, litFrom, placedFrom } from './Session';
@@ -22,7 +22,7 @@ import { MODULES } from './modules';
 import { maybeSwitch, startUpdates } from './update';
 import { Lounge } from './Lounge';
 
-type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'regrammar' | 'map' | 'lounge';
+type Screen = 'home' | 'session' | 'today' | 'adult' | 'rescout' | 'regrammar' | 'map' | 'lounge' | 'module';
 
 function useApplySettings(s: Settings | undefined) {
   useEffect(() => {
@@ -63,6 +63,8 @@ export function App() {
   const [asked, setAsked] = useState<string>(); // the one "What do you think?" card for this visit
   const [visit, setVisit] = useState<string | null>(null); // LTF-36: an earlier island he is looking at
   const [breakWhy, setBreakWhy] = useState<'break' | 'rapid'>('break'); // LTF-38
+  const own = useAllModuleSettings(); // each module's own settings (LTF-39)
+  const [ext, setExt] = useState<string | null>(null); // the extension module on screen
   useApplySettings(settings);
   // New versions switch in only on the home screen with nothing open, or while the app is in the background.
   const safe = useRef(false);
@@ -98,6 +100,7 @@ export function App() {
   if (!settings.onboarded || screen === 'rescout' || screen === 'regrammar')
     return <div className="shell"><Onboarding settings={settings} startAt={screen === 'rescout' ? 'scout' : screen === 'regrammar' ? 'grammar' : 'hello'} onDone={() => go('home')} /></div>;
   if (screen === 'session') return <div className="shell"><Session settings={settings} events={events} progress={progress} onExit={() => go('home')} onBreak={(why) => { setBreakWhy(why); go('lounge'); }} /></div>;
+  if (screen === 'module') { const Screen = MODULES.find((m) => m.id === ext)?.Screen; if (Screen) return <div className="shell"><Screen settings={settings} events={events} progress={progress} onExit={() => go('home')} onBreak={(why) => { setBreakWhy(why); go('lounge'); }} /></div>; }
   if (screen === 'lounge') return <div className="shell"><Lounge settings={settings} events={events} why={breakWhy} onJourney={() => go('map')} onHome={() => go('home')} /></div>;
   if (screen === 'today') return <div className="shell"><Today settings={settings} progress={progress} events={events} onExit={() => go('home')} /></div>;
   if (screen === 'map') return <div className="shell"><JourneyMap settings={settings} progress={progress} onExit={() => go('home')} /></div>;
@@ -117,6 +120,7 @@ export function App() {
   const hello = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
   const jn = journeyNow(finishedCount(progress), settings);
   const budgetUsed = !!settings.perDay && sessionsToday(events) >= settings.perDay; // LTF-39: across every subject
+  const on = (m: (typeof MODULES)[number]) => !m.enabled || m.enabled(own?.[m.id] ?? {}); // a grown-up turned it on
   // LTF-36: the island he is on, or an earlier one he chose to look at.
   const isles = islandsReached(jn);
   const atIsle = islandOf(jn.here.id);
@@ -154,9 +158,9 @@ export function App() {
           {/* LTF-39: one picker, always here: his last choice is marked so one tap starts it; the day has one budget. */}
           <section className="picker stack" aria-labelledby="pick-h">
             <h2 id="pick-h" className="pick-h">What would you like to do?</h2>
-            {MODULES.map((m) => { const last = (settings.lastModule ?? 'reading') === m.id, full = m.kind === 'content' && budgetUsed;
+            {MODULES.filter(on).map((m) => { const last = (settings.lastModule ?? 'reading') === m.id, full = !!m.sessions && budgetUsed;
               return <Btn key={m.id} className={`big ${last && !full ? 'primary' : m.id === 'today' ? 'nar' : ''}`} autoFocus={last && !full} isDisabled={full}
-                onPress={() => { if (!last) void saveSettings({ lastModule: m.id }); go(m.screen); }}>
+                onPress={() => { if (!last) void saveSettings({ lastModule: m.id }); if (m.screen) go(m.screen); else { setExt(m.id); go('module'); } }}>
                 <span className="ico" aria-hidden>{m.icon}</span>{m.title}{last && settings.lastModule && <span className="pick-last"> · Last time</span>}</Btn>; })}
             {budgetUsed && <p className="tagline" style={{ margin: 0 }}>That's today's session done. You can tell about today, look at your journey, or rest. More tomorrow.</p>}
           </section>
@@ -166,7 +170,7 @@ export function App() {
           <Btn className="big kit" onPress={() => setDialog('kit')}><span className="ico" aria-hidden>🎒</span>Flight kit · {gearState(flightPoints(events), flightPeak(events)).owned.length} of {GEAR.length}</Btn>
         </div>
         {newThing && <NewThing key={newThing.id} feature={newThing} answered={opinions(events).has(newThing.id)} onShown={setAsked} />}
-        <section className="paths" aria-label="Your three paths">
+        <section className="paths" aria-label="Your paths">
           {strands.map((s) => {
             const f = focusSkill(progress, s);
             const closed = s === 'philosophical' && !g.available;
@@ -181,6 +185,7 @@ export function App() {
               </div>
             </div>;
           })}
+          {MODULES.filter((m) => m.HomePath && on(m)).map((m) => { const Path = m.HomePath!; return <Path key={m.id} events={events} />; })}
         </section>
       </aside>
     </main>

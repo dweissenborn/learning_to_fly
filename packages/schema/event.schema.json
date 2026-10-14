@@ -35,8 +35,10 @@
         "yourturn",
         "placement",
         "gatecheck",
-        "checkup"
-      ]
+        "checkup",
+        "recheck"
+      ],
+      "description": "recheck: LTF-41, two math problems on a skill another one rests on, after that one stalled."
     },
     "Strand": {
       "type": "string",

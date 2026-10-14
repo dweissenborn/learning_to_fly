@@ -1,0 +1,22 @@
+/* Math's own look (ADR-0003: an extension brings its styles). Its colour follows every theme, like the reading strands. */
+:root { --math: oklch(62% 0.1 190); --math-deep: oklch(40% 0.08 195); --math-soft: oklch(94% 0.035 190); }
+:root[data-theme='dark'] { --math-soft: oklch(34% 0.045 195); --math-deep: oklch(84% 0.08 190); }
+:root[data-theme='calm'] { --math: oklch(62% 0.06 190); }
+:root[data-theme='contrast'] { --math-deep: #004a55; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) { --math-soft: oklch(34% 0.045 195); --math-deep: oklch(84% 0.08 190); } }
+.strand-math { --s: var(--math); --s-deep: var(--math-deep); --s-soft: var(--math-soft); }
+
+/* LTF-40: the math keypad. Big keys, tapping only; the answer shows its shape. */
+.math-prompt { font-size: 1.6rem; font-weight: 800; margin: 0; letter-spacing: 0.02em; }
+.kp-answer { display: flex; align-items: center; gap: 0.6rem; justify-content: center; min-height: 6rem; }
+.kp-frac { display: inline-grid; justify-items: center; gap: 0.25rem; }
+.kp-bar { width: 4.2rem; height: 3px; background: var(--ink); border-radius: 2px; }
+.kp-box { min-width: 4.2rem; min-height: 2.8rem; font: inherit; font-size: 1.5rem; font-weight: 800; border-radius: 10px; border: 3px solid var(--line, #d9d2c4); background: var(--card, #fffdf8); color: var(--ink); cursor: pointer; }
+.kp-box[data-selected] { border-color: var(--s, #2f6f99); box-shadow: 0 0 0 3px color-mix(in srgb, var(--s, #2f6f99) 25%, transparent); }
+.kp-empty { color: var(--muted, #5b6672); }
+.kp-r { font-size: 1.4rem; font-weight: 800; }
+.kp-keys { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; max-width: 20rem; width: 100%; margin: 0 auto; }
+.kp-key { min-height: 3.4rem; font-size: 1.4rem; font-weight: 800; }
+.kp-box.optional:not([data-selected]) { border-style: dashed; }
+.frac-bar { width: min(100%, 28rem); height: auto; display: block; }
+.math-steps { margin: 0; padding-left: 1.4rem; display: grid; gap: 0.4rem; font-size: 1.1rem; }

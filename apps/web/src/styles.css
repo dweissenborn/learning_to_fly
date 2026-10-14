@@ -563,3 +563,7 @@ button.pbox { cursor: pointer; }
 .picker { gap: 0.6rem; }
 .pick-h { margin: 0; font-size: 1.15rem; }
 .pick-last { font-size: 0.85em; font-weight: 600; opacity: 0.85; }
+
+
+/* A path step that waits for what it rests on. */
+.stone.later { opacity: 0.45; border-style: dashed; }

@@ -72,11 +72,12 @@ Typed answers will be scored by a model only after it passes a test set (LTF-17,
 | `apps/web/` | The React PWA |
 | `packages/engine/` | The rules: mastery, review dates, the gate, item choice, placement. Pure TypeScript with tests. |
 | `packages/schema/` | JSON Schema for the content bank and the event log, the generated types, and the content validator |
+| `modules/` | Extension modules, each its own workspace package with its engine, screens, styles and tests. `modules/math/` is math. The app knows a module only by its manifest (`apps/web/src/modules.ts`), and a module uses only the app's host surface (`apps/web/src/host.ts`); `modules/boundary.test.ts` checks both. |
 | `content/bank/` | 18 skill files: 895 passages, 2,555 practice items, 9 inference-check items, 18 worked examples |
 | `content/` | Skill wording, the scouting check, and the vocabulary for the daily recount |
 | `api/` | The cloud copy's API: managed Azure Functions over Cosmos DB, with tests |
 | `pipeline/` | The reading-level check |
-| `e2e/` | End-to-end and accessibility tests |
+| `e2e/` | End-to-end and accessibility tests for the app, and the helpers that each module's own end-to-end tests (`modules/*/e2e/`) share |
 | `site/` | The public research page, published to GitHub Pages by `.github/workflows/pages.yml` |
 
 ## Hosting
