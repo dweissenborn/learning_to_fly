@@ -151,6 +151,10 @@
           "type": "integer",
           "description": "LTF-38: flight points this answer earned, saved when it was given (4 right on the first tap, 2 with the clue, -1 when shown, 0 for a fast guess). Older answers without it earned 2."
         },
+        "asked": {
+          "type": "boolean",
+          "description": "LTF-49: he said he was not sure and was asked to get a grown-up's help, so the answer counts as helped, like the clue."
+        },
         "module": {
           "type": "string",
           "pattern": "^[a-z][a-z0-9-]{0,31}$",
@@ -452,9 +456,10 @@
             "route",
             "daytrip",
             "arc",
-            "home"
+            "home",
+            "unsure"
           ],
-          "description": "step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point (no longer given since LTF-38). opinion: his answer on a 'What do you think?' card. word-help: he tapped a word for its meaning (LTF-04). word-check: he answered the warm-up's word for today. who-help: he tapped a dotted pronoun to see who it means (LTF-03). route: he chose a sea route at a fork; item is the island (LTF-20). daytrip: he opened a reached island's day trip; item is the stop (LTF-26). arc: the koala keeper arc began after the eighth koala (LTF-30). home: he chose to fly home after Opening Day (LTF-27)."
+          "description": "step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point (no longer given since LTF-38). opinion: his answer on a 'What do you think?' card. word-help: he tapped a word for its meaning (LTF-04). word-check: he answered the warm-up's word for today. who-help: he tapped a dotted pronoun to see who it means (LTF-03). route: he chose a sea route at a fork; item is the island (LTF-20). daytrip: he opened a reached island's day trip; item is the stop (LTF-26). arc: the koala keeper arc began after the eighth koala (LTF-30). home: he chose to fly home after Opening Day (LTF-27). unsure: he pressed \"I'm not sure\" on a question; item is the question (LTF-49)."
         },
         "step": {
           "type": "string",

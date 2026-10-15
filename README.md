@@ -10,11 +10,12 @@ The learner starts on Home Island and builds it up: each finished session adds o
 - **Story Woods** is reading to follow a story: who, where and when, order, causes, pronouns, feelings, main idea.
 - **Lantern Peaks** is reading to think about life. It stays "coming up" until the gate in the plan opens.
 
-Every finished session also moves the learner along a journey: the ferry to Gull Island, Windy Cape, Cloud Hill Airfield, take-off in a small red plane called the Kookaburra, and finally Australia to visit the koalas. Small clues appear on the island and after each session. Along the way there are setbacks: a storm, a blocked path, a broken propeller, strong winds. Each is explained, comes with a calm coping line and a choice of plan, and never costs anything. The journey moves with finished sessions, never with scores; a grown-up can set its pace or turn setbacks off.
+Every finished session also moves the learner along a journey: the ferry to Gull Island, Windy Cape, Cloud Hill Airfield, take-off in a small red plane called the Kookaburra, and finally Australia to visit the koalas. Small clues appear on the island and after each session. Each island on the way is its own place, with its own shape, names for its parts, a quest shown as numbered stones on its map, and a keepsake to take home. Along the way there are setbacks: a storm, a blocked path, a broken propeller, strong winds. Each is explained, comes with a calm coping line and a choice of plan, and never costs anything. The journey moves with finished sessions, never with scores; a grown-up can set its pace or turn setbacks off.
 
 Pacing follows the learner, who is quick once he sees what a task asks:
 
-- **Harder texts are earned.** Each skill has five text levels. Two first-try answers in a row move him up a level; two misses step him down. Levels 4 and 5 (longer, multi-paragraph, up to about grade 8) appear only once he climbs to them.
+- **Harder texts are earned.** Each skill has five text levels. Three first-try answers in a row move him up a level; a miss steps him down, so he settles where he gets about four in five right. Levels 4 and 5 (longer, multi-paragraph, up to about grade 8) appear only once he climbs to them.
+- **Help from a person.** An "I'm not sure" button tells him to ask a grown-up (a name the grown-ups can set), and the answer counts as helped.
 - **No re-teaching.** The worked example shows only until he has solved an item on that skill himself. Guided practice drops out once he works the skill independently, and he gets more of his own items instead.
 - **Fast track.** One flawless session (with a new format and a level 3 or harder text) can master a skill. Reviews at 3, 7 and 21 days still check that it lasts. An adult can turn this off.
 

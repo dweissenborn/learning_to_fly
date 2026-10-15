@@ -13,7 +13,7 @@ import { Onboarding, ComfortPanel } from './Onboarding';
 import { Adult } from './Adult';
 import { Btn, NewThing } from './ui';
 import { FEATURES, nextFeature, opinions } from './features';
-import { arcStart, finishedCount, forkMigration, islandArrival, islandAreas, islandsReached, IslandQuest, journeyNow, JourneyMap, LegDots, JOURNEY } from './journey';
+import { arcStart, finishedCount, forkMigration, islandArrival, islandsReached, IslandQuest, islandView, journeyNow, JourneyMap, Keepsakes, LegDots, JOURNEY, questDone } from './journey';
 import { setSound, setVoice } from './media';
 import { autoSave, isFamily, useCloudSync } from './cloud';
 import { WhoIsLearning } from './CloudScreens';
@@ -125,8 +125,11 @@ export function App() {
   const isles = islandsReached(jn);
   const atIsle = islandOf(jn.here.id);
   const isle = visit && isles.includes(visit) ? visit : atIsle;
-  const view = islandAreas(isle, jn, settings, lit);
-  const placed = placedFrom(events).filter((p) => p.island === isle);
+  const allPlaced = placedFrom(events);
+  const builtOn = (id: string) => new Set(allPlaced.filter((p) => p.island === id).map((p) => p.piece));
+  const view = islandView(isle, jn, settings, lit, builtOn(isle));
+  const placed = allPlaced.filter((p) => p.island === isle);
+  const keepsakes = isle === 'home' ? isles.filter((id) => ISLANDS[id].keepsake).map((id) => ({ def: ISLANDS[id], done: questDone(islandView(id, jn, settings, lit, builtOn(id)).state) })) : [];
   const lastPiece = placed.at(-1);
   const story = jn.fork ? (jn.fork.kind === 'path' ? 'Captain Ada has two flight paths to Australia. Open My journey to choose one.'
     : jn.fork.kind === 'home' ? "Captain Ada's boat can take you to one more island on the way home. Open My journey to choose it." : `Sea routes leave ${jn.here.name}. Open My journey to choose which island to sail to.`)
@@ -146,11 +149,12 @@ export function App() {
       <div className="stack">
         {isles.length > 1 && <div className="isle-switch" role="group" aria-label="Your islands">{isles.map((id) =>
           <ToggleButton key={id} className="btn small" isSelected={id === isle} onChange={() => setVisit(id === atIsle ? null : id)}>{ISLANDS[id].name}</ToggleButton>)}</div>}
-        <Island placed={placed} lit={lit} here={here} peaksOpen={g.available || g.opened} stage={jn.stop} island={view.def} areas={view.open} />
+        <Island placed={placed} lit={lit} here={here} peaksOpen={g.available || g.opened} stage={jn.stop} island={view.def} state={view.state} />
         <p className="muted" style={{ textAlign: 'center', margin: 0 }}>
           {placed.length ? `${isle === 'home' ? 'Your island' : view.def.name} has ${placed.length} ${placed.length === 1 ? 'thing' : 'things'} you added. The newest is the ${pieceById.get(lastPiece!.piece)?.name.toLowerCase()}.` : `Finish a session to add your first thing to ${isle === 'home' ? 'the island' : view.def.name}.`}
         </p>
-        {view.def.areas.length > 0 && <IslandQuest def={view.def} open={view.open} current={view.current} />}
+        {view.def.steps.length > 0 && <IslandQuest def={view.def} state={view.state} current={view.current} />}
+        {keepsakes.length > 0 && <Keepsakes items={keepsakes} />}
       </div>
       <aside className="side">
         <div className="guide-row"><Guide id={settings.guide} size={76} mood="happy" /><div className="bubble">{say}</div></div>
@@ -177,7 +181,7 @@ export function App() {
             return <div key={s} className={`path strand-${s}`}>
               <span className="pico" aria-hidden>{STRAND[s].icon}</span>
               <div>
-                <div className="pname">{STRAND[s].region}{closed ? ' · coming up' : ''}</div>
+                <div className="pname">{STRAND[s].region}{closed ? ' · coming up' : ''}{isle !== 'home' && <span className="muted"> · {view.def.names[s === 'functional' ? 'town' : s === 'narrative' ? 'forest' : 'peaks']} here</span>}</div>
                 <div className="stones" role="img" aria-label={`${lit[s].filter(Boolean).length} of 6 steps done`}>
                   {lit[s].map((on, i) => <span key={i} className={`stone ${on ? 'lit' : ''} ${here[s] === i ? 'here' : ''}`} aria-hidden>{i + 1}</span>)}
                 </div>

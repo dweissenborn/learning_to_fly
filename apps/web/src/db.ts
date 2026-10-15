@@ -76,6 +76,8 @@ export interface Settings {
   guessCheck?: boolean;
   /** LTF-38: end sessions on his next first-tap success after this many minutes. Off when unset. */
   endAt?: number;
+  /** LTF-49: who "I'm not sure" tells him to ask, for example "Dad". "a grown-up" when unset. */
+  helper?: string;
 }
 
 export const DEFAULTS: Settings = {

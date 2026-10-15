@@ -490,6 +490,10 @@ export interface AnswerEvent {
    */
   points?: number;
   /**
+   * LTF-49: he said he was not sure and was asked to get a grown-up's help, so the answer counts as helped, like the clue.
+   */
+  asked?: boolean;
+  /**
    * LTF-39: the module this belongs to; left out for reading.
    */
   module?: string;
@@ -607,7 +611,7 @@ export interface ActivityEvent {
   type: 'activity';
   session: string;
   /**
-   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point (no longer given since LTF-38). opinion: his answer on a 'What do you think?' card. word-help: he tapped a word for its meaning (LTF-04). word-check: he answered the warm-up's word for today. who-help: he tapped a dotted pronoun to see who it means (LTF-03). route: he chose a sea route at a fork; item is the island (LTF-20). daytrip: he opened a reached island's day trip; item is the stop (LTF-26). arc: the koala keeper arc began after the eighth koala (LTF-30). home: he chose to fly home after Opening Day (LTF-27).
+   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point (no longer given since LTF-38). opinion: his answer on a 'What do you think?' card. word-help: he tapped a word for its meaning (LTF-04). word-check: he answered the warm-up's word for today. who-help: he tapped a dotted pronoun to see who it means (LTF-03). route: he chose a sea route at a fork; item is the island (LTF-20). daytrip: he opened a reached island's day trip; item is the stop (LTF-26). arc: the koala keeper arc began after the eighth koala (LTF-30). home: he chose to fly home after Opening Day (LTF-27). unsure: he pressed "I'm not sure" on a question; item is the question (LTF-49).
    */
   kind:
     | 'step'
@@ -623,7 +627,8 @@ export interface ActivityEvent {
     | 'route'
     | 'daytrip'
     | 'arc'
-    | 'home';
+    | 'home'
+    | 'unsure';
   step?: 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish' | 'checkup';
   item?: string;
   /**

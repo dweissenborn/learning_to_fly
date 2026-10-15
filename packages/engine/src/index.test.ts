@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Item, LogEvent, Passage, SkillBank, SkillId } from '@wayfinder/schema';
 import {
-  buildPool, choices, derive, errorPatterns, tagAccuracy, journeyPosition, journeyRoute, forkOptions, routePosition, pastFork, planWord, planCheckup, checkupDue, checkupResults, levelFor, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, grammarSet, planGateCheck, planSession,
+  buildPool, choices, derive, errorPatterns, tagAccuracy, journeyPosition, journeyRoute, forkOptions, routePosition, pastFork, planWord, planCheckup, checkupDue, checkupResults, levelFor, levelPeak, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, grammarSet, planGateCheck, planSession,
 } from './index';
 
 const DAY = 86_400_000;
@@ -30,6 +30,14 @@ describe('mastery rule', () => {
     const sameDay = [...session(T0, 'N1', [true, true, true, true]), ...session(T0 + 3600_000, 'N1', [true, true, true, true], { transfer: true })];
     expect(derive(sameDay).skills.N1.status).toBe('learning');
     expect(derive(masterOn('N1', T0)).skills.N1.status).toBe('mastered');
+  });
+
+  it('counts the last answer even when it shares a millisecond with the finish, stored in either order', () => {
+    const ev = session(T0, 'N1', [true, true, false, true]);
+    const fin = ev.at(-1)!, last = ev.at(-2)!;
+    const finishFirst = [...ev.slice(0, -2), { ...fin, ts: last.ts }, last]; // as the app logs them; storage order is by id
+    expect(derive(finishFirst).skills.N1.tallies.at(-1)).toMatchObject({ correct: 3, total: 4 });
+    expect(derive(finishFirst).sessions[0]).toMatchObject({ finished: true });
   });
 
   it('needs 80% across the two sessions', () => {
@@ -429,13 +437,20 @@ describe('pacing for a learner who locks skills in quickly', () => {
     ];
   }
 
-  it('climbs a level after two right in a row, and steps down after two misses', () => {
+  it('climbs a level after three right in a row, and steps down after a miss, so he stays near 80% right (DW 2026-10-14)', () => {
     const at = (ev: LogEvent[]) => levelFor(derive(ev).skills.N1, pool);
+    const right = (level: number, n = 3): [number, boolean][] => Array.from({ length: n }, () => [level, true]);
     expect(at([])).toBe(1);
-    expect(at(run(T0, [[1, true], [1, true]]))).toBe(2);
-    expect(at(run(T0, [[1, true], [1, true], [2, true], [2, true], [3, true], [3, true], [4, true], [4, true]]))).toBe(5);
-    expect(at(run(T0, [[1, true], [1, true], [2, false], [2, false]]))).toBe(1);
-    expect(at(run(T0, [[1, true], [1, true], [1, false], [1, false]]))).toBe(2); // misses on easier texts do not count
+    expect(at(run(T0, right(1, 2)))).toBe(1);
+    expect(at(run(T0, right(1)))).toBe(2);
+    expect(at(run(T0, [...right(1), ...right(2), ...right(3), ...right(4)]))).toBe(5);
+    expect(at(run(T0, [...right(1), [2, false]]))).toBe(1);
+    expect(at(run(T0, [...right(1), [2, true], [2, false], [2, true], [2, true]]))).toBe(1); // a miss breaks the run
+    expect(at(run(T0, [...right(1), [1, false], [1, false]]))).toBe(2); // misses on easier texts do not count
+    // The highest level he has reached stays, so climbing back to it is not a new unlock.
+    const bounce = derive(run(T0, [...right(1), ...right(2), [3, false], ...right(2)])).skills.N1;
+    expect([levelFor(bounce, pool), levelPeak(bounce, pool)]).toEqual([3, 3]);
+    expect(levelPeak(derive(run(T0, [...right(1), ...right(2), [3, false]])).skills.N1, pool)).toBe(3);
   });
 
   it('never serves a harder level than he has reached, and serves his own level first', () => {
@@ -475,7 +490,7 @@ describe('pacing for a learner who locks skills in quickly', () => {
     const missedScout = derive([{ id: id(), ts: T0, type: 'answer', session: 'placement', item: 'i0', skill: 'N1', phase: 'placement', correct: false, hint: 0, tries: 1, ms: 1, format: 'tap' }]);
     expect(planSession(missedScout, ctx(), 'narrative', T0 + DAY, 4).skipWatch).toBe(false);
 
-    const independent = derive(run(T0, [[1, true], [1, true], [2, true], [2, false], [3, true]]));
+    const independent = derive(run(T0, [[1, true], [1, true], [1, true], [2, true], [2, true], [2, true], [3, true]]));
     const p2 = planSession(independent, ctx(), 'narrative', T0 + DAY, 4);
     expect(p2.skipTogether).toBe(true);
     expect(p2.together).toHaveLength(0);

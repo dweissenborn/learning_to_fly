@@ -15,8 +15,8 @@ export const RULES = {
   philosophicalOneIn: 4, // at most one session in four
   neutralTopicShare: 0.2, // share of picks that ignore interests, so the interest effect can be measured (R8)
   maxLevel: 5, // levels 4 and 5 are harder texts, reached only by climbing the staircase
-  levelUpStreak: 2, // first-try answers in a row at his level that move him up a level
-  levelDownMisses: 2, // misses in a row at his level that move him down a level
+  levelUpStreak: 3, // first-try answers in a row at his level that move him up a level (with one miss down, he settles near 80% right; DW 2026-10-14)
+  levelDownMisses: 1, // misses in a row at his level that move him down a level
   fastTrackMin: 4, // fast track: this many your-turn answers in one session, all right first time,
   fastTrackLevel: 3, // including a new-format item and one at this level or harder
 } as const;
@@ -123,7 +123,10 @@ export function derive(events: readonly LogEvent[], opts: { fastTrack?: boolean 
     open = null;
   };
 
-  for (const e of [...events].sort((a, b) => a.ts - b.ts)) {
+  // A session's last answer and its finish are logged in the same millisecond, and storage returns them in id order:
+  // within one millisecond a session starts first and ends last, so that answer always counts.
+  const rank = (e: LogEvent) => (e.type !== 'session' ? 0 : e.action === 'start' ? -1 : 1);
+  for (const e of [...events].sort((a, b) => a.ts - b.ts || rank(a) - rank(b))) {
     if (e.type === 'placement') {
       for (const strand of ['functional', 'narrative'] as const)
         for (const id of skillsOf(strand)) if (stepOf(id) < e[strand] && skills[id].status !== 'mastered') master(skills[id], e.ts, true);
@@ -261,26 +264,28 @@ export interface PickOptions {
 }
 
 /**
- * The text level he is ready for on a skill. Two first-try answers in a row at his level move him up;
- * two misses in a row move him down. Levels 4 and 5 are reached only this way, so harder texts are
- * gated on his own performance.
+ * The text level he is ready for on a skill. Three first-try answers in a row at his level move him up; a miss
+ * moves him down, so he settles near 80% right (DW 2026-10-14). Levels 4 and 5 are reached only this way, so harder
+ * texts are gated on his own performance. `peak` is the highest level he has reached.
  */
-export function levelFor(s: SkillState, pool: Pool): number {
-  let level = 1, streak = 0, misses = 0;
+function levelWalk(s: SkillState, pool: Pool) {
+  let level = 1, peak = 1, streak = 0, misses = 0;
   for (const a of s.answers) {
     if (a.rubric !== undefined) continue;
     const lv = a.level ?? pool.items.get(a.item)?.level ?? 1;
     if (lv < level) continue; // easier items do not move him
     if (a.correct) {
       misses = 0;
-      if (++streak >= RULES.levelUpStreak) { level = Math.min(RULES.maxLevel, level + 1); streak = 0; }
+      if (++streak >= RULES.levelUpStreak) { level = Math.min(RULES.maxLevel, level + 1); streak = 0; peak = Math.max(peak, level); }
     } else {
       streak = 0;
       if (++misses >= RULES.levelDownMisses) { level = Math.max(1, level - 1); misses = 0; }
     }
   }
-  return level;
+  return { level, peak };
 }
+export const levelFor = (s: SkillState, pool: Pool) => levelWalk(s, pool).level;
+export const levelPeak = (s: SkillState, pool: Pool) => levelWalk(s, pool).peak;
 
 export const isInterest = (pool: Pool, item: Item, interests: readonly Topic[]) =>
   !!pool.passages.get(item.passage)?.topics.some((t) => interests.includes(t));

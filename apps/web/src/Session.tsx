@@ -2,13 +2,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button, Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId } from '@wayfinder/schema';
-import { pointsFor, minReadMs, flightPeak, ALL_SKILLS, checkupDue, choices, flightPoints, gate, isInterest, levelFor, mulberry32, planCheckup, planGateCheck, planSession, RULES, strandOf, type Choice, type Progress, type SessionPlan, type StepName, type WordCard as WordCardT } from '@wayfinder/engine';
+import { pointsFor, minReadMs, flightPeak, ALL_SKILLS, checkupDue, choices, flightPoints, gate, isInterest, levelFor, levelPeak, mulberry32, planCheckup, planGateCheck, planSession, RULES, strandOf, type Choice, type Progress, type SessionPlan, type StepName, type WordCard as WordCardT } from '@wayfinder/engine';
 import { addNote, log, type GuideId, type Settings } from './db';
 import { pool, passageText, SKILL, STRAND } from './content';
 import { ItemView, NextSlot, type HintMode, type Result } from './ItemView';
 import { Guide, GUIDES, Island, islandOf, PiecePreview, PIECES, pieceById, freeTiles, type Placed } from './art';
 import { Btn, Lanterns, SpeakBtn } from './ui';
-import { BeatCard, finishedCount, journeyNow, KoalaCard, PostcardCard, reachedStops, islandAreas } from './journey';
+import { BeatCard, cap, finishedCount, journeyNow, KoalaCard, PostcardCard, reachedStops, islandView, questDone } from './journey';
 import { sfx, speak, stopSpeaking } from './media';
 import { useActivity } from './activity';
 import { GearCelebration, KitMeter } from './gear';
@@ -109,8 +109,11 @@ export function Session({ settings, events, progress, onExit, onBreak }: { setti
     const phase = step as 'warmup' | 'together' | 'yourturn' | 'gatecheck' | 'checkup';
     // LTF-38: a first tap faster than the question could be read is a guess: it is set aside and earns nothing.
     const rapid = settings.guessCheck !== false && item.tier !== 'express' && r.firstMs < minReadMs(item);
+    // LTF-49: after "I'm not sure" a grown-up helps, so the answer counts as helped, like the clue.
+    const asked = askedOn.current.has(item.id);
+    if (asked) r = { ...r, correct: false };
     log({
-      type: 'answer', session: sid, item: item.id, skill: item.skill, phase, correct: r.correct, hint: r.hint, tries: r.tries, ms: r.ms, format: item.format,
+      type: 'answer', session: sid, item: item.id, skill: item.skill, phase, correct: r.correct, hint: r.hint, tries: r.tries, ms: r.ms, format: item.format, ...(asked ? { asked: true } : {}),
       transfer: !!item.transfer, interest: isInterest(pool, item, settings.interests), readAloud: settings.readAloud, level: item.level, ...(phase === 'together' ? { delay: clueAtOnce ? 0 : settings.hintDelay } : {}), ...(r.rubric !== undefined ? { rubric: r.rubric } : {}),
       ...(item.reason && r.hint >= 2 ? { card: true } : {}),
       ...(r.shown ? { shown: true } : {}), ...(rapid ? { rapid: true } : {}), points: pointsFor({ correct: r.correct, shown: r.shown, rapid }),
@@ -135,6 +138,17 @@ export function Session({ settings, events, progress, onExit, onBreak }: { setti
   };
 
   const idle = useActivity(sid, step as StepName, current?.id, started.current);
+  // LTF-49: "I'm not sure": the guide tells him to ask a grown-up (a name a grown-up can set), and the grown-ups see where.
+  const helper = settings.helper?.trim() || 'a grown-up';
+  const askedOn = useRef(new Set<string>());
+  const [asking, setAsking] = useState<string | null>(null);
+  const notSure = () => {
+    if (!current) return;
+    askedOn.current.add(current.id);
+    setAsking(current.id);
+    void log({ type: 'activity', session: sid, kind: 'unsure', item: current.id, step: step as StepName });
+    if (settings.readAloud) speak([`That's OK. Ask ${helper} to help you with this one.`], 'unsure');
+  };
 
   // Read-to-me reads whatever is on screen.
   const readLines = current ? [...passageText(pool.passages.get(current.passage)!), current.prompt]
@@ -168,11 +182,17 @@ export function Session({ settings, events, progress, onExit, onBreak }: { setti
         <Guide id={guide} mood="think" size={48} />
         <div className="bubble">{step === 'watch'
           ? <>Already know this one? Tap <b>Got it, skip</b>.</>
-          : <>Still with me? I can read it to you, or give you a hint.
+          : <>Still with me? I can read it to you, or give you a hint. Not sure? Ask {helper} for help.
             <span className="row" style={{ marginTop: '0.4rem' }}>
               <Btn className="small" onPress={() => speak(readLines, 'nudge')}><span aria-hidden>🔊</span> Read it to me</Btn>
               {helpOn && <Btn className="small" onPress={() => setHelpTick((t) => t + 1)}><span aria-hidden>💡</span> A hint</Btn>}
             </span></>}
+        </div>
+      </div>}
+      {current && asking === current.id && <div className="guide-row nudge appear toast" role="status">
+        <Guide id={guide} mood="happy" size={48} />
+        <div className="bubble">That's OK. Ask {helper} to help you with this one.
+          <span className="row" style={{ marginTop: '0.4rem' }}><Btn className="small" autoFocus onPress={() => setAsking(null)}>OK</Btn></span>
         </div>
       </div>}
       {step === 'plan' && <PlanStep guide={guide} steps={steps} onGo={() => go('choose')} />}
@@ -217,6 +237,7 @@ export function Session({ settings, events, progress, onExit, onBreak }: { setti
       <Btn className="quiet" onPress={() => takeBreak('break')}><span className="ico" aria-hidden>⏸️</span><span className="lbl">I need a break</span></Btn>
       <SpeakBtn lines={readLines} k="bar" />
       <Btn isDisabled={!helpOn} onPress={() => setHelpTick((t) => t + 1)}><span className="ico" aria-hidden>💡</span><span className="lbl">Help</span></Btn>
+      <Btn isDisabled={!helpOn} onPress={notSure}><span className="ico" aria-hidden>🙋</span><span className="lbl">I'm not sure</span></Btn>
       <span className="spacer" />
       <span id="bar-next" className="row" style={{ gap: '0.6rem' }} />
     </footer>}
@@ -296,10 +317,19 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
   // LTF-36: what he builds today goes on the island he is on now (the new one, if he just arrived).
   const isle = islandOf(now.here.id);
   const lit = litFrom(progress);
-  const view = islandAreas(isle, now, settings, lit);
-  const before0 = islandAreas(isle, prev, settings, lit);
-  const opensNow = islandOf(prev.here.id) === isle ? view.def.areas.filter((a, i) => a.quest && view.open[i] && !before0.open[i]) : [];
   const onIsle = placed.filter((p) => p.island === isle);
+  // LTF-46: what this session did on the island's quest, and then what building did. Only on the island he was already on.
+  const builtNow = new Set(onIsle.map((p) => p.piece));
+  const [builtBefore] = useState(builtNow);
+  const before0 = islandView(isle, prev, settings, lit, builtBefore);
+  const afterSession = islandView(isle, now, settings, lit, builtBefore);
+  const view = islandView(isle, now, settings, lit, builtNow);
+  const stayed = islandOf(prev.here.id) === isle;
+  const stepsDone = (a: typeof view, b: typeof view) => (stayed ? a.def.steps.filter((_, i) => a.state.done[i] && !b.state.done[i]) : []);
+  const opensNow = stepsDone(afterSession, before0), builtDone = stepsDone(view, afterSession);
+  const partly = stayed ? view.def.steps.filter((s, i) => !afterSession.state.done[i] && afterSession.state.count[i] > before0.state.count[i] && s.then) : [];
+  const keepsake = view.def.keepsake && stayed && !questDone(before0.state) ? view.def.keepsake : undefined;
+  const stepLine = (s: (typeof opensNow)[number]) => <div key={s.text} className="ican-new appear">🗝️ {s.text} {s.place ? `${s.place.name} is open on ${view.def.name} now.` : 'Done.'}</div>;
   const koalaMet = prev.arrived && now.koala ? now.koala : null;
   const offers = useMemo(() => {
     const rng = mulberry32([...sid].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) | 0, 7));
@@ -311,7 +341,9 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
       const c = list.filter((p) => !out.includes(p.id)).map((p) => ({ p, k: (owned.has(p.id) ? 1 : 0) + rng() * 0.9 })).sort((a, b) => a.k - b.k)[0];
       if (c) out.push(c.p.id);
     };
-    add(avail.filter((p) => view.def.pieces.includes(p.id))); // LTF-36: something that belongs on this island
+    const build = view.def.steps.find((s, i) => s.build && !view.state.done[i])?.build; // LTF-46: a quest step to build
+    if (build && avail.some((p) => p.id === build) && !out.includes(build)) out.push(build);
+    else add(avail.filter((p) => view.def.pieces.includes(p.id))); // LTF-36: something that belongs on this island
     add(avail.filter((p) => p.region === (plan?.strand ?? 'philosophical')));
     add(avail.filter((p) => p.topic && settings.interests.includes(p.topic as never)));
     while (out.length < 3) add(avail);
@@ -320,6 +352,8 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
 
   const newly = ALL_SKILLS.filter((s) => progress.skills[s].everMastered && !before.mastered.has(s));
   const levelNow = plan ? levelFor(progress.skills[plan.skill], pool) : 0;
+  // A miss steps him down a level, so climbing back to one he had reached is not a new unlock.
+  const peakBefore = plan ? levelPeak({ ...progress.skills[plan.skill], answers: progress.skills[plan.skill].answers.filter((x) => x.session !== sid) }, pool) : 0;
   const opened = (progress.gateOpened || checkPassed) && !before.opened;
   const own = done.filter((d) => d.phase === 'yourturn' || d.phase === 'gatecheck' || d.phase === 'checkup');
   const warm = [...new Set(done.filter((d) => d.phase === 'warmup').map((d) => SKILL[d.item.skill].name))];
@@ -340,7 +374,7 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
   const autoPlace = () => {
     const p = pieceById.get(piece!)!;
     const want = p.beach ? 'beach' : p.region === 'functional' ? 'town' : p.region === 'narrative' ? 'forest' : 'peaks';
-    const free = freeTiles(onIsle, peaksOpen, p.beach, view.def, view.open);
+    const free = freeTiles(onIsle, peaksOpen, p.beach, view.def, view.state);
     const best = free.filter((t) => t.region === want).sort((a, b) => Math.abs(a.r - 5) + Math.abs(a.c - 5) - (Math.abs(b.r - 5) + Math.abs(b.c - 5)))[0] ?? free[0];
     if (best) place(best.c, best.r);
     else setStage('done');
@@ -351,7 +385,7 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
 
   if (stage === 'place') return <div className="stack">
     <div className="guide-row"><Guide id={settings.guide} size={64} /><div className="bubble">Tap a dotted spot to put your {pieceById.get(piece!)?.name.toLowerCase()} there. Or I can choose a spot.</div></div>
-    <Island placed={onIsle} lit={lit} here={{}} peaksOpen={peaksOpen} placing={{ piece: piece!, onPlace: place }} stage={now.stop} island={view.def} areas={view.open} />
+    <Island placed={onIsle} lit={lit} here={{}} peaksOpen={peaksOpen} placing={{ piece: piece!, onPlace: place }} stage={now.stop} island={view.def} state={view.state} />
     <div className="row"><Btn onPress={() => setStage('pick')}>← Pick a different one</Btn><span className="spacer" /><Btn className="primary big" onPress={autoPlace}>Choose a spot for me</Btn></div>
   </div>;
 
@@ -361,7 +395,9 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
       <h1>All done for today.</h1>
       {piece && <p>Your {pieceById.get(piece)?.name.toLowerCase()} is on {isle === 'home' ? 'the island' : view.def.name} now.</p>}
     </div>
-    <Island placed={placedFrom(events).filter((p) => p.island === isle)} lit={lit} here={{}} peaksOpen={peaksOpen} fresh={fresh} stage={now.stop} island={view.def} areas={view.open} />
+    {builtDone.map(stepLine)}
+    {keepsake && builtDone.length > 0 && questDone(view.state) && <div className="ican-new appear">{keepsake.icon} You finished the {view.def.name} quest. {cap(keepsake.name)} goes on your shelf on Home Island.</div>}
+    <Island placed={placedFrom(events).filter((p) => p.island === isle)} lit={lit} here={{}} peaksOpen={peaksOpen} fresh={fresh} stage={now.stop} island={view.def} state={view.state} />
     <BeatCard now={now} settings={settings} />
     <div className="card talk">
       <h3>For your grown-up</h3>
@@ -381,14 +417,16 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
       </div>
     </div>
     {newly.map((s) => <div key={s} className="ican-new appear">⭐ New on your shelf: {SKILL[s].ican}</div>)}
-    {plan && levelNow > plan.level && <div className="ican-new appear">⬆️ Harder texts unlocked: level {levelNow} in {SKILL[plan.skill].name}.{levelNow >= 4 ? ' These are longer texts. You earned them.' : ''}</div>}
+    {plan && levelNow > plan.level && levelNow > peakBefore && <div className="ican-new appear">⬆️ Harder texts unlocked: level {levelNow} in {SKILL[plan.skill].name}.{levelNow >= 4 ? ' These are longer texts. You earned them.' : ''}</div>}
     {opened && <div className="ican-new appear strand-philosophical" style={{ background: 'var(--phi-soft)', color: 'var(--phi-deep)' }}>🏮 Lantern Peaks are open. A new part of your island is waiting.</div>}
-    {opensNow.map((a) => <div key={a.name} className="ican-new appear">🗝️ {a.quest} {a.name} is open on {view.def.name} now.</div>)}
+    {opensNow.map(stepLine)}
+    {partly.map((s) => <div key={s.text} className="ican-new appear">🗝️ {s.then}</div>)}
+    {keepsake && questDone(afterSession.state) && <div className="ican-new appear">{keepsake.icon} You finished the {view.def.name} quest. {cap(keepsake.name)} goes on your shelf on Home Island.</div>}
     {arrivedStop && <PostcardCard stop={arrivedStop} arrived />}
     {koalaMet && <KoalaCard koala={koalaMet} />}
     <h2>Pick one new thing for your island</h2>
     <div className="pieces">
-      {offers.map((id) => <Button key={id} className={`piece ${piece === id ? 'on' : ''}`} onPress={() => { setPiece(id); setStage(freeTiles(onIsle, peaksOpen, pieceById.get(id)?.beach, view.def, view.open).length ? 'place' : 'done'); }}>
+      {offers.map((id) => <Button key={id} className={`piece ${piece === id ? 'on' : ''}`} onPress={() => { setPiece(id); setStage(freeTiles(onIsle, peaksOpen, pieceById.get(id)?.beach, view.def, view.state).length ? 'place' : 'done'); }}>
         <PiecePreview id={id} />{pieceById.get(id)?.name}
       </Button>)}
     </div>

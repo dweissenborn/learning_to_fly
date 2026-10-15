@@ -15,6 +15,8 @@ Each step lands its test before its code.
 5. **Large content work.** LTF-20 (island routes, before LTF-14 so check-up flights can come from the island he chose), LTF-04, LTF-11 (idioms use LTF-04), LTF-03, LTF-14. Built 2026-10-13: LTF-04 (pilot), LTF-11, LTF-03 (N4 first), LTF-14 (all ten stops, the four islands included), and LTF-20, built with the proposed LTF-21 to LTF-24 as its island stories so DW can review them in the app. Waiting for DW: those island stories, and the koala keeper arc (LTF-30 to LTF-35). LTF-25 to LTF-29 come later, if approved.
 6. **Guest codes.** LTF-19, a separate track. Approach to confirm; DW 2026-10-13: not now.
 7. **Math module.** LTF-39 to LTF-44 (below), from DW's design note: modules as add-ons first, then typed answers, skills and gates, the help ladder, story or plain, and the grown-ups' measures. Approach to confirm.
+8. **Islands of their own.** LTF-45 to LTF-48 (below), from DW's feedback 2026-10-14. Built the same day; the new wording waits for DW's review.
+9. **Help and levels.** LTF-49 and LTF-50 (below), from a first look at how his sessions are going, 2026-10-14. Built the same day.
 
 ## Proposed: the math module (LTF-39 to LTF-44)
 
@@ -78,6 +80,38 @@ Proposed 2026-10-13. Approach to confirm.
 
 - **What it is.** A Math tab in the grown-ups' area, read from the event log: each skill on the path to dividing fractions, mastered and passing its reviews; first-try accuracy on new problems in story and plain form (80% is a starting point to tune, not a validated threshold); breaks and guesses (the LTF-38 measures); and how often he picks math on his own. Whether the skills show on paper at school has to be checked outside the app.
 - **Tests first.** Unit tests for each measure from seeded events; e2e of the tab, with axe.
+
+## LTF-49 "I'm not sure": ask for help
+
+Added 2026-10-14 by DW, after a first look at how his sessions are going: "give him a 'ask Dad/for help' prompt if he feels unsure". A short first-time demo for each question type was offered too; DW: not yet.
+
+- **What was built.** An "I'm not sure" button beside Help on every question in the warm-up, guided practice and his own turn (not in the Peak check or check-ups, which measure). His guide says: "That's OK. Ask Dad to help you with this one." The name is a grown-ups' setting ("Who he asks for help"; "a grown-up" when empty). The "Still with me?" nudge adds "Not sure? Ask Dad for help." An answer after asking counts as helped, like the clue: it earns the clue's points and does not count as independent for mastery. The grown-ups' Activity tab shows how often he said he was not sure, by skill. A "What do you think?" card asks him about it once he has used it. Tests: e2e (the prompt with the name, the answer saved as helped, the grown-ups' count, axe; mutation-checked).
+
+## LTF-50 Text levels that keep him near 80% right
+
+Added and built 2026-10-14, DW's choice.
+
+- **What was built.** Three first-try answers in a row at his level move him up a level; one miss moves him down. The old rule (two right up, two misses down) settles, simulated, where a learner gets about half right, below the 80% the app asks for mastery; the new one settles near 78%. Climbing back to a level he had already reached is no longer announced as a new unlock. Same day, a fix: a session's last answer is logged in the same millisecond as its finish, and the engine sometimes read the finish first and left that answer out of his mastery count; within one millisecond a session now starts first and ends last. Tests: the level rule, the highest level reached, and both orders of the last answer (each seen failing first).
+
+## Islands of their own (LTF-45 to LTF-48)
+
+Added 2026-10-14 by DW: "the different islands are now working, but they have the same named areas and same progress levels." DW chose all four of the proposals below the same day, and that the stones on a visited island's map show the island's own steps. His reading lanterns are his reading skill, so they stay the same everywhere: on the path cards beside the map, and on Home Island. Each path keeps its colour, icon and place, so he always knows which path is which; everything around them changes. Built 2026-10-14. The new wording (island names, new quest steps, keepsakes) is a draft for DW's review.
+
+## LTF-45 Each island names its own parts
+
+- **What was built.** Every visited island has its own names for its three parts (Gull Island: Ferry Dock, Gull Meadow, Lookout Rocks), on its map, in its description for screen readers, and where he chooses a spot to build. The path cards say which part is which while he looks at that island ("Story Woods · Gull Meadow here"). Names sit on the side Home Island has them on (town left, green right, high ground at the back), so they never overlap. Tests: every island has three names of its own, none repeated anywhere.
+
+## LTF-46 Quests with their own shape, on the island's map
+
+- **What was built.** Quests run 3 to 5 steps. Most steps take one finished session; some take two and say why after the first ("The first night was cloudy. Next session, try again."); some are a thing from the island he builds (Gull Island's sailboat, Rail Coast's bus stop, Cloud Hill's weather station, Australia's camp tent), offered first after a session until it is built; some open no place. Each fits one stay on the island (at most five sessions). On a visited island the map shows the quest's numbered stones instead of the reading lanterns: lit when done, a flag on the next one. The place that waits for a lantern stays. Tests: sessions taken in order, a two-session step's progress, build steps, everything done once he sails on, the lantern place (mutation-checked); e2e: a session at Gull Island offers the sailboat first, building it finishes the quest.
+
+## LTF-47 A keepsake from each island
+
+- **What was built.** Finishing an island's quest brings home its keepsake (a gull feather, a star chart, a train ticket); the finish screen says so, the quest card says what it will be, and Home Island shows a shelf of keepsakes from the islands he has reached, with the ones still to finish. Nothing new is stored: a keepsake follows from his log. Tests: one keepsake per island, each different; e2e: the shelf on Home Island, with axe.
+
+## LTF-48 Each island its own shape
+
+- **What was built.** Each visited island has its own land, drawn row by row in `apps/web/src/art.tsx`: Fossil Bay wraps around a bay under layered cliffs, Reef Island rings a lagoon, Rail Coast is a long low strip, Cloud Hill has a runway, Australia has a red rock, with high tops of their own. Home Island keeps its layout and lantern paths. Things he built on an island before it had its own shape stay where they can and otherwise stand on the nearest free spot of the same kind of ground (his log is never rewritten). Tests: every island inside the view, all shapes different, every landing, stone and place on land and apart, and moved pieces (mutation-checked).
 
 ## LTF-38 Clicking through to the green check
 

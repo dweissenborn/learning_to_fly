@@ -9,7 +9,7 @@ import journeyData from '../../../content/journey.json';
 import { log, saveSettings, type Settings } from './db';
 import { passageText, STRAND, TOPICS } from './content';
 import { Passage } from './Passage';
-import { Guide, GUIDES, Koala, Plane, pieceById, areaOpen, ISLANDS, islandOf, type IslandDef } from './art';
+import { Guide, GUIDES, Koala, Plane, pieceById, ISLANDS, islandOf, questState, type IslandDef, type IslandState } from './art';
 import { Btn, SpeakBtn } from './ui';
 
 export interface Beat {
@@ -107,23 +107,42 @@ export function islandArrival(s: Settings, finished: number): Partial<Settings> 
   return cur === 'home' || s.islandsSeen?.[cur] !== undefined ? null : { islandsSeen: { ...(s.islandsSeen ?? {}), [cur]: finished } };
 }
 type Lit = Record<'functional' | 'narrative' | 'philosophical', boolean[]>;
-/** LTF-36: an island and which of its areas are open. Islands he has sailed on from have all their quest areas open. */
-export function islandAreas(isle: string, now: JourneyNow, s: Settings, lit: Lit) {
+/** LTF-36, LTF-46: an island and how far its quest has come. Islands he has sailed on from have their whole quest done. */
+export function islandView(isle: string, now: JourneyNow, s: Settings, lit: Lit, built: ReadonlySet<string>) {
   const def = ISLANDS[isle];
   const order = islandsReached(now), current = islandOf(now.here.id);
   const left = order.includes(isle) && isle !== current;
   const sessions = isle === current ? now.finished - (s.islandsSeen?.[isle] ?? now.finished) : 0;
-  return { def, open: def.areas.map((a, i) => areaOpen(a, i, { sessions, left, lit })), current: isle === current };
+  return { def, state: questState(def, { sessions, left, built, lit }), current: isle === current };
 }
+/** LTF-47: a quest is done when every step is. */
+export const questDone = (st: IslandState) => st.done.length > 0 && st.done.every(Boolean);
+export const cap = (s: string) => s[0].toUpperCase() + s.slice(1);
 
-/** LTF-36: the island's quest, and what opens the area that waits for a lantern. */
-export function IslandQuest({ def, open, current }: { def: IslandDef; open: readonly boolean[]; current: boolean }) {
+/** LTF-36, LTF-46: the island's quest, numbered like the stones on its map; what opens the place that waits for a
+ * lantern; and (LTF-47) the keepsake it brings home. */
+export function IslandQuest({ def, state, current }: { def: IslandDef; state: IslandState; current: boolean }) {
   return <section className="card stack quest" aria-label={`${def.name} quest`}>
     <h3 style={{ margin: 0 }}>{def.name}</h3>
-    <ul className="quest-list">{def.areas.map((a, i) => a.quest && <li key={a.name} className={open[i] ? 'done' : ''}>
-      <span aria-hidden>{open[i] ? '✅' : '⬜'}</span><span>{a.quest}{open[i] ? <span className="muted"> Done: {a.name} is open.</span> : <span className="sr-only"> Not yet.</span>}</span></li>)}</ul>
-    {def.areas.map((a, i) => a.gate && <p key={a.name} className="tagline" style={{ margin: 0 }}>{open[i] ? `🔓 ${a.name} is open.` : `🔒 ${a.name} opens when lantern ${a.gate.step} is lit on the ${STRAND[a.gate.strand].region} path. You can come back for it later.`}</p>)}
-    {current && open.some((o, i) => !o && def.areas[i].quest) && <p className="tagline" style={{ margin: 0 }}>Each session you finish here does the next step.</p>}
+    <ul className="quest-list">{def.steps.map((s, i) => <li key={s.text} className={state.done[i] ? 'done' : ''}>
+      <span aria-hidden>{state.done[i] ? '✅' : s.build ? '🔨' : '⬜'}</span><span><b>{i + 1}.</b> {s.text}
+        {state.done[i] ? <span className="muted"> Done{s.place ? `: ${s.place.name} is open` : ''}.</span>
+          : s.build ? <span className="muted"> Pick the {pieceById.get(s.build)?.name.toLowerCase()} after a session, and build it here.</span>
+          : state.count[i] ? <span className="muted"> {state.count[i]} of {s.sessions} sessions done. {s.then}</span>
+          : (s.sessions ?? 1) > 1 ? <span className="muted"> It takes {s.sessions} sessions.</span> : <span className="sr-only"> Not yet.</span>}</span></li>)}</ul>
+    {def.later && <p className="tagline" style={{ margin: 0 }}>{state.later ? `🔓 ${def.later.name} is open.` : `🔒 ${def.later.name} opens when lantern ${def.later.gate.step} is lit on the ${STRAND[def.later.gate.strand].region} path. You can come back for it later.`}</p>}
+    {current && def.steps.some((s, i) => !state.done[i] && !s.build) && <p className="tagline" style={{ margin: 0 }}>Each session you finish here does the next step.</p>}
+    {def.keepsake && <p className="tagline" style={{ margin: 0 }}>{def.keepsake.icon} {questDone(state) ? `Quest done. ${cap(def.keepsake.name)} is on your shelf on Home Island.` : `Finish the quest to take home ${def.keepsake.name}.`}</p>}
+  </section>;
+}
+
+/** LTF-47: the keepsakes from the islands he has reached, on Home Island. */
+export function Keepsakes({ items }: { items: { def: IslandDef; done: boolean }[] }) {
+  return <section className="card stack quest" aria-label="Your keepsakes">
+    <h3 style={{ margin: 0 }}>Keepsakes</h3>
+    <ul className="quest-list">{items.map(({ def, done }) => <li key={def.id} className={done ? 'done' : ''}>
+      <span aria-hidden>{done ? def.keepsake!.icon : '⬜'}</span>
+      <span>{done ? `${cap(def.keepsake!.name)}, from ${def.name}.` : `From ${def.name}: finish its quest to bring this home.`}</span></li>)}</ul>
   </section>;
 }
 

@@ -34,6 +34,10 @@ export const FEATURES: Feature[] = [
     met: (es) => es.some((e) => e.type === 'session' && e.action === 'stop' && e.reason === 'break') },
   { id: 'new-islands', name: 'A new island at each stop', say: 'Each place on your journey is an island to explore, with places that open as you read.', arrived: '2026-10-13',
     met: (es) => es.some((e) => e.type === 'world' && !!e.island && e.island !== 'home') },
+  { id: 'not-sure', name: '"I\'m not sure"', say: 'When you are not sure, you can tap "I\'m not sure" and ask for help.', arrived: '2026-10-14',
+    met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'unsure') },
+  { id: 'own-islands', name: 'Islands of their own', say: 'Each island has its own shape, names and quest. A finished quest brings a keepsake home.', arrived: '2026-10-14',
+    met: (es) => new Set(es.flatMap((e) => (e.type === 'world' && e.island && e.island !== 'home' ? [e.island] : []))).size >= 2 }, // LTF-45 to LTF-48: once he has seen two
   { id: 'island-route', name: 'Choosing your sea route', say: 'At Gull Island, you chose which island to sail to on the way to Australia.', arrived: '2026-10-13',
     met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'route') },
   { id: 'checkup', name: 'The check-up flight', say: 'Every so often, you can choose six new texts with no hints, to see how your reading is growing.', arrived: '2026-10-13',

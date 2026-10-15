@@ -324,45 +324,53 @@ const LANDMARKS: { r: number; c: number; kind: 'lighthouse' | 'bigoak' | 'observ
 const reserved = new Set([...Object.values(PATHS).flat().map(([r, c]) => `${r},${c}`), ...LANDMARKS.map((l) => `${l.r},${l.c}`)]);
 
 export interface Placed { piece: string; x: number; y: number; id: string; ts: number; island: string }
-/** Where a piece can go: not on a path, a landmark, another piece, a closed area, or closed peaks. */
-export function freeTiles(placed: Placed[], peaksOpen: boolean, beach?: boolean, island: IslandDef = ISLANDS.home, areas: readonly boolean[] = []) {
-  const used = new Set(placed.map((p) => `${p.y},${p.x}`));
+/** Where a piece can go: not on a path, a landmark or mark, another piece, a closed place, or Home Island's closed peaks. */
+export function freeTiles(placed: Placed[], peaksOpen: boolean, beach?: boolean, island: IslandDef = ISLANDS.home, st?: IslandState) {
+  const used = new Set(settle(placed, island).map((p) => `${p.y},${p.x}`));
   const res = reservedOn(island);
-  const closed = new Set(island.areas.flatMap((_, i) => (areas[i] ? [] : areaSpots(island, i))));
-  return islandTiles(island).filter((t) => !res.has(`${t.r},${t.c}`) && !used.has(`${t.r},${t.c}`) && !closed.has(`${t.r},${t.c}`) && (peaksOpen || t.region !== 'peaks') && (beach ? t.region === 'beach' : t.region !== 'beach'));
+  const closed = new Set(placesOf(island, st).filter((p) => !p.open).flatMap((p) => spotsAround(island, p.at)));
+  return islandTiles(island).filter((t) => !res.has(`${t.r},${t.c}`) && !used.has(`${t.r},${t.c}`) && !closed.has(`${t.r},${t.c}`) && (peaksOpen || island.land.length > 0 || t.region !== 'peaks') && (beach ? t.region === 'beach' : t.region !== 'beach'));
 }
 
 const TOP: Record<Region, [string, string]> = { town: ['#e9d9b8', '#e2cfa9'], forest: ['#9fcf7a', '#93c56d'], peaks: ['#cfcadf', '#c4bfd6'], beach: ['#f0dca0', '#ead396'] };
 const SIDE: Record<Region, string> = { town: '#b99d72', forest: '#8a6a46', peaks: '#9a95ad', beach: '#d4b977' };
 
-// ---------------------------------------------------------------- an island at each stop (LTF-36)
-// Every island has Home Island's tile layout, so his three lantern paths come with him. What changes: the colours, the coast,
-// what stands on the high ground, the landmark where he comes ashore, and four areas. Three open with the island's quest,
-// one session at a time; the fourth opens when a lantern is lit, so he can come back for it later.
-export interface Area {
-  name: string;
-  /** The landmark that appears when the area opens: a piece's drawing, or one of the island drawings below. */
-  look: string;
-  /** Areas 1 to 3: the quest step that opens it. */
-  quest?: string;
-  /** Area 4: the lantern that opens it. */
-  gate?: { strand: 'functional' | 'narrative'; step: number };
+// ---------------------------------------------------------------- an island at each stop (LTF-36, LTF-45 to LTF-48)
+// Home Island keeps his three lantern paths. Every other island is its own place: its own land and heights (LTF-48), its
+// own names for its three parts (LTF-45), a quest of its own length and kinds of step, shown as numbered stones on its map
+// (LTF-46), and a keepsake to take home when the quest is done (LTF-47). One place waits for a lantern, for later.
+export interface Step {
+  /** What he does, in the island's story. */
+  text: string;
+  /** Finished sessions it takes; 1 when left out. */
+  sessions?: number;
+  /** Said after a session that did part of it. */
+  then?: string;
+  /** Or a thing from the island he builds: done once it stands on this island. */
+  build?: string;
+  /** The place it opens. Where the place and the step's stone sit is marked on the island's land. */
+  place?: { name: string; look: string };
 }
 export interface IslandDef {
   id: string; name: string;
   top: Record<Region, [string, string]>; side: Record<Region, string>;
   relief: 'mountain' | 'boulders' | 'layers' | 'palms' | 'hills' | 'redrock';
-  /** Which edge tiles are sea; 0 keeps Home Island's coast. */
-  coast: number;
-  /** Where he comes ashore, at the lighthouse's spot. */
+  /** LTF-48: the land, row by row: '.' sea, 'b' beach, 't' town, 'f' green, 'p' high ground, 'P' its tops. Marks: 'L'
+   * where he comes ashore, '1' to '5' each step's stone, 'A' to 'E' the place step 1 to 5 opens, 'G' the place that waits
+   * for a lantern. Home Island has none: it keeps its own. */
+  land: string[];
+  /** LTF-45: its names for its three parts. */
+  names: Record<'town' | 'forest' | 'peaks', string>;
+  /** What stands where he comes ashore. */
   arrival?: string;
-  areas: Area[];
+  steps: Step[];
+  /** The place that waits for a lantern, so he can come back for it. */
+  later?: { name: string; look: string; gate: { strand: 'functional' | 'narrative'; step: number } };
+  /** LTF-47: what he takes home when the quest is done. */
+  keepsake?: { icon: string; name: string };
   /** Things to build that belong here, offered first while he is on this island. */
   pieces: string[];
 }
-/** Where the four areas sit on every island, clear of the lantern paths: town, woods, beach, and the far side of town. */
-export const AREA_AT: [number, number][] = [[6, 5], [5, 7], [8, 8], [7, 2]];
-const ARRIVAL_AT: [number, number] = [10, 6];
 
 const pal = (t: string, f: string, p: string, b: string, s: [string, string, string, string]) => ({
   top: { town: [t, shade(t, -0.04)], forest: [f, shade(f, -0.05)], peaks: [p, shade(p, -0.04)], beach: [b, shade(b, -0.04)] } as Record<Region, [string, string]>,
@@ -370,119 +378,288 @@ const pal = (t: string, f: string, p: string, b: string, s: [string, string, str
 });
 
 export const ISLANDS: Record<string, IslandDef> = {
-  home: { id: 'home', name: 'Home Island', top: TOP, side: SIDE, relief: 'mountain', coast: 0, areas: [], pieces: [] },
-  gull: { id: 'gull', name: 'Gull Island', ...pal('#dfe2e4', '#b9d59c', '#c9cac4', '#ebe3cb', ['#9aa3ab', '#7d8f5a', '#8d8e88', '#c2b590']), relief: 'boulders', coast: 3, arrival: 'pier',
-    areas: [
-      { name: 'The gull nests', look: 'nest', quest: 'Count the gull nests with Ranger Jo.' },
-      { name: 'Seal Rocks', look: 'seal', quest: 'Watch the seals from far away, so they can rest.' },
-      { name: 'The rock pools', look: 'pool', quest: 'Find a crab in the rock pools.' },
-      { name: 'The ranger hut', look: 'cabin', gate: { strand: 'functional', step: 2 } },
-    ], pieces: ['seal', 'boat', 'telescope'] },
-  cape: { id: 'cape', name: 'Windy Cape', ...pal('#e6dcc4', '#a9c98b', '#cbc4b6', '#ecdcae', ['#b39d78', '#7f8f58', '#958c7c', '#cdb67c']), relief: 'hills', coast: 5, arrival: 'busstop',
-    areas: [
-      { name: 'The kite field', look: 'kite', quest: 'Help fly a kite in the strong wind.' },
-      { name: 'The windmill', look: 'windmill', quest: 'Watch the windmill turn in the wind.' },
-      { name: 'The cliff path', look: 'flag', quest: 'Walk the cliff path, far from the edge.' },
-      { name: 'The weather station', look: 'weather', gate: { strand: 'narrative', step: 2 } },
-    ], pieces: ['kite', 'windmill', 'weather'] },
-  fossil: { id: 'fossil', name: 'Fossil Bay', ...pal('#ddd3c2', '#a9c590', '#c6bead', '#e9d7a9', ['#a8977c', '#7c8a5a', '#8e8574', '#c9b27a']), relief: 'layers', coast: 7, arrival: 'pier',
-    areas: [
-      { name: 'The dig', look: 'dig', quest: 'Help Dr. Bell brush the sand off a bone.' },
-      { name: 'The plaster tent', look: 'tent', quest: 'Help wrap the bone in a plaster jacket.' },
-      { name: 'Ammonite Beach', look: 'ammonite', quest: 'Find an ammonite shell in the rocks.' },
-      { name: 'The dinosaur garden', look: 'dino', gate: { strand: 'narrative', step: 3 } },
-    ], pieces: ['ammonite', 'dino', 'mine'] },
-  reef: { id: 'reef', name: 'Reef Island', ...pal('#f4e8c8', '#92d38c', '#a9d9a1', '#fbefc6', ['#c9b07a', '#5f9a58', '#6f9a5a', '#d6c08a']), relief: 'palms', coast: 11, arrival: 'pier',
-    areas: [
-      { name: 'The tide pools', look: 'pool', quest: 'Find a sea star in the tide pools with Mari.' },
-      { name: 'The glass-bottom boat', look: 'boat', quest: 'Look for a clownfish through the glass floor.' },
-      { name: 'Turtle Beach', look: 'turtle', quest: 'Help Mari mark where the turtles laid their eggs.' },
-      { name: 'The lagoon hut', look: 'cabin', gate: { strand: 'functional', step: 3 } },
-    ], pieces: ['turtle', 'boat', 'garden'] },
-  star: { id: 'star', name: 'Star Point', ...pal('#dadce6', '#93bb8d', '#bcc4d7', '#e5ddc6', ['#9a9db0', '#5f8a5a', '#7c87a3', '#c4b68e']), relief: 'hills', coast: 13, arrival: 'pier',
-    areas: [
-      { name: 'The balloon field', look: 'weather', quest: 'Watch the weather balloon go up at 6 AM.' },
-      { name: 'The telescope', look: 'telescope', quest: 'Look at the Moon through the telescope.' },
-      { name: 'The dome', look: 'dome', quest: 'Help Dr. Amal open the dome on a clear night.' },
-      { name: 'The rocket garden', look: 'rocket', gate: { strand: 'narrative', step: 4 } },
-    ], pieces: ['dome', 'telescope', 'rocket'] },
-  rail: { id: 'rail', name: 'Rail Coast', ...pal('#e5d3c1', '#a5c886', '#c8c1b4', '#ebdaaf', ['#b08a6a', '#728d55', '#928a7b', '#c9b27c']), relief: 'hills', coast: 17, arrival: 'pier',
-    areas: [
-      { name: 'The signal box', look: 'signal', quest: 'Help Mr. Haddad pull the signal lever.' },
-      { name: 'The platform', look: 'clocktower', quest: 'Check the clock before the train comes in.' },
-      { name: 'The map room', look: 'house', quest: 'Find Home Island on the big map.' },
-      { name: 'The engine shed', look: 'train', gate: { strand: 'functional', step: 4 } },
-    ], pieces: ['signal', 'train', 'busstop'] },
-  airfield: { id: 'airfield', name: 'Cloud Hill', ...pal('#d9ddd0', '#b6d791', '#d0e1c1', '#e7ddb9', ['#9aa08e', '#7e9a5c', '#8fa585', '#c7b88a']), relief: 'hills', coast: 19, arrival: 'plane',
-    areas: [
-      { name: 'The hangar', look: 'hangar', quest: 'Help Captain Ada open the hangar doors.' },
-      { name: 'The windsock', look: 'kite', quest: 'Check the windsock to see which way the wind blows.' },
-      { name: 'The workshop', look: 'house', quest: 'Hand Captain Ada the tools to fix the plane.' },
-      { name: 'The lookout', look: 'telescope', gate: { strand: 'narrative', step: 4 } },
-    ], pieces: ['plane', 'weather', 'rocket'] },
-  australia: { id: 'australia', name: 'Australia', ...pal('#ebcda5', '#abca90', '#da9470', '#f1dbab', ['#b98a5c', '#76935a', '#a85f3d', '#cdb27a']), relief: 'redrock', coast: 23, arrival: 'plane',
-    areas: [
-      { name: 'The young gum trees', look: 'garden', quest: 'Help Ranger Tess plant a young gum tree.' },
-      { name: 'The koala walk', look: 'koala', quest: 'Find Gumnut asleep in a tree.' },
-      { name: 'The picnic spot', look: 'bench', quest: 'Have a picnic with Ranger Tess by the creek.' },
-      { name: "The keeper's hut", look: 'cabin', gate: { strand: 'functional', step: 5 } },
-    ], pieces: ['koala', 'garden', 'tent'] },
+  home: { id: 'home', name: 'Home Island', top: TOP, side: SIDE, relief: 'mountain', land: [], names: { town: 'Harbor Town', forest: 'Story Woods', peaks: 'Lantern Peaks' }, steps: [], pieces: [] },
+  gull: { id: 'gull', name: 'Gull Island', ...pal('#dfe2e4', '#b9d59c', '#c9cac4', '#ebe3cb', ['#9aa3ab', '#7d8f5a', '#8d8e88', '#c2b590']), relief: 'boulders', arrival: 'pier',
+    names: { town: 'Ferry Dock', forest: 'Gull Meadow', peaks: 'Lookout Rocks' },
+    land: [
+      '...........',
+      '.....bb....',
+      '....bPpb...',
+      '...bpPpfb..',
+      '..bCppffBb.',
+      '..b3fpf2fb.',
+      '.bttfff1Ab.',
+      '.bGtttftb..',
+      '..btt4ttb..',
+      '...bbLbb...',
+      '...........'],
+    steps: [
+      { text: 'Count the gull nests with Ranger Jo.', place: { name: 'The gull nests', look: 'nest' } },
+      { text: 'Watch the seals from far away, so they can rest.', place: { name: 'Seal Rocks', look: 'seal' } },
+      { text: 'Find a crab in the rock pools.', place: { name: 'The rock pools', look: 'pool' } },
+      { text: 'Build a sailboat for the ferry dock.', build: 'boat' },
+    ],
+    later: { name: 'The ranger hut', look: 'cabin', gate: { strand: 'functional', step: 2 } },
+    keepsake: { icon: '🪶', name: 'a gull feather' }, pieces: ['seal', 'boat', 'telescope'] },
+  cape: { id: 'cape', name: 'Windy Cape', ...pal('#e6dcc4', '#a9c98b', '#cbc4b6', '#ecdcae', ['#b39d78', '#7f8f58', '#958c7c', '#cdb67c']), relief: 'hills', arrival: 'busstop',
+    names: { town: 'Cape Village', forest: 'Long Grass', peaks: 'The Cliffs' },
+    land: [
+      '...........',
+      '...........',
+      '......bbb..',
+      '....bbpPPb.',
+      '..bbffp3Cb.',
+      '.bfffAfppb.',
+      'bttt1ffbb..',
+      'bGt2Bfb....',
+      '.bttttb....',
+      '..bbLbb....',
+      '...........'],
+    steps: [
+      { text: 'Help fly a kite in the strong wind.', sessions: 2, then: 'The wind dropped. Next session, try the kite again.', place: { name: 'The kite field', look: 'kite' } },
+      { text: 'Watch the windmill turn in the wind.', place: { name: 'The windmill', look: 'windmill' } },
+      { text: 'Walk the cliff path, far from the edge.', place: { name: 'The cliff path', look: 'flag' } },
+    ],
+    later: { name: 'The weather station', look: 'weather', gate: { strand: 'narrative', step: 2 } },
+    keepsake: { icon: '🪁', name: 'a small kite' }, pieces: ['kite', 'windmill', 'weather'] },
+  fossil: { id: 'fossil', name: 'Fossil Bay', ...pal('#ddd3c2', '#a9c590', '#c6bead', '#e9d7a9', ['#a8977c', '#7c8a5a', '#8e8574', '#c9b27a']), relief: 'layers', arrival: 'pier',
+    names: { town: 'Bay Village', forest: 'Fern Gully', peaks: 'Rock Layers' },
+    land: [
+      '...........',
+      '..bPPPPb...',
+      '.bpPPPPpb..',
+      'bfpppppfAb.',
+      'bff2Bff1fb.',
+      'bttfffftfb.',
+      'btG...ttfb.',
+      'btb...tt4b.',
+      '.bC3..btbb.',
+      '..bbLbbb...',
+      '...........'],
+    steps: [
+      { text: 'Help Dr. Bell brush the sand off a bone.', sessions: 2, then: 'The bone is big. Next session, brush some more.', place: { name: 'The dig', look: 'dig' } },
+      { text: 'Help wrap the bone in a plaster jacket.', place: { name: 'The plaster tent', look: 'tent' } },
+      { text: 'Find an ammonite shell in the rocks.', place: { name: 'Ammonite Beach', look: 'ammonite' } },
+      { text: 'Help Dr. Bell label the bone for the museum.' },
+    ],
+    later: { name: 'The dinosaur garden', look: 'dino', gate: { strand: 'narrative', step: 3 } },
+    keepsake: { icon: '🐚', name: 'a fossil shell' }, pieces: ['ammonite', 'dino', 'mine'] },
+  reef: { id: 'reef', name: 'Reef Island', ...pal('#f4e8c8', '#92d38c', '#a9d9a1', '#fbefc6', ['#c9b07a', '#5f9a58', '#6f9a5a', '#d6c08a']), relief: 'palms', arrival: 'pier',
+    names: { town: 'Reef Village', forest: 'Palm Grove', peaks: 'Lookout Dune' },
+    land: [
+      '...........',
+      '....bbbb...',
+      '..bbfPfbb..',
+      '.bff5bbffb.',
+      '.bfb...bAb.',
+      'bGfb...b1b.',
+      'btfB...btb.',
+      '.bt2b.bCb..',
+      '.bttbbb3b..',
+      '..bt4tLb...',
+      '....bbb....'],
+    steps: [
+      { text: 'Find a sea star in the tide pools with Mari.', place: { name: 'The tide pools', look: 'pool' } },
+      { text: 'Look for a clownfish through the glass floor.', place: { name: 'The glass-bottom boat', look: 'boat' } },
+      { text: 'Help Mari mark where the turtles laid their eggs.', place: { name: 'Turtle Beach', look: 'turtle' } },
+      { text: 'Help Mari pick up rubbish on the beach.' },
+      { text: 'Help Mari count the parrotfish on the reef.' },
+    ],
+    later: { name: 'The lagoon hut', look: 'cabin', gate: { strand: 'functional', step: 3 } },
+    keepsake: { icon: '🐢', name: "Mari's turtle badge" }, pieces: ['turtle', 'boat', 'garden'] },
+  star: { id: 'star', name: 'Star Point', ...pal('#dadce6', '#93bb8d', '#bcc4d7', '#e5ddc6', ['#9a9db0', '#5f8a5a', '#7c87a3', '#c4b68e']), relief: 'hills', arrival: 'pier',
+    names: { town: 'Point Village', forest: 'Pine Slope', peaks: 'Star Hill' },
+    land: [
+      '...........',
+      '...bpb.....',
+      '..bpPPpb...',
+      '..bpPCPpb..',
+      '.bfpp3ppfb.',
+      '.bff2Bfffb.',
+      '.btttfffb..',
+      '.bGt1Atfb..',
+      '..bttttb...',
+      '...bbLb....',
+      '...........'],
+    steps: [
+      { text: 'Watch the weather balloon go up at 6 AM.', place: { name: 'The balloon field', look: 'weather' } },
+      { text: 'Look at the Moon through the telescope.', place: { name: 'The telescope', look: 'telescope' } },
+      { text: 'Help Dr. Amal open the dome on a clear night.', sessions: 2, then: 'The first night was cloudy. Next session, try again.', place: { name: 'The dome', look: 'dome' } },
+    ],
+    later: { name: 'The rocket garden', look: 'rocket', gate: { strand: 'narrative', step: 4 } },
+    keepsake: { icon: '⭐', name: 'a star chart' }, pieces: ['dome', 'telescope', 'rocket'] },
+  rail: { id: 'rail', name: 'Rail Coast', ...pal('#e5d3c1', '#a5c886', '#c8c1b4', '#ebdaaf', ['#b08a6a', '#728d55', '#928a7b', '#c9b27c']), relief: 'hills', arrival: 'pier',
+    names: { town: 'Station Town', forest: 'Green Fields', peaks: 'Tunnel Hill' },
+    land: [
+      '...........',
+      '......bbb..',
+      '.....bpP5b.',
+      '....btpp4b.',
+      '...btttDb..',
+      '..bt3Btb...',
+      '.btt2fb....',
+      '.bftA1b....',
+      '.bGttb.....',
+      '..bLbb.....',
+      '...........'],
+    steps: [
+      { text: 'Help Mr. Haddad pull the signal lever.', place: { name: 'The signal box', look: 'signal' } },
+      { text: 'Check the clock before the train comes in.', place: { name: 'The platform', look: 'clocktower' } },
+      { text: 'Build a bus stop by the station.', build: 'busstop' },
+      { text: 'Find Home Island on the big map.', place: { name: 'The map room', look: 'house' } },
+      { text: 'Ride the train to the end of the line.' },
+    ],
+    later: { name: 'The engine shed', look: 'train', gate: { strand: 'functional', step: 4 } },
+    keepsake: { icon: '🎫', name: 'a train ticket' }, pieces: ['signal', 'train', 'busstop'] },
+  airfield: { id: 'airfield', name: 'Cloud Hill', ...pal('#d9ddd0', '#b6d791', '#d0e1c1', '#e7ddb9', ['#9aa08e', '#7e9a5c', '#8fa585', '#c7b88a']), relief: 'hills', arrival: 'plane',
+    names: { town: 'The Runway', forest: 'Hill Meadow', peaks: 'Cloud Top' },
+    land: [
+      '...........',
+      '...bffb....',
+      '..bfpPpfb..',
+      '.bfpGPppfb.',
+      '.bfpp4pptb.',
+      '.bttttttttb',
+      '.bA1ttt2Bb.',
+      '.bffftC3fb.',
+      '..bfffffb..',
+      '...bbLbb...',
+      '...........'],
+    steps: [
+      { text: 'Help Captain Ada open the hangar doors.', place: { name: 'The hangar', look: 'hangar' } },
+      { text: 'Check the windsock to see which way the wind blows.', place: { name: 'The windsock', look: 'kite' } },
+      { text: 'Hand Captain Ada the tools to fix the plane.', sessions: 2, then: 'The plane needs one more fix. Next session, finish the job.', place: { name: 'The workshop', look: 'house' } },
+      { text: 'Build a weather station so pilots know the wind.', build: 'weather' },
+    ],
+    later: { name: 'The lookout', look: 'telescope', gate: { strand: 'narrative', step: 4 } },
+    keepsake: { icon: '✈️', name: "a pilot's badge" }, pieces: ['plane', 'weather', 'rocket'] },
+  australia: { id: 'australia', name: 'Australia', ...pal('#ebcda5', '#abca90', '#da9470', '#f1dbab', ['#b98a5c', '#76935a', '#a85f3d', '#cdb27a']), relief: 'redrock', arrival: 'plane',
+    names: { town: 'Bluegum Town', forest: 'Gum Forest', peaks: 'Red Rock' },
+    land: [
+      '....bb.....',
+      '..bffffb...',
+      '.bfffBffb..',
+      'bfff2ffpfb.',
+      'bttfffPPpfb',
+      'bttt3pPPpfb',
+      'bGtttppp4Db',
+      '.btA1tttffb',
+      '.bbtttttfb.',
+      '..bbbLbbb..',
+      '...........'],
+    steps: [
+      { text: 'Help Ranger Tess plant a young gum tree.', place: { name: 'The young gum trees', look: 'garden' } },
+      { text: 'Find Gumnut asleep in a tree.', place: { name: 'The koala walk', look: 'koala' } },
+      { text: 'Put up a camp tent for the night walk.', build: 'tent' },
+      { text: 'Have a picnic with Ranger Tess by the creek.', place: { name: 'The picnic spot', look: 'bench' } },
+    ],
+    later: { name: "The keeper's hut", look: 'cabin', gate: { strand: 'functional', step: 5 } },
+    keepsake: { icon: '🍃', name: 'a gum leaf' }, pieces: ['koala', 'garden', 'tent'] },
 };
 /** The island for a journey stop. The take-off is still Cloud Hill; anything unknown is Home Island. */
 export const islandOf = (stop: string) => (stop === 'takeoff' ? 'airfield' : ISLANDS[stop] ? stop : 'home');
 
-/** An area is open once he has finished more sessions on the island than the areas before it (all of them once he has
- * sailed on), or, for the fourth, once its lantern is lit. */
-export function areaOpen(a: Area, i: number, o: { sessions: number; left: boolean; lit: Record<'functional' | 'narrative' | 'philosophical', boolean[]> }) {
-  if (a.gate) return !!o.lit[a.gate.strand][a.gate.step - 1];
-  return o.left || o.sessions > i;
+// LTF-48: an island's land, read once from its rows.
+const HEIGHT: Record<string, number> = { b: 0.25, t: 0.5, f: 0.75, p: 1.5, P: 2.75 };
+const GROUND: Record<string, Region> = { b: 'beach', t: 'town', f: 'forest', p: 'peaks', P: 'peaks' };
+export interface Layout { tiles: Tile[]; landing?: string; stones: string[]; places: Map<number | 'later', string>; high: Set<string> }
+const layouts = new Map<string, Layout>();
+export function layoutOf(def: IslandDef): Layout {
+  if (!def.land.length) return { tiles: TILES, stones: [], places: new Map(), high: new Set() };
+  if (!layouts.has(def.id)) {
+    const ch = (r: number, c: number) => def.land[r]?.[c] ?? '.';
+    const out: Layout = { tiles: [], stones: [], places: new Map(), high: new Set() };
+    for (let r = 0; r < N; r++) for (let c = 0; c < N; c++) {
+      const k = `${r},${c}`, m = ch(r, c);
+      if (m === '.') continue;
+      if (m >= '1' && m <= '5') out.stones[+m - 1] = k;
+      else if (m >= 'A' && m <= 'E') out.places.set(m.charCodeAt(0) - 65, k);
+      else if (m === 'G') out.places.set('later', k);
+      else if (m === 'L') out.landing = k;
+      if (m === 'P') out.high.add(k);
+      // A mark stands on the ground most of its neighbours have (the landing on the beach).
+      const near = [ch(r - 1, c), ch(r + 1, c), ch(r, c - 1), ch(r, c + 1)];
+      const g = m === 'L' ? 'b' : GROUND[m] ? m : [...'tfbpP'].sort((x, y) => near.filter((n) => n === y).length - near.filter((n) => n === x).length)[0];
+      out.tiles.push({ r, c, region: GROUND[g], z: HEIGHT[g] });
+    }
+    layouts.set(def.id, out);
+  }
+  return layouts.get(def.id)!;
+}
+export const islandTiles = (def: IslandDef) => layoutOf(def).tiles;
+
+type Lit = Record<'functional' | 'narrative' | 'philosophical', boolean[]>;
+export interface IslandState { done: boolean[]; count: number[]; later: boolean }
+/** LTF-46: the quest's steps take finished sessions in order, or a thing he builds there; all of them are done once he
+ * has sailed on. The place that waits for a lantern opens with it. */
+export function questState(def: IslandDef, o: { sessions: number; left: boolean; built: ReadonlySet<string>; lit: Lit }): IslandState {
+  let spare = o.sessions;
+  const count = def.steps.map((s) => { if (s.build) return 0; const n = Math.min(spare, s.sessions ?? 1); spare -= n; return n; });
+  return {
+    done: def.steps.map((s, i) => o.left || (s.build ? o.built.has(s.build) : count[i] >= (s.sessions ?? 1))),
+    count,
+    later: !!def.later && !!o.lit[def.later.gate.strand][def.later.gate.step - 1],
+  };
+}
+/** The places on an island, each step's and then the one that waits for a lantern: where each sits and whether it is open. */
+export function placesOf(def: IslandDef, st?: IslandState) {
+  const at = layoutOf(def).places;
+  return [...def.steps.flatMap((s, i) => (s.place ? [{ ...s.place, at: at.get(i)!, open: !!st?.done[i] }] : [])),
+    ...(def.later ? [{ name: def.later.name, look: def.later.look, at: at.get('later')!, open: !!st?.later }] : [])];
 }
 
-const pathTiles = new Set(Object.values(PATHS).flat().map(([r, c]) => `${r},${c}`));
-const keep = new Set([...pathTiles, ...AREA_AT.map(([r, c]) => `${r},${c}`), `${ARRIVAL_AT[0]},${ARRIVAL_AT[1]}`]);
-const tilesFor = new Map<string, Tile[]>();
-/** The island's tiles: Home Island's, with its own bays (edge tiles left to the sea) and spits of beach beyond the old
- * coast. Paths, areas and the landing always stay. */
-export function islandTiles(def: IslandDef): Tile[] {
-  if (!def.coast) return TILES;
-  if (!tilesFor.has(def.id)) {
-    const out: Tile[] = [];
-    for (let r = 0; r < N; r++) for (let c = 0; c < N; c++) {
-      const h = c - r, d = r + c, e = (h / 6.6) ** 2 + ((d - 10) / 7.6) ** 2, k = `${r},${c}`;
-      const base = TILES.find((t) => t.r === r && t.c === c);
-      if (base && (keep.has(k) || e < 0.55 || noise(r + def.coast, c * 2 + def.coast) > 0.45)) out.push(base);
-      else if (!base && e < 1.45 && d >= 8 && d <= 18 && noise(r * 3 + def.coast, c + def.coast * 2) > 0.5) out.push({ r, c, region: 'beach', z: 0.25 });
-    }
-    tilesFor.set(def.id, out);
-  }
-  return tilesFor.get(def.id)!;
+/** What nothing can be built on: Home Island's paths and landmarks; elsewhere the marks, the tops and a few features. */
+function marksOn(def: IslandDef) {
+  const lay = layoutOf(def);
+  return new Set([...(lay.landing ? [lay.landing] : []), ...lay.stones, ...lay.places.values(), ...lay.high]);
 }
 const decoFor = new Map<string, Set<string>>();
 /** A few of the island's own features (boulders, palms, rock layers) on open ground, so it reads as a different place. */
 function islandDeco(def: IslandDef): Set<string> {
-  if (!def.coast) return new Set();
+  if (!def.land.length) return new Set();
   if (!decoFor.has(def.id)) {
-    const spots = new Set(def.areas.flatMap((_, i) => areaSpots(def, i)));
-    const taken = new Set([...keep, ...spots]);
-    const open = islandTiles(def).filter((t) => t.region !== 'peaks' && !taken.has(`${t.r},${t.c}`));
-    decoFor.set(def.id, new Set(open.sort((a, b) => noise(b.r * 7 + def.coast, b.c * 5) - noise(a.r * 7 + def.coast, a.c * 5)).slice(0, 5).map((t) => `${t.r},${t.c}`)));
+    const marks = marksOn(def), seed = [...def.id].reduce((h, ch) => h + ch.charCodeAt(0), 0);
+    const spots = new Set(placesOf(def).flatMap((p) => spotsAround(def, p.at)));
+    const open = islandTiles(def).filter((t) => t.region !== 'peaks' && t.region !== 'beach' && !marks.has(`${t.r},${t.c}`) && !spots.has(`${t.r},${t.c}`));
+    decoFor.set(def.id, new Set(open.sort((a, b) => noise(b.r * 7 + seed, b.c * 5) - noise(a.r * 7 + seed, a.c * 5)).slice(0, 3).map((t) => `${t.r},${t.c}`)));
   }
   return decoFor.get(def.id)!;
 }
-/** The build spots in each area: the tiles around its landmark. */
-function areaSpots(def: IslandDef, i: number): string[] {
-  const [r, c] = AREA_AT[i];
-  const here = new Set(islandTiles(def).map((t) => `${t.r},${t.c}`));
+/** The build spots around a place: the land next to it. */
+function spotsAround(def: IslandDef, at: string): string[] {
+  const [r, c] = at.split(',').map(Number);
+  const land = new Set(islandTiles(def).map((t) => `${t.r},${t.c}`)), marks = marksOn(def);
   const out: string[] = [];
   for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++) {
     const k = `${r + dr},${c + dc}`;
-    if ((dr || dc) && here.has(k) && !pathTiles.has(k) && !LANDMARKS.some((l) => `${l.r},${l.c}` === k && def.id === 'home')) out.push(k);
+    if ((dr || dc) && land.has(k) && !marks.has(k)) out.push(k);
   }
   return out;
 }
 function reservedOn(def: IslandDef) {
-  if (def.id === 'home') return reserved;
-  return new Set([...pathTiles, `${ARRIVAL_AT[0]},${ARRIVAL_AT[1]}`, ...def.areas.map((_, i) => `${AREA_AT[i][0]},${AREA_AT[i][1]}`), ...islandDeco(def)]);
+  return def.land.length ? new Set([...marksOn(def), ...islandDeco(def)]) : reserved;
+}
+/** LTF-48: things he built before an island had its own shape stay where they can, and otherwise stand on the nearest
+ * free spot. His log is never rewritten. */
+export function settle(placed: Placed[], def: IslandDef): Placed[] {
+  if (!def.land.length) return placed;
+  const tiles = islandTiles(def), res = reservedOn(def), used = new Set<string>();
+  return placed.map((p) => {
+    const free = (t: Tile) => !res.has(`${t.r},${t.c}`) && !used.has(`${t.r},${t.c}`);
+    const far = (t: Tile) => (t.r - p.y) ** 2 + (t.c - p.x) ** 2;
+    const beach = !!pieceById.get(p.piece)?.beach;
+    const near = (list: Tile[]) => [...list].sort((a, b) => far(a) - far(b))[0];
+    const t = tiles.find((x) => x.r === p.y && x.c === p.x && free(x)) ?? near(tiles.filter((x) => free(x) && (x.region === 'beach') === beach)) ?? near(tiles.filter(free));
+    if (!t) return p;
+    used.add(`${t.r},${t.c}`);
+    return t.r === p.y && t.c === p.x ? p : { ...p, x: t.c, y: t.r };
+  });
+}
+/** Where an island's name for a part sits: toward the side Home Island has it on (town left, green right, high ground at
+ * the back), so the names never sit on top of each other. */
+function labelSpot(def: IslandDef, region: Region) {
+  const side = (t: Tile) => (region === 'town' ? t.r - t.c : region === 'forest' ? t.c - t.r : -(t.r + t.c) * 2 + t.z);
+  return islandTiles(def).filter((t) => t.region === region).sort((a, b) => side(b) - side(a))[0] ?? null;
 }
 
 /** Island drawings that are not pieces he can build. */
@@ -527,23 +704,28 @@ export interface IslandProps {
   hour?: number;
   /** How far along the journey: 0 Home Island to 5 Australia. Shows small clues on the horizon. */
   stage?: number;
-  /** LTF-36: which island, and which of its areas are open. Home Island when left out. */
+  /** LTF-36: which island, and how far its quest has come. Home Island when left out. */
   island?: IslandDef;
-  areas?: readonly boolean[];
+  state?: IslandState;
 }
 
-export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = new Date().getHours(), stage = 0, island = ISLANDS.home, areas = [] }: IslandProps) {
+export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = new Date().getHours(), stage = 0, island = ISLANDS.home, state }: IslandProps) {
   const t = skyFor(hour);
   const home = island.id === 'home';
   const deco = islandDeco(island);
-  const spots = placing ? new Set(freeTiles(placed, peaksOpen, pieceById.get(placing.piece)?.beach, island, areas).map((x) => `${x.r},${x.c}`)) : null;
+  const spots = placing ? new Set(freeTiles(placed, peaksOpen, pieceById.get(placing.piece)?.beach, island, state).map((x) => `${x.r},${x.c}`)) : null;
+  const lay = layoutOf(island);
+  const places = placesOf(island, state);
   const look = new Map<string, { draw: ReactNode; title: string }>(home ? [] : [
-    [`${ARRIVAL_AT[0]},${ARRIVAL_AT[1]}`, { draw: drawLook(island.arrival ?? 'pier', t.night), title: `Where you came ashore on ${island.name}` }],
-    ...island.areas.flatMap((a, i) => (areas[i] ? [[`${AREA_AT[i][0]},${AREA_AT[i][1]}`, { draw: drawLook(a.look, t.night), title: a.name }] as [string, { draw: ReactNode; title: string }]] : [])),
+    [lay.landing!, { draw: drawLook(island.arrival ?? 'pier', t.night), title: `Where you came ashore on ${island.name}` }],
+    ...places.filter((p) => p.open).map((p) => [p.at, { draw: drawLook(p.look, t.night), title: p.name }] as [string, { draw: ReactNode; title: string }]),
   ]);
-  const byTile = new Map(placed.map((p) => [`${p.y},${p.x}`, p]));
+  const byTile = new Map(settle(placed, island).map((p) => [`${p.y},${p.x}`, p]));
+  // His lantern paths on Home Island; elsewhere the island's own steps (LTF-46).
   const pathAt = new Map<string, { strand: 'functional' | 'narrative' | 'philosophical'; i: number }>();
-  (Object.keys(PATHS) as (keyof typeof PATHS)[]).forEach((strand) => PATHS[strand].forEach(([r, c], i) => pathAt.set(`${r},${c}`, { strand, i })));
+  if (home) (Object.keys(PATHS) as (keyof typeof PATHS)[]).forEach((strand) => PATHS[strand].forEach(([r, c], i) => pathAt.set(`${r},${c}`, { strand, i })));
+  const stoneAt = new Map(lay.stones.map((k, i) => [k, i]));
+  const next = state ? state.done.indexOf(false) : -1;
   const strandColor = { functional: '#f2b04a', narrative: '#58b38a', philosophical: '#a68be0' };
   const sorted = [...islandTiles(island)].sort((a, b) => a.r + a.c - (b.r + b.c) || a.c - b.c);
 
@@ -560,6 +742,7 @@ export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = ne
     const lm = home ? LANDMARKS.find((l) => l.r === tl.r && l.c === tl.c) : undefined;
     const isle = look.get(key);
     const path = pathAt.get(key);
+    const stone = stoneAt.get(key);
     const canPlace = spots?.has(key);
     const [zx, zy] = pr([0, 0, z]);
     return <g key={key} transform={`translate(${ox} ${oy})`}>
@@ -568,13 +751,14 @@ export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = ne
       <g transform={`translate(${zx} ${zy + z * ZH})`}>
         <g transform={`translate(0 ${-z * ZH})`}>
           {path && <PathStone strand={path.strand} lit={lit[path.strand][path.i]} here={here[path.strand] === path.i} color={strandColor[path.strand]} n={path.i + 1} night={t.night} />}
+          {stone !== undefined && <PathStone strand="quest" lit={!!state?.done[stone]} here={next === stone} color="#d9714e" n={stone + 1} night={t.night} lantern={false} />}
           {lm && <Landmark kind={lm.kind} night={t.night} peaksOpen={peaksOpen} />}
           {isle && <g><title>{isle.title}</title>{isle.draw}</g>}
-          {!lm && !isle && !path && !piece && ((tl.region === 'peaks' && tl.r + tl.c <= 4) || deco.has(key)) && <Relief kind={island.relief} seed={noise(tl.r, tl.c)} />}
+          {!lm && !isle && !path && stone === undefined && !piece && ((home ? tl.region === 'peaks' && tl.r + tl.c <= 4 : lay.high.has(key)) || deco.has(key)) && <Relief kind={island.relief} seed={noise(tl.r, tl.c)} />}
           {piece && <g className={fresh === p!.id ? 'newpiece moves' : undefined}><title>{piece.name}</title>{piece.draw(t.night)}</g>}
         </g>
       </g>
-      {canPlace && <g className="tile-btn" role="button" tabIndex={0} aria-label={`Put it here: ${tl.region === 'town' ? 'Harbor Town' : tl.region === 'forest' ? 'Story Woods' : tl.region === 'peaks' ? 'Lantern Peaks' : 'the beach'}, spot ${tl.r + 1}-${tl.c + 1}`}
+      {canPlace && <g className="tile-btn" role="button" tabIndex={0} aria-label={`Put it here: ${tl.region === 'beach' ? 'the beach' : island.names[tl.region]}, spot ${tl.r + 1}-${tl.c + 1}`}
         onClick={() => placing!.onPlace(tl.c, tl.r)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); placing!.onPlace(tl.c, tl.r); } }}>
         <polygon className="tile-spot top" points={pts(topPts)} />
       </g>}
@@ -582,33 +766,35 @@ export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = ne
   };
 
   return <div className="island-wrap" style={{ ['--sky' as string]: `linear-gradient(${t.sky}, ${t.sea2} 28%, ${t.sea})` }}>
-    <svg viewBox={`${VB.x} ${VB.y} ${VB.w} ${VB.h}`} preserveAspectRatio="xMidYMid meet" role={placing ? 'group' : 'img'} aria-label={`${home ? 'Your island' : island.name}. Harbor Town, Story Woods and Lantern Peaks.${island.areas.some((_, i) => !areas[i]) ? ` Still closed: ${island.areas.filter((_, i) => !areas[i]).map((a) => a.name).join(', ')}.` : ''}`}>
+    <svg viewBox={`${VB.x} ${VB.y} ${VB.w} ${VB.h}`} preserveAspectRatio="xMidYMid meet" role={placing ? 'group' : 'img'} aria-label={`${home ? 'Your island' : island.name}. ${island.names.town}, ${island.names.forest} and ${island.names.peaks}.${places.some((p) => !p.open) ? ` Still closed: ${places.filter((p) => !p.open).map((p) => p.name).join(', ')}.` : ''}`}>
       <Defs />
       {t.night && Array.from({ length: 40 }, (_, i) => <circle key={i} cx={VB.x + noise(i, 3) * VB.w} cy={VB.y + noise(i, 7) * 90} r={noise(i, 11) * 1.4 + 0.4} fill="#fff" opacity={0.4 + noise(i, 5) * 0.5} />)}
       {Array.from({ length: 14 }, (_, i) => <path key={i} className="wave moves" style={{ animationDelay: `${-i * 0.7}s` }} d={`M${VB.x + noise(i, 1) * VB.w} ${VB.y + 40 + noise(i, 2) * (VB.h - 40)} q10 -4 20 0 t20 0`} stroke="#ffffff" strokeOpacity="0.45" strokeWidth="2" fill="none" />)}
       <ellipse cx="0" cy="175" rx="290" ry="135" fill="#ffffff" opacity="0.14" />
       <Horizon stage={stage} night={t.night} />
       {sorted.map(tile)}
-      {island.areas.map((a, i) => { if (areas[i]) return null; const [x, y] = pr([AREA_AT[i][1] + 0.5, AREA_AT[i][0] + 0.5, 0.6]); return <g key={a.name} pointerEvents="none">
-        <ellipse className="mist moves" cx={x} cy={y} rx="62" ry="27" fill="#fff" opacity="0.72" /><text x={x} y={y + 6} textAnchor="middle" fontSize="17">🔒</text></g>; })}
-      {!peaksOpen && <g className="mist moves" opacity="0.55" pointerEvents="none">
+      {places.filter((p) => !p.open).map((p) => { const [r, c] = p.at.split(',').map(Number); const [x, y] = pr([c + 0.5, r + 0.5, 0.6]); return <g key={p.name} pointerEvents="none">
+        <ellipse className="mist moves" cx={x} cy={y} rx="40" ry="19" fill="#fff" opacity="0.72" /><text x={x} y={y + 6} textAnchor="middle" fontSize="17">🔒</text></g>; })}
+      {home && !peaksOpen && <g className="mist moves" opacity="0.55" pointerEvents="none">
         <ellipse cx="-20" cy="20" rx="150" ry="40" fill="#fff" /><ellipse cx="40" cy="-10" rx="110" ry="30" fill="#fff" /><ellipse cx="-70" cy="-15" rx="80" ry="24" fill="#fff" />
       </g>}
       {!t.night && [0, 1].map((i) => <g key={i} className="cloud moves" style={{ animationDelay: `${-i * 45}s` }} opacity="0.75"><ellipse cx={-420} cy={-80 + i * 60} rx="46" ry="14" fill="#fff" /><ellipse cx={-400} cy={-90 + i * 60} rx="30" ry="14" fill="#fff" /></g>)}
     </svg>
-    <span className="island-label" style={labelAt(8, 2, 0.6)}>Harbor Town</span>
-    <span className="island-label" style={labelAt(2, 8, 0.6)}>Story Woods</span>
-    <span className="island-label" style={labelAt(0, 1, 4.6)}>Lantern Peaks{peaksOpen ? '' : ' · coming up'}</span>
+    {home ? <>
+      <span className="island-label" style={labelAt(8, 2, 0.6)}>Harbor Town</span>
+      <span className="island-label" style={labelAt(2, 8, 0.6)}>Story Woods</span>
+      <span className="island-label" style={labelAt(0, 1, 4.6)}>Lantern Peaks{peaksOpen ? '' : ' · coming up'}</span>
+    </> : (['town', 'forest', 'peaks'] as const).map((g) => { const at = labelSpot(island, g); return at && <span key={g} className="island-label" style={labelAt(at.r, at.c, at.z + (g === 'peaks' ? 1.4 : 0.5))}>{island.names[g]}</span>; })}
   </div>;
 }
 
-function PathStone({ strand, lit, here, color, n, night }: { strand: string; lit: boolean; here: boolean; color: string; n: number; night: boolean }) {
+function PathStone({ strand, lit, here, color, n, night, lantern = true }: { strand: string; lit: boolean; here: boolean; color: string; n: number; night: boolean; lantern?: boolean }) {
   const [x, y] = pr([0.5, 0.5, 0]);
   return <g aria-label={`${strand} step ${n}${lit ? ', done' : ''}`}>
     <ellipse cx={x} cy={y} rx="20" ry="10" fill={lit ? color : '#d8d2c4'} stroke={shade(lit ? color : '#d8d2c4', -0.3)} strokeWidth="1.5" />
     <text x={x} y={y + 4} textAnchor="middle" fontSize="11" fontWeight="800" fill={lit ? '#fff' : '#7a7466'}>{n}</text>
-    {lit && cyl(0.78, 0.25, 0.025, 0, 1, '#5a5a66')}
-    {lit && (() => { const [lx, ly] = pr([0.78, 0.25, 1.1]); return <><circle cx={lx} cy={ly} r={night ? 20 : 12} fill="url(#glow)" /><rect x={lx - 5} y={ly - 7} width="10" height="12" rx="3" fill="#ffe08a" stroke="#4a4a52" /></>; })()}
+    {lit && lantern && cyl(0.78, 0.25, 0.025, 0, 1, '#5a5a66')}
+    {lit && lantern && (() => { const [lx, ly] = pr([0.78, 0.25, 1.1]); return <><circle cx={lx} cy={ly} r={night ? 20 : 12} fill="url(#glow)" /><rect x={lx - 5} y={ly - 7} width="10" height="12" rx="3" fill="#ffe08a" stroke="#4a4a52" /></>; })()}
     {here && (() => { const [fx, fy] = pr([0.3, 0.6, 0]); return <g><line x1={fx} y1={fy} x2={fx} y2={fy - 40} stroke="#3a3a44" strokeWidth="2.5" /><path className="flame moves" d={`M${fx} ${fy - 40} l20 6 l-20 7 z`} fill={color} stroke={shade(color, -0.3)} /></g>; })()}
   </g>;
 }

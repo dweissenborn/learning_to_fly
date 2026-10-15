@@ -299,12 +299,16 @@ const FORMAT_NAME: Record<string, string> = { tap: 'Choose', order: 'Put in orde
 function Guessing({ events, settings }: { events: LogEvent[]; settings: Settings }) {
   const g = useMemo(() => guessing(events), [events]);
   const suggest = g.startMinute !== undefined ? Math.max(5, g.startMinute - 1) : undefined;
+  // LTF-49: where he said he was not sure, by skill.
+  const unsure = events.flatMap((e) => (e.type === 'activity' && e.kind === 'unsure' && e.item ? [pool.items.get(e.item)?.skill] : [])).filter(Boolean) as SkillId[];
+  const where = [...new Set(unsure)].map((s) => `${skillName(s)} (${unsure.filter((x) => x === s).length})`).join(', ');
   return <section className="card stack">
-    <h2>Guessing and breaks</h2>
+    <h2>Guessing, breaks and asking for help</h2>
     <div className="kv">
       <span>Answers set aside as guesses</span><b>{g.setAside}</b>
       <span>Sessions stopped kindly for guessing</span><b>{g.rapidStops}</b>
       <span>Breaks he asked for</span><b>{g.breaks}</b>
+      <span>Times he said he was not sure</span><b>{unsure.length}{where ? `: ${where}` : ''}</b>
       {g.startMinute !== undefined && <><span>Guessing usually starts</span><b>around minute {g.startMinute}</b></>}
     </div>
     <p className="tagline">A first tap faster than anyone could read the question is a guess. It earns no points and counts neither for nor against him. Two in a row, both wrong, end the session kindly: "Good place to stop. Your progress is saved." Tapping through to the answer is often a way out of work that has become too much, so asking for a break is always honoured and takes him to the lounge.</p>
@@ -590,10 +594,13 @@ function SettingsTab({ settings, progress, onRescout, onGrammar }: { settings: S
       <Seg label="End sessions on a success after" value={settings.endAt ?? 0} options={[[0, 'Off'], [8, '8 min'], [10, '10 min'], [12, '12 min'], [15, '15 min']]} onChange={(endAt) => saveSettings({ endAt })} />
       <p className="tagline">After this time, the next answer he gets right on the first tap ends the session, so it ends on a success before he tires. The Activity tab shows when guessing tends to start.</p>
       <Toggle on={settings.fastTrack} onChange={(fastTrack) => saveSettings({ fastTrack })}>Fast track: one flawless session can master a skill</Toggle>
-      <p className="tagline">For a learner who locks a skill in once he sees how. It needs every answer right first time, a new format, and a level 3 or harder text. Reviews at 3, 7 and 21 days still check that it lasts. Harder levels (4 and 5) open by themselves after two right answers in a row.</p>
+      <p className="tagline">For a learner who locks a skill in once he sees how. It needs every answer right first time, a new format, and a level 3 or harder text. Reviews at 3, 7 and 21 days still check that it lasts. Harder levels (4 and 5) open by themselves after three right answers in a row.</p>
       <div className="field"><label htmlFor="reset">Calm-down words his school uses</label>
         <input id="reset" className="input" placeholder="For example: reset, breathe, try a new plan" defaultValue={settings.resetWords} onBlur={(e) => saveSettings({ resetWords: e.target.value })} /></div>
       <p className="tagline">Shown with the journey's setbacks, so home and school use the same words.</p>
+      <div className="field"><label htmlFor="helper">Who he asks for help</label>
+        <input id="helper" className="input" placeholder="a grown-up" defaultValue={settings.helper} onBlur={(e) => saveSettings({ helper: e.target.value.trim() || undefined })} /></div>
+      <p className="tagline">When he presses "I'm not sure" on a question, {GUIDES[settings.guide].name} says: "That's OK. Ask {settings.helper?.trim() || 'a grown-up'} to help you with this one." An answer after that counts as helped, like the clue. The Activity tab shows where he asked.</p>
       <Seg label="Your-turn items per session" value={settings.yourTurn} onChange={(yourTurn) => saveSettings({ yourTurn })} options={[[3, '3'], [4, '4'], [5, '5']]} />
       <Seg label="Wait before a hint in “together”" value={settings.hintDelay} onChange={(hintDelay) => saveSettings({ hintDelay })} options={[[5, '5 s'], [8, '8 s'], [12, '12 s'], [20, '20 s']]} />
       <Toggle on={settings.clueFirst} onChange={(clueFirst) => saveSettings({ clueFirst })}>Show the clue at once on a new skill's first guided question</Toggle>
