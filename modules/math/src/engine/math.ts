@@ -23,7 +23,9 @@ export interface MathProblem {
   bar?: { parts: number; shaded: number };
 }
 export type MathError = 'not-simplest' | 'not-mixed' | 'not-improper' | 'added-whole' | 'no-flip' | 'flipped-first' | 'added-across'
-  | 'cross-multiplied' | 'added-not-multiplied' | 'remainder-too-big' | 'neighbour-fact' | 'not-greatest';
+  | 'cross-multiplied' | 'added-not-multiplied' | 'remainder-too-big' | 'neighbour-fact' | 'not-greatest'
+  // LTF-43: named too, so every kind of problem has wrong choices built from real mistakes
+  | 'counted-unshaded' | 'part-over-part' | 'upside-down' | 'no-remainder' | 'divided-one' | 'common-multiple' | 'kept-top' | 'multiplied-top-only' | 'flipped-both';
 export interface Judged { right: boolean; error?: MathError; incomplete?: boolean }
 
 /** The skills with typed problems. FR1 reads a fraction off a bar picture; placing one on a 0 to 1 line comes later. */
@@ -57,11 +59,14 @@ function slips(p: MathProblem): [MathError, Frac][] {
   const [a, b] = [p.a, p.b];
   switch (p.op) {
     case 'fact': return [[`neighbour-fact`, [a[0] * (b[0] - 1), 1]], ['neighbour-fact', [a[0] * (b[0] + 1), 1]], ['neighbour-fact', [(a[0] - 1) * b[0], 1]], ['neighbour-fact', [(a[0] + 1) * b[0], 1]]];
-    case 'gcf': { const g = gcd(a[0], b[0]); const lower: [MathError, Frac][] = []; for (let k = 2; k < g; k++) if (g % k === 0) lower.push(['not-greatest', [k, 1]]); return lower; }
+    case 'quot': return [['neighbour-fact', [a[0] / b[0] - 1, 1]], ['neighbour-fact', [a[0] / b[0] + 1, 1]]];
+    case 'gcf': { const g = gcd(a[0], b[0]); const lower: [MathError, Frac][] = []; for (let k = 1; k < g; k++) if (g % k === 0) lower.push(['not-greatest', [k, 1]]); return [...lower, ['common-multiple', [(a[0] * b[0]) / g, 1]]]; }
+    case 'shade': return [['counted-unshaded', [a[1] - a[0], a[1]]], ['part-over-part', [a[0], a[1] - a[0]]], ['upside-down', [a[1], a[0]]]];
+    case 'simplify': { const g = gcd(a[0], a[1]); return [['divided-one', [a[0] / g, a[1]]], ['divided-one', [a[0], a[1] / g]]]; }
     case 'toimproper': { const w = Math.floor(a[0] / a[1]); return [['added-whole', [w + (a[0] % a[1]), a[1]]]]; }
-    case 'mul': return [['added-across', [a[0] + b[0], a[1] + b[1]]], ['cross-multiplied', [a[0] * b[1], a[1] * b[0]]]];
-    case 'div': return [['no-flip', times(a, b)], ['flipped-first', times(flip(a), b)]];
-    case 'equiv': return [['added-not-multiplied', [a[0] + (b[0] - a[1]), b[0]]]];
+    case 'mul': return [['added-across', [a[0] + b[0], a[1] + b[1]]], ['cross-multiplied', [a[0] * b[1], a[1] * b[0]]], ['multiplied-top-only', [a[0] * b[0], a[1]]]];
+    case 'div': return [['no-flip', times(a, b)], ['flipped-first', times(flip(a), b)], ['flipped-both', times(flip(a), flip(b))]];
+    case 'equiv': return [['added-not-multiplied', [a[0] + (b[0] - a[1]), b[0]]], ['kept-top', [a[0], b[0]]]];
     default: return [];
   }
 }
@@ -71,7 +76,7 @@ export function judge(p: MathProblem, e: Entry): Judged {
   const w = int(e.whole), n = int(e.num), d = int(e.den), r = int(e.rem);
   if (p.op === 'divrem') {
     if (w === undefined || r === undefined) return { right: false, incomplete: true };
-    if (w * p.b[0] + r !== p.a[0]) return { right: false };
+    if (w * p.b[0] + r !== p.a[0]) return r === 0 && w === Math.floor(p.a[0] / p.b[0]) ? { right: false, error: 'no-remainder' } : { right: false };
     return r < p.b[0] ? { right: true } : { right: false, error: 'remainder-too-big' };
   }
   const hasFrac = n !== undefined || d !== undefined;
@@ -145,4 +150,42 @@ export function makeProblem(skill: string, rng: () => number): MathProblem {
     }
     default: throw new Error(`no plain problems for ${skill}`);
   }
+}
+
+// ---------------------------------------------------------------- the help ladder's choices (LTF-43)
+export interface Choice { entry: Entry; text: string; right: boolean; error?: MathError }
+/** How an answer reads on a choice button. */
+export const entryText = (e: Entry) => (e.rem !== undefined ? `${e.whole} r ${e.rem}` : `${e.whole && e.num ? `${e.whole} ` : e.whole ?? ''}${e.num ? `${e.num}/${e.den}` : ''}`);
+const raw = ([n, d]: Frac): Entry => (d === 1 ? { whole: `${n}` } : { num: `${n}`, den: `${d}` });
+function shuffle<T>(xs: T[], rng: () => number): T[] {
+  const out = [...xs];
+  for (let i = out.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [out[i], out[j]] = [out[j], out[i]]; }
+  return out;
+}
+
+/** Three choices: the answer and two wrong ones, built from the usual mistakes where there are any (each then gets its
+ * own next step), otherwise from a nearby number. The right one moves around. */
+export function choicesFor(p: MathProblem, rng: () => number): Choice[] {
+  const t = target(p), mixed = p.shape === 'mixed';
+  const named: Entry[] = [];
+  if (p.op === 'simplify') named.push(raw(p.a)); // equal, but not in simplest form
+  if (p.op === 'tomixed') named.push(raw(p.a)); // equal, but not a mixed number
+  if (p.op === 'divrem') named.push({ whole: `${t[0] - 1}`, rem: `${p.a[0] - (t[0] - 1) * p.b[0]}` }, { whole: `${t[0]}`, rem: '0' });
+  for (const [, v] of slips(p)) if (v[0] > 0 && v[1] > 0) named.push(raw(v), asEntry(v, mixed));
+  const near = p.op === 'divrem' ? [{ whole: `${t[0] + 1}`, rem: `${p.a[0] % p.b[0]}` }] : [1, -1, 2].flatMap((d) => (t[0] + d > 0 ? [asEntry([t[0] + d, t[1]], mixed)] : []));
+  const out: Choice[] = [{ entry: p.answer!, text: entryText(p.answer!), right: true }];
+  for (const e of [...shuffle(named, rng), ...near]) {
+    if (out.length === 3) break;
+    const text = entryText(e), j = judge(p, e);
+    if (j.right || j.incomplete || out.some((c) => c.text === text)) continue;
+    out.push({ entry: e, text, right: false, error: j.error });
+  }
+  return shuffle(out, rng);
+}
+
+/** LTF-43: faster than this, a first answer is a guess: time to read the problem, plus time to tap the answer in. */
+export function mathMinMs(p: MathProblem, choices: boolean): number {
+  const read = Math.max(1500, p.prompt.split(/\s+/).filter(Boolean).length * 100);
+  const keys = Object.values(p.answer ?? {}).join('').length;
+  return read + (choices ? 0 : keys * 300);
 }

@@ -29,6 +29,15 @@ export const MATH_HINT: Record<MathError, string> = {
   'remainder-too-big': 'The remainder must be smaller than the number you divide by. Can one more group fit?',
   'neighbour-fact': 'Close! That is the fact next to this one. Check it on the multiplication chart.',
   'not-greatest': 'That is a common factor. Is there a bigger one that divides both numbers?',
+  'counted-unshaded': 'The top number counts the shaded parts, not the white ones.',
+  'part-over-part': 'The bottom number counts all the equal parts, shaded or not.',
+  'upside-down': 'The top number is the shaded parts. The bottom number is all the parts.',
+  'no-remainder': 'Something is left over. How many are left after the groups?',
+  'divided-one': 'Divide the top and the bottom by the same number.',
+  'common-multiple': 'That is a common multiple. A factor divides into both numbers.',
+  'kept-top': 'The bottom was multiplied. Multiply the top by the same number.',
+  'multiplied-top-only': 'Multiply the bottoms too, not only the tops.',
+  'flipped-both': 'Keep the first fraction as it is. Flip only the second one.',
 };
 
 export function Keypad({ shape, value, onChange, onCheck, wholeOptional }: { shape: MathProblem['shape']; value: Entry; onChange: (e: Entry) => void; onCheck: () => void; wholeOptional?: boolean }) {

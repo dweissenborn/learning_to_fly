@@ -6,7 +6,7 @@ import { useMemo, useRef, useState } from 'react';
 import { ALL_SKILLS, mulberry32, pointsFor, type Progress } from '@wayfinder/engine';
 import type { AnswerEvent, LogEvent } from '@wayfinder/schema';
 import { Btn, Finish, finishedCount, Guide, log, sfx, SpeakBtn, stopSpeaking, type Settings } from '@wayfinder/web/host';
-import { judge, makeProblem, type Entry, type MathProblem } from '../engine/math';
+import { choicesFor, judge, makeProblem, mathMinMs, type Entry, type MathProblem } from '../engine/math';
 import { checkinNext, deriveMath } from '../engine/mathPath';
 import type { MathSettings } from '../settings';
 import { FractionBar, Keypad, MATH_HINT, MATH_NAME } from './MathView';
@@ -38,39 +38,65 @@ export function workedSteps(p: MathProblem): string[] {
 /** Every math screen has the same top bar, so the page lays out as reading's does. */
 const Top = ({ label }: { label?: string }) => <header className="topbar strand-math"><h1 style={{ margin: 0, fontSize: '1.4rem' }}>🧮 Math</h1><span className="spacer" />{label && <span className="muted">{label}</span>}</header>;
 
-/** One problem on the keypad. A miss opens the named next step for one more try; a second miss shows the answer. */
-function MathItem({ p, phase, guide, onDone }: { p: MathProblem; phase: Phase; guide: Settings['guide']; onDone: (r: { correct: boolean; shown: boolean; tries: number; ms: number }) => void }) {
+/** What one problem's answer was: right first time with no help, helped (the Help step he reached, or 1 for the clue
+ * after a miss), shown after two misses, from the choices or the keypad, and a guess faster than reading (LTF-43). */
+type Answered = { correct: boolean; shown: boolean; tries: number; ms: number; hint: number; format: 'keypad' | 'choices'; rapid: boolean };
+const HELP_STEP = ['', 'Step 1 of 3: three choices. Pick one, or type your answer.', 'Step 2 of 3: a smaller step.', 'Step 3 of 3: here is how. Now you try it.'];
+const HELP_NEXT = ['', 'Help: show three choices', 'Help: a smaller step', 'Help: show me how'];
+
+/** One problem. On the keypad, or from three choices while a skill is new (LTF-43). One Help button with three steps:
+ * three choices, a smaller step, the worked answer; an answer after any step counts as helped. A miss opens the named
+ * next step for one more try; a second miss shows the answer (LTF-38). */
+function MathItem({ p, phase, guide, ramp = false, guessCheck = false, rng, onDone }: { p: MathProblem; phase: Phase; guide: Settings['guide']; ramp?: boolean; guessCheck?: boolean; rng: () => number; onDone: (r: Answered) => void }) {
   const [v, setV] = useState<Entry>({});
   const [tries, setTries] = useState(0);
   const [state, setState] = useState<null | 'right' | 'helped' | 'shown' | 'answered' | 'clue' | 'fill'>(null);
   const [error, setError] = useState<string>();
-  const start = useRef(Date.now());
-  const quiet = phase === 'placement' || phase === 'recheck'; // a check: no right or wrong shown, no second try
+  const [help, setHelp] = useState(0);
+  const start = useRef(Date.now()), first = useRef<number | undefined>(undefined), viaChoice = useRef(false);
+  const options = useMemo(() => choicesFor(p, rng), [p]); // eslint-disable-line react-hooks/exhaustive-deps
+  const quiet = phase === 'placement' || phase === 'recheck'; // a check: no right or wrong shown, no second try, no help
+  const showChoices = !quiet && (ramp || help >= 1);
   const done = state === 'right' || state === 'helped' || state === 'shown' || state === 'answered';
-  const check = () => {
+  const submit = (e: Entry, chosen: boolean) => {
     if (done) return;
-    const r = judge(p, v);
+    const r = judge(p, e);
     if (r.incomplete) { setState('fill'); return; }
+    first.current ??= Date.now() - start.current;
+    viaChoice.current = chosen;
     const t = tries + 1;
     setTries(t);
     if (quiet) { setState('answered'); setError(r.right ? 'right' : 'miss'); return; }
-    if (r.right) { if (t === 1) { setState('right'); sfx.good(); } else setState('helped'); return; }
+    if (r.right) { if (t === 1 && !help) { setState('right'); sfx.good(); } else setState('helped'); return; }
     if (t === 1) { setState('clue'); setError(r.error ? MATH_HINT[r.error] : 'Not this time. Check each step again.'); return; }
     setV(p.answer!); setState('shown');
   };
-  const next = () => onDone({ correct: tries === 1 && (quiet ? error === 'right' : state === 'right'), shown: state === 'shown', tries: Math.max(1, tries), ms: Date.now() - start.current });
+  // In choices mode the choices are already showing, so Help starts at the smaller step.
+  const more = () => setHelp((h) => (ramp && !h ? 2 : Math.min(3, h + 1)));
+  const next = () => onDone({
+    correct: tries === 1 && (quiet ? error === 'right' : state === 'right'), shown: state === 'shown', tries: Math.max(1, tries), ms: Date.now() - start.current,
+    hint: Math.max(help, tries > 1 ? 1 : 0), format: viaChoice.current ? 'choices' : 'keypad',
+    rapid: guessCheck && !quiet && (first.current ?? Infinity) < mathMinMs(p, viaChoice.current),
+  });
   return <div className="stack math-item">
     <div className="row"><p className="math-prompt" style={{ flex: 1 }}>{p.prompt}</p><SpeakBtn lines={[p.prompt.replace('÷', 'divided by').replace('×', 'times')]} k={'m-' + p.prompt} label="" className="small iconbtn" /></div>
     {p.bar && <FractionBar {...p.bar} />}
-    <Keypad key={p.prompt + (state === 'shown' ? '-shown' : '')} shape={p.shape} wholeOptional={p.form !== 'mixed'} value={v} onChange={(x) => { if (!done) { setV(x); if (state === 'fill') setState(null); } }} onCheck={check} />
+    {showChoices && <div className="tiles math-choices" role="group" aria-label="Choices">{options.map((o) =>
+      <Btn key={o.text} className={`big ${state === 'shown' && o.right ? 'on' : ''}`} isDisabled={done} onPress={() => submit(o.entry, true)}>{o.text}</Btn>)}</div>}
+    {(quiet || !ramp) && <Keypad key={p.prompt + (state === 'shown' ? '-shown' : '')} shape={p.shape} wholeOptional={p.form !== 'mixed'} value={v} onChange={(x) => { if (!done) { setV(x); if (state === 'fill') setState(null); } }} onCheck={() => submit(v, false)} />}
+    {help > 0 && !done && <div className="feedback hint appear" aria-live="polite"><Guide id={guide} mood="think" size={44} /><div className="stack" style={{ gap: '0.4rem' }}>
+      <span><b>{HELP_STEP[help]}</b>{help === 2 && ` ${workedSteps(p)[0]}`}</span>
+      {help === 3 && <ol className="math-steps">{workedSteps(p).map((x) => <li key={x}>{x}</li>)}</ol>}
+    </div></div>}
     <div aria-live="polite" className="stack">
       {state === 'fill' && <div className="feedback neutral appear"><Guide id={guide} size={44} /><span>Fill in every box first.</span></div>}
       {state === 'clue' && <div className="feedback hint appear"><Guide id={guide} mood="think" size={44} /><span>{error} Try once more.</span></div>}
       {state === 'right' && <div className="feedback good appear"><Guide id={guide} mood="happy" size={44} /><span><b>Right.</b></span></div>}
-      {state === 'helped' && <div className="feedback neutral appear"><Guide id={guide} size={44} /><span>You found it with the clue.</span></div>}
+      {state === 'helped' && <div className="feedback neutral appear"><Guide id={guide} size={44} /><span>{help ? 'You found it with help.' : 'You found it with the clue.'}</span></div>}
       {state === 'shown' && <div className="feedback neutral appear"><Guide id={guide} mood="think" size={44} /><span>Here is the answer. <b>Now you have seen how.</b></span></div>}
       {state === 'answered' && <div className="feedback neutral appear"><Guide id={guide} size={44} /><span>Got it. On to the next one.</span></div>}
     </div>
+    {!quiet && !done && help < 3 && <div className="row"><Btn className="small" onPress={more}><span aria-hidden>💡</span> {HELP_NEXT[ramp && !help ? 2 : help + 1]}</Btn></div>}
     {done && <Btn className="primary big appear" autoFocus onPress={next}>Next <span aria-hidden>→</span></Btn>}
   </div>;
 }
@@ -106,7 +132,7 @@ function Checkin({ settings, events, math, onExit, onBreak }: { settings: Settin
     <Top label="Scouting trip" />
     <main className="stack" style={{ maxWidth: 720, margin: '0 auto', width: '100%' }}>
       <div className="row"><span className="chip">{MATH_NAME[skill]}</span><span className="muted">Scouting · problem {onSkill + 1} of 2</span></div>
-      <MathItem key={`${skill}-${mine.length}`} p={p} phase="placement" guide={settings.guide} onDone={(r) => {
+      <MathItem key={`${skill}-${mine.length}`} p={p} phase="placement" guide={settings.guide} rng={rng} onDone={(r) => {
         const a = { type: 'answer', session: sid, item: `gen-${sid}-${mine.length}`, skill, phase: 'placement', correct: r.correct, hint: 0, tries: r.tries, ms: r.ms, format: 'keypad', module: 'math' } as const;
         void log(a);
         setMine((m) => [...m, { ...a, id: `local-${m.length}`, ts: Date.now() } as AnswerEvent]);
@@ -117,9 +143,9 @@ function Checkin({ settings, events, math, onExit, onBreak }: { settings: Settin
   </>;
 }
 
-type Step = { p: MathProblem; phase: Phase } | { watch: MathProblem };
+type Step = { p: MathProblem; phase: Phase; choices?: boolean } | { watch: MathProblem };
 
-export function MathSession({ settings, events, progress, math, onExit, onBreak }: { settings: Settings; events: LogEvent[]; progress: Progress; math: MathSettings; onExit: () => void; onBreak: (why: 'break') => void }) {
+export function MathSession({ settings, events, progress, math, onExit, onBreak }: { settings: Settings; events: LogEvent[]; progress: Progress; math: MathSettings; onExit: () => void; onBreak: (why: 'break' | 'rapid') => void }) {
   const state = useMemo(() => deriveMath(events, { opened: math.opened, known: math.known }), []); // eslint-disable-line react-hooks/exhaustive-deps
   const sid = useMemo(() => 'math-' + crypto.randomUUID(), []);
   const rng = useMemo(() => mulberry32(Date.now() % 2147483647), []);
@@ -131,13 +157,14 @@ export function MathSession({ settings, events, progress, math, onExit, onBreak 
     for (const s of state.review.slice(0, 2)) out.push({ p: makeProblem(s, rng), phase: 'warmup' });
     if (state.focus) {
       out.push({ watch: makeProblem(state.focus, rng) });
-      for (let k = 0; k < TOGETHER; k++) out.push({ p: makeProblem(state.focus, rng), phase: 'together' });
-      for (let k = 0; k < YOURTURN; k++) out.push({ p: makeProblem(state.focus, rng), phase: 'yourturn' });
+      const choices = state.skills[state.focus].choices; // LTF-43: a new skill starts with three choices
+      for (let k = 0; k < TOGETHER; k++) out.push({ p: makeProblem(state.focus, rng), phase: 'together', choices });
+      for (let k = 0; k < YOURTURN; k++) out.push({ p: makeProblem(state.focus, rng), phase: 'yourturn', choices });
     }
     return out;
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const [idx, setIdx] = useState(0);
-  const started = useRef(false);
+  const started = useRef(false), rapidRun = useRef(0);
   if (!state.checkin.done) return <Checkin settings={settings} events={events} math={math} onExit={onExit} onBreak={() => onBreak('break')} />;
   if (!plan.length) return <><Top /><main><div className="stack card center" style={{ maxWidth: 640, margin: '0 auto' }}>
     <h1 style={{ margin: 0 }}>Every math step is done for now</h1><p style={{ margin: 0 }}>Reviews come back when they are due.</p>
@@ -158,10 +185,13 @@ export function MathSession({ settings, events, progress, math, onExit, onBreak 
         <ol className="math-steps">{workedSteps(step.watch).map((s) => <li key={s}>{s}</li>)}</ol>
         <div className="row"><SpeakBtn lines={workedSteps(step.watch)} k={'w-' + step.watch.prompt} /><span className="spacer" /><Btn className="primary big" autoFocus onPress={() => { begin(); setIdx(idx + 1); }}>Got it <span aria-hidden>→</span></Btn></div>
       </section>
-        : <MathItem key={idx} p={step.p} phase={step.phase} guide={settings.guide} onDone={(r) => {
+        : <MathItem key={idx} p={step.p} phase={step.phase} guide={settings.guide} ramp={step.choices} guessCheck={settings.guessCheck !== false} rng={rng} onDone={(r) => {
           begin();
-          void log({ type: 'answer', session: sid, item: `gen-${sid}-${idx}`, skill: step.p.skill, phase: step.phase, correct: r.correct, hint: r.tries > 1 ? 1 : 0, tries: r.tries, ms: r.ms, format: 'keypad', module: 'math',
-            ...(r.shown ? { shown: true } : {}), points: pointsFor({ correct: r.correct, shown: r.shown }) });
+          void log({ type: 'answer', session: sid, item: `gen-${sid}-${idx}`, skill: step.p.skill, phase: step.phase, correct: r.correct, hint: r.hint, tries: r.tries, ms: r.ms, format: r.format, module: 'math',
+            ...(r.shown ? { shown: true } : {}), ...(r.rapid ? { rapid: true } : {}), points: pointsFor({ correct: r.correct, shown: r.shown, rapid: r.rapid }) });
+          // As in reading (LTF-38): two fast wrong answers in a row end the session kindly.
+          rapidRun.current = r.rapid && !r.correct ? rapidRun.current + 1 : 0;
+          if (rapidRun.current >= 2) { void log({ type: 'session', session: sid, action: 'stop', reason: 'rapid', module: 'math' }); onBreak('rapid'); return; }
           setIdx(idx + 1);
         }} />}
     </main>

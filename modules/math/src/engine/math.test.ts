@@ -2,7 +2,7 @@
 // and the usual wrong answers are recognised by name, so the feedback can say what happened.
 import { describe, expect, it } from 'vitest';
 import { mulberry32 } from '@wayfinder/engine';
-import { judge, makeProblem, MATH_SKILLS, type MathProblem } from './math';
+import { choicesFor, judge, makeProblem, MATH_SKILLS, mathMinMs, type MathProblem } from './math';
 
 const p = (o: Partial<MathProblem> & Pick<MathProblem, 'op'>): MathProblem => ({ skill: 'math:FR3', a: [6, 8], b: [1, 1], form: 'any', shape: 'fraction', prompt: '', ...o });
 
@@ -68,6 +68,37 @@ describe('judging typed answers (LTF-40)', () => {
     const q = p({ op: 'mul', a: [2, 3], b: [4, 5] });
     expect(judge(q, { num: '8' })).toEqual({ right: false, incomplete: true });
     expect(judge(q, { num: '8', den: '0' })).toEqual({ right: false, incomplete: true });
+  });
+});
+
+describe('three choices, the help ladder\'s first step (LTF-43)', () => {
+  it('names the usual mistakes on every kind of problem, so a wrong choice gets its own next step', () => {
+    expect(judge(p({ op: 'shade', a: [3, 8], shape: 'fraction' }), { num: '5', den: '8' })).toEqual({ right: false, error: 'counted-unshaded' });
+    expect(judge(p({ op: 'shade', a: [3, 8], shape: 'fraction' }), { num: '3', den: '5' })).toEqual({ right: false, error: 'part-over-part' });
+    expect(judge(p({ op: 'quot', a: [56, 1], b: [7, 1], shape: 'whole' }), { whole: '7' })).toEqual({ right: false, error: 'neighbour-fact' });
+    expect(judge(p({ op: 'divrem', a: [17, 1], b: [5, 1], shape: 'remainder' }), { whole: '3', rem: '0' })).toEqual({ right: false, error: 'no-remainder' });
+    expect(judge(p({ op: 'simplify', a: [6, 8], form: 'simplest' }), { num: '3', den: '8' })).toEqual({ right: false, error: 'divided-one' });
+  });
+  it('gives three different choices with one right answer, and the wrong ones come from named mistakes', () => {
+    const rng = mulberry32(7);
+    for (const skill of MATH_SKILLS) for (let k = 0; k < 30; k++) {
+      const q = makeProblem(skill, rng), c = choicesFor(q, rng);
+      expect(c, `${skill}: ${q.prompt}`).toHaveLength(3);
+      expect(new Set(c.map((x) => x.text)).size, `${skill}: ${c.map((x) => x.text)}`).toBe(3);
+      expect(c.filter((x) => judge(q, x.entry).right), `${skill}: ${q.prompt}`).toHaveLength(1);
+      for (const x of c) expect(judge(q, x.entry).right, x.text).toBe(x.right);
+      const named = c.filter((x) => !x.right && x.error).length;
+      expect(named, `${skill}: ${q.prompt} ${c.map((x) => x.text)}`).toBeGreaterThanOrEqual(skill === 'math:FR4' ? 1 : 2);
+    }
+  });
+  it('the right answer is not always in the same place', () => {
+    const rng = mulberry32(9), q = makeProblem('math:FR5', rng);
+    expect(new Set(Array.from({ length: 30 }, () => choicesFor(q, rng).findIndex((x) => x.right))).size).toBe(3);
+  });
+  it('a guess is faster than reading the problem and typing the answer; choices need only the reading', () => {
+    const q = p({ op: 'mul', a: [2, 3], b: [4, 5], prompt: '2/3 × 4/5 =', answer: { num: '8', den: '15' } });
+    expect(mathMinMs(q, false)).toBeGreaterThan(mathMinMs(q, true));
+    expect(mathMinMs(q, true)).toBeGreaterThanOrEqual(1500);
   });
 });
 

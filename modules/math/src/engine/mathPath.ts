@@ -23,6 +23,8 @@ export interface MathSkill {
   mastered: boolean;
   /** A re-check found a gap here: it is the focus until one good session restores it. */
   relearn: boolean;
+  /** LTF-43: he answers from three choices: a new skill starts this way, until a session with choices reaches 80%. */
+  choices: boolean;
   sessions: { session: string; day: string; ts: number; correct: number; total: number }[];
   lastAt?: number;
 }
@@ -73,7 +75,7 @@ export function checkinNext(placementAnswers: readonly AnswerEvent[], o: { known
 }
 
 export function deriveMath(events: readonly LogEvent[], o: { opened?: readonly string[]; known?: readonly string[]; now?: number }): MathState {
-  const answers = events.filter(isMath);
+  const answers = events.filter(isMath).filter((a) => !a.rapid); // LTF-43: a guess faster than reading counts for nothing
   const checkinAnswers = answers.filter((a) => a.phase === 'placement');
   const { out } = results(checkinAnswers);
   const checkinPlaced = closure([...out].filter(([, r]) => r === 'pass').map(([s]) => s));
@@ -82,20 +84,28 @@ export function deriveMath(events: readonly LogEvent[], o: { opened?: readonly s
   const skills: Record<string, MathSkill> = {};
   for (const s of MATH_ORDER) {
     const mine = answers.filter((a) => a.skill === s);
-    const turns = new Map<string, MathSkill['sessions'][number]>();
-    for (const a of mine) if (a.phase === 'yourturn') {
-      const t = turns.get(a.session) ?? { session: a.session, day: dayKey(a.ts), ts: a.ts, correct: 0, total: 0 };
-      t.total += 1; if (a.correct) t.correct += 1; t.ts = Math.max(t.ts, a.ts);
-      turns.set(a.session, t);
-    }
-    const sessions = [...turns.values()].sort((x, y) => x.ts - y.ts);
+    // His own turns, by session: typed answers toward mastery, and answers with choices toward the ramp (LTF-43). Only a
+    // first try with no help is right; a helped answer is not independent.
+    const tally = (list: AnswerEvent[]) => {
+      const turns = new Map<string, MathSkill['sessions'][number]>();
+      for (const a of list) {
+        const t = turns.get(a.session) ?? { session: a.session, day: dayKey(a.ts), ts: a.ts, correct: 0, total: 0 };
+        t.total += 1; if (a.correct && !a.hint) t.correct += 1; t.ts = Math.max(t.ts, a.ts);
+        turns.set(a.session, t);
+      }
+      return [...turns.values()].sort((x, y) => x.ts - y.ts);
+    };
+    const own = mine.filter((a) => a.phase === 'yourturn');
+    const sessions = tally(own.filter((a) => a.format !== 'choices'));
+    const lastChoices = tally(own.filter((a) => a.format === 'choices')).at(-1);
+    const choices = !sessions.length && !(lastChoices && lastChoices.total >= RULES.minPerSession && lastChoices.correct / lastChoices.total >= RULES.mastery);
     // Mastery as in reading: two qualifying sessions on different days at 80% or better together.
     const q = sessions.filter((x) => x.total >= RULES.minPerSession);
     const mastered = q.some((x, i) => { const y = [...q.slice(0, i)].reverse().find((z) => z.day !== x.day); return !!y && (x.correct + y.correct) / (x.total + y.total) >= RULES.mastery; });
     // Placed is provisional: its first review after the check-in confirms it, or takes it back.
     const firstReview = mine.find((a) => a.phase === 'warmup' && a.ts > placedAt);
     const placed = checkinPlaced.has(s) && (!firstReview || firstReview.correct);
-    skills[s] = { skill: s, open: false, placed, mastered, relearn: false, sessions, lastAt: mine.at(-1)?.ts };
+    skills[s] = { skill: s, open: false, placed, mastered, relearn: false, choices, sessions, lastAt: mine.at(-1)?.ts };
   }
   const known = (s: string) => skills[s].placed || skills[s].mastered;
   for (const s of MATH_ORDER) skills[s].open = !!o.opened?.includes(s) || MATH_GRAPH[s].every(known);
