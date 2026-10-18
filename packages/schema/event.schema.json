@@ -24,6 +24,9 @@
     },
     {
       "$ref": "#/definitions/ActivityEvent"
+    },
+    {
+      "$ref": "#/definitions/PictureEvent"
     }
   ],
   "definitions": {
@@ -525,6 +528,45 @@
         "correct": {
           "type": "boolean",
           "description": "For word-check: he picked the right meaning first time."
+        }
+      }
+    },
+    "PictureEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "ts",
+        "type",
+        "ask",
+        "svg",
+        "cost"
+      ],
+      "description": "LTF-51: a picture he asked for and paid for with flight points, drawn by Claude as SVG. What he typed is kept with it.",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "ts": {
+          "type": "number"
+        },
+        "type": {
+          "const": "picture"
+        },
+        "ask": {
+          "type": "string",
+          "maxLength": 100,
+          "description": "What he asked to have drawn."
+        },
+        "svg": {
+          "type": "string",
+          "maxLength": 60000,
+          "description": "The picture, already checked to hold no scripts or outside links."
+        },
+        "cost": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Flight points it cost, saved when it was drawn."
         }
       }
     }

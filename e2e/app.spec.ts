@@ -2,6 +2,7 @@ import { test, expect, type Page } from '@playwright/test';
 import { axe, onboard, quiet, setSettings } from './helpers';
 import { createLearner, deleteLearner, learners, sync } from '../api/src/store.js';
 import { memoryRepo } from '../api/src/memory.js';
+import { picture } from '../api/src/picture.js';
 import { readdirSync, readFileSync } from 'node:fs';
 
 // Every bank item, so a test can tap the right choice on purpose (LTF-38: points and the success look depend on it).
@@ -134,6 +135,9 @@ test('today recount and the grown-ups area', async ({ page }) => {
 });
 
 /** A signed-in family member, and the real API logic over an in-memory store in place of Cosmos DB. */
+/** LTF-51: stands in for Claude: a small picture, or a decline for a request that is not right for a child. */
+const PICTURE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="#bde3f7"/><circle cx="200" cy="150" r="70" fill="#58b38a"/></svg>';
+const fakeDraw = async (ask: string) => (ask.includes('scary') ? { refused: true } : { text: PICTURE });
 async function familyDevice(page: Page, repo: ReturnType<typeof memoryRepo>) {
   await page.addInitScript(() => { window.speechSynthesis.speak = () => {}; });
   await page.route('**/.auth/me', (r) => r.fulfill({ json: { clientPrincipal: { userDetails: 'grown-up@example.com', userRoles: ['anonymous', 'authenticated', 'family'] } } }));
@@ -141,6 +145,7 @@ async function familyDevice(page: Page, repo: ReturnType<typeof memoryRepo>) {
     const path = new URL(r.request().url()).pathname, method = r.request().method(), body = r.request().postDataJSON();
     try {
       const out = path === '/api/sync' ? await sync(repo, body)
+        : path === '/api/picture' ? await picture(repo, body, fakeDraw) // LTF-51: the real checks, with the drawing faked
         : path === '/api/learners' ? (method === 'GET' ? await learners(repo) : await createLearner(repo, body))
         : await deleteLearner(repo, path.split('/').pop());
       await r.fulfill({ json: out });
@@ -157,6 +162,61 @@ test('a device that already has a learner saves it by itself when the cloud copy
   const [saved] = await learners(repo);
   await expect.poll(async () => (await sync(repo, { learner: saved.id, since: 0 })).events.some((e: { type: string }) => e.type === 'placement'), { timeout: 15_000 }).toBe(true);
   await expect(page.getByRole('button', { name: /Start reading/ })).toBeVisible(); // he never sees any of this
+});
+
+test('he spends flight points on a picture he asks for, and the grown-ups see what he asked (LTF-51)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await page.getByRole('button', { name: /Draw a picture/ }).click();
+  await expect(page.getByRole('dialog')).toContainText("Pictures need your family's copy");
+  await page.getByRole('button', { name: 'Done' }).click();
+  const repo = memoryRepo();
+  await familyDevice(page, repo);
+  await page.reload();
+  await expect.poll(async () => (await learners(repo)).length, { timeout: 15_000 }).toBe(1);
+  await page.evaluate(async () => { // 13 answers right on the first tap: 52 points
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const tx = db.transaction('events', 'readwrite');
+    for (let k = 0; k < 13; k++) tx.objectStore('events').put({ id: `pts-${k}`, ts: Date.now() - 60_000 + k, type: 'answer', session: 'pts', item: `i${k}`, skill: 'F1', phase: 'yourturn', correct: true, hint: 0, tries: 1, ms: 9000, format: 'tap', points: 4 });
+    await new Promise((r) => { tx.oncomplete = r; });
+    db.close();
+  });
+  await page.reload();
+  await page.getByRole('button', { name: /Draw a picture · 52 points/ }).click();
+  const dlg = page.getByRole('dialog');
+  await dlg.getByLabel('What should I draw?').fill('something scary');
+  await dlg.getByRole('button', { name: /Draw it/ }).click();
+  await expect(dlg.getByRole('status')).toContainText("Let's draw something else.");
+  await expect(dlg).toContainText('You have 52 to spend'); // a declined picture costs nothing
+  await dlg.getByLabel('What should I draw?').fill('a dragon reading a book');
+  await dlg.getByRole('button', { name: /Draw it/ }).click();
+  await expect(dlg.getByRole('img', { name: 'Your picture: a dragon reading a book' })).toBeVisible();
+  await expect(dlg).toContainText('You have 2 to spend');
+  await expect(dlg.getByRole('region', { name: 'My pictures' }).getByRole('img', { name: 'a dragon reading a book' })).toBeVisible();
+  await axe(page, 'a picture');
+  await dlg.getByRole('button', { name: 'Draw another' }).click();
+  await expect(dlg).toContainText('Earn 48 more points to draw a picture.');
+  await page.getByRole('button', { name: 'Done' }).click();
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Activity' }).click();
+  const card = page.locator('section', { has: page.getByRole('heading', { name: 'Pictures he asked for' }) });
+  await expect(card).toContainText('a dragon reading a book');
+  await expect(card).toContainText('Only what he types is sent to Anthropic');
+});
+
+test('"Save my progress" says where his progress is saved: on this device, and in the family copy when linked', async ({ page }) => {
+  await onboard(page);
+  await page.getByRole('button', { name: 'Save my progress' }).click();
+  await expect(page.getByRole('status').filter({ hasText: /^Saved at .+ on this device\.$/ })).toBeVisible();
+  await axe(page, 'saved on this device');
+  const repo = memoryRepo();
+  await familyDevice(page, repo);
+  await page.reload();
+  await expect.poll(async () => (await learners(repo)).length, { timeout: 15_000 }).toBe(1);
+  await page.getByRole('button', { name: 'Save my progress' }).click();
+  await expect(page.getByRole('status').filter({ hasText: /on this device and in your family's copy\.$/ })).toBeVisible();
 });
 
 test('the family cloud copy: a second device carries on as the same learner', async ({ browser }) => {

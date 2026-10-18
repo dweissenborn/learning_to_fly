@@ -17,6 +17,8 @@ let status: Status = { checked: false, state: 'idle' };
 const subs = new Set<() => void>();
 const set = (p: Partial<Status>) => { status = { ...status, ...p }; subs.forEach((f) => f()); };
 export const useCloudStatus = () => useSyncExternalStore((f) => { subs.add(f); return () => { subs.delete(f); }; }, () => status);
+/** The status right now, for code that has just awaited a sync. */
+export const cloudStatus = () => status;
 export const isFamily = (me?: Me | null) => !!me?.userRoles?.includes('family');
 export const useLink = () => useLiveQuery(async () => ((await db.kv.get('cloud'))?.value as Link | undefined) ?? null, []);
 
@@ -29,7 +31,7 @@ export async function checkSignIn() {
   set({ checked: true, me });
 }
 
-class CloudError extends Error { constructor(readonly status: number) { super(`cloud ${status}`); } }
+export class CloudError extends Error { constructor(readonly status: number) { super(`cloud ${status}`); } }
 async function api<T>(path: string, init?: RequestInit): Promise<T> {
   // 'manual': an expired sign-in answers with a redirect to Microsoft, which a fetch must not follow.
   const r = await fetch(`/api/${path}`, { ...init, redirect: 'manual', headers: { 'content-type': 'application/json' } });
@@ -39,6 +41,8 @@ async function api<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export const listLearners = () => api<Learner[]>('learners');
+/** LTF-51: ask the family API to draw a picture. `day` is his own date, for the daily limit. */
+export const drawPicture = (body: { learner: string; ask: string; day: string }) => api<{ svg?: string; refused?: boolean }>('picture', { method: 'POST', body: JSON.stringify(body) });
 
 /**
  * Tie this device's open learner to a cloud learner and queue what should go up:

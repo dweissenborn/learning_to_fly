@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId, Strand } from '@wayfinder/schema';
-import { ALL_SKILLS, checkupResults, dayKey, delayEffect, errorPatterns, flightPeak, flightPoints, focusSkill, formatEffect, FRESH_LOW, freshness, gate, GEAR, gearState, guessing, hintNeed, ideasUse, insights, interestEffect, journeyPosition, levelFor, placementSupports, reasonRecord, recountTrend, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName } from '@wayfinder/engine';
+import { ALL_SKILLS, checkupResults, dayKey, delayEffect, errorPatterns, flightPeak, flightPoints, focusSkill, formatEffect, FRESH_LOW, freshness, gate, GEAR, gearState, guessing, hintNeed, ideasUse, insights, interestEffect, journeyPosition, levelFor, placementSupports, reasonRecord, recountTrend, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName, PICTURE_COST } from '@wayfinder/engine';
 import { finishedCount, JOURNEY, journeyNow, routeLabel, repace } from './journey';
 import { deleteNote, exportAll, importAll, log, saveSettings, updateNote, useNotes, wipeAll, type GuideId, type Settings } from './db';
 import { deleteEverywhere, useLink } from './cloud';
@@ -16,6 +16,7 @@ import { Btn, Seg, Toggle } from './ui';
 import { AMOUNT, FEATURES, LIKE, opinions } from './features';
 import { canSpeak, pickVoice, speak, voices } from './media';
 import { MODULES } from './modules';
+import { pictureSrc, picturesOf } from './Pictures';
 
 type Tab = 'overview' | 'skills' | 'activity' | 'today' | 'content' | 'settings' | 'data';
 const STATUS_CLASS = { 'not started': '', learning: 'learning', mastered: 'mastered', 'review due': 'due' } as const;
@@ -316,6 +317,17 @@ function Guessing({ events, settings }: { events: LogEvent[]; settings: Settings
   </section>;
 }
 
+/** LTF-51: the pictures he asked for, with what he typed, and what is sent where. */
+function PictureLog({ events }: { events: LogEvent[] }) {
+  const list = picturesOf(events).reverse();
+  return <section className="card stack">
+    <h2>Pictures he asked for</h2>
+    <p className="tagline">He spends {PICTURE_COST} flight points on a picture and types what to draw. Only what he types is sent to Anthropic, where Claude draws it; nothing else about him is sent. At most three a day.</p>
+    {!list.length ? <p className="muted" style={{ margin: 0 }}>No pictures yet.</p>
+      : <ul className="pictures">{list.map((p) => <li key={p.id}><img className="picture" src={pictureSrc(p.svg)} alt={p.ask} /><span>{fmtDate(p.ts)}: {p.ask}</span></li>)}</ul>}
+  </section>;
+}
+
 function Formats({ progress }: { progress: Progress }) {
   const rows = useMemo(() => formatEffect(progress), [progress]);
   const strands: Strand[] = ['functional', 'narrative', 'philosophical'];
@@ -351,6 +363,7 @@ function Activity({ events, settings, progress }: { events: LogEvent[]; settings
     <FreshContent settings={settings} progress={progress} />
     <HintWait events={events} progress={progress} />
     <Guessing events={events} settings={settings} />
+    <PictureLog events={events} />
     <Formats progress={progress} />
     <ReasonRecord progress={progress} />
     <WordHelp events={events} />

@@ -353,6 +353,9 @@ main { padding-bottom: 1rem; min-width: 0; }
 .wave { animation: wave 7s ease-in-out infinite; }
 @keyframes wave { 50% { opacity: 0.35; transform: translateX(6px); } }
 .cloud { animation: drift 90s linear infinite; }
+/* Hot-air balloons cross the island's sky and come round again; with motion reduced they stay put, in view. */
+.balloon { animation: balloon 120s linear infinite; }
+@keyframes balloon { 0% { transform: translateX(-380px); } 100% { transform: translateX(420px); } }
 @keyframes drift { from { transform: translateX(-200px); } to { transform: translateX(1300px); } }
 .flame { animation: flicker 1.6s ease-in-out infinite; transform-origin: bottom; transform-box: fill-box; }
 @keyframes flicker { 50% { transform: scaleY(0.85) scaleX(1.05); } }
@@ -567,3 +570,8 @@ button.pbox { cursor: pointer; }
 
 /* A path step that waits for what it rests on. */
 .stone.later { opacity: 0.45; border-style: dashed; }
+
+/* LTF-51: pictures he asked for. Shown as images, so nothing inside them can run. */
+.picture { display: block; width: 100%; max-width: 400px; aspect-ratio: 4 / 3; height: auto; border-radius: 12px; border: 1px solid var(--line, #d9d2c4); background: #fff; }
+.pictures { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.75rem; }
+.pictures li { display: grid; gap: 0.3rem; font-size: 0.9rem; min-width: 0; overflow-wrap: anywhere; }

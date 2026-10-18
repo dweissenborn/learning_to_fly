@@ -34,6 +34,8 @@ export const FEATURES: Feature[] = [
     met: (es) => es.some((e) => e.type === 'session' && e.action === 'stop' && e.reason === 'break') },
   { id: 'new-islands', name: 'A new island at each stop', say: 'Each place on your journey is an island to explore, with places that open as you read.', arrived: '2026-10-13',
     met: (es) => es.some((e) => e.type === 'world' && !!e.island && e.island !== 'home') },
+  { id: 'pictures', name: 'Pictures', say: 'You can spend flight points on a picture. You type what to draw.', arrived: '2026-10-17',
+    met: (es) => es.some((e) => e.type === 'picture') },
   { id: 'not-sure', name: '"I\'m not sure"', say: 'When you are not sure, you can tap "I\'m not sure" and ask for help.', arrived: '2026-10-14',
     met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'unsure') },
   { id: 'own-islands', name: 'Islands of their own', say: 'Each island has its own shape, names and quest. A finished quest brings a keepsake home.', arrived: '2026-10-14',

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { BrandMark } from './art';
 import { Btn } from './ui';
 import { currentDb, db, forgetDb, learnerDbs, switchDb, type Settings } from './db';
-import { createAndLink, isFamily, link, listLearners, openLearner, startSomeoneNew, syncNow, useCloudStatus, useLink, type Learner } from './cloud';
+import { cloudStatus, createAndLink, isFamily, link, listLearners, openLearner, startSomeoneNew, syncNow, useCloudStatus, useLink, type Learner } from './cloud';
 
 /** First screen on a device with no learner yet, when a family member is signed in: carry on as someone saved, or set up someone new. */
 export function WhoIsLearning({ onNew }: { onNew: () => void }) {
@@ -86,4 +86,28 @@ export function CloudCard({ name }: { name: string }) {
     <div className="row"><a className="btn small quiet" href="/.auth/logout?post_logout_redirect_uri=/">Sign out</a></div>
     <p className="tagline">Only Microsoft accounts invited to the family role can open the app or its cloud copy. Invite people in the Azure portal: the Static Web App, then Role management.</p>
   </section>;
+}
+
+/**
+ * "Save my progress", for him. Everything is already saved on this device as he goes; this asks the browser to keep it,
+ * sends it to the family copy now when this device is linked, and says plainly where it is saved.
+ */
+export function SaveProgress() {
+  const [msg, setMsg] = useState('');
+  const save = async () => {
+    setMsg('Saving…');
+    await navigator.storage?.persist?.().catch(() => false);
+    const linked = !!(await db.kv.get('cloud')) && isFamily(cloudStatus().me);
+    if (linked) await syncNow();
+    const state = linked ? cloudStatus().state : 'local';
+    const at = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+    setMsg(state === 'ok' ? `Saved at ${at}, on this device and in your family's copy.`
+      : state === 'local' ? `Saved at ${at} on this device.`
+      : state === 'signed-out' ? `Saved at ${at} on this device. A grown-up needs to sign in again to send it to your family's copy.`
+      : `Saved at ${at} on this device. It goes to your family's copy when you are back online.`);
+  };
+  return <div className="stack" style={{ gap: '0.3rem' }}>
+    <Btn className="big" onPress={save}><span className="ico" aria-hidden>💾</span>Save my progress</Btn>
+    <p role="status" className="tagline" style={{ margin: 0 }}>{msg}</p>
+  </div>;
 }

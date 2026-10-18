@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { LogEvent } from '@wayfinder/schema';
-import { GEAR, delayEffect, flightPoints, recountTrend, ideasUse, formatEffect, reasonRecord, gearState, insights, sessionActivity, usualStop } from './activity';
+import { GEAR, PICTURE_COST, delayEffect, flightPeak, flightPoints, pictureBalance, recountTrend, ideasUse, formatEffect, reasonRecord, gearState, insights, sessionActivity, usualStop } from './activity';
 import { derive } from './index';
 
 let n = 0;
@@ -17,6 +17,20 @@ function session(t: number, answers: [string, boolean][], end: 'finish' | 'stop'
   if (end !== 'left') ev.push({ id: id(), ts: t + (answers.length + 2) * MIN, type: 'session', session: s, action: end });
   return ev;
 }
+
+describe('pictures for flight points (LTF-51)', () => {
+  it('a picture spends points he has earned, never his gear, and waits until he has enough', () => {
+    const earned = session(T0, Array.from({ length: 20 }, () => ['warmup', true] as [string, boolean]), 'finish'); // 20 × 2 + 3
+    expect(pictureBalance(earned)).toBe(43);
+    expect(pictureBalance(earned)).toBeLessThan(PICTURE_COST);
+    const more = [...earned, ...session(T0 + 60 * MIN, [['warmup', true], ['warmup', true], ['warmup', true], ['warmup', true]], 'finish')]; // 43 + 11
+    expect(pictureBalance(more)).toBe(54);
+    const drawn = [...more, { id: id(), ts: T0 + 120 * MIN, type: 'picture', ask: 'a dragon', svg: '<svg/>', cost: PICTURE_COST } as LogEvent];
+    expect(pictureBalance(drawn)).toBe(54 - PICTURE_COST);
+    expect(flightPoints(drawn)).toBe(54); // the kit counts what he earned
+    expect(gearState(flightPoints(drawn), flightPeak(drawn)).owned).toEqual(gearState(54, 54).owned);
+  });
+});
 
 describe('flight kit', () => {
   it('rewards effort, not scores: every answer, finished sessions and the push-through bonus', () => {

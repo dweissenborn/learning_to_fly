@@ -779,6 +779,9 @@ export function Island({ placed, lit, here, peaksOpen, placing, fresh, hour = ne
         <ellipse cx="-20" cy="20" rx="150" ry="40" fill="#fff" /><ellipse cx="40" cy="-10" rx="110" ry="30" fill="#fff" /><ellipse cx="-70" cy="-15" rx="80" ry="24" fill="#fff" />
       </g>}
       {!t.night && [0, 1].map((i) => <g key={i} className="cloud moves" style={{ animationDelay: `${-i * 45}s` }} opacity="0.75"><ellipse cx={-420} cy={-80 + i * 60} rx="46" ry="14" fill="#fff" /><ellipse cx={-400} cy={-90 + i * 60} rx="30" ry="14" fill="#fff" /></g>)}
+      {/* Hot-air balloons drift with the clouds, each at its own height and pace. */}
+      {!t.night && BALLOONS.map((b, i) => <g key={`balloon${i}`} className="balloon moves" style={{ animationDelay: `${b.delay}s`, animationDuration: `${b.pace}s` }} aria-hidden="true">
+        <Balloon x={b.x} y={b.y} s={b.s} color={b.color} /></g>)}
     </svg>
     {home ? <>
       <span className="island-label" style={labelAt(8, 2, 0.6)}>Harbor Town</span>
@@ -818,6 +821,22 @@ function Horizon({ stage, night }: { stage: number; night: boolean }) {
       <path d="M158 -26 q-6 6 0 10 q6 5 0 10" stroke="#e4572e" strokeWidth="1.5" fill="none" />
     </g>}
     {stage >= 4 && <g className="flyby moves"><Plane x={-150} y={-78} s={0.42} rot={-4} /></g>}
+  </g>;
+}
+
+/** Where each balloon sits when motion is reduced, and how it drifts otherwise (the `balloon` animation). */
+const BALLOONS = [
+  { x: -170, y: -62, s: 0.62, color: '#e4572e', delay: -30, pace: 110 },
+  { x: 40, y: -34, s: 0.48, color: '#f2b04a', delay: -70, pace: 140 },
+  { x: 190, y: -78, s: 0.4, color: '#3f88c5', delay: -15, pace: 125 },
+];
+/** A striped hot-air balloon with its basket. */
+function Balloon({ x, y, s, color }: { x: number; y: number; s: number; color: string }) {
+  return <g transform={`translate(${x} ${y}) scale(${s})`}>
+    <path d="M0 -40 C24 -40 32 -18 27 -3 C23 10 9 18 7 25 L-7 25 C-9 18 -23 10 -27 -3 C-32 -18 -24 -40 0 -40 Z" fill={color} stroke={shade(color, -0.25)} strokeWidth="1.5" />
+    <path d="M0 -40 C11 -31 12 0 4 25 M0 -40 C-11 -31 -12 0 -4 25" stroke="#fff" strokeOpacity="0.6" strokeWidth="5" fill="none" />
+    <path d="M-7 25 L-5 33 M7 25 L5 33" stroke="#6b4a2f" strokeWidth="1.2" />
+    <rect x="-6" y="33" width="12" height="9" rx="2" fill="#a8814f" stroke="#6b4a2f" strokeWidth="1" />
   </g>;
 }
 

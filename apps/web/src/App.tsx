@@ -3,7 +3,7 @@ import { Component, useEffect, useRef, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
 import { Dialog, Heading, Modal, ModalOverlay, ToggleButton } from 'react-aria-components';
 import type { SkillId, Strand } from '@wayfinder/schema';
-import { dayKey, flightPeak, flightPoints, focusSkill, gate, GEAR, gearState, sessionsToday, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
+import { dayKey, flightPeak, flightPoints, focusSkill, gate, GEAR, gearState, pictureBalance, sessionsToday, skillsOf, stepOf, strandOf } from '@wayfinder/engine';
 import { applyRetention, saveSettings, useAllModuleSettings, useEvents, useProgress, useSettings, type Settings } from './db';
 import { SKILL, STRAND } from './content';
 import { BrandMark, Guide, Island, islandOf, ISLANDS, pieceById } from './art';
@@ -16,7 +16,8 @@ import { FEATURES, nextFeature, opinions } from './features';
 import { arcStart, finishedCount, forkMigration, islandArrival, islandsReached, IslandQuest, islandView, journeyNow, JourneyMap, Keepsakes, LegDots, JOURNEY, questDone } from './journey';
 import { setSound, setVoice } from './media';
 import { autoSave, isFamily, useCloudSync } from './cloud';
-import { WhoIsLearning } from './CloudScreens';
+import { SaveProgress, WhoIsLearning } from './CloudScreens';
+import { PicturePanel } from './Pictures';
 import { GearCelebration, KitPanel } from './gear';
 import { MODULES } from './modules';
 import { maybeSwitch, startUpdates } from './update';
@@ -57,7 +58,7 @@ export function App() {
   const events = useEvents();
   const progress = useProgress(events, settings?.fastTrack ?? true);
   const [screen, setScreen] = useState<Screen>('home');
-  const [dialog, setDialog] = useState<null | 'comfort' | 'shelf' | 'kit'>(null);
+  const [dialog, setDialog] = useState<null | 'comfort' | 'shelf' | 'kit' | 'pictures'>(null);
   const cloud = useCloudSync();
   const [newHere, setNewHere] = useState(false);
   const [asked, setAsked] = useState<string>(); // the one "What do you think?" card for this visit
@@ -172,6 +173,8 @@ export function App() {
           {jn.next && !jn.fork && <LegDots now={jn} />}
           <Btn className="big" onPress={() => setDialog('shelf')}><span className="ico" aria-hidden>⭐</span>Things I can do · {shelf.length}</Btn>
           <Btn className="big kit" onPress={() => setDialog('kit')}><span className="ico" aria-hidden>🎒</span>Flight kit · {gearState(flightPoints(events), flightPeak(events)).owned.length} of {GEAR.length}</Btn>
+          <Btn className="big" onPress={() => setDialog('pictures')}><span className="ico" aria-hidden>🎨</span>Draw a picture · {Math.max(0, pictureBalance(events))} points</Btn>
+          <SaveProgress />
         </div>
         {newThing && <NewThing key={newThing.id} feature={newThing} answered={opinions(events).has(newThing.id)} onShown={setAsked} />}
         <section className="paths" aria-label="Your paths">
@@ -199,6 +202,7 @@ export function App() {
     <ModalOverlay className="overlay" isOpen={!!dialog} onOpenChange={(o) => !o && setDialog(null)} isDismissable>
       <Modal><Dialog className="dialog">
         {dialog === 'comfort' && <><Heading slot="title">How do you like it?</Heading><ComfortPanel settings={settings} /></>}
+        {dialog === 'pictures' && <><Heading slot="title">Draw a picture</Heading><PicturePanel events={events} settings={settings} /></>}
         {dialog === 'kit' && <><Heading slot="title">Flight kit</Heading><KitPanel points={flightPoints(events)} peak={flightPeak(events)} guide={settings.guide} /></>}
         {dialog === 'shelf' && <><Heading slot="title">Things I can do</Heading>
           {!shelf.length && <p>Your shelf fills up as you learn. Each skill you master adds a line here.</p>}

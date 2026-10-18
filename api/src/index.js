@@ -3,6 +3,8 @@
 import { app } from '@azure/functions';
 import { CosmosClient } from '@azure/cosmos';
 import { HttpError, who, learners, createLearner, deleteLearner, deleteModule, sync } from './store.js';
+import Anthropic from '@anthropic-ai/sdk';
+import { picture } from './picture.js';
 
 let container;
 const c = () => (container ??= new CosmosClient(process.env.COSMOS_CONNECTION).database('learning-to-fly').container('data'));
@@ -46,3 +48,35 @@ route('learners', ['GET', 'POST'], 'learners', async (req) => (req.method === 'G
 route('learner', ['DELETE'], 'learners/{id}', (req) => deleteLearner(repo, req.params.id));
 route('sync', ['POST'], 'sync', async (req) => sync(repo, await req.json()));
 route('module', ['DELETE'], 'learners/{id}/modules/{module}', (req) => deleteModule(repo, req.params.id, req.params.module)); // LTF-39
+
+// LTF-51: a picture he asks for, drawn by Claude Sonnet 5.5 as SVG. The key is an app setting (ANTHROPIC_API_KEY) and
+// never reaches the browser. Thinking stays off and effort low, so a drawing comes back within the API's time limit.
+// No refusal fallback on purpose: when Claude declines a child's request, he is asked for another idea instead.
+const PICTURE_SYSTEM = `You draw pictures for a children's reading game. A child types what to draw. Reply with one SVG picture and nothing else.
+
+The picture:
+- One <svg> element with viewBox="0 0 400 300" and a full background.
+- Simple, friendly flat shapes: bold colours, rounded forms, a clear main subject in the middle, like a picture-book sticker. About 60 shapes at most.
+- No words or letters in the picture, unless the child asks for a word.
+- Only basic shapes, paths, groups and gradients. No scripts, event attributes, links, images, fonts, or anything loaded from outside.
+
+What to draw:
+- Draw what the child asked for, kindly and cheerfully.
+- If the request is scary, violent, rude, about a real person, or not right for a young child, draw a gentle, friendly version of the idea instead (a smiling dragon rather than a fighting one), or a cheerful scene if there is no gentle version.
+- Never add names, personal details, or anything the child did not ask for.`;
+let anthropic;
+async function draw(ask) {
+  if (!process.env.ANTHROPIC_API_KEY) throw new HttpError(503, 'pictures are not set up');
+  anthropic ??= new Anthropic({ timeout: 40_000, maxRetries: 0 });
+  const r = await anthropic.messages.create({
+    model: 'claude-sonnet-5-5',
+    max_tokens: 8000,
+    thinking: { type: 'between_tools' },
+    output_config: { effort: 'low' },
+    system: PICTURE_SYSTEM,
+    messages: [{ role: 'user', content: ask }],
+  });
+  if (r.stop_reason === 'refusal') return { refused: true };
+  return { text: r.content.filter((b) => b.type === 'text').map((b) => b.text).join('') };
+}
+route('picture', ['POST'], 'picture', async (req) => picture(repo, await req.json(), draw));

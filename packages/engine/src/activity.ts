@@ -48,6 +48,14 @@ export function flightPoints(events: readonly LogEvent[]): number {
   for (const d of pointSteps(events)) pts += d;
   return pts;
 }
+/** LTF-51: what a picture costs, about two sessions' worth. Each picture saves its own cost, so changing this changes no past picture. */
+export const PICTURE_COST = 50;
+/** LTF-51: points he can spend on pictures: everything he has earned, less what his pictures cost. Gear never changes. */
+export function pictureBalance(events: readonly LogEvent[]): number {
+  let spent = 0;
+  for (const e of events) if (e.type === 'picture') spent += e.cost;
+  return flightPoints(events) - spent;
+}
 /** The most points he has ever had. Gear follows it, so points that come off never take away a piece he earned. */
 export function flightPeak(events: readonly LogEvent[]): number {
   let pts = 0, peak = 0;

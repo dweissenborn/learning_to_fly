@@ -426,7 +426,14 @@ export interface Model {
  * One entry in the append-only progress log. Every view of progress is derived from these.
  */
 export type LogEvent =
-  AnswerEvent | SessionEvent | PlacementEvent | WorldEvent | RecountEvent | RealWorldEvent | ActivityEvent;
+  | AnswerEvent
+  | SessionEvent
+  | PlacementEvent
+  | WorldEvent
+  | RecountEvent
+  | RealWorldEvent
+  | ActivityEvent
+  | PictureEvent;
 /**
  * recheck: LTF-41, two math problems on a skill another one rests on, after that one stalled.
  */
@@ -663,4 +670,24 @@ export interface ActivityEvent {
    * For word-check: he picked the right meaning first time.
    */
   correct?: boolean;
+}
+/**
+ * LTF-51: a picture he asked for and paid for with flight points, drawn by Claude as SVG. What he typed is kept with it.
+ */
+export interface PictureEvent {
+  id: string;
+  ts: number;
+  type: 'picture';
+  /**
+   * What he asked to have drawn.
+   */
+  ask: string;
+  /**
+   * The picture, already checked to hold no scripts or outside links.
+   */
+  svg: string;
+  /**
+   * Flight points it cost, saved when it was drawn.
+   */
+  cost: number;
 }

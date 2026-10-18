@@ -17,6 +17,7 @@ Each step lands its test before its code.
 7. **Math module.** LTF-39 to LTF-44 (below), from DW's design note: modules as add-ons first, then typed answers, skills and gates, the help ladder, story or plain, and the grown-ups' measures. Approach to confirm.
 8. **Islands of their own.** LTF-45 to LTF-48 (below), from DW's feedback 2026-10-14. Built the same day; the new wording waits for DW's review.
 9. **Help and levels.** LTF-49 and LTF-50 (below), from a first look at how his sessions are going, 2026-10-14. Built the same day.
+10. **Requests from the learner.** LTF-51 to LTF-53 (below), built 2026-10-17.
 
 ## Proposed: the math module (LTF-39 to LTF-44)
 
@@ -82,6 +83,23 @@ Proposed 2026-10-13. Approach to confirm.
 
 - **What it is.** A Math tab in the grown-ups' area, read from the event log: each skill on the path to dividing fractions, mastered and passing its reviews; first-try accuracy on new problems in story and plain form (80% is a starting point to tune, not a validated threshold); breaks and guesses (the LTF-38 measures); and how often he picks math on his own. Whether the skills show on paper at school has to be checked outside the app.
 - **Tests first.** Unit tests for each measure from seeded events; e2e of the tab, with axe.
+
+## Requests from the learner (LTF-51 to LTF-53)
+
+Added 2026-10-17: three requests from him, passed on by DW, all built the same day.
+
+## LTF-51 A picture he asks for, as a reward
+
+- **DW's choices.** Claude Sonnet 5.5 draws it (Claude makes text, so it draws in SVG, in the island's flat style); he pays for it with flight points, like the gear; he types what to draw, and what he types may go to Anthropic. His name never does.
+- **What was built.** "Draw a picture" on his island: a picture costs 50 flight points (about two sessions), spent from what he has earned, so his flight kit never loses a piece. He types up to 100 letters; the family API (`api/src/picture.js`) checks the request, allows three pictures a day per learner (a drawing that fails gives its turn back), and calls Claude Sonnet 5.5 with a kid-safe instruction: a gentle version of anything not right for a young child, no words unless asked, no names. Thinking stays off and effort low, so a drawing comes back within the API's time limit. No refusal fallback, on purpose: when Claude declines, he is asked for another idea and keeps his points. The picture is kept only if it holds no script, event handler, outside link or embed, and shows as an image, so nothing in it can run. Each picture is a `picture` event with what he asked and its cost; the grown-ups' Activity tab lists them with a plain note on what is sent where. The key is the app setting `ANTHROPIC_API_KEY` and never reaches the browser. Tests: points and gear (engine), the request checks, the daily limit, declines and the picture check (API, mutation-checked), and e2e with the drawing faked: no family copy, a decline that costs nothing, a picture that spends 50 points, the gallery and the grown-ups' list, with axe.
+
+## LTF-52 Hot-air balloons in the island's sky
+
+- **What was built.** Three striped hot-air balloons drift across the island's sky with the clouds, each at its own height and pace, in daylight. With motion reduced they stay still, in view.
+
+## LTF-53 "Save my progress"
+
+- **What was built.** A "Save my progress" button on his island. Progress already saves as he goes; the button asks the browser to keep this device's copy, sends it to the family copy straight away when the device is linked, and says plainly where it is saved: "Saved at 5:34 PM, on this device and in your family's copy", or on this device only, and why. Tests: e2e on this device only and in the family copy, with axe.
 
 ## LTF-49 "I'm not sure": ask for help
 

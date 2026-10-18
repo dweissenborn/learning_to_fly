@@ -97,6 +97,12 @@ To invite someone, open the Static Web App in the Azure portal, then Role manage
 
 After a grown-up signs in once on a device, the app's offline copy keeps opening without asking again. The app looks for a new version every 30 minutes and whenever it comes back to the front, and switches to it only on the home screen with nothing open, or while it is in the background, never during a session (`apps/web/src/update.ts`). Fetching a new version needs the family sign-in, so while that has expired, the new version arrives after the next sign-in. The grown-ups' Settings shows when the running copy was built.
 
+Pictures (LTF-51) need the app setting `ANTHROPIC_API_KEY`, which only the API reads; without it, the app says pictures are not set up. Set it without printing the app's settings back:
+
+```bash
+MSYS_NO_PATHCONV=1 az staticwebapp appsettings set -n learning-to-fly -g learning_to_fly --setting-names ANTHROPIC_API_KEY="$ANTHROPIC_API_KEY" -o none
+```
+
 Local development (`npm run dev`) has no sign-in.
 
 ### Where progress is kept
