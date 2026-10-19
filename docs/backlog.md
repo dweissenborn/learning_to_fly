@@ -18,6 +18,7 @@ Each step lands its test before its code.
 8. **Islands of their own.** LTF-45 to LTF-48 (below), from DW's feedback 2026-10-14. Built the same day; the new wording waits for DW's review.
 9. **Help and levels.** LTF-49 and LTF-50 (below), from a first look at how his sessions are going, 2026-10-14. Built the same day.
 10. **Requests from the learner.** LTF-51 to LTF-53 (below), built 2026-10-17.
+11. **Research gaps from the 19 October scan.** LTF-54 to LTF-62 (below). LTF-54 and LTF-55 built 2026-10-19; the rest proposed, each checked against the code.
 
 ## Proposed: the math module (LTF-39 to LTF-44)
 
@@ -83,6 +84,87 @@ Proposed 2026-10-13. Approach to confirm.
 
 - **What it is.** A Math tab in the grown-ups' area, read from the event log: each skill on the path to dividing fractions, mastered and passing its reviews; first-try accuracy on new problems in story and plain form (80% is a starting point to tune, not a validated threshold); breaks and guesses (the LTF-38 measures); and how often he picks math on his own. Whether the skills show on paper at school has to be checked outside the app.
 - **Tests first.** Unit tests for each measure from seeded events; e2e of the tab, with axe.
+
+## Research gaps from the 19 October scan (LTF-54 to LTF-62)
+
+Added 2026-10-19. A weekly research scan (in the claude.ai project, `claude/backlog-gaps-2026-10-19.md`, items GAP-00a to GAP-22) compared new studies with the design plan; it could not see the code. Each item below was checked against the code the same day: what exists, what is missing, and what it needs. Studies are named as the scan cites them and were not re-checked here; the scan marks several as preliminary or a preprint. DW 2026-10-19: add them all, build GAP-12 and GAP-11 first. Sizes are rough: S is under a day, M a few days, L a week or more.
+
+Not code, for DW in the design plan: the plan's roadmap still shows phase 3 as not started, though phases 1 to 3 and much more are built (GAP-00a); proposed rules R17 to R23 wait for a decision (GAP-00b).
+
+## LTF-54 A lantern for every Today (GAP-12)
+
+Built 2026-10-19.
+
+- **What was built.** Each Today he saves lights one lantern in a set of seven, whatever he told, short or long; a full set says so and starts a new one. He sees the row before he starts and on the card for his grown-up. Lanterns change no points and no skill (`todayLanterns`, engine). Evidence as cited by the scan: Bhana et al. 2023; Yang et al. 2026 (AUTIVERSE): a game reward for completing the recount, never tied to its quality. Tests: engine (the count, a full set, no effect on points or skills; seen failing first) and e2e (lantern 1, a full set of seven, with axe).
+
+## LTF-55 The MORE guide for grown-ups (GAP-11)
+
+Built 2026-10-19.
+
+- **What was built.** Every card for the grown-up (after Today and after a session) carries "How to talk about it (MORE)", one line each: model (tell one short thing about your own day first), offer (one question, then wait five seconds), respond (say back what he told you), expand (add one word or idea). It starts open; a grown-up who closes it once finds it closed from then on, and can open it again. Evidence as cited by the scan: Bhana Lopez et al. 2024 (preliminary); Petersen et al. 2014. Tests: e2e (open at first, stays closed once closed, on both cards; mutation-checked).
+
+## LTF-56 Reading supports as dials (GAP-01 to GAP-07)
+
+Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Jhilal et al. 2026 (preliminary); Stephens et al. 2026; Lee, Quinn & Jiang 2025.
+
+- **What it is.** Each support (pictures, read-aloud, text cut into short parts, keyword labels) is its own setting, chosen with him, saved on every answer, and now and then tried with one support fewer, so the dial is retuned from his own record.
+- **Checked against the code.**
+  - Already there: he can switch pictures, read-aloud, text size, spacing, letters and colours himself (⚙️ "How do you like it?"); read-aloud is saved on every answer; points never depend on supports (GAP-04, built: points come only from the first tap, the clue, the shown answer and a guess); check-up flights already run without hints, announced and optional.
+  - Missing: a text-segmentation option in the schema and content (GAP-01, new content work); keyword labels do not exist, so the rule that pictures and labels never show together (GAP-02) applies only once they do; choosing supports before a session, at most two (GAP-03); pictures are not saved on each answer, and there is no with-and-without view (GAP-06); practice flights with one support fewer (GAP-05); a "supports I used today" line (GAP-07).
+- **Decisions.** How often a practice flight with one support fewer comes (the scan proposes one leg in five), or per skill. Whether segmentation is worth the content work.
+- **Size.** L in all; S for a first step: save pictures on each answer and add a with-and-without view like "Does his interest help?".
+
+## LTF-57 Today: a photo prompt (GAP-09, GAP-10)
+
+Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Bhana et al. 2023; Yang et al. 2026.
+
+- **What it is.** An optional photo of an object or place from his day, taken by a grown-up, as a cue for telling about it.
+- **Checked against the code.** New: the app has no camera or photo code. Notes already follow a retention limit (`applyRetention`), and the cloud copy syncs events, notes and settings, so photos need their own path that never syncs.
+- **Must hold.** Kept on this device only: never synced, exported or logged. Objects and places, not people, said on screen. Deleted after 7 days unless a grown-up keeps it (proposal), and added to the plan's privacy table.
+- **Decisions.** Grown-up only, or may he photograph his own work? The retention period.
+- **Size.** M.
+
+## LTF-58 Today: always "after" and a feeling, and counting them (GAP-08, GAP-13)
+
+Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Bhana et al. 2023; Goddard et al. 2014.
+
+- **Checked against the code.** Mostly built: the four-panel strip (LTF-06), "what happened after" (LTF-05) and a feeling question; "after" is saved on each Today and shown as a trend (LTF-08). Missing: "after" and the feeling are asked depending on his stage and on what he told, not always; feeling words are not counted.
+- **What it is.** Ask both every time, and count feeling words from a fixed list (no model) for the grown-ups' trend.
+- **Size.** S.
+
+## LTF-59 "Does it fit?" questions (GAP-14 to GAP-17)
+
+Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Howard et al. 2026 (theory); Tirado & Saldaña 2016; Wang & Poon 2026. Depends on the proposed rule R19.
+
+- **What it is.** His guide offers a guess about the story; he taps "fits" or "doesn't fit", then taps the sentence that shows it. Both steps are scored on their own.
+- **Checked against the code.** New. Parts exist to build on: the tap and tap-the-sentence question types, the Lantern Peaks inference check, and the content checks that tag each question's inference level (LTF-16).
+- **Must hold.** The guide's guesses are never a trick or a contest, and are worded the same way every time; every guess is checked to be clearly right or clearly wrong before it is used; tapping only.
+- **Decisions.** How often the guide's guess is wrong (the scan proposes one in three). Whether these join the Lantern Peaks check.
+- **Size.** L, mostly content and review.
+
+## LTF-60 Engagement measured apart from reading (GAP-18, GAP-19)
+
+Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Berenguer et al. 2026 (preliminary); Gao et al. 2025; Wouters et al. 2013.
+
+- **Checked against the code.** Mostly built: steps, pauses, time away, demo skips, breaks, guess stops, "I'm not sure", "What do you think?" votes and unfinished sessions are all saved, and the grown-ups' area already keeps them apart (Skills and Overview for reading, Activity for engagement), with no combined score. Missing: keeping going after a miss and coming back by himself (both can be worked out from what is saved); an "Again tomorrow?" question; a weekly view with the two lines side by side.
+- **Size.** S to M.
+
+## LTF-61 A scene picture while he retells (GAP-20)
+
+Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Berenguer et al. 2026 (preliminary).
+
+- **What it is.** An optional picture of the story's scene while he retells it, never while he reads, tried session by session, counting feeling words (with LTF-58).
+- **Checked against the code.** New. There is no retell step yet beyond the story map, so this depends on deciding what retelling looks like in the app.
+- **Size.** M, after a retell step exists.
+
+## LTF-62 A second reading-level check (GAP-21, GAP-22)
+
+Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Grossman & Chen 2026 (preprint); Day et al. 2025.
+
+- **What it is.** An open-weight model's reading-level score beside the formula, flagging passages where the two disagree by more than one level for review; the formula stays the hard gate. A gold set of passages rated for reading level, checked in CI.
+- **Checked against the code.** New. The pipeline uses textstat's Flesch-Kincaid grade only. The gold set from LTF-16 samples every level but is rated for coherence and inference, not reading level, and still waits for DW's ratings.
+- **Must hold.** The model score never becomes the gate, and the passages used to tune it are never the ones used to judge it.
+- **Size.** M.
 
 ## Requests from the learner (LTF-51 to LTF-53)
 

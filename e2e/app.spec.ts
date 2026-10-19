@@ -96,6 +96,43 @@ test('first run, a session item, and stopping without penalty', async ({ page })
   await expect(page.getByRole('button', { name: /Start reading/ })).toBeVisible();
 });
 
+test('each Today lights a lantern, seven to a set, and the grown-up card carries the MORE guide until it is closed (LTF-54, LTF-55)', async ({ page }) => {
+  await onboard(page);
+  const tell = async () => {
+    await page.getByRole('button', { name: /Tell about today/ }).click();
+    await page.getByRole('button', { name: 'My day' }).click();
+    await page.locator('.tcard').first().click();
+    await page.getByRole('button', { name: 'Next' }).click();
+    const save = page.getByRole('button', { name: /Save and show/ });
+    for (let i = 0; i < 8 && !(await save.isVisible()); i++) await page.locator('.tiles .tile').first().click();
+    await save.click();
+  };
+  await page.getByRole('button', { name: /Tell about today/ }).click();
+  await expect(page.getByText('Each time you tell about today, a lantern lights.')).toBeVisible();
+  await expect(page.getByRole('img', { name: '0 of 7 lanterns lit' })).toBeVisible();
+  await page.getByRole('button', { name: /Back to island/ }).click();
+  await tell();
+  await expect(page.getByText('You lit lantern 1 of 7.')).toBeVisible();
+  const guide = page.locator('details.more-guide');
+  await expect(guide.getByText('Offer: ask one question, then wait five seconds.', { exact: false })).toBeVisible(); // open the first time
+  await axe(page, 'Today card with lanterns and MORE');
+  await guide.locator('summary').click(); // a grown-up closes it
+  await expect(guide.getByText('Offer:', { exact: false })).toBeHidden();
+  await page.getByRole('button', { name: /Back to my island/ }).click();
+  await page.evaluate(async () => { // five more Todays saved before: the next one fills the set
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const tx = db.transaction('events', 'readwrite');
+    for (let k = 0; k < 5; k++) tx.objectStore('events').put({ id: `told-${k}`, ts: Date.now() - 86_400_000 * (k + 1), type: 'recount', stage: 1, parts: 1, topic: 'day' });
+    await new Promise((r) => { tx.oncomplete = r; });
+    db.close();
+  });
+  await page.reload();
+  await tell();
+  await expect(page.getByText('All seven lanterns are lit! A new set starts next time.')).toBeVisible();
+  await expect(page.getByRole('img', { name: '7 of 7 lanterns lit' })).toBeVisible();
+  await expect(page.locator('details.more-guide').getByText('Offer:', { exact: false })).toBeHidden(); // still closed
+});
+
 test('today recount and the grown-ups area', async ({ page }) => {
   await onboard(page);
   // Telling about his day: tiles only, then a card of specific questions for the grown-up.
@@ -530,6 +567,7 @@ test('a whole story session to the finish, with the paper story map for the grow
   await page.getByRole('button', { name: 'Choose a spot for me' }).click();
   await expect(page.getByText('All done for today.')).toBeVisible();
   await expect(page.getByRole('link', { name: /Print a paper story map/ })).toHaveAttribute('href', '/story-map.html');
+  await expect(page.locator('details.more-guide').getByText('Respond:', { exact: false })).toBeVisible(); // LTF-55: on the session's card too
   await axe(page, 'finish');
 });
 

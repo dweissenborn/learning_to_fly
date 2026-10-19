@@ -78,6 +78,8 @@ export interface Settings {
   endAt?: number;
   /** LTF-49: who "I'm not sure" tells him to ask, for example "Dad". "a grown-up" when unset. */
   helper?: string;
+  /** LTF-55: the MORE talking guide on the grown-ups' cards starts open; closing it once keeps it closed. */
+  moreGuide?: boolean;
 }
 
 export const DEFAULTS: Settings = {

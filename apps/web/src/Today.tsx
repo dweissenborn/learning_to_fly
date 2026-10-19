@@ -4,11 +4,11 @@
 import { useMemo, useState } from 'react';
 import { Button } from 'react-aria-components';
 import type { LogEvent } from '@wayfinder/schema';
-import { ideasUse, type Progress } from '@wayfinder/engine';
+import { ideasUse, todayLanterns, type Progress } from '@wayfinder/engine';
 import { addNote, log, type Settings } from './db';
 import { today, type Lesson } from './content';
 import { Guide } from './art';
-import { Btn, SpeakBtn } from './ui';
+import { Btn, Lanterns, MoreGuide, SpeakBtn } from './ui';
 import { sfx, useReading } from './media';
 import { askable, buildAsks, buildDaySentences, buildStrip, nextKey, ORDER, ownAnswer, skippedKeys, starter, type Part, type QKey } from './recount';
 interface Show { kind?: string; name: string; about?: string; problem?: string; events: string[]; ending?: string }
@@ -129,6 +129,7 @@ export function Today({ settings, progress, events, onExit }: { settings: Settin
     return buildAsks(parts);
   }, [topic, show, parts]);
 
+  const lamps = todayLanterns(events);
   const save = async () => {
     const date = new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' });
     await addNote({ kind: 'recount', personal: true, title: topic === 'show' ? `${date}: ${show.name.trim() || show.kind || 'a show'}` : date, text: sentences.join(' '), ask: asks });
@@ -164,6 +165,9 @@ export function Today({ settings, progress, events, onExit }: { settings: Settin
     <main className="stack">
       {phase === 'pick' && !topic && <>
         {guideSay('What do you want to tell about?')}
+        {/* LTF-54: one lantern for every Today he saves, seven to a set. */}
+        <div className="today-lanterns"><Lanterns total={7} lit={lamps.lit} />
+          <p className="tagline" style={{ margin: 0 }}>Each time you tell about today, a lantern lights.{lamps.lit ? ` ${lamps.lit} of 7 so far.` : ''}</p></div>
         <div className="today-cards" role="group" aria-label="What to tell about">
           <Button className="tcard" onPress={() => setTopic('day')}><span className="temoji" aria-hidden>📅</span>My day</Button>
           <Button className="tcard" onPress={() => { setTopic('show'); setPhase('ask'); }}><span className="temoji" aria-hidden>📺</span>A show or video</Button>
@@ -271,11 +275,14 @@ export function Today({ settings, progress, events, onExit }: { settings: Settin
       </>}
 
       {phase === 'card' && <>
+        <div className="today-lanterns" role="status"><Lanterns total={7} lit={lamps.lit || (lamps.sets ? 7 : 0)} />
+          <p style={{ margin: 0, fontWeight: 700 }}>{!lamps.lit && lamps.sets ? 'All seven lanterns are lit! A new set starts next time.' : `You lit lantern ${lamps.lit} of 7.`}</p></div>
         <div className="built"><div className="muted" style={{ fontSize: '0.9rem' }}>{settings.name || 'Your learner'} says:</div>{sentences.map((s, i) => <p key={i}>{s}</p>)}</div>
         <div className="card talk">
           <h3>For the grown-up: ask about these</h3>
           <p className="muted">{topic === 'show' ? 'His school suggests this: important details first, then what it was mostly about.' : 'Specific questions work better than “What happened at school?”.'}</p>
           <ul>{asks.map((a) => <li key={a}>{a}</li>)}</ul>
+          <MoreGuide open={settings.moreGuide !== false} />
         </div>
         <Btn className="primary big" onPress={onExit}>Back to my island</Btn>
       </>}

@@ -2,7 +2,7 @@
 import { Button, Switch, type ButtonProps } from 'react-aria-components';
 import { useEffect, useState, type ReactNode } from 'react';
 import { speak, stopSpeaking, useReading, canSpeak } from './media';
-import { log } from './db';
+import { log, saveSettings } from './db';
 import { AMOUNT, LIKE, type Feature, type Like } from './features';
 
 export function Btn({ className = '', ...p }: ButtonProps & { className?: string }) {
@@ -72,4 +72,20 @@ export function NewThing({ feature, answered, onShown }: { feature: Feature; ans
       <Btn key={v} onPress={() => { void log({ type: 'activity', session: 'home', kind: 'opinion', feature: feature.id, like, amount: v }); setStep('done'); }}>{text}</Btn>)}</div>}
     <SpeakBtn lines={[`${feature.name}. ${feature.say}`, ask]} k={`newthing-${feature.id}-${step}`} />
   </section>;
+}
+
+/**
+ * LTF-55 (research gap GAP-11): MORE, one line each, on every card for the grown-up: model, offer and wait, respond,
+ * expand. It starts open; a grown-up who closes it once finds it closed from then on, and can open it again.
+ */
+export function MoreGuide({ open }: { open: boolean }) {
+  return <details className="more-guide" open={open} onToggle={(e) => { const now = (e.currentTarget as HTMLDetailsElement).open; if (now !== open) void saveSettings({ moreGuide: now }); }}>
+    <summary>How to talk about it (MORE)</summary>
+    <ul>
+      <li><b>Model:</b> tell one short thing about your own day first.</li>
+      <li><b>Offer:</b> ask one question, then wait five seconds. Quiet is fine.</li>
+      <li><b>Respond:</b> say back what he told you, warmly, even if it is short.</li>
+      <li><b>Expand:</b> add one word or idea to what he said, and let him try it.</li>
+    </ul>
+  </details>;
 }

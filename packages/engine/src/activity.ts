@@ -48,6 +48,15 @@ export function flightPoints(events: readonly LogEvent[]): number {
   for (const d of pointSteps(events)) pts += d;
   return pts;
 }
+/**
+ * LTF-54 (research gap GAP-12): each Today he saves lights one lantern in a set of seven. Only finishing counts, never
+ * how much he told, and lanterns change no points and no skill, so telling about his day never becomes a test.
+ */
+export function todayLanterns(events: readonly LogEvent[]): { lit: number; sets: number } {
+  const told = events.filter((e) => e.type === 'recount').length;
+  return { lit: told % 7, sets: Math.floor(told / 7) };
+}
+
 /** LTF-51: what a picture costs, about two sessions' worth. Each picture saves its own cost, so changing this changes no past picture. */
 export const PICTURE_COST = 50;
 /** LTF-51: points he can spend on pictures: everything he has earned, less what his pictures cost. Gear never changes. */

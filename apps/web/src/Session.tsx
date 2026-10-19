@@ -7,7 +7,7 @@ import { addNote, log, type GuideId, type Settings } from './db';
 import { pool, passageText, SKILL, STRAND } from './content';
 import { ItemView, NextSlot, type HintMode, type Result } from './ItemView';
 import { Guide, GUIDES, Island, islandOf, PiecePreview, PIECES, pieceById, freeTiles, type Placed } from './art';
-import { Btn, Lanterns, SpeakBtn } from './ui';
+import { Btn, Lanterns, MoreGuide, SpeakBtn } from './ui';
 import { BeatCard, cap, finishedCount, journeyNow, KoalaCard, PostcardCard, reachedStops, islandView, questDone } from './journey';
 import { sfx, speak, stopSpeaking } from './media';
 import { useActivity } from './activity';
@@ -405,6 +405,7 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
       {now.beat?.talk && <p style={{ margin: '0.5rem 0 0' }}>{now.beat.talk}</p>}
       {plan && strandOf(plan.skill) === 'narrative' && <p style={{ margin: '0.5rem 0 0' }}>
         <a className="btn small" href="/story-map.html" target="_blank" rel="noopener">🗺️ Print a paper story map</a> Some children do better on paper, so this stays an option.</p>}
+      <MoreGuide open={settings.moreGuide !== false} />
     </div>
     <Btn className="primary big" autoFocus onPress={onExit}>Back to my island</Btn>
   </div>;

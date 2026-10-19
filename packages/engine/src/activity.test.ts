@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { LogEvent } from '@wayfinder/schema';
-import { GEAR, PICTURE_COST, delayEffect, flightPeak, flightPoints, pictureBalance, recountTrend, ideasUse, formatEffect, reasonRecord, gearState, insights, sessionActivity, usualStop } from './activity';
+import { GEAR, PICTURE_COST, delayEffect, flightPeak, flightPoints, pictureBalance, todayLanterns, recountTrend, ideasUse, formatEffect, reasonRecord, gearState, insights, sessionActivity, usualStop } from './activity';
 import { derive } from './index';
 
 let n = 0;
@@ -17,6 +17,21 @@ function session(t: number, answers: [string, boolean][], end: 'finish' | 'stop'
   if (end !== 'left') ev.push({ id: id(), ts: t + (answers.length + 2) * MIN, type: 'session', session: s, action: end });
   return ev;
 }
+
+describe('Today lanterns (LTF-54)', () => {
+  const told = (parts: number, k = 0) => ({ id: id(), ts: T0 + k, type: 'recount', stage: 1, parts, topic: 'day' }) as LogEvent;
+  it('each Today he saves lights one lantern in a set of seven, however much he told', () => {
+    expect(todayLanterns([])).toEqual({ lit: 0, sets: 0 });
+    expect(todayLanterns([told(1), told(4), told(1)])).toEqual({ lit: 3, sets: 0 }); // a short one counts the same
+    expect(todayLanterns(Array.from({ length: 7 }, (_, k) => told(1, k)))).toEqual({ lit: 0, sets: 1 }); // a full set, then a new one
+    expect(todayLanterns(Array.from({ length: 9 }, (_, k) => told(2, k)))).toEqual({ lit: 2, sets: 1 });
+  });
+  it('lanterns are only a reward: they change no points and no skill', () => {
+    const ev = [...session(T0, [['warmup', true]], 'finish'), told(1)];
+    expect(flightPoints(ev)).toBe(flightPoints(ev.slice(0, -1)));
+    expect(derive(ev).skills).toEqual(derive(ev.slice(0, -1)).skills);
+  });
+});
 
 describe('pictures for flight points (LTF-51)', () => {
   it('a picture spends points he has earned, never his gear, and waits until he has enough', () => {
