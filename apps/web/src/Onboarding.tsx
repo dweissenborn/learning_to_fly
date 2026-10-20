@@ -19,7 +19,7 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
   const [pin, setPin] = useState(settings.pin);
   const [scores, setScores] = useState(settings.scout ?? { word: 0, reading: 0, listening: 0 });
   const g = settings.guide;
-  const events = useEvents() ?? [];
+  const loaded = useEvents(), events = loaded ?? [];
   const alone = startAt === 'grammar'; // Starting point can run the "Who did it?" stop on its own (LTF-13)
   const cloud = useCloudStatus();
   const linked = useLink();
@@ -101,7 +101,8 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
     {step === 'words' && <WordCheck guide={g} onDone={(word) => { setScores((s) => ({ ...s, word })); setStep('reading'); }} />}
     {step === 'reading' && <Probe key="r" guide={g} items={placement.reading.items} onDone={(c) => { setScores((s) => ({ ...s, reading: c })); setStep(canSpeak ? 'listening' : 'grammar'); }} />}
     {step === 'listening' && <Probe key="l" guide={g} items={placement.listening.items} listen onDone={(c) => { setScores((s) => ({ ...s, listening: c })); setStep('grammar'); }} />}
-    {step === 'grammar' && <GrammarCheck guide={g} set={placement.grammar[grammarSet(events, placement.grammar.length)]}
+    {/* Which set runs depends on his saved runs, so wait until they have loaded (LTF-13). */}
+    {step === 'grammar' && loaded && <GrammarCheck guide={g} set={placement.grammar[grammarSet(events, placement.grammar.length)]}
       onDone={(grammar) => { if (alone) void grammarAlone(grammar); else { setScores((s) => ({ ...s, grammar })); setStep('break'); } }} />}
     {step === 'break' && <div className="stack center card">
       <Guide id={g} size={90} mood="happy" />

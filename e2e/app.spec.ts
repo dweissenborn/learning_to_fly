@@ -441,11 +441,12 @@ test('"What do you think?" asks once per new thing, on any device (LTF-18)', asy
   await card.getByRole('button', { name: /I like it/ }).click();
   await card.getByRole('button', { name: /Just right/ }).click();
   await expect(card).toContainText('Thank you');
+  // Saved (here and in the family copy) before the reload, so a slow machine cannot reload ahead of the save.
+  const [saved] = await learners(repo);
+  await expect.poll(async () => (await sync(repo, { learner: saved.id, since: 0 })).events.some((e: { kind?: string }) => e.kind === 'opinion'), { timeout: 15_000 }).toBe(true);
   await first.reload();
   await expect(first.getByRole('button', { name: /Start reading/ })).toBeVisible();
   await expect(first.getByRole('region', { name: 'What do you think?' })).toHaveCount(0); // asked once
-  const [saved] = await learners(repo);
-  await expect.poll(async () => (await sync(repo, { learner: saved.id, since: 0 })).events.some((e: { kind?: string }) => e.kind === 'opinion'), { timeout: 15_000 }).toBe(true);
 
   // Another device for the same learner is not asked again.
   const second = await (await browser.newContext()).newPage();
