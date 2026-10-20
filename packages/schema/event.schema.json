@@ -154,6 +154,10 @@
           "type": "integer",
           "description": "LTF-38: flight points this answer earned, saved when it was given (4 right on the first tap, 2 with the clue, -1 when shown, 0 for a fast guess). Older answers without it earned 2."
         },
+        "pictures": {
+          "type": "boolean",
+          "description": "LTF-56: picture support was on when he answered, so the grown-ups can compare with and without it."
+        },
         "asked": {
           "type": "boolean",
           "description": "LTF-49: he said he was not sure and was asked to get a grown-up's help, so the answer counts as helped, like the clue."
@@ -373,6 +377,10 @@
             "type": "string"
           },
           "description": "The questions he skipped (LTF-08)."
+        },
+        "feeling": {
+          "type": "boolean",
+          "description": "LTF-58: he said how he felt about a part of his day. Only the fact is kept, never the words."
         },
         "after": {
           "type": "boolean",

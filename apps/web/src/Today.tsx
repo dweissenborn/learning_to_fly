@@ -135,7 +135,7 @@ export function Today({ settings, progress, events, onExit }: { settings: Settin
     await addNote({ kind: 'recount', personal: true, title: topic === 'show' ? `${date}: ${show.name.trim() || show.kind || 'a show'}` : date, text: sentences.join(' '), ask: asks });
     await log({
       type: 'recount', stage, parts: topic === 'show' ? 1 : parts.length, typed: !!typed.trim(), topic: topic ?? 'day',
-      sentences: sentences.length, skipped: topic === 'show' ? [] : skippedKeys(parts, asked), ...(topic === 'show' ? {} : { changed }),
+      sentences: sentences.length, skipped: topic === 'show' ? [] : skippedKeys(parts, asked), ...(topic === 'show' ? {} : { changed, feeling: parts.some((p) => !!p.feeling) }),
       ...(hideTiles ? { ideas: parts.flatMap((p, i) => ORDER.filter((k) => askable(k, p, asked) && p[k]).map((k) => !!ideas[`${i}:${k}`])) } : {}), after: parts.some((p) => !!(p.afterHard || p.afterDone)),
     });
     sfx.finish();

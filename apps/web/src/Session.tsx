@@ -114,7 +114,7 @@ export function Session({ settings, events, progress, onExit, onBreak }: { setti
     if (asked) r = { ...r, correct: false };
     log({
       type: 'answer', session: sid, item: item.id, skill: item.skill, phase, correct: r.correct, hint: r.hint, tries: r.tries, ms: r.ms, format: item.format, ...(asked ? { asked: true } : {}),
-      transfer: !!item.transfer, interest: isInterest(pool, item, settings.interests), readAloud: settings.readAloud, level: item.level, ...(phase === 'together' ? { delay: clueAtOnce ? 0 : settings.hintDelay } : {}), ...(r.rubric !== undefined ? { rubric: r.rubric } : {}),
+      transfer: !!item.transfer, interest: isInterest(pool, item, settings.interests), readAloud: settings.readAloud, pictures: settings.pictures, level: item.level, ...(phase === 'together' ? { delay: clueAtOnce ? 0 : settings.hintDelay } : {}), ...(r.rubric !== undefined ? { rubric: r.rubric } : {}),
       ...(item.reason && r.hint >= 2 ? { card: true } : {}),
       ...(r.shown ? { shown: true } : {}), ...(rapid ? { rapid: true } : {}), points: pointsFor({ correct: r.correct, shown: r.shown, rapid }),
     });

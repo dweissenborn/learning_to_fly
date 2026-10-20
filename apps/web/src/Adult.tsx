@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId, Strand } from '@wayfinder/schema';
-import { ALL_SKILLS, checkupResults, dayKey, delayEffect, errorPatterns, flightPeak, flightPoints, focusSkill, formatEffect, FRESH_LOW, freshness, gate, GEAR, gearState, guessing, hintNeed, ideasUse, insights, interestEffect, journeyPosition, levelFor, placementSupports, reasonRecord, recountTrend, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName, PICTURE_COST } from '@wayfinder/engine';
+import { ALL_SKILLS, checkupResults, dayKey, delayEffect, errorPatterns, flightPeak, flightPoints, focusSkill, formatEffect, FRESH_LOW, freshness, gate, GEAR, gearState, guessing, hintNeed, ideasUse, insights, interestEffect, journeyPosition, levelFor, placementSupports, reasonRecord, recountTrend, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName, PICTURE_COST, supportEffect, weekly } from '@wayfinder/engine';
 import { finishedCount, JOURNEY, journeyNow, routeLabel, repace } from './journey';
 import { deleteNote, exportAll, importAll, log, saveSettings, updateNote, useNotes, wipeAll, type GuideId, type Settings } from './db';
 import { deleteEverywhere, useLink } from './cloud';
@@ -328,6 +328,35 @@ function PictureLog({ events }: { events: LogEvent[] }) {
   </section>;
 }
 
+/** LTF-56: pictures and read-aloud, with and without, compared like for like. */
+function Supports({ progress }: { progress: Progress }) {
+  const line = (r: { correct: number; total: number }) => (r.total ? `${r.correct} of ${r.total} right first time (${Math.round((100 * r.correct) / r.total)}%)` : 'none yet');
+  const rows = (['pictures', 'readAloud'] as const).map((k) => ({ k, name: k === 'pictures' ? 'Pictures' : 'Read-aloud', r: supportEffect(progress, k) }));
+  return <section className="card stack">
+    <h2>Do pictures and read-aloud help him?</h2>
+    {rows.every((x) => !x.r.groups) ? <p className="muted" style={{ margin: 0 }}>Shows once he has answered the same skill, at the same text level, both with and without one of them.</p>
+      : <div className="kv">{rows.filter((x) => x.r.groups).map((x) => <span key={x.k} style={{ display: 'contents' }}>
+          <span>{x.name} on</span><b>{line(x.r.with)}</b><span>{x.name} off</span><b>{line(x.r.without)}</b></span>)}</div>}
+    <p className="tagline">On his own first-time answers, counted only where he did the same skill at the same level both ways, so a harder text never decides it. He can switch both himself in "How do you like it?", so a change shows up here.</p>
+  </section>;
+}
+
+/** LTF-60: reading and engagement side by side, week by week, never one score. */
+function Weekly({ events }: { events: LogEvent[] }) {
+  const rows = weekly(events).slice(-8).reverse();
+  const share = (r: { correct: number; total: number }) => (r.total ? `${Math.round((100 * r.correct) / r.total)}% of ${r.total}` : '–');
+  return <section className="card stack">
+    <h2>Reading and engagement, week by week</h2>
+    {!rows.length ? <p className="muted" style={{ margin: 0 }}>Shows after his first session.</p> : <div className="table-wrap"><table className="skills-table">
+      <thead><tr><th>Week of</th><th>Reading: right first time</th><th>Sessions finished</th><th>Days he came</th><th>Kept going after a miss</th></tr></thead>
+      <tbody>{rows.map((r) => <tr key={r.week}>
+        <td>{fmtDate(new Date(`${r.week}T12:00:00`).getTime())}</td><td>{share(r.reading)}</td><td>{r.finished} of {r.started}</td><td>{r.days}</td><td>{r.keptGoing.of ? `${r.keptGoing.count} of ${r.keptGoing.of}` : '–'}</td>
+      </tr>)}</tbody>
+    </table></div>}
+    <p className="tagline">Reading and engagement are kept apart on purpose: a feature that makes the app more fun can raise engagement without raising reading, and this shows which one moved. Reading counts his own turn only, with guesses set aside.</p>
+  </section>;
+}
+
 function Formats({ progress }: { progress: Progress }) {
   const rows = useMemo(() => formatEffect(progress), [progress]);
   const strands: Strand[] = ['functional', 'narrative', 'philosophical'];
@@ -355,6 +384,7 @@ function Activity({ events, settings, progress }: { events: LogEvent[]; settings
   const kit = gearState(flightPoints(events), flightPeak(events));
   const ended = (s: (typeof sessions)[number]) => (s.outcome === 'finished' ? 'Finished' : `${s.outcome === 'stopped' ? 'Stopped' : 'Left open'}${s.lastStep ? ` at ${STEP_LABEL[s.lastStep]}` : ''}`);
   return <div className="stack">
+    <Weekly events={events} />
     <section className="card stack">
       <h2>What his sessions tell us</h2>
       <p className="tagline">Read from timing alone: where sessions end, where he pauses for 45 seconds or more, when the app is put away, and how long questions take. Nothing he types is used.</p>
@@ -365,6 +395,7 @@ function Activity({ events, settings, progress }: { events: LogEvent[]; settings
     <Guessing events={events} settings={settings} />
     <PictureLog events={events} />
     <Formats progress={progress} />
+    <Supports progress={progress} />
     <ReasonRecord progress={progress} />
     <WordHelp events={events} />
     <Metaphors progress={progress} />
@@ -470,13 +501,14 @@ function Telling({ events }: { events: LogEvent[] }) {
         <span>His last {t.recent.n} recounts</span><b>{num(t.recent.sentences)} sentences, about {num(t.recent.parts)} {t.recent.parts === 1 ? 'part' : 'parts'} of the day</b>
       </div>}
       <div className="table-wrap"><table className="skills-table">
-        <thead><tr><th>Date</th><th>Sentences</th><th>Parts told</th><th>Said what happened after</th><th>Own words</th></tr></thead>
+        <thead><tr><th>Date</th><th>Sentences</th><th>Parts told</th><th>Said what happened after</th><th>Said how he felt</th><th>Own words</th></tr></thead>
         <tbody>{t.recounts.slice(-8).reverse().map((r) => <tr key={r.ts}>
-          <td>{fmtDate(r.ts)}</td><td>{r.sentences}</td><td>{r.parts}</td><td>{r.after ? 'Yes' : '–'}</td><td>{r.typed ? 'Yes' : '–'}</td>
+          <td>{fmtDate(r.ts)}</td><td>{r.sentences}</td><td>{r.parts}</td><td>{r.after ? 'Yes' : '–'}</td><td>{r.feeling ? 'Yes' : '–'}</td><td>{r.typed ? 'Yes' : '–'}</td>
         </tr>)}</tbody>
       </table></div>
       <div className="kv">
         <span>Adds his own words</span><b>{t.ownWords.count} of {t.ownWords.of} recounts</b>
+        {t.feeling.of > 0 && <><span>Says how he felt</span><b>{t.feeling.count} of {t.feeling.of} recounts</b></>}
         <span>Questions he skips most</span><b>{t.skippedMost.length ? t.skippedMost.slice(0, 3).map(([k, n]) => `${QUESTION_NAME[k] ?? k} (${n})`).join(', ') : 'none so far'}</b>
       </div>
     </>}

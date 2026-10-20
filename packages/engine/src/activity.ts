@@ -190,7 +190,7 @@ export function delayEffect(events: readonly LogEvent[], p: { repeats: ReadonlyS
 }
 
 // ---------------------------------------------------------------- how his telling is growing (LTF-08)
-export interface RecountRow { ts: number; sentences: number; parts: number; typed: boolean; after: boolean; skipped: string[] }
+export interface RecountRow { ts: number; sentences: number; parts: number; typed: boolean; after: boolean; skipped: string[]; feeling?: boolean }
 
 /**
  * Recounts over time. Length always travels with the parts of the day he told, because a longer recount of the
@@ -200,7 +200,7 @@ export function recountTrend(events: readonly LogEvent[]) {
   const recounts: RecountRow[] = events
     .filter((e): e is RecountEvent => e.type === 'recount' && typeof e.sentences === 'number')
     .sort((a, b) => a.ts - b.ts)
-    .map((e) => ({ ts: e.ts, sentences: e.sentences!, parts: e.parts, typed: !!e.typed, after: !!e.after, skipped: e.skipped ?? [] }));
+    .map((e) => ({ ts: e.ts, sentences: e.sentences!, parts: e.parts, typed: !!e.typed, after: !!e.after, skipped: e.skipped ?? [], ...(e.feeling !== undefined ? { feeling: e.feeling } : {}) }));
   const skips = new Map<string, number>();
   for (const r of recounts) for (const k of r.skipped) skips.set(k, (skips.get(k) ?? 0) + 1);
   const k = Math.min(5, Math.floor(recounts.length / 2));
@@ -210,6 +210,8 @@ export function recountTrend(events: readonly LogEvent[]) {
     skippedMost: [...skips].sort((a, b) => b[1] - a[1]),
     ownWords: { count: recounts.filter((r) => r.typed).length, of: recounts.length },
     after: { count: recounts.filter((r) => r.after).length, of: recounts.length },
+    // LTF-58: how often he said how he felt, counted from the Todays that recorded it.
+    feeling: { count: recounts.filter((r) => r.feeling).length, of: recounts.filter((r) => r.feeling !== undefined).length },
     early: k ? mean(recounts.slice(0, k)) : null,
     recent: k ? mean(recounts.slice(-k)) : null,
   };
@@ -235,6 +237,67 @@ export function formatEffect(p: { skills: Record<string, { answers: AnswerEvent[
     skill: k.split('|')[0], level: Number(k.split('|')[1]),
     formats: [...f].sort(([x], [y]) => x.localeCompare(y)).map(([format, r]) => ({ format, ...r })),
   })).sort((x, y) => x.skill.localeCompare(y.skill) || x.level - y.level);
+}
+
+/** The Monday that starts a timestamp's week, in local time, as YYYY-MM-DD. */
+const weekOf = (ts: number) => {
+  const d = new Date(ts);
+  d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+};
+/**
+ * LTF-60 (research gaps GAP-18, GAP-19): reading and engagement as separate lines, week by week, never one score, so a
+ * feature that only makes the app more fun shows up as engagement, not as reading. Reading: right first time on his own
+ * turn in reading (guesses set aside). Engagement: sessions started and finished, days he came, and how often a miss was
+ * followed by another answer in the same session.
+ */
+export function weekly(events: readonly LogEvent[]) {
+  type Row = { week: string; reading: { correct: number; total: number }; started: number; finished: number; days: number; keptGoing: { count: number; of: number } };
+  const rows = new Map<string, Row & { dayset: Set<string> }>();
+  const row = (ts: number) => {
+    const w = weekOf(ts);
+    if (!rows.has(w)) rows.set(w, { week: w, reading: { correct: 0, total: 0 }, started: 0, finished: 0, days: 0, keptGoing: { count: 0, of: 0 }, dayset: new Set() });
+    return rows.get(w)!;
+  };
+  const sorted = [...events].sort((a, b) => a.ts - b.ts);
+  const bySession = new Map<string, AnswerEvent[]>();
+  for (const e of sorted) {
+    if (e.type === 'session' && e.action === 'start') { const r = row(e.ts); r.started += 1; r.dayset.add(new Date(e.ts).toDateString()); }
+    else if (e.type === 'session' && e.action === 'finish') row(e.ts).finished += 1;
+    else if (e.type === 'answer' && !e.rapid && e.phase !== 'placement' && e.phase !== 'checkup') {
+      bySession.set(e.session, [...(bySession.get(e.session) ?? []), e]);
+      if (e.phase === 'yourturn' && !e.skill.includes(':')) { const r = row(e.ts).reading; r.total += 1; if (e.correct) r.correct += 1; }
+    }
+  }
+  for (const list of bySession.values()) list.forEach((a, i) => {
+    if (a.correct) return;
+    const k = row(a.ts).keptGoing;
+    k.of += 1;
+    if (i + 1 < list.length) k.count += 1;
+  });
+  return [...rows.values()].sort((a, b) => a.week.localeCompare(b.week)).map(({ dayset, ...r }) => ({ ...r, days: dayset.size }));
+}
+
+/**
+ * LTF-56: does a support (pictures, read-aloud) help him? Right first time on his own first-time answers, with and
+ * without it, counted only in skill-and-level groups where both happened, so a harder skill or text never decides it.
+ */
+export function supportEffect(p: { skills: Record<string, { answers: AnswerEvent[] }>; repeats: ReadonlySet<string> }, support: 'pictures' | 'readAloud') {
+  const groups = new Map<string, { with: { correct: number; total: number }; without: { correct: number; total: number } }>();
+  for (const s of Object.values(p.skills)) for (const a of s.answers) {
+    if ((a.phase !== 'yourturn' && a.phase !== 'warmup') || a.rubric !== undefined || a.level === undefined || a[support] === undefined || p.repeats.has(a.id)) continue;
+    const key = `${a.skill}|${a.level}`;
+    if (!groups.has(key)) groups.set(key, { with: { correct: 0, total: 0 }, without: { correct: 0, total: 0 } });
+    const b = groups.get(key)![a[support] ? 'with' : 'without'];
+    b.total += 1;
+    if (a.correct) b.correct += 1;
+  }
+  const out = { with: { correct: 0, total: 0 }, without: { correct: 0, total: 0 }, groups: 0 };
+  for (const g of groups.values()) if (g.with.total && g.without.total) {
+    out.groups += 1;
+    for (const k of ['with', 'without'] as const) { out[k].correct += g[k].correct; out[k].total += g[k].total; }
+  }
+  return out;
 }
 
 /**

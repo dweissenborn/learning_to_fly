@@ -497,6 +497,10 @@ export interface AnswerEvent {
    */
   points?: number;
   /**
+   * LTF-56: picture support was on when he answered, so the grown-ups can compare with and without it.
+   */
+  pictures?: boolean;
+  /**
    * LTF-49: he said he was not sure and was asked to get a grown-up's help, so the answer counts as helped, like the clue.
    */
   asked?: boolean;
@@ -589,6 +593,10 @@ export interface RecountEvent {
    * The questions he skipped (LTF-08).
    */
   skipped?: string[];
+  /**
+   * LTF-58: he said how he felt about a part of his day. Only the fact is kept, never the words.
+   */
+  feeling?: boolean;
   /**
    * He answered a "What happened after that?" question (LTF-05).
    */

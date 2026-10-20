@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { LogEvent } from '@wayfinder/schema';
-import { GEAR, PICTURE_COST, delayEffect, flightPeak, flightPoints, pictureBalance, todayLanterns, recountTrend, ideasUse, formatEffect, reasonRecord, gearState, insights, sessionActivity, usualStop } from './activity';
+import { GEAR, PICTURE_COST, delayEffect, flightPeak, flightPoints, pictureBalance, supportEffect, todayLanterns, weekly, recountTrend, ideasUse, formatEffect, reasonRecord, gearState, insights, sessionActivity, usualStop } from './activity';
 import { derive } from './index';
 
 let n = 0;
@@ -117,15 +117,16 @@ describe('hint wait (LTF-01)', () => {
 });
 
 describe('how his telling is growing (LTF-08)', () => {
-  const recount = (day: number, sentences: number, parts: number, o: { skipped?: string[]; typed?: boolean; after?: boolean } = {}): LogEvent =>
-    ({ id: id(), ts: T0 + day * 86_400_000, type: 'recount', stage: 1, parts, sentences, skipped: o.skipped ?? [], typed: !!o.typed, after: !!o.after, topic: 'day' });
+  const recount = (day: number, sentences: number, parts: number, o: { skipped?: string[]; typed?: boolean; after?: boolean; feeling?: boolean } = {}): LogEvent =>
+    ({ id: id(), ts: T0 + day * 86_400_000, type: 'recount', stage: 1, parts, sentences, skipped: o.skipped ?? [], typed: !!o.typed, after: !!o.after, topic: 'day', ...(o.feeling !== undefined ? { feeling: o.feeling } : {}) });
   it('tracks sentences next to parts told, the questions he skips most, and how often he adds his own words', () => {
-    const ev = [recount(0, 3, 1, { skipped: ['why', 'hard'] }), recount(1, 4, 1, { skipped: ['why'] }), recount(2, 6, 2, { typed: true, after: true }), recount(3, 8, 3, { typed: true })];
+    const ev = [recount(0, 3, 1, { skipped: ['why', 'hard'] }), recount(1, 4, 1, { skipped: ['why'], feeling: false }), recount(2, 6, 2, { typed: true, after: true, feeling: true }), recount(3, 8, 3, { typed: true, feeling: true })];
     const t = recountTrend(ev);
     expect(t.recounts.map((r) => [r.sentences, r.parts])).toEqual([[3, 1], [4, 1], [6, 2], [8, 3]]);
     expect(t.skippedMost).toEqual([['why', 2], ['hard', 1]]);
     expect(t.ownWords).toEqual({ count: 2, of: 4 });
     expect(t.after).toEqual({ count: 1, of: 4 });
+    expect(t.feeling).toEqual({ count: 2, of: 3 }); // LTF-58: only Todays saved since it was recorded count
     expect(t.early).toMatchObject({ sentences: 3.5, parts: 1 });
     expect(t.recent).toMatchObject({ sentences: 7, parts: 2.5 });
   });
@@ -168,6 +169,37 @@ describe('which question types work for him (LTF-15)', () => {
       { skill: 'F4', level: 2, formats: [{ format: 'sort', correct: 0, total: 1 }, { format: 'tap', correct: 1, total: 1 }] },
       { skill: 'N2', level: 2, formats: [{ format: 'order', correct: 2, total: 3 }, { format: 'tap', correct: 2, total: 2 }] },
     ]);
+  });
+});
+
+describe('reading and engagement, week by week (LTF-60)', () => {
+  it('keeps reading and engagement as separate lines, per week, with no combined score', () => {
+    const mon = Date.UTC(2026, 9, 12, 16); // a Monday
+    const a = session(mon, [['yourturn', true], ['yourturn', false], ['yourturn', true]], 'finish'); // a miss, then he kept going
+    const b = session(mon + 86_400_000, [['yourturn', false]], 'stop'); // a miss, then he stopped
+    const c = session(mon + 7 * 86_400_000, [['warmup', false], ['yourturn', true]], 'finish'); // next week: a warm-up miss, then he kept going; warm-ups are not his own turn
+    const rows = weekly([...a, ...b, ...c]);
+    expect(rows).toEqual([
+      { week: '2026-10-12', reading: { correct: 2, total: 4 }, started: 2, finished: 1, days: 2, keptGoing: { count: 1, of: 2 } },
+      { week: '2026-10-19', reading: { correct: 1, total: 1 }, started: 1, finished: 1, days: 1, keptGoing: { count: 1, of: 1 } },
+    ]);
+    expect(Object.keys(rows[0])).not.toContain('score');
+  });
+});
+
+describe('do pictures and read-aloud help him? (LTF-56)', () => {
+  const ans = (item: string, skill: string, level: number, on: boolean, correct: boolean, phase = 'yourturn'): LogEvent =>
+    ({ id: id(), ts: T0 + n * 1000, type: 'answer', session: 's', item, skill: skill as never, phase: phase as never, correct, hint: 0, tries: 1, ms: 9000, format: 'tap', level, pictures: on, readAloud: !on });
+  it('compares with and without a support only where both happened at the same skill and level', () => {
+    const ev = [
+      ans('a1', 'N2', 2, true, true), ans('a2', 'N2', 2, true, true), ans('a3', 'N2', 2, false, false), ans('a4', 'N2', 2, false, true, 'warmup'),
+      ans('a1', 'N2', 2, false, false), // a repeat: left out
+      ans('a5', 'N2', 2, true, false, 'together'), // guided: left out
+      ans('b1', 'N3', 3, true, true), ans('b2', 'N3', 3, true, true), // never without pictures here: nothing to compare
+    ];
+    expect(supportEffect(derive(ev), 'pictures')).toEqual({ with: { correct: 2, total: 2 }, without: { correct: 1, total: 2 }, groups: 1 });
+    expect(supportEffect(derive(ev), 'readAloud')).toEqual({ with: { correct: 1, total: 2 }, without: { correct: 2, total: 2 }, groups: 1 });
+    expect(supportEffect(derive([]), 'pictures')).toEqual({ with: { correct: 0, total: 0 }, without: { correct: 0, total: 0 }, groups: 0 });
   });
 });
 

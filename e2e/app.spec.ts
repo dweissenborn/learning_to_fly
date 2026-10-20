@@ -927,6 +927,10 @@ test('"I\'m not sure" tells him to ask the grown-up a grown-up named, the answer
   await page.getByRole('button', { name: 'Activity' }).click();
   const card = page.locator('section', { has: page.getByRole('heading', { name: 'Guessing, breaks and asking for help' }) });
   await expect(card).toContainText(/Times he said he was not sure\s*1: \S/);
+  // LTF-60 and LTF-56: reading and engagement week by week, and the supports compared.
+  await expect(page.locator('section', { has: page.getByRole('heading', { name: 'Reading and engagement, week by week' }) }).getByRole('row')).toHaveCount(2);
+  await expect(page.getByRole('heading', { name: 'Do pictures and read-aloud help him?' })).toBeVisible();
+  await axe(page, 'weekly and supports');
 });
 
 test('a reached island has a day trip on its postcard; Gull Island has none (LTF-26)', async ({ page }) => {

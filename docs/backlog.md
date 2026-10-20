@@ -18,7 +18,7 @@ Each step lands its test before its code.
 8. **Islands of their own.** LTF-45 to LTF-48 (below), from DW's feedback 2026-10-14. Built the same day; the new wording waits for DW's review.
 9. **Help and levels.** LTF-49 and LTF-50 (below), from a first look at how his sessions are going, 2026-10-14. Built the same day.
 10. **Requests from the learner.** LTF-51 to LTF-53 (below), built 2026-10-17.
-11. **Research gaps from the 19 October scan.** LTF-54 to LTF-62 (below). LTF-54 and LTF-55 built 2026-10-19; the rest proposed, each checked against the code.
+11. **Research gaps from the 19 October scan.** LTF-54 to LTF-62 (below). LTF-54 and LTF-55 built 2026-10-19, and the first steps of LTF-56, LTF-58 and LTF-60 the same day; the rest proposed, each checked against the code.
 
 ## Proposed: the math module (LTF-39 to LTF-44)
 
@@ -113,6 +113,7 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Jhilal 
   - Missing: a text-segmentation option in the schema and content (GAP-01, new content work); keyword labels do not exist, so the rule that pictures and labels never show together (GAP-02) applies only once they do; choosing supports before a session, at most two (GAP-03); pictures are not saved on each answer, and there is no with-and-without view (GAP-06); practice flights with one support fewer (GAP-05); a "supports I used today" line (GAP-07).
 - **Decisions.** How often a practice flight with one support fewer comes (the scan proposes one leg in five), or per skill. Whether segmentation is worth the content work.
 - **Size.** L in all; S for a first step: save pictures on each answer and add a with-and-without view like "Does his interest help?".
+- **Built 2026-10-19 (the first step).** Every reading answer now saves whether pictures were on, as it already did for read-aloud. The grown-ups' Activity tab has "Do pictures and read-aloud help him?": right first time on his own first-time answers with and without each, counted only in skill-and-level groups where both happened, so a harder text never decides it (`supportEffect`). Tests: engine (like-for-like groups, repeats and guided answers left out; seen failing first) and e2e (the card, with axe).
 
 ## LTF-57 Today: a photo prompt (GAP-09, GAP-10)
 
@@ -130,6 +131,8 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Bhana e
 
 - **Checked against the code.** Mostly built: the four-panel strip (LTF-06), "what happened after" (LTF-05) and a feeling question; "after" is saved on each Today and shown as a trend (LTF-08). Missing: "after" and the feeling are asked depending on his stage and on what he told, not always; feeling words are not counted.
 - **What it is.** Ask both every time, and count feeling words from a fixed list (no model) for the grown-ups' trend.
+- **Built 2026-10-19 (the count).** Each Today saves whether he said how he felt (only the fact, never his words), and the grown-ups' "How his telling is growing" card shows it next to "what happened after" (`recountTrend`). Tests: engine (counted only from Todays that recorded it; seen failing first).
+- **Open for DW.** Asking "after" and the feeling every time would change the stage-by-stage design (LTF-05 adds "after" from stage 2, so stage 1 stays short). Keep the stages, or always ask both?
 - **Size.** S.
 
 ## LTF-59 "Does it fit?" questions (GAP-14 to GAP-17)
@@ -147,6 +150,8 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Howard 
 Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Berenguer et al. 2026 (preliminary); Gao et al. 2025; Wouters et al. 2013.
 
 - **Checked against the code.** Mostly built: steps, pauses, time away, demo skips, breaks, guess stops, "I'm not sure", "What do you think?" votes and unfinished sessions are all saved, and the grown-ups' area already keeps them apart (Skills and Overview for reading, Activity for engagement), with no combined score. Missing: keeping going after a miss and coming back by himself (both can be worked out from what is saved); an "Again tomorrow?" question; a weekly view with the two lines side by side.
+- **Built 2026-10-19 (the weekly view).** The grown-ups' Activity tab opens with "Reading and engagement, week by week": right first time on his own turn in reading (guesses set aside) beside sessions finished, days he came, and how often a miss was followed by another answer in the same session. No combined score (`weekly`). Tests: engine (two weeks, own turn only, kept going after a miss; seen failing first) and e2e (the table, with axe).
+- **Still open.** An "Again tomorrow?" question for him, and whether a return was his own idea (the log cannot tell).
 - **Size.** S to M.
 
 ## LTF-61 A scene picture while he retells (GAP-20)
