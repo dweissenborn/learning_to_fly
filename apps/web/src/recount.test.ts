@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { askable, buildAsks, buildDaySentences, buildStrip, ownAnswer, skippedKeys, starter, type Part } from './recount';
+import { askable, buildAsks, buildDaySentences, buildStrip, feelingWordCount, ownAnswer, skippedKeys, starter, type Part } from './recount';
 
 const math = { id: 'math', name: 'Math', emoji: '➗', what: ['did fractions'], ask: ['What kind of problems did you do in math?'] };
 
@@ -16,15 +16,22 @@ describe('telling about his day (LTF-05)', () => {
     expect(s).toEqual(['In Math, I did fractions.']);
   });
 
-  it('asks "after" only after something hard at stage 1, and also after what he did from stage 2', () => {
+  it('asks "after" after what he did at every stage, and after something hard (LTF-58)', () => {
     const hard: Part = { lesson: math, what: 'did fractions', hard: 'I got stuck' };
     const fine: Part = { lesson: math, what: 'did fractions', hard: 'nothing was hard' };
     expect(askable('afterHard', hard, { stage: 1, why: false })).toBe(true);
     expect(askable('afterHard', fine, { stage: 1, why: false })).toBe(false);
     expect(askable('afterHard', { lesson: math }, { stage: 1, why: false })).toBe(false); // skipped the hard question
-    expect(askable('afterDone', hard, { stage: 1, why: false })).toBe(false);
+    expect(askable('afterDone', hard, { stage: 1, why: false })).toBe(true);
     expect(askable('afterDone', hard, { stage: 2, why: false })).toBe(true);
-    expect(askable('afterDone', { lesson: math }, { stage: 2, why: false })).toBe(false); // nothing to come after
+    expect(askable('afterDone', { lesson: math }, { stage: 1, why: false })).toBe(false); // nothing to come after
+    expect(askable('feeling', { lesson: math }, { stage: 1, why: false })).toBe(true);
+  });
+
+  it('counts the feeling words he used from a fixed list, each word once (LTF-58)', () => {
+    const words = ['happy', 'proud', 'tired'];
+    expect(feelingWordCount(['I felt proud because I finished.', 'I felt Happy and tired, happy.'], words)).toBe(3);
+    expect(feelingWordCount(['I felt unhappy.', 'I was retired.'], words)).toBe(0); // whole words only
   });
 
   it('turns his answers into specific questions for the grown-up', () => {
@@ -52,8 +59,8 @@ describe('his day as a four-panel strip (LTF-06)', () => {
   });
 
   it('counts skipped questions from his final answers, so changing one later is not counted twice', () => {
-    expect(skippedKeys([{ lesson: math, what: 'did fractions', hard: 'I got stuck' }], o)).toEqual(['who', 'feeling', 'afterHard']);
-    expect(skippedKeys([{ lesson: math, who: 'a friend', what: 'did fractions', feeling: 'calm', hard: 'nothing was hard' }], o)).toEqual([]);
+    expect(skippedKeys([{ lesson: math, what: 'did fractions', hard: 'I got stuck' }], o)).toEqual(['who', 'afterDone', 'feeling', 'afterHard']);
+    expect(skippedKeys([{ lesson: math, who: 'a friend', what: 'did fractions', afterDone: 'we shared', feeling: 'calm', hard: 'nothing was hard' }], o)).toEqual([]);
   });
 });
 

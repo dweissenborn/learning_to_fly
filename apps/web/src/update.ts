@@ -1,16 +1,16 @@
 // New versions of the app. Look for one every 30 minutes and whenever the app comes back to the front, and switch to it only
-// at a safe moment: on his island's home screen with nothing open, or while the app is in the background. Never in the
-// middle of a session, where a reload would be an unexpected change (his answers are saved, but not his place).
+// at a safe moment: on his island's home screen with nothing open. Never in the middle of a session or a Today, not even
+// while the app is in the background (he may be asking for help), where a reload loses his place (his answers are saved).
 let waiting = false;
 let safeNow = () => false;
 let apply: (reload?: boolean) => Promise<void> = async () => {};
 
 /** Whether to switch to a waiting new version now. */
-export const shouldSwitch = (o: { waiting: boolean; hidden: boolean; safe: boolean }) => o.waiting && (o.hidden || o.safe);
+export const shouldSwitch = (o: { waiting: boolean; safe: boolean }) => o.waiting && o.safe;
 
 /** Switches to a waiting new version if now is a safe moment. Call it when a safe moment begins. */
 export function maybeSwitch() {
-  if (shouldSwitch({ waiting, hidden: document.hidden, safe: safeNow() })) void apply(true);
+  if (shouldSwitch({ waiting, safe: safeNow() })) void apply(true);
 }
 
 export async function startUpdates(isSafe: () => boolean) {

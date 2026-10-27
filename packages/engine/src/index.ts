@@ -9,6 +9,7 @@ export const RULES = {
   relearnMin: 3, // after a failed review, one session with this many answers at `mastery` restores the skill
   reviewGapsDays: [3, 7, 21],
   checkupEvery: 10, // LTF-14: finished sessions between optional check-up flights
+  testFlightEvery: 5, // LTF-56 trial (DW 2026-10-26, revertible: 0 turns it off): every fifth block of leg-length sessions runs with one support fewer
   checkupTexts: 6,
   gateInference: 0.8,
   gateCheckItems: 5,
@@ -356,6 +357,18 @@ function pairSteps(out: Item[], pool: Pool, allowed: ReadonlySet<string>, count:
 // ---------------------------------------------------------------- check-up flights (LTF-14)
 
 /** An optional check-up flight is offered once he has finished this many sessions since the last one. */
+/**
+ * LTF-56 (GAP-05), a trial: every `testFlightEvery`-th block of `legLength` finished sessions runs with one support
+ * fewer, so his record has answers both with and without it. It takes turns among the supports that are on, and never
+ * changes points. `block` lets him keep his supports for the rest of that block.
+ */
+export function testFlight(finished: number, legLength: number, on: { pictures: boolean; readAloud: boolean }) {
+  const every = RULES.testFlightEvery as number, block = Math.floor(finished / legLength);
+  const supports = (['pictures', 'readAloud'] as const).filter((k) => on[k]);
+  if (!every || block % every !== every - 1 || !supports.length) return null;
+  return { support: supports[Math.floor(block / every) % supports.length], block };
+}
+
 export function checkupDue(p: Progress) {
   let n = 0;
   for (const s of [...p.sessions].reverse()) {

@@ -6,7 +6,7 @@ export interface Part {
   lesson: Pick<Lesson, 'id' | 'name' | 'emoji' | 'what' | 'ask'>;
   who?: string;
   what?: string;
-  /** "What happened after that?" after what he did (from stage 2; LTF-05). */
+  /** "What happened after that?" after what he did, at every stage (LTF-05, LTF-58). */
   afterDone?: string;
   feeling?: string;
   why?: string;
@@ -19,9 +19,9 @@ export const ORDER: QKey[] = ['who', 'what', 'afterDone', 'feeling', 'why', 'har
 
 const realHard = (h?: string) => !!h && h !== 'nothing was hard';
 
-/** Whether a question is asked about this part. Consequences mostly come only when asked, so "after" follows anything hard. */
+/** Whether a question is asked about this part. Consequences and feelings mostly come only when asked (R20), so both are always asked. */
 export function askable(key: QKey, p: Part, o: { stage: number; why: boolean }) {
-  if (key === 'afterDone') return o.stage >= 2 && !!p.what;
+  if (key === 'afterDone') return !!p.what;
   if (key === 'why') return o.why || o.stage >= 2;
   if (key === 'afterHard') return realHard(p.hard);
   return true;
@@ -65,6 +65,12 @@ export function starter(key: QKey, p: Part, o: { weekend: boolean }): string {
 export function ownAnswer(key: QKey, text: string): string {
   const t = text.trim().replace(/[.!]+$/, '');
   return key === 'hard' && /^(no|nope|nothing|none|not really)\b/i.test(t) ? 'nothing was hard' : t;
+}
+
+/** LTF-58: how many different words from the fixed feeling list he used, whole words only. Only the count is saved. */
+export function feelingWordCount(sentences: string[], words: string[]): number {
+  const text = sentences.join(' ').toLowerCase();
+  return words.filter((w) => new RegExp(`\\b${w.toLowerCase()}\\b`).test(text)).length;
 }
 
 /** The questions he skipped, read from his final answers, so changing an answer later is not counted twice. */

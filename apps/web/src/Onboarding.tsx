@@ -57,7 +57,9 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
         ? "Progress is saved on this device and in your family's private cloud copy, so it opens on any device where a family member signs in."
         : 'Progress stays on this device. Nothing is sent anywhere.'} Only a nickname is stored: no real name, photo, birthday or diagnosis.</p>
       <Btn className="primary big" isDisabled={!name.trim()} onPress={async () => {
-        await saveSettings({ name: name.trim(), pin });
+        // LTF-63: a new learner starts without pictures; placement or the comfort step can switch them on.
+        // The default stays on, so a learner who never saved the setting keeps it.
+        await saveSettings({ name: name.trim(), pin, pictures: false });
         // Saved to the cloud straight away when signed in; offline, the grown-ups' Data tab can do it later.
         if (family && !linked) void createAndLink(name.trim()).catch(() => {});
         setStep('guide');

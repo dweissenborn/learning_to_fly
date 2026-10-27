@@ -80,6 +80,8 @@ export interface Settings {
   helper?: string;
   /** LTF-55: the MORE talking guide on the grown-ups' cards starts open; closing it once keeps it closed. */
   moreGuide?: boolean;
+  /** LTF-56 trial: the test-flight block in which he chose to keep his supports. */
+  testKept?: number;
 }
 
 export const DEFAULTS: Settings = {

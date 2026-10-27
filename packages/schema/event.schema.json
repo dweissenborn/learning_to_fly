@@ -382,6 +382,11 @@
           "type": "boolean",
           "description": "LTF-58: he said how he felt about a part of his day. Only the fact is kept, never the words."
         },
+        "feelingWords": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "LTF-58: how many different feeling words from the fixed list he used. Only the count is kept, never the words."
+        },
         "after": {
           "type": "boolean",
           "description": "He answered a \"What happened after that?\" question (LTF-05)."

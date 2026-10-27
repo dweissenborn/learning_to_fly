@@ -338,6 +338,7 @@ function Supports({ progress }: { progress: Progress }) {
       : <div className="kv">{rows.filter((x) => x.r.groups).map((x) => <span key={x.k} style={{ display: 'contents' }}>
           <span>{x.name} on</span><b>{line(x.r.with)}</b><span>{x.name} off</span><b>{line(x.r.without)}</b></span>)}</div>}
     <p className="tagline">On his own first-time answers, counted only where he did the same skill at the same level both ways, so a harder text never decides it. He can switch both himself in "How do you like it?", so a change shows up here.</p>
+    <p className="tagline">A trial (decided 2026-10-26, easy to undo): every fifth leg is a test flight with one of the supports he has on switched off, taking turns, so both columns fill. The plan screen tells him first, points stay the same, and he can keep the support on.</p>
   </section>;
 }
 
@@ -501,14 +502,15 @@ function Telling({ events }: { events: LogEvent[] }) {
         <span>His last {t.recent.n} recounts</span><b>{num(t.recent.sentences)} sentences, about {num(t.recent.parts)} {t.recent.parts === 1 ? 'part' : 'parts'} of the day</b>
       </div>}
       <div className="table-wrap"><table className="skills-table">
-        <thead><tr><th>Date</th><th>Sentences</th><th>Parts told</th><th>Said what happened after</th><th>Said how he felt</th><th>Own words</th></tr></thead>
+        <thead><tr><th>Date</th><th>Sentences</th><th>Parts told</th><th>Said what happened after</th><th>Said how he felt</th><th>Feeling words</th><th>Own words</th></tr></thead>
         <tbody>{t.recounts.slice(-8).reverse().map((r) => <tr key={r.ts}>
-          <td>{fmtDate(r.ts)}</td><td>{r.sentences}</td><td>{r.parts}</td><td>{r.after ? 'Yes' : '–'}</td><td>{r.feeling ? 'Yes' : '–'}</td><td>{r.typed ? 'Yes' : '–'}</td>
+          <td>{fmtDate(r.ts)}</td><td>{r.sentences}</td><td>{r.parts}</td><td>{r.after ? 'Yes' : '–'}</td><td>{r.feeling ? 'Yes' : '–'}</td><td>{r.feelingWords ?? '–'}</td><td>{r.typed ? 'Yes' : '–'}</td>
         </tr>)}</tbody>
       </table></div>
       <div className="kv">
         <span>Adds his own words</span><b>{t.ownWords.count} of {t.ownWords.of} recounts</b>
         {t.feeling.of > 0 && <><span>Says how he felt</span><b>{t.feeling.count} of {t.feeling.of} recounts</b></>}
+        {t.feelingWords.of > 0 && <><span>Feeling words</span><b>{num(t.feelingWords.total / t.feelingWords.of)} per recount, over {t.feelingWords.of}</b></>}
         <span>Questions he skips most</span><b>{t.skippedMost.length ? t.skippedMost.slice(0, 3).map(([k, n]) => `${QUESTION_NAME[k] ?? k} (${n})`).join(', ') : 'none so far'}</b>
       </div>
     </>}

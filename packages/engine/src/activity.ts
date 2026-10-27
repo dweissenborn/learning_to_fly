@@ -190,7 +190,7 @@ export function delayEffect(events: readonly LogEvent[], p: { repeats: ReadonlyS
 }
 
 // ---------------------------------------------------------------- how his telling is growing (LTF-08)
-export interface RecountRow { ts: number; sentences: number; parts: number; typed: boolean; after: boolean; skipped: string[]; feeling?: boolean }
+export interface RecountRow { ts: number; sentences: number; parts: number; typed: boolean; after: boolean; skipped: string[]; feeling?: boolean; feelingWords?: number }
 
 /**
  * Recounts over time. Length always travels with the parts of the day he told, because a longer recount of the
@@ -200,7 +200,7 @@ export function recountTrend(events: readonly LogEvent[]) {
   const recounts: RecountRow[] = events
     .filter((e): e is RecountEvent => e.type === 'recount' && typeof e.sentences === 'number')
     .sort((a, b) => a.ts - b.ts)
-    .map((e) => ({ ts: e.ts, sentences: e.sentences!, parts: e.parts, typed: !!e.typed, after: !!e.after, skipped: e.skipped ?? [], ...(e.feeling !== undefined ? { feeling: e.feeling } : {}) }));
+    .map((e) => ({ ts: e.ts, sentences: e.sentences!, parts: e.parts, typed: !!e.typed, after: !!e.after, skipped: e.skipped ?? [], ...(e.feeling !== undefined ? { feeling: e.feeling } : {}), ...(e.feelingWords !== undefined ? { feelingWords: e.feelingWords } : {}) }));
   const skips = new Map<string, number>();
   for (const r of recounts) for (const k of r.skipped) skips.set(k, (skips.get(k) ?? 0) + 1);
   const k = Math.min(5, Math.floor(recounts.length / 2));
@@ -212,6 +212,7 @@ export function recountTrend(events: readonly LogEvent[]) {
     after: { count: recounts.filter((r) => r.after).length, of: recounts.length },
     // LTF-58: how often he said how he felt, counted from the Todays that recorded it.
     feeling: { count: recounts.filter((r) => r.feeling).length, of: recounts.filter((r) => r.feeling !== undefined).length },
+    feelingWords: { total: recounts.reduce((t, r) => t + (r.feelingWords ?? 0), 0), of: recounts.filter((r) => r.feelingWords !== undefined).length },
     early: k ? mean(recounts.slice(0, k)) : null,
     recent: k ? mean(recounts.slice(-k)) : null,
   };

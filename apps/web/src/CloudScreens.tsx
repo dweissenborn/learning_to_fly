@@ -1,5 +1,6 @@
 // Screens for the family cloud copy: who is learning on a new device, and the grown-ups' cloud card.
 import { useEffect, useState } from 'react';
+import { Dialog, DialogTrigger, Popover } from 'react-aria-components';
 import { BrandMark } from './art';
 import { Btn } from './ui';
 import { currentDb, db, forgetDb, learnerDbs, switchDb, type Settings } from './db';
@@ -110,4 +111,17 @@ export function SaveProgress() {
     <Btn className="big" onPress={save}><span className="ico" aria-hidden>💾</span>Save my progress</Btn>
     <p role="status" className="tagline" style={{ margin: 0 }}>{msg}</p>
   </div>;
+}
+
+/** His request (2026-10-26): a save menu in the top bar while he reads or tells about today, so he can save any time. */
+export function SaveMenu() {
+  return <DialogTrigger>
+    <Btn className="quiet small save-btn"><span aria-hidden>💾</span><span className="lbl"> Save</span></Btn>
+    <Popover placement="bottom end" className="save-menu">
+      <Dialog aria-label="Save" className="stack">
+        <p style={{ margin: 0 }}>Every answer is saved the moment you give it. Tap to save everything now.</p>
+        <SaveProgress />
+      </Dialog>
+    </Popover>
+  </DialogTrigger>;
 }

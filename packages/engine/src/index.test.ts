@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Item, LogEvent, Passage, SkillBank, SkillId } from '@wayfinder/schema';
 import {
-  buildPool, choices, derive, errorPatterns, tagAccuracy, journeyPosition, journeyRoute, forkOptions, routePosition, pastFork, planWord, planCheckup, checkupDue, checkupResults, levelFor, levelPeak, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, grammarSet, planGateCheck, planSession,
+  buildPool, choices, derive, errorPatterns, tagAccuracy, journeyPosition, journeyRoute, forkOptions, routePosition, pastFork, planWord, planCheckup, checkupDue, checkupResults, levelFor, levelPeak, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, grammarSet, planGateCheck, planSession, testFlight,
 } from './index';
 
 const DAY = 86_400_000;
@@ -90,6 +90,23 @@ describe('review dates', () => {
     s = derive(ev).skills.F1;
     expect(s.status).toBe('mastered');
     expect(s.reviewStage).toBe(0);
+  });
+});
+
+describe('test flights with one support fewer (LTF-56, a trial)', () => {
+  const both = { pictures: true, readAloud: true };
+  it('runs every fifth block of sessions with one support fewer, taking turns between the supports', () => {
+    expect(testFlight(19, 5, both)).toBeNull();
+    expect(testFlight(20, 5, both)).toEqual({ support: 'pictures', block: 4 });
+    expect(testFlight(24, 5, both)).toEqual({ support: 'pictures', block: 4 });
+    expect(testFlight(25, 5, both)).toBeNull();
+    expect(testFlight(45, 5, both)).toEqual({ support: 'readAloud', block: 9 });
+    expect(testFlight(12, 3, both)).toEqual({ support: 'pictures', block: 4 }); // blocks follow the leg length
+    expect(testFlight(21, 3, both)).toBeNull();
+  });
+  it('only ever takes away a support that is on', () => {
+    expect(testFlight(45, 5, { pictures: true, readAloud: false })).toEqual({ support: 'pictures', block: 9 });
+    expect(testFlight(20, 5, { pictures: false, readAloud: false })).toBeNull();
   });
 });
 

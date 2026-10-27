@@ -17,8 +17,9 @@ Each step lands its test before its code.
 7. **Math module.** LTF-39 to LTF-44 (below), from DW's design note: modules as add-ons first, then typed answers, skills and gates, the help ladder, story or plain, and the grown-ups' measures. Approach to confirm.
 8. **Islands of their own.** LTF-45 to LTF-48 (below), from DW's feedback 2026-10-14. Built the same day; the new wording waits for DW's review.
 9. **Help and levels.** LTF-49 and LTF-50 (below), from a first look at how his sessions are going, 2026-10-14. Built the same day.
-10. **Requests from the learner.** LTF-51 to LTF-53 (below), built 2026-10-17.
+10. **Requests from the learner.** LTF-51 to LTF-53 (below), built 2026-10-17; LTF-64, the save menu, built 2026-10-26.
 11. **Research gaps from the 19 October scan.** LTF-54 to LTF-62 (below). LTF-54 and LTF-55 built 2026-10-19, and the first steps of LTF-56, LTF-58 and LTF-60 the same day; the rest proposed, each checked against the code.
+12. **Research from the 26 October scan.** LTF-63 (below); its default built 2026-10-26, with the LTF-58 follow-ups. The same day, as trials that can be reverted: test flights (LTF-56) and the feeling-word count (LTF-58). The other findings are notes on LTF-17 and the design plan.
 
 ## Proposed: the math module (LTF-39 to LTF-44)
 
@@ -85,6 +86,53 @@ Proposed 2026-10-13. Approach to confirm.
 - **What it is.** A Math tab in the grown-ups' area, read from the event log: each skill on the path to dividing fractions, mastered and passing its reviews; first-try accuracy on new problems in story and plain form (80% is a starting point to tune, not a validated threshold); breaks and guesses (the LTF-38 measures); and how often he picks math on his own. Whether the skills show on paper at school has to be checked outside the app.
 - **Tests first.** Unit tests for each measure from seeded events; e2e of the tab, with axe.
 
+## Research from the 26 October scan (LTF-63)
+
+Added 2026-10-26. The weekly research scan for 12 to 26 October found six studies and three to watch. Each was checked against the code the same day. Only one needs new work (LTF-63); the rest change notes on existing items or the design plan. Studies are named as the scan cites them and were not re-checked here, except the first, whose news release was read.
+
+Not code, for DW in the design plan:
+- Kat Şen & Aydın 2026 (meta-analysis of 20 studies, g = 0.49, 0.37 after correcting for publication bias; only 5 checked carry-over) joins Fletcher-Watson et al. 2014 as a source for R15. The rule does not change. It backs what is built: reviews at 3, 7 and 21 days, and the inference check before the philosophical strand.
+- R11 gains two sources: Cong et al. 2026 (preprint, see LTF-17) and Meng & Yang 2026 (EMNLP). Meng & Yang found that fine-tuned models hit a reading level better than prompted ones. The pipeline only checks hand-written content and generates none, so this matters only if generation is ever added: then try a fine-tune before a bigger model (R19 already says so).
+- Rule numbers clash. The scan proposes "R17", but the plan already uses R17 to R30. The 19 October scan's proposed R17 to R23 clash in the same way. New rules would start at R31.
+
+Watch only, no entry:
+- Clark et al. 2026 reviewed reading comprehension for minimally speaking and non-speaking children (6 studies). It concerns a public version. The plan's rule that every task can be done by tapping already holds, placement included. The listening probe is skipped when the device has no voice.
+- Thought bubbles for what a character believes (Tian et al. 2026; the children averaged under 6) could later be a format for narrative step 5, next to LTF-09.
+- Social problem-solving packages (Jin et al. 2026, single-case studies, with no data on whether gains carried over or lasted).
+- Eye tracking in reading assessment (Peklari & Toki 2026): not ready for classroom use.
+
+## LTF-63 Test each support with him, not by default
+
+Proposed 2026-10-26. Approach to confirm. Evidence as cited by the scan:
+- Hinchey 2026: a doctoral thesis with no sample size given and no peer-reviewed paper yet. EEG showed stronger comprehension-linked signals for reading aloud than for pictures. Its own conclusion is that what works for one child may not work for another.
+- Svensson et al. 2026: 8 students, text-to-speech. All understood more by listening. The sample had intellectual disability; none were autistic.
+
+- **A caution on the evidence.** In Hinchey's study, "reading aloud" was most likely the child reading out loud himself, not the text read to him. Text-to-speech appears in the release only as a future trial. The app's read-aloud is text-to-speech, and the app never listens to him (the tap-only rule). So only Svensson speaks to the app's read-aloud, and that sample was not autistic. Together the two support testing each support for each child, not making read-aloud the default.
+- **Checked against the code.**
+  - Already there:
+    - Placement measures reading and listening on two different level-2 stories, three questions each.
+    - It turns read-aloud on when listening beats reading by 30 points or more, or when word reading is under 75% (`placementSupports`).
+    - Placement only ever switches supports on.
+    - Every answer saves whether pictures and read-aloud were on.
+    - "Do pictures and read-aloud help him?" compares the two only within the same skill and level (LTF-56).
+  - Missing:
+    - Pictures are on by default for every new learner. Placement turns them on again when word reading is low, but never tests them against no pictures.
+    - With pictures always on, the "without" column of that comparison stays empty. Practice with one support fewer (LTF-56, GAP-05) is what would fill it.
+- **What it is.** Placement adds a short picture probe: a matched level-2 story with pictures on, its questions compared with the reading story's. Both supports start from what placement shows, not from a default. An occasional practice leg with one support switched off (LTF-56) keeps the comparison filling in.
+- **Must hold.**
+  - Use matched stories, never the same story twice: the second reading is easier, so whichever support came second would look better.
+  - Alternate the order between runs.
+  - Placement still never switches off a support he or a grown-up chose.
+  - Three questions decide nothing alone. The probe is a starting point, and his own record afterwards decides.
+- **Decisions.** DW 2026-10-26: new learners start with pictures off. The same day, every fifth leg became a test flight with one support fewer, as a trial (LTF-56).
+- **Built 2026-10-26 (the default).**
+  - A new learner's first onboarding screen saves pictures off.
+  - The comfort step's toggle and placement (when word reading is low) can still switch them on.
+  - The app-wide default stays on, so a learner who never saved the setting, him included, keeps what he has.
+  - Tests: e2e (the comfort step shows pictures off; mutation-checked).
+- **Not built.** The placement picture probe. Three questions decide little, and his own record decides once practice runs both ways (LTF-56). Build it only if a starting point is wanted sooner.
+- **Size.** S for the probe. The leg with one support fewer is LTF-56's.
+
 ## Research gaps from the 19 October scan (LTF-54 to LTF-62)
 
 Added 2026-10-19. A weekly research scan (in the claude.ai project, `claude/backlog-gaps-2026-10-19.md`, items GAP-00a to GAP-22) compared new studies with the design plan; it could not see the code. Each item below was checked against the code the same day: what exists, what is missing, and what it needs. Studies are named as the scan cites them and were not re-checked here; the scan marks several as preliminary or a preprint. DW 2026-10-19: add them all, build GAP-12 and GAP-11 first. Sizes are rough: S is under a day, M a few days, L a week or more.
@@ -114,6 +162,16 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Jhilal 
 - **Decisions.** How often a practice flight with one support fewer comes (the scan proposes one leg in five), or per skill. Whether segmentation is worth the content work.
 - **Size.** L in all; S for a first step: save pictures on each answer and add a with-and-without view like "Does his interest help?".
 - **Built 2026-10-19 (the first step).** Every reading answer now saves whether pictures were on, as it already did for read-aloud. The grown-ups' Activity tab has "Do pictures and read-aloud help him?": right first time on his own first-time answers with and without each, counted only in skill-and-level groups where both happened, so a harder text never decides it (`supportEffect`). Tests: engine (like-for-like groups, repeats and guided answers left out; seen failing first) and e2e (the card, with axe).
+- **Decision made 2026-10-26, a trial that can be reverted (DW: "try the research's input").** Test flights, as the scan proposed (GAP-05):
+  - **What it does.** Every fifth block of sessions runs with one support fewer. A block is as long as a leg on the journey (5 sessions by default), so these are sessions 21 to 25, 46 to 50 and so on.
+  - **Which support.** It takes turns among the supports he has on. It never takes away one that is off.
+  - **What "off" means.** Pictures off hides the pictures on answers. Read-aloud off stops the automatic reading; the 🔊 buttons stay, so he can still tap to hear.
+  - **What he sees.** The plan screen says so before every session in the block ("Test flight: no pictures with the answers for a few flights. Points stay the same."). A button keeps the support on for the rest of that block.
+  - **Data.** Each answer saves the support as it really was, so "Do pictures and read-aloud help him?" fills both ways. The grown-ups' card says a trial is running.
+  - **Unlike the scan.** The notice comes on the plan screen, not on the route map one leg ahead.
+  - **Code.** `RULES.testFlightEvery` and `testFlight` (engine), the plan notice (`Session.tsx`), and `testKept` in settings.
+  - **To revert.** Set `RULES.testFlightEvery` to 0, which switches it off everywhere, and drop its engine test. Or revert the commit.
+  - **Tests.** Engine: blocks, taking turns, only supports that are on; seen failing first. E2e: the notice with axe, an answer saved with pictures off, and keeping it for the block.
 
 ## LTF-57 Today: a photo prompt (GAP-09, GAP-10)
 
@@ -132,8 +190,20 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Bhana e
 - **Checked against the code.** Mostly built: the four-panel strip (LTF-06), "what happened after" (LTF-05) and a feeling question; "after" is saved on each Today and shown as a trend (LTF-08). Missing: "after" and the feeling are asked depending on his stage and on what he told, not always; feeling words are not counted.
 - **What it is.** Ask both every time, and count feeling words from a fixed list (no model) for the grown-ups' trend.
 - **Built 2026-10-19 (the count).** Each Today saves whether he said how he felt (only the fact, never his words), and the grown-ups' "How his telling is growing" card shows it next to "what happened after" (`recountTrend`). Tests: engine (counted only from Todays that recorded it; seen failing first).
-- **Open for DW.** Asking "after" and the feeling every time would change the stage-by-stage design (LTF-05 adds "after" from stage 2, so stage 1 stays short). Keep the stages, or always ask both?
-- **Size.** S.
+- **Decided 2026-10-26.** DW: always ask the follow-ups.
+- **Built 2026-10-26.**
+  - "What happened after that?" now follows what he did at every stage, not only from stage 2. It is still not asked when he skipped what he did.
+  - "How did you feel?" was already asked at every stage.
+  - "Why did you feel that way?" still comes from stage 2, or once he is practising narrative step 5.
+  - The four-panel strip, skipped-question counts and the grown-ups' card follow the new rule.
+  - Tests: unit (`askable`, `skippedKeys`; seen failing first) and e2e (stage 1 asks "after").
+- **Decision made 2026-10-26, a trial that can be reverted (DW: "try the research's input").** Feeling words are now counted, as the scan proposed (GAP-13):
+  - **What is counted.** Each Today about his day saves how many different words from the fixed list of feeling tiles (good, happy, proud and so on) appear in what he told, his own typed words included. Whole words only, no model.
+  - **Privacy.** Only the count is saved, never the words.
+  - **Where it shows.** The grown-ups' "How his telling is growing" card shows it per recount and as an average.
+  - **Code.** `feelingWordCount` (`recount.ts`), `feelingWords` on the recount event, and `recountTrend`.
+  - **To revert.** Stop logging `feelingWords` in `Today.tsx` and drop the card's column. Saved counts are harmless and can stay. Or revert the commit.
+  - **Tests.** Unit: the count, whole words, each word once; engine: the trend; all seen failing first. E2e: the card shows one feeling word.
 
 ## LTF-59 "Does it fit?" questions (GAP-14 to GAP-17)
 
@@ -171,7 +241,19 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Grossma
 - **Must hold.** The model score never becomes the gate, and the passages used to tune it are never the ones used to judge it.
 - **Size.** M.
 
-## Requests from the learner (LTF-51 to LTF-53)
+## Requests from the learner (LTF-51 to LTF-53, LTF-64)
+
+## LTF-64 A save menu while he reads, and no update mid-flight
+
+Requested 2026-10-26: "a menu that lets me save". He seemed worried that an update had lost some of his progress. Built the same day.
+
+- **What was wrong.** A new version of the app switched in whenever the app was in the background, even in the middle of a session or a Today (`shouldSwitch` allowed hidden or safe, and its test said so). If he left the app mid-flight, for example to ask for help, it could reload onto the new version. His answers were kept, but the flight he was in was lost and did not count toward his journey.
+- **What was built.**
+  - A new version now waits for the safe moment only: his island's home screen with nothing open, whether or not the app is in the background.
+  - A 💾 Save menu sits in the top bar of reading sessions, Today and math sessions. It says every answer is saved the moment he gives it, and holds the same "Save my progress" button as the island (LTF-53). On a phone it is an icon, and screen readers still hear "Save".
+  - The step trail in a session now really takes its own row on a phone, as its stylesheet intended. An inline style had been overriding the rule.
+- **Tests.** Unit (`shouldSwitch`). E2e: the menu in a reading session and in Today saves to the family copy, with axe. Checked by eye at phone width.
+- **Not built.** Picking up an unfinished flight where he left it after a reload, for example if the browser closes the app. Ask if wanted (M).
 
 Added 2026-10-17: three requests from him, passed on by DW, all built the same day.
 
@@ -854,6 +936,7 @@ Added 2026-10-13. Approved. Built 2026-10-13, waiting for two people to score it
 - **Build.** `evals/scoring/`: about 300 invented child-style answers, scored by two people and banded clearly right, partly right or clearly wrong. A pytest report gives agreement per band and on answers the two people scored differently. A fine-tuned small encoder joins the model bake-off.
 - **Eval first.** The eval is the deliverable: 0.80 agreement in every band, not just overall.
 - **Guards.** Invented answers only, never his real ones.
+- **Note 2026-10-26, for the bake-off.** No scorer exists yet, so nothing changes now. When a scorer is tried, "unsure" (which sends a partly right answer to a structured follow-up, R18) should be defined from more than one signal: whether repeated runs agree, and how far the answer sits from clusters of similar answers. The model's own stated confidence was not reliable enough alone (Cong et al. 2026, preprint). Report how well each signal picks out the answers people scored differently.
 
 ## LTF-18 "What do you think?" cards
 

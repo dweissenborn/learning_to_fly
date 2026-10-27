@@ -5,7 +5,7 @@
 import { useMemo, useRef, useState } from 'react';
 import { ALL_SKILLS, mulberry32, pointsFor, type Progress } from '@wayfinder/engine';
 import type { AnswerEvent, LogEvent } from '@wayfinder/schema';
-import { Btn, Finish, finishedCount, Guide, log, sfx, SpeakBtn, stopSpeaking, type Settings } from '@wayfinder/web/host';
+import { Btn, Finish, finishedCount, Guide, log, SaveMenu, sfx, SpeakBtn, stopSpeaking, type Settings } from '@wayfinder/web/host';
 import { choicesFor, judge, makeProblem, mathMinMs, type Entry, type MathProblem } from '../engine/math';
 import { checkinNext, deriveMath } from '../engine/mathPath';
 import type { MathSettings } from '../settings';
@@ -36,7 +36,7 @@ export function workedSteps(p: MathProblem): string[] {
 }
 
 /** Every math screen has the same top bar, so the page lays out as reading's does. */
-const Top = ({ label }: { label?: string }) => <header className="topbar strand-math"><h1 style={{ margin: 0, fontSize: '1.4rem' }}>🧮 Math</h1><span className="spacer" />{label && <span className="muted">{label}</span>}</header>;
+const Top = ({ label }: { label?: string }) => <header className="topbar strand-math"><h1 style={{ margin: 0, fontSize: '1.4rem' }}>🧮 Math</h1><span className="spacer" />{label && <span className="muted">{label}</span>}<SaveMenu /></header>;
 
 /** What one problem's answer was: right first time with no help, helped (the Help step he reached, or 1 for the clue
  * after a miss), shown after two misses, from the choices or the keypad, and a guess faster than reading (LTF-43). */

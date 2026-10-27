@@ -43,6 +43,39 @@ async function seedFinished(page: Page, n: number) {
   await page.reload();
 }
 
+test('every fifth leg is a test flight with one support fewer, said on the plan first, and he can keep it (LTF-56, a trial)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await setSettings(page, { pictures: true });
+  await seedFinished(page, 20); // the fifth block of five sessions
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  const note = page.getByRole('note');
+  await expect(note).toContainText('Test flight: no pictures with the answers for a few flights. Points stay the same.');
+  await axe(page, 'test flight on the plan');
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.locator('main .ccard').first().click();
+  await page.getByRole('button', { name: 'Got it, skip' }).click({ timeout: 3000 }).catch(() => {});
+  await answer(page);
+  // His answers are saved as given without pictures, so the grown-ups' comparison fills both ways.
+  await expect.poll(() => page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const all = await new Promise<{ type: string; pictures?: boolean }[]>((res) => { const g = db.transaction('events').objectStore('events').getAll(); g.onsuccess = () => res(g.result); });
+    db.close();
+    return all.filter((e) => e.type === 'answer').map((e) => e.pictures);
+  })).toContain(false);
+
+  await page.reload();
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await note.getByRole('button', { name: 'Keep my pictures' }).click();
+  await expect(note).toHaveCount(0);
+  await page.reload();
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await expect(page.getByText("Here is today's plan.")).toBeVisible();
+  await expect(note).toHaveCount(0); // kept for the rest of this test flight
+});
+
 test('first run, a session item, and stopping without penalty', async ({ page }) => {
   await onboard(page);
   await axe(page, 'home');
@@ -254,6 +287,19 @@ test('"Save my progress" says where his progress is saved: on this device, and i
   await expect.poll(async () => (await learners(repo)).length, { timeout: 15_000 }).toBe(1);
   await page.getByRole('button', { name: 'Save my progress' }).click();
   await expect(page.getByRole('status').filter({ hasText: /on this device and in your family's copy\.$/ })).toBeVisible();
+  // His request: a save menu in the top bar while he reads, tells about today or does math.
+  for (const start of [/Start reading/, /Tell about today/]) {
+    await page.getByRole('button', { name: start }).click();
+    await page.getByRole('button', { name: 'Save', exact: true }).click();
+    const menu = page.getByRole('dialog', { name: 'Save' });
+    await expect(menu).toContainText('Every answer is saved the moment you give it.');
+    await menu.getByRole('button', { name: 'Save my progress' }).click();
+    await expect(menu.getByRole('status')).toHaveText(/^Saved at .+ on this device and in your family's copy\.$/);
+    await axe(page, 'save menu');
+    await page.keyboard.press('Escape');
+    await expect(menu).toHaveCount(0);
+    await page.reload();
+  }
 });
 
 test('the family cloud copy: a second device carries on as the same learner', async ({ browser }) => {
@@ -401,7 +447,9 @@ test('telling about something hard asks what happened after, and the grown-up ge
   await page.getByRole('button', { name: 'My day' }).click();
   await page.locator('.tcard').first().click();
   await page.getByRole('button', { name: 'Next' }).click();
-  for (let i = 0; i < 3; i++) await page.locator('.tiles .tile').first().click(); // who, what, how he felt
+  for (let i = 0; i < 2; i++) await page.locator('.tiles .tile').first().click(); // who, what
+  await expect(page.locator('.bubble', { hasText: 'What happened after that?' })).toBeVisible(); // asked at the first stage too (LTF-58)
+  for (let i = 0; i < 2; i++) await page.locator('.tiles .tile').first().click(); // what happened after, how he felt
   await page.getByRole('button', { name: 'I got stuck' }).click();
   await expect(page.locator('.bubble', { hasText: 'What happened after that?' })).toBeVisible();
   await axe(page, 'what happened after');
@@ -415,6 +463,7 @@ test('telling about something hard asks what happened after, and the grown-up ge
   await page.getByRole('button', { name: 'Today recounts' }).click();
   const card = page.locator('section', { has: page.getByRole('heading', { name: 'How his telling is growing' }) });
   await expect(card.getByRole('row').nth(1)).toContainText('Yes');
+  await expect(card).toContainText('1 per recount, over 1'); // "good", from the fixed list of feeling words (LTF-58)
   await axe(page, 'telling card');
 });
 
@@ -472,6 +521,7 @@ test('his day as a four-panel strip: a skipped panel shows quietly, and tapping 
   await page.getByRole('button', { name: 'Next' }).click();
   await page.getByRole('button', { name: 'Skip this one' }).click(); // who
   await page.locator('.tiles .tile').first().click(); // what
+  await page.getByRole('button', { name: 'Skip this one' }).click(); // what happened after
   await page.getByRole('button', { name: 'calm' }).click();
   await page.getByRole('button', { name: 'I got stuck' }).click();
   await page.getByRole('button', { name: 'I asked for help' }).click();
@@ -606,6 +656,7 @@ test('scouting has a "Who did it?" stop, and Starting point can run it on its ow
   await page.getByRole('button', { name: /it is/ }).click();
   await page.getByRole('button', { name: 'Space', exact: true }).click();
   await page.getByRole('button', { name: 'Next' }).click();
+  await expect(page.getByRole('switch', { name: 'Show pictures with answers' })).not.toBeChecked(); // a new learner starts without (LTF-63)
   await page.getByRole('button', { name: 'Next' }).click();
   await page.getByRole('button', { name: /Start scouting/ }).click();
   // Words, the reading story and the listening story: any answer will do here.

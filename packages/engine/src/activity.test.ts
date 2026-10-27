@@ -117,16 +117,18 @@ describe('hint wait (LTF-01)', () => {
 });
 
 describe('how his telling is growing (LTF-08)', () => {
-  const recount = (day: number, sentences: number, parts: number, o: { skipped?: string[]; typed?: boolean; after?: boolean; feeling?: boolean } = {}): LogEvent =>
-    ({ id: id(), ts: T0 + day * 86_400_000, type: 'recount', stage: 1, parts, sentences, skipped: o.skipped ?? [], typed: !!o.typed, after: !!o.after, topic: 'day', ...(o.feeling !== undefined ? { feeling: o.feeling } : {}) });
+  const recount = (day: number, sentences: number, parts: number, o: { skipped?: string[]; typed?: boolean; after?: boolean; feeling?: boolean; feelingWords?: number } = {}): LogEvent =>
+    ({ id: id(), ts: T0 + day * 86_400_000, type: 'recount', stage: 1, parts, sentences, skipped: o.skipped ?? [], typed: !!o.typed, after: !!o.after, topic: 'day', ...(o.feeling !== undefined ? { feeling: o.feeling } : {}), ...(o.feelingWords !== undefined ? { feelingWords: o.feelingWords } : {}) });
   it('tracks sentences next to parts told, the questions he skips most, and how often he adds his own words', () => {
-    const ev = [recount(0, 3, 1, { skipped: ['why', 'hard'] }), recount(1, 4, 1, { skipped: ['why'], feeling: false }), recount(2, 6, 2, { typed: true, after: true, feeling: true }), recount(3, 8, 3, { typed: true, feeling: true })];
+    const ev = [recount(0, 3, 1, { skipped: ['why', 'hard'] }), recount(1, 4, 1, { skipped: ['why'], feeling: false }), recount(2, 6, 2, { typed: true, after: true, feeling: true }), recount(3, 8, 3, { typed: true, feeling: true, feelingWords: 3 })];
     const t = recountTrend(ev);
     expect(t.recounts.map((r) => [r.sentences, r.parts])).toEqual([[3, 1], [4, 1], [6, 2], [8, 3]]);
     expect(t.skippedMost).toEqual([['why', 2], ['hard', 1]]);
     expect(t.ownWords).toEqual({ count: 2, of: 4 });
     expect(t.after).toEqual({ count: 1, of: 4 });
     expect(t.feeling).toEqual({ count: 2, of: 3 }); // LTF-58: only Todays saved since it was recorded count
+    expect(t.feelingWords).toEqual({ total: 3, of: 1 }); // LTF-58: feeling words, from the Todays that counted them
+    expect(t.recounts.map((r) => r.feelingWords)).toEqual([undefined, undefined, undefined, 3]);
     expect(t.early).toMatchObject({ sentences: 3.5, parts: 1 });
     expect(t.recent).toMatchObject({ sentences: 7, parts: 2.5 });
   });

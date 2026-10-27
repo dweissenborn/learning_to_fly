@@ -119,6 +119,7 @@ button { font: inherit; color: inherit; }
 /* minmax(0, 1fr): the page column never grows past the screen, so wide content scrolls inside its own box instead. */
 .shell { min-height: 100%; display: grid; grid-template-rows: auto 1fr auto; grid-template-columns: minmax(0, 1fr); max-width: 1240px; margin: 0 auto; padding: 0 16px; }
 .topbar { display: flex; align-items: center; gap: 0.75rem; padding: 0.8rem 0; min-height: 76px; }
+.topbar > nav { flex: 1; min-width: 0; }
 .brand { font-weight: 800; letter-spacing: 0.01em; font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem; }
 .brand svg { width: 34px; height: 34px; }
 main { padding-bottom: 1rem; min-width: 0; }
@@ -475,6 +476,7 @@ button.pbox { cursor: pointer; }
   h1 { font-size: 1.5rem; }
   .topbar { flex-wrap: wrap; }
   .topbar > nav { order: 3; flex-basis: 100%; } /* the step trail gets its own row on a phone */
+  .topbar .save-btn .lbl { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } /* an icon on a phone; the word stays for screen readers */
   .schedule { flex-wrap: wrap; overflow-x: visible; } /* all seven steps fit, so it never scrolls on its own */
   .schedule li { min-width: 40px; font-size: 0; }
   .schedule li .dot { width: 34px; height: 34px; }
@@ -584,3 +586,7 @@ button.pbox { cursor: pointer; }
 /* LTF-54: the Today lanterns, big enough to feel like a reward. */
 .today-lanterns { display: grid; justify-items: center; gap: 0.4rem; text-align: center; }
 .today-lanterns .lantern { width: 30px; height: 40px; }
+
+/* The save menu in a top bar (his request, 2026-10-26). */
+.save-menu { background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow-lg); padding: 0.9rem; width: min(22rem, calc(100vw - 32px)); }
+.save-menu [role=dialog] { outline: none; }

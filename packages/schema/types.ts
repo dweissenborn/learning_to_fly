@@ -598,6 +598,10 @@ export interface RecountEvent {
    */
   feeling?: boolean;
   /**
+   * LTF-58: how many different feeling words from the fixed list he used. Only the count is kept, never the words.
+   */
+  feelingWords?: number;
+  /**
    * He answered a "What happened after that?" question (LTF-05).
    */
   after?: boolean;

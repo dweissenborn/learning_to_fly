@@ -10,7 +10,8 @@ import { today, type Lesson } from './content';
 import { Guide } from './art';
 import { Btn, Lanterns, MoreGuide, SpeakBtn } from './ui';
 import { sfx, useReading } from './media';
-import { askable, buildAsks, buildDaySentences, buildStrip, nextKey, ORDER, ownAnswer, skippedKeys, starter, type Part, type QKey } from './recount';
+import { askable, buildAsks, buildDaySentences, buildStrip, feelingWordCount, nextKey, ORDER, ownAnswer, skippedKeys, starter, type Part, type QKey } from './recount';
+import { SaveMenu } from './CloudScreens';
 interface Show { kind?: string; name: string; about?: string; problem?: string; events: string[]; ending?: string }
 
 /**
@@ -54,7 +55,7 @@ export function Today({ settings, progress, events, onExit }: { settings: Settin
   const [phase, setPhase] = useState<'pick' | 'ask' | 'order' | 'main' | 'built' | 'card'>('pick');
 
   // Who and what first. "Was anything hard?" is always asked: noticing when plans change is a school goal.
-  // "What happened after that?" follows anything hard, and from stage 2 what he did (LTF-05).
+  // "What happened after that?" follows what he did and anything hard, and "How did you feel?" is always asked (LTF-05, LTF-58).
   const asked = { stage, why: stepReached(5) };
   const questions: Record<QKey, { ask: (p: Part) => string; tiles: (p: Part) => { text: string; emoji?: string }[] }> = {
     who: { ask: (p) => `In ${p.lesson.name}, who were you with?`, tiles: () => [...today.who, ...settings.people].map((t) => ({ text: t })) },
@@ -135,7 +136,7 @@ export function Today({ settings, progress, events, onExit }: { settings: Settin
     await addNote({ kind: 'recount', personal: true, title: topic === 'show' ? `${date}: ${show.name.trim() || show.kind || 'a show'}` : date, text: sentences.join(' '), ask: asks });
     await log({
       type: 'recount', stage, parts: topic === 'show' ? 1 : parts.length, typed: !!typed.trim(), topic: topic ?? 'day',
-      sentences: sentences.length, skipped: topic === 'show' ? [] : skippedKeys(parts, asked), ...(topic === 'show' ? {} : { changed, feeling: parts.some((p) => !!p.feeling) }),
+      sentences: sentences.length, skipped: topic === 'show' ? [] : skippedKeys(parts, asked), ...(topic === 'show' ? {} : { changed, feeling: parts.some((p) => !!p.feeling), feelingWords: feelingWordCount(sentences, today.feelings.map((f) => f.word)) }),
       ...(hideTiles ? { ideas: parts.flatMap((p, i) => ORDER.filter((k) => askable(k, p, asked) && p[k]).map((k) => !!ideas[`${i}:${k}`])) } : {}), after: parts.some((p) => !!(p.afterHard || p.afterDone)),
     });
     sfx.finish();
@@ -161,7 +162,7 @@ export function Today({ settings, progress, events, onExit }: { settings: Settin
   const stripLines = [...strips.flatMap((s) => s.panels.flatMap((x) => (x.text ? [x.text] : []))), ...(mainLine ? [mainLine] : [])];
 
   return <>
-    <header className="topbar"><h1 style={{ margin: 0 }}>📅 Today</h1><span className="spacer" /><Btn className="quiet small" onPress={onExit}>← Back to island</Btn></header>
+    <header className="topbar"><h1 style={{ margin: 0 }}>📅 Today</h1><span className="spacer" /><SaveMenu /><Btn className="quiet small" onPress={onExit}>← Back to island</Btn></header>
     <main className="stack">
       {phase === 'pick' && !topic && <>
         {guideSay('What do you want to tell about?')}
