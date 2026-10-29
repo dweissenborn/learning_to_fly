@@ -122,6 +122,14 @@ test('math: a start point, a short check-in, then a lesson that finishes like re
   await page.getByRole('button', { name: 'Choose a spot for me' }).click();
   await page.getByRole('button', { name: /Back to my island/ }).click();
   await expect(page.getByText('4 more sessions to Gull Island.')).toBeVisible(); // a math session moves the journey
+  // LTF-44: the grown-ups' Math tab, read from the log.
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Math', exact: true }).click();
+  const report = page.locator('section', { has: page.getByRole('heading', { name: 'Math, step by step' }) });
+  await expect(report.getByRole('row', { name: /Multiplication and division facts/ })).toContainText('placed by the check-in');
+  await expect(report.getByRole('row', { name: /Factors and common factors/ })).toContainText('learning, with choices');
+  await expect(report).toContainText('1 finished of 1 started (100% of all his sessions)');
+  await axe(page, 'math tab');
 });
 
 test('math help: one Help button with three steps, choices first on a new skill, and an answer after help counts as helped (LTF-43)', async ({ page }) => {
@@ -164,6 +172,13 @@ test('math help: one Help button with three steps, choices first on a new skill,
   await page.getByRole('button', { name: /Got it/ }).click();
   await expect(page.getByRole('group', { name: 'Keypad' })).toBeVisible();
   await expect(page.getByRole('group', { name: 'Choices' })).toHaveCount(0);
+  // LTF-40: the times table is one tap away, and looking at it never counts as help (this answer's hint stays the Help steps' 3).
+  await page.getByRole('button', { name: 'Times table' }).click();
+  const chart = page.getByRole('dialog', { name: 'Times table' });
+  await expect(chart.getByRole('row').nth(7)).toContainText('56'); // the 7s: 7 × 8 = 56
+  await axe(page, 'times table');
+  await chart.getByRole('button', { name: 'Done' }).click();
+  await expect(chart).toHaveCount(0);
   await page.getByRole('button', { name: 'Help: show three choices' }).click();
   await expect(page.getByText('Step 1 of 3: three choices.', { exact: false })).toBeVisible();
   await expect(page.getByRole('group', { name: 'Choices' }).getByRole('button')).toHaveCount(3);
@@ -176,6 +191,11 @@ test('math help: one Help button with three steps, choices first on a new skill,
   await expect(page.getByText('You found it with help.')).toBeVisible();
   await page.getByRole('button', { name: /^Next( →)?$/ }).click();
   await expect.poll(async () => (await mathAnswers(page)).at(-1)).toEqual({ format: 'keypad', hint: 3, correct: false });
+  // A choice tapped after Help in a typed session is still a typed answer, helped, so it counts against mastery.
+  await page.getByRole('button', { name: 'Help: show three choices' }).click();
+  await (await gcfChoices(page)).rightButton.click();
+  await page.getByRole('button', { name: /^Next( →)?$/ }).click();
+  await expect.poll(async () => (await mathAnswers(page)).at(-1)).toEqual({ format: 'keypad', hint: 1, correct: false });
 });
 
 test('math: two fast wrong answers in a row end the session kindly, as in reading (LTF-43)', async ({ page }) => {
@@ -205,4 +225,47 @@ test('math: two fast wrong answers in a row end the session kindly, as in readin
     await page.getByRole('button', { name: /^Next( →)?$/ }).click();
   }
   await expect(page.getByText('Good place to stop. Your progress is saved.', { exact: false })).toBeVisible();
+});
+
+test('story problems, a pilot: off until a grown-up turns it on, he picks where they happen, and a switch to plain numbers that never counts as help (LTF-42)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  // A finished check-in that missed equivalent fractions and placed the steps under it, so equivalent fractions is next.
+  await page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const tx = db.transaction(['events', 'kv'], 'readwrite');
+    const probes: [string, boolean][] = [['FR2', false], ['FR1', true], ['FR1', true], ['MF1', true], ['MF1', true], ['MF2', true], ['MF2', true], ['DV1', true], ['DV1', true], ['FR4', false]];
+    probes.forEach(([skill, correct], k) => tx.objectStore('events').put({ id: `probe-${k}`, ts: Date.now() - 86_400_000 + k * 1000, type: 'answer', session: 'math-checkin-seed', item: `gen-seed-${k}`, skill: `math:${skill}`, phase: 'placement', correct, hint: 0, tries: 1, ms: 9000, format: 'keypad', module: 'math' }));
+    tx.objectStore('kv').put({ key: 'settings:math', value: { enabled: true, stories: true } });
+    await new Promise((r) => { tx.oncomplete = r; });
+    db.close();
+  });
+  await page.reload();
+  await page.getByRole('region', { name: 'What would you like to do?' }).getByRole('button', { name: /Math/ }).click();
+  const where = page.getByRole('group', { name: 'Where the problems happen' });
+  await expect(where.getByRole('button')).toHaveCount(3);
+  await axe(page, 'story setting');
+  await where.getByRole('button', { name: /At the bakery/ }).click();
+  await page.getByRole('button', { name: /Got it/ }).click(); // the worked example stays in plain numbers
+  const story = page.locator('.math-story');
+  await expect(story).toContainText('Grandma Rose cut a pie into');
+  await axe(page, 'a story problem');
+  // From the story: d pieces, n eaten, the same pie in D pieces.
+  const [d, n, D] = ((await story.textContent()) ?? '').match(/\d+/g)!.map(Number);
+  await page.getByRole('group', { name: 'Choices' }).getByRole('button', { name: `${(n * D) / d}/${D}`, exact: true }).click();
+  await page.getByRole('button', { name: /^Next( →)?$/ }).click();
+  // The next one, switched to plain numbers: the same problem, with no help counted.
+  await page.getByRole('button', { name: 'Show the numbers' }).click();
+  await expect(story).toHaveCount(0);
+  const [pn, pd, pD] = ((await page.locator('.math-prompt').textContent()) ?? '').match(/\d+/g)!.map(Number); // n/d = ?/D
+  await page.getByRole('group', { name: 'Choices' }).getByRole('button', { name: `${(pn * pD) / pd}/${pD}`, exact: true }).click();
+  await page.getByRole('button', { name: /^Next( →)?$/ }).click();
+  await expect.poll(() => page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const all = await new Promise<{ ts: number; type: string; phase?: string; view?: string; hint?: number; correct?: boolean }[]>((res) => { const g = db.transaction('events').objectStore('events').getAll(); g.onsuccess = () => res(g.result); });
+    db.close();
+    return all.filter((e) => e.type === 'answer' && e.phase === 'together').sort((x, y) => x.ts - y.ts).map((e) => [e.view, e.hint, e.correct]); // ids are random: order by time
+  })).toEqual([['story', 0, true], ['plain', 0, true]]);
 });

@@ -6,4 +6,6 @@ export interface MathSettings {
   known?: string[];
   /** Skills a grown-up opened before what they rest on is done. */
   opened?: string[];
+  /** LTF-42 pilot: equivalent fractions, multiplying and dividing can be read as a short story. Off until turned on. */
+  stories?: boolean;
 }

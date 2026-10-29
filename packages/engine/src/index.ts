@@ -8,6 +8,9 @@ export const RULES = {
   minPerSession: 2, // your-turn answers a session needs to count toward mastery
   relearnMin: 3, // after a failed review, one session with this many answers at `mastery` restores the skill
   reviewGapsDays: [3, 7, 21],
+  reviewItems: 3, // questions in one skill's review (DW 2026-10-28: three questions, two right)
+  reviewPass: 2 / 3, // share right that passes a review: two of three, or of what he answered if he stopped
+  reviewsPerSession: 2, // skills reviewed in one warm-up, so it stays at six questions or fewer
   checkupEvery: 10, // LTF-14: finished sessions between optional check-up flights
   testFlightEvery: 5, // LTF-56 trial (DW 2026-10-26, revertible: 0 turns it off): every fifth block of leg-length sessions runs with one support fewer
   checkupTexts: 6,
@@ -33,7 +36,7 @@ export const stepOf = (s: SkillId) => Number(s[1]);
 export const GATE_SKILLS: SkillId[] = ['N1', 'N2', 'N3', 'N4', 'N5', 'F1', 'F2', 'F3'];
 export const dayKey = (ts: number) => {
   const d = new Date(ts);
-  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; // YYYY-MM-DD, as the picture API expects
 };
 
 // ---------------------------------------------------------------- progress
@@ -52,6 +55,8 @@ export interface SkillState {
   masteredAt?: number;
   /** Reviews passed since the last (re)mastery. 3 means the 21-day review passed. */
   reviewStage: number;
+  /** Has passed its 21-day review (third review) at least once; a later slip does not undo it (gate condition 3). */
+  lasted: boolean;
   nextReview?: number;
   /** Failed a review and is back in practice. */
   relearning: boolean;
@@ -76,7 +81,7 @@ export interface Progress {
 export const isRepeat = (p: Progress, a: { id: string }) => p.repeats.has(a.id);
 
 const fresh = (skill: SkillId): SkillState => ({
-  skill, status: 'new', everMastered: false, placed: false, scouted: false, reviewStage: 0, relearning: false, tallies: [], answers: [],
+  skill, status: 'new', everMastered: false, placed: false, scouted: false, reviewStage: 0, lasted: false, relearning: false, tallies: [], answers: [],
 });
 
 function master(s: SkillState, ts: number, placed = false) {
@@ -111,8 +116,9 @@ export function derive(events: readonly LogEvent[], opts: { fastTrack?: boolean 
     if (!open) return;
     for (const [id, r] of open.review) {
       const s = skills[id];
-      if (r.c / r.n >= RULES.mastery) {
+      if (r.c / r.n >= RULES.reviewPass) {
         s.reviewStage += 1;
+        if (s.reviewStage >= 3) s.lasted = true;
         s.placed = false;
         s.nextReview = ts + RULES.reviewGapsDays[Math.min(s.reviewStage, 2)] * DAY;
       } else Object.assign(s, { status: 'learning', relearning: true, reviewStage: 0, nextReview: undefined });
@@ -130,7 +136,8 @@ export function derive(events: readonly LogEvent[], opts: { fastTrack?: boolean 
   for (const e of [...events].sort((a, b) => a.ts - b.ts || rank(a) - rank(b))) {
     if (e.type === 'placement') {
       for (const strand of ['functional', 'narrative'] as const)
-        for (const id of skillsOf(strand)) if (stepOf(id) < e[strand] && skills[id].status !== 'mastered') master(skills[id], e.ts, true);
+        // Only skills he has never mastered: a later placement (the "Who did it?" stop run again) leaves a relearning skill alone.
+        for (const id of skillsOf(strand)) if (stepOf(id) < e[strand] && !skills[id].everMastered) master(skills[id], e.ts, true);
     } else if (e.type === 'session') {
       if (e.action === 'start') {
         close(e.ts);
@@ -192,7 +199,7 @@ export function gate(p: Progress, override: GateOverride = 'auto'): GateState {
   const conditions = {
     narrative: mastered(['N1', 'N2', 'N3', 'N4', 'N5']),
     functional: mastered(['F1', 'F2', 'F3']),
-    lasted: GATE_SKILLS.every((id) => p.skills[id].status === 'mastered' && p.skills[id].reviewStage >= 3),
+    lasted: GATE_SKILLS.every((id) => p.skills[id].status === 'mastered' && p.skills[id].lasted),
     inference: p.inferencePassed,
   };
   const resting = GATE_SKILLS.some((id) => p.skills[id].relearning);
@@ -272,7 +279,8 @@ export interface PickOptions {
 function levelWalk(s: SkillState, pool: Pool) {
   let level = 1, peak = 1, streak = 0, misses = 0;
   for (const a of s.answers) {
-    if (a.rubric !== undefined) continue;
+    // His own answers only: a guided answer (the clue shows by itself after the wait) or an inference check never moves him.
+    if (a.rubric !== undefined || (a.phase !== 'yourturn' && a.phase !== 'warmup')) continue;
     const lv = a.level ?? pool.items.get(a.item)?.level ?? 1;
     if (lv < level) continue; // easier items do not move him
     if (a.correct) {
@@ -456,9 +464,9 @@ export function planSession(p: Progress, ctx: PickContext, strand: Strand, now: 
   const s = p.skills;
 
   const due = ALL_SKILLS.filter((id) => s[id].status === 'mastered' && (s[id].nextReview ?? Infinity) <= now)
-    .sort((a, b) => s[a].nextReview! - s[b].nextReview!).slice(0, 3);
+    .sort((a, b) => s[a].nextReview! - s[b].nextReview!).slice(0, RULES.reviewsPerSession);
   const warmup: Item[] = [];
-  for (const id of due) warmup.push(...take(pickItems(ctx, id, due.length === 1 ? 2 : 1, { exclude: used, tier: 'understand', level: levelFor(s[id], ctx.pool) })));
+  for (const id of due) warmup.push(...take(pickItems(ctx, id, RULES.reviewItems, { exclude: used, tier: 'understand', level: levelFor(s[id], ctx.pool) })));
   const review = due.filter((id) => warmup.some((i) => i.skill === id));
   const earlier = ALL_SKILLS.filter((id) => id !== skill && !due.includes(id) && (s[id].everMastered || s[id].answers.length > 0))
     .sort((a, b) => (s[a].answers.at(-1)?.ts ?? 0) - (s[b].answers.at(-1)?.ts ?? 0));
@@ -568,10 +576,13 @@ export function interestEffect(p: Progress) {
  * leg, 1 progress, 2 an obstacle, 3 the obstacle overcome, 4 almost there. A short leg still
  * shows the obstacle and how it was overcome; a long leg repeats the calm beats.
  */
-export const BEATS_FOR_LEG: Record<number, number[]> = { 3: [0, 2, 3], 5: [0, 1, 2, 3, 4], 7: [0, 1, 1, 2, 3, 4, 4] };
+// Beat 4 says "one more session", so it comes only on a leg's last step.
+export const BEATS_FOR_LEG: Record<number, number[]> = { 3: [0, 2, 3], 5: [0, 1, 2, 3, 4], 7: [0, 1, 1, 2, 3, 3, 4] };
 
-/** Where the learner was when the pace last changed, so a new pace never moves him back. */
-export interface JourneyAnchor { at: number; stop: number; step: number; after: number }
+/** Where the learner was when the pace last changed, so a new pace never moves him back. `beat` is the story beat he had
+ * reached on that leg, so a new pace never replays a setback he has already got past. */
+export interface JourneyAnchor { at: number; stop: number; step: number; after: number; beat?: number }
+const beatAt = (step: number, legLength: number) => { const t = BEATS_FOR_LEG[legLength] ?? BEATS_FOR_LEG[5]; return t[Math.min(step, t.length - 1)]; };
 export const JOURNEY_START: JourneyAnchor = { at: 0, stop: 0, step: 0, after: 0 };
 
 /**
@@ -587,8 +598,7 @@ export function journeyPosition(finished: number, stops: number, legLength: numb
   const stop = Math.min(legs, from.stop + Math.floor(eff / legLength));
   if (stop === legs) return { stop, step: 0, beat: -1, arrived: true, after: eff - (legs - from.stop) * legLength };
   const step = eff - (stop - from.stop) * legLength;
-  const table = BEATS_FOR_LEG[legLength] ?? BEATS_FOR_LEG[5];
-  return { stop, step, beat: table[Math.min(step, table.length - 1)], arrived: false, after: 0 };
+  return { stop, step, beat: Math.max(beatAt(step, legLength), stop === from.stop ? from.beat ?? 0 : 0), arrived: false, after: 0 };
 }
 
 // ---------------------------------------------------------------- island routes that branch (LTF-20)

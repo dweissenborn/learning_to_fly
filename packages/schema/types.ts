@@ -493,6 +493,10 @@ export interface AnswerEvent {
    */
   rapid?: boolean;
   /**
+   * LTF-42 pilot: a math problem answered while it showed as a short story or as plain numbers. Missing means plain.
+   */
+  view?: 'story' | 'plain';
+  /**
    * LTF-38: flight points this answer earned, saved when it was given (4 right on the first tap, 2 with the clue, -1 when shown, 0 for a fast guess). Older answers without it earned 2.
    */
   points?: number;
@@ -602,6 +606,10 @@ export interface RecountEvent {
    */
   feelingWords?: number;
   /**
+   * LTF-57: a grown-up's photo cue was there. Only the fact; the photo never leaves the device.
+   */
+  photo?: boolean;
+  /**
    * He answered a "What happened after that?" question (LTF-05).
    */
   after?: boolean;
@@ -630,7 +638,7 @@ export interface ActivityEvent {
   type: 'activity';
   session: string;
   /**
-   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point (no longer given since LTF-38). opinion: his answer on a 'What do you think?' card. word-help: he tapped a word for its meaning (LTF-04). word-check: he answered the warm-up's word for today. who-help: he tapped a dotted pronoun to see who it means (LTF-03). route: he chose a sea route at a fork; item is the island (LTF-20). daytrip: he opened a reached island's day trip; item is the stop (LTF-26). arc: the koala keeper arc began after the eighth koala (LTF-30). home: he chose to fly home after Opening Day (LTF-27). unsure: he pressed "I'm not sure" on a question; item is the question (LTF-49).
+   * step: entered a step. idle: no touch or key for a while. away: the app was hidden. back: returned from idle or away. skip-demo: pressed 'Got it, skip'. boost: got past his usual stopping point (no longer given since LTF-38). opinion: his answer on a 'What do you think?' card. word-help: he tapped a word for its meaning (LTF-04). word-check: he answered the warm-up's word for today. who-help: he tapped a dotted pronoun to see who it means (LTF-03). route: he chose a route at a fork; item is the island for a sea route (LTF-20), path:<id> for a flight path (LTF-25) and home:<island> on the way home (LTF-27). daytrip: he opened a reached island's day trip; item is the stop (LTF-26). arc: the koala keeper arc began after the eighth koala (LTF-30). home: he chose to fly home after Opening Day (LTF-27). unsure: he pressed "I'm not sure" on a question; item is the question (LTF-49). again: his answer to "Fly again tomorrow?" at the end of a finished session, in like: yes (like), maybe (unsure) or not tomorrow (dislike) (LTF-60). retell: he told a story back from memory with story-map tiles; item is the story-map question, scene whether its picture was shown, correct whether every part was right (LTF-61, a pilot).
    */
   kind:
     | 'step'
@@ -647,7 +655,9 @@ export interface ActivityEvent {
     | 'daytrip'
     | 'arc'
     | 'home'
-    | 'unsure';
+    | 'unsure'
+    | 'again'
+    | 'retell';
   step?: 'plan' | 'choose' | 'warmup' | 'watch' | 'together' | 'yourturn' | 'gatecheck' | 'finish' | 'checkup';
   item?: string;
   /**
@@ -667,6 +677,14 @@ export interface ActivityEvent {
    */
   feature?: string;
   /**
+   * For retell: the story's scene picture was shown (LTF-61).
+   */
+  scene?: boolean;
+  /**
+   * For word-check: he picked the right meaning first time.
+   */
+  correct?: boolean;
+  /**
    * For opinion: I like it, not sure, or I don't like it.
    */
   like?: 'like' | 'unsure' | 'dislike';
@@ -678,10 +696,6 @@ export interface ActivityEvent {
    * For word-help and word-check: the word.
    */
   word?: string;
-  /**
-   * For word-check: he picked the right meaning first time.
-   */
-  correct?: boolean;
 }
 /**
  * LTF-51: a picture he asked for and paid for with flight points, drawn by Claude as SVG. What he typed is kept with it.

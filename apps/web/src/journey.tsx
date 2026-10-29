@@ -93,7 +93,7 @@ export function journeyNow(finished: number, settings: Settings) {
   const fork = outwardFork ?? (trip?.waiting ? { id: 'back-cloud', at: trip.stop, kind: 'home' as const,
     options: trip.options.map((o) => ({ id: o.place, name: o.name, emoji: o.emoji, first: o.beats[0].text, topics: o.topics as readonly string[] | undefined })) } : undefined);
   return { ...pos, here, next, beat, fork, branches, route: route.stops, finished, legLength: s.legLength,
-    koala: pos.arrived && pos.after < JOURNEY.koalas.length ? JOURNEY.koalas[pos.after] : undefined, arc, trip, outward: { stop: pos.stop, step: pos.step, after: pos.after }, ...story };
+    koala: pos.arrived && pos.after < JOURNEY.koalas.length ? JOURNEY.koalas[pos.after] : undefined, arc, trip, outward: { stop: pos.stop, step: pos.step, after: pos.after, beat: pos.beat }, ...story };
 }
 export type JourneyNow = ReturnType<typeof journeyNow>;
 
@@ -158,7 +158,7 @@ function arcOf(after: number, s: Settings) {
   const sessions = after - JOURNEY.koalas.length;
   const p = journeyPosition(sessions, ARC.length, s.legLength, s.arcAnchor ?? ARC_START);
   const next = ARC[p.stop + 1];
-  return { sessions, stop: p.stop, step: p.step, here: ARC[p.stop], next, beat: next ? shownBeat(next, p.beat, s) : undefined, done: p.arrived };
+  return { sessions, stop: p.stop, step: p.step, beatNo: p.beat, here: ARC[p.stop], next, beat: next ? shownBeat(next, p.beat, s) : undefined, done: p.arrived };
 }
 /** LTF-30, once: a learner who had met every koala before the arc existed starts it at its first beat, not partway. */
 export function arcStart(s: Settings, finished: number): Partial<Settings> | null {
@@ -171,6 +171,8 @@ export function arcStart(s: Settings, finished: number): Partial<Settings> | nul
 type HomeStop = Stop & { place: string };
 const HOME = JOURNEY.home;
 const HOME_AT = new Map((HOME?.stops ?? []).map((x) => [x.place, x]));
+/** The island a way-home stop revisits, for its picture and its day trip (back-cloud is Cloud Hill's airfield). */
+const HOME_PLACE = new Map((HOME?.stops ?? []).map((x) => [x.id, x.place]));
 const THEMED = ['fossil', 'reef', 'star', 'rail'];
 /** The islands he has not visited, best match for his interests first: at most three, offered at Cloud Hill on the way home. */
 function homeOptions(s: Settings) {
@@ -186,7 +188,7 @@ function tripOf(finished: number, s: Settings) {
   const p = routePosition(sessions, { forkAt: isle ? undefined : 1 }, list.length, s.legLength, s.homeTrip.anchor ?? ARC_START);
   const here = list[p.stop]!, next = p.waiting ? undefined : list[p.stop + 1];
   const places = list.slice(1, p.stop + 1).filter(Boolean).map((x) => (x as HomeStop).place);
-  return { sessions, stop: p.stop, step: p.step, here, place: BY_ID.get((here as HomeStop).place ?? 'australia')!, next, places,
+  return { sessions, stop: p.stop, step: p.step, beatNo: p.beat, here, place: BY_ID.get((here as HomeStop).place ?? 'australia')!, next, places,
     beat: next ? shownBeat(next, p.beat, s, here.id) : undefined, done: p.arrived, waiting: p.waiting, options: p.waiting ? homeOptions(s) : [] };
 }
 /** The way home's stops he has reached, for postcards and souvenirs. */
@@ -195,8 +197,10 @@ export const tripReached = (now: JourneyNow): Stop[] => (HOME?.stops ?? []).filt
 /** A new pace starts from where he is, on the way to Australia and in the arc, so it never moves him back or ahead. */
 export function repace(s: Settings, finished: number, legLength: Settings['legLength']): Partial<Settings> {
   const now = journeyNow(finished, s);
-  return { legLength, journeyAnchor: { at: finished, ...now.outward }, ...(now.arc ? { arcAnchor: { at: now.arc.sessions, stop: now.arc.stop, step: now.arc.step, after: 0 } } : {}),
-    ...(now.trip && s.homeTrip ? { homeTrip: { ...s.homeTrip, anchor: { at: now.trip.sessions, stop: now.trip.stop, step: now.trip.step, after: 0 } } } : {}) };
+  // Each anchor keeps the story beat he has reached, so a new pace never replays a setback.
+  return { legLength, journeyAnchor: { at: finished, ...now.outward },
+    ...(now.arc ? { arcAnchor: { at: now.arc.sessions, stop: now.arc.stop, step: now.arc.step, after: 0, beat: now.arc.beatNo } } : {}),
+    ...(now.trip && s.homeTrip ? { homeTrip: { ...s.homeTrip, anchor: { at: now.trip.sessions, stop: now.trip.stop, step: now.trip.step, after: 0, beat: now.trip.beatNo } } } : {}) };
 }
 
 export interface ShownBeat extends Omit<Beat, 'smooth'> { key: string; stop: Stop; chosen?: number }
@@ -246,7 +250,7 @@ function ForkCard({ now, settings }: { now: JourneyNow; settings: Settings }) {
   const choose = (to: string) => {
     if (home && settings.homeTrip) void saveSettings({ homeTrip: { ...settings.homeTrip, island: to, anchor: { at: now.trip!.sessions, stop: f.at, step: 0, after: 0 } } });
     else void saveSettings({ routes: { ...(settings.routes ?? {}), [f.id]: { to, at: Date.now() } }, journeyAnchor: { at: now.finished, stop: f.at, step: 0, after: 0 } });
-    void log({ type: 'activity', session: 'home', kind: 'route', item: to });
+    void log({ type: 'activity', session: 'home', kind: 'route', item: flight ? `path:${to}` : home ? `home:${to}` : to });
   };
   return <section className="card journey-card stack" aria-label={title}>
     <div className="row"><span style={{ fontSize: '1.8rem' }} aria-hidden>{flight ? '🗺️' : '🧭'}</span><h3 style={{ margin: 0, flex: 1 }}>{title}</h3>
@@ -314,20 +318,21 @@ export function BeatCard({ now, settings }: { now: JourneyNow; settings: Setting
 export function PostcardCard({ stop, arrived }: { stop: Stop; arrived?: boolean }) {
   const souvenir = stop.souvenir && pieceById.get(stop.souvenir);
   const [trip, setTrip] = useState(false);
+  const daytrip = stop.daytrip ?? BY_ID.get(HOME_PLACE.get(stop.id) ?? '')?.daytrip;
   // LTF-26: a reached island's day trip, a short read about a second place there. It costs nothing and moves nothing.
-  if (trip && stop.daytrip) return <section className="card postcard stack" aria-label={`Day trip on ${stop.name}`}>
+  if (trip && daytrip) return <section className="card postcard stack" aria-label={`Day trip on ${stop.name}`}>
     <div className="row"><h2 style={{ margin: 0, flex: 1 }}>Day trip on {stop.name}</h2>
-      <SpeakBtn lines={stop.daytrip} k={'daytrip-' + stop.id} label="" className="small iconbtn" /></div>
-    <p className="prose" style={{ margin: 0 }}>{stop.daytrip.join(' ')}</p>
+      <SpeakBtn lines={daytrip} k={'daytrip-' + stop.id} label="" className="small iconbtn" /></div>
+    <p className="prose" style={{ margin: 0 }}>{daytrip.join(' ')}</p>
     <div className="row"><Btn className="small" onPress={() => setTrip(false)}>← Back to the postcard</Btn></div>
   </section>;
   return <section className="card postcard stack" aria-label={`Postcard from ${stop.name}`}>
-    <StopArt id={stop.id} />
+    <StopArt id={stop.id} name={stop.name} />
     <div className="row"><h2 style={{ margin: 0, flex: 1 }}>{arrived ? `You reached ${stop.name}!` : stop.name}</h2>
       <SpeakBtn lines={stop.postcard} k={'postcard-' + stop.id} label="" className="small iconbtn" /></div>
     <p className="prose" style={{ margin: 0 }}>{stop.postcard.join(' ')}</p>
     {arrived && souvenir && <p className="ican-new" style={{ margin: 0 }}>New for your island: {souvenir.name}. You can pick it below.</p>}
-    {stop.daytrip && <div className="row"><Btn className="small" onPress={() => { setTrip(true); void log({ type: 'activity', session: 'home', kind: 'daytrip', item: stop.id }); }}>🧭 Day trip</Btn></div>}
+    {daytrip && <div className="row"><Btn className="small" onPress={() => { setTrip(true); void log({ type: 'activity', session: 'home', kind: 'daytrip', item: stop.id }); }}>🧭 Day trip</Btn></div>}
   </section>;
 }
 
@@ -345,7 +350,7 @@ export function KoalaCard({ koala }: { koala: { name: string; facts: string[] } 
 }
 
 /** A small painted scene for each stop. */
-export function StopArt({ id }: { id: string }) {
+export function StopArt({ id, name }: { id: string; name: string }) {
   const sky = <><rect width="320" height="170" fill="#cfe8f2" /><circle cx="270" cy="34" r="16" fill="#ffe08a" /></>;
   const sea = (y: number) => <rect y={y} width="320" height={170 - y} fill="#6fb6dc" />;
   const gull = (x: number, y: number) => <path d={`M${x} ${y} q6 -6 12 0 q6 -6 12 0`} stroke="#33363d" strokeWidth="2" fill="none" />;
@@ -403,7 +408,7 @@ export function StopArt({ id }: { id: string }) {
       <text x="75" y="112" textAnchor="middle" fontSize="9" fontWeight="800" fill="#fff" fontFamily="Arial, sans-serif">BLUEGUM</text>
       <text x="75" y="123" textAnchor="middle" fontSize="8" fill="#fff" fontFamily="Arial, sans-serif">KOALAS</text></>,
   };
-  return <svg viewBox="0 0 320 170" role="img" aria-label={`A picture of ${JOURNEY.stops.find((s) => s.id === id)?.name}`} className="stop-art">{scenes[id]}</svg>;
+  return <svg viewBox="0 0 320 170" role="img" aria-label={`A picture of ${name}`} className="stop-art">{scenes[id] ?? scenes[HOME_PLACE.get(id) ?? '']}</svg>;
 }
 
 // ---------------------------------------------------------------- the map screen

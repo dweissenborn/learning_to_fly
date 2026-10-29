@@ -297,6 +297,31 @@ function ChooseStep({ options, onChoose, guide }: { options: Choice[]; onChoose:
 }
 
 // ---------------------------------------------------------------- finish: name the skill, grow the world, hand over to the adult (R7, R9)
+/** LTF-61 pilot: one story told back from memory with its story-map tiles. No text, no hints, no right or wrong shown, and he can skip. */
+function TellItBack({ item, scene, guide, onDone }: { item: Item; scene: boolean; guide: GuideId; onDone: (correct?: boolean) => void }) {
+  const p = pool.passages.get(item.passage)!;
+  return <div className="stack" aria-label="Tell it back">
+    <div className="guide-row"><Guide id={guide} size={64} /><div className="bubble">Tell it back: what do you remember about "{p.title}"? No peeking, and it is fine to skip.</div></div>
+    {scene && p.picture && <div className="card center"><span role="img" aria-label={`A picture of the story: ${p.title}`} style={{ fontSize: '4rem', lineHeight: 1 }}>{p.picture}</span></div>}
+    <ItemView key={item.id} item={item} mode="none" guide={guide} noPassage onDone={(r) => onDone(r.correct)} />
+    <div className="row"><Btn className="quiet" onPress={() => onDone()}>Skip this</Btn></div>
+  </div>;
+}
+
+/** LTF-60: would he like to come back tomorrow? Asked once after a finished session, never required; engagement, kept apart from reading. */
+function AgainTomorrow({ sid, guide }: { sid: string; guide: GuideId }) {
+  const [said, setSaid] = useState(false);
+  const ask = 'Would you like to fly again tomorrow?';
+  const answer = (like: 'like' | 'unsure' | 'dislike') => { setSaid(true); void log({ type: 'activity', session: sid, kind: 'again', like }); };
+  return <section className="card stack" aria-label="Again tomorrow?">
+    <div className="guide-row"><Guide id={guide} size={48} /><div className="bubble" aria-live="polite">{said ? 'Thanks for telling me.' : ask}</div></div>
+    {!said && <div className="tiles" role="group" aria-label={ask}>
+      {([['like', '🙂', 'Yes'], ['unsure', '🤔', 'Maybe'], ['dislike', '😐', 'Not tomorrow']] as const).map(([k, e, t]) =>
+        <Button key={k} className="tile" onPress={() => answer(k)}><span className="temoji" aria-hidden>{e}</span>{t}</Button>)}
+    </div>}
+  </section>;
+}
+
 export function Finish({ sid, plan, done, settings, events, progress, before, onExit, module, talk: talkFor }: {
   sid: string; plan: SessionPlan | null; done: { item: Item; phase: Step; r: Result }[]; settings: Settings; events: LogEvent[]; progress: Progress;
   before: { mastered: Set<SkillId>; opened: boolean; finished: number }; onExit: () => void;
@@ -311,6 +336,17 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
     sfx.finish();
   }, [sid]);
   const [stage, setStage] = useState<'pick' | 'place' | 'done'>('pick');
+  // LTF-61 pilot: "Tell it back" after a story session, from memory (no text), with the story's scene every other session.
+  const [retell] = useState(() => {
+    if (!settings.retell || !plan || strandOf(plan.skill) !== 'narrative') return undefined;
+    for (const pid of [...new Set(done.map((d) => d.item.passage))].reverse()) {
+      const models = new Set([...pool.models.values()].map((m) => m.item)); // not a worked example he just watched being filled in
+      const item = [...pool.items.values()].find((i) => i.format === 'storymap' && i.passage === pid && !i.checkup && !i.gatecheck && !models.has(i.id));
+      if (item) return { item, scene: before.finished % 2 === 0 };
+    }
+    return undefined;
+  });
+  const [retold, setRetold] = useState(!retell);
   const [piece, setPiece] = useState<string | null>(null);
   const [fresh, setFresh] = useState<string>();
   const placed = placedFrom(events);
@@ -328,18 +364,19 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
   const isle = islandOf(now.here.id);
   const lit = litFrom(progress);
   const onIsle = placed.filter((p) => p.island === isle);
-  // LTF-46: what this session did on the island's quest, and then what building did. Only on the island he was already on.
+  // LTF-46: what this session did on the quest of the island it started on, and then what building did here.
+  // The session that ends a leg is the last of his stay, so it finishes the quest of the island he is leaving (LTF-47).
   const builtNow = new Set(onIsle.map((p) => p.piece));
   const [builtBefore] = useState(builtNow);
-  const before0 = islandView(isle, prev, settings, lit, builtBefore);
-  const afterSession = islandView(isle, now, settings, lit, builtBefore);
+  const from = islandOf(prev.here.id), stayed = from === isle;
+  const before0 = islandView(from, prev, settings, lit, builtBefore);
+  const afterSession = islandView(from, now, settings, lit, builtBefore);
   const view = islandView(isle, now, settings, lit, builtNow);
-  const stayed = islandOf(prev.here.id) === isle;
-  const stepsDone = (a: typeof view, b: typeof view) => (stayed ? a.def.steps.filter((_, i) => a.state.done[i] && !b.state.done[i]) : []);
-  const opensNow = stepsDone(afterSession, before0), builtDone = stepsDone(view, afterSession);
+  const stepsDone = (a: typeof view, b: typeof view) => a.def.steps.filter((_, i) => a.state.done[i] && !b.state.done[i]);
+  const opensNow = stepsDone(afterSession, before0), builtDone = stayed ? stepsDone(view, afterSession) : [];
   const partly = stayed ? view.def.steps.filter((s, i) => !afterSession.state.done[i] && afterSession.state.count[i] > before0.state.count[i] && s.then) : [];
-  const keepsake = view.def.keepsake && stayed && !questDone(before0.state) ? view.def.keepsake : undefined;
-  const stepLine = (s: (typeof opensNow)[number]) => <div key={s.text} className="ican-new appear">🗝️ {s.text} {s.place ? `${s.place.name} is open on ${view.def.name} now.` : 'Done.'}</div>;
+  const keepsake = before0.def.keepsake && !questDone(before0.state) ? before0.def.keepsake : undefined;
+  const stepLine = (s: (typeof opensNow)[number]) => <div key={s.text} className="ican-new appear">🗝️ {s.text} {s.place ? `${s.place.name} is open on ${before0.def.name} now.` : 'Done.'}</div>;
   const koalaMet = prev.arrived && now.koala ? now.koala : null;
   const offers = useMemo(() => {
     const rng = mulberry32([...sid].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) | 0, 7));
@@ -367,12 +404,16 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
   const opened = (progress.gateOpened || checkPassed) && !before.opened;
   const own = done.filter((d) => d.phase === 'yourturn' || d.phase === 'gatecheck' || d.phase === 'checkup');
   const warm = [...new Set(done.filter((d) => d.phase === 'warmup').map((d) => SKILL[d.item.skill].name))];
+  // LTF-56 (GAP-07): the supports he had on, read from this session's answers (so a test flight shows what was really on).
+  const mine = events.filter((e) => e.type === 'answer' && e.session === sid);
+  const used = ([['pictures', 'pictures'], ['readAloud', 'read-aloud']] as const).filter(([k]) => mine.some((e) => e.type === 'answer' && e[k])).map(([, name]) => name);
   const lines = [
     warm.length ? `You warmed up with ${warm.join(' and ')}.` : '',
     plan?.model ? `You watched ${GUIDES[settings.guide].name} show ${SKILL[plan.skill].name.toLowerCase()}.` : '',
     done.some((d) => d.phase === 'together') ? `You did ${done.filter((d) => d.phase === 'together').length} together with ${GUIDES[settings.guide].name}.` : '',
     own.length ? `You did ${own.length} on your own.` : '',
     plan && own.length ? SKILL[plan.skill].praise[0].replace('{focus}', 'the word') : '',
+    used.length ? `Helpers you used today: ${used.join(' and ')}.` : '',
   ].filter(Boolean);
 
   const place = (x: number, y: number) => {
@@ -393,6 +434,8 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
   useEffect(() => { if (fresh === 'pending' && lastWorld) setFresh(lastWorld.id); }, [fresh, lastWorld]);
   const talk = talkFor ?? (plan ? SKILL[plan.skill].talk : 'Ask: which of today\'s stories was the most interesting? Why?');
 
+  if (retell && !retold) return <TellItBack {...retell} guide={settings.guide} onDone={(correct) => { if (correct !== undefined) void log({ type: 'activity', session: sid, kind: 'retell', item: retell.item.id, scene: retell.scene, correct }); setRetold(true); }} />;
+
   if (stage === 'place') return <div className="stack">
     <div className="guide-row"><Guide id={settings.guide} size={64} /><div className="bubble">Tap a dotted spot to put your {pieceById.get(piece!)?.name.toLowerCase()} there. Or I can choose a spot.</div></div>
     <Island placed={onIsle} lit={lit} here={{}} peaksOpen={peaksOpen} placing={{ piece: piece!, onPlace: place }} stage={now.stop} island={view.def} state={view.state} />
@@ -409,6 +452,7 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
     {keepsake && builtDone.length > 0 && questDone(view.state) && <div className="ican-new appear">{keepsake.icon} You finished the {view.def.name} quest. {cap(keepsake.name)} goes on your shelf on Home Island.</div>}
     <Island placed={placedFrom(events).filter((p) => p.island === isle)} lit={lit} here={{}} peaksOpen={peaksOpen} fresh={fresh} stage={now.stop} island={view.def} state={view.state} />
     <BeatCard now={now} settings={settings} />
+    <AgainTomorrow sid={sid} guide={settings.guide} />
     <div className="card talk">
       <h3>For your grown-up</h3>
       <p style={{ margin: 0 }}>{talk}</p>
@@ -432,7 +476,7 @@ export function Finish({ sid, plan, done, settings, events, progress, before, on
     {opened && <div className="ican-new appear strand-philosophical" style={{ background: 'var(--phi-soft)', color: 'var(--phi-deep)' }}>🏮 Lantern Peaks are open. A new part of your island is waiting.</div>}
     {opensNow.map(stepLine)}
     {partly.map((s) => <div key={s.text} className="ican-new appear">🗝️ {s.then}</div>)}
-    {keepsake && questDone(afterSession.state) && <div className="ican-new appear">{keepsake.icon} You finished the {view.def.name} quest. {cap(keepsake.name)} goes on your shelf on Home Island.</div>}
+    {keepsake && questDone(afterSession.state) && <div className="ican-new appear">{keepsake.icon} You finished the {before0.def.name} quest. {cap(keepsake.name)} goes on your shelf on Home Island.</div>}
     {arrivedStop && <PostcardCard stop={arrivedStop} arrived />}
     {koalaMet && <KoalaCard koala={koalaMet} />}
     <h2>Pick one new thing for your island</h2>

@@ -37,4 +37,6 @@ export interface ModuleManifest {
   SettingsPanel?: ComponentType;
   /** Its section in the grown-ups' Content library. */
   Preview?: ComponentType;
+  /** Its own tab in the grown-ups' area while it is on (LTF-44). */
+  Report?: ComponentType<{ events: LogEvent[] }>;
 }

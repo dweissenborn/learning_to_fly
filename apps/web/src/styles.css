@@ -590,3 +590,6 @@ button.pbox { cursor: pointer; }
 /* The save menu in a top bar (his request, 2026-10-26). */
 .save-menu { background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow-lg); padding: 0.9rem; width: min(22rem, calc(100vw - 32px)); }
 .save-menu [role=dialog] { outline: none; }
+
+/* LTF-57: the photo cue in Today */
+.photo-cue-img { display: block; max-width: min(100%, 320px); max-height: 220px; object-fit: contain; border-radius: 14px; border: 1px solid var(--line); }

@@ -122,11 +122,13 @@ for (const file of files) {
       if (it.gatecheck) at('a check-up item cannot also be a Peak check item');
     }
     // LTF-12: every act step follows a message item on the same message.
-    if (it.tags?.includes('act') !== !!it.after) at('an item tagged act needs "after", and only act items have it');
+    // Two-step items (LTF-12 message then act; LTF-59 "Does it fit?" then the sentence that shows it): the second names the first.
+    const second = it.tags?.includes('act') ? 'message' : it.tags?.includes('fit-show') ? 'fit' : null;
+    if (!!second !== !!it.after) at('an item tagged act or fit-show needs "after", and only those items have it');
     if (it.after) {
       const first = bank.items.find((x) => x.id === it.after);
       if (!first) at(`after: no item ${it.after}`);
-      else if (first.passage !== it.passage || !first.tags?.includes('message')) at(`after: ${it.after} must be a message item on the same passage`);
+      else if (first.passage !== it.passage || !first.tags?.includes(second)) at(`after: ${it.after} must be a ${second} item on the same passage`);
     }
     if (it.tags?.includes('know-think') && it.format === 'sort' && (it.bins.length !== 2 || it.cards.length > 4)) at('know-think sort items have two bins and at most four cards');
   }

@@ -140,6 +140,21 @@ def test_scoring_set():
     assert "because" in html_out and "SECRET" not in html_out and '"intended"' not in html_out and '"borderline"' not in html_out
 
 
+
+def test_second_level():
+    """LTF-62: a second reading-level opinion flags a big disagreement for review, and never blocks."""
+    import levelcheck
+    assert [levelcheck.level_of(g) for g in (0.5, 2.0, 3.6, 5.0, 7.5)] == [1, 1, 3, 4, 5]
+    plain = "Sam has a red cap. He puts it on his head. He runs to the park with his dog. The dog runs fast. Sam and the dog play all day. Then they go home for lunch."
+    hard = "Meteorologists anticipate considerable precipitation accompanied by intermittent electrical disturbances. Residents should consequently secure vulnerable possessions. Authorities recommend comprehensive preparation regarding evacuation procedures. Unprecedented atmospheric conditions necessitate extraordinary vigilance."
+    one = lambda text, level: {"id": "x", "level": level, "sentences": [text]}
+    assert levelcheck.flags(one(plain, 1)) == []
+    assert [f["check"] for f in levelcheck.flags(one(hard, 1))] == ["second-level"]
+    assert levelcheck.flags(one(hard, 4)) == []  # Spache is built for grades 1 to 3: levels 4 and 5 are not checked
+    import content_check
+    flag = levelcheck.flags(one(hard, 1))
+    assert content_check.exit_code(flag, {"second-level": {"passed": True}}) == 0  # never the gate
+
 if __name__ == "__main__":
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

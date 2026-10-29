@@ -3,13 +3,14 @@
 // a worked example, a few together, then his turn. A miss opens the named next step for one more try; a second miss
 // shows the answer (LTF-38). Sessions finish like reading's: the journey moves and he adds to his island.
 import { useMemo, useRef, useState } from 'react';
-import { ALL_SKILLS, mulberry32, pointsFor, type Progress } from '@wayfinder/engine';
+import { Button } from 'react-aria-components';
+import { ALL_SKILLS, mulberry32, pointsFor, RULES, type Progress } from '@wayfinder/engine';
 import type { AnswerEvent, LogEvent } from '@wayfinder/schema';
 import { Btn, Finish, finishedCount, Guide, log, SaveMenu, sfx, SpeakBtn, stopSpeaking, type Settings } from '@wayfinder/web/host';
-import { choicesFor, judge, makeProblem, mathMinMs, type Entry, type MathProblem } from '../engine/math';
+import { choicesFor, judge, makeProblem, mathMinMs, SETTINGS, STORY_SKILLS, storyFor, type Entry, type MathProblem, type Setting } from '../engine/math';
 import { checkinNext, deriveMath } from '../engine/mathPath';
 import type { MathSettings } from '../settings';
-import { FractionBar, Keypad, MATH_HINT, MATH_NAME } from './MathView';
+import { FractionBar, Keypad, MATH_HINT, MATH_NAME, TimesTable } from './MathView';
 
 type Phase = 'placement' | 'recheck' | 'warmup' | 'together' | 'yourturn';
 const TOGETHER = 3, YOURTURN = 5;
@@ -21,7 +22,7 @@ export function workedSteps(p: MathProblem): string[] {
   const [a, b] = [p.a, p.b];
   switch (p.op) {
     case 'shade': return [`Count all the equal parts: ${a[1]}. That is the bottom number.`, `Count the shaded parts: ${a[0]}. That is the top number.`, `So ${a[0]}/${a[1]} of the bar is shaded.`];
-    case 'fact': return [`${a[0]} × ${b[0]} means ${a[0]} groups of ${b[0]}.`, `Count by ${b[0]}s, or find it on the multiplication chart.`, `${a[0]} × ${b[0]} = ${a[0] * b[0]}.`];
+    case 'fact': return [`${a[0]} × ${b[0]} means ${a[0]} groups of ${b[0]}.`, `Count by ${b[0]}s, or find it with the Times table button.`, `${a[0]} × ${b[0]} = ${a[0] * b[0]}.`];
     case 'quot': return [`${a[0]} ÷ ${b[0]} asks: how many groups of ${b[0]} make ${a[0]}?`, `${b[0]} × ${a[0] / b[0]} = ${a[0]}.`, `So ${a[0]} ÷ ${b[0]} = ${a[0] / b[0]}.`];
     case 'gcf': { const g = gcd(a[0], b[0]); return [`A common factor divides both ${a[0]} and ${b[0]}.`, `Try the biggest first: ${g} goes into ${a[0]} (${a[0] / g} times) and into ${b[0]} (${b[0] / g} times).`, `No bigger number divides both, so the greatest common factor is ${g}.`]; }
     case 'divrem': { const q = Math.floor(a[0] / b[0]), r = a[0] % b[0]; return [`How many ${b[0]}s fit in ${a[0]}? ${b[0]} × ${q} = ${b[0] * q}, and one more would be too many.`, `What is left over? ${a[0]} − ${b[0] * q} = ${r}.`, `So ${a[0]} ÷ ${b[0]} = ${q} r ${r}.`]; }
@@ -40,14 +41,15 @@ const Top = ({ label }: { label?: string }) => <header className="topbar strand-
 
 /** What one problem's answer was: right first time with no help, helped (the Help step he reached, or 1 for the clue
  * after a miss), shown after two misses, from the choices or the keypad, and a guess faster than reading (LTF-43). */
-type Answered = { correct: boolean; shown: boolean; tries: number; ms: number; hint: number; format: 'keypad' | 'choices'; rapid: boolean };
+type Answered = { correct: boolean; shown: boolean; tries: number; ms: number; hint: number; format: 'keypad' | 'choices'; rapid: boolean; view?: 'story' | 'plain' };
 const HELP_STEP = ['', 'Step 1 of 3: three choices. Pick one, or type your answer.', 'Step 2 of 3: a smaller step.', 'Step 3 of 3: here is how. Now you try it.'];
 const HELP_NEXT = ['', 'Help: show three choices', 'Help: a smaller step', 'Help: show me how'];
 
 /** One problem. On the keypad, or from three choices while a skill is new (LTF-43). One Help button with three steps:
  * three choices, a smaller step, the worked answer; an answer after any step counts as helped. A miss opens the named
  * next step for one more try; a second miss shows the answer (LTF-38). */
-function MathItem({ p, phase, guide, ramp = false, guessCheck = false, rng, onDone }: { p: MathProblem; phase: Phase; guide: Settings['guide']; ramp?: boolean; guessCheck?: boolean; rng: () => number; onDone: (r: Answered) => void }) {
+function MathItem({ p, phase, guide, ramp = false, guessCheck = false, story, rng, onDone }: { p: MathProblem; phase: Phase; guide: Settings['guide']; ramp?: boolean; guessCheck?: boolean; story?: { lines: string[]; emoji: string }; rng: () => number; onDone: (r: Answered) => void }) {
+  const [view, setView] = useState<'story' | 'plain'>(story ? 'story' : 'plain'); // LTF-42: switching never counts as help
   const [v, setV] = useState<Entry>({});
   const [tries, setTries] = useState(0);
   const [state, setState] = useState<null | 'right' | 'helped' | 'shown' | 'answered' | 'clue' | 'fill'>(null);
@@ -75,11 +77,14 @@ function MathItem({ p, phase, guide, ramp = false, guessCheck = false, rng, onDo
   const more = () => setHelp((h) => (ramp && !h ? 2 : Math.min(3, h + 1)));
   const next = () => onDone({
     correct: tries === 1 && (quiet ? error === 'right' : state === 'right'), shown: state === 'shown', tries: Math.max(1, tries), ms: Date.now() - start.current,
-    hint: Math.max(help, tries > 1 ? 1 : 0), format: viaChoice.current ? 'choices' : 'keypad',
-    rapid: guessCheck && !quiet && (first.current ?? Infinity) < mathMinMs(p, viaChoice.current),
+    // The session's mode, not how he tapped: a choice after Help in a typed session is a helped typed answer, a miss toward mastery.
+    hint: Math.max(help, tries > 1 ? 1 : 0), format: ramp ? 'choices' : 'keypad',
+    rapid: guessCheck && !quiet && (first.current ?? Infinity) < mathMinMs(p, viaChoice.current), ...(story ? { view } : {}),
   });
   return <div className="stack math-item">
-    <div className="row"><p className="math-prompt" style={{ flex: 1 }}>{p.prompt}</p><SpeakBtn lines={[p.prompt.replace('÷', 'divided by').replace('×', 'times')]} k={'m-' + p.prompt} label="" className="small iconbtn" /></div>
+    {story && view === 'story' ? <div className="row"><div className="card math-story" style={{ flex: 1 }}><span className="math-story-pic" aria-hidden>{story.emoji}</span>{story.lines.map((l) => <p key={l} style={{ margin: 0 }}>{l}</p>)}</div>
+      <SpeakBtn lines={story.lines} k={'ms-' + p.prompt} label="" className="small iconbtn" /></div>
+      : <div className="row"><p className="math-prompt" style={{ flex: 1 }}>{p.prompt}</p><SpeakBtn lines={[p.prompt.replace('÷', 'divided by').replace('×', 'times')]} k={'m-' + p.prompt} label="" className="small iconbtn" /></div>}
     {p.bar && <FractionBar {...p.bar} />}
     {showChoices && <div className="tiles math-choices" role="group" aria-label="Choices">{options.map((o) =>
       <Btn key={o.text} className={`big ${state === 'shown' && o.right ? 'on' : ''}`} isDisabled={done} onPress={() => submit(o.entry, true)}>{o.text}</Btn>)}</div>}
@@ -96,7 +101,11 @@ function MathItem({ p, phase, guide, ramp = false, guessCheck = false, rng, onDo
       {state === 'shown' && <div className="feedback neutral appear"><Guide id={guide} mood="think" size={44} /><span>Here is the answer. <b>Now you have seen how.</b></span></div>}
       {state === 'answered' && <div className="feedback neutral appear"><Guide id={guide} size={44} /><span>Got it. On to the next one.</span></div>}
     </div>
-    {!quiet && !done && help < 3 && <div className="row"><Btn className="small" onPress={more}><span aria-hidden>💡</span> {HELP_NEXT[ramp && !help ? 2 : help + 1]}</Btn></div>}
+    {!quiet && !done && <div className="row">
+      {story && <Btn className="small" aria-pressed={view === 'plain'} onPress={() => setView((v) => (v === 'story' ? 'plain' : 'story'))}>{view === 'story' ? 'Show the numbers' : 'Show the story'}</Btn>}
+      {help < 3 && <Btn className="small" onPress={more}><span aria-hidden>💡</span> {HELP_NEXT[ramp && !help ? 2 : help + 1]}</Btn>}
+      <TimesTable />
+    </div>}
     {done && <Btn className="primary big appear" autoFocus onPress={next}>Next <span aria-hidden>→</span></Btn>}
   </div>;
 }
@@ -146,7 +155,10 @@ function Checkin({ settings, events, math, onExit, onBreak }: { settings: Settin
 type Step = { p: MathProblem; phase: Phase; choices?: boolean } | { watch: MathProblem };
 
 export function MathSession({ settings, events, progress, math, onExit, onBreak }: { settings: Settings; events: LogEvent[]; progress: Progress; math: MathSettings; onExit: () => void; onBreak: (why: 'break' | 'rapid') => void }) {
-  const state = useMemo(() => deriveMath(events, { opened: math.opened, known: math.known }), []); // eslint-disable-line react-hooks/exhaustive-deps
+  const state = useMemo(() => deriveMath(events, { opened: math.opened, known: math.known, stories: math.stories }), []); // eslint-disable-line react-hooks/exhaustive-deps
+  // LTF-42 pilot: on a pilot step, he picks where today's problems happen; his interests come first.
+  const pilot = !!math.stories && !!state.focus && (STORY_SKILLS as readonly string[]).includes(state.focus);
+  const [setting, setSetting] = useState<Setting | null>(null);
   const sid = useMemo(() => 'math-' + crypto.randomUUID(), []);
   const rng = useMemo(() => mulberry32(Date.now() % 2147483647), []);
   const before = useMemo(() => ({ mastered: new Set(ALL_SKILLS.filter((s) => progress.skills[s].everMastered)), opened: progress.gateOpened, finished: finishedCount(progress) }), []); // eslint-disable-line react-hooks/exhaustive-deps
@@ -154,7 +166,7 @@ export function MathSession({ settings, events, progress, math, onExit, onBreak 
     if (!state.checkin.done) return [];
     const out: Step[] = [];
     for (const s of state.recheck) out.push({ p: makeProblem(s, rng), phase: 'recheck' }, { p: makeProblem(s, rng), phase: 'recheck' });
-    for (const s of state.review.slice(0, 2)) out.push({ p: makeProblem(s, rng), phase: 'warmup' });
+    for (const s of state.review.slice(0, RULES.reviewsPerSession)) for (let k = 0; k < RULES.reviewItems; k++) out.push({ p: makeProblem(s, rng), phase: 'warmup' }); // three problems a review
     if (state.focus) {
       out.push({ watch: makeProblem(state.focus, rng) });
       const choices = state.skills[state.focus].choices; // LTF-43: a new skill starts with three choices
@@ -169,6 +181,13 @@ export function MathSession({ settings, events, progress, math, onExit, onBreak 
   if (!plan.length) return <><Top /><main><div className="stack card center" style={{ maxWidth: 640, margin: '0 auto' }}>
     <h1 style={{ margin: 0 }}>Every math step is done for now</h1><p style={{ margin: 0 }}>Reviews come back when they are due.</p>
     <Btn className="primary big" autoFocus onPress={onExit}>Back to my island</Btn></div></main></>;
+  if (pilot && !setting) return <><Top /><main className="stack" style={{ maxWidth: 720, margin: '0 auto', width: '100%' }}>
+    <div className="guide-row"><Guide id={settings.guide} size={72} /><div className="bubble">Where should today's math problems happen? You can switch any problem to plain numbers.</div></div>
+    <div className="today-cards" role="group" aria-label="Where the problems happen">
+      {[...SETTINGS].sort((a, b) => Number(settings.interests.includes(b.topic as never)) - Number(settings.interests.includes(a.topic as never))).map((x) =>
+        <Button key={x.id} className="tcard" onPress={() => setSetting(x)}><span className="temoji" aria-hidden>{x.emoji}</span>{x.name}</Button>)}
+    </div>
+  </main></>;
   if (idx >= plan.length) return <Finish sid={sid} plan={null} done={[]} settings={settings} events={events} progress={progress} before={before} onExit={onExit} module="math"
     talk="Ask: which problem was the trickiest today? How did you work it out?" />;
   const step = plan[idx];
@@ -185,10 +204,11 @@ export function MathSession({ settings, events, progress, math, onExit, onBreak 
         <ol className="math-steps">{workedSteps(step.watch).map((s) => <li key={s}>{s}</li>)}</ol>
         <div className="row"><SpeakBtn lines={workedSteps(step.watch)} k={'w-' + step.watch.prompt} /><span className="spacer" /><Btn className="primary big" autoFocus onPress={() => { begin(); setIdx(idx + 1); }}>Got it <span aria-hidden>→</span></Btn></div>
       </section>
-        : <MathItem key={idx} p={step.p} phase={step.phase} guide={settings.guide} ramp={step.choices} guessCheck={settings.guessCheck !== false} rng={rng} onDone={(r) => {
+        : <MathItem key={idx} p={step.p} phase={step.phase} guide={settings.guide} ramp={step.choices} guessCheck={settings.guessCheck !== false} rng={rng}
+          story={setting && step.p.skill === state.focus && (step.phase === 'together' || step.phase === 'yourturn') ? { lines: storyFor(step.p, setting), emoji: setting.emoji } : undefined} onDone={(r) => {
           begin();
           void log({ type: 'answer', session: sid, item: `gen-${sid}-${idx}`, skill: step.p.skill, phase: step.phase, correct: r.correct, hint: r.hint, tries: r.tries, ms: r.ms, format: r.format, module: 'math',
-            ...(r.shown ? { shown: true } : {}), ...(r.rapid ? { rapid: true } : {}), points: pointsFor({ correct: r.correct, shown: r.shown, rapid: r.rapid }) });
+            ...(r.shown ? { shown: true } : {}), ...(r.rapid ? { rapid: true } : {}), ...(r.view ? { view: r.view } : {}), points: pointsFor({ correct: r.correct, shown: r.shown, rapid: r.rapid }) });
           // As in reading (LTF-38): two fast wrong answers in a row end the session kindly.
           rapidRun.current = r.rapid && !r.correct ? rapidRun.current + 1 : 0;
           if (rapidRun.current >= 2) { void log({ type: 'session', session: sid, action: 'stop', reason: 'rapid', module: 'math' }); onBreak('rapid'); return; }

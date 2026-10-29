@@ -2,7 +2,7 @@
 // and the usual wrong answers are recognised by name, so the feedback can say what happened.
 import { describe, expect, it } from 'vitest';
 import { mulberry32 } from '@wayfinder/engine';
-import { choicesFor, judge, makeProblem, MATH_SKILLS, mathMinMs, type MathProblem } from './math';
+import { choicesFor, judge, makeProblem, MATH_SKILLS, mathMinMs, SETTINGS, STORY_SKILLS, storyFor, type MathProblem } from './math';
 
 const p = (o: Partial<MathProblem> & Pick<MathProblem, 'op'>): MathProblem => ({ skill: 'math:FR3', a: [6, 8], b: [1, 1], form: 'any', shape: 'fraction', prompt: '', ...o });
 
@@ -115,5 +115,24 @@ describe('fresh plain problems (LTF-40)', () => {
       }
       expect(seen.size, skill).toBeGreaterThan(10);
     }
+  });
+});
+
+describe('story or plain numbers (LTF-42, a pilot)', () => {
+  it('tells the same problem as a short story: at most 40 words, a number in every sentence but the question, and only the numbers of the problem', () => {
+    const rng = mulberry32(42);
+    for (const skill of STORY_SKILLS) for (const setting of SETTINGS) for (let k = 0; k < 40; k++) {
+      const p = makeProblem(skill, rng);
+      const story = storyFor(p, setting);
+      expect(story.join(' ').split(/\s+/).length, story.join(' ')).toBeLessThanOrEqual(40);
+      story.slice(0, -1).forEach((s) => expect(s, s).toMatch(/\d/));
+      expect(story.at(-1)).toMatch(/\?$|out of \d+\.$/);
+      const numbers = (t: string) => (t.match(/\d+/g) ?? []).map(Number).sort((a, b) => a - b);
+      const spec = p.op === 'equiv' ? [p.a[1], p.a[0], p.b[0], p.b[0]] : [p.a[0], p.a[1], p.b![0], p.b![1]];
+      expect(numbers(story.join(' ')), story.join(' ')).toEqual([...spec].sort((a, b) => a - b));
+    }
+  });
+  it('has no story for steps outside the pilot', () => {
+    expect(storyFor(makeProblem('math:FR3', mulberry32(1)), SETTINGS[0])).toEqual([]);
   });
 });

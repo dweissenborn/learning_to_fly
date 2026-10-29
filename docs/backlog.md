@@ -2,6 +2,58 @@
 
 Notes on work still to do. Newest first.
 
+## Audit, 2026-10-28
+
+DW asked for the backlog to be checked against the live code, and for each part of the game to be checked against its design. Three read-only checks compared every entry with the code. Of 65 entries, 47 matched, 15 matched in part (mostly stale text) and 3 had drifted. Two more checks drove the real engine, journey and math code with simulated learners. Each finding below was confirmed in the code before anything changed. The entries carry the details.
+
+Fixed the same day. Each fix has a test, seen failing first.
+- **Placement.** Running the "Who did it?" stop again re-mastered skills he was relearning. A later placement now leaves alone any skill he has mastered before.
+- **Text levels.** They counted guided answers and inference-check answers. In Together the clue shows by itself after the wait, so a slow, careful reader stepped down on answers the clue had already helped. Levels now move only on his own answers (LTF-50).
+- **The Lantern Peaks gate.** It needed all eight gate skills at review stage 3 at the same moment, and any slip erased that. The plan says each skill "has passed its 21-day review", so a skill now keeps that once earned. A slip still rests the strand until the skill is relearned. Before the fix, a simulated learner at about 80% right opened the gate in 1 of 5 runs over 240 sessions.
+- **Math.** Two problems (LTF-41, LTF-43):
+  - A choice tapped after Help in a typed session was dropped from the mastery tally, so misses vanished. A simulated learner at 50% mastered every step.
+  - A missed math review never sent a step back to practice.
+- **Island quests.** Only four of a stay's five sessions counted. Fossil Bay's and Reef Island's quests could not finish while he was there, and their keepsake arrived without a word. The session that ends a stay now finishes the quest of the island he is leaving (LTF-46, LTF-47).
+- **Skipped scouting.** Skipping the scouting trip switched pictures and read-aloud on, from scores that were never measured (LTF-63).
+- **Fresh content.** The fresh-content count included check-up questions, which item choice never serves (the repeats entry).
+- **Picture limit.** The date sent with a picture request was not zero-padded. From 1 November the three-a-day limit would have run on UTC days (LTF-51).
+- **The journey's pace.** Changing the pace could replay a setback he had already got past. At pace 7, "One more session" showed with two sessions left (LTF-20).
+- **Postcards.** Postcards from the keeper arc and the way home read "A picture of undefined" to a screen reader. Way-home postcards had no picture and no day trip (LTF-26, LTF-27, LTF-30).
+- **Smaller fixes.**
+  - A grown-ups' tip promised a bonus that was removed with LTF-38.
+  - The test-flight note showed even with the trial off.
+  - The Overview did not name his routes (LTF-25).
+  - The voice named in Settings ignored being offline (LTF-37).
+  - A flight-path or way-home choice counted as choosing a sea route for the "What do you think?" card.
+
+Design questions for DW. The simulations found these; nothing was changed.
+- **Reviews.** A review is one or two questions, so "80%" means every one right, and a single slip sends a skill back to practice. Use two or three questions a review, or pass a review at one miss in three?
+  How often a review passes for a skill he really knows, where p is his chance of getting one question right:
+
+  | p | 1 question (today, when several are due) | 2 questions, both right (today, when one is due) | 3 questions, 2 right | 2 questions, 1 right |
+  |---|---|---|---|---|
+  | 0.7 | 70% | 49% | 78% | 91% |
+  | 0.8 | 80% | 64% | 90% | 96% |
+  | 0.9 | 90% | 81% | 97% | 99% |
+
+  So at 80%, today's rule sends a skill he knows back to practice after one review in five, or one in three when it is the only one due. Recommendation: 3 questions with 2 right. It is the one closest to the 80% mastery bar, and it costs two more questions a review.
+  **Decided by DW 2026-10-28: 3 questions, 2 right. Built the same day.**
+  - **The rule.** A review is three questions (`RULES.reviewItems`) and passes at two of three (`RULES.reviewPass`). A session stopped part way is judged on what he answered.
+  - **The warm-up.** At most two skills are reviewed in one warm-up (`RULES.reviewsPerSession`), so it stays at six questions or fewer; others wait for the next session.
+  - **Math.** The same rule: three problems a review, judged on the whole review, both for the check-in's provisional places and for sending a step back to practice.
+  - **Tests.** Engine and math (two of three passes, one of three fails, and the order of right and wrong does not matter; seen failing first).
+  - DW's other answers the same day: fast track stays as it is, and repeats keep counting for now, as a known limit for weaker learners.
+- **Fast track.** It never fires on a new skill. The skill's first session is planned at level 1, and fast track needs a level 3 text. Start a new skill at the level of the step before it, or drop the level condition?
+- **Repeats.** For a learner at 60 to 70% right, most own-turn answers become repeats at level 1, and repeats count toward mastery. Leave repeats out of mastery, or add level 1 content?
+- **Today's step back.** It ends when old recounts age out of the 14 days, not when he improves (LTF-07).
+- **Mastery pairing.** Mastery pairs his latest session with the latest one on an earlier day. A weak session earlier the same day is skipped.
+- **Flight gear.** The full flight kit arrives by about session 13, before take-off at session 20. Keep it, or space the gear out?
+
+Not built, on purpose (LTF-39):
+- A grown-up button to delete one module's memory. Deleting a whole learner already keeps the plan's promise, and a module delete would need a way to tell his other devices.
+- Module-scoped notes.
+- Timing the picker.
+
 ## Build order for the research features
 
 Added 2026-10-13. All 18 proposals from the research review (LTF-01 to LTF-18) were approved. Guest codes (LTF-19) were added at DW's request. The mockups and the full case for each are on the review page in claude.ai. The research is in the project doc `claude/reading-research/2026-10-12.md`. Each entry below links its studies. The findings are rules R17 to R30 in `docs/plan.md`, with full citations in its Sources section.
@@ -14,14 +66,14 @@ Each step lands its test before its code.
 4. **New questions.** LTF-09, LTF-10, LTF-12, LTF-13 (all built 2026-10-13).
 5. **Large content work.** LTF-20 (island routes, before LTF-14 so check-up flights can come from the island he chose), LTF-04, LTF-11 (idioms use LTF-04), LTF-03, LTF-14. Built 2026-10-13: LTF-04 (pilot), LTF-11, LTF-03 (N4 first), LTF-14 (all ten stops, the four islands included), and LTF-20, built with the proposed LTF-21 to LTF-24 as its island stories so DW can review them in the app. Waiting for DW: those island stories, and the koala keeper arc (LTF-30 to LTF-35). LTF-25 to LTF-29 come later, if approved.
 6. **Guest codes.** LTF-19, a separate track. Approach to confirm; DW 2026-10-13: not now.
-7. **Math module.** LTF-39 to LTF-44 (below), from DW's design note: modules as add-ons first, then typed answers, skills and gates, the help ladder, story or plain, and the grown-ups' measures. Approach to confirm.
+7. **Math module.** LTF-39 to LTF-44 (below), from DW's design note: modules as add-ons first, then typed answers, skills and gates, the help ladder, story or plain, and the grown-ups' measures. LTF-39 to LTF-44 are built; LTF-42 as a pilot that stays off until a grown-up turns it on.
 8. **Islands of their own.** LTF-45 to LTF-48 (below), from DW's feedback 2026-10-14. Built the same day; the new wording waits for DW's review.
 9. **Help and levels.** LTF-49 and LTF-50 (below), from a first look at how his sessions are going, 2026-10-14. Built the same day.
 10. **Requests from the learner.** LTF-51 to LTF-53 (below), built 2026-10-17; LTF-64, the save menu, built 2026-10-26.
 11. **Research gaps from the 19 October scan.** LTF-54 to LTF-62 (below). LTF-54 and LTF-55 built 2026-10-19, and the first steps of LTF-56, LTF-58 and LTF-60 the same day; the rest proposed, each checked against the code.
 12. **Research from the 26 October scan.** LTF-63 (below); its default built 2026-10-26, with the LTF-58 follow-ups. The same day, as trials that can be reverted: test flights (LTF-56) and the feeling-word count (LTF-58). The other findings are notes on LTF-17 and the design plan.
 
-## Proposed: the math module (LTF-39 to LTF-44)
+## The math module (LTF-39 to LTF-44)
 
 Added 2026-10-13 from DW's design note (kept local in `docs/math-module.md` with ADR-0003, since it describes the learner). Approach to confirm. Goal: close the gaps under the fraction topics he is working on now, so he does them correctly on his own, still does them weeks later, and wants to come back. Math is an add-on to Learning to Fly, not a separate app: it uses the same island, guide, journey, rules, break button and grown-ups' area, and adds its own skills, answer formats and memory. Out of scope for the first version: long division, timed fact practice, and an adventure story around the problems. DW 2026-10-13: start with LTF-39; dividing fractions by keep, change, flip (the worked examples and error rules follow it); long division later; a new skill opens with choices first. Build order: LTF-39, then LTF-40, LTF-41, LTF-43, LTF-42 and LTF-44; each step lands its test before its code.
 
@@ -37,10 +89,15 @@ Proposed 2026-10-13. Approach to confirm. ADR-0003 (local, Proposed).
 - **Build.** Namespaced skill ids (`math:FR3`), with today's ids read as module `reading` so nothing stored needs migrating; an optional `module` field on events (missing means reading); Home draws its paths from the enabled modules; per-module settings and notes documents in the existing Cosmos `data` container and `/learner` partition (`settings:<module>`, `n:<module>:<id>`), with no new container.
 - **Tests first.** Store tests for module-scoped reads, writes and deletes (deleting one module's memory leaves the others); engine test for one daily budget across modules; e2e: the picker's default is highlighted and one tap starts, with axe; every existing test passes with reading as a module.
 - **Guards.** 2 to 4 choices at most, a fixed layout, one story world. If the picker slows him down (time to choose is logged), it drops to a single "Carry on" button.
+- **Audit 2026-10-28.** Of the work left for LTF-41:
+  - Built: Home's paths per module, and math in the registry with its switch.
+  - Not built: module-scoped notes, the grown-up button to delete a module's memory (the API route exists, but nothing calls it), and timing the picker. Deleting a whole learner covers the privacy promise, and a module delete would need a way to tell his other devices, so these wait until asked.
+  - Notes are stored as `n:<id>` with the module inside, not `n:<module>:<id>`.
+  - Module tabs in the grown-ups' area (LTF-44) use a new manifest slot, `Report`.
 
 ## LTF-40 Typed math answers
 
-Proposed 2026-10-13. Approach to confirm.
+Proposed 2026-10-13. Built 2026-10-13 (the keypad and judging) and 2026-10-28 (the times table).
 
 - **What was built (2026-10-13).** `modules/math/src/engine/math.ts`: exact fraction arithmetic and `judge`, which counts equivalent forms (3/4 and 6/8, 1 1/2 and 3/2, extra zeros) unless the problem asks for simplest form, a mixed number or an improper fraction, and names the usual mistakes: not simplest, not mixed, adding the whole number to the top, dividing without flipping, flipping the first fraction, adding across, cross-multiplying, adding instead of multiplying for an equal fraction, a remainder too big, the neighbouring fact, a common factor that is not the greatest. An unfinished answer is neither right nor wrong. `makeProblem` makes fresh plain problems with new numbers for MF1, MF2, DV1 and FR2 to FR6, so an answer cannot be remembered; FR1 (fractions on a 0 to 1 line) needs pictures and comes with the stories. This is a design choice for DW: plain problems are generated, not written into the bank, while story problems (LTF-42) are written and reviewed. `modules/math/src/web/MathView.tsx`: the keypad (digits, delete, next box, Check; the answer shows its shape: a whole number, a fraction, a mixed number, or a quotient and remainder; an optional whole box is dashed, not a question mark) and a next step for each named mistake. Until math sessions exist (LTF-41), grown-ups can try any skill in the Content library under "Math (preview)". Tests: `math.test.ts` (the equivalence table, every mistake, every skill's problems judged right with varied numbers; mutation-checked) and an e2e run that enters the no-flip mistake, sees its next step, then the right answer, and a quotient with a remainder, with axe.
 
@@ -48,10 +105,15 @@ Proposed 2026-10-13. Approach to confirm.
 - **He sees.** An on-screen keypad, not a keyboard: large digit keys, a numerator box over a denominator box, a whole-number box for mixed numbers, "r" for remainders, delete and Check. The answer field always shows the answer's shape, never a blank box. The multiplication chart is one tap away, and using it never counts as help.
 - **Build.** Exact fraction arithmetic. Equivalent forms are right (3/4 and 6/8) unless the item asks for simplest form or a mixed number. Wrong answers are matched against coded error rules (whole-number thinking, adding across tops and bottoms, flipping the wrong fraction, not simplifying fully), and the match picks the feedback.
 - **Tests first.** Unit tests over an answer-equivalence table (6/8 for 3/4, 1 1/2 for 3/2, extra zeros, simplest-form items), mutation-checked; unit tests for each error rule; e2e: the keypad by tapping alone, with axe.
+- **Built 2026-10-28 (the times table).**
+  - A "Times table" button on every lesson problem opens a 12 × 12 chart. Facts go to 10 × 10 and division to 12 × 9.
+  - Looking at it never counts as help. It is not offered in the check-in, which measures what he knows.
+  - Feedback that mentioned "the multiplication chart" now names the button.
+  - Tests: e2e (the chart, with axe; the answer's help stays at the Help steps').
 
 ## LTF-41 Math skills, gates and a check-in
 
-Proposed 2026-10-13. Approach to confirm.
+Proposed 2026-10-13. Built 2026-10-13.
 
 - **What was built (2026-10-13).** `modules/math/src/engine/mathPath.ts`: the dependency graph (FR1 now has problems: the fraction of a bar that is shaded); `deriveMath` with gates (a step opens when what it rests on is mastered or placed, or a grown-up opens it early), placement from the check-in (passing a step places what it rests on too), a placed step confirmed by its first review or taken back, mastery as in reading (80% across two sessions on different days, first-try answers), and a stall rule (a step's last two sessions under 60% send a two-problem re-check to what it rests on; a miss there becomes the focus until one good session restores it); `checkinNext` starts at FR2, moves up while he is right, branches down after a miss, and with a grown-up's start point only confirms those steps. In the app: grown-ups turn math on in Settings (and can tick a start point and open a step early); "Math" then joins "What would you like to do?" and his island shows a math path, with steps that wait shown as coming up. The first math session is a scouting trip: no timer, no score, no right or wrong shown, two misses in a row end it kindly, and it picks up next time. Lessons on the core loop: a re-check if a step stalled, a warm-up review of due steps, a worked example in a teacher's words (dividing by keep, change, flip), three together and five on his own, with the LTF-38 rule (a miss opens the named next step for one more try; a second shows the answer). Sessions finish like reading's, with the island piece and the journey moving. Math answers and sessions carry `module: 'math'` and the new phase `recheck`. Tests: `mathPath.test.ts` (gates, the check-in path up and down, a start point, provisional placement, mastery, the stall re-check; mutation-checked, and one test strengthened after a mutation slipped through) and e2e runs of the scouting trip ending kindly and of a whole lesson to the finish, with axe.
 
@@ -59,15 +121,29 @@ Proposed 2026-10-13. Approach to confirm.
 - **He sees.** A check-in, not a test: the scouting framing, untimed, easy first, no score shown; it stops after two misses in a row and picks up next time. Skills whose dependencies are not yet mastered show as "coming up" with what opens them, like Lantern Peaks, and a grown-up can open one early.
 - **Build.** A grown-up can enter a start point (for example from a school assessment), so the check-in confirms those skills with about two typed items each instead of testing everything. It starts one step below the target topic and branches down after a miss. A skill passed in the check-in is `placed` (provisional) and confirmed by its first review. When a later skill stalls (two sessions under 60%), a two-item check on its dependencies routes him to the weakest one.
 - **Tests first.** Engine tests for gates, placement, the provisional mark and the stall re-check; e2e: two misses end the check-in kindly, with axe.
+- **Audit 2026-10-28.**
+  - Fixed: a missed math review never sent a step back to practice, unlike reading. Now, when his last review missed, the step is the focus again until a session of three or more answers at 80% restores it (`deriveMath`, `relearn`).
+  - Not fixed, for DW: "mastery as in reading" leaves out reading's transfer item.
+  - Check-in sessions log no start or finish, so they do not move the journey or use the day's budget.
 
 ## LTF-42 Story or plain numbers
 
-Proposed 2026-10-13. Approach to confirm.
+Proposed 2026-10-13. Built 2026-10-28 as a pilot, off until a grown-up turns it on.
 
 - **What it is.** He picks the setting, and every problem can be read as a short story or as plain numbers. Choice raises motivation and perceived competence, most for children and for choices that do not change the instruction ([Patall, Cooper & Robinson 2008](https://selfdeterminationtheory.org/wp-content/uploads/2019/10/2008_PatallCooperRobinson_PsychBulletin.pdf)); starting concrete and fading to symbols is the route to transfer ([Fyfe et al. 2014](https://doi.org/10.1007/s10648-014-9249-3)).
 - **He sees.** At the start of a session, 2 to 4 settings drawn from his interests and the island he is on; the setting changes only words and pictures. A story/plain switch on every problem; switching never counts as help. Stories are short (a proposed cap of 40 words), with a picture over each quantity, read-aloud, exact quantities, and no sentence without a quantity. Worked examples fade from story to picture to plain numbers, and every skill ends in plain notation.
 - **Build.** Mastery tracks story and plain accuracy separately and needs independent first-try answers in both, so the switch is never a way around word problems. A content check: the quantities in the story equal the item's spec, the word cap holds, and no sentence lacks a quantity.
 - **Tests first.** Engine test: mastery needs both views; the content check with its own unit tests; e2e of the switch, with axe.
+- **Built 2026-10-28: a pilot, off until a grown-up turns it on, with these decisions made and easy to revert.**
+  - **Templates, not fixed problems.** The story view retells each generated problem with its own numbers (`storyFor`), so the math never changes.
+  - **Pilot scope.** Equivalent fractions (FR2), multiplying (FR5) and dividing fractions (FR6, the module's goal). The worked example and reviews stay in plain numbers.
+  - **Settings.** Three to pick from, his interests first: the bakery, robot club and the beach. One picture per setting, not one over each quantity.
+  - **The rules.** At most 40 words. Every sentence but the question has a number, and the story has exactly the problem's numbers. Checked over 360 generated stories.
+  - **Opening view.** Each problem opens as the story, and "Show the numbers" switches it. Switching never counts as help; each answer saves its view.
+  - **Strictness.** With stories on, a pilot step also needs one independent right answer in each view, on top of the usual mastery rule. This is the lenient end of "needs both views".
+  - **Turning it on.** Grown-ups → Settings → Math → "Story problems (a pilot)". The Math tab adds a story column while it is on, and his "What do you think?" card covers it.
+  - **To revert.** Turn the switch off; nothing else changes, and saved answers keep their view.
+  - **Tests.** Unit (the story rules over three steps, three settings and 40 problems each; mastery needs both views only with stories on, only for pilot steps, and a helped story answer does not count) and e2e (off until on; the setting picker; a story answer and a plain answer, both logged with their view and no help; with axe).
 
 ## LTF-43 The math help ladder and a choices-first ramp
 
@@ -78,13 +154,22 @@ Proposed 2026-10-13. DW 2026-10-13: a new skill opens with choices first. Built 
 - **What it is.** One Help button with three steps: "Show choices" (three options, each wrong one built from a named error), then a clue or a smaller step, then the worked answer. An answer after any step counts as supported, not independent. Typed recall is much harder at first (about 55% first-try against 85% with choices in the study above), so a new skill opens with choices shown for its first session, and typed answers take over once first-try accuracy with choices holds at 80%.
 - **Build.** Feedback names the step and what to do next. A wrong answer opens the clue for one more try, as in LTF-38. The guessing check uses reading time plus typing time.
 - **Tests first.** Engine tests for the ramp's rule and for supported against independent answers; first-session accuracy is logged with and without choices.
+- **Audit 2026-10-28.**
+  - What was wrong: a choice tapped after Help in a typed session was logged as `format: 'choices'`. The mastery tally leaves those out, so the miss vanished, and a typed session answered all through Help could switch the step back to choices.
+  - What changed: answers now log the session's mode (`keypad` in a typed session), so a helped choice counts as a helped typed answer, which is a miss toward mastery. Answers already saved keep the old reading.
+  - Tests: e2e (a choice after Help logs `keypad` with its help).
 
 ## LTF-44 What the grown-ups see in math
 
-Proposed 2026-10-13. Approach to confirm.
+Proposed 2026-10-13. Built 2026-10-28.
 
 - **What it is.** A Math tab in the grown-ups' area, read from the event log: each skill on the path to dividing fractions, mastered and passing its reviews; first-try accuracy on new problems in story and plain form (80% is a starting point to tune, not a validated threshold); breaks and guesses (the LTF-38 measures); and how often he picks math on his own. Whether the skills show on paper at school has to be checked outside the app.
 - **Tests first.** Unit tests for each measure from seeded events; e2e of the tab, with axe.
+- **What was built.** A Math tab in the grown-ups' area while math is on, from a new manifest slot (`Report`), with its numbers from `mathReport`:
+  - For each step: where he is (coming up, learning with choices, learning, placed by the check-in, mastered, practising again), right first time on his own typed answers (choices, help and guesses left out), answers he needed help with, and reviews passed.
+  - For math as a whole: sessions finished and started, their share of all his sessions, breaks, guess stops and guesses set aside.
+  - Story against plain waits for LTF-42.
+  - Tests: unit (each measure from seeded events; seen failing first) and e2e (the tab after a lesson, with axe).
 
 ## Research from the 26 October scan (LTF-63)
 
@@ -113,11 +198,12 @@ Proposed 2026-10-26. Approach to confirm. Evidence as cited by the scan:
     - Placement measures reading and listening on two different level-2 stories, three questions each.
     - It turns read-aloud on when listening beats reading by 30 points or more, or when word reading is under 75% (`placementSupports`).
     - Placement only ever switches supports on.
-    - Every answer saves whether pictures and read-aloud were on.
+    - Every reading answer saves whether pictures and read-aloud were on (math answers do not).
     - "Do pictures and read-aloud help him?" compares the two only within the same skill and level (LTF-56).
   - Missing:
     - Pictures are on by default for every new learner. Placement turns them on again when word reading is low, but never tests them against no pictures.
     - With pictures always on, the "without" column of that comparison stays empty. Practice with one support fewer (LTF-56, GAP-05) is what would fill it.
+  - Since 2026-10-26, both are addressed: new learners start with pictures off, and test flights (LTF-56) fill the "without" column.
 - **What it is.** Placement adds a short picture probe: a matched level-2 story with pictures on, its questions compared with the reading story's. Both supports start from what placement shows, not from a default. An occasional practice leg with one support switched off (LTF-56) keeps the comparison filling in.
 - **Must hold.**
   - Use matched stories, never the same story twice: the second reading is easier, so whichever support came second would look better.
@@ -130,6 +216,10 @@ Proposed 2026-10-26. Approach to confirm. Evidence as cited by the scan:
   - The comfort step's toggle and placement (when word reading is low) can still switch them on.
   - The app-wide default stays on, so a learner who never saved the setting, him included, keeps what he has.
   - Tests: e2e (the comfort step shows pictures off; mutation-checked).
+- **Fixed 2026-10-28.**
+  - What was wrong: skipping the scouting trip, or stopping before the word check, passed scores that were never measured (all zero). Placement then switched pictures and read-aloud on as if he had read nothing.
+  - What changed: supports now change only after this run's word check.
+  - Tests: e2e (a skipped trip leaves both off; seen failing first).
 - **Not built.** The placement picture probe. Three questions decide little, and his own record decides once practice runs both ways (LTF-56). Build it only if a starting point is wanted sooner.
 - **Size.** S for the probe. The leg with one support fewer is LTF-56's.
 
@@ -153,7 +243,7 @@ Built 2026-10-19.
 
 ## LTF-56 Reading supports as dials (GAP-01 to GAP-07)
 
-Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Jhilal et al. 2026 (preliminary); Stephens et al. 2026; Lee, Quinn & Jiang 2025.
+Proposed 2026-10-19. Built in part: both supports saved with a with-and-without view (2026-10-19), test flights as a trial (2026-10-26), and the line of supports he used (2026-10-28). Evidence as cited by the scan: Jhilal et al. 2026 (preliminary); Stephens et al. 2026; Lee, Quinn & Jiang 2025.
 
 - **What it is.** Each support (pictures, read-aloud, text cut into short parts, keyword labels) is its own setting, chosen with him, saved on every answer, and now and then tried with one support fewer, so the dial is retuned from his own record.
 - **Checked against the code.**
@@ -172,6 +262,10 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Jhilal 
   - **Code.** `RULES.testFlightEvery` and `testFlight` (engine), the plan notice (`Session.tsx`), and `testKept` in settings.
   - **To revert.** Set `RULES.testFlightEvery` to 0, which switches it off everywhere, and drop its engine test. Or revert the commit.
   - **Tests.** Engine: blocks, taking turns, only supports that are on; seen failing first. E2e: the notice with axe, an answer saved with pictures off, and keeping it for the block.
+- **Built 2026-10-28 (GAP-07).**
+  - His finish screen lists the supports he had on, read from that session's answers ("Helpers you used today: pictures."). It is never a mark against him.
+  - Turning the trial off (`RULES.testFlightEvery` set to 0) now also hides the grown-ups' trial note.
+  - Tests: e2e (the line after a whole session).
 
 ## LTF-57 Today: a photo prompt (GAP-09, GAP-10)
 
@@ -181,13 +275,22 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Bhana e
 - **Checked against the code.** New: the app has no camera or photo code. Notes already follow a retention limit (`applyRetention`), and the cloud copy syncs events, notes and settings, so photos need their own path that never syncs.
 - **Must hold.** Kept on this device only: never synced, exported or logged. Objects and places, not people, said on screen. Deleted after 7 days unless a grown-up keeps it (proposal), and added to the plan's privacy table.
 - **Decisions.** Grown-up only, or may he photograph his own work? The retention period.
+- **Built 2026-10-28: a decision made with the scan's proposals, off until a grown-up turns it on, and easy to revert.**
+  - **Choices made.** A grown-up takes the photo, and it is kept for 7 days. Change either here if DW decides otherwise.
+  - **Turning it on.** Grown-ups → Today recounts has a "Photo cue" switch, off by default.
+  - **What he sees.** With it on, "My day" offers a photo field (a camera on a tablet or phone), saying "A thing or a place from today, not people." The photo stays on screen as a cue while he answers, and it can be deleted.
+  - **Storage.** Photos live in their own local table (`photos`). They are never queued for the cloud copy, never in the export, cleared with "Delete from this device", and deleted after 7 days by the retention pass at start-up. His Today saves only `photo: true`, the fact that a photo was there, for a later with-and-without comparison.
+  - **"What do you think?"** It has its own card, once he has told about a day with a photo.
+  - **To revert.** Turn the switch off; nothing else changes. To remove it, drop the `photos` table use in `Today.tsx` and the switch.
+  - **Tests.** E2e (off by default; on, a photo is shown as a cue and logged only as a fact; never in the outbox; one older than 7 days is gone after a reload).
+- **Still open for DW.** The plan's privacy table needs a "photo cue" row (the plan is local, so it was not edited here).
 - **Size.** M.
 
 ## LTF-58 Today: always "after" and a feeling, and counting them (GAP-08, GAP-13)
 
-Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Bhana et al. 2023; Goddard et al. 2014.
+Proposed 2026-10-19. Built 2026-10-19 and 2026-10-26. Evidence as cited by the scan: Bhana et al. 2023; Goddard et al. 2014.
 
-- **Checked against the code.** Mostly built: the four-panel strip (LTF-06), "what happened after" (LTF-05) and a feeling question; "after" is saved on each Today and shown as a trend (LTF-08). Missing: "after" and the feeling are asked depending on his stage and on what he told, not always; feeling words are not counted.
+- **Checked against the code.** Mostly built: the four-panel strip (LTF-06), "what happened after" (LTF-05) and a feeling question; "after" is saved on each Today and shown as a trend (LTF-08). Missing: "after" and the feeling are asked depending on his stage and on what he told, not always; feeling words are not counted. (Both built since: see below.)
 - **What it is.** Ask both every time, and count feeling words from a fixed list (no model) for the grown-ups' trend.
 - **Built 2026-10-19 (the count).** Each Today saves whether he said how he felt (only the fact, never his words), and the grown-ups' "How his telling is growing" card shows it next to "what happened after" (`recountTrend`). Tests: engine (counted only from Todays that recorded it; seen failing first).
 - **Decided 2026-10-26.** DW: always ask the follow-ups.
@@ -213,23 +316,56 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Howard 
 - **Checked against the code.** New. Parts exist to build on: the tap and tap-the-sentence question types, the Lantern Peaks inference check, and the content checks that tag each question's inference level (LTF-16).
 - **Must hold.** The guide's guesses are never a trick or a contest, and are worded the same way every time; every guess is checked to be clearly right or clearly wrong before it is used; tapping only.
 - **Decisions.** How often the guide's guess is wrong (the scan proposes one in three). Whether these join the Lantern Peaks check.
-- **Size.** L, mostly content and review.
+- **Built 2026-10-28: a pilot, with the scan's proposal and easy to revert.**
+  - **The format.** Two existing ones chained, with no new code: a tap ("It fits" or "It does not fit") and then a sentence tap, linked with `after` as LTF-12's message and act pairs are. Item choice already serves the two together.
+  - **The wording.** Every guess reads the same way: Your guide thinks: "…" Does that fit the story? Then: "Tap a sentence that shows whether it fits." Any sentence in the evidence counts.
+  - **The content.** Six pairs (n5-i213 to n5-i224) on existing Feelings and thoughts stories at levels 2 and 3. Two of the six guesses do not fit (one in three): Leo sad after his solo, and Sam thinking his dad made the noise.
+  - **Kept apart.** The Lantern Peaks inference-check stories are never used, and these do not join that check.
+  - **Validation.** It now knows two kinds of pair: `act` after `message`, and `fit-show` after `fit`. Planting a pair with no `after`, or one pointing at the wrong item, was caught.
+  - **Grown-ups and his card.** The Overview has a "Does it fit?" card with the two steps as separate lines. His "What do you think?" card covers it.
+  - **For DW.** Each guess is meant to be clearly right or clearly wrong; that needs a person's read before more are written. The content checks raised no new flags.
+  - **To revert.** Hide the twelve items in the Content library, or delete them from `content/bank/N5.json`.
+  - **Tests.** Content validation (above) and e2e (the guess and the sentence step in the Content library, with axe; the grown-ups' card).
+- **Size.** L in all, mostly content and review; the pilot is done.
 
 ## LTF-60 Engagement measured apart from reading (GAP-18, GAP-19)
 
-Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Berenguer et al. 2026 (preliminary); Gao et al. 2025; Wouters et al. 2013.
+Proposed 2026-10-19. Built 2026-10-19 (the weekly view) and 2026-10-28 ("Again tomorrow?"). Evidence as cited by the scan: Berenguer et al. 2026 (preliminary); Gao et al. 2025; Wouters et al. 2013.
 
 - **Checked against the code.** Mostly built: steps, pauses, time away, demo skips, breaks, guess stops, "I'm not sure", "What do you think?" votes and unfinished sessions are all saved, and the grown-ups' area already keeps them apart (Skills and Overview for reading, Activity for engagement), with no combined score. Missing: keeping going after a miss and coming back by himself (both can be worked out from what is saved); an "Again tomorrow?" question; a weekly view with the two lines side by side.
 - **Built 2026-10-19 (the weekly view).** The grown-ups' Activity tab opens with "Reading and engagement, week by week": right first time on his own turn in reading (guesses set aside) beside sessions finished, days he came, and how often a miss was followed by another answer in the same session. No combined score (`weekly`). Tests: engine (two weeks, own turn only, kept going after a miss; seen failing first) and e2e (the table, with axe).
-- **Still open.** An "Again tomorrow?" question for him, and whether a return was his own idea (the log cannot tell).
+- **Built 2026-10-28.**
+  - After a finished session, his guide asks "Would you like to fly again tomorrow?" with three picture tiles: Yes, Maybe and Not tomorrow. It is never required.
+  - The answer is saved as an `again` activity. The weekly table gains a "Wants to come back" column.
+  - Tests: engine (counted per week; seen failing first) and e2e (his answer, then the grown-ups' table).
+- **Still open.** Whether a return was his own idea (the log cannot tell).
 - **Size.** S to M.
 
 ## LTF-61 A scene picture while he retells (GAP-20)
 
-Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Berenguer et al. 2026 (preliminary).
+Proposed 2026-10-19. Built 2026-10-28 as a pilot, off until a grown-up turns it on. Evidence as cited by the scan: Berenguer et al. 2026 (preliminary).
 
 - **What it is.** An optional picture of the story's scene while he retells it, never while he reads, tried session by session, counting feeling words (with LTF-58).
 - **Checked against the code.** New. There is no retell step yet beyond the story map, so this depends on deciding what retelling looks like in the app.
+- **Drafted 2026-10-28: a retell step to decide on, so this can be built.**
+  - **What exists.** The story-map items (LTF-15's format) already ask for who, where, the problem, what happened and the ending from tiles. But the text stays on screen, so they check finding, not remembering.
+  - **Proposal (recommended).** After the last own-turn item of a story session, an optional "Tell it back" step on that session's story:
+    - the same story-map tiles, with the text hidden;
+    - every other session (A/B by session) shows the story's scene picture (the passage's `picture`), never while he reads;
+    - one `retell` event saves which parts he got right and whether the scene was shown, plus the feeling-word count from LTF-58 if he adds a sentence of his own.
+    - The grown-ups see retell accuracy with and without the scene, as "Do pictures and read-aloud help him?" does.
+  - **Must hold.** Tiles only, skippable, never a score that changes mastery or levels, and the picture never shows while he reads.
+  - **Decide.** Build it as above (off until a grown-up turns it on), or keep retell out of the app. Size: M once decided.
+- **Built 2026-10-28 as drafted: a pilot, off until a grown-up turns it on, and easy to revert.**
+  - **When it comes.** At the end of a story session, before he picks a piece for his island, "Tell it back" asks the story-map question of one of that session's stories, from memory.
+  - **What he sees.** No text, no hints, and no right or wrong shown. He can skip it. The story's picture (the passage's `picture`) shows on every other session, never while he reads.
+  - **Which question.** The last story in the session that has a story-map question. Worked examples are left out, since he has just watched those filled in.
+  - **What is saved.** One `retell` activity: the question, whether the scene was shown, and whether every part was right. A skip saves nothing.
+  - **Grown-ups.** The Activity tab's "Telling a story back (a pilot)" card compares with and without the scene (`retellEffect`). It never changes his skills or levels.
+  - **Turning it on.** Grown-ups → Settings → "Tell it back (a pilot)". His "What do you think?" card covers it.
+  - **Not built.** Counting feeling words in a sentence of his own.
+  - **To revert.** Turn the switch off.
+  - **Tests.** Engine (`retellEffect`) and e2e (the step after a first story session: no text, the picture shown, skippable, nothing saved on a skip; with axe).
 - **Size.** M, after a retell step exists.
 
 ## LTF-62 A second reading-level check (GAP-21, GAP-22)
@@ -239,7 +375,15 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Grossma
 - **What it is.** An open-weight model's reading-level score beside the formula, flagging passages where the two disagree by more than one level for review; the formula stays the hard gate. A gold set of passages rated for reading level, checked in CI.
 - **Checked against the code.** New. The pipeline uses textstat's Flesch-Kincaid grade only. The gold set from LTF-16 samples every level but is rated for coherence and inference, not reading level, and still waits for DW's ratings.
 - **Must hold.** The model score never becomes the gate, and the passages used to tune it are never the ones used to judge it.
-- **Size.** M.
+- **Built 2026-10-28 (the first step, without a model).**
+  - **What it does.** `pipeline/levelcheck.py` gives a second reading-level opinion and flags a passage for review when it is more than one level from the passage's level. It runs in `npm run content:check` as the `second-level` check.
+  - **Never the gate.** It is excluded from the exit code by name, so even a recorded agreement cannot make it block. Tested, and a mutation removing that guard was caught.
+  - **The stand-in.** Until an open-weight model is chosen, the second opinion is the Spache formula: sentence length and words outside a list of familiar words, so vocabulary rather than syllables. It is built for grades 1 to 3, so it checks levels 1 to 3 only.
+  - **Measured.** On 2026-10-28 it agreed within one level on all 332 prose passages at those levels (209 the same, 54 one lower, 69 one higher), so it flags nothing today. It is a quiet guard against a future text whose vocabulary is far from its level.
+  - **A model later.** One plugs in as another scorer in `levelcheck.flags`.
+  - **Still open.** A gold set rated for reading level (the LTF-16 gold set is rated for coherence and inference), and the choice of model.
+  - **Tests.** `pipeline/test_checks.py` (the level mapping; a plain level-1 text passes and a hard one is flagged; levels 4 and 5 are not checked; never the gate).
+- **Size.** M; the model and the gold set remain.
 
 ## Requests from the learner (LTF-51 to LTF-53, LTF-64)
 
@@ -261,6 +405,10 @@ Added 2026-10-17: three requests from him, passed on by DW, all built the same d
 
 - **DW's choices.** Claude Sonnet 5.5 draws it (Claude makes text, so it draws in SVG, in the island's flat style); he pays for it with flight points, like the gear; he types what to draw, and what he types may go to Anthropic. His name never does.
 - **What was built.** "Draw a picture" on his island: a picture costs 50 flight points (about two sessions), spent from what he has earned, so his flight kit never loses a piece. He types up to 100 letters; the family API (`api/src/picture.js`) checks the request, allows three pictures a day per learner (a drawing that fails gives its turn back), and calls Claude Sonnet 5.5 with a kid-safe instruction: a gentle version of anything not right for a young child, no words unless asked, no names. Thinking stays off and effort low, so a drawing comes back within the API's time limit. No refusal fallback, on purpose: when Claude declines, he is asked for another idea and keeps his points. The picture is kept only if it holds no script, event handler, outside link or embed, and shows as an image, so nothing in it can run. Each picture is a `picture` event with what he asked and its cost; the grown-ups' Activity tab lists them with a plain note on what is sent where. The key is the app setting `ANTHROPIC_API_KEY` and never reaches the browser. Tests: points and gear (engine), the request checks, the daily limit, declines and the picture check (API, mutation-checked), and e2e with the drawing faked: no family copy, a decline that costs nothing, a picture that spends 50 points, the gallery and the grown-ups' list, with axe.
+- **Audit 2026-10-28.**
+  - "Thinking stays off" holds. On Claude Sonnet 5.5, `{ type: 'disabled' }` is refused, and `{ type: 'between_tools' }` is how thinking is turned off (allowed at effort high or below).
+  - Fixed: the app sent its date as `2026-11-5`. The API rejects that and uses the UTC date instead, so the three-a-day limit would have run on UTC days from 1 November. `dayKey` now zero-pads.
+  - Test: engine (`dayKey`).
 
 ## LTF-52 Hot-air balloons in the island's sky
 
@@ -281,6 +429,10 @@ Added 2026-10-14 by DW, after a first look at how his sessions are going: "give 
 Added and built 2026-10-14, DW's choice.
 
 - **What was built.** Three first-try answers in a row at his level move him up a level; one miss moves him down. The old rule (two right up, two misses down) settles, simulated, where a learner gets about half right, below the 80% the app asks for mastery; the new one settles near 78%. Climbing back to a level he had already reached is no longer announced as a new unlock. Same day, a fix: a session's last answer is logged in the same millisecond as its finish, and the engine sometimes read the finish first and left that answer out of his mastery count; within one millisecond a session now starts first and ends last. Tests: the level rule, the highest level reached, and both orders of the last answer (each seen failing first).
+- **Fixed 2026-10-28.**
+  - What was wrong: the walk counted every answer on the skill, guided ones and inference checks included. In Together the clue shows by itself after the wait, so a slow, careful right answer counted as a miss and stepped him down.
+  - What changed: levels now move only on warm-up reviews and his own turn. His level is worked out again from his history, so it may now sit higher than before.
+  - Tests: engine (a guided answer and a check never step him down; seen failing first).
 
 ## Islands of their own (LTF-45 to LTF-48)
 
@@ -293,10 +445,15 @@ Added 2026-10-14 by DW: "the different islands are now working, but they have th
 ## LTF-46 Quests with their own shape, on the island's map
 
 - **What was built.** Quests run 3 to 5 steps. Most steps take one finished session; some take two and say why after the first ("The first night was cloudy. Next session, try again."); some are a thing from the island he builds (Gull Island's sailboat, Rail Coast's bus stop, Cloud Hill's weather station, Australia's camp tent), offered first after a session until it is built; some open no place. Each fits one stay on the island (at most five sessions). On a visited island the map shows the quest's numbered stones instead of the reading lanterns: lit when done, a flag on the next one. The place that waits for a lantern stays. Tests: sessions taken in order, a two-session step's progress, build steps, everything done once he sails on, the lantern place (mutation-checked); e2e: a session at Gull Island offers the sailboat first, building it finishes the quest.
+- **Fixed 2026-10-28.**
+  - What was wrong: "Each fits one stay" was off by one. The session that ends a leg moves him to the next island, so only four sessions counted at the default pace. Fossil Bay's and Reef Island's five-session quests could not finish while he was there; their last step was ticked silently when he sailed on. At pace 3, almost no quest finished.
+  - What changed: the finish screen now reports the quest of the island the session started on. The session that ends his stay finishes that quest and says so. At pace 3, the remaining steps finish together as he leaves.
+  - Tests: e2e (Reef Island's quest finishes on the session that sails on; seen failing first).
 
 ## LTF-47 A keepsake from each island
 
 - **What was built.** Finishing an island's quest brings home its keepsake (a gull feather, a star chart, a train ticket); the finish screen says so, the quest card says what it will be, and Home Island shows a shelf of keepsakes from the islands he has reached, with the ones still to finish. Nothing new is stored: a keepsake follows from his log. Tests: one keepsake per island, each different; e2e: the shelf on Home Island, with axe.
+- **Fixed 2026-10-28.** The keepsake line now shows for the island he is leaving (see LTF-46).
 
 ## LTF-48 Each island its own shape
 
@@ -307,6 +464,9 @@ Added 2026-10-14 by DW: "the different islands are now working, but they have th
 Added 2026-10-13 by DW. Approach chosen by DW the same day, and built 2026-10-13, first in the queue.
 
 - **What was built.** A wrong tap opens the clue for one more try (it never fades a choice, which would leave only the answer); a second wrong tap shows the answer, explained, with a neutral "Now you have seen how." Only an answer right on the first tap gets the success look and sound; right with the clue gets a neutral "You found it with the clue." Points are saved on each answer (`pointsFor`): 4 right on the first tap, 2 with the clue, 1 off when the answer was shown, none for a fast guess; older answers keep their 2. Gear follows his best total (`flightPeak`), so a piece is never taken back. The +3 bonus for going past his usual stopping point is gone. A first tap faster than the question could be read (`minReadMs`, about 600 words a minute, at least 1.5 seconds) is flagged `rapid`: it earns nothing and never counts toward or against mastery; two fast wrong answers in a row end the session kindly. "I need a break" replaces Stop on every session screen and is honoured at once, with no "Keep going" question, and both kinds of stop go to the lounge (`apps/web/src/Lounge.tsx`): a kite to fly (pointer, tap or arrow keys), his journey, his flight kit, nothing to answer. The grown-ups' Activity tab has a "Guessing and breaks" card (`guessing`: guesses set aside, kind stops, breaks asked for, and the minute guessing usually starts), and Settings can turn the guess check off or end sessions on a success after 8 to 15 minutes. Tests: `packages/engine/src/guessing.test.ts` (points, best total, reading time, set-aside answers, the guessing summary) and e2e runs of the wrong-tap path, a break, and two fast wrong answers into the lounge, with axe. The e2e helper answers instantly, so tests turn the guess check off unless they test it.
+- **Audit 2026-10-28.**
+  - The grown-ups' card is now called "Guessing, breaks and asking for help" (LTF-49 joined it).
+  - An insight still said the app gives a bonus for getting past his usual stopping point. It now points to the break button and to ending on a success.
 - **DW's choices.** A wrong tap: the clue, then one more try. Stopping: honoured, and "put him in a lounge with something fun to do". Points: "bonus when answered correct the first time, subtract when it's a third attempt", read as 4 on the first tap and 1 off when the answer had to be shown, replacing the keep-going bonus.
 - **Original proposal.** Tapping choices until one turns green is a known pattern ("gaming the system"): when work becomes aversive, clicking through is the fastest way out. In a study of middle schoolers with a maths tutor it was the off-task behaviour most strongly tied to learning less, and rapid guessing on tests grows the longer a session runs. A three-choice item that allows retries always ends in success within three taps, so it rewards finishing, not thinking.
 
@@ -322,6 +482,16 @@ Added 2026-10-13 by DW. Approach chosen by DW the same day, and built 2026-10-13
 
 Added 2026-10-13 from DW's feedback: "as he progresses island, he stays in the same place... if he's progressing to the next island, the scenery should change, and he should have a new series/areas to unlock and progress." Approach chosen by DW the same day: home moves to each island he reaches, with areas that open one by one, things to build that belong there, a small quest, and areas gated on his level that he can come back to later. Built 2026-10-13, with the island text for DW's review in the app.
 
+**Superseded in part (audit 2026-10-28).** LTF-45 to LTF-48 changed what this entry describes:
+- Quests run 3 to 5 steps.
+- The three lantern paths are drawn on Home Island only.
+- Each island has its own land, not Home Island's layout.
+- `settle` moves pieces on screen when an island's shape needs it.
+- There is no `islandAreas`.
+- Ranger Jo now also appears on Gull Island's map and on the way home.
+
+Still true: eight islands, the landings, the lock text and the island switcher.
+
 - **He sees.** When he comes ashore on a new stop, his home screen is that island: its own colours, coastline, features on open ground (boulders on Gull Island, rock layers at Fossil Bay, palms on Reef Island, red rocks in Australia) and a landing (a pier, a bus stop, or the Kookaburra). His three lantern paths come with him, so his progress is the same on every island. Each island has a quest of three steps from its story ("Count the gull nests with Ranger Jo."); each session he finishes there does the next step and opens a place with its landmark and new spots to build, and the session's last screen says what opened. A fourth place waits in mist with a lock until a lantern is lit ("The ranger hut opens when lantern 2 is lit on the Harbor Town path. You can come back for it later."). Buttons above the island take him back to any island he has reached, with everything he built there. The things offered to build lean toward the island's own (seals and boats on Gull Island, fossils and dinosaurs at Fossil Bay, trains and signals on Rail Coast).
 - **Build.** `ISLANDS` in `apps/web/src/art.tsx` (Gull Island, Windy Cape, Fossil Bay, Reef Island, Star Point, Rail Coast, Cloud Hill, which is also the take-off, and Australia; Home Island is unchanged), on Home Island's tile layout so the paths stay put. Pieces carry the island they were built on (`island` on the world event; older pieces are Home Island's). `settings.islandsSeen` keeps the session count when he first came ashore, so an island's areas open with the sessions after that; islands he has sailed on from have all their quest places open. `islandAreas`, `islandsReached`, `islandArrival` and the quest card are in `apps/web/src/journey.tsx`.
 - **Eval first.** Unit tests (`apps/web/src/islands.test.ts`, mutation-checked): every island has three quest places and one lantern place, all drawn; the paths, places and landing are on every island and the coasts differ; places open one session at a time, all once he sails on, and the last with its lantern; a closed place has no build spots; sessions count from when he came ashore. An e2e test comes ashore on Gull Island, checks the quest and the lock with axe, finishes one more session to open the gull nests, and goes back to Home Island.
@@ -333,6 +503,7 @@ Added 2026-10-13 from DW's feedback: "as he progresses island, he stays in the s
 Added 2026-10-13 from DW's feedback: "the voice is very robotic, monotonic. Not a very good representation of good enunciation, and speech." DW chose a natural Azure voice, then asked to try Edge's natural voice first.
 
 - **Built 2026-10-13 (step 1).** Read-aloud used the device's default voice, which on Windows is an old desktop voice. Now, unless a grown-up picks one, it chooses the most natural voice the device has: Edge's online "Natural" voices (Ava, Andrew, Emma or Brian first), then Apple's Enhanced or Premium voices, then Google's. Offline, it uses a voice on the device. Settings shows which voice that is. Unit tests in `apps/web/src/media.test.ts` (mutation-checked).
+- **Fixed 2026-10-28.** Settings named the most natural voice as if the device were online. Offline, it now names the device voice actually used.
 - **Step 2, on hold until DW has listened.** Pre-made audio from an Azure neural voice for the bank's text, made when first needed and kept on his device, with SSML for pauses and pace; his name and his own sentences would stay on the device voice. Needs an Azure AI Speech resource (free F0 tier, 0.5 million characters a month); whether HD voices are on the free tier is unconfirmed.
 
 ## LTF-20 Island routes that branch to themed islands
@@ -349,10 +520,16 @@ Added 2026-10-13. Approved by DW: islands follow his interests, every route reac
 - **Build.** `content/journey.json` stops gain `next` (the stops a route can go to) and `topics`. The engine's `journeyPosition` walks the route he chose instead of a single list; his choices are saved like `journeyChoices`, and his place on today's route maps onto the new map, so nothing resets. A fork beat and route choice in `journey.tsx`, island art in `art.tsx`, and the island's topics added to the item ranking in `pickItems` for that leg.
 - **Eval first.** Engine tests: every route reaches Australia; finished sessions move him along the route he chose; changing the pace never moves him back; a learner partway along today's route keeps his place. An e2e test picks a route at the fork with an axe check. Content validation checks every stop is reachable and every route ends at Australia.
 - **Guards.** At most three routes at a fork, shown with pictures and read aloud. The choice waits for him and has no timer. Interest weighting stays a lean, not a filter: one pick in five still ignores interests, so the interest comparison (R8) stays fair. Items he has seen still come last (see the repeats tracking).
+- **Fixed 2026-10-28.**
+  - Pace changes: a pace change kept his stop and step, but could show an earlier beat from the new pace's table, so a setback he had got past came back. Each pace anchor now keeps the beat he has reached (`JourneyAnchor.beat`).
+  - Pace 7: "One more session" (beat 4) showed with two sessions left. The table is now 0, 1, 1, 2, 3, 3, 4.
+  - The Overview names the routes he chose.
+  - A flight-path or way-home choice is logged as `path:` or `home:`, so only a sea route counts for its "What do you think?" card.
+  - Tests: engine and unit (seen failing first).
 
 ## Proposed: branch-out stories (LTF-21 to LTF-29)
 
-Added 2026-10-13, drafted by a story-ideation pass for DW's review. DW approved all of them on 2026-10-13 (LTF-29 is replaced by the koala keeper arc). LTF-21 to LTF-24 are in the app as LTF-20's islands (stop entries, the shared seams, map, scenes, souvenirs and the "What do you think?" line), so they can be reviewed there, with 12 check-up texts each; DW's read stays open. LTF-21 to LTF-24 are a full five-beat arc for each LTF-20 island; LTF-25 to LTF-29 are smaller branch-outs for later. Every arc keeps the journey's rules: it moves with finished sessions, the setback is scripted and explained, both plans work, and Captain Ada's invitation to Cloud Hill closes each island's postcard, so the airfield leg still follows. Three seams in today's canon are shared subtasks, done once for all four islands: Gull Island's last postcard line ("The kites are over Windy Cape.") and the airfield's beat 1 ("Bus 9 goes from Windy Cape to Cloud Hill") assume the Windy Cape route, and the map marker in `journey.tsx` picks the bus icon by stop index (`now.stop === 2`) rather than by stop.
+Added 2026-10-13, drafted by a story-ideation pass for DW's review. DW approved all of them on 2026-10-13 (LTF-29 is replaced by the koala keeper arc). LTF-21 to LTF-24 are in the app as LTF-20's islands (stop entries, the shared seams, map, scenes, souvenirs and the "What do you think?" line), so they can be reviewed there, with 12 check-up texts each; DW's read stays open. LTF-21 to LTF-24 are a full five-beat arc for each LTF-20 island; LTF-25 to LTF-29 are smaller branch-outs. Audit 2026-10-28: LTF-21 to LTF-24 match the content word for word, though their subtasks are still unticked, and DW's read of them is still open. LTF-25 to LTF-28 are built and LTF-29 was replaced by the keeper arc. Every arc keeps the journey's rules: it moves with finished sessions, the setback is scripted and explained, both plans work, and Captain Ada's invitation to Cloud Hill closes each island's postcard, so the airfield leg still follows. Three seams in today's canon are shared subtasks, done once for all four islands: Gull Island's last postcard line ("The kites are over Windy Cape.") and the airfield's beat 1 ("Bus 9 goes from Windy Cape to Cloud Hill") assume the Windy Cape route, and the map marker in `journey.tsx` picks the bus icon by stop index (`now.stop === 2`) rather than by stop.
 
 ## LTF-21 Fossil Bay: the dig under the cliff
 
@@ -489,6 +666,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20.
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20.
 
+**Fixed 2026-10-28.** An island first reached on the way home now gets its day trip and its picture.
+
 - **What was built (2026-10-13).** `daytrip` on Fossil Bay (the old quarry), Reef Island (tide pools), Star Point (the weather station) and Rail Coast (the level crossing), each under 60 words with sentences of 13 words or fewer. A reached island's postcard has a "Day trip" button that opens the page with read-aloud and a way back; it moves nothing. Opening one is logged (activity `daytrip`), and "What do you think?" asks about it once. An e2e test checks the button is on Fossil Bay's postcard and not Gull Island's, with axe.
 
 - **Story.** Once an island is reached, its postcard dialog gains a "Day trip" page: three or four sentences and one fact about a second place on the island (Fossil Bay's old quarry, Reef Island's tide pools, Star Point's weather station, Rail Coast's level crossing). It costs no sessions and moves nothing; it is a way to read more about the island he chose.
@@ -506,6 +685,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20.
 ## LTF-27 The way home: back by a different island
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20.
+
+**Fixed 2026-10-28.** Way-home postcards show the picture of the island each one revisits (back-cloud shows Cloud Hill's airfield). Their image is labelled with the stop's own name, not "A picture of undefined". Tests: e2e (a first visit to Fossil Bay on the way home: its picture and day trip; seen failing first).
 
 - **What was built (2026-10-13).** After Opening Day, the sanctuary card offers the way home ("Fly home" or "Stay at the sanctuary"; staying keeps the offer open). Flying home is a second trip with its own legs at the journey's pace: Cloud Hill, then a choice of the islands he skipped on the way out (up to three, best match for his interests first, so a second visit is impossible), then Gull Island and Home Island, where the postcard ends "You are home. Your island has a new piece from every place you visited." While on the way home, his island view follows him (the new island gets its quest and spots to build), the map draws the way home in purple with the new island's marker, and the postcards list includes the trip's stops. A pace change keeps his place. `npm run check` checks the way home has five beats a stop, real places, and all four themed islands to choose from. Tests: unit (the offer, Cloud Hill, only unvisited islands, each leg's arrival, the island view, pace; mutation-checked) and an e2e run from the offer to choosing Fossil Bay, with axe. The text (`home` in `content/journey.json`) was drafted for this build, since the proposal only outlined it: seven legs, each with a new setback (fog at Cloud Hill, the Fossil Bay pier crane, Turtle Beach closed for hatching, the Star Point dome motor, the Rail Coast lift bridge, a flat bike tire on Gull Island, the Home Island ramp under repair). Two facts were corrected before merging: red light bothers turtles less than white light (not "does not bother"), and patch glue dries in minutes. For DW to read: every line, and these additions to the canon: a crane on the Fossil Bay pier, a river lift bridge past Shell Halt, an old pier by the Home Island lighthouse, and Captain Ada sailing back to Cloud Hill from Gull Island rather than going home with him.
 
@@ -560,6 +741,8 @@ Added 2026-10-13, drafted by a story-ideation pass at DW's request ("continue th
 ## LTF-30 Koala keeper arc at Bluegum (overview)
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20. Replaces LTF-29: its week with Ranger Tess becomes the first stop (LTF-31), with its beats and the `sapling` souvenir kept. Comes before LTF-27: if the way home is still wanted, its offer moves from the allMet card to the end of this arc, and "Stay with the koalas" becomes "Stay at the sanctuary". This answers LTF-27's open guard ("decide whether the journey should have an end"): the journey continues at the sanctuary.
+
+**Fixed 2026-10-28.** The arc's postcard pictures are labelled with their own names, not "A picture of undefined". Tests: e2e (seen failing first).
 
 - **What was built (2026-10-13).** `content/journey.json` has the arc under `arc` (about, five stops, done), transcribed word for word from LTF-31 to LTF-35 and checked against this backlog. After the eighth koala, the story is the arc: `journeyNow` gives the arc's next stop, beat and leg step in place of the journey's, at the journey's pace, while he stays at Bluegum (so his island and check-ups stay Australia's). Each arc stop is reached after a leg, with its postcard scene and souvenir (sapling, keeper's scale, vet's bag, viewing path, koala sign); after Opening Day, a closing card says he is a junior koala keeper and nothing more moves. A pace change mid-arc keeps his place (`repace`), and a learner who had met all eight koalas before the arc existed starts it at its first beat (`arcStart`, once). The map has a Bluegum Koala Sanctuary panel with the five stops (the landmass is too small for markers, the fallback this item named), and the postcards list includes reached arc stops. `npm run check` checks the arc is one line of stops with five beats each. "What do you think?" asks about it once (activity `arc`). Tests: unit (Sunny first, then beat 0; each arrival; done; the start for all-met learners; pace changes, mutation-checked; every souvenir drawn) and an e2e run to the Tree Nursery's postcard, with axe. LTF-34's Guards said the postcard introduces Omar as "a visitor", but the approved line did not; DW chose 2026-10-13 to introduce him there ("A visitor, Omar, comes in his wheelchair and sees Matilda in a tree.").
 
@@ -785,12 +968,12 @@ Added 2026-10-13. Approved. Pilot size confirmed by DW 2026-10-13: about 60 leve
 Added 2026-10-13. Approved. Built 2026-10-13. Research: [Yang et al. 2026 (AUTIVERSE)](https://arxiv.org/abs/2509.17466), where consequences and feelings mostly came only when asked. Plan rule R20.
 
 - **What was built.** New tiles, not reused ones: 11 for after something hard and 10 for after what he did, in `content/today.json` under `after`. The question order and the sentence builder moved to `apps/web/src/recount.ts`, with unit tests in `recount.test.ts`. RecountEvent records `after`. The journey stops are still open, and LTF-20 covers them.
-- **He sees.** After something hard, "What happened after that?" with tiles. From stage 2 it is also asked after "What did you do?". His story gains a sentence like "After that, I tried again."
+- **He sees.** After something hard, "What happened after that?" with tiles. It is also asked after "What did you do?", at every stage since LTF-58 (it was from stage 2). His story gains a sentence like "After that, I tried again."
 - **Grown-ups see.** The prompt card uses his answer.
 - **Build.** An `after` tile list in `content/today.json`, a question and sentence in `Today.tsx`, and RecountEvent records whether "after" was answered.
 - **Eval first.** A unit test on the sentence builder, and an e2e recount that includes something hard.
-- **Guards.** At stage 1, asked only after something hard. Skip stays.
-- **DW's note.** "Novel content for these changes. Perhaps an expanded island route list as our corpus gets larger." Write new tiles for "after" rather than reusing the "hard" list. Open: add journey stops to `content/journey.json` (six today) as the content bank grows.
+- **Guards.** Skip stays. (Until 2026-10-26, stage 1 asked it only after something hard; see LTF-58.)
+- **DW's note.** "Novel content for these changes. Perhaps an expanded island route list as our corpus gets larger." Write new tiles for "after" rather than reusing the "hard" list. Open: add journey stops to `content/journey.json` (ten since LTF-20) as the content bank grows.
 
 ## LTF-06 His day as a four-panel strip
 
@@ -807,7 +990,7 @@ Added 2026-10-13. Approved. Built 2026-10-13. Needs LTF-05. Research: [Yang et a
 
 Added 2026-10-13. Approved. Built 2026-10-13. Research: [McWilliams & Hanson 2025](https://link.springer.com/article/10.1007/s40616-025-00218-w); [Petersen et al. 2014](https://pubs.asha.org/doi/10.1044/2013_LSHSS-12-0099). Plan rule R28, checking R16's "fade slowly".
 
-- **What was built.** Day recounts only; show recounts keep their tiles. Each question shows a starter that his words finish ("In Math, I ...") and a Next button. "No" or "nothing" to the hard question counts as nothing was hard. RecountEvent records `ideas`, one entry per answered question. The step-back rule (`ideasUse` in `activity.ts`): once he has had the button for two weeks, if he opened the ideas on every question in at least three recounts over the last two weeks, Today steps back a stage. It moves on again by itself once fewer than three recent recounts do. A stage set by a grown-up in Settings is never changed. The card is in the Today recounts tab.
+- **What was built.** Day recounts only; show recounts keep their tiles. Each question shows a starter that his words finish ("In Math, I ...") and a Next button. "No" or "nothing" to the hard question counts as nothing was hard. RecountEvent records `ideas`, one entry per answered question. The step-back rule (`ideasUse` in `activity.ts`): once he has had the button for two weeks, if he has at least three recounts in the last two weeks and opened the ideas on every question in all of them, Today steps back a stage; one answer in his own words keeps it where it is. It moves on again by itself when that stops being true, which can be just old recounts ageing out (a question for DW in the 2026-10-28 audit). A stage set by a grown-up in Settings is never changed. The card is in the Today recounts tab.
 
 - **He sees.** From stage 3, a sentence starter and a big "Show me ideas" button. The tiles appear only if he taps it. Nothing times him.
 - **Grown-ups see.** "Answered without ideas: 2 of 5 this week." If he taps Show me ideas on every question for two weeks, Today steps back a stage.
@@ -829,7 +1012,7 @@ Added 2026-10-13. Approved. Built 2026-10-13. Research: [Harvey et al. 2025](htt
 
 Added 2026-10-13. Approved. Built 2026-10-13. Research: [Eilon & Novogrodsky 2025](https://link.springer.com/article/10.1007/s10803-025-06895-9). Plan rule R22.
 
-- **What was built.** 6 new N5 passages and 16 items (n5-i197 to n5-i212), 6 of them sorts with two bins and at most four cards. `npm run check` enforces that guard. All 18 false-belief items now also carry `know-think` (there were 18, not 12, after the content tripled). The miss-pattern column in Skills calls it "knows or only thinks", and an engine test covers the report. The N5 brief in the content guide is updated.
+- **What was built.** 6 new N5 passages and 16 items (n5-i197 to n5-i212), 5 of them sorts (n5-i197, i201, i205, i208, i212; "6" until the 2026-10-28 audit) with two bins and at most four cards. `npm run check` enforces that guard. All 18 false-belief items now also carry `know-think` (there were 18, not 12, after the content tripled). The miss-pattern column in Skills calls it "knows or only thinks", and an engine test covers the report. The N5 brief in the content guide is updated.
 
 - **He sees.** New N5 sort and tap items that set knowing against thinking, for example "Leo knows" and "Leo only thinks".
 - **Build.** About 16 new N5 items tagged `know-think`, the 12 false-belief items retagged, and the N5 brief updated.
@@ -871,6 +1054,7 @@ Added 2026-10-13. Approved. Built 2026-10-13. Research: [Prahl et al. 2025](http
 - **Build.** About 20 two-step F5 items tagged `act`. `tagAccuracy` already works per tag. Two lines in `Adult.tsx`.
 - **Eval first.** Validation pairs each act item with its message item, and a report test runs on a fixed log.
 - **Guards.** The second step keeps the same message on screen.
+- **Audit 2026-10-28.** "Understood the message" counts every `message`-tagged item: 18, 8 of them with no act step (F2 2, N4 1, F5 5). So its two lines are not measured on matched pairs.
 
 ## LTF-13 A "Who did it?" stop in scouting
 
@@ -889,7 +1073,7 @@ Added 2026-10-13. Approved. Built 2026-10-13. Research: [O'Leary et al. 2026](ht
 
 Added 2026-10-13. Approved. Needs the repeats tracking. Built 2026-10-13 for the six stops of today's route, then the four LTF-20 islands.
 
-- **What was built.** 120 reserved texts with one question each (`checkup: <stop>`), 12 per stop (home, gull, cape, fossil, reef, star, rail, airfield, takeoff, australia), in the same mix at every stop so check-ups stay comparable: six stories (N1, N2, N3, N5, N6, N6) and six functional texts (F2 to F6 and F3), four each at levels 2, 3 and 4. All pass validation, the reading bands and the content checks. Check-up texts are never served in practice, and `npm run check` keeps their passages apart from practice. `checkupDue` offers one on the Choose screen once he has finished ten sessions since the last; `planCheckup` draws three stories and three functional texts from the stop he is at, ones he has not seen first. Answers have phase `checkup`: they earn flight points but never change his skills or levels. The Overview shows the results over time and warns when his stop has fewer than six unseen texts left. The island stops' check-up texts come with LTF-21 to LTF-24.
+- **What was built.** 120 reserved texts with one question each (`checkup: <stop>`), 12 per stop (home, gull, cape, fossil, reef, star, rail, airfield, takeoff, australia), in the same mix at every stop so check-ups stay comparable: six stories (N1, N2, N3, N5, N6, N6) and six functional texts (F2 to F6 and F3), four each at levels 2, 3 and 4. All pass validation, the reading bands and the content checks. Check-up texts are never served in practice, and `npm run check` keeps their passages apart from practice. `checkupDue` offers one on the Choose screen once he has finished ten sessions since the last; `planCheckup` draws three stories and three functional texts from the stop he is at, ones he has not seen first. Answers have phase `checkup`: they earn flight points but never change his skills or levels. The Overview shows the results over time and warns when his stop has fewer than six unseen texts left. The island stops' check-up texts were added with LTF-21 to LTF-24: fossil, reef, star and rail have 12 each. (Audit 2026-10-28: cu-home-p01, cu-gull-p01, cu-cape-p03 and cu-home-p05 raise new coherence warnings; they are warning-only.)
 
 Research: [Masoumi et al. 2024](https://doi.org/10.47176/mjiri.38.118), where oral story gains did not carry over to reading. Plan rule R21, putting R12 into practice.
 
@@ -918,7 +1102,12 @@ Added 2026-10-13. Approved. Built 2026-10-13, warning only: waiting for DW's gol
 - **What was built.** `pipeline/coherence.py`, `pipeline/skillcheck.py` (inference level, school-goal tags, near-duplicates) and `pipeline/content_check.py`, run by `npm run content:check` and in CI. Tests in `pipeline/test_checks.py`. Today's 328 flags are recorded in `pipeline/baseline.json`, so only new problems can ever block.
 - **Gold set.** `evals/gold/gold.py pick` chose 30 passages and 60 items (seed 2026; `gold-set.json`). DW rates them blind in `evals/gold/rate.html` (it shows no checker output and no inference labels) and saves `evals/gold/ratings.json`. Then `python evals/gold/gold.py agree` writes `agreement.json`, and each check blocks new problems only once it reaches kappa 0.6 and precision 0.8 on at least 20 rated cases.
 - **Tuning, without the gold set.** Near-duplicates: on held-out passages, reworded copies scored 0.48 to 1 and different texts at most 0.14, so the threshold is 0.5. It found one real pair: f5-p24 "Dad's Note About Pixel" rewords f2-p01 "Note on the Fridge". Coherence by shared words is weak on these short texts: the best variant caught 27% of sentences spliced in from other texts and flagged 23% of unchanged passages, so it will most likely stay warning-only; the gold ratings will judge any better checker (for example a model-based one) without re-rating.
-- **Flags to review.** 59 items carry `key-detail` on questions that ask for a clue rather than which detail matters most (as the guide defines it), which inflates the key-details school goal. Also 33 problem-solving, 12 plan-change and 10 main-idea tag flags, and 37 inference labels two steps from the checker's reading (mostly sign items marked "stated" where the answer interprets the sign).
+- **Flags to review.** 59 items carry `key-detail` on questions that ask for a clue rather than which detail matters most (as the guide defines it), which inflates the key-details school goal. Also 36 problem-solving, 12 plan-change and 11 main-idea tag flags, and 37 inference labels two steps from the checker's reading (mostly sign items marked "stated" where the answer interprets the sign).
+- **Audit 2026-10-28.**
+  - The baseline's tag flags are key-detail 59, problem-solving 36, plan-change 12 and main-idea 11.
+  - A run today gives 347 flags. 19 of them are new coherence flags from LTF-02, LTF-11 and LTF-14 content.
+  - Reviewed the same day, sentence by sentence: all 19 are false positives. Each flagged sentence follows naturally from the one before, as a character arriving ("Ben got on at the next stop."), a scene detail, the next line of dialogue, or a metaphor ("The room was a quiet cave."). They were added with `content_check.py --baseline`, so 347 flags are now known and none are new. The six "Does it fit?" pairs (LTF-59) raised none.
+  - The gold ratings (`evals/gold/ratings.json`) do not exist yet, so every check still only warns.
 
 Original entry: Research: [Maheshwary et al. 2026](https://aclanthology.org/2026.readi-1.10/); [Ma, Flor & Wang 2025](https://aclanthology.org/2025.bea-1.31/); [Shen et al. 2026](https://aclanthology.org/2026.bea-1.51/). Plan rule R19.
 
@@ -956,9 +1145,9 @@ Added 2026-10-12. Built 2026-10-13 (step 1 of the build order).
 
 - **What was built.**
   - Every answer is read as first-time or repeat from the learner's shared event log, in time order, so his devices agree even when they sync late (`isRepeat` and `Progress.repeats` in `packages/engine/src/index.ts`). It is derived rather than stored on each answer, because a flag written by one device could be wrong once another device's older answers arrive.
-  - `freshness()` in `packages/engine/src/fresh.ts` reports, per skill: his level, questions and texts he has not met yet at his level or easier, repeats this week and overall, and a status (plenty, running low below 10 new at his level or the next, or repeats now). It leaves out worked examples, inference checks, hidden items and themes he is not shown, like item choice does.
+  - `freshness()` in `packages/engine/src/fresh.ts` reports, per skill: his level, questions and texts he has not met yet at his level or easier, repeats this week and overall, and a status (plenty, running low below 10 new at his level or the next, or repeats now). It leaves out worked examples, inference checks, hidden items, check-up texts (fixed in the 2026-10-28 audit; they had been counted) and themes he is not shown, like item choice does.
   - The grown-ups' Activity tab has a Fresh content card, the Overview warns when a skill he is working on runs low, the report shows first-time answers per skill, and the school goals now count first-time answers only.
-- **For the next features.** LTF-01, LTF-02, LTF-05 and LTF-16 measure themselves with `isRepeat` (first-time answers only), as DW's notes ask.
+- **For the next features.** LTF-01, LTF-02, LTF-05 and LTF-16 measure themselves with `isRepeat` (first-time answers only), as DW's notes ask. (Audit 2026-10-28: overstated. LTF-01 and LTF-02 read `progress.repeats`; LTF-05 and LTF-16 have no repeat-based measure; `isRepeat` itself is used only in tests.)
 - **Not changed.** Item choice already serves unseen questions first, and mastery still counts every independent answer. Counting only first-time answers toward mastery is a possible next change.
 
 - **Research.** R12: the evidence is thin, so the program measures itself, and that measure is only fair on items he has not seen before ([Singh et al. 2021](https://link.springer.com/article/10.1007/s40489-020-00200-3); [Zhang et al. 2023](https://eric.ed.gov/?id=EJ1361852)).

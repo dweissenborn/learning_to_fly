@@ -2,6 +2,10 @@
 // so "already asked" follows him to every device.
 import type { LogEvent } from '@wayfinder/schema';
 import { flightPeak, flightPoints, gearState } from '@wayfinder/engine';
+import { pool } from './content';
+
+/** LTF-59: the "Does it fit?" guesses, from their tag. */
+const FIT = new Set([...pool.items.values()].filter((i) => i.tags?.includes('fit')).map((i) => i.id));
 
 export type Like = 'like' | 'unsure' | 'dislike';
 export type Amount = 'too-much' | 'just-right' | 'too-little';
@@ -36,12 +40,22 @@ export const FEATURES: Feature[] = [
     met: (es) => es.some((e) => e.type === 'world' && !!e.island && e.island !== 'home') },
   { id: 'pictures', name: 'Pictures', say: 'You can spend flight points on a picture. You type what to draw.', arrived: '2026-10-17',
     met: (es) => es.some((e) => e.type === 'picture') },
+  { id: 'tell-it-back', name: 'Tell it back', say: 'After a story session, you told a story back from memory.', arrived: '2026-10-28',
+    met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'retell') }, // LTF-61
+  { id: 'story-problems', name: 'Math as a story', say: 'You picked where your math problems happen, and could switch to plain numbers.', arrived: '2026-10-28',
+    met: (es) => es.some((e) => e.type === 'answer' && e.view === 'story') }, // LTF-42
+  { id: 'does-it-fit', name: '"Does it fit?"', say: 'Your guide makes a guess about a story, and you say if it fits, then show why.', arrived: '2026-10-28',
+    met: (es) => es.some((e) => e.type === 'answer' && FIT.has(e.item)) }, // LTF-59
+  { id: 'photo-cue', name: 'A photo from your day', say: 'A grown-up can take a photo of something from your day, to help you tell about it.', arrived: '2026-10-28',
+    met: (es) => es.some((e) => e.type === 'recount' && !!e.photo) }, // LTF-57
+  { id: 'lanterns', name: 'A lantern for every Today', say: 'Each time you tell about today, a lantern lights. Seven make a set.', arrived: '2026-10-19',
+    met: (es) => es.filter((e) => e.type === 'recount' && e.ts >= Date.parse('2026-10-19')).length >= 2 }, // LTF-54: once he has seen two light
   { id: 'not-sure', name: '"I\'m not sure"', say: 'When you are not sure, you can tap "I\'m not sure" and ask for help.', arrived: '2026-10-14',
     met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'unsure') },
   { id: 'own-islands', name: 'Islands of their own', say: 'Each island has its own shape, names and quest. A finished quest brings a keepsake home.', arrived: '2026-10-14',
     met: (es) => new Set(es.flatMap((e) => (e.type === 'world' && e.island && e.island !== 'home' ? [e.island] : []))).size >= 2 }, // LTF-45 to LTF-48: once he has seen two
   { id: 'island-route', name: 'Choosing your sea route', say: 'At Gull Island, you chose which island to sail to on the way to Australia.', arrived: '2026-10-13',
-    met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'route') },
+    met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'route' && !e.item?.includes(':')) }, // a sea route; flight paths and the way home are tagged
   { id: 'checkup', name: 'The check-up flight', say: 'Every so often, you can choose six new texts with no hints, to see how your reading is growing.', arrived: '2026-10-13',
     met: (es) => es.some((e) => e.type === 'answer' && e.phase === 'checkup') },
   { id: 'whos-who', name: "Who's who", say: 'You can tap a dotted "he", "she" or "they" to see who it means.', arrived: '2026-10-13',

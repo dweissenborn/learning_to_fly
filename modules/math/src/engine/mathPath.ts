@@ -3,6 +3,7 @@
 // re-check of what a skill depends on when it stalls. Pure functions over the event log, like the rest of the engine.
 import type { AnswerEvent, LogEvent } from '@wayfinder/schema';
 import { dayKey, RULES } from '@wayfinder/engine';
+import { STORY_SKILLS } from './math';
 
 export const MATH_GRAPH: Record<string, readonly string[]> = {
   'math:MF1': [], 'math:MF2': ['math:MF1'], 'math:DV1': ['math:MF1'], 'math:FR1': [],
@@ -74,7 +75,7 @@ export function checkinNext(placementAnswers: readonly AnswerEvent[], o: { known
   return MATH_ORDER.find((s) => open(s) && MATH_GRAPH[s].every((d) => placed.has(d)));
 }
 
-export function deriveMath(events: readonly LogEvent[], o: { opened?: readonly string[]; known?: readonly string[]; now?: number }): MathState {
+export function deriveMath(events: readonly LogEvent[], o: { opened?: readonly string[]; known?: readonly string[]; now?: number; stories?: boolean }): MathState {
   const answers = events.filter(isMath).filter((a) => !a.rapid); // LTF-43: a guess faster than reading counts for nothing
   const checkinAnswers = answers.filter((a) => a.phase === 'placement');
   const { out } = results(checkinAnswers);
@@ -101,11 +102,21 @@ export function deriveMath(events: readonly LogEvent[], o: { opened?: readonly s
     const choices = !sessions.length && !(lastChoices && lastChoices.total >= RULES.minPerSession && lastChoices.correct / lastChoices.total >= RULES.mastery);
     // Mastery as in reading: two qualifying sessions on different days at 80% or better together.
     const q = sessions.filter((x) => x.total >= RULES.minPerSession);
-    const mastered = q.some((x, i) => { const y = [...q.slice(0, i)].reverse().find((z) => z.day !== x.day); return !!y && (x.correct + y.correct) / (x.total + y.total) >= RULES.mastery; });
+    // LTF-42 pilot: with story problems on, a pilot step also needs one independent right answer in each view (no view: plain).
+    const inView = (v: 'story' | 'plain') => own.some((a) => a.format !== 'choices' && a.correct && !a.hint && (a.view ?? 'plain') === v);
+    const bothViews = !o.stories || !(STORY_SKILLS as readonly string[]).includes(s) || (inView('story') && inView('plain'));
+    const mastered = bothViews && q.some((x, i) => { const y = [...q.slice(0, i)].reverse().find((z) => z.day !== x.day); return !!y && (x.correct + y.correct) / (x.total + y.total) >= RULES.mastery; });
     // Placed is provisional: its first review after the check-in confirms it, or takes it back.
-    const firstReview = mine.find((a) => a.phase === 'warmup' && a.ts > placedAt);
-    const placed = checkinPlaced.has(s) && (!firstReview || firstReview.correct);
-    skills[s] = { skill: s, open: false, placed, mastered, relearn: false, choices, sessions, lastAt: mine.at(-1)?.ts };
+    // A review is one session's warm-up problems on the skill, passed at two of three, as in reading (DW 2026-10-28).
+    const reviewIn = (session?: string) => mine.filter((a) => a.phase === 'warmup' && a.session === session);
+    const passed = (r: AnswerEvent[]) => r.filter((a) => a.correct).length / r.length >= RULES.reviewPass;
+    const firstReview = reviewIn(mine.find((a) => a.phase === 'warmup' && a.ts > placedAt)?.session);
+    const placed = checkinPlaced.has(s) && (!firstReview.length || passed(firstReview));
+    // As in reading: a missed review sends a mastered skill back to practice until a session at 80% restores it.
+    const lastReview = reviewIn(mine.filter((a) => a.phase === 'warmup').at(-1)?.session);
+    const relearn = mastered && lastReview.length > 0 && !passed(lastReview) &&
+      !sessions.some((x) => x.ts > lastReview.at(-1)!.ts && x.total >= RULES.relearnMin && x.correct / x.total >= RULES.mastery);
+    skills[s] = { skill: s, open: false, placed, mastered, relearn, choices, sessions, lastAt: mine.at(-1)?.ts };
   }
   const known = (s: string) => skills[s].placed || skills[s].mastered;
   for (const s of MATH_ORDER) skills[s].open = !!o.opened?.includes(s) || MATH_GRAPH[s].every(known);
@@ -139,4 +150,34 @@ export function deriveMath(events: readonly LogEvent[], o: { opened?: readonly s
   const next = checkinNext(checkinAnswers, o);
   const focus = MATH_ORDER.find((s) => skills[s].relearn) ?? MATH_ORDER.find((s) => skills[s].open && !skills[s].mastered && !skills[s].placed);
   return { skills, checkin: { done: next === undefined, next }, focus, recheck, review };
+}
+
+/**
+ * LTF-44: what the grown-ups see in math, read from the event log. Each step: where he is, right first time on his own
+ * typed answers (choices and guesses left out), how often he needed help, and reviews passed. Then breaks and guesses
+ * (the LTF-38 measures), and how many of all his sessions were math, as a sign he picks it himself.
+ */
+export function mathReport(events: readonly LogEvent[], o: { opened?: readonly string[]; known?: readonly string[]; now?: number; stories?: boolean }) {
+  const m = deriveMath(events, o);
+  const answers = events.filter(isMath);
+  const rows = MATH_ORDER.map((s) => {
+    const k = m.skills[s], mine = answers.filter((a) => a.skill === s && !a.rapid);
+    const typed = mine.filter((a) => a.phase === 'yourturn' && a.format !== 'choices'), reviews = mine.filter((a) => a.phase === 'warmup');
+    return {
+      skill: s,
+      status: k.relearn ? 'practising again' : k.mastered ? 'mastered' : k.placed ? 'placed by the check-in' : !k.open ? 'coming up' : k.choices ? 'learning, with choices' : 'learning',
+      typed: { correct: typed.filter((a) => a.correct && !a.hint).length, total: typed.length },
+      story: { correct: typed.filter((a) => a.view === 'story' && a.correct && !a.hint).length, total: typed.filter((a) => a.view === 'story').length }, // LTF-42
+      helped: mine.filter((a) => a.phase === 'yourturn' && a.hint > 0).length,
+      reviews: { passed: reviews.filter((a) => a.correct).length, total: reviews.length },
+    };
+  });
+  const sessions = events.filter((e) => e.type === 'session');
+  const mathIds = new Set(sessions.filter((e) => e.action === 'start' && e.module === 'math').map((e) => e.session));
+  const stops = sessions.filter((e) => e.action === 'stop' && mathIds.has(e.session));
+  return {
+    rows, started: mathIds.size, finished: new Set(sessions.filter((e) => e.action === 'finish' && mathIds.has(e.session)).map((e) => e.session)).size,
+    breaks: stops.filter((e) => e.reason === 'break').length, guessStops: stops.filter((e) => e.reason === 'rapid').length,
+    guesses: answers.filter((a) => a.rapid).length, ofAllSessions: sessions.filter((e) => e.action === 'start').length,
+  };
 }

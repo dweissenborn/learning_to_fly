@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { LogEvent } from '@wayfinder/schema';
-import { GEAR, PICTURE_COST, delayEffect, flightPeak, flightPoints, pictureBalance, supportEffect, todayLanterns, weekly, recountTrend, ideasUse, formatEffect, reasonRecord, gearState, insights, sessionActivity, usualStop } from './activity';
+import { GEAR, PICTURE_COST, retellEffect, delayEffect, flightPeak, flightPoints, pictureBalance, supportEffect, todayLanterns, weekly, recountTrend, ideasUse, formatEffect, reasonRecord, gearState, insights, sessionActivity, usualStop } from './activity';
 import { derive } from './index';
 
 let n = 0;
@@ -180,10 +180,11 @@ describe('reading and engagement, week by week (LTF-60)', () => {
     const a = session(mon, [['yourturn', true], ['yourturn', false], ['yourturn', true]], 'finish'); // a miss, then he kept going
     const b = session(mon + 86_400_000, [['yourturn', false]], 'stop'); // a miss, then he stopped
     const c = session(mon + 7 * 86_400_000, [['warmup', false], ['yourturn', true]], 'finish'); // next week: a warm-up miss, then he kept going; warm-ups are not his own turn
-    const rows = weekly([...a, ...b, ...c]);
+    const again = (ts: number, like: string): LogEvent => ({ id: id(), ts, type: 'activity', session: 's', kind: 'again', like } as LogEvent);
+    const rows = weekly([...a, ...b, ...c, again(mon + 1000, 'like'), again(mon + 86_400_000 + 1000, 'unsure')]);
     expect(rows).toEqual([
-      { week: '2026-10-12', reading: { correct: 2, total: 4 }, started: 2, finished: 1, days: 2, keptGoing: { count: 1, of: 2 } },
-      { week: '2026-10-19', reading: { correct: 1, total: 1 }, started: 1, finished: 1, days: 1, keptGoing: { count: 1, of: 1 } },
+      { week: '2026-10-12', reading: { correct: 2, total: 4 }, started: 2, finished: 1, days: 2, keptGoing: { count: 1, of: 2 }, again: { yes: 1, of: 2 } },
+      { week: '2026-10-19', reading: { correct: 1, total: 1 }, started: 1, finished: 1, days: 1, keptGoing: { count: 1, of: 1 }, again: { yes: 0, of: 0 } },
     ]);
     expect(Object.keys(rows[0])).not.toContain('score');
   });
@@ -219,5 +220,13 @@ describe('the reasoning card, as a single-case record (LTF-02)', () => {
     expect(r.after).toEqual({ correct: 2, total: 3 });
     expect(r.since).toBe(ev[3].ts);
     expect(reasonRecord(derive(ev.slice(0, 3))).since).toBeUndefined();
+  });
+});
+
+describe('telling the story back, with and without the scene (LTF-61, a pilot)', () => {
+  it('counts right retells with the scene shown and without, apart', () => {
+    const r = (scene: boolean, correct: boolean): LogEvent => ({ id: id(), ts: T0, type: 'activity', session: 's', kind: 'retell', item: 'n1-i00', scene, correct } as LogEvent);
+    expect(retellEffect([r(true, true), r(true, false), r(false, true), r(true, true)])).toEqual({ scene: { correct: 2, total: 3 }, noScene: { correct: 1, total: 1 } });
+    expect(retellEffect([])).toEqual({ scene: { correct: 0, total: 0 }, noScene: { correct: 0, total: 0 } });
   });
 });

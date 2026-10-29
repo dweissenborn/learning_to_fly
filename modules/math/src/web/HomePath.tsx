@@ -8,7 +8,7 @@ import { MATH_NAME } from './MathView';
 export function MathPath({ events }: { events: LogEvent[] }) {
   const math = useModuleSettings<MathSettings>('math');
   if (!math) return null;
-  const ms = deriveMath(events, { opened: math.opened, known: math.known });
+  const ms = deriveMath(events, { opened: math.opened, known: math.known, stories: math.stories });
   const done = MATH_ORDER.filter((x) => ms.skills[x].mastered || ms.skills[x].placed).length;
   return <div className="path strand-math">
     <span className="pico" aria-hidden>🧮</span>

@@ -76,6 +76,17 @@ test('every fifth leg is a test flight with one support fewer, said on the plan 
   await expect(note).toHaveCount(0); // kept for the rest of this test flight
 });
 
+test('skipping the scouting trip switches no supports on, because nothing was measured (LTF-63)', async ({ page }) => {
+  await onboard(page); // skips scouting
+  const supports = await page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const row = await new Promise<{ value: { pictures?: boolean; readAloud?: boolean } }>((res) => { const g = db.transaction('kv').objectStore('kv').get('settings'); g.onsuccess = () => res(g.result); });
+    db.close();
+    return { pictures: !!row.value.pictures, readAloud: !!row.value.readAloud };
+  });
+  expect(supports).toEqual({ pictures: false, readAloud: false });
+});
+
 test('first run, a session item, and stopping without penalty', async ({ page }) => {
   await onboard(page);
   await axe(page, 'home');
@@ -513,6 +524,54 @@ test('"What do you think?" asks once per new thing, on any device (LTF-18)', asy
   await expect(second.getByRole('region', { name: 'What do you think?' })).toHaveCount(0);
 });
 
+test('a photo cue for Today: off until a grown-up turns it on, a thing or place not people, kept on this device for 7 days only (LTF-57)', async ({ page }) => {
+  await onboard(page);
+  await page.getByRole('button', { name: /Tell about today/ }).click();
+  await page.getByRole('button', { name: 'My day' }).click();
+  await expect(page.getByLabel(/A photo of a thing or place from today/)).toHaveCount(0); // off by default
+  await page.getByRole('button', { name: /Back to island/ }).click();
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Today recounts' }).click();
+  await page.getByText(/^Photo cue: a grown-up can take a photo/).click();
+  await expect(page.getByRole('switch', { name: /Photo cue/ })).toBeChecked();
+  await page.getByRole('button', { name: 'Back to the island' }).click();
+  await page.getByRole('button', { name: /Tell about today/ }).click();
+  await page.getByRole('button', { name: 'My day' }).click();
+  await page.locator('.tcard').first().click();
+  const png = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==', 'base64');
+  await page.getByLabel(/A photo of a thing or place from today/).setInputFiles({ name: 'today.png', mimeType: 'image/png', buffer: png });
+  await expect(page.getByRole('img', { name: 'Your photo from today' })).toBeVisible();
+  await expect(page.getByText('A thing or a place from today, not people.', { exact: false })).toBeVisible();
+  await axe(page, 'photo cue');
+  await page.getByRole('button', { name: 'Next' }).click();
+  await expect(page.getByRole('img', { name: 'Your photo from today' })).toBeVisible(); // the cue stays while he tells
+  const save = page.getByRole('button', { name: /Save and show/ });
+  for (let i = 0; i < 8 && !(await save.isVisible()); i++) await page.locator('.tiles .tile').first().click();
+  await save.click();
+  const stored = () => page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const get = <T,>(store: string) => new Promise<T[]>((res) => { const g = db.transaction(store).objectStore(store).getAll(); g.onsuccess = () => res(g.result); });
+    const [photos, events, outbox] = await Promise.all([get<{ ts: number }>('photos'), get<{ type: string; photo?: boolean }>('events'), get<{ key: string }>('outbox')]);
+    db.close();
+    return { photos: photos.length, recountPhoto: events.find((e) => e.type === 'recount')?.photo, outbox: outbox.map((o) => o.key.split(':')[0]) };
+  });
+  await expect.poll(stored).toMatchObject({ photos: 1, recountPhoto: true }); // only the fact that a photo was there is logged
+  expect((await stored()).outbox).not.toContain('photo'); // never queued for the cloud copy
+  // A photo older than 7 days is deleted the next time the app opens.
+  await page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const tx = db.transaction('photos', 'readwrite');
+    const st = tx.objectStore('photos');
+    const all = await new Promise<{ id: string; ts: number }[]>((res) => { const g = st.getAll(); g.onsuccess = () => res(g.result); });
+    for (const p of all) st.put({ ...p, ts: Date.now() - 8 * 86_400_000 });
+    await new Promise((r) => { tx.oncomplete = r; });
+    db.close();
+  });
+  await page.reload();
+  await expect(page.getByRole('button', { name: /Start reading/ })).toBeVisible();
+  await expect.poll(async () => (await stored()).photos).toBe(0);
+});
+
 test('his day as a four-panel strip: a skipped panel shows quietly, and tapping a panel changes it (LTF-06)', async ({ page }) => {
   await onboard(page);
   await page.getByRole('button', { name: /Tell about today/ }).click();
@@ -587,9 +646,8 @@ test('a printable paper story map for the grown-up (LTF-15)', async ({ page }) =
 
 /** Plays a session to the island-piece pick: each question gets the full hint, then the answer (or Check), then Next. Demos
  * are skipped. Gear celebrations need the caller's locator handler. */
-async function playToFinish(page: Page) {
-  const pick = page.getByRole('heading', { name: 'Pick one new thing for your island' });
-  for (let i = 0; i < 30 && !(await pick.isVisible()); i++) {
+async function playToFinish(page: Page, until = page.getByRole('heading', { name: 'Pick one new thing for your island' })) {
+  for (let i = 0; i < 30 && !(await until.isVisible()); i++) {
     const skip = page.getByRole('button', { name: 'Got it, skip' });
     if (await skip.isVisible()) { await skip.click(); continue; }
     const help = page.getByRole('button', { name: 'Help' });
@@ -606,6 +664,8 @@ async function playToFinish(page: Page) {
 test('a whole story session to the finish, with the paper story map for the grown-up (LTF-15)', async ({ page }) => {
   test.setTimeout(120_000);
   await onboard(page);
+  await setSettings(page, { pictures: true });
+  await page.reload();
   await page.getByRole('button', { name: /Start reading/ }).click();
   await page.getByRole('button', { name: /Let's go/ }).click();
   await page.getByRole('button', { name: /Story Woods/ }).click();
@@ -614,12 +674,50 @@ test('a whole story session to the finish, with the paper story map for the grow
     await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {}); // it may close by itself
   });
   await playToFinish(page);
+  await expect(page.locator('.bubble', { hasText: 'Here is what you did today.' })).toContainText('Helpers you used today: pictures.'); // LTF-56: what he used, never a mark against it
   await page.locator('.piece').first().click();
   await page.getByRole('button', { name: 'Choose a spot for me' }).click();
   await expect(page.getByText('All done for today.')).toBeVisible();
   await expect(page.getByRole('link', { name: /Print a paper story map/ })).toHaveAttribute('href', '/story-map.html');
   await expect(page.locator('details.more-guide').getByText('Respond:', { exact: false })).toBeVisible(); // LTF-55: on the session's card too
   await axe(page, 'finish');
+  // LTF-60: "Fly again tomorrow?", his own answer, kept beside reading in the grown-ups' weekly table.
+  const again = page.getByRole('region', { name: 'Again tomorrow?' });
+  await again.getByRole('button', { name: 'Yes' }).click();
+  await expect(again).toContainText('Thanks for telling me.');
+  await page.getByRole('button', { name: /Back to my island/ }).click();
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await page.getByRole('button', { name: 'Activity' }).click();
+  const week = page.locator('section', { has: page.getByRole('heading', { name: 'Reading and engagement, week by week' }) });
+  await expect(week.getByRole('row').nth(1)).toContainText('1 of 1 yes');
+});
+
+test('Tell it back, a pilot: after a story session, one story from memory, with its picture on every other session, and he can skip (LTF-61)', async ({ page }) => {
+  test.setTimeout(120_000);
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await setSettings(page, { retell: true });
+  await page.reload();
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.getByRole('button', { name: /Story Woods/ }).click();
+  const tell = page.locator('.bubble', { hasText: 'Tell it back:' });
+  await playToFinish(page, tell);
+  await expect(tell).toBeVisible();
+  await expect(page.locator('.prose')).toHaveCount(0); // from memory: the text is not on screen
+  await expect(page.getByRole('img', { name: /^A picture of the story:/ })).toBeVisible(); // no session finished before: the scene shows
+  await axe(page, 'tell it back');
+  await page.getByRole('button', { name: 'Skip this' }).click();
+  await expect(page.getByRole('heading', { name: 'Pick one new thing for your island' })).toBeVisible();
+  // A skip saves nothing; the grown-ups' switch is in Settings.
+  await expect.poll(() => page.evaluate(async () => {
+    const db = await new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    const all = await new Promise<{ type: string; kind?: string }[]>((res) => { const g = db.transaction('events').objectStore('events').getAll(); g.onsuccess = () => res(g.result); });
+    db.close();
+    return all.filter((e) => e.type === 'activity' && e.kind === 'retell').length;
+  })).toBe(0);
 });
 
 test('the second hint on a feelings question is a three-box card, and "So" stays his to work out (LTF-02)', async ({ page }) => {
@@ -687,12 +785,33 @@ test('scouting has a "Who did it?" stop, and Starting point can run it on its ow
   await expect(page.getByText('Sentence grammar')).toBeVisible();
 });
 
+test('"Does it fit?": a guess from his guide, then the sentence that shows it, each scored on its own (LTF-59)', async ({ page }) => {
+  await onboard(page);
+  await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await expect(page.getByRole('heading', { name: '"Does it fit?": judging a guess, then showing why' })).toBeVisible();
+  await page.getByRole('button', { name: 'Content library' }).click();
+  await page.getByLabel('Skill').selectOption('N5');
+  await page.locator('summary', { hasText: 'The Fish Soup' }).click();
+  await page.locator('.lib-item', { hasText: 'n5-i213' }).last().getByRole('button', { name: 'Try it' }).click();
+  const dialog = page.getByRole('dialog', { name: 'Try an item' });
+  await expect(dialog).toContainText('Your guide thinks: "Ana liked the fish soup." Does that fit the story?');
+  await dialog.getByRole('button', { name: 'It fits', exact: true }).click();
+  await expect(dialog).toContainText('Ana ate the whole bowl');
+  await axe(page, 'does it fit');
+  await dialog.getByRole('button', { name: 'Close' }).click();
+  await page.locator('.lib-item', { hasText: 'n5-i214' }).last().getByRole('button', { name: 'Try it' }).click();
+  await expect(dialog).toContainText('Tap a sentence that shows whether it fits.');
+  await dialog.locator('.sentence', { hasText: 'Then she ate the whole bowl' }).click();
+  await expect(dialog).toContainText('"Then she ate the whole bowl" shows she liked it.');
+});
+
 test('word help: tap an underlined word for a plain meaning, and a tapped word comes back as a word for today (LTF-04)', async ({ page }) => {
   await onboard(page);
   await page.getByRole('button', { name: 'Grown-ups' }).click();
   await page.getByRole('button', { name: 'Content library' }).click();
   await page.getByLabel('Skill').selectOption('N1');
   await page.locator('summary', { hasText: 'Tide Pool Morning' }).click();
+  await expect(page.locator('details[open]', { hasText: 'Tide Pool Morning' })).toContainText('tide: the rise and fall of the sea each day'); // meanings listed for review
   await page.locator('.lib-item', { hasText: 'n1-i37' }).last().getByRole('button', { name: 'Try it' }).click();
   const dialog = page.getByRole('dialog', { name: 'Try an item' });
   await dialog.locator('.word.gloss', { hasText: /^tide/i }).first().click();
@@ -894,6 +1013,23 @@ test('each island its own place: its names, a quest of its own shown on its map,
   await axe(page, 'keepsakes');
 });
 
+test('the session that ends his stay finishes the quest of the island he leaves, so a five-step quest fits one stay (LTF-46, LTF-47)', async ({ page }) => {
+  test.setTimeout(120_000);
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await setSettings(page, { routes: { gull: { to: 'reef', at: 1 } }, journeyAnchor: { at: 5, stop: 1, step: 0, after: 0 }, islandsSeen: { gull: 5, reef: 10 } });
+  await seedFinished(page, 14); // four sessions on Reef Island; the fifth sails on to Cloud Hill
+  await expect(page.getByRole('region', { name: 'Reef Island quest' })).not.toContainText('Quest done');
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.locator('main .ccard').first().click();
+  await playToFinish(page);
+  await expect(page.getByText(/You finished the Reef Island quest\./)).toBeVisible();
+  await axe(page, 'finish, leaving with the quest done');
+});
+
 test('a wrong tap opens the clue for one more try, a second shows the answer, and only a first-tap answer looks like a success (LTF-38)', async ({ page }) => {
   await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
     await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
@@ -1021,6 +1157,7 @@ test('at Take-off Captain Ada offers two flight paths, and the reef way has its 
   await expect(page.getByText('You take the reef way.', { exact: false }).first()).toBeVisible();
   await page.getByRole('button', { name: /Back to island/ }).click();
   await page.getByRole('button', { name: 'Grown-ups' }).click();
+  await expect(page.getByText('Routes he chose').locator('xpath=following-sibling::b[1]')).toHaveText('Star Point, The reef way'); // the Overview names both
   await page.getByRole('button', { name: 'Settings', exact: true }).click();
   await expect(page.getByText(/Route from Take-off: The reef way/)).toBeVisible();
 });
@@ -1043,6 +1180,7 @@ test('after the eighth koala, the keeper arc at Bluegum: its first beat, its sto
   await expect(page.getByRole('region', { name: 'On the way to Junior Keeper Day' })).toBeVisible();
   await page.getByRole('button', { name: /The Tree Nursery/ }).click();
   await expect(page.getByRole('region', { name: 'Postcard from The Tree Nursery' })).toContainText('On planting day');
+  await expect(page.getByRole('img', { name: 'A picture of The Tree Nursery' })).toBeVisible();
   await axe(page, 'arc postcard');
 });
 
@@ -1068,6 +1206,16 @@ test('after Opening Day he can fly home, visit an island he skipped, and his isl
   await axe(page, 'way home fork');
   await fork.locator('.ccard', { hasText: 'Fossil Bay' }).click();
   await expect(page.getByRole('region', { name: 'On the way to Fossil Bay' })).toBeVisible();
+  // At Fossil Bay, a first visit on the way home: its postcard has the island's picture and its day trip.
+  await page.getByRole('button', { name: /Back to island/ }).click();
+  await seedFinished(page, 68);
+  await page.getByRole('button', { name: /My journey/ }).click();
+  await page.getByRole('button', { name: 'Fossil Bay', exact: true }).click();
+  const card = page.getByRole('dialog').getByRole('region', { name: 'Postcard from Fossil Bay' });
+  await expect(card.getByRole('img', { name: 'A picture of Fossil Bay' }).locator('rect').first()).toBeAttached();
+  await card.getByRole('button', { name: /Day trip/ }).click();
+  await expect(page.getByRole('region', { name: 'Day trip on Fossil Bay' })).toContainText('A quarry is a place where rock was cut out of the ground.');
+  await axe(page, 'way home postcard');
 });
 
 // Every story setback, read from the journey itself: its notice, coping line and question, both plans, and the smooth text.

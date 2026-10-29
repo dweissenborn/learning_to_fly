@@ -94,6 +94,13 @@ describe('the koala keeper arc at Bluegum (LTF-30)', () => {
     expect(journeyNow(45, { ...old, ...fix }).beat?.text).toMatch(/^Ranger Tess asks/);
     expect(arcStart({ ...DEFAULTS }, 3)).toEqual({ arcSeen: true }); // nothing to move for anyone else
   });
+  it('a new pace never replays a setback he has already got past', () => {
+    const before = journeyNow(3, DEFAULTS); // five-session legs, three in: the storm has passed
+    expect(before.beat?.obstacle).toBeUndefined();
+    const t = { ...DEFAULTS, ...repace(DEFAULTS, 3, 7) };
+    expect(journeyNow(3, t).beat?.text).toBe(before.beat?.text);
+    for (const n of [4, 5]) expect(journeyNow(n, t).beat?.obstacle).toBeUndefined();
+  });
   it('a new pace mid-arc keeps his place, on the arc and on the way there', () => {
     const before = journeyNow(40, s).arc!; // seven sessions into the arc: Tree Nursery reached, two into the next leg
     const t = { ...s, ...repace(s, 40, 7) };

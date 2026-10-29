@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Item, LogEvent, Passage, SkillBank, SkillId } from '@wayfinder/schema';
 import {
-  buildPool, choices, derive, errorPatterns, tagAccuracy, journeyPosition, journeyRoute, forkOptions, routePosition, pastFork, planWord, planCheckup, checkupDue, checkupResults, levelFor, levelPeak, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, grammarSet, planGateCheck, planSession, testFlight,
+  buildPool, choices, derive, errorPatterns, tagAccuracy, journeyPosition, journeyRoute, forkOptions, routePosition, pastFork, planWord, planCheckup, checkupDue, checkupResults, levelFor, levelPeak, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, grammarSet, planGateCheck, planSession, testFlight, dayKey, BEATS_FOR_LEG,
 } from './index';
 
 const DAY = 86_400_000;
@@ -75,6 +75,15 @@ describe('review dates', () => {
     expect(s.reviewStage).toBe(3);
   });
 
+  it('a review is three questions and passes at two right, so one slip on a skill he knows does not send it back (DW 2026-10-28)', () => {
+    const at = T0 + 5 * DAY;
+    const review = (...right: boolean[]) => derive([...masterOn('F1', T0), ...session(at, 'N1', [true], { warmup: right.map((r) => ['F1', r] as [SkillId, boolean]) })]).skills.F1;
+    expect(review(true, false, true)).toMatchObject({ status: 'mastered', reviewStage: 1 });
+    expect(review(false, true, false)).toMatchObject({ status: 'learning', relearning: true });
+    expect(review(true, true)).toMatchObject({ reviewStage: 1 }); // a session stopped part way judges what he answered
+    expect(review(false)).toMatchObject({ relearning: true });
+  });
+
   it('a review only happens when it is due', () => {
     const ev = [...masterOn('F1', T0), ...session(T0 + DAY + 3600_000, 'N1', [true], { warmup: [['F1', false]] })];
     expect(derive(ev).skills.F1.status).toBe('mastered');
@@ -90,6 +99,23 @@ describe('review dates', () => {
     s = derive(ev).skills.F1;
     expect(s.status).toBe('mastered');
     expect(s.reviewStage).toBe(0);
+  });
+});
+
+describe('journey beats for each pace', () => {
+  it('says "one more session" (beat 4) only on the last session of a leg, at every pace', () => {
+    for (const [len, table] of Object.entries(BEATS_FOR_LEG)) {
+      expect(table).toHaveLength(Number(len));
+      table.forEach((beat, step) => { if (beat === 4) expect(step).toBe(Number(len) - 1); });
+      expect(table.every((b, i) => i === 0 || b >= table[i - 1])).toBe(true); // the story never goes back within a leg
+    }
+  });
+});
+
+describe('dayKey', () => {
+  it('is his local date as YYYY-MM-DD, zero-padded, as the picture API checks it', () => {
+    expect(dayKey(new Date(2026, 10, 5, 23, 30).getTime())).toBe('2026-11-05');
+    expect(dayKey(new Date(2026, 9, 26, 0, 5).getTime())).toBe('2026-10-26');
   });
 });
 
@@ -125,6 +151,15 @@ describe('placement', () => {
     expect(p.skills.F3.status).toBe('new');
     expect(p.skills.N1.status).toBe('new');
     expect(focusSkill(p, 'functional')).toBe('F3');
+  });
+
+  it('a later placement (the "Who did it?" stop run again) never re-masters a skill he is relearning', () => {
+    const place = (ts: number): LogEvent => ({ id: id(), ts, type: 'placement', functional: 3, narrative: 1, word: 1, reading: 1, listening: 1 });
+    const missed = session(T0 + 3 * DAY, 'F3', [true, true], { warmup: [['F1', false]] }); // F1's first review, missed
+    expect(derive([place(T0), ...missed]).skills.F1.relearning).toBe(true);
+    const again = derive([place(T0), ...missed, place(T0 + 4 * DAY)]);
+    expect(again.skills.F1).toMatchObject({ status: 'learning', relearning: true });
+    expect(again.skills.F2.status).toBe('mastered'); // still placed
   });
 
   it('counts placement answers as seen but never toward mastery', () => {
@@ -182,6 +217,16 @@ describe('the philosophical gate', () => {
     g = gate(derive(passed));
     expect(g.opened).toBe(true);
     expect(g.available).toBe(true);
+  });
+
+  it('"has passed its 21-day review" stays true after a later slip, once the skill is relearned (plan, gate condition 3)', () => {
+    const { ev, t } = lastedEvents();
+    const due = Math.max(derive(ev).skills.N1.nextReview!, t);
+    const slipped = [...ev, ...session(due + DAY, 'F4', [true], { warmup: [['N1', false]] })];
+    expect(gate(derive(slipped)).conditions.narrative).toBe(false); // N1 is relearning
+    const relearned = [...slipped, ...session(due + 2 * DAY, 'N1', [true, true, true])];
+    expect(derive(relearned).skills.N1.status).toBe('mastered');
+    expect(gate(derive(relearned)).conditions).toMatchObject({ narrative: true, lasted: true });
   });
 
   it('rests while an earlier skill slips, and an adult can override', () => {
@@ -273,6 +318,7 @@ describe('item choice', () => {
     const plan = planSession(p, ctx(), 'functional', p.skills.N1.nextReview! + 1, 4);
     expect(plan.review).toEqual(['N1']);
     expect(plan.warmup.every((i) => i.skill === 'N1')).toBe(true);
+    expect(plan.warmup).toHaveLength(3); // a review is three questions (DW 2026-10-28)
   });
 });
 
@@ -287,7 +333,7 @@ describe('the journey', () => {
 
   it('shows the obstacle and how it was overcome on short and long legs', () => {
     expect([0, 1, 2].map((n) => journeyPosition(n, 6, 3).beat)).toEqual([0, 2, 3]);
-    expect([0, 1, 2, 3, 4, 5, 6].map((n) => journeyPosition(n, 6, 7).beat)).toEqual([0, 1, 1, 2, 3, 4, 4]);
+    expect([0, 1, 2, 3, 4, 5, 6].map((n) => journeyPosition(n, 6, 7).beat)).toEqual([0, 1, 1, 2, 3, 3, 4]);
   });
 
   it('never moves back when an adult changes the pace mid-journey', () => {
@@ -468,6 +514,15 @@ describe('pacing for a learner who locks skills in quickly', () => {
     const bounce = derive(run(T0, [...right(1), ...right(2), [3, false], ...right(2)])).skills.N1;
     expect([levelFor(bounce, pool), levelPeak(bounce, pool)]).toEqual([3, 3]);
     expect(levelPeak(derive(run(T0, [...right(1), ...right(2), [3, false]])).skills.N1, pool)).toBe(3);
+  });
+
+  it('moves only on his own answers: a guided answer after the clue showed by itself, or an inference check, never steps him down', () => {
+    const ans = (sid: string, ts: number, phase: string, correct: boolean): LogEvent =>
+      ({ id: id(), ts, type: 'answer', session: sid, item: `x${id()}`, skill: 'N1', phase: phase as never, correct, hint: correct ? 0 : 1, tries: 1, ms: 1, format: 'tap', level: 2 });
+    const climbed = run(T0, [[1, true], [1, true], [1, true]]); // level 2
+    const guided = [ans('g', T0 + DAY, 'together', false), ans('g', T0 + DAY + 1, 'gatecheck', false)];
+    expect(levelFor(derive([...climbed, ...guided]).skills.N1, pool)).toBe(2);
+    expect(levelFor(derive([...climbed, ans('w', T0 + DAY, 'warmup', false)]).skills.N1, pool)).toBe(1); // a review is his own answer
   });
 
   it('never serves a harder level than he has reached, and serves his own level first', () => {

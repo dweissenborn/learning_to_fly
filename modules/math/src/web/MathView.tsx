@@ -27,7 +27,7 @@ export const MATH_HINT: Record<MathError, string> = {
   'cross-multiplied': 'Multiply top by top, and bottom by bottom.',
   'added-not-multiplied': 'What was the bottom multiplied by? Multiply the top by the same number.',
   'remainder-too-big': 'The remainder must be smaller than the number you divide by. Can one more group fit?',
-  'neighbour-fact': 'Close! That is the fact next to this one. Check it on the multiplication chart.',
+  'neighbour-fact': 'Close! That is the fact next to this one. Check it with the Times table button.',
   'not-greatest': 'That is a common factor. Is there a bigger one that divides both numbers?',
   'counted-unshaded': 'The top number counts the shaded parts, not the white ones.',
   'part-over-part': 'The bottom number counts all the equal parts, shaded or not.',
@@ -99,4 +99,25 @@ export function MathPreview() {
       </Dialog></Modal>
     </ModalOverlay>
   </section>;
+}
+
+/** LTF-40: the multiplication chart, one tap away on every lesson problem. Looking at it never counts as help. */
+export function TimesTable() {
+  const [open, setOpen] = useState(false);
+  const n = Array.from({ length: 12 }, (_, i) => i + 1);
+  return <>
+    <Btn className="small" onPress={() => setOpen(true)}><span aria-hidden>✖️</span> Times table</Btn>
+    <ModalOverlay className="overlay" isOpen={open} onOpenChange={setOpen} isDismissable>
+      <Modal><Dialog className="dialog" aria-label="Times table">
+        <div className="stack">
+          <Heading slot="title" style={{ margin: 0 }}>Times table</Heading>
+          <div className="table-wrap"><table className="times-table">
+            <thead><tr><th scope="col"><span aria-hidden>×</span><span className="sr-only">times</span></th>{n.map((c) => <th key={c} scope="col">{c}</th>)}</tr></thead>
+            <tbody>{n.map((r) => <tr key={r}><th scope="row">{r}</th>{n.map((c) => <td key={c}>{r * c}</td>)}</tr>)}</tbody>
+          </table></div>
+          <div className="row"><span className="spacer" /><Btn className="primary" autoFocus onPress={() => setOpen(false)}>Done</Btn></div>
+        </div>
+      </Dialog></Modal>
+    </ModalOverlay>
+  </>;
 }

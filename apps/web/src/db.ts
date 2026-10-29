@@ -60,10 +60,10 @@ export interface Settings {
   forksSeen?: string[];
   /** LTF-30: the koala keeper arc's start was checked once; and where it is anchored after a pace change (in sessions after the eighth koala). */
   arcSeen?: boolean;
-  arcAnchor?: { at: number; stop: number; step: number; after: number };
+  arcAnchor?: JourneyAnchor;
   /** LTF-27: the way home, once he chose it after Opening Day: when (finished sessions), the island he picked on the way, and
    * where it is anchored after a choice or a pace change (in sessions since he set off). */
-  homeTrip?: { at: number; island?: string; anchor?: { at: number; stop: number; step: number; after: number } };
+  homeTrip?: { at: number; island?: string; anchor?: JourneyAnchor };
   /** LTF-27: he chose to stay at the sanctuary for now; the offer stays open. */
   homeStayed?: boolean;
   /** LTF-39: the module he chose last, marked on the picker so one tap starts it. */
@@ -80,6 +80,10 @@ export interface Settings {
   helper?: string;
   /** LTF-55: the MORE talking guide on the grown-ups' cards starts open; closing it once keeps it closed. */
   moreGuide?: boolean;
+  /** LTF-61 pilot: after a story session he tells one story back from memory. Off until turned on. */
+  retell?: boolean;
+  /** LTF-57: a grown-up can take a photo cue for Today. Off until turned on. */
+  photoCue?: boolean;
   /** LTF-56 trial: the test-flight block in which he chose to keep his supports. */
   testKept?: number;
 }
@@ -125,10 +129,13 @@ export class DB extends Dexie {
   kv!: EntityTable<{ key: string; value: unknown }, 'key'>;
   /** Local changes not yet in the cloud copy: 'event:<id>', 'note:<id>' or 'settings'. v changes on every edit. */
   outbox!: EntityTable<{ key: string; v: string }, 'key'>;
+  /** LTF-57: photo cues for Today. This device only: never queued for the cloud, never exported, deleted after 7 days. */
+  photos!: EntityTable<{ id: string; ts: number; blob: Blob }, 'id'>;
   constructor(name = currentDb()) {
     super(name);
     this.version(1).stores({ events: 'id, ts, type', notes: 'id, ts', kv: 'key' });
     this.version(2).stores({ outbox: 'key' });
+    this.version(3).stores({ photos: 'id, ts' });
   }
 }
 export const db = new DB();
@@ -168,6 +175,7 @@ export async function applyRetention(now = Date.now()) {
     await db.notes.bulkDelete(old);
     await mark(old.map((id) => `note:${id}`));
   });
+  await db.photos.where('ts').below(now - 7 * day).delete(); // LTF-57: photo cues last 7 days
 }
 
 export function useSettings(): Settings | undefined {
@@ -194,8 +202,8 @@ export async function importAll(data: { app?: string; events?: LogEvent[]; notes
 }
 /** Clears this device only. The cloud copy, if any, stays until it is deleted there. */
 export const wipeAll = async () => {
-  await db.transaction('rw', [db.events, db.notes, db.kv, db.outbox], async () => {
-    await db.events.clear(); await db.notes.clear(); await db.kv.clear(); await db.outbox.clear();
+  await db.transaction('rw', [db.events, db.notes, db.kv, db.outbox, db.photos], async () => {
+    await db.events.clear(); await db.notes.clear(); await db.kv.clear(); await db.outbox.clear(); await db.photos.clear();
   });
   forgetDb();
 };

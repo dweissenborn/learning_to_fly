@@ -1,11 +1,12 @@
 // "Today": telling about his own day, or about a show or video he watched (R16, and his school's routine
 // for key details and the main idea). Built from templates, so nothing leaves the app.
 // It sits outside the lesson and never changes a mastery score.
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Button } from 'react-aria-components';
 import type { LogEvent } from '@wayfinder/schema';
 import { ideasUse, todayLanterns, type Progress } from '@wayfinder/engine';
-import { addNote, log, type Settings } from './db';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { addNote, db, log, type Settings } from './db';
 import { today, type Lesson } from './content';
 import { Guide } from './art';
 import { Btn, Lanterns, MoreGuide, SpeakBtn } from './ui';
@@ -131,12 +132,17 @@ export function Today({ settings, progress, events, onExit }: { settings: Settin
   }, [topic, show, parts]);
 
   const lamps = todayLanterns(events);
+  // LTF-57: today's photo cue, if a grown-up took one (only while the setting is on).
+  const photo = useLiveQuery(() => (settings.photoCue ? db.photos.where('ts').aboveOrEqual(new Date().setHours(0, 0, 0, 0)).last() : undefined), [settings.photoCue]);
+  const photoUrl = useMemo(() => (photo ? URL.createObjectURL(photo.blob) : undefined), [photo]);
+  useEffect(() => () => { if (photoUrl) URL.revokeObjectURL(photoUrl); }, [photoUrl]);
+  const photoImg = photoUrl && <img src={photoUrl} alt="Your photo from today" className="photo-cue-img" />;
   const save = async () => {
     const date = new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' });
     await addNote({ kind: 'recount', personal: true, title: topic === 'show' ? `${date}: ${show.name.trim() || show.kind || 'a show'}` : date, text: sentences.join(' '), ask: asks });
     await log({
       type: 'recount', stage, parts: topic === 'show' ? 1 : parts.length, typed: !!typed.trim(), topic: topic ?? 'day',
-      sentences: sentences.length, skipped: topic === 'show' ? [] : skippedKeys(parts, asked), ...(topic === 'show' ? {} : { changed, feeling: parts.some((p) => !!p.feeling), feelingWords: feelingWordCount(sentences, today.feelings.map((f) => f.word)) }),
+      sentences: sentences.length, skipped: topic === 'show' ? [] : skippedKeys(parts, asked), ...(topic === 'show' ? {} : { changed, feeling: parts.some((p) => !!p.feeling), feelingWords: feelingWordCount(sentences, today.feelings.map((f) => f.word)), ...(settings.photoCue ? { photo: !!photo } : {}) }),
       ...(hideTiles ? { ideas: parts.flatMap((p, i) => ORDER.filter((k) => askable(k, p, asked) && p[k]).map((k) => !!ideas[`${i}:${k}`])) } : {}), after: parts.some((p) => !!(p.afterHard || p.afterDone)),
     });
     sfx.finish();
@@ -186,6 +192,14 @@ export function Today({ settings, progress, events, onExit }: { settings: Settin
             </Button>;
           })}
         </div>
+        {settings.photoCue && <section className="card stack" aria-label="Photo cue">
+          {photoImg}
+          <div className="field"><label htmlFor="photo-cue">A photo of a thing or place from today (a grown-up takes it)</label>
+            <input id="photo-cue" type="file" accept="image/*" capture="environment" className="input"
+              onChange={(e) => { const f = e.target.files?.[0]; if (f) void db.photos.add({ id: crypto.randomUUID(), ts: Date.now(), blob: f }); }} /></div>
+          {photo && <div className="row"><Btn className="quiet small" onPress={() => db.photos.delete(photo.id)}>Delete the photo</Btn></div>}
+          <p className="tagline" style={{ margin: 0 }}>A thing or a place from today, not people. It stays on this device and is deleted after 7 days.</p>
+        </section>}
         <Btn className="primary big" isDisabled={!picked.length} onPress={startAsking}>Next →</Btn>
       </>}
 
@@ -216,6 +230,7 @@ export function Today({ settings, progress, events, onExit }: { settings: Settin
       </>}
 
       {phase === 'ask' && topic === 'day' && at && <>
+        {photoImg}
         <div className="chip" style={{ width: 'fit-content' }}>{parts[at.part].lesson.emoji} {parts[at.part].lesson.name}</div>
         {guideSay(questions[at.key].ask(parts[at.part]))}
         {!hideTiles ? tiles(questions[at.key].tiles(parts[at.part]), (t) => answer(t)) : <>

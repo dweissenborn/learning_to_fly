@@ -22,6 +22,19 @@ describe('"What do you think?" cards (LTF-18)', () => {
     expect(nextFeature([ev({ type: 'recount', stage: 1, parts: 1, topic: 'day', changed: 0 })])?.id).toBe('day-strip');
   });
 
+  it('asks about choosing a sea route only after a sea-route choice, not a flight path or the way home', () => {
+    const route = (item: string) => ev({ type: 'activity', session: 'home', kind: 'route', item });
+    const met = (e: LogEvent[]) => FEATURES.find((f) => f.id === 'island-route')!.met(e);
+    expect(met([route('path:reef'), route('home:fossil')])).toBe(false);
+    expect(met([route('star')])).toBe(true);
+  });
+
+  it('asks about the lanterns once he has seen two light (LTF-54)', () => {
+    const today = () => ev({ type: 'recount', stage: 1, parts: 1, topic: 'day' });
+    expect(nextFeature([today()])).toBeUndefined();
+    expect(nextFeature([today(), today()])?.id).toBe('lanterns');
+  });
+
   it('keeps his latest answer per feature, for the grown-ups', () => {
     const o = opinions([vote('show-recount', 'unsure'), vote('show-recount', 'like', 'too-little')]);
     expect(o.get('show-recount')).toMatchObject({ like: 'like', amount: 'too-little' });

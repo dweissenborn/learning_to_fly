@@ -46,6 +46,8 @@ export interface ItemViewProps {
   demo?: { show?: number[]; reveal?: boolean; fill?: Box[] };
   autoRead?: boolean;
   listenOnly?: boolean;
+  /** LTF-61: telling a story back from memory, so its text is not shown. */
+  noPassage?: boolean;
   praiseIndex?: number;
   onDone?: (r: Result) => void;
   /** Show the clue straight away instead of after the usual wait (LTF-01). */
@@ -62,7 +64,7 @@ const SLOT: Record<string, [string, string]> = {
 };
 const RUBRIC = ['', 'You named the feeling or idea.', 'You gave a reason.', 'You tied it to the story.', 'You added your own life or another view.'];
 
-export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, helpTick = 0, demo, autoRead, listenOnly, praiseIndex = 0, onDone, clueAtOnce, whosWho }: ItemViewProps) {
+export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, helpTick = 0, demo, autoRead, listenOnly, noPassage, praiseIndex = 0, onDone, clueAtOnce, whosWho }: ItemViewProps) {
   const passage = pool.passages.get(item.passage)!;
   const [hint, setHint] = useState(0);
   const [tries, setTries] = useState(0);
@@ -158,7 +160,7 @@ export function ItemView({ item, mode, guide, hintDelay = 8, pictures = true, he
     : hint === 2 ? `${item.hint ?? 'Read it again, slowly.'}${highlight ? ' Look at the lit-up part.' : ''}`
     : `Here is the answer. ${item.explain}`;
 
-  const showPassage = item.format !== 'scene' || passage.sentences.length > 0 || !!passage.visual;
+  const showPassage = !noPassage && (item.format !== 'scene' || passage.sentences.length > 0 || !!passage.visual);
   return <div className="lesson">
     <div className={`lesson-grid ${showPassage ? 'two' : ''}`}>
       {showPassage && <Passage passage={passage} marks={marks} wordMarks={words} focus={item.focus} pictures={pictures} listenOnly={listenOnly}

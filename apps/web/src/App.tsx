@@ -67,7 +67,7 @@ export function App() {
   const own = useAllModuleSettings(); // each module's own settings (LTF-39)
   const [ext, setExt] = useState<string | null>(null); // the extension module on screen
   useApplySettings(settings);
-  // New versions switch in only on the home screen with nothing open, or while the app is in the background.
+  // New versions switch in only on the home screen with nothing open, even while the app is in the background (LTF-64).
   const safe = useRef(false);
   safe.current = screen === 'home' && !dialog && !!settings?.onboarded;
   useEffect(() => { void startUpdates(() => safe.current); }, []);

@@ -11,6 +11,8 @@ export function MathSettingsPanel() {
   return <div className="stack" style={{ gap: '0.5rem' }}>
     <Toggle on={!!math.enabled} onChange={(enabled) => saveModuleSettings('math', { enabled })}>Math: fractions, and the skills under them</Toggle>
     {math.enabled && <>
+      <Toggle on={!!math.stories} onChange={(stories) => saveModuleSettings('math', { stories })}>Story problems (a pilot): equivalent fractions, multiplying and dividing can be read as a short story</Toggle>
+      <p className="tagline">He picks where the stories happen, and every problem has a switch to plain numbers that never counts as help. With this on, those steps also need one right answer on his own in each view.</p>
       <p className="tagline">His first math session is a short scouting trip that finds where to start. If you know where he is (for example from a school assessment), tick what he already knows, and the trip only confirms those.</p>
       <div className="tiles" role="group" aria-label="What he already knows">{MATH_ORDER.map((s) => <Toggle key={s} on={known.includes(s)} onChange={() => saveModuleSettings('math', { known: flip(known, s) })}>{MATH_NAME[s]}</Toggle>)}</div>
       <p className="tagline">A step opens when the steps it rests on are done. You can open one early here.</p>

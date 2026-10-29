@@ -26,6 +26,7 @@ const bank: SkillBank = {
     item('b1', 'pb', 1), item('b2', 'pb', 1), item('b3', 'pb', 1),
     item('c1', 'pc', 2), item('c2', 'pc', 2),
     item('g1', 'pb', 1, { gatecheck: true }),
+    item('k1', 'pb', 1, { checkup: 'home' }), // a check-up question: item choice never serves it in practice
     item('x1', 'px', 1),
   ],
   model: { item: 'm', steps: [{ say: '1' }, { say: '2' }, { say: '3', reveal: true }] },
@@ -60,9 +61,9 @@ describe('fresh content report', () => {
   const row = (events: LogEvent[], o: { hidden?: Set<string>; allowThemes?: boolean } = {}) =>
     freshness(derive(events), pool, { now, ...o }).find((r) => r.skill === 'N1')!;
 
-  it('counts questions and texts he has not met yet, up to his level, and leaves out demos, checks, hidden and themed items', () => {
+  it('counts questions and texts he has not met yet, up to his level, and leaves out demos, checks, check-ups, hidden and themed items', () => {
     const r = row([]);
-    expect(r).toMatchObject({ level: 1, total: 6, unseen: 6, texts: 2, unseenTexts: 2 }); // a1-a3, b1-b3; not m, g1, x1, or the level 2 text
+    expect(r).toMatchObject({ level: 1, total: 6, unseen: 6, texts: 2, unseenTexts: 2 }); // a1-a3, b1-b3; not m, g1, k1, x1, or the level 2 text
     expect(row([], { allowThemes: true })).toMatchObject({ total: 7, texts: 3 });
     expect(row([], { hidden: new Set(['a3']) })).toMatchObject({ total: 5, unseen: 5 });
   });

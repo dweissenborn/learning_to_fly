@@ -20,3 +20,10 @@
 .kp-box.optional:not([data-selected]) { border-style: dashed; }
 .frac-bar { width: min(100%, 28rem); height: auto; display: block; }
 .math-steps { margin: 0; padding-left: 1.4rem; display: grid; gap: 0.4rem; font-size: 1.1rem; }
+/* LTF-40: the times table */
+.times-table { border-collapse: collapse; margin: 0 auto; font-variant-numeric: tabular-nums; font-size: 1rem; }
+.times-table th, .times-table td { border: 1px solid var(--line); padding: 0.3em 0.45em; text-align: center; min-width: 2.1em; }
+.times-table th { background: var(--surface-2); font-weight: 800; }
+/* LTF-42: a problem as a short story */
+.math-story { display: grid; gap: 0.3rem; font-size: 1.15rem; }
+.math-story-pic { font-size: 2rem; line-height: 1; }

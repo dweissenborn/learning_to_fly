@@ -18,6 +18,7 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
   const [name, setName] = useState(settings.name);
   const [pin, setPin] = useState(settings.pin);
   const [scores, setScores] = useState(settings.scout ?? { word: 0, reading: 0, listening: 0 });
+  const [wordChecked, setWordChecked] = useState(false); // this run's word check; an earlier run's supports were applied when it ended
   const g = settings.guide;
   const loaded = useEvents(), events = loaded ?? [];
   const alone = startAt === 'grammar'; // Starting point can run the "Who did it?" stop on its own (LTF-13)
@@ -32,8 +33,9 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
   const finishScout = async (s: typeof scores, starts: { functional?: number; narrative?: number }) => {
     stopSpeaking();
     await log({ type: 'placement', functional: starts.functional ?? 1, narrative: starts.narrative ?? 1, word: s.word, reading: s.reading, listening: s.listening, ...(s.grammar !== undefined ? { grammar: s.grammar } : {}) });
-    // Placement only ever switches supports on. Turning one off is the adult's call.
-    const sup = placementSupports(s);
+    // Placement only ever switches supports on, and only from checks he did: skipping the trip measures nothing (LTF-63).
+    // Turning one off is the adult's call.
+    const sup = wordChecked ? placementSupports(s) : { readAloud: false, pictures: false };
     await saveSettings({ readAloud: settings.readAloud || sup.readAloud, pictures: settings.pictures || sup.pictures, scout: s });
     setStep('done');
   };
@@ -100,7 +102,7 @@ export function Onboarding({ settings, startAt = 'hello', onDone }: { settings: 
       <div className="row"><Btn className="primary big" onPress={() => setStep('words')}>Start scouting →</Btn><Btn className="quiet" onPress={() => finishScout(scores, {})}>Skip, start at step 1</Btn></div>
     </div>}
 
-    {step === 'words' && <WordCheck guide={g} onDone={(word) => { setScores((s) => ({ ...s, word })); setStep('reading'); }} />}
+    {step === 'words' && <WordCheck guide={g} onDone={(word) => { setScores((s) => ({ ...s, word })); setWordChecked(true); setStep('reading'); }} />}
     {step === 'reading' && <Probe key="r" guide={g} items={placement.reading.items} onDone={(c) => { setScores((s) => ({ ...s, reading: c })); setStep(canSpeak ? 'listening' : 'grammar'); }} />}
     {step === 'listening' && <Probe key="l" guide={g} items={placement.listening.items} listen onDone={(c) => { setScores((s) => ({ ...s, listening: c })); setStep('grammar'); }} />}
     {/* Which set runs depends on his saved runs, so wait until they have loaded (LTF-13). */}

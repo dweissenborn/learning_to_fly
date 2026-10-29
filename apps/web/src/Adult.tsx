@@ -2,9 +2,9 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId, Strand } from '@wayfinder/schema';
-import { ALL_SKILLS, checkupResults, dayKey, delayEffect, errorPatterns, flightPeak, flightPoints, focusSkill, formatEffect, FRESH_LOW, freshness, gate, GEAR, gearState, guessing, hintNeed, ideasUse, insights, interestEffect, journeyPosition, levelFor, placementSupports, reasonRecord, recountTrend, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName, PICTURE_COST, supportEffect, weekly } from '@wayfinder/engine';
+import { ALL_SKILLS, checkupResults, dayKey, delayEffect, errorPatterns, flightPeak, flightPoints, focusSkill, formatEffect, FRESH_LOW, freshness, gate, GEAR, gearState, guessing, hintNeed, ideasUse, insights, interestEffect, journeyPosition, levelFor, placementSupports, reasonRecord, recountTrend, sessionActivity, skillsOf, statusOf, STEP_LABEL, strandOf, tagAccuracy, trend, type Insight, type Progress, type StepName, PICTURE_COST, RULES, retellEffect, supportEffect, weekly } from '@wayfinder/engine';
 import { finishedCount, JOURNEY, journeyNow, routeLabel, repace } from './journey';
-import { deleteNote, exportAll, importAll, log, saveSettings, updateNote, useNotes, wipeAll, type GuideId, type Settings } from './db';
+import { deleteNote, exportAll, importAll, log, saveSettings, updateNote, useAllModuleSettings, useNotes, wipeAll, type GuideId, type Settings } from './db';
 import { deleteEverywhere, useLink } from './cloud';
 import { CloudCard } from './CloudScreens';
 import { pool, SKILL, STRAND, today, TOPICS } from './content';
@@ -18,7 +18,7 @@ import { canSpeak, pickVoice, speak, voices } from './media';
 import { MODULES } from './modules';
 import { pictureSrc, picturesOf } from './Pictures';
 
-type Tab = 'overview' | 'skills' | 'activity' | 'today' | 'content' | 'settings' | 'data';
+type Tab = 'overview' | 'skills' | 'activity' | 'today' | 'content' | 'settings' | 'data' | `module:${string}`;
 const STATUS_CLASS = { 'not started': '', learning: 'learning', mastered: 'mastered', 'review due': 'due' } as const;
 const fmtDate = (ts?: number) => (ts ? new Date(ts).toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) : '–');
 
@@ -27,6 +27,8 @@ export function Adult({ settings, events, progress, onExit, onRescout, onGrammar
   const [code, setCode] = useState('');
   const [tab, setTab] = useState<Tab>('overview');
   const [report, setReport] = useState(false);
+  const own = useAllModuleSettings() ?? {};
+  const reports = MODULES.filter((m) => m.Report && (!m.enabled || m.enabled(own[m.id] ?? {}))); // LTF-44: a tab for each module that is on
   if (!unlocked) return <main className="center" style={{ minHeight: '80vh' }}>
     <form className="card stack" style={{ maxWidth: 380 }} onSubmit={(e) => { e.preventDefault(); if (code === settings.pin) setUnlocked(true); }}>
       <h2>Grown-ups only</h2>
@@ -41,11 +43,12 @@ export function Adult({ settings, events, progress, onExit, onRescout, onGrammar
     <header className="topbar no-print"><h1 style={{ margin: 0 }}>Grown-ups</h1><span className="spacer" /><Btn onPress={onExit}>Back to the island</Btn></header>
     <main className="stack">
       <nav className="tabs" aria-label="Sections">
-        {([['overview', 'Overview'], ['skills', 'Skills'], ['activity', 'Activity'], ['today', 'Today recounts'], ['content', 'Content library'], ['settings', 'Settings'], ['data', 'Data and report']] as [Tab, string][]).map(([t, l]) =>
+        {([['overview', 'Overview'], ['skills', 'Skills'], ...reports.map((m) => [`module:${m.id}`, m.title]), ['activity', 'Activity'], ['today', 'Today recounts'], ['content', 'Content library'], ['settings', 'Settings'], ['data', 'Data and report']] as [Tab, string][]).map(([t, l]) =>
           <Btn key={t} className="small" aria-current={tab === t ? 'page' : undefined} onPress={() => setTab(t)}>{l}</Btn>)}
       </nav>
       {tab === 'overview' && <Overview settings={settings} events={events} progress={progress} />}
       {tab === 'skills' && <Skills progress={progress} events={events} />}
+      {reports.map((m) => { const Report = m.Report!; return tab === `module:${m.id}` && <Report key={m.id} events={events} />; })}
       {tab === 'activity' && <Activity events={events} settings={settings} progress={progress} />}
       {tab === 'today' && <TodayAdmin settings={settings} events={events} />}
       {tab === 'content' && <><Library settings={settings} />{MODULES.filter((m) => m.Preview).map((m) => { const Preview = m.Preview!; return <Preview key={m.id} />; })}</>}
@@ -79,6 +82,7 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
         <span>Time reading</span><b>{minutes} min</b>
         <span>Today recounts</span><b>{recounts}</b>
         <span>Journey</span><b>{(() => { const j = journeyNow(finishedCount(progress), settings); return j.fork ? `${j.here.name}, choosing ${j.fork.kind === 'path' ? 'a flight path' : j.fork.kind === 'home' ? 'an island on the way home' : 'a sea route'}` : j.trip?.done ? 'Home again, after the whole journey' : j.next ? `${j.here.name}, ${j.legLength - j.step} more to ${j.next.name}` : j.arc?.done ? 'A junior koala keeper at Bluegum' : `In Australia, ${Math.min(j.after + 1, JOURNEY.koalas.length)} koalas met`; })()}</b>
+        {Object.keys(settings.routes ?? {}).length > 0 && <><span>Routes he chose</span><b>{Object.entries(settings.routes!).map(([from, r]) => routeLabel(from, r.to)).join(', ')}</b></>}
       </div>
       <p className="tagline">Studies of reading programs like this one measured gains after about 25 sessions, so give it that long before judging. Mastery needs two good days on a skill, so steady short sessions work best.</p>
     </section>
@@ -123,6 +127,7 @@ function Overview({ settings, events, progress }: { settings: Settings; events: 
     <FreshWarning settings={settings} progress={progress} />
     <SchoolGoals progress={progress} />
     <Messages progress={progress} />
+    <FitsCard progress={progress} />
     <Checkups events={events} progress={progress} settings={settings} />
     <Votes events={events} />
     <section className="card stack"><h2>Due for review</h2>
@@ -172,6 +177,18 @@ function Checkups({ events, progress, settings }: { events: LogEvent[]; progress
       : <div className="kv">{results.map((r) => <span key={r.ts} style={{ display: 'contents' }}><span>{fmtDate(r.ts)}</span><b>{r.correct} of {r.total} right first time</b></span>)}</div>}
     {here && <p className="tagline" style={{ margin: 0 }}>{left >= 6 ? `${left} unseen check-up texts left at ${here.name}.` : `Only ${left} unseen check-up texts left at ${here.name}. A check-up would repeat some texts.`}</p>}
     <p className="tagline">Check-ups measure reading on texts he has never seen, themed to where he is on the journey. They never change his skills or levels. Growth in telling stories did not carry over to reading in one study, so reading is measured on its own here.</p>
+  </section>;
+}
+
+/** LTF-59: "Does it fit?" as two lines, each step scored on its own: saying whether the guide's guess fits, then showing why. */
+function FitsCard({ progress }: { progress: Progress }) {
+  return <section className="card stack">
+    <h2>"Does it fit?": judging a guess, then showing why</h2>
+    <div className="kv">
+      <span>Said whether the guess fits</span><b>{goalText(tagAccuracy(progress, pool, 'fit', { firstTimeOnly: true }))}</b>
+      <span>Tapped the sentence that shows it</span><b>{goalText(tagAccuracy(progress, pool, 'fit-show', { firstTimeOnly: true }))}</b>
+    </div>
+    <p className="tagline">His guide offers a guess about a story, always in the same words, and about one guess in three does not fit. He says whether it fits, then taps a sentence that shows it. Judging and showing are kept apart because one can grow without the other. Six pilot pairs in Feelings and thoughts, waiting for your review.</p>
   </section>;
 }
 
@@ -328,6 +345,18 @@ function PictureLog({ events }: { events: LogEvent[] }) {
   </section>;
 }
 
+/** LTF-61 pilot: telling a story back from memory, with and without the scene shown. */
+function Retells({ events }: { events: LogEvent[] }) {
+  const r = retellEffect(events);
+  if (!r.scene.total && !r.noScene.total) return null;
+  const line = (b: { correct: number; total: number }) => (b.total ? `${b.correct} of ${b.total} told back right` : 'none yet');
+  return <section className="card stack">
+    <h2>Telling a story back (a pilot)</h2>
+    <div className="kv"><span>With the story's picture</span><b>{line(r.scene)}</b><span>Without it</span><b>{line(r.noScene)}</b></div>
+    <p className="tagline">After a story session he tells one story back from memory, with the picture on every other session. A small, early study suggested a scene picture may help retelling; his own record will show whether it does for him.</p>
+  </section>;
+}
+
 /** LTF-56: pictures and read-aloud, with and without, compared like for like. */
 function Supports({ progress }: { progress: Progress }) {
   const line = (r: { correct: number; total: number }) => (r.total ? `${r.correct} of ${r.total} right first time (${Math.round((100 * r.correct) / r.total)}%)` : 'none yet');
@@ -338,7 +367,7 @@ function Supports({ progress }: { progress: Progress }) {
       : <div className="kv">{rows.filter((x) => x.r.groups).map((x) => <span key={x.k} style={{ display: 'contents' }}>
           <span>{x.name} on</span><b>{line(x.r.with)}</b><span>{x.name} off</span><b>{line(x.r.without)}</b></span>)}</div>}
     <p className="tagline">On his own first-time answers, counted only where he did the same skill at the same level both ways, so a harder text never decides it. He can switch both himself in "How do you like it?", so a change shows up here.</p>
-    <p className="tagline">A trial (decided 2026-10-26, easy to undo): every fifth leg is a test flight with one of the supports he has on switched off, taking turns, so both columns fill. The plan screen tells him first, points stay the same, and he can keep the support on.</p>
+    {RULES.testFlightEvery > 0 && <p className="tagline">A trial (decided 2026-10-26, easy to undo): every fifth leg is a test flight with one of the supports he has on switched off, taking turns, so both columns fill. The plan screen tells him first, points stay the same, and he can keep the support on.</p>}
   </section>;
 }
 
@@ -349,12 +378,12 @@ function Weekly({ events }: { events: LogEvent[] }) {
   return <section className="card stack">
     <h2>Reading and engagement, week by week</h2>
     {!rows.length ? <p className="muted" style={{ margin: 0 }}>Shows after his first session.</p> : <div className="table-wrap"><table className="skills-table">
-      <thead><tr><th>Week of</th><th>Reading: right first time</th><th>Sessions finished</th><th>Days he came</th><th>Kept going after a miss</th></tr></thead>
+      <thead><tr><th>Week of</th><th>Reading: right first time</th><th>Sessions finished</th><th>Days he came</th><th>Kept going after a miss</th><th>Wants to come back</th></tr></thead>
       <tbody>{rows.map((r) => <tr key={r.week}>
-        <td>{fmtDate(new Date(`${r.week}T12:00:00`).getTime())}</td><td>{share(r.reading)}</td><td>{r.finished} of {r.started}</td><td>{r.days}</td><td>{r.keptGoing.of ? `${r.keptGoing.count} of ${r.keptGoing.of}` : '–'}</td>
+        <td>{fmtDate(new Date(`${r.week}T12:00:00`).getTime())}</td><td>{share(r.reading)}</td><td>{r.finished} of {r.started}</td><td>{r.days}</td><td>{r.keptGoing.of ? `${r.keptGoing.count} of ${r.keptGoing.of}` : '–'}</td><td>{r.again.of ? `${r.again.yes} of ${r.again.of} yes` : '–'}</td>
       </tr>)}</tbody>
     </table></div>}
-    <p className="tagline">Reading and engagement are kept apart on purpose: a feature that makes the app more fun can raise engagement without raising reading, and this shows which one moved. Reading counts his own turn only, with guesses set aside.</p>
+    <p className="tagline">Reading and engagement are kept apart on purpose: a feature that makes the app more fun can raise engagement without raising reading, and this shows which one moved. Reading counts his own turn only, with guesses set aside. "Wants to come back" is his own answer to "Fly again tomorrow?" after a finished session.</p>
   </section>;
 }
 
@@ -397,6 +426,7 @@ function Activity({ events, settings, progress }: { events: LogEvent[]; settings
     <PictureLog events={events} />
     <Formats progress={progress} />
     <Supports progress={progress} />
+    <Retells events={events} />
     <ReasonRecord progress={progress} />
     <WordHelp events={events} />
     <Metaphors progress={progress} />
@@ -564,6 +594,8 @@ function TodayAdmin({ settings, events }: { settings: Settings; events: LogEvent
         <input id="people" className="input" value={people} onChange={(e) => setPeople(e.target.value)} onBlur={() => saveSettings({ people: people.split(',').map((x) => x.trim()).filter(Boolean) })} /></div>
       <Seg label="Recount support" value={settings.todayStage} onChange={(todayStage) => saveSettings({ todayStage })}
         options={[[0, 'Automatic'], [1, 'One part, tiles'], [2, 'Tiles and typing'], [3, 'Three parts, ideas on a button'], [4, 'Whole day']]} />
+      <Toggle on={!!settings.photoCue} onChange={(photoCue) => saveSettings({ photoCue })}>Photo cue: a grown-up can take a photo of a thing or place from his day, as a cue for telling about it</Toggle>
+      <p className="tagline" style={{ margin: 0 }}>Things and places, not people. Photos stay on this device: never sent to the family copy, never exported, and deleted after 7 days. Only the fact that a photo was there is saved with his Today.</p>
     </section>
   </div>;
 }
@@ -591,6 +623,8 @@ function Library({ settings }: { settings: Settings }) {
       return <details key={pid} className="lib-item">
         <summary>{p.picture} {p.title} <span className="muted">· level {p.level}{p.themes?.length ? ` · theme: ${p.themes.join(', ')}` : ''}</span></summary>
         {p.sentences.length > 0 && <p>{p.sentences.join(' ')}</p>}
+        {p.words?.length ? <div className="stack" style={{ gap: '0.2rem' }}><b>Word help in this text (LTF-04), for your review:</b>
+          <ul style={{ margin: 0 }}>{p.words.map((w) => <li key={w.word}><span aria-hidden>{w.pic}</span> <b>{w.word}</b>: {w.means}</li>)}</ul></div> : null}
         <p className="tagline">{creditLine(p)}</p>
         {list.map((i) => <div key={i.id} className={`lib-item ${hidden.has(i.id) ? 'hidden-item' : ''}`}>
           <div><b>{i.prompt}</b></div>
@@ -642,6 +676,8 @@ function SettingsTab({ settings, progress, onRescout, onGrammar }: { settings: S
       <p className="tagline">After this time, the next answer he gets right on the first tap ends the session, so it ends on a success before he tires. The Activity tab shows when guessing tends to start.</p>
       <Toggle on={settings.fastTrack} onChange={(fastTrack) => saveSettings({ fastTrack })}>Fast track: one flawless session can master a skill</Toggle>
       <p className="tagline">For a learner who locks a skill in once he sees how. It needs every answer right first time, a new format, and a level 3 or harder text. Reviews at 3, 7 and 21 days still check that it lasts. Harder levels (4 and 5) open by themselves after three right answers in a row.</p>
+      <Toggle on={!!settings.retell} onChange={(retell) => saveSettings({ retell })}>Tell it back (a pilot): after a story session, he tells one story back from memory with story-map tiles</Toggle>
+      <p className="tagline">No text, no hints and no right or wrong shown, and he can skip it. Every other session shows the story's picture while he tells it, so the Activity tab can compare telling it back with and without the scene. It never changes his skills or levels.</p>
       <div className="field"><label htmlFor="reset">Calm-down words his school uses</label>
         <input id="reset" className="input" placeholder="For example: reset, breathe, try a new plan" defaultValue={settings.resetWords} onBlur={(e) => saveSettings({ resetWords: e.target.value })} /></div>
       <p className="tagline">Shown with the journey's setbacks, so home and school use the same words.</p>
@@ -662,7 +698,7 @@ function SettingsTab({ settings, progress, onRescout, onGrammar }: { settings: S
       })}</div></div>
       {canSpeak && <div className="field"><label htmlFor="voice">Reading voice</label>
         <div className="row"><select id="voice" className="input" value={settings.voice} onChange={(e) => saveSettings({ voice: e.target.value })}>
-          <option value="">The most natural voice here{(() => { const v = pickVoice(vs, '', true); return v ? ` (${v.name})` : ''; })()}</option>{vs.map((v) => <option key={v.name} value={v.name}>{v.name}</option>)}
+          <option value="">The most natural voice here{(() => { const v = pickVoice(vs, '', navigator.onLine); return v ? ` (${v.name})` : ''; })()}</option>{vs.map((v) => <option key={v.name} value={v.name}>{v.name}</option>)}
         </select><Btn className="small" onPress={() => speak(['This is how I sound when I read to you.'], 'voice-test')}>Try it</Btn></div>
         <p className="tagline">Voices come from this device. Natural-sounding ones are named “Natural” (Edge, with internet) or “Enhanced” (iPad); the app picks one by itself unless you choose. Offline, it uses a voice on the device.</p></div>}
       <p className="tagline">This copy of the app was built {new Date(__APP_BUILT__).toLocaleString()}. A new version switches in by itself, on the home screen or while the app is in the background, never during a session.</p>

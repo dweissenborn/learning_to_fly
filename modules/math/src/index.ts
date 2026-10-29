@@ -6,6 +6,7 @@ import { useModuleSettings } from '@wayfinder/web/host';
 import type { MathSettings } from './settings';
 import { MathPath } from './web/HomePath';
 import { MathPreview } from './web/MathView';
+import { MathReport } from './web/MathReport';
 import { MathSession } from './web/MathSession';
 import { MathSettingsPanel } from './web/SettingsPanel';
 import './math.css';
@@ -18,6 +19,6 @@ function MathScreen(p: ScreenProps) {
 const math: ModuleManifest = {
   id: 'math', kind: 'function', title: 'Math', icon: '🧮', memory: 'cloud', sessions: true,
   enabled: (own) => !!(own as MathSettings).enabled,
-  Screen: MathScreen, HomePath: MathPath, SettingsPanel: MathSettingsPanel, Preview: MathPreview,
+  Screen: MathScreen, HomePath: MathPath, SettingsPanel: MathSettingsPanel, Preview: MathPreview, Report: MathReport,
 };
 export default math;

@@ -13,6 +13,7 @@ import sys
 
 import check
 import coherence
+import levelcheck
 import skillcheck
 from textkit import load_bank
 
@@ -28,7 +29,8 @@ def coherence_flags(banks):
 
 def all_flags(banks):
     # A weak link is only a note; a break (shares nothing with anything earlier) is a flag.
-    return [f for f in coherence_flags(banks) if f["tier"] == "break"] + skillcheck.all_flags(banks)
+    return ([f for f in coherence_flags(banks) if f["tier"] == "break"] + skillcheck.all_flags(banks)
+            + [f for b in banks for p in b["passages"] for f in levelcheck.flags(p)])
 
 
 def new_flags(flags, baseline=BASELINE):
@@ -36,8 +38,11 @@ def new_flags(flags, baseline=BASELINE):
     return [f for f in flags if f["key"] not in set(known.get(f["check"], []))]
 
 
+NEVER_BLOCKS = {"second-level"}  # LTF-62: a second opinion, never the gate
+
+
 def exit_code(new, agreement):
-    return 1 if any(agreement.get(f["check"], {}).get("passed") for f in new) else 0
+    return 1 if any(f["check"] not in NEVER_BLOCKS and agreement.get(f["check"], {}).get("passed") for f in new) else 0
 
 
 def main(args):
@@ -54,10 +59,10 @@ def main(args):
     agreement = json.loads(AGREEMENT.read_text()) if AGREEMENT.exists() else {}
     new = new_flags(flags)
     print("\nContent checks (LTF-16):")
-    for name in ("coherence", "inference", "tags", "near-duplicate"):
+    for name in ("coherence", "inference", "tags", "near-duplicate", "second-level"):
         mine = [f for f in flags if f["check"] == name]
         fresh = [f for f in new if f["check"] == name]
-        mode = "blocks new problems" if agreement.get(name, {}).get("passed") else "warns only, until it agrees with the gold set"
+        mode = "warns only, never the gate (LTF-62)" if name in NEVER_BLOCKS else "blocks new problems" if agreement.get(name, {}).get("passed") else "warns only, until it agrees with the gold set"
         print(f"  {name}: {len(mine)} flag(s), {len(fresh)} new; {mode}")
         for f in fresh:
             print(f'    NEW {f["id"]}: {f["message"]}')

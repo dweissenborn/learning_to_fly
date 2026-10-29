@@ -253,11 +253,11 @@ const weekOf = (ts: number) => {
  * followed by another answer in the same session.
  */
 export function weekly(events: readonly LogEvent[]) {
-  type Row = { week: string; reading: { correct: number; total: number }; started: number; finished: number; days: number; keptGoing: { count: number; of: number } };
+  type Row = { week: string; reading: { correct: number; total: number }; started: number; finished: number; days: number; keptGoing: { count: number; of: number }; again: { yes: number; of: number } };
   const rows = new Map<string, Row & { dayset: Set<string> }>();
   const row = (ts: number) => {
     const w = weekOf(ts);
-    if (!rows.has(w)) rows.set(w, { week: w, reading: { correct: 0, total: 0 }, started: 0, finished: 0, days: 0, keptGoing: { count: 0, of: 0 }, dayset: new Set() });
+    if (!rows.has(w)) rows.set(w, { week: w, reading: { correct: 0, total: 0 }, started: 0, finished: 0, days: 0, keptGoing: { count: 0, of: 0 }, again: { yes: 0, of: 0 }, dayset: new Set() });
     return rows.get(w)!;
   };
   const sorted = [...events].sort((a, b) => a.ts - b.ts);
@@ -265,6 +265,7 @@ export function weekly(events: readonly LogEvent[]) {
   for (const e of sorted) {
     if (e.type === 'session' && e.action === 'start') { const r = row(e.ts); r.started += 1; r.dayset.add(new Date(e.ts).toDateString()); }
     else if (e.type === 'session' && e.action === 'finish') row(e.ts).finished += 1;
+    else if (e.type === 'activity' && e.kind === 'again') { const g = row(e.ts).again; g.of += 1; if (e.like === 'like') g.yes += 1; } // "Again tomorrow?"
     else if (e.type === 'answer' && !e.rapid && e.phase !== 'placement' && e.phase !== 'checkup') {
       bySession.set(e.session, [...(bySession.get(e.session) ?? []), e]);
       if (e.phase === 'yourturn' && !e.skill.includes(':')) { const r = row(e.ts).reading; r.total += 1; if (e.correct) r.correct += 1; }
@@ -362,7 +363,7 @@ export function insights(events: readonly LogEvent[], skillName: (id: string) =>
   const stop = usualStop(events);
   if (stop) {
     const n = unfinished.filter((s) => s.lastStep === stop).length;
-    out.push({ tone: 'act', title: `Sessions often end at ${STEP_LABEL[stop]}`, detail: `${n} of his last ${recent.length} sessions ended there. When he gets past it, the app now gives him a bonus and says so.`, tryThis: TRY_AT[stop] });
+    out.push({ tone: 'act', title: `Sessions often end at ${STEP_LABEL[stop]}`, detail: `${n} of his last ${recent.length} sessions ended there. An "I need a break" button is always there, and sessions can end on a success before he tires.`, tryThis: TRY_AT[stop] });
   }
   const finished = recent.filter((s) => s.outcome === 'finished').length;
   const done = `${finished} of his last ${recent.length} sessions ${finished === 1 ? 'was' : 'were'} finished.`;
@@ -390,7 +391,7 @@ export function insights(events: readonly LogEvent[], skillName: (id: string) =>
       const r = median(list.map((a) => a.ms)) / usual;
       const first = list.filter((a) => a.correct && a.tries <= 1).length / list.length;
       if (r >= 1.8) out.push({ tone: 'act', title: `${skillName(skill)} takes him longer`, detail: `His answers here take about ${r.toFixed(1)} times his usual time.`, tryThis: 'This section may need a boost: read-aloud, texts on his interests, or sitting with him for one session. Check which texts took longest in the Skills tab.' });
-      else if (r <= 0.6 && first >= 0.9) out.push({ tone: 'good', title: `${skillName(skill)} comes easily`, detail: `He answers in about ${r.toFixed(1)} times his usual time and gets ${Math.round(first * 100)}% right first time.`, tryThis: 'Harder texts open by themselves after two right in a row, so this will stretch him soon.' });
+      else if (r <= 0.6 && first >= 0.9) out.push({ tone: 'good', title: `${skillName(skill)} comes easily`, detail: `He answers in about ${r.toFixed(1)} times his usual time and gets ${Math.round(first * 100)}% right first time.`, tryThis: 'Harder texts open by themselves after three right in a row, so this will stretch him soon.' });
     }
   }
 
@@ -403,4 +404,15 @@ export function insights(events: readonly LogEvent[], skillName: (id: string) =>
 
   const order = { act: 0, watch: 1, good: 2 };
   return out.sort((a, b) => order[a.tone] - order[b.tone]);
+}
+
+/** LTF-61 pilot: telling the story back from memory, right with the story's scene shown and without it, kept apart. */
+export function retellEffect(events: readonly LogEvent[]) {
+  const out = { scene: { correct: 0, total: 0 }, noScene: { correct: 0, total: 0 } };
+  for (const e of events) if (e.type === 'activity' && e.kind === 'retell') {
+    const b = e.scene ? out.scene : out.noScene;
+    b.total += 1;
+    if (e.correct) b.correct += 1;
+  }
+  return out;
 }

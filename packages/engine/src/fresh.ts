@@ -32,8 +32,8 @@ export function freshness(p: Progress, pool: Pool, o: { now: number; hidden?: Re
     const level = levelFor(st, pool);
     const model = pool.models.get(skill)?.item;
     const all = pool.bySkill.get(skill) ?? [];
-    // The same questions item choice can serve: no worked example, no inference check, nothing hidden, themes only if allowed.
-    const servable = all.filter((i) => i.id !== model && !i.gatecheck && !o.hidden?.has(i.id) && (o.allowThemes || !pool.passages.get(i.passage)?.themes?.length));
+    // The same questions item choice can serve: no worked example, no inference check, no check-up text, nothing hidden, themes only if allowed.
+    const servable = all.filter((i) => i.id !== model && !i.gatecheck && !i.checkup && !o.hidden?.has(i.id) && (o.allowThemes || !pool.passages.get(i.passage)?.themes?.length));
     const now = servable.filter((i) => i.level <= level);
     const soon = servable.filter((i) => i.level <= Math.min(5, level + 1) && !p.seen.has(i.id)).length;
     const met = new Set(all.filter((i) => p.seen.has(i.id)).map((i) => i.passage));
