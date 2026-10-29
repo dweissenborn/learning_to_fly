@@ -383,7 +383,8 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Grossma
   - **A model later.** One plugs in as another scorer in `levelcheck.flags`.
   - **Still open.** A gold set rated for reading level (the LTF-16 gold set is rated for coherence and inference), and the choice of model.
   - **Tests.** `pipeline/test_checks.py` (the level mapping; a plain level-1 text passes and a hard one is flagged; levels 4 and 5 are not checked; never the gate).
-- **Size.** M; the model and the gold set remain.
+- **Decided by DW 2026-10-28: keep the formula.** LTF-62 is done for now. Revisit only if new content starts drifting from its level.
+- **Size.** M; done for now (a gold set rated for reading level remains, if a model is ever tried).
 
 ## Requests from the learner (LTF-51 to LTF-53, LTF-64)
 
@@ -501,6 +502,8 @@ Still true: eight islands, the landings, the lock text and the island switcher.
 ## LTF-37 A natural reading voice
 
 Added 2026-10-13 from DW's feedback: "the voice is very robotic, monotonic. Not a very good representation of good enunciation, and speech." DW chose a natural Azure voice, then asked to try Edge's natural voice first.
+
+**DW 2026-10-28: keep Edge's natural voice.** Step 2 (Azure neural audio) is closed, and no Speech resource is created.
 
 - **Built 2026-10-13 (step 1).** Read-aloud used the device's default voice, which on Windows is an old desktop voice. Now, unless a grown-up picks one, it chooses the most natural voice the device has: Edge's online "Natural" voices (Ava, Andrew, Emma or Brian first), then Apple's Enhanced or Premium voices, then Google's. Offline, it uses a voice on the device. Settings shows which voice that is. Unit tests in `apps/web/src/media.test.ts` (mutation-checked).
 - **Fixed 2026-10-28.** Settings named the most natural voice as if the device were online. Offline, it now names the device voice actually used.
@@ -898,6 +901,8 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Com
 ## LTF-19 Guest codes for friends and classmates
 
 Added 2026-10-13. Requested by DW: "a way for me as an operator/parent to send login codes to friends/classmates can try without a microsoft invite." Approach to confirm. DW 2026-10-13: not now.
+
+**DW 2026-10-28: still not now.** Parked: it needs sign-in and privacy decisions for other children.
 
 - **Research.** None needed: this is an access feature, not a teaching one. It follows the plan's privacy rules (Safety, privacy and accessibility), so nothing about a guest child leaves their device.
 - **Why not the live site.** Static Web Apps grants a role only after a sign-in with an identity provider. Invitations are capped at 25 on both plans. Assigning roles with a function needs the Standard plan and still needs a sign-in. A code on its own cannot open the family site.
