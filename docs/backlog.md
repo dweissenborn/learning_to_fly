@@ -190,6 +190,7 @@ Not code, for DW in the design plan:
 - Kat Şen & Aydın 2026 (meta-analysis of 20 studies, g = 0.49, 0.37 after correcting for publication bias; only 5 checked carry-over) joins Fletcher-Watson et al. 2014 as a source for R15. The rule does not change. It backs what is built: reviews at 3, 7 and 21 days, and the inference check before the philosophical strand.
 - R11 gains two sources: Cong et al. 2026 (preprint, see LTF-17) and Meng & Yang 2026 (EMNLP). Meng & Yang found that fine-tuned models hit a reading level better than prompted ones. The pipeline only checks hand-written content and generates none, so this matters only if generation is ever added: then try a fine-tune before a bigger model (R19 already says so).
 - Rule numbers clash. The scan proposes "R17", but the plan already uses R17 to R30. The 19 October scan's proposed R17 to R23 clash in the same way. New rules would start at R31.
+- **Done in the plan 2026-11-03, with DW's go-ahead.** R11 gained Cong et al. and Meng & Yang. Kat Şen & Aydın could not be found at the source, so DW chose to leave it out; R15 is unchanged.
 
 Watch only, no entry:
 - Clark et al. 2026 reviewed reading comprehension for minimally speaking and non-speaking children (6 studies). It concerns a public version. The plan's rule that every task can be done by tapping already holds, placement included. The listening probe is skipped when the device has no voice.
@@ -238,7 +239,7 @@ Proposed 2026-10-26. Approach to confirm. Evidence as cited by the scan:
 
 Added 2026-10-19. A weekly research scan (in the claude.ai project, `claude/backlog-gaps-2026-10-19.md`, items GAP-00a to GAP-22) compared new studies with the design plan; it could not see the code. Each item below was checked against the code the same day: what exists, what is missing, and what it needs. Studies are named as the scan cites them and were not re-checked here; the scan marks several as preliminary or a preprint. DW 2026-10-19: add them all, build GAP-12 and GAP-11 first. Sizes are rough: S is under a day, M a few days, L a week or more.
 
-Not code, for DW in the design plan: the plan's roadmap still shows phase 3 as not started, though phases 1 to 3 and much more are built (GAP-00a); proposed rules R17 to R23 wait for a decision (GAP-00b).
+Not code, for DW in the design plan: the plan's roadmap still shows phase 3 as not started, though phases 1 to 3 and much more are built (GAP-00a); proposed rules R17 to R23 wait for a decision (GAP-00b). **Done 2026-11-03, with DW's go-ahead.** The roadmap shows what is built. The 12 October rules were already in the plan as R17 to R30, so the 19 October scan adds R31 (each support is its own dial, from Jhilal et al. 2026) and extends R16 for Today (Bhana Lopez et al. 2023). Stephens et al. 2026 could not be found at the source and was left out.
 
 ## LTF-54 A lantern for every Today (GAP-12)
 
@@ -294,7 +295,7 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Bhana e
   - **"What do you think?"** It has its own card, once he has told about a day with a photo.
   - **To revert.** Turn the switch off; nothing else changes. To remove it, drop the `photos` table use in `Today.tsx` and the switch.
   - **Tests.** E2e (off by default; on, a photo is shown as a cue and logged only as a fact; never in the outbox; one older than 7 days is gone after a reload).
-- **Still open for DW.** The plan's privacy table needs a "photo cue" row (the plan is local, so it was not edited here).
+- **Done 2026-11-03.** The plan's privacy table has a "photo cue" row: objects and places only, on the device only, deleted after 7 days. The plan stays local.
 - **Size.** M.
 
 ## LTF-58 Today: always "after" and a feeling, and counting them (GAP-08, GAP-13)
