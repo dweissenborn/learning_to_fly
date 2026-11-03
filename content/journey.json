@@ -121,7 +121,7 @@
               {
                 "label": "Land at the pier and take the top path",
                 "reply": "Good plan. The top path stays far back from the cliff edge. It goes to Dr. Bell's tent.",
-                "after": "You landed at the pier and walked the top path, far back from the edge. From the path, you could see the whole dig below."
+                "after": "You landed at the pier and walked the top path. It stays far back from the edge. From the path, you could see the whole dig below."
               },
               {
                 "label": "Wait on the boat until the cliff is checked",
@@ -244,7 +244,7 @@
         },
         {
           "obstacle": "weather",
-          "text": "Your boat landed at the pier below Star Point. Then thick clouds came in from the sea. A telescope cannot see stars through clouds, so the roof of the dome stays closed tonight.",
+          "text": "Your boat landed at the pier below Star Point. Then thick clouds came in from the sea. A telescope cannot see stars through clouds. So the roof of the dome stays closed tonight.",
           "notice": {
             "type": "notice",
             "title": "Star Point Sky Board",
@@ -255,7 +255,7 @@
               "Weather balloon goes up at 6 AM."
             ]
           },
-          "cope": "Clouds move away. The sky will be clear again, and the roof of the dome will open.",
+          "cope": "Clouds move away. The sky will be clear again. Then the roof of the dome will open.",
           "choice": {
             "ask": "What will you do on the cloudy night?",
             "options": [
@@ -313,7 +313,7 @@
         },
         {
           "obstacle": "broken",
-          "text": "You are on the platform at Pier Station, but the train has not come in. It is waiting at Shell Halt, because a signal there is broken. A signal tells the driver to stop or go, so trains wait until it is fixed.",
+          "text": "You are on the platform at Pier Station. The train has not come in. It is waiting at Shell Halt, because a signal there is broken. A signal tells the driver to stop or go, so trains wait until it is fixed.",
           "notice": {
             "type": "message",
             "app": "text",
@@ -373,7 +373,7 @@
       "souvenir": "plane",
       "beats": [
         { "text": "Captain Ada showed you a map. Cloud Hill has a long, flat runway." },
-        { "text": "Bus 9 goes from Windy Cape to Cloud Hill. It leaves at 10 AM.", "byFrom": {"fossil": "A letter came from Dr. Bell. Captain Ada's boat leaves for Cloud Hill at 10 AM. Mari found an empty nautilus shell on the beach. A nautilus is a sea animal that lives in a coiled shell. It looks like the ammonite.", "reef": "A letter came from Mari. Captain Ada's boat leaves for Cloud Hill at 10 AM. The rock at Fossil Bay is limestone. It was made long ago from shells and coral. The sand on Turtle Beach is made of tiny bits of shell and coral too.", "star": "A letter came from Dr. Amal. Captain Ada's boat leaves for Cloud Hill at 10 AM. The weather balloon sends its numbers by radio. Mari on Reef Island uses them to plan her boat trips.", "rail": "A letter came from Mr. Haddad. Captain Ada's boat leaves for Cloud Hill at 10 AM. The station clock gets its time by radio. The time signal comes from the observatory at Star Point."} },
+        { "text": "Bus 9 goes from Windy Cape to Cloud Hill. It leaves at 10 AM.", "byFrom": {"fossil": "A letter came from Dr. Bell. Captain Ada's boat leaves for Cloud Hill at 10 AM. Mari found an empty nautilus shell on the beach. A nautilus is a sea animal that lives in a coiled shell. It looks like the ammonite.", "reef": "A letter came from Mari. Captain Ada's boat leaves for Cloud Hill at 10 AM. The rock at Fossil Bay is limestone. It was made long ago from shells and coral. Turtle Beach's sand is made of tiny bits of shell and coral too.", "star": "A letter came from Dr. Amal. Captain Ada's boat leaves for Cloud Hill at 10 AM. The weather balloon sends its numbers by radio. Mari on Reef Island uses them to plan her boat trips.", "rail": "A letter came from Mr. Haddad. Captain Ada's boat leaves for Cloud Hill at 10 AM. The station clock gets its time by radio. The time signal comes from the observatory at Star Point."} },
         { "text": "There is an old hangar on Cloud Hill. A hangar is a big shed for planes." },
         { "text": "Captain Ada says there is something red inside the hangar." },
         { "text": "One more session, and you reach Cloud Hill." }
@@ -568,7 +568,7 @@
                 {
                   "label": "Cut fresh leaves for the koalas",
                   "reply": "Good plan. Keepers cut fresh branches every day.",
-                  "after": "Ranger Tess watered the young trees, and you cut fresh branches with her every day. On Thursday the part came, and the pump ran again."
+                  "after": "Ranger Tess watered the young trees. You cut fresh branches with her every day. On Thursday the part came, and the pump ran again."
                 }
               ]
             },
@@ -630,7 +630,7 @@
                 {
                   "label": "Fill in the chart in the shade",
                   "reply": "Good plan. The chart has a row for each koala.",
-                  "after": "Ranger Tess put out the water bowls, and you wrote each koala's name on the chart in the shade. The next morning was cool. At 7 AM, you weighed every koala."
+                  "after": "Ranger Tess put out the water bowls. You wrote each koala's name on the chart in the shade. The next morning was cool. At 7 AM, you weighed every koala."
                 }
               ]
             },
@@ -1129,7 +1129,7 @@
               "options": [
                 {
                   "label": "Watch the sailboat from the platform",
-                  "reply": "Good plan. The sailboat's mast is too tall to fit under the bridge when it is down.",
+                  "reply": "Good plan. The sailboat's mast is very tall. It cannot fit under the bridge when the bridge is down.",
                   "after": "You watched the sailboat pass. Then the bridge came down, and the train rolled on."
                 },
                 {
