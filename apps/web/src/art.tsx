@@ -394,7 +394,7 @@ export const ISLANDS: Record<string, IslandDef> = {
       '...bbLbb...',
       '...........'],
     steps: [
-      { text: 'Count the gull nests with Ranger Jo.', place: { name: 'The gull nests', look: 'nest' } },
+      { text: 'Count the gull nests with Ranger Jo, who looks after the birds.', place: { name: 'The gull nests', look: 'nest' } },
       { text: 'Watch the seals from far away, so they can rest.', place: { name: 'Seal Rocks', look: 'seal' } },
       { text: 'Find a crab in the rock pools.', place: { name: 'The rock pools', look: 'pool' } },
       { text: 'Build a sailboat for the ferry dock.', build: 'boat' },
@@ -460,9 +460,9 @@ export const ISLANDS: Record<string, IslandDef> = {
       '....bbb....'],
     steps: [
       { text: 'Find a sea star in the tide pools with Mari.', place: { name: 'The tide pools', look: 'pool' } },
-      { text: 'Look for a clownfish through the glass floor.', place: { name: 'The glass-bottom boat', look: 'boat' } },
+      { text: 'Look for a clownfish through the glass floor.', place: { name: 'The glass-floor boat', look: 'boat' } },
       { text: 'Help Mari mark where the turtles laid their eggs.', place: { name: 'Turtle Beach', look: 'turtle' } },
-      { text: 'Help Mari pick up rubbish on the beach.' },
+      { text: 'Help Mari pick up trash on the beach.' },
       { text: 'Help Mari count the parrotfish on the reef.' },
     ],
     later: { name: 'The lagoon hut', look: 'cabin', gate: { strand: 'functional', step: 3 } },
@@ -484,7 +484,7 @@ export const ISLANDS: Record<string, IslandDef> = {
     steps: [
       { text: 'Watch the weather balloon go up at 6 AM.', place: { name: 'The balloon field', look: 'weather' } },
       { text: 'Look at the Moon through the telescope.', place: { name: 'The telescope', look: 'telescope' } },
-      { text: 'Help Dr. Amal open the dome on a clear night.', sessions: 2, then: 'The first night was cloudy. Next session, try again.', place: { name: 'The dome', look: 'dome' } },
+      { text: 'Help Dr. Amal open the roof of the dome on a clear night.', sessions: 2, then: 'The first night was cloudy. Next session, try again.', place: { name: 'The dome', look: 'dome' } },
     ],
     later: { name: 'The rocket garden', look: 'rocket', gate: { strand: 'narrative', step: 4 } },
     keepsake: { icon: '⭐', name: 'a star chart' }, pieces: ['dome', 'telescope', 'rocket'] },

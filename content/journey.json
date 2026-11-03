@@ -111,22 +111,22 @@
             "rows": [
               "CLIFF BEACH CLOSED",
               "The cliff is wet after the rain.",
-              "Use the pier. The beach opens when the cliff is dry."
+              "Use the pier. The beach opens when the cliff has been checked."
             ]
           },
-          "cope": "When a beach is closed, we can use the pier instead. The cliff will dry by the afternoon.",
+          "cope": "When a beach is closed, we can use the pier instead. Dr. Bell's team checks the cliff today.",
           "choice": {
             "ask": "How will you get to the dig?",
             "options": [
               {
                 "label": "Land at the pier and take the top path",
-                "reply": "Good plan. The top path runs along the cliff top to Dr. Bell's tent.",
-                "after": "You landed at the pier and walked the top path. From the cliff top, you could see the whole dig below."
+                "reply": "Good plan. The top path stays far back from the cliff edge. It goes to Dr. Bell's tent.",
+                "after": "You landed at the pier and walked the top path, far back from the edge. From the path, you could see the whole dig below."
               },
               {
-                "label": "Wait on the boat until the cliff is dry",
-                "reply": "Good plan. Dr. Bell says the sun will dry the cliff by 3 PM.",
-                "after": "The sun dried the cliff by 3 PM. Dr. Bell took the sign away, and your boat landed on the beach."
+                "label": "Wait on the boat until the cliff is checked",
+                "reply": "Good plan. Dr. Bell says the check will be done by 3 PM.",
+                "after": "The check was done by 3 PM. Dr. Bell took the sign away, and your boat landed on the beach."
               }
             ]
           },
@@ -134,18 +134,18 @@
           "smooth": "Your boat reached Fossil Bay. The beach under the cliff is long and gray."
         },
         {
-          "text": "The cliff is dry now, and the beach is open again.",
+          "text": "The cliff has been checked, and the beach is open again.",
           "smooth": "You landed at the pier. A path leads along the beach to the dig."
         },
         {
-          "text": "Dr. Bell's tent is at the far end of the beach. You can see people with brushes and small hammers. One more session, and you reach Fossil Bay."
+          "text": "Dr. Bell's tent is at the far end of the beach. You can see people with brushes and small hammers. One more session, and you reach Dr. Bell's dig."
         }
       ],
       "postcard": [
         "Fossil Bay has gray cliffs made of thin layers of rock. The lowest layers are the oldest.",
         "Dr. Bell shows you an ammonite, the coiled shell of a sea animal from the time of the dinosaurs.",
         "You brush sand off a bone. Dr. Bell wraps it in a plaster jacket to keep it safe.",
-        "A boat comes into the bay. It is Captain Ada, a pilot.",
+        "A boat comes into the bay. Captain Ada, a pilot, is on it.",
         "She says, \"I have a plane that can fly a long way. It needs a runway and some work. Come with me to Cloud Hill.\""
       ],
       "daytrip": [
@@ -244,7 +244,7 @@
         },
         {
           "obstacle": "weather",
-          "text": "Your boat landed at the pier below Star Point. Then thick clouds came in from the sea. A telescope cannot see stars through clouds, so the dome stays shut tonight.",
+          "text": "Your boat landed at the pier below Star Point. Then thick clouds came in from the sea. A telescope cannot see stars through clouds, so the roof of the dome stays closed tonight.",
           "notice": {
             "type": "notice",
             "title": "Star Point Sky Board",
@@ -255,7 +255,7 @@
               "Weather balloon goes up at 6 AM."
             ]
           },
-          "cope": "Clouds move away. The sky will be clear again, and the dome will open.",
+          "cope": "Clouds move away. The sky will be clear again, and the roof of the dome will open.",
           "choice": {
             "ask": "What will you do on the cloudy night?",
             "options": [
@@ -279,7 +279,7 @@
           "smooth": "Dr. Amal opens the dome. The telescope points at the Moon."
         },
         {
-          "text": "Tonight is clear. Small lamps light the path up the point. One more session, and you reach Star Point."
+          "text": "Tonight is clear. Small lamps light the path up to the dome. One more session, and you look through the telescope."
         }
       ],
       "postcard": [
@@ -313,7 +313,7 @@
         },
         {
           "obstacle": "broken",
-          "text": "You are on the platform at Pier Station, but the train is not moving. A signal at Shell Halt is broken. A signal tells the driver to stop or go, so trains wait until it is fixed.",
+          "text": "You are on the platform at Pier Station, but the train has not come in. It is waiting at Shell Halt, because a signal there is broken. A signal tells the driver to stop or go, so trains wait until it is fixed.",
           "notice": {
             "type": "message",
             "app": "text",
@@ -373,7 +373,7 @@
       "souvenir": "plane",
       "beats": [
         { "text": "Captain Ada showed you a map. Cloud Hill has a long, flat runway." },
-        { "text": "Bus 9 goes from Windy Cape to Cloud Hill. It leaves at 10 AM.", "byFrom": {"fossil": "A letter came from Dr. Bell. Captain Ada's boat leaves for Cloud Hill at 10 AM. Mari at Reef Island has a nautilus shell. A nautilus is a living sea animal with a coiled shell. It looks like the ammonite.", "reef": "A letter came from Mari. Captain Ada's boat leaves for Cloud Hill at 10 AM. The rock at Fossil Bay is limestone. It was made long ago from shells and coral. The sand on Turtle Beach is shells and coral too.", "star": "A letter came from Dr. Amal. Captain Ada's boat leaves for Cloud Hill at 10 AM. The weather balloon sends its numbers by radio. Mari on Reef Island uses them to plan her boat trips.", "rail": "A letter came from Mr. Haddad. Captain Ada's boat leaves for Cloud Hill at 10 AM. The station clock gets its time by radio. The time signal comes from the observatory at Star Point."} },
+        { "text": "Bus 9 goes from Windy Cape to Cloud Hill. It leaves at 10 AM.", "byFrom": {"fossil": "A letter came from Dr. Bell. Captain Ada's boat leaves for Cloud Hill at 10 AM. Mari found an empty nautilus shell on the beach. A nautilus is a sea animal that lives in a coiled shell. It looks like the ammonite.", "reef": "A letter came from Mari. Captain Ada's boat leaves for Cloud Hill at 10 AM. The rock at Fossil Bay is limestone. It was made long ago from shells and coral. The sand on Turtle Beach is made of tiny bits of shell and coral too.", "star": "A letter came from Dr. Amal. Captain Ada's boat leaves for Cloud Hill at 10 AM. The weather balloon sends its numbers by radio. Mari on Reef Island uses them to plan her boat trips.", "rail": "A letter came from Mr. Haddad. Captain Ada's boat leaves for Cloud Hill at 10 AM. The station clock gets its time by radio. The time signal comes from the observatory at Star Point."} },
         { "text": "There is an old hangar on Cloud Hill. A hangar is a big shed for planes." },
         { "text": "Captain Ada says there is something red inside the hangar." },
         { "text": "One more session, and you reach Cloud Hill." }
@@ -462,12 +462,12 @@
                   {
                     "label": "Watch the roller from the fence",
                     "reply": "Good plan. The roller makes the runway flat and safe.",
-                    "after": "You watched the roller go up and down. At 3 PM the runway was dry, and the Kookaburra took off."
+                    "after": "You watched the roller go up and down. At 3 PM the roller was done, and the runway was open. The Kookaburra took off."
                   },
                   {
                     "label": "Write a postcard home",
                     "reply": "Good plan. Captain Ada has a stamp you can use.",
-                    "after": "You wrote a postcard home. At 3 PM the runway was dry, and the Kookaburra took off."
+                    "after": "You wrote a postcard home. At 3 PM the roller was done, and the runway was open. The Kookaburra took off."
                   }
                 ]
               },
@@ -511,7 +511,7 @@
         "The air smells like eucalyptus leaves.",
         "At Bluegum Koala Sanctuary, Ranger Tess shows you a koala in a tree.",
         "The koala's name is Gumnut.",
-        "Gumnut is fast asleep."
+        "Gumnut is asleep."
       ]
     }
   ],
@@ -568,7 +568,7 @@
                 {
                   "label": "Cut fresh leaves for the koalas",
                   "reply": "Good plan. Keepers cut fresh branches every day.",
-                  "after": "You cut fresh branches every day with Ranger Tess. On Thursday the part came, and the pump ran again."
+                  "after": "Ranger Tess watered the young trees, and you cut fresh branches with her every day. On Thursday the part came, and the pump ran again."
                 }
               ]
             },
@@ -630,7 +630,7 @@
                 {
                   "label": "Fill in the chart in the shade",
                   "reply": "Good plan. The chart has a row for each koala.",
-                  "after": "You wrote each koala's name on the chart. The next morning was cool. At 7 AM, you weighed every koala."
+                  "after": "Ranger Tess put out the water bowls, and you wrote each koala's name on the chart in the shade. The next morning was cool. At 7 AM, you weighed every koala."
                 }
               ]
             },
@@ -642,7 +642,7 @@
             "smooth": "You weighed every koala. The numbers are on the chart."
           },
           {
-            "text": "Wattle's joey is in her pouch, so Wattle weighs a little more. Tomorrow you do the whole round by yourself, with Ranger Tess close by. One more session, and it is Junior Keeper Day."
+            "text": "Wattle's joey is in her pouch, so Wattle weighs a little more. Tomorrow you do the whole round. Ranger Tess stays close by. One more session, and it is Junior Keeper Day."
           }
         ],
         "postcard": [
@@ -687,12 +687,12 @@
                 {
                   "label": "Take River Road with Ranger Tess",
                   "reply": "Good plan. River Road is longer, but it is open.",
-                  "after": "You took River Road. It was longer, but you reached the clinic by 10 AM. Dr. Reyes was ready."
+                  "after": "You took River Road. It was longer, but you reached the clinic by 10 AM. Dr. Reyes checked Banjo's eyes, ears and teeth. Banjo is well."
                 },
                 {
                   "label": "Ask Dr. Reyes to come to the sanctuary",
                   "reply": "Good plan. Dr. Reyes has a van with all she needs.",
-                  "after": "Dr. Reyes came in her van. She did Banjo's check-up under his own tree."
+                  "after": "Dr. Reyes came in her van. She did Banjo's check-up under his own tree. Dr. Reyes checked his eyes, ears and teeth. Banjo is well."
                 }
               ]
             },
@@ -704,7 +704,7 @@
             "smooth": "Dr. Reyes is ready for Banjo at 10 AM."
           },
           {
-            "text": "Dr. Reyes asks you to spend a whole day at the clinic. You will see how a vet works. One more session, and you reach the clinic."
+            "text": "Dr. Reyes asks you to spend a whole day at the clinic. You will see how a vet works. One more session, and it is your day at the clinic."
           }
         ],
         "postcard": [
@@ -726,8 +726,8 @@
             "text": "Bluegum is building a new koala home. It will have more trees and a shade roof. A viewing path will go around it."
           },
           {
-            "text": "Ranger Tess shows you the plan. The path has a ramp, so a wheelchair can use it. Signs along the path will teach about koalas. The boards for the ramp come by truck.",
-            "smooth": "Ranger Tess shows you the plan. The path has a ramp, so a wheelchair can use it. Signs along the path will teach about koalas."
+            "text": "Ranger Tess shows you the plan. The path has a ramp, so people in wheelchairs can use it. Signs along the path will teach about koalas. The boards for the ramp come by truck.",
+            "smooth": "Ranger Tess shows you the plan. The path has a ramp, so people in wheelchairs can use it. Signs along the path will teach about koalas."
           },
           {
             "obstacle": "broken",
@@ -805,7 +805,7 @@
               "options": [
                 {
                   "label": "Put up the big tent on the grass",
-                  "reply": "Good plan. The tent is in the shed, and it is dry inside.",
+                  "reply": "Good plan. The tent is in the shed. Under the tent, everyone stays dry.",
                   "after": "The tent went up on Friday. On Saturday, the visitors stayed dry under the tent for the talk."
                 },
                 {
@@ -827,7 +827,7 @@
           }
         ],
         "postcard": [
-          "On Opening Day, the rain stops at noon, and the sun comes out.",
+          "On Opening Day, the sun shines on the new koala home.",
           "The school group walks the path and reads every sign.",
           "Omar is back, and he shows a family the ramp.",
           "You say your fact: koalas sleep most of the day.",
@@ -889,7 +889,7 @@
               ]
             },
             "talk": "Ask: fog hid the runway, so the plane waited. Why must a pilot see the runway?",
-            "smooth": "The Kookaburra lands on Shell Island for fuel. The sky over the sea is clear."
+            "smooth": "On Shell Island, Captain Ada fills the fuel tank. The sky over the sea is clear."
           },
           {
             "text": "The fog has gone. The Kookaburra flies on toward Cloud Hill.",
@@ -958,7 +958,7 @@
             "smooth": "Dr. Bell shows you the bone in its plaster jacket."
           },
           {
-            "text": "Dr. Bell's tent is at the far end of the beach. One more session, and you reach Fossil Bay."
+            "text": "Dr. Bell says you can help at the dig before you go. One more session, and you dig with Dr. Bell."
           }
         ],
         "postcard": [
@@ -1021,7 +1021,7 @@
             "smooth": "Mari shows you turtle tracks in the sand. They lead to the sea."
           },
           {
-            "text": "Inside the reef, the water is calm and clear. You can see fish under the boat. One more session, and you reach Reef Island."
+            "text": "Mari's glass-floor boat is ready to go out. One more session, and you see the reef through the glass floor."
           }
         ],
         "postcard": [
@@ -1041,7 +1041,7 @@
         "topics": ["space", "weather"],
         "beats": [
           {
-            "text": "Captain Ada's boat leaves the shore below Cloud Hill. To the north is a white dome on a point of land. That is the observatory at Star Point. You have not been there yet."
+            "text": "Captain Ada's boat leaves the shore below Cloud Hill. To the west is a white dome on a point of land. That is the observatory at Star Point. You have not been there yet."
           },
           {
             "text": "Dr. Amal works at the observatory. Her message says: Come on a clear night. The telescope can show you the Moon and Saturn. The dome is very old.",
@@ -1084,7 +1084,7 @@
             "smooth": "Dr. Amal opens the dome. The telescope points at Saturn."
           },
           {
-            "text": "Tonight is clear. Small lamps light the path up the point. One more session, and you reach Star Point."
+            "text": "Tonight is clear. Small lamps light the path up to the dome. One more session, and you look through the big telescope."
           }
         ],
         "postcard": [
@@ -1104,7 +1104,7 @@
         "topics": ["transport", "maps"],
         "beats": [
           {
-            "text": "Captain Ada's boat leaves the shore below Cloud Hill. To the east is a long, low island. A train runs along its coast. That is Rail Coast. You have not been there yet."
+            "text": "Captain Ada's boat leaves the shore below Cloud Hill. To the south is a long, low island. A train runs along its coast. That is Rail Coast. You have not been there yet."
           },
           {
             "text": "Your boat lands at Pier Station. From there, the Coast Line train runs beside the sea to Rail Coast. Mr. Haddad, the signal operator, sent you a map of the line. The line crosses a river on a bridge that lifts for boats.",
@@ -1112,7 +1112,7 @@
           },
           {
             "obstacle": "blocked",
-            "text": "You are on the train, but it has stopped at Shell Halt. The bridge over the river is up. A tall sailboat is going under it, so the train waits.",
+            "text": "You are on the train, but it has stopped at Shell Halt. The bridge over the river is up. A tall sailboat is passing through, so the train waits.",
             "notice": {
               "type": "notice",
               "title": "Coast Line",
@@ -1129,7 +1129,7 @@
               "options": [
                 {
                   "label": "Watch the sailboat from the platform",
-                  "reply": "Good plan. The sailboat's mast is too tall to fit under the bridge.",
+                  "reply": "Good plan. The sailboat's mast is too tall to fit under the bridge when it is down.",
                   "after": "You watched the sailboat pass. Then the bridge came down, and the train rolled on."
                 },
                 {
@@ -1261,7 +1261,7 @@
               ]
             },
             "talk": "Ask: the ferry landed at a different pier. How did he get to town?",
-            "smooth": "The ferry sailed on time. The sea is calm, and Home Island grows bigger."
+            "smooth": "The ferry sailed on time. The sea is calm, and Home Island looks bigger as you come closer."
           },
           {
             "text": "You are on Home Island. The town is close now.",

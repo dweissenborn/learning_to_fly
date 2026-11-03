@@ -2284,7 +2284,7 @@
       "words": [
         { "word": "shifts", "means": "set times when you come in to work", "pic": "⏰" },
         { "word": "shelter", "means": "a place that cares for pets with no home", "pic": "🏠" },
-        { "word": "kennel", "means": "a pen or small house for a dog", "pic": "🐕" }
+        { "word": "kennel", "means": "a fenced space or small house for a dog", "pic": "🐕" }
       ],
       "topics": [
         "animals"
@@ -3098,7 +3098,7 @@
         "to": "Sam",
         "time": "9:20 AM",
         "rows": [
-          "The cliff is dry, and the beach is open again.",
+          "The cliff has been checked, and the beach is open again.",
           "Walk along the beach to my tent.",
           "My tent has a big orange flag on top.",
           "Wear boots. The sand is still wet."

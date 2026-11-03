@@ -2184,7 +2184,7 @@
       "words": [
         { "word": "observatory", "means": "a building with big tools for looking at the sky", "pic": "🔭" },
         { "word": "astronomer", "means": "a scientist who studies stars and planets", "pic": "🪐" },
-        { "word": "forecast", "means": "a report of what the weather will likely be", "pic": "🌦️" }
+        { "word": "forecast", "means": "said by the weather report to be coming", "pic": "🌦️" }
       ],
       "topics": [
         "space"

@@ -954,7 +954,7 @@ test('a new island at each stop: its own look, a quest that opens places one ses
   await seedFinished(page, 5); // five sessions: ashore on Gull Island
   await expect(page.getByRole('img', { name: /^Gull Island\./ })).toBeVisible();
   const quest = page.getByRole('region', { name: 'Gull Island quest' });
-  await expect(quest).toContainText('Count the gull nests with Ranger Jo.');
+  await expect(quest).toContainText('Count the gull nests with Ranger Jo, who looks after the birds.');
   await expect(quest).not.toContainText('Done');
   await expect(quest).toContainText('opens when lantern 2 is lit on the Harbor Town path');
   await axe(page, 'Gull Island');

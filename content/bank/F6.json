@@ -1555,7 +1555,7 @@
       "picture": "🌘🕶️☀️",
       "words": [
         { "word": "partial", "means": "just some, not the whole thing", "pic": "🌗" },
-        { "word": "uncovered", "means": "not hidden, so it is open to see", "pic": "☀️" },
+        { "word": "uncovered", "means": "not blocked by the Moon, so its light still shines", "pic": "☀️" },
         { "word": "binoculars", "means": "a tool for both eyes that makes far things look near", "pic": "👀" }
       ],
       "topics": [
@@ -2262,7 +2262,7 @@
       ],
       "picture": "🦝🏕️🔒",
       "words": [
-        { "word": "latch", "means": "a metal catch that keeps a lid shut", "pic": "🔒" },
+        { "word": "latch", "means": "a metal hook or bar that holds a door or lid shut", "pic": "🔒" },
         { "word": "scented", "means": "with a strong smell", "pic": "🧴" },
         { "word": "locker", "means": "a metal box with a door that shuts tight", "pic": "📦" }
       ],

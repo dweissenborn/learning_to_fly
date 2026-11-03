@@ -156,11 +156,11 @@ export function makeProblem(skill: string, rng: () => number): MathProblem {
 /** The pilot's steps with a story view: equivalent fractions, multiplying, and dividing fractions (the module's goal). */
 export const STORY_SKILLS = ['math:FR2', 'math:FR5', 'math:FR6'] as const;
 /** Where a story happens, chosen by him at the start of a session. Words only: the math never changes. */
-export interface Setting { id: string; name: string; emoji: string; topic: string; who: string; other: string; whole: string; ate: string; eat: string; bag: string; each: string; eachs: string }
+export interface Setting { id: string; name: string; emoji: string; topic: string; who: string; other: string; whole: string; ate: string; eat: string; bag: string; each: string; howMany: string }
 export const SETTINGS: Setting[] = [
-  { id: 'bakery', name: 'At the bakery', emoji: '🥧', topic: 'food', who: 'Grandma Rose', other: 'Sam', whole: 'pie', ate: 'ate', eat: 'eat', bag: 'bag of flour', each: 'batch of muffins', eachs: 'batches of muffins' },
-  { id: 'robots', name: 'At robot club', emoji: '🤖', topic: 'robots', who: 'Priya', other: 'Leo', whole: 'board', ate: 'used', eat: 'use', bag: 'roll of wire', each: 'robot arm', eachs: 'robot arms' },
-  { id: 'beach', name: 'At the beach', emoji: '🏖️', topic: 'ocean', who: 'Maya', other: 'Ana', whole: 'sandwich', ate: 'ate', eat: 'eat', bag: 'bottle of water', each: 'cup', eachs: 'cups' },
+  { id: 'bakery', name: 'At the bakery', emoji: '🧁', topic: 'food', who: 'Grandma Rose', other: 'Sam', whole: 'cake', ate: 'ate', eat: 'eat', bag: 'bag of flour', each: 'batch of muffins', howMany: 'Counting part of a batch, how many batches of muffins can Grandma Rose make?' },
+  { id: 'robots', name: 'At robot club', emoji: '🤖', topic: 'robots', who: 'Priya', other: 'Leo', whole: 'board', ate: 'used', eat: 'use', bag: 'roll of wire', each: 'robot arm', howMany: "Counting part of an arm, how many robot arms' worth of wire does Priya have?" },
+  { id: 'beach', name: 'At the beach', emoji: '🏖️', topic: 'ocean', who: 'Maya', other: 'Ana', whole: 'watermelon', ate: 'ate', eat: 'eat', bag: 'bottle of water', each: 'cup', howMany: 'Counting part of a cup, how many cups can Maya fill?' },
 ];
 /**
  * The same problem as a short story: at most 40 words, a number in every sentence but the question, and only the
@@ -170,9 +170,9 @@ export function storyFor(p: MathProblem, s: Setting): string[] {
   const f = (x: Frac) => fracText(x);
   switch (p.op) {
     case 'equiv': return [`${s.who} cut a ${s.whole} into ${p.a[1]} equal pieces.`, `${s.other} ${s.ate} ${p.a[0]} of the pieces.`,
-      `Another ${s.whole} the same size is cut into ${p.b[0]} equal pieces.`, `Write what ${s.other} ${s.ate} as a fraction out of ${p.b[0]}.`];
+      `Another ${s.whole} the same size is cut into ${p.b[0]} equal pieces.`, `Write that same amount as a fraction out of ${p.b[0]}.`];
     case 'mul': return [`${s.who} had ${f(p.a)} of a ${s.whole}.`, `${s.other} ${s.ate} ${f(p.b)} of that part.`, `What fraction of the whole ${s.whole} did ${s.other} ${s.eat}?`];
-    case 'div': return [`${s.who} has ${f(p.a)} of a ${s.bag}.`, `Each ${s.each} needs ${f(p.b)} of a ${s.bag}.`, `How many ${s.eachs} can ${s.who} make?`];
+    case 'div': return [`${s.who} has ${f(p.a)} of a ${s.bag}.`, `Each ${s.each} needs ${f(p.b)} of a ${s.bag}.`, s.howMany];
     default: return [];
   }
 }

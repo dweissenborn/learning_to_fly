@@ -2,6 +2,16 @@
 
 Notes on work still to do. Newest first.
 
+## Content review, 2026-11-02
+
+DW chose a pre-screen in place of reading every drafted line. It covered all 170 word meanings (LTF-04), the six "Does it fit?" pairs (LTF-59), the story-problem templates in every setting (LTF-42), and 17 stops: four islands, the reef way, the keeper arc and the way home (LTF-21 to LTF-27, LTF-30 to LTF-35). Each line was read as a literal reader would read it, and 36 flags went to DW on the review page. DW chose the suggested fix for all 36, and every fix is in.
+- **Story problems.** Dividing asks a question where part of one counts ("Counting part of a batch, how many batches of muffins can Grandma Rose make?"), with its own verb in each setting. Before, about half the problems had an answer under 1, and a literal answer of "none" was marked wrong. Equivalent fractions now say "Write that same amount". The bakery uses a cake and the beach a watermelon. A unit test checks the wording, seen failing first.
+- **Word meanings.** Five changed: forecast (as a verb), kennel, uncovered (the eclipse warning), latch, and tying.
+- **Does it fit?** n5-i221's guess says when ("When Sam heard the crash"). n5-i217's explanation matches the story. The robot story's "Her hands felt cold" is now "Her hands shook a little", and the three questions that quote it match.
+- **Island stories.** Fossil Bay's beach opens when the cliff has been checked, not when it is dry, and the top path stays far back from the edge. Two Fossil Bay check-up texts taught the same rule and now match (cu-fossil-p02, cu-fossil-p10); their questions do not depend on it. Six last beats no longer promise a place he has already reached. On the way home, Star Point is to the west and Rail Coast to the south, as on the map. Two plans now say who did the job the notice asked for, and both clinic plans say how Banjo's check-up went. The rest are literal-reading fixes, for example "fast asleep", "a wheelchair can use it" and a dome that "stays shut".
+- **Pilots, 2026-11-03.** DW chose to turn on all three for him: story problems (Grown-ups → Settings → Math), the photo cue and Tell it back (Grown-ups → Settings). A grown-up switches each one on in the app; to revert, switch it off.
+- **The letters and day trips, 2026-11-03.** The pre-screen then read LTF-28's four letters and fact-checked LTF-26's four day trips. The facts hold. The time signal from an observatory is the one that might look wrong, and it is right: the BBC's pips came from the Royal Observatory's clocks until 1990. DW chose the fix for both literal-reading flags: Mari's nautilus shell is an empty one she found on the beach, and Turtle Beach's sand is "made of tiny bits of shell and coral".
+
 ## Audit, 2026-10-28
 
 DW asked for the backlog to be checked against the live code, and for each part of the game to be checked against its design. Three read-only checks compared every entry with the code. Of 65 entries, 47 matched, 15 matched in part (mostly stale text) and 3 had drifted. Two more checks drove the real engine, journey and math code with simulated learners. Each finding below was confirmed in the code before anything changed. The entries carry the details.
@@ -45,9 +55,9 @@ Design questions for DW. The simulations found these; nothing was changed.
   - DW's other answers the same day: fast track stays as it is, and repeats keep counting for now, as a known limit for weaker learners.
 - **Fast track.** It never fires on a new skill. The skill's first session is planned at level 1, and fast track needs a level 3 text. Start a new skill at the level of the step before it, or drop the level condition?
 - **Repeats.** For a learner at 60 to 70% right, most own-turn answers become repeats at level 1, and repeats count toward mastery. Leave repeats out of mastery, or add level 1 content?
-- **Today's step back.** It ends when old recounts age out of the 14 days, not when he improves (LTF-07).
-- **Mastery pairing.** Mastery pairs his latest session with the latest one on an earlier day. A weak session earlier the same day is skipped.
-- **Flight gear.** The full flight kit arrives by about session 13, before take-off at session 20. Keep it, or space the gear out?
+- **Today's step back.** It ends when old recounts age out of the 14 days, not when he improves (LTF-07). At the easier stage his recounts do not record ideas use, so in practice it is a rest of about two weeks; then he tries the harder stage again, and it steps back again if he still leans on the ideas. **Decided by DW 2026-11-03: keep the two-week rest.**
+- **Mastery pairing.** Mastery pairs his latest session with the latest one on an earlier day. A weak session earlier the same day is skipped. **Decided by DW 2026-11-03: keep it.** The 3, 7 and 21-day reviews catch a skill that does not last.
+- **Flight gear.** The full flight kit arrives by about session 13, before take-off at session 20. Keep it, or space the gear out? **Decided by DW 2026-11-03: keep it.** Raising the costs would take pieces from a learner who has them, unless owned gear were saved first.
 
 Not built, on purpose (LTF-39):
 - A grown-up button to delete one module's memory. Deleting a whole learner already keeps the plan's promise, and a module delete would need a way to tell his other devices.
@@ -67,7 +77,7 @@ Each step lands its test before its code.
 5. **Large content work.** LTF-20 (island routes, before LTF-14 so check-up flights can come from the island he chose), LTF-04, LTF-11 (idioms use LTF-04), LTF-03, LTF-14. Built 2026-10-13: LTF-04 (pilot), LTF-11, LTF-03 (N4 first), LTF-14 (all ten stops, the four islands included), and LTF-20, built with the proposed LTF-21 to LTF-24 as its island stories so DW can review them in the app. Waiting for DW: those island stories, and the koala keeper arc (LTF-30 to LTF-35). LTF-25 to LTF-29 come later, if approved.
 6. **Guest codes.** LTF-19, a separate track. Approach to confirm; DW 2026-10-13: not now.
 7. **Math module.** LTF-39 to LTF-44 (below), from DW's design note: modules as add-ons first, then typed answers, skills and gates, the help ladder, story or plain, and the grown-ups' measures. LTF-39 to LTF-44 are built; LTF-42 as a pilot that stays off until a grown-up turns it on.
-8. **Islands of their own.** LTF-45 to LTF-48 (below), from DW's feedback 2026-10-14. Built the same day; the new wording waits for DW's review.
+8. **Islands of their own.** LTF-45 to LTF-48 (below), from DW's feedback 2026-10-14. Built the same day; the new wording was pre-screened and DW decided its flags 2026-11-03 (LTF-36).
 9. **Help and levels.** LTF-49 and LTF-50 (below), from a first look at how his sessions are going, 2026-10-14. Built the same day.
 10. **Requests from the learner.** LTF-51 to LTF-53 (below), built 2026-10-17; LTF-64, the save menu, built 2026-10-26.
 11. **Research gaps from the 19 October scan.** LTF-54 to LTF-62 (below). LTF-54 and LTF-55 built 2026-10-19, and the first steps of LTF-56, LTF-58 and LTF-60 the same day; the rest proposed, each checked against the code.
@@ -123,7 +133,7 @@ Proposed 2026-10-13. Built 2026-10-13.
 - **Tests first.** Engine tests for gates, placement, the provisional mark and the stall re-check; e2e: two misses end the check-in kindly, with axe.
 - **Audit 2026-10-28.**
   - Fixed: a missed math review never sent a step back to practice, unlike reading. Now, when his last review missed, the step is the focus again until a session of three or more answers at 80% restores it (`deriveMath`, `relearn`).
-  - Not fixed, for DW: "mastery as in reading" leaves out reading's transfer item.
+  - Not fixed, for DW: "mastery as in reading" leaves out reading's transfer item. **Decided by DW 2026-11-03: leave it.** Every problem is generated with fresh numbers, so it cannot be memorized, and with story problems on, mastery also needs a right answer in the story view.
   - Check-in sessions log no start or finish, so they do not move the journey or use the day's budget.
 
 ## LTF-42 Story or plain numbers
@@ -323,7 +333,7 @@ Proposed 2026-10-19. Approach to confirm. Evidence as cited by the scan: Howard 
   - **Kept apart.** The Lantern Peaks inference-check stories are never used, and these do not join that check.
   - **Validation.** It now knows two kinds of pair: `act` after `message`, and `fit-show` after `fit`. Planting a pair with no `after`, or one pointing at the wrong item, was caught.
   - **Grown-ups and his card.** The Overview has a "Does it fit?" card with the two steps as separate lines. His "What do you think?" card covers it.
-  - **For DW.** Each guess is meant to be clearly right or clearly wrong; that needs a person's read before more are written. The content checks raised no new flags.
+  - **For DW.** Each guess is meant to be clearly right or clearly wrong; that needs a person's read before more are written. The content checks raised no new flags. Read in the content review, 2026-11-02: DW chose the fix for three of the six (see Content review).
   - **To revert.** Hide the twelve items in the Content library, or delete them from `content/bank/N5.json`.
   - **Tests.** Content validation (above) and e2e (the guess and the sentence step in the Content library, with axe; the grown-ups' card).
 - **Size.** L in all, mostly content and review; the pilot is done.
@@ -497,7 +507,7 @@ Still true: eight islands, the landings, the lock text and the island switcher.
 - **Build.** `ISLANDS` in `apps/web/src/art.tsx` (Gull Island, Windy Cape, Fossil Bay, Reef Island, Star Point, Rail Coast, Cloud Hill, which is also the take-off, and Australia; Home Island is unchanged), on Home Island's tile layout so the paths stay put. Pieces carry the island they were built on (`island` on the world event; older pieces are Home Island's). `settings.islandsSeen` keeps the session count when he first came ashore, so an island's areas open with the sessions after that; islands he has sailed on from have all their quest places open. `islandAreas`, `islandsReached`, `islandArrival` and the quest card are in `apps/web/src/journey.tsx`.
 - **Eval first.** Unit tests (`apps/web/src/islands.test.ts`, mutation-checked): every island has three quest places and one lantern place, all drawn; the paths, places and landing are on every island and the coasts differ; places open one session at a time, all once he sails on, and the last with its lantern; a closed place has no build spots; sessions count from when he came ashore. An e2e test comes ashore on Gull Island, checks the quest and the lock with axe, finishes one more session to open the gull nests, and goes back to Home Island.
 - **Guards.** Places open with finished sessions or lanterns, never with scores (R9). A locked place always says what opens it, and nothing he built is ever lost or moved. Home Island looks as it did.
-- **For DW to read.** The quest lines, place names and lantern gates in `ISLANDS`. Ranger Jo appears only in a Gull Island check-up text so far.
+- **For DW to read.** The quest lines, place names and lantern gates in `ISLANDS`. Ranger Jo appears only in a Gull Island check-up text so far. Pre-screened 2026-11-03, and DW chose the fix for all four flags: Ranger Jo is introduced in his quest step, Reef Island's boat is the "glass-floor boat" as in the stories, "rubbish" is "trash", and Star Point's step opens "the roof of the dome".
 
 ## LTF-37 A natural reading voice
 
@@ -560,7 +570,7 @@ Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LT
   - [ ] LTF-14 check-up texts tagged with stop `fossil`: about 12 reserved items on fossils, rock layers, a quarry notice and a dig timetable.
   - [ ] Checks: `npm run check` (it now also checks that every stop is reachable, every route ends at Australia and all routes have the same length), `npm run content:check` and `pipeline/check.py` on the check-up passages; the beats and postcard are outside the pipeline, so check their reading level by hand (level 1 to 2 band, sentences of 13 words or fewer).
   - [ ] Tests: engine routing (Gull to Fossil Bay to the airfield reaches Australia in the same session count as the Windy Cape route; a pace change never moves him back); an e2e run that picks Fossil Bay at the fork, reaches the obstacle, chooses a plan, reads the postcard and picks the souvenir, with an axe check.
-  - [ ] DW reads every line: beats, notice rows, cope, both options and their after lines, talk, smooth texts, postcard and souvenir name.
+  - [x] DW reads every line: beats, notice rows, cope, both options and their after lines, talk, smooth texts, postcard and souvenir name. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** "Rocks can fall" is one calm safety sentence, like Windy Cape's fallen rocks, and nobody is on the beach while it is closed. Dr. Bell matches the bank (museum fossil expert, plaster jackets). Fossils are handled only with Dr. Bell and stay with the dig, never kept as treasure, which matches the bank's "do not touch" rule. The facts are simple and true: layers, lowest is oldest, ammonites lived in the time of the dinosaurs. Watch the reading level of "ammonite" and "plaster jacket" (both are explained in the same sentence).
 
 ## LTF-22 Reef Island: the boat waits for the tide
@@ -588,7 +598,7 @@ Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LT
   - [ ] LTF-14 check-up texts tagged with stop `reef`: about 12 reserved items on coral, tides, a tide-pool checklist and a boat timetable (the bank already has tide-pool notices to match in tone).
   - [ ] Checks as in LTF-21: `npm run check`, `npm run content:check`, `pipeline/check.py` for the check-up passages, and a hand reading-level pass over the beats.
   - [ ] Tests: engine routing for the reef route; an e2e run that picks Reef Island, reaches the tide notice, chooses a plan and reads the postcard, with axe.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** Life jackets are counted and nobody swims alone; the turtle beach is visited with Mari and nothing is touched. Coral is "tiny animals called polyps", never a plant or a rock. "Twice a day" is the simple tide fact and holds for most coasts. The obstacle reuses `blocked` (low water blocks the channel), so no type change; if DW wants the card to read "A notice at the harbor" instead of "A sign on the path", add a `late` obstacle kind (three one-line edits: the Beat type, `NOTICE_TITLE`, `OBSTACLE_ICON`). Mari is the only new character.
 
 ## LTF-23 Star Point: a cloudy night at the observatory
@@ -616,7 +626,7 @@ Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LT
   - [ ] LTF-14 check-up texts tagged with stop `star`: about 12 reserved items on the Moon's phases, a sky board, a weather balloon and planets (the bank's observatory notices set the tone).
   - [ ] Checks as in LTF-21, plus a hand reading-level pass over the beats.
   - [ ] Tests: engine routing for the star route; an e2e run that picks Star Point, reaches the sky board, chooses a plan and reads the postcard, with axe.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** Night-time is lit and with an adult; no dark-and-alone wording. The facts stay simple and true: the Moon's plains and craters, Saturn's ring through a small telescope, the space station's 90-minute orbit, a balloon that carries a small measuring box and sends numbers by radio. Nothing about the balloon bursting. Dr. Amal is the only new character; the Lantern Peaks observatory on Home Island is a different place and is not contradicted.
 
 ## LTF-24 Rail Coast: a broken signal
@@ -644,7 +654,7 @@ Proposed 2026-10-13. Approved by DW 2026-10-13, as built in the app (with the LT
   - [ ] LTF-14 check-up texts tagged with stop `rail`: about 12 reserved items on a line timetable, a map key, a platform notice and a level crossing (the bank's Harbor Town Station texts set the tone).
   - [ ] Checks as in LTF-21, plus a hand reading-level pass over the beats.
   - [ ] Tests: engine routing for the rail route; an e2e run that picks Rail Coast, reaches the message, chooses a plan and reads the postcard, with axe.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** "Trains wait until it is fixed" states the safety rule without any danger word. Facts stay simple and true: a signal tells the driver to stop or go; a map key explains the symbols. Mr. Haddad is the only new character; the existing `transport` interest and the `train` piece are not touched. Sam Rivera's love of trains is left out on purpose, so the journey cast stays Captain Ada and the island hosts.
 
 ## LTF-25 A second fork at Cloud Hill: two flight paths
@@ -662,7 +672,7 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20.
   - [ ] No new souvenir or stop art; the Australia stop stays one stop.
   - [ ] Checks: the LTF-20 reachability check; a hand reading-level pass.
   - [ ] Tests: engine test that both paths land after the same session count; an e2e run of the airfield fork with axe.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** The Kookaburra is Captain Ada's to fly, so the choice is never about the flight itself, only about the wait. Keep this after the four islands have landed, since it doubles the Australia leg's text to review.
 
 ## LTF-26 Day trips: a second postcard from a reached island
@@ -680,9 +690,9 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20.
   - [ ] `daytrip: string[]` on the stop entries in `content/journey.json` (four texts) and on the `Stop` type.
   - [ ] A second page in `PostcardCard` in `journey.tsx` with read-aloud; no map or art change.
   - [ ] One "What do you think?" line in `features.ts` (`day-trip`, met when a day trip is opened).
-  - [ ] A hand reading-level pass; the facts checked by DW.
+  - [x] A hand reading-level pass; the facts checked by DW. The facts were checked in the pre-screen, 2026-11-03 (see Content review).
   - [ ] An e2e check that the button appears only on reached islands, with axe.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** Never a reward for scores and never timed; it is simply there once the island is reached. Keep each text under 60 words.
 
 ## LTF-27 The way home: back by a different island
@@ -702,7 +712,7 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20.
   - [ ] Map: the return path drawn in a second color; the sanctuary card gains the offer.
   - [ ] Checks: the LTF-20 reachability check extended to "every return route ends at Home Island"; a hand reading-level pass.
   - [ ] Tests: engine test for the return segment and for the stay-with-koalas case; an e2e run of the home fork with axe.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** Decide first whether the journey should have an end (Australia) or keep going; this item only makes sense if DW wants the latter. Island souvenirs from the return trip are the same pieces, so a second visit to the same island must not be possible.
 
 ## LTF-28 Letters between islands
@@ -718,7 +728,7 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20; also closes th
   - [ ] A `byFrom` map on the airfield's beat 1 in `content/journey.json` (keys `cape`, `fossil`, `reef`, `star`, `rail`) and a one-line lookup in `shownBeat` in `journey.tsx` using the stop he came from.
   - [ ] Checks: a hand reading-level pass; DW checks the four facts.
   - [ ] Tests: a unit test that `shownBeat` picks the letter for the origin and falls back to the plain text.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-03 (see Content review).
 - **Guards.** "Living animal with a coiled shell like the ammonite's" is literal; avoid "cousin". The nautilus lives in deep water by reefs, so Mari has a shell, not a tank.
 
 ## LTF-29 Epilogue at Bluegum: a week with Ranger Tess
@@ -734,7 +744,7 @@ Proposed 2026-10-13. Replaced by the koala keeper arc (LTF-30), approved by DW 2
   - [ ] Souvenir piece `sapling` in `apps/web/src/art.tsx`; no new map stop.
   - [ ] Checks: a hand reading-level pass; `npm run check`.
   - [ ] Tests: an engine test that the epilogue starts only after the last koala and never moves him back; an e2e run through the epilogue with axe.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Not needed: LTF-30 replaced this item, and no epilogue was built.
 - **Guards.** The eucalyptus fact matches the koala facts already in `journey.json` (Kip: "the right kinds of eucalyptus trees"). Gumnut was asleep in the arrival postcard, so "awake this time" is a deliberate small change, not a contradiction. Joeys are counted on a chart, never handled.
 
 ## Proposed: the koala keeper arc (LTF-30 to LTF-35)
@@ -763,14 +773,14 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20. Replaces LTF-2
   - [ ] `apps/web/src/features.ts`: one "What do you think?" line, `keeper-arc`, "The story goes on at the sanctuary. You help Ranger Tess as a junior koala keeper.", met by an activity event logged once when the first arc beat is shown.
   - [ ] Checks: `npm run check` (with the arc chain check), `npm test`, and a hand reading-level pass over every arc line (level 1 to 2 band, sentences of 13 words or fewer); beats and postcards are outside `pipeline/check.py`.
   - [ ] e2e: seed a learner at the sanctuary who has met seven koalas, finish a session and check "On the way to The Tree Nursery"; run to the first setback, choose a plan, read the postcard and pick the sapling; open the map with arc markers; axe check on each screen.
-  - [ ] DW reads every line of LTF-31 to LTF-35.
+  - [x] DW reads every line of LTF-31 to LTF-35. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** The learner never holds a koala: Ranger Tess and the vet handle koalas, for care only. No sick, hurt or lost animals; the clinic day is a check-up and Banjo is well throughout. Visitors look from the path, speak softly and never touch or feed a koala. Facts come from the koala facts already in `journey.json` plus a few simple true ones: keepers cut fresh branches every day, weigh koalas on a scale with a branch, rake under the trees, plant food trees, vets check eyes, ears and teeth, and koalas drink more on hot days. "Koala keeper", never "zoo". Captain Ada and the Kookaburra stay in Australia and are not contradicted (LTF-27 needs her there). Every setback is an everyday problem with nobody blamed. No new obstacle kinds: the five setbacks reuse `broken`, `weather` and `blocked`.
 
 ## LTF-31 The Tree Nursery: planting food trees
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Replaces LTF-29: its beats, pump setback, postcard and `sapling` souvenir are kept, with one plan option changed (see Guards).
 
-- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. Still open: DW's read of every line.
+- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. DW's read of every line: done as the pre-screen and DW's flag decisions, 2026-11-02.
 
 - **Story.** Ranger Tess asks for help this week: Bluegum is planting new eucalyptus trees so the koalas always have the right leaves to eat. The setback is the broken nursery pump, with the new part coming on Thursday, so the young trees get water by hand. The postcard is planting day, and the souvenir is a eucalyptus sapling.
 - **He sees.**
@@ -789,14 +799,14 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Rep
   - [ ] "What do you think?" line: covered by the shared `keeper-arc` line in LTF-30.
   - [ ] Checks: `npm run check`; a hand reading-level pass (level 1 to 2 band, 13 words or fewer a sentence).
   - [ ] Tests: engine arrival at this stop after `8 + legLength` sessions past Australia; the e2e run in LTF-30 with an axe check.
-  - [ ] DW reads every line: beats, message rows, cope, both options and their after lines, talk, smooth texts, postcard and souvenir name.
+  - [x] DW reads every line: beats, message rows, cope, both options and their after lines, talk, smooth texts, postcard and souvenir name. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** The eucalyptus fact matches Kip's ("the right kinds of eucalyptus trees"). Gumnut was asleep in the arrival postcard, so "awake this time" is a deliberate small change (from LTF-29). LTF-29's option "count the joeys for the ranger's chart" is replaced by cutting fresh leaves, a real daily keeper job, so no one counts joeys in pouches. The trees get water by hand the same day, so there is no water-shortage worry. Nobody is blamed for the old pump.
 
 ## LTF-32 Junior Keeper Day: the morning round
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-31 and before LTF-27.
 
-- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. Still open: DW's read of every line.
+- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. DW's read of every line: done as the pre-screen and DW's flag decisions, 2026-11-02.
 
 - **Story.** Ranger Tess teaches the keeper's morning round from a chart with four jobs: weigh each koala, clean under the trees, fresh leaves, water. The setback is a very hot day: the koalas rest in the shade, so weighing moves to 7 AM the next day, when it is cool. The postcard is the first full round done alone, and the souvenir is a keeper's scale.
 - **He sees.**
@@ -815,14 +825,14 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Com
   - [ ] "What do you think?" line: covered by LTF-30.
   - [ ] Checks: `npm run check`; a hand reading-level pass.
   - [ ] Tests: engine arrival after `8 + 2 * legLength`; an e2e pass through the hot-day notice and a plan, with an axe check.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** "Hot day" is stated plainly with no temperature number and no danger word; koalas resting in shade and holding cool trunks is what they do. "Koalas drink more on hot days" sits beside Gumnut's fact that they do not drink much; both are true. The learner weighs Pip by watching him climb onto the branch; Ranger Tess is beside him, and he never lifts a koala. Cleaning is "rake the ground", nothing more. Wattle's joey stays in the pouch and is never handled; the weight note matches Wattle's facts.
 
 ## LTF-33 The Vet Clinic: check-up day
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-32 and before LTF-27.
 
-- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. Still open: DW's read of every line.
+- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. DW's read of every line: done as the pre-screen and DW's flag decisions, 2026-11-02.
 
 - **Story.** Every koala at Bluegum gets a check-up with Dr. Reyes, the vet (new character). This week it is Banjo's turn, and the learner rides along with Ranger Tess. The setback is a closed road: workers are fixing the main road to town, so they take River Road or Dr. Reyes comes to the sanctuary in her van. The souvenir is a vet's bag.
 - **He sees.**
@@ -841,14 +851,14 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Com
   - [ ] "What do you think?" line: covered by LTF-30.
   - [ ] Checks: `npm run check`; a hand reading-level pass.
   - [ ] Tests: engine arrival after `8 + 3 * legLength`; an e2e pass through the road notice and a plan, with an axe check.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** A check-up only: Banjo is well before, during and after, with no illness, injections or "hurt". Dr. Reyes is the only new character (not "Dr. Lin", which would clash with Mrs. Lin of the Lighthouse Café). Ranger Tess carries the travel box, which holds fresh leaves; the learner never holds Banjo. "Workers are fixing the road" states the closure without a danger word, like Windy Cape's fallen rocks. Facts are simple and true: vets check eyes, ears, teeth and weight; koala teeth wear from chewing tough leaves, so vets check them. Beat 4 works for both plans, since the clinic day is a visit to learn, not Banjo's appointment.
 
 ## LTF-34 The New Koala Home: a path for everyone
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-33 and before LTF-27.
 
-- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. Still open: DW's read of every line.
+- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. DW's read of every line: done as the pre-screen and DW's flag decisions, 2026-11-02.
 
 - **Story.** Bluegum builds a new koala home: more trees, a shade roof, and a viewing path with a ramp so a visitor in a wheelchair can see the koalas too, with signs along it that teach. The setback is a delivery truck that broke down: the boards for the ramp come on Friday, so the signs and the trees come first. The souvenir is the viewing path.
 - **He sees.**
@@ -867,14 +877,14 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Com
   - [ ] "What do you think?" line: covered by LTF-30.
   - [ ] Checks: `npm run check`; a hand reading-level pass.
   - [ ] Tests: engine arrival after `8 + 4 * legLength`; an e2e pass through the truck message and a plan, with an axe check.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** "Broke down" is a flat everyday truck problem; nobody is hurt and the boards are safe, which the message says. Omar is a visitor who uses a wheelchair, named and ordinary; the ramp is for him and for everyone, and nobody "helps" him. "Wheelchair" is used as a plain word. The sign line asks visitors to speak softly, and nobody touches a koala. The sign facts match Banjo's (sleep most of the day). Where beat 3's base text was not shown, the postcard introduces Omar as "a visitor".
 
 ## LTF-35 Opening Day: visitors come
 
 Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Comes after LTF-34; it is the arc's end, and LTF-27's offer (if approved) follows it.
 
-- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. Still open: DW's read of every line.
+- **Status (2026-10-13).** Built under LTF-30 (see its "What was built"): the text below is in `content/journey.json` as approved, with its scene and souvenir; check-up flights at Bluegum use Australia's texts. DW's read of every line: done as the pre-screen and DW's flag decisions, 2026-11-02.
 
 - **Story.** The new koala home opens on Saturday, with a school group of 24 children, Omar and his family, and other visitors; the learner tells the children one koala fact he has practiced. The setback is a changed weather report: rain on Saturday morning, so the welcome talk moves under the big tent or into the shed. The postcard is opening day itself, and the souvenir is a koala sign.
 - **He sees.**
@@ -895,7 +905,7 @@ Proposed 2026-10-13. Approved by DW 2026-10-13. Builds on LTF-20 and LTF-30. Com
   - [ ] "What do you think?" line: covered by LTF-30.
   - [ ] Checks: `npm run check`; a hand reading-level pass.
   - [ ] Tests: engine arrival after `8 + 5 * legLength` and that later sessions stay here; an e2e pass through the weather report, a plan, the postcard, the sign and the closing card, with an axe check.
-  - [ ] DW reads every line.
+  - [x] DW reads every line. Done as the pre-screen and DW's flag decisions, 2026-11-02 (see Content review).
 - **Guards.** Rain is weather, not a storm; nobody is cold or wet, and the report itself promises afternoon sun. Visitors read the signs and stay on the path; nobody touches or feeds a koala. The school is "a school group" with no name, so no real or canon school is implied. The learner's talk is one sentence he practiced three times, so the social moment is planned and small. "Junior koala keeper", never zoo keeper. The postcard's weather matches the report and works for both plans.
 
 ## LTF-19 Guest codes for friends and classmates

@@ -250,9 +250,9 @@ test('story problems, a pilot: off until a grown-up turns it on, he picks where 
   await where.getByRole('button', { name: /At the bakery/ }).click();
   await page.getByRole('button', { name: /Got it/ }).click(); // the worked example stays in plain numbers
   const story = page.locator('.math-story');
-  await expect(story).toContainText('Grandma Rose cut a pie into');
+  await expect(story).toContainText('Grandma Rose cut a cake into');
   await axe(page, 'a story problem');
-  // From the story: d pieces, n eaten, the same pie in D pieces.
+  // From the story: d pieces, n eaten, the same cake in D pieces.
   const [d, n, D] = ((await story.textContent()) ?? '').match(/\d+/g)!.map(Number);
   await page.getByRole('group', { name: 'Choices' }).getByRole('button', { name: `${(n * D) / d}/${D}`, exact: true }).click();
   await page.getByRole('button', { name: /^Next( →)?$/ }).click();

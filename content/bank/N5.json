@@ -889,7 +889,7 @@
         "Priya built a robot arm at robotics club.",
         "On Friday, she was going to show it to her class.",
         "That morning, she checked the batteries three times.",
-        "Her hands felt cold as she set the arm on the table.",
+        "Her hands shook a little as she set the arm on the table.",
         "She pressed the button.",
         "The arm lifted up and waved at Ms. Ortiz.",
         "Ms. Ortiz waved back, and the whole class laughed and clapped.",
@@ -4493,7 +4493,7 @@
         3
       ],
       "hint": "Find two things Priya did or felt that morning, before the button.",
-      "explain": "Priya felt nervous. She checked the batteries three times, and her hands felt cold.",
+      "explain": "Priya felt nervous. She checked the batteries three times, and her hands shook a little.",
       "inference": 2,
       "tags": [
         "hidden-feeling"
@@ -8600,7 +8600,7 @@
       "answer": 0,
       "evidence": [2, 3],
       "hint": "Look at what Priya did and felt that morning.",
-      "explain": "It fits. She checked the batteries three times, and her hands felt cold. Those can show that a person is nervous.",
+      "explain": "It fits. She checked the batteries three times, and her hands shook a little. Those can show that a person is nervous.",
       "inference": 1,
       "tags": ["fit"]
     },
@@ -8615,7 +8615,7 @@
       "answer": [2, 3],
       "evidence": [2, 3],
       "hint": "Find what Priya did or felt before she pressed the button.",
-      "explain": "\"Her hands felt cold\" and checking the batteries three times show she was nervous.",
+      "explain": "\"Her hands shook a little\" and checking the batteries three times show she was nervous.",
       "inference": 1,
       "tags": ["fit-show"],
       "after": "n5-i215"
@@ -8631,7 +8631,7 @@
       "answer": 1,
       "evidence": [5, 6],
       "hint": "Look at what Leo did when he finished.",
-      "explain": "It does not fit. Leo lifted his sticks high and watched the video three times. That shows he was proud and happy, not sad.",
+      "explain": "It does not fit. Leo lifted his sticks high and asked his dad to play the video three times. That shows he was proud and happy, not sad.",
       "inference": 1,
       "tags": ["fit"]
     },
@@ -8688,7 +8688,7 @@
       "passage": "n5-p67",
       "format": "tap",
       "level": 2,
-      "prompt": "Your guide thinks: \"Sam thought his dad made the noise.\" Does that fit the story?",
+      "prompt": "Your guide thinks: \"When Sam heard the crash, he thought his dad made the noise.\" Does that fit the story?",
       "options": ["It fits", "It does not fit"],
       "answer": 1,
       "evidence": [2],

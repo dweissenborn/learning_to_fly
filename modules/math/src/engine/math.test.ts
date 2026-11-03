@@ -135,4 +135,11 @@ describe('story or plain numbers (LTF-42, a pilot)', () => {
   it('has no story for steps outside the pilot', () => {
     expect(storyFor(makeProblem('math:FR3', mulberry32(1)), SETTINGS[0])).toEqual([]);
   });
+  it('asks a question a literal reader can answer: part of a batch counts, and "that same amount" (content review)', () => {
+    const rng = mulberry32(7);
+    for (const setting of SETTINGS) {
+      expect(storyFor(makeProblem('math:FR6', rng), setting).at(-1)).toMatch(/^Counting part of /);
+      expect(storyFor(makeProblem('math:FR2', rng), setting).at(-1)).toMatch(/^Write that same amount /);
+    }
+  });
 });
