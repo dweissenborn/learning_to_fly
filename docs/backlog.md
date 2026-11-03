@@ -1113,6 +1113,7 @@ Added 2026-10-13. Approved. Built 2026-10-13, warning only: waiting for DW's gol
   - A run today gives 347 flags. 19 of them are new coherence flags from LTF-02, LTF-11 and LTF-14 content.
   - Reviewed the same day, sentence by sentence: all 19 are false positives. Each flagged sentence follows naturally from the one before, as a character arriving ("Ben got on at the next stop."), a scene detail, the next line of dialogue, or a metaphor ("The room was a quiet cave."). They were added with `content_check.py --baseline`, so 347 flags are now known and none are new. The six "Does it fit?" pairs (LTF-59) raised none.
   - The gold ratings (`evals/gold/ratings.json`) do not exist yet, so every check still only warns.
+- **Deferred by DW 2026-11-02.** The gold-set ratings wait until the content checks need to block new problems, for example before a large batch of new content. Until then every check warns, which costs nothing. The ratings can be done on the review page (it has the same questions as `rate.html`), and `gold-ratings.mjs` (kept with the review page's scripts) turns them into `ratings.json`.
 
 Original entry: Research: [Maheshwary et al. 2026](https://aclanthology.org/2026.readi-1.10/); [Ma, Flor & Wang 2025](https://aclanthology.org/2025.bea-1.31/); [Shen et al. 2026](https://aclanthology.org/2026.bea-1.51/). Plan rule R19.
 
@@ -1130,6 +1131,7 @@ Added 2026-10-13. Approved. Built 2026-10-13, waiting for two people to score it
 - **Build.** `evals/scoring/`: about 300 invented child-style answers, scored by two people and banded clearly right, partly right or clearly wrong. A pytest report gives agreement per band and on answers the two people scored differently. A fine-tuned small encoder joins the model bake-off.
 - **Eval first.** The eval is the deliverable: 0.80 agreement in every band, not just overall.
 - **Guards.** Invented answers only, never his real ones.
+- **Deferred by DW 2026-11-02.** Scoring the set waits until a scorer for typed answers is actually tried. It needs two people, each scoring on their own; the review page's Scoring set tab keeps them apart and blind.
 - **Note 2026-10-26, for the bake-off.** No scorer exists yet, so nothing changes now. When a scorer is tried, "unsure" (which sends a partly right answer to a structured follow-up, R18) should be defined from more than one signal: whether repeated runs agree, and how far the answer sits from clusters of similar answers. The model's own stated confidence was not reliable enough alone (Cong et al. 2026, preprint). Report how well each signal picks out the answers people scored differently.
 
 ## LTF-18 "What do you think?" cards
