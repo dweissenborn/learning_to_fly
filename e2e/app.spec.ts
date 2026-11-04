@@ -1162,6 +1162,26 @@ test('at Take-off Captain Ada offers two flight paths, and the reef way has its 
   await expect(page.getByText(/Route from Take-off: The reef way/)).toBeVisible();
 });
 
+test('at Bluegum the way ahead shows from the day he lands: the koalas left, then the keeper arc (LTF-30)', async ({ page }) => {
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  await onboard(page);
+  await setSettings(page, { routes: { gull: { to: 'star', at: 1 }, takeoff: { to: 'island', at: 1 } }, journeyAnchor: { at: 5, stop: 1, step: 0, after: 0 } });
+  await seedFinished(page, 30); // landed after 25: six koalas met
+  const ahead = '2 more koalas to meet, then Ranger Tess needs your help at The Tree Nursery.';
+  await expect(page.getByText(`You made it to Australia. ${ahead}`)).toBeVisible(); // the island's greeting
+  await page.getByRole('button', { name: /My journey/ }).click();
+  await expect(page.getByRole('region', { name: 'Your journey' })).toContainText(ahead);
+  await expect(page.getByText(`You made it to Australia. ${ahead}`)).toBeVisible(); // the map's bubble
+  await expect(page.locator('.arc-steps li.next')).toContainText('The Tree Nursery');
+  await expect(page.locator('.arc-steps li.done')).toHaveCount(0);
+  await axe(page, 'Bluegum before the arc');
+  await page.getByRole('button', { name: /Back to island/ }).click();
+  await seedFinished(page, 32); // all eight met
+  await expect(page.getByText('You made it to Australia. Next time you finish a session, Ranger Tess needs your help at The Tree Nursery.')).toBeVisible();
+});
+
 test('after the eighth koala, the keeper arc at Bluegum: its first beat, its stops, and their postcards (LTF-30)', async ({ page }) => {
   await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
     await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});

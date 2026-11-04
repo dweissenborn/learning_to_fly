@@ -153,6 +153,11 @@ export const reachedStops = (stop: number, s: Settings, arcStop = 0) => new Set(
 /** Bluegum (Australia) is the arc's start; its five legs follow the eight koalas, one leg per `legLength` sessions. */
 export const ARC: Stop[] = JOURNEY.arc ? [BY_ID.get('australia')!, ...JOURNEY.arc.stops] : [];
 const ARC_START = { at: 0, stop: 0, step: 0, after: 0 };
+/** Until the arc starts, what comes after the koalas, so Bluegum never reads as the end of the story. */
+export function koalasAhead(after: number) {
+  const left = JOURNEY.koalas.length - (after + 1), help = `Ranger Tess needs your help at ${ARC[1].name}`;
+  return left > 0 ? `${left === 1 ? 'One more koala' : `${left} more koalas`} to meet, then ${help}.` : `Next time you finish a session, ${help}.`;
+}
 function arcOf(after: number, s: Settings) {
   if (!ARC.length || after < JOURNEY.koalas.length) return undefined;
   const sessions = after - JOURNEY.koalas.length;
@@ -290,6 +295,7 @@ export function BeatCard({ now, settings }: { now: JourneyNow; settings: Setting
     return <section className="card journey-card stack" aria-label="Your journey">
       <div className="row"><span style={{ fontSize: '1.8rem' }} aria-hidden>🐨</span><h3 style={{ margin: 0 }}>Bluegum Koala Sanctuary</h3></div>
       <p style={{ margin: 0 }}>{k && now.after + 1 < JOURNEY.koalas.length ? 'Next time you finish a session, you meet another koala.' : JOURNEY.allMet}</p>
+      {ARC.length > 0 && <p style={{ margin: 0 }}>{koalasAhead(now.after)}</p>}
     </section>;
   }
   const lines = [b.text, ...(b.notice ? passageText(noticePassage(b)) : []), ...(b.cope ? [b.cope] : []), ...(b.choice && b.chosen === undefined ? [b.choice.ask] : [])];
@@ -452,7 +458,7 @@ export function JourneyMap({ settings, progress, onExit }: { settings: Settings;
     <header className="topbar"><h1 style={{ margin: 0 }}>🗺️ My journey</h1><span className="spacer" /><Btn className="quiet small" onPress={onExit}>← Back to island</Btn></header>
     <main className="stack">
       <div className="guide-row"><Guide id={settings.guide} size={64} mood="happy" />
-        <div className="bubble">{now.trip ? (now.trip.done ? 'You are home again, after the whole journey. Your island is waiting.' : now.fork ? "Captain Ada's boat can take you to one more island. Choose one below." : `On the way home. Next stop: ${now.next?.name}.`) : now.arrived ? (now.arc?.done ? 'You are a junior koala keeper at Bluegum. The koalas and the visitors are glad you came.' : now.arc?.next ? `You are at Bluegum Koala Sanctuary, on the way to ${now.arc.next.name}.` : 'You made it to Australia. The koalas are glad you came.') : now.next ? `You are at ${now.here.name}. Next stop: ${now.next.name}. Far away is Australia, where the koalas live.` : `You are at ${now.here.name}. Sea routes go to different islands, and every route reaches Australia. Choose one below.`}</div></div>
+        <div className="bubble">{now.trip ? (now.trip.done ? 'You are home again, after the whole journey. Your island is waiting.' : now.fork ? "Captain Ada's boat can take you to one more island. Choose one below." : `On the way home. Next stop: ${now.next?.name}.`) : now.arrived ? (now.arc?.done ? 'You are a junior koala keeper at Bluegum. The koalas and the visitors are glad you came.' : now.arc?.next ? `You are at Bluegum Koala Sanctuary, on the way to ${now.arc.next.name}.` : `You made it to Australia. ${ARC.length ? koalasAhead(now.after) : 'The koalas are glad you came.'}`) : now.next ? `You are at ${now.here.name}. Next stop: ${now.next.name}. Far away is Australia, where the koalas live.` : `You are at ${now.here.name}. Sea routes go to different islands, and every route reaches Australia. Choose one below.`}</div></div>
       <div className="journey-map">
         <svg viewBox="0 0 1000 560" role="group" aria-label={`Map of the journey. You are at ${now.here.name}.`}>
           <defs><linearGradient id="seaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#bfe3f5" /><stop offset="1" stopColor="#5fb0dc" /></linearGradient></defs>
@@ -518,9 +524,9 @@ export function JourneyMap({ settings, progress, onExit }: { settings: Settings;
         <h2 style={{ margin: 0 }}>Postcards</h2>
         <div className="tiles">{[...stops.filter((_, i) => reached(i)), ...arcReached].map((s) => <Btn key={s.id} onPress={() => setOpen(s.id)}><span className="ico" aria-hidden>{s.emoji}</span>{s.name}</Btn>)}</div>
       </section>
-      {now.arc && <section className="card stack" aria-labelledby="bluegum-h">
+      {now.arrived && ARC.length > 0 && <section className="card stack" aria-labelledby="bluegum-h">
         <h2 id="bluegum-h" style={{ margin: 0 }}>Bluegum Koala Sanctuary</h2>
-        <ol className="arc-steps">{ARC.slice(1).map((s, i) => { const done = i + 1 <= now.arc!.stop, next = i + 1 === now.arc!.stop + 1;
+        <ol className="arc-steps">{ARC.slice(1).map((s, i) => { const at = now.arc?.stop ?? 0, done = i + 1 <= at, next = i + 1 === at + 1; // before the arc: all ahead, the first next
           return <li key={s.id} className={done ? 'done' : next ? 'next' : ''}><span aria-hidden>{done ? '✅' : s.emoji}</span> {s.name}<span className="sr-only">{done ? ', reached' : next ? ', next' : ''}</span></li>; })}</ol>
       </section>}
       {met.length > 0 && <section className="card stack">

@@ -13,7 +13,7 @@ import { Onboarding, ComfortPanel } from './Onboarding';
 import { Adult } from './Adult';
 import { Btn, NewThing } from './ui';
 import { FEATURES, nextFeature, opinions } from './features';
-import { arcStart, finishedCount, forkMigration, islandArrival, islandsReached, IslandQuest, islandView, journeyNow, JourneyMap, Keepsakes, LegDots, JOURNEY, questDone } from './journey';
+import { arcStart, finishedCount, forkMigration, islandArrival, islandsReached, IslandQuest, islandView, journeyNow, JourneyMap, Keepsakes, koalasAhead, LegDots, JOURNEY, questDone } from './journey';
 import { setSound, setVoice } from './media';
 import { autoSave, isFamily, useCloudSync } from './cloud';
 import { SaveProgress, WhoIsLearning } from './CloudScreens';
@@ -136,7 +136,7 @@ export function App() {
     : jn.fork.kind === 'home' ? "Captain Ada's boat can take you to one more island on the way home. Open My journey to choose it." : `Sea routes leave ${jn.here.name}. Open My journey to choose which island to sail to.`)
     : jn.beat ? `${jn.beat.text}${jn.beat.cope ? ' ' + jn.beat.cope : ''}${jn.beat.choice && jn.beat.chosen === undefined ? ' Open My journey to choose a plan.' : ''}`
     : jn.trip?.done && JOURNEY.home ? JOURNEY.home.stops.at(-1)!.postcard.at(-1)!
-    : jn.arc?.done && JOURNEY.arc ? `${JOURNEY.arc.done}${JOURNEY.home && !settings.homeTrip ? ' ' + JOURNEY.home.offer.text + ' Open My journey to choose.' : ''}` : 'You made it to Australia. The koalas are waiting for you.';
+    : jn.arc?.done && JOURNEY.arc ? `${JOURNEY.arc.done}${JOURNEY.home && !settings.homeTrip ? ' ' + JOURNEY.home.offer.text + ' Open My journey to choose.' : ''}` : `You made it to Australia. ${JOURNEY.arc ? koalasAhead(jn.after) : 'The koalas are waiting for you.'}`;
   const newThing = asked ? FEATURES.find((f) => f.id === asked) : nextFeature(events);
   const say = `${hello}, ${settings.name}. ${todayDone ? 'You already read today. ' : ''}${story}`;
 
