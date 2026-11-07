@@ -3996,6 +3996,232 @@
         "retrieved": "2026-10-13",
         "adapted": false
       }
+    },
+    {
+      "id": "f4-p66",
+      "title": "The Sea Salt Crackers",
+      "kind": "label",
+      "sentences": [
+        "Ana packs a snack for a day at the beach.",
+        "She cannot eat nuts."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Tide Time Sea Salt Crackers",
+        "rows": [
+          {
+            "k": "Contains",
+            "v": "wheat, milk"
+          },
+          {
+            "k": "Serving size",
+            "v": "12 crackers"
+          },
+          {
+            "k": "Best before",
+            "v": "August 9"
+          }
+        ]
+      },
+      "picture": "🏖️🍘",
+      "topics": ["food", "ocean"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Sea Salt Crackers",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p67",
+      "title": "Ben's Seal Talk Ticket",
+      "kind": "ticket",
+      "sentences": [
+        "Ben has a ticket to see the seals at the Harbor Seal Center."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Seal Center: Ticket",
+        "rows": [
+          {
+            "k": "Event",
+            "v": "Seal Feeding Talk"
+          },
+          {
+            "k": "Date",
+            "v": "Sunday, April 12"
+          },
+          {
+            "k": "Doors open",
+            "v": "1:30 PM"
+          },
+          {
+            "k": "Talk starts",
+            "v": "2:00 PM"
+          },
+          {
+            "k": "Seat",
+            "v": "B7"
+          }
+        ]
+      },
+      "picture": "🦭🎟️",
+      "topics": ["animals", "ocean"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ben's Seal Talk Ticket",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p68",
+      "title": "Token Prices at the Harbor Arcade",
+      "kind": "sign",
+      "sentences": [
+        "Ana and Ben go to the Harbor Arcade on Saturday.",
+        "They read the signs at the token desk."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "1 TOKEN: $1",
+            "icon": "🪙"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "6 TOKENS: $5",
+            "icon": "🏷️"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "SPACE RACER: 2 TOKENS A PLAY",
+            "icon": "🚀"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "ROBOT MAZE: 3 TOKENS A PLAY",
+            "icon": "🤖"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "OPEN 11 AM TO 9 PM",
+            "icon": "🕹️"
+          }
+        ]
+      },
+      "picture": "🕹️🪙",
+      "topics": ["games", "money"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Token Prices at the Harbor Arcade",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p69",
+      "title": "Snow Day Treats",
+      "kind": "list",
+      "sentences": [
+        "It snows in Harbor Town, so there is no school today.",
+        "Ana and Ben walk to the Lighthouse Café."
+      ],
+      "visual": {
+        "type": "list",
+        "title": "Lighthouse Café: Snow Day Treats",
+        "ordered": false,
+        "rows": [
+          "Hot cocoa: $2. Contains milk.",
+          "Apple cider: $2. Contains apples.",
+          "Cheese bun: $3. Contains wheat, milk.",
+          "Peanut butter toast: $2. Contains peanuts, wheat.",
+          "Snowflake cookie: $1. Contains wheat, eggs, milk.",
+          "Walnut bite: $1. Contains walnuts, honey."
+        ]
+      },
+      "picture": "❄️☕",
+      "topics": ["food", "weather", "money"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Snow Day Treats",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f4-p70",
+      "title": "The Tide Pool Walk Pass",
+      "kind": "ticket",
+      "sentences": [
+        "Maya and Priya have passes for a tide pool walk at Harbor Point.",
+        "A park ranger leads the walk."
+      ],
+      "visual": {
+        "type": "label",
+        "title": "Harbor Point Tide Pool Walk: Pass",
+        "rows": [
+          {
+            "k": "Date",
+            "v": "Saturday, May 16"
+          },
+          {
+            "k": "Walk starts",
+            "v": "3:30 PM at the lifeguard tower"
+          },
+          {
+            "k": "Be there",
+            "v": "10 minutes before the walk starts"
+          },
+          {
+            "k": "Walk ends",
+            "v": "4:30 PM"
+          },
+          {
+            "k": "If it rains",
+            "v": "The walk moves to Sunday, May 17, at the same time."
+          },
+          {
+            "k": "Rule",
+            "v": "Look at the crabs and sea stars. Do not pick them up."
+          }
+        ]
+      },
+      "picture": "🦀🎟️",
+      "topics": ["ocean", "animals", "weather"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Tide Pool Walk Pass",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -8825,6 +9051,255 @@
       "inference": 1,
       "checkup": "reef",
       "tags": ["plan-change", "time-math", "ticket"]
+    },
+    {
+      "id": "f4-i172",
+      "skill": "F4",
+      "passage": "f4-p66",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Ana cannot eat nuts. Can she pack these crackers for the beach?",
+      "options": [
+        "Yes. The Contains row has no nuts.",
+        "No. The crackers have nuts."
+      ],
+      "pictures": ["✅", "🥜"],
+      "answer": 0,
+      "evidence": [0],
+      "hint": "Read the Contains row. Look for the word nuts or peanuts.",
+      "explain": "Yes, Ana can pack them. The Contains row says wheat and milk. It does not say nuts.",
+      "inference": 1,
+      "tags": ["allergen", "contains"]
+    },
+    {
+      "id": "f4-i173",
+      "skill": "F4",
+      "passage": "f4-p66",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Ana wants to eat one serving at the beach. Tap the row that tells her how many crackers to take.",
+      "unit": "row",
+      "answer": [1],
+      "evidence": [1],
+      "hint": "Look for a row that tells how much to eat at one time.",
+      "explain": "Tap the Serving size row. It says 12 crackers, so Ana takes 12 crackers.",
+      "inference": 0,
+      "tags": ["serving-size", "find-row"]
+    },
+    {
+      "id": "f4-i174",
+      "skill": "F4",
+      "passage": "f4-p66",
+      "format": "tap",
+      "level": 1,
+      "prompt": "The beach day is August 6. Will the crackers still be good that day?",
+      "options": [
+        "Yes. August 6 comes before August 9.",
+        "No. August 6 comes after August 9."
+      ],
+      "answer": 0,
+      "evidence": [2],
+      "hint": "Find the Best before row. Is August 6 before or after that date?",
+      "explain": "Yes. The Best before row says August 9, and August 6 comes before August 9.",
+      "inference": 1,
+      "tags": ["best-before", "date", "date-compare"]
+    },
+    {
+      "id": "f4-i175",
+      "skill": "F4",
+      "passage": "f4-p67",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Ben wants to go in when the doors open. What time should he be at the doors?",
+      "options": [
+        "2:00 PM",
+        "1:30 PM",
+        "1:30 AM"
+      ],
+      "answer": 1,
+      "evidence": [2],
+      "hint": "Find the row about the doors. Check if the time says AM or PM.",
+      "explain": "Ben should be at the doors at 1:30 PM. It is in the Doors open row.",
+      "inference": 0,
+      "tags": ["two-times", "time-pm"]
+    },
+    {
+      "id": "f4-i176",
+      "skill": "F4",
+      "passage": "f4-p67",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Ben walks into the seal room. Tap the seat on his ticket.",
+      "scene": "hall",
+      "objects": [
+        {
+          "label": "Seat B1",
+          "emoji": "💺",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "B1"
+          }
+        },
+        {
+          "label": "Seat B7",
+          "emoji": "💺",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "B7"
+          }
+        },
+        {
+          "label": "Seat D7",
+          "emoji": "💺",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "D7"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [4],
+      "hint": "Find the Seat row on the ticket. Match the letter and the number.",
+      "explain": "Ben sits in seat B7. It is in the Seat row of his ticket.",
+      "inference": 0,
+      "tags": ["seat", "similar-numbers"],
+      "transfer": true
+    },
+    {
+      "id": "f4-i177",
+      "skill": "F4",
+      "passage": "f4-p68",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben wants 6 tokens. Which way costs less?",
+      "options": [
+        "Buy 6 tokens for $5.",
+        "Buy 1 token at a time, for $6 in all.",
+        "Both ways cost the same."
+      ],
+      "answer": 0,
+      "evidence": [0, 1],
+      "hint": "Work out what 6 tokens cost if he buys them one at a time. Then compare that with the green sign.",
+      "explain": "Buying 6 tokens for $5 costs less. One at a time, 6 tokens cost $6, because each token is $1. The green sign says 6 tokens for $5.",
+      "inference": 1,
+      "tags": ["price-compare", "price-math"]
+    },
+    {
+      "id": "f4-i178",
+      "skill": "F4",
+      "passage": "f4-p68",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ana has 5 tokens. She plays Robot Maze one time. Does she have enough tokens left to play Space Racer?",
+      "options": [
+        "Yes. She has 2 tokens left, and Space Racer costs 2.",
+        "No. She has only 1 token left.",
+        "No. Space Racer costs 3 tokens."
+      ],
+      "answer": 0,
+      "evidence": [2, 3],
+      "hint": "Find what Robot Maze costs and take it from 5. Then find what Space Racer costs.",
+      "explain": "Yes. Robot Maze costs 3 tokens, and 5 - 3 = 2. Space Racer costs 2 tokens, so Ana has just enough. Both prices are on the blue signs.",
+      "inference": 1,
+      "tags": ["price-math", "subtract"]
+    },
+    {
+      "id": "f4-i179",
+      "skill": "F4",
+      "passage": "f4-p68",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "It is 8:30 PM. Ana and Ben want to play one more game. Tap the sign that tells them if the arcade is still open.",
+      "unit": "row",
+      "answer": [4],
+      "evidence": [4],
+      "hint": "Look for a sign with times on it.",
+      "explain": "Tap the OPEN 11 AM TO 9 PM sign. The arcade closes at 9 PM, and 8:30 PM is before 9 PM, so they can play one more game.",
+      "inference": 0,
+      "tags": ["closing-time", "time-pm", "find-row"]
+    },
+    {
+      "id": "f4-i180",
+      "skill": "F4",
+      "passage": "f4-p69",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Ana cannot eat nuts. Sort the treats so she knows which ones she can order.",
+      "bins": ["Safe for Ana", "Not safe for Ana"],
+      "cards": [
+        { "text": "Hot cocoa", "bin": 0, "emoji": "☕" },
+        { "text": "Apple cider", "bin": 0, "emoji": "🍎" },
+        { "text": "Cheese bun", "bin": 0, "emoji": "🧀" },
+        { "text": "Peanut butter toast", "bin": 1, "emoji": "🥜" },
+        { "text": "Snowflake cookie", "bin": 0, "emoji": "🍪" },
+        { "text": "Walnut bite", "bin": 1, "emoji": "🌰" }
+      ],
+      "evidence": [3, 5],
+      "hint": "Read what each treat contains. Look for peanuts or any other nut.",
+      "explain": "Peanut butter toast has peanuts, and the walnut bite has walnuts, so they are not safe for Ana. Hot cocoa, apple cider, the cheese bun and the snowflake cookie have no nuts, so they are safe. Look at the Contains part of each row.",
+      "inference": 1,
+      "tags": ["allergen", "contains", "list"],
+      "transfer": true
+    },
+    {
+      "id": "f4-i181",
+      "skill": "F4",
+      "passage": "f4-p69",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ana has $3. She buys a hot cocoa. She cannot eat nuts. Which treat can she buy and eat with the money she has left?",
+      "options": [
+        "Snowflake cookie",
+        "Walnut bite",
+        "Cheese bun"
+      ],
+      "answer": 0,
+      "evidence": [0, 4],
+      "hint": "Find the price of hot cocoa and take it from $3. Then find a treat that costs that much or less and has no nuts.",
+      "explain": "She can buy the snowflake cookie. Hot cocoa is $2, so Ana has $1 left. The snowflake cookie is $1 and has no nuts. The walnut bite costs $1, but it has nuts, and the cheese bun costs $3.",
+      "inference": 1,
+      "tags": ["price-math", "allergen", "two-rules"]
+    },
+    {
+      "id": "f4-i182",
+      "skill": "F4",
+      "passage": "f4-p70",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What time should Maya and Priya be at the lifeguard tower on Saturday?",
+      "options": [
+        "3:20 PM",
+        "3:30 PM",
+        "3:40 PM"
+      ],
+      "answer": 0,
+      "evidence": [1, 2],
+      "hint": "Find when the walk starts. Then read the Be there row and count back.",
+      "explain": "They should be there at 3:20 PM. The walk starts at 3:30 PM, and the Be there row says 10 minutes before. 10 minutes before 3:30 PM is 3:20 PM.",
+      "inference": 1,
+      "tags": ["time-pm", "time-math", "two-rows"]
+    },
+    {
+      "id": "f4-i183",
+      "skill": "F4",
+      "passage": "f4-p70",
+      "format": "tap",
+      "level": 2,
+      "prompt": "It rains all day on Saturday. When should Maya and Priya go to the walk now?",
+      "options": [
+        "On Saturday. The walk starts at 3:30 PM.",
+        "On Sunday. The walk starts at 3:30 PM.",
+        "On Sunday. The walk starts at 4:30 PM."
+      ],
+      "answer": 1,
+      "evidence": [1, 4],
+      "hint": "Find the row about rain. Then check what time the walk starts.",
+      "explain": "They should go on Sunday. The If it rains row says the walk moves to Sunday, May 17, at the same time, so it still starts at 3:30 PM.",
+      "inference": 1,
+      "tags": ["plan-change", "weather", "date"]
     }
   ],
   "model": {

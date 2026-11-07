@@ -2623,6 +2623,214 @@
         "retrieved": "2026-10-12",
         "adapted": false
       }
+    },
+    {
+      "id": "n4-p56",
+      "title": "Ben's Rain Gauge",
+      "kind": "story",
+      "picture": "🌧️📏",
+      "sentences": [
+        "Ben put a rain gauge by the fence in his backyard.",
+        "It was a clear plastic tube with lines on the side.",
+        "On Monday night, rain fell for hours.",
+        "Ben checked the gauge after breakfast.",
+        "It held one inch of water.",
+        "He wrote the amount in his weather notebook.",
+        "Then he poured the water out of the gauge.",
+        "He put it back by the fence."
+      ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 1, "w": "It", "n": 1, "to": "the rain gauge" },
+        { "s": 4, "w": "It", "n": 1, "to": "the rain gauge" },
+        { "s": 5, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 5, "w": "his", "n": 1, "to": "Ben" },
+        { "s": 6, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 7, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 7, "w": "it", "n": 1, "to": "the rain gauge" }
+      ],
+      "topics": [
+        "weather"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Ben's Rain Gauge",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p57",
+      "title": "Leo's Game Controller",
+      "kind": "story",
+      "picture": "🎮🔋",
+      "sentences": [
+        "Leo sat down to play his racing game.",
+        "He picked up his controller and pressed start.",
+        "But the game did not start.",
+        "A small red light blinked on the controller.",
+        "It needed to charge.",
+        "Leo plugged it into the cable by the TV.",
+        "After one hour, the light on it turned green.",
+        "He pressed start again, and the game began.",
+        "Leo smiled and played until dinner."
+      ],
+      "refs": [
+        { "s": 0, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 1, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 1, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 4, "w": "It", "n": 1, "to": "the controller" },
+        { "s": 5, "w": "it", "n": 1, "to": "the controller" },
+        { "s": 6, "w": "it", "n": 1, "to": "the controller" },
+        { "s": 7, "w": "He", "n": 1, "to": "Leo" }
+      ],
+      "topics": [
+        "games",
+        "home"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Leo's Game Controller",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p58",
+      "title": "The Sea Otter",
+      "kind": "article",
+      "picture": "🦦",
+      "sentences": [
+        "A sea otter is an animal that lives in the sea.",
+        "It has thick brown fur.",
+        "The fur keeps it warm in cold water.",
+        "A sea otter often floats on its back.",
+        "It holds a flat rock on its chest.",
+        "Then it hits a clam on the rock.",
+        "The shell breaks open, and the otter eats the clam."
+      ],
+      "refs": [
+        { "s": 1, "w": "It", "n": 1, "to": "the sea otter" },
+        { "s": 2, "w": "it", "n": 1, "to": "the sea otter" },
+        { "s": 3, "w": "its", "n": 1, "to": "the sea otter" },
+        { "s": 4, "w": "It", "n": 1, "to": "the sea otter" },
+        { "s": 4, "w": "its", "n": 1, "to": "the sea otter" },
+        { "s": 5, "w": "it", "n": 1, "to": "the sea otter" }
+      ],
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Sea Otter",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p59",
+      "title": "Chess on a Rainy Day",
+      "kind": "story",
+      "picture": "♟️🌧️",
+      "sentences": [
+        "Ana and Leo planned to meet at the skate park on Saturday.",
+        "Then dark clouds came over Harbor Town, and rain began to fall.",
+        "Leo sent Ana a text from his house.",
+        "He asked her to meet him at the library instead.",
+        "Ana put on her rain jacket and walked there.",
+        "She found Leo at a table by the window.",
+        "He had a chess set on the table.",
+        "Ana set up the white pieces, and Leo set up the black pieces.",
+        "She won the first game.",
+        "Then he won the second game.",
+        "When the rain stopped, Ana and Leo walked to the skate park."
+      ],
+      "refs": [
+        { "s": 2, "w": "his", "n": 1, "to": "Leo" },
+        { "s": 3, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 3, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 3, "w": "him", "n": 1, "to": "Leo" },
+        { "s": 4, "w": "her", "n": 1, "to": "Ana" },
+        { "s": 5, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 6, "w": "He", "n": 1, "to": "Leo" },
+        { "s": 8, "w": "She", "n": 1, "to": "Ana" },
+        { "s": 9, "w": "he", "n": 1, "to": "Leo" }
+      ],
+      "topics": [
+        "weather",
+        "games",
+        "friends"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Chess on a Rainy Day",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n4-p60",
+      "title": "The Seal by the Dock",
+      "kind": "story",
+      "picture": "🦭⚓",
+      "sentences": [
+        "Priya and Ben walked to the end of the harbor dock after school.",
+        "A gray seal was lying on a flat rock near the boats.",
+        "Ben pointed at it and whispered to Priya.",
+        "She took out her phone to take a photo.",
+        "The seal lifted its head and yawned.",
+        "Then it slid off the rock into the water.",
+        "Ben waited for it to come back up.",
+        "After a minute, he saw its head pop up by a boat.",
+        "He called Priya over, and she took the photo.",
+        "She showed him the picture on the walk home."
+      ],
+      "refs": [
+        { "s": 2, "w": "it", "n": 1, "to": "the gray seal" },
+        { "s": 3, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 3, "w": "her", "n": 1, "to": "Priya" },
+        { "s": 4, "w": "its", "n": 1, "to": "the seal" },
+        { "s": 5, "w": "it", "n": 1, "to": "the seal" },
+        { "s": 6, "w": "it", "n": 1, "to": "the seal" },
+        { "s": 7, "w": "he", "n": 1, "to": "Ben" },
+        { "s": 7, "w": "its", "n": 1, "to": "the seal" },
+        { "s": 8, "w": "He", "n": 1, "to": "Ben" },
+        { "s": 8, "w": "she", "n": 1, "to": "Priya" },
+        { "s": 9, "w": "She", "n": 1, "to": "Priya" },
+        { "s": 9, "w": "him", "n": 1, "to": "Ben" }
+      ],
+      "topics": [
+        "ocean",
+        "animals",
+        "friends"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Seal by the Dock",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -7335,6 +7543,303 @@
         "possessive",
         "two-groups",
         "article"
+      ]
+    },
+    {
+      "id": "n4-i174",
+      "skill": "N4",
+      "passage": "n4-p56",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Read: \"It held one inch of water.\" What does \"It\" mean?",
+      "options": [
+        "the backyard",
+        "the rain gauge",
+        "the notebook"
+      ],
+      "answer": 1,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Look at the sentence just before. Ask which thing Ben checked.",
+      "explain": "\"It\" means the rain gauge. Ben checked the gauge, and the gauge held one inch of water.",
+      "inference": 1,
+      "tags": [
+        "it"
+      ]
+    },
+    {
+      "id": "n4-i175",
+      "skill": "N4",
+      "passage": "n4-p56",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "The word \"he\" is marked. Tap the name that \"he\" means.",
+      "unit": "word",
+      "focus": "he",
+      "accept": [
+        "Ben"
+      ],
+      "evidence": [
+        3,
+        5,
+        6
+      ],
+      "hint": "\"He\" means a boy or a man. Look back for a name.",
+      "explain": "\"He\" means Ben. Ben is the only person in the story, and he checked the gauge.",
+      "inference": 1,
+      "tags": []
+    },
+    {
+      "id": "n4-i176",
+      "skill": "N4",
+      "passage": "n4-p57",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "The word \"it\" is marked. Tap the word for the thing that \"it\" means.",
+      "unit": "word",
+      "focus": "it",
+      "accept": [
+        "controller"
+      ],
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Ask which thing can be plugged in to charge. Look back at the things in the sentences before.",
+      "explain": "\"It\" means the controller. The red light blinked on the controller, and Leo plugged the controller in to charge.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "it-machine"
+      ]
+    },
+    {
+      "id": "n4-i177",
+      "skill": "N4",
+      "passage": "n4-p57",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Read: \"Leo plugged it into the cable by the TV.\" What did Leo plug in?",
+      "options": [
+        "the TV",
+        "the racing game",
+        "the controller"
+      ],
+      "answer": 2,
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "hint": "Look at the sentences just before. Find the thing that needed to charge.",
+      "explain": "Leo plugged in the controller. The controller needed to charge, so he plugged it into the cable.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "it-machine"
+      ]
+    },
+    {
+      "id": "n4-i178",
+      "skill": "N4",
+      "passage": "n4-p58",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Read: \"The fur keeps it warm in cold water.\" What does \"it\" mean?",
+      "options": [
+        "the sea otter",
+        "the fur",
+        "the water"
+      ],
+      "answer": 0,
+      "evidence": [
+        0,
+        1,
+        2
+      ],
+      "hint": "Ask who has the fur. Look at the sentences before.",
+      "explain": "\"It\" means the sea otter. The sea otter has thick fur, and the fur keeps the otter warm.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "it",
+        "animal",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i179",
+      "skill": "N4",
+      "passage": "n4-p58",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "The word \"its\" is marked. Tap the word for the animal that \"its\" means.",
+      "unit": "word",
+      "focus": "its",
+      "accept": [
+        "otter"
+      ],
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "\"Its\" means something belongs to an animal or a thing. Look back for the animal.",
+      "explain": "\"Its\" means the sea otter's. The sea otter floats on its back and holds a rock on its chest.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "possessive",
+        "animal",
+        "article"
+      ]
+    },
+    {
+      "id": "n4-i180",
+      "skill": "N4",
+      "passage": "n4-p59",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "The word \"She\" is marked. Tap the name that \"She\" means.",
+      "unit": "word",
+      "focus": "She",
+      "accept": [
+        "Ana"
+      ],
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "\"She\" means a girl or a woman. Look back for a girl's name.",
+      "explain": "\"She\" means Ana. Ana walked to the library, and she found Leo at a table.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i181",
+      "skill": "N4",
+      "passage": "n4-p59",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"He asked her to meet him at the library instead.\" Who is \"her\"?",
+      "options": [
+        "Leo",
+        "Ana",
+        "Ana and Leo"
+      ],
+      "answer": 1,
+      "evidence": [
+        2,
+        3
+      ],
+      "hint": "\"Her\" means one girl or one woman. Look at the sentence before. Find who got the text.",
+      "explain": "\"Her\" means Ana. Leo sent Ana a text, and he asked Ana to meet him at the library.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i182",
+      "skill": "N4",
+      "passage": "n4-p59",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Read each sentence. Put it under the name that \"he\", \"his\", \"she\" or \"her\" means.",
+      "bins": [
+        "Ana",
+        "Leo"
+      ],
+      "cards": [
+        { "text": "Leo sent Ana a text from his house.", "bin": 1 },
+        { "text": "Ana put on her rain jacket and walked there.", "bin": 0 },
+        { "text": "She found Leo at a table by the window.", "bin": 0 },
+        { "text": "He had a chess set on the table.", "bin": 1 },
+        { "text": "She won the first game.", "bin": 0 },
+        { "text": "Then he won the second game.", "bin": 1 }
+      ],
+      "hint": "\"He\" and \"his\" mean a boy. \"She\" and \"her\" mean a girl.",
+      "explain": "\"He\" and \"his\" mean Leo, the boy. \"She\" and \"her\" mean Ana, the girl. A name in the sentence can be a different person from the pronoun.",
+      "inference": 1,
+      "transfer": true,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i183",
+      "skill": "N4",
+      "passage": "n4-p60",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "The word \"he\" is marked. Tap the name that \"he\" means.",
+      "unit": "word",
+      "focus": "he",
+      "accept": [
+        "Ben"
+      ],
+      "evidence": [
+        6,
+        7
+      ],
+      "hint": "\"He\" means a boy or a man. Look back for a boy's name.",
+      "explain": "\"He\" means Ben. Ben waited for the seal, and he saw its head pop up by a boat.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i184",
+      "skill": "N4",
+      "passage": "n4-p60",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"She showed him the picture on the walk home.\" Who is \"him\"?",
+      "options": [
+        "Ben",
+        "Priya",
+        "the seal"
+      ],
+      "answer": 0,
+      "evidence": [
+        8,
+        9
+      ],
+      "hint": "\"Him\" means one boy or one man. Find the boy in the story.",
+      "explain": "\"Him\" means Ben. Priya took the photo, and she showed the picture to Ben.",
+      "inference": 1,
+      "tags": [
+        "two-characters"
+      ]
+    },
+    {
+      "id": "n4-i185",
+      "skill": "N4",
+      "passage": "n4-p60",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Read: \"Then it slid off the rock into the water.\" What does \"it\" mean?",
+      "options": [
+        "the phone",
+        "the boat",
+        "the seal"
+      ],
+      "answer": 2,
+      "evidence": [
+        4,
+        5
+      ],
+      "hint": "\"It\" can mean an animal. Look at the sentence before. Ask which thing in the story can move by itself.",
+      "explain": "\"It\" means the seal. The seal lifted its head, and then the seal slid off the rock into the water.",
+      "inference": 1,
+      "tags": [
+        "it",
+        "animal"
       ]
     }
   ],

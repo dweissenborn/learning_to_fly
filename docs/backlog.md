@@ -2,6 +2,13 @@
 
 Notes on work still to do. Newest first.
 
+## New content, 2026-11-07
+
+DW asked for more texts where he was running low: the six skills with the fewest unseen questions at his level (F1 signs, F4 labels and prices, N2 order of events, N4 who "he", "she" and "it" mean, N5 feelings, N6 main idea and key details). Thirty passages and 72 questions are new, five passages and twelve questions per skill, at levels 1 and 2. All pass the reading bands and the content checks with nothing new flagged. A literal-reading pre-screen sent 14 flags to DW on the review page, and DW chose the suggested fix for all 14. One fix was cut to fit the band: Sam on the sled hill "held the sled tight" rather than "held the sides of the sled tight", which kept that level 1 story at 70 words.
+- **Facts.** Wilson Bentley took "one of the first" snowflake photos in 1885, not the first. Small birds fly at night "on the trip", and a sea otter is no longer "a small animal".
+- **Wording.** A checkers piece moves "forward on a slant", the lighthouse light "goes dark, and then starts again", and the clinic sign says "GO IN WHEN THE VET CALLS YOUR PET'S NAME". The price question asks which treat Ana "can buy and eat". The tide-pool rock and the rainy-day game say where and when.
+- **Answers and explanations.** The know-think highlight on the look-alike dog takes only the sentence where Sam calls "Pixel"; the sentence saying the dog looked like Pixel is the narrator's, not Sam's thought. The sandcastle's "took a photo of it and sent it" is now "sent her mom a photo of the new castle", in the story and its reason card.
+
 ## Content review, 2026-11-02
 
 DW chose a pre-screen in place of reading every drafted line. It covered all 170 word meanings (LTF-04), the six "Does it fit?" pairs (LTF-59), the story-problem templates in every setting (LTF-42), and 17 stops: four islands, the reef way, the keeper arc and the way home (LTF-21 to LTF-27, LTF-30 to LTF-35). Each line was read as a literal reader would read it, and 36 flags went to DW on the review page. DW chose the suggested fix for all 36, and every fix is in.

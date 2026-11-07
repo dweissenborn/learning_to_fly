@@ -2980,6 +2980,280 @@
         "retrieved": "2026-10-12",
         "adapted": false
       }
+    },
+    {
+      "id": "f1-p61",
+      "title": "At the Pet Clinic",
+      "kind": "sign",
+      "sentences": [
+        "Sam takes his dog Pixel to the pet clinic.",
+        "Pixel needs a checkup.",
+        "Sam reads the signs in the waiting room."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "CATS WAIT HERE",
+            "icon": "🐈"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "DOGS WAIT HERE",
+            "icon": "🐕"
+          },
+          {
+            "shape": "circle",
+            "color": "blue",
+            "text": "KEEP DOGS ON A LEASH",
+            "icon": "🦮"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "GO IN WHEN THE VET CALLS YOUR PET'S NAME",
+            "icon": "📣"
+          }
+        ]
+      },
+      "picture": "🐕🩺",
+      "topics": [
+        "animals"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "At the Pet Clinic",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p62",
+      "title": "Tide Pool Path",
+      "kind": "sign",
+      "sentences": [
+        "Maya and Leo go to Shell Cove.",
+        "The tide is low.",
+        "They want to see the tide pools."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "TIDE POOLS THIS WAY",
+            "icon": "⬅️"
+          },
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "BOAT RAMP: BOATS ONLY",
+            "icon": "🚤"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "PUT ROCKS BACK WHERE YOU FOUND THEM",
+            "icon": "🪨"
+          }
+        ]
+      },
+      "picture": "🐚🌊",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Tide Pool Path",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p63",
+      "title": "Mini Golf in the Rain",
+      "kind": "sign",
+      "sentences": [
+        "Leo and Sam play at Lantern Mini Golf.",
+        "On hole 4, it starts to rain.",
+        "They read the signs by the clubhouse."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "red",
+            "text": "MINI GOLF CLOSED WHEN IT RAINS",
+            "icon": "🌧️"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "HOLE 1 STARTS HERE",
+            "icon": "⛳"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "RETURN CLUBS AND BALLS HERE",
+            "icon": "🏌️"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "INDOOR GAMES ROOM OPEN",
+            "icon": "🕹️"
+          }
+        ]
+      },
+      "picture": "⛳🌧️",
+      "topics": [
+        "games",
+        "weather"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Mini Golf in the Rain",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p64",
+      "title": "Whale Watch Pier",
+      "kind": "sign",
+      "sentences": [
+        "Priya and her dad go on a whale watch trip.",
+        "The boat leaves from Seal Point Pier.",
+        "They read the signs."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "FISHING TRIP: LINE UP HERE",
+            "icon": "🎣"
+          },
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "WHALE WATCH TRIP: LINE UP HERE",
+            "icon": "🐋"
+          },
+          {
+            "shape": "circle",
+            "color": "blue",
+            "text": "PUT ON A LIFE JACKET BEFORE YOU GET ON THE BOAT",
+            "icon": "🦺"
+          },
+          {
+            "shape": "circle",
+            "color": "blue",
+            "text": "STAY IN YOUR SEAT WHILE THE BOAT MOVES",
+            "icon": "💺"
+          }
+        ]
+      },
+      "picture": "🐋🛥️",
+      "topics": [
+        "ocean",
+        "animals"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Whale Watch Pier",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "f1-p65",
+      "title": "Video Game Contest",
+      "kind": "sign",
+      "sentences": [
+        "Ana and Ben play in a video game contest.",
+        "It is at the Harbor Town Community Center.",
+        "They read the signs."
+      ],
+      "visual": {
+        "type": "signs",
+        "signs": [
+          {
+            "shape": "rect",
+            "color": "green",
+            "text": "PLAYERS: SIGN IN HERE",
+            "icon": "📋"
+          },
+          {
+            "shape": "rect",
+            "color": "blue",
+            "text": "WATCH THE GAMES: UP THE STAIRS",
+            "icon": "⬆️"
+          },
+          {
+            "shape": "rect",
+            "color": "white",
+            "text": "PLAYERS ONLY PAST THIS DOOR",
+            "icon": "🎮"
+          },
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "NO FOOD OR DRINKS NEAR THE GAME SCREENS",
+            "icon": "🥤"
+          },
+          {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "SNACK AND DRINK TABLE",
+            "icon": "🍿"
+          },
+          {
+            "shape": "circle",
+            "color": "red",
+            "text": "NO RUNNING IN THE HALL",
+            "icon": "🏃"
+          }
+        ]
+      },
+      "picture": "🎮🏆",
+      "topics": [
+        "games"
+      ],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Video Game Contest",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -7390,6 +7664,449 @@
       "inference": 0,
       "tags": [
         "key-detail"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i168",
+      "skill": "F1",
+      "passage": "f1-p61",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Tap where Sam and his dog Pixel should wait.",
+      "scene": "hall",
+      "objects": [
+        {
+          "label": "Left bench",
+          "emoji": "🪑",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "CATS WAIT HERE",
+            "icon": "🐈"
+          }
+        },
+        {
+          "label": "Right bench",
+          "emoji": "🪑",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "DOGS WAIT HERE",
+            "icon": "🐕"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        1
+      ],
+      "hint": "Think about what kind of pet Pixel is. Find the sign with that word.",
+      "explain": "They wait on the right bench. Its sign says DOGS WAIT HERE, and Pixel is a dog.",
+      "inference": 0,
+      "tags": [
+        "find-sign",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i169",
+      "skill": "F1",
+      "passage": "f1-p61",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What must Sam do with Pixel in the clinic?",
+      "options": [
+        "Keep Pixel on his leash",
+        "Let Pixel walk around by himself",
+        "Leave Pixel by the front door"
+      ],
+      "pictures": [
+        "🦮",
+        "🐕",
+        "🚪"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the sign that tells you what to do with a dog.",
+      "explain": "Sam keeps Pixel on his leash. The blue sign says KEEP DOGS ON A LEASH.",
+      "inference": 0,
+      "tags": [
+        "must-do",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i170",
+      "skill": "F1",
+      "passage": "f1-p61",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Sam and Pixel are on the bench. When should they go in to see the vet?",
+      "options": [
+        "Right away",
+        "When the vet calls Pixel's name",
+        "When Pixel barks"
+      ],
+      "pictures": [
+        "⏩",
+        "📣",
+        "🐕"
+      ],
+      "answer": 1,
+      "evidence": [
+        3
+      ],
+      "hint": "Find the sign that talks about the vet. Read when to go in.",
+      "explain": "They go in when the vet calls Pixel's name. The white sign says GO IN WHEN THE VET CALLS YOUR PET'S NAME.",
+      "inference": 0,
+      "tags": [
+        "when-to-go",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i171",
+      "skill": "F1",
+      "passage": "f1-p62",
+      "format": "scene",
+      "level": 1,
+      "prompt": "Tap the path Maya and Leo should take to the tide pools.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Left path",
+          "emoji": "🐚",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "TIDE POOLS THIS WAY",
+            "icon": "⬅️"
+          }
+        },
+        {
+          "label": "Right path",
+          "emoji": "🚤",
+          "sign": {
+            "shape": "rect",
+            "color": "red",
+            "text": "BOAT RAMP: BOATS ONLY",
+            "icon": "🚤"
+          }
+        }
+      ],
+      "answer": 0,
+      "evidence": [
+        0
+      ],
+      "hint": "Read the sign on each path. Find the words that match where they want to go.",
+      "explain": "They take the left path. Its green sign says TIDE POOLS THIS WAY.",
+      "inference": 0,
+      "tags": [
+        "find-sign",
+        "direction"
+      ]
+    },
+    {
+      "id": "f1-i172",
+      "skill": "F1",
+      "passage": "f1-p62",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Leo lifts a small rock in a tide pool to look at the crabs under it. Now he is done looking. What should he do with the rock?",
+      "options": [
+        "Take it home",
+        "Put it back where he found it",
+        "Leave it on the sand"
+      ],
+      "pictures": [
+        "🎒",
+        "🪨",
+        "🏖️"
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the sign about rocks. Read every word on it.",
+      "explain": "Leo puts the rock back where he found it. The white sign says PUT ROCKS BACK WHERE YOU FOUND THEM.",
+      "inference": 0,
+      "tags": [
+        "how-to",
+        "read-every-word"
+      ]
+    },
+    {
+      "id": "f1-i173",
+      "skill": "F1",
+      "passage": "f1-p63",
+      "format": "scene",
+      "level": 2,
+      "prompt": "It is raining, so Leo and Sam stop playing. Tap where they should put their clubs and balls.",
+      "scene": "park",
+      "objects": [
+        {
+          "label": "Hole 1",
+          "emoji": "⛳",
+          "sign": {
+            "shape": "rect",
+            "color": "green",
+            "text": "HOLE 1 STARTS HERE",
+            "icon": "⛳"
+          }
+        },
+        {
+          "label": "Clubhouse window",
+          "emoji": "🏠",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "RETURN CLUBS AND BALLS HERE",
+            "icon": "🏌️"
+          }
+        },
+        {
+          "label": "Games room door",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "INDOOR GAMES ROOM OPEN",
+            "icon": "🕹️"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        2
+      ],
+      "hint": "Read the sign at each place. Find the sign that tells you what to do with your clubs.",
+      "explain": "They put them at the clubhouse window. Its white sign says RETURN CLUBS AND BALLS HERE.",
+      "inference": 0,
+      "tags": [
+        "find-sign",
+        "closed"
+      ]
+    },
+    {
+      "id": "f1-i174",
+      "skill": "F1",
+      "passage": "f1-p63",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Leo and Sam still want to play a game while it rains. Where can they go?",
+      "options": [
+        "Hole 5",
+        "Hole 1",
+        "The indoor games room"
+      ],
+      "pictures": [
+        "⛳",
+        "🏁",
+        "🕹️"
+      ],
+      "answer": 2,
+      "evidence": [
+        0,
+        3
+      ],
+      "hint": "First find the sign about rain. Then find a place that is open.",
+      "explain": "They can go to the indoor games room. The red sign says MINI GOLF CLOSED WHEN IT RAINS, and the blue sign says INDOOR GAMES ROOM OPEN.",
+      "inference": 1,
+      "tags": [
+        "plan-change",
+        "two-signs"
+      ]
+    },
+    {
+      "id": "f1-i175",
+      "skill": "F1",
+      "passage": "f1-p64",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Priya and her dad want to see whales. Tap the sign that shows where they should line up.",
+      "unit": "row",
+      "answer": [
+        1
+      ],
+      "evidence": [
+        1
+      ],
+      "hint": "Two signs say LINE UP HERE. Read the first words on each one.",
+      "explain": "The WHALE WATCH TRIP: LINE UP HERE sign shows where they line up. The other line is for the fishing trip.",
+      "inference": 0,
+      "tags": [
+        "find-sign",
+        "close-distractor",
+        "same-color"
+      ],
+      "transfer": true
+    },
+    {
+      "id": "f1-i176",
+      "skill": "F1",
+      "passage": "f1-p64",
+      "format": "tap",
+      "level": 2,
+      "prompt": "The boat is at the pier now. What must Priya and her dad do before they get on?",
+      "options": [
+        "Put on a life jacket",
+        "Find a seat",
+        "Line up for the fishing trip"
+      ],
+      "pictures": [
+        "🦺",
+        "💺",
+        "🎣"
+      ],
+      "answer": 0,
+      "evidence": [
+        2
+      ],
+      "hint": "Find the sign with the word BEFORE. Read what it tells you to do.",
+      "explain": "They put on life jackets. The blue sign says PUT ON A LIFE JACKET BEFORE YOU GET ON THE BOAT.",
+      "inference": 0,
+      "tags": [
+        "must-do",
+        "sequence"
+      ]
+    },
+    {
+      "id": "f1-i177",
+      "skill": "F1",
+      "passage": "f1-p65",
+      "format": "scene",
+      "level": 2,
+      "prompt": "Ana and Ben have signed in. Now they go to play their games. Tap the way they should go.",
+      "scene": "hall",
+      "objects": [
+        {
+          "label": "Stairs",
+          "emoji": "🪜",
+          "sign": {
+            "shape": "rect",
+            "color": "blue",
+            "text": "WATCH THE GAMES: UP THE STAIRS",
+            "icon": "⬆️"
+          }
+        },
+        {
+          "label": "Door",
+          "emoji": "🚪",
+          "sign": {
+            "shape": "rect",
+            "color": "white",
+            "text": "PLAYERS ONLY PAST THIS DOOR",
+            "icon": "🎮"
+          }
+        },
+        {
+          "label": "Snack table",
+          "emoji": "🍿",
+          "sign": {
+            "shape": "rect",
+            "color": "yellow",
+            "text": "SNACK AND DRINK TABLE",
+            "icon": "🍿"
+          }
+        }
+      ],
+      "answer": 1,
+      "evidence": [
+        1,
+        2
+      ],
+      "hint": "Think about what Ana and Ben are in the contest. Then find the sign that names them.",
+      "explain": "They go through the door. Its sign says PLAYERS ONLY PAST THIS DOOR, and Ana and Ben are players.",
+      "inference": 1,
+      "tags": [
+        "who-can-go",
+        "close-distractor"
+      ]
+    },
+    {
+      "id": "f1-i178",
+      "skill": "F1",
+      "passage": "f1-p65",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Ben gets thirsty while he plays. He has a bottle of water. Where should he drink it?",
+      "options": [
+        "At the snack and drink table",
+        "At his game screen",
+        "Next to Ana's game screen"
+      ],
+      "pictures": [
+        "🍿",
+        "🎮",
+        "🕹️"
+      ],
+      "answer": 0,
+      "evidence": [
+        3,
+        4
+      ],
+      "hint": "Find the sign about drinks near the screens. Then find a place where drinks are OK.",
+      "explain": "He drinks it at the snack and drink table. The red sign says NO FOOD OR DRINKS NEAR THE GAME SCREENS.",
+      "inference": 1,
+      "tags": [
+        "two-signs",
+        "match-need"
+      ]
+    },
+    {
+      "id": "f1-i179",
+      "skill": "F1",
+      "passage": "f1-p65",
+      "format": "sort",
+      "level": 2,
+      "prompt": "What does each sign do? Put each sign in the right box.",
+      "bins": [
+        "Tells you to stop or keep out",
+        "Tells you where to go"
+      ],
+      "cards": [
+        {
+          "text": "PLAYERS: SIGN IN HERE",
+          "bin": 1,
+          "emoji": "📋"
+        },
+        {
+          "text": "NO RUNNING IN THE HALL",
+          "bin": 0,
+          "emoji": "🏃"
+        },
+        {
+          "text": "WATCH THE GAMES: UP THE STAIRS",
+          "bin": 1,
+          "emoji": "⬆️"
+        },
+        {
+          "text": "NO FOOD OR DRINKS NEAR THE GAME SCREENS",
+          "bin": 0,
+          "emoji": "🥤"
+        },
+        {
+          "text": "SNACK AND DRINK TABLE",
+          "bin": 1,
+          "emoji": "🍿"
+        }
+      ],
+      "evidence": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "hint": "Read each sign. Ask: does it tell me to stop or stay away, or does it show me a place to go?",
+      "explain": "NO RUNNING IN THE HALL and NO FOOD OR DRINKS NEAR THE GAME SCREENS tell you to stop or keep out. PLAYERS: SIGN IN HERE, WATCH THE GAMES: UP THE STAIRS and SNACK AND DRINK TABLE tell you where to go.",
+      "inference": 0,
+      "tags": [
+        "keep-out",
+        "sort"
       ],
       "transfer": true
     }

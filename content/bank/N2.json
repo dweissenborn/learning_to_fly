@@ -2271,6 +2271,173 @@
         "retrieved": "2026-10-13",
         "adapted": false
       }
+    },
+    {
+      "id": "n2-p56",
+      "title": "Pixel at the Beach",
+      "kind": "story",
+      "picture": "🐕🏖️",
+      "sentences": [
+        "On Sunday, Sam took Pixel to the beach.",
+        "First, Pixel ran along the wet sand.",
+        "Then he dug a deep hole.",
+        "A big wave came in and filled the hole with water.",
+        "After that, Sam threw a stick down the beach.",
+        "Pixel ran to get it and brought it back.",
+        "At the end, Sam and Pixel sat on a towel and watched the boats."
+      ],
+      "refs": [
+        { "s": 2, "w": "he", "n": 1, "to": "Pixel" },
+        { "s": 5, "w": "it", "n": 1, "to": "the stick" },
+        { "s": 5, "w": "it", "n": 2, "to": "the stick" }
+      ],
+      "topics": ["animals", "ocean"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Pixel at the Beach",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p57",
+      "title": "Rain at the Skate Park",
+      "kind": "story",
+      "picture": "🛹🌧️",
+      "sentences": [
+        "Leo and Ben planned to skate at the park.",
+        "First, they put on their helmets.",
+        "Then rain began to fall.",
+        "The ramps were too wet for skating.",
+        "So Leo said, \"Let's change the plan.\"",
+        "After that, they watched skate videos.",
+        "They picked a new trick to try.",
+        "At the end, the rain stopped and the ramps dried.",
+        "Leo and Ben tried the trick at the park."
+      ],
+      "refs": [
+        { "s": 1, "w": "they", "n": 1, "to": "Leo and Ben" },
+        { "s": 1, "w": "their", "n": 1, "to": "Leo and Ben" },
+        { "s": 5, "w": "they", "n": 1, "to": "Leo and Ben" },
+        { "s": 6, "w": "They", "n": 1, "to": "Leo and Ben" }
+      ],
+      "topics": ["weather", "sports", "games"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Rain at the Skate Park",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p58",
+      "title": "The Train Game",
+      "kind": "story",
+      "picture": "🚂🎲",
+      "sentences": [
+        "Maya and Priya played a train board game.",
+        "First, they set the board on the table.",
+        "Maya picked a red train, and Priya picked a blue train.",
+        "Then Maya rolled the dice and moved five spaces.",
+        "Next, Priya rolled a six.",
+        "The blue train went over a bridge.",
+        "At the end, the blue train got to the station first.",
+        "Maya smiled and said, \"Good game!\""
+      ],
+      "refs": [
+        { "s": 1, "w": "they", "n": 1, "to": "Maya and Priya" }
+      ],
+      "topics": ["games", "transport"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Train Game",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p59",
+      "title": "No Kayaks Today",
+      "kind": "story",
+      "picture": "🛶🚲🦭",
+      "sentences": [
+        "On Sunday morning, Sam and Grandma Rose planned to paddle a kayak in the harbor.",
+        "First, they walked down to the kayak dock.",
+        "But the wind was strong, and the water had big waves.",
+        "A sign on the dock said, \"No kayaks today.\"",
+        "So Grandma Rose said, \"We can ride bikes on the coast path instead.\"",
+        "Then they rented two bikes at Okafor's Bike Shop.",
+        "Mr. Okafor gave them each a helmet.",
+        "Next, they rode along the path beside the sea.",
+        "They stopped to watch six seals on the rocks.",
+        "At the end, they had lunch at the Lighthouse Café."
+      ],
+      "refs": [
+        { "s": 1, "w": "they", "n": 1, "to": "Sam and Grandma Rose" },
+        { "s": 5, "w": "they", "n": 1, "to": "Sam and Grandma Rose" },
+        { "s": 6, "w": "them", "n": 1, "to": "Sam and Grandma Rose" },
+        { "s": 7, "w": "they", "n": 1, "to": "Sam and Grandma Rose" },
+        { "s": 8, "w": "They", "n": 1, "to": "Sam and Grandma Rose" },
+        { "s": 9, "w": "they", "n": 1, "to": "Sam and Grandma Rose" }
+      ],
+      "topics": ["ocean", "weather", "animals"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "No Kayaks Today",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n2-p60",
+      "title": "Feeding Time at the Aquarium",
+      "kind": "story",
+      "picture": "🦦🐟",
+      "sentences": [
+        "After school, Ana and Ben went to the Harbor Town Aquarium.",
+        "They wanted to watch the sea otters at feeding time.",
+        "First, they looked at a big tank of silver fish.",
+        "Then a bell rang at the otter pool.",
+        "The otter keeper, Ms. Tran, came out with a bucket of clams.",
+        "Ms. Tran threw the clams into the water, one at a time.",
+        "Next, each otter dove down and came up with a clam.",
+        "The otters floated on their backs and ate the clams.",
+        "Ben laughed and took a video of them.",
+        "At the end, two otters held paws and went to sleep on the water."
+      ],
+      "refs": [
+        { "s": 1, "w": "They", "n": 1, "to": "Ana and Ben" },
+        { "s": 2, "w": "they", "n": 1, "to": "Ana and Ben" },
+        { "s": 7, "w": "their", "n": 1, "to": "the otters" },
+        { "s": 8, "w": "them", "n": 1, "to": "the otters" }
+      ],
+      "topics": ["ocean", "animals"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Feeding Time at the Aquarium",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -7548,6 +7715,296 @@
       "inference": 0,
       "checkup": "reef",
       "tags": ["before", "close-distractor"]
+    },
+    {
+      "id": "n2-i163",
+      "skill": "N2",
+      "passage": "n2-p56",
+      "format": "order",
+      "level": 1,
+      "prompt": "Put the events in order.",
+      "steps": [
+        "Pixel ran along the wet sand.",
+        "Pixel dug a deep hole.",
+        "A big wave filled the hole with water.",
+        "Sam threw a stick down the beach."
+      ],
+      "evidence": [1, 2, 3, 4],
+      "hint": "Read the story from the top. Look for order words like \"First\", \"Then\" and \"After that\".",
+      "explain": "Pixel ran on the sand, then dug a hole. A wave filled the hole, and after that Sam threw a stick. The story tells it in this order.",
+      "inference": 0,
+      "tags": ["order-words"]
+    },
+    {
+      "id": "n2-i164",
+      "skill": "N2",
+      "passage": "n2-p56",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What did Pixel do first at the beach?",
+      "options": [
+        "He dug a deep hole.",
+        "He ran along the wet sand.",
+        "He brought a stick back to Sam."
+      ],
+      "pictures": ["🕳️", "🐾", "🪵"],
+      "answer": 1,
+      "evidence": [1],
+      "hint": "Look for the word \"First\" in the story.",
+      "explain": "First, Pixel ran along the wet sand. It is in the second sentence.",
+      "inference": 0,
+      "tags": ["first"]
+    },
+    {
+      "id": "n2-i165",
+      "skill": "N2",
+      "passage": "n2-p57",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What did Leo and Ben do after they changed the plan?",
+      "options": [
+        "They watched skate videos.",
+        "They skated on the wet ramps.",
+        "They put on their helmets."
+      ],
+      "answer": 0,
+      "evidence": [4, 5],
+      "hint": "Find the sentence where Leo talks about the plan. Then read the next sentence.",
+      "explain": "After they changed the plan, Leo and Ben watched skate videos. It is in the sixth sentence. The ramps were too wet, so they did not skate then.",
+      "inference": 0,
+      "tags": ["after", "plan-change"]
+    },
+    {
+      "id": "n2-i166",
+      "skill": "N2",
+      "passage": "n2-p57",
+      "format": "build",
+      "level": 1,
+      "prompt": "Build a retell of the story.",
+      "frame": "First, {0}. Then {1}. At the end, {2}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "Leo and Ben put on their helmets",
+            "Leo and Ben tried the trick at the park",
+            "the rain stopped"
+          ],
+          "answer": [0]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "Leo and Ben tried the trick at the park",
+            "rain began to fall, and they watched skate videos",
+            "Leo and Ben put on their helmets"
+          ],
+          "answer": [1]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "rain began to fall",
+            "Leo and Ben put on their helmets",
+            "Leo and Ben tried the trick at the park"
+          ],
+          "answer": [2]
+        }
+      ],
+      "evidence": [1, 2, 5, 8],
+      "hint": "The first event has the word \"First\". For the middle, find the rain. For the end, read the last sentence.",
+      "explain": "First, Leo and Ben put on their helmets. Then rain began to fall, and they watched skate videos. At the end, they tried the trick at the park. These are the second, third, sixth and last sentences.",
+      "inference": 0,
+      "transfer": true,
+      "tags": ["retell", "first-then-last", "plan-change"]
+    },
+    {
+      "id": "n2-i167",
+      "skill": "N2",
+      "passage": "n2-p58",
+      "format": "order",
+      "level": 1,
+      "prompt": "Put the events in order.",
+      "steps": [
+        "Maya and Priya set the board on the table.",
+        "Maya rolled the dice and moved five spaces.",
+        "Priya rolled a six.",
+        "The blue train got to the station."
+      ],
+      "evidence": [1, 3, 4, 6],
+      "hint": "Read the story from the top. Look for order words like \"First\", \"Then\" and \"Next\".",
+      "explain": "First, they set the board on the table. Then Maya moved five spaces, and next Priya rolled a six. At the end, the blue train got to the station.",
+      "inference": 0,
+      "tags": ["order-words"]
+    },
+    {
+      "id": "n2-i168",
+      "skill": "N2",
+      "passage": "n2-p58",
+      "format": "tap",
+      "level": 1,
+      "prompt": "What happened right after Maya moved five spaces?",
+      "options": [
+        "Maya picked a red train.",
+        "Maya and Priya set the board on the table.",
+        "Priya rolled a six."
+      ],
+      "answer": 2,
+      "evidence": [3, 4],
+      "hint": "Find the sentence where Maya moves five spaces. Then read the next sentence.",
+      "explain": "Next, Priya rolled a six. It is in the fifth sentence, right after Maya moved five spaces.",
+      "inference": 0,
+      "tags": ["after"]
+    },
+    {
+      "id": "n2-i169",
+      "skill": "N2",
+      "passage": "n2-p59",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put the events in order.",
+      "steps": [
+        "Sam and Grandma Rose walked down to the kayak dock.",
+        "Grandma Rose said they could ride bikes instead.",
+        "They rented two bikes at Okafor's Bike Shop.",
+        "They rode along the path beside the sea.",
+        "They stopped to watch six seals."
+      ],
+      "evidence": [1, 4, 5, 7, 8],
+      "hint": "Read the story from the top. Use the order words \"First\", \"Then\" and \"Next\" to help you.",
+      "explain": "They walked to the dock, and Grandma Rose said they could ride bikes. Then they rented bikes, rode beside the sea, and stopped to watch the seals. The story tells it in this order.",
+      "inference": 0,
+      "tags": ["order-words", "plan-change"]
+    },
+    {
+      "id": "n2-i170",
+      "skill": "N2",
+      "passage": "n2-p59",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What did Sam and Grandma Rose do after the plan changed?",
+      "options": [
+        "They rented two bikes at Okafor's Bike Shop.",
+        "They paddled a kayak in the harbor.",
+        "They walked down to the kayak dock."
+      ],
+      "pictures": ["🚲", "🛶", "🚶"],
+      "answer": 0,
+      "evidence": [4, 5],
+      "hint": "Find the sentence where Grandma Rose gives a new plan. Then read the next sentence.",
+      "explain": "After the plan changed, they rented two bikes at Okafor's Bike Shop. It is in the sixth sentence. They did not paddle a kayak, because the sign said \"No kayaks today.\"",
+      "inference": 0,
+      "tags": ["after", "plan-change"]
+    },
+    {
+      "id": "n2-i171",
+      "skill": "N2",
+      "passage": "n2-p59",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What did Sam and Grandma Rose do last?",
+      "options": [
+        "They watched six seals on the rocks.",
+        "They rented two bikes.",
+        "They had lunch at the Lighthouse Café."
+      ],
+      "pictures": ["🦭", "🚲", "🍽️"],
+      "answer": 2,
+      "evidence": [9],
+      "hint": "Look for the words \"At the end\".",
+      "explain": "At the end, they had lunch at the Lighthouse Café. It is in the last sentence.",
+      "inference": 0,
+      "tags": ["last"]
+    },
+    {
+      "id": "n2-i172",
+      "skill": "N2",
+      "passage": "n2-p60",
+      "format": "order",
+      "level": 2,
+      "prompt": "Put the events in order.",
+      "steps": [
+        "Ana and Ben looked at a tank of silver fish.",
+        "A bell rang at the otter pool.",
+        "Ms. Tran threw clams into the water.",
+        "The otters floated on their backs and ate the clams.",
+        "Two otters held paws and went to sleep."
+      ],
+      "evidence": [2, 3, 5, 7, 9],
+      "hint": "Read the story from the top. Look for order words like \"First\", \"Then\", \"Next\" and \"At the end\".",
+      "explain": "Ana and Ben looked at the fish. Then a bell rang, Ms. Tran threw the clams, and the otters ate them. At the end, two otters went to sleep.",
+      "inference": 0,
+      "tags": ["order-words"]
+    },
+    {
+      "id": "n2-i173",
+      "skill": "N2",
+      "passage": "n2-p60",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What happened right after Ms. Tran threw the clams into the water?",
+      "options": [
+        "A bell rang at the otter pool.",
+        "Each otter dove down and came up with a clam.",
+        "Two otters held paws and went to sleep."
+      ],
+      "pictures": ["🔔", "🦦", "😴"],
+      "answer": 1,
+      "evidence": [5, 6],
+      "hint": "Find the sentence where Ms. Tran throws the clams. Then read the next sentence.",
+      "explain": "Next, each otter dove down and came up with a clam. It is in the seventh sentence, right after Ms. Tran threw the clams.",
+      "inference": 0,
+      "tags": ["after"]
+    },
+    {
+      "id": "n2-i174",
+      "skill": "N2",
+      "passage": "n2-p60",
+      "format": "build",
+      "level": 2,
+      "prompt": "Build a retell of the visit to the aquarium.",
+      "frame": "First, {0}. Then {1}. At the end, {2}.",
+      "slots": [
+        {
+          "kind": "first",
+          "label": "First",
+          "options": [
+            "Ms. Tran threw clams into the water",
+            "Ana and Ben looked at a tank of silver fish",
+            "two otters went to sleep"
+          ],
+          "answer": [1]
+        },
+        {
+          "kind": "then",
+          "label": "Then",
+          "options": [
+            "two otters held paws and went to sleep",
+            "Ana and Ben looked at the silver fish",
+            "Ms. Tran fed clams to the otters"
+          ],
+          "answer": [2]
+        },
+        {
+          "kind": "last",
+          "label": "At the end",
+          "options": [
+            "two otters held paws and went to sleep",
+            "a bell rang at the otter pool",
+            "Ana and Ben looked at the silver fish"
+          ],
+          "answer": [0]
+        }
+      ],
+      "evidence": [2, 5, 9],
+      "hint": "The first event has the word \"First\". For the middle, find what Ms. Tran did. For the end, read the last sentence.",
+      "explain": "First, Ana and Ben looked at a tank of silver fish. Then Ms. Tran fed clams to the otters. At the end, two otters held paws and went to sleep. These are the third, sixth and last sentences.",
+      "inference": 0,
+      "transfer": true,
+      "tags": ["retell", "first-then-last"]
     }
   ],
   "model": {

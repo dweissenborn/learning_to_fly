@@ -3173,6 +3173,161 @@
         "retrieved": "2026-10-13",
         "adapted": false
       }
+    },
+    {
+      "id": "n6-p76",
+      "title": "The Salty Sea",
+      "kind": "article",
+      "picture": "🌊🧂",
+      "sentences": [
+        "Most of the salt in the sea comes from rocks on land.",
+        "Rain falls on the rocks.",
+        "The rain washes out tiny bits of salt.",
+        "Rivers carry the salt down to the sea.",
+        "The sun warms the sea, and some water rises into the air.",
+        "But the salt stays in the sea.",
+        "Sea water is too salty for people to drink.",
+        "The sea covers most of Earth."
+      ],
+      "topics": ["ocean"],
+      "level": 1,
+      "socialLoad": 0,
+      "credit": {
+        "title": "The Salty Sea",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p77",
+      "title": "Snowflakes",
+      "kind": "article",
+      "picture": "❄️☁️",
+      "sentences": [
+        "Every snowflake grows inside a cold cloud.",
+        "It starts as a tiny speck of dust.",
+        "Water in the cold air freezes onto the dust.",
+        "This makes a very small piece of ice with six sides.",
+        "As the ice falls through the cloud, more water freezes onto it.",
+        "The six corners slowly grow into six arms.",
+        "The shape of the arms depends on how cold and wet the air is.",
+        "Each snowflake falls along its own path through the cloud.",
+        "So it is very hard to find two snowflakes that look the same.",
+        "In 1885, a farmer named Wilson Bentley took one of the first photos of a snowflake.",
+        "A snowflake melts in a few seconds on a warm hand."
+      ],
+      "topics": ["weather"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Snowflakes",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p78",
+      "title": "Birds That Fly South",
+      "kind": "article",
+      "picture": "🐦☀️",
+      "sentences": [
+        "In autumn, you may see a long line of birds high in the sky.",
+        "Many birds fly south in autumn to find food.",
+        "In the north, food gets hard to find when winter comes.",
+        "Most of the insects that birds eat die or hide in the cold.",
+        "Snow covers the seeds and berries that birds eat.",
+        "Farther south, the weather stays warm, and food is easy to find.",
+        "In the spring, the birds fly back north.",
+        "The days are long there, and there are many insects to feed their chicks.",
+        "The Arctic tern makes the longest trip of any bird.",
+        "On the trip, many small birds fly at night and rest during the day."
+      ],
+      "topics": ["animals"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Birds That Fly South",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p79",
+      "title": "Checkers",
+      "kind": "article",
+      "picture": "🔴⚫",
+      "sentences": [
+        "Checkers is a game for two players.",
+        "Each player tries to take all of the other player's pieces.",
+        "The game is played on a board with 64 squares.",
+        "Each player starts with 12 pieces on the dark squares.",
+        "On your turn, you move one piece forward on a slant to the next dark square.",
+        "If the other player's piece is next to yours, you can jump over it.",
+        "You land on the empty square behind it.",
+        "Then you take that piece off the board.",
+        "When a piece reaches the far side of the board, it becomes a king.",
+        "A king can move forward and backward.",
+        "Checkers pieces are often red and black.",
+        "In Britain, checkers is called draughts."
+      ],
+      "topics": ["games"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "Checkers",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n6-p80",
+      "title": "A Trip to the Lighthouse",
+      "kind": "story",
+      "picture": "💡🚢",
+      "sentences": [
+        "On Tuesday, Ms. Ortiz's class visited the old lighthouse by the harbor.",
+        "A guide named Mr. Lund led them up to the top.",
+        "There, he showed them a big lamp inside a glass lens.",
+        "He said the lens makes the light shine far over the sea.",
+        "At night, sailors see the light and keep their ships away from the rocks.",
+        "This light flashes three times, goes dark, and then starts again.",
+        "Each lighthouse has its own pattern, so sailors know which one they see.",
+        "Leo counted ninety-eight steps on the lighthouse stairs.",
+        "In the gift shop, Maya bought a postcard with a gull on it.",
+        "On the bus home, Sam said the lamp was the best part of the trip."
+      ],
+      "refs": [
+        { "s": 1, "w": "them", "n": 1, "to": "Ms. Ortiz's class" },
+        { "s": 2, "w": "he", "n": 1, "to": "Mr. Lund" },
+        { "s": 2, "w": "them", "n": 1, "to": "Ms. Ortiz's class" },
+        { "s": 3, "w": "He", "n": 1, "to": "Mr. Lund" },
+        { "s": 4, "w": "their", "n": 1, "to": "sailors" },
+        { "s": 6, "w": "they", "n": 1, "to": "sailors" },
+        { "s": 8, "w": "it", "n": 1, "to": "a postcard" }
+      ],
+      "topics": ["ocean", "school"],
+      "level": 2,
+      "socialLoad": 0,
+      "credit": {
+        "title": "A Trip to the Lighthouse",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -9268,6 +9423,232 @@
       "inference": 1,
       "checkup": "reef",
       "tags": ["key-detail", "supporting-detail", "close-distractor"]
+    },
+    {
+      "id": "n6-i204",
+      "skill": "N6",
+      "passage": "n6-p76",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Tap the sentence that tells what the whole article is about.",
+      "unit": "sentence",
+      "answer": [0],
+      "evidence": [0],
+      "hint": "Ask: which sentence do the other sentences explain? The rest tell more about it.",
+      "explain": "\"Most of the salt in the sea comes from rocks on land\" tells what the whole article is about. It is the first sentence. The next sentences tell how the salt gets from the rocks to the sea.",
+      "inference": 1,
+      "tags": ["main-idea", "article"]
+    },
+    {
+      "id": "n6-i205",
+      "skill": "N6",
+      "passage": "n6-p76",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "Sea water is too salty for people to drink.",
+        "The sea covers most of Earth.",
+        "Rivers carry the salt down to the sea."
+      ],
+      "answer": 2,
+      "evidence": [0, 3],
+      "hint": "First say the main idea in your head. Then ask: which detail tells how the salt gets into the sea?",
+      "explain": "\"Rivers carry the salt down to the sea\" supports the main idea, because it tells how the salt from the rocks gets into the sea. The other two are true, but they do not tell where the salt comes from.",
+      "inference": 1,
+      "tags": ["key-detail", "article"]
+    },
+    {
+      "id": "n6-i206",
+      "skill": "N6",
+      "passage": "n6-p76",
+      "format": "tap",
+      "level": 1,
+      "prompt": "Which title fits best?",
+      "options": [
+        "Too Salty to Drink",
+        "How Salt Gets into the Sea",
+        "The Sea Covers Earth"
+      ],
+      "answer": 1,
+      "evidence": [0, 2, 3],
+      "hint": "A good title fits the whole article, not just one fact.",
+      "explain": "\"How Salt Gets into the Sea\" fits best, because most sentences tell how salt from rocks gets into the sea. The other titles fit only one sentence each.",
+      "inference": 1,
+      "tags": ["main-idea", "title", "article"]
+    },
+    {
+      "id": "n6-i207",
+      "skill": "N6",
+      "passage": "n6-p77",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "how a snowflake grows inside a cloud",
+        "an early photo of a snowflake",
+        "how people clear snow off the roads"
+      ],
+      "answer": 0,
+      "evidence": [0, 2, 4, 5],
+      "hint": "Ask: what do most of the sentences tell about?",
+      "explain": "The article is mostly about how a snowflake grows inside a cloud. Most sentences tell how it starts as a speck of dust and grows six arms. The photo is only one extra detail, and the article does not talk about roads.",
+      "inference": 1,
+      "tags": ["main-idea", "article"]
+    },
+    {
+      "id": "n6-i208",
+      "skill": "N6",
+      "passage": "n6-p77",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which detail supports the main idea?",
+      "options": [
+        "Wilson Bentley took one of the first photos of a snowflake.",
+        "A snowflake melts in a few seconds on a warm hand.",
+        "As the ice falls, more water freezes onto it."
+      ],
+      "answer": 2,
+      "evidence": [4],
+      "hint": "First say the main idea in your head. Then ask: which detail tells how a snowflake grows?",
+      "explain": "\"As the ice falls, more water freezes onto it\" supports the main idea, because it tells how a snowflake grows. The photo and the melting are true, but they do not tell how a snowflake grows.",
+      "inference": 1,
+      "tags": ["key-detail", "article"]
+    },
+    {
+      "id": "n6-i209",
+      "skill": "N6",
+      "passage": "n6-p78",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the sentence that tells the main idea.",
+      "unit": "sentence",
+      "answer": [1],
+      "evidence": [1],
+      "hint": "Ask: what do most of the sentences explain? Find the one sentence that says it for the whole article.",
+      "explain": "\"Many birds fly south in autumn to find food\" is the main idea. It is the second sentence. The sentences after it tell why food is hard to find in the north and easy to find farther south. The first sentence only tells what you may see in the sky.",
+      "inference": 1,
+      "tags": ["main-idea", "article"]
+    },
+    {
+      "id": "n6-i210",
+      "skill": "N6",
+      "passage": "n6-p78",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which title fits best?",
+      "options": [
+        "Birds That Fly at Night",
+        "Flying South to Find Food",
+        "The Longest Trip of Any Bird"
+      ],
+      "answer": 1,
+      "evidence": [1, 2, 5],
+      "hint": "A good title fits the whole article, not just one fact.",
+      "explain": "\"Flying South to Find Food\" fits best, because most sentences tell how birds fly south to find food in winter. Flying at night and the Arctic tern's long trip are each in only one sentence.",
+      "inference": 1,
+      "tags": ["main-idea", "title", "article"]
+    },
+    {
+      "id": "n6-i211",
+      "skill": "N6",
+      "passage": "n6-p78",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": ["Important to the main idea", "Extra detail"],
+      "cards": [
+        { "text": "Most insects die or hide in the cold.", "bin": 0 },
+        { "text": "The Arctic tern makes the longest trip of any bird.", "bin": 1 },
+        { "text": "Snow covers the seeds and berries.", "bin": 0 },
+        { "text": "Many small birds fly at night on the trip.", "bin": 1 },
+        { "text": "Food is easy to find farther south.", "bin": 0 }
+      ],
+      "evidence": [3, 4, 5, 8, 9],
+      "hint": "First say the main idea in your head. Then ask of each card: does it tell why birds fly south to find food?",
+      "explain": "Insects dying or hiding, snow over the seeds and easy food farther south tell why birds fly south to find food, so they are important. The Arctic tern and flying at night are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["key-detail", "article"]
+    },
+    {
+      "id": "n6-i212",
+      "skill": "N6",
+      "passage": "n6-p79",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What is this article mostly about?",
+      "options": [
+        "what people in Britain call checkers",
+        "how to make a game board out of paper",
+        "how to play the game of checkers"
+      ],
+      "answer": 2,
+      "evidence": [1, 4, 5, 8],
+      "hint": "Ask: what do most of the sentences tell about?",
+      "explain": "The article is mostly about how to play the game of checkers. Most sentences tell how you move, jump and get a king. The name in Britain is only one extra detail, and the article does not tell how to make a board.",
+      "inference": 1,
+      "tags": ["main-idea", "article"]
+    },
+    {
+      "id": "n6-i213",
+      "skill": "N6",
+      "passage": "n6-p79",
+      "format": "sort",
+      "level": 2,
+      "prompt": "Sort the details. Is each one important to the main idea, or an extra detail?",
+      "bins": ["Important to the main idea", "Extra detail"],
+      "cards": [
+        { "text": "You move a piece forward on a slant to the next dark square.", "bin": 0 },
+        { "text": "Checkers pieces are often red and black.", "bin": 1 },
+        { "text": "You can jump over a piece and take it off the board.", "bin": 0 },
+        { "text": "In Britain, checkers is called draughts.", "bin": 1 },
+        { "text": "A piece that reaches the far side becomes a king.", "bin": 0 }
+      ],
+      "evidence": [4, 5, 8, 10, 11],
+      "hint": "First say the main idea in your head. Then ask of each card: is it a rule for how to play?",
+      "explain": "Moving forward, jumping and getting a king are rules for how to play, so they are important. The red and black colors and the name in Britain are true, but they are extra details.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["key-detail", "article"]
+    },
+    {
+      "id": "n6-i214",
+      "skill": "N6",
+      "passage": "n6-p80",
+      "format": "tap",
+      "level": 2,
+      "prompt": "What is this story mostly about?",
+      "options": [
+        "a postcard that Maya bought in the gift shop",
+        "a class trip to learn how a lighthouse helps ships",
+        "how to steer a big ship at night"
+      ],
+      "answer": 1,
+      "evidence": [0, 2, 4],
+      "hint": "Think about what happens from the start of the story to the end.",
+      "explain": "The story is mostly about a class trip to learn how a lighthouse helps ships. The class visits the lighthouse, and Mr. Lund shows them the lamp. The postcard is only one detail, and the story does not tell how to steer a ship.",
+      "inference": 1,
+      "tags": ["main-idea"]
+    },
+    {
+      "id": "n6-i215",
+      "skill": "N6",
+      "passage": "n6-p80",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Which detail is the most important?",
+      "options": [
+        "Sailors see the light and keep their ships away from the rocks.",
+        "Leo counted ninety-eight steps on the stairs.",
+        "Maya bought a postcard with a gull on it."
+      ],
+      "answer": 0,
+      "evidence": [3, 4],
+      "hint": "Ask: what did the class learn at the top? Find the detail that tells what the lighthouse does.",
+      "explain": "\"Sailors see the light and keep their ships away from the rocks\" is the most important detail. It tells how the lighthouse helps ships, which is what Mr. Lund taught the class. The steps and the postcard are extra details.",
+      "inference": 1,
+      "tags": ["key-detail"]
     }
   ],
   "model": {

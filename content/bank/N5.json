@@ -2908,6 +2908,155 @@
         "retrieved": "2026-10-13",
         "adapted": false
       }
+    },
+    {
+      "id": "n5-p73",
+      "title": "The Lost Save",
+      "kind": "story",
+      "picture": "🎮🚀",
+      "sentences": [
+        "Leo played his space game all afternoon.",
+        "He reached the moon base.",
+        "Then he turned the game off for dinner.",
+        "After dinner, the screen said, \"No saved game.\"",
+        "Leo frowned and crossed his arms.",
+        "\"I forgot to save!\" he said loudly.",
+        "He played again from the start.",
+        "He reached the moon base faster this time.",
+        "He saved the game and smiled.",
+        "Then he called Mom to come and see."
+      ],
+      "topics": ["games", "space"],
+      "level": 1,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Lost Save",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p74",
+      "title": "The Bottle in the Sand",
+      "kind": "story",
+      "picture": "🏖️📜",
+      "sentences": [
+        "Ben and Ana walked on the beach on Sunday morning.",
+        "Ben saw a glass bottle in the sand.",
+        "There was a rolled-up paper inside!",
+        "Ben picked up the bottle and turned it over and over.",
+        "\"Who sent this?\" he asked Ana.",
+        "He pulled the paper out very slowly.",
+        "It said, \"Hello from Room 6 at Bay School!\"",
+        "Ben smiled and ran home to write to Room 6."
+      ],
+      "topics": ["ocean"],
+      "level": 1,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Bottle in the Sand",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p75",
+      "title": "The Sled Hill",
+      "kind": "story",
+      "picture": "🛷❄️",
+      "sentences": [
+        "Snow fell on Lantern Peaks all night.",
+        "Sam and Maya took a sled up a hill.",
+        "Sam sat at the front of the sled.",
+        "He looked down the hill and held the sled tight.",
+        "\"It is very steep,\" he said quietly.",
+        "Maya sat behind him.",
+        "\"We can go together,\" she said.",
+        "The sled slid down fast.",
+        "At the bottom, Sam jumped up and cheered.",
+        "\"Can we go again?\" he shouted."
+      ],
+      "topics": ["weather", "friends"],
+      "level": 1,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Sled Hill",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p76",
+      "title": "The Sandcastle",
+      "kind": "story",
+      "picture": "🏰🌊",
+      "sentences": [
+        "On Saturday, Priya and Leo built a sandcastle on the beach.",
+        "It had four towers and a long wall.",
+        "Priya made a bridge out of driftwood.",
+        "They worked on it for two hours.",
+        "Then a big wave rushed up the sand.",
+        "It knocked down two towers and the bridge.",
+        "Priya sat down and looked at the sand for a long time.",
+        "She did not say anything.",
+        "Leo knelt down next to her.",
+        "\"Let's build a new one higher up the beach,\" he said.",
+        "Priya nodded slowly and picked up her bucket.",
+        "By lunch, they had a new castle with six towers, far from the waves.",
+        "Priya sent her mom a photo of the new castle."
+      ],
+      "topics": ["ocean", "friends"],
+      "level": 2,
+      "socialLoad": 1,
+      "credit": {
+        "title": "The Sandcastle",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
+    },
+    {
+      "id": "n5-p77",
+      "title": "The Wrong Dog",
+      "kind": "story",
+      "picture": "🐶🐕",
+      "sentences": [
+        "Sam took Pixel to the dog park on Saturday.",
+        "Pixel ran off to play with the other dogs.",
+        "At noon, it was time to go home.",
+        "Sam saw a brown dog with a red collar by the gate.",
+        "It looked just like Pixel.",
+        "\"Pixel, come here!\" Sam called.",
+        "A woman with a green leash walked over to Sam.",
+        "\"This is my dog, Biscuit,\" she said with a smile.",
+        "Sam covered his face with his hands.",
+        "\"Oops! Sorry!\" he said.",
+        "\"They look the same from far away,\" the woman said.",
+        "Then Pixel ran up with a stick in his mouth.",
+        "Sam laughed and patted Pixel's head."
+      ],
+      "topics": ["animals"],
+      "level": 2,
+      "socialLoad": 2,
+      "credit": {
+        "title": "The Wrong Dog",
+        "author": "Learning to Fly (AI-drafted)",
+        "source": "Written for Learning to Fly",
+        "licence": "original",
+        "retrieved": "2026-11-07",
+        "adapted": false
+      }
     }
   ],
   "items": [
@@ -8906,6 +9055,230 @@
       "inference": 1,
       "checkup": "reef",
       "tags": ["feeling", "hidden-feeling"]
+    },
+    {
+      "id": "n5-i225",
+      "skill": "N5",
+      "passage": "n5-p73",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How did Leo feel when he saw \"No saved game\"?",
+      "options": ["frustrated", "excited", "calm"],
+      "pictures": ["😤", "🤩", "😌"],
+      "answer": 0,
+      "evidence": [3, 4, 5],
+      "hint": "Find what Leo did right after he read the screen. Look at his face, his arms and his voice.",
+      "explain": "Leo felt frustrated. He frowned, crossed his arms and said loudly, \"I forgot to save!\"",
+      "inference": 1,
+      "tags": ["shown-by-action"]
+    },
+    {
+      "id": "n5-i226",
+      "skill": "N5",
+      "passage": "n5-p73",
+      "format": "sort",
+      "level": 1,
+      "prompt": "Sort what Leo did. Put each action under the feeling it shows.",
+      "bins": ["Frustrated", "Proud"],
+      "cards": [
+        {
+          "text": "Leo frowned and crossed his arms.",
+          "bin": 0
+        },
+        {
+          "text": "He saved the game and smiled.",
+          "bin": 1
+        },
+        {
+          "text": "He said loudly, \"I forgot to save!\"",
+          "bin": 0
+        },
+        {
+          "text": "He called Mom to come and see.",
+          "bin": 1
+        }
+      ],
+      "evidence": [4, 5, 8, 9],
+      "hint": "Ask if each action came before or after Leo reached the moon base again.",
+      "explain": "When his game was lost, Leo was frustrated: he frowned, crossed his arms and said, \"I forgot to save!\" After he reached the moon base faster, he was proud: he smiled and called Mom to come and see.",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["shown-by-action", "feeling-change"]
+    },
+    {
+      "id": "n5-i227",
+      "skill": "N5",
+      "passage": "n5-p74",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How did Ben feel about the bottle?",
+      "options": ["curious", "proud", "frustrated"],
+      "pictures": ["🤔", "😊", "😤"],
+      "answer": 0,
+      "evidence": [3, 4, 5],
+      "hint": "Read what Ben did with the bottle. Then read what he asked Ana.",
+      "explain": "Ben felt curious. He turned the bottle over and over and asked, \"Who sent this?\" He wanted to know more.",
+      "inference": 1,
+      "tags": ["shown-by-action"]
+    },
+    {
+      "id": "n5-i228",
+      "skill": "N5",
+      "passage": "n5-p74",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Tap the sentence that shows Ben was happy when he read the paper.",
+      "unit": "sentence",
+      "answer": [7],
+      "evidence": [7],
+      "hint": "Find the part after Ben read the paper. Look at what his face did.",
+      "explain": "\"Ben smiled and ran home to write to Room 6\" shows Ben was happy. It is the last sentence.",
+      "inference": 1,
+      "tags": ["shown-by-action"]
+    },
+    {
+      "id": "n5-i229",
+      "skill": "N5",
+      "passage": "n5-p75",
+      "format": "highlight",
+      "level": 1,
+      "prompt": "Tap the sentence that shows Sam was nervous at the top of the hill.",
+      "unit": "sentence",
+      "answer": [3, 4],
+      "evidence": [3, 4],
+      "hint": "Read the part before the sled moved. Look at what Sam did and how he talked.",
+      "explain": "\"He looked down the hill and held the sled tight\" shows Sam was nervous. He also said quietly, \"It is very steep.\"",
+      "inference": 1,
+      "transfer": true,
+      "tags": ["shown-by-action"]
+    },
+    {
+      "id": "n5-i230",
+      "skill": "N5",
+      "passage": "n5-p75",
+      "format": "tap",
+      "level": 1,
+      "prompt": "How did Sam feel at the bottom of the hill?",
+      "options": ["excited", "bored", "lonely"],
+      "pictures": ["🤩", "🥱", "😔"],
+      "answer": 0,
+      "evidence": [8, 9],
+      "hint": "Find the sentence that starts with \"At the bottom.\" Look at what Sam did and said.",
+      "explain": "Sam felt excited. At the bottom, he jumped up, cheered and shouted, \"Can we go again?\"",
+      "inference": 1,
+      "tags": ["shown-by-action", "feeling-change"]
+    },
+    {
+      "id": "n5-i231",
+      "skill": "N5",
+      "passage": "n5-p76",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Priya feel when the wave knocked down the towers?",
+      "options": ["disappointed", "excited", "lonely"],
+      "pictures": ["😞", "🤩", "😔"],
+      "answer": 0,
+      "evidence": [3, 5, 6, 7],
+      "hint": "Think about how long they worked on the castle. Then read what Priya did after the wave.",
+      "explain": "Priya felt disappointed. They worked for two hours, and after the wave she sat down, looked at the sand and did not say anything.",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "Priya sat down and looked at the sand for a long time.",
+        "know": "People go quiet and still when something they worked on breaks.",
+        "so": "So Priya felt disappointed about her castle."
+      }
+    },
+    {
+      "id": "n5-i232",
+      "skill": "N5",
+      "passage": "n5-p76",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Leo had an idea. Tap the sentence that shows Priya agreed with it.",
+      "unit": "sentence",
+      "answer": [10],
+      "evidence": [10],
+      "hint": "Find what Priya did right after Leo spoke. Think about what a nod means.",
+      "explain": "\"Priya nodded slowly and picked up her bucket\" shows she agreed. A nod means yes, and she got ready to build again.",
+      "inference": 1,
+      "tags": ["shown-by-action", "plan-change"]
+    },
+    {
+      "id": "n5-i233",
+      "skill": "N5",
+      "passage": "n5-p76",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Priya feel about the new castle?",
+      "options": ["proud", "lonely", "worried"],
+      "pictures": ["😊", "😔", "😟"],
+      "answer": 0,
+      "evidence": [11, 12],
+      "hint": "Read what the new castle was like. Then read what Priya did with it.",
+      "explain": "Priya felt proud. The new castle had six towers, and she sent her mom a photo of it.",
+      "inference": 2,
+      "tags": ["hidden-feeling", "feeling-change"],
+      "reason": {
+        "clue": "Priya sent her mom a photo of the new castle.",
+        "know": "People share photos of things they made and feel good about.",
+        "so": "So Priya felt proud of the new castle."
+      }
+    },
+    {
+      "id": "n5-i234",
+      "skill": "N5",
+      "passage": "n5-p77",
+      "format": "tap",
+      "level": 2,
+      "prompt": "How did Sam feel when the woman said the dog was Biscuit?",
+      "options": ["embarrassed", "proud", "bored"],
+      "pictures": ["😳", "😊", "🥱"],
+      "answer": 0,
+      "evidence": [7, 8, 9],
+      "hint": "Think about what Sam got wrong. Then read what he did with his hands and what he said.",
+      "explain": "Sam felt embarrassed. He called the wrong dog, so he covered his face and said, \"Oops! Sorry!\"",
+      "inference": 2,
+      "tags": ["hidden-feeling"],
+      "reason": {
+        "clue": "Sam covered his face with his hands.",
+        "know": "People hide their face after a mistake that others saw.",
+        "so": "So Sam felt embarrassed about calling the wrong dog."
+      }
+    },
+    {
+      "id": "n5-i235",
+      "skill": "N5",
+      "passage": "n5-p77",
+      "format": "highlight",
+      "level": 2,
+      "prompt": "Tap the sentence that shows Sam thought the brown dog was Pixel.",
+      "unit": "sentence",
+      "answer": [5],
+      "evidence": [5],
+      "hint": "Find what Sam did after he saw the brown dog. Which name did he call?",
+      "explain": "Sam called, \"Pixel, come here!\" to the brown dog, so he thought it was Pixel. It looked just like Pixel, but it was Biscuit.",
+      "inference": 1,
+      "tags": ["false-belief", "know-think"]
+    },
+    {
+      "id": "n5-i236",
+      "skill": "N5",
+      "passage": "n5-p77",
+      "format": "tap",
+      "level": 2,
+      "prompt": "Was the woman upset about Sam's mistake?",
+      "options": [
+        "No. She smiled and said the dogs look the same from far away.",
+        "Yes. She was angry with Sam.",
+        "Yes. She was sad about Biscuit."
+      ],
+      "answer": 0,
+      "evidence": [7, 10],
+      "hint": "Read what the woman's face did. Then read what she said to Sam.",
+      "explain": "She was not upset. She smiled at Sam and told him the two dogs look the same from far away.",
+      "inference": 1,
+      "tags": ["two-characters"]
     }
   ],
   "model": {
