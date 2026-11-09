@@ -17,7 +17,8 @@
     "react": "^19.3.0",
     "react-aria-components": "^1.22.1",
     "react-dom": "^19.3.0",
-    "@wayfinder/math": "*"
+    "@wayfinder/math": "*",
+    "@wayfinder/story": "*"
   },
   "devDependencies": {
     "@types/react": "^19.2.0",

@@ -2,6 +2,26 @@
 
 Notes on work still to do. Newest first.
 
+## LTF-65 A chapter book with choices
+
+Built 2026-11-09, after DW asked for a story for him. In review: not committed and not deployed.
+
+- **What it is.** "The Nine O'Clock Wind", a mystery in eight chapters, as a module (`modules/story`, `@wayfinder/story`, kind `function`, ADR-0003). Every night at 9 PM an observatory's dome closes for strong wind while the air outside is still. He, his guide and two helpers find out why: a young koala whose tree is gone climbs the weather mast and bumps the wind cups. They give the mast a smooth band and the koala a rough pole of his own, and Star Night goes ahead. The book speaks to him as "you" and uses the guide he chose.
+- **He sees.** "Story" under "What would you like to do?", and a path with eight stones on his island. A chapter is a cover (a "Last time" line and his clue notebook), three or four pages with a drawn scene each, two questions, and a new line for the notebook. "Read to me" works on every page. He can read a finished chapter again; that logs nothing.
+- **The questions.** Each chapter asks for one key detail and for what the chapter was mostly about (what N6 practises). A miss opens the lines that hold the detail, for one more try. A second miss shows the answer and why. Answers earn flight points as reading answers do.
+- **The choices.** Three times a plan falls through: fog hides the mast, the band from the shop is late, and clouds cover Star Night. Each follows the setback pattern of the island stories: the notice, a calm coping line, and two plans that both work. He also picks the koala's name from three. Each choice changes the words and the pictures from then on, and the story joins up again, so no choice is wrong. He can change his mind until he presses Next.
+- **A chapter is a session.** Finishing one gives the island reward, moves the journey and counts toward the daily budget. "I need a break" is on every screen, and the chapter waits for him. A chapter started and not finished counts as stopped early, as in reading.
+- **Grown-ups see.** A switch under Grown-ups → Settings ("Story: a chapter book with choices"). It is off until a grown-up turns it on. A Story tab lists each chapter, whether he has read it, how each question went, and his choices. The whole book, with every branch and every answer, is under Content library to read first.
+- **Build.** The book is data (`src/book.json`). The pictures are one drawn hilltop (`src/web/Scene.tsx`) with flags per page. His place and his choices live in the story's settings document (`settings:story`), not the event log. The core changed in small ways only: three more exports in `host.ts`, the registry line, a "What do you think?" entry, and `check_passages` in `pipeline/check.py`, so a module can check its own text. `modules/story/check.py` does that, and `pipeline/content_check.py` runs every module's check, so CI covers it with no workflow change.
+- **Tests.** Unit (7): every line has a version for every choice, no choice is used before he makes it, what was built stays in every later picture, and each answer and its evidence exist. Reading level: all 45 page versions are inside the level 2 band. E2e (2), with axe on eight screens: a chapter end to end with a miss and its clue, and a choice that changes the words and is kept. On 2026-11-09, 201 unit tests and 50 e2e tests pass. Checked by eye in the browser: all eight chapters' scenes, both branches of the last choice, the light and dark themes, and phone width.
+- **Facts.** Checked: a koala's front paw has two thumbs, a koala cannot climb smooth sheeting, males bellow at night, young males leave to find trees of their own, and a robotic dome closes at a wind limit. Not checked: timber climbing poles for koalas. So Ranger Kel says only "We use climbing poles like this where I work."
+- **For DW to decide.**
+  - Whether a chapter should count as a session (the journey, the daily budget and the island reward).
+  - The level. The text measures at level 1 to 2.
+  - Story questions have no fast-guess guard.
+  - The pictures are decoration and show no people, except the families on Star Night. The words carry who is there.
+- **Left as it is.** A chapter restarted after a break asks its choice again. Chapter 7's first two pages share one picture.
+
 ## New content, 2026-11-07
 
 DW asked for more texts where he was running low: the six skills with the fewest unseen questions at his level (F1 signs, F4 labels and prices, N2 order of events, N4 who "he", "she" and "it" mean, N5 feelings, N6 main idea and key details). Thirty passages and 72 questions are new, five passages and twelve questions per skill, at levels 1 and 2. All pass the reading bands and the content checks with nothing new flagged. A literal-reading pre-screen sent 14 flags to DW on the review page, and DW chose the suggested fix for all 14. One fix was cut to fit the band: Sam on the sled hill "held the sled tight" rather than "held the sides of the sled tight", which kept that level 1 story at 70 words.

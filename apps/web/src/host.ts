@@ -6,12 +6,12 @@ import type { LogEvent } from '@wayfinder/schema';
 import type { Settings } from './db';
 
 export { Btn, SpeakBtn, Toggle } from './ui';
-export { Guide } from './art';
+export { Guide, GUIDES, Koala } from './art';
 export { log, saveModuleSettings, useModuleSettings, type Settings } from './db';
 export { Finish } from './Session';
 export { finishedCount } from './journey';
 export { SaveMenu } from './CloudScreens';
-export { sfx, stopSpeaking } from './media';
+export { sfx, stopSpeaking, useReading } from './media';
 
 /** What a module's own screen gets from the core. */
 export interface ScreenProps { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void; onBreak: (why: 'break' | 'rapid') => void }

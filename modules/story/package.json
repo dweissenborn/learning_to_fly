@@ -1,0 +1,16 @@
+{
+  "name": "@wayfinder/story",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "description": "A chapter book for Learning to Fly, as a functional extension: a continuing story with drawn scenes, choices that change it, and questions from the story itself (ADR-0003).",
+  "dependencies": {
+    "@wayfinder/engine": "*",
+    "@wayfinder/schema": "*"
+  },
+  "peerDependencies": {
+    "@wayfinder/web": "*",
+    "react": "*",
+    "react-aria-components": "*"
+  }
+}

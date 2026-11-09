@@ -26,8 +26,13 @@ def gloss_problems(word, means):
 
 
 def check(path):
+    return check_passages(json.loads(path.read_text(encoding="utf-8"))["passages"])
+
+
+def check_passages(passages):
+    """Also what a module's own content check calls, with its own texts as passages (modules/story/check.py)."""
     problems, notes, rows = [], [], []
-    for p in json.loads(path.read_text(encoding="utf-8"))["passages"]:
+    for p in passages:
         for g in p.get("words", []):
             problems += [f'{p["id"]}: {m}' for m in gloss_problems(g["word"], g["means"])]
         text = " ".join(p["sentences"])

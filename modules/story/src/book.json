@@ -1,0 +1,526 @@
+{
+  "title": "The Nine O'Clock Wind",
+  "level": 2,
+  "blurb": "A mystery on Bellbird Hill. Every calm night, just after 9 PM, the screen says the wind is strong.",
+  "picks": { "tool": ["camera", "recorder"], "koala": ["Comet", "Gus", "Nine"], "band": ["blue", "silver"], "night": ["talk", "build"] },
+  "chapters": [
+    {
+      "title": "A Calm Night",
+      "pages": [
+        { "scene": { "sky": "dusk" }, "text": [
+          "It is Tuesday evening.",
+          "You and {guide} walk up Bellbird Hill.",
+          "You will stay here all week.",
+          "At the top is a white building with a round dome.",
+          "A girl waves from the deck.",
+          "\"I am Tilly,\" she says.",
+          "\"My dad runs the big telescope. Come and see.\"",
+          "Beside the deck stands a tall wooden pole.",
+          "Three small cups sit on top of it.",
+          "Next to the pole is a wide tree stump.",
+          "\"That pole is the weather mast,\" says Tilly.",
+          "\"The stump was a tall gum tree. A storm knocked it over last month.\""
+        ] },
+        { "scene": { "sky": "night", "inset": "saturn" }, "text": [
+          "Inside the dome, the roof has a long opening.",
+          "The telescope points up through it.",
+          "Tilly's dad is Dr. Vega.",
+          "He looks at the clock. It is 8:50 PM.",
+          "\"Saturn is in the sky now,\" he says. \"Take a look.\"",
+          "You put your eye to the glass.",
+          "You see a small gold ball with a ring around it.",
+          "\"On Saturday we have Star Night,\" says Tilly.",
+          "\"Lots of families will come to see Saturn.\"",
+          "You feel excited.",
+          "{guide} wants a turn too."
+        ] },
+        { "scene": { "sky": "night", "shut": true, "dark": true, "spin": true, "inset": "strong" }, "text": [
+          "At 9:04 PM, a screen on the wall turns red.",
+          "It says WIND: STRONG. DOME CLOSING.",
+          "The roof slides shut with a low hum.",
+          "Now the telescope cannot see the sky.",
+          "Dr. Vega frowns.",
+          "\"This is the third night in a row,\" he says. \"I am puzzled.\"",
+          "You all step out onto the deck.",
+          "The air is still.",
+          "The leaves on the gum trees do not move.",
+          "\"There is no wind,\" says Tilly. \"So why does the screen say strong?\"",
+          "Nobody knows.",
+          "If the dome shuts on Star Night, no one will see Saturn."
+        ] }
+      ],
+      "detail": {
+        "prompt": "Which detail shows that something strange is going on?",
+        "options": ["The air was still when the screen said WIND: STRONG.", "Saturn looked like a small gold ball with a ring.", "Tilly waved from the deck."],
+        "answer": 0, "evidence": [2, 7],
+        "explain": "The screen said the wind was strong, but the air was still. Those two things do not fit, so this is the clue."
+      },
+      "main": {
+        "options": ["Saturn has a ring around it.", "The dome closed for strong wind, but there was no wind outside.", "Tilly's dad built a new telescope."],
+        "answer": 1,
+        "explain": "The whole chapter leads to the puzzle: the dome closed for strong wind on a calm night. Saturn's ring is one small part."
+      },
+      "clue": "The screen said the wind was strong, but the air was still.",
+      "recap": "The dome closed at 9:04 PM because the screen said the wind was strong. But outside, the air was still.",
+      "talk": "Ask: What was strange about the dome closing?"
+    },
+    {
+      "title": "The Weather Mast",
+      "pages": [
+        { "scene": { "sky": "day" }, "text": [
+          "It is Wednesday afternoon.",
+          "You, Tilly and {guide} stand under the weather mast.",
+          "\"See the three cups?\" says Tilly.",
+          "\"Wind pushes them around. Strong wind spins them fast.\"",
+          "A wire runs from the cups to the dome.",
+          "\"The wire tells the computer how fast the cups spin,\" she says.",
+          "\"If they spin too fast, the computer shuts the roof.\"",
+          "\"That keeps the telescope safe.\"",
+          "You look up.",
+          "The cups are not moving at all.",
+          "It is a calm day."
+        ] },
+        { "scene": { "sky": "day", "inset": "log" }, "text": [
+          "Tilly opens the wind log on her tablet.",
+          "The log lists every strong gust.",
+          "Sunday, 9:07 PM.",
+          "Monday, 9:01 PM.",
+          "Tuesday, 9:04 PM.",
+          "There are no other gusts all week.",
+          "{guide} looks at the list for a long time.",
+          "\"Every gust came just after 9 PM,\" says {guide}.",
+          "\"Real wind can come at any time,\" says Tilly. \"This is strange.\"",
+          "You ask what else happens at 9 PM.",
+          "\"The path lights turn off,\" she says.",
+          "\"A dark hill is better for the telescope.\""
+        ] },
+        { "scene": { "sky": "dusk" }, "text": [
+          "Now you have a plan.",
+          "Tonight you will all sit on the deck.",
+          "You will watch the mast at 9 PM.",
+          "Then you will see what spins the cups.",
+          "Tilly gets three chairs.",
+          "{guide} gets a blanket.",
+          "You write the plan in your notebook.",
+          "Dr. Vega brings out warm milk.",
+          "\"I hope you solve it before Saturday,\" he says.",
+          "The sun goes down behind the hill.",
+          "You feel ready."
+        ] }
+      ],
+      "detail": {
+        "prompt": "Which detail in the wind log is the big clue?",
+        "options": ["Dr. Vega brought out warm milk.", "Tilly got three chairs.", "Every gust came just after 9 PM."],
+        "answer": 2, "evidence": [1, 7],
+        "explain": "Real wind can come at any time. A gust at the same time every night is a pattern, so it is the big clue."
+      },
+      "main": {
+        "options": ["The wind log showed a pattern, so you made a plan to watch the mast.", "Tilly has a tablet.", "A big storm closed the hill."],
+        "answer": 0,
+        "explain": "First you learned how the mast works. Then the log showed a pattern, and you made a plan. The tablet is one small part."
+      },
+      "clue": "Every gust comes just after 9 PM.",
+      "recap": "The wind log showed that every gust came just after 9 PM. You made a plan to watch the mast from the deck.",
+      "talk": "Ask: What did the wind log show?"
+    },
+    {
+      "title": "Fog",
+      "pages": [
+        { "scene": { "sky": "night", "fog": true }, "text": [
+          "At 8:30 PM, you are on the deck with Tilly and {guide}.",
+          "Then the air turns white.",
+          "Fog is moving up the hill.",
+          "First the trees fade.",
+          "Then the path lights fade.",
+          "Soon you cannot see the mast at all.",
+          "\"Oh no,\" says Tilly. \"We cannot watch in this.\"",
+          "You waited all day for 9 PM.",
+          "You feel disappointed."
+        ] },
+        { "scene": { "sky": "night", "fog": true, "tool": true }, "text": [
+          { "by": "tool", "camera": "Dr. Vega gets the camera from the shed.", "recorder": "Dr. Vega gets the recorder from the shed." },
+          { "by": "tool", "camera": "It is a small green box.", "recorder": "It is a small gray box with a soft cover." },
+          { "by": "tool", "camera": "\"It takes a photo when something moves in front of it,\" he says.", "recorder": "\"It saves every sound until morning,\" he says." },
+          { "by": "tool", "camera": "You strap the camera to a fence post near the mast.", "recorder": "You hang the recorder on a fence post near the mast." },
+          { "by": "tool", "camera": "You point it at the bottom of the mast.", "recorder": "You press the red button." },
+          "Tilly checks the small light on top. It is on.",
+          "\"Now it can work while we wait,\" says {guide}.",
+          "The fog is cold, so you all go inside."
+        ] },
+        { "scene": { "sky": "night", "fog": true, "tool": true, "dark": true, "shut": true, "inset": "strong" }, "text": [
+          "At 9 PM, the path lights turn off.",
+          "The fog at the window goes from white to black.",
+          "You watch the screen on the wall.",
+          "9:01 PM. 9:02 PM.",
+          "At 9:03 PM, the screen turns red.",
+          "WIND: STRONG. DOME CLOSING.",
+          "\"It came again,\" says Tilly in a quiet voice.",
+          "You cannot see what did it.",
+          { "by": "tool", "camera": "But your camera is out there by the mast.", "recorder": "But your recorder is out there by the mast." },
+          "In the morning, you will find out what it caught.",
+          "It is hard to wait.",
+          "You feel curious."
+        ] }
+      ],
+      "choice": {
+        "after": 0, "key": "tool",
+        "obstacle": "The plan was to watch the mast. Now fog hides it.",
+        "notice": "You feel disappointed. That is okay.",
+        "cope": "Plans can change. When you cannot watch, a tool can watch for you.",
+        "ask": "Dr. Vega has two tools in the shed. Which one will you use?",
+        "options": [
+          { "value": "camera", "label": "A camera that takes a photo when something moves", "reply": "Good plan. The camera can stay close to the mast all night." },
+          { "value": "recorder", "label": "A recorder that saves every sound", "reply": "Good plan. Sound can travel through fog." }
+        ]
+      },
+      "detail": {
+        "prompt": "Why did the plan have to change? Pick the detail that tells why.",
+        "options": ["Dr. Vega keeps tools in the shed.", "Fog hid the mast, so you could not watch it.", "The screen turned red at 9:03 PM."],
+        "answer": 1, "evidence": [0, 5],
+        "explain": "The plan was to watch the mast. Fog hid the mast, so that plan could not work. That is why you made a new plan."
+      },
+      "main": {
+        "options": [
+          "The path lights turn off at 9 PM.",
+          "You and Tilly gave up and stopped trying.",
+          { "by": "tool", "camera": "Fog hid the mast, so you set up a camera to watch for you.", "recorder": "Fog hid the mast, so you set up a recorder to listen for you." }
+        ],
+        "answer": 2,
+        "explain": "The first plan could not work in the fog. You did not stop. You changed the plan and used a tool."
+      },
+      "clue": { "by": "tool", "camera": "The gust came again in the fog. Your camera was watching.", "recorder": "The gust came again in the fog. Your recorder was listening." },
+      "recap": { "by": "tool", "camera": "Fog hid the mast, so you changed the plan and set up a camera. The gust came again at 9:03 PM.", "recorder": "Fog hid the mast, so you changed the plan and set up a recorder. The gust came again at 9:03 PM." },
+      "talk": "Ask: What did you do when the fog came?"
+    },
+    {
+      "title": "Marks on the Mast",
+      "pages": [
+        { "scene": { "sky": "day", "tool": true, "inset": "catch" }, "text": [
+          "It is Thursday morning, and the fog is gone.",
+          "You hurry to the fence post with Tilly and {guide}.",
+          { "by": "tool", "camera": "The camera took one photo at 9:02 PM.", "recorder": "The recorder saved one sound at 9:02 PM." },
+          { "by": "tool", "camera": "The photo is blurry from the fog.", "recorder": "You press play." },
+          { "by": "tool", "camera": "It shows a round gray shape low on the mast.", "recorder": "First there is a scratching sound." },
+          { "by": "tool", "camera": "The shape has two round bumps on top.", "recorder": "Then there is a long, low rumble." },
+          { "by": "tool", "camera": "\"Is it a bag?\" asks Tilly.", "recorder": "\"Is it a truck?\" asks Tilly." },
+          { "by": "tool", "camera": "\"A bag cannot climb,\" says {guide}.", "recorder": "\"A truck cannot scratch,\" says {guide}." },
+          "You all walk to the mast to look for more clues."
+        ] },
+        { "scene": { "sky": "day", "tool": true, "inset": "print" }, "text": [
+          "You look closely at the mast.",
+          "There are fresh scratch marks in the wood.",
+          "They go up as high as you can see.",
+          "A bit of soft gray fur is stuck in a crack.",
+          "Tilly points at the ground.",
+          "The dirt is still damp, and there are paw prints in it.",
+          "You kneel down to look.",
+          "Each front print has five toes.",
+          "Two of the toes point out to the side.",
+          "\"Two thumbs on one paw?\" says Tilly.",
+          "\"What animal has that?\""
+        ] },
+        { "scene": { "sky": "day" }, "text": [
+          "Tilly calls Ranger Kel on the phone.",
+          "Ranger Kel looks after the wild animals on Bellbird Hill.",
+          "Tilly tells her about the scratch marks, the gray fur and the two thumbs.",
+          "Ranger Kel is quiet for a moment.",
+          "\"I think I know who your visitor is,\" she says.",
+          "\"But I want to see it myself. I can come on Friday night.\"",
+          "You write Friday in your notebook.",
+          "You do not know the answer yet.",
+          "But now you know the visitor is an animal, and it climbs."
+        ] }
+      ],
+      "detail": {
+        "prompt": "Which detail tells the most about who the visitor is?",
+        "options": ["The dirt was still damp.", "Tilly called Ranger Kel on the phone.", "Each front paw print had two thumbs."],
+        "answer": 2, "evidence": [1, 9],
+        "explain": "Not many animals have two thumbs on one paw. That detail tells the most about who the visitor is."
+      },
+      "main": {
+        "options": ["The fog was gone in the morning.", "Scratch marks, gray fur and paw prints showed that the visitor is an animal that climbs.", "Ranger Kel caught the visitor in a net."],
+        "answer": 1,
+        "explain": "You found three clues at the mast. Together they showed that the visitor is an animal that climbs."
+      },
+      "clue": "The visitor is an animal that climbs. Each front paw has two thumbs.",
+      "recap": "Scratch marks, gray fur and paw prints showed that the visitor is an animal that climbs. Each front paw has two thumbs.",
+      "talk": "Ask: What did you find at the mast?"
+    },
+    {
+      "title": "Wind Cups",
+      "pages": [
+        { "scene": { "sky": "day", "inset": "cups" }, "text": [
+          "It is Thursday afternoon.",
+          "\"Is there any wind at all at 9 PM?\" asks Tilly.",
+          "\"Let's build our own wind cups and test it.\"",
+          "Tilly loves to build things.",
+          "You get four paper cups, two straws, a pin and a pencil.",
+          "First, you tape the two straws into a cross.",
+          "Next, you tape one cup to each end.",
+          "Every cup faces the same way around the cross.",
+          "Then you push the pin through the middle of the cross.",
+          "Last, you push the pin into the eraser on the pencil."
+        ] },
+        { "scene": { "sky": "dusk", "rig": true }, "text": [
+          "You blow on the cups, and they spin around the pin.",
+          "It works!",
+          "You feel proud.",
+          "\"Wind can be stronger up high,\" says Dr. Vega.",
+          "\"Put your cups as high as the cups on the mast.\"",
+          "So Tilly tapes the pencil to the top of a long pole.",
+          "You stand the pole next to the mast.",
+          "{guide} helps you tie it to the fence.",
+          "Now there are two sets of cups, side by side.",
+          "Real wind would spin them both."
+        ] },
+        { "scene": { "sky": "night", "rig": true, "dark": true, "moon": true, "spin": true, "shut": true, "koala": "mast", "shadow": true }, "text": [
+          "At 9 PM, the path lights turn off.",
+          "The moon is bright, so you can still see both sets of cups.",
+          "9:01 PM. Nothing moves.",
+          "At 9:02 PM, the cups on the mast start to spin.",
+          "They spin fast.",
+          "Your paper cups do not turn at all.",
+          "\"There is no wind,\" you say in a quiet voice.",
+          "\"Something is pushing the cups on the mast.\"",
+          "There is a dark shape just below the cups.",
+          "Then the shape climbs down and is gone.",
+          "Inside, the dome closes with a hum."
+        ] }
+      ],
+      "detail": {
+        "prompt": "Which detail shows that the wind was not real?",
+        "options": ["The cups on the mast spun fast, but your paper cups did not turn.", "You used four paper cups and two straws.", "The moon was bright."],
+        "answer": 0, "evidence": [2, 5],
+        "explain": "Real wind would spin both sets of cups. Only the cups on the mast spun, so it was not wind."
+      },
+      "main": {
+        "options": ["Paper cups can spin on a pin.", "A strong wind blew your wind cups away.", "You built wind cups and used them to show that there was no real wind."],
+        "answer": 2,
+        "explain": "You built the cups, set them up and ran a test. The test showed there was no real wind."
+      },
+      "clue": "There is no real wind. Something pushes the cups on the mast.",
+      "recap": "You built your own wind cups. At 9:02 PM the cups on the mast spun, but yours did not. So there is no real wind.",
+      "talk": "Ask: How did the wind cups show there was no wind?"
+    },
+    {
+      "title": "The Visitor",
+      "pages": [
+        { "scene": { "sky": "night", "dark": true, "torch": true, "koala": "walk" }, "text": [
+          "On Friday night, Ranger Kel sits with you on the deck.",
+          "She holds a small flashlight with a dim red light.",
+          "\"Bright light bothers night animals,\" she says.",
+          "\"A dim red light is easier on their eyes.\"",
+          "At 9 PM, the path lights turn off.",
+          "Everyone stays very quiet.",
+          "Then something moves on the grass.",
+          "It is gray and round, and it walks slowly on four legs.",
+          "It has big round ears and a wide black nose.",
+          "It is a koala!"
+        ] },
+        { "scene": { "sky": "night", "dark": true, "torch": true, "koala": "mast", "spin": true, "shut": true }, "text": [
+          "The koala walks to the weather mast.",
+          "He holds it with both arms and digs in his long claws.",
+          "Then he climbs, one pull at a time.",
+          "Near the top, his shoulder bumps the three cups.",
+          "The cups spin fast.",
+          "Inside the dome, the roof closes with a hum.",
+          "The koala sits just below the cups.",
+          "Then he lifts his head and calls.",
+          "It is a long, low rumble.",
+          "He calls three times.",
+          "Then he climbs down and walks back into the trees."
+        ] },
+        { "scene": { "sky": "night", "dark": true, "torch": true, "shut": true }, "text": [
+          "Ranger Kel smiles.",
+          "\"He is a young male, about two years old,\" she says.",
+          "\"At that age, a koala leaves his mother to find trees of his own.\"",
+          "\"I think the old gum tree was his. Now it is gone.\"",
+          "\"So he climbs the tallest thing that is left.\"",
+          "You ask why he calls.",
+          "\"He is telling other koalas where he is,\" says Ranger Kel.",
+          "\"And I think he waits for the dark. Many wild animals stay away from bright lights.\"",
+          "You feel glad.",
+          "At last, the mystery has an answer."
+        ] }
+      ],
+      "choice": {
+        "after": 2, "key": "koala",
+        "ask": "Ranger Kel opens her notebook. \"He needs a name for my notes,\" she says. \"Will you pick one?\"",
+        "options": [
+          { "value": "Comet", "label": "Comet", "reply": "Ranger Kel writes it down. Comet is a good name for a koala who lives next to a telescope." },
+          { "value": "Gus", "label": "Gus", "reply": "Ranger Kel writes it down. Gus sounds like gust, and he made every gust in the wind log." },
+          { "value": "Nine", "label": "Nine", "reply": "Ranger Kel writes it down. Nine is a good name for a koala who comes at nine o'clock." }
+        ]
+      },
+      "detail": {
+        "prompt": "Why does the koala climb the mast? Pick the detail that tells why.",
+        "options": ["He has big round ears and a wide black nose.", "His gum tree is gone, and the mast is the tallest thing left.", "Ranger Kel has a dim red light."],
+        "answer": 1, "evidence": [2, 4],
+        "explain": "The old gum tree was his, and it is gone. So he climbs the tallest thing that is left, and that is the mast."
+      },
+      "main": {
+        "options": ["The visitor is a young koala. He climbs the mast because his tree is gone.", "A dim red light is easier on the eyes of night animals.", "The koala moved into the dome to live."],
+        "answer": 0,
+        "explain": "You saw who the visitor is, and Ranger Kel told you why he climbs. The red light is one small part."
+      },
+      "clue": "The visitor is a young koala named {koala}. His tree is gone, so he climbs the mast and bumps the cups.",
+      "recap": "The visitor is a young koala. His gum tree is gone, so he climbs the mast and bumps the cups. You named him {koala}.",
+      "talk": "Ask: Why does the koala climb the mast?"
+    },
+    {
+      "title": "A Better Place to Climb",
+      "pages": [
+        { "scene": { "sky": "day" }, "text": [
+          "It is Saturday morning. Star Night is tonight.",
+          "Ranger Kel has a plan with two parts.",
+          "\"Part one,\" she says. \"Koala claws need something rough to hold.\"",
+          "\"They cannot grip smooth things.\"",
+          "\"So we wrap a wide, smooth band around the mast.\"",
+          "\"Part two. We give {koala} a better place to climb.\"",
+          "\"We stand a tall, rough log in the ground where his tree was.\"",
+          "\"We put a bar on top for him to sit on.\"",
+          "\"And we plant a young gum tree next to it.\"",
+          "\"We use climbing poles like this where I work,\" she says."
+        ] },
+        { "scene": { "sky": "day" }, "text": [
+          "Dr. Vega makes a phone call.",
+          "He comes back with bad news.",
+          "\"The smooth band I ordered cannot come until Monday,\" he says.",
+          "Monday is too late.",
+          "Star Night is tonight.",
+          "If {koala} climbs the mast again, the dome will close.",
+          "Nobody speaks for a moment.",
+          "You feel worried."
+        ] },
+        { "scene": { "sky": "day", "band": true }, "text": [
+          { "by": "band", "blue": "Dr. Vega cuts the top and the bottom off the old blue barrel.", "silver": "Dr. Vega carries the shiny metal sheet out of the shed." },
+          { "by": "band", "blue": "Then he cuts down one side.", "silver": "He bends it into a wide curve." },
+          { "by": "band", "blue": "Now it is a wide sheet of smooth plastic.", "silver": "Then he files the edges until they are not sharp." },
+          "You and Tilly wrap it around the mast and hold it tight.",
+          "Ranger Kel fixes it in place with screws.",
+          "You run your hand over the band.",
+          "It is very smooth.",
+          { "by": "band", "blue": "\"A blue band on a weather mast,\" says Tilly. \"I like it.\"", "silver": "\"I can see my face in it,\" says Tilly. \"I like it.\"" }
+        ] },
+        { "scene": { "sky": "day", "band": true, "pole": true }, "text": [
+          "Next, everyone helps dig a deep hole beside the stump.",
+          "You stand the log in the hole.",
+          "{guide} packs the dirt down hard.",
+          "Dr. Vega bolts the bar across the top.",
+          "Tilly paints a small sign.",
+          "It says {koala}'s Pole.",
+          "Last, you plant the young gum tree and give it water.",
+          "\"It will be tall enough to climb in a few years,\" says Ranger Kel.",
+          "You look at the band, the pole and the little tree.",
+          "You feel hopeful.",
+          "Tonight you will find out if the plan works."
+        ] }
+      ],
+      "choice": {
+        "after": 1, "key": "band",
+        "obstacle": "The plan was to use the band from the shop. It cannot come in time.",
+        "notice": "You feel worried. That is okay.",
+        "cope": "Plans can change. When one thing cannot come, another thing can do the same job.",
+        "ask": "You look around for something wide and smooth. What will you use?",
+        "options": [
+          { "value": "blue", "label": "The old blue rain barrel behind the shed", "reply": "Good plan. The plastic is smooth, and the barrel is wide enough to go around the mast." },
+          { "value": "silver", "label": "The shiny metal sheet left over from the roof", "reply": "Good plan. The metal is smooth, and the sheet is wide enough to go around the mast." }
+        ]
+      },
+      "detail": {
+        "prompt": "Why will the band stop {koala} from climbing the mast? Pick the detail that tells why.",
+        "options": ["Tilly painted a small sign.", "Star Night is tonight.", "Koala claws cannot grip smooth things."],
+        "answer": 2, "evidence": [0, 3],
+        "explain": "Koala claws need something rough to hold. The band is smooth, so his claws cannot grip it."
+      },
+      "main": {
+        "options": ["The band from the shop could not come until Monday.", "You made the mast too smooth to climb, and you gave {koala} a better place to climb.", "You took {koala} to live at a zoo."],
+        "answer": 1,
+        "explain": "The plan had two parts, and you built both. The late band is one small part, and you found another way."
+      },
+      "clue": "Koala claws cannot grip smooth things. Now the mast has a smooth band, and {koala} has a rough pole.",
+      "recap": "The band from the shop was late, so you made your own. Now the mast is smooth, and {koala} has a rough pole to climb.",
+      "talk": "Ask: What are the two parts of the plan?"
+    },
+    {
+      "title": "Star Night",
+      "pages": [
+        { "scene": { "sky": "night", "band": true, "pole": true, "cloud": true, "crowd": true }, "text": [
+          "By 7 PM, families sit on blankets all over the grass.",
+          "Dr. Vega tells them the plan.",
+          "\"At 8 PM, we will look at Saturn,\" he says.",
+          "\"After that, we will watch for meteors.\"",
+          "But at 8 PM, gray clouds cover the whole sky.",
+          "There is nothing to see.",
+          "Some small children start to fuss.",
+          "\"The clouds may pass in an hour,\" says Dr. Vega.",
+          "An hour is a long time to wait.",
+          "You feel disappointed, and so do the families."
+        ] },
+        { "scene": { "sky": "night", "band": true, "pole": true, "cloud": true, "crowd": true, "stall": true }, "text": [
+          { "by": "night", "talk": "You stand on the deck with Tilly and {guide}.", "build": "You and Tilly put cups, straws, pins and pencils on a long table." },
+          { "by": "night", "talk": "You tell the families about the red screen and the still air.", "build": "You show the children each step." },
+          { "by": "night", "talk": "Tilly holds up the wind log.", "build": "First the cross. Next the cups. Then the pin." },
+          { "by": "night", "talk": "You tell them about the fog, the two thumbs and the paper cups.", "build": "Ranger Kel helps with the pins." },
+          { "by": "night", "talk": "Then you tell them about {koala}.", "build": "Soon the children are blowing on twenty sets of wind cups." },
+          { "by": "night", "talk": "The children stop fussing and listen.", "build": "They have stopped fussing." },
+          { "by": "night", "talk": "\"Will he come tonight?\" asks a small boy.", "build": "\"Why did you make these?\" asks a small boy." },
+          { "by": "night", "talk": "\"I hope so,\" says Tilly.", "build": "So you tell him about the nine o'clock wind and {koala}." },
+          "\"Watch the grass at 9 PM,\" you say."
+        ] },
+        { "scene": { "sky": "night", "band": true, "pole": true, "cloud": true, "crowd": true, "stall": true, "dark": true, "torch": true, "koala": "pole", "inset": "calm" }, "text": [
+          "At 9 PM, the path lights turn off.",
+          "The families go quiet.",
+          "Ranger Kel points her dim red light at the grass.",
+          "A gray shape walks out of the trees. It is {koala}.",
+          "He goes to the mast and reaches up.",
+          "His claws touch the smooth band and slide down.",
+          "He tries one more time, and his claws slide again.",
+          "He sits and looks around.",
+          "Then he sees the new pole.",
+          "He walks to it, digs in his claws and climbs.",
+          "At the top, he sits on the bar and calls.",
+          "Inside the dome, the screen stays green.",
+          "WIND: CALM. DOME OPEN."
+        ] },
+        { "scene": { "sky": "night", "band": true, "pole": true, "crowd": true, "stall": true, "dark": true, "koala": "pole", "sleepy": true, "meteors": true }, "text": [
+          "By 9:30 PM, the clouds have moved away.",
+          "One family at a time, everyone looks at Saturn and its ring.",
+          "Then you all lie back on the blankets.",
+          "A bright line crosses the sky.",
+          "\"A meteor!\" says Tilly.",
+          "You count fourteen meteors before bedtime.",
+          "{koala} rests on his pole.",
+          "The plan changed three times this week.",
+          "Each time, you found another way.",
+          "You feel proud."
+        ] }
+      ],
+      "choice": {
+        "after": 0, "key": "night",
+        "obstacle": "The plan was to look at Saturn at 8 PM. Now clouds cover the sky.",
+        "notice": "You feel disappointed. That is okay.",
+        "cope": "Plans can change. The clouds will pass. Until then, you can do something else.",
+        "ask": "The families need something to do while they wait. What will you do?",
+        "options": [
+          { "value": "talk", "label": "Tell them the story of the nine o'clock wind", "reply": "Good plan. A story can make a long wait feel short." },
+          { "value": "build", "label": "Help the children build wind cups", "reply": "Good plan. Building can make a long wait feel short." }
+        ]
+      },
+      "detail": {
+        "prompt": "Which detail shows that the plan worked?",
+        "options": ["Families sat on blankets on the grass.", "{koala} climbed the new pole, and the screen stayed green.", "You counted fourteen meteors."],
+        "answer": 1, "evidence": [2, 11],
+        "explain": "{koala} climbed his own pole, not the mast. So the cups did not spin, and the screen stayed green."
+      },
+      "main": {
+        "options": ["{koala} climbed his own pole, the dome stayed open, and the families saw Saturn.", "Gray clouds covered the sky at 8 PM.", "The telescope broke, so everyone went home."],
+        "answer": 0,
+        "explain": "The clouds were one small part. The chapter is about the plan working, so Star Night could go on."
+      },
+      "clue": "Solved. {koala} climbs his own pole now, and the dome stays open.",
+      "recap": "On Star Night, {koala} climbed his own pole. The dome stayed open, and the families saw Saturn.",
+      "talk": "Ask: How did the mystery end?"
+    }
+  ]
+}

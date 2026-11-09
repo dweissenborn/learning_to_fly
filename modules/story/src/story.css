@@ -1,0 +1,24 @@
+/* The story's own look (ADR-0003: an extension brings its styles). Its colour follows every theme, like the strands. */
+:root { --story: oklch(64% 0.12 300); --story-deep: oklch(40% 0.1 300); --story-soft: oklch(94% 0.035 300); }
+:root[data-theme='dark'] { --story-soft: oklch(34% 0.05 300); --story-deep: oklch(85% 0.08 300); }
+:root[data-theme='calm'] { --story: oklch(64% 0.07 300); }
+:root[data-theme='contrast'] { --story-deep: #3d1a66; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) { --story-soft: oklch(34% 0.05 300); --story-deep: oklch(85% 0.08 300); } }
+.strand-story { --s: var(--story); --s-deep: var(--story-deep); --s-soft: var(--story-soft); }
+
+/* The picture: one drawn hilltop. It keeps its own colours in every theme, like a picture in a book. */
+.story-scene { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); }
+.story-scene text { font-family: Arial, Helvetica, sans-serif; }
+.story-spin { animation: story-spin 1.1s ease-in-out infinite; }
+.story-meteor { animation: story-meteor 3.2s ease-in-out infinite; }
+.story-fog { animation: story-fog 14s ease-in-out infinite alternate; }
+@keyframes story-spin { 50% { transform: scaleX(-1); } }
+@keyframes story-meteor { 0%, 55% { opacity: 0; transform: translate(26px, -13px); } 70% { opacity: 1; } 100% { opacity: 0; transform: translate(-26px, 13px); } }
+@keyframes story-fog { from { transform: translateX(-18px); } to { transform: translateX(18px); } }
+
+.opt.picked { border-color: var(--s, var(--accent)); box-shadow: 0 0 0 4px var(--accent-soft); }
+.opt.picked::after { content: '✓'; margin-left: auto; font-size: 1.4rem; }
+.story-clues { margin: 0; padding-left: 1.5rem; display: grid; gap: 0.45rem; font-size: 1.05rem; }
+.story-clues li.new { font-weight: 800; background: var(--mark); border-radius: 6px; padding: 0.1em 0.35em; }
+.story-preview summary { cursor: pointer; padding: 0.4rem 0; }
+.story-preview .story-scene { max-width: 22rem; }

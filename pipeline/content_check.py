@@ -9,6 +9,7 @@ Usage: python pipeline/content_check.py               check everything
 """
 import json
 import pathlib
+import subprocess
 import sys
 
 import check
@@ -47,6 +48,9 @@ def exit_code(new, agreement):
 
 def main(args):
     reading = check.main([])
+    sys.stdout.flush()  # so a module's lines land after the reading check's, not inside them
+    for extra in sorted(HERE.parent.glob("modules/*/check.py")):  # a module that brings its own texts brings its own level check
+        reading = subprocess.call([sys.executable, str(extra)]) or reading
     banks = load_bank()
     flags = all_flags(banks)
     if args == ["--baseline"]:

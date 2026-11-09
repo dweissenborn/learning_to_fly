@@ -44,6 +44,8 @@ export const FEATURES: Feature[] = [
     met: (es) => es.some((e) => e.type === 'activity' && e.kind === 'retell') }, // LTF-61
   { id: 'story-problems', name: 'Math as a story', say: 'You picked where your math problems happen, and could switch to plain numbers.', arrived: '2026-10-28',
     met: (es) => es.some((e) => e.type === 'answer' && e.view === 'story') }, // LTF-42
+  { id: 'story-book', name: 'The chapter book', say: 'You read a chapter of a story, and your choices changed what happened.', arrived: '2026-11-09',
+    met: (es) => es.some((e) => e.type === 'session' && e.action === 'finish' && e.module === 'story') }, // LTF-65
   { id: 'does-it-fit', name: '"Does it fit?"', say: 'Your guide makes a guess about a story, and you say if it fits, then show why.', arrived: '2026-10-28',
     met: (es) => es.some((e) => e.type === 'answer' && FIT.has(e.item)) }, // LTF-59
   { id: 'photo-cue', name: 'A photo from your day', say: 'A grown-up can take a photo of something from your day, to help you tell about it.', arrived: '2026-10-28',
