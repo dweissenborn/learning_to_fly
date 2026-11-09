@@ -686,6 +686,11 @@ export function sessionsToday(events: readonly LogEvent[], now = Date.now()) {
   const today = dayKey(now);
   return events.filter((e) => e.type === 'session' && e.action === 'finish' && dayKey(e.ts) === today).length;
 }
+/** The session still open, if any (events in time order): the latest session event is its start. As in derive, a stop, a finish or a newer start from any module closes it. */
+export function openSession(events: readonly LogEvent[]) {
+  const last = events.findLast((e) => e.type === 'session');
+  return last?.type === 'session' && last.action === 'start' ? last.session : undefined;
+}
 
 export * from './activity';
 export * from './fresh';

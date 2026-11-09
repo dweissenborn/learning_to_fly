@@ -2,8 +2,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button, Dialog, Heading, Modal, ModalOverlay } from 'react-aria-components';
 import type { Item, LogEvent, SkillId } from '@wayfinder/schema';
-import { pointsFor, minReadMs, flightPeak, ALL_SKILLS, checkupDue, choices, flightPoints, gate, isInterest, levelFor, levelPeak, mulberry32, planCheckup, planGateCheck, planSession, RULES, strandOf, testFlight, type Choice, type Progress, type SessionPlan, type StepName, type WordCard as WordCardT } from '@wayfinder/engine';
-import { addNote, log, saveSettings, type GuideId, type Settings } from './db';
+import { pointsFor, minReadMs, flightPeak, ALL_SKILLS, checkupDue, dayKey, openSession, choices, flightPoints, gate, isInterest, levelFor, levelPeak, mulberry32, planCheckup, planGateCheck, planSession, RULES, strandOf, testFlight, type Choice, type Progress, type SessionPlan, type StepName, type WordCard as WordCardT } from '@wayfinder/engine';
+import { addNote, db, log, saveSettings, type GuideId, type Settings } from './db';
 import { pool, passageText, SKILL, STRAND } from './content';
 import { ItemView, NextSlot, type HintMode, type Result } from './ItemView';
 import { Guide, GUIDES, Island, islandOf, PiecePreview, PIECES, pieceById, freeTiles, type Placed } from './art';
@@ -34,19 +34,65 @@ export function placedFrom(events: LogEvent[]): Placed[] {
   return events.flatMap((e) => (e.type === 'world' ? [{ piece: e.piece, x: e.x, y: e.y, id: e.id, ts: e.ts, island: e.island ?? 'home' }] : []));
 }
 
-export function Session({ settings, events, progress, onExit, onBreak }: { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void; onBreak: (why: 'break' | 'rapid') => void }) {
-  const [step, setStep] = useState<Step>('plan');
-  const [mode, setMode] = useState<'lesson' | 'check' | 'checkup'>('lesson');
-  const [plan, setPlan] = useState<SessionPlan | null>(null);
-  const [checkItems, setCheckItems] = useState<Item[]>([]);
-  const [idx, setIdx] = useState(0);
-  const [watchStep, setWatchStep] = useState(0);
+// ---------------------------------------------------------------- carrying on after a reload (LTF-64)
+/** Where an unfinished flight stood. Kept on this device only (kv "flight", never synced), and it holds no words of his own. */
+export interface Flight {
+  sid: string; ts: number; elapsed: number; mode: 'lesson' | 'check' | 'checkup'; step: Step; idx: number; watchStep: number; wordDone: boolean;
+  plan: SessionPlan | null; checkItems: Item[]; done: { item: Item; phase: Step; r: Result }[]; asked: string[];
+  before: { mastered: Set<SkillId>; opened: boolean; finished: number };
+}
+const flightItems = (f: Flight): Partial<Record<Step, Item[]>> =>
+  f.plan ? { warmup: f.plan.warmup, together: f.plan.together, yourturn: [...f.plan.yourturn, ...f.plan.express] } : { [f.step]: f.checkItems };
+/** A flight he can carry on: from today, still the open session in the log, and every text it needs is still in the app (a new version may have changed them). */
+export function waiting(f: Flight | undefined, events: readonly LogEvent[], now = Date.now()) {
+  if (!f || dayKey(f.ts) !== dayKey(now) || openSession(events) !== f.sid) return undefined;
+  return [...Object.values(flightItems(f)).flat(), ...(f.plan?.model ? [f.plan.model.item] : [])].every((i) => pool.passages.has(i.passage)) ? f : undefined;
+}
+
+type SessionProps = { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void; onBreak: (why: 'break' | 'rapid') => void };
+
+/** A flight cut short by a reload or a closed browser waits for him. He chooses: carry on where he was, or start a new one. */
+export function Session(props: SessionProps) {
+  const { settings, events } = props;
+  const [flight, setFlight] = useState<Flight | null>(); // undefined: still looking
+  const [carry, setCarry] = useState(false);
+  useEffect(() => { db.kv.get('flight').then((r) => setFlight(waiting(r?.value as Flight | undefined, events) ?? null), () => setFlight(null)); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  if (flight === undefined) return null;
+  if (!flight || carry) return <Flying {...props} resume={flight ?? undefined} />;
+  const of = flightItems(flight)[flight.step]?.length;
+  const say = `Your flight waited for you. You were on ${STEP_META[flight.step].label}${of ? `, question ${flight.idx + 1} of ${of}` : ''}. Everything you did is saved.`;
+  const carryOn = () => {
+    // The gap is time away, said plainly in the grown-ups' log. Closing the app has usually logged "away" already;
+    // one from before the last checkpoint is an earlier gap, already closed (its "back" can carry the same ts).
+    const last = events.findLast((e) => e.type === 'activity' && e.session === flight.sid && (e.kind === 'away' || e.kind === 'back'));
+    const left = last?.type === 'activity' && last.kind === 'away' && last.ts > flight.ts ? last.ts : 0;
+    if (!left) void log({ type: 'activity', session: flight.sid, kind: 'away', step: flight.step as StepName });
+    void log({ type: 'activity', session: flight.sid, kind: 'back', from: 'away', ms: Date.now() - (left || flight.ts) });
+    setCarry(true);
+  };
+  return <>
+    <header className="topbar"><h1 style={{ margin: 0 }}>✈️ Your flight</h1><span className="spacer" /><Btn className="quiet" onPress={props.onExit}>Back to my island</Btn></header>
+    <main id="main" className="stack">
+      <div className="guide-row"><Guide id={settings.guide} size={72} mood="happy" /><div className="bubble">{say} <SpeakBtn lines={[say]} k="waiting" label="" className="small iconbtn" /></div></div>
+      <Btn className="primary big" autoFocus onPress={carryOn}>Carry on where I was →</Btn>
+      <div className="row"><Btn onPress={() => setFlight(null)}>Start a new flight</Btn></div>
+    </main>
+  </>;
+}
+
+function Flying({ settings, events, progress, onExit, onBreak, resume }: SessionProps & { resume?: Flight }) {
+  const [step, setStep] = useState<Step>(resume?.step ?? 'plan');
+  const [mode, setMode] = useState<'lesson' | 'check' | 'checkup'>(resume?.mode ?? 'lesson');
+  const [plan, setPlan] = useState<SessionPlan | null>(resume?.plan ?? null);
+  const [checkItems, setCheckItems] = useState<Item[]>(resume?.checkItems ?? []);
+  const [idx, setIdx] = useState(resume?.idx ?? 0);
+  const [watchStep, setWatchStep] = useState(resume?.watchStep ?? 0);
   const [helpTick, setHelpTick] = useState(0);
-  const [wordDone, setWordDone] = useState(false);
-  const [done, setDone] = useState<{ item: Item; phase: Step; r: Result }[]>([]);
-  const sid = useMemo(() => crypto.randomUUID(), []);
-  const started = useRef(false);
-  const before = useMemo(() => ({ mastered: new Set(ALL_SKILLS.filter((s) => progress.skills[s].everMastered)), opened: progress.gateOpened, finished: finishedCount(progress) }), []); // eslint-disable-line react-hooks/exhaustive-deps
+  const [wordDone, setWordDone] = useState(resume?.wordDone ?? false);
+  const [done, setDone] = useState<{ item: Item; phase: Step; r: Result }[]>(resume?.done ?? []);
+  const sid = useMemo(() => resume?.sid ?? crypto.randomUUID(), []); // eslint-disable-line react-hooks/exhaustive-deps
+  const started = useRef(!!resume);
+  const before = useMemo(() => resume?.before ?? ({ mastered: new Set(ALL_SKILLS.filter((s) => progress.skills[s].everMastered)), opened: progress.gateOpened, finished: finishedCount(progress) }), []); // eslint-disable-line react-hooks/exhaustive-deps
   // LTF-56 trial: now and then a block of sessions runs with one support fewer. The plan says so first, and he can keep it.
   const test = useMemo(() => testFlight(before.finished, settings.legLength, settings), []); // eslint-disable-line react-hooks/exhaustive-deps
   const off = test && settings.testKept !== test.block ? test.support : null;
@@ -67,7 +113,7 @@ export function Session({ settings, events, progress, onExit, onBreak }: { setti
   const points = flightPoints(events), peak = flightPeak(events);
   // LTF-38: fast wrong answers in a row, and when the session began (for ending on a success at a set time).
   const rapidRun = useRef(0);
-  const begun = useRef(0);
+  const begun = useRef(resume ? Date.now() - resume.elapsed : 0); // time away does not count toward the set length
 
   const lists: Partial<Record<Step, Item[]>> = plan ? { warmup: plan.warmup, together: plan.together, yourturn: [...plan.yourturn, ...plan.express] } : mode === 'checkup' ? { checkup: checkItems } : { gatecheck: checkItems };
   const current = lists[step]?.[idx];
@@ -145,8 +191,17 @@ export function Session({ settings, events, progress, onExit, onBreak }: { setti
   const idle = useActivity(sid, step as StepName, current?.id, started.current);
   // LTF-49: "I'm not sure": the guide tells him to ask a grown-up (a name a grown-up can set), and the grown-ups see where.
   const helper = settings.helper?.trim() || 'a grown-up';
-  const askedOn = useRef(new Set<string>());
+  const askedOn = useRef(new Set<string>(resume?.asked));
   const [asking, setAsking] = useState<string | null>(null);
+  // LTF-64: where he is, kept on this device after every move, so a reload or a closed browser does not lose the flight.
+  // Nothing clears it: waiting() stops offering it once the log shows the session closed, and the next flight writes over it.
+  // ponytail: a reload in the instant between an answer and this write asks that question once more; write inside onDone if it ever shows.
+  useEffect(() => {
+    if (!started.current || step === 'finish') return;
+    const f: Flight = { sid, ts: Date.now(), elapsed: Date.now() - begun.current, mode, step, idx, watchStep, wordDone, plan, checkItems, before, asked: [...askedOn.current],
+      done: done.map((d) => ({ ...d, r: { ...d.r, note: undefined } })) }; // his own words stay in the notes, with their own time limit
+    db.kv.put({ key: 'flight', value: f }).catch(() => {});
+  }, [step, idx, watchStep, wordDone, done, asking]); // eslint-disable-line react-hooks/exhaustive-deps
   const notSure = () => {
     if (!current) return;
     askedOn.current.add(current.id);

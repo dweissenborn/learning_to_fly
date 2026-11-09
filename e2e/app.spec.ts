@@ -66,12 +66,15 @@ test('every fifth leg is a test flight with one support fewer, said on the plan 
     return all.filter((e) => e.type === 'answer').map((e) => e.pictures);
   })).toContain(false);
 
+  // The flight he left waits for him (LTF-64); the note is on the plan of a new one.
   await page.reload();
   await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: 'Start a new flight' }).click();
   await note.getByRole('button', { name: 'Keep my pictures' }).click();
   await expect(note).toHaveCount(0);
   await page.reload();
   await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: 'Start a new flight' }).click();
   await expect(page.getByText("Here is today's plan.")).toBeVisible();
   await expect(note).toHaveCount(0); // kept for the rest of this test flight
 });
@@ -1349,4 +1352,82 @@ test('"What would you like to do?": his last choice is marked so one tap starts 
   await expect(pick).toContainText("That's today's session done.");
   await expect(pick.getByRole('button', { name: /Tell about today/ })).toBeEnabled();
   await axe(page, 'picker, budget used');
+});
+
+test('a flight cut short by a reload waits for him: he carries on at the same question, or starts a new one (LTF-64)', async ({ page }) => {
+  test.setTimeout(120_000);
+  await onboard(page);
+  // Gear celebrations, which can open after any answer and on the island after a reload, are closed before the next action.
+  await page.addLocatorHandler(page.getByRole('dialog', { name: /New flight gear/ }), async (d) => {
+    await d.getByRole('button', { name: /Keep going/ }).click({ timeout: 5000 }).catch(() => {});
+  });
+  const open = () => new Promise<IDBDatabase>((res, rej) => { const r = indexedDB.open('wayfinder'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+  /** The checkpoint on this device: which session, and where in it. */
+  const flight = () => page.evaluate(async (open) => {
+    const db = await (0, eval)(`(${open})`)() as IDBDatabase;
+    const row = await new Promise<{ value: { sid: string; step: string; idx: number; done: unknown[] } } | undefined>((res) => { const g = db.transaction('kv').objectStore('kv').get('flight'); g.onsuccess = () => res(g.result); });
+    db.close();
+    return row ? { sid: row.value.sid, at: `${row.value.step} ${row.value.idx}`, done: row.value.done.length } : undefined;
+  }, open.toString());
+  const sessionLog = () => page.evaluate(async (open) => {
+    const db = await (0, eval)(`(${open})`)() as IDBDatabase;
+    const all = await new Promise<{ ts: number; type: string; session: string; action?: string; item?: string; kind?: string; from?: string }[]>((res) => { const g = db.transaction('events').objectStore('events').getAll(); g.onsuccess = () => res(g.result); });
+    db.close();
+    return all.sort((a, b) => a.ts - b.ts).flatMap((e) => (e.type === 'session' ? [`${e.action} ${e.session}`] : e.type === 'answer' ? [`answer ${e.item}`] : e.kind === 'away' || (e.kind === 'back' && e.from === 'away') ? [e.kind!] : []));
+  }, open.toString());
+  const session = (l: string) => /^(start|finish|stop) /.test(l);
+  const begin = async () => {
+    await page.getByRole('button', { name: /Start reading/ }).click();
+    await page.getByRole('button', { name: /Let's go/ }).click(); // the plan, so no flight was offered
+    await page.getByRole('button', { name: /Story Woods/ }).click();
+  };
+
+  await begin();
+  await expect(page.getByText(/Warm up · 1 of/)).toBeVisible();
+  await answer(page);
+  await expect(page.getByText(/Warm up · 2 of/)).toBeVisible();
+  await expect.poll(async () => (await flight())?.at).toBe('warmup 1');
+  const first = (await flight())!;
+  expect(first.done).toBe(1);
+
+  // The browser closes the app. Back on the island, "Start reading" offers the flight; he carries on at the same question.
+  await page.reload();
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await expect(page.getByText('Your flight waited for you. You were on Warm up, question 2 of', { exact: false })).toBeVisible();
+  await axe(page, 'a waiting flight');
+  await page.getByRole('button', { name: /Carry on where I was/ }).click();
+  await expect(page.getByText(/Warm up · 2 of/)).toBeVisible();
+  // It closes again, at the same question. He carries on once more.
+  await page.reload();
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: /Carry on where I was/ }).click();
+  await expect(page.getByText(/Warm up · 2 of/)).toBeVisible();
+  await playToFinish(page);
+  // One flight in the log, finished once, no question asked twice, and each gap shown to the grown-ups once as time away.
+  await expect.poll(async () => (await sessionLog()).filter(session)).toEqual([`start ${first.sid}`, `finish ${first.sid}`]);
+  const log = await sessionLog();
+  const answers = log.filter((l) => l.startsWith('answer'));
+  expect(answers.length).toBeGreaterThan(3);
+  expect(new Set(answers).size).toBe(answers.length);
+  expect(log.filter((l) => l === 'away')).toHaveLength(2);
+  expect(log.filter((l) => l === 'back')).toHaveLength(2);
+
+  // A finished flight is not offered again. The next one is left by a reload too, and this time he starts a new one.
+  await page.locator('.piece').first().click();
+  await page.getByRole('button', { name: 'Choose a spot for me' }).click();
+  await page.getByRole('button', { name: /Back to my island/ }).click();
+  await begin();
+  await expect.poll(async () => { const f = await flight(); return !!f && f.sid !== first.sid; }).toBe(true);
+  await page.reload();
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await page.getByRole('button', { name: 'Start a new flight' }).click();
+  await expect(page.getByText("Here is today's plan.")).toBeVisible();
+  await page.getByRole('button', { name: /Let's go/ }).click();
+  await page.getByRole('button', { name: /Story Woods/ }).click();
+  // "I need a break" ends a flight for good: nothing waits after it.
+  await page.getByRole('button', { name: 'I need a break' }).click();
+  await page.getByRole('button', { name: 'Back to my island' }).click();
+  await page.getByRole('button', { name: /Start reading/ }).click();
+  await expect(page.getByText("Here is today's plan.")).toBeVisible();
+  expect((await sessionLog()).filter(session).map((l) => l.split(' ')[0])).toEqual(['start', 'finish', 'start', 'start', 'stop']);
 });

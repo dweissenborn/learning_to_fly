@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Item, LogEvent, Passage, SkillBank, SkillId } from '@wayfinder/schema';
 import {
-  buildPool, choices, derive, errorPatterns, tagAccuracy, journeyPosition, journeyRoute, forkOptions, routePosition, pastFork, planWord, planCheckup, checkupDue, checkupResults, levelFor, levelPeak, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, grammarSet, planGateCheck, planSession, testFlight, dayKey, BEATS_FOR_LEG,
+  buildPool, choices, derive, errorPatterns, tagAccuracy, journeyPosition, journeyRoute, forkOptions, routePosition, pastFork, planWord, planCheckup, checkupDue, checkupResults, levelFor, levelPeak, focusSkill, gate, GATE_SKILLS, mulberry32, pickItems, placementStart, placementSupports, grammarSet, planGateCheck, planSession, testFlight, dayKey, openSession, BEATS_FOR_LEG,
 } from './index';
 
 const DAY = 86_400_000;
@@ -116,6 +116,22 @@ describe('dayKey', () => {
   it('is his local date as YYYY-MM-DD, zero-padded, as the picture API checks it', () => {
     expect(dayKey(new Date(2026, 10, 5, 23, 30).getTime())).toBe('2026-11-05');
     expect(dayKey(new Date(2026, 9, 26, 0, 5).getTime())).toBe('2026-10-26');
+  });
+});
+
+describe('openSession: the flight he can carry on after a reload (LTF-64)', () => {
+  const start = (session: string, ts: number): LogEvent => ({ id: id(), ts, type: 'session', session, action: 'start' });
+  const end = (session: string, ts: number, action: 'stop' | 'finish'): LogEvent => ({ id: id(), ts, type: 'session', session, action });
+  const done = session(T0, 'F1', [true]);
+  it('is the session whose start is the latest session event, whatever came after it inside the session', () => {
+    expect(openSession([...done, start('a', T0 + DAY), { id: id(), ts: T0 + DAY + 5, type: 'activity', session: 'a', kind: 'away' }])).toBe('a');
+  });
+  it('is nothing after a stop, a finish, or with an empty log; and a newer start takes its place', () => {
+    expect(openSession([])).toBeUndefined();
+    expect(openSession(done)).toBeUndefined();
+    expect(openSession([start('a', T0), end('a', T0 + 1, 'stop')])).toBeUndefined();
+    expect(openSession([start('a', T0), end('a', T0 + 1, 'finish')])).toBeUndefined();
+    expect(openSession([start('a', T0), start('b', T0 + 1)])).toBe('b');
   });
 });
 

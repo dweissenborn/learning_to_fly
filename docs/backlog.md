@@ -107,7 +107,7 @@ Each step lands its test before its code.
 7. **Math module.** LTF-39 to LTF-44 (below), from DW's design note: modules as add-ons first, then typed answers, skills and gates, the help ladder, story or plain, and the grown-ups' measures. LTF-39 to LTF-44 are built; LTF-42 as a pilot that stays off until a grown-up turns it on.
 8. **Islands of their own.** LTF-45 to LTF-48 (below), from DW's feedback 2026-10-14. Built the same day; the new wording was pre-screened and DW decided its flags 2026-11-03 (LTF-36).
 9. **Help and levels.** LTF-49 and LTF-50 (below), from a first look at how his sessions are going, 2026-10-14. Built the same day.
-10. **Requests from the learner.** LTF-51 to LTF-53 (below), built 2026-10-17; LTF-64, the save menu, built 2026-10-26.
+10. **Requests from the learner.** LTF-51 to LTF-53 (below), built 2026-10-17; LTF-64, the save menu, built 2026-10-26, and carrying on after a reload, built 2026-11-09.
 11. **Research gaps from the 19 October scan.** LTF-54 to LTF-62 (below). LTF-54 and LTF-55 built 2026-10-19, and the first steps of LTF-56, LTF-58 and LTF-60 the same day; the rest proposed, each checked against the code.
 12. **Research from the 26 October scan.** LTF-63 (below); its default built 2026-10-26, with the LTF-58 follow-ups. The same day, as trials that can be reverted: test flights (LTF-56) and the feeling-word count (LTF-58). The other findings are notes on LTF-17 and the design plan.
 
@@ -437,7 +437,12 @@ Requested 2026-10-26: "a menu that lets me save". He seemed worried that an upda
   - A 💾 Save menu sits in the top bar of reading sessions, Today and math sessions. It says every answer is saved the moment he gives it, and holds the same "Save my progress" button as the island (LTF-53). On a phone it is an icon, and screen readers still hear "Save".
   - The step trail in a session now really takes its own row on a phone, as its stylesheet intended. An inline style had been overriding the rule.
 - **Tests.** Unit (`shouldSwitch`). E2e: the menu in a reading session and in Today saves to the family copy, with axe. Checked by eye at phone width.
-- **Not built.** Picking up an unfinished flight where he left it after a reload, for example if the browser closes the app. Ask if wanted (M).
+- **Carrying on after a reload.** First listed here as not built. Built 2026-11-09.
+  - **He sees.** If a reading flight was cut short the same day, by a reload or because the browser closed the app, "Start reading" opens a card first: "Your flight waited for you. You were on Warm up, question 2 of 2. Everything you did is saved." He chooses "Carry on where I was" or "Start a new flight". Carrying on returns him to the same step and question, in the same session, with his earlier answers, his points and his "I'm not sure" marks. The question he was on starts fresh.
+  - **How.** After every move the session keeps where he is on the device (`kv` key `flight`: the plan, the step, the question number and his results so far, without anything he typed). It is never sent to the family copy. The flight is offered only while the log still shows that session as open (`openSession` in the engine). So a finish, "I need a break" or any newer session, on any device, ends the offer, and nothing has to be cleaned up. It is not offered on a later day, or when a new version of the app no longer has one of its texts.
+  - **Grown-ups see.** One session in the Activity tab, not two. The time the app was closed shows under "Put away", and it does not count toward a set session length.
+  - **Limits.** Reading sessions only: not math, story chapters or Today. A reload on the Finish screen, while he picks his island piece, is not picked up: the session counts, and that piece is lost. "I need a break" still ends the flight.
+  - **Tests.** Unit (2, `openSession`). E2e (1), with axe on the card: two reloads in one flight, each carried on at the same question; one session in the log, finished once, no question asked twice, each gap logged once as time away; a finished flight is not offered; "Start a new flight"; nothing waits after "I need a break". The test-flight test (LTF-56) reloaded in the middle of a flight and expected the plan; it now presses "Start a new flight" first. On 2026-11-09, 203 unit tests and 52 e2e tests pass. Checked by eye: the card at phone width, and carrying on from the Together step.
 
 Added 2026-10-17: three requests from him, passed on by DW, all built the same day.
 
