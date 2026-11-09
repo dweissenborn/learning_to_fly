@@ -4,7 +4,7 @@ Notes on work still to do. Newest first.
 
 ## LTF-65 A chapter book with choices
 
-Built 2026-11-09, after DW asked for a story for him. In review: not committed and not deployed.
+Built 2026-11-09, after DW asked for a story for him. Pushed and deployed 2026-11-09 (5fb157a). Off until a grown-up turns it on.
 
 - **What it is.** "The Nine O'Clock Wind", a mystery in eight chapters, as a module (`modules/story`, `@wayfinder/story`, kind `function`, ADR-0003). Every night at 9 PM an observatory's dome closes for strong wind while the air outside is still. He, his guide and two helpers find out why: a young koala whose tree is gone climbs the weather mast and bumps the wind cups. They give the mast a smooth band and the koala a rough pole of his own, and Star Night goes ahead. The book speaks to him as "you" and uses the guide he chose.
 - **He sees.** "Story" under "What would you like to do?", and a path with eight stones on his island. A chapter is a cover (a "Last time" line and his clue notebook), three or four pages with a drawn scene each, two questions, and a new line for the notebook. "Read to me" works on every page. He can read a finished chapter again; that logs nothing.
