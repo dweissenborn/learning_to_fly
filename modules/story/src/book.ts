@@ -43,9 +43,9 @@ export function paragraphs(lines: readonly string[]): number[][] {
   return out;
 }
 
-/** How his latest answer to each question went, by item id: right first time, found with the clue, or shown. */
+/** How his latest answer to each question went, by item id: right first time, found with the clue, shown, or a guess faster than reading (set aside). */
 export function outcomes(events: readonly LogEvent[]) {
-  const out = new Map<string, 'right' | 'clue' | 'shown'>();
-  for (const e of events) if (e.type === 'answer' && e.module === 'story') out.set(e.item, e.correct ? 'right' : e.shown ? 'shown' : 'clue');
+  const out = new Map<string, 'right' | 'clue' | 'shown' | 'guess'>();
+  for (const e of events) if (e.type === 'answer' && e.module === 'story') out.set(e.item, e.rapid ? 'guess' : e.correct ? 'right' : e.shown ? 'shown' : 'clue');
   return out;
 }

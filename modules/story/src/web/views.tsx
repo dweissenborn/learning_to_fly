@@ -65,7 +65,7 @@ export function StoryPreview() {
   </section>;
 }
 
-const HOW = { right: 'Right first time', clue: 'Found with the clue', shown: 'Shown the answer' } as const;
+const HOW = { right: 'Right first time', clue: 'Found with the clue', shown: 'Shown the answer', guess: 'A fast guess, set aside' } as const;
 
 export function StoryReport({ events }: { events: LogEvent[] }) {
   const own = useModuleSettings<StoryState>('story') ?? {};
@@ -84,6 +84,6 @@ export function StoryReport({ events }: { events: LogEvent[] }) {
       <span>Chapters read</span><b>{n} of {TOTAL}</b>
       <span>His choices</span><b>{made.length ? made.join(' · ') : 'None yet'}</b>
     </div>
-    <p className="tagline">Each chapter asks for one key detail and for what the chapter was mostly about. A miss opens a clue and one more try; a second miss shows the answer and why. Eight chapters are too few to measure a skill, so read this as a record of the book, not a score.</p>
+    <p className="tagline">Each chapter asks for one key detail and for what the chapter was mostly about. A miss opens a clue and one more try; a second miss shows the answer and why. A first tap faster than the question can be read is set aside as a guess, as in Reading. Eight chapters are too few to measure a skill, so read this as a record of the book, not a score.</p>
   </section>;
 }

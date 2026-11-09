@@ -3,7 +3,7 @@
 // was mostly about) and a new line for his clue notebook. A chapter finishes like any session: the journey moves.
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button } from 'react-aria-components';
-import { ALL_SKILLS, pointsFor } from '@wayfinder/engine';
+import { ALL_SKILLS, minReadMs, pointsFor } from '@wayfinder/engine';
 import { Btn, Finish, finishedCount, Guide, GUIDES, log, SaveMenu, saveModuleSettings, sfx, SpeakBtn, stopSpeaking, useReading, type ScreenProps } from '@wayfinder/web/host';
 import { BOOK, itemId, KINDS, MAIN_PROMPT, paragraphs, say, type Chapter, type Picks, type StoryState } from '../book';
 import { Scene } from './Scene';
@@ -28,17 +28,19 @@ export function Notebook({ upTo, picks, guide, fresh }: { upTo: number; picks: P
   </section>;
 }
 
-interface Result { correct: boolean; shown: boolean; tries: number; ms: number }
-/** One question from the chapter. A miss opens a clue for one more try; a second miss shows the answer and why. */
-function Ask({ ch, kind, picks, guide, guideId, onDone }: { ch: Chapter; kind: 'detail' | 'main'; picks: Picks; guide: string; guideId: ScreenProps['settings']['guide']; onDone: (r: Result) => void }) {
+interface Result { correct: boolean; shown: boolean; tries: number; ms: number; rapid: boolean }
+/** One question from the chapter. A miss opens a clue for one more try; a second miss shows the answer and why.
+ * A first tap faster than the question and its choices could be read is a guess (LTF-38), by the same rule as Reading. */
+function Ask({ ch, kind, picks, guide, guideId, guessCheck, onDone }: { ch: Chapter; kind: 'detail' | 'main'; picks: Picks; guide: string; guideId: ScreenProps['settings']['guide']; guessCheck: boolean; onDone: (r: Result) => void }) {
   const q = ch[kind];
   const [tried, setTried] = useState<number[]>([]);
   const [state, setState] = useState<null | 'clue' | 'right' | 'helped' | 'shown'>(null);
-  const start = useRef(Date.now());
+  const start = useRef(Date.now()), first = useRef<number | undefined>(undefined);
   const done = state !== null && state !== 'clue';
   const prompt = q.prompt ? say(q.prompt, picks, guide) : MAIN_PROMPT;
   const options = q.options.map((o) => say(o, picks, guide)), explain = say(q.explain, picks, guide);
   const pick = (i: number) => {
+    first.current ??= Date.now() - start.current;
     if (i === q.answer) { if (tried.length) setState('helped'); else { setState('right'); sfx.good(); } return; }
     setTried([...tried, i]);
     setState(tried.length ? 'shown' : 'clue');
@@ -57,7 +59,8 @@ function Ask({ ch, kind, picks, guide, guideId, onDone }: { ch: Chapter; kind: '
       {state === 'helped' && <div className="feedback neutral appear"><Guide id={guideId} size={44} /><span><b>You found it with the clue.</b> {explain}</span></div>}
       {state === 'shown' && <div className="feedback neutral appear"><Guide id={guideId} mood="think" size={44} /><span><b>Here is the answer.</b> {explain}</span></div>}
     </div>
-    {done && <Btn className="primary big appear" autoFocus onPress={() => onDone({ correct: state === 'right', shown: state === 'shown', tries: tried.length + (state === 'shown' ? 0 : 1), ms: Date.now() - start.current })}>Next <span aria-hidden>→</span></Btn>}
+    {done && <Btn className="primary big appear" autoFocus onPress={() => onDone({ correct: state === 'right', shown: state === 'shown', tries: tried.length + (state === 'shown' ? 0 : 1), ms: Date.now() - start.current,
+      rapid: guessCheck && (first.current ?? Infinity) < minReadMs({ prompt, options }) })}>Next <span aria-hidden>→</span></Btn>}
   </div>;
 }
 
@@ -70,12 +73,13 @@ export function StoryScreen({ settings, events, progress, onExit, onBreak, own }
   const [mine, setMine] = useState<Picks>({});
   const sid = useMemo(() => 'story-' + crypto.randomUUID(), []);
   const before = useMemo(() => ({ mastered: new Set(ALL_SKILLS.filter((s) => progress.skills[s].everMastered)), opened: progress.gateOpened, finished: finishedCount(progress) }), []); // eslint-disable-line react-hooks/exhaustive-deps
-  const started = useRef(false);
+  const started = useRef(false), rapidRun = useRef(0);
   useEffect(() => { window.scrollTo({ top: 0 }); }, [stage, step, again]); // braces: newer browsers return a promise from scrollTo, and an effect may only return a clean-up
   const guide = GUIDES[settings.guide].name, picks = { ...own.picks, ...mine };
   const text = (t: Parameters<typeof say>[0]) => say(t, picks, guide);
   const go = (s: typeof stage, at = 0) => { stopSpeaking(); setStage(s); setStep(at); };
-  const breakBar = <footer className="bottombar"><Btn className="quiet" onPress={() => { stopSpeaking(); if (started.current) void log({ type: 'session', session: sid, action: 'stop', reason: 'break', module: 'story' }); onBreak('break'); }}>
+  const stop = (why: 'break' | 'rapid') => { stopSpeaking(); if (started.current) void log({ type: 'session', session: sid, action: 'stop', reason: why, module: 'story' }); onBreak(why); };
+  const breakBar = <footer className="bottombar"><Btn className="quiet" onPress={() => stop('break')}>
     <span className="ico" aria-hidden>⏸️</span><span className="lbl">I need a break</span></Btn><span className="spacer" /></footer>;
 
   if (stage === 'cover') {
@@ -152,9 +156,12 @@ export function StoryScreen({ settings, events, progress, onExit, onBreak, own }
   const [kind, skill, label] = KINDS[stage === 'detail' ? 0 : 1];
   return <><Top label={`Chapter ${n + 1} · question ${stage === 'detail' ? 1 : 2} of 2`} /><main className="stack" style={WIDE}>
     <div className="row"><span className="chip">{label}</span></div>
-    <Ask key={kind} ch={ch} kind={kind} picks={picks} guide={guide} guideId={settings.guide} onDone={(r) => {
+    <Ask key={kind} ch={ch} kind={kind} picks={picks} guide={guide} guideId={settings.guide} guessCheck={settings.guessCheck !== false} onDone={(r) => {
       void log({ type: 'answer', session: sid, item: itemId(n, kind), skill, phase: 'yourturn', correct: r.correct, hint: r.correct ? 0 : 1, tries: r.tries, ms: r.ms, format: 'choice', module: 'story',
-        ...(r.shown ? { shown: true } : {}), points: pointsFor({ correct: r.correct, shown: r.shown }) });
+        ...(r.shown ? { shown: true } : {}), ...(r.rapid ? { rapid: true } : {}), points: pointsFor(r) });
+      // LTF-38: two fast wrong first taps in a row end the chapter kindly, and it waits for him. Never a "slow down".
+      rapidRun.current = r.rapid && !r.correct ? rapidRun.current + 1 : 0;
+      if (rapidRun.current >= 2) return stop('rapid');
       go(stage === 'detail' ? 'main' : 'clue');
     }} />
   </main>{breakBar}</>;

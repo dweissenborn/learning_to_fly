@@ -672,7 +672,7 @@ export function mulberry32(seed: number) {
  * LTF-38: the least time it takes to read a question and its choices, at a pace no reader beats (about 600 words a
  * minute). A first tap faster than this is a guess, not an answer.
  */
-export function minReadMs(item: Item): number {
+export function minReadMs(item: Pick<Item, 'prompt' | 'options' | 'objects' | 'cards' | 'slots' | 'bins' | 'steps'>): number {
   const text = [item.prompt, ...(item.options ?? []), ...(item.objects ?? []).map((o) => o.label), ...(item.cards ?? []).map((c) => (typeof c === 'string' ? c : c.text)),
     ...(item.slots ?? []).flatMap((s) => s.options ?? []), ...(item.bins ?? []), ...(item.steps ?? [])].join(' ');
   return Math.max(1500, text.split(/\s+/).filter(Boolean).length * 100);

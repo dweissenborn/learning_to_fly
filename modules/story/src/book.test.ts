@@ -56,6 +56,6 @@ it('paragraphs: a new one where speech starts or stops, and where a new speaker 
 });
 
 it('outcomes: his latest answer to each question', () => {
-  const a = (item: string, correct: boolean, shown?: boolean) => ({ type: 'answer', module: 'story', item, correct, shown }) as never;
-  expect([...outcomes([a('x', false, true), a('y', false), a('x', true)])]).toEqual([['x', 'right'], ['y', 'clue']]);
+  const a = (item: string, correct: boolean, shown?: boolean, rapid?: boolean) => ({ type: 'answer', module: 'story', item, correct, shown, rapid }) as never;
+  expect([...outcomes([a('x', false, true), a('y', false), a('x', true), a('z', true, false, true)])]).toEqual([['x', 'right'], ['y', 'clue'], ['z', 'guess']]); // a fast guess is never shown as right
 });
