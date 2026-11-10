@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Button } from 'react-aria-components';
 import { ALL_SKILLS, minReadMs, pointsFor } from '@wayfinder/engine';
 import { Btn, Finish, finishedCount, Guide, GUIDES, log, SaveMenu, saveModuleSettings, sfx, SpeakBtn, stopSpeaking, useReading, type ScreenProps } from '@wayfinder/web/host';
-import { BOOK, itemId, KINDS, MAIN_PROMPT, paragraphs, say, type Chapter, type Picks, type StoryState } from '../book';
+import { BOOK, itemId, KINDS, MAIN_PROMPT, paragraphs, placeOf, say, stepsOf, type Chapter, type Picks, type StoryState } from '../book';
 import { Scene } from './Scene';
 
 const WIDE = { maxWidth: 720, margin: '0 auto', width: '100%' } as const;
@@ -74,11 +74,22 @@ export function StoryScreen({ settings, events, progress, onExit, onBreak, own }
   const sid = useMemo(() => 'story-' + crypto.randomUUID(), []);
   const before = useMemo(() => ({ mastered: new Set(ALL_SKILLS.filter((s) => progress.skills[s].everMastered)), opened: progress.gateOpened, finished: finishedCount(progress) }), []); // eslint-disable-line react-hooks/exhaustive-deps
   const started = useRef(false), rapidRun = useRef(0);
+  const place = placeOf(own, n), guessed = useRef(false); // where he stopped in this chapter; whether the fast-guess stop has ended it once
+  // His place is saved at every step of the chapter he is on, so a break, the fast-guess stop or a closed app all bring him back to it.
+  useEffect(() => {
+    if (again === null && stage !== 'cover' && stage !== 'finish') void saveModuleSettings('story', { place: { chapter: n, stage, step, ...(guessed.current ? { guessed: true } : {}) } });
+  }, [stage, step]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { window.scrollTo({ top: 0 }); }, [stage, step, again]); // braces: newer browsers return a promise from scrollTo, and an effect may only return a clean-up
   const guide = GUIDES[settings.guide].name, picks = { ...own.picks, ...mine };
   const text = (t: Parameters<typeof say>[0]) => say(t, picks, guide);
   const go = (s: typeof stage, at = 0) => { stopSpeaking(); setStage(s); setStep(at); };
-  const stop = (why: 'break' | 'rapid') => { stopSpeaking(); if (started.current) void log({ type: 'session', session: sid, action: 'stop', reason: why, module: 'story' }); onBreak(why); };
+  const stop = (why: 'break' | 'rapid') => {
+    stopSpeaking();
+    if (started.current) void log({ type: 'session', session: sid, action: 'stop', reason: why, module: 'story' });
+    // A guess is set aside, so after the fast-guess stop both questions are asked again. That stop comes once a chapter: he can always finish it.
+    if (why === 'rapid') void saveModuleSettings('story', { place: { chapter: n, stage: 'detail', step: 0, guessed: true } });
+    onBreak(why, `chapter ${n + 1}`);
+  };
   const breakBar = <footer className="bottombar"><Btn className="quiet" onPress={() => stop('break')}>
     <span className="ico" aria-hidden>⏸️</span><span className="lbl">I need a break</span></Btn><span className="spacer" /></footer>;
 
@@ -90,7 +101,7 @@ export function StoryScreen({ settings, events, progress, onExit, onBreak, own }
         <h2 id="chapter-h" style={{ margin: 0, fontSize: '1.7rem' }}>{ch.title}</h2>
         <Scene spec={ch.pages[0].scene} picks={picks} />
         <p style={{ margin: 0 }}>{n ? <><b>Last time:</b> {text(BOOK.chapters[n - 1].recap)}</> : BOOK.blurb}</p>
-        <div className="row"><Btn className="primary big" autoFocus onPress={() => { if (!started.current) { started.current = true; void log({ type: 'session', session: sid, action: 'start', module: 'story' }); } go('read'); }}>Start chapter {n + 1}</Btn>
+        <div className="row"><Btn className="primary big" autoFocus onPress={() => { if (!started.current) { started.current = true; void log({ type: 'session', session: sid, action: 'start', module: 'story' }); } guessed.current = !!place?.guessed; go(place?.stage ?? 'read', place?.step); }}>{place ? 'Carry on' : 'Start'} chapter {n + 1}</Btn>
           <Btn className="quiet" onPress={onExit}>Back to my island</Btn></div>
       </section> : <section className="card stack center" aria-labelledby="chapter-h">
         <Guide id={settings.guide} mood="happy" size={96} />
@@ -112,7 +123,7 @@ export function StoryScreen({ settings, events, progress, onExit, onBreak, own }
 
   if (stage === 'read') {
     const choice = again === null ? ch.choice : undefined;
-    const steps = ch.pages.flatMap((_, i): (number | 'choice')[] => (choice?.after === i ? [i, 'choice'] : [i]));
+    const steps = choice ? stepsOf(ch) : ch.pages.map((_, i) => i);
     const at = steps[step], last = step === steps.length - 1;
     const next = () => (!last ? go('read', step + 1) : again === null ? go('detail') : (setAgain(null), go('cover')));
     const nav = (ready = true) => <div className="row">
@@ -122,7 +133,7 @@ export function StoryScreen({ settings, events, progress, onExit, onBreak, own }
       <Btn className="primary big" isDisabled={!ready} onPress={next}>{last && again !== null ? 'Done' : 'Next'} <span aria-hidden>→</span></Btn>
     </div>;
     if (at === 'choice' && choice) {
-      const chosen = choice.options.find((o) => o.value === mine[choice.key]);
+      const chosen = choice.options.find((o) => o.value === picks[choice.key]); // a pick he made before a break shows as his pick
       const lead = [choice.obstacle, choice.notice, choice.cope].filter((x): x is string => !!x);
       return <><Top label={`Chapter ${k + 1} · your choice`} /><main className="stack" style={WIDE}>
         <Scene spec={ch.pages[choice.after].scene} picks={picks} />
@@ -150,7 +161,7 @@ export function StoryScreen({ settings, events, progress, onExit, onBreak, own }
   if (stage === 'clue') return <><Top label={`Chapter ${n + 1} · your notebook`} /><main className="stack" style={WIDE}>
     <div className="guide-row"><Guide id={settings.guide} mood="happy" size={72} /><div className="bubble">A new line for your clue notebook.</div></div>
     <Notebook upTo={n + 1} picks={picks} guide={guide} fresh />
-    <Btn className="primary big" autoFocus onPress={() => { void saveModuleSettings('story', { chapter: n + 1 }); go('finish'); }}>Finish chapter {n + 1}</Btn>
+    <Btn className="primary big" autoFocus onPress={() => { void saveModuleSettings('story', { chapter: n + 1, place: null }); go('finish'); }}>Finish chapter {n + 1}</Btn>
   </main>{breakBar}</>;
 
   const [kind, skill, label] = KINDS[stage === 'detail' ? 0 : 1];
@@ -161,7 +172,7 @@ export function StoryScreen({ settings, events, progress, onExit, onBreak, own }
         ...(r.shown ? { shown: true } : {}), ...(r.rapid ? { rapid: true } : {}), points: pointsFor(r) });
       // LTF-38: two fast wrong first taps in a row end the chapter kindly, and it waits for him. Never a "slow down".
       rapidRun.current = r.rapid && !r.correct ? rapidRun.current + 1 : 0;
-      if (rapidRun.current >= 2) return stop('rapid');
+      if (rapidRun.current >= 2 && !guessed.current) return stop('rapid');
       go(stage === 'detail' ? 'main' : 'clue');
     }} />
   </main>{breakBar}</>;

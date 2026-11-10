@@ -13,8 +13,9 @@ export { finishedCount } from './journey';
 export { SaveMenu } from './CloudScreens';
 export { sfx, stopSpeaking, useReading } from './media';
 
-/** What a module's own screen gets from the core. */
-export interface ScreenProps { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void; onBreak: (why: 'break' | 'rapid') => void }
+/** What a module's own screen gets from the core. `onBreak` goes to the lounge; `waits` names what he can carry on where he
+ * stopped ("chapter 3"), and the lounge then says so and offers the way back to the module. */
+export interface ScreenProps { settings: Settings; events: LogEvent[]; progress: Progress; onExit: () => void; onBreak: (why: 'break' | 'rapid', waits?: string) => void }
 
 export interface ModuleManifest {
   id: string;

@@ -21,13 +21,24 @@ export interface Question { prompt?: Text; options: Text[]; answer: number; /** 
 export interface Choice { after: number; key: string; obstacle?: string; notice?: string; cope?: string; ask: string; options: { value: string; label: string; reply: string }[] }
 export interface Chapter { title: string; pages: { scene: SceneSpec; text: Text[] }[]; choice?: Choice; detail: Question; main: Question; clue: Text; recap: Text; talk: string }
 export interface Book { title: string; level: number; blurb: string; picks: Record<string, string[]>; chapters: Chapter[] }
-/** The story's own memory (kv `settings:story`): the next chapter to read and the choices he has made. */
-export interface StoryState { enabled?: boolean; chapter?: number; picks?: Picks }
+/** Where he stopped in the chapter he is on. `guessed`: the fast-guess stop has already ended this chapter once. */
+export interface Place { chapter: number; stage: 'read' | 'detail' | 'main' | 'clue'; step: number; guessed?: boolean }
+/** The story's own memory (kv `settings:story`): the next chapter to read, the choices he has made, and his place in a chapter he has started. */
+export interface StoryState { enabled?: boolean; chapter?: number; picks?: Picks; place?: Place | null }
 
 export const BOOK = raw as unknown as Book;
 export const MAIN_PROMPT = 'What was this chapter mostly about?';
 export const KINDS = [['detail', 'story:key-detail', 'A key detail'], ['main', 'story:main-idea', 'The main idea']] as const;
 export const itemId = (chapter: number, kind: 'detail' | 'main') => `story-c${chapter + 1}-${kind}`;
+
+/** A chapter's reading steps: its pages, with the choice after its page. */
+export const stepsOf = (ch: Chapter): (number | 'choice')[] => ch.pages.flatMap((_, i) => (ch.choice?.after === i ? [i, 'choice'] : [i]));
+/** His saved place, if it is in chapter `n` and fits the book as it is now (it comes from storage, and the book can change). */
+export function placeOf(own: StoryState, n: number): Place | undefined {
+  const p = own.place, ch = BOOK.chapters[n];
+  if (!p || !ch || p.chapter !== n || !['read', 'detail', 'main', 'clue'].includes(p.stage)) return undefined;
+  return { ...p, step: p.stage === 'read' ? Math.max(0, Math.min(Math.trunc(p.step) || 0, stepsOf(ch).length - 1)) : 0 };
+}
 
 /** The pick he made, or the first option while he has not chosen yet (the grown-ups' preview reads the book that way). */
 export const pickOf = (picks: Picks, key: string) => picks[key] ?? BOOK.picks[key][0];

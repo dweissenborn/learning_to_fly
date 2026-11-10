@@ -1,7 +1,7 @@
 // The book is data, so its shape is checked here: every line has a version for every pick, every answer and evidence
 // index points at something real, and no placeholder is left in what he reads.
 import { describe, expect, it } from 'vitest';
-import { BOOK, outcomes, paragraphs, say, type Picks, type Text } from './book';
+import { BOOK, outcomes, paragraphs, placeOf, say, stepsOf, type Picks, type Text } from './book';
 
 /** Every combination of picks he could make. */
 const worlds = Object.entries(BOOK.picks).reduce<Picks[]>((all, [k, vs]) => all.flatMap((w) => vs.map((v) => ({ ...w, [k]: v }))), [{}]);
@@ -53,6 +53,16 @@ describe('the book', () => {
 it('paragraphs: a new one where speech starts or stops, and where a new speaker is named', () => {
   expect(paragraphs(['The hill is quiet.', 'You wait.', '"Look," says Tilly.', '"It moved."', '"Where?" asks Dr. Vega.', 'Nobody answers.']))
     .toEqual([[0, 1], [2, 3], [4], [5]]);
+});
+
+it('placeOf: his saved place counts only in the chapter he is on, and only where the book still has it', () => {
+  const at = (place: unknown) => placeOf({ chapter: 2, place } as never, 2);
+  expect(stepsOf(BOOK.chapters[2])).toEqual([0, 'choice', 1, 2]); // chapter 3: the choice comes after its first page
+  expect(at({ chapter: 2, stage: 'read', step: 2 })).toEqual({ chapter: 2, stage: 'read', step: 2 });
+  expect(at({ chapter: 2, stage: 'read', step: 99 })?.step).toBe(3); // a page the book no longer has: its last page
+  expect(at({ chapter: 2, stage: 'main', step: 5, guessed: true })).toEqual({ chapter: 2, stage: 'main', step: 0, guessed: true });
+  // Nothing saved, a place in another chapter, and a stage nobody can carry on from.
+  expect([null, undefined, { chapter: 1, stage: 'read', step: 0 }, { chapter: 2, stage: 'finish', step: 0 }].map(at)).toEqual([undefined, undefined, undefined, undefined]);
 });
 
 it('outcomes: his latest answer to each question', () => {

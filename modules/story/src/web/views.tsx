@@ -30,7 +30,7 @@ export function StorySettingsPanel() {
     <Toggle on={!!own.enabled} onChange={(enabled) => saveModuleSettings('story', { enabled })}>Story: a chapter book with choices</Toggle>
     {own.enabled && <>
       <p className="tagline">“{BOOK.title}”: {TOTAL} chapters, one a sitting. A chapter counts as a session. He is at chapter {Math.min(at(own) + 1, TOTAL)}{at(own) === TOTAL ? ' (finished)' : ''}. You can read all of it first in the Content library.</p>
-      {(at(own) > 0 || Object.keys(own.picks ?? {}).length > 0) && <div><Btn className="small" onPress={() => saveModuleSettings('story', { chapter: 0, picks: {} })}>Start the book again</Btn></div>}
+      {(at(own) > 0 || Object.keys(own.picks ?? {}).length > 0) && <div><Btn className="small" onPress={() => saveModuleSettings('story', { chapter: 0, picks: {}, place: null })}>Start the book again</Btn></div>}
     </>}
   </div>;
 }

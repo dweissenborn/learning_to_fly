@@ -64,6 +64,7 @@ export function App() {
   const [asked, setAsked] = useState<string>(); // the one "What do you think?" card for this visit
   const [visit, setVisit] = useState<string | null>(null); // LTF-36: an earlier island he is looking at
   const [breakWhy, setBreakWhy] = useState<'break' | 'rapid'>('break'); // LTF-38
+  const [waits, setWaits] = useState<string>(); // what the module he left for the lounge keeps for him ("chapter 3")
   const own = useAllModuleSettings(); // each module's own settings (LTF-39)
   const [ext, setExt] = useState<string | null>(null); // the extension module on screen
   useApplySettings(settings);
@@ -100,9 +101,9 @@ export function App() {
     return <div className="shell"><WhoIsLearning onNew={() => setNewHere(true)} /></div>;
   if (!settings.onboarded || screen === 'rescout' || screen === 'regrammar')
     return <div className="shell"><Onboarding settings={settings} startAt={screen === 'rescout' ? 'scout' : screen === 'regrammar' ? 'grammar' : 'hello'} onDone={() => go('home')} /></div>;
-  if (screen === 'session') return <div className="shell"><Session settings={settings} events={events} progress={progress} onExit={() => go('home')} onBreak={(why) => { setBreakWhy(why); go('lounge'); }} /></div>;
-  if (screen === 'module') { const Screen = MODULES.find((m) => m.id === ext)?.Screen; if (Screen) return <div className="shell"><Screen settings={settings} events={events} progress={progress} onExit={() => go('home')} onBreak={(why) => { setBreakWhy(why); go('lounge'); }} /></div>; }
-  if (screen === 'lounge') return <div className="shell"><Lounge settings={settings} events={events} why={breakWhy} onJourney={() => go('map')} onHome={() => go('home')} /></div>;
+  if (screen === 'session') return <div className="shell"><Session settings={settings} events={events} progress={progress} onExit={() => go('home')} onBreak={(why) => { setBreakWhy(why); setWaits(undefined); go('lounge'); }} /></div>;
+  if (screen === 'module') { const Screen = MODULES.find((m) => m.id === ext)?.Screen; if (Screen) return <div className="shell"><Screen settings={settings} events={events} progress={progress} onExit={() => go('home')} onBreak={(why, w) => { setBreakWhy(why); setWaits(w); go('lounge'); }} /></div>; }
+  if (screen === 'lounge') return <div className="shell"><Lounge settings={settings} events={events} why={breakWhy} waits={waits} onBack={() => go('module')} onJourney={() => go('map')} onHome={() => go('home')} /></div>;
   if (screen === 'today') return <div className="shell"><Today settings={settings} progress={progress} events={events} onExit={() => go('home')} /></div>;
   if (screen === 'map') return <div className="shell"><JourneyMap settings={settings} progress={progress} onExit={() => go('home')} /></div>;
   if (screen === 'adult') return <div className="shell"><Adult settings={settings} events={events} progress={progress} onExit={() => go('home')} onRescout={() => go('rescout')} onGrammar={() => go('regrammar')} /></div>;

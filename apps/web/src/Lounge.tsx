@@ -61,15 +61,20 @@ function KiteSky() {
   </div>;
 }
 
-export function Lounge({ settings, events, why, onJourney, onHome }: { settings: Settings; events: LogEvent[]; why: 'break' | 'rapid'; onJourney: () => void; onHome: () => void }) {
+export function Lounge({ settings, events, why, waits, onBack, onJourney, onHome }: {
+  settings: Settings; events: LogEvent[]; why: 'break' | 'rapid';
+  /** What he can carry on where he stopped ("chapter 3"), and the way back to it. */
+  waits?: string; onBack: () => void; onJourney: () => void; onHome: () => void;
+}) {
   const [kit, setKit] = useState(false);
   return <>
     <header className="topbar"><h1 style={{ margin: 0 }}>🛋️ The lounge</h1><span className="spacer" /><Btn className="primary" onPress={onHome}>Back to my island</Btn></header>
     <main className="stack">
       <div className="guide-row"><Guide id={settings.guide} mood="happy" size={72} />
-        <div className="bubble">{why === 'rapid' ? 'Good place to stop. Your progress is saved.' : 'Good idea to take a break. Everything you did is saved.'} You can fly a kite, look at your journey, or try on your flight kit. Nothing here is a test.</div></div>
+        <div className="bubble">{why === 'rapid' ? 'Good place to stop.' : 'Good idea to take a break.'} {waits ? `Your place in ${waits} is saved.` : why === 'rapid' ? 'Your progress is saved.' : 'Everything you did is saved.'} You can fly a kite, look at your journey, or try on your flight kit. Nothing here is a test.</div></div>
       <section className="card stack" aria-labelledby="kite-h"><h2 id="kite-h" style={{ margin: 0 }}>Fly a kite</h2><KiteSky /></section>
       <div className="tiles">
+        {waits && <Btn onPress={onBack}><span className="ico" aria-hidden>▶️</span>Carry on {waits}</Btn>}
         <Btn onPress={onJourney}><span className="ico" aria-hidden>🗺️</span>My journey</Btn>
         <Btn onPress={() => setKit(true)}><span className="ico" aria-hidden>🎒</span>Flight kit</Btn>
       </div>
